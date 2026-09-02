@@ -269,3 +269,133 @@ negative-correlation	statistical-correlation	accept		06033172	06031248
 partial-correlation	statistical-correlation	accept		06031866	06031248
 positive-correlation	statistical-correlation	accept		06032898	06031248
 spurious-correlation	statistical-correlation	accept		06036157	06031248
+# --- mathematics wikidata batch 1: wikidata  ---
+binary-relation	mathematical-set	reject	everything-is-a-set reductionism; a relation is filed as a relation		07999699
+cardinality	function	reject	a number, not a function	13591586	13783816
+conic-section	mathematical-set	reject	a shape, not filed as a set	13872975	07999699
+countable-set	mathematical-set	accept			07999699
+cyclic-group	abelian-group	accept			06017472
+degree-of-freedom	function	reject	a statistical variable	05858551	13783816
+deviation	number	accept		06022291	05121418
+eccentricity	real-number	accept		13877129	
+even-number	integer	accept			
+finite-field	mathematical-field	accept			08005260
+finite-group	mathematical-group	accept			06016853
+fractal	mathematical-set	reject	same	05931152	07999699
+geometric-shape	mathematical-set	reject	same		07999699
+harmonic-progression	function	reject	a sequence, filed as a concept	08461424	13783816
+homomorphism	function	accept			13783816
+infinite-set	mathematical-set	accept			07999699
+infinitesimal	number	accept		05864047	05121418
+injective-function	function	accept			13783816
+integral-domain	domain	reject	Wikidata label collision — `domain` here is the domain of a function; an integral domain is a ring		08000118
+linear-map	function	accept			13783816
+mathematical-lattice	abelian-group	reject	wrong Wikidata item (the lattice as discrete subgroup); realigned to the order-theoretic lattice		06017472
+mathematical-lattice	subgroup	reject	same		06017053
+mathematical-operation	function	accept		00869583	13783816
+odd-number	integer	accept			
+ordinal-number	number	accept			05121418
+parallel-line	mathematical-set	reject	same	13880994	07999699
+parity	function	reject	a relation, not a function	13790133	13783816
+pencil-of-lines	mathematical-set	reject	same	13863020	07999699
+plane	mathematical-set	reject	same	13861050	07999699
+quaternion	number	accept			05121418
+recursive-definition	function	reject	a definition	06745422	13783816
+rounding	mathematical-operation	accept		00073177	00869583
+singleton-set	mathematical-set	accept			07999699
+sphere	mathematical-set	reject	same	13898899	07999699
+surjective-function	function	accept			13783816
+symmetry	function	reject	an attribute	05064827	13783816
+translation	isometry	accept		13785736	13786187
+variance	number	accept		06024936	05121418
+weight	function	reject	a coefficient	13589321	13783816
+# --- mathematics wikidata batch 2: wikidata  ---
+bijection	surjective-function	accept			
+binomial	polynomial	accept		06036506	05861855
+cardinal-number	ordinal-number	reject	set-theoretic identification; for filing they are distinct kinds of number		
+complex-number	quaternion	reject	inverted — quaternions extend the complex numbers	13729428	
+domain	abelian-group	reject	Wikidata label collision (ring-theoretic domain); our domain is a function's domain — alignment cleared	08000118	06017472
+domain	subgroup	reject	same	08000118	06017053
+endomorphism	homomorphism	accept			
+finite-set	countable-set	accept			
+inverse-function	mathematical-operation	reject	a function, not an operation	13784537	00869583
+lemma	theorem	accept			06752293
+linear-map	homomorphism	accept			
+linear-operator	linear-map	accept		13786595	
+mathematical-field	abelian-group	reject	structure inheritance by forgetting; a field is filed as a ring	08005260	06017472
+mathematical-field	subgroup	reject	same	08005260	06017053
+plane	subset	reject	everything-is-a-set	13861050	08001209
+trigonometric-function	mathematical-operation	reject	a function, not an operation	13786960	00869583
+uncountable-set	infinite-set	accept			
+# --- mathematics wikidata batch 3: wikidata  ---
+affine-transformation	bijection	accept		13785965	
+algebraic-magma	algebraic-structure	accept			
+antisymmetric-relation	binary-relation	accept			
+automorphism	endomorphism	accept			
+axiom	lemma	reject	inverted nonsense in the source		
+finite-field	finite-set	accept			
+function	binary-relation	accept		13783816	
+integral-domain	abelian-group	reject	structure inheritance by forgetting; an integral domain is filed as a ring		06017472
+integral-domain	subgroup	reject	same		06017053
+isometry	bijection	accept		13786187	
+mathematical-module	algebraic-structure	accept			
+mathematical-ring	algebraic-structure	accept			
+mathematical-set	algebraic-structure	reject	a bare set carries no operations	07999699	
+partially-ordered-set	algebraic-structure	reject	an order is a relational structure, not an algebraic one (placed under mathematical-structure by ruling)		
+permutation	bijection	accept		00870312	
+reflexive-relation	binary-relation	accept			
+singleton-set	finite-set	accept			
+symmetric-relation	binary-relation	accept			
+transitive-relation	binary-relation	accept			
+# --- mathematics wikidata batch 4: wikidata  ---
+abelian-group	mathematical-module	reject	the Z-module view; filed as a group	06017472	
+abelian-group	topological-space	reject	forgetful inheritance	06017472	
+affine-transformation	automorphism	reject	not every affine map is invertible onto itself	13785965	
+algebra	mathematical-module	reject	label collision — our `algebra` is the branch of mathematics; alignment cleared	06012726	
+algebra	mathematical-ring	reject	same	06012726	
+algebra-over-a-field	mathematical-ring	accept			
+banach-space	mathematical-structure	accept			
+commutative-ring	mathematical-module	reject	forgetful inheritance; filed as a ring		
+commutative-ring	mathematical-ring	accept			
+division-ring	mathematical-ring	accept			
+equivalence-relation	symmetric-relation	accept			
+manifold	topological-space	accept		08004548	
+mathematical-category	mathematical-structure	accept			
+mathematical-graph	partially-ordered-set	reject	a graph is combinatorial, not an order (placed under mathematical-structure by ruling)		
+mathematical-graph	topological-space	reject	same		
+mathematical-lattice	partially-ordered-set	accept			
+metric-space	topological-space	accept		08004695	
+partial-order	antisymmetric-relation	accept			
+preorder	reflexive-relation	accept			
+preorder	transitive-relation	accept			
+quasigroup	algebraic-magma	accept			
+semigroup	algebraic-magma	accept			
+tree-graph	partially-ordered-set	reject	same		
+vector-space	mathematical-module	accept			
+# --- mathematics wikidata batch 5: wikidata  ---
+algebra-over-a-field	vector-space	accept			
+boolean-algebra	commutative-ring	reject	the Boolean-ring view; filed as a lattice		
+boolean-algebra	mathematical-lattice	accept			
+equivalence-relation	preorder	accept			
+hilbert-space	banach-space	accept		08005123	
+hilbert-space	vector-space	accept		08005123	
+integral-domain	commutative-ring	accept			
+lie-algebra	algebra-over-a-field	accept			
+lower-bound	partial-order	reject	a bound is an element, not a relation	13904011	
+mathematical-field	algebra-over-a-field	reject	a field is an algebra over itself — forgetful	08005260	
+mathematical-field	commutative-ring	accept		08005260	
+mathematical-field	division-ring	accept		08005260	
+mathematical-group	quasigroup	accept		06016853	
+monoid	semigroup	accept			
+partial-order	preorder	accept			
+semilattice	semigroup	accept			
+total-order	partial-order	accept			
+totally-ordered-set	mathematical-lattice	accept			
+upper-bound	partial-order	reject	same	13903855	
+# --- mathematics wikidata batch 6: wikidata  ---
+boolean-algebra	monoid	reject	forgetful		
+complex-number	totally-ordered-set	reject	false — the complex numbers admit no total order compatible with the field	13729428	
+diagonal	totally-ordered-set	reject	a matrix diagonal is not an ordered set	08268321	
+mathematical-group	monoid	accept		06016853	
+singleton-set	totally-ordered-set	reject	trivially true, useless as filing		
+well-order	total-order	accept			

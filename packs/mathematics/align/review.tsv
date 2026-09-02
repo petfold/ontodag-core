@@ -35,3 +35,14 @@ arithmetic-progression	concept	accept	a sequence of numbers; core has no `sequen
 geometric-progression	concept	accept	same	08461172	05835747
 harmonic-progression	concept	accept	same	08461424	05835747
 probability	statistic	accept	a measure of likelihood is a statistic; core left `probability` unplaced	05091770	06021499
+# proposed by Claude: the skeleton's own roots
+algebraic-structure	concept	accept	a set with operations; the root of the algebra lattice		05835747
+binary-relation	mathematical-relation	accept	a relation between two things is a mathematical relation		13783581
+# proposed by Claude: structure roots and the edges the pull did not carry
+mathematical-structure	concept	accept	a set with extra structure		05835747
+algebraic-structure	mathematical-structure	accept	operations on a set		
+partially-ordered-set	mathematical-structure	accept	an order on a set		
+topological-space	mathematical-structure	accept	a topology on a set		
+natural-number	integer	accept	the non-negative integers		
+empty-set	finite-set	accept	the set with no elements		
+mathematical-graph	mathematical-structure	accept	vertices and edges: a combinatorial structure		

@@ -24,7 +24,7 @@ from pack import Dirs, pack_arg
 ROOT = Path(__file__).resolve().parent.parent
 WN = ROOT / "sources/wordnet/dict"
 SOURCES = ["sumo", "schemaorg", "yago", "opencyc", "bfo", "dolce", "dul"]
-LABEL_SOURCES = {"schemaorg": "cache/schemaorg.pkl", "yago": "cache/yago.pkl",
+LABEL_SOURCES = {"schemaorg": "cache/schemaorg.pkl", "yago": "cache/yago.pkl", "wikidata": "cache/wikidata.pkl",
                  "opencyc": "cache/opencyc.pkl", "bfo": "cache/bfo.pkl",
                  "dolce": "cache/dolce.pkl", "dul": "cache/dul.pkl"}
 
@@ -247,7 +247,10 @@ def main():
     base_names = {r["name"] for r in base_rows}
     for name, off in sorted(concepts.items()):
         if name in base_names:
-            r = next(r for r in base_rows if r["name"] == name); r["origin"] = "base"; rows.append(r); continue
+            r = dict(next(r for r in base_rows if r["name"] == name)); r["origin"] = "base"
+            for src, v in overrides.get(name, {}).items():      # a pack may align a core name to its own sources
+                r[src] = "" if v == "-" else v
+            rows.append(r); continue
         if "wordnet" in overrides.get(name, {}):          # an override moves the hub too
             off = overrides[name]["wordnet"] or None
             off = None if off == "-" else off
@@ -286,7 +289,7 @@ def main():
         w = csv.writer(fh, delimiter="\t")
         w.writerow(["name", "issue", "ids"])
         w.writerows(queue)
-    cover = {s: sum(1 for r in rows if r[s]) for s in ["wordnet", "sumo"] + list(LABEL_SOURCES)}
+    cover = {s: sum(1 for r in rows if r.get(s)) for s in ["wordnet", "sumo"] + list(LABEL_SOURCES)}
     print(f"{len(rows)} concepts" + (f" ({sum(1 for r in rows if r.get('origin') != 'base')} new in pack {dirs.pack})" if dirs.pack else "") + "; aligned:", ", ".join(f"{s} {n}" for s, n in cover.items()),
           f"; {len(queue)} queued for review")
 

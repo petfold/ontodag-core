@@ -7,14 +7,19 @@ activity '*'
 acute-triangle triangle
 additive-inverse number
 affine-geometry geometry
-affine-transformation transformation
+affine-transformation bijection transformation
 age-norm average
 algebra field-of-study mathematics
+algebra-over-a-field mathematical-ring vector-space
+algebraic-magma algebraic-structure
+algebraic-number complex-number
+algebraic-structure mathematical-structure
 algorithm procedure
 analysis-of-variance multivariate-analysis
 analytic-geometry geometry
 angle '*'
 angle-of-inclination angle
+antisymmetric-relation binary-relation
 arc-cosecant trigonometric-function
 arc-cosine trigonometric-function
 arc-cotangent trigonometric-function
@@ -27,26 +32,33 @@ arithmetic-operation mathematical-operation
 arithmetic-progression concept
 asymmetry attribute
 attribute '*'
+automorphism endomorphism
 average '*'
+banach-space mathematical-structure
 'bayes'"'"'-postulate' information proposition
 'bayes'"'"'-theorem' idea
 'bernoulli'"'"'s-law' concept
-binomial quantity
+bijection surjective-function
+binary-relation mathematical-relation
+binomial polynomial quantity
 binomial-distribution statistical-distribution
 binomial-theorem theorem
 biquadratic polynomial
 biquadratic-equation equation
 biserial-correlation-coefficient correlation-coefficient
+boolean-algebra mathematical-lattice
 boundary-condition mathematical-statement
 calculation '*'
 calculus field-of-study mathematics
 calculus-of-variations calculus
+cardinal-number number
 cardinality number
 closed-interval interval
 coefficient-of-concordance kendall-test
 cognition '*'
 collection '*'
 combinatorial-combination mathematical-operation
+commutative-ring mathematical-ring
 complex-number number
 concave-polygon polygon
 concept '*'
@@ -55,11 +67,12 @@ conic-section attribute shape
 convergence event mathematical-series
 convex-polygon polygon
 coordinate-origin geometric-intersection
-correlation-coefficient parametric-statistic
+correlation-coefficient number parametric-statistic
 correlational-analysis multivariate-analysis
 cosecant trigonometric-function
 cosine trigonometric-function
 cotangent trigonometric-function
+countable-set mathematical-set
 covariance variance
 covariation statistical-correlation
 cross-section sample
@@ -67,13 +80,14 @@ curve '*'
 curved-shape '*'
 curvilinear-correlation statistical-correlation
 curvilinear-regression regression
+cyclic-group abelian-group
 decagon polygon
 decile statistic
 definition '*'
 degree-of-freedom quantity variable
 demographic statistic
 dependent-variable quantity variable
-deviation statistic
+deviation number statistic
 diagonal mathematical-set
 diagonal-line shape
 differential-calculus calculus
@@ -81,18 +95,23 @@ differential-equation equation mathematical-statement
 differentiation mathematical-operation
 divergence mathematical-series
 division arithmetic-operation
+division-ring mathematical-ring
 dodecagon polygon
 domain mathematical-set
 drawn-box rectangle
 duality attribute
-eccentricity ratio
+eccentricity ratio real-number
 elementary-geometry geometry
 elliptic-geometry non-euclidean-geometry
+empty-set finite-set
+endomorphism homomorphism
 equation '*'
 equidistribution statistical-distribution
 equilateral-triangle regular-polygon triangle
+equivalence-relation preorder symmetric-relation
 'euclid'"'"'s-axiom' proposition
 euclidean-space metric-space
+even-number integer
 evenness parity
 event '*'
 exceedance probability
@@ -108,12 +127,15 @@ factor-analysis correlational-analysis
 factorization mathematical-operation
 feature '*'
 field-of-study '*'
+finite-field finite-set mathematical-field
+finite-group mathematical-group
+finite-set countable-set
 fourier-series mathematical-series
 fractal shape
 fractal-geometry geometry
 fraction complex-number
 frequency-distribution statistical-distribution
-function mathematical-relation
+function binary-relation
 galois-theory group-theory
 geodesic shape
 geometric-construction mathematical-operation
@@ -131,49 +153,65 @@ harmonic-mean mean
 harmonic-progression concept
 heptagon polygon
 hexagon polygon
-hilbert-space metric-space
+hilbert-space banach-space metric-space vector-space
 homogeneous-polynomial polynomial
+homomorphism function
 hyperbolic-geometry non-euclidean-geometry
 idea '*'
 identity-element operator
+imaginary-number complex-number
 independent-variable quantity variable
-infinitesimal quantity variable
+infinite-set mathematical-set
+infinitesimal number quantity variable
 information '*'
 information-theory concept
+injective-function function
+integer rational-number
 integral-calculus calculus
+integral-domain commutative-ring
 interpolation calculation
 interval mathematical-set
 invariance attribute
 invariant feature property
 inverse-function function
+irrational-number real-number
 isogon polygon
-isometry function
+isometry bijection
 isosceles-triangle triangle
 joint-probability probability
 kendall-partial-rank-correlation kendall-test
 kendall-test nonparametric-statistic
 kronecker-delta function
 least-squares statistical-method
+lemma theorem
+lie-algebra algebra-over-a-field
 linear-algebra algebra
 linear-equation equation
-linear-operator operator
+linear-map homomorphism
+linear-operator linear-map operator
 linear-regression regression
 locating '*'
 locus mathematical-set
 long-division division
 lower-bound number
 mandelbrot-set mathematical-set
-manifold mathematical-space
+manifold mathematical-space topological-space
 mathematical-analysis calculus
-mathematical-field mathematical-set
-mathematical-group mathematical-set
+mathematical-category mathematical-structure
+mathematical-field commutative-ring division-ring subset
+mathematical-graph mathematical-structure
+mathematical-group mathematical-set monoid quasigroup
 mathematical-integration mathematical-operation
-mathematical-operation act activity event procedure
+mathematical-lattice partially-ordered-set
+mathematical-module algebraic-structure
+mathematical-operation act activity event function procedure
 mathematical-relation concept
+mathematical-ring algebraic-structure
 mathematical-series function
 mathematical-set concept
 mathematical-space mathematical-set
 mathematical-statement information
+mathematical-structure concept
 mathematician scientist
 mathematics '*'
 matrix-addition matrix-operation
@@ -190,32 +228,36 @@ median average
 metamathematics field-of-study mathematics
 method '*'
 metric-function function
-metric-space mathematical-space
+metric-space mathematical-space topological-space
 mode average
 moment statistic
 monic-polynomial polynomial
+monoid semigroup
 multicollinearity multiple-regression
 multiple-correlation-coefficient correlation-coefficient
 multiple-regression multivariate-analysis
 multiplication arithmetic-operation
 multiplicative-inverse number
 multivariate-analysis statistical-method
+natural-number integer
 negative-correlation statistical-correlation
 non-euclidean-geometry geometry
 nonagon polygon
 nonparametric-statistic statistic
 normal-curve curved-shape
 normal-distribution statistical-distribution
-null-set mathematical-set
+null-set subset
 null-space mathematical-space
 number '*'
 numerical-analysis field-of-study mathematics
 oblique-triangle triangle
 obtuse-triangle triangle
 octagon polygon
+odd-number integer
 oddness parity
 open-interval interval
 operator function
+ordinal-number number
 osculation event
 outlier deviation
 parallel-line attribute shape
@@ -224,10 +266,12 @@ parametric-statistic statistic
 parity mathematical-relation
 partial-correlation statistical-correlation
 partial-differential-equation differential-equation
+partial-order antisymmetric-relation preorder
+partially-ordered-set mathematical-structure
 pencil-of-lines attribute shape
 pentagon polygon
 percentile statistic
-permutation mathematical-operation
+permutation bijection mathematical-operation
 phi-coefficient nonparametric-statistic
 plane attribute shape
 plane-geometry geometry
@@ -238,6 +282,7 @@ polynomial function
 positive-correlation statistical-correlation
 power-series mathematical-series
 predictor-variable quantity variable
+preorder reflexive-relation transitive-relation
 primitive expression information
 probability statistic
 probability-theory field-of-study mathematics
@@ -255,16 +300,21 @@ quadrilateral polygon
 quantic homogeneous-polynomial
 quantity '*'
 quartile statistic
+quasigroup algebraic-magma
+quaternion number
 radical-expression expression
 random-sample sample
 range-of-a-function mathematical-set
 rank-order-correlation-coefficient nonparametric-statistic
 ratio '*'
+rational-number algebraic-number real-number
 rationalization mathematical-operation
+real-number complex-number
 rectangle parallelogram
 recursion procedure
 recursive-definition definition information
 reentrant-polygon concave-polygon
+reflexive-relation binary-relation
 reflexivity mathematical-relation
 regression statistical-method
 regression-analysis multivariate-analysis
@@ -278,16 +328,18 @@ rhomboid parallelogram
 rhombus parallelogram
 right-triangle polygon triangle
 root mathematical-set
-rounding event
+rounding mathematical-operation
 sample '*'
 sample-distribution statistical-distribution
 sampling act event
-scalar-field mathematical-field
+scalar-field function mathematical-field
 scalene-triangle triangle
 schrodinger-equation differential-equation
 scientist '*'
 secant trigonometric-function
 second-moment moment
+semigroup algebraic-magma
+semilattice semigroup
 sentential-function expression
 series-expansion function
 set-theory field-of-study mathematics
@@ -295,6 +347,7 @@ shape '*'
 short-division division
 simultaneous-equations equation information
 sine trigonometric-function
+singleton-set finite-set
 solid-geometry geometry
 spherical-geometry geometry
 spherical-polygon polygon
@@ -312,13 +365,15 @@ statistical-population collection
 statistician expert
 stratified-sample sample-distribution
 sub-interval interval
-subgroup mathematical-group
+subgroup mathematical-group subset
 subpopulation statistical-population
 subset mathematical-set
 subspace mathematical-space
 subtraction arithmetic-operation
 summation arithmetic-operation
 superposition event locating
+surjective-function function
+symmetric-relation binary-relation
 symmetry attribute
 tangent trigonometric-function
 tau-coefficient-of-correlation kendall-test
@@ -326,10 +381,15 @@ tetrachoric-correlation-coefficient correlation-coefficient
 theorem proposition
 threshold-function function
 time-series statistic
+topological-space mathematical-structure
 topology field-of-study mathematics
+total-order partial-order
+totally-ordered-set mathematical-lattice
+transcendental-number irrational-number
 transformation function
+transitive-relation binary-relation
 transitivity mathematical-relation
-translation transformation
+translation isometry transformation
 transposition act activity event procedure
 trapezium quadrilateral
 trapezoid quadrilateral
@@ -337,13 +397,16 @@ triangle '*'
 trigonometric-function function
 trigonometry field-of-study mathematics
 truncation-error event
+uncountable-set infinite-set
 undecagon polygon
 universal-set mathematical-set
 upper-bound number
 variable '*'
-variance moment
+variance moment number
 vector-algebra algebra
+vector-space mathematical-module
 vital-statistics statistic
 wave-equation differential-equation
 wedge attribute shape
 weight number
+well-order total-order

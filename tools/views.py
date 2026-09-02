@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parent.parent
 GRAPHS = {"wordnet": "cache/wordnet.pkl", "sumo": "cache/sumo-mid.pkl",
           "schemaorg": "cache/schemaorg.pkl", "yago": "cache/yago.pkl",
           "opencyc": "cache/opencyc.pkl", "bfo": "cache/bfo.pkl",
-          "dolce": "cache/dolce.pkl", "dul": "cache/dul.pkl", "claude": "cache/core.pkl"}
+          "dolce": "cache/dolce.pkl", "dul": "cache/dul.pkl", "wikidata": "cache/wikidata.pkl", "claude": "cache/core.pkl"}
 
 
 def main():
