@@ -574,7 +574,6 @@ afternoon	quantity	single	sumo
 afternoon	time-period	single	wordnet	
 age	monetary-value	single	sumo	
 age	property	single	sumo	
-agency	business	single	wordnet	
 agency	group	single	wordnet	
 agency	organization	single	wordnet	
 agenda	artifact	single	sumo	
@@ -700,7 +699,7 @@ aircraft	physical-object	accepted	claude wordnet
 aircraft	product	single	yago	
 aircraft	universe	single	sumo	
 aircraft	vehicle	accepted	claude sumo wordnet yago	
-airline	business	accepted	claude opencyc wordnet	
+airline	business	single	claude	
 airline	group	single	wordnet	
 airline	institution	single	opencyc	
 airline	organization	accepted	schemaorg wordnet yago	
@@ -2056,7 +2055,6 @@ barrier	universe	single	sumo
 barroom	agent	single	sumo	
 barroom	artifact	single	wordnet	
 barroom	association.group	single	sumo	
-barroom	business	single	sumo	
 barroom	collection	single	sumo	
 barroom	group	single	sumo	
 barroom	organization	single	sumo	
@@ -2996,7 +2994,6 @@ breeze	situation	single	opencyc
 breeze	weather	accepted	opencyc wordnet	
 breeze	wind	accepted	sumo wordnet	
 brewery	artifact	single	wordnet	
-brewery	business	single	opencyc	
 brewery	institution	single	opencyc	
 brewery	organization	accepted	schemaorg yago	
 brewery	physical-object	single	wordnet	
@@ -3279,18 +3276,7 @@ bus-ticket	text	single	sumo
 bus-ticket	ticket	accepted	claude opencyc wordnet	
 bus-ticket	transport-ticket	single	claude	
 bus-ticket	universe	single	sumo	
-business	agent	single	sumo	
-business	association.group	single	sumo	
-business	collection	single	sumo	
-business	field-of-study	single	claude	
-business	group	accepted	sumo wordnet	
-business	institution	single	opencyc	
-business	organization	accepted	sumo wordnet yago	
-business	phenomenon	single	sumo	
-business	structure	single	opencyc	
-business	system	single	opencyc	
-business	team	single	sumo	
-business	universe	single	sumo	
+business-studies	field-of-study	single	claude	
 businessman	adult	single	opencyc	
 businessman	agent	single	wordnet	
 businessman	employment.act	single	sumo	
@@ -3763,7 +3749,6 @@ carnival	act	single	wordnet
 carnival	activity	single	wordnet	
 carnival	agent	single	sumo	
 carnival	association.group	single	sumo	
-carnival	business	single	sumo	
 carnival	collection	single	sumo	
 carnival	company	single	sumo	
 carnival	entertainment	accepted	claude wordnet	
@@ -4114,7 +4099,6 @@ chain.artifact	information	single	sumo
 chain.artifact	phenomenon	single	sumo	
 chain.artifact	physical-object	accepted	sumo wordnet	
 chain.artifact	universe	single	sumo	
-chain.group	business	single	wordnet	
 chain.group	group	single	wordnet	
 chain.group	organization	single	wordnet	
 chair	artifact	accepted	opencyc sumo wordnet	
@@ -5187,7 +5171,6 @@ compact	physical-object	single	wordnet
 compact	vehicle	single	wordnet	
 company	agent	accepted	claude sumo	
 company	association.group	single	sumo	
-company	business	single	sumo	
 company	collection	single	sumo	
 company	group	accepted	sumo wordnet	
 company	institution	accepted	claude wordnet	
@@ -5197,7 +5180,6 @@ company	team	single	sumo
 company	universe	single	sumo	
 company.group	agent	single	sumo	
 company.group	association.group	single	sumo	
-company.group	business	single	sumo	
 company.group	collection	single	sumo	
 company.group	company	single	sumo	
 company.group	firm	single	sumo	
@@ -5575,7 +5557,6 @@ confusion	mistake	accepted	claude wordnet
 confusion	phenomenon	single	sumo	
 conglomerate	agent	single	sumo	
 conglomerate	association.group	single	sumo	
-conglomerate	business	accepted	sumo wordnet	
 conglomerate	collection	single	sumo	
 conglomerate	company	single	sumo	
 conglomerate	firm	accepted	sumo wordnet	
@@ -6657,7 +6638,6 @@ dad	species	single	sumo
 dad	universe	single	sumo	
 dad	vertebrate	single	sumo	
 dairy	artifact	single	sumo	
-dairy	business	single	opencyc	
 dairy	development	single	sumo	
 dairy	farm	single	wordnet	
 dairy	institution	single	opencyc	
@@ -7843,7 +7823,6 @@ distortion	tension	single	sumo
 distortion	way	single	sumo	
 distributor	agent	single	sumo	
 distributor	association.group	single	sumo	
-distributor	business	single	sumo	
 distributor	collection	single	sumo	
 distributor	company	accepted	sumo wordnet	
 distributor	firm	single	sumo	
@@ -10058,7 +10037,6 @@ fireman	physical-object	single	wordnet
 fireman	property	single	sumo	
 firm	agent	single	sumo	
 firm	association.group	single	sumo	
-firm	business	accepted	sumo wordnet	
 firm	collection	single	sumo	
 firm	group	accepted	sumo wordnet	
 firm	organization	accepted	sumo wordnet	
@@ -10196,7 +10174,6 @@ flatware	device	single	sumo
 flatware	phenomenon	single	sumo	
 flatware	physical-object	single	wordnet	
 flatware	universe	single	sumo	
-fleet	business	single	wordnet	
 fleet	collection	single	sumo	
 fleet	group	single	wordnet	
 fleet	organization	single	wordnet	
@@ -10601,7 +10578,6 @@ fragment	phenomenon	single	sumo
 fragment	universe	single	sumo	
 franchise	agent	single	sumo	
 franchise	association.group	single	sumo	
-franchise	business	accepted	sumo wordnet	
 franchise	collection	single	sumo	
 franchise	company	single	sumo	
 franchise	firm	single	sumo	
@@ -10845,7 +10821,6 @@ garage.2	shop	single	claude
 garage.artifact	agent	single	sumo	
 garage.artifact	artifact	single	wordnet	
 garage.artifact	association.group	single	sumo	
-garage.artifact	business	single	sumo	
 garage.artifact	collection	single	sumo	
 garage.artifact	company	single	sumo	
 garage.artifact	firm	single	sumo	
@@ -11428,7 +11403,6 @@ grip.phenomenon	phenomenon	single	wordnet
 grocery-store	agent	single	sumo	
 grocery-store	artifact	single	wordnet	
 grocery-store	association.group	single	sumo	
-grocery-store	business	single	sumo	
 grocery-store	collection	single	sumo	
 grocery-store	company	single	sumo	
 grocery-store	firm	single	sumo	
@@ -14662,7 +14636,6 @@ machine	physical-object	accepted	claude wordnet
 machine	product	single	yago	
 machine	universe	single	sumo	
 machinery	artifact	accepted	sumo wordnet	
-machinery	business	single	opencyc	
 machinery	device	accepted	sumo wordnet	
 machinery	institution	single	opencyc	
 machinery	machine	accepted	claude wordnet	
@@ -15302,7 +15275,6 @@ menu.food	substance	single	wordnet
 mercantile-establishment	agent	single	sumo	
 mercantile-establishment	artifact	single	wordnet	
 mercantile-establishment	association.group	single	sumo	
-mercantile-establishment	business	single	sumo	
 mercantile-establishment	collection	single	sumo	
 mercantile-establishment	company	single	sumo	
 mercantile-establishment	firm	single	sumo	
@@ -15356,7 +15328,6 @@ methodology	measure	single	sumo
 methodology	method	single	wordnet	
 methodology	routine	single	sumo	
 methodology	sense.communication	single	sumo	
-metro	business	single	wordnet	
 metro	group	single	wordnet	
 metro	organization	single	wordnet	
 metro	railway	single	wordnet	
@@ -16785,7 +16756,6 @@ operation.act.2	act	single	wordnet
 operation.act.2	activity	single	wordnet	
 operation.act.2	agent	single	sumo	
 operation.act.2	association.group	single	sumo	
-operation.act.2	business	single	sumo	
 operation.act.2	collection	single	sumo	
 operation.act.2	company	single	sumo	
 operation.act.2	event	single	wordnet	
@@ -19379,7 +19349,6 @@ publicity	universe	single	sumo
 publisher	adult	single	opencyc	
 publisher	agent	single	sumo	
 publisher	association.group	single	sumo	
-publisher	business	accepted	sumo wordnet	
 publisher	collection	single	sumo	
 publisher	company	single	sumo	
 publisher	firm	accepted	sumo wordnet	
@@ -19723,7 +19692,6 @@ radio-receiver	product	accepted	opencyc yago
 radio-receiver	universe	single	sumo	
 railroad-track	artifact	single	wordnet	
 railroad-track	physical-object	single	wordnet	
-railway	business	single	wordnet	
 railway	group	single	wordnet	
 railway	organization	single	wordnet	
 rain	event	single	opencyc	
@@ -22230,7 +22198,6 @@ shooting	visit	single	sumo
 shop	agent	single	sumo	
 shop	artifact	single	wordnet	
 shop	association.group	single	sumo	
-shop	business	single	sumo	
 shop	collection	single	sumo	
 shop	company	single	sumo	
 shop	firm	single	sumo	
@@ -23766,7 +23733,6 @@ superintendent	property	single	sumo
 supermarket	agent	single	sumo	
 supermarket	artifact	single	wordnet	
 supermarket	association.group	single	sumo	
-supermarket	business	single	sumo	
 supermarket	collection	single	sumo	
 supermarket	company	single	sumo	
 supermarket	firm	single	sumo	
@@ -24769,7 +24735,6 @@ transport-ticket	document	single	claude
 transport-ticket	information	single	claude	
 transport-ticket	ticket	single	claude	
 transportation	act	single	wordnet	
-transportation	business	single	opencyc	
 transportation	commerce	single	wordnet	
 transportation	commercial-enterprise	single	wordnet	
 transportation	event	single	wordnet	
@@ -25307,7 +25272,6 @@ velvet	universe	single	sumo
 venture	act	single	wordnet	
 venture	agent	single	sumo	
 venture	association.group	single	sumo	
-venture	business	single	sumo	
 venture	collection	single	sumo	
 venture	commerce	single	wordnet	
 venture	commercial-enterprise	single	wordnet	

@@ -572,7 +572,6 @@ single	barrel.artifact	physical-object	only wordnet
 single	barroom	agent	only sumo
 single	barroom	artifact	only wordnet
 single	barroom	association.group	only sumo
-single	barroom	business	only sumo
 single	barroom	collection	only sumo
 single	barroom	group	only sumo
 single	barroom	organization	only sumo
@@ -829,7 +828,6 @@ single	branch	natural-object	only wordnet
 single	branch	structure	only opencyc
 single	breeze	natural-event	only wordnet
 single	brewery	artifact	only wordnet
-single	brewery	business	only opencyc
 single	brewery	institution	only opencyc
 single	brewery	physical-object	only wordnet
 single	brick	block	only opencyc
@@ -906,13 +904,6 @@ single	bus-ticket	indication	only sumo
 single	bus-ticket	line.communication	only sumo
 single	bus-ticket	physical-object	only sumo
 single	bus-ticket	text	only sumo
-single	business	agent	only sumo
-single	business	association.group	only sumo
-single	business	collection	only sumo
-single	business	field-of-study	only claude
-single	business	institution	only opencyc
-single	business	structure	only opencyc
-single	business	team	only sumo
 single	businessman	adult	only opencyc
 single	businessman	agent	only wordnet
 single	businessman	human	only opencyc
@@ -1043,7 +1034,6 @@ single	carnival	act	only wordnet
 single	carnival	activity	only wordnet
 single	carnival	agent	only sumo
 single	carnival	association.group	only sumo
-single	carnival	business	only sumo
 single	carnival	collection	only sumo
 single	carnival	company	only sumo
 single	carnival	festival	only yago
@@ -1446,12 +1436,10 @@ single	community	class.group	only sumo
 single	community	collection	only sumo
 single	community	people	only sumo
 single	company	association.group	only sumo
-single	company	business	only sumo
 single	company	collection	only sumo
 single	company	team	only sumo
 single	company.group	agent	only sumo
 single	company.group	association.group	only sumo
-single	company.group	business	only sumo
 single	company.group	collection	only sumo
 single	company.group	company	only sumo
 single	company.group	firm	only sumo
@@ -1829,7 +1817,6 @@ single	dad	mammal	only sumo
 single	dad	man	only sumo
 single	dad	vertebrate	only sumo
 single	dairy	artifact	only sumo
-single	dairy	business	only opencyc
 single	dairy	farm	only wordnet
 single	dairy	institution	only opencyc
 single	dairy	organization	only yago
@@ -2064,7 +2051,6 @@ single	dissertation	publication	only opencyc
 single	dissertation	text	only sumo
 single	distributor	agent	only sumo
 single	distributor	association.group	only sumo
-single	distributor	business	only sumo
 single	distributor	collection	only sumo
 single	distributor	firm	only sumo
 single	distributor	institution	only wordnet
@@ -2715,7 +2701,6 @@ single	garage	structure	only wordnet
 single	garage.artifact	agent	only sumo
 single	garage.artifact	artifact	only wordnet
 single	garage.artifact	association.group	only sumo
-single	garage.artifact	business	only sumo
 single	garage.artifact	collection	only sumo
 single	garage.artifact	company	only sumo
 single	garage.artifact	firm	only sumo
@@ -2832,7 +2817,6 @@ single	grimace	motion	only sumo
 single	grocery-store	agent	only sumo
 single	grocery-store	artifact	only wordnet
 single	grocery-store	association.group	only sumo
-single	grocery-store	business	only sumo
 single	grocery-store	collection	only sumo
 single	grocery-store	company	only sumo
 single	grocery-store	firm	only sumo
@@ -3552,7 +3536,6 @@ single	luggage-compartment	device	only sumo
 single	luggage-compartment	physical-object	only wordnet
 single	luggage-compartment	structure	only wordnet
 single	lumber	physical-object	only wordnet
-single	machinery	business	only opencyc
 single	machinery	institution	only opencyc
 single	machinery	physical-object	only wordnet
 single	machinery	structure	only opencyc
@@ -4102,7 +4085,6 @@ single	operation.act.2	act	only wordnet
 single	operation.act.2	activity	only wordnet
 single	operation.act.2	agent	only sumo
 single	operation.act.2	association.group	only sumo
-single	operation.act.2	business	only sumo
 single	operation.act.2	collection	only sumo
 single	operation.act.2	company	only sumo
 single	operation.act.2	event	only wordnet
@@ -5597,7 +5579,6 @@ single	shooting	visit	only sumo
 single	shop	agent	only sumo
 single	shop	artifact	only wordnet
 single	shop	association.group	only sumo
-single	shop	business	only sumo
 single	shop	collection	only sumo
 single	shop	company	only sumo
 single	shop	firm	only sumo
@@ -5964,7 +5945,6 @@ single	sunlight	light	only opencyc
 single	supermarket	agent	only sumo
 single	supermarket	artifact	only wordnet
 single	supermarket	association.group	only sumo
-single	supermarket	business	only sumo
 single	supermarket	collection	only sumo
 single	supermarket	company	only sumo
 single	supermarket	firm	only sumo
@@ -6679,7 +6659,7 @@ unplaced	affinity	amateur atmosphere.state attraction circumstance convention.co
 unplaced	affinity.relation	accomplishment act activity event phenomenon procedure.act volition	no accepted parent reaches a root
 unplaced	afternoon	quantity time-period	no accepted parent reaches a root
 unplaced	age	monetary-value property	no accepted parent reaches a root
-unplaced	agency	business group organization	no accepted parent reaches a root
+unplaced	agency	group organization	no accepted parent reaches a root
 unplaced	agent.person	agent employment.act monetary-value organism person physical-object property representative	no accepted parent reaches a root
 unplaced	agitation	act amateur atmosphere.state circumstance convention.cognition crowd culture.group custom	no accepted parent reaches a root
 unplaced	agony	emotion emotional-state monetary-value pain.feeling property suffering	no accepted parent reaches a root
@@ -6815,6 +6795,7 @@ unplaced	bun	bread food substance	no accepted parent reaches a root
 unplaced	bundle	artifact collection container phenomenon physical-object	no accepted parent reaches a root
 unplaced	bureaucracy	group monetary-value organization property structure system	no accepted parent reaches a root
 unplaced	burn	condition.state event injury part phenomenon structure system	no accepted parent reaches a root
+unplaced	business-studies	field-of-study	no accepted parent reaches a root
 unplaced	bustle	act amateur atmosphere.state circumstance convention.cognition crowd culture.group custom	no accepted parent reaches a root
 unplaced	buttocks	phenomenon physical-object universe	no accepted parent reaches a root
 unplaced	cabinet.group	board.group committee group organization	no accepted parent reaches a root
@@ -6851,7 +6832,7 @@ unplaced	century	time-period	no accepted parent reaches a root
 unplaced	cereal	food phenomenon substance universe	no accepted parent reaches a root
 unplaced	chaff	material part phenomenon physical-object substance universe	no accepted parent reaches a root
 unplaced	chain	artifact physical-object	no accepted parent reaches a root
-unplaced	chain.group	business group organization	no accepted parent reaches a root
+unplaced	chain.group	group organization	no accepted parent reaches a root
 unplaced	challenge.state	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
 unplaced	change.possession	cash currency quantity standard	no accepted parent reaches a root
 unplaced	chaos	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
@@ -7215,7 +7196,7 @@ unplaced	fist	hand hand.body part structure system	no accepted parent reaches a 
 unplaced	fit	anger emotion emotional-state monetary-value property	no accepted parent reaches a root
 unplaced	fitness	amateur atmosphere.state circumstance condition.state convention.cognition crowd culture.group custom	no accepted parent reaches a root
 unplaced	fix	amateur atmosphere.state circumstance condition.state convention.cognition crowd culture.group custom	no accepted parent reaches a root
-unplaced	fleet	business collection group organization phenomenon	no accepted parent reaches a root
+unplaced	fleet	collection group organization phenomenon	no accepted parent reaches a root
 unplaced	flesh	material phenomenon physical-object substance tissue universe	no accepted parent reaches a root
 unplaced	flour	food powder substance	no accepted parent reaches a root
 unplaced	fluctuation	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
@@ -7545,11 +7526,11 @@ unplaced	memory.cognition.2	cognition event phenomenon	no accepted parent reache
 unplaced	menace	agent amateur atmosphere.state circumstance convention.cognition crowd culture.group custom	no accepted parent reaches a root
 unplaced	mentality	attitude cognition monetary-value property	no accepted parent reaches a root
 unplaced	menu.food	food substance	no accepted parent reaches a root
-unplaced	mercantile-establishment	agent artifact association.group business collection company firm group	no accepted parent reaches a root
+unplaced	mercantile-establishment	agent artifact association.group collection company firm group organization	no accepted parent reaches a root
 unplaced	merchant	agent employment.act monetary-value organism person physical-object property	no accepted parent reaches a root
 unplaced	method	cognition measure routine sense.communication	no accepted parent reaches a root
 unplaced	methodology	cognition measure method routine sense.communication	no accepted parent reaches a root
-unplaced	metro	business group organization railway	no accepted parent reaches a root
+unplaced	metro	group organization railway	no accepted parent reaches a root
 unplaced	middle	cognition concept idea	no accepted parent reaches a root
 unplaced	midnight	clock-time cognition hour.time quantity time-period	no accepted parent reaches a root
 unplaced	mile	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
@@ -7790,7 +7771,7 @@ unplaced	race.group	group	no accepted parent reaches a root
 unplaced	racism	attitude bias cognition inclination sense.communication	no accepted parent reaches a root
 unplaced	radiation-sickness	cognition event evidence phenomenon symptom syndrome	no accepted parent reaches a root
 unplaced	railroad-track	artifact physical-object	no accepted parent reaches a root
-unplaced	railway	business group organization	no accepted parent reaches a root
+unplaced	railway	group organization	no accepted parent reaches a root
 unplaced	raise	increase.attribute magnitude quantity	no accepted parent reaches a root
 unplaced	randomness	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
 unplaced	range.object	physical-object	no accepted parent reaches a root
@@ -8091,7 +8072,7 @@ unplaced	train	artifact physical-object place product vehicle	no accepted parent
 unplaced	trainer	agent human leader mammal monetary-value organism person physical-object	no accepted parent reaches a root
 unplaced	trait	monetary-value property	no accepted parent reaches a root
 unplaced	transport-ticket	document information ticket	no accepted parent reaches a root
-unplaced	transportation	act business commerce commercial-enterprise event institution structure system	no accepted parent reaches a root
+unplaced	transportation	act commerce commercial-enterprise event institution structure system transaction	no accepted parent reaches a root
 unplaced	trench	artifact physical-object	no accepted parent reaches a root
 unplaced	trial	action cognition conflict event quantity situation thinking	no accepted parent reaches a root
 unplaced	trial.event	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
@@ -8127,7 +8108,7 @@ unplaced	vector	cognition concept idea quantity variable	no accepted parent reac
 unplaced	vegetable-oil	chemical compound fat fruit.plant material molecule oil part	no accepted parent reaches a root
 unplaced	vegetarian	agent consumer organism person physical-object user	no accepted parent reaches a root
 unplaced	vegetation	agent collection group organism phenomenon physical-object plant species	no accepted parent reaches a root
-unplaced	venture	act agent association.group business collection commerce commercial-enterprise company	no accepted parent reaches a root
+unplaced	venture	act agent association.group collection commerce commercial-enterprise company event	no accepted parent reaches a root
 unplaced	venus		no accepted parent reaches a root
 unplaced	version	category cognition concept idea	no accepted parent reaches a root
 unplaced	view	cognition monetary-value property	no accepted parent reaches a root
