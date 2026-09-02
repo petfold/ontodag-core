@@ -14,3 +14,13 @@ python3 tools/top.py cache/wordnet.pkl --depth 3 --min 300  --od tops/wordnet.od
 python3 tools/top.py cache/sumo.pkl    --depth 3 --min 1    --od tops/sumo.od
 python3 tools/top.py cache/opencyc.pkl --depth 2 --min 1500 --od tops/opencyc.od
 python3 tools/top.py cache/core.pkl    --depth 99 --min 0   --od tops/core.od
+[ -f cache/bfo.pkl ]       || python3 tools/extract_owl.py sources/bfo/bfo.owl BFO_0000001 cache/bfo.pkl
+[ -f cache/dolce.pkl ]     || python3 tools/extract_owl.py sources/dolce/DOLCE-Lite.owl particular cache/dolce.pkl
+[ -f cache/dul.pkl ]       || python3 tools/extract_owl.py sources/dolce/DUL.owl Entity cache/dul.pkl
+[ -f cache/schemaorg.pkl ] || python3 tools/extract_schemaorg.py cache/schemaorg.pkl
+[ -f cache/yago.pkl ]      || python3 tools/extract_yago.py cache/yago.pkl
+python3 tools/top.py cache/bfo.pkl       --depth 99 --min 0   --od tops/bfo.od        # all 35
+python3 tools/top.py cache/dolce.pkl     --depth 99 --min 0   --od tops/dolce.od      # all of DOLCE-Lite
+python3 tools/top.py cache/dul.pkl       --depth 3  --min 1   --od tops/dul.od
+python3 tools/top.py cache/schemaorg.pkl --depth 2  --min 3   --od tops/schemaorg.od
+python3 tools/top.py cache/yago.pkl      --depth 2  --min 200 --od tops/yago.od

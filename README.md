@@ -27,8 +27,13 @@ anyone; the product is a published store root that `odag pack core` adopts.
 | `sources/wordnet/core-wordnet.txt` | Princeton Core WordNet, ~5,000 frequent synsets | same |
 | `sources/opencyc/opencyc-latest.owl/owl-export-unversioned.owl` | OpenCyc 4.0 OWL export, 240 MB | CC-BY 3.0 (per file header) |
 | `sources/sumo/` | SUMO checkout: `Merge.kif`, `Mid-level-ontology.kif`, `WordNetMappings/` | IEEE licence (ontology), GPL (tools) |
+| `sources/schemaorg/schemaorg-current-https.jsonld` | schema.org, latest release, JSON-LD | CC-BY-SA 3.0 |
+| `sources/yago/yago-wd-{schema,class}.nt.gz` | YAGO 4 (2020-02-24) taxonomy: schema.org top, Wikidata classes below | CC-BY-SA 3.0 |
+| `sources/bfo/bfo.owl` | BFO 2020 (ISO/IEC 21838-2), from purl.obolibrary.org | CC-BY 4.0 |
+| `sources/dolce/DOLCE-Lite.owl`, `DUL.owl` | DOLCE-Lite and DOLCE+DnS Ultralite (Turtle despite the name) | CC-BY 4.0 |
 
-Still to fetch: schema.org (JSON-LD), YAGO 4 taxonomy, BFO, DOLCE.
+Fetch commands are in `tools/fetch.sh`. YAGO 4.5 was not found at any public
+path on 2026-09-02; YAGO 4 is what we have.
 
 ## Use
 
@@ -43,5 +48,5 @@ Cyc concept ids, SUMO terms); the `.od` names are normalised labels with
 `.2`, `.3` on collisions. OpenCyc contains mutual-subclass pairs (OWL
 equivalence); the exporter breaks them and says where.
 
-Requires `ontodag` installed (`pip install ontodag`); the tools import it to
-write files it can read back.
+Requires `ontodag` (`pip install ontodag`; the tools import it to write files it
+can read back) and `rdflib` for the three small OWL files.

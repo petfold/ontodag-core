@@ -36,12 +36,17 @@ It never commits coverage or granularity. Consequences for how to build:
 
 `tools/build.sh` produces four tops as `.od` files. First numbers:
 
-| top | categories | shared names with `core` | cut |
+| top | categories | names shared with `core` | cut |
 |---|---|---|---|
-| core (ontodag 0.18.1 + review) | 194 | — | whole pack |
-| WordNet 3.0 nouns | 44 | 7 | depth ≤ 3, cone ≥ 300 |
-| SUMO `Merge.kif` | 43 | 2 | depth ≤ 3 |
-| OpenCyc 4.0 OWL | 169 | 9 | depth ≤ 2, cone ≥ 1500 |
+| core | 194 | — | whole pack |
+| wordnet | 44 | 7 | depth ≤ 3, cone ≥ 300 |
+| sumo | 43 | 2 | `Merge.kif`, depth ≤ 3 |
+| opencyc | 169 | 9 | depth ≤ 2, cone ≥ 1500 |
+| bfo | 34 | 1 | whole (BFO 2020) |
+| dolce | 36 | 3 | whole (DOLCE-Lite) |
+| dul | 19 | 4 | DUL, depth ≤ 3 |
+| schemaorg | 66 | 7 | depth ≤ 2, cone ≥ 3 |
+| yago | 14 | 5 | YAGO 4, depth ≤ 2, cone ≥ 200 |
 
 No name is shared by all three sources at the top. That is the vocabulary
 problem in one line: the sources agree on the *split* far more than on the
@@ -62,6 +67,35 @@ principled 3,299-noun cut of it.
 Half of its top is *logic's* furniture (relations by arity, sets, lists,
 propositions), which OntoDAG has no use for as categories. The WordNet
 mapping is the asset: it lets WordNet's breadth hang under a designed top.
+
+**BFO 2020** (34 classes, a tree): `entity` → `continuant` (independent /
+specifically dependent / generically dependent) and `occurrent` (process,
+temporal region, spatiotemporal region, process boundary). Rigorous, and
+everything we would file is one of four leaves: `object`, `object
+aggregate`, `process`, `generically dependent continuant` (information).
+The rest is about boundaries, regions and qualities. A top for scientists,
+not filers; useful as a check on our branch *claims*, useless as branches.
+
+**DOLCE-Lite** (36 classes) and **DUL** (79): `particular` →
+`endurant` / `perdurant` / `quality` / `abstract`; DUL flattens that to
+`Object` (physical, social, agent) / `Event` / `Situation` /
+`InformationEntity` / `Abstract`. DUL's top is the closest of the
+philosophical tops to the current seven branches, and it is where the
+`agent` and `information` readings come from. Note DOLCE-Lite hides its own
+top edge inside an `owl:equivalentClass` intersection — the extractor reads
+those, otherwise the ontology falls into four pieces.
+
+**schema.org** (926 classes, 48 multi-parent): `Thing` → `Intangible` (277),
+`Place` (208), `CreativeWork` (176), `Organization` (166), `Action` (115),
+`MedicalEntity`, `Event`, `Product`, `Person`. Business-shaped and flat;
+`Intangible` is where everything without a home went. Its middle level
+(tickets, invoices, events, places, organizations) is the best-worded of
+all the sources for the things people actually file.
+
+**YAGO 4** (10,146 classes, 2,512 multi-parent): schema.org's top with
+Wikidata classes cleaned and hung under it — the "schema.org top, Wikidata
+below" plan, already executed by someone else, and a real DAG. Its five
+roots are schema.org's; `Place` alone has 3,092 descendants.
 
 **OpenCyc** (116,822 classes, 52,422 multi-parent, 94 roots): the designed
 upper ontology is in there but the export buries it under generated union
@@ -84,8 +118,27 @@ decisions; do not quarry this file for nodes.
    polysemy rule.
 5. The retraction mechanism for pack versions (§1 item 4).
 
-## 4. Still to fetch
+## 4. Not yet extracted
 
-schema.org (JSON-LD, ~800 types), YAGO 4 taxonomy (schema.org top over
-cleaned Wikidata classes — the plan already built by someone else), BFO
-(~35 classes), DOLCE (~100), Princeton Core WordNet noun cut as a `.od`.
+Princeton Core WordNet's 3,299 nouns as a `.od` (the file is downloaded; the
+cut needs the WordNet graph restricted to those synsets plus their ancestors).
+SUMO's mid-level with the WordNet mapping applied. YAGO 4.5 if a public
+download reappears.
+
+## 5. First reading of the tops together
+
+Three families of top exist, and they answer different questions:
+
+- **Philosophical** (BFO, DOLCE, SUMO's upper file): *what kinds of thing
+  exist* — continuant/occurrent, endurant/perdurant, physical/abstract.
+  Small, defensible, and almost nobody files under them directly.
+- **Lexical** (WordNet): *what words mean* — complete and multi-parent,
+  with a top chosen for the dictionary, not for filing.
+- **Practical** (schema.org, YAGO, DUL's middle): *what people describe* —
+  places, organizations, events, creative works, products, persons.
+
+The current `core` is a practical top with a philosophical excuse. §1 says
+the top above the branches can be added later without cost, which suggests
+shipping the practical branches now, worded from schema.org where it has
+the word, checked for truth against BFO/DOLCE, and deciding the
+philosophical roof slowly — or never.
