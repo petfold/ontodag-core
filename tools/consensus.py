@@ -52,8 +52,8 @@ def main():
 
     status = {}
     for pair, w in for_.items():
-        if dirs.pack and pair[0] in base and pair[1] in base:
-            continue                                   # settled in the core
+        if dirs.pack and origin.get(pair[0]) == "base" and origin.get(pair[1]) == "base":
+            continue                                   # the core's business, decided (or left) there
         r = review.get(pair)
         if r == "reject":
             status[pair] = "rejected"

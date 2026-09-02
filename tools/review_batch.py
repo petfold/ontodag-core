@@ -21,7 +21,9 @@ PACK = pack_arg()
 a = ap.parse_args()
 dirs = Dirs(PACK)
 
-gloss = {r["name"]: r["gloss"] for r in csv.DictReader(open(dirs.concepts), delimiter="\t")}
+rows_ = list(csv.DictReader(open(dirs.concepts), delimiter="\t"))
+gloss = {r["name"]: r["gloss"] for r in rows_}
+origin = {r["name"]: r.get("origin", "core") for r in rows_}
 parents = defaultdict(list)
 for od in ([dirs.base_od, dirs.pack_od] if PACK else [dirs.pack_od]):
     for l in open(od):
@@ -56,6 +58,7 @@ rows = [r for r in csv.DictReader(open(dirs.build / "evidence.tsv"), delimiter="
         and (a.all or (r["sub"], r["sup"]) in direct)
         and (not a.witness or r["for"] == a.witness)
         and r["sup"] in parents                      # sub may be unplaced: this edge is how it gets in
+        and (not PACK or origin.get(r["sub"]) == PACK or origin.get(r["sup"]) == PACK)
         and (not a.branch or under(r["sub"], a.branch))]
 print(f"# {len(rows)} candidates; showing {a.skip}..{a.skip + a.limit}")
 for r in rows[a.skip:a.skip + a.limit]:
