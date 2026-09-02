@@ -8,7 +8,6 @@ absence act
 absolute-magnitude magnitude
 absorber material
 absorption process
-absorption.process process
 absorptivity attribute
 abundance ratio
 abuse information
@@ -21,7 +20,6 @@ accomplishment act
 account statement
 accountant person
 accretion increase
-accretion.process increase
 accusation assertion
 ace expert
 acid compound
@@ -443,7 +441,6 @@ camp structure
 campaign military-operation
 campaigner politician
 can container
-canal water-channel
 cancer disease tumor
 candle device
 cane stick
@@ -493,6 +490,7 @@ ceiling artifact
 ceiling.communication argumentation
 celebration activity
 celestial-body natural-object
+celestial-limb place
 cell physical-object
 cellular-telephone phone
 celluloid artifact
@@ -523,7 +521,7 @@ change event
 change.possession cash
 channel facility
 chaos state
-chaos.cognition dynamical-system
+chaotic-system dynamical-system
 chapter music
 character symbol
 character.state honour
@@ -624,10 +622,10 @@ color appearance
 column support-device
 column.group group
 coma condition.state
-coma.object physical-phenomenon
 combination collection
 comedy information
 comet natural-object
+comet-coma physical-phenomenon
 comet-nucleus centre
 comfort condition.state
 comic-strip cartoon
@@ -708,7 +706,7 @@ conscription act
 consensus agreement
 consequence phenomenon
 conservation protection
-conservation.cognition principle
+conservation-law principle
 consideration good
 consideration.cognition thinking
 consolation assist
@@ -1427,6 +1425,7 @@ gratuity outgo
 grave topographic-point
 gravel material
 graveness trait
+gravitational-accretion increase
 gravitational-mass attribute
 gravity attractive-force
 gravity-wave wave-motion
@@ -1577,6 +1576,7 @@ identity-card identification
 ignorance cognition
 illness condition.state
 illuminance luminosity
+illumination-phase appearance
 illusion idea
 illustration artifact
 image artifact
@@ -1804,7 +1804,7 @@ level cognition
 liability condition.state
 liberty freedom
 library building
-libration variation.phenomenon
+libration orbital-variation
 license legal-document
 lid artifact
 lie information
@@ -1816,7 +1816,6 @@ light-bulb device
 lighter device
 lily plant
 limb body-part
-limb.location place
 limit place
 limit.quantity '*'
 limitation disadvantage
@@ -1885,6 +1884,7 @@ magic-trick performing
 magnet device
 magnetic-dipole-moment physical-phenomenon
 magnetic-flux '*'
+magnetic-reluctance electrical-phenomenon
 magnitude attribute
 maid servant
 mail message
@@ -1924,6 +1924,7 @@ marriage-proposal information
 married-couple kin
 mars '*'
 marsh physical-object
+martian-canal water-channel
 mask clothing
 mass natural-object
 mass-energy attribute
@@ -1946,6 +1947,7 @@ means.act act
 measure act
 measuring-stick instrument
 meat substance
+mechanical-work physical-phenomenon
 mechanism device
 medication drug
 medicine natural-science
@@ -2107,8 +2109,6 @@ newspaper artifact
 night time-period
 nightmare dream
 node shape
-node.location place
-node.location.2 place
 noise event
 nomination act
 nonpayment loss.possession
@@ -2176,7 +2176,9 @@ option.possession legal-document
 orange attribute
 orange.food fruit
 orbit route
+orbital-node place
 orbital-plane shape
+orbital-variation perturbation
 orchestra organization
 order act
 orderliness condition.state
@@ -2231,7 +2233,7 @@ parameter factor
 parcel act
 pardon warrant
 parent ancestor
-parity conservation.cognition
+parity conservation-law
 park region
 parking '*'
 parliament legislature
@@ -2278,7 +2280,7 @@ peel material
 peer person
 pen artifact
 pencil artifact
-pencil.shape shape
+pencil-of-rays shape
 pension outgo
 pensioner beneficiary
 people group
@@ -2305,7 +2307,6 @@ pest person
 pet animal
 phase time-period
 phase-space attribute
-phase.attribute appearance
 phenomenon process
 philosopher scholar
 philosophy humanities
@@ -2440,7 +2441,7 @@ price worth
 price-quotation information
 pride satisfaction
 primary election
-primary.object celestial-body
+primary-body celestial-body
 prince leader
 princess leader
 principle natural-law
@@ -2552,6 +2553,7 @@ racetrack facility
 racism bias
 rack structure
 radiation process
+radiation-absorption process
 radiation-sickness syndrome
 radical person
 radio artifact
@@ -2634,7 +2636,6 @@ religion belief virtue
 religious-service activity
 relish perception
 reluctance disposition
-reluctance.phenomenon electrical-phenomenon
 reluctivity attribute
 remainder '*'
 remark information
@@ -3153,8 +3154,8 @@ tenant person
 tendency route
 tending work
 tennis game sport
+tensile-stress stress
 tension condition.state
-tension.phenomenon stress
 tensity condition.state
 tent structure
 term word
@@ -3323,7 +3324,6 @@ van truck
 variable quantity
 variant group
 variation change
-variation.phenomenon perturbation
 vector variable
 vegetable produce
 vegetable-oil fat
@@ -3396,6 +3396,7 @@ waterfall body-of-water
 wave event
 wave-front surface
 wave-motion event
+wave-node place
 wave-theory scientific-theory
 way course
 weak-interaction fundamental-interaction
@@ -3449,7 +3450,6 @@ wool fabric
 word part
 wording information
 work activity
-work.phenomenon physical-phenomenon
 workbench furniture
 worker person
 workplace place

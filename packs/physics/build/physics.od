@@ -2,10 +2,8 @@
 aberration physical-phenomenon
 absolute-magnitude attribute magnitude
 absorber material
-absorption.process process
 absorptivity attribute
 abundance ratio
-accretion.process increase
 amplitude event
 angle linear-dimension
 antibaryon hadron
@@ -34,13 +32,12 @@ b-meson meson
 barycenter centre place
 baryon hadron
 beam-of-light visible-light
-body-of-water '*'
 bohr-theory scientific-theory
 bose-einstein-statistics physical-law
 bottom-quark quark
-canal body-of-water landform place
 capacitance electrical-phenomenon linear-dimension
 celestial-body '*'
+celestial-limb place
 center-of-buoyancy centre place
 centre '*'
 change '*'
@@ -82,6 +79,7 @@ free-electron electron elementary-particle
 frequency linear-dimension
 fundamental-interaction physical-phenomenon
 'gay-lussac'"'"'s-law' physical-law
+gravitational-accretion increase
 gravitational-mass attribute
 gravity-wave wave-motion
 ground-state attribute state
@@ -93,6 +91,7 @@ hour-angle angle
 hydrogen-ion proton
 hyperon baryon
 illuminance linear-dimension luminosity
+illumination-phase appearance
 inclination-of-an-orbit angle
 increase '*'
 inductance electrical-phenomenon linear-dimension
@@ -106,11 +105,9 @@ kaon meson
 kinetic-theory scientific-theory
 'kirchhoff'"'"'s-laws' physical-law
 lambda-particle hyperon
-landform '*'
 law-of-gravitation physical-law
 law-of-thermodynamics physical-law
 lepton elementary-particle
-limb.location place
 linear-dimension '*'
 luminosity '*'
 luminous-flux linear-dimension
@@ -118,11 +115,13 @@ luminous-intensity linear-dimension
 magnet artifact device
 magnetic-dipole-moment physical-phenomenon
 magnetic-flux linear-dimension
+magnetic-reluctance electrical-phenomenon
 magnitude '*'
 mass-energy attribute
 mass-energy-equivalence principle.cognition
 material '*'
 maxwell-boltzmann-distribution-law physical-law
+mechanical-work physical-phenomenon
 meniscus physical-object
 meson hadron
 metastability attribute
@@ -132,20 +131,18 @@ natural-event '*'
 natural-object '*'
 neutrino lepton
 neutron nucleon
-node.location place
-node.location.2 place
 nuclear-reaction process
 nucleon baryon
 nucleosynthesis process
 oort-cloud collection
 optical-density density
+orbital-node place
 orbital-plane attribute shape
 oscillation wave-motion
 outer-planet planet
 particle '*'
-pencil.shape attribute shape
+pencil-of-rays attribute shape
 periapsis place
-phase.attribute appearance
 photoelectron electron elementary-particle
 physical-law concept
 physical-object '*'
@@ -158,7 +155,7 @@ place '*'
 planet '*'
 positron antilepton
 power linear-dimension
-primary.object celestial-body physical-object
+primary-body celestial-body physical-object
 principle-of-equivalence principle.cognition
 principle-of-relativity physical-law
 principle.cognition '*'
@@ -167,6 +164,7 @@ proton nucleon
 quantum-jump change event
 quantum-theory scientific-theory
 quark elementary-particle
+radiation-absorption process
 radioactivity linear-dimension
 ratio '*'
 reaction physical-phenomenon
@@ -175,7 +173,6 @@ red-shift physical-phenomenon
 relativistic-mass attribute
 relativity scientific-theory
 relaxation process
-reluctance.phenomenon electrical-phenomenon
 reluctivity attribute
 resistance linear-dimension
 rest-mass attribute
@@ -198,7 +195,7 @@ supersymmetry scientific-theory
 surface '*'
 sympathetic-vibration oscillation
 tauon lepton
-tension.phenomenon stress
+tensile-stress stress
 theory concept
 theory-of-gravitation scientific-theory
 top-quark quark
@@ -212,7 +209,7 @@ visible-light physical-phenomenon
 voltage electrical-phenomenon linear-dimension
 wave-front place surface
 wave-motion event
+wave-node place
 wave-theory scientific-theory
 weak-interaction fundamental-interaction
 weakly-interacting-massive-particle elementary-particle
-work.phenomenon physical-phenomenon

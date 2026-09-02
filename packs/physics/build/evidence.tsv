@@ -8,20 +8,12 @@ absorber	part	single	wordnet
 absorber	phenomenon	single	sumo	
 absorber	substance	single	wordnet	
 absorber	universe	single	sumo	
-absorption.process	event	single	sumo	
-absorption.process	phenomenon	single	sumo	
-absorption.process	process	accepted	claude wordnet	
 absorptivity	attribute	accepted	sumo wordnet	
 absorptivity	property	single	sumo	
 abundance	number	single	sumo	
 abundance	quantity	single	sumo	
 abundance	ratio	accepted	claude wordnet	
 abundance	situation	single	opencyc	
-accretion.process	event	single	sumo	
-accretion.process	extension.time	single	sumo	
-accretion.process	increase	accepted	sumo wordnet	
-accretion.process	phenomenon	single	sumo	
-accretion.process	process	single	wordnet	
 amplitude	event	accepted	sumo wordnet	
 amplitude	phenomenon	single	sumo	
 anomaly	physical-object	single	wordnet	
@@ -231,14 +223,6 @@ bottom-quark	quark	accepted	claude wordnet
 bottom-quark	substance	single	sumo	
 bottom-quark	universe	single	sumo	
 breeze	physical-phenomenon	single	wordnet	
-canal	artifact	single	opencyc	
-canal	body-of-water	accepted	opencyc schemaorg wordnet yago	
-canal	landform	accepted	schemaorg yago	
-canal	phenomenon	single	sumo	
-canal	place	accepted	schemaorg sumo yago	
-canal	route	single	opencyc	
-canal	universe	single	sumo	
-canal	water-channel	dissented	wordnet	
 capacitance	electrical-phenomenon	accepted	claude wordnet	
 capacitance	natural-event	dissented	wordnet	
 capacitance	phenomenon	single	wordnet	
@@ -246,15 +230,19 @@ capacitance	physical-phenomenon	single	wordnet
 capacitance	process	single	wordnet	
 capacitance	quantity	single	sumo	
 capacitance	vector	single	sumo	
+celestial-limb	phenomenon	single	sumo	
+celestial-limb	physical-object	single	wordnet	
+celestial-limb	place	accepted	sumo wordnet	
+celestial-limb	universe	single	sumo	
 center-of-buoyancy	centre	accepted	claude wordnet	
 center-of-buoyancy	phenomenon	single	sumo	
 center-of-buoyancy	physical-object	single	wordnet	
 center-of-buoyancy	place	accepted	sumo wordnet	
 center-of-buoyancy	universe	single	sumo	
-chaos.cognition	attribute	single	wordnet	
-chaos.cognition	dynamical-system	single	wordnet	
-chaos.cognition	phase-space	single	wordnet	
-chaos.cognition	signified	single	sumo	
+chaotic-system	attribute	single	wordnet	
+chaotic-system	dynamical-system	single	wordnet	
+chaotic-system	phase-space	single	wordnet	
+chaotic-system	signified	single	sumo	
 charm-quark	chemical-element	single	sumo	
 charm-quark	elementary-particle	accepted	sumo wordnet	
 charm-quark	material	single	sumo	
@@ -276,12 +264,12 @@ collision	event	accepted	sumo wordnet
 collision	impact	single	sumo	
 collision	phenomenon	single	sumo	
 collision	visit	single	sumo	
-coma.object	celestial-body	single	sumo	
-coma.object	natural-event	dissented	wordnet	
-coma.object	phenomenon	accepted	sumo wordnet	
-coma.object	physical-phenomenon	dissented	wordnet	
-coma.object	process	single	wordnet	
-coma.object	universe	single	sumo	
+comet-coma	celestial-body	single	sumo	
+comet-coma	natural-event	dissented	wordnet	
+comet-coma	phenomenon	accepted	sumo wordnet	
+comet-coma	physical-phenomenon	dissented	wordnet	
+comet-coma	process	single	wordnet	
+comet-coma	universe	single	sumo	
 comet-nucleus	celestial-body	single	sumo	
 comet-nucleus	centre	accepted	claude wordnet	
 comet-nucleus	phenomenon	single	sumo	
@@ -291,12 +279,12 @@ comet-nucleus	universe	single	sumo
 conjunction	encounter	dissented	wordnet	
 conjunction	event	single	wordnet	
 conjunction	information	single	opencyc	
-conservation.cognition	cognition	single	wordnet	
-conservation.cognition	concept	single	wordnet	
-conservation.cognition	idea	single	wordnet	
-conservation.cognition	natural-law	single	wordnet	
-conservation.cognition	principle	single	wordnet	
-conservation.cognition	signified	single	sumo	
+conservation-law	cognition	single	wordnet	
+conservation-law	concept	single	wordnet	
+conservation-law	idea	single	wordnet	
+conservation-law	natural-law	single	wordnet	
+conservation-law	principle	single	wordnet	
+conservation-law	signified	single	sumo	
 containment	artifact	accepted	sumo wordnet	
 containment	device	single	sumo	
 containment	phenomenon	single	sumo	
@@ -453,6 +441,11 @@ gay-lussac's-law	physical-law	accepted	claude wordnet
 gay-lussac's-law	signified	single	sumo	
 glow	physical-phenomenon	single	wordnet	
 glow	visible-light	accepted	claude wordnet	
+gravitational-accretion	event	single	sumo	
+gravitational-accretion	extension.time	single	sumo	
+gravitational-accretion	increase	accepted	sumo wordnet	
+gravitational-accretion	phenomenon	single	sumo	
+gravitational-accretion	process	single	wordnet	
 gravitational-mass	attribute	accepted	claude wordnet	
 gravitational-mass	quantity	single	sumo	
 gravity	physical-phenomenon	single	wordnet	
@@ -522,6 +515,11 @@ illuminance	attribute	single	wordnet
 illuminance	luminosity	accepted	claude wordnet	
 illuminance	quantity	single	sumo	
 illuminance	vector	single	sumo	
+illumination-phase	appearance	accepted	claude wordnet	
+illumination-phase	attribute	single	wordnet	
+illumination-phase	event	single	sumo	
+illumination-phase	luminosity	single	sumo	
+illumination-phase	phenomenon	single	sumo	
 inclination-of-an-orbit	angle	accepted	claude wordnet	
 inclination-of-an-orbit	attribute	single	wordnet	
 inclination-of-an-orbit	empty-space	single	wordnet	
@@ -621,14 +619,10 @@ lepton	universe	single	sumo
 libration	consequence	single	wordnet	
 libration	event	single	sumo	
 libration	influence.phenomenon	single	wordnet	
+libration	orbital-variation	single	wordnet	
 libration	perturbation	single	wordnet	
 libration	phenomenon	accepted	sumo wordnet	
 libration	process	single	wordnet	
-libration	variation.phenomenon	single	wordnet	
-limb.location	phenomenon	single	sumo	
-limb.location	physical-object	single	wordnet	
-limb.location	place	accepted	sumo wordnet	
-limb.location	universe	single	sumo	
 low	physical-phenomenon	single	wordnet	
 luminous-flux	quantity	single	sumo	
 luminous-flux	vector	single	sumo	
@@ -643,6 +637,17 @@ magnetic-dipole-moment	quantity	single	sumo
 magnetic-dipole-moment	vector	single	sumo	
 magnetic-flux	quantity	single	sumo	
 magnetic-flux	vector	single	sumo	
+magnetic-reluctance	electrical-phenomenon	accepted	claude wordnet	
+magnetic-reluctance	event	single	sumo	
+magnetic-reluctance	natural-event	dissented	wordnet	
+magnetic-reluctance	phenomenon	accepted	sumo wordnet	
+magnetic-reluctance	physical-phenomenon	single	wordnet	
+magnetic-reluctance	process	single	wordnet	
+martian-canal	body-of-water	single	wordnet	
+martian-canal	phenomenon	single	sumo	
+martian-canal	place	single	sumo	
+martian-canal	universe	single	sumo	
+martian-canal	water-channel	dissented	wordnet	
 mass-energy	attribute	accepted	claude wordnet	
 mass-energy	quantity	single	sumo	
 mass-energy-equivalence	cognition	single	wordnet	
@@ -656,6 +661,11 @@ maxwell-boltzmann-distribution-law	concept	accepted	claude wordnet
 maxwell-boltzmann-distribution-law	idea	single	wordnet	
 maxwell-boltzmann-distribution-law	physical-law	accepted	claude wordnet	
 maxwell-boltzmann-distribution-law	signified	single	sumo	
+mechanical-work	event	single	sumo	
+mechanical-work	natural-event	single	wordnet	
+mechanical-work	phenomenon	accepted	sumo wordnet	
+mechanical-work	physical-phenomenon	accepted	claude wordnet	
+mechanical-work	process	single	wordnet	
 meniscus	artifact	dissented	wordnet	
 meniscus	body-part	single	sumo	
 meniscus	material	single	sumo	
@@ -734,14 +744,6 @@ neutron	phenomenon	single	sumo
 neutron	physical-object	single	wordnet	
 neutron	substance	single	sumo	
 neutron	universe	single	sumo	
-node.location	phenomenon	single	sumo	
-node.location	physical-object	single	wordnet	
-node.location	place	accepted	sumo wordnet	
-node.location	universe	single	sumo	
-node.location.2	phenomenon	single	sumo	
-node.location.2	physical-object	single	wordnet	
-node.location.2	place	accepted	sumo wordnet	
-node.location.2	universe	single	sumo	
 nuclear-reaction	event	single	sumo	
 nuclear-reaction	phenomenon	single	sumo	
 nuclear-reaction	process	accepted	claude wordnet	
@@ -766,9 +768,20 @@ oort-cloud	phenomenon	single	sumo
 optical-density	attribute	single	wordnet	
 optical-density	density	accepted	claude wordnet	
 optical-density	quantity	single	sumo	
+orbital-node	phenomenon	single	sumo	
+orbital-node	physical-object	single	wordnet	
+orbital-node	place	accepted	sumo wordnet	
+orbital-node	universe	single	sumo	
 orbital-plane	attribute	accepted	sumo wordnet	
 orbital-plane	property	single	sumo	
 orbital-plane	shape	accepted	sumo wordnet	
+orbital-variation	consequence	single	wordnet	
+orbital-variation	event	single	sumo	
+orbital-variation	influence.phenomenon	single	wordnet	
+orbital-variation	perturbation	single	wordnet	
+orbital-variation	phenomenon	accepted	sumo wordnet	
+orbital-variation	process	single	wordnet	
+orbital-variation	visit	single	sumo	
 oscillation	event	accepted	sumo wordnet	
 oscillation	phenomenon	single	sumo	
 oscillation	wave-motion	accepted	claude wordnet	
@@ -778,16 +791,16 @@ outer-planet	physical-object	single	wordnet
 outer-planet	planet	accepted	claude wordnet	
 parity	cognition	single	wordnet	
 parity	concept	single	wordnet	
-parity	conservation.cognition	single	wordnet	
+parity	conservation-law	single	wordnet	
 parity	idea	single	wordnet	
 parity	natural-law	single	wordnet	
 parity	principle	single	wordnet	
 parity	signified	single	sumo	
 particle	elementary-particle	rejected	sumo	wordnet
 patience	relaxation	single	opencyc	
-pencil.shape	attribute	accepted	sumo wordnet	
-pencil.shape	property	single	sumo	
-pencil.shape	shape	accepted	sumo wordnet	
+pencil-of-rays	attribute	accepted	sumo wordnet	
+pencil-of-rays	property	single	sumo	
+pencil-of-rays	shape	accepted	sumo wordnet	
 periapsis	phenomenon	single	sumo	
 periapsis	physical-object	single	wordnet	
 periapsis	place	accepted	sumo wordnet	
@@ -802,11 +815,6 @@ phase-space	phenomenon	single	sumo
 phase-space	place	single	sumo	
 phase-space	sky	single	sumo	
 phase-space	universe	single	sumo	
-phase.attribute	appearance	accepted	claude wordnet	
-phase.attribute	attribute	single	wordnet	
-phase.attribute	event	single	sumo	
-phase.attribute	luminosity	single	sumo	
-phase.attribute	phenomenon	single	sumo	
 photoelectron	chemical-element	single	sumo	
 photoelectron	electron	accepted	sumo wordnet	
 photoelectron	elementary-particle	accepted	sumo wordnet	
@@ -875,12 +883,12 @@ positron	physical-object	single	wordnet
 positron	substance	single	sumo	
 positron	universe	single	sumo	
 pressure	physical-phenomenon	dissented	wordnet	
-primary.object	body-part	single	sumo	
-primary.object	celestial-body	accepted	claude wordnet	
-primary.object	natural-object	single	wordnet	
-primary.object	phenomenon	single	sumo	
-primary.object	physical-object	accepted	sumo wordnet	
-primary.object	universe	single	sumo	
+primary-body	body-part	single	sumo	
+primary-body	celestial-body	accepted	claude wordnet	
+primary-body	natural-object	single	wordnet	
+primary-body	phenomenon	single	sumo	
+primary-body	physical-object	accepted	sumo wordnet	
+primary-body	universe	single	sumo	
 principle-of-equivalence	cognition	single	wordnet	
 principle-of-equivalence	concept	single	wordnet	
 principle-of-equivalence	idea	single	wordnet	
@@ -929,6 +937,9 @@ quark	phenomenon	single	sumo
 quark	physical-object	single	wordnet	
 quark	substance	single	sumo	
 quark	universe	single	sumo	
+radiation-absorption	event	single	sumo	
+radiation-absorption	phenomenon	single	sumo	
+radiation-absorption	process	accepted	claude wordnet	
 radioactive-decay	nuclear-reaction	accepted	claude wordnet	
 rain	physical-phenomenon	single	wordnet	
 rain-shower	physical-phenomenon	single	wordnet	
@@ -953,12 +964,6 @@ relaxation	emotion	single	opencyc
 relaxation	event	single	sumo	
 relaxation	phenomenon	single	sumo	
 relaxation	process	accepted	claude wordnet	
-reluctance.phenomenon	electrical-phenomenon	accepted	claude wordnet	
-reluctance.phenomenon	event	single	sumo	
-reluctance.phenomenon	natural-event	dissented	wordnet	
-reluctance.phenomenon	phenomenon	accepted	sumo wordnet	
-reluctance.phenomenon	physical-phenomenon	single	wordnet	
-reluctance.phenomenon	process	single	wordnet	
 reluctivity	attribute	accepted	claude wordnet	
 reluctivity	quantity	single	sumo	
 reluctivity	vector	single	sumo	
@@ -1071,14 +1076,14 @@ tauon	phenomenon	single	sumo
 tauon	physical-object	single	wordnet	
 tauon	substance	single	sumo	
 tauon	universe	single	sumo	
-tension.phenomenon	event	single	sumo	
-tension.phenomenon	extension.time	single	sumo	
-tension.phenomenon	increase	single	sumo	
-tension.phenomenon	natural-event	single	wordnet	
-tension.phenomenon	phenomenon	accepted	sumo wordnet	
-tension.phenomenon	physical-phenomenon	single	wordnet	
-tension.phenomenon	process	single	wordnet	
-tension.phenomenon	stress	accepted	claude wordnet	
+tensile-stress	event	single	sumo	
+tensile-stress	extension.time	single	sumo	
+tensile-stress	increase	single	sumo	
+tensile-stress	natural-event	single	wordnet	
+tensile-stress	phenomenon	accepted	sumo wordnet	
+tensile-stress	physical-phenomenon	single	wordnet	
+tensile-stress	process	single	wordnet	
+tensile-stress	stress	accepted	claude wordnet	
 theory	cognition	single	wordnet	
 theory	concept	accepted	peter	
 theory	signified	single	sumo	
@@ -1128,13 +1133,6 @@ valence-electron	phenomenon	single	sumo
 valence-electron	physical-object	single	wordnet	
 valence-electron	substance	single	sumo	
 valence-electron	universe	single	sumo	
-variation.phenomenon	consequence	single	wordnet	
-variation.phenomenon	event	single	sumo	
-variation.phenomenon	influence.phenomenon	single	wordnet	
-variation.phenomenon	perturbation	single	wordnet	
-variation.phenomenon	phenomenon	accepted	sumo wordnet	
-variation.phenomenon	process	single	wordnet	
-variation.phenomenon	visit	single	sumo	
 vernal-equinox	equinoctial-point	accepted	claude wordnet	
 vernal-equinox	phenomenon	single	sumo	
 vernal-equinox	physical-object	single	wordnet	
@@ -1158,6 +1156,10 @@ wave-front	surface	accepted	claude wordnet
 wave-front	universe	single	sumo	
 wave-motion	event	accepted	sumo wordnet	
 wave-motion	phenomenon	single	sumo	
+wave-node	phenomenon	single	sumo	
+wave-node	physical-object	single	wordnet	
+wave-node	place	accepted	sumo wordnet	
+wave-node	universe	single	sumo	
 wave-theory	cognition	single	wordnet	
 wave-theory	scientific-theory	accepted	claude wordnet	
 wave-theory	signified	single	sumo	
@@ -1180,8 +1182,3 @@ weakly-interacting-massive-particle	substance	single	sumo
 weakly-interacting-massive-particle	universe	single	sumo	
 weather	physical-phenomenon	accepted	claude wordnet	
 wind	physical-phenomenon	single	wordnet	
-work.phenomenon	event	single	sumo	
-work.phenomenon	natural-event	single	wordnet	
-work.phenomenon	phenomenon	accepted	sumo wordnet	
-work.phenomenon	physical-phenomenon	accepted	claude wordnet	
-work.phenomenon	process	single	wordnet	
