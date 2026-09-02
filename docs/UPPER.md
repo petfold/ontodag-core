@@ -181,3 +181,15 @@ Recorded in `align/review.tsv` (Peter's rulings), `align/claude-review.tsv`
    `seat`, `staff`, `claim`, `sign`, `mine`, `association`, `state`,
    `feeling`, `possession`, `process`, `procedure`). Review lines carry
    WordNet offsets so renames never strand a judgement.
+7. **Quantities and the prelude** (Peter, 2026-09-02): the unit registry
+   owns every dimension head (`weight`, `length`, `temperature`, ...) and
+   every unit spelling (`mile`, `gallon`, `calorie`); the pack ships none of
+   them as categories. It asserts the connection at kind level instead —
+   `linear-dimension`, `count-dimension` and `calendar-dimension` are
+   attributes (`align/extra-edges.tsv`), so every head and every value
+   inherits it; `geo-dimension` is left out because a geo value is a place.
+   The pack therefore presumes the prelude. Currency denominations
+   (`dollar`, `penny`) are synonyms of the fiat pack's unit spellings and
+   leave the pack too; `money`, `cash`, `coin` stay as kinds of possession.
+   WordNet's `dimension` sense is renamed `spatial-extent` so it cannot
+   merge with the registry's kind root.
