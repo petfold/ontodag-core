@@ -1,0 +1,54 @@
+# name	source	id      — hand alignments; `-` clears an automatic one.
+# Drafted by Claude 2026-09-02 for the seven roots, after the automatic pass
+# put `agent` on WordNet's causal sense, `substance` on SUMO `Object` and
+# `information` on one narrow synset. For Peter's review.
+#
+# physical-object: bounded things — WordNet object, SUMO CorpuscularObject
+# (not Object, which also covers substances, regions and agents), DUL/DOLCE
+# physical object, BFO object. Automatic values already right; kept explicit.
+physical-object	wordnet	00002684
+physical-object	sumo	CorpuscularObject
+physical-object	sumo_rel	=
+physical-object	dul	PhysicalObject
+physical-object	dolce	physical-object
+physical-object	bfo	BFO_0000030
+# substance: stuff by kind. WordNet `matter` (00020827) is the parent of both
+# of WordNet's `substance` synsets (the constituent one holds food, the
+# kind-of-matter one holds materials); our branch needs both.
+substance	wordnet	00020827
+substance	sumo	Substance
+substance	sumo_rel	=
+substance	dul	Substance
+substance	dolce	amount-of-matter
+substance	schemaorg	schema:Substance
+substance	yago	Substance
+# agent: can act. WordNet `causal_agent` (person hangs here and under
+# organism), SUMO AutonomousAgent, DUL Agent, Cyc Agent-Generic.
+agent	wordnet	00007347
+agent	sumo	AutonomousAgent
+agent	sumo_rel	=
+agent	dul	Agent
+agent	opencyc	Mx4rwImSW5wpEbGdrcN5Y29ycA
+# event: happens. BFO process added; the rest was right.
+event	bfo	BFO_0000015
+# information: content that copies. WordNet `communication` (00033020 —
+# document, message, written communication, language, signal all hang here),
+# SUMO ContentBearingPhysical (texts, icons, speech), DUL InformationEntity,
+# BFO generically dependent continuant, schema.org/YAGO CreativeWork,
+# Cyc information.
+information	wordnet	00033020
+information	sumo	ContentBearingPhysical
+information	sumo_rel	=
+information	dul	InformationEntity
+information	bfo	BFO_0000031
+information	schemaorg	schema:CreativeWork
+information	yago	CreativeWork
+# place: WordNet `location` (00027167) — region, point, area all below it.
+place	wordnet	00027167
+place	sumo	Region
+place	sumo_rel	=
+place	dul	Place
+# field-of-study: YAGO's `Bailiwick` is an area of responsibility, not a
+# discipline — cleared.
+field-of-study	yago	-
+field-of-study	opencyc	Mx4rvVi3N5wpEbGdrcN5Y29ycA

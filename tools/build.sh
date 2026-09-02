@@ -24,3 +24,11 @@ python3 tools/top.py cache/dolce.pkl     --depth 99 --min 0   --od tops/dolce.od
 python3 tools/top.py cache/dul.pkl       --depth 3  --min 1   --od tops/dul.od
 python3 tools/top.py cache/schemaorg.pkl --depth 2  --min 3   --od tops/schemaorg.od
 python3 tools/top.py cache/yago.pkl      --depth 2  --min 200 --od tops/yago.od
+# --- the consensus pipeline -------------------------------------------------
+python3 tools/align.py          # align/concepts.tsv + build/align-queue.tsv
+python3 tools/views.py          # views/<source>.od in our names
+python3 tools/consensus.py      # build/core.od + evidence + review queue
+# --- alignment and consensus ---------------------------------------------------
+python3 tools/align.py
+python3 tools/views.py
+python3 tools/consensus.py

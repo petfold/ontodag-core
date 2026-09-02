@@ -43,6 +43,42 @@ class Graph:
             self._desc[s] = len(seen)
         return self._desc[s]
 
+    def ancestors(self, s):
+        """All ids reachable upward from s (exclusive), iterative."""
+        seen, stack = set(), [s]
+        while stack:
+            x = stack.pop()
+            for p in self.nodes[x][1]:
+                if p not in seen:
+                    seen.add(p)
+                    stack.append(p)
+        return seen
+
+    def label_index(self):
+        """normalised label -> [ids]; used to align other vocabularies by name."""
+        idx = defaultdict(list)
+        for s in self.nodes:
+            idx[normalise(self.label(s))].append(s)
+        return idx
+
+    def ancestors(self, s):
+        """All ids above s (exclusive), iterative."""
+        seen, stack = set(), [s]
+        while stack:
+            x = stack.pop()
+            for p in self.nodes.get(x, (None, []))[1]:
+                if p not in seen:
+                    seen.add(p)
+                    stack.append(p)
+        return seen
+
+    def label_index(self):
+        """normalised label -> [ids]; used for name-based alignment."""
+        idx = defaultdict(list)
+        for s in self.nodes:
+            idx[normalise(self.label(s))].append(s)
+        return idx
+
     def depths(self):
         """Minimum depth from the root, BFS."""
         d = {self.root: 0}
@@ -89,31 +125,12 @@ class Graph:
     def to_ontodag(self, ids):
         """An OntoDAG over exactly `ids`; edges kept only between included
         ids, so a node whose parents all fell outside the cut hangs from `*`."""
-        from ontodag import OntoDAG
         names = self.names(ids)
-        dag = OntoDAG()
-        pending = {s: [p for p in self.parents(s) if p in ids] for s in ids}
-        placed = set()
-        while pending:
-            ready = [s for s, ps in pending.items() if all(p in placed for p in ps)]
-            if not ready:
-                # Mutual subclass (OWL equivalence) cannot be a DAG edge pair.
-                # Cut the node with the fewest unplaced parents loose from
-                # them and say so; the source's cycle is the finding.
-                s = min(pending, key=lambda x: (len([p for p in pending[x] if p not in placed]), x))
-                dropped = [p for p in pending[s] if p not in placed]
-                pending[s] = [p for p in pending[s] if p in placed]
-                print(f"note: cycle broken at {names[s]!r}: dropped parents "
-                      f"{[names[p] for p in dropped]}", file=sys.stderr)
-                continue
-            for s in sorted(ready):
-                dag.put(names[s], [names[p] for p in pending.pop(s)])
-                placed.add(s)
-        return dag
+        return dag_from_parents({names[s]: [names[p] for p in self.parents(s) if p in ids]
+                                 for s in ids})
 
     def write_od(self, ids, path):
-        from ontodag.__main__ import FileBackend
-        FileBackend(str(path)).save(self.to_ontodag(ids))
+        write_od(self.to_ontodag(ids), path)
 
     # --- cache --------------------------------------------------------------------
     def save(self, path):
@@ -132,3 +149,34 @@ def normalise(label):
     s = re.sub(r"[^A-Za-z0-9.'-]", "", s)
     s = re.sub(r"-{2,}", "-", s).strip("-").lower()
     return s or "unnamed"
+
+
+def dag_from_parents(parents, on_cycle=None):
+    """OntoDAG from {name: [parent names]}; parents outside the dict are
+    dropped.  A cycle (mutual subclass in an OWL source, say) cannot be a
+    DAG edge pair: the node with the fewest unplaced parents is cut loose
+    from them and `on_cycle(name, dropped)` is told, else stderr is."""
+    from ontodag import OntoDAG
+    dag = OntoDAG()
+    pending = {n: [p for p in ps if p in parents] for n, ps in parents.items()}
+    placed = set()
+    while pending:
+        ready = [n for n, ps in pending.items() if all(p in placed for p in ps)]
+        if not ready:
+            n = min(pending, key=lambda x: (len([p for p in pending[x] if p not in placed]), x))
+            dropped = [p for p in pending[n] if p not in placed]
+            pending[n] = [p for p in pending[n] if p in placed]
+            if on_cycle:
+                on_cycle(n, dropped)
+            else:
+                print(f"note: cycle broken at {n!r}: dropped parents {dropped}", file=sys.stderr)
+            continue
+        for n in sorted(ready):
+            dag.put(n, pending.pop(n))
+            placed.add(n)
+    return dag
+
+
+def write_od(dag, path):
+    from ontodag.__main__ import FileBackend
+    FileBackend(str(path)).save(dag)
