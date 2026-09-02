@@ -9,12 +9,23 @@ comparable shape, their tops are cut to importable `.od` files, and the design
 of our own top is argued in `docs/UPPER.md`. Nothing here is installed by
 anyone; the product is a published store root that `odag pack core` adopts.
 
+## State (2026-09-02)
+
+`build/core.od` is the candidate for the `core` pack v2: 2,937 concepts, ten
+branches, 5,628 edges each carried by two independent sources or by Peter's
+ruling. It is a strict superset of the shipped v1 (194 concepts, nothing
+lost). `docs/UPPER.md` §6 records every decision, §7 the policy for the
+sciences. Rebuild from the review files with `sh tools/build.sh`.
+
 ## Layout
 
     sources/   the downloaded ontologies (not tracked; see below)
     tools/     extractors, one per source, all producing tools/graph.py's Graph
     cache/     extracted graphs as pickles (not tracked; tools/build.sh fills it)
     tops/      the top of each source as an OntoDAG .od file — tracked, diffable
+    align/     the review files: overrides, names, drops, extra edges, Peter's and Claude's judgements
+    views/     each source's entailments over our vocabulary (built)
+    build/     the consensus pack, its evidence table and review queue (built)
     docs/      UPPER.md, the design record
 
 ## Sources

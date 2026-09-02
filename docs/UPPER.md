@@ -193,3 +193,46 @@ Recorded in `align/review.tsv` (Peter's rulings), `align/claude-review.tsv`
    leave the pack too; `money`, `cash`, `coin` stay as kinds of possession.
    WordNet's `dimension` sense is renamed `spatial-extent` so it cannot
    merge with the registry's kind root.
+8. **Cognition** (Peter, 2026-09-02): a tenth root, WordNet's `cognition`
+   ("the psychological result of perception and learning and reasoning"):
+   belief, concept, idea, attitude, skill, method, memory, the senses.
+   Mythical beings and legal rights, which WordNet files under belief and
+   concept, stay out. `field-of-study ⊑ cognition` is true and held back:
+   it would fold one root under another; Peter's call.
+
+## 7. Policy: the sciences — hinges in core, contents in packs
+
+A concept belongs in core when we could not conceivably be wrong about it
+*and* a non-specialist files under it. Applied to a science, that puts the
+**hinge** in core — the highest node of the domain that ordinary documents
+get filed under — and the **content** in a pack. The hinge is in core so
+that the domain pack merges onto a shared anchor instead of inventing its
+own top; the content is in a pack because it has its own source, its own
+versioning, and specialist names.
+
+| science | in core (hinges) | in a pack (content) | source for the pack |
+|---|---|---|---|
+| mathematics | `mathematics`, `logic`, `number`, `set` | structures and theorems, **all qualified** (`mathematical-group`, never `group`) | hand-written; small |
+| physics | `physics`, `particle`, `atom`, `electron`, `radiation`, `process` | particles, fields, laws | Wikidata P279 (physics) |
+| chemistry | `substance`, `material`, `chemical`, `compound`, `chemical-element`, `chemical-reaction`, `water`, `metal`, the everyday elements | the 118 elements, compounds | IUPAC / PubChem |
+| biology | `organism`, `animal`, `plant`, `fungus`, `bacterium`, `virus`, `cell`, `species`, `body-part`, the everyday animals and plants | the tree of life | WordNet's organism cone, or NCBI taxonomy |
+| medicine | `medicine`, `disease`, `illness`, `symptom`, `injury`, `medication`, the common diseases | disease and drug classifications | ICD / SNOMED subsets |
+
+Two things are not categories at all and belong to neither: **quantities**
+(energy, force, temperature, length) are dimensions, owned by the unit
+registry and reaching `attribute` through the three kind-level edges of §6.7;
+and **numbers** are values, never nodes.
+
+The test at the boundary is the **name**. If the plain English word is
+unambiguous and a layperson reaches for it, the concept may sit in core
+(`planet`, `cell`, `disease`). If the word needs a qualifier to be safe, it
+belongs in a pack where the qualifier is the convention. The change
+asymmetry (§1) makes the choice forgiving in one direction only: a hinge
+left out of core can be added later, additively; a wrong one shipped is a
+one-way door. **When unsure, pack.**
+
+Packs derived from a source live in `packs/<name>/` in this repo, built by
+the same tools (extract → align to the core hinge → consensus where a
+second source exists, review where not), each with its own golden root.
+The first should be chemistry from IUPAC: small, authoritative, and it
+proves the pattern before biology's tree of life tests its scale.
