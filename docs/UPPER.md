@@ -1,6 +1,7 @@
 # The top of the ontology — design record
 
-Status: discussion draft, 2026-09-02. Nothing here is decided.
+Status: 2026-09-02, evening. §1 and the decisions in §6 are agreed with
+Peter; the pack in `build/core.od` is the current candidate for core v2.
 
 ## 1. What a version commits us to
 
@@ -142,3 +143,41 @@ the top above the branches can be added later without cost, which suggests
 shipping the practical branches now, worded from schema.org where it has
 the word, checked for truth against BFO/DOLCE, and deciding the
 philosophical roof slowly — or never.
+
+
+## 6. Decisions taken (2026-09-02, with Peter)
+
+Recorded in `align/review.tsv` (Peter's rulings), `align/claude-review.tsv`
+(Claude's per-edge judgements), `align/overrides.tsv` (alignment),
+`align/names.tsv` (names by synset) and `align/drop.tsv` (concepts left out).
+
+1. **Single-witness edges**: Claude reads both glosses and votes; the vote is
+   a witness like SUMO's, never a veto (two sources still carry an edge past
+   a dissent), and Peter's `review.tsv` outranks everyone. Every direct
+   WordNet-only edge in or into the pack was read (about 1,900 judgements,
+   roughly one in six rejected). Cyc-only, YAGO-only and SUMO-only edges are
+   *not* reviewed: those sources are second witnesses, nothing more.
+2. **Roots**: the seven branches as aligned in `overrides.tsv`, plus
+   `attribute` (with `state` and `feeling` beneath) and `possession`;
+   `body-part ⊑ physical-object` and the physical `process ⊑ event` by
+   ruling. `time` and `quantity` stay out: they are registry territory.
+3. **Top-level claims**: vehicles, tools and instruments under `device`;
+   documents are information only (the one-reading rule), never artifacts;
+   vehicles are not containers; `organism ⊑ agent` rejected (a plant is not
+   an agent); a conversation is communication, not information.
+4. **Core v1's own claims** all kept on review; `business` is the enterprise,
+   `business-studies` the subject.
+5. **Disputes**: synonym pairs get no edge and lose one name (aim/goal,
+   emotion/emotional-state, spirit/soul, ...); `field` and `yard` differ;
+   `boat ⊑ watercraft`, `human ⊑ person`, `street ⊑ road`, `myth ⊑ fiction`,
+   `program ⊑ software`, `note ⊑ document`, `city ⊑ settlement`,
+   `collection ⊑ group`, `battle ⊑ military-action`, `line ⊑ text` rescued;
+   `state ⊑ district`, `cheek ⊑ feature`, war/fight, cognition/property,
+   universe/object, convention/situation all out.
+6. **Names**: a sense that shares its word with another gets a hand-chosen
+   name (`book-copy`, `prepared-dish`, `capital-city`), never a numbered or
+   field-suffixed one; where the more-filed sense was the qualified one, it
+   took the plain word (`accident`, `injection`, `match`, `notebook`,
+   `seat`, `staff`, `claim`, `sign`, `mine`, `association`, `state`,
+   `feeling`, `possession`, `process`, `procedure`). Review lines carry
+   WordNet offsets so renames never strand a judgement.
