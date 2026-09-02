@@ -1,6 +1,6 @@
 # ontodag store v1
 abduction event motion
-acanthocyte red-blood-cell
+acanthocyte cell physical-object
 accommodation event organic-process place
 acid-base-equilibrium chemical-reaction
 act '*'
@@ -30,7 +30,7 @@ autoregulation organic-process
 axon nerve-fiber
 b-cell lymphocyte
 bark '*'
-basophil leukocyte
+basophil granulocyte
 beta-cell cell physical-object
 biennial organism physical-object plant
 biological-accretion increase
@@ -41,7 +41,7 @@ biologist scientist
 biotic-community group
 blastema cell physical-object
 blastocyte embryonic-cell
-blastomere cell physical-object
+blastomere embryonic-cell
 blister body-part
 blood-cell somatic-cell
 body-part '*'
@@ -97,14 +97,14 @@ ecosystem group
 effector nerve-fiber
 embryonic-cell cell physical-object
 enzyme activator material protein
-eosinophil leukocyte
+eosinophil granulocyte
 epidermal-cell skin-cell
 epithelial-cell somatic-cell
 equilibrium '*'
-erythroblast embryonic-cell
+erythroblast embryonic-cell red-blood-cell
 establishment process
 estivation attribute
-etiolation act event
+etiolation act event organic-process
 event '*'
 expression organic-process
 fat-cell somatic-cell
@@ -186,7 +186,7 @@ lobe natural-object plant-part
 localization-of-function scientific-principle
 lymphoblast lymphocyte
 lymphocyte leukocyte
-macrophage phagocyte
+macrophage leukocyte
 mapping act activity event procedure
 mast-cell somatic-cell
 material '*'
@@ -230,7 +230,7 @@ nerve-fiber fiber fibre
 neural-summation organic-process
 neuroblast embryonic-cell
 neurogliacyte somatic-cell
-neutrophil leukocyte
+neutrophil granulocyte
 niche attribute condition
 nit animal-egg
 nonallele gene
@@ -247,7 +247,7 @@ organic-process process
 organism '*'
 osmosis event process
 osteoblast embryonic-cell
-osteoclast bone-cell
+osteoclast bone-cell macrophage
 osteocyte bone-cell
 ovule ovum
 ovum gamete
@@ -273,10 +273,10 @@ plant-embryo organism physical-object plant
 plant-part body-part physical-object
 plant-root '*'
 plantae taxonomic-group
-plasma-cell lymphocyte
+plasma-cell b-cell
 plasmablast plasma-cell
 pleomorphism organic-phenomenon
-point-mutation event mutation
+point-mutation event mutation organic-process
 polar-body cell physical-object
 pollen-tube natural-object plant-part
 polygene gene
@@ -293,7 +293,7 @@ purkinje-cell brain-cell
 recessive-allele allele
 recessive-gene gene
 recombinant cell organism physical-object
-recombination event
+recombination event organic-process
 red-blood-cell blood-cell
 regeneration organic-process
 regulatory-gene gene
@@ -306,7 +306,7 @@ reticulocyte red-blood-cell
 rod visual-cell
 roe animal-egg
 saltation event mutation
-schwann-cell somatic-cell
+schwann-cell neurogliacyte
 science '*'
 scientific-principle '*'
 scientist '*'
@@ -355,7 +355,7 @@ suborder taxonomic-group
 subphylum taxonomic-group
 subspecies taxonomic-group
 substance '*'
-succession process
+succession organic-process
 superclass taxonomic-group
 superfamily taxonomic-group
 superorder taxonomic-group
@@ -373,13 +373,13 @@ taxonomic-order taxonomic-group
 taxonomy field-of-study science
 theory-of-evolution concept
 theory-of-inheritance concept
-transcription event organic-process
+transcription chemical-reaction event organic-process
 transduction organic-process
 transformation event
 transgene gene
 translation event organic-process
 translocation organic-process
-transposition event mutation
+transposition event mutation organic-process
 tribe taxonomic-group
 tumor-suppressor-gene suppressor
 turgor attribute state

@@ -9,7 +9,7 @@ acanthocyte	body-part	single	sumo
 acanthocyte	cell	accepted	sumo wordnet	
 acanthocyte	phenomenon	single	sumo	
 acanthocyte	physical-object	accepted	sumo wordnet	
-acanthocyte	red-blood-cell	accepted	wikidata wordnet	
+acanthocyte	red-blood-cell	single	wordnet	
 acanthocyte	somatic-cell	single	wordnet	
 acanthocyte	universe	single	sumo	
 accommodation	act	dissented	wordnet	
@@ -138,7 +138,7 @@ apogamy	reproduction	accepted	sumo wordnet
 apophysis	body-part	accepted	claude wordnet	
 apophysis	phenomenon	single	sumo	
 apophysis	physical-object	single	sumo	
-apophysis	tissue	single	wikidata	
+apophysis	tissue	dissented	wikidata	
 apophysis	universe	single	sumo	
 appendix	expression	single	opencyc	
 apple	plant-part	accepted	opencyc wordnet	
@@ -185,6 +185,7 @@ astrocyte	system	single	opencyc
 astrocyte	universe	single	sumo	
 athlete	expression	single	opencyc	
 attention	expression	single	opencyc	
+attention	organic-process	dissented	wikidata	
 auction	expression	single	opencyc	
 audience	organic-phenomenon	single	sumo	
 audience	organic-process	single	sumo	
@@ -230,11 +231,11 @@ bark	expression	single	opencyc
 baron	expression	single	opencyc	
 barter	expression	single	opencyc	
 basis	expression	single	opencyc	
-basophil	blood-cell	accepted	opencyc wordnet	
+basophil	blood-cell	accepted	opencyc wikidata wordnet	
 basophil	body-part	single	sumo	
-basophil	cell	accepted	sumo wordnet	
+basophil	cell	accepted	sumo wikidata wordnet	
 basophil	free-phagocyte	single	wordnet	
-basophil	granulocyte	single	wikidata	
+basophil	granulocyte	accepted	claude wikidata	
 basophil	leukocyte	accepted	wikidata wordnet	
 basophil	phagocyte	single	wordnet	
 basophil	phenomenon	single	sumo	
@@ -296,7 +297,7 @@ birth	organic-phenomenon	single	sumo
 birth	organic-process	single	sumo	
 blackmail	expression	single	opencyc	
 blastema	cell	accepted	claude wordnet	
-blastema	organ	single	wikidata	
+blastema	organ	dissented	wikidata	
 blastema	phenomenon	single	sumo	
 blastema	physical-object	accepted	sumo wordnet	
 blastema	universe	single	sumo	
@@ -308,6 +309,7 @@ blastocyte	physical-object	accepted	sumo wordnet
 blastocyte	universe	single	sumo	
 blastomere	body-part	single	sumo	
 blastomere	cell	accepted	sumo wikidata wordnet	
+blastomere	embryonic-cell	accepted	claude wikidata	
 blastomere	phenomenon	single	sumo	
 blastomere	physical-object	accepted	sumo wordnet	
 blastomere	universe	single	sumo	
@@ -320,7 +322,7 @@ blister	structure	single	opencyc
 blister	system	single	opencyc	
 blister	universe	single	sumo	
 blood-cell	body-part	single	sumo	
-blood-cell	cell	accepted	sumo wordnet	
+blood-cell	cell	accepted	sumo wikidata wordnet	
 blood-cell	phenomenon	single	sumo	
 blood-cell	physical-object	accepted	sumo wordnet	
 blood-cell	somatic-cell	accepted	opencyc wordnet	
@@ -330,7 +332,7 @@ blood-cell	universe	single	sumo
 bloodshed	expression	single	opencyc	
 board-of-directors	expression	single	opencyc	
 bone-cell	body-part	single	sumo	
-bone-cell	cell	accepted	sumo wordnet	
+bone-cell	cell	accepted	sumo wikidata wordnet	
 bone-cell	phenomenon	single	sumo	
 bone-cell	physical-object	accepted	sumo wordnet	
 bone-cell	somatic-cell	accepted	opencyc wordnet	
@@ -363,7 +365,7 @@ bract-tuft	phenomenon	single	sumo
 bract-tuft	physical-object	single	sumo	
 bract-tuft	universe	single	sumo	
 brain-cell	body-part	single	sumo	
-brain-cell	cell	accepted	sumo wordnet	
+brain-cell	cell	accepted	sumo wikidata wordnet	
 brain-cell	nerve-cell	accepted	claude wordnet	
 brain-cell	phenomenon	single	sumo	
 brain-cell	physical-object	accepted	sumo wordnet	
@@ -401,10 +403,12 @@ calyx	system	single	opencyc
 calyx	universe	single	sumo	
 campaign	expression	single	opencyc	
 cancer-cell	body-part	single	sumo	
-cancer-cell	cell	accepted	sumo wordnet	
+cancer-cell	cell	accepted	sumo wikidata wordnet	
+cancer-cell	mutant	dissented	wikidata	
 cancer-cell	neoplastic-cell	accepted	claude wordnet	
+cancer-cell	organism	single	wikidata	
 cancer-cell	phenomenon	single	sumo	
-cancer-cell	physical-object	accepted	sumo wordnet	
+cancer-cell	physical-object	accepted	sumo wikidata wordnet	
 cancer-cell	somatic-cell	single	wordnet	
 cancer-cell	universe	single	sumo	
 capital-city	expression	single	opencyc	
@@ -418,7 +422,7 @@ carrier	physical-object	accepted	sumo wordnet
 carrier	species	single	sumo	
 carrier	universe	single	sumo	
 carrot	plant-part	single	wordnet	
-carrot	taproot	single	wikidata	
+carrot	taproot	accepted	claude wikidata	
 case	expression	single	opencyc	
 cash	expression	single	opencyc	
 castle	accommodation	single	yago	
@@ -460,7 +464,7 @@ civilian	expression	single	opencyc
 class	expression	single	opencyc	
 clemency	expression	single	opencyc	
 clipping	expression	single	opencyc	
-clique	subclass	single	wikidata	
+clique	subclass	dissented	wikidata	
 closure	organic-phenomenon	single	sumo	
 closure	organic-process	single	sumo	
 coach	expression	single	opencyc	
@@ -502,9 +506,9 @@ computer	expression	single	opencyc
 computer-memory	expression	single	opencyc	
 computer-virus	expression	single	opencyc	
 concept	expression	single	opencyc	
-conception	anisogamy	single	wikidata	
+conception	anisogamy	dissented	wikidata	
 conception	organic-phenomenon	single	sumo	
-conception	organic-process	accepted	sumo wordnet	
+conception	organic-process	accepted	sumo wikidata wordnet	
 conception	reproduction	single	sumo	
 concession	expression	single	opencyc	
 conductor	expression	single	opencyc	
@@ -574,6 +578,7 @@ council	expression	single	opencyc
 country	expression	single	opencyc	
 coup-d'etat	expression	single	opencyc	
 couple	expression	single	opencyc	
+courage	organic-process	single	wikidata	
 course-of-study	expression	single	opencyc	
 court	expression	single	opencyc	
 courtesy	expression	single	opencyc	
@@ -640,7 +645,7 @@ death	expression	single	opencyc
 death	organic-phenomenon	single	sumo	
 death	organic-process	single	sumo	
 decay	organic-phenomenon	accepted	claude wordnet	
-decay	organic-process	single	wikidata	
+decay	organic-process	accepted	claude wikidata	
 decomposition	ending	single	opencyc	
 decomposition	event	accepted	opencyc sumo	
 decomposition	phenomenon	single	sumo	
@@ -691,7 +696,7 @@ dentist	expression	single	opencyc
 departure	expression	single	opencyc	
 departure	translation	single	opencyc	
 desert	biotic-community	dissented	wordnet	
-desert	ecosystem	single	wikidata	
+desert	ecosystem	dissented	wikidata	
 detail	expression	single	opencyc	
 detective	expression	single	opencyc	
 diagnosis	organic-phenomenon	single	sumo	
@@ -701,7 +706,7 @@ dialect	expression	single	opencyc
 dialog	organic-phenomenon	single	sumo	
 dialog	organic-process	single	sumo	
 dialogue	expression	single	opencyc	
-diameter	subclass	single	wikidata	
+diameter	subclass	dissented	wikidata	
 diary	expression	single	opencyc	
 dictionary	expression	single	opencyc	
 diet	expression	single	opencyc	
@@ -720,7 +725,7 @@ diploid	species	single	sumo
 diploid	universe	single	sumo	
 diplomat	expression	single	opencyc	
 director	expression	single	opencyc	
-disease	organic-process	single	wikidata	
+disease	organic-process	dissented	wikidata	
 disease-vector	agent	single	wordnet	
 disease-vector	microorganism	single	wordnet	
 disease-vector	organism	accepted	peter wordnet	
@@ -759,6 +764,7 @@ dominant-gene	substance	single	sumo
 dominant-gene	universe	single	sumo	
 dominion	expression	single	opencyc	
 dose	expression	single	opencyc	
+dream	organic-process	dissented	wikidata	
 drinking	expression	single	opencyc	
 drinking	organic-phenomenon	single	sumo	
 drinking	organic-process	single	sumo	
@@ -770,7 +776,7 @@ ecosystem	environment	single	opencyc
 ecosystem	group	accepted	peter wordnet	
 ecosystem	structure	single	opencyc	
 ecosystem	system	accepted	opencyc wordnet	
-edge	subclass	single	wikidata	
+edge	subclass	dissented	wikidata	
 effector	cell	single	wordnet	
 effector	fiber	single	wordnet	
 effector	fibre	single	wordnet	
@@ -787,7 +793,7 @@ electric-shock	organic-phenomenon	single	sumo
 electric-shock	organic-process	accepted	sumo wordnet	
 elite	expression	single	opencyc	
 embryonic-cell	body-part	single	sumo	
-embryonic-cell	cell	accepted	sumo wordnet	
+embryonic-cell	cell	accepted	sumo wikidata wordnet	
 embryonic-cell	phenomenon	single	sumo	
 embryonic-cell	physical-object	accepted	sumo wordnet	
 embryonic-cell	universe	single	sumo	
@@ -805,11 +811,11 @@ enzyme	phenomenon	single	sumo
 enzyme	protein	accepted	sumo wikidata wordnet yago	
 enzyme	substance	accepted	sumo wordnet	
 enzyme	universe	single	sumo	
-eosinophil	blood-cell	accepted	opencyc wordnet	
+eosinophil	blood-cell	accepted	opencyc wikidata wordnet	
 eosinophil	body-part	single	sumo	
-eosinophil	cell	accepted	sumo wordnet	
+eosinophil	cell	accepted	sumo wikidata wordnet	
 eosinophil	free-phagocyte	single	wordnet	
-eosinophil	granulocyte	single	wikidata	
+eosinophil	granulocyte	accepted	claude wikidata	
 eosinophil	leukocyte	accepted	wikidata wordnet	
 eosinophil	phagocyte	single	wordnet	
 eosinophil	phenomenon	single	sumo	
@@ -837,12 +843,13 @@ epithelial-cell	system	single	opencyc
 epithelial-cell	universe	single	sumo	
 equation	expression	single	opencyc	
 erosion	expression	single	opencyc	
+erythroblast	blood-cell	single	wikidata	
 erythroblast	body-part	single	sumo	
-erythroblast	cell	accepted	sumo wordnet	
+erythroblast	cell	accepted	sumo wikidata wordnet	
 erythroblast	embryonic-cell	accepted	claude wordnet	
 erythroblast	phenomenon	single	sumo	
 erythroblast	physical-object	accepted	sumo wordnet	
-erythroblast	red-blood-cell	single	wikidata	
+erythroblast	red-blood-cell	accepted	claude wikidata	
 erythroblast	universe	single	sumo	
 escape	expression	single	opencyc	
 essay	expression	single	opencyc	
@@ -857,6 +864,7 @@ estivation	group	dissented	wordnet
 estivation	phenomenon	single	sumo	
 etiolation	act	accepted	claude wordnet	
 etiolation	event	accepted	sumo wordnet	
+etiolation	organic-process	accepted	claude wikidata	
 etiolation	phenomenon	single	sumo	
 evidence	expression	single	opencyc	
 evidence	organic-phenomenon	single	sumo	
@@ -896,6 +904,7 @@ fat-cell	physical-object	accepted	sumo wordnet
 fat-cell	somatic-cell	accepted	claude wordnet	
 fat-cell	universe	single	sumo	
 feedback	expression	single	opencyc	
+feeling	organic-process	single	wikidata	
 feminist	expression	single	opencyc	
 festival	expression	single	opencyc	
 fever	expression	single	opencyc	
@@ -923,7 +932,7 @@ fibrous-astrocyte	universe	single	sumo
 field-of-study	expression	single	opencyc	
 fig	plant-part	accepted	opencyc wordnet	
 fight	expression	single	opencyc	
-filter	subclass	single	wikidata	
+filter	subclass	dissented	wikidata	
 financial-document	expression	single	opencyc	
 fire	decomposition	single	opencyc	
 fish-roe	animal-egg	accepted	claude wordnet	
@@ -989,7 +998,7 @@ food-web	phenomenon	accepted	sumo wordnet
 food-web	process	single	wordnet	
 foreman	expression	single	opencyc	
 forest	biotic-community	dissented	wordnet	
-forest	ecosystem	single	wikidata	
+forest	ecosystem	dissented	wikidata	
 forestry	expression	single	opencyc	
 form	expression	single	opencyc	
 form-family	agent	single	sumo	
@@ -1029,22 +1038,22 @@ fruit	plant-part	single	wordnet
 fundamental-law	expression	single	opencyc	
 game	expression	single	opencyc	
 gamete	body-part	single	sumo	
-gamete	cell	accepted	sumo wordnet	
+gamete	cell	accepted	sumo wikidata wordnet	
 gamete	phenomenon	single	sumo	
 gamete	physical-object	accepted	sumo wordnet	
-gamete	reproductive-cell	accepted	claude wordnet	
+gamete	reproductive-cell	accepted	claude wikidata wordnet	
 gamete	structure	single	opencyc	
 gamete	system	single	opencyc	
 gamete	universe	single	sumo	
 gametocyte	body-part	single	sumo	
-gametocyte	cell	accepted	sumo wordnet	
+gametocyte	cell	accepted	sumo wikidata wordnet	
 gametocyte	phenomenon	single	sumo	
 gametocyte	physical-object	accepted	sumo wordnet	
 gametocyte	structure	single	opencyc	
 gametocyte	system	single	opencyc	
 gametocyte	universe	single	sumo	
 ganglion-cell	body-part	single	sumo	
-ganglion-cell	cell	accepted	sumo wordnet	
+ganglion-cell	cell	accepted	sumo wikidata wordnet	
 ganglion-cell	nerve-cell	accepted	claude wordnet	
 ganglion-cell	phenomenon	single	sumo	
 ganglion-cell	physical-object	accepted	sumo wordnet	
@@ -1119,9 +1128,9 @@ golgi's-cell	somatic-cell	single	wordnet
 golgi's-cell	universe	single	sumo	
 governor	expression	single	opencyc	
 grant	expression	single	opencyc	
-granulocyte	blood-cell	single	wordnet	
+granulocyte	blood-cell	accepted	wikidata wordnet	
 granulocyte	body-part	single	sumo	
-granulocyte	cell	accepted	sumo wordnet	
+granulocyte	cell	accepted	sumo wikidata wordnet	
 granulocyte	free-phagocyte	single	wordnet	
 granulocyte	leukocyte	accepted	wikidata wordnet	
 granulocyte	phagocyte	single	wordnet	
@@ -1141,7 +1150,7 @@ guard	expression	single	opencyc
 guerrilla	expression	single	opencyc	
 guidepost	expression	single	opencyc	
 hair-cell	body-part	single	sumo	
-hair-cell	cell	accepted	sumo wordnet	
+hair-cell	cell	accepted	sumo wikidata wordnet	
 hair-cell	epithelial-cell	accepted	claude wordnet	
 hair-cell	part	single	opencyc	
 hair-cell	phenomenon	single	sumo	
@@ -1169,7 +1178,7 @@ haplotype	substance	single	sumo
 haplotype	universe	single	sumo	
 hayfield	biotic-community	dissented	wordnet	
 headline	expression	single	opencyc	
-hedge	ecosystem	single	wikidata	
+hedge	ecosystem	dissented	wikidata	
 helper-t-cell	blood-cell	single	wordnet	
 helper-t-cell	body-part	single	sumo	
 helper-t-cell	cell	accepted	sumo wordnet	
@@ -1252,6 +1261,7 @@ heterozygote	physical-object	accepted	sumo wordnet
 heterozygote	species	single	sumo	
 heterozygote	universe	single	sumo	
 heterozygote	zygote	accepted	claude wordnet	
+histiocyte	blood-cell	single	wikidata	
 histiocyte	body-part	single	sumo	
 histiocyte	cell	accepted	sumo wikidata wordnet	
 histiocyte	leukocyte	single	wikidata	
@@ -1321,7 +1331,7 @@ homozygote	universe	single	sumo
 homozygote	zygote	accepted	claude wordnet	
 hormone	drug	single	wikidata	
 hormone	material	single	sumo	
-hormone	medication	single	wikidata	
+hormone	medication	dissented	wikidata	
 hormone	molecule	single	opencyc	
 hormone	part	single	wordnet	
 hormone	phenomenon	single	sumo	
@@ -1354,9 +1364,10 @@ hybridoma	universe	single	sumo
 hypothesis	expression	single	opencyc	
 idea	expression	single	opencyc	
 ideal	expression	single	opencyc	
-illness	organic-process	single	wikidata	
+illness	organic-process	dissented	wikidata	
 illustration	expression	single	opencyc	
 image	expression	single	opencyc	
+imagination	organic-process	dissented	wikidata	
 immigrant	expression	single	opencyc	
 immune-recognition	event	single	sumo	
 immune-recognition	natural-event	single	wordnet	
@@ -1385,6 +1396,7 @@ insight	organic-phenomenon	single	sumo
 insight	organic-process	single	sumo	
 inspiration	organic-phenomenon	single	sumo	
 inspiration	organic-process	single	sumo	
+instinct	organic-process	dissented	wikidata	
 institution	expression	single	opencyc	
 insurgent	expression	single	opencyc	
 intellect	expression	single	opencyc	
@@ -1393,6 +1405,7 @@ intention	organic-process	single	sumo
 interface	expression	single	opencyc	
 intervention	expression	single	opencyc	
 introduction	expression	single	opencyc	
+intuition	organic-process	dissented	wikidata	
 intussusception	event	single	sumo	
 intussusception	growth	accepted	sumo wordnet	
 intussusception	organic-phenomenon	single	sumo	
@@ -1488,9 +1501,9 @@ lethal-gene	sequence	single	wordnet
 lethal-gene	substance	single	sumo	
 lethal-gene	universe	single	sumo	
 letter-of-the-alphabet	expression	single	opencyc	
-leukocyte	blood-cell	accepted	sumo wordnet	
+leukocyte	blood-cell	accepted	sumo wikidata wordnet	
 leukocyte	body-part	single	sumo	
-leukocyte	cell	accepted	sumo wordnet	
+leukocyte	cell	accepted	sumo wikidata wordnet	
 leukocyte	free-phagocyte	accepted	claude wordnet	
 leukocyte	phagocyte	single	wordnet	
 leukocyte	phenomenon	single	sumo	
@@ -1498,7 +1511,7 @@ leukocyte	physical-object	accepted	sumo wordnet
 leukocyte	somatic-cell	single	wordnet	
 leukocyte	universe	single	sumo	
 leydig-cell	body-part	single	sumo	
-leydig-cell	cell	accepted	sumo wordnet	
+leydig-cell	cell	accepted	sumo wikidata wordnet	
 leydig-cell	phenomenon	single	sumo	
 leydig-cell	physical-object	accepted	sumo wordnet	
 leydig-cell	universe	single	sumo	
@@ -1564,10 +1577,10 @@ lymphocyte	physical-object	accepted	sumo wordnet
 lymphocyte	somatic-cell	single	wordnet	
 lymphocyte	universe	single	sumo	
 machinery	expression	single	opencyc	
-macrophage	blood-cell	single	opencyc	
+macrophage	blood-cell	accepted	opencyc wikidata	
 macrophage	body-part	single	sumo	
 macrophage	cell	accepted	sumo wikidata wordnet	
-macrophage	leukocyte	single	wikidata	
+macrophage	leukocyte	accepted	claude wikidata	
 macrophage	phagocyte	accepted	wikidata wordnet	
 macrophage	phenomenon	single	sumo	
 macrophage	physical-object	accepted	sumo wordnet	
@@ -1596,7 +1609,7 @@ mapping	universe	single	sumo
 mapping	volition	single	sumo	
 marketing	expression	single	opencyc	
 married-couple	expression	single	opencyc	
-marsh	ecosystem	single	wikidata	
+marsh	ecosystem	dissented	wikidata	
 mast-cell	body-part	single	sumo	
 mast-cell	cell	accepted	sumo wordnet	
 mast-cell	phenomenon	single	sumo	
@@ -1625,9 +1638,9 @@ megakaryocyte	somatic-cell	accepted	opencyc wordnet
 megakaryocyte	structure	single	opencyc	
 megakaryocyte	system	single	opencyc	
 megakaryocyte	universe	single	sumo	
-megaloblast	blood-cell	single	wordnet	
+megaloblast	blood-cell	accepted	wikidata wordnet	
 megaloblast	body-part	single	sumo	
-megaloblast	cell	accepted	sumo wordnet	
+megaloblast	cell	accepted	sumo wikidata wordnet	
 megaloblast	phenomenon	single	sumo	
 megaloblast	physical-object	accepted	sumo wordnet	
 megaloblast	red-blood-cell	accepted	wikidata wordnet	
@@ -1647,7 +1660,7 @@ meiosis	ending	single	opencyc
 meiosis	event	accepted	opencyc sumo	
 meiosis	expression	single	opencyc	
 meiosis	organic-phenomenon	single	sumo	
-meiosis	organic-process	accepted	sumo wordnet	
+meiosis	organic-process	accepted	sumo wikidata wordnet	
 meiosis	phenomenon	single	sumo	
 meiosis	process	single	wordnet	
 meiosis	production	single	opencyc	
@@ -1662,7 +1675,7 @@ melanoblast	skin-cell	single	wordnet
 melanoblast	somatic-cell	single	wordnet	
 melanoblast	universe	single	sumo	
 melanocyte	body-part	single	sumo	
-melanocyte	cell	accepted	sumo wordnet	
+melanocyte	cell	accepted	sumo wikidata wordnet	
 melanocyte	epidermal-cell	accepted	claude wordnet	
 melanocyte	phenomenon	single	sumo	
 melanocyte	physical-object	accepted	sumo wordnet	
@@ -1689,12 +1702,12 @@ metabolism	organic-process	accepted	sumo wikidata wordnet
 metabolism	phenomenon	single	sumo	
 metabolism	process	single	wordnet	
 metabolism	situation	single	opencyc	
-microcyte	blood-cell	single	wordnet	
+microcyte	blood-cell	accepted	wikidata wordnet	
 microcyte	body-part	single	sumo	
-microcyte	cell	accepted	sumo wordnet	
+microcyte	cell	accepted	sumo wikidata wordnet	
 microcyte	phenomenon	single	sumo	
 microcyte	physical-object	accepted	sumo wordnet	
-microcyte	red-blood-cell	accepted	claude wordnet	
+microcyte	red-blood-cell	accepted	claude wikidata wordnet	
 microcyte	somatic-cell	single	wordnet	
 microcyte	universe	single	sumo	
 microgliacyte	body-part	single	sumo	
@@ -1743,9 +1756,9 @@ monad	substance	single	sumo
 monad	universe	single	sumo	
 monarchy	expression	single	opencyc	
 monk	expression	single	opencyc	
-monoblast	blood-cell	single	wordnet	
+monoblast	blood-cell	accepted	wikidata wordnet	
 monoblast	body-part	single	sumo	
-monoblast	cell	accepted	sumo wordnet	
+monoblast	cell	accepted	sumo wikidata wordnet	
 monoblast	free-phagocyte	single	wordnet	
 monoblast	leukocyte	accepted	wikidata wordnet	
 monoblast	monocyte	accepted	claude wordnet	
@@ -1779,7 +1792,7 @@ monotype	universe	single	sumo
 mortgage	expression	single	opencyc	
 mother	expression	single	opencyc	
 mother-cell	body-part	single	sumo	
-mother-cell	cell	accepted	claude wordnet	
+mother-cell	cell	accepted	claude wikidata wordnet	
 mother-cell	phenomenon	single	sumo	
 mother-cell	physical-object	accepted	sumo wordnet	
 mother-cell	universe	single	sumo	
@@ -1872,7 +1885,7 @@ naturalist	property	single	sumo
 naturalist	research-worker	single	wikidata	
 naturalist	scientist	accepted	wikidata wordnet	
 nausea	organic-phenomenon	single	sumo	
-nausea	organic-process	single	sumo	
+nausea	organic-process	accepted	sumo wikidata	
 navy	expression	single	opencyc	
 necrobiosis	event	single	sumo	
 necrobiosis	natural-event	single	wordnet	
@@ -1880,7 +1893,7 @@ necrobiosis	organic-phenomenon	accepted	claude wordnet
 necrobiosis	phenomenon	accepted	sumo wordnet	
 necrobiosis	process	single	wordnet	
 neoplastic-cell	body-part	single	sumo	
-neoplastic-cell	cell	accepted	sumo wordnet	
+neoplastic-cell	cell	accepted	sumo wikidata wordnet	
 neoplastic-cell	phenomenon	single	sumo	
 neoplastic-cell	physical-object	accepted	sumo wordnet	
 neoplastic-cell	somatic-cell	accepted	claude wordnet	
@@ -1908,7 +1921,7 @@ neural-summation	organic-process	accepted	sumo wordnet
 neural-summation	phenomenon	single	sumo	
 neural-summation	process	single	wordnet	
 neuroblast	body-part	single	sumo	
-neuroblast	cell	accepted	sumo wordnet	
+neuroblast	cell	accepted	sumo wikidata wordnet	
 neuroblast	embryonic-cell	accepted	claude wordnet	
 neuroblast	phenomenon	single	sumo	
 neuroblast	physical-object	accepted	sumo wordnet	
@@ -1919,11 +1932,11 @@ neurogliacyte	phenomenon	single	sumo
 neurogliacyte	physical-object	accepted	sumo wordnet	
 neurogliacyte	somatic-cell	accepted	claude wordnet	
 neurogliacyte	universe	single	sumo	
-neutrophil	blood-cell	accepted	opencyc wordnet	
+neutrophil	blood-cell	accepted	opencyc wikidata wordnet	
 neutrophil	body-part	single	sumo	
-neutrophil	cell	accepted	sumo wordnet	
+neutrophil	cell	accepted	sumo wikidata wordnet	
 neutrophil	free-phagocyte	single	wordnet	
-neutrophil	granulocyte	single	wikidata	
+neutrophil	granulocyte	accepted	claude wikidata	
 neutrophil	leukocyte	accepted	wikidata wordnet	
 neutrophil	phagocyte	single	wordnet	
 neutrophil	phenomenon	single	sumo	
@@ -1939,7 +1952,7 @@ niche	property	single	sumo
 niche	state	single	wordnet	
 nightmare	expression	single	opencyc	
 nightmare	organic-phenomenon	single	sumo	
-nightmare	organic-process	single	sumo	
+nightmare	organic-process	accepted	sumo wikidata	
 nit	action	single	opencyc	
 nit	animal-egg	accepted	claude wordnet	
 nit	cell	single	wordnet	
@@ -1988,6 +2001,7 @@ nutshell	plant-part	single	opencyc
 oak	plantae	single	sumo	
 observation	expression	single	opencyc	
 occupation	expression	single	opencyc	
+old-age	organic-process	dissented	wikidata	
 oligodendrocyte	body-part	single	sumo	
 oligodendrocyte	cell	accepted	sumo wikidata wordnet	
 oligodendrocyte	neurogliacyte	accepted	wikidata wordnet	
@@ -2008,7 +2022,7 @@ oncogene	substance	single	sumo
 oncogene	universe	single	sumo	
 onion	plant-part	single	wordnet	
 oocyte	body-part	single	sumo	
-oocyte	cell	accepted	sumo wordnet	
+oocyte	cell	accepted	sumo wikidata wordnet	
 oocyte	gametocyte	accepted	claude wordnet	
 oocyte	phenomenon	single	sumo	
 oocyte	physical-object	accepted	sumo wordnet	
@@ -2021,7 +2035,7 @@ oosphere	physical-object	accepted	sumo wordnet
 oosphere	reproductive-cell	single	wordnet	
 oosphere	universe	single	sumo	
 ootid	body-part	single	sumo	
-ootid	cell	accepted	sumo wordnet	
+ootid	cell	accepted	sumo wikidata wordnet	
 ootid	gamete	accepted	opencyc wordnet	
 ootid	ovum	accepted	claude wordnet	
 ootid	phenomenon	single	sumo	
@@ -2070,11 +2084,12 @@ osteoblast	somatic-cell	single	opencyc
 osteoblast	structure	single	opencyc	
 osteoblast	system	single	opencyc	
 osteoblast	universe	single	sumo	
+osteoclast	blood-cell	single	wikidata	
 osteoclast	body-part	single	sumo	
 osteoclast	bone-cell	accepted	opencyc wordnet	
 osteoclast	cell	accepted	sumo wikidata wordnet	
 osteoclast	leukocyte	single	wikidata	
-osteoclast	macrophage	single	wikidata	
+osteoclast	macrophage	accepted	claude wikidata	
 osteoclast	phagocyte	single	wikidata	
 osteoclast	phenomenon	single	sumo	
 osteoclast	physical-object	accepted	sumo wordnet	
@@ -2083,8 +2098,8 @@ osteoclast	structure	single	opencyc
 osteoclast	system	single	opencyc	
 osteoclast	universe	single	sumo	
 osteocyte	body-part	single	sumo	
-osteocyte	bone-cell	accepted	opencyc wordnet	
-osteocyte	cell	accepted	sumo wordnet	
+osteocyte	bone-cell	accepted	opencyc wikidata wordnet	
+osteocyte	cell	accepted	sumo wikidata wordnet	
 osteocyte	phenomenon	single	sumo	
 osteocyte	physical-object	accepted	sumo wordnet	
 osteocyte	somatic-cell	accepted	opencyc wordnet	
@@ -2106,11 +2121,11 @@ ovule	structure	single	opencyc
 ovule	system	single	opencyc	
 ovule	universe	single	sumo	
 ovum	body-part	single	sumo	
-ovum	cell	accepted	sumo wordnet	
+ovum	cell	accepted	sumo wikidata wordnet	
 ovum	gamete	accepted	opencyc wikidata wordnet	
 ovum	phenomenon	single	sumo	
 ovum	physical-object	accepted	sumo wordnet	
-ovum	reproductive-cell	single	wordnet	
+ovum	reproductive-cell	accepted	wikidata wordnet	
 ovum	structure	single	opencyc	
 ovum	system	single	opencyc	
 ovum	universe	single	sumo	
@@ -2139,7 +2154,7 @@ parking	translation	single	opencyc
 parliament	expression	single	opencyc	
 parthenocarpy	event	single	sumo	
 parthenocarpy	organic-phenomenon	single	sumo	
-parthenocarpy	organic-process	accepted	sumo wordnet	
+parthenocarpy	organic-process	accepted	sumo wikidata wordnet	
 parthenocarpy	phenomenon	single	sumo	
 parthenocarpy	process	single	wordnet	
 parthenocarpy	reproduction	accepted	sumo wordnet	
@@ -2163,7 +2178,7 @@ peer	expression	single	opencyc
 pensioner	expression	single	opencyc	
 pepper	plantae	single	sumo	
 perception	organic-phenomenon	single	sumo	
-perception	organic-process	single	sumo	
+perception	organic-process	accepted	sumo wikidata	
 perennial	agent	single	sumo	
 perennial	organism	accepted	sumo wikidata wordnet	
 perennial	phenomenon	single	sumo	
@@ -2234,7 +2249,7 @@ pitcher	plant-part	single	wordnet
 pitcher	universe	single	sumo	
 plan	expression	single	opencyc	
 plant-cell	body-part	single	sumo	
-plant-cell	cell	accepted	sumo wordnet	
+plant-cell	cell	accepted	sumo wikidata wordnet	
 plant-cell	phenomenon	single	sumo	
 plant-cell	physical-object	accepted	sumo wordnet	
 plant-cell	universe	single	sumo	
@@ -2263,10 +2278,10 @@ plantae	physical-object	single	sumo
 plantae	species	single	sumo	
 plantae	taxonomic-group	accepted	claude wordnet	
 plantae	universe	single	sumo	
-plasma-cell	b-cell	single	wikidata	
-plasma-cell	blood-cell	single	wordnet	
+plasma-cell	b-cell	accepted	claude wikidata	
+plasma-cell	blood-cell	accepted	wikidata wordnet	
 plasma-cell	body-part	single	sumo	
-plasma-cell	cell	accepted	sumo wordnet	
+plasma-cell	cell	accepted	sumo wikidata wordnet	
 plasma-cell	free-phagocyte	single	wordnet	
 plasma-cell	leukocyte	accepted	wikidata wordnet	
 plasma-cell	lymphocyte	accepted	wikidata wordnet	
@@ -2275,10 +2290,10 @@ plasma-cell	phenomenon	single	sumo
 plasma-cell	physical-object	accepted	sumo wordnet	
 plasma-cell	somatic-cell	single	wordnet	
 plasma-cell	universe	single	sumo	
-plasmablast	b-cell	single	wikidata	
-plasmablast	blood-cell	single	wordnet	
+plasmablast	b-cell	accepted	claude wikidata	
+plasmablast	blood-cell	accepted	wikidata wordnet	
 plasmablast	body-part	single	sumo	
-plasmablast	cell	accepted	sumo wordnet	
+plasmablast	cell	accepted	sumo wikidata wordnet	
 plasmablast	free-phagocyte	single	wordnet	
 plasmablast	leukocyte	accepted	wikidata wordnet	
 plasmablast	lymphocyte	accepted	wikidata wordnet	
@@ -2302,7 +2317,7 @@ point-mutation	change	single	wordnet
 point-mutation	event	accepted	sumo wordnet	
 point-mutation	mutation	accepted	claude wordnet	
 point-mutation	organic-phenomenon	single	sumo	
-point-mutation	organic-process	single	sumo	
+point-mutation	organic-process	accepted	sumo wikidata	
 point-mutation	phenomenon	single	sumo	
 polar-body	body-part	single	sumo	
 polar-body	cell	accepted	sumo wordnet	
@@ -2340,9 +2355,9 @@ polymorphism	phenomenon	single	wordnet
 polymorphism	process	single	wordnet	
 polymorphism	property	single	sumo	
 polyploid	agent	single	sumo	
-polyploid	organism	accepted	sumo wordnet	
+polyploid	organism	accepted	sumo wikidata wordnet	
 polyploid	phenomenon	single	sumo	
-polyploid	physical-object	accepted	sumo wordnet	
+polyploid	physical-object	accepted	sumo wikidata wordnet	
 polyploid	species	single	sumo	
 polyploid	universe	single	sumo	
 pop-music	expression	single	opencyc	
@@ -2357,7 +2372,7 @@ possibility	organic-process	single	sumo
 postage	expression	single	opencyc	
 postcard	expression	single	opencyc	
 pot	plantae	single	sumo	
-potato	perennial	single	wikidata	
+potato	perennial	dissented	wikidata	
 potato	plantae	single	sumo	
 prayer	expression	single	opencyc	
 preference	expression	single	opencyc	
@@ -2415,7 +2430,7 @@ pulse	organic-phenomenon	single	sumo
 pulse	organic-process	single	sumo	
 purkinje-cell	body-part	single	sumo	
 purkinje-cell	brain-cell	accepted	claude wordnet	
-purkinje-cell	cell	accepted	sumo wordnet	
+purkinje-cell	cell	accepted	sumo wikidata wordnet	
 purkinje-cell	nerve-cell	single	wordnet	
 purkinje-cell	part	single	opencyc	
 purkinje-cell	phenomenon	single	sumo	
@@ -2468,12 +2483,12 @@ recombinant	species	single	sumo
 recombinant	universe	single	sumo	
 recombination	combination	single	sumo	
 recombination	event	accepted	sumo wordnet	
-recombination	organic-process	single	wikidata	
+recombination	organic-process	accepted	claude wikidata	
 recombination	phenomenon	single	sumo	
 recommendation	expression	single	opencyc	
-red-blood-cell	blood-cell	accepted	sumo wordnet	
+red-blood-cell	blood-cell	accepted	sumo wikidata wordnet	
 red-blood-cell	body-part	single	sumo	
-red-blood-cell	cell	accepted	sumo wordnet	
+red-blood-cell	cell	accepted	sumo wikidata wordnet	
 red-blood-cell	phenomenon	single	sumo	
 red-blood-cell	physical-object	accepted	sumo wordnet	
 red-blood-cell	somatic-cell	single	wordnet	
@@ -2488,7 +2503,7 @@ regeneration	organic-phenomenon	single	sumo
 regeneration	organic-process	accepted	sumo wordnet	
 regeneration	phenomenon	single	sumo	
 regeneration	process	single	wordnet	
-region	subclass	single	wikidata	
+region	subclass	dissented	wikidata	
 registration	expression	single	opencyc	
 regulatory-gene	compound	single	sumo	
 regulatory-gene	gene	accepted	claude wordnet	
@@ -2535,7 +2550,7 @@ reproduction	organic-process	accepted	sumo wikidata wordnet
 reproduction	phenomenon	single	sumo	
 reproduction	process	single	wordnet	
 reproductive-cell	body-part	single	sumo	
-reproductive-cell	cell	accepted	sumo wordnet	
+reproductive-cell	cell	accepted	sumo wikidata wordnet	
 reproductive-cell	phenomenon	single	sumo	
 reproductive-cell	physical-object	accepted	sumo wordnet	
 reproductive-cell	universe	single	sumo	
@@ -2549,9 +2564,9 @@ resolution	expression	single	opencyc
 resolution	organic-phenomenon	single	sumo	
 resolution	organic-process	single	sumo	
 retaliation	expression	single	opencyc	
-reticulocyte	blood-cell	accepted	sumo wordnet	
+reticulocyte	blood-cell	accepted	sumo wikidata wordnet	
 reticulocyte	body-part	single	sumo	
-reticulocyte	cell	accepted	sumo wordnet	
+reticulocyte	cell	accepted	sumo wikidata wordnet	
 reticulocyte	phenomenon	single	sumo	
 reticulocyte	physical-object	accepted	sumo wordnet	
 reticulocyte	red-blood-cell	accepted	sumo wikidata wordnet	
@@ -2594,7 +2609,8 @@ scholar	expression	single	opencyc
 scholarship	expression	single	opencyc	
 school	expression	single	opencyc	
 schwann-cell	body-part	single	sumo	
-schwann-cell	cell	accepted	sumo wordnet	
+schwann-cell	cell	accepted	sumo wikidata wordnet	
+schwann-cell	neurogliacyte	accepted	claude wikidata	
 schwann-cell	phenomenon	single	sumo	
 schwann-cell	physical-object	accepted	sumo wordnet	
 schwann-cell	somatic-cell	accepted	opencyc wordnet	
@@ -2623,6 +2639,7 @@ segregation	organic-process	accepted	sumo wordnet
 segregation	phenomenon	single	sumo	
 segregation	process	single	wordnet	
 segregation	situation	single	opencyc	
+selection	organic-process	dissented	wikidata	
 seminar	expression	single	opencyc	
 sense-of-touch	sensitiveness	accepted	claude wordnet	
 sensitiveness	attribute	single	sumo	
@@ -2658,12 +2675,12 @@ sermon	expression	single	opencyc
 sermon	organic-phenomenon	single	sumo	
 sermon	organic-process	single	sumo	
 sertoli-cell	body-part	single	sumo	
-sertoli-cell	cell	accepted	sumo wordnet	
+sertoli-cell	cell	accepted	sumo wikidata wordnet	
 sertoli-cell	phenomenon	single	sumo	
 sertoli-cell	physical-object	accepted	sumo wordnet	
 sertoli-cell	universe	single	sumo	
 servant	expression	single	opencyc	
-sex-chromosome	chromosome	accepted	opencyc wordnet	
+sex-chromosome	chromosome	accepted	opencyc wikidata wordnet	
 sex-chromosome	natural-object	single	wordnet	
 sex-chromosome	phenomenon	single	sumo	
 sex-chromosome	physical-object	accepted	sumo wordnet	
@@ -2720,22 +2737,24 @@ single-nucleotide-polymorphism	process	single	wordnet
 sister	expression	single	opencyc	
 sketch	expression	single	opencyc	
 skin-cell	body-part	single	sumo	
-skin-cell	cell	accepted	sumo wordnet	
+skin-cell	cell	accepted	sumo wikidata wordnet	
 skin-cell	phenomenon	single	sumo	
 skin-cell	physical-object	accepted	sumo wordnet	
 skin-cell	somatic-cell	accepted	claude wordnet	
 skin-cell	universe	single	sumo	
 slave	expression	single	opencyc	
+sleep	organic-process	dissented	wikidata	
+smell	organic-process	single	wikidata	
 smell	sensitiveness	accepted	claude wordnet	
 smile	organic-phenomenon	single	sumo	
 smile	organic-process	single	sumo	
 smooth-muscle-cell	body-part	single	sumo	
-smooth-muscle-cell	cell	accepted	sumo wordnet	
+smooth-muscle-cell	cell	accepted	sumo wikidata wordnet	
 smooth-muscle-cell	fibre	single	wordnet	
 smooth-muscle-cell	muscle-cell	accepted	claude wordnet	
 smooth-muscle-cell	phenomenon	single	sumo	
 smooth-muscle-cell	physical-object	accepted	sumo wordnet	
-smooth-muscle-cell	somatic-cell	single	wordnet	
+smooth-muscle-cell	somatic-cell	accepted	wikidata wordnet	
 smooth-muscle-cell	universe	single	sumo	
 social-club	expression	single	opencyc	
 social-occasion	expression	single	opencyc	
@@ -2743,7 +2762,7 @@ social-science	expression	single	opencyc
 software-agent	expression	single	opencyc	
 soldier	expression	single	opencyc	
 somatic-cell	body-part	single	sumo	
-somatic-cell	cell	accepted	sumo wordnet	
+somatic-cell	cell	accepted	sumo wikidata wordnet	
 somatic-cell	phenomenon	single	sumo	
 somatic-cell	physical-object	accepted	sumo wordnet	
 somatic-cell	structure	single	opencyc	
@@ -2763,19 +2782,19 @@ spawn	reproductive-cell	single	wordnet
 spawn	universe	single	sumo	
 specialization	event	single	sumo	
 specialization	organic-phenomenon	single	sumo	
-specialization	organic-process	accepted	sumo wordnet	
+specialization	organic-process	accepted	sumo wikidata wordnet	
 specialization	phenomenon	single	sumo	
 specialization	process	single	wordnet	
 species	taxonomic-group	disputed	opencyc wordnet	sumo
 sperm	body-part	single	sumo	
-sperm	cell	accepted	sumo wordnet	
+sperm	cell	accepted	sumo wikidata wordnet	
 sperm	gamete	accepted	wikidata wordnet	
 sperm	phenomenon	single	sumo	
 sperm	physical-object	accepted	sumo wordnet	
-sperm	reproductive-cell	single	wordnet	
+sperm	reproductive-cell	accepted	wikidata wordnet	
 sperm	universe	single	sumo	
 spermatid	body-part	single	sumo	
-spermatid	cell	accepted	sumo wordnet	
+spermatid	cell	accepted	sumo wikidata wordnet	
 spermatid	gamete	accepted	opencyc wordnet	
 spermatid	phenomenon	single	sumo	
 spermatid	physical-object	accepted	sumo wordnet	
@@ -2784,7 +2803,7 @@ spermatid	structure	single	opencyc
 spermatid	system	single	opencyc	
 spermatid	universe	single	sumo	
 spermatocyte	body-part	single	sumo	
-spermatocyte	cell	accepted	sumo wordnet	
+spermatocyte	cell	accepted	sumo wikidata wordnet	
 spermatocyte	gametocyte	accepted	wikidata wordnet	
 spermatocyte	phenomenon	single	sumo	
 spermatocyte	physical-object	accepted	sumo wordnet	
@@ -2857,12 +2876,12 @@ sting	organic-process	single	sumo
 strawberry	plant-part	accepted	opencyc wordnet	
 stream	expression	single	opencyc	
 striated-muscle-cell	body-part	single	sumo	
-striated-muscle-cell	cell	accepted	sumo wordnet	
+striated-muscle-cell	cell	accepted	sumo wikidata wordnet	
 striated-muscle-cell	fibre	single	wordnet	
 striated-muscle-cell	muscle-cell	accepted	claude wordnet	
 striated-muscle-cell	phenomenon	single	sumo	
 striated-muscle-cell	physical-object	accepted	sumo wordnet	
-striated-muscle-cell	somatic-cell	single	wordnet	
+striated-muscle-cell	somatic-cell	accepted	wikidata wordnet	
 striated-muscle-cell	universe	single	sumo	
 stroke	expression	single	opencyc	
 stroke	organic-phenomenon	single	sumo	
@@ -2935,7 +2954,7 @@ subspecies	universe	single	sumo
 suburb	expression	single	opencyc	
 success	expression	single	opencyc	
 succession	event	single	sumo	
-succession	organic-process	single	wikidata	
+succession	organic-process	accepted	claude wikidata	
 succession	phenomenon	single	sumo	
 succession	process	accepted	claude wordnet	
 suicide	expression	single	opencyc	
@@ -3018,11 +3037,12 @@ taproot	plant-part	single	wordnet
 taproot	plant-root	accepted	wikidata wordnet	
 taproot	universe	single	sumo	
 target-cell	body-part	single	sumo	
-target-cell	cell	accepted	sumo wordnet	
+target-cell	cell	accepted	sumo wikidata wordnet	
 target-cell	phenomenon	single	sumo	
 target-cell	physical-object	accepted	sumo wordnet	
 target-cell	somatic-cell	accepted	claude wordnet	
 target-cell	universe	single	sumo	
+taste	organic-process	single	wikidata	
 taste	sensitiveness	accepted	claude wordnet	
 taste-cell	body-part	single	sumo	
 taste-cell	cell	accepted	sumo wordnet	
@@ -3083,6 +3103,7 @@ taxpayer	expression	single	opencyc
 tea	expression	single	opencyc	
 teaching	expression	single	opencyc	
 team	expression	single	opencyc	
+tension	organic-process	dissented	wikidata	
 territory	expression	single	opencyc	
 terrorist	expression	single	opencyc	
 textbook	expression	single	opencyc	
@@ -3095,7 +3116,7 @@ theory-of-inheritance	concept	accepted	peter
 theory-of-inheritance	signified	single	sumo	
 theory-of-inheritance	thinking	dissented	wordnet	
 thinking	organic-phenomenon	single	sumo	
-thinking	organic-process	single	sumo	
+thinking	organic-process	accepted	sumo wikidata	
 throne	expression	single	opencyc	
 ticket	expression	single	opencyc	
 token	expression	single	opencyc	
@@ -3116,7 +3137,7 @@ train-ticket	expression	single	opencyc
 trainer	expression	single	opencyc	
 transaction	expression	single	opencyc	
 transcription	action	single	opencyc	
-transcription	chemical-reaction	single	wikidata	
+transcription	chemical-reaction	accepted	claude wikidata	
 transcription	event	accepted	opencyc sumo	
 transcription	expression	single	opencyc	
 transcription	organic-phenomenon	single	sumo	
@@ -3159,7 +3180,7 @@ transposition	change	single	wordnet
 transposition	event	accepted	sumo wordnet	
 transposition	mutation	accepted	claude wordnet	
 transposition	organic-phenomenon	single	sumo	
-transposition	organic-process	single	sumo	
+transposition	organic-process	accepted	sumo wikidata	
 transposition	phenomenon	single	sumo	
 treasurer	expression	single	opencyc	
 treatment	expression	single	opencyc	
