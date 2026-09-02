@@ -5,3 +5,6 @@ atomic-nucleus	particle	accept	the nucleus is a bound particle system; files wit
 # Peter, 2026-09-02 (accepted): SUMO's mapping inverts the particle hierarchy
 elementary-particle	particle	accept	WordNet: elementary particle ⊑ particle; SUMO's mapping had it inverted	09272085	09386422
 particle	elementary-particle	reject	inverted	09386422	09272085
+# proposed by Claude 2026-09-03: Wikidata says a proton is a hydrogen ion; H+ is a proton, so the WordNet direction stands
+hydrogen-ion	proton	accept	H+ is a bare proton	09307719	09400037
+proton	hydrogen-ion	reject	inverted	09400037	09307719
