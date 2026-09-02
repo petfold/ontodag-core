@@ -54,10 +54,11 @@ def main():
             status[pair] = "rejected"
         elif r == "accept":
             status[pair] = "accepted"
-        elif pair in dissent:
-            status[pair] = "dissented"         # Claude read the glosses and says no
         elif against.get(pair):
             status[pair] = "disputed"          # some source places them the other way round
+        elif pair in dissent and len(w) < MIN_WITNESSES:
+            status[pair] = "dissented"         # Claude read the glosses and says no — a vote, not a veto:
+                                               # two independent sources still carry an edge past it
         elif len(w) >= MIN_WITNESSES:
             status[pair] = "accepted"
         else:
