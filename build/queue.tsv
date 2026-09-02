@@ -1,27 +1,19 @@
 kind	sub	sup	detail
-contradicted-published	battle	military-action	published edge; now reversed by sumo — needs a ruling
-contradicted-published	boat	watercraft	published edge; now reversed by sumo — needs a ruling
-contradicted-published	city	settlement	published edge; now reversed by sumo — needs a ruling
-contradicted-published	collection	group	published edge; now reversed by sumo — needs a ruling
-contradicted-published	computer-program	software	published edge; now reversed by sumo — needs a ruling
-contradicted-published	human	person	published edge; now reversed by sumo — needs a ruling
-contradicted-published	line-of-text	text	published edge; now reversed by sumo — needs a ruling
-contradicted-published	myth	fiction	published edge; now reversed by sumo — needs a ruling
-contradicted-published	note	document	published edge; now reversed by sumo — needs a ruling
-contradicted-published	roadway	street	published edge; now reversed by opencyc — needs a ruling
-contradicted-published	ship	watercraft	published edge; now reversed by sumo — needs a ruling
-contradicted-published	street	road	published edge; now reversed by sumo — needs a ruling
-contradicted-published	war	conflict	published edge; now reversed by sumo — needs a ruling
-disputed	class	event	for opencyc; reversed by wikidata
-disputed	class	universe	for sumo; reversed by wikidata
-disputed	event	class	for wikidata; reversed by opencyc
+contradicted-published	money	currency	published edge; now reversed by wikidata — needs a ruling
+contradicted-published	research-worker	scientist	published edge; now reversed by wikidata — needs a ruling
+disputed	crisis	emergency	for opencyc; reversed by wikidata
+disputed	currency	money	for wikidata; reversed by sumo wordnet
+disputed	emergency	crisis	for wikidata; reversed by opencyc
 disputed	phenomenon	process	for wordnet; reversed by sumo
 disputed	process	phenomenon	for sumo; reversed by wordnet
-disputed	universe	class	for wikidata; reversed by sumo
+disputed	scientist	research-worker	for wikidata; reversed by claude wordnet
+disputed	shirt	top	for wikidata; reversed by sumo
+disputed	top	shirt	for sumo; reversed by wikidata
 single	abbey	container	only opencyc
 single	abbey	device	only opencyc
 single	abbey	home	only opencyc
 single	abbey	organization	only yago
+single	abbey	settlement	only wikidata
 single	abdomen	structure	only opencyc
 single	ability	disposition	only opencyc
 single	ability	property	only sumo
@@ -125,6 +117,7 @@ single	activeness	property	only sumo
 single	actor	artist	only opencyc
 single	actor	human	only opencyc
 single	actor	mammal	only opencyc
+single	actor	professional	only opencyc
 single	actor	structure	only opencyc
 single	actor	vertebrate	only opencyc
 single	actor	worker	only opencyc
@@ -134,6 +127,7 @@ single	ad	activity	only sumo
 single	ad	communication	only sumo
 single	ad	event	only sumo
 single	ad	procedure	only sumo
+single	ad	service	only wikidata
 single	ad	volition	only sumo
 single	adaptation	action	only opencyc
 single	adaptation	artifact	only sumo
@@ -185,7 +179,6 @@ single	adoption	assist	only wordnet
 single	adoption	procedure	only sumo
 single	adoption	support	only wordnet
 single	adoption	volition	only sumo
-single	adult	animal	only sumo
 single	adult	body	only sumo
 single	adult	human	only sumo
 single	adult	mammal	only sumo
@@ -269,11 +262,15 @@ single	adviser	property	only sumo
 single	advocate	animal	only sumo
 single	advocate	body	only sumo
 single	advocate	human	only sumo
+single	advocate	lawyer	only wikidata
 single	advocate	mammal	only sumo
 single	advocate	populace	only sumo
+single	advocate	professional	only wikidata
 single	advocate	self	only sumo
+single	advocate	specialist	only wikidata
 single	advocate	species	only sumo
 single	advocate	vertebrate	only sumo
+single	advocate	worker	only wikidata
 single	affair	accomplishment	only sumo
 single	affair	act	only sumo
 single	affair	activity	only sumo
@@ -354,12 +351,16 @@ single	aisle	land	only sumo
 single	aisle	place	only sumo
 single	aisle	route	only opencyc
 single	aisle	yard	only sumo
+single	alarm-clock	machine	only wikidata
 single	album	book	only sumo
 single	album	component	only sumo
 single	album	device	only sumo
 single	album	indication	only sumo
 single	album	information	only sumo
 single	album	mechanism	only sumo
+single	album	notebook	only wikidata
+single	alcohol	fluid	only wikidata
+single	alcohol	liquid	only wikidata
 single	alcohol	material	only sumo
 single	alimony	accomplishment	only sumo
 single	alimony	act	only sumo
@@ -367,8 +368,11 @@ single	alimony	activity	only sumo
 single	alimony	event	only sumo
 single	alimony	procedure	only sumo
 single	alimony	volition	only sumo
+single	alliance	structure	only opencyc
 single	allotment	information	only opencyc
+single	allowance	gift	only wikidata
 single	allowance	information	only opencyc
+single	allowance	money	only wikidata
 single	ally	agent	only sumo
 single	ally	group	only wordnet
 single	ally	land	only sumo
@@ -378,14 +382,19 @@ single	aloofness	property	only sumo
 single	altar	cavity	only opencyc
 single	altar	container	only opencyc
 single	altar	device	only opencyc
+single	altar	furniture	only wikidata
 single	altar	information	only yago
 single	altar	surface	only opencyc
+single	altar	table	only wikidata
+single	aluminum	drug	only wikidata
+single	aluminum	medication	only wikidata
 single	amateur	attribute	only sumo
 single	amateur	normal	only sumo
 single	amateur	property	only sumo
 single	ambiance	normal	only sumo
 single	ambiance	property	only sumo
 single	ambiguity	property	only sumo
+single	ambiguity	uncertainty	only wikidata
 single	ambition	property	only sumo
 single	amendment	accomplishment	only sumo
 single	amendment	act	only sumo
@@ -428,6 +437,7 @@ single	analogy	volition	only sumo
 single	analyst	attribute	only sumo
 single	analyst	human	only opencyc
 single	analyst	mammal	only opencyc
+single	analyst	professional	only wordnet
 single	analyst	property	only sumo
 single	analyst	structure	only opencyc
 single	analyst	vertebrate	only opencyc
@@ -528,6 +538,7 @@ single	appearance	tension	only sumo
 single	appearance	way	only sumo
 single	appendix	information	only opencyc
 single	appetite	property	only sumo
+single	appetite	sensation	only wikidata
 single	apple	structure	only opencyc
 single	applicant	attribute	only sumo
 single	applicant	human	only opencyc
@@ -579,7 +590,6 @@ single	archive	agent	only sumo
 single	archive	association	only sumo
 single	archive	collection	only sumo
 single	archive	group	only sumo
-single	archive	organization	only sumo
 single	archive	team	only sumo
 single	ardor	property	only sumo
 single	arena	artifact	only sumo
@@ -609,7 +619,6 @@ single	army-division	association	only sumo
 single	army-division	collection	only sumo
 single	army-division	structure	only opencyc
 single	army-division	team	only sumo
-single	article	class	only wikidata
 single	article	contract-condition	only sumo
 single	article	data-file	only sumo
 single	article	essay	only sumo
@@ -617,7 +626,7 @@ single	article	indication	only sumo
 single	article	line-of-text	only sumo
 single	article	news	only sumo
 single	article	note	only sumo
-single	article	text	only sumo
+single	article	publication	only wikidata
 single	artillery-shell	device	only opencyc
 single	artillery-shell	projectile	only opencyc
 single	artillery-shell	weapon	only opencyc
@@ -664,6 +673,8 @@ single	assist	procedure	only sumo
 single	assist	volition	only sumo
 single	assistant	body	only sumo
 single	assistant	populace	only sumo
+single	assistant	research-worker	only wikidata
+single	assistant	scientist	only wikidata
 single	assistant	self	only sumo
 single	assistant	species	only sumo
 single	assistant	structure	only opencyc
@@ -678,12 +689,12 @@ single	assurance	procedure	only sumo
 single	assurance	volition	only sumo
 single	asterisk	signal	only wordnet
 single	astronomy	cognition	only wordnet
+single	astronomy	research	only wikidata
 single	athlete	human	only opencyc
 single	athlete	mammal	only opencyc
 single	athlete	structure	only opencyc
 single	athlete	vertebrate	only opencyc
 single	atom	chemical-element	only sumo
-single	atom	class	only wikidata
 single	atom	material	only sumo
 single	attachment	situation	only opencyc
 single	attack	accomplishment	only sumo
@@ -717,6 +728,7 @@ single	attraction	status	only sumo
 single	attraction	tension	only sumo
 single	attraction	way	only sumo
 single	auction	action	only opencyc
+single	auction	sale	only wikidata
 single	auction	situation	only opencyc
 single	audience	event	only sumo
 single	audience	perception	only sumo
@@ -724,6 +736,7 @@ single	audio	indication	only sumo
 single	auditor	adult	only opencyc
 single	auditor	body	only sumo
 single	auditor	populace	only sumo
+single	auditor	professional	only opencyc
 single	auditor	self	only sumo
 single	auditor	species	only sumo
 single	auditor	structure	only opencyc
@@ -759,6 +772,7 @@ single	authority	populace	only sumo
 single	authority	self	only sumo
 single	authority	species	only sumo
 single	authority	vertebrate	only sumo
+single	automaton	machine	only wikidata
 single	autonomy	property	only sumo
 single	avant-garde	collection	only sumo
 single	avenue	development	only sumo
@@ -772,7 +786,6 @@ single	avocation	procedure	only sumo
 single	avocation	volition	only sumo
 single	axis	component	only sumo
 single	axis	line	only opencyc
-single	baby	animal	only sumo
 single	baby	body	only sumo
 single	baby	human	only sumo
 single	baby	mammal	only sumo
@@ -781,16 +794,18 @@ single	baby	self	only sumo
 single	baby	species	only sumo
 single	baby	vertebrate	only sumo
 single	baby	young-people	only sumo
+single	bacon	flesh	only wikidata
+single	bacon	tissue	only wikidata
 single	bacterium	agent	only sumo
 single	bacterium	species	only sumo
 single	bacterium	structure	only opencyc
 single	bag	device	only sumo
+single	bag	equipment	only wikidata
+single	bag	tool	only wikidata
 single	bail-bond	quantity	only sumo
 single	balance	property	only sumo
 single	balcony	development	only sumo
 single	balcony	place	only yago
-single	ball	class	only wikidata
-single	ball	shape	only wikidata
 single	ballet	action	only opencyc
 single	ballet	cognition	only wordnet
 single	ballet	information	only yago
@@ -840,12 +855,17 @@ single	baron	human	only opencyc
 single	baron	mammal	only opencyc
 single	baron	structure	only opencyc
 single	baron	vertebrate	only opencyc
+single	baron	worker	only wikidata
 single	barrel	device	only opencyc
+single	barrel	equipment	only wikidata
+single	barrel	tool	only wikidata
 single	barrel-shape	property	only sumo
 single	barroom	agent	only sumo
 single	barroom	association	only sumo
 single	barroom	collection	only sumo
+single	barroom	furniture	only wikidata
 single	barroom	group	only sumo
+single	barroom	mechanism	only wikidata
 single	barroom	organization	only sumo
 single	barroom	structure	only wordnet
 single	barroom	team	only sumo
@@ -857,12 +877,16 @@ single	barter	procedure	only sumo
 single	barter	situation	only opencyc
 single	barter	volition	only sumo
 single	base	component	only sumo
+single	base	equipment	only wikidata
 single	base	mechanism	only sumo
 single	baseball	artifact	only opencyc
 single	baseball	device	only opencyc
 single	basement	development	only sumo
 single	basement	place	only yago
-single	basket	class	only wikidata
+single	basket	braid	only wikidata
+single	basket	equipment	only wikidata
+single	basket	structure	only wikidata
+single	basket	tool	only wikidata
 single	basketball	artifact	only opencyc
 single	basketball	device	only opencyc
 single	bat	agent	only sumo
@@ -874,6 +898,8 @@ single	bathroom	development	only sumo
 single	bathroom	device	only opencyc
 single	bathroom	structure	only wordnet
 single	bathtub	cavity	only opencyc
+single	bathtub	equipment	only wikidata
+single	bathtub	tool	only wikidata
 single	bathtub	tub	only opencyc
 single	battery	accomplishment	only sumo
 single	battery	artifact	only opencyc
@@ -889,6 +915,7 @@ single	battle	activity	only sumo
 single	battle	contest	only sumo
 single	battle	fight	only sumo
 single	battle	procedure	only sumo
+single	battle	violence	only wikidata
 single	battle	volition	only sumo
 single	battle	war	only sumo
 single	battlefield	physical-object	only wordnet
@@ -897,6 +924,7 @@ single	bay	landform	only yago
 single	beach	environment	only opencyc
 single	beach	land	only sumo
 single	beach	yard	only sumo
+single	bean	seed	only wikidata
 single	bear	agent	only sumo
 single	bear	body	only sumo
 single	bear	species	only sumo
@@ -918,6 +946,9 @@ single	bee	species	only sumo
 single	bee	structure	only opencyc
 single	beef	material	only sumo
 single	beer	artifact	only opencyc
+single	beer	commodity	only wikidata
+single	beer	fluid	only wikidata
+single	beer	liquid	only wikidata
 single	beer	material	only sumo
 single	beer	solution	only opencyc
 single	behavior	motion	only sumo
@@ -931,7 +962,9 @@ single	beloved	populace	only sumo
 single	beloved	self	only sumo
 single	beloved	species	only sumo
 single	beloved	vertebrate	only sumo
+single	belt	equipment	only wikidata
 single	belt	fashion	only sumo
+single	belt	tool	only wikidata
 single	bend	body-of-water	only opencyc
 single	bend	place	only sumo
 single	bend	route	only opencyc
@@ -975,11 +1008,11 @@ single	betrothal	accomplishment	only sumo
 single	betrothal	action	only opencyc
 single	betrothal	activity	only sumo
 single	betrothal	communication	only sumo
+single	betrothal	declaration	only wikidata
 single	betrothal	procedure	only sumo
 single	betrothal	situation	only opencyc
 single	betrothal	volition	only sumo
 single	bible	book	only sumo
-single	bible	class	only wikidata
 single	bible	component	only sumo
 single	bible	copy	only opencyc
 single	bible	device	only sumo
@@ -987,6 +1020,7 @@ single	bible	image	only opencyc
 single	bible	indication	only sumo
 single	bible	mechanism	only sumo
 single	bible	publication	only opencyc
+single	bicycle	equipment	only wikidata
 single	bid	accomplishment	only sumo
 single	bid	activity	only sumo
 single	bid	communication	only sumo
@@ -1001,7 +1035,6 @@ single	bill	line-of-text	only sumo
 single	bill	text	only sumo
 single	bin	device	only sumo
 single	biography	artifact	only sumo
-single	biography	class	only wikidata
 single	biography	contract-condition	only sumo
 single	biography	data-file	only sumo
 single	biography	line-of-text	only sumo
@@ -1039,8 +1072,11 @@ single	blessing	ritual	only opencyc
 single	blessing	situation	only opencyc
 single	block	land	only sumo
 single	block	physical-object	only wordnet
+single	block	settlement	only wikidata
 single	block	yard	only sumo
 single	blood	body-part	only opencyc
+single	blood	fluid	only wikidata
+single	blood	liquid	only wikidata
 single	blood	material	only sumo
 single	blood	red	only opencyc
 single	blood	solution	only opencyc
@@ -1065,7 +1101,9 @@ single	boldness	inclination	only sumo
 single	boldness	mentality	only sumo
 single	boldness	property	only sumo
 single	bolt	cylinder	only opencyc
+single	bolt	equipment	only wikidata
 single	bolt	shaft	only opencyc
+single	bolt	tool	only wikidata
 single	bone	structure	only opencyc
 single	book	component	only sumo
 single	book	device	only sumo
@@ -1112,12 +1150,18 @@ single	boom	status	only sumo
 single	boom	tension	only sumo
 single	boom	way	only sumo
 single	boot	device	only opencyc
+single	boot	equipment	only wikidata
 single	boot	fashion	only sumo
 single	boot	shoe	only opencyc
+single	boot	tool	only wikidata
 single	booth	development	only sumo
 single	booth	structure	only wordnet
+single	booth	workplace	only wikidata
 single	botanical-fruit	body-part	only sumo
+single	bottle	equipment	only wikidata
+single	bottle	tool	only wikidata
 single	bottle-cap	device	only sumo
+single	bottle-cap	lid	only wikidata
 single	bottom	boat	only sumo
 single	bottom	side	only opencyc
 single	bottom	surface	only opencyc
@@ -1125,9 +1169,14 @@ single	boundary-line	line	only opencyc
 single	boundary-line	physical-object	only wordnet
 single	bowl	cavity	only opencyc
 single	bowl	device	only opencyc
+single	bowl	equipment	only wikidata
+single	bowl	tool	only wikidata
+single	box	equipment	only wikidata
+single	box	tool	only wikidata
 single	boxing-ring	place	only sumo
 single	bracket	character	only sumo
 single	bracket	signal	only wordnet
+single	braid	structure	only wikidata
 single	brain	organ	only sumo
 single	brain	structure	only opencyc
 single	branch	body-part	only sumo
@@ -1138,9 +1187,11 @@ single	breakdown	property	only sumo
 single	breast	structure	only opencyc
 single	breeze	process	only wordnet
 single	breeze	situation	only opencyc
+single	brewery	factory	only wikidata
 single	brewery	institution	only opencyc
 single	brick	block	only opencyc
 single	brick	device	only opencyc
+single	bride	adult	only wikidata
 single	bride	body	only sumo
 single	bride	lady	only sumo
 single	bride	peer	only wordnet
@@ -1148,7 +1199,6 @@ single	bride	populace	only sumo
 single	bride	self	only sumo
 single	bride	species	only sumo
 single	bride	structure	only opencyc
-single	bride	woman	only sumo
 single	bridge	device	only opencyc
 single	bridge	route	only opencyc
 single	brilliance	attribute	only sumo
@@ -1170,6 +1220,11 @@ single	brother	property	only sumo
 single	brother	structure	only opencyc
 single	brush	hardware	only opencyc
 single	brush	tool	only opencyc
+single	bubble	attribute	only wordnet
+single	bubble	shape	only wordnet
+single	bubble	surface	only opencyc
+single	bucket	equipment	only wikidata
+single	bucket	tool	only wikidata
 single	buffet	artifact	only opencyc
 single	buffet	container	only opencyc
 single	buffet	device	only opencyc
@@ -1221,14 +1276,17 @@ single	businessman	adult	only opencyc
 single	businessman	attribute	only sumo
 single	businessman	human	only opencyc
 single	businessman	mammal	only opencyc
+single	businessman	professional	only opencyc
 single	businessman	property	only sumo
 single	businessman	structure	only opencyc
 single	businessman	vertebrate	only opencyc
-single	businessman	worker	only opencyc
 single	butter	artifact	only opencyc
 single	butterfly	agent	only sumo
 single	butterfly	body	only sumo
 single	butterfly	species	only sumo
+single	button	clothing	only wikidata
+single	button	equipment	only wikidata
+single	button	tool	only wikidata
 single	cab	cavity	only opencyc
 single	cabaret	development	only sumo
 single	cabaret	disco	only sumo
@@ -1239,15 +1297,20 @@ single	cabin	device	only opencyc
 single	cabin	home	only opencyc
 single	cabin	structure	only wordnet
 single	cabinet	device	only sumo
+single	cable	braid	only wikidata
 single	cable	cord	only opencyc
 single	cable	development	only sumo
 single	cable	device	only opencyc
 single	cable	line	only opencyc
 single	cable	route	only opencyc
+single	cable	structure	only wikidata
 single	cadaver	agent	only sumo
 single	cadaver	organism	only sumo
 single	cadaver	species	only sumo
+single	cafe	workplace	only wikidata
 single	cage	container	only opencyc
+single	cage	equipment	only wikidata
+single	cage	tool	only wikidata
 single	cake	food	only sumo
 single	cake	material	only sumo
 single	calamity	amateur	only sumo
@@ -1305,11 +1368,16 @@ single	campaign	war	only sumo
 single	campaigner	attribute	only sumo
 single	campaigner	property	only sumo
 single	can	device	only opencyc
+single	cane	clothing	only wikidata
+single	cane	equipment	only wikidata
+single	cane	tool	only wikidata
 single	canvas	cotton	only sumo
 single	canvas	device	only opencyc
 single	canvas	surface	only opencyc
 single	cap	device	only opencyc
+single	cap	equipment	only wikidata
 single	cap	fashion	only sumo
+single	cap	tool	only wikidata
 single	capital-city	land	only sumo
 single	capital-city	physical-object	only wordnet
 single	capital-city	structure	only opencyc
@@ -1365,13 +1433,21 @@ single	carriage	vehicle	only yago
 single	carriage	way	only sumo
 single	carrot	body-part	only sumo
 single	carrot	botanical-fruit	only sumo
+single	carrot	dish	only wikidata
+single	carrot	food	only wikidata
+single	carrot	prepared-dish	only wikidata
+single	carrot	vegetable	only wikidata
 single	carrying-out	accomplishment	only sumo
 single	carrying-out	activity	only sumo
 single	carrying-out	procedure	only sumo
 single	carrying-out	volition	only sumo
-single	cartoon	drawing	only yago
+single	cartoon	artifact	only wikidata
+single	cartoon	physical-object	only wikidata
 single	case	device	only sumo
+single	case	equipment	only wikidata
+single	case	furniture	only wikidata
 single	case	information	only opencyc
+single	case	tool	only wikidata
 single	cash	contract-condition	only sumo
 single	cash	device	only opencyc
 single	cash	image	only opencyc
@@ -1396,8 +1472,11 @@ single	casualty	self	only sumo
 single	casualty	species	only sumo
 single	cat	agent	only sumo
 single	cat	body	only sumo
+single	cat	pet	only wikidata
 single	cat	species	only sumo
 single	cat	structure	only opencyc
+single	catalog	collection	only wikidata
+single	catalog	group	only wikidata
 single	catch	amateur	only sumo
 single	catch	ambiance	only sumo
 single	catch	circumstance	only sumo
@@ -1441,6 +1520,7 @@ single	cell	body-part	only sumo
 single	cellular-telephone	component	only sumo
 single	cellular-telephone	mechanism	only sumo
 single	celluloid	contract-condition	only sumo
+single	celluloid	equipment	only wikidata
 single	celluloid	indication	only sumo
 single	celluloid	information	only sumo
 single	celluloid	line-of-text	only sumo
@@ -1482,9 +1562,9 @@ single	certificate	physical-object	only sumo
 single	certificate	text	only sumo
 single	chaff	body-part	only sumo
 single	chaff	physical-object	only sumo
-single	chain	class	only wikidata
 single	chair	device	only opencyc
 single	chair	information	only yago
+single	chairman	manager	only wikidata
 single	chalk	device	only sumo
 single	challenge	accomplishment	only sumo
 single	challenge	activity	only sumo
@@ -1514,6 +1594,7 @@ single	challenging-situation	way	only sumo
 single	champagne	artifact	only opencyc
 single	champagne	solution	only opencyc
 single	champion	animal	only sumo
+single	champion	athlete	only wikidata
 single	champion	body	only sumo
 single	champion	human	only sumo
 single	champion	mammal	only sumo
@@ -1521,6 +1602,7 @@ single	champion	populace	only sumo
 single	champion	self	only sumo
 single	champion	species	only sumo
 single	champion	vertebrate	only sumo
+single	champion	winner	only wikidata
 single	championship	action	only opencyc
 single	championship	amateur	only sumo
 single	championship	ambiance	only sumo
@@ -1564,6 +1646,7 @@ single	chaos	status	only sumo
 single	chaos	tension	only sumo
 single	chaos	way	only sumo
 single	chapter	artifact	only sumo
+single	chapter	board-of-directors	only wikidata
 single	chapter	contract-condition	only sumo
 single	chapter	essay	only sumo
 single	chapter	indication	only sumo
@@ -1625,6 +1708,7 @@ single	check	volition	only sumo
 single	check-mark	signal	only wordnet
 single	cheek	structure	only opencyc
 single	cheese	artifact	only opencyc
+single	chemical-element	chemical	only wikidata
 single	chemical-element	material	only sumo
 single	chemical-reaction	situation	only opencyc
 single	chemical-solution	material	only sumo
@@ -1637,7 +1721,6 @@ single	chicken	body	only sumo
 single	chicken	species	only sumo
 single	chief	attribute	only sumo
 single	chief	property	only sumo
-single	child	animal	only sumo
 single	child	body	only sumo
 single	child	human	only sumo
 single	child	mammal	only sumo
@@ -1667,6 +1750,7 @@ single	chit	note	only sumo
 single	chit	physical-object	only sumo
 single	chit	text	only sumo
 single	chocolate	artifact	only opencyc
+single	chorus	music-band	only wikidata
 single	chronicle	artifact	only sumo
 single	chronicle	collection	only yago
 single	chronicle	contract-condition	only sumo
@@ -1680,13 +1764,17 @@ single	chronicle	text	only sumo
 single	cigarette	agent	only wordnet
 single	cigarette	substance	only wordnet
 single	cinema	development	only sumo
-single	circle	class	only wikidata
+single	cinema	occupation	only wikidata
+single	cinema	organization	only wikidata
 single	circular	accomplishment	only sumo
 single	circular	act	only sumo
 single	circular	activity	only sumo
+single	circular	booklet	only wikidata
 single	circular	communication	only sumo
 single	circular	event	only sumo
 single	circular	procedure	only sumo
+single	circular	publication	only wikidata
+single	circular	tract	only wikidata
 single	circular	volition	only sumo
 single	circulation	process	only wordnet
 single	circumstance	attribute	only sumo
@@ -1698,6 +1786,7 @@ single	citation	indication	only sumo
 single	citation	line-of-text	only sumo
 single	citation	physical-object	only sumo
 single	citation	text	only sumo
+single	citizen	animal	only wikidata
 single	citizen	collection	only sumo
 single	citizen	group	only sumo
 single	citizen	human	only opencyc
@@ -1755,6 +1844,7 @@ single	clash	volition	only sumo
 single	clash	war	only sumo
 single	class	action	only opencyc
 single	class	collection	only sumo
+single	class	event	only opencyc
 single	class	meeting	only opencyc
 single	class	situation	only opencyc
 single	class	social-occasion	only opencyc
@@ -1787,7 +1877,6 @@ single	clemency	tension	only sumo
 single	clemency	way	only sumo
 single	cliff	landform	only yago
 single	cliff	place	only yago
-single	cliff	slope	only opencyc
 single	climate	property	only sumo
 single	clinic	association	only sumo
 single	clinic	collection	only sumo
@@ -1800,9 +1889,9 @@ single	clipping	line-of-text	only sumo
 single	clipping	music	only wordnet
 single	clipping	surface	only opencyc
 single	clipping	text	only sumo
-single	clique	class	only wikidata
 single	clique	collection	only sumo
-single	clique	core	only wikidata
+single	clique	graph	only wikidata
+single	clock	machine	only wikidata
 single	closure	accomplishment	only sumo
 single	closure	act	only sumo
 single	closure	activity	only sumo
@@ -1811,32 +1900,41 @@ single	closure	information	only sumo
 single	closure	procedure	only sumo
 single	closure	volition	only sumo
 single	clothing	device	only opencyc
+single	clothing	equipment	only wikidata
+single	clothing	tool	only wikidata
 single	cloud	material	only sumo
 single	cloud	process	only wordnet
 single	cloud	substance	only sumo
+single	cloud	weather	only wikidata
 single	club	cane	only sumo
 single	club	device	only sumo
+single	club	equipment	only wikidata
 single	club-card	material	only wordnet
 single	club-card	paper	only wordnet
 single	club-card	substance	only wordnet
 single	coach	attribute	only sumo
 single	coach	human	only opencyc
 single	coach	mammal	only opencyc
+single	coach	professional	only wordnet
 single	coach	property	only sumo
 single	coach	structure	only opencyc
 single	coach	vertebrate	only opencyc
 single	coach	worker	only opencyc
 single	coalescence	combination	only sumo
 single	coat	device	only opencyc
+single	coat	equipment	only wikidata
 single	coat	fashion	only sumo
+single	coat	tool	only wikidata
 single	coating	action	only opencyc
 single	coating	event	only opencyc
 single	coating	situation	only opencyc
 single	code	measure	only sumo
 single	code	routine	only sumo
+single	code	sign	only wikidata
 single	coevals	collection	only sumo
 single	coevals	contemporary	only sumo
 single	coevals	school-class	only sumo
+single	coffin	furniture	only wikidata
 single	cognition	attribute	only sumo
 single	cognition	event	only opencyc
 single	cognition	situation	only opencyc
@@ -1849,6 +1947,7 @@ single	coin	sculpture	only yago
 single	coin	service	only yago
 single	coin	text	only sumo
 single	coin	token	only opencyc
+single	coincidence	group	only wikidata
 single	cold	property	only sumo
 single	coldness	quantity	only sumo
 single	collapse	diminution	only sumo
@@ -2102,6 +2201,8 @@ single	compromise	situation	only opencyc
 single	compromise	volition	only sumo
 single	computer	structure	only opencyc
 single	computer-memory	information	only opencyc
+single	computer-mouse	hardware	only wikidata
+single	computer-mouse	interface	only wikidata
 single	computer-mouse	person	only yago
 single	computer-program	measure	only sumo
 single	computer-program	routine	only sumo
@@ -2110,6 +2211,7 @@ single	computer-virus	measure	only sumo
 single	computer-virus	routine	only sumo
 single	computer-worm	measure	only sumo
 single	computer-worm	routine	only sumo
+single	comrade	acquaintance	only wikidata
 single	comrade	animal	only sumo
 single	comrade	body	only sumo
 single	comrade	human	only sumo
@@ -2151,6 +2253,7 @@ single	conductor	attribute	only sumo
 single	conductor	human	only opencyc
 single	conductor	mammal	only opencyc
 single	conductor	musician	only opencyc
+single	conductor	professional	only opencyc
 single	conductor	property	only sumo
 single	conductor	structure	only opencyc
 single	conductor	vertebrate	only opencyc
@@ -2207,6 +2310,10 @@ single	conglomerate	collection	only sumo
 single	conglomerate	company	only sumo
 single	conglomerate	team	only sumo
 single	congress	event	only yago
+single	congressman	politician	only wikidata
+single	congressman	professional	only wikidata
+single	congressman	specialist	only wikidata
+single	congressman	worker	only wikidata
 single	connectedness	property	only sumo
 single	connection	transportation	only claude
 single	consciousness	event	only opencyc
@@ -2217,6 +2324,7 @@ single	conscription	activity	only sumo
 single	conscription	bid	only sumo
 single	conscription	communication	only sumo
 single	conscription	information	only sumo
+single	conscription	military-service	only wikidata
 single	conscription	procedure	only sumo
 single	conscription	volition	only sumo
 single	consensus	accomplishment	only sumo
@@ -2232,9 +2340,10 @@ single	conservation	care	only sumo
 single	conservation	procedure	only sumo
 single	conservation	volition	only sumo
 single	consideration	property	only sumo
+single	conspiracy	alliance	only wikidata
 single	conspiracy	measure	only sumo
-single	conspiracy	organization	only yago
 single	conspiracy	routine	only sumo
+single	conspiracy	secrecy	only wikidata
 single	conspiracy	secret-plan	only wordnet
 single	constellation	celestial-body	only sumo
 single	constellation	place	only yago
@@ -2247,6 +2356,7 @@ single	constituent-state	yard	only sumo
 single	constitution	information	only yago
 single	constitution	legislation	only yago
 single	constitution	property	only sumo
+single	constitution	structure	only wikidata
 single	constraint	normal	only sumo
 single	constraint	property	only sumo
 single	consumer	human	only opencyc
@@ -2280,6 +2390,7 @@ single	contract-condition	physical-object	only sumo
 single	contraction	act	only wordnet
 single	contribution	accomplishment	only sumo
 single	contribution	activity	only sumo
+single	contribution	gift	only wikidata
 single	contribution	procedure	only sumo
 single	contribution	volition	only sumo
 single	control-stick	device	only sumo
@@ -2311,14 +2422,17 @@ single	conversation	volition	only sumo
 single	conversion	situation	only opencyc
 single	cook	animal	only sumo
 single	cook	body	only sumo
+single	cook	craftsman	only wikidata
 single	cook	human	only sumo
 single	cook	mammal	only sumo
 single	cook	populace	only sumo
 single	cook	self	only sumo
 single	cook	species	only sumo
 single	cook	vertebrate	only sumo
-single	cookie	food	only sumo
+single	cookie	dessert	only wikidata
+single	cookie	dish	only wikidata
 single	cookie	material	only sumo
+single	cookie	prepared-dish	only wikidata
 single	cooking-pan	device	only sumo
 single	cooking-pot	cooking-pan	only sumo
 single	cooking-pot	device	only sumo
@@ -2326,7 +2440,9 @@ single	cooperation	accomplishment	only sumo
 single	cooperation	organization	only yago
 single	cooperation	procedure	only sumo
 single	cooperation	volition	only sumo
-single	copy	class	only wikidata
+single	copper	drug	only wikidata
+single	copper	medication	only wikidata
+single	copy	text	only wikidata
 single	copyright	artifact	only sumo
 single	copyright	cognition	only wordnet
 single	copyright	contract-condition	only sumo
@@ -2344,6 +2460,7 @@ single	cordial-reception	communication	only sumo
 single	cordial-reception	procedure	only sumo
 single	cordial-reception	volition	only sumo
 single	core	physical-object	only wordnet
+single	corn	seed	only wikidata
 single	corner	physical-object	only wordnet
 single	correction	amateur	only sumo
 single	correction	ambiance	only sumo
@@ -2373,6 +2490,7 @@ single	correspondence	message	only wordnet
 single	correspondence	procedure	only sumo
 single	correspondence	volition	only sumo
 single	corruption	action	only opencyc
+single	corruption	crime	only wikidata
 single	corruption	situation	only opencyc
 single	cost-estimate	accomplishment	only sumo
 single	cost-estimate	act	only sumo
@@ -2383,7 +2501,9 @@ single	cost-estimate	event	only sumo
 single	cost-estimate	procedure	only sumo
 single	cost-estimate	volition	only sumo
 single	costume	device	only opencyc
+single	costume	equipment	only wikidata
 single	costume	fashion	only sumo
+single	costume	tool	only wikidata
 single	council	association	only sumo
 single	council	board-of-directors	only sumo
 single	council	collection	only sumo
@@ -2397,6 +2517,7 @@ single	country	land	only sumo
 single	country	structure	only opencyc
 single	country	yard	only sumo
 single	countryside	physical-object	only wordnet
+single	countryside	settlement	only wikidata
 single	coup-d'etat	accomplishment	only sumo
 single	coup-d'etat	action	only opencyc
 single	coup-d'etat	activity	only sumo
@@ -2414,8 +2535,10 @@ single	coupon	physical-object	only sumo
 single	coupon	text	only sumo
 single	courage	confidence	only opencyc
 single	courage	emotion	only opencyc
+single	courage	feeling	only wikidata
 single	courage	inclination	only sumo
 single	courage	mentality	only sumo
+single	courage	perception	only wikidata
 single	courage	property	only sumo
 single	course	accomplishment	only sumo
 single	course	activity	only sumo
@@ -2451,7 +2574,10 @@ single	courtesy	tension	only sumo
 single	courtesy	way	only sumo
 single	courtship	accomplishment	only sumo
 single	courtship	activity	only sumo
+single	courtship	ceremony	only wikidata
+single	courtship	custom	only wikidata
 single	courtship	procedure	only sumo
+single	courtship	ritual	only wikidata
 single	courtship	situation	only opencyc
 single	courtship	volition	only sumo
 single	cousin	attribute	only sumo
@@ -2498,7 +2624,9 @@ single	crash	visit	only sumo
 single	creation	accomplishment	only sumo
 single	creation	procedure	only sumo
 single	creation	volition	only sumo
+single	credit	loan	only wikidata
 single	credit	quantity	only sumo
+single	credit	transaction	only wikidata
 single	credit-card	artifact	only opencyc
 single	credit-card	card	only opencyc
 single	credit-card	device	only opencyc
@@ -2529,7 +2657,6 @@ single	crisis	civilisation	only sumo
 single	crisis	crowd	only sumo
 single	crisis	custom	only sumo
 single	crisis	danger	only sumo
-single	crisis	emergency	only opencyc
 single	crisis	expert	only sumo
 single	crisis	freedom	only sumo
 single	crisis	lap	only sumo
@@ -2542,12 +2669,21 @@ single	crisis	society	only sumo
 single	crisis	status	only sumo
 single	crisis	tension	only sumo
 single	crisis	way	only sumo
+single	critic	adult	only wordnet
+single	critic	agent	only wordnet
+single	critic	human	only opencyc
+single	critic	mammal	only opencyc
+single	critic	organism	only wordnet
+single	critic	physical-object	only wordnet
+single	critic	structure	only opencyc
+single	critic	vertebrate	only opencyc
 single	criticism	accomplishment	only sumo
 single	criticism	act	only sumo
 single	criticism	activity	only sumo
 single	criticism	affirmation	only sumo
 single	criticism	communication	only sumo
 single	criticism	event	only sumo
+single	criticism	philosophy	only wikidata
 single	criticism	procedure	only sumo
 single	criticism	volition	only sumo
 single	critique	artifact	only sumo
@@ -2557,9 +2693,7 @@ single	critique	line-of-text	only sumo
 single	critique	physical-object	only sumo
 single	critique	text	only sumo
 single	crook	property	only sumo
-single	cross	class	only wikidata
 single	cross	information	only yago
-single	cross	shape	only wikidata
 single	crossing	action	only opencyc
 single	crossing	event	only opencyc
 single	crossing	place	only sumo
@@ -2569,6 +2703,7 @@ single	crowd	normal	only sumo
 single	crowd	property	only sumo
 single	crown	device	only opencyc
 single	crown	fashion	only sumo
+single	crown	tool	only wikidata
 single	cruelty	property	only sumo
 single	cruise	transport	only sumo
 single	cruise	visit	only sumo
@@ -2579,19 +2714,23 @@ single	cry	communication	only sumo
 single	cry	event	only sumo
 single	cry	procedure	only sumo
 single	cry	volition	only sumo
+single	crystal	chemical	only wikidata
+single	crystal	substance	only wikidata
 single	cube	property	only sumo
+single	cubicle	bedroom	only wikidata
 single	cubicle	cavity	only opencyc
 single	cubicle	container	only opencyc
 single	cubicle	development	only sumo
 single	cubicle	device	only opencyc
 single	cubicle	structure	only wordnet
 single	cup	device	only opencyc
+single	cup	equipment	only wikidata
+single	cup	tool	only wikidata
 single	cupboard	box	only opencyc
 single	cupboard	container	only opencyc
 single	cupboard	development	only sumo
 single	cupboard	device	only opencyc
-single	cupboard	room	only sumo
-single	curl	class	only wikidata
+single	cupboard	furniture	only wikidata
 single	currency	contract-condition	only sumo
 single	currency	device	only opencyc
 single	currency	image	only opencyc
@@ -2603,7 +2742,6 @@ single	currency	text	only sumo
 single	curtain	device	only opencyc
 single	curtain	fabric	only sumo
 single	curtain	surface	only opencyc
-single	curve	class	only wikidata
 single	curve	property	only sumo
 single	curved-shape	curve	only sumo
 single	curved-shape	property	only sumo
@@ -2624,7 +2762,6 @@ single	customer	self	only sumo
 single	customer	species	only sumo
 single	customer	vertebrate	only sumo
 single	cut	artifact	only opencyc
-single	cut	class	only wikidata
 single	cycle	situation	only opencyc
 single	dad	animal	only sumo
 single	dad	body	only sumo
@@ -2636,9 +2773,10 @@ single	dad	self	only sumo
 single	dad	species	only sumo
 single	dad	vertebrate	only sumo
 single	dairy	artifact	only sumo
+single	dairy	building	only wikidata
 single	dairy	development	only sumo
 single	dairy	institution	only opencyc
-single	dairy	organization	only yago
+single	dairy	occupation	only wikidata
 single	dairy	physical-object	only wordnet
 single	dairy	structure	only opencyc
 single	dairy-product	artifact	only opencyc
@@ -2689,6 +2827,7 @@ single	data-file	physical-object	only sumo
 single	data-file	text	only sumo
 single	daughter	attribute	only sumo
 single	daughter	property	only sumo
+single	daughter	young	only wikidata
 single	daylight	light	only opencyc
 single	daylight	luminosity	only sumo
 single	daylight	process	only wordnet
@@ -2709,6 +2848,7 @@ single	dearth	civilisation	only sumo
 single	dearth	crowd	only sumo
 single	dearth	custom	only sumo
 single	dearth	danger	only sumo
+single	dearth	deficit	only wikidata
 single	dearth	expert	only sumo
 single	dearth	freedom	only sumo
 single	dearth	lap	only sumo
@@ -2765,6 +2905,7 @@ single	default-option	information	only sumo
 single	default-option	procedure	only sumo
 single	default-option	volition	only sumo
 single	defendant	attribute	only sumo
+single	defendant	party	only wikidata
 single	defendant	property	only sumo
 single	deficit	event	only opencyc
 single	deficit	quantity	only sumo
@@ -2811,6 +2952,7 @@ single	denial	event	only sumo
 single	denial	procedure	only sumo
 single	denial	statement	only opencyc
 single	denial	volition	only sumo
+single	dentist	doctor	only wikidata
 single	dentist	human	only opencyc
 single	dentist	mammal	only opencyc
 single	dentist	organization	only schemaorg
@@ -2821,6 +2963,7 @@ single	dentist	worker	only opencyc
 single	departure	action	only opencyc
 single	departure	situation	only opencyc
 single	departure	visit	only sumo
+single	depository-financial-institution	occupation	only wikidata
 single	depression	amateur	only sumo
 single	depression	ambiance	only sumo
 single	depression	cavity	only opencyc
@@ -2846,7 +2989,13 @@ single	deputation	people	only sumo
 single	deputation	school-class	only sumo
 single	deputation	team	only sumo
 single	deputy	attribute	only sumo
+single	deputy	politician	only wikidata
+single	deputy	professional	only wikidata
 single	deputy	property	only sumo
+single	deputy	specialist	only wikidata
+single	deputy	worker	only wikidata
+single	desert	environment	only wikidata
+single	desert	habitat	only wikidata
 single	desert	physical-object	only wordnet
 single	deservingness	amateur	only sumo
 single	deservingness	ambiance	only sumo
@@ -2869,10 +3018,13 @@ single	deservingness	way	only sumo
 single	desire	emotion	only opencyc
 single	desk	container	only opencyc
 single	desk	device	only opencyc
+single	desk	table	only wikidata
 single	despair	emotion	only opencyc
 single	despair	grief	only opencyc
 single	despair	misery	only opencyc
 single	despair	sorrow	only opencyc
+single	dessert	dish	only wikidata
+single	dessert	prepared-dish	only wikidata
 single	destiny	amateur	only sumo
 single	destiny	ambiance	only sumo
 single	destiny	circumstance	only sumo
@@ -2897,6 +3049,8 @@ single	detective	mammal	only opencyc
 single	detective	structure	only opencyc
 single	detective	vertebrate	only opencyc
 single	detective	worker	only opencyc
+single	detector	equipment	only wikidata
+single	detector	tool	only wikidata
 single	detention	property	only sumo
 single	development	artifact	only sumo
 single	development	event	only opencyc
@@ -2907,8 +3061,8 @@ single	diagnosis	activity	only sumo
 single	diagnosis	information	only sumo
 single	diagnosis	procedure	only sumo
 single	diagnosis	volition	only sumo
-single	diagram	class	only wikidata
 single	diagram	physical-object	only wordnet
+single	diagram	structure	only wikidata
 single	dialect	line-of-text	only sumo
 single	dialect	natural-language	only opencyc
 single	dialog	accomplishment	only sumo
@@ -2927,7 +3081,6 @@ single	dialogue	text	only sumo
 single	diamond	carbon	only sumo
 single	diamond	chemical-element	only sumo
 single	diamond	material	only sumo
-single	diamond	mineral	only sumo
 single	diamond	substance	only sumo
 single	diary	article	only sumo
 single	diary	contract-condition	only sumo
@@ -2950,6 +3103,7 @@ single	dictionary	news	only sumo
 single	dictionary	note	only sumo
 single	dictionary	text	only sumo
 single	diet	action	only opencyc
+single	diet	food	only wikidata
 single	diet	information	only schemaorg
 single	diet	situation	only opencyc
 single	difficulty	amateur	only sumo
@@ -3015,23 +3169,28 @@ single	diligence	property	only sumo
 single	diplomat	adult	only opencyc
 single	diplomat	human	only opencyc
 single	diplomat	mammal	only opencyc
+single	diplomat	professional	only opencyc
 single	diplomat	structure	only opencyc
 single	diplomat	vertebrate	only opencyc
+single	director	artist	only wikidata
 single	director	attribute	only sumo
 single	director	human	only opencyc
 single	director	mammal	only opencyc
+single	director	manager	only wikidata
 single	director	organism	only wordnet
 single	director	peer	only wordnet
-single	director	person	only wordnet
 single	director	physical-object	only wordnet
 single	director	property	only sumo
 single	director	structure	only opencyc
 single	director	vertebrate	only opencyc
 single	director	worker	only opencyc
+single	directory	catalog	only wikidata
+single	directory	collection	only wikidata
 single	directory	component	only sumo
 single	directory	contract-condition	only sumo
 single	directory	data-file	only sumo
 single	directory	device	only sumo
+single	directory	group	only wikidata
 single	directory	indication	only sumo
 single	directory	line-of-text	only sumo
 single	directory	mechanism	only sumo
@@ -3172,10 +3331,9 @@ single	disgrace	situation	only opencyc
 single	disgrace	society	only sumo
 single	disgrace	tension	only sumo
 single	disgrace	way	only sumo
-single	disk	class	only wikidata
+single	dish	food	only wikidata
 single	disk	cylinder	only opencyc
 single	disk	device	only wordnet
-single	disk	shape	only wikidata
 single	disorderliness	amateur	only sumo
 single	disorderliness	ambiance	only sumo
 single	disorderliness	circumstance	only sumo
@@ -3200,10 +3358,10 @@ single	display	information	only sumo
 single	display	procedure	only sumo
 single	display	stage-production	only sumo
 single	display	volition	only sumo
-single	disposition	class	only wikidata
 single	disposition	inclination	only sumo
 single	disposition	mentality	only sumo
 single	disposition	property	only sumo
+single	disposition	text	only wikidata
 single	dispute	accomplishment	only sumo
 single	dispute	activity	only sumo
 single	dispute	argument	only sumo
@@ -3239,6 +3397,7 @@ single	dissertation	indication	only sumo
 single	dissertation	line-of-text	only sumo
 single	dissertation	physical-object	only sumo
 single	dissertation	publication	only opencyc
+single	dissertation	research	only wikidata
 single	dissertation	text	only sumo
 single	distortion	amateur	only sumo
 single	distortion	ambiance	only sumo
@@ -3333,7 +3492,6 @@ single	document	physical-object	only sumo
 single	document	text	only sumo
 single	documentation	accomplishment	only sumo
 single	documentation	activity	only sumo
-single	documentation	information	only sumo
 single	documentation	procedure	only sumo
 single	documentation	search	only sumo
 single	documentation	volition	only sumo
@@ -3346,13 +3504,11 @@ single	doll	information	only yago
 single	dolphin	agent	only sumo
 single	dolphin	body	only sumo
 single	dolphin	species	only sumo
-single	dome	ceiling	only sumo
 single	dome	development	only sumo
 single	dominance	amateur	only sumo
 single	dominance	ambiance	only sumo
 single	dominance	circumstance	only sumo
 single	dominance	civilisation	only sumo
-single	dominance	class	only wikidata
 single	dominance	crowd	only sumo
 single	dominance	custom	only sumo
 single	dominance	danger	only sumo
@@ -3392,6 +3548,7 @@ single	donor	attribute	only sumo
 single	donor	property	only sumo
 single	door	device	only sumo
 single	door	gate	only sumo
+single	door	obstacle	only wikidata
 single	doorbell	component	only sumo
 single	dormitory	address	only sumo
 single	dormitory	container	only opencyc
@@ -3402,6 +3559,7 @@ single	dose	material	only sumo
 single	dose	medicine	only opencyc
 single	dot	property	only sumo
 single	doubt	emotion	only opencyc
+single	dough	spread	only wikidata
 single	down-payment	quantity	only sumo
 single	downfall	attribute	only sumo
 single	downfall	normal	only sumo
@@ -3412,6 +3570,7 @@ single	draft	indication	only sumo
 single	draft	line-of-text	only sumo
 single	draft	physical-object	only sumo
 single	drain	device	only sumo
+single	drain	gutter	only wikidata
 single	drama	amateur	only sumo
 single	drama	ambiance	only sumo
 single	drama	attribute	only sumo
@@ -3443,6 +3602,8 @@ single	dramatic-play	myth	only sumo
 single	dramatic-play	physical-object	only sumo
 single	dramatic-play	text	only sumo
 single	draught	process	only wordnet
+single	drawing	artifact	only wikidata
+single	drawing	physical-object	only wikidata
 single	dressing	device	only sumo
 single	drill	accomplishment	only sumo
 single	drill	acquired-knowledge	only sumo
@@ -3453,6 +3614,9 @@ single	drill	leader	only sumo
 single	drill	procedure	only sumo
 single	drill	tool	only opencyc
 single	drill	volition	only sumo
+single	drill-tool	equipment	only wikidata
+single	drink	fluid	only wikidata
+single	drink	liquid	only wikidata
 single	drink	material	only sumo
 single	drinking	action	only opencyc
 single	drinking	consumption	only sumo
@@ -3474,7 +3638,6 @@ single	driveway	route	only opencyc
 single	driveway	street	only sumo
 single	driveway	surface	only opencyc
 single	driveway	yard	only sumo
-single	drop	number	only wikidata
 single	drop	particle	only opencyc
 single	drop	property	only sumo
 single	drug	material	only sumo
@@ -3482,6 +3645,8 @@ single	drug-user	attribute	only sumo
 single	drug-user	property	only sumo
 single	drum	can	only opencyc
 single	drum	container	only opencyc
+single	drum	equipment	only wikidata
+single	drum	tool	only wikidata
 single	duck	agent	only sumo
 single	duck	body	only sumo
 single	duck	species	only sumo
@@ -3490,8 +3655,10 @@ single	duke	human	only opencyc
 single	duke	mammal	only opencyc
 single	duke	occupation	only yago
 single	duke	property	only sumo
+single	duke	sign	only wikidata
 single	duke	structure	only opencyc
 single	duke	vertebrate	only opencyc
+single	duty	structure	only wikidata
 single	dwelling	address	only sumo
 single	dwelling	development	only sumo
 single	eagle	agent	only sumo
@@ -3524,6 +3691,7 @@ single	ease	tension	only sumo
 single	ease	way	only sumo
 single	easiness	property	only sumo
 single	economics	cognition	only wordnet
+single	economist	research-worker	only wikidata
 single	economy	action	only opencyc
 single	economy	event	only opencyc
 single	economy	inclination	only sumo
@@ -3531,12 +3699,11 @@ single	economy	mentality	only sumo
 single	economy	property	only sumo
 single	economy	situation	only opencyc
 single	economy	transaction	only opencyc
-single	edge	class	only wikidata
 single	edge	line	only opencyc
-single	edge	shape	only wikidata
 single	education	accomplishment	only sumo
 single	education	leader	only sumo
 single	education	procedure	only sumo
+single	education	service	only wikidata
 single	education	volition	only sumo
 single	egg	body-part	only sumo
 single	egg	material	only sumo
@@ -3547,7 +3714,11 @@ single	egg-white	egg	only sumo
 single	egg-white	material	only sumo
 single	egg-white	meat	only sumo
 single	egg-white	physical-object	only sumo
+single	eggshell	artifact	only wikidata
 single	eggshell	body-part	only sumo
+single	eggshell	equipment	only wikidata
+single	eggshell	housing	only wikidata
+single	eggshell	tool	only wikidata
 single	elbow	structure	only opencyc
 single	election	accomplishment	only sumo
 single	election	activity	only sumo
@@ -3572,6 +3743,7 @@ single	elephant	species	only sumo
 single	elephant	structure	only opencyc
 single	elevator	cavity	only opencyc
 single	elevator	container	only opencyc
+single	elevator	machine	only wikidata
 single	elite	collection	only sumo
 single	elite	human	only opencyc
 single	elite	mammal	only opencyc
@@ -3581,6 +3753,7 @@ single	email	act	only wordnet
 single	email	artifact	only sumo
 single	email	device	only sumo
 single	email	event	only wordnet
+single	email	letter	only wikidata
 single	embassy	development	only sumo
 single	embryo	structure	only opencyc
 single	emergency	amateur	only sumo
@@ -3626,6 +3799,7 @@ single	empire	collection	only sumo
 single	empire	country	only yago
 single	empire	government	only sumo
 single	empire	place	only yago
+single	empire	realm	only wikidata
 single	empire	structure	only opencyc
 single	empire	team	only sumo
 single	employment	property	only sumo
@@ -3649,15 +3823,18 @@ single	encounter	volition	only sumo
 single	end	physical-object	only wordnet
 single	end-product	commodity	only sumo
 single	ending	situation	only opencyc
+single	enemy	acquaintance	only wikidata
+single	enemy	adversary	only wikidata
 single	enemy	collection	only sumo
+single	enemy	person	only wikidata
 single	enemy	school-class	only sumo
 single	engine	machinery	only sumo
 single	engineer	adult	only opencyc
 single	engineer	human	only opencyc
 single	engineer	mammal	only opencyc
+single	engineer	professional	only opencyc
 single	engineer	structure	only opencyc
 single	engineer	vertebrate	only opencyc
-single	engineer	worker	only opencyc
 single	engineering	cognition	only wordnet
 single	engrossment	event	only sumo
 single	engrossment	perception	only sumo
@@ -3677,9 +3854,6 @@ single	enticement	volition	only sumo
 single	entrance	cavity	only opencyc
 single	entrance	development	only sumo
 single	entrance-fee	quantity	only sumo
-single	envelope	class	only wikidata
-single	envelope	number	only wikidata
-single	environment	class	only wikidata
 single	environment	physical-object	only wordnet
 single	equation	statement	only opencyc
 single	equilibrium	amateur	only sumo
@@ -3742,19 +3916,18 @@ single	examination	information	only sumo
 single	examination	procedure	only sumo
 single	examination	volition	only sumo
 single	examiner	body	only sumo
+single	examiner	policeman	only wikidata
 single	examiner	populace	only sumo
 single	examiner	self	only sumo
 single	examiner	species	only sumo
 single	examiner	structure	only opencyc
 single	exception	situation	only opencyc
 single	excerpt	artifact	only sumo
-single	excerpt	class	only wikidata
 single	excerpt	contract-condition	only sumo
 single	excerpt	indication	only sumo
 single	excerpt	line-of-text	only sumo
 single	excerpt	music	only wordnet
 single	excerpt	physical-object	only sumo
-single	excerpt	text	only sumo
 single	excess	amateur	only sumo
 single	excess	ambiance	only sumo
 single	excess	circumstance	only sumo
@@ -3807,7 +3980,6 @@ single	exemplar	ambiance	only sumo
 single	exemplar	attribute	only sumo
 single	exemplar	circumstance	only sumo
 single	exemplar	civilisation	only sumo
-single	exemplar	class	only wikidata
 single	exemplar	crowd	only sumo
 single	exemplar	custom	only sumo
 single	exemplar	danger	only sumo
@@ -3821,6 +3993,7 @@ single	exemplar	property	only sumo
 single	exemplar	society	only sumo
 single	exemplar	status	only sumo
 single	exemplar	tension	only sumo
+single	exemplar	text	only wikidata
 single	exemplar	way	only sumo
 single	exhibition	event	only yago
 single	exile	act	only wordnet
@@ -3853,14 +4026,19 @@ single	explaining	accomplishment	only sumo
 single	explaining	action	only opencyc
 single	explaining	activity	only sumo
 single	explaining	communication	only sumo
-single	explaining	information	only sumo
+single	explaining	concept	only wikidata
+single	explaining	message	only wikidata
 single	explaining	procedure	only sumo
 single	explaining	situation	only opencyc
 single	explaining	volition	only sumo
+single	explanation	concept	only wikidata
+single	explanation	message	only wikidata
 single	exploration	accomplishment	only sumo
 single	exploration	information	only sumo
+single	exploration	motion	only wikidata
 single	exploration	procedure	only sumo
 single	exploration	volition	only sumo
+single	exploration	voyage	only wikidata
 single	explosion	ending	only opencyc
 single	explosion	situation	only opencyc
 single	exposure	property	only sumo
@@ -3909,7 +4087,6 @@ single	fact	line-of-text	only sumo
 single	fact	remark	only sumo
 single	fact	sentence	only sumo
 single	factory	development	only sumo
-single	factory	organization	only yago
 single	factory	place	only yago
 single	failing	action	only opencyc
 single	failing	amateur	only sumo
@@ -4004,6 +4181,7 @@ single	farming	job	only sumo
 single	farming	procedure	only sumo
 single	farming	volition	only sumo
 single	fashion	artifact	only sumo
+single	fashion	culture	only wikidata
 single	fat	body-part	only sumo
 single	fat	physical-object	only sumo
 single	fat	tissue	only sumo
@@ -4068,6 +4246,7 @@ single	feedback	communication	only sumo
 single	feedback	procedure	only sumo
 single	feedback	situation	only opencyc
 single	feedback	volition	only sumo
+single	feeling	perception	only wikidata
 single	feeling	property	only sumo
 single	female-child	animal	only sumo
 single	female-child	body	only sumo
@@ -4102,22 +4281,19 @@ single	fever	event	only opencyc
 single	fever	illness	only opencyc
 single	fever	situation	only opencyc
 single	fiber	artifact	only opencyc
-single	fiber	class	only wikidata
 single	fiber	cord	only opencyc
 single	fiber	line	only opencyc
 single	fiber	physical-object	only sumo
 single	fiber	route	only opencyc
+single	fiber	thread	only wikidata
 single	fiction	artifact	only sumo
 single	fiction	contract-condition	only sumo
 single	fiction	indication	only sumo
 single	fiction	line-of-text	only sumo
 single	fiction	physical-object	only sumo
 single	fiction	text	only sumo
-single	field	class	only wikidata
 single	field	land	only sumo
-single	field	module	only wikidata
 single	field	physical-object	only wordnet
-single	field	ring	only wikidata
 single	field-of-study	information	only opencyc
 single	fig	body-part	only sumo
 single	fig	structure	only opencyc
@@ -4132,6 +4308,7 @@ single	fight	volition	only sumo
 single	file-cabinet	box	only opencyc
 single	file-cabinet	container	only opencyc
 single	file-cabinet	device	only opencyc
+single	file-cabinet	wardrobe	only wikidata
 single	film	celluloid	only sumo
 single	film	contract-condition	only sumo
 single	film	event	only wordnet
@@ -4139,7 +4316,6 @@ single	film	indication	only sumo
 single	film	line-of-text	only sumo
 single	film	surface	only opencyc
 single	film	text	only sumo
-single	filter	class	only wikidata
 single	finance	accomplishment	only sumo
 single	finance	activity	only sumo
 single	finance	exchange	only sumo
@@ -4159,6 +4335,7 @@ single	fire	event	only opencyc
 single	fire	situation	only opencyc
 single	fireman	attribute	only sumo
 single	fireman	property	only sumo
+single	fireman	worker	only wikidata
 single	firm	association	only sumo
 single	firm	collection	only sumo
 single	firm	team	only sumo
@@ -4169,6 +4346,7 @@ single	first-step	volition	only sumo
 single	fish	agent	only sumo
 single	fish	body	only sumo
 single	fish	species	only sumo
+single	fish-meat	food	only wikidata
 single	fisherman	attribute	only sumo
 single	fisherman	human	only opencyc
 single	fisherman	mammal	only opencyc
@@ -4215,9 +4393,11 @@ single	fix	society	only sumo
 single	fix	status	only sumo
 single	fix	tension	only sumo
 single	fix	way	only sumo
-single	flag	class	only wikidata
+single	flag	concept	only wikidata
 single	flag	decoration	only wordnet
+single	flag	sign	only wikidata
 single	flag	surface	only opencyc
+single	flag	symbol	only wikidata
 single	flak	accomplishment	only sumo
 single	flak	act	only sumo
 single	flak	activity	only sumo
@@ -4239,7 +4419,6 @@ single	flock	collection	only sumo
 single	flood	process	only wordnet
 single	floor	development	only sumo
 single	floor	surface	only opencyc
-single	flour	powder	only opencyc
 single	flower	agent	only sumo
 single	flower	species	only sumo
 single	flowerpot	device	only sumo
@@ -4247,7 +4426,6 @@ single	fluctuation	amateur	only sumo
 single	fluctuation	ambiance	only sumo
 single	fluctuation	circumstance	only sumo
 single	fluctuation	civilisation	only sumo
-single	fluctuation	class	only wikidata
 single	fluctuation	crowd	only sumo
 single	fluctuation	custom	only sumo
 single	fluctuation	danger	only sumo
@@ -4270,6 +4448,7 @@ single	fly	agent	only sumo
 single	fly	body	only sumo
 single	fly	species	only sumo
 single	fly	structure	only opencyc
+single	foe	acquaintance	only wikidata
 single	foe	attribute	only sumo
 single	foe	property	only sumo
 single	fog	cloud	only sumo
@@ -4290,6 +4469,7 @@ single	folk	species	only sumo
 single	folk	vertebrate	only sumo
 single	folklore	artifact	only sumo
 single	folklore	contract-condition	only sumo
+single	folklore	custom	only wikidata
 single	folklore	indication	only sumo
 single	folklore	line-of-text	only sumo
 single	folklore	myth	only sumo
@@ -4314,7 +4494,8 @@ single	foreman	structure	only opencyc
 single	foreman	vertebrate	only opencyc
 single	foreman	worker	only opencyc
 single	forest	countryside	only opencyc
-single	forest	environment	only opencyc
+single	forest	habitat	only wikidata
+single	forest	obstacle	only opencyc
 single	forestry	action	only opencyc
 single	forestry	cognition	only wordnet
 single	forestry	event	only opencyc
@@ -4391,6 +4572,7 @@ single	forum	accomplishment	only sumo
 single	forum	coming-together	only sumo
 single	forum	group	only wordnet
 single	forum	procedure	only sumo
+single	forum	public-square	only wikidata
 single	forum	volition	only sumo
 single	foundation	association	only sumo
 single	foundation	collection	only sumo
@@ -4409,7 +4591,11 @@ single	franchise	company	only sumo
 single	franchise	firm	only sumo
 single	franchise	structure	only opencyc
 single	franchise	team	only sumo
+single	frank	culture	only wikidata
+single	frank	custom	only wikidata
+single	frank	dish	only wikidata
 single	frank	material	only sumo
+single	frank	prepared-dish	only wikidata
 single	fraud	accomplishment	only sumo
 single	fraud	action	only opencyc
 single	fraud	procedure	only sumo
@@ -4421,6 +4607,12 @@ single	freckle	structure	only opencyc
 single	freedom	emotion	only opencyc
 single	freedom	normal	only sumo
 single	freedom	property	only sumo
+single	friend	acquaintance	only wikidata
+single	friend	agent	only wordnet
+single	friend	attribute	only sumo
+single	friend	organism	only wordnet
+single	friend	physical-object	only wordnet
+single	friend	property	only sumo
 single	friendship	accomplishment	only sumo
 single	friendship	act	only sumo
 single	friendship	activity	only sumo
@@ -4432,6 +4624,7 @@ single	frog	body	only sumo
 single	frog	species	only sumo
 single	frog	structure	only opencyc
 single	fruit	body-part	only sumo
+single	fuel	chemical	only wikidata
 single	fuel	material	only sumo
 single	fun	accomplishment	only sumo
 single	fun	emotion	only opencyc
@@ -4439,6 +4632,7 @@ single	fun	procedure	only sumo
 single	fun	satisfaction	only opencyc
 single	fun	volition	only sumo
 single	fundamental-law	law	only opencyc
+single	fundamental-law	structure	only wikidata
 single	funeral	accomplishment	only sumo
 single	funeral	act	only sumo
 single	funeral	activity	only sumo
@@ -4453,6 +4647,8 @@ single	fungus	structure	only opencyc
 single	fur	artifact	only opencyc
 single	fur	body-part	only opencyc
 single	fur	device	only opencyc
+single	fur	hair	only wikidata
+single	fur	skin	only wikidata
 single	fur	structure	only opencyc
 single	furniture	information	only yago
 single	fury	artifact	only opencyc
@@ -4465,6 +4661,7 @@ single	gallery	agent	only sumo
 single	gallery	association	only sumo
 single	gallery	collection	only sumo
 single	gallery	group	only sumo
+single	gallery	museum	only wikidata
 single	gallery	organization	only sumo
 single	gallery	structure	only wordnet
 single	gallery	team	only sumo
@@ -4485,6 +4682,7 @@ single	garage	device	only opencyc
 single	garden-bed	land	only sumo
 single	garden-bed	physical-object	only wordnet
 single	garden-bed	yard	only sumo
+single	garlic	vegetable	only wikidata
 single	gash	event	only sumo
 single	gasoline	chemical-solution	only sumo
 single	gate	device	only sumo
@@ -4493,6 +4691,8 @@ single	gaze	perception	only sumo
 single	gaze	procedure	only sumo
 single	gaze	volition	only sumo
 single	gear	component	only sumo
+single	general	employee	only wikidata
+single	general	warrior	only wikidata
 single	genius	body	only sumo
 single	genius	populace	only sumo
 single	genius	self	only sumo
@@ -4504,6 +4704,7 @@ single	gentleman	self	only sumo
 single	gentleman	species	only sumo
 single	geographic-pole	physical-object	only wordnet
 single	geography	cognition	only wordnet
+single	geography	research	only wikidata
 single	gesture	accomplishment	only sumo
 single	gesture	activity	only sumo
 single	gesture	communication	only sumo
@@ -4515,6 +4716,7 @@ single	gesture	situation	only opencyc
 single	gesture	volition	only sumo
 single	ghost	information	only yago
 single	ghost	self	only sumo
+single	ghostwriter	artist	only wikidata
 single	giant	body	only sumo
 single	giant	information	only yago
 single	giant	populace	only sumo
@@ -4526,7 +4728,9 @@ single	gift	act	only sumo
 single	gift	activity	only sumo
 single	gift	procedure	only sumo
 single	gift	volition	only sumo
+single	girlfriend	acquaintance	only wikidata
 single	girlfriend	body	only sumo
+single	girlfriend	friend	only wikidata
 single	girlfriend	lady	only sumo
 single	girlfriend	populace	only sumo
 single	girlfriend	self	only sumo
@@ -4578,7 +4782,9 @@ single	glory	society	only sumo
 single	glory	tension	only sumo
 single	glory	way	only sumo
 single	glove	device	only opencyc
+single	glove	equipment	only wikidata
 single	glove	fashion	only sumo
+single	glove	tool	only wikidata
 single	glow	luminosity	only sumo
 single	glow	process	only wordnet
 single	glow	situation	only opencyc
@@ -4653,6 +4859,8 @@ single	government	collection	only sumo
 single	government	team	only sumo
 single	government-administrator	attribute	only sumo
 single	government-administrator	property	only sumo
+single	government-cabinet	committee	only wordnet
+single	government-cabinet	group	only wordnet
 single	governor	adult	only opencyc
 single	governor	executive	only opencyc
 single	governor	human	only opencyc
@@ -4661,7 +4869,9 @@ single	governor	structure	only opencyc
 single	governor	vertebrate	only opencyc
 single	governor	worker	only opencyc
 single	gown	device	only opencyc
+single	gown	equipment	only wikidata
 single	gown	fashion	only sumo
+single	gown	tool	only wikidata
 single	grace	amateur	only sumo
 single	grace	ambiance	only sumo
 single	grace	circumstance	only sumo
@@ -4675,14 +4885,20 @@ single	grace	lap	only sumo
 single	grace	literary-works	only sumo
 single	grace	normal	only sumo
 single	grace	practice	only sumo
+single	grace	prayer	only wikidata
 single	grace	property	only sumo
 single	grace	society	only sumo
 single	grace	status	only sumo
 single	grace	tension	only sumo
+single	grace	text	only wikidata
 single	grace	way	only sumo
 single	gradation	property	only sumo
+single	grain	seed	only wikidata
 single	grammar	cognition	only wordnet
+single	grammar	social-science	only wikidata
 single	grandfather	attribute	only sumo
+single	grandfather	father	only wikidata
+single	grandfather	parent	only wikidata
 single	grandfather	property	only sumo
 single	grandma	attribute	only sumo
 single	grandma	property	only sumo
@@ -4696,16 +4912,21 @@ single	graphics	indication	only sumo
 single	graphics	information	only sumo
 single	grass	agent	only sumo
 single	grass	species	only sumo
+single	gratuity	contribution	only wikidata
+single	gratuity	gift	only wikidata
 single	gratuity	quantity	only sumo
+single	grave	commemoration	only wikidata
 single	grave	container	only opencyc
 single	grave	development	only sumo
 single	grave	device	only opencyc
+single	grave	memorial	only wikidata
 single	graveness	inclination	only sumo
 single	graveness	mentality	only sumo
 single	graveness	property	only sumo
 single	greenhouse	container	only opencyc
 single	greenhouse	development	only sumo
 single	greenhouse	device	only opencyc
+single	greenhouse	workplace	only wikidata
 single	greeting	accomplishment	only sumo
 single	greeting	act	only sumo
 single	greeting	action	only opencyc
@@ -4726,6 +4947,7 @@ single	grimace	motion	only sumo
 single	grimace	situation	only opencyc
 single	grinder	artifact	only opencyc
 single	grinder	device	only opencyc
+single	grinder	dish	only wikidata
 single	grip	action	only opencyc
 single	grip	amateur	only sumo
 single	grip	ambiance	only sumo
@@ -4753,6 +4975,7 @@ single	grocery-store	company	only sumo
 single	grocery-store	firm	only sumo
 single	grocery-store	shop	only sumo
 single	grocery-store	team	only sumo
+single	grocery-store	workplace	only wikidata
 single	guarantee	contract	only sumo
 single	guarantee	legal-document	only sumo
 single	guard	athlete	only opencyc
@@ -4767,6 +4990,7 @@ single	guard-unit	collection	only sumo
 single	guerrilla	adult	only opencyc
 single	guerrilla	body	only sumo
 single	guerrilla	populace	only sumo
+single	guerrilla	professional	only opencyc
 single	guerrilla	self	only sumo
 single	guerrilla	species	only sumo
 single	guerrilla	structure	only opencyc
@@ -4781,6 +5005,7 @@ single	guidance	event	only sumo
 single	guidance	procedure	only sumo
 single	guidance	volition	only sumo
 single	guide	attribute	only sumo
+single	guide	expert	only wikidata
 single	guide	information	only schemaorg
 single	guide	property	only sumo
 single	guidebook	component	only sumo
@@ -4846,14 +5071,20 @@ single	hallway	development	only sumo
 single	hallway	device	only opencyc
 single	hallway	room	only sumo
 single	hallway	route	only opencyc
+single	hallway	workplace	only wikidata
 single	ham	artifact	only opencyc
+single	ham	flesh	only wikidata
 single	ham	material	only sumo
+single	ham	tissue	only wikidata
 single	hand	accomplishment	only sumo
 single	hand	body-part	only opencyc
 single	hand	cooperation	only sumo
 single	hand	procedure	only sumo
 single	hand	structure	only opencyc
 single	hand	volition	only sumo
+single	handbag	equipment	only wikidata
+single	handbag	housing	only wikidata
+single	handbag	tool	only wikidata
 single	harmony	amateur	only sumo
 single	harmony	ambiance	only sumo
 single	harmony	circumstance	only sumo
@@ -4874,9 +5105,13 @@ single	harmony	tension	only sumo
 single	harmony	way	only sumo
 single	hat	cap	only sumo
 single	hat	device	only opencyc
+single	hat	equipment	only wikidata
 single	hat	fashion	only sumo
+single	hat	tool	only wikidata
 single	hay	material	only sumo
+single	hayfield	environment	only wikidata
 single	hayfield	field	only sumo
+single	hayfield	habitat	only wikidata
 single	hayfield	land	only sumo
 single	hayfield	physical-object	only wordnet
 single	hayfield	yard	only sumo
@@ -4907,15 +5142,16 @@ single	heated-exchange	procedure	only sumo
 single	heated-exchange	volition	only sumo
 single	heated-exchange	war	only sumo
 single	heating-system	device	only sumo
+single	hedge	obstacle	only wikidata
 single	hedge	row	only opencyc
 single	heel	structure	only opencyc
 single	heir	attribute	only sumo
 single	heir	property	only sumo
 single	helicopter	container	only opencyc
 single	helmet	device	only opencyc
-single	hemisphere	class	only wikidata
+single	helmet	equipment	only wikidata
+single	helmet	tool	only wikidata
 single	hemisphere	physical-object	only wordnet
-single	hemisphere	shape	only wikidata
 single	hen	agent	only sumo
 single	hen	body	only sumo
 single	hen	species	only sumo
@@ -4929,7 +5165,6 @@ single	heroin	artifact	only opencyc
 single	heroin	medicine	only opencyc
 single	hide	body-part	only sumo
 single	hierarchy	association	only sumo
-single	hierarchy	class	only wikidata
 single	hierarchy	collection	only sumo
 single	hierarchy	team	only sumo
 single	hill	landform	only yago
@@ -5014,8 +5249,13 @@ single	horse	structure	only opencyc
 single	horseshoe	device	only opencyc
 single	hospital	address	only sumo
 single	hospital	development	only sumo
+single	hospital	workplace	only wikidata
 single	hostage	attribute	only sumo
+single	hostage	inhabitant	only wikidata
 single	hostage	property	only sumo
+single	hostel	occupation	only wikidata
+single	hostel	restaurant	only wikidata
+single	hostel	workplace	only wikidata
 single	hostility	amateur	only sumo
 single	hostility	ambiance	only sumo
 single	hostility	circumstance	only sumo
@@ -5035,6 +5275,7 @@ single	hostility	society	only sumo
 single	hostility	status	only sumo
 single	hostility	tension	only sumo
 single	hostility	way	only sumo
+single	hotel	occupation	only wikidata
 single	house	address	only sumo
 single	house	container	only opencyc
 single	house	development	only sumo
@@ -5044,10 +5285,14 @@ single	houseplant	species	only sumo
 single	housing	action	only opencyc
 single	housing	building	only sumo
 single	housing	development	only sumo
+single	housing	equipment	only wikidata
 single	housing	event	only opencyc
 single	housing	situation	only opencyc
-single	hovel	building	only sumo
+single	housing	tool	only wikidata
 single	hovel	development	only sumo
+single	hovel	hotel	only wikidata
+single	hovel	occupation	only wikidata
+single	hovel	organization	only wikidata
 single	human	body	only sumo
 single	human	species	only sumo
 single	human	structure	only opencyc
@@ -5070,12 +5315,16 @@ single	humor	property	only sumo
 single	hunt	accomplishment	only sumo
 single	hunt	procedure	only sumo
 single	hunt	volition	only sumo
+single	hunter	athlete	only wikidata
 single	hunter	body	only sumo
 single	hunter	populace	only sumo
 single	hunter	self	only sumo
 single	hunter	species	only sumo
 single	hunter	structure	only opencyc
+single	hunting-expedition	hunt	only wikidata
+single	hunting-expedition	motion	only wikidata
 single	hunting-expedition	visit	only sumo
+single	hunting-expedition	voyage	only wikidata
 single	husband	attribute	only sumo
 single	husband	property	only sumo
 single	hybrid	agent	only sumo
@@ -5084,9 +5333,10 @@ single	hypothesis	context	only opencyc
 single	hypothesis	information	only opencyc
 single	ice	compound	only sumo
 single	ice	material	only sumo
-single	ice	water	only sumo
 single	ice-cream	artifact	only opencyc
 single	ice-cream	dairy-product	only opencyc
+single	ice-cream	dish	only wikidata
+single	ice-cream	prepared-dish	only wikidata
 single	idea	information	only opencyc
 single	ideal-value	amateur	only sumo
 single	ideal-value	ambiance	only sumo
@@ -5109,7 +5359,6 @@ single	ideal-value	tension	only sumo
 single	ideal-value	way	only sumo
 single	identicalness	property	only sumo
 single	identification	physical-object	only sumo
-single	identity	class	only wikidata
 single	identity	inclination	only sumo
 single	identity	mentality	only sumo
 single	identity	property	only sumo
@@ -5123,11 +5372,9 @@ single	illness	event	only opencyc
 single	illness	property	only sumo
 single	illness	situation	only opencyc
 single	illustration	event	only opencyc
-single	illustration	image	only opencyc
 single	illustration	light	only opencyc
 single	illustration	signal	only opencyc
 single	illustration	situation	only opencyc
-single	image	class	only wikidata
 single	image	physical-object	only wordnet
 single	immigrant	attribute	only sumo
 single	immigrant	human	only opencyc
@@ -5159,7 +5406,6 @@ single	importance	amateur	only sumo
 single	importance	ambiance	only sumo
 single	importance	circumstance	only sumo
 single	importance	civilisation	only sumo
-single	importance	class	only wikidata
 single	importance	crowd	only sumo
 single	importance	custom	only sumo
 single	importance	danger	only sumo
@@ -5167,7 +5413,6 @@ single	importance	expert	only sumo
 single	importance	freedom	only sumo
 single	importance	lap	only sumo
 single	importance	literary-works	only sumo
-single	importance	measure	only wikidata
 single	importance	normal	only sumo
 single	importance	practice	only sumo
 single	importance	property	only sumo
@@ -5233,7 +5478,6 @@ single	indemnity	condition	only wordnet
 single	indemnity	property	only sumo
 single	indemnity	safety	only wordnet
 single	indemnity	state	only wordnet
-single	index	number	only wikidata
 single	indication	physical-object	only sumo
 single	indicator-needle	component	only sumo
 single	indicator-needle	mechanism	only sumo
@@ -5260,8 +5504,12 @@ single	individual	species	only sumo
 single	industry	accomplishment	only sumo
 single	industry	activity	only sumo
 single	industry	creation	only sumo
+single	industry	occupation	only wikidata
+single	industry	organization	only wikidata
 single	industry	procedure	only sumo
 single	industry	volition	only sumo
+single	industry	workplace	only wikidata
+single	industry	workshop	only wikidata
 single	influence	amateur	only sumo
 single	influence	ambiance	only sumo
 single	influence	circumstance	only sumo
@@ -5292,7 +5540,6 @@ single	inhibition	information	only sumo
 single	inhibition	procedure	only sumo
 single	inhibition	volition	only sumo
 single	initial	signal	only wordnet
-single	injection	class	only wikidata
 single	injection	locating	only sumo
 single	injection	visit	only sumo
 single	injury	event	only sumo
@@ -5436,12 +5683,14 @@ single	invoice	news	only sumo
 single	invoice	note	only sumo
 single	invoice	physical-object	only sumo
 single	invoice	text	only sumo
+single	iron	drug	only wikidata
+single	iron	medication	only wikidata
 single	island	yard	only sumo
 single	isolation	event	only opencyc
 single	isolation	property	only sumo
 single	isolation	situation	only opencyc
 single	isotropy	property	only sumo
-single	issue	class	only wikidata
+single	issue	text	only wikidata
 single	item	information	only sumo
 single	item	line-of-text	only sumo
 single	item	remark	only sumo
@@ -5449,25 +5698,35 @@ single	item	sentence	only sumo
 single	ivory	body-part	only sumo
 single	ivory	bone	only sumo
 single	ivory	physical-object	only sumo
+single	ivory	tooth	only wikidata
 single	jacket	device	only opencyc
+single	jacket	equipment	only wikidata
 single	jacket	fashion	only sumo
+single	jacket	tool	only wikidata
 single	jail-cell	cavity	only opencyc
 single	jail-cell	container	only opencyc
 single	jail-cell	development	only sumo
 single	jail-cell	device	only opencyc
+single	jail-cell	prison	only wikidata
 single	jail-cell	structure	only wordnet
 single	jam	artifact	only opencyc
 single	jam	material	only sumo
 single	jar	device	only opencyc
+single	jar	equipment	only wikidata
+single	jar	tool	only wikidata
 single	jaw	structure	only opencyc
+single	jean	equipment	only wikidata
 single	jean	fashion	only sumo
+single	jean	tool	only wikidata
 single	jelly	artifact	only opencyc
 single	jelly	jam	only opencyc
 single	jersey	device	only opencyc
+single	jersey	equipment	only wikidata
 single	jersey	fashion	only sumo
-single	jet	class	only wikidata
+single	jersey	tool	only wikidata
+single	jersey	top	only wikidata
+single	jester	artist	only wikidata
 single	jewel	material	only sumo
-single	jewel	mineral	only sumo
 single	jewel	substance	only sumo
 single	job	accomplishment	only sumo
 single	job	exchange	only sumo
@@ -5475,7 +5734,6 @@ single	job	interaction	only sumo
 single	job	procedure	only sumo
 single	job	transaction	only sumo
 single	job	volition	only sumo
-single	jockey	athlete	only opencyc
 single	jockey	attribute	only sumo
 single	jockey	human	only opencyc
 single	jockey	mammal	only opencyc
@@ -5512,6 +5770,7 @@ single	joy	artifact	only opencyc
 single	judge	adult	only opencyc
 single	judge	human	only opencyc
 single	judge	mammal	only opencyc
+single	judge	specialist	only wikidata
 single	judge	structure	only opencyc
 single	judge	vertebrate	only opencyc
 single	judgement	accomplishment	only sumo
@@ -5549,6 +5808,7 @@ single	judicial-opinion	volition	only sumo
 single	jump	increase	only sumo
 single	junction	physical-object	only wordnet
 single	jury	collection	only sumo
+single	jury	organization	only wikidata
 single	jury	people	only sumo
 single	jury	school-class	only sumo
 single	jury	structure	only opencyc
@@ -5580,6 +5840,7 @@ single	justification	thinking	only sumo
 single	justification	volition	only sumo
 single	keep	event	only sumo
 single	kettle	cooking-pan	only sumo
+single	key	mechanism	only wikidata
 single	kidney	structure	only opencyc
 single	killer	animal	only sumo
 single	killer	body	only sumo
@@ -5589,6 +5850,7 @@ single	killer	populace	only sumo
 single	killer	self	only sumo
 single	killer	species	only sumo
 single	killer	vertebrate	only sumo
+single	killer	wrongdoer	only wikidata
 single	kin	collection	only sumo
 single	kin	people	only sumo
 single	kin	school-class	only sumo
@@ -5609,14 +5871,15 @@ single	kitchen	device	only opencyc
 single	kitchen	structure	only wordnet
 single	kite	device	only sumo
 single	knee	structure	only opencyc
+single	knife	equipment	only wikidata
 single	knife	hardware	only opencyc
 single	lab	artifact	only sumo
 single	lab	development	only sumo
 single	lab	physical-object	only wordnet
-single	label	artifact	only opencyc
+single	lab	room	only wikidata
+single	lab	study	only wikidata
 single	label	image	only opencyc
 single	label	indication	only sumo
-single	label	physical-object	only sumo
 single	label	signal	only wordnet
 single	labor	accomplishment	only sumo
 single	labor	action	only opencyc
@@ -5632,8 +5895,8 @@ single	lace	information	only yago
 single	lace	surface	only opencyc
 single	lack	property	only sumo
 single	ladder	device	only opencyc
+single	ladder	equipment	only wikidata
 single	ladder	route	only opencyc
-single	ladder	tool	only opencyc
 single	lady	body	only sumo
 single	lady	populace	only sumo
 single	lady	self	only sumo
@@ -5644,6 +5907,8 @@ single	lamb	livestock	only sumo
 single	lamb	species	only sumo
 single	lamb	structure	only opencyc
 single	lamb	virgin	only opencyc
+single	landed-estate	farm	only wikidata
+single	landed-estate	workplace	only wikidata
 single	landlord	attribute	only sumo
 single	landlord	human	only opencyc
 single	landlord	mammal	only opencyc
@@ -5682,10 +5947,13 @@ single	latent-hostility	society	only sumo
 single	latent-hostility	status	only sumo
 single	latent-hostility	tension	only sumo
 single	latent-hostility	way	only sumo
+single	laundry	care	only wikidata
 single	laundry	fabric	only sumo
+single	laundry	service	only wikidata
 single	law	cognition	only wordnet
 single	law	humanities	only wordnet
 single	law	information	only opencyc
+single	law	social-science	only wikidata
 single	lawn	land	only sumo
 single	lawn	physical-object	only wordnet
 single	lawn	yard	only sumo
@@ -5700,9 +5968,9 @@ single	lawsuit	volition	only sumo
 single	lawsuit	war	only sumo
 single	lawyer	human	only opencyc
 single	lawyer	mammal	only opencyc
+single	lawyer	specialist	only wikidata
 single	lawyer	structure	only opencyc
 single	lawyer	vertebrate	only opencyc
-single	lawyer	worker	only opencyc
 single	layer	physical-object	only wordnet
 single	lead	attribute	only sumo
 single	lead	metal	only opencyc
@@ -5739,10 +6007,10 @@ single	lecture	acquired-knowledge	only sumo
 single	lecture	education	only sumo
 single	lecture	information	only opencyc
 single	lecture	leader	only sumo
+single	lecture	presentation	only wikidata
 single	lecture	procedure	only sumo
 single	lecture	volition	only sumo
 single	left	physical-object	only wordnet
-single	leftovers	food	only sumo
 single	leg-of-meat	material	only sumo
 single	legal-action	accomplishment	only sumo
 single	legal-action	activity	only sumo
@@ -5802,6 +6070,7 @@ single	liability	property	only sumo
 single	liberty	normal	only sumo
 single	liberty	property	only sumo
 single	library	development	only sumo
+single	library	room	only wikidata
 single	license	artifact	only sumo
 single	license	contract-condition	only sumo
 single	license	indication	only sumo
@@ -5814,12 +6083,12 @@ single	lift	transport	only sumo
 single	lift	visit	only sumo
 single	light	event	only opencyc
 single	light	situation	only opencyc
-single	light-bulb	lamp	only opencyc
+single	lighter	equipment	only wikidata
+single	lighter	tool	only wikidata
 single	lily	agent	only sumo
 single	lily	species	only sumo
 single	lily	structure	only opencyc
 single	limb	structure	only opencyc
-single	limit	class	only wikidata
 single	limit	physical-object	only wordnet
 single	limitation	amateur	only sumo
 single	limitation	ambiance	only sumo
@@ -5851,6 +6120,7 @@ single	linen	device	only opencyc
 single	linen	fabric	only sumo
 single	linen	surface	only opencyc
 single	linguistics	cognition	only wordnet
+single	linguistics	social-science	only wikidata
 single	link	component	only sumo
 single	link	mechanism	only sumo
 single	lion	agent	only sumo
@@ -5889,6 +6159,7 @@ single	loan	act	only sumo
 single	loan	activity	only sumo
 single	loan	event	only sumo
 single	loan	procedure	only sumo
+single	loan	transaction	only wikidata
 single	loan	volition	only sumo
 single	lobby	artifact	only opencyc
 single	lobby	association	only sumo
@@ -5897,7 +6168,9 @@ single	lobby	collection	only sumo
 single	lobby	container	only opencyc
 single	lobby	device	only opencyc
 single	lobby	team	only sumo
+single	lobby	workplace	only wikidata
 single	locating	visit	only sumo
+single	lock	mechanism	only wikidata
 single	locomotive	land-vehicle	only opencyc
 single	log-cabin	address	only sumo
 single	log-cabin	development	only sumo
@@ -5923,6 +6196,7 @@ single	loot	volition	only sumo
 single	looting	accomplishment	only sumo
 single	looting	action	only opencyc
 single	looting	activity	only sumo
+single	looting	crime	only wikidata
 single	looting	procedure	only sumo
 single	looting	situation	only opencyc
 single	looting	volition	only sumo
@@ -5992,11 +6266,13 @@ single	maestro	structure	only opencyc
 single	maestro	vertebrate	only opencyc
 single	maestro	worker	only opencyc
 single	magazine	contract-condition	only sumo
+single	magazine	equipment	only wikidata
 single	magazine	indication	only sumo
 single	magazine	line-of-text	only sumo
 single	magazine	organization	only yago
 single	magazine	series	only sumo
 single	magazine	text	only sumo
+single	magazine	tool	only wikidata
 single	magic-trick	accomplishment	only sumo
 single	magic-trick	procedure	only sumo
 single	magic-trick	volition	only sumo
@@ -6016,8 +6292,8 @@ single	mailman	structure	only opencyc
 single	mailman	vertebrate	only opencyc
 single	makeup	material	only sumo
 single	makeup	substance	only sumo
-single	male-child	animal	only sumo
 single	male-child	body	only sumo
+single	male-child	child	only wikidata
 single	male-child	human	only sumo
 single	male-child	mammal	only sumo
 single	male-child	man	only sumo
@@ -6079,21 +6355,19 @@ single	manufacture	procedure	only sumo
 single	manufacture	volition	only sumo
 single	manufacturer	attribute	only sumo
 single	manufacturer	property	only sumo
+single	manus	leg	only wikidata
+single	manus	limb	only wikidata
 single	manuscript	artifact	only sumo
-single	manuscript	class	only wikidata
 single	manuscript	contract-condition	only sumo
 single	manuscript	indication	only sumo
 single	manuscript	line-of-text	only sumo
 single	manuscript	physical-object	only sumo
-single	manuscript	text	only sumo
 single	map	physical-object	only wordnet
 single	marathon	accomplishment	only sumo
 single	marathon	act	only sumo
 single	marathon	activity	only sumo
-single	marathon	game	only sumo
 single	marathon	pastime-game	only sumo
 single	marathon	procedure	only sumo
-single	marathon	sport	only sumo
 single	marathon	volition	only sumo
 single	marathon	war	only sumo
 single	march	accomplishment	only sumo
@@ -6113,6 +6387,7 @@ single	marketing	interaction	only sumo
 single	marketing	procedure	only sumo
 single	marketing	situation	only opencyc
 single	marketing	volition	only sumo
+single	marriage	ceremony	only wikidata
 single	marriage	contract	only sumo
 single	marriage	legal-document	only sumo
 single	marriage-proposal	accomplishment	only sumo
@@ -6128,22 +6403,30 @@ single	married-couple	couple	only opencyc
 single	married-couple	legal-document	only sumo
 single	married-couple	pair	only opencyc
 single	marsh	body-of-water	only yago
-single	marsh	environment	only opencyc
+single	marsh	habitat	only wikidata
 single	marsh	landform	only yago
 single	marsh	place	only yago
 single	mask	device	only opencyc
+single	mask	equipment	only wikidata
 single	mask	fashion	only sumo
+single	mask	tool	only wikidata
 single	master-of-ceremonies	attribute	only sumo
 single	master-of-ceremonies	property	only sumo
 single	match	accomplishment	only sumo
 single	match	act	only sumo
 single	match	activity	only sumo
+single	match	artifact	only wikidata
+single	match	equipment	only wikidata
 single	match	game	only sumo
 single	match	pastime-game	only sumo
+single	match	physical-object	only wikidata
 single	match	procedure	only sumo
 single	match	sport	only sumo
+single	match	tool	only wikidata
 single	match	volition	only sumo
 single	match	war	only sumo
+single	matchstick	equipment	only wikidata
+single	matchstick	tool	only wikidata
 single	mathematics	cognition	only wordnet
 single	matrimony	contract	only sumo
 single	matrimony	legal-document	only sumo
@@ -6159,10 +6442,18 @@ single	maze	development	only sumo
 single	maze	game	only yago
 single	maze	information	only yago
 single	maze	puzzle	only opencyc
+single	meal	commodity	only wikidata
 single	meal	event	only yago
+single	meal	grass	only wikidata
+single	meal	organism	only wikidata
+single	meal	physical-object	only wikidata
+single	meal	plant	only wikidata
 single	means	device	only sumo
-single	measure	class	only wikidata
+single	measuring-stick	equipment	only wikidata
+single	measuring-stick	tool	only wikidata
+single	meat	flesh	only wikidata
 single	meat	material	only sumo
+single	meat	tissue	only wikidata
 single	medication	agent	only wordnet
 single	medication	material	only sumo
 single	medicine	cognition	only wordnet
@@ -6223,7 +6514,9 @@ single	mental-image	information	only sumo
 single	mentality	attribute	only sumo
 single	mentality	property	only sumo
 single	merchant	attribute	only sumo
+single	merchant	businessman	only wikidata
 single	merchant	property	only sumo
+single	merchant	worker	only wikidata
 single	message	artifact	only sumo
 single	message	contract-condition	only sumo
 single	message	data-file	only sumo
@@ -6235,14 +6528,19 @@ single	message	physical-object	only sumo
 single	message	text	only sumo
 single	method	measure	only sumo
 single	method	routine	only sumo
+single	method	textbook	only wikidata
 single	methodology	measure	only sumo
 single	methodology	routine	only sumo
 single	microorganism	agent	only sumo
 single	microorganism	species	only sumo
 single	microorganism	structure	only opencyc
 single	microphone	component	only sumo
-single	microphone	detector	only opencyc
+single	microphone	equipment	only wikidata
+single	microphone	hardware	only wikidata
+single	microphone	interface	only wikidata
 single	microphone	mechanism	only sumo
+single	microphone	musical-instrument	only wikidata
+single	microphone	tool	only wikidata
 single	military-action	accomplishment	only sumo
 single	military-action	action	only opencyc
 single	military-action	activity	only sumo
@@ -6267,6 +6565,8 @@ single	military-strike	volition	only sumo
 single	military-unit	association	only sumo
 single	military-unit	collection	only sumo
 single	military-unit	team	only sumo
+single	milk	fluid	only wikidata
+single	milk	liquid	only wikidata
 single	milk	material	only sumo
 single	mind	body-part	only sumo
 single	mind	organ	only sumo
@@ -6285,6 +6585,7 @@ single	minister	adult	only opencyc
 single	minister	attribute	only sumo
 single	minister	human	only opencyc
 single	minister	mammal	only opencyc
+single	minister	professional	only opencyc
 single	minister	property	only sumo
 single	minister	structure	only opencyc
 single	minister	vertebrate	only opencyc
@@ -6376,12 +6677,13 @@ single	mole	species	only sumo
 single	mole	structure	only opencyc
 single	mollusc	agent	only sumo
 single	mollusc	body	only sumo
+single	mollusc	food	only wikidata
 single	mollusc	species	only sumo
-single	momentum	class	only wikidata
 single	momentum	quantity	only sumo
 single	momentum	vector	only sumo
 single	monastery	development	only sumo
 single	monastery	organization	only yago
+single	monastery	settlement	only wikidata
 single	money	cash	only sumo
 single	money	contract-condition	only sumo
 single	money	indication	only sumo
@@ -6421,6 +6723,7 @@ single	mortgage	information	only opencyc
 single	mosaic	indication	only sumo
 single	mosque	container	only opencyc
 single	mosque	device	only opencyc
+single	mosque	organization	only wikidata
 single	mosque	temple	only opencyc
 single	mosquito	agent	only sumo
 single	mosquito	body	only sumo
@@ -6459,6 +6762,9 @@ single	movement	association	only sumo
 single	movement	collection	only sumo
 single	movement	organization	only sumo
 single	movement	team	only sumo
+single	mug	cup	only wikidata
+single	mug	equipment	only wikidata
+single	mug	tool	only wikidata
 single	multimedia	artifact	only sumo
 single	multimedia	contract-condition	only sumo
 single	multimedia	indication	only sumo
@@ -6475,11 +6781,14 @@ single	museum	building	only sumo
 single	museum	development	only sumo
 single	museum	structure	only opencyc
 single	mushroom	structure	only opencyc
+single	music	entertainment	only wikidata
 single	music	signal	only opencyc
 single	music	situation	only opencyc
 single	music-band	collection	only sumo
 single	music-band	people	only sumo
 single	music-band	school-class	only sumo
+single	musical-instrument	equipment	only wikidata
+single	musical-instrument	tool	only wikidata
 single	musical-note	indication	only sumo
 single	musical-note	physical-object	only sumo
 single	musician	attribute	only sumo
@@ -6514,6 +6823,10 @@ single	myth	indication	only sumo
 single	myth	line-of-text	only sumo
 single	myth	physical-object	only sumo
 single	myth	text	only sumo
+single	nail	equipment	only wikidata
+single	nail	tool	only wikidata
+single	name	indication	only sumo
+single	name	physical-object	only sumo
 single	narrative	accomplishment	only sumo
 single	narrative	act	only sumo
 single	narrative	activity	only sumo
@@ -6542,14 +6855,19 @@ single	navy	structure	only opencyc
 single	navy	team	only sumo
 single	neck	structure	only opencyc
 single	necktie	device	only opencyc
+single	necktie	equipment	only wikidata
 single	necktie	fashion	only sumo
+single	necktie	tool	only wikidata
 single	need	property	only sumo
 single	needle	cylinder	only opencyc
+single	needle	equipment	only wikidata
 single	needle	shaft	only opencyc
+single	needle	tool	only wikidata
 single	negligence	inclination	only sumo
 single	negligence	mentality	only sumo
 single	negligence	property	only sumo
 single	neighbor	attribute	only sumo
+single	neighbor	inhabitant	only wikidata
 single	neighbor	property	only sumo
 single	nephew	attribute	only sumo
 single	nephew	property	only sumo
@@ -6564,7 +6882,6 @@ single	net	filter	only opencyc
 single	newcomer	attribute	only sumo
 single	newcomer	property	only sumo
 single	news	artifact	only sumo
-single	news	class	only wikidata
 single	news	contract-condition	only sumo
 single	news	indication	only sumo
 single	news	line-of-text	only sumo
@@ -6591,6 +6908,10 @@ single	newspaper	contract-condition	only sumo
 single	newspaper	indication	only sumo
 single	newspaper	line-of-text	only sumo
 single	newspaper	text	only sumo
+single	nightmare	cognition	only wordnet
+single	nightmare	event	only sumo
+single	nightmare	imagination	only wordnet
+single	nightmare	information	only opencyc
 single	nomination	accomplishment	only sumo
 single	nomination	activity	only sumo
 single	nomination	communication	only sumo
@@ -6620,9 +6941,7 @@ single	nonsense	status	only sumo
 single	nonsense	tension	only sumo
 single	nonsense	way	only sumo
 single	normal	attribute	only sumo
-single	normal	class	only wikidata
 single	normal	property	only sumo
-single	normal	shape	only wikidata
 single	nose	detector	only opencyc
 single	nose	structure	only opencyc
 single	note	artifact	only sumo
@@ -6685,6 +7004,7 @@ single	nun	collection	only sumo
 single	nun	group	only sumo
 single	nun	human	only opencyc
 single	nun	mammal	only opencyc
+single	nun	monk	only wikidata
 single	nun	organization	only sumo
 single	nun	people	only sumo
 single	nun	school-class	only sumo
@@ -6718,8 +7038,11 @@ single	objection	procedure	only sumo
 single	objection	volition	only sumo
 single	observation	remark	only opencyc
 single	observation	statement	only opencyc
+single	obstacle	artifact	only wordnet
+single	obstacle	event	only sumo
 single	occupation	action	only opencyc
 single	occupation	attribute	only sumo
+single	occupation	organization	only wikidata
 single	occupation	property	only sumo
 single	occupation	situation	only opencyc
 single	ocean	sea	only opencyc
@@ -6740,6 +7063,7 @@ single	office	development	only sumo
 single	office	device	only opencyc
 single	office	place	only yago
 single	office	suite	only opencyc
+single	office	workplace	only wikidata
 single	official	animal	only sumo
 single	official	body	only sumo
 single	official	human	only sumo
@@ -6784,6 +7108,7 @@ single	opera	folklore	only sumo
 single	opera	indication	only sumo
 single	opera	legend	only sumo
 single	opera	line-of-text	only sumo
+single	opera	musical-composition	only wikidata
 single	opera	myth	only sumo
 single	opera	physical-object	only sumo
 single	opera	play	only yago
@@ -6792,7 +7117,6 @@ single	operation	accomplishment	only sumo
 single	operation	action	only opencyc
 single	operation	situation	only opencyc
 single	operation	surgery	only opencyc
-single	operation	therapy	only sumo
 single	operation	volition	only sumo
 single	opinion-poll	accomplishment	only sumo
 single	opinion-poll	act	only sumo
@@ -6846,6 +7170,7 @@ single	option	society	only sumo
 single	option	status	only sumo
 single	option	tension	only sumo
 single	option	way	only sumo
+single	orbit	curve	only wikidata
 single	orbit	physical-object	only wordnet
 single	orchestra	collection	only sumo
 single	orchestra	people	only sumo
@@ -6934,6 +7259,8 @@ single	pain-in-the-neck	self	only sumo
 single	pain-in-the-neck	species	only sumo
 single	pain-in-the-neck	vertebrate	only sumo
 single	painfulness	property	only sumo
+single	painting	art	only wikidata
+single	painting	artistic-creation	only wikidata
 single	painting	indication	only sumo
 single	pair	collection	only sumo
 single	pair	people	only sumo
@@ -6953,7 +7280,6 @@ single	parade	ritual	only opencyc
 single	parade	situation	only opencyc
 single	parade	social-occasion	only opencyc
 single	paragraph	artifact	only sumo
-single	paragraph	class	only wikidata
 single	paragraph	contract-condition	only sumo
 single	paragraph	indication	only sumo
 single	paragraph	line-of-text	only sumo
@@ -7014,6 +7340,7 @@ single	party	accomplishment	only sumo
 single	party	act	only sumo
 single	party	activity	only sumo
 single	party	coming-together	only sumo
+single	party	person	only wikidata
 single	party	procedure	only sumo
 single	party	volition	only sumo
 single	pass	artifact	only sumo
@@ -7038,6 +7365,7 @@ single	passport	line-of-text	only sumo
 single	passport	physical-object	only sumo
 single	passport	text	only sumo
 single	password	line-of-text	only sumo
+single	pastel	color	only wikidata
 single	pastel	property	only sumo
 single	pastime	accomplishment	only sumo
 single	pastime	procedure	only sumo
@@ -7048,7 +7376,10 @@ single	pastime-game	procedure	only sumo
 single	pastime-game	volition	only sumo
 single	pastime-game	war	only sumo
 single	pasture	countryside	only opencyc
+single	pasture	environment	only wikidata
 single	pasture	field	only sumo
+single	pasture	habitat	only wikidata
+single	pasture	hayfield	only wikidata
 single	pasture	land	only sumo
 single	pasture	physical-object	only wordnet
 single	pasture	yard	only sumo
@@ -7093,6 +7424,7 @@ single	peak	physical-object	only wordnet
 single	peak	yard	only sumo
 single	peanut	structure	only opencyc
 single	peasant	body	only sumo
+single	peasant	farmer	only wikidata
 single	peasant	populace	only sumo
 single	peasant	self	only sumo
 single	peasant	species	only sumo
@@ -7125,6 +7457,7 @@ single	pensioner	self	only sumo
 single	pensioner	species	only sumo
 single	pensioner	structure	only opencyc
 single	people	collection	only sumo
+single	people	mammal	only wikidata
 single	pepper	agent	only sumo
 single	pepper	species	only sumo
 single	perceiver	animal	only sumo
@@ -7146,12 +7479,15 @@ single	performance	performing	only sumo
 single	performance	procedure	only sumo
 single	performance	stage-production	only sumo
 single	performance	volition	only sumo
+single	performer	artist	only wikidata
+single	performer	musician	only wikidata
 single	performing	accomplishment	only sumo
 single	performing	communication	only sumo
 single	performing	information	only sumo
 single	performing	procedure	only sumo
 single	performing	stage-production	only sumo
 single	performing	volition	only sumo
+single	perfume	chemical	only wikidata
 single	perfume	chemical-solution	only sumo
 single	perfume	material	only sumo
 single	perfume	substance	only sumo
@@ -7185,6 +7521,7 @@ single	philosopher	field-of-study	only sumo
 single	philosopher	human	only opencyc
 single	philosopher	intellect	only opencyc
 single	philosopher	mammal	only opencyc
+single	philosopher	professional	only opencyc
 single	philosopher	structure	only opencyc
 single	philosopher	vertebrate	only opencyc
 single	philosopher	worker	only opencyc
@@ -7205,6 +7542,7 @@ single	photograph	indication	only sumo
 single	photographer	adult	only opencyc
 single	photographer	human	only opencyc
 single	photographer	mammal	only opencyc
+single	photographer	professional	only opencyc
 single	photographer	structure	only opencyc
 single	photographer	vertebrate	only opencyc
 single	photographer	worker	only opencyc
@@ -7235,10 +7573,16 @@ single	pill	substance	only sumo
 single	pillow	device	only opencyc
 single	pioneer	attribute	only sumo
 single	pioneer	property	only sumo
+single	pipe	artifact	only wikidata
+single	pipe	equipment	only wikidata
+single	pipe	physical-object	only wikidata
 single	pipe	property	only sumo
+single	pipe	tool	only wikidata
 single	pit	cavity	only opencyc
 single	pit	depression	only opencyc
+single	pit	obstacle	only opencyc
 single	pitch	property	only sumo
+single	plaintiff	party	only wikidata
 single	plan	information	only opencyc
 single	plan	measure	only sumo
 single	plan	routine	only sumo
@@ -7249,7 +7593,6 @@ single	plane-ticket	line-of-text	only sumo
 single	plane-ticket	physical-object	only sumo
 single	plane-ticket	text	only sumo
 single	plant	agent	only sumo
-single	plant	class	only wikidata
 single	plant	species	only sumo
 single	plant-root	body-part	only sumo
 single	plant-root	organ	only sumo
@@ -7277,8 +7620,11 @@ single	playing-field	land	only sumo
 single	playing-field	physical-object	only wordnet
 single	playing-field	yard	only sumo
 single	playpen	container	only opencyc
+single	playpen	equipment	only wikidata
+single	playpen	tool	only wikidata
 single	plaything	device	only sumo
 single	pleasure	emotion	only opencyc
+single	pleasure	joy	only wikidata
 single	plot	information	only opencyc
 single	plot	land	only sumo
 single	plot	physical-object	only wordnet
@@ -7286,9 +7632,12 @@ single	plot	plan	only opencyc
 single	plot	yard	only sumo
 single	pneumonia	event	only opencyc
 single	pneumonia	situation	only opencyc
+single	pneumonia	symptom	only wikidata
 single	pocket	device	only opencyc
+single	pocket	equipment	only wikidata
 single	pocket	fabric	only sumo
 single	pocket	surface	only opencyc
+single	pocket	tool	only wikidata
 single	poem	artifact	only sumo
 single	poem	contract-condition	only sumo
 single	poem	fiction	only sumo
@@ -7309,9 +7658,9 @@ single	poetry	line-of-text	only sumo
 single	poetry	myth	only sumo
 single	poetry	physical-object	only sumo
 single	poetry	text	only sumo
-single	point	class	only wikidata
 single	point	property	only sumo
 single	pointer	signal	only wordnet
+single	poison	chemical	only wikidata
 single	poison	material	only sumo
 single	police	association	only sumo
 single	police	collection	only sumo
@@ -7360,9 +7709,10 @@ single	political-party	structure	only opencyc
 single	politician	adult	only opencyc
 single	politician	human	only opencyc
 single	politician	mammal	only opencyc
+single	politician	professional	only wikidata
+single	politician	specialist	only wikidata
 single	politician	structure	only opencyc
 single	politician	vertebrate	only opencyc
-single	politician	worker	only opencyc
 single	politics	accomplishment	only sumo
 single	politics	act	only sumo
 single	politics	action	only opencyc
@@ -7379,6 +7729,8 @@ single	pony	agent	only sumo
 single	pony	body	only sumo
 single	pony	species	only sumo
 single	pony	structure	only opencyc
+single	pop	fluid	only wikidata
+single	pop	liquid	only wikidata
 single	pop-music	event	only opencyc
 single	pop-music	signal	only opencyc
 single	pop-music	situation	only opencyc
@@ -7391,6 +7743,7 @@ single	populace	physical-object	only sumo
 single	populace	self	only sumo
 single	populace	species	only sumo
 single	populace	vertebrate	only sumo
+single	population	magnitude	only wikidata
 single	porter	human	only opencyc
 single	porter	mammal	only opencyc
 single	porter	structure	only opencyc
@@ -7401,7 +7754,6 @@ single	portrait	light	only opencyc
 single	portrait	physical-object	only wordnet
 single	portrait	signal	only opencyc
 single	portrait	situation	only opencyc
-single	position	number	only wikidata
 single	possibility	accomplishment	only sumo
 single	possibility	act	only sumo
 single	possibility	activity	only sumo
@@ -7425,14 +7777,15 @@ single	pot	plant	only sumo
 single	pot	species	only sumo
 single	potato	agent	only sumo
 single	potato	species	only sumo
-single	potential	class	only wikidata
 single	potential	property	only sumo
 single	pound	development	only sumo
+single	pound	workplace	only wikidata
 single	powder	material	only sumo
 single	power	attribute	only sumo
 single	power	property	only sumo
 single	practical-application	accomplishment	only sumo
 single	practical-application	procedure	only sumo
+single	practical-application	software	only wikidata
 single	practical-application	volition	only sumo
 single	practice	attribute	only sumo
 single	practice	normal	only sumo
@@ -7443,6 +7796,7 @@ single	practice-session	accomplishment	only sumo
 single	practice-session	acquired-knowledge	only sumo
 single	practice-session	education	only sumo
 single	practice-session	leader	only sumo
+single	practice-session	parade	only wikidata
 single	practice-session	procedure	only sumo
 single	practice-session	volition	only sumo
 single	praise	accomplishment	only sumo
@@ -7455,12 +7809,12 @@ single	praise	volition	only sumo
 single	prayer	accomplishment	only sumo
 single	prayer	action	only opencyc
 single	prayer	advice	only sumo
-single	prayer	class	only wikidata
 single	prayer	communication	only sumo
 single	prayer	information	only sumo
 single	prayer	procedure	only sumo
 single	prayer	ritual	only opencyc
 single	prayer	situation	only opencyc
+single	prayer	text	only wikidata
 single	prayer	volition	only sumo
 single	precedence	amateur	only sumo
 single	precedence	ambiance	only sumo
@@ -7530,6 +7884,14 @@ single	presentation	event	only opencyc
 single	presentation	physical-object	only wordnet
 single	presentation	situation	only opencyc
 single	preservation	property	only sumo
+single	president	agent	only wordnet
+single	president	leader	only wikidata
+single	president	organism	only wordnet
+single	president	physical-object	only wordnet
+single	president	politician	only wikidata
+single	president	professional	only wikidata
+single	president	specialist	only wikidata
+single	president	worker	only wikidata
 single	prestige	amateur	only sumo
 single	prestige	ambiance	only sumo
 single	prestige	circumstance	only sumo
@@ -7586,16 +7948,17 @@ single	prince	human	only opencyc
 single	prince	mammal	only opencyc
 single	prince	structure	only opencyc
 single	prince	vertebrate	only opencyc
+single	princess	adult	only wikidata
 single	princess	body	only sumo
 single	princess	lady	only sumo
 single	princess	populace	only sumo
 single	princess	self	only sumo
 single	princess	species	only sumo
 single	princess	structure	only opencyc
-single	princess	woman	only sumo
 single	print	image	only opencyc
 single	print	indication	only sumo
 single	print	information	only sumo
+single	printer	hardware	only wikidata
 single	prison	building	only sumo
 single	prison	container	only opencyc
 single	prison	development	only sumo
@@ -7603,12 +7966,14 @@ single	prison	device	only opencyc
 single	prison	organization	only yago
 single	prison	place	only yago
 single	prisoner	human	only opencyc
+single	prisoner	inhabitant	only wikidata
 single	prisoner	mammal	only opencyc
 single	prisoner	structure	only opencyc
 single	prisoner	vertebrate	only opencyc
 single	privacy	inclination	only sumo
 single	privacy	mentality	only sumo
 single	privacy	property	only sumo
+single	privacy	secrecy	only wikidata
 single	privation	amateur	only sumo
 single	privation	ambiance	only sumo
 single	privation	circumstance	only sumo
@@ -7648,20 +8013,35 @@ single	privilege	tension	only sumo
 single	privilege	way	only sumo
 single	problem	line-of-text	only sumo
 single	problem	sentence	only sumo
+single	process	tissue	only wikidata
 single	producer	animal	only sumo
 single	producer	body	only sumo
+single	producer	businessman	only wikidata
 single	producer	human	only sumo
 single	producer	mammal	only sumo
 single	producer	populace	only sumo
 single	producer	self	only sumo
 single	producer	species	only sumo
 single	producer	vertebrate	only sumo
+single	producer	worker	only wikidata
 single	production	situation	only opencyc
 single	production-line	device	only sumo
 single	profession	attribute	only sumo
 single	profession	property	only sumo
+single	professional	agent	only wordnet
+single	professional	attribute	only sumo
+single	professional	human	only opencyc
+single	professional	mammal	only opencyc
+single	professional	organism	only wordnet
+single	professional	person	only wordnet
+single	professional	physical-object	only wordnet
+single	professional	property	only sumo
+single	professional	structure	only opencyc
+single	professional	vertebrate	only opencyc
 single	professor	human	only opencyc
 single	professor	mammal	only opencyc
+single	professor	research-worker	only wikidata
+single	professor	scientist	only wikidata
 single	professor	structure	only opencyc
 single	professor	vertebrate	only opencyc
 single	professor	worker	only opencyc
@@ -7699,6 +8079,7 @@ single	program	activity	only sumo
 single	program	communication	only sumo
 single	program	event	only sumo
 single	program	procedure	only sumo
+single	program	publication	only wikidata
 single	program	volition	only sumo
 single	programme	accomplishment	only sumo
 single	programme	act	only sumo
@@ -7710,6 +8091,7 @@ single	programme	volition	only sumo
 single	promise	accomplishment	only sumo
 single	promise	activity	only sumo
 single	promise	communication	only sumo
+single	promise	declaration	only wikidata
 single	promise	procedure	only sumo
 single	promise	volition	only sumo
 single	promotion	locating	only sumo
@@ -7772,6 +8154,7 @@ single	provision	locating	only sumo
 single	provision	visit	only sumo
 single	psychoanalysis	accomplishment	only sumo
 single	psychoanalysis	procedure	only sumo
+single	psychoanalysis	psychology	only wikidata
 single	psychoanalysis	volition	only sumo
 single	psychologist	adult	only opencyc
 single	psychologist	human	only opencyc
@@ -7817,18 +8200,24 @@ single	publicity	text	only sumo
 single	publisher	adult	only opencyc
 single	publisher	association	only sumo
 single	publisher	collection	only sumo
-single	publisher	company	only sumo
 single	publisher	human	only opencyc
 single	publisher	mammal	only opencyc
+single	publisher	occupation	only wikidata
+single	publisher	professional	only opencyc
 single	publisher	structure	only opencyc
 single	publisher	team	only sumo
 single	publisher	vertebrate	only opencyc
 single	publisher	worker	only opencyc
 single	pudding	artifact	only opencyc
+single	pudding	dish	only wikidata
+single	pudding	prepared-dish	only wikidata
 single	pulp	body-part	only sumo
 single	pulp	material	only sumo
 single	pulp	substance	only sumo
-single	pulp	tissue	only sumo
+single	pump	equipment	only wikidata
+single	pump	tool	only wikidata
+single	pumpkin	botanical-fruit	only wikidata
+single	pumpkin	fruit	only wikidata
 single	punch	accomplishment	only sumo
 single	punch	activity	only sumo
 single	punch	procedure	only sumo
@@ -7859,6 +8248,8 @@ single	pursuit	procedure	only sumo
 single	pursuit	search	only sumo
 single	pursuit	volition	only sumo
 single	push-button	component	only sumo
+single	push-button	hardware	only wikidata
+single	push-button	interface	only wikidata
 single	puzzle	game	only yago
 single	puzzle	information	only yago
 single	pyramid	place	only yago
@@ -7890,6 +8281,7 @@ single	quarrel	information	only sumo
 single	quarrel	procedure	only sumo
 single	quarrel	volition	only sumo
 single	quarrel	war	only sumo
+single	quarter	coin	only wikidata
 single	quarter	land	only sumo
 single	quarter	physical-object	only wordnet
 single	quarter	yard	only sumo
@@ -7904,7 +8296,9 @@ single	question	communication	only sumo
 single	question	procedure	only sumo
 single	question	volition	only sumo
 single	questionnaire	artifact	only sumo
+single	questionnaire	collection	only wikidata
 single	questionnaire	contract-condition	only sumo
+single	questionnaire	group	only wikidata
 single	questionnaire	indication	only sumo
 single	questionnaire	line-of-text	only sumo
 single	questionnaire	physical-object	only sumo
@@ -7927,10 +8321,8 @@ single	rabbit	structure	only opencyc
 single	race	accomplishment	only sumo
 single	race	act	only sumo
 single	race	activity	only sumo
-single	race	game	only sumo
 single	race	pastime-game	only sumo
 single	race	procedure	only sumo
-single	race	sport	only sumo
 single	race	volition	only sumo
 single	race	war	only sumo
 single	racetrack	development	only sumo
@@ -7938,7 +8330,9 @@ single	racetrack	land	only sumo
 single	racetrack	place	only sumo
 single	racetrack	yard	only sumo
 single	radiation	situation	only opencyc
+single	radiation-sickness	disease	only wikidata
 single	radiation-sickness	event	only sumo
+single	radiation-sickness	illness	only wikidata
 single	radical	collection	only sumo
 single	radical	group	only sumo
 single	radical	people	only sumo
@@ -7970,6 +8364,7 @@ single	rally	volition	only sumo
 single	ranch	artifact	only sumo
 single	ranch	development	only sumo
 single	ranch	physical-object	only wordnet
+single	ranch	settlement	only wikidata
 single	randomness	amateur	only sumo
 single	randomness	ambiance	only sumo
 single	randomness	circumstance	only sumo
@@ -7987,12 +8382,12 @@ single	randomness	property	only sumo
 single	randomness	society	only sumo
 single	randomness	status	only sumo
 single	randomness	tension	only sumo
+single	randomness	uncertainty	only wikidata
 single	randomness	way	only sumo
 single	range	field	only sumo
 single	range	land	only sumo
 single	range	physical-object	only wordnet
 single	range	yard	only sumo
-single	rank	class	only wikidata
 single	rank	property	only sumo
 single	rap	blow	only sumo
 single	rap	visit	only sumo
@@ -8084,11 +8479,11 @@ single	recommendation	accomplishment	only sumo
 single	recommendation	act	only sumo
 single	recommendation	activity	only sumo
 single	recommendation	affirmation	only sumo
-single	recommendation	class	only wikidata
 single	recommendation	communication	only sumo
 single	recommendation	event	only sumo
 single	recommendation	procedure	only sumo
 single	recommendation	review	only schemaorg
+single	recommendation	text	only wikidata
 single	recommendation	volition	only sumo
 single	recompense	accomplishment	only sumo
 single	recompense	activity	only sumo
@@ -8123,6 +8518,7 @@ single	referee	adult	only opencyc
 single	referee	attribute	only sumo
 single	referee	human	only opencyc
 single	referee	mammal	only opencyc
+single	referee	professional	only opencyc
 single	referee	property	only sumo
 single	referee	structure	only opencyc
 single	referee	vertebrate	only opencyc
@@ -8137,9 +8533,7 @@ single	referral	context	only opencyc
 single	referral	normal	only sumo
 single	referral	property	only sumo
 single	reflection	artifact	only wordnet
-single	reflection	class	only wikidata
 single	reflection	event	only opencyc
-single	reflection	injection	only wikidata
 single	reflection	light	only opencyc
 single	reflection	physical-object	only wordnet
 single	reflection	signal	only opencyc
@@ -8188,18 +8582,19 @@ single	refugee	mammal	only opencyc
 single	refugee	structure	only opencyc
 single	refugee	vertebrate	only opencyc
 single	refugee-camp	place	only yago
+single	refugee-camp	settlement	only wikidata
 single	refusal	accomplishment	only sumo
 single	refusal	activity	only sumo
 single	refusal	communication	only sumo
 single	refusal	information	only sumo
 single	refusal	procedure	only sumo
 single	refusal	volition	only sumo
-single	region	class	only wikidata
 single	region	physical-object	only wordnet
 single	register	artifact	only sumo
 single	register	contract-condition	only sumo
 single	register	line-of-text	only sumo
 single	register	physical-object	only sumo
+single	register	pitch	only wikidata
 single	register	text	only sumo
 single	registration	accomplishment	only sumo
 single	registration	action	only opencyc
@@ -8259,13 +8654,22 @@ single	religion	attribute	only wordnet
 single	religion	good	only wordnet
 single	religion	information	only opencyc
 single	religious-service	accomplishment	only sumo
+single	religious-service	ceremony	only wikidata
 single	religious-service	communication	only sumo
+single	religious-service	custom	only wikidata
 single	religious-service	information	only sumo
 single	religious-service	procedure	only sumo
+single	religious-service	ritual	only wikidata
+single	religious-service	service	only wikidata
 single	religious-service	stage-production	only sumo
 single	religious-service	volition	only sumo
 single	relish	artifact	only opencyc
+single	relish	dish	only wikidata
 single	relish	event	only sumo
+single	relish	food	only wikidata
+single	relish	prepared-dish	only wikidata
+single	relish	salad	only wikidata
+single	relish	sauce	only wikidata
 single	reluctance	emotion	only opencyc
 single	reluctance	property	only sumo
 single	remark	line-of-text	only sumo
@@ -8370,6 +8774,9 @@ single	reserve	environment	only opencyc
 single	reserve	inclination	only sumo
 single	reserve	mentality	only sumo
 single	reserve	property	only sumo
+single	reservoir	artifact	only wikidata
+single	reservoir	equipment	only wikidata
+single	reservoir	tool	only wikidata
 single	residence	artifact	only sumo
 single	residence	building	only sumo
 single	residence	development	only sumo
@@ -8379,12 +8786,14 @@ single	resident	attribute	only sumo
 single	resident	doctor	only opencyc
 single	resident	human	only opencyc
 single	resident	mammal	only opencyc
+single	resident	professional	only opencyc
 single	resident	property	only sumo
 single	resident	structure	only opencyc
 single	resident	vertebrate	only opencyc
 single	resident	worker	only opencyc
 single	residential-district	land	only sumo
 single	residential-district	physical-object	only wordnet
+single	residential-district	settlement	only wikidata
 single	residential-district	yard	only sumo
 single	resignation	artifact	only sumo
 single	resignation	contract-condition	only sumo
@@ -8422,6 +8831,7 @@ single	resource	status	only sumo
 single	resource	tension	only sumo
 single	resource	way	only sumo
 single	restaurant	development	only sumo
+single	restaurant	workplace	only wikidata
 single	restitution	accomplishment	only sumo
 single	restitution	activity	only sumo
 single	restitution	procedure	only sumo
@@ -8440,7 +8850,9 @@ single	result	procedure	only sumo
 single	result	programme	only sumo
 single	result	volition	only sumo
 single	retailer	attribute	only sumo
+single	retailer	businessman	only wikidata
 single	retailer	property	only sumo
+single	retailer	worker	only wikidata
 single	retaliation	accomplishment	only sumo
 single	retaliation	activity	only sumo
 single	retaliation	contest	only sumo
@@ -8482,6 +8894,7 @@ single	review-periodical	line-of-text	only sumo
 single	review-periodical	series	only sumo
 single	review-periodical	text	only sumo
 single	reviewer	attribute	only sumo
+single	reviewer	critic	only wikidata
 single	reviewer	property	only sumo
 single	revolution	accomplishment	only sumo
 single	revolution	action	only opencyc
@@ -8512,13 +8925,19 @@ single	rhetoric	vertebrate	only opencyc
 single	rhetoric	worker	only opencyc
 single	rhythm	property	only sumo
 single	rib	structure	only opencyc
-single	ribbon	clothing	only opencyc
 single	ribbon	device	only opencyc
+single	ribbon	equipment	only wikidata
 single	ribbon	indication	only sumo
 single	ribbon	information	only sumo
 single	ribbon	line	only opencyc
 single	ribbon	route	only opencyc
+single	ribbon	tool	only wikidata
 single	ribbon-bow	event	only sumo
+single	rice	commodity	only wikidata
+single	rice	grass	only wikidata
+single	rice	organism	only wikidata
+single	rice	physical-object	only wikidata
+single	rice	plant	only wikidata
 single	rider	attribute	only sumo
 single	rider	property	only sumo
 single	ridge	landform	only yago
@@ -8544,14 +8963,18 @@ single	riot	volition	only sumo
 single	riot	war	only sumo
 single	ritual	accomplishment	only sumo
 single	ritual	action	only opencyc
+single	ritual	ceremony	only wikidata
+single	ritual	custom	only wikidata
 single	ritual	procedure	only sumo
 single	ritual	situation	only opencyc
 single	ritual	volition	only sumo
 single	river	environment	only opencyc
+single	river	obstacle	only opencyc
 single	river	route	only opencyc
 single	road	land	only sumo
 single	road	yard	only sumo
 single	road-shoulder	land	only sumo
+single	road-shoulder	lane	only wikidata
 single	road-shoulder	physical-object	only wordnet
 single	road-shoulder	yard	only sumo
 single	roadway	device	only opencyc
@@ -8570,14 +8993,22 @@ single	role	accomplishment	only sumo
 single	role	concept	only dul
 single	role	procedure	only sumo
 single	role	volition	only sumo
+single	role-model	agent	only wordnet
+single	role-model	attribute	only sumo
+single	role-model	organism	only wordnet
+single	role-model	physical-object	only wordnet
+single	role-model	property	only sumo
 single	roll	property	only sumo
 single	roof	development	only sumo
 single	roof	surface	only opencyc
 single	room	development	only sumo
+single	rope	braid	only wikidata
 single	rope	device	only opencyc
 single	rope	line	only opencyc
 single	rope	route	only opencyc
+single	rope	structure	only wikidata
 single	rose	agent	only sumo
+single	rose	flower	only wikidata
 single	rose	species	only sumo
 single	roster	artifact	only sumo
 single	roster	contract-condition	only sumo
@@ -8586,9 +9017,11 @@ single	roster	line-of-text	only sumo
 single	roster	physical-object	only sumo
 single	roster	text	only sumo
 single	rotary-motion	act	only wordnet
+single	rotation	motion	only wikidata
 single	route	physical-object	only wordnet
 single	routine	action	only opencyc
 single	routine	situation	only opencyc
+single	row	information	only wikidata
 single	royalty	collection	only sumo
 single	royalty	people	only sumo
 single	royalty	school-class	only sumo
@@ -8619,6 +9052,8 @@ single	ruin	development	only sumo
 single	rule	attribute	only sumo
 single	rule	normal	only sumo
 single	rule	property	only sumo
+single	ruler	equipment	only wikidata
+single	ruler	tool	only wikidata
 single	rumor	artifact	only sumo
 single	rumor	contract-condition	only sumo
 single	rumor	data-file	only sumo
@@ -8638,6 +9073,7 @@ single	runner	self	only sumo
 single	runner	species	only sumo
 single	runner	vertebrate	only sumo
 single	rural-area	physical-object	only wordnet
+single	rural-area	settlement	only wikidata
 single	sacrifice	destruction	only sumo
 single	safety	amateur	only sumo
 single	safety	ambiance	only sumo
@@ -8663,6 +9099,7 @@ single	sailor	mammal	only opencyc
 single	sailor	structure	only opencyc
 single	sailor	vertebrate	only opencyc
 single	salad	artifact	only opencyc
+single	salad	dish	only wikidata
 single	sale	accomplishment	only sumo
 single	sale	activity	only sumo
 single	sale	exchange	only sumo
@@ -8679,7 +9116,12 @@ single	sales-talk	procedure	only sumo
 single	sales-talk	volition	only sumo
 single	salesclerk	attribute	only sumo
 single	salesclerk	property	only sumo
+single	salmon	fish-meat	only wikidata
+single	salmon	food	only wikidata
 single	salmon	structure	only opencyc
+single	salon	occupation	only wikidata
+single	salon	organization	only wikidata
+single	salon	workplace	only wikidata
 single	salvation	action	only opencyc
 single	salvation	amateur	only sumo
 single	salvation	ambiance	only sumo
@@ -8705,7 +9147,9 @@ single	salvation	way	only sumo
 single	sanctuary	physical-object	only wordnet
 single	sandal	boot	only sumo
 single	sandal	device	only opencyc
+single	sandal	equipment	only wikidata
 single	sandal	fashion	only sumo
+single	sandal	tool	only wikidata
 single	satellite	celestial-body	only sumo
 single	satellite	component	only sumo
 single	satellite	device	only sumo
@@ -8713,6 +9157,7 @@ single	satellite	mechanism	only sumo
 single	satellite	place	only yago
 single	satellite	vehicle	only yago
 single	satisfaction	emotion	only opencyc
+single	satisfaction	joy	only wikidata
 single	sauce	artifact	only opencyc
 single	sauce	material	only sumo
 single	sausage	artifact	only opencyc
@@ -8818,6 +9263,7 @@ single	schoolhouse	organization	only sumo
 single	schoolhouse	school	only sumo
 single	schoolhouse	team	only sumo
 single	science	cognition	only wordnet
+single	science	research	only wikidata
 single	scientist	adult	only opencyc
 single	scientist	human	only opencyc
 single	scientist	mammal	only opencyc
@@ -8844,6 +9290,7 @@ single	scope	status	only sumo
 single	scope	tension	only sumo
 single	scope	way	only sumo
 single	scored-goal	activity	only sumo
+single	scored-goal	failure	only wikidata
 single	scored-goal	procedure	only sumo
 single	scored-goal	visit	only sumo
 single	scored-goal	volition	only sumo
@@ -8851,8 +9298,12 @@ single	scratch	property	only sumo
 single	scratch	shape	only sumo
 single	screen	device	only sumo
 single	screen-netting	device	only sumo
+single	screw	mechanism	only wikidata
+single	script	concept	only wikidata
 single	script	measure	only sumo
 single	script	routine	only sumo
+single	script	sign	only wikidata
+single	script	symbol	only wikidata
 single	sculpture	image	only opencyc
 single	sculpture	indication	only sumo
 single	seal	structure	only opencyc
@@ -8892,6 +9343,7 @@ single	secret	way	only sumo
 single	secret-plan	measure	only sumo
 single	secret-plan	routine	only sumo
 single	secretary	adult	only opencyc
+single	secretary	clerk	only wikidata
 single	secretary	structure	only opencyc
 single	secretion	material	only sumo
 single	section	artifact	only sumo
@@ -8905,13 +9357,16 @@ single	sector	feature	only wordnet
 single	sediment	material	only sumo
 single	sediment	soil	only opencyc
 single	seed	body-part	only sumo
+single	seed	food	only wikidata
 single	seed	structure	only opencyc
 single	seeded-player	attribute	only sumo
 single	seeded-player	property	only sumo
 single	self	agent	only sumo
 single	self-control	property	only sumo
 single	seller	attribute	only sumo
+single	seller	businessman	only wikidata
 single	seller	property	only sumo
+single	seller	worker	only wikidata
 single	selling	accomplishment	only sumo
 single	selling	activity	only sumo
 single	selling	exchange	only sumo
@@ -8942,13 +9397,11 @@ single	separation	information	only sumo
 single	separation	procedure	only sumo
 single	separation	volition	only sumo
 single	serial	artifact	only sumo
-single	serial	class	only wikidata
 single	serial	contract-condition	only sumo
 single	serial	indication	only sumo
 single	serial	information	only sumo
 single	serial	line-of-text	only sumo
 single	serial	physical-object	only sumo
-single	serial	text	only sumo
 single	series	contract-condition	only sumo
 single	series	indication	only sumo
 single	series	information	only sumo
@@ -9014,10 +9467,11 @@ single	sex	property	only sumo
 single	shaft	cylinder	only opencyc
 single	shaft	device	only opencyc
 single	shame	emotion	only opencyc
-single	shape	class	only wikidata
 single	shape	property	only sumo
 single	shark	agent	only sumo
 single	shark	body	only sumo
+single	shark	fish-meat	only wikidata
+single	shark	food	only wikidata
 single	shark	species	only sumo
 single	shark	structure	only opencyc
 single	sheep	agent	only sumo
@@ -9025,9 +9479,11 @@ single	sheep	body	only sumo
 single	sheep	livestock	only sumo
 single	sheep	species	only sumo
 single	sheep	structure	only opencyc
+single	sheet	blanket	only wikidata
 single	sheet	commodity	only wordnet
 single	shelf	container	only opencyc
 single	shelf	surface	only opencyc
+single	shell	artifact	only wikidata
 single	shell	body-part	only sumo
 single	shelter	building	only sumo
 single	shelter	development	only sumo
@@ -9036,9 +9492,15 @@ single	shield	device	only opencyc
 single	shield	fashion	only sumo
 single	ship	container	only opencyc
 single	shirt	device	only opencyc
+single	shirt	equipment	only wikidata
 single	shirt	fashion	only sumo
+single	shirt	tool	only wikidata
 single	shoe	device	only opencyc
+single	shoe	equipment	only wikidata
 single	shoe	fashion	only sumo
+single	shoe	tool	only wikidata
+single	shooting	game	only wikidata
+single	shooting	sport	only wikidata
 single	shooting	visit	only sumo
 single	shop	agent	only sumo
 single	shop	association	only sumo
@@ -9048,6 +9510,7 @@ single	shop	firm	only sumo
 single	shop	group	only sumo
 single	shop	organization	only sumo
 single	shop	team	only sumo
+single	shop	workplace	only wikidata
 single	shopping	accomplishment	only sumo
 single	shopping	action	only opencyc
 single	shopping	activity	only sumo
@@ -9092,11 +9555,14 @@ single	sight	property	only sumo
 single	sign	indication	only wordnet
 single	sign-language-sign	event	only sumo
 single	sign-language-sign	motion	only sumo
+single	sign-of-the-zodiac	concept	only wikidata
 single	sign-of-the-zodiac	physical-object	only wordnet
+single	sign-of-the-zodiac	sign	only wikidata
+single	sign-of-the-zodiac	symbol	only wikidata
+single	signal	sign	only wikidata
 single	signboard	component	only sumo
 single	signboard	device	only sumo
 single	signboard	indication	only sumo
-single	signboard	information	only sumo
 single	signboard	mechanism	only sumo
 single	silence	property	only sumo
 single	silk	device	only opencyc
@@ -9108,7 +9574,6 @@ single	similarity	amateur	only sumo
 single	similarity	ambiance	only sumo
 single	similarity	circumstance	only sumo
 single	similarity	civilisation	only sumo
-single	similarity	class	only wikidata
 single	similarity	crowd	only sumo
 single	similarity	custom	only sumo
 single	similarity	danger	only sumo
@@ -9160,11 +9625,10 @@ single	sin	society	only sumo
 single	sin	status	only sumo
 single	sin	tension	only sumo
 single	sin	way	only sumo
-single	singer	artist	only opencyc
 single	singer	attribute	only sumo
 single	singer	human	only opencyc
 single	singer	mammal	only opencyc
-single	singer	musician	only opencyc
+single	singer	professional	only opencyc
 single	singer	property	only sumo
 single	singer	structure	only opencyc
 single	singer	vertebrate	only opencyc
@@ -9195,24 +9659,27 @@ single	situation	society	only sumo
 single	situation	status	only sumo
 single	situation	tension	only sumo
 single	situation	way	only sumo
-single	sketch	artifact	only sumo
 single	sketch	contract-condition	only sumo
+single	sketch	drawing	only wikidata
 single	sketch	image	only opencyc
 single	sketch	indication	only sumo
 single	sketch	line-of-text	only sumo
-single	sketch	physical-object	only sumo
 single	sketch	recapitulation	only sumo
 single	sketch	text	only sumo
 single	ski-tow	device	only sumo
 single	skin	detector	only opencyc
 single	skin	structure	only opencyc
 single	skin	surface	only opencyc
+single	skirt	equipment	only wikidata
 single	skirt	fashion	only sumo
+single	skirt	tool	only wikidata
 single	skull	collection	only sumo
 single	skull	structure	only opencyc
 single	sky	place	only sumo
 single	slave	human	only opencyc
+single	slave	inhabitant	only wikidata
 single	slave	mammal	only opencyc
+single	slave	prisoner	only wikidata
 single	slave	structure	only opencyc
 single	slave	vertebrate	only opencyc
 single	sleeve	clothing	only sumo
@@ -9227,9 +9694,12 @@ single	slob	populace	only sumo
 single	slob	self	only sumo
 single	slob	species	only sumo
 single	slob	vertebrate	only sumo
+single	sludge	fluid	only wikidata
 single	sludge	material	only sumo
+single	sludge	waste	only wikidata
 single	small-change	quantity	only sumo
 single	smell	attribute	only sumo
+single	smell	perception	only wikidata
 single	smell	property	only sumo
 single	smile	accomplishment	only sumo
 single	smile	act	only sumo
@@ -9242,6 +9712,7 @@ single	smile	procedure	only sumo
 single	smile	volition	only sumo
 single	smoke	cloud	only sumo
 single	smoke	material	only sumo
+single	smoke	physical-object	only wikidata
 single	smoke	process	only wordnet
 single	smoke	substance	only sumo
 single	smudge	property	only sumo
@@ -9299,16 +9770,19 @@ single	society	normal	only sumo
 single	society	property	only sumo
 single	sociology	cognition	only wordnet
 single	sock	device	only opencyc
+single	sock	equipment	only wikidata
 single	sock	fashion	only sumo
+single	sock	tool	only wikidata
 single	sofa	device	only opencyc
 single	software	measure	only sumo
 single	software	routine	only sumo
 single	soldier	adult	only opencyc
+single	soldier	employee	only wikidata
 single	soldier	human	only opencyc
 single	soldier	mammal	only opencyc
+single	soldier	professional	only opencyc
 single	soldier	structure	only opencyc
 single	soldier	vertebrate	only opencyc
-single	soldier	warrior	only opencyc
 single	solicitation	accomplishment	only sumo
 single	solicitation	act	only sumo
 single	solicitation	activity	only sumo
@@ -9336,6 +9810,7 @@ single	solidarity	status	only sumo
 single	solidarity	tension	only sumo
 single	solidarity	way	only sumo
 single	solo	accomplishment	only sumo
+single	solo	musical-composition	only wikidata
 single	solo	procedure	only sumo
 single	solo	volition	only sumo
 single	solution	amateur	only sumo
@@ -9358,9 +9833,11 @@ single	solution	status	only sumo
 single	solution	tension	only sumo
 single	solution	way	only sumo
 single	sorrow	emotion	only opencyc
+single	sorrow	worry	only wikidata
 single	sound	event	only sumo
 single	soup	artifact	only opencyc
 single	soup	course	only opencyc
+single	soup	dish	only wikidata
 single	soup	material	only sumo
 single	space	signal	only wordnet
 single	spacecraft	equipment	only wordnet
@@ -9369,16 +9846,19 @@ single	speaker	attribute	only sumo
 single	speaker	property	only sumo
 single	specialist	attribute	only sumo
 single	specialist	property	only sumo
+single	specialist	worker	only wikidata
 single	species	physical-object	only sumo
 single	specimen	material	only sumo
 single	specimen	substance	only sumo
+single	spectacles	clothing	only wikidata
+single	spectacles	equipment	only wikidata
+single	spectacles	tool	only wikidata
 single	spectator	attribute	only sumo
 single	spectator	property	only sumo
 single	spectrum	amateur	only sumo
 single	spectrum	ambiance	only sumo
 single	spectrum	circumstance	only sumo
 single	spectrum	civilisation	only sumo
-single	spectrum	class	only wikidata
 single	spectrum	crowd	only sumo
 single	spectrum	custom	only sumo
 single	spectrum	danger	only sumo
@@ -9406,13 +9886,15 @@ single	spell	indication	only sumo
 single	spell	line-of-text	only sumo
 single	spell	physical-object	only sumo
 single	spell	text	only sumo
-single	sphere	class	only wikidata
+single	sphere	surface	only wikidata
 single	sphere-of-influence	agent	only sumo
 single	sphere-of-influence	physical-object	only wordnet
 single	spider	agent	only sumo
 single	spider	body	only sumo
 single	spider	species	only sumo
 single	spider	structure	only opencyc
+single	spinach	herb	only wikidata
+single	spinach	leaf	only wikidata
 single	spinal-column	organ	only sumo
 single	spinal-column	structure	only opencyc
 single	spinal-column	tissue	only opencyc
@@ -9450,7 +9932,6 @@ single	spoon	hardware	only opencyc
 single	spoon	tool	only opencyc
 single	sport	accomplishment	only sumo
 single	sport	contest	only sumo
-single	sport	game	only sumo
 single	sport	information	only opencyc
 single	sport	pastime-game	only sumo
 single	sport	procedure	only sumo
@@ -9463,7 +9944,6 @@ single	spray	compound	only sumo
 single	spray	material	only sumo
 single	spray	water	only sumo
 single	spread	material	only sumo
-single	spread	number	only wikidata
 single	spreadsheet	measure	only sumo
 single	spreadsheet	routine	only sumo
 single	spy	attribute	only sumo
@@ -9472,19 +9952,17 @@ single	squad	association	only sumo
 single	squad	collection	only sumo
 single	squad	structure	only opencyc
 single	squad	team	only sumo
-single	square	number	only wikidata
 single	stable	development	only sumo
-single	stadium	class	only wikidata
 single	stadium	container	only opencyc
 single	stadium	development	only sumo
 single	stadium	device	only opencyc
-single	stadium	shape	only wikidata
 single	staff	association	only sumo
 single	staff	collection	only sumo
 single	staff	structure	only opencyc
 single	staff	team	only sumo
 single	staff-rod	signal	only wordnet
 single	stage	development	only sumo
+single	stage	workplace	only wikidata
 single	stage-production	accomplishment	only sumo
 single	stage-production	act	only sumo
 single	stage-production	activity	only sumo
@@ -9525,8 +10003,6 @@ single	stand-base	artifact	only sumo
 single	stand-base	physical-object	only wordnet
 single	star	place	only yago
 single	star-shape	property	only sumo
-single	state	class	only wikidata
-single	state	module	only wikidata
 single	state	structure	only opencyc
 single	statement	article	only sumo
 single	statement	artifact	only sumo
@@ -9550,10 +10026,12 @@ single	status	property	only sumo
 single	steak	artifact	only opencyc
 single	steak	material	only sumo
 single	steam	compound	only sumo
+single	steam	fluid	only wikidata
 single	steam	material	only sumo
-single	steam	water	only sumo
 single	steel	material	only sumo
 single	steward	attribute	only sumo
+single	steward	governor	only wikidata
+single	steward	leader	only wikidata
 single	steward	property	only sumo
 single	stick	agent	only sumo
 single	stick	organism	only sumo
@@ -9574,8 +10052,15 @@ single	stop	activity	only sumo
 single	stop	procedure	only sumo
 single	stop	volition	only sumo
 single	storey	development	only sumo
+single	storm	motion	only wikidata
 single	storm	process	only wordnet
+single	storm	wind	only wikidata
 single	stove	device	only sumo
+single	stove	equipment	only wikidata
+single	stove	furniture	only wikidata
+single	stove	table	only wikidata
+single	stove	tool	only wikidata
+single	stove	workbench	only wikidata
 single	strand	indication	only sumo
 single	strand	information	only sumo
 single	strand	line	only opencyc
@@ -9611,6 +10096,7 @@ single	strike	accomplishment	only sumo
 single	strike	activity	only sumo
 single	strike	procedure	only sumo
 single	strike	volition	only sumo
+single	string	mechanism	only wikidata
 single	stroke	illness	only opencyc
 single	stroke	situation	only opencyc
 single	struggle	accomplishment	only sumo
@@ -9619,16 +10105,20 @@ single	struggle	volition	only sumo
 single	struggle	work	only wordnet
 single	student	attribute	only sumo
 single	student	property	only sumo
+single	studio	building	only wikidata
 single	studio	cavity	only opencyc
 single	studio	container	only opencyc
 single	studio	development	only sumo
 single	studio	device	only opencyc
+single	studio	room	only wikidata
 single	studio	suite	only opencyc
+single	studio	workshop	only wikidata
 single	study	cavity	only opencyc
 single	study	container	only opencyc
 single	study	development	only sumo
 single	study	device	only opencyc
 single	study	structure	only wordnet
+single	study	workplace	only wikidata
 single	submission	artifact	only sumo
 single	submission	contract-condition	only sumo
 single	submission	indication	only sumo
@@ -9647,6 +10137,7 @@ single	subsister	attribute	only sumo
 single	subsister	property	only sumo
 single	substance	physical-object	only dul
 single	suburb	physical-object	only wordnet
+single	suburb	settlement	only wikidata
 single	success	accomplishment	only sumo
 single	success	act	only sumo
 single	success	action	only opencyc
@@ -9655,6 +10146,7 @@ single	success	procedure	only sumo
 single	success	situation	only opencyc
 single	success	volition	only sumo
 single	suffering	property	only sumo
+single	suffering	sense	only wikidata
 single	sugar	compound	only sumo
 single	sugar	material	only sumo
 single	suggestion	accomplishment	only sumo
@@ -9671,21 +10163,23 @@ single	suicide	ending	only opencyc
 single	suicide	illness	only opencyc
 single	suicide	situation	only opencyc
 single	suit	collection	only sumo
+single	suit	equipment	only wikidata
+single	suit	tool	only wikidata
+single	suite	bedroom	only wikidata
 single	suite	cavity	only opencyc
 single	suite	container	only opencyc
 single	suite	device	only opencyc
 single	suite	housing	only wordnet
 single	suite	place	only schemaorg
+single	suite	room	only wikidata
 single	suite	structure	only wordnet
 single	sulfur	material	only sumo
 single	sulfur	mineral	only opencyc
 single	summary	artifact	only sumo
-single	summary	class	only wikidata
 single	summary	contract-condition	only sumo
 single	summary	indication	only sumo
 single	summary	line-of-text	only sumo
 single	summary	physical-object	only sumo
-single	summary	text	only sumo
 single	summer-camp	association	only sumo
 single	summer-camp	collection	only sumo
 single	summer-camp	physical-object	only wordnet
@@ -9698,7 +10192,6 @@ single	summit	landform	only yago
 single	summit	place	only yago
 single	summit	procedure	only sumo
 single	summit	volition	only sumo
-single	sunlight	light	only opencyc
 single	sunlight	luminosity	only sumo
 single	sunlight	process	only wordnet
 single	sunlight	situation	only opencyc
@@ -9710,9 +10203,11 @@ single	supermarket	collection	only sumo
 single	supermarket	company	only sumo
 single	supermarket	firm	only sumo
 single	supermarket	team	only sumo
+single	supermarket	workplace	only wikidata
 single	supervisor	attribute	only sumo
 single	supervisor	human	only opencyc
 single	supervisor	mammal	only opencyc
+single	supervisor	manager	only wikidata
 single	supervisor	property	only sumo
 single	supervisor	structure	only opencyc
 single	supervisor	vertebrate	only opencyc
@@ -9755,17 +10250,28 @@ single	surprise	society	only sumo
 single	surprise	status	only sumo
 single	surprise	tension	only sumo
 single	surprise	way	only sumo
+single	surrogate	agent	only wordnet
+single	surrogate	animal	only wikidata
+single	surrogate	attribute	only sumo
+single	surrogate	person	only wordnet
+single	surrogate	property	only sumo
 single	surroundings	physical-object	only wordnet
 single	survivor	attribute	only sumo
 single	survivor	property	only sumo
 single	survivor	structure	only opencyc
+single	survivor	victim	only wikidata
 single	suspect	attribute	only sumo
 single	suspect	property	only sumo
 single	sweater	device	only opencyc
+single	sweater	equipment	only wikidata
 single	sweater	fashion	only sumo
+single	sweater	tool	only wikidata
+single	sweater	top	only wikidata
 single	swing	artifact	only opencyc
 single	swing	device	only opencyc
 single	switch	visit	only sumo
+single	symbol	concept	only wikidata
+single	symbol	sign	only wikidata
 single	symptom	event	only sumo
 single	syndrome	disease	only opencyc
 single	syndrome	event	only sumo
@@ -9791,23 +10297,32 @@ single	tape-recording	event	only opencyc
 single	tape-recording	indication	only sumo
 single	tape-recording	information	only sumo
 single	tape-recording	situation	only opencyc
+single	tapeline	equipment	only wikidata
+single	tapeline	ruler	only wikidata
+single	tapeline	tool	only wikidata
+single	target	equipment	only wikidata
 single	target	information	only wordnet
 single	target	signal	only wordnet
 single	taste	attribute	only sumo
 single	taste	event	only opencyc
+single	taste	perception	only wikidata
 single	taste	property	only sumo
 single	taste	situation	only opencyc
 single	tax-return	artifact	only opencyc
+single	tax-return	concept	only wikidata
+single	tax-return	explaining	only wikidata
+single	tax-return	explanation	only wikidata
 single	tax-return	image	only opencyc
+single	tax-return	message	only wikidata
 single	tea	artifact	only opencyc
 single	tea	drug	only yago
 single	tea	medicine	only opencyc
 single	teaching	accomplishment	only sumo
 single	teaching	acquired-knowledge	only sumo
 single	teaching	action	only opencyc
-single	teaching	education	only sumo
 single	teaching	leader	only sumo
 single	teaching	procedure	only sumo
+single	teaching	service	only wikidata
 single	teaching	situation	only opencyc
 single	teaching	volition	only sumo
 single	team	collection	only sumo
@@ -9818,6 +10333,7 @@ single	temple	container	only opencyc
 single	temple	development	only sumo
 single	temple	device	only opencyc
 single	tenant	attribute	only sumo
+single	tenant	inhabitant	only wikidata
 single	tenant	property	only sumo
 single	tending	accomplishment	only sumo
 single	tending	care	only sumo
@@ -9828,7 +10344,9 @@ single	tension	property	only sumo
 single	tensity	property	only sumo
 single	tent	container	only opencyc
 single	tent	device	only opencyc
+single	tent	equipment	only wikidata
 single	terminal	device	only sumo
+single	terminal	hardware	only wikidata
 single	territory	physical-object	only wordnet
 single	territory	structure	only opencyc
 single	terrorist	criminal	only opencyc
@@ -9864,11 +10382,14 @@ single	theatrical-role	field-of-study	only wordnet
 single	theatrical-role	procedure	only sumo
 single	theatrical-role	volition	only sumo
 single	theology	cognition	only wordnet
+single	theology	humanities	only wikidata
 single	theorist	animal	only sumo
 single	theorist	body	only sumo
 single	theorist	human	only sumo
 single	theorist	mammal	only sumo
 single	theorist	populace	only sumo
+single	theorist	research-worker	only wikidata
+single	theorist	scientist	only wikidata
 single	theorist	self	only sumo
 single	theorist	species	only sumo
 single	theorist	vertebrate	only sumo
@@ -9903,6 +10424,7 @@ single	ticket	line-of-text	only sumo
 single	ticket	physical-object	only sumo
 single	ticket	text	only sumo
 single	tide	artifact	only opencyc
+single	tide	motion	only wikidata
 single	tier	property	only sumo
 single	tiger	agent	only sumo
 single	tiger	body	only sumo
@@ -9927,19 +10449,25 @@ single	token	indication	only sumo
 single	token	physical-object	only sumo
 single	token	signal	only wordnet
 single	toll	quantity	only sumo
+single	tool	equipment	only wikidata
 single	tooth	structure	only opencyc
+single	top	equipment	only wikidata
 single	top	fashion	only sumo
-single	top	shirt	only sumo
+single	top	tool	only wikidata
 single	top-side	attribute	only sumo
 single	top-side	physical-object	only wordnet
 single	top-side	property	only sumo
 single	topographic-point	physical-object	only wordnet
 single	torso	structure	only opencyc
+single	torture	crime	only wikidata
 single	torture	injury	only sumo
+single	torture	violence	only wikidata
 single	touch	action	only opencyc
 single	touch	situation	only opencyc
 single	tourism	action	only opencyc
+single	tourism	motion	only wikidata
 single	tourism	situation	only opencyc
+single	tourism	voyage	only wikidata
 single	tourist	consumer	only opencyc
 single	tourist	human	only opencyc
 single	tourist	mammal	only opencyc
@@ -9951,7 +10479,6 @@ single	tournament	action	only opencyc
 single	tournament	activity	only sumo
 single	tournament	competition	only opencyc
 single	tournament	conflict	only opencyc
-single	tournament	core	only wikidata
 single	tournament	game	only sumo
 single	tournament	pastime-game	only sumo
 single	tournament	procedure	only sumo
@@ -9959,7 +10486,6 @@ single	tournament	situation	only opencyc
 single	tournament	sport	only sumo
 single	tournament	volition	only sumo
 single	tournament	war	only sumo
-single	tower	building	only sumo
 single	tower	development	only sumo
 single	town	agent	only sumo
 single	town	city	only sumo
@@ -9974,22 +10500,23 @@ single	tract	device	only sumo
 single	tract	indication	only sumo
 single	tract	mechanism	only sumo
 single	tract	physical-object	only sumo
-single	tract	publication	only opencyc
 single	trade	attribute	only sumo
 single	trade	property	only sumo
 single	trader	adult	only opencyc
 single	trader	attribute	only sumo
+single	trader	businessman	only wikidata
 single	trader	human	only opencyc
 single	trader	mammal	only opencyc
+single	trader	professional	only opencyc
 single	trader	property	only sumo
 single	trader	structure	only opencyc
 single	trader	vertebrate	only opencyc
-single	trader	worker	only opencyc
 single	traffic	accomplishment	only sumo
 single	traffic	action	only opencyc
 single	traffic	activity	only sumo
 single	traffic	exchange	only sumo
 single	traffic	interaction	only sumo
+single	traffic	motion	only wikidata
 single	traffic	procedure	only sumo
 single	traffic	situation	only opencyc
 single	traffic	volition	only sumo
@@ -10003,6 +10530,8 @@ single	traffic-ticket	procedure	only sumo
 single	traffic-ticket	volition	only sumo
 single	tragedy	artifact	only sumo
 single	tragedy	contract-condition	only sumo
+single	tragedy	drama	only wikidata
+single	tragedy	dramatic-play	only wikidata
 single	tragedy	indication	only sumo
 single	tragedy	line-of-text	only sumo
 single	tragedy	physical-object	only sumo
@@ -10027,7 +10556,9 @@ single	training	volition	only sumo
 single	training-workshop	accomplishment	only sumo
 single	training-workshop	acquired-knowledge	only sumo
 single	training-workshop	leader	only sumo
+single	training-workshop	meeting	only wikidata
 single	training-workshop	procedure	only sumo
+single	training-workshop	service	only wikidata
 single	training-workshop	volition	only sumo
 single	trait	property	only sumo
 single	transaction	accomplishment	only sumo
@@ -10047,12 +10578,16 @@ single	transport	situation	only opencyc
 single	transport	visit	only sumo
 single	transportation	institution	only opencyc
 single	transportation	structure	only opencyc
+single	trap	equipment	only wikidata
+single	trap	tool	only wikidata
+single	tray	equipment	only wikidata
+single	tray	tool	only wikidata
 single	treasurer	adult	only opencyc
+single	treasurer	businessman	only wikidata
 single	treasurer	human	only opencyc
 single	treasurer	mammal	only opencyc
 single	treasurer	structure	only opencyc
 single	treasurer	vertebrate	only opencyc
-single	treasurer	worker	only opencyc
 single	treatment	accomplishment	only sumo
 single	treatment	action	only opencyc
 single	treatment	activity	only sumo
@@ -10064,9 +10599,9 @@ single	treatment	volition	only sumo
 single	treaty	contract	only sumo
 single	treaty	legislation	only yago
 single	tree	agent	only sumo
+single	tree	obstacle	only opencyc
 single	tree	species	only sumo
 single	tree	structure	only opencyc
-single	triangle	class	only wikidata
 single	triangle	surface	only opencyc
 single	tribulation	amateur	only sumo
 single	tribulation	ambiance	only sumo
@@ -10127,7 +10662,9 @@ single	troupe	collection	only sumo
 single	troupe	company	only sumo
 single	troupe	firm	only sumo
 single	troupe	team	only sumo
+single	trouser	equipment	only wikidata
 single	trouser	fashion	only sumo
+single	trouser	tool	only wikidata
 single	trust	collection	only sumo
 single	trust	structure	only opencyc
 single	trust	team	only sumo
@@ -10153,7 +10690,10 @@ single	twin	attribute	only sumo
 single	twin	property	only sumo
 single	ulcer	property	only sumo
 single	ulcer	structure	only opencyc
+single	umbrella	clothing	only wikidata
 single	umbrella	device	only opencyc
+single	umbrella	equipment	only wikidata
+single	umbrella	tool	only wikidata
 single	uncertainty	emotion	only opencyc
 single	uncle	attribute	only sumo
 single	uncle	property	only sumo
@@ -10163,7 +10703,9 @@ single	undertaking	procedure	only sumo
 single	undertaking	volition	only sumo
 single	unemployment	situation	only opencyc
 single	uniform	device	only opencyc
+single	uniform	equipment	only wikidata
 single	uniform	fashion	only sumo
+single	uniform	tool	only wikidata
 single	union	association	only sumo
 single	union	collection	only sumo
 single	union	team	only sumo
@@ -10213,6 +10755,8 @@ single	urgency	society	only sumo
 single	urgency	status	only sumo
 single	urgency	tension	only sumo
 single	urgency	way	only sumo
+single	urine	fluid	only wikidata
+single	urine	liquid	only wikidata
 single	urine	solution	only opencyc
 single	use	accomplishment	only sumo
 single	use	procedure	only sumo
@@ -10226,6 +10770,9 @@ single	vacation	activity	only sumo
 single	vacation	procedure	only sumo
 single	vacation	situation	only opencyc
 single	vacation	volition	only sumo
+single	vacuum	equipment	only wikidata
+single	vacuum	machine	only wikidata
+single	vacuum	tool	only wikidata
 single	valley	cavity	only opencyc
 single	valley	depression	only opencyc
 single	valley	landform	only yago
@@ -10234,6 +10781,7 @@ single	van	car	only opencyc
 single	vector	variable	only wordnet
 single	vegetable-oil	body-part	only sumo
 single	vegetable-oil	botanical-fruit	only sumo
+single	vegetable-oil	fuel	only wikidata
 single	vegetable-oil	oil	only opencyc
 single	vegetable-oil	physical-object	only sumo
 single	vegetation	organism	only sumo
@@ -10284,16 +10832,15 @@ single	vertebrate	agent	only sumo
 single	vertebrate	body	only sumo
 single	vertebrate	species	only sumo
 single	vertebrate	structure	only opencyc
-single	vertex	class	only wikidata
 single	vertex	physical-object	only wordnet
-single	vertex	point	only wikidata
-single	vertex	shape	only wikidata
 single	vessel	device	only sumo
 single	veteran	adult	only opencyc
+single	veteran	employee	only wikidata
 single	veteran	human	only opencyc
 single	veteran	mammal	only opencyc
 single	veteran	structure	only opencyc
 single	veteran	vertebrate	only opencyc
+single	veteran	warrior	only wikidata
 single	victim	body	only sumo
 single	victim	populace	only sumo
 single	victim	self	only sumo
@@ -10302,6 +10849,7 @@ single	victim	structure	only opencyc
 single	victory	situation	only opencyc
 single	video	indication	only sumo
 single	view	attribute	only sumo
+single	view	image	only wikidata
 single	view	property	only sumo
 single	villa	container	only opencyc
 single	villa	development	only sumo
@@ -10328,9 +10876,13 @@ single	violence	fight	only sumo
 single	violence	procedure	only sumo
 single	violence	volition	only sumo
 single	violence	war	only sumo
+single	virgin	adult	only wikidata
+single	virgin	animal	only wikidata
 single	virgin	attribute	only sumo
+single	virgin	child	only wikidata
 single	virgin	property	only sumo
 single	virgin	structure	only opencyc
+single	virgin	woman	only wikidata
 single	virtue	information	only opencyc
 single	virtue	normal	only sumo
 single	virtue	property	only sumo
@@ -10344,6 +10896,7 @@ single	visitor	mammal	only opencyc
 single	visitor	property	only sumo
 single	visitor	structure	only opencyc
 single	visitor	vertebrate	only opencyc
+single	vitamin	chemical	only wikidata
 single	vitamin	material	only sumo
 single	voice	property	only sumo
 single	void	attribute	only wordnet
@@ -10372,6 +10925,7 @@ single	voter	mammal	only opencyc
 single	voter	property	only sumo
 single	voter	structure	only opencyc
 single	voter	vertebrate	only opencyc
+single	voyage	motion	only wikidata
 single	voyage	visit	only sumo
 single	wage	quantity	only sumo
 single	waist	structure	only opencyc
@@ -10393,10 +10947,12 @@ single	war	procedure	only sumo
 single	war	situation	only opencyc
 single	war	volition	only sumo
 single	ward	development	only sumo
+single	ward	room	only wikidata
 single	ward	structure	only wordnet
 single	wardrobe	artifact	only sumo
 single	wardrobe	clothing	only sumo
 single	wardrobe	fashion	only sumo
+single	wardrobe	furniture	only wikidata
 single	warrant	artifact	only sumo
 single	warrant	contract-condition	only sumo
 single	warrant	indication	only sumo
@@ -10406,11 +10962,16 @@ single	warrant	text	only sumo
 single	warrior	adult	only opencyc
 single	warrior	human	only opencyc
 single	warrior	mammal	only opencyc
+single	warrior	professional	only opencyc
 single	warrior	structure	only opencyc
 single	warrior	vertebrate	only opencyc
 single	warrior	worker	only opencyc
 single	washbasin	cavity	only opencyc
 single	washbasin	container	only opencyc
+single	watch	clothing	only wikidata
+single	watch	equipment	only wikidata
+single	watch	machine	only wikidata
+single	watch	tool	only wikidata
 single	water-channel	stream	only sumo
 single	water-faucet	container	only opencyc
 single	water-faucet	route	only opencyc
@@ -10467,6 +11028,7 @@ single	web-site	artifact	only wordnet
 single	web-site	device	only wordnet
 single	web-site	machine	only wordnet
 single	web-site	physical-object	only wordnet
+single	web-site	software	only wikidata
 single	wedding	accomplishment	only sumo
 single	wedding	act	only sumo
 single	wedding	action	only opencyc
@@ -10477,7 +11039,10 @@ single	wedding	procedure	only sumo
 single	wedding	situation	only opencyc
 single	wedding	volition	only sumo
 single	weed	agent	only sumo
+single	weed	pest	only wikidata
 single	weed	species	only sumo
+single	weighing-machine	equipment	only wikidata
+single	weighing-machine	tool	only wikidata
 single	welcome	accomplishment	only sumo
 single	welcome	act	only sumo
 single	welcome	activity	only sumo
@@ -10494,8 +11059,13 @@ single	whale	agent	only sumo
 single	whale	body	only sumo
 single	whale	species	only sumo
 single	whale	structure	only opencyc
+single	wheat	commodity	only wikidata
+single	wheat	food	only wikidata
 single	whip	weapon	only sumo
 single	whirligig	device	only sumo
+single	whirligig	entertainment	only wikidata
+single	whirligig	equipment	only wikidata
+single	whirligig	tool	only wikidata
 single	whiskey	agent	only wordnet
 single	whiskey	drug	only wordnet
 single	widow	body	only sumo
@@ -10509,7 +11079,7 @@ single	wilderness	land	only sumo
 single	wilderness	physical-object	only wordnet
 single	wilderness	yard	only sumo
 single	wildlife	agent	only sumo
-single	wildlife	organism	only sumo
+single	wildlife	life	only wikidata
 single	wildlife	species	only sumo
 single	will	contract-condition	only sumo
 single	will	image	only opencyc
@@ -10524,6 +11094,7 @@ single	wimp	populace	only sumo
 single	wimp	self	only sumo
 single	wimp	species	only sumo
 single	wimp	vertebrate	only sumo
+single	wind	motion	only wikidata
 single	wind	process	only wordnet
 single	wine	agent	only wordnet
 single	wine	artifact	only opencyc
@@ -10538,6 +11109,7 @@ single	winnings	event	only sumo
 single	winnings	procedure	only sumo
 single	winnings	volition	only sumo
 single	wire	device	only opencyc
+single	wire	electrical-conductor	only wikidata
 single	wire	line	only opencyc
 single	wire	route	only opencyc
 single	wiretap	accomplishment	only sumo
@@ -10592,8 +11164,9 @@ single	woman	self	only sumo
 single	woman	species	only sumo
 single	woman	structure	only opencyc
 single	wood	body-part	only sumo
+single	wood	commodity	only wikidata
 single	wood	physical-object	only sumo
-single	wood	tissue	only sumo
+single	wool	thread	only wikidata
 single	wording	accomplishment	only sumo
 single	wording	act	only sumo
 single	wording	activity	only sumo
@@ -10606,6 +11179,9 @@ single	work	action	only opencyc
 single	work	procedure	only sumo
 single	work	situation	only opencyc
 single	work	volition	only sumo
+single	workbench	equipment	only wikidata
+single	workbench	table	only wikidata
+single	workbench	tool	only wikidata
 single	worker	human	only opencyc
 single	worker	mammal	only opencyc
 single	worker	structure	only opencyc
@@ -10671,6 +11247,7 @@ single	wreck	tension	only sumo
 single	wreck	way	only sumo
 single	wrinkle	property	only sumo
 single	wrist	structure	only opencyc
+single	writer	artist	only wikidata
 single	wrongdoer	animal	only sumo
 single	wrongdoer	body	only sumo
 single	wrongdoer	human	only sumo
@@ -10680,7 +11257,6 @@ single	wrongdoer	self	only sumo
 single	wrongdoer	species	only sumo
 single	wrongdoer	vertebrate	only sumo
 single	yacht	container	only opencyc
-single	yacht	ship	only sumo
 single	yard	physical-object	only wordnet
 single	yard	region	only wordnet
 single	young-people	animal	only sumo
@@ -10697,19 +11273,18 @@ single	young-people	vertebrate	only sumo
 single	zone	physical-object	only wordnet
 unplaced	aberration	event luminosity natural-event phenomenon process	no accepted parent reaches a root
 unplaced	accelerator	artifact bar physical-object	no accepted parent reaches a root
-unplaced	access	attribute class cognition concept function idea normal property	no accepted parent reaches a root
+unplaced	access	attribute cognition concept function idea normal property	no accepted parent reaches a root
 unplaced	advancement	act amateur ambiance attribute circumstance civilisation crowd custom	no accepted parent reaches a root
 unplaced	affinity.relation	accomplishment act activity event phenomenon procedure volition	no accepted parent reaches a root
 unplaced	afternoon	quantity time-period	no accepted parent reaches a root
 unplaced	agitation	act amateur ambiance attribute circumstance civilisation crowd custom	no accepted parent reaches a root
-unplaced	alliance	organization structure system	no accepted parent reaches a root
 unplaced	altitude	distance placement	no accepted parent reaches a root
 unplaced	alumnus	agent attribute organism person physical-object property scholar	no accepted parent reaches a root
 unplaced	angel	belief cognition information	no accepted parent reaches a root
 unplaced	anniversary	day event quantity time-period	no accepted parent reaches a root
 unplaced	attractive-force	event natural-event phenomenon process	no accepted parent reaches a root
 unplaced	aviation	accomplishment act activity event group leader organization phenomenon	no accepted parent reaches a root
-unplaced	backlog	accomplishment act activity event income phenomenon possession procedure	no accepted parent reaches a root
+unplaced	backlog	accomplishment act activity event hill income phenomenon possession	no accepted parent reaches a root
 unplaced	bail	cognition idea measure plan routine signified	no accepted parent reaches a root
 unplaced	bait	amateur ambiance attribute circumstance civilisation cognition crowd custom	no accepted parent reaches a root
 unplaced	bargain	action event information signified situation	no accepted parent reaches a root
@@ -10724,10 +11299,8 @@ unplaced	bit	fragment phenomenon universe	no accepted parent reaches a root
 unplaced	blink-of-an-eye	amateur ambiance attribute circumstance civilisation crowd custom danger	no accepted parent reaches a root
 unplaced	bosom	amateur ambiance attribute circumstance civilisation cognition crowd custom	no accepted parent reaches a root
 unplaced	brink	attribute phenomenon place shape universe	no accepted parent reaches a root
-unplaced	bubble	attribute globe phenomenon physical-object shape surface universe	no accepted parent reaches a root
 unplaced	budget	fund quantity standard	no accepted parent reaches a root
-unplaced	bustle	act amateur ambiance attribute circumstance civilisation crowd custom	no accepted parent reaches a root
-unplaced	cabinet.group	board-of-directors committee group organization	no accepted parent reaches a root
+unplaced	bustle	act amateur ambiance artifact attribute circumstance civilisation clothing	no accepted parent reaches a root
 unplaced	calendar-month	quantity time-period	no accepted parent reaches a root
 unplaced	camp	agent artifact association collection group organization phenomenon physical-object	no accepted parent reaches a root
 unplaced	capacity	quantity vector volume	no accepted parent reaches a root
@@ -10735,34 +11308,33 @@ unplaced	capitalism	economic-system group system	no accepted parent reaches a ro
 unplaced	cassette	artifact container physical-object	no accepted parent reaches a root
 unplaced	ceiling.communication	argumentation cognition quantity thinking	no accepted parent reaches a root
 unplaced	century	time-period	no accepted parent reaches a root
-unplaced	childhood	quantity time-period	no accepted parent reaches a root
-unplaced	chord	information musical-note signified	no accepted parent reaches a root
+unplaced	childhood	animal organism physical-object quantity time-period	no accepted parent reaches a root
+unplaced	chord	group information musical-note signified	no accepted parent reaches a root
 unplaced	clock-time	cognition quantity	no accepted parent reaches a root
 unplaced	clod	collection group phenomenon universe	no accepted parent reaches a root
 unplaced	column.group	group	no accepted parent reaches a root
 unplaced	commencement	quantity	no accepted parent reaches a root
 unplaced	concern.cognition	attribute condition signified state	no accepted parent reaches a root
 unplaced	confederacy		no accepted parent reaches a root
-unplaced	conscience	attribute context information motivation property	no accepted parent reaches a root
+unplaced	conscience	attribute context information lesson motivation property	no accepted parent reaches a root
 unplaced	consequence	event phenomenon process	no accepted parent reaches a root
-unplaced	consultation	accomplishment act activity coming-together event information phenomenon procedure	no accepted parent reaches a root
+unplaced	consultation	accomplishment act activity coming-together event information meeting phenomenon	no accepted parent reaches a root
 unplaced	contrary		no accepted parent reaches a root
 unplaced	contrast	number	no accepted parent reaches a root
 unplaced	correlation		no accepted parent reaches a root
 unplaced	course-credit	accomplishment act attribute event normal property	no accepted parent reaches a root
 unplaced	course-of-study	action attribute event information normal property situation teaching	no accepted parent reaches a root
 unplaced	creed	belief cognition doctrine information signified	no accepted parent reaches a root
-unplaced	critic	adult agent human mammal organism person physical-object professional	no accepted parent reaches a root
 unplaced	crop	act body-part botanical-fruit commerce commercial-enterprise event industry phenomenon	no accepted parent reaches a root
 unplaced	cupful		no accepted parent reaches a root
-unplaced	current	event natural-event phenomenon process	no accepted parent reaches a root
+unplaced	current	electricity event natural-event phenomenon process	no accepted parent reaches a root
 unplaced	cut-rate-sale	accomplishment act activity attribute event exchange interaction opportunity	no accepted parent reaches a root
 unplaced	dawn	clock-time cognition quantity time-of-day	no accepted parent reaches a root
 unplaced	day	quantity	no accepted parent reaches a root
 unplaced	day-of-the-month	day quantity	no accepted parent reaches a root
 unplaced	deadline	quantity	no accepted parent reaches a root
 unplaced	decade	quantity time-period	no accepted parent reaches a root
-unplaced	deity	belief cognition information	no accepted parent reaches a root
+unplaced	deity	belief cognition concept information	no accepted parent reaches a root
 unplaced	demand.process	process	no accepted parent reaches a root
 unplaced	democracy	group	no accepted parent reaches a root
 unplaced	deposit	fund standard	no accepted parent reaches a root
@@ -10788,7 +11360,7 @@ unplaced	economic-value	quantity	no accepted parent reaches a root
 unplaced	electric-charge	natural-event phenomenon process quantity vector	no accepted parent reaches a root
 unplaced	electricity	event natural-event phenomenon process	no accepted parent reaches a root
 unplaced	employer	agent leader organism person physical-object	no accepted parent reaches a root
-unplaced	engagement	accomplishment act activity coming-together event group phenomenon procedure	no accepted parent reaches a root
+unplaced	engagement	accomplishment act activity coming-together declaration event group phenomenon	no accepted parent reaches a root
 unplaced	entitlement	attribute cognition concept idea normal property title	no accepted parent reaches a root
 unplaced	entree	attribute cognition concept idea normal property	no accepted parent reaches a root
 unplaced	era	quantity time-period	no accepted parent reaches a root
@@ -10796,9 +11368,9 @@ unplaced	europe		no accepted parent reaches a root
 unplaced	evening	quantity time-period	no accepted parent reaches a root
 unplaced	exam	act artifact communication contract-condition device event indication information	no accepted parent reaches a root
 unplaced	exemption	act attribute event normal property release	no accepted parent reaches a root
-unplaced	exercise	act activity event labor work	no accepted parent reaches a root
+unplaced	exercise	act activity event fitness labor work	no accepted parent reaches a root
 unplaced	extension.time	event pause phenomenon	no accepted parent reaches a root
-unplaced	extraterrestrial-being	agent cognition phenomenon structure system universe	no accepted parent reaches a root
+unplaced	extraterrestrial-being	agent cognition organism phenomenon physical-object structure system universe	no accepted parent reaches a root
 unplaced	fairy	agent belief cognition information phenomenon self structure system	no accepted parent reaches a root
 unplaced	fall	quantity season time-period	no accepted parent reaches a root
 unplaced	fictional-character	agent cognition phenomenon self universe	no accepted parent reaches a root
@@ -10815,22 +11387,21 @@ unplaced	fraction	number	no accepted parent reaches a root
 unplaced	fragment	phenomenon universe	no accepted parent reaches a root
 unplaced	freak	amateur ambiance attribute circumstance civilisation crowd custom danger	no accepted parent reaches a root
 unplaced	frequency	quantity vector	no accepted parent reaches a root
-unplaced	friend	agent attribute organism peer person physical-object property	no accepted parent reaches a root
 unplaced	front	artifact physical-object	no accepted parent reaches a root
 unplaced	frustration	attribute desire disappointment emotion feeling state	no accepted parent reaches a root
-unplaced	function	class disposition	no accepted parent reaches a root
+unplaced	function	disposition	no accepted parent reaches a root
 unplaced	fund	standard	no accepted parent reaches a root
 unplaced	future	attribute	no accepted parent reaches a root
 unplaced	gap	artifact physical-object	no accepted parent reaches a root
 unplaced	garden	agent artifact collection group organism phenomenon physical-object place	no accepted parent reaches a root
-unplaced	gas	natural-event phenomenon process state-of-matter substance	no accepted parent reaches a root
+unplaced	gas	fluid natural-event phenomenon process state-of-matter substance	no accepted parent reaches a root
 unplaced	gem	ground mineral substance	no accepted parent reaches a root
 unplaced	gene	compound group material molecule phenomenon sequence substance universe	no accepted parent reaches a root
 unplaced	globe	artifact attribute image information map shape	no accepted parent reaches a root
 unplaced	grade	quantity	no accepted parent reaches a root
 unplaced	grain.object	material part phenomenon substance universe	no accepted parent reaches a root
 unplaced	gravity	attractive-force event natural-event phenomenon process	no accepted parent reaches a root
-unplaced	ground	cognition information phenomenon universe view	no accepted parent reaches a root
+unplaced	ground	cognition electrical-conductor information phenomenon universe view	no accepted parent reaches a root
 unplaced	guidepost	artifact attribute cognition concept idea image normal property	no accepted parent reaches a root
 unplaced	guinea-pig	agent mammal organism person physical-object structure system vertebrate	no accepted parent reaches a root
 unplaced	harvest	event locating phenomenon season time-period visit	no accepted parent reaches a root
@@ -10853,17 +11424,17 @@ unplaced	impetus	attribute degree force quantity vector	no accepted parent reach
 unplaced	implication	signified	no accepted parent reaches a root
 unplaced	incentive	action event motivation situation	no accepted parent reaches a root
 unplaced	influence.phenomenon	consequence event phenomenon process	no accepted parent reaches a root
-unplaced	infrastructure	artifact attribute constitution phenomenon universe	no accepted parent reaches a root
+unplaced	infrastructure	artifact attribute constitution phenomenon structure universe	no accepted parent reaches a root
 unplaced	insider	administrator agent attribute chief leader organism person physical-object	no accepted parent reaches a root
 unplaced	intervention	action argumentation cognition event situation thinking	no accepted parent reaches a root
 unplaced	iteration	event phenomenon process	no accepted parent reaches a root
-unplaced	jurisprudence	collection group	no accepted parent reaches a root
+unplaced	jurisprudence	collection group legislation	no accepted parent reaches a root
 unplaced	kick	attribute cognition property	no accepted parent reaches a root
 unplaced	king	agent organism person physical-object representative sovereign	no accepted parent reaches a root
 unplaced	kinship	attribute property	no accepted parent reaches a root
 unplaced	knot	artifact device event line phenomenon physical-object	no accepted parent reaches a root
 unplaced	koran	artifact book component device indication information mechanism phenomenon	no accepted parent reaches a root
-unplaced	laurel-wreath	accomplishment act activity event information phenomenon procedure signal	no accepted parent reaches a root
+unplaced	laurel-wreath	accomplishment act activity artifact clothing equipment event information	no accepted parent reaches a root
 unplaced	leave	quantity time-period	no accepted parent reaches a root
 unplaced	legal-age	quantity time-period	no accepted parent reaches a root
 unplaced	level	attribute cognition normal property	no accepted parent reaches a root
@@ -10898,20 +11469,17 @@ unplaced	moon		no accepted parent reaches a root
 unplaced	morning	quantity time-period	no accepted parent reaches a root
 unplaced	morsel	food phenomenon universe	no accepted parent reaches a root
 unplaced	motivation	attribute property	no accepted parent reaches a root
-unplaced	name	indication information part phenomenon physical-object universe	no accepted parent reaches a root
 unplaced	nature.object	natural-object phenomenon physical-object universe	no accepted parent reaches a root
 unplaced	nature.person	agent	no accepted parent reaches a root
 unplaced	necessity		no accepted parent reaches a root
-unplaced	negotiation	accomplishment act activity coming-together event information phenomenon procedure	no accepted parent reaches a root
+unplaced	negotiation	accomplishment act activity coming-together dialogue event information phenomenon	no accepted parent reaches a root
 unplaced	network	artifact facility physical-object system	no accepted parent reaches a root
 unplaced	night	quantity time-period	no accepted parent reaches a root
-unplaced	nightmare	cognition dream event imagination information phenomenon	no accepted parent reaches a root
 unplaced	node	attribute shape	no accepted parent reaches a root
-unplaced	norm	attribute class function information normal property standard	no accepted parent reaches a root
+unplaced	norm	attribute information normal property standard	no accepted parent reaches a root
 unplaced	north		no accepted parent reaches a root
 unplaced	notice.communication	act event	no accepted parent reaches a root
 unplaced	nowadays	attribute quantity	no accepted parent reaches a root
-unplaced	obstacle	artifact event phenomenon physical-object structure	no accepted parent reaches a root
 unplaced	occasion	quantity	no accepted parent reaches a root
 unplaced	ocean.quantity	amateur ambiance attribute circumstance civilisation crowd custom danger	no accepted parent reaches a root
 unplaced	old-age	quantity time-period	no accepted parent reaches a root
@@ -10923,12 +11491,12 @@ unplaced	outflow	physical-object	no accepted parent reaches a root
 unplaced	output	quantity	no accepted parent reaches a root
 unplaced	ownership	attribute property	no accepted parent reaches a root
 unplaced	page	material paper part piece-of-paper substance	no accepted parent reaches a root
-unplaced	pain	cognition event perception phenomenon	no accepted parent reaches a root
+unplaced	pain	cognition event perception phenomenon symptom	no accepted parent reaches a root
 unplaced	pan	agent animal artifact body container device group mammal	no accepted parent reaches a root
 unplaced	parking	action event phenomenon place situation transport universe	no accepted parent reaches a root
 unplaced	part		no accepted parent reaches a root
 unplaced	past	attribute	no accepted parent reaches a root
-unplaced	pattern	cognition exemplar idea	no accepted parent reaches a root
+unplaced	pattern	cognition decorative-design exemplar idea	no accepted parent reaches a root
 unplaced	pause	quantity	no accepted parent reaches a root
 unplaced	peel	body-part botanical-fruit material part phenomenon physical-object substance universe	no accepted parent reaches a root
 unplaced	percentage	number proportion.relation quantity ratio	no accepted parent reaches a root
@@ -10939,25 +11507,23 @@ unplaced	pity	amateur ambiance attribute circumstance civilisation crowd custom 
 unplaced	placement	accomplishment act activity event phenomenon procedure volition	no accepted parent reaches a root
 unplaced	plot.communication	fiction information signified	no accepted parent reaches a root
 unplaced	point-of-view	attitude attribute cognition normal position property	no accepted parent reaches a root
-unplaced	poser	agent assistant attribute organism person physical-object property worker	no accepted parent reaches a root
+unplaced	poser	agent assistant attribute mannequin organism person physical-object property	no accepted parent reaches a root
 unplaced	precondition	information premise proposition signified	no accepted parent reaches a root
 unplaced	predilection	attitude cognition inclination	no accepted parent reaches a root
 unplaced	presidency	organization quantity time-period	no accepted parent reaches a root
-unplaced	president	agent organism person physical-object representative	no accepted parent reaches a root
 unplaced	pressure	natural-event phenomenon process	no accepted parent reaches a root
-unplaced	principle	cognition concept context idea information natural-law signified	no accepted parent reaches a root
+unplaced	principle	cognition concept context idea information natural-law signified structure	no accepted parent reaches a root
 unplaced	prize	accomplishment acquisition act activity event gift phenomenon possession	no accepted parent reaches a root
 unplaced	probability		no accepted parent reaches a root
 unplaced	probe	accomplishment act activity cognition event information phenomenon procedure	no accepted parent reaches a root
 unplaced	product	artifact cognition concept idea quantity	no accepted parent reaches a root
 unplaced	product.phenomenon	consequence event phenomenon process	no accepted parent reaches a root
-unplaced	professional	adult agent attribute human mammal organism person physical-object	no accepted parent reaches a root
 unplaced	projection	accomplishment act activity cognition event information phenomenon procedure	no accepted parent reaches a root
 unplaced	projection.communication	event information luminosity phenomenon	no accepted parent reaches a root
 unplaced	proportion	amateur ambiance attribute circumstance civilisation crowd custom danger	no accepted parent reaches a root
 unplaced	pupil	attribute body-part cavity empty-space hole part physical-object place	no accepted parent reaches a root
 unplaced	quarter.time	quantity time-period	no accepted parent reaches a root
-unplaced	racism	attitude bias cognition inclination signified	no accepted parent reaches a root
+unplaced	racism	attitude bias cognition crime inclination signified	no accepted parent reaches a root
 unplaced	railway-line	artifact physical-object road	no accepted parent reaches a root
 unplaced	rake	artifact device hardware quantity tool	no accepted parent reaches a root
 unplaced	reaction	event natural-event phenomenon process	no accepted parent reaches a root
@@ -10978,26 +11544,25 @@ unplaced	respite	pause quantity	no accepted parent reaches a root
 unplaced	response	attribute greeting information normal property	no accepted parent reaches a root
 unplaced	responsibility	act event	no accepted parent reaches a root
 unplaced	restraint.cognition	cognition concept idea restriction rule	no accepted parent reaches a root
-unplaced	restriction	class cognition concept function idea rule	no accepted parent reaches a root
+unplaced	restriction	cognition concept function idea rule	no accepted parent reaches a root
 unplaced	right-to-vote	attribute cognition concept idea normal property	no accepted parent reaches a root
 unplaced	risk	act activity amateur ambiance attribute circumstance civilisation crowd	no accepted parent reaches a root
-unplaced	role-model	agent attribute leader organism person physical-object property	no accepted parent reaches a root
 unplaced	rootage	physical-object place	no accepted parent reaches a root
 unplaced	rule.cognition	act activity event measure procedure routine signified	no accepted parent reaches a root
 unplaced	rule.time	quantity time-period	no accepted parent reaches a root
 unplaced	sarcasm	amateur ambiance attribute circumstance civilisation crowd custom danger	no accepted parent reaches a root
 unplaced	scale-of-measurement	information quantity standard	no accepted parent reaches a root
 unplaced	school-term	quantity time-period	no accepted parent reaches a root
-unplaced	score	class function measure quantity	no accepted parent reaches a root
+unplaced	score	function quantity	no accepted parent reaches a root
 unplaced	season	information quantity time-period	no accepted parent reaches a root
 unplaced	sec		no accepted parent reaches a root
 unplaced	sequence	group	no accepted parent reaches a root
 unplaced	share	document information legal-document	no accepted parent reaches a root
-unplaced	shift	class function quantity time-period	no accepted parent reaches a root
+unplaced	shift	quantity time-period	no accepted parent reaches a root
 unplaced	short-circuit	artifact physical-object	no accepted parent reaches a root
 unplaced	signature	artifact image indication information name part phenomenon physical-object	no accepted parent reaches a root
 unplaced	signified	information	no accepted parent reaches a root
-unplaced	skin-cream	artifact material phenomenon physical-object substance universe	no accepted parent reaches a root
+unplaced	skin-cream	artifact chemical material phenomenon physical-object substance universe	no accepted parent reaches a root
 unplaced	slant	attitude cognition point-of-view position	no accepted parent reaches a root
 unplaced	slice	phenomenon universe	no accepted parent reaches a root
 unplaced	slot	artifact physical-object	no accepted parent reaches a root
@@ -11014,10 +11579,9 @@ unplaced	subject	phenomenon universe	no accepted parent reaches a root
 unplaced	summation	act activity event procedure	no accepted parent reaches a root
 unplaced	summer	quantity season time-period	no accepted parent reaches a root
 unplaced	sun		no accepted parent reaches a root
-unplaced	sunday	day quantity time-period	no accepted parent reaches a root
+unplaced	sunday	day holiday quantity time-period	no accepted parent reaches a root
 unplaced	supply	artifact	no accepted parent reaches a root
 unplaced	surrender	action attribute despair event feeling situation state	no accepted parent reaches a root
-unplaced	surrogate	agent attribute organism peer person physical-object property	no accepted parent reaches a root
 unplaced	syllable	information part phenomenon universe	no accepted parent reaches a root
 unplaced	sympathy	attitude cognition emotion inclination	no accepted parent reaches a root
 unplaced	system	collection group phenomenon	no accepted parent reaches a root
@@ -11025,9 +11589,9 @@ unplaced	tabular-array	group indication information phenomenon physical-object u
 unplaced	tariff	possession tax	no accepted parent reaches a root
 unplaced	tax	possession quantity	no accepted parent reaches a root
 unplaced	teacher	adult agent organism person physical-object professional	no accepted parent reaches a root
-unplaced	tear	chemical-solution material phenomenon substance universe	no accepted parent reaches a root
+unplaced	tear	chemical-solution fluid liquid material phenomenon substance universe	no accepted parent reaches a root
 unplaced	telephone-line	artifact physical-object	no accepted parent reaches a root
-unplaced	television	artifact physical-object product	no accepted parent reaches a root
+unplaced	television	artifact medium physical-object product	no accepted parent reaches a root
 unplaced	tempo		no accepted parent reaches a root
 unplaced	tendency	attribute physical-object place property route	no accepted parent reaches a root
 unplaced	term	information line-of-text part phenomenon universe word	no accepted parent reaches a root
@@ -11038,7 +11602,7 @@ unplaced	time-of-day	clock-time cognition quantity	no accepted parent reaches a 
 unplaced	time-period	quantity	no accepted parent reaches a root
 unplaced	time-slot	quantity	no accepted parent reaches a root
 unplaced	title	attribute cognition concept idea normal property	no accepted parent reaches a root
-unplaced	title-of-respect	information line-of-text name part phenomenon universe word	no accepted parent reaches a root
+unplaced	title-of-respect	information line-of-text name part phenomenon sign universe word	no accepted parent reaches a root
 unplaced	tonality	event information phenomenon	no accepted parent reaches a root
 unplaced	tone	attribute information manner-of-speaking property	no accepted parent reaches a root
 unplaced	track	artifact device phenomenon physical-object place route universe	no accepted parent reaches a root
@@ -11048,13 +11612,12 @@ unplaced	trial	action cognition conflict event quantity situation thinking	no ac
 unplaced	twelve	number percentage quantity	no accepted parent reaches a root
 unplaced	twilight	clock-time cognition quantity time-of-day	no accepted parent reaches a root
 unplaced	unit	cognition concept idea quantity	no accepted parent reaches a root
-unplaced	universe	class phenomenon	no accepted parent reaches a root
+unplaced	universe	phenomenon	no accepted parent reaches a root
 unplaced	upgrade	attribute grade property	no accepted parent reaches a root
-unplaced	vacuum	artifact commodity physical-object	no accepted parent reaches a root
 unplaced	variant	agent group organism phenomenon physical-object species universe	no accepted parent reaches a root
 unplaced	venus		no accepted parent reaches a root
 unplaced	version	category cognition concept idea	no accepted parent reaches a root
-unplaced	volume	class function measure quantity vector	no accepted parent reaches a root
+unplaced	volume	quantity vector	no accepted parent reaches a root
 unplaced	wallop	consequence event phenomenon process	no accepted parent reaches a root
 unplaced	web	collection group phenomenon system	no accepted parent reaches a root
 unplaced	week	quantity time-period	no accepted parent reaches a root
