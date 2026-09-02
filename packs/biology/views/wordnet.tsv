@@ -401,6 +401,7 @@ apple	botanical-fruit
 apple	fruit
 apple	natural-object
 apple	physical-object
+apple	plant-part
 apple	produce
 apple	substance
 appliance	artifact
@@ -697,6 +698,7 @@ banana	botanical-fruit
 banana	fruit
 banana	natural-object
 banana	physical-object
+banana	plant-part
 banana	produce
 banana	substance
 band	artifact
@@ -886,6 +888,7 @@ berry	botanical-fruit
 berry	fruit
 berry	natural-object
 berry	physical-object
+berry	plant-part
 berry	produce
 berry	substance
 bet	act
@@ -1065,6 +1068,7 @@ botanical-division	phylum
 botanical-division	taxonomic-group
 botanical-fruit	natural-object
 botanical-fruit	physical-object
+botanical-fruit	plant-part
 bottle	artifact
 bottle	container
 bottle	physical-object
@@ -1116,6 +1120,7 @@ brake	device
 brake	physical-object
 branch	natural-object
 branch	physical-object
+branch	plant-part
 branch	stalk
 brand	category
 brand	cognition
@@ -1192,6 +1197,7 @@ building	physical-object
 building	structure
 bulb	natural-object
 bulb	physical-object
+bulb	plant-part
 bulb	stalk
 bullet	artifact
 bullet	device
@@ -1405,6 +1411,7 @@ carrier	organism
 carrier	physical-object
 carrot	natural-object
 carrot	physical-object
+carrot	plant-part
 carrot	plant-root
 carrying-out	act
 carrying-out	event
@@ -1613,6 +1620,7 @@ cherry	botanical-fruit
 cherry	fruit
 cherry	natural-object
 cherry	physical-object
+cherry	plant-part
 cherry	produce
 cherry	substance
 chess-king	artifact
@@ -2132,8 +2140,6 @@ cook	physical-object
 cook	worker
 cookie	cake
 cookie	substance
-cooking-pan	artifact
-cooking-pan	physical-object
 cooking-pot	artifact
 cooking-pot	container
 cooking-pot	physical-object
@@ -2173,6 +2179,7 @@ corolla	attribute
 corolla	shape
 corona	natural-object
 corona	physical-object
+corona	plant-part
 correction	act
 correction	event
 correspondence	information
@@ -2471,6 +2478,7 @@ date	botanical-fruit
 date	fruit
 date	natural-object
 date	physical-object
+date	plant-part
 date	produce
 date	substance
 daughter	agent
@@ -2838,6 +2846,11 @@ division	procedure
 divorce	act
 divorce	event
 divorce	separation
+dna	chemical
+dna	compound
+dna	material
+dna	part
+dna	substance
 doctor	adult
 doctor	agent
 doctor	organism
@@ -3546,6 +3559,7 @@ fig	botanical-fruit
 fig	fruit
 fig	natural-object
 fig	physical-object
+fig	plant-part
 fig	produce
 fig	substance
 fight	act
@@ -3669,8 +3683,10 @@ flower	physical-object
 flower	plant
 flower-lip	natural-object
 flower-lip	physical-object
+flower-lip	plant-part
 flower-style	natural-object
 flower-style	physical-object
+flower-style	plant-part
 flowerpot	artifact
 flowerpot	container
 flowerpot	physical-object
@@ -3847,6 +3863,7 @@ front	physical-object
 fruit	botanical-fruit
 fruit	natural-object
 fruit	physical-object
+fruit	plant-part
 fruit	produce
 fruit	substance
 frustration	attribute
@@ -3978,6 +3995,9 @@ gentleman	person
 gentleman	physical-object
 genus	group
 genus	taxonomic-group
+genus-pan	genus
+genus-pan	group
+genus-pan	taxonomic-group
 geographic-pole	physical-object
 geographic-pole	place
 geography	cognition
@@ -3989,6 +4009,7 @@ geometric-base	attribute
 geometric-base	shape
 germ-tube	natural-object
 germ-tube	physical-object
+germ-tube	plant-part
 gesture	act
 gesture	event
 gesture	motion
@@ -5179,9 +5200,11 @@ leadership	activity
 leadership	event
 leaf	natural-object
 leaf	physical-object
+leaf	plant-part
 leaf-blade	leaf
 leaf-blade	natural-object
 leaf-blade	physical-object
+leaf-blade	plant-part
 leaf-node	body-part
 learner	agent
 learner	organism
@@ -5241,6 +5264,7 @@ lemon	botanical-fruit
 lemon	fruit
 lemon	natural-object
 lemon	physical-object
+lemon	plant-part
 lemon	produce
 lemon	substance
 lengthiness	attribute
@@ -5304,6 +5328,7 @@ lighter	device
 lighter	physical-object
 ligule	natural-object
 ligule	physical-object
+ligule	plant-part
 lily	organism
 lily	physical-object
 lily	plant
@@ -5367,6 +5392,7 @@ lobby	group
 lobby	organization
 lobe	natural-object
 lobe	physical-object
+lobe	plant-part
 localization-of-function	cognition
 localization-of-function	concept
 localization-of-function	idea
@@ -6288,6 +6314,7 @@ nursery	structure
 nut	botanical-fruit
 nut	natural-object
 nut	physical-object
+nut	plant-part
 nut	seed
 nutrition	organic-process
 nutrition	process
@@ -6352,6 +6379,7 @@ one-half	fraction
 onion	bulb
 onion	natural-object
 onion	physical-object
+onion	plant-part
 onion	stalk
 oocyte	cell
 oocyte	gametocyte
@@ -6395,6 +6423,7 @@ orange	botanical-fruit
 orange	fruit
 orange	natural-object
 orange	physical-object
+orange	plant-part
 orange	produce
 orange	substance
 orange-colour	attribute
@@ -6534,9 +6563,8 @@ palm	organism
 palm	physical-object
 palm	plant
 palm	tree
-pan	genus
-pan	group
-pan	taxonomic-group
+pan	artifact
+pan	physical-object
 panel	artifact
 panel	physical-object
 panic	attribute
@@ -6680,6 +6708,7 @@ peanut	botanical-fruit
 peanut	natural-object
 peanut	nut
 peanut	physical-object
+peanut	plant-part
 peanut	seed
 peasant	agent
 peasant	employee
@@ -6782,6 +6811,7 @@ philosophy	field-of-study
 philosophy	humanities
 phloem	natural-object
 phloem	physical-object
+phloem	plant-part
 phone	artifact
 phone	equipment
 phone	physical-object
@@ -6867,6 +6897,7 @@ pitch	attribute
 pitcher	leaf
 pitcher	natural-object
 pitcher	physical-object
+pitcher	plant-part
 pity	event
 pity	trouble
 place	physical-object
@@ -6892,8 +6923,11 @@ plant-cell	physical-object
 plant-embryo	organism
 plant-embryo	physical-object
 plant-embryo	plant
+plant-part	natural-object
+plant-part	physical-object
 plant-root	natural-object
 plant-root	physical-object
+plant-root	plant-part
 plantae	group
 plantae	taxonomic-group
 plasma-cell	blood-cell
@@ -7006,6 +7040,7 @@ poll	event
 poll	work
 pollen-tube	natural-object
 pollen-tube	physical-object
+pollen-tube	plant-part
 polygene	gene
 polygene	group
 polygene	sequence
@@ -7373,6 +7408,7 @@ pudding	food
 pudding	substance
 pulp	natural-object
 pulp	physical-object
+pulp	plant-part
 pulse	event
 pump	artifact
 pump	device
@@ -8255,6 +8291,7 @@ sediment	substance
 seed	botanical-fruit
 seed	natural-object
 seed	physical-object
+seed	plant-part
 seeded-player	agent
 seeded-player	organism
 seeded-player	person
@@ -8785,6 +8822,7 @@ spider	organism
 spider	physical-object
 spike	natural-object
 spike	physical-object
+spike	plant-part
 spinach	produce
 spinach	substance
 spinach	vegetable
@@ -8892,6 +8930,7 @@ stake	investment
 stake	possession
 stalk	natural-object
 stalk	physical-object
+stalk	plant-part
 stall	artifact
 stall	physical-object
 stall	shop
@@ -8993,6 +9032,7 @@ strawberry	botanical-fruit
 strawberry	fruit
 strawberry	natural-object
 strawberry	physical-object
+strawberry	plant-part
 strawberry	produce
 strawberry	substance
 stream	body-of-water
@@ -9250,6 +9290,7 @@ tapeline	instrument
 tapeline	physical-object
 taproot	natural-object
 taproot	physical-object
+taproot	plant-part
 taproot	plant-root
 target	information
 target	reference-point
