@@ -1212,6 +1212,8 @@ single	book-index	indication	only sumo
 single	book-index	line-of-text	only sumo
 single	book-index	physical-object	only sumo
 single	book-index	text	only sumo
+single	book-volume	artifact	only wordnet
+single	book-volume	physical-object	only wordnet
 single	booklet	component	only sumo
 single	booklet	device	only sumo
 single	booklet	indication	only sumo
@@ -11300,8 +11302,6 @@ single	void	attribute	only wordnet
 single	void	information	only opencyc
 single	void	physical-object	only wordnet
 single	volcano	physical-object	only wordnet
-single	volume	artifact	only wordnet
-single	volume	physical-object	only wordnet
 single	volunteer	agent	only wordnet
 single	volunteer	attribute	only sumo
 single	volunteer	human	only opencyc
@@ -11454,9 +11454,6 @@ single	weed	species	only sumo
 single	weighing-machine	artifact	only wordnet
 single	weighing-machine	device	only wordnet
 single	weighing-machine	physical-object	only wordnet
-single	weight	artifact	only opencyc
-single	weight	device	only opencyc
-single	weight	equipment	only claude
 single	welcome	accomplishment	only sumo
 single	welcome	act	only sumo
 single	welcome	activity	only sumo
@@ -11753,7 +11750,7 @@ unplaced	cabinet.group	board-of-directors committee group organization	no accept
 unplaced	calendar	cognition quantity	no accepted parent reaches a root
 unplaced	calendar-month	quantity time-period	no accepted parent reaches a root
 unplaced	camp	agent artifact association collection group organization phenomenon physical-object	no accepted parent reaches a root
-unplaced	capacity	quantity vector volume.quantity	no accepted parent reaches a root
+unplaced	capacity	quantity vector volume	no accepted parent reaches a root
 unplaced	capitalism	economic-system group system	no accepted parent reaches a root
 unplaced	cassette	artifact container physical-object	no accepted parent reaches a root
 unplaced	category	cognition concept idea	no accepted parent reaches a root
@@ -12189,7 +12186,7 @@ unplaced	version	category cognition concept idea	no accepted parent reaches a ro
 unplaced	view	attribute cognition property	no accepted parent reaches a root
 unplaced	vision	cognition imagination	no accepted parent reaches a root
 unplaced	volition	cognition event phenomenon	no accepted parent reaches a root
-unplaced	volume.quantity	quantity vector	no accepted parent reaches a root
+unplaced	volume	quantity vector	no accepted parent reaches a root
 unplaced	wallop	consequence event phenomenon process	no accepted parent reaches a root
 unplaced	web	collection group phenomenon system	no accepted parent reaches a root
 unplaced	week	quantity time-period	no accepted parent reaches a root

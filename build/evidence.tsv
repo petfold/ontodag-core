@@ -2698,6 +2698,9 @@ book-index	phenomenon	single	sumo
 book-index	physical-object	single	sumo	
 book-index	text	single	sumo	
 book-index	universe	single	sumo	
+book-volume	artifact	single	wordnet	
+book-volume	physical-object	single	wordnet	
+book-volume	publication	accepted	claude wordnet	
 booklet	artifact	accepted	sumo wordnet	
 booklet	book	accepted	sumo wordnet	
 booklet	component	single	sumo	
@@ -3449,7 +3452,7 @@ cap	physical-object	single	wordnet
 cap	universe	single	sumo	
 capacity	quantity	single	sumo	
 capacity	vector	single	sumo	
-capacity	volume.quantity	single	wordnet	
+capacity	volume	single	wordnet	
 capital	character	accepted	sumo wordnet	
 capital	information	accepted	sumo wordnet	
 capital	phenomenon	single	sumo	
@@ -25254,11 +25257,8 @@ volcano	place	accepted	schemaorg yago
 volition	cognition	single	wordnet	
 volition	event	single	sumo	
 volition	phenomenon	single	sumo	
-volume	artifact	single	wordnet	
-volume	physical-object	single	wordnet	
-volume	publication	accepted	claude wordnet	
-volume.quantity	quantity	single	sumo	
-volume.quantity	vector	single	sumo	
+volume	quantity	single	sumo	
+volume	vector	single	sumo	
 volunteer	agent	single	wordnet	
 volunteer	attribute	single	sumo	
 volunteer	human	single	opencyc	
@@ -25578,11 +25578,8 @@ weighing-machine	artifact	single	wordnet
 weighing-machine	device	single	wordnet	
 weighing-machine	instrument	accepted	claude wordnet	
 weighing-machine	physical-object	single	wordnet	
-weight	artifact	single	opencyc	
-weight	attribute	accepted	claude wordnet	
-weight	device	single	opencyc	
 weight	equipment	single	claude	
-weight	quantity	single	sumo	
+weight.attribute	attribute	single	claude	
 welcome	accomplishment	single	sumo	
 welcome	act	single	sumo	
 welcome	activity	single	sumo	
