@@ -12,6 +12,7 @@ accident trouble.event
 accomplishment act
 account statement
 accountant person
+accretion increase
 accusation assertion
 ace expert
 acid compound
@@ -112,7 +113,7 @@ apparel clothing
 appeal appearance
 appearance attribute
 appendix body-part
-appetite attribute
+appetite desire
 apple fruit
 appliance device
 applicant person
@@ -144,7 +145,7 @@ artist person
 artistic-creation creation
 ash substance
 ash-grey attribute
-aspiration attribute
+aspiration desire
 assault crime
 assembly-hall room
 assertion declaration
@@ -336,6 +337,7 @@ bundle container
 bungalow house
 bureaucracy organization
 burial funeral
+burn injury
 bus artifact
 bus-ticket artifact transport-ticket
 business-deal transaction
@@ -372,7 +374,7 @@ cap clothing
 capital character
 capital-city central-area city
 capital.possession possession
-caprice attribute
+caprice desire
 captain worker
 caption section-title
 caput body-part
@@ -484,6 +486,7 @@ civilian citizen
 civilisation society
 civilization society
 claim assertion
+clash conflict.state
 class people
 classroom room
 clay soil
@@ -512,6 +515,7 @@ coffin box
 coin cash information
 coincidence chance-event
 cold disease
+coldness temperature
 collapse event
 collar artifact
 colleague peer
@@ -540,6 +544,7 @@ communicative-contact communication
 communist politician
 community group
 compact car
+companionship friendship
 company institution
 comparison event
 compartment empty-space
@@ -576,6 +581,7 @@ confederation organization
 conference meeting
 confession admission
 confidence feeling
+confidence.state friendship
 confirmation proof
 conflict attribute
 conflict.state state
@@ -590,7 +596,7 @@ connection transport
 connection.person acquaintance.person
 consciousness condition.state
 conscription act
-consensus event
+consensus agreement event
 conservation protection
 consideration good
 consideration.cognition thinking
@@ -664,7 +670,7 @@ crash accident
 cream.food dairy-product
 creation activity
 credibility attribute
-credit-card identification service
+credit-card credit.possession identification service
 credit.possession possession
 crevice attribute
 crew organization
@@ -711,7 +717,7 @@ dairy-product food
 damage change
 danger condition.state
 dark state
-dark-blue attribute
+dark-blue blue
 darling person
 dash attribute
 data-file indication
@@ -797,7 +803,7 @@ director member
 directory book
 disability condition.state
 disadvantage attribute
-disagreement attribute
+disagreement conflict.state
 discipline punishment
 disco artifact
 discount diminution
@@ -883,7 +889,7 @@ economist scientist
 economy trait virtue
 ecstasy emotion
 edge artifact
-edge.attribute attribute
+edge.attribute asset
 edition publication
 education activity
 egg food
@@ -939,6 +945,7 @@ escape act
 escort person
 esprit-de-corps disposition
 essay information
+estate belongings
 estimate calculation
 ethics philosophy
 event '*'
@@ -970,7 +977,7 @@ exposure weakness
 expressway road
 extension phone
 extent attribute
-extreme attribute
+extreme degree
 eye organ.body
 eyebrow body-part hair
 eyelid body-part
@@ -1082,12 +1089,13 @@ formal-application request
 formal-proof indication
 formal-science science
 formula information
-forte attribute
+forte asset
 forum meeting
 fossil physical-object
 foundation institution
 fountain fixture
 fox mammal
+fracture injury
 franchise organization
 frank sausage
 fraud activity
@@ -1120,6 +1128,7 @@ garage building
 garbage waste
 garden-bed plot
 garlic food
+gash injury
 gasoline chemical fuel
 gate structure
 gaze activity
@@ -1263,46 +1272,54 @@ hotel building organization
 house building dwelling
 house.group legislature
 houseplant plant
+housewife wife
 housing structure
 hovel structure
 human mammal person
 human-body body
 humanities field-of-study
+humanness attribute
 humor trait
 hunt sport
 hunter human worker
 hunting-expedition journey
+husband spouse
 hybrid organism
 ice substance
 ice-cream dessert
 identicalness attribute
 identification indication
-identity attribute
+identity personality
 identity-card identification
-illness attribute
+illness condition.state
 illustration artifact information
 image information
 immigrant person
 immigration migration
 impact event
-imperativeness attribute
+imperativeness need
 import commodity
-importance attribute
+importance worth
 imposter human wrongdoer
-impression attribute
-improvement attribute
+impression appearance
+improvement condition.state
 impudence information
-incertitude attribute
+incertitude condition.state
 incident event
-indemnity attribute
+income possession
+increase process
+increment magnitude
+indemnity protection.state
 index finger
 indication information
 indicator-needle device
-indigence attribute
+indigence condition.state
 individual organism
 industry commercial-enterprise
 infection incident
+inflation process
 influence attribute
+influenza disease
 informant person
 information '*'
 ingredient component
@@ -1310,6 +1327,7 @@ inhabitant person
 inhibition activity
 initial letter-of-the-alphabet
 injection tending
+injury condition.state
 innovation artifact
 inquest work
 insect invertebrate
@@ -1318,7 +1336,8 @@ insistence activity
 instance event
 institution organization
 instrument device
-insufficiency attribute
+insufficiency magnitude
+insurance-coverage possession
 insurgent radical
 integration act
 integrity attribute
@@ -1331,7 +1350,7 @@ interior-designer specialist
 internet artifact
 intersection junction
 interview act
-intestine body-part
+intestine organ.body
 intro act
 introduction event information
 introductory-text textbook
@@ -1339,11 +1358,12 @@ invasion event
 invention event
 invertebrate animal
 investigator expert
+investment possession
 invitation act information
 invoice financial-document statement
 iron metal
 island land landform
-isolation attribute
+isolation state
 isotropy attribute
 ivory material
 jacket coat
@@ -1364,6 +1384,7 @@ joint artifact
 joke information
 journal information publication
 journey activity
+joy emotion
 judge official
 judgement act
 judgment act information
@@ -1372,8 +1393,9 @@ juice food
 jump change
 junction topographic-point
 jury group
-justice attribute
+justice virtue
 justification information
+keep possession
 kettle cooking-pot device
 key device
 kid goat
@@ -1386,7 +1408,7 @@ kingdom group
 kit equipment
 kitchen room
 kite plaything
-knee body-part
+knee articulation
 knife tool
 knight artifact
 lab workplace
@@ -1395,14 +1417,15 @@ labor work
 laborer employee
 labour class
 lace fabric
-lack attribute
+lack need
 ladder artifact
 lady woman
 lake body-of-water
-lamb sheep
+lamb sheep young
 lamp device furniture
 land physical-object place
 land-vehicle vehicle
+landed-estate belongings
 landform natural-object place
 landlord landowner
 landmine device
@@ -1412,7 +1435,7 @@ language information
 lap body-part
 larceny crime
 laser device
-latent-hostility attribute
+latent-hostility hostility
 laundry clothing
 law field-of-study
 lawn field
@@ -1420,7 +1443,7 @@ lawsuit act
 lawyer adult
 layer place
 lead leadership
-lead.attribute attribute
+lead.attribute asset
 leader person
 leadership activity
 leaf natural-object
@@ -1446,16 +1469,18 @@ legislature group
 leisure act
 lemon artifact
 lemon.food fruit
-lengthiness attribute
+length magnitude
+lengthiness duration.attribute
 lesson teaching
 letter message physical-object text
 letter-of-the-alphabet character
-liability attribute
-liberty attribute
+liability condition.state
+liberty freedom
 library building organization
 license legal-document
 lid artifact
 lie information
+life state
 life-style attribute
 lift drive
 light device
@@ -1464,14 +1489,14 @@ lighter device
 lily plant
 limb body-part
 limit place
-limitation attribute
+limitation disadvantage
 line-of-text text
 line.group group
 linen artifact
 linguistics humanities science
 link device
 lion mammal
-lip body-part
+lip organ.body
 liquid fluid
 list information
 literature humanities
@@ -1479,6 +1504,7 @@ literature.communication information
 litigation act
 liver organ.body
 livestock animal
+loan debt
 lobby organization
 locating activity
 lock device
@@ -1487,12 +1513,15 @@ loft storey
 log wood
 log-cabin house
 logic formal-science philosophy
-look attribute
+look appearance
 look-alike person
 looking-glass mirror
 lookout guard.person
-loop attribute
+loop curved-shape
+loot possession
 looting aggression
+loss possession
+loss.possession possession
 lot region
 lottery game
 loudspeaker device
@@ -1503,6 +1532,7 @@ loyalty attribute
 lozenge dose
 luggage-compartment artifact
 lumber artifact
+luminosity attribute
 lunch meal
 lung organ.body
 machine device
@@ -1517,11 +1547,12 @@ mail-service communication
 mailman employee
 makeup artifact
 male-child person
-malice attribute
+malice emotion
 maltreatment practice
 mammal vertebrate
 man adult human
 management act
+manager administrator
 manner trait
 manual book
 manufacture creation
@@ -1534,6 +1565,7 @@ marble ball
 marble.substance material
 march act
 marching-music music
+margin area
 mark appraisal
 marketing commerce
 marriage ritual
@@ -1547,6 +1579,7 @@ match contest
 matchstick lighter
 material substance
 mathematics formal-science
+matrimony status
 mayor authority.person leader
 maze artifact
 meal food
@@ -1560,10 +1593,11 @@ mechanism device
 medication drug
 medicine field-of-study
 medium communication
-medium.state attribute
+medium.state state
 meeting activity
 melodic-theme tune
 member agent
+membership state
 memo note
 memorial structure
 memory hardware
@@ -1589,12 +1623,13 @@ mill machinery
 mine artifact
 miner laborer
 mineral material
+minister administrator
 ministry administrative-division
 minority attribute
 miracle event
 mirror device
-misery attribute
-misgiving attribute
+misery adversity
+misgiving incertitude
 mist fog
 mistake act
 mix event
@@ -1603,23 +1638,27 @@ module component
 mold fungus
 mole mammal
 mollusc invertebrate
+momentum.attribute attribute
 monastery house
 money currency
+money.possession belongings
 monk person
 monkey mammal
-monopoly attribute
-morale attribute
+monopoly dominance
+morale condition.state
+mortgage possession
 mosaic artifact information
 mosque building
 mosquito insect
 motif decorative-design
 motion event
-motivation.state attribute
+motivation.state condition.state
 motorcycle container vehicle
 motorist driver
 motto saying
 mountain landform
 mountain-range physical-object
+mourning emotion
 mouse mammal
 mouth body-part
 move act
@@ -1628,7 +1667,7 @@ mud soil
 mug device vessel
 multimedia communication
 murder act
-muscle body-part
+muscle organ.body
 museum facility place
 mushroom fungus
 mushroom.plant fungus
@@ -1645,9 +1684,10 @@ mutation change
 mystery attribute
 myth fiction
 nail device
-name.state status
+nail.body body-part
+name.state honour
 narrative information
-nationality attribute
+nationality status
 natural-depression physical-object
 natural-event event
 natural-language language
@@ -1658,7 +1698,7 @@ nausea event symptom
 navy military-service
 neck body-part
 necktie clothing
-need attribute
+need condition.state
 needle device
 negligence trait
 neighbor person
@@ -1684,6 +1724,7 @@ noun information
 novel fiction
 nuance meaning
 nuclear-reactor apparatus device
+number magnitude
 numeral symbol
 nun person
 nurse adult
@@ -1710,15 +1751,16 @@ operation procedure
 opinion legal-document
 opinion-poll information
 opinion.communication information
-opportunity attribute
+opportunity state
 opposition political-party
-optimism trait
+optimism disposition
 option.possession legal-document
+orange attribute
 orange.food fruit
 orbit route
 orchestra organization
 order act
-orderliness attribute
+orderliness condition.state
 organ musical-instrument
 organ.body body-part
 organism physical-object
@@ -1726,6 +1768,7 @@ organization group
 orgy celebration
 origin attribute
 outfit clothing
+outgo possession
 outline summary
 outside surface
 oven device
@@ -1735,12 +1778,13 @@ overview summary
 owl bird
 owner person
 oxygen chemical-element
+pace attribute
 pack bundle
 pack-of-cards collection
 package collection
 packet container
 pain-in-the-neck person
-painfulness attribute
+painfulness feeling
 paint artifact material
 painter artist
 painting artifact information
@@ -1748,7 +1792,7 @@ pair group
 palace house
 palm tree
 panel artifact
-panic emotion
+panic fear
 paper article artifact
 paper.substance material
 parade act
@@ -1758,9 +1802,11 @@ paragraph information
 parameter factor
 parcel act
 pardon information
+parent ancestor
 park region
 parliament legislature
 parole promise
+paroxysm trouble.event
 participant person
 particle natural-object
 partner person
@@ -1770,7 +1816,7 @@ pass information
 passage body-part
 passenger person
 passing accomplishment
-passion attribute
+passion feeling
 passport legal-document
 password identification
 pastel attribute
@@ -1780,14 +1826,16 @@ pasture region
 patch fabric piece
 patent document
 path place
-patience trait
+patience disposition
 patient human
 patio structure
 patriot person
-patriotism attribute
+patriotism loyalty
 patrol military-unit
 payment commerce
 pb metal
+peace feeling
+peace.state state
 peak topographic-point
 peanut nut
 peasant human laborer
@@ -1800,7 +1848,7 @@ pensioner beneficiary human
 people group
 pepper plant
 perceiver person
-perceptiveness attribute
+perceptiveness sensitivity
 performance show
 performer person
 performing entertainment
@@ -1854,8 +1902,9 @@ playground-swing mechanism plaything
 playing-field region
 playpen device structure
 plaything artifact
+pleasure feeling
 plot region
-pneumonia illness
+pneumonia disease
 pocket container
 podcast audio
 poem information
@@ -1867,7 +1916,7 @@ pole artifact
 police organization
 policeman person
 policy contract
-polish attribute
+polish state
 political-campaign contest
 political-party organization
 politician leader
@@ -1887,7 +1936,7 @@ postage token
 postcard card.communication
 pot agent drug
 potato plant
-potential attribute
+potential state
 pottery artifact
 pound structure
 powder substance
@@ -1902,24 +1951,24 @@ precedence status
 preciseness attribute
 predator animal
 predecessor person
-preference attribute
+preference feeling
 premise proposition
-preoccupation attribute
+preoccupation condition.state
 prepared-dish food
 preponderance attribute
 prescription information
 prescription-drug medication
-presence attribute
+presence state
 present gift
 presentation document
-preservation attribute
+preservation condition.state
 presidentship occupation
 press machine
 prestige status
 prey animal
-price attribute
+price worth
 price-quotation information
-pride attribute
+pride satisfaction
 primary election
 prince person
 princess human
@@ -1928,8 +1977,9 @@ printer equipment machine
 prison structure
 prisoner person
 privacy trait
-privation attribute
-privilege attribute
+privation condition.state
+privilege asset
+probability.attribute attribute
 problem information
 procedure activity
 process event
@@ -1940,9 +1990,9 @@ production-line artifact
 profession occupation
 professor adult
 professorship occupation
-proficiency attribute
+proficiency state
 profile information
-profit attribute
+profit asset
 prognosis information
 program information
 programme show
@@ -1953,12 +2003,13 @@ promotion act
 promotional-material information
 proof evidence
 propaganda information
+proportion.attribute magnitude
 proposal act information
 proposition information
 prosecution legal-action
-prosperity attribute
+prosperity condition.state
 protection activity
-protection.state attribute
+protection.state safety
 protein compound
 protest act
 provision activity
@@ -1971,6 +2022,7 @@ public-house building
 public-lecture formal-address
 public-square region
 publication artifact
+publicity attribute
 publisher firm
 pudding dessert
 pulp natural-object
@@ -1984,7 +2036,7 @@ purchase transaction
 push-button electric-switch
 puzzle artifact
 pyramid attribute
-quality attribute
+quality degree
 quarrel dispute
 quarter district
 quarter-coin coin
@@ -1994,16 +2046,19 @@ quest activity
 question act information
 questionnaire form
 queue line.group
+quota allotment
 quotation excerpt
 rabbit mammal
 race contest
 race.group group
 racetrack facility
 rack device structure
-radiation event
+radiation process
+radiation-sickness syndrome
 radical person
 radio device
 radio-receiver device equipment
+radioactive-decay process
 railcar vehicle
 railroad-track artifact
 railway organization
@@ -2014,13 +2069,15 @@ rally event
 ranch farm
 randomness attribute
 range region
-rank attribute
+rank status
 rap impact
 rape crime
 rat mammal
-rationality attribute
-readiness attribute
+ratio number
+rationality condition.state
+readiness state
 realism attribute
+reality state
 realm attribute
 reason explanation
 rebellion act
@@ -2028,14 +2085,15 @@ recapitulation summary
 receipt financial-document
 reception-party party
 recess attribute
-recession event
+recession condition.state event
 recognition information
 recommendation praise
 recompense act
 record accomplishment
 recording device
 recovery act
-redundancy attribute
+red attribute
+redundancy degree
 referee person
 reference publication
 referral advice
@@ -2052,14 +2110,15 @@ regulation information
 rehabilitation therapy
 rehearsal practice-session
 rejection act
+relationship state
 relative person
-reliance attribute
-relief attribute
+reliance state
+relief comfort
 religious-service activity
-reluctance attribute
+reluctance disposition
 remark information
 remedy medication
-renovation attribute
+renovation improvement
 repeat event
 replica copy
 reply information
@@ -2068,7 +2127,7 @@ reporter person
 repositing act
 representative person
 reptile vertebrate
-repugnance attribute
+repugnance feeling
 reputation status
 request information
 research work
@@ -2083,7 +2142,7 @@ resignation document
 resistance act
 resolution act information
 resort hotel
-resource attribute
+resource asset
 rest support-device
 restaurant building organization
 restitution act
@@ -2109,7 +2168,7 @@ rice grain
 rider person
 ridge physical-object
 rifle gun
-right attribute
+right justice
 right-wing group
 right.location place
 rightful-claim activity
@@ -2151,7 +2210,7 @@ rung support-device
 runner athlete
 rural-area region
 sacrifice act
-safety attribute
+safety condition.state
 sail artifact
 sailor worker
 salad prepared-dish
@@ -2161,16 +2220,18 @@ salesclerk employee
 salmon fish
 salon shop
 salt food
-salvation attribute
+salvation safety
 sanctuary region
 sand soil
 sandal shoe
 satellite equipment
+satisfaction feeling
 sauce food
 sausage meat
 saying information
 scab worker
 scale natural-object
+scandal trouble.event
 scenario information
 scene information
 schedule list
@@ -2183,7 +2244,7 @@ schoolchild person
 schoolhouse building
 science field-of-study
 scientist person
-scope attribute
+scope magnitude
 scored-goal accomplishment
 scrap piece
 scratch attribute
@@ -2200,6 +2261,7 @@ search work
 seashore physical-object
 seat furniture
 seating-place place
+second rank
 secrecy trait
 secret information
 secretary assistant
@@ -2211,15 +2273,16 @@ sediment substance
 seed botanical-fruit
 seeded-player player
 selection collection
-self-control attribute
+self consciousness
+self-control trait
 seller merchant
 selling commerce
 seminar course-of-instruction
 senior student
-sensation attribute
-sensitivity attribute
+sensation excitement
+sensitivity feeling
 sentence information
-sentiment attribute
+sentiment feeling
 separation act
 serial programme
 series publication
@@ -2229,12 +2292,15 @@ service assist
 service-department shop
 session coming-together
 set collection
+setting situation
 settlement region
 settler-colony group
 sex attribute
 shackle device
+shadow dark
 shaft artifact
 shaft.artifact artifact
+shame feeling
 shark fish
 sheep mammal
 sheet linen
@@ -2245,6 +2311,7 @@ shelter housing
 shield artifact
 ship watercraft
 shirt clothing
+shock feeling
 shoe clothing
 shooting act
 shop structure
@@ -2278,17 +2345,19 @@ singer performer
 single-file line.group
 sink fixture
 sister relative
-situation attribute
-size attribute
+situation state
+size magnitude
+skeletal-system body-part
 sketch summary
 ski device
 ski-tow artifact
-skin body-part natural-object
+skin natural-object tissue
 skirt clothing
 skull bone
 sky atmosphere
 slab artifact
 slave person
+sleep condition.state
 sleeve artifact
 slide plaything
 slob person
@@ -2321,6 +2390,7 @@ solicitation request
 solidarity attribute
 solo activity
 solution accomplishment
+sorrow feeling
 soup prepared-dish
 space character
 spacecraft vehicle
@@ -2330,10 +2400,11 @@ species group
 specimen natural-object
 spectacles instrument
 spectator perceiver
-spectrum attribute
+spectrum scope
 speech information
 spell information
 sphere region
+sphere.shape attribute
 spider arachnid
 spinach vegetable
 spinal-column body-part
@@ -2351,7 +2422,9 @@ spray substance
 spread food
 spreadsheet computer-program document
 spring device
+spy agent.person
 squad military-unit
+square attribute
 stable building
 stadium structure
 staff organization
@@ -2369,7 +2442,7 @@ statement document
 station place
 statistics mathematics
 statue sculpture
-status attribute
+status state
 steak meat
 steam substance
 steel substance
@@ -2377,8 +2450,10 @@ step support-device
 steward assistant
 stick artifact
 stimulation act
+sting injury
 stitch artifact
 stock merchandise
+stock.possession possession
 stockholder person
 stomach organ.body
 stone natural-object
@@ -2410,7 +2485,7 @@ subsister person
 substance '*'
 suburb residential-district
 success event
-suffering attribute
+suffering painfulness
 sugar food
 suggestion information
 suicide act
@@ -2433,6 +2508,7 @@ surgeon doctor
 surgery medicine
 surprise change
 surroundings environment
+survival process
 survivor person
 suspect person
 sweater clothing
@@ -2443,7 +2519,9 @@ symbol information
 symptom evidence
 syndrome symptom
 table furniture
+tail body-part
 talk conversation information
+tan condition.state
 tank vehicle
 tape device
 tape-recording recording
@@ -2455,13 +2533,15 @@ tea drink
 teaching profession
 team organization
 television-receiver equipment
+temper feeling
+temperature attribute
 temple building
-temple.body body-part
+temple.body feature
 tenant person
 tending work
 tennis game sport
-tension attribute
-tensity attribute
+tension condition.state
+tensity condition.state
 tent structure
 terminal equipment
 territory region
@@ -2477,7 +2557,7 @@ theology field-of-study
 theorist person
 therapist expert
 therapy tending
-thigh body-part
+thigh limb
 thinker person
 thinking event
 thorax body-part
@@ -2490,7 +2570,7 @@ thunderbolt natural-event
 ticker organ.body
 ticket document
 tide event
-tier attribute
+tier rank
 tiger mammal
 tile slab
 timetable schedule
@@ -2504,7 +2584,7 @@ toast bread
 toe body-part
 token symbol
 tomato vegetable
-tongue body-part
+tongue organ.body
 tool device
 tooth structure
 tooth.body bone
