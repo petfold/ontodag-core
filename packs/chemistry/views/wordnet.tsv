@@ -93,9 +93,6 @@ activeness	attribute
 activeness	trait
 activity	act
 activity	event
-activity.state	attribute
-activity.state	condition
-activity.state	state
 actor	agent
 actor	organism
 actor	performer
@@ -1703,6 +1700,9 @@ cheese	substance
 chemical	material
 chemical	part
 chemical	substance
+chemical-activity	attribute
+chemical-activity	condition
+chemical-activity	state
 chemical-association	chemical-process
 chemical-association	process
 chemical-bond	attractive-force
@@ -2267,8 +2267,6 @@ cook	physical-object
 cook	worker
 cookie	cake
 cookie	substance
-cooking-pan	artifact
-cooking-pan	physical-object
 cooking-pot	artifact
 cooking-pot	container
 cooking-pot	physical-object
@@ -4024,6 +4022,7 @@ gentleman	man
 gentleman	organism
 gentleman	person
 gentleman	physical-object
+genus-pan	group
 geographic-pole	physical-object
 geographic-pole	place
 geography	cognition
@@ -5231,6 +5230,11 @@ lead-metal	chemical-element
 lead-metal	metal
 lead-metal	part
 lead-metal	substance
+lead.artifact	carbon
+lead.artifact	chemical-element
+lead.artifact	graphite
+lead.artifact	part
+lead.artifact	substance
 leader	agent
 leader	organism
 leader	person
@@ -6437,7 +6441,8 @@ palm	organism
 palm	physical-object
 palm	plant
 palm	tree
-pan	group
+pan	artifact
+pan	physical-object
 panel	artifact
 panel	physical-object
 panic	attribute
@@ -6602,11 +6607,6 @@ pencil-lead	chemical-element
 pencil-lead	graphite
 pencil-lead	part
 pencil-lead	substance
-pencil.substance	carbon
-pencil.substance	chemical-element
-pencil.substance	graphite
-pencil.substance	part
-pencil.substance	substance
 pension	outgo
 pension	possession
 pensioner	agent
