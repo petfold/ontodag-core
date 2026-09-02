@@ -10,6 +10,7 @@ abbey	housing	single	wordnet
 abbey	monastery	accepted	claude wordnet	
 abbey	organization	single	yago	
 abbey	physical-object	single	wordnet	
+abbey	place	single	yago	
 abbey	site	single	opencyc	
 abbey	structure	single	wordnet	
 abdomen	part	single	opencyc	
@@ -67,6 +68,7 @@ academy	institution	single	opencyc
 academy	organization	accepted	sumo yago	
 academy	phenomenon	single	sumo	
 academy	physical-object	single	wordnet	
+academy	place	single	yago	
 academy	school	accepted	opencyc yago	
 academy	school.artifact	accepted	opencyc yago	
 academy	school.group	accepted	opencyc yago	
@@ -101,7 +103,7 @@ account	document	single	wordnet
 account	essay	single	sumo	
 account	file.communication	single	sumo	
 account	indication	single	sumo	
-account	information	accepted	sumo wordnet	
+account	information	accepted	opencyc sumo wordnet	
 account	information.communication	accepted	opencyc sumo	
 account	line.communication	single	sumo	
 account	news	single	sumo	
@@ -139,7 +141,6 @@ ace	animal	single	sumo
 ace	body	single	sumo	
 ace	expert	accepted	claude wordnet	
 ace	human	single	sumo	
-ace	human-body	single	sumo	
 ace	mammal	single	sumo	
 ace	organism	accepted	sumo wordnet	
 ace	person	accepted	sumo wordnet	
@@ -254,6 +255,7 @@ addition	placement.act	single	sumo
 addition	visit	single	sumo	
 address	artifact	single	sumo	
 address	development	single	sumo	
+address	information	single	opencyc	
 address	information.communication	single	opencyc	
 address	landscape	single	sumo	
 address	phenomenon	single	sumo	
@@ -267,7 +269,7 @@ address.communication	activity	single	sumo
 address.communication	communication	single	sumo	
 address.communication	conversation	single	sumo	
 address.communication	event	accepted	sumo wordnet	
-address.communication	information	single	sumo	
+address.communication	information	accepted	opencyc sumo	
 address.communication	information.communication	single	opencyc	
 address.communication	phenomenon	single	sumo	
 address.communication	procedure.act	single	sumo	
@@ -321,7 +323,6 @@ adolescent	agent	accepted	sumo wordnet
 adolescent	animal	single	sumo	
 adolescent	body	single	sumo	
 adolescent	human	single	sumo	
-adolescent	human-body	single	sumo	
 adolescent	mammal	single	sumo	
 adolescent	organism	accepted	sumo wordnet	
 adolescent	person	accepted	sumo wordnet	
@@ -354,7 +355,6 @@ adult	agent	accepted	sumo wordnet
 adult	animal	single	sumo	
 adult	body	single	sumo	
 adult	human	single	sumo	
-adult	human-body	single	sumo	
 adult	mammal	single	sumo	
 adult	organism	accepted	sumo wordnet	
 adult	person	accepted	sumo wordnet	
@@ -445,7 +445,6 @@ adversary	agent	accepted	sumo wordnet
 adversary	animal	single	sumo	
 adversary	body	single	sumo	
 adversary	human	single	sumo	
-adversary	human-body	single	sumo	
 adversary	mammal	single	sumo	
 adversary	organism	accepted	sumo wordnet	
 adversary	person	accepted	sumo wordnet	
@@ -501,7 +500,6 @@ advocate	agent	accepted	sumo wordnet
 advocate	animal	single	sumo	
 advocate	body	single	sumo	
 advocate	human	single	sumo	
-advocate	human-body	single	sumo	
 advocate	mammal	single	sumo	
 advocate	organism	accepted	sumo wordnet	
 advocate	person	accepted	sumo wordnet	
@@ -725,7 +723,7 @@ airplane	vehicle	accepted	claude wordnet yago
 airport	artifact	single	wordnet	
 airport	facility	single	wordnet	
 airport	physical-object	single	wordnet	
-airport	place	single	schemaorg	
+airport	place	accepted	schemaorg yago	
 aisle	artifact	accepted	opencyc wordnet	
 aisle	container	single	opencyc	
 aisle	device	single	opencyc	
@@ -787,8 +785,10 @@ alimony	volition	single	sumo
 alliance	organization	single	yago	
 alliance	structure	single	opencyc	
 alliance	system	single	opencyc	
+allotment	information	single	opencyc	
 allotment	information.communication	single	opencyc	
 allotment	norm	single	opencyc	
+allowance	information	single	opencyc	
 allowance	information.communication	single	opencyc	
 allowance	norm	single	opencyc	
 ally	agent	single	sumo	
@@ -878,6 +878,7 @@ amendment	volition	single	sumo
 amphetamine	agent	dissented	wordnet	
 amphetamine	drug	accepted	claude wordnet	
 amphetamine	material	single	sumo	
+amphetamine	medicine	single	opencyc	
 amphetamine	medicine.act	single	opencyc	
 amphetamine	medicine.artifact	single	opencyc	
 amphetamine	phenomenon	single	sumo	
@@ -1059,7 +1060,7 @@ apartment	housing	accepted	claude wordnet
 apartment	landscape	single	sumo	
 apartment	phenomenon	single	sumo	
 apartment	physical-object	single	wordnet	
-apartment	place	accepted	schemaorg sumo	
+apartment	place	accepted	schemaorg sumo yago	
 apartment	region	single	sumo	
 apartment	site	single	opencyc	
 apartment	structure	single	wordnet	
@@ -1138,6 +1139,7 @@ appearance	soul	single	sumo
 appearance	status	single	sumo	
 appearance	tension	single	sumo	
 appearance	way	single	sumo	
+appendix	information	single	opencyc	
 appendix	information.communication	single	opencyc	
 appendix	phenomenon	single	sumo	
 appendix	physical-object	single	sumo	
@@ -1145,7 +1147,7 @@ appendix	universe	single	sumo
 appendix.communication	artifact	single	sumo	
 appendix.communication	condition.communication	single	sumo	
 appendix.communication	indication	single	sumo	
-appendix.communication	information	accepted	sumo wordnet	
+appendix.communication	information	accepted	opencyc sumo wordnet	
 appendix.communication	information.communication	single	opencyc	
 appendix.communication	line.communication	single	sumo	
 appendix.communication	phenomenon	single	sumo	
@@ -1219,7 +1221,7 @@ appointment	act	accepted	sumo wordnet
 appointment	activity	accepted	sumo wordnet	
 appointment	communication	single	sumo	
 appointment	event	accepted	sumo wordnet	
-appointment	information	single	sumo	
+appointment	information	accepted	opencyc sumo	
 appointment	information.communication	single	opencyc	
 appointment	norm	single	opencyc	
 appointment	occupation	accepted	claude wordnet	
@@ -1259,7 +1261,7 @@ aquarium	container	single	wordnet
 aquarium	device	single	sumo	
 aquarium	phenomenon	single	sumo	
 aquarium	physical-object	single	wordnet	
-aquarium	place	single	schemaorg	
+aquarium	place	accepted	schemaorg yago	
 aquarium	structure	dissented	wordnet	
 aquarium	universe	single	sumo	
 aquarium	vessel	accepted	claude wordnet	
@@ -1325,7 +1327,7 @@ arena	artifact	single	sumo
 arena	development	single	sumo	
 arena	phenomenon	single	sumo	
 arena	physical-object	single	wordnet	
-arena	place	single	wordnet	
+arena	place	accepted	wordnet yago	
 arena	region.location	single	wordnet	
 arena	universe	single	sumo	
 argument	accomplishment	single	sumo	
@@ -1411,7 +1413,7 @@ article	document	single	claude
 article	essay	single	sumo	
 article	file.communication	single	sumo	
 article	indication	single	sumo	
-article	information	accepted	claude schemaorg sumo wordnet yago	
+article	information	accepted	claude opencyc schemaorg sumo wordnet yago	
 article	information.communication	accepted	opencyc sumo	
 article	line.communication	single	sumo	
 article	news	single	sumo	
@@ -1496,7 +1498,6 @@ assistant	agent	accepted	sumo wordnet
 assistant	animal	single	sumo	
 assistant	body	single	sumo	
 assistant	human	accepted	opencyc sumo	
-assistant	human-body	single	sumo	
 assistant	mammal	accepted	opencyc sumo	
 assistant	organism	accepted	sumo wordnet	
 assistant	person	accepted	sumo wordnet	
@@ -1670,13 +1671,12 @@ audience	event	single	sumo
 audience	group	single	wordnet	
 audience	perception	single	sumo	
 audience	phenomenon	single	sumo	
-audio	artifact	accepted	opencyc wordnet	
-audio	device	accepted	opencyc wordnet	
+audio	artifact	single	wordnet	
+audio	device	single	wordnet	
 audio	indication	single	sumo	
 audio	information	accepted	claude sumo	
 audio	phenomenon	single	sumo	
 audio	physical-object	accepted	sumo wordnet	
-audio	publication	single	opencyc	
 audio	recording	accepted	claude wordnet	
 audio	universe	single	sumo	
 auditor	adult	single	opencyc	
@@ -1684,7 +1684,6 @@ auditor	agent	accepted	sumo wordnet
 auditor	animal	single	sumo	
 auditor	body	single	sumo	
 auditor	human	accepted	opencyc sumo	
-auditor	human-body	single	sumo	
 auditor	mammal	accepted	opencyc sumo	
 auditor	organism	accepted	sumo wordnet	
 auditor	person	accepted	sumo wordnet	
@@ -1735,7 +1734,6 @@ authority	animal	single	sumo
 authority	body	single	sumo	
 authority	expert	accepted	claude wordnet	
 authority	human	single	sumo	
-authority	human-body	single	sumo	
 authority	mammal	single	sumo	
 authority	organism	accepted	sumo wordnet	
 authority	person	accepted	sumo wordnet	
@@ -1822,7 +1820,6 @@ baby	animal	single	sumo
 baby	body	single	sumo	
 baby	child	accepted	sumo wordnet	
 baby	human	single	sumo	
-baby	human-body	single	sumo	
 baby	mammal	single	sumo	
 baby	offspring	single	wordnet	
 baby	organism	accepted	sumo wordnet	
@@ -1911,6 +1908,7 @@ balcony	artifact	accepted	sumo wordnet
 balcony	development	single	sumo	
 balcony	phenomenon	single	sumo	
 balcony	physical-object	single	wordnet	
+balcony	place	single	yago	
 balcony	structure	accepted	claude wordnet	
 balcony	universe	single	sumo	
 ball	artifact	accepted	sumo wordnet	
@@ -2003,6 +2001,7 @@ bang	noise	accepted	claude wordnet
 bang	phenomenon	single	sumo	
 bank	organization	single	yago	
 bank	physical-object	single	wordnet	
+bank	place	single	yago	
 bank	site	single	opencyc	
 bank	slope	single	wordnet	
 bankruptcy	accomplishment	single	sumo	
@@ -2050,6 +2049,7 @@ bar	material	single	sumo
 bar	organization	single	yago	
 bar	phenomenon	single	sumo	
 bar	physical-object	single	wordnet	
+bar	place	single	yago	
 bar	substance	single	sumo	
 bar	universe	single	sumo	
 bar.2	support.2	single	claude	
@@ -2058,6 +2058,7 @@ bar.artifact	device	accepted	sumo wordnet
 bar.artifact	organization	single	yago	
 bar.artifact	phenomenon	single	sumo	
 bar.artifact	physical-object	single	wordnet	
+bar.artifact	place	single	yago	
 bar.artifact	support.artifact	accepted	claude wordnet	
 bar.artifact	universe	single	sumo	
 bargain	action	single	opencyc	
@@ -2165,12 +2166,14 @@ basement	floor.2	single	claude
 basement	floor.artifact	accepted	claude wordnet	
 basement	phenomenon	single	sumo	
 basement	physical-object	single	wordnet	
+basement	place	single	yago	
 basement	structure	single	wordnet	
 basement	universe	single	sumo	
 basis	cognition	single	wordnet	
 basis	concept	single	wordnet	
 basis	hypothesis	single	wordnet	
 basis	idea	single	wordnet	
+basis	information	single	opencyc	
 basis	information.communication	single	opencyc	
 basis	sense.communication	single	sumo	
 basket	artifact	accepted	opencyc sumo wordnet	
@@ -2278,7 +2281,7 @@ battle	war	single	sumo
 battlefield	landscape	single	sumo	
 battlefield	phenomenon	single	sumo	
 battlefield	physical-object	single	wordnet	
-battlefield	place	accepted	sumo wordnet	
+battlefield	place	accepted	sumo wordnet yago	
 battlefield	region	single	sumo	
 battlefield	region.2	single	claude	
 battlefield	region.location	accepted	claude wordnet	
@@ -2292,13 +2295,14 @@ battlefront	region	single	sumo
 battlefront	universe	single	sumo	
 bay	body-of-water	accepted	opencyc wordnet yago	
 bay	landform	single	yago	
+bay	place	single	yago	
 bay	site	single	opencyc	
 beach	environment	single	opencyc	
 beach	land	single	sumo	
 beach	landscape	single	sumo	
 beach	phenomenon	single	sumo	
 beach	physical-object	accepted	claude wordnet	
-beach	place	accepted	schemaorg sumo	
+beach	place	accepted	schemaorg sumo yago	
 beach	region	single	sumo	
 beach	site	single	opencyc	
 beach	universe	single	sumo	
@@ -2398,7 +2402,7 @@ beef	universe	single	sumo
 beer	agent	dissented	wordnet	
 beer	alcohol	accepted	claude wordnet	
 beer	artifact	single	opencyc	
-beer	drink	accepted	opencyc sumo wordnet	
+beer	drink	accepted	sumo wordnet	
 beer	drug	dissented	wordnet	
 beer	food	accepted	sumo wordnet	
 beer	material	single	sumo	
@@ -2427,7 +2431,6 @@ beloved	agent	accepted	sumo wordnet
 beloved	animal	single	sumo	
 beloved	body	single	sumo	
 beloved	human	single	sumo	
-beloved	human-body	single	sumo	
 beloved	mammal	single	sumo	
 beloved	organism	accepted	sumo wordnet	
 beloved	person	accepted	sumo wordnet	
@@ -2547,6 +2550,7 @@ bible	book	single	sumo
 bible	component	single	sumo	
 bible	copy	single	opencyc	
 bible	device	single	sumo	
+bible	image	single	opencyc	
 bible	image.cognition	single	opencyc	
 bible	indication	single	sumo	
 bible	information	accepted	sumo wordnet	
@@ -2802,7 +2806,7 @@ body-of-water	landscape	single	sumo
 body-of-water	natural-object	single	claude	
 body-of-water	phenomenon	single	sumo	
 body-of-water	physical-object	single	claude	
-body-of-water	place	accepted	claude schemaorg sumo	
+body-of-water	place	accepted	claude schemaorg sumo yago	
 body-of-water	region	single	sumo	
 body-of-water	site	single	opencyc	
 body-of-water	universe	single	sumo	
@@ -2852,7 +2856,6 @@ bomber.person	agent	accepted	sumo wordnet
 bomber.person	animal	single	sumo	
 bomber.person	body	single	sumo	
 bomber.person	human	single	sumo	
-bomber.person	human-body	single	sumo	
 bomber.person	mammal	single	sumo	
 bomber.person	organism	accepted	sumo wordnet	
 bomber.person	person	accepted	sumo wordnet	
@@ -3088,7 +3091,7 @@ brewery	business	single	opencyc
 brewery	institution	single	opencyc	
 brewery	organization	accepted	schemaorg yago	
 brewery	physical-object	single	wordnet	
-brewery	place	single	schemaorg	
+brewery	place	accepted	schemaorg yago	
 brewery	plant.2	single	claude	
 brewery	plant.artifact	accepted	claude wordnet	
 brewery	structure	accepted	claude opencyc wordnet	
@@ -3104,7 +3107,6 @@ bride	agent	accepted	sumo wordnet
 bride	animal	single	sumo	
 bride	body	single	sumo	
 bride	human	accepted	opencyc sumo	
-bride	human-body	single	sumo	
 bride	lady	single	sumo	
 bride	mammal	accepted	opencyc sumo	
 bride	organism	accepted	sumo wordnet	
@@ -3124,7 +3126,7 @@ bride	woman	single	sumo
 bridge	artifact	accepted	opencyc wordnet	
 bridge	device	single	opencyc	
 bridge	physical-object	single	wordnet	
-bridge	place	single	schemaorg	
+bridge	place	accepted	schemaorg yago	
 bridge	site	single	opencyc	
 bridge	structure	accepted	claude wordnet	
 brilliance	cognition	single	wordnet	
@@ -3198,7 +3200,6 @@ brother.person.2	agent	accepted	sumo wordnet
 brother.person.2	animal	single	sumo	
 brother.person.2	body	single	sumo	
 brother.person.2	human	single	sumo	
-brother.person.2	human-body	single	sumo	
 brother.person.2	mammal	single	sumo	
 brother.person.2	man	single	sumo	
 brother.person.2	organism	accepted	sumo wordnet	
@@ -3253,7 +3254,7 @@ building	artifact	accepted	claude sumo wordnet
 building	development	single	sumo	
 building	phenomenon	single	sumo	
 building	physical-object	accepted	claude wordnet	
-building	place	single	claude	
+building	place	accepted	claude yago	
 building	structure	accepted	claude wordnet	
 building	universe	single	sumo	
 bulb	natural-object	single	wordnet	
@@ -3333,7 +3334,7 @@ bungalow	housing	single	wordnet
 bungalow	landscape	single	sumo	
 bungalow	phenomenon	single	sumo	
 bungalow	physical-object	single	wordnet	
-bungalow	place	single	sumo	
+bungalow	place	accepted	sumo yago	
 bungalow	region	single	sumo	
 bungalow	structure	single	wordnet	
 bungalow	universe	single	sumo	
@@ -3366,6 +3367,7 @@ bus-ticket	artifact	accepted	opencyc sumo
 bus-ticket	condition.communication	single	sumo	
 bus-ticket	device	single	opencyc	
 bus-ticket	document	accepted	claude wordnet	
+bus-ticket	image	single	opencyc	
 bus-ticket	image.cognition	single	opencyc	
 bus-ticket	indication	single	sumo	
 bus-ticket	information	accepted	claude sumo wordnet	
@@ -3465,6 +3467,7 @@ cabaret	disco	single	sumo
 cabaret	organization	single	yago	
 cabaret	phenomenon	single	sumo	
 cabaret	physical-object	single	wordnet	
+cabaret	place	single	yago	
 cabaret	structure	accepted	claude wordnet	
 cabaret	universe	single	sumo	
 cabin	artifact	accepted	opencyc sumo wordnet	
@@ -3791,7 +3794,7 @@ captain	worker	single	wordnet
 caption	artifact	single	sumo	
 caption	condition.communication	single	sumo	
 caption	indication	single	sumo	
-caption	information	accepted	sumo wordnet	
+caption	information	accepted	opencyc sumo wordnet	
 caption	information.communication	single	opencyc	
 caption	line.communication	accepted	sumo wordnet	
 caption	phenomenon	single	sumo	
@@ -3824,6 +3827,7 @@ carbon	phenomenon	single	sumo
 carbon	substance	accepted	sumo wordnet	
 carbon	universe	single	sumo	
 card	artifact	accepted	opencyc sumo	
+card	image	single	opencyc	
 card	image.cognition	single	opencyc	
 card	indication	single	sumo	
 card	information	single	sumo	
@@ -3837,6 +3841,7 @@ card	universe	single	sumo
 card.3	identification	single	claude	
 card.communication	artifact	single	opencyc	
 card.communication	correspondence	single	wordnet	
+card.communication	image	single	opencyc	
 card.communication	image.cognition	single	opencyc	
 card.communication	information	single	wordnet	
 card.communication	mail	single	wordnet	
@@ -3844,6 +3849,7 @@ card.communication	message	single	wordnet
 card.communication.2	artifact	accepted	opencyc sumo	
 card.communication.2	condition.communication	single	sumo	
 card.communication.2	identification	accepted	claude wordnet	
+card.communication.2	image	single	opencyc	
 card.communication.2	image.cognition	single	opencyc	
 card.communication.2	indication	accepted	sumo wordnet	
 card.communication.2	information	accepted	sumo wordnet	
@@ -3935,16 +3941,19 @@ cartoon	universe	single	sumo
 case	artifact	accepted	sumo wordnet	
 case	container	accepted	claude wordnet	
 case	device	single	sumo	
+case	information	single	opencyc	
 case	information.communication	single	opencyc	
 case	phenomenon	single	sumo	
 case	physical-object	single	wordnet	
 case	universe	single	sumo	
 case.event	event	single	wordnet	
+case.event	information	single	opencyc	
 case.event	information.communication	single	opencyc	
 cash	artifact	accepted	opencyc sumo	
 cash	condition.communication	single	sumo	
 cash	currency	accepted	opencyc wordnet	
 cash	device	single	opencyc	
+cash	image	single	opencyc	
 cash	image.cognition	single	opencyc	
 cash	indication	single	sumo	
 cash	information	single	sumo	
@@ -3987,6 +3996,7 @@ castle	house	single	yago
 castle	house.group	single	yago	
 castle	phenomenon	single	sumo	
 castle	physical-object	single	wordnet	
+castle	place	single	yago	
 castle	site	single	opencyc	
 castle	structure	accepted	claude wordnet	
 castle	universe	single	sumo	
@@ -3994,7 +4004,6 @@ casualty	agent	accepted	sumo wordnet
 casualty	animal	single	sumo	
 casualty	body	single	sumo	
 casualty	human	single	sumo	
-casualty	human-body	single	sumo	
 casualty	mammal	single	sumo	
 casualty	organism	accepted	sumo wordnet	
 casualty	person	accepted	sumo wordnet	
@@ -4050,7 +4059,6 @@ catch.person	agent	accepted	sumo wordnet
 catch.person	animal	single	sumo	
 catch.person	body	single	sumo	
 catch.person	human	single	sumo	
-catch.person	human-body	single	sumo	
 catch.person	mammal	single	sumo	
 catch.person	organism	accepted	sumo wordnet	
 catch.person	person	accepted	sumo wordnet	
@@ -4070,6 +4078,7 @@ cathedral	church	accepted	wordnet yago
 cathedral	container	single	opencyc	
 cathedral	device	single	opencyc	
 cathedral	physical-object	single	wordnet	
+cathedral	place	single	yago	
 cathedral	site	single	opencyc	
 cathedral	structure	single	wordnet	
 cathedral	temple	single	opencyc	
@@ -4090,6 +4099,7 @@ caution	monetary-value	single	sumo
 caution	property	single	sumo	
 cave	landform	single	yago	
 cave	physical-object	single	wordnet	
+cave	place	single	yago	
 cave	site	single	opencyc	
 ceiling	artifact	accepted	opencyc sumo wordnet	
 ceiling	development	single	sumo	
@@ -4150,7 +4160,7 @@ cemetery	land	single	sumo
 cemetery	landscape	single	sumo	
 cemetery	phenomenon	single	sumo	
 cemetery	physical-object	single	wordnet	
-cemetery	place	accepted	schemaorg sumo wordnet	
+cemetery	place	accepted	schemaorg sumo wordnet yago	
 cemetery	region	single	sumo	
 cemetery	region.location	single	wordnet	
 cemetery	site	accepted	claude wordnet	
@@ -4216,6 +4226,7 @@ certificate	artifact	accepted	opencyc sumo
 certificate	condition.communication	single	sumo	
 certificate	document	accepted	claude wordnet	
 certificate	file.communication	single	sumo	
+certificate	image	single	opencyc	
 certificate	image.cognition	single	opencyc	
 certificate	indication	single	sumo	
 certificate	information	accepted	claude sumo wordnet	
@@ -4299,7 +4310,7 @@ challenge.state	way	single	sumo
 champagne	agent	dissented	wordnet	
 champagne	alcohol	accepted	claude wordnet	
 champagne	artifact	single	opencyc	
-champagne	drink	accepted	opencyc wordnet	
+champagne	drink	single	wordnet	
 champagne	drug	dissented	wordnet	
 champagne	food	accepted	claude wordnet	
 champagne	part	single	wordnet	
@@ -4313,7 +4324,6 @@ champion	agent	accepted	sumo wordnet
 champion	animal	single	sumo	
 champion	body	single	sumo	
 champion	human	single	sumo	
-champion	human-body	single	sumo	
 champion	mammal	single	sumo	
 champion	organism	accepted	sumo wordnet	
 champion	person	accepted	sumo wordnet	
@@ -4400,7 +4410,7 @@ chapter	artifact	single	sumo
 chapter	condition.communication	single	sumo	
 chapter	essay	single	sumo	
 chapter	indication	single	sumo	
-chapter	information	accepted	schemaorg sumo wordnet yago	
+chapter	information	accepted	opencyc schemaorg sumo wordnet yago	
 chapter	information.communication	single	opencyc	
 chapter	line.communication	single	sumo	
 chapter	music	dissented	wordnet	
@@ -4508,6 +4518,7 @@ charm	status	single	sumo
 charm	tension	single	sumo	
 charm	way	single	sumo	
 chart	artifact	single	wordnet	
+chart	image	single	opencyc	
 chart	image.cognition	single	opencyc	
 chart	indication	single	sumo	
 chart	information	accepted	sumo yago	
@@ -4517,6 +4528,7 @@ chart	physical-object	accepted	sumo wordnet
 chart	product	single	yago	
 chart	product.phenomenon	single	yago	
 chart	universe	single	sumo	
+chart.communication	image	single	opencyc	
 chart.communication	image.cognition	single	opencyc	
 chart.communication	information	accepted	wordnet yago	
 chart.communication	product	single	yago	
@@ -4524,6 +4536,7 @@ chart.communication	product.phenomenon	single	yago
 charter	artifact	accepted	opencyc sumo	
 charter	condition.communication	single	sumo	
 charter	document	accepted	claude wordnet	
+charter	image	single	opencyc	
 charter	image.cognition	single	opencyc	
 charter	indication	single	sumo	
 charter	information	accepted	sumo wordnet yago	
@@ -4647,7 +4660,6 @@ child	agent	accepted	sumo wordnet
 child	animal	single	sumo	
 child	body	single	sumo	
 child	human	single	sumo	
-child	human-body	single	sumo	
 child	mammal	single	sumo	
 child	offspring	single	wordnet	
 child	organism	accepted	sumo wordnet	
@@ -4700,7 +4712,7 @@ chorus	organization	single	wordnet
 church	artifact	single	wordnet	
 church	building	accepted	claude wordnet	
 church	physical-object	single	wordnet	
-church	place	single	schemaorg	
+church	place	accepted	schemaorg yago	
 church	structure	accepted	opencyc wordnet	
 church	system	single	opencyc	
 chute	artifact	accepted	sumo wordnet	
@@ -4775,7 +4787,7 @@ city	land	single	sumo
 city	landscape	single	sumo	
 city	phenomenon	single	sumo	
 city	physical-object	single	wordnet	
-city	place	accepted	claude schemaorg sumo wordnet	
+city	place	accepted	claude schemaorg sumo wordnet yago	
 city	region	single	sumo	
 city	region.location	single	wordnet	
 city	settlement	disputed	claude	sumo
@@ -4929,6 +4941,7 @@ clerk	physical-object	single	wordnet
 clerk	worker	single	wordnet	
 cliff	landform	single	yago	
 cliff	physical-object	single	wordnet	
+cliff	place	single	yago	
 cliff	site	single	opencyc	
 cliff	slope	single	opencyc	
 climate	condition.state	single	wordnet	
@@ -4947,6 +4960,7 @@ clipping	artifact	accepted	opencyc sumo
 clipping	condition.communication	single	sumo	
 clipping	device	single	opencyc	
 clipping	excerpt	accepted	claude wordnet	
+clipping	image	single	opencyc	
 clipping	image.cognition	single	opencyc	
 clipping	indication	single	sumo	
 clipping	information	accepted	sumo wordnet	
@@ -5084,6 +5098,7 @@ coin	cash	accepted	opencyc sumo
 coin	condition.communication	single	sumo	
 coin	currency	accepted	opencyc sumo wordnet	
 coin	device	single	opencyc	
+coin	image	single	opencyc	
 coin	image.cognition	single	opencyc	
 coin	indication	single	sumo	
 coin	information	accepted	sumo yago	
@@ -5168,7 +5183,7 @@ colony	agent	single	sumo
 colony	landscape	single	sumo	
 colony	phenomenon	single	sumo	
 colony	physical-object	single	wordnet	
-colony	place	accepted	sumo wordnet	
+colony	place	accepted	sumo wordnet yago	
 colony	region	single	sumo	
 colony	region.2	single	claude	
 colony	region.location	accepted	claude wordnet	
@@ -5177,6 +5192,7 @@ colony.group	agent	single	sumo
 colony.group	collection	single	sumo	
 colony.group	group	accepted	sumo wordnet	
 colony.group	phenomenon	single	sumo	
+colony.group	place	single	yago	
 colony.group	universe	single	sumo	
 color	amateur	single	sumo	
 color	appearance	single	wordnet	
@@ -5205,6 +5221,7 @@ column	article	single	opencyc
 column	artifact	accepted	sumo wordnet	
 column	development	single	sumo	
 column	device	single	wordnet	
+column	information	single	opencyc	
 column	information.communication	single	opencyc	
 column	phenomenon	single	sumo	
 column	physical-object	single	wordnet	
@@ -5216,6 +5233,7 @@ column	support.artifact	accepted	claude wordnet
 column	universe	single	sumo	
 column.group	article	single	opencyc	
 column.group	group	single	wordnet	
+column.group	information	single	opencyc	
 column.group	information.communication	single	opencyc	
 column.group	product	single	yago	
 column.group	product.phenomenon	single	yago	
@@ -5233,7 +5251,7 @@ comedy	condition.communication	single	sumo
 comedy	fiction	single	sumo	
 comedy	folklore	single	sumo	
 comedy	indication	single	sumo	
-comedy	information	accepted	sumo wordnet yago	
+comedy	information	accepted	opencyc sumo wordnet yago	
 comedy	information.communication	single	opencyc	
 comedy	legend	single	sumo	
 comedy	line.communication	single	sumo	
@@ -5246,6 +5264,7 @@ comet	celestial-body	single	sumo
 comet	natural-object	single	wordnet	
 comet	phenomenon	single	sumo	
 comet	physical-object	single	wordnet	
+comet	place	single	yago	
 comet	universe	single	sumo	
 comfort	condition.state	single	wordnet	
 comfort	emotional-state	single	sumo	
@@ -5253,7 +5272,7 @@ comfort	monetary-value	single	sumo
 comfort	property	single	sumo	
 comic-strip	cartoon	accepted	claude wordnet	
 comic-strip	indication	single	sumo	
-comic-strip	information	accepted	sumo wordnet yago	
+comic-strip	information	accepted	opencyc sumo wordnet yago	
 comic-strip	information.communication	single	opencyc	
 comic-strip	phenomenon	single	sumo	
 comic-strip	physical-object	single	sumo	
@@ -5523,7 +5542,7 @@ compromise	action	single	opencyc
 compromise	activity	single	sumo	
 compromise	communication	single	sumo	
 compromise	event	accepted	opencyc sumo	
-compromise	information	accepted	sumo wordnet	
+compromise	information	accepted	opencyc sumo wordnet	
 compromise	information.communication	single	opencyc	
 compromise	norm	single	opencyc	
 compromise	phenomenon	single	sumo	
@@ -5554,6 +5573,7 @@ concentration.cognition	perception	single	sumo
 concentration.cognition	phenomenon	single	sumo	
 concept	cognition	single	wordnet	
 concept	idea	accepted	opencyc wordnet	
+concept	information	single	opencyc	
 concept	information.communication	single	opencyc	
 concept	sense.communication	single	sumo	
 conception	event	single	sumo	
@@ -5584,7 +5604,7 @@ concession	activity	single	sumo
 concession	communication	single	sumo	
 concession	compromise	single	opencyc	
 concession	event	accepted	opencyc sumo wordnet	
-concession	information	single	sumo	
+concession	information	accepted	opencyc sumo	
 concession	information.communication	single	opencyc	
 concession	norm	single	opencyc	
 concession	phenomenon	single	sumo	
@@ -5605,6 +5625,7 @@ conclusion	universe	single	sumo
 conclusion	volition	single	sumo	
 concrete	artifact	accepted	opencyc wordnet	
 concrete	physical-object	single	wordnet	
+concrete	place	single	yago	
 concrete	product	single	yago	
 concrete	product.phenomenon	single	yago	
 condition	information	single	wordnet	
@@ -5816,6 +5837,7 @@ connection.state	monetary-value	single	sumo
 connection.state	property	single	sumo	
 conscience	context	single	opencyc	
 conscience	context.communication	single	opencyc	
+conscience	information	single	opencyc	
 conscience	information.communication	single	opencyc	
 conscience	monetary-value	single	sumo	
 conscience	motivation	single	wordnet	
@@ -5886,6 +5908,7 @@ constellation	celestial-body	single	sumo
 constellation	natural-object	single	wordnet	
 constellation	phenomenon	single	sumo	
 constellation	physical-object	single	wordnet	
+constellation	place	single	yago	
 constellation	site	single	opencyc	
 constellation	universe	single	sumo	
 constituency	agent	single	sumo	
@@ -5988,13 +6011,14 @@ contest.act	event	accepted	sumo wordnet
 contest.act	phenomenon	single	sumo	
 contest.act	procedure.act	single	sumo	
 contest.act	volition	single	sumo	
+context	information	single	opencyc	
 context	information.communication	single	opencyc	
 context	sense.communication	single	sumo	
 context	situation	single	wordnet	
 context.communication	artifact	single	sumo	
 context.communication	condition.communication	single	sumo	
 context.communication	indication	single	sumo	
-context.communication	information	single	sumo	
+context.communication	information	accepted	opencyc sumo	
 context.communication	information.communication	single	opencyc	
 context.communication	line.communication	single	sumo	
 context.communication	part	single	wordnet	
@@ -6007,13 +6031,13 @@ continent	landform	accepted	schemaorg yago
 continent	landscape	single	sumo	
 continent	phenomenon	single	sumo	
 continent	physical-object	single	wordnet	
-continent	place	accepted	claude schemaorg sumo	
+continent	place	accepted	claude schemaorg sumo yago	
 continent	region	single	sumo	
 continent	site	single	opencyc	
 continent	universe	single	sumo	
 continent	yard	single	sumo	
 contract	document	accepted	claude wordnet	
-contract	information	accepted	claude wordnet yago	
+contract	information	accepted	claude opencyc wordnet yago	
 contract	information.communication	single	opencyc	
 contract	legal-document	accepted	claude wordnet	
 contract	norm	single	opencyc	
@@ -6118,7 +6142,6 @@ cook	agent	accepted	sumo wordnet
 cook	animal	single	sumo	
 cook	body	single	sumo	
 cook	human	single	sumo	
-cook	human-body	single	sumo	
 cook	mammal	single	sumo	
 cook	organism	accepted	sumo wordnet	
 cook	person	accepted	sumo wordnet	
@@ -6164,7 +6187,7 @@ copyright	condition.communication	single	sumo
 copyright	document	accepted	claude wordnet	
 copyright	idea	single	wordnet	
 copyright	indication	single	sumo	
-copyright	information	accepted	sumo wordnet	
+copyright	information	accepted	opencyc sumo wordnet	
 copyright	information.communication	single	opencyc	
 copyright	line.communication	single	sumo	
 copyright	norm	single	opencyc	
@@ -6298,15 +6321,18 @@ country	land	single	sumo
 country	landscape	single	sumo	
 country	organization	dissented	wordnet	
 country	phenomenon	single	sumo	
-country	place	accepted	claude sumo	
+country	place	accepted	claude schemaorg sumo yago	
 country	region	single	sumo	
+country	site	single	opencyc	
+country	structure	single	opencyc	
+country	system	single	opencyc	
 country	universe	single	sumo	
 country	yard	single	sumo	
 country.2	region.2	single	claude	
 country.location	landscape	single	sumo	
 country.location	phenomenon	single	sumo	
 country.location	physical-object	single	wordnet	
-country.location	place	accepted	schemaorg sumo wordnet	
+country.location	place	accepted	schemaorg sumo wordnet yago	
 country.location	region	single	sumo	
 country.location	region.location	accepted	claude wordnet	
 country.location	site	single	opencyc	
@@ -6479,7 +6505,6 @@ crackpot	agent	accepted	sumo wordnet
 crackpot	animal	single	sumo	
 crackpot	body	single	sumo	
 crackpot	human	single	sumo	
-crackpot	human-body	single	sumo	
 crackpot	mammal	single	sumo	
 crackpot	organism	accepted	sumo wordnet	
 crackpot	person	accepted	sumo wordnet	
@@ -6566,6 +6591,7 @@ credit-card	card.communication.2	single	opencyc
 credit-card	credit.possession.2	single	wordnet	
 credit-card	device	single	opencyc	
 credit-card	identification	accepted	claude wordnet	
+credit-card	image	single	opencyc	
 credit-card	image.cognition	single	opencyc	
 credit-card	indication	single	wordnet	
 credit-card	information	single	wordnet	
@@ -6579,6 +6605,7 @@ credit.possession.2	quantity	single	sumo
 creed	belief	single	wordnet	
 creed	cognition	single	wordnet	
 creed	doctrine	single	wordnet	
+creed	information	single	opencyc	
 creed	information.communication	single	opencyc	
 creed	sense.communication	single	sumo	
 crevice	monetary-value	single	sumo	
@@ -6810,6 +6837,7 @@ curate	physical-object	single	wordnet
 currency	artifact	accepted	opencyc sumo	
 currency	condition.communication	single	sumo	
 currency	device	single	opencyc	
+currency	image	single	opencyc	
 currency	image.cognition	single	opencyc	
 currency	indication	single	sumo	
 currency	information	single	sumo	
@@ -6854,6 +6882,7 @@ custody	procedure.act	single	sumo
 custody	volition	single	sumo	
 custom	cognition	single	wordnet	
 custom	convention.cognition	single	sumo	
+custom	information	single	opencyc	
 custom	information.communication	single	opencyc	
 custom	monetary-value	single	sumo	
 custom	property	single	sumo	
@@ -6862,7 +6891,6 @@ customer	animal	single	sumo
 customer	body	single	sumo	
 customer	consumer	accepted	claude wordnet	
 customer	human	single	sumo	
-customer	human-body	single	sumo	
 customer	mammal	single	sumo	
 customer	organism	accepted	sumo wordnet	
 customer	person	accepted	sumo wordnet	
@@ -6900,7 +6928,6 @@ dad	animal	single	sumo
 dad	body	single	sumo	
 dad	father	single	wordnet	
 dad	human	single	sumo	
-dad	human-body	single	sumo	
 dad	mammal	single	sumo	
 dad	man	single	sumo	
 dad	organism	accepted	sumo wordnet	
@@ -6922,7 +6949,7 @@ dairy	institution	single	opencyc
 dairy	organization	single	yago	
 dairy	phenomenon	single	sumo	
 dairy	physical-object	single	wordnet	
-dairy	place	single	wordnet	
+dairy	place	accepted	wordnet yago	
 dairy	structure	single	opencyc	
 dairy	system	single	opencyc	
 dairy	universe	single	sumo	
@@ -7153,6 +7180,7 @@ decree	legislation	single	yago
 decree	statement	single	opencyc	
 deed	artifact	single	opencyc	
 deed	document	single	wordnet	
+deed	image	single	opencyc	
 deed	image.cognition	single	opencyc	
 deed	information	accepted	wordnet yago	
 deed	legal-document	accepted	claude wordnet	
@@ -7193,7 +7221,7 @@ deficit	magnitude	single	wordnet
 deficit	quantity	single	sumo	
 deficit	situation	single	opencyc	
 definition	explanation	single	wordnet	
-definition	information	accepted	wordnet yago	
+definition	information	accepted	opencyc wordnet yago	
 definition	information.communication	single	opencyc	
 definition	sense.communication	single	sumo	
 degree	quantity	single	sumo	
@@ -7268,7 +7296,6 @@ demonstrator	agent	accepted	sumo wordnet
 demonstrator	animal	single	sumo	
 demonstrator	body	single	sumo	
 demonstrator	human	single	sumo	
-demonstrator	human-body	single	sumo	
 demonstrator	mammal	single	sumo	
 demonstrator	organism	accepted	sumo wordnet	
 demonstrator	person	accepted	sumo wordnet	
@@ -7379,7 +7406,7 @@ descent.relation	monetary-value	single	sumo
 descent.relation	property	single	sumo	
 desert	group	single	wordnet	
 desert	physical-object	single	wordnet	
-desert	place	single	wordnet	
+desert	place	accepted	wordnet yago	
 desert	region.location	single	wordnet	
 deservingness	amateur	single	sumo	
 deservingness	atmosphere.state	single	sumo	
@@ -7449,6 +7476,7 @@ detail	event	single	opencyc
 detail	expert	single	sumo	
 detail	freedom	single	sumo	
 detail	hero	single	sumo	
+detail	image	single	opencyc	
 detail	image.cognition	single	opencyc	
 detail	lap	single	sumo	
 detail	light	single	opencyc	
@@ -7467,6 +7495,7 @@ detail	tension	single	sumo
 detail	way	single	sumo	
 detail.cognition	cognition	single	wordnet	
 detail.cognition	event	single	opencyc	
+detail.cognition	image	single	opencyc	
 detail.cognition	image.cognition	single	opencyc	
 detail.cognition	information	single	sumo	
 detail.cognition	light	single	opencyc	
@@ -7521,14 +7550,14 @@ diagram	artifact	single	wordnet
 diagram	drawing.2	single	claude	
 diagram	drawing.artifact	accepted	claude wordnet	
 diagram	image	single	claude	
-diagram	information	accepted	claude sumo yago	
+diagram	information	accepted	claude opencyc sumo yago	
 diagram	information.communication	single	opencyc	
 diagram	phenomenon	single	sumo	
 diagram	physical-object	single	wordnet	
 diagram	product	single	yago	
 diagram	product.phenomenon	single	yago	
 diagram	universe	single	sumo	
-dialect	information	accepted	sumo wordnet	
+dialect	information	accepted	opencyc sumo wordnet	
 dialect	information.communication	single	opencyc	
 dialect	language	accepted	opencyc sumo	
 dialect	line.communication	single	sumo	
@@ -7585,6 +7614,7 @@ diary	artifact	accepted	opencyc sumo
 diary	condition.communication	single	sumo	
 diary	essay	single	sumo	
 diary	file.communication	single	sumo	
+diary	image	single	opencyc	
 diary	image.cognition	single	opencyc	
 diary	indication	single	sumo	
 diary	information	accepted	sumo wordnet yago	
@@ -7606,7 +7636,7 @@ dictionary	condition.communication	single	sumo
 dictionary	device	single	sumo	
 dictionary	file.communication	single	sumo	
 dictionary	indication	single	sumo	
-dictionary	information	accepted	sumo yago	
+dictionary	information	accepted	opencyc sumo yago	
 dictionary	information.communication	accepted	opencyc sumo	
 dictionary	line.communication	single	sumo	
 dictionary	mechanism	single	sumo	
@@ -8098,7 +8128,7 @@ disregard	way	single	sumo
 dissertation	artifact	single	sumo	
 dissertation	condition.communication	single	sumo	
 dissertation	indication	single	sumo	
-dissertation	information	accepted	sumo wordnet	
+dissertation	information	accepted	opencyc sumo wordnet	
 dissertation	information.communication	single	opencyc	
 dissertation	line.communication	single	sumo	
 dissertation	phenomenon	single	sumo	
@@ -8151,7 +8181,7 @@ district	land	single	sumo
 district	landscape	single	sumo	
 district	phenomenon	single	sumo	
 district	physical-object	single	wordnet	
-district	place	accepted	sumo wordnet	
+district	place	accepted	sumo wordnet yago	
 district	region	single	sumo	
 district	region.2	single	claude	
 district	region.location	accepted	claude wordnet	
@@ -8449,7 +8479,7 @@ dormitory	housing	accepted	claude wordnet
 dormitory	landscape	single	sumo	
 dormitory	phenomenon	single	sumo	
 dormitory	physical-object	single	wordnet	
-dormitory	place	single	sumo	
+dormitory	place	accepted	sumo yago	
 dormitory	region	single	sumo	
 dormitory	site	single	opencyc	
 dormitory	structure	single	wordnet	
@@ -8457,6 +8487,7 @@ dormitory	universe	single	sumo
 dose	agent	dissented	wordnet	
 dose	drug	accepted	claude wordnet	
 dose	material	single	sumo	
+dose	medicine	single	opencyc	
 dose	medicine.3	single	claude	
 dose	medicine.act	single	opencyc	
 dose	medicine.artifact	accepted	opencyc wordnet	
@@ -8480,7 +8511,6 @@ double.person.2	agent	accepted	sumo wordnet
 double.person.2	animal	single	sumo	
 double.person.2	body	single	sumo	
 double.person.2	human	single	sumo	
-double.person.2	human-body	single	sumo	
 double.person.2	mammal	single	sumo	
 double.person.2	organism	accepted	sumo wordnet	
 double.person.2	person	accepted	sumo wordnet	
@@ -8745,7 +8775,7 @@ dwelling	housing	accepted	claude wordnet
 dwelling	landscape	single	sumo	
 dwelling	phenomenon	single	sumo	
 dwelling	physical-object	single	wordnet	
-dwelling	place	single	sumo	
+dwelling	place	accepted	sumo yago	
 dwelling	region	single	sumo	
 dwelling	structure	single	wordnet	
 dwelling	universe	single	sumo	
@@ -8779,6 +8809,7 @@ ear	system	single	opencyc
 ear	universe	single	sumo	
 earth-science	cognition	single	wordnet	
 earth-science	field-of-study	accepted	claude opencyc sumo wordnet	
+earth-science	information	single	opencyc	
 earth-science	information.communication	single	opencyc	
 earth-science	natural-science	accepted	claude wordnet	
 earth-science	science	accepted	claude wordnet	
@@ -9043,7 +9074,7 @@ embassy	building	accepted	sumo wordnet
 embassy	development	single	sumo	
 embassy	phenomenon	single	sumo	
 embassy	physical-object	single	wordnet	
-embassy	place	single	schemaorg	
+embassy	place	accepted	schemaorg yago	
 embassy	structure	single	wordnet	
 embassy	universe	single	sumo	
 embryo	animal	single	wordnet	
@@ -9106,12 +9137,14 @@ emphasis	way	single	sumo
 empire	agent	single	sumo	
 empire	association.group	single	sumo	
 empire	collection	single	sumo	
+empire	country	single	yago	
 empire	country.location	single	yago	
 empire	government	single	sumo	
 empire	group	accepted	sumo wordnet	
 empire	monarchy	single	wordnet	
 empire	organization	accepted	sumo yago	
 empire	phenomenon	single	sumo	
+empire	place	single	yago	
 empire	site	single	opencyc	
 empire	structure	single	opencyc	
 empire	system	single	opencyc	
@@ -9140,7 +9173,6 @@ enchantress	agent	accepted	sumo wordnet
 enchantress	animal	single	sumo	
 enchantress	body	single	sumo	
 enchantress	human	single	sumo	
-enchantress	human-body	single	sumo	
 enchantress	lady	single	sumo	
 enchantress	mammal	single	sumo	
 enchantress	organism	accepted	sumo wordnet	
@@ -9347,7 +9379,7 @@ esprit-de-corps	trait	accepted	sumo wordnet
 essay	artifact	single	sumo	
 essay	condition.communication	single	sumo	
 essay	indication	single	sumo	
-essay	information	accepted	sumo wordnet	
+essay	information	accepted	opencyc sumo wordnet	
 essay	information.communication	single	opencyc	
 essay	line.communication	single	sumo	
 essay	phenomenon	single	sumo	
@@ -9399,7 +9431,7 @@ evidence	act	single	sumo
 evidence	activity	single	sumo	
 evidence	cognition	single	wordnet	
 evidence	event	single	sumo	
-evidence	information	single	sumo	
+evidence	information	accepted	opencyc sumo	
 evidence	information.communication	single	opencyc	
 evidence	phenomenon	single	sumo	
 evidence	procedure.act	single	sumo	
@@ -9437,7 +9469,6 @@ examiner	animal	single	sumo
 examiner	body	single	sumo	
 examiner	expert	single	wordnet	
 examiner	human	accepted	opencyc sumo	
-examiner	human-body	single	sumo	
 examiner	investigator	accepted	claude wordnet	
 examiner	mammal	accepted	opencyc sumo	
 examiner	organism	accepted	sumo wordnet	
@@ -9531,7 +9562,7 @@ excuse	affirmation	single	sumo
 excuse	communication	single	sumo	
 excuse	event	single	sumo	
 excuse	explanation	single	wordnet	
-excuse	information	accepted	sumo wordnet	
+excuse	information	accepted	opencyc sumo wordnet	
 excuse	information.communication	single	opencyc	
 excuse	phenomenon	single	sumo	
 excuse	procedure.act	single	sumo	
@@ -9625,6 +9656,7 @@ expectation	belief	single	wordnet
 expectation	cognition	single	wordnet	
 expectation	context	single	opencyc	
 expectation	context.communication	single	opencyc	
+expectation	information	single	opencyc	
 expectation	information.communication	single	opencyc	
 expectation	sense.communication	single	sumo	
 expedition	agent	single	sumo	
@@ -9839,6 +9871,7 @@ factory	development	single	sumo
 factory	organization	single	yago	
 factory	phenomenon	single	sumo	
 factory	physical-object	single	wordnet	
+factory	place	single	yago	
 factory	plant.2	single	claude	
 factory	plant.artifact	accepted	claude wordnet	
 factory	structure	accepted	claude wordnet	
@@ -9986,7 +10019,7 @@ farm	artifact	single	sumo
 farm	development	single	sumo	
 farm	phenomenon	single	sumo	
 farm	physical-object	single	wordnet	
-farm	place	single	wordnet	
+farm	place	accepted	wordnet yago	
 farm	structure	single	opencyc	
 farm	system	single	opencyc	
 farm	universe	single	sumo	
@@ -10138,7 +10171,6 @@ female-child	animal	single	sumo
 female-child	body	single	sumo	
 female-child	child	single	sumo	
 female-child	human	single	sumo	
-female-child	human-body	single	sumo	
 female-child	lady	single	sumo	
 female-child	mammal	single	sumo	
 female-child	organism	accepted	sumo wordnet	
@@ -10246,6 +10278,7 @@ field	region.location	accepted	claude wordnet
 field	universe	single	sumo	
 field	yard	disputed	sumo	wordnet
 field-of-study	cognition	single	wordnet	
+field-of-study	information	single	opencyc	
 field-of-study	information.communication	single	opencyc	
 field-of-study	sense.communication	single	sumo	
 fig	fruit	accepted	claude wordnet	
@@ -10304,11 +10337,12 @@ film	condition.communication	single	sumo
 film	event	single	wordnet	
 film	film.communication	single	sumo	
 film	indication	single	sumo	
-film	information	accepted	claude schemaorg sumo yago	
+film	information	accepted	claude sumo	
 film	line.communication	single	sumo	
 film	phenomenon	single	sumo	
 film	physical-object	accepted	sumo wordnet	
 film	show	dissented	wordnet	
+film	surface	single	opencyc	
 film	text	single	sumo	
 film	universe	single	sumo	
 film	video	single	claude	
@@ -10676,7 +10710,6 @@ folk	animal	single	sumo
 folk	body	single	sumo	
 folk	group	single	wordnet	
 folk	human	single	sumo	
-folk	human-body	single	sumo	
 folk	mammal	single	sumo	
 folk	organism	single	sumo	
 folk	people	single	wordnet	
@@ -10710,7 +10743,6 @@ fool	agent	accepted	sumo wordnet
 fool	animal	single	sumo	
 fool	body	single	sumo	
 fool	human	single	sumo	
-fool	human-body	single	sumo	
 fool	mammal	single	sumo	
 fool	organism	accepted	sumo wordnet	
 fool	person	accepted	sumo wordnet	
@@ -10771,6 +10803,7 @@ forest	group	single	wordnet
 forest	land	single	wordnet	
 forest	obstacle	single	opencyc	
 forest	physical-object	single	wordnet	
+forest	place	single	yago	
 forest	site	single	opencyc	
 forestry	action	single	opencyc	
 forestry	biology	dissented	wordnet	
@@ -10792,7 +10825,7 @@ form	artifact	single	sumo
 form	condition.communication	single	sumo	
 form	document	accepted	claude wordnet	
 form	indication	single	sumo	
-form	information	accepted	claude sumo wordnet	
+form	information	accepted	claude opencyc sumo wordnet	
 form	information.communication	single	opencyc	
 form	line.communication	single	sumo	
 form	phenomenon	single	sumo	
@@ -10801,11 +10834,13 @@ form	text	single	sumo
 form	universe	single	sumo	
 form.3	document	single	claude	
 form.cognition	cognition	single	wordnet	
+form.cognition	information	single	opencyc	
 form.cognition	information.communication	single	opencyc	
 form.cognition	monetary-value	single	sumo	
 form.cognition	property	single	sumo	
 form.group	agent	single	sumo	
 form.group	group	single	wordnet	
+form.group	information	single	opencyc	
 form.group	information.communication	single	opencyc	
 form.group	organism	single	sumo	
 form.group	phenomenon	single	sumo	
@@ -10954,6 +10989,7 @@ fountain	fixture	accepted	claude wordnet
 fountain	information	single	yago	
 fountain	phenomenon	single	sumo	
 fountain	physical-object	single	wordnet	
+fountain	place	single	yago	
 fountain	product	single	yago	
 fountain	product.phenomenon	single	yago	
 fountain	universe	single	sumo	
@@ -11124,7 +11160,7 @@ function.attribute	monetary-value	single	sumo
 function.attribute	property	single	sumo	
 fund	standard	single	wordnet	
 fundamental-law	document	single	wordnet	
-fundamental-law	information	single	wordnet	
+fundamental-law	information	accepted	opencyc wordnet	
 fundamental-law	information.communication	single	opencyc	
 fundamental-law	law	single	opencyc	
 fundamental-law	law.cognition	single	opencyc	
@@ -11178,6 +11214,7 @@ fury	land-vehicle	single	opencyc
 galaxy	collection	accepted	sumo wordnet	
 galaxy	group	single	wordnet	
 galaxy	phenomenon	single	sumo	
+galaxy	place	single	yago	
 gallery	agent	single	sumo	
 gallery	artifact	single	wordnet	
 gallery	association.group	single	sumo	
@@ -11196,7 +11233,7 @@ game	activity	accepted	sumo wordnet
 game	contest	single	sumo	
 game	contest.act	single	sumo	
 game	event	accepted	sumo wordnet	
-game	information	accepted	schemaorg yago	
+game	information	accepted	opencyc schemaorg yago	
 game	information.communication	single	opencyc	
 game	phenomenon	single	sumo	
 game	procedure.act	single	sumo	
@@ -11208,7 +11245,7 @@ game.act	activity	accepted	sumo wordnet
 game.act	contest	single	sumo	
 game.act	contest.act	single	sumo	
 game.act	event	accepted	sumo wordnet	
-game.act	information	accepted	schemaorg yago	
+game.act	information	accepted	opencyc schemaorg yago	
 game.act	information.communication	single	opencyc	
 game.act	phenomenon	single	sumo	
 game.act	procedure.act	single	sumo	
@@ -11259,6 +11296,7 @@ garden	group	single	wordnet
 garden	organism	single	sumo	
 garden	phenomenon	single	sumo	
 garden	physical-object	single	sumo	
+garden	place	single	yago	
 garden	plant	single	sumo	
 garden	site	single	opencyc	
 garden	species	single	sumo	
@@ -11322,7 +11360,6 @@ genius	agent	accepted	sumo wordnet
 genius	animal	single	sumo	
 genius	body	single	sumo	
 genius	human	accepted	opencyc sumo	
-genius	human-body	single	sumo	
 genius	mammal	accepted	opencyc sumo	
 genius	organism	accepted	sumo wordnet	
 genius	person	accepted	sumo wordnet	
@@ -11340,7 +11377,6 @@ gentleman	agent	accepted	sumo wordnet
 gentleman	animal	single	sumo	
 gentleman	body	single	sumo	
 gentleman	human	single	sumo	
-gentleman	human-body	single	sumo	
 gentleman	mammal	single	sumo	
 gentleman	man	accepted	sumo wordnet	
 gentleman	organism	accepted	sumo wordnet	
@@ -11363,6 +11399,7 @@ gesture	act	accepted	sumo wordnet
 gesture	activity	single	sumo	
 gesture	communication	single	sumo	
 gesture	event	accepted	sumo wordnet	
+gesture	image	single	opencyc	
 gesture	image.cognition	single	opencyc	
 gesture	information	single	sumo	
 gesture	motion	accepted	sumo wordnet	
@@ -11388,7 +11425,6 @@ giant	agent	accepted	sumo wordnet
 giant	animal	single	sumo	
 giant	body	single	sumo	
 giant	human	accepted	opencyc sumo	
-giant	human-body	single	sumo	
 giant	information	single	yago	
 giant	mammal	accepted	opencyc sumo	
 giant	organism	accepted	sumo wordnet	
@@ -11415,7 +11451,6 @@ girlfriend	agent	accepted	sumo wordnet
 girlfriend	animal	single	sumo	
 girlfriend	body	single	sumo	
 girlfriend	human	single	sumo	
-girlfriend	human-body	single	sumo	
 girlfriend	lady	single	sumo	
 girlfriend	mammal	single	sumo	
 girlfriend	organism	accepted	sumo wordnet	
@@ -11433,6 +11468,7 @@ glacier	environment	single	opencyc
 glacier	ice	single	opencyc	
 glacier	landform	single	yago	
 glacier	physical-object	single	wordnet	
+glacier	place	single	yago	
 glacier	site	single	opencyc	
 glance	accomplishment	single	sumo	
 glance	act	accepted	sumo wordnet	
@@ -11699,6 +11735,7 @@ grant	activity	single	sumo
 grant	aid	single	wordnet	
 grant	event	single	sumo	
 grant	gift	single	wordnet	
+grant	information	single	opencyc	
 grant	information.communication	single	opencyc	
 grant	norm	single	opencyc	
 grant	phenomenon	single	sumo	
@@ -11730,7 +11767,7 @@ grave	development	single	sumo
 grave	device	single	opencyc	
 grave	phenomenon	single	sumo	
 grave	physical-object	single	wordnet	
-grave	place	single	wordnet	
+grave	place	accepted	wordnet yago	
 grave	site	single	opencyc	
 grave	topographic-point	accepted	claude wordnet	
 grave	universe	single	sumo	
@@ -11751,7 +11788,6 @@ green.person	agent	accepted	sumo wordnet
 green.person	animal	single	sumo	
 green.person	body	single	sumo	
 green.person	human	single	sumo	
-green.person	human-body	single	sumo	
 green.person	mammal	single	sumo	
 green.person	organism	accepted	sumo wordnet	
 green.person	person	accepted	sumo wordnet	
@@ -11836,7 +11872,7 @@ grocery-store	mercantile-establishment	single	wordnet
 grocery-store	organization	accepted	schemaorg sumo yago	
 grocery-store	phenomenon	single	sumo	
 grocery-store	physical-object	single	wordnet	
-grocery-store	place	single	schemaorg	
+grocery-store	place	accepted	schemaorg yago	
 grocery-store	shop	single	sumo	
 grocery-store	structure	accepted	opencyc wordnet	
 grocery-store	system	single	opencyc	
@@ -11904,7 +11940,6 @@ guerrilla	agent	accepted	sumo wordnet
 guerrilla	animal	single	sumo	
 guerrilla	body	single	sumo	
 guerrilla	human	accepted	opencyc sumo	
-guerrilla	human-body	single	sumo	
 guerrilla	mammal	accepted	opencyc sumo	
 guerrilla	organism	accepted	sumo wordnet	
 guerrilla	person	accepted	sumo wordnet	
@@ -11964,6 +11999,7 @@ guidepost	cognition	single	wordnet
 guidepost	concept	single	wordnet	
 guidepost	convention.cognition	single	sumo	
 guidepost	idea	single	wordnet	
+guidepost	image	single	opencyc	
 guidepost	image.cognition	single	opencyc	
 guidepost	monetary-value	single	sumo	
 guidepost	property	single	sumo	
@@ -12055,7 +12091,7 @@ habitat	environment	accepted	opencyc wordnet
 habitat	landscape	single	sumo	
 habitat	phenomenon	single	sumo	
 habitat	physical-object	single	wordnet	
-habitat	place	accepted	sumo wordnet	
+habitat	place	accepted	sumo wordnet yago	
 habitat	region	single	sumo	
 habitat	region.location	single	wordnet	
 habitat	site	single	opencyc	
@@ -12079,6 +12115,7 @@ hall	development	single	sumo
 hall	device	single	opencyc	
 hall	phenomenon	single	sumo	
 hall	physical-object	single	wordnet	
+hall	place	single	yago	
 hall	site	single	opencyc	
 hall	structure	single	wordnet	
 hall	universe	single	sumo	
@@ -12088,6 +12125,7 @@ hall.artifact	development	single	sumo
 hall.artifact	device	single	opencyc	
 hall.artifact	phenomenon	single	sumo	
 hall.artifact	physical-object	single	wordnet	
+hall.artifact	place	single	yago	
 hall.artifact	room	accepted	sumo wordnet	
 hall.artifact	site	single	opencyc	
 hall.artifact	structure	single	wordnet	
@@ -12255,7 +12293,7 @@ head.person	system	single	opencyc
 headline	artifact	single	sumo	
 headline	condition.communication	single	sumo	
 headline	indication	single	sumo	
-headline	information	accepted	sumo wordnet	
+headline	information	accepted	opencyc sumo wordnet	
 headline	information.communication	single	opencyc	
 headline	line.communication	accepted	sumo wordnet	
 headline	news	single	opencyc	
@@ -12273,6 +12311,7 @@ headquarters	office	accepted	claude wordnet
 headquarters	organization	single	sumo	
 headquarters	phenomenon	single	sumo	
 headquarters	physical-object	single	wordnet	
+headquarters	place	single	yago	
 headquarters	structure	single	wordnet	
 headquarters	team	single	sumo	
 headquarters	universe	single	sumo	
@@ -12426,6 +12465,7 @@ hero	vertebrate	single	opencyc
 heroin	agent	single	wordnet	
 heroin	artifact	single	opencyc	
 heroin	drug	single	wordnet	
+heroin	medicine	single	opencyc	
 heroin	medicine.act	single	opencyc	
 heroin	medicine.artifact	single	opencyc	
 heroin	substance	single	wordnet	
@@ -12474,6 +12514,7 @@ highlight	tension	single	sumo
 highlight	way	single	sumo	
 hill	landform	single	yago	
 hill	physical-object	single	wordnet	
+hill	place	single	yago	
 hill	site	single	opencyc	
 hindrance	artifact	single	wordnet	
 hindrance	phenomenon	single	sumo	
@@ -12505,6 +12546,7 @@ history	cognition	single	wordnet
 history	event	single	bfo	
 history	field-of-study	accepted	claude sumo wordnet	
 history	humanities	accepted	claude wordnet	
+history	information	single	opencyc	
 history	information.communication	single	opencyc	
 history	narrative	single	opencyc	
 history	sense.communication	single	sumo	
@@ -12514,7 +12556,7 @@ history.communication	condition.communication	single	sumo
 history.communication	event	single	bfo	
 history.communication	file.communication	single	sumo	
 history.communication	indication	accepted	sumo wordnet	
-history.communication	information	accepted	sumo wordnet	
+history.communication	information	accepted	opencyc sumo wordnet	
 history.communication	information.communication	accepted	opencyc sumo	
 history.communication	line.communication	single	sumo	
 history.communication	myth	single	sumo	
@@ -12527,6 +12569,7 @@ history.communication	physical-object	single	sumo
 history.communication	text	single	sumo	
 history.communication	universe	single	sumo	
 history.time	event	single	bfo	
+history.time	information	single	opencyc	
 history.time	information.communication	single	opencyc	
 history.time	narrative	single	opencyc	
 history.time	past	single	wordnet	
@@ -12544,7 +12587,6 @@ hog.person	agent	accepted	sumo wordnet
 hog.person	animal	single	sumo	
 hog.person	body	single	sumo	
 hog.person	human	single	sumo	
-hog.person	human-body	single	sumo	
 hog.person	mammal	single	sumo	
 hog.person	organism	accepted	sumo wordnet	
 hog.person	person	accepted	sumo wordnet	
@@ -12575,6 +12617,7 @@ home	house.group	disputed	yago	opencyc
 home	organization	single	sumo	
 home	phenomenon	single	sumo	
 home	physical-object	single	wordnet	
+home	place	single	yago	
 home	site	single	opencyc	
 home	structure	dissented	wordnet	
 home	team	single	sumo	
@@ -12657,7 +12700,7 @@ horoscope	activity	single	sumo
 horoscope	affirmation	single	sumo	
 horoscope	communication	single	sumo	
 horoscope	event	single	sumo	
-horoscope	information	accepted	sumo wordnet	
+horoscope	information	accepted	opencyc sumo wordnet	
 horoscope	information.communication	single	opencyc	
 horoscope	phenomenon	single	sumo	
 horoscope	procedure.act	single	sumo	
@@ -12689,7 +12732,7 @@ hospital	landscape	single	sumo
 hospital	organization	accepted	schemaorg yago	
 hospital	phenomenon	single	sumo	
 hospital	physical-object	single	wordnet	
-hospital	place	accepted	schemaorg sumo	
+hospital	place	accepted	schemaorg sumo yago	
 hospital	region	single	sumo	
 hospital	structure	single	wordnet	
 hospital	universe	single	sumo	
@@ -12712,7 +12755,7 @@ hostel	building	single	wordnet
 hostel	hotel	accepted	claude wordnet	
 hostel	organization	accepted	schemaorg yago	
 hostel	physical-object	single	wordnet	
-hostel	place	single	schemaorg	
+hostel	place	accepted	schemaorg yago	
 hostel	structure	single	wordnet	
 hostility	amateur	single	sumo	
 hostility	atmosphere.state	single	sumo	
@@ -12741,7 +12784,7 @@ hotel	artifact	single	wordnet
 hotel	building	accepted	claude wordnet	
 hotel	organization	accepted	schemaorg yago	
 hotel	physical-object	single	wordnet	
-hotel	place	single	schemaorg	
+hotel	place	accepted	schemaorg yago	
 hotel	structure	single	wordnet	
 hour.time	clock-time	single	wordnet	
 hour.time	cognition	single	wordnet	
@@ -12758,7 +12801,7 @@ house	housing	single	wordnet
 house	landscape	single	sumo	
 house	phenomenon	single	sumo	
 house	physical-object	accepted	claude wordnet	
-house	place	accepted	claude schemaorg sumo	
+house	place	accepted	claude schemaorg sumo yago	
 house	region	single	sumo	
 house	site	single	opencyc	
 house	structure	single	wordnet	
@@ -12769,7 +12812,7 @@ house.group	device	single	opencyc
 house.group	group	single	wordnet	
 house.group	home	disputed	opencyc	yago
 house.group	legislature	single	wordnet	
-house.group	place	single	schemaorg	
+house.group	place	accepted	schemaorg yago	
 house.group	site	single	opencyc	
 houseplant	agent	single	sumo	
 houseplant	organism	accepted	sumo wordnet	
@@ -12817,19 +12860,9 @@ human	structure	single	opencyc
 human	system	single	opencyc	
 human	universe	single	sumo	
 human	vertebrate	accepted	claude opencyc sumo wordnet	
-human-body	agent	single	sumo	
-human-body	animal	single	sumo	
-human-body	body	accepted	sumo wordnet	
-human-body	human	single	sumo	
-human-body	mammal	single	sumo	
+human-body	body	single	wordnet	
 human-body	natural-object	single	wordnet	
-human-body	organism	single	sumo	
-human-body	phenomenon	single	sumo	
-human-body	physical-object	accepted	sumo wordnet	
-human-body	self	single	sumo	
-human-body	species	single	sumo	
-human-body	universe	single	sumo	
-human-body	vertebrate	single	sumo	
+human-body	physical-object	single	wordnet	
 humanities	cognition	single	wordnet	
 humanities	field-of-study	accepted	claude sumo wordnet	
 humanities	sense.communication	single	sumo	
@@ -12837,7 +12870,6 @@ humanness	agent	single	sumo
 humanness	animal	single	sumo	
 humanness	body	single	sumo	
 humanness	human	single	sumo	
-humanness	human-body	single	sumo	
 humanness	mammal	single	sumo	
 humanness	organism	single	sumo	
 humanness	person	single	sumo	
@@ -12865,7 +12897,6 @@ hunter	agent	accepted	sumo wordnet
 hunter	animal	single	sumo	
 hunter	body	single	sumo	
 hunter	human	accepted	opencyc sumo	
-hunter	human-body	single	sumo	
 hunter	mammal	accepted	opencyc sumo	
 hunter	organism	accepted	sumo wordnet	
 hunter	person	accepted	sumo wordnet	
@@ -12898,6 +12929,7 @@ hypothesis	concept	single	wordnet
 hypothesis	context	single	opencyc	
 hypothesis	context.communication	single	opencyc	
 hypothesis	idea	single	wordnet	
+hypothesis	information	single	opencyc	
 hypothesis	information.communication	single	opencyc	
 hypothesis	sense.communication	single	sumo	
 ice	compound	single	sumo	
@@ -12914,6 +12946,7 @@ ice-cream	product	single	yago
 ice-cream	product.phenomenon	single	yago	
 ice-cream	substance	single	wordnet	
 idea	cognition	single	wordnet	
+idea	information	single	opencyc	
 idea	information.communication	single	opencyc	
 idea	sense.communication	single	sumo	
 ideal	agent	single	wordnet	
@@ -12928,6 +12961,7 @@ ideal	danger	single	sumo
 ideal	expert	single	sumo	
 ideal	freedom	single	sumo	
 ideal	hero	single	sumo	
+ideal	information	single	opencyc	
 ideal	information.communication	single	opencyc	
 ideal	lap	single	sumo	
 ideal	leader	single	wordnet	
@@ -12970,6 +13004,7 @@ illusion	idea	single	wordnet
 illusion.cognition	cognition	single	wordnet	
 illustration	artifact	accepted	claude wordnet	
 illustration	event	single	opencyc	
+illustration	image	single	opencyc	
 illustration	image.cognition	single	opencyc	
 illustration	information	accepted	sumo yago	
 illustration	light	single	opencyc	
@@ -13066,7 +13101,6 @@ imposter	agent	accepted	sumo wordnet
 imposter	animal	single	sumo	
 imposter	body	single	sumo	
 imposter	human	accepted	opencyc sumo	
-imposter	human-body	single	sumo	
 imposter	mammal	accepted	opencyc sumo	
 imposter	organism	accepted	sumo wordnet	
 imposter	person	accepted	sumo wordnet	
@@ -13492,7 +13526,7 @@ interest	outgo	single	wordnet
 interest	quantity	single	sumo	
 interest	situation	single	opencyc	
 interface	code	accepted	sumo wordnet	
-interface	information	single	wordnet	
+interface	information	accepted	opencyc wordnet	
 interface	information.communication	single	opencyc	
 interface	measure	single	sumo	
 interface	program.communication	accepted	sumo wordnet	
@@ -13589,7 +13623,6 @@ investigator	animal	single	sumo
 investigator	body	single	sumo	
 investigator	expert	accepted	claude wordnet	
 investigator	human	single	sumo	
-investigator	human-body	single	sumo	
 investigator	mammal	single	sumo	
 investigator	organism	accepted	sumo wordnet	
 investigator	person	accepted	sumo wordnet	
@@ -13648,7 +13681,7 @@ island	landscape	single	sumo
 island	natural-object	single	claude	
 island	phenomenon	single	sumo	
 island	physical-object	accepted	claude wordnet	
-island	place	accepted	claude sumo	
+island	place	accepted	claude sumo yago	
 island	region	single	sumo	
 island	universe	single	sumo	
 island	yard	single	sumo	
@@ -13829,7 +13862,7 @@ joke	way	single	sumo
 journal	artifact	accepted	sumo wordnet	
 journal	condition.communication	single	sumo	
 journal	indication	single	sumo	
-journal	information	accepted	sumo yago	
+journal	information	accepted	opencyc sumo yago	
 journal	information.communication	single	opencyc	
 journal	line.communication	single	sumo	
 journal	phenomenon	single	sumo	
@@ -13864,7 +13897,7 @@ judgment	accomplishment	single	sumo
 judgment	act	accepted	sumo wordnet	
 judgment	activity	single	sumo	
 judgment	event	accepted	sumo wordnet	
-judgment	information	single	sumo	
+judgment	information	accepted	opencyc sumo	
 judgment	information.communication	single	opencyc	
 judgment	norm	single	opencyc	
 judgment	phenomenon	single	sumo	
@@ -13876,7 +13909,7 @@ judgment.act	act	accepted	sumo wordnet
 judgment.act	activity	single	sumo	
 judgment.act	communication	single	sumo	
 judgment.act	event	accepted	sumo wordnet	
-judgment.act	information	single	sumo	
+judgment.act	information	accepted	opencyc sumo	
 judgment.act	information.communication	single	opencyc	
 judgment.act	norm	single	opencyc	
 judgment.act	opinion	single	sumo	
@@ -13889,14 +13922,13 @@ judgment.cognition	act	single	sumo
 judgment.cognition	activity	single	sumo	
 judgment.cognition	cognition	single	wordnet	
 judgment.cognition	event	single	sumo	
-judgment.cognition	information	single	sumo	
+judgment.cognition	information	accepted	opencyc sumo	
 judgment.cognition	information.communication	single	opencyc	
 judgment.cognition	norm	single	opencyc	
 judgment.cognition	phenomenon	single	sumo	
 judgment.cognition	procedure.act	single	sumo	
 judgment.cognition	universe	single	sumo	
 judgment.cognition	volition	single	sumo	
-juice	drink	single	opencyc	
 juice	food	single	wordnet	
 juice	substance	single	wordnet	
 jump	change	accepted	claude wordnet	
@@ -13958,7 +13990,7 @@ justification	activity	single	sumo
 justification	circumstance	single	wordnet	
 justification	cognition	single	wordnet	
 justification	event	single	sumo	
-justification	information	single	sumo	
+justification	information	accepted	opencyc sumo	
 justification	information.communication	single	opencyc	
 justification	phenomenon	single	sumo	
 justification	procedure.act	single	sumo	
@@ -14016,7 +14048,6 @@ killer	agent	accepted	sumo wordnet
 killer	animal	single	sumo	
 killer	body	single	sumo	
 killer	human	single	sumo	
-killer	human-body	single	sumo	
 killer	mammal	single	sumo	
 killer	organism	accepted	sumo wordnet	
 killer	person	accepted	sumo wordnet	
@@ -14101,7 +14132,7 @@ kitchen	device	single	opencyc
 kitchen	landscape	single	sumo	
 kitchen	phenomenon	single	sumo	
 kitchen	physical-object	single	wordnet	
-kitchen	place	single	sumo	
+kitchen	place	accepted	sumo yago	
 kitchen	region	single	sumo	
 kitchen	room	accepted	sumo wordnet	
 kitchen	site	single	opencyc	
@@ -14161,6 +14192,7 @@ lab	place	single	wordnet
 lab	universe	single	sumo	
 lab	workplace	accepted	claude wordnet	
 label	artifact	single	opencyc	
+label	image	single	opencyc	
 label	image.cognition	single	opencyc	
 label	indication	single	sumo	
 label	information	accepted	sumo wordnet yago	
@@ -14225,7 +14257,6 @@ lady	agent	accepted	sumo wordnet
 lady	animal	single	sumo	
 lady	body	single	sumo	
 lady	human	single	sumo	
-lady	human-body	single	sumo	
 lady	mammal	single	sumo	
 lady	organism	accepted	sumo wordnet	
 lady	person	accepted	sumo wordnet	
@@ -14267,7 +14298,7 @@ lamp	universe	single	sumo
 land	landscape	single	sumo	
 land	phenomenon	single	sumo	
 land	physical-object	single	wordnet	
-land	place	single	sumo	
+land	place	accepted	sumo yago	
 land	region	single	sumo	
 land	universe	single	sumo	
 land-vehicle	artifact	accepted	claude opencyc	
@@ -14279,7 +14310,7 @@ land-vehicle	product.phenomenon	single	yago
 land-vehicle	vehicle	accepted	claude yago	
 landform	natural-object	single	claude	
 landform	physical-object	single	claude	
-landform	place	accepted	claude schemaorg	
+landform	place	accepted	claude schemaorg yago	
 landlord	agent	single	wordnet	
 landlord	employment.act	single	sumo	
 landlord	human	single	opencyc	
@@ -14301,7 +14332,7 @@ landowner	physical-object	single	wordnet
 landowner	property	single	sumo	
 landscape	phenomenon	single	sumo	
 landscape	physical-object	single	wordnet	
-landscape	place	accepted	sumo wordnet	
+landscape	place	accepted	sumo wordnet yago	
 landscape	region	single	sumo	
 landscape	region.location	disputed	wordnet	sumo
 landscape	site	disputed	opencyc	sumo
@@ -14315,7 +14346,7 @@ lane	physical-object	single	wordnet
 lane	site	single	opencyc	
 lane	surface	single	opencyc	
 lane	universe	single	sumo	
-language	information	accepted	sumo wordnet	
+language	information	accepted	opencyc sumo wordnet	
 language	information.communication	single	opencyc	
 language	line.communication	single	sumo	
 language	phenomenon	single	sumo	
@@ -14376,6 +14407,7 @@ laundry	universe	single	sumo
 law	cognition	single	wordnet	
 law	field-of-study	accepted	claude sumo wordnet	
 law	humanities	single	wordnet	
+law	information	single	opencyc	
 law	information.communication	single	opencyc	
 law	norm	single	opencyc	
 law	philosophy	dissented	wordnet	
@@ -14383,10 +14415,12 @@ law	sense.communication	single	sumo
 law.cognition	cognition	single	wordnet	
 law.cognition	concept	single	wordnet	
 law.cognition	idea	single	wordnet	
+law.cognition	information	single	opencyc	
 law.cognition	information.communication	single	opencyc	
 law.cognition	norm	single	opencyc	
 law.group	collection	single	wordnet	
 law.group	group	single	wordnet	
+law.group	information	single	opencyc	
 law.group	information.communication	single	opencyc	
 law.group	norm	single	opencyc	
 lawn	field	accepted	sumo wordnet	
@@ -14519,6 +14553,7 @@ learner	vertebrate	single	opencyc
 lease	artifact	single	opencyc	
 lease	contract	accepted	sumo wordnet	
 lease	document	single	wordnet	
+lease	image	single	opencyc	
 lease	image.cognition	single	opencyc	
 lease	information	single	wordnet	
 lease	legal-document	accepted	sumo wordnet	
@@ -14549,6 +14584,7 @@ lecture	activity	accepted	sumo wordnet
 lecture	education	single	sumo	
 lecture	education.cognition	single	sumo	
 lecture	event	accepted	sumo wordnet yago	
+lecture	information	single	opencyc	
 lecture	information.communication	single	opencyc	
 lecture	leader	single	sumo	
 lecture	occupation	single	wordnet	
@@ -14564,7 +14600,7 @@ lecture.communication	address.communication	accepted	sumo wordnet
 lecture.communication	communication	single	sumo	
 lecture.communication	conversation	single	sumo	
 lecture.communication	event	accepted	sumo wordnet yago	
-lecture.communication	information	single	sumo	
+lecture.communication	information	accepted	opencyc sumo	
 lecture.communication	information.communication	single	opencyc	
 lecture.communication	phenomenon	single	sumo	
 lecture.communication	procedure.act	single	sumo	
@@ -14615,7 +14651,7 @@ legend	artifact	single	sumo
 legend	condition.communication	single	sumo	
 legend	fiction	accepted	claude wordnet	
 legend	indication	single	sumo	
-legend	information	accepted	sumo wordnet yago	
+legend	information	accepted	opencyc sumo wordnet yago	
 legend	information.communication	single	opencyc	
 legend	line.communication	single	sumo	
 legend	myth	single	sumo	
@@ -14713,14 +14749,14 @@ library	development	single	sumo
 library	organization	accepted	schemaorg yago	
 library	phenomenon	single	sumo	
 library	physical-object	single	wordnet	
-library	place	single	schemaorg	
+library	place	accepted	schemaorg yago	
 library	structure	single	wordnet	
 library	universe	single	sumo	
 license	artifact	single	sumo	
 license	condition.communication	single	sumo	
 license	document	single	wordnet	
 license	indication	single	sumo	
-license	information	accepted	sumo wordnet yago	
+license	information	accepted	opencyc sumo wordnet yago	
 license	information.communication	single	opencyc	
 license	legal-document	accepted	claude wordnet	
 license	line.communication	single	sumo	
@@ -15119,7 +15155,6 @@ lover	agent	accepted	sumo wordnet
 lover	animal	single	sumo	
 lover	body	single	sumo	
 lover	human	single	sumo	
-lover	human-body	single	sumo	
 lover	mammal	single	sumo	
 lover	organism	accepted	sumo wordnet	
 lover	person	accepted	sumo wordnet	
@@ -15282,7 +15317,6 @@ male-child	agent	accepted	sumo wordnet
 male-child	animal	single	sumo	
 male-child	body	single	sumo	
 male-child	human	single	sumo	
-male-child	human-body	single	sumo	
 male-child	mammal	single	sumo	
 male-child	man	single	sumo	
 male-child	organism	accepted	sumo wordnet	
@@ -15339,7 +15373,6 @@ man	agent	accepted	claude sumo wordnet
 man	animal	accepted	claude sumo	
 man	body	single	sumo	
 man	human	accepted	claude opencyc sumo	
-man	human-body	single	sumo	
 man	mammal	accepted	claude opencyc sumo	
 man	organism	accepted	claude sumo wordnet	
 man	person	accepted	claude sumo wordnet	
@@ -15386,7 +15419,7 @@ manual	component	single	sumo
 manual	device	single	sumo	
 manual	document	single	claude	
 manual	indication	single	sumo	
-manual	information	accepted	claude sumo	
+manual	information	accepted	claude opencyc sumo	
 manual	information.communication	single	opencyc	
 manual	mechanism	single	sumo	
 manual	norm	single	opencyc	
@@ -15512,6 +15545,7 @@ marsh	body-of-water	single	yago
 marsh	environment	single	opencyc	
 marsh	landform	single	yago	
 marsh	physical-object	single	wordnet	
+marsh	place	single	yago	
 marsh	site	single	opencyc	
 mask	artifact	accepted	opencyc sumo wordnet	
 mask	clothing	accepted	opencyc sumo wordnet	
@@ -15731,7 +15765,6 @@ membership	agent	single	sumo
 membership	animal	single	sumo	
 membership	body	single	sumo	
 membership	human	single	sumo	
-membership	human-body	single	sumo	
 membership	mammal	single	sumo	
 membership	organism	single	sumo	
 membership	person	single	sumo	
@@ -15778,11 +15811,13 @@ memory	context	single	opencyc
 memory	context.communication	single	opencyc	
 memory	device	accepted	claude wordnet	
 memory	hardware	single	wordnet	
+memory	information	single	opencyc	
 memory	information.communication	single	opencyc	
 memory	physical-object	single	wordnet	
 memory.cognition	cognition	single	wordnet	
 memory.cognition	context	single	opencyc	
 memory.cognition	context.communication	single	opencyc	
+memory.cognition	information	single	opencyc	
 memory.cognition	information.communication	single	opencyc	
 memory.cognition	monetary-value	single	sumo	
 memory.cognition	property	single	sumo	
@@ -15790,6 +15825,7 @@ memory.cognition.2	cognition	single	wordnet
 memory.cognition.2	context	single	opencyc	
 memory.cognition.2	context.communication	single	opencyc	
 memory.cognition.2	event	single	sumo	
+memory.cognition.2	information	single	opencyc	
 memory.cognition.2	information.communication	single	opencyc	
 memory.cognition.2	phenomenon	single	sumo	
 menace	agent	single	wordnet	
@@ -15831,15 +15867,15 @@ mentality	attitude	single	wordnet
 mentality	cognition	single	wordnet	
 mentality	monetary-value	single	sumo	
 mentality	property	single	sumo	
-menu	information	accepted	schemaorg wordnet	
+menu	information	accepted	opencyc schemaorg wordnet	
 menu	information.communication	accepted	opencyc wordnet	
 menu	list	accepted	claude wordnet	
 menu.2	list	single	claude	
-menu.communication	information	accepted	schemaorg wordnet	
+menu.communication	information	accepted	opencyc schemaorg wordnet	
 menu.communication	information.communication	accepted	opencyc wordnet	
 menu.communication	list	accepted	claude wordnet	
 menu.food	food	single	wordnet	
-menu.food	information	single	schemaorg	
+menu.food	information	accepted	opencyc schemaorg	
 menu.food	information.communication	single	opencyc	
 menu.food	substance	single	wordnet	
 mercantile-establishment	agent	single	sumo	
@@ -16195,6 +16231,7 @@ mix	combination	single	sumo
 mix	event	accepted	sumo wordnet	
 mix	phenomenon	single	sumo	
 model	artifact	accepted	opencyc wordnet	
+model	image	single	opencyc	
 model	image.cognition	single	opencyc	
 model	information	single	sumo	
 model	phenomenon	single	sumo	
@@ -16205,12 +16242,14 @@ model.cognition	cognition	single	wordnet
 model.cognition	concept	single	wordnet	
 model.cognition	hypothesis	single	wordnet	
 model.cognition	idea	single	wordnet	
+model.cognition	image	single	opencyc	
 model.cognition	image.cognition	single	opencyc	
 model.cognition	sense.communication	single	sumo	
 model.person	agent	single	wordnet	
 model.person	artifact	single	opencyc	
 model.person	assistant	single	wordnet	
 model.person	employment.act	single	sumo	
+model.person	image	single	opencyc	
 model.person	image.cognition	single	opencyc	
 model.person	monetary-value	single	sumo	
 model.person	organism	single	wordnet	
@@ -16220,6 +16259,7 @@ model.person	property	single	sumo
 model.person	worker	single	wordnet	
 model.person.2	agent	single	wordnet	
 model.person.2	artifact	single	opencyc	
+model.person.2	image	single	opencyc	
 model.person.2	image.cognition	single	opencyc	
 model.person.2	leader	single	wordnet	
 model.person.2	monetary-value	single	sumo	
@@ -16230,6 +16270,7 @@ model.person.2	property	single	sumo
 module	artifact	single	sumo	
 module	component	accepted	sumo wordnet	
 module	device	single	sumo	
+module	information	single	opencyc	
 module	information.communication	single	opencyc	
 module	mechanism	single	sumo	
 module	phenomenon	single	sumo	
@@ -16272,13 +16313,11 @@ molecule	universe	single	sumo
 mollusc	agent	single	sumo	
 mollusc	animal	accepted	claude sumo wordnet	
 mollusc	body	single	sumo	
-mollusc	invertebrate	accepted	claude opencyc sumo wordnet	
+mollusc	invertebrate	accepted	claude sumo wordnet	
 mollusc	organism	accepted	claude sumo wordnet	
 mollusc	phenomenon	single	sumo	
 mollusc	physical-object	accepted	claude sumo wordnet	
 mollusc	species	single	sumo	
-mollusc	structure	single	opencyc	
-mollusc	system	single	opencyc	
 mollusc	universe	single	sumo	
 momentum	degree	single	wordnet	
 momentum	force	single	wordnet	
@@ -16286,6 +16325,7 @@ momentum	quantity	single	sumo
 momentum	vector	single	sumo	
 momentum.attribute	quantity	single	sumo	
 momentum.attribute	vector	single	sumo	
+monarchy	country	single	opencyc	
 monarchy	country.location	single	opencyc	
 monarchy	group	single	wordnet	
 monarchy	site	single	opencyc	
@@ -16300,6 +16340,7 @@ monastery	housing	single	wordnet
 monastery	organization	single	yago	
 monastery	phenomenon	single	sumo	
 monastery	physical-object	single	wordnet	
+monastery	place	single	yago	
 monastery	structure	single	wordnet	
 monastery	universe	single	sumo	
 monetary-value	worth	disputed	wordnet	sumo
@@ -16374,6 +16415,7 @@ morning	time-period	single	wordnet
 morsel	food	single	sumo	
 morsel	phenomenon	single	sumo	
 morsel	universe	single	sumo	
+mortgage	information	single	opencyc	
 mortgage	information.communication	single	opencyc	
 mortgage	norm	single	opencyc	
 mosaic	artifact	accepted	sumo wordnet	
@@ -16389,7 +16431,7 @@ mosque	building	accepted	claude wordnet
 mosque	container	single	opencyc	
 mosque	device	single	opencyc	
 mosque	physical-object	single	wordnet	
-mosque	place	single	schemaorg	
+mosque	place	accepted	schemaorg yago	
 mosque	site	single	opencyc	
 mosque	structure	single	wordnet	
 mosque	temple	single	opencyc	
@@ -16452,7 +16494,7 @@ motorist	property	single	sumo
 motto	artifact	single	sumo	
 motto	condition.communication	single	sumo	
 motto	indication	single	sumo	
-motto	information	accepted	sumo wordnet yago	
+motto	information	accepted	opencyc sumo wordnet yago	
 motto	information.communication	single	opencyc	
 motto	line.communication	single	sumo	
 motto	phenomenon	single	sumo	
@@ -16463,7 +16505,7 @@ motto	universe	single	sumo
 mountain	landform	accepted	claude schemaorg yago	
 mountain	natural-object	single	claude	
 mountain	physical-object	accepted	claude wordnet	
-mountain	place	accepted	claude schemaorg	
+mountain	place	accepted	claude schemaorg yago	
 mountain	site	single	opencyc	
 mourning	emotion	single	wordnet	
 mourning	emotional-state	single	wordnet	
@@ -16557,7 +16599,7 @@ museum	development	single	sumo
 museum	facility	accepted	claude wordnet	
 museum	phenomenon	single	sumo	
 museum	physical-object	single	wordnet	
-museum	place	single	schemaorg	
+museum	place	accepted	schemaorg yago	
 museum	structure	single	opencyc	
 museum	system	single	opencyc	
 museum	universe	single	sumo	
@@ -16584,7 +16626,7 @@ music	signal	single	opencyc
 music	situation	single	opencyc	
 music-recording	audio	single	claude	
 music-recording	information	accepted	claude schemaorg	
-musical-composition	information	single	wordnet	
+musical-composition	information	accepted	opencyc wordnet	
 musical-composition	information.communication	single	opencyc	
 musical-composition	music	single	wordnet	
 musical-composition	sense.communication	single	sumo	
@@ -16638,7 +16680,7 @@ myth	artifact	single	sumo
 myth	condition.communication	single	sumo	
 myth	fiction	disputed	wordnet	sumo
 myth	indication	single	sumo	
-myth	information	accepted	sumo wordnet yago	
+myth	information	accepted	opencyc sumo wordnet yago	
 myth	information.communication	single	opencyc	
 myth	line.communication	single	sumo	
 myth	phenomenon	single	sumo	
@@ -16688,7 +16730,7 @@ narrative	activity	single	sumo
 narrative	affirmation	single	sumo	
 narrative	communication	single	sumo	
 narrative	event	single	sumo	
-narrative	information	accepted	sumo wordnet yago	
+narrative	information	accepted	opencyc sumo wordnet yago	
 narrative	information.communication	single	opencyc	
 narrative	phenomenon	single	sumo	
 narrative	procedure.act	single	sumo	
@@ -16705,7 +16747,7 @@ natural-event	event	accepted	claude sumo
 natural-event	phenomenon	accepted	sumo wordnet	
 natural-event	procedure.act	single	sumo	
 natural-event	volition	single	sumo	
-natural-language	information	accepted	sumo wordnet	
+natural-language	information	accepted	opencyc sumo wordnet	
 natural-language	information.communication	single	opencyc	
 natural-language	language	accepted	opencyc sumo wordnet yago	
 natural-language	line.communication	single	sumo	
@@ -16853,7 +16895,7 @@ newcomer	property	single	sumo
 news	artifact	single	sumo	
 news	condition.communication	single	sumo	
 news	indication	single	sumo	
-news	information	accepted	sumo wordnet	
+news	information	accepted	opencyc sumo wordnet	
 news	information.2	single	claude	
 news	information.communication	accepted	opencyc wordnet	
 news	line.communication	single	sumo	
@@ -16876,7 +16918,7 @@ news-program	universe	single	sumo
 news.communication	artifact	single	sumo	
 news.communication	condition.communication	single	sumo	
 news.communication	indication	single	sumo	
-news.communication	information	accepted	sumo wordnet	
+news.communication	information	accepted	opencyc sumo wordnet	
 news.communication	information.communication	accepted	opencyc wordnet	
 news.communication	line.communication	single	sumo	
 news.communication	phenomenon	single	sumo	
@@ -16899,6 +16941,7 @@ nightmare	cognition	single	wordnet
 nightmare	dream	single	wordnet	
 nightmare	event	single	sumo	
 nightmare	imagination	single	wordnet	
+nightmare	information	single	opencyc	
 nightmare	information.communication	single	opencyc	
 nightmare	phenomenon	single	sumo	
 noise	event	accepted	sumo wordnet	
@@ -16908,7 +16951,7 @@ nomination	act	accepted	sumo wordnet
 nomination	activity	single	sumo	
 nomination	communication	single	sumo	
 nomination	event	accepted	sumo wordnet	
-nomination	information	single	sumo	
+nomination	information	accepted	opencyc sumo	
 nomination	information.communication	single	opencyc	
 nomination	phenomenon	single	sumo	
 nomination	procedure.act	single	sumo	
@@ -16919,18 +16962,8 @@ nonpayment	convention.cognition	single	sumo
 nonpayment	loss.possession	single	wordnet	
 nonpayment	monetary-value	single	sumo	
 nonpayment	property	single	sumo	
-nonprofit	accomplishment	single	sumo	
-nonprofit	act	accepted	sumo wordnet	
-nonprofit	activity	single	sumo	
 nonprofit	agent	single	claude	
-nonprofit	event	accepted	sumo wordnet	
-nonprofit	leader	single	sumo	
-nonprofit	leadership	single	sumo	
-nonprofit	management	dissented	wordnet	
-nonprofit	organization	accepted	claude yago	
-nonprofit	phenomenon	single	sumo	
-nonprofit	procedure.act	single	sumo	
-nonprofit	volition	single	sumo	
+nonprofit	organization	single	claude	
 nonsense	amateur	single	sumo	
 nonsense	atmosphere.state	single	sumo	
 nonsense	circumstance	single	sumo	
@@ -16955,6 +16988,7 @@ nonsense	status	single	sumo
 nonsense	tension	single	sumo	
 nonsense	way	single	sumo	
 norm	convention.cognition	single	sumo	
+norm	information	single	opencyc	
 norm	information.communication	single	opencyc	
 norm	monetary-value	single	sumo	
 norm	property	single	sumo	
@@ -17046,7 +17080,7 @@ notion	cognition	single	wordnet
 notion	concept	single	wordnet	
 notion	idea	single	wordnet	
 notion	sense.communication	single	sumo	
-noun	information	single	sumo	
+noun	information	accepted	opencyc sumo	
 noun	information.communication	single	opencyc	
 noun	line.communication	single	sumo	
 noun	part	single	wordnet	
@@ -17061,7 +17095,7 @@ novel	device	single	sumo
 novel	fiction	accepted	sumo wordnet	
 novel	folklore	single	sumo	
 novel	indication	single	sumo	
-novel	information	accepted	sumo wordnet yago	
+novel	information	accepted	opencyc sumo wordnet yago	
 novel	information.communication	single	opencyc	
 novel	legend	single	sumo	
 novel	line.communication	single	sumo	
@@ -17102,13 +17136,14 @@ nuclear-reactor	device	accepted	opencyc sumo
 nuclear-reactor	equipment	single	wordnet	
 nuclear-reactor	phenomenon	single	sumo	
 nuclear-reactor	physical-object	single	wordnet	
+nuclear-reactor	place	single	yago	
 nuclear-reactor	product	single	yago	
 nuclear-reactor	product.phenomenon	single	yago	
 nuclear-reactor	universe	single	sumo	
 number	magnitude	single	wordnet	
 number	quantity	single	sumo	
 numeral	character	single	sumo	
-numeral	information	accepted	sumo wordnet	
+numeral	information	accepted	opencyc sumo wordnet	
 numeral	information.communication	single	opencyc	
 numeral	phenomenon	single	sumo	
 numeral	signal	single	wordnet	
@@ -17273,6 +17308,7 @@ office	development	single	sumo
 office	device	single	opencyc	
 office	phenomenon	single	sumo	
 office	physical-object	single	wordnet	
+office	place	single	yago	
 office	site	single	opencyc	
 office	structure	accepted	claude wordnet	
 office	suite	single	opencyc	
@@ -17281,7 +17317,6 @@ official	agent	accepted	sumo wordnet
 official	animal	single	sumo	
 official	body	single	sumo	
 official	human	single	sumo	
-official	human-body	single	sumo	
 official	mammal	single	sumo	
 official	organism	accepted	sumo wordnet	
 official	person	accepted	sumo wordnet yago	
@@ -17372,7 +17407,7 @@ opera	play.communication	accepted	sumo yago
 opera	text	single	sumo	
 opera	universe	single	sumo	
 operating-system	code	single	wordnet	
-operating-system	information	accepted	claude schemaorg wordnet yago	
+operating-system	information	accepted	claude opencyc schemaorg wordnet yago	
 operating-system	information.communication	single	opencyc	
 operating-system	product	single	yago	
 operating-system	product.phenomenon	single	yago	
@@ -17479,6 +17514,7 @@ option	danger	single	sumo
 option	expert	single	sumo	
 option	freedom	single	sumo	
 option	hero	single	sumo	
+option	information	single	opencyc	
 option	information.communication	single	opencyc	
 option	lap	single	sumo	
 option	literature.communication	single	sumo	
@@ -17494,7 +17530,7 @@ option	tension	single	sumo
 option	way	single	sumo	
 option.possession	contract	single	opencyc	
 option.possession	document	single	wordnet	
-option.possession	information	single	wordnet	
+option.possession	information	accepted	opencyc wordnet	
 option.possession	information.communication	single	opencyc	
 option.possession	legal-document	single	wordnet	
 option.possession	norm	single	opencyc	
@@ -17604,7 +17640,7 @@ outgo	volition	single	sumo
 outline	artifact	single	sumo	
 outline	condition.communication	single	sumo	
 outline	indication	single	sumo	
-outline	information	accepted	sumo wordnet	
+outline	information	accepted	opencyc sumo wordnet	
 outline	information.communication	single	opencyc	
 outline	line.communication	single	sumo	
 outline	phenomenon	single	sumo	
@@ -17613,6 +17649,7 @@ outline	recapitulation	single	sumo
 outline	summary	accepted	sumo wordnet	
 outline	text	single	sumo	
 outline	universe	single	sumo	
+outline.location	information	single	opencyc	
 outline.location	information.communication	single	opencyc	
 outline.location	physical-object	single	wordnet	
 outline.location	place	single	wordnet	
@@ -17652,7 +17689,7 @@ overhaul	volition	single	sumo
 overview	artifact	single	sumo	
 overview	condition.communication	single	sumo	
 overview	indication	single	sumo	
-overview	information	accepted	sumo wordnet	
+overview	information	accepted	opencyc sumo wordnet	
 overview	information.communication	single	opencyc	
 overview	line.communication	single	sumo	
 overview	phenomenon	single	sumo	
@@ -17677,7 +17714,6 @@ owner	animal	single	sumo
 owner	body	single	sumo	
 owner	businessman	dissented	wordnet	
 owner	human	single	sumo	
-owner	human-body	single	sumo	
 owner	mammal	single	sumo	
 owner	organism	accepted	sumo wordnet	
 owner	person	accepted	sumo wordnet	
@@ -17736,7 +17772,6 @@ pain.person	agent	accepted	sumo wordnet
 pain.person	animal	single	sumo	
 pain.person	body	single	sumo	
 pain.person	human	single	sumo	
-pain.person	human-body	single	sumo	
 pain.person	mammal	single	sumo	
 pain.person	organism	accepted	sumo wordnet	
 pain.person	person	accepted	sumo wordnet	
@@ -17785,6 +17820,7 @@ palace	house.group	single	yago
 palace	housing	single	wordnet	
 palace	phenomenon	single	sumo	
 palace	physical-object	single	wordnet	
+palace	place	single	yago	
 palace	site	single	opencyc	
 palace	structure	single	wordnet	
 palace	universe	single	sumo	
@@ -17854,12 +17890,12 @@ parade	situation	single	opencyc
 paradiddle	event	accepted	sumo wordnet	
 paradiddle	phenomenon	single	sumo	
 paradox	contradiction	single	wordnet	
-paradox	information	single	wordnet	
+paradox	information	accepted	opencyc wordnet	
 paradox	information.communication	single	opencyc	
 paragraph	artifact	single	sumo	
 paragraph	condition.communication	single	sumo	
 paragraph	indication	single	sumo	
-paragraph	information	accepted	sumo wordnet	
+paragraph	information	accepted	opencyc sumo wordnet	
 paragraph	information.communication	single	opencyc	
 paragraph	line.communication	single	sumo	
 paragraph	phenomenon	single	sumo	
@@ -17904,7 +17940,7 @@ park	land	single	sumo
 park	landscape	single	sumo	
 park	phenomenon	single	sumo	
 park	physical-object	single	wordnet	
-park	place	accepted	schemaorg sumo wordnet	
+park	place	accepted	schemaorg sumo wordnet yago	
 park	region	single	sumo	
 park	region.2	single	claude	
 park	region.location	accepted	claude wordnet	
@@ -17917,6 +17953,7 @@ parking	phenomenon	single	sumo
 parking	place	single	sumo	
 parking	region	single	sumo	
 parking	situation	single	opencyc	
+parking	transport	single	opencyc	
 parking	universe	single	sumo	
 parliament	group	single	wordnet	
 parliament	legislature	single	wordnet	
@@ -17942,7 +17979,6 @@ participant	agent	accepted	sumo wordnet
 participant	animal	single	sumo	
 participant	body	single	sumo	
 participant	human	single	sumo	
-participant	human-body	single	sumo	
 participant	mammal	single	sumo	
 participant	organism	accepted	sumo wordnet	
 participant	peer	single	wordnet	
@@ -18088,7 +18124,7 @@ patent	artifact	single	sumo
 patent	condition.communication	single	sumo	
 patent	document	accepted	claude wordnet	
 patent	indication	single	sumo	
-patent	information	accepted	sumo wordnet	
+patent	information	accepted	opencyc sumo wordnet	
 patent	information.communication	single	opencyc	
 patent	line.communication	single	sumo	
 patent	norm	single	opencyc	
@@ -18120,7 +18156,6 @@ patient	animal	single	sumo
 patient	audience	single	schemaorg	
 patient	body	single	sumo	
 patient	human	accepted	opencyc sumo	
-patient	human-body	single	sumo	
 patient	mammal	accepted	opencyc sumo	
 patient	organism	accepted	sumo wordnet	
 patient	person	accepted	schemaorg sumo wordnet	
@@ -18204,7 +18239,6 @@ peasant	animal	single	sumo
 peasant	body	single	sumo	
 peasant	employee	single	wordnet	
 peasant	human	accepted	opencyc sumo	
-peasant	human-body	single	sumo	
 peasant	laborer	single	wordnet	
 peasant	mammal	accepted	opencyc sumo	
 peasant	organism	accepted	sumo wordnet	
@@ -18273,6 +18307,7 @@ penny	coin	accepted	opencyc sumo wordnet
 penny	condition.communication	single	sumo	
 penny	currency	accepted	opencyc sumo wordnet	
 penny	device	single	opencyc	
+penny	image	single	opencyc	
 penny	image.cognition	single	opencyc	
 penny	indication	single	sumo	
 penny	information	single	sumo	
@@ -18290,7 +18325,6 @@ pensioner	animal	single	sumo
 pensioner	beneficiary	single	wordnet	
 pensioner	body	single	sumo	
 pensioner	human	accepted	opencyc sumo	
-pensioner	human-body	single	sumo	
 pensioner	mammal	accepted	opencyc sumo	
 pensioner	organism	accepted	sumo wordnet	
 pensioner	person	accepted	sumo wordnet	
@@ -18319,7 +18353,6 @@ perceiver	agent	accepted	sumo wordnet
 perceiver	animal	single	sumo	
 perceiver	body	single	sumo	
 perceiver	human	single	sumo	
-perceiver	human-body	single	sumo	
 perceiver	mammal	single	sumo	
 perceiver	organism	accepted	sumo wordnet	
 perceiver	person	accepted	sumo wordnet	
@@ -18390,7 +18423,7 @@ period	signal	single	wordnet
 period	symbol	accepted	sumo wordnet	
 period	universe	single	sumo	
 period.time	quantity	single	sumo	
-permission	information	single	wordnet	
+permission	information	accepted	opencyc wordnet	
 permission	information.communication	single	opencyc	
 permission	norm	single	opencyc	
 person	agent	accepted	claude sumo wordnet	
@@ -18407,7 +18440,7 @@ person	universe	single	sumo
 person	vertebrate	single	sumo	
 personal-identification-number	identification	single	wordnet	
 personal-identification-number	indication	single	wordnet	
-personal-identification-number	information	single	wordnet	
+personal-identification-number	information	accepted	opencyc wordnet	
 personal-identification-number	information.communication	single	opencyc	
 personality	inclination	single	sumo	
 personality	mentality	single	sumo	
@@ -18424,7 +18457,6 @@ pest	agent	accepted	sumo wordnet
 pest	animal	single	sumo	
 pest	body	single	sumo	
 pest	human	single	sumo	
-pest	human-body	single	sumo	
 pest	mammal	single	sumo	
 pest	organism	accepted	sumo wordnet	
 pest	person	accepted	sumo wordnet	
@@ -18464,6 +18496,7 @@ philosopher	worker	single	opencyc
 philosophy	cognition	single	wordnet	
 philosophy	field-of-study	accepted	claude sumo wordnet	
 philosophy	humanities	accepted	claude wordnet	
+philosophy	information	single	opencyc	
 philosophy	information.communication	single	opencyc	
 philosophy	philosopher	single	sumo	
 philosophy	sense.communication	single	sumo	
@@ -18475,21 +18508,17 @@ phone	equipment	accepted	claude wordnet
 phone	mechanism	single	sumo	
 phone	phenomenon	single	sumo	
 phone	physical-object	accepted	claude wordnet	
-phone	product	single	yago	
-phone	product.phenomenon	single	yago	
 phone	universe	single	sumo	
 phone-call	accomplishment	single	sumo	
 phone-call	act	single	sumo	
-phone-call	action	single	opencyc	
 phone-call	activity	single	sumo	
 phone-call	artifact	dissented	wordnet	
 phone-call	communication	accepted	claude sumo	
-phone-call	event	accepted	claude opencyc sumo	
+phone-call	event	accepted	claude sumo	
 phone-call	information	single	sumo	
 phone-call	phenomenon	single	sumo	
 phone-call	physical-object	single	wordnet	
 phone-call	procedure.act	single	sumo	
-phone-call	situation	single	opencyc	
 phone-call	universe	single	sumo	
 phone-call	volition	single	sumo	
 phone-number	indication	single	sumo	
@@ -18555,6 +18584,7 @@ pier	line.communication	single	opencyc
 pier	line.group	single	opencyc	
 pier	phenomenon	single	sumo	
 pier	physical-object	single	wordnet	
+pier	place	single	yago	
 pier	site	single	opencyc	
 pier	support.2	single	claude	
 pier	support.artifact	accepted	claude wordnet	
@@ -18676,6 +18706,7 @@ plaintiff	person	single	wordnet
 plaintiff	physical-object	single	wordnet	
 plan	cognition	single	wordnet	
 plan	idea	single	wordnet	
+plan	information	single	opencyc	
 plan	information.communication	single	opencyc	
 plan	measure	single	sumo	
 plan	norm	single	opencyc	
@@ -18763,7 +18794,6 @@ player	artifact	single	opencyc
 player	body	single	sumo	
 player	device	single	opencyc	
 player	human	single	sumo	
-player	human-body	single	sumo	
 player	mammal	single	sumo	
 player	organism	accepted	sumo wordnet	
 player	person	accepted	sumo wordnet	
@@ -18801,6 +18831,7 @@ plaything	phenomenon	single	sumo
 plaything	physical-object	single	wordnet	
 plaything	universe	single	sumo	
 pleasure	emotion	single	opencyc	
+plot	information	single	opencyc	
 plot	information.communication	single	opencyc	
 plot	land	single	sumo	
 plot	landscape	single	sumo	
@@ -18817,6 +18848,7 @@ plot	yard	single	sumo
 plot.4	chart.2	single	claude	
 plot.cognition	cognition	single	wordnet	
 plot.cognition	idea	single	wordnet	
+plot.cognition	information	single	opencyc	
 plot.cognition	information.communication	single	opencyc	
 plot.cognition	measure	single	sumo	
 plot.cognition	norm	single	opencyc	
@@ -18824,13 +18856,13 @@ plot.cognition	plan	accepted	opencyc sumo wordnet
 plot.cognition	routine	single	sumo	
 plot.cognition	sense.communication	single	sumo	
 plot.communication	fiction	single	wordnet	
-plot.communication	information	single	wordnet	
+plot.communication	information	accepted	opencyc wordnet	
 plot.communication	information.communication	single	opencyc	
 plot.communication	norm	single	opencyc	
 plot.communication	plan	single	opencyc	
 plot.communication	sense.communication	single	sumo	
 plot.communication.2	chart.communication	accepted	claude wordnet	
-plot.communication.2	information	accepted	sumo wordnet	
+plot.communication.2	information	accepted	opencyc sumo wordnet	
 plot.communication.2	information.communication	single	opencyc	
 plot.communication.2	norm	single	opencyc	
 plot.communication.2	phenomenon	single	sumo	
@@ -18859,7 +18891,7 @@ poem	condition.communication	single	sumo
 poem	fiction	single	sumo	
 poem	folklore	single	sumo	
 poem	indication	single	sumo	
-poem	information	accepted	sumo wordnet	
+poem	information	accepted	opencyc sumo wordnet	
 poem	information.communication	single	opencyc	
 poem	legend	single	sumo	
 poem	line.communication	single	sumo	
@@ -18873,7 +18905,7 @@ poetry	condition.communication	single	sumo
 poetry	fiction	single	sumo	
 poetry	folklore	single	sumo	
 poetry	indication	single	sumo	
-poetry	information	accepted	sumo wordnet yago	
+poetry	information	accepted	opencyc sumo wordnet yago	
 poetry	information.communication	single	opencyc	
 poetry	legend	single	sumo	
 poetry	line.communication	single	sumo	
@@ -18914,6 +18946,7 @@ police	collection	single	sumo
 police	group	accepted	sumo wordnet	
 police	organization	accepted	sumo wordnet yago	
 police	phenomenon	single	sumo	
+police	place	single	yago	
 police	team	single	sumo	
 police	universe	single	sumo	
 policeman	agent	single	wordnet	
@@ -19081,7 +19114,7 @@ porter	vertebrate	single	opencyc
 porter	worker	accepted	opencyc wordnet	
 portrait	artifact	single	wordnet	
 portrait	event	single	opencyc	
-portrait	image	single	wordnet	
+portrait	image	accepted	opencyc wordnet	
 portrait	image.cognition	single	opencyc	
 portrait	information	single	sumo	
 portrait	light	single	opencyc	
@@ -19135,6 +19168,7 @@ postcard	card	single	opencyc
 postcard	card.communication	accepted	opencyc wordnet	
 postcard	card.communication.2	single	opencyc	
 postcard	correspondence	single	wordnet	
+postcard	image	single	opencyc	
 postcard	image.cognition	single	opencyc	
 postcard	indication	single	sumo	
 postcard	information	accepted	sumo wordnet yago	
@@ -19323,6 +19357,7 @@ prescription	universe	single	sumo
 prescription-drug	agent	dissented	wordnet	
 prescription-drug	drug	accepted	claude wordnet	
 prescription-drug	material	single	sumo	
+prescription-drug	medicine	single	opencyc	
 prescription-drug	medicine.3	single	claude	
 prescription-drug	medicine.act	single	opencyc	
 prescription-drug	medicine.artifact	accepted	opencyc wordnet	
@@ -19504,7 +19539,6 @@ princess	agent	accepted	sumo wordnet
 princess	animal	single	sumo	
 princess	body	single	sumo	
 princess	human	accepted	opencyc sumo	
-princess	human-body	single	sumo	
 princess	lady	single	sumo	
 princess	leader	single	wordnet	
 princess	mammal	accepted	opencyc sumo	
@@ -19525,6 +19559,7 @@ principle	concept	single	wordnet
 principle	context	single	opencyc	
 principle	context.communication	single	opencyc	
 principle	idea	single	wordnet	
+principle	information	single	opencyc	
 principle	information.communication	single	opencyc	
 principle	law.cognition	single	wordnet	
 principle	sense.communication	single	sumo	
@@ -19533,9 +19568,11 @@ principle.cognition	concept	single	wordnet
 principle.cognition	context	single	opencyc	
 principle.cognition	context.communication	single	opencyc	
 principle.cognition	idea	single	wordnet	
+principle.cognition	information	single	opencyc	
 principle.cognition	information.communication	single	opencyc	
 principle.cognition	sense.communication	single	sumo	
 print	artifact	accepted	sumo wordnet	
+print	image	single	opencyc	
 print	image.cognition	single	opencyc	
 print	indication	single	sumo	
 print	information	single	sumo	
@@ -19555,6 +19592,7 @@ prison	device	single	opencyc
 prison	organization	single	yago	
 prison	phenomenon	single	sumo	
 prison	physical-object	single	wordnet	
+prison	place	single	yago	
 prison	site	single	opencyc	
 prison	structure	accepted	claude wordnet	
 prison	universe	single	sumo	
@@ -19608,6 +19646,7 @@ privilege	danger	single	sumo
 privilege	expert	single	sumo	
 privilege	freedom	single	sumo	
 privilege	hero	single	sumo	
+privilege	information	single	opencyc	
 privilege	information.communication	single	opencyc	
 privilege	lap	single	sumo	
 privilege	literature.communication	single	sumo	
@@ -19664,7 +19703,6 @@ producer	agent	accepted	sumo wordnet
 producer	animal	single	sumo	
 producer	body	single	sumo	
 producer	human	single	sumo	
-producer	human-body	single	sumo	
 producer	mammal	single	sumo	
 producer	organism	accepted	sumo wordnet	
 producer	person	accepted	sumo wordnet	
@@ -19746,7 +19784,7 @@ professorship	situation	single	opencyc
 proficiency	monetary-value	single	sumo	
 proficiency	property	single	sumo	
 profile	cognition	single	wordnet	
-profile	information	single	sumo	
+profile	information	accepted	opencyc sumo	
 profile	information.communication	single	opencyc	
 profile	phenomenon	single	sumo	
 profile	universe	single	sumo	
@@ -19780,7 +19818,7 @@ prognosis	activity	single	sumo
 prognosis	affirmation	single	sumo	
 prognosis	communication	single	sumo	
 prognosis	event	single	sumo	
-prognosis	information	accepted	sumo wordnet	
+prognosis	information	accepted	opencyc sumo wordnet	
 prognosis	information.communication	single	opencyc	
 prognosis	phenomenon	single	sumo	
 prognosis	procedure.act	single	sumo	
@@ -19854,9 +19892,10 @@ promotion.communication	text	single	sumo
 promotion.communication	universe	single	sumo	
 proof	cognition	single	wordnet	
 proof	evidence	single	wordnet	
+proof	information	single	opencyc	
 proof	information.communication	single	opencyc	
 proof.communication	indication	accepted	sumo wordnet	
-proof.communication	information	accepted	sumo wordnet	
+proof.communication	information	accepted	opencyc sumo wordnet	
 proof.communication	information.communication	single	opencyc	
 proof.communication	phenomenon	single	sumo	
 proof.communication	physical-object	single	sumo	
@@ -19866,7 +19905,7 @@ propaganda	act	single	sumo
 propaganda	activity	single	sumo	
 propaganda	communication	single	sumo	
 propaganda	event	single	sumo	
-propaganda	information	accepted	sumo wordnet	
+propaganda	information	accepted	opencyc sumo wordnet	
 propaganda	information.communication	accepted	opencyc wordnet	
 propaganda	phenomenon	single	sumo	
 propaganda	procedure.act	single	sumo	
@@ -19911,14 +19950,14 @@ proposal	activity	single	sumo
 proposal	advice	single	sumo	
 proposal	communication	single	sumo	
 proposal	event	accepted	sumo wordnet	
-proposal	information	single	sumo	
+proposal	information	accepted	opencyc sumo	
 proposal	information.communication	single	opencyc	
 proposal	norm	single	opencyc	
 proposal	phenomenon	single	sumo	
 proposal	procedure.act	single	sumo	
 proposal	universe	single	sumo	
 proposal	volition	single	sumo	
-proposition	information	accepted	sumo wordnet	
+proposition	information	accepted	opencyc sumo wordnet	
 proposition	information.communication	single	opencyc	
 proposition	line.communication	single	sumo	
 proposition	phenomenon	single	sumo	
@@ -20205,6 +20244,7 @@ puzzle	phenomenon	single	sumo
 puzzle	physical-object	single	wordnet	
 puzzle	universe	single	sumo	
 pyramid	monetary-value	single	sumo	
+pyramid	place	single	yago	
 pyramid	property	single	sumo	
 quality	amateur	single	sumo	
 quality	atmosphere.state	single	sumo	
@@ -20296,7 +20336,7 @@ question	act	accepted	sumo wordnet
 question	activity	single	sumo	
 question	communication	single	sumo	
 question	event	accepted	sumo wordnet	
-question	information	accepted	schemaorg sumo	
+question	information	accepted	opencyc schemaorg sumo	
 question	information.communication	single	opencyc	
 question	phenomenon	single	sumo	
 question	procedure.act	single	sumo	
@@ -20329,7 +20369,7 @@ quotation	artifact	single	sumo
 quotation	condition.communication	single	sumo	
 quotation	excerpt	accepted	claude wordnet	
 quotation	indication	single	sumo	
-quotation	information	accepted	schemaorg sumo wordnet yago	
+quotation	information	accepted	opencyc schemaorg sumo wordnet yago	
 quotation	information.communication	single	opencyc	
 quotation	line.communication	single	sumo	
 quotation	music	single	wordnet	
@@ -20338,7 +20378,7 @@ quotation	phenomenon	single	sumo
 quotation	physical-object	single	sumo	
 quotation	text	single	sumo	
 quotation	universe	single	sumo	
-quotation.communication	information	accepted	schemaorg sumo wordnet yago	
+quotation.communication	information	accepted	opencyc schemaorg sumo wordnet yago	
 quotation.communication	information.communication	single	opencyc	
 quotation.communication	line.communication	single	sumo	
 quotation.communication	phenomenon	single	sumo	
@@ -20471,7 +20511,7 @@ ranch	development	single	sumo
 ranch	farm	accepted	sumo wordnet	
 ranch	phenomenon	single	sumo	
 ranch	physical-object	single	wordnet	
-ranch	place	single	wordnet	
+ranch	place	accepted	wordnet yago	
 ranch	site	single	opencyc	
 ranch	universe	single	sumo	
 ranch	workplace	single	wordnet	
@@ -20609,6 +20649,7 @@ recapitulation	universe	single	sumo
 receipt	artifact	single	opencyc	
 receipt	document	single	claude	
 receipt	financial-document	single	claude	
+receipt	image	single	opencyc	
 receipt	image.cognition	single	opencyc	
 receipt	information	accepted	claude wordnet	
 reception	action	single	opencyc	
@@ -20709,7 +20750,7 @@ recommendation	activity	single	sumo
 recommendation	affirmation	single	sumo	
 recommendation	communication	single	sumo	
 recommendation	event	single	sumo	
-recommendation	information	accepted	schemaorg sumo wordnet	
+recommendation	information	accepted	opencyc schemaorg sumo wordnet	
 recommendation	information.communication	single	opencyc	
 recommendation	phenomenon	single	sumo	
 recommendation	praise	accepted	claude wordnet	
@@ -20832,13 +20873,13 @@ referral	advice	single	wordnet
 referral	context	single	opencyc	
 referral	context.communication	single	opencyc	
 referral	convention.cognition	single	sumo	
-referral	information	single	wordnet	
+referral	information	accepted	opencyc wordnet	
 referral	information.communication	single	opencyc	
 referral	monetary-value	single	sumo	
 referral	property	single	sumo	
 reflection	artifact	single	wordnet	
 reflection	event	single	opencyc	
-reflection	image	single	wordnet	
+reflection	image	accepted	opencyc wordnet	
 reflection	image.cognition	single	opencyc	
 reflection	information	single	sumo	
 reflection	light	single	opencyc	
@@ -20942,12 +20983,12 @@ refusal	universe	single	sumo
 refusal	volition	single	sumo	
 region	phenomenon	single	sumo	
 region	physical-object	single	wordnet	
-region	place	accepted	claude wordnet	
+region	place	accepted	claude wordnet yago	
 region	universe	single	sumo	
 region.location	landscape	disputed	sumo	wordnet
 region.location	phenomenon	single	sumo	
 region.location	physical-object	single	wordnet	
-region.location	place	accepted	sumo wordnet	
+region.location	place	accepted	sumo wordnet yago	
 region.location	region	single	sumo	
 region.location	universe	single	sumo	
 register	artifact	single	sumo	
@@ -21095,6 +21136,7 @@ relief	sculpture	single	yago
 religion	belief	single	wordnet	
 religion	cognition	single	wordnet	
 religion	good	single	wordnet	
+religion	information	single	opencyc	
 religion	information.communication	single	opencyc	
 religion	sense.communication	single	sumo	
 religion	virtue	single	wordnet	
@@ -21253,6 +21295,7 @@ reputation	danger	single	sumo
 reputation	expert	single	sumo	
 reputation	freedom	single	sumo	
 reputation	hero	single	sumo	
+reputation	information	single	opencyc	
 reputation	information.communication	single	opencyc	
 reputation	lap	single	sumo	
 reputation	literature.communication	single	sumo	
@@ -21319,7 +21362,7 @@ reserve.possession	volition	single	sumo
 reservoir	body-of-water	accepted	opencyc schemaorg wordnet yago	
 reservoir	lake	accepted	claude wordnet	
 reservoir	landform	accepted	schemaorg yago	
-reservoir	place	single	schemaorg	
+reservoir	place	accepted	schemaorg yago	
 reservoir	site	single	opencyc	
 residence	address	accepted	sumo wordnet	
 residence	artifact	single	sumo	
@@ -21383,7 +21426,7 @@ resolution	accomplishment	single	sumo
 resolution	act	accepted	sumo wordnet	
 resolution	activity	single	sumo	
 resolution	event	accepted	sumo wordnet	
-resolution	information	single	sumo	
+resolution	information	accepted	opencyc sumo	
 resolution	information.communication	single	opencyc	
 resolution	judgment	single	sumo	
 resolution	norm	single	opencyc	
@@ -21396,7 +21439,7 @@ resort	building	single	wordnet
 resort	hotel	accepted	claude wordnet	
 resort	organization	accepted	schemaorg yago	
 resort	physical-object	single	wordnet	
-resort	place	single	schemaorg	
+resort	place	accepted	schemaorg yago	
 resort	structure	single	wordnet	
 resource	amateur	single	sumo	
 resource	asset	single	wordnet	
@@ -21436,7 +21479,7 @@ restaurant	development	single	sumo
 restaurant	organization	accepted	schemaorg yago	
 restaurant	phenomenon	single	sumo	
 restaurant	physical-object	single	wordnet	
-restaurant	place	single	schemaorg	
+restaurant	place	accepted	schemaorg yago	
 restaurant	structure	single	wordnet	
 restaurant	universe	single	sumo	
 restitution	accomplishment	single	sumo	
@@ -21491,6 +21534,7 @@ retaliation	contest	single	sumo
 retaliation	contest.act	single	sumo	
 retaliation	event	accepted	sumo wordnet	
 retaliation	fight	single	sumo	
+retaliation	information	single	opencyc	
 retaliation	information.communication	single	opencyc	
 retaliation	phenomenon	single	sumo	
 retaliation	procedure.act	single	sumo	
@@ -21565,7 +21609,7 @@ review	education.cognition	single	sumo
 review	event	accepted	sumo wordnet	
 review	exercise.2	single	claude	
 review	exercise.act	accepted	claude wordnet	
-review	information	single	schemaorg	
+review	information	accepted	opencyc schemaorg	
 review	information.communication	single	opencyc	
 review	leader	single	sumo	
 review	phenomenon	single	sumo	
@@ -21577,7 +21621,7 @@ review.communication	article	single	opencyc
 review.communication	artifact	single	sumo	
 review.communication	condition.communication	single	sumo	
 review.communication	indication	single	sumo	
-review.communication	information	accepted	schemaorg sumo wordnet	
+review.communication	information	accepted	opencyc schemaorg sumo wordnet	
 review.communication	information.communication	single	opencyc	
 review.communication	line.communication	single	sumo	
 review.communication	phenomenon	single	sumo	
@@ -21588,7 +21632,7 @@ review.communication.2	article	single	opencyc
 review.communication.2	artifact	accepted	sumo wordnet	
 review.communication.2	condition.communication	single	sumo	
 review.communication.2	indication	single	sumo	
-review.communication.2	information	accepted	schemaorg sumo	
+review.communication.2	information	accepted	opencyc schemaorg sumo	
 review.communication.2	information.communication	single	opencyc	
 review.communication.2	line.communication	single	sumo	
 review.communication.2	phenomenon	single	sumo	
@@ -21681,6 +21725,7 @@ rider	physical-object	single	wordnet
 rider	property	single	sumo	
 ridge	landform	single	yago	
 ridge	physical-object	single	wordnet	
+ridge	place	single	yago	
 rifle	artifact	accepted	opencyc sumo wordnet	
 rifle	device	accepted	opencyc sumo wordnet	
 rifle	gun	accepted	opencyc sumo wordnet	
@@ -21790,7 +21835,7 @@ road	land	single	sumo
 road	landscape	single	sumo	
 road	phenomenon	single	sumo	
 road	physical-object	single	wordnet	
-road	place	single	sumo	
+road	place	accepted	sumo yago	
 road	region	single	sumo	
 road	street	disputed	sumo	wordnet
 road	universe	single	sumo	
@@ -21861,7 +21906,7 @@ room	artifact	accepted	sumo wordnet
 room	development	single	sumo	
 room	phenomenon	single	sumo	
 room	physical-object	single	wordnet	
-room	place	single	schemaorg	
+room	place	accepted	schemaorg yago	
 room	structure	dissented	wordnet	
 room	universe	single	sumo	
 root	natural-object	accepted	claude wordnet	
@@ -21993,7 +22038,7 @@ rumor	event	single	wordnet
 rumor	file.communication	single	sumo	
 rumor	gossip	accepted	claude wordnet	
 rumor	indication	single	sumo	
-rumor	information	single	sumo	
+rumor	information	accepted	opencyc sumo	
 rumor	information.communication	accepted	opencyc sumo	
 rumor	line.communication	single	sumo	
 rumor	myth	single	sumo	
@@ -22015,7 +22060,6 @@ runner	animal	single	sumo
 runner	athlete	accepted	claude wordnet	
 runner	body	single	sumo	
 runner	human	single	sumo	
-runner	human-body	single	sumo	
 runner	mammal	single	sumo	
 runner	organism	accepted	sumo wordnet	
 runner	person	accepted	sumo wordnet	
@@ -22191,7 +22235,7 @@ sample	example	single	wordnet
 sanctuary	landscape	single	sumo	
 sanctuary	phenomenon	single	sumo	
 sanctuary	physical-object	single	wordnet	
-sanctuary	place	accepted	sumo wordnet	
+sanctuary	place	accepted	sumo wordnet yago	
 sanctuary	region	single	sumo	
 sanctuary	region.2	single	claude	
 sanctuary	region.location	accepted	claude wordnet	
@@ -22242,6 +22286,7 @@ satellite	equipment	accepted	claude wordnet
 satellite	mechanism	single	sumo	
 satellite	phenomenon	single	sumo	
 satellite	physical-object	single	wordnet	
+satellite	place	single	yago	
 satellite	product	single	yago	
 satellite	product.phenomenon	single	yago	
 satellite	universe	single	sumo	
@@ -22383,6 +22428,7 @@ scholarship	activity	single	sumo
 scholarship	aid	single	wordnet	
 scholarship	event	single	sumo	
 scholarship	gift	single	wordnet	
+scholarship	information	single	opencyc	
 scholarship	information.communication	single	opencyc	
 scholarship	norm	single	opencyc	
 scholarship	phenomenon	single	sumo	
@@ -22507,12 +22553,13 @@ screw	device	accepted	sumo wordnet
 screw	phenomenon	single	sumo	
 screw	physical-object	single	wordnet	
 screw	universe	single	sumo	
-script	information	single	wordnet	
+script	information	accepted	opencyc wordnet	
 script	information.communication	single	opencyc	
 script	measure	single	sumo	
 script	routine	single	sumo	
 script	sense.communication	single	sumo	
 sculpture	artifact	accepted	opencyc sumo wordnet	
+sculpture	image	single	opencyc	
 sculpture	image.cognition	single	opencyc	
 sculpture	indication	single	sumo	
 sculpture	information	accepted	schemaorg sumo yago	
@@ -22717,7 +22764,7 @@ sense.communication	meaning	disputed	wordnet	sumo
 sensitivity	monetary-value	single	sumo	
 sensitivity	property	single	sumo	
 sentence	group	single	wordnet	
-sentence	information	accepted	sumo wordnet	
+sentence	information	accepted	opencyc sumo wordnet	
 sentence	information.communication	single	opencyc	
 sentence	language	dissented	wordnet	
 sentence	line.communication	single	sumo	
@@ -23112,6 +23159,7 @@ sidewalk	concrete	single	opencyc
 sidewalk	development	single	sumo	
 sidewalk	phenomenon	single	sumo	
 sidewalk	physical-object	single	wordnet	
+sidewalk	place	single	yago	
 sidewalk	site	single	opencyc	
 sidewalk	universe	single	sumo	
 siege	act	single	wordnet	
@@ -23149,6 +23197,7 @@ signal	information	accepted	sumo wordnet
 signal	phenomenon	single	sumo	
 signal	universe	single	sumo	
 signature	artifact	single	opencyc	
+signature	image	single	opencyc	
 signature	image.cognition	single	opencyc	
 signature	indication	single	sumo	
 signature	information	single	sumo	
@@ -23327,6 +23376,7 @@ skeletal-system	physical-object	single	sumo
 skeletal-system	universe	single	sumo	
 sketch	artifact	single	sumo	
 sketch	condition.communication	single	sumo	
+sketch	image	single	opencyc	
 sketch	image.cognition	single	opencyc	
 sketch	indication	single	sumo	
 sketch	information	accepted	sumo wordnet	
@@ -23419,7 +23469,6 @@ slob	agent	accepted	sumo wordnet
 slob	animal	single	sumo	
 slob	body	single	sumo	
 slob	human	single	sumo	
-slob	human-body	single	sumo	
 slob	mammal	single	sumo	
 slob	organism	accepted	sumo wordnet	
 slob	person	accepted	sumo wordnet	
@@ -23534,6 +23583,7 @@ soccer	game	single	wordnet
 soccer	sport	single	wordnet	
 social-science	cognition	single	wordnet	
 social-science	field-of-study	accepted	claude opencyc sumo wordnet	
+social-science	information	single	opencyc	
 social-science	information.communication	single	opencyc	
 social-science	science	accepted	claude wordnet	
 social-science	sense.communication	single	sumo	
@@ -23590,9 +23640,7 @@ software-agent	agent	single	claude
 software-library	collection	accepted	sumo wordnet	
 software-library	group	single	wordnet	
 software-library	information	single	claude	
-software-library	organization	accepted	schemaorg yago	
 software-library	phenomenon	single	sumo	
-software-library	place	single	schemaorg	
 software-library	software	single	claude	
 soil	material	accepted	sumo wordnet	
 soil	part	single	wordnet	
@@ -23940,6 +23988,7 @@ sport	contest.act	single	sumo
 sport	event	accepted	claude sumo wordnet	
 sport	game	single	sumo	
 sport	game.act	single	sumo	
+sport	information	single	opencyc	
 sport	information.communication	single	opencyc	
 sport	phenomenon	single	sumo	
 sport	procedure.act	single	sumo	
@@ -24005,6 +24054,7 @@ stable	building	accepted	sumo wordnet
 stable	development	single	sumo	
 stable	phenomenon	single	sumo	
 stable	physical-object	single	wordnet	
+stable	place	single	yago	
 stable	structure	single	wordnet	
 stable	universe	single	sumo	
 stadium	artifact	accepted	opencyc sumo wordnet	
@@ -24100,8 +24150,10 @@ star	celestial-body	accepted	sumo wordnet
 star	natural-object	single	wordnet	
 star	phenomenon	single	sumo	
 star	physical-object	single	wordnet	
+star	place	single	yago	
 star	universe	single	sumo	
 star.shape	monetary-value	single	sumo	
+star.shape	place	single	yago	
 star.shape	property	single	sumo	
 state	agent	single	sumo	
 state	district	disputed	claude wordnet	opencyc
@@ -24109,7 +24161,7 @@ state	land	single	sumo
 state	landscape	single	sumo	
 state	phenomenon	single	sumo	
 state	physical-object	single	wordnet	
-state	place	accepted	schemaorg sumo wordnet	
+state	place	accepted	schemaorg sumo wordnet yago	
 state	region	single	sumo	
 state	region.location	single	wordnet	
 state	site	single	opencyc	
@@ -24144,6 +24196,7 @@ statistics	mathematics	accepted	claude wordnet
 statistics	science	single	wordnet	
 statistics	sense.communication	single	sumo	
 statue	artifact	accepted	opencyc sumo wordnet	
+statue	image	single	opencyc	
 statue	image.cognition	single	opencyc	
 statue	indication	single	sumo	
 statue	information	accepted	sumo yago	
@@ -24292,11 +24345,12 @@ strawberry	structure	single	opencyc
 strawberry	substance	single	wordnet	
 strawberry	system	single	opencyc	
 stream	body-of-water	accepted	sumo wordnet yago	
+stream	information	single	opencyc	
 stream	information.communication	single	opencyc	
 stream	landform	single	yago	
 stream	landscape	single	sumo	
 stream	phenomenon	single	sumo	
-stream	place	single	sumo	
+stream	place	accepted	sumo yago	
 stream	region	single	sumo	
 stream	universe	single	sumo	
 street	artifact	accepted	opencyc wordnet	
@@ -24305,7 +24359,7 @@ street	land	single	sumo
 street	landscape	single	sumo	
 street	phenomenon	single	sumo	
 street	physical-object	single	wordnet	
-street	place	accepted	claude sumo	
+street	place	accepted	claude sumo yago	
 street	region	single	sumo	
 street	road	disputed	wordnet	sumo
 street	site	single	opencyc	
@@ -24318,7 +24372,7 @@ street.artifact	land	single	sumo
 street.artifact	landscape	single	sumo	
 street.artifact	phenomenon	single	sumo	
 street.artifact	physical-object	single	wordnet	
-street.artifact	place	single	sumo	
+street.artifact	place	accepted	sumo yago	
 street.artifact	region	single	sumo	
 street.artifact	road	single	wordnet	
 street.artifact	site	single	opencyc	
@@ -24411,7 +24465,7 @@ studio	development	single	sumo
 studio	device	single	opencyc	
 studio	phenomenon	single	sumo	
 studio	physical-object	single	wordnet	
-studio	place	single	wordnet	
+studio	place	accepted	wordnet yago	
 studio	site	single	opencyc	
 studio	suite	single	opencyc	
 studio	universe	single	sumo	
@@ -24453,7 +24507,6 @@ subscriber	body	single	sumo
 subscriber	consumer	single	wordnet	
 subscriber	customer	accepted	claude wordnet	
 subscriber	human	single	sumo	
-subscriber	human-body	single	sumo	
 subscriber	mammal	single	sumo	
 subscriber	organism	accepted	sumo wordnet	
 subscriber	person	accepted	sumo wordnet	
@@ -24470,7 +24523,7 @@ substance	physical-object	single	dul
 substance	universe	single	sumo	
 suburb	district	single	wordnet	
 suburb	physical-object	single	wordnet	
-suburb	place	single	wordnet	
+suburb	place	accepted	wordnet yago	
 suburb	region.location	single	wordnet	
 suburb	residential-district	single	wordnet	
 suburb	site	single	opencyc	
@@ -24540,7 +24593,7 @@ sum	phenomenon	single	sumo
 summary	artifact	single	sumo	
 summary	condition.communication	single	sumo	
 summary	indication	single	sumo	
-summary	information	accepted	sumo wordnet	
+summary	information	accepted	opencyc sumo wordnet	
 summary	information.communication	single	opencyc	
 summary	line.communication	single	sumo	
 summary	phenomenon	single	sumo	
@@ -24563,6 +24616,7 @@ summit	landform	single	yago
 summit	meeting	single	wordnet	
 summit	meeting.act	single	sumo	
 summit	phenomenon	single	sumo	
+summit	place	single	yago	
 summit	procedure.act	single	sumo	
 summit	site	single	opencyc	
 summit	volition	single	sumo	
@@ -24598,6 +24652,7 @@ supermarket	mercantile-establishment	single	wordnet
 supermarket	organization	accepted	sumo yago	
 supermarket	phenomenon	single	sumo	
 supermarket	physical-object	single	wordnet	
+supermarket	place	single	yago	
 supermarket	structure	single	wordnet	
 supermarket	team	single	sumo	
 supermarket	universe	single	sumo	
@@ -24895,6 +24950,7 @@ taste	situation	single	opencyc
 tax	quantity	single	sumo	
 tax-return	artifact	single	opencyc	
 tax-return	document	single	wordnet	
+tax-return	image	single	opencyc	
 tax-return	image.cognition	single	opencyc	
 tax-return	information	single	wordnet	
 tax-return	legal-document	single	wordnet	
@@ -24903,9 +24959,10 @@ taxpayer	organism	single	wordnet
 taxpayer	person	single	wordnet	
 taxpayer	physical-object	single	wordnet	
 tea	artifact	single	opencyc	
-tea	drink	accepted	opencyc wordnet	
+tea	drink	single	wordnet	
 tea	drug	single	yago	
 tea	food	single	wordnet	
+tea	medicine	single	opencyc	
 tea	medicine.act	single	opencyc	
 tea	medicine.artifact	single	opencyc	
 tea	part	single	wordnet	
@@ -24964,6 +25021,7 @@ temple	development	single	sumo
 temple	device	single	opencyc	
 temple	phenomenon	single	sumo	
 temple	physical-object	single	wordnet	
+temple	place	single	yago	
 temple	site	single	opencyc	
 temple	structure	single	wordnet	
 temple	universe	single	sumo	
@@ -24973,6 +25031,7 @@ temple.body	device	single	opencyc
 temple.body	feature	single	wordnet	
 temple.body	phenomenon	single	sumo	
 temple.body	physical-object	single	sumo	
+temple.body	place	single	yago	
 temple.body	site	single	opencyc	
 temple.body	universe	single	sumo	
 tenant	agent	single	wordnet	
@@ -25027,7 +25086,7 @@ terminology	word	accepted	sumo wordnet
 territory	landscape	single	sumo	
 territory	phenomenon	single	sumo	
 territory	physical-object	single	wordnet	
-territory	place	accepted	sumo wordnet	
+territory	place	accepted	sumo wordnet yago	
 territory	region	single	sumo	
 territory	region.2	single	claude	
 territory	region.location	accepted	claude wordnet	
@@ -25063,7 +25122,7 @@ textbook	book.artifact	single	yago
 textbook	component	single	sumo	
 textbook	device	single	sumo	
 textbook	indication	single	sumo	
-textbook	information	accepted	sumo yago	
+textbook	information	accepted	opencyc sumo yago	
 textbook	information.communication	single	opencyc	
 textbook	mechanism	single	sumo	
 textbook	phenomenon	single	sumo	
@@ -25098,7 +25157,6 @@ theorist	agent	accepted	sumo wordnet
 theorist	animal	single	sumo	
 theorist	body	single	sumo	
 theorist	human	single	sumo	
-theorist	human-body	single	sumo	
 theorist	mammal	single	sumo	
 theorist	organism	accepted	sumo wordnet	
 theorist	person	accepted	sumo wordnet	
@@ -25198,6 +25256,7 @@ ticket	artifact	accepted	opencyc sumo
 ticket	condition.communication	single	sumo	
 ticket	device	single	opencyc	
 ticket	document	accepted	claude wordnet	
+ticket	image	single	opencyc	
 ticket	image.cognition	single	opencyc	
 ticket	indication	single	sumo	
 ticket	information	accepted	claude sumo wordnet	
@@ -25216,6 +25275,7 @@ ticket.communication	communication	single	sumo
 ticket.communication	device	single	opencyc	
 ticket.communication	document	single	wordnet	
 ticket.communication	event	single	sumo	
+ticket.communication	image	single	opencyc	
 ticket.communication	image.cognition	single	opencyc	
 ticket.communication	information	accepted	sumo wordnet	
 ticket.communication	legal-document	accepted	claude wordnet	
@@ -25326,6 +25386,7 @@ toe	structure	single	opencyc
 toe	system	single	opencyc	
 toe	universe	single	sumo	
 token	artifact	single	opencyc	
+token	image	single	opencyc	
 token	image.cognition	single	opencyc	
 token	indication	single	sumo	
 token	information	accepted	sumo wordnet	
@@ -25486,7 +25547,7 @@ town	land	single	sumo
 town	landscape	single	sumo	
 town	phenomenon	single	sumo	
 town	physical-object	single	wordnet	
-town	place	accepted	claude sumo wordnet	
+town	place	accepted	claude sumo wordnet yago	
 town	region	single	sumo	
 town	region.location	single	wordnet	
 town	settlement	single	claude	
@@ -25509,7 +25570,7 @@ tract	book	single	sumo
 tract	component	single	sumo	
 tract	device	single	sumo	
 tract	indication	single	sumo	
-tract	information	accepted	sumo wordnet	
+tract	information	accepted	opencyc sumo wordnet	
 tract	information.communication	single	opencyc	
 tract	mechanism	single	sumo	
 tract	phenomenon	single	sumo	
@@ -25562,7 +25623,7 @@ traffic.group	universe	single	sumo
 tragedy	artifact	single	sumo	
 tragedy	condition.communication	single	sumo	
 tragedy	indication	single	sumo	
-tragedy	information	accepted	sumo wordnet yago	
+tragedy	information	accepted	opencyc sumo wordnet yago	
 tragedy	information.communication	single	opencyc	
 tragedy	line.communication	single	sumo	
 tragedy	phenomenon	single	sumo	
@@ -25571,6 +25632,7 @@ tragedy	text	single	sumo
 tragedy	universe	single	sumo	
 train	artifact	single	wordnet	
 train	physical-object	single	wordnet	
+train	place	single	yago	
 train	product	single	yago	
 train	product.phenomenon	single	yago	
 train	vehicle	single	yago	
@@ -25578,6 +25640,7 @@ train-ticket	artifact	accepted	opencyc sumo
 train-ticket	condition.communication	single	sumo	
 train-ticket	device	single	opencyc	
 train-ticket	document	accepted	claude wordnet	
+train-ticket	image	single	opencyc	
 train-ticket	image.cognition	single	opencyc	
 train-ticket	indication	single	sumo	
 train-ticket	information	accepted	claude sumo wordnet yago	
@@ -25634,8 +25697,10 @@ transmission	physical-object	single	wordnet
 transmission	product	single	opencyc	
 transmission	product.phenomenon	single	opencyc	
 transport	act	accepted	claude wordnet	
-transport	event	accepted	claude sumo wordnet	
+transport	action	single	opencyc	
+transport	event	accepted	claude opencyc sumo wordnet	
 transport	phenomenon	single	sumo	
+transport	situation	single	opencyc	
 transport	visit	single	sumo	
 transport-ticket	document	single	claude	
 transport-ticket	information	single	claude	
@@ -25693,7 +25758,7 @@ treatment	situation	single	opencyc
 treatment	volition	single	sumo	
 treaty	contract	single	sumo	
 treaty	document	single	wordnet	
-treaty	information	accepted	wordnet yago	
+treaty	information	accepted	opencyc wordnet yago	
 treaty	information.communication	single	opencyc	
 treaty	legal-document	accepted	sumo wordnet	
 treaty	legislation	single	yago	
@@ -25909,7 +25974,7 @@ tumor	tissue	single	opencyc
 tumor	tissue.substance	single	opencyc	
 tumor	universe	single	sumo	
 tune	event	single	sumo	
-tune	information	single	wordnet	
+tune	information	accepted	opencyc wordnet	
 tune	information.communication	single	opencyc	
 tune	music	accepted	sumo wordnet	
 tune	musical-composition	single	opencyc	
@@ -25917,6 +25982,7 @@ tune	phenomenon	single	sumo
 tunnel	artifact	accepted	opencyc wordnet	
 tunnel	landform	single	yago	
 tunnel	physical-object	single	wordnet	
+tunnel	place	single	yago	
 tunnel	product	single	yago	
 tunnel	product.phenomenon	single	yago	
 tunnel	site	single	opencyc	
@@ -26003,6 +26069,7 @@ university	group	accepted	sumo wordnet
 university	institution	accepted	opencyc wordnet	
 university	organization	accepted	claude sumo wordnet yago	
 university	phenomenon	single	sumo	
+university	place	single	yago	
 university	school	accepted	claude opencyc sumo	
 university	school.artifact	single	opencyc	
 university	school.group	accepted	opencyc sumo	
@@ -26018,6 +26085,7 @@ university.group	group	accepted	sumo wordnet
 university.group	institution	single	opencyc	
 university.group	organization	accepted	sumo yago	
 university.group	phenomenon	single	sumo	
+university.group	place	single	yago	
 university.group	school	accepted	opencyc sumo	
 university.group	school.artifact	single	opencyc	
 university.group	school.group	accepted	opencyc sumo	
@@ -26090,6 +26158,7 @@ valley	depression	single	opencyc
 valley	landform	single	yago	
 valley	natural-depression	single	wordnet	
 valley	physical-object	single	wordnet	
+valley	place	single	yago	
 valley	site	single	opencyc	
 value	cognition	single	wordnet	
 value	concept	single	wordnet	
@@ -26198,7 +26267,6 @@ vein	system	single	opencyc
 vein	tube	single	wordnet	
 vein	universe	single	sumo	
 vein	vessel	accepted	schemaorg yago	
-vein	watercraft	single	schemaorg	
 velvet	artifact	accepted	opencyc sumo wordnet	
 velvet	device	single	opencyc	
 velvet	fabric	accepted	sumo wordnet	
@@ -26301,7 +26369,6 @@ victim	agent	accepted	sumo wordnet
 victim	animal	single	sumo	
 victim	body	single	sumo	
 victim	human	accepted	opencyc sumo	
-victim	human-body	single	sumo	
 victim	mammal	accepted	opencyc sumo	
 victim	organism	accepted	sumo wordnet	
 victim	person	accepted	sumo wordnet	
@@ -26343,6 +26410,7 @@ villa	house.group	single	yago
 villa	housing	single	wordnet	
 villa	phenomenon	single	sumo	
 villa	physical-object	single	wordnet	
+villa	place	single	yago	
 villa	site	single	opencyc	
 villa	structure	single	wordnet	
 villa	universe	single	sumo	
@@ -26353,7 +26421,7 @@ village	group	single	wordnet
 village	land	single	sumo	
 village	landscape	single	sumo	
 village	phenomenon	single	sumo	
-village	place	accepted	claude sumo	
+village	place	accepted	claude sumo yago	
 village	region	single	sumo	
 village	settlement	single	claude	
 village	site	single	opencyc	
@@ -26403,6 +26471,7 @@ virgin	structure	single	opencyc
 virgin	system	single	opencyc	
 virtue	convention.cognition	single	sumo	
 virtue	good	single	wordnet	
+virtue	information	single	opencyc	
 virtue	information.communication	single	opencyc	
 virtue	monetary-value	single	sumo	
 virtue	norm	single	opencyc	
@@ -26459,6 +26528,7 @@ voice-message	audio	single	claude
 voice-message	document	single	claude	
 voice-message	information	single	claude	
 voice-message	message	single	claude	
+void	information	single	opencyc	
 void	information.communication	single	opencyc	
 void	phenomenon	single	sumo	
 void	physical-object	single	wordnet	
@@ -26470,7 +26540,7 @@ void	universe	single	sumo
 volcano	landform	accepted	schemaorg yago	
 volcano	mountain	accepted	claude wordnet	
 volcano	physical-object	single	wordnet	
-volcano	place	single	schemaorg	
+volcano	place	accepted	schemaorg yago	
 volcano	site	single	opencyc	
 volition	cognition	single	wordnet	
 volition	event	single	sumo	
@@ -26689,12 +26759,14 @@ watercraft	device	accepted	opencyc sumo
 watercraft	machine	single	claude	
 watercraft	phenomenon	single	sumo	
 watercraft	physical-object	accepted	claude wordnet	
+watercraft	product	single	yago	
+watercraft	product.phenomenon	single	yago	
 watercraft	ship	disputed	sumo	claude opencyc wordnet
 watercraft	universe	single	sumo	
-watercraft	vehicle	accepted	claude sumo wordnet	
+watercraft	vehicle	accepted	claude sumo wordnet yago	
 waterfall	body-of-water	accepted	opencyc schemaorg wordnet yago	
 waterfall	landform	accepted	schemaorg yago	
-waterfall	place	single	schemaorg	
+waterfall	place	accepted	schemaorg yago	
 waterfall	site	single	opencyc	
 wave	event	accepted	sumo wordnet	
 wave	phenomenon	single	sumo	
@@ -26767,7 +26839,7 @@ web-page	information	accepted	claude schemaorg wordnet yago
 web-site	artifact	single	wordnet	
 web-site	computer	dissented	wordnet	
 web-site	device	single	wordnet	
-web-site	information	accepted	schemaorg yago	
+web-site	information	accepted	opencyc schemaorg yago	
 web-site	information.communication	single	opencyc	
 web-site	machine	single	wordnet	
 web-site	physical-object	single	wordnet	
@@ -26823,6 +26895,7 @@ well	body-of-water	single	yago
 well	device	single	opencyc	
 well	landform	single	yago	
 well	physical-object	single	wordnet	
+well	place	single	yago	
 well	site	single	opencyc	
 wellbeing	fortune.state	single	wordnet	
 wellbeing	monetary-value	single	sumo	
@@ -26869,7 +26942,6 @@ widow	agent	accepted	sumo wordnet
 widow	animal	single	sumo	
 widow	body	single	sumo	
 widow	human	single	sumo	
-widow	human-body	single	sumo	
 widow	lady	single	sumo	
 widow	mammal	single	sumo	
 widow	organism	accepted	sumo wordnet	
@@ -26913,6 +26985,7 @@ wildlife	universe	single	sumo
 will	artifact	accepted	opencyc sumo	
 will	condition.communication	single	sumo	
 will	document	single	wordnet	
+will	image	single	opencyc	
 will	image.cognition	single	opencyc	
 will	indication	single	sumo	
 will	information	accepted	sumo wordnet	
@@ -26926,7 +26999,6 @@ wimp	agent	accepted	sumo wordnet
 wimp	animal	single	sumo	
 wimp	body	single	sumo	
 wimp	human	single	sumo	
-wimp	human-body	single	sumo	
 wimp	mammal	single	sumo	
 wimp	organism	accepted	sumo wordnet	
 wimp	person	accepted	sumo wordnet	
@@ -26950,7 +27022,7 @@ window	universe	single	sumo
 wine	agent	single	wordnet	
 wine	alcohol	accepted	claude wordnet	
 wine	artifact	single	opencyc	
-wine	drink	accepted	opencyc sumo wordnet	
+wine	drink	accepted	sumo wordnet	
 wine	drug	single	wordnet	
 wine	food	accepted	sumo wordnet	
 wine	material	single	sumo	
@@ -27055,7 +27127,6 @@ witness	agent	accepted	sumo wordnet
 witness	animal	single	sumo	
 witness	body	single	sumo	
 witness	human	single	sumo	
-witness	human-body	single	sumo	
 witness	mammal	single	sumo	
 witness	organism	accepted	sumo wordnet	
 witness	person	accepted	sumo wordnet	
@@ -27083,7 +27154,6 @@ woman	agent	accepted	claude sumo wordnet
 woman	animal	accepted	claude sumo	
 woman	body	single	sumo	
 woman	human	accepted	claude opencyc sumo	
-woman	human-body	single	sumo	
 woman	mammal	accepted	claude opencyc sumo	
 woman	organism	accepted	claude sumo wordnet	
 woman	person	accepted	claude sumo wordnet	
@@ -27188,7 +27258,7 @@ workshop	meeting.act	single	opencyc
 workshop	meeting.event	single	opencyc	
 workshop	phenomenon	single	sumo	
 workshop	physical-object	single	wordnet	
-workshop	place	single	wordnet	
+workshop	place	accepted	wordnet yago	
 workshop	situation	single	opencyc	
 workshop	universe	single	sumo	
 workshop	workplace	single	wordnet	
@@ -27209,6 +27279,7 @@ workshop.act	meeting	single	opencyc
 workshop.act	meeting.act	single	opencyc	
 workshop.act	meeting.event	single	opencyc	
 workshop.act	phenomenon	single	sumo	
+workshop.act	place	single	yago	
 workshop.act	procedure.act	single	sumo	
 workshop.act	situation	single	opencyc	
 workshop.act	volition	single	sumo	
@@ -27236,7 +27307,7 @@ world	status	single	sumo
 world	tension	single	sumo	
 world	way	single	sumo	
 world-power	agent	single	sumo	
-world-power	country	accepted	sumo wordnet	
+world-power	country	accepted	opencyc sumo wordnet	
 world-power	country.location	single	opencyc	
 world-power	group	single	wordnet	
 world-power	land	single	sumo	
@@ -27337,7 +27408,6 @@ wrongdoer	agent	accepted	sumo wordnet
 wrongdoer	animal	single	sumo	
 wrongdoer	body	single	sumo	
 wrongdoer	human	single	sumo	
-wrongdoer	human-body	single	sumo	
 wrongdoer	mammal	single	sumo	
 wrongdoer	organism	accepted	sumo wordnet	
 wrongdoer	person	accepted	sumo wordnet	
@@ -27377,7 +27447,6 @@ young.group	animal	single	sumo
 young.group	body	single	sumo	
 young.group	group	single	wordnet	
 young.group	human	single	sumo	
-young.group	human-body	single	sumo	
 young.group	mammal	single	sumo	
 young.group	organism	single	sumo	
 young.group	people	single	wordnet	

@@ -96,6 +96,7 @@ single	abbey	house	only wordnet
 single	abbey	housing	only wordnet
 single	abbey	organization	only yago
 single	abbey	physical-object	only wordnet
+single	abbey	place	only yago
 single	abbey	site	only opencyc
 single	abbey	structure	only wordnet
 single	abortion	destruction	only sumo
@@ -118,6 +119,7 @@ single	academy	collection	only sumo
 single	academy	group	only sumo
 single	academy	institution	only opencyc
 single	academy	physical-object	only wordnet
+single	academy	place	only yago
 single	academy	team	only sumo
 single	account	article	only sumo
 single	account	artifact	only sumo
@@ -143,7 +145,6 @@ single	accusation	procedure.act	only sumo
 single	ace	animal	only sumo
 single	ace	body	only sumo
 single	ace	human	only sumo
-single	ace	human-body	only sumo
 single	ace	mammal	only sumo
 single	ace	vertebrate	only sumo
 single	acid	chemical	only wordnet
@@ -162,6 +163,7 @@ single	act.communication	procedure.act	only sumo
 single	act.communication	production.communication	only sumo
 single	action	fiction	only wordnet
 single	action	information	only wordnet
+single	action	plot.communication	only wordnet
 single	ad	accomplishment	only sumo
 single	ad	act	only sumo
 single	ad	activity	only sumo
@@ -177,6 +179,7 @@ single	adaptation	line.communication	only sumo
 single	adaptation	physical-object	only sumo
 single	adaptation	text	only sumo
 single	address	artifact	only sumo
+single	address	information	only opencyc
 single	address	information.communication	only opencyc
 single	address	landscape	only sumo
 single	address	region	only sumo
@@ -184,7 +187,6 @@ single	address.communication	accomplishment	only sumo
 single	address.communication	activity	only sumo
 single	address.communication	communication	only sumo
 single	address.communication	conversation	only sumo
-single	address.communication	information	only sumo
 single	address.communication	information.communication	only opencyc
 single	address.communication	procedure.act	only sumo
 single	address.communication	production.communication	only sumo
@@ -198,7 +200,6 @@ single	admission	procedure.act	only sumo
 single	adolescent	animal	only sumo
 single	adolescent	body	only sumo
 single	adolescent	human	only sumo
-single	adolescent	human-body	only sumo
 single	adolescent	mammal	only sumo
 single	adolescent	vertebrate	only sumo
 single	adoption	accomplishment	only sumo
@@ -211,7 +212,6 @@ single	adoption.act	procedure.act	only sumo
 single	adult	animal	only sumo
 single	adult	body	only sumo
 single	adult	human	only sumo
-single	adult	human-body	only sumo
 single	adult	mammal	only sumo
 single	adult	structure	only opencyc
 single	adult	vertebrate	only sumo
@@ -223,7 +223,6 @@ single	adventure	work	only wordnet
 single	adversary	animal	only sumo
 single	adversary	body	only sumo
 single	adversary	human	only sumo
-single	adversary	human-body	only sumo
 single	adversary	mammal	only sumo
 single	adversary	vertebrate	only sumo
 single	advice	accomplishment	only sumo
@@ -235,7 +234,6 @@ single	advice	procedure.act	only sumo
 single	advocate	animal	only sumo
 single	advocate	body	only sumo
 single	advocate	human	only sumo
-single	advocate	human-body	only sumo
 single	advocate	mammal	only sumo
 single	advocate	vertebrate	only sumo
 single	affair.event	accomplishment	only sumo
@@ -281,8 +279,12 @@ single	airline	institution	only opencyc
 single	airline	structure	only opencyc
 single	airplane	device	only opencyc
 single	airplane	machine	only claude
+single	airport	artifact	only wordnet
+single	airport	facility	only wordnet
+single	airport	physical-object	only wordnet
 single	aisle	container	only opencyc
 single	aisle	device	only opencyc
+single	aisle	land	only sumo
 single	aisle	landscape	only sumo
 single	aisle	physical-object	only wordnet
 single	aisle	place	only sumo
@@ -301,6 +303,7 @@ single	album	mechanism	only sumo
 single	alcohol	material	only sumo
 single	ally	agent	only sumo
 single	ally	group	only wordnet
+single	ally	land	only sumo
 single	ally	landscape	only sumo
 single	ally	organization	only wordnet
 single	ally	place	only sumo
@@ -325,6 +328,7 @@ single	amendment	affirmation	only sumo
 single	amendment	communication	only sumo
 single	amendment	procedure.act	only sumo
 single	amphetamine	material	only sumo
+single	amphetamine	medicine	only opencyc
 single	amphetamine	medicine.artifact	only opencyc
 single	amphibian	agent	only sumo
 single	amphibian	body	only sumo
@@ -425,7 +429,6 @@ single	application.communication	physical-object	only sumo
 single	application.communication	text	only sumo
 single	appointment	accomplishment	only sumo
 single	appointment	communication	only sumo
-single	appointment	information	only sumo
 single	appointment	information.communication	only opencyc
 single	appointment	procedure.act	only sumo
 single	appraisal	accomplishment	only sumo
@@ -446,7 +449,6 @@ single	appraisal.communication	text	only sumo
 single	aquarium	container	only wordnet
 single	aquarium	device	only sumo
 single	aquarium	physical-object	only wordnet
-single	aquarium	place	only schemaorg
 single	arachnid	agent	only sumo
 single	arachnid	body	only sumo
 single	arachnid	structure	only opencyc
@@ -455,6 +457,9 @@ single	arch	site	only opencyc
 single	architecture	action	only opencyc
 single	architecture	event	only opencyc
 single	architecture	thinking	only opencyc
+single	arena	artifact	only sumo
+single	arena	physical-object	only wordnet
+single	arena	region.location	only wordnet
 single	argument	accomplishment	only sumo
 single	argument	act	only sumo
 single	argument	activity	only sumo
@@ -523,7 +528,6 @@ single	assignment	procedure.act	only sumo
 single	assignment	work	only wordnet
 single	assistant	animal	only sumo
 single	assistant	body	only sumo
-single	assistant	human-body	only sumo
 single	assistant	structure	only opencyc
 single	association.group	agent	only sumo
 single	association.group	collection	only sumo
@@ -565,18 +569,17 @@ single	auction	act	only wordnet
 single	auction	action	only opencyc
 single	auction	commerce	only wordnet
 single	auction	transaction	only wordnet
+single	audio	artifact	only wordnet
+single	audio	device	only wordnet
 single	audio	indication	only sumo
-single	audio	publication	only opencyc
 single	auditor	adult	only opencyc
 single	auditor	animal	only sumo
 single	auditor	body	only sumo
-single	auditor	human-body	only sumo
 single	auditor	structure	only opencyc
 single	auditor	worker	only opencyc
 single	authority	animal	only sumo
 single	authority	body	only sumo
 single	authority	human	only sumo
-single	authority	human-body	only sumo
 single	authority	mammal	only sumo
 single	authority	vertebrate	only sumo
 single	automaton	physical-object	only wordnet
@@ -585,6 +588,7 @@ single	avant-garde	agent	only sumo
 single	avant-garde	collection	only sumo
 single	avenue	device	only opencyc
 single	avenue	physical-object	only wordnet
+single	avenue	road	only wordnet
 single	avenue	site	only opencyc
 single	avenue	street.artifact	only opencyc
 single	avenue	surface	only opencyc
@@ -596,7 +600,6 @@ single	axis	physical-object	only wordnet
 single	baby	animal	only sumo
 single	baby	body	only sumo
 single	baby	human	only sumo
-single	baby	human-body	only sumo
 single	baby	mammal	only sumo
 single	baby	vertebrate	only sumo
 single	bacterium	agent	only sumo
@@ -606,6 +609,7 @@ single	bag	physical-object	only wordnet
 single	bag.artifact	device	only sumo
 single	bag.artifact	physical-object	only wordnet
 single	balcony	physical-object	only wordnet
+single	balcony	place	only yago
 single	ball	physical-object	only wordnet
 single	ball.group	accomplishment	only sumo
 single	ball.group	act	only sumo
@@ -654,6 +658,7 @@ single	banquet	meeting.act	only sumo
 single	banquet	procedure.act	only sumo
 single	bar.artifact	organization	only yago
 single	bar.artifact	physical-object	only wordnet
+single	bar.artifact	place	only yago
 single	bark	event	only opencyc
 single	bark	signal	only opencyc
 single	baron	agent	only wordnet
@@ -689,6 +694,7 @@ single	base	component	only sumo
 single	base	mechanism	only sumo
 single	base	physical-object	only wordnet
 single	basement	physical-object	only wordnet
+single	basement	place	only yago
 single	basement	structure	only wordnet
 single	basket	physical-object	only wordnet
 single	bat	agent	only sumo
@@ -724,8 +730,10 @@ single	battlefront	landscape	only sumo
 single	battlefront	physical-object	only wordnet
 single	battlefront	region	only sumo
 single	bay	landform	only yago
+single	bay	place	only yago
 single	bay	site	only opencyc
 single	beach	environment	only opencyc
+single	beach	land	only sumo
 single	beach	landscape	only sumo
 single	beach	region	only sumo
 single	beach	site	only opencyc
@@ -741,6 +749,7 @@ single	beard	structure	only opencyc
 single	bed	physical-object	only wordnet
 single	bed.artifact	artifact	only opencyc
 single	bed.artifact	furniture	only opencyc
+single	bed.artifact	land	only sumo
 single	bed.artifact	landscape	only sumo
 single	bed.artifact	physical-object	only wordnet
 single	bed.artifact	region	only sumo
@@ -764,7 +773,6 @@ single	behavior	motion	only sumo
 single	beloved	animal	only sumo
 single	beloved	body	only sumo
 single	beloved	human	only sumo
-single	beloved	human-body	only sumo
 single	beloved	mammal	only sumo
 single	beloved	vertebrate	only sumo
 single	belt	commodity	only wordnet
@@ -795,6 +803,7 @@ single	bible	book	only sumo
 single	bible	component	only sumo
 single	bible	copy	only opencyc
 single	bible	device	only sumo
+single	bible	image	only opencyc
 single	bible	indication	only sumo
 single	bible	mechanism	only sumo
 single	bible	physical-object	only sumo
@@ -850,6 +859,7 @@ single	blessing	activity	only wordnet
 single	blessing	aid.act	only wordnet
 single	blessing	prayer	only opencyc
 single	blessing	ritual	only opencyc
+single	block	land	only sumo
 single	block	landscape	only sumo
 single	block	physical-object	only wordnet
 single	block	region	only sumo
@@ -890,7 +900,6 @@ single	bomber	physical-object	only wordnet
 single	bomber.person	animal	only sumo
 single	bomber.person	body	only sumo
 single	bomber.person	human	only sumo
-single	bomber.person	human-body	only sumo
 single	bomber.person	mammal	only sumo
 single	bomber.person	vehicle	only yago
 single	bomber.person	vertebrate	only sumo
@@ -944,19 +953,16 @@ single	brewery	artifact	only wordnet
 single	brewery	business	only opencyc
 single	brewery	institution	only opencyc
 single	brewery	physical-object	only wordnet
-single	brewery	place	only schemaorg
 single	brick	block	only opencyc
 single	brick	device	only opencyc
 single	brick	physical-object	only wordnet
 single	bride	animal	only sumo
 single	bride	body	only sumo
-single	bride	human-body	only sumo
 single	bride	lady	only sumo
 single	bride	structure	only opencyc
 single	bride	woman	only sumo
 single	bridge	device	only opencyc
 single	bridge	physical-object	only wordnet
-single	bridge	place	only schemaorg
 single	bridge	site	only opencyc
 single	brim	physical-object	only wordnet
 single	broadcast	artifact	only sumo
@@ -981,7 +987,6 @@ single	bronze	information	only sumo
 single	brother.person.2	animal	only sumo
 single	brother.person.2	body	only sumo
 single	brother.person.2	human	only sumo
-single	brother.person.2	human-body	only sumo
 single	brother.person.2	mammal	only sumo
 single	brother.person.2	man	only sumo
 single	brother.person.2	structure	only opencyc
@@ -989,7 +994,6 @@ single	brother.person.2	vertebrate	only sumo
 single	brush	physical-object	only wordnet
 single	brush	tool	only opencyc
 single	bucket	physical-object	only wordnet
-single	building	place	only claude
 single	bulb	natural-object	only wordnet
 single	bulb	structure	only opencyc
 single	bullet	instrument	only wordnet
@@ -1004,10 +1008,10 @@ single	bulletin	text	only sumo
 single	bunch	group	only wordnet
 single	bungalow	address	only sumo
 single	bungalow	dwelling	only wordnet
+single	bungalow	house.group	only yago
 single	bungalow	housing	only wordnet
 single	bungalow	landscape	only sumo
 single	bungalow	physical-object	only wordnet
-single	bungalow	place	only sumo
 single	bungalow	region	only sumo
 single	bungalow	structure	only wordnet
 single	burial	affair.event	only wordnet
@@ -1020,6 +1024,7 @@ single	bus	land-vehicle	only opencyc
 single	bus	physical-object	only wordnet
 single	bus-ticket	condition.communication	only sumo
 single	bus-ticket	device	only opencyc
+single	bus-ticket	image	only opencyc
 single	bus-ticket	indication	only sumo
 single	bus-ticket	line.communication	only sumo
 single	bus-ticket	physical-object	only sumo
@@ -1053,6 +1058,7 @@ single	cab	vehicle	only wordnet
 single	cabaret	disco	only sumo
 single	cabaret	organization	only yago
 single	cabaret	physical-object	only wordnet
+single	cabaret	place	only yago
 single	cabin	container	only opencyc
 single	cabin	device	only opencyc
 single	cabin	home	only opencyc
@@ -1130,6 +1136,7 @@ single	cap	device	only opencyc
 single	cap	physical-object	only wordnet
 single	cap.artifact	physical-object	only wordnet
 single	capital	signal	only wordnet
+single	capital.location	land	only sumo
 single	capital.location	landscape	only sumo
 single	capital.location	physical-object	only wordnet
 single	capital.location	region	only sumo
@@ -1146,12 +1153,14 @@ single	car.artifact	device	only opencyc
 single	car.artifact	land-vehicle	only opencyc
 single	car.artifact	physical-object	only wordnet
 single	carbon	material	only sumo
+single	card	image	only opencyc
 single	card	indication	only sumo
 single	card	information	only sumo
 single	card	material	only wordnet
 single	card	physical-object	only sumo
 single	card	substance	only wordnet
 single	card.communication.2	condition.communication	only sumo
+single	card.communication.2	image	only opencyc
 single	card.communication.2	line.communication	only sumo
 single	card.communication.2	physical-object	only sumo
 single	card.communication.2	text	only sumo
@@ -1181,10 +1190,12 @@ single	carrot	natural-object	only wordnet
 single	cartoon	drawing	only yago
 single	cartoon	drawing.artifact	only yago
 single	case	device	only sumo
+single	case	information	only opencyc
 single	case	information.communication	only opencyc
 single	case	physical-object	only wordnet
 single	cash	condition.communication	only sumo
 single	cash	device	only opencyc
+single	cash	image	only opencyc
 single	cash	indication	only sumo
 single	cash	information	only sumo
 single	cash	line.communication	only sumo
@@ -1203,12 +1214,13 @@ single	castle	building	only sumo
 single	castle	container	only opencyc
 single	castle	device	only opencyc
 single	castle	house	only yago
+single	castle	house.group	only yago
 single	castle	physical-object	only wordnet
+single	castle	place	only yago
 single	castle	site	only opencyc
 single	casualty	animal	only sumo
 single	casualty	body	only sumo
 single	casualty	human	only sumo
-single	casualty	human-body	only sumo
 single	casualty	mammal	only sumo
 single	casualty	vertebrate	only sumo
 single	cat	agent	only sumo
@@ -1217,13 +1229,13 @@ single	cat	structure	only opencyc
 single	catch.person	animal	only sumo
 single	catch.person	body	only sumo
 single	catch.person	human	only sumo
-single	catch.person	human-body	only sumo
 single	catch.person	mammal	only sumo
 single	catch.person	vertebrate	only sumo
 single	cathedral	building	only wordnet
 single	cathedral	container	only opencyc
 single	cathedral	device	only opencyc
 single	cathedral	physical-object	only wordnet
+single	cathedral	place	only yago
 single	cathedral	site	only opencyc
 single	cathedral	structure	only wordnet
 single	cathedral	temple	only opencyc
@@ -1244,6 +1256,7 @@ single	cellular-telephone	device	only sumo
 single	cellular-telephone	equipment	only wordnet
 single	cellular-telephone	mechanism	only sumo
 single	cellular-telephone	physical-object	only wordnet
+single	cemetery	land	only sumo
 single	cemetery	landscape	only sumo
 single	cemetery	physical-object	only wordnet
 single	cemetery	region	only sumo
@@ -1264,6 +1277,7 @@ single	ceremony	activity	only sumo
 single	ceremony	procedure.act	only sumo
 single	certificate	condition.communication	only sumo
 single	certificate	file.communication	only sumo
+single	certificate	image	only opencyc
 single	certificate	indication	only sumo
 single	certificate	information.communication	only sumo
 single	certificate	line.communication	only sumo
@@ -1285,11 +1299,11 @@ single	challenge	communication	only sumo
 single	challenge	information	only sumo
 single	challenge	procedure.act	only sumo
 single	champagne	artifact	only opencyc
+single	champagne	drink	only wordnet
 single	champagne	solution.substance	only opencyc
 single	champion	animal	only sumo
 single	champion	body	only sumo
 single	champion	human	only sumo
-single	champion	human-body	only sumo
 single	champion	mammal	only sumo
 single	champion	vertebrate	only sumo
 single	championship	action	only opencyc
@@ -1332,8 +1346,11 @@ single	charity.group	collection	only sumo
 single	charity.group	structure	only opencyc
 single	charity.group	team	only sumo
 single	chart	artifact	only wordnet
+single	chart	image	only opencyc
 single	chart	indication	only sumo
+single	chart.communication	image	only opencyc
 single	charter	condition.communication	only sumo
+single	charter	image	only opencyc
 single	charter	indication	only sumo
 single	charter	line.communication	only sumo
 single	charter	physical-object	only sumo
@@ -1375,7 +1392,6 @@ single	chicken	body	only sumo
 single	child	animal	only sumo
 single	child	body	only sumo
 single	child	human	only sumo
-single	child	human-body	only sumo
 single	child	mammal	only sumo
 single	child	vertebrate	only sumo
 single	chimney	container	only opencyc
@@ -1385,7 +1401,6 @@ single	chip.food	artifact	only opencyc
 single	chip.food	substance	only wordnet
 single	church	artifact	only wordnet
 single	church	physical-object	only wordnet
-single	church	place	only schemaorg
 single	chute	physical-object	only wordnet
 single	cigarette	agent	only wordnet
 single	cigarette	substance	only wordnet
@@ -1415,6 +1430,7 @@ single	citizen	physical-object	only wordnet
 single	citizen	structure	only opencyc
 single	citizen	vertebrate	only opencyc
 single	city	agent	only sumo
+single	city	land	only sumo
 single	city	landscape	only sumo
 single	city	physical-object	only wordnet
 single	city	region	only sumo
@@ -1470,6 +1486,7 @@ single	clinic	collection	only sumo
 single	clinic	team	only sumo
 single	clipping	condition.communication	only sumo
 single	clipping	device	only opencyc
+single	clipping	image	only opencyc
 single	clipping	indication	only sumo
 single	clipping	line.communication	only sumo
 single	clipping	music	only wordnet
@@ -1509,6 +1526,7 @@ single	coevals	contemporary	only sumo
 single	coffin	physical-object	only wordnet
 single	coin	condition.communication	only sumo
 single	coin	device	only opencyc
+single	coin	image	only opencyc
 single	coin	indication	only sumo
 single	coin	line.communication	only sumo
 single	coin	physical-object	only sumo
@@ -1537,8 +1555,10 @@ single	colony	physical-object	only wordnet
 single	colony	region	only sumo
 single	colony.group	agent	only sumo
 single	colony.group	collection	only sumo
+single	colony.group	place	only yago
 single	column	article	only opencyc
 single	column	device	only wordnet
+single	column	information	only opencyc
 single	column	information.communication	only opencyc
 single	column	physical-object	only wordnet
 single	column	publication	only opencyc
@@ -1650,7 +1670,6 @@ single	concession	action	only opencyc
 single	concession	activity	only sumo
 single	concession	communication	only sumo
 single	concession	compromise	only opencyc
-single	concession	information	only sumo
 single	concession	information.communication	only opencyc
 single	concession	procedure.act	only sumo
 single	conclusion	accomplishment	only sumo
@@ -1660,6 +1679,7 @@ single	conclusion	communication	only sumo
 single	conclusion	event	only sumo
 single	conclusion	procedure.act	only sumo
 single	concrete	physical-object	only wordnet
+single	concrete	place	only yago
 single	condition.communication	artifact	only sumo
 single	condition.communication	indication	only sumo
 single	condition.communication	line.communication	only sumo
@@ -1761,6 +1781,13 @@ single	contest	procedure.act	only sumo
 single	contest.act	accomplishment	only sumo
 single	contest.act	activity	only sumo
 single	contest.act	procedure.act	only sumo
+single	context.communication	artifact	only sumo
+single	context.communication	condition.communication	only sumo
+single	context.communication	indication	only sumo
+single	context.communication	information.communication	only opencyc
+single	context.communication	line.communication	only sumo
+single	context.communication	physical-object	only sumo
+single	context.communication	text	only sumo
 single	continent	landscape	only sumo
 single	continent	physical-object	only wordnet
 single	continent	region	only sumo
@@ -1793,7 +1820,6 @@ single	conviction.act	procedure.act	only sumo
 single	cook	animal	only sumo
 single	cook	body	only sumo
 single	cook	human	only sumo
-single	cook	human-body	only sumo
 single	cook	mammal	only sumo
 single	cook	vertebrate	only sumo
 single	cookie	food	only sumo
@@ -1844,8 +1870,11 @@ single	council	team	only sumo
 single	counter	physical-object	only wordnet
 single	country	agent	only sumo
 single	country	group	only wordnet
+single	country	land	only sumo
 single	country	landscape	only sumo
 single	country	region	only sumo
+single	country	site	only opencyc
+single	country	structure	only opencyc
 single	country	yard	only sumo
 single	country.location	landscape	only sumo
 single	country.location	physical-object	only wordnet
@@ -1895,7 +1924,6 @@ single	coverage	procedure.act	only sumo
 single	crackpot	animal	only sumo
 single	crackpot	body	only sumo
 single	crackpot	human	only sumo
-single	crackpot	human-body	only sumo
 single	crackpot	mammal	only sumo
 single	crackpot	vertebrate	only sumo
 single	craftsman	agent	only wordnet
@@ -1919,6 +1947,7 @@ single	credit-card	artifact	only opencyc
 single	credit-card	card	only opencyc
 single	credit-card	card.communication.2	only opencyc
 single	credit-card	device	only opencyc
+single	credit-card	image	only opencyc
 single	credit-card	indication	only wordnet
 single	credit-card	information	only wordnet
 single	cricket	agent	only sumo
@@ -1963,6 +1992,7 @@ single	cupboard	physical-object	only wordnet
 single	cupboard	room	only sumo
 single	currency	condition.communication	only sumo
 single	currency	device	only opencyc
+single	currency	image	only opencyc
 single	currency	indication	only sumo
 single	currency	information	only sumo
 single	currency	line.communication	only sumo
@@ -1981,7 +2011,6 @@ single	custody	procedure.act	only sumo
 single	customer	animal	only sumo
 single	customer	body	only sumo
 single	customer	human	only sumo
-single	customer	human-body	only sumo
 single	customer	mammal	only sumo
 single	customer	vertebrate	only sumo
 single	cut	act	only wordnet
@@ -1990,10 +2019,17 @@ single	cut	site	only opencyc
 single	dad	animal	only sumo
 single	dad	body	only sumo
 single	dad	human	only sumo
-single	dad	human-body	only sumo
 single	dad	mammal	only sumo
 single	dad	man	only sumo
 single	dad	vertebrate	only sumo
+single	dairy	artifact	only sumo
+single	dairy	business	only opencyc
+single	dairy	farm	only wordnet
+single	dairy	institution	only opencyc
+single	dairy	organization	only yago
+single	dairy	physical-object	only wordnet
+single	dairy	structure	only opencyc
+single	dairy	workplace	only wordnet
 single	dairy-product	artifact	only opencyc
 single	daylight	light	only opencyc
 single	daylight	sunlight	only opencyc
@@ -2028,6 +2064,7 @@ single	decree	legislation	only yago
 single	decree	statement	only opencyc
 single	deed	artifact	only opencyc
 single	deed	document	only wordnet
+single	deed	image	only opencyc
 single	deer	agent	only sumo
 single	deer	body	only sumo
 single	deer	structure	only opencyc
@@ -2049,7 +2086,6 @@ single	demonstration.communication	procedure.act	only sumo
 single	demonstrator	animal	only sumo
 single	demonstrator	body	only sumo
 single	demonstrator	human	only sumo
-single	demonstrator	human-body	only sumo
 single	demonstrator	mammal	only sumo
 single	demonstrator	vertebrate	only sumo
 single	denial	accomplishment	only sumo
@@ -2082,6 +2118,9 @@ single	deputation	class.group	only sumo
 single	deputation	collection	only sumo
 single	deputation	people	only sumo
 single	deputation	team	only sumo
+single	desert	group	only wordnet
+single	desert	physical-object	only wordnet
+single	desert	region.location	only wordnet
 single	design.artifact	indication	only sumo
 single	design.artifact	information	only sumo
 single	desk	container	only opencyc
@@ -2117,6 +2156,7 @@ single	diary	article	only sumo
 single	diary	condition.communication	only sumo
 single	diary	essay	only sumo
 single	diary	file.communication	only sumo
+single	diary	image	only opencyc
 single	diary	indication	only sumo
 single	diary	information.communication	only sumo
 single	diary	line.communication	only sumo
@@ -2140,6 +2180,7 @@ single	dictionary	text	only sumo
 single	diet	act	only wordnet
 single	diet	action	only opencyc
 single	diet	information	only schemaorg
+single	dig	land	only sumo
 single	dig	landscape	only sumo
 single	dig	physical-object	only wordnet
 single	dig	region	only sumo
@@ -2231,6 +2272,7 @@ single	distributor	collection	only sumo
 single	distributor	firm	only sumo
 single	distributor	institution	only wordnet
 single	distributor	team	only sumo
+single	district	land	only sumo
 single	district	landscape	only sumo
 single	district	physical-object	only wordnet
 single	district	region	only sumo
@@ -2298,15 +2340,14 @@ single	dormitory	device	only opencyc
 single	dormitory	home	only opencyc
 single	dormitory	landscape	only sumo
 single	dormitory	physical-object	only wordnet
-single	dormitory	place	only sumo
 single	dormitory	region	only sumo
 single	dormitory	site	only opencyc
 single	dormitory	structure	only wordnet
 single	dose	material	only sumo
+single	dose	medicine	only opencyc
 single	double.person.2	animal	only sumo
 single	double.person.2	body	only sumo
 single	double.person.2	human	only sumo
-single	double.person.2	human-body	only sumo
 single	double.person.2	mammal	only sumo
 single	double.person.2	vertebrate	only sumo
 single	draft	artifact	only sumo
@@ -2336,10 +2377,12 @@ single	drink.act	visit	only sumo
 single	drive	act	only wordnet
 single	drive	transport	only sumo
 single	drive	visit	only sumo
+single	driveway	land	only sumo
 single	driveway	landscape	only sumo
 single	driveway	physical-object	only wordnet
 single	driveway	place	only sumo
 single	driveway	region	only sumo
+single	driveway	road	only wordnet
 single	driveway	site	only opencyc
 single	driveway	street	only sumo
 single	driveway	surface	only opencyc
@@ -2362,12 +2405,12 @@ single	duke	vertebrate	only opencyc
 single	dwelling	address	only sumo
 single	dwelling	landscape	only sumo
 single	dwelling	physical-object	only wordnet
-single	dwelling	place	only sumo
 single	dwelling	region	only sumo
 single	dwelling	structure	only wordnet
 single	eagle	agent	only sumo
 single	eagle	body	only sumo
 single	eagle	structure	only opencyc
+single	earth-science	information	only opencyc
 single	earth-science	information.communication	only opencyc
 single	edge	line.communication	only opencyc
 single	edge	physical-object	only wordnet
@@ -2401,20 +2444,20 @@ single	elite	people	only wordnet
 single	elite	structure	only opencyc
 single	elite	vertebrate	only opencyc
 single	embassy	physical-object	only wordnet
-single	embassy	place	only schemaorg
 single	embassy	structure	only wordnet
 single	empire	agent	only sumo
 single	empire	association.group	only sumo
 single	empire	collection	only sumo
+single	empire	country	only yago
 single	empire	country.location	only yago
 single	empire	government	only sumo
+single	empire	place	only yago
 single	empire	site	only opencyc
 single	empire	structure	only opencyc
 single	empire	team	only sumo
 single	enchantress	animal	only sumo
 single	enchantress	body	only sumo
 single	enchantress	human	only sumo
-single	enchantress	human-body	only sumo
 single	enchantress	lady	only sumo
 single	enchantress	mammal	only sumo
 single	enchantress	vertebrate	only sumo
@@ -2471,13 +2514,19 @@ single	estimate.communication	communication	only sumo
 single	estimate.communication	event	only sumo
 single	estimate.communication	procedure.act	only sumo
 single	ethics	humanities	only wordnet
+single	evidence	accomplishment	only sumo
+single	evidence	act	only sumo
+single	evidence	activity	only sumo
+single	evidence	event	only sumo
+single	evidence	information.communication	only opencyc
+single	evidence	procedure.act	only sumo
+single	evidence	thinking	only sumo
 single	examination	accomplishment	only sumo
 single	examination	information	only sumo
 single	examination	procedure.act	only sumo
 single	examiner	animal	only sumo
 single	examiner	body	only sumo
 single	examiner	expert	only wordnet
-single	examiner	human-body	only sumo
 single	examiner	structure	only opencyc
 single	excerpt	artifact	only sumo
 single	excerpt	condition.communication	only sumo
@@ -2556,6 +2605,7 @@ single	exploration	information	only sumo
 single	exploration	procedure.act	only sumo
 single	explosion	ending	only opencyc
 single	expressway	physical-object	only wordnet
+single	expressway	road	only wordnet
 single	extension	component	only sumo
 single	extension	device	only sumo
 single	extension	equipment	only wordnet
@@ -2584,6 +2634,7 @@ single	fact	remark	only sumo
 single	fact	sentence	only sumo
 single	factory	organization	only yago
 single	factory	physical-object	only wordnet
+single	factory	place	only yago
 single	failure	agent	only wordnet
 single	failure	organism	only wordnet
 single	failure	physical-object	only wordnet
@@ -2606,6 +2657,10 @@ single	family.group	structure	only opencyc
 single	farewell	act	only wordnet
 single	farewell	action	only opencyc
 single	farewell	visit	only sumo
+single	farm	artifact	only sumo
+single	farm	physical-object	only wordnet
+single	farm	structure	only opencyc
+single	farm	workplace	only wordnet
 single	farmer	agent	only wordnet
 single	farmer	human	only opencyc
 single	farmer	mammal	only opencyc
@@ -2635,7 +2690,6 @@ single	female-child	animal	only sumo
 single	female-child	body	only sumo
 single	female-child	child	only sumo
 single	female-child	human	only sumo
-single	female-child	human-body	only sumo
 single	female-child	lady	only sumo
 single	female-child	mammal	only sumo
 single	female-child	vertebrate	only sumo
@@ -2663,9 +2717,11 @@ single	fiction	indication	only sumo
 single	fiction	line.communication	only sumo
 single	fiction	physical-object	only sumo
 single	fiction	text	only sumo
+single	field	land	only sumo
 single	field	landscape	only sumo
 single	field	physical-object	only wordnet
 single	field	region	only sumo
+single	field-of-study	information	only opencyc
 single	field-of-study	information.communication	only opencyc
 single	fig	natural-object	only wordnet
 single	fig	structure	only opencyc
@@ -2690,6 +2746,7 @@ single	film	event	only wordnet
 single	film	film.communication	only sumo
 single	film	indication	only sumo
 single	film	line.communication	only sumo
+single	film	surface	only opencyc
 single	film	text	only sumo
 single	film	video	only claude
 single	film.artifact.2	physical-object	only wordnet
@@ -2782,7 +2839,6 @@ single	folklore	text	only sumo
 single	fool	animal	only sumo
 single	fool	body	only sumo
 single	fool	human	only sumo
-single	fool	human-body	only sumo
 single	fool	mammal	only sumo
 single	fool	vertebrate	only sumo
 single	forestry	action	only opencyc
@@ -2811,6 +2867,7 @@ single	foundation	team	only sumo
 single	fountain	device	only sumo
 single	fountain	information	only yago
 single	fountain	physical-object	only wordnet
+single	fountain	place	only yago
 single	fox	agent	only sumo
 single	fox	body	only sumo
 single	fox	structure	only opencyc
@@ -2838,7 +2895,6 @@ single	fuel	material	only sumo
 single	fun	accomplishment	only sumo
 single	fun	procedure.act	only sumo
 single	fundamental-law	document	only wordnet
-single	fundamental-law	information	only wordnet
 single	fundamental-law	information.communication	only opencyc
 single	fundamental-law	law	only opencyc
 single	funeral	accomplishment	only sumo
@@ -2853,6 +2909,7 @@ single	fungus	agent	only sumo
 single	fungus	structure	only opencyc
 single	furniture	information	only yago
 single	galaxy	group	only wordnet
+single	galaxy	place	only yago
 single	gallery	agent	only sumo
 single	gallery	artifact	only wordnet
 single	gallery	association.group	only sumo
@@ -2903,13 +2960,11 @@ single	gear	component	only sumo
 single	gear	physical-object	only wordnet
 single	genius	animal	only sumo
 single	genius	body	only sumo
-single	genius	human-body	only sumo
 single	genius	structure	only opencyc
 single	gentleman	adult	only wordnet
 single	gentleman	animal	only sumo
 single	gentleman	body	only sumo
 single	gentleman	human	only sumo
-single	gentleman	human-body	only sumo
 single	gentleman	mammal	only sumo
 single	gentleman	vertebrate	only sumo
 single	geography	natural-science	only wordnet
@@ -2917,20 +2972,19 @@ single	geography	science	only wordnet
 single	gesture	accomplishment	only sumo
 single	gesture	activity	only sumo
 single	gesture	communication	only sumo
+single	gesture	image	only opencyc
 single	gesture	information	only sumo
 single	gesture	procedure.act	only sumo
 single	gesture	signal	only opencyc
 single	ghost	information	only yago
 single	giant	animal	only sumo
 single	giant	body	only sumo
-single	giant	human-body	only sumo
 single	giant	information	only yago
 single	giant	structure	only opencyc
 single	girlfriend	adult	only wordnet
 single	girlfriend	animal	only sumo
 single	girlfriend	body	only sumo
 single	girlfriend	human	only sumo
-single	girlfriend	human-body	only sumo
 single	girlfriend	lady	only sumo
 single	girlfriend	mammal	only sumo
 single	girlfriend	vertebrate	only sumo
@@ -2982,12 +3036,10 @@ single	grass	agent	only sumo
 single	grave	container	only opencyc
 single	grave	device	only opencyc
 single	grave	physical-object	only wordnet
-single	grave	place	only wordnet
 single	grave	site	only opencyc
 single	green.person	animal	only sumo
 single	green.person	body	only sumo
 single	green.person	human	only sumo
-single	green.person	human-body	only sumo
 single	green.person	mammal	only sumo
 single	green.person	vertebrate	only sumo
 single	greenhouse	container	only opencyc
@@ -3012,7 +3064,6 @@ single	grocery-store	company	only sumo
 single	grocery-store	firm	only sumo
 single	grocery-store	group	only sumo
 single	grocery-store	physical-object	only wordnet
-single	grocery-store	place	only schemaorg
 single	grocery-store	shop	only sumo
 single	grocery-store	team	only sumo
 single	guard	agent	only sumo
@@ -3027,7 +3078,6 @@ single	guard	worker	only opencyc
 single	guerrilla	adult	only opencyc
 single	guerrilla	animal	only sumo
 single	guerrilla	body	only sumo
-single	guerrilla	human-body	only sumo
 single	guerrilla	structure	only opencyc
 single	guerrilla	worker	only opencyc
 single	guidance	accomplishment	only sumo
@@ -3063,11 +3113,13 @@ single	haircut	natural-object	only wordnet
 single	hall	container	only opencyc
 single	hall	device	only opencyc
 single	hall	physical-object	only wordnet
+single	hall	place	only yago
 single	hall	site	only opencyc
 single	hall	structure	only wordnet
 single	hall.artifact	container	only opencyc
 single	hall.artifact	device	only opencyc
 single	hall.artifact	physical-object	only wordnet
+single	hall.artifact	place	only yago
 single	hall.artifact	site	only opencyc
 single	hall.artifact	structure	only wordnet
 single	hallway	container	only opencyc
@@ -3101,6 +3153,7 @@ single	hat	device	only opencyc
 single	hat	physical-object	only wordnet
 single	hay	material	only sumo
 single	hayfield	field	only sumo
+single	hayfield	land	only sumo
 single	hayfield	landscape	only sumo
 single	hayfield	physical-object	only wordnet
 single	hayfield	region	only sumo
@@ -3121,6 +3174,7 @@ single	headquarters	collection	only sumo
 single	headquarters	group	only sumo
 single	headquarters	organization	only sumo
 single	headquarters	physical-object	only wordnet
+single	headquarters	place	only yago
 single	headquarters	structure	only wordnet
 single	headquarters	team	only sumo
 single	heating-system	device	only sumo
@@ -3144,6 +3198,7 @@ single	historian	agent	only wordnet
 single	historian	organism	only wordnet
 single	historian	physical-object	only wordnet
 single	history	event	only bfo
+single	history	information	only opencyc
 single	history	information.communication	only opencyc
 single	history	narrative	only opencyc
 single	history.communication	artifact	only sumo
@@ -3163,7 +3218,6 @@ single	hog	body	only sumo
 single	hog.person	animal	only sumo
 single	hog.person	body	only sumo
 single	hog.person	human	only sumo
-single	hog.person	human-body	only sumo
 single	hog.person	mammal	only sumo
 single	hog.person	vertebrate	only sumo
 single	holiday	action	only opencyc
@@ -3175,6 +3229,7 @@ single	home	device	only opencyc
 single	home	group	only sumo
 single	home	organization	only sumo
 single	home	physical-object	only wordnet
+single	home	place	only yago
 single	home	site	only opencyc
 single	home	team	only sumo
 single	honey	material	only sumo
@@ -3204,11 +3259,9 @@ single	hospital	structure	only wordnet
 single	hostel	artifact	only wordnet
 single	hostel	building	only wordnet
 single	hostel	physical-object	only wordnet
-single	hostel	place	only schemaorg
 single	hostel	structure	only wordnet
 single	hotel	artifact	only wordnet
 single	hotel	physical-object	only wordnet
-single	hotel	place	only schemaorg
 single	hotel	structure	only wordnet
 single	house	address	only sumo
 single	house	container	only opencyc
@@ -3218,6 +3271,11 @@ single	house	landscape	only sumo
 single	house	region	only sumo
 single	house	site	only opencyc
 single	house	structure	only wordnet
+single	house.group	artifact	only opencyc
+single	house.group	container	only opencyc
+single	house.group	device	only opencyc
+single	house.group	group	only wordnet
+single	house.group	site	only opencyc
 single	houseplant	agent	only sumo
 single	housing	action	only opencyc
 single	housing	building	only sumo
@@ -3227,18 +3285,10 @@ single	hovel	building	only sumo
 single	hovel	physical-object	only wordnet
 single	human	body	only sumo
 single	human	structure	only opencyc
-single	human-body	agent	only sumo
-single	human-body	animal	only sumo
-single	human-body	human	only sumo
-single	human-body	mammal	only sumo
-single	human-body	natural-object	only wordnet
-single	human-body	organism	only sumo
-single	human-body	vertebrate	only sumo
 single	hunt	accomplishment	only sumo
 single	hunt	procedure.act	only sumo
 single	hunter	animal	only sumo
 single	hunter	body	only sumo
-single	hunter	human-body	only sumo
 single	hunter	structure	only opencyc
 single	hybrid	agent	only sumo
 single	ice	compound	only sumo
@@ -3246,6 +3296,7 @@ single	ice	material	only sumo
 single	ice	water	only sumo
 single	identification	physical-object	only sumo
 single	illustration	event	only opencyc
+single	illustration	image	only opencyc
 single	illustration	light	only opencyc
 single	illustration	physical-object	only wordnet
 single	illustration	signal	only opencyc
@@ -3262,7 +3313,6 @@ single	immigration	visit	only sumo
 single	impact	visit	only sumo
 single	imposter	animal	only sumo
 single	imposter	body	only sumo
-single	imposter	human-body	only sumo
 single	imposter	structure	only opencyc
 single	impudence	accomplishment	only sumo
 single	impudence	act	only sumo
@@ -3332,7 +3382,6 @@ single	intention	procedure.act	only sumo
 single	interaction	accomplishment	only sumo
 single	interaction	activity	only sumo
 single	interaction	procedure.act	only sumo
-single	interface	information	only wordnet
 single	interface	information.communication	only opencyc
 single	interface	routine	only sumo
 single	interface	software	only wordnet
@@ -3364,7 +3413,6 @@ single	invertebrate	structure	only opencyc
 single	investigator	animal	only sumo
 single	investigator	body	only sumo
 single	investigator	human	only sumo
-single	investigator	human-body	only sumo
 single	investigator	mammal	only sumo
 single	investigator	vertebrate	only sumo
 single	invitation	accomplishment	only sumo
@@ -3444,16 +3492,20 @@ single	judge	structure	only opencyc
 single	judge	vertebrate	only opencyc
 single	judgment	accomplishment	only sumo
 single	judgment	activity	only sumo
-single	judgment	information	only sumo
 single	judgment	information.communication	only opencyc
 single	judgment	procedure.act	only sumo
 single	judgment.act	accomplishment	only sumo
 single	judgment.act	activity	only sumo
 single	judgment.act	communication	only sumo
-single	judgment.act	information	only sumo
 single	judgment.act	information.communication	only opencyc
 single	judgment.act	opinion	only sumo
 single	judgment.act	procedure.act	only sumo
+single	judgment.cognition	accomplishment	only sumo
+single	judgment.cognition	act	only sumo
+single	judgment.cognition	activity	only sumo
+single	judgment.cognition	event	only sumo
+single	judgment.cognition	information.communication	only opencyc
+single	judgment.cognition	procedure.act	only sumo
 single	jury	agent	only sumo
 single	jury	class.group	only sumo
 single	jury	collection	only sumo
@@ -3463,6 +3515,13 @@ single	jury.group	agent	only sumo
 single	jury.group	collection	only sumo
 single	jury.group	organization	only wordnet
 single	jury.group	structure	only opencyc
+single	justification	accomplishment	only sumo
+single	justification	act	only sumo
+single	justification	activity	only sumo
+single	justification	event	only sumo
+single	justification	information.communication	only opencyc
+single	justification	procedure.act	only sumo
+single	justification	thinking	only sumo
 single	kettle	physical-object	only wordnet
 single	kettle	vessel	only wordnet
 single	key	physical-object	only wordnet
@@ -3476,7 +3535,6 @@ single	key.communication.2	text	only sumo
 single	killer	animal	only sumo
 single	killer	body	only sumo
 single	killer	human	only sumo
-single	killer	human-body	only sumo
 single	killer	mammal	only sumo
 single	killer	vertebrate	only sumo
 single	kin	agent	only sumo
@@ -3497,7 +3555,6 @@ single	kitchen	container	only opencyc
 single	kitchen	device	only opencyc
 single	kitchen	landscape	only sumo
 single	kitchen	physical-object	only wordnet
-single	kitchen	place	only sumo
 single	kitchen	region	only sumo
 single	kitchen	site	only opencyc
 single	kitchen	structure	only wordnet
@@ -3509,6 +3566,7 @@ single	lab	artifact	only sumo
 single	lab	physical-object	only wordnet
 single	lab	place	only wordnet
 single	label	artifact	only opencyc
+single	label	image	only opencyc
 single	label	indication	only sumo
 single	label	physical-object	only sumo
 single	label	signal	only wordnet
@@ -3526,7 +3584,6 @@ single	lady	adult	only wordnet
 single	lady	animal	only sumo
 single	lady	body	only sumo
 single	lady	human	only sumo
-single	lady	human-body	only sumo
 single	lady	mammal	only sumo
 single	lady	vertebrate	only sumo
 single	lake	natural-object	only claude
@@ -3539,6 +3596,9 @@ single	lamb	livestock	only sumo
 single	lamb	structure	only opencyc
 single	lamb	virgin	only opencyc
 single	lamp	physical-object	only wordnet
+single	land	landscape	only sumo
+single	land	physical-object	only wordnet
+single	land	region	only sumo
 single	land-vehicle	device	only opencyc
 single	land-vehicle	machine	only claude
 single	land-vehicle	physical-object	only claude
@@ -3558,7 +3618,9 @@ single	laundry	commodity	only wordnet
 single	laundry	fabric	only sumo
 single	laundry	physical-object	only wordnet
 single	law	humanities	only wordnet
+single	law	information	only opencyc
 single	law	information.communication	only opencyc
+single	lawn	land	only sumo
 single	lawn	landscape	only sumo
 single	lawn	physical-object	only wordnet
 single	lawn	region	only sumo
@@ -3590,6 +3652,7 @@ single	leadership	procedure.act	only sumo
 single	leaf	structure	only opencyc
 single	lease	artifact	only opencyc
 single	lease	document	only wordnet
+single	lease	image	only opencyc
 single	lease	information	only wordnet
 single	leash	cord	only opencyc
 single	leash	line.communication	only opencyc
@@ -3599,6 +3662,7 @@ single	leather	hide	only opencyc
 single	leather	substance	only wordnet
 single	lecture	accomplishment	only sumo
 single	lecture	education	only sumo
+single	lecture	information	only opencyc
 single	lecture	information.communication	only opencyc
 single	lecture	occupation	only wordnet
 single	lecture	procedure.act	only sumo
@@ -3607,7 +3671,6 @@ single	lecture.communication	accomplishment	only sumo
 single	lecture.communication	activity	only sumo
 single	lecture.communication	communication	only sumo
 single	lecture.communication	conversation	only sumo
-single	lecture.communication	information	only sumo
 single	lecture.communication	information.communication	only opencyc
 single	lecture.communication	procedure.act	only sumo
 single	lecture.communication	production.communication	only sumo
@@ -3655,7 +3718,6 @@ single	letter	news.communication	only sumo
 single	letter	note	only sumo
 single	letter.communication	signal	only wordnet
 single	library	physical-object	only wordnet
-single	library	place	only schemaorg
 single	library	structure	only wordnet
 single	license	artifact	only sumo
 single	license	condition.communication	only sumo
@@ -3663,6 +3725,7 @@ single	license	document	only wordnet
 single	license	indication	only sumo
 single	license	information.communication	only opencyc
 single	license	line.communication	only sumo
+single	license	permission	only opencyc
 single	license	physical-object	only sumo
 single	license	text	only sumo
 single	lid	physical-object	only wordnet
@@ -3729,6 +3792,7 @@ single	looting	accomplishment	only sumo
 single	looting	action	only opencyc
 single	looting	activity	only sumo
 single	looting	procedure.act	only sumo
+single	lot	land	only sumo
 single	lot	landscape	only sumo
 single	lot	physical-object	only wordnet
 single	lot	region	only sumo
@@ -3751,7 +3815,6 @@ single	lounge	structure	only wordnet
 single	lover	animal	only sumo
 single	lover	body	only sumo
 single	lover	human	only sumo
-single	lover	human-body	only sumo
 single	lover	mammal	only sumo
 single	lover	vertebrate	only sumo
 single	luggage-compartment	device	only sumo
@@ -3807,7 +3870,6 @@ single	makeup	substance	only sumo
 single	male-child	animal	only sumo
 single	male-child	body	only sumo
 single	male-child	human	only sumo
-single	male-child	human-body	only sumo
 single	male-child	mammal	only sumo
 single	male-child	man	only sumo
 single	male-child	vertebrate	only sumo
@@ -3815,7 +3877,6 @@ single	mammal	agent	only sumo
 single	mammal	body	only sumo
 single	mammal	structure	only opencyc
 single	man	body	only sumo
-single	man	human-body	only sumo
 single	man	structure	only opencyc
 single	management	accomplishment	only sumo
 single	management	action	only opencyc
@@ -3935,6 +3996,8 @@ single	memorial.communication	event	only sumo
 single	memorial.communication	procedure.act	only sumo
 single	memory	artifact	only wordnet
 single	memory	component	only wordnet
+single	memory	context.communication	only opencyc
+single	memory	information	only opencyc
 single	memory	information.communication	only opencyc
 single	memory	physical-object	only wordnet
 single	mental-hospital	address	only sumo
@@ -3944,6 +4007,9 @@ single	mental-hospital	physical-object	only wordnet
 single	mental-hospital	place	only sumo
 single	mental-hospital	region	only sumo
 single	mental-hospital	structure	only wordnet
+single	menu.food	food	only wordnet
+single	menu.food	information.communication	only opencyc
+single	menu.food	substance	only wordnet
 single	merchandise	physical-object	only wordnet
 single	message	artifact	only sumo
 single	message	condition.communication	only sumo
@@ -4000,10 +4066,12 @@ single	ministry	team	only sumo
 single	mirror	physical-object	only wordnet
 single	mistake	action	only opencyc
 single	mistake	expert	only sumo
+single	model	image	only opencyc
 single	model	information	only sumo
 single	model	physical-object	only wordnet
 single	module	artifact	only sumo
 single	module	device	only sumo
+single	module	information	only opencyc
 single	module	information.communication	only opencyc
 single	module	mechanism	only sumo
 single	module	physical-object	only wordnet
@@ -4014,12 +4082,12 @@ single	mole	body	only sumo
 single	mole	structure	only opencyc
 single	mollusc	agent	only sumo
 single	mollusc	body	only sumo
-single	mollusc	structure	only opencyc
 single	monastery	building	only wordnet
 single	monastery	dwelling	only wordnet
 single	monastery	housing	only wordnet
 single	monastery	organization	only yago
 single	monastery	physical-object	only wordnet
+single	monastery	place	only yago
 single	monastery	structure	only wordnet
 single	money	artifact	only sumo
 single	money	cash	only sumo
@@ -4046,7 +4114,6 @@ single	mosaic	indication	only sumo
 single	mosque	container	only opencyc
 single	mosque	device	only opencyc
 single	mosque	physical-object	only wordnet
-single	mosque	place	only schemaorg
 single	mosque	site	only opencyc
 single	mosque	structure	only wordnet
 single	mosque	temple	only opencyc
@@ -4087,13 +4154,14 @@ single	murder	destruction	only sumo
 single	murder	procedure.act	only sumo
 single	museum	building	only sumo
 single	museum	physical-object	only wordnet
-single	museum	place	only schemaorg
 single	museum	structure	only opencyc
 single	mushroom	agent	only sumo
 single	mushroom	structure	only opencyc
 single	music	field-of-study	only claude
 single	music	signal	only opencyc
 single	music-recording	audio	only claude
+single	musical-composition	information.communication	only opencyc
+single	musical-composition	music	only wordnet
 single	musician	agent	only wordnet
 single	musician	human	only opencyc
 single	musician	mammal	only opencyc
@@ -4125,6 +4193,7 @@ single	natural-event	procedure.act	only sumo
 single	natural-language	information.communication	only opencyc
 single	natural-language	line.communication	only sumo
 single	natural-object	artifact	only sumo
+single	nausea	evidence	only wordnet
 single	navy	agent	only sumo
 single	navy	association.group	only sumo
 single	navy	collection	only sumo
@@ -4173,15 +4242,9 @@ single	newspaper	text	only sumo
 single	nomination	accomplishment	only sumo
 single	nomination	activity	only sumo
 single	nomination	communication	only sumo
-single	nomination	information	only sumo
 single	nomination	information.communication	only opencyc
 single	nomination	procedure.act	only sumo
 single	nomination	recommendation	only opencyc
-single	nonprofit	accomplishment	only sumo
-single	nonprofit	activity	only sumo
-single	nonprofit	agent	only claude
-single	nonprofit	leadership	only sumo
-single	nonprofit	procedure.act	only sumo
 single	note	artifact	only sumo
 single	note	condition.communication	only sumo
 single	note	line.communication	only sumo
@@ -4218,6 +4281,8 @@ single	notice	activity	only sumo
 single	notice	communication	only sumo
 single	notice	event	only sumo
 single	notice	procedure.act	only sumo
+single	noun	information.communication	only opencyc
+single	noun	line.communication	only sumo
 single	novel	artifact	only sumo
 single	novel	book	only sumo
 single	novel	component	only sumo
@@ -4235,6 +4300,7 @@ single	novel	physical-object	only sumo
 single	novel	text	only sumo
 single	nuclear-reactor	equipment	only wordnet
 single	nuclear-reactor	physical-object	only wordnet
+single	nuclear-reactor	place	only yago
 single	numeral	character	only sumo
 single	numeral	information.communication	only opencyc
 single	numeral	signal	only wordnet
@@ -4296,12 +4362,12 @@ single	office	building	only sumo
 single	office	container	only opencyc
 single	office	device	only opencyc
 single	office	physical-object	only wordnet
+single	office	place	only yago
 single	office	site	only opencyc
 single	office	suite	only opencyc
 single	official	animal	only sumo
 single	official	body	only sumo
 single	official	human	only sumo
-single	official	human-body	only sumo
 single	official	mammal	only sumo
 single	official	vertebrate	only sumo
 single	oil	chemical	only wordnet
@@ -4353,6 +4419,10 @@ single	opinion	communication	only sumo
 single	opinion	document	only wordnet
 single	opinion	event	only sumo
 single	opinion	procedure.act	only sumo
+single	option.possession	contract	only opencyc
+single	option.possession	document	only wordnet
+single	option.possession	information.communication	only opencyc
+single	option.possession	legal-document	only wordnet
 single	orbit	landscape	only sumo
 single	orbit	physical-object	only wordnet
 single	orbit	region	only sumo
@@ -4404,7 +4474,6 @@ single	owl	structure	only opencyc
 single	owner	animal	only sumo
 single	owner	body	only sumo
 single	owner	human	only sumo
-single	owner	human-body	only sumo
 single	owner	mammal	only sumo
 single	owner	vertebrate	only sumo
 single	oxygen	material	only sumo
@@ -4419,7 +4488,6 @@ single	packet	physical-object	only wordnet
 single	pain.person	animal	only sumo
 single	pain.person	body	only sumo
 single	pain.person	human	only sumo
-single	pain.person	human-body	only sumo
 single	pain.person	mammal	only sumo
 single	pain.person	vertebrate	only sumo
 single	painter	agent	only wordnet
@@ -4434,8 +4502,10 @@ single	palace	container	only opencyc
 single	palace	device	only opencyc
 single	palace	dwelling	only wordnet
 single	palace	home	only opencyc
+single	palace	house.group	only yago
 single	palace	housing	only wordnet
 single	palace	physical-object	only wordnet
+single	palace	place	only yago
 single	palace	site	only opencyc
 single	palace	structure	only wordnet
 single	palm	agent	only sumo
@@ -4453,6 +4523,7 @@ single	paper	text	only sumo
 single	parade	action	only opencyc
 single	parade	group	only wordnet
 single	parade	ritual	only opencyc
+single	paradox	information.communication	only opencyc
 single	paragraph	artifact	only sumo
 single	paragraph	condition.communication	only sumo
 single	paragraph	indication	only sumo
@@ -4474,6 +4545,7 @@ single	pardon	line.communication	only sumo
 single	pardon	physical-object	only sumo
 single	pardon	text	only sumo
 single	park	artifact	only opencyc
+single	park	land	only sumo
 single	park	landscape	only sumo
 single	park	physical-object	only wordnet
 single	park	region	only sumo
@@ -4486,7 +4558,6 @@ single	parole	procedure.act	only sumo
 single	participant	animal	only sumo
 single	participant	body	only sumo
 single	participant	human	only sumo
-single	participant	human-body	only sumo
 single	participant	mammal	only sumo
 single	participant	vertebrate	only sumo
 single	partner	agent	only wordnet
@@ -4509,6 +4580,7 @@ single	pass	artifact	only sumo
 single	pass	condition.communication	only sumo
 single	pass	indication	only sumo
 single	pass	line.communication	only sumo
+single	pass	permission	only wordnet
 single	pass	physical-object	only sumo
 single	pass	text	only sumo
 single	passage.communication	artifact	only sumo
@@ -4532,6 +4604,7 @@ single	password	line.communication	only sumo
 single	pastime	accomplishment	only sumo
 single	pastime	procedure.act	only sumo
 single	pasture	field	only sumo
+single	pasture	land	only sumo
 single	pasture	landscape	only sumo
 single	pasture	physical-object	only wordnet
 single	pasture	region	only sumo
@@ -4555,9 +4628,9 @@ single	path.location	physical-object	only wordnet
 single	path.location	region	only sumo
 single	patient	animal	only sumo
 single	patient	body	only sumo
-single	patient	human-body	only sumo
 single	patient	structure	only opencyc
 single	patio	artifact	only wordnet
+single	patio	land	only sumo
 single	patio	landscape	only sumo
 single	patio	physical-object	only wordnet
 single	patio	place	only sumo
@@ -4575,6 +4648,7 @@ single	patrol	collection	only sumo
 single	patrol	team	only sumo
 single	payment	act	only wordnet
 single	payment	action	only opencyc
+single	peak	land	only sumo
 single	peak	landscape	only sumo
 single	peak	physical-object	only wordnet
 single	peak	region	only sumo
@@ -4585,7 +4659,6 @@ single	peanut	physical-object	only wordnet
 single	peanut	structure	only opencyc
 single	peasant	animal	only sumo
 single	peasant	body	only sumo
-single	peasant	human-body	only sumo
 single	peasant	structure	only opencyc
 single	pen	device	only sumo
 single	pen	physical-object	only wordnet
@@ -4593,6 +4666,7 @@ single	pencil	physical-object	only wordnet
 single	pencil	tool	only opencyc
 single	penny	condition.communication	only sumo
 single	penny	device	only opencyc
+single	penny	image	only opencyc
 single	penny	indication	only sumo
 single	penny	information	only sumo
 single	penny	line.communication	only sumo
@@ -4601,7 +4675,6 @@ single	penny	text	only sumo
 single	penny	token	only opencyc
 single	pensioner	animal	only sumo
 single	pensioner	body	only sumo
-single	pensioner	human-body	only sumo
 single	pensioner	structure	only opencyc
 single	people	agent	only sumo
 single	people	collection	only sumo
@@ -4609,7 +4682,6 @@ single	pepper	agent	only sumo
 single	perceiver	animal	only sumo
 single	perceiver	body	only sumo
 single	perceiver	human	only sumo
-single	perceiver	human-body	only sumo
 single	perceiver	mammal	only sumo
 single	perceiver	vertebrate	only sumo
 single	performance	accomplishment	only sumo
@@ -4637,26 +4709,29 @@ single	perfume	solution.substance	only sumo
 single	perfume	substance	only sumo
 single	period	character	only sumo
 single	period	signal	only wordnet
+single	permission	information.communication	only opencyc
 single	person	animal	only sumo
 single	person	body	only sumo
 single	person	mammal	only sumo
 single	person	vertebrate	only sumo
+single	personal-identification-number	identification	only wordnet
+single	personal-identification-number	indication	only wordnet
+single	personal-identification-number	information.communication	only opencyc
 single	perspiration	material	only sumo
 single	pest	animal	only sumo
 single	pest	body	only sumo
 single	pest	human	only sumo
-single	pest	human-body	only sumo
 single	pest	mammal	only sumo
 single	pest	vertebrate	only sumo
 single	pet	agent	only sumo
 single	pet	body	only sumo
 single	pet	livestock	only sumo
+single	philosophy	information	only opencyc
 single	philosophy	information.communication	only opencyc
 single	phone	component	only sumo
 single	phone	mechanism	only sumo
 single	phone-call	accomplishment	only sumo
 single	phone-call	act	only sumo
-single	phone-call	action	only opencyc
 single	phone-call	activity	only sumo
 single	phone-call	information	only sumo
 single	phone-call	physical-object	only wordnet
@@ -4684,6 +4759,7 @@ single	pie	material	only sumo
 single	pier	device	only wordnet
 single	pier	line.communication	only opencyc
 single	pier	physical-object	only wordnet
+single	pier	place	only yago
 single	pier	site	only opencyc
 single	pigeon	agent	only sumo
 single	pigeon	body	only sumo
@@ -4741,10 +4817,10 @@ single	player	artifact	only opencyc
 single	player	body	only sumo
 single	player	device	only opencyc
 single	player	human	only sumo
-single	player	human-body	only sumo
 single	player	mammal	only sumo
 single	player	vertebrate	only sumo
 single	playing-field	artifact	only opencyc
+single	playing-field	land	only sumo
 single	playing-field	landscape	only sumo
 single	playing-field	physical-object	only wordnet
 single	playing-field	region	only sumo
@@ -4754,11 +4830,15 @@ single	playpen	container	only opencyc
 single	playpen	physical-object	only wordnet
 single	plaything	device	only sumo
 single	plaything	physical-object	only wordnet
+single	plot	information	only opencyc
 single	plot	information.communication	only opencyc
+single	plot	land	only sumo
 single	plot	landscape	only sumo
 single	plot	physical-object	only wordnet
 single	plot	region	only sumo
 single	plot	yard	only sumo
+single	plot.communication	fiction	only wordnet
+single	plot.communication	information.communication	only opencyc
 single	plot.communication.2	information.communication	only opencyc
 single	pocket	device	only opencyc
 single	pocket	fabric	only sumo
@@ -4795,6 +4875,7 @@ single	pole.location	region	only sumo
 single	police	agent	only sumo
 single	police	association.group	only sumo
 single	police	collection	only sumo
+single	police	place	only yago
 single	police	team	only sumo
 single	policy	artifact	only sumo
 single	policy	condition.communication	only sumo
@@ -4841,6 +4922,12 @@ single	porter	person	only wordnet
 single	porter	physical-object	only wordnet
 single	porter	structure	only opencyc
 single	porter	vertebrate	only opencyc
+single	portrait	artifact	only wordnet
+single	portrait	event	only opencyc
+single	portrait	information	only sumo
+single	portrait	light	only opencyc
+single	portrait	physical-object	only wordnet
+single	portrait	signal	only opencyc
 single	post.location	landscape	only sumo
 single	post.location	physical-object	only wordnet
 single	post.location	region	only sumo
@@ -4852,6 +4939,7 @@ single	postcard	artifact	only opencyc
 single	postcard	card	only opencyc
 single	postcard	card.communication.2	only opencyc
 single	postcard	correspondence	only wordnet
+single	postcard	image	only opencyc
 single	postcard	indication	only sumo
 single	postcard	mail	only wordnet
 single	postcard	message	only wordnet
@@ -4894,6 +4982,7 @@ single	prescription	line.communication	only sumo
 single	prescription	physical-object	only sumo
 single	prescription	text	only sumo
 single	prescription-drug	material	only sumo
+single	prescription-drug	medicine	only opencyc
 single	present	accomplishment	only sumo
 single	present	acquisition	only wordnet
 single	present	act	only sumo
@@ -4931,10 +5020,10 @@ single	prince	structure	only opencyc
 single	prince	vertebrate	only opencyc
 single	princess	animal	only sumo
 single	princess	body	only sumo
-single	princess	human-body	only sumo
 single	princess	lady	only sumo
 single	princess	structure	only opencyc
 single	princess	woman	only sumo
+single	print	image	only opencyc
 single	print	indication	only sumo
 single	print	information	only sumo
 single	prison	building	only sumo
@@ -4942,6 +5031,7 @@ single	prison	container	only opencyc
 single	prison	device	only opencyc
 single	prison	organization	only yago
 single	prison	physical-object	only wordnet
+single	prison	place	only yago
 single	prison	site	only opencyc
 single	prisoner	agent	only wordnet
 single	prisoner	human	only opencyc
@@ -4956,7 +5046,6 @@ single	procedure.act	act	only wordnet
 single	producer	animal	only sumo
 single	producer	body	only sumo
 single	producer	human	only sumo
-single	producer	human-body	only sumo
 single	producer	mammal	only sumo
 single	producer	vertebrate	only sumo
 single	production-line	device	only sumo
@@ -4979,6 +5068,7 @@ single	professor	physical-object	only wordnet
 single	professor	structure	only opencyc
 single	professor	vertebrate	only opencyc
 single	professor	worker	only opencyc
+single	profile	information.communication	only opencyc
 single	prognosis	accomplishment	only sumo
 single	prognosis	act	only sumo
 single	prognosis	activity	only sumo
@@ -5019,7 +5109,6 @@ single	proposal	accomplishment	only sumo
 single	proposal	activity	only sumo
 single	proposal	advice	only sumo
 single	proposal	communication	only sumo
-single	proposal	information	only sumo
 single	proposal	information.communication	only opencyc
 single	proposal	procedure.act	only sumo
 single	proposition	information.communication	only opencyc
@@ -5061,6 +5150,7 @@ single	public	collection	only sumo
 single	public	people	only sumo
 single	public-house	physical-object	only wordnet
 single	public-house	structure	only wordnet
+single	public-square	land	only sumo
 single	public-square	landscape	only sumo
 single	public-square	physical-object	only wordnet
 single	public-square	region	only sumo
@@ -5115,6 +5205,7 @@ single	quarrel	contest.act	only sumo
 single	quarrel	information	only sumo
 single	quarrel	procedure.act	only sumo
 single	quarrel	war	only sumo
+single	quarter	land	only sumo
 single	quarter	landscape	only sumo
 single	quarter	physical-object	only wordnet
 single	quarter	region	only sumo
@@ -5173,6 +5264,7 @@ single	race	game.act	only sumo
 single	race	procedure.act	only sumo
 single	race	sport	only sumo
 single	race	war	only sumo
+single	racetrack	land	only sumo
 single	racetrack	landscape	only sumo
 single	racetrack	physical-object	only wordnet
 single	racetrack	place	only sumo
@@ -5203,7 +5295,12 @@ single	rally	action	only opencyc
 single	rally	activity	only sumo
 single	rally	meeting.act	only sumo
 single	rally	procedure.act	only sumo
+single	ranch	artifact	only sumo
+single	ranch	physical-object	only wordnet
+single	ranch	site	only opencyc
+single	ranch	workplace	only wordnet
 single	range	field	only sumo
+single	range	land	only sumo
 single	range	landscape	only sumo
 single	range	physical-object	only wordnet
 single	range	region	only sumo
@@ -5230,6 +5327,7 @@ single	recapitulation	physical-object	only sumo
 single	recapitulation	text	only sumo
 single	receipt	artifact	only opencyc
 single	receipt	document	only claude
+single	receipt	image	only opencyc
 single	reception.group	accomplishment	only sumo
 single	reception.group	act	only sumo
 single	reception.group	action	only opencyc
@@ -5287,6 +5385,15 @@ single	reference	indication	only sumo
 single	reference	information	only sumo
 single	reference	line.communication	only sumo
 single	reference	text	only sumo
+single	referral	advice	only wordnet
+single	referral	context.communication	only opencyc
+single	referral	information.communication	only opencyc
+single	reflection	artifact	only wordnet
+single	reflection	event	only opencyc
+single	reflection	information	only sumo
+single	reflection	light	only opencyc
+single	reflection	physical-object	only wordnet
+single	reflection	signal	only opencyc
 single	refugee	agent	only wordnet
 single	refugee	civilian	only opencyc
 single	refugee	human	only opencyc
@@ -5383,7 +5490,6 @@ single	reservation	affirmation	only sumo
 single	reservation	communication	only sumo
 single	reservation	event	only sumo
 single	reservation	procedure.act	only sumo
-single	reservoir	place	only schemaorg
 single	reservoir	site	only opencyc
 single	residence	artifact	only sumo
 single	residence	building	only sumo
@@ -5401,6 +5507,7 @@ single	resident	physical-object	only wordnet
 single	resident	structure	only opencyc
 single	resident	vertebrate	only opencyc
 single	resident	worker	only opencyc
+single	residential-district	land	only sumo
 single	residential-district	landscape	only sumo
 single	residential-district	physical-object	only wordnet
 single	residential-district	region	only sumo
@@ -5420,18 +5527,15 @@ single	resistance	procedure.act	only sumo
 single	resistance	war	only sumo
 single	resolution	accomplishment	only sumo
 single	resolution	activity	only sumo
-single	resolution	information	only sumo
 single	resolution	information.communication	only opencyc
 single	resolution	judgment	only sumo
 single	resolution	procedure.act	only sumo
 single	resort	artifact	only wordnet
 single	resort	building	only wordnet
 single	resort	physical-object	only wordnet
-single	resort	place	only schemaorg
 single	resort	structure	only wordnet
 single	rest	physical-object	only wordnet
 single	restaurant	physical-object	only wordnet
-single	restaurant	place	only schemaorg
 single	restaurant	structure	only wordnet
 single	restitution	accomplishment	only sumo
 single	restitution	activity	only sumo
@@ -5448,6 +5552,7 @@ single	retaliation	activity	only sumo
 single	retaliation	contest	only sumo
 single	retaliation	contest.act	only sumo
 single	retaliation	fight	only sumo
+single	retaliation	information	only opencyc
 single	retaliation	information.communication	only opencyc
 single	retaliation	procedure.act	only sumo
 single	retaliation	war	only sumo
@@ -5455,7 +5560,6 @@ single	return.act	visit	only sumo
 single	review	accomplishment	only sumo
 single	review	article	only opencyc
 single	review	education	only sumo
-single	review	information	only schemaorg
 single	review	information.communication	only opencyc
 single	review	procedure.act	only sumo
 single	review	training	only wordnet
@@ -5527,6 +5631,12 @@ single	river	natural-object	only claude
 single	river	physical-object	only claude
 single	river	place	only claude
 single	river	site	only opencyc
+single	road	artifact	only wordnet
+single	road	land	only sumo
+single	road	landscape	only sumo
+single	road	physical-object	only wordnet
+single	road	region	only sumo
+single	road	yard	only sumo
 single	robbery	accomplishment	only sumo
 single	robbery	procedure.act	only sumo
 single	rocket	physical-object	only wordnet
@@ -5543,7 +5653,6 @@ single	roll.communication	text	only sumo
 single	roof	physical-object	only wordnet
 single	roof	surface	only opencyc
 single	room	physical-object	only wordnet
-single	room	place	only schemaorg
 single	rope	device	only opencyc
 single	rope	line.communication	only opencyc
 single	rope	physical-object	only wordnet
@@ -5569,7 +5678,6 @@ single	rumor	condition.communication	only sumo
 single	rumor	event	only wordnet
 single	rumor	file.communication	only sumo
 single	rumor	indication	only sumo
-single	rumor	information	only sumo
 single	rumor	line.communication	only sumo
 single	rumor	myth	only sumo
 single	rumor	news	only sumo
@@ -5582,7 +5690,6 @@ single	rung	physical-object	only wordnet
 single	runner	animal	only sumo
 single	runner	body	only sumo
 single	runner	human	only sumo
-single	runner	human-body	only sumo
 single	runner	mammal	only sumo
 single	runner	vertebrate	only sumo
 single	sacrifice	destruction	only sumo
@@ -5634,6 +5741,7 @@ single	satellite	component	only sumo
 single	satellite	device	only sumo
 single	satellite	mechanism	only sumo
 single	satellite	physical-object	only wordnet
+single	satellite	place	only yago
 single	satellite	vehicle	only yago
 single	sauce	artifact	only opencyc
 single	sauce	material	only sumo
@@ -5713,6 +5821,9 @@ single	screen.artifact.2	device	only sumo
 single	screen.artifact.2	mechanism	only sumo
 single	screen.artifact.2	physical-object	only wordnet
 single	screw	physical-object	only wordnet
+single	script	information.communication	only opencyc
+single	script	routine	only sumo
+single	sculpture	image	only opencyc
 single	sculpture	indication	only sumo
 single	sea	natural-object	only claude
 single	sea	physical-object	only claude
@@ -5801,6 +5912,7 @@ single	setting.location	physical-object	only wordnet
 single	setting.location	region	only sumo
 single	setting.location	region.location	only wordnet
 single	settlement	agent	only sumo
+single	settlement	land	only sumo
 single	settlement	landscape	only sumo
 single	settlement	physical-object	only wordnet
 single	settlement	region	only sumo
@@ -5853,6 +5965,7 @@ single	shopping	activity	only sumo
 single	shopping	procedure.act	only sumo
 single	short-pants	commodity	only wordnet
 single	short-pants	physical-object	only wordnet
+single	shoulder	land	only sumo
 single	shoulder	landscape	only sumo
 single	shoulder	physical-object	only wordnet
 single	shoulder	yard	only sumo
@@ -5873,6 +5986,7 @@ single	side.location	place	only wordnet
 single	side.location	region	only wordnet
 single	sidewalk	concrete	only opencyc
 single	sidewalk	physical-object	only wordnet
+single	sidewalk	place	only yago
 single	sidewalk	site	only opencyc
 single	siege	act	only wordnet
 single	sieve	physical-object	only wordnet
@@ -5898,11 +6012,13 @@ single	singer	vertebrate	only opencyc
 single	singer	worker	only opencyc
 single	sink	device	only sumo
 single	sink	physical-object	only wordnet
+single	site	land	only sumo
 single	site	physical-object	only wordnet
 single	site	region	only sumo
 single	site	yard	only sumo
 single	sketch	artifact	only sumo
 single	sketch	condition.communication	only sumo
+single	sketch	image	only opencyc
 single	sketch	indication	only sumo
 single	sketch	line.communication	only sumo
 single	sketch	physical-object	only sumo
@@ -5931,7 +6047,6 @@ single	slide	physical-object	only wordnet
 single	slob	animal	only sumo
 single	slob	body	only sumo
 single	slob	human	only sumo
-single	slob	human-body	only sumo
 single	slob	mammal	only sumo
 single	slob	vertebrate	only sumo
 single	sludge	material	only sumo
@@ -5949,6 +6064,7 @@ single	snake	agent	only sumo
 single	snake	body	only sumo
 single	snake	line.communication	only opencyc
 single	snake	structure	only opencyc
+single	social-science	information	only opencyc
 single	social-science	information.communication	only opencyc
 single	sock	commodity	only wordnet
 single	sock	device	only opencyc
@@ -5959,7 +6075,6 @@ single	sofa	physical-object	only wordnet
 single	software	routine	only sumo
 single	software-library	group	only wordnet
 single	software-library	information	only claude
-single	software-library	place	only schemaorg
 single	software-library	software	only claude
 single	soldier	adult	only opencyc
 single	soldier	agent	only wordnet
@@ -6024,6 +6139,7 @@ single	sport	contest	only sumo
 single	sport	contest.act	only sumo
 single	sport	game	only sumo
 single	sport	game.act	only sumo
+single	sport	information	only opencyc
 single	sport	information.communication	only opencyc
 single	sport	procedure.act	only sumo
 single	sport	war	only sumo
@@ -6041,6 +6157,7 @@ single	squad	collection	only sumo
 single	squad	structure	only opencyc
 single	squad	team	only sumo
 single	stable	physical-object	only wordnet
+single	stable	place	only yago
 single	stable	structure	only wordnet
 single	stadium	container	only opencyc
 single	stadium	device	only opencyc
@@ -6063,7 +6180,9 @@ single	stall	physical-object	only wordnet
 single	stall	structure	only wordnet
 single	star	natural-object	only wordnet
 single	star	physical-object	only wordnet
+single	star	place	only yago
 single	state	agent	only sumo
+single	state	land	only sumo
 single	state	landscape	only sumo
 single	state	physical-object	only wordnet
 single	state	region	only sumo
@@ -6085,6 +6204,7 @@ single	statement	note	only sumo
 single	statement	physical-object	only sumo
 single	statement	text	only sumo
 single	statistics	science	only wordnet
+single	statue	image	only opencyc
 single	statue	indication	only sumo
 single	steak	artifact	only opencyc
 single	steak	food	only sumo
@@ -6121,12 +6241,13 @@ single	stove	device	only sumo
 single	stove	physical-object	only wordnet
 single	strap	physical-object	only wordnet
 single	straw	physical-object	only wordnet
+single	stream	information	only opencyc
 single	stream	information.communication	only opencyc
 single	stream	landform	only yago
 single	stream	landscape	only sumo
-single	stream	place	only sumo
 single	stream	region	only sumo
 single	street	device	only opencyc
+single	street	land	only sumo
 single	street	landscape	only sumo
 single	street	physical-object	only wordnet
 single	street	region	only sumo
@@ -6134,10 +6255,11 @@ single	street	site	only opencyc
 single	street	surface	only opencyc
 single	street	yard	only sumo
 single	street.artifact	device	only opencyc
+single	street.artifact	land	only sumo
 single	street.artifact	landscape	only sumo
 single	street.artifact	physical-object	only wordnet
-single	street.artifact	place	only sumo
 single	street.artifact	region	only sumo
+single	street.artifact	road	only wordnet
 single	street.artifact	site	only opencyc
 single	street.artifact	street	only sumo
 single	street.artifact	surface	only opencyc
@@ -6158,7 +6280,6 @@ single	struggle	work	only wordnet
 single	studio	container	only opencyc
 single	studio	device	only opencyc
 single	studio	physical-object	only wordnet
-single	studio	place	only wordnet
 single	studio	site	only opencyc
 single	studio	suite	only opencyc
 single	study	container	only opencyc
@@ -6175,10 +6296,14 @@ single	submission	text	only sumo
 single	subscriber	animal	only sumo
 single	subscriber	body	only sumo
 single	subscriber	human	only sumo
-single	subscriber	human-body	only sumo
 single	subscriber	mammal	only sumo
 single	subscriber	vertebrate	only sumo
 single	substance	physical-object	only dul
+single	suburb	district	only wordnet
+single	suburb	physical-object	only wordnet
+single	suburb	region.location	only wordnet
+single	suburb	residential-district	only wordnet
+single	suburb	site	only opencyc
 single	success	accomplishment	only sumo
 single	success	act	only sumo
 single	success	action	only opencyc
@@ -6223,6 +6348,7 @@ single	supermarket	company	only sumo
 single	supermarket	firm	only sumo
 single	supermarket	group	only sumo
 single	supermarket	physical-object	only wordnet
+single	supermarket	place	only yago
 single	supermarket	structure	only wordnet
 single	supermarket	team	only sumo
 single	support	accomplishment	only sumo
@@ -6283,8 +6409,10 @@ single	tape.artifact.2	physical-object	only wordnet
 single	target	information	only wordnet
 single	target	signal	only wordnet
 single	tea	artifact	only opencyc
+single	tea	drink	only wordnet
 single	tea	drug	only yago
 single	tea	food	only wordnet
+single	tea	medicine	only opencyc
 single	tea	medicine.artifact	only opencyc
 single	teaching	accomplishment	only sumo
 single	teaching	action	only opencyc
@@ -6298,6 +6426,7 @@ single	television-receiver	physical-object	only wordnet
 single	temple	container	only opencyc
 single	temple	device	only opencyc
 single	temple	physical-object	only wordnet
+single	temple	place	only yago
 single	temple	site	only opencyc
 single	temple	structure	only wordnet
 single	tent	container	only opencyc
@@ -6338,7 +6467,6 @@ single	thanks	procedure.act	only sumo
 single	theorist	animal	only sumo
 single	theorist	body	only sumo
 single	theorist	human	only sumo
-single	theorist	human-body	only sumo
 single	theorist	mammal	only sumo
 single	theorist	vertebrate	only sumo
 single	therapy	accomplishment	only sumo
@@ -6357,6 +6485,7 @@ single	throne	information	only yago
 single	throne	physical-object	only wordnet
 single	ticket	condition.communication	only sumo
 single	ticket	device	only opencyc
+single	ticket	image	only opencyc
 single	ticket	indication	only sumo
 single	ticket	line.communication	only sumo
 single	ticket	physical-object	only sumo
@@ -6370,6 +6499,7 @@ single	ticket.communication	communication	only sumo
 single	ticket.communication	device	only opencyc
 single	ticket.communication	document	only wordnet
 single	ticket.communication	event	only sumo
+single	ticket.communication	image	only opencyc
 single	ticket.communication	procedure.act	only sumo
 single	tiger	agent	only sumo
 single	tiger	body	only sumo
@@ -6392,6 +6522,7 @@ single	title.communication	condition.communication	only sumo
 single	title.communication	indication	only sumo
 single	title.communication	physical-object	only sumo
 single	token	artifact	only opencyc
+single	token	image	only opencyc
 single	token	indication	only sumo
 single	token	physical-object	only sumo
 single	token	signal	only wordnet
@@ -6436,6 +6567,7 @@ single	tower	physical-object	only wordnet
 single	tower	site	only opencyc
 single	town	agent	only sumo
 single	town	city	only sumo
+single	town	land	only sumo
 single	town	landscape	only sumo
 single	town	physical-object	only wordnet
 single	town	region	only sumo
@@ -6470,6 +6602,7 @@ single	tragedy	physical-object	only sumo
 single	tragedy	text	only sumo
 single	train-ticket	condition.communication	only sumo
 single	train-ticket	device	only opencyc
+single	train-ticket	image	only opencyc
 single	train-ticket	indication	only sumo
 single	train-ticket	line.communication	only sumo
 single	train-ticket	physical-object	only sumo
@@ -6484,6 +6617,7 @@ single	transaction	activity	only sumo
 single	transaction	procedure.act	only sumo
 single	transmission	mechanism	only wordnet
 single	transmission	physical-object	only wordnet
+single	transport	action	only opencyc
 single	transport	visit	only sumo
 single	trap	physical-object	only wordnet
 single	tray	physical-object	only wordnet
@@ -6537,10 +6671,11 @@ single	trust	structure	only opencyc
 single	trust	team	only sumo
 single	tub	physical-object	only wordnet
 single	tune	event	only sumo
-single	tune	information	only wordnet
 single	tune	information.communication	only opencyc
+single	tune	musical-composition	only opencyc
 single	tunnel	landform	only yago
 single	tunnel	physical-object	only wordnet
+single	tunnel	place	only yago
 single	tunnel	site	only opencyc
 single	turkey	animal	only wordnet
 single	turkey	organism	only wordnet
@@ -6563,6 +6698,7 @@ single	union	team	only sumo
 single	university	academy	only opencyc
 single	university	association.group	only sumo
 single	university	collection	only sumo
+single	university	place	only yago
 single	university	school.artifact	only opencyc
 single	university	structure	only opencyc
 single	university	team	only sumo
@@ -6571,6 +6707,7 @@ single	university.group	agent	only sumo
 single	university.group	association.group	only sumo
 single	university.group	collection	only sumo
 single	university.group	institution	only opencyc
+single	university.group	place	only yago
 single	university.group	school.artifact	only opencyc
 single	university.group	structure	only opencyc
 single	university.group	team	only sumo
@@ -6591,7 +6728,6 @@ single	vein	container	only opencyc
 single	vein	line.communication	only opencyc
 single	vein	physical-object	only sumo
 single	vein	structure	only opencyc
-single	vein	watercraft	only schemaorg
 single	velvet	device	only opencyc
 single	velvet	physical-object	only wordnet
 single	velvet	surface	only opencyc
@@ -6627,7 +6763,6 @@ single	vicinity	physical-object	only wordnet
 single	vicinity	region	only sumo
 single	victim	animal	only sumo
 single	victim	body	only sumo
-single	victim	human-body	only sumo
 single	victim	structure	only opencyc
 single	video	artifact	only wordnet
 single	video	device	only wordnet
@@ -6637,12 +6772,15 @@ single	villa	container	only opencyc
 single	villa	device	only opencyc
 single	villa	dwelling	only wordnet
 single	villa	home	only opencyc
+single	villa	house.group	only yago
 single	villa	housing	only wordnet
 single	villa	physical-object	only wordnet
+single	villa	place	only yago
 single	villa	site	only opencyc
 single	villa	structure	only wordnet
 single	village	agent	only sumo
 single	village	group	only wordnet
+single	village	land	only sumo
 single	village	landscape	only sumo
 single	village	region	only sumo
 single	village	settlement	only claude
@@ -6686,11 +6824,11 @@ single	visitor	physical-object	only wordnet
 single	visitor	structure	only opencyc
 single	visitor	vertebrate	only opencyc
 single	vitamin	material	only sumo
+single	void	information	only opencyc
 single	void	information.communication	only opencyc
 single	void	physical-object	only wordnet
 single	void	region	only sumo
 single	volcano	physical-object	only wordnet
-single	volcano	place	only schemaorg
 single	volcano	site	only opencyc
 single	volunteer	agent	only wordnet
 single	volunteer	human	only opencyc
@@ -6768,7 +6906,6 @@ single	water-faucet	container	only opencyc
 single	water-faucet	physical-object	only wordnet
 single	watercraft	container	only opencyc
 single	watercraft	machine	only claude
-single	waterfall	place	only schemaorg
 single	waterfall	site	only opencyc
 single	weapon	physical-object	only wordnet
 single	web-page	document	only claude
@@ -6798,6 +6935,7 @@ single	well	body-of-water	only yago
 single	well	device	only opencyc
 single	well	landform	only yago
 single	well	physical-object	only wordnet
+single	well	place	only yago
 single	well	site	only opencyc
 single	whale	agent	only sumo
 single	whale	body	only sumo
@@ -6814,10 +6952,10 @@ single	widow	adult	only wordnet
 single	widow	animal	only sumo
 single	widow	body	only sumo
 single	widow	human	only sumo
-single	widow	human-body	only sumo
 single	widow	lady	only sumo
 single	widow	mammal	only sumo
 single	widow	vertebrate	only sumo
+single	wilderness	land	only sumo
 single	wilderness	landscape	only sumo
 single	wilderness	physical-object	only wordnet
 single	wilderness	region	only sumo
@@ -6826,6 +6964,7 @@ single	wildlife	agent	only sumo
 single	wildlife	organism	only sumo
 single	will	condition.communication	only sumo
 single	will	document	only wordnet
+single	will	image	only opencyc
 single	will	indication	only sumo
 single	will	line.communication	only sumo
 single	will	physical-object	only sumo
@@ -6833,7 +6972,6 @@ single	will	text	only sumo
 single	wimp	animal	only sumo
 single	wimp	body	only sumo
 single	wimp	human	only sumo
-single	wimp	human-body	only sumo
 single	wimp	mammal	only sumo
 single	wimp	vertebrate	only sumo
 single	window	physical-object	only wordnet
@@ -6862,14 +7000,12 @@ single	withdrawal	transaction	only opencyc
 single	witness	animal	only sumo
 single	witness	body	only sumo
 single	witness	human	only sumo
-single	witness	human-body	only sumo
 single	witness	mammal	only sumo
 single	witness	vertebrate	only sumo
 single	wolf	agent	only sumo
 single	wolf	body	only sumo
 single	wolf	structure	only opencyc
 single	woman	body	only sumo
-single	woman	human-body	only sumo
 single	woman	structure	only opencyc
 single	wood	physical-object	only sumo
 single	wool	physical-object	only wordnet
@@ -6892,6 +7028,16 @@ single	worker	structure	only opencyc
 single	worker	vertebrate	only opencyc
 single	workplace	physical-object	only wordnet
 single	workplace	region	only sumo
+single	workshop	action	only opencyc
+single	workshop	artifact	only sumo
+single	workshop	conference	only opencyc
+single	workshop	convention	only opencyc
+single	workshop	event	only opencyc
+single	workshop	meeting	only opencyc
+single	workshop	meeting.act	only opencyc
+single	workshop	meeting.event	only opencyc
+single	workshop	physical-object	only wordnet
+single	workshop	workplace	only wordnet
 single	workshop.act	accomplishment	only sumo
 single	workshop.act	action	only opencyc
 single	workshop.act	conference	only opencyc
@@ -6899,10 +7045,12 @@ single	workshop.act	convention	only opencyc
 single	workshop.act	meeting	only opencyc
 single	workshop.act	meeting.act	only opencyc
 single	workshop.act	meeting.event	only opencyc
+single	workshop.act	place	only yago
 single	workshop.act	procedure.act	only sumo
 single	world-power	agent	only sumo
 single	world-power	country.location	only opencyc
 single	world-power	group	only wordnet
+single	world-power	land	only sumo
 single	world-power	landscape	only sumo
 single	world-power	organization	only wordnet
 single	world-power	place	only sumo
@@ -6918,7 +7066,6 @@ single	worm.communication	software	only wordnet
 single	wrongdoer	animal	only sumo
 single	wrongdoer	body	only sumo
 single	wrongdoer	human	only sumo
-single	wrongdoer	human-body	only sumo
 single	wrongdoer	mammal	only sumo
 single	wrongdoer	vertebrate	only sumo
 single	yacht	container	only opencyc
@@ -6970,13 +7117,12 @@ unplaced	agreement	accomplishment act activity cooperation event phenomenon proc
 unplaced	aid	accomplishment acquisition act activity event gift phenomenon procedure.act	no accepted parent reaches a root
 unplaced	aids	condition.state disease event illness situation	no accepted parent reaches a root
 unplaced	aim	cognition goal	no accepted parent reaches a root
-unplaced	airport	artifact facility physical-object place	no accepted parent reaches a root
 unplaced	alarm.feeling	emotion fear	no accepted parent reaches a root
 unplaced	album.communication	artifact physical-object	no accepted parent reaches a root
 unplaced	alimony	accomplishment act activity event outgo phenomenon procedure.act volition	no accepted parent reaches a root
 unplaced	alliance	organization structure system	no accepted parent reaches a root
-unplaced	allotment	information.communication norm	no accepted parent reaches a root
-unplaced	allowance	information.communication norm	no accepted parent reaches a root
+unplaced	allotment	information information.communication norm	no accepted parent reaches a root
+unplaced	allowance	information information.communication norm	no accepted parent reaches a root
 unplaced	ally.person	agent monetary-value organism peer person physical-object property	no accepted parent reaches a root
 unplaced	altitude	distance placement	no accepted parent reaches a root
 unplaced	alumnus	agent monetary-value organism person physical-object property scholar	no accepted parent reaches a root
@@ -6997,14 +7143,13 @@ unplaced	anxiety	condition.state	no accepted parent reaches a root
 unplaced	apathy	monetary-value property	no accepted parent reaches a root
 unplaced	appeal	amateur appearance atmosphere.state circumstance convention.cognition crowd culture.group custom	no accepted parent reaches a root
 unplaced	appearance	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
-unplaced	appendix	information.communication phenomenon physical-object universe	no accepted parent reaches a root
+unplaced	appendix	information information.communication phenomenon physical-object universe	no accepted parent reaches a root
 unplaced	appetite	desire monetary-value property	no accepted parent reaches a root
 unplaced	apple	fruit fruit.plant natural-object part physical-object produce structure substance	no accepted parent reaches a root
 unplaced	architect	adult agent human mammal organism person physical-object structure	no accepted parent reaches a root
 unplaced	archive	agent artifact association.group collection facility group organization phenomenon	no accepted parent reaches a root
 unplaced	ardor	emotional-state monetary-value passion property	no accepted parent reaches a root
 unplaced	area	magnitude quantity vector	no accepted parent reaches a root
-unplaced	arena	artifact development phenomenon physical-object place region.location universe	no accepted parent reaches a root
 unplaced	arm	limb part phenomenon physical-object structure system universe	no accepted parent reaches a root
 unplaced	art	field-of-study	no accepted parent reaches a root
 unplaced	art.act	act activity artifact creation event indication information phenomenon	no accepted parent reaches a root
@@ -7038,17 +7183,17 @@ unplaced	balance.state	equilibrium situation	no accepted parent reaches a root
 unplaced	ball.group.2	collection group phenomenon universe	no accepted parent reaches a root
 unplaced	ball.shape		no accepted parent reaches a root
 unplaced	banana	fruit fruit.plant natural-object part physical-object produce structure substance	no accepted parent reaches a root
-unplaced	bank	organization physical-object site slope	no accepted parent reaches a root
+unplaced	bank	organization physical-object place site slope	no accepted parent reaches a root
 unplaced	bankruptcy.state	condition.state monetary-value property	no accepted parent reaches a root
 unplaced	banquet.food	action event food meal situation substance	no accepted parent reaches a root
-unplaced	bar	artifact chemical-element material organization phenomenon physical-object substance universe	no accepted parent reaches a root
+unplaced	bar	artifact chemical-element material organization phenomenon physical-object place substance	no accepted parent reaches a root
 unplaced	bargain	action event information sense.communication situation	no accepted parent reaches a root
 unplaced	barrel.shape	artifact container device monetary-value property	no accepted parent reaches a root
 unplaced	barrier	artifact development natural-object phenomenon physical-object universe	no accepted parent reaches a root
 unplaced	base.artifact	artifact bottom.location phenomenon physical-object place region side.location surface	no accepted parent reaches a root
 unplaced	base.shape		no accepted parent reaches a root
 unplaced	baseball	act activity artifact device event game sport	no accepted parent reaches a root
-unplaced	basis	cognition concept hypothesis idea information.communication sense.communication	no accepted parent reaches a root
+unplaced	basis	cognition concept hypothesis idea information information.communication sense.communication	no accepted parent reaches a root
 unplaced	basketball	act activity artifact device event game sport	no accepted parent reaches a root
 unplaced	batch	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
 unplaced	beak	passage phenomenon physical-object universe	no accepted parent reaches a root
@@ -7118,16 +7263,16 @@ unplaced	capital.possession		no accepted parent reaches a root
 unplaced	capitalism	economy.group group system	no accepted parent reaches a root
 unplaced	caprice	desire emotional-state monetary-value property	no accepted parent reaches a root
 unplaced	captain	agent organism person physical-object worker	no accepted parent reaches a root
-unplaced	card.communication	artifact correspondence image.cognition information mail message	no accepted parent reaches a root
+unplaced	card.communication	artifact correspondence image image.cognition information mail message	no accepted parent reaches a root
 unplaced	career	act activity event monetary-value occupation property	no accepted parent reaches a root
 unplaced	carriage	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
-unplaced	case.event	event information.communication	no accepted parent reaches a root
+unplaced	case.event	event information information.communication	no accepted parent reaches a root
 unplaced	cassette	artifact container physical-object	no accepted parent reaches a root
 unplaced	catalog	artifact book physical-object publication	no accepted parent reaches a root
 unplaced	catch	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
 unplaced	category	cognition concept idea	no accepted parent reaches a root
 unplaced	caution	cognition monetary-value property	no accepted parent reaches a root
-unplaced	cave	landform physical-object site	no accepted parent reaches a root
+unplaced	cave	landform physical-object place site	no accepted parent reaches a root
 unplaced	ceiling.communication	argumentation artifact cognition part product product.phenomenon quantity thinking	no accepted parent reaches a root
 unplaced	center	agent artifact association.group building collection group organization phenomenon	no accepted parent reaches a root
 unplaced	century	time-period	no accepted parent reaches a root
@@ -7156,7 +7301,7 @@ unplaced	circumstance	cognition convention.cognition monetary-value property	no 
 unplaced	civilization	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
 unplaced	clash	accomplishment act activity conflict.2 conflict.state contest contest.act event	no accepted parent reaches a root
 unplaced	clerk	agent employee organism person physical-object worker	no accepted parent reaches a root
-unplaced	cliff	landform physical-object site slope	no accepted parent reaches a root
+unplaced	cliff	landform physical-object place site slope	no accepted parent reaches a root
 unplaced	climate	condition.state monetary-value property	no accepted parent reaches a root
 unplaced	clock-time	cognition quantity	no accepted parent reaches a root
 unplaced	cloud	material natural-event phenomenon substance universe	no accepted parent reaches a root
@@ -7170,10 +7315,10 @@ unplaced	coldness	agent quantity temperature	no accepted parent reaches a root
 unplaced	colleague	agent monetary-value organism peer person physical-object property	no accepted parent reaches a root
 unplaced	colon	container intestine line line.cognition line.communication line.group organ.body part	no accepted parent reaches a root
 unplaced	color	amateur appearance atmosphere.state circumstance convention.cognition crowd culture.group custom	no accepted parent reaches a root
-unplaced	column.group	article group information.communication product product.phenomenon publication	no accepted parent reaches a root
+unplaced	column.group	article group information information.communication product product.phenomenon publication	no accepted parent reaches a root
 unplaced	coma	condition.state event illness situation	no accepted parent reaches a root
 unplaced	combination	collection event group phenomenon	no accepted parent reaches a root
-unplaced	comet	celestial-body natural-object phenomenon physical-object universe	no accepted parent reaches a root
+unplaced	comet	celestial-body natural-object phenomenon physical-object place universe	no accepted parent reaches a root
 unplaced	comfort	condition.state emotional-state monetary-value property	no accepted parent reaches a root
 unplaced	command	monetary-value property	no accepted parent reaches a root
 unplaced	commission	fee outgo quantity	no accepted parent reaches a root
@@ -7187,7 +7332,7 @@ unplaced	competence	ability amateur atmosphere.state circumstance convention.cog
 unplaced	complication	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
 unplaced	concentration		no accepted parent reaches a root
 unplaced	concentration.cognition	attention cognition event perception phenomenon	no accepted parent reaches a root
-unplaced	concept	cognition idea information.communication sense.communication	no accepted parent reaches a root
+unplaced	concept	cognition idea information information.communication sense.communication	no accepted parent reaches a root
 unplaced	conception	event phenomenon	no accepted parent reaches a root
 unplaced	concern	emotion	no accepted parent reaches a root
 unplaced	concern.cognition	condition.state emotion sense.communication	no accepted parent reaches a root
@@ -7204,14 +7349,14 @@ unplaced	congress	event group legislature	no accepted parent reaches a root
 unplaced	congressman	agent leader organism person physical-object	no accepted parent reaches a root
 unplaced	connection.person	acquaintance.person agent monetary-value organism person physical-object property	no accepted parent reaches a root
 unplaced	connection.state	monetary-value property	no accepted parent reaches a root
-unplaced	conscience	context context.communication information.communication monetary-value motivation property	no accepted parent reaches a root
+unplaced	conscience	context context.communication information information.communication monetary-value motivation property	no accepted parent reaches a root
 unplaced	consciousness	condition.state event monetary-value property situation	no accepted parent reaches a root
 unplaced	consequence	event phenomenon	no accepted parent reaches a root
 unplaced	consideration	good monetary-value property	no accepted parent reaches a root
 unplaced	consideration.cognition	accomplishment act activity cognition event phenomenon procedure.act thinking	no accepted parent reaches a root
 unplaced	consolation	act activity aid.act event	no accepted parent reaches a root
 unplaced	conspiracy	cognition idea measure organization plan plot.cognition routine sense.communication	no accepted parent reaches a root
-unplaced	constellation	celestial-body natural-object phenomenon physical-object site universe	no accepted parent reaches a root
+unplaced	constellation	celestial-body natural-object phenomenon physical-object place site universe	no accepted parent reaches a root
 unplaced	constitution	information legislation monetary-value property	no accepted parent reaches a root
 unplaced	constraint	convention.cognition monetary-value property	no accepted parent reaches a root
 unplaced	consultation	accomplishment act activity event information meeting.act phenomenon procedure.act	no accepted parent reaches a root
@@ -7221,8 +7366,7 @@ unplaced	consumption.process	demand.process event phenomenon	no accepted parent 
 unplaced	contact.person	agent employment.act monetary-value organism person physical-object property representative	no accepted parent reaches a root
 unplaced	contamination	act event	no accepted parent reaches a root
 unplaced	contempt	emotion	no accepted parent reaches a root
-unplaced	context	information.communication sense.communication situation	no accepted parent reaches a root
-unplaced	context.communication	artifact condition.communication indication information information.communication line.communication part phenomenon	no accepted parent reaches a root
+unplaced	context	information information.communication sense.communication situation	no accepted parent reaches a root
 unplaced	contradiction	information sense.communication	no accepted parent reaches a root
 unplaced	contrary		no accepted parent reaches a root
 unplaced	contrast		no accepted parent reaches a root
@@ -7250,7 +7394,7 @@ unplaced	credibility	probability	no accepted parent reaches a root
 unplaced	credit	accomplishment act convention.cognition event monetary-value property	no accepted parent reaches a root
 unplaced	credit.possession	contract legal-document outgo sense.communication	no accepted parent reaches a root
 unplaced	credit.possession.2	quantity	no accepted parent reaches a root
-unplaced	creed	belief cognition doctrine information.communication sense.communication	no accepted parent reaches a root
+unplaced	creed	belief cognition doctrine information information.communication sense.communication	no accepted parent reaches a root
 unplaced	crevice	monetary-value property	no accepted parent reaches a root
 unplaced	crew	group organization	no accepted parent reaches a root
 unplaced	crime	act activity convention.cognition event monetary-value property	no accepted parent reaches a root
@@ -7271,11 +7415,10 @@ unplaced	curate	agent leader organism person physical-object	no accepted parent 
 unplaced	current	event natural-event phenomenon	no accepted parent reaches a root
 unplaced	curve	monetary-value property	no accepted parent reaches a root
 unplaced	curve.shape	curve monetary-value property	no accepted parent reaches a root
-unplaced	custom	cognition convention.cognition information.communication monetary-value property	no accepted parent reaches a root
+unplaced	custom	cognition convention.cognition information information.communication monetary-value property	no accepted parent reaches a root
 unplaced	cut.possession	artifact site	no accepted parent reaches a root
 unplaced	cut.state	artifact condition.state event injury phenomenon site wound	no accepted parent reaches a root
 unplaced	cylinder		no accepted parent reaches a root
-unplaced	dairy	artifact business development farm institution organization phenomenon physical-object	no accepted parent reaches a root
 unplaced	damage	amateur atmosphere.state change circumstance convention.cognition crowd culture.group custom	no accepted parent reaches a root
 unplaced	danger	condition.state convention.cognition monetary-value property	no accepted parent reaches a root
 unplaced	dark		no accepted parent reaches a root
@@ -7317,7 +7460,6 @@ unplaced	depressive-disorder	condition.state	no accepted parent reaches a root
 unplaced	deputy	agent agent.person monetary-value organism person physical-object property representative	no accepted parent reaches a root
 unplaced	descent.object	land landscape phenomenon physical-object place region slope universe	no accepted parent reaches a root
 unplaced	descent.relation	kinship monetary-value property	no accepted parent reaches a root
-unplaced	desert	group physical-object place region.location	no accepted parent reaches a root
 unplaced	deservingness	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
 unplaced	design	artifact drawing.artifact information phenomenon physical-object universe	no accepted parent reaches a root
 unplaced	design.cognition	cognition	no accepted parent reaches a root
@@ -7325,7 +7467,7 @@ unplaced	desire	emotion	no accepted parent reaches a root
 unplaced	despair	emotion grief misery sorrow	no accepted parent reaches a root
 unplaced	dessert	food product product.phenomenon substance	no accepted parent reaches a root
 unplaced	detail	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
-unplaced	detail.cognition	cognition event image.cognition information light line.communication phenomenon remark	no accepted parent reaches a root
+unplaced	detail.cognition	cognition event image image.cognition information light line.communication phenomenon	no accepted parent reaches a root
 unplaced	detective	agent human mammal organism person physical-object policeman structure	no accepted parent reaches a root
 unplaced	detention	monetary-value property	no accepted parent reaches a root
 unplaced	development	artifact district event phenomenon physical-object place region.location situation	no accepted parent reaches a root
@@ -7441,7 +7583,6 @@ unplaced	estimate.cognition	attitude cognition	no accepted parent reaches a root
 unplaced	europe		no accepted parent reaches a root
 unplaced	evening	quantity time-period	no accepted parent reaches a root
 unplaced	event-ticket	document information ticket	no accepted parent reaches a root
-unplaced	evidence	accomplishment act activity cognition event information information.communication phenomenon	no accepted parent reaches a root
 unplaced	evolution	event phenomenon	no accepted parent reaches a root
 unplaced	examination.communication	act artifact communication condition.communication device event indication information	no accepted parent reaches a root
 unplaced	example	cognition	no accepted parent reaches a root
@@ -7452,7 +7593,7 @@ unplaced	exemplar	amateur atmosphere.state circumstance cognition convention.cog
 unplaced	exemption	act convention.cognition event monetary-value property release	no accepted parent reaches a root
 unplaced	exercise	act activity event labor work	no accepted parent reaches a root
 unplaced	exit	artifact physical-object	no accepted parent reaches a root
-unplaced	expectation	belief cognition context context.communication information.communication sense.communication	no accepted parent reaches a root
+unplaced	expectation	belief cognition context context.communication information information.communication sense.communication	no accepted parent reaches a root
 unplaced	experience	accomplishment act activity cognition education.cognition event information phenomenon	no accepted parent reaches a root
 unplaced	expertness	sense.communication	no accepted parent reaches a root
 unplaced	explanation	information sense.communication	no accepted parent reaches a root
@@ -7472,7 +7613,6 @@ unplaced	fall	quantity season time-period	no accepted parent reaches a root
 unplaced	fame	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
 unplaced	fan	agent monetary-value organism person physical-object property	no accepted parent reaches a root
 unplaced	fare	outgo quantity	no accepted parent reaches a root
-unplaced	farm	artifact development phenomenon physical-object place structure system universe	no accepted parent reaches a root
 unplaced	fashion	artifact cognition phenomenon universe	no accepted parent reaches a root
 unplaced	father	agent ancestor monetary-value organism parent person physical-object property	no accepted parent reaches a root
 unplaced	fatness	monetary-value property	no accepted parent reaches a root
@@ -7506,7 +7646,7 @@ unplaced	fluctuation	amateur atmosphere.state circumstance convention.cognition 
 unplaced	fluid	monetary-value property state-of-matter substance	no accepted parent reaches a root
 unplaced	fog	cloud material natural-event phenomenon substance universe	no accepted parent reaches a root
 unplaced	fold	monetary-value property	no accepted parent reaches a root
-unplaced	folk	agent animal body group human human-body mammal organism	no accepted parent reaches a root
+unplaced	folk	agent animal body group human mammal organism people	no accepted parent reaches a root
 unplaced	folk-music	information music	no accepted parent reaches a root
 unplaced	foot	part phenomenon physical-object structure system universe	no accepted parent reaches a root
 unplaced	foot.quantity	part structure system	no accepted parent reaches a root
@@ -7516,9 +7656,9 @@ unplaced	foray	act activity attack event operation.act	no accepted parent reache
 unplaced	force	degree quantity vector	no accepted parent reaches a root
 unplaced	foreigner	agent monetary-value organism person physical-object property	no accepted parent reaches a root
 unplaced	foreman	agent employment.act human leader mammal monetary-value organism person	no accepted parent reaches a root
-unplaced	forest	countryside environment group land obstacle physical-object site	no accepted parent reaches a root
-unplaced	form.cognition	cognition information.communication monetary-value property	no accepted parent reaches a root
-unplaced	form.group	agent group information.communication organism phenomenon physical-object species universe	no accepted parent reaches a root
+unplaced	forest	countryside environment group land obstacle physical-object place site	no accepted parent reaches a root
+unplaced	form.cognition	cognition information information.communication monetary-value property	no accepted parent reaches a root
+unplaced	form.group	agent group information information.communication organism phenomenon physical-object species	no accepted parent reaches a root
 unplaced	formal-science	field-of-study science	no accepted parent reaches a root
 unplaced	format	accomplishment act activity event information information.communication phenomenon procedure.act	no accepted parent reaches a root
 unplaced	formation	artifact phenomenon placement universe	no accepted parent reaches a root
@@ -7550,7 +7690,7 @@ unplaced	future		no accepted parent reaches a root
 unplaced	gallon		no accepted parent reaches a root
 unplaced	gap	artifact physical-object	no accepted parent reaches a root
 unplaced	garbage	material part phenomenon substance universe waste	no accepted parent reaches a root
-unplaced	garden	agent artifact collection group organism phenomenon physical-object plant	no accepted parent reaches a root
+unplaced	garden	agent artifact collection group organism phenomenon physical-object place	no accepted parent reaches a root
 unplaced	garlic	food substance	no accepted parent reaches a root
 unplaced	gas	natural-event phenomenon state-of-matter substance	no accepted parent reaches a root
 unplaced	gem	mineral substance	no accepted parent reaches a root
@@ -7558,7 +7698,7 @@ unplaced	gene	compound group material molecule phenomenon sequence substance uni
 unplaced	general	agent organism person physical-object worker	no accepted parent reaches a root
 unplaced	ghostwriter	agent organism person physical-object writer	no accepted parent reaches a root
 unplaced	gift	accomplishment acquisition act activity event phenomenon procedure.act volition	no accepted parent reaches a root
-unplaced	glacier	body-of-water environment ice landform physical-object site	no accepted parent reaches a root
+unplaced	glacier	body-of-water environment ice landform physical-object place site	no accepted parent reaches a root
 unplaced	glass	artifact container physical-object product product.phenomenon	no accepted parent reaches a root
 unplaced	glimpse	cognition event perception phenomenon view	no accepted parent reaches a root
 unplaced	gloom	amateur atmosphere.state circumstance condition.state convention.cognition crowd culture.group custom	no accepted parent reaches a root
@@ -7574,7 +7714,7 @@ unplaced	grade.state	monetary-value property rank status	no accepted parent reac
 unplaced	grain.object	material part phenomenon substance universe	no accepted parent reaches a root
 unplaced	grandfather	agent ancestor monetary-value organism person physical-object property relative	no accepted parent reaches a root
 unplaced	grandma	agent ancestor monetary-value organism person physical-object property relative	no accepted parent reaches a root
-unplaced	grant	accomplishment acquisition act activity aid event gift information.communication	no accepted parent reaches a root
+unplaced	grant	accomplishment acquisition act activity aid event gift information	no accepted parent reaches a root
 unplaced	gratuity	outgo quantity	no accepted parent reaches a root
 unplaced	gravel	material part site substance	no accepted parent reaches a root
 unplaced	graveness	inclination mentality monetary-value property trait	no accepted parent reaches a root
@@ -7592,7 +7732,7 @@ unplaced	guard.person	agent athlete employment.act human mammal monetary-value o
 unplaced	guess	information opinion.communication sense.communication	no accepted parent reaches a root
 unplaced	guest	agent monetary-value organism person physical-object property visitor	no accepted parent reaches a root
 unplaced	guide	agent information leader monetary-value organism person physical-object property	no accepted parent reaches a root
-unplaced	guidepost	artifact cognition concept convention.cognition idea image.cognition monetary-value property	no accepted parent reaches a root
+unplaced	guidepost	artifact cognition concept convention.cognition idea image image.cognition monetary-value	no accepted parent reaches a root
 unplaced	guilt	amateur atmosphere.state circumstance condition.state convention.cognition crowd culture.group custom	no accepted parent reaches a root
 unplaced	habit	amateur artifact atmosphere.state circumstance clothing cognition convention.cognition crowd	no accepted parent reaches a root
 unplaced	hand.body	part phenomenon physical-object structure system universe	no accepted parent reaches a root
@@ -7620,15 +7760,15 @@ unplaced	hemisphere.location	physical-object place region.location	no accepted p
 unplaced	herb	food fruit.plant phenomenon physical-object structure substance system universe	no accepted parent reaches a root
 unplaced	here-and-now	present.time quantity	no accepted parent reaches a root
 unplaced	hero	agent convention.cognition human leader mammal monetary-value organism person	no accepted parent reaches a root
-unplaced	heroin	agent artifact drug medicine.act medicine.artifact substance	no accepted parent reaches a root
+unplaced	heroin	agent artifact drug medicine medicine.act medicine.artifact substance	no accepted parent reaches a root
 unplaced	hideaway	artifact phenomenon physical-object place region structure universe	no accepted parent reaches a root
 unplaced	highlight	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
-unplaced	hill	landform physical-object site	no accepted parent reaches a root
+unplaced	hill	landform physical-object place site	no accepted parent reaches a root
 unplaced	hindrance	artifact phenomenon physical-object structure universe	no accepted parent reaches a root
 unplaced	hip	part phenomenon physical-object structure system universe	no accepted parent reaches a root
 unplaced	hired-hand	agent employee laborer organism person physical-object worker	no accepted parent reaches a root
 unplaced	historic-period	era quantity time-period	no accepted parent reaches a root
-unplaced	history.time	event information.communication narrative past	no accepted parent reaches a root
+unplaced	history.time	event information information.communication narrative past	no accepted parent reaches a root
 unplaced	hole	physical-object place space.shape	no accepted parent reaches a root
 unplaced	honor	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
 unplaced	honor.state	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
@@ -7639,14 +7779,14 @@ unplaced	hostage	agent monetary-value organism person physical-object prisoner p
 unplaced	hostility	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
 unplaced	hour		no accepted parent reaches a root
 unplaced	hour.time	clock-time cognition quantity	no accepted parent reaches a root
-unplaced	house.group	artifact container device group home legislature place site	no accepted parent reaches a root
 unplaced	housewife	adult agent organism person physical-object relative spouse wife	no accepted parent reaches a root
-unplaced	humanness	agent animal body human human-body mammal organism person	no accepted parent reaches a root
+unplaced	human-body	body natural-object physical-object	no accepted parent reaches a root
+unplaced	humanness	agent animal body human mammal organism person phenomenon	no accepted parent reaches a root
 unplaced	humor	inclination mentality monetary-value property trait	no accepted parent reaches a root
 unplaced	husband	agent monetary-value organism person physical-object property relative spouse	no accepted parent reaches a root
-unplaced	hypothesis	cognition concept context context.communication idea information.communication sense.communication	no accepted parent reaches a root
+unplaced	hypothesis	cognition concept context context.communication idea information information.communication sense.communication	no accepted parent reaches a root
 unplaced	ice-cream	artifact dairy-product dessert food product product.phenomenon substance	no accepted parent reaches a root
-unplaced	idea	cognition information.communication sense.communication	no accepted parent reaches a root
+unplaced	idea	cognition information information.communication sense.communication	no accepted parent reaches a root
 unplaced	ideal	agent amateur atmosphere.state circumstance convention.cognition crowd culture.group custom	no accepted parent reaches a root
 unplaced	identity	inclination mentality monetary-value personality property trait	no accepted parent reaches a root
 unplaced	identity.attribute	monetary-value property	no accepted parent reaches a root
@@ -7714,11 +7854,9 @@ unplaced	jockey	agent athlete employment.act human mammal monetary-value organis
 unplaced	joint.body	phenomenon physical-object universe	no accepted parent reaches a root
 unplaced	joke	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
 unplaced	joy	artifact emotion	no accepted parent reaches a root
-unplaced	judgment.cognition	accomplishment act activity cognition event information information.communication norm	no accepted parent reaches a root
-unplaced	juice	drink food substance	no accepted parent reaches a root
+unplaced	juice	food substance	no accepted parent reaches a root
 unplaced	junction	phenomenon physical-object place topographic-point universe	no accepted parent reaches a root
 unplaced	justice	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
-unplaced	justification	accomplishment act activity circumstance cognition event information information.communication	no accepted parent reaches a root
 unplaced	key.communication	event information phenomenon	no accepted parent reaches a root
 unplaced	kick	cognition monetary-value property	no accepted parent reaches a root
 unplaced	kid	animal goat mammal organism physical-object vertebrate	no accepted parent reaches a root
@@ -7733,13 +7871,12 @@ unplaced	koran	artifact book component device indication information mechanism p
 unplaced	labor.group	action class employment.act event group monetary-value people property	no accepted parent reaches a root
 unplaced	laborer	agent employee employment.act monetary-value organism person physical-object property	no accepted parent reaches a root
 unplaced	lack	condition.state monetary-value need property	no accepted parent reaches a root
-unplaced	land	landscape phenomenon physical-object place region universe	no accepted parent reaches a root
 unplaced	landlord	agent employment.act human landowner mammal monetary-value organism person	no accepted parent reaches a root
 unplaced	landowner	agent monetary-value organism person physical-object property	no accepted parent reaches a root
 unplaced	lap	convention.cognition limb monetary-value part property structure system thigh	no accepted parent reaches a root
 unplaced	latent-hostility	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
-unplaced	law.cognition	cognition concept idea information.communication norm	no accepted parent reaches a root
-unplaced	law.group	collection group information.communication norm	no accepted parent reaches a root
+unplaced	law.cognition	cognition concept idea information information.communication norm	no accepted parent reaches a root
+unplaced	law.group	collection group information information.communication norm	no accepted parent reaches a root
 unplaced	layout	cognition design.cognition	no accepted parent reaches a root
 unplaced	lead	act activity employment.act event leadership metal mineral monetary-value	no accepted parent reaches a root
 unplaced	lead.attribute	amateur asset atmosphere.state circumstance convention.cognition crowd culture.group custom	no accepted parent reaches a root
@@ -7811,7 +7948,7 @@ unplaced	marriage	act activity contract event legal-document practice ritual sen
 unplaced	marriage.group	contract group kin legal-document sense.communication	no accepted parent reaches a root
 unplaced	marriage.state	contract legal-document sense.communication status	no accepted parent reaches a root
 unplaced	mars		no accepted parent reaches a root
-unplaced	marsh	body-of-water environment landform physical-object site	no accepted parent reaches a root
+unplaced	marsh	body-of-water environment landform physical-object place site	no accepted parent reaches a root
 unplaced	mass	natural-object phenomenon physical-object universe	no accepted parent reaches a root
 unplaced	master-of-ceremonies	agent monetary-value organism person physical-object property	no accepted parent reaches a root
 unplaced	matrix	group indication information phenomenon physical-object universe	no accepted parent reaches a root
@@ -7824,12 +7961,11 @@ unplaced	measure	act event sense.communication	no accepted parent reaches a root
 unplaced	medicine.act	act activity event monetary-value occupation profession property	no accepted parent reaches a root
 unplaced	medium.person	agent monetary-value organism person physical-object property	no accepted parent reaches a root
 unplaced	medium.state	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
-unplaced	membership	agent animal body human human-body mammal organism person	no accepted parent reaches a root
-unplaced	memory.cognition	cognition context context.communication information.communication monetary-value property	no accepted parent reaches a root
-unplaced	memory.cognition.2	cognition context context.communication event information.communication phenomenon	no accepted parent reaches a root
+unplaced	membership	agent animal body human mammal organism person phenomenon	no accepted parent reaches a root
+unplaced	memory.cognition	cognition context context.communication information information.communication monetary-value property	no accepted parent reaches a root
+unplaced	memory.cognition.2	cognition context context.communication event information information.communication phenomenon	no accepted parent reaches a root
 unplaced	menace	agent amateur atmosphere.state circumstance convention.cognition crowd culture.group custom	no accepted parent reaches a root
 unplaced	mentality	attitude cognition monetary-value property	no accepted parent reaches a root
-unplaced	menu.food	food information information.communication substance	no accepted parent reaches a root
 unplaced	mercantile-establishment	agent artifact association.group business collection company firm group	no accepted parent reaches a root
 unplaced	merchant	agent employment.act monetary-value organism person physical-object property	no accepted parent reaches a root
 unplaced	method	cognition measure routine sense.communication	no accepted parent reaches a root
@@ -7848,14 +7984,14 @@ unplaced	miracle	amateur atmosphere.state circumstance convention.cognition crow
 unplaced	misery	adversity amateur atmosphere.state circumstance convention.cognition crowd culture.group custom	no accepted parent reaches a root
 unplaced	misgiving	condition.state doubt.cognition monetary-value property	no accepted parent reaches a root
 unplaced	mist	cloud fog material natural-event phenomenon substance universe	no accepted parent reaches a root
-unplaced	model.cognition	artifact cognition concept hypothesis idea image.cognition sense.communication	no accepted parent reaches a root
-unplaced	model.person	agent artifact assistant employment.act image.cognition monetary-value organism person	no accepted parent reaches a root
-unplaced	model.person.2	agent artifact image.cognition leader monetary-value organism person physical-object	no accepted parent reaches a root
+unplaced	model.cognition	artifact cognition concept hypothesis idea image image.cognition sense.communication	no accepted parent reaches a root
+unplaced	model.person	agent artifact assistant employment.act image image.cognition monetary-value organism	no accepted parent reaches a root
+unplaced	model.person.2	agent artifact image image.cognition leader monetary-value organism person	no accepted parent reaches a root
 unplaced	mole.attribute	appearance mammal phenomenon physical-object structure system universe vertebrate	no accepted parent reaches a root
 unplaced	molecule	compound material phenomenon substance universe	no accepted parent reaches a root
 unplaced	momentum	degree force quantity vector	no accepted parent reaches a root
 unplaced	momentum.attribute	quantity vector	no accepted parent reaches a root
-unplaced	monarchy	country.location group site structure system	no accepted parent reaches a root
+unplaced	monarchy	country country.location group site structure system	no accepted parent reaches a root
 unplaced	monetary-value	worth	no accepted parent reaches a root
 unplaced	money.possession	property.possession service service.act	no accepted parent reaches a root
 unplaced	monopoly	amateur atmosphere.state circumstance condition.state convention.cognition crowd culture.group custom	no accepted parent reaches a root
@@ -7863,7 +7999,7 @@ unplaced	moon		no accepted parent reaches a root
 unplaced	morale	condition.state monetary-value property	no accepted parent reaches a root
 unplaced	morning	quantity time-period	no accepted parent reaches a root
 unplaced	morsel	food phenomenon universe	no accepted parent reaches a root
-unplaced	mortgage	information.communication norm	no accepted parent reaches a root
+unplaced	mortgage	information information.communication norm	no accepted parent reaches a root
 unplaced	mother	agent ancestor human mammal monetary-value organism parent person	no accepted parent reaches a root
 unplaced	motivation	monetary-value property	no accepted parent reaches a root
 unplaced	motivation.state	condition.state monetary-value property	no accepted parent reaches a root
@@ -7875,7 +8011,6 @@ unplaced	mud	material part soil substance	no accepted parent reaches a root
 unplaced	multimedia	act artifact communication condition.communication event indication information line.communication	no accepted parent reaches a root
 unplaced	muscle	organ.body phenomenon physical-object universe	no accepted parent reaches a root
 unplaced	mushroom.plant	fungus organism physical-object structure system	no accepted parent reaches a root
-unplaced	musical-composition	information information.communication music sense.communication	no accepted parent reaches a root
 unplaced	mystery	amateur atmosphere.state circumstance condition.state convention.cognition crowd culture.group custom	no accepted parent reaches a root
 unplaced	nail.body	phenomenon physical-object universe	no accepted parent reaches a root
 unplaced	name	indication information part phenomenon physical-object universe	no accepted parent reaches a root
@@ -7897,16 +8032,16 @@ unplaced	network	artifact facility physical-object system	no accepted parent rea
 unplaced	network.group	collection group phenomenon system	no accepted parent reaches a root
 unplaced	newcomer	agent monetary-value organism person physical-object property	no accepted parent reaches a root
 unplaced	night	quantity time-period	no accepted parent reaches a root
-unplaced	nightmare	cognition dream event imagination information.communication phenomenon	no accepted parent reaches a root
+unplaced	nightmare	cognition dream event imagination information information.communication phenomenon	no accepted parent reaches a root
 unplaced	node		no accepted parent reaches a root
 unplaced	nonpayment	convention.cognition loss.possession monetary-value property	no accepted parent reaches a root
+unplaced	nonprofit	agent organization	no accepted parent reaches a root
 unplaced	nonsense	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
-unplaced	norm	convention.cognition information.communication monetary-value property standard	no accepted parent reaches a root
+unplaced	norm	convention.cognition information information.communication monetary-value property standard	no accepted parent reaches a root
 unplaced	north		no accepted parent reaches a root
 unplaced	nose	detector organ.body part phenomenon physical-object structure system universe	no accepted parent reaches a root
 unplaced	notice.communication	act event	no accepted parent reaches a root
 unplaced	notion	cognition concept idea sense.communication	no accepted parent reaches a root
-unplaced	noun	information information.communication line.communication part phenomenon universe word	no accepted parent reaches a root
 unplaced	nuance	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
 unplaced	number	magnitude quantity	no accepted parent reaches a root
 unplaced	nut	fruit.plant natural-object physical-object seed	no accepted parent reaches a root
@@ -7925,7 +8060,6 @@ unplaced	opportunity	amateur atmosphere.state circumstance convention.cognition 
 unplaced	opposition	group organization party.group	no accepted parent reaches a root
 unplaced	optimism	disposition inclination mentality monetary-value property trait	no accepted parent reaches a root
 unplaced	option	amateur atmosphere.state circumstance cognition contract convention.cognition crowd culture.group	no accepted parent reaches a root
-unplaced	option.possession	contract document information information.communication legal-document norm	no accepted parent reaches a root
 unplaced	orange		no accepted parent reaches a root
 unplaced	orange.food	fruit fruit.plant natural-object physical-object produce substance	no accepted parent reaches a root
 unplaced	orderliness	amateur atmosphere.state circumstance condition.state convention.cognition crowd culture.group custom	no accepted parent reaches a root
@@ -7934,7 +8068,7 @@ unplaced	organ.body	phenomenon physical-object universe	no accepted parent reach
 unplaced	orientation	monetary-value property	no accepted parent reaches a root
 unplaced	origin	monetary-value property	no accepted parent reaches a root
 unplaced	outgo	accomplishment act activity event phenomenon procedure.act volition	no accepted parent reaches a root
-unplaced	outline.location	information.communication physical-object place region	no accepted parent reaches a root
+unplaced	outline.location	information information.communication physical-object place region	no accepted parent reaches a root
 unplaced	output	quantity	no accepted parent reaches a root
 unplaced	ownership	monetary-value property	no accepted parent reaches a root
 unplaced	pace		no accepted parent reaches a root
@@ -7944,10 +8078,9 @@ unplaced	pain.feeling	emotional-state monetary-value property	no accepted parent
 unplaced	pan	agent animal artifact body container device group mammal	no accepted parent reaches a root
 unplaced	panic	emotion fear	no accepted parent reaches a root
 unplaced	paper.substance	material part product product.phenomenon substance	no accepted parent reaches a root
-unplaced	paradox	contradiction information information.communication	no accepted parent reaches a root
 unplaced	parameter	concept event factor	no accepted parent reaches a root
 unplaced	parent	agent ancestor monetary-value organism person physical-object property relative	no accepted parent reaches a root
-unplaced	parking	action event phenomenon place region situation universe	no accepted parent reaches a root
+unplaced	parking	action event phenomenon place region situation transport universe	no accepted parent reaches a root
 unplaced	parliament	group legislature organization structure system	no accepted parent reaches a root
 unplaced	paroxysm	event monetary-value property trouble.event	no accepted parent reaches a root
 unplaced	part		no accepted parent reaches a root
@@ -7971,8 +8104,6 @@ unplaced	pension	outgo quantity	no accepted parent reaches a root
 unplaced	percentage	number proportion.relation quantity ratio	no accepted parent reaches a root
 unplaced	perception	cognition event phenomenon	no accepted parent reaches a root
 unplaced	period.time	quantity	no accepted parent reaches a root
-unplaced	permission	information information.communication norm	no accepted parent reaches a root
-unplaced	personal-identification-number	identification indication information information.communication	no accepted parent reaches a root
 unplaced	personality	inclination mentality monetary-value property trait	no accepted parent reaches a root
 unplaced	phase	quantity time-period	no accepted parent reaches a root
 unplaced	phenomenon		no accepted parent reaches a root
@@ -7986,10 +8117,9 @@ unplaced	pitch.attribute	quantity	no accepted parent reaches a root
 unplaced	pity	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
 unplaced	placement	accomplishment act activity event phenomenon procedure.act volition	no accepted parent reaches a root
 unplaced	plaintiff	agent organism person physical-object	no accepted parent reaches a root
-unplaced	plan	cognition idea information.communication measure norm routine sense.communication	no accepted parent reaches a root
+unplaced	plan	cognition idea information information.communication measure norm routine sense.communication	no accepted parent reaches a root
 unplaced	pleasure	emotion	no accepted parent reaches a root
-unplaced	plot.cognition	cognition idea information.communication measure norm plan routine sense.communication	no accepted parent reaches a root
-unplaced	plot.communication	fiction information information.communication norm plan sense.communication	no accepted parent reaches a root
+unplaced	plot.cognition	cognition idea information information.communication measure norm plan routine	no accepted parent reaches a root
 unplaced	pneumonia	condition.state disease event illness situation	no accepted parent reaches a root
 unplaced	point	monetary-value property site	no accepted parent reaches a root
 unplaced	point-of-view	attitude cognition convention.cognition monetary-value position property	no accepted parent reaches a root
@@ -8002,7 +8132,6 @@ unplaced	poll.cognition	accomplishment act activity cognition event information 
 unplaced	pop	drink food part substance	no accepted parent reaches a root
 unplaced	populace	agent animal body group human mammal organism people	no accepted parent reaches a root
 unplaced	population	group people	no accepted parent reaches a root
-unplaced	portrait	artifact event image image.cognition information light phenomenon physical-object	no accepted parent reaches a root
 unplaced	position	attitude cognition sense.communication	no accepted parent reaches a root
 unplaced	position.cognition	attitude cognition sense.communication	no accepted parent reaches a root
 unplaced	possession	act activity event monetary-value property	no accepted parent reaches a root
@@ -8033,8 +8162,8 @@ unplaced	pressure.phenomenon	natural-event phenomenon	no accepted parent reaches
 unplaced	prestige	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
 unplaced	price	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
 unplaced	pride	confidence confidence.state emotion inclination mentality monetary-value property satisfaction	no accepted parent reaches a root
-unplaced	principle	cognition concept context context.communication idea information.communication law.cognition sense.communication	no accepted parent reaches a root
-unplaced	principle.cognition	cognition concept context context.communication idea information.communication sense.communication	no accepted parent reaches a root
+unplaced	principle	cognition concept context context.communication idea information information.communication law.cognition	no accepted parent reaches a root
+unplaced	principle.cognition	cognition concept context context.communication idea information information.communication sense.communication	no accepted parent reaches a root
 unplaced	printer	artifact device equipment machine physical-object	no accepted parent reaches a root
 unplaced	privacy	disposition inclination mentality monetary-value property trait	no accepted parent reaches a root
 unplaced	privation	amateur atmosphere.state circumstance condition.state convention.cognition crowd culture.group custom	no accepted parent reaches a root
@@ -8050,13 +8179,12 @@ unplaced	product.phenomenon	artifact consequence event phenomenon	no accepted pa
 unplaced	professional	adult agent human mammal monetary-value organism person physical-object	no accepted parent reaches a root
 unplaced	professorship	act activity event occupation situation	no accepted parent reaches a root
 unplaced	proficiency	monetary-value property	no accepted parent reaches a root
-unplaced	profile	cognition information information.communication phenomenon universe view	no accepted parent reaches a root
 unplaced	profit	amateur asset atmosphere.state circumstance convention.cognition crowd culture.group custom	no accepted parent reaches a root
 unplaced	program.communication	code information measure routine sense.communication software	no accepted parent reaches a root
 unplaced	prohibition	decree document information legal-document	no accepted parent reaches a root
 unplaced	projection	accomplishment act activity cognition event information phenomenon procedure.act	no accepted parent reaches a root
 unplaced	projection.communication	event information luminosity phenomenon	no accepted parent reaches a root
-unplaced	proof	cognition evidence information.communication	no accepted parent reaches a root
+unplaced	proof	cognition evidence information information.communication	no accepted parent reaches a root
 unplaced	property	cognition concept idea	no accepted parent reaches a root
 unplaced	property.possession	monetary-value property	no accepted parent reaches a root
 unplaced	proportion	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
@@ -8071,7 +8199,7 @@ unplaced	pumpkin	produce substance vegetable	no accepted parent reaches a root
 unplaced	pupil	hole part physical-object place space.shape structure system	no accepted parent reaches a root
 unplaced	purpose	cognition goal monetary-value property	no accepted parent reaches a root
 unplaced	pursuit	accomplishment act activity cognition event information phenomenon procedure.act	no accepted parent reaches a root
-unplaced	pyramid	monetary-value property	no accepted parent reaches a root
+unplaced	pyramid	monetary-value place property	no accepted parent reaches a root
 unplaced	quality	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
 unplaced	quantity	cognition concept idea	no accepted parent reaches a root
 unplaced	quarter.time	quantity time-period	no accepted parent reaches a root
@@ -8083,7 +8211,6 @@ unplaced	radiation-sickness	cognition event evidence phenomenon symptom syndrome
 unplaced	railroad-track	artifact physical-object	no accepted parent reaches a root
 unplaced	railway	business group organization	no accepted parent reaches a root
 unplaced	raise	increase.attribute magnitude quantity	no accepted parent reaches a root
-unplaced	ranch	artifact development farm phenomenon physical-object place site universe	no accepted parent reaches a root
 unplaced	randomness	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
 unplaced	range.object	physical-object	no accepted parent reaches a root
 unplaced	rank	monetary-value property status	no accepted parent reaches a root
@@ -8104,8 +8231,6 @@ unplaced	record.quantity	quantity	no accepted parent reaches a root
 unplaced	red		no accepted parent reaches a root
 unplaced	redundancy	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
 unplaced	reference-point	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
-unplaced	referral	advice context context.communication convention.cognition information information.communication monetary-value property	no accepted parent reaches a root
-unplaced	reflection	artifact event image image.cognition information light phenomenon physical-object	no accepted parent reaches a root
 unplaced	reform	act amateur atmosphere.state circumstance convention.cognition crowd culture.group custom	no accepted parent reaches a root
 unplaced	refreshment	act amateur atmosphere.state circumstance convention.cognition crowd culture.group custom	no accepted parent reaches a root
 unplaced	refuge	amateur artifact atmosphere.state circumstance convention.cognition crowd culture.group custom	no accepted parent reaches a root
@@ -8117,7 +8242,7 @@ unplaced	release	act event indication information phenomenon physical-object uni
 unplaced	relevance		no accepted parent reaches a root
 unplaced	reliance	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
 unplaced	relief	comfort condition.state emotional-state information monetary-value property sculpture	no accepted parent reaches a root
-unplaced	religion	belief cognition good information.communication sense.communication virtue	no accepted parent reaches a root
+unplaced	religion	belief cognition good information information.communication sense.communication virtue	no accepted parent reaches a root
 unplaced	relish	artifact cognition event perception phenomenon	no accepted parent reaches a root
 unplaced	reluctance	disposition emotion monetary-value property trait	no accepted parent reaches a root
 unplaced	remainder	number quantity	no accepted parent reaches a root
@@ -8148,13 +8273,12 @@ unplaced	rhythm	monetary-value property	no accepted parent reaches a root
 unplaced	rib	bone part structure system tissue tissue.substance	no accepted parent reaches a root
 unplaced	rice	food grain product product.phenomenon substance	no accepted parent reaches a root
 unplaced	rider	agent employment.act monetary-value organism person physical-object property	no accepted parent reaches a root
-unplaced	ridge	landform physical-object	no accepted parent reaches a root
+unplaced	ridge	landform physical-object place	no accepted parent reaches a root
 unplaced	right	convention.cognition good justice monetary-value property virtue	no accepted parent reaches a root
 unplaced	right-to-vote	cognition concept convention.cognition idea monetary-value property	no accepted parent reaches a root
 unplaced	right.location	physical-object place	no accepted parent reaches a root
 unplaced	ring.attribute	artifact device monetary-value property	no accepted parent reaches a root
 unplaced	risk	act activity amateur atmosphere.state circumstance convention.cognition crowd culture.group	no accepted parent reaches a root
-unplaced	road	artifact land landscape phenomenon physical-object place region street	no accepted parent reaches a root
 unplaced	rock	material natural-object phenomenon physical-object substance universe	no accepted parent reaches a root
 unplaced	rock-'n'-roll	information music	no accepted parent reaches a root
 unplaced	roentgenogram	artifact information phenomenon photograph physical-object universe	no accepted parent reaches a root
@@ -8181,13 +8305,12 @@ unplaced	scale.relation	quantity standard	no accepted parent reaches a root
 unplaced	scandal	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
 unplaced	schema	cognition measure plan routine sense.communication	no accepted parent reaches a root
 unplaced	scholar	agent human mammal monetary-value organism person physical-object property	no accepted parent reaches a root
-unplaced	scholarship	accomplishment acquisition act activity aid event gift information.communication	no accepted parent reaches a root
+unplaced	scholarship	accomplishment acquisition act activity aid event gift information	no accepted parent reaches a root
 unplaced	school-term	quantity time-period	no accepted parent reaches a root
 unplaced	schoolchild	agent monetary-value organism person physical-object property	no accepted parent reaches a root
 unplaced	scope	amateur artifact atmosphere.state circumstance convention.cognition crowd culture.group custom	no accepted parent reaches a root
 unplaced	score	quantity	no accepted parent reaches a root
 unplaced	scratch	appearance monetary-value property	no accepted parent reaches a root
-unplaced	script	information information.communication measure routine sense.communication	no accepted parent reaches a root
 unplaced	seaport	physical-object place	no accepted parent reaches a root
 unplaced	seashore	physical-object	no accepted parent reaches a root
 unplaced	season	information quantity time-period	no accepted parent reaches a root
@@ -8227,7 +8350,7 @@ unplaced	shrub	organism physical-object plant	no accepted parent reaches a root
 unplaced	side	information opinion.communication sense.communication surface	no accepted parent reaches a root
 unplaced	sight	artifact cognition device monetary-value product product.phenomenon property sense	no accepted parent reaches a root
 unplaced	sign	event information motion phenomenon	no accepted parent reaches a root
-unplaced	signature	artifact image.cognition indication information name part phenomenon physical-object	no accepted parent reaches a root
+unplaced	signature	artifact image image.cognition indication information name part phenomenon	no accepted parent reaches a root
 unplaced	silence	monetary-value property	no accepted parent reaches a root
 unplaced	similarity	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
 unplaced	simplicity	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
@@ -8285,7 +8408,7 @@ unplaced	spy	agent agent.person employment.act monetary-value organism person ph
 unplaced	square		no accepted parent reaches a root
 unplaced	stake	amateur artifact atmosphere.state circumstance convention.cognition crowd culture.group custom	no accepted parent reaches a root
 unplaced	standard	convention.cognition monetary-value property	no accepted parent reaches a root
-unplaced	star.shape	monetary-value property	no accepted parent reaches a root
+unplaced	star.shape	monetary-value place property	no accepted parent reaches a root
 unplaced	state-of-matter	monetary-value natural-event phenomenon property	no accepted parent reaches a root
 unplaced	status	convention.cognition monetary-value property	no accepted parent reaches a root
 unplaced	sting	condition.state event injury phenomenon	no accepted parent reaches a root
@@ -8300,7 +8423,6 @@ unplaced	style	information measure routine sense.communication	no accepted paren
 unplaced	subject	phenomenon universe	no accepted parent reaches a root
 unplaced	subject.communication	information sense.communication	no accepted parent reaches a root
 unplaced	subject.person	agent organism person physical-object	no accepted parent reaches a root
-unplaced	suburb	district physical-object place region.location residential-district site	no accepted parent reaches a root
 unplaced	suffering	emotional-state monetary-value pain.feeling property	no accepted parent reaches a root
 unplaced	suit	artifact clothing collection commodity phenomenon physical-object	no accepted parent reaches a root
 unplaced	summation	act activity event procedure.act	no accepted parent reaches a root
@@ -8328,7 +8450,7 @@ unplaced	tail	phenomenon physical-object universe	no accepted parent reaches a r
 unplaced	tan	condition.state event human injury mammal phenomenon structure system	no accepted parent reaches a root
 unplaced	taste	cognition event monetary-value property sense situation	no accepted parent reaches a root
 unplaced	tax	quantity	no accepted parent reaches a root
-unplaced	tax-return	artifact document image.cognition information legal-document	no accepted parent reaches a root
+unplaced	tax-return	artifact document image image.cognition information legal-document	no accepted parent reaches a root
 unplaced	taxpayer	agent organism person physical-object	no accepted parent reaches a root
 unplaced	teacher	adult agent organism person physical-object professional	no accepted parent reaches a root
 unplaced	tear	material phenomenon solution.substance substance universe	no accepted parent reaches a root
@@ -8336,7 +8458,7 @@ unplaced	telephone-line	artifact physical-object	no accepted parent reaches a ro
 unplaced	television	artifact physical-object product product.phenomenon	no accepted parent reaches a root
 unplaced	temper	event situation	no accepted parent reaches a root
 unplaced	temperature	quantity	no accepted parent reaches a root
-unplaced	temple.body	artifact container device feature phenomenon physical-object site universe	no accepted parent reaches a root
+unplaced	temple.body	artifact container device feature phenomenon physical-object place site	no accepted parent reaches a root
 unplaced	tempo		no accepted parent reaches a root
 unplaced	tenant	agent monetary-value organism person physical-object property	no accepted parent reaches a root
 unplaced	tendency	monetary-value path.location physical-object place property	no accepted parent reaches a root
@@ -8379,7 +8501,7 @@ unplaced	touch.cognition	action cognition event monetary-value property sense si
 unplaced	track	artifact device path.location phenomenon physical-object place universe	no accepted parent reaches a root
 unplaced	trade	act activity employment.act event monetary-value occupation property	no accepted parent reaches a root
 unplaced	trader	adult agent human mammal merchant monetary-value organism person	no accepted parent reaches a root
-unplaced	train	artifact physical-object product product.phenomenon vehicle	no accepted parent reaches a root
+unplaced	train	artifact physical-object place product product.phenomenon vehicle	no accepted parent reaches a root
 unplaced	trainer	agent human leader mammal monetary-value organism person physical-object	no accepted parent reaches a root
 unplaced	trait	monetary-value property	no accepted parent reaches a root
 unplaced	transport-ticket	document information ticket	no accepted parent reaches a root
@@ -8408,7 +8530,7 @@ unplaced	urge	desire emotional-state monetary-value property	no accepted parent 
 unplaced	urgency	amateur atmosphere.state circumstance condition.state convention.cognition crowd culture.group custom	no accepted parent reaches a root
 unplaced	user	agent monetary-value organism person physical-object property	no accepted parent reaches a root
 unplaced	vacuum	artifact commodity physical-object site	no accepted parent reaches a root
-unplaced	valley	depression landform natural-depression physical-object site	no accepted parent reaches a root
+unplaced	valley	depression landform natural-depression physical-object place site	no accepted parent reaches a root
 unplaced	value	cognition concept idea quantity	no accepted parent reaches a root
 unplaced	value.cognition	amateur atmosphere.state circumstance cognition convention.cognition crowd culture.group custom	no accepted parent reaches a root
 unplaced	value.possession	quantity	no accepted parent reaches a root
@@ -8422,7 +8544,7 @@ unplaced	venus		no accepted parent reaches a root
 unplaced	version	category cognition concept idea	no accepted parent reaches a root
 unplaced	view	cognition monetary-value property	no accepted parent reaches a root
 unplaced	violation	act activity convention.cognition event monetary-value property situation	no accepted parent reaches a root
-unplaced	virtue	convention.cognition good information.communication monetary-value norm property	no accepted parent reaches a root
+unplaced	virtue	convention.cognition good information information.communication monetary-value norm property	no accepted parent reaches a root
 unplaced	vision	cognition imagination	no accepted parent reaches a root
 unplaced	voice	ability monetary-value property	no accepted parent reaches a root
 unplaced	voice-message	audio document information message	no accepted parent reaches a root
@@ -8457,7 +8579,6 @@ unplaced	wisecrack	amateur atmosphere.state circumstance convention.cognition cr
 unplaced	withdrawal.feeling	action event monetary-value property situation transaction	no accepted parent reaches a root
 unplaced	wonder	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
 unplaced	word	information line.communication part phenomenon universe	no accepted parent reaches a root
-unplaced	workshop	action artifact conference convention convention.cognition development event meeting	no accepted parent reaches a root
 unplaced	world	amateur atmosphere.state circumstance cognition convention.cognition crowd culture.group custom	no accepted parent reaches a root
 unplaced	worry	emotion	no accepted parent reaches a root
 unplaced	worth	amateur atmosphere.state circumstance convention.cognition crowd culture.group custom danger	no accepted parent reaches a root
@@ -8469,6 +8590,6 @@ unplaced	writer	agent organism person physical-object	no accepted parent reaches
 unplaced	yard.quantity		no accepted parent reaches a root
 unplaced	year	time-period	no accepted parent reaches a root
 unplaced	young	animal organism physical-object	no accepted parent reaches a root
-unplaced	young.group	agent animal body group human human-body mammal organism	no accepted parent reaches a root
+unplaced	young.group	agent animal body group human mammal organism people	no accepted parent reaches a root
 unplaced	youth	quantity time-period	no accepted parent reaches a root
 unplaced	zero	number quantity	no accepted parent reaches a root

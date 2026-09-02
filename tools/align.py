@@ -168,8 +168,9 @@ def main():
         # Match on the concept's own name or the synset's FIRST lemma only:
         # matching every lemma made `saying` (lemmas saying/expression/locution)
         # align to Cyc's `expression`, 32K descendants of noise.
-        lemmas = synsets[off][0][:1] if off else [name.replace("-", "_")]
-        keys = {normalise(l) for l in lemmas} | {normalise(name.split(".")[0])}
+        # ... and for an overridden core name, its own name only: `software-library`
+        # (first lemma `library`) must not land on schema.org's Library building.
+        keys = {normalise(name.split(".")[0])}
         row = {"name": name, "wordnet": off or "", "sumo": "", "sumo_rel": ""}
         if off and off in sumo_map:
             row["sumo"], row["sumo_rel"] = sumo_map[off]

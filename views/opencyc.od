@@ -11,8 +11,8 @@ action event
 activity '*'
 actor artist professional
 adaptation action
-address information.communication
-address.communication information.communication
+address information information.communication
+address.communication information information.communication
 admiration satisfaction
 admission action
 adult structure
@@ -37,7 +37,7 @@ altar container device platform site
 amateur '*'
 ambulance container land-vehicle product product.phenomenon
 amendment event
-amphetamine medicine.act medicine.artifact
+amphetamine medicine medicine.act medicine.artifact
 amphibian vertebrate
 analyst adult worker
 angel '*'
@@ -47,8 +47,8 @@ annex container device site
 ant insect
 apartment home suite
 appearance event
-appendix information.communication
-appendix.communication information.communication
+appendix information information.communication
+appendix.communication information information.communication
 appetite '*'
 apple part structure
 applicant human
@@ -67,7 +67,7 @@ arm limb
 armchair chair
 arrow projectile weapon
 arrow.communication projectile weapon
-article information.communication
+article information information.communication
 artifact '*'
 artist worker
 assistant human
@@ -81,7 +81,6 @@ attachment situation
 attachment.feeling situation
 attention work
 auction action
-audio device publication
 auditor adult professional
 avenue street street.artifact
 axis line line.cognition line.communication line.group
@@ -108,7 +107,7 @@ barrel.artifact container device
 barrel.shape container device
 barter exchange exchange.communication
 baseball device
-basis information.communication
+basis information information.communication
 basket container device
 basketball device
 bathroom container device part site
@@ -125,12 +124,12 @@ bed furniture
 bed.artifact furniture
 bedroom container device part site
 bee insect
-beer drink product product.phenomenon solution solution.substance
+beer product product.phenomenon solution solution.substance
 bend body-of-water
 bend.shape body-of-water
 beneficiary '*'
 betrothal action
-bible artifact copy image.cognition publication
+bible artifact copy image image.cognition publication
 bicycle device
 bird vertebrate
 birth action
@@ -198,17 +197,17 @@ cane device
 canvas device supply surface
 cap device
 cap.artifact device
-caption information.communication
+caption information information.communication
 car container land-vehicle
 car.artifact container land-vehicle
 carbon '*'
-card artifact image.cognition
-card.communication artifact image.cognition
-card.communication.2 artifact image.cognition
+card artifact image image.cognition
+card.communication artifact image image.cognition
+card.communication.2 artifact image image.cognition
 care work
 care.act work
-case information.communication
-case.event information.communication
+case information information.communication
+case.event information information.communication
 cash currency
 cash-register device
 castle container device site
@@ -218,7 +217,7 @@ cave site
 ceiling artifact part
 ceiling.communication artifact part
 census action
-certificate artifact image.cognition
+certificate artifact image image.cognition
 chair device furniture
 challenge situation
 challenge.state situation
@@ -226,12 +225,12 @@ champagne product product.phenomenon solution solution.substance wine
 championship competition
 channel body-of-water
 channel.object body-of-water
-chapter information.communication
+chapter information information.communication
 charity structure
 charity.group structure
-chart image.cognition
-chart.communication image.cognition
-charter artifact image.cognition
+chart image image.cognition
+chart.communication image image.cognition
+charter artifact image image.cognition
 cheek part structure
 cheese dairy-product
 chemical-reaction event
@@ -251,7 +250,7 @@ class.group meeting meeting.act meeting.event
 classroom container device part site
 clemency action
 cliff slope
-clipping device image.cognition surface
+clipping device image image.cognition surface
 clock device
 clothing device
 coach adult worker
@@ -269,8 +268,8 @@ color '*'
 column article publication
 column.group article publication
 coma illness
-comedy information.communication
-comic-strip information.communication
+comedy information information.communication
+comic-strip information information.communication
 commitment situation
 committee structure
 commodity '*'
@@ -310,8 +309,8 @@ constellation site
 consumer human
 container '*'
 contempt emotion
-context information.communication
-context.communication information.communication
+context information information.communication
+context.communication information information.communication
 continent site
 contract norm
 convention meeting meeting.act meeting.event
@@ -325,6 +324,7 @@ corruption action
 costume clothing
 cotton '*'
 council structure
+country site structure
 country.location site structure
 countryside site
 'coup-d'"'"'etat' action
@@ -345,7 +345,7 @@ crash action
 crash.event action
 credibility '*'
 credit-card card card.communication card.communication.2 device
-creed information.communication
+creed information information.communication
 cricket insect
 criminal worker
 crisis emergency
@@ -359,11 +359,11 @@ crutch device
 cup container device
 cup.quantity container device
 cupboard box part
-currency device image.cognition
+currency device image image.cognition
 current '*'
 curtain device part surface
 cushion artifact part
-custom information.communication
+custom information information.communication
 customer '*'
 cut artifact site
 cut.possession artifact site
@@ -378,10 +378,10 @@ decade time-period
 decrease event
 decrease.act event
 decree statement
-deed artifact image.cognition
+deed artifact image image.cognition
 deer mammal
 deficit event
-definition information.communication
+definition information information.communication
 deity '*'
 denial statement
 density '*'
@@ -391,18 +391,18 @@ depression site
 desire emotion
 desk container device furniture
 despair misery
-detail image.cognition light signal
-detail.cognition image.cognition light signal
+detail image image.cognition light signal
+detail.cognition image image.cognition light signal
 detective worker
 detector '*'
 development event
 device artifact
-diagram information.communication
+diagram information information.communication
 dialect natural-language
 dialogue action
 dialogue.communication action
-diary artifact image.cognition
-dictionary information.communication
+diary artifact image image.cognition
+dictionary information information.communication
 diet action
 difficulty '*'
 dilemma situation
@@ -422,7 +422,7 @@ dish.food container device
 disk cylinder
 disposition '*'
 dispute conflict conflict.state
-dissertation information.communication publication
+dissertation information information.communication publication
 distance '*'
 distance.feeling '*'
 district state
@@ -436,7 +436,7 @@ dominion site structure
 door part
 doorbell device
 dormitory home
-dose medicine.act medicine.artifact
+dose medicine medicine.act medicine.artifact
 doubt uncertainty
 doubt.cognition uncertainty
 dough '*'
@@ -445,7 +445,6 @@ draw site
 drawer container device part
 drill tool
 drill.artifact tool
-drink '*'
 drive event
 drive.attribute event
 driver human
@@ -493,18 +492,18 @@ equation statement
 equilibrium situation
 erosion action
 escape action illness
-essay information.communication
+essay information information.communication
 estate '*'
 estate.possession '*'
 evening '*'
 event situation
-evidence information.communication
+evidence information information.communication
 examiner human
 exception situation
 exchange transaction
 exchange.communication transaction
 excitement emotion
-excuse information.communication
+excuse information information.communication
 executive adult worker
 exit '*'
 expectation context context.communication
@@ -536,9 +535,10 @@ ferry ship
 festival action
 fever action illness
 fiber cord
-field-of-study information.communication
+field-of-study information information.communication
 fig part structure
 fight action conflict conflict.state
+film surface
 film.artifact surface
 film.artifact.2 surface
 film.communication surface
@@ -567,9 +567,9 @@ foreman worker
 forest countryside environment obstacle
 forestry action
 fork hardware tool
-form information.communication
-form.cognition information.communication
-form.group information.communication
+form information information.communication
+form.cognition information information.communication
+form.group information information.communication
 fossil '*'
 fox mammal
 franchise structure
@@ -590,8 +590,8 @@ fur device part structure
 furniture artifact
 fury car car.artifact
 galaxy '*'
-game information.communication
-game.act information.communication
+game information information.communication
+game.act information information.communication
 garage container device site
 garage.artifact container device site
 garbage '*'
@@ -601,7 +601,7 @@ gasoline '*'
 gate site
 gem mineral
 genius human
-gesture image.cognition signal situation
+gesture image image.cognition signal situation
 ghost '*'
 giant human
 glacier environment ice
@@ -626,7 +626,7 @@ grocery-store structure
 guard athlete worker
 guard.person athlete worker
 guerrilla warrior
-guidepost artifact image.cognition
+guidepost artifact image image.cognition
 guilt emotion
 guitar musical-instrument
 gun device product product.phenomenon weapon
@@ -658,7 +658,7 @@ helmet device
 herb structure
 herd '*'
 hero human
-heroin artifact medicine.act medicine.artifact
+heroin artifact medicine medicine.act medicine.artifact
 hide '*'
 hill site
 hip part structure
@@ -674,7 +674,7 @@ hoop '*'
 hope emotion
 horizon site
 horn part structure
-horoscope information.communication
+horoscope information information.communication
 horse mammal
 horseshoe shield
 hostel '*'
@@ -687,14 +687,16 @@ hunter human
 hypothesis context context.communication
 ice '*'
 ice-cream dairy-product
-idea information.communication
-ideal information.communication
+idea information information.communication
+ideal information information.communication
 illness event
-illustration image.cognition light signal
+illustration image image.cognition light signal
+image '*'
 image.cognition '*'
 immigrant human
 imposter human
 incentive action
+information '*'
 information.communication '*'
 insect invertebrate
 insider '*'
@@ -705,7 +707,7 @@ insurgent human
 intelligence '*'
 intelligence.group '*'
 interest situation
-interface information.communication
+interface information information.communication
 intervention action
 introduction action
 introduction.communication action
@@ -721,16 +723,16 @@ jersey shirt
 jet '*'
 jockey athlete worker
 joke '*'
-journal information.communication publication
+journal information information.communication publication
 joy artifact
 judge adult professional
 judgment norm
 judgment.act norm
 judgment.cognition norm
-juice drink
+juice '*'
 jury structure
 jury.group structure
-justification information.communication
+justification information information.communication
 kettle pan pan.artifact
 kidney part structure
 kit device
@@ -738,7 +740,7 @@ kitchen container device site
 knee part structure
 knife hardware tool
 knot line line.cognition line.communication line.group
-label artifact image.cognition
+label artifact image image.cognition
 labor work
 labor.group work
 lace device surface
@@ -751,7 +753,7 @@ land-vehicle device
 landlord human
 landscape site
 lane artifact part site surface
-language information.communication
+language information information.communication
 lap part structure
 laser device
 law norm
@@ -766,11 +768,11 @@ lead.cognition metal mineral
 lead.substance metal mineral
 leaf part structure
 learner human
-lease artifact image.cognition
+lease artifact image image.cognition
 leash cord
 leather artifact hide
-lecture information.communication
-lecture.communication information.communication
+lecture information information.communication
+lecture.communication information information.communication
 legend narrative
 length distance distance.feeling size
 lesson teaching
@@ -822,6 +824,7 @@ mayor executive politician
 maze puzzle
 meal '*'
 meat '*'
+medicine '*'
 medicine.act '*'
 medicine.artifact '*'
 meeting action
@@ -834,9 +837,9 @@ memorial.communication artifact
 memory context context.communication
 memory.cognition context context.communication
 memory.cognition.2 context context.communication
-menu information.communication
-menu.communication information.communication
-menu.food information.communication
+menu information information.communication
+menu.communication information information.communication
+menu.food information information.communication
 message '*'
 metal '*'
 method '*'
@@ -856,19 +859,18 @@ misery grief
 mist '*'
 mistake action
 mix '*'
-model artifact image.cognition
-model.cognition artifact image.cognition
-model.person artifact image.cognition
-model.person.2 artifact image.cognition
-module information.communication
+model artifact image image.cognition
+model.cognition artifact image image.cognition
+model.person artifact image image.cognition
+model.person.2 artifact image image.cognition
+module information information.communication
 mold fungus
 mole mammal
 mole.attribute mammal
 molecule '*'
-mollusc invertebrate
 momentum '*'
 momentum.attribute '*'
-monarchy country.location
+monarchy country country.location
 monetary-value '*'
 monk worker
 monkey mammal
@@ -880,7 +882,7 @@ mosque temple temple.body
 mosquito insect
 mother human
 motorcycle container land-vehicle
-motto information.communication
+motto information information.communication
 mountain site
 mouse mammal
 mouse.artifact mammal
@@ -890,11 +892,11 @@ museum structure
 mushroom structure
 mushroom.plant structure
 music event signal
-musical-composition information.communication
+musical-composition information information.communication
 musical-instrument device
 musician artist
-myth information.communication
-narrative information.communication
+myth information information.communication
+narrative information information.communication
 nationality '*'
 natural-language language
 nausea illness
@@ -908,20 +910,20 @@ nest artifact site
 net filter
 network system
 network.group system
-news information.communication
-news.communication information.communication
+news information information.communication
+news.communication information information.communication
 night '*'
-nightmare information.communication
+nightmare information information.communication
 nomination recommendation
-norm information.communication
+norm information information.communication
 nose detector part structure
 notebook device
 notebook.communication device
-noun information.communication
+noun information information.communication
 novel narrative
 nuclear-reactor device
 number '*'
-numeral information.communication
+numeral information information.communication
 nun woman worker
 nurse adult professional
 nursery container device site
@@ -938,7 +940,7 @@ offspring structure
 oil '*'
 omission situation
 onion vegetable
-operating-system information.communication
+operating-system information information.communication
 operation surgery
 operation.act surgery
 operation.act.2 surgery
@@ -948,11 +950,11 @@ option contract
 option.possession contract
 orchestra structure
 orgy action
-outline information.communication
-outline.location information.communication
+outline information information.communication
+outline.location information information.communication
 output '*'
 oven box
-overview information.communication
+overview information information.communication
 owl bird
 owner '*'
 pace '*'
@@ -966,11 +968,11 @@ pan.artifact container device
 panel '*'
 panic emotion
 parade ritual
-paradox information.communication
-paragraph information.communication
+paradox information information.communication
+paragraph information information.communication
 pardon action
 park artifact site
-parking action
+parking transport
 parliament structure
 part '*'
 particle '*'
@@ -997,12 +999,11 @@ penny coin
 pensioner human
 perfume artifact
 permission norm
-personal-identification-number information.communication
+personal-identification-number information information.communication
 phase '*'
 philosopher adult professional
-philosophy information.communication
+philosophy information information.communication
 phone device
-phone-call action
 photographer adult artist professional
 piano furniture musical-instrument
 piece part
@@ -1029,8 +1030,8 @@ plot.communication plan
 plot.communication.2 plan
 pneumonia illness
 pocket container device part surface
-poem information.communication
-poetry information.communication
+poem information information.communication
+poetry information information.communication
 point site
 point.shape site
 polish human
@@ -1040,14 +1041,14 @@ politics action
 pony horse
 pop-music music
 porter worker
-portrait image.cognition light signal
+portrait image image.cognition light signal
 postage device
 postcard card card.communication card.communication.2
 potential '*'
 powder '*'
 prayer ritual
 preference action
-prescription-drug medicine.act medicine.artifact
+prescription-drug medicine medicine.act medicine.artifact
 presence '*'
 present illness
 present.time illness
@@ -1064,7 +1065,7 @@ prince human
 princess human
 principle context context.communication
 principle.cognition context context.communication
-print image.cognition
+print image image.cognition
 prison container device site
 prisoner human
 privilege norm
@@ -1077,17 +1078,17 @@ production.communication event
 professional worker
 professor adult worker
 professorship situation
-profile information.communication
-prognosis information.communication
+profile information information.communication
+prognosis information information.communication
 projectile device
-proof information.communication
-proof.communication information.communication
-propaganda information.communication
+proof information information.communication
+proof.communication information information.communication
+propaganda information information.communication
 proportion '*'
 proportion.attribute '*'
 proportion.relation '*'
 proposal norm
-proposition information.communication
+proposition information information.communication
 protein '*'
 psychologist scientist
 public-square '*'
@@ -1098,10 +1099,10 @@ pulse '*'
 pupil part structure
 pursuit '*'
 puzzle '*'
-question information.communication
+question information information.communication
 queue action
-quotation information.communication
-quotation.communication information.communication
+quotation information information.communication
+quotation.communication information information.communication
 rabbit mammal
 racetrack artifact site
 rack device
@@ -1115,23 +1116,23 @@ rally action
 ranch site
 rat mammal
 ratio number
-receipt artifact image.cognition
+receipt artifact image image.cognition
 reception action
 reception.communication action
 reception.group action
 recess action
 recession action
-recommendation information.communication
+recommendation information information.communication
 red '*'
 referee adult professional
 referral context context.communication
-reflection image.cognition light signal
+reflection image image.cognition light signal
 refugee civilian
 registration action
 rehabilitation work
 rehabilitation.act work
 reign action
-religion information.communication
+religion information information.communication
 relish artifact
 reluctance emotion
 remark statement
@@ -1149,7 +1150,7 @@ resident doctor doctor.person
 resolution norm
 restraint device
 restraint.cognition device
-retaliation information.communication
+retaliation information information.communication
 return monetary-value
 return.act monetary-value
 review article
@@ -1173,7 +1174,7 @@ rope device line line.cognition line.communication line.group
 routine action
 row '*'
 rug device
-rumor information.communication
+rumor information information.communication
 rung artifact
 sacrifice '*'
 sacrifice.possession '*'
@@ -1197,8 +1198,8 @@ school.artifact institution
 school.group institution
 scientist adult worker
 scope artifact
-script information.communication
-sculpture artifact image.cognition
+script information information.communication
+sculpture artifact image image.cognition
 sea body-of-water
 seal mammal
 seal.communication mammal
@@ -1210,7 +1211,7 @@ security-system device product product.phenomenon
 sediment soil
 seed part structure
 seminar action
-sentence information.communication
+sentence information information.communication
 sermon action
 servant worker
 set '*'
@@ -1241,14 +1242,14 @@ sign '*'
 sign-of-the-zodiac '*'
 sign.communication '*'
 signal '*'
-signature artifact image.cognition
+signature artifact image image.cognition
 silk device surface
 singer musician professional
 sister human
 site '*'
 situation '*'
 size '*'
-sketch image.cognition
+sketch image image.cognition
 skin detector part structure surface
 skull bone
 sky '*'
@@ -1283,7 +1284,7 @@ spirit.person '*'
 split event
 spokesperson worker
 spoon container hardware tool
-sport information.communication
+sport information information.communication
 spray artifact
 spreadsheet '*'
 squad structure
@@ -1309,7 +1310,7 @@ stop '*'
 strap device part
 straw '*'
 strawberry part structure
-stream information.communication
+stream information information.communication
 street device site surface
 street.artifact device site surface
 streetcar device
@@ -1318,14 +1319,13 @@ stroke illness
 structure system
 studio suite
 study container device site
-substance '*'
 suburb site
 success action
 sugar '*'
 suicide action ending illness
 suite container device site
 sulfur mineral
-summary information.communication
+summary information information.communication
 summit site
 sun '*'
 sunday '*'
@@ -1357,9 +1357,9 @@ tape.artifact device line line.cognition line.communication line.group
 tape.artifact.2 device line line.cognition line.communication line.group
 target device
 taste cognition
-tax-return artifact image.cognition
+tax-return artifact image image.cognition
 taxpayer '*'
-tea artifact drink medicine.act medicine.artifact
+tea artifact medicine medicine.act medicine.artifact
 teaching action
 team structure
 temper event
@@ -1372,15 +1372,15 @@ tension.state '*'
 tent container device site
 territory site structure
 terrorist criminal
-textbook information.communication publication
+textbook information information.communication publication
 texture '*'
 thigh part structure
 thinking event
 throat part structure
 throne chair
 thumb finger
-ticket device image.cognition
-ticket.communication device image.cognition
+ticket device image image.cognition
+ticket.communication device image image.cognition
 tide artifact
 tiger mammal
 tile '*'
@@ -1391,7 +1391,7 @@ tissue part structure
 tissue.substance part structure
 toast bread
 toe part structure
-token artifact image.cognition
+token artifact image image.cognition
 tool device
 tooth part structure
 tooth.body part structure
@@ -1404,15 +1404,16 @@ tourist consumer
 tournament competition
 towel device
 tower artifact site
-tract information.communication publication
+tract information information.communication publication
 trader adult professional
 traffic action
 traffic.group action
-tragedy information.communication
+tragedy information information.communication
 train-ticket ticket ticket.communication
 trainer worker
 transaction action
 transmission device part product product.phenomenon
+transport action
 transportation business
 trap device
 tray container device
@@ -1471,7 +1472,7 @@ virus microorganism
 virus.communication microorganism
 visit action
 visitor human
-void information.communication
+void information information.communication
 volcano site
 volunteer human
 vote consensus
@@ -1490,7 +1491,7 @@ watercraft container device
 waterfall body-of-water
 weapon artifact
 weather event
-web-site information.communication
+web-site information information.communication
 wedding action
 week time-period
 weekend time-period
@@ -1500,8 +1501,8 @@ well device site
 whale mammal
 wheel device part
 whip device
-will artifact image.cognition
-wine artifact drink
+will artifact image image.cognition
+wine artifact
 wire device line line.cognition line.communication line.group
 withdrawal transaction
 withdrawal.feeling transaction
@@ -1512,7 +1513,7 @@ workbench furniture
 worker human
 workshop conference
 workshop.act conference
-world-power country.location
+world-power country country.location
 wound part structure
 wrist part structure
 yacht boat
