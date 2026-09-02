@@ -244,6 +244,22 @@ proves the pattern before biology's tree of life tests its scale.
 |---|---|---|---|
 | physics | 173 | WordNet physics/astronomy topics, the particle cone; 12 new unit heads under `linear-dimension` | particle, concept (physical-law, theory), natural-event (physical-phenomenon), event, place, attribute |
 | mathematics | ~480 | WordNet mathematics/statistics/geometry/logic topics and cones; **Wikidata** (bounded P279 pulls, `tools/fetch_wikidata.py`) for the skeleton: algebraic structures, number types, relations, sets, spaces, graph theory, mathematical logic | concept (mathematical-set, mathematical-relation, mathematical-structure, expression), cognition (statistic), event/procedure (mathematical-operation), shape, mathematics, number |
+| chemistry | 243 | WordNet chemistry topic, the element cone, hinge synsets (molecule, compound, solution, material, ion, polymer, mixture, alloy, catalyst, bond); **Wikidata** for 16 roots (element, reaction, bond, functional group, molecule, ion, acid, base, polymer, state of matter, mixture, alloy, mineral — and `chemical compound`, `chemical substance`, `medication` label-only, since each has tens of thousands of direct subclasses); 2 new unit heads (`amount-of-substance`, `catalytic-activity`) | substance, material, chemical, compound, chemical-element, natural-event (chemical-bond), collection (chemical-group), information (periodic-table), concept (theories), number (equilibrium-constant), attribute |
+| biology | 346 | WordNet biology/genetics/botany/physiology/ecology topics, the cell and gene cones, hinge synsets (enzyme, nucleic acid, DNA, chromosome, metabolism, ecosystem, hormone, biological process, taxonomic group, plant part); **Wikidata** for 17 roots (organism, cell to depth 2, enzyme, the kingdoms, virus, chromosome, metabolism, biological process to depth 2, strain, taxon, ecosystem, nucleic acid — `gene` and `protein` label-only: 453,793 and 769,212 direct subclasses, every named gene and protein) | organism, cell, body-part (plant-part hangs here: "any part of an organism"), nucleic-acid, taxonomic-group ⊑ concept, natural-event, attribute, group (ecosystem; `system` is unplaced in core), physical-object |
+
+Three lessons from the Wikidata stage. **Verify every root QID by label
+before walking it**: four of the first thirty-three were wrong (metabolism
+was biotechnology, ecosystem a Swiss district, nucleic acid methane, base
+inorganic chemistry) and the walk gives no warning — it just pulls the wrong
+cone. **Some roots cannot be walked**: `chemical compound` returned 89 MB of
+direct subclasses, `gene` 453,793 and `protein` 769,212 — Wikidata files
+every named instance-class under them; such roots get depth 0 (label only)
+and `tools/fetch_wikidata.py` now caps a level at 3,000 children and says so.
+**Wikidata's label collides with the everyday word more often than WordNet's
+sense does**: `clique`, `edge`, `filter`, `region`, `diameter` all arrived
+under the taxonomic rank `subclass`; a chemical `indicator` under `sign`;
+`forest`, `desert`, `marsh` under `ecosystem` — every such edge was rejected
+on the WordNet gloss, never on the label.
 
 Two lessons from the mathematics pack. **Wikidata's habit is the reverse of
 WordNet's**: WordNet files parts as kinds, Wikidata inherits by forgetting

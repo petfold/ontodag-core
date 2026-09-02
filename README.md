@@ -11,11 +11,17 @@ anyone; the product is a published store root that `odag pack core` adopts.
 
 ## State (2026-09-02)
 
-`build/core.od` is the candidate for the `core` pack v2: 2,937 concepts, ten
-branches, 5,628 edges each carried by two independent sources or by Peter's
-ruling. It is a strict superset of the shipped v1 (194 concepts, nothing
-lost). `docs/UPPER.md` §6 records every decision, §7 the policy for the
-sciences. Rebuild from the review files with `sh tools/build.sh`.
+`build/core.od` is the `core` pack (v3 shipped in ontodag 0.19.1; v4, the
+Wikidata-confirmed rebuild, is in ontodag's main branch unreleased): ~2,930
+concepts, ten branches, every edge carried by two independent sources or by
+Peter's ruling. It is a strict superset of the hand-written v1 (194 concepts,
+nothing lost). `docs/UPPER.md` §6 records every decision, §7 the policy for
+the sciences, §8 the science packs built beside it — `packs/physics`,
+`packs/mathematics`, `packs/chemistry`, `packs/biology`, each a
+`build/<pack>.od` that merges onto core's hinges (`odag pack core`, then
+`odag merge packs/<pack>/build/<pack>.od`). Rebuild core from the review
+files with `sh tools/build.sh`; a pack with
+`python3 tools/{align,views,consensus}.py --pack NAME`.
 
 ## Pictures
 
