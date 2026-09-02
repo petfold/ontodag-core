@@ -23,12 +23,13 @@ substance	dolce	amount-of-matter
 substance	schemaorg	schema:Substance
 substance	yago	Substance
 # agent: can act. WordNet `causal_agent` (person hangs here and under
-# organism), SUMO AutonomousAgent, DUL Agent, Cyc Agent-Generic.
+# organism), SUMO AutonomousAgent, DUL Agent. Cyc Agent-Generic cleared: 64K
+# descendants of 116K classes — it made wine and beer agents.
 agent	wordnet	00007347
 agent	sumo	AutonomousAgent
 agent	sumo_rel	=
 agent	dul	Agent
-agent	opencyc	Mx4rwImSW5wpEbGdrcN5Y29ycA
+agent	opencyc	-
 # event: happens. BFO process added; the rest was right.
 event	bfo	BFO_0000015
 # information: content that copies. WordNet `communication` (00033020 —
