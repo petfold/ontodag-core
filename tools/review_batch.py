@@ -50,7 +50,7 @@ rows = [r for r in csv.DictReader(open(ROOT / "build/evidence.tsv"), delimiter="
         if r["status"] == "single" and (r["sub"], r["sup"]) not in reviewed
         and (a.all or (r["sub"], r["sup"]) in direct)
         and (not a.witness or r["for"] == a.witness)
-        and r["sub"] in parents and r["sup"] in parents
+        and r["sup"] in parents                      # sub may be unplaced: this edge is how it gets in
         and (not a.branch or under(r["sub"], a.branch))]
 print(f"# {len(rows)} candidates; showing {a.skip}..{a.skip + a.limit}")
 for r in rows[a.skip:a.skip + a.limit]:

@@ -1068,6 +1068,8 @@ single	charter	indication	only sumo
 single	charter	line-of-text	only sumo
 single	charter	physical-object	only sumo
 single	charter	text	only sumo
+single	chat-message	document	only claude
+single	chat-message	information	only claude
 single	chauvinist	collection	only sumo
 single	chauvinist	group	only sumo
 single	chauvinist	organism	only wordnet
@@ -2078,6 +2080,13 @@ single	elite	mammal	only opencyc
 single	elite	people	only wordnet
 single	elite	structure	only opencyc
 single	elite	vertebrate	only opencyc
+single	email	act	only wordnet
+single	email	artifact	only sumo
+single	email	communication	only wordnet
+single	email	device	only sumo
+single	email	document	only claude
+single	email	event	only wordnet
+single	email	information	only claude
 single	embassy	physical-object	only wordnet
 single	embassy	structure	only wordnet
 single	empire	agent	only sumo
@@ -2142,6 +2151,8 @@ single	essay	line-of-text	only sumo
 single	essay	physical-object	only sumo
 single	essay	text	only sumo
 single	ethics	humanities	only wordnet
+single	event-ticket	document	only claude
+single	event-ticket	information	only claude
 single	evidence	accomplishment	only sumo
 single	evidence	act	only sumo
 single	evidence	activity	only sumo
@@ -2364,6 +2375,7 @@ single	finance	exchange	only sumo
 single	finance	interaction	only sumo
 single	finance	process	only sumo
 single	finance	transaction	only sumo
+single	financial-document	information	only claude
 single	finish	artifact	only opencyc
 single	finish	physical-object	only wordnet
 single	fire	device	only sumo
@@ -2462,6 +2474,7 @@ single	formal-application	line-of-text	only sumo
 single	formal-application	physical-object	only sumo
 single	formal-application	text	only sumo
 single	formal-proof	physical-object	only sumo
+single	formal-science	field-of-study	only claude
 single	formula	artifact	only sumo
 single	formula	contract-condition	only sumo
 single	formula	indication	only sumo
@@ -3712,6 +3725,7 @@ single	nomination	activity	only sumo
 single	nomination	communication	only sumo
 single	nomination	process	only sumo
 single	nomination	recommendation	only opencyc
+single	nonprofit	agent	only claude
 single	note	artifact	only sumo
 single	note	contract-condition	only sumo
 single	note	line-of-text	only sumo
@@ -5729,6 +5743,8 @@ single	terrorist	worker	only opencyc
 single	text	artifact	only sumo
 single	text	indication	only sumo
 single	text	physical-object	only sumo
+single	text-message	document	only claude
+single	text-message	information	only claude
 single	text-passage	artifact	only sumo
 single	text-passage	contract-condition	only sumo
 single	text-passage	indication	only sumo
@@ -5889,6 +5905,8 @@ single	transmission	mechanism	only wordnet
 single	transmission	physical-object	only wordnet
 single	transport	action	only opencyc
 single	transport	visit	only sumo
+single	transport-ticket	document	only claude
+single	transport-ticket	information	only claude
 single	trap	physical-object	only wordnet
 single	tray	physical-object	only wordnet
 single	treasure	group	only wordnet
@@ -6077,6 +6095,8 @@ single	visitor	physical-object	only wordnet
 single	visitor	structure	only opencyc
 single	visitor	vertebrate	only opencyc
 single	vitamin	material	only sumo
+single	voice-message	document	only claude
+single	voice-message	information	only claude
 single	void	information	only opencyc
 single	void	physical-object	only wordnet
 single	volcano	physical-object	only wordnet
@@ -6369,7 +6389,6 @@ unplaced	archive	agent artifact association collection facility group organizati
 unplaced	ardor	passion property	no accepted parent reaches a root
 unplaced	area	magnitude quantity vector	no accepted parent reaches a root
 unplaced	arm	limb part phenomenon physical-object structure system universe	no accepted parent reaches a root
-unplaced	art	field-of-study	no accepted parent reaches a root
 unplaced	articulation	phenomenon physical-object universe	no accepted parent reaches a root
 unplaced	artistic-creation	act activity artifact creation event indication information phenomenon	no accepted parent reaches a root
 unplaced	ash-grey		no accepted parent reaches a root
@@ -6455,7 +6474,6 @@ unplaced	bun	bread food substance	no accepted parent reaches a root
 unplaced	bundle	artifact collection container phenomenon physical-object	no accepted parent reaches a root
 unplaced	bureaucracy	group organization property structure system	no accepted parent reaches a root
 unplaced	burn	condition.state event injury part phenomenon structure system	no accepted parent reaches a root
-unplaced	business-studies	field-of-study	no accepted parent reaches a root
 unplaced	bustle	act amateur ambiance circumstance civilisation crowd custom danger	no accepted parent reaches a root
 unplaced	buttocks	phenomenon physical-object universe	no accepted parent reaches a root
 unplaced	cabinet.group	board-of-directors committee group organization	no accepted parent reaches a root
@@ -6499,7 +6517,6 @@ unplaced	character.state	amateur ambiance circumstance civilisation crowd custom
 unplaced	characteristic	property	no accepted parent reaches a root
 unplaced	charm	amateur ambiance circumstance civilisation crowd custom danger expert	no accepted parent reaches a root
 unplaced	chart.communication	information	no accepted parent reaches a root
-unplaced	chat-message	document information message	no accepted parent reaches a root
 unplaced	cheek	part phenomenon physical-object structure system universe	no accepted parent reaches a root
 unplaced	chief	agent leader organism person physical-object property	no accepted parent reaches a root
 unplaced	childhood	quantity time-period	no accepted parent reaches a root
@@ -6766,7 +6783,6 @@ unplaced	electorate	group property	no accepted parent reaches a root
 unplaced	electric-charge	natural-event phenomenon quantity vector	no accepted parent reaches a root
 unplaced	electricity	event natural-event phenomenon	no accepted parent reaches a root
 unplaced	electron	chemical-element event material natural-object particle phenomenon physical-object situation	no accepted parent reaches a root
-unplaced	email	act artifact communication device document event information message	no accepted parent reaches a root
 unplaced	embryo	animal organism physical-object structure system	no accepted parent reaches a root
 unplaced	emergency	amateur ambiance circumstance civilisation crowd custom danger event	no accepted parent reaches a root
 unplaced	emotion	property	no accepted parent reaches a root
@@ -6794,7 +6810,6 @@ unplaced	estimate	accomplishment act activity calculation cognition event inform
 unplaced	estimation	attitude cognition	no accepted parent reaches a root
 unplaced	europe		no accepted parent reaches a root
 unplaced	evening	quantity time-period	no accepted parent reaches a root
-unplaced	event-ticket	document information ticket	no accepted parent reaches a root
 unplaced	evolution	event phenomenon	no accepted parent reaches a root
 unplaced	exam	act artifact communication contract-condition device event indication information	no accepted parent reaches a root
 unplaced	example	cognition	no accepted parent reaches a root
@@ -6844,7 +6859,6 @@ unplaced	fictional-character	agent cognition phenomenon self universe	no accepte
 unplaced	figure	quantity	no accepted parent reaches a root
 unplaced	film.artifact	material phenomenon physical-object substance universe	no accepted parent reaches a root
 unplaced	final-examination	act artifact communication contract-condition device event exam indication	no accepted parent reaches a root
-unplaced	financial-document	document information	no accepted parent reaches a root
 unplaced	finger	part phenomenon physical-object structure system universe	no accepted parent reaches a root
 unplaced	fish.food	substance	no accepted parent reaches a root
 unplaced	fist	hand manus part structure system	no accepted parent reaches a root
@@ -6870,7 +6884,6 @@ unplaced	force	degree quantity vector	no accepted parent reaches a root
 unplaced	foreigner	agent organism person physical-object property	no accepted parent reaches a root
 unplaced	foreman	agent human leader mammal organism person physical-object property	no accepted parent reaches a root
 unplaced	forest	countryside environment group land obstacle physical-object place	no accepted parent reaches a root
-unplaced	formal-science	field-of-study science	no accepted parent reaches a root
 unplaced	format	accomplishment act activity event info information phenomenon process	no accepted parent reaches a root
 unplaced	formation	artifact phenomenon placement universe	no accepted parent reaches a root
 unplaced	forte	amateur ambiance asset circumstance civilisation crowd custom danger	no accepted parent reaches a root
@@ -7246,7 +7259,6 @@ unplaced	night	quantity time-period	no accepted parent reaches a root
 unplaced	nightmare	cognition dream event imagination information phenomenon	no accepted parent reaches a root
 unplaced	node		no accepted parent reaches a root
 unplaced	nonpayment	loss.possession normal property	no accepted parent reaches a root
-unplaced	nonprofit	agent organization	no accepted parent reaches a root
 unplaced	nonsense	amateur ambiance circumstance civilisation crowd custom danger expert	no accepted parent reaches a root
 unplaced	norm	information normal property standard	no accepted parent reaches a root
 unplaced	normal	cognition property	no accepted parent reaches a root
@@ -7593,7 +7605,6 @@ unplaced	soap	artifact chemical compound material part substance	no accepted par
 unplaced	soccer	act activity event football game sport	no accepted parent reaches a root
 unplaced	social-welfare	accomplishment acquisition act activity aid event gift phenomenon	no accepted parent reaches a root
 unplaced	society	group normal property	no accepted parent reaches a root
-unplaced	software-agent	agent	no accepted parent reaches a root
 unplaced	solidarity	amateur ambiance circumstance civilisation crowd custom danger expert	no accepted parent reaches a root
 unplaced	solution	accomplishment act amateur ambiance circumstance civilisation crowd custom	no accepted parent reaches a root
 unplaced	soprano	artist human information mammal musician professional property singer	no accepted parent reaches a root
@@ -7683,7 +7694,6 @@ unplaced	tension	condition.state normal property	no accepted parent reaches a ro
 unplaced	tensity	condition.state property	no accepted parent reaches a root
 unplaced	term	information line-of-text part phenomenon universe word	no accepted parent reaches a root
 unplaced	terminology	information line-of-text part phenomenon universe word	no accepted parent reaches a root
-unplaced	text-message	document information message	no accepted parent reaches a root
 unplaced	texture	property	no accepted parent reaches a root
 unplaced	the-true		no accepted parent reaches a root
 unplaced	theme	cognition idea signified	no accepted parent reaches a root
@@ -7727,7 +7737,6 @@ unplaced	trail	artifact cognition evidence place route signified	no accepted par
 unplaced	train	artifact physical-object place product vehicle	no accepted parent reaches a root
 unplaced	trainer	agent human leader mammal organism person physical-object property	no accepted parent reaches a root
 unplaced	trait	property	no accepted parent reaches a root
-unplaced	transport-ticket	document information ticket	no accepted parent reaches a root
 unplaced	transportation	act commerce commercial-enterprise event institution structure system transaction	no accepted parent reaches a root
 unplaced	trench	artifact physical-object	no accepted parent reaches a root
 unplaced	trial	action cognition conflict event quantity situation thinking	no accepted parent reaches a root
@@ -7773,7 +7782,6 @@ unplaced	violation	act activity event normal property situation	no accepted pare
 unplaced	virtue	good information norm normal property	no accepted parent reaches a root
 unplaced	vision	cognition imagination	no accepted parent reaches a root
 unplaced	voice	ability property	no accepted parent reaches a root
-unplaced	voice-message	audio document information message	no accepted parent reaches a root
 unplaced	volition	cognition event phenomenon	no accepted parent reaches a root
 unplaced	volume	property	no accepted parent reaches a root
 unplaced	volume.communication	artifact physical-object publication	no accepted parent reaches a root
