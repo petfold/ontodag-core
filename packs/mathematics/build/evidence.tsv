@@ -32,6 +32,12 @@ acute-triangle	attribute	single	wordnet
 acute-triangle	polygon	single	wordnet	
 acute-triangle	shape	single	wordnet	
 acute-triangle	triangle	accepted	claude wordnet	
+acyclic-graph	hypergraph	single	wikidata	
+acyclic-graph	mathematical-graph	single	wikidata	
+acyclic-graph	mathematical-structure	single	wikidata	
+acyclic-graph	multigraph	dissented	wikidata	
+acyclic-graph	planar-graph	dissented	wikidata	
+acyclic-graph	undirected-graph	accepted	peter	
 adaptation	expression	single	opencyc	
 additive-inverse	amateur	single	sumo	
 additive-inverse	ambiance	single	sumo	
@@ -56,6 +62,8 @@ additive-inverse	status	single	sumo
 additive-inverse	tension	single	sumo	
 additive-inverse	way	single	sumo	
 address	expression	single	opencyc	
+adjacency-matrix	matrix	accepted	peter wikidata	
+adjacency-matrix	tensor	single	wikidata	
 admission	expression	single	opencyc	
 advice	expression	single	opencyc	
 affine-geometry	cognition	single	wordnet	
@@ -218,7 +226,7 @@ automorphism	binary-relation	single	wikidata
 automorphism	endomorphism	accepted	claude wikidata	
 automorphism	function	single	wikidata	
 automorphism	homomorphism	single	wikidata	
-automorphism	isomorphism	single	wikidata	
+automorphism	isomorphism	accepted	claude wikidata	
 automorphism	mathematical-set	single	wikidata	
 automorphism	mathematical-structure	single	wikidata	
 average	statistic	accepted	claude wordnet	
@@ -278,6 +286,10 @@ binomial-theorem	information	single	wordnet
 binomial-theorem	proposition	single	wordnet	
 binomial-theorem	signified	single	sumo	
 binomial-theorem	theorem	accepted	claude wordnet	
+bipartite-graph	hypergraph	single	wikidata	
+bipartite-graph	mathematical-graph	single	wikidata	
+bipartite-graph	mathematical-structure	single	wikidata	
+bipartite-graph	undirected-graph	accepted	claude wikidata	
 biquadratic	function	single	wordnet	
 biquadratic	mathematical-relation	single	wordnet	
 biquadratic	polynomial	accepted	claude wordnet	
@@ -358,7 +370,7 @@ charter	expression	single	opencyc
 church	expression	single	opencyc	
 circle	algebraic-structure	single	wikidata	
 circle	conic-section	accepted	claude wikidata wordnet	
-circle	geometric-shape	single	wikidata	
+circle	geometric-shape	accepted	claude wikidata	
 circle	mathematical-set	single	wikidata	
 circle	mathematical-structure	single	wikidata	
 citizen	expression	single	opencyc	
@@ -397,6 +409,11 @@ commutative-ring	mathematical-structure	single	wikidata
 comparison	expression	single	opencyc	
 compassion	range-of-a-function	single	sumo	
 competition	expression	single	opencyc	
+complete-graph	connected-graph	accepted	claude wikidata	
+complete-graph	hypergraph	single	wikidata	
+complete-graph	mathematical-graph	single	wikidata	
+complete-graph	mathematical-structure	single	wikidata	
+complete-graph	undirected-graph	single	wikidata	
 complex-number	algebraic-structure	single	wikidata	
 complex-number	mathematical-lattice	single	wikidata	
 complex-number	mathematical-structure	single	wikidata	
@@ -430,6 +447,19 @@ conic-section	mathematical-structure	single	wikidata
 conic-section	property	single	sumo	
 conic-section	shape	accepted	sumo wordnet	
 conjecture	proposition	accepted	peter	
+connected-component	algebraic-structure	single	wikidata	
+connected-component	connected-graph	accepted	claude wikidata	
+connected-component	hypergraph	single	wikidata	
+connected-component	mathematical-graph	single	wikidata	
+connected-component	mathematical-set	single	wikidata	
+connected-component	mathematical-structure	single	wikidata	
+connected-component	subgraph	accepted	claude wikidata	
+connected-component	subset	single	wikidata	
+connected-component	undirected-graph	single	wikidata	
+connected-graph	hypergraph	single	wikidata	
+connected-graph	mathematical-graph	single	wikidata	
+connected-graph	mathematical-structure	single	wikidata	
+connected-graph	undirected-graph	accepted	claude wikidata	
 conscience	expression	single	opencyc	
 consensus	expression	single	opencyc	
 consumer	expression	single	opencyc	
@@ -560,6 +590,10 @@ curvilinear-regression	regression	accepted	claude wordnet
 curvilinear-regression	statistical-method	single	wordnet	
 curvilinear-regression	vector	single	sumo	
 custom	expression	single	opencyc	
+cyclic-graph	hypergraph	single	wikidata	
+cyclic-graph	mathematical-graph	single	wikidata	
+cyclic-graph	mathematical-structure	single	wikidata	
+cyclic-graph	undirected-graph	accepted	claude wikidata	
 cyclic-group	abelian-group	accepted	claude wikidata	
 cyclic-group	algebraic-magma	single	wikidata	
 cyclic-group	algebraic-structure	single	wikidata	
@@ -664,6 +698,17 @@ differentiation	procedure	accepted	sumo wordnet
 differentiation	universe	single	sumo	
 differentiation	volition	single	sumo	
 diplomat	expression	single	opencyc	
+directed-acyclic-graph	directed-graph	accepted	opencyc wikidata	
+directed-acyclic-graph	hypergraph	single	wikidata	
+directed-acyclic-graph	mathematical-graph	single	wikidata	
+directed-acyclic-graph	mathematical-structure	single	wikidata	
+directed-acyclic-graph	multigraph	single	opencyc	
+directed-acyclic-graph	system	single	opencyc	
+directed-graph	hypergraph	single	wikidata	
+directed-graph	mathematical-graph	accepted	claude wikidata	
+directed-graph	mathematical-structure	single	wikidata	
+directed-graph	multigraph	single	opencyc	
+directed-graph	system	single	opencyc	
 director	expression	single	opencyc	
 disk	manifold	single	opencyc	
 disposition	range-of-a-function	single	sumo	
@@ -783,7 +828,8 @@ euclidean-space	mathematical-space	single	wordnet
 euclidean-space	metric-space	accepted	claude wordnet	
 euclidean-space	subset	single	sumo	
 euclidean-vector	concept	accepted	peter	
-euclidean-vector	tensor	single	wikidata	
+euclidean-vector	tensor	dissented	wikidata	
+eulerian-path	graph-path	accepted	peter	
 even-number	algebraic-number	single	wikidata	
 even-number	algebraic-structure	single	wikidata	
 even-number	complex-number	single	wikidata	
@@ -939,6 +985,11 @@ first-order-correlation	statistics	single	wordnet
 fisherman	expression	single	opencyc	
 fist	expression	single	opencyc	
 flag	expression	single	opencyc	
+flow-network	directed-graph	accepted	claude wikidata	
+flow-network	hypergraph	single	wikidata	
+flow-network	mathematical-graph	single	wikidata	
+flow-network	mathematical-structure	single	wikidata	
+flow-network	weighted-graph	accepted	claude wikidata	
 foreman	expression	single	opencyc	
 forestry	expression	single	opencyc	
 form	expression	single	opencyc	
@@ -1032,6 +1083,44 @@ grab-sample	cognition	single	wordnet
 grab-sample	example	single	wordnet	
 grab-sample	sample	accepted	claude wordnet	
 grant	expression	single	opencyc	
+graph-clique	algebraic-structure	single	wikidata	
+graph-clique	complete-graph	accepted	claude wikidata	
+graph-clique	connected-graph	single	wikidata	
+graph-clique	hypergraph	single	wikidata	
+graph-clique	induced-subgraph	accepted	peter wikidata	
+graph-clique	mathematical-graph	single	wikidata	
+graph-clique	mathematical-set	single	wikidata	
+graph-clique	mathematical-structure	single	wikidata	
+graph-clique	subgraph	single	wikidata	
+graph-clique	subset	single	wikidata	
+graph-clique	undirected-graph	single	wikidata	
+graph-colouring	algebraic-structure	single	wikidata	
+graph-colouring	binary-relation	single	wikidata	
+graph-colouring	concept	accepted	peter	
+graph-colouring	function	dissented	wikidata	
+graph-colouring	mathematical-set	single	wikidata	
+graph-colouring	mathematical-structure	single	wikidata	
+graph-cycle	subgraph	accepted	peter	
+graph-homomorphism	algebraic-structure	single	wikidata	
+graph-homomorphism	binary-relation	single	wikidata	
+graph-homomorphism	function	single	wikidata	
+graph-homomorphism	homomorphism	accepted	claude wikidata	
+graph-homomorphism	mathematical-set	single	wikidata	
+graph-homomorphism	mathematical-structure	single	wikidata	
+graph-isomorphism	algebraic-structure	single	wikidata	
+graph-isomorphism	binary-relation	single	wikidata	
+graph-isomorphism	function	single	wikidata	
+graph-isomorphism	graph-homomorphism	accepted	claude wikidata	
+graph-isomorphism	homomorphism	single	wikidata	
+graph-isomorphism	isomorphism	accepted	claude wikidata	
+graph-isomorphism	mathematical-set	single	wikidata	
+graph-isomorphism	mathematical-structure	single	wikidata	
+graph-matching	algebraic-structure	single	wikidata	
+graph-matching	mathematical-set	dissented	wikidata	
+graph-matching	mathematical-structure	single	wikidata	
+graph-matching	subgraph	accepted	peter	
+graph-path	subgraph	accepted	peter	
+graph-vertex	concept	accepted	peter	
 graveness	range-of-a-function	single	sumo	
 greeting	expression	single	opencyc	
 greeting-card	expression	single	opencyc	
@@ -1047,6 +1136,7 @@ guard	expression	single	opencyc
 guerrilla	expression	single	opencyc	
 guidepost	expression	single	opencyc	
 haircut	expression	single	opencyc	
+hamiltonian-path	graph-path	accepted	peter wikidata	
 hand	expression	single	opencyc	
 harmonic-mean	average	single	wordnet	
 harmonic-mean	cognition	single	wordnet	
@@ -1059,6 +1149,7 @@ harmonic-progression	function	dissented	wikidata
 harmonic-progression	group	dissented	wordnet	
 harmonic-progression	mathematical-set	single	wikidata	
 harmonic-progression	mathematical-structure	single	wikidata	
+hasse-diagram	diagram	accepted	peter	
 headline	expression	single	opencyc	
 heptagon	algebraic-structure	single	wikidata	
 heptagon	attribute	accepted	sumo wordnet	
@@ -1116,6 +1207,7 @@ hyperbolic-geometry	mathematics	single	wordnet
 hyperbolic-geometry	non-euclidean-geometry	accepted	claude wordnet	
 hyperbolic-geometry	science	single	wordnet	
 hyperbolic-geometry	signified	single	sumo	
+hypergraph	mathematical-structure	accepted	claude wikidata	
 hypothesis	expression	single	opencyc	
 idea	expression	single	opencyc	
 ideal	expression	single	opencyc	
@@ -1141,11 +1233,26 @@ imaginary-number	totally-ordered-set	single	wikidata
 immigrant	expression	single	opencyc	
 imposter	expression	single	opencyc	
 incentive	expression	single	opencyc	
+independent-set	algebraic-structure	single	wikidata	
+independent-set	hypergraph	single	wikidata	
+independent-set	induced-subgraph	accepted	claude wikidata	
+independent-set	mathematical-graph	single	wikidata	
+independent-set	mathematical-set	single	wikidata	
+independent-set	mathematical-structure	single	wikidata	
+independent-set	subgraph	single	wikidata	
+independent-set	subset	single	wikidata	
 independent-variable	cognition	single	wordnet	
 independent-variable	concept	single	wordnet	
 independent-variable	idea	single	wordnet	
 independent-variable	quantity	accepted	sumo wordnet	
 independent-variable	variable	accepted	claude wordnet	
+induced-subgraph	algebraic-structure	single	wikidata	
+induced-subgraph	hypergraph	single	wikidata	
+induced-subgraph	mathematical-graph	single	wikidata	
+induced-subgraph	mathematical-set	single	wikidata	
+induced-subgraph	mathematical-structure	single	wikidata	
+induced-subgraph	subgraph	accepted	claude wikidata	
+induced-subgraph	subset	single	wikidata	
 infinite-set	algebraic-structure	single	wikidata	
 infinite-set	mathematical-set	accepted	claude wikidata	
 infinite-set	mathematical-structure	single	wikidata	
@@ -1413,10 +1520,8 @@ mathematical-field	subgroup	dissented	wikidata
 mathematical-field	subset	rejected	sumo wikidata	
 mathematical-field	topological-space	single	wikidata	
 mathematical-field	vector-space	single	wikidata	
-mathematical-graph	algebraic-structure	single	wikidata	
+mathematical-graph	hypergraph	dissented	wikidata	
 mathematical-graph	mathematical-structure	accepted	peter wikidata	
-mathematical-graph	partially-ordered-set	dissented	wikidata	
-mathematical-graph	topological-space	dissented	wikidata	
 mathematical-group	algebraic-magma	single	wikidata	
 mathematical-group	algebraic-structure	single	wikidata	
 mathematical-group	mathematical-set	accepted	sumo wordnet	
@@ -1487,7 +1592,8 @@ mathematician	structure	single	opencyc
 mathematician	system	single	opencyc	
 mathematician	vertebrate	single	opencyc	
 mathematician	worker	single	opencyc	
-matrix	tensor	single	wikidata	
+matrix	mathematical-structure	accepted	peter	
+matrix	tensor	dissented	wikidata	
 matrix-addition	accomplishment	single	sumo	
 matrix-addition	act	accepted	sumo wordnet	
 matrix-addition	activity	accepted	sumo wordnet	
@@ -1608,6 +1714,22 @@ metric-space	topological-space	accepted	claude wikidata
 military-action	expression	single	opencyc	
 military-operation	expression	single	opencyc	
 miner	expression	single	opencyc	
+minimum-spanning-tree	acyclic-graph	single	wikidata	
+minimum-spanning-tree	algebraic-structure	single	wikidata	
+minimum-spanning-tree	bipartite-graph	single	wikidata	
+minimum-spanning-tree	connected-graph	single	wikidata	
+minimum-spanning-tree	hypergraph	single	wikidata	
+minimum-spanning-tree	mathematical-graph	single	wikidata	
+minimum-spanning-tree	mathematical-set	single	wikidata	
+minimum-spanning-tree	mathematical-structure	single	wikidata	
+minimum-spanning-tree	multigraph	single	wikidata	
+minimum-spanning-tree	planar-graph	single	wikidata	
+minimum-spanning-tree	spanning-tree	accepted	claude wikidata	
+minimum-spanning-tree	subgraph	single	wikidata	
+minimum-spanning-tree	subset	single	wikidata	
+minimum-spanning-tree	tree-graph	single	wikidata	
+minimum-spanning-tree	undirected-graph	single	wikidata	
+minimum-spanning-tree	weighted-graph	accepted	claude wikidata	
 minister	expression	single	opencyc	
 ministry	expression	single	opencyc	
 mistake	expression	single	opencyc	
@@ -1640,6 +1762,10 @@ multicollinearity	multivariate-analysis	single	wordnet
 multicollinearity	routine	single	sumo	
 multicollinearity	signified	single	sumo	
 multicollinearity	statistical-method	single	wordnet	
+multigraph	hypergraph	dissented	wikidata	
+multigraph	mathematical-graph	accepted	peter	
+multigraph	mathematical-structure	single	wikidata	
+multigraph	system	single	opencyc	
 multiple-correlation-coefficient	cognition	single	wordnet	
 multiple-correlation-coefficient	correlation-coefficient	accepted	claude wordnet	
 multiple-correlation-coefficient	parametric-statistic	single	wordnet	
@@ -2000,10 +2126,13 @@ philosophy	expression	single	opencyc
 photographer	expression	single	opencyc	
 photographic-film	expression	single	opencyc	
 plan	expression	single	opencyc	
+planar-graph	hypergraph	single	wikidata	
+planar-graph	mathematical-graph	accepted	claude wikidata	
+planar-graph	mathematical-structure	single	wikidata	
 plane	algebraic-structure	single	wikidata	
 plane	attribute	accepted	sumo wordnet	
 plane	curve	single	sumo	
-plane	geometric-shape	single	wikidata	
+plane	geometric-shape	accepted	claude wikidata	
 plane	mathematical-set	dissented	wikidata	
 plane	mathematical-structure	single	wikidata	
 plane	property	single	sumo	
@@ -2036,7 +2165,7 @@ politics	expression	single	opencyc
 polygon	algebraic-structure	single	wikidata	
 polygon	attribute	accepted	sumo wordnet	
 polygon	curve	single	sumo	
-polygon	geometric-shape	single	wikidata	
+polygon	geometric-shape	accepted	claude wikidata	
 polygon	manifold	single	opencyc	
 polygon	mathematical-set	single	wikidata	
 polygon	mathematical-structure	single	wikidata	
@@ -2046,6 +2175,11 @@ polygon	shape	accepted	sumo wordnet
 polygon	surface	single	opencyc	
 polynomial	function	accepted	claude wordnet	
 polynomial	mathematical-relation	single	wordnet	
+polytree	directed-acyclic-graph	accepted	claude wikidata	
+polytree	directed-graph	single	wikidata	
+polytree	hypergraph	single	wikidata	
+polytree	mathematical-graph	single	wikidata	
+polytree	mathematical-structure	single	wikidata	
 pop-music	expression	single	opencyc	
 porter	expression	single	opencyc	
 portrait	expression	single	opencyc	
@@ -2250,6 +2384,7 @@ rational-number	totally-ordered-set	single	wikidata
 rationalization	act	dissented	wordnet	
 rationalization	event	single	wordnet	
 rationalization	mathematical-operation	accepted	peter	
+reachability	binary-relation	accepted	peter	
 real-number	algebraic-structure	single	wikidata	
 real-number	complex-number	accepted	opencyc wikidata	
 real-number	interval	single	opencyc	
@@ -2413,6 +2548,12 @@ right-triangle	triangle	accepted	opencyc wordnet
 ritual	expression	single	opencyc	
 root	mathematical-set	accepted	sumo wordnet	
 root	subset	single	sumo	
+rooted-tree	directed-acyclic-graph	single	wikidata	
+rooted-tree	directed-graph	single	wikidata	
+rooted-tree	hypergraph	single	wikidata	
+rooted-tree	mathematical-graph	single	wikidata	
+rooted-tree	mathematical-structure	single	wikidata	
+rooted-tree	polytree	accepted	claude wikidata	
 rounding	act	single	wordnet	
 rounding	algebraic-structure	single	wikidata	
 rounding	binary-relation	single	wikidata	
@@ -2445,7 +2586,7 @@ sampling	situation	single	opencyc
 sampling	universe	single	sumo	
 sampling	volition	single	sumo	
 scalar	number	accepted	peter	
-scalar	tensor	single	wikidata	
+scalar	tensor	dissented	wikidata	
 scalar-field	algebraic-structure	single	wikidata	
 scalar-field	binary-relation	single	wikidata	
 scalar-field	function	accepted	opencyc wikidata	
@@ -2520,6 +2661,7 @@ short-division	division	accepted	claude wordnet
 short-division	event	single	wordnet	
 short-division	mathematical-operation	single	wordnet	
 short-division	procedure	single	wordnet	
+shortest-path	graph-path	accepted	peter	
 shower	expression	single	opencyc	
 sign	expression	single	opencyc	
 signal	expression	single	opencyc	
@@ -2556,8 +2698,22 @@ solid-geometry	mathematics	single	wordnet
 solid-geometry	science	single	wordnet	
 solid-geometry	signified	single	sumo	
 soprano	expression	single	opencyc	
+spanning-tree	acyclic-graph	single	wikidata	
+spanning-tree	algebraic-structure	single	wikidata	
+spanning-tree	bipartite-graph	single	wikidata	
+spanning-tree	connected-graph	single	wikidata	
+spanning-tree	hypergraph	single	wikidata	
+spanning-tree	mathematical-graph	single	wikidata	
+spanning-tree	mathematical-set	single	wikidata	
+spanning-tree	mathematical-structure	single	wikidata	
+spanning-tree	multigraph	single	wikidata	
+spanning-tree	planar-graph	single	wikidata	
+spanning-tree	subgraph	accepted	claude wikidata	
+spanning-tree	subset	single	wikidata	
+spanning-tree	tree-graph	accepted	claude wikidata	
+spanning-tree	undirected-graph	single	wikidata	
 sphere	algebraic-structure	single	wikidata	
-sphere	geometric-shape	single	wikidata	
+sphere	geometric-shape	accepted	claude wikidata	
 sphere	mathematical-set	dissented	wikidata	
 sphere	mathematical-structure	single	wikidata	
 spherical-geometry	cognition	single	wordnet	
@@ -2568,7 +2724,7 @@ spherical-geometry	science	single	wordnet
 spherical-geometry	signified	single	sumo	
 spherical-polygon	algebraic-structure	single	wikidata	
 spherical-polygon	attribute	accepted	sumo wordnet	
-spherical-polygon	geometric-shape	single	wikidata	
+spherical-polygon	geometric-shape	accepted	claude wikidata	
 spherical-polygon	mathematical-set	single	wikidata	
 spherical-polygon	mathematical-structure	single	wikidata	
 spherical-polygon	polygon	accepted	claude wordnet	
@@ -2653,9 +2809,26 @@ stratified-sample	sample-distribution	accepted	claude wordnet
 stratified-sample	statistical-distribution	single	wordnet	
 stream	expression	single	opencyc	
 stroke	expression	single	opencyc	
+strongly-connected-component	algebraic-structure	single	wikidata	
+strongly-connected-component	connected-component	accepted	claude wikidata	
+strongly-connected-component	connected-graph	single	wikidata	
+strongly-connected-component	directed-graph	accepted	claude wikidata	
+strongly-connected-component	hypergraph	single	wikidata	
+strongly-connected-component	mathematical-graph	single	wikidata	
+strongly-connected-component	mathematical-set	single	wikidata	
+strongly-connected-component	mathematical-structure	single	wikidata	
+strongly-connected-component	subgraph	single	wikidata	
+strongly-connected-component	subset	single	wikidata	
+strongly-connected-component	undirected-graph	single	wikidata	
 sub-interval	interval	accepted	claude wordnet	
 sub-interval	mathematical-set	accepted	sumo wordnet	
 sub-interval	subset	single	sumo	
+subgraph	algebraic-structure	single	wikidata	
+subgraph	hypergraph	single	wikidata	
+subgraph	mathematical-graph	accepted	claude wikidata	
+subgraph	mathematical-set	single	wikidata	
+subgraph	mathematical-structure	single	wikidata	
+subgraph	subset	dissented	wikidata	
 subgroup	algebraic-magma	single	wikidata	
 subgroup	algebraic-structure	single	wikidata	
 subgroup	mathematical-group	accepted	claude wikidata wordnet	
@@ -2752,6 +2925,7 @@ time-series	quantity	single	sumo
 time-series	statistic	accepted	claude wordnet	
 time-series	vector	single	sumo	
 token	expression	single	opencyc	
+topological-ordering	total-order	accepted	peter	
 topological-space	mathematical-structure	accepted	peter wikidata	
 topology	cognition	single	wordnet	
 topology	field-of-study	accepted	sumo wordnet	
@@ -2797,6 +2971,13 @@ transcendental-number	real-number	accepted	opencyc wikidata
 transcendental-number	totally-ordered-set	single	wikidata	
 transformation	function	accepted	claude wordnet	
 transformation	mathematical-relation	single	wordnet	
+transitive-closure	algebraic-structure	single	wikidata	
+transitive-closure	binary-relation	single	wikidata	
+transitive-closure	mathematical-operation	accepted	peter	
+transitive-closure	mathematical-set	single	wikidata	
+transitive-closure	mathematical-structure	single	wikidata	
+transitive-closure	transitive-relation	accepted	claude wikidata	
+transitive-reduction	mathematical-operation	accepted	peter	
 transitive-relation	algebraic-structure	single	wikidata	
 transitive-relation	binary-relation	accepted	claude wikidata	
 transitive-relation	mathematical-set	single	wikidata	
@@ -2851,10 +3032,15 @@ trapezoid	surface	single	opencyc
 treasurer	expression	single	opencyc	
 treatment	expression	single	opencyc	
 treaty	expression	single	opencyc	
-tree-graph	algebraic-structure	single	wikidata	
-tree-graph	mathematical-graph	accepted	peter	
+tree-graph	acyclic-graph	accepted	claude wikidata	
+tree-graph	bipartite-graph	accepted	claude wikidata	
+tree-graph	connected-graph	accepted	claude wikidata	
+tree-graph	hypergraph	single	wikidata	
+tree-graph	mathematical-graph	accepted	peter wikidata	
 tree-graph	mathematical-structure	single	wikidata	
-tree-graph	partially-ordered-set	dissented	wikidata	
+tree-graph	multigraph	single	wikidata	
+tree-graph	planar-graph	single	wikidata	
+tree-graph	undirected-graph	single	wikidata	
 trial	expression	single	opencyc	
 triangle	manifold	single	opencyc	
 triangle	plane	single	opencyc	
@@ -2889,6 +3075,9 @@ undecagon	attribute	accepted	sumo wordnet
 undecagon	polygon	accepted	claude wordnet	
 undecagon	property	single	sumo	
 undecagon	shape	accepted	sumo wordnet	
+undirected-graph	hypergraph	single	wikidata	
+undirected-graph	mathematical-graph	accepted	claude wikidata	
+undirected-graph	mathematical-structure	single	wikidata	
 universal-set	algebraic-structure	single	wikidata	
 universal-set	mathematical-set	accepted	sumo wikidata wordnet	
 universal-set	mathematical-structure	single	wikidata	
@@ -2965,6 +3154,7 @@ weight	mathematical-set	single	wikidata
 weight	mathematical-structure	single	wikidata	
 weight	number	accepted	peter sumo wikidata	
 weight	quantity	single	sumo	
+weighted-graph	mathematical-graph	accepted	peter	
 well-order	algebraic-structure	single	wikidata	
 well-order	antisymmetric-relation	single	wikidata	
 well-order	binary-relation	single	wikidata	

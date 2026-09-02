@@ -1,5 +1,7 @@
 # ontodag store v1
 abelian-group mathematical-group mathematical-module topological-space
+acyclic-graph multigraph planar-graph
+adjacency-matrix matrix
 affine-transformation automorphism bijection
 algebra-over-a-field mathematical-ring vector-space
 algebraic-magma algebraic-structure
@@ -13,23 +15,30 @@ banach-space mathematical-structure
 bijection surjective-function
 binary-relation mathematical-set
 binomial polynomial
+bipartite-graph undirected-graph
 boolean-algebra commutative-ring mathematical-lattice monoid
 cardinal-number ordinal-number
 cardinality function
 circle conic-section geometric-shape
 commutative-ring mathematical-module mathematical-ring
+complete-graph connected-graph
 complex-number quaternion totally-ordered-set
 composite-number '*'
 conic-section mathematical-set
 conjecture '*'
+connected-component connected-graph subgraph
+connected-graph undirected-graph
 convergence function
 correlation-coefficient number
 countable-set mathematical-set
+cyclic-graph undirected-graph
 cyclic-group abelian-group
 decagon polygon
 degree-of-freedom function
 deviation number
 diagonal totally-ordered-set
+directed-acyclic-graph directed-graph
+directed-graph mathematical-graph
 divergence function
 division-ring mathematical-ring
 dodecagon polygon
@@ -38,20 +47,35 @@ empty-set '*'
 endomorphism homomorphism
 equivalence-relation preorder symmetric-relation
 euclidean-vector tensor
+eulerian-path '*'
 even-number integer
 finite-field finite-set mathematical-field
 finite-group mathematical-group
 finite-set countable-set
+flow-network directed-graph weighted-graph
 fractal mathematical-set
 function binary-relation
 geometric-shape mathematical-set
+graph-clique complete-graph induced-subgraph
+graph-colouring function
+graph-cycle '*'
+graph-homomorphism homomorphism
+graph-isomorphism graph-homomorphism isomorphism
+graph-matching mathematical-set
+graph-path '*'
+graph-vertex '*'
+hamiltonian-path graph-path
 harmonic-progression function
+hasse-diagram '*'
 heptagon polygon
 hexagon polygon
 hilbert-space banach-space vector-space
 homogeneous-polynomial polynomial
 homomorphism function
+hypergraph mathematical-structure
 imaginary-number complex-number
+independent-set induced-subgraph
+induced-subgraph subgraph
 infinite-set mathematical-set
 infinitesimal number
 injective-function function
@@ -69,7 +93,7 @@ lower-bound partial-order
 manifold topological-space
 mathematical-category mathematical-structure
 mathematical-field abelian-group algebra-over-a-field commutative-ring division-ring subgroup
-mathematical-graph partially-ordered-set topological-space
+mathematical-graph hypergraph
 mathematical-group monoid quasigroup
 mathematical-lattice partially-ordered-set
 mathematical-module algebraic-structure
@@ -80,8 +104,10 @@ mathematical-structure '*'
 matrix tensor
 metric-function function
 metric-space topological-space
+minimum-spanning-tree spanning-tree weighted-graph
 monic-polynomial polynomial
 monoid semigroup
+multigraph hypergraph
 natural-number '*'
 nonagon polygon
 number '*'
@@ -96,9 +122,11 @@ partially-ordered-set algebraic-structure
 pencil-of-lines mathematical-set
 pentagon polygon
 permutation bijection
+planar-graph mathematical-graph
 plane geometric-shape subset
 polygon geometric-shape
 polynomial '*'
+polytree directed-acyclic-graph
 power-set '*'
 preorder reflexive-relation transitive-relation
 prime-number '*'
@@ -107,18 +135,24 @@ quasigroup algebraic-magma
 quaternion number
 range-of-a-function mathematical-set
 rational-number algebraic-number real-number
+reachability '*'
 real-number complex-number
 recursive-definition function
 reflexive-relation binary-relation
+rooted-tree polytree
 rounding mathematical-operation
 scalar tensor
 scalar-field function
 semigroup algebraic-magma
 semilattice semigroup
+shortest-path '*'
 singleton-set finite-set totally-ordered-set
+spanning-tree subgraph tree-graph
 sphere geometric-shape
 spherical-polygon geometric-shape
 spherical-triangle spherical-polygon
+strongly-connected-component connected-component directed-graph
+subgraph mathematical-graph subset
 subgroup mathematical-group subset
 subset mathematical-set
 surjective-function function
@@ -126,18 +160,23 @@ symmetric-relation binary-relation
 symmetry function
 tensor '*'
 theorem '*'
+topological-ordering '*'
 topological-space mathematical-structure
 total-order partial-order
 totally-ordered-set mathematical-lattice
 transcendental-number irrational-number
+transitive-closure transitive-relation
+transitive-reduction '*'
 transitive-relation binary-relation
 translation isometry
-tree-graph partially-ordered-set
+tree-graph acyclic-graph bipartite-graph connected-graph
 trigonometric-function mathematical-operation
 uncountable-set infinite-set
+undirected-graph mathematical-graph
 universal-set mathematical-set
 upper-bound partial-order
 variance number
 vector-space mathematical-module
 weight function number
+weighted-graph '*'
 well-order total-order

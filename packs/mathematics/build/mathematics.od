@@ -5,7 +5,9 @@ accuracy attribute
 act '*'
 activity '*'
 acute-triangle triangle
+acyclic-graph undirected-graph
 additive-inverse number
+adjacency-matrix matrix
 affine-geometry geometry
 affine-transformation bijection transformation
 age-norm average
@@ -32,7 +34,7 @@ arithmetic-operation mathematical-operation
 arithmetic-progression concept
 asymmetry attribute
 attribute '*'
-automorphism endomorphism
+automorphism endomorphism isomorphism
 average '*'
 axiom proposition
 banach-space mathematical-structure
@@ -44,6 +46,7 @@ binary-relation mathematical-relation
 binomial polynomial quantity
 binomial-distribution statistical-distribution
 binomial-theorem theorem
+bipartite-graph undirected-graph
 biquadratic polynomial
 biquadratic-equation equation
 biserial-correlation-coefficient correlation-coefficient
@@ -60,6 +63,7 @@ cognition '*'
 collection '*'
 combinatorial-combination mathematical-operation
 commutative-ring mathematical-ring
+complete-graph connected-graph
 complex-number number
 composite-number natural-number
 concave-polygon polygon
@@ -67,6 +71,8 @@ concept '*'
 conditional-probability probability
 conic-section attribute shape
 conjecture proposition
+connected-component connected-graph subgraph
+connected-graph undirected-graph
 convergence event mathematical-series
 convex-polygon polygon
 coordinate-origin geometric-intersection
@@ -83,6 +89,7 @@ curve '*'
 curved-shape '*'
 curvilinear-correlation statistical-correlation
 curvilinear-regression regression
+cyclic-graph undirected-graph
 cyclic-group abelian-group
 decagon polygon
 decile statistic
@@ -93,9 +100,12 @@ dependent-variable quantity variable
 deviation number statistic
 diagonal mathematical-set
 diagonal-line shape
+diagram '*'
 differential-calculus calculus
 differential-equation equation mathematical-statement
 differentiation mathematical-operation
+directed-acyclic-graph directed-graph
+directed-graph mathematical-graph
 divergence mathematical-series
 division arithmetic-operation
 division-ring mathematical-ring
@@ -115,6 +125,7 @@ equivalence-relation preorder symmetric-relation
 'euclid'"'"'s-axiom' proposition
 euclidean-space metric-space
 euclidean-vector concept
+eulerian-path graph-path
 even-number integer
 evenness parity
 event '*'
@@ -135,6 +146,7 @@ finite-field finite-set mathematical-field
 finite-group mathematical-group
 finite-set countable-set
 first-order-correlation partial-correlation
+flow-network directed-graph weighted-graph
 fourier-series mathematical-series
 fractal shape
 fractal-geometry geometry
@@ -154,19 +166,32 @@ geometric-series mathematical-series
 geometric-shape shape
 geometry field-of-study mathematics
 grab-sample sample
+graph-clique complete-graph induced-subgraph
+graph-colouring concept
+graph-cycle subgraph
+graph-homomorphism homomorphism
+graph-isomorphism graph-homomorphism isomorphism
+graph-matching subgraph
+graph-path subgraph
+graph-vertex concept
 group-theory field-of-study mathematics
+hamiltonian-path graph-path
 harmonic-mean mean
 harmonic-progression concept
+hasse-diagram diagram
 heptagon polygon
 hexagon polygon
 hilbert-space banach-space metric-space vector-space
 homogeneous-polynomial polynomial
 homomorphism function
 hyperbolic-geometry non-euclidean-geometry
+hypergraph mathematical-structure
 idea '*'
 identity-element operator
 imaginary-number complex-number
+independent-set induced-subgraph
 independent-variable quantity variable
+induced-subgraph subgraph
 infinite-set mathematical-set
 infinitesimal number quantity variable
 information '*'
@@ -221,6 +246,7 @@ mathematical-statement information
 mathematical-structure concept
 mathematician scientist
 mathematics '*'
+matrix mathematical-structure
 matrix-addition matrix-operation
 matrix-algebra algebra
 matrix-inversion matrix-operation
@@ -236,11 +262,13 @@ metamathematics field-of-study mathematics
 method '*'
 metric-function function
 metric-space mathematical-space topological-space
+minimum-spanning-tree spanning-tree weighted-graph
 mode average
 moment statistic
 monic-polynomial polynomial
 monoid semigroup
 multicollinearity multiple-regression
+multigraph mathematical-graph
 multiple-correlation-coefficient correlation-coefficient
 multiple-regression multivariate-analysis
 multiplication arithmetic-operation
@@ -279,12 +307,14 @@ pentagon polygon
 percentile statistic
 permutation bijection mathematical-operation
 phi-coefficient nonparametric-statistic
-plane attribute shape
+planar-graph mathematical-graph
+plane attribute geometric-shape
 plane-geometry geometry
 plane-section shape
 poisson-distribution statistical-distribution
-polygon attribute shape
+polygon attribute geometric-shape
 polynomial function
+polytree directed-acyclic-graph
 positive-correlation statistical-correlation
 power-series mathematical-series
 power-set mathematical-set
@@ -317,6 +347,7 @@ rank-order-correlation-coefficient nonparametric-statistic
 ratio '*'
 rational-number algebraic-number real-number
 rationalization mathematical-operation
+reachability binary-relation
 real-number complex-number
 rectangle parallelogram
 recursion procedure
@@ -336,6 +367,7 @@ rhomboid parallelogram
 rhombus parallelogram
 right-triangle polygon triangle
 root mathematical-set
+rooted-tree polytree
 rounding mathematical-operation
 sample '*'
 sample-distribution statistical-distribution
@@ -354,10 +386,12 @@ series-expansion function
 set-theory field-of-study mathematics
 shape '*'
 short-division division
+shortest-path graph-path
 simultaneous-equations equation information
 sine trigonometric-function
 singleton-set finite-set
 solid-geometry geometry
+spanning-tree subgraph tree-graph
 spherical-geometry geometry
 spherical-polygon polygon
 spherical-triangle spherical-polygon
@@ -373,7 +407,9 @@ statistical-method method
 statistical-population collection
 statistician expert
 stratified-sample sample-distribution
+strongly-connected-component connected-component directed-graph
 sub-interval interval
+subgraph mathematical-graph
 subgroup mathematical-group subset
 subpopulation statistical-population
 subset mathematical-set
@@ -391,25 +427,29 @@ tetrachoric-correlation-coefficient correlation-coefficient
 theorem proposition
 threshold-function function
 time-series statistic
+topological-ordering total-order
 topological-space mathematical-structure
 topology field-of-study mathematics
 total-order partial-order
 totally-ordered-set mathematical-lattice
 transcendental-number irrational-number
 transformation function
+transitive-closure mathematical-operation transitive-relation
+transitive-reduction mathematical-operation
 transitive-relation binary-relation
 transitivity mathematical-relation
 translation isometry transformation
 transposition act activity event procedure
 trapezium quadrilateral
 trapezoid quadrilateral
-tree-graph mathematical-graph
+tree-graph acyclic-graph bipartite-graph connected-graph
 triangle '*'
 trigonometric-function function
 trigonometry field-of-study mathematics
 truncation-error event
 uncountable-set infinite-set
 undecagon polygon
+undirected-graph mathematical-graph
 universal-set mathematical-set
 upper-bound number
 variable '*'
@@ -420,4 +460,5 @@ vital-statistics statistic
 wave-equation differential-equation
 wedge attribute shape
 weight number
+weighted-graph mathematical-graph
 well-order total-order

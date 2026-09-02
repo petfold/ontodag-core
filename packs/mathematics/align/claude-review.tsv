@@ -401,3 +401,55 @@ singleton-set	totally-ordered-set	reject	trivially true, useless as filing
 well-order	total-order	accept			
 # --- mathematics batch 8: wordnet  ---
 first-order-correlation	partial-correlation	accept		06032066	06031866
+# --- mathematics wikidata batch 7 (graph theory 1): wikidata  ---
+automorphism	isomorphism	accept			
+circle	geometric-shape	accept		13873502	
+directed-graph	mathematical-graph	accept			
+euclidean-vector	tensor	reject	a vector is filed as a vector; rank-1 tensor is the technical view		
+graph-colouring	function	reject	an assignment problem, not a function		13783816
+graph-homomorphism	homomorphism	accept			
+graph-isomorphism	isomorphism	accept			
+graph-matching	mathematical-set	reject	everything-is-a-set		07999699
+hypergraph	mathematical-structure	accept			
+matrix	tensor	reject	same	08267640	
+planar-graph	mathematical-graph	accept			
+plane	geometric-shape	accept		13861050	
+polygon	geometric-shape	accept		13866144	
+scalar	tensor	reject	same		
+spanning-tree	tree-graph	accept			
+sphere	geometric-shape	accept		13898899	
+spherical-polygon	geometric-shape	accept		13883603	
+subgraph	mathematical-graph	accept			
+subgraph	subset	reject	same		08001209
+transitive-closure	transitive-relation	accept			
+undirected-graph	mathematical-graph	accept			
+# --- mathematics wikidata batch 8 (graph theory 2): wikidata  ---
+acyclic-graph	planar-graph	reject	true of forests but not how anyone files an acyclic graph		
+bipartite-graph	undirected-graph	accept			
+connected-component	subgraph	accept			
+connected-graph	undirected-graph	accept			
+cyclic-graph	undirected-graph	accept			
+flow-network	directed-graph	accept			
+graph-isomorphism	graph-homomorphism	accept			
+induced-subgraph	subgraph	accept			
+mathematical-graph	hypergraph	reject	inverted generalisation		
+minimum-spanning-tree	spanning-tree	accept			
+multigraph	hypergraph	reject	same		
+polytree	directed-acyclic-graph	accept			
+spanning-tree	subgraph	accept			
+strongly-connected-component	directed-graph	accept			
+# --- mathematics wikidata batch 9 (graph theory 3): wikidata  ---
+clique	induced-subgraph	reject	label collision — core's clique is the circle of people; the graph clique becomes graph-clique	08240633	
+complete-graph	connected-graph	accept			
+connected-component	connected-graph	accept			
+independent-set	induced-subgraph	accept			
+rooted-tree	polytree	accept			
+strongly-connected-component	connected-component	accept			
+tree-graph	bipartite-graph	accept			
+tree-graph	connected-graph	accept			
+# --- mathematics wikidata batch 10 (graph theory 4): wikidata  ---
+acyclic-graph	multigraph	reject	inverted generalisation		
+flow-network	weighted-graph	accept			
+graph-clique	complete-graph	accept			
+minimum-spanning-tree	weighted-graph	accept			
+tree-graph	acyclic-graph	accept			

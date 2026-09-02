@@ -59,3 +59,23 @@ scalar	number	accept	a single field element		05121418
 euclidean-vector	concept	accept	a geometric object with magnitude and direction		05835747
 tensor	concept	accept	a multilinear map		05835747
 mathematical-field	subset	reject	WordNet's field ⊑ set chain; a field is filed as a ring, not as a subset	08005260	08001209
+# proposed by Claude 2026-09-03: graph theory placements Wikidata's pull did not carry
+acyclic-graph	undirected-graph	accept	a graph without cycles		
+multigraph	mathematical-graph	accept	a graph allowing parallel edges		
+weighted-graph	mathematical-graph	accept	a graph with edge weights		
+matrix	mathematical-structure	accept	an array of expressions; core left `matrix` unplaced	08267640	
+adjacency-matrix	matrix	accept	the matrix of a graph		08267640
+graph-vertex	concept	accept	a node of a graph		05835747
+graph-path	subgraph	accept	a path is a subgraph		
+graph-cycle	subgraph	accept	a cycle is a subgraph — what loopmarket settles		
+eulerian-path	graph-path	accept			
+hamiltonian-path	graph-path	accept			
+graph-clique	induced-subgraph	accept	a complete induced subgraph		
+graph-matching	subgraph	accept	a set of disjoint edges		
+hasse-diagram	diagram	accept	the drawing of a poset's transitive reduction		03186399
+reachability	binary-relation	accept	whether one vertex reaches another		
+topological-ordering	total-order	accept	a linear extension of a DAG's order — what OntoDAG's topological_sort produces		
+transitive-reduction	mathematical-operation	accept	the minimal graph with the same reachability — OntoDAG's canonical form		00869583
+transitive-closure	mathematical-operation	accept	the reachability relation as an operation		00869583
+shortest-path	graph-path	accept	the shortest path between two vertices (Wikidata's item is the problem)		
+graph-colouring	concept	accept	an assignment of colours to vertices		05835747
