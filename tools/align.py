@@ -28,6 +28,18 @@ LABEL_SOURCES = {"schemaorg": "cache/schemaorg.pkl", "yago": "cache/yago.pkl",
                  "dolce": "cache/dolce.pkl", "dul": "cache/dul.pkl"}
 
 
+# WordNet's lexicographer files (lex_filenum -> semantic field). A collision
+# between two synsets of one lemma is disambiguated by this field rather than
+# by a number, so names stay stable when the concept set changes and read as
+# the qualifier they are: chip.food, chip.artifact.
+LEXNAMES = {"03": "tops", "04": "act", "05": "animal", "06": "artifact", "07": "attribute",
+            "08": "body", "09": "cognition", "10": "communication", "11": "event", "12": "feeling",
+            "13": "food", "14": "group", "15": "location", "16": "motive", "17": "object",
+            "18": "person", "19": "phenomenon", "20": "plant", "21": "possession", "22": "process",
+            "23": "quantity", "24": "relation", "25": "shape", "26": "state", "27": "substance",
+            "28": "time"}
+
+
 def read_synsets():
     """offset -> (lemmas, gloss)."""
     out = {}
@@ -37,7 +49,7 @@ def read_synsets():
         head, _, gloss = line.partition("|")
         f = head.split()
         nw = int(f[3], 16)
-        out[f[0]] = ([f[4 + 2 * i] for i in range(nw)], gloss.strip())
+        out[f[0]] = ([f[4 + 2 * i] for i in range(nw)], gloss.strip(), LEXNAMES.get(f[1], f[1]))
     return out
 
 
@@ -130,12 +142,14 @@ def main():
             continue
         name = normalise(synsets[off][0][0])
         if name in concepts:
-            n = 2
-            while f"{name}.{n}" in concepts:
-                n += 1
-            queue.append((f"{name}.{n}", f"name collision with {name!r}; needs a qualifier — "
-                          + synsets[off][1][:60], off))
-            name = f"{name}.{n}"
+            base, qual = name, f"{name}.{synsets[off][2]}"
+            if qual in concepts:                      # same lemma, same field: number it
+                n = 2
+                while f"{qual}.{n}" in concepts:
+                    n += 1
+                qual = f"{qual}.{n}"
+            queue.append((qual, f"name collision with {base!r} — " + synsets[off][1][:60], off))
+            name = qual
         concepts[name] = off
         by_offset[off] = name
     for name, ov in overrides.items():
@@ -151,8 +165,11 @@ def main():
         if "wordnet" in overrides.get(name, {}):          # an override moves the hub too
             off = overrides[name]["wordnet"] or None
             off = None if off == "-" else off
-        lemmas = synsets[off][0] if off else [name.replace("-", "_")]
-        keys = {normalise(l) for l in lemmas} | {normalise(name)}
+        # Match on the concept's own name or the synset's FIRST lemma only:
+        # matching every lemma made `saying` (lemmas saying/expression/locution)
+        # align to Cyc's `expression`, 32K descendants of noise.
+        lemmas = synsets[off][0][:1] if off else [name.replace("-", "_")]
+        keys = {normalise(l) for l in lemmas} | {normalise(name.split(".")[0])}
         row = {"name": name, "wordnet": off or "", "sumo": "", "sumo_rel": ""}
         if off and off in sumo_map:
             row["sumo"], row["sumo_rel"] = sumo_map[off]
