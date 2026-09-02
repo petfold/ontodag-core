@@ -5,6 +5,7 @@ ability disposition
 academy school
 accident event
 account norm
+acknowledgment action
 acquisition action
 action event
 activity '*'
@@ -24,13 +25,13 @@ air '*'
 aircraft device
 airline institution
 airplane aircraft
-aisle container device site
+aisle cavity container device route site
 alarm-clock clock
 alcohol '*'
 alliance structure
 allotment norm
 allowance norm
-altar container device platform site
+altar cavity container device platform site
 amateur '*'
 ambulance container land-vehicle product
 amendment event
@@ -41,6 +42,7 @@ angel '*'
 anger frustration
 ankle part structure
 annex container device site
+annotation statement
 ant insect
 apartment home suite
 appearance event
@@ -83,7 +85,7 @@ band structure
 bandage device
 bank site
 bankruptcy '*'
-banquet action
+banquet social-occasion
 bargain action
 bark event signal
 baron human
@@ -93,19 +95,19 @@ baseball device
 basis information
 basket container device
 basketball device
-bathroom container device part site
-bathtub part tub
-battery device part
+bathroom cavity container device part site
+bathtub cavity part tub
+battery device part route
 battlefield site
 bay body-of-water
 beach environment
 beam '*'
 beard device part structure
 bed furniture
-bedroom container device part site
+bedroom cavity container device part site
 bee insect
 beer product solution
-bend body-of-water
+bend body-of-water route
 beneficiary '*'
 betrothal action
 bible artifact copy image publication
@@ -129,7 +131,7 @@ boot shoe
 bottle container device
 bottom side
 boundary-line line site
-bowl container device
+bowl cavity container device
 box container device
 brain part structure
 brake device part product
@@ -141,7 +143,7 @@ breeze weather
 brewery institution
 brick block device
 bride human
-bridge device site
+bridge device route site
 brother structure
 brush hardware tool
 bubble surface
@@ -154,7 +156,7 @@ bus container land-vehicle
 bus-ticket ticket
 businessman adult professional
 butter dairy-product
-cab container device part site
+cab cavity container device part site
 cabin home
 cable cord device
 cage container device
@@ -177,7 +179,8 @@ cash-register device
 castle container device site
 cat mammal
 cathedral temple
-cave site
+cave cavity site
+cavity '*'
 ceiling artifact part
 census action
 certificate artifact image
@@ -194,7 +197,7 @@ cheek part structure
 cheese dairy-product
 chemical-reaction event
 cherry part structure
-chimney container device
+chimney container device route
 chin part structure
 chip artifact
 chocolate artifact
@@ -204,7 +207,7 @@ citizen human
 city site structure
 civilian human
 class meeting
-classroom container device part site
+classroom cavity container device part site
 clemency action
 cliff slope
 clipping device image surface
@@ -219,7 +222,7 @@ cognition event
 coin cash token
 collar artifact part surface
 college institution
-colon container line part structure
+colon container line part route structure
 color '*'
 column article publication
 coma illness
@@ -240,6 +243,8 @@ component device product
 composer musician
 compromise action norm
 computer device product structure
+computer-mouse device product
+computer-virus information
 concept idea
 concern emotion
 concession compromise
@@ -266,7 +271,7 @@ conversation dialogue
 conversion event
 copy '*'
 copyright norm
-cord artifact line
+cord artifact line route
 corruption action
 costume clothing
 cotton '*'
@@ -291,12 +296,15 @@ cricket insect
 criminal worker
 crisis emergency
 critic human
+critique information
 crop structure
 cross artifact site
 crossing action
 crowd '*'
 crown device
 crutch device
+cube '*'
+cubicle cavity container device site
 cup container device
 cupboard box part
 currency device image
@@ -310,6 +318,7 @@ cycle event
 cylinder '*'
 dairy institution
 dairy-product artifact
+day-of-the-month '*'
 daylight sunlight
 death action illness
 decade time-period
@@ -320,11 +329,12 @@ deer mammal
 deficit event
 definition information
 deity '*'
+demo information
 denial statement
 density '*'
 dentist adult professional
 departure action
-depression site
+depression cavity site
 desire emotion
 desk container device furniture
 despair misery
@@ -350,6 +360,7 @@ disappointment sorrow
 discovery car
 discrimination '*'
 disease '*'
+disgrace situation
 dish container device
 disk cylinder
 disposition '*'
@@ -373,9 +384,10 @@ dragon reptile
 draw site
 drawer container device part
 drill tool
+drinking action ending
 drive event
 driver human
-driveway artifact site surface
+driveway artifact route site surface
 drop particle
 drug '*'
 drum can
@@ -385,6 +397,7 @@ eagle bird
 ear detector part structure
 earth-science field-of-study
 earthquake event
+economic-system system
 economy transaction
 edge artifact line
 egg-white '*'
@@ -394,7 +407,7 @@ electric-shock event
 electricity '*'
 electron event
 elephant mammal
-elevator container device part site
+elevator cavity container device part site
 elite human
 embarrassment emotion
 embryo structure
@@ -402,12 +415,13 @@ emergency situation
 emotion '*'
 empire site structure
 ending event
+endurance '*'
 enemy '*'
 engine device
 engineer adult professional
 entertainment fun
 enthusiasm excitement
-entrance '*'
+entrance cavity
 envelope container device
 environment site
 equation statement
@@ -425,7 +439,7 @@ exchange transaction
 excitement emotion
 excuse information
 executive adult worker
-exit '*'
+exit cavity
 expectation context
 expert human
 explosion ending
@@ -450,12 +464,13 @@ feedback action
 feminist human
 fence artifact obstacle
 ferry ship
-festival action
+festival social-occasion
 fever action illness
 fiber cord
 field-of-study information
 fig part structure
 fight action conflict
+file-cabinet box furniture
 film surface
 filter device
 financial-document '*'
@@ -466,6 +481,7 @@ fisherman worker
 fist hand
 fixture '*'
 flag artifact surface
+flame '*'
 flash lamp
 flashlight hardware lamp
 fleet '*'
@@ -498,22 +514,24 @@ furniture artifact
 fury car
 galaxy '*'
 game information
-garage container device site
+garage cavity container device site
 garbage '*'
 garden artifact site
 garlic '*'
 gasoline '*'
 gate site
-gem mineral
+gem ground mineral
 genius human
 gesture image signal situation
 ghost '*'
 giant human
 glacier environment ice
+globe artifact image
 glove clothing
 glow event
 glue artifact
 goat mammal
+good-will emotion
 governor executive
 gown clothing
 grant norm
@@ -524,22 +542,27 @@ greenhouse container device site
 greeting action
 grief sorrow
 grimace action
+grinder device
 grip action
 grocery-store structure
+ground '*'
 guard athlete worker
 guerrilla warrior
 guidepost artifact image
 guilt emotion
+guinea-pig mammal
 guitar musical-instrument
 gun device product weapon
-gutter container device part
+gun-barrel '*'
+gutter container device part route
 habit clothing
 habitat environment
 haircut action
-hall container device site
-hallway container device site
+hall cavity container device site
+hallway cavity container device route site
 ham artifact meat
 hand part structure
+handbag container device
 hardware '*'
 hat clothing
 hay '*'
@@ -555,7 +578,7 @@ herd '*'
 hero human
 heroin artifact medicine
 hide '*'
-hill site
+hill ground site
 hip part structure
 historic-period time-period
 history narrative
@@ -594,6 +617,7 @@ inspiration emotion
 instinct '*'
 institution structure
 insurgent human
+intellect human
 intelligence '*'
 interest situation
 interface information
@@ -603,6 +627,7 @@ invertebrate structure
 isolation event
 ivory '*'
 jacket coat
+jail-cell cavity container device part site
 jam artifact
 jar container device
 jaw part structure
@@ -621,7 +646,7 @@ justification information
 kettle pan
 kidney part structure
 kit device
-kitchen container device site
+kitchen cavity container device site
 knee part structure
 knife hardware tool
 knot line
@@ -629,14 +654,14 @@ label artifact image
 labor work
 lace device surface
 lack '*'
-ladder tool
+ladder route tool
 lake body-of-water
 lamb sheep virgin
 lamp device
 land-vehicle device
 landlord human
 landscape site
-lane artifact part site surface
+lane artifact part route site surface
 language information
 lap part structure
 laser device
@@ -654,6 +679,7 @@ lecture information
 legend narrative
 length distance size
 lesson teaching
+letter-of-the-alphabet information
 license permission
 lid part
 light event
@@ -666,13 +692,14 @@ lion mammal
 lip part structure
 liver part structure
 livestock structure
-lobby container device site
+lobby cavity container device site
 locomotive land-vehicle
 loop '*'
 looting action
 lottery competition
-love satisfaction
+love good-will satisfaction
 loyalty emotion
+lozenge medicine pill
 luck '*'
 lumber artifact
 lunch meal
@@ -686,10 +713,12 @@ makeup artifact
 mammal vertebrate
 man adult human
 management action
+manager adult worker
 mannequin artifact
 manual norm
 march time-period
 marketing action
+married-couple couple
 marsh environment
 mask clothing
 mass '*'
@@ -698,7 +727,7 @@ maze puzzle
 meal '*'
 meat '*'
 medicine '*'
-meeting action
+meeting social-occasion
 member '*'
 memo '*'
 memorial artifact
@@ -711,6 +740,7 @@ microorganism structure
 microphone detector device part product
 midnight time-period
 military-action action
+military-operation action
 mill site
 miner worker
 mineral '*'
@@ -742,7 +772,8 @@ mosquito insect
 mother human
 motorcycle container land-vehicle
 motto information
-mountain site
+mountain ground site
+mountain-range site
 mouse mammal
 mouth part structure
 mug container device
@@ -756,12 +787,13 @@ myth information
 narrative information
 nationality '*'
 natural-language language
+natural-law norm
 nausea illness
 navy structure
 neck part structure
 necktie clothing
 needle shaft
-nerve line part structure
+nerve line part route structure
 nest artifact site
 net filter
 network system
@@ -779,7 +811,7 @@ number '*'
 numeral information
 nun woman worker
 nurse adult professional
-nursery container device site
+nursery cavity container device site
 oak '*'
 objection emotion
 observation remark
@@ -796,7 +828,7 @@ operation surgery
 opportunity situation
 option contract
 orchestra structure
-orgy action
+orgy social-occasion
 outline information
 output '*'
 oven box
@@ -811,7 +843,7 @@ palace home
 pan container device
 panel '*'
 panic emotion
-parade ritual
+parade ritual social-occasion
 paradox information
 paragraph information
 pardon action
@@ -823,11 +855,11 @@ particle '*'
 partner peer
 partnership structure
 party '*'
-passion satisfaction
+passion good-will satisfaction
 pasture countryside
 patch device piece surface
 patent norm
-path '*'
+path route
 patience emotion
 patient human
 pattern '*'
@@ -842,14 +874,17 @@ pensioner human
 perfume artifact
 permission norm
 personal-identification-number information
+perspective '*'
 phase '*'
-philosopher adult professional
+philosopher adult intellect professional
 philosophy information
 phone device
 photographer adult artist professional
+photographic-film device
 piano furniture musical-instrument
 piece part
-pier artifact line site
+pier artifact line route site
+pig mammal
 pigeon bird
 pill artifact
 pillow device
@@ -869,9 +904,10 @@ pneumonia illness
 pocket container device part surface
 poem information
 poetry information
-point site
+point ground site
 polish human
 political-campaign campaign politics
+political-party structure
 politician adult worker
 politics action
 pony horse
@@ -922,7 +958,7 @@ publication '*'
 publisher adult professional
 pudding artifact
 pulse '*'
-pupil part structure
+pupil cavity part structure
 pursuit '*'
 puzzle '*'
 question information
@@ -937,12 +973,13 @@ radio-receiver device part product
 railroad-track '*'
 rain weather
 rainbow light
-rally action
+rake hardware tool
+rally social-occasion
 ranch site
 rat mammal
 ratio number
 receipt artifact image
-reception action
+reception social-occasion
 recess action
 recession action
 recommendation information
@@ -951,6 +988,7 @@ referee adult professional
 referral context
 reflection image light signal
 refugee civilian
+refugee-camp site
 registration action
 rehabilitation work
 reign action
@@ -975,16 +1013,17 @@ review article
 revolution politics
 rhetoric action worker
 rib bone
-ribbon clothing line
+ribbon clothing line route
 ridge '*'
 rifle gun
 ring device
 ritual action
-river body-of-water environment obstacle
+river body-of-water environment obstacle route
 rocket projectile
 role '*'
 roof artifact part surface
-rope device line
+rope device line route
+route '*'
 routine action
 row '*'
 rug device
@@ -998,11 +1037,12 @@ salmon vertebrate
 salt '*'
 salvation support
 sample '*'
-sand '*'
+sand ground
 sandal shoe
 satisfaction emotion
 sauce artifact
 sausage artifact
+scale-of-measurement information
 scenario '*'
 scholar worker
 scholarship norm
@@ -1019,7 +1059,7 @@ secretary adult worker
 security-system device product
 sediment soil
 seed part structure
-seminar action
+seminar social-occasion
 sentence information
 sermon action
 servant worker
@@ -1040,7 +1080,7 @@ shop structure
 shopping action
 shower action
 side surface
-sidewalk concrete site
+sidewalk concrete route site
 sight device product
 sign '*'
 sign-of-the-zodiac '*'
@@ -1060,14 +1100,16 @@ slave human
 sleeve artifact part surface
 slope site
 smoke '*'
-snake line reptile
+snake line reptile route
 soap artifact
+social-club structure
+social-occasion action
 social-science field-of-study
 sock clothing
 sodium metal
 sofa device furniture
 software-agent '*'
-soil '*'
+soil ground
 soldier warrior
 solution '*'
 soprano singer
@@ -1090,7 +1132,7 @@ spreadsheet '*'
 squad structure
 stadium container device site
 staff structure
-stairway artifact site
+stairway artifact route site
 stake shaft
 stalk part structure
 state site structure
@@ -1101,28 +1143,30 @@ steak artifact meat
 steam '*'
 step artifact
 stick '*'
-stitch device line
+stitch device line route
 stomach container part structure
 stool device furniture
 stop '*'
+strand line route
 strap device part
 straw '*'
 strawberry part structure
 stream information
-street device site surface
+street device route site surface
 streetcar device
 strip lumber
 stroke illness
 structure system
 studio suite
-study container device site
+study cavity container device site
 suburb site
 success action
 sugar '*'
 suicide action ending illness
-suite container device site
+suite cavity container device site
 sulfur mineral
 summary information
+summer-camp structure
 summit site
 sun '*'
 sunday '*'
@@ -1135,6 +1179,7 @@ surface '*'
 surgeon doctor
 surgery action
 surprise emotion
+surrender action
 survivor structure
 sweater clothing
 swing device
@@ -1145,8 +1190,10 @@ syndrome disease
 system '*'
 tan human
 tank land-vehicle product structure
-tape device line
+tape device line route
+tape-recording action
 target device
+tariff '*'
 taste cognition
 tax-return artifact image
 taxpayer '*'
@@ -1190,9 +1237,11 @@ tournament competition
 towel device
 tower artifact site
 tract information publication
+traction '*'
 trader adult professional
 traffic action
 tragedy information
+trail artifact route site
 train-ticket ticket
 trainer worker
 transaction action
@@ -1210,6 +1259,7 @@ tree obstacle structure
 trench '*'
 trial action conflict
 triangle surface
+tribunal structure
 trophy device
 trouble action
 truck container land-vehicle
@@ -1218,7 +1268,7 @@ trustee '*'
 tub container device
 tumor tissue
 tune musical-composition
-tunnel artifact site
+tunnel artifact cavity route site
 turkey bird
 twilight '*'
 ulcer part structure
@@ -1235,7 +1285,7 @@ valley depression
 van car
 vegetable '*'
 vegetable-oil oil
-vein container line part structure
+vein container line part route structure
 velvet device surface
 verdict '*'
 vertebrate structure
@@ -1252,7 +1302,7 @@ virus microorganism
 visit action
 visitor human
 void information
-volcano site
+volcano ground site
 volunteer human
 vote consensus
 voter adult human
@@ -1263,25 +1313,25 @@ waiter worker
 wake reception
 war fight
 warrior adult professional
-washbasin container device
+washbasin cavity container device
 watch clock
-water-faucet container device
+water-faucet container device route
 watercraft container device
-waterfall body-of-water
+waterfall body-of-water route
 weapon artifact
 weather event
 web-site information
-wedding action
+wedding social-occasion
 week time-period
 weekend time-period
 weight device
-well device site
+well device route site
 whale mammal
 wheel device part
 whip device
 will artifact image
 wine artifact
-wire device line
+wire device line route
 withdrawal transaction
 wolf mammal
 woman adult human

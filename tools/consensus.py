@@ -12,7 +12,7 @@ import csv
 import sys
 from collections import defaultdict
 from pathlib import Path
-from graph import dag_from_parents, write_od
+from graph import dag_from_parents, write_od, resolve_reviews
 
 ROOT = Path(__file__).resolve().parent.parent
 MIN_WITNESSES = 2
@@ -28,23 +28,16 @@ def main():
     # Claude's per-edge judgements are a witness like the others: an accept
     # adds `claude` to the edge's witnesses (and its reversal to `against`),
     # a reject records a dissent that keeps the edge out of consensus.
-    p = ROOT / "align/claude-review.tsv"
     dissent = set()
-    if p.exists():
-        for row in csv.reader(open(p), delimiter="\t"):
-            if row and not row[0].startswith("#") and len(row) >= 3:
-                pair = (row[0].strip(), row[1].strip())
-                if row[2].strip() == "accept":
-                    for_[pair].add("claude")
-                    against[(pair[1], pair[0])].add("claude")
-                elif row[2].strip() == "reject":
-                    dissent.add(pair)
+    for sub, sup, dec, _ in resolve_reviews(ROOT / "align/claude-review.tsv", ROOT / "align/concepts.tsv"):
+        if dec == "accept":
+            for_[(sub, sup)].add("claude")
+            against[(sup, sub)].add("claude")
+        elif dec == "reject":
+            dissent.add((sub, sup))
     review = {}
-    p = ROOT / "align/review.tsv"
-    if p.exists():
-        for row in csv.reader(open(p), delimiter="\t"):
-            if row and not row[0].startswith("#") and len(row) >= 3:
-                review[(row[0].strip(), row[1].strip())] = row[2].strip()
+    for sub, sup, dec, _ in resolve_reviews(ROOT / "align/review.tsv", ROOT / "align/concepts.tsv"):
+        review[(sub, sup)] = dec
     roots = {l.strip() for l in open(ROOT / "align/roots.txt") if l.strip() and not l.startswith("#")}
 
     status = {}

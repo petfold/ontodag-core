@@ -15,6 +15,9 @@ accident	event
 accident	situation
 account	information
 account	norm
+acknowledgment	action
+acknowledgment	event
+acknowledgment	situation
 acquisition	action
 acquisition	event
 acquisition	situation
@@ -53,8 +56,10 @@ airplane	aircraft
 airplane	artifact
 airplane	device
 aisle	artifact
+aisle	cavity
 aisle	container
 aisle	device
+aisle	route
 aisle	site
 alarm-clock	artifact
 alarm-clock	clock
@@ -66,6 +71,7 @@ allotment	norm
 allowance	information
 allowance	norm
 altar	artifact
+altar	cavity
 altar	container
 altar	device
 altar	platform
@@ -98,11 +104,13 @@ annex	artifact
 annex	container
 annex	device
 annex	site
+annotation	statement
 ant	insect
 ant	invertebrate
 ant	structure
 ant	system
 apartment	artifact
+apartment	cavity
 apartment	container
 apartment	device
 apartment	home
@@ -191,6 +199,7 @@ auditor	vertebrate
 auditor	worker
 avenue	artifact
 avenue	device
+avenue	route
 avenue	site
 avenue	street
 avenue	surface
@@ -215,6 +224,7 @@ bank	site
 banquet	action
 banquet	event
 banquet	situation
+banquet	social-occasion
 bargain	action
 bargain	event
 bargain	situation
@@ -243,11 +253,13 @@ basket	device
 basketball	artifact
 basketball	device
 bathroom	artifact
+bathroom	cavity
 bathroom	container
 bathroom	device
 bathroom	part
 bathroom	site
 bathtub	artifact
+bathtub	cavity
 bathtub	container
 bathtub	device
 bathtub	part
@@ -255,6 +267,7 @@ bathtub	tub
 battery	artifact
 battery	device
 battery	part
+battery	route
 battlefield	site
 bay	body-of-water
 bay	site
@@ -268,6 +281,7 @@ beard	system
 bed	artifact
 bed	furniture
 bedroom	artifact
+bedroom	cavity
 bedroom	container
 bedroom	device
 bedroom	part
@@ -280,6 +294,7 @@ beer	artifact
 beer	product
 beer	solution
 bend	body-of-water
+bend	route
 bend	site
 betrothal	action
 betrothal	event
@@ -345,6 +360,7 @@ bottom	surface
 boundary-line	line
 boundary-line	site
 bowl	artifact
+bowl	cavity
 bowl	container
 bowl	device
 box	artifact
@@ -379,6 +395,7 @@ bride	system
 bride	vertebrate
 bridge	artifact
 bridge	device
+bridge	route
 bridge	site
 brother	structure
 brother	system
@@ -421,6 +438,7 @@ businessman	worker
 butter	artifact
 butter	dairy-product
 cab	artifact
+cab	cavity
 cab	container
 cab	device
 cab	part
@@ -434,6 +452,7 @@ cable	artifact
 cable	cord
 cable	device
 cable	line
+cable	route
 cage	artifact
 cage	container
 cage	device
@@ -489,6 +508,7 @@ cathedral	container
 cathedral	device
 cathedral	site
 cathedral	temple
+cave	cavity
 cave	site
 ceiling	artifact
 ceiling	part
@@ -531,6 +551,7 @@ cherry	system
 chimney	artifact
 chimney	container
 chimney	device
+chimney	route
 chin	part
 chin	structure
 chin	system
@@ -557,7 +578,9 @@ class	action
 class	event
 class	meeting
 class	situation
+class	social-occasion
 classroom	artifact
+classroom	cavity
 classroom	container
 classroom	device
 classroom	part
@@ -608,6 +631,7 @@ college	system
 colon	container
 colon	line
 colon	part
+colon	route
 colon	structure
 colon	system
 column	article
@@ -652,6 +676,10 @@ computer	device
 computer	product
 computer	structure
 computer	system
+computer-mouse	artifact
+computer-mouse	device
+computer-mouse	product
+computer-virus	information
 concept	idea
 concept	information
 concern	emotion
@@ -676,6 +704,7 @@ conference	convention
 conference	event
 conference	meeting
 conference	situation
+conference	social-occasion
 confession	action
 confession	event
 confession	situation
@@ -708,6 +737,7 @@ convention	action
 convention	event
 convention	meeting
 convention	situation
+convention	social-occasion
 conversation	action
 conversation	dialogue
 conversation	event
@@ -718,6 +748,7 @@ copyright	information
 copyright	norm
 cord	artifact
 cord	line
+cord	route
 corruption	action
 corruption	event
 corruption	situation
@@ -781,6 +812,7 @@ critic	mammal
 critic	structure
 critic	system
 critic	vertebrate
+critique	information
 crop	structure
 crop	system
 cross	artifact
@@ -792,6 +824,11 @@ crown	artifact
 crown	device
 crutch	artifact
 crutch	device
+cubicle	artifact
+cubicle	cavity
+cubicle	container
+cubicle	device
+cubicle	site
 cup	artifact
 cup	container
 cup	device
@@ -839,6 +876,7 @@ deer	vertebrate
 deficit	event
 deficit	situation
 definition	information
+demo	information
 denial	statement
 dentist	adult
 dentist	human
@@ -851,6 +889,7 @@ dentist	worker
 departure	action
 departure	event
 departure	situation
+depression	cavity
 depression	site
 desire	emotion
 desk	artifact
@@ -920,6 +959,7 @@ discovery	car
 discovery	container
 discovery	device
 discovery	land-vehicle
+disgrace	situation
 dish	artifact
 dish	container
 dish	device
@@ -977,6 +1017,10 @@ drawer	part
 drill	artifact
 drill	device
 drill	tool
+drinking	action
+drinking	ending
+drinking	event
+drinking	situation
 drive	event
 drive	situation
 driver	human
@@ -985,6 +1029,7 @@ driver	structure
 driver	system
 driver	vertebrate
 driveway	artifact
+driveway	route
 driveway	site
 driveway	surface
 drop	particle
@@ -1009,6 +1054,7 @@ earth-science	field-of-study
 earth-science	information
 earthquake	event
 earthquake	situation
+economic-system	system
 economy	action
 economy	event
 economy	situation
@@ -1027,6 +1073,7 @@ elephant	structure
 elephant	system
 elephant	vertebrate
 elevator	artifact
+elevator	cavity
 elevator	container
 elevator	device
 elevator	part
@@ -1060,6 +1107,7 @@ entertainment	fun
 entertainment	satisfaction
 enthusiasm	emotion
 enthusiasm	excitement
+entrance	cavity
 envelope	artifact
 envelope	container
 envelope	device
@@ -1095,6 +1143,7 @@ executive	structure
 executive	system
 executive	vertebrate
 executive	worker
+exit	cavity
 expectation	context
 expectation	information
 expert	human
@@ -1163,6 +1212,7 @@ ferry	watercraft
 festival	action
 festival	event
 festival	situation
+festival	social-occasion
 fever	action
 fever	event
 fever	illness
@@ -1170,6 +1220,7 @@ fever	situation
 fiber	artifact
 fiber	cord
 fiber	line
+fiber	route
 field-of-study	information
 fig	part
 fig	structure
@@ -1178,6 +1229,11 @@ fight	action
 fight	conflict
 fight	event
 fight	situation
+file-cabinet	artifact
+file-cabinet	box
+file-cabinet	container
+file-cabinet	device
+file-cabinet	furniture
 film	surface
 filter	artifact
 filter	device
@@ -1277,12 +1333,14 @@ fury	device
 fury	land-vehicle
 game	information
 garage	artifact
+garage	cavity
 garage	container
 garage	device
 garage	site
 garden	artifact
 garden	site
 gate	site
+gem	ground
 gem	mineral
 genius	human
 genius	mammal
@@ -1300,6 +1358,8 @@ giant	vertebrate
 glacier	environment
 glacier	ice
 glacier	site
+globe	artifact
+globe	image
 glove	artifact
 glove	clothing
 glove	device
@@ -1310,6 +1370,7 @@ goat	mammal
 goat	structure
 goat	system
 goat	vertebrate
+good-will	emotion
 governor	adult
 governor	executive
 governor	human
@@ -1340,6 +1401,8 @@ grief	sorrow
 grimace	action
 grimace	event
 grimace	situation
+grinder	artifact
+grinder	device
 grip	action
 grip	event
 grip	situation
@@ -1364,6 +1427,10 @@ guerrilla	worker
 guidepost	artifact
 guidepost	image
 guilt	emotion
+guinea-pig	mammal
+guinea-pig	structure
+guinea-pig	system
+guinea-pig	vertebrate
 guitar	artifact
 guitar	device
 guitar	musical-instrument
@@ -1375,6 +1442,7 @@ gutter	artifact
 gutter	container
 gutter	device
 gutter	part
+gutter	route
 habit	artifact
 habit	clothing
 habit	device
@@ -1384,18 +1452,24 @@ haircut	action
 haircut	event
 haircut	situation
 hall	artifact
+hall	cavity
 hall	container
 hall	device
 hall	site
 hallway	artifact
+hallway	cavity
 hallway	container
 hallway	device
+hallway	route
 hallway	site
 ham	artifact
 ham	meat
 hand	part
 hand	structure
 hand	system
+handbag	artifact
+handbag	container
+handbag	device
 hat	artifact
 hat	clothing
 hat	device
@@ -1423,6 +1497,7 @@ hero	system
 hero	vertebrate
 heroin	artifact
 heroin	medicine
+hill	ground
 hill	site
 hip	part
 hip	structure
@@ -1507,6 +1582,11 @@ insurgent	mammal
 insurgent	structure
 insurgent	system
 insurgent	vertebrate
+intellect	human
+intellect	mammal
+intellect	structure
+intellect	system
+intellect	vertebrate
 interest	situation
 interface	information
 intervention	action
@@ -1523,6 +1603,12 @@ jacket	artifact
 jacket	clothing
 jacket	coat
 jacket	device
+jail-cell	artifact
+jail-cell	cavity
+jail-cell	container
+jail-cell	device
+jail-cell	part
+jail-cell	site
 jam	artifact
 jar	artifact
 jar	container
@@ -1569,6 +1655,7 @@ kidney	system
 kit	artifact
 kit	device
 kitchen	artifact
+kitchen	cavity
 kitchen	container
 kitchen	device
 kitchen	site
@@ -1591,6 +1678,7 @@ lace	device
 lace	surface
 ladder	artifact
 ladder	device
+ladder	route
 ladder	tool
 lake	body-of-water
 lake	site
@@ -1612,6 +1700,7 @@ landlord	vertebrate
 landscape	site
 lane	artifact
 lane	part
+lane	route
 lane	site
 lane	surface
 language	information
@@ -1650,6 +1739,7 @@ lease	image
 leash	artifact
 leash	cord
 leash	line
+leash	route
 leather	artifact
 leather	hide
 lecture	information
@@ -1661,6 +1751,7 @@ lesson	action
 lesson	event
 lesson	situation
 lesson	teaching
+letter-of-the-alphabet	information
 license	information
 license	norm
 license	permission
@@ -1692,6 +1783,7 @@ liver	system
 livestock	structure
 livestock	system
 lobby	artifact
+lobby	cavity
 lobby	container
 lobby	device
 lobby	site
@@ -1707,8 +1799,12 @@ lottery	conflict
 lottery	event
 lottery	situation
 love	emotion
+love	good-will
 love	satisfaction
 loyalty	emotion
+lozenge	artifact
+lozenge	medicine
+lozenge	pill
 lumber	artifact
 lunch	meal
 lung	part
@@ -1750,6 +1846,13 @@ man	vertebrate
 management	action
 management	event
 management	situation
+manager	adult
+manager	human
+manager	mammal
+manager	structure
+manager	system
+manager	vertebrate
+manager	worker
 mannequin	artifact
 manual	information
 manual	norm
@@ -1757,6 +1860,8 @@ march	time-period
 marketing	action
 marketing	event
 marketing	situation
+married-couple	couple
+married-couple	pair
 marsh	environment
 marsh	site
 mask	artifact
@@ -1775,6 +1880,7 @@ maze	puzzle
 meeting	action
 meeting	event
 meeting	situation
+meeting	social-occasion
 memorial	artifact
 memory	context
 memory	information
@@ -1790,6 +1896,9 @@ midnight	time-period
 military-action	action
 military-action	event
 military-action	situation
+military-operation	action
+military-operation	event
+military-operation	situation
 mill	site
 miner	human
 miner	mammal
@@ -1861,7 +1970,9 @@ motorcycle	container
 motorcycle	device
 motorcycle	land-vehicle
 motto	information
+mountain	ground
 mountain	site
+mountain-range	site
 mouse	mammal
 mouse	structure
 mouse	system
@@ -1893,6 +2004,8 @@ myth	information
 narrative	information
 natural-language	information
 natural-language	language
+natural-law	information
+natural-law	norm
 nausea	event
 nausea	illness
 nausea	situation
@@ -1910,6 +2023,7 @@ needle	device
 needle	shaft
 nerve	line
 nerve	part
+nerve	route
 nerve	structure
 nerve	system
 nest	artifact
@@ -1952,6 +2066,7 @@ nurse	system
 nurse	vertebrate
 nurse	worker
 nursery	artifact
+nursery	cavity
 nursery	container
 nursery	device
 nursery	site
@@ -1966,6 +2081,7 @@ ocean	body-of-water
 ocean	sea
 ocean	site
 office	artifact
+office	cavity
 office	container
 office	device
 office	site
@@ -1988,6 +2104,7 @@ orchestra	system
 orgy	action
 orgy	event
 orgy	situation
+orgy	social-occasion
 outline	information
 oven	artifact
 oven	box
@@ -2012,6 +2129,7 @@ parade	action
 parade	event
 parade	ritual
 parade	situation
+parade	social-occasion
 paradox	information
 paragraph	information
 pardon	action
@@ -2034,6 +2152,7 @@ partner	vertebrate
 partnership	structure
 partnership	system
 passion	emotion
+passion	good-will
 passion	satisfaction
 pasture	countryside
 pasture	site
@@ -2044,6 +2163,7 @@ patch	piece
 patch	surface
 patent	information
 patent	norm
+path	route
 patience	emotion
 patient	human
 patient	mammal
@@ -2096,6 +2216,7 @@ permission	norm
 personal-identification-number	information
 philosopher	adult
 philosopher	human
+philosopher	intellect
 philosopher	mammal
 philosopher	professional
 philosopher	structure
@@ -2114,6 +2235,8 @@ photographer	structure
 photographer	system
 photographer	vertebrate
 photographer	worker
+photographic-film	artifact
+photographic-film	device
 piano	artifact
 piano	device
 piano	furniture
@@ -2121,7 +2244,12 @@ piano	musical-instrument
 piece	part
 pier	artifact
 pier	line
+pier	route
 pier	site
+pig	mammal
+pig	structure
+pig	system
+pig	vertebrate
 pigeon	bird
 pigeon	structure
 pigeon	system
@@ -2129,6 +2257,7 @@ pigeon	vertebrate
 pill	artifact
 pillow	artifact
 pillow	device
+pit	cavity
 pit	depression
 pit	obstacle
 pit	site
@@ -2160,6 +2289,7 @@ pocket	part
 pocket	surface
 poem	information
 poetry	information
+point	ground
 point	site
 polish	human
 polish	mammal
@@ -2171,6 +2301,8 @@ political-campaign	campaign
 political-campaign	event
 political-campaign	politics
 political-campaign	situation
+political-party	structure
+political-party	system
 politician	adult
 politician	human
 politician	mammal
@@ -2293,6 +2425,7 @@ publisher	system
 publisher	vertebrate
 publisher	worker
 pudding	artifact
+pupil	cavity
 pupil	part
 pupil	structure
 pupil	system
@@ -2326,9 +2459,14 @@ rain	weather
 rainbow	event
 rainbow	light
 rainbow	situation
+rake	artifact
+rake	device
+rake	hardware
+rake	tool
 rally	action
 rally	event
 rally	situation
+rally	social-occasion
 ranch	site
 rat	mammal
 rat	structure
@@ -2340,6 +2478,7 @@ receipt	image
 reception	action
 reception	event
 reception	situation
+reception	social-occasion
 recess	action
 recess	event
 recess	situation
@@ -2368,6 +2507,7 @@ refugee	mammal
 refugee	structure
 refugee	system
 refugee	vertebrate
+refugee-camp	site
 registration	action
 registration	event
 registration	situation
@@ -2441,6 +2581,7 @@ ribbon	artifact
 ribbon	clothing
 ribbon	device
 ribbon	line
+ribbon	route
 rifle	artifact
 rifle	device
 rifle	gun
@@ -2454,6 +2595,7 @@ ritual	situation
 river	body-of-water
 river	environment
 river	obstacle
+river	route
 river	site
 rocket	artifact
 rocket	device
@@ -2464,6 +2606,7 @@ roof	surface
 rope	artifact
 rope	device
 rope	line
+rope	route
 routine	action
 routine	event
 routine	situation
@@ -2488,6 +2631,7 @@ salvation	action
 salvation	event
 salvation	situation
 salvation	support
+sand	ground
 sandal	artifact
 sandal	clothing
 sandal	device
@@ -2495,6 +2639,7 @@ sandal	shoe
 satisfaction	emotion
 sauce	artifact
 sausage	artifact
+scale-of-measurement	information
 scholar	human
 scholar	mammal
 scholar	structure
@@ -2535,6 +2680,7 @@ secretary	worker
 security-system	artifact
 security-system	device
 security-system	product
+sediment	ground
 sediment	soil
 seed	part
 seed	structure
@@ -2542,6 +2688,7 @@ seed	system
 seminar	action
 seminar	event
 seminar	situation
+seminar	social-occasion
 sentence	information
 sermon	action
 sermon	event
@@ -2592,6 +2739,7 @@ shower	situation
 side	surface
 sidewalk	artifact
 sidewalk	concrete
+sidewalk	route
 sidewalk	site
 sight	artifact
 sight	device
@@ -2637,10 +2785,16 @@ sleeve	surface
 slope	site
 snake	line
 snake	reptile
+snake	route
 snake	structure
 snake	system
 snake	vertebrate
 soap	artifact
+social-club	structure
+social-club	system
+social-occasion	action
+social-occasion	event
+social-occasion	situation
 social-science	field-of-study
 social-science	information
 sock	artifact
@@ -2650,6 +2804,7 @@ sodium	metal
 sofa	artifact
 sofa	device
 sofa	furniture
+soil	ground
 soldier	adult
 soldier	human
 soldier	mammal
@@ -2709,6 +2864,7 @@ stadium	site
 staff	structure
 staff	system
 stairway	artifact
+stairway	route
 stairway	site
 stake	artifact
 stake	cylinder
@@ -2729,6 +2885,7 @@ step	artifact
 stitch	artifact
 stitch	device
 stitch	line
+stitch	route
 stomach	container
 stomach	part
 stomach	structure
@@ -2736,6 +2893,8 @@ stomach	system
 stool	artifact
 stool	device
 stool	furniture
+strand	line
+strand	route
 strap	artifact
 strap	device
 strap	part
@@ -2745,6 +2904,7 @@ strawberry	system
 stream	information
 street	artifact
 street	device
+street	route
 street	site
 street	surface
 streetcar	artifact
@@ -2756,11 +2916,13 @@ stroke	illness
 stroke	situation
 structure	system
 studio	artifact
+studio	cavity
 studio	container
 studio	device
 studio	site
 studio	suite
 study	artifact
+study	cavity
 study	container
 study	device
 study	site
@@ -2774,11 +2936,14 @@ suicide	event
 suicide	illness
 suicide	situation
 suite	artifact
+suite	cavity
 suite	container
 suite	device
 suite	site
 sulfur	mineral
 summary	information
+summer-camp	structure
+summer-camp	system
 summit	site
 sunlight	event
 sunlight	light
@@ -2808,6 +2973,9 @@ surgery	action
 surgery	event
 surgery	situation
 surprise	emotion
+surrender	action
+surrender	event
+surrender	situation
 survivor	structure
 survivor	system
 sweater	artifact
@@ -2835,6 +3003,10 @@ tank	system
 tape	artifact
 tape	device
 tape	line
+tape	route
+tape-recording	action
+tape-recording	event
+tape-recording	situation
 target	artifact
 target	device
 taste	cognition
@@ -2953,6 +3125,9 @@ traffic	action
 traffic	event
 traffic	situation
 tragedy	information
+trail	artifact
+trail	route
+trail	site
 train-ticket	artifact
 train-ticket	device
 train-ticket	image
@@ -3004,6 +3179,8 @@ trial	conflict
 trial	event
 trial	situation
 triangle	surface
+tribunal	structure
+tribunal	system
 trophy	artifact
 trophy	device
 trouble	action
@@ -3025,6 +3202,8 @@ tumor	tissue
 tune	information
 tune	musical-composition
 tunnel	artifact
+tunnel	cavity
+tunnel	route
 tunnel	site
 turkey	bird
 turkey	structure
@@ -3050,6 +3229,7 @@ vacation	action
 vacation	event
 vacation	situation
 vacuum	site
+valley	cavity
 valley	depression
 valley	site
 van	artifact
@@ -3061,6 +3241,7 @@ vegetable-oil	oil
 vein	container
 vein	line
 vein	part
+vein	route
 vein	structure
 vein	system
 velvet	artifact
@@ -3113,6 +3294,7 @@ visitor	structure
 visitor	system
 visitor	vertebrate
 void	information
+volcano	ground
 volcano	site
 volunteer	human
 volunteer	mammal
@@ -3145,6 +3327,7 @@ wake	action
 wake	event
 wake	reception
 wake	situation
+wake	social-occasion
 war	action
 war	conflict
 war	event
@@ -3159,6 +3342,7 @@ warrior	system
 warrior	vertebrate
 warrior	worker
 washbasin	artifact
+washbasin	cavity
 washbasin	container
 washbasin	device
 watch	artifact
@@ -3167,10 +3351,12 @@ watch	device
 water-faucet	artifact
 water-faucet	container
 water-faucet	device
+water-faucet	route
 watercraft	artifact
 watercraft	container
 watercraft	device
 waterfall	body-of-water
+waterfall	route
 waterfall	site
 weapon	artifact
 weather	event
@@ -3179,12 +3365,14 @@ web-site	information
 wedding	action
 wedding	event
 wedding	situation
+wedding	social-occasion
 week	time-period
 weekend	time-period
 weight	artifact
 weight	device
 well	artifact
 well	device
+well	route
 well	site
 whale	mammal
 whale	structure
@@ -3201,6 +3389,7 @@ wine	artifact
 wire	artifact
 wire	device
 wire	line
+wire	route
 withdrawal	action
 withdrawal	event
 withdrawal	situation
@@ -3231,6 +3420,7 @@ workshop	convention
 workshop	event
 workshop	meeting
 workshop	situation
+workshop	social-occasion
 world-power	country
 world-power	site
 world-power	structure

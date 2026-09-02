@@ -34,10 +34,8 @@ def under(n, b):
             if p not in seen:
                 seen.add(p); st.append(p)
     return False
-reviewed = set()
-p = ROOT / "align/claude-review.tsv"
-if p.exists():
-    reviewed = {(r[0], r[1]) for r in csv.reader(open(p), delimiter="\t") if r and not r[0].startswith("#")}
+from graph import resolve_reviews
+reviewed = {(a, b) for a, b, _, _ in resolve_reviews(ROOT / "align/claude-review.tsv", ROOT / "align/concepts.tsv")}
 # Direct edges of each witness's reduced view: judging the closure is wasted
 # reading, since a ⊑ c follows once a ⊑ b and b ⊑ c are in.
 direct = set()

@@ -34,12 +34,13 @@ for line in (open(a.reject) if a.reject else sys.stdin):
 unknown = set(rejects) - set(pairs)
 if unknown:
     sys.exit(f"rejects not in this batch: {sorted(unknown)}")
+off = {r["name"]: r["wordnet"] for r in csv.DictReader(open(ROOT / "align/concepts.tsv"), delimiter="\t")}
 with open(ROOT / "align/claude-review.tsv", "a", newline="") as fh:
     w = csv.writer(fh, delimiter="\t", lineterminator="\n")
     fh.write(f"# --- {a.label or 'batch'}: {a.witness or 'any'} {a.branch or ''} ---\n")
     for p in pairs:
         if p in rejects:
-            w.writerow([p[0], p[1], "reject", rejects[p]])
+            w.writerow([p[0], p[1], "reject", rejects[p], off.get(p[0], ""), off.get(p[1], "")])
         else:
-            w.writerow([p[0], p[1], "accept", ""])
+            w.writerow([p[0], p[1], "accept", "", off.get(p[0], ""), off.get(p[1], "")])
 print(f"{len(pairs) - len(rejects)} accepted, {len(rejects)} rejected")

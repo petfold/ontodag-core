@@ -180,3 +180,21 @@ def dag_from_parents(parents, on_cycle=None):
 def write_od(dag, path):
     from ontodag.__main__ import FileBackend
     FileBackend(str(path)).save(dag)
+
+
+def resolve_reviews(path, concepts_path):
+    """Yield (sub, sup, decision, reason) from a review file, resolving each
+    end by its WordNet offset when one is recorded (names may have been
+    renamed since the line was written) and by name otherwise."""
+    import csv as _csv
+    by_off = {}
+    for r in _csv.DictReader(open(concepts_path), delimiter="\t"):
+        if r["wordnet"]:
+            by_off.setdefault(r["wordnet"], r["name"])
+    for row in _csv.reader(open(path), delimiter="\t"):
+        if not row or row[0].startswith("#") or len(row) < 3:
+            continue
+        row = (row + [""] * 6)[:6]
+        sub = by_off.get(row[4], row[0].strip()) if row[4] else row[0].strip()
+        sup = by_off.get(row[5], row[1].strip()) if row[5] else row[1].strip()
+        yield sub, sup, row[2].strip(), row[3]

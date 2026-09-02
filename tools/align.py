@@ -137,12 +137,21 @@ def main():
         else:
             by_offset[off] = name
         concepts[name] = off
-    for off in read_core_wordnet(sense_index):
+    candidates = read_core_wordnet(sense_index)
+    reserved = {normalise(synsets[o][0][0]) for o in candidates}
+    for off in candidates:
         if off in by_offset:
             continue
         name = normalise(synsets[off][0][0])
         if name in concepts:
-            base, qual = name, f"{name}.{synsets[off][2]}"
+            # The bare word is taken by another sense.  Prefer another lemma of
+            # this synset that is not itself a concept and not a bare word in
+            # WordNet's sense-1 position of some other concept (`bag` ->
+            # `handbag`); fall back to the lexicographer field (`chip.food`).
+            base = name
+            alt = next((normalise(l) for l in synsets[off][0][1:]
+                        if normalise(l) not in concepts and normalise(l) not in reserved), None)
+            qual = alt or f"{name}.{synsets[off][2]}"
             if qual in concepts:                      # same lemma, same field: number it
                 n = 2
                 while f"{qual}.{n}" in concepts:

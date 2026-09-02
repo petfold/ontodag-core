@@ -1,155 +1,155 @@
 # sub	sup	accept|reject	note      — Peter's decisions; outrank every witness.
 # ===== Peter, 2026-09-02 — decision 2 (roots) accepted as drafted in overrides.tsv; decision 3 rulings:
 # vehicles, tools and instruments under device (Cyc + SUMO) — accepted
-aircraft	device	accept	coarse but true
-boat	device	accept	
-ship	device	accept	
-spacecraft	device	accept	
-watercraft	device	accept	
-tool	device	accept	
-musical-instrument	device	accept	
-machine	device	accept	
+aircraft	device	accept	coarse but true	02686568	03183080
+boat	device	accept		02858304	03183080
+ship	device	accept		04194289	03183080
+spacecraft	device	accept		04264914	03183080
+watercraft	device	accept		04530566	03183080
+tool	device	accept		04451818	03183080
+musical-instrument	device	accept		03800933	03183080
+machine	device	accept		03699975	03183080
 # vehicles as containers — rejected
-car	container	reject	true of the cabin, false as filing
-truck	container	reject	same
+car	container	reject	true of the cabin, false as filing	02958343	03094503
+truck	container	reject	same	04490091	03094503
 # documents as physical artifacts — rejected (CORE.md one-reading rule: a document is information)
-article	artifact	reject	one-reading rule
-book	artifact	reject	one-reading rule
-letter	artifact	reject	one-reading rule
-film	artifact	reject	one-reading rule
-certificate	artifact	reject	one-reading rule
-ticket	artifact	reject	one-reading rule
-image	artifact	reject	one-reading rule
-map	artifact	reject	one-reading rule
-photograph	artifact	reject	one-reading rule
-presentation	artifact	reject	one-reading rule
-audio	physical-object	reject	one-reading rule
-video	physical-object	reject	one-reading rule
+article	artifact	reject	one-reading rule	06268096	00021939
+book	artifact	reject	one-reading rule	06410904	00021939
+letter	artifact	reject	one-reading rule	06624161	00021939
+film	artifact	reject	one-reading rule	06613686	00021939
+certificate	artifact	reject	one-reading rule	06471345	00021939
+ticket	artifact	reject	one-reading rule	06518719	00021939
+image	artifact	reject	one-reading rule	03931044	00021939
+map	artifact	reject	one-reading rule	03720163	00021939
+photograph	artifact	reject	one-reading rule	03925226	00021939
+presentation	artifact	reject	one-reading rule	03210940	00021939
+audio	physical-object	reject	one-reading rule	04262678	00002684
+video	physical-object	reject	one-reading rule	04534127	00002684
 # the philosophy question
-organism	agent	reject	a plant is an organism and not an agent except in an exotic or botanical sense
-person	organism	accept	
+organism	agent	reject	a plant is an organism and not an agent except in an exotic or botanical sense	00004475	00007347
+person	organism	accept		00007846	00004475
 # communication vs information
-conversation	information	reject	a conversation is a kind of communication (it carries information, it is not information)
-music	information	accept	
-music	event	reject	the art form is not an event; a performance is
+conversation	information	reject	a conversation is a kind of communication (it carries information, it is not information)	07133701	00033020
+music	information	accept		07020895	00033020
+music	event	reject	the art form is not an event; a performance is	07020895	00029378
 # places
-body-of-water	landform	reject	a sea is not a landform in English
-continent	landform	reject	schema.org's Landform is too broad
-village	city	reject	SUMO's City means settlement
-village	community	accept	
-street	artifact	accept	
+body-of-water	landform	reject	a sea is not a landform in English	09225146	
+continent	landform	reject	schema.org's Landform is too broad	09254614	
+village	city	reject	SUMO's City means settlement	08226699	08524735
+village	community	accept		08226699	08223802
+street	artifact	accept		04334599	00021939
 # plainly right
-business	organization	accept	
-team	organization	accept	
-organization	group	accept	
-manual	book	accept	
-drink	food	accept	
-water	material	accept	
-computer	machine	accept	
-flight	journey	accept	
-fruit	natural-object	accept	
-linguistics	science	accept	
-logic	philosophy	accept	
-report	article	reject	left out
+business	organization	accept			08008335
+team	organization	accept		08208560	08008335
+organization	group	accept		08008335	00031264
+manual	book	accept		06421685	06410904
+drink	food	accept		07881800	00021265
+water	material	accept		14845743	14580897
+computer	machine	accept		03082979	03699975
+flight	journey	accept		00301192	00306426
+fruit	natural-object	accept		07705931	00019128
+linguistics	science	accept		06172789	05999797
+logic	philosophy	accept		06163751	06158346
+report	article	reject	left out	07218470	06268096
 # ===== Peter, 2026-09-02 — decision 5 (disputes), first rulings:
-aim	goal	reject	synonyms — neither direction; one name should go (decision 6)
-goal	aim	reject	synonyms
-emotion	emotional-state	reject	synonyms
-emotional-state	emotion	reject	synonyms
-boat	watercraft	accept	a boat is a watercraft
-ship	watercraft	accept	follows the boat ruling (SUMO's mapping had the direction inverted)
-watercraft	boat	reject	inverted
-watercraft	ship	reject	inverted
-human	person	accept	a human is a person
-person	human	reject	inverted
+aim	goal	reject	synonyms — neither direction; one name should go (decision 6)	05981230	05980875
+goal	aim	reject	synonyms	05980875	05981230
+emotion	emotional-state	reject	synonyms	07480068	13985818
+emotional-state	emotion	reject	synonyms	13985818	07480068
+boat	watercraft	accept	a boat is a watercraft	02858304	04530566
+ship	watercraft	accept	follows the boat ruling (SUMO's mapping had the direction inverted)	04194289	04530566
+watercraft	boat	reject	inverted	04530566	02858304
+watercraft	ship	reject	inverted	04530566	04194289
+human	person	accept	a human is a person	02472293	00007846
+person	human	reject	inverted	00007846	02472293
 # ===== Peter, 2026-09-02 — decision 5, the remaining disputes
-apartment	suite	reject	synonyms — neither direction; merge names (decision 6)
-assembly	meeting.act	reject	synonyms — neither direction; merge names (decision 6)
-battle	military-action	accept	the source that reversed it had the direction inverted
-cheek	feature	reject	feature is too general a word for this
-city	settlement	accept	the source that reversed it had the direction inverted
-cognition	property	reject	not related
-collection	group	accept	the source that reversed it had the direction inverted
-competition	contest.act	reject	synonyms — neither direction; merge names (decision 6)
-conference	convention	reject	synonyms — neither direction; merge names (decision 6)
-contest.act	competition	reject	synonyms — neither direction; merge names (decision 6)
-convention	conference	reject	synonyms — neither direction; merge names (decision 6)
-departure	farewell	reject	synonyms — neither direction; merge names (decision 6)
-district	state	reject	a state is usually larger than a district
-document	note	reject	inverted
-embarrassment	shame	reject	synonyms — neither direction; merge names (decision 6)
-employment.act	occupation	reject	synonyms — neither direction; merge names (decision 6)
-farewell	departure	reject	synonyms — neither direction; merge names (decision 6)
-feature	cheek	reject	feature is too general a word for this
-fiction	myth	reject	inverted
-field	yard	reject	synonyms — neither direction; merge names (decision 6)
-fight	war	reject	a fight is not a war
-group	collection	reject	inverted
-home	house	reject	synonyms — neither direction; merge names (decision 6)
-house	home	reject	synonyms — neither direction; merge names (decision 6)
-landscape	region.location	reject	synonyms — neither direction; merge names (decision 6)
-landscape	site	reject	synonyms — neither direction; merge names (decision 6)
-landscape	vicinity	reject	synonyms — neither direction; merge names (decision 6)
-line.communication	text	accept	the source that reversed it had the direction inverted
-meaning	sense.communication	reject	synonyms — neither direction; merge names (decision 6)
-meeting.act	assembly	reject	synonyms — neither direction; merge names (decision 6)
-mercantile-establishment	shop	reject	synonyms — neither direction; merge names (decision 6)
-military-action	battle	reject	inverted
-monetary-value	worth	reject	synonyms — neither direction; merge names (decision 6)
-myth	fiction	accept	the source that reversed it had the direction inverted
-natural-object	universe	reject	the universe is not an object
-note	document	accept	the source that reversed it had the direction inverted
-occupation	employment.act	reject	synonyms — neither direction; merge names (decision 6)
-physical-object	universe	reject	the universe is not an object
-platform	stage	reject	synonyms — neither direction; merge names (decision 6)
-program.communication	software	accept	the source that reversed it had the direction inverted
-property	cognition	reject	not related
-region.location	landscape	reject	synonyms — neither direction; merge names (decision 6)
-road	street	reject	inverted
-sense.communication	meaning	reject	synonyms — neither direction; merge names (decision 6)
-settlement	city	reject	inverted
-shame	embarrassment	reject	synonyms — neither direction; merge names (decision 6)
-shop	mercantile-establishment	reject	synonyms — neither direction; merge names (decision 6)
-site	landscape	reject	synonyms — neither direction; merge names (decision 6)
-software	program.communication	reject	inverted
-soul	spirit	reject	synonyms — neither direction; merge names (decision 6)
-spirit	soul	reject	synonyms — neither direction; merge names (decision 6)
-stage	platform	reject	synonyms — neither direction; merge names (decision 6)
-state	district	reject	a state is usually larger than a district
-street	road	accept	the source that reversed it had the direction inverted
-suite	apartment	reject	synonyms — neither direction; merge names (decision 6)
-text	line.communication	reject	inverted
-universe	natural-object	reject	the universe is not an object
-universe	physical-object	reject	the universe is not an object
-vicinity	landscape	reject	synonyms — neither direction; merge names (decision 6)
-war	fight	reject	a fight is not a war
-worth	monetary-value	reject	synonyms — neither direction; merge names (decision 6)
-yard	field	reject	synonyms — neither direction; merge names (decision 6)
+apartment	suite	reject	synonyms — neither direction; merge names (decision 6)	02726305	04351550
+assembly	meeting.act	reject	synonyms — neither direction; merge names (decision 6)	01229938	01230965
+battle	military-action	accept	the source that reversed it had the direction inverted	00953559	00952963
+cheek	feature	reject	feature is too general a word for this	05602835	05601758
+city	settlement	accept	the source that reversed it had the direction inverted	08524735	08672562
+cognition	property	reject	not related	00023271	05849040
+collection	group	accept	the source that reversed it had the direction inverted	07951464	00031264
+competition	contest.act	reject	synonyms — neither direction; merge names (decision 6)	01168569	01168961
+conference	convention	reject	synonyms — neither direction; merge names (decision 6)	08308497	08309086
+contest.act	competition	reject	synonyms — neither direction; merge names (decision 6)	01168961	01168569
+convention	conference	reject	synonyms — neither direction; merge names (decision 6)	08309086	08308497
+departure	farewell	reject	synonyms — neither direction; merge names (decision 6)	00042757	00053097
+district	state	reject	a state is usually larger than a district	08552138	08654360
+document	note	reject	inverted	06470073	06504462
+embarrassment	shame	reject	synonyms — neither direction; merge names (decision 6)	07507098	07506569
+employment.act	occupation	reject	synonyms — neither direction; merge names (decision 6)	00584367	00582388
+farewell	departure	reject	synonyms — neither direction; merge names (decision 6)	00053097	00042757
+feature	cheek	reject	feature is too general a word for this	05601758	05602835
+fiction	myth	reject	inverted	06367107	06372680
+field	yard	reject	synonyms — neither direction; merge names (decision 6)	08569998	04610879
+fight	war	reject	a fight is not a war	01170962	01236296
+group	collection	reject	inverted	00031264	07951464
+home	house	reject	synonyms — neither direction; merge names (decision 6)	03528100	03544360
+house	home	reject	synonyms — neither direction; merge names (decision 6)	03544360	03528100
+landscape	region.location	reject	synonyms — neither direction; merge names (decision 6)	08646902	08630985
+landscape	site	reject	synonyms — neither direction; merge names (decision 6)	08646902	08651247
+landscape	vicinity	reject	synonyms — neither direction; merge names (decision 6)	08646902	08641113
+line.communication	text	accept	the source that reversed it had the direction inverted	07012534	06387980
+meaning	sense.communication	reject	synonyms — neither direction; merge names (decision 6)	06601327	06602472
+meeting.act	assembly	reject	synonyms — neither direction; merge names (decision 6)	01230965	01229938
+mercantile-establishment	shop	reject	synonyms — neither direction; merge names (decision 6)	03748162	04202417
+military-action	battle	reject	inverted	00952963	00953559
+monetary-value	worth	reject	synonyms — neither direction; merge names (decision 6)	05145118	05138208
+myth	fiction	accept	the source that reversed it had the direction inverted	06372680	06367107
+natural-object	universe	reject	the universe is not an object	00019128	09466280
+note	document	accept	the source that reversed it had the direction inverted	06504462	06470073
+occupation	employment.act	reject	synonyms — neither direction; merge names (decision 6)	00582388	00584367
+physical-object	universe	reject	the universe is not an object	00002684	09466280
+platform	stage	reject	synonyms — neither direction; merge names (decision 6)	03961939	04296562
+program.communication	software	accept	the source that reversed it had the direction inverted	06568978	06566077
+property	cognition	reject	not related	05849040	00023271
+region.location	landscape	reject	synonyms — neither direction; merge names (decision 6)	08630985	08646902
+road	street	reject	inverted	04096066	04334599
+sense.communication	meaning	reject	synonyms — neither direction; merge names (decision 6)	06602472	06601327
+settlement	city	reject	inverted	08672562	08524735
+shame	embarrassment	reject	synonyms — neither direction; merge names (decision 6)	07506569	07507098
+shop	mercantile-establishment	reject	synonyms — neither direction; merge names (decision 6)	04202417	03748162
+site	landscape	reject	synonyms — neither direction; merge names (decision 6)	08651247	08646902
+software	program.communication	reject	inverted	06566077	06568978
+soul	spirit	reject	synonyms — neither direction; merge names (decision 6)	10627082	14526182
+spirit	soul	reject	synonyms — neither direction; merge names (decision 6)	14526182	10627082
+stage	platform	reject	synonyms — neither direction; merge names (decision 6)	04296562	03961939
+state	district	reject	a state is usually larger than a district	08654360	08552138
+street	road	accept	the source that reversed it had the direction inverted	04334599	04096066
+suite	apartment	reject	synonyms — neither direction; merge names (decision 6)	04351550	02726305
+text	line.communication	reject	inverted	06387980	07012534
+universe	natural-object	reject	the universe is not an object	09466280	00019128
+universe	physical-object	reject	the universe is not an object	09466280	00002684
+vicinity	landscape	reject	synonyms — neither direction; merge names (decision 6)	08641113	08646902
+war	fight	reject	a fight is not a war	01236296	01170962
+worth	monetary-value	reject	synonyms — neither direction; merge names (decision 6)	05138208	05145118
+yard	field	reject	synonyms — neither direction; merge names (decision 6)	04610879	08569998
 # ===== Peter, 2026-09-02 — decision 4: core v1's own claims kept (business ⊑ field-of-study becomes business-studies)
-article	document	accept	core v1 claim, kept on review
-bicycle	land-vehicle	accept	core v1 claim, kept on review
-body-of-water	natural-object	accept	core v1 claim, kept on review
-book	document	accept	core v1 claim, kept on review
-diagram	image	accept	core v1 claim, kept on review
-drawing	image	accept	core v1 claim, kept on review
-film	video	accept	core v1 claim, kept on review
-fruit	food	accept	core v1 claim, kept on review
-journey	activity	accept	core v1 claim, kept on review
-landform	natural-object	accept	core v1 claim, kept on review
-letter	message	accept	core v1 claim, kept on review
-linguistics	humanities	accept	core v1 claim, kept on review
-manual	document	accept	core v1 claim, kept on review
-map	document	accept	core v1 claim, kept on review
-map	image	accept	core v1 claim, kept on review
-message	document	accept	core v1 claim, kept on review
-music-recording	audio	accept	core v1 claim, kept on review
-photograph	image	accept	core v1 claim, kept on review
-podcast	audio	accept	core v1 claim, kept on review
-presentation	document	accept	core v1 claim, kept on review
-software-library	software	accept	core v1 claim, kept on review
-spreadsheet	document	accept	core v1 claim, kept on review
-town	settlement	accept	core v1 claim, kept on review
-vegetable	food	accept	core v1 claim, kept on review
-vehicle	machine	accept	core v1 claim, kept on review
-village	settlement	accept	core v1 claim, kept on review
-web-page	document	accept	core v1 claim, kept on review
+article	document	accept	core v1 claim, kept on review	06268096	06470073
+bicycle	land-vehicle	accept	core v1 claim, kept on review	02834778	
+body-of-water	natural-object	accept	core v1 claim, kept on review	09225146	00019128
+book	document	accept	core v1 claim, kept on review	06410904	06470073
+diagram	image	accept	core v1 claim, kept on review	03186399	03931044
+drawing	image	accept	core v1 claim, kept on review	07003119	03931044
+film	video	accept	core v1 claim, kept on review	06613686	04534127
+fruit	food	accept	core v1 claim, kept on review	07705931	00021265
+journey	activity	accept	core v1 claim, kept on review	00306426	00407535
+landform	natural-object	accept	core v1 claim, kept on review		00019128
+letter	message	accept	core v1 claim, kept on review	06624161	06253690
+linguistics	humanities	accept	core v1 claim, kept on review	06172789	06153846
+manual	document	accept	core v1 claim, kept on review	06421685	06470073
+map	document	accept	core v1 claim, kept on review	03720163	06470073
+map	image	accept	core v1 claim, kept on review	03720163	03931044
+message	document	accept	core v1 claim, kept on review	06253690	06470073
+music-recording	audio	accept	core v1 claim, kept on review		04262678
+photograph	image	accept	core v1 claim, kept on review	03925226	03931044
+podcast	audio	accept	core v1 claim, kept on review		04262678
+presentation	document	accept	core v1 claim, kept on review	03210940	06470073
+software-library	software	accept	core v1 claim, kept on review	07977592	06566077
+spreadsheet	document	accept	core v1 claim, kept on review	06579952	06470073
+town	settlement	accept	core v1 claim, kept on review	08665504	08672562
+vegetable	food	accept	core v1 claim, kept on review	07707451	00021265
+vehicle	machine	accept	core v1 claim, kept on review	04524313	03699975
+village	settlement	accept	core v1 claim, kept on review	08226699	08672562
+web-page	document	accept	core v1 claim, kept on review	06358900	06470073
