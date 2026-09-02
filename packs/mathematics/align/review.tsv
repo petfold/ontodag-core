@@ -1,1 +1,37 @@
 # sub	sup	accept|reject	reason	sub_wn	sup_wn
+# proposed by Claude 2026-09-02, pending Peter: WordNet hangs these from `abstraction`, which core has no node for
+mathematical-set	concept	accept	a set is an abstract object; the whole set-based hierarchy hangs from it	07999699	05835747
+mathematical-relation	concept	accept	functions, operators and equalities are concepts	13783581	05835747
+expression	concept	accept	a mathematical expression is a formal object, not a statement (WordNet) nor its reverse (SUMO)	06731802	05835747
+expression	mathematical-statement	reject	an expression is not a statement	06731802	06732169
+# proposed by Claude 2026-09-02, pending Peter: placements for concepts whose WordNet parent is outside the vocabulary
+mathematical-series	function	accept	a series is a function of its index; WordNet's `polynomial` parent is wrong	05862721	13783816
+decile	statistic	accept	a quantile is a statistic	05737982	06021499
+percentile	statistic	accept	same	05737752	06021499
+quartile	statistic	accept	same	05738204	06021499
+lower-bound	number	accept	a bound is a number	13904011	05121418
+upper-bound	number	accept	same	13903855	05121418
+cardinality	number	accept	the number of elements	13591586	05121418
+weight	number	accept	a statistical weight is a coefficient	13589321	05121418
+additive-inverse	number	accept		13843001	05121418
+multiplicative-inverse	number	accept		13843173	05121418
+algorithm	procedure	accept	a precise rule for solving a problem	05847438	01023820
+recursion	procedure	accept	a self-referential procedure	05848357	01023820
+factorization	mathematical-operation	accept	resolving an entity into factors	05783041	00869583
+rationalization	mathematical-operation	accept	simplifying an expression	01212225	00869583
+conditional-probability	probability	accept		05092236	05091770
+joint-probability	probability	accept		05093181	05091770
+exceedance	probability	accept		05092635	05091770
+boundary-condition	precondition	accept	WordNet: a condition specified for a solution	06755776	06755568
+fractal	shape	accept	a geometric pattern	05931152	00027807
+plane-section	shape	accept	a region cut by a plane	08648153	00027807
+information-theory	concept	accept	a statistical theory; `theory` lives in the physics pack	06108643	05835747
+# proposed by Claude: the correlation and progression families
+statistical-correlation	statistic	accept	a correlation is a statistic	06031248	06021499
+covariation	statistical-correlation	accept	correlated variation	06032752	06031248
+radical-expression	expression	accept	a quantity written as a root	13731530	06731802
+boundary-condition	mathematical-statement	accept	a condition stated for a solution	06755776	06732169
+arithmetic-progression	concept	accept	a sequence of numbers; core has no `sequence`	08460924	05835747
+geometric-progression	concept	accept	same	08461172	05835747
+harmonic-progression	concept	accept	same	08461424	05835747
+probability	statistic	accept	a measure of likelihood is a statistic; core left `probability` unplaced	05091770	06021499
