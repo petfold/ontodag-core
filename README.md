@@ -17,6 +17,20 @@ ruling. It is a strict superset of the shipped v1 (194 concepts, nothing
 lost). `docs/UPPER.md` §6 records every decision, §7 the policy for the
 sciences. Rebuild from the review files with `sh tools/build.sh`.
 
+## Pictures
+
+`docs/img/top.svg` is the top of the pack (roots and their largest children,
+cone sizes on the labels); `docs/img/upper.svg` goes two levels down.
+`tools/picture.py` writes the DOT files, `tools/atlas.py` the pan-and-zoom
+page `docs/img/core.html` (whole pack, radial, coloured by branch, with
+search and a parents/children panel) — regenerable, not tracked:
+
+    python3 tools/picture.py
+    dot   -Tsvg docs/img/top.dot   -o docs/img/top.svg
+    dot   -Tsvg docs/img/upper.dot -o docs/img/upper.svg
+    twopi -Tsvg -Granksep=2.4 -Goverlap=false -Gsplines=line docs/img/core.dot -o docs/img/core.svg
+    python3 tools/atlas.py
+
 ## Layout
 
     sources/   the downloaded ontologies (not tracked; see below)
