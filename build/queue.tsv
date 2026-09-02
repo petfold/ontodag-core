@@ -632,7 +632,6 @@ single	archive	physical-object	only wordnet
 single	archive	team	only sumo
 single	ardor	feeling	only wordnet
 single	ardor	state	only wordnet
-single	area	attribute	only wordnet
 single	arena	artifact	only sumo
 single	arena	development	only sumo
 single	arena	physical-object	only wordnet
@@ -2133,7 +2132,6 @@ single	coin	token	only opencyc
 single	cold	condition.state	only wordnet
 single	cold	illness	only wordnet
 single	cold	state	only wordnet
-single	coldness	attribute	only wordnet
 single	collapse	diminution	only sumo
 single	collar	physical-object	only wordnet
 single	collar	surface	only opencyc
@@ -3658,7 +3656,6 @@ single	dog	species	only sumo
 single	dog	structure	only opencyc
 single	doll	information	only yago
 single	doll	physical-object	only wordnet
-single	dollar	currency	only wordnet
 single	dolphin	agent	only sumo
 single	dolphin	body	only sumo
 single	dolphin	species	only sumo
@@ -4015,21 +4012,6 @@ single	endurance	attribute	only wordnet
 single	enemy	agent	only sumo
 single	enemy	collection	only sumo
 single	enemy	school-class	only sumo
-single	energy	amateur	only sumo
-single	energy	ambiance	only sumo
-single	energy	civilisation	only sumo
-single	energy	crowd	only sumo
-single	energy	danger	only sumo
-single	energy	degree	only wordnet
-single	energy	expert	only sumo
-single	energy	freedom	only sumo
-single	energy	lap	only sumo
-single	energy	literature.communication	only sumo
-single	energy	practice	only sumo
-single	energy	society	only sumo
-single	energy	status	only sumo
-single	energy	tension	only sumo
-single	energy	way	only sumo
 single	engine	machinery	only sumo
 single	engine	physical-object	only wordnet
 single	engineer	adult	only opencyc
@@ -6276,8 +6258,6 @@ single	lemon.food	natural-object	only wordnet
 single	lemon.food	physical-object	only wordnet
 single	lemon.food	produce	only wordnet
 single	lemon.food	substance	only wordnet
-single	length	attribute	only wordnet
-single	length	size	only opencyc
 single	lesson	accomplishment	only sumo
 single	lesson	action	only opencyc
 single	lesson	education	only sumo
@@ -6632,9 +6612,6 @@ single	march	motion	only sumo
 single	march	procedure	only sumo
 single	march	visit	only sumo
 single	marching-music	information	only wordnet
-single	margin	attribute	only wordnet
-single	margin	magnitude	only wordnet
-single	margin	place	only sumo
 single	marketing	accomplishment	only sumo
 single	marketing	action	only opencyc
 single	marketing	activity	only sumo
@@ -7780,15 +7757,6 @@ single	pen	physical-object	only wordnet
 single	pencil	hardware	only opencyc
 single	pencil	physical-object	only wordnet
 single	pencil	tool	only opencyc
-single	penny	contract-condition	only sumo
-single	penny	device	only opencyc
-single	penny	image	only opencyc
-single	penny	indication	only sumo
-single	penny	information	only sumo
-single	penny	line-of-text	only sumo
-single	penny	physical-object	only sumo
-single	penny	text	only sumo
-single	penny	token	only opencyc
 single	pension	possession	only wordnet
 single	pensioner	animal	only sumo
 single	pensioner	body	only sumo
@@ -8606,14 +8574,6 @@ single	quarter	land	only sumo
 single	quarter	physical-object	only wordnet
 single	quarter	region	only wordnet
 single	quarter	yard	only sumo
-single	quarter-coin	artifact	only sumo
-single	quarter-coin	cash	only sumo
-single	quarter-coin	contract-condition	only sumo
-single	quarter-coin	indication	only sumo
-single	quarter-coin	information	only sumo
-single	quarter-coin	line-of-text	only sumo
-single	quarter-coin	physical-object	only sumo
-single	quarter-coin	text	only sumo
 single	quartz-glass	material	only sumo
 single	quartz-glass	mineral	only sumo
 single	queen	agent	only wordnet
@@ -11340,8 +11300,8 @@ single	void	attribute	only wordnet
 single	void	information	only opencyc
 single	void	physical-object	only wordnet
 single	volcano	physical-object	only wordnet
-single	volume.communication	artifact	only wordnet
-single	volume.communication	physical-object	only wordnet
+single	volume	artifact	only wordnet
+single	volume	physical-object	only wordnet
 single	volunteer	agent	only wordnet
 single	volunteer	attribute	only sumo
 single	volunteer	human	only opencyc
@@ -11494,7 +11454,9 @@ single	weed	species	only sumo
 single	weighing-machine	artifact	only wordnet
 single	weighing-machine	device	only wordnet
 single	weighing-machine	physical-object	only wordnet
-single	weight	physical-object	only wordnet
+single	weight	artifact	only opencyc
+single	weight	device	only opencyc
+single	weight	equipment	only claude
 single	welcome	accomplishment	only sumo
 single	welcome	act	only sumo
 single	welcome	activity	only sumo
@@ -11805,6 +11767,7 @@ unplaced	clock-time	cognition quantity	no accepted parent reaches a root
 unplaced	clod	collection group phenomenon universe	no accepted parent reaches a root
 unplaced	closure	accomplishment act activity cognition event information phenomenon procedure	no accepted parent reaches a root
 unplaced	cognition	attribute event situation	no accepted parent reaches a root
+unplaced	coldness	agent attribute quantity	no accepted parent reaches a root
 unplaced	column.group	group	no accepted parent reaches a root
 unplaced	commencement	quantity	no accepted parent reaches a root
 unplaced	commission	fee outgo possession quantity	no accepted parent reaches a root
@@ -11862,7 +11825,6 @@ unplaced	dramaturgy	act communication event field-of-study signified	no accepted
 unplaced	dream	cognition imagination	no accepted parent reaches a root
 unplaced	due-east		no accepted parent reaches a root
 unplaced	due-west		no accepted parent reaches a root
-unplaced	duration	quantity time-period	no accepted parent reaches a root
 unplaced	eagle.communication	cognition information phenomenon universe	no accepted parent reaches a root
 unplaced	earth		no accepted parent reaches a root
 unplaced	east	phenomenon place universe	no accepted parent reaches a root
@@ -11937,7 +11899,7 @@ unplaced	habit	amateur ambiance artifact attribute circumstance civilisation clo
 unplaced	harvest	event locating phenomenon season time-period visit	no accepted parent reaches a root
 unplaced	head	artifact body-part part phenomenon physical-object structure system universe	no accepted parent reaches a root
 unplaced	headroom	attribute property	no accepted parent reaches a root
-unplaced	heat	attribute quantity temperature trait	no accepted parent reaches a root
+unplaced	heat	attribute quantity trait	no accepted parent reaches a root
 unplaced	hell	cognition phenomenon place universe	no accepted parent reaches a root
 unplaced	helping	food phenomenon universe	no accepted parent reaches a root
 unplaced	here-and-now	attribute nowadays quantity	no accepted parent reaches a root
@@ -12000,6 +11962,7 @@ unplaced	male-monarch	agent organism person physical-object representative sover
 unplaced	mannequin	agent artifact assistant organism person physical-object worker	no accepted parent reaches a root
 unplaced	manner-of-speaking	attribute information property	no accepted parent reaches a root
 unplaced	mar	calendar-month quantity time-period	no accepted parent reaches a root
+unplaced	margin	area attribute magnitude phenomenon place universe	no accepted parent reaches a root
 unplaced	mars		no accepted parent reaches a root
 unplaced	matrix	group indication information phenomenon physical-object universe	no accepted parent reaches a root
 unplaced	maximum	limit.quantity quantity	no accepted parent reaches a root
@@ -12083,8 +12046,7 @@ unplaced	predilection	attitude cognition inclination	no accepted parent reaches 
 unplaced	preoccupation.cognition	cognition idea signified	no accepted parent reaches a root
 unplaced	presidency	organization quantity time-period	no accepted parent reaches a root
 unplaced	president	agent organism person physical-object representative	no accepted parent reaches a root
-unplaced	pressure	cognition event perception phenomenon	no accepted parent reaches a root
-unplaced	pressure-level	natural-event phenomenon process	no accepted parent reaches a root
+unplaced	pressure	natural-event phenomenon process	no accepted parent reaches a root
 unplaced	principle	cognition concept context idea information natural-law signified	no accepted parent reaches a root
 unplaced	principle.cognition	cognition concept idea signified	no accepted parent reaches a root
 unplaced	prize	accomplishment acquisition act activity event gift phenomenon possession	no accepted parent reaches a root
@@ -12134,7 +12096,7 @@ unplaced	role-model	agent attribute leader organism person physical-object prope
 unplaced	rootage	physical-object place	no accepted parent reaches a root
 unplaced	rule.cognition	attribute cognition concept idea normal property	no accepted parent reaches a root
 unplaced	rule.cognition.2	act activity event measure procedure routine signified	no accepted parent reaches a root
-unplaced	rule.time	duration quantity time-period	no accepted parent reaches a root
+unplaced	rule.time	quantity time-period	no accepted parent reaches a root
 unplaced	sample	cognition example	no accepted parent reaches a root
 unplaced	sarcasm	amateur ambiance attribute circumstance civilisation crowd custom danger	no accepted parent reaches a root
 unplaced	scale-of-measurement	information quantity standard	no accepted parent reaches a root
@@ -12165,7 +12127,6 @@ unplaced	soprano	artist attribute human information mammal musician professional
 unplaced	sound	cognition event perception phenomenon	no accepted parent reaches a root
 unplaced	south		no accepted parent reaches a root
 unplaced	sovereign	agent organism person physical-object representative	no accepted parent reaches a root
-unplaced	speed		no accepted parent reaches a root
 unplaced	springtime	quantity season time-period	no accepted parent reaches a root
 unplaced	standard	attribute normal property	no accepted parent reaches a root
 unplaced	state-of-matter	attribute natural-event phenomenon process property	no accepted parent reaches a root

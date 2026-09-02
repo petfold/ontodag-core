@@ -71,6 +71,15 @@ def main():
                 placed.add(a)
                 changed = True
     parents = {n: [b for b in accepted.get(n, []) if b in placed] for n in placed}
+    # edges asserted about names the pack does not define (align/extra-edges.tsv)
+    p = ROOT / "align/extra-edges.tsv"
+    if p.exists():
+        for row in csv.reader(open(p), delimiter="\t"):
+            if row and not row[0].startswith("#") and len(row) >= 2:
+                sub, sup = row[0].strip(), row[1].strip()
+                parents.setdefault(sup, [])
+                parents.setdefault(sub, []).append(sup)
+                placed.update((sub, sup))
     cycles = []
     dag = dag_from_parents(parents, on_cycle=lambda n, d: cycles.append((n, d)))
     write_od(dag, ROOT / "build/core.od")
