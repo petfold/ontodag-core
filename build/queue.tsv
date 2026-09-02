@@ -4384,12 +4384,6 @@ single	drive	visit	only sumo
 single	drive.attribute	inclination	only sumo
 single	drive.attribute	mentality	only sumo
 single	drive.attribute	property	only sumo
-single	driver	attribute	only sumo
-single	driver	human	only opencyc
-single	driver	mammal	only opencyc
-single	driver	property	only sumo
-single	driver	structure	only opencyc
-single	driver	vertebrate	only opencyc
 single	driveway	land	only sumo
 single	driveway	physical-object	only wordnet
 single	driveway	place	only sumo
@@ -8184,9 +8178,6 @@ single	motivation.state	state	only wordnet
 single	motorcycle	device	only opencyc
 single	motorcycle	land-vehicle	only opencyc
 single	motorcycle	physical-object	only wordnet
-single	motorist	agent	only wordnet
-single	motorist	attribute	only sumo
-single	motorist	property	only sumo
 single	motto	artifact	only sumo
 single	motto	contract-condition	only sumo
 single	motto	indication	only sumo
@@ -9246,6 +9237,8 @@ single	plane-ticket	text	only sumo
 single	plank	physical-object	only wordnet
 single	plant	agent	only sumo
 single	plant	species	only sumo
+single	plant-root	body-part	only sumo
+single	plant-root	organ.body	only sumo
 single	plaster	material	only sumo
 single	plaster	physical-object	only wordnet
 single	plaster	substance	only sumo
@@ -10834,8 +10827,6 @@ single	roof	physical-object	only wordnet
 single	roof	surface	only opencyc
 single	room	development	only sumo
 single	room	physical-object	only wordnet
-single	root	body-part	only sumo
-single	root	organ.body	only sumo
 single	rope	device	only opencyc
 single	rope	physical-object	only wordnet
 single	rope	route	only opencyc
@@ -13765,6 +13756,7 @@ unplaced	distance	placement quantity	no accepted parent reaches a root
 unplaced	division	act activity event procedure	no accepted parent reaches a root
 unplaced	dragon	agent cognition phenomenon reptile structure system universe vertebrate	no accepted parent reaches a root
 unplaced	dramaturgy	act communication event field-of-study signified	no accepted parent reaches a root
+unplaced	driver	attribute human mammal property structure system vertebrate	no accepted parent reaches a root
 unplaced	due-east		no accepted parent reaches a root
 unplaced	due-west		no accepted parent reaches a root
 unplaced	eagle.communication	cognition information phenomenon universe	no accepted parent reaches a root
@@ -13888,6 +13880,7 @@ unplaced	moon		no accepted parent reaches a root
 unplaced	morning	quantity time-period	no accepted parent reaches a root
 unplaced	morsel	food phenomenon universe	no accepted parent reaches a root
 unplaced	motivation	attribute property	no accepted parent reaches a root
+unplaced	motorist	agent attribute driver property	no accepted parent reaches a root
 unplaced	name	indication information part phenomenon physical-object universe	no accepted parent reaches a root
 unplaced	nature.object	natural-object phenomenon physical-object universe	no accepted parent reaches a root
 unplaced	nature.person	agent	no accepted parent reaches a root
