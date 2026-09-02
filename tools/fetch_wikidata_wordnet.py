@@ -27,18 +27,16 @@ def sparql(query, tries=6):
 
 def main():
     items, wn = {}, {}
-    page = 0
-    while True:
-        rows = sparql(f"""SELECT ?i ?w ?l WHERE {{ ?i wdt:P8814 ?w . OPTIONAL {{ ?i rdfs:label ?l . FILTER(LANG(?l) = "en") }} }}
-                          ORDER BY ?i LIMIT 4000 OFFSET {page * 4000}""")
-        if not rows:
-            break
+    # no ORDER BY/OFFSET over 36k rows (the endpoint times out): split by the
+    # synset id's leading digits instead — nouns run 00…15, sixteen small queries
+    for prefix in [f"{i:02d}" for i in range(16)]:
+        rows = sparql(f"""SELECT ?i ?w ?l WHERE {{ ?i wdt:P8814 ?w . FILTER(STRSTARTS(?w, "{prefix}"))
+                          OPTIONAL {{ ?i rdfs:label ?l . FILTER(LANG(?l) = "en") }} }}""")
         for r in rows:
             q = r["i"]["value"].rsplit("/", 1)[-1]
             items[q] = r.get("l", {}).get("value", items.get(q, q))
             wn.setdefault(q, []).append(r["w"]["value"])
-        print(f"  page {page}: {len(items)} items so far", file=sys.stderr)
-        page += 1
+        print(f"  prefix {prefix}: {len(rows)} rows, {len(items)} items so far", file=sys.stderr)
         time.sleep(2)
     ids = sorted(items)
     edges = set()

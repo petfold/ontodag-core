@@ -73,7 +73,7 @@ def main():
     for pair, w in for_.items():
         if pair in published and review.get(pair) != "reject":
             status[pair] = "accepted"
-            if against.get(pair):
+            if against.get(pair) and review.get(pair) != "accept":      # ruled-on pairs stay quiet
                 contradicted.append((pair, against[pair]))
             continue
         if dirs.pack and origin.get(pair[0]) == "base" and origin.get(pair[1]) == "base":
