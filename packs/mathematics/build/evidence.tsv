@@ -6,6 +6,7 @@ abelian-group	mathematical-group	accepted	claude wikidata wordnet
 abelian-group	mathematical-module	dissented	wikidata	
 abelian-group	mathematical-set	accepted	sumo wordnet	
 abelian-group	mathematical-structure	single	wikidata	
+abelian-group	module	dissented	wikidata	
 abelian-group	monoid	single	wikidata	
 abelian-group	quasigroup	single	wikidata	
 abelian-group	semigroup	single	wikidata	
@@ -23,7 +24,11 @@ acceptance-sampling	procedure	single	sumo
 acceptance-sampling	sample-distribution	accepted	claude wordnet	
 acceptance-sampling	statistical-distribution	single	wordnet	
 acceptance-sampling	volition	single	sumo	
+access	algebraic-structure	single	wikidata	
+access	binary-relation	single	wikidata	
 access	logical-relation	single	sumo	
+access	mathematical-set	single	wikidata	
+access	mathematical-structure	single	wikidata	
 account	expression	single	opencyc	
 accuracy	attribute	accepted	claude wordnet	
 accuracy	disposition	single	opencyc	
@@ -39,6 +44,7 @@ acute-triangle	attribute	single	wordnet
 acute-triangle	polygon	single	wordnet	
 acute-triangle	shape	single	wordnet	
 acute-triangle	triangle	accepted	claude wordnet	
+acyclic-graph	graph	single	wikidata	
 acyclic-graph	hypergraph	single	wikidata	
 acyclic-graph	mathematical-graph	single	wikidata	
 acyclic-graph	mathematical-structure	single	wikidata	
@@ -72,6 +78,7 @@ additive-inverse	tension	single	sumo
 additive-inverse	way	single	sumo	
 address	expression	single	opencyc	
 adeptness	logical-relation	single	sumo	
+adjacency-matrix	data-structure	single	wikidata	
 adjacency-matrix	matrix	accepted	peter wikidata	
 adjacency-matrix	tensor	single	wikidata	
 administrator	logical-relation	single	sumo	
@@ -84,6 +91,7 @@ adventure	logical-relation	single	sumo
 adversity	logical-relation	single	sumo	
 advice	expression	single	opencyc	
 adviser	logical-relation	single	sumo	
+aes	block-cipher	accepted	peter	
 affine-geometry	cognition	single	wordnet	
 affine-geometry	field-of-study	accepted	sumo wordnet	
 affine-geometry	geometry	accepted	claude wordnet	
@@ -128,6 +136,7 @@ algebra-over-a-field	algebraic-structure	single	wikidata
 algebra-over-a-field	mathematical-module	single	wikidata	
 algebra-over-a-field	mathematical-ring	accepted	claude wikidata	
 algebra-over-a-field	mathematical-structure	single	wikidata	
+algebra-over-a-field	module	single	wikidata	
 algebra-over-a-field	vector-space	accepted	claude wikidata	
 algebraic-magma	algebraic-structure	accepted	claude wikidata	
 algebraic-magma	mathematical-structure	single	wikidata	
@@ -179,9 +188,9 @@ analyst	expression	single	opencyc
 analyst	logical-relation	single	sumo	
 analytic-geometry	cognition	single	wordnet	
 analytic-geometry	field-of-study	accepted	sumo wordnet	
-analytic-geometry	geometry	accepted	claude wordnet	
+analytic-geometry	geometry	accepted	claude wikidata wordnet	
 analytic-geometry	logical-relation	single	sumo	
-analytic-geometry	mathematics	single	wordnet	
+analytic-geometry	mathematics	accepted	wikidata wordnet	
 analytic-geometry	science	single	wordnet	
 analytic-geometry	signified	single	sumo	
 ancestor	logical-relation	single	sumo	
@@ -281,7 +290,10 @@ arity	number	accepted	peter sumo
 arity	quantity	single	sumo	
 army-division	expression	single	opencyc	
 arrangement-scheme	logical-relation	single	sumo	
+article	algebraic-structure	single	wikidata	
 article	expression	single	opencyc	
+article	mathematical-set	single	wikidata	
+article	mathematical-structure	single	wikidata	
 artist	expression	single	opencyc	
 aspect	logical-relation	single	sumo	
 aspiration	logical-relation	single	sumo	
@@ -304,6 +316,7 @@ auction	expression	single	opencyc
 auditor	expression	single	opencyc	
 augury	logical-relation	single	sumo	
 aunt	logical-relation	single	sumo	
+authenticated-encryption	encryption	accepted	peter wikidata	
 authorities	logical-relation	single	sumo	
 automorphism	algebraic-structure	single	wikidata	
 automorphism	binary-relation	single	wikidata	
@@ -372,6 +385,7 @@ bernoulli's-law	signified	single	sumo
 betrothal	expression	single	opencyc	
 bias	logical-relation	single	sumo	
 bible	expression	single	opencyc	
+big-o-notation	mathematical-relation	accepted	peter	
 bijection	algebraic-structure	single	wikidata	
 bijection	binary-relation	single	wikidata	
 bijection	function	single	wikidata	
@@ -382,12 +396,23 @@ binary-relation	algebraic-structure	single	wikidata
 binary-relation	mathematical-relation	accepted	peter	
 binary-relation	mathematical-set	dissented	wikidata	
 binary-relation	mathematical-structure	single	wikidata	
+binary-tree	data-structure	accepted	peter wikidata	
+binary-tree	directed-acyclic-graph	single	wikidata	
+binary-tree	directed-graph	single	wikidata	
+binary-tree	graph	single	wikidata	
+binary-tree	hypergraph	single	wikidata	
+binary-tree	mathematical-graph	single	wikidata	
+binary-tree	mathematical-structure	single	wikidata	
+binary-tree	polytree	single	wikidata	
+binary-tree	rooted-tree	accepted	claude wikidata	
+binary-tree	tree-graph	accepted	peter	
 binomial	cognition	single	wordnet	
 binomial	concept	single	wordnet	
 binomial	idea	single	wordnet	
 binomial	logical-relation	single	sumo	
 binomial	polynomial	accepted	claude wikidata	
 binomial	quantity	accepted	sumo wordnet	
+binomial-coefficient	number	accepted	peter	
 binomial-distribution	cognition	single	wordnet	
 binomial-distribution	logical-relation	single	sumo	
 binomial-distribution	statistical-distribution	accepted	claude wordnet	
@@ -397,6 +422,7 @@ binomial-theorem	proposition	single	wordnet
 binomial-theorem	signified	single	sumo	
 binomial-theorem	theorem	accepted	claude wordnet	
 biology	logical-relation	single	sumo	
+bipartite-graph	graph	single	wikidata	
 bipartite-graph	hypergraph	single	wikidata	
 bipartite-graph	mathematical-graph	single	wikidata	
 bipartite-graph	mathematical-structure	single	wikidata	
@@ -417,10 +443,20 @@ biserial-correlation-coefficient	logical-relation	single	sumo
 biserial-correlation-coefficient	parametric-statistic	single	wordnet	
 biserial-correlation-coefficient	quantity	single	sumo	
 biserial-correlation-coefficient	statistic	single	wordnet	
+bit-string	data-structure	accepted	peter wikidata	
 blackmail	expression	single	opencyc	
 blessing	expression	single	opencyc	
 blink-of-an-eye	logical-relation	single	sumo	
+block-cipher	algorithm	single	wikidata	
+block-cipher	cipher	accepted	peter wikidata	
+block-cipher	sign	single	wikidata	
+blockchain	book	single	yago	
+blockchain	data-structure	accepted	peter wikidata	
+blockchain	hash-chain	accepted	peter	
+blockchain	information	single	yago	
+blockchain	product	single	yago	
 bloodshed	expression	single	opencyc	
+bloom-filter	data-structure	accepted	peter	
 board-of-directors	expression	single	opencyc	
 boldness	logical-relation	single	sumo	
 boldness	range-of-a-function	single	sumo	
@@ -437,6 +473,7 @@ boolean-algebra	mathematical-module	single	wikidata
 boolean-algebra	mathematical-ring	single	wikidata	
 boolean-algebra	mathematical-structure	single	wikidata	
 boolean-algebra	meet-semilattice	single	wikidata	
+boolean-algebra	module	single	wikidata	
 boolean-algebra	monoid	dissented	wikidata	
 boolean-algebra	partially-ordered-set	single	wikidata	
 boolean-algebra	semigroup	single	wikidata	
@@ -468,6 +505,7 @@ brewery	expression	single	opencyc
 bride	expression	single	opencyc	
 brilliance	logical-relation	single	sumo	
 brother	logical-relation	single	sumo	
+brute-force-attack	cryptanalysis	accepted	peter	
 bubble	manifold	single	opencyc	
 budget	logical-relation	single	sumo	
 bureaucracy	expression	single	opencyc	
@@ -496,20 +534,30 @@ call	expression	single	opencyc
 campaign	expression	single	opencyc	
 campaigner	logical-relation	single	sumo	
 capacity	logical-relation	single	sumo	
+capacity	mathematical-structure	dissented	wikidata	
 capital-city	expression	single	opencyc	
 caprice	logical-relation	single	sumo	
 caption	expression	single	opencyc	
 card	expression	single	opencyc	
 cardinal-number	number	accepted	opencyc wikidata	
 cardinal-number	ordinal-number	dissented	wikidata	
+cardinal-number	quantity	single	wikidata	
+cardinality	algebraic-structure	single	wikidata	
+cardinality	binary-relation	single	wikidata	
+cardinality	function	dissented	wikidata	
+cardinality	invariant	accepted	claude wikidata	
 cardinality	logical-relation	single	sumo	
+cardinality	mathematical-set	single	wikidata	
+cardinality	mathematical-structure	single	wikidata	
 cardinality	number	accepted	peter sumo	
 cardinality	quantity	single	sumo	
 care	expression	single	opencyc	
 career	logical-relation	single	sumo	
 carriage	logical-relation	single	sumo	
+carrot	root	dissented	wikidata	
 case	expression	single	opencyc	
 cash	expression	single	opencyc	
+catalan-number	natural-number	accepted	peter	
 catch	logical-relation	single	sumo	
 category	logical-relation	single	sumo	
 caution	logical-relation	single	sumo	
@@ -521,9 +569,34 @@ championship	expression	single	opencyc
 championship	logical-relation	single	sumo	
 chaos	logical-relation	single	sumo	
 chapter	expression	single	opencyc	
+characteristic	algebraic-number	single	wikidata	
+characteristic	algebraic-structure	single	wikidata	
+characteristic	complex-number	single	wikidata	
+characteristic	integer	dissented	wikidata	
+characteristic	join-semilattice	single	wikidata	
 characteristic	logical-relation	single	sumo	
+characteristic	mathematical-lattice	single	wikidata	
+characteristic	mathematical-structure	single	wikidata	
+characteristic	meet-semilattice	single	wikidata	
+characteristic	partially-ordered-set	single	wikidata	
+characteristic	quaternion	single	wikidata	
+characteristic	rational-number	single	wikidata	
+characteristic	real-number	single	wikidata	
+characteristic	totally-ordered-set	single	wikidata	
 charity	expression	single	opencyc	
+charm	algebraic-number	single	wikidata	
+charm	algebraic-structure	single	wikidata	
+charm	complex-number	single	wikidata	
+charm	join-semilattice	single	wikidata	
 charm	logical-relation	single	sumo	
+charm	mathematical-lattice	single	wikidata	
+charm	mathematical-structure	single	wikidata	
+charm	meet-semilattice	single	wikidata	
+charm	partially-ordered-set	single	wikidata	
+charm	quaternion	single	wikidata	
+charm	rational-number	single	wikidata	
+charm	real-number	single	wikidata	
+charm	totally-ordered-set	single	wikidata	
 chart	expression	single	opencyc	
 charter	expression	single	opencyc	
 chemistry	logical-relation	single	sumo	
@@ -531,9 +604,13 @@ chief	logical-relation	single	sumo
 childhood	logical-relation	single	sumo	
 chord	logical-relation	single	sumo	
 church	expression	single	opencyc	
+cipher	algorithm	accepted	peter wikidata	
+cipher	sign	dissented	wikidata	
+ciphertext	information	accepted	peter	
 circle	algebraic-structure	single	wikidata	
 circle	conic-section	accepted	claude wikidata wordnet	
 circle	geometric-shape	accepted	claude wikidata	
+circle	locus	single	wikidata	
 circle	mathematical-set	single	wikidata	
 circle	mathematical-structure	single	wikidata	
 circumstance	logical-relation	single	sumo	
@@ -549,6 +626,17 @@ clemency	expression	single	opencyc
 clemency	logical-relation	single	sumo	
 climate	logical-relation	single	sumo	
 clipping	expression	single	opencyc	
+clique	algebraic-structure	single	wikidata	
+clique	complete-graph	dissented	wikidata	
+clique	connected-graph	single	wikidata	
+clique	hypergraph	single	wikidata	
+clique	induced-subgraph	dissented	wikidata	
+clique	mathematical-graph	single	wikidata	
+clique	mathematical-set	single	wikidata	
+clique	mathematical-structure	single	wikidata	
+clique	subgraph	single	wikidata	
+clique	subset	single	wikidata	
+clique	undirected-graph	single	wikidata	
 clock-time	logical-relation	single	sumo	
 closed-interval	interval	accepted	claude wordnet	
 closed-interval	logical-relation	single	sumo	
@@ -565,7 +653,10 @@ closure-system	mathematical-set	accepted	peter
 coach	expression	single	opencyc	
 coach	logical-relation	single	sumo	
 coating	expression	single	opencyc	
+code	algorithm	single	wikidata	
+code	cipher	dissented	wikidata	
 code	logical-relation	single	sumo	
+coding-theory	discrete-mathematics	accepted	peter	
 coefficient-of-concordance	cognition	single	wordnet	
 coefficient-of-concordance	kendall-test	accepted	claude wordnet	
 coefficient-of-concordance	logical-relation	single	sumo	
@@ -582,12 +673,14 @@ color	logical-relation	single	sumo
 column	expression	single	opencyc	
 column.group	logical-relation	single	sumo	
 coma	expression	single	opencyc	
+combination-combinatorics	concept	accepted	peter	
 combinatorial-combination	act	single	wordnet	
 combinatorial-combination	activity	single	wordnet	
 combinatorial-combination	event	accepted	sumo wordnet	
 combinatorial-combination	mathematical-operation	accepted	claude wordnet	
 combinatorial-combination	phenomenon	single	sumo	
 combinatorial-combination	procedure	single	wordnet	
+combinatorics	discrete-mathematics	accepted	peter	
 comedy	expression	single	opencyc	
 comfort	logical-relation	single	sumo	
 comic-strip	expression	single	opencyc	
@@ -595,12 +688,14 @@ command	logical-relation	single	sumo
 commencement	logical-relation	single	sumo	
 commission	logical-relation	single	sumo	
 commitment	logical-relation	single	sumo	
+commitment-scheme	cryptographic-protocol	accepted	peter	
 committee	expression	single	opencyc	
 common-sense	logical-relation	single	sumo	
 commutative-ring	algebraic-structure	single	wikidata	
 commutative-ring	mathematical-module	dissented	wikidata	
 commutative-ring	mathematical-ring	accepted	claude wikidata	
 commutative-ring	mathematical-structure	single	wikidata	
+commutative-ring	module	dissented	wikidata	
 comparison	expression	single	opencyc	
 compassion	logical-relation	single	sumo	
 compassion	range-of-a-function	single	sumo	
@@ -609,6 +704,7 @@ competition	expression	single	opencyc
 competitive-edge	logical-relation	single	sumo	
 competitive-lead	logical-relation	single	sumo	
 complete-graph	connected-graph	accepted	claude wikidata	
+complete-graph	graph	single	wikidata	
 complete-graph	hypergraph	single	wikidata	
 complete-graph	mathematical-graph	single	wikidata	
 complete-graph	mathematical-structure	single	wikidata	
@@ -630,11 +726,15 @@ complex-number	partially-ordered-set	single	wikidata
 complex-number	quantity	single	sumo	
 complex-number	quaternion	dissented	wikidata	
 complex-number	totally-ordered-set	dissented	wikidata	
+complexity-class	mathematical-set	accepted	peter	
 complication	logical-relation	single	sumo	
 composer	expression	single	opencyc	
 composite-number	natural-number	accepted	peter	
 compromise	expression	single	opencyc	
 computability-theory	mathematical-logic	accepted	peter wikidata	
+computational-complexity-theory	computability-theory	accepted	peter wikidata	
+computational-complexity-theory	computer-science	accepted	peter	
+computational-complexity-theory	mathematical-logic	single	wikidata	
 computer	expression	single	opencyc	
 computer-memory	expression	single	opencyc	
 computer-program	logical-relation	single	sumo	
@@ -655,6 +755,7 @@ concept-intent	mathematical-set	accepted	peter
 concept-lattice	complete-lattice	accepted	peter	
 concern.cognition	logical-relation	single	sumo	
 concession	expression	single	opencyc	
+conclusion	logical-consequence	dissented	wikidata	
 condition	logical-relation	single	sumo	
 conditional-probability	logical-relation	single	sumo	
 conditional-probability	probability	accepted	peter sumo wordnet	
@@ -667,6 +768,7 @@ conformity	expression	single	opencyc
 conformity	logical-relation	single	sumo	
 conic-section	algebraic-structure	single	wikidata	
 conic-section	attribute	accepted	sumo wordnet	
+conic-section	locus	accepted	claude wikidata	
 conic-section	logical-relation	single	sumo	
 conic-section	mathematical-set	dissented	wikidata	
 conic-section	mathematical-structure	single	wikidata	
@@ -675,6 +777,7 @@ conic-section	shape	accepted	sumo wordnet
 conjecture	proposition	accepted	peter	
 connected-component	algebraic-structure	single	wikidata	
 connected-component	connected-graph	accepted	claude wikidata	
+connected-component	graph	single	wikidata	
 connected-component	hypergraph	single	wikidata	
 connected-component	mathematical-graph	single	wikidata	
 connected-component	mathematical-set	single	wikidata	
@@ -682,6 +785,7 @@ connected-component	mathematical-structure	single	wikidata
 connected-component	subgraph	accepted	claude wikidata	
 connected-component	subset	single	wikidata	
 connected-component	undirected-graph	single	wikidata	
+connected-graph	graph	single	wikidata	
 connected-graph	hypergraph	single	wikidata	
 connected-graph	mathematical-graph	single	wikidata	
 connected-graph	mathematical-structure	single	wikidata	
@@ -696,6 +800,7 @@ conspiracy	logical-relation	single	sumo
 constitution	logical-relation	single	sumo	
 constraint	logical-relation	single	sumo	
 consumer	expression	single	opencyc	
+content-addressing	concept	accepted	peter	
 context	expression	single	opencyc	
 context	logical-relation	single	sumo	
 contract	expression	single	opencyc	
@@ -727,7 +832,10 @@ coordinate-origin	geometric-intersection	accepted	claude wordnet
 coordinate-origin	logical-relation	single	sumo	
 coordinate-origin	mathematical-set	single	wordnet	
 coordinate-origin	signified	single	sumo	
+copy	algebraic-structure	single	wikidata	
 copy	expression	single	opencyc	
+copy	mathematical-set	single	wikidata	
+copy	mathematical-structure	single	wikidata	
 copyright	expression	single	opencyc	
 corollary	accomplishment	single	sumo	
 corollary	act	single	sumo	
@@ -744,7 +852,7 @@ correction	logical-relation	single	sumo
 correlation	logical-relation	single	sumo	
 correlation-coefficient	cognition	single	wordnet	
 correlation-coefficient	logical-relation	single	sumo	
-correlation-coefficient	number	accepted	sumo wikidata	
+correlation-coefficient	number	single	sumo	
 correlation-coefficient	parametric-statistic	accepted	claude wordnet	
 correlation-coefficient	quantity	single	sumo	
 correlation-coefficient	statistic	single	wordnet	
@@ -833,6 +941,11 @@ crisis	logical-relation	single	sumo
 critic	expression	single	opencyc	
 critique	expression	single	opencyc	
 crook	logical-relation	single	sumo	
+cross	algebraic-structure	single	wikidata	
+cross	geometric-shape	dissented	wikidata	
+cross	locus	single	wikidata	
+cross	mathematical-set	single	wikidata	
+cross	mathematical-structure	single	wikidata	
 cross-section	artifact	single	sumo	
 cross-section	cognition	single	wordnet	
 cross-section	contract-condition	single	sumo	
@@ -853,9 +966,27 @@ crossing	translation	single	opencyc
 crowd	expression	single	opencyc	
 crowd	logical-relation	single	sumo	
 cruelty	logical-relation	single	sumo	
+cryptanalysis	cryptography	accepted	peter	
+cryptographic-hash-function	algebraic-structure	single	wikidata	
+cryptographic-hash-function	binary-relation	single	wikidata	
+cryptographic-hash-function	cryptographic-primitive	accepted	peter wikidata	
+cryptographic-hash-function	cryptography	single	wikidata	
+cryptographic-hash-function	function	accepted	peter wikidata	
+cryptographic-hash-function	mathematical-set	single	wikidata	
+cryptographic-hash-function	mathematical-structure	single	wikidata	
+cryptographic-key	concept	accepted	peter	
+cryptographic-primitive	algorithm	accepted	peter	
+cryptographic-primitive	cryptography	dissented	wikidata	
+cryptographic-protocol	concept	accepted	peter	
+cryptography	computer-science	accepted	peter	
+cryptography	mathematics	accepted	peter	
 cube	logical-relation	single	sumo	
 cube	manifold	single	opencyc	
 culture	logical-relation	single	sumo	
+curl	algebraic-structure	single	wikidata	
+curl	binary-relation	single	wikidata	
+curl	mathematical-set	single	wikidata	
+curl	mathematical-structure	single	wikidata	
 currency	expression	single	opencyc	
 curve	logical-relation	single	sumo	
 curved-shape	logical-relation	single	sumo	
@@ -875,6 +1006,7 @@ curvilinear-regression	statistical-method	single	wordnet
 curvilinear-regression	vector	single	sumo	
 custom	expression	single	opencyc	
 custom	logical-relation	single	sumo	
+cyclic-graph	graph	single	wikidata	
 cyclic-graph	hypergraph	single	wikidata	
 cyclic-graph	mathematical-graph	single	wikidata	
 cyclic-graph	mathematical-structure	single	wikidata	
@@ -885,6 +1017,7 @@ cyclic-group	algebraic-structure	single	wikidata
 cyclic-group	mathematical-group	single	wikidata	
 cyclic-group	mathematical-module	single	wikidata	
 cyclic-group	mathematical-structure	single	wikidata	
+cyclic-group	module	single	wikidata	
 cyclic-group	monoid	single	wikidata	
 cyclic-group	quasigroup	single	wikidata	
 cyclic-group	semigroup	single	wikidata	
@@ -895,6 +1028,9 @@ damage	logical-relation	single	sumo
 danger	logical-relation	single	sumo	
 dark-blue	logical-relation	single	sumo	
 dash	logical-relation	single	sumo	
+data-structure	concept	accepted	peter	
+data-structure	information	single	yago	
+data-structure	product	single	yago	
 daughter	logical-relation	single	sumo	
 dawn	logical-relation	single	sumo	
 day	logical-relation	single	sumo	
@@ -908,6 +1044,7 @@ decade	logical-relation	single	sumo
 decagon	algebraic-structure	single	wikidata	
 decagon	attribute	accepted	sumo wordnet	
 decagon	geometric-shape	single	wikidata	
+decagon	locus	single	wikidata	
 decagon	logical-relation	single	sumo	
 decagon	manifold	single	opencyc	
 decagon	mathematical-set	single	wikidata	
@@ -929,6 +1066,7 @@ decile	statistic	accepted	peter
 decile	universe	single	sumo	
 decision-problem	problem	accepted	peter	
 decree	expression	single	opencyc	
+decryption	mathematical-operation	accepted	peter	
 dedekind-macneille-completion	complete-lattice	accepted	peter	
 deductive-reasoning	thinking	accepted	peter	
 deed	expression	single	opencyc	
@@ -974,6 +1112,7 @@ description-logic	language	single	yago
 description-logic	mathematical-logic	accepted	peter	
 description-logic	product	single	yago	
 deservingness	logical-relation	single	sumo	
+design-theory	combinatorics	accepted	peter wikidata	
 destiny	logical-relation	single	sumo	
 detachment	logical-relation	single	sumo	
 detail	expression	single	opencyc	
@@ -981,18 +1120,16 @@ detail	logical-relation	single	sumo
 detective	expression	single	opencyc	
 detention	logical-relation	single	sumo	
 deviation	cognition	single	wordnet	
-deviation	number	accepted	claude wikidata	
+deviation	number	single	claude	
 deviation	statistic	accepted	claude wordnet	
 diagonal	algebraic-structure	single	wikidata	
-diagonal	join-semilattice	single	wikidata	
+diagonal	geometric-shape	dissented	wikidata	
+diagonal	locus	single	wikidata	
 diagonal	logical-relation	single	sumo	
-diagonal	mathematical-lattice	single	wikidata	
-diagonal	mathematical-set	accepted	sumo wordnet	
+diagonal	mathematical-set	accepted	sumo wikidata wordnet	
 diagonal	mathematical-structure	single	wikidata	
-diagonal	meet-semilattice	single	wikidata	
-diagonal	partially-ordered-set	single	wikidata	
-diagonal	subset	single	sumo	
-diagonal	totally-ordered-set	dissented	wikidata	
+diagonal	partially-ordered-set	dissented	wikidata	
+diagonal	subset	accepted	sumo wikidata	
 diagonal-line	attribute	single	wordnet	
 diagonal-line	logical-relation	single	sumo	
 diagonal-line	shape	accepted	claude wordnet	
@@ -1000,7 +1137,14 @@ diagonal-line	signified	single	sumo
 diagram	expression	single	opencyc	
 dialect	expression	single	opencyc	
 dialogue	expression	single	opencyc	
+diameter	algebraic-structure	single	wikidata	
+diameter	geometric-shape	dissented	wikidata	
+diameter	locus	single	wikidata	
 diameter	logical-relation	single	sumo	
+diameter	mathematical-set	single	wikidata	
+diameter	mathematical-structure	single	wikidata	
+diameter	partially-ordered-set	dissented	wikidata	
+diameter	subset	dissented	wikidata	
 diary	expression	single	opencyc	
 dictionary	expression	single	opencyc	
 diet	expression	single	opencyc	
@@ -1028,16 +1172,23 @@ differentiation	procedure	accepted	sumo wordnet
 differentiation	universe	single	sumo	
 differentiation	volition	single	sumo	
 difficulty	logical-relation	single	sumo	
+diffie-hellman	key-exchange	accepted	peter	
+digital-certificate	artifact	single	opencyc	
+digital-certificate	document	accepted	peter	
+digital-certificate	expression	single	opencyc	
+digital-signature	cryptographic-primitive	accepted	peter	
 dignity	logical-relation	single	sumo	
 dilemma	logical-relation	single	sumo	
 diligence	logical-relation	single	sumo	
 diplomat	expression	single	opencyc	
 directed-acyclic-graph	directed-graph	accepted	opencyc wikidata	
+directed-acyclic-graph	graph	single	wikidata	
 directed-acyclic-graph	hypergraph	single	wikidata	
 directed-acyclic-graph	mathematical-graph	single	wikidata	
 directed-acyclic-graph	mathematical-structure	single	wikidata	
 directed-acyclic-graph	multigraph	single	opencyc	
 directed-acyclic-graph	system	single	opencyc	
+directed-graph	graph	dissented	wikidata	
 directed-graph	hypergraph	single	wikidata	
 directed-graph	mathematical-graph	accepted	claude wikidata	
 directed-graph	mathematical-structure	single	wikidata	
@@ -1055,12 +1206,23 @@ disadvantage	logical-relation	single	sumo
 disagreement	logical-relation	single	sumo	
 discourtesy	logical-relation	single	sumo	
 discovery	logical-relation	single	sumo	
+discrete-logarithm	decision-problem	accepted	peter	
+discrete-mathematics	mathematics	accepted	peter	
 discrimination	logical-relation	single	sumo	
 disease	logical-relation	single	sumo	
 disgrace	logical-relation	single	sumo	
+disk	algebraic-structure	single	wikidata	
+disk	geometric-shape	dissented	wikidata	
+disk	locus	single	wikidata	
 disk	manifold	single	opencyc	
+disk	mathematical-set	single	wikidata	
+disk	mathematical-structure	single	wikidata	
+disk	topological-space	dissented	wikidata	
 disorderliness	logical-relation	single	sumo	
+disposition	algebraic-structure	single	wikidata	
 disposition	logical-relation	single	sumo	
+disposition	mathematical-set	single	wikidata	
+disposition	mathematical-structure	single	wikidata	
 disposition	range-of-a-function	single	sumo	
 disregard	logical-relation	single	sumo	
 dissertation	expression	single	opencyc	
@@ -1095,6 +1257,7 @@ doctrine	logical-relation	single	sumo
 dodecagon	algebraic-structure	single	wikidata	
 dodecagon	attribute	accepted	sumo wordnet	
 dodecagon	geometric-shape	single	wikidata	
+dodecagon	locus	single	wikidata	
 dodecagon	logical-relation	single	sumo	
 dodecagon	manifold	single	opencyc	
 dodecagon	mathematical-set	single	wikidata	
@@ -1108,7 +1271,16 @@ domain	logical-relation	single	sumo
 domain	mathematical-set	accepted	claude wordnet	
 domain	quantity	single	sumo	
 dome	manifold	single	opencyc	
+dominance	algebraic-structure	single	wikidata	
+dominance	antisymmetric-relation	single	wikidata	
+dominance	binary-relation	single	wikidata	
 dominance	logical-relation	single	sumo	
+dominance	mathematical-set	single	wikidata	
+dominance	mathematical-structure	single	wikidata	
+dominance	partial-order	dissented	wikidata	
+dominance	preorder	single	wikidata	
+dominance	reflexive-relation	single	wikidata	
+dominance	transitive-relation	single	wikidata	
 domination	logical-relation	single	sumo	
 dominion	expression	single	opencyc	
 dominion	logical-relation	single	sumo	
@@ -1155,23 +1327,32 @@ eccentricity	quaternion	single	wikidata
 eccentricity	ratio	accepted	claude wordnet	
 eccentricity	real-number	accepted	claude wikidata	
 eccentricity	totally-ordered-set	single	wikidata	
+ecdsa	signature-scheme	accepted	peter	
 economic-system	logical-relation	single	sumo	
 economic-value	logical-relation	single	sumo	
 economics	logical-relation	single	sumo	
 economy	expression	single	opencyc	
 economy	logical-relation	single	sumo	
 economy	range-of-a-function	single	sumo	
+edge	algebraic-structure	single	wikidata	
+edge	geometric-shape	dissented	wikidata	
+edge	locus	single	wikidata	
+edge	mathematical-set	single	wikidata	
+edge	mathematical-structure	single	wikidata	
+edge	partially-ordered-set	dissented	wikidata	
+edge	subset	dissented	wikidata	
 electorate	logical-relation	single	sumo	
 electric-charge	logical-relation	single	sumo	
 electronics	logical-relation	single	sumo	
 elementary-geometry	cognition	single	wordnet	
 elementary-geometry	field-of-study	accepted	sumo wordnet	
-elementary-geometry	geometry	accepted	claude wordnet	
+elementary-geometry	geometry	accepted	claude wikidata wordnet	
 elementary-geometry	logical-relation	single	sumo	
-elementary-geometry	mathematics	single	wordnet	
+elementary-geometry	mathematics	accepted	wikidata wordnet	
 elementary-geometry	science	single	wordnet	
 elementary-geometry	signified	single	sumo	
 elite	expression	single	opencyc	
+elliptic-curve-cryptography	public-key-cryptography	accepted	peter wikidata	
 elliptic-geometry	cognition	single	wordnet	
 elliptic-geometry	field-of-study	accepted	sumo wordnet	
 elliptic-geometry	geometry	single	wordnet	
@@ -1186,6 +1367,7 @@ emphasis	logical-relation	single	sumo
 empire	expression	single	opencyc	
 employment	logical-relation	single	sumo	
 empty-set	finite-set	accepted	peter	
+encryption	mathematical-operation	accepted	peter	
 endomorphism	algebraic-structure	single	wikidata	
 endomorphism	binary-relation	single	wikidata	
 endomorphism	function	single	wikidata	
@@ -1224,6 +1406,7 @@ equivalence-relation	symmetric-relation	accepted	claude wikidata
 equivalence-relation	transitive-relation	single	wikidata	
 era	logical-relation	single	sumo	
 erosion	expression	single	opencyc	
+error-correcting-code	concept	accepted	peter	
 escape	expression	single	opencyc	
 escort	logical-relation	single	sumo	
 esprit-de-corps	logical-relation	single	sumo	
@@ -1236,6 +1419,7 @@ euclid's-axiom	information	single	wordnet
 euclid's-axiom	logical-relation	single	sumo	
 euclid's-axiom	proposition	accepted	claude wordnet	
 euclid's-axiom	signified	single	sumo	
+euclidean-algorithm	algorithm	accepted	peter	
 euclidean-space	attribute	single	wordnet	
 euclidean-space	logical-relation	single	sumo	
 euclidean-space	mathematical-set	accepted	sumo wordnet	
@@ -1284,16 +1468,25 @@ evenness	society	single	sumo
 evenness	status	single	sumo	
 evenness	tension	single	sumo	
 evenness	way	single	sumo	
+event	algebraic-structure	single	wikidata	
+event	mathematical-set	dissented	wikidata	
+event	mathematical-structure	single	wikidata	
 evidence	expression	single	opencyc	
 examiner	expression	single	opencyc	
 exceedance	logical-relation	single	sumo	
 exceedance	probability	accepted	peter sumo wordnet	
+excerpt	algebraic-structure	single	wikidata	
+excerpt	mathematical-set	single	wikidata	
+excerpt	mathematical-structure	single	wikidata	
 excess	logical-relation	single	sumo	
 exchange	expression	single	opencyc	
 excitement	logical-relation	single	sumo	
 excuse	expression	single	opencyc	
 executive	expression	single	opencyc	
+exemplar	algebraic-structure	single	wikidata	
 exemplar	logical-relation	single	sumo	
+exemplar	mathematical-set	single	wikidata	
+exemplar	mathematical-structure	single	wikidata	
 exemption	logical-relation	single	sumo	
 existential-quantifier	algebraic-structure	single	wikidata	
 existential-quantifier	binary-relation	single	wikidata	
@@ -1309,8 +1502,13 @@ expert	logical-relation	single	sumo
 expertness	logical-relation	single	sumo	
 explaining	expression	single	opencyc	
 explanation	logical-relation	single	sumo	
-exponential	function	accepted	claude wordnet	
+exponential	algebraic-structure	single	wikidata	
+exponential	binary-relation	single	wikidata	
+exponential	function	accepted	claude wikidata wordnet	
+exponential	mathematical-operation	dissented	wikidata	
 exponential	mathematical-relation	single	wordnet	
+exponential	mathematical-set	single	wikidata	
+exponential	mathematical-structure	single	wikidata	
 exponential-equation	equation	accepted	claude wordnet	
 exponential-equation	information	single	wordnet	
 exponential-equation	logical-relation	single	sumo	
@@ -1396,12 +1594,19 @@ feeling	logical-relation	single	sumo
 feminist	expression	single	opencyc	
 festival	expression	single	opencyc	
 fever	expression	single	opencyc	
+fibonacci-sequence	concept	accepted	peter	
 field-of-study	expression	single	opencyc	
 field-of-study	logical-relation	single	sumo	
 fight	expression	single	opencyc	
 figure	logical-relation	single	sumo	
+filter	algebraic-structure	single	wikidata	
+filter	mathematical-set	single	wikidata	
+filter	mathematical-structure	single	wikidata	
+filter	subset	single	wikidata	
+filter	upper-set	dissented	wikidata	
 financial-document	expression	single	opencyc	
 financial-sacrifice	logical-relation	single	sumo	
+finite-automaton	formal-system	accepted	peter	
 finite-field	abelian-group	single	wikidata	
 finite-field	algebra-over-a-field	single	wikidata	
 finite-field	algebraic-magma	single	wikidata	
@@ -1416,6 +1621,7 @@ finite-field	mathematical-module	single	wikidata
 finite-field	mathematical-ring	single	wikidata	
 finite-field	mathematical-set	single	wikidata	
 finite-field	mathematical-structure	single	wikidata	
+finite-field	module	single	wikidata	
 finite-field	monoid	single	wikidata	
 finite-field	quasigroup	single	wikidata	
 finite-field	semigroup	single	wikidata	
@@ -1453,11 +1659,16 @@ fix	logical-relation	single	sumo
 fixed-point	concept	accepted	peter	
 flag	expression	single	opencyc	
 flow-network	directed-graph	accepted	claude wikidata	
+flow-network	graph	single	wikidata	
 flow-network	hypergraph	single	wikidata	
 flow-network	mathematical-graph	single	wikidata	
 flow-network	mathematical-structure	single	wikidata	
 flow-network	weighted-graph	accepted	claude wikidata	
+fluctuation	algebraic-structure	single	wikidata	
+fluctuation	binary-relation	single	wikidata	
 fluctuation	logical-relation	single	sumo	
+fluctuation	mathematical-set	single	wikidata	
+fluctuation	mathematical-structure	single	wikidata	
 fluid	logical-relation	single	sumo	
 foe	logical-relation	single	sumo	
 fold	logical-relation	single	sumo	
@@ -1472,6 +1683,9 @@ form	expression	single	opencyc
 formal-concept	concept	accepted	peter	
 formal-concept-analysis	order-theory	accepted	peter	
 formal-context	binary-relation	accepted	peter	
+formal-grammar	expression	single	opencyc	
+formal-grammar	formal-system	accepted	peter	
+formal-grammar	information	single	opencyc	
 formal-system	concept	accepted	peter	
 forte	logical-relation	single	sumo	
 fortune	logical-relation	single	sumo	
@@ -1496,7 +1710,18 @@ fractal-geometry	logical-relation	single	sumo
 fractal-geometry	mathematics	single	wordnet	
 fractal-geometry	science	single	wordnet	
 fractal-geometry	signified	single	sumo	
-fraction	complex-number	accepted	claude wordnet	
+fraction	algebraic-number	single	wikidata	
+fraction	algebraic-structure	single	wikidata	
+fraction	complex-number	accepted	claude wikidata wordnet	
+fraction	join-semilattice	single	wikidata	
+fraction	mathematical-lattice	single	wikidata	
+fraction	mathematical-structure	single	wikidata	
+fraction	meet-semilattice	single	wikidata	
+fraction	partially-ordered-set	single	wikidata	
+fraction	quaternion	single	wikidata	
+fraction	rational-number	dissented	wikidata	
+fraction	real-number	single	wikidata	
+fraction	totally-ordered-set	single	wikidata	
 franchise	expression	single	opencyc	
 fraud	expression	single	opencyc	
 freak	logical-relation	single	sumo	
@@ -1524,8 +1749,14 @@ galois-theory	science	single	wordnet
 galois-theory	signified	single	sumo	
 game	expression	single	opencyc	
 game-rule	logical-relation	single	sumo	
+generating-function	algebraic-structure	single	wikidata	
+generating-function	binary-relation	single	wikidata	
+generating-function	function	accepted	peter wikidata	
+generating-function	mathematical-set	single	wikidata	
+generating-function	mathematical-structure	single	wikidata	
 genius	expression	single	opencyc	
 geodesic	attribute	single	wordnet	
+geodesic	curve	dissented	wikidata	
 geodesic	logical-relation	single	sumo	
 geodesic	shape	accepted	claude wordnet	
 geodesic	signified	single	sumo	
@@ -1541,7 +1772,12 @@ geometric-construction	phenomenon	single	sumo
 geometric-construction	procedure	accepted	sumo wordnet	
 geometric-construction	universe	single	sumo	
 geometric-construction	volition	single	sumo	
-geometric-intersection	mathematical-set	accepted	claude wordnet	
+geometric-intersection	algebraic-structure	single	wikidata	
+geometric-intersection	binary-relation	single	wikidata	
+geometric-intersection	function	single	wikidata	
+geometric-intersection	mathematical-operation	accepted	claude wikidata	
+geometric-intersection	mathematical-set	accepted	claude wikidata wordnet	
+geometric-intersection	mathematical-structure	single	wikidata	
 geometric-mean	average	single	wordnet	
 geometric-mean	cognition	single	wordnet	
 geometric-mean	logical-relation	single	sumo	
@@ -1564,22 +1800,30 @@ geometric-rotation	mathematical-relation	single	wordnet
 geometric-rotation	transformation	accepted	claude wordnet	
 geometric-series	function	single	wordnet	
 geometric-series	mathematical-relation	single	wordnet	
-geometric-series	mathematical-series	accepted	claude wordnet	
+geometric-series	mathematical-series	accepted	claude wikidata wordnet	
 geometric-series	polynomial	single	wordnet	
+geometric-series	series	dissented	wikidata	
 geometric-shape	algebraic-structure	single	wikidata	
+geometric-shape	locus	accepted	claude wikidata	
 geometric-shape	mathematical-set	dissented	wikidata	
 geometric-shape	mathematical-structure	single	wikidata	
 geometric-shape	shape	accepted	peter	
 geometry	cognition	single	wordnet	
 geometry	field-of-study	accepted	sumo wordnet	
 geometry	logical-relation	single	sumo	
-geometry	mathematics	accepted	claude wordnet	
+geometry	mathematics	accepted	claude wikidata wordnet	
 geometry	science	single	wordnet	
 geometry	signified	single	sumo	
 gesture	expression	single	opencyc	
 ghost	expression	single	opencyc	
 giant	expression	single	opencyc	
+globe	algebraic-structure	single	wikidata	
 globe	expression	single	opencyc	
+globe	geometric-shape	dissented	wikidata	
+globe	locus	single	wikidata	
+globe	mathematical-set	single	wikidata	
+globe	mathematical-structure	single	wikidata	
+globe	topological-space	dissented	wikidata	
 gloom	logical-relation	single	sumo	
 glory	logical-relation	single	sumo	
 goalkeeper	logical-relation	single	sumo	
@@ -1594,16 +1838,22 @@ governor	expression	single	opencyc
 grab-sample	cognition	single	wordnet	
 grab-sample	example	single	wordnet	
 grab-sample	sample	accepted	claude wordnet	
+grace	algebraic-structure	single	wikidata	
 grace	logical-relation	single	sumo	
+grace	mathematical-set	single	wikidata	
+grace	mathematical-structure	single	wikidata	
 gradation	logical-relation	single	sumo	
 grade	logical-relation	single	sumo	
 grammar	logical-relation	single	sumo	
 grandfather	logical-relation	single	sumo	
 grandma	logical-relation	single	sumo	
 grant	expression	single	opencyc	
+graph	hypergraph	dissented	wikidata	
+graph	mathematical-structure	single	wikidata	
 graph-clique	algebraic-structure	single	wikidata	
 graph-clique	complete-graph	accepted	claude wikidata	
 graph-clique	connected-graph	single	wikidata	
+graph-clique	graph	single	wikidata	
 graph-clique	hypergraph	single	wikidata	
 graph-clique	induced-subgraph	accepted	peter wikidata	
 graph-clique	mathematical-graph	single	wikidata	
@@ -1642,6 +1892,7 @@ graph-vertex	concept	accepted	peter
 gratuity	logical-relation	single	sumo	
 graveness	logical-relation	single	sumo	
 graveness	range-of-a-function	single	sumo	
+greatest-common-divisor	natural-number	accepted	peter	
 greatest-element	concept	accepted	peter	
 greeting	expression	single	opencyc	
 greeting-card	expression	single	opencyc	
@@ -1668,6 +1919,7 @@ guilt	logical-relation	single	sumo
 habit	logical-relation	single	sumo	
 haircut	expression	single	opencyc	
 hamiltonian-path	graph-path	accepted	peter wikidata	
+hamming-distance	metric-function	accepted	peter	
 hand	expression	single	opencyc	
 harmonic-mean	average	single	wordnet	
 harmonic-mean	cognition	single	wordnet	
@@ -1683,17 +1935,28 @@ harmonic-progression	logical-relation	single	sumo
 harmonic-progression	mathematical-set	single	wikidata	
 harmonic-progression	mathematical-structure	single	wikidata	
 harmony	logical-relation	single	sumo	
+hash-chain	data-structure	accepted	peter	
+hash-table	data-structure	accepted	peter wikidata	
+hash-table	expression	single	opencyc	
+hash-table	information	single	opencyc	
 hasse-diagram	diagram	accepted	peter	
 headline	expression	single	opencyc	
 headroom	logical-relation	single	sumo	
 health	logical-relation	single	sumo	
 health-condition	logical-relation	single	sumo	
+heap-data-structure	data-structure	accepted	peter	
 heart-shape	logical-relation	single	sumo	
 heat	logical-relation	single	sumo	
 heir	logical-relation	single	sumo	
+hemisphere	algebraic-structure	single	wikidata	
+hemisphere	geometric-shape	dissented	wikidata	
+hemisphere	locus	single	wikidata	
+hemisphere	mathematical-set	single	wikidata	
+hemisphere	mathematical-structure	single	wikidata	
 heptagon	algebraic-structure	single	wikidata	
 heptagon	attribute	accepted	sumo wordnet	
 heptagon	geometric-shape	single	wikidata	
+heptagon	locus	single	wikidata	
 heptagon	logical-relation	single	sumo	
 heptagon	manifold	single	opencyc	
 heptagon	mathematical-set	single	wikidata	
@@ -1710,6 +1973,7 @@ heroin	expression	single	opencyc
 hexagon	algebraic-structure	single	wikidata	
 hexagon	attribute	accepted	sumo wordnet	
 hexagon	geometric-shape	single	wikidata	
+hexagon	locus	single	wikidata	
 hexagon	logical-relation	single	sumo	
 hexagon	manifold	single	opencyc	
 hexagon	mathematical-set	single	wikidata	
@@ -1730,6 +1994,13 @@ heyting-algebra	meet-semilattice	single	wikidata
 heyting-algebra	monoid	dissented	wikidata	
 heyting-algebra	partially-ordered-set	single	wikidata	
 heyting-algebra	semigroup	single	wikidata	
+hierarchy	algebraic-structure	single	wikidata	
+hierarchy	binary-relation	single	wikidata	
+hierarchy	mathematical-set	single	wikidata	
+hierarchy	mathematical-structure	single	wikidata	
+hierarchy	preorder	dissented	wikidata	
+hierarchy	reflexive-relation	single	wikidata	
+hierarchy	transitive-relation	single	wikidata	
 highlight	logical-relation	single	sumo	
 hilbert-space	algebraic-structure	single	wikidata	
 hilbert-space	attribute	single	wordnet	
@@ -1740,16 +2011,19 @@ hilbert-space	mathematical-set	accepted	sumo wordnet
 hilbert-space	mathematical-space	single	wordnet	
 hilbert-space	mathematical-structure	single	wikidata	
 hilbert-space	metric-space	accepted	claude wordnet	
+hilbert-space	module	single	wikidata	
 hilbert-space	subset	single	sumo	
 hilbert-space	vector-space	accepted	claude wikidata	
 historic-period	logical-relation	single	sumo	
 history	expression	single	opencyc	
 history	logical-relation	single	sumo	
+hmac	message-authentication-code	accepted	peter	
 holiday	expression	single	opencyc	
 holiday	logical-relation	single	sumo	
 homogeneous-polynomial	function	single	wordnet	
 homogeneous-polynomial	mathematical-relation	single	wordnet	
 homogeneous-polynomial	polynomial	accepted	claude wikidata wordnet	
+homomorphic-encryption	encryption	accepted	peter wikidata	
 homomorphism	algebraic-structure	single	wikidata	
 homomorphism	binary-relation	single	wikidata	
 homomorphism	function	accepted	claude wikidata	
@@ -1786,8 +2060,21 @@ ideal	expression	single	opencyc
 ideal	logical-relation	single	sumo	
 ideal-value	logical-relation	single	sumo	
 identicalness	logical-relation	single	sumo	
+identity	algebraic-structure	single	wikidata	
+identity	antisymmetric-relation	single	wikidata	
+identity	binary-relation	single	wikidata	
+identity	equivalence-relation	dissented	wikidata	
 identity	logical-relation	single	sumo	
+identity	mathematical-set	single	wikidata	
+identity	mathematical-structure	single	wikidata	
+identity	partial-order	dissented	wikidata	
+identity	preorder	single	wikidata	
 identity	range-of-a-function	single	sumo	
+identity	reflexive-relation	single	wikidata	
+identity	symmetric-relation	single	wikidata	
+identity	tautology	dissented	wikidata	
+identity	theorem	dissented	wikidata	
+identity	transitive-relation	single	wikidata	
 identity-element	character	single	sumo	
 identity-element	function	single	wordnet	
 identity-element	information	single	sumo	
@@ -1815,17 +2102,23 @@ immigrant	logical-relation	single	sumo
 imperativeness	logical-relation	single	sumo	
 impetus	logical-relation	single	sumo	
 implication	logical-relation	accepted	sumo wordnet	
+importance	algebraic-structure	single	wikidata	
+importance	binary-relation	single	wikidata	
 importance	logical-relation	single	sumo	
+importance	mathematical-set	single	wikidata	
+importance	mathematical-structure	single	wikidata	
 imposter	expression	single	opencyc	
 impression	logical-relation	single	sumo	
 improvement	logical-relation	single	sumo	
 incentive	expression	single	opencyc	
 incertitude	logical-relation	single	sumo	
 inclination	logical-relation	single	sumo	
+inclusion-exclusion-principle	theorem	accepted	peter	
 income	logical-relation	single	sumo	
 increment	logical-relation	single	sumo	
 indemnity	logical-relation	single	sumo	
 independent-set	algebraic-structure	single	wikidata	
+independent-set	graph	single	wikidata	
 independent-set	hypergraph	single	wikidata	
 independent-set	induced-subgraph	accepted	claude wikidata	
 independent-set	mathematical-graph	single	wikidata	
@@ -1841,6 +2134,7 @@ independent-variable	quantity	accepted	sumo wordnet
 independent-variable	variable	accepted	claude wordnet	
 indigence	logical-relation	single	sumo	
 induced-subgraph	algebraic-structure	single	wikidata	
+induced-subgraph	graph	single	wikidata	
 induced-subgraph	hypergraph	single	wikidata	
 induced-subgraph	mathematical-graph	single	wikidata	
 induced-subgraph	mathematical-set	single	wikidata	
@@ -1879,6 +2173,10 @@ information-theory	concept	accepted	peter
 information-theory	logical-relation	single	sumo	
 information-theory	signified	single	sumo	
 information-theory	thinking	dissented	wordnet	
+initialization-vector	algebraic-structure	single	wikidata	
+initialization-vector	concept	accepted	peter	
+initialization-vector	mathematical-set	dissented	wikidata	
+initialization-vector	mathematical-structure	single	wikidata	
 injective-function	algebraic-structure	single	wikidata	
 injective-function	binary-relation	single	wikidata	
 injective-function	function	accepted	claude wikidata	
@@ -1906,6 +2204,7 @@ integer	quaternion	single	wikidata
 integer	rational-number	accepted	opencyc wikidata	
 integer	real-number	accepted	opencyc wikidata	
 integer	totally-ordered-set	single	wikidata	
+integer-partition	concept	accepted	peter	
 integral-calculus	calculus	accepted	claude wordnet	
 integral-calculus	cognition	single	wordnet	
 integral-calculus	field-of-study	accepted	sumo wordnet	
@@ -1922,6 +2221,7 @@ integral-domain	mathematical-module	single	wikidata
 integral-domain	mathematical-ring	single	wikidata	
 integral-domain	mathematical-set	single	wikidata	
 integral-domain	mathematical-structure	single	wikidata	
+integral-domain	module	single	wikidata	
 integral-domain	monoid	single	wikidata	
 integral-domain	quasigroup	single	wikidata	
 integral-domain	semigroup	single	wikidata	
@@ -1940,6 +2240,7 @@ interface	logical-relation	single	sumo
 interpolation	accomplishment	single	sumo	
 interpolation	act	single	sumo	
 interpolation	activity	single	sumo	
+interpolation	algorithm	accepted	claude wikidata	
 interpolation	calculation	accepted	sumo wordnet	
 interpolation	cognition	single	wordnet	
 interpolation	event	single	sumo	
@@ -1960,12 +2261,17 @@ intuitionistic-logic	mathematical-logic	accepted	peter
 invariance	attribute	accepted	sumo wordnet	
 invariance	logical-relation	single	sumo	
 invariance	property	single	sumo	
+invariant	algebraic-structure	single	wikidata	
 invariant	attribute	single	sumo	
+invariant	binary-relation	single	wikidata	
 invariant	cognition	single	wordnet	
 invariant	concept	single	wordnet	
 invariant	feature	accepted	claude wordnet	
+invariant	function	dissented	wikidata	
 invariant	idea	single	wordnet	
 invariant	logical-relation	single	sumo	
+invariant	mathematical-set	single	wikidata	
+invariant	mathematical-structure	single	wikidata	
 invariant	property	accepted	sumo wordnet	
 inverse-function	algebraic-structure	single	wikidata	
 inverse-function	binary-relation	single	wikidata	
@@ -2007,12 +2313,20 @@ isometry	surjective-function	single	wikidata
 isomorphism	function	single	opencyc	
 isomorphism	homomorphism	accepted	peter	
 isomorphism	mathematical-relation	single	opencyc	
+isosceles-triangle	algebraic-structure	single	wikidata	
 isosceles-triangle	attribute	single	wordnet	
-isosceles-triangle	polygon	single	wordnet	
+isosceles-triangle	geometric-shape	single	wikidata	
+isosceles-triangle	locus	single	wikidata	
+isosceles-triangle	mathematical-set	single	wikidata	
+isosceles-triangle	mathematical-structure	single	wikidata	
+isosceles-triangle	polygon	accepted	wikidata wordnet	
 isosceles-triangle	shape	single	wordnet	
 isosceles-triangle	triangle	accepted	claude wordnet	
 isotropy	logical-relation	single	sumo	
+issue	algebraic-structure	single	wikidata	
 issue	logical-relation	single	sumo	
+issue	mathematical-set	single	wikidata	
+issue	mathematical-structure	single	wikidata	
 jersey	expression	single	opencyc	
 jockey	expression	single	opencyc	
 jockey	logical-relation	single	sumo	
@@ -2030,6 +2344,14 @@ judgment	expression	single	opencyc
 jury	expression	single	opencyc	
 justice	logical-relation	single	sumo	
 justification	expression	single	opencyc	
+keccak	algebraic-structure	single	wikidata	
+keccak	binary-relation	single	wikidata	
+keccak	cryptographic-hash-function	accepted	peter wikidata	
+keccak	cryptographic-primitive	single	wikidata	
+keccak	cryptography	single	wikidata	
+keccak	function	single	wikidata	
+keccak	mathematical-set	single	wikidata	
+keccak	mathematical-structure	single	wikidata	
 kendall-partial-rank-correlation	cognition	single	wordnet	
 kendall-partial-rank-correlation	kendall-test	accepted	claude wordnet	
 kendall-partial-rank-correlation	logical-relation	single	sumo	
@@ -2039,6 +2361,14 @@ kendall-test	cognition	single	wordnet
 kendall-test	logical-relation	single	sumo	
 kendall-test	nonparametric-statistic	accepted	claude wordnet	
 kendall-test	statistic	single	wordnet	
+key-derivation-function	algebraic-structure	single	wikidata	
+key-derivation-function	binary-relation	single	wikidata	
+key-derivation-function	cryptographic-primitive	accepted	claude wikidata	
+key-derivation-function	cryptography	single	wikidata	
+key-derivation-function	function	accepted	peter wikidata	
+key-derivation-function	mathematical-set	single	wikidata	
+key-derivation-function	mathematical-structure	single	wikidata	
+key-exchange	cryptographic-protocol	accepted	peter wikidata	
 kick	logical-relation	single	sumo	
 kinship	logical-relation	single	sumo	
 knaster-tarski-theorem	theorem	accepted	peter	
@@ -2057,6 +2387,7 @@ landowner	logical-relation	single	sumo
 language	expression	single	opencyc	
 lap	logical-relation	single	sumo	
 latent-hostility	logical-relation	single	sumo	
+latin-square	matrix	accepted	peter	
 law	expression	single	opencyc	
 law	logical-relation	single	sumo	
 lawsuit	expression	single	opencyc	
@@ -2096,8 +2427,13 @@ lie-algebra	algebraic-structure	single	wikidata
 lie-algebra	mathematical-module	single	wikidata	
 lie-algebra	mathematical-ring	single	wikidata	
 lie-algebra	mathematical-structure	single	wikidata	
+lie-algebra	module	single	wikidata	
 lie-algebra	vector-space	single	wikidata	
 life-style	logical-relation	single	sumo	
+limit	algebraic-structure	single	wikidata	
+limit	binary-relation	dissented	wikidata	
+limit	mathematical-set	single	wikidata	
+limit	mathematical-structure	single	wikidata	
 limit.quantity	logical-relation	single	sumo	
 limitation	logical-relation	single	sumo	
 line-of-descent	logical-relation	single	sumo	
@@ -2140,11 +2476,14 @@ linear-regression	regression	accepted	claude wordnet
 linear-regression	statistical-method	single	wordnet	
 linear-regression	vector	single	sumo	
 linguistics	logical-relation	single	sumo	
+linked-list	data-structure	accepted	peter wikidata	
 literacy	logical-relation	single	sumo	
 literary-works	logical-relation	single	sumo	
 literature	logical-relation	single	sumo	
+locus	algebraic-structure	single	wikidata	
 locus	logical-relation	single	sumo	
-locus	mathematical-set	accepted	sumo wordnet	
+locus	mathematical-set	accepted	sumo wikidata wordnet	
+locus	mathematical-structure	single	wikidata	
 locus	subset	single	sumo	
 logic	logical-relation	single	sumo	
 logic.cognition	logical-relation	single	sumo	
@@ -2277,6 +2616,9 @@ manner	range-of-a-function	single	sumo
 manner-of-speaking	logical-relation	single	sumo	
 manual	expression	single	opencyc	
 manufacturer	logical-relation	single	sumo	
+manuscript	algebraic-structure	single	wikidata	
+manuscript	mathematical-set	single	wikidata	
+manuscript	mathematical-structure	single	wikidata	
 mar	logical-relation	single	sumo	
 marching-music	logical-relation	single	sumo	
 mark	logical-relation	single	sumo	
@@ -2306,6 +2648,7 @@ mathematical-field	mathematical-module	single	wikidata
 mathematical-field	mathematical-ring	single	wikidata	
 mathematical-field	mathematical-set	accepted	sumo wikidata wordnet	
 mathematical-field	mathematical-structure	single	wikidata	
+mathematical-field	module	single	wikidata	
 mathematical-field	monoid	single	wikidata	
 mathematical-field	quasigroup	single	wikidata	
 mathematical-field	semigroup	single	wikidata	
@@ -2389,13 +2732,15 @@ mathematician	mammal	single	opencyc
 mathematician	organism	single	wordnet	
 mathematician	person	single	wordnet	
 mathematician	physical-object	single	wordnet	
-mathematician	scientist	accepted	opencyc wordnet	
+mathematician	research-worker	single	wikidata	
+mathematician	scientist	accepted	opencyc wikidata wordnet	
 mathematician	structure	single	opencyc	
 mathematician	system	single	opencyc	
 mathematician	vertebrate	single	opencyc	
 mathematician	worker	single	opencyc	
 mathematics	logical-relation	single	sumo	
 matrimony	logical-relation	single	sumo	
+matrix	data-structure	dissented	wikidata	
 matrix	mathematical-structure	accepted	peter	
 matrix	tensor	dissented	wikidata	
 matrix-addition	accomplishment	single	sumo	
@@ -2437,6 +2782,7 @@ matrix-multiplication	event	accepted	sumo wordnet
 matrix-multiplication	information	single	sumo	
 matrix-multiplication	mathematical-operation	single	wordnet	
 matrix-multiplication	matrix-operation	accepted	claude wordnet	
+matrix-multiplication	multiplication	accepted	claude wikidata	
 matrix-multiplication	phenomenon	single	sumo	
 matrix-multiplication	procedure	accepted	sumo wordnet	
 matrix-multiplication	universe	single	sumo	
@@ -2464,6 +2810,8 @@ matrix-transposition	phenomenon	single	sumo
 matrix-transposition	procedure	accepted	sumo wordnet	
 matrix-transposition	universe	single	sumo	
 matrix-transposition	volition	single	sumo	
+matroid	hypergraph	dissented	wikidata	
+matroid	mathematical-structure	accepted	peter wikidata	
 maximal-element	concept	accepted	peter	
 maximization	accomplishment	single	sumo	
 maximization	act	accepted	sumo wordnet	
@@ -2515,6 +2863,9 @@ menace	logical-relation	single	sumo
 mentality	logical-relation	single	sumo	
 menu	expression	single	opencyc	
 merchant	logical-relation	single	sumo	
+merkle-tree	data-structure	accepted	peter wikidata	
+merkle-tree	tree-graph	accepted	peter	
+message-authentication-code	cryptographic-primitive	accepted	peter	
 metamathematics	cognition	single	wordnet	
 metamathematics	field-of-study	accepted	sumo wordnet	
 metamathematics	logical-relation	single	sumo	
@@ -2550,6 +2901,7 @@ minimum-spanning-tree	acyclic-graph	single	wikidata
 minimum-spanning-tree	algebraic-structure	single	wikidata	
 minimum-spanning-tree	bipartite-graph	single	wikidata	
 minimum-spanning-tree	connected-graph	single	wikidata	
+minimum-spanning-tree	graph	single	wikidata	
 minimum-spanning-tree	hypergraph	single	wikidata	
 minimum-spanning-tree	mathematical-graph	single	wikidata	
 minimum-spanning-tree	mathematical-set	single	wikidata	
@@ -2579,17 +2931,23 @@ mode	logical-relation	single	sumo
 mode	statistic	single	wordnet	
 model	expression	single	opencyc	
 model-theory	mathematical-logic	accepted	peter wikidata	
+modular-arithmetic	arithmetic	accepted	peter	
 modular-lattice	algebraic-structure	single	wikidata	
 modular-lattice	join-semilattice	single	wikidata	
 modular-lattice	mathematical-lattice	accepted	peter wikidata	
 modular-lattice	mathematical-structure	single	wikidata	
 modular-lattice	meet-semilattice	single	wikidata	
 modular-lattice	partially-ordered-set	single	wikidata	
+module	algebraic-structure	dissented	wikidata	
 module	expression	single	opencyc	
+module	mathematical-structure	single	wikidata	
 moment	cognition	single	wordnet	
 moment	logical-relation	single	sumo	
 moment	statistic	accepted	claude wordnet	
+momentum	algebraic-structure	single	wikidata	
 momentum	logical-relation	single	sumo	
+momentum	mathematical-set	dissented	wikidata	
+momentum	mathematical-structure	single	wikidata	
 monarchy	expression	single	opencyc	
 monic-polynomial	function	single	wordnet	
 monic-polynomial	logical-relation	single	sumo	
@@ -2637,12 +2995,14 @@ multiple-correlation-coefficient	parametric-statistic	single	wordnet
 multiple-correlation-coefficient	quantity	single	sumo	
 multiple-correlation-coefficient	statistic	single	wordnet	
 multiple-regression	cognition	single	wordnet	
+multiple-regression	correlation	single	wikidata	
 multiple-regression	logical-relation	single	sumo	
 multiple-regression	measure	single	sumo	
 multiple-regression	method	single	wordnet	
 multiple-regression	multivariate-analysis	accepted	claude wordnet	
 multiple-regression	routine	single	sumo	
 multiple-regression	signified	single	sumo	
+multiple-regression	statistical-correlation	dissented	wikidata	
 multiple-regression	statistical-method	single	wordnet	
 multiplication	act	single	wordnet	
 multiplication	activity	single	wordnet	
@@ -2741,6 +3101,7 @@ non-sequitur	volition	single	sumo
 nonagon	algebraic-structure	single	wikidata	
 nonagon	attribute	accepted	sumo wordnet	
 nonagon	geometric-shape	single	wikidata	
+nonagon	locus	single	wikidata	
 nonagon	logical-relation	single	sumo	
 nonagon	manifold	single	opencyc	
 nonagon	mathematical-set	single	wikidata	
@@ -2750,6 +3111,7 @@ nonagon	polygon	accepted	opencyc wikidata wordnet
 nonagon	property	single	sumo	
 nonagon	shape	accepted	sumo wordnet	
 nonagon	surface	single	opencyc	
+nonce	concept	accepted	peter	
 nonparametric-statistic	cognition	single	wordnet	
 nonparametric-statistic	logical-relation	single	sumo	
 nonparametric-statistic	quantity	single	sumo	
@@ -2758,7 +3120,12 @@ nonpayment	logical-relation	single	sumo
 nonsense	logical-relation	single	sumo	
 norm	expression	single	opencyc	
 norm	logical-relation	single	sumo	
+normal	algebraic-structure	single	wikidata	
+normal	geometric-shape	dissented	wikidata	
+normal	locus	single	wikidata	
 normal	logical-relation	single	sumo	
+normal	mathematical-set	single	wikidata	
+normal	mathematical-structure	single	wikidata	
 normal-curve	attribute	single	wordnet	
 normal-curve	curved-shape	accepted	claude wordnet	
 normal-curve	logical-relation	single	sumo	
@@ -2772,6 +3139,7 @@ notion	logical-relation	single	sumo
 noun	expression	single	opencyc	
 novel	expression	single	opencyc	
 nowadays	logical-relation	single	sumo	
+np-completeness	complexity-class	accepted	peter	
 nuance	logical-relation	single	sumo	
 null-space	attribute	single	wordnet	
 null-space	logical-relation	single	sumo	
@@ -2779,6 +3147,7 @@ null-space	mathematical-set	accepted	sumo wordnet
 null-space	mathematical-space	accepted	claude wordnet	
 null-space	subset	single	sumo	
 number	logical-relation	single	sumo	
+number-theory	mathematics	accepted	peter	
 numeral	expression	single	opencyc	
 numerical-analysis	cognition	single	wordnet	
 numerical-analysis	field-of-study	accepted	sumo wordnet	
@@ -2805,6 +3174,7 @@ ocean.quantity	logical-relation	single	sumo
 octagon	algebraic-structure	single	wikidata	
 octagon	attribute	accepted	sumo wordnet	
 octagon	geometric-shape	single	wikidata	
+octagon	locus	single	wikidata	
 octagon	logical-relation	single	sumo	
 octagon	manifold	single	opencyc	
 octagon	mathematical-set	single	wikidata	
@@ -2860,6 +3230,11 @@ one-fourth	complex-number	single	wordnet
 one-fourth	logical-relation	single	sumo	
 one-half	complex-number	single	wordnet	
 one-half	logical-relation	single	sumo	
+one-way-function	algebraic-structure	single	wikidata	
+one-way-function	binary-relation	single	wikidata	
+one-way-function	function	accepted	peter wikidata	
+one-way-function	mathematical-set	single	wikidata	
+one-way-function	mathematical-structure	single	wikidata	
 open-interval	algebraic-structure	single	wikidata	
 open-interval	interval	accepted	claude wordnet	
 open-interval	logical-relation	single	sumo	
@@ -2878,7 +3253,7 @@ operator	mathematical-relation	single	wordnet
 operator	structure	single	opencyc	
 operator	system	single	opencyc	
 operator	vertebrate	single	opencyc	
-operator	worker	single	opencyc	
+operator	worker	accepted	opencyc wikidata	
 opinion	logical-relation	single	sumo	
 opportunity	logical-relation	single	sumo	
 opposing-view	logical-relation	single	sumo	
@@ -2903,6 +3278,7 @@ order-isomorphism	monotone-function	accepted	peter
 order-theory	mathematics	accepted	peter	
 orderliness	logical-relation	single	sumo	
 ordinal-number	number	accepted	claude wikidata	
+ordinal-number	quantity	dissented	wikidata	
 orgy	expression	single	opencyc	
 orientation	logical-relation	single	sumo	
 origin	logical-relation	single	sumo	
@@ -2945,6 +3321,7 @@ output	logical-relation	single	sumo
 overview	expression	single	opencyc	
 owner	expression	single	opencyc	
 ownership	logical-relation	single	sumo	
+padding-cryptography	concept	accepted	peter	
 painfulness	logical-relation	single	sumo	
 parade	expression	single	opencyc	
 paradox	expression	single	opencyc	
@@ -3070,24 +3447,17 @@ peasant	expression	single	opencyc
 pedestrian	expression	single	opencyc	
 peer	expression	single	opencyc	
 peer	logical-relation	single	sumo	
-pencil-of-lines	algebraic-structure	single	wikidata	
 pencil-of-lines	attribute	accepted	sumo wordnet	
 pencil-of-lines	logical-relation	single	sumo	
-pencil-of-lines	mathematical-set	dissented	wikidata	
-pencil-of-lines	mathematical-structure	single	wikidata	
 pencil-of-lines	property	single	sumo	
 pencil-of-lines	shape	accepted	sumo wordnet	
 pension	logical-relation	single	sumo	
 pensioner	expression	single	opencyc	
-pentagon	algebraic-structure	single	wikidata	
 pentagon	attribute	accepted	sumo wordnet	
-pentagon	geometric-shape	single	wikidata	
 pentagon	logical-relation	single	sumo	
 pentagon	manifold	single	opencyc	
-pentagon	mathematical-set	single	wikidata	
-pentagon	mathematical-structure	single	wikidata	
 pentagon	plane	single	opencyc	
-pentagon	polygon	accepted	opencyc wikidata wordnet	
+pentagon	polygon	accepted	opencyc wordnet	
 pentagon	property	single	sumo	
 pentagon	shape	accepted	sumo wordnet	
 pentagon	surface	single	opencyc	
@@ -3134,12 +3504,16 @@ philosophy	logical-relation	single	sumo
 photographer	expression	single	opencyc	
 photographic-film	expression	single	opencyc	
 physics	logical-relation	single	sumo	
+pigeonhole-principle	theorem	accepted	peter	
 pioneer	logical-relation	single	sumo	
 pipe	logical-relation	single	sumo	
 pitch	logical-relation	single	sumo	
 pity	logical-relation	single	sumo	
+plaintext	expression	single	opencyc	
+plaintext	information	accepted	opencyc peter	
 plan	expression	single	opencyc	
 plan	logical-relation	single	sumo	
+planar-graph	graph	dissented	wikidata	
 planar-graph	hypergraph	single	wikidata	
 planar-graph	mathematical-graph	accepted	claude wikidata	
 planar-graph	mathematical-structure	single	wikidata	
@@ -3147,6 +3521,7 @@ plane	algebraic-structure	single	wikidata
 plane	attribute	accepted	sumo wordnet	
 plane	curve	single	sumo	
 plane	geometric-shape	accepted	claude wikidata	
+plane	locus	single	wikidata	
 plane	logical-relation	single	sumo	
 plane	mathematical-set	dissented	wikidata	
 plane	mathematical-structure	single	wikidata	
@@ -3188,6 +3563,7 @@ polygon	algebraic-structure	single	wikidata
 polygon	attribute	accepted	sumo wordnet	
 polygon	curve	single	sumo	
 polygon	geometric-shape	accepted	claude wikidata	
+polygon	locus	single	wikidata	
 polygon	logical-relation	single	sumo	
 polygon	manifold	single	opencyc	
 polygon	mathematical-set	single	wikidata	
@@ -3200,6 +3576,7 @@ polynomial	function	accepted	claude wordnet
 polynomial	mathematical-relation	single	wordnet	
 polytree	directed-acyclic-graph	accepted	claude wikidata	
 polytree	directed-graph	single	wikidata	
+polytree	graph	single	wikidata	
 polytree	hypergraph	single	wikidata	
 polytree	mathematical-graph	single	wikidata	
 polytree	mathematical-structure	single	wikidata	
@@ -3226,7 +3603,11 @@ postulate	phenomenon	single	sumo
 postulate	proposition	accepted	claude wordnet	
 postulate	sentence	single	sumo	
 postulate	universe	single	sumo	
+potential	algebraic-structure	single	wikidata	
+potential	binary-relation	single	wikidata	
 potential	logical-relation	single	sumo	
+potential	mathematical-set	single	wikidata	
+potential	mathematical-structure	single	wikidata	
 power	logical-relation	single	sumo	
 power-series	function	single	wordnet	
 power-series	mathematical-relation	single	wordnet	
@@ -3235,7 +3616,10 @@ power-series	polynomial	single	wordnet
 power-set	mathematical-set	accepted	peter	
 practice	logical-relation	single	sumo	
 practice-of-medicine	logical-relation	single	sumo	
+prayer	algebraic-structure	single	wikidata	
 prayer	expression	single	opencyc	
+prayer	mathematical-set	single	wikidata	
+prayer	mathematical-structure	single	wikidata	
 precedence	logical-relation	single	sumo	
 preciseness	logical-relation	single	sumo	
 precondition	logical-relation	single	sumo	
@@ -3269,6 +3653,7 @@ prestige	logical-relation	single	sumo
 price	logical-relation	single	sumo	
 pride	logical-relation	single	sumo	
 pride	range-of-a-function	single	sumo	
+prime-factorization	mathematical-operation	accepted	peter	
 prime-number	cardinal-number	single	opencyc	
 prime-number	complex-number	single	opencyc	
 prime-number	interval	single	opencyc	
@@ -3288,6 +3673,7 @@ print	expression	single	opencyc
 prisoner	expression	single	opencyc	
 privacy	logical-relation	single	sumo	
 privacy	range-of-a-function	single	sumo	
+private-key	cryptographic-key	accepted	peter	
 privation	logical-relation	single	sumo	
 privilege	expression	single	opencyc	
 privilege	logical-relation	single	sumo	
@@ -3323,6 +3709,7 @@ projective-geometry	mathematics	single	wordnet
 projective-geometry	science	single	wordnet	
 projective-geometry	signified	single	sumo	
 proof	expression	single	opencyc	
+proof-of-work	cryptographic-protocol	accepted	peter	
 proof-theory	mathematical-logic	accepted	peter wikidata	
 propaganda	expression	single	opencyc	
 property	logical-relation	single	sumo	
@@ -3332,8 +3719,12 @@ proposition	expression	single	opencyc
 propositional-logic	formal-system	accepted	claude wikidata	
 propositional-logic	mathematical-logic	accepted	peter	
 prosperity	logical-relation	single	sumo	
+pseudorandom-generator	algorithm	accepted	peter	
 psychologist	expression	single	opencyc	
 psychology	logical-relation	single	sumo	
+public-key	cryptographic-key	accepted	peter	
+public-key-cryptography	cryptography	accepted	peter	
+public-key-infrastructure	concept	accepted	peter	
 public-opinion	logical-relation	single	sumo	
 publication	expression	single	opencyc	
 publisher	expression	single	opencyc	
@@ -3382,6 +3773,7 @@ quadrilateral	algebraic-structure	single	wikidata
 quadrilateral	attribute	accepted	sumo wordnet	
 quadrilateral	curve	single	sumo	
 quadrilateral	geometric-shape	single	wikidata	
+quadrilateral	locus	single	wikidata	
 quadrilateral	logical-relation	single	sumo	
 quadrilateral	manifold	single	opencyc	
 quadrilateral	mathematical-set	single	wikidata	
@@ -3441,6 +3833,7 @@ rainbow	expression	single	opencyc
 raise	logical-relation	single	sumo	
 rake	logical-relation	single	sumo	
 rally	expression	single	opencyc	
+random-oracle	concept	accepted	peter	
 random-sample	artifact	single	sumo	
 random-sample	cognition	single	wordnet	
 random-sample	contract-condition	single	sumo	
@@ -3514,16 +3907,26 @@ reception	logical-relation	single	sumo
 recess	expression	single	opencyc	
 recess	logical-relation	single	sumo	
 recession	expression	single	opencyc	
+recommendation	algebraic-structure	single	wikidata	
 recommendation	expression	single	opencyc	
+recommendation	mathematical-set	single	wikidata	
+recommendation	mathematical-structure	single	wikidata	
 record.quantity	logical-relation	single	sumo	
+rectangle	algebraic-structure	single	wikidata	
 rectangle	attribute	single	wordnet	
+rectangle	geometric-shape	single	wikidata	
+rectangle	locus	single	wikidata	
 rectangle	manifold	single	opencyc	
-rectangle	parallelogram	accepted	opencyc wordnet	
+rectangle	mathematical-set	single	wikidata	
+rectangle	mathematical-structure	single	wikidata	
+rectangle	parallelogram	accepted	opencyc wikidata wordnet	
 rectangle	plane	single	opencyc	
-rectangle	polygon	accepted	opencyc wordnet	
-rectangle	quadrilateral	accepted	opencyc wordnet	
+rectangle	polygon	accepted	opencyc wikidata wordnet	
+rectangle	quadrilateral	accepted	opencyc wikidata wordnet	
 rectangle	shape	single	wordnet	
 rectangle	surface	single	opencyc	
+rectangle	trapezoid	dissented	wikidata	
+recurrence-relation	mathematical-relation	accepted	peter	
 recursion	act	single	wordnet	
 recursion	activity	single	wordnet	
 recursion	event	single	wordnet	
@@ -3540,7 +3943,7 @@ recursive-definition	affirmation	single	sumo
 recursive-definition	algebraic-structure	single	wikidata	
 recursive-definition	binary-relation	single	wikidata	
 recursive-definition	communication	single	sumo	
-recursive-definition	definition	accepted	claude wordnet	
+recursive-definition	definition	accepted	claude wikidata wordnet	
 recursive-definition	event	single	sumo	
 recursive-definition	explanation	single	wordnet	
 recursive-definition	function	dissented	wikidata	
@@ -3551,6 +3954,11 @@ recursive-definition	phenomenon	single	sumo
 recursive-definition	procedure	single	sumo	
 recursive-definition	universe	single	sumo	
 recursive-definition	volition	single	sumo	
+recursive-function	algebraic-structure	single	wikidata	
+recursive-function	binary-relation	single	wikidata	
+recursive-function	function	accepted	peter wikidata	
+recursive-function	mathematical-set	single	wikidata	
+recursive-function	mathematical-structure	single	wikidata	
 redundancy	logical-relation	single	sumo	
 reentrant-polygon	attribute	accepted	sumo wordnet	
 reentrant-polygon	concave-polygon	accepted	claude wordnet	
@@ -3575,6 +3983,10 @@ reform	logical-relation	single	sumo
 refreshment	logical-relation	single	sumo	
 refuge	logical-relation	single	sumo	
 refugee	expression	single	opencyc	
+region	algebraic-structure	single	wikidata	
+region	mathematical-set	single	wikidata	
+region	mathematical-structure	single	wikidata	
+region	subset	dissented	wikidata	
 registration	expression	single	opencyc	
 regression	cognition	single	wordnet	
 regression	logical-relation	single	sumo	
@@ -3612,6 +4024,8 @@ regression-line	logical-relation	single	sumo
 regression-line	quantity	single	sumo	
 regression-line	shape	single	wordnet	
 regression-line	vector	single	sumo	
+regular-expression	expression	accepted	opencyc peter	
+regular-expression	information	single	opencyc	
 regular-hexagon	attribute	accepted	sumo wordnet	
 regular-hexagon	hexagon	accepted	claude wordnet	
 regular-hexagon	logical-relation	single	sumo	
@@ -3674,6 +4088,10 @@ respite	logical-relation	single	sumo
 response	logical-relation	single	sumo	
 restraint	logical-relation	single	sumo	
 restraint	range-of-a-function	single	sumo	
+restriction	algebraic-structure	single	wikidata	
+restriction	binary-relation	single	wikidata	
+restriction	mathematical-set	single	wikidata	
+restriction	mathematical-structure	single	wikidata	
 retailer	logical-relation	single	sumo	
 retaliation	expression	single	opencyc	
 reverse	logical-relation	single	sumo	
@@ -3685,19 +4103,24 @@ rhetoric	logical-relation	single	sumo
 rhomboid	attribute	accepted	sumo wordnet	
 rhomboid	logical-relation	single	sumo	
 rhomboid	manifold	single	opencyc	
-rhomboid	parallelogram	accepted	opencyc wordnet	
+rhomboid	parallelogram	accepted	opencyc wikidata wordnet	
 rhomboid	plane	single	opencyc	
 rhomboid	polygon	accepted	opencyc wordnet	
 rhomboid	property	single	sumo	
 rhomboid	quadrilateral	accepted	opencyc wordnet	
 rhomboid	shape	accepted	sumo wordnet	
 rhomboid	surface	single	opencyc	
+rhombus	algebraic-structure	single	wikidata	
 rhombus	attribute	accepted	sumo wordnet	
+rhombus	geometric-shape	single	wikidata	
+rhombus	locus	single	wikidata	
 rhombus	logical-relation	single	sumo	
-rhombus	parallelogram	accepted	claude wordnet	
-rhombus	polygon	single	wordnet	
+rhombus	mathematical-set	single	wikidata	
+rhombus	mathematical-structure	single	wikidata	
+rhombus	parallelogram	accepted	claude wikidata wordnet	
+rhombus	polygon	accepted	wikidata wordnet	
 rhombus	property	single	sumo	
-rhombus	quadrilateral	single	wordnet	
+rhombus	quadrilateral	accepted	wikidata wordnet	
 rhombus	shape	accepted	sumo wordnet	
 rhythm	logical-relation	single	sumo	
 rider	logical-relation	single	sumo	
@@ -3719,6 +4142,7 @@ root	mathematical-set	accepted	sumo wordnet
 root	subset	single	sumo	
 rooted-tree	directed-acyclic-graph	single	wikidata	
 rooted-tree	directed-graph	single	wikidata	
+rooted-tree	graph	single	wikidata	
 rooted-tree	hypergraph	single	wikidata	
 rooted-tree	mathematical-graph	single	wikidata	
 rooted-tree	mathematical-structure	single	wikidata	
@@ -3736,7 +4160,15 @@ rounding	phenomenon	single	sumo
 rounding	situation	single	opencyc	
 routine	expression	single	opencyc	
 routine	logical-relation	single	sumo	
+row	algebraic-structure	single	wikidata	
+row	join-semilattice	single	wikidata	
+row	mathematical-lattice	single	wikidata	
+row	mathematical-structure	single	wikidata	
+row	meet-semilattice	single	wikidata	
+row	partially-ordered-set	single	wikidata	
+row	totally-ordered-set	dissented	wikidata	
 royalty-payment	logical-relation	single	sumo	
+rsa-cryptosystem	public-key-cryptography	accepted	peter	
 rubbish	logical-relation	single	sumo	
 rule	logical-relation	single	sumo	
 rule.cognition	logical-relation	single	sumo	
@@ -3747,6 +4179,8 @@ sailor	expression	single	opencyc
 salesclerk	logical-relation	single	sumo	
 salvation	expression	single	opencyc	
 salvation	logical-relation	single	sumo	
+sample	scalar	dissented	wikidata	
+sample	tensor	single	wikidata	
 sample-distribution	cognition	single	wordnet	
 sample-distribution	collection	single	sumo	
 sample-distribution	phenomenon	single	sumo	
@@ -3804,7 +4238,11 @@ science	logical-relation	single	sumo
 scientific-principle	logical-relation	single	sumo	
 scientist	expression	single	opencyc	
 scope	logical-relation	single	sumo	
+score	algebraic-structure	single	wikidata	
+score	binary-relation	single	wikidata	
 score	logical-relation	single	sumo	
+score	mathematical-set	single	wikidata	
+score	mathematical-structure	single	wikidata	
 scratch	logical-relation	single	sumo	
 script	expression	single	opencyc	
 script	logical-relation	single	sumo	
@@ -3817,10 +4255,12 @@ second-moment	cognition	single	wordnet
 second-moment	logical-relation	single	sumo	
 second-moment	moment	accepted	claude wordnet	
 second-moment	statistic	single	wordnet	
+secp256k1	elliptic-curve-cryptography	accepted	peter	
 secrecy	logical-relation	single	sumo	
 secrecy	range-of-a-function	single	sumo	
 secret	logical-relation	single	sumo	
 secret-plan	logical-relation	single	sumo	
+secret-sharing	cryptographic-protocol	accepted	peter	
 secretary	expression	single	opencyc	
 sector	logical-relation	single	sumo	
 seeded-player	logical-relation	single	sumo	
@@ -3839,12 +4279,16 @@ sense	logical-relation	single	sumo
 sense-of-touch	logical-relation	single	sumo	
 sensitivity	logical-relation	single	sumo	
 sentence	expression	single	opencyc	
+sentence	well-formed-formula	dissented	wikidata	
 sentential-function	expression	accepted	claude wordnet	
 sentential-function	information	single	wordnet	
 sentential-function	logical-relation	single	sumo	
 sentential-function	mathematical-statement	single	wordnet	
 sentiment	logical-relation	single	sumo	
 sequence	logical-relation	single	sumo	
+serial	algebraic-structure	single	wikidata	
+serial	mathematical-set	single	wikidata	
+serial	mathematical-structure	single	wikidata	
 series-expansion	accomplishment	single	sumo	
 series-expansion	act	single	sumo	
 series-expansion	activity	single	sumo	
@@ -3869,8 +4313,19 @@ set-theory	science	single	wordnet
 set-theory	signified	single	sumo	
 severity	logical-relation	single	sumo	
 sex	logical-relation	single	sumo	
+sha-2	algebraic-structure	single	wikidata	
+sha-2	binary-relation	single	wikidata	
+sha-2	cryptographic-hash-function	accepted	peter wikidata	
+sha-2	cryptographic-primitive	single	wikidata	
+sha-2	cryptography	single	wikidata	
+sha-2	function	single	wikidata	
+sha-2	mathematical-set	single	wikidata	
+sha-2	mathematical-structure	single	wikidata	
 shaft	manifold	single	opencyc	
+shape	algebraic-structure	single	wikidata	
 shape	logical-relation	single	sumo	
+shape	mathematical-set	dissented	wikidata	
+shape	mathematical-structure	single	wikidata	
 shift	logical-relation	single	sumo	
 shop	expression	single	opencyc	
 shopping	expression	single	opencyc	
@@ -3887,14 +4342,28 @@ sight	logical-relation	single	sumo
 sign	expression	single	opencyc	
 signal	expression	single	opencyc	
 signature	expression	single	opencyc	
+signature-scheme	cryptographic-protocol	accepted	peter	
 signified	logical-relation	single	sumo	
 silence	logical-relation	single	sumo	
+similarity	affine-transformation	dissented	wikidata	
+similarity	algebraic-structure	single	wikidata	
+similarity	automorphism	single	wikidata	
+similarity	bijection	single	wikidata	
+similarity	binary-relation	single	wikidata	
+similarity	endomorphism	single	wikidata	
+similarity	homomorphism	single	wikidata	
+similarity	isomorphism	single	wikidata	
 similarity	logical-relation	single	sumo	
+similarity	mathematical-set	single	wikidata	
+similarity	mathematical-structure	single	wikidata	
+similarity	surjective-function	single	wikidata	
 simplicity	logical-relation	single	sumo	
 simultaneous-equations	equation	accepted	claude wordnet	
+simultaneous-equations	formula	accepted	claude wikidata	
 simultaneous-equations	information	accepted	sumo wordnet	
 simultaneous-equations	mathematical-statement	single	wordnet	
 simultaneous-equations	phenomenon	single	sumo	
+simultaneous-equations	rule.cognition	single	wikidata	
 simultaneous-equations	universe	single	sumo	
 sin	logical-relation	single	sumo	
 sine	function	single	wordnet	
@@ -3947,6 +4416,7 @@ spanning-tree	acyclic-graph	single	wikidata
 spanning-tree	algebraic-structure	single	wikidata	
 spanning-tree	bipartite-graph	single	wikidata	
 spanning-tree	connected-graph	single	wikidata	
+spanning-tree	graph	single	wikidata	
 spanning-tree	hypergraph	single	wikidata	
 spanning-tree	mathematical-graph	single	wikidata	
 spanning-tree	mathematical-set	single	wikidata	
@@ -3964,6 +4434,7 @@ spectator	logical-relation	single	sumo
 spectrum	logical-relation	single	sumo	
 sphere	algebraic-structure	single	wikidata	
 sphere	geometric-shape	accepted	claude wikidata	
+sphere	locus	single	wikidata	
 sphere	mathematical-set	dissented	wikidata	
 sphere	mathematical-structure	single	wikidata	
 spherical-geometry	cognition	single	wordnet	
@@ -3976,6 +4447,7 @@ spherical-geometry	signified	single	sumo
 spherical-polygon	algebraic-structure	single	wikidata	
 spherical-polygon	attribute	accepted	sumo wordnet	
 spherical-polygon	geometric-shape	accepted	claude wikidata	
+spherical-polygon	locus	single	wikidata	
 spherical-polygon	logical-relation	single	sumo	
 spherical-polygon	mathematical-set	single	wikidata	
 spherical-polygon	mathematical-structure	single	wikidata	
@@ -3985,6 +4457,7 @@ spherical-polygon	shape	accepted	sumo wordnet
 spherical-triangle	algebraic-structure	single	wikidata	
 spherical-triangle	attribute	accepted	sumo wordnet	
 spherical-triangle	geometric-shape	single	wikidata	
+spherical-triangle	locus	single	wikidata	
 spherical-triangle	logical-relation	single	sumo	
 spherical-triangle	mathematical-set	single	wikidata	
 spherical-triangle	mathematical-structure	single	wikidata	
@@ -4023,12 +4496,19 @@ spurious-correlation	statistical-correlation	accepted	claude wordnet
 spurious-correlation	statistics	dissented	wordnet	
 spy	logical-relation	single	sumo	
 squad	expression	single	opencyc	
+square	algebraic-structure	single	wikidata	
+square	geometric-shape	single	wikidata	
 square	isogon	single	wordnet	
-square	parallelogram	single	wordnet	
-square	polygon	single	wordnet	
-square	quadrilateral	single	wordnet	
-square	rectangle	accepted	claude wordnet	
+square	locus	single	wikidata	
+square	mathematical-set	single	wikidata	
+square	mathematical-structure	single	wikidata	
+square	parallelogram	accepted	wikidata wordnet	
+square	polygon	accepted	wikidata wordnet	
+square	quadrilateral	accepted	wikidata wordnet	
+square	rectangle	accepted	claude wikidata wordnet	
 square	regular-polygon	accepted	claude wordnet	
+square	rhombus	accepted	claude wikidata	
+square	trapezoid	single	wikidata	
 staff	expression	single	opencyc	
 stake	logical-relation	single	sumo	
 stake	manifold	single	opencyc	
@@ -4083,6 +4563,11 @@ stratified-sample	phenomenon	single	sumo
 stratified-sample	sample-distribution	accepted	claude wordnet	
 stratified-sample	statistical-distribution	single	wordnet	
 stream	expression	single	opencyc	
+stream-cipher	algorithm	single	wikidata	
+stream-cipher	cipher	accepted	peter wikidata	
+stream-cipher	information	single	yago	
+stream-cipher	product	single	yago	
+stream-cipher	sign	single	wikidata	
 strength	logical-relation	single	sumo	
 strict-order	algebraic-structure	single	wikidata	
 strict-order	antisymmetric-relation	accepted	claude wikidata	
@@ -4095,6 +4580,7 @@ strongly-connected-component	algebraic-structure	single	wikidata
 strongly-connected-component	connected-component	accepted	claude wikidata	
 strongly-connected-component	connected-graph	single	wikidata	
 strongly-connected-component	directed-graph	accepted	claude wikidata	
+strongly-connected-component	graph	single	wikidata	
 strongly-connected-component	hypergraph	single	wikidata	
 strongly-connected-component	mathematical-graph	single	wikidata	
 strongly-connected-component	mathematical-set	single	wikidata	
@@ -4110,6 +4596,7 @@ sub-interval	logical-relation	single	sumo
 sub-interval	mathematical-set	accepted	sumo wordnet	
 sub-interval	subset	single	sumo	
 subgraph	algebraic-structure	single	wikidata	
+subgraph	graph	dissented	wikidata	
 subgraph	hypergraph	single	wikidata	
 subgraph	mathematical-graph	accepted	claude wikidata	
 subgraph	mathematical-set	single	wikidata	
@@ -4150,7 +4637,10 @@ suburb	expression	single	opencyc
 success	expression	single	opencyc	
 suffering	logical-relation	single	sumo	
 suicide	expression	single	opencyc	
+summary	algebraic-structure	single	wikidata	
 summary	expression	single	opencyc	
+summary	mathematical-set	single	wikidata	
+summary	mathematical-structure	single	wikidata	
 summation	arithmetic-operation	accepted	claude wordnet	
 summation	mathematical-operation	single	wordnet	
 summer	logical-relation	single	sumo	
@@ -4193,16 +4683,12 @@ suspect	logical-relation	single	sumo
 syllogism	classical-logic	dissented	wikidata	
 syllogism	deductive-reasoning	accepted	peter wikidata	
 syllogism	formal-system	single	wikidata	
+symmetric-key-cryptography	cryptography	accepted	peter	
 symmetric-relation	algebraic-structure	single	wikidata	
 symmetric-relation	binary-relation	accepted	claude wikidata	
 symmetric-relation	mathematical-set	single	wikidata	
 symmetric-relation	mathematical-structure	single	wikidata	
-symmetry	algebraic-structure	single	wikidata	
 symmetry	attribute	accepted	claude wordnet	
-symmetry	binary-relation	single	wikidata	
-symmetry	function	dissented	wikidata	
-symmetry	mathematical-set	single	wikidata	
-symmetry	mathematical-structure	single	wikidata	
 sympathy	logical-relation	single	sumo	
 symptom	expression	single	opencyc	
 tactic	logical-relation	single	sumo	
@@ -4239,6 +4725,9 @@ tetrachoric-correlation-coefficient	logical-relation	single	sumo
 tetrachoric-correlation-coefficient	parametric-statistic	single	wordnet	
 tetrachoric-correlation-coefficient	quantity	single	sumo	
 tetrachoric-correlation-coefficient	statistic	single	wordnet	
+text	algebraic-structure	single	wikidata	
+text	mathematical-set	dissented	wikidata	
+text	mathematical-structure	single	wikidata	
 textbook	expression	single	opencyc	
 texture	logical-relation	single	sumo	
 theme	logical-relation	single	sumo	
@@ -4278,7 +4767,7 @@ topological-space	mathematical-structure	accepted	peter wikidata
 topology	cognition	single	wordnet	
 topology	field-of-study	accepted	sumo wordnet	
 topology	logical-relation	single	sumo	
-topology	mathematics	accepted	claude wordnet	
+topology	mathematics	accepted	claude wikidata wordnet	
 topology	science	single	wordnet	
 topology	set	single	opencyc	
 topology	signified	single	sumo	
@@ -4370,15 +4859,20 @@ transposition	phenomenon	single	sumo
 transposition	procedure	accepted	sumo wordnet	
 transposition	universe	single	sumo	
 transposition	volition	single	sumo	
+trapezium	algebraic-structure	single	wikidata	
 trapezium	attribute	accepted	sumo wordnet	
 trapezium	body-part	single	opencyc	
 trapezium	bone	single	opencyc	
 trapezium	curve	single	sumo	
+trapezium	geometric-shape	single	wikidata	
+trapezium	locus	single	wikidata	
 trapezium	logical-relation	single	sumo	
+trapezium	mathematical-set	single	wikidata	
+trapezium	mathematical-structure	single	wikidata	
 trapezium	part	single	opencyc	
-trapezium	polygon	accepted	sumo wordnet	
+trapezium	polygon	accepted	sumo wikidata wordnet	
 trapezium	property	single	sumo	
-trapezium	quadrilateral	accepted	sumo wordnet	
+trapezium	quadrilateral	accepted	sumo wikidata wordnet	
 trapezium	shape	accepted	sumo wordnet	
 trapezium	structure	single	opencyc	
 trapezium	system	single	opencyc	
@@ -4400,6 +4894,7 @@ treaty	logical-relation	single	sumo
 tree-graph	acyclic-graph	accepted	claude wikidata	
 tree-graph	bipartite-graph	accepted	claude wikidata	
 tree-graph	connected-graph	accepted	claude wikidata	
+tree-graph	graph	single	wikidata	
 tree-graph	hypergraph	single	wikidata	
 tree-graph	mathematical-graph	accepted	peter wikidata	
 tree-graph	mathematical-structure	single	wikidata	
@@ -4413,6 +4908,8 @@ triangle	plane	single	opencyc
 triangle	polygon	accepted	opencyc wordnet	
 tribulation	logical-relation	single	sumo	
 tribunal	expression	single	opencyc	
+trie	data-structure	accepted	peter	
+trie	tree-graph	accepted	peter	
 trigonometric-function	algebraic-structure	single	wikidata	
 trigonometric-function	binary-relation	single	wikidata	
 trigonometric-function	function	accepted	opencyc wikidata wordnet	
@@ -4423,8 +4920,9 @@ trigonometric-function	mathematical-set	single	wikidata
 trigonometric-function	mathematical-structure	single	wikidata	
 trigonometry	cognition	single	wordnet	
 trigonometry	field-of-study	accepted	sumo wordnet	
+trigonometry	geometry	accepted	claude wikidata	
 trigonometry	logical-relation	single	sumo	
-trigonometry	mathematics	accepted	claude wordnet	
+trigonometry	mathematics	accepted	claude wikidata wordnet	
 trigonometry	science	single	wordnet	
 trigonometry	signified	single	sumo	
 trophy	expression	single	opencyc	
@@ -4455,11 +4953,22 @@ uncountable-set	algebraic-structure	single	wikidata
 uncountable-set	infinite-set	accepted	claude wikidata	
 uncountable-set	mathematical-set	single	wikidata	
 uncountable-set	mathematical-structure	single	wikidata	
+undecagon	algebraic-structure	single	wikidata	
 undecagon	attribute	accepted	sumo wordnet	
+undecagon	geometric-shape	single	wikidata	
+undecagon	locus	single	wikidata	
 undecagon	logical-relation	single	sumo	
-undecagon	polygon	accepted	claude wordnet	
+undecagon	mathematical-set	single	wikidata	
+undecagon	mathematical-structure	single	wikidata	
+undecagon	polygon	accepted	claude wikidata wordnet	
 undecagon	property	single	sumo	
 undecagon	shape	accepted	sumo wordnet	
+underside	algebraic-structure	single	wikidata	
+underside	geometric-shape	dissented	wikidata	
+underside	locus	single	wikidata	
+underside	mathematical-set	single	wikidata	
+underside	mathematical-structure	single	wikidata	
+undirected-graph	graph	dissented	wikidata	
 undirected-graph	hypergraph	single	wikidata	
 undirected-graph	mathematical-graph	accepted	claude wikidata	
 undirected-graph	mathematical-structure	single	wikidata	
@@ -4516,19 +5025,25 @@ variable	logical-relation	single	sumo
 variance	cognition	single	wordnet	
 variance	logical-relation	single	sumo	
 variance	moment	accepted	claude wordnet	
-variance	number	accepted	claude wikidata	
+variance	number	single	claude	
 variance	statistic	single	wordnet	
 vector	logical-relation	single	sumo	
 vector-algebra	algebra	accepted	claude wordnet	
 vector-algebra	cognition	single	wordnet	
 vector-algebra	field-of-study	accepted	sumo wordnet	
 vector-algebra	logical-relation	single	sumo	
-vector-algebra	mathematics	single	wordnet	
+vector-algebra	mathematics	accepted	wikidata wordnet	
 vector-algebra	science	single	wordnet	
 vector-algebra	signified	single	sumo	
 vector-space	algebraic-structure	single	wikidata	
 vector-space	mathematical-module	accepted	claude wikidata	
 vector-space	mathematical-structure	single	wikidata	
+vector-space	module	dissented	wikidata	
+vertex	algebraic-structure	single	wikidata	
+vertex	geometric-shape	dissented	wikidata	
+vertex	locus	single	wikidata	
+vertex	mathematical-set	single	wikidata	
+vertex	mathematical-structure	single	wikidata	
 veteran	expression	single	opencyc	
 victim	expression	single	opencyc	
 view	logical-relation	single	sumo	
@@ -4590,15 +5105,10 @@ wedge	tool	single	opencyc
 wedge	triangle	dissented	wordnet	
 week	logical-relation	single	sumo	
 weekend	logical-relation	single	sumo	
-weight	algebraic-structure	single	wikidata	
 weight	artifact	single	opencyc	
-weight	binary-relation	single	wikidata	
 weight	device	single	opencyc	
-weight	function	dissented	wikidata	
 weight	logical-relation	single	sumo	
-weight	mathematical-set	single	wikidata	
-weight	mathematical-structure	single	wikidata	
-weight	number	accepted	peter sumo wikidata	
+weight	number	accepted	peter sumo	
 weight	quantity	single	sumo	
 weighted-graph	mathematical-graph	accepted	peter	
 well-formed-formula	expression	accepted	peter	
@@ -4631,4 +5141,5 @@ wreck	logical-relation	single	sumo
 wrinkle	logical-relation	single	sumo	
 youth	logical-relation	single	sumo	
 zero	logical-relation	single	sumo	
+zero-knowledge-proof	cryptographic-protocol	accepted	peter wikidata	
 zorn's-lemma	theorem	accepted	peter	

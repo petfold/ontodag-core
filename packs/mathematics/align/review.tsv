@@ -173,3 +173,101 @@ concept-intent	mathematical-set	accept			07999699
 derivation-operator	function	accept	the prime operator; its two-fold composition is a closure operator		13783816
 attribute-implication	implication	accept	between attribute sets		13860281
 attribute-exploration	algorithm	accept	interactive completion of an implication basis		05847438
+discrete-mathematics	mathematics	accept	structures that are discrete rather than continuous		06000644
+combinatorics	discrete-mathematics	accept	discrete mathematics / cryptography skeleton		
+number-theory	mathematics	accept	discrete mathematics / cryptography skeleton		06000644
+coding-theory	discrete-mathematics	accept	discrete mathematics / cryptography skeleton		
+computational-complexity-theory	computability-theory	accept	discrete mathematics / cryptography skeleton		
+computational-complexity-theory	computer-science	accept	discrete mathematics / cryptography skeleton		06128570
+cryptography	mathematics	accept	applied number theory and complexity		06000644
+cryptography	computer-science	accept	discrete mathematics / cryptography skeleton		06128570
+combination-combinatorics	concept	accept	a selection of items regardless of order		05835747
+binomial-coefficient	number	accept	discrete mathematics / cryptography skeleton		05121418
+recurrence-relation	mathematical-relation	accept	discrete mathematics / cryptography skeleton		13783581
+generating-function	function	accept	discrete mathematics / cryptography skeleton		13783816
+pigeonhole-principle	theorem	accept	discrete mathematics / cryptography skeleton		06752293
+inclusion-exclusion-principle	theorem	accept	discrete mathematics / cryptography skeleton		06752293
+integer-partition	concept	accept	discrete mathematics / cryptography skeleton		05835747
+latin-square	matrix	accept	discrete mathematics / cryptography skeleton		08267640
+matroid	mathematical-structure	accept	discrete mathematics / cryptography skeleton		
+design-theory	combinatorics	accept	discrete mathematics / cryptography skeleton		
+fibonacci-sequence	concept	accept	an integer sequence; core has no `sequence`		05835747
+catalan-number	natural-number	accept	discrete mathematics / cryptography skeleton		
+modular-arithmetic	arithmetic	accept	discrete mathematics / cryptography skeleton		06004067
+greatest-common-divisor	natural-number	accept	discrete mathematics / cryptography skeleton		
+prime-factorization	mathematical-operation	accept	discrete mathematics / cryptography skeleton		00869583
+euclidean-algorithm	algorithm	accept	discrete mathematics / cryptography skeleton		05847438
+discrete-logarithm	decision-problem	accept	the hard problem behind Diffie–Hellman and secp256k1		
+finite-automaton	formal-system	accept	an abstract machine		
+formal-grammar	formal-system	accept	discrete mathematics / cryptography skeleton		
+regular-expression	expression	accept	a pattern denoting a regular language		06731802
+complexity-class	mathematical-set	accept	a set of problems		07999699
+np-completeness	complexity-class	accept	discrete mathematics / cryptography skeleton		
+big-o-notation	mathematical-relation	accept	asymptotic bound		13783581
+recursive-function	function	accept	discrete mathematics / cryptography skeleton		13783816
+error-correcting-code	concept	accept	discrete mathematics / cryptography skeleton		05835747
+hamming-distance	metric-function	accept	discrete mathematics / cryptography skeleton		13784906
+bit	concept	accept	the unit of information; the registry has the `information` family for amounts	09222051	05835747
+bit-string	data-structure	accept	discrete mathematics / cryptography skeleton		
+data-structure	concept	accept	a way of organising data		05835747
+hash-table	data-structure	accept	discrete mathematics / cryptography skeleton		
+linked-list	data-structure	accept	discrete mathematics / cryptography skeleton		
+binary-tree	data-structure	accept	discrete mathematics / cryptography skeleton		
+binary-tree	tree-graph	accept	discrete mathematics / cryptography skeleton		
+heap-data-structure	data-structure	accept	discrete mathematics / cryptography skeleton		
+trie	data-structure	accept	discrete mathematics / cryptography skeleton		
+trie	tree-graph	accept	discrete mathematics / cryptography skeleton		
+merkle-tree	data-structure	accept	hash-labelled tree — how recordstore's trie and Swarm's BMT address content		
+merkle-tree	tree-graph	accept	discrete mathematics / cryptography skeleton		
+hash-chain	data-structure	accept	discrete mathematics / cryptography skeleton		
+bloom-filter	data-structure	accept	discrete mathematics / cryptography skeleton		
+cipher	algorithm	accept	an algorithm for encrypting and decrypting		05847438
+encryption	mathematical-operation	accept	turning plaintext into ciphertext under a key		00869583
+decryption	mathematical-operation	accept	the inverse		00869583
+cryptographic-key	concept	accept	the secret that parametrises a cipher		05835747
+public-key	cryptographic-key	accept	discrete mathematics / cryptography skeleton		
+private-key	cryptographic-key	accept	discrete mathematics / cryptography skeleton		
+symmetric-key-cryptography	cryptography	accept	discrete mathematics / cryptography skeleton		
+public-key-cryptography	cryptography	accept	discrete mathematics / cryptography skeleton		
+block-cipher	cipher	accept	discrete mathematics / cryptography skeleton		
+stream-cipher	cipher	accept	discrete mathematics / cryptography skeleton		
+aes	block-cipher	accept	discrete mathematics / cryptography skeleton		
+rsa-cryptosystem	public-key-cryptography	accept	discrete mathematics / cryptography skeleton		
+elliptic-curve-cryptography	public-key-cryptography	accept	discrete mathematics / cryptography skeleton		
+secp256k1	elliptic-curve-cryptography	accept	the curve behind Bitcoin, Ethereum and Swarm signatures		
+diffie-hellman	key-exchange	accept	discrete mathematics / cryptography skeleton		
+key-exchange	cryptographic-protocol	accept	discrete mathematics / cryptography skeleton		
+cryptographic-protocol	concept	accept	discrete mathematics / cryptography skeleton		05835747
+cryptographic-hash-function	function	accept	discrete mathematics / cryptography skeleton		13783816
+cryptographic-hash-function	cryptographic-primitive	accept	discrete mathematics / cryptography skeleton		
+cryptographic-primitive	algorithm	accept	discrete mathematics / cryptography skeleton		05847438
+sha-2	cryptographic-hash-function	accept	discrete mathematics / cryptography skeleton		
+keccak	cryptographic-hash-function	accept	SHA-3; Swarm's BMT and ACT lookup keys		
+one-way-function	function	accept	discrete mathematics / cryptography skeleton		13783816
+digital-signature	cryptographic-primitive	accept	discrete mathematics / cryptography skeleton		
+signature-scheme	cryptographic-protocol	accept	discrete mathematics / cryptography skeleton		
+ecdsa	signature-scheme	accept	discrete mathematics / cryptography skeleton		
+message-authentication-code	cryptographic-primitive	accept	discrete mathematics / cryptography skeleton		
+hmac	message-authentication-code	accept	discrete mathematics / cryptography skeleton		
+nonce	concept	accept	a number used once		05835747
+salt	concept	accept	discrete mathematics / cryptography skeleton	07813107	05835747
+initialization-vector	concept	accept	discrete mathematics / cryptography skeleton		05835747
+key-derivation-function	function	accept	discrete mathematics / cryptography skeleton		13783816
+zero-knowledge-proof	cryptographic-protocol	accept	discrete mathematics / cryptography skeleton		
+commitment-scheme	cryptographic-protocol	accept	discrete mathematics / cryptography skeleton		
+homomorphic-encryption	encryption	accept	discrete mathematics / cryptography skeleton		
+secret-sharing	cryptographic-protocol	accept	discrete mathematics / cryptography skeleton		
+authenticated-encryption	encryption	accept	discrete mathematics / cryptography skeleton		
+pseudorandom-generator	algorithm	accept	discrete mathematics / cryptography skeleton		05847438
+digital-certificate	document	accept	discrete mathematics / cryptography skeleton		06470073
+public-key-infrastructure	concept	accept	discrete mathematics / cryptography skeleton		05835747
+cryptanalysis	cryptography	accept	discrete mathematics / cryptography skeleton		
+brute-force-attack	cryptanalysis	accept	discrete mathematics / cryptography skeleton		
+plaintext	information	accept	discrete mathematics / cryptography skeleton		00033020
+ciphertext	information	accept	discrete mathematics / cryptography skeleton		00033020
+content-addressing	concept	accept	addressing data by the hash of its content — what a canonical root is		05835747
+blockchain	data-structure	accept	a hash chain of blocks		
+blockchain	hash-chain	accept	discrete mathematics / cryptography skeleton		
+proof-of-work	cryptographic-protocol	accept	discrete mathematics / cryptography skeleton		
+random-oracle	concept	accept	an idealised hash function		05835747
+padding-cryptography	concept	accept	discrete mathematics / cryptography skeleton		05835747

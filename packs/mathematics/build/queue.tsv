@@ -30,6 +30,7 @@ single	actor	expression	only opencyc
 single	acute-triangle	attribute	only wordnet
 single	acute-triangle	polygon	only wordnet
 single	acute-triangle	shape	only wordnet
+single	acyclic-graph	graph	only wikidata
 single	acyclic-graph	hypergraph	only wikidata
 single	acyclic-graph	mathematical-graph	only wikidata
 single	acyclic-graph	mathematical-structure	only wikidata
@@ -57,6 +58,7 @@ single	additive-inverse	tension	only sumo
 single	additive-inverse	way	only sumo
 single	address	expression	only opencyc
 single	adeptness	logical-relation	only sumo
+single	adjacency-matrix	data-structure	only wikidata
 single	adjacency-matrix	tensor	only wikidata
 single	administrator	logical-relation	only sumo
 single	admiration	logical-relation	only sumo
@@ -97,6 +99,7 @@ single	algebra	science	only wordnet
 single	algebra-over-a-field	algebraic-structure	only wikidata
 single	algebra-over-a-field	mathematical-module	only wikidata
 single	algebra-over-a-field	mathematical-structure	only wikidata
+single	algebra-over-a-field	module	only wikidata
 single	algebraic-magma	mathematical-structure	only wikidata
 single	algebraic-number	algebraic-structure	only wikidata
 single	algebraic-number	interval	only opencyc
@@ -116,6 +119,8 @@ single	algorithm	information	only opencyc
 single	algorithm	logical-relation	only sumo
 single	algorithm	measure	only sumo
 single	algorithm	routine	only sumo
+single	alliance	expression	only opencyc
+single	alliance	logical-relation	only sumo
 single	allotment	expression	only opencyc
 single	allowance	expression	only opencyc
 single	aloofness	logical-relation	only sumo
@@ -134,7 +139,6 @@ single	analyst	expression	only opencyc
 single	analyst	logical-relation	only sumo
 single	analytic-geometry	cognition	only wordnet
 single	analytic-geometry	logical-relation	only sumo
-single	analytic-geometry	mathematics	only wordnet
 single	analytic-geometry	science	only wordnet
 single	ancestor	logical-relation	only sumo
 single	angle	logical-relation	only sumo
@@ -208,7 +212,10 @@ single	arity	logical-relation	only sumo
 single	arity	quantity	only sumo
 single	army-division	expression	only opencyc
 single	arrangement-scheme	logical-relation	only sumo
+single	article	algebraic-structure	only wikidata
 single	article	expression	only opencyc
+single	article	mathematical-set	only wikidata
+single	article	mathematical-structure	only wikidata
 single	artist	expression	only opencyc
 single	aspect	logical-relation	only sumo
 single	aspiration	logical-relation	only sumo
@@ -277,6 +284,13 @@ single	bijection	mathematical-set	only wikidata
 single	bijection	mathematical-structure	only wikidata
 single	binary-relation	algebraic-structure	only wikidata
 single	binary-relation	mathematical-structure	only wikidata
+single	binary-tree	directed-acyclic-graph	only wikidata
+single	binary-tree	directed-graph	only wikidata
+single	binary-tree	graph	only wikidata
+single	binary-tree	hypergraph	only wikidata
+single	binary-tree	mathematical-graph	only wikidata
+single	binary-tree	mathematical-structure	only wikidata
+single	binary-tree	polytree	only wikidata
 single	binomial	cognition	only wordnet
 single	binomial	concept	only wordnet
 single	binomial	idea	only wordnet
@@ -287,6 +301,7 @@ single	binomial-theorem	information	only wordnet
 single	binomial-theorem	logical-relation	only sumo
 single	binomial-theorem	proposition	only wordnet
 single	biology	logical-relation	only sumo
+single	bipartite-graph	graph	only wikidata
 single	bipartite-graph	hypergraph	only wikidata
 single	bipartite-graph	mathematical-graph	only wikidata
 single	bipartite-graph	mathematical-structure	only wikidata
@@ -304,6 +319,10 @@ single	biserial-correlation-coefficient	quantity	only sumo
 single	biserial-correlation-coefficient	statistic	only wordnet
 single	blackmail	expression	only opencyc
 single	blessing	expression	only opencyc
+single	block-cipher	algorithm	only wikidata
+single	block-cipher	sign	only wikidata
+single	blockchain	book	only yago
+single	blockchain	information	only yago
 single	bloodshed	expression	only opencyc
 single	board-of-directors	expression	only opencyc
 single	boldness	logical-relation	only sumo
@@ -318,6 +337,7 @@ single	boolean-algebra	mathematical-module	only wikidata
 single	boolean-algebra	mathematical-ring	only wikidata
 single	boolean-algebra	mathematical-structure	only wikidata
 single	boolean-algebra	meet-semilattice	only wikidata
+single	boolean-algebra	module	only wikidata
 single	boolean-algebra	partially-ordered-set	only wikidata
 single	boolean-algebra	semigroup	only wikidata
 single	boolean-function	algebraic-structure	only wikidata
@@ -342,6 +362,7 @@ single	brewery	expression	only opencyc
 single	bride	expression	only opencyc
 single	brilliance	logical-relation	only sumo
 single	brother	logical-relation	only sumo
+single	bubble	manifold	only opencyc
 single	bureaucracy	expression	only opencyc
 single	bureaucracy	logical-relation	only sumo
 single	bus-ticket	expression	only opencyc
@@ -363,7 +384,12 @@ single	capital-city	expression	only opencyc
 single	caprice	logical-relation	only sumo
 single	caption	expression	only opencyc
 single	card	expression	only opencyc
+single	cardinal-number	quantity	only wikidata
+single	cardinality	algebraic-structure	only wikidata
+single	cardinality	binary-relation	only wikidata
 single	cardinality	logical-relation	only sumo
+single	cardinality	mathematical-set	only wikidata
+single	cardinality	mathematical-structure	only wikidata
 single	cardinality	quantity	only sumo
 single	care	expression	only opencyc
 single	career	logical-relation	only sumo
@@ -380,15 +406,40 @@ single	championship	expression	only opencyc
 single	championship	logical-relation	only sumo
 single	chaos	logical-relation	only sumo
 single	chapter	expression	only opencyc
+single	characteristic	algebraic-number	only wikidata
+single	characteristic	algebraic-structure	only wikidata
+single	characteristic	complex-number	only wikidata
+single	characteristic	join-semilattice	only wikidata
 single	characteristic	logical-relation	only sumo
+single	characteristic	mathematical-lattice	only wikidata
+single	characteristic	mathematical-structure	only wikidata
+single	characteristic	meet-semilattice	only wikidata
+single	characteristic	partially-ordered-set	only wikidata
+single	characteristic	quaternion	only wikidata
+single	characteristic	rational-number	only wikidata
+single	characteristic	real-number	only wikidata
+single	characteristic	totally-ordered-set	only wikidata
 single	charity	expression	only opencyc
+single	charm	algebraic-number	only wikidata
+single	charm	algebraic-structure	only wikidata
+single	charm	complex-number	only wikidata
+single	charm	join-semilattice	only wikidata
 single	charm	logical-relation	only sumo
+single	charm	mathematical-lattice	only wikidata
+single	charm	mathematical-structure	only wikidata
+single	charm	meet-semilattice	only wikidata
+single	charm	partially-ordered-set	only wikidata
+single	charm	quaternion	only wikidata
+single	charm	rational-number	only wikidata
+single	charm	real-number	only wikidata
+single	charm	totally-ordered-set	only wikidata
 single	chart	expression	only opencyc
 single	charter	expression	only opencyc
 single	chemistry	logical-relation	only sumo
 single	chief	logical-relation	only sumo
 single	church	expression	only opencyc
 single	circle	algebraic-structure	only wikidata
+single	circle	locus	only wikidata
 single	circle	mathematical-set	only wikidata
 single	circle	mathematical-structure	only wikidata
 single	circumstance	logical-relation	only sumo
@@ -402,6 +453,15 @@ single	clemency	expression	only opencyc
 single	clemency	logical-relation	only sumo
 single	climate	logical-relation	only sumo
 single	clipping	expression	only opencyc
+single	clique	algebraic-structure	only wikidata
+single	clique	connected-graph	only wikidata
+single	clique	hypergraph	only wikidata
+single	clique	mathematical-graph	only wikidata
+single	clique	mathematical-set	only wikidata
+single	clique	mathematical-structure	only wikidata
+single	clique	subgraph	only wikidata
+single	clique	subset	only wikidata
+single	clique	undirected-graph	only wikidata
 single	closed-interval	logical-relation	only sumo
 single	closed-interval	subset	only sumo
 single	closure-operator	algebraic-structure	only wikidata
@@ -412,6 +472,7 @@ single	closure-operator	mathematical-structure	only wikidata
 single	coach	expression	only opencyc
 single	coach	logical-relation	only sumo
 single	coating	expression	only opencyc
+single	code	algorithm	only wikidata
 single	code	logical-relation	only sumo
 single	coefficient-of-concordance	cognition	only wordnet
 single	coefficient-of-concordance	logical-relation	only sumo
@@ -447,6 +508,7 @@ single	competence	logical-relation	only sumo
 single	competition	expression	only opencyc
 single	competitive-edge	logical-relation	only sumo
 single	competitive-lead	logical-relation	only sumo
+single	complete-graph	graph	only wikidata
 single	complete-graph	hypergraph	only wikidata
 single	complete-graph	mathematical-graph	only wikidata
 single	complete-graph	mathematical-structure	only wikidata
@@ -467,6 +529,7 @@ single	complex-number	quantity	only sumo
 single	complication	logical-relation	only sumo
 single	composer	expression	only opencyc
 single	compromise	expression	only opencyc
+single	computational-complexity-theory	mathematical-logic	only wikidata
 single	computer	expression	only opencyc
 single	computer-memory	expression	only opencyc
 single	computer-program	logical-relation	only sumo
@@ -494,12 +557,14 @@ single	conic-section	logical-relation	only sumo
 single	conic-section	mathematical-structure	only wikidata
 single	conic-section	property	only sumo
 single	connected-component	algebraic-structure	only wikidata
+single	connected-component	graph	only wikidata
 single	connected-component	hypergraph	only wikidata
 single	connected-component	mathematical-graph	only wikidata
 single	connected-component	mathematical-set	only wikidata
 single	connected-component	mathematical-structure	only wikidata
 single	connected-component	subset	only wikidata
 single	connected-component	undirected-graph	only wikidata
+single	connected-graph	graph	only wikidata
 single	connected-graph	hypergraph	only wikidata
 single	connected-graph	mathematical-graph	only wikidata
 single	connected-graph	mathematical-structure	only wikidata
@@ -532,7 +597,10 @@ single	convex-polygon	property	only sumo
 single	conviction	logical-relation	only sumo
 single	coordinate-origin	logical-relation	only sumo
 single	coordinate-origin	mathematical-set	only wordnet
+single	copy	algebraic-structure	only wikidata
 single	copy	expression	only opencyc
+single	copy	mathematical-set	only wikidata
+single	copy	mathematical-structure	only wikidata
 single	copyright	expression	only opencyc
 single	corollary	accomplishment	only sumo
 single	corollary	act	only sumo
@@ -545,6 +613,7 @@ single	corollary	volition	only sumo
 single	correction	logical-relation	only sumo
 single	correlation-coefficient	cognition	only wordnet
 single	correlation-coefficient	logical-relation	only sumo
+single	correlation-coefficient	number	only sumo
 single	correlation-coefficient	quantity	only sumo
 single	correlation-coefficient	statistic	only wordnet
 single	correlational-analysis	cognition	only wordnet
@@ -612,8 +681,13 @@ single	crevice	logical-relation	only sumo
 single	crime	logical-relation	only sumo
 single	criminal	expression	only opencyc
 single	crisis	logical-relation	only sumo
+single	critic	expression	only opencyc
 single	critique	expression	only opencyc
 single	crook	logical-relation	only sumo
+single	cross	algebraic-structure	only wikidata
+single	cross	locus	only wikidata
+single	cross	mathematical-set	only wikidata
+single	cross	mathematical-structure	only wikidata
 single	cross-section	artifact	only sumo
 single	cross-section	cognition	only wordnet
 single	cross-section	contract-condition	only sumo
@@ -631,9 +705,18 @@ single	crossing	translation	only opencyc
 single	crowd	expression	only opencyc
 single	crowd	logical-relation	only sumo
 single	cruelty	logical-relation	only sumo
+single	cryptographic-hash-function	algebraic-structure	only wikidata
+single	cryptographic-hash-function	binary-relation	only wikidata
+single	cryptographic-hash-function	cryptography	only wikidata
+single	cryptographic-hash-function	mathematical-set	only wikidata
+single	cryptographic-hash-function	mathematical-structure	only wikidata
 single	cube	logical-relation	only sumo
 single	cube	manifold	only opencyc
 single	culture	logical-relation	only sumo
+single	curl	algebraic-structure	only wikidata
+single	curl	binary-relation	only wikidata
+single	curl	mathematical-set	only wikidata
+single	curl	mathematical-structure	only wikidata
 single	currency	expression	only opencyc
 single	curve	logical-relation	only sumo
 single	curved-shape	logical-relation	only sumo
@@ -650,6 +733,7 @@ single	curvilinear-regression	statistical-method	only wordnet
 single	curvilinear-regression	vector	only sumo
 single	custom	expression	only opencyc
 single	custom	logical-relation	only sumo
+single	cyclic-graph	graph	only wikidata
 single	cyclic-graph	hypergraph	only wikidata
 single	cyclic-graph	mathematical-graph	only wikidata
 single	cyclic-graph	mathematical-structure	only wikidata
@@ -658,6 +742,7 @@ single	cyclic-group	algebraic-structure	only wikidata
 single	cyclic-group	mathematical-group	only wikidata
 single	cyclic-group	mathematical-module	only wikidata
 single	cyclic-group	mathematical-structure	only wikidata
+single	cyclic-group	module	only wikidata
 single	cyclic-group	monoid	only wikidata
 single	cyclic-group	quasigroup	only wikidata
 single	cyclic-group	semigroup	only wikidata
@@ -668,6 +753,7 @@ single	damage	logical-relation	only sumo
 single	danger	logical-relation	only sumo
 single	dark-blue	logical-relation	only sumo
 single	dash	logical-relation	only sumo
+single	data-structure	information	only yago
 single	daughter	logical-relation	only sumo
 single	daze	logical-relation	only sumo
 single	dearth	logical-relation	only sumo
@@ -675,6 +761,7 @@ single	death	expression	only opencyc
 single	debt	logical-relation	only sumo
 single	decagon	algebraic-structure	only wikidata
 single	decagon	geometric-shape	only wikidata
+single	decagon	locus	only wikidata
 single	decagon	logical-relation	only sumo
 single	decagon	manifold	only opencyc
 single	decagon	mathematical-set	only wikidata
@@ -725,20 +812,21 @@ single	detachment	logical-relation	only sumo
 single	detective	expression	only opencyc
 single	detention	logical-relation	only sumo
 single	deviation	cognition	only wordnet
+single	deviation	number	only claude
 single	diagonal	algebraic-structure	only wikidata
-single	diagonal	join-semilattice	only wikidata
+single	diagonal	locus	only wikidata
 single	diagonal	logical-relation	only sumo
-single	diagonal	mathematical-lattice	only wikidata
 single	diagonal	mathematical-structure	only wikidata
-single	diagonal	meet-semilattice	only wikidata
-single	diagonal	partially-ordered-set	only wikidata
-single	diagonal	subset	only sumo
 single	diagonal-line	attribute	only wordnet
 single	diagonal-line	logical-relation	only sumo
 single	diagram	expression	only opencyc
 single	dialect	expression	only opencyc
 single	dialogue	expression	only opencyc
+single	diameter	algebraic-structure	only wikidata
+single	diameter	locus	only wikidata
 single	diameter	logical-relation	only sumo
+single	diameter	mathematical-set	only wikidata
+single	diameter	mathematical-structure	only wikidata
 single	diary	expression	only opencyc
 single	dictionary	expression	only opencyc
 single	diet	expression	only opencyc
@@ -754,10 +842,13 @@ single	differentiation	calculation	only sumo
 single	differentiation	information	only sumo
 single	differentiation	volition	only sumo
 single	difficulty	logical-relation	only sumo
+single	digital-certificate	artifact	only opencyc
+single	digital-certificate	expression	only opencyc
 single	dignity	logical-relation	only sumo
 single	dilemma	logical-relation	only sumo
 single	diligence	logical-relation	only sumo
 single	diplomat	expression	only opencyc
+single	directed-acyclic-graph	graph	only wikidata
 single	directed-acyclic-graph	hypergraph	only wikidata
 single	directed-acyclic-graph	mathematical-graph	only wikidata
 single	directed-acyclic-graph	mathematical-structure	only wikidata
@@ -777,9 +868,16 @@ single	discovery	logical-relation	only sumo
 single	discrimination	logical-relation	only sumo
 single	disease	logical-relation	only sumo
 single	disgrace	logical-relation	only sumo
+single	disk	algebraic-structure	only wikidata
+single	disk	locus	only wikidata
 single	disk	manifold	only opencyc
+single	disk	mathematical-set	only wikidata
+single	disk	mathematical-structure	only wikidata
 single	disorderliness	logical-relation	only sumo
+single	disposition	algebraic-structure	only wikidata
 single	disposition	logical-relation	only sumo
+single	disposition	mathematical-set	only wikidata
+single	disposition	mathematical-structure	only wikidata
 single	disposition	range-of-a-function	only sumo
 single	disregard	logical-relation	only sumo
 single	dissertation	expression	only opencyc
@@ -807,6 +905,7 @@ single	doctor	expression	only opencyc
 single	doctrine	logical-relation	only sumo
 single	dodecagon	algebraic-structure	only wikidata
 single	dodecagon	geometric-shape	only wikidata
+single	dodecagon	locus	only wikidata
 single	dodecagon	logical-relation	only sumo
 single	dodecagon	manifold	only opencyc
 single	dodecagon	mathematical-set	only wikidata
@@ -817,7 +916,15 @@ single	dodecagon	surface	only opencyc
 single	domain	logical-relation	only sumo
 single	domain	quantity	only sumo
 single	dome	manifold	only opencyc
+single	dominance	algebraic-structure	only wikidata
+single	dominance	antisymmetric-relation	only wikidata
+single	dominance	binary-relation	only wikidata
 single	dominance	logical-relation	only sumo
+single	dominance	mathematical-set	only wikidata
+single	dominance	mathematical-structure	only wikidata
+single	dominance	preorder	only wikidata
+single	dominance	reflexive-relation	only wikidata
+single	dominance	transitive-relation	only wikidata
 single	domination	logical-relation	only sumo
 single	dominion	expression	only opencyc
 single	dominion	logical-relation	only sumo
@@ -862,11 +969,14 @@ single	economics	logical-relation	only sumo
 single	economy	expression	only opencyc
 single	economy	logical-relation	only sumo
 single	economy	range-of-a-function	only sumo
+single	edge	algebraic-structure	only wikidata
+single	edge	locus	only wikidata
+single	edge	mathematical-set	only wikidata
+single	edge	mathematical-structure	only wikidata
 single	electorate	logical-relation	only sumo
 single	electronics	logical-relation	only sumo
 single	elementary-geometry	cognition	only wordnet
 single	elementary-geometry	logical-relation	only sumo
-single	elementary-geometry	mathematics	only wordnet
 single	elementary-geometry	science	only wordnet
 single	elite	expression	only opencyc
 single	elliptic-geometry	cognition	only wordnet
@@ -953,15 +1063,23 @@ single	evenness	society	only sumo
 single	evenness	status	only sumo
 single	evenness	tension	only sumo
 single	evenness	way	only sumo
+single	event	algebraic-structure	only wikidata
+single	event	mathematical-structure	only wikidata
 single	evidence	expression	only opencyc
 single	examiner	expression	only opencyc
 single	exceedance	logical-relation	only sumo
+single	excerpt	algebraic-structure	only wikidata
+single	excerpt	mathematical-set	only wikidata
+single	excerpt	mathematical-structure	only wikidata
 single	excess	logical-relation	only sumo
 single	exchange	expression	only opencyc
 single	excitement	logical-relation	only sumo
 single	excuse	expression	only opencyc
 single	executive	expression	only opencyc
+single	exemplar	algebraic-structure	only wikidata
 single	exemplar	logical-relation	only sumo
+single	exemplar	mathematical-set	only wikidata
+single	exemplar	mathematical-structure	only wikidata
 single	existential-quantifier	algebraic-structure	only wikidata
 single	existential-quantifier	binary-relation	only wikidata
 single	existential-quantifier	function	only wikidata
@@ -975,7 +1093,11 @@ single	expert	logical-relation	only sumo
 single	expertness	logical-relation	only sumo
 single	explaining	expression	only opencyc
 single	explanation	logical-relation	only sumo
+single	exponential	algebraic-structure	only wikidata
+single	exponential	binary-relation	only wikidata
 single	exponential	mathematical-relation	only wordnet
+single	exponential	mathematical-set	only wikidata
+single	exponential	mathematical-structure	only wikidata
 single	exponential-equation	information	only wordnet
 single	exponential-equation	logical-relation	only sumo
 single	exponential-equation	mathematical-statement	only wordnet
@@ -1042,6 +1164,10 @@ single	fever	expression	only opencyc
 single	field-of-study	expression	only opencyc
 single	field-of-study	logical-relation	only sumo
 single	fight	expression	only opencyc
+single	filter	algebraic-structure	only wikidata
+single	filter	mathematical-set	only wikidata
+single	filter	mathematical-structure	only wikidata
+single	filter	subset	only wikidata
 single	financial-document	expression	only opencyc
 single	financial-sacrifice	logical-relation	only sumo
 single	finite-field	abelian-group	only wikidata
@@ -1056,6 +1182,7 @@ single	finite-field	mathematical-module	only wikidata
 single	finite-field	mathematical-ring	only wikidata
 single	finite-field	mathematical-set	only wikidata
 single	finite-field	mathematical-structure	only wikidata
+single	finite-field	module	only wikidata
 single	finite-field	monoid	only wikidata
 single	finite-field	quasigroup	only wikidata
 single	finite-field	semigroup	only wikidata
@@ -1087,10 +1214,15 @@ single	fit	logical-relation	only sumo
 single	fitness	logical-relation	only sumo
 single	fix	logical-relation	only sumo
 single	flag	expression	only opencyc
+single	flow-network	graph	only wikidata
 single	flow-network	hypergraph	only wikidata
 single	flow-network	mathematical-graph	only wikidata
 single	flow-network	mathematical-structure	only wikidata
+single	fluctuation	algebraic-structure	only wikidata
+single	fluctuation	binary-relation	only wikidata
 single	fluctuation	logical-relation	only sumo
+single	fluctuation	mathematical-set	only wikidata
+single	fluctuation	mathematical-structure	only wikidata
 single	fluid	logical-relation	only sumo
 single	foe	logical-relation	only sumo
 single	fold	logical-relation	only sumo
@@ -1100,6 +1232,8 @@ single	foreman	logical-relation	only sumo
 single	forestry	expression	only opencyc
 single	forestry	logical-relation	only sumo
 single	form	expression	only opencyc
+single	formal-grammar	expression	only opencyc
+single	formal-grammar	information	only opencyc
 single	forte	logical-relation	only sumo
 single	fortune	logical-relation	only sumo
 single	fossil	expression	only opencyc
@@ -1115,11 +1249,22 @@ single	fractal-geometry	cognition	only wordnet
 single	fractal-geometry	logical-relation	only sumo
 single	fractal-geometry	mathematics	only wordnet
 single	fractal-geometry	science	only wordnet
+single	fraction	algebraic-number	only wikidata
+single	fraction	algebraic-structure	only wikidata
+single	fraction	join-semilattice	only wikidata
+single	fraction	mathematical-lattice	only wikidata
+single	fraction	mathematical-structure	only wikidata
+single	fraction	meet-semilattice	only wikidata
+single	fraction	partially-ordered-set	only wikidata
+single	fraction	quaternion	only wikidata
+single	fraction	real-number	only wikidata
+single	fraction	totally-ordered-set	only wikidata
 single	franchise	expression	only opencyc
 single	fraud	expression	only opencyc
 single	freedom	logical-relation	only sumo
 single	frequency-distribution	cognition	only wordnet
 single	frequency-distribution	logical-relation	only sumo
+single	friend	logical-relation	only sumo
 single	function	algebraic-structure	only wikidata
 single	function	logical-relation	only sumo
 single	function	mathematical-set	only wikidata
@@ -1131,6 +1276,10 @@ single	galois-theory	mathematics	only wordnet
 single	galois-theory	science	only wordnet
 single	game	expression	only opencyc
 single	game-rule	logical-relation	only sumo
+single	generating-function	algebraic-structure	only wikidata
+single	generating-function	binary-relation	only wikidata
+single	generating-function	mathematical-set	only wikidata
+single	generating-function	mathematical-structure	only wikidata
 single	genius	expression	only opencyc
 single	geodesic	attribute	only wordnet
 single	geodesic	logical-relation	only sumo
@@ -1139,6 +1288,10 @@ single	geometric-construction	accomplishment	only sumo
 single	geometric-construction	calculation	only sumo
 single	geometric-construction	information	only sumo
 single	geometric-construction	volition	only sumo
+single	geometric-intersection	algebraic-structure	only wikidata
+single	geometric-intersection	binary-relation	only wikidata
+single	geometric-intersection	function	only wikidata
+single	geometric-intersection	mathematical-structure	only wikidata
 single	geometric-mean	average	only wordnet
 single	geometric-mean	cognition	only wordnet
 single	geometric-mean	logical-relation	only sumo
@@ -1175,14 +1328,19 @@ single	government-administrator	logical-relation	only sumo
 single	governor	expression	only opencyc
 single	grab-sample	cognition	only wordnet
 single	grab-sample	example	only wordnet
+single	grace	algebraic-structure	only wikidata
 single	grace	logical-relation	only sumo
+single	grace	mathematical-set	only wikidata
+single	grace	mathematical-structure	only wikidata
 single	gradation	logical-relation	only sumo
 single	grammar	logical-relation	only sumo
 single	grandfather	logical-relation	only sumo
 single	grandma	logical-relation	only sumo
 single	grant	expression	only opencyc
+single	graph	mathematical-structure	only wikidata
 single	graph-clique	algebraic-structure	only wikidata
 single	graph-clique	connected-graph	only wikidata
+single	graph-clique	graph	only wikidata
 single	graph-clique	hypergraph	only wikidata
 single	graph-clique	mathematical-graph	only wikidata
 single	graph-clique	mathematical-set	only wikidata
@@ -1240,13 +1398,20 @@ single	harmonic-progression	logical-relation	only sumo
 single	harmonic-progression	mathematical-set	only wikidata
 single	harmonic-progression	mathematical-structure	only wikidata
 single	harmony	logical-relation	only sumo
+single	hash-table	expression	only opencyc
+single	hash-table	information	only opencyc
 single	headline	expression	only opencyc
 single	health	logical-relation	only sumo
 single	health-condition	logical-relation	only sumo
 single	heart-shape	logical-relation	only sumo
 single	heir	logical-relation	only sumo
+single	hemisphere	algebraic-structure	only wikidata
+single	hemisphere	locus	only wikidata
+single	hemisphere	mathematical-set	only wikidata
+single	hemisphere	mathematical-structure	only wikidata
 single	heptagon	algebraic-structure	only wikidata
 single	heptagon	geometric-shape	only wikidata
+single	heptagon	locus	only wikidata
 single	heptagon	logical-relation	only sumo
 single	heptagon	manifold	only opencyc
 single	heptagon	mathematical-set	only wikidata
@@ -1257,6 +1422,7 @@ single	heptagon	surface	only opencyc
 single	heroin	expression	only opencyc
 single	hexagon	algebraic-structure	only wikidata
 single	hexagon	geometric-shape	only wikidata
+single	hexagon	locus	only wikidata
 single	hexagon	logical-relation	only sumo
 single	hexagon	manifold	only opencyc
 single	hexagon	mathematical-set	only wikidata
@@ -1272,12 +1438,19 @@ single	heyting-algebra	mathematical-structure	only wikidata
 single	heyting-algebra	meet-semilattice	only wikidata
 single	heyting-algebra	partially-ordered-set	only wikidata
 single	heyting-algebra	semigroup	only wikidata
+single	hierarchy	algebraic-structure	only wikidata
+single	hierarchy	binary-relation	only wikidata
+single	hierarchy	mathematical-set	only wikidata
+single	hierarchy	mathematical-structure	only wikidata
+single	hierarchy	reflexive-relation	only wikidata
+single	hierarchy	transitive-relation	only wikidata
 single	hilbert-space	algebraic-structure	only wikidata
 single	hilbert-space	attribute	only wordnet
 single	hilbert-space	logical-relation	only sumo
 single	hilbert-space	mathematical-module	only wikidata
 single	hilbert-space	mathematical-space	only wordnet
 single	hilbert-space	mathematical-structure	only wikidata
+single	hilbert-space	module	only wikidata
 single	hilbert-space	subset	only sumo
 single	history	expression	only opencyc
 single	history	logical-relation	only sumo
@@ -1313,8 +1486,17 @@ single	idea	expression	only opencyc
 single	idea	logical-relation	only sumo
 single	ideal-value	logical-relation	only sumo
 single	identicalness	logical-relation	only sumo
+single	identity	algebraic-structure	only wikidata
+single	identity	antisymmetric-relation	only wikidata
+single	identity	binary-relation	only wikidata
 single	identity	logical-relation	only sumo
+single	identity	mathematical-set	only wikidata
+single	identity	mathematical-structure	only wikidata
+single	identity	preorder	only wikidata
 single	identity	range-of-a-function	only sumo
+single	identity	reflexive-relation	only wikidata
+single	identity	symmetric-relation	only wikidata
+single	identity	transitive-relation	only wikidata
 single	identity-element	character	only sumo
 single	identity-element	function	only wordnet
 single	identity-element	information	only sumo
@@ -1335,7 +1517,11 @@ single	imaginary-number	totally-ordered-set	only wikidata
 single	immigrant	expression	only opencyc
 single	immigrant	logical-relation	only sumo
 single	imperativeness	logical-relation	only sumo
+single	importance	algebraic-structure	only wikidata
+single	importance	binary-relation	only wikidata
 single	importance	logical-relation	only sumo
+single	importance	mathematical-set	only wikidata
+single	importance	mathematical-structure	only wikidata
 single	imposter	expression	only opencyc
 single	impression	logical-relation	only sumo
 single	improvement	logical-relation	only sumo
@@ -1345,6 +1531,7 @@ single	income	logical-relation	only sumo
 single	increment	logical-relation	only sumo
 single	indemnity	logical-relation	only sumo
 single	independent-set	algebraic-structure	only wikidata
+single	independent-set	graph	only wikidata
 single	independent-set	hypergraph	only wikidata
 single	independent-set	mathematical-graph	only wikidata
 single	independent-set	mathematical-set	only wikidata
@@ -1357,6 +1544,7 @@ single	independent-variable	idea	only wordnet
 single	independent-variable	logical-relation	only sumo
 single	indigence	logical-relation	only sumo
 single	induced-subgraph	algebraic-structure	only wikidata
+single	induced-subgraph	graph	only wikidata
 single	induced-subgraph	hypergraph	only wikidata
 single	induced-subgraph	mathematical-graph	only wikidata
 single	induced-subgraph	mathematical-set	only wikidata
@@ -1382,6 +1570,8 @@ single	influential-contact	logical-relation	only sumo
 single	informant	logical-relation	only sumo
 single	information-theory	cognition	only wordnet
 single	information-theory	logical-relation	only sumo
+single	initialization-vector	algebraic-structure	only wikidata
+single	initialization-vector	mathematical-structure	only wikidata
 single	injective-function	algebraic-structure	only wikidata
 single	injective-function	binary-relation	only wikidata
 single	injective-function	mathematical-set	only wikidata
@@ -1413,6 +1603,7 @@ single	integral-domain	mathematical-module	only wikidata
 single	integral-domain	mathematical-ring	only wikidata
 single	integral-domain	mathematical-set	only wikidata
 single	integral-domain	mathematical-structure	only wikidata
+single	integral-domain	module	only wikidata
 single	integral-domain	monoid	only wikidata
 single	integral-domain	quasigroup	only wikidata
 single	integral-domain	semigroup	only wikidata
@@ -1442,11 +1633,15 @@ single	introduction	expression	only opencyc
 single	intuition	logical-relation	only sumo
 single	invariance	logical-relation	only sumo
 single	invariance	property	only sumo
+single	invariant	algebraic-structure	only wikidata
 single	invariant	attribute	only sumo
+single	invariant	binary-relation	only wikidata
 single	invariant	cognition	only wordnet
 single	invariant	concept	only wordnet
 single	invariant	idea	only wordnet
 single	invariant	logical-relation	only sumo
+single	invariant	mathematical-set	only wikidata
+single	invariant	mathematical-structure	only wikidata
 single	inverse-function	algebraic-structure	only wikidata
 single	inverse-function	binary-relation	only wikidata
 single	inverse-function	logical-relation	only sumo
@@ -1476,11 +1671,18 @@ single	isometry	mathematical-structure	only wikidata
 single	isometry	surjective-function	only wikidata
 single	isomorphism	function	only opencyc
 single	isomorphism	mathematical-relation	only opencyc
+single	isosceles-triangle	algebraic-structure	only wikidata
 single	isosceles-triangle	attribute	only wordnet
-single	isosceles-triangle	polygon	only wordnet
+single	isosceles-triangle	geometric-shape	only wikidata
+single	isosceles-triangle	locus	only wikidata
+single	isosceles-triangle	mathematical-set	only wikidata
+single	isosceles-triangle	mathematical-structure	only wikidata
 single	isosceles-triangle	shape	only wordnet
 single	isotropy	logical-relation	only sumo
+single	issue	algebraic-structure	only wikidata
 single	issue	logical-relation	only sumo
+single	issue	mathematical-set	only wikidata
+single	issue	mathematical-structure	only wikidata
 single	jersey	expression	only opencyc
 single	jockey	expression	only opencyc
 single	jockey	logical-relation	only sumo
@@ -1495,6 +1697,13 @@ single	judgment	expression	only opencyc
 single	jury	expression	only opencyc
 single	justice	logical-relation	only sumo
 single	justification	expression	only opencyc
+single	keccak	algebraic-structure	only wikidata
+single	keccak	binary-relation	only wikidata
+single	keccak	cryptographic-primitive	only wikidata
+single	keccak	cryptography	only wikidata
+single	keccak	function	only wikidata
+single	keccak	mathematical-set	only wikidata
+single	keccak	mathematical-structure	only wikidata
 single	kendall-partial-rank-correlation	cognition	only wordnet
 single	kendall-partial-rank-correlation	logical-relation	only sumo
 single	kendall-partial-rank-correlation	nonparametric-statistic	only wordnet
@@ -1502,6 +1711,11 @@ single	kendall-partial-rank-correlation	statistic	only wordnet
 single	kendall-test	cognition	only wordnet
 single	kendall-test	logical-relation	only sumo
 single	kendall-test	statistic	only wordnet
+single	key-derivation-function	algebraic-structure	only wikidata
+single	key-derivation-function	binary-relation	only wikidata
+single	key-derivation-function	cryptography	only wikidata
+single	key-derivation-function	mathematical-set	only wikidata
+single	key-derivation-function	mathematical-structure	only wikidata
 single	kronecker-delta	logical-relation	only sumo
 single	kronecker-delta	mathematical-relation	only wordnet
 single	label	expression	only opencyc
@@ -1546,8 +1760,12 @@ single	lie-algebra	algebraic-structure	only wikidata
 single	lie-algebra	mathematical-module	only wikidata
 single	lie-algebra	mathematical-ring	only wikidata
 single	lie-algebra	mathematical-structure	only wikidata
+single	lie-algebra	module	only wikidata
 single	lie-algebra	vector-space	only wikidata
 single	life-style	logical-relation	only sumo
+single	limit	algebraic-structure	only wikidata
+single	limit	mathematical-set	only wikidata
+single	limit	mathematical-structure	only wikidata
 single	limitation	logical-relation	only sumo
 single	linear-algebra	cognition	only wordnet
 single	linear-algebra	logical-relation	only sumo
@@ -1578,7 +1796,9 @@ single	linguistics	logical-relation	only sumo
 single	literacy	logical-relation	only sumo
 single	literary-works	logical-relation	only sumo
 single	literature	logical-relation	only sumo
+single	locus	algebraic-structure	only wikidata
 single	locus	logical-relation	only sumo
+single	locus	mathematical-structure	only wikidata
 single	locus	subset	only sumo
 single	logic	logical-relation	only sumo
 single	logical-completeness	algebraic-structure	only wikidata
@@ -1667,6 +1887,9 @@ single	manner	logical-relation	only sumo
 single	manner	range-of-a-function	only sumo
 single	manual	expression	only opencyc
 single	manufacturer	logical-relation	only sumo
+single	manuscript	algebraic-structure	only wikidata
+single	manuscript	mathematical-set	only wikidata
+single	manuscript	mathematical-structure	only wikidata
 single	marching-music	logical-relation	only sumo
 single	mark	logical-relation	only sumo
 single	marketing	expression	only opencyc
@@ -1685,6 +1908,7 @@ single	mathematical-field	mathematical-group	only wikidata
 single	mathematical-field	mathematical-module	only wikidata
 single	mathematical-field	mathematical-ring	only wikidata
 single	mathematical-field	mathematical-structure	only wikidata
+single	mathematical-field	module	only wikidata
 single	mathematical-field	monoid	only wikidata
 single	mathematical-field	quasigroup	only wikidata
 single	mathematical-field	semigroup	only wikidata
@@ -1727,6 +1951,7 @@ single	mathematician	mammal	only opencyc
 single	mathematician	organism	only wordnet
 single	mathematician	person	only wordnet
 single	mathematician	physical-object	only wordnet
+single	mathematician	research-worker	only wikidata
 single	mathematician	structure	only opencyc
 single	mathematician	vertebrate	only opencyc
 single	mathematician	worker	only opencyc
@@ -1815,6 +2040,7 @@ single	minimum-spanning-tree	acyclic-graph	only wikidata
 single	minimum-spanning-tree	algebraic-structure	only wikidata
 single	minimum-spanning-tree	bipartite-graph	only wikidata
 single	minimum-spanning-tree	connected-graph	only wikidata
+single	minimum-spanning-tree	graph	only wikidata
 single	minimum-spanning-tree	hypergraph	only wikidata
 single	minimum-spanning-tree	mathematical-graph	only wikidata
 single	minimum-spanning-tree	mathematical-set	only wikidata
@@ -1844,9 +2070,12 @@ single	modular-lattice	mathematical-structure	only wikidata
 single	modular-lattice	meet-semilattice	only wikidata
 single	modular-lattice	partially-ordered-set	only wikidata
 single	module	expression	only opencyc
+single	module	mathematical-structure	only wikidata
 single	moment	cognition	only wordnet
 single	moment	logical-relation	only sumo
+single	momentum	algebraic-structure	only wikidata
 single	momentum	logical-relation	only sumo
+single	momentum	mathematical-structure	only wikidata
 single	monic-polynomial	function	only wordnet
 single	monic-polynomial	logical-relation	only sumo
 single	monic-polynomial	mathematical-relation	only wordnet
@@ -1947,6 +2176,7 @@ single	neighbor	logical-relation	only sumo
 single	nephew	logical-relation	only sumo
 single	newcomer	logical-relation	only sumo
 single	news	expression	only opencyc
+single	nightmare	expression	only opencyc
 single	nomination	expression	only opencyc
 single	non-euclidean-geometry	cognition	only wordnet
 single	non-euclidean-geometry	logical-relation	only sumo
@@ -1965,6 +2195,7 @@ single	non-sequitur	thinking	only sumo
 single	non-sequitur	volition	only sumo
 single	nonagon	algebraic-structure	only wikidata
 single	nonagon	geometric-shape	only wikidata
+single	nonagon	locus	only wikidata
 single	nonagon	logical-relation	only sumo
 single	nonagon	manifold	only opencyc
 single	nonagon	mathematical-set	only wikidata
@@ -1977,7 +2208,11 @@ single	nonparametric-statistic	logical-relation	only sumo
 single	nonparametric-statistic	quantity	only sumo
 single	nonpayment	logical-relation	only sumo
 single	nonsense	logical-relation	only sumo
+single	normal	algebraic-structure	only wikidata
+single	normal	locus	only wikidata
 single	normal	logical-relation	only sumo
+single	normal	mathematical-set	only wikidata
+single	normal	mathematical-structure	only wikidata
 single	normal-curve	attribute	only wordnet
 single	normal-curve	logical-relation	only sumo
 single	normal-curve	shape	only wordnet
@@ -2011,6 +2246,7 @@ single	occupation	expression	only opencyc
 single	occupation	logical-relation	only sumo
 single	octagon	algebraic-structure	only wikidata
 single	octagon	geometric-shape	only wikidata
+single	octagon	locus	only wikidata
 single	octagon	logical-relation	only sumo
 single	octagon	manifold	only opencyc
 single	octagon	mathematical-set	only wikidata
@@ -2055,6 +2291,10 @@ single	oddness	way	only sumo
 single	offspring	logical-relation	only sumo
 single	olfactory-property	logical-relation	only sumo
 single	omission	logical-relation	only sumo
+single	one-way-function	algebraic-structure	only wikidata
+single	one-way-function	binary-relation	only wikidata
+single	one-way-function	mathematical-set	only wikidata
+single	one-way-function	mathematical-structure	only wikidata
 single	open-interval	algebraic-structure	only wikidata
 single	open-interval	logical-relation	only sumo
 single	open-interval	mathematical-structure	only wikidata
@@ -2069,7 +2309,6 @@ single	operator	mammal	only opencyc
 single	operator	mathematical-relation	only wordnet
 single	operator	structure	only opencyc
 single	operator	vertebrate	only opencyc
-single	operator	worker	only opencyc
 single	opinion	logical-relation	only sumo
 single	opportunity	logical-relation	only sumo
 single	opposing-view	logical-relation	only sumo
@@ -2215,18 +2454,12 @@ single	peasant	expression	only opencyc
 single	pedestrian	expression	only opencyc
 single	peer	expression	only opencyc
 single	peer	logical-relation	only sumo
-single	pencil-of-lines	algebraic-structure	only wikidata
 single	pencil-of-lines	logical-relation	only sumo
-single	pencil-of-lines	mathematical-structure	only wikidata
 single	pencil-of-lines	property	only sumo
 single	pension	logical-relation	only sumo
 single	pensioner	expression	only opencyc
-single	pentagon	algebraic-structure	only wikidata
-single	pentagon	geometric-shape	only wikidata
 single	pentagon	logical-relation	only sumo
 single	pentagon	manifold	only opencyc
-single	pentagon	mathematical-set	only wikidata
-single	pentagon	mathematical-structure	only wikidata
 single	pentagon	plane	only opencyc
 single	pentagon	property	only sumo
 single	pentagon	surface	only opencyc
@@ -2264,12 +2497,14 @@ single	physics	logical-relation	only sumo
 single	pioneer	logical-relation	only sumo
 single	pipe	logical-relation	only sumo
 single	pitch	logical-relation	only sumo
+single	plaintext	expression	only opencyc
 single	plan	expression	only opencyc
 single	plan	logical-relation	only sumo
 single	planar-graph	hypergraph	only wikidata
 single	planar-graph	mathematical-structure	only wikidata
 single	plane	algebraic-structure	only wikidata
 single	plane	curve	only sumo
+single	plane	locus	only wikidata
 single	plane	logical-relation	only sumo
 single	plane	mathematical-structure	only wikidata
 single	plane	property	only sumo
@@ -2296,6 +2531,7 @@ single	politician	expression	only opencyc
 single	politics	expression	only opencyc
 single	polygon	algebraic-structure	only wikidata
 single	polygon	curve	only sumo
+single	polygon	locus	only wikidata
 single	polygon	logical-relation	only sumo
 single	polygon	manifold	only opencyc
 single	polygon	mathematical-set	only wikidata
@@ -2305,6 +2541,7 @@ single	polygon	property	only sumo
 single	polygon	surface	only opencyc
 single	polynomial	mathematical-relation	only wordnet
 single	polytree	directed-graph	only wikidata
+single	polytree	graph	only wikidata
 single	polytree	hypergraph	only wikidata
 single	polytree	mathematical-graph	only wikidata
 single	polytree	mathematical-structure	only wikidata
@@ -2323,14 +2560,21 @@ single	postage	expression	only opencyc
 single	postcard	expression	only opencyc
 single	postulate	line-of-text	only sumo
 single	postulate	sentence	only sumo
+single	potential	algebraic-structure	only wikidata
+single	potential	binary-relation	only wikidata
 single	potential	logical-relation	only sumo
+single	potential	mathematical-set	only wikidata
+single	potential	mathematical-structure	only wikidata
 single	power	logical-relation	only sumo
 single	power-series	function	only wordnet
 single	power-series	mathematical-relation	only wordnet
 single	power-series	polynomial	only wordnet
 single	practice	logical-relation	only sumo
 single	practice-of-medicine	logical-relation	only sumo
+single	prayer	algebraic-structure	only wikidata
 single	prayer	expression	only opencyc
+single	prayer	mathematical-set	only wikidata
+single	prayer	mathematical-structure	only wikidata
 single	precedence	logical-relation	only sumo
 single	preciseness	logical-relation	only sumo
 single	predecessor	logical-relation	only sumo
@@ -2381,6 +2625,8 @@ single	product-moment-correlation-coefficient	parametric-statistic	only wordnet
 single	product-moment-correlation-coefficient	routine	only sumo
 single	product-moment-correlation-coefficient	statistic	only wordnet
 single	profession	logical-relation	only sumo
+single	professional	expression	only opencyc
+single	professional	logical-relation	only sumo
 single	professor	expression	only opencyc
 single	proficiency	logical-relation	only sumo
 single	profile	expression	only opencyc
@@ -2430,6 +2676,7 @@ single	quadrature	volition	only sumo
 single	quadrilateral	algebraic-structure	only wikidata
 single	quadrilateral	curve	only sumo
 single	quadrilateral	geometric-shape	only wikidata
+single	quadrilateral	locus	only wikidata
 single	quadrilateral	logical-relation	only sumo
 single	quadrilateral	manifold	only opencyc
 single	quadrilateral	mathematical-set	only wikidata
@@ -2523,9 +2770,17 @@ single	receipt	expression	only opencyc
 single	recess	expression	only opencyc
 single	recess	logical-relation	only sumo
 single	recession	expression	only opencyc
+single	recommendation	algebraic-structure	only wikidata
 single	recommendation	expression	only opencyc
+single	recommendation	mathematical-set	only wikidata
+single	recommendation	mathematical-structure	only wikidata
+single	rectangle	algebraic-structure	only wikidata
 single	rectangle	attribute	only wordnet
+single	rectangle	geometric-shape	only wikidata
+single	rectangle	locus	only wikidata
 single	rectangle	manifold	only opencyc
+single	rectangle	mathematical-set	only wikidata
+single	rectangle	mathematical-structure	only wikidata
 single	rectangle	plane	only opencyc
 single	rectangle	shape	only wordnet
 single	rectangle	surface	only opencyc
@@ -2548,6 +2803,10 @@ single	recursive-definition	mathematical-set	only wikidata
 single	recursive-definition	mathematical-structure	only wikidata
 single	recursive-definition	procedure	only sumo
 single	recursive-definition	volition	only sumo
+single	recursive-function	algebraic-structure	only wikidata
+single	recursive-function	binary-relation	only wikidata
+single	recursive-function	mathematical-set	only wikidata
+single	recursive-function	mathematical-structure	only wikidata
 single	redundancy	logical-relation	only sumo
 single	reentrant-polygon	curve	only sumo
 single	reentrant-polygon	logical-relation	only sumo
@@ -2563,6 +2822,9 @@ single	reflexive-relation	mathematical-structure	only wikidata
 single	reform	logical-relation	only sumo
 single	refreshment	logical-relation	only sumo
 single	refugee	expression	only opencyc
+single	region	algebraic-structure	only wikidata
+single	region	mathematical-set	only wikidata
+single	region	mathematical-structure	only wikidata
 single	registration	expression	only opencyc
 single	regression	cognition	only wordnet
 single	regression	logical-relation	only sumo
@@ -2593,6 +2855,7 @@ single	regression-line	logical-relation	only sumo
 single	regression-line	quantity	only sumo
 single	regression-line	shape	only wordnet
 single	regression-line	vector	only sumo
+single	regular-expression	information	only opencyc
 single	regular-hexagon	logical-relation	only sumo
 single	regular-hexagon	polygon	only wordnet
 single	regular-hexagon	property	only sumo
@@ -2646,10 +2909,13 @@ single	rhomboid	manifold	only opencyc
 single	rhomboid	plane	only opencyc
 single	rhomboid	property	only sumo
 single	rhomboid	surface	only opencyc
+single	rhombus	algebraic-structure	only wikidata
+single	rhombus	geometric-shape	only wikidata
+single	rhombus	locus	only wikidata
 single	rhombus	logical-relation	only sumo
-single	rhombus	polygon	only wordnet
+single	rhombus	mathematical-set	only wikidata
+single	rhombus	mathematical-structure	only wikidata
 single	rhombus	property	only sumo
-single	rhombus	quadrilateral	only wordnet
 single	rhythm	logical-relation	only sumo
 single	rider	logical-relation	only sumo
 single	right	logical-relation	only sumo
@@ -2659,11 +2925,13 @@ single	right-triangle	plane	only opencyc
 single	right-triangle	shape	only wordnet
 single	right-triangle	surface	only opencyc
 single	ritual	expression	only opencyc
+single	role-model	logical-relation	only sumo
 single	roll	logical-relation	only sumo
 single	root	logical-relation	only sumo
 single	root	subset	only sumo
 single	rooted-tree	directed-acyclic-graph	only wikidata
 single	rooted-tree	directed-graph	only wikidata
+single	rooted-tree	graph	only wikidata
 single	rooted-tree	hypergraph	only wikidata
 single	rooted-tree	mathematical-graph	only wikidata
 single	rooted-tree	mathematical-structure	only wikidata
@@ -2676,6 +2944,12 @@ single	rounding	mathematical-structure	only wikidata
 single	rounding	situation	only opencyc
 single	routine	expression	only opencyc
 single	routine	logical-relation	only sumo
+single	row	algebraic-structure	only wikidata
+single	row	join-semilattice	only wikidata
+single	row	mathematical-lattice	only wikidata
+single	row	mathematical-structure	only wikidata
+single	row	meet-semilattice	only wikidata
+single	row	partially-ordered-set	only wikidata
 single	royalty-payment	logical-relation	only sumo
 single	rubbish	logical-relation	only sumo
 single	rule	logical-relation	only sumo
@@ -2685,6 +2959,7 @@ single	sailor	expression	only opencyc
 single	salesclerk	logical-relation	only sumo
 single	salvation	expression	only opencyc
 single	salvation	logical-relation	only sumo
+single	sample	tensor	only wikidata
 single	sample-distribution	cognition	only wordnet
 single	sample-distribution	collection	only sumo
 single	sampling	accomplishment	only sumo
@@ -2755,6 +3030,9 @@ single	sentential-function	information	only wordnet
 single	sentential-function	logical-relation	only sumo
 single	sentential-function	mathematical-statement	only wordnet
 single	sentiment	logical-relation	only sumo
+single	serial	algebraic-structure	only wikidata
+single	serial	mathematical-set	only wikidata
+single	serial	mathematical-structure	only wikidata
 single	series-expansion	accomplishment	only sumo
 single	series-expansion	act	only sumo
 single	series-expansion	activity	only sumo
@@ -2773,8 +3051,17 @@ single	set-theory	logical-relation	only sumo
 single	set-theory	science	only wordnet
 single	severity	logical-relation	only sumo
 single	sex	logical-relation	only sumo
+single	sha-2	algebraic-structure	only wikidata
+single	sha-2	binary-relation	only wikidata
+single	sha-2	cryptographic-primitive	only wikidata
+single	sha-2	cryptography	only wikidata
+single	sha-2	function	only wikidata
+single	sha-2	mathematical-set	only wikidata
+single	sha-2	mathematical-structure	only wikidata
 single	shaft	manifold	only opencyc
+single	shape	algebraic-structure	only wikidata
 single	shape	logical-relation	only sumo
+single	shape	mathematical-structure	only wikidata
 single	shop	expression	only opencyc
 single	shopping	expression	only opencyc
 single	short-division	act	only wordnet
@@ -2788,7 +3075,17 @@ single	sight	logical-relation	only sumo
 single	sign	expression	only opencyc
 single	signal	expression	only opencyc
 single	silence	logical-relation	only sumo
+single	similarity	algebraic-structure	only wikidata
+single	similarity	automorphism	only wikidata
+single	similarity	bijection	only wikidata
+single	similarity	binary-relation	only wikidata
+single	similarity	endomorphism	only wikidata
+single	similarity	homomorphism	only wikidata
+single	similarity	isomorphism	only wikidata
 single	similarity	logical-relation	only sumo
+single	similarity	mathematical-set	only wikidata
+single	similarity	mathematical-structure	only wikidata
+single	similarity	surjective-function	only wikidata
 single	simplicity	logical-relation	only sumo
 single	simultaneous-equations	mathematical-statement	only wordnet
 single	sin	logical-relation	only sumo
@@ -2832,6 +3129,7 @@ single	spanning-tree	acyclic-graph	only wikidata
 single	spanning-tree	algebraic-structure	only wikidata
 single	spanning-tree	bipartite-graph	only wikidata
 single	spanning-tree	connected-graph	only wikidata
+single	spanning-tree	graph	only wikidata
 single	spanning-tree	hypergraph	only wikidata
 single	spanning-tree	mathematical-graph	only wikidata
 single	spanning-tree	mathematical-set	only wikidata
@@ -2846,18 +3144,21 @@ single	specialist	logical-relation	only sumo
 single	spectator	logical-relation	only sumo
 single	spectrum	logical-relation	only sumo
 single	sphere	algebraic-structure	only wikidata
+single	sphere	locus	only wikidata
 single	sphere	mathematical-structure	only wikidata
 single	spherical-geometry	cognition	only wordnet
 single	spherical-geometry	logical-relation	only sumo
 single	spherical-geometry	mathematics	only wordnet
 single	spherical-geometry	science	only wordnet
 single	spherical-polygon	algebraic-structure	only wikidata
+single	spherical-polygon	locus	only wikidata
 single	spherical-polygon	logical-relation	only sumo
 single	spherical-polygon	mathematical-set	only wikidata
 single	spherical-polygon	mathematical-structure	only wikidata
 single	spherical-polygon	property	only sumo
 single	spherical-triangle	algebraic-structure	only wikidata
 single	spherical-triangle	geometric-shape	only wikidata
+single	spherical-triangle	locus	only wikidata
 single	spherical-triangle	logical-relation	only sumo
 single	spherical-triangle	mathematical-set	only wikidata
 single	spherical-triangle	mathematical-structure	only wikidata
@@ -2887,10 +3188,13 @@ single	spurious-correlation	mathematics	only wordnet
 single	spurious-correlation	science	only wordnet
 single	spy	logical-relation	only sumo
 single	squad	expression	only opencyc
+single	square	algebraic-structure	only wikidata
+single	square	geometric-shape	only wikidata
 single	square	isogon	only wordnet
-single	square	parallelogram	only wordnet
-single	square	polygon	only wordnet
-single	square	quadrilateral	only wordnet
+single	square	locus	only wikidata
+single	square	mathematical-set	only wikidata
+single	square	mathematical-structure	only wikidata
+single	square	trapezoid	only wikidata
 single	staff	expression	only opencyc
 single	stake	logical-relation	only sumo
 single	stake	manifold	only opencyc
@@ -2931,6 +3235,9 @@ single	stratified-sample	cognition	only wordnet
 single	stratified-sample	collection	only sumo
 single	stratified-sample	statistical-distribution	only wordnet
 single	stream	expression	only opencyc
+single	stream-cipher	algorithm	only wikidata
+single	stream-cipher	information	only yago
+single	stream-cipher	sign	only wikidata
 single	strength	logical-relation	only sumo
 single	strict-order	algebraic-structure	only wikidata
 single	strict-order	binary-relation	only wikidata
@@ -2939,6 +3246,7 @@ single	strict-order	mathematical-structure	only wikidata
 single	stroke	expression	only opencyc
 single	strongly-connected-component	algebraic-structure	only wikidata
 single	strongly-connected-component	connected-graph	only wikidata
+single	strongly-connected-component	graph	only wikidata
 single	strongly-connected-component	hypergraph	only wikidata
 single	strongly-connected-component	mathematical-graph	only wikidata
 single	strongly-connected-component	mathematical-set	only wikidata
@@ -2979,7 +3287,10 @@ single	suburb	expression	only opencyc
 single	success	expression	only opencyc
 single	suffering	logical-relation	only sumo
 single	suicide	expression	only opencyc
+single	summary	algebraic-structure	only wikidata
 single	summary	expression	only opencyc
+single	summary	mathematical-set	only wikidata
+single	summary	mathematical-structure	only wikidata
 single	summation	mathematical-operation	only wordnet
 single	summer-camp	expression	only opencyc
 single	superintendent	logical-relation	only sumo
@@ -3006,16 +3317,13 @@ single	surjective-function	binary-relation	only wikidata
 single	surjective-function	mathematical-set	only wikidata
 single	surjective-function	mathematical-structure	only wikidata
 single	surprise	logical-relation	only sumo
+single	surrogate	logical-relation	only sumo
 single	survivor	logical-relation	only sumo
 single	suspect	logical-relation	only sumo
 single	syllogism	formal-system	only wikidata
 single	symmetric-relation	algebraic-structure	only wikidata
 single	symmetric-relation	mathematical-set	only wikidata
 single	symmetric-relation	mathematical-structure	only wikidata
-single	symmetry	algebraic-structure	only wikidata
-single	symmetry	binary-relation	only wikidata
-single	symmetry	mathematical-set	only wikidata
-single	symmetry	mathematical-structure	only wikidata
 single	symptom	expression	only opencyc
 single	tactic	logical-relation	only sumo
 single	tan	expression	only opencyc
@@ -3044,6 +3352,8 @@ single	tetrachoric-correlation-coefficient	logical-relation	only sumo
 single	tetrachoric-correlation-coefficient	parametric-statistic	only wordnet
 single	tetrachoric-correlation-coefficient	quantity	only sumo
 single	tetrachoric-correlation-coefficient	statistic	only wordnet
+single	text	algebraic-structure	only wikidata
+single	text	mathematical-structure	only wikidata
 single	textbook	expression	only opencyc
 single	texture	logical-relation	only sumo
 single	theme	logical-relation	only sumo
@@ -3134,10 +3444,15 @@ single	transposition	accomplishment	only sumo
 single	transposition	calculation	only sumo
 single	transposition	information	only sumo
 single	transposition	volition	only sumo
+single	trapezium	algebraic-structure	only wikidata
 single	trapezium	body-part	only opencyc
 single	trapezium	bone	only opencyc
 single	trapezium	curve	only sumo
+single	trapezium	geometric-shape	only wikidata
+single	trapezium	locus	only wikidata
 single	trapezium	logical-relation	only sumo
+single	trapezium	mathematical-set	only wikidata
+single	trapezium	mathematical-structure	only wikidata
 single	trapezium	property	only sumo
 single	trapezium	structure	only opencyc
 single	trapezium	tissue	only opencyc
@@ -3151,6 +3466,7 @@ single	treasurer	expression	only opencyc
 single	treatment	expression	only opencyc
 single	treaty	expression	only opencyc
 single	treaty	logical-relation	only sumo
+single	tree-graph	graph	only wikidata
 single	tree-graph	hypergraph	only wikidata
 single	tree-graph	mathematical-structure	only wikidata
 single	tree-graph	multigraph	only wikidata
@@ -3185,8 +3501,17 @@ single	uncle	logical-relation	only sumo
 single	uncountable-set	algebraic-structure	only wikidata
 single	uncountable-set	mathematical-set	only wikidata
 single	uncountable-set	mathematical-structure	only wikidata
+single	undecagon	algebraic-structure	only wikidata
+single	undecagon	geometric-shape	only wikidata
+single	undecagon	locus	only wikidata
 single	undecagon	logical-relation	only sumo
+single	undecagon	mathematical-set	only wikidata
+single	undecagon	mathematical-structure	only wikidata
 single	undecagon	property	only sumo
+single	underside	algebraic-structure	only wikidata
+single	underside	locus	only wikidata
+single	underside	mathematical-set	only wikidata
+single	underside	mathematical-structure	only wikidata
 single	undirected-graph	hypergraph	only wikidata
 single	undirected-graph	mathematical-structure	only wikidata
 single	unity	logical-relation	only sumo
@@ -3230,14 +3555,18 @@ single	value	logical-relation	only sumo
 single	variable	logical-relation	only sumo
 single	variance	cognition	only wordnet
 single	variance	logical-relation	only sumo
+single	variance	number	only claude
 single	variance	statistic	only wordnet
 single	vector	logical-relation	only sumo
 single	vector-algebra	cognition	only wordnet
 single	vector-algebra	logical-relation	only sumo
-single	vector-algebra	mathematics	only wordnet
 single	vector-algebra	science	only wordnet
 single	vector-space	algebraic-structure	only wikidata
 single	vector-space	mathematical-structure	only wikidata
+single	vertex	algebraic-structure	only wikidata
+single	vertex	locus	only wikidata
+single	vertex	mathematical-set	only wikidata
+single	vertex	mathematical-structure	only wikidata
 single	veteran	expression	only opencyc
 single	victim	expression	only opencyc
 single	view	logical-relation	only sumo
@@ -3289,13 +3618,9 @@ single	wedge	logical-relation	only sumo
 single	wedge	polygon	only wordnet
 single	wedge	property	only sumo
 single	wedge	tool	only opencyc
-single	weight	algebraic-structure	only wikidata
 single	weight	artifact	only opencyc
-single	weight	binary-relation	only wikidata
 single	weight	device	only opencyc
 single	weight	logical-relation	only sumo
-single	weight	mathematical-set	only wikidata
-single	weight	mathematical-structure	only wikidata
 single	weight	quantity	only sumo
 single	well-order	algebraic-structure	only wikidata
 single	well-order	antisymmetric-relation	only wikidata
@@ -3323,12 +3648,11 @@ single	wreck	logical-relation	only sumo
 single	wrinkle	logical-relation	only sumo
 unplaced	aberration		no accepted parent reaches a root
 unplaced	accelerator		no accepted parent reaches a root
-unplaced	access	logical-relation	no accepted parent reaches a root
+unplaced	access	algebraic-structure binary-relation logical-relation mathematical-set mathematical-structure	no accepted parent reaches a root
 unplaced	advancement	logical-relation	no accepted parent reaches a root
 unplaced	affinity.relation		no accepted parent reaches a root
 unplaced	afternoon	logical-relation	no accepted parent reaches a root
 unplaced	agitation	logical-relation	no accepted parent reaches a root
-unplaced	alliance	expression logical-relation	no accepted parent reaches a root
 unplaced	altitude		no accepted parent reaches a root
 unplaced	alumnus	logical-relation	no accepted parent reaches a root
 unplaced	angel	expression	no accepted parent reaches a root
@@ -3350,13 +3674,11 @@ unplaced	bit		no accepted parent reaches a root
 unplaced	blink-of-an-eye	logical-relation	no accepted parent reaches a root
 unplaced	bosom	logical-relation	no accepted parent reaches a root
 unplaced	brink		no accepted parent reaches a root
-unplaced	bubble	manifold	no accepted parent reaches a root
 unplaced	budget	logical-relation	no accepted parent reaches a root
 unplaced	bustle	logical-relation	no accepted parent reaches a root
-unplaced	cabinet.group		no accepted parent reaches a root
 unplaced	calendar-month	logical-relation	no accepted parent reaches a root
 unplaced	camp		no accepted parent reaches a root
-unplaced	capacity	logical-relation	no accepted parent reaches a root
+unplaced	capacity	logical-relation mathematical-structure	no accepted parent reaches a root
 unplaced	capitalism		no accepted parent reaches a root
 unplaced	cassette		no accepted parent reaches a root
 unplaced	ceiling.communication	logical-relation	no accepted parent reaches a root
@@ -3378,7 +3700,6 @@ unplaced	correlation	logical-relation	no accepted parent reaches a root
 unplaced	course-credit	logical-relation	no accepted parent reaches a root
 unplaced	course-of-study	expression logical-relation	no accepted parent reaches a root
 unplaced	creed	expression logical-relation	no accepted parent reaches a root
-unplaced	critic	expression	no accepted parent reaches a root
 unplaced	crop		no accepted parent reaches a root
 unplaced	cupful		no accepted parent reaches a root
 unplaced	current		no accepted parent reaches a root
@@ -3439,7 +3760,6 @@ unplaced	foundation.relation	logical-relation	no accepted parent reaches a root
 unplaced	fragment		no accepted parent reaches a root
 unplaced	freak	logical-relation	no accepted parent reaches a root
 unplaced	frequency	logical-relation	no accepted parent reaches a root
-unplaced	friend	logical-relation	no accepted parent reaches a root
 unplaced	front		no accepted parent reaches a root
 unplaced	frustration		no accepted parent reaches a root
 unplaced	fund		no accepted parent reaches a root
@@ -3449,7 +3769,8 @@ unplaced	garden		no accepted parent reaches a root
 unplaced	gas		no accepted parent reaches a root
 unplaced	gem		no accepted parent reaches a root
 unplaced	gene		no accepted parent reaches a root
-unplaced	globe	expression	no accepted parent reaches a root
+unplaced	genus-pan		no accepted parent reaches a root
+unplaced	globe	algebraic-structure expression geometric-shape locus mathematical-set mathematical-structure topological-space	no accepted parent reaches a root
 unplaced	grade	logical-relation	no accepted parent reaches a root
 unplaced	grain.object		no accepted parent reaches a root
 unplaced	gravity		no accepted parent reaches a root
@@ -3519,20 +3840,17 @@ unplaced	moon		no accepted parent reaches a root
 unplaced	morning	logical-relation	no accepted parent reaches a root
 unplaced	morsel		no accepted parent reaches a root
 unplaced	motivation	logical-relation	no accepted parent reaches a root
-unplaced	name		no accepted parent reaches a root
 unplaced	nature.object		no accepted parent reaches a root
 unplaced	nature.person		no accepted parent reaches a root
 unplaced	necessity		no accepted parent reaches a root
 unplaced	negotiation		no accepted parent reaches a root
 unplaced	network		no accepted parent reaches a root
 unplaced	night	logical-relation	no accepted parent reaches a root
-unplaced	nightmare	expression	no accepted parent reaches a root
 unplaced	node		no accepted parent reaches a root
 unplaced	norm	expression logical-relation	no accepted parent reaches a root
 unplaced	north		no accepted parent reaches a root
 unplaced	notice.communication		no accepted parent reaches a root
 unplaced	nowadays	logical-relation	no accepted parent reaches a root
-unplaced	obstacle		no accepted parent reaches a root
 unplaced	occasion	logical-relation	no accepted parent reaches a root
 unplaced	ocean.quantity	logical-relation	no accepted parent reaches a root
 unplaced	old-age	logical-relation	no accepted parent reaches a root
@@ -3545,7 +3863,6 @@ unplaced	output	logical-relation	no accepted parent reaches a root
 unplaced	ownership	logical-relation	no accepted parent reaches a root
 unplaced	page		no accepted parent reaches a root
 unplaced	pain		no accepted parent reaches a root
-unplaced	pan		no accepted parent reaches a root
 unplaced	parking	expression translation	no accepted parent reaches a root
 unplaced	part		no accepted parent reaches a root
 unplaced	past		no accepted parent reaches a root
@@ -3564,14 +3881,12 @@ unplaced	poser	logical-relation	no accepted parent reaches a root
 unplaced	precondition	logical-relation postulate	no accepted parent reaches a root
 unplaced	predilection	logical-relation	no accepted parent reaches a root
 unplaced	presidency	logical-relation	no accepted parent reaches a root
-unplaced	president		no accepted parent reaches a root
 unplaced	pressure		no accepted parent reaches a root
 unplaced	principle	expression logical-relation	no accepted parent reaches a root
 unplaced	prize		no accepted parent reaches a root
 unplaced	probe		no accepted parent reaches a root
 unplaced	product		no accepted parent reaches a root
 unplaced	product.phenomenon		no accepted parent reaches a root
-unplaced	professional	expression logical-relation	no accepted parent reaches a root
 unplaced	projection		no accepted parent reaches a root
 unplaced	projection.communication		no accepted parent reaches a root
 unplaced	proportion	logical-relation	no accepted parent reaches a root
@@ -3598,17 +3913,16 @@ unplaced	respite	logical-relation	no accepted parent reaches a root
 unplaced	response	logical-relation	no accepted parent reaches a root
 unplaced	responsibility		no accepted parent reaches a root
 unplaced	restraint.cognition		no accepted parent reaches a root
-unplaced	restriction		no accepted parent reaches a root
+unplaced	restriction	algebraic-structure binary-relation mathematical-set mathematical-structure	no accepted parent reaches a root
 unplaced	right-to-vote	logical-relation	no accepted parent reaches a root
 unplaced	risk	logical-relation	no accepted parent reaches a root
-unplaced	role-model	logical-relation	no accepted parent reaches a root
 unplaced	rootage		no accepted parent reaches a root
 unplaced	rule.cognition	logical-relation	no accepted parent reaches a root
 unplaced	rule.time	logical-relation	no accepted parent reaches a root
 unplaced	sarcasm	logical-relation	no accepted parent reaches a root
 unplaced	scale-of-measurement	expression logical-relation	no accepted parent reaches a root
 unplaced	school-term	logical-relation	no accepted parent reaches a root
-unplaced	score	logical-relation	no accepted parent reaches a root
+unplaced	score	algebraic-structure binary-relation logical-relation mathematical-set mathematical-structure	no accepted parent reaches a root
 unplaced	season	logical-relation	no accepted parent reaches a root
 unplaced	sec		no accepted parent reaches a root
 unplaced	sequence	logical-relation	no accepted parent reaches a root
@@ -3636,7 +3950,6 @@ unplaced	sun		no accepted parent reaches a root
 unplaced	sunday	logical-relation	no accepted parent reaches a root
 unplaced	supply		no accepted parent reaches a root
 unplaced	surrender	expression	no accepted parent reaches a root
-unplaced	surrogate	logical-relation	no accepted parent reaches a root
 unplaced	syllable		no accepted parent reaches a root
 unplaced	sympathy	logical-relation	no accepted parent reaches a root
 unplaced	system		no accepted parent reaches a root
@@ -3669,7 +3982,6 @@ unplaced	twilight	logical-relation	no accepted parent reaches a root
 unplaced	unit	logical-relation	no accepted parent reaches a root
 unplaced	universe		no accepted parent reaches a root
 unplaced	upgrade	logical-relation	no accepted parent reaches a root
-unplaced	vacuum		no accepted parent reaches a root
 unplaced	variant		no accepted parent reaches a root
 unplaced	venus		no accepted parent reaches a root
 unplaced	version		no accepted parent reaches a root
