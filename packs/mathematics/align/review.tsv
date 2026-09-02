@@ -79,3 +79,47 @@ transitive-reduction	mathematical-operation	accept	the minimal graph with the sa
 transitive-closure	mathematical-operation	accept	the reachability relation as an operation		00869583
 shortest-path	graph-path	accept	the shortest path between two vertices (Wikidata's item is the problem)		
 graph-colouring	concept	accept	an assignment of colours to vertices		05835747
+# proposed by Claude 2026-09-03: mathematical logic placements
+logical-operation	mathematical-operation	accept	an operation on truth values	13509042	00869583
+logical-connective	logical-operation	accept	AND, OR, NOT, IF-THEN		13509042
+quantifier	logical-operation	accept	for all, there exists	06302542	13509042
+logical-conjunction	logical-connective	accept			
+logical-disjunction	logical-connective	accept			
+logical-negation	logical-connective	accept		06751572	
+material-implication	logical-connective	accept			
+universal-quantifier	quantifier	accept			06302542
+existential-quantifier	quantifier	accept			06302542
+logical-relation	mathematical-relation	accept	a relation between propositions	13783038	13783581
+logical-consequence	logical-relation	accept	entailment		13783038
+subsumption	logical-relation	accept	the ⊑ of description logic — what OntoDAG computes		13783038
+mathematical-logic	logic	accept	the mathematical study of formal reasoning		06163751
+mathematical-logic	mathematics	accept			06000644
+propositional-logic	mathematical-logic	accept			
+first-order-logic	mathematical-logic	accept			
+modal-logic	mathematical-logic	accept			
+description-logic	mathematical-logic	accept	the family OntoDAG's contract sits under		
+classical-logic	mathematical-logic	accept			
+fuzzy-logic	mathematical-logic	accept			
+intuitionistic-logic	mathematical-logic	accept			
+model-theory	mathematical-logic	accept			
+proof-theory	mathematical-logic	accept			
+computability-theory	mathematical-logic	accept			
+type-theory	mathematical-logic	accept			
+formal-system	concept	accept	axioms plus inference rules		05835747
+lambda-calculus	formal-system	accept			
+turing-machine	concept	accept	an abstract model of computation		05835747
+truth-value	concept	accept			05835747
+truth-table	concept	accept			05835747
+well-formed-formula	expression	accept			06731802
+inference-rule	rule	accept	a rule licensing a conclusion from premises		05846054
+deductive-reasoning	thinking	accept			05770926
+inductive-reasoning	thinking	accept			05770926
+syllogism	deductive-reasoning	accept			
+non-sequitur	proposition	accept	a conclusion that does not follow	05781663	06750804
+mathematical-induction	formal-proof	accept			06647614
+godel-incompleteness-theorem	theorem	accept			06752293
+decidability	attribute	accept	a property of theories		00024264
+satisfiability	attribute	accept	a property of formulas		00024264
+logical-soundness	attribute	accept	a property of proof systems		00024264
+decision-problem	problem	accept	a yes/no question about inputs		06784003
+arity	number	accept	the number of arguments	05857974	05121418

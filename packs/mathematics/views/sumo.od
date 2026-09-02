@@ -53,7 +53,7 @@ advocate person populace
 affair accomplishment act activity procedure volition
 affiliation accomplishment act activity procedure volition
 affine-geometry field-of-study
-affine-transformation '*'
+affine-transformation logical-relation
 affinity amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 affinity.relation accomplishment act activity procedure volition
 affirmation communication
@@ -78,7 +78,7 @@ alcohol drink
 algebra field-of-study
 algorithm measure routine
 alimony accomplishment act activity procedure volition
-alliance '*'
+alliance logical-relation
 allotment '*'
 allowance '*'
 ally country
@@ -129,12 +129,12 @@ appraisal comparison
 appraisal-report contract-condition text
 aquarium device
 arachnid invertebrate
-arc-cosecant '*'
-arc-cosine '*'
-arc-cotangent '*'
-arc-secant '*'
-arc-sine '*'
-arc-tangent '*'
+arc-cosecant logical-relation
+arc-cosine logical-relation
+arc-cotangent logical-relation
+arc-secant logical-relation
+arc-sine logical-relation
+arc-tangent logical-relation
 arch development
 architecture field-of-study
 archive association organization team
@@ -143,14 +143,15 @@ arena development
 argument communication contest war
 argumentation thinking
 arithmetic field-of-study
-arithmetic-mean '*'
+arithmetic-mean logical-relation
 arithmetic-operation calculation
-arithmetic-progression '*'
+arithmetic-progression logical-relation
+arity number
 arm body-part
 armchair chair
 army military-service
 army-division association organization team
-arrangement-scheme '*'
+arrangement-scheme logical-relation
 arrow weapon
 article data-file essay news note
 articulation body-part
@@ -176,10 +177,10 @@ attachment artifact
 attack accomplishment act activity procedure volition
 attempt accomplishment act activity procedure volition
 attention attribute property
-attitude '*'
+attitude logical-relation
 attraction amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 attractive-force event
-attribute '*'
+attribute logical-relation
 audience perception
 audio indication
 auditor person populace
@@ -195,6 +196,7 @@ avenue development
 average quantity
 aviation leader transport
 avocation accomplishment act activity procedure volition
+axiom sentence
 axis component mechanism
 baby child
 backlog accomplishment act activity procedure volition
@@ -262,13 +264,13 @@ benefit-performance performing
 berry botanical-fruit
 bet exchange interaction transaction
 betrothal communication
-bias '*'
+bias logical-relation
 bible book
 bid communication
 bill cash currency
 bin device
 binomial quantity
-binomial-distribution '*'
+binomial-distribution logical-relation
 binomial-theorem signified
 biography data-file myth news note
 biology field-of-study
@@ -407,7 +409,7 @@ castle building
 casualty person populace
 cat mammal
 catch amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
-category '*'
+category logical-relation
 cattle livestock mammal
 cause accomplishment act activity procedure volition
 caution attribute property
@@ -525,7 +527,7 @@ colon body-part
 colony agent place
 color amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 column development
-column.group '*'
+column.group logical-relation
 combination event
 combinatorial-combination event
 comedy fiction folklore legend
@@ -639,8 +641,9 @@ cord fabric
 cordial-reception reaction.phenomenon
 core place
 corner place
+corollary thinking
 correction amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
-correlation '*'
+correlation logical-relation
 correlation-coefficient number
 correlational-analysis measure routine
 correspondence communication
@@ -666,7 +669,7 @@ courtesy amateur ambiance circumstance civilisation crowd custom danger expert f
 courtship accomplishment act activity procedure volition
 cousin attribute property
 couturier attribute property
-covariance '*'
+covariance logical-relation
 covariation amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 coverage communication
 crack-up attribute property
@@ -701,7 +704,7 @@ cry reaction.phenomenon
 crystal artifact
 cube shape
 cubicle room
-culture '*'
+culture logical-relation
 cupboard room
 curl hair
 currency contract-condition text
@@ -709,7 +712,7 @@ current event
 curtain fabric
 curve shape
 curved-shape curve
-curvilinear-correlation '*'
+curvilinear-correlation logical-relation
 curvilinear-regression vector
 cushion artifact
 custody accomplishment act activity procedure volition
@@ -955,7 +958,7 @@ escort attribute property
 esprit-de-corps inclination mentality range-of-a-function trait
 essay contract-condition text
 estimate calculation
-estimation '*'
+estimation logical-relation
 ethics field-of-study
 'euclid'"'"'s-axiom' signified
 euclidean-space mathematical-set subset
@@ -994,7 +997,7 @@ exploration accomplishment act activity information procedure volition
 explosion event
 exponential-equation signified
 exponential-expression signified
-exponential-series '*'
+exponential-series logical-relation
 exposure attribute property
 expression information
 expressway development
@@ -1072,7 +1075,7 @@ finish place
 fire development device
 fireman attribute property
 firm association organization team
-first-order-correlation '*'
+first-order-correlation logical-relation
 first-step accomplishment act activity procedure volition
 fish vertebrate
 fisherman trade
@@ -1128,7 +1131,7 @@ foundation association organization team
 foundation.relation amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 fountain device
 fox mammal
-fractal '*'
+fractal logical-relation
 fractal-geometry field-of-study
 fracture injury
 fragment universe
@@ -1142,14 +1145,14 @@ freedom normal
 freeze event
 frequency vector
 frequency-band collection
-frequency-distribution '*'
+frequency-distribution logical-relation
 friend attribute property
 friendship accomplishment act activity procedure volition
 frog amphibian
 fruit botanical-fruit
 fuel material substance
 fun accomplishment act activity procedure volition
-function '*'
+function logical-relation
 functioning event
 funeral conference meeting
 fungus organism species
@@ -1178,11 +1181,11 @@ geographic-pole place
 geography field-of-study
 geometric-construction calculation
 geometric-intersection '*'
-geometric-mean '*'
-geometric-progression '*'
+geometric-mean logical-relation
+geometric-progression logical-relation
 geometric-ray signified
-geometric-reflection '*'
-geometric-rotation '*'
+geometric-reflection logical-relation
+geometric-rotation logical-relation
 geometry field-of-study
 gesture motion reaction.phenomenon
 ghost self
@@ -1259,8 +1262,8 @@ ham meat
 hammer device
 hand cooperation
 handbag device
-harmonic-mean '*'
-harmonic-progression '*'
+harmonic-mean logical-relation
+harmonic-progression logical-relation
 harmony amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 harvest locating
 haste event
@@ -1431,7 +1434,7 @@ invariance attribute property
 invariant attribute property
 invasion visit
 invention event
-inverse-function '*'
+inverse-function logical-relation
 invertebrate animal body
 investigator person populace
 investment quantity
@@ -1441,7 +1444,7 @@ iron chemical-element
 island land yard
 isogon polygon
 isolation attribute property
-isometry '*'
+isometry logical-relation
 isotropy attribute property
 issue signified
 item remark
@@ -1475,8 +1478,8 @@ jury people school-class
 justice amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 justification thinking
 keep event
-kendall-partial-rank-correlation '*'
-kendall-test '*'
+kendall-partial-rank-correlation logical-relation
+kendall-test logical-relation
 kettle cooking-pan
 key device
 kick attribute property
@@ -1494,7 +1497,7 @@ knife device
 knight artifact
 knot event
 koran book
-kronecker-delta '*'
+kronecker-delta logical-relation
 lab development
 label indication
 labor accomplishment act activity procedure volition
@@ -1522,7 +1525,7 @@ law field-of-study
 lawn field
 lawsuit contest war
 layer place
-layout '*'
+layout logical-relation
 lead attribute property
 leader accomplishment act activity procedure volition
 leadership leader
@@ -1595,6 +1598,13 @@ locus mathematical-set subset
 log-cabin house
 logic field-of-study
 logic.cognition signified
+logical-completeness attribute property
+logical-consistency attribute property
+logical-negation sentence
+logical-operation accomplishment act activity procedure volition
+logical-predicate line-of-text
+logical-relation '*'
+logical-subject line-of-text
 look attribute property
 look-alike person populace
 looking-glass artifact
@@ -1666,8 +1676,8 @@ mathematical-field mathematical-set subset
 mathematical-group mathematical-set subset
 mathematical-integration calculation
 mathematical-operation calculation
-mathematical-relation '*'
-mathematical-set '*'
+mathematical-relation logical-relation
+mathematical-set logical-relation
 mathematical-space mathematical-set subset
 mathematical-statement information
 mathematics field-of-study
@@ -1684,14 +1694,14 @@ maximum quantity
 'maxwell'"'"'s-equations' information
 maze development
 mean number
-mean-deviation '*'
+mean-deviation logical-relation
 meaning signified
 means device
 measure signified
 measuring-stick device
 meat food material substance
 mechanism device
-median '*'
+median logical-relation
 medication material substance
 medicine field-of-study
 medium communication
@@ -1714,7 +1724,7 @@ metal chemical-element
 metamathematics field-of-study
 method measure routine
 methodology measure routine
-metric-function '*'
+metric-function logical-relation
 metric-space mathematical-set subset
 microorganism organism species
 microphone component mechanism
@@ -1745,7 +1755,7 @@ misgiving attribute property
 mist cloud
 mistake amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 mix combination
-mode '*'
+mode logical-relation
 model information
 module component mechanism
 mold fungus
@@ -1753,7 +1763,7 @@ mole mammal
 mole.attribute physical-object
 molecule compound
 mollusc invertebrate
-moment '*'
+moment logical-relation
 momentum vector
 monastery development
 money cash currency
@@ -1831,14 +1841,15 @@ node '*'
 noise event
 nomination communication
 non-euclidean-geometry field-of-study
+non-sequitur thinking
 nonagon shape
 nonparametric-statistic quantity
 nonpayment normal
 nonsense amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 norm normal
 normal attribute property
-normal-curve '*'
-normal-distribution '*'
+normal-curve logical-relation
+normal-distribution logical-relation
 nose organ
 note contract-condition text
 notebook artifact
@@ -1882,7 +1893,7 @@ onion botanical-fruit
 open-interval mathematical-set subset
 opera comedy dramatic-play
 operation therapy
-operator '*'
+operator logical-relation
 opinion signified
 opinion-poll search
 opportunity amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
@@ -1939,15 +1950,16 @@ parametric-statistic quantity
 parcel accomplishment act activity procedure volition
 pardon contract-condition text
 parent attribute property
-parity '*'
+parity logical-relation
 park land yard
 parking place
 parole communication
 paroxysm attribute property
 part '*'
-partial-correlation '*'
+partial-correlation logical-relation
 participant person populace
 particle chemical-element
+particular-proposition amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 partner attribute property
 partnership contract legal-document
 party coming-together
@@ -1971,7 +1983,7 @@ patio land yard
 patriot people school-class
 patriotism inclination mentality range-of-a-function trait
 patrol association organization team
-pattern '*'
+pattern logical-relation
 pause quantity
 pb chemical-element
 peak land yard
@@ -2059,7 +2071,7 @@ point shape
 point-of-view normal
 pointer information
 poison material substance
-poisson-distribution '*'
+poisson-distribution logical-relation
 pole artifact
 police association organization team
 policy contract-condition text
@@ -2081,6 +2093,7 @@ possibility accomplishment act activity information procedure volition
 post information
 postage information
 postcard indication
+postulate sentence
 pot plant
 potato plant
 potential attribute property
@@ -2100,7 +2113,7 @@ preciseness amateur ambiance circumstance civilisation crowd custom danger exper
 precondition signified
 predecessor attribute property
 predictor-variable quantity
-predilection '*'
+predilection logical-relation
 preference attribute property
 premise sentence
 premium quantity
@@ -2130,7 +2143,7 @@ privacy inclination mentality range-of-a-function trait
 privation amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 privilege amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 prize accomplishment act activity procedure volition
-probability '*'
+probability logical-relation
 probability-theory field-of-study
 probe search
 problem sentence
@@ -2158,7 +2171,7 @@ promotion locating
 promotional-material contract-condition text
 proof '*'
 propaganda communication
-property '*'
+property logical-relation
 proportion amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 proposal advice
 proposition sentence
@@ -2198,7 +2211,8 @@ quadrature calculation
 quadrilateral polygon
 quality amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 quantic signified
-quantity '*'
+quantifier word
+quantity logical-relation
 quarrel argument
 quarter land yard
 quarter.time quantity
@@ -2267,7 +2281,7 @@ reference contract-condition text
 reference-point amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 referral normal
 reflection information
-reflexivity '*'
+reflexive-relation logical-relation
 reform amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 refreshment amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 refuge amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
@@ -2279,7 +2293,7 @@ registration affirmation
 regression measure routine
 regression-analysis measure routine
 regression-coefficient vector
-regression-equation '*'
+regression-equation logical-relation
 regression-line vector
 regular-hexagon shape
 regular-polygon polygon
@@ -2291,7 +2305,7 @@ relationship accomplishment act activity procedure volition
 relative attribute property
 relaxation calculation
 release indication
-relevance '*'
+relevance logical-relation
 reliance amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 relief attribute property
 religion signified
@@ -2449,7 +2463,7 @@ search accomplishment act activity information procedure volition
 season quantity
 seat furniture
 seating-place place
-second-moment '*'
+second-moment logical-relation
 secrecy inclination mentality range-of-a-function trait
 secret amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 secret-plan plan
@@ -2472,10 +2486,10 @@ sense attribute property
 sense-of-touch attribute property
 sensitivity attribute property
 sentence line-of-text
-sentential-function '*'
+sentential-function logical-relation
 sentiment attribute property
 separation communication
-sequence '*'
+sequence logical-relation
 serial contract-condition text
 series contract-condition text
 series-expansion affirmation
@@ -2525,7 +2539,7 @@ sign-of-the-zodiac place
 signal information
 signature indication
 signboard component indication mechanism
-signified '*'
+signified logical-relation
 silence attribute property
 silk fabric
 silver chemical-element
@@ -2549,7 +2563,7 @@ skirt clothing fashion
 skull collection
 sky place
 slab artifact
-slant '*'
+slant logical-relation
 sleeve clothing fashion
 slice universe
 slide device
@@ -2614,7 +2628,7 @@ spray water
 spread food material substance
 spreadsheet code computer-program
 springtime quantity
-spurious-correlation '*'
+spurious-correlation logical-relation
 spy attribute property
 squad association organization team
 stable building
@@ -2630,7 +2644,7 @@ stalk body-part
 stall artifact
 stand-base artifact
 standard normal
-standard-deviation '*'
+standard-deviation logical-relation
 star celestial-body
 star-shape shape
 state signified
@@ -2638,7 +2652,7 @@ state-of-matter attribute property
 statement article
 station place
 statistic quantity
-statistical-correlation '*'
+statistical-correlation logical-relation
 statistical-distribution mathematical-set subset
 statistical-method measure routine
 statistical-population collection
@@ -2683,9 +2697,9 @@ sub-interval mathematical-set subset
 subgroup mathematical-set subset
 subject universe
 submission contract-condition text
-subpopulation '*'
+subpopulation logical-relation
 subscriber person populace
-subset '*'
+subset logical-relation
 subsister attribute property
 subspace mathematical-set subset
 substance universe
@@ -2724,7 +2738,7 @@ switch visit
 sword weapon
 syllable information
 symbol information
-sympathy '*'
+sympathy logical-relation
 symptom event
 syndrome event
 system collection
@@ -2775,7 +2789,7 @@ thinker self
 thinking accomplishment act activity information procedure volition
 thorax body-part
 thread artifact
-threshold-function '*'
+threshold-function logical-relation
 thriftlessness inclination mentality range-of-a-function trait
 throat body-part place
 throne chair
@@ -2837,9 +2851,9 @@ training-workshop acquired-knowledge education
 trait attribute property
 transaction accomplishment act activity procedure volition
 transaction-record contract-condition text
-transformation '*'
-transitivity '*'
-translation '*'
+transformation logical-relation
+transitive-relation logical-relation
+translation logical-relation
 transport visit
 transposition calculation
 trap device
@@ -2856,7 +2870,7 @@ tribulation amateur ambiance circumstance civilisation crowd custom danger exper
 tribunal government
 tribute indication
 trick accomplishment act activity procedure volition
-trigonometric-function '*'
+trigonometric-function logical-relation
 trigonometry field-of-study
 trophy information
 trouble amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
@@ -2884,6 +2898,7 @@ uniform clothing fashion
 union association organization team
 unit quantity
 unity amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
+universal-proposition component mechanism
 universal-set mathematical-set subset
 universe phenomenon
 university school
@@ -2900,7 +2915,7 @@ vacation accomplishment act activity procedure volition
 value quantity
 van device
 variable quantity
-variance '*'
+variance logical-relation
 variant organism species
 variation event
 vector quantity

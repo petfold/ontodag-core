@@ -453,3 +453,37 @@ flow-network	weighted-graph	accept
 graph-clique	complete-graph	accept			
 minimum-spanning-tree	weighted-graph	accept			
 tree-graph	acyclic-graph	accept			
+# --- mathematics wikidata batch 11 (logic 1): wikidata  ---
+boolean-function	function	accept			13783816
+completeness	function	reject	an attribute of a logical system is not a function	04785414	13783816
+logical-completeness	function	reject	same		13783816
+logical-connective	function	reject	an operator on propositions is filed as an operation		13783816
+logical-consistency	function	reject	same as completeness		13783816
+logical-predicate	mathematical-set	reject	everything-is-a-set		07999699
+predicate	mathematical-set	reject	same	06316813	07999699
+# --- mathematics batch 9 (logic): wordnet  ---
+bayes'-postulate	postulate	accept		05918704	06753299
+euclid's-axiom	axiom	accept		06005692	06753550
+logic-operation	process	reject	an operation, not a physical process (placed under mathematical-operation by ruling)	13509042	00029677
+negation	proposition	accept		06751572	06750804
+non-sequitur	hypothesis	reject	a conclusion, not a hypothesis	05781663	05888929
+postulate	proposition	accept		06753299	06750804
+postulation	declaration	reject	dropped as a near-duplicate of postulate	06733227	06725877
+predicate	language	reject	a part of a proposition, not a language	06316813	06282651
+premise	postulate	accept		06753800	06753299
+subject.communication	language	reject	same	06310125	06282651
+tautology	truth	accept		07091385	06724066
+universal	proposition	accept		06751367	06750804
+# --- mathematics wikidata batch 12: wikidata  ---
+logical-operation	function	reject	an operation on propositions (placed under mathematical-operation by ruling)	13509042	13783816
+# --- mathematics batch 10: wordnet  ---
+particular-proposition	proposition	accept		06751142	06750804
+# --- mathematics wikidata batch 13 (logic 2): wikidata  ---
+classical-logic	formal-system	accept			
+description-logic	formal-system	accept			
+modal-logic	formal-system	accept			
+propositional-logic	formal-system	accept			
+quantifier	logical-connective	reject	a quantifier binds variables; it is not a connective	06302542	
+satisfiability	decision-problem	accept			
+syllogism	classical-logic	reject	an argument form, not a logic		
+type-theory	formal-system	accept			

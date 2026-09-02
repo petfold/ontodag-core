@@ -236,3 +236,19 @@ the same tools (extract → align to the core hinge → consensus where a
 second source exists, review where not), each with its own golden root.
 The first should be chemistry from IUPAC: small, authoritative, and it
 proves the pattern before biology's tree of life tests its scale.
+
+
+## 8. Packs built so far (2026-09-03)
+
+| pack | concepts | sources | hinges in core |
+|---|---|---|---|
+| physics | 173 | WordNet physics/astronomy topics, the particle cone; 12 new unit heads under `linear-dimension` | particle, concept (physical-law, theory), natural-event (physical-phenomenon), event, place, attribute |
+| mathematics | ~480 | WordNet mathematics/statistics/geometry/logic topics and cones; **Wikidata** (bounded P279 pulls, `tools/fetch_wikidata.py`) for the skeleton: algebraic structures, number types, relations, sets, spaces, graph theory, mathematical logic | concept (mathematical-set, mathematical-relation, mathematical-structure, expression), cognition (statistic), event/procedure (mathematical-operation), shape, mathematics, number |
+
+Two lessons from the mathematics pack. **Wikidata's habit is the reverse of
+WordNet's**: WordNet files parts as kinds, Wikidata inherits by forgetting
+structure (a field is an abelian group, complex numbers are a totally ordered
+set); every such edge was rejected — a thing is filed as what it is. And
+**mathematics never takes an everyday word**: `mathematical-set`,
+`mathematical-group`, `mathematical-graph`, `graph-clique`, `logical-negation`.
+Rulings proposed for Peter sit in each pack's `align/review.tsv`.
