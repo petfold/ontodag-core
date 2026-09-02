@@ -19,6 +19,7 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 from graph import Graph, normalise
+from pack import Dirs, pack_arg
 
 ROOT = Path(__file__).resolve().parent.parent
 WN = ROOT / "sources/wordnet/dict"
@@ -49,7 +50,14 @@ def read_synsets():
         head, _, gloss = line.partition("|")
         f = head.split()
         nw = int(f[3], 16)
-        out[f[0]] = ([f[4 + 2 * i] for i in range(nw)], gloss.strip(), LEXNAMES.get(f[1], f[1]))
+        i = 4 + 2 * nw
+        npts = int(f[i]); i += 1
+        topics = []
+        for _ in range(npts):
+            sym, tgt, pos, _ = f[i:i + 4]; i += 4
+            if sym == ";c":                      # member of this TOPIC domain
+                topics.append(tgt)
+        out[f[0]] = ([f[4 + 2 * i] for i in range(nw)], gloss.strip(), LEXNAMES.get(f[1], f[1]), topics)
     return out
 
 
@@ -98,10 +106,10 @@ def read_sumo_mapping():
     return out
 
 
-def read_overrides():
+def read_overrides(d):
     """name -> {source: id}; also the set of names introduced by overrides."""
     ov = defaultdict(dict)
-    p = ROOT / "align/overrides.tsv"
+    p = d / "overrides.tsv"
     if p.exists():
         for row in csv.reader(open(p), delimiter="\t"):
             if not row or row[0].startswith("#") or len(row) < 3:
@@ -110,11 +118,11 @@ def read_overrides():
     return ov
 
 
-def read_names():
+def read_names(d):
     """offset -> chosen name (align/names.tsv: offset  name  note) — the hand-picked
     names for concepts whose word is taken by another sense."""
     out = {}
-    p = ROOT / "align/names.tsv"
+    p = d / "names.tsv"
     if p.exists():
         for row in csv.reader(open(p), delimiter="\t"):
             if row and not row[0].startswith("#") and len(row) >= 2 and row[1].strip():
@@ -122,10 +130,10 @@ def read_names():
     return out
 
 
-def read_drops():
+def read_drops(d):
     """Concepts left out of the pack on review (align/drop.tsv: offset-or-name  reason)."""
     out = set()
-    p = ROOT / "align/drop.tsv"
+    p = d / "drop.tsv"
     if p.exists():
         for row in csv.reader(open(p), delimiter="\t"):
             if row and not row[0].startswith("#"):
@@ -133,21 +141,52 @@ def read_drops():
     return out
 
 
+def read_sources(d, synsets, wn):
+    """packs/<name>/align/sources.tsv: `topic OFFSET` (nouns WordNet tags with
+    that domain), `cone OFFSET` (everything below it), `synset OFFSET`."""
+    offs = []
+    for row in csv.reader(open(d / "sources.tsv"), delimiter="\t"):
+        if not row or row[0].startswith("#"):
+            continue
+        kind, off = row[0].strip(), row[1].strip()
+        if kind == "topic":
+            offs += [o for o, v in synsets.items() if off in v[3]]
+        elif kind == "cone":
+            offs += [o for o in wn.nodes if off in wn.ancestors(o)]
+        elif kind == "synset":
+            offs.append(off)
+    seen, out = set(), []
+    for o in offs:
+        if o in synsets and o not in seen:
+            seen.add(o); out.append(o)
+    return out
+
+
 def main():
+    dirs = Dirs(pack_arg())
     synsets = read_synsets()
-    chosen = read_names()
-    drops = read_drops()
+    chosen = read_names(dirs.align)
+    drops = read_drops(dirs.align)
     sense_index = read_sense_index()
     sense1 = read_sense1()
     sumo_map = read_sumo_mapping()
-    overrides = read_overrides()
+    overrides = read_overrides(dirs.align)
     queue = []
+    base_rows = []
+    if dirs.pack:
+        # the pack builds on the core: its concepts come in unchanged (names and
+        # alignments are settled there) and only the pack's own candidates are named here
+        base_rows = list(csv.DictReader(open(dirs.base_concepts), delimiter="\t"))
 
     # --- concepts: core pack names first (their spelling is reviewed), then Core WordNet
     core = Graph.load(ROOT / "cache/core.pkl")
     concepts = {}            # name -> offset or None
     by_offset = {}           # offset -> name
-    for name in sorted(core.nodes):
+    for r in base_rows:                                   # pack mode: the core's concepts, fixed
+        concepts[r["name"]] = r["wordnet"] or None
+        if r["wordnet"]:
+            by_offset[r["wordnet"]] = r["name"]
+    for name in ([] if dirs.pack else sorted(core.nodes)):
         if name == "*":
             continue
         off = sense1.get(name.replace("-", "_"))
@@ -162,7 +201,11 @@ def main():
         else:
             by_offset[off] = name
         concepts[name] = off
-    candidates = [o for o in read_core_wordnet(sense_index) if o not in drops]
+    if dirs.pack:
+        wn = Graph.load(ROOT / "cache/wordnet.pkl")
+        candidates = [o for o in read_sources(dirs.align, synsets, wn) if o not in drops and o not in by_offset]
+    else:
+        candidates = [o for o in read_core_wordnet(sense_index) if o not in drops]
     # names.tsv may name a synset Core WordNet lacks (attribute, body part): it joins the candidates
     candidates += [o for o in chosen if o not in candidates and o in synsets and o not in drops]
     reserved = {normalise(synsets[o][0][0]) for o in candidates} | set(chosen.values())
@@ -201,7 +244,10 @@ def main():
     indexes = {s: g.label_index() for s, g in graphs.items()}
 
     rows = []
+    base_names = {r["name"] for r in base_rows}
     for name, off in sorted(concepts.items()):
+        if name in base_names:
+            r = next(r for r in base_rows if r["name"] == name); r["origin"] = "base"; rows.append(r); continue
         if "wordnet" in overrides.get(name, {}):          # an override moves the hub too
             off = overrides[name]["wordnet"] or None
             off = None if off == "-" else off
@@ -228,19 +274,20 @@ def main():
         for s, v in overrides.get(name, {}).items():
             row[s] = "" if v == "-" else v
         row["gloss"] = (synsets[off][1][:90] if off else "")
+        row["origin"] = dirs.pack or "core"
         rows.append(row)
 
-    cols = ["name", "wordnet", "sumo", "sumo_rel"] + list(LABEL_SOURCES) + ["gloss"]
-    with open(ROOT / "align/concepts.tsv", "w", newline="") as fh:
-        w = csv.DictWriter(fh, cols, delimiter="\t")
+    cols = ["name", "wordnet", "sumo", "sumo_rel"] + list(LABEL_SOURCES) + ["gloss", "origin"]
+    with open(dirs.concepts, "w", newline="") as fh:
+        w = csv.DictWriter(fh, cols, delimiter="\t", extrasaction="ignore")
         w.writeheader()
         w.writerows(rows)
-    with open(ROOT / "align/queue-align.tsv", "w", newline="") as fh:
+    with open(dirs.align / "queue-align.tsv", "w", newline="") as fh:
         w = csv.writer(fh, delimiter="\t")
         w.writerow(["name", "issue", "ids"])
         w.writerows(queue)
     cover = {s: sum(1 for r in rows if r[s]) for s in ["wordnet", "sumo"] + list(LABEL_SOURCES)}
-    print(f"{len(rows)} concepts; aligned:", ", ".join(f"{s} {n}" for s, n in cover.items()),
+    print(f"{len(rows)} concepts" + (f" ({sum(1 for r in rows if r.get('origin') != 'base')} new in pack {dirs.pack})" if dirs.pack else "") + "; aligned:", ", ".join(f"{s} {n}" for s, n in cover.items()),
           f"; {len(queue)} queued for review")
 
 

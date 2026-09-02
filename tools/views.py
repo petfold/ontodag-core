@@ -13,6 +13,7 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 from graph import Graph, dag_from_parents, write_od
+from pack import Dirs, pack_arg
 
 ROOT = Path(__file__).resolve().parent.parent
 GRAPHS = {"wordnet": "cache/wordnet.pkl", "sumo": "cache/sumo-mid.pkl",
@@ -22,7 +23,8 @@ GRAPHS = {"wordnet": "cache/wordnet.pkl", "sumo": "cache/sumo-mid.pkl",
 
 
 def main():
-    rows = list(csv.DictReader(open(ROOT / "align/concepts.tsv"), delimiter="\t"))
+    dirs = Dirs(pack_arg())
+    rows = list(csv.DictReader(open(dirs.concepts), delimiter="\t"))
     for source, pkl in GRAPHS.items():
         g = Graph.load(ROOT / pkl)
         if source == "claude":
@@ -49,14 +51,14 @@ def main():
                 above.update(rev.get(a, ()))
             above.discard(name)
             pairs[name] = sorted(above)
-        with open(ROOT / f"views/{source}.tsv", "w", newline="") as fh:
+        with open(dirs.views / f"{source}.tsv", "w", newline="") as fh:
             w = csv.writer(fh, delimiter="\t")
             for a, bs in sorted(pairs.items()):
                 for b in bs:
                     w.writerow([a, b])
         notes = []
         dag = dag_from_parents(pairs, on_cycle=lambda n, d: notes.append((n, d)))
-        write_od(dag, ROOT / f"views/{source}.od")
+        write_od(dag, dirs.views / f"{source}.od")
         n_pairs = sum(len(v) for v in pairs.values())
         print(f"{source:10s} {len(aligned):5d} concepts aligned, {n_pairs:6d} entailments"
               + (f", {len(notes)} cycles broken" if notes else ""))

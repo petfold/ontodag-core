@@ -9,18 +9,25 @@ with its status and witnesses) and build/queue.tsv (what a human should
 look at: single-witness edges, disputes, cycles, unplaced concepts).
 """
 import csv
+import shlex
 import sys
 from collections import defaultdict
 from pathlib import Path
 from graph import dag_from_parents, write_od, resolve_reviews
+from pack import Dirs, pack_arg
 
 ROOT = Path(__file__).resolve().parent.parent
 MIN_WITNESSES = 2
 
 
 def main():
+    dirs = Dirs(pack_arg())
+    origin = {r["name"]: r.get("origin", "core") for r in csv.DictReader(open(dirs.concepts), delimiter="\t")}
+    base = set()
+    if dirs.pack:            # the core is already decided: it is the placed ground the pack attaches to
+        base = {shlex.split(l)[0] for l in open(dirs.base_od) if not l.startswith("#")}
     for_, against = defaultdict(set), defaultdict(set)
-    for tsv in sorted((ROOT / "views").glob("*.tsv")):
+    for tsv in sorted(dirs.views.glob("*.tsv")):
         src = tsv.stem
         for a, b in csv.reader(open(tsv), delimiter="\t"):
             for_[(a, b)].add(src)
@@ -29,21 +36,24 @@ def main():
     # adds `claude` to the edge's witnesses (and its reversal to `against`),
     # a reject records a dissent that keeps the edge out of consensus.
     dissent = set()
-    for sub, sup, dec, _ in resolve_reviews(ROOT / "align/claude-review.tsv", ROOT / "align/concepts.tsv"):
+    for sub, sup, dec, _ in resolve_reviews(dirs.align / "claude-review.tsv", dirs.concepts):
         if dec == "accept":
             for_[(sub, sup)].add("claude")
             against[(sup, sub)].add("claude")
         elif dec == "reject":
             dissent.add((sub, sup))
     review = {}
-    for sub, sup, dec, _ in resolve_reviews(ROOT / "align/review.tsv", ROOT / "align/concepts.tsv"):
+    for sub, sup, dec, _ in resolve_reviews(dirs.align / "review.tsv", dirs.concepts):
         review[(sub, sup)] = dec
         if dec == "accept":
             for_[(sub, sup)].add("peter")      # a ruling is a witness too: an edge no source states can still enter
-    roots = {l.strip() for l in open(ROOT / "align/roots.txt") if l.strip() and not l.startswith("#")}
+    rp = dirs.align / "roots.txt"
+    roots = {l.strip() for l in open(rp) if l.strip() and not l.startswith("#")} if rp.exists() else set()
 
     status = {}
     for pair, w in for_.items():
+        if dirs.pack and pair[0] in base and pair[1] in base:
+            continue                                   # settled in the core
         r = review.get(pair)
         if r == "reject":
             status[pair] = "rejected"
@@ -64,7 +74,7 @@ def main():
             accepted[a].append(b)
 
     # concepts enter from the roots downward through accepted edges
-    placed = set(roots)
+    placed = set(roots) | base
     changed = True
     while changed:
         changed = False
@@ -72,9 +82,10 @@ def main():
             if a not in placed and any(b in placed for b in bs):
                 placed.add(a)
                 changed = True
-    parents = {n: [b for b in accepted.get(n, []) if b in placed] for n in placed}
+    own = placed - base if dirs.pack else placed
+    parents = {n: [b for b in accepted.get(n, []) if b in placed] for n in own}
     # edges asserted about names the pack does not define (align/extra-edges.tsv)
-    p = ROOT / "align/extra-edges.tsv"
+    p = dirs.align / "extra-edges.tsv"
     if p.exists():
         for row in csv.reader(open(p), delimiter="\t"):
             if row and not row[0].startswith("#") and len(row) >= 2:
@@ -83,16 +94,23 @@ def main():
                 parents.setdefault(sub, []).append(sup)
                 placed.update((sub, sup))
     cycles = []
+    if dirs.pack:
+        # base parents are outside the file: keep them as nodes so the .od names them
+        for n in list(parents):
+            for b in parents[n]:
+                parents.setdefault(b, [])
     dag = dag_from_parents(parents, on_cycle=lambda n, d: cycles.append((n, d)))
-    write_od(dag, ROOT / "build/core.od")
+    if dirs.pack:                           # drop the borrowed base nodes' own root edges from the count
+        pass
+    write_od(dag, dirs.pack_od)
 
-    with open(ROOT / "build/evidence.tsv", "w", newline="") as fh:
+    with open(dirs.build / "evidence.tsv", "w", newline="") as fh:
         w = csv.writer(fh, delimiter="\t")
         w.writerow(["sub", "sup", "status", "for", "against"])
         for (a, b), st in sorted(status.items()):
             w.writerow([a, b, st, " ".join(sorted(for_[(a, b)])), " ".join(sorted(against.get((a, b), ())))])
-    concepts = {r["name"] for r in csv.DictReader(open(ROOT / "align/concepts.tsv"), delimiter="\t")}
-    with open(ROOT / "build/queue.tsv", "w", newline="") as fh:
+    concepts = {r["name"] for r in csv.DictReader(open(dirs.concepts), delimiter="\t")} - base
+    with open(dirs.build / "queue.tsv", "w", newline="") as fh:
         w = csv.writer(fh, delimiter="\t")
         w.writerow(["kind", "sub", "sup", "detail"])
         for n, d in cycles:
@@ -109,7 +127,7 @@ def main():
     counts = defaultdict(int)
     for st in status.values():
         counts[st] += 1
-    print(f"pairs: {dict(counts)}; pack: {len(placed)} concepts, {len(dag.nodes) - 1} placed, "
+    print(f"pairs: {dict(counts)}; pack: {len(own)} concepts, "
           f"{len(cycles)} cycles, {len(concepts - placed)} unplaced")
 
 

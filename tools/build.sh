@@ -9,11 +9,10 @@ mkdir -p cache tops
 [ -f cache/opencyc.pkl ] || python3 tools/extract_opencyc.py cache/opencyc.pkl
 [ -f cache/sumo.pkl ]    || python3 tools/extract_sumo.py    cache/sumo.pkl Merge.kif
 [ -f cache/sumo-mid.pkl ]|| python3 tools/extract_sumo.py    cache/sumo-mid.pkl Merge.kif Mid-level-ontology.kif
-python3 tools/extract_core.py cache/core.pkl      # always fresh: it is the thing under review
+python3 tools/extract_core.py cache/core.pkl align/core-v1.od   # the FROZEN hand-written v1 is the common-sense witness; never the pack itself
 python3 tools/top.py cache/wordnet.pkl --depth 3 --min 300  --od tops/wordnet.od
 python3 tools/top.py cache/sumo.pkl    --depth 3 --min 1    --od tops/sumo.od
 python3 tools/top.py cache/opencyc.pkl --depth 2 --min 1500 --od tops/opencyc.od
-python3 tools/top.py cache/core.pkl    --depth 99 --min 0   --od tops/core.od
 [ -f cache/bfo.pkl ]       || python3 tools/extract_owl.py sources/bfo/bfo.owl BFO_0000001 cache/bfo.pkl
 [ -f cache/dolce.pkl ]     || python3 tools/extract_owl.py sources/dolce/DOLCE-Lite.owl particular cache/dolce.pkl
 [ -f cache/dul.pkl ]       || python3 tools/extract_owl.py sources/dolce/DUL.owl Entity cache/dul.pkl

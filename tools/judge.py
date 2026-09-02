@@ -7,6 +7,7 @@ import csv
 import subprocess
 import sys
 from pathlib import Path
+from pack import Dirs, pack_arg
 
 ROOT = Path(__file__).resolve().parent.parent
 ap = argparse.ArgumentParser()
@@ -15,9 +16,11 @@ ap.add_argument("--witness")
 ap.add_argument("--limit", type=int, default=100)
 ap.add_argument("--reject", help="file of `sub ⊑ sup: reason` lines (default stdin)")
 ap.add_argument("--label", default="")
+PACK = pack_arg()
 a = ap.parse_args()
+dirs = Dirs(PACK)
 
-cmd = [sys.executable, str(ROOT / "tools/review_batch.py"), "--limit", str(a.limit)]
+cmd = [sys.executable, str(ROOT / "tools/review_batch.py"), "--limit", str(a.limit)] + (["--pack", PACK] if PACK else [])
 if a.branch: cmd += ["--branch", a.branch]
 if a.witness: cmd += ["--witness", a.witness]
 batch = [l.split("  [")[0] for l in subprocess.run(cmd, capture_output=True, text=True).stdout.splitlines()
@@ -34,8 +37,8 @@ for line in (open(a.reject) if a.reject else sys.stdin):
 unknown = set(rejects) - set(pairs)
 if unknown:
     sys.exit(f"rejects not in this batch: {sorted(unknown)}")
-off = {r["name"]: r["wordnet"] for r in csv.DictReader(open(ROOT / "align/concepts.tsv"), delimiter="\t")}
-with open(ROOT / "align/claude-review.tsv", "a", newline="") as fh:
+off = {r["name"]: r["wordnet"] for r in csv.DictReader(open(dirs.concepts), delimiter="\t")}
+with open(dirs.align / "claude-review.tsv", "a", newline="") as fh:
     w = csv.writer(fh, delimiter="\t", lineterminator="\n")
     fh.write(f"# --- {a.label or 'batch'}: {a.witness or 'any'} {a.branch or ''} ---\n")
     for p in pairs:
