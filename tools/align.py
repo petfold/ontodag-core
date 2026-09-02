@@ -163,6 +163,8 @@ def main():
             by_offset[off] = name
         concepts[name] = off
     candidates = [o for o in read_core_wordnet(sense_index) if o not in drops]
+    # names.tsv may name a synset Core WordNet lacks (attribute, body part): it joins the candidates
+    candidates += [o for o in chosen if o not in candidates and o in synsets and o not in drops]
     reserved = {normalise(synsets[o][0][0]) for o in candidates} | set(chosen.values())
     for off in candidates:
         if off in by_offset:

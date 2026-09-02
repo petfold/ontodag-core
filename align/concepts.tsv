@@ -184,6 +184,7 @@ attention	05650579	PsychologicalAttribute	+			Mx4rf3--8LctEdmFRAACs6hRjg				"the
 attitude	06193203	PropositionalAttitude	+							a complex mental state involving beliefs and feelings and values and dispositions to act i
 attraction	04688246	SubjectiveAssessmentAttribute	+							"the quality of arousing interest; being attractive or something that attracts; ""her person"
 attractive-force	11426530	Process	+							the force by which one object attracts another
+attribute	00024264	Attribute	=			Mx4rqs8mVL8bEdmAAAACs6hRjg				an abstraction belonging to or characteristic of an entity
 auction	00092366	Auctioning	=			Mx4rvotkAJwpEbGdrcN5Y29ycA				the public sale of something to the highest bidder
 audience	08221897	Perception	+	schema:Audience						"a gathering of spectators or listeners at a (usually public) performance; ""the audience ap"
 audio	04262678	AudioRecording	=							a recording of acoustic signals
@@ -313,6 +314,7 @@ board-of-directors	08322981	OrganizationalBoard	=		Board_of_directors	Mx4rvVkI1Z
 boat	02858304	WaterVehicle	=		Boat	Mx4rIDj6hi6jEdqAAAACs71DGQ				a small vessel for travel on water
 body	05216365	Animal	=							"the entire structure of an organism (an animal, plant, or human being); ""he felt as if his"
 body-of-water	09225146	WaterArea	=	schema:BodyOfWater	BodyOfWater	Mx4rvViE_JwpEbGdrcN5Y29ycA				"the part of the earth's surface covered with water (such as a river or lake or ocean); ""th"
+body-part	05220461	BodyPart	=			Mx4rvViAHJwpEbGdrcN5Y29ycA				any part of an organism such as an organ or extremity
 boldness	04838210	TraitAttribute	+							"impudent aggressiveness; ""I couldn't believe her boldness""; ""he had the effrontery to ques"
 bolt	02865665	Bolt	=			Mx4rvVjxrJwpEbGdrcN5Y29ycA				a screw that screws into a nut to form a fastener
 bomb	02866578	Bomb	+		Bomb	Mx4rwQriRZwpEbGdrcN5Y29ycA				an explosive device fused to explode under specific conditions
@@ -673,6 +675,7 @@ consolation	01211667	Helping	+							"the act of consoling; giving relief in aff
 conspiracy	05908882	Plan	+		Conspiracy					a plot to carry out some harmful or illegal act (especially a political plot)
 constellation	09252970	AstronomicalBody	+		Constellation	Mx4rwPuslJwpEbGdrcN5Y29ycA				a configuration of stars as seen from the earth
 constituency	08238156	Group	+							the body of voters who elect a representative for their area
+constituent-state	08654360	StateOrProvince	=							"the territory occupied by one of the constituent administrative districts of a nation; ""hi"
 constitution	04933544	Attribute	+		Constitution					the way in which someone or something is composed
 constraint	13998781	NormativeAttribute	+							"the state of being physically constrained; ""dogs should be kept under restraint"""
 consultation	07143137	Meeting	+							"a conference between two or more people to consider a particular question; ""frequent consu"
@@ -1173,7 +1176,7 @@ feature.cognition	05849789	Attribute	+							"a prominent attribute or aspect of
 federal-agent	10373801	Government	@							any agent or representative of a federal agency or bureau
 fee	13320168	ChargingAFee	=		Fee					a fixed charge for a privilege or for professional services
 feedback	06746471	Stating	+			Mx4rvViyOJwpEbGdrcN5Y29ycA				response to an inquiry or experiment
-feeling	05707718	PsychologicalProcess	+		Feeling					"an intuitive understanding of something; ""he had a great feeling for music"""
+feeling	00026192	PsychologicalAttribute	+		Feeling					"the experiencing of affective and emotional states; ""she had a feeling of euphoria""; ""he h"
 female-child	10084295	Girl	=							"a youthful female person; ""the baby was a girl""; ""the girls were just learning to ride a t"
 feminist	10084635	BeliefGroup	+			Mx8Ngh4rwBtg95wpEbGdrcN5Y29ycB4rvkshiJwpEbGdrcN5Y29ycA				a supporter of feminism
 fence	03327234	Fence	=		Fence	Mx4rvgEVapwpEbGdrcN5Y29ycA				a barrier that serves to enclose an area
@@ -1709,6 +1712,7 @@ legal-action	01181902	LegalAction	=							a judicial proceeding brought by one p
 legal-age	15152062	TimeInterval	+							the age at which persons are considered competent to manage their own affairs
 legal-document	06479665	Contract	=							(law) a document that states some contractual relationship or grants some right
 legal-power	05198427	NormativeAttribute	+							"(law) the right and power to interpret and apply the law; ""courts having jurisdiction in t"
+legal-procedure	01023636	Procedure	+							a mode of conducting legal and parliamentary proceedings
 legal-profession	08112402	SocialRole	+		Legal_profession					"the body of individuals qualified to practice law in a particular jurisdiction; ""he was ad"
 legend	06371413	FictionalText	=		Legend	Mx4rv2bzqJwpEbGdrcN5Y29ycA				a story about mythical or supernatural beings or events
 legend-key	06492188	Text	+							a list of words or phrases that explain symbols or abbreviations
@@ -2277,7 +2281,7 @@ porter	10455447	Porter	=			Mx4rvViM6JwpEbGdrcN5Y29ycA				a person employed to ca
 portrait	03987079	Icon	+		Portrait	Mx4rwQBcZ5wpEbGdrcN5Y29ycA				"any likeness of a person, in any medium; ""the photographer made excellent portraits"""
 poser	10324560	ModellingPosition	+							"a person who poses for a photographer or painter or sculptor; ""the president didn't have t"
 position	06196284	Proposition	+							a rationalized mental attitude
-possession	00809465	RelationalAttribute	+							the act of having and controlling property
+possession	00032613	Entity	+							anything owned or possessed
 possibility	05792010	Selecting	+							"a possible alternative; ""bankruptcy is always a possibility"""
 post	07257815	Icon	+							"a pole or stake set up to mark something (as the start or end of a race track); ""a pair of"
 postage	06796119	Icon	+			Mx4rviP5YpwpEbGdrcN5Y29ycA				a small adhesive token stuck on a letter or package to indicate that that postal fees have
@@ -2342,8 +2346,8 @@ probability	05091770	ProbabilityRelation	=							a measure of how likely it is t
 probability.attribute	04756172	ProbabilityRelation	+							"the quality of being probable; a probable event or the most probable event; ""for a while m"
 probe	05800611	Investigating	+							"an inquiry into unfamiliar or questionable activities; ""there was a congressional probe in"
 problem	06784003	Question	=		Problem					"a question raised for consideration or solution; ""our homework consisted of ten problems t"
-procedure	01023636	Procedure	+							a mode of conducting legal and parliamentary proceedings
-process	01023820	IntentionalProcess	=				BFO_0000015	process	Process	"a particular course of action intended to achieve a result; ""the procedure of obtaining a "
+procedure	01023820	IntentionalProcess	=							"a particular course of action intended to achieve a result; ""the procedure of obtaining a "
+process	00029677	Process	+				BFO_0000015	process	Process	"a sustained phenomenon or one marked by gradual changes through a series of states; ""event"
 produce	07705711	GroceryProduce	=			Mx4rvXnStpwpEbGdrcN5Y29ycA				fresh fruits and vegetable grown for the market
 producer	10480018	Human	+							someone who finds financing for and supervises the making and presentation of a show (play
 product	05859630	MultiplicationFn	+	schema:Product	Product	Mx4rvf-bUJwpEbGdrcN5Y29ycA				"a quantity obtained by multiplication; ""the product of 2 and 3 is 6"""
@@ -2883,7 +2887,7 @@ stall	04299215	Artifact	+							a booth where articles are displayed for sale
 standard	07260623	NormativeAttribute	+							"a basis for comparison; a reference point against which other things can be evaluated; ""th"
 star	09444783	Star	+		Star					any celestial body visible (as a point of light) from the Earth at night
 star.shape	13881644	ShapeAttribute	+							a plane figure with 5 or more points; often used as an emblem
-state	08654360	StateOrProvince	=	schema:State	State	Mx4rvVjnqJwpEbGdrcN5Y29ycA		state		"the territory occupied by one of the constituent administrative districts of a nation; ""hi"
+state	00024720	Proposition	+	schema:State	State	Mx4rvVjnqJwpEbGdrcN5Y29ycA		state		"the way something is with respect to its main attributes; ""the current state of knowledge"""
 state-of-matter	14479615	PhysicalState	=			Mx4rvViRCJwpEbGdrcN5Y29ycA				(chemistry) the three traditional states of matter are solids (fixed shape and volume) and
 statement	06516595	FinancialText	+	schema:Statement		Mx4rvWIKZpwpEbGdrcN5Y29ycA				a document showing credits and debits
 station	08624385	GeographicArea	+							"the position where someone (as a guard or sentry) stands or is assigned to stand; ""a soldi"
