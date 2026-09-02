@@ -50,8 +50,32 @@ def main():
     rp = dirs.align / "roots.txt"
     roots = {l.strip() for l in open(rp) if l.strip() and not l.startswith("#")} if rp.exists() else set()
 
+    # A published version is sticky: every edge it entails stays accepted whatever a
+    # new witness says (a rename or retraction never propagates by merge, so the
+    # tool must not pretend otherwise); contradictions go to the queue for a ruling.
+    published = set()
+    pub = dirs.align / "published"
+    if pub.exists():
+        for od in pub.glob("*.od"):
+            ppar = {}
+            for l in open(od):
+                if not l.startswith("#"):
+                    f = shlex.split(l); ppar[f[0]] = [x for x in f[1:] if x != "*"]
+            for a in ppar:
+                seen, st = set(), list(ppar[a])
+                while st:
+                    x = st.pop()
+                    if x in seen: continue
+                    seen.add(x); st.extend(ppar.get(x, []))
+                published.update((a, b) for b in seen)
+    contradicted = []
     status = {}
     for pair, w in for_.items():
+        if pair in published and review.get(pair) != "reject":
+            status[pair] = "accepted"
+            if against.get(pair):
+                contradicted.append((pair, against[pair]))
+            continue
         if dirs.pack and origin.get(pair[0]) == "base" and origin.get(pair[1]) == "base":
             continue                                   # the core's business, decided (or left) there
         r = review.get(pair)
@@ -115,6 +139,8 @@ def main():
         w.writerow(["kind", "sub", "sup", "detail"])
         for n, d in cycles:
             w.writerow(["cycle", n, " ".join(d), "edges inside a cycle of accepted claims; dropped"])
+        for (a, b), ag in sorted(contradicted):
+            w.writerow(["contradicted-published", a, b, f"published edge; now reversed by {' '.join(sorted(ag))} — needs a ruling"])
         for (a, b), st in sorted(status.items()):
             if st == "disputed":
                 w.writerow(["disputed", a, b, f"for {' '.join(sorted(for_[(a, b)]))}; reversed by {' '.join(sorted(against[(a, b)]))}"])

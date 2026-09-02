@@ -106,6 +106,23 @@ def read_sumo_mapping():
     return out
 
 
+def read_wikidata_map():
+    """WordNet 3.0 noun offset -> QID, through Wikidata's P8814 (3.1 ids) and the
+    3.1->3.0 sense-key bridge.  Exact, so it beats label matching."""
+    import json
+    try:
+        d = json.load(open(ROOT / "sources/wikidata/core.json"))
+        m31 = json.load(open(ROOT / "sources/wordnet31/noun31to30.json"))
+    except FileNotFoundError:
+        return {}
+    out = {}
+    for q, ids in d.get("wordnet31", {}).items():
+        for w in ids:
+            if w.endswith("-n") and w[:-2] in m31:
+                out.setdefault(m31[w[:-2]], q)
+    return out
+
+
 def read_overrides(d):
     """name -> {source: id}; also the set of names introduced by overrides."""
     ov = defaultdict(dict)
@@ -170,6 +187,7 @@ def main():
     sense_index = read_sense_index()
     sense1 = read_sense1()
     sumo_map = read_sumo_mapping()
+    wd_map = read_wikidata_map()
     overrides = read_overrides(dirs.align)
     queue = []
     base_rows = []
@@ -266,6 +284,9 @@ def main():
         if off and off in sumo_map:
             row["sumo"], row["sumo_rel"] = sumo_map[off]
         for s in LABEL_SOURCES:
+            if s == "wikidata" and off and off in wd_map and wd_map[off] in graphs[s].nodes:
+                row[s] = wd_map[off]                       # exact, by synset id
+                continue
             hits = sorted({i for k in keys for i in indexes[s].get(k, [])})
             if len(hits) == 1:
                 row[s] = hits[0]
