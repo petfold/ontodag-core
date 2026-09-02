@@ -38,7 +38,7 @@ agent.person.2 official
 aggression act
 aid.act activity
 air substance
-aircraft device vehicle
+aircraft vehicle
 airline business
 airplane aircraft
 airport place
@@ -70,7 +70,7 @@ apparel clothing
 appendix.communication information
 appliance device
 applicant person
-application software
+application program.communication
 application.act activity
 application.communication request
 appointment information occupation
@@ -87,7 +87,7 @@ armchair chair
 army military-service
 arrow projectile
 arrow.communication symbol
-article information physical-object
+article document physical-object
 artifact physical-object
 artist person
 ash substance
@@ -151,7 +151,7 @@ bathroom room
 bathtub device vessel
 battery assault
 battery.artifact device
-battle act
+battle military-action
 battlefield region.location
 battlefront place
 bay body-of-water
@@ -174,7 +174,7 @@ berry fruit
 bet activity
 betrothal promise
 bible artifact information
-bicycle vehicle
+bicycle land-vehicle
 bill currency
 bin container
 biography history.communication
@@ -198,13 +198,13 @@ board.group committee
 board.substance lumber
 boat watercraft
 body natural-object
-body-of-water place
+body-of-water natural-object place
 body.body natural-object
 bolt screw
 bomb weapon
 bomber airplane
 bomber.person person
-book information publication
+book document publication
 book.artifact artifact
 booklet book
 boot clothing
@@ -346,7 +346,7 @@ cinema building
 circular ad
 citation note.communication
 citizen person
-city district
+city district settlement
 civilian citizen
 claim activity information
 claim.communication assertion
@@ -372,7 +372,7 @@ coffin box
 coin cash information
 coincidence accident
 collar artifact
-collection information
+collection group information
 college institution
 colon.communication symbol
 colony region.location
@@ -520,7 +520,7 @@ destruction ending
 detector device
 device artifact
 diagnosis act
-diagram drawing.artifact information
+diagram drawing.artifact image
 dialect language
 dialogue information
 dialogue.communication talk
@@ -564,7 +564,7 @@ double.person.2 person
 draft text
 drain artifact
 drawer container device
-drawing information
+drawing image
 drawing.artifact artifact
 dressing artifact
 drill training
@@ -672,7 +672,7 @@ fight act
 file tool
 file.artifact furniture
 file.communication indication
-film information physical-object
+film video
 film.artifact.2 artifact
 film.communication artifact
 filter device
@@ -717,7 +717,7 @@ fraud activity
 freckle physical-object
 freeze pause.act
 frog amphibian
-fruit fruit.plant substance
+fruit food fruit.plant
 fruit.plant natural-object
 fuel substance
 fun activity
@@ -793,7 +793,7 @@ hat clothing
 hay food
 hayfield region.location
 head-covering clothing
-headline line.communication text
+headline line.communication
 headquarters office
 heating-system artifact
 hedge fence
@@ -860,7 +860,7 @@ integration act
 intelligence.group organization
 intention act
 interaction act
-interface code
+interface program.communication
 interview act
 introduction event information
 introduction.communication textbook
@@ -872,7 +872,7 @@ investigator expert
 invitation act information
 invoice statement
 iron metal
-island land landform physical-object
+island land landform
 issue.act act
 jacket coat
 jam food
@@ -884,7 +884,7 @@ job activity
 job.artifact workplace
 joint artifact
 journal information publication
-journey act
+journey activity
 judge official
 judgment act information
 judgment.act act
@@ -915,7 +915,7 @@ lamb sheep
 lamp device furniture
 land place
 land-vehicle vehicle
-landform place
+landform natural-object place
 landscape place
 lane artifact
 language information
@@ -944,7 +944,7 @@ legislation act information
 leisure act
 lemon artifact
 lesson teaching
-letter physical-object text
+letter message physical-object text
 letter.communication character
 library building organization
 license legal-document
@@ -955,9 +955,9 @@ light-bulb device
 lighter device
 lily plant
 limit region
-line.communication information
+line.communication text
 linen artifact
-linguistics science
+linguistics humanities science
 link device
 lion mammal
 liquid substance
@@ -994,7 +994,7 @@ man adult human
 management act
 manual book
 manuscript information
-map information
+map document image
 marathon race
 marble ball
 march act
@@ -1025,7 +1025,7 @@ mental-hospital hospital
 menu list
 menu.communication list
 merchandise commodity
-message information
+message document
 metal chemical-element material
 microorganism organism
 microphone device
@@ -1059,7 +1059,7 @@ motif design.artifact
 motion event
 motorcycle container vehicle
 motto saying
-mountain landform physical-object
+mountain landform
 mouse mammal
 move act
 move.act activity
@@ -1069,12 +1069,12 @@ murder act
 museum facility place
 mushroom fungus
 music information
-music-recording information
+music-recording audio
 musical-composition information
 musical-instrument device
 musician artist
 mutation change
-myth information
+myth fiction
 nail device
 narrative information
 natural-event event
@@ -1094,7 +1094,7 @@ news.communication information
 newspaper information series
 noise event
 nomination act information
-note indication
+note document indication
 note.communication information
 note.communication.2 artifact letter
 note.communication.3 information
@@ -1212,7 +1212,7 @@ philosophy humanities
 phone device equipment
 phone-call communication
 phone-number information
-photograph information physical-object
+photograph image physical-object
 photographer artist
 photography activity
 physical-object '*'
@@ -1246,7 +1246,7 @@ plaything artifact
 plot region.location
 plot.communication.2 information
 pocket container
-podcast information
+podcast audio
 poem information
 poetry information
 poison substance
@@ -1280,7 +1280,7 @@ premise proposition
 prescription information
 prescription-drug drug
 present event
-presentation information
+presentation document
 presentation.communication act
 presentation.communication.2 information
 press machine
@@ -1302,6 +1302,7 @@ professor adult
 profile information
 prognosis information
 program information
+program.communication software
 projectile weapon
 promise act information
 promotion act
@@ -1428,7 +1429,7 @@ ritual activity
 river stream
 road place
 robbery larceny
-rocket device vehicle
+rocket vehicle
 role activity
 roll.communication list
 roof artifact
@@ -1557,7 +1558,7 @@ sock clothing
 sodium metal
 sofa seat.artifact
 software code
-software-library collection
+software-library collection software
 soil material
 soldier worker
 solicitation request
@@ -1566,7 +1567,7 @@ solution.substance substance
 soup dish.food
 space character
 space.shape place
-spacecraft device vehicle
+spacecraft vehicle
 spectacles instrument
 spectator perceiver
 speech information
@@ -1579,7 +1580,7 @@ spoon container device
 sport activity
 spray substance
 spread food
-spreadsheet code
+spreadsheet document program.communication
 squad military-unit
 stable building
 stadium structure
@@ -1613,7 +1614,7 @@ stove artifact
 strap device
 straw artifact
 stream body-of-water
-street artifact place
+street artifact road
 streetcar vehicle
 strike protest
 strike.act attack
@@ -1685,7 +1686,7 @@ timetable schedule
 tin metal
 tip.location region
 tire hoop
-title.communication line.communication text
+title.communication line.communication
 token symbol
 tool device
 tooth structure
@@ -1700,11 +1701,11 @@ tourist person
 tournament contest
 towel device
 tower structure
-town district
+town district settlement
 trace indication
 tract information
 traffic commerce
-traffic.group collection group
+traffic.group collection
 tragedy information
 train-ticket artifact ticket
 training activity
@@ -1740,10 +1741,10 @@ university school
 university.group group
 urine waste
 vacation event
-van container device truck
+van container truck
 variation change
-vegetable substance
-vehicle artifact
+vegetable food
+vehicle machine
 vein vessel
 velvet fabric
 venue region.location
@@ -1758,12 +1759,12 @@ victim human
 victory ending success
 video information recording
 villa house
-village community place
+village community settlement
 villager inhabitant
 violence aggression
 virgin person
 virus agent microorganism
-virus.communication code
+virus.communication program.communication
 visit meeting.act
 visitor person
 vitamin substance
@@ -1787,12 +1788,12 @@ waste material
 watch clock
 water compound liquid
 water-faucet fixture mechanism
-watercraft device vehicle
+watercraft vehicle
 waterfall body-of-water landform
 wave event
 weapon instrument
 weather natural-event
-web-page information
+web-page document
 web-site information
 wedding ceremony
 weed plant
@@ -1828,7 +1829,7 @@ workshop place
 workshop.act course.act
 world-power country
 worm invertebrate
-worm.communication code
+worm.communication program.communication
 wrongdoer person
 yacht boat
 yard place
