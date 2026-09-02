@@ -89,3 +89,8 @@ natural-event	wordnet	11408559	# natural phenomenon — core's natural-event is 
 nonprofit	wordnet	-	# WordNet files nonprofit under noun.act and SUMO maps it +Managing: an organization became an event
 human-body	sumo	-	# SUMO's mapping sends the body synset to Human; produced a body ⊑ organism dispute
 region	wordnet	08630985	# the large-indefinite-location synset (475 below) rather than 'extended spatial location of something'
+# state (the condition) must not borrow schema.org/YAGO State, which is the territory
+state	schemaorg	-
+state	yago	-
+constituent-state	schemaorg	schema:State
+constituent-state	yago	State

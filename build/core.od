@@ -4,6 +4,7 @@ abdomen body-part
 ability attribute
 abortion act
 absence event
+absorption process
 abuse information
 academic-degree information
 academy school structure
@@ -16,36 +17,39 @@ ace expert
 acid compound
 acknowledgment situation
 acquaintance.person person
-acquisition event
+acquaintanceship state
+acquisition event possession
 act event
 act-of-play information
 action event
-activeness attribute
+activeness trait
 activity act
 actor performer
 ad promotional-material
 adaptation information
-addiction attribute
+addiction condition.state
 addition component
 address place
-adeptness attribute
+adeptness state
 administrative-division organization
 administrator chief
 administrator.person chief
-admiration attribute
+admiration feeling
 admission event information
 admonition advice
 adolescent person
 adoption activity
 adult person
-advantage attribute
+advance possession
+advantage benefit
 adventure undertaking
 adversary person
-adversity attribute
+adversity destiny
 advice information
 adviser authority
 advocate person
-affinity attribute
+affiliation state
+affinity attraction
 affirmation act
 age attribute
 agency organization
@@ -53,9 +57,10 @@ agenda list
 agent '*'
 agent.person representative
 aggression act
-agony attribute
+agony suffering
+agreement state
 aid gift
-aids illness
+aids disease
 air fluid
 aircraft vehicle
 aircraft-wing device
@@ -67,14 +72,16 @@ alarm device
 alarm-clock clock
 album book-copy
 alcohol drink
+allotment possession
+allowance possession
 ally country
-aloofness attribute
+aloofness feeling
 altar structure
 aluminum metal
 amateur person
-ambiance attribute
+ambiance condition.state
 ambiguity attribute
-ambition attribute
+ambition drive.attribute
 ambulance car container
 amendment event information
 amphetamine drug
@@ -87,20 +94,22 @@ anger emotion
 angle attribute
 animal organism
 animal-pack group
-ankle body-part
+ankle articulation
 annex addition
 annotation information
 announcement information
 answer act information
 ant insect
 anteroom room
-anticipation attribute
+anticipation feeling
+anticipation.state condition.state
+anxiety condition.state
 apartment housing place
-apathy attribute
+apathy feeling
 apology information
 apparatus equipment
 apparel clothing
-appeal attribute
+appeal appearance
 appearance attribute
 appendix body-part
 appetite attribute
@@ -117,7 +126,8 @@ arch entrance
 architect person
 architecture field-of-study
 archive facility
-ardor attribute
+ardor passion
+area magnitude
 arena region
 argument information
 argumentation thinking
@@ -133,11 +143,14 @@ artifact physical-object
 artist person
 artistic-creation creation
 ash substance
+ash-grey attribute
 aspiration attribute
 assault crime
 assembly-hall room
 assertion declaration
+asset attribute
 assignment undertaking
+assimilation process
 assist activity
 assistant human worker
 association organization
@@ -162,17 +175,20 @@ authority expert
 authority.person person
 automaton mechanism
 automobile-horn alarm
-autonomy attribute
+autonomy freedom
 avant-garde movement
 avenue street
 avocation pastime
 axis mechanism
 baby child
 baby-buggy vehicle
+background attribute
 bacon meat
 bacterium microorganism
 bag container
+bail-bond possession
 balance attribute
+balance.state equilibrium
 balcony structure
 ball equipment
 ballet activity show
@@ -185,7 +201,7 @@ bang noise
 bank slope
 bank-check legal-document
 bankruptcy act
-bankruptcy.state attribute
+bankruptcy.state condition.state
 banner flag
 banquet event
 bar artifact
@@ -196,6 +212,8 @@ barrel.shape attribute
 barroom room
 barter commerce exchange
 base support-device
+base.artifact underside
+base.shape attribute
 baseball game sport
 basement storey
 basket container device
@@ -214,13 +232,14 @@ beam piece support-device
 bean vegetable
 bear mammal
 beard hair
-bearing trait
+bearing manner
 bed furniture
 bedroom room
 bee insect
 beef meat
 beer alcohol
 behavior activity
+belongings possession
 beloved person
 belt clothing
 bench seat
@@ -253,13 +272,14 @@ block region
 blood substance
 bloodshed event
 blow motion
+blue attribute
 board artifact
 board-of-directors committee
 boat watercraft
 body natural-object
 body-of-water natural-object place
 body-part physical-object
-boldness trait
+boldness drive.attribute
 bolt screw
 bomb weapon
 bomber airplane
@@ -269,7 +289,7 @@ book-appendix information
 book-copy artifact
 book-index list
 booklet book
-boom attribute
+boom prosperity
 boot clothing
 booth room
 botanical-fruit natural-object
@@ -302,7 +322,7 @@ broccoli vegetable
 bronze sculpture
 brother relative
 brother.person monk
-brow body-part
+brow feature
 brush device
 bucket device vessel
 buffet meal
@@ -335,20 +355,23 @@ cadaver dead-body
 cafe restaurant
 cage device structure
 cake substance
+calamity trouble.event
 calculation thinking
-calf animal
+calf young
 call visit
 calling-card greeting
 camera device equipment
 campaign military-operation
 campaigner politician
 can container
+cancer disease
 candle device
 cane device stick
 canvas fabric
 cap clothing
 capital character
 capital-city central-area city
+capital.possession possession
 caprice attribute
 captain worker
 caption section-title
@@ -374,7 +397,7 @@ castle structure
 casualty victim
 cat mammal
 catalog book
-catch attribute
+catch disadvantage
 cathedral church
 cattle mammal
 cause undertaking
@@ -402,7 +425,7 @@ chair seat
 chairman leader
 chalk artifact
 challenge act
-challenge.state attribute
+challenge.state situation
 champagne wine
 champion person
 championship event status
@@ -410,10 +433,10 @@ chance-event event
 change event
 change.possession cash
 channel artifact
-chaos attribute
+chaos state
 chapter information
 character symbol
-character.state status
+character.state honour
 characteristic attribute
 charge act
 charitable-organization institution
@@ -430,17 +453,17 @@ cheek body-part
 cheese dairy-product
 chemical material
 chemical-element substance
-chemical-reaction event
+chemical-reaction process
 chemical-solution substance
 chemistry natural-science
 cherry fruit
 chest-of-drawers furniture
 chicken bird
 chief leader
-child person
+child offspring
 child-adoption act
 chimney device
-chin body-part
+chin feature
 chip device
 chit invoice
 chocolate substance
@@ -450,6 +473,7 @@ church building
 chute artifact
 cigarette device
 cinema building
+circle attribute
 circular ad
 circulation natural-event
 citation annotation
@@ -466,7 +490,7 @@ clay soil
 clemency event
 clerk employee
 cliff physical-object
-climate attribute
+climate condition.state
 clinic institution
 clipping artifact excerpt
 clique group
@@ -487,23 +511,24 @@ coffee drink
 coffin box
 coin cash information
 coincidence chance-event
-cold attribute
+cold disease
 collapse event
 collar artifact
 colleague peer
 collection group information
 college institution
-colon body-part
+colon intestine
 colony region
-color attribute
+color appearance
 column support-device
+coma condition.state
 combination collection
 comedy information
 comet natural-object
-comfort attribute
+comfort condition.state
 comic-strip cartoon
 coming-together act
-command attribute
+command state
 commemoration recognition
 commerce transaction
 commercial-enterprise commerce
@@ -519,10 +544,10 @@ company institution
 comparison event
 compartment empty-space
 compassion attribute
-competence attribute
+competence ability
 competition act
 competition-jury committee
-complication attribute
+complication situation
 component device
 composer musician
 composition essay
@@ -536,46 +561,54 @@ computer-science formal-science
 computer-virus computer-program
 computer-worm computer-program
 comrade person
+concentration attribute
+conception process
 concern emotion
+concern.feeling feeling
 concert performance
 concession act information
 conclusion information
 concrete artifact
-condition.state attribute
+condition.state state
 conductor worker
 conductor.substance material
 confederation organization
 conference meeting
 confession admission
-confidence attribute
+confidence feeling
 confirmation proof
 conflict attribute
+conflict.state state
 conformity act
 confrontation act
 confusion mistake
 conglomerate firm
 congress legislature
 congressman leader
-connectedness attribute
+connectedness state
 connection transport
 connection.person acquaintance.person
-consciousness attribute
+consciousness condition.state
 conscription act
 consensus event
 conservation protection
-consideration attribute
+consideration good
 consideration.cognition thinking
 consolation assist
 constellation natural-object
 constituency group
 constituent-state place
 constitution attribute
-constraint attribute
+constraint state
+consumer user
+consumption process
 contact interaction
 container artifact
 contamination act
 contemporary peer
+contempt feeling
 contest event
+context situation
 continent land
 contract legal-document
 contract-condition information
@@ -583,6 +616,7 @@ contraction event
 contradiction information
 contribution act
 control-stick artifact
+convalescence process
 conventionality attribute
 conversation communication
 conversion change
@@ -623,29 +657,31 @@ couturier person
 coverage information
 cow cattle
 crack empty-space
-crack-up attribute
+crack-up illness
 crackpot person
 craftsman worker
 crash accident
 cream.food dairy-product
 creation activity
+credibility attribute
 credit-card identification service
+credit.possession possession
 crevice attribute
 crew organization
 cricket insect
 crime activity
 criminal wrongdoer
 criminal-record list
-crisis attribute
+crisis condition.state
 crisp prepared-dish
 criticism information
 critique information
-crook attribute
+crook curved-shape
 cross structure
 crossing artifact
 crowd group
 crown clothing
-cruelty attribute
+cruelty feeling
 cruise act
 crutch device stick
 cry information
@@ -653,6 +689,7 @@ crystal artifact
 cube attribute
 cubicle room
 cucumber vegetable
+culture growth
 cup container
 cupboard artifact
 curate leader
@@ -663,14 +700,17 @@ curve attribute
 curved-shape attribute
 cushion artifact
 custody activity
-customer person
+customer consumer
 cut diminution
+cut.possession possession
 cycle repeat
+cylinder attribute
 dad person
 dairy farm
 dairy-product food
 damage change
-danger attribute
+danger condition.state
+dark state
 dark-blue attribute
 darling person
 dash attribute
@@ -679,12 +719,13 @@ dataset information
 date fruit
 daughter child
 daylight natural-event
-daze attribute
+daze condition.state
 dead-body natural-object
 deal act
-dearth attribute
+dearth lack
 death change
 debate act
+debt possession
 decay natural-event
 deck artifact
 declaration information
@@ -695,9 +736,12 @@ decrease change
 decree legal-document
 deed legal-document
 deer mammal
+defect state
 defendant person
+deficit insufficiency
 definition explanation
-degree.attribute attribute
+degree attribute
+degree.attribute magnitude
 delay act
 delegate representative
 deliberation thinking
@@ -707,22 +751,27 @@ demo information
 demonstration protest
 demonstrator person
 denial assertion
+density attribute
 dentist adult
 departure act
 depository-financial-institution institution
-depression attribute
+depression crisis
+depressive-disorder condition.state
 deputation organization
+deputy agent.person
 descent event
 desert region
 deservingness attribute
+desire feeling
 desk furniture
+despair feeling
 dessert food
-destiny attribute
+destiny state
 destruction ending
-detachment attribute
+detachment feeling
 detective policeman
 detector device
-detention attribute
+detention state
 development district
 device artifact
 diagnosis act
@@ -730,6 +779,7 @@ diagram image
 dialect language
 dialog talk
 dialogue information
+diameter attribute
 diamond jewel
 diary artifact information
 dictionary book
@@ -737,14 +787,15 @@ diet activity
 difficulty attribute
 dig region
 dignity attribute
-dilemma attribute
-diligence attribute
+dilemma condition.state
+diligence trait
+dimension magnitude
 diminution act
 dinner meal
 diplomat official
 director member
 directory book
-disability attribute
+disability condition.state
 disadvantage attribute
 disagreement attribute
 discipline punishment
@@ -753,12 +804,13 @@ discount diminution
 discourtesy behavior
 discrimination act
 discussion communication
-disease attribute
+disease illness
 disgrace status
 dish container device
 dish-aerial device
 disk artifact
-disorderliness attribute
+dismay fear
+disorderliness condition.state
 display activity
 disposition trait
 dispute act
@@ -779,9 +831,9 @@ doll device plaything
 dollar bill
 dolphin whale
 dome roof
-dominance attribute
-domination attribute
-dominion attribute
+dominance condition.state
+domination dominance
+dominion dominance
 donor person
 door artifact
 doorbell push-button
@@ -795,11 +847,13 @@ draft text
 drain artifact
 drama event
 dramatic-play information
+draught wind
 draw event
 drawer container device
 drawing image
 dressing artifact
 drift mass
+drift.process process
 drill training
 drill-tool tool
 drink food
@@ -822,11 +876,12 @@ eagle bird
 ear organ.body
 earth-science natural-science
 earthquake natural-event
-ease attribute
-easiness attribute
+ease condition.state
+easiness feeling
 economics social-science
 economist scientist
-economy trait
+economy trait virtue
+ecstasy emotion
 edge artifact
 edge.attribute attribute
 edition publication
@@ -834,7 +889,8 @@ education activity
 egg food
 egg-white food
 eggshell natural-object
-elbow body-part
+ego feeling
+elbow articulation
 election act
 electorate group
 electric-battery device
@@ -850,24 +906,26 @@ email message
 embassy building
 embryo animal
 emergency event
-emotion attribute
+emotion feeling
 emphasis status
 empire organization
 employee worker
-employment attribute
+employment state
 empty-space place
+enchantment condition.state
 enchantress person
 encounter event
 end place
 end-product artifact
 ending event
+endurance state
 enemy people
 energy attribute
 engine machine
 engineer person
 engineering field-of-study
 entertainment activity
-enthusiasm attribute
+enthusiasm condition.state
 enticement act
 entrance artifact
 envelope container device
@@ -879,19 +937,20 @@ equipment artifact
 erosion event
 escape act
 escort person
-esprit-de-corps trait
+esprit-de-corps disposition
 essay information
 estimate calculation
 ethics philosophy
 event '*'
 event-ticket ticket
 evidence information
+evolution process
 examination work
 examiner human investigator
 excerpt text-passage
-excess attribute
+excess magnitude
 exchange act
-excitement attribute
+excitement condition.state
 excuse explanation
 execution punishment
 executive group
@@ -902,11 +961,12 @@ expansion act
 expedition organization
 experiment research
 expert person
+expertness state
 explaining act
 explanation information
 exploration journey
 explosion event
-exposure attribute
+exposure weakness
 expressway road
 extension phone
 extent attribute
@@ -923,12 +983,12 @@ facsimile apparatus
 fact information
 factor event
 factory works
-failing attribute
+failing state
 failure person
-failure.state attribute
+failure.state destiny
 fair event
 fair-weather weather
-fame status
+fame honour
 family organization
 family-line kin
 fan person
@@ -975,10 +1035,10 @@ first-step act
 fish vertebrate
 fish.food substance
 fisherman worker
-fist body-part
-fit attribute
-fitness attribute
-fix attribute
+fist manus
+fit anger
+fitness condition.state
+fix condition.state
 fixture artifact
 flag artifact information
 flak criticism
@@ -1005,6 +1065,7 @@ fold attribute
 folk people
 folk-music music
 folklore information
+fond-regard feeling
 food substance
 fool person
 foot body-part
@@ -1032,21 +1093,25 @@ frank sausage
 fraud activity
 freckle physical-object
 free-fall descent
-freedom attribute
+freedom state
 freeze event
+freight transportation
 frequency-band collection
 freshman student
+friendship state
 frog amphibian
 front.phenomenon natural-event
 fruit botanical-fruit food produce
 fuel substance
 fun activity
 function.attribute attribute
+functioning process
 fundamental-law legal-document
 funeral ceremony
 fungus organism
 fur material
 furniture artifact
+fury anger
 galaxy collection
 gallery room
 game activity information
@@ -1075,7 +1140,7 @@ glance activity
 glass container
 glass-material substance
 gloom ambiance
-glory status
+glory honour
 glove clothing
 glow natural-event
 glue material
@@ -1085,15 +1150,17 @@ goat mammal
 gold metal
 golf game sport
 good attribute
-good-will trait
+good-will disposition
 gossip act
 government organization
 governor leader
 gown clothing
-grace attribute
-gradation attribute
+grace carriage
+gradation rank
 grain food
 grammar linguistics
+grandfather ancestor
+grandma ancestor
 grant aid
 graph information
 graphics artifact
@@ -1101,13 +1168,19 @@ grass plant
 grave artifact topographic-point
 gravel material
 graveness trait
+green attribute
 greenhouse building
 greeting event information
+grief feeling
 grimace event
 grinder prepared-dish
-grip attribute
+grip influence
 grocery-store organization place structure
 group agent
+growth process
+growth.group vegetation
+growth.state illness
+grudge emotion
 guarantee information
 guard military-unit
 guard.person person
@@ -1117,7 +1190,7 @@ guest visitor
 guidance information
 guide leader
 guidebook book
-guilt attribute
+guilt condition.state
 guitar musical-instrument
 gun weapon
 gun-barrel artifact
@@ -1133,7 +1206,7 @@ hand assist
 handbag container device
 handcart vehicle
 hardware component
-harmony attribute
+harmony characteristic
 haste act
 hat clothing
 hay food
@@ -1141,8 +1214,8 @@ hayfield region
 head-covering clothing
 headline line-of-text
 headquarters office
-health attribute
-health.state attribute
+health wellbeing
+health.state condition.state
 heart card
 heart.shape attribute
 heated-exchange conversation information
@@ -1175,6 +1248,7 @@ honor attribute
 honour status
 hook device
 hoop artifact
+hope feeling
 horizon place
 horizontal-bar support-device
 horn body-part
@@ -1184,7 +1258,7 @@ horseshoe shield
 hospital building organization
 hostage prisoner
 hostel hotel
-hostility attribute
+hostility state
 hotel building organization
 house building dwelling
 house.group legislature
@@ -2290,7 +2364,7 @@ stalk natural-object
 stall shop
 star celestial-body
 star.shape attribute
-state attribute place
+state attribute
 statement document
 station place
 statistics mathematics
