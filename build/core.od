@@ -50,7 +50,7 @@ alcohol drink
 ally country
 altar structure
 aluminum metal
-ambulance car
+ambulance car container
 amendment event information
 amphetamine drug
 amphibian vertebrate
@@ -87,7 +87,7 @@ armchair chair
 army military-service
 arrow projectile
 arrow.communication symbol
-article artifact information.communication
+article information.communication physical-object
 artifact physical-object
 artist person
 ash substance
@@ -109,7 +109,7 @@ attempt activity
 attraction.communication show
 auction sale.act.2
 audio information recording
-auditor human person
+auditor human
 authority expert
 automaton mechanism
 automobile-horn alarm
@@ -196,9 +196,9 @@ blow motion
 board artifact
 board.group committee
 board.substance lumber
-boat device vehicle
+boat watercraft
 body natural-object
-body-of-water landform
+body-of-water place
 body.body natural-object
 bolt screw
 bomb weapon
@@ -240,13 +240,13 @@ bunch collection
 bungalow house
 burial funeral
 bus artifact
-bus-ticket ticket
+bus-ticket artifact ticket
 business organization
 businessman person
 butter dairy-product
 butterfly insect
 button device
-cab car
+cab car container
 cabaret structure
 cabin room
 cabin.artifact house
@@ -272,7 +272,7 @@ cap.artifact device
 capital character
 capital.location center.location.2
 caption title.communication
-car container land-vehicle
+car land-vehicle
 car.artifact container vehicle
 carbon chemical-element
 card artifact
@@ -306,7 +306,7 @@ census information work
 center.location place
 center.location.2 region.location
 ceremony affair.event
-certificate artifact document
+certificate document
 chain.artifact decoration
 chair seat.artifact
 chalk artifact
@@ -323,7 +323,7 @@ character.cognition activity
 charge act
 charity act
 charity.group institution
-chart map
+chart map physical-object
 chart.communication information
 charter artifact document
 chauvinist advocate
@@ -429,12 +429,12 @@ contemporary agent
 contest event
 contest.act act
 context.communication information
-continent land landform
+continent land
 contract legal-document
 contraction event
 contribution act
 convention meeting meeting.act
-conversation communication information
+conversation communication
 conversion change
 conviction.act judgment.act
 cook worker
@@ -628,7 +628,7 @@ examination work
 examiner human investigator
 excerpt passage.communication
 exchange act
-exchange.communication conversation
+exchange.communication conversation information
 excuse information
 execution punishment
 executive group
@@ -668,7 +668,7 @@ feedback answer.communication event
 female-child person
 feminist person
 fence structure
-ferry boat ship watercraft
+ferry boat ship
 festival celebration
 fiction information
 field region.location
@@ -678,7 +678,7 @@ fight act
 file tool
 file.artifact furniture
 file.communication indication
-film artifact information
+film information physical-object
 film.artifact.2 artifact
 film.communication artifact
 filter device
@@ -741,12 +741,12 @@ gasoline chemical fuel
 gate structure
 gaze activity
 gear mechanism
-genius human person
+genius human
 gentleman man
 geography earth-science
 gesture act motion
 ghost agent
-giant human person
+giant human
 girlfriend woman
 glance activity
 glass.substance substance
@@ -831,7 +831,7 @@ house.group place
 houseplant plant
 housing structure
 hovel structure
-human mammal
+human mammal person
 humanities field-of-study
 hunt sport
 hunter human worker
@@ -839,7 +839,7 @@ hybrid organism
 ice substance
 identification indication
 illustration artifact information
-image artifact information
+image information
 immigrant person
 immigration migration
 impact event
@@ -952,7 +952,7 @@ legislation act information
 leisure act
 lemon artifact
 lesson teaching
-letter artifact text
+letter physical-object text
 letter.communication character
 library building organization
 license legal-document
@@ -1002,7 +1002,7 @@ man adult human
 management act
 manual book
 manuscript information
-map artifact information
+map information
 marathon race
 marble ball
 march act
@@ -1077,7 +1077,7 @@ mug device vessel
 murder act
 museum facility place
 mushroom fungus
-music event information
+music information
 music-recording information
 musical-composition information
 musical-instrument device
@@ -1105,7 +1105,7 @@ noise event
 nomination act information
 note indication
 note.communication information
-note.communication.2 letter
+note.communication.2 artifact letter
 note.communication.3 information
 notebook computer
 notebook.communication book.artifact
@@ -1140,7 +1140,7 @@ option.possession information
 orbit path.location
 orchestra organization
 order act
-organism agent physical-object
+organism physical-object
 organization group
 orgy celebration
 outfit clothing
@@ -1167,7 +1167,7 @@ palace house
 palm tree
 pan.artifact device
 panel artifact
-paper article
+paper article artifact
 parade act
 paradiddle event
 paradox information
@@ -1191,7 +1191,7 @@ patch fabric
 patent document
 path place
 path.location place
-patient human person
+patient human
 patio structure
 patriot person
 patrol military-unit
@@ -1203,7 +1203,7 @@ peasant human worker
 pen artifact
 pencil device
 penny coin
-pensioner human person
+pensioner human
 people group
 pepper plant
 perceiver person
@@ -1214,7 +1214,7 @@ performer person
 perfume artifact
 period symbol
 permission information
-person organism
+person agent organism
 personal-identification-number information
 perspiration secretion
 pest person
@@ -1223,7 +1223,7 @@ philosophy humanities
 phone device equipment
 phone-call communication
 phone-number information
-photograph artifact information
+photograph information physical-object
 photographer artist
 photography activity
 physical-object '*'
@@ -1292,14 +1292,14 @@ premise proposition
 prescription information
 prescription-drug medicine.artifact
 present event
-presentation artifact information
+presentation information
 presentation.communication act
 presentation.communication.2 event information
 press machine
 prey animal
 primary election
 prince person
-princess human person
+princess human
 print artifact
 prison structure
 prisoner person
@@ -1400,14 +1400,14 @@ remark information
 remedy medicine.artifact
 repeat event
 replica copy
-report article document
+report document
 report.communication article
 repositing act
 reptile vertebrate
 request information
 research work
 reservation information
-reservoir lake
+reservoir lake landform
 residence address
 resident inhabitant
 residential-district district
@@ -1529,7 +1529,7 @@ shell.object natural-object
 shell.plant natural-object
 shelter housing
 shield artifact
-ship device vehicle
+ship watercraft
 shirt clothing
 shoe clothing
 shooting act
@@ -1669,7 +1669,7 @@ symbol information
 table furniture
 table.group information
 tail.artifact artifact
-talk conversation
+talk conversation information
 tank vehicle
 tape device
 tape.artifact recording
@@ -1694,7 +1694,7 @@ thinker person
 thinking event
 thread artifact
 throne chair
-ticket artifact document
+ticket document
 ticket.communication legal-document
 tiger mammal
 tile slab
@@ -1723,7 +1723,7 @@ tract information
 traffic commerce
 traffic.group collection group
 tragedy information
-train-ticket ticket
+train-ticket artifact ticket
 training activity
 transaction act
 transmission gear
@@ -1743,7 +1743,7 @@ trophy information
 trouble event
 trouble.event event
 trouser clothing
-truck container land-vehicle
+truck land-vehicle
 trust association.group
 tub device vessel
 tune music
@@ -1759,7 +1759,7 @@ university school school.group
 university.group school school.group
 urine waste
 vacation event
-van device truck
+van container device truck
 variation change
 vegetable substance
 vehicle artifact
@@ -1773,15 +1773,15 @@ vertex region
 vessel container
 veteran worker
 vicinity region.location
-victim human person
+victim human
 victory ending success
 video information recording
 villa house
-village city community
+village community place
 villager inhabitant
 violence aggression
 virgin person
-virus microorganism
+virus agent microorganism
 virus.communication code
 visit meeting.act
 visitor person
@@ -1807,7 +1807,7 @@ watch clock
 water compound liquid
 water-faucet fixture mechanism
 watercraft device vehicle
-waterfall body-of-water
+waterfall body-of-water landform
 wave event
 weapon instrument
 weather natural-event
@@ -1849,6 +1849,6 @@ world-power country
 worm invertebrate
 worm.communication code
 wrongdoer person
-yacht boat watercraft
+yacht boat
 yard place
 zone place

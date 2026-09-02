@@ -691,7 +691,7 @@ aids	event	single	opencyc
 aids	illness	accepted	opencyc wordnet	
 aids	situation	single	opencyc	
 aim	cognition	single	wordnet	
-aim	goal	single	wordnet	
+aim	goal	rejected	wordnet	
 air	fluid	single	wordnet	
 air	material	single	sumo	
 air	phenomenon	single	sumo	
@@ -1407,7 +1407,7 @@ art.act	information	single	sumo
 art.act	phenomenon	single	sumo	
 art.act	physical-object	single	sumo	
 art.act	universe	single	sumo	
-article	artifact	accepted	sumo wordnet	
+article	artifact	rejected	sumo wordnet	
 article	condition.communication	single	sumo	
 article	document	single	claude	
 article	essay	single	sumo	
@@ -1676,7 +1676,7 @@ audio	device	single	wordnet
 audio	indication	single	sumo	
 audio	information	accepted	claude sumo	
 audio	phenomenon	single	sumo	
-audio	physical-object	accepted	sumo wordnet	
+audio	physical-object	rejected	sumo wordnet	
 audio	recording	accepted	claude wordnet	
 audio	universe	single	sumo	
 auditor	adult	single	opencyc	
@@ -2793,7 +2793,7 @@ boat	product	single	yago
 boat	product.phenomenon	single	yago	
 boat	universe	single	sumo	
 boat	vehicle	accepted	claude sumo wordnet yago	
-boat	watercraft	disputed	claude opencyc wordnet	sumo
+boat	watercraft	accepted	claude opencyc wordnet	sumo
 body	agent	single	sumo	
 body	natural-object	accepted	claude wordnet	
 body	organism	single	sumo	
@@ -2801,7 +2801,7 @@ body	phenomenon	single	sumo
 body	physical-object	accepted	sumo wordnet	
 body	species	single	sumo	
 body	universe	single	sumo	
-body-of-water	landform	accepted	schemaorg yago	
+body-of-water	landform	rejected	schemaorg yago	
 body-of-water	landscape	single	sumo	
 body-of-water	natural-object	single	claude	
 body-of-water	phenomenon	single	sumo	
@@ -2877,7 +2877,7 @@ bone	system	single	opencyc
 bone	tissue	accepted	opencyc wordnet	
 bone	tissue.substance	single	opencyc	
 bone	universe	single	sumo	
-book	artifact	accepted	sumo wordnet	
+book	artifact	rejected	sumo wordnet	
 book	component	single	sumo	
 book	device	single	sumo	
 book	document	single	claude	
@@ -3804,7 +3804,7 @@ caption	title.2	single	claude
 caption	title.communication	accepted	claude wordnet	
 caption	universe	single	sumo	
 car	artifact	accepted	claude opencyc wordnet	
-car	container	accepted	opencyc wordnet	
+car	container	rejected	opencyc wordnet	
 car	device	single	opencyc	
 car	land-vehicle	accepted	claude opencyc	
 car	machine	single	claude	
@@ -4222,7 +4222,7 @@ ceremony	event	accepted	sumo wordnet yago
 ceremony	phenomenon	single	sumo	
 ceremony	procedure.act	single	sumo	
 ceremony	volition	single	sumo	
-certificate	artifact	accepted	opencyc sumo	
+certificate	artifact	rejected	opencyc sumo	
 certificate	condition.communication	single	sumo	
 certificate	document	accepted	claude wordnet	
 certificate	file.communication	single	sumo	
@@ -6027,7 +6027,7 @@ context.communication	physical-object	single	sumo
 context.communication	text	single	sumo	
 context.communication	universe	single	sumo	
 continent	land	accepted	sumo wordnet	
-continent	landform	accepted	schemaorg yago	
+continent	landform	rejected	schemaorg yago	
 continent	landscape	single	sumo	
 continent	phenomenon	single	sumo	
 continent	physical-object	single	wordnet	
@@ -6112,7 +6112,7 @@ conversation	communication	accepted	claude sumo
 conversation	dialogue	single	opencyc	
 conversation	dialogue.communication	disputed	opencyc	sumo wordnet
 conversation	event	accepted	claude opencyc sumo	
-conversation	information	accepted	schemaorg sumo wordnet	
+conversation	information	rejected	schemaorg sumo wordnet	
 conversation	phenomenon	single	sumo	
 conversation	procedure.act	single	sumo	
 conversation	situation	single	opencyc	
@@ -9106,10 +9106,10 @@ emergency	soul	single	sumo
 emergency	status	single	sumo	
 emergency	tension	single	sumo	
 emergency	way	single	sumo	
-emotion	emotional-state	disputed	sumo	wordnet
+emotion	emotional-state	rejected	sumo	wordnet
 emotion	monetary-value	single	sumo	
 emotion	property	single	sumo	
-emotional-state	emotion	disputed	wordnet	sumo
+emotional-state	emotion	rejected	wordnet	sumo
 emotional-state	monetary-value	single	sumo	
 emotional-state	property	single	sumo	
 emphasis	amateur	single	sumo	
@@ -10332,7 +10332,7 @@ file.group	collection	single	sumo
 file.group	group	single	wordnet	
 file.group	line.group	single	wordnet	
 file.group	phenomenon	single	sumo	
-film	artifact	accepted	sumo wordnet	
+film	artifact	rejected	sumo wordnet	
 film	condition.communication	single	sumo	
 film	event	single	wordnet	
 film	film.communication	single	sumo	
@@ -12852,7 +12852,7 @@ human	animal	accepted	claude sumo wordnet
 human	body	single	sumo	
 human	mammal	accepted	claude opencyc sumo wordnet	
 human	organism	accepted	claude sumo wordnet	
-human	person	disputed	claude yago	sumo
+human	person	accepted	claude yago	sumo
 human	phenomenon	single	sumo	
 human	physical-object	accepted	claude sumo wordnet	
 human	species	single	sumo	
@@ -13013,7 +13013,7 @@ illustration	physical-object	single	wordnet
 illustration	signal	single	opencyc	
 illustration	situation	single	opencyc	
 illustration	universe	single	sumo	
-image	artifact	accepted	claude wordnet	
+image	artifact	rejected	claude wordnet	
 image	information	accepted	claude sumo	
 image	phenomenon	single	sumo	
 image	physical-object	single	wordnet	
@@ -14710,7 +14710,7 @@ lesson	profession	single	wordnet
 lesson	situation	single	opencyc	
 lesson	teaching	accepted	opencyc wordnet	
 lesson	volition	single	sumo	
-letter	artifact	accepted	sumo wordnet	
+letter	artifact	rejected	sumo wordnet	
 letter	condition.communication	single	sumo	
 letter	document	single	claude	
 letter	file.communication	single	sumo	
@@ -15443,7 +15443,7 @@ manuscript	phenomenon	single	sumo
 manuscript	physical-object	single	sumo	
 manuscript	text	single	sumo	
 manuscript	universe	single	sumo	
-map	artifact	accepted	claude wordnet	
+map	artifact	rejected	claude wordnet	
 map	document	single	claude	
 map	image	single	claude	
 map	information	accepted	claude schemaorg sumo yago	
@@ -16618,7 +16618,7 @@ mushroom.plant	physical-object	single	wordnet
 mushroom.plant	structure	single	opencyc	
 mushroom.plant	system	single	opencyc	
 music	art	single	claude	
-music	event	accepted	opencyc sumo	
+music	event	rejected	opencyc sumo	
 music	field-of-study	single	claude	
 music	information	accepted	claude wordnet	
 music	phenomenon	single	sumo	
@@ -17599,7 +17599,7 @@ organ	physical-object	single	wordnet
 organ.body	phenomenon	single	sumo	
 organ.body	physical-object	single	sumo	
 organ.body	universe	single	sumo	
-organism	agent	accepted	dul sumo	
+organism	agent	rejected	dul sumo	
 organism	agent.person	disputed	dul	wordnet
 organism	agent.person.2	disputed	dul	wordnet
 organism	phenomenon	single	sumo	
@@ -18429,7 +18429,7 @@ permission	norm	single	opencyc
 person	agent	accepted	claude sumo wordnet	
 person	animal	single	sumo	
 person	body	single	sumo	
-person	human	disputed	sumo	claude yago
+person	human	rejected	sumo	claude yago
 person	mammal	single	sumo	
 person	organism	accepted	sumo wordnet	
 person	phenomenon	single	sumo	
@@ -18527,7 +18527,7 @@ phone-number	phenomenon	single	sumo
 phone-number	physical-object	single	sumo	
 phone-number	signal	dissented	wordnet	
 phone-number	universe	single	sumo	
-photograph	artifact	accepted	claude wordnet	
+photograph	artifact	rejected	claude wordnet	
 photograph	image	single	claude	
 photograph	indication	single	sumo	
 photograph	information	accepted	claude schemaorg sumo yago	
@@ -19382,7 +19382,7 @@ present.time	illness	single	opencyc
 present.time	quantity	single	sumo	
 present.time	situation	single	opencyc	
 presentation	action	single	opencyc	
-presentation	artifact	accepted	claude wordnet	
+presentation	artifact	rejected	claude wordnet	
 presentation	document	single	claude	
 presentation	event	single	opencyc	
 presentation	information	accepted	claude sumo	
@@ -21214,7 +21214,7 @@ replica	information	single	yago
 replica	phenomenon	single	sumo	
 replica	physical-object	single	wordnet	
 replica	universe	single	sumo	
-report	article	accepted	schemaorg sumo yago	
+report	article	rejected	schemaorg sumo yago	
 report	artifact	single	sumo	
 report	condition.communication	single	sumo	
 report	document	accepted	claude wordnet	
@@ -23041,7 +23041,7 @@ ship	product	single	yago
 ship	product.phenomenon	single	yago	
 ship	universe	single	sumo	
 ship	vehicle	accepted	claude sumo wordnet yago	
-ship	watercraft	disputed	claude opencyc wordnet	sumo
+ship	watercraft	accepted	claude opencyc wordnet	sumo
 shirt	artifact	accepted	opencyc sumo wordnet	
 shirt	clothing	accepted	opencyc sumo wordnet	
 shirt	commodity	single	wordnet	
@@ -25252,7 +25252,7 @@ thumb	universe	single	sumo
 thunderbolt	event	single	wordnet	
 thunderbolt	natural-event	single	wordnet	
 thunderbolt	phenomenon	single	wordnet	
-ticket	artifact	accepted	opencyc sumo	
+ticket	artifact	rejected	opencyc sumo	
 ticket	condition.communication	single	sumo	
 ticket	device	single	opencyc	
 ticket	document	accepted	claude wordnet	
@@ -25927,7 +25927,7 @@ trouser	phenomenon	single	sumo
 trouser	physical-object	single	wordnet	
 trouser	universe	single	sumo	
 truck	artifact	accepted	claude opencyc wordnet	
-truck	container	accepted	opencyc wordnet	
+truck	container	rejected	opencyc wordnet	
 truck	device	single	opencyc	
 truck	land-vehicle	accepted	claude opencyc	
 truck	machine	single	claude	
@@ -26390,7 +26390,7 @@ video	device	single	wordnet
 video	indication	single	sumo	
 video	information	accepted	claude sumo yago	
 video	phenomenon	single	sumo	
-video	physical-object	accepted	sumo wordnet	
+video	physical-object	rejected	sumo wordnet	
 video	product	single	yago	
 video	product.phenomenon	single	yago	
 video	recording	accepted	claude wordnet	
@@ -26415,7 +26415,7 @@ villa	site	single	opencyc
 villa	structure	single	wordnet	
 villa	universe	single	sumo	
 village	agent	single	sumo	
-village	city	accepted	opencyc sumo	
+village	city	rejected	opencyc sumo	
 village	community	accepted	claude wordnet	
 village	group	single	wordnet	
 village	land	single	sumo	
@@ -26753,7 +26753,7 @@ water-faucet	phenomenon	single	sumo
 water-faucet	physical-object	single	wordnet	
 water-faucet	universe	single	sumo	
 watercraft	artifact	accepted	claude opencyc sumo wordnet	
-watercraft	boat	disputed	sumo	claude opencyc wordnet
+watercraft	boat	rejected	sumo	claude opencyc wordnet
 watercraft	container	single	opencyc	
 watercraft	device	accepted	opencyc sumo	
 watercraft	machine	single	claude	
@@ -26761,7 +26761,7 @@ watercraft	phenomenon	single	sumo
 watercraft	physical-object	accepted	claude wordnet	
 watercraft	product	single	yago	
 watercraft	product.phenomenon	single	yago	
-watercraft	ship	disputed	sumo	claude opencyc wordnet
+watercraft	ship	rejected	sumo	claude opencyc wordnet
 watercraft	universe	single	sumo	
 watercraft	vehicle	accepted	claude sumo wordnet yago	
 waterfall	body-of-water	accepted	opencyc schemaorg wordnet yago	

@@ -1,1 +1,64 @@
 # sub	sup	accept|reject	note      — Peter's decisions; outrank every witness.
+# ===== Peter, 2026-09-02 — decision 2 (roots) accepted as drafted in overrides.tsv; decision 3 rulings:
+# vehicles, tools and instruments under device (Cyc + SUMO) — accepted
+aircraft	device	accept	coarse but true
+boat	device	accept	
+ship	device	accept	
+spacecraft	device	accept	
+watercraft	device	accept	
+tool	device	accept	
+musical-instrument	device	accept	
+machine	device	accept	
+# vehicles as containers — rejected
+car	container	reject	true of the cabin, false as filing
+truck	container	reject	same
+# documents as physical artifacts — rejected (CORE.md one-reading rule: a document is information)
+article	artifact	reject	one-reading rule
+book	artifact	reject	one-reading rule
+letter	artifact	reject	one-reading rule
+film	artifact	reject	one-reading rule
+certificate	artifact	reject	one-reading rule
+ticket	artifact	reject	one-reading rule
+image	artifact	reject	one-reading rule
+map	artifact	reject	one-reading rule
+photograph	artifact	reject	one-reading rule
+presentation	artifact	reject	one-reading rule
+audio	physical-object	reject	one-reading rule
+video	physical-object	reject	one-reading rule
+# the philosophy question
+organism	agent	reject	a plant is an organism and not an agent except in an exotic or botanical sense
+person	organism	accept	
+# communication vs information
+conversation	information	reject	a conversation is a kind of communication (it carries information, it is not information)
+music	information	accept	
+music	event	reject	the art form is not an event; a performance is
+# places
+body-of-water	landform	reject	a sea is not a landform in English
+continent	landform	reject	schema.org's Landform is too broad
+village	city	reject	SUMO's City means settlement
+village	community	accept	
+street	artifact	accept	
+# plainly right
+business	organization	accept	
+team	organization	accept	
+organization	group	accept	
+manual	book	accept	
+drink	food	accept	
+water	material	accept	
+computer	machine	accept	
+flight	journey	accept	
+fruit	natural-object	accept	
+linguistics	science	accept	
+logic	philosophy	accept	
+report	article	reject	left out
+# ===== Peter, 2026-09-02 — decision 5 (disputes), first rulings:
+aim	goal	reject	synonyms — neither direction; one name should go (decision 6)
+goal	aim	reject	synonyms
+emotion	emotional-state	reject	synonyms
+emotional-state	emotion	reject	synonyms
+boat	watercraft	accept	a boat is a watercraft
+ship	watercraft	accept	follows the boat ruling (SUMO's mapping had the direction inverted)
+watercraft	boat	reject	inverted
+watercraft	ship	reject	inverted
+human	person	accept	a human is a person
+person	human	reject	inverted
