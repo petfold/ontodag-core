@@ -11,8 +11,7 @@ academic-degree symbol
 academy structure
 accelerator bar
 access concept
-accident event
-accident.event trouble.event
+accident trouble.event
 accomplishment act
 account statement
 accountant person
@@ -26,7 +25,7 @@ acquaintance.person person
 acquaintanceship '*'
 acquisition '*'
 act event
-act.communication information
+act-of-play information
 action plot.communication
 activeness trait
 activity act
@@ -36,8 +35,8 @@ adaptation information
 addiction condition.state
 addition component
 address place
-address.communication act
 adeptness '*'
+administrative-division organization
 administrator chief
 administrator.person chief
 admiration '*'
@@ -45,7 +44,6 @@ admission information
 admonition advice
 adolescent person
 adoption blessing
-adoption.act act
 adult person
 advance '*'
 advancement act
@@ -73,16 +71,16 @@ agony suffering
 agreement '*'
 aid gift
 aids disease
-aim goal
 air fluid
 aircraft vehicle
+aircraft-wing device
 airline organization
 airplane aircraft
 airport facility
 aisle structure
 alarm device
 alarm-clock clock
-album book.artifact
+album book-copy
 alcohol drink drug
 alimony outgo
 alliance '*'
@@ -108,8 +106,9 @@ analyst doctor
 ancestor relative
 angel belief
 anger emotion
-angle space.shape
+angle empty-space
 animal organism
+animal-pack group
 ankle articulation
 annex addition
 anniversary time-period
@@ -129,16 +128,14 @@ apparel clothing
 appeal appearance
 appearance '*'
 appendix '*'
-appendix.communication information
 appetite desire
 apple fruit
 appliance device
 applicant person
 application computer-program
-application.communication request
 appointment occupation
 appraisal cognition
-appraisal.communication document
+appraisal-report document
 aquarium structure vessel
 arachnid invertebrate
 arch entrance
@@ -147,12 +144,13 @@ architecture humanities
 archive facility
 ardor passion
 area magnitude
-arena region.location
+arena region
 argument information
 argumentation thinking
 arm limb
 armchair chair
 army military-service
+army-division military-unit
 arrow projectile
 article artifact information
 articulation '*'
@@ -164,15 +162,14 @@ ash-grey '*'
 aspect feature.cognition
 aspiration desire
 assault crime
-assembly act
+assembly-hall room
 assertion declaration
 asset '*'
 assignment undertaking
 assimilation '*'
 assist activity
 assistant worker
-association cognition
-association.group organization
+association organization
 assurance information
 asterisk character
 astronomy physics
@@ -181,14 +178,12 @@ atmosphere fluid
 atom part substance
 attachment addition
 attack military-operation
-attack.act criticism
 attempt activity
 attention cognition
 attitude cognition
 attraction '*'
-attraction.communication show
 attractive-force natural-event
-auction sale.act
+auction selling
 audience group
 audio recording
 auditor student
@@ -219,14 +214,11 @@ balance '*'
 balance.state equilibrium
 balcony structure
 ball equipment
-ball.group party
 ballet activity humanities show
 balloon plaything
 ballot document
 banana fruit
 band decoration
-band.communication collection
-band.group organization
 bandage dressing
 bang noise
 bank slope
@@ -236,7 +228,6 @@ bankruptcy.state condition.state
 banner flag
 banquet party
 bar artifact
-bar.artifact support.artifact
 bargain information
 bark natural-object
 baron businessman
@@ -245,7 +236,7 @@ barrel.shape '*'
 barrier natural-object
 barroom room
 barter commerce
-base support.artifact
+base support-device
 base.artifact underside
 base.shape '*'
 baseball game sport
@@ -259,19 +250,18 @@ bathroom room
 bathtub vessel
 battery assault
 battle military-action
-battlefield region.location
+battlefield region
 battlefront place
 bay body-of-water
 beach physical-object
 beak passage
-beam piece support.artifact
+beam piece support-device
 beam-of-light natural-event
 bean vegetable
 bear mammal
 beard hair
 bearing manner
 bed furniture
-bed.artifact plot
 bedroom room
 bee insect
 beef meat
@@ -282,11 +272,11 @@ belief cognition
 belongings '*'
 beloved person
 belt clothing
-bench seat.artifact
+bench seat
 bend section
 beneficiary person
 benefit '*'
-benefit.communication performance
+benefit-performance performance
 berry fruit
 bet activity
 betrothal promise
@@ -313,13 +303,13 @@ blanket artifact
 blast explosion
 blessing support
 blink-of-an-eye time-period
-block region.location
+block region
 blood part substance
 bloodshed murder
 blow motion
 blue '*'
 board artifact
-board.group committee
+board-of-directors committee
 boat watercraft
 body natural-object
 body-of-water '*'
@@ -327,18 +317,21 @@ boldness drive.attribute
 bolt screw
 bomb device
 bomber airplane
-bomber.person person
 bone tissue
 book publication
-book.artifact artifact
+book-appendix information
+book-copy artifact
+book-index list
 booklet book
 boom prosperity
 boot artifact
 booth room
 bosom intuition
+botanical-fruit natural-object
 bottle vessel
+bottle-cap artifact
 bottom ship
-boundary-line region
+boundary-line place
 bow weapon
 bow.artifact decoration
 bowl vessel
@@ -388,6 +381,7 @@ burn injury
 bus artifact
 bus-ticket ticket
 business-deal transaction
+business-operation undertaking
 businessman person
 bustle motion
 butter dairy-product
@@ -397,9 +391,8 @@ button device
 cab car
 cabaret structure
 cabin room
-cabin.artifact house
 cabinet furniture
-cabinet.group board.group
+cabinet.group board-of-directors
 cable rope
 cadaver dead-body
 cafe restaurant
@@ -423,19 +416,19 @@ candle device
 cane stick
 canvas fabric
 cap clothing
-cap.artifact artifact
 capacity volume.quantity
 capital character
-capital.location center.location
+capital-city central-area
 capital.possession '*'
 capitalism economic-system
 caprice desire
 captain worker
-caption title.communication
+caption section-title
 caput '*'
 car container vehicle
 carbon chemical-element
 card paper.substance
+card-hand collection
 card.communication correspondence
 care act
 career occupation
@@ -455,7 +448,6 @@ casualty victim
 cat mammal
 catalog book
 catch disadvantage
-catch.person adult
 category concept
 cathedral church
 cattle mammal
@@ -470,11 +462,11 @@ celestial-body natural-object
 cell physical-object
 cellular-telephone phone
 celluloid artifact
-cemetery site
+cemetery region
 censoring act
 census work
 center building
-center.location region.location
+central-area region
 centre place
 century time-period
 cereal substance
@@ -483,7 +475,7 @@ certificate document
 chaff material
 chain artifact
 chain.group organization
-chair seat.artifact
+chair seat
 chairman leader
 chalk artifact
 challenge act
@@ -491,36 +483,38 @@ challenge.state situation
 champagne wine
 champion person
 championship status
+chance-event event
 change event
 change.possession cash
 channel facility
-channel.object body-of-water
 chaos '*'
 chapter music
 character symbol
 character.state honour
 characteristic '*'
 charge act
+charitable-organization institution
 charity act
-charity.group institution
 charm physical-object
 chart map
 chart.communication information
 charter document
 chauvinist advocate
-check move.act
+check game-move
 check-mark symbol
 cheek feature
 cheese dairy-product
 chemical material
 chemical-element part substance
 chemical-reaction '*'
+chemical-solution part substance
 chemistry natural-science
 cherry fruit
 chest-of-drawers furniture
 chicken bird
 chief leader
 child offspring
+child-adoption act
 childhood time-period
 chimney artifact
 chin feature
@@ -541,14 +535,13 @@ circumstance cognition
 citation annotation
 citizen person
 city district
+city-ward district
 civilian citizen
 civilisation society
 civilization society
-claim activity
-claim.communication assertion
+claim assertion
 clash conflict.state
 class people
-class.group group
 classroom room
 clay soil
 clemency management
@@ -578,7 +571,7 @@ coffee drink
 coffin box
 cognition '*'
 coin currency
-coincidence accident
+coincidence chance-event
 cold disease
 coldness agent temperature
 collapse event
@@ -587,11 +580,9 @@ colleague peer
 collection group
 college institution
 colon intestine
-colon.communication symbol
-colony region.location
-colony.group group
+colony region
 color appearance
-column support.artifact
+column support-device
 column.group group
 coma condition.state
 combination collection
@@ -599,7 +590,7 @@ comedy information
 comet natural-object
 comfort condition.state
 comic-strip cartoon
-coming-together assembly
+coming-together act
 command '*'
 commemoration recognition
 commencement '*'
@@ -611,16 +602,18 @@ committee organization
 commodity artifact
 common-sense cognition
 communication act
+communicative-contact communication
 communist politician
 community group
 compact car
 companionship friendship
 company institution
 comparison '*'
-compartment space.shape
+compartment empty-space
 compassion '*'
 competence ability
 competition act
+competition-jury committee
 complication situation
 component physical-object
 composer musician
@@ -633,6 +626,7 @@ computer-mouse device
 computer-program software
 computer-science engineering
 computer-virus computer-program
+computer-worm computer-program
 comrade person
 concentration '*'
 concept idea
@@ -645,7 +639,6 @@ concession act
 conclusion music
 concrete artifact
 condition premise
-condition.communication information
 condition.state '*'
 conductor worker
 conductor.substance material
@@ -685,16 +678,15 @@ consultation information
 consumer user
 consumption '*'
 contact interaction
-contact.communication communication
 container artifact
 contamination act
 contemporary peer
 contempt '*'
 contest event
-contest.act competition
 context situation
 continent land
 contract legal-document
+contract-condition information
 contraction diminution
 contradiction information
 contrary '*'
@@ -702,7 +694,6 @@ contrast '*'
 contribution act
 control-stick bar
 convalescence '*'
-convention meeting
 conventionality '*'
 conversation information
 conversion change
@@ -710,6 +701,7 @@ conviction belief
 cook worker
 cookie cake
 cooking-pan artifact
+cooking-pot vessel
 cooperation practice
 copper conductor.substance metal
 copy artifact
@@ -723,6 +715,7 @@ correction act
 correlation '*'
 correspondence mail
 corruption act
+cost-estimate information
 costume clothing
 cotton fabric
 council organization
@@ -744,13 +737,13 @@ cousin relative
 couturier person
 coverage info
 cow cattle
-crack space.shape
+crack empty-space
 crack-up illness
 crackpot person
 craft intelligence
 craftsman worker
 craftsmanship skill
-crash accident.event
+crash accident
 cream artifact
 cream.food dairy-product
 creation activity
@@ -766,7 +759,7 @@ crime activity
 criminal wrongdoer
 criminal-record list
 crisis condition.state
-crisp dish.food
+crisp prepared-dish
 critic professional
 criticism information
 critique information
@@ -828,14 +821,15 @@ deadline '*'
 deal act
 dearth lack
 death change
-debate address.communication
+debate formal-address
 debt '*'
 decade time-period
 decay natural-event
-deck platform
+deck artifact
 declaration information
 declivity slope
 decoration artifact
+decorative-design decoration
 decrease change
 decree legal-document
 deed legal-document
@@ -871,10 +865,9 @@ depressive-disorder condition.state
 deputation organization
 deputy agent.person
 descent event
-desert group region.location
+desert group region
 deservingness '*'
-design drawing.artifact
-design.artifact decoration
+design artifact
 design.cognition cognition
 desire '*'
 desk furniture
@@ -890,7 +883,7 @@ detention '*'
 development district
 device artifact
 diagnosis act
-diagram drawing.artifact
+diagram artifact
 dialect information
 dialog talk
 dialogue information
@@ -900,7 +893,7 @@ diary information
 dictionary book
 diet activity
 difficulty '*'
-dig site
+dig region
 dignity '*'
 dilemma condition.state
 diligence trait
@@ -927,7 +920,6 @@ disembodied-spirit belief
 disgrace status
 dish container
 dish-aerial device
-dish.food food
 disk mechanism
 dismay fear
 dismissal notice.communication
@@ -940,15 +932,13 @@ dissertation information
 distance placement
 distortion mistake
 distributor company
-district region.location
+district region
 disturbance '*'
 diverseness '*'
 diversion act
 dividend outgo
 dividing-line cognition
 division process
-division.group military-unit
-division.group.2 organization
 divorce separation
 doctor professional
 doctrine belief
@@ -965,7 +955,7 @@ dominion dominance
 donor person
 door structure
 doorbell push-button
-doorsill support.artifact
+doorsill support-device
 dormitory building housing
 dose medication
 dot '*'
@@ -985,13 +975,12 @@ draught wind
 draw event
 drawer container structure
 drawing information
-drawing.artifact artifact
 dream imagination
 dressing artifact
 drift mass
 drift.process '*'
 drill training
-drill.artifact tool
+drill-tool tool
 drink food part
 drinking activity
 drive journey
@@ -999,7 +988,6 @@ drive.attribute trait
 driver agent
 driveway road
 drop '*'
-drop.event descent
 drug agent substance
 drug-user person
 drum musical-instrument
@@ -1028,8 +1016,8 @@ economic-value '*'
 economics social-science
 economist scientist
 economy trait virtue
-ecstasy emotional-state
-eden region
+ecstasy emotion
+eden place
 edge artifact
 edge.attribute asset
 edition publication
@@ -1054,22 +1042,20 @@ elephant mammal
 elevator device
 elite class
 email communication
-embarrassment shame
 embassy building
 embryo animal
 emergency event
 emotion '*'
-emotional-state emotion
 emphasis status
 empire monarchy
 employee worker
 employer leader
 employment '*'
-employment.act occupation
+empty-space place
 enchantment condition.state
 enchantress person
 encounter event
-end region
+end place
 end-product artifact
 ending event
 endurance '*'
@@ -1088,7 +1074,7 @@ entrance artifact
 entrance-fee fee
 entree concept
 envelope container
-environment region.location
+environment region
 episode programme
 equation information
 equilibrium situation
@@ -1102,7 +1088,6 @@ esprit-de-corps disposition
 essay information
 estate belongings
 estimate calculation
-estimate.communication information
 estimation attitude
 ethics philosophy
 europe '*'
@@ -1115,10 +1100,9 @@ examination work
 examiner investigator
 example cognition
 exception example
-excerpt passage.communication
+excerpt text-passage
 excess magnitude
 exchange act
-exchange.communication conversation
 excitement condition.state
 excuse explanation
 execution punishment
@@ -1136,8 +1120,8 @@ experience education.cognition
 experiment research
 expert person
 expertness '*'
+explaining act
 explanation information
-explanation.communication act
 exploration journey
 explosion event
 exposure weakness
@@ -1171,7 +1155,6 @@ family organization
 family-line kin
 fan person
 fare outgo
-farewell departure
 farm workplace
 farmer person
 farming industry
@@ -1201,7 +1184,7 @@ fib lie
 fiber material
 fiction information
 fictional-character cognition
-field region.location
+field region
 field-of-study cognition
 fig fruit
 fight act
@@ -1214,7 +1197,7 @@ filter device
 final-examination exam
 finance management
 finger '*'
-finish region
+finish place
 fire structure
 fireman person
 firm organization
@@ -1227,7 +1210,7 @@ fit anger
 fitness condition.state
 fix condition.state
 fixture artifact
-flag design.artifact
+flag decorative-design
 flak criticism
 flame chemical-reaction
 flare signal
@@ -1238,7 +1221,6 @@ flatware artifact
 fleet organization
 flesh tissue
 flight journey
-flight-of-stairs stairway
 flock group
 flood natural-event
 floor artifact
@@ -1268,6 +1250,9 @@ forest group land
 forestry biology
 fork artifact
 form document
+formal-address act
+formal-application request
+formal-proof indication
 format info
 formation placement
 formula information
@@ -1286,21 +1271,21 @@ franchise organization
 frank sausage
 fraud activity
 freak organism
-freckle design.artifact
+freckle decorative-design
+free-fall descent
 freedom '*'
-freeze pause.act
+freeze act
 freight transportation
 frequency '*'
+frequency-band collection
 freshman student
 friend peer
 friendship '*'
 frog amphibian
 front artifact
 front.phenomenon natural-event
-fruit fruit.plant produce
-fruit.plant natural-object
+fruit botanical-fruit produce
 frustration disappointment
-frustration.feeling anger
 ft '*'
 fuel substance
 fun activity
@@ -1319,11 +1304,12 @@ galaxy collection
 gallery room
 gallon '*'
 game activity
-game.act activity
+game-move activity
 gap artifact
 garage building
 garbage waste
 garden vegetation
+garden-bed plot
 garlic food
 gas state-of-matter
 gash wound
@@ -1336,9 +1322,10 @@ gene sequence
 general worker
 genius person
 gentleman man
+geographic-pole place
 geography earth-science
 gesture motion
-ghost soul
+ghost agent
 ghostwriter writer
 giant person
 gift acquisition
@@ -1346,7 +1333,7 @@ girlfriend woman
 glacier physical-object
 glance activity
 glass container
-glass.substance substance
+glass-material substance
 glimpse view
 globe '*'
 gloom ambiance
@@ -1355,9 +1342,8 @@ glove clothing
 glow natural-event
 glue material
 goal cognition
-goal.act accomplishment
-goal.artifact equipment
 goalkeeper athlete player
+goalposts equipment
 goat mammal
 gold metal
 golf game sport
@@ -1385,14 +1371,13 @@ gravel material
 graveness trait
 gravity attractive-force
 green '*'
-green.person person
 greenhouse building
 greeting information
 grief '*'
 grimace information
-grinder dish.food
+grinder prepared-dish
 grip influence
-grocery-store mercantile-establishment
+grocery-store structure
 ground view
 group '*'
 growth '*'
@@ -1420,13 +1405,10 @@ habitat environment
 hair natural-object
 haircut hair
 hall building
-hall.artifact room
 hallway artifact
 ham meat
 hammer tool
 hand assist
-hand.communication information
-hand.group collection
 handbag container
 handcart container vehicle
 hardware component
@@ -1435,10 +1417,10 @@ harvest season
 haste act
 hat clothing
 hay food
-hayfield group region.location
+hayfield group region
 head artifact
 head-covering clothing
-headline line.communication
+headline line-of-text
 headquarters office
 headroom '*'
 health wellbeing
@@ -1446,6 +1428,7 @@ health.state condition.state
 heart card
 heart.shape '*'
 heat trait
+heated-exchange conversation
 heating-system facility
 hedge fence
 heel '*'
@@ -1455,7 +1438,7 @@ hell cognition
 helmet clothing
 helping '*'
 hemisphere '*'
-hemisphere.location region.location
+hemisphere.location region
 hen chicken
 herb food
 herd group
@@ -1475,7 +1458,7 @@ historic-period era
 history humanities
 history.time past
 hog mammal
-hole space.shape
+hole empty-space
 holiday time-period
 home structure
 homecoming act
@@ -1486,6 +1469,7 @@ hook artifact
 hoop artifact
 hope '*'
 horizon place
+horizontal-bar support-device
 horn '*'
 horoscope information
 horse mammal
@@ -1549,8 +1533,8 @@ increase '*'
 increment magnitude
 indemnity protection.state
 index finger
-index.communication list
 indication information
+indicator-needle device
 indigence condition.state
 individual organism
 industry commercial-enterprise
@@ -1567,13 +1551,12 @@ ingredient component
 inhabitant person
 inhibition activity
 initial letter-of-the-alphabet
-injection act
-injection.act tending
+injection tending
 injury condition.state
 innovation artifact
 inquest work
 insect invertebrate
-inside region
+inside place
 insider administrator
 insight cognition
 insistence support
@@ -1603,7 +1586,7 @@ interview act
 intestine organ.body
 intro act
 introduction music
-introduction.communication textbook
+introductory-text textbook
 intuition idea
 invasion event
 invention cognition
@@ -1617,7 +1600,6 @@ island land
 isolation '*'
 isotropy '*'
 issue cognition
-issue.act commercial-enterprise
 item cognition
 iteration '*'
 ivory material
@@ -1634,7 +1616,6 @@ jester performer
 jet event
 jewel decoration
 job duty
-job.artifact workplace
 jockey rider
 joint structure
 joke information
@@ -1651,13 +1632,11 @@ jump change
 junction topographic-point
 jurisprudence collection
 jury group
-jury.group committee
 justice virtue
 justification circumstance
 keep '*'
-kettle pot.artifact
+kettle cooking-pot
 key device
-key.communication list
 kick cognition
 kid goat
 kidney organ.body
@@ -1690,8 +1669,8 @@ lamp furniture
 land physical-object
 landed-estate belongings
 landlord landowner
+landmine device
 landowner person
-landscape vicinity
 lane artifact
 language information
 lap thigh
@@ -1704,7 +1683,7 @@ law philosophy
 lawn field
 lawsuit act
 lawyer professional
-layer region
+layer place
 layout design.cognition
 lb '*'
 lead leadership
@@ -1721,14 +1700,15 @@ leave time-period
 lecture teaching
 left place
 leftovers substance
-leg support.artifact
-leg.food meat
+leg support-device
+leg-of-meat meat
 legal-action act
 legal-age time-period
 legal-document document
 legal-power '*'
 legal-profession group
 legend fiction
+legend-key list
 legislation act
 legislature group
 leisure act
@@ -1754,14 +1734,14 @@ light-bulb device
 lighter device
 lily plant
 limb '*'
-limit region
+limit place
 limit.quantity '*'
 limitation disadvantage
 line road
 line-of-descent kinship
-line.communication text
+line-of-text text
 line.group group
-lineation region
+lineation place
 linen commodity
 linguistic-context part
 linguistics science
@@ -1784,6 +1764,7 @@ lock device
 locomotive container vehicle
 loft storey
 log wood
+log-cabin house
 logarithm information
 logic philosophy
 logic.cognition principle
@@ -1796,7 +1777,7 @@ loot '*'
 looting aggression
 loss '*'
 loss.possession '*'
-lot region.location
+lot region
 lottery game
 loudspeaker device
 lounge room
@@ -1816,7 +1797,7 @@ machine device
 machinery machine
 maestro artist
 magazine artifact
-magic-trick performance.act
+magic-trick performing
 magnitude '*'
 maid servant
 mail message
@@ -1859,8 +1840,8 @@ marsh physical-object
 mask clothing
 mass natural-object
 master-of-ceremonies person
-match lighter
-match.event contest
+match contest
+matchstick lighter
 material part substance
 mathematics science
 matrimony status
@@ -1889,12 +1870,12 @@ memorial structure
 memory device hardware
 memory.cognition cognition
 menace agent
+mental-association cognition
 mental-hospital hospital
 mental-image cognition
 mentality attitude
 menu list
 menu.food food
-mercantile-establishment structure
 merchandise commodity
 merchant person
 message information
@@ -1913,17 +1894,17 @@ military-action act
 military-control act
 military-operation activity
 military-service organization
+military-strike attack
 military-unit organization
 milk dairy-product drink
 mill machinery
 mind cognition
-mine device
-mine.artifact artifact
+mine artifact
 miner laborer
 mineral material
 minimum limit.quantity
 minister administrator
-ministry division.group.2
+ministry administrative-division
 minority number
 minute '*'
 miracle event
@@ -1944,7 +1925,6 @@ momentum force
 momentum.attribute '*'
 monarchy group
 monastery house
-monetary-value worth
 money currency
 money.possession belongings
 monk person
@@ -1959,7 +1939,7 @@ mosaic artifact
 mosque building
 mosquito insect
 mother parent
-motif design.artifact
+motif decorative-design
 motion act
 motivation '*'
 motivation.state condition.state
@@ -1968,11 +1948,10 @@ motorist driver
 motto saying
 mountain physical-object
 mountain-range physical-object
-mourning emotional-state
+mourning emotion
 mouse mammal
 mouth passage
 move act
-move.act activity
 movement group
 mud soil
 mug vessel
@@ -1983,6 +1962,7 @@ museum facility
 mushroom fungus
 mushroom.plant fungus
 music information
+music-band organization
 music-director musician
 musical-composition music
 musical-harmony music
@@ -2014,7 +1994,6 @@ neck '*'
 necktie clothing
 need condition.state
 needle artifact
-needle.artifact device
 negligence trait
 negotiation information
 neighbor person
@@ -2027,7 +2006,6 @@ newcomer person
 news info
 news-program programme
 news-report info
-news.communication info
 newspaper artifact
 night time-period
 nightmare dream
@@ -2041,8 +2019,8 @@ normal cognition
 north '*'
 nose organ.body
 note indication
-notebook computer
-notebook.communication book.artifact
+notebook book-copy
+notebook-computer computer
 notice information
 notice.communication act
 notion concept
@@ -2057,6 +2035,7 @@ nun person
 nurse professional
 nursery bedroom
 nut seed
+nutshell natural-object
 oak tree
 objection act
 observation cognition
@@ -2081,7 +2060,6 @@ onion bulb
 opera music
 operating-system software
 operation process
-operation.act undertaking
 opinion legal-document
 opinion-poll thinking
 opinion.communication information
@@ -2121,7 +2099,6 @@ oxygen chemical-element fluid
 pace '*'
 pack bundle
 pack-of-cards collection
-pack.group group
 package collection
 packet container
 page piece-of-paper
@@ -2147,7 +2124,7 @@ parameter factor
 parcel act
 pardon warrant
 parent ancestor
-park region.location
+park region
 parking '*'
 parliament legislature
 parole promise
@@ -2160,7 +2137,6 @@ partnership contract
 party group
 pass permission
 passage '*'
-passage.communication music
 passenger person
 passing accomplishment
 passion '*'
@@ -2169,7 +2145,8 @@ password identification info
 past '*'
 pastel '*'
 pastime activity
-pasture group region.location
+pastime-game activity
+pasture group region
 patch fabric piece
 patent document
 path place
@@ -2181,7 +2158,6 @@ patriotism loyalty
 patrol military-unit
 pattern exemplar
 pause '*'
-pause.act act
 payment commerce
 pb metal
 peace '*'
@@ -2204,8 +2180,8 @@ percentage proportion.relation
 perception cognition
 perceptiveness sensitivity
 performance show
-performance.act entertainment
 performer person
+performing entertainment
 perfume artifact
 period symbol
 period.time '*'
@@ -2234,7 +2210,7 @@ piano musical-instrument
 pie substance
 piece physical-object
 piece-of-paper paper.substance
-pier support.artifact
+pier support-device
 pig person
 pigeon bird
 pile collection
@@ -2257,16 +2233,15 @@ plant organism
 plaster tape
 plastic substance
 plate artifact
-platform artifact
 play activity
 player person
-playing-field region.location
+playground-swing mechanism plaything
+playing-field region
 playpen structure
 plaything artifact
 pleasure '*'
-plot region.location
+plot region
 plot.communication fiction
-plot.communication.2 chart.communication
 pneumonia disease
 pocket container
 poem information
@@ -2276,7 +2251,6 @@ point-of-view position
 pointer symbol
 poison substance
 pole artifact
-pole.location place
 police organization
 policeman person
 policy contract
@@ -2303,7 +2277,6 @@ post signal
 postage token
 postcard card.communication
 pot drug
-pot.artifact vessel
 potato plant
 potential '*'
 pottery artifact
@@ -2327,13 +2300,13 @@ premise proposition
 premium outgo
 preoccupation condition.state
 preoccupation.cognition idea
+prepared-dish food
 preponderance number
 prescription information
 prescription-drug medication
 presence '*'
 present gift
 presentation artifact
-presentation.communication information
 preservation condition.state
 presidency time-period
 president representative
@@ -2344,6 +2317,7 @@ pressure-level natural-event
 prestige status
 prey animal
 price worth
+price-quotation information
 pride satisfaction
 primary election
 prince leader
@@ -2370,7 +2344,6 @@ product quantity
 product.phenomenon consequence
 production act
 production-line artifact
-production.communication presentation.communication
 profession occupation
 professional adult
 professor professional
@@ -2389,7 +2362,6 @@ promise act information
 promotion act
 promotional-material information
 proof evidence
-proof.communication indication
 propaganda info
 property concept
 proportion placement
@@ -2408,10 +2380,11 @@ psychoanalysis therapy
 psychologist scientist
 psychology science
 public group
+public-attraction show
 public-house building
-public-lecture address.communication
+public-lecture formal-address
 public-opinion belief
-public-square region.location
+public-square region
 publication artifact
 publicity '*'
 publisher firm
@@ -2421,7 +2394,7 @@ pulse event
 pump mechanism
 pumpkin vegetable
 punch blow
-punch.food alcohol
+punch-drink alcohol
 punishment act
 pupil hole
 purchase act
@@ -2434,9 +2407,9 @@ quality degree
 quantity concept
 quarrel dispute
 quarter district
-quarter.possession coin
+quarter-coin coin
 quarter.time time-period
-quartz-glass glass.substance
+quartz-glass glass-material
 queen leader
 quest activity
 question act
@@ -2444,7 +2417,6 @@ questionnaire form
 queue line.group
 quota allotment
 quotation excerpt
-quotation.communication information
 rabbit mammal
 race contest
 race.group group
@@ -2468,7 +2440,7 @@ rake '*'
 rally group
 ranch farm
 randomness '*'
-range region.location
+range region
 rank status
 rap impact
 rape crime
@@ -2487,7 +2459,7 @@ rebellion act
 recapitulation summary
 receipt information
 reception artifact
-reception.group party
+reception-party party
 recess '*'
 recession condition.state
 recognition information
@@ -2495,7 +2467,6 @@ recommendation praise
 recompense correction
 record accomplishment
 record-album artifact
-record.possession information
 record.quantity '*'
 recording device
 recovery act
@@ -2513,12 +2484,10 @@ refugee person
 refugee-camp shelter
 refusal act
 region place
-region.location place
 register indication
 registration act
 regulation information
 rehabilitation therapy
-rehabilitation.act accomplishment
 rehearsal practice-session
 reign historic-period
 rejection act
@@ -2567,7 +2536,7 @@ resource asset
 respite pause
 response greeting
 responsibility act
-rest support.artifact
+rest support-device
 restaurant building
 restitution act
 restraint trait
@@ -2582,7 +2551,7 @@ return act
 reverse event
 reversion act
 review practice-session
-review.communication publication
+review-periodical publication
 reviewer authority
 revival change
 revolution act
@@ -2599,8 +2568,9 @@ right justice
 right-to-vote concept
 right-wing clique
 right.location place
+rightful-claim activity
 ring decoration
-ring.artifact platform
+ring.artifact artifact
 ring.attribute '*'
 riot violence
 risk undertaking
@@ -2640,17 +2610,16 @@ rule.cognition.2 process
 rule.communication information
 rule.time duration
 rumor gossip
-rung support.artifact
+rung support-device
 runner athlete
-rural-area region.location
+rural-area region
 sacrifice act
 sacrifice.possession loss.possession
 safety condition.state
 sail fabric piece
 sailor worker
-salad dish.food
+salad prepared-dish
 sale commerce
-sale.act commerce
 sales-talk promotional-material
 salesclerk employee
 salmon fish
@@ -2658,7 +2627,7 @@ salon shop
 salt food
 salvation safety
 sample example
-sanctuary region.location
+sanctuary region
 sand soil
 sandal shoe
 sarcasm information
@@ -2679,30 +2648,31 @@ schism act
 scholar person
 scholarship aid prize
 school institution
+school-class group
 school-term time-period
-school.group institution
 schoolchild person
 schoolhouse building
 science field-of-study
 scientist person
 scope magnitude
 score '*'
+scored-goal accomplishment
 scrap piece
 scratch appearance
 screen artifact
-screen.artifact artifact
+screen-netting artifact
 screw device
 script information
 sculpture artifact
 sea body-of-water
 seal mammal
-seal.communication symbol
+seal-stamp symbol
 seaport place
 search work
 seashore physical-object
 season time-period
-seat region.location
-seat.artifact furniture
+seat furniture
+seating-place region
 sec '*'
 second rank
 secrecy trait
@@ -2711,15 +2681,17 @@ secret-plan plan
 secretary assistant
 secretion part substance
 section physical-object
+section-title line-of-text
 sector aspect
 security-system device
 sediment substance
-seed fruit.plant
+seed botanical-fruit
 seeded-player player
 selection collection
 self consciousness
 self-control trait
 seller merchant
+selling commerce
 semblance cognition
 seminar course-of-instruction
 senior student
@@ -2733,15 +2705,15 @@ separation act
 sequence group
 serial programme
 series publication
-sermon address.communication
+sermon formal-address
 servant worker
 service assist
 service-department shop
 session coming-together
 set collection
 setting situation
-setting.location environment
-settlement region.location
+settlement region
+settler-colony group
 sex '*'
 shackle device
 shadow dark
@@ -2753,10 +2725,9 @@ share legal-document
 shark fish
 sheep mammal
 sheet linen
-shelf support.artifact
+shelf support-device
 shell natural-object
 shell.artifact artifact
-shell.plant natural-object
 shelter housing
 shield artifact
 shift time-period
@@ -2765,7 +2736,7 @@ shirt clothing
 shock '*'
 shoe artifact
 shooting act
-shop mercantile-establishment
+shop structure
 shopping purchase
 short-circuit artifact
 short-letter letter
@@ -2783,9 +2754,9 @@ sidewalk artifact
 siege military-action
 sieve filter
 sight sense
-sign information
-sign-of-the-zodiac region
-sign.communication clue
+sign clue
+sign-language-sign information
+sign-of-the-zodiac place
 signal information
 signature name
 signboard structure
@@ -2801,7 +2772,6 @@ singer performer
 single-file line.group
 sink fixture
 sister relative
-site region.location
 situation '*'
 size magnitude
 skeletal-system '*'
@@ -2834,7 +2804,7 @@ snow weather
 snub discourtesy
 soap compound
 soccer football
-social-club association.group
+social-club association
 social-occasion event
 social-science science
 social-welfare aid
@@ -2842,7 +2812,7 @@ society group
 sociology social-science
 sock clothing
 sodium metal
-sofa seat.artifact
+sofa seat
 software code
 software-library collection
 soil material
@@ -2851,16 +2821,13 @@ solicitation request
 solidarity '*'
 solo activity
 solution accomplishment
-solution.substance part substance
 soprano information
 sorrow '*'
-soul agent
 sound perception
-soup dish.food
+soup prepared-dish
 south '*'
 sovereign representative
 space character
-space.shape place
 spacecraft satellite vehicle
 speaker person
 specialist expert
@@ -2872,7 +2839,7 @@ spectrum scope
 speech information
 speed '*'
 spell information
-sphere region.location
+sphere region
 sphere.shape '*'
 spider arachnid
 spinach vegetable
@@ -2897,9 +2864,10 @@ squad military-unit
 square '*'
 stable building
 stadium structure
-staff symbol
-staff.group organization
-stage platform
+staff organization
+staff-rod symbol
+stage artifact
+stage-production information
 stage-set artifact
 stairway artifact
 stake investment
@@ -2918,7 +2886,7 @@ status '*'
 steak meat
 steam part substance
 steel part substance
-step support.artifact
+step support-device
 steward assistant
 stick artifact
 stimulation act
@@ -2929,7 +2897,7 @@ stock.possession '*'
 stockholder person
 stomach organ.body
 stone natural-object
-stool seat.artifact
+stool seat
 stop act
 storey structure
 storm natural-event
@@ -2944,7 +2912,6 @@ street.artifact road
 streetcar container vehicle
 strength '*'
 strike protest
-strike.act attack
 string artifact
 strip '*'
 stroke trouble.event
@@ -2973,7 +2940,7 @@ sum collection
 summary information
 summation process
 summer season
-summer-camp site
+summer-camp region
 summit meeting
 sun '*'
 sunday time-period
@@ -2984,19 +2951,19 @@ supermarket grocery-store
 supervisor leader
 supply '*'
 support assist
-support.artifact device
-surface region
+support-device device
+surface place
 surgeon doctor
 surgery medicine
 surprise change
 surrender despair
 surrogate peer
+surroundings environment
 survival '*'
 survivor person
 suspect person
 sweater clothing
 swing act
-swing.artifact mechanism plaything
 switch act
 sword weapon
 syllable part
@@ -3009,7 +2976,6 @@ table furniture
 tabular-array group
 tactic plan
 tail '*'
-tail.artifact artifact
 talk conversation
 tan condition.state
 tank container vehicle
@@ -3045,9 +3011,10 @@ tent structure
 term word
 terminal equipment
 terminology word
-territory region.location
+territory region
 terrorist radical
 text information
+text-passage music
 textbook book
 texture '*'
 thanks information
@@ -3071,7 +3038,6 @@ thumb finger
 thunderbolt event natural-event
 ticker organ.body
 ticket document
-ticket.communication legal-document
 tide event
 tier rank
 tiger mammal
@@ -3083,13 +3049,12 @@ time-slot '*'
 timetable schedule
 tin metal
 tip guidance
-tip.location region
+tip-end place
 tire hoop
 tissue '*'
 tissue-paper paper.substance
 title concept
 title-of-respect name
-title.communication line.communication
 toast bread
 toe '*'
 token symbol
@@ -3118,20 +3083,23 @@ tower structure
 town district
 trace indication
 track route
+tracking-chart chart.communication
 tract information
 traction natural-event
 trade occupation
 trader merchant
 traffic commerce
-traffic.group collection
+traffic-ticket legal-document
 tragedy information
 trail evidence
 train artifact
 train-ticket ticket
 trainer leader
 training activity
+training-workshop course-of-instruction
 trait '*'
 transaction act
+transaction-record information
 transmission gear
 transport act
 transportation commercial-enterprise
@@ -3158,7 +3126,7 @@ trouble.event event
 troupe organization
 trouser clothing
 truck container vehicle
-trust association.group
+trust association
 trustee person
 truth information
 tub vessel
@@ -3184,7 +3152,6 @@ unit concept
 unity '*'
 universe natural-object
 university institution
-university.group group
 unrest '*'
 upgrade grade
 urge desire
@@ -3210,16 +3177,16 @@ vehicle artifact
 vein tube
 velvet fabric
 venture commercial-enterprise
-venue region.location
+venue region
 venus '*'
+verbal-attack criticism
 verdict judgement
 version category
-version.communication explanation
+version-of-events explanation
 vertebrate animal
-vertex region
+vertex place
 vessel container
 veteran worker
-vicinity region.location
 victim person
 victory ending success
 video recording
@@ -3237,7 +3204,7 @@ visit coming-together
 visitor person
 vitamin food
 voice ability
-void space.shape
+void empty-space
 volcano mountain
 volition cognition
 volume '*'
@@ -3257,7 +3224,6 @@ wall-socket component
 wallop consequence
 war act
 ward housing
-ward.location district
 ward.person person
 wardrobe collection
 warrant legal-document
@@ -3266,6 +3232,7 @@ washbasin sink
 waste material
 watch instrument
 water compound liquid
+water-channel body-of-water
 water-faucet fixture mechanism
 watercraft vehicle
 waterfall body-of-water
@@ -3299,7 +3266,7 @@ whiskey alcohol
 widow woman
 width dimension
 wife spouse woman
-wilderness region.location
+wilderness region
 wildlife physical-object
 will legal-document
 wimp person
@@ -3307,7 +3274,6 @@ wind weather
 window artifact
 wine alcohol
 wing organ.body
-wing.artifact device
 winner person
 winnings '*'
 winter season
@@ -3329,11 +3295,9 @@ worker person
 workplace place
 works structure
 workshop workplace
-workshop.act course-of-instruction
 world cognition
 world-power country
 worm invertebrate
-worm.communication computer-program
 worry emotion
 worth '*'
 wound injury

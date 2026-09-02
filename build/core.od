@@ -6,7 +6,6 @@ abuse information
 academic-degree information
 academy school structure
 accident event
-accident.event event
 accomplishment act
 account statement
 accusation assertion
@@ -14,17 +13,16 @@ ace expert
 acid compound
 acquisition event
 act event
-act.communication information
+act-of-play information
 action event
 activity act
 ad promotional-material
 adaptation information
 address place
-address.communication act
+administrative-division organization
 admission event information
 adolescent person
 adoption activity
-adoption.act act
 adult person
 adventure undertaking
 adversary person
@@ -36,13 +34,14 @@ agent '*'
 aggression act
 air substance
 aircraft vehicle
+aircraft-wing device
 airline organization
 airplane aircraft
 airport place
 aisle artifact
 alarm device
 alarm-clock clock
-album book.artifact
+album book-copy
 alcohol drink
 ally country
 altar structure
@@ -54,6 +53,7 @@ amphibian vertebrate
 analogy thinking
 analyst adult
 animal organism
+animal-pack group
 annex artifact
 annotation information
 announcement information
@@ -64,14 +64,12 @@ apartment housing place
 apology information
 apparatus equipment
 apparel clothing
-appendix.communication information
 appliance device
 applicant person
 application computer-program
-application.communication request
 appointment information occupation
 appraisal event
-appraisal.communication document
+appraisal-report artifact document
 aquarium place vessel
 arachnid invertebrate
 arch entrance
@@ -81,18 +79,19 @@ argument information
 argumentation thinking
 armchair chair
 army military-service
+army-division military-unit
 arrow projectile
 article document physical-object
 artifact physical-object
 artist person
 ash substance
 assault activity
-assembly act
+assembly-hall room
 assertion declaration
 assignment undertaking
 assist activity
 assistant human worker
-association.group organization
+association organization
 assurance information
 asterisk character
 astronomy natural-science
@@ -100,10 +99,8 @@ athlete person
 atmosphere substance
 atom substance
 attack military-operation
-attack.act criticism
 attempt activity
-attraction.communication show
-auction sale.act
+auction selling
 audio information recording
 auditor human
 authority expert
@@ -119,25 +116,21 @@ bacterium microorganism
 bag container
 balcony structure
 ball equipment
-ball.group party
 ballet activity show
 balloon plaything
 ballot document
 band decoration
-band.communication collection
-band.group organization
 bandage dressing
 bang noise
 bankruptcy act
 banner flag
 banquet event
-bar.artifact support.artifact
 bark natural-object
 baron businessman
 barrel vessel
 barroom room
 barter commerce exchange
-base support.artifact
+base support-device
 basement storey
 basket container device
 bat mammal
@@ -145,15 +138,14 @@ bathroom room
 bathtub device vessel
 battery assault
 battle military-action
-battlefield region.location
+battlefield region
 battlefront place
 bay body-of-water
 beach physical-object place
-beam support.artifact
+beam support-device
 bear mammal
 beard hair
 bed furniture
-bed.artifact plot
 bedroom room
 bee insect
 beef meat
@@ -161,8 +153,8 @@ beer alcohol
 behavior activity
 beloved person
 belt clothing
-bench seat.artifact
-benefit.communication performance
+bench seat
+benefit-performance performance
 berry fruit
 bet activity
 betrothal promise
@@ -182,27 +174,30 @@ blade device
 blanket artifact
 blast explosion
 blessing support
-block region.location
+block region
 blood substance
 bloodshed event
 blow motion
 board artifact
-board.group committee
+board-of-directors committee
 boat watercraft
 body natural-object
 body-of-water natural-object place
 bolt screw
 bomb weapon
 bomber airplane
-bomber.person person
 book document publication
-book.artifact artifact
+book-appendix information
+book-copy artifact
+book-index list
 booklet book
 boot clothing
 booth room
+botanical-fruit natural-object
 bottle device vessel
+bottle-cap artifact
 bottom ship
-boundary-line region
+boundary-line place
 bow weapon
 bowl vessel
 box container device
@@ -230,6 +225,7 @@ burial funeral
 bus artifact
 bus-ticket artifact ticket
 business-deal transaction
+business-operation undertaking
 businessman person
 butter dairy-product
 butterfly insect
@@ -237,7 +233,6 @@ button device
 cab car container
 cabaret structure
 cabin room
-cabin.artifact house
 cabinet furniture
 cable rope
 cadaver dead-body
@@ -253,13 +248,13 @@ candle device
 cane device stick
 canvas fabric
 cap clothing
-cap.artifact artifact
 capital character
-capital.location center.location
-caption title.communication
+capital-city central-area city
+caption section-title
 car land-vehicle
 carbon chemical-element
 card artifact
+card-hand collection
 care act
 carnival entertainment
 carrot root
@@ -273,7 +268,6 @@ cast-of-characters group
 castle structure
 casualty victim
 cat mammal
-catch.person person
 cathedral church
 cattle mammal
 cause undertaking
@@ -283,41 +277,43 @@ celestial-body natural-object
 cell physical-object
 cellular-telephone phone
 celluloid artifact
-cemetery site
+cemetery place
 censoring act
 census information work
-center.location region.location
+central-area region
 centre place
 ceremony social-occasion
 certificate document
-chair seat.artifact
+chair seat
 chalk artifact
 challenge act
 champagne wine
 champion person
 championship event
+chance-event event
 change event
 channel artifact
-channel.object body-of-water
 chapter information
 character symbol
 charge act
+charitable-organization institution
 charity act
-charity.group institution
 chart map physical-object
 charter artifact document
 chauvinist advocate
-check move.act
+check game-move
 check-mark symbol
 cheese dairy-product
 chemical material
 chemical-element substance
 chemical-reaction event
+chemical-solution substance
 chemistry natural-science
 cherry fruit
 chest-of-drawers furniture
 chicken bird
 child person
+child-adoption act
 chimney device
 chip device
 chit invoice
@@ -330,11 +326,10 @@ circular ad
 citation annotation
 citizen person
 city district settlement
+city-ward district
 civilian citizen
-claim activity information
-claim.communication assertion
+claim assertion
 class people
-class.group group
 classroom room
 clay soil
 clemency event
@@ -352,15 +347,13 @@ code information
 coevals people
 coffin box
 coin cash information
-coincidence accident
+coincidence chance-event
 collapse event
 collar artifact
 collection group information
 college institution
-colon.communication symbol
-colony region.location
-colony.group group
-column support.artifact
+colony region
+column support-device
 comedy information
 comic-strip cartoon
 coming-together act
@@ -370,11 +363,13 @@ commercial-enterprise commerce
 committee organization
 commodity artifact
 communication act
+communicative-contact communication
 community group
 company institution
 comparison event
-compartment space.shape
+compartment empty-space
 competition act
+competition-jury committee
 component device
 composer musician
 composition essay
@@ -386,12 +381,12 @@ computer-mouse device
 computer-program software
 computer-science field-of-study
 computer-virus computer-program
+computer-worm computer-program
 comrade person
 concert performance
 concession act information
 conclusion information
 concrete artifact
-condition.communication information
 conductor worker
 confederation organization
 conference meeting
@@ -406,22 +401,21 @@ consensus event
 conservation protection
 constituency group
 contact interaction
-contact.communication communication
 container artifact
 contemporary agent
 contest event
-contest.act act
 continent land
 contract legal-document
+contract-condition information
 contraction event
 contribution act
 control-stick artifact
-convention meeting
 conversation communication
 conversion change
 cook worker
 cookie cake
 cooking-pan artifact
+cooking-pot vessel
 cooperation activity
 copper metal
 copy artifact
@@ -432,6 +426,7 @@ core centre
 corner place
 correspondence information
 corruption act
+cost-estimate information
 costume clothing
 cotton fabric
 council organization
@@ -448,12 +443,12 @@ courtship act
 coverage info
 crackpot person
 craftsman worker
-crash accident.event
+crash accident
 creation activity
 credit-card identification service
 cricket insect
 criminal-record list
-crisp dish.food
+crisp prepared-dish
 criticism information
 critique information
 cross structure
@@ -483,9 +478,10 @@ dead-body natural-object
 deal act
 death change
 debate act
-deck platform
+deck artifact
 declaration information
 decoration artifact
+decorative-design decoration
 decrease change
 decree legal-document
 deed legal-document
@@ -503,20 +499,19 @@ depository-financial-institution institution
 deputation organization
 descent event
 desert place
-design.artifact decoration
 desk furniture
 destruction ending
 detector device
 device artifact
 diagnosis act
-diagram drawing.artifact image
+diagram image
 dialect language
 dialog talk
 dialogue information
 diary artifact information
 dictionary book
 diet activity
-dig site
+dig place
 diminution act
 diplomat official
 director member
@@ -527,16 +522,13 @@ discount diminution
 discussion communication
 dish container device
 dish-aerial device
-dish.food food
 disk artifact
 display activity
 dispute act
 dissertation information
 distributor company
-district region.location
+district region
 diversion act
-division.group military-unit
-division.group.2 organization
 divorce separation
 doctor adult
 document information
@@ -547,7 +539,7 @@ dolphin whale
 dome roof
 door artifact
 doorbell push-button
-doorsill support.artifact
+doorsill support-device
 dormitory building housing
 dose drug
 draft text
@@ -555,15 +547,13 @@ drain artifact
 dramatic-play information
 drawer container device
 drawing image
-drawing.artifact artifact
 dressing artifact
 drill training
-drill.artifact artifact
+drill-tool artifact
 drink food
 drinking activity
 drive journey
 driveway artifact
-drop.event descent
 drug substance
 drum musical-instrument
 duck bird
@@ -589,9 +579,10 @@ elevator device
 elite class
 embassy building
 empire organization
+empty-space place
 enchantress person
 encounter event
-end region
+end place
 end-product artifact
 ending event
 enemy people
@@ -602,21 +593,19 @@ entertainment activity
 enticement act
 entrance artifact
 envelope container device
-environment region.location
+environment region
 episode information programme
 equipment artifact
 erosion event
 escape act
 essay information
-estimate.communication information
 ethics philosophy
 event '*'
 evidence information
 examination work
 examiner human investigator
-excerpt passage.communication
+excerpt text-passage
 exchange act
-exchange.communication conversation information
 excuse information
 execution punishment
 executive group
@@ -626,7 +615,7 @@ expansion act
 expedition organization
 experiment research
 expert person
-explanation.communication act
+explaining act
 exploration journey
 explosion event
 expressway artifact
@@ -644,7 +633,6 @@ failure person
 fair event
 family organization
 family-line kin
-farewell event
 farm place
 farmer person
 farming industry
@@ -658,7 +646,7 @@ fence structure
 ferry boat ship
 festival celebration
 fiction information
-field region.location
+field region
 field-of-study '*'
 fig fruit
 fight act
@@ -667,7 +655,7 @@ file-cabinet furniture
 film video
 filter device
 finance management
-finish region
+finish place
 fire structure
 fireman person
 firm organization
@@ -684,7 +672,6 @@ flashlight device
 flat tire
 flatware artifact
 flight journey transport
-flight-of-stairs stairway
 flock group
 flood natural-event
 floor artifact
@@ -697,6 +684,9 @@ fool person
 forestry field-of-study
 fork device
 form document
+formal-address act
+formal-application request
+formal-proof indication
 formula information
 foundation institution
 fountain fixture
@@ -705,10 +695,11 @@ franchise organization
 frank sausage
 fraud activity
 freckle physical-object
-freeze pause.act
+free-fall descent
+freeze event
+frequency-band collection
 frog amphibian
-fruit food fruit.plant
-fruit.plant natural-object
+fruit botanical-fruit food
 fuel substance
 fun activity
 fundamental-law legal-document
@@ -718,27 +709,28 @@ furniture artifact
 galaxy collection
 gallery room
 game activity information
-game.act activity
+game-move activity
 garage building
+garden-bed plot
 gasoline chemical fuel
 gate structure
 gaze activity
 gear mechanism
 genius human
 gentleman man
+geographic-pole place
 geography earth-science
 gesture act motion
 ghost agent
 giant human
 girlfriend woman
 glance activity
-glass.substance substance
+glass-material substance
 glove clothing
 glow natural-event
 glue material
-goal.act accomplishment
-goal.artifact equipment
 goalkeeper athlete player
+goalposts equipment
 goat mammal
 gold metal
 gossip act
@@ -751,7 +743,6 @@ graph information
 graphics artifact
 grass plant
 grave artifact topographic-point
-green.person person
 greenhouse building
 greeting event information
 grimace event
@@ -769,22 +760,20 @@ habitat environment
 hair natural-object
 haircut hair
 hall building
-hall.artifact room
 hallway artifact
 ham meat
 hammer tool
 hand assist
-hand.communication information
-hand.group collection
 handbag container device
 handcart vehicle
 haste act
 hat clothing
 hay food
-hayfield region.location
+hayfield region
 head-covering clothing
-headline line.communication
+headline line-of-text
 headquarters office
+heated-exchange conversation information
 heating-system artifact
 hedge fence
 helicopter aircraft
@@ -803,6 +792,7 @@ honey food
 hook device
 hoop artifact
 horizon place
+horizontal-bar support-device
 horoscope information
 horse mammal
 horseshoe shield
@@ -830,8 +820,8 @@ impact event
 imposter human wrongdoer
 impudence information
 incident event
-index.communication list
 indication information
+indicator-needle device
 individual organism
 industry commercial-enterprise
 infection incident
@@ -840,8 +830,7 @@ information '*'
 inhabitant person
 inhibition activity
 initial letter-of-the-alphabet
-injection act
-injection.act tending
+injection tending
 innovation artifact
 inquest work
 insect invertebrate
@@ -856,7 +845,7 @@ interface computer-program
 interview act
 intro act
 introduction event information
-introduction.communication textbook
+introductory-text textbook
 invasion event
 invention event
 invertebrate animal
@@ -865,7 +854,6 @@ invitation act information
 invoice statement
 iron metal
 island land landform
-issue.act act
 jacket coat
 jail-cell room
 jam food
@@ -874,7 +862,6 @@ jean apparel trouser
 jersey shirt
 jet event
 job activity
-job.artifact workplace
 joint artifact
 journal information publication
 journey activity
@@ -884,11 +871,9 @@ judgment act information
 judgment-of-conviction judgement
 jump change
 jury group
-jury.group committee
 justification information
-kettle device pot.artifact
+kettle cooking-pot device
 key device
-key.communication list
 killer person
 kin group
 king artifact
@@ -910,7 +895,7 @@ lamp device furniture
 land place
 land-vehicle vehicle
 landform natural-object place
-landscape place
+landmine device
 lane artifact
 language information
 larceny activity
@@ -920,7 +905,7 @@ law field-of-study
 lawn field
 lawsuit act
 lawyer adult
-layer region
+layer place
 leadership activity
 leaf natural-object
 leaf-blade leaf
@@ -928,11 +913,12 @@ lease contract
 leash device
 leather artifact material
 lecture teaching
-leg support.artifact
-leg.food meat
+leg support-device
+leg-of-meat meat
 legal-action act
 legal-document document
 legend fiction
+legend-key list
 legislation act information
 leisure act
 lemon artifact
@@ -947,8 +933,8 @@ light device
 light-bulb device
 lighter device
 lily plant
-limit region
-line.communication text
+limit place
+line-of-text text
 linen artifact
 linguistics humanities science
 link device
@@ -962,11 +948,12 @@ lobby organization
 locating activity
 lock device
 locomotive vehicle
+log-cabin house
 logic philosophy
 look-alike person
 looking-glass mirror
 looting aggression
-lot region.location
+lot region
 lottery game
 lounge room
 lover person
@@ -977,7 +964,7 @@ machine device
 machinery machine
 maestro artist
 magazine artifact information
-magic-trick performance.act
+magic-trick performing
 maid servant
 mail information
 mail-service communication
@@ -997,8 +984,8 @@ march act
 marketing commerce
 marriage-proposal information
 mask clothing
-match lighter
-match.event contest
+match contest
+matchstick lighter
 material substance
 mathematics science
 maze artifact
@@ -1026,14 +1013,14 @@ military-action act
 military-control act
 military-operation activity
 military-service organization
+military-strike attack
 military-unit organization
 milk dairy-product drink
 mill machinery
-mine device
-mine.artifact artifact
+mine artifact
 miner worker
 mineral material
-ministry division.group.2
+ministry administrative-division
 mirror device
 mistake act
 mix event
@@ -1049,20 +1036,20 @@ monkey mammal
 mosaic artifact information
 mosque building
 mosquito insect
-motif design.artifact
+motif decorative-design
 motion event
 motorcycle container vehicle
 motto saying
 mountain landform
 mouse mammal
 move act
-move.act activity
 movement group
 mug device vessel
 murder act
 museum facility place
 mushroom fungus
 music information
+music-band organization
 music-recording audio
 musical-composition information
 musical-instrument device
@@ -1080,19 +1067,17 @@ nausea event
 navy military-service
 necktie clothing
 needle device
-needle.artifact device
 nest natural-object
 net equipment
 news information
 news-program information programme
 news-report info
-news.communication information
 newspaper information series
 noise event
 nomination act information
 note document indication
-notebook computer
-notebook.communication artifact
+notebook artifact
+notebook-computer computer
 notice information
 noun information
 novel fiction
@@ -1101,6 +1086,7 @@ numeral symbol
 nun person
 nurse adult
 nursery bedroom
+nutshell natural-object
 oak tree
 objection act
 occupation activity
@@ -1115,7 +1101,6 @@ onion bulb
 opera music
 operating-system software
 operation process
-operation.act undertaking
 opinion legal-document
 opinion-poll information
 orbit route
@@ -1136,7 +1121,6 @@ owner person
 oxygen chemical-element
 pack artifact
 pack-of-cards collection
-pack.group group
 package collection
 packet container
 pain-in-the-neck person
@@ -1154,19 +1138,19 @@ paradox information
 paragraph information
 parcel act
 pardon information
-park region.location
+park region
 parole promise
 participant person
 partner person
 partnership contract
 party event group
 pass information
-passage.communication information
 passenger person
 passport legal-document
 password identification info
 pastime activity
-pasture region.location
+pastime-game activity
+pasture region
 patch fabric
 patent document
 path place
@@ -1174,7 +1158,6 @@ patient human
 patio structure
 patriot person
 patrol military-unit
-pause.act event
 payment commerce
 pb chemical-element
 peak topographic-point
@@ -1188,8 +1171,8 @@ people group
 pepper plant
 perceiver person
 performance show
-performance.act entertainment
 performer person
+performing entertainment
 perfume artifact
 period symbol
 permission information
@@ -1210,7 +1193,7 @@ physical-object '*'
 physics natural-science
 piano musical-instrument
 pie substance
-pier support.artifact
+pier support-device
 pig mammal person
 pigeon bird
 pile collection
@@ -1226,14 +1209,13 @@ plant organism
 plaster tape
 plastic substance
 plate artifact
-platform artifact
 play activity information
 player person
-playing-field region.location
+playground-swing mechanism plaything
+playing-field region
 playpen device structure
 plaything artifact
-plot region.location
-plot.communication.2 information
+plot region
 pocket container
 podcast audio
 poem information
@@ -1241,7 +1223,6 @@ poetry information
 pointer symbol
 poison substance
 pole artifact
-pole.location place
 police organization
 policy contract
 political-campaign contest
@@ -1257,7 +1238,6 @@ post information
 postage token
 postcard information
 pot agent drug
-pot.artifact vessel
 potato plant
 pottery artifact
 pound structure
@@ -1268,13 +1248,14 @@ praise information
 prayer activity
 predator animal
 premise proposition
+prepared-dish food
 prescription information
 prescription-drug drug
 present event
 presentation document
-presentation.communication information
 press machine
 prey animal
+price-quotation information
 primary election
 prince person
 princess human
@@ -1286,7 +1267,6 @@ process activity
 producer person
 production act
 production-line artifact
-production.communication presentation.communication
 profession occupation
 professor adult
 profile information
@@ -1297,7 +1277,6 @@ projectile weapon
 promise act information
 promotion act
 promotional-material information
-proof.communication indication
 propaganda information
 proposal act information
 proposition information
@@ -1310,30 +1289,30 @@ psychoanalysis therapy
 psychologist scientist
 psychology social-science
 public group
+public-attraction show
 public-house building
-public-lecture address.communication
-public-square region.location
+public-lecture formal-address
+public-square region
 publication artifact
 publisher firm
 pulp natural-object
 pulse event
 pump mechanism
 punch act blow
-punch.food alcohol
+punch-drink alcohol
 punishment act
 purchase transaction
 push-button electric-switch
 puzzle artifact
 quarrel dispute
 quarter district
-quarter.possession coin
-quartz-glass glass.substance
+quarter-coin coin
+quartz-glass glass-material
 quest activity
 question act information
 questionnaire form
 queue group
 quotation excerpt
-quotation.communication information
 rabbit mammal
 race contest
 racetrack facility
@@ -1347,20 +1326,19 @@ rain weather
 rainbow event
 rally event
 ranch farm
-range region.location
+range region
 rap impact
 rape activity
 rat mammal
 rebellion act
 recapitulation summary
 receipt information
-reception.group party
+reception-party party
 recession event
 recognition information
 recommendation praise
 recompense act
 record accomplishment
-record.possession information
 recording device
 recovery act
 referee person
@@ -1371,11 +1349,9 @@ refugee person
 refugee-camp shelter
 refusal act
 region place
-region.location place
 register indication
 registration act
 rehabilitation therapy work
-rehabilitation.act accomplishment
 rehearsal practice-session
 rejection act
 religious-service activity
@@ -1398,7 +1374,7 @@ resignation document
 resistance act
 resolution act information
 resort hotel
-rest support.artifact
+rest support-device
 restaurant building organization
 restitution act
 result event
@@ -1406,7 +1382,7 @@ retaliation act
 return act
 reversion act
 review information practice-session
-review.communication publication
+review-periodical publication
 revival change
 revolution act
 reward information
@@ -1414,8 +1390,8 @@ rhetoric humanities
 ribbon artifact
 rifle gun
 right-wing group
+rightful-claim activity
 ring decoration
-ring.artifact platform
 riot violence
 ritual activity
 river stream
@@ -1439,20 +1415,19 @@ rug artifact
 ruin building
 rule measuring-stick
 rumor gossip information
-rung support.artifact
+rung support-device
 runner athlete
-rural-area region.location
+rural-area region
 sacrifice act
 sail artifact
 sailor worker
-salad dish.food
+salad prepared-dish
 sale commerce
-sale.act commerce
 sales-talk promotional-material
 salmon fish
 salon shop
 salt food
-sanctuary region.location
+sanctuary region
 sandal shoe
 satellite equipment
 sauce food
@@ -1465,48 +1440,50 @@ scene information
 schedule list
 schism act
 school institution
-school.group organization
+school-class group
 schoolhouse building
 science field-of-study
 scientist person
+scored-goal accomplishment
 scrap physical-object
 screen artifact
-screen.artifact artifact
+screen-netting artifact
 screw device
 script information
 sculpture artifact information
 sea body-of-water
 seal mammal
-seal.communication symbol
+seal-stamp symbol
 search work
-seat place
-seat.artifact furniture
+seat furniture
+seating-place place
 secretary assistant
 secretion substance
+section-title line-of-text
 security-system device
 sediment substance
-seed fruit.plant
+seed botanical-fruit
 selection collection
+selling commerce
 seminar course-of-instruction
 sentence information
 separation act
 series publication
-sermon address.communication
+sermon formal-address
 servant worker
 service assist
 service-department shop
 session coming-together
 set collection
-setting.location environment
-settlement region.location
+settlement region
+settler-colony group
 shackle device
 shaft artifact
 shark fish
 sheep mammal
 sheet linen
-shelf support.artifact
+shelf support-device
 shell natural-object
-shell.plant natural-object
 shelter housing
 shield artifact
 ship watercraft
@@ -1518,14 +1495,14 @@ shopping purchase
 short-letter artifact letter
 short-pants trouser
 shot artifact
-shoulder region
+shoulder place
 show event
 shower fixture
 sidewalk artifact
 siege military-action
 sieve filter
-sign-of-the-zodiac region
-sign.communication information
+sign information
+sign-of-the-zodiac place
 signal information
 signboard structure
 silk fabric
@@ -1533,7 +1510,6 @@ silver metal
 silver-screen artifact
 singer performer
 sink fixture
-site region.location
 sketch summary
 ski-tow artifact
 skin natural-object
@@ -1547,29 +1523,27 @@ sludge substance
 smile information
 snail mollusc
 snake reptile
-social-club association.group
+social-club association
 social-occasion event
 social-science science
 sociology social-science
 sock clothing
 sodium metal
-sofa seat.artifact
+sofa seat
 software code
 software-library collection software
 soil material
 soldier worker
 solicitation request
 solo activity
-solution.substance substance
-soup dish.food
+soup prepared-dish
 space character
-space.shape place
 spacecraft vehicle
 spectacles instrument
 spectator perceiver
 speech information
 spell information
-sphere region.location
+sphere region
 spider arachnid
 spinach vegetable
 spontaneous-abortion abortion
@@ -1581,9 +1555,10 @@ spreadsheet computer-program document
 squad military-unit
 stable building
 stadium structure
-staff information
-staff.group organization
+staff organization
+staff-rod information
 stage artifact
+stage-production information
 stage-set artifact
 stairway artifact
 stalk natural-object
@@ -1597,14 +1572,14 @@ statue sculpture
 steak meat
 steam substance
 steel substance
-step support.artifact
+step support-device
 steward assistant
 stick artifact
 stimulation act
 stitch artifact
 stock merchandise
 stone natural-object
-stool seat.artifact
+stool seat
 stop act
 storey structure
 storm natural-event
@@ -1616,7 +1591,6 @@ stream body-of-water
 street artifact road
 streetcar vehicle
 strike protest
-strike.act attack
 string artifact
 stroke event
 structure artifact
@@ -1640,18 +1614,17 @@ sunlight natural-event
 sunrise event
 supermarket grocery-store
 support assist
-support.artifact device
-surface region
+support-device device
+surface place
 surgeon doctor
 surgery medicine
+surroundings environment
 sweater clothing
 swing event
-swing.artifact mechanism plaything
 switch act
 sword weapon
 symbol information
 table furniture
-tail.artifact artifact
 talk conversation information
 tank vehicle
 tape device
@@ -1666,9 +1639,10 @@ temple building
 tending activity
 tent structure
 terminal equipment
-territory region.location
+territory region
 terrorist radical
 text information
+text-passage information
 textbook book
 thanks information
 theatrical-role activity
@@ -1680,14 +1654,12 @@ thinking event
 thread artifact
 throne chair
 ticket document
-ticket.communication legal-document
 tiger mammal
 tile slab
 timetable schedule
 tin metal
-tip.location region
+tip-end place
 tire hoop
-title.communication line.communication
 token symbol
 tool device
 tooth structure
@@ -1703,13 +1675,16 @@ towel device
 tower structure
 town district settlement
 trace indication
+tracking-chart information
 tract information
 traffic commerce
-traffic.group collection
+traffic-ticket legal-document
 tragedy information
 train-ticket artifact ticket
 training activity
+training-workshop course-of-instruction
 transaction act
+transaction-record information
 transmission gear
 transport act
 trap device
@@ -1728,7 +1703,7 @@ trouble event
 troupe organization
 trouser clothing
 truck land-vehicle
-trust association.group
+trust association
 tub device vessel
 tune music
 tunnel artifact
@@ -1740,7 +1715,6 @@ undertaking work
 uniform clothing
 union organization
 university school
-university.group group
 urine waste
 use activity
 vacation event
@@ -1750,14 +1724,14 @@ vegetable food
 vehicle machine
 vein vessel
 velvet fabric
-venue region.location
+venue region
+verbal-attack criticism
 verdict judgement
-version.communication information
+version-of-events information
 vertebrate animal
-vertex region
+vertex place
 vessel container
 veteran worker
-vicinity region.location
 victim human
 victory ending success
 video information recording
@@ -1770,7 +1744,7 @@ virus agent microorganism
 visit coming-together
 visitor person
 vitamin substance
-void space.shape
+void empty-space
 volcano mountain
 volunteer worker
 vote act
@@ -1782,13 +1756,13 @@ wake activity
 wall structure
 war act
 ward artifact
-ward.location district
 warrant legal-document
 warrior person
 washbasin device sink
 waste material
 watch clock
 water compound liquid
+water-channel body-of-water
 water-faucet fixture mechanism
 watercraft vehicle
 waterfall body-of-water landform
@@ -1808,13 +1782,12 @@ whip instrument
 whirligig plaything
 whiskey alcohol
 widow woman
-wilderness region.location
+wilderness region
 wildlife physical-object
 will artifact legal-document
 wimp person
 window artifact
 wine alcohol
-wing.artifact device
 wire artifact
 wiretap work
 withdrawal act
@@ -1830,10 +1803,8 @@ worker person
 workplace place
 works structure
 workshop place
-workshop.act course-of-instruction
 world-power country
 worm invertebrate
-worm.communication computer-program
 wrongdoer person
 yacht boat
 yard place

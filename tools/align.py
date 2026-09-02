@@ -110,8 +110,33 @@ def read_overrides():
     return ov
 
 
+def read_names():
+    """offset -> chosen name (align/names.tsv: offset  name  note) — the hand-picked
+    names for concepts whose word is taken by another sense."""
+    out = {}
+    p = ROOT / "align/names.tsv"
+    if p.exists():
+        for row in csv.reader(open(p), delimiter="\t"):
+            if row and not row[0].startswith("#") and len(row) >= 2 and row[1].strip():
+                out[row[0].strip()] = row[1].strip()
+    return out
+
+
+def read_drops():
+    """Concepts left out of the pack on review (align/drop.tsv: offset-or-name  reason)."""
+    out = set()
+    p = ROOT / "align/drop.tsv"
+    if p.exists():
+        for row in csv.reader(open(p), delimiter="\t"):
+            if row and not row[0].startswith("#"):
+                out.add(row[0].strip())
+    return out
+
+
 def main():
     synsets = read_synsets()
+    chosen = read_names()
+    drops = read_drops()
     sense_index = read_sense_index()
     sense1 = read_sense1()
     sumo_map = read_sumo_mapping()
@@ -137,13 +162,15 @@ def main():
         else:
             by_offset[off] = name
         concepts[name] = off
-    candidates = read_core_wordnet(sense_index)
-    reserved = {normalise(synsets[o][0][0]) for o in candidates}
+    candidates = [o for o in read_core_wordnet(sense_index) if o not in drops]
+    reserved = {normalise(synsets[o][0][0]) for o in candidates} | set(chosen.values())
     for off in candidates:
         if off in by_offset:
             continue
         name = normalise(synsets[off][0][0])
-        if name in concepts:
+        if off in chosen:
+            name = chosen[off]
+        elif name in concepts:
             # The bare word is taken by another sense.  Prefer another lemma of
             # this synset that is not itself a concept and not a bare word in
             # WordNet's sense-1 position of some other concept (`bag` ->
@@ -164,6 +191,8 @@ def main():
     for name, ov in overrides.items():
         if name not in concepts:
             concepts[name] = ov.get("wordnet") or None
+    for d in drops:
+        concepts.pop(d, None)
 
     # --- label indexes of the label-aligned sources
     graphs = {s: Graph.load(ROOT / p) for s, p in LABEL_SOURCES.items()}
