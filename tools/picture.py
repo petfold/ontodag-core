@@ -65,16 +65,19 @@ def branches_of(par, roots):
 
 def dot(par, keep, size, up, roots, *, big_labels=True):
     ids = {n: f'"{n}"' for n in keep}
-    lines = ["digraph core {", "  rankdir=TB; ranksep=0.8; nodesep=0.22; splines=true; outputorder=edgesfirst;",
+    lines = ["digraph core {", "  root=\"*\"; rankdir=TB; ranksep=0.8; nodesep=0.22; splines=true; outputorder=edgesfirst;",
              '  node [shape=box, style="rounded,filled", color="#8a7f70", fontname=Helvetica, fontsize=11];',
              '  edge [color="#a89c8c", arrowsize=0.55];']
+    # the DAG root: every top-level category hangs from `*`
+    lines.append(f'  "*" [label="*\\n{sum(1 for x in par)}" fillcolor="#8a7f70" fontcolor="white" fontsize=14 penwidth=1.6];')
+    lines.extend(f'  "*" -> {ids[r]};' for r in roots if r in keep)
     for n in sorted(keep):
         bs = up(n)
         fill = ROOT_FILL if n in roots else (BRANCH_COLOURS[next(iter(bs))] if len(bs) == 1 else "#f2efe9")
         label = f"{n}\\n{size(n)}" if (big_labels or n in roots) and size(n) else n
         extra = ' fontsize=13 penwidth=1.6' if n in roots else ''
         lines.append(f'  {ids[n]} [label="{label}" fillcolor="{fill}"{extra}];')
-    lines.append("  { rank=min; " + " ".join(ids[r] for r in roots if r in keep) + " }")
+    lines.append("  { rank=same; " + " ".join(ids[r] for r in roots if r in keep) + " }")
     for n in keep:
         for p in par[n]:
             if p in keep:
