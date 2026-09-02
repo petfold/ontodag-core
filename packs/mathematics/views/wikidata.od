@@ -7,6 +7,7 @@ algebra-over-a-field mathematical-ring vector-space
 algebraic-magma algebraic-structure
 algebraic-number complex-number
 algebraic-structure mathematical-structure
+antichain subset
 antisymmetric-relation binary-relation
 arithmetic-operation mathematical-operation
 automorphism endomorphism isomorphism
@@ -16,13 +17,16 @@ bijection surjective-function
 binary-relation mathematical-set
 binomial polynomial
 bipartite-graph undirected-graph
-boolean-algebra commutative-ring mathematical-lattice monoid
+boolean-algebra commutative-ring heyting-algebra
 boolean-function function
+bounded-lattice mathematical-lattice
 cardinal-number ordinal-number
 circle conic-section geometric-shape
 classical-logic formal-system
+closure-operator monotone-function
 commutative-ring mathematical-module mathematical-ring
 complete-graph connected-graph
+complete-lattice mathematical-lattice
 complex-number quaternion totally-ordered-set
 composite-number '*'
 computability-theory mathematical-logic
@@ -33,11 +37,13 @@ connected-graph undirected-graph
 convergence function
 correlation-coefficient number
 countable-set mathematical-set
+covering-relation '*'
 cyclic-graph undirected-graph
 cyclic-group abelian-group
 decagon polygon
 decidability '*'
 decision-problem '*'
+dedekind-macneille-completion '*'
 deductive-reasoning '*'
 degree-of-freedom function
 description-logic formal-system
@@ -45,6 +51,8 @@ deviation number
 diagonal totally-ordered-set
 directed-acyclic-graph directed-graph
 directed-graph mathematical-graph
+directed-set mathematical-set
+distributive-lattice mathematical-lattice
 divergence function
 division-ring mathematical-ring
 dodecagon polygon
@@ -60,11 +68,14 @@ finite-field finite-set mathematical-field
 finite-group mathematical-group
 finite-set countable-set
 first-order-logic '*'
+fixed-point '*'
 flow-network directed-graph weighted-graph
+formal-concept-analysis '*'
 formal-system '*'
 fractal mathematical-set
 function binary-relation
 fuzzy-logic '*'
+galois-connection '*'
 geometric-shape mathematical-set
 godel-incompleteness-theorem '*'
 graph-clique complete-graph induced-subgraph
@@ -75,11 +86,13 @@ graph-isomorphism graph-homomorphism isomorphism
 graph-matching mathematical-set
 graph-path '*'
 graph-vertex '*'
+greatest-element '*'
 hamiltonian-path graph-path
 harmonic-progression function
 hasse-diagram '*'
 heptagon polygon
 hexagon polygon
+heyting-algebra bounded-lattice distributive-lattice monoid
 hilbert-space banach-space vector-space
 homogeneous-polynomial polynomial
 homomorphism function
@@ -89,6 +102,7 @@ independent-set induced-subgraph
 induced-subgraph subgraph
 inductive-reasoning '*'
 inference-rule '*'
+infimum lower-bound
 infinite-set mathematical-set
 infinitesimal number
 injective-function function
@@ -99,9 +113,12 @@ inverse-function mathematical-operation
 irrational-number real-number
 isometry bijection
 isomorphism '*'
+join-semilattice partially-ordered-set
+knaster-tarski-theorem '*'
 lambda-calculus formal-system
 lemma theorem
 lie-algebra algebra-over-a-field
+linear-extension '*'
 linear-map homomorphism
 linear-operator linear-map
 logical-completeness function
@@ -115,6 +132,7 @@ logical-operation function
 logical-predicate mathematical-set
 logical-soundness '*'
 lower-bound partial-order
+lower-set subset
 manifold topological-space
 material-implication '*'
 mathematical-category mathematical-structure
@@ -122,7 +140,7 @@ mathematical-field abelian-group algebra-over-a-field commutative-ring division-
 mathematical-graph hypergraph
 mathematical-group monoid quasigroup
 mathematical-induction '*'
-mathematical-lattice partially-ordered-set
+mathematical-lattice join-semilattice meet-semilattice
 mathematical-logic '*'
 mathematical-module algebraic-structure
 mathematical-operation function
@@ -130,13 +148,17 @@ mathematical-ring algebraic-structure
 mathematical-set algebraic-structure
 mathematical-structure '*'
 matrix tensor
+meet-semilattice partially-ordered-set
 metric-function function
 metric-space topological-space
+minimal-element '*'
 minimum-spanning-tree spanning-tree weighted-graph
 modal-logic formal-system
 model-theory mathematical-logic
+modular-lattice mathematical-lattice
 monic-polynomial polynomial
 monoid semigroup
+monotone-function function
 multigraph hypergraph
 natural-number '*'
 nonagon polygon
@@ -144,6 +166,10 @@ number '*'
 octagon polygon
 odd-number integer
 open-interval mathematical-set
+order-dimension '*'
+order-embedding monotone-function
+order-isomorphism isomorphism
+order-theory '*'
 ordinal-number number
 paradox '*'
 parallel-line mathematical-set
@@ -186,10 +212,12 @@ spanning-tree subgraph tree-graph
 sphere geometric-shape
 spherical-polygon geometric-shape
 spherical-triangle spherical-polygon
+strict-order antisymmetric-relation transitive-relation
 strongly-connected-component connected-component directed-graph
 subgraph mathematical-graph subset
 subgroup mathematical-group subset
 subset mathematical-set
+supremum upper-bound
 surjective-function function
 syllogism classical-logic deductive-reasoning
 symmetric-relation binary-relation
@@ -199,7 +227,7 @@ tensor '*'
 theorem '*'
 topological-ordering '*'
 topological-space mathematical-structure
-total-order partial-order
+total-order partial-order weak-order
 totally-ordered-set mathematical-lattice
 transcendental-number irrational-number
 transitive-closure transitive-relation
@@ -217,9 +245,12 @@ undirected-graph mathematical-graph
 universal-quantifier quantifier
 universal-set mathematical-set
 upper-bound partial-order
+upper-set subset
 variance number
 vector-space mathematical-module
+weak-order preorder
 weight function number
 weighted-graph '*'
 well-formed-formula '*'
 well-order total-order
+'zorn'"'"'s-lemma' '*'

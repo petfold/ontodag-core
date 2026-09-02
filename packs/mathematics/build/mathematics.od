@@ -21,6 +21,7 @@ analysis-of-variance multivariate-analysis
 analytic-geometry geometry
 angle '*'
 angle-of-inclination angle
+antichain subset
 antisymmetric-relation binary-relation
 arc-cosecant trigonometric-function
 arc-cosine trigonometric-function
@@ -35,6 +36,8 @@ arithmetic-progression concept
 arity number
 asymmetry attribute
 attribute '*'
+attribute-exploration algorithm
+attribute-implication implication
 automorphism endomorphism isomorphism
 average '*'
 axiom information proposition
@@ -51,9 +54,10 @@ bipartite-graph undirected-graph
 biquadratic polynomial
 biquadratic-equation equation
 biserial-correlation-coefficient correlation-coefficient
-boolean-algebra mathematical-lattice
+boolean-algebra heyting-algebra
 boolean-function function
 boundary-condition mathematical-statement
+bounded-lattice mathematical-lattice
 calculation '*'
 calculus field-of-study mathematics
 calculus-of-variations calculus
@@ -61,17 +65,23 @@ cardinal-number number
 cardinality number
 classical-logic formal-system mathematical-logic
 closed-interval interval
+closure-operator monotone-function operator
+closure-system mathematical-set
 coefficient-of-concordance kendall-test
 cognition '*'
 collection '*'
 combinatorial-combination mathematical-operation
 commutative-ring mathematical-ring
 complete-graph connected-graph
+complete-lattice mathematical-lattice
 complex-number number
 composite-number natural-number
 computability-theory mathematical-logic
 concave-polygon polygon
 concept '*'
+concept-extent mathematical-set
+concept-intent mathematical-set
+concept-lattice complete-lattice
 conditional-probability probability
 conic-section attribute shape
 conjecture proposition
@@ -89,6 +99,7 @@ cotangent trigonometric-function
 countable-set mathematical-set
 covariance variance
 covariation statistical-correlation
+covering-relation binary-relation
 cross-section sample
 curve '*'
 curved-shape '*'
@@ -100,11 +111,13 @@ decagon polygon
 decidability attribute
 decile statistic
 decision-problem problem
+dedekind-macneille-completion complete-lattice
 deductive-reasoning thinking
 definition '*'
 degree-of-freedom quantity variable
 demographic statistic
 dependent-variable quantity variable
+derivation-operator function
 description-logic formal-system mathematical-logic
 deviation number statistic
 diagonal mathematical-set
@@ -115,6 +128,8 @@ differential-equation equation mathematical-statement
 differentiation mathematical-operation
 directed-acyclic-graph directed-graph
 directed-graph mathematical-graph
+directed-set partially-ordered-set
+distributive-lattice mathematical-lattice
 divergence mathematical-series
 division arithmetic-operation
 division-ring mathematical-ring
@@ -157,7 +172,11 @@ finite-group mathematical-group
 finite-set countable-set
 first-order-correlation partial-correlation
 first-order-logic mathematical-logic
+fixed-point concept
 flow-network directed-graph weighted-graph
+formal-concept concept
+formal-concept-analysis order-theory
+formal-context binary-relation
 formal-proof '*'
 formal-system concept
 fourier-series mathematical-series
@@ -167,6 +186,7 @@ fraction complex-number
 frequency-distribution statistical-distribution
 function binary-relation
 fuzzy-logic mathematical-logic
+galois-connection concept
 galois-theory group-theory
 geodesic shape
 geometric-construction mathematical-operation
@@ -189,6 +209,7 @@ graph-isomorphism graph-homomorphism isomorphism
 graph-matching subgraph
 graph-path subgraph
 graph-vertex concept
+greatest-element concept
 group-theory field-of-study mathematics
 hamiltonian-path graph-path
 harmonic-mean mean
@@ -196,6 +217,7 @@ harmonic-progression concept
 hasse-diagram diagram
 heptagon polygon
 hexagon polygon
+heyting-algebra bounded-lattice distributive-lattice
 hilbert-space banach-space metric-space vector-space
 homogeneous-polynomial polynomial
 homomorphism function
@@ -210,6 +232,7 @@ independent-variable quantity variable
 induced-subgraph subgraph
 inductive-reasoning thinking
 inference-rule rule
+infimum concept lower-bound
 infinite-set mathematical-set
 infinitesimal number quantity variable
 information '*'
@@ -220,6 +243,7 @@ integral-calculus calculus
 integral-domain commutative-ring
 interpolation calculation
 interval mathematical-set
+interval-order partial-order
 intuitionistic-logic mathematical-logic
 invariance attribute
 invariant feature property
@@ -229,16 +253,20 @@ isogon polygon
 isometry bijection
 isomorphism homomorphism
 isosceles-triangle triangle
+join-semilattice partially-ordered-set semilattice
 joint-probability probability
 kendall-partial-rank-correlation kendall-test
 kendall-test nonparametric-statistic
+knaster-tarski-theorem theorem
 kronecker-delta function
 lambda-calculus formal-system
+least-element concept
 least-squares statistical-method
 lemma theorem
 lie-algebra algebra-over-a-field
 linear-algebra algebra
 linear-equation equation
+linear-extension total-order
 linear-map homomorphism
 linear-operator linear-map operator
 linear-regression regression
@@ -259,6 +287,7 @@ logical-soundness attribute
 logical-subject information
 long-division division
 lower-bound number
+lower-set subset
 mandelbrot-set mathematical-set
 manifold mathematical-space topological-space
 material-implication logical-connective
@@ -269,7 +298,7 @@ mathematical-graph mathematical-structure
 mathematical-group mathematical-set monoid quasigroup
 mathematical-induction formal-proof
 mathematical-integration mathematical-operation
-mathematical-lattice partially-ordered-set
+mathematical-lattice join-semilattice meet-semilattice
 mathematical-logic logic mathematics
 mathematical-module algebraic-structure
 mathematical-operation act activity event function procedure
@@ -289,22 +318,27 @@ matrix-inversion matrix-operation
 matrix-multiplication matrix-operation
 matrix-operation mathematical-operation
 matrix-transposition matrix-operation
+maximal-element concept
 maximization mathematical-operation
 'maxwell'"'"'s-equations' differential-equation
 mean average
 mean-deviation deviation
 median average
+meet-semilattice partially-ordered-set semilattice
 metamathematics field-of-study mathematics
 method '*'
 metric-function function
 metric-space mathematical-space topological-space
+minimal-element concept
 minimum-spanning-tree spanning-tree weighted-graph
 modal-logic formal-system mathematical-logic
 mode average
 model-theory mathematical-logic
+modular-lattice mathematical-lattice
 moment statistic
 monic-polynomial polynomial
 monoid semigroup
+monotone-function function
 multicollinearity multiple-regression
 multigraph mathematical-graph
 multiple-correlation-coefficient correlation-coefficient
@@ -330,6 +364,13 @@ odd-number integer
 oddness parity
 open-interval interval
 operator function
+order-chain totally-ordered-set
+order-dimension number
+order-embedding monotone-function
+order-filter upper-set
+order-ideal lower-set
+order-isomorphism isomorphism monotone-function
+order-theory mathematics
 ordinal-number number
 osculation event
 outlier deviation
@@ -453,6 +494,7 @@ statistical-method method
 statistical-population collection
 statistician expert
 stratified-sample sample-distribution
+strict-order antisymmetric-relation transitive-relation
 strongly-connected-component connected-component directed-graph
 sub-interval interval
 subgraph mathematical-graph
@@ -464,6 +506,7 @@ subsumption logical-relation
 subtraction arithmetic-operation
 summation arithmetic-operation
 superposition event locating
+supremum concept upper-bound
 surjective-function function
 syllogism deductive-reasoning
 symmetric-relation binary-relation
@@ -480,7 +523,7 @@ time-series statistic
 topological-ordering total-order
 topological-space mathematical-structure
 topology field-of-study mathematics
-total-order partial-order
+total-order partial-order weak-order
 totally-ordered-set mathematical-lattice
 transcendental-number irrational-number
 transformation function
@@ -508,14 +551,17 @@ universal-proposition proposition
 universal-quantifier quantifier
 universal-set mathematical-set
 upper-bound number
+upper-set subset
 variable '*'
 variance moment number
 vector-algebra algebra
 vector-space mathematical-module
 vital-statistics statistic
 wave-equation differential-equation
+weak-order preorder
 wedge attribute shape
 weight number
 weighted-graph mathematical-graph
 well-formed-formula expression
 well-order total-order
+'zorn'"'"'s-lemma' theorem

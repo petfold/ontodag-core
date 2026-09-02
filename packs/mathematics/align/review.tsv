@@ -123,3 +123,53 @@ satisfiability	attribute	accept	a property of formulas		00024264
 logical-soundness	attribute	accept	a property of proof systems		00024264
 decision-problem	problem	accept	a yes/no question about inputs		06784003
 arity	number	accept	the number of arguments	05857974	05121418
+# proposed by Claude 2026-09-03: order theory and formal concept analysis
+order-theory	mathematics	accept	the study of ordering relations		06000644
+formal-concept-analysis	order-theory	accept	lattices from object–attribute tables (Ganter & Wille)		
+complete-lattice	mathematical-lattice	accept			
+distributive-lattice	mathematical-lattice	accept			
+modular-lattice	mathematical-lattice	accept			
+bounded-lattice	mathematical-lattice	accept			
+heyting-algebra	bounded-lattice	accept			
+heyting-algebra	distributive-lattice	accept			
+boolean-algebra	heyting-algebra	accept	a Boolean algebra is a Heyting algebra with excluded middle		
+join-semilattice	semilattice	accept			
+meet-semilattice	semilattice	accept			
+concept-lattice	complete-lattice	accept	the lattice of formal concepts of a context		
+dedekind-macneille-completion	complete-lattice	accept	the smallest complete lattice containing a poset — the concept lattice of a poset's own context		
+order-chain	totally-ordered-set	accept	a totally ordered subset		
+antichain	subset	accept	pairwise incomparable elements		08001209
+upper-set	subset	accept			08001209
+lower-set	subset	accept			08001209
+order-ideal	lower-set	accept	a directed lower set		
+order-filter	upper-set	accept	a directed upper set		
+directed-set	partially-ordered-set	accept			
+strict-order	transitive-relation	accept	irreflexive and transitive		13798491
+weak-order	preorder	accept	a total preorder		
+linear-extension	total-order	accept			
+covering-relation	binary-relation	accept	the edges of a Hasse diagram		
+order-dimension	number	accept			05121418
+interval-order	partial-order	accept			
+infimum	concept	accept	greatest lower bound		05835747
+supremum	concept	accept	least upper bound		05835747
+greatest-element	concept	accept			05835747
+least-element	concept	accept			05835747
+maximal-element	concept	accept			05835747
+minimal-element	concept	accept			05835747
+monotone-function	function	accept	order-preserving		13783816
+order-isomorphism	isomorphism	accept			
+order-isomorphism	monotone-function	accept			
+order-embedding	monotone-function	accept			
+galois-connection	concept	accept	an adjoint pair of monotone maps between posets		05835747
+closure-operator	operator	accept	extensive, monotone, idempotent		13786413
+closure-system	mathematical-set	accept	a family of sets closed under intersection		07999699
+fixed-point	concept	accept			05835747
+knaster-tarski-theorem	theorem	accept			06752293
+zorn's-lemma	theorem	accept			06752293
+formal-context	binary-relation	accept	objects × attributes incidence		
+formal-concept	concept	accept	an (extent, intent) pair closed under derivation		05835747
+concept-extent	mathematical-set	accept			07999699
+concept-intent	mathematical-set	accept			07999699
+derivation-operator	function	accept	the prime operator; its two-fold composition is a closure operator		13783816
+attribute-implication	implication	accept	between attribute sets		13860281
+attribute-exploration	algorithm	accept	interactive completion of an implication basis		05847438
