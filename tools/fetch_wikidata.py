@@ -17,6 +17,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 EP = "https://query.wikidata.org/sparql"
+CHILD_CAP = 3000      # per 60-parent chunk; the biggest wanted level so far is `cell` at 576
 UA = "ontodag-core/0.1 (github.com/petfold/ontodag-core; upper ontology construction)"
 
 
@@ -38,7 +39,10 @@ def children_of(qids):
     for i in range(0, len(qids), 60):
         chunk = " ".join(f"wd:{q}" for q in qids[i:i + 60])
         rows = sparql(f"""SELECT ?c ?p ?cl WHERE {{ VALUES ?p {{ {chunk} }} ?c wdt:P279 ?p .
-            ?c rdfs:label ?cl . FILTER(LANG(?cl) = "en") }}""")
+            ?c rdfs:label ?cl . FILTER(LANG(?cl) = "en") }} LIMIT {CHILD_CAP}""")
+        if len(rows) >= CHILD_CAP:                   # a root like `chemical compound` has tens of
+            print(f"  ! child cap {CHILD_CAP} hit under {qids[i:i + 60]}; give such a root depth 0",
+                  file=sys.stderr)                   # thousands of direct subclasses (89 MB of JSON)
         out += [(r["c"]["value"].rsplit("/", 1)[-1], r["p"]["value"].rsplit("/", 1)[-1], r["cl"]["value"]) for r in rows]
         time.sleep(1)
     return out

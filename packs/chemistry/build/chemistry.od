@@ -44,7 +44,7 @@ blister-copper chemical-element copper material substance
 bohrium chemical-element substance
 bone-black char
 boron chemical-element substance
-bromine chemical-element substance
+bromine nonmetal
 buckminsterfullerene fullerene
 buffer compound material substance
 cadmium chemical-element metal substance
@@ -52,7 +52,7 @@ calcium chemical-element metal substance
 calcium-ion calcium material
 californium chemical-element metal substance
 carbon '*'
-carbon-black carbon substance
+carbon-black carbon chemical substance
 carbon-nanotube fullerene
 carbonado carbon mineral substance
 cast-iron iron substance
@@ -112,7 +112,7 @@ event '*'
 fermium chemical-element metal substance
 field-of-study '*'
 fluid '*'
-fluorine chemical-element fluid substance
+fluorine fluid nonmetal
 fluorocarbon compound material substance
 francium chemical-element metal substance
 fuel '*'
@@ -132,7 +132,7 @@ hafnium chemical-element metal substance
 hard-lead lead-metal substance
 hassium chemical-element substance
 heavy-metal chemical-element metal substance
-helium noble-gas
+helium noble-gas nonmetal
 'henry'"'"'s-law' concept
 holmium chemical-element metal substance
 hydrogen chemical-element fluid substance
@@ -141,7 +141,7 @@ indicator material substance
 indium chemical-element metal substance
 information '*'
 ingot-iron chemical-element iron substance
-iodine chemical-element substance
+iodine nonmetal
 iodine-125 iodine
 iodine-131 iodine
 ion particle
@@ -157,8 +157,9 @@ lawrencium chemical-element substance
 lead-metal '*'
 lead.artifact substance
 linear-dimension '*'
-liquid-nitrogen nitrogen
-liquid-oxygen chemical-element fluid oxygen substance
+liquid '*'
+liquid-nitrogen liquid nitrogen
+liquid-oxygen chemical-element fluid liquid oxygen substance
 lithium chemical-element metal substance
 lutetium chemical-element metal substance
 magnesium chemical-element metal substance
@@ -170,7 +171,7 @@ mercury chemical-element metal substance
 metal '*'
 mine-pig pig-iron
 mineral '*'
-mixture substance
+mixture chemical substance
 molecular-weight attribute
 molybdenum chemical-element metal substance
 monad atom substance
@@ -199,16 +200,16 @@ periodic-law concept
 periodic-table information
 ph-value concentration
 phosphorus chemical-element substance
-pig-iron chemical-element iron substance
+pig-iron alloy chemical-element iron
 pig-lead chemical-element lead-metal substance
 platinum noble-metal
 plutonium chemical-element substance
 plutonium-239 plutonium
 polonium chemical-element metal substance
-polymer compound material substance
+polymer chemical compound material substance
 polymorphism chemical-phenomenon
 polyvalence attribute state
-pot-metal cast-iron
+pot-metal alloy cast-iron
 potassium chemical-element metal substance
 praseodymium chemical-element metal substance
 process '*'
