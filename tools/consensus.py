@@ -38,6 +38,8 @@ def main():
     review = {}
     for sub, sup, dec, _ in resolve_reviews(ROOT / "align/review.tsv", ROOT / "align/concepts.tsv"):
         review[(sub, sup)] = dec
+        if dec == "accept":
+            for_[(sub, sup)].add("peter")      # a ruling is a witness too: an edge no source states can still enter
     roots = {l.strip() for l in open(ROOT / "align/roots.txt") if l.strip() and not l.startswith("#")}
 
     status = {}
