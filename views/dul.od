@@ -1,27 +1,21 @@
 # ontodag store v1
 action event
 agent '*'
-agent.person '*'
-agent.person.2 '*'
 collection '*'
-community agent agent.person agent.person.2
+community agent
 concept '*'
 contract '*'
 design '*'
-design.artifact '*'
-design.cognition '*'
 diagnosis '*'
 event '*'
 goal '*'
-goal.act '*'
-goal.artifact '*'
-group agent agent.person agent.person.2
+group agent
 information '*'
 method '*'
 narrative '*'
 norm '*'
-organism agent agent.person agent.person.2 physical-object
-organization agent agent.person agent.person.2
+organism agent physical-object
+organization agent
 parameter concept
 pattern '*'
 physical-object '*'
@@ -29,10 +23,7 @@ place '*'
 plan '*'
 quality '*'
 region '*'
-region.location '*'
 right '*'
-right.group '*'
-right.location '*'
 role concept
 situation '*'
 substance physical-object

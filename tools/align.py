@@ -170,7 +170,9 @@ def main():
         # align to Cyc's `expression`, 32K descendants of noise.
         # ... and for an overridden core name, its own name only: `software-library`
         # (first lemma `library`) must not land on schema.org's Library building.
-        keys = {normalise(name.split(".")[0])}
+        # Qualified names (chip.food, agent.person) are the non-primary senses and
+        # must not borrow the bare word's label: `agent.person` matched DUL's Agent.
+        keys = set() if "." in name else {normalise(name)}
         row = {"name": name, "wordnet": off or "", "sumo": "", "sumo_rel": ""}
         if off and off in sumo_map:
             row["sumo"], row["sumo_rel"] = sumo_map[off]
