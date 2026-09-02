@@ -25,6 +25,20 @@ def main():
         for a, b in csv.reader(open(tsv), delimiter="\t"):
             for_[(a, b)].add(src)
             against[(b, a)].add(src)
+    # Claude's per-edge judgements are a witness like the others: an accept
+    # adds `claude` to the edge's witnesses (and its reversal to `against`),
+    # a reject records a dissent that keeps the edge out of consensus.
+    p = ROOT / "align/claude-review.tsv"
+    dissent = set()
+    if p.exists():
+        for row in csv.reader(open(p), delimiter="\t"):
+            if row and not row[0].startswith("#") and len(row) >= 3:
+                pair = (row[0].strip(), row[1].strip())
+                if row[2].strip() == "accept":
+                    for_[pair].add("claude")
+                    against[(pair[1], pair[0])].add("claude")
+                elif row[2].strip() == "reject":
+                    dissent.add(pair)
     review = {}
     p = ROOT / "align/review.tsv"
     if p.exists():
@@ -40,6 +54,8 @@ def main():
             status[pair] = "rejected"
         elif r == "accept":
             status[pair] = "accepted"
+        elif pair in dissent:
+            status[pair] = "dissented"         # Claude read the glosses and says no
         elif against.get(pair):
             status[pair] = "disputed"          # some source places them the other way round
         elif len(w) >= MIN_WITNESSES:

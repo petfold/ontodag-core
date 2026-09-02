@@ -114,6 +114,9 @@ def main():
         if name == "*":
             continue
         off = sense1.get(name.replace("-", "_"))
+        if "wordnet" in overrides.get(name, {}):          # a hub override decides the synset up front
+            off = overrides[name]["wordnet"]
+            off = None if off == "-" else off
         if off is None:
             queue.append((name, "core name has no WordNet noun sense", ""))
         elif off in by_offset:
@@ -145,6 +148,9 @@ def main():
 
     rows = []
     for name, off in sorted(concepts.items()):
+        if "wordnet" in overrides.get(name, {}):          # an override moves the hub too
+            off = overrides[name]["wordnet"] or None
+            off = None if off == "-" else off
         lemmas = synsets[off][0] if off else [name.replace("-", "_")]
         keys = {normalise(l) for l in lemmas} | {normalise(name)}
         row = {"name": name, "wordnet": off or "", "sumo": "", "sumo_rel": ""}

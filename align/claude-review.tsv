@@ -1,0 +1,865 @@
+# sub	sup	accept|reject	reason   — Claude's judgement on single-witness edges, glosses read.
+# One witness among the others; Peter's review.tsv outranks it.
+# --- substance branch, WordNet-only, batch 1 ---
+alcohol	agent	reject	WordNet's chemical-agent sense; our agent can act and be held responsible
+alcohol	drug	reject	the beverage sense; a drink is filed as a drink, ethanol-as-drug is another synset
+aluminum	metal	accept	
+amphetamine	agent	reject	chemical-agent sense
+amphetamine	drug	accept	
+bacon	substance	accept	
+beer	agent	reject	chemical-agent sense
+beer	alcohol	accept	
+beer	drug	reject	WordNet's drug-of-abuse chain; not a filing claim anyone makes
+butter	substance	accept	
+champagne	agent	reject	chemical-agent sense
+champagne	alcohol	accept	
+champagne	drug	reject	drug-of-abuse chain
+champagne	food	accept	beverages are food in WordNet's sense (metabolized for energy); coarse but true
+champagne	substance	accept	
+cheese	food	accept	
+cheese	substance	accept	
+chip.2	dish.3	accept	
+chip.2	substance	accept	
+cookie	cake	accept	
+copper	metal	accept	
+dose	agent	reject	chemical-agent sense
+dose	drug	accept	a dose is medicine, coarse but true
+dose	medicine.3	accept	
+drug	agent	reject	chemical-agent sense — the root of the whole cluster
+fat	chemical	accept	
+fat	compound	accept	lipids are compounds
+frank	meat	accept	
+frank	sausage	accept	
+gasoline	chemical	accept	
+gasoline	compound	reject	gasoline is a mixture of hydrocarbons, not a compound — WordNet error
+gasoline	fuel	accept	
+gold	metal	accept	
+grain	material	reject	`grain` here is the particle sense; core v1 meant the cereal — naming issue, see queue
+hay	food	accept	fodder is food
+honey	food	accept	
+iron	metal	accept	
+medicine.3	agent	reject	chemical-agent sense
+medicine.3	drug	accept	
+milk	beverage	accept	
+milk	dairy-product	accept	
+milk	food	accept	
+paint	artifact	reject	paint is a substance; artifact is a man-made object
+paint	coating	reject	paint in the can is not yet a coating
+paint	physical-object	reject	a substance, not a bounded object
+perspiration	secretion	accept	
+pill.2	agent	reject	chemical-agent sense
+pill.2	dose	accept	
+pill.2	drug	accept	
+pill.2	medicine.3	accept	
+prescription-drug	agent	reject	chemical-agent sense
+prescription-drug	drug	accept	
+prescription-drug	medicine.3	accept	
+protein	chemical	accept	
+protein	compound	accept	
+punch.2	agent	reject	chemical-agent sense
+punch.2	alcohol	accept	
+punch.2	drug	reject	drug-of-abuse chain
+quartz-glass	glass.2	accept	
+remedy	agent	reject	chemical-agent sense
+# --- clear rejections seen in the first mixed batch ---
+academic-degree	signal	reject	WordNet award ⊑ symbol ⊑ signal chain; a degree is not a signal
+academic-degree	symbol	reject	same chain
+address	physical-object	reject	an address is a location, not a bounded object
+amphibian	container	reject	WordNet's wheeled-vehicle ⊑ container oddity (see car ⊑ container, decision 3)
+ball.2	group	reject	a dance is an event; WordNet files social gatherings as groups of people
+banquet	group	reject	an event, not a group
+band.2	group	reject	a frequency band is not a group of entities
+ballet	field-of-study	reject	this synset is the performance, not the discipline
+ballet	humanities	reject	same
+# --- wordnet direct batch 2: wordnet  ---
+abbey	monastery	accept	
+abortion	act	accept	
+absence	act	reject	failure to be present is not something one does
+academy	structure	reject	an institution, not a building
+accident.2	trouble.3	accept	
+accomplishment	act	accept	
+account	statement	accept	
+accusation	assertion	accept	
+ace	expert	accept	
+activity	act	accept	
+ad	promotion.2	accept	
+adventure	undertaking	accept	
+agenda	list	accept	
+agent.3	official	accept	
+airline	business	accept	
+aisle	structure	reject	a part of a building, not a kind of structure
+album	book.2	accept	
+altar	structure	accept	
+ambulance	car	accept	
+apartment	housing	accept	
+apparatus	equipment	accept	
+applicant	person	accept	
+application.2	request	accept	
+appraisal.2	document	accept	
+aquarium	structure	reject	this sense is the tank; vessel.2 covers it
+aquarium	vessel.2	accept	
+arch	entrance	accept	
+architecture	humanities	reject	a discipline beside the humanities, not inside them
+arrow	projectile	accept	
+arrow.2	symbol	accept	
+artist	person	accept	
+assertion	declaration	accept	
+assignment	undertaking	accept	
+assistant	worker	accept	
+association.2	organization	accept	
+astronomy	physics	reject	sibling sciences; nesting is arguable
+attack	operation.2	accept	
+attack.2	criticism	accept	
+attraction.2	show	accept	
+auction	sale.3	accept	
+authority	expert	accept	
+automaton	mechanism	accept	
+automobile-horn	alarm	accept	
+avant-garde	movement	accept	
+avocation	pastime	accept	
+baby-buggy	container	reject	WordNet's wheeled-vehicle ⊑ container oddity
+bag	container	accept	
+bag.2	container	accept	
+balcony	structure	accept	
+ball	equipment	accept	
+ballet	activity	accept	
+ballet	show	accept	
+balloon	plaything	accept	
+ballot	document	accept	
+band	decoration	accept	
+band.3	organization	accept	
+bandage	dressing	accept	
+bang	noise	accept	
+banner	flag	accept	
+banquet	party	reject	this `party` is the group of people; a banquet is an event
+bar.2	support.2	accept	
+bark	natural-object	accept	
+baron	businessman	accept	
+barrel	vessel.2	accept	
+barroom	room	accept	
+barter	commerce	accept	
+base	support.2	accept	
+basement	floor.2	accept	
+bathtub	vessel.2	accept	
+battery	assault	accept	
+battlefield	region.2	accept	
+beach	physical-object	accept	
+beam	support.2	accept	
+bed.2	plot	accept	
+behavior	activity	accept	
+benefit.2	performance	accept	
+betrothal	promise	accept	
+bicycle	container	reject	wheeled-vehicle ⊑ container oddity
+bin	container	accept	
+biography	history.3	accept	
+birdcall	signal	accept	
+blade	tool	reject	a part of a tool, not a kind of tool
+blast	explosion	accept	
+block	region.2	accept	
+bloodshed	murder	reject	bloodshed is violence generally; the murder reading is too narrow for the name
+blow	motion	accept	
+board.2	committee	accept	
+board.3	lumber	accept	
+body	natural-object	accept	
+body.2	natural-object	accept	
+bolt	screw	accept	
+bomber	airplane	accept	
+book	publication	accept	
+bottle	vessel.2	accept	
+bowl	vessel.2	accept	
+branch	stalk	accept	
+brewery	plant	reject	`plant` was the factory synset by mistake; fixed by override, revisit
+bride	participant	accept	
+brim	edge	accept	
+broadcast.2	show	accept	
+bronze	sculpture	accept	
+brother.2	monk	accept	
+bucket	vessel.2	accept	
+building	structure	accept	
+bulb	stalk	accept	
+bullet	projectile	accept	
+bulletin	report.2	accept	
+burial	funeral	accept	
+businessman	person	accept	
+cabaret	structure	accept	
+cabin	room	accept	
+cable	rope	accept	
+cadaver	body.2	accept	
+cage	structure	accept	
+call	visit	accept	
+calling-card	greeting	accept	
+camera	equipment	accept	
+camp.2	site	accept	
+camp.3	shelter	accept	
+campaign	operation.2	accept	
+campaign.2	journey	accept	
+campaign.3	undertaking	accept	
+cane	stick	accept	
+capital.2	center.3	accept	
+caption	title.2	accept	
+card.3	identification	accept	
+care.2	work	accept	
+carrot	root	accept	
+case	container	accept	
+cash-register	box	reject	a machine, not a box
+cast	bandage	accept	
+castle	structure	accept	
+casualty	victim	accept	
+catch.2	adult	reject	dropped in review; and a silly claim under the plain name
+censoring	act	accept	
+census	work	accept	
+center.3	region.2	accept	
+ceremony	affair.2	accept	
+chain.2	decoration	accept	
+channel	facility	reject	a TV station is an organization, not a building
+chapter	music	reject	sense slip in WordNet's `section` chain
+character	symbol	accept	
+character.3	humanities	reject	a portrayal is not a discipline
+charity.2	institution	accept	
+chart	map	accept	
+charter	document	accept	
+chauvinist	advocate	accept	
+check	move.2	accept	
+check-mark	symbol	accept	
+check.2	invoice	accept	
+chip	device	accept	
+chute	gutter	reject	not a gutter
+cigarette	drug	reject	tobacco chain; a cigarette is filed as a cigarette
+cigarette	material	reject	same chain
+cinema	building	accept	
+citation	note.2	accept	
+citizen	person	accept	
+city	district	accept	
+civilian	citizen	accept	
+claim.2	assertion	accept	
+clash	conflict.2	accept	
+class	people	accept	
+clinic	institution	accept	
+clipping	excerpt	accept	
+clock	instrument	accept	
+clothing	commodity	accept	
+club	stick	accept	
+coalescence	act	accept	
+coating	artifact	accept	
+coffin	box	accept	
+# --- wordnet direct batch 3: wordnet  ---
+brewery	structure	accept	
+coincidence	accident	accept	
+colony	region.2	accept	
+column	support.2	accept	
+comic-strip	cartoon	accept	
+commercial-enterprise	commerce	accept	
+company	institution	accept	
+compartment	space.2	accept	
+computer	machine	accept	
+computer-science	engineering.2	reject	sibling disciplines; nesting is arguable
+conclusion	music	reject	WordNet `section` sense slip
+confession	admission	accept	
+conformity	act	accept	
+connection	transportation	accept	
+conservation	protection	accept	
+contact	interaction	accept	
+contraction	decrease.2	reject	a muscle contraction is not an act of reducing
+conversion	change	accept	
+conviction.2	judgment.2	accept	
+cook	worker	accept	
+copyright	document	accept	
+cordial-reception	welcome	accept	
+core	center.2	accept	
+correspondence	mail	reject	this `mail` is the bags of letters; correspondence is communication
+corruption	act	accept	
+country	organization	reject	a state is a political unit and a place, not a working group
+country.2	region.2	accept	
+couple	pair	accept	
+coupon	document	accept	
+court	structure	accept	
+court.3	government	accept	
+courtesy	act	accept	
+crash	accident.2	accept	
+criminal-record	list	accept	
+critic	professional	accept	
+cross	structure	accept	
+crown	equipment	reject	regalia, not equipment
+cruise	act	accept	
+crutch	stick	accept	
+cupboard	structure	reject	furniture
+customer	consumer	accept	
+cut	decrease.2	accept	
+cycle	repeat	accept	
+death	change	accept	
+debate	address.2	reject	a debate is not a speech
+deck	platform	accept	
+decoration.2	symbol	reject	a medal is an award object
+decrease	change	accept	
+decrease.2	act	accept	
+delay	act	accept	
+delivery	act	accept	
+demand	request	accept	
+denial	assertion	accept	
+departure	act	accept	
+depository-financial-institution	institution	accept	
+design.2	decoration	accept	
+diagram	drawing.2	accept	
+dialogue.2	talk	accept	
+diet	activity	accept	
+dig	site	accept	
+diplomat	official	accept	
+discipline	punishment	accept	
+disco	room	reject	a venue, not a room
+discussion	communication	accept	
+disk	mechanism	reject	a plate is not a mechanism
+display	entertainment	reject	a museum display is not entertainment
+district	region.2	accept	
+diversion	act	accept	
+division.2	military-unit	accept	
+divorce	separation	accept	
+doctor	professional	accept	
+dolphin	whale.2	accept	
+dome	roof	accept	
+door	structure	reject	a part of a building
+doorbell	push-button	accept	
+doorsill	support.2	accept	
+dormitory	housing	accept	
+drawer	structure	reject	a part of furniture
+drill	training	accept	
+drink.2	activity	accept	
+drive	journey	accept	
+drop.2	descent	accept	
+drum	musical-instrument	accept	
+dwelling	housing	accept	
+electric-refrigerator	commodity	reject	articles-of-commerce chain, not a kind
+electronics	physics	reject	sibling; applied field
+elite	class	accept	
+engineering	application	reject	technology sense; core `engineering` is the discipline (override pending)
+environment	region.2	accept	
+episode	broadcast.2	accept	
+escape	act	accept	
+ethics	philosophy.2	accept	
+examination	work	accept	
+examiner	investigator	accept	
+excerpt	passage.2	accept	
+exchange.2	conversation	accept	
+execution	punishment	accept	
+exercise	labor	reject	not productive work
+exercise.2	training	accept	
+exile	rejection	reject	odd chain
+expansion	act	accept	
+expedition	organization	accept	
+experiment	research	accept	
+expert	person	accept	
+exploration	journey	accept	
+eyebrow	hair	accept	
+facsimile	apparatus	accept	
+factory	structure	accept	
+failure	person	accept	
+fair	group	reject	an event, not a group
+family	organization	reject	a group, not an organization
+farmer	person	accept	
+farming	industry	accept	
+feather	material	reject	a feather is an object, not stuff
+feather	natural-object	accept	
+feedback	answer.2	accept	
+feminist	person	accept	
+fence	structure	accept	
+festival	celebration	accept	
+field	region.2	accept	
+file	tool	accept	
+file.2	furniture	accept	
+film	show	reject	a film is a work, not a social event
+film.3	equipment	reject	photographic film is material
+finance	management	accept	
+fire	structure	accept	
+fire.2	criticism	accept	
+fireman	person	accept	
+flag	design.2	reject	an emblem object, not a decorative work
+flare	signal	accept	
+flash	equipment	accept	
+flat	tire	accept	
+flight.2	journey	accept	
+flight.3	stairway	accept	
+floor.2	structure	accept	
+foreman	supervisor	accept	
+forestry	biology	reject	applied field beside biology
+form.3	document	accept	
+format	information	reject	a format is a convention, not content
+foundation	institution	accept	
+fountain	fixture	accept	
+freckle	design.2	reject	WordNet spot chain; absurd under the plain name
+freeze	pause.2	accept	
+fruit	natural-object	accept	
+fundamental-law	legal-document	accept	
+funeral	ceremony	accept	
+gallery	room	accept	
+garage	building	accept	
+garage.2	shop	accept	
+gate	structure	accept	
+geography	earth-science	accept	
+ghostwriter	writer	accept	
+goal.3	equipment	accept	
+goalkeeper	player	accept	
+grammar	linguistics	accept	
+guard	military-unit	accept	
+guard.2	person	accept	
+guerrilla	warrior	accept	
+guitar	musical-instrument	accept	
+hair	natural-object	accept	
+hammer	tool	accept	
+hand	aid.2	accept	
+handcart	container	reject	wheeled-vehicle ⊑ container oddity
+handcart	vehicle	accept	
+haste	act	accept	
+hayfield	group	reject	nonsense chain
+hayfield	region.2	accept	
+headquarters	office	accept	
+heating-system	facility	reject	a system, not a building
+hedge	fence	accept	
+# --- wordnet direct batch 4: wordnet  ---
+audio	recording	accept	
+berry	fruit	accept	
+birth	change	accept	
+cherry	fruit	accept	
+computer-science	engineering	reject	sibling disciplines
+connection	transport	accept	
+dolphin	whale	accept	
+ethics	philosophy	accept	
+fig	fruit	accept	
+flight	journey	accept	
+helmet	clothing	accept	
+hide	natural-object	accept	
+history.2	humanities	accept	
+horseshoe	shield	reject	not a shield
+hospital	building	accept	
+hotel	building	accept	
+house	dwelling	accept	
+housing	structure	accept	
+hovel	structure	accept	
+hunt	sport	accept	
+hunter	worker	accept	
+illustration	artifact	accept	
+image	artifact	accept	
+immigrant	person	accept	
+immigration	migration	accept	
+imposter	wrongdoer	accept	
+index.2	list	accept	
+industry	commercial-enterprise	accept	
+infection	incident	accept	
+inhabitant	person	accept	
+initial	letter.2	accept	
+injection	act	accept	
+injection.2	care.2	accept	
+inquest	work	accept	
+insistence	support	reject	odd chain
+integration	act	accept	
+interior-designer	specialist	accept	
+introduction	music	reject	`section` sense slip
+introduction.2	textbook	accept	
+investigator	expert	accept	
+invitation	letter	reject	an invitation may be spoken
+invoice	statement	accept	
+issue.2	commercial-enterprise	reject	the act of publishing is not an enterprise
+jar	vessel.2	accept	
+jean	apparel	accept	
+jean	trouser	accept	
+job.2	workplace	accept	
+joint	structure	reject	a venue, not a structure
+journey	act	accept	
+judge	official	accept	
+jump	change	accept	
+jury.2	committee	accept	
+kettle	pot.2	accept	
+key.3	list	accept	
+king	equipment	reject	this synset is the chess piece; under the plain name it is false — naming queue
+kit	equipment	accept	
+knight	equipment	reject	chess piece under the plain name — naming queue
+lab	workplace	accept	
+label	symbol	accept	
+labor.2	class	accept	
+ladder	stairway	reject	not a stairway
+lady	woman	accept	
+lamp	furniture	accept	
+laundry	clothing	accept	
+law	philosophy	reject	law as a field is not a branch of philosophy in anyone's filing
+law	philosophy.2	reject	same (duplicate concept, dedup bug)
+leaf	natural-object	accept	
+leash	device	accept	
+leather	material	accept	
+lecture	teaching	accept	
+leg	support.2	accept	
+legend	fiction	accept	
+license	legal-document	accept	
+lift	drive	accept	
+linen	commodity	reject	articles-of-commerce chain
+linguistics	science	accept	
+livestock	mammal	reject	livestock is not only mammals
+logic	philosophy	accept	
+logic	philosophy.2	accept	
+looking-glass	mirror	accept	
+looting	aggression	accept	
+lot	region.2	accept	
+lounge	room	accept	
+luggage-compartment	room	reject	a car compartment is not a room
+machinery	machine	accept	
+magic-trick	performance.3	accept	
+mail	message	reject	bags-of-letters sense
+mail.2	communication	accept	
+map	artifact	accept	
+march	collection	reject	a procession is an event
+marketing	commerce	accept	
+match	lighter	accept	
+measuring-stick	instrument	accept	
+medicine	natural-science	reject	medicine is its own branch here; alignment pending
+meeting	group	reject	an event, not a group
+memo	note	accept	
+memorial	structure	accept	
+memorial.2	recognition	accept	
+memory	device	accept	
+menu	list	accept	
+menu.2	list	accept	
+migration	act	accept	
+milk	drink	accept	
+ministry	division.3	accept	
+monastery	house	accept	
+monk	person	accept	
+mosque	building	accept	
+motif	design.2	accept	
+motion	act	reject	a change of position need not be anyone's act
+move	act	accept	
+mug	vessel.2	accept	
+museum	facility	accept	
+music	information	accept	
+mutation	change	accept	
+navy	military-service	accept	
+negotiation	information	reject	a discussion is an activity, not content
+nest	natural-object	accept	
+net	equipment	accept	
+nonprofit	management	reject	odd chain
+note.3	letter	accept	
+notebook	computer	accept	
+nuclear-reactor	apparatus	accept	
+nun	person	accept	
+nursery	bedroom	accept	
+oeuvre	end-product	accept	
+offense	operation.2	accept	
+office	structure	accept	
+official	worker	accept	
+onion	bulb	accept	
+opera	music	accept	
+operation.2	activity	accept	
+operation.3	undertaking	accept	
+opinion	legal-document	accept	
+orbit	path.2	accept	
+orgy	celebration	accept	
+outfit	clothing	accept	
+oven	commodity	reject	articles-of-commerce chain
+overhaul	care	accept	
+overview	summary	accept	
+owner	businessman	reject	owners need not be in business
+packet	container	accept	
+painter	artist	accept	
+paper	article	accept	
+parade	act	accept	
+parade	collection	reject	an event
+pardon	warrant	reject	a pardon is not a court writ
+park	region.2	accept	
+parole	promise	accept	
+partner	person	accept	
+party	group	accept	
+passage.2	music	reject	`section` sense slip
+passport	legal-document	accept	
+password	identification	accept	
+pasture	group	reject	nonsense chain
+pasture	region.2	accept	
+patent	document	accept	
+patio	structure	accept	
+patriot	person	accept	
+patrol	military-unit	accept	
+pause.2	act	reject	inactivity is not an act
+payment	commerce	accept	
+payment.2	commerce	accept	
+performance	show	accept	
+performance.3	entertainment	accept	
+performer	person	accept	
+philosophy.2	humanities	accept	
+phone	equipment	accept	
+phone-call	artifact	reject	a call is an event; WordNet's sense is the connection
+phone-number	signal	reject	a number is an identifier, not a signal
+photograph	artifact	accept	
+# --- wordnet direct batch 5: wordnet  ---
+application.3	request	accept	
+aquarium	vessel	accept	
+barrel	vessel	accept	
+bathtub	vessel	accept	
+biography	history.2	accept	
+bottle	vessel	accept	
+bowl	vessel	accept	
+brewery	plant.2	accept	
+bridge	structure	accept	
+bucket	vessel	accept	
+church	building	accept	
+course-of-study	information.2	reject	a course is an activity, not a message
+coverage	information.2	accept	
+fact	information.2	accept	
+factory	plant.2	accept	
+flight.2	stairway	accept	
+format	information.2	reject	a convention, not content
+fruit.2	natural-object	accept	
+jar	vessel	accept	
+list	information.2	accept	
+mug	vessel	accept	
+news	information.2	accept	
+password	information.2	accept	
+piano	musical-instrument	accept	
+pier	support.2	accept	
+pillow	cushion	accept	
+pioneer	person	accept	
+pit	trap	accept	
+place	physical-object	reject	place is a root; a location is not a bounded object
+placement.2	activity	accept	
+plant.2	structure	accept	
+plaster	tape	accept	
+playing-field	region.2	accept	
+playpen	structure	accept	
+plot	region.2	accept	
+plot.4	chart.2	accept	
+policy	contract	accept	
+poll	work	accept	
+poll.2	thinking	reject	an opinion poll is an inquiry, not thinking
+post	signal	reject	a marker pole is an object
+postage	token	accept	
+pot	drug	accept	
+pot.2	vessel	accept	
+pot.3	container	accept	
+pound	structure	accept	
+predator	animal	accept	
+premise	proposition	accept	
+presentation	artifact	accept	
+press	machine	accept	
+prison	structure	accept	
+procedure.2	activity	accept	
+production	act	accept	
+production.2	presentation.3	accept	
+professional	adult	reject	`adult` dropped in review; not a defining claim
+professor	professional	accept	
+promotion	act	accept	
+provision	activity	accept	
+public-square	region.2	accept	
+pulp	natural-object	accept	
+pump	mechanism	accept	
+punch	blow	accept	
+puzzle	equipment	reject	a game, not equipment
+quarrel	dispute	accept	
+quarter	district	accept	
+questionnaire	form	accept	
+quotation	excerpt	accept	
+racetrack	facility	accept	
+rack	structure	accept	
+radical	person	accept	
+radio-receiver	equipment	accept	
+rally	group	reject	an event, not a group
+range	region.2	accept	
+recapitulation	summary	accept	
+recommendation	praise	accept	
+record	accomplishment	accept	
+referee	person	accept	
+reference	publication	accept	
+refugee	person	accept	
+rehabilitation.2	accomplishment	accept	
+rehearsal	exercise.2	accept	
+remedy	medicine.3	accept	
+replica	copy	accept	
+research	work	accept	
+reservoir	lake	accept	
+resident	inhabitant	accept	
+residential-district	district	accept	
+resignation	document	accept	
+resort	hotel	accept	
+rest	support.2	accept	
+return	act	accept	
+return.2	act	accept	
+reversion	act	accept	
+review	exercise.2	accept	
+review.3	publication	accept	
+revival	change	accept	
+rhetoric	humanities	accept	
+right.3	clique	reject	a political faction is not a clique
+ring.2	platform	accept	
+riot	violence	accept	
+river	stream	accept	
+robbery	larceny	accept	
+roll.2	list	accept	
+room	structure	reject	a part of a building
+root	natural-object	accept	
+rotation.2	motion	accept	
+routine	procedure.2	accept	
+ruin	building	accept	
+rule	measuring-stick	accept	
+rumor	gossip	accept	
+runner	athlete	accept	
+sacrifice	act	accept	
+sail	fabric	reject	an artifact made of fabric, not fabric
+salad	dish.3	accept	
+sale	commerce	accept	
+sale.3	commerce	accept	
+sales-talk	promotion.2	accept	
+salmon	fish	accept	
+salon	shop	accept	
+sanctuary	region.2	accept	
+satellite	equipment	accept	
+sausage	meat	accept	
+scab	worker	accept	
+scale	natural-object	accept	
+scenario	premise	reject	a scenario is a narrative, not a logical premise
+scene.2	photograph	reject	a film scene is not a photograph
+schedule	list	accept	
+school.2	building	accept	
+seal.2	symbol	accept	
+search	work	accept	
+seat	region.2	reject	a seat is not a region
+secretary	assistant	accept	
+seed	fruit.2	accept	
+seminar	course.2	accept	
+sentence	language	reject	a unit of language, not a kind of language
+series	publication	accept	
+service	aid.2	accept	
+setting.2	environment	accept	
+settlement	region.2	accept	
+sheet	linen	accept	
+shelf	support.2	accept	
+shell	natural-object	accept	
+shell.3	natural-object	accept	
+shell.4	natural-object	accept	
+shelter	housing	accept	
+shooting	act	accept	
+shopping	purchase	accept	
+short-pants	trouser	accept	
+shoulder	limit	reject	a road shoulder is a strip of land, not a boundary
+shower	fixture	accept	
+siege	military-action	accept	
+sieve	filter	accept	
+signboard	structure	accept	
+silver	metal	accept	
+sink	fixture	accept	
+site	region.2	accept	
+skin	natural-object	accept	
+slave	person	accept	
+slide	plaything	accept	
+sodium	metal	accept	
+solicitation	request	accept	
+soup	dish.3	accept	
+spacecraft	satellite	reject	not every spacecraft orbits
+spectacles	instrument	accept	
+spectator	perceiver	accept	
+sphere	region.2	accept	
+spontaneous-abortion	abortion	accept	
+squad	military-unit	accept	
+stadium	structure	accept	
+staff	symbol	reject	a rod is an object
+stalk	natural-object	accept	
+# --- wordnet direct batch 6 (last): wordnet  ---
+stall	shop	accept	
+state	district	accept	
+statement	document	accept	
+statistics	mathematics	accept	
+step	support.2	accept	
+steward	assistant	accept	
+stick	artifact	accept	
+stimulation	act	accept	
+stone	natural-object	accept	
+stove	commodity	reject	articles-of-commerce chain
+streetcar	container	reject	wheeled-vehicle ⊑ container oddity
+strike	protest	accept	
+strike.2	attack	accept	
+stroke	trouble.3	accept	
+struggle	labor	reject	effort is not productive work
+studio	workplace	accept	
+subscriber	customer	accept	
+sugar	food	accept	
+suicide	act	accept	
+support	aid.2	accept	
+surgeon	doctor	accept	
+surgery	medicine	accept	
+swing	act	reject	a movement need not be anyone's act
+swing.2	mechanism	accept	
+swing.2	plaything	accept	
+switch	act	accept	
+symbol	signal	reject	a written sign is not a nonverbal gesture
+table.2	group	reject	a data table is not a group of entities
+tank	container	reject	wheeled-vehicle ⊑ container oddity
+tape.2	recording	accept	
+tape.3	instrument	accept	
+television-receiver	equipment	accept	
+tent	structure	accept	
+terminal	equipment	accept	
+territory	region.2	accept	
+terrorist	radical	accept	
+therapy	care.2	accept	
+thinker	person	accept	
+ticket.2	legal-document	accept	
+tile	slab	accept	
+timetable	schedule	accept	
+tire	hoop	accept	
+token	symbol	accept	
+tooth	structure	reject	a gear tooth is a part
+torch	light	accept	
+tourism	commercial-enterprise	accept	
+tourist	person	accept	
+towel	fabric	reject	an artifact made of fabric
+tower	structure	accept	
+town	district	accept	
+traffic	commerce	accept	
+transmission	gear	accept	
+transport	act	accept	
+treasurer	person	accept	
+treatment	management	accept	
+trial.2	trouble.3	accept	
+trophy	symbol	reject	an object given as a token, not a sign
+tub	vessel	accept	
+undertaking	work	accept	
+urine	waste	accept	
+van	truck	accept	
+variation	change	accept	
+venue	region.2	accept	
+verdict	judgment.2	accept	
+vessel	container	accept	
+veteran	worker	accept	
+vicinity	region.2	accept	
+video	recording	accept	
+village	community	accept	
+villager	inhabitant	accept	
+violence	aggression	accept	
+virgin	person	accept	
+visit	meeting.2	accept	
+visitor	person	accept	
+vitamin	food	reject	a nutrient, not food
+void	space.2	accept	
+volcano	mountain	accept	
+volunteer	worker	accept	
+voter	citizen	accept	
+voyage	journey	accept	
+wagon	vehicle	accept	
+wall	structure	accept	
+ward	housing	reject	a hospital block is not housing
+ward.2	district	accept	
+warrant	legal-document	accept	
+warrior	person	accept	
+washbasin	sink	accept	
+watch	instrument	accept	
+water	liquid	accept	
+water-faucet	fixture	accept	
+water-faucet	mechanism	accept	
+weapon	instrument	accept	
+web-page	file.3	reject	a page is a document, not a set of records
+web-site	computer	reject	WordNet's sense is the host machine; the name means the site
+wedding	ceremony	accept	
+weight	equipment	accept	
+welcome	greeting	accept	
+wheel	mechanism	accept	
+whip	instrument	accept	
+whiskey	alcohol	accept	
+wilderness	region.2	accept	
+will	legal-document	accept	
+wine	alcohol	accept	
+wiretap	work	accept	
+worker	person	accept	
+workshop.2	course.2	accept	
+zone	topographic-point	reject	an area, not a point
