@@ -216,7 +216,7 @@ versioning, and specialist names.
 | physics | `physics`, `particle`, `atom`, `electron`, `radiation`, `process` | particles, fields, laws | Wikidata P279 (physics) |
 | chemistry | `substance`, `material`, `chemical`, `compound`, `chemical-element`, `chemical-reaction`, `water`, `metal`, the everyday elements | the 118 elements, compounds | IUPAC / PubChem |
 | biology | `organism`, `animal`, `plant`, `fungus`, `bacterium`, `virus`, `cell`, `species`, `body-part`, the everyday animals and plants | the tree of life | WordNet's organism cone, or NCBI taxonomy |
-| medicine | `medicine`, `disease`, `illness`, `symptom`, `injury`, `medication`, the common diseases | disease and drug classifications | ICD / SNOMED subsets |
+| medicine | `medicine`, `disease`, `illness`, `symptom`, `injury`, `medication`, `drug`, `doctor`, `nurse`, `hospital`, `surgery`, `therapy`, `diagnosis`, `infection`, `wound`, `cancer`, `fever`, `health` — all already in core | specialties, diseases, symptoms, procedures, instruments, drugs, practitioners | WordNet medicine/pathology/psychiatry topics and the bounded cones + **Wikidata** (27 verified roots); ICD/SNOMED stay a possible later pack |
 
 Two things are not categories at all and belong to neither: **quantities**
 (energy, force, temperature, length) are dimensions, owned by the unit
@@ -246,6 +246,7 @@ proves the pattern before biology's tree of life tests its scale.
 | mathematics | 605 | WordNet mathematics/statistics/geometry/logic topics and cones; **Wikidata** (bounded P279 pulls, `tools/fetch_wikidata.py`, 227 roots) for the skeleton: algebraic structures, number types, relations, sets, spaces, graph theory, mathematical logic, order theory and Formal Concept Analysis, **discrete mathematics** (combinatorics, number theory, automata, coding theory, designs) and **cryptography** (primitives, ciphers, hash functions incl. SHA-2/Keccak, signatures incl. ECDSA, MACs, KDFs, key exchange, zero-knowledge proofs, commitments, Merkle trees, content addressing, blockchain, cryptanalysis) — the vocabulary ontodag's own certificates, provenance and Swarm layer are described in | concept (mathematical-set, mathematical-relation, mathematical-structure, expression, algorithm), cognition (statistic), event/procedure (mathematical-operation), shape, mathematics, number, cryptography ⊑ field-of-study |
 | chemistry | 242 | WordNet chemistry topic, the element cone, hinge synsets (molecule, compound, solution, material, ion, polymer, mixture, alloy, catalyst, bond); **Wikidata** for 16 roots (element, reaction, bond, functional group, molecule, ion, acid, base, polymer, state of matter, mixture, alloy, mineral — and `chemical compound`, `chemical substance`, `medication` label-only, since each has tens of thousands of direct subclasses); 2 new unit heads (`amount-of-substance`, `catalytic-activity`) | substance, material, chemical, compound, chemical-element, natural-event (chemical-bond), collection (chemical-group), information (periodic-table), concept (theories), number (equilibrium-constant), attribute |
 | biology | 342 | WordNet biology/genetics/botany/physiology/ecology topics, the cell and gene cones, hinge synsets (enzyme, nucleic acid, DNA, chromosome, metabolism, ecosystem, hormone, biological process, taxonomic group, plant part); **Wikidata** for 17 roots (organism, cell to depth 2, enzyme, the kingdoms, virus, chromosome, metabolism, biological process to depth 2, strain, taxon, ecosystem, nucleic acid — `gene` and `protein` label-only: 453,793 and 769,212 direct subclasses, every named gene and protein) | organism, cell, body-part (plant-part hangs here: "any part of an organism"), nucleic-acid, taxonomic-group ⊑ concept, natural-event, attribute, group (ecosystem; `system` is unplaced in core), physical-object |
+| medicine | 1048 | WordNet topics (medicine, pathology, psychiatry, surgery, dentistry, pharmacology, immunology, epidemiology), bounded cones (medical science, medical procedure, therapy, injury, infection, mental illness, syndrome, cancer, medical instrument, antibiotic, vaccine, health professional, hospital), and the **`children` source kind** — a synset plus its direct hyponyms — for the three cones too big to take whole (disease 605, symptom 468, medication 512); **Wikidata** for 27 roots verified by label (disease, symptom, clinical sign, syndrome, infectious disease, cancer, mental disorder, cardiovascular disease, injury, medicine, medical specialty to depth 2, procedure, surgery, test, diagnosis, imaging, therapy, anaesthesia, medication, vaccine, antibiotic, analgesic, medical device, physician, health professional, hospital) | medicine, disease, illness, symptom, injury, medication, drug, doctor, nurse, hospital, condition, state, information, act, procedure, person, natural-event, physical-object, tissue |
 
 Three lessons from the Wikidata stage. **Verify every root QID by label
 before walking it**: four of the first thirty-three were wrong (metabolism
@@ -316,6 +317,23 @@ cells and physics. The same rule resolved fifteen cross-pack collisions
 physics is `parity-conservation`. The names that stay plain are the ones
 whose only common sense is the pack's: `enzyme`, `quark`, `theorem`,
 `genus`, `mixture`.
+
+**Medicine (2026-09-03, same day).** Built with the second-pass rules in
+force from the start: everyday-word names qualified as they appeared
+(`whitlow` for WordNet's `felon`, `furuncle` for `boil`, `common-cold` stays
+core's, `symptomatic-effect`, `tissue-graft`, `medical-imaging`,
+`psychological-repression`, `surgical-taxis`), slang and pejoratives dropped
+(`crud`, `craziness`, `bedlam`, `monster`), the `anemia` sense overridden to
+the blood disorder (WordNet's hub sense is "a lack of vitality"), and one
+Wikidata alignment corrected at the source: P8814 maps Q12140 *medication*
+onto WordNet's *act of medicating*, so every drug arrived as a kind of
+treatment until `medicating` was cleared and `medication` pinned. Wikidata's
+noise here was louder than in the sciences — `patent-medicine ⊑ crime`,
+`forensic-medicine ⊑ law`, `intern ⊑ servant`, every specialty under
+`practice-of-medicine` (the profession) — 85 of 151 Wikidata-only edges
+rejected. Medicine has had **one** reading, not two; its single-source
+edges are the natural next target for the bounty of factbond
+INTEGRATION.md §11.
 
 **Still doubtful, left for Peter** (kept as they stand, WordNet's readings):
 iron products under the element (`cast-iron`, `pig-iron`, `wrought-iron ⊑

@@ -160,7 +160,8 @@ def read_drops(d):
 
 def read_sources(d, synsets, wn):
     """packs/<name>/align/sources.tsv: `topic OFFSET` (nouns WordNet tags with
-    that domain), `cone OFFSET` (everything below it), `synset OFFSET`."""
+    that domain), `cone OFFSET` (everything below it), `synset OFFSET`, `children OFFSET`
+    (the synset and its direct hyponyms)."""
     offs = []
     for row in csv.reader(open(d / "sources.tsv"), delimiter="\t"):
         if not row or row[0].startswith("#"):
@@ -172,6 +173,9 @@ def read_sources(d, synsets, wn):
             offs += [o for o in wn.nodes if off in wn.ancestors(o)]
         elif kind == "synset":
             offs.append(off)
+        elif kind == "children":           # the synset and its direct hyponyms only — for
+            offs.append(off)               # roots whose whole cone is too big (disease: 605)
+            offs += [o for o, v in wn.nodes.items() if off in v[1]]
     seen, out = set(), []
     for o in offs:
         if o in synsets and o not in seen:
