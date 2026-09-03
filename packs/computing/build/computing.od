@@ -77,7 +77,6 @@ asynchronous-operation computer-operation
 atomic-operation computer-operation
 attribute '*'
 audio '*'
-audio-cd compact-disk
 audio-coding-format compression-format
 audio-file-format file-format
 authenticated-data-structure data-structure
@@ -159,8 +158,9 @@ carriage-return control-operation printing-operation
 cascading-style-sheets computer-language
 cataloged-procedure subroutine
 cbor data-serialization-format
-cd-r compact-disk
-cd-rom compact-disk read-only-memory
+cd '*'
+cd-r cd optical-disk
+cd-rom cd rom
 cellular-network computer-network telecommunication
 central-processing-unit chip equipment hardware
 certificate-authority organization
@@ -198,10 +198,9 @@ command-query-responsibility-segregation software-design-pattern
 commercial-enterprise '*'
 communication '*'
 communications-protocol information
-compact-disk optical-disk recording
 compatible-software software
 compiled-language programming-language
-compiler computer-program programming-tool
+compiler '*'
 complex-instruction-set-computer computer-architecture
 complex-instruction-set-computing computer-architecture
 component '*'
@@ -227,7 +226,7 @@ computer-font data-file
 computer-hardware hardware
 computer-icon symbol
 computer-instruction code
-computer-keyboard data-input-device
+computer-keyboard device input-device
 computer-language language
 computer-memory '*'
 computer-menu '*'
@@ -357,7 +356,6 @@ dependency-hell state
 dependency-injection inversion-of-control
 depth-first-search graph-algorithm
 design-by-contract software-development-methodology
-desktop-computer personal-computer
 desktop-environment system-software
 desktop-publishing commercial-enterprise
 device '*'
@@ -386,7 +384,6 @@ disk-access memory-access
 disk-block data-block
 disk-cache computer-cache
 disk-controller mechanism
-disk-drive storage-drive
 disk-error hardware-error
 disk-file computer-file
 disk-image computer-file
@@ -507,7 +504,6 @@ finite-automaton model-of-computation
 firmware software
 fixed-cycle-operation computer-operation
 flac audio-coding-format audio-file-format
-flash-memory non-volatile-storage
 floating-point-format code primitive-data-type
 floating-point-operation computer-operation
 flow-chart multidimensional-language
@@ -575,6 +571,7 @@ hamming-code error-correcting-code
 hand-held-computer portable-computer
 hard-copy information
 hard-disc magnetic-disk
+hard-disk '*'
 hard-disk-drive non-volatile-storage
 hard-link file-directory
 hardware '*'
@@ -639,6 +636,7 @@ infrastructure-as-a-service cloud-computing
 init-system daemon-process system-software
 ink-jet-printer dot-matrix-printer
 inode data-structure
+input-device '*'
 input-file computer-file
 input-method software
 input-program utility-program
@@ -648,6 +646,7 @@ instruction-execution process
 instruction-set-architecture computer-architecture
 integer-data-type primitive-data-type
 integer-overflow software-bug
+integrated-circuit '*'
 integrated-data-processing automatic-data-processing
 integrated-development-environment application programming-tool
 integration-testing software-testing
@@ -682,7 +681,7 @@ java-language object-oriented-programming-language
 javascript scripting-language
 job-control computer-program
 journaling-file-system file-system
-joystick data-input-device mechanism
+joystick input-device mechanism
 jpeg compression-format image-file-format
 json data-serialization-format
 json-ld rdf-serialization-format
@@ -708,7 +707,6 @@ label '*'
 lambda-calculus model-of-computation
 lamport-timestamp logical-clock
 language '*'
-laptop portable-computer
 latency network-performance-measure
 latex markup-language
 law '*'
@@ -766,7 +764,7 @@ machine-word code
 macos unix-like
 macro-instruction computer-instruction
 magnetic-bubble-memory non-volatile-storage
-magnetic-core-memory random-access-memory
+magnetic-core-memory ram
 magnetic-disk device
 magnetic-stripe magnetic-tape
 magnetic-tape device
@@ -815,7 +813,7 @@ metadata-standard technical-standard
 metadata-tag metadata
 metaprogramming computer-programming programming-paradigm
 method '*'
-microcontroller chip hardware
+microcontroller chip hardware integrated-circuit
 microprocessor chip
 microservices service-oriented-architecture
 microsoft-windows operating-system
@@ -827,7 +825,6 @@ mit-license software-license
 mixin object-class
 model-of-computation concept
 model-view-controller software-design-pattern
-modem equipment
 monadic-operation computer-operation
 monitor-program computer-program
 monolithic-application software-architecture
@@ -966,7 +963,6 @@ persistent-identifier identifier
 person '*'
 personal-computer digital-computer
 phishing cyberattack fraud
-phonograph-record audio
 php scripting-language
 physical-layer concept
 physical-object '*'
@@ -1046,8 +1042,9 @@ radiotelephone artifact
 radix-sort sorting-algorithm
 raft-consensus-algorithm consensus-algorithm
 raid data-storage hardware
+ram '*'
 ram-disk storage-drive
-random-access-memory volatile-storage
+random-access-memory computer-memory
 random-number-generator subroutine
 randomized-algorithm algorithm
 ransomware malware
@@ -1069,7 +1066,6 @@ real-time-processing data-processing
 recommender-system software
 record '*'
 record-data-type data-type
-recording '*'
 recursion method
 recursive-descent-parser parser
 recursive-routine subroutine
@@ -1088,7 +1084,7 @@ relational-join data-processing
 relational-model data-model
 relocatable-program computer-program
 remote-procedure-call communications-protocol
-removable-disk hard-disc
+removable-disk hard-disk magnetic-disk
 replication-in-computing data-replication
 representational-state-transfer software-architecture
 requirements-analysis activity data-processing
@@ -1100,6 +1096,7 @@ reverse-proxy proxy-server
 rich-text-format document-file-format
 risc-v instruction-set-architecture
 role-based-access-control access-control
+rom '*'
 rootkit malware
 rotary-actuator mechanism
 rotational-latency latency
@@ -1153,7 +1150,7 @@ serverless-computing cloud-computing
 service-oriented-architecture software-architecture
 set '*'
 set-data-structure abstract-data-type
-seventy-eight phonograph-record
+seventy-eight audio
 shannon-source-coding-theorem concept theorem
 shared-library computer-file software-library
 shareware software
@@ -1289,7 +1286,7 @@ technical-documentation document
 technical-standard document
 telecommunication communication
 telecommunications-engineering engineering
-telephony artifact telecommunication
+telephony '*'
 temporal-database database
 terminal-emulation hardware-emulation
 terminal-emulator application
@@ -1391,7 +1388,6 @@ version-control-software software
 versioned-database immutable-database
 video-coding-format compression-format
 video-file-format file-format
-videodisk optical-disk
 videotape magnetic-tape
 virtual-machine application
 virtual-memory computer-memory memory-management
@@ -1445,7 +1441,6 @@ wireless-local-area-network local-area-network
 word-processing data-processing
 word-processor application
 wordnet lexical-database
-workstation desktop-computer
 world-wide-web computer-network internet
 world-wide-web-consortium standards-organization
 write-ahead-log append-only-log

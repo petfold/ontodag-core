@@ -24,7 +24,7 @@ from pack import Dirs, pack_arg
 ROOT = Path(__file__).resolve().parent.parent
 WN = ROOT / "sources/wordnet/dict"
 SOURCES = ["sumo", "schemaorg", "yago", "opencyc", "bfo", "dolce", "dul"]
-LABEL_SOURCES = {"schemaorg": "cache/schemaorg.pkl", "yago": "cache/yago.pkl", "wikidata": "cache/wikidata.pkl",
+LABEL_SOURCES = {"schemaorg": "cache/schemaorg.pkl", "yago": "cache/yago.pkl", "wikidata": "cache/wikidata.pkl", "gpt": "cache/gpt.pkl",
                  "opencyc": "cache/opencyc.pkl", "bfo": "cache/bfo.pkl",
                  "dolce": "cache/dolce.pkl", "dul": "cache/dul.pkl"}
 
@@ -139,11 +139,16 @@ def read_names(d):
     """offset -> chosen name (align/names.tsv: offset  name  note) — the hand-picked
     names for concepts whose word is taken by another sense."""
     out = {}
-    p = d / "names.tsv"
-    if p.exists():
-        for row in csv.reader(open(p), delimiter="\t"):
-            if row and not row[0].startswith("#") and len(row) >= 2 and row[1].strip():
-                out[row[0].strip()] = row[1].strip()
+    # gpt-synsets.tsv (generated, tools/align_gpt.py) is the everyday goods layer: the
+    # synsets the Google Product Taxonomy shows a marketplace needs; names.tsv is read
+    # second so a hand name wins over the generated one; goods-extra.tsv is the hand list of everyday
+    # goods GPT has no node for (jeans, aspirin, duvet).
+    for fn in ("gpt-synsets.tsv", "goods-extra.tsv", "names.tsv"):
+        p = d / fn
+        if p.exists():
+            for row in csv.reader(open(p), delimiter="\t"):
+                if row and not row[0].startswith("#") and len(row) >= 2 and row[1].strip():
+                    out[row[0].strip()] = row[1].strip()
     return out
 
 
@@ -230,7 +235,7 @@ def main():
         candidates = [o for o in read_core_wordnet(sense_index) if o not in drops]
     # names.tsv may name a synset Core WordNet lacks (attribute, body part): it joins the candidates
     candidates += [o for o in chosen if o not in candidates and o in synsets and o not in drops]
-    reserved = {normalise(synsets[o][0][0]) for o in candidates} | set(chosen.values())
+    reserved = {normalise(synsets[o][0][0]) for o in candidates if o not in chosen} | set(chosen.values())   # a hand-named synset does not reserve its first lemma (the goods layer's grinding-machine must not take `grinder` from the sandwich)
     for off in candidates:
         if off in by_offset:
             continue

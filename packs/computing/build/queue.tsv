@@ -4,7 +4,9 @@ single	access-time	quantity	only sumo
 single	accumulator-register	component	only sumo
 single	accumulator-register	mechanism	only sumo
 single	accumulator-register	physical-object	only wordnet
+single	accumulator-register	storage-device	only wordnet
 single	acoustic-storage	physical-object	only wordnet
+single	acoustic-storage	storage-device	only wordnet
 single	active-application	information	only wordnet
 single	active-application	measure	only sumo
 single	active-application	routine	only sumo
@@ -54,6 +56,7 @@ single	antivirus-software	information	only yago
 single	applet	information	only wordnet
 single	applet	measure	only sumo
 single	applet	routine	only sumo
+single	application-specific-integrated-circuit	integrated-circuit	only wikidata
 single	archive-file	information	only yago
 single	arithmetic-coding	data-compression	only wikidata
 single	ascii	information	only wordnet
@@ -81,11 +84,6 @@ single	asynchronous-operation	event	only sumo
 single	asynchronous-operation	procedure	only sumo
 single	asynchronous-operation	process	only wordnet
 single	asynchronous-operation	volition	only sumo
-single	audio-cd	artifact	only wordnet
-single	audio-cd	device	only wordnet
-single	audio-cd	optical-disk	only wordnet
-single	audio-cd	physical-object	only wordnet
-single	audio-cd	recording	only wordnet
 single	authoring-language	computer-program	only sumo
 single	authoring-language	information	only wordnet
 single	authoring-language	measure	only sumo
@@ -109,6 +107,7 @@ single	auxiliary-operation	procedure	only sumo
 single	auxiliary-operation	process	only wordnet
 single	auxiliary-operation	volition	only sumo
 single	auxiliary-storage	physical-object	only wordnet
+single	auxiliary-storage	storage-device	only wordnet
 single	avl-tree	binary-search-tree	only wikidata
 single	avl-tree	binary-tree	only wikidata
 single	avl-tree	data-structure	only wikidata
@@ -181,6 +180,7 @@ single	binary-tree	graph	only wikidata
 single	biochip	component	only sumo
 single	biochip	mechanism	only sumo
 single	biochip	physical-object	only wordnet
+single	biochip	semiconductor	only wordnet
 single	bios	software	only wikidata
 single	bit-field	artifact	only sumo
 single	bit-field	collection	only wordnet
@@ -257,6 +257,7 @@ single	cd-r	artifact	only wordnet
 single	cd-r	device	only wordnet
 single	cd-r	physical-object	only wordnet
 single	cd-r	recording	only wordnet
+single	cd-r	storage-device	only wordnet
 single	cd-rom	component	only wordnet
 single	cd-rom	computer-memory	only wordnet
 single	cd-rom	cylinder	only opencyc
@@ -265,7 +266,7 @@ single	cd-rom	hardware	only wordnet
 single	cd-rom	optical-disk	only wordnet
 single	cd-rom	physical-object	only wordnet
 single	cd-rom	recording	only wordnet
-single	cellular-telephone	telephony	only claude
+single	cd-rom	storage-device	only wordnet
 single	census	computation	only sumo
 single	central-processing-unit	artifact	only wordnet
 single	central-processing-unit	component	only wordnet
@@ -288,6 +289,7 @@ single	checking-program	information	only wordnet
 single	checking-program	measure	only sumo
 single	checking-program	routine	only sumo
 single	checking-program	software	only wordnet
+single	circuit-card	computer-circuit	only wordnet
 single	client-server-model	computer-science	only wikidata
 single	cobol	line-of-text	only sumo
 single	codec	information	only yago
@@ -314,15 +316,10 @@ single	command-prompt	physical-object	only sumo
 single	communications-protocol	attribute	only sumo
 single	communications-protocol	normal	only sumo
 single	communications-protocol	property	only sumo
-single	compact-disk	artifact	only wordnet
-single	compact-disk	device	only wordnet
-single	compact-disk	physical-object	only wordnet
 single	compatible-software	computer-program	only sumo
 single	compatible-software	information	only wordnet
 single	compatible-software	measure	only sumo
 single	compatible-software	routine	only sumo
-single	compiler	measure	only sumo
-single	compiler	routine	only sumo
 single	compiler	software-object	only opencyc
 single	compiler	utility-program	only opencyc
 single	complex-instruction-set-computing	constitution	only wordnet
@@ -342,6 +339,7 @@ single	computer-architecture	property	only sumo
 single	computer-bus	artifact	only opencyc
 single	computer-bus	device	only opencyc
 single	computer-cache	physical-object	only wordnet
+single	computer-cache	storage-device	only wordnet
 single	computer-circuit	artifact	only wordnet
 single	computer-circuit	physical-object	only wordnet
 single	computer-cluster	artifact	only opencyc
@@ -349,6 +347,7 @@ single	computer-cluster	device	only opencyc
 single	computer-file	dataset	only yago
 single	computer-file	indication	only wordnet
 single	computer-icon	signal	only wordnet
+single	computer-icon	software	only gpt
 single	computer-instruction	accomplishment	only sumo
 single	computer-instruction	act	only sumo
 single	computer-instruction	activity	only sumo
@@ -357,9 +356,14 @@ single	computer-instruction	event	only sumo
 single	computer-instruction	procedure	only sumo
 single	computer-instruction	volition	only sumo
 single	computer-keyboard	equipment	only wordnet
+single	computer-keyboard	keyboard	only wordnet
 single	computer-keyboard	peripheral	only wordnet
 single	computer-keyboard	physical-object	only wordnet
 single	computer-language	line-of-text	only sumo
+single	computer-monitor	display-device	only wikidata
+single	computer-monitor	output-device	only wikidata
+single	computer-monitor	peripheral	only wikidata
+single	computer-monitor	user-interface	only wikidata
 single	computer-mouse	peripheral	only wikidata
 single	computer-mouse	user-interface	only wikidata
 single	computer-network	device	only opencyc
@@ -432,6 +436,7 @@ single	cyclic-redundancy-check	routine	only sumo
 single	data-backup	artifact	only wordnet
 single	data-backup	physical-object	only wordnet
 single	data-buffer	physical-object	only wordnet
+single	data-buffer	storage-device	only wordnet
 single	data-center	place	only yago
 single	data-descriptor	artifact	only sumo
 single	data-descriptor	contract-condition	only sumo
@@ -447,10 +452,6 @@ single	data-encryption	accomplishment	only sumo
 single	data-encryption	procedure	only sumo
 single	data-encryption	volition	only sumo
 single	data-field	group	only wordnet
-single	data-input-device	artifact	only wordnet
-single	data-input-device	equipment	only wordnet
-single	data-input-device	hardware	only wikidata
-single	data-input-device	physical-object	only wordnet
 single	data-mining	accomplishment	only sumo
 single	data-mining	act	only sumo
 single	data-mining	action	only opencyc
@@ -531,6 +532,7 @@ single	demodulation	event	only sumo
 single	demodulation	information	only sumo
 single	demodulation	physical-object	only wordnet
 single	demodulation	procedure	only sumo
+single	demodulation	storage-medium	only wordnet
 single	demodulation	volition	only sumo
 single	denial-of-service-attack	action	only opencyc
 single	denial-of-service-attack	event	only opencyc
@@ -538,9 +540,6 @@ single	denial-of-service-attack	situation	only opencyc
 single	dependency-injection	computer-science	only wikidata
 single	dependency-injection	software-architecture	only wikidata
 single	desktop-computer	digital-computer	only wordnet
-single	desktop-computer	machinery	only sumo
-single	desktop-computer	physical-object	only wordnet
-single	desktop-computer	structure	only opencyc
 single	desktop-environment	information	only yago
 single	desktop-publishing	accomplishment	only sumo
 single	desktop-publishing	activity	only sumo
@@ -562,6 +561,7 @@ single	dialog-box	artifact	only wordnet
 single	dialog-box	device	only wordnet
 single	dialog-box	information	only sumo
 single	dialog-box	physical-object	only wordnet
+single	dialog-box	video-display	only wordnet
 single	dictionary	hard-copy	only sumo
 single	differential-analyzer	computer	only wordnet
 single	differential-analyzer	machinery	only sumo
@@ -579,6 +579,7 @@ single	digital-library	place	only yago
 single	digital-library	software	only wikidata
 single	digital-library	web-site	only wikidata
 single	dip-switch	component	only sumo
+single	dip-switch	control	only wordnet
 single	dip-switch	physical-object	only wordnet
 single	directed-acyclic-graph	graph	only wikidata
 single	directory	hard-copy	only sumo
@@ -601,12 +602,11 @@ single	disk-cache	artifact	only wordnet
 single	disk-cache	data-buffer	only wordnet
 single	disk-cache	device	only wordnet
 single	disk-cache	physical-object	only wordnet
+single	disk-cache	storage-device	only wordnet
 single	disk-controller	artifact	only wordnet
+single	disk-controller	control	only wordnet
 single	disk-controller	device	only wordnet
 single	disk-controller	physical-object	only wordnet
-single	disk-drive	machine	only sumo
-single	disk-drive	machinery	only sumo
-single	disk-drive	physical-object	only wordnet
 single	disk-error	computer-error	only wordnet
 single	disk-error	event	only wordnet
 single	disk-file	artifact	only sumo
@@ -628,6 +628,7 @@ single	disk-pack	group	only wordnet
 single	diskette	artifact	only wordnet
 single	diskette	device	only wordnet
 single	diskette	physical-object	only wordnet
+single	diskette	storage-device	only wordnet
 single	display-adapter	machine	only sumo
 single	display-adapter	machinery	only sumo
 single	display-adapter	physical-object	only wordnet
@@ -711,18 +712,22 @@ single	embedded-system	machine	only wikidata
 single	endianness	algorithm	only opencyc
 single	endianness	information	only opencyc
 single	environment-variable	information	only opencyc
+single	equalizer	signal-processing	only wikidata
 single	erasable-programmable-read-only-memory	artifact	only wordnet
 single	erasable-programmable-read-only-memory	component	only wordnet
 single	erasable-programmable-read-only-memory	computer-memory	only wordnet
 single	erasable-programmable-read-only-memory	device	only wordnet
 single	erasable-programmable-read-only-memory	hardware	only wordnet
 single	erasable-programmable-read-only-memory	physical-object	only wordnet
+single	erasable-programmable-read-only-memory	rom	only wordnet
+single	erasable-programmable-read-only-memory	storage-device	only wordnet
 single	error-correcting-code	information	only wordnet
 single	error-correcting-code	measure	only sumo
 single	error-correcting-code	routine	only sumo
 single	estimate	computation	only sumo
 single	ethernet	artifact	only wordnet
 single	ethernet	physical-object	only wordnet
+single	ethernet	plug	only wikidata
 single	event-driven-programming	skill	only wikidata
 single	examination	computation	only sumo
 single	executable-file	celestial-body	only sumo
@@ -738,6 +743,7 @@ single	faq	indication	only sumo
 single	faq	line-of-text	only sumo
 single	faq	physical-object	only sumo
 single	faq	text	only sumo
+single	field-programmable-gate-array	integrated-circuit	only wikidata
 single	file-archiver	information	only yago
 single	file-directory	collection	only wikidata
 single	file-directory	group	only wikidata
@@ -768,9 +774,6 @@ single	fixed-cycle-operation	event	only sumo
 single	fixed-cycle-operation	procedure	only sumo
 single	fixed-cycle-operation	process	only wordnet
 single	fixed-cycle-operation	volition	only sumo
-single	flash-memory	component	only wordnet
-single	flash-memory	computer-memory	only wordnet
-single	flash-memory	physical-object	only wordnet
 single	floating-point-format	data-type	only wikidata
 single	floating-point-operation	accomplishment	only sumo
 single	floating-point-operation	act	only sumo
@@ -802,6 +805,7 @@ single	foreground-window	artifact	only wordnet
 single	foreground-window	device	only wordnet
 single	foreground-window	physical-object	only wordnet
 single	foreground-window	place	only sumo
+single	foreground-window	video-display	only wordnet
 single	formal-grammar	information	only opencyc
 single	formatted-capacity	quantity	only sumo
 single	fortran	algorithmic-language	only wordnet
@@ -816,6 +820,7 @@ single	fortran-program	measure	only sumo
 single	fortran-program	routine	only sumo
 single	fortran-program	software	only wordnet
 single	frame-buffer	physical-object	only wordnet
+single	frame-buffer	storage-device	only wordnet
 single	free-and-open-source-software	information	only yago
 single	free-and-open-source-software	software	only wikidata
 single	free-software	action	only opencyc
@@ -852,6 +857,7 @@ single	fuse-filesystem	software	only wikidata
 single	gene-chip	component	only sumo
 single	gene-chip	mechanism	only sumo
 single	gene-chip	physical-object	only wordnet
+single	gene-chip	semiconductor	only wordnet
 single	generic-programming	skill	only wikidata
 single	gif	image	only opencyc
 single	gif	information	only opencyc
@@ -866,27 +872,27 @@ single	groupware	measure	only sumo
 single	groupware	routine	only sumo
 single	gui-window	artifact	only wordnet
 single	gui-window	physical-object	only wordnet
+single	gui-window	video-display	only wordnet
 single	guidebook	hard-copy	only sumo
 single	hand-held-computer	computer	only wordnet
 single	hand-held-computer	digital-computer	only wordnet
 single	hand-held-computer	machinery	only sumo
 single	hand-held-computer	personal-computer	only wordnet
 single	hand-held-computer	physical-object	only wordnet
+single	handrail	user-interface	only wikidata
 single	hard-copy	artifact	only sumo
 single	hard-copy	component	only sumo
 single	hard-copy	device	only sumo
 single	hard-copy	indication	only sumo
 single	hard-copy	mechanism	only sumo
 single	hard-copy	physical-object	only sumo
-single	hard-disc	artifact	only wordnet
-single	hard-disc	device	only wordnet
-single	hard-disc	physical-object	only wordnet
+single	hard-disk	magnetic-disk	only wordnet
 single	hard-disk-drive	artifact	only opencyc
 single	hard-disk-drive	device	only opencyc
-single	hard-disk-drive	disk-drive	only opencyc
 single	hardware-counter	component	only sumo
 single	hardware-counter	mechanism	only sumo
 single	hardware-counter	physical-object	only wordnet
+single	hardware-counter	storage-device	only wordnet
 single	hardware-emulation	cognition	only wordnet
 single	hardware-emulation	measure	only sumo
 single	hardware-emulation	routine	only sumo
@@ -935,16 +941,21 @@ single	hypertext-transfer-protocol	information	only wordnet
 single	hypertext-transfer-protocol	normal	only sumo
 single	hypertext-transfer-protocol	property	only sumo
 single	hypervisor	software-object	only opencyc
-single	image-scanner	artifact	only wordnet
+single	image-scanner	camera	only wikidata
+single	image-scanner	digital-camera	only wikidata
+single	image-scanner	equipment	only wikidata
 single	image-scanner	hardware	only wikidata
+single	image-scanner	household-appliance	only wikidata
+single	image-scanner	input-device	only wikidata
 single	image-scanner	interface	only wikidata
-single	image-scanner	physical-object	only wordnet
+single	image-scanner	peripheral	only wikidata
 single	image-scanner	user-interface	only wikidata
 single	imperative-programming	skill	only wikidata
 single	in-memory-database	software	only wikidata
 single	index-register	component	only sumo
 single	index-register	mechanism	only sumo
 single	index-register	physical-object	only wordnet
+single	index-register	storage-device	only wordnet
 single	information-technology	cognition	only wordnet
 single	information-theory	cognition	only wordnet
 single	initial	character-set	only sumo
@@ -980,6 +991,7 @@ single	instruction-execution	event	only sumo
 single	instruction-execution	procedure	only sumo
 single	instruction-execution	volition	only sumo
 single	integer-data-type	data-type	only wikidata
+single	integrated-circuit	computer-circuit	only wordnet
 single	integrated-data-processing	accomplishment	only sumo
 single	integrated-data-processing	act	only sumo
 single	integrated-data-processing	activity	only sumo
@@ -1016,6 +1028,7 @@ single	job-control	measure	only sumo
 single	job-control	routine	only sumo
 single	job-control	software	only wordnet
 single	journaling-file-system	software	only wikidata
+single	joystick	control	only wordnet
 single	joystick	equipment	only wordnet
 single	joystick	peripheral	only wordnet
 single	joystick	physical-object	only wordnet
@@ -1024,9 +1037,9 @@ single	kanban-software-development	computer-programming	only wikidata
 single	kanban-software-development	skill	only wikidata
 single	key-value-database	software	only wikidata
 single	keyboard-buffer	physical-object	only wordnet
+single	keyboard-buffer	storage-device	only wordnet
 single	knowledge-graph	database	only wikidata
 single	laptop	digital-computer	only wordnet
-single	laptop	physical-object	only wordnet
 single	lempel-ziv	data-compression	only wikidata
 single	letter-of-the-alphabet	character-set	only sumo
 single	lexer	software	only wikidata
@@ -1152,20 +1165,26 @@ single	magnetic-bubble-memory	computer-memory	only wordnet
 single	magnetic-bubble-memory	hardware	only wordnet
 single	magnetic-bubble-memory	mechanism	only sumo
 single	magnetic-bubble-memory	physical-object	only wordnet
+single	magnetic-bubble-memory	storage-device	only wordnet
 single	magnetic-core-memory	artifact	only wordnet
 single	magnetic-core-memory	component	only wordnet
 single	magnetic-core-memory	computer-memory	only wordnet
 single	magnetic-core-memory	device	only wordnet
 single	magnetic-core-memory	physical-object	only wordnet
+single	magnetic-core-memory	random-access-memory	only wikidata
+single	magnetic-core-memory	storage-device	only wordnet
 single	magnetic-core-memory	volatile-storage	only wordnet
 single	magnetic-disk	artifact	only wordnet
 single	magnetic-disk	physical-object	only wordnet
+single	magnetic-disk	storage-device	only wordnet
 single	magnetic-stripe	artifact	only wordnet
 single	magnetic-stripe	device	only wordnet
 single	magnetic-stripe	physical-object	only wordnet
+single	magnetic-stripe	storage-device	only wordnet
 single	magnetic-tape	line	only opencyc
 single	magnetic-tape	physical-object	only wordnet
 single	magnetic-tape	route	only opencyc
+single	magnetic-tape	storage-device	only wordnet
 single	magnetic-tape	tape	only opencyc
 single	mainframe-computer	physical-object	only wordnet
 single	mainframe-computer	structure	only opencyc
@@ -1208,6 +1227,7 @@ single	memory-allocation	visit	only sumo
 single	memory-chip	component	only sumo
 single	memory-chip	mechanism	only sumo
 single	memory-chip	physical-object	only wordnet
+single	memory-chip	semiconductor	only wordnet
 single	memory-dump	artifact	only sumo
 single	memory-dump	contract-condition	only sumo
 single	memory-dump	indication	only sumo
@@ -1221,11 +1241,14 @@ single	metaprogramming	skill	only wikidata
 single	microcontroller	artifact	only opencyc
 single	microcontroller	device	only opencyc
 single	microcontroller	microprocessor	only opencyc
+single	microcontroller	semiconductor	only gpt
 single	microphone	peripheral	only wikidata
 single	microphone	user-interface	only wikidata
 single	microprocessor	component	only sumo
+single	microprocessor	integrated-circuit	only opencyc
 single	microprocessor	mechanism	only sumo
 single	microprocessor	physical-object	only wordnet
+single	microprocessor	semiconductor	only wordnet
 single	microservices	computer-science	only wikidata
 single	microsoft-windows	computer-program	only sumo
 single	microsoft-windows	information	only wordnet
@@ -1243,8 +1266,6 @@ single	mime	worker	only opencyc
 single	minicomputer	machinery	only sumo
 single	minicomputer	physical-object	only wordnet
 single	minicomputer	structure	only opencyc
-single	modem	device	only opencyc
-single	modem	physical-object	only wordnet
 single	module	software-object	only opencyc
 single	monadic-operation	accomplishment	only sumo
 single	monadic-operation	act	only sumo
@@ -1254,6 +1275,10 @@ single	monadic-operation	event	only sumo
 single	monadic-operation	procedure	only sumo
 single	monadic-operation	process	only wordnet
 single	monadic-operation	volition	only sumo
+single	monitor	display-device	only wikidata
+single	monitor	output-device	only wikidata
+single	monitor	peripheral	only wikidata
+single	monitor	user-interface	only wikidata
 single	monitor-program	information	only wordnet
 single	monitor-program	measure	only sumo
 single	monitor-program	routine	only sumo
@@ -1296,6 +1321,7 @@ single	natural-language-processor	software	only wordnet
 single	network-file-system	software	only wikidata
 single	network-firewall	artifact	only wordnet
 single	network-firewall	physical-object	only wordnet
+single	network-interface-controller	circuit-card	only wikidata
 single	network-node	machine	only wordnet
 single	network-node	physical-object	only wordnet
 single	network-packet	information	only wordnet
@@ -1318,6 +1344,7 @@ single	non-volatile-storage	component	only wordnet
 single	non-volatile-storage	device	only wordnet
 single	non-volatile-storage	hardware	only wordnet
 single	non-volatile-storage	physical-object	only wordnet
+single	non-volatile-storage	storage-device	only wordnet
 single	nonsolid-color	property	only sumo
 single	nosql	software	only wikidata
 single	notebook-computer	digital-computer	only wordnet
@@ -1358,6 +1385,7 @@ single	operation-code	physical-object	only sumo
 single	optical-disk	cylinder	only opencyc
 single	optical-disk	disk	only opencyc
 single	optical-disk	physical-object	only wordnet
+single	optical-disk	storage-device	only wordnet
 single	output-device	artifact	only wordnet
 single	output-device	equipment	only wordnet
 single	output-device	hardware	only wikidata
@@ -1419,13 +1447,10 @@ single	peripheral	physical-object	only wordnet
 single	persistent-identifier	information	only wikidata
 single	personal-computer	physical-object	only wordnet
 single	personal-computer	structure	only opencyc
-single	phonograph-record	cylinder	only opencyc
-single	phonograph-record	disk	only opencyc
-single	phonograph-record	indication	only sumo
-single	phonograph-record	information	only sumo
-single	phonograph-record	publication	only opencyc
-single	phonograph-record	recording	only wordnet
 single	pixel	physical-object	only wordnet
+single	planner	digital-computer	only wordnet
+single	planner	personal-computer	only wordnet
+single	planner	portable-computer	only wordnet
 single	poll	computation	only sumo
 single	portable-computer	digital-computer	only wordnet
 single	portable-computer	physical-object	only wordnet
@@ -1435,13 +1460,13 @@ single	portal-site	computer	only wordnet
 single	portal-site	device	only wordnet
 single	portal-site	machine	only wordnet
 single	portal-site	physical-object	only wordnet
-single	portfolio	list	only claude
 single	power-user	agent	only wordnet
 single	power-user	attribute	only sumo
 single	power-user	organism	only wordnet
 single	power-user	physical-object	only wordnet
 single	power-user	property	only sumo
 single	print-buffer	physical-object	only wordnet
+single	print-buffer	storage-device	only wordnet
 single	printing-operation	accomplishment	only sumo
 single	printing-operation	act	only sumo
 single	printing-operation	activity	only sumo
@@ -1460,6 +1485,7 @@ single	priority-processing	volition	only sumo
 single	procedural-programming	computer-programming	only wikidata
 single	procedural-programming	skill	only wikidata
 single	processor-register	physical-object	only wordnet
+single	processor-register	storage-device	only wordnet
 single	program-assertion	control-flow	only wikidata
 single	program-assertion	statement	only wikidata
 single	program-expression	information	only opencyc
@@ -1504,10 +1530,12 @@ single	queue-data-structure	information	only wordnet
 single	quicksort	algorithm	only wikidata
 single	radiotelephone	device	only sumo
 single	radiotelephone	physical-object	only wordnet
+single	radiotelephone	storage-medium	only wordnet
 single	ram-disk	physical-object	only wordnet
 single	ram-disk	random-access-memory	only opencyc
-single	random-access-memory	component	only wordnet
-single	random-access-memory	physical-object	only wordnet
+single	random-access-memory	artifact	only opencyc
+single	random-access-memory	device	only opencyc
+single	random-access-memory	hardware	only wikidata
 single	random-number-generator	computer-program	only sumo
 single	random-number-generator	information	only wordnet
 single	random-number-generator	measure	only sumo
@@ -1527,21 +1555,18 @@ single	read-only-file	data-file	only wordnet
 single	read-only-file	line-of-text	only sumo
 single	read-only-file	physical-object	only sumo
 single	read-only-file	text	only sumo
-single	read-only-memory	artifact	only wordnet
-single	read-only-memory	component	only wordnet
-single	read-only-memory	device	only wordnet
-single	read-only-memory	hardware	only wordnet
-single	read-only-memory	physical-object	only wordnet
 single	read-only-memory-chip	chip	only wordnet
 single	read-only-memory-chip	component	only sumo
 single	read-only-memory-chip	mechanism	only sumo
 single	read-only-memory-chip	physical-object	only wordnet
+single	read-only-memory-chip	semiconductor	only wordnet
 single	read-write-head	component	only sumo
 single	read-write-head	mechanism	only sumo
 single	read-write-head	physical-object	only wordnet
 single	real-storage	component	only wordnet
 single	real-storage	hardware	only wordnet
 single	real-storage	physical-object	only wordnet
+single	real-storage	storage-device	only wordnet
 single	real-time-operating-system	information	only yago
 single	real-time-operating-system	software	only wikidata
 single	real-time-processing	accomplishment	only sumo
@@ -1583,9 +1608,12 @@ single	relocatable-program	information	only wordnet
 single	relocatable-program	measure	only sumo
 single	relocatable-program	routine	only sumo
 single	relocatable-program	software	only wordnet
+single	remote-control	peripheral	only wikidata
+single	remote-control	user-interface	only wikidata
 single	removable-disk	artifact	only wordnet
 single	removable-disk	device	only wordnet
 single	removable-disk	physical-object	only wordnet
+single	removable-disk	storage-device	only wordnet
 single	reusable-program	information	only wordnet
 single	reusable-program	measure	only sumo
 single	reusable-program	routine	only sumo
@@ -1602,11 +1630,13 @@ single	rootkit	software	only wikidata
 single	rotary-actuator	physical-object	only wordnet
 single	rotational-latency	quantity	only sumo
 single	satellite-internet	telecommunication	only wikidata
+single	scanner	user-interface	only wikidata
 single	scratchpad-memory	artifact	only wordnet
 single	scratchpad-memory	component	only wordnet
 single	scratchpad-memory	device	only wordnet
 single	scratchpad-memory	hardware	only wordnet
 single	scratchpad-memory	physical-object	only wordnet
+single	scratchpad-memory	storage-device	only wordnet
 single	screen-saver	artifact	only wordnet
 single	screen-saver	code	only sumo
 single	screen-saver	decoration	only wordnet
@@ -1668,8 +1698,10 @@ single	seventy-eight	cylinder	only opencyc
 single	seventy-eight	disk	only opencyc
 single	seventy-eight	indication	only sumo
 single	seventy-eight	information	only sumo
+single	seventy-eight	phonograph-recording	only wordnet
 single	seventy-eight	publication	only opencyc
 single	seventy-eight	recording	only wordnet
+single	seventy-eight	storage-device	only wordnet
 single	shared-library	software	only wikidata
 single	shareware	computer-program	only sumo
 single	shareware	measure	only sumo
@@ -1678,6 +1710,7 @@ single	shareware	software-object	only opencyc
 single	shift-register	component	only sumo
 single	shift-register	mechanism	only sumo
 single	shift-register	physical-object	only wordnet
+single	shift-register	storage-device	only wordnet
 single	shrink-wrapped-software	computer-program	only sumo
 single	shrink-wrapped-software	information	only wordnet
 single	shrink-wrapped-software	measure	only sumo
@@ -1782,6 +1815,7 @@ single	spyware	routine	only sumo
 single	spyware	software-object	only opencyc
 single	sql-injection	software-bug	only wikidata
 single	stack-data-structure	physical-object	only wordnet
+single	stack-data-structure	storage-device	only wordnet
 single	standard-library	software	only wikidata
 single	statement	control-flow	only wikidata
 single	static-typing	algorithm	only wikidata
@@ -1883,10 +1917,9 @@ single	talking-book	device	only wordnet
 single	talking-book	indication	only sumo
 single	talking-book	information	only sumo
 single	talking-book	recording	only wordnet
+single	talking-book	storage-device	only wordnet
 single	taxonomy	information	only opencyc
 single	telecommunications-engineering	cognition	only wordnet
-single	telephony	device	only sumo
-single	telephony	physical-object	only wordnet
 single	terminal-emulation	cognition	only wordnet
 single	terminal-emulation	method	only wordnet
 single	terminal-emulator	information	only yago
@@ -1936,8 +1969,10 @@ single	toggle-instruction	volition	only sumo
 single	touchscreen	artifact	only opencyc
 single	touchscreen	device	only opencyc
 single	touchscreen	hardware	only wikidata
+single	touchscreen	input-device	only wikidata
 single	touchscreen	interface	only wikidata
 single	touchscreen	peripheral	only wikidata
+single	touchscreen	transducer	only opencyc
 single	touchscreen	user-interface	only wikidata
 single	trace-program	code	only wordnet
 single	trace-program	computer-program	only wordnet
@@ -1997,16 +2032,15 @@ single	utility-routine	information	only wordnet
 single	utility-routine	measure	only sumo
 single	utility-routine	routine	only sumo
 single	utility-routine	software	only wordnet
-single	videodisk	artifact	only wordnet
-single	videodisk	device	only wordnet
-single	videodisk	physical-object	only wordnet
 single	videotape	artifact	only wordnet
 single	videotape	device	only wordnet
 single	videotape	physical-object	only wordnet
+single	videotape	storage-device	only wordnet
 single	virtual-machine	information	only yago
 single	virtual-memory	component	only wordnet
 single	virtual-memory	hardware	only wordnet
 single	virtual-memory	physical-object	only wordnet
+single	virtual-memory	storage-device	only wordnet
 single	virtual-private-network	artifact	only opencyc
 single	virtual-private-network	device	only opencyc
 single	virtual-private-network	structure	only opencyc
@@ -2016,6 +2050,7 @@ single	volatile-storage	component	only wordnet
 single	volatile-storage	device	only wordnet
 single	volatile-storage	hardware	only wordnet
 single	volatile-storage	physical-object	only wordnet
+single	volatile-storage	storage-device	only wordnet
 single	von-neumann-architecture	machine	only wikidata
 single	von-neumann-machine	computer	only wordnet
 single	von-neumann-machine	machinery	only sumo
@@ -2046,6 +2081,7 @@ single	web-server	computer	only opencyc
 single	web-server	device	only opencyc
 single	web-server	information	only yago
 single	web-server	structure	only opencyc
+single	webcam	peripheral	only wikidata
 single	wi-fi	artifact	only opencyc
 single	wi-fi	computer-network	only opencyc
 single	wi-fi	device	only opencyc
@@ -2082,7 +2118,6 @@ single	word-processor	routine	only sumo
 single	wordnet	electronic-database	only wordnet
 single	wordnet	indication	only sumo
 single	wordnet	physical-object	only sumo
-single	workstation	physical-object	only wordnet
 single	world-wide-web	device	only sumo
 single	world-wide-web	physical-object	only wordnet
 single	zero-day-exploit	software	only wikidata
@@ -2099,6 +2134,7 @@ unplaced	alumnus		no accepted parent reaches a root
 unplaced	angel		no accepted parent reaches a root
 unplaced	anniversary		no accepted parent reaches a root
 unplaced	attractive-force		no accepted parent reaches a root
+unplaced	audio-cd	artifact cd compact-disk device optical-disk physical-object recording storage-device	no accepted parent reaches a root
 unplaced	aviation		no accepted parent reaches a root
 unplaced	backlog		no accepted parent reaches a root
 unplaced	bail		no accepted parent reaches a root
@@ -2106,6 +2142,7 @@ unplaced	bait		no accepted parent reaches a root
 unplaced	bargain		no accepted parent reaches a root
 unplaced	barrier		no accepted parent reaches a root
 unplaced	basis		no accepted parent reaches a root
+unplaced	basketball-ball		no accepted parent reaches a root
 unplaced	batch		no accepted parent reaches a root
 unplaced	beam-of-light		no accepted parent reaches a root
 unplaced	beginning		no accepted parent reaches a root
@@ -2257,6 +2294,7 @@ unplaced	limit.quantity		no accepted parent reaches a root
 unplaced	line-of-descent		no accepted parent reaches a root
 unplaced	lineation		no accepted parent reaches a root
 unplaced	linguistic-context		no accepted parent reaches a root
+unplaced	liquid-substance		no accepted parent reaches a root
 unplaced	load		no accepted parent reaches a root
 unplaced	logarithm		no accepted parent reaches a root
 unplaced	logic.cognition		no accepted parent reaches a root
@@ -2284,6 +2322,7 @@ unplaced	moon		no accepted parent reaches a root
 unplaced	morning		no accepted parent reaches a root
 unplaced	morsel		no accepted parent reaches a root
 unplaced	motivation		no accepted parent reaches a root
+unplaced	mushroom-food		no accepted parent reaches a root
 unplaced	natural-spring		no accepted parent reaches a root
 unplaced	nature.object		no accepted parent reaches a root
 unplaced	nature.person		no accepted parent reaches a root
@@ -2296,6 +2335,7 @@ unplaced	norm		no accepted parent reaches a root
 unplaced	north		no accepted parent reaches a root
 unplaced	notice.communication		no accepted parent reaches a root
 unplaced	nowadays		no accepted parent reaches a root
+unplaced	nut-fastener		no accepted parent reaches a root
 unplaced	occasion		no accepted parent reaches a root
 unplaced	ocean.quantity		no accepted parent reaches a root
 unplaced	old-age		no accepted parent reaches a root
@@ -2361,7 +2401,7 @@ unplaced	restraint.cognition		no accepted parent reaches a root
 unplaced	restriction		no accepted parent reaches a root
 unplaced	right-to-vote		no accepted parent reaches a root
 unplaced	risk		no accepted parent reaches a root
-unplaced	rootage		no accepted parent reaches a root
+unplaced	root		no accepted parent reaches a root
 unplaced	rule.cognition		no accepted parent reaches a root
 unplaced	rule.time		no accepted parent reaches a root
 unplaced	sarcasm		no accepted parent reaches a root
@@ -2398,6 +2438,7 @@ unplaced	surrender		no accepted parent reaches a root
 unplaced	syllable	character-set	no accepted parent reaches a root
 unplaced	sympathy		no accepted parent reaches a root
 unplaced	system		no accepted parent reaches a root
+unplaced	system-instrumentality		no accepted parent reaches a root
 unplaced	tabular-array		no accepted parent reaches a root
 unplaced	tariff		no accepted parent reaches a root
 unplaced	tax		no accepted parent reaches a root
@@ -2436,6 +2477,7 @@ unplaced	web		no accepted parent reaches a root
 unplaced	week		no accepted parent reaches a root
 unplaced	weekend		no accepted parent reaches a root
 unplaced	west		no accepted parent reaches a root
+unplaced	wilderness-trail		no accepted parent reaches a root
 unplaced	winter		no accepted parent reaches a root
 unplaced	wonder		no accepted parent reaches a root
 unplaced	word		no accepted parent reaches a root

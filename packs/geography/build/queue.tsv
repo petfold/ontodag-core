@@ -40,6 +40,7 @@ single	aftershock	geological-phenomenon	only wordnet
 single	aftershock	natural-event	only wordnet
 single	aftershock	process	only wordnet
 single	aftershock	situation	only opencyc
+single	air-duct	geographical-area	only sumo
 single	air-mass	natural-event	only wordnet
 single	air-mass	process	only wordnet
 single	air-mass	weather	only wordnet
@@ -74,7 +75,6 @@ single	alpine-glacier	geological-formation	only wordnet
 single	alpine-glacier	ice-mass	only wordnet
 single	alpine-glacier	landform	only wikidata
 single	alpine-glacier	physical-object	only wordnet
-single	altimeter	physical-object	only wordnet
 single	altocumulus	material	only sumo
 single	altocumulus	natural-event	only wordnet
 single	altocumulus	process	only wordnet
@@ -95,7 +95,6 @@ single	ammonite	motion	only sumo
 single	ammonite	physical-object	only wordnet
 single	ammonite	procedure	only sumo
 single	ammonite	volition	only sumo
-single	anemometer	physical-object	only wordnet
 single	anticyclone	event	only sumo
 single	anticyclone	process	only wordnet
 single	antitrade-wind	event	only sumo
@@ -189,9 +188,9 @@ single	backwater	geographical-area	only sumo
 single	backwater	place	only sumo
 single	bad-weather	natural-event	only wordnet
 single	bad-weather	process	only wordnet
+single	bakery	geographic-point	only wordnet
 single	bank	geological-formation	only wordnet
 single	bank	natural-elevation	only opencyc
-single	barometer	physical-object	only wordnet
 single	barrier-island	geographical-area	only sumo
 single	barrier-island	landform	only yago
 single	barrier-island	landmass	only opencyc
@@ -943,6 +942,7 @@ single	gorge	obstacle	only opencyc
 single	gorge	physical-object	only wordnet
 single	gps-receiver	artifact	only opencyc
 single	gps-receiver	device	only opencyc
+single	gps-receiver	satellite-receiver	only opencyc
 single	grassland	physical-object	only wordnet
 single	grassland	place	only wordnet
 single	grassland	region	only wordnet
@@ -1221,10 +1221,12 @@ single	khamsin	device	only opencyc
 single	khamsin	event	only sumo
 single	khamsin	land-vehicle	only opencyc
 single	khamsin	motion	only wikidata
+single	khamsin	motor-vehicle	only opencyc
 single	khamsin	natural-event	only wordnet
 single	khamsin	process	only wordnet
 single	khamsin	weather	only wordnet
 single	kitchen	geographical-area	only sumo
+single	kitchenette	geographical-area	only sumo
 single	knoll	geological-formation	only wordnet
 single	knoll	natural-elevation	only wordnet
 single	knoll	physical-object	only wordnet
@@ -1282,8 +1284,10 @@ single	latitude	place	only wordnet
 single	latitude	shape	only wordnet
 single	lava	chemical	only wikidata
 single	lava	fluid	only wikidata
+single	leaf-mold	compost	only wikidata
 single	leaf-mold	material	only wordnet
 single	leaf-mold	substance	only wordnet
+single	ledge	furniture	only gpt
 single	ledge	geographical-area	only sumo
 single	ledge	geological-formation	only wordnet
 single	ledge	natural-elevation	only wordnet
@@ -1603,6 +1607,7 @@ single	oceanography	natural-science	only wordnet
 single	oceanography	science	only wordnet
 single	odometer	artifact	only opencyc
 single	odometer	device	only opencyc
+single	odometer	gauge	only opencyc
 single	offing	geographical-area	only sumo
 single	offing	place	only sumo
 single	omnirange	component	only sumo
@@ -1773,6 +1778,7 @@ single	polyconic-projection	map-projection	only opencyc
 single	polyconic-projection	physical-object	only wordnet
 single	polynya	geographical-area	only sumo
 single	polynya	place	only sumo
+single	pond	decor	only gpt
 single	pool	geographical-area	only sumo
 single	postal-code	geocode	only opencyc
 single	postal-code	information	only opencyc
@@ -1811,6 +1817,7 @@ single	promontory	geological-formation	only wordnet
 single	promontory	land	only sumo
 single	promontory	physical-object	only wordnet
 single	promontory	yard	only sumo
+single	pumice-stone	rock-material	only wordnet
 single	quarter	geographical-area	only sumo
 single	quicksand	geological-formation	only wordnet
 single	quicksand	natural-depression	only wordnet
@@ -1820,7 +1827,6 @@ single	radar	detector	only opencyc
 single	radar	device	only opencyc
 single	radar	equipment	only wikidata
 single	radar	physical-object	only wikidata
-single	rain-gauge	physical-object	only wordnet
 single	rain-shower	precipitation	only wordnet
 single	rain-wash	event	only sumo
 single	rain-wash	geological-erosion	only wordnet
@@ -2011,6 +2017,7 @@ single	shingling	action	only opencyc
 single	shingling	application	only opencyc
 single	shingling	event	only opencyc
 single	shingling	mineral	only sumo
+single	shingling	roofing	only opencyc
 single	shingling	situation	only opencyc
 single	shoal	bank	only opencyc
 single	shoal	earth-bank	only wordnet
@@ -2070,6 +2077,7 @@ single	solstice	event	only opencyc
 single	solstice	situation	only opencyc
 single	sonar	artifact	only wordnet
 single	sonar	device	only wordnet
+single	sonar	noisemaker	only wikidata
 single	sonic-depth-finder	instrument	only wordnet
 single	sonic-depth-finder	physical-object	only wordnet
 single	south	compass-point	only wordnet
@@ -2124,6 +2132,7 @@ single	spring-tide	motion	only wikidata
 single	sprite-lightning	luminosity	only sumo
 single	sprite-lightning	natural-event	only wordnet
 single	sprite-lightning	process	only wordnet
+single	spur	natural-elevation	only opencyc
 single	squall	natural-event	only wordnet
 single	squall	process	only wordnet
 single	squall	weather	only wordnet
@@ -2131,6 +2140,7 @@ single	squall-line	natural-event	only wordnet
 single	squall-line	process	only wordnet
 single	squall-line	weather-front	only wordnet
 single	station	geographical-area	only sumo
+single	station-facility	geographical-area	only sumo
 single	steppe	biome	only wikidata
 single	steppe	land	only wordnet
 single	steppe	physical-object	only wordnet
@@ -2179,6 +2189,7 @@ single	strong-gale	process	only wordnet
 single	strong-gale	weather	only wordnet
 single	strong-gale	wind	only wordnet
 single	studio	geographic-point	only wordnet
+single	studio-apartment	geographical-area	only sumo
 single	subcontinent	geographical-area	only sumo
 single	subcontinent	physical-object	only wordnet
 single	subcontinent	place	only sumo
@@ -2264,7 +2275,6 @@ single	territorial-waters	place	only sumo
 single	thaw	event	only sumo
 single	thaw	natural-event	only wordnet
 single	thaw	process	only wordnet
-single	theodolite	equipment	only wikidata
 single	thermal-updraft	event	only sumo
 single	thermal-updraft	natural-event	only wordnet
 single	thermal-updraft	process	only wordnet
@@ -2496,6 +2506,7 @@ single	waterspout	wind	only wikidata
 single	waterway	geographical-area	only sumo
 single	weather-balloon	artifact	only opencyc
 single	weather-balloon	device	only opencyc
+single	weather-balloon	drone-aircraft	only wikidata
 single	weather-balloon	physical-object	only wikidata
 single	weather-balloon	vehicle	only wikidata
 single	weather-forecasting	accomplishment	only sumo
@@ -2588,6 +2599,7 @@ unplaced	bait		no accepted parent reaches a root
 unplaced	bargain		no accepted parent reaches a root
 unplaced	barrier		no accepted parent reaches a root
 unplaced	basis		no accepted parent reaches a root
+unplaced	basketball-ball		no accepted parent reaches a root
 unplaced	batch		no accepted parent reaches a root
 unplaced	beam-of-light		no accepted parent reaches a root
 unplaced	beginning		no accepted parent reaches a root
@@ -2737,6 +2749,7 @@ unplaced	limit.quantity		no accepted parent reaches a root
 unplaced	line-of-descent		no accepted parent reaches a root
 unplaced	lineation		no accepted parent reaches a root
 unplaced	linguistic-context		no accepted parent reaches a root
+unplaced	liquid-substance		no accepted parent reaches a root
 unplaced	load		no accepted parent reaches a root
 unplaced	logarithm		no accepted parent reaches a root
 unplaced	logic.cognition		no accepted parent reaches a root
@@ -2764,6 +2777,7 @@ unplaced	moon		no accepted parent reaches a root
 unplaced	morning		no accepted parent reaches a root
 unplaced	morsel		no accepted parent reaches a root
 unplaced	motivation		no accepted parent reaches a root
+unplaced	mushroom-food		no accepted parent reaches a root
 unplaced	nature.object		no accepted parent reaches a root
 unplaced	nature.person		no accepted parent reaches a root
 unplaced	necessity		no accepted parent reaches a root
@@ -2774,6 +2788,7 @@ unplaced	node		no accepted parent reaches a root
 unplaced	norm		no accepted parent reaches a root
 unplaced	notice.communication		no accepted parent reaches a root
 unplaced	nowadays		no accepted parent reaches a root
+unplaced	nut-fastener		no accepted parent reaches a root
 unplaced	occasion		no accepted parent reaches a root
 unplaced	ocean.quantity		no accepted parent reaches a root
 unplaced	old-age		no accepted parent reaches a root
@@ -2839,7 +2854,7 @@ unplaced	restraint.cognition		no accepted parent reaches a root
 unplaced	restriction		no accepted parent reaches a root
 unplaced	right-to-vote		no accepted parent reaches a root
 unplaced	risk		no accepted parent reaches a root
-unplaced	rootage		no accepted parent reaches a root
+unplaced	root		no accepted parent reaches a root
 unplaced	rule.cognition		no accepted parent reaches a root
 unplaced	rule.time		no accepted parent reaches a root
 unplaced	sarcasm		no accepted parent reaches a root
@@ -2875,6 +2890,7 @@ unplaced	surrender		no accepted parent reaches a root
 unplaced	syllable		no accepted parent reaches a root
 unplaced	sympathy		no accepted parent reaches a root
 unplaced	system		no accepted parent reaches a root
+unplaced	system-instrumentality		no accepted parent reaches a root
 unplaced	tabular-array		no accepted parent reaches a root
 unplaced	tariff		no accepted parent reaches a root
 unplaced	tax		no accepted parent reaches a root
@@ -2913,6 +2929,7 @@ unplaced	web		no accepted parent reaches a root
 unplaced	week		no accepted parent reaches a root
 unplaced	weekend		no accepted parent reaches a root
 unplaced	west		no accepted parent reaches a root
+unplaced	wilderness-trail		no accepted parent reaches a root
 unplaced	winter		no accepted parent reaches a root
 unplaced	wonder		no accepted parent reaches a root
 unplaced	word		no accepted parent reaches a root

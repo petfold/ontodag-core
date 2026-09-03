@@ -74,6 +74,7 @@ aftershock	phenomenon	single	wordnet
 aftershock	process	single	wordnet	
 aftershock	situation	single	opencyc	
 aftershock	tremor	accepted	claude wordnet	
+air-duct	geographical-area	single	sumo	
 air-mass	atmosphere	accepted	claude-ruling	
 air-mass	atmospheric-state	accepted	claude wordnet	
 air-mass	natural-event	single	wordnet	
@@ -140,10 +141,6 @@ alpine-glacier	ice-mass	single	wordnet
 alpine-glacier	landform	single	wikidata	
 alpine-glacier	physical-object	single	wordnet	
 alps	mountain-range	accepted	claude-ruling	
-altimeter	artifact	accepted	opencyc wordnet	
-altimeter	device	accepted	opencyc wordnet	
-altimeter	instrument	accepted	claude wordnet	
-altimeter	physical-object	single	wordnet	
 altitude	geographic-coordinate	accepted	claude-ruling	
 altitude	quantity	accepted	claude-ruling	
 altocumulus	cloud	accepted	sumo wikidata wordnet	
@@ -180,12 +177,6 @@ ammonite	procedure	single	sumo
 ammonite	universe	single	sumo	
 ammonite	volition	single	sumo	
 andes	mountain-range	accepted	claude-ruling	
-anemometer	artifact	accepted	sumo wordnet	
-anemometer	device	accepted	sumo wordnet	
-anemometer	instrument	accepted	claude wordnet	
-anemometer	phenomenon	single	sumo	
-anemometer	physical-object	single	wordnet	
-anemometer	universe	single	sumo	
 antarctic-circle	circle-of-latitude	accepted	claude-ruling	
 antarctic-ice-sheet	ice-sheet	accepted	claude-ruling	
 antarctica	continent	accepted	claude-ruling	
@@ -372,15 +363,9 @@ bad-weather	natural-event	single	wordnet
 bad-weather	phenomenon	single	wordnet	
 bad-weather	process	single	wordnet	
 bad-weather	weather	accepted	claude wordnet	
+bakery	geographic-point	single	wordnet	
 bank	geological-formation	single	wordnet	
 bank	natural-elevation	single	opencyc	
-barometer	artifact	accepted	opencyc sumo wordnet	
-barometer	device	accepted	opencyc sumo wordnet	
-barometer	instrument	accepted	claude wordnet	
-barometer	phenomenon	single	sumo	
-barometer	physical-object	single	wordnet	
-barometer	product	single	yago	
-barometer	universe	single	sumo	
 barrier-island	geographical-area	single	sumo	
 barrier-island	island	accepted	sumo wordnet	
 barrier-island	land	accepted	sumo wordnet	
@@ -1860,6 +1845,7 @@ global-positioning-system	device	single	sumo
 global-positioning-system	global-navigation-satellite-system	accepted	claude-ruling	
 global-positioning-system	phenomenon	single	sumo	
 global-positioning-system	physical-object	single	wordnet	
+global-positioning-system	system-instrumentality	single	wordnet	
 global-positioning-system	universe	single	sumo	
 glonass	global-navigation-satellite-system	accepted	claude-ruling	
 gnomonic-projection	azimuthal-projection	accepted	claude-ruling opencyc	
@@ -1909,6 +1895,7 @@ gps-receiver	device	single	opencyc
 gps-receiver	instrument	accepted	claude-ruling	
 gps-receiver	navigational-instrument	accepted	claude-ruling	
 gps-receiver	product	single	opencyc	
+gps-receiver	satellite-receiver	single	opencyc	
 gps-time	time-standard	accepted	claude-ruling	
 grassland	biome	accepted	claude wikidata	
 grassland	geographical-area	accepted	claude wordnet	
@@ -2218,7 +2205,6 @@ hydrosphere	phenomenon	single	sumo
 hydrosphere	physical-object	single	wordnet	
 hydrosphere	place	accepted	sumo wordnet	
 hydrosphere	universe	single	sumo	
-hygrometer	instrument	accepted	claude-ruling	
 hygrometer	measuring-instrument	accepted	claude-ruling	
 hypocenter	location	accepted	claude-ruling	
 hypocenter	place	accepted	claude-ruling	
@@ -2451,6 +2437,7 @@ khamsin	device	single	opencyc
 khamsin	event	single	sumo	
 khamsin	land-vehicle	single	opencyc	
 khamsin	motion	single	wikidata	
+khamsin	motor-vehicle	single	opencyc	
 khamsin	natural-event	single	wordnet	
 khamsin	phenomenon	accepted	sumo wordnet	
 khamsin	process	single	wordnet	
@@ -2458,6 +2445,7 @@ khamsin	weather	single	wordnet
 khamsin	wind	accepted	sumo wikidata wordnet	
 kidney-stone	rock	single	claude	
 kitchen	geographical-area	single	sumo	
+kitchenette	geographical-area	single	sumo	
 kitty-litter	clay	accepted	sumo wordnet	
 kitty-litter	material	accepted	sumo wordnet	
 kitty-litter	part	single	wordnet	
@@ -2568,6 +2556,7 @@ lava	ground	single	opencyc
 lava	magma	accepted	claude wikidata	
 lava	rock-material	accepted	claude-ruling	
 lawn	geographical-area	accepted	sumo wordnet	
+leaf-mold	compost	single	wikidata	
 leaf-mold	material	single	wordnet	
 leaf-mold	part	single	wordnet	
 leaf-mold	phenomenon	single	sumo	
@@ -2578,6 +2567,7 @@ leap-second	time-standard	accepted	claude-ruling
 leap-year	quantity	accepted	claude-ruling	
 leap-year	time-period	single	opencyc	
 leap-year	year	accepted	claude-ruling opencyc	
+ledge	furniture	single	gpt	
 ledge	geographical-area	single	sumo	
 ledge	geological-formation	single	wordnet	
 ledge	ground	single	opencyc	
@@ -3229,6 +3219,7 @@ oceanography	science	single	wordnet
 oceanography	signified	single	sumo	
 odometer	artifact	single	opencyc	
 odometer	device	single	opencyc	
+odometer	gauge	single	opencyc	
 odometer	instrument	accepted	claude-ruling	
 odometer	measuring-instrument	accepted	claude-ruling	
 odometer	part	single	opencyc	
@@ -3244,6 +3235,7 @@ omnirange	device	single	sumo
 omnirange	mechanism	single	sumo	
 omnirange	phenomenon	single	sumo	
 omnirange	physical-object	single	wordnet	
+omnirange	system-instrumentality	single	wordnet	
 omnirange	universe	single	sumo	
 open-location-code	geocode	accepted	claude-ruling	
 orbit	geographical-area	single	sumo	
@@ -3563,6 +3555,7 @@ polynya	phenomenon	single	sumo
 polynya	place	single	sumo	
 polynya	universe	single	sumo	
 pond	body-of-water	accepted	opencyc schemaorg wordnet yago	
+pond	decor	single	gpt	
 pond	lake	accepted	claude wordnet	
 pond	landform	accepted	schemaorg yago	
 pond	place	accepted	schemaorg yago	
@@ -3643,6 +3636,7 @@ proterozoic	eon	accepted	claude-ruling
 ptyalith	rock	single	claude	
 public-square	geographical-area	accepted	sumo wordnet	
 puff	gust	single	claude	
+pumice-stone	rock-material	single	wordnet	
 quarter	geographical-area	single	sumo	
 quaternary	geological-period	accepted	claude-ruling	
 quicksand	cavity	accepted	claude wordnet	
@@ -3661,12 +3655,6 @@ radar	physical-object	single	wikidata
 radar	product	accepted	opencyc yago	
 radar	tool	accepted	claude wikidata	
 rain	precipitation	accepted	wikidata wordnet	
-rain-gauge	artifact	accepted	sumo wordnet	
-rain-gauge	device	accepted	sumo wordnet	
-rain-gauge	instrument	accepted	claude wordnet	
-rain-gauge	phenomenon	single	sumo	
-rain-gauge	physical-object	single	wordnet	
-rain-gauge	universe	single	sumo	
 rain-shower	precipitation	single	wordnet	
 rain-wash	event	single	sumo	
 rain-wash	geological-erosion	single	wordnet	
@@ -4081,6 +4069,7 @@ shingling	mineral	single	sumo
 shingling	part	single	wordnet	
 shingling	phenomenon	single	sumo	
 shingling	rock-material	accepted	claude wordnet	
+shingling	roofing	single	opencyc	
 shingling	situation	single	opencyc	
 shingling	substance	accepted	sumo wordnet	
 shingling	universe	single	sumo	
@@ -4188,6 +4177,7 @@ solstice	situation	single	opencyc
 sonar	artifact	single	wordnet	
 sonar	device	single	wordnet	
 sonar	instrument	accepted	claude wordnet	
+sonar	noisemaker	single	wikidata	
 sonar	phenomenon	single	sumo	
 sonar	physical-object	accepted	sumo wordnet	
 sonar	product	single	yago	
@@ -4307,6 +4297,7 @@ sprite-lightning	luminosity	single	sumo
 sprite-lightning	natural-event	single	wordnet	
 sprite-lightning	phenomenon	accepted	sumo wordnet	
 sprite-lightning	process	single	wordnet	
+spur	natural-elevation	single	opencyc	
 squall	natural-event	single	wordnet	
 squall	phenomenon	single	wordnet	
 squall	process	single	wordnet	
@@ -4319,6 +4310,7 @@ squall-line	process	single	wordnet
 squall-line	weather-front	single	wordnet	
 star-chart	map	accepted	claude-ruling	
 station	geographical-area	single	sumo	
+station-facility	geographical-area	single	sumo	
 steep	declivity	single	claude	
 steppe	biome	single	wikidata	
 steppe	grassland	accepted	claude-ruling opencyc wikidata	
@@ -4401,6 +4393,7 @@ strong-gale	process	single	wordnet
 strong-gale	weather	single	wordnet	
 strong-gale	wind	single	wordnet	
 studio	geographic-point	single	wordnet	
+studio-apartment	geographical-area	single	sumo	
 subcontinent	geographical-area	single	sumo	
 subcontinent	land	accepted	sumo wordnet	
 subcontinent	landmass	accepted	claude wordnet	
@@ -4569,15 +4562,7 @@ thaw	phenomenon	accepted	sumo wordnet
 thaw	process	single	wordnet	
 thaw	weather	accepted	claude wordnet	
 thematic-map	map	accepted	claude-ruling	
-theodolite	artifact	accepted	sumo wikidata wordnet	
-theodolite	device	accepted	sumo wordnet	
-theodolite	equipment	single	wikidata	
-theodolite	instrument	accepted	claude claude-ruling wordnet	
 theodolite	measuring-instrument	accepted	claude-ruling	
-theodolite	phenomenon	single	sumo	
-theodolite	physical-object	accepted	wikidata wordnet	
-theodolite	tool	accepted	claude wikidata	
-theodolite	universe	single	sumo	
 thermal-updraft	convection	accepted	claude wikidata	
 thermal-updraft	event	single	sumo	
 thermal-updraft	natural-event	single	wordnet	
@@ -5048,6 +5033,7 @@ weather-balloon	aircraft	accepted	opencyc wikidata
 weather-balloon	artifact	single	opencyc	
 weather-balloon	balloon	accepted	claude-ruling	
 weather-balloon	device	single	opencyc	
+weather-balloon	drone-aircraft	single	wikidata	
 weather-balloon	physical-object	single	wikidata	
 weather-balloon	vehicle	single	wikidata	
 weather-forecast	information	accepted	opencyc wordnet	

@@ -20,12 +20,14 @@ accumulator-register	mechanism	single	sumo
 accumulator-register	phenomenon	single	sumo	
 accumulator-register	physical-object	single	wordnet	
 accumulator-register	processor-register	accepted	claude wordnet	
+accumulator-register	storage-device	single	wordnet	
 accumulator-register	universe	single	sumo	
 acid-transaction-properties	property	accepted	claude-ruling	
 acoustic-storage	artifact	accepted	sumo wordnet	
 acoustic-storage	device	accepted	sumo wordnet	
 acoustic-storage	phenomenon	single	sumo	
 acoustic-storage	physical-object	single	wordnet	
+acoustic-storage	storage-device	single	wordnet	
 acoustic-storage	universe	single	sumo	
 active-application	application	accepted	claude wordnet	
 active-application	code	accepted	sumo wordnet	
@@ -157,6 +159,7 @@ applet	software	accepted	wikidata wordnet
 application-layer	concept	accepted	claude-ruling	
 application-programming-interface	interface	accepted	claude-ruling	
 application-specific-integrated-circuit	chip	accepted	claude-ruling wikidata	
+application-specific-integrated-circuit	integrated-circuit	single	wikidata	
 approximation-algorithm	algorithm	accepted	claude-ruling wikidata	
 arabic-alphabet	alphabet	single	claude	
 arch-linux	linux-distribution	accepted	claude-ruling	
@@ -217,11 +220,13 @@ asynchronous-operation	process	single	wordnet
 asynchronous-operation	volition	single	sumo	
 atomic-operation	computer-operation	accepted	claude-ruling	
 audio-cd	artifact	single	wordnet	
-audio-cd	compact-disk	accepted	claude-ruling wordnet	
+audio-cd	cd	single	wordnet	
+audio-cd	compact-disk	accepted	claude-ruling	
 audio-cd	device	single	wordnet	
 audio-cd	optical-disk	single	wordnet	
 audio-cd	physical-object	single	wordnet	
 audio-cd	recording	single	wordnet	
+audio-cd	storage-device	single	wordnet	
 audiotape	magnetic-tape	single	claude	
 audiotape.artifact	audio	single	claude	
 audiotape.artifact	tape-recording	single	claude	
@@ -263,6 +268,7 @@ auxiliary-storage	artifact	accepted	sumo wordnet
 auxiliary-storage	device	accepted	sumo wordnet	
 auxiliary-storage	phenomenon	single	sumo	
 auxiliary-storage	physical-object	single	wordnet	
+auxiliary-storage	storage-device	single	wordnet	
 auxiliary-storage	universe	single	sumo	
 av1	video-coding-format	accepted	claude-ruling	
 avi	multimedia-container-format	accepted	claude-ruling	
@@ -401,6 +407,7 @@ biochip	device	accepted	sumo wordnet
 biochip	mechanism	single	sumo	
 biochip	phenomenon	single	sumo	
 biochip	physical-object	single	wordnet	
+biochip	semiconductor	single	wordnet	
 biochip	universe	single	sumo	
 bios	firmware	accepted	claude-ruling	
 bios	operating-system	dissented	wikidata	
@@ -564,14 +571,16 @@ cataloged-procedure	software	single	wordnet
 cataloged-procedure	subroutine	accepted	claude wordnet	
 catalogue	list	single	claude	
 cbor	data-serialization-format	accepted	claude-ruling	
+cd	optical-disk	accepted	claude wordnet	
 cd-r	artifact	single	wordnet	
-cd-r	compact-disk	accepted	claude wordnet	
+cd-r	cd	accepted	claude wordnet	
 cd-r	device	single	wordnet	
 cd-r	optical-disk	accepted	claude-ruling wordnet	
 cd-r	physical-object	single	wordnet	
 cd-r	recording	single	wordnet	
+cd-r	storage-device	single	wordnet	
 cd-rom	artifact	accepted	opencyc wordnet	
-cd-rom	compact-disk	accepted	claude wordnet	
+cd-rom	cd	accepted	claude wordnet	
 cd-rom	component	single	wordnet	
 cd-rom	computer-memory	single	wordnet	
 cd-rom	cylinder	single	opencyc	
@@ -581,11 +590,11 @@ cd-rom	hardware	single	wordnet
 cd-rom	optical-disk	single	wordnet	
 cd-rom	physical-object	single	wordnet	
 cd-rom	product	single	opencyc	
-cd-rom	read-only-memory	accepted	claude wordnet	
 cd-rom	recording	single	wordnet	
+cd-rom	rom	accepted	claude wordnet	
+cd-rom	storage-device	single	wordnet	
 cellular-network	computer-network	accepted	claude-ruling	
 cellular-network	telecommunication	accepted	claude-ruling	
-cellular-telephone	telephony	single	claude	
 census	computation	single	sumo	
 central-processing-unit	artifact	single	wordnet	
 central-processing-unit	chip	accepted	claude-ruling	
@@ -632,6 +641,7 @@ checklist	list	single	claude
 checksum	code	accepted	claude-ruling	
 chord-protocol	distributed-hash-table	accepted	claude-ruling	
 church-roll	roster	single	claude	
+circuit-card	computer-circuit	single	wordnet	
 class-inheritance	data-processing-technique	accepted	claude-ruling	
 class-list	list	single	claude	
 classification-scheme	knowledge-organization-system	accepted	claude-ruling	
@@ -699,11 +709,6 @@ communications-protocol	attribute	single	sumo
 communications-protocol	information	accepted	claude wordnet	
 communications-protocol	normal	single	sumo	
 communications-protocol	property	single	sumo	
-compact-disk	artifact	single	wordnet	
-compact-disk	device	single	wordnet	
-compact-disk	optical-disk	accepted	claude wordnet	
-compact-disk	physical-object	single	wordnet	
-compact-disk	recording	accepted	claude wordnet	
 compatible-software	code	accepted	sumo wordnet	
 compatible-software	computer-program	single	sumo	
 compatible-software	information	single	wordnet	
@@ -713,15 +718,7 @@ compatible-software	signified	single	sumo
 compatible-software	software	accepted	claude wordnet	
 compatible-software.communication	software	single	claude	
 compiled-language	programming-language	accepted	claude-ruling wikidata	
-compiler	code	accepted	sumo wordnet	
-compiler	computer-program	accepted	sumo wordnet	
-compiler	information	accepted	opencyc wordnet yago	
-compiler	measure	single	sumo	
-compiler	product	single	yago	
 compiler	programming-tool	accepted	claude-ruling	
-compiler	routine	single	sumo	
-compiler	signified	single	sumo	
-compiler	software	accepted	wikidata wordnet	
 compiler	software-object	single	opencyc	
 compiler	utility-program	single	opencyc	
 complex-instruction-set-computer	computer-architecture	accepted	claude-ruling	
@@ -775,6 +772,7 @@ computer-cache	device	accepted	sumo wordnet
 computer-cache	hardware	accepted	claude wikidata	
 computer-cache	phenomenon	single	sumo	
 computer-cache	physical-object	single	wordnet	
+computer-cache	storage-device	single	wordnet	
 computer-cache	universe	single	sumo	
 computer-circuit	artifact	single	wordnet	
 computer-circuit	device	accepted	claude wordnet	
@@ -796,6 +794,7 @@ computer-hardware	hardware	accepted	claude-ruling
 computer-icon	information	accepted	sumo wordnet	
 computer-icon	phenomenon	single	sumo	
 computer-icon	signal	single	wordnet	
+computer-icon	software	single	gpt	
 computer-icon	symbol	accepted	claude wordnet	
 computer-icon	universe	single	sumo	
 computer-instruction	accomplishment	single	sumo	
@@ -810,9 +809,10 @@ computer-instruction	procedure	single	sumo
 computer-instruction	universe	single	sumo	
 computer-instruction	volition	single	sumo	
 computer-keyboard	artifact	accepted	opencyc wordnet	
-computer-keyboard	data-input-device	accepted	claude wordnet	
 computer-keyboard	device	accepted	opencyc wordnet	
 computer-keyboard	equipment	single	wordnet	
+computer-keyboard	input-device	accepted	claude wordnet	
+computer-keyboard	keyboard	single	wordnet	
 computer-keyboard	peripheral	single	wordnet	
 computer-keyboard	physical-object	single	wordnet	
 computer-keyboard	product	single	opencyc	
@@ -822,7 +822,11 @@ computer-language	line-of-text	single	sumo
 computer-language	phenomenon	single	sumo	
 computer-language	programming-language	disputed	wordnet	opencyc yago
 computer-language	universe	single	sumo	
-computer-mouse	data-input-device	accepted	claude-ruling wikidata	
+computer-monitor	display-device	single	wikidata	
+computer-monitor	output-device	single	wikidata	
+computer-monitor	peripheral	single	wikidata	
+computer-monitor	user-interface	single	wikidata	
+computer-mouse	data-input-device	accepted	claude-ruling	
 computer-mouse	peripheral	single	wikidata	
 computer-mouse	user-interface	single	wikidata	
 computer-network	artifact	accepted	opencyc wordnet	
@@ -830,6 +834,7 @@ computer-network	device	single	opencyc
 computer-network	physical-object	single	wordnet	
 computer-network	structure	single	opencyc	
 computer-network	system	single	opencyc	
+computer-network	system-instrumentality	single	wordnet	
 computer-operation	accomplishment	single	sumo	
 computer-operation	act	single	sumo	
 computer-operation	activity	single	sumo	
@@ -853,9 +858,10 @@ computer-security-system	artifact	accepted	sumo wordnet
 computer-security-system	device	single	sumo	
 computer-security-system	phenomenon	single	sumo	
 computer-security-system	physical-object	single	wordnet	
+computer-security-system	system-instrumentality	single	wordnet	
 computer-security-system	universe	single	sumo	
 computer-server	artifact	single	wordnet	
-computer-server	computer	accepted	claude-ruling wordnet	
+computer-server	computer	accepted	claude-ruling gpt wordnet	
 computer-server	device	single	wordnet	
 computer-server	machine	single	wordnet	
 computer-server	physical-object	single	wordnet	
@@ -983,6 +989,7 @@ data-buffer	artifact	accepted	sumo wordnet
 data-buffer	device	accepted	sumo wordnet	
 data-buffer	phenomenon	single	sumo	
 data-buffer	physical-object	single	wordnet	
+data-buffer	storage-device	single	wordnet	
 data-buffer	universe	single	sumo	
 data-center	facility	accepted	claude-ruling	
 data-center	place	single	yago	
@@ -1015,13 +1022,7 @@ data-field	collection	accepted	sumo wordnet
 data-field	group	single	wordnet	
 data-field	phenomenon	single	sumo	
 data-field	set	accepted	claude wordnet	
-data-input-device	artifact	single	wordnet	
-data-input-device	equipment	single	wordnet	
-data-input-device	hardware	single	wikidata	
-data-input-device	interface	dissented	wikidata	
-data-input-device	peripheral	accepted	claude-ruling wikidata wordnet	
-data-input-device	physical-object	single	wordnet	
-data-input-device	user-interface	dissented	wikidata	
+data-input-device	peripheral	accepted	claude-ruling	
 data-integrity	property	accepted	claude-ruling	
 data-lake	data-warehouse	accepted	claude-ruling wikidata	
 data-lake	electronic-database	accepted	claude-ruling	
@@ -1189,6 +1190,7 @@ demodulation	physical-object	single	wordnet
 demodulation	procedure	single	sumo	
 demodulation	reception	single	wordnet	
 demodulation	signal-processing	accepted	claude-ruling	
+demodulation	storage-medium	single	wordnet	
 demodulation	universe	single	sumo	
 demodulation	volition	single	sumo	
 denial-of-service-attack	action	single	opencyc	
@@ -1205,19 +1207,8 @@ depth-first-search	algorithm	accepted	claude wikidata
 depth-first-search	graph-algorithm	accepted	claude-ruling	
 depth-first-search	information-retrieval	dissented	wikidata	
 design-by-contract	software-development-methodology	accepted	claude-ruling	
-desktop-computer	artifact	accepted	opencyc sumo wordnet	
-desktop-computer	computer	accepted	opencyc wikidata wordnet	
-desktop-computer	device	accepted	opencyc sumo wordnet	
 desktop-computer	digital-computer	single	wordnet	
-desktop-computer	machine	accepted	sumo wikidata wordnet	
-desktop-computer	machinery	single	sumo	
 desktop-computer	personal-computer	accepted	opencyc wikidata wordnet	
-desktop-computer	phenomenon	single	sumo	
-desktop-computer	physical-object	single	wordnet	
-desktop-computer	product	single	opencyc	
-desktop-computer	structure	single	opencyc	
-desktop-computer	system	single	opencyc	
-desktop-computer	universe	single	sumo	
 desktop-environment	information	single	yago	
 desktop-environment	product	single	yago	
 desktop-environment	system-software	accepted	claude-ruling	
@@ -1258,6 +1249,7 @@ dialog-box	information	single	sumo
 dialog-box	phenomenon	single	sumo	
 dialog-box	physical-object	single	wordnet	
 dialog-box	universe	single	sumo	
+dialog-box	video-display	single	wordnet	
 dictionary	hard-copy	single	sumo	
 differential-analyzer	analog-computer	accepted	claude wordnet	
 differential-analyzer	artifact	accepted	sumo wordnet	
@@ -1301,6 +1293,7 @@ digital-signature	information	accepted	claude-ruling wikidata
 dijkstra-algorithm	graph-algorithm	accepted	claude-ruling	
 dip-switch	artifact	accepted	sumo wordnet	
 dip-switch	component	single	sumo	
+dip-switch	control	single	wordnet	
 dip-switch	device	accepted	sumo wordnet	
 dip-switch	electric-switch	accepted	sumo wordnet	
 dip-switch	mechanism	accepted	sumo wordnet	
@@ -1343,19 +1336,12 @@ disk-cache	computer-cache	accepted	claude wordnet
 disk-cache	data-buffer	single	wordnet	
 disk-cache	device	single	wordnet	
 disk-cache	physical-object	single	wordnet	
+disk-cache	storage-device	single	wordnet	
 disk-controller	artifact	single	wordnet	
+disk-controller	control	single	wordnet	
 disk-controller	device	single	wordnet	
 disk-controller	mechanism	accepted	claude wordnet	
 disk-controller	physical-object	single	wordnet	
-disk-drive	artifact	accepted	opencyc sumo wordnet	
-disk-drive	device	accepted	opencyc sumo wordnet	
-disk-drive	machine	single	sumo	
-disk-drive	machinery	single	sumo	
-disk-drive	phenomenon	single	sumo	
-disk-drive	physical-object	single	wordnet	
-disk-drive	product	single	opencyc	
-disk-drive	storage-drive	accepted	claude wordnet	
-disk-drive	universe	single	sumo	
 disk-error	computer-error	single	wordnet	
 disk-error	event	single	wordnet	
 disk-error	hardware-error	accepted	claude wordnet	
@@ -1397,6 +1383,7 @@ diskette	artifact	single	wordnet
 diskette	device	single	wordnet	
 diskette	magnetic-disk	accepted	claude-ruling wordnet	
 diskette	physical-object	single	wordnet	
+diskette	storage-device	single	wordnet	
 display-adapter	artifact	accepted	sumo wordnet	
 display-adapter	device	accepted	sumo wordnet	
 display-adapter	machine	single	sumo	
@@ -1503,6 +1490,7 @@ dump-routine	signified	single	sumo
 dump-routine	software	single	wordnet	
 dump-routine	subroutine	single	wordnet	
 dump-routine	utility-routine	accepted	claude wordnet	
+dvd	optical-disk	accepted	claude wordnet	
 dyadic-operation	accomplishment	single	sumo	
 dyadic-operation	act	single	sumo	
 dyadic-operation	activity	single	sumo	
@@ -1578,13 +1566,16 @@ enumeration	list	single	claude
 environment-variable	information	single	opencyc	
 environment-variable	program-variable	accepted	claude-ruling wikidata	
 epub	document-file-format	accepted	claude-ruling	
+equalizer	signal-processing	single	wikidata	
 erasable-programmable-read-only-memory	artifact	single	wordnet	
 erasable-programmable-read-only-memory	component	single	wordnet	
 erasable-programmable-read-only-memory	computer-memory	single	wordnet	
 erasable-programmable-read-only-memory	device	single	wordnet	
 erasable-programmable-read-only-memory	hardware	single	wordnet	
 erasable-programmable-read-only-memory	physical-object	single	wordnet	
-erasable-programmable-read-only-memory	read-only-memory	accepted	claude-ruling wordnet	
+erasable-programmable-read-only-memory	read-only-memory	accepted	claude-ruling	
+erasable-programmable-read-only-memory	rom	single	wordnet	
+erasable-programmable-read-only-memory	storage-device	single	wordnet	
 erasure-code	error-correcting-code	accepted	claude-ruling	
 erlang-language	programming-language	accepted	claude-ruling	
 error-correcting-code	code	accepted	claude claude-ruling wordnet	
@@ -1600,6 +1591,8 @@ ethernet	communications-protocol	accepted	claude-ruling
 ethernet	computer-network	accepted	claude-ruling wordnet	
 ethernet	local-area-network	accepted	claude wordnet	
 ethernet	physical-object	single	wordnet	
+ethernet	plug	single	wikidata	
+ethernet	system-instrumentality	single	wordnet	
 ethernet-hub	hardware	accepted	claude wikidata	
 ethernet-hub	networking-hardware	accepted	claude-ruling	
 event-driven-programming	computer-programming	accepted	claude wikidata	
@@ -1647,6 +1640,7 @@ fedora-linux	linux-distribution	accepted	claude-ruling
 feed	web-feed	accepted	claude-ruling	
 fiber-optic-communication	telecommunication	accepted	claude-ruling	
 field-programmable-gate-array	chip	accepted	claude-ruling wikidata	
+field-programmable-gate-array	integrated-circuit	single	wikidata	
 file-archiver	information	single	yago	
 file-archiver	product	single	yago	
 file-archiver	utility-program	accepted	claude-ruling	
@@ -1721,14 +1715,7 @@ fixed-cycle-operation	process	single	wordnet
 fixed-cycle-operation	volition	single	sumo	
 flac	audio-coding-format	accepted	claude-ruling	
 flac	audio-file-format	accepted	claude-ruling	
-flash-memory	artifact	accepted	opencyc wordnet	
-flash-memory	component	single	wordnet	
-flash-memory	computer-memory	single	wordnet	
-flash-memory	device	accepted	opencyc wordnet	
-flash-memory	hardware	accepted	wikidata wordnet	
 flash-memory	non-volatile-storage	accepted	claude-ruling wordnet	
-flash-memory	physical-object	single	wordnet	
-flash-memory	product	single	opencyc	
 floating-point-format	code	accepted	claude-ruling	
 floating-point-format	data-type	single	wikidata	
 floating-point-format	primitive-data-type	accepted	claude-ruling wikidata	
@@ -1780,6 +1767,7 @@ foreground-window	phenomenon	single	sumo
 foreground-window	physical-object	single	wordnet	
 foreground-window	place	single	sumo	
 foreground-window	universe	single	sumo	
+foreground-window	video-display	single	wordnet	
 foreign-key	identifier	accepted	claude-ruling	
 formal-concept-analysis	mathematics	accepted	claude-ruling	
 formal-grammar	concept	accepted	claude-ruling	
@@ -1816,6 +1804,7 @@ frame-buffer	data-buffer	accepted	claude wordnet
 frame-buffer	device	accepted	sumo wordnet	
 frame-buffer	phenomenon	single	sumo	
 frame-buffer	physical-object	single	wordnet	
+frame-buffer	storage-device	single	wordnet	
 frame-buffer	universe	single	sumo	
 free-and-open-source-software	free-software	accepted	claude-ruling	
 free-and-open-source-software	information	single	yago	
@@ -1889,6 +1878,7 @@ gene-chip	device	accepted	sumo wordnet
 gene-chip	mechanism	single	sumo	
 gene-chip	phenomenon	single	sumo	
 gene-chip	physical-object	single	wordnet	
+gene-chip	semiconductor	single	wordnet	
 gene-chip	universe	single	sumo	
 generator-routine	coroutine	accepted	claude-ruling wikidata	
 generic-programming	computer-programming	accepted	claude wikidata	
@@ -1948,6 +1938,7 @@ gui-window	device	accepted	claude wordnet
 gui-window	gui-widget	accepted	claude wikidata	
 gui-window	physical-object	single	wordnet	
 gui-window	software-object	accepted	claude-ruling	
+gui-window	video-display	single	wordnet	
 guidebook	hard-copy	single	sumo	
 gzip	compression-format	accepted	claude-ruling	
 gzip-file-format	compression-format	accepted	claude-ruling	
@@ -1964,6 +1955,7 @@ hand-held-computer	phenomenon	single	sumo
 hand-held-computer	physical-object	single	wordnet	
 hand-held-computer	portable-computer	accepted	claude wordnet	
 hand-held-computer	universe	single	sumo	
+handrail	user-interface	single	wikidata	
 hard-copy	artifact	single	sumo	
 hard-copy	component	single	sumo	
 hard-copy	device	single	sumo	
@@ -1973,16 +1965,14 @@ hard-copy	mechanism	single	sumo
 hard-copy	phenomenon	single	sumo	
 hard-copy	physical-object	single	sumo	
 hard-copy	universe	single	sumo	
-hard-disc	artifact	single	wordnet	
-hard-disc	device	single	wordnet	
-hard-disc	magnetic-disk	accepted	claude-ruling wordnet	
-hard-disc	physical-object	single	wordnet	
+hard-disc	magnetic-disk	accepted	claude-ruling	
+hard-disk	magnetic-disk	single	wordnet	
 hard-disk-drive	artifact	single	opencyc	
 hard-disk-drive	device	single	opencyc	
-hard-disk-drive	disk-drive	single	opencyc	
 hard-disk-drive	hardware	accepted	claude wikidata	
 hard-disk-drive	non-volatile-storage	accepted	claude-ruling	
 hard-disk-drive	product	single	opencyc	
+hard-drive	storage-drive	accepted	claude wordnet	
 hard-link	file-directory	accepted	claude-ruling	
 hardware-counter	artifact	accepted	sumo wordnet	
 hardware-counter	component	single	sumo	
@@ -1991,6 +1981,7 @@ hardware-counter	mechanism	single	sumo
 hardware-counter	phenomenon	single	sumo	
 hardware-counter	physical-object	single	wordnet	
 hardware-counter	processor-register	accepted	claude wordnet	
+hardware-counter	storage-device	single	wordnet	
 hardware-counter	universe	single	sumo	
 hardware-emulation	cognition	single	wordnet	
 hardware-emulation	measure	single	sumo	
@@ -2112,15 +2103,15 @@ hypervisor	system-software	accepted	claude-ruling
 icalendar	data-serialization-format	accepted	claude-ruling	
 identifier	information	accepted	claude-ruling wikidata	
 identity	partial-order	dissented	wikidata	
-image-scanner	artifact	single	wordnet	
-image-scanner	camera	dissented	wikidata	
-image-scanner	data-input-device	accepted	claude-ruling wikidata wordnet	
-image-scanner	device	accepted	claude wordnet	
-image-scanner	equipment	accepted	wikidata wordnet	
+image-scanner	camera	single	wikidata	
+image-scanner	data-input-device	accepted	claude-ruling	
+image-scanner	digital-camera	single	wikidata	
+image-scanner	equipment	single	wikidata	
 image-scanner	hardware	single	wikidata	
+image-scanner	household-appliance	single	wikidata	
+image-scanner	input-device	single	wikidata	
 image-scanner	interface	single	wikidata	
-image-scanner	peripheral	accepted	wikidata wordnet	
-image-scanner	physical-object	single	wordnet	
+image-scanner	peripheral	single	wikidata	
 image-scanner	user-interface	single	wikidata	
 immutable-object	software-object	accepted	claude-ruling wikidata	
 imperative-programming	computer-programming	accepted	claude wikidata	
@@ -2135,6 +2126,7 @@ index-register	mechanism	single	sumo
 index-register	phenomenon	single	sumo	
 index-register	physical-object	single	wordnet	
 index-register	processor-register	accepted	claude wordnet	
+index-register	storage-device	single	wordnet	
 index-register	universe	single	sumo	
 information-architecture	concept	accepted	claude-ruling	
 information-entropy	quantity	accepted	claude-ruling	
@@ -2166,6 +2158,8 @@ ink-jet-printer	physical-object	single	wordnet
 ink-jet-printer	printer	accepted	wikidata wordnet	
 inode	data-structure	accepted	claude-ruling	
 inode	information	single	opencyc	
+input-device	peripheral	accepted	wikidata wordnet	
+input-device	user-interface	accepted	claude wikidata	
 input-file	artifact	single	sumo	
 input-file	computer-file	accepted	claude wordnet	
 input-file	contract-condition	single	sumo	
@@ -2208,6 +2202,7 @@ instruction-set-architecture	computer-architecture	accepted	claude-ruling
 integer-data-type	data-type	single	wikidata	
 integer-data-type	primitive-data-type	accepted	claude-ruling wikidata	
 integer-overflow	software-bug	accepted	claude-ruling	
+integrated-circuit	computer-circuit	single	wordnet	
 integrated-data-processing	accomplishment	single	sumo	
 integrated-data-processing	act	single	sumo	
 integrated-data-processing	activity	single	sumo	
@@ -2257,6 +2252,7 @@ intranet	phenomenon	single	sumo
 intranet	physical-object	single	wordnet	
 intranet	structure	single	opencyc	
 intranet	system	single	opencyc	
+intranet	system-instrumentality	single	wordnet	
 intranet	universe	single	sumo	
 introductory-text	hard-copy	single	sumo	
 intrusion-detection-system	computer-security-system	accepted	claude-ruling	
@@ -2301,9 +2297,10 @@ job-control	software	single	wordnet
 journaling-file-system	file-system	accepted	claude-ruling wikidata	
 journaling-file-system	software	single	wikidata	
 joystick	artifact	accepted	opencyc wordnet	
-joystick	data-input-device	accepted	claude wordnet	
+joystick	control	single	wordnet	
 joystick	device	accepted	opencyc wordnet	
 joystick	equipment	single	wordnet	
+joystick	input-device	accepted	claude wordnet	
 joystick	mechanism	accepted	claude wordnet	
 joystick	peripheral	single	wordnet	
 joystick	physical-object	single	wordnet	
@@ -2332,6 +2329,7 @@ keyboard-buffer	data-buffer	accepted	claude wordnet
 keyboard-buffer	device	accepted	sumo wordnet	
 keyboard-buffer	phenomenon	single	sumo	
 keyboard-buffer	physical-object	single	wordnet	
+keyboard-buffer	storage-device	single	wordnet	
 keyboard-buffer	universe	single	sumo	
 keyboard-layout	concept	accepted	claude-ruling	
 keyhole-markup-language	file-format	accepted	claude wikidata	
@@ -2348,17 +2346,9 @@ kruskals-algorithm	graph-algorithm	accepted	claude-ruling
 kubernetes	software	accepted	claude-ruling	
 lambda-calculus	model-of-computation	accepted	claude-ruling	
 lamport-timestamp	logical-clock	accepted	claude-ruling	
-laptop	artifact	accepted	sumo wordnet	
-laptop	computer	accepted	sumo wikidata wordnet	
-laptop	device	accepted	sumo wordnet	
 laptop	digital-computer	single	wordnet	
-laptop	machine	accepted	wikidata wordnet	
 laptop	personal-computer	accepted	wikidata wordnet	
-laptop	phenomenon	single	sumo	
-laptop	physical-object	single	wordnet	
 laptop	portable-computer	accepted	claude-ruling sumo wikidata wordnet	
-laptop	product	single	yago	
-laptop	universe	single	sumo	
 latency	network-performance-measure	accepted	claude-ruling	
 latency	quantity	accepted	claude-ruling	
 latex	markup-language	accepted	claude-ruling wikidata	
@@ -2499,6 +2489,7 @@ local-area-network	device	single	opencyc
 local-area-network	physical-object	single	wordnet	
 local-area-network	structure	single	opencyc	
 local-area-network	system	single	opencyc	
+local-area-network	system-instrumentality	single	wordnet	
 local-first-software	software	accepted	claude-ruling	
 log-file	computer-file	accepted	claude-ruling wikidata	
 log-file	data-file	accepted	claude wikidata	
@@ -2558,7 +2549,6 @@ low-level-formatting	information	single	wordnet
 low-level-formatting	phenomenon	single	sumo	
 low-level-formatting	procedure	single	sumo	
 low-level-formatting	volition	single	sumo	
-lp	phonograph-record	single	claude	
 lua	scripting-language	accepted	claude-ruling	
 mac-address	identifier	accepted	claude-ruling	
 mac-address	information	single	opencyc	
@@ -2614,6 +2604,7 @@ magnetic-bubble-memory	mechanism	single	sumo
 magnetic-bubble-memory	non-volatile-storage	accepted	claude wordnet	
 magnetic-bubble-memory	phenomenon	single	sumo	
 magnetic-bubble-memory	physical-object	single	wordnet	
+magnetic-bubble-memory	storage-device	single	wordnet	
 magnetic-bubble-memory	universe	single	sumo	
 magnetic-core-memory	artifact	single	wordnet	
 magnetic-core-memory	component	single	wordnet	
@@ -2621,21 +2612,26 @@ magnetic-core-memory	computer-memory	single	wordnet
 magnetic-core-memory	device	single	wordnet	
 magnetic-core-memory	hardware	accepted	wikidata wordnet	
 magnetic-core-memory	physical-object	single	wordnet	
-magnetic-core-memory	random-access-memory	accepted	wikidata wordnet	
+magnetic-core-memory	ram	accepted	wikidata wordnet	
+magnetic-core-memory	random-access-memory	single	wikidata	
+magnetic-core-memory	storage-device	single	wordnet	
 magnetic-core-memory	volatile-storage	single	wordnet	
 magnetic-disk	artifact	single	wordnet	
 magnetic-disk	device	accepted	claude wordnet	
 magnetic-disk	physical-object	single	wordnet	
+magnetic-disk	storage-device	single	wordnet	
 magnetic-stripe	artifact	single	wordnet	
 magnetic-stripe	device	single	wordnet	
 magnetic-stripe	magnetic-tape	accepted	claude wordnet	
 magnetic-stripe	physical-object	single	wordnet	
+magnetic-stripe	storage-device	single	wordnet	
 magnetic-tape	artifact	accepted	opencyc wordnet	
 magnetic-tape	device	accepted	opencyc wordnet	
 magnetic-tape	line	single	opencyc	
 magnetic-tape	physical-object	single	wordnet	
 magnetic-tape	product	single	yago	
 magnetic-tape	route	single	opencyc	
+magnetic-tape	storage-device	single	wordnet	
 magnetic-tape	tape	single	opencyc	
 mailing-list	list	single	claude	
 mainframe-computer	artifact	accepted	opencyc sumo wordnet	
@@ -2736,6 +2732,7 @@ memory-chip	device	accepted	sumo wordnet
 memory-chip	mechanism	single	sumo	
 memory-chip	phenomenon	single	sumo	
 memory-chip	physical-object	single	wordnet	
+memory-chip	semiconductor	single	wordnet	
 memory-chip	universe	single	sumo	
 memory-dump	artifact	single	sumo	
 memory-dump	contract-condition	single	sumo	
@@ -2774,19 +2771,22 @@ microcontroller	artifact	single	opencyc
 microcontroller	chip	accepted	claude-ruling wikidata	
 microcontroller	device	single	opencyc	
 microcontroller	hardware	accepted	claude wikidata	
+microcontroller	integrated-circuit	accepted	opencyc wikidata	
 microcontroller	microprocessor	single	opencyc	
 microcontroller	product	accepted	opencyc yago	
-microphone	data-input-device	accepted	claude wikidata	
+microcontroller	semiconductor	single	gpt	
 microphone	peripheral	single	wikidata	
 microphone	user-interface	single	wikidata	
 microprocessor	artifact	accepted	opencyc sumo wordnet	
 microprocessor	chip	accepted	claude wordnet	
 microprocessor	component	single	sumo	
 microprocessor	device	accepted	opencyc sumo wordnet	
+microprocessor	integrated-circuit	single	opencyc	
 microprocessor	mechanism	single	sumo	
 microprocessor	phenomenon	single	sumo	
 microprocessor	physical-object	single	wordnet	
 microprocessor	product	accepted	opencyc yago	
+microprocessor	semiconductor	single	wordnet	
 microprocessor	universe	single	sumo	
 microservices	computer-science	single	wikidata	
 microservices	service-oriented-architecture	accepted	claude wikidata	
@@ -2831,11 +2831,6 @@ mit-license	software-license	accepted	claude-ruling
 mixin	object-class	accepted	claude-ruling	
 model-of-computation	concept	accepted	claude-ruling	
 model-view-controller	software-design-pattern	accepted	claude-ruling	
-modem	artifact	accepted	opencyc wordnet	
-modem	device	single	opencyc	
-modem	equipment	accepted	claude wordnet	
-modem	physical-object	single	wordnet	
-modem	product	single	opencyc	
 module	software-object	single	opencyc	
 monadic-operation	accomplishment	single	sumo	
 monadic-operation	act	single	sumo	
@@ -2848,6 +2843,10 @@ monadic-operation	phenomenon	single	sumo
 monadic-operation	procedure	single	sumo	
 monadic-operation	process	single	wordnet	
 monadic-operation	volition	single	sumo	
+monitor	display-device	single	wikidata	
+monitor	output-device	single	wikidata	
+monitor	peripheral	single	wikidata	
+monitor	user-interface	single	wikidata	
 monitor-program	code	accepted	sumo wordnet	
 monitor-program	computer-program	accepted	sumo wordnet	
 monitor-program	information	single	wordnet	
@@ -2945,9 +2944,11 @@ network-file-system	software	single	wikidata
 network-firewall	artifact	single	wordnet	
 network-firewall	computer-security-system	accepted	claude claude-ruling wordnet	
 network-firewall	physical-object	single	wordnet	
+network-firewall	system-instrumentality	single	wordnet	
 network-gateway	hardware	accepted	claude wikidata	
 network-gateway	networking-hardware	accepted	claude-ruling	
 network-host	network-node	accepted	claude-ruling	
+network-interface-controller	circuit-card	single	wikidata	
 network-interface-controller	hardware	accepted	claude wikidata	
 network-interface-controller	networking-hardware	accepted	claude-ruling	
 network-layer	concept	accepted	claude-ruling	
@@ -3003,6 +3004,7 @@ non-volatile-storage	computer-memory	accepted	claude wordnet
 non-volatile-storage	device	single	wordnet	
 non-volatile-storage	hardware	single	wordnet	
 non-volatile-storage	physical-object	single	wordnet	
+non-volatile-storage	storage-device	single	wordnet	
 nonsolid-color	attribute	accepted	sumo wordnet	
 nonsolid-color	property	single	sumo	
 nosql	database-management-system	accepted	claude-ruling wikidata	
@@ -3126,6 +3128,7 @@ optical-disk	device	accepted	opencyc wordnet
 optical-disk	disk	single	opencyc	
 optical-disk	physical-object	single	wordnet	
 optical-disk	product	single	opencyc	
+optical-disk	storage-device	single	wordnet	
 opus-codec	audio-coding-format	accepted	claude-ruling	
 order-of-the-day	agenda	single	claude	
 order-paper	order-of-the-day	single	claude	
@@ -3278,22 +3281,8 @@ personal-computer	system	single	opencyc
 personal-computer	universe	single	sumo	
 phishing	cyberattack	accepted	claude-ruling	
 phishing	fraud	accepted	claude-ruling	
-phone-call	telephony	accepted	claude wordnet	
 phone-number	identifier	accepted	claude wikidata	
 phonetic-alphabet	alphabet	single	claude	
-phonograph-record	artifact	accepted	opencyc wordnet	
-phonograph-record	audio	accepted	sumo wordnet	
-phonograph-record	cylinder	single	opencyc	
-phonograph-record	device	accepted	opencyc wordnet	
-phonograph-record	disk	single	opencyc	
-phonograph-record	indication	single	sumo	
-phonograph-record	information	single	sumo	
-phonograph-record	phenomenon	single	sumo	
-phonograph-record	physical-object	accepted	sumo wordnet	
-phonograph-record	product	accepted	opencyc yago	
-phonograph-record	publication	single	opencyc	
-phonograph-record	recording	single	wordnet	
-phonograph-record	universe	single	sumo	
 php	scripting-language	accepted	claude-ruling	
 physical-layer	concept	accepted	claude-ruling	
 pixel	component	accepted	claude wordnet	
@@ -3301,6 +3290,9 @@ pixel	phenomenon	single	sumo
 pixel	physical-object	single	wordnet	
 pixel	universe	single	sumo	
 plain-text	text	accepted	claude wikidata	
+planner	digital-computer	single	wordnet	
+planner	personal-computer	single	wordnet	
+planner	portable-computer	single	wordnet	
 platform-as-a-service	cloud-computing	accepted	claude-ruling wikidata	
 playbill	bill.communication	single	claude	
 playbill	program	single	claude	
@@ -3326,7 +3318,6 @@ portal-site	device	single	wordnet
 portal-site	machine	single	wordnet	
 portal-site	physical-object	single	wordnet	
 portal-site	web-site	accepted	claude wordnet	
-portfolio	list	single	claude	
 posix	technical-standard	accepted	claude-ruling	
 post-office-protocol	email-protocol	accepted	claude-ruling	
 postcondition	condition	accepted	claude-ruling	
@@ -3351,6 +3342,7 @@ print-buffer	data-buffer	accepted	claude wordnet
 print-buffer	device	accepted	sumo wordnet	
 print-buffer	phenomenon	single	sumo	
 print-buffer	physical-object	single	wordnet	
+print-buffer	storage-device	single	wordnet	
 print-buffer	universe	single	sumo	
 printer	output-device	accepted	claude-ruling	
 printer	peripheral	accepted	wikidata wordnet	
@@ -3387,6 +3379,7 @@ processor-register	artifact	accepted	sumo wordnet
 processor-register	device	accepted	sumo wordnet	
 processor-register	phenomenon	single	sumo	
 processor-register	physical-object	single	wordnet	
+processor-register	storage-device	single	wordnet	
 processor-register	universe	single	sumo	
 program-assertion	control-flow	single	wikidata	
 program-assertion	program-statement	accepted	claude-ruling wikidata	
@@ -3477,7 +3470,6 @@ public-key-infrastructure	system	accepted	claude-ruling
 publish-subscribe-pattern	software-design-pattern	accepted	claude-ruling	
 pull-request	message	accepted	claude-ruling	
 pure-function	subroutine	accepted	claude-ruling	
-push-button	data-input-device	accepted	claude wikidata	
 push-button	peripheral	single	wikidata	
 push-button	user-interface	single	wikidata	
 push-down-list	list	single	claude	
@@ -3511,11 +3503,13 @@ radiotelephone	artifact	accepted	sumo wordnet
 radiotelephone	device	single	sumo	
 radiotelephone	phenomenon	single	sumo	
 radiotelephone	physical-object	single	wordnet	
+radiotelephone	storage-medium	single	wordnet	
 radiotelephone	universe	single	sumo	
 radix-sort	sorting-algorithm	accepted	claude-ruling	
 raft-consensus-algorithm	consensus-algorithm	accepted	claude-ruling	
 raid	data-storage	accepted	claude-ruling	
 raid	hardware	accepted	claude-ruling	
+ram	volatile-storage	accepted	claude wordnet	
 ram-disk	artifact	accepted	opencyc sumo wordnet	
 ram-disk	device	accepted	opencyc sumo wordnet	
 ram-disk	phenomenon	single	sumo	
@@ -3524,16 +3518,11 @@ ram-disk	product	single	opencyc
 ram-disk	random-access-memory	single	opencyc	
 ram-disk	storage-drive	accepted	claude wordnet	
 ram-disk	universe	single	sumo	
-random-access-memory	artifact	accepted	opencyc sumo wordnet	
-random-access-memory	component	single	wordnet	
-random-access-memory	computer-memory	accepted	claude-ruling wordnet	
-random-access-memory	device	accepted	opencyc sumo wordnet	
-random-access-memory	hardware	accepted	wikidata wordnet	
-random-access-memory	phenomenon	single	sumo	
-random-access-memory	physical-object	single	wordnet	
+random-access-memory	artifact	single	opencyc	
+random-access-memory	computer-memory	accepted	claude-ruling	
+random-access-memory	device	single	opencyc	
+random-access-memory	hardware	single	wikidata	
 random-access-memory	product	single	opencyc	
-random-access-memory	universe	single	sumo	
-random-access-memory	volatile-storage	accepted	claude wordnet	
 random-number-generator	code	accepted	sumo wordnet	
 random-number-generator	computer-program	single	sumo	
 random-number-generator	information	single	wordnet	
@@ -3572,12 +3561,7 @@ read-only-file	phenomenon	single	sumo
 read-only-file	physical-object	single	sumo	
 read-only-file	text	single	sumo	
 read-only-file	universe	single	sumo	
-read-only-memory	artifact	single	wordnet	
-read-only-memory	component	single	wordnet	
-read-only-memory	computer-memory	accepted	claude claude-ruling wordnet	
-read-only-memory	device	single	wordnet	
-read-only-memory	hardware	single	wordnet	
-read-only-memory	physical-object	single	wordnet	
+read-only-memory	computer-memory	accepted	claude-ruling	
 read-only-memory-chip	artifact	accepted	sumo wordnet	
 read-only-memory-chip	chip	single	wordnet	
 read-only-memory-chip	component	single	sumo	
@@ -3586,6 +3570,7 @@ read-only-memory-chip	mechanism	single	sumo
 read-only-memory-chip	memory-chip	accepted	claude wordnet	
 read-only-memory-chip	phenomenon	single	sumo	
 read-only-memory-chip	physical-object	single	wordnet	
+read-only-memory-chip	semiconductor	single	wordnet	
 read-only-memory-chip	universe	single	sumo	
 read-write-head	artifact	accepted	sumo wordnet	
 read-write-head	component	single	sumo	
@@ -3601,6 +3586,7 @@ real-storage	device	accepted	sumo wordnet
 real-storage	hardware	single	wordnet	
 real-storage	phenomenon	single	sumo	
 real-storage	physical-object	single	wordnet	
+real-storage	storage-device	single	wordnet	
 real-storage	universe	single	sumo	
 real-time	quantity	accepted	claude-ruling sumo	
 real-time	time-period	single	wordnet	
@@ -3693,12 +3679,15 @@ relocatable-program	measure	single	sumo
 relocatable-program	routine	single	sumo	
 relocatable-program	signified	single	sumo	
 relocatable-program	software	single	wordnet	
+remote-control	peripheral	single	wikidata	
+remote-control	user-interface	single	wikidata	
 remote-procedure-call	communications-protocol	accepted	claude-ruling	
 removable-disk	artifact	single	wordnet	
 removable-disk	device	single	wordnet	
-removable-disk	hard-disc	accepted	claude wordnet	
+removable-disk	hard-disk	accepted	claude wordnet	
 removable-disk	magnetic-disk	accepted	claude-ruling wordnet	
 removable-disk	physical-object	single	wordnet	
+removable-disk	storage-device	single	wordnet	
 replication-in-computing	data-replication	accepted	claude-ruling	
 representational-state-transfer	software-architecture	accepted	claude-ruling	
 requirements-analysis	activity	accepted	claude-ruling	
@@ -3761,6 +3750,8 @@ satellite-internet	telecommunication	single	wikidata
 satellite-internet	wireless-communication	accepted	claude wikidata	
 scala	programming-language	accepted	claude-ruling	
 scalability	software-quality-attribute	accepted	claude-ruling	
+scanner	peripheral	accepted	wikidata wordnet	
+scanner	user-interface	single	wikidata	
 schema-org	computational-ontology	accepted	claude-ruling	
 schema-org	web-standard	accepted	claude-ruling	
 scratchpad-memory	artifact	single	wordnet	
@@ -3769,6 +3760,7 @@ scratchpad-memory	computer-memory	accepted	claude wordnet
 scratchpad-memory	device	single	wordnet	
 scratchpad-memory	hardware	single	wordnet	
 scratchpad-memory	physical-object	single	wordnet	
+scratchpad-memory	storage-device	single	wordnet	
 screen-saver	artifact	single	wordnet	
 screen-saver	code	single	sumo	
 screen-saver	computer-program	accepted	claude-ruling sumo	
@@ -3890,11 +3882,12 @@ seventy-eight	disk	single	opencyc
 seventy-eight	indication	single	sumo	
 seventy-eight	information	single	sumo	
 seventy-eight	phenomenon	single	sumo	
-seventy-eight	phonograph-record	accepted	opencyc wordnet	
+seventy-eight	phonograph-recording	single	wordnet	
 seventy-eight	physical-object	accepted	sumo wordnet	
 seventy-eight	product	single	opencyc	
 seventy-eight	publication	single	opencyc	
 seventy-eight	recording	single	wordnet	
+seventy-eight	storage-device	single	wordnet	
 seventy-eight	universe	single	sumo	
 shannon-source-coding-theorem	concept	accepted	claude-ruling	
 shannon-source-coding-theorem	theorem	accepted	claude-ruling	
@@ -3918,6 +3911,7 @@ shift-register	mechanism	single	sumo
 shift-register	phenomenon	single	sumo	
 shift-register	physical-object	single	wordnet	
 shift-register	processor-register	accepted	claude wordnet	
+shift-register	storage-device	single	wordnet	
 shift-register	universe	single	sumo	
 shopping-list	list	single	claude	
 short-list	list	single	claude	
@@ -4161,6 +4155,7 @@ stack-data-structure	data-structure	accepted	claude wikidata
 stack-data-structure	device	accepted	sumo wordnet	
 stack-data-structure	phenomenon	single	sumo	
 stack-data-structure	physical-object	single	wordnet	
+stack-data-structure	storage-device	single	wordnet	
 stack-data-structure	universe	single	sumo	
 stack-overflow	web-site	accepted	claude-ruling	
 standard-generalized-markup-language	markup-language	accepted	claude-ruling	
@@ -4352,7 +4347,7 @@ system-program	software	single	wordnet
 systemd	init-system	accepted	claude-ruling	
 table-d'hote	menu	single	claude	
 tablet-computer	artifact	single	opencyc	
-tablet-computer	computer	accepted	opencyc wikidata	
+tablet-computer	computer	accepted	gpt opencyc wikidata	
 tablet-computer	device	single	opencyc	
 tablet-computer	digital-computer	accepted	claude wikidata	
 tablet-computer	machine	single	wikidata	
@@ -4377,6 +4372,7 @@ talking-book	information	single	sumo
 talking-book	phenomenon	single	sumo	
 talking-book	physical-object	accepted	sumo wordnet	
 talking-book	recording	single	wordnet	
+talking-book	storage-device	single	wordnet	
 talking-book	universe	single	sumo	
 tar-file-format	archive-file-format	accepted	claude-ruling	
 tar-file-format	computer-file	dissented	wikidata	
@@ -4392,12 +4388,7 @@ telecommunications-engineering	cognition	single	wordnet
 telecommunications-engineering	engineering	accepted	claude wordnet	
 telecommunications-engineering	field-of-study	accepted	sumo wordnet	
 telecommunications-engineering	signified	single	sumo	
-telephony	artifact	accepted	sumo wordnet	
-telephony	device	single	sumo	
-telephony	phenomenon	single	sumo	
-telephony	physical-object	single	wordnet	
 telephony	telecommunication	accepted	claude-ruling	
-telephony	universe	single	sumo	
 temporal-database	database	accepted	claude-ruling wikidata	
 terminal	peripheral	accepted	claude wikidata	
 terminal-emulation	cognition	single	wordnet	
@@ -4502,14 +4493,16 @@ toml	data-serialization-format	accepted	claude-ruling
 toolchain	programming-tool	accepted	claude-ruling	
 topological-ordering	data-processing	accepted	claude-ruling	
 touchscreen	artifact	single	opencyc	
-touchscreen	data-input-device	accepted	claude-ruling wikidata	
+touchscreen	data-input-device	accepted	claude-ruling	
 touchscreen	device	single	opencyc	
 touchscreen	hardware	single	wikidata	
+touchscreen	input-device	single	wikidata	
 touchscreen	interface	single	wikidata	
 touchscreen	output-device	accepted	claude wikidata	
 touchscreen	part	single	opencyc	
 touchscreen	peripheral	single	wikidata	
 touchscreen	product	single	opencyc	
+touchscreen	transducer	single	opencyc	
 touchscreen	user-interface	single	wikidata	
 trace-program	code	single	wordnet	
 trace-program	computer-program	single	wordnet	
@@ -4678,14 +4671,11 @@ version-control-commit	record	accepted	claude-ruling
 version-control-merge	data-processing	accepted	claude-ruling	
 version-control-software	software	accepted	claude-ruling	
 videocassette	video	single	claude	
-videodisk	artifact	single	wordnet	
-videodisk	device	single	wordnet	
-videodisk	optical-disk	accepted	claude wordnet	
-videodisk	physical-object	single	wordnet	
 videotape	artifact	single	wordnet	
 videotape	device	single	wordnet	
 videotape	magnetic-tape	accepted	wikidata wordnet	
 videotape	physical-object	single	wordnet	
+videotape	storage-device	single	wordnet	
 videotape.artifact	tape-recording	single	claude	
 videotape.artifact	video	single	claude	
 virtual-machine	application	accepted	claude wikidata	
@@ -4702,6 +4692,7 @@ virtual-memory	memory-management	accepted	claude-ruling
 virtual-memory	phenomenon	single	sumo	
 virtual-memory	physical-object	single	wordnet	
 virtual-memory	product	single	opencyc	
+virtual-memory	storage-device	single	wordnet	
 virtual-memory	universe	single	sumo	
 virtual-private-network	artifact	single	opencyc	
 virtual-private-network	computer-network	accepted	claude-ruling opencyc	
@@ -4719,6 +4710,7 @@ volatile-storage	computer-memory	accepted	claude wordnet
 volatile-storage	device	single	wordnet	
 volatile-storage	hardware	single	wordnet	
 volatile-storage	physical-object	single	wordnet	
+volatile-storage	storage-device	single	wordnet	
 von-neumann-architecture	computer	dissented	wikidata	
 von-neumann-architecture	computer-architecture	accepted	claude-ruling	
 von-neumann-architecture	machine	single	wikidata	
@@ -4799,6 +4791,7 @@ web-server	structure	single	opencyc
 web-server	system	single	opencyc	
 web-standard	technical-standard	accepted	claude-ruling	
 webassembly	bytecode	accepted	claude-ruling	
+webcam	peripheral	single	wikidata	
 webhook	data-processing-technique	accepted	claude-ruling	
 webm	multimedia-container-format	accepted	claude-ruling	
 webp	image-file-format	accepted	claude-ruling	
@@ -4818,6 +4811,7 @@ wide-area-network	phenomenon	single	sumo
 wide-area-network	physical-object	single	wordnet	
 wide-area-network	structure	single	opencyc	
 wide-area-network	system	single	opencyc	
+wide-area-network	system-instrumentality	single	wordnet	
 wide-area-network	universe	single	sumo	
 wide-column-store	database-management-system	accepted	claude-ruling wikidata	
 wide-column-store	software	single	wikidata	
@@ -4856,6 +4850,7 @@ wireless-local-area-network	artifact	single	wordnet
 wireless-local-area-network	computer-network	single	wordnet	
 wireless-local-area-network	local-area-network	accepted	claude wordnet	
 wireless-local-area-network	physical-object	single	wordnet	
+wireless-local-area-network	system-instrumentality	single	wordnet	
 wish-list	list	single	claude	
 word-processing	accomplishment	single	sumo	
 word-processing	act	single	sumo	
@@ -4881,23 +4876,15 @@ wordnet	lexical-database	accepted	claude claude-ruling wordnet
 wordnet	phenomenon	single	sumo	
 wordnet	physical-object	single	sumo	
 wordnet	universe	single	sumo	
-workstation	artifact	accepted	sumo wordnet	
-workstation	computer	accepted	sumo wikidata wordnet	
-workstation	desktop-computer	accepted	claude wikidata	
-workstation	device	accepted	sumo wordnet	
 workstation	digital-computer	accepted	claude wordnet	
-workstation	machine	accepted	wikidata wordnet	
 workstation	personal-computer	accepted	claude-ruling wikidata	
-workstation	phenomenon	single	sumo	
-workstation	physical-object	single	wordnet	
-workstation	product	single	yago	
-workstation	universe	single	sumo	
 world-wide-web	artifact	accepted	sumo wordnet	
 world-wide-web	computer-network	accepted	claude wordnet	
 world-wide-web	device	single	sumo	
 world-wide-web	internet	accepted	claude-ruling	
 world-wide-web	phenomenon	single	sumo	
 world-wide-web	physical-object	single	wordnet	
+world-wide-web	system-instrumentality	single	wordnet	
 world-wide-web	universe	single	sumo	
 world-wide-web-consortium	standards-organization	accepted	claude-ruling	
 write-ahead-logging	data-processing-technique	accepted	claude-ruling	
