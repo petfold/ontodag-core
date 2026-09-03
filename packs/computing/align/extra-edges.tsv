@@ -1,0 +1,84 @@
+# sub	sup	note
+authenticated-data-structure	data-structure	a data structure whose integrity a verifier can check from a small root (Merkle trees, hash chains) — Wikidata has no class for it
+merkle-tree	authenticated-data-structure	
+hash-chain	authenticated-data-structure	
+merkle-dag	directed-acyclic-graph	a DAG whose nodes are addressed by the hash of their content and children (IPFS, Git objects, recordstore roots)
+merkle-dag	authenticated-data-structure	
+content-identifier	persistent-identifier	an identifier derived from the content's hash (IPFS CID, a Swarm reference, a recordstore root)
+append-only-log	data-structure	a sequence that only grows at the end — the shape journals, WALs and event stores share
+write-ahead-log	append-only-log	
+database-journal	append-only-log	
+immutable-database	database	a database whose past states stay readable because writes never overwrite (Datomic, recordstore's roots)
+versioned-database	immutable-database	
+functional-database	immutable-database	a database read as a pure function of a root or time (Datomic; recordstore's `at(root)`)
+datomic	functional-database	
+distributed-storage-system	distributed-system	
+decentralized-storage	distributed-storage-system	the economics pack files it under peer-to-peer (Swarm, IPFS); this is the systems view of the same concept
+ipfs	decentralized-storage	
+local-first-software	software	software that keeps the primary copy on the user's device and syncs (Kleppmann et al. 2019)
+peer-node	network-node	
+network-host	network-node	
+file-system-permissions	file-attribute	
+object-database	database	
+byzantine-fault-tolerance	fault-tolerance	tolerance of Byzantine faults; Wikidata only has patents under this label
+scheme-language	lisp	Scheme, the minimalist Lisp dialect (R7RS); not resolvable by label on Wikidata
+vyper	programming-language	Ethereum's Pythonic smart-contract language (label collides with a video game and a photograph on Wikidata)
+dns-record	data-record	
+data-record	data-structure	a record as stored data (rows, DNS records) — Wikidata's Q2470517 is the composite data type
+computer-system	machine	a system built around computers — the parent Wikidata's 'distributed system' points at
+distributed-system	computer-system	
+system-software	software	operating systems, drivers, loaders — software that serves other software
+server-software	software	
+programming-tool	software	compilers, debuggers, build tools
+networking-hardware	hardware	
+image-file-format	file-format	
+audio-file-format	file-format	
+video-file-format	file-format	
+document-file-format	file-format	
+archive-file-format	file-format	
+data-serialization-format	file-format	
+rdf-serialization-format	data-serialization-format	
+font-file-format	file-format	
+compression-format	file-format	a specification of compressed data (H.264, Opus) as distinct from the file that carries it
+video-coding-format	compression-format	
+audio-coding-format	compression-format	
+binary-to-text-encoding	code	Base64 and friends
+cyberattack	activity	an attack on a computer system; core's 'attack' is the military sense
+software-development-methodology	method	
+application-layer-protocol	communications-protocol	
+transport-layer-protocol	communications-protocol	
+network-layer-protocol	communications-protocol	
+routing-protocol	communications-protocol	
+cryptographic-protocol	communications-protocol	the mathematics pack files it under concept/procedure; here it is also a protocol
+authentication-protocol	communications-protocol	
+messaging-protocol	application-layer-protocol	
+email-protocol	application-layer-protocol	
+distributed-algorithm	algorithm	
+consensus-algorithm	distributed-algorithm	
+string-algorithm	algorithm	
+compression-algorithm	algorithm	
+standards-organization	organization	
+nonprofit-organization	organization	
+version-control-software	software	
+wiki-software	software	
+web-framework	software-framework	
+online-encyclopedia	web-site	
+knowledge-organization-system	information	taxonomies, thesauri, classification schemes, ontologies — library science's umbrella term
+model-of-computation	concept	
+computational-problem	problem	
+data-model	concept	
+network-architecture	concept	
+software-development-process	process	
+data-processing-technique	method	
+computer-security	information-security	
+information-security	practice	
+software-quality-attribute	property	scalability, usability, fault tolerance, high availability
+network-performance-measure	quantity	latency, throughput, bandwidth
+concurrency-control	data-processing-technique	
+software-development-practice	practice	
+open-source-model	practice	
+web-standard	technical-standard	
+internet-standard	technical-standard	
+data-encoding	code	
+typesetting-system	software	
+technical-standard	document	a published specification agreed by a standards body or by practice (POSIX, USB, Unicode); the core's own `standard` is unplaced there

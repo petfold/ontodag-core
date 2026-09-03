@@ -437,6 +437,8 @@ boolean-function	binary-relation	single	wikidata
 boolean-function	function	accepted	claude wikidata	
 boolean-function	mathematical-set	single	wikidata	
 boolean-function	mathematical-structure	single	wikidata	
+boolean-satisfiability-problem	attribute	accepted	claude-ruling	
+boolean-satisfiability-problem	decision-problem	accepted	claude wikidata	
 boom	logical-relation	single	sumo	
 bosom	logical-relation	single	sumo	
 boundary-condition	information	single	wordnet	
@@ -702,7 +704,7 @@ consideration	logical-relation	single	sumo
 conspiracy	logical-relation	single	sumo	
 constitution	logical-relation	single	sumo	
 constraint	logical-relation	single	sumo	
-content-addressing	concept	accepted	claude-ruling	
+content-addressable-storage	concept	accepted	claude-ruling	
 context	logical-relation	single	sumo	
 contract	logical-relation	single	sumo	
 contradiction	logical-relation	single	sumo	
@@ -834,6 +836,7 @@ crowd	logical-relation	single	sumo
 cruelty	logical-relation	single	sumo	
 cryptanalysis	cryptography	accepted	claude-ruling	
 cryptographic-hash-function	algebraic-structure	single	wikidata	
+cryptographic-hash-function	algorithm	single	wikidata	
 cryptographic-hash-function	binary-relation	single	wikidata	
 cryptographic-hash-function	cryptographic-primitive	accepted	claude-ruling wikidata	
 cryptographic-hash-function	cryptography	single	wikidata	
@@ -843,7 +846,7 @@ cryptographic-hash-function	mathematical-structure	single	wikidata
 cryptographic-key	concept	accepted	claude-ruling	
 cryptographic-key	information	accepted	claude-ruling	
 cryptographic-padding	concept	accepted	claude-ruling	
-cryptographic-primitive	algorithm	accepted	claude-ruling	
+cryptographic-primitive	algorithm	accepted	claude-ruling wikidata	
 cryptographic-primitive	cryptography	dissented	wikidata	
 cryptographic-protocol	concept	accepted	claude-ruling	
 cryptographic-protocol	procedure	accepted	claude-ruling	
@@ -1017,8 +1020,10 @@ differentiation	volition	single	sumo
 difficulty	logical-relation	single	sumo	
 diffie-hellman	key-exchange	accepted	claude-ruling	
 digital-certificate	artifact	single	opencyc	
+digital-certificate	data-file	single	wikidata	
 digital-certificate	document	accepted	claude-ruling	
 digital-signature	cryptographic-primitive	accepted	claude-ruling	
+digital-signature	information	single	wikidata	
 dignity	logical-relation	single	sumo	
 dilemma	logical-relation	single	sumo	
 diligence	logical-relation	single	sumo	
@@ -1550,6 +1555,7 @@ geography	logical-relation	single	sumo
 geometric-construction	accomplishment	single	sumo	
 geometric-construction	act	accepted	sumo wordnet	
 geometric-construction	activity	accepted	sumo wordnet	
+geometric-construction	algorithm	single	wikidata	
 geometric-construction	calculation	single	sumo	
 geometric-construction	event	accepted	sumo wordnet	
 geometric-construction	information	single	sumo	
@@ -2098,6 +2104,7 @@ joke	logical-relation	single	sumo
 justice	logical-relation	single	sumo	
 k-combination	concept	accepted	claude-ruling	
 keccak	algebraic-structure	single	wikidata	
+keccak	algorithm	single	wikidata	
 keccak	binary-relation	single	wikidata	
 keccak	cryptographic-hash-function	accepted	claude-ruling wikidata	
 keccak	cryptographic-primitive	single	wikidata	
@@ -2115,6 +2122,7 @@ kendall-test	logical-relation	single	sumo
 kendall-test	nonparametric-statistic	accepted	claude wordnet	
 kendall-test	statistic	single	wordnet	
 key-derivation-function	algebraic-structure	single	wikidata	
+key-derivation-function	algorithm	single	wikidata	
 key-derivation-function	binary-relation	single	wikidata	
 key-derivation-function	cryptographic-primitive	accepted	claude wikidata	
 key-derivation-function	cryptography	single	wikidata	
@@ -3318,7 +3326,7 @@ proportion	logical-relation	single	sumo
 propositional-logic	formal-system	accepted	claude wikidata	
 propositional-logic	mathematical-logic	accepted	claude-ruling	
 prosperity	logical-relation	single	sumo	
-pseudorandom-generator	algorithm	accepted	claude-ruling	
+pseudorandom-generator	algorithm	accepted	claude-ruling wikidata	
 psychology	logical-relation	single	sumo	
 public-key	cryptographic-key	accepted	claude-ruling	
 public-key-cryptography	cryptography	accepted	claude-ruling	
@@ -3581,6 +3589,7 @@ regression-line	logical-relation	single	sumo
 regression-line	quantity	single	sumo	
 regression-line	shape	single	wordnet	
 regression-line	vector	single	sumo	
+regular-expression	algorithm	single	wikidata	
 regular-expression	information	single	opencyc	
 regular-expression	mathematical-expression	accepted	claude-ruling	
 regular-hexagon	attribute	accepted	sumo wordnet	
@@ -3716,8 +3725,6 @@ sample-distribution	collection	single	sumo
 sample-distribution	phenomenon	single	sumo	
 sample-distribution	statistical-distribution	accepted	claude wordnet	
 sarcasm	logical-relation	single	sumo	
-satisfiability	attribute	accepted	claude-ruling	
-satisfiability	decision-problem	accepted	claude wikidata	
 scab	logical-relation	single	sumo	
 scalar	number	accepted	claude-ruling	
 scalar	tensor	dissented	wikidata	
@@ -3830,6 +3837,7 @@ set-theory	signified	single	sumo
 severity	logical-relation	single	sumo	
 sex	logical-relation	single	sumo	
 sha-2	algebraic-structure	single	wikidata	
+sha-2	algorithm	single	wikidata	
 sha-2	binary-relation	single	wikidata	
 sha-2	cryptographic-hash-function	accepted	claude-ruling wikidata	
 sha-2	cryptographic-primitive	single	wikidata	
@@ -4175,6 +4183,7 @@ suspect	logical-relation	single	sumo
 syllogism	classical-logic	dissented	wikidata	
 syllogism	deductive-reasoning	accepted	claude-ruling wikidata	
 syllogism	formal-system	single	wikidata	
+symmetric-key-cryptography	algorithm	single	wikidata	
 symmetric-key-cryptography	cryptography	accepted	claude-ruling	
 symmetric-relation	algebraic-structure	single	wikidata	
 symmetric-relation	binary-relation	accepted	claude wikidata	

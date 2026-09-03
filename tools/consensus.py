@@ -112,6 +112,20 @@ def main():
         if st == "accepted":
             accepted[a].append(b)
 
+    # edges asserted about names the pack does not define (align/extra-edges.tsv):
+    # they take part in placement like any accepted edge, so a concept whose only
+    # parent is such a name (png ⊑ image-file-format ⊑ file-format) still reaches a
+    # root (2026-09-03 — before this they were bolted on after the fixpoint, and
+    # 180 computing concepts hung from intermediates the walk never saw)
+    extra = []
+    p = dirs.align / "extra-edges.tsv"
+    if p.exists():
+        for row in csv.reader(open(p), delimiter="\t"):
+            if row and not row[0].startswith("#") and len(row) >= 2:
+                sub, sup = row[0].strip(), row[1].strip()
+                extra.append((sub, sup))
+                if sup not in accepted[sub]:
+                    accepted[sub].append(sup)
     # concepts enter from the roots downward through accepted edges
     placed = set(roots) | base
     changed = True
@@ -123,15 +137,9 @@ def main():
                 changed = True
     own = placed - base if dirs.pack else placed
     parents = {n: [b for b in accepted.get(n, []) if b in placed] for n in own}
-    # edges asserted about names the pack does not define (align/extra-edges.tsv)
-    p = dirs.align / "extra-edges.tsv"
-    if p.exists():
-        for row in csv.reader(open(p), delimiter="\t"):
-            if row and not row[0].startswith("#") and len(row) >= 2:
-                sub, sup = row[0].strip(), row[1].strip()
-                parents.setdefault(sup, [])
-                parents.setdefault(sub, []).append(sup)
-                placed.update((sub, sup))
+    unplaced_extra = sorted({a for a, b in extra if a not in placed} | {b for a, b in extra if b not in placed})
+    if unplaced_extra:
+        print("extra-edges names that reach no root (left out):", " ".join(unplaced_extra), file=sys.stderr)
     cycles = []
     if dirs.pack:
         # base parents are outside the file: keep them as nodes so the .od names them

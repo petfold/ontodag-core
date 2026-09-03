@@ -3,6 +3,7 @@ sub	sup	status	for	against
 a-star-search	best-first-search	accepted	claude wikidata	
 a-star-search	search-algorithm	accepted	claude-ruling	
 abductive-logic-programming	logic-programming	accepted	claude wikidata	
+abductive-logic-programming	skill	single	wikidata	
 abductive-reasoning	thinking	accepted	claude-ruling	
 academy	intelligent-agent	single	opencyc	
 activation-function	concept	accepted	claude-ruling	
@@ -15,6 +16,7 @@ active-learning	supervised-learning	single	wikidata
 active-learning	weakly-supervised-learning	single	wikidata	
 actor	embodied-agent	single	opencyc	
 actor	intelligent-agent	single	opencyc	
+actor-critic-algorithm	algorithm	single	wikidata	
 actor-critic-algorithm	reinforcement-learning	accepted	claude-ruling	
 actuator	device	accepted	claude-ruling	
 adam-optimizer	gradient-descent	single	wikidata	
@@ -34,6 +36,7 @@ ai-agent	intelligent-agent	accepted	claude-ruling wikidata
 ai-alignment	ai-safety	accepted	claude-ruling	
 ai-model	artificial-neural-network	dissented	wikidata	
 ai-model	concept	accepted	claude-ruling	
+ai-model	software	single	wikidata	
 ai-safety	artificial-intelligence	accepted	claude-ruling	
 airline	intelligent-agent	single	opencyc	
 algorithm	act	single	wordnet	
@@ -78,12 +81,13 @@ animatronics	robotics	accepted	claude wordnet
 animatronics	signified	single	sumo	
 anomaly-detection	machine-learning	accepted	claude-ruling	
 answer-set-programming	logic-programming	accepted	claude wikidata	
+answer-set-programming	skill	single	wikidata	
 ant	embodied-agent	single	opencyc	
 ant-colony-optimization	swarm-intelligence	accepted	claude-ruling	
 applicant	embodied-agent	single	opencyc	
 applicant	intelligent-agent	single	opencyc	
 apprenticeship-learning	imitation-learning	accepted	claude-ruling	
-approximation-algorithm	algorithm	accepted	claude-ruling	
+approximation-algorithm	algorithm	accepted	claude-ruling wikidata	
 apriori-algorithm	association-rule-learning	accepted	claude-ruling	
 arachnid	embodied-agent	single	opencyc	
 architect	embodied-agent	single	opencyc	
@@ -98,6 +102,7 @@ artificial-empathy	artificial-intelligence	accepted	claude wikidata
 artificial-general-intelligence	ai-model	dissented	wikidata	
 artificial-general-intelligence	artificial-intelligence	accepted	claude wikidata	
 artificial-general-intelligence	artificial-neural-network	single	wikidata	
+artificial-general-intelligence	software	single	wikidata	
 artificial-immune-system	artificial-intelligence	single	wikidata	
 artificial-immune-system	machine-learning	single	wikidata	
 artificial-immune-system	rule-based-machine-learning	accepted	claude wikidata	
@@ -189,6 +194,7 @@ autoregressive-model	artificial-neural-network	accepted	claude wikidata
 autoregressive-model	statistical-model	accepted	claude wikidata	
 backpropagation	algorithm	accepted	claude-ruling	
 backpropagation-through-time	backpropagation	accepted	claude wikidata	
+backtracking-search	algorithm	single	wikidata	
 backtracking-search	information-retrieval	single	wikidata	
 backtracking-search	search-algorithm	accepted	claude wikidata	
 backward-chaining	algorithm	accepted	claude-ruling	
@@ -199,6 +205,7 @@ barabasi-albert-model	statistical-model	accepted	claude-ruling
 baron	embodied-agent	single	opencyc	
 baron	intelligent-agent	single	opencyc	
 batch-normalization	procedure	accepted	claude-ruling	
+bayes-classifier	algorithm	single	wikidata	
 bayes-classifier	classification-algorithm	accepted	claude wikidata	
 bayes-classifier	function	single	wikidata	
 bayesian-network	concept	accepted	claude-ruling	
@@ -237,10 +244,10 @@ board-of-directors	intelligent-agent	single	opencyc
 boltzmann-machine	energy-based-model	accepted	claude wikidata	
 boltzmann-machine	statistical-model	single	wikidata	
 boolean-satisfiability-problem	constraint-satisfaction-problem	accepted	claude-ruling	
+boosting-algorithm	algorithm	single	wikidata	
 boosting-algorithm	artificial-intelligence	single	wikidata	
 boosting-algorithm	bootstrap-aggregating	dissented	wikidata	
 boosting-algorithm	ensemble-learning	accepted	claude wikidata	
-boosting-algorithm	heuristic	single	wikidata	
 boosting-algorithm	machine-learning	single	wikidata	
 boosting-algorithm	metaheuristic	dissented	wikidata	
 bootstrap-aggregating	ensemble-learning	accepted	claude-ruling	
@@ -248,6 +255,7 @@ bounded-rationality	concept	accepted	claude-ruling
 bounded-rationality	decision-theory	accepted	claude wikidata	
 brain-computer-interface	device	accepted	claude-ruling	
 branch	intelligent-agent	single	opencyc	
+breadth-first-search	algorithm	single	wikidata	
 breadth-first-search	graph-traversal	accepted	claude wikidata	
 breadth-first-search	information-retrieval	single	wikidata	
 breadth-first-search	search-algorithm	single	wikidata	
@@ -285,6 +293,7 @@ citizen	intelligent-agent	single	opencyc
 city	intelligent-agent	single	opencyc	
 civilian	embodied-agent	single	opencyc	
 civilian	intelligent-agent	single	opencyc	
+classification-algorithm	algorithm	single	wikidata	
 classification-algorithm	function	single	wikidata	
 classification-algorithm	machine-learning-algorithm	accepted	claude-ruling	
 closed-loop	artifact	accepted	sumo wordnet	
@@ -299,6 +308,7 @@ closed-world-assumption	concept	accepted	claude-ruling
 cluster-analysis	data-mining	accepted	claude wikidata	
 cluster-analysis	machine-learning	accepted	claude-ruling	
 cluster-analysis	statistics	accepted	claude-ruling	
+clustering-algorithm	algorithm	single	wikidata	
 clustering-algorithm	machine-learning-algorithm	accepted	claude-ruling	
 coach	embodied-agent	single	opencyc	
 coach	intelligent-agent	single	opencyc	
@@ -337,6 +347,10 @@ computational-linguistics	linguistics	accepted	claude claude-ruling wordnet
 computational-linguistics	science	single	wordnet	
 computational-linguistics	signified	single	sumo	
 computational-neuroscience	science	accepted	claude-ruling	
+computational-ontology	cognition	accepted	claude wordnet	
+computational-ontology	dataset	single	wikidata	
+computational-ontology	knowledge-base	accepted	claude-ruling wikidata	
+computational-ontology	signified	single	sumo	
 computational-theory-of-mind	concept	accepted	claude-ruling	
 computer-chess	artificial-intelligence	accepted	claude-ruling	
 computer-chess	information	single	yago	
@@ -355,6 +369,7 @@ computer-vision	artificial-intelligence	accepted	claude-ruling
 computer-vision	machine-perception	accepted	claude-ruling	
 concept-drift	concept	accepted	claude-ruling	
 concurrent-logic-programming	logic-programming	accepted	claude wikidata	
+concurrent-logic-programming	skill	single	wikidata	
 conditional-random-field	statistical-model	accepted	claude-ruling	
 conductor	embodied-agent	single	opencyc	
 conductor	intelligent-agent	single	opencyc	
@@ -367,6 +382,7 @@ connectionist-expert-system	expert-system	accepted	claude wikidata
 connectionist-expert-system	knowledge-based-system	single	wikidata	
 constraint-logic-programming	constraint-programming	accepted	claude wikidata	
 constraint-logic-programming	logic-programming	accepted	claude wikidata	
+constraint-logic-programming	skill	single	wikidata	
 constraint-programming	computer-science	accepted	claude-ruling	
 constraint-satisfaction-problem	problem	accepted	claude-ruling	
 consumer	embodied-agent	single	opencyc	
@@ -394,6 +410,7 @@ controlled-vocabulary	product	single	yago
 conversational-ai	ai-model	dissented	wikidata	
 conversational-ai	artificial-neural-network	single	wikidata	
 conversational-ai	chatbot	accepted	claude wikidata	
+conversational-ai	software	single	wikidata	
 conversational-ai	software-agent	single	wikidata	
 convex-optimization	mathematical-optimization	accepted	claude-ruling wikidata	
 convolutional-neural-network	artificial-neural-network	single	wikidata	
@@ -437,6 +454,7 @@ dbscan	clustering-algorithm	accepted	claude-ruling
 decision-support-system	software	accepted	claude-ruling	
 decision-theory	field-of-study	accepted	claude-ruling	
 decision-tree	concept	accepted	claude-ruling	
+decision-tree-learning	algorithm	single	wikidata	
 decision-tree-learning	machine-learning-algorithm	accepted	claude-ruling	
 deep-belief-network	artificial-neural-network	accepted	claude wikidata	
 deep-belief-network	bayesian-network	accepted	claude wikidata	
@@ -462,6 +480,7 @@ denoising-autoencoder	artificial-neural-network	single	wikidata
 denoising-autoencoder	autoencoder	accepted	claude wikidata	
 dentist	embodied-agent	single	opencyc	
 dentist	intelligent-agent	single	opencyc	
+depth-first-search	algorithm	single	wikidata	
 depth-first-search	graph-traversal	accepted	claude wikidata	
 depth-first-search	information-retrieval	single	wikidata	
 depth-first-search	search-algorithm	single	wikidata	
@@ -479,10 +498,12 @@ differential-privacy	concept	accepted	claude-ruling
 diffusion-model	artificial-neural-network	single	wikidata	
 diffusion-model	generative-model	accepted	claude wikidata	
 diffusion-model	latent-variable-model	accepted	claude wikidata	
+diffusion-model	software	single	wikidata	
 diffusion-model	statistical-model	single	wikidata	
 diffusion-model	transformer-model	dissented	wikidata	
 digital-twin	computer-simulation	accepted	claude-ruling	
 dijkstra-algorithm	search-algorithm	accepted	claude-ruling	
+dimensionality-reduction	algorithm	single	wikidata	
 dimensionality-reduction	machine-learning	accepted	claude-ruling	
 diplomat	embodied-agent	single	opencyc	
 diplomat	intelligent-agent	single	opencyc	
@@ -491,6 +512,7 @@ director	intelligent-agent	single	opencyc
 distant-supervision	weakly-supervised-learning	accepted	claude-ruling	
 distilled-ai-model	ai-model	accepted	claude wikidata	
 distilled-ai-model	artificial-neural-network	single	wikidata	
+distilled-ai-model	software	single	wikidata	
 distributed-artificial-intelligence	artificial-intelligence	accepted	claude wikidata	
 distributed-cognition	concept	accepted	claude-ruling	
 distributional-semantics	computational-linguistics	accepted	claude wikidata	
@@ -532,6 +554,7 @@ elite	intelligent-agent	single	opencyc
 elman-network	artificial-neural-network	accepted	claude wikidata	
 embedding-model	ai-model	accepted	claude wikidata	
 embedding-model	artificial-neural-network	single	wikidata	
+embedding-model	software	single	wikidata	
 embodied-agent	intelligent-agent	accepted	claude wikidata	
 embodied-artificial-intelligence	artificial-intelligence	accepted	claude wikidata	
 embodied-cognition	concept	accepted	claude-ruling	
@@ -551,10 +574,9 @@ erdos-renyi-model	statistical-model	accepted	claude-ruling
 estimation-of-distribution-algorithm	evolutionary-algorithm	accepted	claude-ruling	
 ethics-of-artificial-intelligence	field-of-study	accepted	claude-ruling	
 ethics-of-artificial-intelligence	philosophy-of-artificial-intelligence	accepted	claude wikidata	
-evolutionary-algorithm	algorithm	accepted	claude-ruling	
+evolutionary-algorithm	algorithm	accepted	claude-ruling wikidata	
 evolutionary-algorithm	artificial-intelligence	single	wikidata	
 evolutionary-algorithm	evolutionary-computation	accepted	claude-ruling	
-evolutionary-algorithm	heuristic	single	wikidata	
 evolutionary-algorithm	metaheuristic	accepted	claude wikidata	
 evolutionary-computation	artificial-intelligence	accepted	claude wikidata	
 evolutionary-robotics	robotics	accepted	claude-ruling	
@@ -585,6 +607,7 @@ explanation-based-learning	machine-learning	accepted	claude wikidata
 exploration-exploitation-dilemma	problem	accepted	claude-ruling	
 extended-mind-thesis	concept	accepted	claude-ruling	
 f1-score	model-evaluation-method	accepted	claude-ruling	
+facial-recognition-system	algorithm	single	wikidata	
 facial-recognition-system	software	accepted	claude-ruling	
 factor-graph	concept	accepted	claude-ruling	
 factor-graph	graph	dissented	wikidata	
@@ -595,9 +618,11 @@ farm	intelligent-agent	single	opencyc
 farmer	embodied-agent	single	opencyc	
 farmer	intelligent-agent	single	opencyc	
 feature-detection	computer-vision	accepted	claude wikidata	
+feature-extraction	algorithm	single	wikidata	
 feature-extraction	dimensionality-reduction	accepted	claude wikidata	
 feature-learning	artificial-intelligence	single	wikidata	
 feature-learning	machine-learning	accepted	claude wikidata	
+feature-selection	algorithm	single	wikidata	
 feature-selection	dimensionality-reduction	accepted	claude wikidata	
 federated-learning	artificial-intelligence	single	wikidata	
 federated-learning	machine-learning	accepted	claude wikidata	
@@ -630,8 +655,10 @@ friendly-artificial-intelligence	ai-model	single	wikidata
 friendly-artificial-intelligence	artificial-general-intelligence	accepted	claude wikidata	
 friendly-artificial-intelligence	artificial-intelligence	single	wikidata	
 friendly-artificial-intelligence	artificial-neural-network	single	wikidata	
+friendly-artificial-intelligence	software	single	wikidata	
 frog	embodied-agent	single	opencyc	
 functional-logic-programming	logic-programming	accepted	claude wikidata	
+functional-logic-programming	skill	single	wikidata	
 fuzzy-set	concept	accepted	claude-ruling	
 game-of-life	cellular-automaton	accepted	claude-ruling	
 game-theory	cognition	single	wordnet	
@@ -649,15 +676,18 @@ gaussian-process	concept	accepted	claude-ruling
 general-game-playing	artificial-intelligence	accepted	claude-ruling	
 generalization-error	concept	accepted	claude-ruling	
 generative-adversarial-network	ai-model	single	wikidata	
+generative-adversarial-network	algorithm	single	wikidata	
 generative-adversarial-network	artificial-intelligence	single	wikidata	
 generative-adversarial-network	artificial-neural-network	single	wikidata	
 generative-adversarial-network	generative-ai	accepted	claude wikidata	
 generative-adversarial-network	generative-model	single	wikidata	
+generative-adversarial-network	software	single	wikidata	
 generative-adversarial-network	statistical-model	single	wikidata	
 generative-ai	ai-model	accepted	claude wikidata	
 generative-ai	artificial-intelligence	accepted	claude wikidata	
 generative-ai	artificial-neural-network	single	wikidata	
 generative-ai	generative-model	accepted	claude wikidata	
+generative-ai	software	single	wikidata	
 generative-ai	statistical-model	single	wikidata	
 generative-ai-chatbot	chatbot	accepted	claude wikidata	
 generative-ai-chatbot	software-agent	single	wikidata	
@@ -666,13 +696,14 @@ generative-model	statistical-model	accepted	claude wikidata
 generative-pre-trained-transformer	language-model	single	wikidata	
 generative-pre-trained-transformer	large-language-model	accepted	claude wikidata	
 generative-pre-trained-transformer	statistical-model	single	wikidata	
+genetic-algorithm	algorithm	single	wikidata	
 genetic-algorithm	artificial-intelligence	single	wikidata	
 genetic-algorithm	evolutionary-algorithm	accepted	claude wikidata	
-genetic-algorithm	heuristic	single	wikidata	
 genetic-algorithm	information-retrieval	single	wikidata	
 genetic-algorithm	informed-search-algorithm	accepted	claude wikidata	
 genetic-algorithm	metaheuristic	single	wikidata	
 genetic-algorithm	search-algorithm	single	wikidata	
+genetic-programming	algorithm	single	wikidata	
 genetic-programming	evolutionary-computation	accepted	claude-ruling	
 genius	embodied-agent	single	opencyc	
 genius	intelligent-agent	single	opencyc	
@@ -689,11 +720,11 @@ goodharts-law	concept	accepted	claude-ruling
 governance-of-artificial-intelligence	management	accepted	claude-ruling	
 governor	embodied-agent	single	opencyc	
 governor	intelligent-agent	single	opencyc	
+gradient-boosting	algorithm	single	wikidata	
 gradient-boosting	artificial-intelligence	single	wikidata	
 gradient-boosting	boosting-algorithm	accepted	claude wikidata	
 gradient-boosting	bootstrap-aggregating	single	wikidata	
 gradient-boosting	ensemble-learning	single	wikidata	
-gradient-boosting	heuristic	single	wikidata	
 gradient-boosting	machine-learning	single	wikidata	
 gradient-boosting	metaheuristic	single	wikidata	
 gradient-descent	algorithm	accepted	claude-ruling	
@@ -702,9 +733,10 @@ graph-convolutional-network	artificial-neural-network	accepted	claude wikidata
 graph-embedding	function	single	wikidata	
 graph-embedding	vector-embedding	accepted	claude-ruling	
 graph-neural-network	artificial-neural-network	accepted	claude wikidata	
+graph-traversal	algorithm	single	wikidata	
 graph-traversal	information-retrieval	single	wikidata	
 graph-traversal	search-algorithm	accepted	claude wikidata	
-greedy-algorithm	algorithm	accepted	claude-ruling	
+greedy-algorithm	algorithm	accepted	claude-ruling wikidata	
 grid-search	hyperparameter-optimization	accepted	claude-ruling	
 grocery-store	intelligent-agent	single	opencyc	
 guard	embodied-agent	single	opencyc	
@@ -720,7 +752,6 @@ hero	embodied-agent	single	opencyc
 hero	intelligent-agent	single	opencyc	
 heuristic	act	single	wordnet	
 heuristic	activity	single	wordnet	
-heuristic	artificial-intelligence	dissented	wikidata	
 heuristic	event	single	wordnet	
 heuristic	measure	single	sumo	
 heuristic	procedure	single	wordnet	
@@ -728,13 +759,15 @@ heuristic	routine	single	sumo
 heuristic	rule	accepted	claude-ruling	
 heuristic	rule.cognition	single	wordnet	
 heuristic	signified	single	sumo	
+heuristic-search-algorithm	algorithm	single	wikidata	
 heuristic-search-algorithm	artificial-intelligence	single	wikidata	
-heuristic-search-algorithm	heuristic	dissented	wikidata	
 heuristic-search-algorithm	information-retrieval	single	wikidata	
 heuristic-search-algorithm	search-algorithm	accepted	claude-ruling wikidata	
 hidden-layer	neural-network-layer	accepted	claude-ruling	
+hidden-markov-model	algorithm	single	wikidata	
 hidden-markov-model	latent-variable-model	accepted	claude-ruling	
 hidden-markov-model	statistical-model	accepted	claude-ruling	
+hierarchical-classifier	algorithm	single	wikidata	
 hierarchical-classifier	classification-algorithm	accepted	claude wikidata	
 hierarchical-classifier	function	single	wikidata	
 hierarchical-clustering	cluster-analysis	accepted	claude wikidata	
@@ -743,10 +776,10 @@ hierarchical-task-network	automated-planning	accepted	claude-ruling
 hierarchical-temporal-memory	artificial-intelligence	single	wikidata	
 hierarchical-temporal-memory	artificial-neural-network	accepted	claude wikidata	
 hierarchical-temporal-memory	machine-learning	accepted	claude wikidata	
+hill-climbing-search	algorithm	single	wikidata	
 hill-climbing-search	artificial-intelligence	single	wikidata	
 hill-climbing-search	evolutionary-algorithm	single	wikidata	
 hill-climbing-search	genetic-algorithm	dissented	wikidata	
-hill-climbing-search	heuristic	single	wikidata	
 hill-climbing-search	information-retrieval	single	wikidata	
 hill-climbing-search	informed-search-algorithm	single	wikidata	
 hill-climbing-search	metaheuristic	single	wikidata	
@@ -770,6 +803,7 @@ hunter	intelligent-agent	single	opencyc
 hyperparameter	concept	accepted	claude-ruling	
 hyperparameter-optimization	automated-machine-learning	accepted	claude-ruling	
 hyperparameter-optimization	mathematical-optimization	accepted	claude wikidata	
+image-classification	algorithm	single	wikidata	
 image-classification	computer-vision	accepted	claude-ruling	
 image-classification	image-processing	accepted	claude wikidata	
 image-classification	signal-processing	single	wikidata	
@@ -813,8 +847,8 @@ information-science	cognition	single	wordnet
 information-science	field-of-study	accepted	sumo wordnet	
 information-science	science	accepted	claude claude-ruling wordnet	
 information-science	signified	single	sumo	
+informed-search-algorithm	algorithm	single	wikidata	
 informed-search-algorithm	artificial-intelligence	single	wikidata	
-informed-search-algorithm	heuristic	dissented	wikidata	
 informed-search-algorithm	information-retrieval	single	wikidata	
 informed-search-algorithm	search-algorithm	accepted	claude-ruling wikidata	
 insect	embodied-agent	single	opencyc	
@@ -844,6 +878,7 @@ internet-bot	software-agent	accepted	claude-ruling
 inverse-kinematics	robotics	accepted	claude-ruling	
 inverse-reinforcement-learning	reinforcement-learning	accepted	claude-ruling	
 invertebrate	embodied-agent	single	opencyc	
+isomap	algorithm	single	wikidata	
 isomap	artificial-intelligence	single	wikidata	
 isomap	dimensionality-reduction	single	wikidata	
 isomap	machine-learning	single	wikidata	
@@ -859,6 +894,7 @@ k-means-clustering	clustering-algorithm	accepted	claude-ruling
 k-nearest-neighbors	classification-algorithm	accepted	claude-ruling	
 kalman-filter	algorithm	accepted	claude-ruling	
 kalman-filter	function	single	wikidata	
+kernel-method	algorithm	single	wikidata	
 kernel-method	machine-learning-algorithm	accepted	claude-ruling	
 knowledge-base	dataset	accepted	claude wikidata	
 knowledge-base	product	single	yago	
@@ -889,6 +925,7 @@ large-action-model	ai-model	accepted	claude wikidata
 large-action-model	artificial-neural-network	single	wikidata	
 large-action-model	language-model	single	wikidata	
 large-action-model	large-language-model	accepted	claude wikidata	
+large-action-model	software	single	wikidata	
 large-action-model	statistical-model	single	wikidata	
 large-language-model	language-model	accepted	claude wikidata	
 large-language-model	statistical-model	single	wikidata	
@@ -912,13 +949,19 @@ linear-classifier	classification-algorithm	accepted	claude-ruling
 linear-discriminant-analysis	classification-algorithm	accepted	claude-ruling	
 linear-programming	mathematical-optimization	accepted	claude-ruling	
 link-prediction	network-science	accepted	claude-ruling	
+linked-data	dataset	single	wikidata	
 linked-data	information	accepted	claude-ruling	
+linked-data	software	single	wikidata	
+linked-data	web-site	single	wikidata	
 linked-open-data	dataset	accepted	claude wikidata	
 linked-open-data	linked-data	accepted	claude wikidata	
+linked-open-data	software	single	wikidata	
+linked-open-data	web-site	single	wikidata	
 lion	embodied-agent	single	opencyc	
 livestock	embodied-agent	single	opencyc	
 locality-sensitive-hashing	algorithm	accepted	claude-ruling	
 logic-programming	computer-science	accepted	claude-ruling	
+logic-programming	skill	single	wikidata	
 logic-programming-language	language	accepted	claude-ruling	
 logistic-regression	classification-algorithm	accepted	claude-ruling	
 logistic-regression	statistical-model	accepted	claude-ruling wikidata	
@@ -933,7 +976,7 @@ machine-learning	action	single	opencyc
 machine-learning	artificial-intelligence	accepted	claude wikidata	
 machine-learning	event	single	opencyc	
 machine-learning	situation	single	opencyc	
-machine-learning-algorithm	algorithm	accepted	claude-ruling	
+machine-learning-algorithm	algorithm	accepted	claude-ruling wikidata	
 machine-perception	artificial-intelligence	accepted	claude-ruling	
 machine-reading-comprehension	artificial-intelligence	single	wikidata	
 machine-reading-comprehension	computational-linguistics	single	wikidata	
@@ -978,9 +1021,8 @@ memetic-algorithm	evolutionary-algorithm	accepted	claude-ruling
 memory-augmented-neural-network	artificial-neural-network	accepted	claude wikidata	
 meta-learning	artificial-intelligence	single	wikidata	
 meta-learning	machine-learning	accepted	claude wikidata	
-metaheuristic	algorithm	accepted	claude-ruling	
+metaheuristic	algorithm	accepted	claude-ruling wikidata	
 metaheuristic	artificial-intelligence	single	wikidata	
-metaheuristic	heuristic	dissented	wikidata	
 metropolis-hastings-algorithm	markov-chain-monte-carlo	accepted	claude-ruling	
 microbot	automaton	accepted	claude wikidata	
 microbot	machine	single	wikidata	
@@ -1018,9 +1060,8 @@ monarchy	intelligent-agent	single	opencyc
 monk	embodied-agent	single	opencyc	
 monk	intelligent-agent	single	opencyc	
 monkey	embodied-agent	single	opencyc	
-monte-carlo-algorithm	algorithm	accepted	claude-ruling	
+monte-carlo-algorithm	algorithm	accepted	claude-ruling wikidata	
 monte-carlo-algorithm	artificial-intelligence	single	wikidata	
-monte-carlo-algorithm	heuristic	dissented	wikidata	
 monte-carlo-method	algorithm	accepted	claude-ruling	
 monte-carlo-tree-search	search-algorithm	accepted	claude-ruling	
 morphological-analysis	artificial-intelligence	single	wikidata	
@@ -1051,17 +1092,20 @@ multimodal-large-language-model	large-language-model	accepted	claude wikidata
 multimodal-large-language-model	statistical-model	single	wikidata	
 multimodal-learning	artificial-intelligence	single	wikidata	
 multimodal-learning	machine-learning	accepted	claude wikidata	
+multiple-instance-learning	algorithm	single	wikidata	
 multiple-instance-learning	supervised-learning	accepted	claude wikidata	
 museum	intelligent-agent	single	opencyc	
 musician	embodied-agent	single	opencyc	
 musician	intelligent-agent	single	opencyc	
 mutual-information	concept	accepted	claude-ruling	
 n-gram	concept	accepted	claude-ruling	
+naive-bayes-classifier	algorithm	single	wikidata	
 naive-bayes-classifier	bayes-classifier	accepted	claude wikidata	
 naive-bayes-classifier	classification-algorithm	single	wikidata	
 naive-bayes-classifier	function	single	wikidata	
 named-entity-recognition	information-extraction	accepted	claude-ruling	
 nanorobotics	robotics	accepted	claude wikidata	
+natural-language-generation	algorithm	single	wikidata	
 natural-language-generation	artificial-intelligence	single	wikidata	
 natural-language-generation	computational-linguistics	single	wikidata	
 natural-language-generation	natural-language-processing	accepted	claude wikidata	
@@ -1076,6 +1120,7 @@ natural-language-understanding	artificial-intelligence	single	wikidata
 natural-language-understanding	computational-linguistics	single	wikidata	
 natural-language-understanding	natural-language-processing	accepted	claude wikidata	
 navy	intelligent-agent	single	opencyc	
+nearest-neighbor-classifier	algorithm	single	wikidata	
 nearest-neighbor-classifier	classification-algorithm	accepted	claude wikidata	
 nearest-neighbor-classifier	function	single	wikidata	
 neat-algorithm	neuroevolution	accepted	claude-ruling	
@@ -1099,6 +1144,7 @@ neurorobotics	artificial-intelligence	accepted	claude wikidata
 neurorobotics	robotics	accepted	claude wikidata	
 no-free-lunch-theorem	concept	accepted	claude-ruling	
 non-negative-matrix-factorization	algorithm	accepted	claude-ruling	
+nonlinear-dimensionality-reduction	algorithm	single	wikidata	
 nonlinear-dimensionality-reduction	artificial-intelligence	single	wikidata	
 nonlinear-dimensionality-reduction	dimensionality-reduction	accepted	claude wikidata	
 nonlinear-dimensionality-reduction	machine-learning	accepted	claude wikidata	
@@ -1114,16 +1160,10 @@ one-class-classification	statistical-classification	accepted	claude-ruling
 one-shot-learning	artificial-intelligence	single	wikidata	
 one-shot-learning	few-shot-learning	accepted	claude wikidata	
 one-shot-learning	machine-learning	single	wikidata	
-online-algorithm	algorithm	accepted	claude-ruling	
+online-algorithm	algorithm	accepted	claude-ruling wikidata	
 online-machine-learning	artificial-intelligence	single	wikidata	
 online-machine-learning	incremental-learning	accepted	claude wikidata	
 online-machine-learning	machine-learning	single	wikidata	
-ontology	cognition	accepted	claude wordnet	
-ontology	dataset	single	wikidata	
-ontology	information	single	opencyc	
-ontology	knowledge-base	accepted	claude-ruling wikidata	
-ontology	signified	single	sumo	
-ontology	system	single	opencyc	
 ontology-alignment	knowledge-engineering	accepted	claude-ruling	
 ontology-engineering	knowledge-engineering	accepted	claude wikidata	
 ontology-learning	knowledge-engineering	accepted	claude-ruling	
@@ -1140,6 +1180,7 @@ operations-research	search	single	sumo
 operations-research	universe	single	sumo	
 operations-research	volition	single	sumo	
 operations-research	work	single	wordnet	
+optical-character-recognition	algorithm	single	wikidata	
 optical-character-recognition	artificial-intelligence	single	wikidata	
 optical-character-recognition	machine-learning	single	wikidata	
 optical-character-recognition	pattern-recognition	accepted	claude wikidata	
@@ -1174,6 +1215,7 @@ partner	embodied-agent	single	opencyc
 partner	intelligent-agent	single	opencyc	
 partnership	intelligent-agent	single	opencyc	
 path-planning	motion-planning	accepted	claude-ruling	
+pathfinding	algorithm	single	wikidata	
 pathfinding	information-retrieval	single	wikidata	
 pathfinding	search-algorithm	accepted	claude wikidata	
 patient	embodied-agent	single	opencyc	
@@ -1191,6 +1233,8 @@ peer	embodied-agent	single	opencyc
 peer	intelligent-agent	single	opencyc	
 pensioner	embodied-agent	single	opencyc	
 pensioner	intelligent-agent	single	opencyc	
+perceiver	artificial-neural-network	single	wikidata	
+perceiver	transformer-model	single	wikidata	
 perceptron	artificial-neural-network	single	wikidata	
 perceptron	feedforward-neural-network	accepted	claude wikidata	
 perceptron	linear-classifier	accepted	claude-ruling	
@@ -1312,6 +1356,7 @@ retrieval-augmented-generation	artificial-neural-network	single	wikidata
 retrieval-augmented-generation	generative-ai	accepted	claude wikidata	
 retrieval-augmented-generation	generative-model	single	wikidata	
 retrieval-augmented-generation	information-retrieval	accepted	claude wikidata	
+retrieval-augmented-generation	software	single	wikidata	
 retrieval-augmented-generation	statistical-model	single	wikidata	
 reversible-cellular-automaton	cellular-automaton	accepted	claude wikidata	
 reward-hacking	specification-gaming	accepted	claude-ruling	
@@ -1370,7 +1415,7 @@ school	intelligent-agent	single	opencyc
 scientist	embodied-agent	single	opencyc	
 scientist	intelligent-agent	single	opencyc	
 seal	embodied-agent	single	opencyc	
-search-algorithm	algorithm	accepted	claude-ruling opencyc	
+search-algorithm	algorithm	accepted	claude-ruling opencyc wikidata	
 search-algorithm	information	single	opencyc	
 search-algorithm	information-retrieval	dissented	wikidata	
 secretary	embodied-agent	single	opencyc	
@@ -1478,7 +1523,7 @@ soprano	embodied-agent	single	opencyc
 soprano	intelligent-agent	single	opencyc	
 sorting-algorithm	act	single	wordnet	
 sorting-algorithm	activity	single	wordnet	
-sorting-algorithm	algorithm	accepted	opencyc wordnet	
+sorting-algorithm	algorithm	accepted	opencyc wikidata wordnet	
 sorting-algorithm	event	single	wordnet	
 sorting-algorithm	information	single	opencyc	
 sorting-algorithm	measure	single	sumo	
@@ -1497,6 +1542,7 @@ speaker-verification	artificial-intelligence	single	wikidata
 speaker-verification	computational-linguistics	single	wikidata	
 speaker-verification	natural-language-processing	accepted	claude wikidata	
 specification-gaming	problem	accepted	claude-ruling	
+spectator	unmanned-aerial-vehicle	single	wikidata	
 speech-dataset	dataset	accepted	claude wikidata	
 speech-recognition	artificial-intelligence	single	wikidata	
 speech-recognition	computational-linguistics	single	wikidata	
@@ -1514,6 +1560,7 @@ squad	intelligent-agent	single	opencyc
 staff	intelligent-agent	single	opencyc	
 state	intelligent-agent	single	opencyc	
 state-observer	concept	accepted	claude-ruling	
+state-space-search	algorithm	single	wikidata	
 state-space-search	information-retrieval	single	wikidata	
 state-space-search	search-algorithm	accepted	claude wikidata	
 statistical-classification	machine-learning	accepted	claude-ruling	
@@ -1543,6 +1590,7 @@ stochastic-block-model	statistical-model	single	wikidata
 stochastic-gradient-descent	gradient-descent	accepted	claude wikidata	
 stochastic-neural-network	artificial-neural-network	accepted	claude wikidata	
 stop-word	concept	accepted	claude-ruling	
+string-searching-algorithm	algorithm	single	wikidata	
 string-searching-algorithm	information-retrieval	single	wikidata	
 string-searching-algorithm	search-algorithm	accepted	claude wikidata	
 structure-from-motion	3d-reconstruction	accepted	claude-ruling	
@@ -1555,9 +1603,11 @@ superintelligence	ai-model	single	wikidata
 superintelligence	artificial-general-intelligence	accepted	claude wikidata	
 superintelligence	artificial-intelligence	single	wikidata	
 superintelligence	artificial-neural-network	single	wikidata	
+superintelligence	software	single	wikidata	
 supervised-learning	machine-learning	accepted	claude-ruling	
 supervisor	embodied-agent	single	opencyc	
 supervisor	intelligent-agent	single	opencyc	
+support-vector-machine	algorithm	single	wikidata	
 support-vector-machine	classification-algorithm	accepted	claude wikidata	
 support-vector-machine	function	single	wikidata	
 support-vector-machine	supervised-learning	accepted	claude wikidata	
@@ -1611,10 +1661,12 @@ text-segmentation	natural-language-processing	accepted	claude wikidata
 text-to-image-model	ai-model	accepted	claude wikidata	
 text-to-image-model	artificial-neural-network	single	wikidata	
 text-to-image-model	generative-model	accepted	claude wikidata	
+text-to-image-model	software	single	wikidata	
 text-to-image-model	statistical-model	single	wikidata	
 text-to-video-model	ai-model	accepted	claude wikidata	
 text-to-video-model	artificial-neural-network	single	wikidata	
 text-to-video-model	generative-model	accepted	claude wikidata	
+text-to-video-model	software	single	wikidata	
 text-to-video-model	statistical-model	single	wikidata	
 text-tokenization	artificial-intelligence	single	wikidata	
 text-tokenization	computational-linguistics	single	wikidata	
@@ -1640,14 +1692,16 @@ transformer-model	artificial-neural-network	accepted	claude wikidata
 transportation	intelligent-agent	single	opencyc	
 treasurer	embodied-agent	single	opencyc	
 treasurer	intelligent-agent	single	opencyc	
+tree-traversal	algorithm	single	wikidata	
 tree-traversal	graph-traversal	accepted	claude wikidata	
 tree-traversal	information-retrieval	single	wikidata	
 tree-traversal	search-algorithm	single	wikidata	
 tribunal	intelligent-agent	single	opencyc	
 triplestore	database	accepted	claude-ruling	
+triplestore	dataset	single	wikidata	
 triplestore	information	single	yago	
 triplestore	product	single	yago	
-triplestore	software	accepted	claude-ruling	
+triplestore	software	accepted	claude-ruling wikidata	
 trust	intelligent-agent	single	opencyc	
 trustee	intelligent-agent	single	opencyc	
 turing-test	procedure	accepted	claude-ruling	
@@ -1661,6 +1715,7 @@ underwater-robot	physical-object	single	wikidata
 underwater-robot	unmanned-aerial-vehicle	dissented	wikidata	
 underwater-robot	vehicle	single	wikidata	
 uniform-cost-search	search-algorithm	accepted	claude-ruling	
+uninformed-search-algorithm	algorithm	single	wikidata	
 uninformed-search-algorithm	information-retrieval	single	wikidata	
 uninformed-search-algorithm	search-algorithm	accepted	claude-ruling wikidata	
 universal-approximation-theorem	concept	accepted	claude-ruling	
@@ -1700,6 +1755,7 @@ vision-transformer	transformer-model	accepted	claude wikidata
 visitor	embodied-agent	single	opencyc	
 visitor	intelligent-agent	single	opencyc	
 visual-odometry	computer-vision	accepted	claude-ruling	
+voice-user-interface	interface	single	wikidata	
 voice-user-interface	software	accepted	claude-ruling	
 volunteer	embodied-agent	single	opencyc	
 volunteer	intelligent-agent	single	opencyc	
@@ -1712,6 +1768,7 @@ warrior	intelligent-agent	single	opencyc
 weak-artificial-intelligence	ai-model	dissented	wikidata	
 weak-artificial-intelligence	artificial-intelligence	accepted	claude-ruling	
 weak-artificial-intelligence	artificial-neural-network	single	wikidata	
+weak-artificial-intelligence	software	single	wikidata	
 weakly-supervised-learning	supervised-learning	accepted	claude wikidata	
 web-crawler	information	accepted	opencyc yago	
 web-crawler	internet-bot	accepted	claude-ruling wikidata	
@@ -1731,6 +1788,7 @@ worker	embodied-agent	single	opencyc
 worker	intelligent-agent	single	opencyc	
 world-model	ai-model	accepted	claude-ruling wikidata	
 world-model	artificial-neural-network	single	wikidata	
+world-model	software	single	wikidata	
 world-power	intelligent-agent	single	opencyc	
 zero-shot-learning	artificial-intelligence	single	wikidata	
 zero-shot-learning	machine-learning	accepted	claude wikidata	

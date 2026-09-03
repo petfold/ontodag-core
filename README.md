@@ -17,7 +17,7 @@ concepts, ten branches, every edge carried by two independent sources or by
 Peter's ruling. It is a strict superset of the hand-written v1 (194 concepts,
 nothing lost). `docs/UPPER.md` §6 records every decision, §7 the policy for
 the sciences, §8 the science packs built beside it — `packs/physics`,
-`packs/mathematics`, `packs/chemistry`, `packs/biology`, `packs/medicine`, `packs/ai`, `packs/economics`, each a
+`packs/mathematics`, `packs/chemistry`, `packs/biology`, `packs/medicine`, `packs/ai`, `packs/economics`, `packs/computing`, each a
 `build/<pack>.od` that merges onto core's hinges (`odag pack core`, then
 `odag merge packs/<pack>/build/<pack>.od`). Rebuild core from the review
 files with `sh tools/build.sh`; a pack with
