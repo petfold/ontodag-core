@@ -18,9 +18,10 @@ accredited-investor	worker	single	wikidata
 accrual	concept	accepted	claude-ruling	
 accrual-basis	information	single	wordnet	
 accrual-basis	measure	single	sumo	
+accrual-basis	procedure	accepted	claude-ruling	
 accrual-basis	routine	single	sumo	
 accrual-basis	signified	single	sumo	
-accrual-basis	transaction-record	accepted	claude wordnet	
+accrual-basis	transaction-record	dissented	wordnet	
 active-management	asset-management	accepted	claude wikidata	
 active-management	business-model	single	wikidata	
 active-management	financial-services	single	wikidata	
@@ -310,9 +311,9 @@ audited-account	activity	single	sumo
 audited-account	event	single	sumo	
 audited-account	information	accepted	sumo wordnet	
 audited-account	phenomenon	single	sumo	
-audited-account	procedure	single	sumo	
+audited-account	procedure	accepted	claude-ruling sumo	
 audited-account	search	single	sumo	
-audited-account	transaction-record	accepted	claude wordnet	
+audited-account	transaction-record	dissented	wordnet	
 audited-account	universe	single	sumo	
 audited-account	volition	single	sumo	
 authorized-shares	number	single	sumo	
@@ -451,7 +452,7 @@ banknote	medium-of-exchange	single	wikidata
 banknote	product	single	yago	
 banknote	service	single	yago	
 barcode	information	accepted	claude-ruling schemaorg	
-baron	entrepreneur	accepted	claude wikidata	
+baron	entrepreneur	dissented	wikidata	
 barrel	goods	single	wikidata	
 barrier-option	contract	single	wikidata	
 barrier-option	derivative-finance	single	wikidata	
@@ -465,7 +466,7 @@ barrier-option	option-finance	single	wikidata
 barrier-option	security-finance	single	wikidata	
 barriers-to-entry	concept	accepted	claude-ruling	
 barter	commercial-trade	accepted	claude wikidata	
-barter	monetary-exchange	accepted	claude wordnet	
+barter	monetary-exchange	dissented	wordnet	
 barterer	agent	single	wordnet	
 barterer	attribute	single	sumo	
 barterer	merchant	single	wordnet	
@@ -968,17 +969,19 @@ cash-account	brokerage-account	accepted	claude wordnet
 cash-account	state	single	wordnet	
 cash-basis	information	single	wordnet	
 cash-basis	measure	single	sumo	
+cash-basis	procedure	accepted	claude-ruling	
 cash-basis	routine	single	sumo	
 cash-basis	signified	single	sumo	
-cash-basis	transaction-record	accepted	claude wordnet	
+cash-basis	transaction-record	dissented	wordnet	
 cash-card	consumer-credit	single	wordnet	
 cash-card	credit	single	wordnet	
-cash-card	credit-card	accepted	claude wordnet	
+cash-card	credit-card	dissented	wordnet	
 cash-card	credit-line	single	wordnet	
 cash-card	identification	single	wordnet	
 cash-card	indication	single	wordnet	
 cash-card	information	single	wordnet	
 cash-card	open-end-credit	single	wordnet	
+cash-card	payment-card	accepted	claude-ruling	
 cash-card	possession	single	wordnet	
 cash-flow	financial-transaction	single	wikidata	
 cash-flow	income	accepted	claude wordnet	
@@ -1366,11 +1369,11 @@ controlling-interest	possession	single	wordnet
 controlling-interest	security-finance	single	wikidata	
 controlling-interest	share	accepted	claude wikidata	
 controlling-interest	stock-certificate	dissented	wikidata	
-convertible-bond	bond	accepted	opencyc wikidata wordnet	
+convertible-bond	bond	accepted	claude-ruling opencyc wikidata wordnet	
 convertible-bond	contract	single	wikidata	
 convertible-bond	convertible-security	single	opencyc	
 convertible-bond	corporate-bond	single	opencyc	
-convertible-bond	derivative-finance	accepted	claude wikidata	
+convertible-bond	derivative-finance	dissented	wikidata	
 convertible-bond	document	single	wordnet	
 convertible-bond	financial-asset	accepted	opencyc wikidata	
 convertible-bond	financial-instrument	single	wikidata	
@@ -1381,7 +1384,7 @@ convertible-bond	intangible-asset	single	wikidata
 convertible-bond	legal-document	single	wordnet	
 convertible-bond	loan	single	wikidata	
 convertible-bond	norm	single	opencyc	
-convertible-bond	security-finance	single	wikidata	
+convertible-bond	security-finance	accepted	claude-ruling wikidata	
 convertible-bond	transaction	single	wikidata	
 convertible-bond	unlisted-security	single	opencyc	
 convertible-security	artifact	single	sumo	
@@ -2535,7 +2538,8 @@ fixed-charge	quantity	single	sumo
 flash	goods	accepted	opencyc wikidata	
 flashlight	goods	accepted	opencyc wikidata	
 fleet	carrier-company	single	wordnet	
-fleet	steamship-company	accepted	claude wordnet	
+fleet	group	accepted	claude-ruling wordnet	
+fleet	steamship-company	dissented	wordnet	
 fleet-management	management	accepted	claude-ruling	
 floater-policy	artifact	single	sumo	
 floater-policy	contract	single	wordnet	
@@ -2842,8 +2846,8 @@ grain-merchant	organism	single	wordnet
 grain-merchant	person	single	wordnet	
 grain-merchant	physical-object	single	wordnet	
 grain-merchant	property	single	sumo	
-gratuity	fringe-benefit	accepted	claude wordnet	
-gratuity	payment-amount	single	wordnet	
+gratuity	fringe-benefit	dissented	wordnet	
+gratuity	payment-amount	accepted	claude-ruling wordnet	
 gravure	commercial-enterprise	single	claude	
 greengrocer	agent	single	wordnet	
 greengrocer	attribute	single	sumo	
@@ -2883,8 +2887,8 @@ grocer	structure	single	opencyc
 grocer	system	single	opencyc	
 grocer	vertebrate	single	opencyc	
 grocer	worker	accepted	opencyc wikidata	
-gross-profit	income	single	wordnet	
-gross-profit	net-income	accepted	claude wordnet	
+gross-profit	income	accepted	claude-ruling wordnet	
+gross-profit	net-income	dissented	wordnet	
 gross-profit	number	dissented	wikidata	
 gross-profit	possession	single	wordnet	
 gross-profit	quantity	single	sumo	
@@ -3533,9 +3537,9 @@ library-fine	quantity	single	sumo
 licensee	agent	single	wordnet	
 licensee	merchant	single	wordnet	
 licensee	organism	single	wordnet	
-licensee	person	single	wordnet	
+licensee	person	accepted	claude-ruling wordnet	
 licensee	physical-object	single	wordnet	
-licensee	retailer	accepted	claude wordnet	
+licensee	retailer	dissented	wordnet	
 licensing-agreement	contract	accepted	sumo wordnet	
 licensing-agreement	document	single	wordnet	
 licensing-agreement	information	single	wordnet	
@@ -3585,9 +3589,9 @@ limited-review	activity	single	sumo
 limited-review	event	single	sumo	
 limited-review	information	accepted	sumo wordnet	
 limited-review	phenomenon	single	sumo	
-limited-review	procedure	single	sumo	
+limited-review	procedure	accepted	claude-ruling sumo	
 limited-review	search	single	sumo	
-limited-review	transaction-record	accepted	claude wordnet	
+limited-review	transaction-record	dissented	wordnet	
 limited-review	universe	single	sumo	
 limited-review	volition	single	sumo	
 linage-rate	charge-rate	accepted	claude wordnet	
@@ -3629,10 +3633,11 @@ loan	goods	dissented	wikidata
 loan-point	artifact	single	sumo	
 loan-point	contract-condition	single	sumo	
 loan-point	debt	single	wordnet	
+loan-point	fee	accepted	claude-ruling	
 loan-point	indication	single	sumo	
 loan-point	information	single	sumo	
 loan-point	line-of-text	single	sumo	
-loan-point	loan	accepted	claude wordnet	
+loan-point	loan	dissented	wordnet	
 loan-point	phenomenon	single	sumo	
 loan-point	physical-object	single	sumo	
 loan-point	possession	single	wordnet	
@@ -4134,8 +4139,9 @@ operating-expense	quantity	single	sumo
 operating-income	income	accepted	claude wikidata	
 operating-system	goods	single	wikidata	
 operational-risk	financial-risk	accepted	claude-ruling	
+opportunity-cost	concept	accepted	claude-ruling	
 opportunity-cost	expenditure	accepted	claude-ruling	
-opportunity-cost	outgo	accepted	claude wordnet	
+opportunity-cost	outgo	dissented	wordnet	
 opportunity-cost	possession	single	wordnet	
 opportunity-cost	quantity	single	sumo	
 option	derivative-finance	single	wikidata	
@@ -4189,7 +4195,7 @@ over-the-counter-market	organization	single	sumo
 over-the-counter-market	phenomenon	single	sumo	
 over-the-counter-market	physical-object	single	wordnet	
 over-the-counter-market	place	single	wordnet	
-over-the-counter-market	stock-exchange	accepted	claude wordnet	
+over-the-counter-market	stock-exchange	dissented	wordnet	
 over-the-counter-market	team	single	sumo	
 over-the-counter-market	transaction	dissented	wikidata	
 over-the-counter-market	universe	single	sumo	
@@ -4523,9 +4529,10 @@ pooled-fund	reserve-account	dissented	wordnet
 pooled-fund	retained-earnings	single	wordnet	
 pooling-of-interest	information	single	wordnet	
 pooling-of-interest	measure	single	sumo	
+pooling-of-interest	procedure	accepted	claude-ruling	
 pooling-of-interest	routine	single	sumo	
 pooling-of-interest	signified	single	sumo	
-pooling-of-interest	transaction-record	accepted	claude wordnet	
+pooling-of-interest	transaction-record	dissented	wordnet	
 pork-butcher	agent	single	wordnet	
 pork-butcher	attribute	single	sumo	
 pork-butcher	butcher	accepted	claude wordnet	
@@ -5786,11 +5793,7 @@ stipend	possession	single	wordnet
 stipend	quantity	single	sumo	
 stipend	regular-payment	accepted	claude wordnet	
 stipend	transaction	single	wikidata	
-stock	financial-asset	single	wikidata	
-stock	financial-instrument	single	wikidata	
-stock	goods	single	wikidata	
-stock	intangible-asset	single	wikidata	
-stock	security-finance	accepted	claude-ruling wikidata	
+stock	security-finance	accepted	claude-ruling	
 stock-certificate	artifact	single	opencyc	
 stock-certificate	certificate	single	opencyc	
 stock-certificate	contract	single	wikidata	
@@ -5942,12 +5945,13 @@ stowage-charge	outgo	single	wordnet
 stowage-charge	possession	single	wordnet	
 stowage-charge	price-charged	accepted	claude wordnet	
 stowage-charge	quantity	single	sumo	
-straight-line-method	depreciation	accepted	claude wordnet	
+straight-line-method	depreciation	dissented	wordnet	
 straight-line-method	expense	single	wordnet	
 straight-line-method	lost-item	single	wordnet	
 straight-line-method	non-cash-expense	single	wordnet	
 straight-line-method	outgo	single	wordnet	
 straight-line-method	possession	single	wordnet	
+straight-line-method	procedure	accepted	claude-ruling	
 straight-line-method	quantity	single	sumo	
 strawberry	goods	single	opencyc	
 strike-pay	outgo	single	wordnet	
@@ -6540,7 +6544,8 @@ utility-bond	municipal-bond	accepted	claude wordnet
 vacuum	goods	single	wikidata	
 valuation	outgo	single	wordnet	
 valuation	possession	single	wordnet	
-valuation	purchase-price	accepted	claude wordnet	
+valuation	price	accepted	claude-ruling	
+valuation	purchase-price	dissented	wordnet	
 valuation	quantity	single	sumo	
 valuation-reserve	backlog	single	wordnet	
 valuation-reserve	income	single	wordnet	

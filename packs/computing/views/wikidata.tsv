@@ -36,6 +36,7 @@ algebraic-data-type	data-type
 alliance	organization
 allowance	gift
 allowance	money
+allowance	payment
 allowance	transaction
 altar	furniture
 altar	table
@@ -73,6 +74,10 @@ aspect-oriented-programming	separation-of-concerns
 aspect-oriented-programming	skill
 assembly-hall	room
 assembly-language	programming-language
+assertion	control-flow
+assertion	program-statement
+assertion	statement
+assignment	contract
 assimilation	chemical-reaction
 assistant	research-worker
 assistant	scientist
@@ -103,6 +108,7 @@ baby	childhood
 baby	organism
 baby	physical-object
 backlog	hill
+backlog	landform
 backtracking-search	algorithm
 backtracking-search	information-retrieval
 bacon	flesh
@@ -171,6 +177,8 @@ betrothal	promise
 bicycle	artifact
 bicycle	equipment
 bicycle	physical-object
+bid	price
+bill	cash
 binary-file	computer-file
 binary-file	data-file
 binary-search-tree	binary-tree
@@ -237,6 +245,8 @@ bride	animal
 bride	organism
 bride	physical-object
 bride	woman
+brink	hill
+brink	landform
 bubble	physical-object
 bucket	artifact
 bucket	equipment
@@ -312,6 +322,7 @@ catalog	collection
 catalog	group
 catalog	publication
 cathedral	church
+cave	landform
 cellular-telephone	phone
 celluloid	equipment
 central-processing-unit	hardware
@@ -322,6 +333,7 @@ champagne	wine
 champion	athlete
 champion	winner
 change	number
+channel	landform
 chapter	board-of-directors
 character-data-type	data-type
 character-encoding	data-type
@@ -329,6 +341,7 @@ character-string	data-type
 characteristic	number
 charm	fraction
 charm	number
+charter	contract
 cheese	dairy-product
 chemical-element	chemical
 chest-of-drawers	furniture
@@ -353,7 +366,12 @@ civilian	person
 classroom	room
 client-server-model	computer-science
 client-server-model	software-architecture
+cliff	landform
 cliff	slope
+climate	geography
+climate	meteorology
+climate	research
+climate	science
 clique	graph
 clock	machine
 clothing	artifact
@@ -415,6 +433,7 @@ concurrent-programming	computer-programming
 concurrent-programming	skill
 conditional-statement	control-flow
 conditional-statement	program-statement
+conditional-statement	statement
 configuration-file	computer-file
 configuration-file	data-file
 conflict-free-replicated-data-type	data-structure
@@ -504,6 +523,7 @@ dairy	building
 dairy	occupation
 dairy	organization
 dark-blue	blue
+dash	satellite
 data-block	data-structure
 data-input-device	hardware
 data-input-device	interface
@@ -547,6 +567,7 @@ deputy	specialist
 deputy	worker
 desert	environment
 desert	habitat
+desert	landform
 desk	furniture
 desk	table
 desktop-computer	computer
@@ -563,6 +584,7 @@ detector	tool
 development	growth
 device-driver	software
 diagram	structure
+dialect	programming-language
 diamond	jewel
 diamond	mineral
 dictionary	publication
@@ -615,6 +637,8 @@ distributed-hash-table	associative-array
 distributed-hash-table	data-structure
 distributed-hash-table	hash-table
 divide-and-conquer-algorithm	algorithm
+dividend	payment
+dividend	transaction
 document-oriented-database	database-management-system
 document-oriented-database	nosql
 document-oriented-database	software
@@ -638,8 +662,10 @@ double-ended-queue	queue-data-structure
 double-ended-queue	stack-data-structure
 dough	food
 dough	spread
+down-payment	payment
 down-payment	transaction
 drain	gutter
+draw	landform
 drawing	artifact
 drawing	physical-object
 drill-tool	artifact
@@ -648,6 +674,7 @@ drill-tool	physical-object
 drill-tool	tool
 drink	fluid
 drink	liquid
+drive	hardware
 drum	artifact
 drum	equipment
 drum	musical-instrument
@@ -736,6 +763,7 @@ faceted-search	information-retrieval
 factory	organization
 factory-method-pattern	software-design-pattern
 fan	person
+farm	facility
 farm	workplace
 fashion	culture
 fat	chemical
@@ -776,6 +804,8 @@ flash-memory	hardware
 flesh	tissue
 floating-point-format	data-type
 floating-point-format	primitive-data-type
+floor	contract
+floor	option
 flour	food
 flour	powder
 flower	organism
@@ -786,12 +816,16 @@ fluctuation	number
 foe	acquaintance
 foe	adversary
 foe	person
+fog	cloud
+fog	weather
 folklore	custom
 forest	environment
 forest	habitat
 forum	public-square
 fraction	number
 fracture	injury
+franchise	occupation
+franchise	organization
 frank	culture
 frank	custom
 frank	dish
@@ -820,6 +854,7 @@ fuse-filesystem	software
 fuzzing	software-testing
 fuzzing	test-automation
 gallery	museum
+gap	landform
 garage	building
 garden	workplace
 garlic	vegetable
@@ -843,6 +878,7 @@ ghostwriter	writer
 girlfriend	acquaintance
 girlfriend	friend
 girlfriend	person
+glacier	landform
 glance	mineral
 glass-material	substance
 glove	artifact
@@ -877,6 +913,7 @@ grammar	social-science
 grandfather	ancestor
 grandfather	father
 grandfather	parent
+grant	contract
 graph-algorithm	algorithm
 graph-data-structure	data-structure
 graph-database	database
@@ -933,6 +970,7 @@ helmet	clothing
 helmet	equipment
 helmet	physical-object
 helmet	tool
+hill	landform
 hog	animal
 hog	organism
 hog	physical-object
@@ -1030,6 +1068,7 @@ insect	animal
 insect	invertebrate
 insect	organism
 insect	physical-object
+instance	software-object
 integer-data-type	data-type
 integer-data-type	primitive-data-type
 integrated-development-environment	application
@@ -1128,9 +1167,11 @@ ladder	equipment
 ladder	physical-object
 ladder	stairway
 ladder	tool
+lake	landform
 lamb	animal
 lamb	organism
 lamb	physical-object
+landed-estate	facility
 landed-estate	farm
 landed-estate	workplace
 laptop	computer
@@ -1152,6 +1193,7 @@ lawyer	specialist
 lawyer	worker
 lazy-evaluation	algorithm
 leader	person
+lease	contract
 lecture	presentation
 leftovers	food
 lempel-ziv	data-compression
@@ -1160,6 +1202,7 @@ lexer	compiler
 lexer	software
 lexical-database	database
 library	room
+license	contract
 light-bulb	lamp
 lighter	artifact
 lighter	equipment
@@ -1219,10 +1262,6 @@ lung	organ
 machine-code	programming-language
 macos	operating-system
 macos	software
-magazine	artifact
-magazine	equipment
-magazine	physical-object
-magazine	tool
 magnetic-core-memory	hardware
 magnetic-core-memory	random-access-memory
 maid	servant
@@ -1327,7 +1366,9 @@ minicomputer	machine
 minimum-spanning-tree	graph
 mirror	artifact
 mirror	physical-object
+mist	cloud
 mist	fog
+mist	weather
 mold	fungus
 mold	organism
 mold	physical-object
@@ -1342,7 +1383,8 @@ mosquito	organism
 mosquito	physical-object
 mother	parent
 motherboard	hardware
-motto	authentication
+mountain	landform
+mountain-range	landform
 mouse	animal
 mouse	organism
 mouse	physical-object
@@ -1374,6 +1416,7 @@ name	identifier
 name	information
 namespace	identifier
 namespace	information
+natural-depression	landform
 nausea	symptom
 necktie	artifact
 necktie	clothing
@@ -1431,6 +1474,7 @@ operational-transformation	function
 opinion	point-of-view
 opinion	slant
 opposition	political-party
+option	contract
 orbit	curve
 organism	physical-object
 output-device	hardware
@@ -1463,14 +1507,18 @@ pastel	color
 pasture	environment
 pasture	habitat
 pasture	hayfield
+patch	software
 pattern	decorative-design
 pattern-matching	algorithm
 pattern-matching	conditional-statement
 pattern-matching	control-flow
 pattern-matching	program-statement
+pattern-matching	statement
 paxos	algorithm
+payment	transaction
 pdf	file-format
 peasant	farmer
+pension	service
 people	mammal
 performer	artist
 performer	musician
@@ -1574,7 +1622,6 @@ procedural-programming	computer-programming
 procedural-programming	imperative-programming
 procedural-programming	skill
 procedural-programming	structured-programming
-process	tissue
 process-scheduler	software
 producer	businessman
 producer	worker
@@ -1584,6 +1631,7 @@ professor	scientist
 program	publication
 program-assertion	control-flow
 program-assertion	program-statement
+program-assertion	statement
 program-constant	function
 program-constant	program-variable
 program-interpreter	computer-program
@@ -1675,10 +1723,12 @@ regular-expression	conditional-statement
 regular-expression	control-flow
 regular-expression	pattern-matching
 regular-expression	program-statement
+regular-expression	statement
 relational-database	database
 relational-database-management-system	database-management-system
 relational-database-management-system	software
 relative	person
+relief	algorithm
 religious-service	ceremony
 religious-service	custom
 religious-service	ritual
@@ -1692,10 +1742,6 @@ remedy	therapy
 reporter	person
 reserve	drug
 reserve	medication
-reservoir	artifact
-reservoir	equipment
-reservoir	physical-object
-reservoir	tool
 residential-district	settlement
 restaurant	workplace
 restriction	function
@@ -1722,6 +1768,7 @@ rice	organism
 rice	physical-object
 rice	plant
 rich-text-format	file-format
+ridge	landform
 rifle	gun
 ritual	ceremony
 ritual	custom
@@ -1802,6 +1849,7 @@ self-extracting-archive	software
 seller	businessman
 seller	person
 seller	worker
+selling	transaction
 semantic-versioning	software-versioning
 semantic-web	database
 semantic-web	knowledge-base
@@ -1813,6 +1861,7 @@ servant	worker
 serverless-computing	cloud-computing
 service-oriented-architecture	computer-science
 service-oriented-architecture	software-architecture
+share	contract
 shared-library	computer-file
 shared-library	data-file
 shared-library	software
@@ -1878,6 +1927,7 @@ slide-rule	artifact
 slide-rule	equipment
 slide-rule	physical-object
 slide-rule	tool
+slope	landform
 sludge	fluid
 sludge	waste
 smartphone	computer
@@ -1919,6 +1969,7 @@ software-sandbox	software
 soldier	employee
 soldier	warrior
 soldier	worker
+solid-state-drive	drive
 solid-state-drive	hardware
 solo	musical-composition
 sorrow	worry
@@ -1961,8 +2012,11 @@ sql-injection	security-vulnerability
 sql-injection	software-bug
 stack-data-structure	data-structure
 stage	workplace
+stake	payment
+stake	transaction
 standard-library	software
 standard-library	software-library
+statement	control-flow
 static-program-analysis	algorithm
 static-typing	algorithm
 static-typing	static-program-analysis
@@ -2037,6 +2091,7 @@ symbol	concept
 symbol	sign
 symbolic-link	computer-file
 symbolic-link	data-file
+symbolic-link	reference
 symbolic-link	reference-data-type
 symmetric-key-cryptography	algorithm
 syndrome	disease
@@ -2162,6 +2217,8 @@ tree	organism
 tree	physical-object
 tree	plant
 tree-data-structure	data-structure
+tribute	payment
+tribute	transaction
 triplestore	database
 triplestore	graph-database
 triplestore	software
@@ -2206,6 +2263,7 @@ vacuum	equipment
 vacuum	machine
 vacuum	physical-object
 vacuum	tool
+valley	landform
 valley	natural-depression
 vector-clock	logical-clock
 vegetable-oil	chemical
@@ -2213,6 +2271,7 @@ vegetable-oil	fuel
 vegetarian	person
 vehicle	physical-object
 vein	vessel
+venue	facility
 version-control-branch	data-structure
 vertebrate	animal
 vertebrate	organism
@@ -2239,6 +2298,7 @@ virus	microorganism
 virus	organism
 virus	physical-object
 vitamin	chemical
+volcano	landform
 volcano	mountain
 volition	cognition
 von-neumann-architecture	computer
@@ -2246,6 +2306,8 @@ von-neumann-architecture	machine
 voyage	motion
 ward	room
 wardrobe	furniture
+warrant	contract
+warrant	option
 watch	artifact
 watch	clock
 watch	clothing
@@ -2253,6 +2315,7 @@ watch	equipment
 watch	machine
 watch	physical-object
 watch	tool
+waterfall	landform
 web-api	application-programming-interface
 web-application	software
 web-application	web-site

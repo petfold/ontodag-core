@@ -10,6 +10,7 @@ the pack adopts alone, at top level until the sibling arrives — UPPER.md
 `pack NAME` applies core first.
 """
 import shlex
+import re
 import sys
 from pathlib import Path
 
@@ -42,7 +43,13 @@ for name in PACKS:
     borrowed = sorted(n for n, p in par.items() if not p and n not in core_names)
     mentioned = {x for p in own.values() for x in p}
     borrowed = [n for n in borrowed if n in mentioned]      # a borrowed name nothing hangs from is noise
-    doc = f'''"""The `{name}` pack, version 1: {len(own)} categories, adopted by merge.
+    target = ontodag / "src/ontodag/domain" / f"{name}.py"
+    # VERSION is a hand-bumped fact about the pack's history, not derivable from the
+    # .od: keep whatever the existing module says (1 for a new pack); bump it by hand
+    # when the pack's claims change, since a rename or retraction never propagates by merge.
+    m = re.search(r"^VERSION = (\d+)$", target.read_text(), re.M) if target.exists() else None
+    version = int(m.group(1)) if m else 1
+    doc = f'''"""The `{name}` pack, version {version}: {len(own)} categories, adopted by merge.
 
 GENERATED — do not edit by hand. Built by consensus in the sister repo
 github.com/petfold/ontodag-core (packs/{name}, commit {commit}) from WordNet 3.0
@@ -54,7 +61,7 @@ this pack adopts on its own, filed the moment the sibling is adopted
 (refinement by merge). ontodag-core's docs/UPPER.md §8 is the record.
 """
 
-VERSION = 1
+VERSION = {version}
 
 BORROWED = {tuple(borrowed)!r}
 
@@ -63,7 +70,7 @@ PACK = (
 '''
     body = "".join(f"    ({n!r}, {own[n]!r}),\n" for n in sorted(own))
     body += "".join(f"    ({n!r}, ()),\n" for n in borrowed)
-    (ontodag / "src/ontodag/domain" / f"{name}.py").write_text(doc + body + ")\n")
+    target.write_text(doc + body + ")\n")
     print(f"{name:12} {len(own):5} categories, {len(borrowed)} borrowed: {' '.join(borrowed)}")
 init = ontodag / "src/ontodag/domain/__init__.py"
 if not init.exists():

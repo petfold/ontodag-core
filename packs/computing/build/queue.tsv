@@ -70,6 +70,8 @@ single	assembler	measure	only sumo
 single	assembler	routine	only sumo
 single	assembler	software	only wordnet
 single	assembly-language	line-of-text	only sumo
+single	assertion	control-flow	only wikidata
+single	assertion	program-statement	only wikidata
 single	asterisk	character-set	only sumo
 single	asynchronous-operation	accomplishment	only sumo
 single	asynchronous-operation	act	only sumo
@@ -398,6 +400,7 @@ single	concurrent-operation	process	only wordnet
 single	concurrent-operation	volition	only sumo
 single	concurrent-programming	skill	only wikidata
 single	conditional-statement	control-flow	only wikidata
+single	conditional-statement	statement	only wikidata
 single	configuration-file	dataset	only yago
 single	context-free-grammar	information	only opencyc
 single	contingency-procedure	code	only wordnet
@@ -554,6 +557,7 @@ single	diagnostic-program	code	only wordnet
 single	diagnostic-program	computer-program	only wordnet
 single	diagnostic-program	information	only wordnet
 single	diagnostic-program	software	only wordnet
+single	dialect	programming-language	only wikidata
 single	dialog-box	artifact	only wordnet
 single	dialog-box	device	only wordnet
 single	dialog-box	information	only sumo
@@ -968,6 +972,7 @@ single	input-routine	measure	only sumo
 single	input-routine	routine	only sumo
 single	input-routine	software	only wordnet
 single	input-routine	subroutine	only wordnet
+single	instance	software-object	only wikidata
 single	instruction-execution	accomplishment	only sumo
 single	instruction-execution	act	only sumo
 single	instruction-execution	activity	only sumo
@@ -1183,7 +1188,6 @@ single	master-file	data-file	only wordnet
 single	master-file	line-of-text	only sumo
 single	master-file	physical-object	only sumo
 single	master-file	text	only sumo
-single	matrix	data-structure	only wikidata
 single	matrix-addition	matrix-operation	only claude
 single	matrix-inversion	matrix-operation	only claude
 single	matrix-multiplication	matrix-operation	only claude
@@ -1406,6 +1410,7 @@ single	passphrase	data-type	only wikidata
 single	password	data-type	only wikidata
 single	pattern-matching	control-flow	only wikidata
 single	pattern-matching	program-statement	only wikidata
+single	pattern-matching	statement	only wikidata
 single	pdf	information	only opencyc
 single	pdf	stream	only opencyc
 single	period	character-set	only sumo
@@ -1456,6 +1461,7 @@ single	procedural-programming	computer-programming	only wikidata
 single	procedural-programming	skill	only wikidata
 single	processor-register	physical-object	only wordnet
 single	program-assertion	control-flow	only wikidata
+single	program-assertion	statement	only wikidata
 single	program-expression	information	only opencyc
 single	program-interpreter	information	only wordnet
 single	program-interpreter	measure	only sumo
@@ -1566,11 +1572,13 @@ single	regular-expression	conditional-statement	only wikidata
 single	regular-expression	control-flow	only wikidata
 single	regular-expression	information	only opencyc
 single	regular-expression	program-statement	only wikidata
+single	regular-expression	statement	only wikidata
 single	relational-database	indication	only sumo
 single	relational-database	physical-object	only sumo
 single	relational-database-management-system	computer-program	only sumo
 single	relational-database-management-system	measure	only sumo
 single	relational-database-management-system	routine	only sumo
+single	relief	algorithm	only wikidata
 single	relocatable-program	information	only wordnet
 single	relocatable-program	measure	only sumo
 single	relocatable-program	routine	only sumo
@@ -1735,6 +1743,7 @@ single	software-upgrade	computer-program	only sumo
 single	software-upgrade	information	only wordnet
 single	software-upgrade	measure	only sumo
 single	software-upgrade	routine	only sumo
+single	solid-state-drive	drive	only wikidata
 single	sort-operation	accomplishment	only sumo
 single	sort-operation	act	only sumo
 single	sort-operation	activity	only sumo
@@ -1774,6 +1783,7 @@ single	spyware	software-object	only opencyc
 single	sql-injection	software-bug	only wikidata
 single	stack-data-structure	physical-object	only wordnet
 single	standard-library	software	only wikidata
+single	statement	control-flow	only wikidata
 single	static-typing	algorithm	only wikidata
 single	storage-drive	machine	only sumo
 single	storage-drive	machinery	only sumo
@@ -1819,6 +1829,7 @@ single	supervisory-software	information	only wordnet
 single	supervisory-software	measure	only sumo
 single	supervisory-software	routine	only sumo
 single	symbol	character-set	only sumo
+single	symbolic-link	reference	only wikidata
 single	synchronous-operation	accomplishment	only sumo
 single	synchronous-operation	act	only sumo
 single	synchronous-operation	activity	only sumo
@@ -2257,6 +2268,7 @@ unplaced	mannequin		no accepted parent reaches a root
 unplaced	manner-of-speaking		no accepted parent reaches a root
 unplaced	mar		no accepted parent reaches a root
 unplaced	mars		no accepted parent reaches a root
+unplaced	matrix	array-data-structure data-structure	no accepted parent reaches a root
 unplaced	maximum		no accepted parent reaches a root
 unplaced	menace		no accepted parent reaches a root
 unplaced	middle		no accepted parent reaches a root

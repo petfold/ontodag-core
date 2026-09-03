@@ -495,6 +495,41 @@ nebula`, `black hole ⊑ region`. Cosmology enters as concepts, never as
 values: no age of the universe in years, no Hubble constant — the
 UNITS.md §12 rule again. One reading only.
 
+**The second reading of the six one-pass packs (2026-09-03, evening).**
+Every accepted edge with exactly one source witness in medicine, AI,
+economics, computing, geography and space — 3,649 edges, listed with both
+glosses by the new `tools/second_reading.py` — read against the glosses, the
+same pass the sciences had in the morning. 108 rejected and re-ruled (3.0%,
+the morning's rate again): medicine 11 of 895, AI 16 of 382, economics 19 of
+844, computing 41 of 704, geography 19 of 663, space 2 of 161. What the
+rejections have in common is worth more than the list. *WordNet's chains
+misfile by hypernym*: `antibiotic ⊑ antibacterial` drags the antifungals
+(amphotericin, nystatin) and the anticancer antibiotics (doxorubicin,
+mitomycin) under a drug class that kills bacteria; the accounting *methods*
+(`accrual-basis`, `cash-basis`, `pooling-of-interest`) sit under
+`transaction-record` because WordNet's `account` chain does; `cove` is the
+cave sense (dropped), `sand-bar` and `sandbar` are two synsets for one thing
+(one dropped). *Wikidata files by loose association*: the search algorithms
+under `information retrieval`, input and output *devices* under `user
+interface`, statements and subroutines under `control flow`, `cirrocumulus
+⊑ cumulus`, zoonoses (anthrax, toxoplasmosis) under `animal disease`, a
+`motto` under `authentication` (dropped). *Sense mismatches show in the
+gloss column*: economics' `stock` is WordNet's merchandise-on-hand while
+Wikidata's is shares (alignment cleared); space's `ocean-swell` had
+WordNet's rounded-elevation sense. Two edges take a side in a live question
+and go: `convertible-bond ⊑ derivative`, `race-condition ⊑ security-
+vulnerability`. **Core change:** `exoplanet ⊑ planet` exposed that core's
+`planet` was WordNet's *solar-system* sense (09394007, "any of the nine
+large celestial bodies"); it is now the generic body orbiting a star
+(09394646, override), space's `planetary-body` collapses into it, and the
+freed synset enters core as **`major-planet ⊑ planet`** (WordNet's own
+second lemma; ruling — WordNet files both senses directly under celestial
+body), which `inferior-`, `superior-`, `jovian-` and `outer-planet` now
+hang from. Core grows by one concept; **v5**. Rulings I make now live in
+`align/claude-ruling.tsv` at the core level too (first entry: this one).
+Every pack has now had two readings; the residual is what a bounty
+measures (factbond INTEGRATION.md §11).
+
 **Still doubtful, left for Peter** (kept as they stand, WordNet's readings):
 iron products under the element (`cast-iron`, `pig-iron`, `wrought-iron ⊑
 iron`; likewise `green-gold ⊑ gold`, `calcium-ion ⊑ calcium`); gaseous

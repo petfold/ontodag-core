@@ -198,6 +198,8 @@ assembly-language	line-of-text	single	sumo
 assembly-language	phenomenon	single	sumo	
 assembly-language	programming-language	accepted	claude claude-ruling wikidata wordnet	
 assembly-language	universe	single	sumo	
+assertion	control-flow	single	wikidata	
+assertion	program-statement	single	wikidata	
 associative-array	abstract-data-type	accepted	claude-ruling	
 associative-array	data-structure	accepted	claude wikidata	
 asterisk	character-set	single	sumo	
@@ -286,7 +288,7 @@ background-processing	procedure	single	sumo
 background-processing	process	single	wordnet	
 background-processing	volition	single	sumo	
 backtracking-search	algorithm	accepted	claude wikidata	
-backtracking-search	information-retrieval	accepted	claude wikidata	
+backtracking-search	information-retrieval	dissented	wikidata	
 backtracking-search	search-algorithm	accepted	claude-ruling	
 backup-file	artifact	single	sumo	
 backup-file	computer-file	accepted	claude wordnet	
@@ -449,7 +451,7 @@ bracket	character-set	single	sumo
 branch-and-bound	algorithm	accepted	claude-ruling	
 breadth-first-search	algorithm	accepted	claude wikidata	
 breadth-first-search	graph-algorithm	accepted	claude-ruling	
-breadth-first-search	information-retrieval	accepted	claude wikidata	
+breadth-first-search	information-retrieval	dissented	wikidata	
 briefcase-computer	artifact	accepted	sumo wordnet	
 briefcase-computer	computer	single	wordnet	
 briefcase-computer	device	accepted	sumo wordnet	
@@ -598,7 +600,7 @@ character	character-set	single	sumo
 character-data-type	data-type	accepted	claude wikidata	
 character-data-type	primitive-data-type	accepted	claude-ruling	
 character-encoding	code	accepted	claude-ruling	
-character-encoding	data-type	accepted	claude wikidata	
+character-encoding	data-type	dissented	wikidata	
 character-set	information	accepted	sumo wordnet	
 character-set	list	accepted	claude wordnet	
 character-set	phenomenon	single	sumo	
@@ -644,8 +646,8 @@ cobol	line-of-text	single	sumo
 cobol	phenomenon	single	sumo	
 cobol	programming-language	accepted	claude wordnet	
 cobol	universe	single	sumo	
-code	algorithm	accepted	claude wikidata	
-code	codec	accepted	claude wikidata	
+code	algorithm	dissented	wikidata	
+code	codec	dissented	wikidata	
 code-coverage	measure	accepted	claude-ruling	
 code-refactoring	software-development-practice	accepted	claude-ruling	
 code-review	software-development-practice	accepted	claude-ruling	
@@ -889,6 +891,7 @@ concurrent-programming	programming-paradigm	accepted	claude-ruling
 concurrent-programming	skill	single	wikidata	
 conditional-statement	control-flow	single	wikidata	
 conditional-statement	program-statement	accepted	claude-ruling wikidata	
+conditional-statement	statement	single	wikidata	
 configuration-file	computer-file	accepted	claude-ruling wikidata	
 configuration-file	data-file	accepted	claude wikidata	
 configuration-file	dataset	single	yago	
@@ -955,7 +958,8 @@ cryptographic-hash-function	function	single	wikidata
 cryptographic-hash-function	hash-function	accepted	claude-ruling wikidata	
 cryptography	computer-science	accepted	claude-ruling	
 csv	data-serialization-format	accepted	claude-ruling	
-csv	data-type	accepted	claude wikidata	
+csv	data-type	dissented	wikidata	
+csv	file-format	accepted	claude-ruling	
 cyc	knowledge-base	accepted	claude-ruling	
 cyclic-redundancy-check	algorithm	single	wikidata	
 cyclic-redundancy-check	checksum	accepted	claude-ruling	
@@ -1017,9 +1021,10 @@ data-input-device	hardware	single	wikidata
 data-input-device	interface	dissented	wikidata	
 data-input-device	peripheral	accepted	claude-ruling wikidata wordnet	
 data-input-device	physical-object	single	wordnet	
-data-input-device	user-interface	accepted	claude wikidata	
+data-input-device	user-interface	dissented	wikidata	
 data-integrity	property	accepted	claude-ruling	
 data-lake	data-warehouse	accepted	claude-ruling wikidata	
+data-lake	electronic-database	accepted	claude-ruling	
 data-lineage	information	accepted	claude-ruling	
 data-lineage	metadata	accepted	claude-ruling	
 data-link-layer	concept	accepted	claude-ruling	
@@ -1116,6 +1121,7 @@ database-table	data-structure	accepted	claude-ruling
 database-table	information	single	opencyc	
 database-transaction	data-processing	accepted	claude-ruling	
 database-trigger	subroutine	accepted	claude-ruling	
+database-view	data-structure	accepted	claude-ruling	
 database-view	database-table	accepted	claude-ruling wikidata	
 datagram	network-packet	accepted	claude-ruling	
 datalog	logic-programming	accepted	claude-ruling	
@@ -1197,7 +1203,7 @@ dependency-injection	software-architecture	single	wikidata
 dependency-injection	software-design-pattern	accepted	claude-ruling	
 depth-first-search	algorithm	accepted	claude wikidata	
 depth-first-search	graph-algorithm	accepted	claude-ruling	
-depth-first-search	information-retrieval	accepted	claude wikidata	
+depth-first-search	information-retrieval	dissented	wikidata	
 design-by-contract	software-development-methodology	accepted	claude-ruling	
 desktop-computer	artifact	accepted	opencyc sumo wordnet	
 desktop-computer	computer	accepted	opencyc wikidata wordnet	
@@ -1244,6 +1250,7 @@ diagnostic-program	computer-program	single	wordnet
 diagnostic-program	information	single	wordnet	
 diagnostic-program	software	single	wordnet	
 diagnostic-program	utility-program	accepted	claude wordnet	
+dialect	programming-language	single	wikidata	
 dialog-box	artifact	single	wordnet	
 dialog-box	device	single	wordnet	
 dialog-box	gui-window	accepted	claude-ruling wordnet	
@@ -1289,7 +1296,7 @@ digital-library	web-site	single	wikidata
 digital-object-identifier	persistent-identifier	accepted	claude-ruling	
 digital-preservation	practice	accepted	claude-ruling	
 digital-signal	signal	accepted	claude-ruling	
-digital-signature	identifier	accepted	claude wikidata	
+digital-signature	identifier	dissented	wikidata	
 digital-signature	information	accepted	claude-ruling wikidata	
 dijkstra-algorithm	graph-algorithm	accepted	claude-ruling	
 dip-switch	artifact	accepted	sumo wordnet	
@@ -1516,10 +1523,11 @@ dynamic-link-library	shared-library	accepted	claude-ruling wikidata
 dynamic-link-library	software	single	wikidata	
 dynamic-link-library	software-library	single	wikidata	
 dynamic-programming	method	accepted	claude-ruling	
-dynamic-programming	programming-paradigm	accepted	claude wikidata	
+dynamic-programming	programming-paradigm	dissented	wikidata	
 dynamic-typing	type-system	accepted	claude-ruling wikidata	
-eager-evaluation	algorithm	accepted	claude wikidata	
+eager-evaluation	algorithm	dissented	wikidata	
 eager-evaluation	data-processing-technique	accepted	claude-ruling	
+eager-evaluation	method	accepted	claude-ruling	
 editor-program	application	accepted	claude wordnet	
 editor-program	code	accepted	sumo wordnet	
 editor-program	computer-program	accepted	sumo wordnet	
@@ -2187,6 +2195,7 @@ input-routine	software	single	wordnet
 input-routine	subroutine	single	wordnet	
 input-routine	utility-routine	accepted	claude wordnet	
 insertion-sort	sorting-algorithm	accepted	claude-ruling	
+instance	software-object	single	wikidata	
 instruction-execution	accomplishment	single	sumo	
 instruction-execution	act	single	sumo	
 instruction-execution	activity	single	sumo	
@@ -2354,8 +2363,9 @@ latency	network-performance-measure	accepted	claude-ruling
 latency	quantity	accepted	claude-ruling	
 latex	markup-language	accepted	claude-ruling wikidata	
 laugh-track	audio	single	claude	
-lazy-evaluation	algorithm	accepted	claude wikidata	
+lazy-evaluation	algorithm	dissented	wikidata	
 lazy-evaluation	data-processing-technique	accepted	claude-ruling	
+lazy-evaluation	method	accepted	claude-ruling	
 ldap	application-layer-protocol	accepted	claude-ruling	
 leader-election	data-processing	accepted	claude-ruling	
 legacy-system	computer-system	accepted	claude-ruling	
@@ -2408,7 +2418,8 @@ line-feed	printing-operation	accepted	claude wordnet
 line-feed	procedure	single	sumo	
 line-feed	process	single	wordnet	
 line-feed	volition	single	sumo	
-linear-search	information-retrieval	accepted	claude wikidata	
+linear-search	algorithm	accepted	claude-ruling	
+linear-search	information-retrieval	dissented	wikidata	
 linear-search	search-algorithm	accepted	claude-ruling	
 linkage-editor	application	single	wordnet	
 linkage-editor	code	accepted	sumo wordnet	
@@ -2684,7 +2695,7 @@ master-file	text	single	sumo
 master-file	universe	single	sumo	
 masthead	list	single	claude	
 matlab	programming-language	accepted	claude-ruling	
-matrix	array-data-structure	accepted	claude wikidata	
+matrix	array-data-structure	dissented	wikidata	
 matrix	data-structure	single	wikidata	
 matrix-addition	matrix-operation	single	claude	
 matrix-inversion	matrix-operation	single	claude	
@@ -2738,7 +2749,7 @@ memory-dump	universe	single	sumo
 memory-leak	software-bug	accepted	claude-ruling	
 memory-management	data-processing-technique	accepted	claude-ruling	
 memory-paging	memory-management	accepted	claude-ruling	
-memory-paging	virtual-memory	accepted	claude wikidata	
+memory-paging	virtual-memory	dissented	wikidata	
 menu	bill.communication	single	claude	
 mercurial	version-control-software	accepted	claude-ruling	
 merge-sort	algorithm	single	wikidata	
@@ -2848,7 +2859,6 @@ monolithic-application	computer-science	single	wikidata
 monolithic-application	software-architecture	accepted	claude-ruling wikidata	
 moores-law	law	accepted	claude-ruling	
 motherboard	hardware	accepted	claude-ruling wikidata	
-motto	authentication	accepted	claude wikidata	
 mozilla-foundation	nonprofit-organization	accepted	claude-ruling	
 mp3	audio-coding-format	accepted	claude-ruling	
 mp3	audio-file-format	accepted	claude-ruling	
@@ -2915,6 +2925,7 @@ n-triples	rdf-serialization-format	accepted	claude-ruling
 name	identifier	accepted	claude wikidata	
 namespace	identifier	accepted	claude-ruling wikidata	
 namespace	information	single	wikidata	
+namespace	set	accepted	claude-ruling	
 natural-language-processor	application	accepted	claude wordnet	
 natural-language-processor	code	accepted	sumo wordnet	
 natural-language-processor	computer-program	accepted	sumo wordnet	
@@ -3126,7 +3137,7 @@ output-device	hardware	single	wikidata
 output-device	interface	dissented	wikidata	
 output-device	peripheral	accepted	claude-ruling wikidata wordnet	
 output-device	physical-object	single	wordnet	
-output-device	user-interface	accepted	claude wikidata	
+output-device	user-interface	dissented	wikidata	
 output-file	artifact	single	sumo	
 output-file	computer-file	accepted	claude wordnet	
 output-file	contract-condition	single	sumo	
@@ -3161,7 +3172,8 @@ package-manager	software	accepted	claude wikidata
 package-manager	utility-program	accepted	claude-ruling	
 pagerank	algorithm	accepted	claude-ruling	
 parallel-computing	computer-programming	single	wikidata	
-parallel-computing	concurrent-programming	accepted	claude wikidata	
+parallel-computing	computer-science	accepted	claude-ruling	
+parallel-computing	concurrent-programming	dissented	wikidata	
 parallel-computing	data-processing	accepted	claude-ruling	
 parallel-computing	skill	single	wikidata	
 parallel-operation	accomplishment	single	sumo	
@@ -3186,7 +3198,7 @@ parity-bit	code	accepted	claude-ruling
 parity-bit	measure	single	sumo	
 parity-bit	routine	single	sumo	
 parity-bit	signified	single	sumo	
-parser	algorithm	accepted	claude wikidata	
+parser	algorithm	dissented	wikidata	
 parser	code	accepted	sumo wordnet	
 parser	computer-program	accepted	claude-ruling sumo wordnet	
 parser	information	single	wordnet	
@@ -3226,10 +3238,11 @@ passphrase	password	accepted	claude-ruling wikidata
 password	character-string	accepted	claude wikidata	
 password	data-type	single	wikidata	
 pattern-matching	algorithm	accepted	claude wikidata	
-pattern-matching	conditional-statement	accepted	claude wikidata	
+pattern-matching	conditional-statement	dissented	wikidata	
 pattern-matching	control-flow	single	wikidata	
 pattern-matching	data-processing-technique	accepted	claude-ruling	
 pattern-matching	program-statement	single	wikidata	
+pattern-matching	statement	single	wikidata	
 paxos	algorithm	accepted	claude wikidata	
 paxos	consensus-algorithm	accepted	claude-ruling	
 pci-express	computer-bus	accepted	claude-ruling	
@@ -3377,6 +3390,8 @@ processor-register	physical-object	single	wordnet
 processor-register	universe	single	sumo	
 program-assertion	control-flow	single	wikidata	
 program-assertion	program-statement	accepted	claude-ruling wikidata	
+program-assertion	statement	single	wikidata	
+program-constant	code	accepted	claude-ruling	
 program-constant	function	single	wikidata	
 program-constant	program-variable	accepted	claude-ruling wikidata	
 program-expression	code	accepted	claude-ruling	
@@ -3413,7 +3428,7 @@ program-loop	signified	single	sumo
 program-loop	software	single	wordnet	
 program-module	software	accepted	claude-ruling	
 program-statement	code	accepted	claude-ruling	
-program-statement	control-flow	accepted	claude wikidata	
+program-statement	control-flow	dissented	wikidata	
 program-variable	concept	accepted	claude-ruling	
 program-variable	information	single	opencyc	
 program-variable	program-expression	single	opencyc	
@@ -3488,7 +3503,7 @@ quicksort	algorithm	single	wikidata
 quicksort	sorting-algorithm	accepted	claude-ruling wikidata	
 quicktime-file-format	multimedia-container-format	accepted	claude-ruling	
 r-language	programming-language	accepted	claude-ruling	
-race-condition	security-vulnerability	accepted	claude wikidata	
+race-condition	security-vulnerability	dissented	wikidata	
 race-condition	software-bug	accepted	claude-ruling wikidata	
 radio	telecommunication	accepted	claude wikidata	
 radiocommunication	broadcasting	single	claude	
@@ -3604,9 +3619,9 @@ real-time-processing	process	single	wordnet
 real-time-processing	volition	single	sumo	
 reception	broadcasting	single	claude	
 recommender-system	software	accepted	claude-ruling	
-record-data-type	data-chunk	accepted	claude wikidata	
+record-data-type	data-chunk	dissented	wikidata	
 record-data-type	data-type	accepted	claude-ruling	
-record-data-type	program-variable	accepted	claude wikidata	
+record-data-type	program-variable	dissented	wikidata	
 recursion	act	single	wordnet	
 recursion	activity	single	wordnet	
 recursion	event	single	wordnet	
@@ -3650,6 +3665,7 @@ regular-expression	information	single	opencyc
 regular-expression	pattern	accepted	claude-ruling	
 regular-expression	pattern-matching	dissented	wikidata	
 regular-expression	program-statement	single	wikidata	
+regular-expression	statement	single	wikidata	
 relational-database	database	accepted	claude wikidata	
 relational-database	electronic-database	accepted	claude-ruling wordnet	
 relational-database	indication	single	sumo	
@@ -3669,6 +3685,7 @@ relational-database-management-system	software	accepted	wikidata wordnet
 relational-join	data-processing	accepted	claude-ruling	
 relational-model	data-model	accepted	claude-ruling	
 relaxation	mathematical-process	single	claude	
+relief	algorithm	single	wikidata	
 relocatable-program	code	accepted	sumo wordnet	
 relocatable-program	computer-program	accepted	sumo wordnet	
 relocatable-program	information	single	wordnet	
@@ -3826,7 +3843,7 @@ semantic-reasoner	software	accepted	claude-ruling
 semantic-versioning	software-versioning	accepted	claude-ruling wikidata	
 semantic-web	database	single	wikidata	
 semantic-web	knowledge-base	single	wikidata	
-semantic-web	knowledge-graph	accepted	claude wikidata	
+semantic-web	knowledge-graph	dissented	wikidata	
 semantic-web	world-wide-web	accepted	claude-ruling wikidata	
 semaphore-primitive	data-type	accepted	claude wikidata	
 semaphore-primitive	software-object	accepted	claude-ruling	
@@ -3925,7 +3942,7 @@ simple-mail-transfer-protocol	email-protocol	accepted	claude-ruling
 single-board-computer	computer	accepted	claude-ruling wikidata	
 single-board-computer	hardware	single	wikidata	
 single-board-computer	machine	single	wikidata	
-single-board-computer	motherboard	accepted	claude wikidata	
+single-board-computer	motherboard	dissented	wikidata	
 single-board-computer	product	single	yago	
 single-page-application	software	single	wikidata	
 single-page-application	web-application	accepted	claude-ruling wikidata	
@@ -3968,8 +3985,9 @@ snapshot-program	software	single	wordnet
 snapshot-program	trace-program	accepted	claude wordnet	
 snapshot-program	utility-program	single	wordnet	
 soap	communications-protocol	accepted	claude-ruling	
+social-engineering-attack	act	accepted	claude-ruling	
 social-engineering-attack	cyberattack	accepted	claude-ruling	
-social-engineering-attack	security-vulnerability	accepted	claude wikidata	
+social-engineering-attack	security-vulnerability	dissented	wikidata	
 social-engineering-attack	software-bug	single	wikidata	
 soft-copy	artifact	single	sumo	
 soft-copy	contract-condition	single	sumo	
@@ -4063,6 +4081,7 @@ software-upgrade	routine	single	sumo
 software-upgrade	signified	single	sumo	
 software-upgrade	software	accepted	claude wordnet	
 software-versioning	practice	accepted	claude-ruling	
+solid-state-drive	drive	single	wikidata	
 solid-state-drive	hardware	accepted	claude wikidata	
 solid-state-drive	non-volatile-storage	accepted	claude-ruling	
 solidity	programming-language	accepted	claude-ruling	
@@ -4152,10 +4171,11 @@ standard-library	software	single	wikidata
 standard-library	software-library	accepted	claude-ruling wikidata	
 standing	list	single	claude	
 state-machine-replication	data-processing-technique	accepted	claude-ruling	
-static-program-analysis	algorithm	accepted	claude wikidata	
+statement	control-flow	single	wikidata	
+static-program-analysis	algorithm	dissented	wikidata	
 static-program-analysis	data-processing	accepted	claude-ruling	
 static-typing	algorithm	single	wikidata	
-static-typing	static-program-analysis	accepted	claude wikidata	
+static-typing	static-program-analysis	dissented	wikidata	
 static-typing	type-system	accepted	claude-ruling wikidata	
 storage-capacity	quantity	accepted	claude-ruling sumo	
 storage-drive	artifact	accepted	sumo wordnet	
@@ -4183,7 +4203,7 @@ stratified-language	programming-language	accepted	claude wordnet
 stratified-language	universe	single	sumo	
 stream-processing	data-processing	accepted	claude-ruling	
 string-searching-algorithm	algorithm	accepted	claude wikidata	
-string-searching-algorithm	information-retrieval	accepted	claude wikidata	
+string-searching-algorithm	information-retrieval	dissented	wikidata	
 string-searching-algorithm	string-algorithm	accepted	claude-ruling	
 strong-consistency	property	accepted	claude-ruling	
 strong-typing	type-system	accepted	claude-ruling wikidata	
@@ -4201,7 +4221,7 @@ subdirectory	list	single	wordnet
 subnetwork	computer-network	accepted	claude-ruling	
 subroutine	code	accepted	sumo wordnet	
 subroutine	computer-program	single	sumo	
-subroutine	control-flow	accepted	claude wikidata	
+subroutine	control-flow	dissented	wikidata	
 subroutine	information	single	wordnet	
 subroutine	measure	single	sumo	
 subroutine	routine	single	sumo	
@@ -4264,8 +4284,9 @@ syllable	character-set	single	sumo
 symbol	character-set	single	sumo	
 symbolic-link	computer-file	accepted	claude-ruling wikidata	
 symbolic-link	data-file	accepted	claude wikidata	
-symbolic-link	reference-data-type	accepted	claude wikidata	
-symmetric-key-cryptography	algorithm	accepted	claude wikidata	
+symbolic-link	reference	single	wikidata	
+symbolic-link	reference-data-type	dissented	wikidata	
+symmetric-key-cryptography	algorithm	dissented	wikidata	
 symmetric-key-cryptography	cryptography	accepted	claude-ruling	
 synchronous-operation	accomplishment	single	sumo	
 synchronous-operation	act	single	sumo	
@@ -4411,7 +4432,7 @@ text-editor	software-object	single	opencyc
 text-editor	utility-program	single	opencyc	
 text-file	computer-file	accepted	claude claude-ruling wikidata wordnet	
 text-file	data-file	accepted	wikidata wordnet	
-text-file	file-format	accepted	claude wikidata	
+text-file	file-format	dissented	wikidata	
 text-file	indication	single	wordnet	
 text-file	information	single	wordnet	
 text-file	plain-text	dissented	wikidata	
@@ -4891,7 +4912,7 @@ xmpp	messaging-protocol	accepted	claude-ruling
 yago	knowledge-base	accepted	claude-ruling	
 yaml	data-serialization-format	accepted	claude-ruling	
 zero-day-exploit	security-exploit	accepted	claude-ruling wikidata	
-zero-day-exploit	security-vulnerability	accepted	claude wikidata	
+zero-day-exploit	security-vulnerability	dissented	wikidata	
 zero-day-exploit	software	single	wikidata	
 zero-day-exploit	software-bug	single	wikidata	
 zfs	file-system	accepted	claude-ruling	

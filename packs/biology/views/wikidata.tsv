@@ -29,6 +29,7 @@ alcohol	liquid
 alliance	organization
 allowance	gift
 allowance	money
+allowance	payment
 allowance	transaction
 altar	furniture
 altar	table
@@ -56,6 +57,8 @@ artifact	physical-object
 artist	person
 ash	chemical
 assembly-hall	room
+assertion	statement
+assignment	contract
 assimilation	chemical-reaction
 assistant	research-worker
 assistant	scientist
@@ -79,6 +82,7 @@ baby	childhood
 baby	organism
 baby	physical-object
 backlog	hill
+backlog	landform
 bacon	flesh
 bacon	food
 bacon	meat
@@ -145,9 +149,11 @@ betrothal	promise
 bicycle	artifact
 bicycle	equipment
 bicycle	physical-object
+bid	price
 biennial-plant	organism
 biennial-plant	physical-object
 biennial-plant	plant
+bill	cash
 biologist	research-worker
 biologist	scientist
 birthday	anniversary
@@ -202,6 +208,8 @@ bride	animal
 bride	organism
 bride	physical-object
 bride	woman
+brink	hill
+brink	landform
 bubble	physical-object
 bucket	artifact
 bucket	equipment
@@ -269,7 +277,6 @@ case	equipment
 case	furniture
 case	physical-object
 case	tool
-cast	organic-process
 casualty	person
 casualty	victim
 cat	pet
@@ -277,6 +284,7 @@ catalog	collection
 catalog	group
 catalog	publication
 cathedral	church
+cave	landform
 cellular-telephone	phone
 celluloid	equipment
 chair	furniture
@@ -286,10 +294,12 @@ champagne	wine
 champion	athlete
 champion	winner
 change	number
+channel	landform
 chapter	board-of-directors
 characteristic	number
 charm	fraction
 charm	number
+charter	contract
 cheese	dairy-product
 chemical-element	chemical
 chest-of-drawers	furniture
@@ -313,7 +323,12 @@ citizen	organism
 citizen	physical-object
 civilian	person
 classroom	room
+cliff	landform
 cliff	slope
+climate	geography
+climate	meteorology
+climate	research
+climate	science
 clique	graph
 clique	subclass
 clock	machine
@@ -347,6 +362,7 @@ computer	machine
 computer-memory	hardware
 computer-mouse	hardware
 computer-mouse	interface
+computer-virus	software
 computer-worm	software
 comrade	acquaintance
 comrade	person
@@ -423,6 +439,7 @@ dairy	building
 dairy	occupation
 dairy	organization
 dark-blue	blue
+dash	satellite
 date	botanical-fruit
 date	food
 date	fruit
@@ -445,6 +462,7 @@ deputy	worker
 desert	ecosystem
 desert	environment
 desert	habitat
+desert	landform
 desk	furniture
 desk	table
 dessert	dish
@@ -474,6 +492,8 @@ disease	organic-process
 dish	food
 disposition	text
 dissertation	research
+dividend	payment
+dividend	transaction
 documentation	information
 doll	artifact
 doll	physical-object
@@ -482,8 +502,10 @@ door	obstacle
 door	physical-object
 dough	food
 dough	spread
+down-payment	payment
 down-payment	transaction
 drain	gutter
+draw	landform
 drawing	artifact
 drawing	physical-object
 dream	organic-process
@@ -493,6 +515,7 @@ drill-tool	physical-object
 drill-tool	tool
 drink	fluid
 drink	liquid
+drive	hardware
 drum	artifact
 drum	equipment
 drum	musical-instrument
@@ -562,6 +585,7 @@ extraterrestrial-being	organism
 extraterrestrial-being	physical-object
 factory	organization
 fan	person
+farm	facility
 farm	workplace
 fashion	culture
 fat	chemical
@@ -578,7 +602,6 @@ fibroblast	cell
 fig	food
 file-cabinet	furniture
 file-cabinet	wardrobe
-filter	subclass
 fireman	worker
 fish-meat	food
 flag	concept
@@ -587,6 +610,8 @@ flag	symbol
 flame	chemical-reaction
 flash	equipment
 flesh	tissue
+floor	contract
+floor	option
 flour	food
 flour	powder
 flower	organism
@@ -597,6 +622,8 @@ fluctuation	number
 foe	acquaintance
 foe	adversary
 foe	person
+fog	cloud
+fog	weather
 folklore	custom
 forest	ecosystem
 forest	environment
@@ -604,6 +631,8 @@ forest	habitat
 forum	public-square
 fraction	number
 fracture	injury
+franchise	occupation
+franchise	organization
 frank	culture
 frank	custom
 frank	dish
@@ -623,6 +652,7 @@ gamete	cell
 gamete	reproductive-cell
 gametocyte	cell
 ganglion-cell	cell
+gap	landform
 garage	building
 garden	workplace
 garlic	vegetable
@@ -645,6 +675,7 @@ ghostwriter	writer
 girlfriend	acquaintance
 girlfriend	friend
 girlfriend	person
+glacier	landform
 glance	mineral
 glass-material	substance
 glove	artifact
@@ -677,6 +708,7 @@ grammar	social-science
 grandfather	ancestor
 grandfather	father
 grandfather	parent
+grant	contract
 granulocyte	blood-cell
 granulocyte	cell
 granulocyte	leukocyte
@@ -726,6 +758,7 @@ helmet	clothing
 helmet	equipment
 helmet	physical-object
 helmet	tool
+hill	landform
 histiocyte	blood-cell
 histiocyte	cell
 histiocyte	leukocyte
@@ -815,7 +848,6 @@ invertebrate	organism
 invertebrate	physical-object
 iron	drug
 iron	medication
-isolation	organic-process
 issue	text
 ivory	tooth
 jacket	artifact
@@ -874,9 +906,11 @@ ladder	equipment
 ladder	physical-object
 ladder	stairway
 ladder	tool
+lake	landform
 lamb	animal
 lamb	organism
 lamb	physical-object
+landed-estate	facility
 landed-estate	farm
 landed-estate	workplace
 laundry	care
@@ -892,12 +926,14 @@ lawyer	professional
 lawyer	specialist
 lawyer	worker
 leader	person
+lease	contract
 lecture	presentation
 leftovers	food
 leukocyte	blood-cell
 leukocyte	cell
 leydig-cell	cell
 library	room
+license	contract
 light-bulb	lamp
 lighter	artifact
 lighter	equipment
@@ -924,10 +960,6 @@ macrophage	blood-cell
 macrophage	cell
 macrophage	leukocyte
 macrophage	phagocyte
-magazine	artifact
-magazine	equipment
-magazine	physical-object
-magazine	tool
 maid	servant
 maid	worker
 mailman	employee
@@ -1008,7 +1040,9 @@ milk	liquid
 mill	machine
 mirror	artifact
 mirror	physical-object
+mist	cloud
 mist	fog
+mist	weather
 mold	fungus
 mold	organism
 mold	physical-object
@@ -1024,6 +1058,8 @@ mosquito	organism
 mosquito	physical-object
 mother	parent
 mother-cell	cell
+mountain	landform
+mountain-range	landform
 mouse	animal
 mouse	organism
 mouse	physical-object
@@ -1051,6 +1087,7 @@ nail	equipment
 nail	physical-object
 nail	tool
 name	information
+natural-depression	landform
 naturalist	research-worker
 naturalist	scientist
 nausea	organic-process
@@ -1100,6 +1137,7 @@ operation	therapy
 opinion	point-of-view
 opinion	slant
 opposition	political-party
+option	contract
 orbit	curve
 organism	physical-object
 osteoclast	blood-cell
@@ -1128,8 +1166,11 @@ pastel	color
 pasture	environment
 pasture	habitat
 pasture	hayfield
+patch	software
 pattern	decorative-design
+payment	transaction
 peasant	farmer
+pension	service
 people	mammal
 perception	organic-process
 perennial-plant	organism
@@ -1233,7 +1274,6 @@ printer	hardware
 prisoner	inhabitant
 prisoner	person
 privacy	secrecy
-process	tissue
 producer	businessman
 producer	worker
 professional	worker
@@ -1298,10 +1338,6 @@ reproduction	organic-process
 reproductive-cell	cell
 reserve	drug
 reserve	medication
-reservoir	artifact
-reservoir	equipment
-reservoir	physical-object
-reservoir	tool
 residential-district	settlement
 restaurant	workplace
 restriction	function
@@ -1328,6 +1364,7 @@ rice	grass
 rice	organism
 rice	physical-object
 rice	plant
+ridge	landform
 rifle	gun
 ritual	ceremony
 ritual	custom
@@ -1388,10 +1425,12 @@ selection	organic-process
 seller	businessman
 seller	person
 seller	worker
+selling	transaction
 serial	text
 sertoli-cell	cell
 servant	worker
 sex-chromosome	chromosome
+share	contract
 shark	fish
 shark	fish-meat
 shark	food
@@ -1441,6 +1480,7 @@ slave	inhabitant
 slave	person
 slave	prisoner
 sleep	organic-process
+slope	landform
 sludge	fluid
 sludge	waste
 smell	organic-process
@@ -1503,6 +1543,8 @@ sport	game
 spray	chemical
 spread	food
 stage	workplace
+stake	payment
+stake	transaction
 statistics	mathematics
 statue	artifact
 statue	physical-object
@@ -1654,6 +1696,8 @@ treasurer	worker
 tree	organism
 tree	physical-object
 tree	plant
+tribute	payment
+tribute	transaction
 trophy	prize
 trouser	artifact
 trouser	clothing
@@ -1680,12 +1724,14 @@ vacuum	equipment
 vacuum	machine
 vacuum	physical-object
 vacuum	tool
+valley	landform
 valley	natural-depression
 vegetable-oil	chemical
 vegetable-oil	fuel
 vegetarian	person
 vehicle	physical-object
 vein	vessel
+venue	facility
 vertebrate	animal
 vertebrate	organism
 vertebrate	physical-object
@@ -1708,12 +1754,15 @@ virus	organism
 virus	physical-object
 visual-accommodation	organic-process
 vitamin	chemical
+volcano	landform
 volcano	mountain
 volition	cognition
 volition	organic-process
 voyage	motion
 ward	room
 wardrobe	furniture
+warrant	contract
+warrant	option
 watch	artifact
 watch	clock
 watch	clothing
@@ -1721,6 +1770,7 @@ watch	equipment
 watch	machine
 watch	physical-object
 watch	tool
+waterfall	landform
 web-site	software
 wedding	ceremony
 weed	organism

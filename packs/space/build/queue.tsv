@@ -33,7 +33,6 @@ single	ascending-node	physical-object	only wordnet
 single	asteroid	natural-object	only wordnet
 single	asteroid	physical-object	only wordnet
 single	asteroid	place	only yago
-single	asteroid	planetary-body	only opencyc
 single	astrobiology	research	only wikidata
 single	astrobiology	science	only wikidata
 single	astrometry	cognition	only wordnet
@@ -133,7 +132,6 @@ single	descending-node	physical-object	only wordnet
 single	diffuse-nebula	process	only wordnet
 single	dwarf-galaxy	celestial-body	only wikidata
 single	dwarf-galaxy	place	only yago
-single	dwarf-planet	planetary-body	only opencyc
 single	earth-observation-satellite	celestial-body	only wikidata
 single	earth-observation-satellite	place	only yago
 single	earth-observation-satellite	spacecraft	only wikidata
@@ -150,6 +148,7 @@ single	equinox	quantity	only sumo
 single	equinox	situation	only opencyc
 single	escape-velocity	vector	only sumo
 single	exoplanet	celestial-body	only wikidata
+single	exoplanet	major-planet	only claude
 single	exoplanet	place	only yago
 single	falcon-9	spacecraft	only wikidata
 single	field-glass	astronomical-telescope	only wordnet
@@ -178,6 +177,7 @@ single	galilean-telescope	instrument	only wordnet
 single	galilean-telescope	optical-telescope	only wordnet
 single	galilean-telescope	physical-object	only wordnet
 single	gas-giant	celestial-body	only wikidata
+single	gas-giant	major-planet	only claude
 single	gas-giant	place	only yago
 single	geostationary-orbit	curve	only wikidata
 single	geostationary-orbit	empty-space	only sumo
@@ -214,14 +214,14 @@ single	hour-angle	place	only wordnet
 single	hour-angle	quantity	only sumo
 single	hour-angle	shape	only wordnet
 single	ice-giant	celestial-body	only wikidata
+single	ice-giant	major-planet	only claude
 single	inferior-planet	celestial-body	only wordnet
 single	inferior-planet	natural-object	only wordnet
 single	inferior-planet	physical-object	only wordnet
-single	inferior-planet	planetary-body	only opencyc
+single	inferior-planet	planet	only opencyc
 single	inferior-planet	terrestrial-planet	only opencyc
 single	inner-planet	celestial-body	only wikidata
 single	inner-planet	planet	only wikidata
-single	inner-planet	planetary-body	only wikidata
 single	intergalactic-space	physical-object	only wordnet
 single	international-space-station	artifact	only opencyc
 single	international-space-station	device	only opencyc
@@ -231,7 +231,7 @@ single	irregular-galaxy	place	only yago
 single	jovian-planet	celestial-body	only wordnet
 single	jovian-planet	natural-object	only wordnet
 single	jovian-planet	physical-object	only wordnet
-single	jovian-planet	planetary-body	only opencyc
+single	jovian-planet	planet	only opencyc
 single	kuiper-belt-object	natural-object	only wordnet
 single	kuiper-belt-object	physical-object	only wordnet
 single	lander	device	only sumo
@@ -277,7 +277,6 @@ single	meteor-swarm	physical-object	only wordnet
 single	meteorite	natural-object	only wordnet
 single	meteorite	physical-object	only wordnet
 single	meteoroid	physical-object	only wordnet
-single	meteoroid	planetary-body	only opencyc
 single	micrometeorite	minor-planet	only wikidata
 single	micrometeorite	natural-object	only wordnet
 single	micrometeorite	physical-object	only wordnet
@@ -348,7 +347,6 @@ single	perigee	physical-object	only wordnet
 single	perihelion	physical-object	only wordnet
 single	perijove	physical-object	only wordnet
 single	periselene	physical-object	only wordnet
-single	planet	planetary-body	only opencyc
 single	planetarium	container	only opencyc
 single	planetarium	development	only sumo
 single	planetarium	device	only opencyc
@@ -356,8 +354,6 @@ single	planetarium	organization	only yago
 single	planetarium	physical-object	only wordnet
 single	planetarium	place	only yago
 single	planetarium	structure	only wordnet
-single	planetary-body	natural-object	only wordnet
-single	planetary-body	physical-object	only wordnet
 single	planetary-moon	celestial-body	only wordnet
 single	planetary-moon	natural-object	only wordnet
 single	planetary-moon	physical-object	only wordnet
@@ -536,6 +532,7 @@ single	supernova-remnant	celestial-body	only wikidata
 single	supernova-remnant	place	only yago
 single	telescope	artifact	only opencyc
 single	telescope	device	only opencyc
+single	terrestrial-planet	major-planet	only wordnet
 single	terrestrial-planet	natural-object	only wordnet
 single	terrestrial-planet	physical-object	only wordnet
 single	terrestrial-planet	place	only yago
@@ -759,7 +756,7 @@ unplaced	minute		no accepted parent reaches a root
 unplaced	mole.attribute		no accepted parent reaches a root
 unplaced	molecule		no accepted parent reaches a root
 unplaced	monarchy		no accepted parent reaches a root
-unplaced	moon	planetary-body	no accepted parent reaches a root
+unplaced	moon		no accepted parent reaches a root
 unplaced	morning		no accepted parent reaches a root
 unplaced	morsel		no accepted parent reaches a root
 unplaced	motivation		no accepted parent reaches a root

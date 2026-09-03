@@ -50,6 +50,7 @@ alcohol	liquid
 alliance	organization
 allowance	gift
 allowance	money
+allowance	payment
 allowance	transaction
 altar	furniture
 altar	table
@@ -92,6 +93,8 @@ artificial-immune-system	rule-based-machine-learning
 artist	person
 ash	chemical
 assembly-hall	room
+assertion	statement
+assignment	contract
 assimilation	chemical-reaction
 assistant	research-worker
 assistant	scientist
@@ -169,6 +172,7 @@ baby	childhood
 baby	organism
 baby	physical-object
 backlog	hill
+backlog	landform
 backpropagation-through-time	backpropagation
 backtracking-search	algorithm
 backtracking-search	information-retrieval
@@ -247,10 +251,12 @@ biclustering	data-mining
 bicycle	artifact
 bicycle	equipment
 bicycle	physical-object
+bid	price
 bidirectional-associative-memory	artificial-neural-network
 bidirectional-associative-memory	recurrent-neural-network
 bidirectional-recurrent-neural-network	artificial-neural-network
 bidirectional-recurrent-neural-network	recurrent-neural-network
+bill	cash
 binary-classification	statistical-classification
 bio-inspired-robotics	robotics
 biorobotics	robotics
@@ -314,6 +320,8 @@ bride	animal
 bride	organism
 bride	physical-object
 bride	woman
+brink	hill
+brink	landform
 bubble	physical-object
 bucket	artifact
 bucket	equipment
@@ -388,6 +396,7 @@ catalog	group
 catalog	publication
 cathedral	church
 causal-diagram	bayesian-network
+cave	landform
 cellular-telephone	phone
 celluloid	equipment
 census	dataset
@@ -399,10 +408,12 @@ champagne	wine
 champion	athlete
 champion	winner
 change	number
+channel	landform
 chapter	board-of-directors
 characteristic	number
 charm	fraction
 charm	number
+charter	contract
 chatbot	software-agent
 chatbot-evaluation	chatbot
 chatbot-evaluation	software-agent
@@ -430,7 +441,12 @@ civilian	person
 classification-algorithm	algorithm
 classification-algorithm	function
 classroom	room
+cliff	landform
 cliff	slope
+climate	geography
+climate	meteorology
+climate	research
+climate	science
 clique	graph
 clock	machine
 clothing	artifact
@@ -476,6 +492,7 @@ computer-go	artificial-intelligence
 computer-memory	hardware
 computer-mouse	hardware
 computer-mouse	interface
+computer-virus	software
 computer-worm	software
 comrade	acquaintance
 comrade	person
@@ -575,6 +592,7 @@ dairy	building
 dairy	occupation
 dairy	organization
 dark-blue	blue
+dash	satellite
 date	botanical-fruit
 date	food
 date	fruit
@@ -616,6 +634,7 @@ deputy	specialist
 deputy	worker
 desert	environment
 desert	habitat
+desert	landform
 desk	furniture
 desk	table
 dessert	dish
@@ -661,6 +680,8 @@ distilled-ai-model	artificial-neural-network
 distilled-ai-model	software
 distributed-artificial-intelligence	artificial-intelligence
 distributional-semantics	computational-linguistics
+dividend	payment
+dividend	transaction
 document-classification	statistical-classification
 documentation	information
 doll	artifact
@@ -676,8 +697,10 @@ door	obstacle
 door	physical-object
 dough	food
 dough	spread
+down-payment	payment
 down-payment	transaction
 drain	gutter
+draw	landform
 drawing	artifact
 drawing	physical-object
 drill-tool	artifact
@@ -686,6 +709,7 @@ drill-tool	physical-object
 drill-tool	tool
 drink	fluid
 drink	liquid
+drive	hardware
 drum	artifact
 drum	equipment
 drum	musical-instrument
@@ -778,6 +802,7 @@ facial-recognition-system	algorithm
 factor-graph	graph
 factory	organization
 fan	person
+farm	facility
 farm	workplace
 fashion	culture
 fat	chemical
@@ -812,6 +837,8 @@ flag	symbol
 flame	chemical-reaction
 flash	equipment
 flesh	tissue
+floor	contract
+floor	option
 flour	food
 flour	powder
 flow-based-generative-model	generative-model
@@ -824,6 +851,8 @@ fluctuation	number
 foe	acquaintance
 foe	adversary
 foe	person
+fog	cloud
+fog	weather
 folklore	custom
 forest	environment
 forest	habitat
@@ -833,6 +862,8 @@ fracture	injury
 frame-based-expert-system	artificial-intelligence
 frame-based-expert-system	expert-system
 frame-based-expert-system	knowledge-based-system
+franchise	occupation
+franchise	organization
 frank	culture
 frank	custom
 frank	dish
@@ -856,6 +887,7 @@ fur	skin
 fury	anger
 gallery	museum
 game-tree	graph
+gap	landform
 garage	building
 garden	workplace
 garlic	vegetable
@@ -911,6 +943,7 @@ ghostwriter	writer
 girlfriend	acquaintance
 girlfriend	friend
 girlfriend	person
+glacier	landform
 glance	mineral
 glass-material	substance
 glove	artifact
@@ -950,6 +983,7 @@ grammar	social-science
 grandfather	ancestor
 grandfather	father
 grandfather	parent
+grant	contract
 graph-attention-network	artificial-neural-network
 graph-convolutional-network	artificial-neural-network
 graph-embedding	function
@@ -1016,6 +1050,7 @@ hierarchical-clustering	data-mining
 hierarchical-temporal-memory	artificial-intelligence
 hierarchical-temporal-memory	artificial-neural-network
 hierarchical-temporal-memory	machine-learning
+hill	landform
 hill-climbing-search	algorithm
 hill-climbing-search	artificial-intelligence
 hill-climbing-search	evolutionary-algorithm
@@ -1220,9 +1255,11 @@ ladder	equipment
 ladder	physical-object
 ladder	stairway
 ladder	tool
+lake	landform
 lamb	animal
 lamb	organism
 lamb	physical-object
+landed-estate	facility
 landed-estate	farm
 landed-estate	workplace
 language-model	statistical-model
@@ -1251,9 +1288,11 @@ lawyer	professional
 lawyer	specialist
 lawyer	worker
 leader	person
+lease	contract
 lecture	presentation
 leftovers	food
 library	room
+license	contract
 life-like-cellular-automaton	cellular-automaton
 light-bulb	lamp
 lighter	artifact
@@ -1299,10 +1338,6 @@ machine-reading-comprehension	natural-language-processing
 machine-translation	artificial-intelligence
 machine-translation	computational-linguistics
 machine-translation	natural-language-processing
-magazine	artifact
-magazine	equipment
-magazine	physical-object
-magazine	tool
 maid	servant
 maid	worker
 mailman	employee
@@ -1390,7 +1425,9 @@ milk	liquid
 mill	machine
 mirror	artifact
 mirror	physical-object
+mist	cloud
 mist	fog
+mist	weather
 mixture-model	statistical-model
 mixture-of-experts-model	artificial-neural-network
 mixture-of-experts-model	language-model
@@ -1422,6 +1459,8 @@ mosquito	animal
 mosquito	organism
 mosquito	physical-object
 mother	parent
+mountain	landform
+mountain-range	landform
 mouse	animal
 mouse	organism
 mouse	physical-object
@@ -1468,6 +1507,7 @@ naive-bayes-classifier	classification-algorithm
 naive-bayes-classifier	function
 name	information
 nanorobotics	robotics
+natural-depression	landform
 natural-language-generation	algorithm
 natural-language-generation	artificial-intelligence
 natural-language-generation	computational-linguistics
@@ -1541,6 +1581,7 @@ optical-character-recognition	algorithm
 optical-character-recognition	artificial-intelligence
 optical-character-recognition	machine-learning
 optical-character-recognition	pattern-recognition
+option	contract
 orbit	curve
 organism	physical-object
 pain	symptom
@@ -1565,15 +1606,18 @@ pastel	color
 pasture	environment
 pasture	habitat
 pasture	hayfield
+patch	software
 pathfinding	algorithm
 pathfinding	information-retrieval
 pathfinding	search-algorithm
 pattern	decorative-design
 pattern-recognition	artificial-intelligence
 pattern-recognition	machine-learning
+payment	transaction
 peasant	farmer
 pedestrian-detection	computer-vision
 pedestrian-detection	object-detection
+pension	service
 people	mammal
 perceiver	artificial-neural-network
 perceiver	transformer-model
@@ -1665,7 +1709,6 @@ printer	hardware
 prisoner	inhabitant
 prisoner	person
 privacy	secrecy
-process	tissue
 producer	businessman
 producer	worker
 professional	worker
@@ -1745,6 +1788,7 @@ relationship-extraction	computational-linguistics
 relationship-extraction	natural-language-processing
 relationship-extraction	text-mining
 relative	person
+relief	algorithm
 religious-service	ceremony
 religious-service	custom
 religious-service	ritual
@@ -1760,10 +1804,6 @@ rescue-robot	automaton
 rescue-robot	machine
 reserve	drug
 reserve	medication
-reservoir	artifact
-reservoir	equipment
-reservoir	physical-object
-reservoir	tool
 reservoir-computing	artificial-neural-network
 reservoir-computing	recurrent-neural-network
 residential-district	settlement
@@ -1803,6 +1843,7 @@ rice	grass
 rice	organism
 rice	physical-object
 rice	plant
+ridge	landform
 rifle	gun
 ritual	ceremony
 ritual	custom
@@ -1814,6 +1855,7 @@ roboethics	philosophy-of-artificial-intelligence
 robot-end-effector	actuator
 robot-learning	artificial-intelligence
 robot-learning	machine-learning
+robot-navigation	skill
 robot-planning	robotics
 robotic-arm	automaton
 robotic-arm	machine
@@ -1891,6 +1933,7 @@ self-supervised-learning	weakly-supervised-learning
 seller	businessman
 seller	person
 seller	worker
+selling	transaction
 semantic-analysis	artificial-intelligence
 semantic-analysis	computational-linguistics
 semantic-analysis	natural-language-processing
@@ -1930,6 +1973,7 @@ servant	worker
 service-robot	automaton
 service-robot	machine
 servo	mechanism
+share	contract
 shark	fish
 shark	fish-meat
 shark	food
@@ -1979,6 +2023,7 @@ skirt	tool
 slave	inhabitant
 slave	person
 slave	prisoner
+slope	landform
 sludge	fluid
 sludge	waste
 small-language-model	language-model
@@ -2053,6 +2098,8 @@ sport	game
 spray	chemical
 spread	food
 stage	workplace
+stake	payment
+stake	transaction
 state-space-search	algorithm
 state-space-search	information-retrieval
 state-space-search	search-algorithm
@@ -2264,6 +2311,8 @@ tree-traversal	algorithm
 tree-traversal	graph-traversal
 tree-traversal	information-retrieval
 tree-traversal	search-algorithm
+tribute	payment
+tribute	transaction
 triplestore	dataset
 triplestore	software
 trophy	prize
@@ -2305,6 +2354,7 @@ vacuum	equipment
 vacuum	machine
 vacuum	physical-object
 vacuum	tool
+valley	landform
 valley	natural-depression
 value-function	mathematical-optimization
 variational-autoencoder	artificial-neural-network
@@ -2316,6 +2366,7 @@ vegetable-oil	fuel
 vegetarian	person
 vehicle	physical-object
 vein	vessel
+venue	facility
 vertebrate	animal
 vertebrate	organism
 vertebrate	physical-object
@@ -2341,11 +2392,14 @@ vision-transformer	artificial-neural-network
 vision-transformer	transformer-model
 vitamin	chemical
 voice-user-interface	interface
+volcano	landform
 volcano	mountain
 volition	cognition
 voyage	motion
 ward	room
 wardrobe	furniture
+warrant	contract
+warrant	option
 watch	artifact
 watch	clock
 watch	clothing
@@ -2353,6 +2407,7 @@ watch	equipment
 watch	machine
 watch	physical-object
 watch	tool
+waterfall	landform
 weak-artificial-intelligence	ai-model
 weak-artificial-intelligence	artificial-neural-network
 weak-artificial-intelligence	software

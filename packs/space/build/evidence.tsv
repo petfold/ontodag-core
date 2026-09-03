@@ -90,7 +90,6 @@ asteroid	natural-object	single	wordnet
 asteroid	phenomenon	single	sumo	
 asteroid	physical-object	single	wordnet	
 asteroid	place	single	yago	
-asteroid	planetary-body	single	opencyc	
 asteroid	universe	single	sumo	
 asteroid-belt	celestial-body	accepted	claude wikidata	
 astrobiology	astronomy	accepted	claude wikidata	
@@ -182,7 +181,7 @@ binary-star	natural-object	single	wordnet
 binary-star	phenomenon	single	sumo	
 binary-star	physical-object	single	wordnet	
 binary-star	place	single	yago	
-binary-star	star	accepted	claude wordnet	
+binary-star	star	dissented	wordnet	
 binary-star	star-system	accepted	claude wikidata	
 binary-star	universe	single	sumo	
 black-hole	celestial-body	accepted	sumo wikidata	
@@ -349,7 +348,6 @@ dwarf-galaxy	galaxy	accepted	claude wikidata
 dwarf-galaxy	place	single	yago	
 dwarf-planet	celestial-body	accepted	claude-ruling wikidata	
 dwarf-planet	minor-planet	dissented	wikidata	
-dwarf-planet	planetary-body	single	opencyc	
 earth-observation-satellite	celestial-body	single	wikidata	
 earth-observation-satellite	place	single	yago	
 earth-observation-satellite	product	single	yago	
@@ -394,9 +392,10 @@ europa	galilean-satellite	accepted	claude-ruling
 europa	natural-satellite	accepted	claude-ruling	
 event-horizon	region	accepted	claude-ruling	
 exoplanet	celestial-body	single	wikidata	
+exoplanet	major-planet	single	claude	
 exoplanet	place	single	yago	
 exoplanet	planet	accepted	claude wikidata	
-exoplanet	planetary-body	accepted	claude claude-ruling wikidata	
+exoplanet	planetary-body	accepted	claude-ruling	
 expansion-of-the-universe	natural-event	accepted	claude-ruling	
 falcon-9	launch-vehicle	accepted	claude-ruling wikidata	
 falcon-9	reusable-launch-system	accepted	claude wikidata	
@@ -457,9 +456,9 @@ galilean-telescope	universe	single	sumo
 ganymede	galilean-satellite	accepted	claude-ruling	
 ganymede	natural-satellite	accepted	claude-ruling	
 gas-giant	celestial-body	single	wikidata	
+gas-giant	major-planet	single	claude	
 gas-giant	place	single	yago	
 gas-giant	planet	accepted	claude wikidata	
-gas-giant	planetary-body	accepted	claude wikidata	
 geomagnetic-storm	natural-event	accepted	claude-ruling	
 geostationary-orbit	curve	single	wikidata	
 geostationary-orbit	empty-space	single	sumo	
@@ -535,18 +534,17 @@ hubble-space-telescope	space-telescope	accepted	claude-ruling
 hubbles-law	concept	accepted	claude-ruling	
 human-spaceflight	spaceflight	accepted	claude claude-ruling wikidata	
 ice-giant	celestial-body	single	wikidata	
+ice-giant	major-planet	single	claude	
 ice-giant	planet	accepted	claude wikidata	
-ice-giant	planetary-body	accepted	claude wikidata	
 inferior-planet	celestial-body	single	wordnet	
 inferior-planet	ground	single	opencyc	
+inferior-planet	major-planet	accepted	claude-ruling wordnet	
 inferior-planet	natural-object	single	wordnet	
 inferior-planet	physical-object	single	wordnet	
-inferior-planet	planet	accepted	opencyc wordnet	
-inferior-planet	planetary-body	single	opencyc	
+inferior-planet	planet	single	opencyc	
 inferior-planet	terrestrial-planet	single	opencyc	
 inner-planet	celestial-body	single	wikidata	
 inner-planet	planet	single	wikidata	
-inner-planet	planetary-body	single	wikidata	
 inner-planet	terrestrial-planet	accepted	claude wikidata	
 interferometry	method	accepted	claude-ruling	
 intergalactic-space	phenomenon	single	sumo	
@@ -572,10 +570,10 @@ irregular-galaxy	place	single	yago
 j2000	concept	accepted	claude-ruling	
 james-webb-space-telescope	space-telescope	accepted	claude-ruling	
 jovian-planet	celestial-body	single	wordnet	
+jovian-planet	major-planet	accepted	claude-ruling wordnet	
 jovian-planet	natural-object	single	wordnet	
 jovian-planet	physical-object	single	wordnet	
-jovian-planet	planet	accepted	opencyc wordnet	
-jovian-planet	planetary-body	single	opencyc	
+jovian-planet	planet	single	opencyc	
 jupiter	planet	accepted	claude-ruling	
 keplers-laws	concept	accepted	claude-ruling	
 kessler-syndrome	concept	accepted	claude-ruling	
@@ -690,7 +688,6 @@ meteoroid	minor-planet	dissented	wikidata
 meteoroid	natural-object	accepted	claude wordnet	
 meteoroid	phenomenon	single	sumo	
 meteoroid	physical-object	single	wordnet	
-meteoroid	planetary-body	single	opencyc	
 meteoroid	universe	single	sumo	
 micrometeorite	celestial-body	accepted	sumo wikidata	
 micrometeorite	meteorite	accepted	claude wordnet	
@@ -712,13 +709,13 @@ minor-planet	phenomenon	single	sumo
 minor-planet	physical-object	single	wordnet	
 minor-planet	place	single	yago	
 minor-planet	universe	single	sumo	
-moon	planetary-body	single	opencyc	
 multiple-star	celestial-body	accepted	sumo wordnet	
 multiple-star	natural-object	single	wordnet	
 multiple-star	phenomenon	single	sumo	
 multiple-star	physical-object	single	wordnet	
 multiple-star	place	single	yago	
-multiple-star	star	accepted	claude wordnet	
+multiple-star	star	dissented	wordnet	
+multiple-star	star-system	accepted	claude-ruling	
 multiple-star	universe	single	sumo	
 nadir	phenomenon	single	sumo	
 nadir	physical-object	single	wordnet	
@@ -831,10 +828,10 @@ orion	phenomenon	accepted	sumo wordnet
 orion	process	single	wordnet	
 orion	universe	single	sumo	
 outer-planet	celestial-body	accepted	wikidata wordnet	
+outer-planet	major-planet	accepted	claude wordnet	
 outer-planet	natural-object	single	wordnet	
 outer-planet	physical-object	single	wordnet	
-outer-planet	planet	accepted	claude wikidata wordnet	
-outer-planet	planetary-body	accepted	claude wikidata	
+outer-planet	planet	accepted	claude wikidata	
 pallasite	material	single	sumo	
 pallasite	meteorite	accepted	claude wordnet	
 pallasite	meteoroid	single	wordnet	
@@ -875,7 +872,6 @@ periselene	place	accepted	sumo wordnet
 periselene	universe	single	sumo	
 phobos	natural-satellite	accepted	claude-ruling	
 photosphere	layer	accepted	claude-ruling	
-planet	planetary-body	single	opencyc	
 planetarium	artifact	accepted	opencyc sumo wordnet	
 planetarium	building	accepted	sumo wordnet	
 planetarium	container	single	opencyc	
@@ -887,9 +883,6 @@ planetarium	physical-object	single	wordnet
 planetarium	place	single	yago	
 planetarium	structure	single	wordnet	
 planetarium	universe	single	sumo	
-planetary-body	celestial-body	accepted	claude wikidata wordnet	
-planetary-body	natural-object	single	wordnet	
-planetary-body	physical-object	single	wordnet	
 planetary-moon	celestial-body	single	wordnet	
 planetary-moon	natural-object	single	wordnet	
 planetary-moon	natural-satellite	accepted	claude wordnet	
@@ -1293,9 +1286,9 @@ supergiant-star	star	accepted	claude sumo wikidata wordnet
 supergiant-star	star.object	single	claude	
 supergiant-star	universe	single	sumo	
 superior-planet	celestial-body	single	wordnet	
+superior-planet	major-planet	accepted	claude wordnet	
 superior-planet	natural-object	single	wordnet	
 superior-planet	physical-object	single	wordnet	
-superior-planet	planet	accepted	claude wordnet	
 supermassive-black-hole	black-hole	accepted	claude-ruling wikidata	
 supermassive-black-hole	celestial-body	single	wikidata	
 supermassive-black-hole	star	single	wikidata	
@@ -1323,11 +1316,11 @@ telescope	product	single	yago
 telescope	supply	single	opencyc	
 terrestrial-planet	celestial-body	accepted	wikidata wordnet	
 terrestrial-planet	ground	single	opencyc	
+terrestrial-planet	major-planet	single	wordnet	
 terrestrial-planet	natural-object	single	wordnet	
 terrestrial-planet	physical-object	single	wordnet	
 terrestrial-planet	place	single	yago	
-terrestrial-planet	planet	accepted	opencyc wikidata wordnet	
-terrestrial-planet	planetary-body	accepted	opencyc wikidata	
+terrestrial-planet	planet	accepted	opencyc wikidata	
 tidal-locking	natural-event	accepted	claude-ruling	
 titan	natural-satellite	accepted	claude-ruling	
 total-eclipse	event	accepted	opencyc sumo wordnet	
