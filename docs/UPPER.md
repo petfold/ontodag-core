@@ -327,6 +327,12 @@ the top: `integrate.py` reads the *shipped* core module from `../ontodag`,
 and the module had not been regenerated yet — regenerate ontodag first, then
 integrate. Pinned in ontodag's `tests/test_packs.py` for 0.22.0.
 
+**Re-run after the duplicate list (0.22.1, the same night):** union **9,777
+categories, 10,837 edges**; sha256 root
+`1d67a67033859582e63faba79538f1e81ab8260e241e36e2cdd18d544f3f0482`, Swarm/BMT
+root `cc4d8551915bc11f1629bc9513faad64ae97e686c0deef5d9cb77467b55f1746`;
+order-independent, top level unchanged.
+
 ### 8.2 Shipped (ontodag 0.21.0, 2026-09-03)
 
 The ten packs ship in the ontodag wheel as `ontodag.domain.<name>`
