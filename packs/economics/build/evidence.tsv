@@ -246,6 +246,7 @@ asian-option	financial-asset	single	wikidata
 asian-option	financial-instrument	single	wikidata	
 asian-option	goods	single	wikidata	
 asian-option	intangible-asset	single	wikidata	
+asian-option	option	single	wikidata	
 asian-option	option-finance	single	wikidata	
 asian-option	security-finance	single	wikidata	
 ask-price	price	accepted	claude wikidata	
@@ -459,6 +460,7 @@ barrier-option	financial-asset	single	wikidata
 barrier-option	financial-instrument	single	wikidata	
 barrier-option	goods	single	wikidata	
 barrier-option	intangible-asset	single	wikidata	
+barrier-option	option	single	wikidata	
 barrier-option	option-finance	single	wikidata	
 barrier-option	security-finance	single	wikidata	
 barriers-to-entry	concept	accepted	claude-ruling	
@@ -523,6 +525,7 @@ bibliopole	physical-object	single	wordnet
 bibliopole	property	single	sumo	
 bibliopole	trader	accepted	claude wordnet	
 bicycle	goods	accepted	opencyc wikidata	
+bid	purchase-price	single	wikidata	
 bid-ask-spread	concept	accepted	claude-ruling	
 bid-ask-spread	number	dissented	wikidata	
 bid-price	outgo	single	wordnet	
@@ -554,6 +557,7 @@ binary-option	financial-asset	single	wikidata
 binary-option	financial-instrument	single	wikidata	
 binary-option	goods	single	wikidata	
 binary-option	intangible-asset	single	wikidata	
+binary-option	option	single	wikidata	
 binary-option	option-finance	single	wikidata	
 binary-option	security-finance	single	wikidata	
 bitcoin	cryptocurrency	accepted	claude-ruling	
@@ -855,7 +859,7 @@ call-option	information	accepted	opencyc wordnet
 call-option	intangible-asset	single	wikidata	
 call-option	legal-document	single	wordnet	
 call-option	norm	single	opencyc	
-call-option	option	single	opencyc	
+call-option	option	accepted	opencyc wikidata	
 call-option	option-finance	accepted	claude wikidata	
 call-option	purchase-option	accepted	claude wordnet	
 call-option	security-finance	single	wikidata	
@@ -1267,6 +1271,8 @@ compound-interest	outgo	single	wordnet
 compound-interest	possession	single	wordnet	
 compound-interest	price-charged	single	wordnet	
 compound-interest	quantity	single	sumo	
+computer-virus	goods	single	wikidata	
+computer-worm	goods	single	wikidata	
 concession-contract	contract	accepted	sumo wordnet	
 concession-contract	document	single	wordnet	
 concession-contract	information	single	wordnet	
@@ -1857,7 +1863,7 @@ derivatives-market	market	single	wikidata
 desktop-publishing	commercial-enterprise	single	claude	
 dessert	goods	single	wikidata	
 detector	goods	single	wikidata	
-digital-signature	information	accepted	claude-ruling	
+digital-signature	information	accepted	claude-ruling wikidata	
 dime-bag	deck.artifact	single	claude	
 direct-debit	action	single	opencyc	
 direct-debit	event	single	opencyc	
@@ -2281,6 +2287,7 @@ exotic-option	financial-asset	single	wikidata
 exotic-option	financial-instrument	single	wikidata	
 exotic-option	goods	single	wikidata	
 exotic-option	intangible-asset	single	wikidata	
+exotic-option	option	single	wikidata	
 exotic-option	option-finance	accepted	claude-ruling wikidata	
 exotic-option	security-finance	single	wikidata	
 expected-shortfall	concept	accepted	claude-ruling	
@@ -2550,6 +2557,13 @@ floating-rate-note	financial-transaction	single	wikidata
 floating-rate-note	goods	single	wikidata	
 floating-rate-note	loan	single	wikidata	
 floating-rate-note	transaction	single	wikidata	
+floor	derivative-finance	single	wikidata	
+floor	financial-asset	single	wikidata	
+floor	financial-instrument	single	wikidata	
+floor	goods	single	wikidata	
+floor	intangible-asset	single	wikidata	
+floor	option-finance	single	wikidata	
+floor	security-finance	single	wikidata	
 florist	adult	single	opencyc	
 florist	agent	single	wordnet	
 florist	attribute	single	sumo	
@@ -2622,6 +2636,7 @@ forward-contract	security-finance	single	wikidata
 forward-price	price	accepted	claude wikidata	
 forward-price	purchase-price	accepted	claude claude-ruling wikidata	
 found	wage	single	claude	
+franchise	business	single	wikidata	
 franchise-agreement	concession-contract	accepted	claude wordnet	
 franchise-agreement	contract	accepted	sumo wordnet	
 franchise-agreement	document	single	wordnet	
@@ -2911,6 +2926,7 @@ guaranty	financial-instrument	single	wikidata
 guaranty	financial-interest	single	wordnet	
 guaranty	goods	single	wikidata	
 guaranty	intangible-asset	single	wikidata	
+guaranty	option	single	wikidata	
 guaranty	option-finance	single	wikidata	
 guaranty	possession	single	wordnet	
 guaranty	security-finance	single	wikidata	
@@ -3657,7 +3673,6 @@ lump-sum	procedure	single	sumo
 lump-sum	transaction	single	wikidata	
 lump-sum	volition	single	sumo	
 machinery	business	single	opencyc	
-magazine	goods	single	wikidata	
 mail-order	article	single	sumo	
 mail-order	artifact	single	sumo	
 mail-order	contract-condition	single	sumo	
@@ -3797,6 +3812,7 @@ mass-production	volition	single	sumo
 match	goods	single	wikidata	
 matching-engine	software	accepted	claude-ruling	
 matchstick	goods	single	wikidata	
+material	goods	single	wikidata	
 maximum-drawdown	concept	accepted	claude-ruling	
 meal	goods	dissented	wikidata	
 measuring-stick	goods	single	wikidata	
@@ -3829,6 +3845,7 @@ mercer	person	single	wordnet
 mercer	physical-object	single	wordnet	
 mercer	property	single	sumo	
 mercer	trader	accepted	claude wordnet	
+merchandise	goods	single	wikidata	
 merchandising	accomplishment	single	sumo	
 merchandising	act	accepted	sumo wordnet	
 merchandising	activity	single	sumo	
@@ -4076,11 +4093,13 @@ oligopoly	procedure	single	sumo
 oligopoly	transaction	single	sumo	
 oligopoly	volition	single	sumo	
 onion	goods	single	opencyc	
+online-marketplace	goods	single	wikidata	
 online-marketplace	information	single	yago	
 online-marketplace	market	single	wikidata	
 online-marketplace	marketplace	accepted	claude-ruling wikidata	
 online-marketplace	organization	single	schemaorg	
-online-marketplace	web-site	single	yago	
+online-marketplace	software	single	wikidata	
+online-marketplace	web-site	accepted	wikidata yago	
 open-account	article	single	sumo	
 open-account	artifact	single	sumo	
 open-account	contract	accepted	claude wikidata	
@@ -4113,11 +4132,18 @@ operating-expense	outgo	single	wordnet
 operating-expense	possession	single	wordnet	
 operating-expense	quantity	single	sumo	
 operating-income	income	accepted	claude wikidata	
+operating-system	goods	single	wikidata	
 operational-risk	financial-risk	accepted	claude-ruling	
 opportunity-cost	expenditure	accepted	claude-ruling	
 opportunity-cost	outgo	accepted	claude wordnet	
 opportunity-cost	possession	single	wordnet	
 opportunity-cost	quantity	single	sumo	
+option	derivative-finance	single	wikidata	
+option	financial-asset	single	wikidata	
+option	financial-instrument	single	wikidata	
+option	goods	single	wikidata	
+option	intangible-asset	single	wikidata	
+option	security-finance	single	wikidata	
 option-finance	contract	single	wikidata	
 option-finance	derivative-finance	accepted	claude-ruling wikidata	
 option-finance	financial-asset	single	wikidata	
@@ -4305,6 +4331,7 @@ passbook-savings-account	bank-account	single	wordnet
 passbook-savings-account	savings-account	accepted	claude wordnet	
 passbook-savings-account	state	single	wordnet	
 passive-management	investing	accepted	claude-ruling	
+patch	goods	single	wikidata	
 pawn	accomplishment	single	sumo	
 pawn	act	single	sumo	
 pawn	activity	single	sumo	
@@ -4382,6 +4409,11 @@ penny-stock	legal-document	single	wordnet
 penny-stock	norm	single	opencyc	
 penny-stock	over-the-counter-stock	accepted	claude wordnet	
 penny-stock	unlisted-security	single	wordnet	
+pension	business-model	single	wikidata	
+pension	financial-services	single	wikidata	
+pension	goods	single	wikidata	
+pension	goods-and-services	single	wikidata	
+pension	insurance	single	wikidata	
 pension	payment-amount	single	wordnet	
 pension	regular-payment	accepted	claude wordnet	
 pension-fund	fund	accepted	claude claude-ruling wordnet	
@@ -4721,6 +4753,7 @@ program-trading	procedure	single	sumo
 program-trading	trading	accepted	claude wordnet	
 program-trading	transaction	accepted	sumo wordnet	
 program-trading	volition	single	sumo	
+projectile	goods	single	wikidata	
 promotional-expense	business-expense	accepted	claude wordnet	
 promotional-expense	expense	single	wordnet	
 promotional-expense	outgo	single	wordnet	
@@ -4792,7 +4825,7 @@ put-option	information	accepted	opencyc wordnet
 put-option	intangible-asset	single	wikidata	
 put-option	legal-document	single	wordnet	
 put-option	norm	single	opencyc	
-put-option	option	single	opencyc	
+put-option	option	accepted	opencyc wikidata	
 put-option	option-finance	accepted	claude wikidata	
 put-option	purchase-option	accepted	claude wordnet	
 put-option	security-finance	single	wikidata	
@@ -5113,7 +5146,6 @@ reserve-stock	possession	single	wordnet
 reserve-stock	procedure	single	sumo	
 reserve-stock	retained-earnings	single	wordnet	
 reserve-stock	volition	single	sumo	
-reservoir	goods	single	wikidata	
 residual-payment	outgo	single	wordnet	
 residual-payment	payment-amount	accepted	claude wordnet	
 residual-payment	possession	single	wordnet	
@@ -5340,7 +5372,7 @@ scarcity	operational-risk	dissented	wikidata
 scarcity	situation	single	opencyc	
 scenic-railway	railway	single	claude	
 schlockmeister	merchant	single	claude	
-scope	goods	single	opencyc	
+scope	goods	accepted	opencyc wikidata	
 score.state	debt	single	claude	
 scrip	artifact	single	sumo	
 scrip	contract-condition	single	sumo	
@@ -5422,6 +5454,7 @@ seller's-market	phenomenon	single	sumo
 seller's-market	procedure	single	sumo	
 seller's-market	transaction	single	sumo	
 seller's-market	volition	single	sumo	
+selling	financial-transaction	single	wikidata	
 selling	merchandising	accepted	claude wordnet	
 selling-agent	agent	single	wordnet	
 selling-agent	attribute	single	sumo	
@@ -5509,7 +5542,6 @@ shipping-traffic	event	accepted	sumo wordnet
 shipping-traffic	leader	single	sumo	
 shipping-traffic	phenomenon	single	sumo	
 shipping-traffic	procedure	single	sumo	
-shipping-traffic	skill	dissented	wikidata	
 shipping-traffic	transaction	single	wordnet	
 shipping-traffic	transportation	accepted	claude wordnet	
 shipping-traffic	volition	single	sumo	
@@ -5699,6 +5731,7 @@ spray	goods	single	opencyc
 stablecoin	cryptocurrency	accepted	claude claude-ruling wikidata	
 stablecoin	goods	single	wikidata	
 stablecoin	payment-system	single	wikidata	
+stake	financial-transaction	single	wikidata	
 stake	speculation	accepted	claude wordnet	
 stakeholder	economic-agent	accepted	claude-ruling	
 stamp-dealer	agent	single	wordnet	
@@ -5827,6 +5860,7 @@ stock-warrant	financial-asset	single	wikidata
 stock-warrant	financial-instrument	single	wikidata	
 stock-warrant	goods	single	wikidata	
 stock-warrant	intangible-asset	single	wikidata	
+stock-warrant	option	single	wikidata	
 stock-warrant	option-finance	single	wikidata	
 stock-warrant	possession	accepted	claude wordnet	
 stock-warrant	security-finance	single	wikidata	
@@ -6332,6 +6366,7 @@ treasury-stock	possession	single	wordnet
 treasury-stock	share-capital	accepted	claude wordnet	
 trial-balance	accounting-record	accepted	claude-ruling	
 trial-balance	document	accepted	claude-ruling	
+tribute	financial-transaction	single	wikidata	
 tribute.act	payment	single	claude	
 trolley-line	artifact	single	sumo	
 trolley-line	carrier-company	single	wordnet	

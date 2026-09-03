@@ -25,6 +25,7 @@ ad information service
 adaptation '*'
 addiction '*'
 addition '*'
+address '*'
 admission '*'
 admonition '*'
 adolescent '*'
@@ -119,11 +120,13 @@ asian-option exotic-option
 ask-price price purchase-price
 assault '*'
 assembly-hall room
+assertion statement
 asset '*'
 asset-allocation asset-management
 asset-backed-security security-finance
 asset-class '*'
 asset-management financial-services
+assignment contract
 assimilation chemical-reaction
 assistant scientist
 astronomy science
@@ -208,11 +211,13 @@ beer alcohol commodity
 belt clothing
 bench '*'
 bend '*'
+beneficiary '*'
 berry '*'
 betrothal promise
 bible '*'
 bibliopole '*'
 bicycle artifact equipment
+bid price purchase-price
 bid-ask-spread number
 bid-price price purchase-price
 bidder buyer
@@ -277,6 +282,7 @@ brewery factory
 brick '*'
 bride woman
 bridge '*'
+brink hill
 broccoli '*'
 broker businessman
 bronze '*'
@@ -324,7 +330,7 @@ cake '*'
 calamity '*'
 calendar '*'
 calf '*'
-call-option option-finance
+call-option option option-finance
 camera equipment
 can '*'
 candle '*'
@@ -360,7 +366,6 @@ cash medium-of-exchange
 cash-flow payment
 cash-flow-statement financial-statement
 cash-register '*'
-cast '*'
 cast-of-characters '*'
 castle '*'
 casualty victim
@@ -370,7 +375,7 @@ category '*'
 cathedral church
 cattle '*'
 cause '*'
-cave '*'
+cave landform
 cavity '*'
 ceiling '*'
 cell '*'
@@ -395,6 +400,7 @@ chalk '*'
 champagne wine
 champion athlete winner
 change number
+channel landform
 chaos '*'
 chapter board-of-directors
 character '*'
@@ -446,7 +452,7 @@ clearing-house '*'
 clemency '*'
 clerk '*'
 cliff slope
-climate '*'
+climate geography meteorology
 clinic '*'
 clipping '*'
 clique graph
@@ -520,7 +526,8 @@ computer-menu '*'
 computer-mouse hardware interface
 computer-program '*'
 computer-science '*'
-computer-worm '*'
+computer-virus software
+computer-worm software
 comrade acquaintance
 concept '*'
 conception '*'
@@ -540,6 +547,7 @@ congressman politician
 conscience lesson
 consciousness '*'
 conscription military-service
+consensus '*'
 consideration '*'
 consignment sale
 consolation '*'
@@ -716,7 +724,7 @@ depressive-disorder '*'
 deputy politician
 derivative-finance security-finance
 derivatives-market financial-market
-desert habitat
+desert habitat landform
 desk table
 dessert dish prepared-dish
 destiny '*'
@@ -725,13 +733,14 @@ detector tool
 detention '*'
 development growth
 diagram structure
+dialect '*'
 dialogue '*'
 diameter '*'
 diamond jewel
 dictionary publication
 diet food
 dig '*'
-digital-signature '*'
+digital-signature information
 diligence '*'
 diminution '*'
 dinner '*'
@@ -755,7 +764,6 @@ dissertation research
 distortion '*'
 distributed-ledger '*'
 distribution-center '*'
-distributor '*'
 district '*'
 diversification asset-allocation
 divestiture '*'
@@ -790,7 +798,7 @@ dramatic-play '*'
 dramaturgy '*'
 draper '*'
 draught '*'
-draw '*'
+draw landform
 drawing artifact
 dream '*'
 dressing '*'
@@ -798,6 +806,7 @@ drift '*'
 drill-tool tool
 drink liquid
 drinking '*'
+drive hardware
 driver '*'
 driveway '*'
 drop '*'
@@ -906,7 +915,7 @@ exemplar text
 exercise fitness
 exhibition '*'
 exile '*'
-exotic-option option-finance
+exotic-option option option-finance
 expansion '*'
 expected-shortfall '*'
 expense-account '*'
@@ -929,6 +938,7 @@ eyelid '*'
 fabric '*'
 facade '*'
 face '*'
+facility '*'
 facsimile '*'
 factoring financial-transaction transaction
 factory organization
@@ -942,7 +952,7 @@ fame '*'
 family '*'
 family-office '*'
 fan person
-farm workplace
+farm facility workplace
 farmer '*'
 fashion culture
 fat chemical
@@ -969,7 +979,6 @@ file '*'
 file-cabinet wardrobe
 fill-or-kill '*'
 film '*'
-filter '*'
 financial-advisor '*'
 financial-asset intangible-asset
 financial-audit audited-account
@@ -1007,6 +1016,7 @@ flesh tissue
 floating-rate-note bond
 flock '*'
 flood '*'
+floor option option-finance
 flour food powder
 flower plant
 flowerpot '*'
@@ -1014,7 +1024,7 @@ fluctuation function number
 fluid '*'
 fly '*'
 foe acquaintance adversary
-fog '*'
+fog cloud
 fold '*'
 folk-music '*'
 folklore custom
@@ -1033,10 +1043,12 @@ formula '*'
 forum public-square
 forward-contract derivative-finance
 forward-price price purchase-price
+fossil '*'
 fountain '*'
 fox '*'
 fraction number
 fracture injury
+franchise business occupation
 frank culture custom dish prepared-dish
 fraud '*'
 freak '*'
@@ -1074,6 +1086,7 @@ galaxy '*'
 gallery museum
 game '*'
 game-theory '*'
+gap landform
 garage building
 garage-sale market
 garbage '*'
@@ -1098,7 +1111,7 @@ giant '*'
 gift '*'
 gig-economy '*'
 girlfriend friend
-glacier '*'
+glacier landform
 glance mineral
 glass '*'
 glass-material substance
@@ -1127,6 +1140,7 @@ grace prayer
 grain seed
 grammar linguistics
 grandfather ancestor father
+grant contract
 graph '*'
 grass plant
 gratuity contribution
@@ -1204,9 +1218,8 @@ herb '*'
 herd '*'
 hero '*'
 heroin '*'
-hierarchy '*'
 high-frequency-trading algorithmic-trading
-hill '*'
+hill landform
 hip '*'
 hire-purchase credit
 historian '*'
@@ -1302,6 +1315,7 @@ insight '*'
 insolvency financial-risk
 inspiration '*'
 installment payment
+instance '*'
 instinct '*'
 institutional-investor investor
 insurance financial-services
@@ -1337,7 +1351,6 @@ invoice '*'
 ipfs '*'
 iron medication
 island '*'
-isolation '*'
 isotropy '*'
 issue text
 iteration '*'
@@ -1392,11 +1405,12 @@ labour class
 lace '*'
 ladder stairway tool
 lady '*'
-lake '*'
+lake landform
 lamb animal
 lamp '*'
 land '*'
 landed-estate farm
+landform '*'
 landlord '*'
 landmine '*'
 landowner '*'
@@ -1481,7 +1495,6 @@ look-alike person
 lookout guard
 looting crime
 loss-leader goods-and-services
-lot '*'
 lottery game
 loudspeaker '*'
 lounge room
@@ -1496,7 +1509,6 @@ lunch '*'
 lung organ
 machine '*'
 maestro '*'
-magazine tool
 magic-trick '*'
 magnitude '*'
 maid servant
@@ -1551,6 +1563,7 @@ master-of-ceremonies '*'
 match tool
 matching-engine '*'
 matchstick tool
+material goods
 mathematics '*'
 matrimony '*'
 matrix '*'
@@ -1569,13 +1582,14 @@ medium '*'
 medium-of-exchange '*'
 meeting '*'
 memorial '*'
-memory '*'
 mental-hospital '*'
 menu '*'
+merchandise goods
 merchant businessman economic-agent
 merkle-tree '*'
 message information
 metal '*'
+meteorology '*'
 method textbook
 metro '*'
 microfinance goods
@@ -1600,7 +1614,6 @@ mirror artifact goods
 mist fog
 model '*'
 modern-portfolio-theory '*'
-module '*'
 mold fungus
 mole '*'
 mole.attribute '*'
@@ -1634,8 +1647,8 @@ motif '*'
 motion '*'
 motorcycle '*'
 motto '*'
-mountain '*'
-mountain-range '*'
+mountain landform
+mountain-range landform
 mourning '*'
 mouse animal
 mouth '*'
@@ -1659,7 +1672,7 @@ mutual-fund '*'
 nail tool
 name information
 nash-equilibrium function
-natural-depression '*'
+natural-depression landform
 natural-language '*'
 natural-law '*'
 nature '*'
@@ -1713,13 +1726,13 @@ old-age '*'
 olfactory-property '*'
 oligopoly '*'
 onion '*'
-online-marketplace marketplace
+online-marketplace marketplace web-site
 open-account contract
 open-interest '*'
 opera musical-composition
 operating-expense '*'
 operating-income income
-operating-system '*'
+operating-system software
 operation therapy
 operational-risk '*'
 opinion point-of-view slant
@@ -1727,6 +1740,7 @@ opinion-poll '*'
 opportunity-cost '*'
 opposition political-party
 optimism '*'
+option derivative-finance
 option-finance derivative-finance
 orange '*'
 orange-colour '*'
@@ -1785,6 +1799,7 @@ password '*'
 past '*'
 pastel color
 pasture hayfield
+patch software
 patent '*'
 path '*'
 patience '*'
@@ -1813,6 +1828,7 @@ peer-to-peer-lending loan
 pen '*'
 pencil '*'
 penetration-pricing '*'
+pension insurance
 pension-fund '*'
 people mammal
 pepper '*'
@@ -1854,6 +1870,7 @@ pioneer person
 pipe tool
 pipe-organ '*'
 pitch '*'
+place '*'
 plaintiff party
 planet '*'
 plank '*'
@@ -1944,7 +1961,6 @@ private-key '*'
 privilege '*'
 prize '*'
 probability '*'
-process tissue
 procurement '*'
 produce '*'
 producer entrepreneur
@@ -1958,6 +1974,7 @@ profit '*'
 prognosis '*'
 program publication
 prohibition '*'
+projectile goods
 promise declaration
 promotion '*'
 promotional-material '*'
@@ -1991,7 +2008,7 @@ purchase-price '*'
 purchasing procurement
 pursuit '*'
 push-button hardware interface
-put-option option-finance
+put-option option option-finance
 puzzle '*'
 pyramid '*'
 pyramid-scheme business-model
@@ -2039,10 +2056,11 @@ recess '*'
 recommendation text
 record '*'
 record-album '*'
-redundancy '*'
 referee '*'
+reference '*'
 reference-point '*'
 refreshment '*'
+refuge '*'
 refugee '*'
 refugee-camp settlement
 region '*'
@@ -2051,7 +2069,9 @@ rehabilitation '*'
 rehearsal '*'
 reinsurance business insurance occupation
 relative person
+relevance '*'
 reliance '*'
+relief '*'
 religious-service ritual service
 relish salad sauce
 remainder '*'
@@ -2071,7 +2091,6 @@ research-worker '*'
 reservation '*'
 reservation-price price purchase-price
 reserve medication
-reservoir tool
 residential-district settlement
 resort '*'
 restaurant workplace
@@ -2097,7 +2116,7 @@ rhythm tempo
 rib bone
 ribbon clothing
 rice commodity food grass
-ridge '*'
+ridge landform
 rifle gun
 right-to-vote '*'
 ring '*'
@@ -2170,6 +2189,7 @@ school '*'
 school-class '*'
 science research
 scientist research-worker
+scope goods
 score function
 scored-goal failure
 scrap '*'
@@ -2203,6 +2223,7 @@ selection '*'
 self '*'
 self-insurance '*'
 seller businessman person
+selling financial-transaction transaction
 sensation '*'
 sense '*'
 sentence '*'
@@ -2237,7 +2258,6 @@ shift '*'
 ship watercraft
 shipment '*'
 shipping-container '*'
-shipping-traffic skill
 shirt top
 shock '*'
 shoe clothing
@@ -2288,7 +2308,7 @@ sleep '*'
 sleeve '*'
 slice '*'
 slide '*'
-slope '*'
+slope landform
 slot '*'
 sludge fluid goods waste
 smart-contract financial-transaction transaction
@@ -2357,12 +2377,14 @@ stadium '*'
 stage workplace
 stage-set '*'
 stairway '*'
+stake payment
 stakeholder '*'
 stalk '*'
 stamp-dealer merchant
 star '*'
 startup-company business occupation
 state-of-matter '*'
+statement '*'
 station '*'
 stationer retailer
 statistics mathematics
@@ -2549,6 +2571,7 @@ train '*'
 trainer '*'
 training '*'
 training-workshop meeting service
+trait '*'
 tranche security-finance
 transaction '*'
 transaction-cost '*'
@@ -2569,11 +2592,11 @@ trench '*'
 trial '*'
 trial-balance '*'
 tribunal '*'
+tribute payment
 troop '*'
 trophy prize
 trouser clothing
 truck '*'
-trust '*'
 trust-beneficiary '*'
 trustee '*'
 truth '*'
@@ -2622,6 +2645,7 @@ vein vessel
 velvet '*'
 vendor business occupation
 venture-capital private-equity
+venue facility
 venus '*'
 vertebrate animal
 vertex '*'
@@ -2666,7 +2690,7 @@ watch clock clothing
 water '*'
 watercraft '*'
 watered-stock '*'
-waterfall '*'
+waterfall landform
 wave '*'
 waybill '*'
 wealth '*'
@@ -2698,7 +2722,6 @@ wilderness '*'
 wildlife life organism
 will '*'
 wind motion
-window '*'
 wine '*'
 wing '*'
 winner '*'

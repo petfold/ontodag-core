@@ -768,7 +768,9 @@ allowance	gift	single	wikidata
 allowance	information	single	opencyc	
 allowance	money	single	wikidata	
 allowance	norm	single	opencyc	
+allowance	payment	single	wikidata	
 allowance	possession	accepted	claude wordnet	
+allowance	transaction	single	wikidata	
 ally	agent	single	sumo	
 ally	country	accepted	sumo wordnet	
 ally	group	single	wordnet	
@@ -1436,12 +1438,14 @@ assertion	event	single	sumo
 assertion	information	accepted	sumo wordnet	
 assertion	phenomenon	single	sumo	
 assertion	procedure	single	sumo	
+assertion	statement	single	wikidata	
 assertion	universe	single	sumo	
 assertion	volition	single	sumo	
 asset	attribute	accepted	claude wordnet	
 assignment	accomplishment	single	sumo	
 assignment	act	accepted	sumo wordnet	
 assignment	activity	accepted	sumo wordnet	
+assignment	contract	single	wikidata	
 assignment	event	accepted	sumo wordnet	
 assignment	phenomenon	single	sumo	
 assignment	procedure	single	sumo	
@@ -1777,6 +1781,7 @@ backlog	activity	single	sumo
 backlog	event	single	sumo	
 backlog	hill	single	wikidata	
 backlog	income	dissented	wordnet	
+backlog	landform	single	wikidata	
 backlog	phenomenon	single	sumo	
 backlog	possession	single	wordnet	
 backlog	procedure	single	sumo	
@@ -2429,11 +2434,12 @@ bid	communication	single	sumo
 bid	event	accepted	sumo wordnet	
 bid	information	single	sumo	
 bid	phenomenon	single	sumo	
+bid	price	single	wikidata	
 bid	procedure	single	sumo	
 bid	universe	single	sumo	
 bid	volition	single	sumo	
 bill	artifact	accepted	sumo	
-bill	cash	single	sumo	
+bill	cash	accepted	sumo wikidata	
 bill	contract-condition	single	sumo	
 bill	currency	accepted	sumo wordnet	
 bill	indication	single	sumo	
@@ -3007,6 +3013,8 @@ brim	phenomenon	single	sumo
 brim	physical-object	accepted	wordnet	
 brim	universe	single	sumo	
 brink	attribute	dissented	wordnet	
+brink	hill	single	wikidata	
+brink	landform	single	wikidata	
 brink	phenomenon	single	sumo	
 brink	place	single	sumo	
 brink	shape	dissented	wordnet	
@@ -3825,7 +3833,7 @@ caution	attribute	single	sumo
 caution	cognition	accepted	claude wordnet	
 caution	property	single	sumo	
 cave	cavity	single	opencyc	
-cave	landform	single	yago	
+cave	landform	accepted	wikidata yago	
 cave	physical-object	accepted	claude wordnet	
 cave	place	single	yago	
 cavity	natural-depression	accepted	claude wordnet	
@@ -4093,6 +4101,7 @@ channel	artifact	accepted	sumo wordnet
 channel	body-of-water	single	opencyc	
 channel	development	single	sumo	
 channel	facility	dissented	wordnet	
+channel	landform	single	wikidata	
 channel	phenomenon	single	sumo	
 channel	physical-object	accepted	wordnet	
 channel	universe	single	sumo	
@@ -4202,6 +4211,7 @@ chart	physical-object	accepted	sumo wordnet
 chart	product	single	yago	
 chart	universe	single	sumo	
 charter	artifact	accepted	opencyc sumo	
+charter	contract	single	wikidata	
 charter	contract-condition	single	sumo	
 charter	document	accepted	claude wordnet	
 charter	image	single	opencyc	
@@ -4637,13 +4647,17 @@ clerk	organism	accepted	wordnet
 clerk	person	accepted	wordnet	
 clerk	physical-object	accepted	wordnet	
 clerk	worker	accepted	wordnet	
-cliff	landform	single	yago	
+cliff	landform	accepted	wikidata yago	
 cliff	physical-object	accepted	claude wordnet	
 cliff	place	single	yago	
 cliff	slope	accepted	opencyc wikidata	
 climate	attribute	accepted	sumo wordnet	
 climate	condition	accepted	claude wordnet	
+climate	geography	single	wikidata	
+climate	meteorology	single	wikidata	
 climate	property	single	sumo	
+climate	research	single	wikidata	
+climate	science	single	wikidata	
 climate	state	accepted	wordnet	
 clinic	agent	accepted	sumo	
 clinic	association	single	sumo	
@@ -5328,7 +5342,7 @@ computer-virus	measure	single	sumo
 computer-virus	product	single	yago	
 computer-virus	routine	single	sumo	
 computer-virus	signified	single	sumo	
-computer-virus	software	accepted	wordnet	
+computer-virus	software	accepted	wikidata wordnet	
 computer-worm	code	accepted	sumo wordnet	
 computer-worm	computer-program	accepted	sumo wordnet	
 computer-worm	information	accepted	wordnet yago	
@@ -5336,7 +5350,7 @@ computer-worm	measure	single	sumo
 computer-worm	product	single	yago	
 computer-worm	routine	single	sumo	
 computer-worm	signified	single	sumo	
-computer-worm	software	accepted	wordnet	
+computer-worm	software	accepted	wikidata wordnet	
 comrade	acquaintance	single	wikidata	
 comrade	agent	accepted	sumo wordnet	
 comrade	animal	single	sumo	
@@ -7045,6 +7059,7 @@ descent	phenomenon	single	sumo
 desert	environment	single	wikidata	
 desert	group	dissented	wordnet	
 desert	habitat	single	wikidata	
+desert	landform	single	wikidata	
 desert	physical-object	single	wordnet	
 desert	place	accepted	wordnet yago	
 desert	region	accepted	claude wordnet	
@@ -7877,7 +7892,9 @@ diversion	event	accepted	sumo wordnet
 diversion	phenomenon	single	sumo	
 dividend	income	single	wordnet	
 dividend	outgo	accepted	claude	
+dividend	payment	single	wikidata	
 dividend	possession	accepted	wordnet	
+dividend	transaction	single	wikidata	
 division	act	single	wordnet	
 division	activity	single	wordnet	
 division	event	single	wordnet	
@@ -8100,8 +8117,10 @@ dough	food	accepted	claude wikidata wordnet
 dough	spread	single	wikidata	
 dough	substance	accepted	wordnet	
 down-payment	outgo	accepted	claude wordnet	
+down-payment	payment	single	wikidata	
 down-payment	possession	accepted	wordnet	
 down-payment	quantity	single	sumo	
+down-payment	transaction	single	wikidata	
 downfall	attribute	single	sumo	
 downfall	event	accepted	claude wordnet	
 downfall	normal	single	sumo	
@@ -8177,6 +8196,7 @@ draught	process	single	wordnet
 draught	weather	accepted	wordnet	
 draught	wind	accepted	claude wordnet	
 draw	event	accepted	claude wordnet	
+draw	landform	single	wikidata	
 drawer	artifact	accepted	opencyc sumo wordnet	
 drawer	container	accepted	opencyc wordnet	
 drawer	device	accepted	opencyc sumo	
@@ -8246,6 +8266,7 @@ drinking	situation	single	opencyc
 drinking	visit	single	sumo	
 drive	act	accepted	wordnet	
 drive	event	accepted	opencyc sumo wordnet	
+drive	hardware	single	wikidata	
 drive	journey	accepted	claude wordnet	
 drive	phenomenon	single	sumo	
 drive	situation	single	opencyc	
@@ -9510,6 +9531,7 @@ fare	possession	accepted	wordnet
 fare	quantity	single	sumo	
 farm	artifact	single	sumo	
 farm	development	single	sumo	
+farm	facility	single	wikidata	
 farm	phenomenon	single	sumo	
 farm	physical-object	single	wordnet	
 farm	place	accepted	wordnet yago	
@@ -10111,7 +10133,9 @@ flood	natural-event	accepted	claude wordnet
 flood	phenomenon	accepted	sumo wordnet	
 flood	process	single	wordnet	
 floor	artifact	accepted	opencyc sumo wordnet	
+floor	contract	single	wikidata	
 floor	development	single	sumo	
+floor	option	single	wikidata	
 floor	part	single	opencyc	
 floor	phenomenon	single	sumo	
 floor	physical-object	accepted	wordnet	
@@ -10182,13 +10206,14 @@ foe	organism	accepted	wordnet
 foe	person	accepted	wikidata wordnet	
 foe	physical-object	accepted	wordnet	
 foe	property	single	sumo	
-fog	cloud	single	sumo	
+fog	cloud	accepted	sumo wikidata	
 fog	material	single	sumo	
 fog	natural-event	accepted	claude wordnet	
 fog	phenomenon	accepted	sumo wordnet	
 fog	process	single	wordnet	
 fog	substance	single	sumo	
 fog	universe	single	sumo	
+fog	weather	single	wikidata	
 fold	attribute	accepted	sumo wordnet	
 fold	property	single	sumo	
 fold	shape	accepted	sumo wordnet	
@@ -10495,7 +10520,8 @@ franchise	collection	single	sumo
 franchise	company	single	sumo	
 franchise	firm	single	sumo	
 franchise	group	accepted	sumo wordnet	
-franchise	organization	accepted	sumo wordnet	
+franchise	occupation	single	wikidata	
+franchise	organization	accepted	sumo wikidata wordnet	
 franchise	phenomenon	single	sumo	
 franchise	structure	single	opencyc	
 franchise	system	single	opencyc	
@@ -10741,6 +10767,7 @@ game-rule	measure	single	sumo
 game-rule	routine	single	sumo	
 game-rule	signified	single	sumo	
 gap	artifact	dissented	wordnet	
+gap	landform	single	wikidata	
 gap	physical-object	single	wordnet	
 garage	artifact	accepted	opencyc sumo wordnet	
 garage	building	accepted	claude wikidata wordnet	
@@ -10981,7 +11008,7 @@ girlfriend	woman	accepted	sumo wordnet
 glacier	body-of-water	single	yago	
 glacier	environment	single	opencyc	
 glacier	ice	single	opencyc	
-glacier	landform	single	yago	
+glacier	landform	accepted	wikidata yago	
 glacier	physical-object	accepted	claude wordnet	
 glacier	place	single	yago	
 glance	accomplishment	single	sumo	
@@ -11309,6 +11336,7 @@ grant	acquisition	accepted	wordnet
 grant	act	single	sumo	
 grant	activity	single	sumo	
 grant	aid	accepted	claude wordnet	
+grant	contract	single	wikidata	
 grant	event	accepted	sumo	
 grant	gift	accepted	wordnet	
 grant	information	single	opencyc	
@@ -12019,7 +12047,7 @@ highlight	status	single	sumo
 highlight	tension	single	sumo	
 highlight	way	single	sumo	
 hill	ground	single	opencyc	
-hill	landform	single	yago	
+hill	landform	accepted	wikidata yago	
 hill	physical-object	accepted	claude wordnet	
 hill	place	single	yago	
 hindrance	artifact	single	wordnet	
@@ -13770,6 +13798,7 @@ lady	universe	single	sumo
 lady	vertebrate	accepted	sumo	
 lady	woman	accepted	claude wordnet	
 lake	body-of-water	accepted	claude opencyc wordnet	
+lake	landform	single	wikidata	
 lake	natural-object	accepted	claude	
 lake	physical-object	accepted	claude	
 lake	place	accepted	claude	
@@ -13806,6 +13835,7 @@ land-vehicle	physical-object	accepted	claude
 land-vehicle	product	single	yago	
 land-vehicle	vehicle	accepted	claude yago	
 landed-estate	belongings	accepted	claude wordnet	
+landed-estate	facility	single	wikidata	
 landed-estate	farm	single	wikidata	
 landed-estate	possession	accepted	wordnet	
 landed-estate	workplace	single	wikidata	
@@ -14025,7 +14055,7 @@ learner	structure	single	opencyc
 learner	system	single	opencyc	
 learner	vertebrate	single	opencyc	
 lease	artifact	single	opencyc	
-lease	contract	accepted	sumo wordnet	
+lease	contract	accepted	sumo wikidata wordnet	
 lease	document	accepted	wordnet	
 lease	image	single	opencyc	
 lease	information	accepted	wordnet	
@@ -14225,6 +14255,7 @@ library	room	single	wikidata
 library	structure	accepted	wordnet	
 library	universe	single	sumo	
 license	artifact	single	sumo	
+license	contract	single	wikidata	
 license	contract-condition	single	sumo	
 license	document	accepted	wordnet	
 license	indication	single	sumo	
@@ -14764,19 +14795,17 @@ maestro	structure	single	opencyc
 maestro	system	single	opencyc	
 maestro	vertebrate	single	opencyc	
 maestro	worker	single	opencyc	
-magazine	artifact	accepted	sumo wikidata wordnet	
+magazine	artifact	accepted	sumo wordnet	
 magazine	contract-condition	single	sumo	
-magazine	equipment	single	wikidata	
 magazine	indication	single	sumo	
 magazine	information	accepted	sumo yago	
 magazine	line-of-text	single	sumo	
 magazine	organization	single	yago	
 magazine	phenomenon	single	sumo	
-magazine	physical-object	accepted	sumo wikidata wordnet	
+magazine	physical-object	accepted	sumo wordnet	
 magazine	product	single	yago	
 magazine	series	single	sumo	
 magazine	text	single	sumo	
-magazine	tool	single	wikidata	
 magazine	universe	single	sumo	
 magic-trick	accomplishment	single	sumo	
 magic-trick	act	accepted	sumo wordnet	
@@ -15396,6 +15425,12 @@ metal	part	single	wordnet
 metal	phenomenon	single	sumo	
 metal	substance	accepted	claude sumo wordnet	
 metal	universe	single	sumo	
+meteorology	cognition	single	wordnet	
+meteorology	earth-science	single	wordnet	
+meteorology	field-of-study	accepted	sumo wordnet	
+meteorology	natural-science	single	wordnet	
+meteorology	science	single	wordnet	
+meteorology	signified	single	sumo	
 method	cognition	accepted	claude wordnet	
 method	measure	single	sumo	
 method	routine	single	sumo	
@@ -15689,7 +15724,7 @@ misgiving	condition	accepted	wordnet
 misgiving	incertitude	accepted	claude wordnet	
 misgiving	property	single	sumo	
 misgiving	state	accepted	wordnet	
-mist	cloud	single	sumo	
+mist	cloud	accepted	sumo wikidata	
 mist	fog	accepted	claude wikidata wordnet	
 mist	material	single	sumo	
 mist	natural-event	accepted	wordnet	
@@ -15697,6 +15732,7 @@ mist	phenomenon	accepted	sumo wordnet
 mist	process	single	wordnet	
 mist	substance	single	sumo	
 mist	universe	single	sumo	
+mist	weather	single	wikidata	
 mistake	act	accepted	claude wordnet	
 mistake	action	single	opencyc	
 mistake	amateur	single	sumo	
@@ -15957,11 +15993,11 @@ motto	saying	accepted	claude wordnet
 motto	text	single	sumo	
 motto	universe	single	sumo	
 mountain	ground	single	opencyc	
-mountain	landform	accepted	claude schemaorg yago	
+mountain	landform	accepted	claude schemaorg wikidata yago	
 mountain	natural-object	accepted	claude	
 mountain	physical-object	accepted	claude wordnet	
 mountain	place	accepted	claude schemaorg yago	
-mountain-range	landform	single	yago	
+mountain-range	landform	accepted	wikidata yago	
 mountain-range	physical-object	accepted	claude wordnet	
 mountain-range	place	single	yago	
 mourning	attribute	accepted	wordnet	
@@ -16178,6 +16214,7 @@ nationality	attribute	accepted	sumo wordnet
 nationality	property	single	sumo	
 nationality	state	accepted	wordnet	
 nationality	status	accepted	claude wordnet	
+natural-depression	landform	single	wikidata	
 natural-depression	physical-object	accepted	claude wordnet	
 natural-event	accomplishment	single	sumo	
 natural-event	act	single	sumo	
@@ -16805,7 +16842,7 @@ opera	universe	single	sumo
 operating-system	code	accepted	wordnet	
 operating-system	information	accepted	claude opencyc schemaorg wordnet yago	
 operating-system	product	single	yago	
-operating-system	software	accepted	claude wordnet	
+operating-system	software	accepted	claude wikidata wordnet	
 operation	accomplishment	single	sumo	
 operation	act	accepted	sumo wordnet	
 operation	action	single	opencyc	
@@ -16898,7 +16935,7 @@ option	attribute	single	sumo
 option	circumstance	single	sumo	
 option	civilisation	single	sumo	
 option	cognition	accepted	claude wordnet	
-option	contract	single	opencyc	
+option	contract	accepted	opencyc wikidata	
 option	crowd	single	sumo	
 option	custom	single	sumo	
 option	danger	single	sumo	
@@ -17458,6 +17495,7 @@ patch	part	single	opencyc
 patch	phenomenon	single	sumo	
 patch	physical-object	accepted	wordnet	
 patch	piece	accepted	opencyc wordnet	
+patch	software	single	wikidata	
 patch	surface	single	opencyc	
 patch	universe	single	sumo	
 patent	artifact	single	sumo	
@@ -17543,7 +17581,7 @@ payment	action	single	opencyc
 payment	commerce	accepted	claude wordnet	
 payment	event	accepted	claude opencyc wordnet	
 payment	situation	single	opencyc	
-payment	transaction	accepted	claude opencyc wordnet	
+payment	transaction	accepted	claude opencyc wikidata wordnet	
 payment.2	commerce	single	claude	
 peace	attribute	accepted	wordnet	
 peace	feeling	accepted	claude wordnet	
@@ -17637,6 +17675,7 @@ pencil	universe	single	sumo
 pension	outgo	accepted	claude wordnet	
 pension	possession	accepted	wordnet	
 pension	quantity	single	sumo	
+pension	service	single	wikidata	
 pensioner	agent	accepted	sumo wordnet	
 pensioner	animal	accepted	sumo	
 pensioner	beneficiary	accepted	claude wordnet	
@@ -18970,7 +19009,6 @@ procedure	phenomenon	single	sumo
 procedure.2	activity	single	claude	
 process	event	accepted	dul peter sumo	
 process	phenomenon	disputed	sumo	wordnet
-process	tissue	single	wikidata	
 produce	substance	accepted	claude wordnet	
 producer	agent	accepted	sumo wordnet	
 producer	animal	single	sumo	
@@ -20596,14 +20634,10 @@ reserve	medication	single	wikidata
 reserve	mentality	single	sumo	
 reserve	property	single	sumo	
 reserve	trait	accepted	sumo wordnet	
-reservoir	artifact	single	wikidata	
 reservoir	body-of-water	accepted	opencyc schemaorg wordnet yago	
-reservoir	equipment	single	wikidata	
 reservoir	lake	accepted	claude wordnet	
 reservoir	landform	accepted	schemaorg yago	
-reservoir	physical-object	accepted	wikidata	
 reservoir	place	accepted	schemaorg yago	
-reservoir	tool	single	wikidata	
 residence	address	accepted	sumo wordnet	
 residence	artifact	single	sumo	
 residence	building	single	sumo	
@@ -20931,7 +20965,7 @@ rider	organism	accepted	wordnet
 rider	person	accepted	claude wordnet	
 rider	physical-object	accepted	wordnet	
 rider	property	single	sumo	
-ridge	landform	single	yago	
+ridge	landform	accepted	wikidata yago	
 ridge	physical-object	accepted	claude wordnet	
 ridge	place	single	yago	
 rifle	artifact	accepted	opencyc sumo wordnet	
@@ -21986,7 +22020,7 @@ selling	exchange	single	sumo
 selling	interaction	single	sumo	
 selling	phenomenon	single	sumo	
 selling	procedure	single	sumo	
-selling	transaction	accepted	sumo wordnet	
+selling	transaction	accepted	sumo wikidata wordnet	
 selling	volition	single	sumo	
 semblance	cognition	accepted	claude wordnet	
 seminar	accomplishment	single	sumo	
@@ -22198,6 +22232,7 @@ shame	feeling	accepted	claude wordnet
 shame	state	accepted	wordnet	
 shape	attribute	accepted	sumo wordnet	
 shape	property	single	sumo	
+share	contract	single	wikidata	
 share	document	single	wordnet	
 share	information	single	wordnet	
 share	legal-document	dissented	wordnet	
@@ -22746,6 +22781,7 @@ slob	self	single	sumo
 slob	species	single	sumo	
 slob	universe	single	sumo	
 slob	vertebrate	single	sumo	
+slope	landform	single	wikidata	
 slope	physical-object	accepted	claude wordnet	
 slot	artifact	dissented	wordnet	
 slot	physical-object	single	wordnet	
@@ -23418,6 +23454,7 @@ stake	investment	accepted	claude wordnet
 stake	lap	single	sumo	
 stake	literary-works	single	sumo	
 stake	normal	single	sumo	
+stake	payment	single	wikidata	
 stake	point-of-view	single	sumo	
 stake	possession	accepted	wordnet	
 stake	practice	single	sumo	
@@ -23426,6 +23463,7 @@ stake	shaft	single	opencyc
 stake	society	single	sumo	
 stake	status	single	sumo	
 stake	tension	single	sumo	
+stake	transaction	single	wikidata	
 stake	way	single	sumo	
 stalk	body-part	single	sumo	
 stalk	natural-object	accepted	claude wordnet	
@@ -25191,8 +25229,10 @@ tribunal	team	single	sumo
 tribunal	universe	single	sumo	
 tribute	indication	single	sumo	
 tribute	information	accepted	sumo wordnet	
+tribute	payment	single	wikidata	
 tribute	phenomenon	single	sumo	
 tribute	physical-object	single	sumo	
+tribute	transaction	single	wikidata	
 tribute	universe	single	sumo	
 trick	accomplishment	single	sumo	
 trick	act	accepted	sumo wordnet	
@@ -25534,7 +25574,7 @@ vacuum	physical-object	accepted	wikidata wordnet
 vacuum	tool	single	wikidata	
 valley	cavity	single	opencyc	
 valley	depression	single	opencyc	
-valley	landform	single	yago	
+valley	landform	accepted	wikidata yago	
 valley	natural-depression	accepted	claude wikidata wordnet	
 valley	physical-object	accepted	wordnet	
 valley	place	single	yago	
@@ -25656,6 +25696,7 @@ venture	phenomenon	single	sumo
 venture	team	single	sumo	
 venture	transaction	accepted	wordnet	
 venture	universe	single	sumo	
+venue	facility	single	wikidata	
 venue	phenomenon	single	sumo	
 venue	physical-object	single	wordnet	
 venue	place	accepted	claude sumo wordnet	
@@ -25898,7 +25939,7 @@ void	shape	single	wordnet
 void	space.2	single	claude	
 void	universe	single	sumo	
 volcano	ground	single	opencyc	
-volcano	landform	accepted	schemaorg yago	
+volcano	landform	accepted	schemaorg wikidata yago	
 volcano	mountain	accepted	claude wikidata wordnet	
 volcano	physical-object	accepted	wordnet	
 volcano	place	accepted	schemaorg yago	
@@ -26035,12 +26076,14 @@ wardrobe	phenomenon	single	sumo
 wardrobe	product	single	yago	
 wardrobe	universe	single	sumo	
 warrant	artifact	single	sumo	
+warrant	contract	single	wikidata	
 warrant	contract-condition	single	sumo	
 warrant	document	accepted	wordnet	
 warrant	indication	single	sumo	
 warrant	information	accepted	sumo wordnet	
 warrant	legal-document	accepted	claude wordnet	
 warrant	line-of-text	single	sumo	
+warrant	option	single	wikidata	
 warrant	phenomenon	single	sumo	
 warrant	physical-object	single	sumo	
 warrant	text	single	sumo	
@@ -26118,7 +26161,7 @@ watercraft	ship	rejected	sumo	claude opencyc wikidata wordnet
 watercraft	universe	single	sumo	
 watercraft	vehicle	accepted	claude sumo wordnet yago	
 waterfall	body-of-water	accepted	opencyc schemaorg wordnet yago	
-waterfall	landform	accepted	schemaorg yago	
+waterfall	landform	accepted	schemaorg wikidata yago	
 waterfall	place	accepted	schemaorg yago	
 waterfall	route	single	opencyc	
 wave	event	accepted	sumo wordnet	

@@ -1,0 +1,35 @@
+# sub	sup	note
+geographic-data-format	file-format	shapefile, GeoTIFF, GeoJSON, KML, GPX — the computing pack's file-format is the parent
+shapefile	geographic-data-format	
+geotiff	geographic-data-format	
+geojson	geographic-data-format	the computing pack's GeoJSON
+keyhole-markup-language	geographic-data-format	the computing pack's KML
+gps-exchange-format	geographic-data-format	the computing pack's GPX
+well-known-text	geographic-data-format	OGC WKT for geometries; no Wikidata item under that label
+climate-oscillation	natural-event	ENSO and its phases — recurring climate patterns, not weather events
+el-nino-southern-oscillation	climate-oscillation	
+la-nina	climate-oscillation	
+horizontal-datum	geodetic-datum	
+real-time-kinematic-positioning	gnss-augmentation	
+global-navigation-satellite-system	satellite-navigation	the generic term GNSS, of which GPS, GLONASS, Galileo and BeiDou are instances
+earth-sphere	earth-structure	the concentric shells — geosphere, hydrosphere, atmosphere, biosphere, cryosphere, pedosphere
+geosphere	earth-sphere	
+hydrosphere	earth-sphere	
+earth-atmosphere	earth-sphere	
+biosphere	earth-sphere	
+cryosphere	earth-sphere	
+pedosphere	earth-sphere	
+atmospheric-layer	earth-atmosphere	
+troposphere	atmospheric-layer	
+stratosphere	atmospheric-layer	
+mesosphere	atmospheric-layer	
+thermosphere	atmospheric-layer	
+exosphere	atmospheric-layer	
+ionosphere	atmospheric-layer	
+ozone-layer	atmospheric-layer	
+geological-time-division	time-period	eon, era, period, epoch, age — the units of the geologic time scale (core's time-period is unplaced there; ruled to quantity below)
+geological-eon	geological-time-division	the Wikidata `eon` is named `eon` in the pack; this is its class edge
+geographic-line	geographic-point	the imaginary lines of the coordinate system — equator, meridians, tropics, polar circles — are loci of points on the surface
+geographic-data-format	information	
+navigational-system	device	WordNet's navigational system (GPS, inertial systems)
+satellite-navigation	navigational-system	

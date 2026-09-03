@@ -163,6 +163,7 @@ single	asian-option	financial-asset	only wikidata
 single	asian-option	financial-instrument	only wikidata
 single	asian-option	goods	only wikidata
 single	asian-option	intangible-asset	only wikidata
+single	asian-option	option	only wikidata
 single	asian-option	option-finance	only wikidata
 single	asian-option	security-finance	only wikidata
 single	asking-price	outgo	only wordnet
@@ -310,6 +311,7 @@ single	barrier-option	financial-asset	only wikidata
 single	barrier-option	financial-instrument	only wikidata
 single	barrier-option	goods	only wikidata
 single	barrier-option	intangible-asset	only wikidata
+single	barrier-option	option	only wikidata
 single	barrier-option	option-finance	only wikidata
 single	barrier-option	security-finance	only wikidata
 single	barterer	agent	only wordnet
@@ -359,6 +361,7 @@ single	bibliopole	organism	only wordnet
 single	bibliopole	person	only wordnet
 single	bibliopole	physical-object	only wordnet
 single	bibliopole	property	only sumo
+single	bid	purchase-price	only wikidata
 single	bid-price	outgo	only wordnet
 single	bid-price	possession	only wordnet
 single	bid-price	quantity	only sumo
@@ -376,6 +379,7 @@ single	binary-option	financial-asset	only wikidata
 single	binary-option	financial-instrument	only wikidata
 single	binary-option	goods	only wikidata
 single	binary-option	intangible-asset	only wikidata
+single	binary-option	option	only wikidata
 single	binary-option	option-finance	only wikidata
 single	binary-option	security-finance	only wikidata
 single	black-market	accomplishment	only sumo
@@ -572,7 +576,6 @@ single	call-option	financial-instrument	only wikidata
 single	call-option	goods	only wikidata
 single	call-option	intangible-asset	only wikidata
 single	call-option	legal-document	only wordnet
-single	call-option	option	only opencyc
 single	call-option	security-finance	only wikidata
 single	call-option	unlisted-security	only opencyc
 single	candle	goods	only opencyc
@@ -840,6 +843,8 @@ single	compound-interest	outgo	only wordnet
 single	compound-interest	possession	only wordnet
 single	compound-interest	price-charged	only wordnet
 single	compound-interest	quantity	only sumo
+single	computer-virus	goods	only wikidata
+single	computer-worm	goods	only wikidata
 single	concession-contract	document	only wordnet
 single	concession-contract	information	only wordnet
 single	conditional-contract	document	only wordnet
@@ -1461,6 +1466,7 @@ single	exotic-option	financial-asset	only wikidata
 single	exotic-option	financial-instrument	only wikidata
 single	exotic-option	goods	only wikidata
 single	exotic-option	intangible-asset	only wikidata
+single	exotic-option	option	only wikidata
 single	exotic-option	security-finance	only wikidata
 single	expending	accomplishment	only sumo
 single	expending	activity	only sumo
@@ -1617,6 +1623,13 @@ single	floating-rate-note	financial-transaction	only wikidata
 single	floating-rate-note	goods	only wikidata
 single	floating-rate-note	loan	only wikidata
 single	floating-rate-note	transaction	only wikidata
+single	floor	derivative-finance	only wikidata
+single	floor	financial-asset	only wikidata
+single	floor	financial-instrument	only wikidata
+single	floor	goods	only wikidata
+single	floor	intangible-asset	only wikidata
+single	floor	option-finance	only wikidata
+single	floor	security-finance	only wikidata
 single	florist	adult	only opencyc
 single	florist	agent	only wordnet
 single	florist	attribute	only sumo
@@ -1667,6 +1680,7 @@ single	forward-contract	financial-instrument	only wikidata
 single	forward-contract	goods	only wikidata
 single	forward-contract	intangible-asset	only wikidata
 single	forward-contract	security-finance	only wikidata
+single	franchise	business	only wikidata
 single	franchise-agreement	document	only wordnet
 single	franchise-agreement	information	only wordnet
 single	frank	goods	only wikidata
@@ -1856,6 +1870,7 @@ single	guaranty	financial-instrument	only wikidata
 single	guaranty	financial-interest	only wordnet
 single	guaranty	goods	only wikidata
 single	guaranty	intangible-asset	only wikidata
+single	guaranty	option	only wikidata
 single	guaranty	option-finance	only wikidata
 single	guaranty	possession	only wordnet
 single	guaranty	security-finance	only wikidata
@@ -2328,7 +2343,6 @@ single	lump-sum	procedure	only sumo
 single	lump-sum	transaction	only wikidata
 single	lump-sum	volition	only sumo
 single	machinery	business	only opencyc
-single	magazine	goods	only wikidata
 single	mail-order	article	only sumo
 single	mail-order	artifact	only sumo
 single	mail-order	contract-condition	only sumo
@@ -2401,6 +2415,7 @@ single	mass-production	transaction	only wordnet
 single	mass-production	volition	only sumo
 single	match	goods	only wikidata
 single	matchstick	goods	only wikidata
+single	material	goods	only wikidata
 single	measuring-stick	goods	only wikidata
 single	meat	goods	only opencyc
 single	meatpacking	act	only wordnet
@@ -2422,6 +2437,7 @@ single	mercer	organism	only wordnet
 single	mercer	person	only wordnet
 single	mercer	physical-object	only wordnet
 single	mercer	property	only sumo
+single	merchandise	goods	only wikidata
 single	merchandising	accomplishment	only sumo
 single	merchandising	activity	only sumo
 single	merchandising	exchange	only sumo
@@ -2572,10 +2588,11 @@ single	oligopoly	procedure	only sumo
 single	oligopoly	transaction	only sumo
 single	oligopoly	volition	only sumo
 single	onion	goods	only opencyc
+single	online-marketplace	goods	only wikidata
 single	online-marketplace	information	only yago
 single	online-marketplace	market	only wikidata
 single	online-marketplace	organization	only schemaorg
-single	online-marketplace	web-site	only yago
+single	online-marketplace	software	only wikidata
 single	open-account	article	only sumo
 single	open-account	artifact	only sumo
 single	open-account	contract-condition	only sumo
@@ -2596,8 +2613,15 @@ single	operating-budget	quantity	only sumo
 single	operating-expense	outgo	only wordnet
 single	operating-expense	possession	only wordnet
 single	operating-expense	quantity	only sumo
+single	operating-system	goods	only wikidata
 single	opportunity-cost	possession	only wordnet
 single	opportunity-cost	quantity	only sumo
+single	option	derivative-finance	only wikidata
+single	option	financial-asset	only wikidata
+single	option	financial-instrument	only wikidata
+single	option	goods	only wikidata
+single	option	intangible-asset	only wikidata
+single	option	security-finance	only wikidata
 single	option-finance	contract	only wikidata
 single	option-finance	financial-asset	only wikidata
 single	option-finance	financial-instrument	only wikidata
@@ -2727,6 +2751,7 @@ single	partnership-certificate	text	only sumo
 single	passbook-savings-account	attribute	only wordnet
 single	passbook-savings-account	bank-account	only wordnet
 single	passbook-savings-account	state	only wordnet
+single	patch	goods	only wikidata
 single	pawn	accomplishment	only sumo
 single	pawn	act	only sumo
 single	pawn	activity	only sumo
@@ -2780,6 +2805,11 @@ single	penny-stock	equity	only opencyc
 single	penny-stock	financial-asset	only opencyc
 single	penny-stock	legal-document	only wordnet
 single	penny-stock	unlisted-security	only wordnet
+single	pension	business-model	only wikidata
+single	pension	financial-services	only wikidata
+single	pension	goods	only wikidata
+single	pension	goods-and-services	only wikidata
+single	pension	insurance	only wikidata
 single	pension	payment-amount	only wordnet
 single	pension-fund	organization	only yago
 single	peppercorn-rent	annuity	only wordnet
@@ -2992,6 +3022,7 @@ single	program-trading	exchange	only sumo
 single	program-trading	interaction	only sumo
 single	program-trading	procedure	only sumo
 single	program-trading	volition	only sumo
+single	projectile	goods	only wikidata
 single	promotional-expense	expense	only wordnet
 single	promotional-expense	outgo	only wordnet
 single	promotional-expense	possession	only wordnet
@@ -3033,7 +3064,6 @@ single	put-option	financial-instrument	only wikidata
 single	put-option	goods	only wikidata
 single	put-option	intangible-asset	only wikidata
 single	put-option	legal-document	only wordnet
-single	put-option	option	only opencyc
 single	put-option	security-finance	only wikidata
 single	put-option	unlisted-security	only opencyc
 single	pyramiding	investment	only wordnet
@@ -3250,7 +3280,6 @@ single	reserve-stock	possession	only wordnet
 single	reserve-stock	procedure	only sumo
 single	reserve-stock	retained-earnings	only wordnet
 single	reserve-stock	volition	only sumo
-single	reservoir	goods	only wikidata
 single	residual-payment	outgo	only wordnet
 single	residual-payment	possession	only wordnet
 single	residual-payment	quantity	only sumo
@@ -3393,7 +3422,6 @@ single	savings-bond	document	only wordnet
 single	savings-bond	information	only wordnet
 single	savings-bond	legal-document	only wordnet
 single	scarcity	situation	only opencyc
-single	scope	goods	only opencyc
 single	scrip	artifact	only sumo
 single	scrip	contract-condition	only sumo
 single	scrip	document	only wordnet
@@ -3439,6 +3467,7 @@ single	seller's-market	interaction	only sumo
 single	seller's-market	procedure	only sumo
 single	seller's-market	transaction	only sumo
 single	seller's-market	volition	only sumo
+single	selling	financial-transaction	only wikidata
 single	selling-agent	agent	only wordnet
 single	selling-agent	attribute	only sumo
 single	selling-agent	merchant	only wordnet
@@ -3609,6 +3638,7 @@ single	spot-price	quantity	only sumo
 single	spray	goods	only opencyc
 single	stablecoin	goods	only wikidata
 single	stablecoin	payment-system	only wikidata
+single	stake	financial-transaction	only wikidata
 single	stamp-dealer	agent	only wordnet
 single	stamp-dealer	attribute	only sumo
 single	stamp-dealer	businessman	only wikidata
@@ -3695,6 +3725,7 @@ single	stock-warrant	financial-asset	only wikidata
 single	stock-warrant	financial-instrument	only wikidata
 single	stock-warrant	goods	only wikidata
 single	stock-warrant	intangible-asset	only wikidata
+single	stock-warrant	option	only wikidata
 single	stock-warrant	option-finance	only wikidata
 single	stock-warrant	security-finance	only wikidata
 single	stockbroker	businessman	only wikidata
@@ -4015,6 +4046,7 @@ single	treasury-security	contract	only sumo
 single	treasury-security	document	only wordnet
 single	treasury-security	information	only wordnet
 single	treasury-stock	possession	only wordnet
+single	tribute	financial-transaction	only wikidata
 single	trolley-line	artifact	only sumo
 single	trolley-line	carrier-company	only wordnet
 single	trolley-line	device	only sumo
