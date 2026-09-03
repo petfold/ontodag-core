@@ -1,4 +1,5 @@
 # ontodag store v1
+51-percent-attack '*'
 abbey monastery
 abdomen '*'
 aberration '*'
@@ -8,12 +9,18 @@ academy school
 accelerator '*'
 accident '*'
 accountant '*'
+accounts-payable '*'
+accounts-receivable '*'
+accredited-investor investor
+accrual '*'
 ace '*'
 acid '*'
 acquaintance person
 act '*'
 action '*'
+active-management asset-management
 actor '*'
+actuary '*'
 ad information service
 adaptation '*'
 addiction '*'
@@ -26,6 +33,7 @@ adult animal
 advancement '*'
 adventure '*'
 adversary person
+adverse-selection '*'
 advertising information service
 advocate lawyer
 aerial-delivery airlift
@@ -45,8 +53,10 @@ aisle '*'
 alarm-clock clock
 album notebook
 alcohol drink
+aleatory-contract contract
+algorithmic-trading '*'
 alliance organization
-allowance gift money
+allowance gift money payment
 altar table
 aluminum medication metal
 alumnus '*'
@@ -58,6 +68,7 @@ amphibian '*'
 analogy '*'
 ancestor '*'
 angel '*'
+angel-investor investor
 anger '*'
 angle '*'
 animal organism
@@ -66,9 +77,11 @@ ankle '*'
 anniversary '*'
 annotation '*'
 announcement '*'
+annuity payment
 answer '*'
 ant insect
 anteroom room
+anti-money-laundering '*'
 anticipation '*'
 anxiety '*'
 apartment '*'
@@ -83,6 +96,8 @@ appliance '*'
 application software
 aquarium '*'
 arachnid '*'
+arbitrage '*'
+arbitrage-pricing-theory '*'
 arch '*'
 architect '*'
 architecture '*'
@@ -98,10 +113,17 @@ articulation '*'
 artifact physical-object
 artist person
 artistic-creation '*'
-ash chemical
+ash chemical goods
 ash-grey '*'
+asian-option exotic-option
+ask-price price purchase-price
 assault '*'
 assembly-hall room
+asset '*'
+asset-allocation asset-management
+asset-backed-security security-finance
+asset-class '*'
+asset-management financial-services
 assimilation chemical-reaction
 assistant scientist
 astronomy science
@@ -110,7 +132,9 @@ atmosphere gas
 atom '*'
 attention cognition
 attraction '*'
-auction sale
+auction pricing-strategy sale
+auction-bid price purchase-price
+auction-theory game-theory
 audience '*'
 audio '*'
 audited-account '*'
@@ -126,12 +150,15 @@ avocation '*'
 axis '*'
 baby child childhood
 backlog hill
+backtesting '*'
 bacon meat
 bacterium microorganism
+bad-debt '*'
 bag tool
 bail '*'
 baker '*'
 balance '*'
+balance-sheet financial-statement
 balcony '*'
 bale '*'
 ball artifact equipment
@@ -140,11 +167,17 @@ balloon '*'
 banana '*'
 band '*'
 bank-account '*'
+bank-card payment-card
 bank-check '*'
+banknote cash goods
+bankruptcy '*'
 banquet '*'
+barcode '*'
 bark '*'
-baron businessman
+baron entrepreneur
 barrel tool
+barrier-option exotic-option
+barriers-to-entry '*'
 barroom furniture mechanism
 barter commercial-trade
 base equipment
@@ -159,12 +192,13 @@ battle violence
 battlefield '*'
 battlefront '*'
 bay '*'
-bazaar '*'
+bazaar market
 beach '*'
 beak '*'
 beam '*'
 bean seed
 bear animal
+bear-market '*'
 beard '*'
 bed artifact furniture
 bedroom room
@@ -179,8 +213,13 @@ betrothal promise
 bible '*'
 bibliopole '*'
 bicycle artifact equipment
-bill '*'
+bid-ask-spread number
+bid-price price purchase-price
+bidder buyer
+bidding contract
+bill cash goods
 bill-of-lading '*'
+binary-option exotic-option
 biography '*'
 biology '*'
 bird '*'
@@ -188,10 +227,15 @@ birdcall '*'
 birth '*'
 birthday anniversary
 bishop '*'
+bitcoin '*'
+bitcoin-taproot '*'
 bite '*'
+black-market market
+black-scholes-model '*'
 blackmail crime
 blanket '*'
 block settlement
+blockchain distributed-ledger list
 blood liquid
 blue '*'
 board '*'
@@ -200,10 +244,13 @@ boat vehicle watercraft
 bolt tool
 bomb '*'
 bomber '*'
-bond loan
+bond financial-instrument loan
+bond-market financial-market
 bone '*'
-book publication
+book goods publication
+book-value '*'
 book-volume publication
+bookkeeping '*'
 booklet publication
 boom '*'
 boot clothing
@@ -231,16 +278,20 @@ brick '*'
 bride woman
 bridge '*'
 broccoli '*'
+broker businessman
 bronze '*'
 brother '*'
 brow '*'
 brush '*'
 bubble physical-object
 bucket tool
+budget-constraint '*'
 buffet '*'
 building '*'
 bulb '*'
+bull-market '*'
 bullet artifact
+bullwhip-effect '*'
 bun bread
 bunch group
 bungalow house
@@ -248,6 +299,10 @@ bureaucracy '*'
 burial '*'
 burn '*'
 bus '*'
+business organization
+business-interruption-insurance insurance
+business-loan loan
+business-model '*'
 businessman worker
 bustle skirt
 butcher '*'
@@ -255,6 +310,8 @@ butter '*'
 butterfly invertebrate
 buttocks '*'
 button clothing
+buy-and-hold '*'
+buyer economic-agent party
 cab vehicle
 cabaret '*'
 cabin '*'
@@ -267,6 +324,7 @@ cake '*'
 calamity '*'
 calendar '*'
 calf '*'
+call-option option-finance
 camera equipment
 can '*'
 candle '*'
@@ -275,7 +333,12 @@ canvas '*'
 cap clothing
 capacity '*'
 capital '*'
+capital-asset-pricing-model '*'
 capital-city '*'
+capital-expenditure '*'
+capital-gain income
+capital-loss '*'
+capital-market financial-market
 capitalism '*'
 captain '*'
 caput '*'
@@ -284,11 +347,18 @@ carbon '*'
 card '*'
 card-hand '*'
 care '*'
+cargo '*'
+cargo-aircraft '*'
+cargo-ship ship
 carnival '*'
 carriage '*'
 carrot dish plant-root prepared-dish vegetable
+cartel '*'
 cartoon drawing
 case furniture tool
+cash medium-of-exchange
+cash-flow payment
+cash-flow-statement financial-statement
 cash-register '*'
 cast '*'
 cast-of-characters '*'
@@ -309,11 +379,13 @@ celluloid equipment
 cemetery '*'
 censoring '*'
 census '*'
+central-counterparty '*'
 centre '*'
 century '*'
 cereal '*'
 cerebral-hemisphere '*'
 ceremony '*'
+certificate-of-deposit '*'
 chaff '*'
 chain '*'
 chain-of-stores '*'
@@ -330,9 +402,11 @@ characteristic number
 charity '*'
 charm fraction
 chart '*'
-charter '*'
-charter-contract '*'
+chart-of-accounts '*'
+charter contract
+charter-contract contract
 check '*'
+checking-account deposit-account
 cheek '*'
 cheese dairy-product
 chemical '*'
@@ -355,7 +429,7 @@ chord group
 chorus music-band organization
 church '*'
 cigarette '*'
-cinema occupation
+cinema business occupation
 circle '*'
 circular booklet tract
 citation '*'
@@ -365,8 +439,10 @@ civilian person
 civilisation '*'
 civilization '*'
 class '*'
+classified-advertising '*'
 classroom room
 clay '*'
+clearing-house '*'
 clemency '*'
 clerk '*'
 cliff slope
@@ -392,37 +468,51 @@ coffee '*'
 coffin furniture
 cognition '*'
 coin '*'
+coinbase-transaction '*'
 coincidence group
-coinsurance '*'
+coinsurance insurance
 cold '*'
+cold-chain supply-chain
 coldness '*'
 collar '*'
+collateral '*'
+collateral-management risk-management
+collateralized-debt-obligation bond security-finance
 colleague '*'
 collection group
 college '*'
+collusion '*'
 colon '*'
 colony '*'
 color '*'
 column '*'
 coma '*'
+combinatorial-auction auction
 comedy '*'
 comet '*'
 comic-strip '*'
 commemoration '*'
+commercial-paper goods
 commercial-trade '*'
 committee organization
 commodity '*'
+commodity-market financial-market wholesale
+commodity-money legal-tender
 common-sense '*'
+common-stock share stock-certificate
+commons '*'
 communist person
 community '*'
 compact car
 company organization
+comparative-advantage '*'
 comparison '*'
 compassion '*'
 competition '*'
 complication '*'
 composer musician
 compound '*'
+compound-interest interest
 compromise '*'
 computer machine
 computer-memory hardware
@@ -460,9 +550,15 @@ constitution structure
 construction-industry economic-production
 consultation meeting
 consumer '*'
-container '*'
+consumer-choice '*'
+container shipping-container
+container-ship bottom cargo-ship
+containerization '*'
 contempt '*'
+content-addressable-storage '*'
 continent '*'
+contract '*'
+contract-theory '*'
 contraction '*'
 contradiction '*'
 contrast number
@@ -470,27 +566,36 @@ contribution gift
 control-stick '*'
 controlling-interest share stock-certificate
 convalescence '*'
+convertible-bond bond derivative-finance
 cook craftsman
 cookie dessert
 copper medication metal
 copy text
+copyright '*'
 cord '*'
 cordial-reception '*'
 core '*'
 corn grain
 corn-exchange '*'
+corporate-bond bond
+corporation company
 correlation '*'
 corruption crime
+cost-of-goods-sold '*'
+cost-overrun financial-risk
+cost-plus-contract contract pricing-strategy
 costermonger peddler
 costume clothing
 cotton '*'
 council organization
 counter furniture
+counterparty-risk financial-risk
 counterspy '*'
 country '*'
 countryside settlement
 coupon '*'
 courage feeling
+courier '*'
 course-of-study '*'
 court '*'
 courtship ritual
@@ -503,9 +608,16 @@ craftsmanship '*'
 cream dairy-product
 credibility probability
 credit loan
-credit-card '*'
+credit-card bank-card
+credit-default-swap swap-finance
 credit-entry economic-value
 credit-line credit
+credit-rating '*'
+credit-rating-agency business occupation
+credit-risk financial-risk
+credit-score credit-rating
+credit-spread number
+creditor '*'
 crew '*'
 cricket '*'
 crime '*'
@@ -518,10 +630,16 @@ crop '*'
 cross '*'
 crossing '*'
 crowd '*'
+crowdfunding business-model sharing-economy
 crown clothing
 cruelty '*'
 crutch '*'
 cry '*'
+cryptocurrency payment-system
+cryptocurrency-exchange capital-market cryptocurrency
+cryptocurrency-mining '*'
+cryptocurrency-wallet '*'
+cryptographic-hash-function function
 crystal chemical substance
 cubicle bedroom
 cucumber '*'
@@ -531,38 +649,54 @@ cupboard furniture room
 cupful '*'
 curate '*'
 curl function
-currency money
+currency medium-of-exchange money
+currency-pair '*'
 current electricity
+current-asset '*'
 curtain '*'
 curve '*'
 cushion '*'
+custodian-bank '*'
 custom '*'
-customer '*'
+customer economic-agent
+customs-broker '*'
 cutler craftsman worker
 cycle '*'
 cylinder '*'
-dairy building occupation
+dairy building business occupation
 dairy-product '*'
 dark '*'
 dark-blue blue
+dark-pool capital-market
 data-file '*'
 date botanical-fruit food fruit
 daughter offspring young
 dawn '*'
+day-trading '*'
 daylight '*'
+dead-cat-bounce '*'
+dealer-finance '*'
 dearth deficit
 death '*'
 debate '*'
 debit '*'
+debit-card payment-card
+debt-restructuring '*'
+debtor '*'
 decade '*'
 decay '*'
+decentralized-application '*'
+decentralized-autonomous-organization '*'
+decentralized-exchange '*'
 deck '*'
 declaration '*'
 decoration artifact
 decorative-design '*'
-deduction '*'
+deducted-amount '*'
+deductible '*'
 deed '*'
 deer '*'
+default-finance failure
 defendant party
 deficit '*'
 definition '*'
@@ -570,14 +704,18 @@ degree '*'
 deity concept
 delegate '*'
 delivery '*'
+demand-forecasting '*'
 democracy '*'
 demonstration '*'
 dentist doctor
-depository-financial-institution occupation
+deposit-account bank-account
+depository-financial-institution enterprise
 depreciation '*'
 depression '*'
 depressive-disorder '*'
 deputy politician
+derivative-finance security-finance
+derivatives-market financial-market
 desert habitat
 desk table
 dessert dish prepared-dish
@@ -593,33 +731,43 @@ diamond jewel
 dictionary publication
 diet food
 dig '*'
+digital-signature '*'
 diligence '*'
 diminution '*'
 dinner '*'
 diplomat '*'
+direct-debit financial-transaction transaction
 director artist manager
 directory catalog
 disability '*'
 disappointment '*'
 disco '*'
+discounted-cash-flow '*'
+discounting '*'
 disease '*'
 disgrace '*'
-dish food
+dish food goods
 dish-aerial '*'
 disk '*'
 dismissal '*'
 disposition text
 dissertation research
 distortion '*'
+distributed-ledger '*'
+distribution-center '*'
 distributor '*'
 district '*'
+diversification asset-allocation
 divestiture '*'
+dividend payment
 division '*'
+division-of-labour '*'
 divorce '*'
 doctor '*'
 documentation information
 dog '*'
-doll artifact
+doll artifact goods
+dollar-cost-averaging '*'
 dolphin '*'
 dome ceiling
 dominance '*'
@@ -629,9 +777,11 @@ doorbell '*'
 doorsill '*'
 dormitory '*'
 double '*'
+double-entry-bookkeeping bookkeeping
+double-spending '*'
 doubt '*'
 dough spread
-down-payment '*'
+down-payment payment
 draft '*'
 dragon '*'
 drain gutter
@@ -651,29 +801,42 @@ drinking '*'
 driver '*'
 driveway '*'
 drop '*'
+drop-shipping '*'
 drug '*'
 drum musical-instrument
 duck '*'
 due-west '*'
 duke title-of-respect
 dust '*'
+dutch-auction auction
 duty principle
 dwelling '*'
+dynamic-pricing pricing-strategy
+e-commerce business occupation
 eagle '*'
 ear organ
+earnest-payment contract
+earnings '*'
+earnings-per-share '*'
 earth '*'
 earthquake '*'
 easiness '*'
 east '*'
 echo '*'
+economic-agent '*'
+economic-elasticity '*'
+economic-order-quantity '*'
 economic-production '*'
 economic-rent number
+economic-utility '*'
 economic-value '*'
 economics social-science
+economies-of-scale comparative-advantage
 economist scientist
 ecstasy '*'
 edge '*'
 education service
+efficient-market-hypothesis '*'
 egg food
 egg-white food
 eggshell housing
@@ -685,10 +848,13 @@ electric-switch '*'
 electrical-conductor '*'
 electricity '*'
 electron '*'
+electronic-communication-network '*'
+electronic-funds-transfer '*'
 electronics '*'
 elephant mammal
 elevator machine
 elite class
+elliptic-curve-cryptography '*'
 email letter
 embassy building
 embryo organism
@@ -696,23 +862,35 @@ emergency crisis
 empire realm
 employee worker
 employment '*'
+employment-contract contract
 enchantment '*'
 enemy acquaintance adversary
 engagement promise
 engine machine
 engineer worker
 engineering '*'
+english-auction auction
+enterprise business occupation
 entertainment '*'
 enthusiasm '*'
 enticement '*'
+entrepreneur businessman
+entrepreneurship '*'
 envelope '*'
 environment '*'
 episode '*'
-equipment '*'
+equilibrium-price price purchase-price
+equipment goods
 equity '*'
 era '*'
+erc-20-token currency smart-contract
 erosion '*'
+escrow '*'
 essay '*'
+ethereum '*'
+ethereum-improvement-proposal '*'
+ethereum-name-service '*'
+ethereum-virtual-machine '*'
 ethics philosophy
 europe '*'
 evening '*'
@@ -722,21 +900,28 @@ exam '*'
 examination '*'
 examiner policeman
 excerpt text
+exchange-rate ratio
+exchange-traded-fund security-finance
 exemplar text
 exercise fitness
 exhibition '*'
 exile '*'
+exotic-option option-finance
 expansion '*'
+expected-shortfall '*'
 expense-account '*'
 expert person
+expiration-date '*'
 explaining concept message
 explanation concept message
 exploration voyage
 explosion '*'
-exporting '*'
+export international-trade
+exporting international-trade
 exposure '*'
 expressway '*'
 extent '*'
+externality '*'
 extraterrestrial-being organism
 eye '*'
 eyebrow '*'
@@ -745,13 +930,17 @@ fabric '*'
 facade '*'
 face '*'
 facsimile '*'
+factoring financial-transaction transaction
 factory organization
 failure '*'
 fair '*'
+fair-value '*'
 fairy '*'
 fall '*'
+fama-french-three-factor-model '*'
 fame '*'
 family '*'
+family-office '*'
 fan person
 farm workplace
 farmer '*'
@@ -769,19 +958,34 @@ ferry ship
 ferry-transport ship
 festival '*'
 fever symptom
+fiat-money currency
 fiber thread
 fiction '*'
 fictional-character '*'
+fiduciary businessman
 field '*'
 fig food
 file '*'
 file-cabinet wardrobe
+fill-or-kill '*'
 film '*'
 filter '*'
+financial-advisor '*'
+financial-asset intangible-asset
 financial-audit audited-account
+financial-bubble '*'
+financial-capital '*'
+financial-instrument contract goods
+financial-leverage '*'
+financial-market market
+financial-risk '*'
+financial-services business-model service
+financial-statement '*'
+financial-transaction '*'
 fine '*'
 finger '*'
 fingernail '*'
+fire-insurance insurance
 fireman worker
 fish '*'
 fish-meat food
@@ -791,13 +995,16 @@ fishmonger woman
 fist '*'
 fit '*'
 fitness '*'
+fixed-asset '*'
 flag symbol
 flame chemical-reaction
 flare '*'
 flash equipment
-flashlight '*'
+flashlight goods
 flatware '*'
+fleet-management '*'
 flesh tissue
+floating-rate-note bond
 flock '*'
 flood '*'
 flour food powder
@@ -816,6 +1023,7 @@ food '*'
 foot '*'
 foray '*'
 force '*'
+foreign-exchange-market market
 foreman '*'
 forest habitat
 forestry '*'
@@ -823,6 +1031,8 @@ fork '*'
 form '*'
 formula '*'
 forum public-square
+forward-contract derivative-finance
+forward-price price purchase-price
 fountain '*'
 fox '*'
 fraction number
@@ -831,30 +1041,41 @@ frank culture custom dish prepared-dish
 fraud '*'
 freak '*'
 freckle '*'
+freemium '*'
 freight '*'
 freight-charge '*'
+freight-forwarder '*'
+freight-train train
+freight-transport '*'
 freshman '*'
 friend acquaintance
 friendship '*'
 frog '*'
+front-running '*'
 fruit '*'
 frustration '*'
 fuel chemical
+fulfillment-house business occupation warehouse
 fun '*'
 function '*'
+fundamental-analysis '*'
 fundamental-law structure
 funeral '*'
+fungibility '*'
 fungus organism
 fur hair skin
 furniture '*'
 fury anger
 future '*'
+futures-contract forward-contract
+futures-exchange derivatives-market
+futures-market derivatives-market
 galaxy '*'
 gallery museum
 game '*'
 game-theory '*'
 garage building
-garage-sale '*'
+garage-sale market
 garbage '*'
 garden workplace
 garlic vegetable
@@ -865,6 +1086,8 @@ gate '*'
 gem jewel
 gene '*'
 general employee warrior
+general-ledger '*'
+genesis-block '*'
 genius person
 genus-pan '*'
 geography science
@@ -873,6 +1096,7 @@ ghost '*'
 ghostwriter writer
 giant '*'
 gift '*'
+gig-economy '*'
 girlfriend friend
 glacier '*'
 glance mineral
@@ -889,8 +1113,12 @@ goat '*'
 gold '*'
 golf sport
 good '*'
+goods '*'
+goods-and-services goods
+goodwill-asset financial-asset
 gossip '*'
 government organization
+government-bond bond
 government-cabinet organization
 government-security '*'
 governor leader
@@ -908,6 +1136,7 @@ green '*'
 greengrocer workplace
 greenhouse workplace
 greeting-card '*'
+grey-market market
 grief '*'
 grimace '*'
 grinder dish prepared-dish
@@ -918,10 +1147,11 @@ gross-profit number
 ground electrical-conductor
 ground-rent '*'
 group '*'
-group-insurance '*'
+group-insurance insurance
 growth '*'
+growth-investing '*'
 growth-stock '*'
-guaranty '*'
+guaranty call-option
 guard '*'
 guard-unit '*'
 guerrilla '*'
@@ -932,7 +1162,7 @@ guilt '*'
 guitar '*'
 gun '*'
 gun-barrel '*'
-gutter '*'
+gutter goods
 habitat environment
 hair '*'
 haircut '*'
@@ -941,9 +1171,11 @@ ham meat
 hammer '*'
 handbag housing
 handcart '*'
+hard-fork blockchain
 hardware '*'
 harmony '*'
 harvest '*'
+hash-chain '*'
 hat clothing
 hatmaker '*'
 hauling '*'
@@ -953,12 +1185,15 @@ head '*'
 head-covering '*'
 headline '*'
 headquarters '*'
+health-insurance insurance
 heart '*'
 heart-card '*'
 heart-shape '*'
 heat '*'
 heating-system '*'
 hedge fence
+hedge-finance '*'
+hedge-fund '*'
 heel '*'
 heir '*'
 helicopter '*'
@@ -970,6 +1205,7 @@ herd '*'
 hero '*'
 heroin '*'
 hierarchy '*'
+high-frequency-trading algorithmic-trading
 hill '*'
 hip '*'
 hire-purchase credit
@@ -983,6 +1219,7 @@ home '*'
 home-loan '*'
 honey '*'
 honor '*'
+honorarium payment
 honour '*'
 hopeful-anticipation '*'
 horizon '*'
@@ -997,10 +1234,10 @@ host '*'
 hostage prisoner
 hostel building hotel restaurant
 hostility '*'
-hotel occupation
+hotel enterprise
 hour '*'
 house building
-houseplant plant
+houseplant goods plant
 housewife person wife woman
 housing tool
 hovel building hotel
@@ -1028,48 +1265,76 @@ immigrant '*'
 immigration '*'
 impact '*'
 implication '*'
-import '*'
+implied-volatility '*'
+import international-trade
 importance function
-importing '*'
+importing international-trade
 imposter '*'
+income '*'
+income-statement financial-statement
 increment number
-indenture '*'
+indenture contract
 index finger
+index-fund '*'
+indifference-curve '*'
 indigence '*'
 individual organism
-industry occupation workshop
+industry business occupation workshop
 infection '*'
 inflation '*'
+inflation-indexed-bond bond
 influenza '*'
 informant '*'
 information '*'
+information-asymmetry '*'
 infrastructure structure
 ingredient '*'
 inhabitant person
 initial letter-of-the-alphabet
+initial-coin-offering '*'
+initial-public-offering '*'
 injection '*'
 injury '*'
 innovation '*'
 insect invertebrate
+insider-trading market-abuse
 insight '*'
-insolvency '*'
+insolvency financial-risk
 inspiration '*'
+installment payment
 instinct '*'
+institutional-investor investor
+insurance financial-services
+insurance-policy '*'
+intangible-asset '*'
 integration '*'
 intellect '*'
 interest '*'
 interest-rate '*'
+interest-rate-swap derivative-finance
 interface '*'
+intermediary '*'
+intermodal-container shipping-container
+internal-rate-of-return '*'
+international-trade '*'
 internet '*'
+interoperability '*'
 intersection '*'
 interview '*'
 intestine '*'
+intrinsic-value '*'
 introduction '*'
 intuition '*'
 invasion therapy
 invention '*'
+inventory '*'
+inventory-management '*'
+inventory-turnover '*'
 invertebrate animal
 investment '*'
+investor businessman
+invoice '*'
+ipfs '*'
 iron medication
 island '*'
 isolation '*'
@@ -1096,8 +1361,10 @@ joy '*'
 judge professional specialist
 judgment '*'
 juice '*'
+junk-bond bond
 jurisprudence legislation
 jury organization
+just-in-time-manufacturing logistics
 keep '*'
 kettle '*'
 key mechanism
@@ -1109,15 +1376,17 @@ king '*'
 king-card '*'
 kinship '*'
 kitchen room
-kite '*'
+kite goods
 knee '*'
 knife tool
 knight '*'
 knot '*'
+know-your-customer '*'
 koran '*'
 lab study
 label artifact
 labor '*'
+labor-market market
 laborer employee
 labour class
 lace '*'
@@ -1136,6 +1405,8 @@ language '*'
 lap '*'
 larceny '*'
 laser '*'
+last-mile '*'
+late-fee '*'
 laundry care service
 laurel-wreath clothing prize
 law social-science
@@ -1144,9 +1415,10 @@ lawyer professional specialist
 layout '*'
 lead '*'
 lead-metal '*'
+lead-time '*'
 leader person
 leaf '*'
-lease '*'
+lease contract
 leash '*'
 leather '*'
 leave '*'
@@ -1154,6 +1426,7 @@ lecture presentation
 leftovers food
 leg '*'
 legal-age '*'
+legal-tender '*'
 legend '*'
 legislation '*'
 legislature '*'
@@ -1161,51 +1434,64 @@ leisure '*'
 lemon '*'
 lesson '*'
 letter '*'
-letter-of-credit '*'
+letter-of-credit payment-system
 letter-of-the-alphabet '*'
 level '*'
-liability-insurance '*'
+leverage '*'
+liability financial-statement
+liability-insurance insurance
 liberty '*'
 library room
+license contract
 lid '*'
 lie '*'
 life '*'
+life-insurance insurance
 lift '*'
 light '*'
 light-bulb lamp
 lighter tool
+lightning-network '*'
 limb '*'
 limit '*'
+line-of-credit credit
 linen '*'
 linendraper '*'
 linguistics humanities social-science
 lion '*'
 lip '*'
 liquid fluid
+liquidity '*'
+liquidity-risk financial-risk
 list '*'
+list-price price pricing-strategy purchase-price
 literacy skill
 liver '*'
 livestock '*'
-loan transaction
+loan financial-transaction goods transaction
 lobby workplace
 lock mechanism
 locomotive '*'
 loft '*'
 log-cabin house
 logarithm '*'
+logistics '*'
+long-position '*'
 look-alike person
 lookout guard
 looting crime
+loss-leader goods-and-services
 lot '*'
 lottery game
 loudspeaker '*'
 lounge room
 love '*'
 low '*'
-lozenge '*'
+lozenge goods
 luck '*'
 lumber artifact
 luminosity '*'
+lump-sum payment
 lunch '*'
 lung organ
 machine '*'
@@ -1216,7 +1502,7 @@ magnitude '*'
 maid servant
 mail '*'
 mail-service '*'
-mailman employee
+mailman courier employee
 majority '*'
 male-child child childhood
 mammal '*'
@@ -1233,8 +1519,27 @@ mar '*'
 marathon race
 marble '*'
 margin '*'
+margin-call '*'
+marginal-cost opportunity-cost
+marginal-utility '*'
 mark '*'
+market '*'
+market-abuse '*'
+market-capitalization '*'
+market-clearing '*'
+market-correction '*'
+market-depth '*'
+market-failure financial-risk
+market-index '*'
+market-liquidity liquidity
+market-maker '*'
+market-manipulation market-abuse
+market-participant economic-agent
+market-power '*'
+market-price price purchase-price
+market-risk financial-risk
 marketing '*'
+marketplace market
 marriage ceremony
 marriage-proposal '*'
 married-couple '*'
@@ -1244,31 +1549,38 @@ mask clothing
 mass '*'
 master-of-ceremonies '*'
 match tool
+matching-engine '*'
 matchstick tool
 mathematics '*'
 matrimony '*'
 matrix '*'
+maximum-drawdown '*'
 mayor '*'
 maze '*'
-meal commodity grass
+meal commodity goods grass
 meaning '*'
 measuring-stick tool
 meat flesh food
 mechanism '*'
+mechanism-design '*'
 medication drug
 medicine '*'
 medium '*'
+medium-of-exchange '*'
 meeting '*'
 memorial '*'
 memory '*'
 mental-hospital '*'
 menu '*'
-merchant businessman
+merchant businessman economic-agent
+merkle-tree '*'
 message information
 metal '*'
 method textbook
 metro '*'
+microfinance goods
 microorganism organism
+micropayment payment
 microphone detector hardware interface musical-instrument
 midnight '*'
 mile '*'
@@ -1284,9 +1596,10 @@ minimum '*'
 minister '*'
 ministry '*'
 miracle '*'
-mirror artifact
+mirror artifact goods
 mist fog
 model '*'
+modern-portfolio-theory '*'
 module '*'
 mold fungus
 mole '*'
@@ -1294,17 +1607,25 @@ mole.attribute '*'
 molecule '*'
 mollusc food
 momentum '*'
+momentum-investing '*'
 monarchy '*'
 monastery settlement
 monetary-wealth '*'
 money '*'
+money-laundering '*'
+money-market financial-market
 monk '*'
 monkey mammal
+monopolistic-competition '*'
 monopoly '*'
 monopsony '*'
+monte-carlo-methods-in-finance '*'
 moon '*'
+moral-hazard '*'
 morning '*'
 mortgage '*'
+mortgage-backed-security security-finance
+mortgage-loan credit
 mosaic '*'
 mosque organization
 mosquito animal
@@ -1334,8 +1655,10 @@ musical-instrument tool
 musical-note '*'
 musician artist
 mutation '*'
+mutual-fund '*'
 nail tool
 name information
+nash-equilibrium function
 natural-depression '*'
 natural-language '*'
 natural-law '*'
@@ -1353,12 +1676,17 @@ nephew '*'
 nerve tissue
 nest '*'
 net artifact equipment
+net-income income
+net-present-value '*'
+netting '*'
+network-effect '*'
 news '*'
 newsagent workplace
 newspaper '*'
 night '*'
 nightmare dream
 nomination '*'
+non-fungible-token cryptocurrency
 nonsense '*'
 norm '*'
 normal '*'
@@ -1367,6 +1695,7 @@ nose '*'
 notebook '*'
 notebook-computer computer
 notice.communication '*'
+novation '*'
 nuclear-reactor '*'
 number '*'
 nun monk
@@ -1382,28 +1711,40 @@ office workplace
 offspring '*'
 old-age '*'
 olfactory-property '*'
+oligopoly '*'
 onion '*'
+online-marketplace marketplace
+open-account contract
+open-interest '*'
 opera musical-composition
 operating-expense '*'
+operating-income income
 operating-system '*'
 operation therapy
+operational-risk '*'
 opinion point-of-view slant
 opinion-poll '*'
+opportunity-cost '*'
 opposition political-party
 optimism '*'
+option-finance derivative-finance
 orange '*'
 orange-colour '*'
 orbit curve
 orchestra '*'
+order-book '*'
+order-fulfillment '*'
 organ '*'
 organism physical-object
 organization '*'
 orgy '*'
 outfit '*'
 oven '*'
-over-the-counter-market transaction
+over-the-counter-market financial-transaction transaction
 overall '*'
+overdraft '*'
 owl '*'
+ownership '*'
 oxygen '*'
 pack '*'
 package '*'
@@ -1415,25 +1756,30 @@ paint '*'
 painter '*'
 painting art artistic-creation
 palace house
+pallet '*'
 palm '*'
 panic fear
 paper '*'
+par-value '*'
 parade '*'
 paradox '*'
 paragraph '*'
 parameter '*'
 parcel '*'
 parent '*'
+pareto-efficiency '*'
 park '*'
 parking '*'
 parliament legislature
 part '*'
+participation-loan loan
 particle physical-object
 partnership '*'
 party person
 passenger person
 passing '*'
 passion '*'
+passive-management '*'
 passport '*'
 password '*'
 past '*'
@@ -1449,6 +1795,11 @@ patriotism '*'
 pattern decorative-design
 pause '*'
 pawn '*'
+payment financial-transaction transaction
+payment-card payment-system
+payment-processor '*'
+payment-system goods
+payment-terms '*'
 peace '*'
 peacetime '*'
 peanut '*'
@@ -1457,30 +1808,38 @@ peddler '*'
 pedestrian '*'
 peel '*'
 peer '*'
+peer-to-peer '*'
+peer-to-peer-lending loan
 pen '*'
 pencil '*'
+penetration-pricing '*'
+pension-fund '*'
 people mammal
 pepper '*'
 perceiver '*'
 perception '*'
 perceptiveness '*'
+perfect-competition '*'
 performance-bond '*'
 performer musician
 perfume chemical
+perpetuity annuity
 person '*'
+personal-loan loan
 perspiration '*'
 pest organism
 pet '*'
 petty-cash '*'
 philosopher '*'
 philosophy '*'
-phone '*'
+phone goods
 phone-call '*'
 phone-number information
 photograph image
 photographer '*'
 photographic-film equipment
 photography '*'
+physical-capital '*'
 physical-object '*'
 physics '*'
 piano '*'
@@ -1503,6 +1862,7 @@ plant-root '*'
 plaster '*'
 plastic '*'
 plate '*'
+platform-economy '*'
 play '*'
 player person
 playground-swing '*'
@@ -1512,6 +1872,7 @@ plot.communication '*'
 pneumonia disease illness symptom
 pocket tool
 poetry '*'
+point-of-sale '*'
 point-of-view '*'
 pointer '*'
 poison chemical
@@ -1523,16 +1884,19 @@ political-party '*'
 politician professional specialist
 politics '*'
 pony horse
+ponzi-scheme pyramid-scheme
 pool '*'
 pop drink
 pop-music '*'
 populace '*'
 population magnitude
 porter '*'
+portfolio financial-asset
 portrait image
 poser mannequin
 post '*'
-postage '*'
+postage goods
+postage-stamp goods
 postcard '*'
 potato plant
 potential function
@@ -1546,9 +1910,10 @@ practice-session parade
 prayer text
 precedent '*'
 preferred-stock share stock-certificate
-prepared-dish food
+prepared-dish food goods
 prescription '*'
 prescription-drug medication
+present-value '*'
 presentation '*'
 preservation '*'
 presidency '*'
@@ -1558,57 +1923,83 @@ press machine
 pressure '*'
 prey organism
 price '*'
+price-discrimination pricing-strategy
+price-earnings-ratio '*'
+price-skimming '*'
+price-volatility '*'
+price-war '*'
+pricing-strategy '*'
 prince '*'
 princess woman
+principal-agent-problem operational-risk
 principle structure
 print-seller art-dealer retailer
 printer hardware
 prison '*'
 prisoner inhabitant
+prisoners-dilemma '*'
 privacy secrecy
+private-equity '*'
+private-key '*'
 privilege '*'
 prize '*'
 probability '*'
 process tissue
+procurement '*'
 produce '*'
-producer businessman
+producer entrepreneur
 product '*'
+product-bundling '*'
 profession '*'
 professional worker
 professor scientist
 professorship '*'
+profit '*'
 prognosis '*'
 program publication
 prohibition '*'
 promise declaration
 promotion '*'
 promotional-material '*'
+proof-of-stake '*'
+proof-of-work '*'
 propaganda '*'
+property-title '*'
 protection '*'
 protein '*'
 psychoanalysis psychology
+psychological-pricing '*'
 psychologist '*'
 psychology '*'
 public '*'
+public-good '*'
 public-house '*'
+public-key '*'
 public-square '*'
 publication '*'
-publisher company occupation
+publisher company enterprise
 pudding dessert
 pulp tissue
 pulse '*'
 pump tool
+pump-and-dump '*'
 pumpkin botanical-fruit fruit vegetable
 punch '*'
 pupil '*'
+purchase-order '*'
 purchase-price '*'
+purchasing procurement
 pursuit '*'
 push-button hardware interface
+put-option option-finance
 puzzle '*'
 pyramid '*'
+pyramid-scheme business-model
+qr-code '*'
 quantity '*'
 quarrel '*'
 quarter coin
+quasi-contract contract
 queen leader sovereign
 quest '*'
 questionnaire collection
@@ -1635,7 +2026,10 @@ randomness uncertainty
 range '*'
 rape '*'
 rate-of-exchange ratio
+rate-of-return '*'
 ratio '*'
+real-estate-business business occupation
+real-estate-loan loan
 realism '*'
 realm '*'
 rear '*'
@@ -1655,22 +2049,27 @@ region '*'
 register pitch
 rehabilitation '*'
 rehearsal '*'
+reinsurance business insurance occupation
 relative person
 reliance '*'
 religious-service ritual service
 relish salad sauce
 remainder '*'
 remedy therapy
-remittance '*'
+remittance goods payment
 renovation '*'
+renting contract financial-services
 replica '*'
 reply '*'
 reporter person
 reptile '*'
+repurchase-agreement '*'
 reputation '*'
+requirements-contract contract
 research '*'
 research-worker '*'
 reservation '*'
+reservation-price price purchase-price
 reserve medication
 reservoir tool
 residential-district settlement
@@ -1684,9 +2083,15 @@ retained-earnings number
 retainer '*'
 retaliation '*'
 retirement notice.communication
+return-on-investment '*'
+revenue income
+revenue-model '*'
+reverse-auction auction
+reverse-logistics logistics
 reversion mutation
 reviewer critic
 reward '*'
+rfid '*'
 rhetoric '*'
 rhythm tempo
 rib bone
@@ -1698,6 +2103,9 @@ right-to-vote '*'
 ring '*'
 riot '*'
 risk-arbitrage '*'
+risk-free-interest-rate '*'
+risk-management '*'
+risk-neutral-measure '*'
 ritual ceremony custom
 river '*'
 road '*'
@@ -1705,15 +2113,16 @@ road-shoulder lane
 roadway road
 robbery crime
 'rock-'"'"'n'"'"'-roll' '*'
-rocket '*'
+rocket goods
 role-model person
 roof '*'
 room '*'
-rope braid
+rope braid goods
 rose flower
 rotary-motion motion
 rotation motion
 route '*'
+route-planning '*'
 row information
 royal-court '*'
 rug '*'
@@ -1721,18 +2130,21 @@ rugby sport
 ruin '*'
 rule.cognition '*'
 ruler tool
-rummage-sale '*'
+rummage-sale market
 rumor '*'
 runner '*'
 rural-area settlement
 sacrifice '*'
 safety '*'
-sail '*'
+safety-stock '*'
+sail goods
 sailor '*'
 salad dish prepared-dish
-sale commercial-trade
+salary income payment
+sale business-model commercial-trade
+sales-contract contract
 salmon fish fish-meat
-salon occupation workplace
+salon business occupation workplace
 salt '*'
 sample '*'
 sanctuary '*'
@@ -1741,11 +2153,15 @@ sandal shoe
 sarcasm '*'
 satellite '*'
 satisfaction joy
+satoshi '*'
 sauce '*'
 sausage '*'
+savings '*'
+savings-account deposit-account goods
 scab worker
 scale '*'
 scandal '*'
+scarcity deficit operational-risk
 schedule '*'
 schema '*'
 schism '*'
@@ -1769,13 +2185,20 @@ seashore '*'
 seat furniture
 sec '*'
 second '*'
+secondary-market financial-market
 secrecy '*'
 secretary clerk
 section '*'
 sector '*'
+securities-lending financial-transaction transaction
+securities-trader merchant
+securitization '*'
+security-finance financial-asset financial-instrument
 sediment '*'
 seed food
 seed-money '*'
+seed-phrase '*'
+segwit '*'
 selection '*'
 self '*'
 self-insurance '*'
@@ -1787,16 +2210,23 @@ serial text
 series '*'
 sermon '*'
 servant worker
-service '*'
+service goods-and-services
+service-contract contract
 settlement '*'
+settlement-date '*'
+settlement-finance '*'
 settler-colony '*'
 shackle '*'
 shadow '*'
 shaft '*'
 shame '*'
 shape '*'
-share '*'
+share security-finance
+share-repurchase financial-transaction transaction
+shareholder stakeholder
+sharing-economy '*'
 shark fish fish-meat
+sharpe-ratio '*'
 sheep '*'
 sheet blanket
 shelf '*'
@@ -1805,6 +2235,8 @@ shelter '*'
 shield '*'
 shift '*'
 ship watercraft
+shipment '*'
+shipping-container '*'
 shipping-traffic skill
 shirt top
 shock '*'
@@ -1813,10 +2245,12 @@ shooting sport
 shop workplace
 shopkeeper merchant
 shopping '*'
-shot artifact
+short-selling '*'
+shot artifact goods
 shoulder '*'
 shower '*'
 shrub plant
+sidechain blockchain
 sidewalk '*'
 siege '*'
 sieve '*'
@@ -1831,6 +2265,7 @@ silk '*'
 silver '*'
 silver-screen '*'
 similarity function
+simple-interest interest
 sin '*'
 singer musician
 single-file '*'
@@ -1848,14 +2283,15 @@ skirt clothing
 skull '*'
 sky '*'
 slant '*'
-slave prisoner
+slave goods prisoner
 sleep '*'
 sleeve '*'
 slice '*'
 slide '*'
 slope '*'
 slot '*'
-sludge fluid waste
+sludge fluid goods waste
+smart-contract financial-transaction transaction
 smell perception
 smile '*'
 smoke physical-object
@@ -1872,18 +2308,22 @@ sociology social-science
 sock clothing
 sodium '*'
 sofa furniture
-software '*'
+soft-fork blockchain
+software goods
 software-agent '*'
 software-library software
 soil '*'
 soldier employee warrior
+sole-proprietorship enterprise
 solidarity '*'
+solidity '*'
 solo musical-composition
 soprano '*'
 sorrow worry
 soup dish prepared-dish
 south '*'
 sovereign '*'
+sovereign-wealth-fund '*'
 spacecraft vehicle
 speaker person
 specialist worker
@@ -1891,6 +2331,7 @@ species '*'
 specimen '*'
 spectacles clothing
 spectator aircraft
+speculation '*'
 spell '*'
 sphere surface
 sphere-of-influence '*'
@@ -1902,6 +2343,8 @@ spokesperson '*'
 spontaneous-abortion '*'
 spoon '*'
 sport game
+spot-market financial-market
+spot-price contract
 spouse '*'
 spray chemical
 spread food
@@ -1909,13 +2352,16 @@ spring '*'
 springtime '*'
 square '*'
 stable '*'
+stablecoin cryptocurrency
 stadium '*'
 stage workplace
 stage-set '*'
 stairway '*'
+stakeholder '*'
 stalk '*'
 stamp-dealer merchant
 star '*'
+startup-company business occupation
 state-of-matter '*'
 station '*'
 stationer retailer
@@ -1926,12 +2372,25 @@ steam gas water
 steel '*'
 steward governor
 stimulation '*'
-stock-certificate '*'
-stock-exchange '*'
-stock-trader trader
-stockholder '*'
+stipend payment
+stock security-finance
+stock-certificate security-finance
+stock-exchange capital-market
+stock-keeping-unit '*'
+stock-market capital-market
+stock-market-crash '*'
+stock-market-index goods market-index
+stock-split '*'
+stock-trader securities-trader trader
+stock-warrant call-option
+stockbroker broker securities-trader trader
+stockholder stakeholder
+stockout '*'
 stomach '*'
 stool '*'
+stop-loss-order '*'
+stop-order '*'
+store-of-value '*'
 storey '*'
 storm wind
 stove workbench
@@ -1944,13 +2403,16 @@ street road
 streetcar '*'
 strength '*'
 strike '*'
-string mechanism
+strike-price price purchase-price
+string goods mechanism
 stroke '*'
 structure '*'
+structured-product derivative-finance
 student '*'
 studio building room workshop
 study room workplace
 subscriber '*'
+subscription-business-model service
 substance '*'
 suburb settlement
 suffering sense
@@ -1965,10 +2427,15 @@ summer '*'
 summit '*'
 sun '*'
 sunday holiday
+sunk-cost '*'
 sunlight light
 sunrise '*'
 supermarket grocery-store
 supervisor manager
+supply-and-demand '*'
+supply-chain '*'
+supply-chain-management logistics
+surcharge payment
 surface '*'
 surgeon doctor
 surgery '*'
@@ -1977,6 +2444,7 @@ surrogate animal
 survival '*'
 survivor victim
 suspect '*'
+swap-finance derivative-finance
 sweat-equity '*'
 sweater top
 swing '*'
@@ -1999,6 +2467,7 @@ teacher '*'
 teaching education
 team organization
 tear liquid
+technical-analysis '*'
 telephone-line '*'
 television medium
 temple '*'
@@ -2020,36 +2489,42 @@ therapy '*'
 thigh '*'
 thinker '*'
 thinking '*'
+third-party-logistics logistics
 thread '*'
 throat '*'
 throne '*'
 thumb finger
-ticket '*'
+tick-size '*'
+ticker-symbol '*'
+ticket medium-of-exchange payment-system
 tide motion
 tiger '*'
 tile '*'
 tilt '*'
+time-value-of-money '*'
 timetable schedule
 tin '*'
 tip '*'
 tip-end '*'
-tire '*'
+tire goods
 tissue '*'
 tissue-paper paper
 title-of-respect sign
 toast bread
 tobacconist workplace
 toe '*'
+token-airdrop payment
+tokenomics '*'
 toll '*'
 tomato vegetable
 tonality '*'
 tone '*'
 tongue '*'
-tontine '*'
+tontine contract life-insurance
 tool artifact equipment
 tooth '*'
 top clothing
-torch '*'
+torch goods
 torso '*'
 torture crime violence
 tourism voyage
@@ -2061,33 +2536,46 @@ trace '*'
 tract publication
 traction '*'
 trade '*'
+trade-credit credit
+trademark '*'
 trader merchant
+trading-halt '*'
+trading-volume '*'
 traffic motion
 tragedy drama dramatic-play
+tragedy-of-the-commons '*'
 trail '*'
 train '*'
 trainer '*'
 training '*'
 training-workshop meeting service
+tranche security-finance
 transaction '*'
+transaction-cost '*'
 transmission '*'
 transport '*'
 transportation '*'
-transshipment freight
+transportation-management-system '*'
+transshipment freight freight-transport
 trap tool
 tray tool
 treasure collection
 treasurer businessman
+treasury-bill financial-instrument
+treasury-note bond
 treaty '*'
 tree plant
 trench '*'
 trial '*'
+trial-balance '*'
 tribunal '*'
 troop '*'
 trophy prize
 trouser clothing
 truck '*'
 trust '*'
+trust-beneficiary '*'
+trustee '*'
 truth '*'
 tub '*'
 tube '*'
@@ -2096,16 +2584,22 @@ turkey '*'
 twilight '*'
 twin '*'
 twist '*'
+two-sided-market market
 ulcer '*'
 umbrella clothing
 uncertainty '*'
 uncle '*'
+underlying-asset security-finance
 underside '*'
+underwriting '*'
 unemployment '*'
 uniform clothing
 union '*'
+unit-cost price purchase-price
+unit-of-account '*'
 universe '*'
 university organization
+unspent-transaction-output '*'
 urine liquid
 user '*'
 usury interest
@@ -2113,6 +2607,9 @@ vacation leave
 vacuum machine tool
 valley natural-depression
 valuation '*'
+value-at-risk '*'
+value-investing '*'
+value-proposition '*'
 van '*'
 variant '*'
 vegetable '*'
@@ -2120,13 +2617,17 @@ vegetable-oil fuel
 vegetarian person
 vegetation '*'
 vehicle physical-object
+vehicle-routing-problem '*'
 vein vessel
 velvet '*'
+vendor business occupation
+venture-capital private-equity
 venus '*'
 vertebrate animal
 vertex '*'
 vessel '*'
 veteran employee warrior
+vickrey-auction auction
 victim person
 victory '*'
 view image
@@ -2155,7 +2656,9 @@ wallop '*'
 war '*'
 ward room
 wardrobe furniture
-warrant '*'
+warehouse '*'
+warehouse-management-system '*'
+warrant call-option
 warrior '*'
 washbasin '*'
 waste '*'
@@ -2165,11 +2668,14 @@ watercraft '*'
 watered-stock '*'
 waterfall '*'
 wave '*'
+waybill '*'
 wealth '*'
+wealth-management financial-services
 weather '*'
 weather-front '*'
 web-page '*'
 web-site software
+web3 '*'
 wedding ceremony
 weed pest plant
 week '*'
@@ -2183,8 +2689,9 @@ wheel mechanism
 whip '*'
 whirligig entertainment tool
 whiskey '*'
+white-paper '*'
 white-sale '*'
-wholesale commercial-trade
+wholesale business-model commercial-trade
 widow woman
 wife spouse
 wilderness '*'
@@ -2197,6 +2704,7 @@ wing '*'
 winner '*'
 winter '*'
 wire electrical-conductor
+wire-transfer goods payment
 wolf animal
 woman adult
 wood commodity tissue
@@ -2205,6 +2713,7 @@ word '*'
 work '*'
 workbench table tool
 worker '*'
+working-capital '*'
 workplace '*'
 workshop workplace
 world-power '*'
@@ -2213,10 +2722,15 @@ worry '*'
 wound '*'
 wrinkle '*'
 wrist '*'
+write-off financial-risk
 writer artist
 wrongdoer person
 yacht ship
 yard '*'
+yellow-dog-contract contract
+yield-curve '*'
+yield-finance '*'
 young '*'
 youth '*'
 zero '*'
+zero-coupon-bond bond

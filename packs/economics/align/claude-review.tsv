@@ -794,3 +794,337 @@ trade-discount	deduction	accept		13274732	13274597
 # --- economics batch 6: wordnet  ---
 per-diem	expense-allowance	accept		13293752	13293377
 travel-allowance	expense-allowance	accept		13293901	13293377
+# --- economics batch 7: wordnet  ---
+mileage	travel-allowance	accept		13294029	13293901
+retained-earnings	net-income	accept		13366693	13258362
+# --- economics wikidata batch 1: wikidata  ---
+accredited-investor	investor	accept			
+advertising	service	accept		01101329	01209576
+aerial-delivery	airlift	accept		00317709	00316594
+angel-investor	investor	accept			
+annuity	payment	reject	a series of sums, not the act	13294503	01120448
+ask-price	price	accept			05163807
+ask-price	purchase-price	accept			13303315
+asset-management	financial-services	accept			01098698
+auction	pricing-strategy	accept		00092366	
+auction-bid	price	accept			05163807
+auction-bid	purchase-price	accept			13303315
+auction-theory	game-theory	accept			06150222
+banknote	cash	accept			13386614
+baron	entrepreneur	accept		09840217	
+barter	commercial-trade	accept		01109687	01091905
+bazaar	market	reject	a sales event	01118182	
+bid-ask-spread	number	reject	a concept, not a number		05121418
+bid-price	price	accept		13304186	05163807
+bidding	contract	reject	an act		06520944
+black-market	market	accept		01097739	
+blockchain	list	accept			06481320
+bond	loan	reject	an instrument, not a loan	13417410	13398953
+bond-market	financial-market	accept			
+broker	businessman	accept			09882007
+business-interruption-insurance	insurance	accept		13345962	
+buyer	economic-agent	accept			
+buyer	party	reject	not a group		08252602
+capital-gain	income	accept			13255145
+capital-market	financial-market	accept			
+cash-flow	payment	reject	a measure, not a payment	13259199	01120448
+checking-account	deposit-account	accept		13363970	
+cinema	business	reject	dropped — out of scope	03032252	
+closeout	sale	accept		01118890	01114824
+clothier	shopkeeper	accept		09930772	10592152
+coinsurance	insurance	accept		13346209	
+combinatorial-auction	auction	accept			00092366
+commodity-market	financial-market	accept			
+commodity-market	wholesale	reject	no		01114646
+common-stock	share	accept		13335172	13342135
+common-stock	stock-certificate	reject	the share, not the paper	13335172	13417071
+consignment	sale	accept		00317917	01114824
+construction-industry	economic-production	accept		01104637	00913705
+container-ship	bottom	reject	a ship, not its bottom		02878222
+container-ship	cargo-ship	accept			
+controlling-interest	share	accept		13287414	13342135
+controlling-interest	stock-certificate	reject	same	13287414	13417071
+corporation	company	accept			08058098
+cost-plus-contract	pricing-strategy	accept		06522784	
+costermonger	peddler	accept		09968128	10411551
+credit-rating-agency	business	accept			
+credit-rating-agency	occupation	reject	Wikidata's business-as-occupation noise		00582388
+credit-spread	number	reject	same		05121418
+cryptocurrency-exchange	cryptocurrency	reject	an exchange is not a currency		
+customer	economic-agent	accept		09984659	
+cutler	craftsman	accept		09985207	09974648
+cutler	worker	accept		09985207	09632518
+default-finance	failure	accept			14477877
+derivatives-market	financial-market	accept			
+direct-debit	financial-transaction	accept			
+dutch-auction	auction	accept		01115734	00092366
+dynamic-pricing	pricing-strategy	accept			
+e-commerce	business	accept		01092974	
+e-commerce	occupation	reject	same	01092974	00582388
+earnest-payment	contract	reject	a payment	13350182	06520944
+economic-rent	number	reject	same	13296270	05121418
+english-auction	auction	accept			00092366
+enterprise	business	accept			
+enterprise	occupation	reject	same		00582388
+entrepreneur	businessman	accept			09882007
+equilibrium-price	price	accept			05163807
+equilibrium-price	purchase-price	accept			13303315
+erc-20-token	currency	reject	a token standard, not a currency		13385913
+erc-20-token	smart-contract	accept			
+exchange-rate	ratio	accept			13819207
+factoring	financial-transaction	accept			
+factoring	transaction	accept			01106808
+ferry-transport	ship	reject	transport, not a vessel	01106587	04194289
+fiat-money	currency	accept			13385913
+fiduciary	businessman	reject	a role, not a businessman		09882007
+financial-instrument	contract	accept			06520944
+financial-market	market	accept			
+financial-services	service	accept		01098698	01209576
+fire-insurance	insurance	accept		13346337	
+fishing-industry	hunt	reject	the industry, not the act	00454121	00452293
+fishmonger	woman	reject	no	10093818	10787470
+floating-rate-note	bond	accept			13417410
+foreign-exchange-market	market	accept			
+forward-price	price	accept			05163807
+forward-price	purchase-price	accept			13303315
+freight-train	train	accept			04468005
+fulfillment-house	business	accept			
+fulfillment-house	occupation	reject	same		00582388
+garage-sale	market	reject	same	01119250	
+greengrocer	workplace	reject	a person	10146559	04602044
+grey-market	market	accept		01098071	
+grocer	shopkeeper	accept		10147710	10592152
+gross-profit	number	reject	same	13260762	05121418
+group-insurance	insurance	accept		13346432	
+guaranty	call-option	reject	no	13353004	00080743
+hard-fork	blockchain	reject	an event on a chain, not a chain		
+health-insurance	insurance	accept		13346773	
+hire-purchase	credit	accept		13296752	13378518
+hoard	treasure	accept		13366912	08463969
+honorarium	payment	accept		13283952	01120448
+horse-trade	commercial-trade	accept		01109934	01091905
+industry	business	accept		00923444	
+inflation-indexed-bond	bond	accept			13417410
+installment	payment	accept		13301715	01120448
+institutional-investor	investor	accept			
+insurance	financial-services	accept			01098698
+investor	businessman	reject	not necessarily		09882007
+just-in-time-manufacturing	logistics	accept			
+labor-market	market	accept		01098404	
+liability-insurance	insurance	accept		13347065	
+life-insurance	insurance	accept		13347237	
+line-of-credit	credit	accept			13378518
+list-price	price	accept		13305070	05163807
+list-price	pricing-strategy	reject	a price	13305070	
+loan	financial-transaction	accept		13398953	
+lump-sum	payment	accept		13299248	01120448
+manufacture	economic-production	accept		00924825	00913705
+marginal-cost	opportunity-cost	reject	distinct concepts		13305794
+market-participant	economic-agent	accept			
+market-price	price	accept			05163807
+market-price	purchase-price	accept			13303315
+marketplace	market	accept			
+merchant	economic-agent	accept		10309896	
+micropayment	payment	accept			01120448
+money-market	financial-market	accept		08073601	
+mortgage-loan	credit	accept			13378518
+newsagent	workplace	reject	a person	10356213	04602044
+non-fungible-token	cryptocurrency	reject	a token, not a currency		
+open-account	contract	accept		06529798	06520944
+operating-income	income	accept			13255145
+over-the-counter-market	financial-transaction	reject	a market, not a transaction	03866350	
+over-the-counter-market	transaction	reject	same	03866350	01106808
+payment	financial-transaction	accept		01120448	
+peer-to-peer-lending	loan	accept			13398953
+perpetuity	annuity	accept			13294503
+preferred-stock	share	accept		13335974	13342135
+preferred-stock	stock-certificate	reject	same	13335974	13417071
+price-discrimination	pricing-strategy	accept			
+print-seller	retailer	accept		10475835	10525436
+producer	entrepreneur	reject	dropped — the film producer	10480018	
+rate-of-exchange	ratio	accept		13326620	13819207
+real-estate-business	business	accept		01101227	
+real-estate-business	occupation	reject	same	01101227	00582388
+reinsurance	business	reject	an insurance arrangement	13348456	
+reinsurance	insurance	accept		13348456	
+reinsurance	occupation	reject	same	13348456	00582388
+remittance	payment	accept		13299453	01120448
+renting	contract	accept			06520944
+renting	financial-services	reject	a contract		01098698
+reservation-price	price	accept			05163807
+reservation-price	purchase-price	accept			13303315
+restitution	commercial-trade	reject	no	00089351	01091905
+retail	commercial-trade	accept		01114458	01091905
+retained-earnings	number	reject	same	13366693	05121418
+revenue	income	accept			13255145
+reverse-auction	auction	accept			00092366
+reverse-logistics	logistics	accept			
+rummage-sale	market	reject	same	01119850	
+salary	income	accept			13255145
+salary	payment	accept			01120448
+sale	commercial-trade	accept		01114824	01091905
+salon	business	reject	dropped — out of scope	04131208	
+savings-account	deposit-account	accept		13364212	
+scarcity	deficit	reject	a fundamental condition, not a deficit		05114371
+scrip	currency	accept		13416897	13385913
+secondary-market	financial-market	accept			
+securities-lending	financial-transaction	accept			
+securities-lending	transaction	accept			01106808
+securities-trader	merchant	accept			10309896
+share-repurchase	financial-transaction	accept			
+share-repurchase	transaction	accept			01106808
+shipping-traffic	skill	reject	no	01105737	05637558
+sidechain	blockchain	accept			
+smart-contract	financial-transaction	reject	a program		
+smart-contract	transaction	reject	same		01106808
+soft-fork	blockchain	reject	same		
+spot-market	financial-market	accept		04286796	
+spot-price	contract	reject	a price	13305373	06520944
+stablecoin	cryptocurrency	accept			
+startup-company	occupation	reject	same		00582388
+stationer	retailer	accept		10652703	10525436
+stipend	payment	accept		13294135	01120448
+stock-warrant	call-option	reject	a security, not an option contract	13418219	00080743
+stockbroker	broker	accept			
+stockbroker	trader	accept			10720453
+strike-price	price	accept			05163807
+strike-price	purchase-price	accept			13303315
+subscription-business-model	service	reject	a model		01209576
+supply-chain-management	logistics	accept			
+surcharge	payment	accept		13325505	01120448
+third-party-logistics	logistics	accept			
+tobacconist	workplace	reject	a person	10713923	04602044
+token-airdrop	payment	accept			01120448
+tontine	contract	accept		13347750	06520944
+trade-credit	credit	accept			13378518
+transshipment	freight	accept		00316460	01106272
+two-sided-market	market	accept			
+unit-cost	price	accept		13303214	05163807
+unit-cost	purchase-price	accept		13303214	13303315
+usury	interest	accept		13320045	13318584
+vendor	business	accept			
+vendor	occupation	reject	same		00582388
+vickrey-auction	auction	accept			00092366
+vintner	profession	reject	a person, not a profession	10754189	00609953
+warrant	call-option	reject	dropped — a legal writ	06547059	00080743
+wealth-management	financial-services	accept			01098698
+wholesale	commercial-trade	accept		01114646	01091905
+wire-transfer	payment	accept			01120448
+# --- economics wikidata batch 2: wikidata  ---
+active-management	asset-management	accept			
+ash	goods	reject	Wikidata's everything-is-goods noise	14769160	
+asset-allocation	asset-management	accept			
+bank-card	payment-card	accept		13376426	
+banknote	goods	reject	same		
+bidder	buyer	accept			
+bill	goods	reject	same	13393762	
+blockchain	distributed-ledger	accept			
+bond	financial-instrument	accept		13417410	
+book	goods	reject	same	06410904	
+call-option	option-finance	accept		00080743	
+cash	medium-of-exchange	accept		13386614	
+cold-chain	supply-chain	accept			
+collateral-management	risk-management	accept			
+collateralized-debt-obligation	security-finance	accept			
+commercial-paper	goods	reject	same		
+commodity-money	legal-tender	reject	not necessarily		
+convertible-bond	derivative-finance	accept		13337634	
+cost-overrun	financial-risk	reject	an outcome, not a risk class	13301835	
+credit-score	credit-rating	accept			
+crowdfunding	business-model	accept			
+crowdfunding	sharing-economy	reject	no		
+cryptocurrency	payment-system	accept			
+cryptocurrency-exchange	capital-market	reject	an organization		
+currency	medium-of-exchange	accept		13385913	
+dark-pool	capital-market	accept			
+depository-financial-institution	enterprise	accept		08420278	
+derivative-finance	security-finance	accept			
+diversification	asset-allocation	accept			
+doll	goods	reject	same	03219135	
+economies-of-scale	comparative-advantage	reject	distinct concepts		
+equipment	goods	reject	same	03294048	
+exchange-traded-fund	security-finance	accept		13359032	
+export	international-trade	accept			
+exporting	international-trade	accept		01111952	
+financial-asset	intangible-asset	accept			
+financial-instrument	goods	reject	same		
+financial-services	business-model	reject	an industry	01098698	
+fulfillment-house	warehouse	accept			
+futures-contract	forward-contract	accept			
+futures-exchange	derivatives-market	accept		03408918	
+futures-market	derivatives-market	accept			
+goods-and-services	goods	reject	inverted		
+goodwill-asset	financial-asset	accept		13332820	
+gutter	goods	reject	same	03471473	
+high-frequency-trading	algorithmic-trading	accept			
+hotel	enterprise	accept		03542333	
+houseplant	goods	reject	same	13083023	
+import	international-trade	accept		03564667	
+importing	international-trade	accept		01111750	
+insolvency	financial-risk	reject	a state	14478433	
+interest-rate-swap	derivative-finance	accept			
+intermodal-container	shipping-container	accept			
+kite	goods	reject	same	03621473	
+letter-of-credit	payment-system	accept		13379753	
+liability	financial-statement	reject	an item on one, not a statement	14530403	
+loan	goods	reject	same	13398953	
+loss-leader	goods-and-services	reject	a pricing tactic		
+mailman	courier	accept		10283037	
+market-failure	financial-risk	reject	no		
+meal	goods	reject	same	07573696	
+microfinance	goods	reject	same		
+mirror	goods	reject	same	03773035	
+mortgage-backed-security	security-finance	accept		13340244	
+payment-card	payment-system	accept			
+payment-system	goods	reject	same		
+phone	goods	reject	same	04401088	
+portfolio	financial-asset	accept			
+postage	goods	reject	same	06796119	
+postage-stamp	goods	reject	same		
+prepared-dish	goods	reject	same	07557434	
+principal-agent-problem	operational-risk	reject	a problem of contract theory		
+publisher	enterprise	accept		08062623	
+purchasing	procurement	accept			
+put-option	option-finance	accept		00080968	
+pyramid-scheme	business-model	accept			
+remittance	goods	reject	same	13299453	
+rocket	goods	reject	same	04099429	
+rope	goods	reject	same	04108268	
+sail	goods	reject	same	04127904	
+sale	business-model	reject	an act	01114824	
+savings-account	goods	reject	same	13364212	
+scarcity	operational-risk	reject	no		
+security-finance	financial-asset	accept			
+service	goods-and-services	reject	core's service is the act of help	01209576	
+shareholder	stakeholder	accept			
+shot	goods	reject	same	06614729	
+slave	goods	reject	no	10609325	
+sludge	goods	reject	same	14956661	
+software	goods	reject	same	06566077	
+sole-proprietorship	enterprise	accept			
+stock-certificate	security-finance	accept		13417071	
+stock-exchange	capital-market	accept		04323026	
+stock-market	capital-market	accept			
+stock-market-index	goods	reject	same		
+stock-market-index	market-index	accept			
+stock-trader	securities-trader	accept		10657835	
+stockbroker	securities-trader	accept			
+stockholder	stakeholder	accept		10657969	
+string	goods	reject	same	04337974	
+structured-product	derivative-finance	accept			
+ticket	medium-of-exchange	reject	no	06518719	
+ticket	payment-system	reject	no	06518719	
+tire	goods	reject	same	04440749	
+torch	goods	reject	same	04456115	
+tranche	security-finance	accept		13285619	
+transshipment	freight-transport	accept		00316460	
+treasury-bill	financial-instrument	accept		13394592	
+underlying-asset	security-finance	accept			
+venture-capital	private-equity	accept		13354260	
+wholesale	business-model	reject	a form of trade	01114646	
+wire-transfer	goods	reject	same		
+write-off	financial-risk	reject	an accounting act	13328853	
+# --- economics wikidata batch 3: wikidata  ---
+insider-trading	market-abuse	accept		00080242	
+market-manipulation	market-abuse	accept			
+ponzi-scheme	pyramid-scheme	accept			

@@ -10,6 +10,7 @@ acquisition action
 action event
 activity '*'
 actor artist professional
+actuary adult professional
 adaptation action
 address information
 admiration satisfaction
@@ -25,7 +26,7 @@ air '*'
 air-transportation transport
 aircraft device
 airlift event
-airline institution
+airline business
 airplane aircraft
 aisle cavity container device route
 alarm-clock clock
@@ -35,7 +36,7 @@ allotment norm
 allowance norm
 altar cavity container device surface
 amateur '*'
-ambulance container land-vehicle product
+ambulance container goods land-vehicle product
 amendment event
 amphetamine medicine
 amphibian vertebrate
@@ -51,7 +52,7 @@ apartment home suite
 appearance event
 appendix information
 appetite '*'
-apple part structure
+apple goods part structure
 applicant human
 application action
 appointment norm
@@ -71,6 +72,7 @@ article information
 artifact '*'
 artillery-shell projectile weapon
 artist worker
+asset-backed-security bond
 assistant human
 association structure
 athlete human
@@ -86,18 +88,19 @@ axis line
 bacon meat
 bacterium microorganism
 baker worker
-bale '*'
+bale goods
 ballet action
 balloon device
 ballot '*'
-banana part structure
+banana goods part structure
 band structure
 bandage device
 bank '*'
-bank-account account
+bank-account account financial-asset
 banking action
 bankruptcy '*'
 banquet social-occasion
+barcode '*'
 bargain action
 bark event signal
 baron human
@@ -106,7 +109,7 @@ barter exchange
 baseball device
 basis information
 basket container device
-basketball device
+basketball device goods
 bathroom cavity container device part
 bathtub cavity part tub
 battery device part route
@@ -116,21 +119,23 @@ bazaar structure
 beach environment
 beam '*'
 beard body-part device
-bed furniture
+bed furniture goods
 bedroom cavity container device part
 bee insect
-beer product solution
+beer goods product solution
 bend body-of-water route
 beneficiary '*'
 betrothal action
 bible artifact copy image publication
-bicycle device
+bicycle device goods
+bidder '*'
+bidding event
 bird vertebrate
 birth action
 black-market action
 blackmail action
 blade device
-blanket device surface
+blanket device goods surface
 blessing prayer
 block '*'
 blood body-part red solution
@@ -143,26 +148,28 @@ body-part part structure
 bolt shaft
 bomb device weapon
 bond unlisted-security
+bond-market action
 bone body-part tissue
 bonus '*'
 boot shoe
 bottle container device
 bottom side
 boundary-line line
-bowl cavity container device
+bowl cavity container device goods
 box container device
 boxing-ring artifact
 brain body-part
 brake device part product
 branch structure
-bread '*'
-breakfast meal
+bread goods
+breakfast goods meal
 breast body-part
 breeze weather
-brewery institution
+brewery business
 brick block device
 bride human
 bridge device route
+broker adult professional
 brother structure
 brush hardware tool
 bubble surface
@@ -174,9 +181,10 @@ burn part structure
 bus container land-vehicle
 bus-line structure
 bus-ticket ticket
+business institution
 businessman adult professional
 butcher worker
-butter dairy-product
+butter dairy-product goods
 buying exchange
 cab cavity container device part
 cabin home
@@ -185,21 +193,25 @@ cage container device
 call action
 call-loan norm
 call-option option unlisted-security
-camera device
+camera device goods
 campaign action
 can container device
-candle device
+candle device goods
 cane device
 canvas device supply surface
-cap device
+cap device goods
 capital-city city
 caption information
 car container land-vehicle
 carbon '*'
 card artifact image
 care work
+cargo '*'
+cargo-aircraft airplane container
+cargo-ship ship
 case information
 cash currency
+cash-flow-statement '*'
 cash-register device
 castle container device
 cat mammal
@@ -211,9 +223,9 @@ cell-culture '*'
 census action
 cerebral-hemisphere body-part
 certificate artifact image
-chair device furniture
+chair device furniture goods
 challenge situation
-champagne product solution wine
+champagne goods product solution wine
 championship competition
 channel body-of-water
 chapter information
@@ -221,13 +233,13 @@ charity structure
 chart image
 charter artifact image
 cheek body-part
-cheese dairy-product
+cheese dairy-product goods
 chemical-reaction event
-cherry part structure
+cherry goods part structure
 chimney container device route
 chin body-part
-chip artifact
-chocolate artifact
+chip artifact goods
+chocolate artifact goods
 church structure
 cigarette device
 circularization marketing
@@ -241,15 +253,16 @@ cliff slope
 clipping device image surface
 clock device
 closing-price '*'
-clothing device
+clothing device goods
 coach adult worker
-coal '*'
+coal goods
 coat clothing
 coating action
 coffin container device
 cognition event
 coin cash token
 collar artifact part surface
+collateralized-debt-obligation asset-backed-security
 college institution
 colon body-part container line route
 color '*'
@@ -257,6 +270,7 @@ column article publication
 coma illness
 comedy information
 comic-strip information
+commercial-paper unlisted-security
 commitment situation
 committee structure
 commodity '*'
@@ -294,6 +308,7 @@ consensus action
 constellation '*'
 consumer human
 container '*'
+container-ship ship
 contempt emotion
 context information
 continent '*'
@@ -301,7 +316,7 @@ contract norm
 conversation dialogue
 conversion event
 convertible-bond convertible-security corporate-bond
-convertible-security norm
+convertible-security financial-asset norm
 copy '*'
 copyright norm
 cord artifact line route
@@ -315,6 +330,7 @@ countryside '*'
 'coup-d'"'"'etat' action
 couple pair
 courage confidence
+courier worker
 course '*'
 course-of-study teaching
 court structure
@@ -324,7 +340,8 @@ craft action
 craftsman worker
 crash action
 credibility '*'
-credit-card card device
+credit-card card legal-tender
+credit-score action
 creed information
 cricket insect
 criminal worker
@@ -335,16 +352,16 @@ crop structure
 cross artifact
 crossing action
 crowd '*'
-crown device
+crown device goods
 crutch device
 cube '*'
 cubicle cavity container device
-cup container device
+cup container device goods
 cupboard box part
-currency device image
+currency image legal-tender
 currency-conversion foreign-exchange
 current '*'
-curtain device part surface
+curtain device goods part surface
 cushion artifact part
 custodial-account account
 custom information
@@ -352,12 +369,13 @@ customer '*'
 cut artifact
 cycle event
 cylinder '*'
-dairy institution
+dairy business
 dairy-product artifact
 day-of-the-month '*'
+day-trading financial-transaction investing
 daylight sunlight
 death action illness
-debit-card card device
+debit-card card legal-tender
 decade time-period
 decrease event
 decree statement
@@ -390,14 +408,16 @@ difficulty '*'
 dilemma situation
 dinner meal
 diplomat adult professional
+direct-debit payment
 director member worker
 disability event
 disappointment sorrow
+discounting action
 discovery car
 discrimination '*'
 disease '*'
 disgrace situation
-dish container device
+dish container device goods
 disk cylinder
 disposition '*'
 dispute conflict
@@ -429,7 +449,6 @@ drop particle
 drug '*'
 drum can
 dry-cleaner worker
-due account
 duke human
 dwelling '*'
 eagle bird
@@ -459,14 +478,16 @@ endurance '*'
 enemy '*'
 engine device
 engineer adult professional
+enterprise action
 entertainment fun
 enthusiasm excitement
 entrance cavity
+entrepreneur adult professional
 envelope container device
 environment '*'
 equation statement
 equilibrium situation
-equity norm
+equity financial-asset norm
 erosion action
 escape action illness
 essay information
@@ -511,16 +532,20 @@ festival social-occasion
 fever action illness
 fiber cord
 field-of-study information
-fig part structure
+fig goods part structure
 fight action conflict
 file-cabinet box furniture
 film surface
 filter device
+financial-advisor adult professional
+financial-asset '*'
 financial-document '*'
+financial-statement financial-document
+financial-transaction buying
 financing transaction
 finger body-part
 fingernail body-part
-finish artifact
+finish artifact goods
 fire ending
 first-mortgage mortgage
 fisherman worker
@@ -528,7 +553,7 @@ fist hand
 fixture '*'
 flag artifact surface
 flame '*'
-flash lamp
+flash goods lamp
 flashlight hardware lamp
 fleet '*'
 floor artifact part surface
@@ -549,24 +574,27 @@ franchise structure
 fraud action
 freckle part structure
 freedom emotion
-freight '*'
+freight goods
+freight-train container device
 frequency '*'
 frog amphibian
 frustration emotion
 fun satisfaction
 function '*'
+fundamental-analysis action
 fundamental-law law
 fungus structure
 fur body-part device
 furniture artifact
 fury car
+futures-contract sales-contract
 galaxy '*'
 game information
 garage cavity container device
 garbage '*'
 garden artifact
 garlic '*'
-gasoline '*'
+gasoline goods
 gate '*'
 gem ground mineral
 general-ledger financial-document
@@ -581,6 +609,7 @@ glow event
 glue artifact
 goat mammal
 good-will emotion
+goods '*'
 governor executive
 gown clothing
 grant norm
@@ -604,7 +633,7 @@ guidepost artifact image
 guilt emotion
 guinea-pig mammal
 guitar musical-instrument
-gun device product weapon
+gun device goods product weapon
 gun-barrel '*'
 gutter container device part route
 habit clothing
@@ -616,23 +645,24 @@ ham artifact meat
 hand body-part
 handbag container device
 hard-sell action
-hardware '*'
+hardware goods
 hat clothing
 hay '*'
 hazard-insurance account
 head body-part
 headline news
 health-insurance account
-health-maintenance-organization institution
+health-maintenance-organization business
 hedge row
+hedge-fund structure
 heel body-part
 heir '*'
 helicopter aircraft container
-helmet device
+helmet device goods
 herb structure
 herd '*'
 hero human
-heroin artifact medicine
+heroin artifact goods medicine
 hide '*'
 hill ground
 hip body-part
@@ -646,7 +676,7 @@ hook device
 hoop '*'
 hope emotion
 horizon '*'
-horizontal-bar device
+horizontal-bar device goods
 horn body-part
 horoscope information
 horse mammal
@@ -659,7 +689,7 @@ human mammal
 hunter human
 hypothesis context
 ice '*'
-ice-cream dairy-product
+ice-cream dairy-product goods
 idea information
 ideal information
 illness event
@@ -668,27 +698,32 @@ image '*'
 immigrant human
 imposter human
 incentive action
+income-statement '*'
 information '*'
 insect invertebrate
 insider '*'
-insider-trading investing
+insider-trading financial-transaction investing
 inspiration emotion
 instinct '*'
 institution structure
+insurance-policy artifact image
 insurgent human
+intangible-asset '*'
 intellect human
 intelligence '*'
 interest situation
 interface information
+intermediary '*'
 intervention action
 introduction action
 invertebrate structure
 investing buying
+investor worker
 isolation event
 ivory '*'
 jacket coat
 jail-cell cavity container device part
-jam artifact
+jam artifact goods
 jar container device
 jaw body-part
 jelly jam
@@ -697,7 +732,7 @@ jet '*'
 jockey athlete worker
 joke '*'
 journal information publication
-joy artifact
+joy artifact goods
 judge adult professional
 judgment norm
 juice '*'
@@ -712,7 +747,7 @@ knife hardware tool
 knot line
 label artifact image
 labor work
-lace device surface
+lace netting
 lack '*'
 ladder route tool
 lake body-of-water
@@ -735,6 +770,7 @@ lease artifact image
 leash cord
 leather artifact hide
 lecture information
+legal-tender device
 legend narrative
 lesson teaching
 letter-of-the-alphabet information
@@ -748,6 +784,7 @@ light-bulb lamp part
 lily structure
 limb body-part
 line '*'
+line-of-credit norm
 linen device surface
 lion mammal
 lip body-part
@@ -765,12 +802,12 @@ luck '*'
 lumber artifact
 lunch meal
 lung body-part
-machinery institution
+machinery business
 maestro musician
 magnitude '*'
 maid worker
 mailman worker
-makeup artifact
+makeup artifact goods
 mammal vertebrate
 man adult human
 management action
@@ -779,7 +816,9 @@ mannequin artifact
 manual norm
 march time-period
 margin-account lien
+market-maker business
 marketing action
+marketplace '*'
 married-couple couple
 marsh environment
 mask clothing
@@ -787,7 +826,7 @@ mass '*'
 mayor executive politician
 maze puzzle
 meal '*'
-meat '*'
+meat goods
 medicine '*'
 meeting social-occasion
 member '*'
@@ -823,6 +862,7 @@ mole mammal
 molecule '*'
 momentum '*'
 monarchy country
+money-laundering work
 monk worker
 monkey mammal
 moon '*'
@@ -838,7 +878,7 @@ mountain ground
 mountain-range '*'
 mouse mammal
 mouth body-part
-mug container device
+mug container device goods
 municipal-bond bond
 museum structure
 mushroom structure
@@ -861,6 +901,7 @@ nerve body-part line route
 nest artifact
 net filter
 net-income '*'
+netting device surface
 network system
 news information
 night '*'
@@ -870,6 +911,7 @@ norm information
 nose body-part detector
 notebook device
 noun information
+novation action
 novel narrative
 nuclear-reactor device
 number '*'
@@ -897,17 +939,19 @@ orchestra structure
 orgy social-occasion
 outline information
 output '*'
-oven box
+oven box goods
+overdraft withdrawal
 overview information
 owl bird
 owner '*'
 pace '*'
 pack '*'
 packaging action
-paint artifact
+paint artifact goods
 pair '*'
 palace home
-pan container device
+pallet device
+pan container device goods
 panel '*'
 panic emotion
 parade ritual social-occasion
@@ -933,14 +977,14 @@ patient human
 pattern '*'
 pawn device
 payment transaction
-peanut seed
+peanut goods seed
 peasant worker
 pedestrian human
 peer human
 pencil hardware tool
 penny-stock equity
 pensioner human
-perfume artifact
+perfume artifact goods
 permission norm
 personal-identification-number information
 personal-loan norm
@@ -956,8 +1000,8 @@ piece part
 pier artifact line route
 pig mammal
 pigeon bird
-pill artifact
-pillow device
+pill artifact goods
+pillow device goods
 pit depression obstacle
 pity emotion
 plan norm
@@ -980,10 +1024,12 @@ political-party structure
 politician adult worker
 politics action
 pony horse
+ponzi-scheme fraud
 pop-music music
 porter worker
 portrait image light signal
-postage device
+postage legal-tender
+postage-stamp image postage
 postcard card
 potential '*'
 powder '*'
@@ -1008,7 +1054,8 @@ prison container device
 prisoner human
 privilege norm
 prize '*'
-produce '*'
+procurement action
+produce goods
 product artifact
 production event
 professional worker
@@ -1027,7 +1074,7 @@ psychologist scientist
 public-square '*'
 publication '*'
 publisher adult professional
-pudding artifact
+pudding artifact goods
 pulse '*'
 pupil body-part cavity
 pursuit '*'
@@ -1072,6 +1119,7 @@ reluctance emotion
 remark statement
 remedy action thinking
 renovation action
+renting exchange
 reptile vertebrate
 republic structure
 reputation context
@@ -1082,10 +1130,11 @@ resident doctor
 resolution norm
 restraint device
 retail '*'
-retailing institution
+retailing business
 retainer device
 retaliation information
 return '*'
+revenue '*'
 review article
 revolution politics
 rhetoric action worker
@@ -1094,8 +1143,9 @@ ribbon clothing line route
 ridge '*'
 rifle gun
 right-side side
-ring device
+ring device goods
 risk-arbitrage arbitrage
+risk-management action
 ritual action
 river body-of-water environment obstacle route
 roadway device route surface
@@ -1113,7 +1163,8 @@ rung artifact
 sacrifice '*'
 sail device part
 sailor worker
-salad artifact
+salad artifact goods
+sales-contract contract
 salmon vertebrate
 salt '*'
 salvation support
@@ -1122,21 +1173,22 @@ sand ground
 sandal shoe
 satisfaction emotion
 sauce artifact
-sausage artifact
+sausage artifact goods
 savings-account bank-account
 scale-of-measurement information
+scarcity situation
 scenario '*'
 scholar worker
 scholarship norm
 school institution
 scientist adult worker
-scope artifact
+scope artifact goods
 script information
 sculpture artifact image
 sea body-of-water
 seal mammal
 second time-period
-secret artifact
+secret artifact goods
 secretary adult worker
 security-system device product
 sediment soil
@@ -1159,6 +1211,7 @@ sheep mammal
 shelf container device part surface
 shield device
 ship watercraft
+shipping-container container device
 shirt clothing
 shoe clothing
 shop structure
@@ -1167,7 +1220,7 @@ shopping action
 shower action
 side surface
 sidewalk concrete route
-sight device product
+sight device goods product
 sign '*'
 sign-of-the-zodiac '*'
 signal '*'
@@ -1186,7 +1239,7 @@ slope '*'
 smart-card card
 smoke '*'
 snake line reptile route
-soap artifact
+soap artifact goods
 social-club structure
 social-occasion action
 social-science field-of-study
@@ -1196,10 +1249,11 @@ sofa device furniture
 software-agent '*'
 soil ground
 soldier warrior
+sole-proprietorship structure
 solution '*'
 soprano singer
 sorrow emotion
-soup artifact course
+soup artifact course goods
 space '*'
 spacecraft device
 species '*'
@@ -1212,7 +1266,7 @@ split event
 spokesperson worker
 spoon container hardware tool
 sport information
-spray artifact
+spray artifact goods
 spreadsheet '*'
 squad structure
 stadium container device
@@ -1220,17 +1274,20 @@ staff structure
 stairway artifact route
 stake shaft
 stalk part structure
+startup-company business
 state structure
 state-of-matter '*'
 statement '*'
 statue sculpture
 steak artifact meat
-steam '*'
+steam goods
 step artifact
 stick '*'
 stipend norm
 stitch device line route
 stock-certificate certificate
+stock-market-crash action decrease
+stock-split action
 stomach body-part container
 stool device furniture
 stop '*'
@@ -1238,7 +1295,7 @@ storage action
 strand line route
 strap device part
 straw '*'
-strawberry body-part
+strawberry body-part goods
 stream information
 street roadway
 streetcar device
@@ -1271,16 +1328,16 @@ surrender action
 survivor structure
 sweater clothing
 swing device
-sword device product weapon
+sword device goods product weapon
 sympathy emotion
 symptom '*'
 syndrome disease
 system '*'
 tan human
-tank land-vehicle product structure
+tank goods land-vehicle product structure
 tape device line route
 tape-recording action
-target device
+target device goods
 tariff '*'
 taste cognition
 tax-return artifact image
@@ -1288,11 +1345,12 @@ taxpayer '*'
 tea artifact medicine
 teaching action
 team structure
+technical-analysis action
 temper event
 temple container device
 tenant '*'
 tension '*'
-tent container device
+tent container device goods
 territory structure
 terrorist criminal
 textbook information publication
@@ -1302,8 +1360,8 @@ thinking event
 throat body-part
 throne chair
 thumb finger
-ticket device image
-tide artifact
+ticket image legal-tender
+tide artifact goods
 tiger mammal
 tile '*'
 time-period '*'
@@ -1334,9 +1392,9 @@ trainer worker
 transaction action
 transmission device part product
 transport action
-transportation institution
+transportation business
 trap device
-'traveler'"'"'s-check' device image surface
+'traveler'"'"'s-check' image legal-tender surface
 tray container device
 treasure prize
 treasurer adult worker
@@ -1362,17 +1420,18 @@ twilight '*'
 ulcer part structure
 umbrella device
 uncertainty emotion
+underwriting action
 unemployment situation
 uniform clothing
 university academy
-unlisted-security norm
+unlisted-security financial-asset norm
 urge '*'
 urine solution
 vacation action
 vacuum '*'
 valley depression
 van car
-vegetable '*'
+vegetable goods
 vegetable-oil oil
 vein body-part container line route
 velvet device surface
@@ -1402,6 +1461,7 @@ waist body-part
 waiter worker
 wake reception
 war fight
+warehouse container device
 warrior adult professional
 washbasin cavity container device
 watch clock
@@ -1427,6 +1487,7 @@ woman adult human
 work action
 workbench furniture
 worker human
+working-capital financial-asset
 workshop conference
 world-power country
 wound part structure

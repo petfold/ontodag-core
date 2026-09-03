@@ -1,1 +1,78 @@
-# sub	sup	note
+# sub	sup	note — concepts Wikidata has no item for (or an unusable one); asserted by hand 2026-09-03. Bitcoin and the Ethereum ecosystem per Peter's scope; Swarm because this project lives on it.
+mempool	bitcoin	the pool of unconfirmed transactions
+hash-rate	cryptocurrency-mining	the network's hashing throughput
+mining-difficulty	cryptocurrency-mining	the target adjusted every 2016 blocks
+difficulty-adjustment	cryptocurrency-mining	the retargeting rule
+block-reward	cryptocurrency-mining	new coins plus fees paid to the block's miner
+bitcoin-halving	bitcoin	the block subsidy halves every 210,000 blocks
+blockchain-block	blockchain	a batch of transactions chained by hash
+transaction-fee	financial-transaction	a fee paid to have a transaction included
+bitcoin-network	bitcoin	the peer-to-peer network of nodes
+payment-channel	lightning-network	a two-party channel settled on chain
+payment-channel-network	lightning-network	channels routed into a network
+bitcoin-improvement-proposal	white-paper	the design documents of Bitcoin
+nakamoto-consensus	consensus-mechanism	proof of work plus the longest-chain rule
+timestamp-server	bitcoin	the whitepaper's framing of the chain
+consensus-mechanism	procedure	the rule by which nodes agree on the ledger
+proof-of-work	consensus-mechanism	
+proof-of-stake	consensus-mechanism	
+byzantine-fault-tolerance	consensus-mechanism	agreement despite faulty or malicious nodes
+full-node	bitcoin-network	a node that validates every block
+light-client	bitcoin-network	a node that trusts headers
+cryptocurrency-miner	economic-agent	whoever produces blocks under proof of work
+ether	cryptocurrency	the native currency of Ethereum
+ethereum-gas	ether	the unit of computation paid for in ether
+gas-fee	transaction-fee	the fee for computation on Ethereum
+erc-721-token	non-fungible-token	the Ethereum NFT standard
+crypto-token	cryptocurrency	an asset issued on another chain's ledger
+utility-token	crypto-token	
+wrapped-token	crypto-token	a token standing for an asset from another chain
+decentralized-finance	smart-contract	financial services as smart contracts
+automated-market-maker	decentralized-exchange	prices set by a formula over a liquidity pool
+liquidity-pool	automated-market-maker	
+yield-farming	decentralized-finance	
+staking	proof-of-stake	locking ether to validate
+validator	staking	a staking node that proposes and attests blocks
+beacon-chain	ethereum	the proof-of-stake consensus layer
+layer-2	blockchain	a protocol that settles on a base chain
+rollup	layer-2	execution off chain, data and proofs on chain
+optimistic-rollup	rollup	
+zero-knowledge-rollup	rollup	
+blockchain-bridge	layer-2	moving assets between chains
+blockchain-oracle	smart-contract	a feed of off-chain facts into contracts
+account-abstraction	ethereum	smart-contract accounts as first-class users
+maximal-extractable-value	ethereum	value extracted by ordering transactions in a block
+ethereum-client	software	software that runs a node
+bitcoin-core	software	the reference Bitcoin implementation
+hardware-wallet	cryptocurrency-wallet	keys on a dedicated device
+hot-wallet	cryptocurrency-wallet	keys on an online device
+custodial-wallet	cryptocurrency-wallet	keys held by a third party
+self-custody	cryptocurrency-wallet	holding one's own keys
+multisignature	digital-signature	a signature requiring several keys
+atomic-swap	financial-transaction	a cross-chain exchange that completes or fails as a whole
+cross-chain	blockchain	between chains
+swarm-storage	decentralized-storage	the Ethereum storage and communication network this project runs on
+decentralized-storage	peer-to-peer	storage across many nodes
+postage-batch	swarm-storage	prepaid storage rent on Swarm
+chunk-storage	swarm-storage	content-addressed 4 KB units
+limit-order	trade-order	an order at a set price or better
+market-order	trade-order	an order at the best available price
+trade-order	financial-transaction	an instruction to buy or sell
+margin-trading	securities-trading	trading with borrowed funds
+securities-trading	financial-transaction	buying and selling securities
+short-position	securities-trading	a position that gains when the price falls
+coupon-bond	bond	a bond paying periodic interest
+over-the-counter-market	financial-market	trading outside an exchange
+primary-market	financial-market	where new securities are issued
+sealed-bid-auction	auction	bids submitted without seeing others'
+double-auction	auction	buyers and sellers submit prices at once
+matching-market	market	a market without prices, cleared by matching
+market-design	mechanism-design	designing the rules of a market
+cost-plus-pricing	pricing-strategy	
+incoterms	sales-contract	the standard trade delivery terms
+free-on-board	incoterms	
+reorder-point	inventory-management	the stock level that triggers a reorder
+cross-docking	logistics	transfer without storage
+backorder	trade-order	an order for out-of-stock goods
+return-merchandise-authorization	reverse-logistics	
+common-carrier	freight-forwarder	a carrier that serves the public
