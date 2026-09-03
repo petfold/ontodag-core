@@ -1,10 +1,6 @@
 kind	sub	sup	detail
 disputed	carcinoma	epithelioma	for wikidata; reversed by wordnet
 disputed	epithelioma	carcinoma	for wordnet; reversed by wikidata
-single	abarticulation	attribute	only wordnet
-single	abarticulation	condition	only wordnet
-single	abarticulation	event	only sumo
-single	abarticulation	state	only wordnet
 single	abdominoplasty	accomplishment	only sumo
 single	abdominoplasty	therapy	only sumo
 single	abdominoplasty	volition	only sumo
@@ -970,9 +966,6 @@ single	client-centered-therapy	procedure	only sumo
 single	client-centered-therapy	tending	only wordnet
 single	client-centered-therapy	volition	only sumo
 single	client-centered-therapy	work	only wordnet
-single	clinical-neurology	cognition	only wordnet
-single	clinical-neurology	natural-science	only wordnet
-single	clinical-neurology	research	only wikidata
 single	clinical-psychology	cognition	only wordnet
 single	clinical-psychology	medical-specialty	only wordnet
 single	clinical-psychology	medicine	only wordnet
@@ -1459,6 +1452,7 @@ single	ebola-hemorrhagic-fever	condition	only wordnet
 single	ebola-hemorrhagic-fever	state	only wordnet
 single	ebola-hemorrhagic-fever	viral-infection	only wordnet
 single	ecchymosis	attribute	only wordnet
+single	ecchymosis	bruise	only wordnet
 single	ecchymosis	condition	only wordnet
 single	ecchymosis	event	only sumo
 single	ecchymosis	state	only wordnet
@@ -2622,9 +2616,11 @@ single	laminectomy	activity	only wordnet
 single	laminectomy	operation	only wordnet
 single	laminectomy	procedure	only wordnet
 single	laminectomy	visit	only sumo
-single	lancet	equipment	only wikidata
 single	lancet	instrument	only wordnet
+single	lancet	knife	only wordnet
+single	lancet	physical-object	only wordnet
 single	lancet	surgical-instrument	only wordnet
+single	lancet	tool	only wordnet
 single	laparocele	attribute	only wordnet
 single	laparocele	condition	only wordnet
 single	laparocele	event	only sumo
@@ -2702,9 +2698,9 @@ single	licensed-practical-nurse	property	only sumo
 single	licensed-practical-nurse	structure	only opencyc
 single	licensed-practical-nurse	vertebrate	only opencyc
 single	licensed-practical-nurse	worker	only opencyc
-single	lie-detector	equipment	only wikidata
+single	lie-detector	detector	only claude
 single	lie-detector	instrument	only wordnet
-single	lie-detector	tool	only wikidata
+single	lie-detector	physical-object	only wordnet
 single	limitation	quack	only sumo
 single	lincomycin	agent	only wordnet
 single	lincomycin	drug	only wordnet
@@ -2785,13 +2781,6 @@ single	lumpectomy	activity	only wordnet
 single	lumpectomy	operation	only wordnet
 single	lumpectomy	procedure	only wordnet
 single	lumpectomy	visit	only sumo
-single	lunacy	condition	only wordnet
-single	lunacy	inclination	only sumo
-single	lunacy	mentality	only sumo
-single	lunacy	property	only sumo
-single	lunacy	state	only wordnet
-single	lunacy	symptomatic-effect	only sumo
-single	lunacy	trait	only sumo
 single	lung-cancer	cancer	only wordnet
 single	lung-cancer	condition	only wordnet
 single	lung-cancer	disease	only wordnet
@@ -4332,6 +4321,7 @@ single	rhinorrhea	event	only sumo
 single	rhinorrhea	evidence	only wordnet
 single	rhinoscope	physical-object	only wordnet
 single	rhinotomy	accomplishment	only sumo
+single	rhinotomy	therapy	only sumo
 single	rhinotomy	volition	only sumo
 single	rhizotomy	accomplishment	only sumo
 single	rhizotomy	therapy	only sumo
@@ -4712,7 +4702,9 @@ single	suction-curettage	operation	only wordnet
 single	suction-curettage	procedure	only wordnet
 single	suction-curettage	visit	only sumo
 single	sudorific	agent	only wordnet
+single	sudorific	drug	only wordnet
 single	sudorific	material	only sumo
+single	sudorific	medication	only wordnet
 single	sunburn	attribute	only wordnet
 single	sunburn	clinical-sign	only wikidata
 single	sunburn	condition	only wordnet
@@ -5436,6 +5428,7 @@ unplaced	moon		no accepted parent reaches a root
 unplaced	morning		no accepted parent reaches a root
 unplaced	morsel		no accepted parent reaches a root
 unplaced	motivation		no accepted parent reaches a root
+unplaced	natural-spring		no accepted parent reaches a root
 unplaced	nature.object		no accepted parent reaches a root
 unplaced	nature.person		no accepted parent reaches a root
 unplaced	necessity		no accepted parent reaches a root
@@ -5454,7 +5447,6 @@ unplaced	one-fourth		no accepted parent reaches a root
 unplaced	one-half		no accepted parent reaches a root
 unplaced	opposite	quack	no accepted parent reaches a root
 unplaced	orientation		no accepted parent reaches a root
-unplaced	outflow		no accepted parent reaches a root
 unplaced	output		no accepted parent reaches a root
 unplaced	ownership		no accepted parent reaches a root
 unplaced	page		no accepted parent reaches a root
