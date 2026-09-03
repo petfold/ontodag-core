@@ -366,7 +366,7 @@ alimony and welfare, and Wikidata files a slave, a kite and a torch under
 rejected on the scope rule alone. Two core senses surfaced: core's `dividend`
 was WordNet's hub sense ("a bonus; something extra") and is now the company
 dividend (override in `align/overrides.tsv`; the rename does not propagate to
-published v3, so this is an intervention Peter should know about); `cold` and
+published v3; Peter ruled the same afternoon: dividend is the company dividend by default); `cold` and
 `operation` remain flagged, unchanged. Renames on the everyday-word rule as
 usual (`price-charged`, `payment-amount`, `dues`, `bitcoin-taproot` — the
 plant root is biology's). One reading only.
