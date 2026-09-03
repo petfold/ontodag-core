@@ -1,6 +1,6 @@
 # ontodag store v1
 abelian-group mathematical-group
-acceptance-sampling act activity event statistical-method
+acceptance-sampling activity statistical-method
 act '*'
 activity '*'
 acute-triangle triangle
@@ -10,12 +10,12 @@ aes block-cipher
 affine-geometry geometry
 affine-transformation bijection transformation
 age-norm average
-algebra field-of-study mathematics
+algebra mathematics
 algebra-over-a-field mathematical-ring vector-space
 algebraic-magma algebraic-structure
 algebraic-number complex-number
 algebraic-structure mathematical-structure
-algebraic-transposition act activity event procedure
+algebraic-transposition procedure
 algorithm procedure
 analysis-of-variance multivariate-analysis
 analytic-geometry geometry
@@ -30,7 +30,7 @@ arc-cotangent trigonometric-function
 arc-secant trigonometric-function
 arc-sine trigonometric-function
 arc-tangent trigonometric-function
-arithmetic field-of-study mathematics
+arithmetic mathematics
 arithmetic-mean mean
 arithmetic-operation mathematical-operation
 arithmetic-progression concept
@@ -42,7 +42,7 @@ attribute-implication implication
 authenticated-encryption encryption
 automorphism endomorphism isomorphism
 average '*'
-axiom information proposition
+axiom proposition
 banach-space mathematical-structure
 'bayes'"'"'-postulate' postulate
 'bayes'"'"'-theorem' theorem
@@ -104,7 +104,7 @@ concept-intent mathematical-set
 concept-lattice complete-lattice
 condition '*'
 conditional-probability probability
-conic-section attribute locus shape
+conic-section locus shape
 conjecture proposition
 connected-component connected-graph subgraph
 connected-graph undirected-graph
@@ -145,9 +145,9 @@ decryption mathematical-operation
 dedekind-macneille-completion complete-lattice
 deductive-reasoning thinking
 definition '*'
-degree-of-freedom quantity variable
+degree-of-freedom variable
 demographic statistic
-dependent-variable quantity variable
+dependent-variable variable
 derivation-operator function
 description-logic formal-system mathematical-logic
 design-theory combinatorics
@@ -238,15 +238,15 @@ geodesic shape
 geometric-construction mathematical-operation
 geometric-intersection locus
 geometric-mean mean
-geometric-plane attribute geometric-shape
+geometric-plane geometric-shape
 geometric-progression concept
 geometric-ray shape
 geometric-reflection transformation
 geometric-rotation transformation
 geometric-series mathematical-series
 geometric-shape locus shape
-geometric-superposition event locating
-geometry field-of-study mathematics
+geometric-superposition locating
+geometry mathematics
 godel-incompleteness-theorem theorem
 grab-sample sample
 graph-clique complete-graph induced-subgraph
@@ -259,7 +259,7 @@ graph-path subgraph
 graph-vertex concept
 greatest-common-divisor natural-number
 greatest-element concept
-group-theory field-of-study mathematics
+group-theory mathematics
 hamiltonian-path graph-path
 hamming-distance metric-function
 harmonic-mean mean
@@ -283,13 +283,13 @@ imaginary-number complex-number
 implication logical-relation
 inclusion-exclusion-principle theorem
 independent-set induced-subgraph
-independent-variable quantity variable
+independent-variable variable
 induced-subgraph subgraph
 inductive-reasoning thinking
 inference-rule rule
 infimum concept lower-bound
 infinite-set mathematical-set
-infinitesimal number quantity variable
+infinitesimal number variable
 information '*'
 information-theory concept mathematics
 initialization-vector concept information
@@ -302,7 +302,7 @@ interpolation algorithm calculation
 interval-order partial-order
 intuitionistic-logic mathematical-logic
 invariance attribute
-invariant feature property
+invariant feature
 inverse-function function
 irrational-number real-number
 isogon polygon
@@ -341,7 +341,7 @@ logical-connective logical-operation
 logical-consequence logical-relation
 logical-consistency attribute
 logical-disjunction logical-connective
-logical-negation information logical-connective proposition
+logical-negation logical-connective proposition
 logical-operation mathematical-operation
 logical-predicate information
 logical-relation mathematical-relation
@@ -353,7 +353,7 @@ lower-set subset
 mandelbrot-set mathematical-set
 manifold mathematical-space topological-space
 material-implication logical-connective
-mathematical-analysis field-of-study mathematics
+mathematical-analysis mathematics
 mathematical-category mathematical-structure
 mathematical-expression concept information
 mathematical-field commutative-ring division-ring mathematical-set
@@ -365,7 +365,7 @@ mathematical-interval mathematical-set
 mathematical-lattice join-semilattice meet-semilattice
 mathematical-logic logic mathematics
 mathematical-module algebraic-structure
-mathematical-operation act activity event function procedure
+mathematical-operation function procedure
 mathematical-operator function
 mathematical-relation concept
 mathematical-ring algebraic-structure
@@ -395,7 +395,7 @@ median average
 meet-semilattice partially-ordered-set semilattice
 merkle-tree data-structure tree-graph
 message-authentication-code cryptographic-primitive
-metamathematics field-of-study mathematics
+metamathematics mathematics
 method '*'
 metric-function function
 metric-space mathematical-space topological-space
@@ -429,7 +429,7 @@ null-space mathematical-space
 number '*'
 number-theory mathematics
 numerical-accuracy attribute
-numerical-analysis field-of-study mathematics
+numerical-analysis mathematics
 oblique-triangle triangle
 obtuse-triangle triangle
 octagon polygon
@@ -446,7 +446,7 @@ order-isomorphism isomorphism monotone-function
 order-theory mathematics
 ordinal-number number
 outlier statistical-deviation
-parallel-line attribute shape
+parallel-line shape
 parallelogram quadrilateral
 parametric-statistic statistic
 parity mathematical-relation
@@ -455,7 +455,7 @@ partial-differential-equation differential-equation
 partial-order antisymmetric-relation preorder
 partially-ordered-set mathematical-structure
 particular-proposition proposition
-pencil-of-lines attribute shape
+pencil-of-lines shape
 pentagon polygon
 percentile statistic
 permutation bijection mathematical-operation
@@ -466,20 +466,20 @@ planar-graph mathematical-graph
 plane-geometry geometry
 plane-section shape
 poisson-distribution statistical-distribution
-polygon attribute geometric-shape
+polygon geometric-shape
 polynomial function
 polytree directed-acyclic-graph
 positive-correlation statistical-correlation
-postulate information proposition
+postulate proposition
 power-series mathematical-series
 power-set mathematical-set
-predictor-variable quantity variable
+predictor-variable variable
 preorder reflexive-relation transitive-relation
 prime-factorization mathematical-operation
 prime-number natural-number
 private-key cryptographic-key
 probability statistic
-probability-theory field-of-study mathematics
+probability-theory mathematics
 problem '*'
 procedure '*'
 product-moment-correlation-coefficient correlation-coefficient
@@ -518,7 +518,7 @@ real-number complex-number
 rectangle parallelogram
 recurrence-relation mathematical-relation
 recursion procedure
-recursive-definition definition information
+recursive-definition definition
 recursive-function function
 reentrant-polygon concave-polygon
 reflexive-relation binary-relation logical-relation
@@ -554,13 +554,13 @@ semilattice semigroup
 sentential-function mathematical-expression
 series-convergence attribute
 series-expansion function
-set-theory field-of-study mathematics
+set-theory mathematics
 sha-2 cryptographic-hash-function
 shape '*'
 short-division division
 shortest-path graph-path
 signature-scheme cryptographic-protocol
-simultaneous-equations equation formula information
+simultaneous-equations equation formula
 sine trigonometric-function
 singleton-set finite-set
 solid-geometry geometry
@@ -581,7 +581,7 @@ statistical-mode average
 statistical-moment statistic
 statistical-population collection
 statistical-regression statistical-method
-statistical-sampling act event
+statistical-sampling act
 statistical-weight number
 statistician expert
 stratified-sample sample-distribution
@@ -613,7 +613,7 @@ threshold-function function
 time-series statistic
 topological-ordering total-order
 topological-space mathematical-structure
-topology field-of-study mathematics
+topology mathematics
 total-order partial-order weak-order
 totally-ordered-set mathematical-lattice
 transcendental-number irrational-number
@@ -650,7 +650,7 @@ vector-space mathematical-module
 vital-statistics statistic
 wave-equation differential-equation
 weak-order preorder
-wedge-shape attribute shape
+wedge-shape shape
 weighted-graph mathematical-graph
 well-formed-formula mathematical-expression
 well-order total-order

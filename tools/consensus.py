@@ -138,6 +138,27 @@ def main():
         for n in list(parents):
             for b in parents[n]:
                 parents.setdefault(b, [])
+    if dirs.pack:
+        # Prune parents the core already entails: `activated-carbon ⊑ carbon` makes
+        # `⊑ chemical-element` and `⊑ substance` redundant once the file is merged
+        # onto core, so the file should not carry them (2026-09-03, from Peter's
+        # spot check — the raw file had made a specific edge look coarse).
+        core_par = {}
+        for l in open(dirs.base_od):
+            if not l.startswith("#"):
+                f = shlex.split(l); core_par[f[0]] = [x for x in f[1:] if x != "*"]
+        allpar = {n: set(core_par.get(n, ())) | set(parents.get(n, ())) for n in set(core_par) | set(parents)}
+        def ancestors(x):
+            seen, st = set(), list(allpar.get(x, ()))
+            while st:
+                y = st.pop()
+                if y not in seen:
+                    seen.add(y); st.extend(allpar.get(y, ()))
+            return seen
+        for n in own:
+            ps = parents.get(n, [])
+            if len(ps) > 1:
+                parents[n] = [b for b in ps if not any(a != b and b in ancestors(a) for a in ps)]
     dag = dag_from_parents(parents, on_cycle=lambda n, d: cycles.append((n, d)))
     if dirs.pack:                           # drop the borrowed base nodes' own root edges from the count
         pass
