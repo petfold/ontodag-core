@@ -316,6 +316,17 @@ of the parents (`hash-table`: mathematics' `data-structure` and computing's
 `associative-array`), and the list is the natural review queue for the
 second reading.
 
+### 8.2 Shipped (ontodag 0.21.0, 2026-09-03)
+
+The ten packs ship in the ontodag wheel as `ontodag.domain.<name>`
+(`tools/regen_ontodag_packs.py` writes them from `packs/<name>/build/`),
+adoptable with `odag pack geography` etc.; each applies `core` first. The
+golden roots are pinned in ontodag's `tests/test_packs.py` per pack under
+both addressings, and the union root there is §8.1's `759ebb5a…` — the shipped
+modules and the pack files agree byte for byte. This is the reversible half
+of PACKS.md Part II's distribution question: publishing the same packs to
+Swarm later reproduces the same roots.
+
 ## 9. The second pass (2026-09-03, with Peter)
 
 Peter noticed `acyclic-graph ⊑ undirected-graph` in the mathematics pack. The
