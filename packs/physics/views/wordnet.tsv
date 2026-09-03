@@ -551,6 +551,8 @@ astronomer	person
 astronomer	physical-object
 astronomer	physicist
 astronomer	scientist
+astronomical-conjunction	encounter
+astronomical-conjunction	event
 astronomical-rising	event
 astronomy	cognition
 astronomy	field-of-study
@@ -2010,8 +2012,6 @@ congressman	leader
 congressman	organism
 congressman	person
 congressman	physical-object
-conjunction	encounter
-conjunction	event
 connectedness	attribute
 connectedness	state
 connection	act
@@ -4521,12 +4521,6 @@ incertitude	state
 incident	event
 inclination	attitude
 inclination	cognition
-inclination-of-an-orbit	angle
-inclination-of-an-orbit	attribute
-inclination-of-an-orbit	empty-space
-inclination-of-an-orbit	physical-object
-inclination-of-an-orbit	place
-inclination-of-an-orbit	shape
 income	possession
 increase	process
 increment	attribute
@@ -4563,7 +4557,7 @@ inertia	process
 inertial-mass	attribute
 infection	event
 infection	incident
-inferior-conjunction	conjunction
+inferior-conjunction	astronomical-conjunction
 inferior-conjunction	encounter
 inferior-conjunction	event
 inflation	process
@@ -6123,6 +6117,12 @@ orange-colour	attribute
 orbit	physical-object
 orbit	place
 orbit	route
+orbital-inclination	angle
+orbital-inclination	attribute
+orbital-inclination	empty-space
+orbital-inclination	physical-object
+orbital-inclination	place
+orbital-inclination	shape
 orbital-node	physical-object
 orbital-node	place
 orbital-plane	attribute
@@ -8514,9 +8514,6 @@ steam	part
 steam	substance
 steel	part
 steel	substance
-stellar-body	celestial-body
-stellar-body	natural-object
-stellar-body	physical-object
 step	artifact
 step	device
 step	physical-object
@@ -8697,7 +8694,7 @@ superintendent	agent
 superintendent	organism
 superintendent	person
 superintendent	physical-object
-superior-conjunction	conjunction
+superior-conjunction	astronomical-conjunction
 superior-conjunction	encounter
 superior-conjunction	event
 supermarket	artifact

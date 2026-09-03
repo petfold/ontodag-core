@@ -15,7 +15,7 @@ python3 tools/top.py cache/sumo.pkl    --depth 3 --min 1    --od tops/sumo.od
 python3 tools/top.py cache/opencyc.pkl --depth 2 --min 1500 --od tops/opencyc.od
 [ -f cache/bfo.pkl ]       || python3 tools/extract_owl.py sources/bfo/bfo.owl BFO_0000001 cache/bfo.pkl
 [ -f cache/dolce.pkl ]     || python3 tools/extract_owl.py sources/dolce/DOLCE-Lite.owl particular cache/dolce.pkl
-[ -f cache/wikidata.pkl ]  || python3 tools/extract_wikidata.py core mathematics chemistry biology medicine ai economics computing geography cache/wikidata.pkl   # bounded P279 pulls, tools/fetch_wikidata.py
+[ -f cache/wikidata.pkl ]  || python3 tools/extract_wikidata.py core mathematics chemistry biology medicine ai economics computing geography space cache/wikidata.pkl   # bounded P279 pulls, tools/fetch_wikidata.py
 [ -f cache/dul.pkl ]       || python3 tools/extract_owl.py sources/dolce/DUL.owl Entity cache/dul.pkl
 [ -f cache/schemaorg.pkl ] || python3 tools/extract_schemaorg.py cache/schemaorg.pkl
 [ -f cache/yago.pkl ]      || python3 tools/extract_yago.py cache/yago.pkl

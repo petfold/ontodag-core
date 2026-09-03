@@ -1,0 +1,198 @@
+# sub	sup	accept|reject	reason	sub_wn	sup_wn
+# --- space batch 1 (WordNet): wordnet  ---
+andromeda-galaxy	spiral-galaxy	accept		08271656	08271457
+annular-eclipse	solar-eclipse	accept		07369099	07368877
+aphelion	apoapsis	accept		08495908	08495617
+apogee	apoapsis	accept		08495420	08495617
+apojove	apoapsis	accept		08496095	08495617
+aposelene	apoapsis	accept		08496199	08495617
+armillary-sphere	model	accept		02739248	03777283
+ascending-node	orbital-node	accept		08498279	08498424
+asteroid	minor-planet	accept		09208702	09355623
+astronomical-conjunction	encounter	accept		07415167	07414922
+astronomical-telescope	instrument	accept		02751295	03574816
+astronomy-satellite	satellite	accept		02751490	04137444
+autumnal-equinoctial-point	equinoctial-point	accept		08521112	08520728
+big-bang	explosion	accept		07408796	07308563
+binary-star	star-body	accept		09221070	09444100
+black-hole	place	reject	a black hole is an astronomical object, not a location	09223177	00027167
+booster	engine	accept		02872333	03287733
+cassegrainian-telescope	reflecting-telescope	accept		02978478	04068601
+celestial-sphere	surface	accept		08521267	08660339
+chiron	asteroid	accept		09244022	09208702
+collimator	instrument	accept		03070854	03574816
+communications-satellite	satellite	accept		03077741	04137444
+cosmology	astrophysics	accept		06098195	06097775
+coude-telescope	reflecting-telescope	accept		03116163	04068601
+dark-matter	substance	accept		14582220	00020827
+declination	angle	accept		08632894	13887509
+descending-node	orbital-node	accept		08548924	08498424
+diffuse-nebula	natural-event	reject	a nebula is an object, not an event	09266790	11408559
+equatorial-telescope	instrument	accept		03293863	03574816
+equinox	attribute	reject	an astronomical event, not an attribute	15223343	00024264
+field-glass	refracting-telescope	accept		03333129	04070207
+flare-star	red-dwarf	accept		09281252	09406198
+galilean-telescope	refracting-telescope	accept		03411208	04070207
+geostationary-orbit	geosynchronous-orbit	accept		08612644	08612498
+geosynchronous-orbit	orbit	accept		08612498	08612049
+herschelian-telescope	reflecting-telescope	accept		03516647	04068601
+host-star	star-body	accept		09450454	09444100
+hour-angle	angle	accept		13888783	13887509
+kuiper-belt-object	minor-planet	accept		09327705	09355623
+lander	spacecraft	accept		03638180	04264914
+lunar-excursion-module	spacecraft	accept		03697366	04264914
+maksutov-telescope	reflecting-telescope	accept		03715114	04068601
+meteor	natural-event	accept		11483990	11408559
+meteoroid	natural-object	accept		09353109	00019128
+milky-way	galaxy	accept		09354984	08271042
+multiple-star	star-body	accept		09363064	09444100
+natural-satellite	celestial-body	accept		09424270	09239740
+newtonian-telescope	reflecting-telescope	accept		03822767	04068601
+optical-telescope	astronomical-telescope	accept		03852688	02751295
+outer-planet	planet	accept		09381480	09394007
+perigee	periapsis	accept		08618669	08618379
+perihelion	periapsis	accept		08618831	08618379
+perijove	periapsis	accept		08619006	08618379
+periselene	periapsis	accept		08619112	08618379
+phase-of-the-moon	appearance	accept		15206744	04673965
+planetary-body	celestial-body	accept		09394646	09239740
+planetary-nebula	natural-event	reject	a nebula is an object, not an event	09394797	11408559
+primary-body	celestial-body	accept		09398769	09239740
+pulsar	neutron-star	accept		09400987	09369692
+radio-interferometer	radio-telescope	accept		04042632	04044716
+radio-telescope	astronomical-telescope	accept		04044716	02751295
+reflecting-telescope	optical-telescope	accept		04068601	03852688
+refracting-telescope	optical-telescope	accept		04070207	03852688
+right-ascension	angle	accept		08633191	13887509
+schmidt-telescope	reflecting-telescope	accept		04145863	04068601
+sidereal-time	attribute	reject	a time standard, not an attribute	15208162	00024264
+solar-telescope	instrument	accept		04258618	03574816
+solstice	attribute	reject	an astronomical event, not an attribute	15221818	00024264
+space-capsule	spacecraft	accept		04264765	04264914
+space-probe	rocket	reject	a probe is a spacecraft; WordNet's 'guided missile' chain is wrong	04265668	04099429
+space-program	method	accept		05900716	05660268
+spaceflight	voyage	accept		00313502	00312553
+spectrograph	instrument	accept		04272782	03574816
+spy-satellite	satellite	accept		04290762	04137444
+star-chart	data-chart	accept		07002459	06999802
+superior-planet	planet	accept		09450866	09394007
+transit-instrument	instrument	accept		04471912	03574816
+trapezium	multiple-star	accept		09461069	09363064
+vernal-equinoctial-point	equinoctial-point	accept		08520958	08520728
+weather-satellite	satellite	accept		04567593	04137444
+# --- space batch 2 (Wikidata): wikidata  ---
+active-galactic-nucleus	galaxy	reject	a region at a galaxy's centre, not a galaxy		08271042
+amateur-astronomy	astronomy	accept			06095022
+armillary-sphere	planetarium	reject	a model, not a planetarium	02739248	03956157
+artificial-satellite	spacecraft	accept			04264914
+astrobiology	astronomy	accept			06095022
+astrobiology	biology	accept			06037666
+astrodynamics	celestial-mechanics	accept		06096451	06097594
+astronaut	scientist	reject	astronauts need not be scientists	09818022	10560637
+barred-spiral-galaxy	spiral-galaxy	accept			08271457
+black-hole	star	reject	a stellar remnant, no longer a star	09223177	09444100
+black-hole	star.object	reject	a stellar remnant, no longer a star	09223177	09444783
+bolide	meteor	accept			11483990
+crewed-spacecraft	spacecraft	accept			04264914
+cubesat	satellite	accept			04137444
+dwarf-galaxy	galaxy	accept			08271042
+dwarf-planet	minor-planet	reject	the IAU keeps dwarf planets apart from small Solar System bodies; contested		09355623
+earth-observation-satellite	satellite	accept			04137444
+exoplanet	planet	accept			09394007
+exoplanet	planetary-body	accept			09394646
+gas-giant	planet	accept			09394007
+gas-giant	planetary-body	accept			09394646
+giant-star	star.object	accept		09288769	09444783
+heliocentric-orbit	orbit	accept			08612049
+human-spaceflight	spaceflight	accept			00313502
+ice-giant	planet	accept			09394007
+ice-giant	planetary-body	accept			09394646
+inner-planet	terrestrial-planet	accept			09456369
+irregular-galaxy	galaxy	accept			08271042
+magnetar	neutron-star	accept			09369692
+meteoroid	minor-planet	reject	meteoroids are far below minor-planet size	09353109	09355623
+navigation-satellite	satellite	accept			04137444
+neutron-star	star.object	accept		09369692	09444783
+nova	binary-star	reject	a nova is an eruption on a white dwarf, not a kind of binary	09374493	09221070
+nova	variable-star	accept		09374493	09469152
+observational-astronomy	astronomy	accept			06095022
+orbital-mechanics	celestial-mechanics	accept			06097594
+orbital-spaceflight	spaceflight	accept			00313502
+orbiter	satellite	accept			04137444
+outer-planet	planetary-body	accept		09381480	09394646
+planetary-rover	spacecraft	accept			04264914
+polar-orbit	orbit	accept			08612049
+protostar	star	accept			09444100
+protostar	star.object	accept			09444783
+pulsar	star.object	accept		09400987	09444783
+red-dwarf	star.object	accept		09406198	09444783
+red-giant	giant-star	accept		09406368	09288769
+reusable-launch-system	spacecraft	accept			04264914
+soyuz-spacecraft	space-capsule	accept			04264765
+space-debris	satellite	reject	debris is not a satellite in the equipment sense		04137444
+space-telescope	satellite	accept			04137444
+space-weather	astrophysics	accept			06097775
+suborbital-spaceflight	spaceflight	accept			00313502
+supergiant	star.object	accept		09450708	09444783
+supergiant-star	star	accept			09444100
+supergiant-star	star.object	accept			09444783
+supernova	star.object	accept		09451237	09444783
+trans-neptunian-object	minor-planet	accept			09355623
+variable-star	star.object	accept		09469152	09444783
+white-dwarf	star.object	accept		09478569	09444783
+# --- space batch 2 (WordNet): wordnet  ---
+aerolite	meteorite	accept		09189289	09352849
+full-moon	phase-of-the-moon	accept		15207556	15206744
+galilean-satellite	natural-satellite	accept		09285979	09424270
+half-moon	phase-of-the-moon	accept		15207103	15206744
+meteor-swarm	meteoroid	reject	a swarm is a group of meteoroids, not a meteoroid	09353338	09353109
+micrometeorite	meteorite	accept		09353918	09352849
+new-moon	phase-of-the-moon	accept		15206943	15206744
+pallasite	meteorite	accept		09384106	09352849
+planetary-moon	natural-satellite	accept		09358226	09424270
+# --- space batch 3: wikidata  ---
+apoapsis	apsis	accept		08495617	
+asterism	celestial-body	reject	a pattern of stars as seen from Earth, not a body		09239740
+asteroid-belt	celestial-body	accept			09239740
+astronomical-telescope	telescope	accept		02751295	
+binary-star	star-system	accept		09221070	
+constellation	asterism	reject	constellations are IAU sky regions; asterisms are informal patterns — not a subclass	09252970	
+dark-matter	interstellar-medium	reject	dark matter pervades galaxies and beyond; it is not the interstellar gas and dust	14582220	
+falcon-9	reusable-launch-system	accept			
+galaxy-cluster	celestial-body	accept			09239740
+gravitational-lens	celestial-body	reject	a phenomenon, not a body		09239740
+interstellar-medium	celestial-body	reject	a diffuse medium, not a body		09239740
+lunar-eclipse	eclipse	accept		07368993	
+magellanic-clouds	dwarf-galaxy	reject	two galaxies, not a kind of galaxy		
+main-sequence	stellar-evolution	reject	a band on the HR diagram, not the process		
+optical-telescope	telescope	accept		03852688	
+periapsis	apsis	accept		08618379	
+planetary-nebula	emission-nebula	accept		09394797	
+planetary-system	celestial-body	accept			09239740
+quasar	active-galactic-nucleus	accept		09402370	
+radio-astronomy	observational-astronomy	accept		06096759	
+radio-telescope	telescope	accept		04044716	
+reconnaissance-satellite	earth-observation-satellite	accept		04290762	
+solar-eclipse	eclipse	accept		07368877	
+solar-telescope	telescope	accept		04258618	
+soyuz-spacecraft	crewed-spacecraft	accept			
+space-shuttle	reusable-launch-system	accept		04266014	
+space-station	crewed-spacecraft	accept		04266162	
+spectral-class	stellar-classification	accept			
+star-system	celestial-body	accept			09239740
+supernova-remnant	emission-nebula	accept			
+transit-instrument	telescope	accept		04471912	
+weather-satellite	earth-observation-satellite	accept		04567593	
+# --- space batch 3: wordnet  ---
+first-quarter	half-moon	accept		15207302	15207103
+harvest-moon	full-moon	accept		15207770	15207556
+last-quarter	half-moon	accept		15207430	15207103
+orion	diffuse-nebula	reject	WordNet conflates the constellation with the Orion Nebula	09380117	09266790
+sidereal-day	sidereal-time	accept		15208333	15208162
+sidereal-hour	sidereal-time	accept		15209074	15208162
+sidereal-month	sidereal-time	accept		15209174	15208162
+sidereal-year	sidereal-time	accept		15208898	15208162
+# --- space batch 4: wikidata  ---
+# --- space batch 4: wordnet  ---
+# --- space batch 5: wikidata  ---
+# --- space batch 5: wordnet  ---

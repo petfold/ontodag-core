@@ -149,6 +149,8 @@ astronomer	structure	single	opencyc
 astronomer	system	single	opencyc	
 astronomer	vertebrate	single	opencyc	
 astronomer	worker	single	opencyc	
+astronomical-conjunction	encounter	dissented	wordnet	
+astronomical-conjunction	event	accepted	claude-ruling wordnet	
 astronomical-rising	event	accepted	sumo wordnet	
 astronomical-rising	phenomenon	single	sumo	
 atomic-nucleus	centre	dissented	wordnet	
@@ -284,9 +286,6 @@ comet-nucleus	phenomenon	single	sumo
 comet-nucleus	physical-object	single	wordnet	
 comet-nucleus	place	single	wordnet	
 comet-nucleus	universe	single	sumo	
-conjunction	encounter	dissented	wordnet	
-conjunction	event	accepted	claude-ruling wordnet	
-conjunction	information	single	opencyc	
 conservation-law	cognition	single	wordnet	
 conservation-law	concept	single	wordnet	
 conservation-law	idea	single	wordnet	
@@ -517,13 +516,6 @@ illumination-phase	attribute	single	wordnet
 illumination-phase	event	single	sumo	
 illumination-phase	luminosity	single	sumo	
 illumination-phase	phenomenon	single	sumo	
-inclination-of-an-orbit	angle	accepted	claude wordnet	
-inclination-of-an-orbit	attribute	single	wordnet	
-inclination-of-an-orbit	empty-space	single	wordnet	
-inclination-of-an-orbit	physical-object	single	wordnet	
-inclination-of-an-orbit	place	single	wordnet	
-inclination-of-an-orbit	quantity	single	sumo	
-inclination-of-an-orbit	shape	single	wordnet	
 inductance	electrical-phenomenon	accepted	claude wordnet	
 inductance	event	single	sumo	
 inductance	natural-event	dissented	wordnet	
@@ -537,7 +529,7 @@ inertia	probability	single	sumo
 inertia	process	single	wordnet	
 inertial-mass	attribute	accepted	claude wordnet	
 inertial-mass	quantity	single	sumo	
-inferior-conjunction	conjunction	accepted	claude-ruling wordnet	
+inferior-conjunction	astronomical-conjunction	accepted	claude-ruling wordnet	
 inferior-conjunction	encounter	single	wordnet	
 inferior-conjunction	event	single	wordnet	
 intermolecular-cohesion	event	single	sumo	
@@ -780,6 +772,13 @@ oort-cloud	phenomenon	single	sumo
 optical-density	attribute	single	wordnet	
 optical-density	density	accepted	claude wordnet	
 optical-density	quantity	single	sumo	
+orbital-inclination	angle	accepted	claude wordnet	
+orbital-inclination	attribute	single	wordnet	
+orbital-inclination	empty-space	single	wordnet	
+orbital-inclination	physical-object	single	wordnet	
+orbital-inclination	place	single	wordnet	
+orbital-inclination	quantity	single	sumo	
+orbital-inclination	shape	single	wordnet	
 orbital-node	phenomenon	single	sumo	
 orbital-node	physical-object	single	wordnet	
 orbital-node	place	accepted	sumo wordnet	
@@ -800,7 +799,7 @@ oscillation	wave-motion	accepted	claude wordnet
 outer-planet	celestial-body	single	wordnet	
 outer-planet	natural-object	single	wordnet	
 outer-planet	physical-object	single	wordnet	
-outer-planet	planet	accepted	claude wordnet	
+outer-planet	planet	accepted	claude wikidata wordnet	
 parity-conservation	cognition	single	wordnet	
 parity-conservation	concept	single	wordnet	
 parity-conservation	conservation-law	accepted	claude-ruling wordnet	
@@ -1030,12 +1029,6 @@ spallation	event	single	sumo
 spallation	nuclear-reaction	accepted	claude wordnet	
 spallation	phenomenon	single	sumo	
 spallation	process	single	wordnet	
-star	stellar-body	single	sumo	
-stellar-body	celestial-body	accepted	sumo wordnet	
-stellar-body	natural-object	single	wordnet	
-stellar-body	phenomenon	single	sumo	
-stellar-body	physical-object	single	wordnet	
-stellar-body	universe	single	sumo	
 storm	physical-phenomenon	accepted	claude wordnet	
 strange-particle	chemical-element	single	sumo	
 strange-particle	elementary-particle	accepted	sumo wordnet	
@@ -1064,7 +1057,7 @@ strong-interaction	physical-phenomenon	single	wordnet
 strong-interaction	process	single	wordnet	
 sunlight	physical-phenomenon	single	wordnet	
 sunlight	visible-light	accepted	claude wikidata wordnet	
-superior-conjunction	conjunction	accepted	claude-ruling wordnet	
+superior-conjunction	astronomical-conjunction	accepted	claude-ruling wordnet	
 superior-conjunction	encounter	single	wordnet	
 superior-conjunction	event	single	wordnet	
 supersymmetry	cognition	single	wordnet	
