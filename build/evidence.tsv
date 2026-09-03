@@ -83,7 +83,6 @@ accelerator	physical-object	single	wordnet
 access	attribute	single	sumo	
 access	cognition	single	wordnet	
 access	concept	dissented	wordnet	
-access	function	single	wikidata	
 access	idea	single	wordnet	
 access	normal	single	sumo	
 access	property	single	sumo	
@@ -657,11 +656,13 @@ aid	procedure	single	sumo
 aid	volition	single	sumo	
 aids	attribute	accepted	wordnet	
 aids	condition	accepted	wordnet	
-aids	disease	accepted	claude wordnet	
+aids	disease	accepted	claude wikidata wordnet	
 aids	event	single	opencyc	
-aids	illness	accepted	opencyc wordnet	
+aids	illness	accepted	opencyc wikidata wordnet	
 aids	situation	single	opencyc	
 aids	state	accepted	wordnet	
+aids	symptom	single	wikidata	
+aids	syndrome	single	wikidata	
 air	fluid	accepted	claude wordnet	
 air	material	single	sumo	
 air	phenomenon	single	sumo	
@@ -1389,6 +1390,7 @@ artistic-creation	information	single	sumo
 artistic-creation	phenomenon	single	sumo	
 artistic-creation	physical-object	single	sumo	
 artistic-creation	universe	single	sumo	
+ash	chemical	single	wikidata	
 ash	material	single	sumo	
 ash	phenomenon	single	sumo	
 ash	substance	accepted	sumo wordnet	
@@ -1449,6 +1451,7 @@ assignment	work	accepted	wordnet
 assimilation	accomplishment	single	sumo	
 assimilation	act	single	sumo	
 assimilation	activity	single	sumo	
+assimilation	chemical-reaction	single	wikidata	
 assimilation	event	accepted	sumo	
 assimilation	phenomenon	single	sumo	
 assimilation	procedure	single	sumo	
@@ -1557,7 +1560,7 @@ attempt	procedure	single	sumo
 attempt	volition	single	sumo	
 attention	action	single	opencyc	
 attention	attribute	single	sumo	
-attention	cognition	accepted	claude wordnet	
+attention	cognition	accepted	claude wikidata wordnet	
 attention	event	single	opencyc	
 attention	property	single	sumo	
 attention	situation	single	opencyc	
@@ -7177,6 +7180,7 @@ detention	state	accepted	claude wordnet
 development	artifact	single	sumo	
 development	district	accepted	claude wordnet	
 development	event	single	opencyc	
+development	growth	single	wikidata	
 development	phenomenon	single	sumo	
 development	physical-object	single	wordnet	
 development	place	accepted	wordnet	
@@ -7871,15 +7875,9 @@ diverseness	way	single	sumo
 diversion	act	accepted	claude wordnet	
 diversion	event	accepted	sumo wordnet	
 diversion	phenomenon	single	sumo	
-dividend	accomplishment	single	sumo	
-dividend	act	single	sumo	
-dividend	activity	single	sumo	
-dividend	event	single	sumo	
-dividend	outgo	accepted	claude wordnet	
-dividend	phenomenon	single	sumo	
+dividend	income	single	wordnet	
+dividend	outgo	accepted	claude	
 dividend	possession	accepted	wordnet	
-dividend	procedure	single	sumo	
-dividend	volition	single	sumo	
 division	act	single	wordnet	
 division	activity	single	wordnet	
 division	event	single	wordnet	
@@ -9551,7 +9549,7 @@ fashion	culture	single	wikidata
 fashion	phenomenon	single	sumo	
 fashion	universe	single	sumo	
 fat	body-part	single	sumo	
-fat	chemical	accepted	claude wordnet	
+fat	chemical	accepted	claude wikidata wordnet	
 fat	compound	accepted	claude wordnet	
 fat	material	accepted	sumo wordnet	
 fat	molecule	single	wordnet	
@@ -9746,7 +9744,7 @@ fever	event	single	opencyc
 fever	evidence	accepted	wordnet	
 fever	illness	single	opencyc	
 fever	situation	single	opencyc	
-fever	symptom	accepted	claude wordnet	
+fever	symptom	accepted	claude wikidata wordnet	
 fib	information	accepted	wordnet	
 fib	lie	accepted	claude wordnet	
 fiber	artifact	single	opencyc	
@@ -10047,7 +10045,7 @@ flak	phenomenon	single	sumo
 flak	procedure	single	sumo	
 flak	universe	single	sumo	
 flak	volition	single	sumo	
-flame	chemical-reaction	accepted	claude wordnet	
+flame	chemical-reaction	accepted	claude wikidata wordnet	
 flame	event	accepted	sumo	
 flame	phenomenon	single	sumo	
 flame	process	accepted	wordnet	
@@ -10798,7 +10796,7 @@ gash	injury	accepted	sumo wordnet
 gash	phenomenon	single	sumo	
 gash	state	accepted	wordnet	
 gash	wound	accepted	claude wikidata wordnet	
-gasoline	chemical	accepted	claude wordnet	
+gasoline	chemical	accepted	claude wikidata wordnet	
 gasoline	chemical-solution	single	sumo	
 gasoline	compound	dissented	wordnet	
 gasoline	fuel	accepted	claude wordnet	
@@ -10835,7 +10833,8 @@ gear-tooth	physical-object	accepted	wordnet
 gear-tooth	structure	dissented	wordnet	
 gear-tooth	universe	single	sumo	
 gem	ground	single	opencyc	
-gem	mineral	single	opencyc	
+gem	jewel	single	wikidata	
+gem	mineral	accepted	opencyc wikidata	
 gem	substance	dissented	wordnet	
 gene	compound	single	sumo	
 gene	group	single	wordnet	
@@ -10989,6 +10988,7 @@ glance	accomplishment	single	sumo
 glance	act	accepted	sumo wordnet	
 glance	activity	accepted	sumo wordnet	
 glance	event	accepted	sumo wordnet	
+glance	mineral	single	wikidata	
 glance	perception	single	sumo	
 glance	phenomenon	single	sumo	
 glance	procedure	single	sumo	
@@ -12759,9 +12759,9 @@ indigence	status	single	sumo
 indigence	tension	single	sumo	
 indigence	way	single	sumo	
 individual	agent	single	sumo	
-individual	organism	accepted	sumo wordnet	
+individual	organism	accepted	sumo wikidata wordnet	
 individual	phenomenon	single	sumo	
-individual	physical-object	accepted	sumo wordnet	
+individual	physical-object	accepted	sumo wikidata wordnet	
 individual	species	single	sumo	
 individual	universe	single	sumo	
 industry	accomplishment	single	sumo	
@@ -13129,6 +13129,7 @@ intuition	idea	accepted	claude wordnet
 intuition	signified	single	sumo	
 invasion	event	accepted	sumo wordnet	
 invasion	phenomenon	single	sumo	
+invasion	therapy	single	wikidata	
 invasion	visit	single	sumo	
 invention	cognition	accepted	claude wordnet	
 invention	event	accepted	sumo yago	
@@ -16000,6 +16001,7 @@ movement	organization	single	sumo
 movement	phenomenon	single	sumo	
 movement	team	single	sumo	
 movement	universe	single	sumo	
+mud	chemical	single	wikidata	
 mud	material	accepted	wordnet	
 mud	part	single	wordnet	
 mud	soil	accepted	claude wordnet	
@@ -16217,7 +16219,7 @@ nausea	evidence	accepted	wordnet
 nausea	illness	single	opencyc	
 nausea	phenomenon	single	sumo	
 nausea	situation	single	opencyc	
-nausea	symptom	accepted	claude wordnet	
+nausea	symptom	accepted	claude wikidata wordnet	
 navy	agent	accepted	sumo	
 navy	association	single	sumo	
 navy	collection	single	sumo	
@@ -18753,9 +18755,9 @@ prestige	way	single	sumo
 prey	agent	single	sumo	
 prey	animal	accepted	sumo wordnet	
 prey	body	single	sumo	
-prey	organism	accepted	sumo wordnet	
+prey	organism	accepted	sumo wikidata wordnet	
 prey	phenomenon	single	sumo	
-prey	physical-object	accepted	sumo wordnet	
+prey	physical-object	accepted	sumo wikidata wordnet	
 prey	species	single	sumo	
 prey	structure	single	opencyc	
 prey	system	single	opencyc	
@@ -20419,6 +20421,7 @@ remedy	medicine.3	single	claude
 remedy	phenomenon	single	sumo	
 remedy	situation	single	opencyc	
 remedy	substance	accepted	sumo wordnet	
+remedy	therapy	single	wikidata	
 remedy	thinking	single	opencyc	
 remedy	universe	single	sumo	
 renovation	action	single	opencyc	
@@ -20586,8 +20589,10 @@ reservation	universe	single	sumo
 reservation	volition	single	sumo	
 reserve	attribute	accepted	sumo wordnet	
 reserve	countryside	single	opencyc	
+reserve	drug	single	wikidata	
 reserve	environment	single	opencyc	
 reserve	inclination	single	sumo	
+reserve	medication	single	wikidata	
 reserve	mentality	single	sumo	
 reserve	property	single	sumo	
 reserve	trait	accepted	sumo wordnet	
@@ -20807,6 +20812,7 @@ reverse	tension	single	sumo
 reverse	way	single	sumo	
 reversion	act	accepted	claude wordnet	
 reversion	event	accepted	sumo wordnet	
+reversion	mutation	single	wikidata	
 reversion	phenomenon	single	sumo	
 review	accomplishment	single	sumo	
 review	acquired-knowledge	single	sumo	
@@ -23108,12 +23114,14 @@ spectacles	physical-object	accepted	wikidata wordnet
 spectacles	tool	single	wikidata	
 spectacles	universe	single	sumo	
 spectator	agent	accepted	wordnet	
+spectator	aircraft	single	wikidata	
 spectator	attribute	single	sumo	
 spectator	organism	accepted	wordnet	
 spectator	perceiver	accepted	claude wordnet	
 spectator	person	accepted	wordnet	
-spectator	physical-object	accepted	wordnet	
+spectator	physical-object	accepted	wikidata wordnet	
 spectator	property	single	sumo	
+spectator	vehicle	single	wikidata	
 spectrum	amateur	single	sumo	
 spectrum	ambiance	single	sumo	
 spectrum	attribute	accepted	sumo wordnet	
@@ -23284,6 +23292,7 @@ spouse	physical-object	accepted	wordnet
 spouse	property	single	sumo	
 spouse	relative	accepted	claude wordnet	
 spray	artifact	single	opencyc	
+spray	chemical	single	wikidata	
 spray	compound	single	sumo	
 spray	material	single	sumo	
 spray	part	single	wordnet	
@@ -24142,11 +24151,12 @@ symptom	event	single	sumo
 symptom	evidence	accepted	claude wordnet	
 symptom	phenomenon	single	sumo	
 syndrome	cognition	accepted	wordnet	
-syndrome	disease	single	opencyc	
+syndrome	disease	accepted	opencyc wikidata	
 syndrome	event	single	sumo	
 syndrome	evidence	accepted	wordnet	
+syndrome	illness	single	wikidata	
 syndrome	phenomenon	single	sumo	
-syndrome	symptom	accepted	claude wordnet	
+syndrome	symptom	accepted	claude wikidata wordnet	
 system	collection	single	sumo	
 system	group	dissented	wordnet	
 system	phenomenon	single	sumo	
@@ -25693,11 +25703,11 @@ version-of-events	procedure	single	sumo
 version-of-events	universe	single	sumo	
 version-of-events	volition	single	sumo	
 vertebrate	agent	single	sumo	
-vertebrate	animal	accepted	claude sumo wordnet	
+vertebrate	animal	accepted	claude sumo wikidata wordnet	
 vertebrate	body	single	sumo	
-vertebrate	organism	accepted	claude sumo wordnet	
+vertebrate	organism	accepted	claude sumo wikidata wordnet	
 vertebrate	phenomenon	single	sumo	
-vertebrate	physical-object	accepted	claude sumo wordnet	
+vertebrate	physical-object	accepted	claude sumo wikidata wordnet	
 vertebrate	species	single	sumo	
 vertebrate	structure	single	opencyc	
 vertebrate	system	single	opencyc	
@@ -25892,7 +25902,7 @@ volcano	landform	accepted	schemaorg yago
 volcano	mountain	accepted	claude wikidata wordnet	
 volcano	physical-object	accepted	wordnet	
 volcano	place	accepted	schemaorg yago	
-volition	cognition	accepted	claude wordnet	
+volition	cognition	accepted	claude wikidata wordnet	
 volition	event	single	sumo	
 volition	phenomenon	single	sumo	
 volume	quantity	single	sumo	
@@ -25908,7 +25918,7 @@ volunteer	property	single	sumo
 volunteer	structure	single	opencyc	
 volunteer	system	single	opencyc	
 volunteer	vertebrate	single	opencyc	
-volunteer	worker	accepted	claude wikidata wordnet	
+volunteer	worker	accepted	claude wordnet	
 vote	accomplishment	single	sumo	
 vote	act	accepted	sumo wordnet	
 vote	action	single	opencyc	
@@ -26488,12 +26498,12 @@ witness	species	single	sumo
 witness	universe	single	sumo	
 witness	vertebrate	single	sumo	
 wolf	agent	single	sumo	
-wolf	animal	accepted	sumo wordnet	
+wolf	animal	accepted	sumo wikidata wordnet	
 wolf	body	single	sumo	
 wolf	mammal	accepted	opencyc sumo wordnet	
-wolf	organism	accepted	sumo wordnet	
+wolf	organism	accepted	sumo wikidata wordnet	
 wolf	phenomenon	single	sumo	
-wolf	physical-object	accepted	sumo wordnet	
+wolf	physical-object	accepted	sumo wikidata wordnet	
 wolf	species	single	sumo	
 wolf	structure	single	opencyc	
 wolf	system	single	opencyc	

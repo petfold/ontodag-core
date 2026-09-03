@@ -338,6 +338,8 @@ single	aid	procedure	only sumo
 single	aid	volition	only sumo
 single	aids	event	only opencyc
 single	aids	situation	only opencyc
+single	aids	symptom	only wikidata
+single	aids	syndrome	only wikidata
 single	air	material	only sumo
 single	aircraft-wing	component	only sumo
 single	aircraft-wing	mechanism	only sumo
@@ -639,6 +641,7 @@ single	artistic-creation	artifact	only sumo
 single	artistic-creation	indication	only sumo
 single	artistic-creation	information	only sumo
 single	artistic-creation	physical-object	only sumo
+single	ash	chemical	only wikidata
 single	ash	material	only sumo
 single	aspect	attribute	only sumo
 single	aspect	feature	only wordnet
@@ -665,6 +668,7 @@ single	assignment	volition	only sumo
 single	assimilation	accomplishment	only sumo
 single	assimilation	act	only sumo
 single	assimilation	activity	only sumo
+single	assimilation	chemical-reaction	only wikidata
 single	assimilation	procedure	only sumo
 single	assimilation	volition	only sumo
 single	assist	accomplishment	only sumo
@@ -3053,6 +3057,7 @@ single	detector	tool	only wikidata
 single	detention	property	only sumo
 single	development	artifact	only sumo
 single	development	event	only opencyc
+single	development	growth	only wikidata
 single	development	physical-object	only wordnet
 single	development	situation	only opencyc
 single	diagnosis	accomplishment	only sumo
@@ -3462,12 +3467,7 @@ single	diverseness	society	only sumo
 single	diverseness	status	only sumo
 single	diverseness	tension	only sumo
 single	diverseness	way	only sumo
-single	dividend	accomplishment	only sumo
-single	dividend	act	only sumo
-single	dividend	activity	only sumo
-single	dividend	event	only sumo
-single	dividend	procedure	only sumo
-single	dividend	volition	only sumo
+single	dividend	income	only wordnet
 single	divorce	accomplishment	only sumo
 single	divorce	action	only opencyc
 single	divorce	activity	only sumo
@@ -4690,6 +4690,7 @@ single	gaze	perception	only sumo
 single	gaze	procedure	only sumo
 single	gaze	volition	only sumo
 single	gear	component	only sumo
+single	gem	jewel	only wikidata
 single	general	employee	only wikidata
 single	general	warrior	only wikidata
 single	genius	body	only sumo
@@ -4740,6 +4741,7 @@ single	glacier	ice	only opencyc
 single	glacier	landform	only yago
 single	glacier	place	only yago
 single	glance	accomplishment	only sumo
+single	glance	mineral	only wikidata
 single	glance	perception	only sumo
 single	glance	procedure	only sumo
 single	glance	volition	only sumo
@@ -5648,6 +5650,7 @@ single	introductory-text	component	only sumo
 single	introductory-text	device	only sumo
 single	introductory-text	indication	only sumo
 single	introductory-text	mechanism	only sumo
+single	invasion	therapy	only wikidata
 single	invasion	visit	only sumo
 single	invertebrate	agent	only sumo
 single	invertebrate	body	only sumo
@@ -6761,6 +6764,7 @@ single	movement	association	only sumo
 single	movement	collection	only sumo
 single	movement	organization	only sumo
 single	movement	team	only sumo
+single	mud	chemical	only wikidata
 single	mug	cup	only wikidata
 single	mug	equipment	only wikidata
 single	mug	tool	only wikidata
@@ -8680,6 +8684,7 @@ single	remedy	action	only opencyc
 single	remedy	event	only opencyc
 single	remedy	material	only sumo
 single	remedy	situation	only opencyc
+single	remedy	therapy	only wikidata
 single	remedy	thinking	only opencyc
 single	renovation	action	only opencyc
 single	renovation	amateur	only sumo
@@ -8771,8 +8776,10 @@ single	reservation	event	only sumo
 single	reservation	procedure	only sumo
 single	reservation	volition	only sumo
 single	reserve	countryside	only opencyc
+single	reserve	drug	only wikidata
 single	reserve	environment	only opencyc
 single	reserve	inclination	only sumo
+single	reserve	medication	only wikidata
 single	reserve	mentality	only sumo
 single	reserve	property	only sumo
 single	reservoir	artifact	only wikidata
@@ -8881,6 +8888,7 @@ single	reverse	society	only sumo
 single	reverse	status	only sumo
 single	reverse	tension	only sumo
 single	reverse	way	only sumo
+single	reversion	mutation	only wikidata
 single	review	accomplishment	only sumo
 single	review	acquired-knowledge	only sumo
 single	review	article	only opencyc
@@ -9854,8 +9862,10 @@ single	specimen	substance	only sumo
 single	spectacles	clothing	only wikidata
 single	spectacles	equipment	only wikidata
 single	spectacles	tool	only wikidata
+single	spectator	aircraft	only wikidata
 single	spectator	attribute	only sumo
 single	spectator	property	only sumo
+single	spectator	vehicle	only wikidata
 single	spectrum	amateur	only sumo
 single	spectrum	ambiance	only sumo
 single	spectrum	circumstance	only sumo
@@ -9941,6 +9951,7 @@ single	sport	war	only sumo
 single	spouse	attribute	only sumo
 single	spouse	property	only sumo
 single	spray	artifact	only opencyc
+single	spray	chemical	only wikidata
 single	spray	compound	only sumo
 single	spray	material	only sumo
 single	spray	water	only sumo
@@ -10274,8 +10285,8 @@ single	switch	visit	only sumo
 single	symbol	concept	only wikidata
 single	symbol	sign	only wikidata
 single	symptom	event	only sumo
-single	syndrome	disease	only opencyc
 single	syndrome	event	only sumo
+single	syndrome	illness	only wikidata
 single	table	information	only schemaorg
 single	tactic	measure	only sumo
 single	tactic	routine	only sumo
@@ -11274,7 +11285,7 @@ single	young-people	vertebrate	only sumo
 single	zone	physical-object	only wordnet
 unplaced	aberration	event luminosity natural-event phenomenon process	no accepted parent reaches a root
 unplaced	accelerator	artifact bar physical-object	no accepted parent reaches a root
-unplaced	access	attribute cognition concept function idea normal property	no accepted parent reaches a root
+unplaced	access	attribute cognition concept idea normal property	no accepted parent reaches a root
 unplaced	advancement	act amateur ambiance attribute circumstance civilisation crowd custom	no accepted parent reaches a root
 unplaced	affinity.relation	accomplishment act activity event phenomenon procedure volition	no accepted parent reaches a root
 unplaced	afternoon	quantity time-period	no accepted parent reaches a root
@@ -11396,7 +11407,6 @@ unplaced	future	attribute	no accepted parent reaches a root
 unplaced	gap	artifact physical-object	no accepted parent reaches a root
 unplaced	garden	agent artifact collection group organism phenomenon physical-object place	no accepted parent reaches a root
 unplaced	gas	fluid natural-event phenomenon process state-of-matter substance	no accepted parent reaches a root
-unplaced	gem	ground mineral substance	no accepted parent reaches a root
 unplaced	gene	compound group material molecule phenomenon sequence substance universe	no accepted parent reaches a root
 unplaced	genus-pan	agent animal body group mammal organism phenomenon physical-object	no accepted parent reaches a root
 unplaced	globe	artifact attribute image information map shape	no accepted parent reaches a root
