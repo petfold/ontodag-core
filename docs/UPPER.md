@@ -333,6 +333,12 @@ categories, 10,837 edges**; sha256 root
 root `cc4d8551915bc11f1629bc9513faad64ae97e686c0deef5d9cb77467b55f1746`;
 order-independent, top level unchanged.
 
+**Re-run with core v6, the goods layer (0.23.0, 2026-09-04):** union
+**10,952 categories, 12,248 edges** (built in 253 s); sha256 root
+`764bb46c3adf7f73265f7b67c72eaba6cdebec8cccb52770cc262d0c3c488bed`, Swarm/BMT
+root `57910f88f2cbeea5372cbd3832e70926fee3c33834dcf1bc3a387fca153031c1`;
+order-independent, every pack concept reachable, top level unchanged.
+
 ### 8.2 Shipped (ontodag 0.21.0, 2026-09-03)
 
 The ten packs ship in the ontodag wheel as `ontodag.domain.<name>`
@@ -641,7 +647,7 @@ Sense mismatches surfaced in the gloss column and were re-picked (`pants`
 was the British underpants; `stroller` the pedestrian; `breadboard` the
 kneading board where GPT means the electronics one — dropped).
 
-**Result:** core 4,138 categories (+1,208), nothing lost, no qualified
+**Result:** core 4,137 categories (+1,207), nothing lost, no qualified
 names, every new concept placed. One sense correction made because the old
 sense was an empty leaf: `appliance` is the durable good (02729837), so
 `toaster ⊑ kitchen-appliance ⊑ household-appliance ⊑ appliance`. The packs
