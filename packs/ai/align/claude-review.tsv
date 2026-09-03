@@ -343,3 +343,60 @@ stemmer	algorithm	accept		05847753	05847438
 adam-optimizer	stochastic-gradient-descent	accept			
 naive-bayes-classifier	bayes-classifier	accept			
 tree-traversal	graph-traversal	accept			
+# --- ai wikidata batch 6: wikidata  ---
+association-rule-learning	data-mining	accept			13455234
+autonomous-robot	mobile-robot	accept			
+autonomous-underwater-vehicle	unmanned-aerial-vehicle	reject	not aerial		
+autonomous-weapon	military-robot	accept			
+backpropagation-through-time	backpropagation	accept			
+breadth-first-search	graph-traversal	accept			
+chatbot	software-agent	accept			
+cluster-analysis	data-mining	accept			13455234
+contrastive-learning	self-supervised-learning	accept			
+deep-q-network	artificial-neural-network	accept			06725467
+depth-first-search	graph-traversal	accept			
+domain-adaptation	reinforcement-learning	reject	a transfer-learning problem		
+factor-graph	graph	reject	core's graph is the chart		07000195
+friendly-artificial-intelligence	artificial-general-intelligence	accept			
+inductive-logic-programming	inductive-programming	accept			
+interactive-machine-learning	machine-learning	accept			
+knowledge-extraction	data-mining	accept			13455234
+membership-inference-attack	data-mining	reject	an attack on models		13455234
+proximal-policy-optimization	model-free-reinforcement-learning	accept			
+proximal-policy-optimization	policy-gradient-method	accept			
+relationship-extraction	text-mining	accept			
+self-attention	attention-mechanism	accept			
+semantic-reasoner	inference-engine	accept			
+semi-supervised-learning	weakly-supervised-learning	reject	siblings		
+sparse-distributed-memory	content-addressable-memory	reject	a model, not the hardware		
+speech-synthesis	generative-model	reject	a task, not a model		
+underwater-robot	unmanned-aerial-vehicle	reject	not aerial		
+unmanned-aerial-vehicle	aircraft	accept			02686568
+virtual-assistant	software-agent	accept			
+# --- ai wikidata batch 7: wikidata  ---
+a-star-search	best-first-search	accept			
+active-learning	semi-supervised-learning	accept			
+autoregressive-model	statistical-model	accept			
+boosting-algorithm	bootstrap-aggregating	reject	siblings under ensemble learning		
+bounded-rationality	decision-theory	accept			
+constraint-logic-programming	constraint-programming	accept			
+deepfake	signal-processing	reject	a kind of synthetic media, not a field		
+energy-based-model	statistical-model	accept			
+ethics-of-artificial-intelligence	philosophy-of-artificial-intelligence	accept			
+generative-model	statistical-model	accept			
+human-robot-interaction	human-computer-interaction	accept			
+hyperparameter-optimization	mathematical-optimization	accept			
+image-classification	image-processing	accept			
+image-to-image-translation	image-processing	accept			
+language-model	statistical-model	accept			
+linked-open-data	linked-data	accept			
+machine-ethics	ethics-of-artificial-intelligence	accept			
+military-robot	autonomous-robot	reject	not necessarily autonomous		
+mixture-model	statistical-model	accept			
+obstacle-avoidance	path-planning	accept			
+roboethics	ethics-of-artificial-intelligence	accept			
+robot-end-effector	actuator	accept			
+rule-based-system	knowledge-based-system	accept			
+thompson-sampling	multi-armed-bandit	reject	an algorithm under a problem		
+topic-model	statistical-model	accept			
+value-function	mathematical-optimization	reject	a concept under a field		

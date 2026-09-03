@@ -1,3 +1,4 @@
+a-star-search	best-first-search
 abbey	monastery
 abbey	settlement
 abductive-logic-programming	logic-programming
@@ -8,10 +9,14 @@ activation-function	function
 active-learning	artificial-intelligence
 active-learning	incremental-learning
 active-learning	machine-learning
+active-learning	semi-supervised-learning
+active-learning	supervised-learning
+active-learning	weakly-supervised-learning
 ad	information
 ad	service
 adam-optimizer	gradient-descent
 adam-optimizer	stochastic-gradient-descent
+adaptive-control	control-theory
 adult	animal
 adult	organism
 adult	physical-object
@@ -82,6 +87,7 @@ ash	chemical
 assembly-hall	room
 assistant	research-worker
 assistant	scientist
+association-rule-learning	data-mining
 astronomy	research
 astronomy	science
 atmosphere	fluid
@@ -113,6 +119,9 @@ autonomous-car	automaton
 autonomous-car	autonomic-computing
 autonomous-car	autonomous-vehicle
 autonomous-car	machine
+autonomous-robot	automaton
+autonomous-robot	machine
+autonomous-robot	mobile-robot
 autonomous-spacecraft	artificial-intelligence
 autonomous-spacecraft	automaton
 autonomous-spacecraft	autonomic-computing
@@ -123,16 +132,26 @@ autonomous-truck	automaton
 autonomous-truck	autonomic-computing
 autonomous-truck	autonomous-vehicle
 autonomous-truck	machine
+autonomous-underwater-vehicle	aircraft
 autonomous-underwater-vehicle	artificial-intelligence
 autonomous-underwater-vehicle	automaton
 autonomous-underwater-vehicle	autonomic-computing
 autonomous-underwater-vehicle	autonomous-vehicle
 autonomous-underwater-vehicle	machine
+autonomous-underwater-vehicle	physical-object
+autonomous-underwater-vehicle	unmanned-aerial-vehicle
+autonomous-underwater-vehicle	vehicle
 autonomous-vehicle	artificial-intelligence
 autonomous-vehicle	automaton
 autonomous-vehicle	autonomic-computing
 autonomous-vehicle	machine
+autonomous-weapon	automaton
+autonomous-weapon	autonomous-robot
+autonomous-weapon	machine
+autonomous-weapon	military-robot
+autonomous-weapon	mobile-robot
 autoregressive-model	artificial-neural-network
+autoregressive-model	statistical-model
 avenue	road
 avenue	street
 baby	animal
@@ -141,6 +160,7 @@ baby	childhood
 baby	organism
 baby	physical-object
 backlog	hill
+backpropagation-through-time	backpropagation
 backtracking-search	information-retrieval
 backtracking-search	search-algorithm
 bacon	flesh
@@ -183,6 +203,7 @@ bathtub	tool
 battle	violence
 bayes-classifier	classification-algorithm
 bayes-classifier	function
+bayesian-optimization	mathematical-optimization
 bean	food
 bean	seed
 bear	animal
@@ -208,7 +229,10 @@ bert-model	artificial-neural-network
 bert-model	transformer-model
 betrothal	declaration
 betrothal	promise
+betweenness-centrality	centrality
+betweenness-centrality	function
 biclustering	cluster-analysis
+biclustering	data-mining
 bicycle	artifact
 bicycle	equipment
 bicycle	physical-object
@@ -221,6 +245,7 @@ bio-inspired-robotics	robotics
 biorobotics	robotics
 birthday	anniversary
 blackmail	crime
+blind-signal-separation	signal-processing
 block	settlement
 blood	fluid
 blood	liquid
@@ -232,10 +257,12 @@ bolt	equipment
 bolt	physical-object
 bolt	tool
 boltzmann-machine	energy-based-model
+boltzmann-machine	statistical-model
 book	publication
 book-volume	publication
 booklet	publication
 boosting-algorithm	artificial-intelligence
+boosting-algorithm	bootstrap-aggregating
 boosting-algorithm	ensemble-learning
 boosting-algorithm	heuristic
 boosting-algorithm	machine-learning
@@ -253,6 +280,7 @@ bottle	tool
 bottle-cap	lid
 bottom	ship
 bottom	watercraft
+bounded-rationality	decision-theory
 bowl	artifact
 bowl	equipment
 bowl	physical-object
@@ -264,6 +292,9 @@ box	tool
 braid	structure
 branch	stalk
 bread	food
+breadth-first-search	graph-traversal
+breadth-first-search	information-retrieval
+breadth-first-search	search-algorithm
 brewery	factory
 brewery	organization
 bride	adult
@@ -348,6 +379,7 @@ causal-diagram	bayesian-network
 cellular-telephone	phone
 celluloid	equipment
 census	dataset
+centrality	function
 chair	furniture
 chairman	manager
 chairman	person
@@ -359,7 +391,9 @@ chapter	board-of-directors
 characteristic	number
 charm	fraction
 charm	number
+chatbot	software-agent
 chatbot-evaluation	chatbot
+chatbot-evaluation	software-agent
 cheese	dairy-product
 chemical-element	chemical
 chest-of-drawers	furniture
@@ -395,6 +429,7 @@ club	artifact
 club	equipment
 club	physical-object
 clue	information
+cluster-analysis	data-mining
 coat	artifact
 coat	clothing
 coat	equipment
@@ -428,6 +463,7 @@ computer-mouse	interface
 comrade	acquaintance
 comrade	person
 concurrent-logic-programming	logic-programming
+confusion-matrix	matrix
 congressman	politician
 congressman	professional
 congressman	specialist
@@ -435,22 +471,31 @@ congressman	worker
 connectionist-expert-system	artificial-intelligence
 connectionist-expert-system	artificial-neural-network
 connectionist-expert-system	expert-system
+connectionist-expert-system	knowledge-based-system
 conscience	lesson
 conscription	military-service
 conspiracy	alliance
 conspiracy	organization
 conspiracy	secrecy
 constitution	structure
+constraint-logic-programming	constraint-programming
 constraint-logic-programming	logic-programming
 consultation	meeting
 continual-learning	artificial-intelligence
 continual-learning	machine-learning
 contrast	number
+contrastive-learning	artificial-intelligence
+contrastive-learning	machine-learning
+contrastive-learning	self-supervised-learning
+contrastive-learning	supervised-learning
+contrastive-learning	weakly-supervised-learning
 contribution	gift
 controlled-vocabulary	dataset
 conversational-ai	ai-model
 conversational-ai	artificial-neural-network
 conversational-ai	chatbot
+conversational-ai	software-agent
+convex-optimization	mathematical-optimization
 convolutional-neural-network	artificial-neural-network
 convolutional-neural-network	feedforward-neural-network
 cook	craftsman
@@ -521,11 +566,15 @@ decoration	physical-object
 deep-belief-network	artificial-neural-network
 deep-belief-network	bayesian-network
 deep-generative-model	generative-model
+deep-generative-model	statistical-model
 deep-neural-network	artificial-neural-network
+deep-q-network	artificial-neural-network
 deep-reinforcement-learning	artificial-intelligence
 deep-reinforcement-learning	deep-learning
 deep-reinforcement-learning	machine-learning
 deep-reinforcement-learning	reinforcement-learning
+deepfake	signal-processing
+deepfake	synthetic-media
 defendant	party
 defendant	person
 deity	concept
@@ -536,6 +585,9 @@ denoising-autoencoder	autoencoder
 dentist	doctor
 depository-financial-institution	occupation
 depository-financial-institution	organization
+depth-first-search	graph-traversal
+depth-first-search	information-retrieval
+depth-first-search	search-algorithm
 deputy	politician
 deputy	professional
 deputy	specialist
@@ -554,6 +606,7 @@ detector	physical-object
 detector	tool
 diagnostic-expert-system	artificial-intelligence
 diagnostic-expert-system	expert-system
+diagnostic-expert-system	knowledge-based-system
 diagram	structure
 dialogue-system	artificial-intelligence
 dialogue-system	computational-linguistics
@@ -565,6 +618,7 @@ diet	food
 diffusion-model	artificial-neural-network
 diffusion-model	generative-model
 diffusion-model	latent-variable-model
+diffusion-model	statistical-model
 diffusion-model	transformer-model
 director	artist
 director	manager
@@ -585,6 +639,9 @@ document-classification	statistical-classification
 documentation	information
 doll	artifact
 doll	physical-object
+domain-adaptation	artificial-intelligence
+domain-adaptation	machine-learning
+domain-adaptation	reinforcement-learning
 dome	ceiling
 domestic-robot	automaton
 domestic-robot	machine
@@ -629,6 +686,8 @@ eggshell	equipment
 eggshell	housing
 eggshell	physical-object
 eggshell	tool
+eigenvector-centrality	centrality
+eigenvector-centrality	function
 elementary-cellular-automaton	cellular-automaton
 elephant	mammal
 elevator	machine
@@ -648,6 +707,7 @@ employee	worker
 enemy	acquaintance
 enemy	adversary
 enemy	person
+energy-based-model	statistical-model
 engagement	declaration
 engagement	promise
 engine	machine
@@ -657,6 +717,7 @@ ensemble-learning	machine-learning
 entertainment-robot	automaton
 entertainment-robot	machine
 ethics	philosophy
+ethics-of-artificial-intelligence	philosophy-of-artificial-intelligence
 evolutionary-algorithm	artificial-intelligence
 evolutionary-algorithm	heuristic
 evolutionary-algorithm	metaheuristic
@@ -671,6 +732,7 @@ exemplar	text
 exercise	fitness
 expert	person
 expert-system	artificial-intelligence
+expert-system	knowledge-based-system
 explainable-ai	artificial-intelligence
 explaining	concept
 explaining	information
@@ -684,6 +746,7 @@ exploration	motion
 exploration	voyage
 extraterrestrial-being	organism
 extraterrestrial-being	physical-object
+factor-graph	graph
 factory	organization
 fan	person
 farm	workplace
@@ -721,6 +784,7 @@ flesh	tissue
 flour	food
 flour	powder
 flow-based-generative-model	generative-model
+flow-based-generative-model	statistical-model
 flower	organism
 flower	physical-object
 flower	plant
@@ -737,6 +801,7 @@ fraction	number
 fracture	injury
 frame-based-expert-system	artificial-intelligence
 frame-based-expert-system	expert-system
+frame-based-expert-system	knowledge-based-system
 frank	culture
 frank	custom
 frank	dish
@@ -744,6 +809,10 @@ frank	food
 frank	prepared-dish
 friend	acquaintance
 friend	person
+friendly-artificial-intelligence	ai-model
+friendly-artificial-intelligence	artificial-general-intelligence
+friendly-artificial-intelligence	artificial-intelligence
+friendly-artificial-intelligence	artificial-neural-network
 fuel	chemical
 functional-logic-programming	logic-programming
 fundamental-law	structure
@@ -763,6 +832,7 @@ gasoline	chemical
 gated-recurrent-unit	artificial-neural-network
 gated-recurrent-unit	recurrent-neural-network
 gaussian-mixture-model	mixture-model
+gaussian-mixture-model	statistical-model
 general	employee
 general	warrior
 general	worker
@@ -771,13 +841,18 @@ generative-adversarial-network	artificial-intelligence
 generative-adversarial-network	artificial-neural-network
 generative-adversarial-network	generative-ai
 generative-adversarial-network	generative-model
+generative-adversarial-network	statistical-model
 generative-ai	ai-model
 generative-ai	artificial-intelligence
 generative-ai	artificial-neural-network
 generative-ai	generative-model
+generative-ai	statistical-model
 generative-ai-chatbot	chatbot
+generative-ai-chatbot	software-agent
+generative-model	statistical-model
 generative-pre-trained-transformer	language-model
 generative-pre-trained-transformer	large-language-model
+generative-pre-trained-transformer	statistical-model
 genetic-algorithm	artificial-intelligence
 genetic-algorithm	evolutionary-algorithm
 genetic-algorithm	heuristic
@@ -822,6 +897,7 @@ grace	prayer
 grace	text
 gradient-boosting	artificial-intelligence
 gradient-boosting	boosting-algorithm
+gradient-boosting	bootstrap-aggregating
 gradient-boosting	ensemble-learning
 gradient-boosting	heuristic
 gradient-boosting	machine-learning
@@ -836,6 +912,7 @@ grandfather	father
 grandfather	parent
 graph-attention-network	artificial-neural-network
 graph-convolutional-network	artificial-neural-network
+graph-embedding	function
 graph-neural-network	artificial-neural-network
 graph-traversal	information-retrieval
 graph-traversal	search-algorithm
@@ -892,6 +969,7 @@ heuristic-search-algorithm	search-algorithm
 hierarchical-classifier	classification-algorithm
 hierarchical-classifier	function
 hierarchical-clustering	cluster-analysis
+hierarchical-clustering	data-mining
 hierarchical-temporal-memory	artificial-intelligence
 hierarchical-temporal-memory	artificial-neural-network
 hierarchical-temporal-memory	machine-learning
@@ -945,6 +1023,7 @@ hovel	hotel
 hovel	occupation
 hovel	organization
 human	mammal
+human-robot-interaction	human-computer-interaction
 human-robot-interaction	robotics
 hunter	athlete
 hunter	worker
@@ -954,6 +1033,7 @@ hunting-expedition	voyage
 husband	organism
 husband	physical-object
 husband	spouse
+hyperparameter-optimization	mathematical-optimization
 ice	substance
 ice	water
 ice-cream	dessert
@@ -961,10 +1041,15 @@ ice-cream	dish
 ice-cream	food
 ice-cream	prepared-dish
 illustration	image
+image-classification	image-processing
+image-classification	signal-processing
 image-dataset	dataset
+image-processing	signal-processing
 image-segmentation	computer-vision
 image-to-image-translation	artificial-intelligence
+image-to-image-translation	image-processing
 image-to-image-translation	machine-learning
+image-to-image-translation	signal-processing
 imitation-learning	artificial-intelligence
 imitation-learning	machine-learning
 imitation-learning	robot-learning
@@ -976,6 +1061,8 @@ independent-component-analysis	artificial-intelligence
 independent-component-analysis	machine-learning
 independent-component-analysis	unsupervised-learning
 index	finger
+inductive-logic-programming	inductive-programming
+inductive-logic-programming	supervised-learning
 inductive-programming	supervised-learning
 industrial-robot	automaton
 industrial-robot	machine
@@ -1002,8 +1089,11 @@ instance-segmentation	computer-vision
 instance-segmentation	image-segmentation
 instruction-tuned-model	language-model
 instruction-tuned-model	large-language-model
+instruction-tuned-model	statistical-model
 intelligence-amplification	artificial-intelligence
 intelligent-system	artificial-intelligence
+interactive-machine-learning	artificial-intelligence
+interactive-machine-learning	machine-learning
 invertebrate	animal
 invertebrate	organism
 invertebrate	physical-object
@@ -1062,8 +1152,11 @@ knowledge-base	dataset
 knowledge-based-agent	intelligent-agent
 knowledge-distillation	artificial-intelligence
 knowledge-distillation	machine-learning
+knowledge-extraction	data-mining
 knowledge-graph	dataset
 knowledge-graph	knowledge-base
+knowledge-graph-embedding	function
+knowledge-graph-embedding	graph-embedding
 knowledge-representation	artificial-intelligence
 lab	room
 lab	study
@@ -1083,12 +1176,18 @@ lamb	organism
 lamb	physical-object
 landed-estate	farm
 landed-estate	workplace
+language-model	statistical-model
 large-action-model	ai-model
 large-action-model	artificial-neural-network
 large-action-model	language-model
 large-action-model	large-language-model
+large-action-model	statistical-model
 large-language-model	language-model
+large-language-model	statistical-model
 latent-dirichlet-allocation	generative-model
+latent-dirichlet-allocation	statistical-model
+latent-space	function
+latent-variable-model	statistical-model
 laundry	care
 laundry	service
 laurel-wreath	artifact
@@ -1114,6 +1213,7 @@ lighter	tool
 linguistics	humanities
 linguistics	social-science
 linked-open-data	dataset
+linked-open-data	linked-data
 liquid	fluid
 literacy	skill
 loan	transaction
@@ -1121,6 +1221,7 @@ lobby	workplace
 lock	mechanism
 log-cabin	building
 log-cabin	house
+logistic-regression	statistical-model
 long-short-term-memory	artificial-neural-network
 long-short-term-memory	recurrent-neural-network
 look-alike	person
@@ -1132,6 +1233,8 @@ lounge	room
 lumber	artifact
 lumber	physical-object
 lung	organ
+machine-ethics	ethics-of-artificial-intelligence
+machine-ethics	philosophy-of-artificial-intelligence
 machine-learning	artificial-intelligence
 machine-reading-comprehension	artificial-intelligence
 machine-reading-comprehension	computational-linguistics
@@ -1163,6 +1266,7 @@ manuscript	text
 marathon	game
 marathon	race
 marathon	sport
+markov-chain-monte-carlo	monte-carlo-method
 marriage	ceremony
 marsh	environment
 marsh	habitat
@@ -1172,6 +1276,7 @@ mask	equipment
 mask	physical-object
 mask	tool
 masked-language-model	language-model
+masked-language-model	statistical-model
 match	artifact
 match	equipment
 match	physical-object
@@ -1195,6 +1300,7 @@ meat	tissue
 medical-robot	automaton
 medical-robot	machine
 medication	drug
+membership-inference-attack	data-mining
 memory-augmented-neural-network	artificial-neural-network
 merchant	businessman
 merchant	worker
@@ -1218,7 +1324,9 @@ microphone	musical-instrument
 microphone	physical-object
 microphone	tool
 military-robot	automaton
+military-robot	autonomous-robot
 military-robot	machine
+military-robot	mobile-robot
 milk	fluid
 milk	food
 milk	liquid
@@ -1226,9 +1334,11 @@ mill	machine
 mirror	artifact
 mirror	physical-object
 mist	fog
+mixture-model	statistical-model
 mixture-of-experts-model	artificial-neural-network
 mixture-of-experts-model	language-model
 mixture-of-experts-model	large-language-model
+mixture-of-experts-model	statistical-model
 mixture-of-experts-model	transformer-model
 mobile-robot	automaton
 mobile-robot	machine
@@ -1276,6 +1386,7 @@ multimodal-artificial-intelligence	artificial-intelligence
 multimodal-artificial-intelligence	foundation-model
 multimodal-large-language-model	language-model
 multimodal-large-language-model	large-language-model
+multimodal-large-language-model	statistical-model
 multimodal-learning	artificial-intelligence
 multimodal-learning	machine-learning
 multiple-instance-learning	supervised-learning
@@ -1347,6 +1458,7 @@ nursery	room
 nutshell	peel
 object-detection	computer-vision
 obstacle	physical-object
+obstacle-avoidance	path-planning
 occupation	organization
 office	workplace
 one-shot-learning	artificial-intelligence
@@ -1493,6 +1605,11 @@ professor	research-worker
 professor	scientist
 program	publication
 promise	declaration
+proximal-policy-optimization	artificial-intelligence
+proximal-policy-optimization	machine-learning
+proximal-policy-optimization	model-free-reinforcement-learning
+proximal-policy-optimization	policy-gradient-method
+proximal-policy-optimization	reinforcement-learning
 psychoanalysis	psychology
 publisher	company
 publisher	occupation
@@ -1540,6 +1657,7 @@ randomness	uncertainty
 rdf-graph	dataset
 reasoning-language-model	language-model
 reasoning-language-model	large-language-model
+reasoning-language-model	statistical-model
 recommendation	text
 recurrent-neural-network	artificial-neural-network
 recursive-neural-network	artificial-neural-network
@@ -1554,6 +1672,10 @@ reinforcement-learning	machine-learning
 reinforcement-learning-from-human-feedback	artificial-intelligence
 reinforcement-learning-from-human-feedback	machine-learning
 reinforcement-learning-from-human-feedback	reinforcement-learning
+relationship-extraction	artificial-intelligence
+relationship-extraction	computational-linguistics
+relationship-extraction	natural-language-processing
+relationship-extraction	text-mining
 relative	person
 religious-service	ceremony
 religious-service	custom
@@ -1579,6 +1701,7 @@ restaurant	workplace
 restricted-boltzmann-machine	artificial-neural-network
 restricted-boltzmann-machine	boltzmann-machine
 restricted-boltzmann-machine	energy-based-model
+restricted-boltzmann-machine	statistical-model
 restricted-boltzmann-machine	stochastic-neural-network
 restriction	function
 retailer	businessman
@@ -1590,6 +1713,7 @@ retrieval-augmented-generation	artificial-neural-network
 retrieval-augmented-generation	generative-ai
 retrieval-augmented-generation	generative-model
 retrieval-augmented-generation	information-retrieval
+retrieval-augmented-generation	statistical-model
 reversible-cellular-automaton	cellular-automaton
 reviewer	critic
 reviewer	person
@@ -1612,6 +1736,9 @@ ritual	custom
 road-shoulder	lane
 roadway	road
 robbery	crime
+roboethics	ethics-of-artificial-intelligence
+roboethics	philosophy-of-artificial-intelligence
+robot-end-effector	actuator
 robot-learning	artificial-intelligence
 robot-learning	machine-learning
 robot-planning	robotics
@@ -1633,6 +1760,7 @@ rugby	game
 rugby	sport
 rule-based-expert-system	artificial-intelligence
 rule-based-expert-system	expert-system
+rule-based-expert-system	knowledge-based-system
 rule-based-machine-learning	artificial-intelligence
 rule-based-machine-learning	machine-learning
 rule-based-machine-translation	artificial-intelligence
@@ -1640,6 +1768,7 @@ rule-based-machine-translation	computational-linguistics
 rule-based-machine-translation	machine-translation
 rule-based-machine-translation	natural-language-processing
 rule-based-system	inference-engine
+rule-based-system	knowledge-based-system
 ruler	artifact
 ruler	equipment
 ruler	physical-object
@@ -1662,6 +1791,7 @@ sandal	shoe
 sandal	tool
 satisfaction	joy
 scab	worker
+scale-free-network	complex-network
 scholarship	prize
 science	research
 scientist	research-worker
@@ -1676,6 +1806,7 @@ search-algorithm	information-retrieval
 seat	furniture
 secretary	clerk
 seed	food
+self-attention	attention-mechanism
 self-organizing-map	artificial-neural-network
 self-reconfiguring-modular-robot	automaton
 self-reconfiguring-modular-robot	machine
@@ -1692,6 +1823,7 @@ semantic-analysis	natural-language-processing
 semantic-network	dataset
 semantic-network	knowledge-base
 semantic-network	knowledge-graph
+semantic-reasoner	inference-engine
 semantic-role-labeling	artificial-intelligence
 semantic-role-labeling	computational-linguistics
 semantic-role-labeling	natural-language-processing
@@ -1701,6 +1833,8 @@ semantic-web	dataset
 semantic-web	knowledge-base
 semantic-web	knowledge-graph
 semantic-web	semantic-network
+semi-supervised-learning	supervised-learning
+semi-supervised-learning	weakly-supervised-learning
 sentence-embedding	artificial-intelligence
 sentence-embedding	computational-linguistics
 sentence-embedding	feature-learning
@@ -1748,12 +1882,14 @@ shot	physical-object
 shrub	organism
 shrub	physical-object
 shrub	plant
+sigmoid-function	function
 sign-of-the-zodiac	concept
 sign-of-the-zodiac	sign
 sign-of-the-zodiac	symbol
 signal	sign
 signboard	information
 similarity	function
+similarity-measure	function
 singer	artist
 singer	musician
 singer	person
@@ -1772,6 +1908,7 @@ slave	prisoner
 sludge	fluid
 sludge	waste
 small-language-model	language-model
+small-language-model	statistical-model
 smell	perception
 smoke	physical-object
 snail	animal
@@ -1806,6 +1943,7 @@ spacecraft	vehicle
 sparse-dictionary-learning	artificial-intelligence
 sparse-dictionary-learning	feature-learning
 sparse-dictionary-learning	machine-learning
+sparse-distributed-memory	content-addressable-memory
 speaker	person
 speaker-verification	artificial-intelligence
 speaker-verification	computational-linguistics
@@ -1820,6 +1958,8 @@ speech-dataset	dataset
 speech-recognition	artificial-intelligence
 speech-recognition	computational-linguistics
 speech-recognition	natural-language-processing
+speech-synthesis	generative-model
+speech-synthesis	statistical-model
 sphere	surface
 spider	animal
 spider	invertebrate
@@ -1836,6 +1976,7 @@ stage	workplace
 state-space-search	information-retrieval
 state-space-search	search-algorithm
 statistical-language-model	language-model
+statistical-language-model	statistical-model
 statistical-machine-translation	artificial-intelligence
 statistical-machine-translation	computational-linguistics
 statistical-machine-translation	machine-translation
@@ -1853,6 +1994,7 @@ steward	governor
 steward	leader
 steward	person
 stochastic-block-model	generative-model
+stochastic-block-model	statistical-model
 stochastic-gradient-descent	gradient-descent
 stochastic-neural-network	artificial-neural-network
 storm	motion
@@ -1963,15 +2105,18 @@ text-segmentation	natural-language-processing
 text-to-image-model	ai-model
 text-to-image-model	artificial-neural-network
 text-to-image-model	generative-model
+text-to-image-model	statistical-model
 text-to-video-model	ai-model
 text-to-video-model	artificial-neural-network
 text-to-video-model	generative-model
+text-to-video-model	statistical-model
 text-tokenization	artificial-intelligence
 text-tokenization	computational-linguistics
 text-tokenization	natural-language-processing
 theology	humanities
 theorist	research-worker
 theorist	scientist
+thompson-sampling	multi-armed-bandit
 thumb	finger
 tide	motion
 timetable	schedule
@@ -1988,6 +2133,7 @@ top	clothing
 top	equipment
 top	physical-object
 top	tool
+topic-model	statistical-model
 torture	crime
 torture	violence
 tourism	motion
@@ -2039,8 +2185,12 @@ umbrella	clothing
 umbrella	equipment
 umbrella	physical-object
 umbrella	tool
+underwater-robot	aircraft
 underwater-robot	automaton
 underwater-robot	machine
+underwater-robot	physical-object
+underwater-robot	unmanned-aerial-vehicle
+underwater-robot	vehicle
 uniform	artifact
 uniform	clothing
 uniform	equipment
@@ -2049,6 +2199,9 @@ uniform	tool
 uninformed-search-algorithm	information-retrieval
 uninformed-search-algorithm	search-algorithm
 university	organization
+unmanned-aerial-vehicle	aircraft
+unmanned-aerial-vehicle	physical-object
+unmanned-aerial-vehicle	vehicle
 unsupervised-learning	artificial-intelligence
 unsupervised-learning	machine-learning
 urine	fluid
@@ -2060,6 +2213,7 @@ vacuum	machine
 vacuum	physical-object
 vacuum	tool
 valley	natural-depression
+value-function	mathematical-optimization
 variational-autoencoder	artificial-neural-network
 variational-autoencoder	autoencoder
 vector-database	dataset
@@ -2083,6 +2237,7 @@ virgin	childhood
 virgin	organism
 virgin	physical-object
 virgin	woman
+virtual-assistant	software-agent
 virus	microorganism
 virus	organism
 virus	physical-object
@@ -2104,6 +2259,7 @@ watch	tool
 weak-artificial-intelligence	ai-model
 weak-artificial-intelligence	artificial-neural-network
 weakly-supervised-learning	supervised-learning
+web-crawler	internet-bot
 web-site	software
 wedding	ceremony
 weed	organism

@@ -217,6 +217,7 @@ versioning, and specialist names.
 | chemistry | `substance`, `material`, `chemical`, `compound`, `chemical-element`, `chemical-reaction`, `water`, `metal`, the everyday elements | the 118 elements, compounds | IUPAC / PubChem |
 | biology | `organism`, `animal`, `plant`, `fungus`, `bacterium`, `virus`, `cell`, `species`, `body-part`, the everyday animals and plants | the tree of life | WordNet's organism cone, or NCBI taxonomy |
 | medicine | `medicine`, `disease`, `illness`, `symptom`, `injury`, `medication`, `drug`, `doctor`, `nurse`, `hospital`, `surgery`, `therapy`, `diagnosis`, `infection`, `wound`, `cancer`, `fever`, `health` — all already in core | specialties, diseases, symptoms, procedures, instruments, drugs, practitioners | WordNet medicine/pathology/psychiatry topics and the bounded cones + **Wikidata** (27 verified roots); ICD/SNOMED stay a possible later pack |
+| AI / machine learning | `computer-science`, `algorithm`, `software`, `automaton`, `agent`, `information`, `concept` — all in core | the field's own vocabulary: paradigms, models, algorithms, architectures, agents, robots, alignment | Wikidata P279 from a verified label list; WordNet is nearly silent |
 
 Two things are not categories at all and belong to neither: **quantities**
 (energy, force, temperature, length) are dimensions, owned by the unit
@@ -247,6 +248,7 @@ proves the pattern before biology's tree of life tests its scale.
 | chemistry | 242 | WordNet chemistry topic, the element cone, hinge synsets (molecule, compound, solution, material, ion, polymer, mixture, alloy, catalyst, bond); **Wikidata** for 16 roots (element, reaction, bond, functional group, molecule, ion, acid, base, polymer, state of matter, mixture, alloy, mineral — and `chemical compound`, `chemical substance`, `medication` label-only, since each has tens of thousands of direct subclasses); 2 new unit heads (`amount-of-substance`, `catalytic-activity`) | substance, material, chemical, compound, chemical-element, natural-event (chemical-bond), collection (chemical-group), information (periodic-table), concept (theories), number (equilibrium-constant), attribute |
 | biology | 342 | WordNet biology/genetics/botany/physiology/ecology topics, the cell and gene cones, hinge synsets (enzyme, nucleic acid, DNA, chromosome, metabolism, ecosystem, hormone, biological process, taxonomic group, plant part); **Wikidata** for 17 roots (organism, cell to depth 2, enzyme, the kingdoms, virus, chromosome, metabolism, biological process to depth 2, strain, taxon, ecosystem, nucleic acid — `gene` and `protein` label-only: 453,793 and 769,212 direct subclasses, every named gene and protein) | organism, cell, body-part (plant-part hangs here: "any part of an organism"), nucleic-acid, taxonomic-group ⊑ concept, natural-event, attribute, group (ecosystem; `system` is unplaced in core), physical-object |
 | medicine | 1048 | WordNet topics (medicine, pathology, psychiatry, surgery, dentistry, pharmacology, immunology, epidemiology), bounded cones (medical science, medical procedure, therapy, injury, infection, mental illness, syndrome, cancer, medical instrument, antibiotic, vaccine, health professional, hospital), and the **`children` source kind** — a synset plus its direct hyponyms — for the three cones too big to take whole (disease 605, symptom 468, medication 512); **Wikidata** for 27 roots verified by label (disease, symptom, clinical sign, syndrome, infectious disease, cancer, mental disorder, cardiovascular disease, injury, medicine, medical specialty to depth 2, procedure, surgery, test, diagnosis, imaging, therapy, anaesthesia, medication, vaccine, antibiotic, analgesic, medical device, physician, health professional, hospital) | medicine, disease, illness, symptom, injury, medication, drug, doctor, nurse, hospital, condition, state, information, act, procedure, person, natural-event, physical-object, tissue |
+| ai | 676 | **Wikidata-driven** — WordNet's `artificial intelligence` cone has four nouns, so WordNet contributes only the hinges it has (AI, robotics, machine translation, NLP, cybernetics, information science, computational linguistics, algorithm, heuristic, data mining, control system, sensor, servo, game theory, the CS ontology); ~440 Wikidata roots resolved from a label list by two search passes, every QID checked against its description (the search returned a cichlid fish for "medical device", a warship for "therapy", the Google OS for "android"), then ~220 descendants picked from the fetched neighbourhood. GOFAI (symbolic AI, expert systems, logic programming, planning, search, knowledge representation, the frame problem, situation calculus, blackboard and subsumption architectures, GOFAI vs. Nouvelle AI), machine learning (paradigms, models, algorithms, learning theory, evaluation, training internals), neural networks (architectures from perceptron to transformer, Hopfield and Boltzmann, sparse distributed memory), robotics, NLP, computer vision, agents and multi-agent systems, alignment and safety, ethics and governance, cognitive-science positions (connectionism, embodied cognition), network science, control theory, artificial life. Instances excluded (ChatGPT, Deep Blue, ELIZA, WordNet, GPT-3). | artificial-intelligence ⊑ computer-science (WordNet), then hubs by ruling: `ai-model ⊑ concept` (every model architecture hangs there), `statistical-model ⊑ concept`, `algorithm ⊑ procedure`, `dataset ⊑ information`, `intelligent-agent ⊑ agent`, `automaton` (core) for robots, `software` for systems, `field-of-study`/`mathematics`/`engineering`/`law`/`management` for the disciplines |
 
 Three lessons from the Wikidata stage. **Verify every root QID by label
 before walking it**: four of the first thirty-three were wrong (metabolism
@@ -334,6 +336,25 @@ noise here was louder than in the sciences — `patent-medicine ⊑ crime`,
 rejected. Medicine has had **one** reading, not two; its single-source
 edges are the natural next target for the bounty of factbond
 INTEGRATION.md §11.
+
+**AI and machine learning (2026-09-03, afternoon).** The first pack where
+Wikidata is the primary source rather than a witness: WordNet has almost
+nothing after 2000. That changes the failure modes. Wikidata files
+*everything* under `artificial intelligence` — a vehicle, an agent, a
+heuristic, a technique — so "is a subfield of" and "is an instance of the
+field's subject matter" had to be separated by hand (a boosting algorithm is
+not a subfield; `intelligence amplification` is the *alternative* to AI). It
+also inverts freely (`AI model ⊑ artificial neural network`), and its P8814
+WordNet links can land on the wrong sense (the medication case above). Two
+label-search passes over ~840 terms took 45 minutes at the API's rate; every
+hit was read before use. Placement needed ~280 hand rulings for roots
+Wikidata gives no parent to, the hubs being `ai-model` and `statistical-model`
+(both ⊑ concept — a model is an abstract object here, as mathematical objects
+are), `algorithm ⊑ procedure`, and core's `automaton` for robots (Wikidata's
+`robot` aligned to it). Everyday-word renames as elsewhere: `transformer-model`,
+`attention-mechanism`, `vector-embedding`, `boosting-algorithm`,
+`minimax-rule`, `game-of-life`, `android-robot`, `robotic-manipulator`.
+Two readings of nothing yet — one pass, like medicine.
 
 **Still doubtful, left for Peter** (kept as they stand, WordNet's readings):
 iron products under the element (`cast-iron`, `pig-iron`, `wrought-iron ⊑
