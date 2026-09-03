@@ -1,12 +1,8 @@
 # ontodag store v1
-abduction event motion
 acanthocyte cell physical-object
-accommodation event organic-process place
-acid-base-equilibrium chemical-reaction
+acid-base-equilibrium state
 act '*'
-activator substance
 activity '*'
-adduction event motion
 agent '*'
 akaryocyte cell physical-object
 allele gene
@@ -15,108 +11,113 @@ amphidiploid organism physical-object
 animal-egg ovum
 anisogamete gamete
 anisogamy reproduction
-annual organism physical-object plant
+annual-plant organism physical-object plant
 antagonistic-muscle body-part muscle
 antherozoid gamete
 apogamy reproduction
 apophysis body-part
-apposition growth organic-process
+appositional-growth growth organic-process
 archespore cell physical-object
 arthrospore cell physical-object
-artifact '*'
 astrocyte neurogliacyte
 attribute '*'
 autoregulation organic-process
 axon nerve-fiber
 b-cell lymphocyte
+bacterial-transformation event
 bark '*'
 basophil granulocyte
 beta-cell cell physical-object
-biennial organism physical-object plant
+biennial-plant organism physical-object plant
 biological-accretion increase
+biological-activator substance
 biological-association group
+biological-decomposition event process
+biological-dimorphism morphological-polymorphism
 biological-inhibition organic-process
+biological-isomorphism attribute
 biological-polymorphism organic-phenomenon
+biological-specialization organic-process
+biological-valence attribute
 biologist scientist
 biotic-community group
-blastema cell physical-object
+blastema physical-object tissue
 blastocyte embryonic-cell
 blastomere embryonic-cell
-blister body-part
 blood-cell somatic-cell
+bodily-humour substance
 body-part '*'
 bone-cell somatic-cell
+botanical-cohesion growth organic-process
 botanical-division phylum
 brachium body-part
 bract-tuft bunch
 brain-cell nerve-cell
 bunch '*'
-callus body-part
 calyx plant-part
 cancer-cell neoplastic-cell
-carrier organism physical-object
 cataplasia change event
 cell '*'
 cell-theory concept
 change '*'
 chemical-reaction '*'
 choanocyte flagellated-cell
+chromosomal-inversion event mutation
+chromosomal-translocation organic-process
 chromosome natural-object
+cloning-vector physical-object
 coarctation attribute event
 cognition '*'
-cohesion growth organic-process
+collection '*'
 columnar-cell epithelial-cell
 combination '*'
 compound '*'
 concept '*'
 condition '*'
-cone visual-cell
-control organic-process
+cone-cell visual-cell
 corolla plant-part
-corona natural-object plant-part
-cosmid agent disease-vector microorganism physical-object virus
+cosmid agent cloning-vector microorganism organism virus
 crustacean-roe spawn
 cuboidal-cell epithelial-cell
 culture-medium substance
-curved-shape '*'
 cybernetics field-of-study science
 cystic-fibrosis-transport-regulator mutant-gene
 daughter-cell cell physical-object
-decomposition event process
 dehiscence organic-phenomenon
-deletion event mutation
 dendrite nerve-fiber
-dimorphism polymorphism
 diploid organism physical-object
-disease-vector organism
 dissilience event
 dna nucleic-acid
+dna-replication event organic-process
 dominant-allele allele
 dominant-gene gene
-ecosystem group
+ecological-establishment process
+ecological-niche attribute condition
+ecological-succession organic-process
+ecosystem environment
 effector nerve-fiber
 embryonic-cell cell physical-object
-enzyme activator material protein
+environment '*'
+enzyme biological-activator material protein
 eosinophil granulocyte
 epidermal-cell skin-cell
 epithelial-cell somatic-cell
 equilibrium '*'
-erythroblast embryonic-cell red-blood-cell
-establishment process
+erythroblast somatic-cell
 estivation attribute
 etiolation act event organic-process
 event '*'
-expression organic-process
 fat-cell somatic-cell
-fiber '*'
-fibre cell physical-object
-fibroblast embryonic-cell
+fiber-cell cell physical-object
+fibroblast somatic-cell
 fibrous-astrocyte astrocyte
 field-of-study '*'
 fish-roe animal-egg
 fixed-phagocyte phagocyte
 flagellated-cell cell physical-object
+flower-corona natural-object plant-part
 flower-lip natural-object plant-part
+flower-spike natural-object plant-part
 flower-style natural-object plant-part
 foliation growth organic-process
 food-chain organic-phenomenon
@@ -124,15 +125,25 @@ food-pyramid organic-phenomenon
 food-web organic-phenomenon
 form-family taxonomic-family
 form-genus genus
-freak mutant
 free-phagocyte phagocyte
 gamete reproductive-cell
 gametocyte cell physical-object
 ganglion-cell nerve-cell
-gene dna
+gene physical-object
+gene-deletion event mutation
+gene-expression event organic-process
+gene-mapping act activity event procedure
+gene-transcription chemical-reaction organic-process
+genetic-carrier organism physical-object
 genetic-dominance organic-phenomenon
+genetic-inheritance attribute
+genetic-linkage genetic-inheritance
 genetic-marker gene
+genetic-recombination event organic-process
 genetic-reversion event mutation
+genetic-segregation organic-process
+genetic-transduction organic-process
+genetic-transposition event mutation
 genus taxonomic-group
 genus-pan genus
 germ-tube natural-object plant-part
@@ -150,48 +161,43 @@ heritable-character attribute
 heterology attribute
 heteroploid organism physical-object
 heterosis attribute
-heterozygote zygote
+heterozygote organism physical-object
 histiocyte macrophage
 homeobox homeotic-gene
 homeostasis attribute equilibrium situation
 homeotic-gene gene
 homogeny attribute similarity
-homozygote zygote
+homozygote organism physical-object
 hormone secretion substance
-humour substance
 hybridization organic-process
 hybridoma somatic-cell
 immune-recognition organic-phenomenon
 increase '*'
 information '*'
-inheritance attribute
 insertional-mutagenesis event
 intussusception growth organic-process
-inversion event mutation
-irradiation event
 isogamete gamete
 isogamy reproduction
-isomorphism attribute
 killer-t-cell t-cell
 'kupffer'"'"'s-cell' cell physical-object
 leaf '*'
+leaf-lobe natural-object plant-part
 leaf-node body-part
 lethal-gene gene
-leukocyte blood-cell free-phagocyte
+leukocyte blood-cell
 leydig-cell cell physical-object
 ligule natural-object plant-part
-linkage inheritance
-linkage-group gene
-lobe natural-object plant-part
+limb-abduction event motion
+limb-adduction event motion
+linkage-group collection
 localization-of-function scientific-principle
 lymphoblast lymphocyte
 lymphocyte leukocyte
-macrophage leukocyte
-mapping act activity event procedure
+macrophage leukocyte phagocyte
 mast-cell somatic-cell
 material '*'
 medullated-nerve-fiber nerve-fiber
-megakaryocyte bone-cell
+megakaryocyte somatic-cell
 megaloblast red-blood-cell
 megalocyte red-blood-cell
 meiosis event organic-process
@@ -204,17 +210,19 @@ microcyte red-blood-cell
 microgliacyte neurogliacyte
 microorganism '*'
 microphage neutrophil
-modifier gene
-monad microorganism
+modifier-gene gene
+monad-organism microorganism
 monoblast monocyte
 monocyte leukocyte
 monotype taxonomic-group
+morphological-polymorphism organic-phenomenon
 mother-cell cell physical-object
 motion '*'
 motor-fiber material nerve-fiber substance
 motor-neuron nerve-cell
 muscle '*'
-muscle-cell fibre somatic-cell
+muscle-cell fiber-cell somatic-cell
+muscle-relaxation increase
 mutant organism physical-object
 mutant-gene gene
 mutation '*'
@@ -226,12 +234,12 @@ naturalist biologist
 necrobiosis organic-phenomenon
 neoplastic-cell somatic-cell
 nerve-cell somatic-cell
-nerve-fiber fiber fibre
+nerve-fiber fiber-cell
+neural-irradiation event
 neural-summation organic-process
 neuroblast embryonic-cell
 neurogliacyte somatic-cell
 neutrophil granulocyte
-niche attribute condition
 nit animal-egg
 nonallele gene
 nucleic-acid compound material substance
@@ -251,11 +259,11 @@ osteoclast bone-cell macrophage
 osteocyte bone-cell
 ovule ovum
 ovum gamete
-packed-cells blood-cell
+packed-cells cell material physical-object
 papilla body-part
 parthenocarpy reproduction
 parthenote cell physical-object
-perennial organism physical-object plant
+perennial-plant organism physical-object plant
 peristome body-part
 phagocyte somatic-cell
 phellem bark physical-object
@@ -263,11 +271,13 @@ phloem natural-object plant-part
 phylogenetic-relation attribute
 phylum taxonomic-group
 physical-object '*'
+physiological-control organic-process
 physiological-stimulation process
 phytohormone material substance
-pitcher artifact leaf
-place '*'
+pitcher-leaf leaf
 plant '*'
+plant-blister body-part
+plant-callus body-part
 plant-cell cell physical-object
 plant-embryo organism physical-object plant
 plant-part body-part physical-object
@@ -280,7 +290,6 @@ point-mutation event mutation organic-process
 polar-body cell physical-object
 pollen-tube natural-object plant-part
 polygene gene
-polymorphism organic-phenomenon
 polyploid organism physical-object
 position-effect natural-event
 prickle-cell skin-cell
@@ -293,17 +302,15 @@ purkinje-cell brain-cell
 recessive-allele allele
 recessive-gene gene
 recombinant cell organism physical-object
-recombination event organic-process
 red-blood-cell blood-cell
 regeneration organic-process
 regulatory-gene gene
-relaxation increase
-replication organic-process
 repressor-gene gene
 reproduction organic-process
 reproductive-cell cell physical-object
 reticulocyte red-blood-cell
-rod visual-cell
+rna-translation organic-process
+rod-cell visual-cell
 roe animal-egg
 saltation event mutation
 schwann-cell neurogliacyte
@@ -312,7 +319,6 @@ scientific-principle '*'
 scientist '*'
 scurf plant-part
 secretion '*'
-segregation event organic-process
 sense '*'
 sensitiveness sense
 sensory-adaptation event
@@ -332,14 +338,12 @@ skin-cell somatic-cell
 smooth-muscle-cell muscle-cell
 somatic-cell cell physical-object
 spawn animal-egg
-specialization organic-process
 species '*'
 sperm gamete
 spermatid gamete
 spermatocyte gametocyte
 spherocyte red-blood-cell
-spike natural-object plant-part
-spindle fiber
+spindle-fiber natural-object
 spongioblast columnar-cell
 spore-mother-cell mother-cell
 squamous-cell epithelial-cell
@@ -355,12 +359,11 @@ suborder taxonomic-group
 subphylum taxonomic-group
 subspecies taxonomic-group
 substance '*'
-succession organic-process
 superclass taxonomic-group
 superfamily taxonomic-group
 superorder taxonomic-group
 superphylum taxonomic-group
-suppressor gene
+suppressor-gene gene
 t-cell lymphocyte
 taproot physical-object plant-root
 target-cell somatic-cell
@@ -370,30 +373,25 @@ taxonomic-division taxonomic-group
 taxonomic-family taxonomic-group
 taxonomic-group concept
 taxonomic-order taxonomic-group
+taxonomic-tribe taxonomic-group
+taxonomic-variety taxonomic-group
 taxonomy field-of-study science
 theory-of-evolution concept
 theory-of-inheritance concept
-transcription chemical-reaction event organic-process
-transduction organic-process
-transformation event
+tissue '*'
 transgene gene
-translation event organic-process
-translocation organic-process
-transposition event mutation organic-process
-tribe taxonomic-group
-tumor-suppressor-gene suppressor
+tumor-suppressor-gene suppressor-gene
 turgor attribute state
 type-genus genus
 type-species species
 type-taxon taxonomic-group
-uncus attribute curved-shape shape
+uncus attribute body-part shape
 unit-character heritable-character
-valence attribute
 variant taxonomic-group
-variety taxonomic-group
 venation attribute
 vernation attribute
 virus '*'
+visual-accommodation event organic-process
 visual-cell somatic-cell
 x-linked-gene gene
 y-linked-gene gene

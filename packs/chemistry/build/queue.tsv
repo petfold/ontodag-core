@@ -2,10 +2,6 @@ kind	sub	sup	detail
 single	24-karat-gold	material	only sumo
 single	24-karat-gold	metal	only wordnet
 single	24-karat-gold	noble-metal	only wordnet
-single	abundance	number	only sumo
-single	abundance	quantity	only sumo
-single	abundance	situation	only opencyc
-single	acceptor	chemical	only wordnet
 single	acid-value	quantity	only sumo
 single	actinide-series	chemical-element	only sumo
 single	actinide-series	material	only sumo
@@ -95,7 +91,6 @@ single	buckminsterfullerene	carbon	only wordnet
 single	buckminsterfullerene	chemical-element	only wordnet
 single	buckminsterfullerene	compound	only sumo
 single	buckminsterfullerene	material	only sumo
-single	buffer	chemical	only wordnet
 single	butter	mixture	only opencyc
 single	cadmium	material	only sumo
 single	cake	mixture	only sumo
@@ -141,14 +136,33 @@ single	chemical-bond	attachment	only opencyc
 single	chemical-bond	event	only sumo
 single	chemical-bond	process	only wordnet
 single	chemical-bond	situation	only opencyc
+single	chemical-buffer	chemical	only wordnet
 single	chemical-chain	compound	only sumo
 single	chemical-chain	material	only sumo
 single	chemical-chain	substance	only sumo
+single	chemical-decomposition	chemical-phenomenon	only sumo
+single	chemical-decomposition	ending	only opencyc
+single	chemical-decomposition	process	only wordnet
+single	chemical-decomposition	situation	only opencyc
+single	chemical-dimorphism	chemical-phenomenon	only wordnet
+single	chemical-dimorphism	chemical-polymorphism	only wordnet
+single	chemical-dimorphism	natural-event	only wordnet
+single	chemical-dimorphism	process	only wordnet
+single	chemical-dimorphism	property	only sumo
+single	chemical-dimorphism	shape	only sumo
+single	chemical-dissociation	chemical-phenomenon	only sumo
+single	chemical-dissociation	event	only sumo
+single	chemical-dissociation	process	only wordnet
 single	chemical-group	chemical-element	only sumo
 single	chemical-group	material	only sumo
 single	chemical-group	substance	only sumo
 single	chemical-phenomenon	event	only sumo
 single	chemical-phenomenon	process	only wordnet
+single	chemical-polymorphism	attribute	only sumo
+single	chemical-polymorphism	natural-event	only wordnet
+single	chemical-polymorphism	process	only wordnet
+single	chemical-polymorphism	property	only sumo
+single	chemical-polymorphism	shape	only sumo
 single	chemical-process	situation	only opencyc
 single	chemical-reaction	chemical-phenomenon	only sumo
 single	chemist	adult	only opencyc
@@ -163,8 +177,6 @@ single	chemist	vertebrate	only opencyc
 single	chemist	worker	only opencyc
 single	chlorine	chemical	only wikidata
 single	chlorine	material	only sumo
-single	chrome	artifact	only opencyc
-single	chrome	material	only sumo
 single	chromium	material	only sumo
 single	cinder-pig	chemical-element	only wordnet
 single	cinder-pig	iron	only wordnet
@@ -172,6 +184,9 @@ single	cinder-pig	material	only sumo
 single	cinder-pig	metal	only wordnet
 single	cinder-pig	mixture	only sumo
 single	clay	mixture	only sumo
+single	closed-chain	compound	only sumo
+single	closed-chain	material	only sumo
+single	closed-chain	substance	only sumo
 single	cloud	mixture	only sumo
 single	cobalt	material	only sumo
 single	cobalt-60	material	only sumo
@@ -186,24 +201,13 @@ single	dalton's-law	idea	only wordnet
 single	darmstadtium	material	only sumo
 single	decay	chemical-phenomenon	only sumo
 single	decay	chemical-process	only sumo
-single	decomposition	chemical-phenomenon	only sumo
-single	decomposition	ending	only opencyc
-single	decomposition	process	only wordnet
-single	decomposition	situation	only opencyc
 single	delta-iron	material	only sumo
 single	delta-iron	metal	only wordnet
-single	dimorphism	chemical-phenomenon	only wordnet
-single	dimorphism	natural-event	only wordnet
-single	dimorphism	polymorphism	only wordnet
-single	dimorphism	process	only wordnet
-single	dimorphism	property	only sumo
-single	dimorphism	shape	only sumo
-single	displacement	chemical-phenomenon	only sumo
-single	displacement	event	only sumo
-single	displacement	process	only wordnet
-single	dissociation	chemical-phenomenon	only sumo
-single	dissociation	event	only sumo
-single	dissociation	process	only wordnet
+single	displacement-reaction	chemical-phenomenon	only sumo
+single	displacement-reaction	process	only wordnet
+single	displacement-reaction	situation	only opencyc
+single	distillation-rectification	event	only sumo
+single	distillation-rectification	visit	only sumo
 single	distribution-law	cognition	only wordnet
 single	distribution-law	idea	only wordnet
 single	drink	mixture	only sumo
@@ -217,17 +221,18 @@ single	electrolysis	chemical-process	only wordnet
 single	electrolysis	ending	only opencyc
 single	electrolysis	process	only wordnet
 single	electrolysis	situation	only opencyc
+single	electron-acceptor	chemical	only wordnet
 single	electronegativity	property	only sumo
+single	elemental-abundance	number	only sumo
+single	elemental-abundance	quantity	only sumo
 single	emulsion	material	only sumo
 single	equilibrium-constant	quantity	only sumo
 single	equilibrium-law	cognition	only wordnet
 single	equilibrium-law	idea	only wordnet
 single	erbium	material	only sumo
 single	europium	material	only sumo
-single	explosion	decomposition	only opencyc
 single	fermium	artifact	only opencyc
 single	fermium	material	only sumo
-single	fire	decomposition	only opencyc
 single	flame	chemical-phenomenon	only sumo
 single	fluorine	chemical	only wikidata
 single	fluorine	material	only sumo
@@ -316,16 +321,14 @@ single	law-of-multiple-proportions	idea	only wordnet
 single	lawrencium	artifact	only opencyc
 single	lawrencium	material	only sumo
 single	lawrencium	metal	only opencyc
-single	lead.artifact	carbon	only wordnet
-single	lead.artifact	chemical-element	only wordnet
-single	lead.artifact	graphite	only wordnet
-single	lead.artifact	material	only sumo
-single	lead.artifact	mixture	only sumo
 single	linen	mixture	only opencyc
 single	liquid-nitrogen	chemical-element	only wordnet
 single	liquid-nitrogen	substance	only wordnet
 single	liquid-oxygen	material	only sumo
 single	lithium	material	only sumo
+single	long-chain	compound	only sumo
+single	long-chain	material	only sumo
+single	long-chain	substance	only sumo
 single	lutetium	material	only sumo
 single	magnesium	material	only sumo
 single	makeup	mixture	only sumo
@@ -343,8 +346,8 @@ single	mine-pig	metal	only wordnet
 single	mix	mixture	only opencyc
 single	mixture	material	only sumo
 single	molybdenum	material	only sumo
-single	monad	chemical-element	only sumo
-single	monad	material	only sumo
+single	monovalent-atom	chemical-element	only sumo
+single	monovalent-atom	material	only sumo
 single	neodymium	material	only sumo
 single	neon	fluid	only wordnet
 single	neon	material	only sumo
@@ -399,11 +402,6 @@ single	plutonium	metal	only opencyc
 single	plutonium-239	material	only sumo
 single	plutonium-239	metal	only opencyc
 single	polonium	material	only sumo
-single	polymorphism	attribute	only sumo
-single	polymorphism	natural-event	only wordnet
-single	polymorphism	process	only wordnet
-single	polymorphism	property	only sumo
-single	polymorphism	shape	only sumo
 single	polyvalence	property	only sumo
 single	pot-metal	chemical-element	only wordnet
 single	pot-metal	iron	only wordnet
@@ -426,8 +424,6 @@ single	radiochlorine	material	only sumo
 single	radium	material	only sumo
 single	radon	fluid	only wordnet
 single	radon	material	only sumo
-single	rectification	event	only sumo
-single	rectification	visit	only sumo
 single	reverse-osmosis	event	only sumo
 single	reverse-osmosis	process	only wordnet
 single	reverse-osmosis	visit	only sumo
@@ -568,7 +564,6 @@ unplaced	childhood		no accepted parent reaches a root
 unplaced	chord		no accepted parent reaches a root
 unplaced	clock-time		no accepted parent reaches a root
 unplaced	clod		no accepted parent reaches a root
-unplaced	closed-chain	chemical-chain compound material molecule phenomenon substance universe	no accepted parent reaches a root
 unplaced	column.group		no accepted parent reaches a root
 unplaced	commencement		no accepted parent reaches a root
 unplaced	concern.cognition		no accepted parent reaches a root
@@ -703,7 +698,6 @@ unplaced	linguistic-context		no accepted parent reaches a root
 unplaced	load		no accepted parent reaches a root
 unplaced	logarithm		no accepted parent reaches a root
 unplaced	logic.cognition		no accepted parent reaches a root
-unplaced	long-chain	chemical-chain compound material molecule phenomenon substance universe	no accepted parent reaches a root
 unplaced	love		no accepted parent reaches a root
 unplaced	luck		no accepted parent reaches a root
 unplaced	luck.phenomenon		no accepted parent reaches a root

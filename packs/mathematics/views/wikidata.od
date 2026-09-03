@@ -15,7 +15,6 @@ acquaintance person
 act '*'
 action '*'
 actor '*'
-acyclic-graph multigraph planar-graph
 ad information service
 adaptation '*'
 addiction '*'
@@ -77,6 +76,7 @@ ant insect
 anteroom room
 antichain subset
 anticipation '*'
+antiderivative function
 antisymmetric-relation binary-relation
 anxiety '*'
 apartment '*'
@@ -304,7 +304,7 @@ cardinality invariant
 care '*'
 carnival '*'
 carriage '*'
-carrot dish plant-root prepared-dish root vegetable
+carrot dish plant-root prepared-dish vegetable
 cartoon drawing
 case furniture tool
 cash-register '*'
@@ -499,7 +499,6 @@ contrast number
 contribution gift
 control-stick '*'
 convalescence '*'
-convergence function
 conversion '*'
 cook craftsman
 cookie dessert
@@ -627,8 +626,6 @@ destiny '*'
 detective fictional-character
 detector tool
 detention '*'
-deviation '*'
-diagonal geometric-shape partially-ordered-set subset
 diagram structure
 dialogue '*'
 diameter geometric-shape partially-ordered-set subset
@@ -665,7 +662,6 @@ distortion '*'
 distributive-lattice mathematical-lattice
 distributor '*'
 district '*'
-divergence function
 division '*'
 division-ring mathematical-ring
 divorce '*'
@@ -885,6 +881,7 @@ foray '*'
 force '*'
 foreman '*'
 forest habitat
+forest-graph multigraph planar-graph
 forestry '*'
 fork '*'
 form '*'
@@ -940,6 +937,7 @@ genus-pan '*'
 geodesic curve
 geography science
 geometric-intersection mathematical-operation
+geometric-plane geometric-shape subset
 geometric-progression '*'
 geometric-series mathematical-series series
 geometric-shape locus
@@ -1149,7 +1147,7 @@ insight '*'
 insolvency '*'
 instinct '*'
 integer rational-number
-integral-domain abelian-group commutative-ring subgroup
+integral-domain abelian-group commutative-ring subset
 integration '*'
 intellect '*'
 interest '*'
@@ -1157,7 +1155,6 @@ interface '*'
 internet '*'
 interpolation algorithm
 intersection '*'
-interval '*'
 interview '*'
 intestine '*'
 introduction '*'
@@ -1369,7 +1366,7 @@ matchstick tool
 material-implication '*'
 mathematical-analysis '*'
 mathematical-category mathematical-structure
-mathematical-field abelian-group algebra-over-a-field commutative-ring division-ring subgroup
+mathematical-field abelian-group algebra-over-a-field commutative-ring division-ring subset
 mathematical-graph hypergraph
 mathematical-group monoid quasigroup
 mathematical-induction '*'
@@ -1385,6 +1382,7 @@ mathematician scientist
 mathematics '*'
 matrimony '*'
 matrix data-structure tensor
+matrix-diagonal geometric-shape partially-ordered-set subset
 matrix-multiplication multiplication
 matroid hypergraph
 mayor '*'
@@ -1435,7 +1433,6 @@ miracle '*'
 mirror artifact
 mist fog
 modal-logic formal-system
-mode '*'
 model '*'
 model-theory mathematical-logic
 modular-arithmetic '*'
@@ -1551,7 +1548,6 @@ open-interval mathematical-set
 opera musical-composition
 operating-system '*'
 operation therapy
-operator worker
 opinion point-of-view slant
 opinion-poll '*'
 opposition political-party
@@ -1672,7 +1668,6 @@ pitch '*'
 plaintext '*'
 plaintiff party
 planar-graph graph mathematical-graph
-plane geometric-shape subset
 planet '*'
 plank '*'
 plant organism
@@ -1740,7 +1735,6 @@ pressure '*'
 price '*'
 prime-factorization '*'
 prime-number '*'
-primitive '*'
 prince '*'
 princess woman
 principle structure
@@ -1852,12 +1846,11 @@ refugee '*'
 refugee-camp settlement
 region subset
 register pitch
-regression '*'
 regression-analysis '*'
 regular-expression '*'
 rehearsal '*'
 relative person
-relaxation '*'
+relaxation-method '*'
 reliance '*'
 religious-service ritual service
 relish salad sauce
@@ -1905,7 +1898,6 @@ rocket '*'
 role-model person
 roof '*'
 room '*'
-root '*'
 rooted-tree polytree
 rope braid
 rose flower
@@ -1932,7 +1924,6 @@ sale '*'
 salmon fish fish-meat
 salon occupation workplace
 sample scalar
-sampling '*'
 sanctuary '*'
 sand '*'
 sandal shoe
@@ -2119,6 +2110,11 @@ star '*'
 state-of-matter '*'
 station '*'
 statistical-correlation '*'
+statistical-deviation '*'
+statistical-mode '*'
+statistical-regression '*'
+statistical-sampling '*'
+statistical-weight '*'
 statistician '*'
 statistics mathematics
 statue artifact
@@ -2152,7 +2148,6 @@ student '*'
 studio building room workshop
 study room workplace
 subgraph graph mathematical-graph subset
-subgroup mathematical-group subset
 subscriber '*'
 subset mathematical-set
 substance '*'
@@ -2294,7 +2289,6 @@ translation isometry
 transmission '*'
 transport '*'
 transportation '*'
-transposition '*'
 trap tool
 trapezium quadrilateral
 trapezoid '*'
@@ -2303,7 +2297,7 @@ treasure collection
 treasurer businessman
 treaty '*'
 tree plant
-tree-graph acyclic-graph bipartite-graph connected-graph
+tree-graph bipartite-graph connected-graph forest-graph
 trench '*'
 trial '*'
 tribunal '*'
@@ -2410,7 +2404,6 @@ wedding ceremony
 weed pest plant
 week '*'
 weighing-machine tool
-weight '*'
 weighted-graph '*'
 welcome '*'
 well '*'

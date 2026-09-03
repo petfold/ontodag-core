@@ -1,7 +1,6 @@
 # ontodag store v1
 abbey monastery
 abdomen body-part
-abduction motion
 aberration natural-event
 ability attribute
 abortion act
@@ -14,7 +13,6 @@ acanthocyte red-blood-cell
 accelerator bar
 access concept
 accident trouble
-accommodation act
 accomplishment act
 account statement
 accountant person
@@ -30,7 +28,6 @@ acquisition possession
 act event
 act-of-play information
 action plot.communication
-activator part substance
 activeness trait
 activity act
 actor performer
@@ -39,7 +36,6 @@ adaptation information
 addiction condition
 addition component
 address place
-adduction motion
 adeptness state
 administrative-division organization
 administrator chief
@@ -124,7 +120,7 @@ annex addition
 anniversary time-period
 annotation information
 announcement information
-annual plant
+annual-plant plant
 answer act
 ant insect
 antagonistic-muscle muscle
@@ -148,7 +144,7 @@ appliance device
 applicant person
 application computer-program
 appointment occupation
-apposition growth
+appositional-growth growth
 appraisal cognition
 appraisal-report document
 aquarium structure vessel
@@ -228,6 +224,7 @@ baby-buggy container vehicle
 background attribute
 backlog income
 bacon meat
+bacterial-transformation act
 bacterium microorganism
 bag container
 bail plan
@@ -305,14 +302,20 @@ bias inclination
 bible information
 bicycle container vehicle
 bid act
-biennial plant
+biennial-plant plant
 bill currency
 bin container
 biography chronicle
 biological-accretion increase
+biological-activator part substance
 biological-association group
+biological-decomposition process
+biological-dimorphism morphological-polymorphism
 biological-inhibition organic-process
+biological-isomorphism similarity
 biological-polymorphism organic-phenomenon
+biological-specialization organic-process
+biological-valence attribute
 biologist scientist
 biology natural-science
 biota collection
@@ -333,7 +336,6 @@ blastocyte embryonic-cell
 blastomere cell
 blessing support
 blink-of-an-eye time-period
-blister body-part
 block region
 blood part substance
 blood-cell somatic-cell
@@ -343,6 +345,7 @@ blue attribute
 board artifact
 board-of-directors committee
 boat watercraft
+bodily-humour part substance
 body natural-object
 body-of-water '*'
 body-part '*'
@@ -362,6 +365,7 @@ boom prosperity
 boot artifact
 booth room
 bosom intuition
+botanical-cohesion growth
 botanical-division phylum
 botanical-fruit plant-part
 bottle vessel
@@ -441,7 +445,6 @@ calendar-month time-period
 calf young
 call visit
 calling-card greeting
-callus body-part
 calyx shape
 camera equipment
 camp structure
@@ -471,7 +474,6 @@ care act
 career occupation
 carnival entertainment
 carriage attribute
-carrier organism
 carrot plant-root
 carrying-out act
 cartoon information
@@ -564,6 +566,8 @@ choanocyte flagellated-cell
 chocolate substance
 chord musical-note
 chorus organization
+chromosomal-inversion mutation
+chromosomal-translocation organic-process
 chromosome natural-object
 chronicle indication
 church building
@@ -596,6 +600,7 @@ clique group
 clock instrument
 clock-time cognition
 clod collection
+cloning-vector virus
 closure cognition
 clothing commodity
 cloud natural-event
@@ -613,7 +618,6 @@ coevals people
 coffee drink
 coffin box
 cognition '*'
-cohesion growth
 coin currency
 coincidence chance-event
 cold disease
@@ -687,7 +691,7 @@ conclusion music
 concrete artifact
 condition state
 conductor worker
-cone visual-cell
+cone-cell visual-cell
 confederacy '*'
 confederation organization
 conference meeting
@@ -735,7 +739,6 @@ contradiction information
 contrary '*'
 contrast '*'
 contribution act
-control organic-process
 control-stick bar
 convalescence organic-process
 conventionality attribute
@@ -755,12 +758,11 @@ core centre
 corn grain
 corner place
 corolla shape
-corona plant-part
 correction act
 correlation '*'
 correspondence mail
 corruption act
-cosmid disease-vector
+cosmid cloning-vector
 cost-estimate information
 costume clothing
 cotton fabric
@@ -878,7 +880,6 @@ decay organic-phenomenon
 deck artifact
 declaration information
 declivity slope
-decomposition process
 decoration artifact
 decorative-design decoration
 decrease change
@@ -895,7 +896,6 @@ dehiscence organic-phenomenon
 deity belief
 delay act
 delegate representative
-deletion mutation
 deliberation thinking
 delivery act
 demand request
@@ -948,7 +948,6 @@ dignity feeling
 dilemma condition
 diligence trait
 diminution act
-dimorphism polymorphism
 dinner meal
 diploid organism
 diplomat official
@@ -967,7 +966,6 @@ discovery insight
 discrimination act
 discussion communication
 disease illness
-disease-vector virus
 disembodied-spirit belief
 disgrace status
 dish container
@@ -993,6 +991,7 @@ dividend outgo
 division procedure
 divorce separation
 dna compound
+dna-replication organic-process
 doctor professional
 doctrine belief
 document information
@@ -1059,6 +1058,9 @@ ease condition
 easiness feeling
 east '*'
 echo attribute
+ecological-establishment process
+ecological-niche condition
+ecological-succession process
 economic-consumption demand.process
 economic-system system
 economic-value '*'
@@ -1124,7 +1126,7 @@ entrance-fee fee
 entree concept
 envelope container
 environment region
-enzyme activator protein
+enzyme biological-activator protein
 eosinophil leukocyte
 epidermal-cell skin-cell
 episode programme
@@ -1140,7 +1142,6 @@ escape act
 escort person
 esprit-de-corps disposition
 essay information
-establishment process
 estate belongings
 estimate calculation
 estimation attitude
@@ -1182,7 +1183,6 @@ explanation information
 exploration journey
 explosion event
 exposure weakness
-expression organic-process
 expressway road
 extension phone
 extension.time pause
@@ -1240,7 +1240,7 @@ festival celebration
 fever symptom
 fib lie
 fiber material
-fibre cell
+fiber-cell cell
 fibroblast embryonic-cell
 fibrous-astrocyte astrocyte
 fiction information
@@ -1292,7 +1292,9 @@ flood natural-event
 floor artifact
 flour food
 flower plant
+flower-corona plant-part
 flower-lip plant-part
+flower-spike plant-part
 flower-style plant-part
 flowerpot container
 fluctuation attribute
@@ -1395,10 +1397,21 @@ gear mechanism
 gear-tooth structure
 gem substance
 gene sequence
+gene-deletion mutation
+gene-expression organic-process
+gene-mapping procedure
+gene-transcription organic-process
 general worker
+genetic-carrier organism
 genetic-dominance organic-phenomenon
+genetic-inheritance attribute
+genetic-linkage genetic-inheritance
 genetic-marker gene
+genetic-recombination event
 genetic-reversion mutation
+genetic-segregation organic-process
+genetic-transduction organic-process
+genetic-transposition mutation
 genius person
 gentleman man
 genus taxonomic-group
@@ -1598,7 +1611,6 @@ human-body body
 humanities field-of-study
 humanness attribute
 humor trait
-humour part substance
 hunt sport
 hunter worker
 hunting-expedition journey
@@ -1660,7 +1672,6 @@ information '*'
 infrastructure constitution
 ingredient component
 inhabitant person
-inheritance attribute
 inhibition activity
 initial letter-of-the-alphabet
 injection tending
@@ -1706,19 +1717,16 @@ intuition idea
 intussusception growth
 invasion event
 invention cognition
-inversion mutation
 invertebrate animal
 investigator expert
 investment possession
 invitation act letter
 invoice statement
 iron metal
-irradiation event
 island land
 isogamete gamete
 isogamy reproduction
 isolation state
-isomorphism similarity
 isotropy attribute
 issue cognition
 item cognition
@@ -1815,6 +1823,7 @@ leader person
 leadership activity
 leaf plant-part
 leaf-blade leaf
+leaf-lobe plant-part
 leaf-node body-part
 learner person
 lease contract
@@ -1863,6 +1872,8 @@ lighter device
 ligule plant-part
 lily plant
 limb body-part
+limb-abduction motion
+limb-adduction motion
 limit place
 limit.quantity '*'
 limitation disadvantage
@@ -1875,7 +1886,6 @@ linen commodity
 linguistic-context part
 linguistics science
 link device
-linkage inheritance
 linkage-group gene
 lion mammal
 lip organ
@@ -1890,7 +1900,6 @@ livestock mammal
 load artifact
 loan debt
 lobby organization
-lobe plant-part
 localization-of-function scientific-principle
 locating activity
 lock device
@@ -1958,7 +1967,6 @@ manufacturer person
 manus body-part
 manuscript information
 map artifact
-mapping procedure
 mar calendar-month
 marathon race
 marble material
@@ -2061,7 +2069,7 @@ mist fog
 mistake act
 mix event
 model artifact
-modifier gene
+modifier-gene gene
 module component
 mold fungus
 mole mammal
@@ -2069,7 +2077,7 @@ mole.attribute appearance
 molecule '*'
 mollusc invertebrate
 momentum attribute
-monad microorganism
+monad-organism microorganism
 monarchy group
 monastery house
 monetary-wealth belongings
@@ -2083,6 +2091,7 @@ monotype taxonomic-group
 moon '*'
 morale condition
 morning time-period
+morphological-polymorphism organic-phenomenon
 morsel '*'
 mortgage possession
 mosaic artifact
@@ -2111,7 +2120,8 @@ mug vessel
 multimedia communication
 murder act
 muscle organ
-muscle-cell fibre somatic-cell
+muscle-cell fiber-cell somatic-cell
+muscle-relaxation increase
 museum facility
 mushroom fungus
 music information
@@ -2158,10 +2168,11 @@ neoplastic-cell somatic-cell
 nephew relative
 nerve tissue
 nerve-cell somatic-cell
-nerve-fiber fiber fibre
+nerve-fiber fiber fiber-cell
 nest natural-object
 net equipment
 network facility
+neural-irradiation event
 neural-summation organic-process
 neuroblast embryonic-cell
 neurogliacyte somatic-cell
@@ -2171,7 +2182,6 @@ news information
 news-program programme
 news-report information
 newspaper artifact
-niche condition
 night time-period
 nightmare dream
 nit animal-egg
@@ -2256,7 +2266,7 @@ organism physical-object
 organization group
 orgy celebration
 orientation '*'
-origin inheritance
+origin genetic-inheritance
 osmosis process
 osteoblast embryonic-cell
 osteoclast bone-cell
@@ -2361,7 +2371,7 @@ perceiver person
 percentage ratio
 perception cognition
 perceptiveness sensitivity
-perennial plant
+perennial-plant plant
 performance show
 performer person
 performing entertainment
@@ -2396,6 +2406,7 @@ phylogenetic-relation kinship
 phylum taxonomic-group
 physical-object '*'
 physics natural-science
+physiological-control organic-process
 physiological-stimulation process
 phytohormone material
 piano musical-instrument
@@ -2414,7 +2425,7 @@ pipe shape
 pipe-organ musical-instrument
 pit trap
 pitch attribute
-pitcher leaf
+pitcher-leaf leaf
 pity trouble
 place physical-object
 placement '*'
@@ -2424,6 +2435,8 @@ plane-ticket ticket
 planet celestial-body
 plank lumber
 plant organism
+plant-blister body-part
+plant-callus body-part
 plant-cell cell
 plant-embryo plant
 plant-part natural-object
@@ -2467,7 +2480,6 @@ politics '*'
 poll work
 pollen-tube plant-part
 polygene gene
-polymorphism organic-phenomenon
 polyploid organism
 pony horse
 pool body-of-water
@@ -2674,7 +2686,6 @@ recessive-allele allele
 recessive-gene gene
 recognition information
 recombinant cell organism
-recombination event
 recommendation praise
 recompense correction
 record accomplishment
@@ -2708,7 +2719,6 @@ reign historic-period
 rejection act
 relationship state
 relative person
-relaxation increase
 release act
 relevance '*'
 reliance state
@@ -2725,7 +2735,6 @@ renovation improvement
 rent outgo
 repeat event
 replica copy
-replication organic-process
 reply information
 report document
 reporter person
@@ -2796,6 +2805,7 @@ riot violence
 risk undertaking
 ritual practice
 river stream
+rna-translation organic-process
 road artifact
 road-shoulder limit
 roadway road
@@ -2803,7 +2813,7 @@ robbery larceny
 rock natural-object
 'rock-'"'"'n'"'"'-roll' music
 rocket vehicle
-rod visual-cell
+rod-cell visual-cell
 roe animal-egg
 roentgenogram photograph
 role activity
@@ -2914,7 +2924,6 @@ security-system device
 sediment substance
 seed botanical-fruit
 seeded-player player
-segregation organic-process
 selection collection
 self consciousness
 self-control trait
@@ -3074,7 +3083,6 @@ spatial-extent magnitude
 spawn animal-egg
 speaker person
 specialist expert
-specialization organic-process
 species taxonomic-group
 specimen natural-object
 spectacles instrument
@@ -3089,10 +3097,9 @@ sphere shape
 sphere-of-influence region
 spherocyte red-blood-cell
 spider arachnid
-spike plant-part
 spinach vegetable
 spinal-column body-part
-spindle fiber
+spindle-fiber fiber
 spine body-part
 spirit ambiance
 spiritualist person
@@ -3190,7 +3197,6 @@ subspecies taxonomic-group
 substance '*'
 suburb residential-district
 success event
-succession process
 suffering painfulness
 sugar food
 suggestion information
@@ -3218,7 +3224,7 @@ supervisor leader
 supply '*'
 support assist
 support-device device
-suppressor gene
+suppressor-gene gene
 surface place
 surgeon doctor
 surgery medicine
@@ -3264,6 +3270,8 @@ taxonomic-division group
 taxonomic-family taxonomic-group
 taxonomic-group group
 taxonomic-order taxonomic-group
+taxonomic-tribe taxonomic-group
+taxonomic-variety taxonomic-group
 taxonomy science
 taxpayer person
 tea drink
@@ -3378,16 +3386,10 @@ training-workshop course-of-instruction
 trait attribute
 transaction act
 transaction-record information
-transcription organic-process
-transduction organic-process
-transformation act
 transgene gene
-translation organic-process
-translocation organic-process
 transmission gear
 transport act
 transportation commercial-enterprise
-transposition mutation
 trap device
 tray container
 treasure collection
@@ -3399,7 +3401,6 @@ tree plant
 trench artifact
 trial thinking
 triangle shape
-tribe taxonomic-group
 tribulation trouble
 tribunal group
 tribute information
@@ -3417,7 +3418,7 @@ truth information
 tub vessel
 tube body-part
 tumor tissue-growth
-tumor-suppressor-gene suppressor
+tumor-suppressor-gene suppressor-gene
 tune music
 tunnel artifact
 turgor state
@@ -3454,14 +3455,12 @@ use practice
 user person
 vacation time-period
 vacuum commodity
-valence attribute
 valley natural-depression
 value quantity
 van truck
 variable quantity
 variant taxonomic-group
 variation change
-variety taxonomic-group
 vector variable
 vegetable produce
 vegetable-oil fat
@@ -3499,6 +3498,7 @@ virus agent microorganism
 vision imagination
 visit coming-together
 visitor person
+visual-accommodation act
 visual-cell somatic-cell
 vitamin food
 voice ability

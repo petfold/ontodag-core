@@ -36,17 +36,30 @@ def main():
     # adds `claude` to the edge's witnesses (and its reversal to `against`),
     # a reject records a dissent that keeps the edge out of consensus.
     dissent = set()
+    verdict = {}                                   # last line wins: a second pass may overturn a first reading
     for sub, sup, dec, _ in resolve_reviews(dirs.align / "claude-review.tsv", dirs.concepts):
+        verdict[(sub, sup)] = dec
+    for (sub, sup), dec in verdict.items():
         if dec == "accept":
             for_[(sub, sup)].add("claude")
             against[(sup, sub)].add("claude")
         elif dec == "reject":
             dissent.add((sub, sup))
+    # Rulings come in two files that work the same way but are attributed
+    # differently: review.tsv is Peter's, claude-ruling.tsv holds the rulings
+    # Claude made under Peter's standing permission (2026-09-03: they used to
+    # sit in review.tsv, which made 190 mathematics edges look like Peter's).
+    # A ruling is a witness too — an edge no source states can still enter —
+    # and Peter's line wins wherever both files speak to one pair.
     review = {}
+    for sub, sup, dec, _ in resolve_reviews(dirs.align / "claude-ruling.tsv", dirs.concepts):
+        review[(sub, sup)] = dec
+        if dec == "accept":
+            for_[(sub, sup)].add("claude-ruling")
     for sub, sup, dec, _ in resolve_reviews(dirs.align / "review.tsv", dirs.concepts):
         review[(sub, sup)] = dec
         if dec == "accept":
-            for_[(sub, sup)].add("peter")      # a ruling is a witness too: an edge no source states can still enter
+            for_[(sub, sup)].add("peter")
     rp = dirs.align / "roots.txt"
     roots = {l.strip() for l in open(rp) if l.strip() and not l.startswith("#")} if rp.exists() else set()
 
@@ -76,8 +89,10 @@ def main():
             if against.get(pair) and review.get(pair) != "accept":      # ruled-on pairs stay quiet
                 contradicted.append((pair, against[pair]))
             continue
-        if dirs.pack and origin.get(pair[0]) == "base" and origin.get(pair[1]) == "base":
-            continue                                   # the core's business, decided (or left) there
+        if dirs.pack and origin.get(pair[0]) == "base" and origin.get(pair[1]) == "base" \
+                and not (review.get(pair) == "accept" and pair[0] not in base):
+            continue                                   # the core's business, decided (or left) there — unless a
+                                                       # ruling places a concept core left unplaced (gene, 2026-09-03)
         r = review.get(pair)
         if r == "reject":
             status[pair] = "rejected"

@@ -242,10 +242,10 @@ proves the pattern before biology's tree of life tests its scale.
 
 | pack | concepts | sources | hinges in core |
 |---|---|---|---|
-| physics | 173 | WordNet physics/astronomy topics, the particle cone; 12 new unit heads under `linear-dimension` | particle, concept (physical-law, theory), natural-event (physical-phenomenon), event, place, attribute |
-| mathematics | 607 | WordNet mathematics/statistics/geometry/logic topics and cones; **Wikidata** (bounded P279 pulls, `tools/fetch_wikidata.py`, 227 roots) for the skeleton: algebraic structures, number types, relations, sets, spaces, graph theory, mathematical logic, order theory and Formal Concept Analysis, **discrete mathematics** (combinatorics, number theory, automata, coding theory, designs) and **cryptography** (primitives, ciphers, hash functions incl. SHA-2/Keccak, signatures incl. ECDSA, MACs, KDFs, key exchange, zero-knowledge proofs, commitments, Merkle trees, content addressing, blockchain, cryptanalysis) — the vocabulary ontodag's own certificates, provenance and Swarm layer are described in | concept (mathematical-set, mathematical-relation, mathematical-structure, expression, algorithm), cognition (statistic), event/procedure (mathematical-operation), shape, mathematics, number, cryptography ⊑ field-of-study |
-| chemistry | 243 | WordNet chemistry topic, the element cone, hinge synsets (molecule, compound, solution, material, ion, polymer, mixture, alloy, catalyst, bond); **Wikidata** for 16 roots (element, reaction, bond, functional group, molecule, ion, acid, base, polymer, state of matter, mixture, alloy, mineral — and `chemical compound`, `chemical substance`, `medication` label-only, since each has tens of thousands of direct subclasses); 2 new unit heads (`amount-of-substance`, `catalytic-activity`) | substance, material, chemical, compound, chemical-element, natural-event (chemical-bond), collection (chemical-group), information (periodic-table), concept (theories), number (equilibrium-constant), attribute |
-| biology | 346 | WordNet biology/genetics/botany/physiology/ecology topics, the cell and gene cones, hinge synsets (enzyme, nucleic acid, DNA, chromosome, metabolism, ecosystem, hormone, biological process, taxonomic group, plant part); **Wikidata** for 17 roots (organism, cell to depth 2, enzyme, the kingdoms, virus, chromosome, metabolism, biological process to depth 2, strain, taxon, ecosystem, nucleic acid — `gene` and `protein` label-only: 453,793 and 769,212 direct subclasses, every named gene and protein) | organism, cell, body-part (plant-part hangs here: "any part of an organism"), nucleic-acid, taxonomic-group ⊑ concept, natural-event, attribute, group (ecosystem; `system` is unplaced in core), physical-object |
+| physics | 185 | WordNet physics/astronomy topics, the particle cone; 12 new unit heads under `linear-dimension` | particle, concept (physical-law, theory), natural-event (physical-phenomenon), event, place, attribute |
+| mathematics | 605 | WordNet mathematics/statistics/geometry/logic topics and cones; **Wikidata** (bounded P279 pulls, `tools/fetch_wikidata.py`, 227 roots) for the skeleton: algebraic structures, number types, relations, sets, spaces, graph theory, mathematical logic, order theory and Formal Concept Analysis, **discrete mathematics** (combinatorics, number theory, automata, coding theory, designs) and **cryptography** (primitives, ciphers, hash functions incl. SHA-2/Keccak, signatures incl. ECDSA, MACs, KDFs, key exchange, zero-knowledge proofs, commitments, Merkle trees, content addressing, blockchain, cryptanalysis) — the vocabulary ontodag's own certificates, provenance and Swarm layer are described in | concept (mathematical-set, mathematical-relation, mathematical-structure, expression, algorithm), cognition (statistic), event/procedure (mathematical-operation), shape, mathematics, number, cryptography ⊑ field-of-study |
+| chemistry | 242 | WordNet chemistry topic, the element cone, hinge synsets (molecule, compound, solution, material, ion, polymer, mixture, alloy, catalyst, bond); **Wikidata** for 16 roots (element, reaction, bond, functional group, molecule, ion, acid, base, polymer, state of matter, mixture, alloy, mineral — and `chemical compound`, `chemical substance`, `medication` label-only, since each has tens of thousands of direct subclasses); 2 new unit heads (`amount-of-substance`, `catalytic-activity`) | substance, material, chemical, compound, chemical-element, natural-event (chemical-bond), collection (chemical-group), information (periodic-table), concept (theories), number (equilibrium-constant), attribute |
+| biology | 342 | WordNet biology/genetics/botany/physiology/ecology topics, the cell and gene cones, hinge synsets (enzyme, nucleic acid, DNA, chromosome, metabolism, ecosystem, hormone, biological process, taxonomic group, plant part); **Wikidata** for 17 roots (organism, cell to depth 2, enzyme, the kingdoms, virus, chromosome, metabolism, biological process to depth 2, strain, taxon, ecosystem, nucleic acid — `gene` and `protein` label-only: 453,793 and 769,212 direct subclasses, every named gene and protein) | organism, cell, body-part (plant-part hangs here: "any part of an organism"), nucleic-acid, taxonomic-group ⊑ concept, natural-event, attribute, group (ecosystem; `system` is unplaced in core), physical-object |
 
 Three lessons from the Wikidata stage. **Verify every root QID by label
 before walking it**: four of the first thirty-three were wrong (metabolism
@@ -268,3 +268,62 @@ set); every such edge was rejected — a thing is filed as what it is. And
 **mathematics never takes an everyday word**: `mathematical-set`,
 `mathematical-group`, `mathematical-graph`, `graph-clique`, `logical-negation`.
 Rulings proposed for Peter sit in each pack's `align/review.tsv`.
+
+## 9. The second pass (2026-09-03, with Peter)
+
+Peter noticed `acyclic-graph ⊑ undirected-graph` in the mathematics pack. The
+edge is Wikidata's definition of Q3115453 (an undirected graph without
+cycles, i.e. a forest) and the ruling behind it was Claude's, written into
+`review.tsv` — nominally Peter's file. Three things followed.
+
+**Attribution.** Rulings Claude made under Peter's standing permission now
+live in `claude-ruling.tsv` per pack and count as the witness `claude-ruling`;
+`review.tsv` holds only Peter's lines (in the packs: `theory ⊑ concept` and
+`elementary-particle ⊑ particle`). Peter's line wins where both speak. A
+ruling may also place a concept that core left unplaced (`gene`). In
+`claude-review.tsv` the last verdict on a pair wins, so a second reading can
+overturn a first.
+
+**A second reading of every single-source edge** — 1,109 edges whose only
+independent source was one of WordNet, Wikidata or SUMO, read against both
+glosses. Forty were rejected and re-ruled, four concepts dropped, ~105
+renamed. The kinds of error found, so the next pass knows where to look:
+
+- *WordNet's own slips*: `heterozygote ⊑ zygote` (an organism, not a cell),
+  `leukocyte ⊑ free-phagocyte` (lymphocytes are neither), `covariance ⊑
+  variance`, `standard-deviation ⊑ variance`, `mathematical-analysis ⊑
+  calculus` (inverted), `antiproton ⊑ nucleon`, `erythroblast ⊑
+  embryonic-cell`, `nerve-fiber ⊑ fiber` (the textile one).
+- *Claude's coarse rulings that were wrong rather than coarse*: `chemical-chain
+  ⊑ concept` (atoms are physical), `actinide-series ⊑ chemical-group` (a
+  series of elements is not a functional group), `brute-force-attack ⊑
+  cryptanalysis` (a method under a field), `gene ⊑ dna` (Peter: genes were
+  known before DNA), `ecosystem ⊑ group` (true only abstractly).
+- *Wrong sense behind a right name*: the physics unit heads `charge`, `power`,
+  `resistance`, `force` had aligned to the payment, the person and the act of
+  opposing; `disease-vector` was WordNet's cloning vector; a `domain` row
+  survived a rename as an orphan.
+
+**The everyday-word rule now covers every pack, not only mathematics.** A
+pack concept whose plain word has an everyday sense is qualified: `cone-cell`,
+`rod-cell`, `pitcher-leaf`, `flower-spike`, `mechanical-stress`,
+`magnetic-dip`, `statistical-mode`, `function-domain`, `gene-expression`,
+`rna-translation`, `chemical-indicator` — because a bare `cone` or `stress`
+in a merged store would file everyone's ice creams and deadlines under retina
+cells and physics. The same rule resolved fifteen cross-pack collisions
+(`polymorphism`, `decomposition`, `relaxation`, `transformation`,
+`translation` each meant something different in two packs). `parity` in
+physics is `parity-conservation`. The names that stay plain are the ones
+whose only common sense is the pack's: `enzyme`, `quark`, `theorem`,
+`genus`, `mixture`.
+
+**Still doubtful, left for Peter** (kept as they stand, WordNet's readings):
+iron products under the element (`cast-iron`, `pig-iron`, `wrought-iron ⊑
+iron`; likewise `green-gold ⊑ gold`, `calcium-ion ⊑ calcium`); gaseous
+elements under `fluid`; `animal-egg ⊑ ovum` and `ovule ⊑ ovum`;
+`plant-part ⊑ body-part`; `astronomer ⊑ physicist`; `ph-value ⊑
+concentration`; `stoichiometry ⊑ ratio`; `probability ⊑ statistic`;
+`sample-distribution ⊑ statistical-distribution`; `computational-complexity-
+theory ⊑ computability-theory`; `chemical-bond ⊑ natural-event` (correct by
+WordNet's chain, but core's name `natural-event` for *natural phenomenon*
+misleads here); the `-blast` precursor cells under `embryonic-cell`.

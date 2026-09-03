@@ -2,9 +2,8 @@ kind	sub	sup	detail
 single	absolute-magnitude	property	only sumo
 single	absorber	substance	only wordnet
 single	absorptivity	property	only sumo
-single	abundance	number	only sumo
-single	abundance	quantity	only sumo
-single	abundance	situation	only opencyc
+single	anomaly	physical-object	only wordnet
+single	anomaly	quantity	only sumo
 single	antibaryon	chemical-element	only sumo
 single	antibaryon	material	only sumo
 single	antibaryon	natural-object	only wordnet
@@ -83,6 +82,7 @@ single	atomic-nucleus	material	only sumo
 single	atomic-nucleus	physical-object	only wordnet
 single	atomic-nucleus	place	only wordnet
 single	atomic-nucleus	substance	only sumo
+single	atomic-spectrum	event	only sumo
 single	attractor	attribute	only sumo
 single	attractor	cognition	only wordnet
 single	attractor	idea	only wordnet
@@ -120,24 +120,36 @@ single	capacitance	physical-phenomenon	only wordnet
 single	capacitance	process	only wordnet
 single	capacitance	quantity	only sumo
 single	capacitance	vector	only sumo
+single	celestial-culmination	physical-object	only wordnet
 single	celestial-limb	physical-object	only wordnet
 single	center-of-buoyancy	physical-object	only wordnet
+single	chaotic-system	attribute	only wordnet
+single	chaotic-system	phase-space	only wordnet
+single	charge-recombination	combination	only sumo
 single	charm-quark	chemical-element	only sumo
 single	charm-quark	material	only sumo
 single	charm-quark	natural-object	only wordnet
 single	charm-quark	particle	only wordnet
 single	charm-quark	physical-object	only wordnet
 single	charm-quark	substance	only sumo
-single	cohesion	event	only sumo
-single	cohesion	process	only wordnet
 single	collision	blow	only sumo
 single	collision	impact	only sumo
 single	collision	visit	only sumo
+single	comet-coma	celestial-body	only sumo
+single	comet-coma	process	only wordnet
 single	comet-nucleus	celestial-body	only sumo
 single	comet-nucleus	physical-object	only wordnet
 single	comet-nucleus	place	only wordnet
-single	containment	device	only sumo
-single	containment	physical-object	only wordnet
+single	conjunction	information	only opencyc
+single	conservation-law	cognition	only wordnet
+single	conservation-law	concept	only wordnet
+single	conservation-law	idea	only wordnet
+single	conservation-law	natural-law	only wordnet
+single	copernican-system	cognition	only wordnet
+single	copernican-system	concept	only wordnet
+single	copernican-system	hypothesis	only wordnet
+single	copernican-system	idea	only wordnet
+single	coriolis-effect	process	only wordnet
 single	coriolis-force	event	only sumo
 single	coriolis-force	process	only wordnet
 single	corpuscular-theory	cognition	only wordnet
@@ -148,7 +160,6 @@ single	cosmic-string	natural-object	only wordnet
 single	cosmic-string	particle	only wordnet
 single	cosmic-string	physical-object	only wordnet
 single	cosmic-string	substance	only sumo
-single	culmination	physical-object	only wordnet
 single	current	physical-phenomenon	only wordnet
 single	dalton's-law	cognition	only wordnet
 single	dalton's-law	idea	only wordnet
@@ -168,12 +179,6 @@ single	delta-ray	physical-object	only wordnet
 single	delta-ray	substance	only sumo
 single	diffusion	combination	only sumo
 single	diffusion	situation	only opencyc
-single	dip	attribute	only wordnet
-single	dip	empty-space	only wordnet
-single	dip	physical-object	only wordnet
-single	dip	place	only wordnet
-single	dip	quantity	only sumo
-single	dip	shape	only wordnet
 single	down-quark	chemical-element	only sumo
 single	down-quark	material	only sumo
 single	down-quark	natural-object	only wordnet
@@ -181,9 +186,12 @@ single	down-quark	particle	only wordnet
 single	down-quark	physical-object	only wordnet
 single	down-quark	substance	only sumo
 single	draught	physical-phenomenon	only wordnet
-single	duality	property	only sumo
-single	egress	attribute	only sumo
-single	egress	property	only sumo
+single	dynamical-system	attribute	only wordnet
+single	dynamical-system	phase-space	only wordnet
+single	eclipse-egress	attribute	only sumo
+single	eclipse-egress	property	only sumo
+single	eclipse-ingress	attribute	only sumo
+single	eclipse-ingress	property	only sumo
 single	electric-charge	physical-phenomenon	only wordnet
 single	electrical-phenomenon	event	only sumo
 single	electrical-phenomenon	natural-event	only wordnet
@@ -268,8 +276,12 @@ single	inductance	physical-phenomenon	only wordnet
 single	inductance	process	only wordnet
 single	inertia	process	only wordnet
 single	inertial-mass	quantity	only sumo
-single	ingress	attribute	only sumo
-single	ingress	property	only sumo
+single	inferior-conjunction	encounter	only wordnet
+single	inferior-conjunction	event	only wordnet
+single	intermolecular-cohesion	event	only sumo
+single	intermolecular-cohesion	process	only wordnet
+single	isotopic-abundance	number	only sumo
+single	isotopic-abundance	quantity	only sumo
 single	j-particle	chemical-element	only sumo
 single	j-particle	hadron	only wordnet
 single	j-particle	material	only sumo
@@ -309,9 +321,18 @@ single	lepton	natural-object	only wordnet
 single	lepton	particle	only wordnet
 single	lepton	physical-object	only wordnet
 single	lepton	substance	only sumo
+single	libration	event	only sumo
+single	libration	perturbation	only wordnet
+single	libration	process	only wordnet
 single	low	physical-phenomenon	only wordnet
 single	luminous-flux	quantity	only sumo
 single	luminous-flux	vector	only sumo
+single	magnetic-dip	attribute	only wordnet
+single	magnetic-dip	empty-space	only wordnet
+single	magnetic-dip	physical-object	only wordnet
+single	magnetic-dip	place	only wordnet
+single	magnetic-dip	quantity	only sumo
+single	magnetic-dip	shape	only wordnet
 single	magnetic-dipole-moment	process	only wordnet
 single	magnetic-dipole-moment	quantity	only sumo
 single	magnetic-dipole-moment	vector	only sumo
@@ -327,6 +348,8 @@ single	mass-energy-equivalence	idea	only wordnet
 single	mass-energy-equivalence	physical-law	only wordnet
 single	maxwell-boltzmann-distribution-law	cognition	only wordnet
 single	maxwell-boltzmann-distribution-law	idea	only wordnet
+single	mechanical-stress	event	only sumo
+single	mechanical-stress	process	only wordnet
 single	mechanical-work	event	only sumo
 single	mechanical-work	natural-event	only wordnet
 single	mechanical-work	process	only wordnet
@@ -394,12 +417,22 @@ single	optical-density	attribute	only wordnet
 single	optical-density	quantity	only sumo
 single	orbital-node	physical-object	only wordnet
 single	orbital-plane	property	only sumo
+single	orbital-variation	event	only sumo
+single	orbital-variation	process	only wordnet
+single	orbital-variation	visit	only sumo
 single	outer-planet	celestial-body	only wordnet
 single	outer-planet	natural-object	only wordnet
 single	outer-planet	physical-object	only wordnet
-single	patience	relaxation	only opencyc
+single	parity-conservation	cognition	only wordnet
+single	parity-conservation	concept	only wordnet
+single	parity-conservation	idea	only wordnet
+single	parity-conservation	natural-law	only wordnet
 single	pencil-of-rays	property	only sumo
 single	periapsis	physical-object	only wordnet
+single	perturbation	process	only wordnet
+single	phase-space	empty-space	only sumo
+single	phase-space	place	only sumo
+single	phase-space	sky	only sumo
 single	photoelectron	chemical-element	only sumo
 single	photoelectron	lepton	only wordnet
 single	photoelectron	material	only sumo
@@ -458,6 +491,11 @@ single	proton	natural-object	only wordnet
 single	proton	particle	only wordnet
 single	proton	physical-object	only wordnet
 single	proton	substance	only sumo
+single	ptolemaic-system	cognition	only wordnet
+single	ptolemaic-system	concept	only wordnet
+single	ptolemaic-system	hypothesis	only wordnet
+single	ptolemaic-system	idea	only wordnet
+single	quantum	quantity	only sumo
 single	quantum-theory	cognition	only wordnet
 single	quantum-theory	theory	only wordnet
 single	quark	chemical-element	only sumo
@@ -469,15 +507,15 @@ single	quark	substance	only sumo
 single	radiation-absorption	event	only sumo
 single	rain	physical-phenomenon	only wordnet
 single	rain-shower	physical-phenomenon	only wordnet
-single	recombination	combination	only sumo
+single	reactor-containment	device	only sumo
+single	reactor-containment	physical-object	only wordnet
 single	red-shift	event	only sumo
 single	red-shift	process	only wordnet
 single	relativistic-mass	quantity	only sumo
 single	relativity	cognition	only wordnet
 single	relativity	theory	only wordnet
-single	relaxation	diminution	only sumo
-single	relaxation	emotion	only opencyc
-single	relaxation	event	only sumo
+single	relaxation-process	diminution	only sumo
+single	relaxation-process	event	only sumo
 single	reluctivity	quantity	only sumo
 single	reluctivity	vector	only sumo
 single	rest-mass	quantity	only sumo
@@ -496,11 +534,11 @@ single	scintillation	luminosity	only sumo
 single	scintillation	natural-event	only wordnet
 single	scintillation	physical-phenomenon	only wordnet
 single	scintillation	process	only wordnet
-single	shear	accomplishment	only sumo
-single	shear	act	only sumo
-single	shear	activity	only sumo
-single	shear	procedure	only sumo
-single	shear	volition	only sumo
+single	shear-deformation	accomplishment	only sumo
+single	shear-deformation	act	only sumo
+single	shear-deformation	activity	only sumo
+single	shear-deformation	procedure	only sumo
+single	shear-deformation	volition	only sumo
 single	snow	physical-phenomenon	only wordnet
 single	soliton	chemical-element	only sumo
 single	soliton	elementary-particle	only sumo
@@ -524,14 +562,13 @@ single	strange-quark	natural-object	only wordnet
 single	strange-quark	particle	only wordnet
 single	strange-quark	physical-object	only wordnet
 single	strange-quark	substance	only sumo
-single	stress	emotion	only opencyc
-single	stress	event	only sumo
-single	stress	process	only wordnet
 single	strong-interaction	event	only sumo
 single	strong-interaction	natural-event	only wordnet
 single	strong-interaction	physical-phenomenon	only wordnet
 single	strong-interaction	process	only wordnet
 single	sunlight	physical-phenomenon	only wordnet
+single	superior-conjunction	encounter	only wordnet
+single	superior-conjunction	event	only wordnet
 single	supersymmetry	cognition	only wordnet
 single	supersymmetry	theory	only wordnet
 single	sympathetic-vibration	wave-motion	only wordnet
@@ -555,7 +592,7 @@ single	top-quark	natural-object	only wordnet
 single	top-quark	particle	only wordnet
 single	top-quark	physical-object	only wordnet
 single	top-quark	substance	only sumo
-single	transient	wave-motion	only wordnet
+single	transient-oscillation	wave-motion	only wordnet
 single	up-quark	chemical-element	only sumo
 single	up-quark	material	only sumo
 single	up-quark	natural-object	only wordnet
@@ -578,6 +615,7 @@ single	voltage	physical-phenomenon	only wordnet
 single	voltage	process	only wordnet
 single	wave-front	physical-object	only wordnet
 single	wave-node	physical-object	only wordnet
+single	wave-particle-duality	property	only sumo
 single	wave-theory	cognition	only wordnet
 single	wave-theory	theory	only wordnet
 single	weak-interaction	event	only sumo
@@ -601,8 +639,6 @@ unplaced	altitude		no accepted parent reaches a root
 unplaced	alumnus		no accepted parent reaches a root
 unplaced	angel		no accepted parent reaches a root
 unplaced	anniversary		no accepted parent reaches a root
-unplaced	anomaly	physical-object place quantity	no accepted parent reaches a root
-unplaced	atomic-spectrum	event group phenomenon	no accepted parent reaches a root
 unplaced	aviation		no accepted parent reaches a root
 unplaced	backlog		no accepted parent reaches a root
 unplaced	bail		no accepted parent reaches a root
@@ -627,25 +663,19 @@ unplaced	capitalism		no accepted parent reaches a root
 unplaced	cassette		no accepted parent reaches a root
 unplaced	ceiling.communication		no accepted parent reaches a root
 unplaced	century		no accepted parent reaches a root
-unplaced	chaotic-system	attribute dynamical-system phase-space signified	no accepted parent reaches a root
 unplaced	childhood		no accepted parent reaches a root
 unplaced	chord		no accepted parent reaches a root
 unplaced	clock-time		no accepted parent reaches a root
 unplaced	clod		no accepted parent reaches a root
 unplaced	column.group		no accepted parent reaches a root
-unplaced	comet-coma	celestial-body natural-event phenomenon physical-phenomenon process universe	no accepted parent reaches a root
 unplaced	commencement		no accepted parent reaches a root
 unplaced	concern.cognition		no accepted parent reaches a root
 unplaced	confederacy		no accepted parent reaches a root
-unplaced	conjunction	encounter event information	no accepted parent reaches a root
 unplaced	conscience		no accepted parent reaches a root
 unplaced	consequence		no accepted parent reaches a root
-unplaced	conservation-law	cognition concept idea natural-law principle signified	no accepted parent reaches a root
 unplaced	consultation		no accepted parent reaches a root
 unplaced	contrary		no accepted parent reaches a root
 unplaced	contrast		no accepted parent reaches a root
-unplaced	copernican-system	cognition concept hypothesis idea signified theoretical-account	no accepted parent reaches a root
-unplaced	coriolis-effect	consequence phenomenon process	no accepted parent reaches a root
 unplaced	correlation		no accepted parent reaches a root
 unplaced	course-credit		no accepted parent reaches a root
 unplaced	course-of-study		no accepted parent reaches a root
@@ -674,7 +704,6 @@ unplaced	dragon		no accepted parent reaches a root
 unplaced	dramaturgy		no accepted parent reaches a root
 unplaced	due-east		no accepted parent reaches a root
 unplaced	due-west		no accepted parent reaches a root
-unplaced	dynamical-system	attribute phase-space signified	no accepted parent reaches a root
 unplaced	eagle.communication		no accepted parent reaches a root
 unplaced	earth		no accepted parent reaches a root
 unplaced	east		no accepted parent reaches a root
@@ -718,6 +747,7 @@ unplaced	garden		no accepted parent reaches a root
 unplaced	gas		no accepted parent reaches a root
 unplaced	gem		no accepted parent reaches a root
 unplaced	gene		no accepted parent reaches a root
+unplaced	genus-pan		no accepted parent reaches a root
 unplaced	globe		no accepted parent reaches a root
 unplaced	grade		no accepted parent reaches a root
 unplaced	grain.object		no accepted parent reaches a root
@@ -744,7 +774,6 @@ unplaced	ideal		no accepted parent reaches a root
 unplaced	impetus		no accepted parent reaches a root
 unplaced	implication		no accepted parent reaches a root
 unplaced	incentive		no accepted parent reaches a root
-unplaced	inferior-conjunction	conjunction encounter event	no accepted parent reaches a root
 unplaced	influence.phenomenon		no accepted parent reaches a root
 unplaced	infrastructure		no accepted parent reaches a root
 unplaced	insider		no accepted parent reaches a root
@@ -760,7 +789,6 @@ unplaced	laurel-wreath		no accepted parent reaches a root
 unplaced	leave		no accepted parent reaches a root
 unplaced	legal-age		no accepted parent reaches a root
 unplaced	level		no accepted parent reaches a root
-unplaced	libration	consequence event influence.phenomenon orbital-variation perturbation phenomenon process	no accepted parent reaches a root
 unplaced	limit.quantity		no accepted parent reaches a root
 unplaced	line-of-descent		no accepted parent reaches a root
 unplaced	lineation		no accepted parent reaches a root
@@ -776,7 +804,6 @@ unplaced	mannequin		no accepted parent reaches a root
 unplaced	manner-of-speaking		no accepted parent reaches a root
 unplaced	mar		no accepted parent reaches a root
 unplaced	mars		no accepted parent reaches a root
-unplaced	martian-canal	body-of-water infrastructure phenomenon place structure universe water-channel	no accepted parent reaches a root
 unplaced	matrix		no accepted parent reaches a root
 unplaced	maximum		no accepted parent reaches a root
 unplaced	menace		no accepted parent reaches a root
@@ -810,15 +837,12 @@ unplaced	old-age		no accepted parent reaches a root
 unplaced	one-fourth		no accepted parent reaches a root
 unplaced	one-half		no accepted parent reaches a root
 unplaced	opposite		no accepted parent reaches a root
-unplaced	orbital-variation	consequence event influence.phenomenon perturbation phenomenon process visit	no accepted parent reaches a root
 unplaced	orientation		no accepted parent reaches a root
 unplaced	outflow		no accepted parent reaches a root
 unplaced	output		no accepted parent reaches a root
 unplaced	ownership		no accepted parent reaches a root
 unplaced	page		no accepted parent reaches a root
 unplaced	pain		no accepted parent reaches a root
-unplaced	pan		no accepted parent reaches a root
-unplaced	parity	cognition concept conservation-law function idea natural-law principle signified	no accepted parent reaches a root
 unplaced	parking		no accepted parent reaches a root
 unplaced	part		no accepted parent reaches a root
 unplaced	past		no accepted parent reaches a root
@@ -827,9 +851,7 @@ unplaced	pause		no accepted parent reaches a root
 unplaced	peel		no accepted parent reaches a root
 unplaced	percentage		no accepted parent reaches a root
 unplaced	period.time		no accepted parent reaches a root
-unplaced	perturbation	consequence influence.phenomenon phenomenon process	no accepted parent reaches a root
 unplaced	phase		no accepted parent reaches a root
-unplaced	phase-space	attribute empty-space phenomenon place sky universe	no accepted parent reaches a root
 unplaced	phenomenon		no accepted parent reaches a root
 unplaced	pity		no accepted parent reaches a root
 unplaced	placement		no accepted parent reaches a root
@@ -849,9 +871,7 @@ unplaced	product.phenomenon		no accepted parent reaches a root
 unplaced	projection		no accepted parent reaches a root
 unplaced	projection.communication		no accepted parent reaches a root
 unplaced	proportion		no accepted parent reaches a root
-unplaced	ptolemaic-system	cognition concept hypothesis idea signified theoretical-account	no accepted parent reaches a root
 unplaced	pupil		no accepted parent reaches a root
-unplaced	quantum	quantity	no accepted parent reaches a root
 unplaced	quarter.time		no accepted parent reaches a root
 unplaced	racism		no accepted parent reaches a root
 unplaced	railway-line		no accepted parent reaches a root
@@ -909,7 +929,6 @@ unplaced	summation		no accepted parent reaches a root
 unplaced	summer		no accepted parent reaches a root
 unplaced	sun		no accepted parent reaches a root
 unplaced	sunday		no accepted parent reaches a root
-unplaced	superior-conjunction	conjunction encounter event	no accepted parent reaches a root
 unplaced	supply		no accepted parent reaches a root
 unplaced	surrender		no accepted parent reaches a root
 unplaced	syllable		no accepted parent reaches a root

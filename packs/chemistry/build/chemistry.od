@@ -1,10 +1,8 @@
 # ontodag store v1
 24-karat-gold chemical-element gold substance
 absorption '*'
-abundance ratio
-acceptor compound material substance
 acid-value attribute
-actinide-series chemical-group
+actinide-series chemical-group collection
 actinium chemical-element substance
 activated-carbon carbon chemical-element substance
 alkali-metal chemical-element metal substance
@@ -46,7 +44,6 @@ bone-black char
 boron chemical-element substance
 bromine nonmetal
 buckminsterfullerene fullerene
-buffer compound material substance
 cadmium chemical-element metal substance
 calcium chemical-element metal substance
 calcium-ion calcium material
@@ -68,18 +65,24 @@ chemical '*'
 chemical-activity attribute condition
 chemical-association chemical-process
 chemical-bond natural-event
-chemical-chain concept
+chemical-buffer compound material substance
+chemical-chain chemical-group concept
+chemical-decomposition chemical-process chemical-reaction
+chemical-dimorphism attribute
+chemical-dissociation chemical-process
 chemical-element '*'
-chemical-group collection
+chemical-group physical-object
+chemical-indicator material substance
 chemical-phenomenon natural-event
+chemical-polymorphism chemical-phenomenon
 chemical-process event process
 chemical-reaction '*'
 chemist scientist
 chemistry '*'
 chlorine chemical-element fluid substance
-chrome chromium
 chromium chemical-element metal substance
 cinder-pig pig-iron
+closed-chain chemical-chain
 cobalt chemical-element metal substance
 cobalt-60 cobalt
 coin-silver chemical-element material silver substance
@@ -92,17 +95,17 @@ copper '*'
 curium chemical-element metal substance
 'dalton'"'"'s-law' concept
 darmstadtium chemical-element substance
-decomposition chemical-process chemical-reaction
 delta-iron chemical-element iron substance
-dimorphism attribute
-displacement chemical-process chemical-reaction
-dissociation chemical-process
+displacement-reaction chemical-process chemical-reaction
+distillation-rectification process
 distribution-law concept
 dubnium chemical-element substance
 dysprosium chemical-element metal substance
 einsteinium chemical-element metal substance
-electrolysis decomposition
+electrolysis chemical-decomposition
+electron-acceptor compound material substance
 electronegativity attribute
+elemental-abundance ratio
 emulsion mixture
 equilibrium-constant number
 equilibrium-law concept
@@ -137,7 +140,6 @@ helium noble-gas nonmetal
 holmium chemical-element metal substance
 hydrogen chemical-element fluid substance
 imbibition absorption
-indicator material substance
 indium chemical-element metal substance
 information '*'
 ingot-iron chemical-element iron substance
@@ -155,12 +157,12 @@ law-of-mass-action concept
 law-of-multiple-proportions concept
 lawrencium chemical-element substance
 lead-metal '*'
-lead.artifact substance
 linear-dimension '*'
 liquid '*'
 liquid-nitrogen liquid nitrogen
 liquid-oxygen chemical-element fluid liquid oxygen substance
 lithium chemical-element metal substance
+long-chain chemical-chain
 lutetium chemical-element metal substance
 magnesium chemical-element metal substance
 manganese chemical-element metal substance
@@ -174,7 +176,7 @@ mineral '*'
 mixture chemical substance
 molecular-weight attribute
 molybdenum chemical-element metal substance
-monad atom substance
+monovalent-atom atom substance
 natural-event '*'
 neodymium chemical-element metal substance
 neon noble-gas
@@ -200,6 +202,7 @@ periodic-law concept
 periodic-table information
 ph-value concentration
 phosphorus chemical-element substance
+physical-object '*'
 pig-iron alloy chemical-element iron
 pig-lead chemical-element lead-metal substance
 platinum noble-metal
@@ -207,7 +210,6 @@ plutonium chemical-element substance
 plutonium-239 plutonium
 polonium chemical-element metal substance
 polymer chemical compound material substance
-polymorphism chemical-phenomenon
 polyvalence attribute state
 pot-metal alloy cast-iron
 potassium chemical-element metal substance
@@ -220,7 +222,6 @@ radiochlorine chlorine
 radium chemical-element metal substance
 radon noble-gas
 ratio '*'
-rectification process
 reverse-osmosis osmosis
 rhenium chemical-element metal substance
 rhodium chemical-element metal substance

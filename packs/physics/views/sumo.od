@@ -8,7 +8,6 @@ absolute-magnitude attribute property
 absorber universe
 absorption locating
 absorptivity attribute property
-abundance number
 abuse reaction.phenomenon
 academic-degree contract-condition text
 academy association organization team
@@ -153,7 +152,6 @@ article data-file essay news note
 articulation body-part
 artifact universe
 artistic-creation artifact indication
-ascension event
 ash material substance
 aspect attribute property
 aspiration attribute property
@@ -168,6 +166,7 @@ association group
 assurance communication
 asterisk character symbol
 asterism celestial-body
+astronomical-rising event
 astronomy field-of-study
 atom chemical-element
 atomic-nucleus elementary-particle
@@ -412,6 +411,7 @@ ceiling development
 ceiling.communication quantity
 celebration party
 celestial-body universe
+celestial-culmination place
 celestial-limb place
 cell body-part
 cell-culture growth
@@ -444,6 +444,7 @@ chapter essay
 character information
 characteristic attribute property
 charge advice
+charge-recombination combination
 charitable-organization association organization team
 charity accomplishment act activity procedure volition
 charm amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
@@ -511,7 +512,6 @@ code measure routine
 coevals contemporary
 coffin device
 cognition attribute property
-cohesion event
 coin cash currency
 coincidence event
 cold attribute property
@@ -606,7 +606,6 @@ constraint normal
 consultation coming-together
 consumption diminution visit
 contact communication
-containment device
 contemporary people school-class
 contest accomplishment act activity procedure volition
 context signified
@@ -626,8 +625,7 @@ conversion event
 conviction signified
 cook person populace
 cookie food material substance
-cooking-pan device
-cooking-pot cooking-pan
+cooking-pot pan
 cooperation accomplishment act activity procedure volition
 copernican-system signified
 copper chemical-element
@@ -698,7 +696,6 @@ cry reaction.phenomenon
 crystal artifact
 cube shape
 cubicle room
-culmination place
 culture '*'
 cupboard room
 curl hair
@@ -792,7 +789,6 @@ dignity amateur ambiance circumstance civilisation crowd custom danger expert fr
 dilemma amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 diligence attribute property
 diminution event
-dip quantity
 direction amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 director attribute property
 directory book data-file news note
@@ -871,7 +867,6 @@ driveway street
 drop shape
 drug material substance
 drug-user attribute property
-duality attribute property
 duck bird
 duke attribute property
 dwelling address
@@ -884,6 +879,8 @@ ease amateur ambiance circumstance civilisation crowd custom danger expert freed
 easiness attribute property
 east place
 echo event
+eclipse-egress attribute property
+eclipse-ingress attribute property
 economic-consumption event
 economic-system attribute property
 economic-value quantity
@@ -894,7 +891,6 @@ education leader
 egg body-part meat
 egg-white egg
 eggshell body-part
-egress attribute property
 elbow body-part
 election accomplishment act activity procedure volition
 electorate attribute property
@@ -1155,6 +1151,7 @@ gear-tooth artifact
 gene molecule
 genius person populace
 gentleman man
+genus-pan mammal
 geographic-pole place
 geography field-of-study
 gesture motion reaction.phenomenon
@@ -1365,7 +1362,6 @@ informant attribute property
 information universe
 infrastructure artifact
 ingredient material substance
-ingress attribute property
 inhabitant organism species
 inhibition accomplishment act activity information procedure volition
 initial character symbol
@@ -1397,6 +1393,7 @@ intention accomplishment act activity information procedure volition
 interaction accomplishment act activity procedure volition
 interest number
 interface code computer-program
+intermolecular-cohesion event
 interview communication
 intestine body-part
 intro communication
@@ -1413,6 +1410,7 @@ invoice article
 iron chemical-element
 island land yard
 isolation attribute property
+isotopic-abundance number
 isotropy attribute property
 issue signified
 item remark
@@ -1448,7 +1446,7 @@ justification thinking
 kaon elementary-particle
 keep event
 'kepler'"'"'s-law' signified
-kettle cooking-pan
+kettle pan
 key device
 kick attribute property
 kidney organ
@@ -1499,6 +1497,7 @@ lawsuit contest war
 layer place
 layout '*'
 lead attribute property
+lead-metal chemical-element
 leader accomplishment act activity procedure volition
 leadership leader
 leaf organ
@@ -1594,6 +1593,7 @@ machine device
 machinery device
 magazine series
 magic-trick accomplishment act activity procedure volition
+magnetic-dip quantity
 magnetic-dipole-moment vector
 magnetic-flux vector
 magnetic-reluctance event
@@ -1628,7 +1628,6 @@ marketing exchange interaction transaction
 marriage contract legal-document
 marriage-proposal advice
 married-couple contract legal-document
-martian-canal place
 mask clothing fashion
 mass universe
 mass-energy quantity
@@ -1648,6 +1647,8 @@ means device
 measure signified
 measuring-stick device
 meat food material substance
+mechanical-strain event
+mechanical-stress event
 mechanical-work event
 mechanism device
 medication material substance
@@ -1875,7 +1876,7 @@ painting artifact indication
 pair people school-class
 palace building
 palm tree
-pan mammal
+pan device
 panel component mechanism
 paper '*'
 parade event
@@ -1885,7 +1886,7 @@ parameter '*'
 parcel accomplishment act activity procedure volition
 pardon contract-condition text
 parent attribute property
-parity signified
+parity-conservation signified
 park land yard
 parking place
 parole communication
@@ -1918,7 +1919,6 @@ patriotism inclination mentality trait
 patrol association organization team
 pattern '*'
 pause quantity
-pb chemical-element
 peak land yard
 peasant person populace
 pedestrian accomplishment act activity motion procedure visit volition
@@ -2179,6 +2179,7 @@ ratio number
 rationality attribute property
 reaction event
 reaction.phenomenon communication
+reactor-containment device
 readiness attribute property
 realism amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 reality '*'
@@ -2191,7 +2192,6 @@ reception-party party
 recess shape
 recession diminution
 recognition reaction.phenomenon
-recombination combination
 recommendation affirmation
 recompense exchange interaction transaction
 record event
@@ -2221,7 +2221,7 @@ relationship accomplishment act activity procedure volition
 relative attribute property
 relativistic-mass quantity
 relativity signified
-relaxation diminution
+relaxation-process diminution
 release indication
 relevance '*'
 reliance amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
@@ -2421,7 +2421,7 @@ shaft artifact
 shape attribute property
 share-of-profits '*'
 shark fish
-shear accomplishment act activity procedure volition
+shear-deformation accomplishment act activity procedure volition
 sheep livestock mammal
 sheet artifact
 shelf artifact
@@ -2576,7 +2576,6 @@ stool chair
 stop accomplishment act activity procedure volition
 storey development
 stove device
-strain event
 strand artifact indication
 strange-particle elementary-particle
 strange-quark elementary-particle
@@ -2585,7 +2584,6 @@ straw artifact
 stream body-of-water
 street land yard
 strength amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
-stress event
 strike accomplishment act activity procedure volition
 string artifact
 strip universe
@@ -2751,7 +2749,7 @@ training-workshop acquired-knowledge education
 trait attribute property
 transaction accomplishment act activity procedure volition
 transaction-record contract-condition text
-transient event
+transient-oscillation event
 transmutation event
 transport visit
 trap device
@@ -2869,6 +2867,7 @@ wave event
 wave-front place
 wave-motion event
 wave-node place
+wave-particle-duality attribute property
 wave-theory signified
 way normal
 weak-interaction event

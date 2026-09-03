@@ -23,7 +23,6 @@ absorber	part
 absorber	substance
 absorption	process
 absorptivity	attribute
-abundance	ratio
 abuse	information
 academic-degree	information
 academic-degree	signal
@@ -501,7 +500,6 @@ artistic-creation	act
 artistic-creation	activity
 artistic-creation	creation
 artistic-creation	event
-ascension	event
 ash	substance
 ash-grey	attribute
 aspect	cognition
@@ -553,6 +551,7 @@ astronomer	person
 astronomer	physical-object
 astronomer	physicist
 astronomer	scientist
+astronomical-rising	event
 astronomy	cognition
 astronomy	field-of-study
 astronomy	natural-science
@@ -1454,6 +1453,8 @@ celebration	activity
 celebration	event
 celestial-body	natural-object
 celestial-body	physical-object
+celestial-culmination	physical-object
+celestial-culmination	place
 celestial-limb	physical-object
 celestial-limb	place
 cell	physical-object
@@ -1549,6 +1550,7 @@ character	symbol
 characteristic	attribute
 charge	act
 charge	event
+charge-recombination	event
 charitable-organization	group
 charitable-organization	institution
 charitable-organization	organization
@@ -1781,10 +1783,6 @@ coffin	artifact
 coffin	box
 coffin	container
 coffin	physical-object
-cohesion	natural-event
-cohesion	phenomenon
-cohesion	physical-phenomenon
-cohesion	process
 coin	currency
 coin	standard
 coincidence	chance-event
@@ -2071,8 +2069,6 @@ contact	event
 contact	interaction
 container	artifact
 container	physical-object
-containment	artifact
-containment	physical-object
 contamination	act
 contamination	event
 contemporary	agent
@@ -2116,8 +2112,6 @@ cook	physical-object
 cook	worker
 cookie	cake
 cookie	substance
-cooking-pan	artifact
-cooking-pan	physical-object
 cooking-pot	artifact
 cooking-pot	container
 cooking-pot	physical-object
@@ -2362,8 +2356,6 @@ cubicle	structure
 cucumber	produce
 cucumber	substance
 cucumber	vegetable
-culmination	physical-object
-culmination	place
 culture	attitude
 culture	cognition
 cup	artifact
@@ -2683,12 +2675,6 @@ diminution	event
 dinner	food
 dinner	meal
 dinner	substance
-dip	angle
-dip	attribute
-dip	empty-space
-dip	physical-object
-dip	place
-dip	shape
 diplomat	agent
 diplomat	official
 diplomat	organism
@@ -2953,7 +2939,6 @@ drum	artifact
 drum	device
 drum	musical-instrument
 drum	physical-object
-duality	attribute
 duck	animal
 duck	bird
 duck	organism
@@ -2999,6 +2984,8 @@ easiness	attribute
 easiness	feeling
 easiness	state
 echo	attribute
+eclipse-egress	event
+eclipse-ingress	event
 economic-consumption	demand.process
 economic-consumption	process
 economic-system	group
@@ -3037,7 +3024,6 @@ eggshell	physical-object
 ego	attribute
 ego	feeling
 ego	state
-egress	event
 elbow	articulation
 elbow	body-part
 election	act
@@ -3868,6 +3854,7 @@ gentleman	man
 gentleman	organism
 gentleman	person
 gentleman	physical-object
+genus-pan	group
 geographic-pole	physical-object
 geographic-pole	place
 geography	cognition
@@ -4602,7 +4589,6 @@ infrastructure	attribute
 infrastructure	constitution
 ingredient	component
 ingredient	physical-object
-ingress	event
 inhabitant	agent
 inhabitant	organism
 inhabitant	person
@@ -4694,6 +4680,10 @@ interior-designer	organism
 interior-designer	person
 interior-designer	physical-object
 interior-designer	specialist
+intermolecular-cohesion	natural-event
+intermolecular-cohesion	phenomenon
+intermolecular-cohesion	physical-phenomenon
+intermolecular-cohesion	process
 internet	artifact
 internet	physical-object
 intersection	junction
@@ -4747,6 +4737,7 @@ island	land
 island	physical-object
 isolation	attribute
 isolation	state
+isotopic-abundance	ratio
 isotropy	attribute
 issue	cognition
 item	cognition
@@ -5051,6 +5042,10 @@ lead	act
 lead	activity
 lead	event
 lead	leadership
+lead-metal	chemical-element
+lead-metal	metal
+lead-metal	part
+lead-metal	substance
 leader	agent
 leader	organism
 leader	person
@@ -5364,6 +5359,12 @@ magic-trick	performing
 magnet	artifact
 magnet	device
 magnet	physical-object
+magnetic-dip	angle
+magnetic-dip	attribute
+magnetic-dip	empty-space
+magnetic-dip	physical-object
+magnetic-dip	place
+magnetic-dip	shape
 magnetic-dipole-moment	natural-event
 magnetic-dipole-moment	phenomenon
 magnetic-dipole-moment	physical-phenomenon
@@ -5481,8 +5482,6 @@ marriage-proposal	information
 married-couple	group
 married-couple	kin
 marsh	physical-object
-martian-canal	body-of-water
-martian-canal	water-channel
 mask	artifact
 mask	clothing
 mask	commodity
@@ -5539,6 +5538,12 @@ measuring-stick	device
 measuring-stick	instrument
 measuring-stick	physical-object
 meat	substance
+mechanical-strain	change
+mechanical-strain	event
+mechanical-stress	natural-event
+mechanical-stress	phenomenon
+mechanical-stress	physical-phenomenon
+mechanical-stress	process
 mechanical-work	natural-event
 mechanical-work	phenomenon
 mechanical-work	physical-phenomenon
@@ -6231,7 +6236,8 @@ palm	organism
 palm	physical-object
 palm	plant
 palm	tree
-pan	group
+pan	artifact
+pan	physical-object
 panel	artifact
 panel	physical-object
 panic	attribute
@@ -6264,12 +6270,12 @@ parent	organism
 parent	person
 parent	physical-object
 parent	relative
-parity	cognition
-parity	concept
-parity	conservation-law
-parity	idea
-parity	natural-law
-parity	principle
+parity-conservation	cognition
+parity-conservation	concept
+parity-conservation	conservation-law
+parity-conservation	idea
+parity-conservation	natural-law
+parity-conservation	principle
 park	physical-object
 park	place
 park	region
@@ -6362,10 +6368,6 @@ payment	act
 payment	commerce
 payment	event
 payment	transaction
-pb	chemical-element
-pb	metal
-pb	part
-pb	substance
 peace	attribute
 peace	feeling
 peace	state
@@ -7247,6 +7249,8 @@ reaction	process
 reaction.phenomenon	consequence
 reaction.phenomenon	phenomenon
 reaction.phenomenon	process
+reactor-containment	artifact
+reactor-containment	physical-object
 readiness	attribute
 readiness	state
 realism	attribute
@@ -7274,7 +7278,6 @@ recession	attribute
 recession	condition
 recession	state
 recognition	information
-recombination	event
 recommendation	information
 recommendation	praise
 recompense	act
@@ -7363,7 +7366,7 @@ relativity	cognition
 relativity	scientific-theory
 relativity	theory
 relativity	thinking
-relaxation	process
+relaxation-process	process
 release	act
 release	event
 reliance	attribute
@@ -8038,8 +8041,8 @@ shark	fish
 shark	organism
 shark	physical-object
 shark	vertebrate
-shear	change
-shear	event
+shear-deformation	change
+shear-deformation	event
 sheep	animal
 sheep	mammal
 sheep	organism
@@ -8557,8 +8560,6 @@ storm	process
 stove	artifact
 stove	commodity
 stove	physical-object
-strain	change
-strain	event
 strand	artifact
 strand	decoration
 strand	physical-object
@@ -8591,10 +8592,6 @@ streetcar	container
 streetcar	physical-object
 streetcar	vehicle
 strength	attribute
-stress	natural-event
-stress	phenomenon
-stress	physical-phenomenon
-stress	process
 strike	act
 strike	event
 strike	protest
@@ -8883,11 +8880,11 @@ tennis	activity
 tennis	event
 tennis	game
 tennis	sport
+tensile-stress	mechanical-stress
 tensile-stress	natural-event
 tensile-stress	phenomenon
 tensile-stress	physical-phenomenon
 tensile-stress	process
-tensile-stress	stress
 tension	attribute
 tension	condition
 tension	state
@@ -9158,9 +9155,9 @@ trait	attribute
 transaction	act
 transaction	event
 transaction-record	information
-transient	event
-transient	oscillation
-transient	wave-motion
+transient-oscillation	event
+transient-oscillation	oscillation
+transient-oscillation	wave-motion
 transmission	artifact
 transmission	device
 transmission	gear
@@ -9590,6 +9587,7 @@ wave-front	surface
 wave-motion	event
 wave-node	physical-object
 wave-node	place
+wave-particle-duality	attribute
 wave-theory	cognition
 wave-theory	scientific-theory
 wave-theory	theory

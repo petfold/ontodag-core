@@ -43,7 +43,8 @@ search and a parents/children panel) — regenerable, not tracked:
     tools/     extractors, one per source, all producing tools/graph.py's Graph
     cache/     extracted graphs as pickles (not tracked; tools/build.sh fills it)
     tops/      the top of each source as an OntoDAG .od file — tracked, diffable
-    align/     the review files: overrides, names, drops, extra edges, Peter's and Claude's judgements
+    align/     the review files: overrides, names, drops, extra edges; review.tsv (Peter's rulings),
+               claude-ruling.tsv (Claude's rulings under standing permission), claude-review.tsv (Claude's per-edge readings)
     views/     each source's entailments over our vocabulary (built)
     build/     the consensus pack, its evidence table and review queue (built)
     docs/      UPPER.md, the design record

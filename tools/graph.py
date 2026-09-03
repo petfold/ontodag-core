@@ -187,6 +187,9 @@ def resolve_reviews(path, concepts_path):
     end by its WordNet offset when one is recorded (names may have been
     renamed since the line was written) and by name otherwise."""
     import csv as _csv
+    from pathlib import Path as _P
+    if not _P(path).exists():
+        return
     by_off = {}
     for r in _csv.DictReader(open(concepts_path), delimiter="\t"):
         if r["wordnet"]:

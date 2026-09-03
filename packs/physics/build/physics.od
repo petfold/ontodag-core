@@ -3,27 +3,28 @@ aberration physical-phenomenon
 absolute-magnitude attribute magnitude
 absorber material
 absorptivity attribute
-abundance ratio
 amplitude event
 angle linear-dimension
+anomaly angle
 antibaryon antiparticle hadron
 antilepton antiparticle
 antimeson hadron
 antimuon antilepton
 antineutrino antilepton
-antineutron nucleon
+antineutron antibaryon
 antinode place
 antiparticle elementary-particle physical-object
-antiproton nucleon
+antiproton antibaryon
 antiquark elementary-particle
 antitauon antilepton
 apoapsis place
 appearance '*'
 artifact '*'
-ascension event
 asterism natural-object
 astronomer physicist
+astronomical-rising event
 atomic-nucleus particle
+atomic-spectrum physical-phenomenon
 attractive-force physical-phenomenon
 attractor concept
 attribute '*'
@@ -37,22 +38,27 @@ bose-einstein-statistics physical-law
 bottom-quark quark
 capacitance electrical-phenomenon linear-dimension
 celestial-body '*'
+celestial-culmination place
 celestial-limb place
 center-of-buoyancy centre place
 centre '*'
 change '*'
+chaotic-system dynamical-system
 charge linear-dimension
+charge-recombination event
 charm-quark quark
-cohesion physical-phenomenon
 collection '*'
 collision event
-comet-nucleus centre
+comet-coma natural-object
+comet-nucleus natural-object
 concept '*'
-containment artifact
+conjunction event
+conservation-law physical-law
+copernican-system theory
+coriolis-effect physical-phenomenon
 coriolis-force physical-phenomenon
 corpuscular-theory scientific-theory
 cosmic-string elementary-particle
-culmination place
 current electrical-phenomenon linear-dimension
 'dalton'"'"'s-law' physical-law
 declination angle
@@ -60,10 +66,10 @@ delta-ray electron elementary-particle
 density '*'
 device '*'
 diffusion event process
-dip angle
 down-quark quark
-duality attribute
-egress event
+dynamical-system concept
+eclipse-egress event
+eclipse-ingress event
 electric-charge electrical-phenomenon
 electrical-phenomenon physical-phenomenon
 electricity physical-phenomenon
@@ -97,8 +103,10 @@ increase '*'
 inductance electrical-phenomenon linear-dimension
 inertia physical-phenomenon
 inertial-mass attribute
-ingress event
+inferior-conjunction conjunction
 instrument '*'
+intermolecular-cohesion physical-phenomenon
+isotopic-abundance ratio
 j-particle meson
 kaon meson
 'kepler'"'"'s-law' physical-law
@@ -108,11 +116,13 @@ lambda-particle hyperon
 law-of-gravitation physical-law
 law-of-thermodynamics physical-law
 lepton elementary-particle
+libration orbital-variation
 linear-dimension '*'
 luminosity '*'
 luminous-flux linear-dimension
 luminous-intensity linear-dimension
 magnet artifact device physical-object
+magnetic-dip angle
 magnetic-dipole-moment physical-phenomenon
 magnetic-flux linear-dimension
 magnetic-reluctance electrical-phenomenon
@@ -121,6 +131,8 @@ mass-energy attribute
 mass-energy-equivalence scientific-principle
 material '*'
 maxwell-boltzmann-distribution-law physical-law
+mechanical-strain change event
+mechanical-stress physical-phenomenon
 mechanical-work physical-phenomenon
 meniscus physical-object
 meson hadron
@@ -138,11 +150,15 @@ oort-cloud collection
 optical-density density
 orbital-node place
 orbital-plane attribute shape
+orbital-variation perturbation
 oscillation wave-motion
 outer-planet planet
+parity-conservation conservation-law
 particle '*'
 pencil-of-rays attribute shape
 periapsis place
+perturbation physical-phenomenon
+phase-space concept
 photoelectron electron elementary-particle
 physical-law concept
 physical-object '*'
@@ -160,6 +176,8 @@ principle-of-equivalence scientific-principle
 principle-of-relativity physical-law
 process '*'
 proton nucleon
+ptolemaic-system theory
+quantum concept
 quantum-jump change event
 quantum-theory scientific-theory
 quark elementary-particle
@@ -167,11 +185,11 @@ radiation-absorption process
 radioactivity linear-dimension
 ratio '*'
 reaction physical-phenomenon
-recombination event
+reactor-containment artifact
 red-shift physical-phenomenon
 relativistic-mass attribute
 relativity scientific-theory
-relaxation process
+relaxation-process process
 reluctivity attribute
 resistance linear-dimension
 rest-mass attribute
@@ -181,26 +199,25 @@ scientific-theory theory
 scientist '*'
 scintillation visible-light
 shape '*'
-shear change event
+shear-deformation change event
 soliton wave-motion
 spallation nuclear-reaction
 state '*'
 stellar-body celestial-body
-strain change event
 strange-particle elementary-particle
 strange-quark quark
-stress physical-phenomenon
 strong-interaction fundamental-interaction
+superior-conjunction conjunction
 supersymmetry scientific-theory
 surface '*'
 sympathetic-vibration oscillation
 tauon lepton
-tensile-stress stress
+tensile-stress mechanical-stress
 theory concept
 theory-of-gravitation scientific-theory
 top-quark quark
 traction physical-phenomenon
-transient oscillation
+transient-oscillation oscillation
 transmutation change event
 up-quark quark
 valence-electron electron elementary-particle
@@ -210,6 +227,7 @@ voltage electrical-phenomenon linear-dimension
 wave-front place surface
 wave-motion event
 wave-node place
+wave-particle-duality attribute
 wave-theory scientific-theory
 weak-interaction fundamental-interaction
 weakly-interacting-massive-particle elementary-particle

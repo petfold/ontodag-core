@@ -4,11 +4,10 @@ abdomen body-part
 ability disposition
 academy school
 accident event
-accommodation action
 account norm
 acknowledgment action
 acquisition action
-action event expression
+action event
 activity '*'
 actor artist professional
 adaptation action
@@ -16,12 +15,12 @@ address information
 admiration satisfaction
 admission action
 adult structure
-advice expression
+advice '*'
 affinity '*'
 affirmation statement
 afternoon '*'
 agony emotion
-aids expression illness
+aids illness
 air '*'
 aircraft device
 airline institution
@@ -29,7 +28,7 @@ airplane aircraft
 aisle cavity container device route
 alarm-clock clock
 alcohol '*'
-alliance expression structure
+alliance structure
 allotment norm
 allowance norm
 altar cavity container device surface
@@ -39,11 +38,12 @@ amendment event
 amphetamine medicine
 amphibian vertebrate
 analyst adult worker
-angel expression
+angel '*'
 anger frustration
 ankle body-part
 annex container device
 annotation statement
+annual-plant structure
 ant insect
 apartment home suite
 appearance event
@@ -62,14 +62,14 @@ architecture action thinking
 archive '*'
 arm limb
 armchair chair
-army-division expression structure
+army-division structure
 arrow projectile weapon
 article information
 artifact '*'
 artillery-shell projectile weapon
 artist worker
 assistant human
-association expression structure
+association structure
 astrocyte somatic-cell
 athlete human
 atmosphere '*'
@@ -86,12 +86,12 @@ bacon meat
 bacterium microorganism
 ballet action
 balloon device
-ballot expression
+ballot '*'
 banana plant-part
-band expression structure
+band structure
 bandage device
 bank '*'
-bankruptcy expression
+bankruptcy '*'
 banquet social-occasion
 bargain action
 bark event signal
@@ -120,13 +120,14 @@ beneficiary '*'
 betrothal action
 bible artifact copy image publication
 bicycle device
+biennial-plant structure
+biological-decomposition action ending
 bird vertebrate
 birth action
 blackmail action
 blade device
 blanket device surface
 blessing prayer
-blister part structure
 block '*'
 blood body-part red solution
 blood-cell somatic-cell
@@ -149,7 +150,7 @@ box container device
 boxing-ring artifact
 brain body-part
 brake device part product
-branch expression structure
+branch structure
 bread '*'
 breakfast meal
 breast body-part
@@ -164,7 +165,7 @@ bubble surface
 bucket container device
 buffet container device furniture
 bulb plant-part
-bureaucracy expression structure
+bureaucracy structure
 burn part structure
 bus container land-vehicle
 bus-ticket ticket
@@ -175,7 +176,6 @@ cabin home
 cable cord device
 cage container device
 call action
-callus structure
 calyx plant-part
 camera device
 campaign action
@@ -209,7 +209,7 @@ champagne product solution wine
 championship competition
 channel body-of-water
 chapter information
-charity expression structure
+charity structure
 chart image
 charter artifact image
 cheek body-part
@@ -221,10 +221,10 @@ chin body-part
 chip artifact
 chocolate artifact
 chromosome '*'
-church expression structure
+church structure
 cigarette device
 citizen human
-city expression structure
+city structure
 civilian human
 class meeting
 classroom cavity container device part
@@ -246,11 +246,11 @@ college institution
 colon body-part container line route
 color '*'
 column article publication
-coma expression illness
+coma illness
 comedy information
 comic-strip information
 commitment situation
-committee expression structure
+committee structure
 commodity '*'
 common-sense '*'
 communication '*'
@@ -263,7 +263,7 @@ complication '*'
 component device product
 composer musician
 compromise action norm
-computer device expression product structure
+computer device product structure
 computer-memory information
 computer-mouse device product
 computer-virus information
@@ -272,7 +272,6 @@ concern emotion
 concession compromise
 concrete artifact
 conductor musician professional
-cone '*'
 conference meeting
 confession action
 confidence emotion
@@ -289,25 +288,24 @@ contempt emotion
 context information
 continent '*'
 contract norm
-control attribute
 conversation dialogue
 conversion event
-copy expression
+copy '*'
 copyright norm
 cord artifact line route
 corolla plant-part
 corruption action
 costume clothing
 cotton '*'
-council expression structure
-country expression structure
+council structure
+country structure
 countryside '*'
 'coup-d'"'"'etat' action
-couple expression pair
+couple pair
 courage confidence
 course '*'
 course-of-study teaching
-court expression structure
+court structure
 courtesy action
 courtship event
 craft action
@@ -323,8 +321,8 @@ critic human
 critique information
 crop structure
 cross artifact
-crossing action translation
-crowd expression
+crossing action
+crowd '*'
 crown device
 crutch device
 cube '*'
@@ -348,20 +346,19 @@ day-of-the-month '*'
 daylight sunlight
 death action illness
 decade time-period
-decomposition ending
 decrease event
 decree statement
 deed artifact image
 deer mammal
 deficit event
 definition information
-deity expression
+deity '*'
 demo information
 dendrite line part route structure
 denial statement
 density '*'
 dentist adult professional
-departure action translation
+departure action
 depression cavity
 desire emotion
 desk container device furniture
@@ -397,11 +394,12 @@ distance '*'
 district state
 divorce action
 dna '*'
+dna-replication action chemical-reaction production
 doctor adult professional
 dog mammal
 doll device
 dome artifact
-dominion expression structure
+dominion structure
 door part
 doorbell device
 dormitory home
@@ -441,7 +439,7 @@ elite human
 embryo structure
 emergency situation
 emotion '*'
-empire expression structure
+empire structure
 ending event
 endurance '*'
 enemy '*'
@@ -474,8 +472,7 @@ exit cavity
 expectation context
 expert human
 explaining action
-explosion decomposition
-expression '*'
+explosion ending
 extraterrestrial-being structure
 extreme '*'
 eye body-part detector
@@ -483,10 +480,10 @@ eyebrow body-part device
 eyelid body-part device
 face body-part
 failing action
-fairy expression structure
-family expression structure
+fairy structure
+family structure
 fare '*'
-farm expression structure
+farm structure
 farmer worker
 fashion '*'
 fault '*'
@@ -506,15 +503,15 @@ fight action conflict
 file-cabinet box furniture
 film surface
 filter device
-financial-document expression
+financial-document '*'
 finger body-part
 fingernail body-part
 finish artifact
-fire decomposition
+fire ending
 fisherman worker
 fist hand
 fixture '*'
-flag artifact expression surface
+flag artifact surface
 flame '*'
 flash lamp
 flashlight hardware lamp
@@ -530,9 +527,9 @@ forest countryside environment obstacle
 forestry action
 fork hardware tool
 form information
-fossil expression
+fossil '*'
 fox mammal
-franchise expression structure
+franchise structure
 fraud action
 freckle part structure
 freedom emotion
@@ -558,9 +555,10 @@ garlic '*'
 gasoline '*'
 gate '*'
 gem ground mineral
+gene-expression event
 genius human
 gesture image signal situation
-ghost expression
+ghost '*'
 giant human
 glacier environment ice
 globe artifact image
@@ -582,7 +580,7 @@ grief sorrow
 grimace action
 grinder device
 grip action
-grocery-store expression structure
+grocery-store structure
 ground '*'
 guard athlete worker
 guerrilla warrior
@@ -600,7 +598,7 @@ haircut action
 hall cavity container device
 hallway cavity container device route
 ham artifact meat
-hand body-part expression
+hand body-part
 handbag container device
 hardware '*'
 hat clothing
@@ -639,7 +637,7 @@ hostel '*'
 hostility emotion
 house home
 housing action
-human expression mammal
+human mammal
 hunter human
 hypothesis context
 ice '*'
@@ -648,16 +646,16 @@ idea information
 ideal information
 illness event
 illustration image light signal
-image expression
+image '*'
 immigrant human
 imposter human
 incentive action
-information expression
+information '*'
 insect invertebrate
 insider '*'
 inspiration emotion
 instinct '*'
-institution expression structure
+institution structure
 insurgent human
 intellect human
 intelligence '*'
@@ -667,7 +665,6 @@ intervention action
 introduction action
 invertebrate structure
 isolation event
-isomorphism function
 ivory '*'
 jacket coat
 jail-cell cavity container device part
@@ -675,16 +672,16 @@ jam artifact
 jar container device
 jaw body-part
 jelly jam
-jersey expression shirt
+jersey shirt
 jet '*'
 jockey athlete worker
-joke expression
+joke '*'
 journal information publication
 joy artifact
 judge adult professional
 judgment norm
 juice '*'
-jury expression structure
+jury structure
 justification information
 kettle pan
 kidney body-part
@@ -769,14 +766,14 @@ mayor executive politician
 maze puzzle
 meal '*'
 meat '*'
-medicine expression
+medicine '*'
 meeting social-occasion
 megakaryocyte somatic-cell
 meiosis action decrease ending production
 member '*'
 meme information
-memo expression
-memorial artifact expression
+memo '*'
+memorial artifact
 memory context
 menu information
 message '*'
@@ -793,7 +790,7 @@ mine-shaft tunnel
 miner worker
 mineral '*'
 minister adult professional
-ministry expression structure
+ministry structure
 minority '*'
 miracle situation
 mirror device
@@ -827,7 +824,7 @@ mountain-range '*'
 mouse mammal
 mouth body-part
 mug container device
-museum expression structure
+museum structure
 mushroom structure
 music event signal
 musical-composition information
@@ -841,7 +838,7 @@ nationality '*'
 natural-language language
 natural-law norm
 nausea illness
-navy expression structure
+navy structure
 neck body-part
 necktie clothing
 needle shaft
@@ -886,7 +883,7 @@ operating-system information
 operation surgery
 opportunity situation
 option contract
-orchestra expression structure
+orchestra structure
 orgy social-occasion
 osmosis event
 osteoblast bone-cell part
@@ -899,7 +896,7 @@ overview information
 ovule plant-part
 ovum gamete
 owl bird
-owner expression
+owner '*'
 pace '*'
 pack '*'
 paint artifact
@@ -914,20 +911,20 @@ paragraph information
 pardon action
 park artifact
 parking transport
-parliament expression structure
+parliament structure
 part '*'
 particle '*'
 partner peer
-partnership expression structure
+partnership structure
 party '*'
 passion good-will satisfaction
 pasture countryside
 patch device piece surface
 patent norm
 path route
-patience relaxation
+patience emotion
 patient human
-pattern expression
+pattern '*'
 payment transaction
 peanut seed
 peasant worker
@@ -935,6 +932,7 @@ pedestrian human
 peer human
 pencil hardware tool
 pensioner human
+perennial-plant structure
 perfume artifact
 permission norm
 personal-identification-number information
@@ -944,7 +942,7 @@ philosopher adult intellect professional
 philosophy information
 phone device
 photographer adult artist professional
-photographic-film device expression
+photographic-film device
 piano furniture musical-instrument
 piece part
 pier artifact line route
@@ -953,7 +951,6 @@ pigeon bird
 pill artifact
 pillow device
 pit depression obstacle
-pitcher container device
 pity emotion
 plan norm
 planet '*'
@@ -965,7 +962,7 @@ playing-field artifact
 playpen container device
 pleasure emotion
 plot plan
-pneumonia expression illness
+pneumonia illness
 pocket container device part surface
 poem information
 poetry information
@@ -973,14 +970,14 @@ point ground
 polar-body structure
 polish human
 political-campaign campaign politics
-political-party expression structure
+political-party structure
 politician adult worker
 politics action
 pony horse
 pop-music music
 porter worker
 portrait image light signal
-postage device expression
+postage device
 postcard card
 potential '*'
 powder '*'
@@ -1020,7 +1017,7 @@ proposition information
 protein '*'
 psychologist scientist
 public-square '*'
-publication expression
+publication '*'
 publisher adult professional
 pudding artifact
 pulse '*'
@@ -1038,8 +1035,8 @@ radiation event
 radio device product structure
 radio-receiver device part product
 railroad-track '*'
-rain translation weather
-rainbow expression light
+rain weather
+rainbow light
 rake hardware tool
 rally social-occasion
 ranch '*'
@@ -1059,7 +1056,6 @@ refugee-camp '*'
 registration action
 rehabilitation work
 reign action
-relaxation emotion
 religion information
 relish artifact
 reluctance emotion
@@ -1067,9 +1063,9 @@ remark statement
 remedy action thinking
 renovation action
 reptile vertebrate
-republic expression structure
+republic structure
 reputation context
-request expression
+request '*'
 reserve countryside environment
 reservoir body-of-water
 resident doctor
@@ -1131,7 +1127,6 @@ secretary adult worker
 security-system device product
 sediment soil
 seed plant-part
-segregation action
 seminar social-occasion
 sentence information
 sermon action
@@ -1151,15 +1146,15 @@ shield device
 ship watercraft
 shirt clothing
 shoe clothing
-shop expression structure
+shop structure
 shopping action
 shower action
 side surface
 sidewalk concrete route
 sight device product
-sign expression
+sign '*'
 sign-of-the-zodiac '*'
-signal expression
+signal '*'
 signature artifact image
 silk device surface
 singer musician professional
@@ -1175,13 +1170,13 @@ slope '*'
 smoke '*'
 snake line reptile route
 soap artifact
-social-club expression structure
+social-club structure
 social-occasion action
 social-science field-of-study
 sock clothing
 sodium metal
 sofa device furniture
-software-agent expression
+software-agent '*'
 soil ground
 soldier warrior
 solution '*'
@@ -1196,22 +1191,22 @@ spermatid gamete
 spider arachnid
 spinach vegetable
 spinal-column body-part tissue
-spirit expression
+spirit '*'
 split event
 spokesperson worker
 spoon container hardware tool
 sport information
 spray artifact
-spreadsheet expression
-squad expression structure
+spreadsheet '*'
+squad structure
 stadium container device
-staff expression structure
+staff structure
 stairway artifact route
 stake shaft
 stalk plant-part
-state expression structure
+state structure
 state-of-matter '*'
-statement expression
+statement '*'
 statue sculpture
 steak artifact meat
 steam '*'
@@ -1230,20 +1225,19 @@ stream information
 street roadway
 streetcar device
 strip lumber
-stroke expression illness
+stroke illness
 structure system
 studio suite
 study cavity container device
 subspecies taxonomic-group
-suburb expression
+suburb '*'
 success action
-succession '*'
 sugar '*'
 suicide action ending illness
 suite cavity container device
 sulfur mineral
 summary information
-summer-camp expression structure
+summer-camp structure
 summit '*'
 sun '*'
 sunday '*'
@@ -1262,7 +1256,7 @@ sweater clothing
 swing device
 sword device product weapon
 sympathy emotion
-symptom expression
+symptom '*'
 syndrome disease
 system '*'
 tan human
@@ -1275,23 +1269,23 @@ taste cognition
 tax-return artifact image
 taxonomic-group '*'
 taxonomy information system
-taxpayer expression
+taxpayer '*'
 tea artifact medicine
 teaching action
-team expression structure
+team structure
 temper event
 temple container device
 tenant '*'
 tension '*'
 tent container device
-territory expression structure
+territory structure
 terrorist criminal
 textbook information publication
 texture '*'
 thigh body-part
 thinking event
 throat body-part
-throne chair expression
+throne chair
 thumb finger
 ticket device image
 tide artifact
@@ -1317,16 +1311,14 @@ tower artifact
 tract information publication
 traction '*'
 trader adult professional
-traffic action translation
+traffic action
 tragedy information
 trail artifact route
 train-ticket ticket
 trainer worker
 transaction action
-transcription action
-translation event
 transmission device part product
-transport action translation
+transport action
 transportation institution
 trap device
 tray container device
@@ -1339,12 +1331,12 @@ tree obstacle structure
 trench '*'
 trial action conflict
 triangle surface
-tribunal expression structure
-trophy device expression
+tribunal structure
+trophy device
 trouble action
 truck container land-vehicle
-trust expression structure
-trustee expression
+trust structure
+trustee '*'
 tub container device
 tumor tissue
 tune musical-composition
@@ -1380,7 +1372,7 @@ violation situation
 virgin structure
 virtue norm
 virus microorganism
-visit action translation
+visit action
 visitor human
 void information
 volcano ground

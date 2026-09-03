@@ -18,7 +18,6 @@ accomplishment act
 account statement
 accountant person
 accretion increase
-accuracy attribute
 accusation assertion
 ace expert
 acid compound
@@ -88,6 +87,7 @@ alarm-clock clock
 album book-copy
 alcohol drink drug
 algebra mathematics
+algebraic-transposition procedure
 algorithm rule.cognition
 alimony outgo
 alliance '*'
@@ -128,6 +128,7 @@ answer act
 ant insect
 anteroom room
 anticipation feeling
+antiderivative mathematical-expression
 anxiety condition
 apartment housing
 apathy feeling
@@ -583,7 +584,7 @@ clique group
 clock instrument
 clock-time cognition
 clod collection
-closed-interval interval
+closed-interval mathematical-interval
 closure cognition
 clothing commodity
 cloud natural-event
@@ -728,7 +729,6 @@ contribution act
 control-stick bar
 convalescence process
 conventionality attribute
-convergence mathematical-series
 conversation information
 conversion change
 convex-polygon polygon
@@ -831,9 +831,10 @@ currency standard
 current natural-event
 curtain artifact
 curve shape
+curve-osculation connectedness
 curved-shape shape
 curvilinear-correlation statistical-correlation
-curvilinear-regression regression
+curvilinear-regression statistical-regression
 cushion artifact
 custody activity
 custom cognition
@@ -926,10 +927,8 @@ detective policeman
 detector device
 detention state
 development district
-deviation statistic
 device artifact
 diagnosis act
-diagonal mathematical-set
 diagonal-line shape
 diagram artifact
 dialect information
@@ -984,7 +983,7 @@ distortion mistake
 distributor company
 district region
 disturbance state
-divergence mathematical-series
+divergent-series mathematical-series
 diverseness attribute
 diversion act
 dividend outgo
@@ -998,7 +997,6 @@ dodecagon polygon
 dog mammal
 doll plaything
 dolphin whale
-domain mathematical-set
 dome roof
 dominance condition
 domination dominance
@@ -1040,7 +1038,6 @@ drop shape
 drug agent substance
 drug-user person
 drum musical-instrument
-duality attribute
 duck bird
 due-east '*'
 due-west '*'
@@ -1125,6 +1122,7 @@ envelope container
 environment region
 episode programme
 equation mathematical-statement
+equation-root mathematical-set
 equidistribution statistical-distribution
 equilateral-triangle regular-polygon triangle
 equilibrium situation
@@ -1152,7 +1150,6 @@ exam communication
 examination work
 examiner investigator
 example cognition
-exceedance probability
 exception example
 excerpt text-passage
 excess magnitude
@@ -1180,11 +1177,10 @@ exploration journey
 explosion event
 exponential function
 exponential-equation equation
-exponential-expression expression
+exponential-expression mathematical-expression
 exponential-series mathematical-series
 exponentiation mathematical-operation
 exposure weakness
-expression mathematical-statement
 expressway road
 extension phone
 extension.time pause
@@ -1357,6 +1353,7 @@ frustration disappointment
 fuel substance
 fun activity
 function mathematical-relation
+function-domain mathematical-set
 functioning process
 fund standard
 fundamental-law legal-document
@@ -1398,11 +1395,13 @@ geometric-base shape
 geometric-construction mathematical-operation
 geometric-intersection mathematical-set
 geometric-mean mean
+geometric-plane shape
 geometric-progression group
 geometric-ray shape
 geometric-reflection transformation
 geometric-rotation transformation
 geometric-series mathematical-series
+geometric-superposition locating
 geometry mathematics
 gesture motion
 ghost agent
@@ -1599,7 +1598,7 @@ identicalness attribute
 identification indication
 identity personality
 identity-card identification
-identity-element operator
+identity-element mathematical-operator
 ignorance cognition
 illness condition
 illusion idea
@@ -1682,7 +1681,6 @@ interior-designer specialist
 internet artifact
 interpolation calculation
 intersection junction
-interval mathematical-set
 intervention argumentation
 interview act
 intestine organ
@@ -1857,8 +1855,8 @@ line-of-descent kinship
 line-of-text text
 linear-algebra algebra
 linear-equation equation
-linear-operator operator
-linear-regression regression
+linear-operator mathematical-operator
+linear-regression statistical-regression
 lineation place
 linen commodity
 linguistic-context part
@@ -1972,21 +1970,26 @@ match contest
 matchstick lighter
 material part substance
 mathematical-analysis calculus
+mathematical-expression mathematical-statement
 mathematical-field mathematical-set
 mathematical-group mathematical-set
 mathematical-integration mathematical-operation
+mathematical-interval mathematical-set
 mathematical-operation procedure
+mathematical-operator function
 mathematical-relation '*'
 mathematical-series polynomial
 mathematical-set '*'
 mathematical-space attribute mathematical-set
 mathematical-statement information
+mathematical-subgroup mathematical-group
 mathematician scientist
 mathematics science
 matrimony status
 matrix group
 matrix-addition matrix-operation
 matrix-algebra algebra
+matrix-diagonal mathematical-set
 matrix-inversion matrix-operation
 matrix-multiplication matrix-operation
 matrix-operation mathematical-operation
@@ -1998,7 +2001,7 @@ mayor authorities leader
 maze artifact
 meal food
 mean average
-mean-deviation deviation
+mean-deviation statistical-deviation
 meaning information
 means artifact
 measure act
@@ -2064,7 +2067,6 @@ misgiving incertitude
 mist fog
 mistake act
 mix event
-mode average
 model artifact
 module component
 mold fungus
@@ -2072,7 +2074,6 @@ mole mammal
 mole.attribute appearance
 molecule '*'
 mollusc invertebrate
-moment statistic
 momentum attribute
 monarchy group
 monastery house
@@ -2194,6 +2195,7 @@ nuclear-reactor apparatus
 null-space mathematical-space
 number magnitude
 numeral symbol
+numerical-accuracy attribute
 numerical-analysis mathematics
 nun person
 nurse professional
@@ -2225,11 +2227,10 @@ omission mistake
 one-fourth fraction
 one-half fraction
 onion bulb
-open-interval interval
+open-interval mathematical-interval
 opera music
 operating-system software
 operation procedure
-operator function
 opinion information
 opinion-poll thinking
 opportunity state
@@ -2250,11 +2251,10 @@ organization group
 orgy celebration
 orientation '*'
 origin attribute
-osculation connectedness
 outfit clothing
 outflow physical-object
 outgo possession
-outlier deviation
+outlier statistical-deviation
 outline summary
 output '*'
 outside surface
@@ -2407,7 +2407,6 @@ place physical-object
 placement '*'
 plaintiff person
 plan idea
-plane shape
 plane-geometry geometry
 plane-section magnitude
 plane-ticket ticket
@@ -2511,7 +2510,6 @@ price worth
 price-quotation information
 pride satisfaction
 primary election
-primitive expression
 prince leader
 princess leader
 principle natural-law
@@ -2550,6 +2548,7 @@ prohibition decree
 projectile weapon
 projection thinking
 projection.communication information
+projective-duality attribute
 projective-geometry geometry
 promise act information
 promotion act
@@ -2594,7 +2593,6 @@ pursuit cognition
 push-button electric-switch
 puzzle equipment
 pyramid shape
-quadrate square
 quadratic polynomial
 quadratic-equation equation
 quadratics algebra
@@ -2696,7 +2694,6 @@ refusal act
 region place
 register indication
 registration act
-regression statistical-method
 regression-analysis multivariate-analysis
 regression-coefficient parametric-statistic
 regression-equation equation
@@ -2710,7 +2707,7 @@ reign historic-period
 rejection act
 relationship state
 relative person
-relaxation mathematical-operation
+relaxation-method mathematical-operation
 release act
 relevance '*'
 reliance state
@@ -2809,7 +2806,6 @@ role-model leader
 roll cylinder
 roof artifact
 room structure
-root mathematical-set
 rootage place
 rope artifact
 rose shrub
@@ -2849,7 +2845,6 @@ salt food
 salvation safety
 sample example
 sample-distribution statistical-distribution
-sampling act
 sanctuary region
 sand soil
 sandal shoe
@@ -2905,7 +2900,7 @@ seating-place region
 sec '*'
 secant trigonometric-function
 second rank
-second-moment moment
+second-moment statistical-moment
 secrecy trait
 secret information
 secret-plan plan
@@ -2931,12 +2926,13 @@ sense cognition
 sense-of-touch sense
 sensitivity feeling
 sentence language sequence
-sentential-function expression
+sentential-function mathematical-expression
 sentiment feeling
 separation act
 sequence group
 serial programme
 series publication
+series-convergence mathematical-series
 series-expansion function
 sermon formal-address
 servant worker
@@ -3127,9 +3123,15 @@ statement document
 station place
 statistic cognition
 statistical-correlation statistics
+statistical-deviation statistic
 statistical-distribution cognition
 statistical-method method
+statistical-mode average
+statistical-moment statistic
 statistical-population collection
+statistical-regression statistical-method
+statistical-sampling act
+statistical-weight '*'
 statistician expert
 statistics mathematics
 statue sculpture
@@ -3172,8 +3174,7 @@ studio workplace
 study room
 stunt-man peer
 style information
-sub-interval interval
-subgroup mathematical-group
+sub-interval mathematical-interval
 subject '*'
 submission information
 subpopulation statistical-population
@@ -3204,7 +3205,6 @@ sunlight natural-event
 sunrise event
 superintendent person
 supermarket grocery-store
-superposition locating
 supervisor leader
 supply '*'
 support assist
@@ -3371,7 +3371,6 @@ translation transformation
 transmission gear
 transport act
 transportation commercial-enterprise
-transposition procedure
 trap device
 trapezium quadrilateral
 trapezoid quadrilateral
@@ -3443,7 +3442,7 @@ valley natural-depression
 value quantity
 van truck
 variable quantity
-variance moment
+variance statistical-moment
 variant group
 variation change
 vector variable
@@ -3526,12 +3525,11 @@ web system
 web-page data-file
 web-site computer
 wedding ceremony
-wedge triangle
+wedge-shape triangle
 weed plant
 week time-period
 weekend time-period
 weighing-machine instrument
-weight '*'
 welcome greeting
 well artifact
 wellbeing destiny

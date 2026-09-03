@@ -424,7 +424,7 @@ subgraph	subset	reject	same		08001209
 transitive-closure	transitive-relation	accept			
 undirected-graph	mathematical-graph	accept			
 # --- mathematics wikidata batch 8 (graph theory 2): wikidata  ---
-acyclic-graph	planar-graph	reject	true of forests but not how anyone files an acyclic graph		
+forest-graph	planar-graph	reject	true of forests but not how anyone files an acyclic graph		
 bipartite-graph	undirected-graph	accept			
 connected-component	subgraph	accept			
 connected-graph	undirected-graph	accept			
@@ -448,11 +448,11 @@ strongly-connected-component	connected-component	accept
 tree-graph	bipartite-graph	accept			
 tree-graph	connected-graph	accept			
 # --- mathematics wikidata batch 10 (graph theory 4): wikidata  ---
-acyclic-graph	multigraph	reject	inverted generalisation		
+forest-graph	multigraph	reject	inverted generalisation		
 flow-network	weighted-graph	accept			
 graph-clique	complete-graph	accept			
 minimum-spanning-tree	weighted-graph	accept			
-tree-graph	acyclic-graph	accept			
+tree-graph	forest-graph	accept			
 # --- mathematics wikidata batch 11 (logic 1): wikidata  ---
 boolean-function	function	accept			13783816
 completeness	function	reject	an attribute of a logical system is not a function	04785414	13783816
@@ -573,3 +573,22 @@ underside	geometric-shape	reject	label drift	08511241
 undirected-graph	graph	reject	same		07000195
 vector-space	module	reject	same		03778600
 vertex	geometric-shape	reject	the peak	08677801	
+acceptance-sampling	sample-distribution	reject	a procedure is not a distribution [second pass 2026-09-03]	00806621	06026635
+bayes'-theorem	idea	reject	a theorem [second pass 2026-09-03]	05918379	05833840
+bernoulli's-law	concept	reject	a theorem, not merely a concept [second pass 2026-09-03]	05875148	05835747
+brute-force-attack	cryptanalysis	reject	an attack is a method, cryptanalysis a field [second pass 2026-09-03]		
+convergence	mathematical-series	reject	convergence is a property of a series [second pass 2026-09-03]	05863106	05862721
+covariance	variance	reject	a covariance is not a variance [second pass 2026-09-03]	06025287	06024936
+cryptographic-key	concept	reject	a key is information [second pass 2026-09-03]		05835747
+cryptographic-protocol	concept	reject	a protocol is a procedure [second pass 2026-09-03]		05835747
+discrete-logarithm	decision-problem	reject	a computational problem, not a yes/no one [second pass 2026-09-03]		
+geometric-intersection	mathematical-operation	reject	a set of points, not an operation [second pass 2026-09-03]	13873213	00869583
+identity-element	operator	reject	an element, not an operator [second pass 2026-09-03]	13786748	13786413
+information-theory	concept	reject	a branch of mathematics [second pass 2026-09-03]	06108643	05835747
+initialization-vector	concept	reject	a bit string is information [second pass 2026-09-03]		05835747
+nonce	concept	reject	a nonce is information [second pass 2026-09-03]		05835747
+mathematical-analysis	calculus	reject	inverted: calculus is part of analysis [second pass 2026-09-03]	06014043	06013741
+multicollinearity	multiple-regression	reject	a condition of the data, not a regression [second pass 2026-09-03]	06027843	06027613
+np-completeness	complexity-class	reject	a property of problems; NP-complete is the class [second pass 2026-09-03]		
+secp256k1	elliptic-curve-cryptography	reject	a curve is not a branch of cryptography [second pass 2026-09-03]		
+standard-deviation	variance	reject	the square root of a variance is not a variance [second pass 2026-09-03]	06025172	06024936

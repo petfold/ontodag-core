@@ -8,21 +8,11 @@ sub	sup	status	for	against
 24-karat-gold	phenomenon	single	sumo	
 24-karat-gold	substance	accepted	sumo wordnet	
 24-karat-gold	universe	single	sumo	
-abundance	number	single	sumo	
-abundance	quantity	single	sumo	
-abundance	ratio	accepted	claude wordnet	
-abundance	situation	single	opencyc	
-acceptor	chemical	single	wordnet	
-acceptor	compound	accepted	sumo wordnet	
-acceptor	material	accepted	sumo wordnet	
-acceptor	part	single	wordnet	
-acceptor	phenomenon	single	sumo	
-acceptor	substance	accepted	sumo wordnet	
-acceptor	universe	single	sumo	
-acid-value	attribute	accepted	peter	
+acid-value	attribute	accepted	claude-ruling	
 acid-value	quantity	single	sumo	
 actinide-series	chemical-element	single	sumo	
-actinide-series	chemical-group	accepted	peter	
+actinide-series	chemical-group	accepted	claude-ruling	
+actinide-series	collection	accepted	claude-ruling	
 actinide-series	group	dissented	wordnet	
 actinide-series	material	single	sumo	
 actinide-series	phenomenon	single	sumo	
@@ -173,7 +163,7 @@ atomic-mass	quantity	single	sumo
 atomic-migration	event	accepted	sumo wordnet	
 atomic-migration	phenomenon	single	sumo	
 atomism	cognition	single	wordnet	
-atomism	concept	accepted	peter	
+atomism	concept	accepted	claude-ruling	
 atomism	signified	single	sumo	
 atomism	thinking	dissented	wordnet	
 azote	nitrogen	single	claude	
@@ -324,13 +314,6 @@ buckminsterfullerene	part	single	wordnet
 buckminsterfullerene	phenomenon	single	sumo	
 buckminsterfullerene	substance	accepted	sumo wordnet	
 buckminsterfullerene	universe	single	sumo	
-buffer	chemical	single	wordnet	
-buffer	compound	accepted	sumo wordnet	
-buffer	material	accepted	sumo wordnet	
-buffer	part	single	wordnet	
-buffer	phenomenon	single	sumo	
-buffer	substance	accepted	sumo wordnet	
-buffer	universe	single	sumo	
 butter	mixture	single	opencyc	
 cadmium	chemical-element	accepted	sumo wordnet	
 cadmium	material	single	sumo	
@@ -462,27 +445,69 @@ chemical-association	process	single	wordnet
 chemical-bond	attachment	single	opencyc	
 chemical-bond	attractive-force	single	wordnet	
 chemical-bond	event	single	sumo	
-chemical-bond	natural-event	accepted	peter wordnet	
+chemical-bond	natural-event	accepted	claude-ruling wordnet	
 chemical-bond	phenomenon	accepted	sumo wordnet	
 chemical-bond	process	single	wordnet	
 chemical-bond	situation	single	opencyc	
+chemical-buffer	chemical	single	wordnet	
+chemical-buffer	compound	accepted	sumo wordnet	
+chemical-buffer	material	accepted	sumo wordnet	
+chemical-buffer	part	single	wordnet	
+chemical-buffer	phenomenon	single	sumo	
+chemical-buffer	substance	accepted	sumo wordnet	
+chemical-buffer	universe	single	sumo	
+chemical-chain	chemical-group	accepted	claude-ruling	
 chemical-chain	compound	single	sumo	
-chemical-chain	concept	accepted	peter	
+chemical-chain	concept	accepted	claude-ruling	
 chemical-chain	material	single	sumo	
 chemical-chain	molecule	single	sumo	
 chemical-chain	phenomenon	single	sumo	
 chemical-chain	substance	single	sumo	
 chemical-chain	universe	single	sumo	
+chemical-decomposition	chemical-phenomenon	single	sumo	
+chemical-decomposition	chemical-process	accepted	opencyc sumo wordnet	
+chemical-decomposition	chemical-reaction	accepted	claude opencyc wikidata wordnet	
+chemical-decomposition	ending	single	opencyc	
+chemical-decomposition	event	accepted	opencyc sumo	
+chemical-decomposition	phenomenon	single	sumo	
+chemical-decomposition	process	single	wordnet	
+chemical-decomposition	situation	single	opencyc	
+chemical-dimorphism	attribute	accepted	claude-ruling sumo	
+chemical-dimorphism	chemical-phenomenon	single	wordnet	
+chemical-dimorphism	chemical-polymorphism	single	wordnet	
+chemical-dimorphism	natural-event	single	wordnet	
+chemical-dimorphism	phenomenon	single	wordnet	
+chemical-dimorphism	process	single	wordnet	
+chemical-dimorphism	property	single	sumo	
+chemical-dimorphism	shape	single	sumo	
+chemical-dissociation	chemical-phenomenon	single	sumo	
+chemical-dissociation	chemical-process	accepted	sumo wordnet	
+chemical-dissociation	event	single	sumo	
+chemical-dissociation	phenomenon	single	sumo	
+chemical-dissociation	process	single	wordnet	
 chemical-group	chemical-element	single	sumo	
-chemical-group	collection	accepted	peter	
 chemical-group	material	single	sumo	
 chemical-group	phenomenon	single	sumo	
+chemical-group	physical-object	accepted	claude-ruling	
 chemical-group	substance	single	sumo	
 chemical-group	universe	single	sumo	
+chemical-indicator	material	accepted	sumo wordnet	
+chemical-indicator	part	single	wordnet	
+chemical-indicator	phenomenon	single	sumo	
+chemical-indicator	sign	dissented	wikidata	
+chemical-indicator	substance	accepted	sumo wordnet	
+chemical-indicator	universe	single	sumo	
 chemical-phenomenon	event	single	sumo	
 chemical-phenomenon	natural-event	accepted	claude wordnet	
 chemical-phenomenon	phenomenon	accepted	sumo wordnet	
 chemical-phenomenon	process	single	wordnet	
+chemical-polymorphism	attribute	single	sumo	
+chemical-polymorphism	chemical-phenomenon	accepted	claude wordnet	
+chemical-polymorphism	natural-event	single	wordnet	
+chemical-polymorphism	phenomenon	single	wordnet	
+chemical-polymorphism	process	single	wordnet	
+chemical-polymorphism	property	single	sumo	
+chemical-polymorphism	shape	single	sumo	
 chemical-process	event	accepted	opencyc sumo	
 chemical-process	phenomenon	single	sumo	
 chemical-process	process	accepted	claude wordnet	
@@ -511,15 +536,6 @@ chlorine	part	single	wordnet
 chlorine	phenomenon	single	sumo	
 chlorine	substance	accepted	sumo wordnet	
 chlorine	universe	single	sumo	
-chrome	artifact	single	opencyc	
-chrome	chemical-element	accepted	sumo wordnet	
-chrome	chromium	accepted	sumo wordnet	
-chrome	material	single	sumo	
-chrome	metal	accepted	opencyc wordnet	
-chrome	part	single	wordnet	
-chrome	phenomenon	single	sumo	
-chrome	substance	accepted	sumo wordnet	
-chrome	universe	single	sumo	
 chromium	chemical-element	accepted	sumo wordnet	
 chromium	material	single	sumo	
 chromium	metal	accepted	opencyc wordnet	
@@ -538,7 +554,7 @@ cinder-pig	pig-iron	accepted	claude wordnet
 cinder-pig	substance	accepted	sumo wordnet	
 cinder-pig	universe	single	sumo	
 clay	mixture	single	sumo	
-closed-chain	chemical-chain	single	wordnet	
+closed-chain	chemical-chain	accepted	claude wordnet	
 closed-chain	compound	single	sumo	
 closed-chain	material	single	sumo	
 closed-chain	molecule	single	sumo	
@@ -593,14 +609,6 @@ darmstadtium	substance	accepted	sumo wordnet
 darmstadtium	universe	single	sumo	
 decay	chemical-phenomenon	single	sumo	
 decay	chemical-process	single	sumo	
-decomposition	chemical-phenomenon	single	sumo	
-decomposition	chemical-process	accepted	sumo wordnet	
-decomposition	chemical-reaction	accepted	claude wordnet	
-decomposition	ending	single	opencyc	
-decomposition	event	accepted	opencyc sumo	
-decomposition	phenomenon	single	sumo	
-decomposition	process	single	wordnet	
-decomposition	situation	single	opencyc	
 delta-iron	chemical-element	accepted	sumo wordnet	
 delta-iron	iron	accepted	claude wordnet	
 delta-iron	material	single	sumo	
@@ -609,25 +617,17 @@ delta-iron	part	single	wordnet
 delta-iron	phenomenon	single	sumo	
 delta-iron	substance	accepted	sumo wordnet	
 delta-iron	universe	single	sumo	
-dimorphism	attribute	accepted	peter sumo	
-dimorphism	chemical-phenomenon	single	wordnet	
-dimorphism	natural-event	single	wordnet	
-dimorphism	phenomenon	single	wordnet	
-dimorphism	polymorphism	single	wordnet	
-dimorphism	process	single	wordnet	
-dimorphism	property	single	sumo	
-dimorphism	shape	single	sumo	
-displacement	chemical-phenomenon	single	sumo	
-displacement	chemical-process	accepted	sumo wordnet	
-displacement	chemical-reaction	accepted	claude wordnet	
-displacement	event	single	sumo	
-displacement	phenomenon	single	sumo	
-displacement	process	single	wordnet	
-dissociation	chemical-phenomenon	single	sumo	
-dissociation	chemical-process	accepted	sumo wordnet	
-dissociation	event	single	sumo	
-dissociation	phenomenon	single	sumo	
-dissociation	process	single	wordnet	
+displacement-reaction	chemical-phenomenon	single	sumo	
+displacement-reaction	chemical-process	accepted	opencyc sumo wordnet	
+displacement-reaction	chemical-reaction	accepted	claude opencyc wordnet	
+displacement-reaction	event	accepted	opencyc sumo	
+displacement-reaction	phenomenon	single	sumo	
+displacement-reaction	process	single	wordnet	
+displacement-reaction	situation	single	opencyc	
+distillation-rectification	event	single	sumo	
+distillation-rectification	phenomenon	single	sumo	
+distillation-rectification	process	accepted	claude wordnet	
+distillation-rectification	visit	single	sumo	
 distribution-law	cognition	single	wordnet	
 distribution-law	concept	accepted	claude wordnet	
 distribution-law	idea	single	wordnet	
@@ -656,23 +656,33 @@ einsteinium	part	single	wordnet
 einsteinium	phenomenon	single	sumo	
 einsteinium	substance	accepted	sumo wordnet	
 einsteinium	universe	single	sumo	
+electrolysis	chemical-decomposition	accepted	claude wordnet	
 electrolysis	chemical-process	single	wordnet	
 electrolysis	chemical-reaction	accepted	wikidata wordnet	
-electrolysis	decomposition	accepted	claude wordnet	
 electrolysis	ending	single	opencyc	
 electrolysis	event	accepted	opencyc sumo	
 electrolysis	phenomenon	single	sumo	
 electrolysis	process	single	wordnet	
 electrolysis	situation	single	opencyc	
+electron-acceptor	chemical	single	wordnet	
+electron-acceptor	compound	accepted	sumo wordnet	
+electron-acceptor	material	accepted	sumo wordnet	
+electron-acceptor	part	single	wordnet	
+electron-acceptor	phenomenon	single	sumo	
+electron-acceptor	substance	accepted	sumo wordnet	
+electron-acceptor	universe	single	sumo	
 electronegativity	attribute	accepted	sumo wordnet	
 electronegativity	property	single	sumo	
+elemental-abundance	number	single	sumo	
+elemental-abundance	quantity	single	sumo	
+elemental-abundance	ratio	accepted	claude wordnet	
 emulsion	material	single	sumo	
 emulsion	mixture	accepted	opencyc sumo wordnet	
 emulsion	part	single	wordnet	
 emulsion	phenomenon	single	sumo	
 emulsion	substance	accepted	sumo wordnet	
 emulsion	universe	single	sumo	
-equilibrium-constant	number	accepted	peter sumo	
+equilibrium-constant	number	accepted	claude-ruling sumo	
 equilibrium-constant	quantity	single	sumo	
 equilibrium-law	cognition	single	wordnet	
 equilibrium-law	concept	accepted	claude wordnet	
@@ -692,7 +702,6 @@ europium	part	single	wordnet
 europium	phenomenon	single	sumo	
 europium	substance	accepted	sumo wordnet	
 europium	universe	single	sumo	
-explosion	decomposition	single	opencyc	
 fat	mixture	accepted	claude wikidata	
 fermium	artifact	single	opencyc	
 fermium	chemical-element	accepted	sumo wordnet	
@@ -702,7 +711,6 @@ fermium	part	single	wordnet
 fermium	phenomenon	single	sumo	
 fermium	substance	accepted	sumo wordnet	
 fermium	universe	single	sumo	
-fire	decomposition	single	opencyc	
 flame	chemical-phenomenon	single	sumo	
 flame	chemical-process	accepted	sumo wordnet	
 fluorine	chemical	single	wikidata	
@@ -893,12 +901,6 @@ imbibition	locating	single	sumo
 imbibition	phenomenon	single	sumo	
 imbibition	process	single	wordnet	
 imbibition	visit	single	sumo	
-indicator	material	accepted	sumo wordnet	
-indicator	part	single	wordnet	
-indicator	phenomenon	single	sumo	
-indicator	sign	dissented	wikidata	
-indicator	substance	accepted	sumo wordnet	
-indicator	universe	single	sumo	
 indium	chemical-element	accepted	sumo wordnet	
 indium	material	single	sumo	
 indium	metal	accepted	opencyc wordnet	
@@ -996,15 +998,6 @@ lawrencium	part	single	wordnet
 lawrencium	phenomenon	single	sumo	
 lawrencium	substance	accepted	sumo wordnet	
 lawrencium	universe	single	sumo	
-lead.artifact	carbon	single	wordnet	
-lead.artifact	chemical-element	single	wordnet	
-lead.artifact	graphite	single	wordnet	
-lead.artifact	material	single	sumo	
-lead.artifact	mixture	single	sumo	
-lead.artifact	part	single	wordnet	
-lead.artifact	phenomenon	single	sumo	
-lead.artifact	substance	accepted	sumo wordnet	
-lead.artifact	universe	single	sumo	
 linen	mixture	single	opencyc	
 liquid-nitrogen	chemical-element	single	wordnet	
 liquid-nitrogen	fluid	accepted	wikidata wordnet	
@@ -1028,7 +1021,7 @@ lithium	part	single	wordnet
 lithium	phenomenon	single	sumo	
 lithium	substance	accepted	sumo wordnet	
 lithium	universe	single	sumo	
-long-chain	chemical-chain	single	wordnet	
+long-chain	chemical-chain	accepted	claude wordnet	
 long-chain	compound	single	sumo	
 long-chain	material	single	sumo	
 long-chain	molecule	single	sumo	
@@ -1105,13 +1098,13 @@ molybdenum	part	single	wordnet
 molybdenum	phenomenon	single	sumo	
 molybdenum	substance	accepted	sumo wordnet	
 molybdenum	universe	single	sumo	
-monad	atom	accepted	sumo wordnet	
-monad	chemical-element	single	sumo	
-monad	material	single	sumo	
-monad	part	single	wordnet	
-monad	phenomenon	single	sumo	
-monad	substance	accepted	sumo wordnet	
-monad	universe	single	sumo	
+monovalent-atom	atom	accepted	sumo wordnet	
+monovalent-atom	chemical-element	single	sumo	
+monovalent-atom	material	single	sumo	
+monovalent-atom	part	single	wordnet	
+monovalent-atom	phenomenon	single	sumo	
+monovalent-atom	substance	accepted	sumo wordnet	
+monovalent-atom	universe	single	sumo	
 mud	mixture	accepted	claude wikidata	
 neodymium	chemical-element	accepted	sumo wordnet	
 neodymium	material	single	sumo	
@@ -1249,7 +1242,7 @@ periodic-law	idea	single	wordnet
 periodic-law	signified	single	sumo	
 periodic-table	group	single	wordnet	
 periodic-table	indication	single	sumo	
-periodic-table	information	accepted	peter sumo	
+periodic-table	information	accepted	claude-ruling sumo	
 periodic-table	phenomenon	single	sumo	
 periodic-table	physical-object	single	sumo	
 periodic-table	tabular-array	single	wordnet	
@@ -1319,13 +1312,6 @@ polymer	part	single	wordnet
 polymer	phenomenon	single	sumo	
 polymer	substance	accepted	sumo wordnet	
 polymer	universe	single	sumo	
-polymorphism	attribute	single	sumo	
-polymorphism	chemical-phenomenon	accepted	claude wordnet	
-polymorphism	natural-event	single	wordnet	
-polymorphism	phenomenon	single	wordnet	
-polymorphism	process	single	wordnet	
-polymorphism	property	single	sumo	
-polymorphism	shape	single	sumo	
 polyvalence	attribute	accepted	sumo wordnet	
 polyvalence	property	single	sumo	
 polyvalence	state	accepted	claude wordnet	
@@ -1404,10 +1390,6 @@ radon	part	single	wordnet
 radon	phenomenon	single	sumo	
 radon	substance	accepted	sumo wordnet	
 radon	universe	single	sumo	
-rectification	event	single	sumo	
-rectification	phenomenon	single	sumo	
-rectification	process	accepted	claude wordnet	
-rectification	visit	single	sumo	
 reverse-osmosis	event	single	sumo	
 reverse-osmosis	osmosis	accepted	claude wordnet	
 reverse-osmosis	phenomenon	single	sumo	
@@ -1619,11 +1601,11 @@ thallium	phenomenon	single	sumo
 thallium	substance	accepted	sumo wordnet	
 thallium	universe	single	sumo	
 theory-of-dissociation	cognition	single	wordnet	
-theory-of-dissociation	concept	accepted	peter	
+theory-of-dissociation	concept	accepted	claude-ruling	
 theory-of-dissociation	signified	single	sumo	
 theory-of-dissociation	thinking	dissented	wordnet	
 theory-of-indicators	cognition	single	wordnet	
-theory-of-indicators	concept	accepted	peter	
+theory-of-indicators	concept	accepted	claude-ruling	
 theory-of-indicators	signified	single	sumo	
 theory-of-indicators	thinking	dissented	wordnet	
 thorium	chemical-element	accepted	sumo wordnet	

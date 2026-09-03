@@ -9,7 +9,6 @@ absolute-magnitude magnitude
 absorber material
 absorption process
 absorptivity attribute
-abundance ratio
 abuse information
 academic-degree symbol
 academy structure
@@ -172,7 +171,6 @@ artifact physical-object
 artillery-shell artifact
 artist person
 artistic-creation creation
-ascension event
 ash substance
 ash-grey attribute
 aspect feature
@@ -190,6 +188,7 @@ assurance information
 asterisk character
 asterism natural-object
 astronomer physicist
+astronomical-rising event
 astronomy physics
 athlete person
 atmosphere fluid
@@ -481,6 +480,7 @@ ceiling artifact
 ceiling.communication argumentation
 celebration activity
 celestial-body natural-object
+celestial-culmination place
 celestial-limb place
 cell physical-object
 cell-culture growth
@@ -518,6 +518,7 @@ chapter music
 character symbol
 characteristic attribute
 charge act
+charge-recombination event
 charitable-organization institution
 charity act
 charm physical-object
@@ -596,7 +597,6 @@ coevals people
 coffee drink
 coffin box
 cognition '*'
-cohesion physical-phenomenon
 coin currency
 coincidence chance-event
 cold disease
@@ -708,7 +708,6 @@ consumer user
 consumption process
 contact interaction
 container artifact
-containment artifact
 contamination act
 contemporary peer
 contempt feeling
@@ -730,7 +729,6 @@ conversion change
 conviction belief
 cook worker
 cookie cake
-cooking-pan artifact
 cooking-pot vessel
 cooperation practice
 copernican-system theoretical-account
@@ -812,7 +810,6 @@ crystal artifact
 cube shape
 cubicle room
 cucumber vegetable
-culmination place
 culture attitude
 cup container
 cupboard structure
@@ -933,7 +930,6 @@ dilemma condition
 diligence trait
 diminution act
 dinner meal
-dip angle
 diplomat official
 direction inclination
 director member
@@ -1021,7 +1017,6 @@ drop shape
 drug agent substance
 drug-user person
 drum musical-instrument
-duality attribute
 duck bird
 due-east '*'
 due-west '*'
@@ -1040,6 +1035,8 @@ ease condition
 easiness feeling
 east '*'
 echo attribute
+eclipse-egress event
+eclipse-ingress event
 economic-consumption demand.process
 economic-system system
 economic-value '*'
@@ -1054,7 +1051,6 @@ egg food
 egg-white food
 eggshell natural-object
 ego feeling
-egress event
 elbow articulation
 election act
 electorate group
@@ -1358,6 +1354,7 @@ gene sequence
 general worker
 genius person
 gentleman man
+genus-pan group
 geographic-pole place
 geography earth-science
 geometric-base shape
@@ -1607,7 +1604,6 @@ informant person
 information '*'
 infrastructure constitution
 ingredient component
-ingress event
 inhabitant person
 inhibition activity
 initial letter-of-the-alphabet
@@ -1641,6 +1637,7 @@ interaction act
 interest outgo
 interface computer-program
 interior-designer specialist
+intermolecular-cohesion physical-phenomenon
 internet artifact
 intersection junction
 intervention argumentation
@@ -1660,6 +1657,7 @@ invoice statement
 iron metal
 island land
 isolation state
+isotopic-abundance ratio
 isotropy attribute
 issue cognition
 item cognition
@@ -1757,6 +1755,7 @@ lawyer professional
 layer place
 layout arrangement-scheme
 lead leadership
+lead-metal metal
 leader person
 leadership activity
 leaf natural-object
@@ -1872,6 +1871,7 @@ maestro artist
 magazine artifact
 magic-trick performing
 magnet device
+magnetic-dip angle
 magnetic-dipole-moment physical-phenomenon
 magnetic-flux '*'
 magnetic-reluctance electrical-phenomenon
@@ -1912,7 +1912,6 @@ marriage-proposal information
 married-couple kin
 mars '*'
 marsh physical-object
-martian-canal water-channel
 mask clothing
 mass natural-object
 mass-energy attribute
@@ -1934,6 +1933,8 @@ means artifact
 measure act
 measuring-stick instrument
 meat substance
+mechanical-strain change
+mechanical-stress physical-phenomenon
 mechanical-work physical-phenomenon
 mechanism device
 medication drug
@@ -2199,7 +2200,7 @@ painting artifact
 pair group
 palace house
 palm tree
-pan group
+pan artifact
 panel artifact
 panic fear
 paper material
@@ -2211,7 +2212,7 @@ parameter factor
 parcel act
 pardon warrant
 parent ancestor
-parity conservation-law
+parity-conservation conservation-law
 park region
 parking '*'
 parliament legislature
@@ -2247,7 +2248,6 @@ patrol military-unit
 pattern exemplar
 pause '*'
 payment commerce
-pb metal
 peace feeling
 peacetime state
 peak topographic-point
@@ -2556,6 +2556,7 @@ ratio '*'
 rationality condition
 reaction physical-phenomenon
 reaction.phenomenon consequence
+reactor-containment artifact
 readiness state
 realism attribute
 reality state
@@ -2570,7 +2571,6 @@ reception-party party
 recess shape
 recession condition
 recognition information
-recombination event
 recommendation praise
 recompense correction
 record accomplishment
@@ -2604,7 +2604,7 @@ relationship state
 relative person
 relativistic-mass attribute
 relativity scientific-theory
-relaxation process
+relaxation-process process
 release act
 relevance '*'
 reliance state
@@ -2843,7 +2843,7 @@ share legal-document
 share-capital possession
 share-of-profits possession
 shark fish
-shear change
+shear-deformation change
 sheep mammal
 sheet linen
 shelf support-device
@@ -3023,7 +3023,6 @@ stop act
 storey structure
 storm physical-phenomenon
 stove commodity
-strain change
 strand decoration
 strange-particle elementary-particle
 strange-quark quark
@@ -3034,7 +3033,6 @@ stream body-of-water
 street road
 streetcar container vehicle
 strength attribute
-stress physical-phenomenon
 strike protest
 string artifact
 strip '*'
@@ -3134,7 +3132,7 @@ tenant person
 tendency route
 tending work
 tennis game sport
-tensile-stress stress
+tensile-stress mechanical-stress
 tension condition
 tensity condition
 tent structure
@@ -3232,7 +3230,7 @@ training-workshop course-of-instruction
 trait attribute
 transaction act
 transaction-record information
-transient oscillation
+transient-oscillation oscillation
 transmission gear
 transmutation change
 transport act
@@ -3376,6 +3374,7 @@ wave event
 wave-front surface
 wave-motion event
 wave-node place
+wave-particle-duality attribute
 wave-theory scientific-theory
 way course
 weak-interaction fundamental-interaction

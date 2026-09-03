@@ -1,0 +1,285 @@
+# sub	sup	accept|reject	reason	sub_wn	sup_wn — rulings Claude made under Peter's standing permission (moved out of review.tsv 2026-09-03 so attribution is honest; the `claude-ruling` witness)
+mathematical-set	concept	accept	a set is an abstract object; the whole set-based hierarchy hangs from it	07999699	05835747
+mathematical-relation	concept	accept	functions, operators and equalities are concepts	13783581	05835747
+expression	concept	accept	a mathematical expression is a formal object, not a statement (WordNet) nor its reverse (SUMO)	06731802	05835747
+expression	mathematical-statement	reject	an expression is not a statement	06731802	06732169
+mathematical-series	function	accept	a series is a function of its index; WordNet's `polynomial` parent is wrong	05862721	13783816
+decile	statistic	accept	a quantile is a statistic	05737982	06021499
+percentile	statistic	accept	same	05737752	06021499
+quartile	statistic	accept	same	05738204	06021499
+lower-bound	number	accept	a bound is a number	13904011	05121418
+upper-bound	number	accept	same	13903855	05121418
+cardinality	number	accept	the number of elements	13591586	05121418
+weight	number	accept	a statistical weight is a coefficient	13589321	05121418
+additive-inverse	number	accept		13843001	05121418
+multiplicative-inverse	number	accept		13843173	05121418
+algorithm	procedure	accept	a precise rule for solving a problem	05847438	01023820
+recursion	procedure	accept	a self-referential procedure	05848357	01023820
+factorization	mathematical-operation	accept	resolving an entity into factors	05783041	00869583
+rationalization	mathematical-operation	accept	simplifying an expression	01212225	00869583
+conditional-probability	probability	accept		05092236	05091770
+joint-probability	probability	accept		05093181	05091770
+exceedance	probability	accept		05092635	05091770
+boundary-condition	precondition	accept	WordNet: a condition specified for a solution	06755776	06755568
+fractal	shape	accept	a geometric pattern	05931152	00027807
+plane-section	shape	accept	a region cut by a plane	08648153	00027807
+information-theory	concept	accept	a statistical theory; `theory` lives in the physics pack	06108643	05835747
+statistical-correlation	statistic	accept	a correlation is a statistic	06031248	06021499
+covariation	statistical-correlation	accept	correlated variation	06032752	06031248
+radical-expression	expression	accept	a quantity written as a root	13731530	06731802
+boundary-condition	mathematical-statement	accept	a condition stated for a solution	06755776	06732169
+arithmetic-progression	concept	accept	a sequence of numbers; core has no `sequence`	08460924	05835747
+geometric-progression	concept	accept	same	08461172	05835747
+harmonic-progression	concept	accept	same	08461424	05835747
+probability	statistic	accept	a measure of likelihood is a statistic; core left `probability` unplaced	05091770	06021499
+algebraic-structure	concept	accept	a set with operations; the root of the algebra lattice		05835747
+binary-relation	mathematical-relation	accept	a relation between two things is a mathematical relation		13783581
+mathematical-structure	concept	accept	a set with extra structure		05835747
+algebraic-structure	mathematical-structure	accept	operations on a set		
+partially-ordered-set	mathematical-structure	accept	an order on a set		
+topological-space	mathematical-structure	accept	a topology on a set		
+natural-number	integer	accept	the non-negative integers		
+empty-set	finite-set	accept	the set with no elements		
+mathematical-graph	mathematical-structure	accept	vertices and edges: a combinatorial structure		
+axiom	proposition	accept	a statement taken as true		06750804
+conjecture	proposition	accept	a proposition whose truth is unknown		06750804
+prime-number	natural-number	accept	a positive integer with two divisors		
+composite-number	natural-number	accept	a positive integer with a proper divisor		
+power-set	mathematical-set	accept	the set of all subsets		07999699
+isomorphism	homomorphism	accept	an invertible homomorphism		
+geometric-shape	shape	accept	Wikidata's geometric shape is core's shape		00027807
+tree-graph	mathematical-graph	accept	a connected acyclic graph		
+scalar	number	accept	a single field element		05121418
+euclidean-vector	concept	accept	a geometric object with magnitude and direction		05835747
+tensor	concept	accept	a multilinear map		05835747
+mathematical-field	subset	reject	WordNet's field ⊑ set chain; a field is filed as a ring, not as a subset	08005260	08001209
+forest-graph	undirected-graph	accept	Wikidata Q3115453 is by definition an undirected graph without cycles, i.e. a forest; named forest-graph (Peter 2026-09-03) so that `acyclic` never implies undirected — a DAG is directed and sits under directed-graph		
+multigraph	mathematical-graph	accept	a graph allowing parallel edges		
+weighted-graph	mathematical-graph	accept	a graph with edge weights		
+matrix	mathematical-structure	accept	an array of expressions; core left `matrix` unplaced	08267640	
+adjacency-matrix	matrix	accept	the matrix of a graph		08267640
+graph-vertex	concept	accept	a node of a graph		05835747
+graph-path	subgraph	accept	a path is a subgraph		
+graph-cycle	subgraph	accept	a cycle is a subgraph — what loopmarket settles		
+eulerian-path	graph-path	accept			
+hamiltonian-path	graph-path	accept			
+graph-clique	induced-subgraph	accept	a complete induced subgraph		
+graph-matching	subgraph	accept	a set of disjoint edges		
+hasse-diagram	diagram	accept	the drawing of a poset's transitive reduction		03186399
+reachability	binary-relation	accept	whether one vertex reaches another		
+topological-ordering	total-order	accept	a linear extension of a DAG's order — what OntoDAG's topological_sort produces		
+transitive-reduction	mathematical-operation	accept	the minimal graph with the same reachability — OntoDAG's canonical form		00869583
+transitive-closure	mathematical-operation	accept	the reachability relation as an operation		00869583
+shortest-path	graph-path	accept	the shortest path between two vertices (Wikidata's item is the problem)		
+graph-colouring	concept	accept	an assignment of colours to vertices		05835747
+logical-operation	mathematical-operation	accept	an operation on truth values	13509042	00869583
+logical-connective	logical-operation	accept	AND, OR, NOT, IF-THEN		13509042
+quantifier	logical-operation	accept	for all, there exists	06302542	13509042
+logical-conjunction	logical-connective	accept			
+logical-disjunction	logical-connective	accept			
+logical-negation	logical-connective	accept		06751572	
+material-implication	logical-connective	accept			
+universal-quantifier	quantifier	accept			06302542
+existential-quantifier	quantifier	accept			06302542
+logical-relation	mathematical-relation	accept	a relation between propositions	13783038	13783581
+logical-consequence	logical-relation	accept	entailment		13783038
+subsumption	logical-relation	accept	the ⊑ of description logic — what OntoDAG computes		13783038
+mathematical-logic	logic	accept	the mathematical study of formal reasoning		06163751
+mathematical-logic	mathematics	accept			06000644
+propositional-logic	mathematical-logic	accept			
+first-order-logic	mathematical-logic	accept			
+modal-logic	mathematical-logic	accept			
+description-logic	mathematical-logic	accept	the family OntoDAG's contract sits under		
+classical-logic	mathematical-logic	accept			
+fuzzy-logic	mathematical-logic	accept			
+intuitionistic-logic	mathematical-logic	accept			
+model-theory	mathematical-logic	accept			
+proof-theory	mathematical-logic	accept			
+computability-theory	mathematical-logic	accept			
+type-theory	mathematical-logic	accept			
+formal-system	concept	accept	axioms plus inference rules		05835747
+lambda-calculus	formal-system	accept			
+turing-machine	concept	accept	an abstract model of computation		05835747
+truth-value	concept	accept			05835747
+truth-table	concept	accept			05835747
+well-formed-formula	expression	accept			06731802
+inference-rule	rule	accept	a rule licensing a conclusion from premises		05846054
+deductive-reasoning	thinking	accept			05770926
+inductive-reasoning	thinking	accept			05770926
+syllogism	deductive-reasoning	accept			
+non-sequitur	proposition	accept	a conclusion that does not follow	05781663	06750804
+mathematical-induction	formal-proof	accept			06647614
+godel-incompleteness-theorem	theorem	accept			06752293
+decidability	attribute	accept	a property of theories		00024264
+satisfiability	attribute	accept	a property of formulas		00024264
+logical-soundness	attribute	accept	a property of proof systems		00024264
+decision-problem	problem	accept	a yes/no question about inputs		06784003
+arity	number	accept	the number of arguments	05857974	05121418
+order-theory	mathematics	accept	the study of ordering relations		06000644
+formal-concept-analysis	order-theory	accept	lattices from object–attribute tables (Ganter & Wille)		
+complete-lattice	mathematical-lattice	accept			
+distributive-lattice	mathematical-lattice	accept			
+modular-lattice	mathematical-lattice	accept			
+bounded-lattice	mathematical-lattice	accept			
+heyting-algebra	bounded-lattice	accept			
+heyting-algebra	distributive-lattice	accept			
+boolean-algebra	heyting-algebra	accept	a Boolean algebra is a Heyting algebra with excluded middle		
+join-semilattice	semilattice	accept			
+meet-semilattice	semilattice	accept			
+concept-lattice	complete-lattice	accept	the lattice of formal concepts of a context		
+dedekind-macneille-completion	complete-lattice	accept	the smallest complete lattice containing a poset — the concept lattice of a poset's own context		
+order-chain	totally-ordered-set	accept	a totally ordered subset		
+antichain	subset	accept	pairwise incomparable elements		08001209
+upper-set	subset	accept			08001209
+lower-set	subset	accept			08001209
+order-ideal	lower-set	accept	a directed lower set		
+order-filter	upper-set	accept	a directed upper set		
+directed-set	partially-ordered-set	accept			
+strict-order	transitive-relation	accept	irreflexive and transitive		13798491
+weak-order	preorder	accept	a total preorder		
+linear-extension	total-order	accept			
+covering-relation	binary-relation	accept	the edges of a Hasse diagram		
+order-dimension	number	accept			05121418
+interval-order	partial-order	accept			
+infimum	concept	accept	greatest lower bound		05835747
+supremum	concept	accept	least upper bound		05835747
+greatest-element	concept	accept			05835747
+least-element	concept	accept			05835747
+maximal-element	concept	accept			05835747
+minimal-element	concept	accept			05835747
+monotone-function	function	accept	order-preserving		13783816
+order-isomorphism	isomorphism	accept			
+order-isomorphism	monotone-function	accept			
+order-embedding	monotone-function	accept			
+galois-connection	concept	accept	an adjoint pair of monotone maps between posets		05835747
+closure-operator	operator	accept	extensive, monotone, idempotent		13786413
+closure-system	mathematical-set	accept	a family of sets closed under intersection		07999699
+fixed-point	concept	accept			05835747
+knaster-tarski-theorem	theorem	accept			06752293
+zorn's-lemma	theorem	accept			06752293
+formal-context	binary-relation	accept	objects × attributes incidence		
+formal-concept	concept	accept	an (extent, intent) pair closed under derivation		05835747
+concept-extent	mathematical-set	accept			07999699
+concept-intent	mathematical-set	accept			07999699
+derivation-operator	function	accept	the prime operator; its two-fold composition is a closure operator		13783816
+attribute-implication	implication	accept	between attribute sets		13860281
+attribute-exploration	algorithm	accept	interactive completion of an implication basis		05847438
+discrete-mathematics	mathematics	accept	structures that are discrete rather than continuous		06000644
+combinatorics	discrete-mathematics	accept	discrete mathematics / cryptography skeleton		
+number-theory	mathematics	accept	discrete mathematics / cryptography skeleton		06000644
+coding-theory	discrete-mathematics	accept	discrete mathematics / cryptography skeleton		
+computational-complexity-theory	computability-theory	accept	discrete mathematics / cryptography skeleton		
+computational-complexity-theory	computer-science	accept	discrete mathematics / cryptography skeleton		06128570
+cryptography	mathematics	accept	applied number theory and complexity		06000644
+cryptography	computer-science	accept	discrete mathematics / cryptography skeleton		06128570
+k-combination	concept	accept	a selection of items regardless of order		05835747
+binomial-coefficient	number	accept	discrete mathematics / cryptography skeleton		05121418
+recurrence-relation	mathematical-relation	accept	discrete mathematics / cryptography skeleton		13783581
+generating-function	function	accept	discrete mathematics / cryptography skeleton		13783816
+pigeonhole-principle	theorem	accept	discrete mathematics / cryptography skeleton		06752293
+inclusion-exclusion-principle	theorem	accept	discrete mathematics / cryptography skeleton		06752293
+integer-partition	concept	accept	discrete mathematics / cryptography skeleton		05835747
+latin-square	matrix	accept	discrete mathematics / cryptography skeleton		08267640
+matroid	mathematical-structure	accept	discrete mathematics / cryptography skeleton		
+design-theory	combinatorics	accept	discrete mathematics / cryptography skeleton		
+fibonacci-sequence	concept	accept	an integer sequence; core has no `sequence`		05835747
+catalan-number	natural-number	accept	discrete mathematics / cryptography skeleton		
+modular-arithmetic	arithmetic	accept	discrete mathematics / cryptography skeleton		06004067
+greatest-common-divisor	natural-number	accept	discrete mathematics / cryptography skeleton		
+prime-factorization	mathematical-operation	accept	discrete mathematics / cryptography skeleton		00869583
+euclidean-algorithm	algorithm	accept	discrete mathematics / cryptography skeleton		05847438
+discrete-logarithm	decision-problem	accept	the hard problem behind Diffie–Hellman and secp256k1		
+finite-automaton	formal-system	accept	an abstract machine		
+formal-grammar	formal-system	accept	discrete mathematics / cryptography skeleton		
+regular-expression	expression	accept	a pattern denoting a regular language		06731802
+complexity-class	mathematical-set	accept	a set of problems		07999699
+np-completeness	complexity-class	accept	discrete mathematics / cryptography skeleton		
+big-o-notation	mathematical-relation	accept	asymptotic bound		13783581
+recursive-function	function	accept	discrete mathematics / cryptography skeleton		13783816
+error-correcting-code	concept	accept	discrete mathematics / cryptography skeleton		05835747
+hamming-distance	metric-function	accept	discrete mathematics / cryptography skeleton		13784906
+bit	concept	accept	the unit of information; the registry has the `information` family for amounts	09222051	05835747
+bit-string	data-structure	accept	discrete mathematics / cryptography skeleton		
+data-structure	concept	accept	a way of organising data		05835747
+hash-table	data-structure	accept	discrete mathematics / cryptography skeleton		
+linked-list	data-structure	accept	discrete mathematics / cryptography skeleton		
+binary-tree	data-structure	accept	discrete mathematics / cryptography skeleton		
+binary-tree	tree-graph	accept	discrete mathematics / cryptography skeleton		
+heap-data-structure	data-structure	accept	discrete mathematics / cryptography skeleton		
+trie	data-structure	accept	discrete mathematics / cryptography skeleton		
+trie	tree-graph	accept	discrete mathematics / cryptography skeleton		
+merkle-tree	data-structure	accept	hash-labelled tree — how recordstore's trie and Swarm's BMT address content		
+merkle-tree	tree-graph	accept	discrete mathematics / cryptography skeleton		
+hash-chain	data-structure	accept	discrete mathematics / cryptography skeleton		
+bloom-filter	data-structure	accept	discrete mathematics / cryptography skeleton		
+cipher	algorithm	accept	an algorithm for encrypting and decrypting		05847438
+encryption	mathematical-operation	accept	turning plaintext into ciphertext under a key		00869583
+decryption	mathematical-operation	accept	the inverse		00869583
+cryptographic-key	concept	accept	the secret that parametrises a cipher		05835747
+public-key	cryptographic-key	accept	discrete mathematics / cryptography skeleton		
+private-key	cryptographic-key	accept	discrete mathematics / cryptography skeleton		
+symmetric-key-cryptography	cryptography	accept	discrete mathematics / cryptography skeleton		
+public-key-cryptography	cryptography	accept	discrete mathematics / cryptography skeleton		
+block-cipher	cipher	accept	discrete mathematics / cryptography skeleton		
+stream-cipher	cipher	accept	discrete mathematics / cryptography skeleton		
+aes	block-cipher	accept	discrete mathematics / cryptography skeleton		
+rsa-cryptosystem	public-key-cryptography	accept	discrete mathematics / cryptography skeleton		
+elliptic-curve-cryptography	public-key-cryptography	accept	discrete mathematics / cryptography skeleton		
+secp256k1	elliptic-curve-cryptography	accept	the curve behind Bitcoin, Ethereum and Swarm signatures		
+diffie-hellman	key-exchange	accept	discrete mathematics / cryptography skeleton		
+key-exchange	cryptographic-protocol	accept	discrete mathematics / cryptography skeleton		
+cryptographic-protocol	concept	accept	discrete mathematics / cryptography skeleton		05835747
+cryptographic-hash-function	function	accept	discrete mathematics / cryptography skeleton		13783816
+cryptographic-hash-function	cryptographic-primitive	accept	discrete mathematics / cryptography skeleton		
+cryptographic-primitive	algorithm	accept	discrete mathematics / cryptography skeleton		05847438
+sha-2	cryptographic-hash-function	accept	discrete mathematics / cryptography skeleton		
+keccak	cryptographic-hash-function	accept	SHA-3; Swarm's BMT and ACT lookup keys		
+one-way-function	function	accept	discrete mathematics / cryptography skeleton		13783816
+digital-signature	cryptographic-primitive	accept	discrete mathematics / cryptography skeleton		
+signature-scheme	cryptographic-protocol	accept	discrete mathematics / cryptography skeleton		
+ecdsa	signature-scheme	accept	discrete mathematics / cryptography skeleton		
+message-authentication-code	cryptographic-primitive	accept	discrete mathematics / cryptography skeleton		
+hmac	message-authentication-code	accept	discrete mathematics / cryptography skeleton		
+nonce	concept	accept	a number used once		05835747
+salt	concept	accept	discrete mathematics / cryptography skeleton	07813107	05835747
+initialization-vector	concept	accept	discrete mathematics / cryptography skeleton		05835747
+key-derivation-function	function	accept	discrete mathematics / cryptography skeleton		13783816
+zero-knowledge-proof	cryptographic-protocol	accept	discrete mathematics / cryptography skeleton		
+commitment-scheme	cryptographic-protocol	accept	discrete mathematics / cryptography skeleton		
+homomorphic-encryption	encryption	accept	discrete mathematics / cryptography skeleton		
+secret-sharing	cryptographic-protocol	accept	discrete mathematics / cryptography skeleton		
+authenticated-encryption	encryption	accept	discrete mathematics / cryptography skeleton		
+pseudorandom-generator	algorithm	accept	discrete mathematics / cryptography skeleton		05847438
+digital-certificate	document	accept	discrete mathematics / cryptography skeleton		06470073
+public-key-infrastructure	concept	accept	discrete mathematics / cryptography skeleton		05835747
+cryptanalysis	cryptography	accept	discrete mathematics / cryptography skeleton		
+brute-force-attack	cryptanalysis	accept	discrete mathematics / cryptography skeleton		
+plaintext	information	accept	discrete mathematics / cryptography skeleton		00033020
+ciphertext	information	accept	discrete mathematics / cryptography skeleton		00033020
+content-addressing	concept	accept	addressing data by the hash of its content — what a canonical root is		05835747
+blockchain	data-structure	accept	a hash chain of blocks		
+blockchain	hash-chain	accept	discrete mathematics / cryptography skeleton		
+proof-of-work	cryptographic-protocol	accept	discrete mathematics / cryptography skeleton		
+random-oracle	concept	accept	an idealised hash function		05835747
+cryptographic-padding	concept	accept	discrete mathematics / cryptography skeleton		05835747
+acceptance-sampling	statistical-method	accept	a sampling procedure [second pass 2026-09-03]	00806621	06020737
+bayes'-theorem	theorem	accept	a theorem [second pass 2026-09-03]	05918379	06752293
+bernoulli's-law	theorem	accept	the law of large numbers [second pass 2026-09-03]	05875148	06752293
+brute-force-attack	procedure	accept	try every key [second pass 2026-09-03]		01023820
+convergence	attribute	accept	a property of series [second pass 2026-09-03]	05863106	00024264
+covariance	statistic	accept	a second-order statistic [second pass 2026-09-03]	06025287	06021499
+cryptographic-key	information	accept	a secret or public parameter [second pass 2026-09-03]		00033020
+cryptographic-protocol	procedure	accept	a procedure between parties [second pass 2026-09-03]		01023820
+discrete-logarithm	problem	accept	a computational problem [second pass 2026-09-03]		06784003
+geometric-intersection	locus	accept	the points common to two figures [second pass 2026-09-03]	13873213	08000881
+identity-element	concept	accept	the neutral element [second pass 2026-09-03]	13786748	05835747
+information-theory	mathematics	accept	a branch of applied mathematics [second pass 2026-09-03]	06108643	06000644
+initialization-vector	information	accept	a bit string [second pass 2026-09-03]		00033020
+nonce	information	accept	a number used once [second pass 2026-09-03]		00033020
+mathematical-analysis	mathematics	accept	a branch [second pass 2026-09-03]	06014043	06000644
+calculus	mathematical-analysis	accept	calculus is the elementary part of analysis [second pass 2026-09-03]	06013741	06014043
+multicollinearity	condition	accept	a condition of the predictors [second pass 2026-09-03]	06027843	13920835
+np-completeness	attribute	accept	a property of problems [second pass 2026-09-03]		00024264
+secp256k1	concept	accept	an elliptic curve; no elliptic-curve node yet [second pass 2026-09-03]		05835747
+standard-deviation	statistic	accept	a dispersion statistic [second pass 2026-09-03]	06025172	06021499
+curve-osculation	mathematical-relation	accept	a contact relation between curves [second pass 2026-09-03]	14419889	13783581
