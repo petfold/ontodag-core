@@ -13,6 +13,7 @@ acid-base-equilibrium	process	single	wordnet
 acid-base-equilibrium	property	single	sumo	
 acid-base-equilibrium	shape	single	sumo	
 acid-base-equilibrium	state	accepted	claude-ruling	
+aids	organic-process	single	wikidata	
 akaryocyte	body-part	single	sumo	
 akaryocyte	cell	accepted	sumo wikidata wordnet	
 akaryocyte	phenomenon	single	sumo	
@@ -40,7 +41,7 @@ amphidiploid	physical-object	accepted	sumo wordnet
 amphidiploid	species	single	sumo	
 amphidiploid	universe	single	sumo	
 analogy	organic-phenomenon	single	sumo	
-analogy	organic-process	single	sumo	
+analogy	organic-process	accepted	sumo wikidata	
 animal-egg	body-part	single	sumo	
 animal-egg	cell	single	wordnet	
 animal-egg	food	single	sumo	
@@ -231,7 +232,7 @@ biological-inhibition	phenomenon	single	sumo
 biological-inhibition	process	single	wordnet	
 biological-isomorphism	attribute	accepted	sumo wordnet	
 biological-isomorphism	property	single	sumo	
-biological-isomorphism	similarity	disputed	wordnet	wikidata
+biological-isomorphism	similarity	single	wordnet	
 biological-polymorphism	event	single	sumo	
 biological-polymorphism	natural-event	single	wordnet	
 biological-polymorphism	organic-phenomenon	accepted	sumo wordnet	
@@ -362,6 +363,7 @@ cancer-cell	somatic-cell	single	wordnet
 cancer-cell	universe	single	sumo	
 carrot	plant-part	single	wordnet	
 carrot	taproot	accepted	claude wikidata	
+cast	organic-process	single	wikidata	
 cataplasia	change	accepted	claude wordnet	
 cataplasia	event	accepted	sumo wordnet	
 cataplasia	organic-phenomenon	single	sumo	
@@ -414,6 +416,7 @@ coarctation	organic-phenomenon	single	sumo
 coarctation	organic-process	single	sumo	
 coarctation	phenomenon	single	sumo	
 coarctation	situation	single	opencyc	
+cognition	organic-process	single	wikidata	
 columnar-cell	body-part	single	sumo	
 columnar-cell	cell	accepted	sumo wordnet	
 columnar-cell	epithelial-cell	accepted	claude wordnet	
@@ -543,6 +546,7 @@ dendrite	system	single	opencyc
 dendrite	universe	single	sumo	
 desert	biotic-community	dissented	wordnet	
 desert	ecosystem	dissented	wikidata	
+development	organic-process	single	wikidata	
 diagnosis	organic-phenomenon	single	sumo	
 diagnosis	organic-process	single	sumo	
 dialog	organic-phenomenon	single	sumo	
@@ -1211,7 +1215,7 @@ insertional-mutagenesis	phenomenon	single	sumo
 insight	organic-phenomenon	single	sumo	
 insight	organic-process	single	sumo	
 inspiration	organic-phenomenon	single	sumo	
-inspiration	organic-process	single	sumo	
+inspiration	organic-process	accepted	sumo wikidata	
 instinct	organic-process	dissented	wikidata	
 intention	organic-phenomenon	single	sumo	
 intention	organic-process	single	sumo	
@@ -1235,10 +1239,11 @@ isogamy	organic-process	accepted	sumo wordnet
 isogamy	phenomenon	single	sumo	
 isogamy	process	single	wordnet	
 isogamy	reproduction	accepted	sumo wordnet	
+isolation	organic-process	single	wikidata	
 judging	organic-phenomenon	single	sumo	
 judging	organic-process	single	sumo	
 judgment	organic-phenomenon	single	sumo	
-judgment	organic-process	single	sumo	
+judgment	organic-process	accepted	sumo wikidata	
 justification	organic-phenomenon	single	sumo	
 justification	organic-process	single	sumo	
 killer-t-cell	blood-cell	single	wordnet	
@@ -1586,7 +1591,7 @@ mutant-gene	sequence	single	wordnet
 mutant-gene	substance	single	sumo	
 mutant-gene	universe	single	sumo	
 mutation	organic-phenomenon	single	sumo	
-mutation	organic-process	single	sumo	
+mutation	organic-process	accepted	sumo wikidata	
 myeloblast	blood-cell	single	wordnet	
 myeloblast	body-part	single	sumo	
 myeloblast	cell	accepted	sumo wordnet	
@@ -1859,6 +1864,7 @@ papilla	phenomenon	single	sumo
 papilla	physical-object	single	sumo	
 papilla	universe	single	sumo	
 parthenocarpy	event	single	sumo	
+parthenocarpy	mutation	single	wikidata	
 parthenocarpy	organic-phenomenon	single	sumo	
 parthenocarpy	organic-process	accepted	sumo wikidata wordnet	
 parthenocarpy	phenomenon	single	sumo	
@@ -2012,7 +2018,7 @@ pleomorphism	process	single	wordnet
 pneumonia	organic-process	single	wikidata	
 point-mutation	change	single	wordnet	
 point-mutation	event	accepted	sumo wordnet	
-point-mutation	mutation	accepted	claude wordnet	
+point-mutation	mutation	accepted	claude wikidata wordnet	
 point-mutation	organic-phenomenon	single	sumo	
 point-mutation	organic-process	accepted	sumo wikidata	
 point-mutation	phenomenon	single	sumo	
@@ -2105,6 +2111,7 @@ radiation-sickness	organic-phenomenon	single	sumo
 radiation-sickness	organic-process	accepted	sumo wikidata	
 rape	organic-phenomenon	single	sumo	
 rape	organic-process	single	sumo	
+reason	organic-process	single	wikidata	
 recessive-allele	allele	accepted	claude wordnet	
 recessive-allele	compound	single	sumo	
 recessive-allele	gene	single	wordnet	
@@ -2189,6 +2196,7 @@ reticulocyte	physical-object	accepted	sumo wordnet
 reticulocyte	red-blood-cell	accepted	sumo wikidata wordnet	
 reticulocyte	somatic-cell	single	wordnet	
 reticulocyte	universe	single	sumo	
+reversion	organic-process	single	wikidata	
 rna-translation	event	single	sumo	
 rna-translation	organic-phenomenon	single	sumo	
 rna-translation	organic-process	accepted	sumo wordnet	
@@ -2311,7 +2319,6 @@ silkworm-seed	phenomenon	single	sumo
 silkworm-seed	physical-object	accepted	sumo wordnet	
 silkworm-seed	reproductive-cell	single	wordnet	
 silkworm-seed	universe	single	sumo	
-similarity	biological-isomorphism	disputed	wikidata	wordnet
 single-nucleotide-polymorphism	biological-polymorphism	accepted	claude wordnet	
 single-nucleotide-polymorphism	event	single	sumo	
 single-nucleotide-polymorphism	gene	single	yago	
@@ -2551,7 +2558,7 @@ suppressor-gene	universe	single	sumo
 symptom	organic-phenomenon	single	sumo	
 symptom	organic-process	single	sumo	
 syndrome	organic-phenomenon	single	sumo	
-syndrome	organic-process	single	sumo	
+syndrome	organic-process	accepted	sumo wikidata	
 t-cell	blood-cell	single	wordnet	
 t-cell	body-part	single	sumo	
 t-cell	cell	accepted	sumo wordnet	
@@ -2749,6 +2756,7 @@ visual-cell	phenomenon	single	sumo
 visual-cell	physical-object	accepted	sumo wordnet	
 visual-cell	somatic-cell	accepted	claude wordnet	
 visual-cell	universe	single	sumo	
+volition	organic-process	single	wikidata	
 vote	organic-phenomenon	single	sumo	
 vote	organic-process	single	sumo	
 weed	plantae	single	sumo	
