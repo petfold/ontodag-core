@@ -279,6 +279,43 @@ set); every such edge was rejected — a thing is filed as what it is. And
 `mathematical-group`, `mathematical-graph`, `graph-clique`, `logical-negation`.
 Rulings proposed for Peter sit in each pack's `align/review.tsv`.
 
+### 8.1 The integration build (2026-09-03, night) — `tools/integrate.py`
+
+Every pack had been built against core alone. `tools/integrate.py` merges
+core (with the prelude) and all ten packs into one store and checks it:
+
+- **union: 9,793 categories, 10,908 edges**; every pack concept present and
+  reachable from the root; sha256 root `759ebb5a5613cb9d309cbd5665f07e9227c4aad22d3214d12116ccabc334881a`,
+  Swarm/BMT root `7d38cfe6d7afd771bb0fd0cba3bb9893cf850330836e5d900a1bf364b52f3314`
+  (pin these when the union is published);
+- **order-independent**: three shuffled orders and the reversed order give
+  the same root; merging everything a second time changes nothing;
+- the **cross-pack claims resolve** — geography's GIS formats under
+  computing's `file-format`, `merkle-dag ⊑ directed-acyclic-graph`
+  (mathematics), `swarm-storage ⊑ decentralized-storage ⊑ peer-to-peer`
+  (economics + computing), `celestial-coordinate-system ⊑ coordinate-system`
+  (space + geography);
+- the top level is core's ten roots plus `dimension` (the prelude's kind
+  node), nothing else.
+
+The first run found what the pack build had been silently dropping: an
+edge whose parent lives in a *sibling* pack (not in core, not in this pack)
+never reached a root, so `consensus.py` left it out of the file —
+`geographic-data-format ⊑ file-format`, the whole Swarm/wallet chain in
+economics, `celestial-coordinate-system ⊑ coordinate-system`. Sibling
+packs' names now count as placeable parents (borrowed, not owned: they are
+written into the file parentless, like core's names). Consequence, by
+design: **a pack adopted without a sibling it leans on shows the borrowed
+name at top level until the sibling arrives** — geography alone adds
+`file-format`, `database`, `data-processing`, `classification-scheme` and
+`theory` to the top; computing alone adds `theorem`; space alone
+`coordinate-system`; ai alone `database`. Merge files them the moment the
+owning pack is adopted — refinement by merge, §1's first row. 110 names
+occur in two or more packs with different parents; they merge to the union
+of the parents (`hash-table`: mathematics' `data-structure` and computing's
+`associative-array`), and the list is the natural review queue for the
+second reading.
+
 ## 9. The second pass (2026-09-03, with Peter)
 
 Peter noticed `acyclic-graph ⊑ undirected-graph` in the mathematics pack. The

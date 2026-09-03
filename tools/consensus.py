@@ -26,6 +26,23 @@ def main():
     base = set()
     if dirs.pack:            # the core is already decided: it is the placed ground the pack attaches to
         base = {shlex.split(l)[0] for l in open(dirs.base_od) if not l.startswith("#")}
+    # names the SIBLING packs define (their align/concepts.tsv, pack-origin rows):
+    # a pack may hang a concept from one of them — geography's GIS formats under
+    # computing's file-format — and the edge must survive into the pack file, so
+    # they count as placed here without being owned (2026-09-03, found by
+    # tools/integrate.py: the union had lost every such edge). Adopting a pack
+    # without its sibling leaves the borrowed name at top level until the
+    # sibling arrives — refinement by merge, the property UPPER.md §1 relies on.
+    external = set()
+    if dirs.pack:
+        for cf in (ROOT / "packs").glob("*/align/concepts.tsv"):
+            if cf.parts[-3] == dirs.pack:
+                continue
+            for r in csv.DictReader(open(cf), delimiter="\t"):
+                if r.get("origin") not in ("base", "", None):
+                    external.add(r["name"])
+        external -= base
+        external -= {n for n, o in origin.items() if o == dirs.pack}   # what this pack owns stays owned
     for_, against = defaultdict(set), defaultdict(set)
     for tsv in sorted(dirs.views.glob("*.tsv")):
         src = tsv.stem
@@ -127,7 +144,7 @@ def main():
                 if sup not in accepted[sub]:
                     accepted[sub].append(sup)
     # concepts enter from the roots downward through accepted edges
-    placed = set(roots) | base
+    placed = set(roots) | base | external
     changed = True
     while changed:
         changed = False
@@ -135,7 +152,15 @@ def main():
             if a not in placed and any(b in placed for b in bs):
                 placed.add(a)
                 changed = True
-    own = placed - base if dirs.pack else placed
+    if dirs.pack:
+        # what the pack owns: its own concepts, plus any name it makes a claim
+        # about (an accepted edge from it — geojson ⊑ geographic-data-format
+        # is geography's claim about computing's name); sibling names it only
+        # hangs things FROM stay borrowed
+        mentioned = {n for n, o in origin.items() if o == dirs.pack} | {a for a in accepted if accepted[a]}
+        own = (placed - base) & (mentioned | (placed - base - external))
+    else:
+        own = placed
     parents = {n: [b for b in accepted.get(n, []) if b in placed] for n in own}
     unplaced_extra = sorted({a for a, b in extra if a not in placed} | {b for a, b in extra if b not in placed})
     if unplaced_extra:

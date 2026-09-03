@@ -160,13 +160,14 @@ cirque natural-basin
 cirrocumulus cirrus cumulus
 cirrostratus cirrus stratus
 cirrus cloud
+classification-scheme '*'
 clast rock
 clastic-rock rock
 clay '*'
 clear-air-turbulence turbulence
 cliff '*'
 climate '*'
-climate-classification concept
+climate-classification classification-scheme concept
 climate-oscillation natural-event
 climatic-zone geographical-area
 climatology atmospheric-science meteorology physical-geography
@@ -224,6 +225,8 @@ cyclone atmospheric-state low
 cyclonic-storm windstorm
 cylindrical-projection map-projection
 dale valley
+data-processing '*'
+database '*'
 dataset '*'
 daylight-saving-time practice time-standard
 dead-reckoning navigation
@@ -324,6 +327,7 @@ facility '*'
 fault-line geographic-line
 field-of-study '*'
 figure-of-the-earth shape
+file-format '*'
 fine-spray precipitation
 fire-pit cavity
 firestorm flame storm
@@ -365,7 +369,7 @@ gazetteer dictionary
 gentle-breeze breeze
 geochemistry chemistry geology
 geocode code
-geocoding activity
+geocoding activity data-processing
 geocoding-system coordinate-system
 geodesy geophysics
 geodetic-datum spatial-reference-system
@@ -373,7 +377,7 @@ geodetic-network collection
 geographic-coordinate quantity
 geographic-coordinate-system coordinate-system
 geographic-data information
-geographic-data-format information
+geographic-data-format file-format information
 geographic-information-system software
 geographic-line geographic-point
 geographic-point place
@@ -406,9 +410,9 @@ geomorphology geography geophysics
 geonames gazetteer
 geophysics geology physics
 geopotential quantity
-geospatial-analysis activity
+geospatial-analysis activity data-processing
 geosphere earth-sphere
-geotagging activity
+geotagging activity data-processing
 geotiff geographic-data-format
 getty-thesaurus-of-geographic-names gazetteer
 geyser hot-spring landform
@@ -778,7 +782,7 @@ planet '*'
 planet-earth planet
 plat-map map
 plate-boundary geological-formation
-plate-tectonics concept
+plate-tectonics concept theory
 plateau highland landform
 pleistocene epoch
 podzol soil
@@ -952,7 +956,7 @@ southwest compass-point
 southwest-by-south compass-point
 southwest-by-west compass-point
 southwester wind
-spatial-database information
+spatial-database database information
 spatial-reference-system coordinate-system
 speleology geology
 spherical-coordinate-system coordinate-system
@@ -1009,6 +1013,7 @@ territorial-waters body-of-water
 thaw weather
 thematic-map map
 theodolite instrument tool
+theory '*'
 thermal-updraft convection wind
 thermohaline-circulation ocean-current
 thermosphere atmospheric-layer
