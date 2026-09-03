@@ -543,6 +543,25 @@ hang from. Core grows by one concept; **v5**. Rulings I make now live in
 Every pack has now had two readings; the residual is what a bounty
 measures (factbond INTEGRATION.md §11).
 
+**The duplicate list, resolved (2026-09-03, night, Peter).** `crosspack.py`
+had 21 Wikidata items carrying two names each. Peter's rule for the real
+synonyms: *of two synonyms keep the first* — `exchange-rate`, `insanity`,
+`credit-line`, `exporting`, `financial-leverage`, `humanoid-robot`,
+`neurology`, `joint-dislocation`, `futures-market` stay; `rate-of-exchange`,
+`lunacy`, `line-of-credit`, `export`, `leverage`, `android-robot`,
+`clinical-neurology`, `abarticulation`, `futures-exchange` go. The other
+twelve pairs are Wikidata's P8814 merging two distinct WordNet concepts onto
+one item (`sudorific` on *prescription drug*, `lancet` on *scalpel*,
+`plasmablast` on *plasma cell*, `bruise` on *blunt trauma*, `guaranty` on
+*warrant*, `deducted-amount` on *discounting*): both names stay, and the
+alignment is cleared on the one whose name does not match the item's label.
+Core's water spring is `natural-spring` (`outflow` reads as finance;
+geography's Wikidata `outflow` renamed to match). Two mechanics learned:
+a drop of a *renamed* WordNet concept must name the offset, not the
+names.tsv name; and a hand ruling about a name admits that name even after a
+drop (the pack came back with `android-robot ⊑ humanoid-robot` from its own
+ruling) — remove the rulings with the concept. `crosspack.py` is clean.
+
 **Still doubtful, left for Peter** (kept as they stand, WordNet's readings):
 iron products under the element (`cast-iron`, `pig-iron`, `wrought-iron ⊑
 iron`; likewise `green-gold ⊑ gold`, `calcium-ion ⊑ calcium`); gaseous
