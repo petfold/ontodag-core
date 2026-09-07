@@ -811,4 +811,9 @@ cleaning, computer repair, taxi, moving, towing, translation, dog walking,
 car wash, web hosting, technical support beyond `help-desk`) — a later layer
 that can define them, like §10's retail compounds; finance services
 (`banking`, `insurance`, `lending`) stay the economics pack's; the
-`humidity` registry family and secure-storage kinds from §10.
+`humidity` registry family and secure-storage kinds from §10. **CPC's goods
+half is the next pass (Peter, 2026-09-07):** sections 0–4 (2,713 codes) both
+as a second witness for the goods layer's GPT-only edges and as a coverage
+check — every CPC kind with a WordNet synset that core still lacks is a
+candidate everyday good or material, the way §10's probe found the leaves
+missing.
