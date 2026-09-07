@@ -351,9 +351,8 @@ level — the names economics now borrows from core — which is the §8.1
 refinement-by-merge property showing, not a fault.)
 
 **Re-run with core v8, CPC's goods half (2026-09-07, §12; core and pack
-modules regenerated in ontodag's working tree from the uncommitted build —
-the module docstrings carry the pre-pass commit bc9a93c and must be
-regenerated once v8 is committed; unreleased):** union **11,389 categories,
+modules regenerated in ontodag's working tree, ontodag-core 16c42b0,
+unreleased):** union **11,389 categories,
 12,829 edges** (built in 609 s); sha256 root
 `f9883b3d75174e10a9a790e077453733282c101eab4d313fbce99520f2e66231`, Swarm/BMT
 root `a9f8e3f8eacb913be7044ee1048d7d9717342541a242a4a4aa3a79a89ea30823`;
