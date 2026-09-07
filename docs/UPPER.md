@@ -370,6 +370,13 @@ union **11,407 categories, 12,855 edges** (built in 591 s); sha256 root
 root `716bd94dc35e0c0e60a66ba6e19cd5debe570833c6c7f3d3f73c5152cad1d7ce`;
 order-independent, every pack concept reachable, top level unchanged.
 
+**Re-run with core v9, the sense list decided (2026-09-07, §13; modules
+regenerated in ontodag's working tree, ontodag-core 4830925, unreleased):**
+union **11,410 categories, 12,877 edges** (built in 584 s); sha256 root
+`871bdde8decc9f031dc24c709941a18691faef6aa3fd5a976c45c84a1262dd41`, Swarm/BMT
+root `8be693b30c0b4a7b1e396451a2c3dd50e59948e48af144631cff35e6d92c3186`;
+order-independent, every pack concept reachable, top level unchanged.
+
 ### 8.2 Shipped (ontodag 0.21.0, 2026-09-03)
 
 The ten packs ship in the ontodag wheel as `ontodag.domain.<name>`
