@@ -339,6 +339,17 @@ order-independent, top level unchanged.
 root `57910f88f2cbeea5372cbd3832e70926fee3c33834dcf1bc3a387fca153031c1`;
 order-independent, every pack concept reachable, top level unchanged.
 
+**Re-run with core v7, the services layer (2026-09-07, ontodag-core 2182c90,
+core and pack modules regenerated in ontodag's working tree, unreleased):**
+union **11,026 categories, 12,361 edges** (built in 254 s); sha256 root
+`2ce16c1545efaa446d2293590272b55e2609ea706401a1e77cf0e405fced29e2`, Swarm/BMT
+root `9b012fef1487c45c4ddd63f700707cca3304e2affd1fb63d8c53918bce15ba7a`; four shuffled orders and a
+re-merge give the same root, every pack concept present and reachable, top
+level core's ten roots plus `dimension`. (A first run against the shipped v6
+module had put `advertising`, `bookkeeping`, `packaging`, `storage` at top
+level — the names economics now borrows from core — which is the §8.1
+refinement-by-merge property showing, not a fault.)
+
 ### 8.2 Shipped (ontodag 0.21.0, 2026-09-03)
 
 The ten packs ship in the ontodag wheel as `ontodag.domain.<name>`
