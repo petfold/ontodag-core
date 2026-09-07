@@ -132,6 +132,7 @@ single	arroyo	physical-object	only wordnet
 single	arroyo	route	only opencyc
 single	arroyo	valley	only wordnet
 single	artificial-horizon	physical-object	only wordnet
+single	artificial-horizon	vehicle-body	only sumo
 single	ascent	geographical-area	only sumo
 single	ascent	geological-formation	only wordnet
 single	ascent	land	only sumo
@@ -152,6 +153,7 @@ single	atlas	mechanism	only sumo
 single	atlas	news	only sumo
 single	atlas	note	only sumo
 single	atlas	text	only sumo
+single	atlas	vehicle-body	only sumo
 single	atmospheric-electricity	process	only wordnet
 single	atmospheric-halo	event	only sumo
 single	atmospheric-halo	luminosity	only sumo
@@ -405,6 +407,7 @@ single	cloud-ceiling	quantity	only sumo
 single	cloudiness	natural-event	only wordnet
 single	cloudiness	process	only wordnet
 single	cloudiness	weather	only wordnet
+single	clunch	limestone	only wikidata
 single	coal-seam	layer	only wordnet
 single	coal-seam	physical-object	only wordnet
 single	coal-seam	place	only wordnet
@@ -433,9 +436,11 @@ single	compass	equipment	only wikidata
 single	compass	indication	only sumo
 single	compass	information	only sumo
 single	compass	tool	only wikidata
+single	compass	vehicle-body	only sumo
 single	compass-card	compass	only wordnet
 single	compass-card	instrument	only wordnet
 single	compass-card	physical-object	only wordnet
+single	compass-card	vehicle-body	only sumo
 single	compass-point	attribute	only sumo
 single	compass-point	property	only sumo
 single	condensation	event	only sumo
@@ -548,6 +553,7 @@ single	dell	geological-formation	only wordnet
 single	dell	landform	only wikidata
 single	dell	physical-object	only wordnet
 single	depth-finder	physical-object	only wordnet
+single	depth-finder	vehicle-body	only sumo
 single	desert	geographical-feature	only wikidata
 single	dew	compound	only sumo
 single	dew	material	only sumo
@@ -566,6 +572,7 @@ single	doldrums	event	only sumo
 single	doldrums	natural-event	only wordnet
 single	doldrums	process	only wordnet
 single	doldrums	weather	only wordnet
+single	dolomite	sedimentary-rock	only opencyc
 single	dormitory	geographical-area	only sumo
 single	downdraft	event	only sumo
 single	downdraft	natural-event	only wordnet
@@ -831,6 +838,7 @@ single	gazetteer	mechanism	only sumo
 single	gazetteer	news	only sumo
 single	gazetteer	note	only sumo
 single	gazetteer	text	only sumo
+single	gazetteer	vehicle-body	only sumo
 single	gentle-breeze	natural-event	only wordnet
 single	gentle-breeze	process	only wordnet
 single	gentle-breeze	weather	only wordnet
@@ -911,6 +919,7 @@ single	glen	physical-object	only wordnet
 single	glen	place	only yago
 single	global-positioning-system	device	only sumo
 single	global-positioning-system	physical-object	only wordnet
+single	global-positioning-system	vehicle-body	only sumo
 single	gnomonic-projection	map-projection	only opencyc
 single	good-weather	amateur	only sumo
 single	good-weather	ambiance	only sumo
@@ -943,6 +952,8 @@ single	gorge	physical-object	only wordnet
 single	gps-receiver	artifact	only opencyc
 single	gps-receiver	device	only opencyc
 single	gps-receiver	satellite-receiver	only opencyc
+single	granite	igneous-rock	only opencyc
+single	granite	rock-material	only wordnet
 single	grassland	physical-object	only wordnet
 single	grassland	place	only wordnet
 single	grassland	region	only wordnet
@@ -991,6 +1002,7 @@ single	guyot	physical-object	only wordnet
 single	gyrocompass	equipment	only wikidata
 single	gyrocompass	indication	only sumo
 single	gyrocompass	information	only sumo
+single	gyrocompass	vehicle-body	only sumo
 single	hail	event	only sumo
 single	hail	natural-event	only wordnet
 single	hail	process	only wordnet
@@ -1160,6 +1172,7 @@ single	igneous-sill	natural-object	only wordnet
 single	igneous-sill	physical-object	only wordnet
 single	igneous-sill	substance	only sumo
 single	inclinometer	equipment	only wikidata
+single	inclinometer	vehicle-body	only sumo
 single	index-fossil	physical-object	only wordnet
 single	inertial-navigation-system	artifact	only opencyc
 single	inertial-navigation-system	device	only opencyc
@@ -1319,6 +1332,8 @@ single	liman	estuary	only claude
 single	liman	geographical-area	only sumo
 single	liman	lake	only wordnet
 single	liman	place	only sumo
+single	limestone	rock-material	only wordnet
+single	limestone	sedimentary-rock	only opencyc
 single	limit	geographical-area	only sumo
 single	limnology	cognition	only wordnet
 single	limnology	natural-science	only wordnet
@@ -1380,6 +1395,7 @@ single	maar	yard	only sumo
 single	magnetic-compass	indication	only sumo
 single	magnetic-compass	information	only sumo
 single	magnetic-compass	instrument	only wordnet
+single	magnetic-compass	vehicle-body	only sumo
 single	magnetic-meridian	physical-object	only wordnet
 single	mainland	geographical-area	only sumo
 single	mainland	physical-object	only wordnet
@@ -1605,16 +1621,15 @@ single	oceanic-trench	physical-object	only wordnet
 single	oceanography	cognition	only wordnet
 single	oceanography	natural-science	only wordnet
 single	oceanography	science	only wordnet
-single	odometer	artifact	only opencyc
-single	odometer	device	only opencyc
-single	odometer	gauge	only opencyc
 single	offing	geographical-area	only sumo
 single	offing	place	only sumo
 single	omnirange	component	only sumo
 single	omnirange	device	only sumo
 single	omnirange	mechanism	only sumo
 single	omnirange	physical-object	only wordnet
+single	omnirange	vehicle-body	only sumo
 single	orbit	geographical-area	only sumo
+single	ore	rock-material	only wikidata
 single	ore-bed	geographical-area	only sumo
 single	ore-bed	layer	only wordnet
 single	ore-bed	physical-object	only wordnet
@@ -1696,9 +1711,6 @@ single	patio	geographical-area	only sumo
 single	peak	geographical-area	only sumo
 single	pebble	natural-object	only wordnet
 single	pebble	physical-object	only wordnet
-single	pedometer	artifact	only wikidata
-single	pedometer	equipment	only wikidata
-single	pedometer	physical-object	only wikidata
 single	peneplain	geographical-feature	only wikidata
 single	peneplain	land	only wordnet
 single	peneplain	landform	only wikidata
@@ -1960,6 +1972,7 @@ single	sandblast	natural-event	only wordnet
 single	sandblast	process	only wordnet
 single	sandblast	weather	only wordnet
 single	sandblast	wind	only wordnet
+single	sandstone	rock-material	only wordnet
 single	santa-ana	event	only sumo
 single	santa-ana	natural-event	only wordnet
 single	santa-ana	process	only wordnet
@@ -2058,6 +2071,8 @@ single	ski-slope	countryside	only opencyc
 single	ski-slope	geological-formation	only wordnet
 single	ski-slope	physical-object	only wordnet
 single	slack-water	event	only wordnet
+single	slate	metamorphic-rock	only wikidata
+single	slate	rock-material	only wordnet
 single	sleet	natural-event	only wordnet
 single	sleet	process	only wordnet
 single	sleet	weather	only wordnet
@@ -2081,6 +2096,7 @@ single	sonar	device	only wordnet
 single	sonar	noisemaker	only wikidata
 single	sonic-depth-finder	instrument	only wordnet
 single	sonic-depth-finder	physical-object	only wordnet
+single	sonic-depth-finder	vehicle-body	only sumo
 single	south	compass-point	only wordnet
 single	south-by-east	attribute	only sumo
 single	south-by-east	property	only sumo
@@ -2570,6 +2586,7 @@ single	whole-gale	wind	only wordnet
 single	wind-rose	device	only sumo
 single	wind-rose	map	only wordnet
 single	wind-rose	physical-object	only wordnet
+single	wind-rose	vehicle-body	only sumo
 single	windstorm	natural-event	only wordnet
 single	windstorm	process	only wordnet
 single	winter-solstice	quantity	only sumo

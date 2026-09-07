@@ -63,6 +63,7 @@ acting-out	procedure	single	sumo
 acting-out	volition	single	sumo	
 actinomycin	agent	single	wordnet	
 actinomycin	antibacterial	accepted	claude wordnet	
+actinomycin	antibiotic	accepted	sumo wordnet	
 actinomycin	drug	single	wordnet	
 actinomycin	material	single	sumo	
 actinomycin	medication	single	wordnet	
@@ -346,6 +347,7 @@ ammoniuria	symptom	accepted	claude wordnet
 ammoniuria	symptomatic-effect	single	sumo	
 amoxicillin	agent	single	wordnet	
 amoxicillin	antibacterial	single	wordnet	
+amoxicillin	antibiotic	single	wordnet	
 amoxicillin	drug	single	wordnet	
 amoxicillin	medication	single	wordnet	
 amoxicillin	medicine	single	opencyc	
@@ -354,6 +356,7 @@ amoxicillin	prescription-drug	single	opencyc
 amoxicillin	substance	single	wordnet	
 amphotericin	agent	single	wordnet	
 amphotericin	antibacterial	dissented	wordnet	
+amphotericin	antibiotic	accepted	sumo wordnet	
 amphotericin	drug	single	wordnet	
 amphotericin	material	single	sumo	
 amphotericin	medication	accepted	claude-ruling wordnet	
@@ -362,6 +365,7 @@ amphotericin	substance	accepted	sumo wordnet
 amphotericin	universe	single	sumo	
 ampicillin	agent	single	wordnet	
 ampicillin	antibacterial	single	wordnet	
+ampicillin	antibiotic	single	wordnet	
 ampicillin	drug	single	wordnet	
 ampicillin	medication	single	wordnet	
 ampicillin	medicine	single	opencyc	
@@ -524,12 +528,14 @@ antiarrhythmic	phenomenon	single	sumo
 antiarrhythmic	substance	accepted	sumo wordnet	
 antiarrhythmic	universe	single	sumo	
 antibacterial	agent	single	wordnet	
+antibacterial	antibiotic	disputed	sumo	wordnet
 antibacterial	drug	single	wordnet	
 antibacterial	material	single	sumo	
 antibacterial	medication	accepted	claude wordnet	
 antibacterial	phenomenon	single	sumo	
 antibacterial	substance	accepted	sumo wordnet	
 antibacterial	universe	single	sumo	
+antibiotic	antibacterial	disputed	wordnet	sumo
 antibody-affinity	attractive-force	single	wordnet	
 antibody-affinity	event	single	sumo	
 antibody-affinity	natural-event	accepted	claude-ruling wordnet	
@@ -616,6 +622,7 @@ antihypertensive	substance	accepted	sumo wordnet
 antihypertensive	universe	single	sumo	
 antimycin	agent	single	wordnet	
 antimycin	antibacterial	dissented	wordnet	
+antimycin	antibiotic	accepted	sumo wordnet	
 antimycin	drug	single	wordnet	
 antimycin	material	single	sumo	
 antimycin	medication	accepted	claude-ruling wordnet	
@@ -624,6 +631,7 @@ antimycin	substance	accepted	sumo wordnet
 antimycin	universe	single	sumo	
 antineoplastic-antibiotic	agent	single	wordnet	
 antineoplastic-antibiotic	antibacterial	dissented	wordnet	
+antineoplastic-antibiotic	antibiotic	accepted	sumo wordnet	
 antineoplastic-antibiotic	cytotoxic-drug	accepted	claude wordnet	
 antineoplastic-antibiotic	drug	single	wordnet	
 antineoplastic-antibiotic	material	single	sumo	
@@ -770,6 +778,7 @@ arthroscope	medical-instrument	single	wordnet
 arthroscope	phenomenon	single	sumo	
 arthroscope	physical-object	single	wordnet	
 arthroscope	universe	single	sumo	
+arthroscope	vehicle-body	single	sumo	
 arthroscopy	accomplishment	single	sumo	
 arthroscopy	act	accepted	sumo wordnet	
 arthroscopy	activity	accepted	sumo wordnet	
@@ -791,6 +800,7 @@ artificial-kidney	medical-instrument	single	wordnet
 artificial-kidney	phenomenon	single	sumo	
 artificial-kidney	physical-object	single	wordnet	
 artificial-kidney	universe	single	sumo	
+artificial-kidney	vehicle-body	single	sumo	
 aspergillosis	attribute	accepted	sumo wordnet	
 aspergillosis	condition	single	wordnet	
 aspergillosis	opportunistic-infection	accepted	claude wordnet	
@@ -874,6 +884,7 @@ autoinjector	phenomenon	single	sumo
 autoinjector	physical-object	single	wordnet	
 autoinjector	syringe	single	wordnet	
 autoinjector	universe	single	sumo	
+autoinjector	vehicle-body	single	sumo	
 autoplasty	accomplishment	single	sumo	
 autoplasty	act	accepted	sumo wordnet	
 autoplasty	activity	accepted	sumo wordnet	
@@ -911,6 +922,7 @@ azathioprine	substance	accepted	sumo wordnet
 azathioprine	universe	single	sumo	
 aztreonam	agent	single	wordnet	
 aztreonam	antibacterial	accepted	claude wordnet	
+aztreonam	antibiotic	accepted	sumo wordnet	
 aztreonam	drug	single	wordnet	
 aztreonam	material	single	sumo	
 aztreonam	medication	single	wordnet	
@@ -931,6 +943,7 @@ baby-doctor	professional	single	wordnet
 baby-doctor	property	single	sumo	
 bacitracin	agent	single	wordnet	
 bacitracin	antibacterial	accepted	claude wordnet	
+bacitracin	antibiotic	single	wordnet	
 bacitracin	drug	single	wordnet	
 bacitracin	medication	single	wordnet	
 bacitracin	substance	single	wordnet	
@@ -950,6 +963,7 @@ ballistocardiograph	medical-instrument	single	wordnet
 ballistocardiograph	phenomenon	single	sumo	
 ballistocardiograph	physical-object	single	wordnet	
 ballistocardiograph	universe	single	sumo	
+ballistocardiograph	vehicle-body	single	sumo	
 batch	quack	single	sumo	
 bee-sting	action	single	opencyc	
 bee-sting	attribute	single	wordnet	
@@ -1014,6 +1028,7 @@ black-eye	event	single	sumo
 black-eye	injury	accepted	sumo wordnet	
 black-eye	phenomenon	single	sumo	
 black-eye	state	single	wordnet	
+black-tea	medical-infusion	single	wikidata	
 blackwater-fever	attribute	accepted	sumo wordnet	
 blackwater-fever	condition	single	wordnet	
 blackwater-fever	disease	accepted	claude wordnet	
@@ -1158,6 +1173,7 @@ bronchoscope	medical-instrument	single	wordnet
 bronchoscope	phenomenon	single	sumo	
 bronchoscope	physical-object	single	wordnet	
 bronchoscope	universe	single	sumo	
+bronchoscope	vehicle-body	single	sumo	
 bruise	attribute	single	wordnet	
 bruise	condition	single	wordnet	
 bruise	event	single	sumo	
@@ -1220,6 +1236,7 @@ cancroid	tissue-growth	single	wordnet
 cancroid	tumor	single	wordnet	
 carbomycin	agent	single	wordnet	
 carbomycin	antibacterial	accepted	claude wordnet	
+carbomycin	antibiotic	accepted	sumo wordnet	
 carbomycin	drug	single	wordnet	
 carbomycin	material	single	sumo	
 carbomycin	medication	single	wordnet	
@@ -1263,6 +1280,7 @@ cardiograph	medical-instrument	single	wordnet
 cardiograph	phenomenon	single	sumo	
 cardiograph	physical-object	single	wordnet	
 cardiograph	universe	single	sumo	
+cardiograph	vehicle-body	single	sumo	
 cardiologist	adult	accepted	opencyc wordnet	
 cardiologist	agent	single	wordnet	
 cardiologist	attribute	single	sumo	
@@ -1368,6 +1386,7 @@ catling	surgical-instrument	single	wordnet
 catling	surgical-knife	accepted	claude wordnet	
 catling	tool	single	wordnet	
 catling	universe	single	sumo	
+catling	vehicle-body	single	sumo	
 cautery	accomplishment	single	sumo	
 cautery	act	accepted	sumo wordnet	
 cautery	activity	accepted	sumo wordnet	
@@ -1381,6 +1400,7 @@ cautery	therapy	single	sumo
 cautery	volition	single	sumo	
 cefadroxil	agent	single	wordnet	
 cefadroxil	antibacterial	single	wordnet	
+cefadroxil	antibiotic	accepted	sumo wordnet	
 cefadroxil	cephalosporin	accepted	opencyc wikidata wordnet	
 cefadroxil	drug	single	wordnet	
 cefadroxil	material	single	sumo	
@@ -1391,6 +1411,7 @@ cefadroxil	substance	accepted	sumo wordnet
 cefadroxil	universe	single	sumo	
 cefoperazone	agent	single	wordnet	
 cefoperazone	antibacterial	single	wordnet	
+cefoperazone	antibiotic	accepted	sumo wordnet	
 cefoperazone	cephalosporin	accepted	wikidata wordnet	
 cefoperazone	drug	single	wordnet	
 cefoperazone	material	single	sumo	
@@ -1401,6 +1422,7 @@ cefoperazone	substance	accepted	sumo wordnet
 cefoperazone	universe	single	sumo	
 cefotaxime	agent	single	wordnet	
 cefotaxime	antibacterial	single	wordnet	
+cefotaxime	antibiotic	accepted	sumo wordnet	
 cefotaxime	cephalosporin	accepted	wikidata wordnet	
 cefotaxime	drug	single	wordnet	
 cefotaxime	material	single	sumo	
@@ -1411,6 +1433,7 @@ cefotaxime	substance	accepted	sumo wordnet
 cefotaxime	universe	single	sumo	
 ceftazidime	agent	single	wordnet	
 ceftazidime	antibacterial	single	wordnet	
+ceftazidime	antibiotic	accepted	sumo wordnet	
 ceftazidime	cephalosporin	accepted	wikidata wordnet	
 ceftazidime	drug	single	wordnet	
 ceftazidime	material	single	sumo	
@@ -1421,6 +1444,7 @@ ceftazidime	substance	accepted	sumo wordnet
 ceftazidime	universe	single	sumo	
 ceftriaxone	agent	single	wordnet	
 ceftriaxone	antibacterial	single	wordnet	
+ceftriaxone	antibiotic	accepted	sumo wordnet	
 ceftriaxone	cephalosporin	accepted	wikidata wordnet	
 ceftriaxone	drug	single	wordnet	
 ceftriaxone	material	single	sumo	
@@ -1431,6 +1455,7 @@ ceftriaxone	substance	accepted	sumo wordnet
 ceftriaxone	universe	single	sumo	
 cefuroxime	agent	single	wordnet	
 cefuroxime	antibacterial	single	wordnet	
+cefuroxime	antibiotic	single	wordnet	
 cefuroxime	cephalosporin	accepted	opencyc wikidata wordnet	
 cefuroxime	drug	single	wordnet	
 cefuroxime	material	single	sumo	
@@ -1447,6 +1472,7 @@ centesis	phenomenon	single	sumo
 centesis	visit	single	sumo	
 cephalexin	agent	single	wordnet	
 cephalexin	antibacterial	single	wordnet	
+cephalexin	antibiotic	single	wordnet	
 cephalexin	cephalosporin	accepted	opencyc wikidata wordnet	
 cephalexin	drug	single	wordnet	
 cephalexin	medication	single	wordnet	
@@ -1454,6 +1480,7 @@ cephalexin	medicine	single	opencyc
 cephalexin	substance	single	wordnet	
 cephaloglycin	agent	single	wordnet	
 cephaloglycin	antibacterial	accepted	claude wordnet	
+cephaloglycin	antibiotic	accepted	sumo wordnet	
 cephaloglycin	drug	single	wordnet	
 cephaloglycin	material	single	sumo	
 cephaloglycin	medication	single	wordnet	
@@ -1462,6 +1489,7 @@ cephaloglycin	substance	accepted	sumo wordnet
 cephaloglycin	universe	single	sumo	
 cephaloridine	agent	single	wordnet	
 cephaloridine	antibacterial	accepted	claude wordnet	
+cephaloridine	antibiotic	accepted	sumo wordnet	
 cephaloridine	drug	single	wordnet	
 cephaloridine	material	single	sumo	
 cephaloridine	medication	single	wordnet	
@@ -1470,6 +1498,7 @@ cephaloridine	substance	accepted	sumo wordnet
 cephaloridine	universe	single	sumo	
 cephalosporin	agent	single	wordnet	
 cephalosporin	antibacterial	accepted	claude wordnet	
+cephalosporin	antibiotic	accepted	sumo wordnet	
 cephalosporin	drug	single	wordnet	
 cephalosporin	material	single	sumo	
 cephalosporin	medication	single	wordnet	
@@ -1479,6 +1508,7 @@ cephalosporin	substance	accepted	sumo wordnet
 cephalosporin	universe	single	sumo	
 cephalothin	agent	single	wordnet	
 cephalothin	antibacterial	single	wordnet	
+cephalothin	antibiotic	single	wordnet	
 cephalothin	cephalosporin	accepted	claude wordnet	
 cephalothin	drug	single	wordnet	
 cephalothin	material	single	sumo	
@@ -1579,6 +1609,7 @@ chloasma	phenomenon	single	sumo
 chloasma	symptom	accepted	claude wordnet	
 chloramphenicol	agent	single	wordnet	
 chloramphenicol	antibacterial	accepted	claude wordnet	
+chloramphenicol	antibiotic	accepted	sumo wordnet	
 chloramphenicol	drug	single	wordnet	
 chloramphenicol	material	single	sumo	
 chloramphenicol	medication	single	wordnet	
@@ -1587,6 +1618,7 @@ chloramphenicol	substance	accepted	sumo wordnet
 chloramphenicol	universe	single	sumo	
 chlortetracycline	agent	single	wordnet	
 chlortetracycline	antibacterial	accepted	claude wordnet	
+chlortetracycline	antibiotic	accepted	sumo wordnet	
 chlortetracycline	drug	single	wordnet	
 chlortetracycline	material	single	sumo	
 chlortetracycline	medication	single	wordnet	
@@ -1677,6 +1709,7 @@ chrysotherapy	visit	single	sumo
 chrysotherapy	work	single	wordnet	
 ciprofloxacin	agent	single	wordnet	
 ciprofloxacin	antibacterial	accepted	claude wordnet	
+ciprofloxacin	antibiotic	single	wordnet	
 ciprofloxacin	drug	single	wordnet	
 ciprofloxacin	medication	single	wordnet	
 ciprofloxacin	medicine	single	opencyc	
@@ -1799,6 +1832,7 @@ colonoscope	medical-instrument	single	wordnet
 colonoscope	phenomenon	single	sumo	
 colonoscope	physical-object	single	wordnet	
 colonoscope	universe	single	sumo	
+colonoscope	vehicle-body	single	sumo	
 color	quack	single	sumo	
 colostomy	accomplishment	single	sumo	
 colostomy	act	accepted	sumo wordnet	
@@ -2035,6 +2069,7 @@ culdoscope	medical-instrument	single	wordnet
 culdoscope	phenomenon	single	sumo	
 culdoscope	physical-object	single	wordnet	
 culdoscope	universe	single	sumo	
+culdoscope	vehicle-body	single	sumo	
 curettage	act	single	wordnet	
 curettage	activity	single	wordnet	
 curettage	event	accepted	sumo wordnet	
@@ -2050,6 +2085,7 @@ curette	phenomenon	single	sumo
 curette	physical-object	single	wordnet	
 curette	surgical-instrument	accepted	claude wordnet	
 curette	universe	single	sumo	
+curette	vehicle-body	single	sumo	
 cutaneous-leishmaniasis	attribute	accepted	sumo wordnet	
 cutaneous-leishmaniasis	condition	single	wordnet	
 cutaneous-leishmaniasis	leishmaniasis	accepted	claude wordnet	
@@ -2078,6 +2114,7 @@ cyclodestructive-surgery	therapy	single	sumo
 cyclodestructive-surgery	volition	single	sumo	
 cycloserine	agent	single	wordnet	
 cycloserine	antibacterial	accepted	claude wordnet	
+cycloserine	antibiotic	accepted	sumo wordnet	
 cycloserine	drug	single	wordnet	
 cycloserine	material	single	sumo	
 cycloserine	medication	single	wordnet	
@@ -2183,6 +2220,7 @@ dental-appliance	device	accepted	opencyc sumo wordnet
 dental-appliance	phenomenon	single	sumo	
 dental-appliance	physical-object	single	wordnet	
 dental-appliance	universe	single	sumo	
+dental-appliance	vehicle-body	single	sumo	
 dental-bonding	cognition	single	wordnet	
 dental-bonding	measure	single	sumo	
 dental-bonding	method	accepted	claude wordnet	
@@ -2194,6 +2232,7 @@ dental-crown	device	single	wordnet
 dental-crown	phenomenon	single	sumo	
 dental-crown	physical-object	single	wordnet	
 dental-crown	universe	single	sumo	
+dental-crown	vehicle-body	single	sumo	
 dental-filling	artifact	single	wordnet	
 dental-filling	dental-appliance	accepted	claude wordnet	
 dental-filling	device	single	wordnet	
@@ -2301,6 +2340,7 @@ dermatome	phenomenon	single	sumo
 dermatome	physical-object	single	wordnet	
 dermatome	surgical-instrument	accepted	claude wordnet	
 dermatome	universe	single	sumo	
+dermatome	vehicle-body	single	sumo	
 desensitization-technique	accomplishment	single	sumo	
 desensitization-technique	act	accepted	sumo wordnet	
 desensitization-technique	activity	accepted	sumo wordnet	
@@ -2340,6 +2380,7 @@ dialyzer	medical-instrument	single	wordnet
 dialyzer	phenomenon	single	sumo	
 dialyzer	physical-object	single	wordnet	
 dialyzer	universe	single	sumo	
+dialyzer	vehicle-body	single	sumo	
 diaphoretic	agent	single	wordnet	
 diaphoretic	drug	single	wordnet	
 diaphoretic	material	single	sumo	
@@ -2369,6 +2410,7 @@ diathermy-machine	medical-instrument	single	wordnet
 diathermy-machine	phenomenon	single	sumo	
 diathermy-machine	physical-object	single	wordnet	
 diathermy-machine	universe	single	sumo	
+diathermy-machine	vehicle-body	single	sumo	
 difficulty	quack	single	sumo	
 digital-clubbing	cognition	single	wordnet	
 digital-clubbing	event	single	sumo	
@@ -2378,6 +2420,7 @@ digital-clubbing	symptom	accepted	claude wordnet
 dignity	quack	single	sumo	
 dihydrostreptomycin	agent	single	wordnet	
 dihydrostreptomycin	antibacterial	accepted	claude wordnet	
+dihydrostreptomycin	antibiotic	accepted	sumo wordnet	
 dihydrostreptomycin	drug	single	wordnet	
 dihydrostreptomycin	material	single	sumo	
 dihydrostreptomycin	medication	single	wordnet	
@@ -2402,6 +2445,7 @@ dilator	phenomenon	single	sumo
 dilator	physical-object	single	wordnet	
 dilator	surgical-instrument	accepted	claude wordnet	
 dilator	universe	single	sumo	
+dilator	vehicle-body	single	sumo	
 dilemma	quack	single	sumo	
 diplomate	adult	single	wordnet	
 diplomate	agent	single	wordnet	
@@ -2512,8 +2556,10 @@ douche	physical-object	single	wordnet
 douche	shower	dissented	wikidata	
 douche	syringe	accepted	claude wordnet	
 douche	universe	single	sumo	
+douche	vehicle-body	single	sumo	
 doxorubicin	agent	single	wordnet	
 doxorubicin	antibacterial	dissented	wordnet	
+doxorubicin	antibiotic	accepted	sumo wordnet	
 doxorubicin	cytotoxic-drug	accepted	claude-ruling	
 doxorubicin	drug	single	wordnet	
 doxorubicin	material	single	sumo	
@@ -2523,6 +2569,7 @@ doxorubicin	substance	accepted	sumo wordnet
 doxorubicin	universe	single	sumo	
 doxycycline	agent	single	wordnet	
 doxycycline	antibacterial	accepted	claude wordnet	
+doxycycline	antibiotic	single	wordnet	
 doxycycline	drug	single	wordnet	
 doxycycline	medication	single	wordnet	
 doxycycline	medicine	single	opencyc	
@@ -2686,6 +2733,7 @@ electroencephalograph	medical-instrument	single	wordnet
 electroencephalograph	phenomenon	single	sumo	
 electroencephalograph	physical-object	single	wordnet	
 electroencephalograph	universe	single	sumo	
+electroencephalograph	vehicle-body	single	sumo	
 electrologist	adult	single	wordnet	
 electrologist	agent	single	wordnet	
 electrologist	attribute	single	sumo	
@@ -2701,6 +2749,7 @@ electromyograph	medical-instrument	single	wordnet
 electromyograph	phenomenon	single	sumo	
 electromyograph	physical-object	single	wordnet	
 electromyograph	universe	single	sumo	
+electromyograph	vehicle-body	single	sumo	
 electrosurgery	accomplishment	single	sumo	
 electrosurgery	act	accepted	sumo wordnet	
 electrosurgery	activity	accepted	sumo wordnet	
@@ -2887,6 +2936,7 @@ endoscope	medical-instrument	single	wordnet
 endoscope	phenomenon	single	sumo	
 endoscope	physical-object	single	wordnet	
 endoscope	universe	single	sumo	
+endoscope	vehicle-body	single	sumo	
 enervation	ablation	single	claude	
 enterobiasis	amateur	single	sumo	
 enterobiasis	ambiance	single	sumo	
@@ -2989,6 +3039,7 @@ epithelioma	tumor	single	wordnet
 equilibrium	quack	single	sumo	
 erythromycin	agent	single	wordnet	
 erythromycin	antibacterial	accepted	claude wordnet	
+erythromycin	antibiotic	accepted	sumo wordnet	
 erythromycin	drug	single	wordnet	
 erythromycin	material	single	sumo	
 erythromycin	medication	single	wordnet	
@@ -3259,6 +3310,7 @@ fetoscope	phenomenon	single	sumo
 fetoscope	physical-object	single	wordnet	
 fetoscope	stethoscope	accepted	claude wordnet	
 fetoscope	universe	single	sumo	
+fetoscope	vehicle-body	single	sumo	
 fever	clinical-sign	accepted	claude wikidata	
 fiberscope	artifact	accepted	sumo wordnet	
 fiberscope	device	accepted	sumo wordnet	
@@ -3268,6 +3320,7 @@ fiberscope	medical-instrument	single	wordnet
 fiberscope	phenomenon	single	sumo	
 fiberscope	physical-object	single	wordnet	
 fiberscope	universe	single	sumo	
+fiberscope	vehicle-body	single	sumo	
 fibrocystic-breast-disease	attribute	accepted	sumo wordnet	
 fibrocystic-breast-disease	condition	single	wordnet	
 fibrocystic-breast-disease	disease	accepted	claude wordnet	
@@ -3283,6 +3336,7 @@ field-hospital	phenomenon	single	sumo
 field-hospital	physical-object	single	wordnet	
 field-hospital	structure	single	wordnet	
 field-hospital	universe	single	sumo	
+field-hospital	vehicle-body	single	sumo	
 field-hospital	workplace	single	wikidata	
 filariasis	attribute	accepted	sumo wordnet	
 filariasis	condition	single	wordnet	
@@ -3366,6 +3420,7 @@ formulary	phenomenon	single	sumo
 formulary	physical-object	accepted	sumo wordnet	
 formulary	publication	single	wordnet	
 formulary	universe	single	sumo	
+formulary	vehicle-body	single	sumo	
 forte	quack	single	sumo	
 fortune	quack	single	sumo	
 foster-nurse	nurse	single	claude	
@@ -3480,6 +3535,7 @@ gastroscope	medical-instrument	single	wordnet
 gastroscope	phenomenon	single	sumo	
 gastroscope	physical-object	single	wordnet	
 gastroscope	universe	single	sumo	
+gastroscope	vehicle-body	single	sumo	
 gastrostomy	accomplishment	single	sumo	
 gastrostomy	act	accepted	sumo wordnet	
 gastrostomy	activity	accepted	sumo wordnet	
@@ -3491,12 +3547,13 @@ gastrostomy	repair	single	sumo
 gastrostomy	restoration	single	sumo	
 gastrostomy	therapy	single	sumo	
 gastrostomy	volition	single	sumo	
-gauze	artifact	accepted	sumo wordnet	
-gauze	cotton	accepted	claude wordnet	
-gauze	fabric	accepted	sumo wordnet	
-gauze	phenomenon	single	sumo	
-gauze	physical-object	single	wordnet	
-gauze	universe	single	sumo	
+gauze-bandage	artifact	accepted	sumo wordnet	
+gauze-bandage	cotton	accepted	claude wordnet	
+gauze-bandage	fabric	accepted	sumo wordnet	
+gauze-bandage	phenomenon	single	sumo	
+gauze-bandage	physical-object	single	wordnet	
+gauze-bandage	universe	single	sumo	
+gauze-bandage	vehicle-body	single	sumo	
 gemfibrozil	agent	single	wordnet	
 gemfibrozil	drug	single	wordnet	
 gemfibrozil	material	single	sumo	
@@ -3531,6 +3588,7 @@ genetic-disease	state	single	wordnet
 genetic-disease	symptomatic-effect	single	sumo	
 gentamicin	agent	single	wordnet	
 gentamicin	antibacterial	accepted	claude wordnet	
+gentamicin	antibiotic	accepted	sumo wikidata wordnet	
 gentamicin	drug	accepted	wikidata wordnet	
 gentamicin	material	single	sumo	
 gentamicin	medication	accepted	wikidata wordnet	
@@ -3604,6 +3662,7 @@ graduate-nurse	vertebrate	single	opencyc
 graduate-nurse	worker	single	opencyc	
 gramicidin	agent	single	wordnet	
 gramicidin	antibacterial	accepted	claude wordnet	
+gramicidin	antibiotic	accepted	sumo wordnet	
 gramicidin	antiseptic	accepted	claude wordnet	
 gramicidin	chemical	accepted	claude wikidata	
 gramicidin	drug	single	wordnet	
@@ -3632,6 +3691,7 @@ greenstick-fracture	state	single	wordnet
 grip	quack	single	sumo	
 griseofulvin	agent	single	wordnet	
 griseofulvin	antibacterial	single	wordnet	
+griseofulvin	antibiotic	single	wordnet	
 griseofulvin	drug	single	wordnet	
 griseofulvin	medication	accepted	claude-ruling wordnet	
 griseofulvin	penicillin	dissented	wordnet	
@@ -3872,6 +3932,7 @@ hemostat	phenomenon	single	sumo
 hemostat	physical-object	single	wordnet	
 hemostat	surgical-instrument	accepted	claude wordnet	
 hemostat	universe	single	sumo	
+hemostat	vehicle-body	single	sumo	
 hepatoma	attribute	accepted	sumo wordnet	
 hepatoma	cancer	single	wordnet	
 hepatoma	carcinoma	accepted	claude wordnet	
@@ -3908,6 +3969,7 @@ hernia-truss	fabric	single	sumo
 hernia-truss	phenomenon	single	sumo	
 hernia-truss	physical-object	single	wordnet	
 hernia-truss	universe	single	sumo	
+hernia-truss	vehicle-body	single	sumo	
 herniated-disc	attribute	single	wordnet	
 herniated-disc	condition	single	wordnet	
 herniated-disc	event	single	sumo	
@@ -4129,6 +4191,7 @@ hypodermic-syringe	phenomenon	single	sumo
 hypodermic-syringe	physical-object	single	wordnet	
 hypodermic-syringe	syringe	accepted	claude wordnet	
 hypodermic-syringe	universe	single	sumo	
+hypodermic-syringe	vehicle-body	single	sumo	
 hypoglycemia	cognition	single	wordnet	
 hypoglycemia	event	accepted	opencyc sumo	
 hypoglycemia	evidence	single	wordnet	
@@ -4410,6 +4473,7 @@ inlay	device	accepted	sumo wordnet
 inlay	phenomenon	single	sumo	
 inlay	physical-object	single	wordnet	
 inlay	universe	single	sumo	
+inlay	vehicle-body	single	sumo	
 inoculator	adult	single	wordnet	
 inoculator	agent	single	wordnet	
 inoculator	attribute	single	sumo	
@@ -4612,6 +4676,7 @@ kaliuresis	phenomenon	single	sumo
 kaliuresis	symptom	accepted	claude wordnet	
 kanamycin	agent	single	wordnet	
 kanamycin	antibacterial	accepted	claude wordnet	
+kanamycin	antibiotic	accepted	sumo wordnet	
 kanamycin	chemical	accepted	claude wikidata	
 kanamycin	drug	single	wordnet	
 kanamycin	material	single	sumo	
@@ -4680,6 +4745,7 @@ keratoscope	medical-instrument	single	wordnet
 keratoscope	phenomenon	single	sumo	
 keratoscope	physical-object	single	wordnet	
 keratoscope	universe	single	sumo	
+keratoscope	vehicle-body	single	sumo	
 keratotomy	accomplishment	single	sumo	
 keratotomy	act	accepted	sumo wordnet	
 keratotomy	activity	accepted	sumo wordnet	
@@ -4758,6 +4824,7 @@ lancet	surgical-instrument	single	wordnet
 lancet	surgical-knife	accepted	claude wordnet	
 lancet	tool	single	wordnet	
 lancet	universe	single	sumo	
+lancet	vehicle-body	single	sumo	
 laparocele	attribute	single	wordnet	
 laparocele	condition	single	wordnet	
 laparocele	event	single	sumo	
@@ -4774,6 +4841,7 @@ laparoscope	medical-instrument	single	wordnet
 laparoscope	phenomenon	single	sumo	
 laparoscope	physical-object	single	wordnet	
 laparoscope	universe	single	sumo	
+laparoscope	vehicle-body	single	sumo	
 laparoscopic-cholecystectomy	ablation	single	wordnet	
 laparoscopic-cholecystectomy	act	single	wordnet	
 laparoscopic-cholecystectomy	activity	single	wordnet	
@@ -4799,6 +4867,7 @@ laryngoscope	medical-instrument	single	wordnet
 laryngoscope	phenomenon	single	sumo	
 laryngoscope	physical-object	single	wordnet	
 laryngoscope	universe	single	sumo	
+laryngoscope	vehicle-body	single	sumo	
 laser-assisted-in-situ-keratomileusis	accomplishment	single	sumo	
 laser-assisted-in-situ-keratomileusis	act	accepted	sumo wordnet	
 laser-assisted-in-situ-keratomileusis	activity	accepted	sumo wordnet	
@@ -4854,6 +4923,7 @@ lazaretto	physical-object	single	wordnet
 lazaretto	place	single	yago	
 lazaretto	structure	single	wordnet	
 lazaretto	universe	single	sumo	
+lazaretto	vehicle-body	single	sumo	
 lazaretto	workplace	single	wikidata	
 leiomyosarcoma	attribute	accepted	sumo wordnet	
 leiomyosarcoma	cancer	single	wordnet	
@@ -4910,9 +4980,11 @@ lie-detector	phenomenon	single	sumo
 lie-detector	physical-object	single	wordnet	
 lie-detector	polygraph	accepted	claude wordnet	
 lie-detector	universe	single	sumo	
+lie-detector	vehicle-body	single	sumo	
 limitation	quack	single	sumo	
 lincomycin	agent	single	wordnet	
 lincomycin	antibacterial	accepted	claude wordnet	
+lincomycin	antibiotic	accepted	sumo wordnet	
 lincomycin	drug	single	wordnet	
 lincomycin	material	single	sumo	
 lincomycin	medication	single	wordnet	
@@ -5204,6 +5276,7 @@ maternity-hospital	physical-object	single	wordnet
 maternity-hospital	place	accepted	sumo yago	
 maternity-hospital	structure	single	wordnet	
 maternity-hospital	universe	single	sumo	
+maternity-hospital	vehicle-body	single	sumo	
 meckel's-diverticulum	attribute	single	wordnet	
 meckel's-diverticulum	condition	single	wordnet	
 meckel's-diverticulum	diverticulum	accepted	claude wordnet	
@@ -5420,6 +5493,7 @@ methacholine	substance	accepted	sumo wordnet
 methacholine	universe	single	sumo	
 methicillin	agent	single	wordnet	
 methicillin	antibacterial	single	wordnet	
+methicillin	antibiotic	single	wordnet	
 methicillin	drug	single	wordnet	
 methicillin	medication	single	wordnet	
 methicillin	medicine	single	opencyc	
@@ -5465,6 +5539,7 @@ microwave-diathermy-machine	medical-instrument	single	wordnet
 microwave-diathermy-machine	phenomenon	single	sumo	
 microwave-diathermy-machine	physical-object	single	wordnet	
 microwave-diathermy-machine	universe	single	sumo	
+microwave-diathermy-machine	vehicle-body	single	sumo	
 midwife	adult	accepted	opencyc wordnet	
 midwife	agent	single	wordnet	
 midwife	attribute	single	sumo	
@@ -5492,6 +5567,7 @@ military-hospital	physical-object	single	wordnet
 military-hospital	place	accepted	sumo yago	
 military-hospital	structure	single	wordnet	
 military-hospital	universe	single	sumo	
+military-hospital	vehicle-body	single	sumo	
 military-hospital	workplace	single	wikidata	
 milk-sickness	attribute	accepted	sumo wordnet	
 milk-sickness	condition	single	wordnet	
@@ -5530,6 +5606,7 @@ misery	quack	single	sumo
 mistake	quack	single	sumo	
 mithramycin	agent	single	wordnet	
 mithramycin	antibacterial	single	wordnet	
+mithramycin	antibiotic	single	wordnet	
 mithramycin	antineoplastic-antibiotic	accepted	claude wordnet	
 mithramycin	cytotoxic-drug	single	wordnet	
 mithramycin	drug	single	wordnet	
@@ -5540,6 +5617,7 @@ mithramycin	substance	accepted	sumo wordnet
 mithramycin	universe	single	sumo	
 mitomycin	agent	single	wordnet	
 mitomycin	antibacterial	dissented	wordnet	
+mitomycin	antibiotic	accepted	sumo wordnet	
 mitomycin	cytotoxic-drug	accepted	claude-ruling	
 mitomycin	drug	single	wordnet	
 mitomycin	material	single	sumo	
@@ -5610,6 +5688,7 @@ muscle-strain	phenomenon	single	sumo
 muscle-strain	state	single	wordnet	
 mycomycin	agent	single	wordnet	
 mycomycin	antibacterial	accepted	claude wordnet	
+mycomycin	antibiotic	accepted	sumo wordnet	
 mycomycin	drug	single	wordnet	
 mycomycin	material	single	sumo	
 mycomycin	medication	single	wordnet	
@@ -5704,11 +5783,13 @@ myringotomy	volition	single	sumo
 mystery	quack	single	sumo	
 nafcillin	agent	single	wordnet	
 nafcillin	antibacterial	single	wordnet	
+nafcillin	antibiotic	single	wordnet	
 nafcillin	drug	single	wordnet	
 nafcillin	medication	single	wordnet	
 nafcillin	penicillin	accepted	wikidata wordnet	
 nafcillin	penicillinase-resistant-antibiotic	accepted	claude wordnet	
 nafcillin	substance	single	wordnet	
+napkin	hygiene	single	wikidata	
 natriuresis	cognition	single	wordnet	
 natriuresis	event	single	sumo	
 natriuresis	evidence	single	wordnet	
@@ -5718,6 +5799,7 @@ nausea	clinical-sign	dissented	wikidata
 nebula.state	symptom	single	claude	
 neomycin	agent	single	wordnet	
 neomycin	antibacterial	accepted	claude wordnet	
+neomycin	antibiotic	accepted	sumo wordnet	
 neomycin	antiseptic	accepted	claude wordnet	
 neomycin	drug	single	wordnet	
 neomycin	material	single	sumo	
@@ -5892,6 +5974,7 @@ nosology	science	single	wordnet
 nosology	signified	single	sumo	
 novobiocin	agent	single	wordnet	
 novobiocin	antibacterial	accepted	claude wordnet	
+novobiocin	antibiotic	accepted	sumo wordnet	
 novobiocin	drug	single	wordnet	
 novobiocin	material	single	sumo	
 novobiocin	medication	single	wordnet	
@@ -5956,6 +6039,7 @@ nux-vomica	substance	accepted	sumo wordnet
 nux-vomica	universe	single	sumo	
 nystatin	agent	single	wordnet	
 nystatin	antibacterial	dissented	wordnet	
+nystatin	antibiotic	accepted	sumo wordnet	
 nystatin	drug	single	wordnet	
 nystatin	material	single	sumo	
 nystatin	medication	accepted	claude-ruling wordnet	
@@ -6261,6 +6345,7 @@ orthoscope	ophthalmoscope	accepted	claude wordnet
 orthoscope	phenomenon	single	sumo	
 orthoscope	physical-object	single	wordnet	
 orthoscope	universe	single	sumo	
+orthoscope	vehicle-body	single	sumo	
 osteosarcoma	attribute	accepted	sumo wordnet	
 osteosarcoma	cancer	single	wordnet	
 osteosarcoma	condition	single	wordnet	
@@ -6347,6 +6432,7 @@ overcompensation	process	single	wordnet
 overcompensation	psychological-compensation	accepted	claude wordnet	
 oxacillin	agent	single	wordnet	
 oxacillin	antibacterial	single	wordnet	
+oxacillin	antibiotic	single	wordnet	
 oxacillin	drug	single	wordnet	
 oxacillin	medication	single	wordnet	
 oxacillin	medicine	single	opencyc	
@@ -6355,6 +6441,7 @@ oxacillin	penicillinase-resistant-antibiotic	accepted	claude wordnet
 oxacillin	substance	single	wordnet	
 oxytetracycline	agent	single	wordnet	
 oxytetracycline	antibacterial	accepted	claude wordnet	
+oxytetracycline	antibiotic	accepted	sumo wordnet	
 oxytetracycline	drug	single	wordnet	
 oxytetracycline	material	single	sumo	
 oxytetracycline	medication	single	wordnet	
@@ -6551,6 +6638,7 @@ penicillamine	substance	accepted	sumo wordnet
 penicillamine	universe	single	sumo	
 penicillin	agent	single	wordnet	
 penicillin	antibacterial	accepted	claude wordnet	
+penicillin	antibiotic	single	wordnet	
 penicillin	drug	single	wordnet	
 penicillin	medication	single	wordnet	
 penicillin	medicine	single	opencyc	
@@ -6558,30 +6646,35 @@ penicillin	prescription-drug	single	opencyc
 penicillin	substance	single	wordnet	
 penicillin-f	agent	single	wordnet	
 penicillin-f	antibacterial	single	wordnet	
+penicillin-f	antibiotic	single	wordnet	
 penicillin-f	drug	single	wordnet	
 penicillin-f	medication	single	wordnet	
 penicillin-f	penicillin	accepted	claude wordnet	
 penicillin-f	substance	single	wordnet	
 penicillin-g	agent	single	wordnet	
 penicillin-g	antibacterial	single	wordnet	
+penicillin-g	antibiotic	single	wordnet	
 penicillin-g	drug	single	wordnet	
 penicillin-g	medication	single	wordnet	
 penicillin-g	penicillin	accepted	claude wordnet	
 penicillin-g	substance	single	wordnet	
 penicillin-o	agent	single	wordnet	
 penicillin-o	antibacterial	single	wordnet	
+penicillin-o	antibiotic	single	wordnet	
 penicillin-o	drug	single	wordnet	
 penicillin-o	medication	single	wordnet	
 penicillin-o	penicillin	accepted	claude wordnet	
 penicillin-o	substance	single	wordnet	
 penicillin-v	agent	single	wordnet	
 penicillin-v	antibacterial	single	wordnet	
+penicillin-v	antibiotic	single	wordnet	
 penicillin-v	drug	single	wordnet	
 penicillin-v	medication	single	wordnet	
 penicillin-v	penicillin	accepted	claude wordnet	
 penicillin-v	substance	single	wordnet	
 penicillin-v-potassium	agent	single	wordnet	
 penicillin-v-potassium	antibacterial	single	wordnet	
+penicillin-v-potassium	antibiotic	single	wordnet	
 penicillin-v-potassium	drug	single	wordnet	
 penicillin-v-potassium	medication	single	wordnet	
 penicillin-v-potassium	penicillin	single	wordnet	
@@ -6589,6 +6682,7 @@ penicillin-v-potassium	penicillin-v	accepted	claude wordnet
 penicillin-v-potassium	substance	single	wordnet	
 penicillinase-resistant-antibiotic	agent	single	wordnet	
 penicillinase-resistant-antibiotic	antibacterial	single	wordnet	
+penicillinase-resistant-antibiotic	antibiotic	single	wordnet	
 penicillinase-resistant-antibiotic	drug	single	wordnet	
 penicillinase-resistant-antibiotic	medication	single	wordnet	
 penicillinase-resistant-antibiotic	penicillin	accepted	claude wordnet	
@@ -6797,6 +6891,7 @@ photocoagulator	phenomenon	single	sumo
 photocoagulator	physical-object	single	wordnet	
 photocoagulator	surgical-instrument	accepted	claude wordnet	
 photocoagulator	universe	single	sumo	
+photocoagulator	vehicle-body	single	sumo	
 phototherapy	act	single	wordnet	
 phototherapy	activity	single	wordnet	
 phototherapy	event	accepted	sumo wordnet	
@@ -6865,6 +6960,7 @@ pinch-injury	phenomenon	single	sumo
 pinch-injury	state	single	wordnet	
 piperacillin	agent	single	wordnet	
 piperacillin	antibacterial	single	wordnet	
+piperacillin	antibiotic	single	wordnet	
 piperacillin	drug	single	wordnet	
 piperacillin	medication	single	wordnet	
 piperacillin	medicine	single	opencyc	
@@ -6963,8 +7059,10 @@ polygraph	phenomenon	single	sumo
 polygraph	physical-object	accepted	wikidata wordnet	
 polygraph	tool	single	wikidata	
 polygraph	universe	single	sumo	
+polygraph	vehicle-body	single	sumo	
 polymyxin	agent	single	wordnet	
 polymyxin	antibacterial	accepted	claude wordnet	
+polymyxin	antibiotic	accepted	sumo wordnet	
 polymyxin	drug	single	wordnet	
 polymyxin	material	single	sumo	
 polymyxin	medication	single	wordnet	
@@ -7040,6 +7138,7 @@ primary-care-physician	physical-object	single	wordnet
 primary-care-physician	professional	single	wordnet	
 primaxin	agent	single	wordnet	
 primaxin	antibacterial	accepted	claude wordnet	
+primaxin	antibiotic	accepted	sumo wordnet	
 primaxin	drug	single	wordnet	
 primaxin	material	single	sumo	
 primaxin	medication	single	wordnet	
@@ -7106,6 +7205,7 @@ proctoscope	medical-instrument	single	wordnet
 proctoscope	phenomenon	single	sumo	
 proctoscope	physical-object	single	wordnet	
 proctoscope	universe	single	sumo	
+proctoscope	vehicle-body	single	sumo	
 prodrome	cognition	single	wordnet	
 prodrome	event	single	sumo	
 prodrome	evidence	single	wordnet	
@@ -7356,6 +7456,7 @@ pyemia	state	single	wordnet
 pyemia	symptomatic-effect	single	sumo	
 pyocyanase	agent	single	wordnet	
 pyocyanase	antibacterial	accepted	claude wordnet	
+pyocyanase	antibiotic	accepted	sumo wordnet	
 pyocyanase	drug	single	wordnet	
 pyocyanase	material	single	sumo	
 pyocyanase	medication	single	wordnet	
@@ -7364,6 +7465,7 @@ pyocyanase	substance	accepted	sumo wordnet
 pyocyanase	universe	single	sumo	
 pyocyanin	agent	single	wordnet	
 pyocyanin	antibacterial	accepted	claude wordnet	
+pyocyanin	antibiotic	accepted	sumo wordnet	
 pyocyanin	drug	single	wordnet	
 pyocyanin	material	single	sumo	
 pyocyanin	medication	single	wordnet	
@@ -7534,10 +7636,12 @@ reference-point	quack	single	sumo
 reflex-hammer	artifact	accepted	sumo wordnet	
 reflex-hammer	device	single	sumo	
 reflex-hammer	hammer	accepted	claude wordnet	
+reflex-hammer	hand-tool	single	wordnet	
 reflex-hammer	phenomenon	single	sumo	
 reflex-hammer	physical-object	single	wordnet	
 reflex-hammer	tool	single	wordnet	
 reflex-hammer	universe	single	sumo	
+reflex-hammer	vehicle-body	single	sumo	
 reform	quack	single	sumo	
 refreshment	quack	single	sumo	
 refuge	quack	single	sumo	
@@ -7701,6 +7805,7 @@ rhinoscope	medical-instrument	single	wordnet
 rhinoscope	phenomenon	single	sumo	
 rhinoscope	physical-object	single	wordnet	
 rhinoscope	universe	single	sumo	
+rhinoscope	vehicle-body	single	sumo	
 rhinotomy	accomplishment	single	sumo	
 rhinotomy	act	accepted	sumo wordnet	
 rhinotomy	activity	accepted	sumo wordnet	
@@ -7800,6 +7905,7 @@ sanatorium	physical-object	single	wordnet
 sanatorium	place	accepted	sumo yago	
 sanatorium	structure	single	wordnet	
 sanatorium	universe	single	sumo	
+sanatorium	vehicle-body	single	sumo	
 sandfly-fever	attribute	accepted	sumo wordnet	
 sandfly-fever	condition	single	wordnet	
 sandfly-fever	disease	accepted	claude wordnet	
@@ -8052,6 +8158,7 @@ shortwave-diathermy-machine	medical-instrument	single	wordnet
 shortwave-diathermy-machine	phenomenon	single	sumo	
 shortwave-diathermy-machine	physical-object	single	wordnet	
 shortwave-diathermy-machine	universe	single	sumo	
+shortwave-diathermy-machine	vehicle-body	single	sumo	
 sigmoidectomy	ablation	accepted	claude wordnet	
 sigmoidectomy	act	single	wordnet	
 sigmoidectomy	activity	single	wordnet	
@@ -8068,6 +8175,7 @@ sigmoidoscope	medical-instrument	single	wordnet
 sigmoidoscope	phenomenon	single	sumo	
 sigmoidoscope	physical-object	single	wordnet	
 sigmoidoscope	universe	single	sumo	
+sigmoidoscope	vehicle-body	single	sumo	
 similarity	quack	single	sumo	
 simple-fracture	attribute	single	wordnet	
 simple-fracture	condition	single	wordnet	
@@ -8204,6 +8312,7 @@ specific-remedy	substance	accepted	sumo wordnet
 specific-remedy	universe	single	sumo	
 spectinomycin	agent	single	wordnet	
 spectinomycin	antibacterial	accepted	claude wordnet	
+spectinomycin	antibiotic	accepted	sumo wordnet	
 spectinomycin	drug	single	wordnet	
 spectinomycin	material	single	sumo	
 spectinomycin	medication	single	wordnet	
@@ -8220,6 +8329,7 @@ speculum	phenomenon	single	sumo
 speculum	physical-object	single	wordnet	
 speculum	tool	single	opencyc	
 speculum	universe	single	sumo	
+speculum	vehicle-body	single	sumo	
 speech-therapy	accomplishment	single	sumo	
 speech-therapy	act	accepted	sumo wordnet	
 speech-therapy	activity	accepted	sumo wordnet	
@@ -8336,6 +8446,7 @@ streptococcal-sore-throat	inflammatory-disease	accepted	claude wordnet
 streptococcal-sore-throat	state	single	wordnet	
 streptomycin	agent	single	wordnet	
 streptomycin	antibacterial	accepted	claude wordnet	
+streptomycin	antibiotic	accepted	sumo wordnet	
 streptomycin	drug	single	wordnet	
 streptomycin	material	single	sumo	
 streptomycin	medication	single	wordnet	
@@ -8344,6 +8455,7 @@ streptomycin	substance	accepted	sumo wordnet
 streptomycin	universe	single	sumo	
 streptothricin	agent	single	wordnet	
 streptothricin	antibacterial	accepted	claude wordnet	
+streptothricin	antibiotic	accepted	sumo wordnet	
 streptothricin	drug	single	wordnet	
 streptothricin	material	single	sumo	
 streptothricin	medication	single	wordnet	
@@ -8365,6 +8477,7 @@ sty	state	single	wordnet
 sty	symptomatic-effect	single	sumo	
 subtilin	agent	single	wordnet	
 subtilin	antibacterial	accepted	claude wordnet	
+subtilin	antibiotic	accepted	sumo wordnet	
 subtilin	drug	single	wordnet	
 subtilin	material	single	sumo	
 subtilin	medication	single	wordnet	
@@ -8421,6 +8534,7 @@ suppository	medication	accepted	claude wordnet
 suppository	phenomenon	single	sumo	
 suppository	substance	single	wordnet	
 suppository	universe	single	sumo	
+suppository	vehicle-body	single	sumo	
 suprainfection	attribute	accepted	sumo wordnet	
 suprainfection	condition	accepted	claude wordnet	
 suprainfection	property	single	sumo	
@@ -8458,6 +8572,7 @@ surgical-drain	phenomenon	single	sumo
 surgical-drain	physical-object	single	wordnet	
 surgical-drain	tubing	single	wordnet	
 surgical-drain	universe	single	sumo	
+surgical-drain	vehicle-body	single	sumo	
 surgical-implantation	accomplishment	single	sumo	
 surgical-implantation	act	accepted	sumo wordnet	
 surgical-implantation	activity	accepted	sumo wordnet	
@@ -8476,6 +8591,7 @@ surgical-instrument	medical-instrument	single	wordnet
 surgical-instrument	phenomenon	single	sumo	
 surgical-instrument	physical-object	single	wordnet	
 surgical-instrument	universe	single	sumo	
+surgical-instrument	vehicle-body	single	sumo	
 surgical-knife	artifact	accepted	sumo wordnet	
 surgical-knife	cutter	single	wordnet	
 surgical-knife	device	accepted	sumo wordnet	
@@ -8487,6 +8603,7 @@ surgical-knife	physical-object	single	wordnet
 surgical-knife	surgical-instrument	accepted	claude wordnet	
 surgical-knife	tool	single	wordnet	
 surgical-knife	universe	single	sumo	
+surgical-knife	vehicle-body	single	sumo	
 surgical-ligation	act	accepted	claude wordnet	
 surgical-ligation	event	accepted	sumo wordnet	
 surgical-ligation	phenomenon	single	sumo	
@@ -8499,6 +8616,7 @@ surgical-retractor	phenomenon	single	sumo
 surgical-retractor	physical-object	single	wordnet	
 surgical-retractor	surgical-instrument	accepted	claude wordnet	
 surgical-retractor	universe	single	sumo	
+surgical-retractor	vehicle-body	single	sumo	
 surgical-snare	artifact	accepted	sumo wordnet	
 surgical-snare	device	accepted	sumo wordnet	
 surgical-snare	instrument	single	wordnet	
@@ -8507,6 +8625,7 @@ surgical-snare	phenomenon	single	sumo
 surgical-snare	physical-object	single	wordnet	
 surgical-snare	surgical-instrument	accepted	claude wordnet	
 surgical-snare	universe	single	sumo	
+surgical-snare	vehicle-body	single	sumo	
 surgical-sterilization	act	single	wordnet	
 surgical-sterilization	activity	single	wordnet	
 surgical-sterilization	event	accepted	sumo wordnet	
@@ -8560,6 +8679,7 @@ tapeworm-infection	property	single	sumo
 tapeworm-infection	state	single	wordnet	
 tapeworm-infection	symptomatic-effect	single	sumo	
 tea	medical-infusion	dissented	wikidata	
+tea-leaf	medical-infusion	single	wikidata	
 tetanus	attribute	single	wordnet	
 tetanus	bacterium	single	opencyc	
 tetanus	condition	accepted	claude wordnet	
@@ -8625,6 +8745,7 @@ thermograph	medical-instrument	single	wordnet
 thermograph	phenomenon	single	sumo	
 thermograph	physical-object	single	wordnet	
 thermograph	universe	single	sumo	
+thermograph	vehicle-body	single	sumo	
 thermotherapy	accomplishment	single	sumo	
 thermotherapy	act	accepted	sumo wordnet	
 thermotherapy	activity	accepted	sumo wordnet	
@@ -8748,6 +8869,7 @@ tissue-rupture	phenomenon	single	sumo
 tissue-rupture	state	single	wordnet	
 tobramycin	agent	single	wordnet	
 tobramycin	antibacterial	accepted	claude wordnet	
+tobramycin	antibiotic	accepted	sumo wordnet	
 tobramycin	drug	accepted	wikidata wordnet	
 tobramycin	material	single	sumo	
 tobramycin	medication	accepted	wikidata wordnet	
@@ -8929,6 +9051,7 @@ trepan	phenomenon	single	sumo
 trepan	physical-object	single	wordnet	
 trepan	surgical-instrument	accepted	claude wordnet	
 trepan	universe	single	sumo	
+trepan	vehicle-body	single	sumo	
 trephination	act	single	wordnet	
 trephination	activity	single	wordnet	
 trephination	event	accepted	sumo wordnet	
@@ -8986,6 +9109,7 @@ tympanoplasty	therapy	single	sumo
 tympanoplasty	volition	single	sumo	
 tyrocidine	agent	single	wordnet	
 tyrocidine	antibacterial	accepted	claude wordnet	
+tyrocidine	antibiotic	accepted	sumo wordnet	
 tyrocidine	drug	single	wordnet	
 tyrocidine	material	single	sumo	
 tyrocidine	medication	single	wordnet	
@@ -9001,6 +9125,7 @@ tyrosine-kinase-inhibitor	substance	accepted	sumo wordnet
 tyrosine-kinase-inhibitor	universe	single	sumo	
 tyrothricin	agent	single	wordnet	
 tyrothricin	antibacterial	accepted	claude wordnet	
+tyrothricin	antibiotic	accepted	sumo wordnet	
 tyrothricin	drug	single	wordnet	
 tyrothricin	material	single	sumo	
 tyrothricin	medication	single	wordnet	
@@ -9113,6 +9238,7 @@ vaccinia	state	single	wordnet
 vaccinia	symptomatic-effect	single	sumo	
 vancomycin	agent	single	wordnet	
 vancomycin	antibacterial	accepted	claude wordnet	
+vancomycin	antibiotic	accepted	sumo wordnet	
 vancomycin	drug	single	wordnet	
 vancomycin	material	single	sumo	
 vancomycin	medication	single	wordnet	
@@ -9187,6 +9313,7 @@ veterinary-medicine	science	single	wordnet
 veterinary-medicine	signified	single	sumo	
 viomycin	agent	single	wordnet	
 viomycin	antibacterial	accepted	claude wordnet	
+viomycin	antibiotic	single	wordnet	
 viomycin	drug	single	wordnet	
 viomycin	material	single	sumo	
 viomycin	medication	single	wordnet	

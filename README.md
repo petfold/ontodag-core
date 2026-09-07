@@ -12,11 +12,14 @@ anyone; the product is a published store root that `odag pack core` adopts.
 ## State (2026-09-07)
 
 `build/core.od` is the `core` pack (v6 shipped in ontodag 0.23.0; v7, the
-services layer, is built here and not yet shipped): 4,220 concepts, ten
-branches, every edge carried by two independent sources or by Peter's ruling.
-`docs/UPPER.md` §10 is the everyday goods layer (Google Product Taxonomy as
-witness), §11 the services layer (UN CPC 2.1 and Wikidata as witnesses;
-`service` re-sensed to "goods and services"). It is a strict superset of the hand-written v1 (194 concepts,
+services layer, and v8, CPC's goods half, are built here and not yet
+shipped): 4,594 concepts, ten branches, every edge carried by two independent
+sources or by Peter's ruling. `docs/UPPER.md` §10 is the everyday goods layer
+(Google Product Taxonomy as witness), §11 the services layer (UN CPC 2.1 and
+Wikidata as witnesses; `service` re-sensed to "goods and services"), §12 the
+CPC goods sections run over the goods layer as witness and coverage check
+(374 goods and materials added; `tools/align_cpc.py`, `align/cpc-goods.tsv`,
+`align/cpc-picks.tsv`). It is a strict superset of the hand-written v1 (194 concepts,
 nothing lost). `docs/UPPER.md` §6 records every decision, §7 the policy for
 the sciences, §8 the science packs built beside it — `packs/physics`,
 `packs/mathematics`, `packs/chemistry`, `packs/biology`, `packs/medicine`, `packs/ai`, `packs/economics`, `packs/computing`, `packs/geography`, `packs/space`, each a

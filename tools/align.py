@@ -145,7 +145,9 @@ def read_names(d):
     # second so a hand name wins over the generated one; goods-extra.tsv is the hand list of everyday
     # goods GPT has no node for (jeans, aspirin, duvet).
     # services.tsv (hand list, 2026-09-07) is the services layer: offset  name  cpc-code  note.
-    for fn in ("gpt-synsets.tsv", "goods-extra.tsv", "services.tsv", "names.tsv"):
+    # cpc-goods.tsv (generated, tools/align_cpc.py, 2026-09-07) is CPC's goods half: a row with a name is a good or
+    # material core lacked; a row with an empty name is a synset core has, carrying only CPC's code (the witness).
+    for fn in ("gpt-synsets.tsv", "goods-extra.tsv", "services.tsv", "cpc-goods.tsv", "names.tsv"):
         p = d / fn
         if p.exists():
             for row in csv.reader(open(p), delimiter="\t"):
@@ -155,14 +157,16 @@ def read_names(d):
 
 
 def read_cpc_map(d):
-    """offset -> CPC code (align/services.tsv: offset  name  cpc  note).  CPC is aligned by
-    synset, never by label: its titles are phrases no concept is named after."""
+    """offset -> CPC code (align/services.tsv and align/cpc-goods.tsv: offset  name  cpc  note).  CPC is
+    aligned by synset, never by label: its titles are phrases no concept is named after.  The hand list
+    (services) is read last and wins."""
     out = {}
-    p = d / "services.tsv"
-    if p.exists():
-        for row in csv.reader(open(p), delimiter="\t"):
-            if row and not row[0].startswith("#") and len(row) >= 3 and row[2].strip():
-                out[row[0].strip()] = row[2].strip()
+    for fn in ("cpc-goods.tsv", "services.tsv"):
+        p = d / fn
+        if p.exists():
+            for row in csv.reader(open(p), delimiter="\t"):
+                if row and not row[0].startswith("#") and len(row) >= 3 and row[2].strip():
+                    out[row[0].strip()] = row[2].strip()
     return out
 
 

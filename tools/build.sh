@@ -16,7 +16,7 @@ python3 tools/top.py cache/opencyc.pkl --depth 2 --min 1500 --od tops/opencyc.od
 [ -f cache/bfo.pkl ]       || python3 tools/extract_owl.py sources/bfo/bfo.owl BFO_0000001 cache/bfo.pkl
 [ -f cache/dolce.pkl ]     || python3 tools/extract_owl.py sources/dolce/DOLCE-Lite.owl particular cache/dolce.pkl
 [ -f cache/wikidata.pkl ]  || python3 tools/extract_wikidata.py core services mathematics chemistry biology medicine ai economics computing geography space cache/wikidata.pkl   # bounded P279 pulls, tools/fetch_wikidata.py; services = align/wikidata-roots.tsv
-[ -f cache/cpc.pkl ]       || python3 tools/extract_cpc.py cache/cpc.pkl       # UN CPC 2.1: the services witness (UPPER.md §11)
+[ -f cache/cpc.pkl ]       || python3 tools/extract_cpc.py cache/cpc.pkl       # UN CPC 2.1: the services witness (§11) and the goods layer's second witness and coverage check (§12: tools/align_cpc.py writes align/cpc-goods.tsv, run by hand like align_gpt.py)
 [ -f cache/dul.pkl ]       || python3 tools/extract_owl.py sources/dolce/DUL.owl Entity cache/dul.pkl
 [ -f cache/schemaorg.pkl ] || python3 tools/extract_schemaorg.py cache/schemaorg.pkl
 [ -f cache/yago.pkl ]      || python3 tools/extract_yago.py cache/yago.pkl

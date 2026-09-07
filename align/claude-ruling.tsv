@@ -21,3 +21,29 @@ therapy	treatment	accept	WordNet: therapy ⊑ medical care ⊑ treatment (care p
 treatment	therapy	reject	SUMO's reversal; treatment is the wider care, therapy the medical act	00658082	00661091
 pet-sitting	service	accept	"the work of a pet sitter; caring for pets in their own home while their owners are away" is work done for another; CPC has no pet-care node and WordNet stops at care	00655878	00577525
 advertising	information	reject	"the business of drawing public attention to goods and services" is a commercial enterprise, not information; Wikidata and YAGO reach information through the advertisement (the message)	01101329	
+# --- CPC goods layer (2026-09-07, UPPER.md §12): unplaced new concepts, disputes, and two-source edges read wrong
+bodkin	hand-tool	accept	CPC goods layer [2026-09-07]: WordNet's own hypernym; hand-tool is new to core with it	02861509	03489162
+weeder	hand-tool	accept	CPC goods layer [2026-09-07]: WordNet's own hypernym	04570416	03489162
+green-tea	tea-leaf	accept	CPC goods layer [2026-09-07]: WordNet's own hypernym	07935152	07932841
+vehicle-body	structure	accept	CPC goods layer [2026-09-07]: WordNet's own; SUMO's reversal (structure ⊑ body) is its mapping of `body`	02861886	04341686
+structure	vehicle-body	reject	SUMO's mapping of `body`	04341686	02861886
+malt-liquor	beer	accept	CPC goods layer [2026-09-07]: a lager of high alcohol content is a beer; Wikidata's reversal rejected	07889274	07886849
+beer	malt-liquor	reject	Wikidata's reversal	07886849	07889274
+playing-card	card	accept	CPC goods layer [2026-09-07]: WordNet and OpenCyc; SUMO's reversal rejected	03963982	02962545
+card	playing-card	reject	SUMO's reversal	02962545	03963982
+gas-turbine	turbine	accept	CPC goods layer [2026-09-07]: WordNet; SUMO's reversal rejected	03426574	04498523
+turbine	gas-turbine	reject	SUMO's reversal	04498523	03426574
+handbag	sack	reject	neither is the other: SUMO and Wikidata each reverse	02774152	04122825
+sack	handbag	reject	neither is the other	04122825	02774152
+series	periodical	accept	CPC goods layer [2026-09-07]: core's series is WordNet's publication sense, a periodical; schema.org's reversal rejected	06593803	06593296
+periodical	series	reject	schema.org's reversal	06593296	06593803
+blackberry	body-part	reject	OpenCyc and SUMO agree on a plant-part chain; a fruit sold is not a body part	07744811	05220461
+electric-motor	engine	reject	core's engine converts thermal energy; an electric motor is a motor	03273061	03287733
+fennel	herb	reject	the seed sense (CPC 01654, 23924), not the potherb	07814790	07811416
+playing-card	information	reject	SUMO and YAGO: the card is game equipment, not a message	03963982	00033020
+soft-drink	product	reject	core's product is the arithmetic one (§10 open question)	07927197	05859630
+torpedo	product	reject	core's product is the arithmetic one (§10 open question)	04456472	05859630
+yeast	microorganism	reject	the commercial leavening agent (15106271), not the organism	15106271	01326291
+aqueduct	device	reject	a structure, not a device	02732433	03183080
+sack	device	reject	a bag, not a device	04122825	03183080
+tobacco	agent	reject	WordNet's causal-agent chain through drug; our agent acts and is held responsible (as alcohol ⊑ agent, rejected)	04442831	00007347

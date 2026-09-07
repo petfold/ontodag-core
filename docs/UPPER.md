@@ -350,6 +350,19 @@ module had put `advertising`, `bookkeeping`, `packaging`, `storage` at top
 level — the names economics now borrows from core — which is the §8.1
 refinement-by-merge property showing, not a fault.)
 
+**Re-run with core v8, CPC's goods half (2026-09-07, §12; core and pack
+modules regenerated in ontodag's working tree from the uncommitted build —
+the module docstrings carry the pre-pass commit bc9a93c and must be
+regenerated once v8 is committed; unreleased):** union **11,389 categories,
+12,829 edges** (built in 609 s); sha256 root
+`f9883b3d75174e10a9a790e077453733282c101eab4d313fbce99520f2e66231`, Swarm/BMT
+root `a9f8e3f8eacb913be7044ee1048d7d9717342541a242a4a4aa3a79a89ea30823`;
+three shuffled orders, the reverse and a re-merge give the same root, every
+pack concept present and reachable, top level core's ten roots plus
+`dimension`. (Run first against the shipped v7 module, the union was 11,020
+with `alloy`, `antibiotic`, `magnetic-disk`, `zinc` at top level — the names
+the packs now borrow from core — the same order lesson as v7.)
+
 ### 8.2 Shipped (ontodag 0.21.0, 2026-09-03)
 
 The ten packs ship in the ontodag wheel as `ontodag.domain.<name>`
@@ -817,3 +830,196 @@ as a second witness for the goods layer's GPT-only edges and as a coverage
 check — every CPC kind with a WordNet synset that core still lacks is a
 candidate everyday good or material, the way §10's probe found the leaves
 missing.
+
+## 12. CPC's goods half (2026-09-07) — core v8
+
+Peter's ask at the close of §11: run the UN Central Product Classification's
+goods sections (0–4 and division 53, 2,713 codes) over the goods layer, both
+as a second witness for the edges the Google Product Taxonomy alone had
+carried and as a coverage check — every CPC kind with a WordNet synset that
+core still lacks is a candidate everyday good or material. GPT had been used
+exactly this way in §10; CPC's services half in §11.
+
+**The tool.** §11 aligned CPC's services by hand, 79 lines. The goods half is
+too big for that and its titles are qualified phrases — "Pumpkins, squash and
+gourds", "Barley, seed", "Meat of bovine animals, fresh or chilled", "Other
+cereals" — so `tools/align_cpc.py` reads the kind names out of the titles and
+aligns those to WordNet the way `align_gpt.py` aligns GPT's labels. A title is
+split at `;` and `,`; the pieces before the first qualifier (anything opening
+with a preposition, a participle, "seed", "n.e.c.") are the kinds, each split
+again at *and*/*or*; "other X" and "the like" are residual bins and are
+skipped; "X of Y" keeps X unless X is a generic word (article, product,
+part). A kind is a WordNet noun lemma, singularised (multiword allowed:
+"juniper berries" → `juniper_berry`), with a sense under the section's hinge
+(artifact, organism, substance, matter, natural object, food; never person);
+several senses take a hand pick, else the sense under the nearest aligned CPC
+ancestor's synset, else — at a 5-digit subclass only — the sense core already
+has, because a group or class is the upper end of every edge CPC witnesses
+through it and must be picked by a reader. A synset named by several codes
+takes the shortest. It writes `align/cpc-goods.tsv` (generated; a row with a
+name is a good core lacked, a row with an empty name is a synset core has,
+carrying only the code as CPC's witness), `build/cpc-ambiguous.tsv` (for
+picks into `align/cpc-picks.tsv`), `build/cpc-unmatched.tsv` and
+`build/cpc-upper.tsv` (every aligned code with children, for reading).
+`align.py` reads `cpc-goods.tsv` beside `services.tsv`. Numbers: 1,719 kinds
+aligned in 1,126 codes, 894 more in 455 union bins; 857 synsets, 483 of which
+core already had and 374 new; 2,116 kinds unmatched (the compounds again:
+"meat of bovine animals", "woven fabrics of cotton", "flat-rolled products of
+iron"), 175 matched only in non-goods senses (accounting, carpentry,
+handling, video games); 435 hand picks and 229 skipped synsets in
+`cpc-picks.tsv`.
+
+**What it took to make the witness honest.** (1) A code with children whose
+title names several kinds, or one kind beside a residual — "Fruits and nuts",
+"Sheep and goats, live", "Furniture; other transportable goods n.e.c.",
+"Horses and other equines", "Accumulators, primary cells and primary
+batteries, and parts thereof" — is a union bin: as `extract_gpt.py` does for
+"Toasters & Grills", `extract_cpc.py` now gives each kind its own leaf beside
+the bin (`013a` fruit, `013b` nut, under the bin's parent), so the bin's
+children never become subclasses of one half of it; before this every citrus
+was a nut, every toy and jewel was furniture, and asses were horses. (2) The
+singular is tried first: "clocks" is also a weed of the genus Erodium. (3)
+WordNet files solid, liquid, gas, fuel, glass and ice under `matter` beside
+`substance`; the hinge lacked `matter`, so coal, natural gas, glass, propane
+and every medicament read as non-goods. **`align_gpt.py` has the same gap
+(§10) and was not re-run: a GPT kind such as natural gas was dropped there
+too — a follow-up.** (4) `machinery` is a collective noun and is now generic;
+"Machinery for metallurgy" had made every converter machinery. (5) The
+ancestor guide misfires when the parent is a union whose other half is the
+guide: "Malt, whether or not roasted" under *Beverages* took the lager
+(07889274); picked by hand as the grain (07888909).
+
+**The witness result — the "confirm" half is a negative.** CPC's tree is
+coarse and its bins are phrases, so it entails only 216 pairs over our
+vocabulary. Fifteen existing edges gained CPC as a witness (`barley`,
+`buckwheat`, `millet`, `rice`, `wheat-berry` ⊑ `grain`; `grapefruit`,
+`lemon`, `lime`, `orange` ⊑ `citrus-fruit`; `olive-oil` ⊑ `vegetable-oil`;
+`piano` ⊑ `musical-instrument`; `directory` ⊑ `book`; `building`, `works` ⊑
+`structure`; `log` ⊑ `wood`), seven of which had rested on WordNet plus
+Claude's reading alone — those seven are the corroboration. **None of the 105
+edges that rested on GPT alone gained a witness**: GPT files by department
+(kitchen appliance, hardware), CPC by material and industry (domestic
+electric appliances of a kind, fabricated metal products), and the two never
+name the same class. CPC's own new claims were read as single-witness edges
+(26): the constructions of division 53 were accepted (`road`, `street`,
+`highway`, `tunnel`, `aqueduct`, `power-station` ⊑ `structure`) and its bins
+taken literally were rejected — `cider` and `mead` ⊑ `wine`, `tugboat` and
+`fishing-boat` ⊑ `ship`, `plum` ⊑ `dried-fruit` (the
+prune), `metronome` ⊑ `musical-instrument`, `landmine` and `power-cable` ⊑
+`structure`, `sunflower-seed` ⊑ `vegetable-oil`, `maize` and `sorghum` ⊑
+`grain` (core's are the plants). **Peter's rulings (`review.tsv`):** `goose` and
+`duck` ⊑ `poultry` — I had rejected them because core's `poultry` is
+WordNet's animal synset, "a domesticated gallinaceous bird", which is the
+chicken family; Peter rules for the everyday word, which WordNet's own food
+synset ("flesh of chickens or turkeys or ducks or geese") and CPC 0215 both
+use, so the gloss is narrower than the concept. `tugboat` ⊑ `ship` stays
+rejected: a tug carries neither passengers nor freight.
+
+**The coverage result — the real yield.** 374 everyday goods and materials
+core lacked, every one placed: the hinges `footwear`, `garment`, `spice`,
+`tobacco`, `foodstuff`, `soft-drink`, `stone-fruit`, `poultry`,
+`crustacean`, `hand-tool`, `kitchenware`, `glassware`, `periodical`,
+`photographic-equipment`, `optical-instrument`, `storage-battery`,
+`electric-motor`, `turbine`, `valve`, `ink`, `ore`, `peat`, `natural-gas`,
+`hard-coal`, `brown-coal`, `fuel-oil`, `kerosene`, `lubricant`, `cement`,
+`portland-cement`, `quicklime`, `gypsum`, `limestone`, `granite`,
+`sandstone`, `slate`, `bitumen`, `asphalt`, `plywood`, `fibreboard`,
+`hardboard`, `linoleum`, `paperboard`, `newsprint`, `natural-rubber`,
+`synthetic-rubber`, `felt`, `jute`, `cotton-fiber`, `wool-fiber`,
+`silk-fiber`, `bed-linen`, `table-linen`, `dressing-gown`, `pullover`,
+`corset`, `cravat`, `hood`, `goggles`; the foods (thirty nuts, seeds and
+spices — `almond`, `cashew`, `walnut`, `pistachio`, `nutmeg`, `cinnamon`,
+`clove`, `cardamom`, `cumin`, `coriander`, `peppercorn`, `vanilla`; the
+juices; `raisin`, `marmalade`, `preserves`, `caviar`, `roe`, `offal`,
+`cut-of-meat`, `tallow`, `glucose`, `fructose`, `lactose`, `tapioca`,
+`gingerbread`, `wafer`, `rusk`, `macaroni`, `green-tea`, `black-tea`,
+`cocoa`, `cocoa-powder`, `sparkling-wine`, `vermouth`, `cider`, `mead`,
+`bottled-water`); the live animals and seafood (`camel`, `ass`, `mule`,
+`hare`, `ostrich`, `emu`, `guinea-fowl`, `crab`, `prawn`, `oyster`, `mussel`,
+`scallop`, `squid`, `octopus`, `abalone`, `sea-urchin`); the machines and
+parts (`plow`, `harrow`, `harvester`, `milking-machine`, `bulldozer`,
+`power-shovel`, `steamroller`, `machine-tool`, `mechanical-press`,
+`knitting-machine`, `crane`, `derrick`, `escalator`, `heat-pump`, `gearbox`,
+`flywheel`, `pulley`, `clutch`, `gear-wheel`, `ball-bearing`,
+`transmission-shaft`, `stopcock`, `air-pump`, `oil-filter`, `spray-gun`,
+`transformer`, `oscilloscope`, `laser-printer`, `cash-machine`, `amplifier`,
+`television-camera`, `radio-transmitter`, `speedometer`, `tachometer`,
+`odometer`, `pedometer`); weapons (`pistol`, `revolver`, `grenade`,
+`torpedo`, `bayonet`); the vehicles and works (`cruise-ship`, `oil-tanker`,
+`tugboat`, `warship`, `rowing-boat`, `airship`, `glider`, `highway`,
+`aqueduct`, `dam`, `power-station`). As a side effect 63 existing concepts
+moved to finer parents: twenty garments (`shirt`, `dress`, `skirt`,
+`trousers`, `sweater`, `suit`, `underwear`…) ⊑ `garment`, `shoe` and `boot`
+⊑ `footwear`, `apricot`, `cherry`, `mango`, `peach`, `plum` ⊑
+`stone-fruit`, `chicken` and `turkey` ⊑ `poultry`, `champagne` ⊑
+`sparkling-wine`, `pop` ⊑ `soft-drink`, `journal`, `magazine`, `newspaper` ⊑
+`periodical`, `camera`, `flash`, `photographic-film` ⊑
+`photographic-equipment`, `lobster` ⊑ `crustacean`, `starter` ⊑
+`electric-motor`. **Pack territory** was left in the packs: 42 CPC kinds a
+science pack already owns stay there (chemistry's elements and compounds,
+biology's enzyme and hormone, computing's systems software, economics'
+bond) — CPC only confirms them; ten were promoted as everyday words the way
+§10 promoted aspirin and laptop: `nickel`, `zinc`, `platinum`, `magnesium`,
+`titanium`, `chromium`, `alloy` from chemistry, `roe` from biology,
+`odometer` and `pedometer` from geography (biology's fish-egg synset is now
+`fish-roe`, medicine's dressing `gauze-bandage`). Industrial and chemical
+kinds with no everyday word — the hydrides, azides, fulminates, alkyd
+resins, spiegeleisen, tall oil — are skipped by offset in `cpc-picks.tsv`,
+as are CPC's residues filed as products (bran, greaves, excreta, ash).
+Twenty hand names in `names.tsv` where core holds the bare word in another
+sense: `rye-grain` (core's `rye` is the whiskey), `pulse-legume`,
+`mace-spice`, `malt-grain` and `malt-liquor`, `silk-fiber` and `wool-fiber`
+(the fabrics keep the words), `paper-pulp`, `machine-bearing`,
+`weighing-balance`, `vehicle-body`, `piling`, `coffee-bean`, `pigeon-pea`,
+`broad-bean`, `stone-fruit` (WordNet's *drupe*), `objective-lens`, `rusk`
+(WordNet's *zwieback*), `cigarette-lighter`, `lead-metal`.
+
+**The reading.** Every single-witness direct edge on the new concepts and
+every CPC-only claim: 513 lines in `claude-review.tsv`, 260 accepted, 253
+rejected. The rejections are the sources' habits seen in §10 again: OpenCyc
+files every plant product under `structure`, `system` and `grocery`
+(almond, ginger, raisin, sorghum, sea-urchin ⊑ structure); SUMO puts
+garments under `fashion`, foods under `material`, seeds and fibres under
+`body-part`, every electrical device under `transducer`, every machine
+under the collective `machinery`; Wikidata gives a fruit its tree and calls
+a hose, a garment and a carton a `tool`; WordNet's chains file aggregate
+berries under *drupe*, gases under `fluid`, seaweed under `microorganism`,
+a stopper under `occlusion` (as the earplug in §10). Two-source edges that
+both sources got wrong were rejected by ruling (`claude-ruling.tsv`, 25
+lines): `soft-drink` and `torpedo` ⊑ `product` (the arithmetic one, §10),
+`tobacco` ⊑ `agent` (WordNet's causal-agent chain through drug, as
+`alcohol` ⊑ `agent` in §9),
+`yeast` ⊑ `microorganism` (the leavening agent), `electric-motor` ⊑ `engine`
+(core's engine is thermal), `fennel` ⊑ `herb` (the seed), `playing-card` ⊑
+`information`, `blackberry` ⊑ `body-part`, `handbag`/`sack` each way;
+disputes settled WordNet's way: `malt-liquor` ⊑ `beer`, `playing-card` ⊑
+`card`, `gas-turbine` ⊑ `turbine`, `series` ⊑ `periodical`, `vehicle-body`
+⊑ `structure`; and `bodkin`, `weeder` ⊑ `hand-tool`, `green-tea` ⊑
+`tea-leaf` placed the last three unplaced. `electrical-energy` (CPC 171) was
+skipped: core's `electricity` is the phenomenon and the product sense found
+no placed parent.
+
+**Sense questions for Peter (a v9 decision), surfaced because CPC's goods
+titles hit a core word in a non-goods sense and the everyday good could not
+take the bare word:** `cereal` is the breakfast food (wheat, rice and barley
+are `grain`; `maize` and `sorghum` are the plants while `wheat-berry` and
+`rice` are the grains, as `potato`/`white-potato` in §10); `glass` is the
+tumbler (the material entered as `glass-material` in §10); `stone` is the
+fruit pit and `rock` the lump, so building stone has no name; `battery` is
+the assault (`storage-battery` now sits beside it); `bearing` is the manner;
+`lead` is the leash; `plaster` the adhesive tape and `mortar` the bowl, so
+the building materials were left out; `bag` the suitcase (§10) so the plain
+sack of CPC 2715 was left out; `rye` the whiskey, `pulse` the heartbeat,
+`mace` the weapon, `chalk` the writing stick, `balance` the account, `body`
+the organism's, `pulp` the fruit's, `product` the arithmetic (§10), `gas` the
+state of matter, `scrap` the leftover piece; `book` has both the work and
+the object in core. No sense was changed in this pass.
+
+**Result:** core 4,594 categories (+374 over v7), nothing lost, no qualified
+names, every new concept placed; `commodity` was not aligned to
+`cpc-goods` (CPC's root for sections 0–4), because core's `commodity` ⊑
+`artifact` would make wheat and cattle artifacts — for Peter with the sense
+list. Packs regenerated; crosspack clean. **Still owed for loopmarket:** the
+service compounds (§11), the retail compounds (§10) — CPC's 2,116 unmatched
+kinds are the same list from the industry side — the `humidity` registry
+family and secure-storage kinds; and the `matter` hinge for `align_gpt.py`.
