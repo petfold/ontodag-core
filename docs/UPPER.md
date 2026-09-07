@@ -364,7 +364,7 @@ the packs now borrow from core — the same order lesson as v7.)
 
 **Re-run after the `matter` hinge in `align_gpt.py` (2026-09-07, §12
 follow-up; modules regenerated in ontodag's working tree from the uncommitted
-build, docstrings at 44ff50b — regenerate after the commit; unreleased):**
+build, ontodag-core 8978457, unreleased):**
 union **11,407 categories, 12,855 edges** (built in 591 s); sha256 root
 `15d6edb5eb97785147e8f5cc2cb3779fefcb5132b63e19f17aa2013f7057ad28`, Swarm/BMT
 root `716bd94dc35e0c0e60a66ba6e19cd5debe570833c6c7f3d3f73c5152cad1d7ce`;
