@@ -40,6 +40,7 @@ abyssal-zone	body-of-water
 abyssal-zone	geographical-area
 abyssal-zone	phenomenon
 abyssal-zone	place
+abyssal-zone	pool
 abyssal-zone	universe
 academic-degree	artifact
 academic-degree	contract-condition
@@ -680,6 +681,7 @@ alluvial-fan	body-of-water
 alluvial-fan	geographical-area
 alluvial-fan	phenomenon
 alluvial-fan	place
+alluvial-fan	pool
 alluvial-fan	stream
 alluvial-fan	universe
 alluvial-flat	geographical-area
@@ -1132,7 +1134,7 @@ apron	phenomenon
 apron	universe
 apron	vehicle-body
 aquarium	artifact
-aquarium	carrying-case
+aquarium	case
 aquarium	device
 aquarium	holder
 aquarium	phenomenon
@@ -1351,6 +1353,16 @@ assault	phenomenon
 assault	procedure
 assault	volition
 assault	war
+assault-and-battery	accomplishment
+assault-and-battery	act
+assault-and-battery	activity
+assault-and-battery	contest
+assault-and-battery	event
+assault-and-battery	fight
+assault-and-battery	phenomenon
+assault-and-battery	procedure
+assault-and-battery	volition
+assault-and-battery	war
 assembly-hall	artifact
 assembly-hall	development
 assembly-hall	phenomenon
@@ -1673,7 +1685,7 @@ backlog	phenomenon
 backlog	procedure
 backlog	volition
 backpack	artifact
-backpack	carrying-case
+backpack	case
 backpack	device
 backpack	holder
 backpack	phenomenon
@@ -1684,6 +1696,7 @@ backwater	body-of-water
 backwater	geographical-area
 backwater	phenomenon
 backwater	place
+backwater	pool
 backwater	universe
 bacterium	agent
 bacterium	microorganism
@@ -1698,7 +1711,7 @@ badminton-racquet	phenomenon
 badminton-racquet	universe
 badminton-racquet	vehicle-body
 bag	artifact
-bag	carrying-case
+bag	case
 bag	device
 bag	holder
 bag	phenomenon
@@ -1921,7 +1934,7 @@ basement	universe
 basement	vehicle-body
 basis	signified
 basket	artifact
-basket	carrying-case
+basket	case
 basket	device
 basket	holder
 basket	phenomenon
@@ -1999,7 +2012,7 @@ bathroom	room
 bathroom	universe
 bathroom	vehicle-body
 bathtub	artifact
-bathtub	carrying-case
+bathtub	case
 bathtub	device
 bathtub	holder
 bathtub	phenomenon
@@ -2010,16 +2023,11 @@ batter	material
 batter	phenomenon
 batter	substance
 batter	universe
-battery	accomplishment
-battery	act
-battery	activity
-battery	contest
-battery	event
-battery	fight
+battery	artifact
+battery	device
 battery	phenomenon
-battery	procedure
-battery	volition
-battery	war
+battery	universe
+battery	vehicle-body
 battle	accomplishment
 battle	act
 battle	activity
@@ -2048,6 +2056,7 @@ bayou	body-of-water
 bayou	geographical-area
 bayou	phenomenon
 bayou	place
+bayou	pool
 bayou	universe
 beach	geographical-area
 beach	land
@@ -2105,11 +2114,6 @@ beard	hair
 beard	phenomenon
 beard	physical-object
 beard	universe
-bearing	attribute
-bearing	inclination
-bearing	mentality
-bearing	property
-bearing	trait
 bed	artifact
 bed	furniture
 bed	phenomenon
@@ -2358,6 +2362,7 @@ billabong	body-of-water
 billabong	geographical-area
 billabong	phenomenon
 billabong	place
+billabong	pool
 billabong	stream
 billabong	universe
 billiard-ball	artifact
@@ -2372,7 +2377,7 @@ billiard-table	phenomenon
 billiard-table	universe
 billiard-table	vehicle-body
 bin	artifact
-bin	carrying-case
+bin	case
 bin	device
 bin	holder
 bin	phenomenon
@@ -2759,7 +2764,7 @@ botanical-fruit	phenomenon
 botanical-fruit	physical-object
 botanical-fruit	universe
 bottle	artifact
-bottle	carrying-case
+bottle	case
 bottle	device
 bottle	holder
 bottle	phenomenon
@@ -2813,7 +2818,7 @@ bowling-pin	phenomenon
 bowling-pin	universe
 bowling-pin	vehicle-body
 box	artifact
-box	carrying-case
+box	case
 box	device
 box	holder
 box	phenomenon
@@ -2914,7 +2919,7 @@ bridle	phenomenon
 bridle	universe
 bridle	vehicle-body
 briefcase	artifact
-briefcase	carrying-case
+briefcase	case
 briefcase	device
 briefcase	holder
 briefcase	phenomenon
@@ -2991,7 +2996,7 @@ bubble	phenomenon
 bubble	physical-object
 bubble	universe
 bucket	artifact
-bucket	carrying-case
+bucket	case
 bucket	device
 bucket	holder
 bucket	phenomenon
@@ -3191,7 +3196,7 @@ cabin	phenomenon
 cabin	universe
 cabin	vehicle-body
 cabinet	artifact
-cabinet	carrying-case
+cabinet	case
 cabinet	device
 cabinet	furniture
 cabinet	holder
@@ -3210,7 +3215,7 @@ cadaver	physical-object
 cadaver	species
 cadaver	universe
 caddy	artifact
-caddy	carrying-case
+caddy	case
 caddy	device
 caddy	holder
 caddy	phenomenon
@@ -3377,7 +3382,7 @@ canned-meat	phenomenon
 canned-meat	substance
 canned-meat	universe
 cannister	artifact
-cannister	carrying-case
+cannister	case
 cannister	device
 cannister	holder
 cannister	phenomenon
@@ -3389,7 +3394,7 @@ canopy	phenomenon
 canopy	universe
 canopy	vehicle-body
 canteen	artifact
-canteen	carrying-case
+canteen	case
 canteen	device
 canteen	holder
 canteen	phenomenon
@@ -3612,12 +3617,6 @@ carrot	botanical-fruit
 carrot	phenomenon
 carrot	physical-object
 carrot	universe
-carrying-case	artifact
-carrying-case	device
-carrying-case	holder
-carrying-case	phenomenon
-carrying-case	universe
-carrying-case	vehicle-body
 carrying-out	accomplishment
 carrying-out	act
 carrying-out	activity
@@ -3628,7 +3627,7 @@ carrying-out	volition
 cartesian-coordinate-system	signified
 carton	artifact
 carton	box
-carton	carrying-case
+carton	case
 carton	device
 carton	holder
 carton	phenomenon
@@ -3651,7 +3650,6 @@ carving-fork	tableware
 carving-fork	universe
 carving-fork	vehicle-body
 case	artifact
-case	carrying-case
 case	device
 case	holder
 case	phenomenon
@@ -4189,6 +4187,10 @@ chemical-element	material
 chemical-element	phenomenon
 chemical-element	substance
 chemical-element	universe
+chemical-mace	material
+chemical-mace	phenomenon
+chemical-mace	substance
+chemical-mace	universe
 chemical-reaction	event
 chemical-reaction	phenomenon
 chemical-solution	material
@@ -4213,7 +4215,7 @@ chess-king	phenomenon
 chess-king	universe
 chess-king	vehicle-body
 chest-of-drawers	artifact
-chest-of-drawers	carrying-case
+chest-of-drawers	case
 chest-of-drawers	device
 chest-of-drawers	furniture
 chest-of-drawers	holder
@@ -4283,7 +4285,7 @@ chin	phenomenon
 chin	physical-object
 chin	universe
 china-cabinet	artifact
-china-cabinet	carrying-case
+china-cabinet	case
 china-cabinet	device
 china-cabinet	furniture
 china-cabinet	holder
@@ -4644,7 +4646,7 @@ clock-time	quantity
 clod	phenomenon
 clod	universe
 closet	artifact
-closet	carrying-case
+closet	case
 closet	device
 closet	furniture
 closet	holder
@@ -4785,11 +4787,11 @@ coffee-grinder	vehicle-body
 coffee-table	artifact
 coffee-table	furniture
 coffee-table	phenomenon
-coffee-table	table-furniture
+coffee-table	table
 coffee-table	universe
 coffee-table	vehicle-body
 coffin	artifact
-coffin	carrying-case
+coffin	case
 coffin	device
 coffin	holder
 coffin	phenomenon
@@ -5183,6 +5185,11 @@ component	device
 component	phenomenon
 component	universe
 component	vehicle-body
+comportment	attribute
+comportment	inclination
+comportment	mentality
+comportment	property
+comportment	trait
 composition	artifact
 composition	contract-condition
 composition	essay
@@ -5535,6 +5542,7 @@ continental-slope	body-of-water
 continental-slope	geographical-area
 continental-slope	phenomenon
 continental-slope	place
+continental-slope	pool
 continental-slope	universe
 contour-map	information
 contour-map	phenomenon
@@ -5656,7 +5664,7 @@ cooking-oil	food
 cooking-oil	phenomenon
 cooking-oil	universe
 cooking-pot	artifact
-cooking-pot	carrying-case
+cooking-pot	case
 cooking-pot	device
 cooking-pot	holder
 cooking-pot	pan
@@ -5669,7 +5677,7 @@ cookware	phenomenon
 cookware	universe
 cookware	vehicle-body
 cooler	artifact
-cooler	carrying-case
+cooler	case
 cooler	device
 cooler	electric-refrigerator
 cooler	holder
@@ -5858,7 +5866,7 @@ council	universe
 counter	artifact
 counter	furniture
 counter	phenomenon
-counter	table-furniture
+counter	table
 counter	universe
 counter	vehicle-body
 counterspy	attribute
@@ -6029,7 +6037,7 @@ crash	phenomenon
 crash	visit
 crate	artifact
 crate	box
-crate	carrying-case
+crate	case
 crate	device
 crate	holder
 crate	phenomenon
@@ -6798,7 +6806,7 @@ design	universe
 desk	artifact
 desk	furniture
 desk	phenomenon
-desk	table-furniture
+desk	table
 desk	universe
 desk	vehicle-body
 desktop-computer	artifact
@@ -7052,7 +7060,7 @@ diminution	phenomenon
 dining-table	artifact
 dining-table	furniture
 dining-table	phenomenon
-dining-table	table-furniture
+dining-table	table
 dining-table	universe
 dining-table	vehicle-body
 dinnerware	artifact
@@ -7340,7 +7348,7 @@ disorderliness	status
 disorderliness	tension
 disorderliness	way
 dispenser	artifact
-dispenser	carrying-case
+dispenser	case
 dispenser	device
 dispenser	holder
 dispenser	phenomenon
@@ -7486,6 +7494,7 @@ ditch	body-of-water
 ditch	geographical-area
 ditch	phenomenon
 ditch	place
+ditch	pool
 ditch	universe
 diverseness	amateur
 diverseness	ambiance
@@ -7797,7 +7806,7 @@ dramaturgy	signified
 draught	event
 draught	phenomenon
 drawer	artifact
-drawer	carrying-case
+drawer	case
 drawer	device
 drawer	holder
 drawer	phenomenon
@@ -7923,7 +7932,7 @@ duck	species
 duck	universe
 duck	vertebrate
 duffel-bag	artifact
-duffel-bag	carrying-case
+duffel-bag	case
 duffel-bag	device
 duffel-bag	holder
 duffel-bag	phenomenon
@@ -7937,7 +7946,7 @@ dumbbell	phenomenon
 dumbbell	universe
 dumbbell	vehicle-body
 dumpster	artifact
-dumpster	carrying-case
+dumpster	case
 dumpster	device
 dumpster	holder
 dumpster	phenomenon
@@ -7962,7 +7971,7 @@ dustpan	phenomenon
 dustpan	universe
 dustpan	vehicle-body
 dutch-oven	artifact
-dutch-oven	carrying-case
+dutch-oven	case
 dutch-oven	device
 dutch-oven	holder
 dutch-oven	pan
@@ -8093,6 +8102,7 @@ eddy	body-of-water
 eddy	geographical-area
 eddy	phenomenon
 eddy	place
+eddy	pool
 eddy	universe
 edge	phenomenon
 edge	universe
@@ -8158,11 +8168,6 @@ election	procedure
 election	volition
 electorate	attribute
 electorate	property
-electric-battery	artifact
-electric-battery	device
-electric-battery	phenomenon
-electric-battery	universe
-electric-battery	vehicle-body
 electric-blanket	artifact
 electric-blanket	device
 electric-blanket	phenomenon
@@ -8182,7 +8187,7 @@ electric-razor	phenomenon
 electric-razor	universe
 electric-razor	vehicle-body
 electric-refrigerator	artifact
-electric-refrigerator	carrying-case
+electric-refrigerator	case
 electric-refrigerator	device
 electric-refrigerator	holder
 electric-refrigerator	phenomenon
@@ -8435,7 +8440,7 @@ entree	attribute
 entree	normal
 entree	property
 envelope	artifact
-envelope	carrying-case
+envelope	case
 envelope	device
 envelope	holder
 envelope	phenomenon
@@ -9013,7 +9018,7 @@ fan-device	phenomenon
 fan-device	universe
 fan-device	vehicle-body
 fanny-pack	artifact
-fanny-pack	carrying-case
+fanny-pack	case
 fanny-pack	device
 fanny-pack	holder
 fanny-pack	phenomenon
@@ -9549,7 +9554,7 @@ flashlight	vehicle-body
 flask	artifact
 flask	bottle
 flask	canteen
-flask	carrying-case
+flask	case
 flask	device
 flask	holder
 flask	phenomenon
@@ -9624,6 +9629,7 @@ flowage	body-of-water
 flowage	geographical-area
 flowage	phenomenon
 flowage	place
+flowage	pool
 flowage	universe
 flower	agent
 flower	organism
@@ -9633,7 +9639,7 @@ flower	plant
 flower	species
 flower	universe
 flowerpot	artifact
-flowerpot	carrying-case
+flowerpot	case
 flowerpot	device
 flowerpot	holder
 flowerpot	phenomenon
@@ -9798,6 +9804,7 @@ ford	body-of-water
 ford	geographical-area
 ford	phenomenon
 ford	place
+ford	pool
 ford	stream
 ford	universe
 foreigner	attribute
@@ -10097,6 +10104,10 @@ fruit-jelly	material
 fruit-jelly	phenomenon
 fruit-jelly	substance
 fruit-jelly	universe
+fruit-stone	body-part
+fruit-stone	phenomenon
+fruit-stone	physical-object
+fruit-stone	universe
 fryer	food
 fryer	material
 fryer	meat
@@ -10104,7 +10115,7 @@ fryer	phenomenon
 fryer	substance
 fryer	universe
 frying-pan	artifact
-frying-pan	carrying-case
+frying-pan	case
 frying-pan	device
 frying-pan	holder
 frying-pan	pan
@@ -10497,6 +10508,7 @@ geyser	body-of-water
 geyser	geographical-area
 geyser	phenomenon
 geyser	place
+geyser	pool
 geyser	stream
 geyser	universe
 ghost	agent
@@ -10672,7 +10684,7 @@ gold	phenomenon
 gold	substance
 gold	universe
 golf-bag	artifact
-golf-bag	carrying-case
+golf-bag	case
 golf-bag	device
 golf-bag	holder
 golf-bag	phenomenon
@@ -10861,7 +10873,7 @@ gradation	attribute
 gradation	property
 grade	quantity
 graduated-cylinder	artifact
-graduated-cylinder	carrying-case
+graduated-cylinder	case
 graduated-cylinder	device
 graduated-cylinder	holder
 graduated-cylinder	phenomenon
@@ -10993,6 +11005,11 @@ grinding-machine	device
 grinding-machine	phenomenon
 grinding-machine	universe
 grinding-machine	vehicle-body
+grinding-mortar	artifact
+grinding-mortar	device
+grinding-mortar	phenomenon
+grinding-mortar	universe
+grinding-mortar	vehicle-body
 grinding-wheel	artifact
 grinding-wheel	component
 grinding-wheel	device
@@ -11183,6 +11200,7 @@ gulch	body-of-water
 gulch	geographical-area
 gulch	phenomenon
 gulch	place
+gulch	pool
 gulch	stream
 gulch	universe
 gulf-stream	event
@@ -11191,6 +11209,7 @@ gully	body-of-water
 gully	geographical-area
 gully	phenomenon
 gully	place
+gully	pool
 gully	stream
 gully	universe
 gun	artifact
@@ -11365,7 +11384,7 @@ hand-truck	phenomenon
 hand-truck	universe
 hand-truck	vehicle-body
 handbag	artifact
-handbag	carrying-case
+handbag	case
 handbag	device
 handbag	holder
 handbag	phenomenon
@@ -11691,6 +11710,7 @@ high-sea	body-of-water
 high-sea	geographical-area
 high-sea	phenomenon
 high-sea	place
+high-sea	pool
 high-sea	universe
 high-wind	event
 high-wind	phenomenon
@@ -11992,6 +12012,7 @@ hot-spring	body-of-water
 hot-spring	geographical-area
 hot-spring	phenomenon
 hot-spring	place
+hot-spring	pool
 hot-spring	stream
 hot-spring	universe
 hot-weather	amateur
@@ -13200,7 +13221,7 @@ kerosene	phenomenon
 kerosene	substance
 kerosene	universe
 kettle	artifact
-kettle	carrying-case
+kettle	case
 kettle	device
 kettle	holder
 kettle	pan
@@ -13425,6 +13446,7 @@ lagoon	body-of-water
 lagoon	geographical-area
 lagoon	phenomenon
 lagoon	place
+lagoon	pool
 lagoon	universe
 lake-bed	geographical-area
 lake-bed	phenomenon
@@ -13636,13 +13658,11 @@ lawsuit	war
 layer	phenomenon
 layer	place
 layer	universe
-lead	attribute
-lead	property
-lead-metal	chemical-element
-lead-metal	material
-lead-metal	phenomenon
-lead-metal	substance
-lead-metal	universe
+lead	chemical-element
+lead	material
+lead	phenomenon
+lead	substance
+lead	universe
 leader	accomplishment
 leader	act
 leader	activity
@@ -13911,6 +13931,7 @@ liman	body-of-water
 liman	geographical-area
 liman	phenomenon
 liman	place
+liman	pool
 liman	universe
 limb	body-part
 limb	phenomenon
@@ -14119,7 +14140,7 @@ lock	phenomenon
 lock	universe
 lock	vehicle-body
 locker	artifact
-locker	carrying-case
+locker	case
 locker	device
 locker	holder
 locker	phenomenon
@@ -14339,14 +14360,14 @@ luck.phenomenon	phenomenon
 luck.phenomenon	procedure
 luck.phenomenon	volition
 luggage	artifact
-luggage	carrying-case
+luggage	case
 luggage	device
 luggage	holder
 luggage	phenomenon
 luggage	universe
 luggage	vehicle-body
 luggage-compartment	artifact
-luggage-compartment	carrying-case
+luggage-compartment	case
 luggage-compartment	device
 luggage-compartment	holder
 luggage-compartment	phenomenon
@@ -14373,10 +14394,6 @@ maar	phenomenon
 maar	place
 maar	universe
 maar	yard
-mace	material
-mace	phenomenon
-mace	substance
-mace	universe
 machete	artifact
 machete	device
 machete	phenomenon
@@ -14481,7 +14498,7 @@ mail-slot	phenomenon
 mail-slot	universe
 mail-slot	vehicle-body
 mailbox	artifact
-mailbox	carrying-case
+mailbox	case
 mailbox	device
 mailbox	holder
 mailbox	phenomenon
@@ -14922,7 +14939,7 @@ medicine-ball	phenomenon
 medicine-ball	universe
 medicine-ball	vehicle-body
 medicine-cabinet	artifact
-medicine-cabinet	carrying-case
+medicine-cabinet	case
 medicine-cabinet	device
 medicine-cabinet	furniture
 medicine-cabinet	holder
@@ -15118,6 +15135,7 @@ mid-water	body-of-water
 mid-water	geographical-area
 mid-water	phenomenon
 mid-water	place
+mid-water	pool
 mid-water	universe
 middleman	attribute
 middleman	property
@@ -15517,11 +15535,6 @@ morning	quantity
 morsel	food
 morsel	phenomenon
 morsel	universe
-mortar	artifact
-mortar	device
-mortar	phenomenon
-mortar	universe
-mortar	vehicle-body
 mosaic	artifact
 mosaic	fine-art
 mosaic	indication
@@ -15586,7 +15599,7 @@ motto	text
 motto	universe
 motto	vehicle-body
 mould	artifact
-mould	carrying-case
+mould	case
 mould	device
 mould	holder
 mould	phenomenon
@@ -15627,7 +15640,7 @@ msg	food
 msg	phenomenon
 msg	universe
 mug	artifact
-mug	carrying-case
+mug	case
 mug	device
 mug	holder
 mug	phenomenon
@@ -16411,6 +16424,7 @@ offing	body-of-water
 offing	geographical-area
 offing	phenomenon
 offing	place
+offing	pool
 offing	universe
 offspring	attribute
 offspring	property
@@ -16475,11 +16489,6 @@ onion	botanical-fruit
 onion	phenomenon
 onion	physical-object
 onion	universe
-onion-vegetable	body-part
-onion-vegetable	botanical-fruit
-onion-vegetable	phenomenon
-onion-vegetable	physical-object
-onion-vegetable	universe
 opera	artifact
 opera	comedy
 opera	contract-condition
@@ -16760,7 +16769,7 @@ outthrust	phenomenon
 outthrust	substance
 outthrust	universe
 oven	artifact
-oven	carrying-case
+oven	case
 oven	device
 oven	holder
 oven	phenomenon
@@ -16843,7 +16852,7 @@ pacifier	phenomenon
 pacifier	universe
 pacifier	vehicle-body
 pack	artifact
-pack	carrying-case
+pack	case
 pack	device
 pack	holder
 pack	phenomenon
@@ -16992,7 +17001,7 @@ palm	species
 palm	tree
 palm	universe
 pan	artifact
-pan	carrying-case
+pan	case
 pan	device
 pan	holder
 pan	phenomenon
@@ -17006,7 +17015,7 @@ panel	phenomenon
 panel	universe
 panel	vehicle-body
 pannier	artifact
-pannier	carrying-case
+pannier	case
 pannier	device
 pannier	holder
 pannier	phenomenon
@@ -17372,7 +17381,7 @@ pencil	universe
 pencil	vehicle-body
 pencil-case	artifact
 pencil-case	box
-pencil-case	carrying-case
+pencil-case	case
 pencil-case	device
 pencil-case	holder
 pencil-case	phenomenon
@@ -17411,13 +17420,13 @@ people	collection
 people	group
 people	phenomenon
 people	universe
-pepper	agent
-pepper	organism
-pepper	phenomenon
-pepper	physical-object
-pepper	plant
-pepper	species
-pepper	universe
+pepper-plant	agent
+pepper-plant	organism
+pepper-plant	phenomenon
+pepper-plant	physical-object
+pepper-plant	plant
+pepper-plant	species
+pepper-plant	universe
 pepper-shaker	artifact
 pepper-shaker	device
 pepper-shaker	phenomenon
@@ -17980,7 +17989,7 @@ playing-field	place
 playing-field	universe
 playing-field	yard
 playpen	artifact
-playpen	carrying-case
+playpen	case
 playpen	device
 playpen	holder
 playpen	phenomenon
@@ -18190,6 +18199,7 @@ polynya	body-of-water
 polynya	geographical-area
 polynya	phenomenon
 polynya	place
+polynya	pool
 polynya	universe
 pomegranate	body-part
 pomegranate	botanical-fruit
@@ -18216,7 +18226,6 @@ pony	physical-object
 pony	species
 pony	universe
 pony	vertebrate
-pool	body-of-water
 pool	geographical-area
 pool	phenomenon
 pool	place
@@ -18288,13 +18297,13 @@ pot	physical-object
 pot	plant
 pot	species
 pot	universe
-potato	agent
-potato	organism
-potato	phenomenon
-potato	physical-object
-potato	plant
-potato	species
-potato	universe
+potato-plant	agent
+potato-plant	organism
+potato-plant	phenomenon
+potato-plant	physical-object
+potato-plant	plant
+potato-plant	species
+potato-plant	universe
 potential	attribute
 potential	property
 potpourri	artifact
@@ -18311,7 +18320,7 @@ potty-seat	phenomenon
 potty-seat	universe
 potty-seat	vehicle-body
 pouch	artifact
-pouch	carrying-case
+pouch	case
 pouch	device
 pouch	holder
 pouch	phenomenon
@@ -19094,6 +19103,12 @@ puck	artifact
 puck	phenomenon
 puck	universe
 puck	vehicle-body
+puddle	body-of-water
+puddle	geographical-area
+puddle	phenomenon
+puddle	place
+puddle	pool
+puddle	universe
 pullover	artifact
 pullover	clothing
 pullover	fashion
@@ -19836,7 +19851,7 @@ refreshment	status
 refreshment	tension
 refreshment	way
 refrigerator	artifact
-refrigerator	carrying-case
+refrigerator	case
 refrigerator	device
 refrigerator	electric-refrigerator
 refrigerator	holder
@@ -20447,6 +20462,7 @@ rill	body-of-water
 rill	geographical-area
 rill	phenomenon
 rill	place
+rill	pool
 rill	stream
 rill	universe
 riot	accomplishment
@@ -20492,6 +20508,7 @@ river-source	body-of-water
 river-source	geographical-area
 river-source	phenomenon
 river-source	place
+river-source	pool
 river-source	stream
 river-source	universe
 riverbed	geographical-area
@@ -20509,6 +20526,7 @@ rivulet	body-of-water
 rivulet	geographical-area
 rivulet	phenomenon
 rivulet	place
+rivulet	pool
 rivulet	stream
 rivulet	universe
 road	geographical-area
@@ -20785,7 +20803,7 @@ rural-area	phenomenon
 rural-area	place
 rural-area	universe
 sack	artifact
-sack	carrying-case
+sack	case
 sack	device
 sack	holder
 sack	phenomenon
@@ -21018,7 +21036,7 @@ sauce	phenomenon
 sauce	substance
 sauce	universe
 saucepan	artifact
-saucepan	carrying-case
+saucepan	case
 saucepan	device
 saucepan	holder
 saucepan	pan
@@ -21057,7 +21075,7 @@ saying	universe
 scab	attribute
 scab	property
 scabbard	artifact
-scabbard	carrying-case
+scabbard	case
 scabbard	device
 scabbard	holder
 scabbard	phenomenon
@@ -21319,6 +21337,7 @@ sea-sound	body-of-water
 sea-sound	geographical-area
 sea-sound	phenomenon
 sea-sound	place
+sea-sound	pool
 sea-sound	universe
 sea-urchin	agent
 sea-urchin	animal
@@ -21625,7 +21644,7 @@ sewage-disposal	event
 sewage-disposal	phenomenon
 sewage-disposal	visit
 sewing-basket	artifact
-sewing-basket	carrying-case
+sewing-basket	case
 sewing-basket	device
 sewing-basket	holder
 sewing-basket	phenomenon
@@ -21640,7 +21659,7 @@ shackle	universe
 shackle	vehicle-body
 shadow-box	artifact
 shadow-box	box
-shadow-box	carrying-case
+shadow-box	case
 shadow-box	device
 shadow-box	holder
 shadow-box	phenomenon
@@ -21663,6 +21682,7 @@ shallows	body-of-water
 shallows	geographical-area
 shallows	phenomenon
 shallows	place
+shallows	pool
 shallows	universe
 shampoo	chemical-solution
 shampoo	material
@@ -21875,6 +21895,13 @@ show	procedure
 show	stage-production
 show	universe
 show	volition
+showcase	artifact
+showcase	case
+showcase	device
+showcase	holder
+showcase	phenomenon
+showcase	universe
+showcase	vehicle-body
 shower	artifact
 shower	device
 shower	phenomenon
@@ -22978,7 +23005,7 @@ stamp	universe
 stand	artifact
 stand	furniture
 stand	phenomenon
-stand	table-furniture
+stand	table
 stand	universe
 stand	vehicle-body
 stand-base	artifact
@@ -23140,6 +23167,10 @@ stick	physical-object
 stick	plant
 stick	species
 stick	universe
+sticking-plaster	material
+sticking-plaster	phenomenon
+sticking-plaster	substance
+sticking-plaster	universe
 sticky-note	paper
 stilt	artifact
 stilt	device
@@ -23179,9 +23210,10 @@ stomach	organ
 stomach	phenomenon
 stomach	physical-object
 stomach	universe
-stone	body-part
+stone	material
 stone	phenomenon
-stone	physical-object
+stone	rock
+stone	substance
 stone	universe
 stone-fruit	body-part
 stone-fruit	phenomenon
@@ -23233,7 +23265,7 @@ storage-medium	phenomenon
 storage-medium	universe
 storage-medium	vehicle-body
 storage-tank	artifact
-storage-tank	carrying-case
+storage-tank	case
 storage-tank	device
 storage-tank	holder
 storage-tank	phenomenon
@@ -23308,6 +23340,7 @@ stream	body-of-water
 stream	geographical-area
 stream	phenomenon
 stream	place
+stream	pool
 stream	universe
 streambed	geographical-area
 streambed	phenomenon
@@ -23680,7 +23713,7 @@ sweetener	phenomenon
 sweetener	substance
 sweetener	universe
 swimming-pool	artifact
-swimming-pool	carrying-case
+swimming-pool	case
 swimming-pool	development
 swimming-pool	device
 swimming-pool	holder
@@ -23741,14 +23774,8 @@ system-instrumentality	phenomenon
 table	artifact
 table	furniture
 table	phenomenon
-table	table-furniture
 table	universe
 table	vehicle-body
-table-furniture	artifact
-table-furniture	furniture
-table-furniture	phenomenon
-table-furniture	universe
-table-furniture	vehicle-body
 table-knife	artifact
 table-knife	device
 table-knife	phenomenon
@@ -23910,7 +23937,7 @@ tattooing	event
 tattooing	phenomenon
 tax	quantity
 tea-maker	artifact
-tea-maker	carrying-case
+tea-maker	case
 tea-maker	device
 tea-maker	holder
 tea-maker	phenomenon
@@ -24032,13 +24059,14 @@ territorial-waters	body-of-water
 territorial-waters	geographical-area
 territorial-waters	phenomenon
 territorial-waters	place
+territorial-waters	pool
 territorial-waters	universe
 territory	geographical-area
 territory	phenomenon
 territory	place
 territory	universe
 test-tube	artifact
-test-tube	carrying-case
+test-tube	case
 test-tube	device
 test-tube	holder
 test-tube	phenomenon
@@ -24158,7 +24186,7 @@ thigh	phenomenon
 thigh	physical-object
 thigh	universe
 thimble	artifact
-thimble	carrying-case
+thimble	case
 thimble	device
 thimble	holder
 thimble	phenomenon
@@ -24248,6 +24276,7 @@ tidal-river	body-of-water
 tidal-river	geographical-area
 tidal-river	phenomenon
 tidal-river	place
+tidal-river	pool
 tidal-river	stream
 tidal-river	universe
 tideland	beach
@@ -24263,6 +24292,7 @@ tideway	body-of-water
 tideway	geographical-area
 tideway	phenomenon
 tideway	place
+tideway	pool
 tideway	stream
 tideway	universe
 tier	attribute
@@ -24705,6 +24735,13 @@ trash-can	vehicle-body
 trash-collection	event
 trash-collection	phenomenon
 trash-collection	visit
+traveling-bag	artifact
+traveling-bag	case
+traveling-bag	device
+traveling-bag	holder
+traveling-bag	phenomenon
+traveling-bag	universe
+traveling-bag	vehicle-body
 tray	artifact
 tray	device
 tray	holder
@@ -24874,7 +24911,7 @@ truffle	physical-object
 truffle	universe
 trunk	artifact
 trunk	box
-trunk	carrying-case
+trunk	case
 trunk	device
 trunk	holder
 trunk	phenomenon
@@ -24898,7 +24935,7 @@ trust-relationship	volition
 trustee	attribute
 trustee	property
 tub	artifact
-tub	carrying-case
+tub	case
 tub	device
 tub	holder
 tub	phenomenon
@@ -24982,6 +25019,7 @@ twilight-zone	body-of-water
 twilight-zone	geographical-area
 twilight-zone	phenomenon
 twilight-zone	place
+twilight-zone	pool
 twilight-zone	universe
 twin	attribute
 twin	property
@@ -25170,7 +25208,7 @@ van	vehicle-body
 vanity	artifact
 vanity	furniture
 vanity	phenomenon
-vanity	table-furniture
+vanity	table
 vanity	universe
 vanity	vehicle-body
 vaporizer	artifact
@@ -25193,7 +25231,7 @@ varnish	phenomenon
 varnish	substance
 varnish	universe
 vase	artifact
-vase	carrying-case
+vase	case
 vase	device
 vase	holder
 vase	phenomenon
@@ -25318,7 +25356,7 @@ vertical-circle	phenomenon
 vertical-circle	place
 vertical-circle	universe
 vessel	artifact
-vessel	carrying-case
+vessel	case
 vessel	device
 vessel	holder
 vessel	phenomenon
@@ -25622,7 +25660,7 @@ waste	phenomenon
 waste	substance
 waste	universe
 wastebasket	artifact
-wastebasket	carrying-case
+wastebasket	case
 wastebasket	device
 wastebasket	holder
 wastebasket	phenomenon
@@ -25642,7 +25680,7 @@ water	universe
 water-bottle	artifact
 water-bottle	bottle
 water-bottle	canteen
-water-bottle	carrying-case
+water-bottle	case
 water-bottle	device
 water-bottle	holder
 water-bottle	phenomenon
@@ -25652,6 +25690,7 @@ water-channel	body-of-water
 water-channel	geographical-area
 water-channel	phenomenon
 water-channel	place
+water-channel	pool
 water-channel	stream
 water-channel	universe
 water-cooler	artifact
@@ -25679,6 +25718,7 @@ water-hole	body-of-water
 water-hole	geographical-area
 water-hole	phenomenon
 water-hole	place
+water-hole	pool
 water-hole	universe
 water-ski	artifact
 water-ski	device
@@ -25701,6 +25741,7 @@ watercourse	body-of-water
 watercourse	geographical-area
 watercourse	phenomenon
 watercourse	place
+watercourse	pool
 watercourse	stream
 watercourse	universe
 watercraft	artifact
@@ -25717,7 +25758,7 @@ watercress	phenomenon
 watercress	physical-object
 watercress	universe
 watering-can	artifact
-watering-can	carrying-case
+watering-can	case
 watering-can	device
 watering-can	holder
 watering-can	phenomenon
@@ -25737,6 +25778,7 @@ waterway	body-of-water
 waterway	geographical-area
 waterway	phenomenon
 waterway	place
+waterway	pool
 waterway	universe
 waterwheel	artifact
 waterwheel	device
@@ -25952,6 +25994,7 @@ whirlpool	body-of-water
 whirlpool	geographical-area
 whirlpool	phenomenon
 whirlpool	place
+whirlpool	pool
 whirlpool	universe
 whirlwind	event
 whirlwind	phenomenon
@@ -26094,7 +26137,7 @@ wine	phenomenon
 wine	substance
 wine	universe
 wine-glass	artifact
-wine-glass	carrying-case
+wine-glass	case
 wine-glass	device
 wine-glass	holder
 wine-glass	phenomenon
@@ -26181,7 +26224,7 @@ witness	species
 witness	universe
 witness	vertebrate
 wok	artifact
-wok	carrying-case
+wok	case
 wok	device
 wok	holder
 wok	pan
@@ -26274,7 +26317,7 @@ work	volition
 workbench	artifact
 workbench	furniture
 workbench	phenomenon
-workbench	table-furniture
+workbench	table
 workbench	universe
 workbench	vehicle-body
 workplace	phenomenon

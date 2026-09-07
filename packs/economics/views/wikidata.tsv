@@ -79,7 +79,6 @@ allowance	transaction
 altar	dining-table
 altar	furniture
 altar	table
-altar	table-furniture
 aluminum	drug
 aluminum	medication
 aluminum	metal
@@ -208,6 +207,7 @@ babysitting	childcare
 backlog	hill
 backlog	landform
 backpack	artifact
+backpack	bag
 backpack	clothing
 backpack	equipment
 backpack	garment
@@ -228,7 +228,8 @@ bacterium	physical-object
 bag	artifact
 bag	equipment
 bag	goods
-bag	luggage
+bag	housing
+bag	machine-housing
 bag	physical-object
 bag	tool
 bagel	food
@@ -251,7 +252,7 @@ ball	equipment
 ball	goods
 ball	physical-object
 ball	sporting-goods
-ball-bearing	machine-bearing
+ball-bearing	bearing
 bank-card	goods
 bank-card	payment-card
 bank-card	payment-system
@@ -423,7 +424,6 @@ billiard-table	goods
 billiard-table	physical-object
 billiard-table	sporting-goods
 billiard-table	table
-billiard-table	table-furniture
 binary-option	contract
 binary-option	derivative-finance
 binary-option	exotic-option
@@ -800,13 +800,6 @@ carrot	plant-root
 carrot	prepared-dish
 carrot	root
 carrot	vegetable
-carrot-vegetable	dish
-carrot-vegetable	food
-carrot-vegetable	goods
-carrot-vegetable	plant-root
-carrot-vegetable	prepared-dish
-carrot-vegetable	root
-carrot-vegetable	vegetable
 carton	artifact
 carton	equipment
 carton	goods
@@ -820,12 +813,6 @@ cartridge	artifact
 cartridge	bullet
 cartridge	goods
 cartridge	physical-object
-case	artifact
-case	equipment
-case	furniture
-case	goods
-case	physical-object
-case	tool
 cash	medium-of-exchange
 cash-flow	financial-transaction
 cash-flow	payment
@@ -1030,7 +1017,6 @@ coffee-maker	household-appliance
 coffee-table	dining-table
 coffee-table	furniture
 coffee-table	table
-coffee-table	table-furniture
 coffin	furniture
 coincidence	group
 coinsurance	business-model
@@ -1115,7 +1101,6 @@ console	dining-table
 console	furniture
 console	shelf
 console	table
-console	table-furniture
 conspiracy	alliance
 conspiracy	organization
 conspiracy	secrecy
@@ -1434,7 +1419,6 @@ desert	landform
 desk	dining-table
 desk	furniture
 desk	table
-desk	table-furniture
 desktop-computer	appliance
 desktop-computer	computer
 desktop-computer	goods
@@ -1578,6 +1562,7 @@ dry-cleaning	goods-and-services
 dry-cleaning	service
 dryer	machine
 duffel-bag	artifact
+duffel-bag	bag
 duffel-bag	equipment
 duffel-bag	goods
 duffel-bag	handbag
@@ -2061,6 +2046,7 @@ goalposts	sporting-goods
 golf	game
 golf	sport
 golf-bag	artifact
+golf-bag	bag
 golf-bag	equipment
 golf-bag	goods
 golf-bag	handbag
@@ -2160,6 +2146,11 @@ grinder	dish
 grinder	food
 grinder	goods
 grinder	prepared-dish
+grinding-mortar	artifact
+grinding-mortar	equipment
+grinding-mortar	goods
+grinding-mortar	physical-object
+grinding-mortar	tool
 grindstone	artifact
 grindstone	equipment
 grindstone	goods
@@ -2670,7 +2661,6 @@ lease	contract
 lectern	dining-table
 lectern	furniture
 lectern	table
-lectern	table-furniture
 lecture	presentation
 leek	vegetable
 leftovers	food
@@ -3009,11 +2999,8 @@ monitor	hardware
 monitor	interface
 monkey	mammal
 mop	goods
-mortar	artifact
-mortar	equipment
-mortar	goods
-mortar	physical-object
-mortar	tool
+mortar	adhesive
+mortar	glue
 mortgage-backed-security	contract
 mortgage-backed-security	financial-asset
 mortgage-backed-security	financial-instrument
@@ -3172,8 +3159,6 @@ olive-oil	cooking-oil
 olive-oil	fuel
 olive-oil	oilseed
 olive-oil	vegetable-oil
-onion-vegetable	bulb
-onion-vegetable	vegetable
 online-marketplace	goods
 online-marketplace	market
 online-marketplace	marketplace
@@ -3204,6 +3189,7 @@ option-finance	intangible-asset
 option-finance	security-finance
 orange	citrus-fruit
 orbit	curve
+ore	stone
 organism	physical-object
 oscilloscope	artifact
 oscilloscope	equipment
@@ -3255,6 +3241,7 @@ palace	house
 palm-oil	cooking-oil
 panic	fear
 pannier	artifact
+pannier	bag
 pannier	equipment
 pannier	goods
 pannier	handbag
@@ -3303,7 +3290,7 @@ payment-card	payment-system
 payment-system	goods
 pea	bean
 pea	food
-pea	pulse-legume
+pea	pulses
 pea	seed
 peach	commodity
 peach	organism
@@ -3393,10 +3380,11 @@ pigeon-pea	dish
 pigeon-pea	food
 pigeon-pea	goods
 pigeon-pea	prepared-dish
-pigeon-pea	pulse-legume
+pigeon-pea	pulses
 pigeon-pea	seed
 pillow	cushion
 pillowcase	artifact
+pillowcase	bag
 pillowcase	equipment
 pillowcase	goods
 pillowcase	handbag
@@ -3479,6 +3467,8 @@ pony	organism
 pony	physical-object
 ponzi-scheme	business-model
 ponzi-scheme	pyramid-scheme
+pool	game
+pool	sport
 pop	drink
 pop	fluid
 pop	liquid
@@ -3501,9 +3491,11 @@ postage	stationery
 postage-meter	machine
 postage-stamp	goods
 postage-stamp	stationery
-potato	organism
-potato	physical-object
-potato	plant
+potato	tuber
+potato	vegetable
+potato-plant	organism
+potato-plant	physical-object
+potato-plant	plant
 potential	function
 potpourri	musical-composition
 poultry	livestock
@@ -3614,8 +3606,8 @@ pullover	sweater
 pullover	tool
 pullover	top
 pulp	tissue
-pulse-legume	food
-pulse-legume	seed
+pulses	food
+pulses	seed
 pump	artifact
 pump	equipment
 pump	goods
@@ -3878,6 +3870,7 @@ rummage-sale	market
 rural-area	settlement
 rusk	food
 sack	artifact
+sack	bag
 sack	equipment
 sack	goods
 sack	handbag
@@ -4117,6 +4110,12 @@ shovel	equipment
 shovel	goods
 shovel	physical-object
 shovel	tool
+showcase	artifact
+showcase	equipment
+showcase	furniture
+showcase	goods
+showcase	physical-object
+showcase	tool
 shower-cap	artifact
 shower-cap	clothing
 shower-cap	equipment
@@ -4458,7 +4457,6 @@ stopwatch	physical-object
 stopwatch	tool
 stopwatch	watch
 storage-battery	battery
-storage-battery	electric-battery
 storage-tank	artifact
 storage-tank	equipment
 storage-tank	goods
@@ -4476,7 +4474,6 @@ stove	goods
 stove	household-appliance
 stove	physical-object
 stove	table
-stove	table-furniture
 stove	tool
 stove	workbench
 strawberry	berry
@@ -4608,7 +4605,6 @@ syringe	goods
 syringe	physical-object
 syringe	tool
 table	furniture
-table-furniture	furniture
 table-knife	artifact
 table-knife	equipment
 table-knife	goods
@@ -4664,6 +4660,7 @@ tear	fluid
 tear	liquid
 tear	liquid-substance
 television	medium
+television-system	medium
 tenant	inhabitant
 tenant	person
 tennis	game
@@ -4823,6 +4820,12 @@ trap	equipment
 trap	goods
 trap	physical-object
 trap	tool
+traveling-bag	artifact
+traveling-bag	equipment
+traveling-bag	goods
+traveling-bag	luggage
+traveling-bag	physical-object
+traveling-bag	tool
 tray	artifact
 tray	equipment
 tray	goods
@@ -4968,7 +4971,6 @@ valve	physical-object
 vanity	dining-table
 vanity	furniture
 vanity	table
-vanity	table-furniture
 vase	artifact
 vase	equipment
 vase	goods
@@ -5056,6 +5058,7 @@ walking-stick	physical-object
 walking-stick	tool
 wall-plate	beam
 wallet	artifact
+wallet	bag
 wallet	equipment
 wallet	goods
 wallet	handbag
@@ -5179,8 +5182,6 @@ whirligig	goods
 whirligig	physical-object
 whirligig	tool
 whisk	kitchenware
-white-potato	tuber
-white-potato	vegetable
 wholesale	business-model
 wholesale	commercial-trade
 wickerwork	braid
@@ -5229,7 +5230,6 @@ workbench	furniture
 workbench	goods
 workbench	physical-object
 workbench	table
-workbench	table-furniture
 workbench	tool
 workshop	workplace
 workstation	appliance

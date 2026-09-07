@@ -70,7 +70,6 @@ allowance	transaction
 altar	dining-table
 altar	furniture
 altar	table
-altar	table-furniture
 aluminum	drug
 aluminum	medication
 aluminum	metal
@@ -176,6 +175,7 @@ babysitting	childcare
 backlog	hill
 backlog	landform
 backpack	artifact
+backpack	bag
 backpack	clothing
 backpack	equipment
 backpack	garment
@@ -196,7 +196,8 @@ bacterium	organism
 bacterium	physical-object
 bag	artifact
 bag	equipment
-bag	luggage
+bag	housing
+bag	machine-housing
 bag	physical-object
 bag	tool
 bagel	food
@@ -216,7 +217,7 @@ ball	artifact
 ball	equipment
 ball	physical-object
 ball	sporting-goods
-ball-bearing	machine-bearing
+ball-bearing	bearing
 barbecue-grill	culture
 barbecue-grill	custom
 barley	commodity
@@ -343,7 +344,6 @@ billiard-table	furniture
 billiard-table	physical-object
 billiard-table	sporting-goods
 billiard-table	table
-billiard-table	table-furniture
 binary-file	computer-file
 binary-file	data-file
 binary-search-tree	binary-tree
@@ -651,12 +651,6 @@ carrot	plant-root
 carrot	prepared-dish
 carrot	root
 carrot	vegetable
-carrot-vegetable	dish
-carrot-vegetable	food
-carrot-vegetable	plant-root
-carrot-vegetable	prepared-dish
-carrot-vegetable	root
-carrot-vegetable	vegetable
 carton	artifact
 carton	equipment
 carton	physical-object
@@ -668,11 +662,6 @@ cartridge	ammunition
 cartridge	artifact
 cartridge	bullet
 cartridge	physical-object
-case	artifact
-case	equipment
-case	furniture
-case	physical-object
-case	tool
 cassava	organism
 cassava	physical-object
 cassava	plant
@@ -840,7 +829,6 @@ coffee-maker	household-appliance
 coffee-table	dining-table
 coffee-table	furniture
 coffee-table	table
-coffee-table	table-furniture
 coffin	furniture
 coincidence	group
 collection	group
@@ -909,7 +897,6 @@ console	dining-table
 console	furniture
 console	shelf
 console	table
-console	table-furniture
 conspiracy	alliance
 conspiracy	organization
 conspiracy	secrecy
@@ -1142,7 +1129,6 @@ desert	landform
 desk	dining-table
 desk	furniture
 desk	table
-desk	table-furniture
 desktop-computer	appliance
 desktop-computer	computer
 desktop-computer	household-appliance
@@ -1309,6 +1295,7 @@ dryer	machine
 duck-typing	dynamic-typing
 duck-typing	type-system
 duffel-bag	artifact
+duffel-bag	bag
 duffel-bag	equipment
 duffel-bag	handbag
 duffel-bag	housing
@@ -1707,6 +1694,7 @@ goalposts	sporting-goods
 golf	game
 golf	sport
 golf-bag	artifact
+golf-bag	bag
 golf-bag	equipment
 golf-bag	handbag
 golf-bag	housing
@@ -1792,6 +1780,10 @@ griddle	kitchenware
 grinder	dish
 grinder	food
 grinder	prepared-dish
+grinding-mortar	artifact
+grinding-mortar	equipment
+grinding-mortar	physical-object
+grinding-mortar	tool
 grindstone	artifact
 grindstone	equipment
 grindstone	physical-object
@@ -2251,7 +2243,6 @@ lease	contract
 lectern	dining-table
 lectern	furniture
 lectern	table
-lectern	table-furniture
 lecture	presentation
 leek	vegetable
 leftovers	food
@@ -2598,10 +2589,8 @@ monitor	user-interface
 monkey	mammal
 monolithic-application	computer-science
 monolithic-application	software-architecture
-mortar	artifact
-mortar	equipment
-mortar	physical-object
-mortar	tool
+mortar	adhesive
+mortar	glue
 mosque	organization
 mosquito	animal
 mosquito	organism
@@ -2763,8 +2752,6 @@ olive-oil	cooking-oil
 olive-oil	fuel
 olive-oil	oilseed
 olive-oil	vegetable-oil
-onion-vegetable	bulb
-onion-vegetable	vegetable
 ontology-language	computer-language
 open-source-software	software
 opendocument	file-format
@@ -2778,6 +2765,7 @@ opposition	political-party
 option	contract
 orange	citrus-fruit
 orbit	curve
+ore	stone
 organism	physical-object
 oscilloscope	artifact
 oscilloscope	equipment
@@ -2828,6 +2816,7 @@ palace	house
 palm-oil	cooking-oil
 panic	fear
 pannier	artifact
+pannier	bag
 pannier	equipment
 pannier	handbag
 pannier	housing
@@ -2882,7 +2871,7 @@ payment	transaction
 pdf	file-format
 pea	bean
 pea	food
-pea	pulse-legume
+pea	pulses
 pea	seed
 peach	commodity
 peach	organism
@@ -2950,10 +2939,11 @@ pigeon-pea	bean
 pigeon-pea	dish
 pigeon-pea	food
 pigeon-pea	prepared-dish
-pigeon-pea	pulse-legume
+pigeon-pea	pulses
 pigeon-pea	seed
 pillow	cushion
 pillowcase	artifact
+pillowcase	bag
 pillowcase	equipment
 pillowcase	handbag
 pillowcase	housing
@@ -3027,6 +3017,8 @@ pony	animal
 pony	horse
 pony	organism
 pony	physical-object
+pool	game
+pool	sport
 pop	drink
 pop	fluid
 pop	liquid
@@ -3054,9 +3046,11 @@ portrait	image
 poser	mannequin
 postage	stationery
 postage-meter	machine
-potato	organism
-potato	physical-object
-potato	plant
+potato	tuber
+potato	vegetable
+potato-plant	organism
+potato-plant	physical-object
+potato-plant	plant
 potential	function
 potpourri	musical-composition
 poultry	livestock
@@ -3170,8 +3164,8 @@ pullover	sweater
 pullover	tool
 pullover	top
 pulp	tissue
-pulse-legume	food
-pulse-legume	seed
+pulses	food
+pulses	seed
 pump	artifact
 pump	equipment
 pump	physical-object
@@ -3415,6 +3409,7 @@ runtime-system	software
 rural-area	settlement
 rusk	food
 sack	artifact
+sack	bag
 sack	equipment
 sack	handbag
 sack	housing
@@ -3620,6 +3615,11 @@ shovel	artifact
 shovel	equipment
 shovel	physical-object
 shovel	tool
+showcase	artifact
+showcase	equipment
+showcase	furniture
+showcase	physical-object
+showcase	tool
 shower-cap	artifact
 shower-cap	clothing
 shower-cap	equipment
@@ -3916,7 +3916,6 @@ stopwatch	physical-object
 stopwatch	tool
 stopwatch	watch
 storage-battery	battery
-storage-battery	electric-battery
 storage-tank	artifact
 storage-tank	equipment
 storage-tank	physical-object
@@ -3934,7 +3933,6 @@ stove	furniture
 stove	household-appliance
 stove	physical-object
 stove	table
-stove	table-furniture
 stove	tool
 stove	workbench
 strawberry	berry
@@ -4047,7 +4045,6 @@ syringe	equipment
 syringe	physical-object
 syringe	tool
 table	furniture
-table-furniture	furniture
 table-knife	artifact
 table-knife	equipment
 table-knife	kitchenware
@@ -4104,6 +4101,7 @@ tear	fluid
 tear	liquid
 tear	liquid-substance
 television	medium
+television-system	medium
 temporal-database	database
 tenant	inhabitant
 tenant	person
@@ -4242,6 +4240,11 @@ trap	artifact
 trap	equipment
 trap	physical-object
 trap	tool
+traveling-bag	artifact
+traveling-bag	equipment
+traveling-bag	luggage
+traveling-bag	physical-object
+traveling-bag	tool
 tray	artifact
 tray	equipment
 tray	kitchenware
@@ -4371,7 +4374,6 @@ valve	physical-object
 vanity	dining-table
 vanity	furniture
 vanity	table
-vanity	table-furniture
 vase	artifact
 vase	equipment
 vase	physical-object
@@ -4450,6 +4452,7 @@ walking-stick	physical-object
 walking-stick	tool
 wall-plate	beam
 wallet	artifact
+wallet	bag
 wallet	equipment
 wallet	handbag
 wallet	housing
@@ -4560,8 +4563,6 @@ whirligig	equipment
 whirligig	physical-object
 whirligig	tool
 whisk	kitchenware
-white-potato	tuber
-white-potato	vegetable
 wickerwork	braid
 wickerwork	structure
 wide-column-store	database-management-system
@@ -4609,7 +4610,6 @@ workbench	equipment
 workbench	furniture
 workbench	physical-object
 workbench	table
-workbench	table-furniture
 workbench	tool
 workshop	workplace
 workstation	appliance

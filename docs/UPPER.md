@@ -1058,3 +1058,74 @@ ruling (`firewood` ⊑ `tissue`, SUMO and Wikidata through wood, rejected).
 five goods vanished and the twenty failed to appear until `concepts.tsv` and
 `gpt-synsets.tsv` were reset to the commit and the run repeated. Result: core
 4,614 categories (+20), nothing lost, no line changed; packs regenerated.
+
+## 13. The sense list decided (2026-09-07, with Peter) — core v9
+
+The sense questions §10 and §12 had accumulated were put to Peter as one
+list, each with core's current synset, what hung below it, the everyday
+sense WordNet offers, and whether that sense was already in core under a hand
+name. His rulings (`review.tsv`, `overrides.tsv`, `names.tsv`, `drop.tsv`):
+
+**Sixteen bare words move to the everyday sense**; the old sense keeps a hand
+name, or is dropped where it was a leaf duplicating a neighbour:
+`battery` → the electric battery (was the assault, now
+`assault-and-battery`); `bag` → WordNet's flexible container with a single
+opening (was the suitcase, now `traveling-bag`) — `backpack`, `sack`,
+`pannier`, `duffel-bag` moved under it at once; `lead` → the metal (the
+leadership position dropped); `bearing` → the machine part (the manner is
+`comportment`); `rye` → the grain (`rye-whiskey`); `mace` → the spice
+(`chemical-mace`, the spray); `plaster` → the wall plaster
+(`sticking-plaster`); `mortar` → the masonry mortar (`grinding-mortar`);
+`stone` → the material, the aggregate of minerals (`fruit-stone`);
+`product` → the made thing, "an artifact created by someone or some process"
+(`mathematical-product`, mathematics' territory); `table` → the furniture
+(WordNet's laid table dropped; `coffee-table`, `desk`, `counter`,
+`workbench`, `vanity`, `stand` now hang from `table`); `case` → the
+carrying case (`showcase`); `pool` → the swimming pool, WordNet's excavation
+filled with water (`puddle`); `pepper` → the capsicum (`pepper-plant`);
+`potato` → the tuber (`potato-plant`); `television` → the set
+(`television-system`). **Kept:** `gas` stays the state of matter (Peter's one
+departure from the draft); `cereal` the breakfast food, `glass` the tumbler,
+`window` the opening, `mask` the disguise, `stake` the bet, `jelly`, `body`,
+`pulp`, `scrap`, `chalk`, `book`, `balance`, `pulse` (the legumes are now the
+plural kind `pulses`, as `jeans`), `maize` and `sorghum` the plants,
+`poultry` the animal synset with a gloss narrower than the word, `carrot`,
+`onion`, `mushroom` as they were, with the near-duplicate `carrot-vegetable`
+and `onion-vegetable` dropped. **`commodity`** is re-hung: `commodity ⊑
+artifact` rejected (articles of commerce include wheat and cattle),
+`commodity ⊑ physical-object` accepted, and `commodity` aligned to CPC's
+`cpc-goods`, so CPC now witnesses `X ⊑ commodity` for every good it lists,
+as it witnesses `X ⊑ service`: with Wikidata as the second witness the
+grains, `peach`, `tangerine`, `beer`, `tobacco`, `wood`, `bed-linen` and
+`table-linen` carry the edge; 800-odd CPC-only claims wait in the queue.
+
+**Two things the swaps taught.** (1) A rename is a trap for every review
+line written by name: `chips ⊑ white-potato`, `dining-table ⊑
+table-furniture` and the `carrying-case` readings all pointed at names that
+no longer existed, and lines written when `case` meant the display case
+would have applied to the carrying case. `resolve_reviews` prefers the
+recorded offsets, so the 854 lines that lacked them were backfilled from the
+committed `concepts.tsv` — every review now names its synsets, and later
+renames cannot move it. (2) The published v3 pins are by name too: `lead ⊑
+leadership` and `pool ⊑ place` survived the swap as accepted edges on the new
+senses and needed rulings; the other pins (`battery ⊑ assault`, `pepper ⊑
+plant`, `stone ⊑ natural-object`) had no live witness and lapsed by
+themselves. **And `product`:** with the made-thing sense, YAGO's, SUMO's and
+schema.org's `Product` classes — the commercial sense — had made it a hub
+over 120 artifacts (`oven ⊑ product`, `weapon ⊑ product`); those alignments
+are cleared in `overrides.tsv`, so only WordNet's own hyponyms attach.
+
+**The reading:** 51 single-witness edges on the re-sensed words and the new
+hand names (`pool ⊑ artifact` accepted as WordNet's excavation, `pool ⊑
+sport` and `puddle ⊑ pool` rejected; `plaster` and `mortar ⊑
+building-material`; `potato ⊑ tuber`, `foodstuff`; `television ⊑ product`
+accepted, `⊑ medium` rejected; `table ⊑ chair`, GPT's department, rejected;
+`stone ⊑ rock`, SUMO's lump, rejected), two rulings for the pins.
+
+**Result:** core 4,617 categories (+3 net: 15 names in, 13 hand names
+retired, and `product` placed at last — its placing edge to `artifact` is
+WordNet's chain, read and accepted once the commercial alignments were
+gone), nothing lost, no qualified names; the only parent changes beyond
+the swaps are `bag`'s new children, `commodity`'s, and `clothing`, `import`
+and `merchandise` regaining `artifact` now that `commodity` no longer entails
+it.

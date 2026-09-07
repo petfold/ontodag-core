@@ -61,7 +61,7 @@ alliance organization
 allowance gift money payment
 alloy '*'
 almond '*'
-altar dining-table table table-furniture
+altar dining-table table
 altimeter '*'
 aluminum medication metal
 alumnus '*'
@@ -190,11 +190,11 @@ axis '*'
 baby child childhood
 babysitting childcare
 backlog hill
-backpack clothing garment handbag
+backpack bag clothing garment handbag
 bacon pork
 bacterium microorganism
 badminton-racquet '*'
-bag luggage
+bag housing machine-housing
 bagel food
 bail '*'
 bakery building workplace
@@ -205,7 +205,7 @@ balance '*'
 balance-beam '*'
 balcony '*'
 ball sporting-goods
-ball-bearing machine-bearing
+ball-bearing bearing
 ballet '*'
 balloon '*'
 banana '*'
@@ -257,6 +257,7 @@ bean seed
 beanie clothing garment
 bear animal
 beard '*'
+bearing '*'
 bed artifact furniture
 bedding '*'
 bedroom room
@@ -280,7 +281,7 @@ bidet '*'
 bikini '*'
 bill cash
 billiard-ball sporting-goods
-billiard-table dining-table sporting-goods table table-furniture
+billiard-table dining-table sporting-goods table
 binder stationery
 binoculars '*'
 biography '*'
@@ -476,11 +477,9 @@ carport '*'
 carriage '*'
 carrier '*'
 carrot dish plant-root prepared-dish root vegetable
-carrot-vegetable dish plant-root prepared-dish root vegetable
 carton tool
 cartoon drawing
 cartridge bullet
-case furniture tool
 casein '*'
 cash '*'
 cash-machine '*'
@@ -652,7 +651,7 @@ coffee '*'
 coffee-bean '*'
 coffee-cake cake
 coffee-maker appliance household-appliance
-coffee-table dining-table table table-furniture
+coffee-table dining-table table
 coffin furniture
 cognition '*'
 coil '*'
@@ -731,7 +730,7 @@ conscription military-service service
 consensus '*'
 consideration '*'
 consolation '*'
-console dining-table shelf table table-furniture
+console dining-table shelf table
 conspiracy alliance secrecy
 constellation asterism
 constituent-state '*'
@@ -914,7 +913,7 @@ depressive-disorder '*'
 deputy politician
 derrick '*'
 desert habitat landform
-desk dining-table table table-furniture
+desk dining-table table
 desktop-computer appliance computer household-appliance
 dessert dish prepared-dish
 destiny '*'
@@ -1017,7 +1016,7 @@ dryer machine
 drywall '*'
 duck '*'
 due-west '*'
-duffel-bag handbag
+duffel-bag bag handbag
 duke title-of-respect
 dumbbell '*'
 dune-buggy car
@@ -1053,7 +1052,6 @@ eggshell housing machine-housing
 elastic '*'
 elbow '*'
 election '*'
-electric-battery '*'
 electric-charge '*'
 electric-motor engine motor
 electric-razor razor
@@ -1355,7 +1353,7 @@ goat '*'
 goggles '*'
 gold '*'
 golf sport
-golf-bag handbag sporting-goods
+golf-bag bag handbag sporting-goods
 golf-ball sporting-goods
 golf-cart car sporting-goods
 golf-club sporting-goods
@@ -1403,6 +1401,7 @@ grief '*'
 grill '*'
 grimace '*'
 grinder dish prepared-dish
+grinding-mortar tool
 grindstone tool
 grip '*'
 grocery-store workplace
@@ -1747,14 +1746,13 @@ lawn-mower machine
 lawyer professional specialist
 layout '*'
 lead '*'
-lead-metal '*'
 leader person
 leaf '*'
 lease contract
 leash '*'
 leather '*'
 leave '*'
-lectern dining-table table table-furniture
+lectern dining-table table
 lecture presentation
 leek vegetable
 leftovers food
@@ -1850,10 +1848,8 @@ lung organ
 lychee '*'
 macaroni pasta
 mace '*'
-mace-spice '*'
 machete knife
 machine '*'
-machine-bearing '*'
 machine-housing tool
 maestro '*'
 magic-trick '*'
@@ -1913,6 +1909,7 @@ master-of-ceremonies '*'
 match tool
 matchstick tool
 material '*'
+mathematical-product '*'
 mathematics '*'
 matrimony '*'
 matrix '*'
@@ -2003,7 +2000,7 @@ monopoly '*'
 moon '*'
 mop '*'
 morning '*'
-mortar tool
+mortar adhesive glue
 mortgage '*'
 mosaic '*'
 mosque organization
@@ -2133,7 +2130,6 @@ olfactory-property '*'
 olive '*'
 olive-oil oilseed vegetable-oil
 onion '*'
-onion-vegetable bulb vegetable
 oort-cloud '*'
 opera musical-composition
 operating-system software
@@ -2151,7 +2147,7 @@ orbit curve
 orbital-inclination '*'
 orbital-node '*'
 orchestra '*'
-ore '*'
+ore stone
 organ '*'
 organism physical-object
 organization '*'
@@ -2197,7 +2193,7 @@ pallet '*'
 palm '*'
 palm-oil cooking-oil
 panic fear
-pannier handbag
+pannier bag handbag
 panty underpants
 papaya '*'
 paper '*'
@@ -2241,7 +2237,7 @@ patriotism '*'
 pattern decorative-design
 pause '*'
 payment transaction
-pea bean pulse-legume
+pea bean pulses
 peace '*'
 peacetime '*'
 peach commodity tree
@@ -2264,7 +2260,7 @@ pencil-sharpener stationery
 pendant '*'
 pension service
 people mammal
-pepper '*'
+pepper-plant '*'
 pepper-spray '*'
 peppercorn spice
 perceiver '*'
@@ -2311,12 +2307,12 @@ pie '*'
 pier '*'
 pig animal
 pigeon '*'
-pigeon-pea bean dish prepared-dish pulse-legume
+pigeon-pea bean dish prepared-dish pulses
 piggy-bank '*'
 pill '*'
 pillbox '*'
 pillow cushion
-pillowcase handbag
+pillowcase bag handbag
 pilot '*'
 pineapple '*'
 pineapple-juice '*'
@@ -2379,7 +2375,7 @@ pomegranate '*'
 pomelo tree
 pommel-horse '*'
 pony horse
-pool '*'
+pool sport
 pop drink soft-drink
 pop-music '*'
 popcorn snack-food
@@ -2396,7 +2392,8 @@ post '*'
 postage stationery
 postage-meter machine
 postcard '*'
-potato plant
+potato tuber vegetable
+potato-plant plant
 potential function
 potpourri musical-composition
 pottery '*'
@@ -2445,7 +2442,6 @@ prize '*'
 probability '*'
 produce '*'
 producer businessman
-product '*'
 profession '*'
 professional worker
 professor scientist
@@ -2478,11 +2474,12 @@ publication '*'
 publisher company occupation
 puck '*'
 pudding dessert
+puddle '*'
 pulley mechanism
 pullover sweater
 pulp tissue
 pulse '*'
-pulse-legume seed
+pulses seed
 pumice-stone '*'
 pump tool
 pumpkin gourd
@@ -2667,8 +2664,8 @@ rural-area settlement
 rusk food
 rutabaga '*'
 rye '*'
-rye-grain '*'
-sack handbag
+rye-whiskey '*'
+sack bag handbag
 sacrifice '*'
 saddle seat
 safety '*'
@@ -2812,6 +2809,7 @@ shopping '*'
 shot ammunition
 shoulder '*'
 shovel tool
+showcase furniture tool
 shower '*'
 shower-cap clothing garment
 shrimp seafood
@@ -2998,18 +2996,20 @@ stencil '*'
 stereo-system '*'
 stethoscope '*'
 steward governor
+sticking-plaster '*'
 stilt footwear
 stimulation '*'
 stirrup '*'
 stockholder '*'
 stocking hosiery
 stomach '*'
+stone '*'
 stone-fruit '*'
 stool '*'
 stopcock mechanism
 stopper lid
 stopwatch watch
-storage-battery battery electric-battery
+storage-battery battery
 storage-tank tool
 storey '*'
 storm wind
@@ -3085,7 +3085,6 @@ syndrome disease illness symptom
 syringe tool
 syrup '*'
 table furniture
-table-furniture furniture
 table-knife kitchenware knife
 table-linen '*'
 tablecloth '*'
@@ -3128,6 +3127,7 @@ telephone-line '*'
 telescope '*'
 television medium
 television-camera '*'
+television-system medium
 temple '*'
 temple-of-head '*'
 tempo '*'
@@ -3245,6 +3245,7 @@ transport service
 transportation service
 trap tool
 trash-can '*'
+traveling-bag luggage
 tray tableware tool
 treasure collection
 treasurer businessman
@@ -3312,7 +3313,7 @@ valley natural-depression
 valve artifact
 van '*'
 vanilla '*'
-vanity dining-table table table-furniture
+vanity dining-table table
 vaporizer '*'
 variant '*'
 varnish '*'
@@ -3375,7 +3376,7 @@ walker '*'
 walking-stick clothing garment
 wall '*'
 wall-plate beam
-wallet handbag
+wallet bag handbag
 wallop '*'
 wallpaper '*'
 walnut stone-fruit
@@ -3435,7 +3436,6 @@ whirligig entertainment tool
 whisk kitchenware
 whiskey '*'
 whistle '*'
-white-potato tuber vegetable
 wick '*'
 wickerwork braid
 widow woman
@@ -3468,7 +3468,7 @@ wool-fiber '*'
 worcestershire-sauce '*'
 word '*'
 work '*'
-workbench dining-table table table-furniture tool
+workbench dining-table table tool
 worker '*'
 workplace '*'
 workshop workplace

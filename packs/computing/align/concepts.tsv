@@ -279,6 +279,7 @@ aspiration	07484547	PsychologicalAttribute	+										"a cherished desire; ""his
 aspirin	02748618	BiologicallyActiveSubstance	+			Q18216							the acetylated derivative of salicylic acid; used as an analgesic anti-inflammatory drug (	base
 ass	02389346	HoofedMammal	+					02132					hardy and sure-footed animal smaller and with longer ears than the horse	base
 assault	00767826	ViolentContest	+		Assault	Q2911369							a threatened or attempted physical attack by someone who appears to be able to cause bodil	base
+assault-and-battery	00768203	ViolentContest	+										an assault in which the assailant makes physical contact	base
 assembler	06573337	ComputerProgram	+										a program to convert assembly language into machine language	computing
 assembly-hall	03478907	Room	+		Assembly_hall	Q1940809							"a large room for gatherings or entertainment; ""lecture hall""; ""pool hall"""	base
 assembly-language	06899310	ComputerLanguage	+			Q165436							a low-level programing language; close approximation to machine language	computing
@@ -359,7 +360,7 @@ bacon	07670433	Bacon	=			Q11106			Mx4rvWKeipwpEbGdrcN5Y29ycA				back and sides o
 bacterium	01348530	Bacterium	=			Q10876			Mx4rvVjU-5wpEbGdrcN5Y29ycA				(microbiology) single-celled or noncellular spherical or spiral or rod-shaped organisms la	base
 bad-block	13626789	SubjectiveAssessmentAttribute	+										(computer science) a block (usually one sector) that cannot reliably hold data	computing
 badminton-racquet	02772700	Device	+			Q799666	3950a						a light long-handled racket used by badminton players	base
-bag	02773838	TravelContainer	+		Bag	Q200814	3337b						"a portable rectangular container for carrying clothes; ""he carried his small bag onto the "	base
+bag	02773037	Container	+		Bag	Q1323314	3337b						"a flexible container with a single opening; ""he stuffed his laundry into a large bag"""	base
 bagel	07693725	Bagel	=			Q272502	1573		Mx4rwQCMTZwpEbGdrcN5Y29ycA				(Yiddish) glazed yeast-raised doughnut-shaped roll with hard crust	base
 bail	05903445	Procedure	+			Q162351							the legal system that allows an accused person to be temporarily released from custody (us	base
 bail-bond	13350976	CurrencyMeasure	+										(criminal law) money that must be forfeited by the bondsman if an accused person fails to 	base
@@ -436,7 +437,7 @@ bathrobe	02807616	Clothing	+			Q798904							a loose-fitting robe of towelling; 
 bathroom	02807731	Bathroom	=			Q190771			Mx4rj_TbOCmDQdecrvhdjRWehQ				a room (as in a residence) containing a bathtub or shower and usually a washbasin and toil	base
 bathtub	02808440	BathTub	=			Q152095	8320a	3693a	Mx4rvVibtpwpEbGdrcN5Y29ycA				a relatively large open container that you fill with water and use to wash the body	base
 batter	07860805	PreparedFood	+			Q29493	6774a		Mx4rvVimFZwpEbGdrcN5Y29ycA				a liquid or semiliquid mixture, as of flour, eggs, and milk, used in cooking	base
-battery	00768203	ViolentContest	+			Q267298	276		Mx4rvVicrpwpEbGdrcN5Y29ycA				an assault in which the assailant makes physical contact	base
+battery	02810471	Battery	+			Q267298	276		Mx4rvVicrpwpEbGdrcN5Y29ycA				a device that produces electricity; may have several primary or secondary cells arranged i	base
 battle	00953559	Battle	=		Battle	Q178561							"a hostile meeting of opposing military forces in the course of a war; ""Grant won a decisiv"	base
 battlefield	08506641	MilitaryFront	+		Battlefield	Q4895508			Mx4rI67BIqUgQdiGzOBoxWmzTA				"a region where a battle is being (or has been) fought; ""they made a tour of Civil War batt"	base
 battlefront	08573674	MilitaryFront	+			Q842332							the line along which opposing armies face each other	base
@@ -453,7 +454,7 @@ bean	07724943	Bean	=			Q379813	5797	01241					any of various edible seeds of pla
 beanie	02816768	Clothing	+			Q265157							a small skullcap; formerly worn by schoolboys and college freshmen	base
 bear	02131653	Bear	=			Q30090244							massive plantigrade carnivorous or omnivorous mammals with long shaggy coats and strong cl	base
 beard	05261566	FacialHair	+			Q42804			Mx4rvViDgZwpEbGdrcN5Y29ycA				the hair growing on the lower part of a man's face	base
-bearing	04910377	TraitAttribute	+										dignified manner or conduct	base
+bearing	02817031	Bearing	=			Q1335987		433a					a rotating support placed between moving parts to allow them to move easily	base
 beauty-treatment	00261797		+					972					enhancement of someone's personal beauty	base
 bed	02818832	Bed	=			Q42177	6433a		Mx4rvVjeFJwpEbGdrcN5Y29ycA				"a piece of furniture that provides a place to sleep; ""he sat on the edge of the bed""; ""the"	base
 bed-linen	02821030	BedLinen	=					2712a					linen or cotton articles for a bed (as sheets and pillowcases)	base
@@ -766,7 +767,6 @@ capital-city	08518505	LandArea	+		Capital_city	Q5119			Mx4rvVjylZwpEbGdrcN5Y29yc
 capital-letter	06824227	Character	+										one of the large alphabetic characters used as the first letter in writing or printing pro	base
 capitalism	08364143	CapitalistEconomy	=			Q6206							an economic system based on private ownership of capital	base
 caprice	07490579	EmotionalState	+										"a sudden desire; ""he bought it on an impulse"""	base
-capsicum-pepper	07720442	Vegetable	+					01231					sweet and hot varieties of fruits of plants of the genus Capsicum	base
 captain	09892831	USMilitaryRankO6	+			Q849424							the naval officer in command of a military ship	base
 caption	06346891	Text	+						Mx4rqVRdICa7QdiLM-vXo1D9xA				brief description accompanying an illustration	base
 caput	05538625	Head	=			Q23640							the upper part of the human body or the front part of the body in animals; contains the fa	base
@@ -800,15 +800,13 @@ carriage	05002822	SubjectiveAssessmentAttribute	+		Carriage	Q235356							"chara
 carriage-return	13443537	ContentDevelopment	+										the operation that prepares for the next character to be printed or displayed as the first	computing
 carrier	02969886	Holder	+			Q561457	695b						a rack attached to a vehicle; for carrying luggage or skis or the like	base
 carrot	12937678	FruitOrVegetable	+			Q81	6595						deep orange edible root of the cultivated carrot plant	base
-carrot-vegetable	07730207	Carrot	=			Q81		01251					orange root; important source of carotene	base
-carrying-case	02974697	Container	=					31913	Mx4rvVi-_5wpEbGdrcN5Y29ycA				"a portable container for carrying several objects; ""the musicians left their instrument ca"	base
 carrying-out	00097504	IntentionalProcess	+										the act of performing; of doing something successfully; using knowledge as distinguished f	base
 carton	02971356	Box	+			Q3444710		32153					a box made of cardboard; opens by flaps on top	base
 cartoon	06780678	Icon	+		Cartoon	Q627603							a humorous or satirical drawing published in a newspaper or magazine	base
 cartridge	02971691	BulletCartridge	=			Q37144		4474f					ammunition consisting of a cylindrical casing containing an explosive charge and a bullet;	base
 carving-fork	02973805	Tableware	+				5078						a large fork used in carving cooked meat	base
 cascading-style-sheets						Q46441								computing
-case	02975212	Container	+			Q3561331	6551b		Mx4rwRZOgJwpEbGdrcN5Y29ycA				a glass container used to store and display items in a shop or museum or home	base
+case	02974697	Container	=				6551b	31913	Mx4rwRZOgJwpEbGdrcN5Y29ycA				"a portable container for carrying several objects; ""the musicians left their instrument ca"	base
 casein	14735347	Protein	+			Q193970		2226					a milk protein used in making e.g. plastics and adhesives	base
 cash	13386614	Currency	=			Q693464			Mx4rcYfM1hVWQdiCDK9QZHqOFw				"money in the form of bills or coins; ""there is a desperate shortage of hard cash"""	base
 cash-machine	02977058	ATMMachine	=			Q81235		4514c					an unattended machine (outside some banks) that dispenses money when a personal coded card	base
@@ -924,6 +922,7 @@ cheese	07850329	Cheese	=		Cheese	Q10943	429	2225	Mx4rvVjOAZwpEbGdrcN5Y29ycA				a
 cheese-dip	07582892	PreparedFood	+				6831a						a dip made of cheeses	base
 chemical	14806838	Substance	+			Q79529	2277	161a					material produced by or used in a reaction involving changes in atoms or molecules	base
 chemical-element	14622893	ElementalSubstance	=		Chemical_element	Q11344		3547a					any of the more than 100 known substances (of which 92 occur naturally) that cannot be sep	base
+chemical-mace	14944617	Substance	+					01653					(trademark) a liquid that temporarily disables a person; prepared as an aerosol and spraye	base
 chemical-reaction	13447361	ChemicalProcess	+		Chemical_reaction	Q36534			Mx4rvVibyJwpEbGdrcN5Y29ycA				"(chemistry) a process in which one or more substances are changed into others; ""there was "	base
 chemical-solution	14589223	Solution	=			Q146654							a homogeneous mixture of two or more substances; frequently (but not necessarily) a liquid	base
 chemistry	06084469	Chemistry	@			Q2329							the science of matter; the branch of the natural sciences dealing with the composition of 	base
@@ -1100,7 +1099,7 @@ commercial-enterprise	01094725	CommercialService	+										the activity of prov
 commission	13320860	CurrencyMeasure	+										a fee for services rendered based on a percentage of an amount received or collected or ag	base
 commitment	01206153	SubjectiveAssessmentAttribute	+						Mx4riIdgZm-GQdeMf6g4pY3ONA				"the act of binding yourself (intellectually or emotionally) to a course of action; ""his lo"	base
 committee	08324514	Commission	=		Committee	Q865588			Mx4rvaG5hJwpEbGdrcN5Y29ycA				"a special group delegated to consider some matter; ""a committee is a group that keeps minu"	base
-commodity	03076708	Product	=			Q317088			Mx4rvViSe5wpEbGdrcN5Y29ycA				articles of commerce	base
+commodity	03076708	Product	=			Q317088		cpc-goods	Mx4rvViSe5wpEbGdrcN5Y29ycA				articles of commerce	base
 common-sense	05614657	PsychologicalAttribute	+			Q332880			Mx4rQS6kemBsEdqAAACQJw5drg				"sound practical judgment; ""Common sense is not so common""; ""he hasn't got the sense God ga"	base
 communication	06252138	Communication	=						Mx4rPRIjqlmVRG2VbbBIKAOvvg				"the activity of communicating; the activity of conveying information; ""they could not act "	base
 communications-protocol	06665108	NormativeAttribute	+										(computer science) rules determining the format and transmission of data	computing
@@ -1125,6 +1124,7 @@ complex-instruction-set-computer						Q189120								computing
 complex-instruction-set-computing	04932561	Attribute	+										(computer science) a kind of computer architecture that has a large number of instructions	computing
 complication	13933221	SubjectiveAssessmentAttribute	+			Q1346149			Mx4rFBo7_i85QdiZ78b5I7iLiQ				"a situation or condition that is complex or confused; ""her coming was a serious complicati"	base
 component	03081021	EngineeringComponent	=						Mx4rwUTJ_JwpEbGdrcN5Y29ycA				an artifact that is one of the individual parts of which a composite entity is made up; es	base
+comportment	04910377	TraitAttribute	+										dignified manner or conduct	base
 composer	09947232	Composer	=		Composer	Q36834			Mx4rvVjp3ZwpEbGdrcN5Y29ycA				someone who composes music as a profession	base
 composition	06409752	Article	+										"an essay (especially one written as an assignment); ""he got an A on his composition"""	base
 compost	14818101	Humus	+			Q212254	690		Mx4r81m1tHnNQdeA_K_L45oHEA				a mixture of decaying vegetation and manure; used as a fertilizer	base
@@ -1856,7 +1856,6 @@ elastic	04116098	Device	+			Q256817	6146						a narrow band of elastic rubber us
 elbow	05579944	Elbow	+			Q42586			Mx4rvVjjNZwpEbGdrcN5Y29ycA				hinge joint between the forearm and upper arm and the corresponding joint in the forelimb 	base
 election	00181781	Election	=		Election	Q40231							"a vote to select the winner of a position or political office; ""the results of the electio"	base
 electorate	08161068	SocialRole	+						Mx4reZsf2vw5EdyAAAACs6hbjw				the body of enfranchised citizens; those qualified to vote	base
-electric-battery	02810471	Battery	+			Q267298							a device that produces electricity; may have several primary or secondary cells arranged i	base
 electric-blanket	03270854	ElectricDevice	+					44813	Mx4rwP1h1JwpEbGdrcN5Y29ycA				a blanket containing and electric heating element that can be controlled to the desired te	base
 electric-charge	11435028	FunctionQuantity	+			Q1111							the quantity of unbalanced electricity in a body (either positive or negative) and constru	base
 electric-motor	03273061	ElectricMotor	=			Q72313		461a	Mx4rvViod5wpEbGdrcN5Y29ycA				a motor that converts electricity to mechanical work	base
@@ -2288,6 +2287,7 @@ fructose	14874932	Carbohydrate	+			Q122043		2321c	Mx4rvVipE5wpEbGdrcN5Y29ycA				
 fruit	07705931	FruitOrVegetable	+		Fruit	Q1364	430a						edible reproductive body of a seed plant especially one having sweet flesh	base
 fruit-jelly	07643306	PreparedFood	+			Q20579575							a preserve made of the jelled juice of fruit	base
 fruit-juice	07924033	Juice	+			Q20932605		2143					drink produced by squeezing or crushing fruit	base
+fruit-stone	11684739	BodyPart	+										the hard inner (usually woody) layer of the pericarp of some fruits (as peaches or plums o	base
 frustration	07540866	Unhappiness	+			Q192242			Mx4rvVi1hpwpEbGdrcN5Y29ycA				the feeling that accompanies an experience of being thwarted in attaining your goals	base
 fryer	07645469	ChickenMeat	+										flesh of a medium-sized young chicken suitable for frying	base
 frying-pan	03400231	PotOrPan	+			Q127666	662b						a pan used for frying foods	base
@@ -2490,6 +2490,7 @@ grill	03459591	Artifact	+			Q1252133	7165b	42943	Mx4rvWVPQpwpEbGdrcN5Y29ycA				"
 grimace	06877578	BodyMotion	+			Q327968			Mx4rvVjFU5wpEbGdrcN5Y29ycA				"a contorted facial expression; ""she made a grimace at the prospect"""	base
 grinder	07697825	Sandwich	+			Q5192125	1219		Mx4rvVjHqJwpEbGdrcN5Y29ycA				a large sandwich made of a long crusty roll split lengthwise and filled with meats and che	base
 grinding-machine	03460040	Device	+										a machine tool that polishes metal	base
+grinding-mortar	03786901	Device	+			Q45778							a bowl-shaped vessel in which substances can be ground and mixed with a pestle	base
 grinding-wheel	03460147	EngineeringComponent	+				499860a	3791c					a wheel composed of abrasive material; used for grinding	base
 grindstone	03460297	Device	+			Q4990615		3791b					a revolving stone shaped like a disk; used to grind or sharpen or polish edge tools	base
 grip	05194874	SubjectiveAssessmentAttribute	+			Q3274496	1185		Mx4rvVim3pwpEbGdrcN5Y29ycA				"an intellectual hold or understanding; ""a good grip on French history""; ""they kept a firm "	base
@@ -3099,8 +3100,7 @@ layer	08591680	Region	+										a relatively thin sheetlike expanse or region l
 layout	05837271	Abstract	+			Q868954							a plan or design of something that is laid out	base
 lazy-evaluation						Q573952								computing
 ldap						Q188816								computing
-lead	01256743	Position	+			Q708			Mx4rvVkK_ZwpEbGdrcN5Y29ycA				"a position of leadership (especially in the phrase `take the lead'); ""he takes the lead in"	base
-lead-metal	14643467	Lead	=			Q708		414e					a soft heavy toxic malleable metallic element; bluish white when freshly cut but tarnishes	base
+lead	14643467	Lead	=			Q708		414e	Mx4rvVkK_ZwpEbGdrcN5Y29ycA				a soft heavy toxic malleable metallic element; bluish white when freshly cut but tarnishes	base
 leader	09623038	Guiding	=			Q1251441	1037b						a person who rules or guides or inspires others	base
 leader-election						Q1424189								computing
 leadership	01256417	Managing	=										"the activity of leading; ""his leadership inspired the team"""	base
@@ -3292,11 +3292,9 @@ lung	05387544	Lung	=			Q7886			Mx4rvVjKy5wpEbGdrcN5Y29ycA				either of two sacli
 lychee	07766173	FruitOrVegetable	+			Q13182	6638		Mx8Ngh4rvVipdpwpEbGdrcN5Y29ycB4rvVjpsZwpEbGdrcN5Y29ycA				Chinese fruit having a thin brittle shell enclosing a sweet jellylike pulp and a single se	base
 mac-address						Q20484			Mx4rv7ncnpwpEbGdrcN5Y29ycA					computing
 macaroni	07700964	Pasta	+			Q20019		237a					pasta in the form of slender tubes	base
-mace	14944617	Substance	+			Q1882876	726a	01653	Mx4rvVjqkZwpEbGdrcN5Y29ycA				(trademark) a liquid that temporarily disables a person; prepared as an aerosol and spraye	base
-mace-spice	07815294	Mace	=			Q1882876		23923					spice made from the dried fleshy covering of the nutmeg seed	base
+mace	07815294	Mace	=			Q1882876	726a	23923	Mx4rvVjqkZwpEbGdrcN5Y29ycA				spice made from the dried fleshy covering of the nutmeg seed	base
 machete	03699591	Weapon	+			Q230711	505292b		Mx4ra7DeJF5rQdmQmc0MXLkr9g				a large heavy knife used in Central and South America as a weapon or for cutting vegetatio	base
 machine	03699975	Machine	=		Machine	Q11019	6134b						any mechanical or electrical device that transmits or modifies energy to perform or assist	base
-machine-bearing	02817031	Bearing	=			Q1335987		433a					a rotating support placed between moving parts to allow them to move easily	base
 machine-code	06357985	ComputerProgram	+			Q55813			Mx4rwPrXepwpEbGdrcN5Y29ycA				a set of instructions coded so that the computer can use it directly without further trans	computing
 machine-housing	03546766	EngineeringComponent	+			Q11326220							a protective cover designed to contain or support a mechanical component	base
 machine-readable-dictionary	06639023	Dictionary	+										a machine-readable version of a standard dictionary; organized alphabetically	computing
@@ -3399,6 +3397,7 @@ mat	03727837	Rug	+				6133b		Mx4rDF0chBxkQdiKXNMg3UwUhg				a thick flat pad used
 match	07470671	Sport	+			Q37507	503774b						a formal contest in which two or more persons or teams compete	base
 matchstick	03728437	MatchDevice	+			Q37507		38998					lighter consisting of a thin piece of wood or cardboard tipped with combustible chemical; 	base
 material	14580897	Substance	=		Material	Q214609	6142						"the tangible substance that goes into the makeup of a physical object; ""coal is a hard bla"	base
+mathematical-product	05859630	MultiplicationFn	+			Q901718							"a quantity obtained by multiplication; ""the product of 2 and 3 is 6"""	base
 mathematics	06000644	Mathematics	@		Mathematics	Q395							a science (or group of related sciences) dealing with the logic of quantity and shape and 	base
 matlab						Q37805571								computing
 matrimony	13963970	MarriageContract	=			Q8445							"the state of being a married couple voluntarily joined for life (or until divorce); ""a lon"	base
@@ -3561,7 +3560,7 @@ mop	04367480	CleaningDevice	+			Q828361	2713		Mx4rvVjQJZwpEbGdrcN5Y29ycA				clea
 morale	14374273	StateOfMind	+						Mx4rc2EcjJK4EdaAAACQJ5pcGA				a state of individual psychological well-being based upon a sense of confidence and useful	base
 morning	15165289	Morning	=			Q7722			Mx4rvViIhZwpEbGdrcN5Y29ycA				"the time period between dawn and noon; ""I spent the morning running errands"""	base
 morsel	07579076	Food	+										"a small amount of solid food; a mouthful; ""all they had left was a bit of bread"""	base
-mortar	03786901	Device	+			Q45778	3999a		Mx4rwQCV95wpEbGdrcN5Y29ycA				a bowl-shaped vessel in which substances can be ground and mixed with a pestle	base
+mortar	14955889	Cement	+			Q189566	3999a		Mx4rwQCV95wpEbGdrcN5Y29ycA				used as a bond in masonry or for covering a wall	base
 mortgage	13352138	Mortgage	+			Q184260			Mx4rvuDzypwpEbGdrcN5Y29ycA				a conditional conveyance of property as security for the repayment of a loan	base
 mosaic	03787759	ArtWork	+		Mosaic	Q3324695							art consisting of a design made of small pieces of colored stone or glass	base
 mosque	03788195	Mosque	=	schema:Mosque	Mosque	Q32815			Mx4rwJSZ7ZwpEbGdrcN5Y29ycA				(Islam) a Muslim place of worship that usually has a minaret	base
@@ -3811,7 +3810,6 @@ one-dimensional-language	06901163	ComputerLanguage	+										a programming lang
 one-fourth	13737480	RationalNumber	+										"one of four equal parts; ""a quarter of a pound"""	base
 one-half	13736799	RationalNumber	+										"one of two equal parts of a divisible whole; ""half a loaf""; ""half an hour""; ""a century and"	base
 onion	12433081	FruitOrVegetable	+			Q23485	6655		Mx4rwQCWWZwpEbGdrcN5Y29ycA				the bulb of an onion plant	base
-onion-vegetable	07722217	FruitOrVegetable	+			Q3406628		01253					an aromatic flavorful vegetable	base
 ontology-alignment						Q1224764								computing
 ontology-language						Q7095059								computing
 open-data					Open_data	Q309901								computing
@@ -4028,7 +4026,8 @@ penetration-test						Q1501923								computing
 pension	13384164	CurrencyMeasure	+			Q156223							a regular payment to a person that is intended to allow them to subsist without working	base
 pensioner	10414612	Human	+						Mx4rXRRtHr-sEdaAAAACs6Mw3A				the beneficiary of a pension fund	base
 people	07942152	GroupOfPeople	=		People	Q171283							"(plural) any group of human beings (men or women or children) collectively; ""old people""; "	base
-pepper	13149506	FloweringPlant	+			Q43084	6668						climber having dark red berries (peppercorns) when fully ripe; southern India and Sri Lank	base
+pepper	07720442	Vegetable	+				6668	01231					sweet and hot varieties of fruits of plants of the genus Capsicum	base
+pepper-plant	13149506	FloweringPlant	+			Q43084			Mx4rwQCbBJwpEbGdrcN5Y29ycA				climber having dark red berries (peppercorns) when fully ripe; southern India and Sri Lank	base
 pepper-shaker	03914438	Device	+				676b		Mx4rvViLlJwpEbGdrcN5Y29ycA				a shaker with a perforated top for sprinkling ground pepper	base
 pepper-spray	03914583	Device	+			Q622653	726b		Mx4rnC7r0K0WEd6eNAAhm0kILA				a nonlethal aerosol spray made with the pepper derivative oleoresin capiscum; used to caus	base
 peppercorn	07815588	SpicePepper	=			Q3143131		01651					pungent seasoning from the berry of the common pepper plant of East India; use whole or gr	base
@@ -4142,7 +4141,7 @@ plant	00017222	Plant	=		Plant	Q756	985	019c					(botany) a living organism lacki
 plant-root	13125117	PlantRoot	=			Q41500		015a					(botany) the usually underground organ that lacks buds or leaves or nodes; absorbs water a	base
 plantain	07768423	Plantain	=			Q165449		01313					starchy banana-like fruit; eaten (always cooked) as a staple vegetable throughout the trop	base
 planter	03957315	Artifact	+				721b	44113					a decorative pot for house plants	base
-plaster	03957420	Mixture	+			Q216054			Mx4rvViim5wpEbGdrcN5Y29ycA				adhesive tape used in dressing wounds	base
+plaster	14992287	Mixture	+			Q274988			Mx4rvViim5wpEbGdrcN5Y29ycA				a mixture of lime or gypsum with sand and water; hardens into a smooth solid; used to cove	base
 plastic	14592610	Plastic	=		Plastic	Q11474		347	Mx4rvVj0lpwpEbGdrcN5Y29ycA				generic name for certain synthetic or semisynthetic materials that can be molded or extrud	base
 plastic-film	03339296	Artifact	+					3633c					a thin sheet of (usually plastic and usually transparent) material used to wrap or cover t	base
 plastic-wrap	03958752	Mixture	+				3750		Mx4rwQB60ZwpEbGdrcN5Y29ycA				wrapping consisting of a very thin transparent sheet of plastic	base
@@ -4203,7 +4202,7 @@ pomegranate	07768694	FruitOrVegetable	+			Q13222088	6673		Mx8Ngh4rvVipdpwpEbGdrc
 pomelo	07750146	FruitOrVegetable	+			Q80024		01321					large pear-shaped fruit similar to grapefruit but with coarse dry pulp	base
 pommel-horse	03980478	Artifact	+			Q840330	3182		Mx4rvVjGN5wpEbGdrcN5Y29ycA				a gymnastic horse with a cylindrical body covered with leather and two upright handles (po	base
 pony	02382437	Horse	+			Q188828			Mx4rvpdpZJwpEbGdrcN5Y29ycA				any of various breeds of small gentle horses usually less than five feet high at the shoul	base
-pool	09397607	StaticWaterArea	+			Q152841	729a						"a small body of standing water (rainwater) or other liquid; ""there were puddles of muddy w"	base
+pool	03982060	WaterArea	=			Q11020	729a						an excavation that is (usually) filled with water	base
 pop	07927512	Soda	=			Q264554							"a sweet drink containing carbonated water and flavoring; ""in New England they call sodas t"	base
 pop-music	07059962	PopMusic	=		Pop_music	Q37073			Mx4rvtH8_pwpEbGdrcN5Y29ycA				music of general appeal to teenagers; a bland watered-down version of rock'n'roll with mor	base
 popcorn	07732636	Popcorn	=			Q165112	1534		Mx4rvVjFoZwpEbGdrcN5Y29ycA				small kernels of corn exploded by heat	base
@@ -4232,7 +4231,8 @@ postcondition						Q360690								computing
 postgresql						Q192490								computing
 postscript						Q218170								computing
 pot	03990834	Plant	+				4661a						street names for marijuana	base
-potato	12897493	FloweringPlant	+			Q10998	6586						annual native to South America having underground stolons bearing edible starchy tubers; w	base
+potato	07710616	PotatoTuber	=			Q16587531	6586	213c					an edible tuber native to South America; a staple food of Ireland	base
+potato-plant	12897493	FloweringPlant	+			Q10998			Mx4rvViDtJwpEbGdrcN5Y29ycA				annual native to South America having underground stolons bearing edible starchy tubers; w	base
 potential	14482620	Attribute	+			Q12559031			Mx4rT-92dBk4QdiYlrzHDDhoPA				the inherent capacity for coming into being	base
 potpourri	03992325	Artifact	+			Q1200012	4740		Mx4rwGelupwpEbGdrcN5Y29ycA				a jar of mixed flower petals and spices used as perfume	base
 pottery	03992703	Pottery	=		Pottery	Q11642	44a						ceramic ware made from clay and baked in a kiln	base
@@ -4322,7 +4322,7 @@ process-scheduler						Q1641413								computing
 processor-register	04071876	Device	+										(computer science) memory device that is the part of computer memory that has a specific a	computing
 produce	07705711	GroceryProduce	=			Q1913301			Mx4rvXnStpwpEbGdrcN5Y29ycA				fresh fruits and vegetable grown for the market	base
 producer	10480018	Human	+			Q47541952							someone who finds financing for and supervises the making and presentation of a show (play	base
-product	05859630	MultiplicationFn	+	schema:Product	Product	Q901718			Mx4rvf-bUJwpEbGdrcN5Y29ycA				"a quantity obtained by multiplication; ""the product of 2 and 3 is 6"""	base
+product	04007894		=										"an artifact that has been created by someone or some process; ""they improve their product "	base
 product.phenomenon	11415842	Process	+										"a consequence of someone's efforts or of a particular set of circumstances; ""skill is the "	base
 production	00912960	Creation	+						Mx4rwI5p2JwpEbGdrcN5Y29ycA				"the act or process of producing something; ""Shakespeare's production of poetry was enormou"	base
 production-line	04008385	Device	+										mechanical system in a factory whereby an article is conveyed through sites at which succe	base
@@ -4406,13 +4406,14 @@ publisher	08062623	Publisher	=		Publisher	Q2085381			Mx4rGjGfXF6OQdmPddsPwm3wxw	
 publishing	01101958		+		Publishing			8911					the business of issuing printed matter for sale or distribution	base
 puck	04019541	Artifact	+			Q508918	6077b						a vulcanized rubber disk 3 inches in diameter that is used instead of a ball in ice hockey	base
 pudding	07612632	Dessert	+			Q9053			Mx4rv4EQ9JwpEbGdrcN5Y29ycA				any of various soft sweet desserts thickened usually with flour and baked or boiled or ste	base
+puddle	09397607	StaticWaterArea	+			Q152841			Mx4rwPKnNpwpEbGdrcN5Y29ycA				"a small body of standing water (rainwater) or other liquid; ""there were puddles of muddy w"	base
 pull-chain	04020087	Chain	+				4469						a chain (usually with a handle at the end) that is pulled in order to operate some mechani	base
 pull-request						Q68712963								computing
 pulley	04020298	Pulley	=			Q48378		4332k	Mx4rvVixx5wpEbGdrcN5Y29ycA				a simple machine consisting of a wheel with a groove in which a rope can run to change the	base
 pullover	04021028	Clothing	+			Q2046167		28226	Mx4rvgH5wJwpEbGdrcN5Y29ycA				a sweater that is put on by pulling it over the head	base
 pulp	13096035	Tissue	+			Q7259571							a soft moist part of a fruit	base
 pulse	07400906	OrganOrTissueProcess	+			Q191733			Mx8NhB4rvcD6KJwpEbGdrcN5Y29ycB4rwTGgF5wpEbGdrcN5Y29ycB4rwPvJVJwpEbGdrcN5Y29ycB4rvViwMZwpEbGdrcN5Y29ycA				"the rhythmic contraction and expansion of the arteries with each beat of the heart; ""he co"	base
-pulse-legume	07709046	Pulse	=			Q379813		017					edible seeds of various pod-bearing plants (peas or beans or lentils etc.)	base
+pulses	07709046	Pulse	=			Q379813		017					edible seeds of various pod-bearing plants (peas or beans or lentils etc.)	base
 pumice-stone	14700438	Mineral	+			Q180044	2511	163c					a light glass formed on the surface of some lavas; used as an abrasive	base
 pump	04021798	Pump	=		Pump	Q134574		432a					a mechanical device that moves fluid or gas by pressure or suction	base
 pumpkin	07735510	Squash	+			Q165308		01235					usually large pulpy deep-yellow round fruit of the squash family maturing in late summer o	base
@@ -4792,8 +4793,8 @@ rural-area	08644722	GeographicArea	+		Rural_area	Q175185							"an area outside 
 rusk	07689842	BreadOrBiscuit	+			Q4122049		2341b					slice of sweet raised bread baked again until it is brown and hard and crisp	base
 rust-language						Q575650								computing
 rutabaga	07736087	Turnip	+			Q158464	505329b						the large yellow root of a rutabaga plant used as food	base
-rye	07907429	Whiskey	+			Q2535077	7374		Mx4rvViDeJwpEbGdrcN5Y29ycA				whiskey distilled from rye or rye and malt	base
-rye-grain	12157179	RyeGrain	=			Q7215110		0116					the seed of the cereal grass	base
+rye	12157179	RyeGrain	=			Q7215110	7374	0116	Mx4rvViDeJwpEbGdrcN5Y29ycA				the seed of the cereal grass	base
+rye-whiskey	07907429	Whiskey	+			Q2535077							whiskey distilled from rye or rye and malt	base
 sack	04122825	Bag	=			Q379754		2715a	Mx4rvViVAJwpEbGdrcN5Y29ycA				a bag made of paper or plastic for holding customer's purchases	base
 sacrifice	00227595	Killing	+			Q179723			Mx4rlD_CqC_9QdiVyK6A1Bptjg				the act of killing (an animal or person) in order to propitiate a deity	base
 saddle	04123740	Saddle	=			Q192249	2210						a seat for the rider of a horse or camel	base
@@ -5044,6 +5045,7 @@ shot	06614729	MotionPictureShot	=			Q278938							a consecutive series of pictur
 shoulder	05548840	Shoulder	=			Q16363							the part of the body between the neck and the upper arm	base
 shovel	04208210	Shovel	=			Q7220961	2147a		Mx4rvVj_w5wpEbGdrcN5Y29ycA				a hand tool for lifting loose material; consists of a curved container or scoop and a hand	base
 show	06619065	Performance	+										"a social event involving a public performance or entertainment; ""they wanted to see some o"	base
+showcase	02975212	Container	+			Q3561331			Mx4rj5sORizGEdiUgwAH6RYvSQ				a glass container used to store and display items in a shop or museum or home	base
 shower	04208936	Shower	=			Q7863	8277		Mx4rvVib_pwpEbGdrcN5Y29ycA				"a plumbing fixture that sprays water over you; ""they installed a shower in the bathroom"""	base
 shower-cap	04209133	Clothing	+			Q1267584	4049						a tight cap worn to keep hair dry while showering	base
 shower-curtain	04209239	Artifact	+				580		Mx4rwP1R5ZwpEbGdrcN5Y29ycA				a curtain that keeps water from splashing out of the shower area	base
@@ -5355,6 +5357,7 @@ stereo-system	04315948	Device	+			Q34678	251		Mx4rv4rWlJwpEbGdrcN5Y29ycA				repr
 stethoscope	04317175	Device	+			Q162339	4364		Mx4rvViNFZwpEbGdrcN5Y29ycA				a medical instrument for listening to the sounds generated inside the body	base
 steward	10655594	Position	+			Q5263369							an attendant on an airplane	base
 stick	04317420	Plant	+				1948b		Mx8Ngh4rwjh4oLdHQdeIfc0KIMuu4R8Ngh4rwPzUgpwpEbGdrcN5Y29ycB4rwQBrIJwpEbGdrcN5Y29ycA				"an implement consisting of a length of wood; ""he collected dry sticks for a campfire""; ""th"	base
+sticking-plaster	03957420	Mixture	+			Q216054							adhesive tape used in dressing wounds	base
 sticky-note	06259297	Paper	+				2689						brand name for a slip of notepaper that has an adhesive that allows it to stick to a surfa	base
 stilt	04319937	Device	+			Q216940	3948						one of two stout poles with foot rests in the middle; used for walking high above the grou	base
 stimulation	01261974	Process	+			Q4114622							the act of arousing an organism to action	base
@@ -5366,7 +5369,7 @@ stock	04321534	Product	+										"the merchandise that a shop has on hand; ""th
 stockholder	10657969	Investor	+			Q381136							someone who holds shares of stock in a corporation	base
 stocking	04323819	Sock	+			Q193017		2821c					close-fitting hosiery to cover the foot and leg; come in matched pairs (usually used in th	base
 stomach	05395690	Stomach	+			Q1029907			Mx4rvVjlqpwpEbGdrcN5Y29ycA				an enlarged and muscular saclike organ of the alimentary canal; the principal organ of dig	base
-stone	11684739	BodyPart	+		Stone								the hard inner (usually woody) layer of the pericarp of some fruits (as peaches or plums o	base
+stone	14696793	Rock	+		Stone	Q8063							"material consisting of the aggregate of minerals like those making up the Earth's crust; """	base
 stone-fruit	13138308	ReproductiveBody	+			Q14712	503760	0134b	Mx4rvpimL5wpEbGdrcN5Y29ycA				fleshy indehiscent fruit with a single seed: e.g. almond; peach; plum; cherry; elderberry;	base
 stool	04326896	Chair	+			Q33163	505328b		Mx4rvViF35wpEbGdrcN5Y29ycA				a simple seat without a back or arms	base
 stop	01056411	Keeping	+						Mx4raX-VWhlIQdidAJdv_n8vZA				"a brief stay in the course of a journey; ""they made a stopover to visit their friends"""	base
@@ -5521,8 +5524,7 @@ system-instrumentality	04377057	PhysicalSystem	=										instrumentality that c
 system-monitoring						Q2143522								computing
 system-program	06580646	ComputerProgram	+										a program (as an operating system or compiler or utility program) that controls some aspec	computing
 systemd						Q286124								computing
-table	04379964	Table	+	schema:Table		Q14748	5169b						"a piece of furniture with tableware for a meal laid out on it; ""I reserved a table at my f"	base
-table-furniture	04379243	Table	=		Table_(furniture)	Q14748							a piece of furniture having a smooth flat top that is usually supported by one or more ver	base
+table	04379243	Table	=	schema:Table		Q14748	5169b						a piece of furniture having a smooth flat top that is usually supported by one or more ver	base
 table-knife	04380346	Device	+			Q3130638	3844		Mx4rvVimGZwpEbGdrcN5Y29ycA				a knife used for eating at dining table	base
 table-linen	04380617	Fabric	+			Q6964858		2712b					linens for the dining table	base
 table-saw	04380916	Device	+				3706		Mx4r1c3PR2aaEdaeTwACs0uFOQ				a circular saw mounted under a table or bench so that the blade of the saw projects up thr	base
@@ -5586,9 +5588,9 @@ telecommunications-engineering	06128307	FieldOfStudy	@										(often plural) t
 telephone-line	04402057	Cable	+			Q1373572							a telephone connection	base
 telephony	06272290	Device	+				270						transmitting speech at a distance	base
 telescope	04403638	OpticalDevice	+		Telescope	Q4213	165		Mx4rwQCMa5wpEbGdrcN5Y29ycA				a magnifier of images of distant objects	base
-television	04404412	TelevisionStation	=		Television	Q289	2155b						a telecommunication system that transmits images of objects (stationary or moving) between	base
+television	04405907	TelevisionSet	=		Television	Q289	2155b	473b					"an electronic device that receives television signals and displays them on a screen; ""the "	base
 television-camera	04404997	Camera	+			Q313625		4721b					television equipment consisting of a lens system that focuses an image on a photosensitive	base
-television-receiver	04405907	TelevisionSet	=					473b					"an electronic device that receives television signals and displays them on a screen; ""the "	base
+television-system	04404412	TelevisionStation	=			Q289							a telecommunication system that transmits images of objects (stationary or moving) between	base
 temper	07551052	Anger	=						Mx4rvVj3mZwpEbGdrcN5Y29ycA				"a characteristic (habitual or relatively temporary) state of feeling; ""whether he praised "	base
 temple	04407435	ReligiousBuilding	+		Temple	Q427287			Mx4rwQwW0ZwpEbGdrcN5Y29ycA				place of worship consisting of an edifice for the worship of a deity	base
 temple-of-head	05602683	BodyPart	+			Q243999							"the flat area on either side of the forehead; ""the veins in his temple throbbed"""	base
@@ -5794,6 +5796,7 @@ transportation	01105259	TransportationService	=			Q2334804		65	Mx4r4Ew5JghxEduVM
 trap	04474466	TrapOrCage	+			Q7835525			Mx4rvVis8pwpEbGdrcN5Y29ycA				a device in which something (usually an animal) can be caught and penned	base
 trash-can	02747177	Device	+			Q216530	637a		Mx4rvViFnZwpEbGdrcN5Y29ycA				a bin that holds rubbish until it is collected	base
 trash-collection	01015843	Removing	+					9423					the collection and removal of garbage	base
+traveling-bag	02773838	TravelContainer	+			Q200814							"a portable rectangular container for carrying clothes; ""he carried his small bag onto the "	base
 tray	04476259	Tray	=		Tray	Q613972	5628b		Mx4rvViHq5wpEbGdrcN5Y29ycA				an open receptacle for holding or displaying or serving articles or food	base
 treadmill	04477387	Device	+				997		Mx4rwCtaz5wpEbGdrcN5Y29ycA				an exercise device consisting of an endless belt on which a person can walk or jog without	base
 treasure	08463969	Collection	+		Treasure	Q272937			Mx4rEF23Gi9OQdiXeI8nguuGCA				"a collection of precious things; ""the trunk held all her meager treasures"""	base
@@ -6126,7 +6129,6 @@ whirligig	04454240	Toy	+			Q23856							"a conical child's plaything tapering to
 whisk	04578934	Device	+			Q263057	3597		Mx4rwP1Gy5wpEbGdrcN5Y29ycA				a mixer incorporating a coil of wires; used for whipping eggs or cream	base
 whiskey	07906284	Whiskey	=			Q281	1926						a liquor made from fermented mash of grain	base
 whistle	04579667	WindInstrument	+			Q204917		3835b	Mx4rvVjtRJwpEbGdrcN5Y29ycA				a small wind instrument that produces a whistling sound by blowing into it	base
-white-potato	07710616	PotatoTuber	=			Q16587531		213c					an edible tuber native to South America; a staple food of Ireland	base
 wi-fi						Q29643			Mx4r42BMqYyfRHKW14396daGLQ					computing
 wick	04581829	LightFixture	+			Q118978194	7402		Mx4rvVjZNpwpEbGdrcN5Y29ycA				a loosely woven cord (in a candle or oil lamp) that draws fuel by capillary action up into	base
 wickerwork	04582205	Artifact	+			Q1081013		3192c					work made of interlaced slender branches (especially willow branches)	base

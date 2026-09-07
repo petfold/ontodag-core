@@ -1,12 +1,12 @@
 # sub	sup	accept|reject	reason   — rulings Claude made under standing permission (witness claude-ruling); Peter's lines live in review.tsv.
-major-planet	planet	accept	the solar-system planets are planets; WordNet files both senses directly under celestial body [2026-09-03]		
-earplug	device	accept	goods layer [2026-09-03]: a plug worn in the ear; WordNet's occlusion hypernym rejected		
-noodle	pasta	accept	goods layer [2026-09-03]: WordNet's own hypernym; both ends new to core		
-stamp	device	accept	goods layer [2026-09-03]: the rubber stamp; WordNet's decorative-design hypernym rejected		
-dining-table	table-furniture	accept	goods layer [2026-09-03]: core's table is the laid-table sense (flagged for a sense correction)		
-household-appliance	appliance	accept	goods layer [2026-09-03]: WordNet hypernym, after the appliance sense correction		
+major-planet	planet	accept	the solar-system planets are planets; WordNet files both senses directly under celestial body [2026-09-03]	09394007	09394646
+earplug	device	accept	goods layer [2026-09-03]: a plug worn in the ear; WordNet's occlusion hypernym rejected	03262072	03183080
+noodle	pasta	accept	goods layer [2026-09-03]: WordNet's own hypernym; both ends new to core	07699584	07698915
+stamp	device	accept	goods layer [2026-09-03]: the rubber stamp; WordNet's decorative-design hypernym rejected	04159058	03183080
+dining-table	table-furniture	accept	goods layer [2026-09-03]: core's table is the laid-table sense (flagged for a sense correction)	03201208	04379243
+household-appliance	appliance	accept	goods layer [2026-09-03]: WordNet hypernym, after the appliance sense correction	03528263	02729837
 # --- the services layer (2026-09-07; UPPER.md §11). Rulings where no source states the edge or a published edge must go.
-credit-card	service	reject	a card is a possession and an identification, not work done for another; schema.org files FinancialProduct under Service and YAGO copies it		
+credit-card	service	reject	a card is a possession and an identification, not work done for another; schema.org files FinancialProduct under Service and YAGO copies it	13376012	00577525
 service	assist	reject	service is now the economic sense (00577525, WordNet: ⊑ work); the earlier claude-review accept was for the act-of-help sense	00577525	01207609
 haircut	hair	reject	haircut is now the act of cutting the hair (00359822), not the style; the published edge to hair goes	00359822	
 haircut	hairdressing	accept	hairdressing is "care for the hair: washing or cutting or curling or arranging" — a haircut is one; WordNet files the act under cut, which core lacks	00359822	00257228
@@ -48,3 +48,6 @@ aqueduct	device	reject	a structure, not a device	02732433	03183080
 sack	device	reject	a bag, not a device	04122825	03183080
 tobacco	agent	reject	WordNet's causal-agent chain through drug; our agent acts and is held responsible (as alcohol ⊑ agent, rejected)	04442831	00007347
 firewood	tissue	reject	SUMO and Wikidata reach living tissue through wood; fuel wood is not tissue [2026-09-07]	15100644	05267345
+# --- v9 re-sensing (2026-09-07, §13): published v3 pins by name that now bind the wrong sense
+lead	leadership	reject	the published v3 edge was the leadership-position sense; lead is now the metal	14643467	01256417
+pool	place	reject	the published v3 edge was the puddle; pool is now the swimming pool, an excavation (SUMO's place rejected)	03982060	00027167
