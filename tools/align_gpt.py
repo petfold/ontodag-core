@@ -19,6 +19,14 @@ parent's own synset — and writes:
 Names: the GPT label when it is one of the synset's lemmas (what shoppers say),
 else WordNet's first lemma; a name already taken in core gets a `.gpt` marker
 here and is hand-named before the build (the no-qualified-names rule).
+
+Baseline: "already in core" is align/concepts.tsv minus the synsets the CURRENT
+gpt-synsets.tsv put there.  So run this against the committed concepts.tsv
+(`git checkout HEAD -- align/concepts.tsv`) and the committed gpt-synsets.tsv:
+once align.py has consumed a new gpt-synsets.tsv, a second run sees its own
+additions as core's and drops them, and a synset that a new pick restores is
+seen as core's too (2026-09-07: five goods vanished and twenty failed to
+appear until the baseline was reset).
 """
 import collections
 import csv
@@ -29,10 +37,15 @@ from graph import Graph, normalise
 
 ROOT = Path(__file__).resolve().parent.parent
 ART, ORG, SUBST, PERSON = "00021939", "00004475", "00019613", "00007846"
+MATTER = "00020827"      # WordNet files solid, liquid, gas, fuel, glass and ice under `matter` beside `substance`:
+                         # without it natural gas, propane, coal and glass read as non-goods (found in §12, 2026-09-07)
 FOOD = {"00021265", "07555863", "07566340", "07881800"}       # nutrient, solid food, foodstuff, beverage
-DEPT = {"food, beverages & tobacco": FOOD | {ART, SUBST}, "animals & pet supplies": {ART, ORG} | FOOD,
-        "health & beauty": {ART, SUBST}, "hardware": {ART, SUBST}, "home & garden": {ART, ORG, SUBST},
-        "media": {ART, "06254669"}, "software": {"06566077", ART}, "business & industrial": {ART, SUBST}}
+STUFF = {SUBST, MATTER}
+DEPT = {"food, beverages & tobacco": FOOD | {ART} | STUFF, "animals & pet supplies": {ART, ORG} | FOOD,
+        "health & beauty": {ART} | STUFF, "hardware": {ART} | STUFF, "home & garden": {ART, ORG} | STUFF,
+        "media": {ART, "06254669"}, "software": {"06566077", ART}, "business & industrial": {ART} | STUFF,
+        "vehicles & parts": {ART} | STUFF, "arts & entertainment": {ART} | STUFF, "sporting goods": {ART} | STUFF,
+        "office supplies": {ART} | STUFF}
 
 
 def main():

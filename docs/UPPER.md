@@ -362,6 +362,14 @@ pack concept present and reachable, top level core's ten roots plus
 with `alloy`, `antibiotic`, `magnetic-disk`, `zinc` at top level — the names
 the packs now borrow from core — the same order lesson as v7.)
 
+**Re-run after the `matter` hinge in `align_gpt.py` (2026-09-07, §12
+follow-up; modules regenerated in ontodag's working tree from the uncommitted
+build, docstrings at 44ff50b — regenerate after the commit; unreleased):**
+union **11,407 categories, 12,855 edges** (built in 591 s); sha256 root
+`15d6edb5eb97785147e8f5cc2cb3779fefcb5132b63e19f17aa2013f7057ad28`, Swarm/BMT
+root `716bd94dc35e0c0e60a66ba6e19cd5debe570833c6c7f3d3f73c5152cad1d7ce`;
+order-independent, every pack concept reachable, top level unchanged.
+
 ### 8.2 Shipped (ontodag 0.21.0, 2026-09-03)
 
 The ten packs ship in the ontodag wheel as `ontodag.domain.<name>`
@@ -1022,3 +1030,31 @@ list. Packs regenerated; crosspack clean. **Still owed for loopmarket:** the
 service compounds (§11), the retail compounds (§10) — CPC's 2,116 unmatched
 kinds are the same list from the industry side — the `humidity` registry
 family and secure-storage kinds; and the `matter` hinge for `align_gpt.py`.
+
+**Follow-up the same day: the `matter` hinge in `align_gpt.py`.** Peter asked
+for the gap found above to be closed and the GPT aligner re-run. With
+WordNet's `matter` branch admitted (and the four departments that had only
+`artifact` given the substance hinges too), GPT's 6,347 kinds yield 22 more
+synsets: `antiseptic`, `astringent`, `bleach`, `blotter`, `chicken-feed`,
+`confetti`, `construction-paper`, `firecracker`, `firewood`, `firework`,
+`lip-balm`, `notepad`, `packing-material`, `rhinestone`, `stationery`,
+`styrofoam`, `thinner`, `transfer-paper`, `vinyl`, `wrapping-paper` entered
+core (20); `pencil-lead` stays chemistry's and GPT's department words
+`nutrition` and `label` (WordNet's tracer isotope) were skipped. Fifteen
+labels became ambiguous because a matter sense now passed beside the one
+core had (`card`, `chalk`, `clay`, `liquid`, `rope`, `soap`, `whip`,
+`lobster`, `lotion`, `ramekin`, `refill`, `stuffing`, `rock`, `system`,
+`chicken feed`); each was picked to core's sense in `gpt-picks.tsv`, `rock`
+left out (the material sense has no free name — the sense list above), and
+`circuit-card` pinned in `names.tsv`, since the `card` label no longer
+reaches the circuit-board synset that had named it. 44 review lines (the
+papers' SUMO edge to `vehicle-body` through its mapping of *body*; `bleach`
+⊑ `disinfectant` accepted; `firework` is a device, not an explosive) and one
+ruling (`firewood` ⊑ `tissue`, SUMO and Wikidata through wood, rejected).
+**A baseline trap in `align_gpt.py`, now documented in its docstring:** its
+"already in core" set is `concepts.tsv` minus the synsets the current
+`gpt-synsets.tsv` put there, so a second run in a working tree where
+`align.py` has already consumed the first sees its own additions as core's —
+five goods vanished and the twenty failed to appear until `concepts.tsv` and
+`gpt-synsets.tsv` were reset to the commit and the run repeated. Result: core
+4,614 categories (+20), nothing lost, no line changed; packs regenerated.

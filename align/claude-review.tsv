@@ -3891,3 +3891,48 @@ power-cable	structure	reject	CPC 53 files cable lines as constructions; a cable	
 road	structure	accept	CPC 53: a construction	04096066	04341686
 street	structure	accept	CPC 53: a construction	04334599	04341686
 tunnel	structure	accept	CPC 53: a construction	04497962	04341686
+# --- align_gpt.py with the matter hinge (2026-09-07, §12): single-witness direct edges on the 20 GPT kinds the hinge had dropped
+antiseptic	material	reject	SUMO	02724207	14580897
+antiseptic	medication	accept		02724207	03740161
+antiseptic	medicine	reject	OpenCyc: the science	02724207	06045562
+astringent	material	reject	SUMO	02750835	14580897
+astringent	medication	accept		02750835	03740161
+bleach	agent	reject	WordNet's chemical-agent chain; our agent acts and is responsible	14779205	00007347
+bleach	disinfectant	accept	household bleach disinfects	14779205	03208229
+bleach	material	reject	SUMO	14779205	14580897
+blotter	artifact	accept		14781752	00021939
+blotter	paper	accept		14781752	14974264
+blotter	vehicle-body	reject	SUMO's mapping of body	14781752	02861886
+confetti	artifact	accept		03090278	00021939
+confetti	paper	accept		03090278	14974264
+confetti	vehicle-body	reject	SUMO's mapping of body	03090278	02861886
+construction-paper	artifact	accept		14820933	00021939
+construction-paper	paper	accept		14820933	14974264
+construction-paper	vehicle-body	reject	SUMO's mapping of body	14820933	02861886
+firecracker	science	reject	Wikidata	03345115	05999797
+firewood	fuel	accept		15100644	14875077
+firewood	wood	accept		15100644	15098161
+firework	device	accept		03348454	03183080
+firework	explosive	reject	a device containing an explosive	03348454	03304730
+firework	noisemaker	reject	Wikidata	03348454	03827536
+lip-balm	artifact	reject	a preparation	03676006	00021939
+lip-balm	material	reject	SUMO	03676006	14580897
+lip-balm	remedy	accept		03676006	04074482
+notepad	device	reject	OpenCyc	15021085	03183080
+notepad	paper	accept	WordNet: a pad of paper	15021085	14974264
+notepad	vehicle-body	reject	SUMO's mapping of body	15021085	02861886
+packing-material	material	accept		14976448	14580897
+rhinestone	artifact	accept		14694453	00021939
+rhinestone	mineral	reject	an imitation, made of glass or paste	14694453	14662574
+rhinestone	vehicle-body	reject	SUMO's mapping of body	14694453	02861886
+stationery	artifact	accept		06258852	00021939
+stationery	paper	accept		06258852	14974264
+stationery	vehicle-body	reject	SUMO's mapping of body	06258852	02861886
+styrofoam	artifact	reject	a material	14595933	00021939
+styrofoam	plastic	accept		14595933	14592610
+thinner	agent	reject	WordNet's chemical-agent chain	14835333	00007347
+thinner	material	reject	SUMO	14835333	14580897
+transfer-paper	device	reject	SUMO	15077752	03183080
+transfer-paper	paper	accept		15077752	14974264
+vinyl	artifact	reject	a material	15088183	00021939
+wrapping-paper	gift-wrapping	accept	GPT: the paper gifts are wrapped in	15105122	03436549
