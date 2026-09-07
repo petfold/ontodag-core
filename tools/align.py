@@ -25,6 +25,7 @@ ROOT = Path(__file__).resolve().parent.parent
 WN = ROOT / "sources/wordnet/dict"
 SOURCES = ["sumo", "schemaorg", "yago", "opencyc", "bfo", "dolce", "dul"]
 LABEL_SOURCES = {"schemaorg": "cache/schemaorg.pkl", "yago": "cache/yago.pkl", "wikidata": "cache/wikidata.pkl", "gpt": "cache/gpt.pkl",
+                 "cpc": "cache/cpc.pkl",            # never matched by label: its titles are phrases; aligned by hand (services.tsv, overrides)
                  "opencyc": "cache/opencyc.pkl", "bfo": "cache/bfo.pkl",
                  "dolce": "cache/dolce.pkl", "dul": "cache/dul.pkl"}
 
@@ -143,12 +144,25 @@ def read_names(d):
     # synsets the Google Product Taxonomy shows a marketplace needs; names.tsv is read
     # second so a hand name wins over the generated one; goods-extra.tsv is the hand list of everyday
     # goods GPT has no node for (jeans, aspirin, duvet).
-    for fn in ("gpt-synsets.tsv", "goods-extra.tsv", "names.tsv"):
+    # services.tsv (hand list, 2026-09-07) is the services layer: offset  name  cpc-code  note.
+    for fn in ("gpt-synsets.tsv", "goods-extra.tsv", "services.tsv", "names.tsv"):
         p = d / fn
         if p.exists():
             for row in csv.reader(open(p), delimiter="\t"):
                 if row and not row[0].startswith("#") and len(row) >= 2 and row[1].strip():
                     out[row[0].strip()] = row[1].strip()
+    return out
+
+
+def read_cpc_map(d):
+    """offset -> CPC code (align/services.tsv: offset  name  cpc  note).  CPC is aligned by
+    synset, never by label: its titles are phrases no concept is named after."""
+    out = {}
+    p = d / "services.tsv"
+    if p.exists():
+        for row in csv.reader(open(p), delimiter="\t"):
+            if row and not row[0].startswith("#") and len(row) >= 3 and row[2].strip():
+                out[row[0].strip()] = row[2].strip()
     return out
 
 
@@ -197,6 +211,7 @@ def main():
     sense1 = read_sense1()
     sumo_map = read_sumo_mapping()
     wd_map = read_wikidata_map()
+    cpc_map = read_cpc_map(dirs.align)
     overrides = read_overrides(dirs.align)
     queue = []
     base_rows = []
@@ -228,6 +243,16 @@ def main():
         else:
             by_offset[off] = name
         concepts[name] = off
+    for name, ov in overrides.items():
+        # A hub override names its synset before the candidates are walked, so a Core
+        # WordNet synset whose first lemma is the same word collides and is renamed
+        # (2026-09-07: `service wordnet 00577525` was applied only after the walk, and
+        # religious-service — first lemma `service` — had taken the bare name and been
+        # silently re-pointed at the economic sense; the ceremony vanished from core)
+        off = ov.get("wordnet")
+        if off and off != "-" and name not in concepts and off not in by_offset:
+            concepts[name] = off
+            by_offset[off] = name
     if dirs.pack:
         wn = Graph.load(ROOT / "cache/wordnet.pkl")
         candidates = [o for o in read_sources(dirs.align, synsets, wn) if o not in drops and o not in by_offset]
@@ -295,6 +320,9 @@ def main():
         for s in LABEL_SOURCES:
             if s == "wikidata" and off and off in wd_map and wd_map[off] in graphs[s].nodes:
                 row[s] = wd_map[off]                       # exact, by synset id
+                continue
+            if s == "cpc":
+                row[s] = cpc_map.get(off, "") if off and cpc_map.get(off, "") in graphs[s].nodes else ""
                 continue
             hits = sorted({i for k in keys for i in indexes[s].get(k, [])})
             if len(hits) == 1:

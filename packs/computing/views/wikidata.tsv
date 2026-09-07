@@ -22,11 +22,14 @@ adult	animal
 adult	organism
 adult	physical-object
 adversary	person
+advertising	information
+advertising	service
 advocate	lawyer
 advocate	professional
 advocate	specialist
 advocate	worker
 agile-software-development	computer-programming
+agile-software-development	programming
 agile-software-development	skill
 aids	disease
 aids	illness
@@ -96,6 +99,7 @@ artist	person
 ash	chemical
 ashtray	trash-can
 aspect-oriented-programming	computer-programming
+aspect-oriented-programming	programming
 aspect-oriented-programming	separation-of-concerns
 aspect-oriented-programming	skill
 assembly-hall	room
@@ -137,6 +141,7 @@ baby	child
 baby	childhood
 baby	organism
 baby	physical-object
+babysitting	childcare
 backlog	hill
 backlog	landform
 backpack	artifact
@@ -263,6 +268,7 @@ beer	liquid
 beer	liquid-substance
 behavior-driven-development	agile-software-development
 behavior-driven-development	computer-programming
+behavior-driven-development	programming
 behavior-driven-development	skill
 belt	artifact
 belt	clothing
@@ -583,6 +589,7 @@ case	tool
 casserole-dish	dish
 casserole-dish	food
 casserole-dish	prepared-dish
+cast-of-characters	service
 caster	mechanism
 caster	wheel
 casualty	person
@@ -591,6 +598,7 @@ cat	pet
 catalog	collection
 catalog	group
 catalog	publication
+catering	service
 cathedral	church
 cauliflower	vegetable
 cave	landform
@@ -672,6 +680,8 @@ clamp	equipment
 clamp	physical-object
 clamp	tool
 classroom	room
+cleaning	care
+cleaning	service
 client-server-model	computer-science
 client-server-model	software-architecture
 cliff	landform
@@ -761,6 +771,7 @@ computer-worm	software
 comrade	acquaintance
 comrade	person
 concurrent-programming	computer-programming
+concurrent-programming	programming
 concurrent-programming	skill
 conditional-statement	control-flow
 conditional-statement	program-statement
@@ -775,11 +786,13 @@ congressman	specialist
 congressman	worker
 conscience	lesson
 conscription	military-service
+conscription	service
 conspiracy	alliance
 conspiracy	organization
 conspiracy	secrecy
 constitution	structure
 consultation	meeting
+consulting	service
 context-free-grammar	formal-grammar
 continuous-delivery	devops
 contrast	number
@@ -878,6 +891,7 @@ crown	equipment
 crown	headdress
 crown	physical-object
 crown	tool
+cruise	service
 cryptographic-hash-function	algorithm
 cryptographic-hash-function	function
 cryptographic-hash-function	hash-function
@@ -939,6 +953,7 @@ deadlock	software-bug
 dearth	deficit
 decision-table	tabular-array
 declarative-programming	computer-programming
+declarative-programming	programming
 declarative-programming	programming-paradigm
 declarative-programming	skill
 decoration	artifact
@@ -946,6 +961,9 @@ decoration	physical-object
 defendant	party
 defendant	person
 deity	concept
+delivery	service
+dental-care	health-care
+dental-care	service
 dentist	doctor
 deodorant	chemical
 deodorant	cosmetic
@@ -1051,6 +1069,7 @@ distributed-computing	computer-programming
 distributed-computing	computer-science
 distributed-computing	concurrent-programming
 distributed-computing	parallel-computing
+distributed-computing	programming
 distributed-computing	skill
 distributed-file-system	file-system
 distributed-file-system	software
@@ -1120,6 +1139,9 @@ drum	equipment
 drum	musical-instrument
 drum	physical-object
 drum	tool
+dry-cleaning	care
+dry-cleaning	cleaning
+dry-cleaning	service
 dryer	machine
 duck-typing	dynamic-typing
 duck-typing	type-system
@@ -1208,6 +1230,7 @@ ethernet	plug
 ethernet-hub	hardware
 ethics	philosophy
 event-driven-programming	computer-programming
+event-driven-programming	programming
 event-driven-programming	skill
 examiner	policeman
 exception-handling	control-flow
@@ -1291,6 +1314,9 @@ finial	physical-object
 fireman	worker
 firmware	hardware
 firmware	software
+first-aid	health-care
+first-aid	service
+first-aid	therapy
 fish-meat	food
 fish-meat	seafood
 fishing-line	mechanism
@@ -1368,6 +1394,7 @@ fuel	chemical
 full-text-search	information-retrieval
 functional-programming	computer-programming
 functional-programming	declarative-programming
+functional-programming	programming
 functional-programming	programming-paradigm
 functional-programming	skill
 fundamental-law	structure
@@ -1427,6 +1454,7 @@ general	warrior
 general	worker
 generator-routine	coroutine
 generic-programming	computer-programming
+generic-programming	programming
 generic-programming	skill
 genius	person
 geography	research
@@ -1623,6 +1651,7 @@ headdress	physical-object
 headdress	tool
 headphone	loudspeaker
 headset	hardware
+health-care	service
 heap-memory	hardware
 hedge	fence
 hedge	obstacle
@@ -1632,6 +1661,7 @@ helmet	clothing
 helmet	equipment
 helmet	physical-object
 helmet	tool
+help-desk	service
 herbicide	pesticide
 highlighter	marker
 highlighter	pen
@@ -1674,6 +1704,9 @@ hotel	organization
 hourglass	clock
 hourglass	machine
 house	building
+housecleaning	care
+housecleaning	cleaning
+housecleaning	service
 houseplant	organism
 houseplant	physical-object
 houseplant	plant
@@ -1733,6 +1766,7 @@ image-scanner	peripheral
 image-scanner	user-interface
 immutable-object	software-object
 imperative-programming	computer-programming
+imperative-programming	programming
 imperative-programming	skill
 importance	function
 in-memory-database	database-management-system
@@ -1750,6 +1784,7 @@ industry	workshop
 information-redundancy	information-entropy
 infrastructure	structure
 infrastructure-as-a-service	cloud-computing
+infrastructure-as-a-service	service
 inhabitant	person
 init-system	daemon-process
 initial	letter-of-the-alphabet
@@ -1856,6 +1891,7 @@ just-in-time-compilation	compiler
 just-in-time-compilation	software
 kanban-software-development	agile-software-development
 kanban-software-development	computer-programming
+kanban-software-development	programming
 kanban-software-development	skill
 ketchup	sauce
 key	mechanism
@@ -1919,6 +1955,8 @@ laptop	personal-computer
 laptop	portable-computer
 latex	markup-language
 laundry	care
+laundry	cleaning
+laundry	housecleaning
 laundry	service
 laundry-detergent	chemical
 laurel-wreath	artifact
@@ -2019,6 +2057,7 @@ logic-bomb	malware
 logic-bomb	software
 logic-programming	computer-programming
 logic-programming	declarative-programming
+logic-programming	programming
 logic-programming	programming-paradigm
 logic-programming	skill
 logical-operation	function
@@ -2052,6 +2091,7 @@ luggage	physical-object
 luggage	tool
 lumber	artifact
 lumber	physical-object
+lunch	service
 lung	organ
 machete	artifact
 machete	equipment
@@ -2168,6 +2208,7 @@ metal-detector	equipment
 metal-detector	physical-object
 metal-detector	tool
 metaprogramming	computer-programming
+metaprogramming	programming
 metaprogramming	skill
 method	textbook
 microcontroller	chip
@@ -2361,6 +2402,8 @@ nozzle	tip
 nozzle	tip-end
 nun	monk
 nursery	room
+nursing	medicine
+nursing	practice-of-medicine
 nut-butter	food
 nut-butter	spread
 nutshell	peel
@@ -2374,6 +2417,7 @@ object-instance	software-object
 object-method	control-flow
 object-method	subroutine
 object-oriented-programming	computer-programming
+object-oriented-programming	programming
 object-oriented-programming	skill
 object-oriented-programming	structured-programming
 observability	system-monitoring
@@ -2383,6 +2427,8 @@ office	workplace
 office-furniture	furniture
 office-open-xml	file-format
 office-open-xml	zip-file-format
+old-age	education
+old-age	service
 olive-oil	chemical
 olive-oil	cooking-oil
 olive-oil	fuel
@@ -2461,6 +2507,7 @@ panty	underwear
 paper-towel	towel
 parallel-computing	computer-programming
 parallel-computing	concurrent-programming
+parallel-computing	programming
 parallel-computing	skill
 parliament	legislature
 parser	algorithm
@@ -2522,6 +2569,7 @@ personal-computer	computer
 personal-computer	machine
 pest	organism
 pest	physical-object
+pest-control	service
 petticoat	artifact
 petticoat	clothing
 petticoat	equipment
@@ -2563,6 +2611,7 @@ plaintiff	person
 plant	organism
 plant	physical-object
 platform-as-a-service	cloud-computing
+platform-as-a-service	service
 player	person
 playground-ball	artifact
 playground-ball	equipment
@@ -2671,6 +2720,7 @@ prisoner	person
 privacy	secrecy
 procedural-programming	computer-programming
 procedural-programming	imperative-programming
+procedural-programming	programming
 procedural-programming	skill
 procedural-programming	structured-programming
 process-scheduler	software
@@ -2690,12 +2740,14 @@ program-interpreter	software
 program-loader	software
 program-statement	control-flow
 programmer	person
+programming	skill
 progressive-web-app	software
 progressive-web-app	web-application
 progressive-web-app	web-site
 promise	declaration
 prototype-based-programming	computer-programming
 prototype-based-programming	object-oriented-programming
+prototype-based-programming	programming
 prototype-based-programming	skill
 prototype-based-programming	structured-programming
 protractor	artifact
@@ -2703,9 +2755,11 @@ protractor	equipment
 protractor	physical-object
 protractor	tool
 proxy-server	computer-server
+proxy-server	service
 proxy-server	software
 pruning-shears	scissors
 psychoanalysis	psychology
+public-service	service
 publisher	company
 publisher	occupation
 publisher	organization
@@ -2843,6 +2897,8 @@ remote-control	input-device
 remote-control	interface
 remote-control	peripheral
 remote-control	user-interface
+rental	contract
+rental	service
 repellent	pesticide
 reporter	person
 reserve	drug
@@ -2855,6 +2911,7 @@ retailer	worker
 retirement	notice.communication
 reverse-proxy	computer-server
 reverse-proxy	proxy-server
+reverse-proxy	service
 reverse-proxy	software
 reversion	mutation
 reviewer	critic
@@ -3227,6 +3284,8 @@ sock	physical-object
 sock	tool
 sofa	furniture
 software-architecture	computer-science
+software-as-a-service	contract
+software-as-a-service	service
 software-as-a-service	software
 software-container	software
 software-dependency	software-coupling
@@ -3388,6 +3447,7 @@ string-searching-algorithm	algorithm
 string-searching-algorithm	information-retrieval
 strong-typing	type-system
 structured-programming	computer-programming
+structured-programming	programming
 structured-programming	skill
 studio	building
 studio	room
@@ -3648,6 +3708,8 @@ tragedy	drama
 tragedy	dramatic-play
 training-workshop	meeting
 training-workshop	service
+transport	service
+transportation	service
 trap	artifact
 trap	equipment
 trap	physical-object
@@ -3704,6 +3766,8 @@ turntable	physical-object
 turntable	record-player
 turntable	tool
 turtle-syntax	n-triples
+tutoring	education
+tutoring	service
 tuxedo	artifact
 tuxedo	clothing
 tuxedo	equipment

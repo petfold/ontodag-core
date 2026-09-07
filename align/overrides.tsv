@@ -136,3 +136,59 @@ cable	gpt	-
 scope	gpt	-
 poker	gpt	-
 appliance	wordnet	02729837	# core had the "device useful for a job" sense (a leaf with no children); the everyday sense is the durable good for home or office — toaster ⊑ kitchen-appliance ⊑ household-appliance ⊑ appliance (goods layer, 2026-09-03)
+# --- the services layer (2026-09-07, core v7; UPPER.md §11)
+service	wordnet	00577525	# core had the "act of help" sense (01209576; one child, credit-card, and that from schema.org filing FinancialProduct under Service). The everyday and economic sense is 00577525 "work done by one person or group that benefits another; budget separately for goods and services" — loopmarket's "products and services"
+service	cpc	cpc-services	# CPC sections 5-9 less division 53 are the services (tools/extract_cpc.py); CPC then witnesses X ⊑ service for every service it lists
+treatment	wordnet	00658082	# core had "the management of someone or something" (an empty leaf); the everyday sense is care provided to improve a situation, especially medical — massage ⊑ treatment, medical-care ⊑ treatment
+treatment	cpc	931
+haircut	wordnet	00359822	# core had the hairstyle (05257593, a leaf under hair); the everyday service is the act of cutting the hair — haircut ⊑ hairdressing
+haircut	cpc	97210
+haircut	wikidata	-	# Wikidata's `haircut` is the hairstyle
+delivery	wordnet	00317207	# core had the obstetric sense (00042541, Core WordNet's sense 1); the everyday sense is delivering goods or mail — delivery ⊑ transport
+delivery	cpc	6802
+transportation	cpc	65
+mail-service	cpc	6801
+education	cpc	92
+training	cpc	9291
+photography	cpc	838
+performing	cpc	96310
+tourism	cpc	855
+care	cpc	871
+tending	cpc	93
+# services layer: wrong-sense label matches cleared (the word is a department, a product or another sense in that source), 2026-09-07
+alteration	sumo	-	# SUMO maps the synset to Process=, which made everything ⊑ alteration
+beauty-treatment	sumo	-	# SubjectiveAssessmentAttribute+: SUMO has no term for it
+accommodation	schemaorg	-	# schema:Accommodation is the place
+accommodation	yago	-
+accommodation	wikidata	-	# Q419793 is the eye's accommodation
+bookkeeping	wikidata	-	# Luca Pacioli
+cleaning	gpt	-	# a bin under instrument accessories
+construction	gpt	-	# a department word
+daycare	opencyc	-	# the facility
+facial	wikidata	-	# the cosmetic
+first-aid	gpt	-	# the kits
+gardening	gpt	-	# the department
+health-care	gpt	-	# the department
+housework	wikidata	-	# the household
+manicure	gpt	-
+manicure	opencyc	-	# the personal product
+massage	gpt	-	# the department
+packaging	wikidata	-	# package cushioning
+pedicure	wikidata	-	# the cosmetic
+personal-care	gpt	-	# the department
+personal-care	wikidata	-	# the product
+pest-control	gpt	-	# the supplies
+publishing	wikidata	-	# the humanities discipline
+publishing	sumo	-	# SUMO's PublishingHouse: the organization
+recruitment	wikidata	-	# military recruitment
+security	gpt	-	# vehicle security parts
+security	wikidata	-	# the financial instrument
+skin-care	gpt	-	# the cosmetics
+storage	gpt	-	# storage furniture
+tattooing	gpt	-	# the department
+treatment	gpt	-	# skin-care treatments
+treatment	opencyc	-	# the management sense
+upholstery	wikidata	-	# the product
+upholstery	opencyc	-	# the covering
+education	wikidata	Q8434	# the services pull added a second `education` item; Q8434 is education, a subclass of service there
+dry-cleaning	wikidata	Q878156	# the act, not the business

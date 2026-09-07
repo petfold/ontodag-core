@@ -9,12 +9,14 @@ comparable shape, their tops are cut to importable `.od` files, and the design
 of our own top is argued in `docs/UPPER.md`. Nothing here is installed by
 anyone; the product is a published store root that `odag pack core` adopts.
 
-## State (2026-09-02)
+## State (2026-09-07)
 
-`build/core.od` is the `core` pack (v3 shipped in ontodag 0.19.1; v4, the
-Wikidata-confirmed rebuild, is in ontodag's main branch unreleased): ~2,930
-concepts, ten branches, every edge carried by two independent sources or by
-Peter's ruling. It is a strict superset of the hand-written v1 (194 concepts,
+`build/core.od` is the `core` pack (v6 shipped in ontodag 0.23.0; v7, the
+services layer, is built here and not yet shipped): 4,220 concepts, ten
+branches, every edge carried by two independent sources or by Peter's ruling.
+`docs/UPPER.md` §10 is the everyday goods layer (Google Product Taxonomy as
+witness), §11 the services layer (UN CPC 2.1 and Wikidata as witnesses;
+`service` re-sensed to "goods and services"). It is a strict superset of the hand-written v1 (194 concepts,
 nothing lost). `docs/UPPER.md` §6 records every decision, §7 the policy for
 the sciences, §8 the science packs built beside it — `packs/physics`,
 `packs/mathematics`, `packs/chemistry`, `packs/biology`, `packs/medicine`, `packs/ai`, `packs/economics`, `packs/computing`, `packs/geography`, `packs/space`, each a
@@ -63,6 +65,9 @@ search and a parents/children panel) — regenerable, not tracked:
 | `sources/yago/yago-wd-{schema,class}.nt.gz` | YAGO 4 (2020-02-24) taxonomy: schema.org top, Wikidata classes below | CC-BY-SA 3.0 |
 | `sources/bfo/bfo.owl` | BFO 2020 (ISO/IEC 21838-2), from purl.obolibrary.org | CC-BY 4.0 |
 | `sources/dolce/DOLCE-Lite.owl`, `DUL.owl` | DOLCE-Lite and DOLCE+DnS Ultralite (Turtle despite the name) | CC-BY 4.0 |
+| `sources/gpt/taxonomy-with-ids.en-US.txt` | Google Product Taxonomy — the goods witness (UPPER.md §10) | Google's terms; never imported |
+| `sources/cpc/CPC_Ver_2_1_english_structure.txt` | UN Central Product Classification 2.1 structure (Latin-1) — the services witness (UPPER.md §11) | UN Statistics Division, free download; never imported |
+| `sources/wikidata/*.json` | bounded P279 pulls (`tools/fetch_wikidata.py`; `core.json` the WordNet-mapped items, `services.json` the tree under *service*) | CC0 |
 
 Fetch commands are in `tools/fetch.sh`. YAGO 4.5 was not found at any public
 path on 2026-09-02; YAGO 4 is what we have.

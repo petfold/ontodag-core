@@ -5,3 +5,19 @@ noodle	pasta	accept	goods layer [2026-09-03]: WordNet's own hypernym; both ends 
 stamp	device	accept	goods layer [2026-09-03]: the rubber stamp; WordNet's decorative-design hypernym rejected		
 dining-table	table-furniture	accept	goods layer [2026-09-03]: core's table is the laid-table sense (flagged for a sense correction)		
 household-appliance	appliance	accept	goods layer [2026-09-03]: WordNet hypernym, after the appliance sense correction		
+# --- the services layer (2026-09-07; UPPER.md §11). Rulings where no source states the edge or a published edge must go.
+credit-card	service	reject	a card is a possession and an identification, not work done for another; schema.org files FinancialProduct under Service and YAGO copies it		
+service	assist	reject	service is now the economic sense (00577525, WordNet: ⊑ work); the earlier claude-review accept was for the act-of-help sense	00577525	01207609
+haircut	hair	reject	haircut is now the act of cutting the hair (00359822), not the style; the published edge to hair goes	00359822	
+haircut	hairdressing	accept	hairdressing is "care for the hair: washing or cutting or curling or arranging" — a haircut is one; WordNet files the act under cut, which core lacks	00359822	00257228
+treatment	management	reject	treatment is now the care sense (00658082); the published edge to management was the other sense	00658082	
+job	service	accept	"a specific piece of work required to be done as a duty or for a specific fee" — the unit an odd-job market trades; WordNet stops at duty	00719705	00577525
+labor	service	accept	"productive work (especially physical work done for wages)" — work done for wages benefits the one who pays; WordNet stops at work	00620752	00577525
+babysitting	childcare	accept	caring for children when their parents are not home is childcare; WordNet files it under care (tending) only	00655727	01209963
+checkup	medical-care	accept	a thorough physical examination is professional care; WordNet files it under examination, which core lacks	00142361	00657604
+therapy	medical-care	accept	"(medicine) the act of caring for someone (as by medication or remedial training)" is professional treatment for illness or injury — WordNet's edge; SUMO maps both to TherapeuticProcess and so reverses it	00661091	00657604
+medical-care	therapy	reject	SUMO's reversal (both synsets on TherapeuticProcess); WordNet's direction stands	00657604	00661091
+therapy	treatment	accept	WordNet: therapy ⊑ medical care ⊑ treatment (care provided to improve a situation); SUMO's reversal rejected	00661091	00658082
+treatment	therapy	reject	SUMO's reversal; treatment is the wider care, therapy the medical act	00658082	00661091
+pet-sitting	service	accept	"the work of a pet sitter; caring for pets in their own home while their owners are away" is work done for another; CPC has no pet-care node and WordNet stops at care	00655878	00577525
+advertising	information	reject	"the business of drawing public attention to goods and services" is a commercial enterprise, not information; Wikidata and YAGO reach information through the advertisement (the message)	01101329	

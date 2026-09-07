@@ -67,28 +67,13 @@ advance-death-benefit	payment-amount	single	wordnet
 advance-death-benefit	possession	single	wordnet	
 advance-death-benefit	quantity	single	sumo	
 adverse-selection	concept	accepted	claude-ruling	
-advertising	accomplishment	single	sumo	
-advertising	act	accepted	sumo wordnet	
-advertising	activity	single	sumo	
-advertising	commerce	single	wordnet	
-advertising	commercial-enterprise	accepted	claude wordnet	
-advertising	event	accepted	sumo wordnet	
-advertising	exchange	single	sumo	
 advertising	goods	single	wikidata	
 advertising	goods-and-services	single	wikidata	
-advertising	information	accepted	wikidata yago	
-advertising	interaction	single	sumo	
 advertising	merchandising	single	sumo	
-advertising	phenomenon	single	sumo	
-advertising	procedure	single	sumo	
-advertising	selling	single	sumo	
-advertising	service	accepted	claude wikidata	
-advertising	transaction	accepted	sumo wordnet	
-advertising	volition	single	sumo	
 aerial-delivery	act	single	wordnet	
 aerial-delivery	airlift	accepted	claude wikidata	
+aerial-delivery	delivery	accepted	claude wordnet	
 aerial-delivery	event	accepted	sumo wordnet	
-aerial-delivery	goods-delivery	accepted	claude wordnet	
 aerial-delivery	locating	single	sumo	
 aerial-delivery	phenomenon	single	sumo	
 aerial-delivery	transport	single	wordnet	
@@ -449,14 +434,18 @@ banking	accomplishment	single	sumo
 banking	act	accepted	sumo wordnet	
 banking	action	single	opencyc	
 banking	activity	single	sumo	
+banking	business-model	single	wikidata	
 banking	commerce	single	wordnet	
 banking	commercial-enterprise	single	wordnet	
 banking	event	accepted	opencyc sumo wordnet	
 banking	exchange	single	sumo	
-banking	financial-services	accepted	claude wordnet	
+banking	financial-services	accepted	claude wikidata wordnet	
+banking	goods	single	wikidata	
+banking	goods-and-services	single	wikidata	
 banking	interaction	single	sumo	
 banking	phenomenon	single	sumo	
 banking	procedure	single	sumo	
+banking	service	single	wikidata	
 banking	situation	single	opencyc	
 banking	transaction	accepted	sumo wordnet	
 banking	volition	single	sumo	
@@ -697,7 +686,6 @@ bookdealer	organism	single	wordnet
 bookdealer	person	single	wordnet	
 bookdealer	physical-object	single	wordnet	
 bookdealer	property	single	sumo	
-bookkeeping	procedure	accepted	claude-ruling	
 boot	goods	accepted	opencyc wikidata	
 bootlegging	merchandising	single	claude	
 bootlegging.act	merchandising	single	claude	
@@ -732,12 +720,15 @@ braces	goods	single	wikidata
 bread	goods	single	opencyc	
 breadfruit	goods	single	opencyc	
 breakage	compensation	single	wordnet	
+breakage	goods	single	wikidata	
+breakage	goods-and-services	single	wikidata	
 breakage	outgo	single	wordnet	
 breakage	payment-amount	single	wordnet	
 breakage	possession	single	wordnet	
 breakage	quantity	single	sumo	
 breakage	recompense-payment	single	wordnet	
 breakage	reimbursement	accepted	claude wordnet	
+breakage	service	single	wikidata	
 breakfast	goods	single	opencyc	
 breathalyzer	goods	single	opencyc	
 breeding	economic-production	single	claude	
@@ -1064,7 +1055,11 @@ cash-payment	possession	single	wordnet
 cash-payment	quantity	single	sumo	
 cash-register	retail	single	gpt	
 casserole-dish	goods	single	wikidata	
+cast-of-characters	goods	single	wikidata	
+cast-of-characters	goods-and-services	single	wikidata	
 cat-food	goods	single	opencyc	
+catering	goods	single	wikidata	
+catering	goods-and-services	single	wikidata	
 cattle-breeding	breeding	single	claude	
 cattle-drive	drive.act	single	claude	
 cellarage	fee	accepted	claude wordnet	
@@ -1148,10 +1143,17 @@ circularization	transaction	single	wordnet
 circularization	volition	single	sumo	
 citrus-fruit	goods	single	opencyc	
 clamp	goods	single	wikidata	
-classified-advertising	information	accepted	claude-ruling yago	
+classified-advertising	ad	single	wikidata	
+classified-advertising	advertising	single	wikidata	
+classified-advertising	goods	single	wikidata	
+classified-advertising	goods-and-services	single	wikidata	
+classified-advertising	information	accepted	claude-ruling wikidata yago	
+classified-advertising	service	single	wikidata	
 classified-stock	common-stock	accepted	claude wordnet	
 classified-stock	possession	single	wordnet	
 classified-stock	share-capital	single	wordnet	
+cleaning	goods	single	wikidata	
+cleaning	goods-and-services	single	wikidata	
 clearance-sale	accomplishment	single	sumo	
 clearance-sale	act	single	sumo	
 clearance-sale	activity	single	sumo	
@@ -1389,28 +1391,21 @@ conditional-sale	volition	single	sumo
 condom	goods	accepted	opencyc wikidata	
 conduit	goods	single	wikidata	
 conscience-money	payment-amount	single	claude	
+conscription	goods	single	wikidata	
+conscription	goods-and-services	single	wikidata	
 consignment	act	single	wordnet	
 consignment	business-model	single	wikidata	
 consignment	commercial-trade	single	wikidata	
+consignment	delivery	accepted	claude wordnet	
 consignment	event	accepted	sumo wordnet	
-consignment	goods-delivery	accepted	claude wordnet	
 consignment	locating	single	sumo	
 consignment	phenomenon	single	sumo	
 consignment	sale	accepted	claude wikidata	
 consignment	transport	single	wordnet	
 consignment	visit	single	sumo	
-construction-industry	accomplishment	single	sumo	
-construction-industry	act	accepted	sumo wordnet	
-construction-industry	activity	single	sumo	
-construction-industry	commerce	single	wordnet	
-construction-industry	commercial-enterprise	accepted	claude wordnet	
-construction-industry	creation	single	sumo	
-construction-industry	economic-production	accepted	claude wikidata	
-construction-industry	event	accepted	sumo wordnet	
-construction-industry	phenomenon	single	sumo	
-construction-industry	procedure	single	sumo	
-construction-industry	transaction	single	wordnet	
-construction-industry	volition	single	sumo	
+construction	economic-production	accepted	claude wikidata	
+consulting	goods	single	wikidata	
+consulting	goods-and-services	single	wikidata	
 consumer-choice	concept	accepted	claude-ruling	
 consumer-credit	contract	single	sumo	
 consumer-credit	credit	single	wordnet	
@@ -1749,6 +1744,8 @@ crowdfunding	business-model	accepted	claude wikidata
 crowdfunding	financial-services	accepted	claude-ruling	
 crowdfunding	sharing-economy	dissented	wikidata	
 crown	goods	accepted	opencyc wikidata	
+cruise	goods	single	wikidata	
+cruise	goods-and-services	single	wikidata	
 cryptocurrency	currency	accepted	claude-ruling	
 cryptocurrency	goods	single	wikidata	
 cryptocurrency	payment-system	accepted	claude wikidata	
@@ -1930,6 +1927,8 @@ deficit-spending	procedure	single	sumo
 deficit-spending	spending	accepted	sumo wordnet	
 deficit-spending	transaction	accepted	sumo wordnet	
 deficit-spending	volition	single	sumo	
+delivery	goods	single	wikidata	
+delivery	goods-and-services	single	wikidata	
 demand-deposit	deposit	accepted	claude wordnet	
 demand-deposit	fund	single	wordnet	
 demand-deposit	standard	single	wordnet	
@@ -1938,6 +1937,8 @@ demurrage	outgo	single	wordnet
 demurrage	possession	single	wordnet	
 demurrage	price-charged	accepted	claude wordnet	
 demurrage	quantity	single	sumo	
+dental-care	goods	single	wikidata	
+dental-care	goods-and-services	single	wikidata	
 dental-floss	goods	single	opencyc	
 deodorant	goods	single	opencyc	
 deposit	possession	accepted	claude-ruling	
@@ -2001,14 +2002,18 @@ direct-loan	volition	single	sumo
 direct-marketing	accomplishment	single	sumo	
 direct-marketing	act	accepted	sumo wordnet	
 direct-marketing	activity	single	sumo	
-direct-marketing	ad	single	sumo	
+direct-marketing	ad	accepted	sumo wikidata	
+direct-marketing	advertising	single	wikidata	
 direct-marketing	commerce	single	wordnet	
 direct-marketing	communication	single	sumo	
 direct-marketing	event	accepted	sumo wordnet	
-direct-marketing	information	single	sumo	
+direct-marketing	goods	single	wikidata	
+direct-marketing	goods-and-services	single	wikidata	
+direct-marketing	information	accepted	sumo wikidata	
 direct-marketing	marketing	accepted	claude wordnet	
 direct-marketing	phenomenon	single	sumo	
 direct-marketing	procedure	single	sumo	
+direct-marketing	service	single	wikidata	
 direct-marketing	transaction	single	wordnet	
 direct-marketing	universe	single	sumo	
 direct-marketing	volition	single	sumo	
@@ -2193,6 +2198,8 @@ dry-cleaner	structure	single	opencyc
 dry-cleaner	system	single	opencyc	
 dry-cleaner	vertebrate	single	opencyc	
 dry-cleaner	worker	single	opencyc	
+dry-cleaning	goods	single	wikidata	
+dry-cleaning	goods-and-services	single	wikidata	
 dues	fixed-charge	accepted	claude wordnet	
 dues	outgo	single	wordnet	
 dues	possession	single	wordnet	
@@ -2544,11 +2551,13 @@ financial-audit	accomplishment	single	sumo
 financial-audit	act	accepted	sumo wordnet	
 financial-audit	activity	accepted	sumo wordnet	
 financial-audit	audited-account	accepted	wikidata wordnet	
+financial-audit	consulting	single	wordnet	
 financial-audit	event	accepted	sumo wordnet	
 financial-audit	information	accepted	sumo wordnet	
 financial-audit	phenomenon	single	sumo	
 financial-audit	procedure	single	sumo	
 financial-audit	search	single	sumo	
+financial-audit	service	single	wordnet	
 financial-audit	transaction-record	single	wordnet	
 financial-audit	universe	single	sumo	
 financial-audit	volition	single	sumo	
@@ -2638,6 +2647,8 @@ fire-sale	state	single	wordnet
 fire-sale	transaction	single	sumo	
 fire-sale	volition	single	sumo	
 fireman's-carry	carry	single	claude	
+first-aid	goods	single	wikidata	
+first-aid	goods-and-services	single	wikidata	
 first-aid-kit	goods	single	opencyc	
 first-mortgage	financial-interest	single	wordnet	
 first-mortgage	information	single	opencyc	
@@ -2905,7 +2916,7 @@ garageman's-lien	mechanic's-lien	accepted	claude wordnet
 garageman's-lien	possession	single	wordnet	
 garageman's-lien	security-interest	single	wordnet	
 garden-hose	goods	accepted	opencyc wikidata	
-gardening	farming	single	claude	
+gardening	economic-production	single	wordnet	
 garland	goods	single	wikidata	
 garter	goods	accepted	opencyc wikidata	
 garter-belt	goods	single	wikidata	
@@ -2960,12 +2971,6 @@ gong	goods	single	wikidata
 goods	possession	accepted	claude-ruling	
 goods-and-services	concept	accepted	claude-ruling	
 goods-and-services	goods	dissented	wikidata	
-goods-delivery	act	single	wordnet	
-goods-delivery	event	accepted	sumo wordnet	
-goods-delivery	locating	single	sumo	
-goods-delivery	phenomenon	single	sumo	
-goods-delivery	transport	accepted	claude wordnet	
-goods-delivery	visit	single	sumo	
 goodwill-asset	financial-asset	accepted	claude wikidata	
 goodwill-asset	intangible-asset	single	wikidata	
 goodwill-asset	possession	accepted	claude wordnet	
@@ -3093,14 +3098,13 @@ ham	goods	single	opencyc
 hammock	goods	single	opencyc	
 handbag	goods	single	wikidata	
 handball	goods	single	wikidata	
-handing-over	goods-delivery	single	claude	
+handing-over	delivery	single	claude	
 handkerchief	goods	accepted	opencyc wikidata	
 handling-cost	outgo	accepted	claude wordnet	
 handling-cost	possession	single	wordnet	
 handling-cost	quantity	single	sumo	
 handrail	goods	single	wikidata	
 hanger	goods	single	wikidata	
-hanger	storage	single	gpt	
 hard-fork	blockchain	dissented	wikidata	
 hard-fork	distributed-ledger	single	wikidata	
 hard-fork	event	accepted	claude-ruling	
@@ -3138,6 +3142,9 @@ hauling	act	single	wordnet
 hauling	commerce	single	wordnet	
 hauling	commercial-enterprise	single	wordnet	
 hauling	event	single	wordnet	
+hauling	goods	single	wikidata	
+hauling	goods-and-services	single	wikidata	
+hauling	service	single	wikidata	
 hauling	transaction	single	wordnet	
 hauling	transportation	accepted	claude wordnet	
 hay-bale	artifact	accepted	sumo wordnet	
@@ -3154,6 +3161,8 @@ hazard-insurance	possession	accepted	claude wordnet
 headband	goods	accepted	opencyc wikidata	
 headdress	goods	single	wikidata	
 headset	goods	single	opencyc	
+health-care	goods	single	wikidata	
+health-care	goods-and-services	single	wikidata	
 health-insurance	account	single	opencyc	
 health-insurance	business-model	single	wikidata	
 health-insurance	financial-services	single	wikidata	
@@ -3186,6 +3195,8 @@ hedge-fund	organization	single	yago
 hedge-fund	structure	single	opencyc	
 hedge-fund	system	single	opencyc	
 helmet	goods	accepted	opencyc wikidata	
+help-desk	goods	single	wikidata	
+help-desk	goods-and-services	single	wikidata	
 herbicide	goods	single	opencyc	
 heroin	goods	single	opencyc	
 hidden-reserve	backlog	single	wordnet	
@@ -3334,6 +3345,8 @@ hot-stock	tension	single	sumo
 hot-stock	way	single	sumo	
 hotel	business	single	wikidata	
 hotel	enterprise	accepted	claude wikidata	
+housecleaning	goods	single	wikidata	
+housecleaning	goods-and-services	single	wikidata	
 household-appliance	goods	single	wikidata	
 houseplant	goods	dissented	wikidata	
 housing	goods	single	wikidata	
@@ -3567,7 +3580,7 @@ jar	goods	single	wikidata
 javelin	goods	accepted	opencyc wikidata	
 jeans	goods	accepted	opencyc wikidata	
 jelly	goods	single	opencyc	
-jerry-building	construction-industry	single	claude	
+jerry-building	construction	single	claude	
 jersey	goods	accepted	opencyc wikidata	
 jeweler	agent	single	wordnet	
 jeweler	attribute	single	sumo	
@@ -3631,7 +3644,7 @@ landlord's-lien	financial-interest	single	wordnet
 landlord's-lien	lien	accepted	claude wordnet	
 landlord's-lien	possession	single	wordnet	
 landlord's-lien	security-interest	single	wordnet	
-landscaping	gardening	single	claude	
+landscaping	economic-production	single	wordnet	
 lantern	goods	single	opencyc	
 last-mile	delivery	accepted	claude-ruling	
 late-fee	fee	accepted	claude-ruling	
@@ -3846,6 +3859,8 @@ lump-sum	possession	single	wordnet
 lump-sum	procedure	single	sumo	
 lump-sum	transaction	single	wikidata	
 lump-sum	volition	single	sumo	
+lunch	goods	single	wikidata	
+lunch	goods-and-services	single	wikidata	
 machete	goods	accepted	opencyc wikidata	
 machine-housing	goods	single	wikidata	
 machinery	business	single	opencyc	
@@ -4276,6 +4291,8 @@ offer-price	outgo	single	wordnet
 offer-price	possession	single	wordnet	
 offer-price	purchase-price	single	wordnet	
 offer-price	quantity	single	sumo	
+old-age	goods	single	wikidata	
+old-age	goods-and-services	single	wikidata	
 old-age-pension	outgo	single	wordnet	
 old-age-pension	payment-amount	single	wordnet	
 old-age-pension	pension	accepted	claude wordnet	
@@ -4369,7 +4386,6 @@ organization-expense	expense	single	wordnet
 organization-expense	outgo	single	wordnet	
 organization-expense	possession	single	wordnet	
 organization-expense	quantity	single	sumo	
-organizer	storage	single	gpt	
 origination-fee	fee	accepted	claude wordnet	
 origination-fee	fixed-charge	single	wordnet	
 origination-fee	outgo	single	wordnet	
@@ -4486,16 +4502,6 @@ overproduction	transaction	single	wordnet
 overproduction	volition	single	sumo	
 ownership	concept	accepted	claude-ruling	
 pack.artifact	container	single	claude	
-packaging	act	single	wordnet	
-packaging	action	single	opencyc	
-packaging	commerce	single	wordnet	
-packaging	commercial-enterprise	accepted	claude wordnet	
-packaging	event	accepted	opencyc sumo wordnet	
-packaging	locating	single	sumo	
-packaging	phenomenon	single	sumo	
-packaging	situation	single	opencyc	
-packaging	transaction	single	wordnet	
-packaging	visit	single	sumo	
 packing	carry	single	claude	
 paddle	goods	single	wikidata	
 paint	goods	single	opencyc	
@@ -4686,6 +4692,8 @@ personal-loan	possession	single	wordnet
 personal-loan	procedure	single	sumo	
 personal-loan	transaction	single	wikidata	
 personal-loan	volition	single	sumo	
+pest-control	goods	single	wikidata	
+pest-control	goods-and-services	single	wikidata	
 pesticide	goods	single	opencyc	
 petticoat	goods	single	wikidata	
 petty-cash	fund	accepted	claude wordnet	
@@ -4794,8 +4802,8 @@ postage-stamp	legal-tender	single	opencyc
 postage-stamp	postage	single	opencyc	
 postage-stamp	product	single	yago	
 postal-delivery	act	single	wordnet	
+postal-delivery	delivery	accepted	claude wordnet	
 postal-delivery	event	single	wordnet	
-postal-delivery	goods-delivery	accepted	claude wordnet	
 postal-delivery	transport	single	wordnet	
 poultryman	agent	single	wordnet	
 poultryman	attribute	single	sumo	
@@ -4879,7 +4887,6 @@ print-seller	property	single	sumo
 print-seller	retailer	accepted	claude wikidata	
 print-seller	trader	single	wordnet	
 print-seller	worker	single	wikidata	
-printing	commercial-enterprise	single	claude	
 prisoners-dilemma	concept	accepted	claude-ruling	
 private-equity	financial-services	accepted	claude-ruling	
 private-key	information	accepted	claude-ruling	
@@ -5026,9 +5033,10 @@ psychological-pricing	pricing-strategy	accepted	claude-ruling
 public-debt	debt	single	claude	
 public-good	concept	accepted	claude-ruling	
 public-key	information	accepted	claude-ruling	
+public-service	goods	single	wikidata	
+public-service	goods-and-services	single	wikidata	
 publisher	business	single	wikidata	
 publisher	enterprise	accepted	claude wikidata	
-publishing	commercial-enterprise	single	claude	
 pudding	goods	accepted	opencyc wikidata	
 pump	goods	single	wikidata	
 pump-and-dump	fraud	accepted	claude-ruling	
@@ -5299,6 +5307,10 @@ rent	annuity	single	wordnet
 rent	annuity-in-advance	dissented	wordnet	
 rent	payment-amount	single	wordnet	
 rent	regular-payment	accepted	claude-ruling wordnet	
+rental	business-model	single	wikidata	
+rental	financial-services	single	wikidata	
+rental	goods	single	wikidata	
+rental	goods-and-services	single	wikidata	
 rental-income	income	accepted	claude wordnet	
 rental-income	possession	single	wordnet	
 rental-income	quantity	single	sumo	
@@ -5756,7 +5768,7 @@ service-contract	image	single	opencyc
 service-contract	information	single	wordnet	
 service-contract	legal-document	accepted	sumo wordnet	
 service-contract	signified	single	sumo	
-serving	goods-delivery	single	claude	
+serving	delivery	single	claude	
 serving-bowl	goods	accepted	opencyc wikidata	
 settlement-date	concept	accepted	claude-ruling	
 settlement-finance	procedure	accepted	claude-ruling	
@@ -6195,19 +6207,6 @@ stop-payment	physical-object	single	sumo
 stop-payment	text	single	sumo	
 stop-payment	universe	single	sumo	
 stopwatch	goods	single	wikidata	
-storage	accomplishment	single	sumo	
-storage	act	accepted	sumo wordnet	
-storage	action	single	opencyc	
-storage	activity	single	sumo	
-storage	commerce	single	wordnet	
-storage	commercial-enterprise	accepted	claude wordnet	
-storage	event	accepted	opencyc sumo wordnet	
-storage	furniture	single	gpt	
-storage	phenomenon	single	sumo	
-storage	procedure	single	sumo	
-storage	situation	single	opencyc	
-storage	transaction	single	wordnet	
-storage	volition	single	sumo	
 storage-tank	goods	single	wikidata	
 store-of-value	concept	accepted	claude-ruling	
 stored-supply	accomplishment	single	sumo	
@@ -6600,7 +6599,11 @@ transit-line	organization	single	wordnet
 transit-line	phenomenon	single	sumo	
 transit-line	universe	single	sumo	
 transmigrante	inhabitant	single	claude	
+transport	goods	single	wikidata	
+transport	goods-and-services	single	wikidata	
 transportation	business	single	opencyc	
+transportation	goods	single	wikidata	
+transportation	goods-and-services	single	wikidata	
 transportation-management-system	software	accepted	claude-ruling	
 transshipment	act	single	wordnet	
 transshipment	event	accepted	sumo wordnet	
@@ -6724,6 +6727,8 @@ tulip	goods	single	wikidata
 turban	goods	accepted	opencyc wikidata	
 turnip	goods	single	opencyc	
 turntable	goods	single	wikidata	
+tutoring	goods	single	wikidata	
+tutoring	goods-and-services	single	wikidata	
 tuxedo	goods	accepted	opencyc wikidata	
 two-sided-market	market	accepted	claude claude-ruling wikidata	
 umbrella	goods	single	wikidata	

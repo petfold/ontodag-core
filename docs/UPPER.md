@@ -660,3 +660,144 @@ plants), `product` (arithmetic), `television` (the system). **Still owed
 for loopmarket:** the services half (haircut, plumber, tutoring, rentals,
 accommodation, tickets, experiences), the retail compounds, a `humidity`
 registry family, and secure-storage kinds.
+
+## 11. The services layer (2026-09-07) — core v7
+
+Peter's question, the other half of §10: `service` had almost nothing below
+it, and loopmarket trades "products and services". What core had was
+WordNet's *act of help* sense (01209576, "he did them a service") with one
+child, `credit-card`, and that from schema.org filing FinancialProduct under
+Service. Loopmarket's demo had been hanging its trades from a local layer
+because of it.
+
+**The sense.** `service` is now WordNet 00577525, "work done by one person or
+group that benefits another; *budget separately for goods and services*" —
+the economic sense, WordNet's hyponym of `work`, schema.org's `Service`,
+Wikidata's Q7406919 (a subclass of *product* there). The act-of-help synset
+is dropped; its children (`childcare`, `help-desk`, `public-service`) join
+the new `service`. Three more Core-WordNet sense-1 accidents were corrected
+because the layer needed the everyday word: `treatment` is care provided to
+improve a situation (00658082; core had "the management of someone or
+something", an empty leaf), `haircut` is the act of cutting the hair
+(00359822; core had the hairstyle), `delivery` is delivering goods or mail
+(00317207; core had childbirth). `credit-card ⊑ service` is rejected by
+ruling.
+
+**The reading of `X ⊑ service`.** A category, not a transaction: `cleaning ⊑
+service` says cleaning is a kind of work done for another's benefit — the
+kind a provider offers — not that every act of cleaning is traded, exactly as
+`toaster ⊑ appliance` does not say every toaster is sold. Kinds that are
+mostly one's own activity (`entertainment`, `gambling`, `gardening`,
+`sightseeing`, `booking`) are left out or hung elsewhere; kinds that are the
+provider's work (`hairdressing`, `repair`, `tending`, `performing`,
+`photography`, `education`) are in.
+
+**Witnesses.** WordNet's own cone under 00577525 is seven synsets, so the
+layer needed a selection witness the way §10 needed the Google Product
+Taxonomy. Two were added. The **UN Central Product Classification 2.1**
+(`sources/cpc/`, 4,596 codes; sections 5–9 are the services, 1,883 codes) is
+extracted by `tools/extract_cpc.py` with a synthetic `cpc-services` node above
+sections 5–9 less division 53 (the buildings themselves, which CPC files
+beside the construction services); `service` is aligned to it, so CPC
+witnesses `X ⊑ service` for every service it lists and, through its code
+tree, edges like `wiring ⊑ electrical-work` (54611 ⊑ 5461) and `manicure ⊑
+beauty-treatment` (97220 ⊑ 972). CPC's titles are phrases ("Hairdressing and
+barbers' services"), so it is never matched by label: `align/services.tsv`
+carries the code beside each synset (read by `align.py`'s `read_cpc_map`),
+`overrides.tsv` the codes for names core already had (`transportation` 65,
+`education` 92, `care` 871, `tending` 93, `tourism` 855, `mail-service` 6801).
+The second witness is a bounded **Wikidata** pull under *service* Q7406919
+(`align/wikidata-roots.tsv`, two levels, 1,199 items into
+`sources/wikidata/services.json`, merged into the Wikidata graph by
+`build.sh`); it carries `cleaning`, `catering`, `consulting`, `delivery`,
+`dental-care`, `health-care`, `public-service`, `recruitment`, `rental`,
+`pest-control` to two witnesses on its own.
+
+**The selection.** 79 WordNet act synsets, chosen by hand against CPC's
+divisions (`align/services.tsv`, one line each with the CPC code and gloss):
+personal care (`beauty-treatment`, `hairdressing`, `haircut`, `shaving`,
+`manicure`, `pedicure`, `facial`, `skin-care`, `makeover`, `massage`,
+`tattooing`); health and care (`medical-care`, `dental-care`, `nursing`,
+`personal-care`, `first-aid`, `checkup`, `health-care`, `childcare`,
+`daycare`, `babysitting`, `pet-sitting`, `tree-surgery`); cleaning and
+domestic work (`cleaning`, `housecleaning`, `dry-cleaning`, `laundering`,
+`ironing`, `sanitation`, `pest-control`, `housework`); repair, installation
+and the trades (`repair`, `restoration`, `car-care`, `installation`,
+`alteration`, `upholstery`, `tailoring`, `dressmaking`, `construction`,
+`plumbing-work`, `carpentry`, `masonry-work`, `roofing-work`,
+`house-painting`, `electrical-work`, `wiring`, `landscaping`, `gardening`,
+`interior-design`); transport, logistics and hospitality (`accommodation`,
+`catering`, `rental`, `storage`, `packaging`, with `delivery`,
+`transportation`, `mail-service`, `tourism` re-attached); education
+(`tutoring`, `music-lesson`, `piano-lesson`, `coaching`, with `education`,
+`teaching`, `lesson`, `training` now under `service`); professional and
+business (`consulting`, `accounting`, `bookkeeping`, `law-practice`,
+`advertising`, `publishing`, `printing`, `programming`, `help-desk`,
+`security`, `guard-duty`, `recruitment`, `job-placement`); utilities and
+waste (`utility-service`, `sewage-disposal`, `trash-collection`,
+`recycling`); death care, public and social (`funeral-directing`,
+`cremation`, `public-service`, `social-service`). Names follow §10's rule —
+the WordNet lemma unless core owns the word in another sense, then a hand
+name that is still a plain phrase: `plumbing-work`, `masonry-work`,
+`roofing-work` (core's `plumbing`, `masonry`, `roofing` are the pipes, the
+stonework, the material), `utility-service` (core's `utility` is the
+facility), `funeral-directing` (WordNet's *undertaking*; core's is the piece
+of work), `trash-collection` (computing owns `garbage-collection`),
+`tutoring` for WordNet's *tutelage*, `pest-control` for *disinfestation*,
+`consulting` for *consulting service*. The economics pack ceded
+`advertising`, `bookkeeping` and `storage` to core.
+
+**The reading.** Every single-witness edge on the layer was read against both
+glosses: 157 lines in `claude-review.tsv`, 127 accepted, 30 rejected. The
+rejections are mostly CPC's bins taken literally — 93 "human health and
+social care" would make `personal-care`, `childcare` and `social-service`
+health care; 971 would make `dry-cleaning` and `ironing` laundering; 87
+would make `installation` and `alteration` repair; 852 would make
+`investigation` security — and WordNet's chains (`shaving ⊑ depilation ⊑
+cleaning`, `haircut ⊑ cut ⊑ diminution`). Wrong-sense label matches were
+cleared in `overrides.tsv` (Wikidata's `bookkeeping` is Luca Pacioli, its
+`security` the financial instrument, its `accommodation` the eye's; GPT's
+`cleaning` is a bin under instrument accessories, its `health-care` and
+`personal-care` departments; SUMO maps `alteration` to Process=, which had
+made everything ⊑ alteration). Rulings (`claude-ruling.tsv`, under the
+standing permission): `haircut ⊑ hairdressing` (WordNet files the act under
+*cut*), `babysitting ⊑ childcare`, `checkup ⊑ medical-care`, `pet-sitting ⊑
+service` (CPC has no pet-care node), `job ⊑ service` ("a specific piece of
+work required to be done as a duty or for a specific fee" — the unit an
+odd-job market trades), `labor ⊑ service` (work done for wages benefits the
+one who pays), and the SUMO reversals around `therapy` settled WordNet's way
+(`therapy ⊑ medical-care ⊑ treatment`). Peter's one ruling of the day
+(`review.tsv`): `advertising ⊑ communication` — the business of drawing
+public attention is an activity of communicating; the Wikidata/YAGO edge to
+`information`, reached through the advertisement as a message, stays
+rejected. **For Peter:** `care` (maintenance,
+00267522) ⊑ `repair` entered on WordNet + CPC 871 and is debatable
+(maintenance prevents what repair fixes); `labor ⊑ service` and `job ⊑
+service` are Claude's rulings; `education ⊑ service` and `training ⊑
+service` are CPC + Wikidata and read at the category level above.
+
+**Two tool fixes the layer forced.** (1) A hub override (`service wordnet
+00577525`) was applied only after the candidate walk, so the Core WordNet
+synset whose first lemma is `service` — the religious service, 01032040 —
+took the bare name and was silently re-pointed at the economic sense; the
+ceremony vanished from core. Overrides now claim their synsets before the
+walk; the same bug had swallowed the synsets Peter's `appliance`, `dividend`
+and `star` corrections displaced — the gadget sense is back as `gadget`, the
+other two (a bonus; a point of light) are dropped on review. (2)
+`consensus.py` now prunes a parent another parent already entails in core
+too, not only in packs: CPC and Wikidata witness `X ⊑ service` beside `X ⊑
+hairdressing ⊑ beauty-treatment ⊑ service`, and the file should carry the
+specific edge. Entailment is unchanged, and no line outside the layer
+changed: the 17 existing lines that differ are the layer's own re-attachments
+(`tending`, `labor`, `education`, `delivery`, `haircut`, `treatment`, …).
+
+**Result:** core 4,220 categories (+80 over v6), nothing lost, no qualified
+names; `service` has 48 direct children and a cone of 110. Loopmarket's
+demo layer (`lesson ⊑ service`, `repair ⊑ service`, `music-lesson`,
+`piano-lesson`) is now core's own. **Still owed for loopmarket:** the
+service compounds WordNet has no synset for (bicycle repair, window
+cleaning, computer repair, taxi, moving, towing, translation, dog walking,
+car wash, web hosting, technical support beyond `help-desk`) — a later layer
+that can define them, like §10's retail compounds; finance services
+(`banking`, `insurance`, `lending`) stay the economics pack's; the
+`humidity` registry family and secure-storage kinds from §10.

@@ -13,12 +13,13 @@ active-management asset-management investing
 activity '*'
 actual-purchase-price purchase-price
 actuary professional
+ad '*'
 adhesion-contract contract
 adjusting-entry accounting-entry
 advance-death-benefit death-benefit
 adverse-selection concept
-advertising commercial-enterprise information service
-aerial-delivery airlift goods-delivery
+advertising '*'
+aerial-delivery airlift delivery
 agent '*'
 agio price-charged
 agribusiness commercial-enterprise
@@ -115,7 +116,7 @@ bonus payment-amount
 book-fair bazaar
 book-value concept
 bookdealer merchant
-bookkeeping procedure
+bookkeeping '*'
 borrowing-cost outgo
 bounty reward-payment
 breakage reimbursement
@@ -221,8 +222,7 @@ concession-contract contract
 conditional-contract contract
 conditional-sale security-interest
 consensus-mechanism procedure
-consignment goods-delivery sale
-construction-industry economic-production
+consignment delivery sale
 consumer-choice concept
 consumer-credit credit-line
 container '*'
@@ -338,7 +338,7 @@ difficulty-adjustment cryptocurrency-mining
 digital-signature information
 direct-debit financial-transaction payment
 direct-loan loan
-direct-marketing marketing
+direct-marketing ad marketing
 disability-benefit payment-amount
 discount-business commercial-enterprise
 discount-rate interest-rate
@@ -515,7 +515,6 @@ giro-account bank-account
 going-out-of-business-sale cut-rate-sale
 goods possession
 goods-and-services concept
-goods-delivery transport
 goodwill-asset financial-asset possession
 government-bond bond
 government-security legal-document
@@ -780,7 +779,7 @@ overpaid-amount payment-amount
 overpayment payment
 overproduction economic-production
 ownership concept
-packaging commercial-enterprise
+packaging '*'
 par-value concept
 pareto-efficiency concept
 participation-loan loan
@@ -840,7 +839,7 @@ post-obit-bond bond
 postage-batch swarm-storage
 postage-charge price-charged
 postage-stamp artifact
-postal-delivery goods-delivery
+postal-delivery delivery
 poultryman merchant
 poundage fee
 preferred-stock share share-capital
@@ -1070,7 +1069,7 @@ stockout event
 stop-loss-order trade-order
 stop-order document trade-order
 stop-payment document
-storage commercial-enterprise
+storage '*'
 store-of-value concept
 stored-supply possession
 stowage storage
