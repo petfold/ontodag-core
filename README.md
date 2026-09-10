@@ -90,4 +90,6 @@ Cyc concept ids, SUMO terms); the `.od` names are normalised labels with
 equivalence); the exporter breaks them and says where.
 
 Requires `ontodag` (`pip install ontodag`; the tools import it to write files it
-can read back) and `rdflib` for the three small OWL files.
+can read back), `recordstore` (imported directly by `tools/integrate.py`, and
+pulled in anyway as an `ontodag` dependency) and `rdflib` for the three small
+OWL files.
