@@ -9,12 +9,12 @@ comparable shape, their tops are cut to importable `.od` files, and the design
 of our own top is argued in `docs/UPPER.md`. Nothing here is installed by
 anyone; the product is a published store root that `odag pack core` adopts.
 
-## State (2026-09-07)
+## State (2026-09-10)
 
-`build/core.od` is the `core` pack (v6 shipped in ontodag 0.23.0; v7, the
-services layer, and v8, CPC's goods half, are built here and not yet
-shipped, and v9, the sense list decided): 4,617 concepts, ten branches, every edge carried by two independent
-sources or by Peter's ruling. `docs/UPPER.md` §10 is the everyday goods layer
+`build/core.od` is the `core` pack (**v9 shipped in ontodag 0.24.0**, which
+carried v7, the services layer, and v8, CPC's goods half, with it — 0.23.0
+had stopped at v6): 4,617 concepts, ten branches, every edge carried by two
+independent sources or by Peter's ruling. `docs/UPPER.md` §10 is the everyday goods layer
 (Google Product Taxonomy as witness), §11 the services layer (UN CPC 2.1 and
 Wikidata as witnesses; `service` re-sensed to "goods and services"), §12 the
 CPC goods sections run over the goods layer as witness and coverage check
