@@ -1579,3 +1579,17 @@ already rejected — but it matched them **by name**, and review rows bind by
 `review.tsv` and had to be withdrawn. They were inert, because `review.tsv`
 outranks `claude-ruling.tsv`, but a tool that reads the review files must use
 `resolve_reviews`, never the raw columns.
+
+### 15.5 Names
+
+Thirty concepts were still wearing an automatic `word.lexfile` collision name
+— `luck.phenomenon`, `rule.time`, `nature.person`, `plot.communication`. Most
+of them had never been *placed* before this pass, so the qualifier had never
+been read by anybody; decision 6 prefers a hand name, and they now have one:
+`good-fortune` (the favourable luck, whose gloss is otherwise identical to
+plain `luck`'s), `period-of-rule`, `mother-nature`, `storyline`,
+`upper-limit`, `table-column`, `market-demand`, `thin-film`, `natural-world`,
+`calendar-quarter`, `win-loss-record`, `mathematical-rule`, `cycle-period`,
+`skin-mole`, `vast-quantity`, `grounds`, `upshot` and the rest. **Core now
+carries no automatic collision name at all.** Thirty names out, thirty in,
+union unchanged.

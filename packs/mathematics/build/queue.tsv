@@ -106,9 +106,9 @@ single	algorithm	activity	only wordnet
 single	algorithm	event	only wordnet
 single	algorithm	information	only opencyc
 single	algorithm	logical-relation	only sumo
+single	algorithm	mathematical-rule	only wordnet
 single	algorithm	measure	only sumo
 single	algorithm	routine	only sumo
-single	algorithm	rule.cognition	only wordnet
 single	alliance	logical-relation	only sumo
 single	aloofness	logical-relation	only sumo
 single	alumnus	logical-relation	only sumo
@@ -363,6 +363,7 @@ single	calculus-of-variations	mathematics	only wordnet
 single	calculus-of-variations	science	only wordnet
 single	calendar	logical-relation	only sumo
 single	calendar-month	logical-relation	only sumo
+single	calendar-quarter	logical-relation	only sumo
 single	campaigner	logical-relation	only sumo
 single	capacity	logical-relation	only sumo
 single	caprice	logical-relation	only sumo
@@ -383,7 +384,6 @@ single	carriage	logical-relation	only sumo
 single	catch	logical-relation	only sumo
 single	category	logical-relation	only sumo
 single	caution	logical-relation	only sumo
-single	ceiling.communication	logical-relation	only sumo
 single	challenging-situation	logical-relation	only sumo
 single	championship	logical-relation	only sumo
 single	chaos	logical-relation	only sumo
@@ -458,7 +458,6 @@ single	cold	logical-relation	only sumo
 single	coldness	logical-relation	only sumo
 single	colleague	logical-relation	only sumo
 single	color	logical-relation	only sumo
-single	column.group	logical-relation	only sumo
 single	combinatorial-combination	act	only wordnet
 single	combinatorial-combination	activity	only wordnet
 single	combinatorial-combination	procedure	only wordnet
@@ -508,7 +507,6 @@ single	concave-polygon	curve	only sumo
 single	concave-polygon	logical-relation	only sumo
 single	concave-polygon	property	only sumo
 single	concept	logical-relation	only sumo
-single	concern.cognition	logical-relation	only sumo
 single	condition	logical-relation	only sumo
 single	conditional-probability	amount	only wordnet
 single	conditional-probability	logical-relation	only sumo
@@ -682,6 +680,7 @@ single	curvilinear-regression	quantity	only sumo
 single	curvilinear-regression	statistical-method	only wordnet
 single	curvilinear-regression	vector	only sumo
 single	custom	logical-relation	only sumo
+single	cycle-period	logical-relation	only sumo
 single	cyclic-graph	graph	only wikidata
 single	cyclic-graph	hypergraph	only wikidata
 single	cyclic-graph	mathematical-graph	only wikidata
@@ -1146,7 +1145,6 @@ single	forestry	logical-relation	only sumo
 single	formal-grammar	information	only opencyc
 single	forte	logical-relation	only sumo
 single	fortune	logical-relation	only sumo
-single	foundation.relation	logical-relation	only sumo
 single	fourier-series	function	only wordnet
 single	fourier-series	mathematical-relation	only wordnet
 single	fourier-series	polynomial	only wordnet
@@ -1301,6 +1299,7 @@ single	gratuity	logical-relation	only sumo
 single	graveness	logical-relation	only sumo
 single	graveness	range-of-a-function	only sumo
 single	grip	logical-relation	only sumo
+single	grounds	logical-relation	only sumo
 single	group-theory	cognition	only wordnet
 single	group-theory	logical-relation	only sumo
 single	group-theory	science	only wordnet
@@ -1672,7 +1671,6 @@ single	life-style	logical-relation	only sumo
 single	limit	algebraic-structure	only wikidata
 single	limit	mathematical-set	only wikidata
 single	limit	mathematical-structure	only wikidata
-single	limit.quantity	logical-relation	only sumo
 single	limitation	logical-relation	only sumo
 single	line-of-descent	logical-relation	only sumo
 single	linear-algebra	cognition	only wordnet
@@ -1712,7 +1710,6 @@ single	locus	logical-relation	only sumo
 single	locus	mathematical-structure	only wikidata
 single	locus	subset	only sumo
 single	logic	logical-relation	only sumo
-single	logic.cognition	logical-relation	only sumo
 single	logical-completeness	algebraic-structure	only wikidata
 single	logical-completeness	binary-relation	only wikidata
 single	logical-completeness	logical-relation	only sumo
@@ -1858,6 +1855,7 @@ single	mathematical-operator	relation	only wordnet
 single	mathematical-relation	logical-relation	only sumo
 single	mathematical-relation	relation	only wordnet
 single	mathematical-ring	mathematical-structure	only wikidata
+single	mathematical-rule	logical-relation	only sumo
 single	mathematical-series	mathematical-relation	only wordnet
 single	mathematical-series	relation	only wordnet
 single	mathematical-set	logical-relation	only sumo
@@ -1913,6 +1911,7 @@ single	matrix-transposition	calculation	only sumo
 single	matrix-transposition	information	only sumo
 single	matrix-transposition	mathematical-operation	only wordnet
 single	matrix-transposition	volition	only sumo
+single	matter-of-concern	logical-relation	only sumo
 single	maximization	accomplishment	only sumo
 single	maximization	calculation	only sumo
 single	maximization	information	only sumo
@@ -2151,7 +2150,6 @@ single	obtuse-triangle	polygon	only wordnet
 single	obtuse-triangle	shape	only wordnet
 single	occasion	logical-relation	only sumo
 single	occupation	logical-relation	only sumo
-single	ocean.quantity	logical-relation	only sumo
 single	octagon	algebraic-structure	only wikidata
 single	octagon	geometric-shape	only wikidata
 single	octagon	locus	only wikidata
@@ -2368,7 +2366,7 @@ single	percentile	indication	only sumo
 single	percentile	information	only sumo
 single	percentile	physical-object	only sumo
 single	perceptiveness	logical-relation	only sumo
-single	period.time	logical-relation	only sumo
+single	period-of-rule	logical-relation	only sumo
 single	permutation	act	only wordnet
 single	permutation	activity	only wordnet
 single	permutation	algebraic-structure	only wikidata
@@ -2404,7 +2402,6 @@ single	plane-geometry	mathematics	only wordnet
 single	plane-geometry	science	only wordnet
 single	plane-section	attribute	only wordnet
 single	plane-section	place	only sumo
-single	plot.communication	logical-relation	only sumo
 single	plumbing-work	logical-relation	only sumo
 single	point	logical-relation	only sumo
 single	point-of-view	logical-relation	only sumo
@@ -2562,7 +2559,7 @@ single	quantifier	mathematical-set	only wikidata
 single	quantifier	mathematical-structure	only wikidata
 single	quantifier	part	only wordnet
 single	quantity	logical-relation	only sumo
-single	quarter.time	logical-relation	only sumo
+single	quantity-limit	logical-relation	only sumo
 single	quartile	appraisal	only wordnet
 single	quartile	cognition	only wordnet
 single	quartile	indication	only sumo
@@ -2632,12 +2629,12 @@ single	real-number	totally-ordered-set	only wikidata
 single	realism	logical-relation	only sumo
 single	realm	logical-relation	only sumo
 single	reason	logical-relation	only sumo
+single	reasoning-principles	logical-relation	only sumo
 single	reception	logical-relation	only sumo
 single	recess	logical-relation	only sumo
 single	recommendation	algebraic-structure	only wikidata
 single	recommendation	mathematical-set	only wikidata
 single	recommendation	mathematical-structure	only wikidata
-single	record.quantity	logical-relation	only sumo
 single	rectangle	algebraic-structure	only wikidata
 single	rectangle	attribute	only wordnet
 single	rectangle	geometric-shape	only wikidata
@@ -2652,9 +2649,9 @@ single	recursion	act	only wordnet
 single	recursion	activity	only wordnet
 single	recursion	event	only wordnet
 single	recursion	logical-relation	only sumo
+single	recursion	mathematical-rule	only wordnet
 single	recursion	measure	only sumo
 single	recursion	routine	only sumo
-single	recursion	rule.cognition	only wordnet
 single	recursive-definition	accomplishment	only sumo
 single	recursive-definition	act	only sumo
 single	recursive-definition	activity	only sumo
@@ -2818,8 +2815,6 @@ single	row	partially-ordered-set	only wikidata
 single	royalty-payment	logical-relation	only sumo
 single	rubbish	logical-relation	only sumo
 single	rule	logical-relation	only sumo
-single	rule.cognition	logical-relation	only sumo
-single	rule.time	logical-relation	only sumo
 single	safety	logical-relation	only sumo
 single	salesclerk	logical-relation	only sumo
 single	salvation	logical-relation	only sumo
@@ -2892,8 +2887,8 @@ single	sequence	logical-relation	only sumo
 single	serial	algebraic-structure	only wikidata
 single	serial	mathematical-set	only wikidata
 single	serial	mathematical-structure	only wikidata
+single	series-convergence	deadline-extension	only sumo
 single	series-convergence	event	only sumo
-single	series-convergence	extension.time	only sumo
 single	series-convergence	function	only wordnet
 single	series-convergence	increase	only sumo
 single	series-convergence	mathematical-relation	only wordnet
@@ -2951,8 +2946,8 @@ single	similarity	mathematical-set	only wikidata
 single	similarity	mathematical-structure	only wikidata
 single	similarity	surjective-function	only wikidata
 single	simplicity	logical-relation	only sumo
+single	simultaneous-equations	mathematical-rule	only wikidata
 single	simultaneous-equations	mathematical-statement	only wordnet
-single	simultaneous-equations	rule.cognition	only wikidata
 single	sin	logical-relation	only sumo
 single	sine	function	only wordnet
 single	sine	mathematical-relation	only wordnet
@@ -3107,6 +3102,7 @@ single	statistician	physical-object	only wordnet
 single	statistics	logical-relation	only sumo
 single	status	logical-relation	only sumo
 single	steward	logical-relation	only sumo
+single	storyline	logical-relation	only sumo
 single	stratified-sample	cognition	only wordnet
 single	stratified-sample	collection	only sumo
 single	stratified-sample	statistical-distribution	only wordnet
@@ -3190,6 +3186,7 @@ single	symmetric-relation	mathematical-structure	only wikidata
 single	symmetric-relation	relation	only wikidata
 single	sympathy	logical-relation	only sumo
 single	system-of-measurement	logical-relation	only sumo
+single	table-column	logical-relation	only sumo
 single	tactic	logical-relation	only sumo
 single	tailoring	logical-relation	only sumo
 single	tangent	function	only wordnet
@@ -3397,6 +3394,7 @@ single	upper-bound	quantity	only sumo
 single	upper-bound	reflexive-relation	only wikidata
 single	upper-bound	relation	only wikidata
 single	upper-bound	transitive-relation	only wikidata
+single	upper-limit	logical-relation	only sumo
 single	upper-set	algebraic-structure	only wikidata
 single	upper-set	mathematical-set	only wikidata
 single	upper-set	mathematical-structure	only wikidata
@@ -3409,6 +3407,7 @@ single	variance	cognition	only wordnet
 single	variance	logical-relation	only sumo
 single	variance	number	only claude
 single	variance	statistic	only wordnet
+single	vast-quantity	logical-relation	only sumo
 single	vector	logical-relation	only sumo
 single	vector-algebra	cognition	only wordnet
 single	vector-algebra	logical-relation	only sumo
@@ -3467,6 +3466,7 @@ single	well-order	transitive-relation	only wikidata
 single	well-order	weak-order	only wikidata
 single	wellbeing	logical-relation	only sumo
 single	wife	logical-relation	only sumo
+single	win-loss-record	logical-relation	only sumo
 single	winner	logical-relation	only sumo
 single	winter	logical-relation	only sumo
 single	wisecrack	logical-relation	only sumo

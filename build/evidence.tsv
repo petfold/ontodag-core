@@ -73,9 +73,9 @@ abuse	activity	single	sumo
 abuse	communication	single	sumo	
 abuse	event	single	sumo	
 abuse	information	accepted	sumo wordnet	
+abuse	personal-reaction	single	sumo	
 abuse	phenomenon	single	sumo	
 abuse	procedure	single	sumo	
-abuse	reaction.phenomenon	single	sumo	
 abuse	universe	single	sumo	
 abuse	volition	single	sumo	
 academic-degree	artifact	single	sumo	
@@ -173,8 +173,8 @@ accounting	activity	single	wordnet
 accounting	event	single	wordnet	
 accounting	occupation	accepted	claude wordnet	
 accounting	service	accepted	claude cpc	
+accretion	deadline-extension	single	sumo	
 accretion	event	accepted	sumo	
-accretion	extension.time	single	sumo	
 accretion	increase	accepted	sumo wordnet	
 accretion	phenomenon	single	sumo	
 accretion	process	accepted	wordnet	
@@ -283,9 +283,9 @@ act-of-play	volition	single	sumo
 action	event	accepted	dul opencyc	
 action	fiction	single	wordnet	
 action	information	single	wordnet	
-action	plot.communication	single	wordnet	
 action	signified	single	sumo	
 action	situation	single	opencyc	
+action	storyline	single	wordnet	
 action-mechanism	artifact	accepted	sumo wordnet	
 action-mechanism	component	single	sumo	
 action-mechanism	device	accepted	sumo wordnet	
@@ -496,6 +496,8 @@ adult	universe	single	sumo
 adult	vertebrate	single	sumo	
 advance	possession	accepted	claude wordnet	
 advance	relation	single	wordnet	
+advance-notice	act	accepted	claude-ruling wordnet	
+advance-notice	event	single	wordnet	
 advancement	act	accepted	claude-ruling wordnet	
 advancement	amateur	single	sumo	
 advancement	ambiance	single	sumo	
@@ -697,14 +699,6 @@ affinity	society	single	sumo
 affinity	status	single	sumo	
 affinity	tension	single	sumo	
 affinity	way	single	sumo	
-affinity.relation	accomplishment	single	sumo	
-affinity.relation	act	single	sumo	
-affinity.relation	activity	single	sumo	
-affinity.relation	event	single	sumo	
-affinity.relation	phenomenon	single	sumo	
-affinity.relation	procedure	single	sumo	
-affinity.relation	relation	accepted	claude-ruling wordnet	
-affinity.relation	volition	single	sumo	
 affirmation	accomplishment	single	sumo	
 affirmation	act	accepted	sumo wordnet	
 affirmation	activity	single	sumo	
@@ -1510,9 +1504,9 @@ apology	activity	single	sumo
 apology	communication	single	sumo	
 apology	event	single	sumo	
 apology	information	accepted	sumo wordnet	
+apology	personal-reaction	single	sumo	
 apology	phenomenon	single	sumo	
 apology	procedure	single	sumo	
-apology	reaction.phenomenon	single	sumo	
 apology	universe	single	sumo	
 apology	volition	single	sumo	
 apparatus	artifact	accepted	sumo wordnet	
@@ -5474,6 +5468,10 @@ calendar-month	amount	single	wordnet
 calendar-month	quantity	single	sumo	
 calendar-month	time	single	sumo	
 calendar-month	time-period	accepted	claude-ruling wordnet	
+calendar-quarter	amount	single	wordnet	
+calendar-quarter	quantity	single	sumo	
+calendar-quarter	time	single	sumo	
+calendar-quarter	time-period	accepted	claude-ruling opencyc wordnet	
 calf	agent	single	sumo	
 calf	animal	accepted	sumo wordnet	
 calf	body	single	sumo	
@@ -6432,10 +6430,6 @@ ceiling	phenomenon	single	sumo
 ceiling	physical-object	accepted	wordnet	
 ceiling	universe	single	sumo	
 ceiling	vehicle-body	single	sumo	
-ceiling.communication	argumentation	accepted	claude-ruling wordnet	
-ceiling.communication	cognition	single	wordnet	
-ceiling.communication	quantity	single	sumo	
-ceiling.communication	thinking	single	wordnet	
 celebration	accomplishment	single	sumo	
 celebration	act	accepted	sumo wordnet	
 celebration	activity	accepted	sumo wordnet	
@@ -7852,6 +7846,14 @@ clod	collection	accepted	claude-ruling wordnet
 clod	group	single	wordnet	
 clod	phenomenon	single	sumo	
 clod	universe	single	sumo	
+close-connection	accomplishment	single	sumo	
+close-connection	act	single	sumo	
+close-connection	activity	single	sumo	
+close-connection	event	single	sumo	
+close-connection	phenomenon	single	sumo	
+close-connection	procedure	single	sumo	
+close-connection	relation	accepted	claude-ruling wordnet	
+close-connection	volition	single	sumo	
 closet	artifact	accepted	opencyc sumo wordnet	
 closet	case	single	sumo	
 closet	cavity	single	opencyc	
@@ -8316,7 +8318,6 @@ column	support-device	accepted	claude wordnet
 column	support.2	single	claude	
 column	universe	single	sumo	
 column	vehicle-body	single	sumo	
-column.group	group	accepted	claude-ruling wordnet	
 coma	attribute	accepted	wordnet	
 coma	condition	accepted	claude wordnet	
 coma	event	single	opencyc	
@@ -8393,9 +8394,9 @@ commemoration	activity	single	sumo
 commemoration	communication	single	sumo	
 commemoration	event	single	sumo	
 commemoration	information	accepted	sumo wordnet	
+commemoration	personal-reaction	single	sumo	
 commemoration	phenomenon	single	sumo	
 commemoration	procedure	single	sumo	
-commemoration	reaction.phenomenon	single	sumo	
 commemoration	recognition	accepted	claude wordnet	
 commemoration	universe	single	sumo	
 commemoration	volition	single	sumo	
@@ -8825,10 +8826,6 @@ concern	attribute	accepted	wordnet
 concern	emotion	accepted	opencyc wordnet	
 concern	feeling	accepted	wordnet	
 concern	state	accepted	wordnet	
-concern.cognition	attribute	single	wordnet	
-concern.cognition	condition	accepted	claude-ruling wordnet	
-concern.cognition	signified	single	sumo	
-concern.cognition	state	single	wordnet	
 concert	accomplishment	single	sumo	
 concert	act	single	sumo	
 concert	activity	single	sumo	
@@ -9587,9 +9584,9 @@ cordial-reception	communication	single	sumo
 cordial-reception	event	accepted	sumo	
 cordial-reception	greeting	accepted	wordnet	
 cordial-reception	information	accepted	sumo wordnet	
+cordial-reception	personal-reaction	single	sumo	
 cordial-reception	phenomenon	single	sumo	
 cordial-reception	procedure	single	sumo	
-cordial-reception	reaction.phenomenon	single	sumo	
 cordial-reception	universe	single	sumo	
 cordial-reception	volition	single	sumo	
 cordial-reception	welcome	accepted	claude wordnet	
@@ -10503,9 +10500,9 @@ cry	activity	single	sumo
 cry	communication	single	sumo	
 cry	event	single	sumo	
 cry	information	accepted	sumo wordnet	
+cry	personal-reaction	single	sumo	
 cry	phenomenon	single	sumo	
 cry	procedure	single	sumo	
-cry	reaction.phenomenon	single	sumo	
 cry	universe	single	sumo	
 cry	volition	single	sumo	
 crystal	artifact	accepted	sumo wordnet	
@@ -10780,6 +10777,9 @@ cycle	event	accepted	opencyc sumo wordnet
 cycle	phenomenon	single	sumo	
 cycle	repeat	accepted	claude wordnet	
 cycle	situation	single	opencyc	
+cycle-period	amount	accepted	claude-ruling wordnet	
+cycle-period	quantity	single	sumo	
+cycle-period	time	single	sumo	
 cylinder	attribute	accepted	claude wordnet	
 cylinder	shape	accepted	claude wordnet	
 cymbal	artifact	accepted	opencyc wikidata wordnet	
@@ -10980,6 +10980,10 @@ dead-body	universe	single	sumo
 deadline	amount	accepted	claude-ruling wordnet	
 deadline	quantity	single	sumo	
 deadline	time	single	sumo	
+deadline-extension	amount	single	wordnet	
+deadline-extension	event	single	sumo	
+deadline-extension	pause	accepted	claude-ruling wordnet	
+deadline-extension	phenomenon	single	sumo	
 deal	accomplishment	single	sumo	
 deal	act	accepted	sumo wordnet	
 deal	activity	single	sumo	
@@ -11222,7 +11226,6 @@ demand	procedure	single	sumo
 demand	request	accepted	claude wordnet	
 demand	universe	single	sumo	
 demand	volition	single	sumo	
-demand.process	process	accepted	claude-ruling wordnet	
 demo	accomplishment	single	sumo	
 demo	act	single	sumo	
 demo	activity	single	sumo	
@@ -12186,6 +12189,7 @@ dismay	fear	accepted	claude wordnet
 dismay	feeling	accepted	wordnet	
 dismay	state	accepted	wordnet	
 dismissal	act	accepted	claude-ruling wordnet	
+dismissal	advance-notice	accepted	claude-ruling wordnet	
 dismissal	artifact	single	sumo	
 dismissal	contract-condition	single	sumo	
 dismissal	event	single	wordnet	
@@ -12193,7 +12197,6 @@ dismissal	indication	single	sumo
 dismissal	information	single	sumo	
 dismissal	language-unit	single	sumo	
 dismissal	line-of-text	single	sumo	
-dismissal	notice.communication	accepted	claude-ruling wordnet	
 dismissal	phenomenon	single	sumo	
 dismissal	physical-object	single	sumo	
 dismissal	text	single	sumo	
@@ -13247,10 +13250,10 @@ eagle	structure	single	opencyc
 eagle	system	single	opencyc	
 eagle	universe	single	sumo	
 eagle	vertebrate	accepted	opencyc sumo wordnet	
-eagle.communication	cognition	accepted	claude-ruling wordnet	
-eagle.communication	information	single	sumo	
-eagle.communication	phenomenon	single	sumo	
-eagle.communication	universe	single	sumo	
+eagle-emblem	cognition	accepted	claude-ruling wordnet	
+eagle-emblem	information	single	sumo	
+eagle-emblem	phenomenon	single	sumo	
+eagle-emblem	universe	single	sumo	
 ear	body-part	accepted	opencyc sumo wordnet	
 ear	detector	single	opencyc	
 ear	organ	accepted	sumo wikidata wordnet	
@@ -13328,8 +13331,8 @@ east	universe	single	sumo
 echo	attribute	accepted	claude-ruling wordnet	
 echo	event	single	sumo	
 echo	phenomenon	single	sumo	
-economic-consumption	demand.process	accepted	claude-ruling wordnet	
 economic-consumption	event	single	sumo	
+economic-consumption	market-demand	accepted	claude-ruling wordnet	
 economic-consumption	phenomenon	single	sumo	
 economic-consumption	process	accepted	claude-ruling wordnet	
 economic-system	attribute	single	sumo	
@@ -14320,8 +14323,8 @@ exit	artifact	accepted	claude wordnet
 exit	cavity	single	opencyc	
 exit	physical-object	accepted	wordnet	
 expansion	act	accepted	claude wordnet	
+expansion	deadline-extension	single	sumo	
 expansion	event	accepted	sumo wordnet	
-expansion	extension.time	single	sumo	
 expansion	increase	single	sumo	
 expansion	phenomenon	single	sumo	
 expectation	belief	accepted	claude wordnet	
@@ -14449,10 +14452,6 @@ extension-cord	physical-object	single	wordnet
 extension-cord	route	single	opencyc	
 extension-cord	universe	single	sumo	
 extension-cord	vehicle-body	single	sumo	
-extension.time	amount	single	wordnet	
-extension.time	event	single	sumo	
-extension.time	pause	accepted	claude-ruling wordnet	
-extension.time	phenomenon	single	sumo	
 extent	attribute	accepted	sumo wordnet	
 extent	property	single	sumo	
 extent	state	accepted	claude-ruling wordnet	
@@ -15288,11 +15287,6 @@ film	text	single	sumo
 film	universe	single	sumo	
 film	vehicle-body	single	sumo	
 film	video	accepted	claude peter	
-film.artifact	material	single	sumo	
-film.artifact	phenomenon	single	sumo	
-film.artifact	physical-object	accepted	claude-ruling wordnet	
-film.artifact	substance	single	sumo	
-film.artifact	universe	single	sumo	
 filter	artifact	accepted	opencyc sumo wordnet	
 filter	device	accepted	opencyc sumo wordnet	
 filter	phenomenon	single	sumo	
@@ -16307,28 +16301,6 @@ foundation	organization	accepted	sumo wordnet
 foundation	phenomenon	single	sumo	
 foundation	team	single	sumo	
 foundation	universe	single	sumo	
-foundation.relation	amateur	single	sumo	
-foundation.relation	ambiance	single	sumo	
-foundation.relation	attribute	single	sumo	
-foundation.relation	circumstance	single	sumo	
-foundation.relation	civilisation	single	sumo	
-foundation.relation	crowd	single	sumo	
-foundation.relation	custom	single	sumo	
-foundation.relation	danger	single	sumo	
-foundation.relation	expert	single	sumo	
-foundation.relation	freedom	single	sumo	
-foundation.relation	hero	single	sumo	
-foundation.relation	lap	single	sumo	
-foundation.relation	literary-works	single	sumo	
-foundation.relation	normal	single	sumo	
-foundation.relation	point-of-view	single	sumo	
-foundation.relation	practice	single	sumo	
-foundation.relation	property	single	sumo	
-foundation.relation	relation	accepted	claude-ruling wordnet	
-foundation.relation	society	single	sumo	
-foundation.relation	status	single	sumo	
-foundation.relation	tension	single	sumo	
-foundation.relation	way	single	sumo	
 fountain	artifact	accepted	sumo wordnet	
 fountain	decor	single	gpt	
 fountain	device	single	sumo	
@@ -17180,9 +17152,9 @@ gesture	event	accepted	sumo wordnet
 gesture	image	single	opencyc	
 gesture	information	single	sumo	
 gesture	motion	accepted	sumo wordnet	
+gesture	personal-reaction	single	sumo	
 gesture	phenomenon	single	sumo	
 gesture	procedure	single	sumo	
-gesture	reaction.phenomenon	single	sumo	
 gesture	signal	single	opencyc	
 gesture	situation	single	opencyc	
 gesture	universe	single	sumo	
@@ -17589,6 +17561,14 @@ good	society	single	sumo
 good	status	single	sumo	
 good	tension	single	sumo	
 good	way	single	sumo	
+good-fortune	accomplishment	single	sumo	
+good-fortune	act	single	sumo	
+good-fortune	activity	single	sumo	
+good-fortune	event	single	sumo	
+good-fortune	phenomenon	accepted	sumo wordnet	
+good-fortune	procedure	single	sumo	
+good-fortune	process	accepted	claude-ruling wordnet	
+good-fortune	volition	single	sumo	
 good-name	amateur	single	sumo	
 good-name	ambiance	single	sumo	
 good-name	attribute	accepted	sumo wordnet	
@@ -17802,12 +17782,12 @@ grain-meal	foodstuff	accepted	claude-ruling wordnet
 grain-meal	phenomenon	single	sumo	
 grain-meal	substance	single	wordnet	
 grain-meal	universe	single	sumo	
-grain.object	material	accepted	claude-ruling wordnet	
-grain.object	part	single	wordnet	
-grain.object	phenomenon	single	sumo	
-grain.object	relation	single	wordnet	
-grain.object	substance	single	wordnet	
-grain.object	universe	single	sumo	
+grain-particle	material	accepted	claude-ruling wordnet	
+grain-particle	part	single	wordnet	
+grain-particle	phenomenon	single	sumo	
+grain-particle	relation	single	wordnet	
+grain-particle	substance	single	wordnet	
+grain-particle	universe	single	sumo	
 grammar	cognition	single	wordnet	
 grammar	field-of-study	accepted	sumo wordnet	
 grammar	humanities	accepted	wikidata	
@@ -18048,9 +18028,9 @@ greeting	activity	single	sumo
 greeting	communication	single	sumo	
 greeting	event	accepted	opencyc sumo	
 greeting	information	accepted	sumo wordnet	
+greeting	personal-reaction	single	sumo	
 greeting	phenomenon	single	sumo	
 greeting	procedure	single	sumo	
-greeting	reaction.phenomenon	single	sumo	
 greeting	situation	single	opencyc	
 greeting	universe	single	sumo	
 greeting	volition	single	sumo	
@@ -18234,6 +18214,28 @@ groundnut-oil	part	single	wordnet
 groundnut-oil	relation	single	wordnet	
 groundnut-oil	substance	single	wordnet	
 groundnut-oil	vegetable-oil	accepted	cpc wordnet	
+grounds	amateur	single	sumo	
+grounds	ambiance	single	sumo	
+grounds	attribute	single	sumo	
+grounds	circumstance	single	sumo	
+grounds	civilisation	single	sumo	
+grounds	crowd	single	sumo	
+grounds	custom	single	sumo	
+grounds	danger	single	sumo	
+grounds	expert	single	sumo	
+grounds	freedom	single	sumo	
+grounds	hero	single	sumo	
+grounds	lap	single	sumo	
+grounds	literary-works	single	sumo	
+grounds	normal	single	sumo	
+grounds	point-of-view	single	sumo	
+grounds	practice	single	sumo	
+grounds	property	single	sumo	
+grounds	relation	accepted	claude-ruling wordnet	
+grounds	society	single	sumo	
+grounds	status	single	sumo	
+grounds	tension	single	sumo	
+grounds	way	single	sumo	
 group	agent	accepted	claude dul sumo	
 group	collection	rejected	sumo	wikidata wordnet
 group	phenomenon	single	sumo	
@@ -19402,9 +19404,6 @@ history	narrative	single	opencyc
 history	process	single	bfo	
 history	signified	single	sumo	
 history.2	humanities	single	claude	
-history.time	attribute	single	wordnet	
-history.time	past	accepted	claude-ruling wordnet	
-history.time	time	accepted	claude-ruling wordnet	
 hobby	action	single	opencyc	
 hobby	artifact	accepted	sumo wordnet	
 hobby	device	single	sumo	
@@ -20196,6 +20195,10 @@ image	information	accepted	claude sumo
 image	phenomenon	single	sumo	
 image	physical-object	single	wordnet	
 image	universe	single	sumo	
+image-projection	event	single	sumo	
+image-projection	information	accepted	claude-ruling wordnet	
+image-projection	luminosity	single	sumo	
+image-projection	phenomenon	single	sumo	
 imagination	cognition	accepted	claude wordnet	
 immigrant	agent	accepted	wordnet	
 immigrant	attribute	single	sumo	
@@ -20344,9 +20347,9 @@ impudence	activity	single	sumo
 impudence	communication	single	sumo	
 impudence	event	single	sumo	
 impudence	information	accepted	sumo wordnet	
+impudence	personal-reaction	single	sumo	
 impudence	phenomenon	single	sumo	
 impudence	procedure	single	sumo	
-impudence	reaction.phenomenon	single	sumo	
 impudence	universe	single	sumo	
 impudence	volition	single	sumo	
 incense	chemical	single	wordnet	
@@ -20494,10 +20497,10 @@ influence	society	single	sumo
 influence	status	single	sumo	
 influence	tension	single	sumo	
 influence	way	single	sumo	
-influence.phenomenon	consequence	accepted	claude-ruling wordnet	
-influence.phenomenon	event	single	sumo	
-influence.phenomenon	phenomenon	accepted	sumo wordnet	
-influence.phenomenon	process	accepted	claude-ruling wordnet	
+influence-effect	consequence	accepted	claude-ruling wordnet	
+influence-effect	event	single	sumo	
+influence-effect	phenomenon	accepted	sumo wordnet	
+influence-effect	process	accepted	claude-ruling wordnet	
 influential-contact	acquaintance	accepted	claude wordnet	
 influential-contact	agent	accepted	wordnet	
 influential-contact	attribute	single	sumo	
@@ -21436,8 +21439,8 @@ jukebox	universe	single	sumo
 jukebox	vehicle-body	single	sumo	
 jukebox	vending-machine	single	opencyc	
 jump	change	accepted	claude wordnet	
+jump	deadline-extension	single	sumo	
 jump	event	accepted	sumo wordnet	
-jump	extension.time	single	sumo	
 jump	increase	single	sumo	
 jump	phenomenon	single	sumo	
 jump-rope	artifact	accepted	sumo wordnet	
@@ -22491,6 +22494,11 @@ legal-profession	attribute	single	sumo
 legal-profession	group	accepted	claude wordnet	
 legal-profession	occupation	single	yago	
 legal-profession	property	single	sumo	
+legal-restraint	cognition	single	wordnet	
+legal-restraint	concept	single	wordnet	
+legal-restraint	idea	single	wordnet	
+legal-restraint	restriction	accepted	claude-ruling wordnet	
+legal-restraint	rule	accepted	claude-ruling wordnet	
 legal-ward	agent	accepted	wordnet	
 legal-ward	attribute	single	sumo	
 legal-ward	organism	accepted	wordnet	
@@ -22818,9 +22826,6 @@ limit	physical-object	single	wordnet
 limit	place	accepted	sumo wordnet	
 limit	relation	single	wikidata	
 limit	universe	single	sumo	
-limit.quantity	amount	accepted	claude-ruling wordnet	
-limit.quantity	indefinite-quantity	accepted	claude-ruling wordnet	
-limit.quantity	quantity	single	sumo	
 limitation	amateur	single	sumo	
 limitation	ambiance	single	sumo	
 limitation	attribute	accepted	sumo wordnet	
@@ -23199,12 +23204,6 @@ logic	philosophy	accepted	claude peter wordnet
 logic	philosophy.2	single	claude	
 logic	science	accepted	claude	
 logic	signified	single	sumo	
-logic.cognition	cognition	single	wordnet	
-logic.cognition	concept	single	wordnet	
-logic.cognition	idea	single	wordnet	
-logic.cognition	natural-law	accepted	claude-ruling wordnet	
-logic.cognition	principle	accepted	claude-ruling wordnet	
-logic.cognition	signified	single	sumo	
 longbow	artifact	accepted	opencyc sumo wordnet	
 longbow	bow	accepted	wikidata wordnet	
 longbow	device	accepted	opencyc sumo wordnet	
@@ -23481,14 +23480,6 @@ luck	phenomenon	accepted	sumo wordnet
 luck	procedure	single	sumo	
 luck	process	accepted	claude-ruling wordnet	
 luck	volition	single	sumo	
-luck.phenomenon	accomplishment	single	sumo	
-luck.phenomenon	act	single	sumo	
-luck.phenomenon	activity	single	sumo	
-luck.phenomenon	event	single	sumo	
-luck.phenomenon	phenomenon	accepted	sumo wordnet	
-luck.phenomenon	procedure	single	sumo	
-luck.phenomenon	process	accepted	claude-ruling wordnet	
-luck.phenomenon	volition	single	sumo	
 luggage	artifact	accepted	sumo wikidata wordnet	
 luggage	case	accepted	sumo wordnet	
 luggage	commodity	single	cpc	
@@ -24144,6 +24135,7 @@ marker-post	information	accepted	sumo wordnet
 marker-post	phenomenon	single	sumo	
 marker-post	signal	accepted	claude-ruling wordnet	
 marker-post	universe	single	sumo	
+market-demand	process	accepted	claude-ruling wordnet	
 marketing	accomplishment	single	sumo	
 marketing	act	accepted	sumo wordnet	
 marketing	action	single	opencyc	
@@ -24320,6 +24312,13 @@ mathematical-product	cognition	single	wordnet
 mathematical-product	concept	single	wordnet	
 mathematical-product	idea	single	wordnet	
 mathematical-product	quantity	accepted	claude wordnet	
+mathematical-rule	act	single	wordnet	
+mathematical-rule	activity	single	wordnet	
+mathematical-rule	event	single	wordnet	
+mathematical-rule	measure	single	sumo	
+mathematical-rule	procedure	accepted	claude-ruling wordnet	
+mathematical-rule	routine	single	sumo	
+mathematical-rule	signified	single	sumo	
 mathematics	cognition	single	wordnet	
 mathematics	field-of-study	accepted	claude sumo wordnet	
 mathematics	formal-science	accepted	claude peter	
@@ -24337,6 +24336,10 @@ matrix	information	single	sumo
 matrix	phenomenon	single	sumo	
 matrix	physical-object	single	sumo	
 matrix	universe	single	sumo	
+matter-of-concern	attribute	single	wordnet	
+matter-of-concern	condition	accepted	claude-ruling wordnet	
+matter-of-concern	signified	single	sumo	
+matter-of-concern	state	single	wordnet	
 mattock	artifact	accepted	sumo wordnet	
 mattock	cutter	single	wordnet	
 mattock	device	single	sumo	
@@ -24364,8 +24367,8 @@ mattress-pad	universe	single	sumo
 mattress-pad	vehicle-body	single	sumo	
 maximum	amount	accepted	claude-ruling wordnet	
 maximum	indefinite-quantity	single	wordnet	
-maximum	limit.quantity	accepted	claude-ruling wordnet	
 maximum	quantity	single	sumo	
+maximum	quantity-limit	accepted	claude-ruling wordnet	
 mayonnaise	artifact	single	opencyc	
 mayonnaise	fixings	single	wordnet	
 mayonnaise	food	single	wordnet	
@@ -24952,6 +24955,7 @@ milking-machine	universe	single	sumo
 milking-machine	vehicle-body	single	sumo	
 mill	artifact	accepted	sumo wordnet	
 mill	device	accepted	sumo wordnet	
+mill	grounds	single	opencyc	
 mill	kitchen-appliance	single	gpt	
 mill	machine	accepted	sumo wikidata wordnet	
 mill	machinery	accepted	sumo wordnet	
@@ -25063,12 +25067,12 @@ minimum	freedom	single	sumo
 minimum	hero	single	sumo	
 minimum	indefinite-quantity	single	wordnet	
 minimum	lap	single	sumo	
-minimum	limit.quantity	accepted	claude-ruling wordnet	
 minimum	literary-works	single	sumo	
 minimum	normal	single	sumo	
 minimum	point-of-view	single	sumo	
 minimum	practice	single	sumo	
 minimum	property	single	sumo	
+minimum	quantity-limit	accepted	claude-ruling wordnet	
 minimum	society	single	sumo	
 minimum	status	single	sumo	
 minimum	tension	single	sumo	
@@ -25314,11 +25318,6 @@ mole	structure	single	opencyc
 mole	system	single	opencyc	
 mole	universe	single	sumo	
 mole	vertebrate	accepted	opencyc sumo wordnet	
-mole.attribute	appearance	accepted	claude-ruling wordnet	
-mole.attribute	attribute	single	wordnet	
-mole.attribute	phenomenon	single	sumo	
-mole.attribute	physical-object	single	sumo	
-mole.attribute	universe	single	sumo	
 molecule	compound	single	sumo	
 molecule	material	single	sumo	
 molecule	phenomenon	single	sumo	
@@ -25516,6 +25515,7 @@ mother	relative	accepted	wordnet
 mother	structure	single	opencyc	
 mother	system	single	opencyc	
 mother	vertebrate	single	opencyc	
+mother-nature	agent	accepted	claude-ruling wordnet	
 motif	artifact	accepted	sumo wordnet	
 motif	decoration	accepted	wordnet	
 motif	decorative-design	accepted	claude wordnet	
@@ -26055,13 +26055,12 @@ natural-science	field-of-study	accepted	claude sumo wordnet
 natural-science	science	accepted	claude wordnet	
 natural-science	signified	single	sumo	
 natural-spring	physical-object	accepted	claude-ruling wordnet	
+natural-world	natural-object	accepted	claude-ruling wordnet	
+natural-world	phenomenon	single	sumo	
+natural-world	physical-object	single	wordnet	
+natural-world	universe	accepted	sumo wordnet	
 nature	attribute	accepted	sumo wordnet	
 nature	property	single	sumo	
-nature.object	natural-object	accepted	claude-ruling wordnet	
-nature.object	phenomenon	single	sumo	
-nature.object	physical-object	single	wordnet	
-nature.object	universe	accepted	sumo wordnet	
-nature.person	agent	accepted	claude-ruling wordnet	
 nausea	cognition	accepted	wordnet	
 nausea	event	accepted	opencyc sumo	
 nausea	evidence	accepted	wordnet	
@@ -26445,8 +26444,6 @@ notice	phenomenon	single	sumo
 notice	procedure	single	sumo	
 notice	universe	single	sumo	
 notice	volition	single	sumo	
-notice.communication	act	accepted	claude-ruling wordnet	
-notice.communication	event	single	wordnet	
 notion	cognition	accepted	wordnet	
 notion	concept	accepted	claude wordnet	
 notion	idea	accepted	wordnet	
@@ -26699,9 +26696,9 @@ objection	communication	single	sumo
 objection	emotion	single	opencyc	
 objection	event	accepted	sumo wordnet	
 objection	information	single	sumo	
+objection	personal-reaction	single	sumo	
 objection	phenomenon	single	sumo	
 objection	procedure	single	sumo	
-objection	reaction.phenomenon	single	sumo	
 objection	universe	single	sumo	
 objection	volition	single	sumo	
 objective-lens	artifact	accepted	opencyc sumo wordnet	
@@ -26743,29 +26740,6 @@ occupation	property	single	sumo
 occupation	situation	single	opencyc	
 ocean	body-of-water	accepted	opencyc wordnet	
 ocean	sea	single	opencyc	
-ocean.quantity	amateur	single	sumo	
-ocean.quantity	ambiance	single	sumo	
-ocean.quantity	amount	accepted	claude-ruling wordnet	
-ocean.quantity	attribute	single	sumo	
-ocean.quantity	circumstance	single	sumo	
-ocean.quantity	civilisation	single	sumo	
-ocean.quantity	crowd	single	sumo	
-ocean.quantity	custom	single	sumo	
-ocean.quantity	danger	single	sumo	
-ocean.quantity	expert	single	sumo	
-ocean.quantity	freedom	single	sumo	
-ocean.quantity	hero	single	sumo	
-ocean.quantity	indefinite-quantity	accepted	claude-ruling wordnet	
-ocean.quantity	lap	single	sumo	
-ocean.quantity	literary-works	single	sumo	
-ocean.quantity	normal	single	sumo	
-ocean.quantity	point-of-view	single	sumo	
-ocean.quantity	practice	single	sumo	
-ocean.quantity	property	single	sumo	
-ocean.quantity	society	single	sumo	
-ocean.quantity	status	single	sumo	
-ocean.quantity	tension	single	sumo	
-ocean.quantity	way	single	sumo	
 octopus	agent	single	sumo	
 octopus	animal	accepted	sumo wordnet	
 octopus	body	single	sumo	
@@ -28104,6 +28078,9 @@ password	phenomenon	single	sumo
 password	universe	single	sumo	
 past	attribute	dissented	wordnet	
 past	time	accepted	claude-ruling wordnet	
+past-events	attribute	single	wordnet	
+past-events	past	accepted	claude-ruling wordnet	
+past-events	time	accepted	claude-ruling wordnet	
 pasta	artifact	single	opencyc	
 pasta	commodity	single	cpc	
 pasta	dish	single	wikidata	
@@ -28671,9 +28648,10 @@ period	phenomenon	single	sumo
 period	signal	single	wordnet	
 period	symbol	accepted	sumo wordnet	
 period	universe	single	sumo	
-period.time	amount	accepted	claude-ruling wordnet	
-period.time	quantity	single	sumo	
-period.time	time	single	sumo	
+period-of-rule	amount	single	wordnet	
+period-of-rule	quantity	single	sumo	
+period-of-rule	time	single	sumo	
+period-of-rule	time-period	accepted	claude-ruling wordnet	
 periodical	artifact	accepted	sumo wordnet	
 periodical	commodity	single	cpc	
 periodical	contract-condition	dissented	sumo	
@@ -28731,6 +28709,18 @@ personal-identification-number	identification	accepted	claude wordnet
 personal-identification-number	indication	accepted	wordnet	
 personal-identification-number	information	accepted	opencyc wordnet	
 personal-knowledge	cognition	accepted	claude wordnet	
+personal-reaction	accomplishment	single	sumo	
+personal-reaction	act	single	sumo	
+personal-reaction	activity	single	sumo	
+personal-reaction	communication	single	sumo	
+personal-reaction	consequence	accepted	claude-ruling wordnet	
+personal-reaction	event	single	sumo	
+personal-reaction	information	single	sumo	
+personal-reaction	phenomenon	accepted	sumo wordnet	
+personal-reaction	procedure	single	sumo	
+personal-reaction	process	accepted	claude-ruling wordnet	
+personal-reaction	universe	single	sumo	
+personal-reaction	volition	single	sumo	
 personality	attribute	accepted	sumo wordnet	
 personality	inclination	single	sumo	
 personality	mentality	single	sumo	
@@ -29575,9 +29565,6 @@ plot	region.2	single	claude
 plot	universe	single	sumo	
 plot	yard	single	sumo	
 plot.4	chart.2	single	claude	
-plot.communication	fiction	accepted	claude-ruling wordnet	
-plot.communication	information	single	wordnet	
-plot.communication	signified	single	sumo	
 plow	artifact	accepted	opencyc sumo wikidata wordnet	
 plow	commodity	single	cpc	
 plow	device	accepted	opencyc sumo	
@@ -30297,9 +30284,9 @@ praise	activity	single	sumo
 praise	communication	single	sumo	
 praise	event	single	sumo	
 praise	information	accepted	sumo wordnet	
+praise	personal-reaction	single	sumo	
 praise	phenomenon	single	sumo	
 praise	procedure	single	sumo	
-praise	reaction.phenomenon	single	sumo	
 praise	universe	single	sumo	
 praise	volition	single	sumo	
 prawn	animal	single	wordnet	
@@ -30835,10 +30822,6 @@ producer	vertebrate	single	sumo
 producer	worker	single	wikidata	
 product	artifact	accepted	claude wordnet	
 product	physical-object	single	wordnet	
-product.phenomenon	consequence	accepted	claude-ruling wordnet	
-product.phenomenon	event	single	sumo	
-product.phenomenon	phenomenon	accepted	sumo wordnet	
-product.phenomenon	process	accepted	claude-ruling wordnet	
 production	act	accepted	claude wordnet	
 production	event	accepted	opencyc sumo wordnet	
 production	phenomenon	single	sumo	
@@ -30987,10 +30970,6 @@ projection	procedure	single	sumo
 projection	thinking	accepted	claude-ruling wordnet	
 projection	universe	single	sumo	
 projection	volition	single	sumo	
-projection.communication	event	single	sumo	
-projection.communication	information	accepted	claude-ruling wordnet	
-projection.communication	luminosity	single	sumo	
-projection.communication	phenomenon	single	sumo	
 projector	artifact	accepted	opencyc sumo wordnet	
 projector	commodity	single	cpc	
 projector	device	accepted	opencyc sumo wordnet	
@@ -31603,6 +31582,9 @@ quality	way	single	sumo
 quantity	cognition	accepted	wordnet	
 quantity	concept	accepted	claude wordnet	
 quantity	idea	accepted	wordnet	
+quantity-limit	amount	accepted	claude-ruling wordnet	
+quantity-limit	indefinite-quantity	accepted	claude-ruling wordnet	
+quantity-limit	quantity	single	sumo	
 quarrel	accomplishment	single	sumo	
 quarrel	act	accepted	sumo wordnet	
 quarrel	activity	single	sumo	
@@ -31626,10 +31608,6 @@ quarter	place	accepted	sumo wordnet
 quarter	region	accepted	wordnet	
 quarter	universe	single	sumo	
 quarter	yard	single	sumo	
-quarter.time	amount	single	wordnet	
-quarter.time	quantity	single	sumo	
-quarter.time	time	single	sumo	
-quarter.time	time-period	accepted	claude-ruling wordnet	
 quartz-glass	glass-material	accepted	claude wordnet	
 quartz-glass	glass.2	single	claude	
 quartz-glass	material	single	sumo	
@@ -32028,6 +32006,7 @@ ramp	universe	single	sumo
 ranch	artifact	single	sumo	
 ranch	development	single	sumo	
 ranch	farm	accepted	sumo wordnet	
+ranch	grounds	single	opencyc	
 ranch	phenomenon	single	sumo	
 ranch	physical-object	single	wordnet	
 ranch	place	accepted	wordnet yago	
@@ -32175,18 +32154,6 @@ reaction	event	single	sumo
 reaction	natural-event	accepted	claude-ruling wordnet	
 reaction	phenomenon	accepted	sumo wordnet	
 reaction	process	single	wordnet	
-reaction.phenomenon	accomplishment	single	sumo	
-reaction.phenomenon	act	single	sumo	
-reaction.phenomenon	activity	single	sumo	
-reaction.phenomenon	communication	single	sumo	
-reaction.phenomenon	consequence	accepted	claude-ruling wordnet	
-reaction.phenomenon	event	single	sumo	
-reaction.phenomenon	information	single	sumo	
-reaction.phenomenon	phenomenon	accepted	sumo wordnet	
-reaction.phenomenon	procedure	single	sumo	
-reaction.phenomenon	process	accepted	claude-ruling wordnet	
-reaction.phenomenon	universe	single	sumo	
-reaction.phenomenon	volition	single	sumo	
 readiness	attribute	accepted	sumo wordnet	
 readiness	property	single	sumo	
 readiness	state	accepted	claude wordnet	
@@ -32251,6 +32218,12 @@ rear	physical-object	single	wordnet
 reason	explanation	accepted	claude wordnet	
 reason	information	accepted	wordnet	
 reason	signified	single	sumo	
+reasoning-principles	cognition	single	wordnet	
+reasoning-principles	concept	single	wordnet	
+reasoning-principles	idea	single	wordnet	
+reasoning-principles	natural-law	accepted	claude-ruling wordnet	
+reasoning-principles	principle	accepted	claude-ruling wordnet	
+reasoning-principles	signified	single	sumo	
 rebellion	accomplishment	single	sumo	
 rebellion	act	accepted	sumo wordnet	
 rebellion	activity	single	sumo	
@@ -32347,9 +32320,9 @@ recognition	activity	single	sumo
 recognition	communication	single	sumo	
 recognition	event	single	sumo	
 recognition	information	accepted	sumo wordnet	
+recognition	personal-reaction	single	sumo	
 recognition	phenomenon	single	sumo	
 recognition	procedure	single	sumo	
-recognition	reaction.phenomenon	single	sumo	
 recognition	universe	single	sumo	
 recognition	volition	single	sumo	
 recommendation	accomplishment	single	sumo	
@@ -32396,10 +32369,6 @@ record-player	player	single	opencyc
 record-player	tool	single	wikidata	
 record-player	universe	single	sumo	
 record-player	vehicle-body	single	sumo	
-record.quantity	amount	accepted	claude-ruling wordnet	
-record.quantity	definite-quantity	single	wordnet	
-record.quantity	numeric-quantity	accepted	claude-ruling wordnet	
-record.quantity	quantity	single	sumo	
 recorder	artifact	single	wordnet	
 recorder	device	single	wordnet	
 recorder	musical-instrument	accepted	gpt wordnet	
@@ -33271,11 +33240,6 @@ restraint	inclination	single	sumo
 restraint	mentality	single	sumo	
 restraint	property	single	sumo	
 restraint	trait	accepted	sumo wordnet	
-restraint.cognition	cognition	single	wordnet	
-restraint.cognition	concept	single	wordnet	
-restraint.cognition	idea	single	wordnet	
-restraint.cognition	restriction	accepted	claude-ruling wordnet	
-restraint.cognition	rule	accepted	claude-ruling wordnet	
 restriction	cognition	single	wordnet	
 restriction	concept	single	wordnet	
 restriction	function	single	wikidata	
@@ -33316,8 +33280,8 @@ retaliation	volition	single	sumo
 retaliation	war	single	sumo	
 retention	cognition	single	claude	
 retirement	act	accepted	claude wordnet	
+retirement	advance-notice	single	wikidata	
 retirement	event	accepted	wordnet	
-retirement	notice.communication	single	wikidata	
 return	act	accepted	claude wordnet	
 return	event	accepted	sumo wordnet	
 return	phenomenon	single	sumo	
@@ -34041,17 +34005,6 @@ rule	concept	accepted	claude wordnet
 rule	idea	accepted	wordnet	
 rule	normal	single	sumo	
 rule	property	single	sumo	
-rule.cognition	act	single	wordnet	
-rule.cognition	activity	single	wordnet	
-rule.cognition	event	single	wordnet	
-rule.cognition	measure	single	sumo	
-rule.cognition	procedure	accepted	claude-ruling wordnet	
-rule.cognition	routine	single	sumo	
-rule.cognition	signified	single	sumo	
-rule.time	amount	single	wordnet	
-rule.time	quantity	single	sumo	
-rule.time	time	single	sumo	
-rule.time	time-period	accepted	claude-ruling wordnet	
 ruler	artifact	accepted	opencyc sumo wikidata wordnet	
 ruler	device	accepted	opencyc sumo wordnet	
 ruler	equipment	single	wikidata	
@@ -36460,6 +36413,11 @@ skin-cream	phenomenon	single	sumo
 skin-cream	physical-object	single	wordnet	
 skin-cream	substance	single	sumo	
 skin-cream	universe	single	sumo	
+skin-mole	appearance	accepted	claude-ruling wordnet	
+skin-mole	attribute	single	wordnet	
+skin-mole	phenomenon	single	sumo	
+skin-mole	physical-object	single	sumo	
+skin-mole	universe	single	sumo	
 skipjack	agent	single	sumo	
 skipjack	animal	accepted	sumo wordnet	
 skipjack	body	single	sumo	
@@ -36683,9 +36641,9 @@ smile	event	single	sumo
 smile	gesture	single	sumo	
 smile	information	accepted	sumo wordnet	
 smile	motion	single	sumo	
+smile	personal-reaction	single	sumo	
 smile	phenomenon	single	sumo	
 smile	procedure	single	sumo	
-smile	reaction.phenomenon	single	sumo	
 smile	universe	single	sumo	
 smile	volition	single	sumo	
 smoke	cloud	single	sumo	
@@ -38349,6 +38307,9 @@ storm	natural-event	accepted	claude wordnet
 storm	phenomenon	single	wordnet	
 storm	process	single	wordnet	
 storm	wind	single	wikidata	
+storyline	fiction	accepted	claude-ruling wordnet	
+storyline	information	single	wordnet	
+storyline	signified	single	sumo	
 stove	appliance	accepted	wikidata wordnet	
 stove	artifact	accepted	sumo wikidata wordnet	
 stove	commodity	accepted	cpc wordnet	
@@ -39275,6 +39236,7 @@ table	phenomenon	single	sumo
 table	physical-object	accepted	wordnet	
 table	universe	single	sumo	
 table	vehicle-body	single	sumo	
+table-column	group	accepted	claude-ruling wordnet	
 table-knife	artifact	accepted	opencyc sumo wikidata wordnet	
 table-knife	cutter	single	wordnet	
 table-knife	device	accepted	opencyc sumo	
@@ -39945,9 +39907,9 @@ thanks	activity	single	sumo
 thanks	communication	single	sumo	
 thanks	event	single	sumo	
 thanks	information	accepted	sumo wordnet	
+thanks	personal-reaction	single	sumo	
 thanks	phenomenon	single	sumo	
 thanks	procedure	single	sumo	
-thanks	reaction.phenomenon	single	sumo	
 thanks	universe	single	sumo	
 thanks	volition	single	sumo	
 theatrical-role	accomplishment	single	sumo	
@@ -40077,6 +40039,11 @@ thimble	physical-object	single	wordnet
 thimble	tool	single	opencyc	
 thimble	universe	single	sumo	
 thimble	vehicle-body	single	sumo	
+thin-film	material	single	sumo	
+thin-film	phenomenon	single	sumo	
+thin-film	physical-object	accepted	claude-ruling wordnet	
+thin-film	substance	single	sumo	
+thin-film	universe	single	sumo	
 thinker	agent	accepted	sumo wordnet	
 thinker	organism	accepted	wordnet	
 thinker	person	accepted	claude wordnet	
@@ -41768,6 +41735,14 @@ upholstery	property	single	sumo
 upholstery	repair	dissented	cpc	
 upholstery	service	accepted	claude cpc	
 upholstery	trade	accepted	sumo wordnet	
+upper-limit	argumentation	accepted	claude-ruling wordnet	
+upper-limit	cognition	single	wordnet	
+upper-limit	quantity	single	sumo	
+upper-limit	thinking	single	wordnet	
+upshot	consequence	accepted	claude-ruling wordnet	
+upshot	event	single	sumo	
+upshot	phenomenon	accepted	sumo wordnet	
+upshot	process	accepted	claude-ruling wordnet	
 urge	attribute	accepted	sumo wordnet	
 urge	desire	accepted	claude wordnet	
 urge	feeling	accepted	wordnet	
@@ -41968,6 +41943,29 @@ vase	tool	single	wikidata
 vase	universe	single	sumo	
 vase	vehicle-body	single	sumo	
 vase	vessel	single	wordnet	
+vast-quantity	amateur	single	sumo	
+vast-quantity	ambiance	single	sumo	
+vast-quantity	amount	accepted	claude-ruling wordnet	
+vast-quantity	attribute	single	sumo	
+vast-quantity	circumstance	single	sumo	
+vast-quantity	civilisation	single	sumo	
+vast-quantity	crowd	single	sumo	
+vast-quantity	custom	single	sumo	
+vast-quantity	danger	single	sumo	
+vast-quantity	expert	single	sumo	
+vast-quantity	freedom	single	sumo	
+vast-quantity	hero	single	sumo	
+vast-quantity	indefinite-quantity	accepted	claude-ruling wordnet	
+vast-quantity	lap	single	sumo	
+vast-quantity	literary-works	single	sumo	
+vast-quantity	normal	single	sumo	
+vast-quantity	point-of-view	single	sumo	
+vast-quantity	practice	single	sumo	
+vast-quantity	property	single	sumo	
+vast-quantity	society	single	sumo	
+vast-quantity	status	single	sumo	
+vast-quantity	tension	single	sumo	
+vast-quantity	way	single	sumo	
 vaulting-horse	artifact	accepted	opencyc sumo wordnet	
 vaulting-horse	device	accepted	opencyc sumo	
 vaulting-horse	equipment	accepted	claude wordnet	
@@ -43188,9 +43186,9 @@ welcome	communication	single	sumo
 welcome	event	accepted	sumo	
 welcome	greeting	accepted	claude wordnet	
 welcome	information	accepted	sumo wordnet	
+welcome	personal-reaction	single	sumo	
 welcome	phenomenon	single	sumo	
 welcome	procedure	single	sumo	
-welcome	reaction.phenomenon	single	sumo	
 welcome	universe	single	sumo	
 welcome	volition	single	sumo	
 well	artifact	accepted	opencyc wordnet	
@@ -43435,6 +43433,10 @@ wimp	self	single	sumo
 wimp	species	single	sumo	
 wimp	universe	single	sumo	
 wimp	vertebrate	single	sumo	
+win-loss-record	amount	accepted	claude-ruling wordnet	
+win-loss-record	definite-quantity	single	wordnet	
+win-loss-record	numeric-quantity	accepted	claude-ruling wordnet	
+win-loss-record	quantity	single	sumo	
 winch	artifact	accepted	sumo wordnet	
 winch	commodity	single	cpc	
 winch	device	accepted	sumo wordnet	

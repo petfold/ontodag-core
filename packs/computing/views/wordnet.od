@@ -34,7 +34,7 @@ acquired-knowledge cognition
 acquisition possession
 act event
 act-of-play information
-action plot.communication
+action storyline
 action-mechanism mechanism
 active-application application
 activeness trait
@@ -60,6 +60,7 @@ adolescent person
 adoption blessing
 adult person
 advance possession
+advance-notice act
 advancement act
 advantage benefit
 adventure undertaking
@@ -72,7 +73,6 @@ advocate person
 affair relationship
 affiliation state
 affinity attraction
-affinity.relation relation
 affirmation act
 afternoon time-period
 age attribute
@@ -636,6 +636,7 @@ calculation thinking
 calculator machine
 calendar cognition
 calendar-month time-period
+calendar-quarter time-period
 calf young
 caliper instrument
 call visit
@@ -746,7 +747,6 @@ cd-player equipment
 cd-r cd
 cd-rom cd rom
 ceiling artifact
-ceiling.communication argumentation
 celebration activity
 celery vegetable
 celery-root vegetable
@@ -902,6 +902,7 @@ clique group
 clock instrument
 clock-time cognition
 clod collection
+close-connection relation
 closet furniture
 closure cognition
 clothespin fastener
@@ -959,7 +960,6 @@ colon intestine
 colony region
 color appearance
 column support-device
-column.group group
 coma condition
 comb device
 combination collection
@@ -1043,7 +1043,6 @@ concentration attribute
 concept idea
 conception process
 concern emotion
-concern.cognition condition
 concert performance
 concertina musical-instrument
 concession act
@@ -1279,6 +1278,7 @@ cutter tool
 cutting stalk
 cutting-board artifact
 cycle repeat
+cycle-period amount
 cyclic-redundancy-check error-correcting-code
 cylinder shape
 cymbal musical-instrument
@@ -1317,6 +1317,7 @@ daylight natural-event
 daze condition
 dead-body natural-object
 deadline amount
+deadline-extension pause
 deal act
 dearth lack
 death change
@@ -1353,7 +1354,6 @@ delegate representative
 deliberation thinking
 delivery transport
 demand request
-demand.process process
 demo information
 democracy group
 demodulation reception
@@ -1466,7 +1466,7 @@ disk-partition definite-quantity
 disk-seek event
 diskette magnetic-disk
 dismay fear
-dismissal notice.communication
+dismissal advance-notice
 disorderliness condition
 dispenser container
 display entertainment
@@ -1583,7 +1583,7 @@ dwelling housing
 dyadic-operation data-operation
 dye material
 eagle bird
-eagle.communication cognition
+eagle-emblem cognition
 ear organ
 earplug stopper
 earring jewelry
@@ -1595,7 +1595,7 @@ easel tripod
 easiness feeling
 east '*'
 echo attribute
-economic-consumption demand.process
+economic-consumption market-demand
 economic-system system
 economic-value amount
 economics social-science
@@ -1743,7 +1743,6 @@ exposure weakness
 expressway highway
 extension phone
 extension-cord device
-extension.time pause
 extent state
 extract chemical-solution
 extraterrestrial-being cognition
@@ -1832,7 +1831,6 @@ file-server digital-computer
 file-transfer-protocol communications-protocol
 filename name
 film product show
-film.artifact physical-object
 filter device
 filter-paper paper
 final-examination exam
@@ -1954,7 +1952,6 @@ fortune wealth
 forum meeting
 fossil physical-object
 foundation institution
-foundation.relation relation
 fountain fixture
 fox mammal
 fraction numeric-quantity
@@ -2108,6 +2105,7 @@ golf-glove equipment glove
 golf-tee equipment fastener
 gong musical-instrument
 good attribute
+good-fortune phenomenon
 good-name honour
 good-repute honour
 good-will disposition
@@ -2127,7 +2125,7 @@ grade spatial-relation
 graduated-cylinder instrument
 grain foodstuff
 grain-meal foodstuff
-grain.object material
+grain-particle material
 grammar linguistics
 grandfather ancestor
 grandfather-clock clock
@@ -2179,6 +2177,7 @@ ground view
 ground-cloth fabric piece
 ground-stake support-device
 groundnut-oil vegetable-oil
+grounds relation
 group '*'
 groupware software
 grout plaster
@@ -2322,7 +2321,6 @@ hired-hand laborer
 historian scholar
 historic-period era
 history humanities
-history.time past
 hobby plaything
 hockey-stick equipment
 hoe tool
@@ -2415,6 +2413,7 @@ illness condition
 illusion idea
 illustration artifact
 image artifact
+image-projection information
 imagination cognition
 immigrant person
 immigration migration
@@ -2450,7 +2449,7 @@ industry commercial-enterprise
 infection incident
 inflation process
 influence attribute
-influence.phenomenon consequence
+influence-effect consequence
 influential-contact acquaintance
 influenza disease
 informant person
@@ -2700,6 +2699,7 @@ legal-document document
 legal-power attribute
 legal-procedure act
 legal-profession group
+legal-restraint restriction
 legal-ward person
 legend fiction
 legend-key list
@@ -2746,7 +2746,6 @@ lime citrus-fruit
 lime-juice juice
 limestone stone
 limit place
-limit.quantity indefinite-quantity
 limitation disadvantage
 line cognition
 line-feed printing-operation
@@ -2801,7 +2800,6 @@ logarithm information
 logic philosophy
 logic-bomb malware
 logic-diagram multidimensional-language
-logic.cognition principle
 logical-operation data-operation
 longbow bow
 loofah fiber
@@ -2833,7 +2831,6 @@ lozenge dose
 lp phonograph-recording
 lubricant substance
 luck phenomenon
-luck.phenomenon phenomenon
 luggage case
 luggage-compartment room
 luggage-rack carrier
@@ -2919,6 +2916,7 @@ marionette model
 mark appraisal
 marker artifact
 marker-post signal
+market-demand process
 marketing commerce
 marmalade preserves
 marriage ritual
@@ -2941,13 +2939,15 @@ match contest
 matchstick lighter
 material part substance
 mathematical-product quantity
+mathematical-rule procedure
 mathematics science
 matrimony status
 matrix group
+matter-of-concern condition
 mattock pickax
 mattress artifact
 mattress-pad artifact
-maximum limit.quantity
+maximum quantity-limit
 mayonnaise salad-dressing
 mayor authorities leader
 maze system-instrumentality
@@ -3031,7 +3031,7 @@ miner laborer
 mineral material
 mineral-water drink
 minicomputer digital-computer
-minimum limit.quantity
+minimum quantity-limit
 minister administrator
 ministry administrative-division
 minority number
@@ -3053,7 +3053,6 @@ molasses syrup
 mold fungus
 molding decoration
 mole mammal
-mole.attribute appearance
 molecule '*'
 mollusc invertebrate
 momentum attribute
@@ -3079,6 +3078,7 @@ mosque building
 mosquito insect
 mosquito-net screen-netting
 mother parent
+mother-nature agent
 motif decorative-design
 motion act
 motivation '*'
@@ -3150,9 +3150,8 @@ natural-object physical-object
 natural-rubber material
 natural-science science
 natural-spring physical-object
+natural-world universe
 nature attribute
-nature.object universe
-nature.person agent
 nausea symptom
 navy military-service
 nebulizer dispenser
@@ -3205,7 +3204,6 @@ notebook book-copy
 notebook-computer portable-computer
 notepad paper
 notice information
-notice.communication act
 notion concept
 noun word
 novel fiction
@@ -3248,7 +3246,6 @@ occasion amount
 occlusion structure
 occupation activity
 ocean body-of-water
-ocean.quantity indefinite-quantity
 octopus mollusc
 odometer instrument
 oeuvre end-product
@@ -3413,6 +3410,7 @@ passion-fruit fruit
 passport legal-document
 password identification
 past time
+past-events past
 pasta substance
 pasta-sauce sauce
 pastel attribute
@@ -3476,7 +3474,7 @@ performer person
 performing entertainment
 perfume artifact
 period symbol
-period.time amount
+period-of-rule time-period
 periodical publication
 peripheral equipment
 permission information
@@ -3486,6 +3484,7 @@ personal-care tending
 personal-computer digital-computer
 personal-identification-number identification
 personal-knowledge cognition
+personal-reaction consequence
 personality attribute
 perspective attitude
 perspiration secretion
@@ -3587,7 +3586,6 @@ plaything artifact
 pleasure feeling
 pliers bar hand-tool
 plot region
-plot.communication fiction
 plow tool
 plug device
 plum fruit stone-fruit
@@ -3734,7 +3732,6 @@ processor-register storage-device
 produce substance
 producer person
 product artifact
-product.phenomenon consequence
 production act
 production-line system-instrumentality
 profession occupation
@@ -3756,7 +3753,6 @@ programming-language language
 prohibition decree
 projectile weapon
 projection thinking
-projection.communication information
 projector optical-instrument
 prolog programming-language
 promise act information
@@ -3826,9 +3822,9 @@ puzzle game-equipment
 pyramid shape
 quality degree
 quantity concept
+quantity-limit indefinite-quantity
 quarrel dispute
 quarter district
-quarter.time time-period
 quartz-glass glass-material
 queen leader
 quest activity
@@ -3897,7 +3893,6 @@ rattle plaything
 raw-milk milk
 razor cutter
 reaction natural-event
-reaction.phenomenon consequence
 read-only-file computer-file
 read-only-memory-chip memory-chip
 read-write-head device
@@ -3911,6 +3906,7 @@ realm situation
 reamer drill-tool
 rear artifact
 reason explanation
+reasoning-principles principle
 rebellion act
 recapitulation summary
 receipt information
@@ -3925,13 +3921,12 @@ recompense correction
 record accomplishment
 record-album storage-medium
 record-player machine
-record.quantity numeric-quantity
 recorder musical-instrument
 recording storage-device
 recovery act
 recreational-vehicle container vehicle
 recruitment accomplishment
-recursion rule.cognition
+recursion mathematical-rule
 recursive-routine subroutine
 recycling activity
 red attribute
@@ -4024,7 +4019,6 @@ restaurant building
 restitution act
 restoration repair
 restraint trait
-restraint.cognition restriction
 restriction rule
 result ending
 retailer merchant
@@ -4117,8 +4111,6 @@ rugby football
 rugby-ball ball
 ruin building
 rule concept
-rule.cognition procedure
-rule.time time-period
 ruler measuring-stick
 rum liquor
 rumor gossip
@@ -4404,6 +4396,7 @@ skimmer cookware
 skin natural-object tissue
 skin-care tending
 skin-cream artifact
+skin-mole appearance
 skipjack fish
 skirt garment
 skull bone
@@ -4642,6 +4635,7 @@ storage-tank vessel
 stored-program computer-program
 storey structure
 storm natural-event
+storyline fiction
 stove kitchen-appliance
 straight-pin fastener
 straightener device
@@ -4767,6 +4761,7 @@ system-instrumentality artifact
 system-of-measurement amount
 system-program computer-program
 table furniture
+table-column group
 table-knife knife tableware
 table-linen linen
 table-saw power-tool
@@ -4870,6 +4865,7 @@ thermopile thermometer
 thermostat regulator
 thigh limb
 thimble container
+thin-film physical-object
 thinker person
 thinking cognition
 thinner agent substance
@@ -5093,6 +5089,8 @@ unstratified-language programming-language
 unsuccessful-person person
 upgrade grade
 upholstery trade
+upper-limit argumentation
+upshot consequence
 urge desire
 urgency condition
 urinal fixture
@@ -5119,6 +5117,7 @@ variant group
 variation change
 varnish coating
 vase jar
+vast-quantity indefinite-quantity
 vaulting-horse equipment
 vcr equipment
 vector variable
@@ -5289,6 +5288,7 @@ wilderness-trail road
 wildlife physical-object
 will legal-document
 wimp person
+win-loss-record numeric-quantity
 winch device
 wind weather
 wind-chime decoration

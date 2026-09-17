@@ -145,10 +145,10 @@ algorithm	activity	single	wordnet
 algorithm	event	single	wordnet	
 algorithm	information	single	opencyc	
 algorithm	logical-relation	single	sumo	
+algorithm	mathematical-rule	single	wordnet	
 algorithm	measure	single	sumo	
 algorithm	procedure	accepted	claude-ruling wordnet	
 algorithm	routine	single	sumo	
-algorithm	rule.cognition	single	wordnet	
 algorithm	signified	single	sumo	
 alliance	logical-relation	single	sumo	
 aloofness	logical-relation	single	sumo	
@@ -504,6 +504,7 @@ calculus-of-variations	science	single	wordnet
 calculus-of-variations	signified	single	sumo	
 calendar	logical-relation	single	sumo	
 calendar-month	logical-relation	single	sumo	
+calendar-quarter	logical-relation	single	sumo	
 campaigner	logical-relation	single	sumo	
 capacity	logical-relation	single	sumo	
 capacity	mathematical-structure	dissented	wikidata	
@@ -532,7 +533,6 @@ catalan-number	natural-number	accepted	claude-ruling
 catch	logical-relation	single	sumo	
 category	logical-relation	single	sumo	
 caution	logical-relation	single	sumo	
-ceiling.communication	logical-relation	single	sumo	
 challenging-situation	logical-relation	single	sumo	
 championship	logical-relation	single	sumo	
 chaos	logical-relation	single	sumo	
@@ -625,7 +625,6 @@ cold	logical-relation	single	sumo
 coldness	logical-relation	single	sumo	
 colleague	logical-relation	single	sumo	
 color	logical-relation	single	sumo	
-column.group	logical-relation	single	sumo	
 combinatorial-combination	act	single	wordnet	
 combinatorial-combination	activity	single	wordnet	
 combinatorial-combination	event	accepted	sumo wordnet	
@@ -699,7 +698,6 @@ concept	logical-relation	single	sumo
 concept-extent	mathematical-set	accepted	claude-ruling	
 concept-intent	mathematical-set	accepted	claude-ruling	
 concept-lattice	complete-lattice	accepted	claude-ruling	
-concern.cognition	logical-relation	single	sumo	
 conclusion	logical-consequence	dissented	wikidata	
 condition	logical-relation	single	sumo	
 conditional-probability	amount	single	wordnet	
@@ -926,6 +924,7 @@ curvilinear-regression	statistical-method	single	wordnet
 curvilinear-regression	statistical-regression	accepted	claude wordnet	
 curvilinear-regression	vector	single	sumo	
 custom	logical-relation	single	sumo	
+cycle-period	logical-relation	single	sumo	
 cyclic-graph	graph	single	wikidata	
 cyclic-graph	hypergraph	single	wikidata	
 cyclic-graph	mathematical-graph	single	wikidata	
@@ -1533,7 +1532,6 @@ formal-grammar	information	single	opencyc
 formal-system	concept	accepted	claude-ruling	
 forte	logical-relation	single	sumo	
 fortune	logical-relation	single	sumo	
-foundation.relation	logical-relation	single	sumo	
 fourier-series	function	single	wordnet	
 fourier-series	mathematical-relation	single	wordnet	
 fourier-series	mathematical-series	accepted	claude wordnet	
@@ -1762,6 +1760,7 @@ graveness	range-of-a-function	single	sumo
 greatest-common-divisor	natural-number	accepted	claude-ruling	
 greatest-element	concept	accepted	claude-ruling	
 grip	logical-relation	single	sumo	
+grounds	logical-relation	single	sumo	
 group-theory	cognition	single	wordnet	
 group-theory	field-of-study	accepted	sumo wordnet	
 group-theory	logical-relation	single	sumo	
@@ -2256,7 +2255,6 @@ limit	algebraic-structure	single	wikidata
 limit	binary-relation	dissented	wikidata	
 limit	mathematical-set	single	wikidata	
 limit	mathematical-structure	single	wikidata	
-limit.quantity	logical-relation	single	sumo	
 limitation	logical-relation	single	sumo	
 line-of-descent	logical-relation	single	sumo	
 linear-algebra	algebra	accepted	claude wordnet	
@@ -2312,7 +2310,6 @@ locus	mathematical-set	accepted	sumo wikidata wordnet
 locus	mathematical-structure	single	wikidata	
 locus	subset	single	sumo	
 logic	logical-relation	single	sumo	
-logic.cognition	logical-relation	single	sumo	
 logical-completeness	algebraic-structure	single	wikidata	
 logical-completeness	attribute	accepted	sumo wordnet	
 logical-completeness	binary-relation	single	wikidata	
@@ -2544,6 +2541,7 @@ mathematical-relation	logical-relation	single	sumo
 mathematical-relation	relation	single	wordnet	
 mathematical-ring	algebraic-structure	accepted	claude wikidata	
 mathematical-ring	mathematical-structure	single	wikidata	
+mathematical-rule	logical-relation	single	sumo	
 mathematical-series	function	accepted	claude-ruling wordnet	
 mathematical-series	mathematical-relation	single	wordnet	
 mathematical-series	polynomial	dissented	wordnet	
@@ -2660,6 +2658,7 @@ matrix-transposition	universe	single	sumo
 matrix-transposition	volition	single	sumo	
 matroid	hypergraph	dissented	wikidata	
 matroid	mathematical-structure	accepted	claude-ruling wikidata	
+matter-of-concern	logical-relation	single	sumo	
 maximal-element	concept	accepted	claude-ruling	
 maximization	accomplishment	single	sumo	
 maximization	act	accepted	sumo wordnet	
@@ -2981,7 +2980,6 @@ obtuse-triangle	shape	single	wordnet
 obtuse-triangle	triangle	accepted	claude wordnet	
 occasion	logical-relation	single	sumo	
 occupation	logical-relation	single	sumo	
-ocean.quantity	logical-relation	single	sumo	
 octagon	algebraic-structure	single	wikidata	
 octagon	attribute	accepted	sumo wordnet	
 octagon	geometric-shape	single	wikidata	
@@ -3245,7 +3243,7 @@ percentile	physical-object	single	sumo
 percentile	statistic	accepted	claude-ruling	
 percentile	universe	single	sumo	
 perceptiveness	logical-relation	single	sumo	
-period.time	logical-relation	single	sumo	
+period-of-rule	logical-relation	single	sumo	
 permutation	act	single	wordnet	
 permutation	activity	single	wordnet	
 permutation	algebraic-structure	single	wikidata	
@@ -3297,7 +3295,6 @@ plane-section	phenomenon	single	sumo
 plane-section	place	single	sumo	
 plane-section	shape	accepted	claude-ruling	
 plane-section	universe	single	sumo	
-plot.communication	logical-relation	single	sumo	
 plumbing-work	logical-relation	single	sumo	
 point	logical-relation	single	sumo	
 point-of-view	logical-relation	single	sumo	
@@ -3520,7 +3517,7 @@ quantifier	relation	accepted	wikidata wordnet
 quantifier	universe	single	sumo	
 quantifier	word	accepted	sumo wordnet	
 quantity	logical-relation	single	sumo	
-quarter.time	logical-relation	single	sumo	
+quantity-limit	logical-relation	single	sumo	
 quartile	appraisal	single	wordnet	
 quartile	cognition	single	wordnet	
 quartile	indication	single	sumo	
@@ -3615,12 +3612,12 @@ real-number	totally-ordered-set	single	wikidata
 realism	logical-relation	single	sumo	
 realm	logical-relation	single	sumo	
 reason	logical-relation	single	sumo	
+reasoning-principles	logical-relation	single	sumo	
 reception	logical-relation	single	sumo	
 recess	logical-relation	single	sumo	
 recommendation	algebraic-structure	single	wikidata	
 recommendation	mathematical-set	single	wikidata	
 recommendation	mathematical-structure	single	wikidata	
-record.quantity	logical-relation	single	sumo	
 rectangle	algebraic-structure	single	wikidata	
 rectangle	attribute	single	wordnet	
 rectangle	geometric-shape	single	wikidata	
@@ -3640,10 +3637,10 @@ recursion	act	single	wordnet
 recursion	activity	single	wordnet	
 recursion	event	single	wordnet	
 recursion	logical-relation	single	sumo	
+recursion	mathematical-rule	single	wordnet	
 recursion	measure	single	sumo	
 recursion	procedure	accepted	claude-ruling wordnet	
 recursion	routine	single	sumo	
-recursion	rule.cognition	single	wordnet	
 recursion	signified	single	sumo	
 recursive-definition	accomplishment	single	sumo	
 recursive-definition	act	single	sumo	
@@ -3863,8 +3860,6 @@ royalty-payment	logical-relation	single	sumo
 rsa-cryptosystem	public-key-cryptography	accepted	claude-ruling	
 rubbish	logical-relation	single	sumo	
 rule	logical-relation	single	sumo	
-rule.cognition	logical-relation	single	sumo	
-rule.time	logical-relation	single	sumo	
 safety	logical-relation	single	sumo	
 salesclerk	logical-relation	single	sumo	
 salvation	logical-relation	single	sumo	
@@ -3958,8 +3953,8 @@ serial	algebraic-structure	single	wikidata
 serial	mathematical-set	single	wikidata	
 serial	mathematical-structure	single	wikidata	
 series-convergence	attribute	accepted	claude-ruling	
+series-convergence	deadline-extension	single	sumo	
 series-convergence	event	single	sumo	
-series-convergence	extension.time	single	sumo	
 series-convergence	function	single	wordnet	
 series-convergence	increase	single	sumo	
 series-convergence	mathematical-relation	single	wordnet	
@@ -4035,9 +4030,9 @@ simplicity	logical-relation	single	sumo
 simultaneous-equations	equation	accepted	claude wordnet	
 simultaneous-equations	formula	accepted	claude wikidata	
 simultaneous-equations	information	accepted	sumo wordnet	
+simultaneous-equations	mathematical-rule	single	wikidata	
 simultaneous-equations	mathematical-statement	single	wordnet	
 simultaneous-equations	phenomenon	single	sumo	
-simultaneous-equations	rule.cognition	single	wikidata	
 simultaneous-equations	universe	single	sumo	
 sin	logical-relation	single	sumo	
 sine	function	single	wordnet	
@@ -4248,6 +4243,7 @@ statistician	physical-object	single	wordnet
 statistics	logical-relation	single	sumo	
 status	logical-relation	single	sumo	
 steward	logical-relation	single	sumo	
+storyline	logical-relation	single	sumo	
 stratified-sample	cognition	single	wordnet	
 stratified-sample	collection	single	sumo	
 stratified-sample	phenomenon	single	sumo	
@@ -4358,6 +4354,7 @@ symmetric-relation	relation	single	wikidata
 symmetry	attribute	accepted	claude wordnet	
 sympathy	logical-relation	single	sumo	
 system-of-measurement	logical-relation	single	sumo	
+table-column	logical-relation	single	sumo	
 tactic	logical-relation	single	sumo	
 tailoring	logical-relation	single	sumo	
 tangent	function	single	wordnet	
@@ -4645,6 +4642,7 @@ upper-bound	reflexive-relation	single	wikidata
 upper-bound	relation	single	wikidata	
 upper-bound	shape	dissented	wordnet	
 upper-bound	transitive-relation	single	wikidata	
+upper-limit	logical-relation	single	sumo	
 upper-set	algebraic-structure	single	wikidata	
 upper-set	mathematical-set	single	wikidata	
 upper-set	mathematical-structure	single	wikidata	
@@ -4659,6 +4657,7 @@ variance	logical-relation	single	sumo
 variance	number	single	claude	
 variance	statistic	single	wordnet	
 variance	statistical-moment	accepted	claude wordnet	
+vast-quantity	logical-relation	single	sumo	
 vector	logical-relation	single	sumo	
 vector-algebra	algebra	accepted	claude wordnet	
 vector-algebra	cognition	single	wordnet	
@@ -4733,6 +4732,7 @@ well-order	transitive-relation	single	wikidata
 well-order	weak-order	single	wikidata	
 wellbeing	logical-relation	single	sumo	
 wife	logical-relation	single	sumo	
+win-loss-record	logical-relation	single	sumo	
 winner	logical-relation	single	sumo	
 winter	logical-relation	single	sumo	
 wisecrack	logical-relation	single	sumo	

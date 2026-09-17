@@ -102,7 +102,7 @@ act	event
 act-of-play	information
 action	fiction
 action	information
-action	plot.communication
+action	storyline
 action-mechanism	artifact
 action-mechanism	device
 action-mechanism	mechanism
@@ -174,6 +174,8 @@ adult	person
 adult	physical-object
 advance	possession
 advance	relation
+advance-notice	act
+advance-notice	event
 advancement	act
 advancement	event
 advantage	attribute
@@ -213,7 +215,6 @@ affiliation	attribute
 affiliation	state
 affinity	attraction
 affinity	attribute
-affinity.relation	relation
 affirmation	act
 affirmation	event
 afternoon	amount
@@ -2088,6 +2089,8 @@ calculator	physical-object
 calendar	cognition
 calendar-month	amount
 calendar-month	time-period
+calendar-quarter	amount
+calendar-quarter	time-period
 calf	animal
 calf	organism
 calf	physical-object
@@ -2501,9 +2504,6 @@ cd-player	equipment
 cd-player	physical-object
 ceiling	artifact
 ceiling	physical-object
-ceiling.communication	argumentation
-ceiling.communication	cognition
-ceiling.communication	thinking
 celebration	act
 celebration	activity
 celebration	event
@@ -3038,6 +3038,7 @@ clock	physical-object
 clock-time	cognition
 clod	collection
 clod	group
+close-connection	relation
 closet	artifact
 closet	furniture
 closet	physical-object
@@ -3233,7 +3234,6 @@ column	artifact
 column	device
 column	physical-object
 column	support-device
-column.group	group
 coma	attribute
 coma	condition
 coma	state
@@ -3398,9 +3398,6 @@ concern	attribute
 concern	emotion
 concern	feeling
 concern	state
-concern.cognition	attribute
-concern.cognition	condition
-concern.cognition	state
 concert	event
 concert	performance
 concert	show
@@ -4147,6 +4144,7 @@ cutting-board	artifact
 cutting-board	physical-object
 cycle	event
 cycle	repeat
+cycle-period	amount
 cylinder	attribute
 cylinder	shape
 cymbal	artifact
@@ -4229,6 +4227,8 @@ daze	state
 dead-body	natural-object
 dead-body	physical-object
 deadline	amount
+deadline-extension	amount
+deadline-extension	pause
 deal	act
 deal	event
 dearth	attribute
@@ -4321,7 +4321,6 @@ delivery	event
 delivery	transport
 demand	information
 demand	request
-demand.process	process
 demo	information
 democracy	group
 demonstration	act
@@ -4612,8 +4611,8 @@ dismay	fear
 dismay	feeling
 dismay	state
 dismissal	act
+dismissal	advance-notice
 dismissal	event
-dismissal	notice.communication
 disorderliness	attribute
 disorderliness	condition
 disorderliness	state
@@ -4988,7 +4987,7 @@ eagle	bird
 eagle	organism
 eagle	physical-object
 eagle	vertebrate
-eagle.communication	cognition
+eagle-emblem	cognition
 ear	body-part
 ear	organ
 ear	physical-part
@@ -5020,7 +5019,7 @@ easiness	attribute
 easiness	feeling
 easiness	state
 echo	attribute
-economic-consumption	demand.process
+economic-consumption	market-demand
 economic-consumption	process
 economic-system	group
 economic-system	system
@@ -5451,8 +5450,6 @@ extension	physical-object
 extension-cord	artifact
 extension-cord	device
 extension-cord	physical-object
-extension.time	amount
-extension.time	pause
 extent	attribute
 extent	state
 extract	chemical-solution
@@ -5740,7 +5737,6 @@ film	event
 film	physical-object
 film	product
 film	show
-film.artifact	physical-object
 filter	artifact
 filter	device
 filter	physical-object
@@ -6097,7 +6093,6 @@ fossil	physical-object
 foundation	group
 foundation	institution
 foundation	organization
-foundation.relation	relation
 fountain	artifact
 fountain	fixture
 fountain	physical-object
@@ -6660,6 +6655,8 @@ gong	device
 gong	musical-instrument
 gong	physical-object
 good	attribute
+good-fortune	phenomenon
+good-fortune	process
 good-name	attribute
 good-name	honour
 good-name	state
@@ -6735,10 +6732,10 @@ grain	substance
 grain-meal	food
 grain-meal	foodstuff
 grain-meal	substance
-grain.object	material
-grain.object	part
-grain.object	relation
-grain.object	substance
+grain-particle	material
+grain-particle	part
+grain-particle	relation
+grain-particle	substance
 grammar	cognition
 grammar	field-of-study
 grammar	linguistics
@@ -6939,6 +6936,7 @@ groundnut-oil	part
 groundnut-oil	relation
 groundnut-oil	substance
 groundnut-oil	vegetable-oil
+grounds	relation
 grout	artifact
 grout	building-material
 grout	part
@@ -7426,9 +7424,6 @@ historic-period	time-period
 history	cognition
 history	field-of-study
 history	humanities
-history.time	attribute
-history.time	past
-history.time	time
 hobby	artifact
 hobby	physical-object
 hobby	plaything
@@ -7732,6 +7727,7 @@ illustration	artifact
 illustration	physical-object
 image	artifact
 image	physical-object
+image-projection	information
 imagination	cognition
 immigrant	agent
 immigrant	organism
@@ -7816,9 +7812,9 @@ infection	event
 infection	incident
 inflation	process
 influence	attribute
-influence.phenomenon	consequence
-influence.phenomenon	phenomenon
-influence.phenomenon	process
+influence-effect	consequence
+influence-effect	phenomenon
+influence-effect	process
 influential-contact	acquaintance
 influential-contact	agent
 influential-contact	organism
@@ -8621,6 +8617,11 @@ legal-power	attribute
 legal-procedure	act
 legal-procedure	event
 legal-profession	group
+legal-restraint	cognition
+legal-restraint	concept
+legal-restraint	idea
+legal-restraint	restriction
+legal-restraint	rule
 legal-ward	agent
 legal-ward	organism
 legal-ward	person
@@ -8755,8 +8756,6 @@ limestone	stone
 limestone	substance
 limit	physical-object
 limit	place
-limit.quantity	amount
-limit.quantity	indefinite-quantity
 limitation	attribute
 limitation	disadvantage
 line	cognition
@@ -8916,11 +8915,6 @@ logic	cognition
 logic	field-of-study
 logic	humanities
 logic	philosophy
-logic.cognition	cognition
-logic.cognition	concept
-logic.cognition	idea
-logic.cognition	natural-law
-logic.cognition	principle
 longbow	artifact
 longbow	bow
 longbow	device
@@ -9021,8 +9015,6 @@ lp	storage-device
 lubricant	substance
 luck	phenomenon
 luck	process
-luck.phenomenon	phenomenon
-luck.phenomenon	process
 luggage	artifact
 luggage	case
 luggage	container
@@ -9315,6 +9307,7 @@ marker	artifact
 marker	physical-object
 marker-post	information
 marker-post	signal
+market-demand	process
 marketing	act
 marketing	commerce
 marketing	event
@@ -9381,6 +9374,10 @@ mathematical-product	cognition
 mathematical-product	concept
 mathematical-product	idea
 mathematical-product	quantity
+mathematical-rule	act
+mathematical-rule	activity
+mathematical-rule	event
+mathematical-rule	procedure
 mathematics	cognition
 mathematics	field-of-study
 mathematics	science
@@ -9388,6 +9385,9 @@ matrimony	attribute
 matrimony	state
 matrimony	status
 matrix	group
+matter-of-concern	attribute
+matter-of-concern	condition
+matter-of-concern	state
 mattock	artifact
 mattock	cutter
 mattock	physical-object
@@ -9399,7 +9399,7 @@ mattress-pad	artifact
 mattress-pad	physical-object
 maximum	amount
 maximum	indefinite-quantity
-maximum	limit.quantity
+maximum	quantity-limit
 mayonnaise	fixings
 mayonnaise	food
 mayonnaise	foodstuff
@@ -9665,7 +9665,7 @@ mineral-water	relation
 mineral-water	substance
 minimum	amount
 minimum	indefinite-quantity
-minimum	limit.quantity
+minimum	quantity-limit
 minister	administrator
 minister	agent
 minister	chief
@@ -9739,8 +9739,6 @@ mole	mammal
 mole	organism
 mole	physical-object
 mole	vertebrate
-mole.attribute	appearance
-mole.attribute	attribute
 mollusc	animal
 mollusc	invertebrate
 mollusc	organism
@@ -9814,6 +9812,7 @@ mother	parent
 mother	person
 mother	physical-object
 mother	relative
+mother-nature	agent
 motif	artifact
 motif	decoration
 motif	decorative-design
@@ -10020,11 +10019,10 @@ natural-science	cognition
 natural-science	field-of-study
 natural-science	science
 natural-spring	physical-object
+natural-world	natural-object
+natural-world	physical-object
+natural-world	universe
 nature	attribute
-nature.object	natural-object
-nature.object	physical-object
-nature.object	universe
-nature.person	agent
 nausea	cognition
 nausea	evidence
 nausea	symptom
@@ -10157,8 +10155,6 @@ notepad	part
 notepad	relation
 notepad	substance
 notice	information
-notice.communication	act
-notice.communication	event
 notion	cognition
 notion	concept
 notion	idea
@@ -10269,8 +10265,6 @@ occupation	act
 occupation	activity
 occupation	event
 ocean	body-of-water
-ocean.quantity	amount
-ocean.quantity	indefinite-quantity
 octopus	animal
 octopus	invertebrate
 octopus	mollusc
@@ -10814,6 +10808,9 @@ password	indication
 password	information
 past	attribute
 past	time
+past-events	attribute
+past-events	past
+past-events	time
 pasta	substance
 pasta-sauce	fixings
 pasta-sauce	food
@@ -11038,7 +11035,8 @@ perfume	physical-object
 period	information
 period	signal
 period	symbol
-period.time	amount
+period-of-rule	amount
+period-of-rule	time-period
 periodical	artifact
 periodical	physical-object
 periodical	product
@@ -11063,6 +11061,9 @@ personal-identification-number	identification
 personal-identification-number	indication
 personal-identification-number	information
 personal-knowledge	cognition
+personal-reaction	consequence
+personal-reaction	phenomenon
+personal-reaction	process
 personality	attribute
 perspective	attitude
 perspective	cognition
@@ -11422,8 +11423,6 @@ pliers	tool
 plot	physical-object
 plot	place
 plot	region
-plot.communication	fiction
-plot.communication	information
 plow	artifact
 plow	physical-object
 plow	tool
@@ -11901,9 +11900,6 @@ producer	person
 producer	physical-object
 product	artifact
 product	physical-object
-product.phenomenon	consequence
-product.phenomenon	phenomenon
-product.phenomenon	process
 production	act
 production	event
 production-line	artifact
@@ -11953,7 +11949,6 @@ projectile	physical-object
 projectile	weapon
 projection	cognition
 projection	thinking
-projection.communication	information
 projector	artifact
 projector	device
 projector	instrument
@@ -12185,6 +12180,8 @@ quality	degree
 quantity	cognition
 quantity	concept
 quantity	idea
+quantity-limit	amount
+quantity-limit	indefinite-quantity
 quarrel	act
 quarrel	dispute
 quarrel	event
@@ -12192,8 +12189,6 @@ quarter	district
 quarter	physical-object
 quarter	place
 quarter	region
-quarter.time	amount
-quarter.time	time-period
 quartz-glass	glass-material
 quartz-glass	substance
 queen	agent
@@ -12425,9 +12420,6 @@ razor	tool
 reaction	natural-event
 reaction	phenomenon
 reaction	process
-reaction.phenomenon	consequence
-reaction.phenomenon	phenomenon
-reaction.phenomenon	process
 readiness	attribute
 readiness	state
 realism	attribute
@@ -12444,6 +12436,11 @@ rear	artifact
 rear	physical-object
 reason	explanation
 reason	information
+reasoning-principles	cognition
+reasoning-principles	concept
+reasoning-principles	idea
+reasoning-principles	natural-law
+reasoning-principles	principle
 rebellion	act
 rebellion	event
 recapitulation	information
@@ -12481,9 +12478,6 @@ record-player	artifact
 record-player	device
 record-player	machine
 record-player	physical-object
-record.quantity	amount
-record.quantity	definite-quantity
-record.quantity	numeric-quantity
 recorder	artifact
 recorder	device
 recorder	musical-instrument
@@ -12757,11 +12751,6 @@ restoration	event
 restoration	repair
 restraint	attribute
 restraint	trait
-restraint.cognition	cognition
-restraint.cognition	concept
-restraint.cognition	idea
-restraint.cognition	restriction
-restraint.cognition	rule
 restriction	cognition
 restriction	concept
 restriction	idea
@@ -13059,12 +13048,6 @@ ruin	structure
 rule	cognition
 rule	concept
 rule	idea
-rule.cognition	act
-rule.cognition	activity
-rule.cognition	event
-rule.cognition	procedure
-rule.time	amount
-rule.time	time-period
 ruler	artifact
 ruler	device
 ruler	instrument
@@ -13990,6 +13973,8 @@ skin-care	tending
 skin-care	work
 skin-cream	artifact
 skin-cream	physical-object
+skin-mole	appearance
+skin-mole	attribute
 skipjack	animal
 skipjack	fish
 skipjack	organism
@@ -14782,6 +14767,8 @@ storey	structure
 storm	natural-event
 storm	phenomenon
 storm	process
+storyline	fiction
+storyline	information
 stove	appliance
 stove	artifact
 stove	commodity
@@ -15160,6 +15147,7 @@ system-of-measurement	amount
 table	artifact
 table	furniture
 table	physical-object
+table-column	group
 table-knife	artifact
 table-knife	cutter
 table-knife	knife
@@ -15531,6 +15519,7 @@ thigh	physical-part
 thimble	artifact
 thimble	container
 thimble	physical-object
+thin-film	physical-object
 thinker	agent
 thinker	organism
 thinker	person
@@ -16222,6 +16211,12 @@ upholstery	activity
 upholstery	event
 upholstery	occupation
 upholstery	trade
+upper-limit	argumentation
+upper-limit	cognition
+upper-limit	thinking
+upshot	consequence
+upshot	phenomenon
+upshot	process
 urge	attribute
 urge	desire
 urge	feeling
@@ -16306,6 +16301,8 @@ vase	container
 vase	jar
 vase	physical-object
 vase	vessel
+vast-quantity	amount
+vast-quantity	indefinite-quantity
 vaulting-horse	artifact
 vaulting-horse	equipment
 vaulting-horse	physical-object
@@ -16909,6 +16906,9 @@ wimp	agent
 wimp	organism
 wimp	person
 wimp	physical-object
+win-loss-record	amount
+win-loss-record	definite-quantity
+win-loss-record	numeric-quantity
 winch	artifact
 winch	device
 winch	physical-object

@@ -39,7 +39,7 @@ act event
 act-of-play information
 acting-out information
 actinomycin antibiotic
-action plot.communication
+action storyline
 action-mechanism mechanism
 activeness trait
 activewear clothing
@@ -71,6 +71,7 @@ adoption blessing
 adrenalectomy ablation
 adult person
 advance possession
+advance-notice act
 advancement act
 advantage benefit
 adventure undertaking
@@ -84,7 +85,6 @@ aeromedicine biomedicine
 affair relationship
 affiliation state
 affinity attraction
-affinity.relation relation
 affirmation act
 afternoon time-period
 age attribute
@@ -724,6 +724,7 @@ calculation thinking
 calculator machine
 calendar cognition
 calendar-month time-period
+calendar-quarter time-period
 calf young
 caliper instrument
 call visit
@@ -854,7 +855,6 @@ ceftazidime cephalosporin
 ceftriaxone cephalosporin
 cefuroxime cephalosporin
 ceiling artifact
-ceiling.communication argumentation
 celebration activity
 celery vegetable
 celery-root vegetable
@@ -1042,6 +1042,7 @@ clock-time cognition
 clod collection
 clofibrate medication
 clopidogrel-bisulfate medication
+close-connection relation
 closed-heart-surgery heart-surgery
 closet furniture
 closure cognition
@@ -1104,7 +1105,6 @@ color appearance
 colostomy ostomy
 colpocele hernia
 column support-device
-column.group group
 coma condition
 comb device
 combination collection
@@ -1168,7 +1168,6 @@ concentration attribute
 concept idea
 conception process
 concern emotion
-concern.cognition condition
 concert performance
 concertina musical-instrument
 concession act
@@ -1424,6 +1423,7 @@ cutting stalk
 cutting-board artifact
 cyanosis symptom
 cycle repeat
+cycle-period amount
 cyclodestructive-surgery eye-operation
 cycloserine antibiotic
 cylinder shape
@@ -1453,6 +1453,7 @@ daylight natural-event
 daze condition
 dead-body natural-object
 deadline amount
+deadline-extension pause
 deal act
 dearth lack
 death change
@@ -1492,7 +1493,6 @@ deliberation thinking
 delirium-tremens psychosis
 delivery transport
 demand request
-demand.process process
 dementia insanity
 demo information
 democracy group
@@ -1617,7 +1617,7 @@ dishwasher household-appliance
 disinfectant agent substance
 disk mechanism
 dismay fear
-dismissal notice.communication
+dismissal advance-notice
 disorderliness condition
 dispenser container
 displaced-fracture fracture
@@ -1744,7 +1744,7 @@ dye material
 dysfunction condition
 dyspnea symptom
 eagle bird
-eagle.communication cognition
+eagle-emblem cognition
 ear organ
 ear-doctor medical-specialist
 earplug stopper
@@ -1760,7 +1760,7 @@ ebola-hemorrhagic-fever hemorrhagic-fever
 ecchymosis bruise
 echo attribute
 echolalia activity
-economic-consumption demand.process
+economic-consumption market-demand
 economic-system system
 economic-value amount
 economics social-science
@@ -1947,7 +1947,6 @@ exposure-therapy desensitization-technique
 expressway highway
 extension phone
 extension-cord device
-extension.time pause
 extent state
 extracapsular-surgery cataract-surgery
 extract chemical-solution
@@ -2050,7 +2049,6 @@ file indication
 file-cabinet office-furniture
 file-folder folding-cover
 film product show
-film.artifact physical-object
 filter device
 filter-paper paper
 filtration-surgery eye-operation
@@ -2169,7 +2167,6 @@ fortune wealth
 forum meeting
 fossil physical-object
 foundation institution
-foundation.relation relation
 foundling-hospital hospital
 fountain fixture
 fowl-cholera animal-disease blood-poisoning
@@ -2340,6 +2337,7 @@ golf-glove equipment glove
 golf-tee equipment fastener
 gong musical-instrument
 good attribute
+good-fortune phenomenon
 good-name honour
 good-repute honour
 good-will disposition
@@ -2360,7 +2358,7 @@ graduate-nurse nurse
 graduated-cylinder instrument
 grain foodstuff
 grain-meal foodstuff
-grain.object material
+grain-particle material
 gramicidin antibiotic antiseptic
 grammar linguistics
 grandfather ancestor
@@ -2415,6 +2413,7 @@ ground view
 ground-cloth fabric piece
 ground-stake support-device
 groundnut-oil vegetable-oil
+grounds relation
 group '*'
 group-therapy psychotherapy-treatment
 grout plaster
@@ -2580,7 +2579,6 @@ histamine-blocker medication
 historian scholar
 historic-period era
 history humanities
-history.time past
 hiv-infection viral-infection
 hobby plaything
 hockey-stick equipment
@@ -2697,6 +2695,7 @@ illness condition
 illusion idea
 illustration artifact
 image artifact
+image-projection information
 imagination cognition
 immigrant person
 immigration migration
@@ -2750,7 +2749,7 @@ inflammatory-disease disease
 inflation process
 inflation-therapy therapy
 influence attribute
-influence.phenomenon consequence
+influence-effect consequence
 influential-contact acquaintance
 influenza communicable-disease respiratory-disease
 informant person
@@ -3040,6 +3039,7 @@ legal-document document
 legal-power attribute
 legal-procedure act
 legal-profession group
+legal-restraint restriction
 legal-ward person
 legend fiction
 legend-key list
@@ -3087,7 +3087,6 @@ lime citrus-fruit
 lime-juice juice
 limestone stone
 limit place
-limit.quantity indefinite-quantity
 limitation disadvantage
 lincomycin antibiotic
 line cognition
@@ -3144,7 +3143,6 @@ log-cabin house
 loganberry berry
 logarithm information
 logic philosophy
-logic.cognition principle
 longbow bow
 loofah fiber
 look appearance
@@ -3175,7 +3173,6 @@ lozenge dose
 lp phonograph-recording
 lubricant substance
 luck phenomenon
-luck.phenomenon phenomenon
 luggage case
 luggage-compartment room
 luggage-rack carrier
@@ -3264,6 +3261,7 @@ marionette model
 mark appraisal
 marker artifact
 marker-post signal
+market-demand process
 marketing commerce
 marmalade preserves
 marriage ritual
@@ -3290,13 +3288,15 @@ matchstick lighter
 material part substance
 maternity-hospital hospital
 mathematical-product quantity
+mathematical-rule procedure
 mathematics science
 matrimony status
 matrix group
+matter-of-concern condition
 mattock pickax
 mattress artifact
 mattress-pad artifact
-maximum limit.quantity
+maximum quantity-limit
 mayonnaise salad-dressing
 mayor authorities leader
 maze system-instrumentality
@@ -3406,7 +3406,7 @@ miner laborer
 mineral material
 mineral-water drink
 minimally-invasive-coronary-bypass-surgery closed-heart-surgery
-minimum limit.quantity
+minimum quantity-limit
 minister administrator
 ministry administrative-division
 minor-surgery operation
@@ -3432,7 +3432,6 @@ molasses syrup
 mold fungus
 molding decoration
 mole mammal
-mole.attribute appearance
 molecule '*'
 mollusc invertebrate
 momentum attribute
@@ -3459,6 +3458,7 @@ mosquito insect
 mosquito-bite sting
 mosquito-net screen-netting
 mother parent
+mother-nature agent
 motif decorative-design
 motion act
 motivation '*'
@@ -3540,9 +3540,8 @@ natural-object physical-object
 natural-rubber material
 natural-science science
 natural-spring physical-object
+natural-world universe
 nature attribute
-nature.object universe
-nature.person agent
 nausea symptom
 navy military-service
 nebulizer dispenser
@@ -3605,7 +3604,6 @@ notebook book-copy
 notebook-computer computer
 notepad paper
 notice information
-notice.communication act
 notion concept
 noun word
 novel fiction
@@ -3654,7 +3652,6 @@ occupation activity
 occupational-disease disease
 occupational-therapy therapy
 ocean body-of-water
-ocean.quantity indefinite-quantity
 ochronosis symptom
 octopus mollusc
 odometer instrument
@@ -3854,6 +3851,7 @@ passion-fruit fruit
 passport legal-document
 password identification
 past time
+past-events past
 pasta substance
 pasta-sauce sauce
 pastel attribute
@@ -3939,7 +3937,7 @@ periarteritis-nodosa disease
 perinatologist obstetrician
 perinatology obstetrics
 period symbol
-period.time amount
+period-of-rule time-period
 periodical publication
 periodontal-disease disease
 periodontics dentistry
@@ -3950,6 +3948,7 @@ person agent organism
 personal-care tending
 personal-identification-number identification
 personal-knowledge cognition
+personal-reaction consequence
 personality attribute
 perspective attitude
 perspiration secretion
@@ -4077,7 +4076,6 @@ pleasure feeling
 pleomorphic-rhabdomyosarcoma rhabdomyosarcoma
 pliers bar hand-tool
 plot region
-plot.communication fiction
 plow tool
 plug device
 plum fruit stone-fruit
@@ -4238,7 +4236,6 @@ prodrome symptom
 produce substance
 producer person
 product artifact
-product.phenomenon consequence
 production act
 production-line system-instrumentality
 profession occupation
@@ -4256,7 +4253,6 @@ progressive-vaccinia vaccinia
 prohibition decree
 projectile weapon
 projection thinking
-projection.communication information
 projector optical-instrument
 promise act information
 promotion act
@@ -4360,9 +4356,9 @@ pyuria symptom
 quack doctor wrongdoer
 quality degree
 quantity concept
+quantity-limit indefinite-quantity
 quarrel dispute
 quarter district
-quarter.time time-period
 quartz-glass glass-material
 queen leader
 quest activity
@@ -4438,7 +4434,6 @@ raw-wound wound
 razor cutter
 reaction natural-event
 reaction-formation defense-mechanism
-reaction.phenomenon consequence
 readiness state
 realism attribute
 reality state
@@ -4446,6 +4441,7 @@ realm situation
 reamer drill-tool
 rear artifact
 reason explanation
+reasoning-principles principle
 rebellion act
 recapitulation summary
 receipt information
@@ -4461,7 +4457,6 @@ recompense correction
 record accomplishment
 record-album storage-medium
 record-player machine
-record.quantity numeric-quantity
 recorder musical-instrument
 recording storage-device
 recovery act
@@ -4562,7 +4557,6 @@ restitution act
 restless-legs-syndrome syndrome
 restoration repair
 restraint trait
-restraint.cognition restriction
 restriction rule
 result ending
 retailer merchant
@@ -4666,8 +4660,6 @@ rugby football
 rugby-ball ball
 ruin building
 rule concept
-rule.cognition procedure
-rule.time time-period
 ruler measuring-stick
 rum liquor
 rumor gossip
@@ -4976,6 +4968,7 @@ skin-care tending
 skin-cream artifact
 skin-disease disease
 skin-eruption symptom
+skin-mole appearance
 skin-wale injury
 skipjack fish
 skirt garment
@@ -5216,6 +5209,7 @@ storage-medium artifact
 storage-tank vessel
 storey structure
 storm natural-event
+storyline fiction
 stove kitchen-appliance
 strabotomy operation
 straight-pin fastener
@@ -5355,6 +5349,7 @@ system group
 system-instrumentality artifact
 system-of-measurement amount
 table furniture
+table-column group
 table-knife knife tableware
 table-linen linen
 table-saw power-tool
@@ -5459,6 +5454,7 @@ thermostat regulator
 thermotherapy therapy
 thigh limb
 thimble container
+thin-film physical-object
 thinker person
 thinking cognition
 thinner agent substance
@@ -5712,7 +5708,9 @@ unrest feeling
 unsuccessful-person person
 upgrade grade
 upholstery trade
+upper-limit argumentation
 upper-respiratory-infection respiratory-tract-infection
+upshot consequence
 uranoplasty operation
 uratemia condition symptom
 uraturia symptom
@@ -5747,6 +5745,7 @@ varnish coating
 vase jar
 vasectomy ablation surgical-contraception
 vasovasostomy operation
+vast-quantity indefinite-quantity
 vaulting-horse equipment
 vcr equipment
 vector variable
@@ -5930,6 +5929,7 @@ will legal-document
 williams-syndrome syndrome
 'wilms'"'"'-tumor' sarcoma
 wimp person
+win-loss-record numeric-quantity
 winch device
 wind weather
 wind-chime decoration
