@@ -61,7 +61,7 @@ utf-8	character-encoding	accept	computing skeleton [2026-09-03]
 character-encoding	code	accept	computing skeleton [2026-09-03]		
 unicode-block	character-set	accept	computing skeleton [2026-09-03]		
 emoji	symbol	accept	computing skeleton [2026-09-03]		
-computer-font	data-file	accept	computing skeleton [2026-09-03]		
+computer-font	file	accept	computing skeleton [2026-09-03] — v10 (§14): rebound after the rename; the offsets are backfilled so a future rename cannot move it again		06508816
 truetype	font-file-format	accept	computing skeleton [2026-09-03]		
 opentype	font-file-format	accept	computing skeleton [2026-09-03]		
 png	image-file-format	accept	computing skeleton [2026-09-03]		
@@ -148,7 +148,7 @@ rpm-package-manager	package-format	accept	computing skeleton [2026-09-03]
 hidden-file	computer-file	accept	computing skeleton [2026-09-03]		
 filename-extension	identifier	accept	computing skeleton [2026-09-03]		
 file-attribute	metadata	accept	computing skeleton [2026-09-03]		
-hard-link	file-directory	accept	computing skeleton [2026-09-03]		
+hard-link	computer-file	accept	computing skeleton [2026-09-03] — v10 (§14): was `⊑ file-directory`, which the rename to `directory` turned into a plain falsehood; a hard link is a second name for a file, as a symbolic link is		06509210
 inode	data-structure	accept	computing skeleton [2026-09-03]		
 symbolic-link	computer-file	accept	computing skeleton [2026-09-03]		
 file-path	character-string	accept	computing skeleton [2026-09-03]		
@@ -163,8 +163,8 @@ configuration-file	computer-file	accept	computing skeleton [2026-09-03]
 manifest-file	computer-file	accept	computing skeleton [2026-09-03]		
 disk-block	data-block	accept	computing skeleton [2026-09-03]		
 bad-block	disk-block	accept	computing skeleton [2026-09-03]		
-subdirectory	file-directory	accept	computing skeleton [2026-09-03]		
-file-directory	computer-file	accept	computing skeleton [2026-09-03]		
+subdirectory	directory	accept	computing skeleton [2026-09-03] — v10 (§14): rebound after the rename; the offsets are backfilled so a future rename cannot move it again	06490743	06490451
+# directory	computer-file	accept	v10 (§14): CANNOT be stated from a pack — `directory` is core's since v10, and consensus.py only writes parents for names the pack owns (`own = placed - base`), so a pack may never add a parent to a core concept. The fact is carried in core instead, as `directory ⊑ file` (align/claude-ruling.tsv).	06490451	06509210
 high-level-formatting	code	accept	computing skeleton [2026-09-03]		
 low-level-formatting	code	accept	computing skeleton [2026-09-03]		
 data-storage	data-processing	accept	computing skeleton [2026-09-03]		
@@ -511,7 +511,7 @@ email	communication	accept	computing skeleton [2026-09-03]
 simple-mail-transfer-protocol	email-protocol	accept	computing skeleton [2026-09-03]		
 internet-message-access-protocol	email-protocol	accept	computing skeleton [2026-09-03]		
 post-office-protocol	email-protocol	accept	computing skeleton [2026-09-03]		
-mime	internet-standard	accept	computing skeleton [2026-09-03]		
+multipurpose-internet-mail-extensions	internet-standard	accept	computing skeleton [2026-09-03] — v10 (§14): renamed; the bare word `mime` is core's performer again		
 file-transfer-protocol	application-layer-protocol	accept	computing skeleton [2026-09-03]		
 secure-shell	cryptographic-protocol	accept	computing skeleton [2026-09-03]		
 secure-shell	application-layer-protocol	accept	computing skeleton [2026-09-03]		
@@ -1111,7 +1111,7 @@ internet-of-things	computer-network	accept	computing skeleton, second pass [2026
 internet-protocol-suite	technical-standard	accept	computing skeleton, second pass [2026-09-03]		
 osi-model	technical-standard	accept	computing skeleton, second pass [2026-09-03]		
 json-web-token	technical-standard	accept	computing skeleton, second pass [2026-09-03]		
-mime	internet-standard	accept	computing skeleton, second pass [2026-09-03]		
+multipurpose-internet-mail-extensions	internet-standard	accept	computing skeleton, second pass [2026-09-03] — v10 (§14): renamed; the bare word `mime` is core's performer again		
 posix	technical-standard	accept	computing skeleton, second pass [2026-09-03]		
 public-key-infrastructure	computer-security-system	accept	computing skeleton, second pass [2026-09-03]		
 web-feed	file-format	accept	computing skeleton, second pass [2026-09-03]		
@@ -1162,3 +1162,27 @@ parallel-computing	computer-science	accept	second reading [2026-09-03]
 program-statement	code	accept	second reading [2026-09-03]		
 social-engineering-attack	act	accept	second reading [2026-09-03]		
 program-constant	code	accept	second reading [2026-09-03]		
+# ===== v10, the media-type witness (2026-09-17, UPPER.md §14).  IANA's registry entails 31
+# family edges: 13 the pack had already ruled (now carried by two witnesses), 18 new.  Read
+# one by one, because a registration types a BYTE STREAM, not always a file.
+csv	text-file-format	accept	IANA text/csv (RFC 4180)		
+icalendar	text-file-format	accept	IANA text/calendar (RFC 5545)		
+vcard	text-file-format	accept	IANA text/vcard (RFC 6350)		
+turtle-syntax	text-file-format	accept	IANA text/turtle		
+rich-text-format	text-file-format	accept	IANA text/rtf		
+html	text-file-format	accept	IANA text/html — a markup language that is also the format of a file		
+markdown	text-file-format	accept	IANA text/markdown (RFC 7763)		
+css	text-file-format	accept	IANA text/css (RFC 2318)		
+eml-file-format	message-file-format	accept	IANA message/rfc822 — a saved mail message is the message media type itself		
+matroska	video-file-format	accept	IANA video/matroska (RFC 9559)		
+mp4	video-file-format	accept	IANA video/mp4 (RFC 4337); the ISO base-media container is a video file even though it also carries audio		
+quicktime-file-format	video-file-format	accept	IANA video/quicktime		
+advanced-audio-coding	audio-file-format	accept	IANA audio/aac; AAC frames are self-delimiting and ship as bare .aac files, as mp3 and flac do		
+opus-codec	audio-file-format	accept	IANA audio/opus (RFC 7587); .opus files are bare Opus		
+# The four the registry and the pack disagree about: a video coding format is never a file on
+# its own — it is always inside a container — so video/H264 types an RTP payload, not a file.
+# The registry is right about what it registers and wrong about what we are asking it.
+advanced-video-coding	video-file-format	reject	video/H264 is an RTP payload type (RFC 6184); H.264 reaches a disk inside mp4, matroska or quicktime, never alone		
+high-efficiency-video-coding	video-file-format	reject	video/H265 (RFC 7798), as above		
+vp9	video-file-format	reject	video/VP9 (RFC 9628), as above; VP9 ships in webm		
+av1	video-file-format	reject	video/AV1, as above		

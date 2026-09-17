@@ -42,6 +42,7 @@ active-application	software	single	wordnet
 activitypub	communications-protocol	accepted	claude-ruling	
 actor-model	model-of-computation	accepted	claude-ruling	
 ada-language	programming-language	accepted	claude-ruling	
+address-directory	hard-copy	single	sumo	
 adjacency-list	graph-data-structure	accepted	claude-ruling	
 adjacency-matrix	array-data-structure	single	wikidata	
 adjacency-matrix	data-structure	single	wikidata	
@@ -58,7 +59,9 @@ administrative-data-processing	process	single	wordnet
 administrative-data-processing	volition	single	sumo	
 admission	authorization	single	opencyc	
 advanced-audio-coding	audio-coding-format	accepted	claude-ruling	
+advanced-audio-coding	audio-file-format	accepted	claude-ruling iana	
 advanced-video-coding	video-coding-format	accepted	claude-ruling	
+advanced-video-coding	video-file-format	rejected	iana	
 agile-software-development	computer-programming	accepted	claude wikidata	
 agile-software-development	programming	single	wikidata	
 agile-software-development	skill	single	wikidata	
@@ -181,7 +184,7 @@ ascii-character-set	phenomenon	single	sumo
 ascii-character-set	symbol	single	sumo	
 ascii-character-set	universe	single	sumo	
 ascii-text-file	computer-file	single	wordnet	
-ascii-text-file	data-file	single	wordnet	
+ascii-text-file	file	single	wordnet	
 ascii-text-file	indication	single	wordnet	
 ascii-text-file	information	single	wordnet	
 ascii-text-file	text-file	accepted	claude-ruling wordnet	
@@ -229,6 +232,8 @@ audio-cd	optical-disk	single	wordnet
 audio-cd	physical-object	single	wordnet	
 audio-cd	recording	single	wordnet	
 audio-cd	storage-device	single	wordnet	
+audio-file-format	file-format	single	wikidata	
+audio-file-format	information	single	yago	
 audiotape	magnetic-tape	single	claude	
 audiotape.artifact	audio	single	claude	
 audiotape.artifact	tape-recording	single	claude	
@@ -274,8 +279,9 @@ auxiliary-storage	storage-device	single	wordnet
 auxiliary-storage	universe	single	sumo	
 auxiliary-storage	vehicle-body	single	sumo	
 av1	video-coding-format	accepted	claude-ruling	
+av1	video-file-format	rejected	iana	
 avi	multimedia-container-format	accepted	claude-ruling	
-avif	image-file-format	accepted	claude-ruling	
+avif	image-file-format	accepted	claude-ruling iana	
 avl-tree	binary-search-tree	single	wikidata	
 avl-tree	binary-tree	single	wikidata	
 avl-tree	data-structure	single	wikidata	
@@ -302,7 +308,7 @@ backtracking-search	search-algorithm	accepted	claude-ruling
 backup-file	artifact	single	sumo	
 backup-file	computer-file	accepted	claude wordnet	
 backup-file	contract-condition	single	sumo	
-backup-file	data-file	single	wordnet	
+backup-file	file	single	wordnet	
 backup-file	indication	accepted	sumo wordnet	
 backup-file	information	accepted	sumo wordnet	
 backup-file	line-of-text	single	sumo	
@@ -382,7 +388,7 @@ binary-code	universe	single	sumo
 binary-file	artifact	single	sumo	
 binary-file	computer-file	accepted	claude claude-ruling wikidata wordnet	
 binary-file	contract-condition	single	sumo	
-binary-file	data-file	accepted	wikidata wordnet	
+binary-file	file	accepted	wikidata wordnet	
 binary-file	indication	accepted	sumo wordnet	
 binary-file	information	accepted	sumo wordnet	
 binary-file	line-of-text	single	sumo	
@@ -440,7 +446,7 @@ bittorrent	peer-to-peer	accepted	claude-ruling
 blacklist	list	single	claude	
 bloom-filter	data-structure	accepted	claude-ruling	
 bluetooth	communications-protocol	accepted	claude-ruling	
-bmp-file-format	image-file-format	accepted	claude-ruling	
+bmp-file-format	image-file-format	accepted	claude-ruling iana	
 book	hard-copy	single	sumo	
 book-copy	hard-copy	single	sumo	
 booklet	hard-copy	single	sumo	
@@ -787,11 +793,11 @@ computer-cluster	device	single	opencyc
 computer-cluster	group	accepted	claude wikidata	
 computer-error	event	accepted	sumo wordnet	
 computer-error	phenomenon	single	sumo	
-computer-file	data-file	accepted	claude wordnet	
 computer-file	dataset	single	yago	
+computer-file	file	accepted	claude wordnet	
 computer-file	indication	single	wordnet	
 computer-file	information	accepted	wordnet yago	
-computer-font	data-file	accepted	claude-ruling	
+computer-font	file	accepted	claude-ruling	
 computer-hardware	hardware	accepted	claude-ruling	
 computer-icon	information	accepted	sumo wordnet	
 computer-icon	phenomenon	single	sumo	
@@ -902,8 +908,8 @@ conditional-statement	control-flow	single	wikidata
 conditional-statement	program-statement	accepted	claude-ruling wikidata	
 conditional-statement	statement	single	wikidata	
 configuration-file	computer-file	accepted	claude-ruling wikidata	
-configuration-file	data-file	accepted	claude wikidata	
 configuration-file	dataset	single	yago	
+configuration-file	file	accepted	claude wikidata	
 configuration-file	information	accepted	opencyc yago	
 conflict-free-replicated-data-type	data-structure	accepted	claude-ruling wikidata	
 construction	mathematical-process	single	claude	
@@ -943,7 +949,7 @@ controlled-vocabulary	knowledge-organization-system	accepted	claude-ruling
 copy-on-write	data-processing-technique	accepted	claude-ruling	
 copyleft	license	accepted	claude-ruling	
 core-dump	computer-file	accepted	claude wikidata	
-core-dump	data-file	accepted	claude wikidata	
+core-dump	file	accepted	claude wikidata	
 core-dump	information	single	wordnet	
 core-dump	memory-dump	accepted	claude wordnet	
 core-dump	text	single	wordnet	
@@ -963,9 +969,11 @@ cryptographic-hash-function	algorithm	single	wikidata
 cryptographic-hash-function	function	single	wikidata	
 cryptographic-hash-function	hash-function	accepted	claude-ruling wikidata	
 cryptography	computer-science	accepted	claude-ruling	
+css	text-file-format	accepted	claude-ruling iana	
 csv	data-serialization-format	accepted	claude-ruling	
 csv	data-type	dissented	wikidata	
 csv	file-format	accepted	claude-ruling	
+csv	text-file-format	accepted	claude-ruling iana	
 cyc	knowledge-base	accepted	claude-ruling	
 cyclic-redundancy-check	algorithm	single	wikidata	
 cyclic-redundancy-check	checksum	accepted	claude-ruling	
@@ -1001,7 +1009,7 @@ data-deduplication	data-processing-technique	accepted	claude-ruling
 data-descriptor	artifact	single	sumo	
 data-descriptor	cognition	dissented	wordnet	
 data-descriptor	contract-condition	single	sumo	
-data-descriptor	data-file	single	sumo	
+data-descriptor	file	single	sumo	
 data-descriptor	identifier	accepted	claude-ruling	
 data-descriptor	indication	single	sumo	
 data-descriptor	information	single	sumo	
@@ -1103,7 +1111,7 @@ database	information	accepted	claude-ruling
 database-consistency	property	accepted	claude-ruling	
 database-index	data-structure	accepted	claude-ruling wikidata	
 database-journal	computer-file	single	wikidata	
-database-journal	data-file	single	wikidata	
+database-journal	file	single	wikidata	
 database-journal	log-file	accepted	claude-ruling wikidata	
 database-management-system	code	accepted	sumo wordnet	
 database-management-system	computer-program	single	sumo	
@@ -1269,8 +1277,8 @@ digital-archive	web-site	single	wikidata
 digital-audiotape	audiotape.artifact	single	claude	
 digital-certificate	artifact	single	opencyc	
 digital-certificate	computer-file	accepted	claude wikidata	
-digital-certificate	data-file	accepted	claude wikidata	
 digital-certificate	document	accepted	claude-ruling	
+digital-certificate	file	accepted	claude wikidata	
 digital-computer	artifact	accepted	sumo wordnet	
 digital-computer	computer	accepted	sumo wikidata wordnet	
 digital-computer	device	accepted	sumo wordnet	
@@ -1308,7 +1316,6 @@ directed-acyclic-graph	system	single	opencyc
 directed-graph	concept	accepted	claude-ruling	
 directed-graph	graph	dissented	wikidata	
 directed-graph	system	single	opencyc	
-directory	hard-copy	single	sumo	
 disambiguator	application	single	wordnet	
 disambiguator	code	accepted	sumo wordnet	
 disambiguator	computer-program	accepted	sumo wordnet	
@@ -1350,7 +1357,7 @@ disk-error	hardware-error	accepted	claude wordnet
 disk-file	artifact	single	sumo	
 disk-file	computer-file	accepted	claude wordnet	
 disk-file	contract-condition	single	sumo	
-disk-file	data-file	single	wordnet	
+disk-file	file	single	wordnet	
 disk-file	indication	accepted	sumo wordnet	
 disk-file	information	accepted	sumo wordnet	
 disk-file	line-of-text	single	sumo	
@@ -1361,9 +1368,9 @@ disk-file	universe	single	sumo
 disk-file	vehicle-body	single	sumo	
 disk-image	artifact	single	opencyc	
 disk-image	computer-file	accepted	claude-ruling wikidata	
-disk-image	data-file	accepted	claude wikidata	
 disk-image	dataset	single	yago	
 disk-image	device	single	opencyc	
+disk-image	file	accepted	claude wikidata	
 disk-image	information	single	yago	
 disk-operating-system	code	single	wordnet	
 disk-operating-system	information	single	wordnet	
@@ -1509,7 +1516,7 @@ dyadic-operation	volition	single	sumo
 dynamic-array	array-data-structure	accepted	claude-ruling wikidata	
 dynamic-array	data-structure	single	wikidata	
 dynamic-link-library	computer-file	single	wikidata	
-dynamic-link-library	data-file	single	wikidata	
+dynamic-link-library	file	single	wikidata	
 dynamic-link-library	information	single	opencyc	
 dynamic-link-library	shared-library	accepted	claude-ruling wikidata	
 dynamic-link-library	software	single	wikidata	
@@ -1557,6 +1564,7 @@ embedded-system	computer	accepted	claude-ruling wikidata
 embedded-system	computer-system	accepted	claude-ruling	
 embedded-system	machine	single	wikidata	
 eml-file-format	file-format	accepted	claude-ruling	
+eml-file-format	message-file-format	accepted	claude-ruling iana	
 emoji	symbol	accepted	claude-ruling	
 encryption	data-processing	accepted	claude-ruling	
 end-to-end-encryption	encryption	accepted	claude-ruling wikidata	
@@ -1650,13 +1658,6 @@ field-programmable-gate-array	integrated-circuit	single	wikidata
 file-archiver	information	single	yago	
 file-archiver	utility-program	accepted	claude-ruling	
 file-attribute	metadata	accepted	claude-ruling	
-file-directory	catalog	dissented	wikidata	
-file-directory	collection	single	wikidata	
-file-directory	computer-file	accepted	claude-ruling	
-file-directory	group	single	wikidata	
-file-directory	information	single	wordnet	
-file-directory	list	accepted	claude wordnet	
-file-directory	publication	single	wikidata	
 file-format	information	accepted	claude-ruling yago	
 file-path	character-string	accepted	claude-ruling wikidata	
 file-path	data-type	single	wikidata	
@@ -1717,7 +1718,7 @@ fixed-cycle-operation	procedure	single	sumo
 fixed-cycle-operation	process	single	wordnet	
 fixed-cycle-operation	volition	single	sumo	
 flac	audio-coding-format	accepted	claude-ruling	
-flac	audio-file-format	accepted	claude-ruling	
+flac	audio-file-format	accepted	claude-ruling iana	
 flash-memory	non-volatile-storage	accepted	claude-ruling wordnet	
 floating-point-format	code	accepted	claude-ruling	
 floating-point-format	data-type	single	wikidata	
@@ -1754,6 +1755,7 @@ font-cartridge	phenomenon	single	sumo
 font-cartridge	signal	single	wordnet	
 font-cartridge	symbol	accepted	sumo wordnet	
 font-cartridge	universe	single	sumo	
+font-file-format	file-format	single	wikidata	
 foreground-processing	accomplishment	single	sumo	
 foreground-processing	act	single	sumo	
 foreground-processing	activity	single	sumo	
@@ -1892,7 +1894,7 @@ generic-programming	programming-paradigm	accepted	claude-ruling
 generic-programming	skill	single	wikidata	
 geojson	file-format	accepted	claude-ruling	
 gif	image	single	opencyc	
-gif	image-file-format	accepted	claude-ruling	
+gif	image-file-format	accepted	claude-ruling iana	
 gif	information	single	opencyc	
 gif	stream	single	opencyc	
 git	distributed-version-control	accepted	claude-ruling	
@@ -1976,7 +1978,7 @@ hard-disk-drive	device	single	opencyc
 hard-disk-drive	hardware	accepted	claude wikidata	
 hard-disk-drive	non-volatile-storage	accepted	claude-ruling	
 hard-drive	storage-drive	accepted	claude wordnet	
-hard-link	file-directory	accepted	claude-ruling	
+hard-link	computer-file	accepted	claude-ruling	
 hardware-counter	artifact	accepted	sumo wordnet	
 hardware-counter	component	single	sumo	
 hardware-counter	device	accepted	sumo wordnet	
@@ -2033,7 +2035,7 @@ heap-memory	computer-memory	accepted	claude-ruling
 heap-memory	hardware	dissented	wikidata	
 heapsort	sorting-algorithm	accepted	claude-ruling	
 hebrew-alphabet	alphabet	single	claude	
-heif	image-file-format	accepted	claude-ruling	
+heif	image-file-format	accepted	claude-ruling iana	
 hexadecimal	code	accepted	claude-ruling	
 hidden-file	computer-file	accepted	claude-ruling	
 hierarchical-menu	computer-menu	accepted	claude wordnet	
@@ -2042,6 +2044,7 @@ hierarchical-menu	list	single	wordnet
 high-availability	software-quality-attribute	accepted	claude-ruling	
 high-definition-television	telecasting	single	claude	
 high-efficiency-video-coding	video-coding-format	accepted	claude-ruling	
+high-efficiency-video-coding	video-file-format	rejected	iana	
 high-level-formatting	accomplishment	single	sumo	
 high-level-formatting	act	single	sumo	
 high-level-formatting	activity	single	sumo	
@@ -2065,7 +2068,7 @@ home-computer	physical-object	single	wordnet
 home-computer	universe	single	sumo	
 home-computer	vehicle-body	single	sumo	
 home-page	computer-file	single	wordnet	
-home-page	data-file	single	wordnet	
+home-page	file	single	wordnet	
 home-page	indication	single	wordnet	
 home-page	information	single	wordnet	
 home-page	text-file	single	wordnet	
@@ -2075,6 +2078,7 @@ hostname	information	single	wikidata
 html	markup-language	accepted	claude-ruling wikidata	
 html	part	single	wordnet	
 html	terminology	single	wordnet	
+html	text-file-format	accepted	claude-ruling iana	
 html	word	single	wordnet	
 http-2	hypertext-transfer-protocol	accepted	claude-ruling	
 http-3	hypertext-transfer-protocol	accepted	claude-ruling	
@@ -2106,8 +2110,10 @@ hypervisor	software	accepted	claude wikidata
 hypervisor	software-object	single	opencyc	
 hypervisor	system-software	accepted	claude-ruling	
 icalendar	data-serialization-format	accepted	claude-ruling	
+icalendar	text-file-format	accepted	claude-ruling iana	
 identifier	information	accepted	claude-ruling wikidata	
 identity	partial-order	dissented	wikidata	
+image-file-format	file-format	single	wikidata	
 image-scanner	appliance	single	wikidata	
 image-scanner	camera	single	wikidata	
 image-scanner	data-input-device	accepted	claude-ruling	
@@ -2173,7 +2179,7 @@ input-device	user-interface	accepted	claude wikidata
 input-file	artifact	single	sumo	
 input-file	computer-file	accepted	claude wordnet	
 input-file	contract-condition	single	sumo	
-input-file	data-file	single	wordnet	
+input-file	file	single	wordnet	
 input-file	indication	accepted	sumo wordnet	
 input-file	information	accepted	sumo wordnet	
 input-file	line-of-text	single	sumo	
@@ -2282,8 +2288,8 @@ ipfs	communications-protocol	accepted	claude-ruling
 ipv4	internet-protocol	accepted	claude-ruling	
 ipv6	internet-protocol	accepted	claude-ruling	
 iso-image	computer-file	single	wikidata	
-iso-image	data-file	single	wikidata	
 iso-image	disk-image	accepted	claude-ruling wikidata	
+iso-image	file	single	wikidata	
 iterator	data-type	accepted	claude wikidata	
 iterator	software-object	accepted	claude-ruling wikidata	
 java-bytecode	bytecode	accepted	claude-ruling	
@@ -2315,7 +2321,7 @@ joystick	mechanism	accepted	claude wordnet
 joystick	peripheral	single	wordnet	
 joystick	physical-object	single	wordnet	
 jpeg	compression-format	accepted	claude-ruling	
-jpeg	image-file-format	accepted	claude-ruling	
+jpeg	image-file-format	accepted	claude-ruling iana	
 json	data-serialization-format	accepted	claude-ruling	
 json-ld	rdf-serialization-format	accepted	claude-ruling	
 json-web-token	technical-standard	accepted	claude-ruling	
@@ -2503,7 +2509,7 @@ local-area-network	system	single	opencyc
 local-area-network	system-instrumentality	single	wordnet	
 local-first-software	software	accepted	claude-ruling	
 log-file	computer-file	accepted	claude-ruling wikidata	
-log-file	data-file	accepted	claude wikidata	
+log-file	file	accepted	claude wikidata	
 log-file	record	accepted	claude-ruling	
 log-structured-merge-tree	data-structure	accepted	claude-ruling	
 logic-bomb	code	accepted	sumo wordnet	
@@ -2576,10 +2582,10 @@ machine-readable-dictionary	artifact	single	sumo
 machine-readable-dictionary	book	single	sumo	
 machine-readable-dictionary	component	single	sumo	
 machine-readable-dictionary	contract-condition	single	sumo	
-machine-readable-dictionary	data-file	single	sumo	
 machine-readable-dictionary	device	single	sumo	
 machine-readable-dictionary	dictionary	single	sumo	
 machine-readable-dictionary	electronic-database	single	wordnet	
+machine-readable-dictionary	file	single	sumo	
 machine-readable-dictionary	hard-copy	single	sumo	
 machine-readable-dictionary	indication	single	sumo	
 machine-readable-dictionary	information	accepted	sumo wordnet	
@@ -2677,19 +2683,20 @@ malware	signified	single	sumo
 malware	software	accepted	claude-ruling wikidata wordnet	
 man-in-the-middle-attack	cyberattack	accepted	claude-ruling	
 manifest-file	computer-file	accepted	claude-ruling wikidata	
-manifest-file	data-file	accepted	claude wikidata	
+manifest-file	file	accepted	claude wikidata	
 manual	hard-copy	single	sumo	
 manual-alphabet	alphabet	single	claude	
 manual-memory-management	memory-management	accepted	claude-ruling wikidata	
 mapreduce	data-processing-technique	accepted	claude-ruling	
 mapreduce	software-design-pattern	accepted	claude-ruling	
 markdown	markup-language	accepted	claude-ruling	
+markdown	text-file-format	accepted	claude-ruling iana	
 markup-language	computer-language	accepted	claude-ruling yago	
 markup-language	information	single	yago	
 master-file	artifact	single	sumo	
 master-file	computer-file	accepted	claude wordnet	
 master-file	contract-condition	single	sumo	
-master-file	data-file	single	wordnet	
+master-file	file	single	wordnet	
 master-file	indication	accepted	sumo wordnet	
 master-file	information	accepted	sumo wordnet	
 master-file	line-of-text	single	sumo	
@@ -2710,6 +2717,7 @@ matrix-protocol	messaging-protocol	accepted	claude-ruling
 matrix-transposition	matrix-operation	single	claude	
 matroska	file-format	single	wikidata	
 matroska	multimedia-container-format	accepted	claude-ruling wikidata	
+matroska	video-file-format	accepted	claude-ruling iana	
 maximization	mathematical-process	single	claude	
 maximum-flow-problem	computational-problem	accepted	claude-ruling	
 mbox	file-format	accepted	claude-ruling	
@@ -2812,16 +2820,6 @@ microsoft-windows	software	accepted	wikidata wordnet
 middleware	information	single	yago	
 middleware	software	accepted	claude wikidata	
 middleware	system-software	accepted	claude-ruling	
-mime	actor	single	opencyc	
-mime	artist	single	opencyc	
-mime	human	single	opencyc	
-mime	internet-standard	accepted	claude-ruling	
-mime	mammal	single	opencyc	
-mime	professional	single	opencyc	
-mime	structure	single	opencyc	
-mime	system	single	opencyc	
-mime	vertebrate	single	opencyc	
-mime	worker	single	opencyc	
 minicomputer	artifact	accepted	opencyc sumo wordnet	
 minicomputer	computer	accepted	opencyc wikidata wordnet	
 minicomputer	device	accepted	opencyc sumo wordnet	
@@ -2869,15 +2867,16 @@ moores-law	law	accepted	claude-ruling
 motherboard	hardware	accepted	claude-ruling wikidata	
 mozilla-foundation	nonprofit-organization	accepted	claude-ruling	
 mp3	audio-coding-format	accepted	claude-ruling	
-mp3	audio-file-format	accepted	claude-ruling	
+mp3	audio-file-format	accepted	claude-ruling iana	
 mp3	information	single	opencyc	
 mp3	stream	single	opencyc	
 mp4	image	single	opencyc	
 mp4	information	single	opencyc	
 mp4	multimedia-container-format	accepted	claude-ruling	
 mp4	stream	single	opencyc	
+mp4	video-file-format	accepted	claude-ruling iana	
 mqtt	messaging-protocol	accepted	claude-ruling	
-mug-file	data-file	single	claude	
+mug-file	file	single	claude	
 multi-factor-authentication	authentication	accepted	claude-ruling	
 multidimensional-language	information	accepted	sumo wordnet	
 multidimensional-language	language	accepted	sumo wordnet	
@@ -2917,6 +2916,7 @@ multiprocessor	phenomenon	single	sumo
 multiprocessor	physical-object	single	wordnet	
 multiprocessor	universe	single	sumo	
 multiprocessor	vehicle-body	single	sumo	
+multipurpose-internet-mail-extensions	internet-standard	accepted	claude-ruling	
 multithreading	concurrency	accepted	claude wikidata	
 multithreading	data-processing-technique	accepted	claude-ruling	
 musical-instrument-digital-interface	attribute	single	sumo	
@@ -3121,7 +3121,7 @@ openid-connect	authentication-protocol	accepted	claude-ruling
 openssh	software	accepted	claude-ruling	
 openstreetmap	dataset	accepted	claude-ruling	
 openstreetmap	web-site	accepted	claude-ruling	
-opentype	font-file-format	accepted	claude-ruling	
+opentype	font-file-format	accepted	claude-ruling iana	
 operating-system	software-object	single	opencyc	
 operating-system	software-package	single	opencyc	
 operating-system-kernel	information	single	opencyc	
@@ -3142,6 +3142,7 @@ optical-disk	disk	single	opencyc
 optical-disk	physical-object	single	wordnet	
 optical-disk	storage-device	single	wordnet	
 opus-codec	audio-coding-format	accepted	claude-ruling	
+opus-codec	audio-file-format	accepted	claude-ruling iana	
 order-of-the-day	agenda	single	claude	
 order-paper	order-of-the-day	single	claude	
 osi-model	model-of-computation	accepted	claude-ruling	
@@ -3156,7 +3157,7 @@ output-device	user-interface	dissented	wikidata
 output-file	artifact	single	sumo	
 output-file	computer-file	accepted	claude wordnet	
 output-file	contract-condition	single	sumo	
-output-file	data-file	single	wordnet	
+output-file	file	single	wordnet	
 output-file	indication	accepted	sumo wordnet	
 output-file	information	accepted	sumo wordnet	
 output-file	line-of-text	single	sumo	
@@ -3311,7 +3312,7 @@ platform-as-a-service	service	single	wikidata
 playbill	bill.communication	single	claude	
 playbill	program	single	claude	
 playlist	list	single	claude	
-png	image-file-format	accepted	claude-ruling	
+png	image-file-format	accepted	claude-ruling iana	
 pointer-data-type	data-type	accepted	claude-ruling wikidata	
 poll	computation	single	sumo	
 portable-computer	artifact	accepted	sumo wordnet	
@@ -3514,6 +3515,7 @@ quic	transport-layer-protocol	accepted	claude-ruling
 quicksort	algorithm	single	wikidata	
 quicksort	sorting-algorithm	accepted	claude-ruling wikidata	
 quicktime-file-format	multimedia-container-format	accepted	claude-ruling	
+quicktime-file-format	video-file-format	accepted	claude-ruling iana	
 r-language	programming-language	accepted	claude-ruling	
 race-condition	security-vulnerability	dissented	wikidata	
 race-condition	software-bug	accepted	claude-ruling wikidata	
@@ -3572,7 +3574,7 @@ reactive-programming	programming-paradigm	accepted	claude-ruling
 read-only-file	artifact	single	sumo	
 read-only-file	computer-file	accepted	claude wordnet	
 read-only-file	contract-condition	single	sumo	
-read-only-file	data-file	single	wordnet	
+read-only-file	file	single	wordnet	
 read-only-file	indication	accepted	sumo wordnet	
 read-only-file	information	accepted	sumo wordnet	
 read-only-file	line-of-text	single	sumo	
@@ -3737,6 +3739,7 @@ reverse-proxy	software	single	wikidata
 rich-text-format	document-file-format	accepted	claude-ruling	
 rich-text-format	file-format	accepted	claude wikidata	
 rich-text-format	information	single	yago	
+rich-text-format	text-file-format	accepted	claude-ruling iana	
 risc-v	instruction-set-architecture	accepted	claude-ruling	
 role-based-access-control	access-control	accepted	claude-ruling wikidata	
 roman-alphabet	alphabet	single	claude	
@@ -3912,7 +3915,7 @@ seventy-eight	universe	single	sumo
 shannon-source-coding-theorem	concept	accepted	claude-ruling	
 shannon-source-coding-theorem	theorem	accepted	claude-ruling	
 shared-library	computer-file	accepted	claude wikidata	
-shared-library	data-file	accepted	claude wikidata	
+shared-library	file	accepted	claude wikidata	
 shared-library	software	single	wikidata	
 shared-library	software-library	accepted	claude-ruling wikidata	
 shareware	code	accepted	sumo wordnet	
@@ -4121,7 +4124,7 @@ source-code	ascii-text-file	accepted	claude wordnet
 source-code	code	accepted	claude-ruling sumo	
 source-code	computer-file	single	wordnet	
 source-code	computer-program	single	sumo	
-source-code	data-file	single	wordnet	
+source-code	file	single	wordnet	
 source-code	indication	single	wordnet	
 source-code	information	single	wordnet	
 source-code	measure	single	sumo	
@@ -4233,7 +4236,7 @@ subdata-base	information	accepted	sumo wordnet
 subdata-base	phenomenon	single	sumo	
 subdata-base	physical-object	single	sumo	
 subdata-base	universe	single	sumo	
-subdirectory	file-directory	accepted	claude-ruling wordnet	
+subdirectory	directory	accepted	claude-ruling wordnet	
 subdirectory	information	single	wordnet	
 subdirectory	list	single	wordnet	
 subnetwork	computer-network	accepted	claude-ruling	
@@ -4295,13 +4298,13 @@ supervisory-software	measure	single	sumo
 supervisory-software	routine	single	sumo	
 supervisory-software	signified	single	sumo	
 supervisory-software	software	accepted	claude wordnet	
-svg	image-file-format	accepted	claude-ruling	
+svg	image-file-format	accepted	claude-ruling iana	
 svg	xml	accepted	claude-ruling	
 swift-language	programming-language	accepted	claude-ruling	
 syllable	character-set	single	sumo	
 symbol	character-set	single	sumo	
 symbolic-link	computer-file	accepted	claude-ruling wikidata	
-symbolic-link	data-file	accepted	claude wikidata	
+symbolic-link	file	accepted	claude wikidata	
 symbolic-link	reference	single	wikidata	
 symbolic-link	reference-data-type	dissented	wikidata	
 symmetric-key-cryptography	algorithm	dissented	wikidata	
@@ -4397,7 +4400,7 @@ talking-book	storage-device	single	wordnet
 talking-book	universe	single	sumo	
 tar-file-format	archive-file-format	accepted	claude-ruling	
 tar-file-format	computer-file	dissented	wikidata	
-tar-file-format	data-file	dissented	wikidata	
+tar-file-format	file	dissented	wikidata	
 taxonomy	classification-scheme	accepted	claude wikidata	
 taxonomy	information	single	opencyc	
 taxonomy	knowledge-organization-system	accepted	claude-ruling	
@@ -4442,7 +4445,7 @@ text-editor	software	accepted	wikidata wordnet
 text-editor	software-object	single	opencyc	
 text-editor	utility-program	single	opencyc	
 text-file	computer-file	accepted	claude claude-ruling wikidata wordnet	
-text-file	data-file	accepted	wikidata wordnet	
+text-file	file	accepted	wikidata wordnet	
 text-file	file-format	dissented	wikidata	
 text-file	indication	single	wordnet	
 text-file	information	single	wordnet	
@@ -4475,9 +4478,9 @@ threshold-operation	procedure	single	sumo
 threshold-operation	process	single	wordnet	
 threshold-operation	volition	single	sumo	
 throughput	network-performance-measure	accepted	claude-ruling	
-tickler	data-file	single	claude	
+tickler	file	single	claude	
 tiff	image	single	opencyc	
-tiff	image-file-format	accepted	claude-ruling	
+tiff	image-file-format	accepted	claude-ruling iana	
 tiff	information	single	opencyc	
 tiff	stream	single	opencyc	
 time-complexity	function	single	wikidata	
@@ -4544,7 +4547,7 @@ transaction-durability	property	accepted	claude-ruling
 transaction-file	artifact	single	sumo	
 transaction-file	computer-file	accepted	claude wordnet	
 transaction-file	contract-condition	single	sumo	
-transaction-file	data-file	single	wordnet	
+transaction-file	file	single	wordnet	
 transaction-file	indication	accepted	sumo wordnet	
 transaction-file	information	accepted	sumo wordnet	
 transaction-file	line-of-text	single	sumo	
@@ -4593,7 +4596,7 @@ trojan-horse-malware	measure	single	sumo
 trojan-horse-malware	routine	single	sumo	
 trojan-horse-malware	signified	single	sumo	
 trojan-horse-malware	software	accepted	wikidata wordnet	
-truetype	font-file-format	accepted	claude-ruling	
+truetype	font-file-format	accepted	claude-ruling iana	
 turing-machine	artifact	accepted	sumo wordnet	
 turing-machine	computer	accepted	claude wordnet	
 turing-machine	device	accepted	sumo wordnet	
@@ -4606,6 +4609,7 @@ turing-machine	universe	single	sumo
 turing-machine	vehicle-body	single	sumo	
 turtle-syntax	n-triples	dissented	wikidata	
 turtle-syntax	rdf-serialization-format	accepted	claude-ruling	
+turtle-syntax	text-file-format	accepted	claude-ruling iana	
 two-phase-commit	consensus-algorithm	accepted	claude-ruling	
 twos-complement	code	accepted	claude-ruling	
 type-class	type-system	accepted	claude-ruling	
@@ -4679,6 +4683,7 @@ utility-routine	signified	single	sumo
 utility-routine	software	single	wordnet	
 utility-routine	subroutine	accepted	claude wordnet	
 vcard	data-serialization-format	accepted	claude-ruling	
+vcard	text-file-format	accepted	claude-ruling iana	
 vector-clock	logical-clock	accepted	claude-ruling wikidata	
 vector-graphics	image	accepted	claude-ruling	
 version-control	practice	accepted	claude-ruling	
@@ -4686,6 +4691,7 @@ version-control-branch	data-structure	accepted	claude-ruling wikidata
 version-control-commit	record	accepted	claude-ruling	
 version-control-merge	data-processing	accepted	claude-ruling	
 version-control-software	software	accepted	claude-ruling	
+video-file-format	file-format	single	wikidata	
 videocassette	video	single	claude	
 videotape	artifact	single	wordnet	
 videotape	device	single	wordnet	
@@ -4740,6 +4746,7 @@ von-neumann-machine	physical-object	single	wordnet
 von-neumann-machine	universe	single	sumo	
 von-neumann-machine	vehicle-body	single	sumo	
 vp9	video-coding-format	accepted	claude-ruling	
+vp9	video-file-format	rejected	iana	
 waiting-list	roster	single	claude	
 wake-up-call	phone-call	single	claude	
 waterfall-model	software-development-methodology	accepted	claude-ruling	
@@ -4805,7 +4812,7 @@ webassembly	bytecode	accepted	claude-ruling
 webcam	peripheral	single	wikidata	
 webhook	data-processing-technique	accepted	claude-ruling	
 webm	multimedia-container-format	accepted	claude-ruling	
-webp	image-file-format	accepted	claude-ruling	
+webp	image-file-format	accepted	claude-ruling iana	
 webrtc	application-programming-interface	accepted	claude-ruling	
 websocket	communications-protocol	accepted	claude-ruling	
 wi-fi	artifact	single	opencyc	

@@ -82,3 +82,55 @@ internet-standard	technical-standard
 data-encoding	code	
 typesetting-system	software	
 technical-standard	document	a published specification agreed by a standards body or by practice (POSIX, USB, Unicode); the core's own `standard` is unplaced there
+#
+# ===== v10, the digital layer (2026-09-17, UPPER.md §14) — the things a person sorting a
+# disk or a mailbox actually points at, which no source names as a class.  Core's half of
+# the pass is the sense list (file, directory); this is the structure below it.
+#
+# --- media types.  The label, not the format: `image/png` is the NAME of png's type, so it
+# is an identifier and never a superclass of png.  The registry itself is the witness
+# (tools/align_iana.py); the ten top-level types are ids, not concepts.
+media-type	identifier	the two-part label of RFC 6838 (`image/png`), registered by IANA; what RFC 2045 called a MIME type
+multipurpose-internet-mail-extensions	internet-standard	RFC 2045-2049: the standard that defined media types and the structure of a mail body
+media-type	metadata	a file, a mail part and an HTTP body all carry one as metadata about the bytes
+# the two format families the registry has and the pack lacked
+text-file-format	file-format	IANA's text/* — csv, calendar, vcard, turtle, rtf, html, markdown, css
+message-file-format	file-format	IANA's message/* — a stored mail message and its parts
+mbox	message-file-format	registered as application/mbox, but a mailbox file is a concatenation of messages
+html	text-file-format	a markup language that is also a file format (text/html)
+markdown	text-file-format	text/markdown
+css	text-file-format	text/css
+css	computer-language	
+#
+# --- the shape of a filesystem.  `directory` and `file` are core's since v10.
+root-directory	directory	the directory a filesystem hangs from
+home-directory	directory	
+working-directory	directory	
+mount-point	directory	the directory another filesystem is grafted onto
+temporary-file	computer-file	
+device-file	computer-file	a file that stands for a device rather than for stored bytes
+named-pipe	computer-file	
+media-file	computer-file	what a file manager calls pictures, music and video
+image-file	media-file	
+audio-file	media-file	
+video-file	media-file	
+file-size	file-attribute	
+file-timestamp	file-attribute	created, modified, accessed — the fields people sort a folder by
+file-owner	file-attribute	
+#
+# --- mail and messages.  WordNet 3.0 predates all of this, so every one is hand-asserted.
+email-address	computer-address	
+email-attachment	computer-file	a file carried as a part of a mail message
+email-header	metadata	
+mail-folder	folder	a mail store's folder is not a filesystem directory — both are folders, which is what core's `folder` is above (v10, §14)
+inbox	mail-folder	
+mailing-list	list	
+newsletter	periodical	
+message-thread	conversation	the messages that answer one another, as a mail client or a forum groups them
+notification	message	
+push-notification	notification	
+post	message	a message put up for whoever comes to read it — forum, blog, social; core freed the word in v10 (its `post` was a marker stake, now `marker-post`)
+#
+# --- the everyday media kinds
+screenshot	image-file	
+thumbnail	image-file	

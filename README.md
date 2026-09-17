@@ -9,18 +9,21 @@ comparable shape, their tops are cut to importable `.od` files, and the design
 of our own top is argued in `docs/UPPER.md`. Nothing here is installed by
 anyone; the product is a published store root that `odag pack core` adopts.
 
-## State (2026-09-10)
+## State (2026-09-17)
 
 `build/core.od` is the `core` pack (**v9 shipped in ontodag 0.24.0**, which
 carried v7, the services layer, and v8, CPC's goods half, with it — 0.23.0
-had stopped at v6): 4,617 concepts, ten branches, every edge carried by two
+had stopped at v6): **v10 built, not yet shipped** — 4,620 concepts, ten branches, every edge carried by two
 independent sources or by Peter's ruling. `docs/UPPER.md` §10 is the everyday goods layer
 (Google Product Taxonomy as witness), §11 the services layer (UN CPC 2.1 and
 Wikidata as witnesses; `service` re-sensed to "goods and services"), §12 the
 CPC goods sections run over the goods layer as witness and coverage check
 (374 goods and materials added; `tools/align_cpc.py`, `align/cpc-goods.tsv`,
 `align/cpc-picks.tsv`), and the `matter` hinge added to `align_gpt.py` (20 more); §13 the v9 sense decisions
-(sixteen bare words moved to their everyday sense, `commodity` re-hung). It is a strict superset of the hand-written v1 (194 concepts,
+(sixteen bare words moved to their everyday sense, `commodity` re-hung), and §14 the digital layer
+(`file` and `directory` re-sensed to the computing senses, `folder` made (no source has it), `mime` given back to the performer, and the
+IANA Media Types registry run over `packs/computing`'s file formats as witness and coverage check —
+`tools/extract_iana.py`, `tools/align_iana.py`, `packs/computing/align/iana-picks.tsv`). It is a strict superset of the hand-written v1 (194 concepts,
 nothing lost). `docs/UPPER.md` §6 records every decision, §7 the policy for
 the sciences, §8 the science packs built beside it — `packs/physics`,
 `packs/mathematics`, `packs/chemistry`, `packs/biology`, `packs/medicine`, `packs/ai`, `packs/economics`, `packs/computing`, `packs/geography`, `packs/space`, each a
@@ -71,6 +74,7 @@ search and a parents/children panel) — regenerable, not tracked:
 | `sources/dolce/DOLCE-Lite.owl`, `DUL.owl` | DOLCE-Lite and DOLCE+DnS Ultralite (Turtle despite the name) | CC-BY 4.0 |
 | `sources/gpt/taxonomy-with-ids.en-US.txt` | Google Product Taxonomy — the goods witness (UPPER.md §10) | Google's terms; never imported |
 | `sources/cpc/CPC_Ver_2_1_english_structure.txt` | UN Central Product Classification 2.1 structure (Latin-1) — the services witness (UPPER.md §11) | UN Statistics Division, free download; never imported |
+| `sources/iana/*.csv` | IANA Media Types registry, one CSV per top-level type — the file-format witness (UPPER.md §14) | IANA, public domain; never imported |
 | `sources/wikidata/*.json` | bounded P279 pulls (`tools/fetch_wikidata.py`; `core.json` the WordNet-mapped items, `services.json` the tree under *service*) | CC0 |
 
 Fetch commands are in `tools/fetch.sh`. YAGO 4.5 was not found at any public

@@ -13,5 +13,9 @@ for f in yago-wd-class.nt.gz yago-wd-schema.nt.gz; do
   curl -sSL -o yago/$f https://yago-knowledge.org/data/yago4/full/2020-02-24/$f
 done
 curl -sSL -o cpc/CPC_Ver_2_1_english_structure.txt "https://unstats.un.org/unsd/classifications/Econ/Download/In%20Text/CPC_Ver_2_1_english_structure.txt"   # UN CPC 2.1 structure (Latin-1)
+mkdir -p iana   # IANA Media Types registry, one CSV per top-level type (there is no example.csv: RFC 4735 reserves `example` and registers nothing under it)
+for t in application audio font image message model multipart text video; do
+  curl -sSL -o iana/$t.csv "https://www.iana.org/assignments/media-types/$t.csv"
+done
 curl -sSL -o wordnet/core-wordnet.txt https://wordnetcode.princeton.edu/standoff-files/core-wordnet.txt
 [ -d sumo ] || git clone -q --depth 1 https://github.com/ontologyportal/sumo.git sumo

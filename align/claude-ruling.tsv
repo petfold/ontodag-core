@@ -51,3 +51,21 @@ firewood	tissue	reject	SUMO and Wikidata reach living tissue through wood; fuel 
 # --- v9 re-sensing (2026-09-07, §13): published v3 pins by name that now bind the wrong sense
 lead	leadership	reject	the published v3 edge was the leadership-position sense; lead is now the metal	14643467	01256417
 pool	place	reject	the published v3 edge was the puddle; pool is now the swimming pool, an excavation (SUMO's place rejected)	03982060	00027167
+# ===== v10, the digital layer (2026-09-17, UPPER.md §14) — Peter authorised the pass
+# ("do what you suggest"), not each edge; promote to review.tsv on his reading.
+# Published v3 pins that now bind the wrong sense, retired the way v9 retired lead and pool:
+file	tool	reject	the published v3 edge was the steel hand tool; `file` is now WordNet's set of related records, written or electronic	06508816	04451818
+directory	book	reject	the published v3 edge was the alphabetical list of names and addresses (now `address-directory`); `directory` is now the computer-science listing of files	06490451	06410904
+# Retiring a published pin means retiring everything it ENTAILED, not just the named edge:
+# v3's `file ⊑ tool` carried file up to artifact and physical-object, where SUMO's FactualText
+# (texts are corpuscular objects in SUMO) witnesses it again for the new sense.
+file	artifact	reject	SUMO files every Text under Artifact; a set of related records, written or electronic, is not a made physical thing — v3's tool-sense entailment	06508816	00021939
+file	physical-object	reject	as above, through SUMO's ContentBearingPhysical	06508816	00002684
+directory	publication	reject	v3's `directory ⊑ book` entailment; a listing of the files on a disk is not published	06490451	06277280
+directory	list	accept	WordNet's own hypernym for the computer-science sense, and the only witness for it	06490451	06481320
+directory	file	accept	v10 (§14): a directory is a set of related records kept together — WordNet's own gloss for `file` — and on a filesystem it is literally a file. The sharper `directory ⊑ computer-file` cannot be said: `computer-file` is packs/computing's and a pack may not add a parent to a core name.	06490451	06508816
+# `folder`, the computing container (v10, §14).  No source has it — WordNet 3.0 has only the cardboard
+# cover (now `folding-cover`) — so both edges are rulings, and both ends are core names so a pack could
+# not have said them.  These two lines have no offsets because `folder` has no synset: bound by name.
+folder	collection	accept	a folder holds files, messages or other folders under one name — a collection, and core's `collection` is already both a group and information
+directory	folder	accept	a filesystem directory is the folder a file manager shows; `mail-folder` is the other kind, and they are not the same thing, which is why `folder` is above both rather than beside `directory`	06490451	

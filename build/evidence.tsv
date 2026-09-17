@@ -145,9 +145,9 @@ accordion	physical-object	single	wordnet
 account	article	single	sumo	
 account	artifact	single	sumo	
 account	contract-condition	single	sumo	
-account	data-file	single	sumo	
 account	document	accepted	wordnet	
 account	essay	single	sumo	
+account	file	single	sumo	
 account	indication	single	sumo	
 account	information	accepted	opencyc sumo wordnet	
 account	line-of-text	single	sumo	
@@ -371,6 +371,29 @@ address	physical-object	dissented	wordnet
 address	place	accepted	sumo wordnet	
 address	universe	single	sumo	
 address	vehicle-body	single	sumo	
+address-directory	artifact	accepted	sumo wordnet	
+address-directory	book	accepted	cpc sumo wordnet	
+address-directory	catalog	single	wikidata	
+address-directory	collection	single	wikidata	
+address-directory	commodity	single	cpc	
+address-directory	component	single	sumo	
+address-directory	contract-condition	single	sumo	
+address-directory	device	single	sumo	
+address-directory	file	single	sumo	
+address-directory	group	single	wikidata	
+address-directory	indication	single	sumo	
+address-directory	information	single	sumo	
+address-directory	line-of-text	single	sumo	
+address-directory	mechanism	single	sumo	
+address-directory	news	single	sumo	
+address-directory	note	single	sumo	
+address-directory	phenomenon	single	sumo	
+address-directory	physical-object	accepted	sumo wordnet	
+address-directory	product	single	wordnet	
+address-directory	publication	accepted	wikidata wordnet	
+address-directory	text	single	sumo	
+address-directory	universe	single	sumo	
+address-directory	vehicle-body	single	sumo	
 adeptness	attribute	accepted	sumo wordnet	
 adeptness	property	single	sumo	
 adeptness	state	accepted	claude wordnet	
@@ -1857,9 +1880,9 @@ artichoke	universe	single	sumo
 artichoke	vegetable	accepted	gpt opencyc wikidata wordnet	
 article	artifact	rejected	sumo wordnet	
 article	contract-condition	single	sumo	
-article	data-file	single	sumo	
 article	document	accepted	claude peter	
 article	essay	single	sumo	
+article	file	single	sumo	
 article	indication	single	sumo	
 article	information	accepted	claude opencyc schemaorg sumo wordnet yago	
 article	line-of-text	single	sumo	
@@ -3698,7 +3721,7 @@ binoculars	vehicle-body	single	sumo
 biography	artifact	single	sumo	
 biography	chronicle	accepted	claude wordnet	
 biography	contract-condition	single	sumo	
-biography	data-file	single	sumo	
+biography	file	single	sumo	
 biography	history.2	single	claude	
 biography	history.3	single	claude	
 biography	indication	accepted	sumo wordnet	
@@ -4736,7 +4759,7 @@ broad-bean	substance	single	wordnet
 broad-bean	vegetable	single	wordnet	
 broadcast	artifact	single	sumo	
 broadcast	contract-condition	single	sumo	
-broadcast	data-file	single	sumo	
+broadcast	file	single	sumo	
 broadcast	indication	single	sumo	
 broadcast	information	accepted	sumo wordnet	
 broadcast	line-of-text	single	sumo	
@@ -6463,8 +6486,8 @@ ceremony	social-occasion	accepted	claude wordnet
 ceremony	volition	single	sumo	
 certificate	artifact	rejected	opencyc sumo	
 certificate	contract-condition	single	sumo	
-certificate	data-file	single	sumo	
 certificate	document	accepted	claude wordnet	
+certificate	file	single	sumo	
 certificate	image	single	opencyc	
 certificate	indication	single	sumo	
 certificate	information	accepted	claude sumo wordnet	
@@ -7121,9 +7144,9 @@ chips	vegetable	single	wordnet
 chit	article	single	sumo	
 chit	artifact	single	sumo	
 chit	contract-condition	single	sumo	
-chit	data-file	single	sumo	
 chit	document	accepted	wordnet	
 chit	essay	single	sumo	
+chit	file	single	sumo	
 chit	indication	single	sumo	
 chit	information	accepted	sumo wordnet	
 chit	invoice	accepted	claude wordnet	
@@ -7178,7 +7201,7 @@ chromium	universe	single	sumo
 chronicle	artifact	single	sumo	
 chronicle	collection	single	yago	
 chronicle	contract-condition	single	sumo	
-chronicle	data-file	single	sumo	
+chronicle	file	single	sumo	
 chronicle	indication	accepted	sumo wordnet	
 chronicle	information	accepted	sumo wordnet yago	
 chronicle	line-of-text	single	sumo	
@@ -10704,16 +10727,6 @@ dash	status	single	sumo
 dash	tension	single	sumo	
 dash	way	single	sumo	
 data-chart	information	accepted	claude wordnet	
-data-file	artifact	single	sumo	
-data-file	contract-condition	single	sumo	
-data-file	indication	accepted	sumo wordnet	
-data-file	information	accepted	sumo wordnet	
-data-file	line-of-text	single	sumo	
-data-file	phenomenon	single	sumo	
-data-file	physical-object	single	sumo	
-data-file	text	single	sumo	
-data-file	universe	single	sumo	
-data-file	vehicle-body	single	sumo	
 dataset	information	accepted	claude schemaorg yago	
 date	botanical-fruit	accepted	wikidata wordnet	
 date	commodity	single	cpc	
@@ -11448,8 +11461,8 @@ diaper	vehicle-body	single	sumo
 diary	article	single	sumo	
 diary	artifact	accepted	opencyc sumo	
 diary	contract-condition	single	sumo	
-diary	data-file	single	sumo	
 diary	essay	single	sumo	
+diary	file	single	sumo	
 diary	image	single	opencyc	
 diary	indication	single	sumo	
 diary	information	accepted	sumo wordnet yago	
@@ -11465,8 +11478,8 @@ dictionary	artifact	accepted	sumo wordnet
 dictionary	book	accepted	sumo wordnet	
 dictionary	component	single	sumo	
 dictionary	contract-condition	single	sumo	
-dictionary	data-file	single	sumo	
 dictionary	device	single	sumo	
+dictionary	file	single	sumo	
 dictionary	indication	single	sumo	
 dictionary	information	accepted	opencyc sumo yago	
 dictionary	line-of-text	single	sumo	
@@ -11672,29 +11685,14 @@ director	structure	single	opencyc
 director	system	single	opencyc	
 director	vertebrate	single	opencyc	
 director	worker	single	opencyc	
-directory	artifact	accepted	sumo wordnet	
-directory	book	accepted	cpc sumo wordnet	
 directory	catalog	single	wikidata	
 directory	collection	single	wikidata	
-directory	commodity	single	cpc	
-directory	component	single	sumo	
-directory	contract-condition	single	sumo	
-directory	data-file	single	sumo	
-directory	device	single	sumo	
+directory	file	accepted	claude-ruling	
+directory	folder	accepted	claude-ruling	
 directory	group	single	wikidata	
-directory	indication	single	sumo	
-directory	information	accepted	sumo	
-directory	line-of-text	single	sumo	
-directory	mechanism	single	sumo	
-directory	news	single	sumo	
-directory	note	single	sumo	
-directory	phenomenon	single	sumo	
-directory	physical-object	accepted	sumo wordnet	
-directory	product	single	wordnet	
-directory	publication	accepted	wikidata wordnet	
-directory	text	single	sumo	
-directory	universe	single	sumo	
-directory	vehicle-body	single	sumo	
+directory	information	accepted	wordnet	
+directory	list	accepted	claude-ruling wordnet	
+directory	publication	rejected	wikidata	
 dirndl	artifact	accepted	sumo wikidata wordnet	
 dirndl	clothing	accepted	gpt sumo wikidata wordnet	
 dirndl	commodity	single	wordnet	
@@ -12263,7 +12261,7 @@ doctrine	cognition	accepted	wordnet
 doctrine	signified	single	sumo	
 document	artifact	single	sumo	
 document	contract-condition	single	sumo	
-document	data-file	single	sumo	
+document	file	single	sumo	
 document	indication	single	sumo	
 document	information	accepted	claude sumo wordnet yago	
 document	line-of-text	single	sumo	
@@ -14966,12 +14964,14 @@ figurine	sculpture	accepted	opencyc yago
 figurine	statue	single	wikidata	
 figurine	universe	single	sumo	
 figurine	vehicle-body	single	sumo	
-file	artifact	accepted	sumo wordnet	
-file	device	accepted	sumo	
-file	hand-tool	single	wordnet	
+file	artifact	rejected	sumo	
+file	contract-condition	single	sumo	
+file	indication	accepted	sumo wordnet	
+file	information	accepted	sumo wordnet	
+file	line-of-text	single	sumo	
 file	phenomenon	single	sumo	
-file	physical-object	accepted	wordnet	
-file	tool	accepted	claude wordnet	
+file	physical-object	rejected	sumo	
+file	text	single	sumo	
 file	universe	single	sumo	
 file	vehicle-body	single	sumo	
 file-cabinet	armoire	single	wikidata	
@@ -14992,7 +14992,7 @@ file-folder	artifact	accepted	opencyc sumo wikidata wordnet
 file-folder	container	single	opencyc	
 file-folder	device	accepted	opencyc sumo	
 file-folder	equipment	single	wikidata	
-file-folder	folder	accepted	claude wordnet	
+file-folder	folding-cover	accepted	claude wordnet	
 file-folder	phenomenon	single	sumo	
 file-folder	physical-object	accepted	wikidata wordnet	
 file-folder	stationery	single	wikidata	
@@ -15690,12 +15690,7 @@ foil	vehicle-body	single	sumo
 fold	attribute	accepted	sumo wordnet	
 fold	property	single	sumo	
 fold	shape	accepted	sumo wordnet	
-folder	artifact	accepted	sumo wordnet	
-folder	phenomenon	single	sumo	
-folder	physical-object	single	wordnet	
-folder	stationery	single	wikidata	
-folder	universe	single	sumo	
-folder	vehicle-body	single	sumo	
+folder	collection	accepted	claude-ruling	
 folding-chair	artifact	accepted	opencyc sumo wordnet	
 folding-chair	chair	accepted	gpt opencyc sumo wikidata wordnet	
 folding-chair	decor	single	gpt	
@@ -15706,6 +15701,12 @@ folding-chair	physical-object	single	wordnet
 folding-chair	seat	accepted	sumo wordnet	
 folding-chair	universe	single	sumo	
 folding-chair	vehicle-body	single	sumo	
+folding-cover	artifact	accepted	sumo wordnet	
+folding-cover	phenomenon	single	sumo	
+folding-cover	physical-object	single	wordnet	
+folding-cover	stationery	single	wikidata	
+folding-cover	universe	single	sumo	
+folding-cover	vehicle-body	single	sumo	
 folding-screen	artifact	accepted	sumo wordnet	
 folding-screen	divider	accepted	claude wordnet	
 folding-screen	information	single	yago	
@@ -18347,6 +18348,14 @@ hand	procedure	single	sumo
 hand	structure	single	opencyc	
 hand	system	single	opencyc	
 hand	volition	single	sumo	
+hand-file	artifact	accepted	sumo wordnet	
+hand-file	device	single	sumo	
+hand-file	hand-tool	single	wordnet	
+hand-file	phenomenon	single	sumo	
+hand-file	physical-object	single	wordnet	
+hand-file	tool	accepted	claude wordnet	
+hand-file	universe	single	sumo	
+hand-file	vehicle-body	single	sumo	
 hand-saw	artifact	accepted	sumo wordnet	
 hand-saw	device	single	sumo	
 hand-saw	hand-tool	single	wordnet	
@@ -20578,9 +20587,9 @@ invitation	volition	single	sumo
 invoice	article	single	sumo	
 invoice	artifact	single	sumo	
 invoice	contract-condition	single	sumo	
-invoice	data-file	single	sumo	
 invoice	document	accepted	claude wordnet	
 invoice	essay	single	sumo	
+invoice	file	single	sumo	
 invoice	financial-document	accepted	claude peter	
 invoice	indication	single	sumo	
 invoice	information	accepted	claude sumo wordnet	
@@ -22212,9 +22221,9 @@ lesson	teaching	accepted	opencyc wordnet
 lesson	volition	single	sumo	
 letter	artifact	rejected	sumo wordnet	
 letter	contract-condition	single	sumo	
-letter	data-file	single	sumo	
 letter	decor	single	gpt	
 letter	document	accepted	claude	
+letter	file	single	sumo	
 letter	indication	single	sumo	
 letter	information	accepted	claude sumo wordnet	
 letter	line-of-text	single	sumo	
@@ -23692,6 +23701,10 @@ marker	phenomenon	single	sumo
 marker	physical-object	single	wordnet	
 marker	universe	single	sumo	
 marker	vehicle-body	single	sumo	
+marker-post	information	accepted	sumo wordnet	
+marker-post	phenomenon	single	sumo	
+marker-post	signal	dissented	wordnet	
+marker-post	universe	single	sumo	
 marketing	accomplishment	single	sumo	
 marketing	act	accepted	sumo wordnet	
 marketing	action	single	opencyc	
@@ -24240,8 +24253,8 @@ merchant	property	single	sumo
 merchant	worker	single	wikidata	
 message	artifact	single	sumo	
 message	contract-condition	single	sumo	
-message	data-file	single	sumo	
 message	document	accepted	claude peter	
+message	file	single	sumo	
 message	indication	single	sumo	
 message	information	accepted	claude schemaorg sumo wikidata wordnet	
 message	line-of-text	single	sumo	
@@ -24520,6 +24533,20 @@ millstone	phenomenon	single	sumo
 millstone	physical-object	single	wordnet	
 millstone	universe	single	sumo	
 millstone	vehicle-body	single	sumo	
+mime	actor	accepted	opencyc wikidata wordnet	
+mime	agent	single	wordnet	
+mime	artist	single	opencyc	
+mime	human	single	opencyc	
+mime	mammal	single	opencyc	
+mime	organism	single	wordnet	
+mime	performer	single	wordnet	
+mime	person	single	wordnet	
+mime	physical-object	single	wordnet	
+mime	professional	single	opencyc	
+mime	structure	single	opencyc	
+mime	system	single	opencyc	
+mime	vertebrate	single	opencyc	
+mime	worker	single	opencyc	
 mind	body-part	single	sumo	
 mind	cognition	accepted	claude wordnet	
 mind	organ	single	sumo	
@@ -25726,8 +25753,8 @@ news-program	vehicle-body	single	sumo
 news-report	article	single	sumo	
 news-report	artifact	single	sumo	
 news-report	contract-condition	single	sumo	
-news-report	data-file	single	sumo	
 news-report	essay	single	sumo	
+news-report	file	single	sumo	
 news-report	indication	single	sumo	
 news-report	information	accepted	sumo wordnet	
 news-report	line-of-text	single	sumo	
@@ -29461,10 +29488,6 @@ possibility	phenomenon	single	sumo
 possibility	procedure	single	sumo	
 possibility	universe	single	sumo	
 possibility	volition	single	sumo	
-post	information	accepted	sumo wordnet	
-post	phenomenon	single	sumo	
-post	signal	dissented	wordnet	
-post	universe	single	sumo	
 postage	artifact	single	opencyc	
 postage	device	single	opencyc	
 postage	information	accepted	sumo wordnet	
@@ -32320,9 +32343,9 @@ reply	volition	single	sumo
 report	article	rejected	schemaorg sumo yago	
 report	artifact	single	sumo	
 report	contract-condition	single	sumo	
-report	data-file	single	sumo	
 report	document	accepted	claude wordnet	
 report	essay	single	sumo	
+report	file	single	sumo	
 report	indication	single	sumo	
 report	information	accepted	claude schemaorg sumo wordnet yago	
 report	line-of-text	single	sumo	
@@ -33394,8 +33417,8 @@ rum	substance	single	wordnet
 rumor	act	accepted	wordnet	
 rumor	artifact	single	sumo	
 rumor	contract-condition	single	sumo	
-rumor	data-file	single	sumo	
 rumor	event	accepted	wordnet	
+rumor	file	single	sumo	
 rumor	gossip	accepted	claude wordnet	
 rumor	indication	single	sumo	
 rumor	information	accepted	opencyc sumo	
@@ -35191,7 +35214,7 @@ short-circuit	connector	single	wordnet
 short-circuit	physical-object	single	wordnet	
 short-letter	artifact	accepted	sumo wordnet	
 short-letter	contract-condition	single	sumo	
-short-letter	data-file	single	sumo	
+short-letter	file	single	sumo	
 short-letter	indication	single	sumo	
 short-letter	information	accepted	sumo wordnet	
 short-letter	letter	accepted	claude wordnet	
@@ -37171,9 +37194,9 @@ state-of-matter	property	single	sumo
 statement	article	single	sumo	
 statement	artifact	single	sumo	
 statement	contract-condition	single	sumo	
-statement	data-file	single	sumo	
 statement	document	accepted	claude wordnet	
 statement	essay	single	sumo	
+statement	file	single	sumo	
 statement	indication	single	sumo	
 statement	information	accepted	schemaorg sumo wordnet	
 statement	line-of-text	single	sumo	
@@ -42223,8 +42246,8 @@ web	collection	single	sumo
 web	group	single	wordnet	
 web	phenomenon	single	sumo	
 web	system	single	wordnet	
-web-page	data-file	dissented	wordnet	
 web-page	document	accepted	claude peter	
+web-page	file	dissented	wordnet	
 web-page	indication	single	wordnet	
 web-page	information	accepted	claude schemaorg wordnet yago	
 web-site	artifact	single	wordnet	

@@ -20,7 +20,7 @@ ada-language programming-language
 adjacency-list graph-data-structure
 adjacency-matrix graph-data-structure
 administrative-data-processing data-processing
-advanced-audio-coding audio-coding-format
+advanced-audio-coding audio-coding-format audio-file-format
 advanced-video-coding video-coding-format
 agile-software-development computer-programming software-development-methodology
 algebraic-data-type data-type
@@ -78,6 +78,7 @@ atomic-operation computer-operation
 attribute '*'
 audio '*'
 audio-coding-format compression-format
+audio-file media-file
 audio-file-format file-format
 authenticated-data-structure data-structure
 authentication data-processing
@@ -221,8 +222,8 @@ computer-cache computer-memory data-buffer
 computer-circuit device
 computer-cluster computer-system group
 computer-error event
-computer-file data-file
-computer-font data-file
+computer-file file
+computer-font file
 computer-hardware hardware
 computer-icon symbol
 computer-instruction code
@@ -266,6 +267,7 @@ control-flow concept
 control-operation computer-operation
 controlled-thesaurus controlled-vocabulary
 controlled-vocabulary knowledge-organization-system
+conversation '*'
 copy '*'
 copy-on-write data-processing-technique
 copyleft license
@@ -279,7 +281,8 @@ crowdsourcing practice
 cryptographic-hash-function hash-function
 cryptographic-protocol communications-protocol
 cryptography computer-science
-csv data-serialization-format
+css computer-language text-file-format
+csv data-serialization-format text-file-format
 cyberattack activity
 cyc knowledge-base
 cyclic-redundancy-check checksum hash-function
@@ -296,7 +299,6 @@ data-descriptor identifier
 data-encoding code
 data-encryption activity
 data-field set
-data-file '*'
 data-input-device peripheral
 data-integrity property
 data-lake data-warehouse
@@ -360,6 +362,7 @@ desktop-environment system-software
 desktop-publishing commercial-enterprise
 device '*'
 device-driver utility-program
+device-file computer-file
 devops software-development-methodology
 dhcp application-layer-protocol
 diagnostic-program utility-program
@@ -378,6 +381,7 @@ dijkstra-algorithm graph-algorithm
 dip-switch electric-switch
 directed-acyclic-graph directed-graph
 directed-graph concept
+directory '*'
 disambiguator natural-language-processor
 disaster-recovery practice
 disk-access memory-access
@@ -439,10 +443,13 @@ electronic-database database
 elixir-language programming-language
 elm-language programming-language
 email '*'
+email-address computer-address
+email-attachment computer-file
+email-header metadata
 email-protocol application-layer-protocol
 embedded-database database-management-system software-library
 embedded-system computer computer-system
-eml-file-format file-format
+eml-file-format message-file-format
 emoji symbol
 encryption data-processing
 end-to-end-encryption encryption
@@ -488,15 +495,18 @@ feed web-feed
 fiber-optic-communication telecommunication
 field-of-study '*'
 field-programmable-gate-array chip
+file '*'
 file-archiver utility-program
 file-attribute metadata
-file-directory computer-file list
 file-format information
+file-owner file-attribute
 file-path character-string identifier
 file-server digital-computer
+file-size file-attribute
 file-synchronization data-synchronization
 file-system data-structure system-software
 file-system-permissions file-attribute
+file-timestamp file-attribute
 file-transfer-protocol application-layer-protocol
 filename name
 filename-extension identifier
@@ -507,6 +517,7 @@ flac audio-coding-format audio-file-format
 floating-point-format code primitive-data-type
 floating-point-operation computer-operation
 flow-chart multidimensional-language
+folder '*'
 folksonomy classification-scheme
 font-cartridge character
 font-file-format file-format
@@ -573,7 +584,7 @@ hard-copy information
 hard-disc magnetic-disk
 hard-disk '*'
 hard-disk-drive non-volatile-storage
-hard-link file-directory
+hard-link computer-file
 hardware '*'
 hardware-counter processor-register
 hardware-emulation method
@@ -601,9 +612,10 @@ high-level-formatting code
 higher-order-function subroutine
 hmac message-authentication-code
 home-computer computer
+home-directory directory
 home-page web-page
 hostname identifier
-html markup-language
+html markup-language text-file-format
 http-2 hypertext-transfer-protocol
 http-3 hypertext-transfer-protocol
 https cryptographic-protocol hypertext-transfer-protocol
@@ -613,15 +625,17 @@ hyperlink program-link
 hypertext-system object-oriented-database-management-system
 hypertext-transfer-protocol application-layer-protocol
 hypervisor system-software
-icalendar data-serialization-format
+icalendar data-serialization-format text-file-format
 identifier information
 image '*'
+image-file media-file
 image-file-format file-format
 image-scanner data-input-device
 immutable-database database
 immutable-object software-object
 imperative-programming computer-programming programming-paradigm
 in-memory-database database-management-system
+inbox mail-folder
 index-register processor-register
 indication '*'
 information '*'
@@ -768,6 +782,8 @@ magnetic-core-memory ram
 magnetic-disk '*'
 magnetic-stripe magnetic-tape
 magnetic-tape device
+mail-folder folder
+mailing-list list
 mainframe-computer computer-server digital-computer
 majority-operation threshold-operation
 makefile configuration-file
@@ -776,17 +792,19 @@ man-in-the-middle-attack cyberattack
 manifest-file computer-file
 manual-memory-management memory-management
 mapreduce data-processing-technique software-design-pattern
-markdown markup-language
+markdown markup-language text-file-format
 markup-language computer-language
 master-file computer-file
 mathematics '*'
 matlab programming-language
 matrix-protocol messaging-protocol
-matroska multimedia-container-format
+matroska multimedia-container-format video-file-format
 maximum-flow-problem computational-problem
-mbox file-format
+mbox message-file-format
 measure '*'
 mechanism '*'
+media-file computer-file
+media-type identifier metadata
 mediawiki wiki-software
 memcached key-value-database
 memoization data-processing-technique
@@ -804,8 +822,10 @@ merkle-tree authenticated-data-structure tree-data-structure
 message '*'
 message-authentication-code code
 message-broker middleware
+message-file-format file-format
 message-passing data-processing-technique
 message-queue software
+message-thread conversation
 messagepack data-serialization-format
 messaging-protocol application-layer-protocol
 metadata information
@@ -818,7 +838,6 @@ microprocessor chip
 microservices service-oriented-architecture
 microsoft-windows operating-system
 middleware system-software
-mime internet-standard
 minicomputer digital-computer
 minimum-spanning-tree tree-data-structure
 mit-license software-license
@@ -830,9 +849,10 @@ monitor-program computer-program
 monolithic-application software-architecture
 moores-law law
 motherboard hardware
+mount-point directory
 mozilla-foundation nonprofit-organization
 mp3 audio-coding-format audio-file-format
-mp4 multimedia-container-format
+mp4 multimedia-container-format video-file-format
 mqtt messaging-protocol
 multi-factor-authentication authentication
 multidimensional-language programming-language
@@ -840,6 +860,7 @@ multimedia-container-format file-format
 multiplex-operation computer-operation
 multiprocessing data-processing
 multiprocessor digital-computer
+multipurpose-internet-mail-extensions internet-standard
 multithreading concurrency data-processing-technique
 musical-instrument-digital-interface communications-protocol
 mutation-testing software-testing
@@ -848,6 +869,7 @@ mutual-information quantity
 mysql relational-database-management-system
 n-triples rdf-serialization-format
 name '*'
+named-pipe computer-file
 namespace identifier set
 natural-language-processor application
 network-address-translation data-processing-technique
@@ -873,6 +895,7 @@ network-time-protocol application-layer-protocol
 network-topology concept
 networking-hardware hardware
 new-line control-operation printing-operation
+newsletter periodical
 nim-language programming-language
 noisy-channel-coding-theorem concept theorem
 non-dedicated-file-server file-server
@@ -880,6 +903,7 @@ non-volatile-storage computer-memory
 nonprofit-organization organization
 nonsolid-color attribute
 nosql database-management-system
+notification message
 np-completeness property
 null-pointer pointer-data-type
 number-cruncher computer
@@ -925,7 +949,7 @@ operating-system-kernel system-software
 operation-code code
 operational-transformation concurrency-control
 optical-disk device
-opus-codec audio-coding-format
+opus-codec audio-coding-format audio-file-format
 organization '*'
 osi-model model-of-computation technical-standard
 output-device peripheral
@@ -956,6 +980,7 @@ pdf document-file-format
 peer-node network-node
 peer-to-peer network-architecture software-architecture
 penetration-test test
+periodical '*'
 peripheral equipment hardware
 perl scripting-language
 persistent-data-structure data-structure
@@ -975,6 +1000,7 @@ portable-computer personal-computer
 portable-executable executable-file file-format
 portal-site web-site
 posix technical-standard
+post message
 post-office-protocol email-protocol
 postcondition condition
 postgresql relational-database-management-system
@@ -1025,6 +1051,7 @@ publish-subscribe-pattern software-design-pattern
 pull-request message
 pure-function subroutine
 push-down-queue queue-data-structure stack-data-structure
+push-notification notification
 pushdown-automaton finite-automaton
 python-language programming-language
 quantity '*'
@@ -1035,7 +1062,7 @@ query-plan data-structure
 queue-data-structure abstract-data-type list
 quic transport-layer-protocol
 quicksort sorting-algorithm
-quicktime-file-format multimedia-container-format
+quicktime-file-format multimedia-container-format video-file-format
 r-language programming-language
 race-condition software-bug
 radiotelephone artifact
@@ -1093,10 +1120,11 @@ restructuredtext markup-language
 reusable-program computer-program
 reusable-routine subroutine
 reverse-proxy proxy-server
-rich-text-format document-file-format
+rich-text-format document-file-format text-file-format
 risc-v instruction-set-architecture
 role-based-access-control access-control
 rom '*'
+root-directory directory
 rootkit malware
 rotary-actuator mechanism
 rotational-latency latency
@@ -1118,6 +1146,7 @@ schema-org computational-ontology web-standard
 scheme-language lisp
 scratchpad-memory computer-memory
 screen-saver computer-program
+screenshot image-file
 script '*'
 scripting-language programming-language
 search-algorithm algorithm
@@ -1250,7 +1279,7 @@ strong-consistency property
 strong-typing type-system
 structured-programming imperative-programming
 subdata-base information
-subdirectory file-directory
+subdirectory directory
 subnetwork computer-network
 subroutine software
 subroutine-call computer-instruction
@@ -1288,6 +1317,7 @@ telecommunication communication
 telecommunications-engineering engineering
 telephony '*'
 temporal-database database
+temporary-file computer-file
 terminal-emulation hardware-emulation
 terminal-emulator application
 test activity
@@ -1299,6 +1329,7 @@ text-based-user-interface user-interface
 text-cursor device symbol
 text-editor editor-program
 text-file computer-file
+text-file-format file-format
 text-matching computer-program
 tf-idf quantity
 theorem '*'
@@ -1307,6 +1338,7 @@ thin-client computer network-client
 three-tier-architecture software-architecture
 threshold-operation computer-operation
 throughput network-performance-measure
+thumbnail image-file
 tiff image-file-format
 time-complexity quantity
 time-series-database database-management-system
@@ -1341,7 +1373,7 @@ trojan-horse-malware malware
 trouble '*'
 truetype font-file-format
 turing-machine computer model-of-computation
-turtle-syntax rdf-serialization-format
+turtle-syntax rdf-serialization-format text-file-format
 two-phase-commit consensus-algorithm
 twos-complement code
 type-class type-system
@@ -1377,7 +1409,7 @@ utf-8 character-encoding
 utility-program computer-program
 utility-routine subroutine
 value '*'
-vcard data-serialization-format
+vcard data-serialization-format text-file-format
 vector-clock logical-clock
 vector-graphics image
 version-control practice
@@ -1387,6 +1419,7 @@ version-control-merge data-processing
 version-control-software software
 versioned-database immutable-database
 video-coding-format compression-format
+video-file media-file
 video-file-format file-format
 videotape magnetic-tape
 virtual-machine application
@@ -1441,6 +1474,7 @@ wireless-local-area-network local-area-network
 word-processing data-processing
 word-processor application
 wordnet lexical-database
+working-directory directory
 world-wide-web computer-network internet
 world-wide-web-consortium standards-organization
 write-ahead-log append-only-log

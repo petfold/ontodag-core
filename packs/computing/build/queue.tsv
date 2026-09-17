@@ -13,6 +13,7 @@ single	active-application	information	only wordnet
 single	active-application	measure	only sumo
 single	active-application	routine	only sumo
 single	active-application	software	only wordnet
+single	address-directory	hard-copy	only sumo
 single	adjacency-matrix	array-data-structure	only wikidata
 single	adjacency-matrix	data-structure	only wikidata
 single	administrative-data-processing	accomplishment	only sumo
@@ -68,7 +69,7 @@ single	ascii-character-set	character	only sumo
 single	ascii-character-set	information	only sumo
 single	ascii-character-set	symbol	only sumo
 single	ascii-text-file	computer-file	only wordnet
-single	ascii-text-file	data-file	only wordnet
+single	ascii-text-file	file	only wordnet
 single	ascii-text-file	indication	only wordnet
 single	ascii-text-file	information	only wordnet
 single	aspect-oriented-programming	programming	only wikidata
@@ -89,6 +90,8 @@ single	asynchronous-operation	event	only sumo
 single	asynchronous-operation	procedure	only sumo
 single	asynchronous-operation	process	only wordnet
 single	asynchronous-operation	volition	only sumo
+single	audio-file-format	file-format	only wikidata
+single	audio-file-format	information	only yago
 single	authoring-language	computer-program	only sumo
 single	authoring-language	information	only wordnet
 single	authoring-language	measure	only sumo
@@ -131,7 +134,7 @@ single	background-processing	process	only wordnet
 single	background-processing	volition	only sumo
 single	backup-file	artifact	only sumo
 single	backup-file	contract-condition	only sumo
-single	backup-file	data-file	only wordnet
+single	backup-file	file	only wordnet
 single	backup-file	line-of-text	only sumo
 single	backup-file	physical-object	only sumo
 single	backup-file	text	only sumo
@@ -457,7 +460,7 @@ single	data-buffer	vehicle-body	only sumo
 single	data-center	place	only yago
 single	data-descriptor	artifact	only sumo
 single	data-descriptor	contract-condition	only sumo
-single	data-descriptor	data-file	only sumo
+single	data-descriptor	file	only sumo
 single	data-descriptor	indication	only sumo
 single	data-descriptor	information	only sumo
 single	data-descriptor	line-of-text	only sumo
@@ -515,7 +518,7 @@ single	data-synchronization	event	only opencyc
 single	data-synchronization	situation	only opencyc
 single	data-type	information	only yago
 single	database-journal	computer-file	only wikidata
-single	database-journal	data-file	only wikidata
+single	database-journal	file	only wikidata
 single	database-management-system	computer-program	only sumo
 single	database-management-system	measure	only sumo
 single	database-management-system	routine	only sumo
@@ -607,7 +610,6 @@ single	dip-switch	control	only wordnet
 single	dip-switch	physical-object	only wordnet
 single	dip-switch	vehicle-body	only sumo
 single	directed-acyclic-graph	graph	only wikidata
-single	directory	hard-copy	only sumo
 single	disambiguator	application	only wordnet
 single	disambiguator	information	only wordnet
 single	disambiguator	measure	only sumo
@@ -636,7 +638,7 @@ single	disk-error	computer-error	only wordnet
 single	disk-error	event	only wordnet
 single	disk-file	artifact	only sumo
 single	disk-file	contract-condition	only sumo
-single	disk-file	data-file	only wordnet
+single	disk-file	file	only wordnet
 single	disk-file	line-of-text	only sumo
 single	disk-file	physical-object	only sumo
 single	disk-file	text	only sumo
@@ -716,7 +718,7 @@ single	dyadic-operation	process	only wordnet
 single	dyadic-operation	volition	only sumo
 single	dynamic-array	data-structure	only wikidata
 single	dynamic-link-library	computer-file	only wikidata
-single	dynamic-link-library	data-file	only wikidata
+single	dynamic-link-library	file	only wikidata
 single	dynamic-link-library	information	only opencyc
 single	dynamic-link-library	software	only wikidata
 single	dynamic-link-library	software-library	only wikidata
@@ -776,10 +778,6 @@ single	faq	text	only sumo
 single	faq	vehicle-body	only sumo
 single	field-programmable-gate-array	integrated-circuit	only wikidata
 single	file-archiver	information	only yago
-single	file-directory	collection	only wikidata
-single	file-directory	group	only wikidata
-single	file-directory	information	only wordnet
-single	file-directory	publication	only wikidata
 single	file-path	data-type	only wikidata
 single	file-server	physical-object	only wordnet
 single	file-server	structure	only opencyc
@@ -828,6 +826,7 @@ single	flow-chart	text	only sumo
 single	flow-chart	vehicle-body	only sumo
 single	font-cartridge	character-set	only sumo
 single	font-cartridge	signal	only wordnet
+single	font-file-format	file-format	only wikidata
 single	foreground-processing	accomplishment	only sumo
 single	foreground-processing	act	only sumo
 single	foreground-processing	activity	only sumo
@@ -966,7 +965,7 @@ single	home-computer	machine	only wordnet
 single	home-computer	physical-object	only wordnet
 single	home-computer	vehicle-body	only sumo
 single	home-page	computer-file	only wordnet
-single	home-page	data-file	only wordnet
+single	home-page	file	only wordnet
 single	home-page	indication	only wordnet
 single	home-page	information	only wordnet
 single	home-page	text-file	only wordnet
@@ -985,6 +984,7 @@ single	hypertext-transfer-protocol	information	only wordnet
 single	hypertext-transfer-protocol	normal	only sumo
 single	hypertext-transfer-protocol	property	only sumo
 single	hypervisor	software-object	only opencyc
+single	image-file-format	file-format	only wikidata
 single	image-scanner	appliance	only wikidata
 single	image-scanner	camera	only wikidata
 single	image-scanner	digital-camera	only wikidata
@@ -1017,7 +1017,7 @@ single	ink-jet-printer	physical-object	only wordnet
 single	inode	information	only opencyc
 single	input-file	artifact	only sumo
 single	input-file	contract-condition	only sumo
-single	input-file	data-file	only wordnet
+single	input-file	file	only wordnet
 single	input-file	line-of-text	only sumo
 single	input-file	physical-object	only sumo
 single	input-file	text	only sumo
@@ -1069,7 +1069,7 @@ single	inverted-index	data-structure	only wikidata
 single	ip-address	information	only opencyc
 single	ip-address	metadata	only wikidata
 single	iso-image	computer-file	only wikidata
-single	iso-image	data-file	only wikidata
+single	iso-image	file	only wikidata
 single	java-language	line-of-text	only sumo
 single	java-language	programming-language	only wordnet
 single	javascript	information	only opencyc
@@ -1197,10 +1197,10 @@ single	machine-readable-dictionary	artifact	only sumo
 single	machine-readable-dictionary	book	only sumo
 single	machine-readable-dictionary	component	only sumo
 single	machine-readable-dictionary	contract-condition	only sumo
-single	machine-readable-dictionary	data-file	only sumo
 single	machine-readable-dictionary	device	only sumo
 single	machine-readable-dictionary	dictionary	only sumo
 single	machine-readable-dictionary	electronic-database	only wordnet
+single	machine-readable-dictionary	file	only sumo
 single	machine-readable-dictionary	hard-copy	only sumo
 single	machine-readable-dictionary	indication	only sumo
 single	machine-readable-dictionary	line-of-text	only sumo
@@ -1242,6 +1242,7 @@ single	magnetic-tape	physical-object	only wordnet
 single	magnetic-tape	route	only opencyc
 single	magnetic-tape	storage-device	only wordnet
 single	magnetic-tape	tape	only opencyc
+single	mailing-list	list	only claude
 single	mainframe-computer	physical-object	only wordnet
 single	mainframe-computer	structure	only opencyc
 single	mainframe-computer	vehicle-body	only sumo
@@ -1260,7 +1261,7 @@ single	manual	hard-copy	only sumo
 single	markup-language	information	only yago
 single	master-file	artifact	only sumo
 single	master-file	contract-condition	only sumo
-single	master-file	data-file	only wordnet
+single	master-file	file	only wordnet
 single	master-file	line-of-text	only sumo
 single	master-file	physical-object	only sumo
 single	master-file	text	only sumo
@@ -1317,14 +1318,6 @@ single	microsoft-windows	information	only wordnet
 single	microsoft-windows	measure	only sumo
 single	microsoft-windows	routine	only sumo
 single	middleware	information	only yago
-single	mime	actor	only opencyc
-single	mime	artist	only opencyc
-single	mime	human	only opencyc
-single	mime	mammal	only opencyc
-single	mime	professional	only opencyc
-single	mime	structure	only opencyc
-single	mime	vertebrate	only opencyc
-single	mime	worker	only opencyc
 single	minicomputer	machinery	only sumo
 single	minicomputer	physical-object	only wordnet
 single	minicomputer	structure	only opencyc
@@ -1460,7 +1453,7 @@ single	output-device	hardware	only wikidata
 single	output-device	physical-object	only wordnet
 single	output-file	artifact	only sumo
 single	output-file	contract-condition	only sumo
-single	output-file	data-file	only wordnet
+single	output-file	file	only wordnet
 single	output-file	line-of-text	only sumo
 single	output-file	physical-object	only sumo
 single	output-file	text	only sumo
@@ -1634,7 +1627,7 @@ single	raspberry-pi	motherboard	only wikidata
 single	rdf-graph	information	only opencyc
 single	read-only-file	artifact	only sumo
 single	read-only-file	contract-condition	only sumo
-single	read-only-file	data-file	only wordnet
+single	read-only-file	file	only wordnet
 single	read-only-file	line-of-text	only sumo
 single	read-only-file	physical-object	only sumo
 single	read-only-file	text	only sumo
@@ -1887,7 +1880,7 @@ single	sort-program	software	only wordnet
 single	sorting-algorithm	information	only opencyc
 single	source-code	computer-file	only wordnet
 single	source-code	computer-program	only sumo
-single	source-code	data-file	only wordnet
+single	source-code	file	only wordnet
 single	source-code	indication	only wordnet
 single	source-code	information	only wordnet
 single	source-code	measure	only sumo
@@ -2087,7 +2080,7 @@ single	track-to-track-seek-time	quantity	only sumo
 single	tract	hard-copy	only sumo
 single	transaction-file	artifact	only sumo
 single	transaction-file	contract-condition	only sumo
-single	transaction-file	data-file	only wordnet
+single	transaction-file	file	only wordnet
 single	transaction-file	line-of-text	only sumo
 single	transaction-file	physical-object	only sumo
 single	transaction-file	text	only sumo
@@ -2134,6 +2127,7 @@ single	utility-routine	information	only wordnet
 single	utility-routine	measure	only sumo
 single	utility-routine	routine	only sumo
 single	utility-routine	software	only wordnet
+single	video-file-format	file-format	only wikidata
 single	videotape	artifact	only wordnet
 single	videotape	device	only wordnet
 single	videotape	physical-object	only wordnet

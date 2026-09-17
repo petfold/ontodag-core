@@ -1,0 +1,74 @@
+# name	media-type	note — hand picks for tools/align_iana.py (UPPER.md §14).
+# `-` means the registry has no entry for this format: that is the coverage check
+# pointing the other way, and the concept keeps whatever the pack already says.
+#
+# ===== the families: the only alignments that make the registry witness anything.
+# A top-level type is aligned to the format family it collects; the subtypes below
+# it then entail `X ⊑ <family>`.  `application` (the residual bin), `example`
+# (RFC 4735's reserved fake), `multipart` (message structure, not a file) and
+# `model` (no concept in the pack yet) are deliberately left out.
+image-file-format	image	IANA's image top-level type is the family of image formats
+audio-file-format	audio	
+video-file-format	video	
+font-file-format	font	RFC 8081 moved fonts out of application/
+text-file-format	text	new in v10: the pack had no class for text/* formats
+message-file-format	message	new in v10: RFC 822 messages and their parts
+#
+# ===== formats whose registered name is not the one we call them by
+mp3	audio/mpeg	MPEG-1/2 Audio Layer III has no subtype of its own
+advanced-audio-coding	audio/aac	
+opus-codec	audio/opus	
+advanced-video-coding	video/H264	
+high-efficiency-video-coding	video/H265	
+svg	image/svg+xml	
+epub	application/epub+zip	
+icalendar	text/calendar	RFC 5545
+rich-text-format	text/rtf	application/rtf is the older registration of the same format
+rar	application/vnd.rar	
+opentype	font/otf	
+truetype	font/ttf	
+geojson	application/geo+json	RFC 7946
+json-ld	application/ld+json	
+keyhole-markup-language	application/vnd.google-earth.kml+xml	
+messagepack	application/vnd.msgpack	
+protocol-buffers	application/protobuf	
+hdf5	application/vnd.hdfgroup.hdf5	
+apache-parquet	application/vnd.apache.parquet	
+debian-package	application/vnd.debian.binary-package	
+eml-file-format	message/rfc822	the format of a saved mail message is the message media type itself
+#
+# ===== registered under more than one top-level type: the one we mean
+jpeg	image/jpeg	video/JPEG is the RTP payload, not the file
+mp4	video/mp4	the ISO base-media container as it is normally met
+ogg	application/ogg	the container; audio/ogg and video/ogg are its two payload cases
+xml	application/xml	text/xml is the same format served as text (RFC 7303)
+matroska	video/matroska	
+#
+# ===== no IANA registration: the coverage check pointing the other way
+7z	-	widely used, never registered (the de-facto label is application/x-7z-compressed)
+wav	-	no entry in the audio registry at all
+webm	-	the de-facto label video/webm is unregistered
+avi	-	de-facto video/x-msvideo
+tar-file-format	-	de-facto application/x-tar
+apache-avro	-	
+rss	-	de-facto application/rss+xml; only Atom is registered
+feed	-	
+web-feed	-	the family; Atom is registered, RSS is not
+gps-exchange-format	-	de-facto application/gpx+xml
+portable-executable	-	
+executable-and-linkable-format	-	
+self-extracting-archive	-	not a format but a packaging trick
+deflate	-	an algorithm; the registered type is the gzip container
+gzip	-	the algorithm; `gzip-file-format` takes application/gzip
+compression-format	-	our own class, not a registry entry
+audio-coding-format	-	our own class
+video-coding-format	-	our own class
+data-serialization-format	-	our own class
+rdf-serialization-format	-	our own class
+archive-file-format	-	our own class; the registry has no archive top-level type
+document-file-format	-	our own class; the registry files documents under application/
+package-format	-	our own class
+multimedia-container-format	-	our own class
+file-format	-	the root of our own class tree
+office-open-xml	-	a family of ~40 registered vnd.openxmlformats-officedocument.* types, not one
+opendocument	-	a family of ~30 registered vnd.oasis.opendocument.* types, not one

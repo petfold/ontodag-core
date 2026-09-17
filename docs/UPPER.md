@@ -1136,3 +1136,205 @@ gone), nothing lost, no qualified names; the only parent changes beyond
 the swaps are `bag`'s new children, `commodity`'s, and `clothing`, `import`
 and `merchandise` regaining `artifact` now that `commodity` no longer entails
 it.
+
+## 14. The digital layer (2026-09-17) — core v10
+
+Peter asked whether the pack had what it needs to categorise computer files,
+directories, folders, emails, messages, MIME types and media. The formats
+did: `file-format` carried 81 concepts, every family populated. The *things*
+did not, and the words were worse than the gaps: **every bare word in the
+question resolved to something else.** `file` was the steel hand tool,
+`folder` the cardboard cover, `directory` a printed list of names and
+addresses, `archive` a building, `attachment` a feeling's neighbour, `thread`
+yarn, `mailbox` the box on the street, `log` a piece of wood, `post` a marker
+stake, and `mime` — the one the computing pack had taken — was ruled onto
+`internet-standard` while OpenCyc went on witnessing `mime ⊑ actor, artist,
+human, mammal`, eight unresolved edges about a performer. This section is
+the pass that fixed the words and hung the structure under them.
+
+### The sense list
+
+`file` and `directory` are the two WordNet can settle, and it settles them
+generously: both have a computing sense already, and in both cases it is the
+sense the dictionary itself reaches for.
+
+**`file` → 06508816**, "a set of related records (either written or
+electronic) kept together". WordNet's own gloss covers the computer file, so
+no new synset is needed and the name `data-file` — which the collision rule
+had invented for it — retires. The steel hand tool (03336839) becomes
+`hand-file`. **`directory` → 06490451**, WordNet's "(computer science) a
+listing of the files stored in memory (usually on a hard disk)"; the
+alphabetical list of names and addresses becomes `address-directory`. That
+pulls `packs/computing`'s `file-directory` up into core under the bare word,
+which is where a person sorting a disk will look for it.
+
+**`folder` is made, not found.** WordNet 3.0 has no computing sense for it —
+only "covering that is folded over to protect the contents", which becomes
+`folding-cover` (it is the parent of `file-folder`, the cardboard one in the
+filing cabinet, and that edge follows the synset without being touched). The
+first reading of this pass left the word alone, on the grounds that a folder
+simply *is* a directory and OntoDAG has no synonyms. That was wrong twice
+over. It is not true — a mail client's folder is a folder and is not a
+filesystem directory — and it left the commonest word in the whole region
+pointing at cardboard.
+
+So `folder` is introduced by name, with no hub, and placed by ruling: **a
+folder holds files, messages or other folders under one name.** `directory`
+and `mail-folder` are its two kinds, and they are genuinely different things,
+which is why `folder` sits above them rather than beside `directory`. It is
+one of the sixteen core concepts with no WordNet offset; both its edges
+(`folder ⊑ collection`, `directory ⊑ folder`) are rulings, because no source
+has the concept at all, and both ends are core names, so no pack could have
+said them.
+
+**`mime` goes back to the performer** (10318892, an actor who communicates
+entirely by gesture — new to core, placed by WordNet and OpenCyc agreeing).
+The standard is renamed in full, `multipurpose-internet-mail-extensions`, as
+`simple-mail-transfer-protocol` and `executable-and-linkable-format` already
+are, and the OpenCyc alignment that had been feeding the actor edges goes
+with the name.
+
+**`post` is freed** — 07257815, "a pole or stake set up to mark something",
+becomes `marker-post` — so that `packs/computing` can define the message
+sense, which WordNet 3.0 predates. **`archive`, `attachment`, `thread`,
+`mailbox`, `log` and `channel` are left alone**: none has a computing synset
+to move to, the pack already carries `archive-file` and `log-file`, and the
+rest are new concepts rather than sense corrections (`email-attachment`,
+`message-thread`, `mail-folder` below).
+
+### What the swaps taught, again
+
+§13 found two traps in a rename. This pass found a third and a fourth.
+
+**A rename ripples sideways.** Freeing `post` did not leave a hole: the next
+Core WordNet synset whose first lemma is `post` — 08624385, the position
+where a sentry stands — took the word at once, and `station`, which had held
+that name for nine versions, vanished from the pack without a word in any
+diff but the `.od`. Hand-naming 08624385 `station` pins it. **Freeing a word
+means naming its successor, not only its predecessor.**
+
+**Retiring a published pin means retiring what it entailed.** §13 retired
+`lead ⊑ leadership` and `pool ⊑ place` by rejecting the named edge. That is
+not enough when the new sense has its own witnesses for the *ancestors*:
+v3's `file ⊑ tool` carried `file` up to `artifact` and `physical-object`,
+where SUMO — which files every `Text` under `Artifact` — witnessed them
+again for the records sense, and the re-sensed `file` came out a physical
+object. Four rejections, not two: `file ⊑ tool, artifact, physical-object`
+and `directory ⊑ book, publication`.
+
+**A pack may not add a parent to a core name.** `file-directory ⊑
+computer-file` was the sharpest thing the pack knew about a directory, and
+once core owned the word the pack could no longer say it: `consensus.py`
+computes `own = placed - base`, so a pack writes parents only for names it
+owns. The fact is carried in core instead, one step coarser, as `directory ⊑
+file` — true on both readings, since a directory is a set of related records
+kept together and on a filesystem is literally a file. The sharper edge is
+recorded as a comment in the pack's `claude-ruling.tsv`. Whether a pack
+should be able to refine a core concept is a question for §3.
+
+### The media types — IANA as the format layer's witness
+
+The registry of internet media types is what RFC 2045 called MIME types and
+RFC 6838 renamed. It is a one-level classification of every format that
+travels over the wire or sits in a mail part, maintained by IANA and pinned
+to an RFC per entry: **2,347 registered subtypes under ten top-level types**
+(`tools/extract_iana.py`, `sources/iana/*.csv`; there is no `example.csv` —
+RFC 4735 reserves the type and registers nothing under it). It is a witness
+and a coverage check, never imported, as the Google Product Taxonomy is for
+goods (§10) and the UN CPC for services (§11).
+
+**What is aligned, and what is deliberately not.** Only the top level is
+aligned to concepts — `image` to `image-file-format`, `audio`, `video`,
+`font`, and two families the pack lacked, `text-file-format` and
+`message-file-format`. So what the registry entails about a format we have
+is exactly `X ⊑ <family>`. Nothing is aligned to the registry's root:
+**`png ⊑ media-type` would be false**, because `image/png` is the *name* of
+png's type, not a kind of thing above png. The subtype is carried on the
+concept as the witness's id, the way a CPC code is carried on a good, and
+never becomes a concept. `application` stays unaligned — it is the residual
+bin, 1,800 of the 2,347 entries and three quarters of those vendor trees —
+and so do `example`, `multipart` (message structure, not a file) and `model`
+(no concept yet).
+
+**How it is matched.** CPC had to be read out of phrases; the registry has
+the opposite problem. A subtype is a bare token, and a quarter of them are
+ordinary words meaning something else: `text/calendar`, `model/step`,
+`application/index`, `application/report`, `image/example`, `audio/tone`,
+`audio/sofa`. Matching those against the vocabulary would have aligned the
+calendar in someone's head to a file format. So the match is fenced twice:
+only a concept **already under `file-format`** may take a media type, and
+the key is its name with a format suffix stripped (`zip-file-format` → zip,
+`turtle-syntax` → turtle). A subtype registered under more than one
+top-level type is never guessed. Result: 59 concepts aligned — 27 by name,
+32 by hand pick (`align/iana-picks.tsv`), 0 left ambiguous.
+
+**The picks are half of the finding.** Twenty-seven format concepts are
+refused with `-`, and eight of those are the coverage check pointing the
+other way: **7z, wav, webm, avi, tar, avro, rss and gpx have no IANA
+registration at all** — every one in daily use, every one travelling under
+an `x-` label or a de-facto name. The rest of the picks are formats whose
+registered name is not the one we call them by (mp3 → `audio/mpeg`, svg →
+`image/svg+xml`, epub → `application/epub+zip`, icalendar → `text/calendar`,
+eml → `message/rfc822`) or families the registry splits into forty entries
+(`office-open-xml`, `opendocument`).
+
+**What it witnessed.** Thirty-one family edges. Thirteen the pack had
+already ruled by hand in §8's skeleton — those now carry two independent
+witnesses instead of one ruling, which is the whole point of running a
+witness over an existing layer. Eighteen were new, and they were read one by
+one rather than accepted in a block, because **a registration types a byte
+stream, not always a file**: fourteen accepted (csv, icalendar, vcard,
+turtle, rtf, html, markdown, css as text formats; eml and mbox as message
+formats; matroska, mp4, quicktime as video; aac and opus as audio, whose
+frames are self-delimiting and do ship as bare files) and **four rejected —
+`advanced-video-coding`, `high-efficiency-video-coding`, `vp9`, `av1` ⊑
+`video-file-format`**, because a video coding format never reaches a disk on
+its own; `video/H264` types an RTP payload (RFC 6184), and H.264 gets to a
+file inside mp4, matroska or webm. The registry is right about what it
+registers and wrong about what we were asking it.
+
+**One bug it exposed.** The first `views/iana.tsv` came out empty: a family
+class the pack asserts only in `extra-edges.tsv` has no row in
+`concepts.tsv`, so `image-file-format` had nowhere to carry `image` and the
+registry entailed nothing at all. `align.py` now gives a row to every name
+the media-type table aligns.
+
+**Coverage, the other way.** 905 registered subtypes outside the vendor
+trees have no concept here (and 1,389 vendor, personal and `x-` ones are
+counted, not listed) — `build/iana-unmatched.tsv`. Most are payload types
+and telephony codecs nobody sorts files by, but the list also names formats
+worth having: `image/apng`, `image/heic`, `image/jxl`, `image/jp2`,
+`font/woff`, `font/woff2`, `audio/vorbis`, `model/stl`, `model/gltf+json`,
+`model/obj`, `multipart/form-data`, `message/partial`. Left for a later pass.
+
+### The structure under the words
+
+Thirty-one names hand-asserted in `packs/computing/align/extra-edges.tsv`
+(the pack grows by thirty: `file-directory` left for core) — everything here
+postdates WordNet 3.0, so none of them has a source to witness it:
+
+- **media types**: `media-type ⊑ identifier, metadata` (the label, carried by
+  a file, a mail part and an HTTP body alike),
+  `multipurpose-internet-mail-extensions ⊑ internet-standard`;
+- **the filesystem**: `root-directory`, `home-directory`,
+  `working-directory`, `mount-point` under `directory`; `temporary-file`,
+  `device-file`, `named-pipe` under `computer-file`; `media-file` with
+  `image-file` (and `screenshot`, `thumbnail`), `audio-file`, `video-file`;
+  `file-size`, `file-timestamp`, `file-owner` under `file-attribute`;
+- **mail and messages**: `email-address ⊑ computer-address`,
+  `email-attachment ⊑ computer-file`, `email-header ⊑ metadata`,
+  `mail-folder ⊑ folder` (a mail store's folder is not a filesystem
+  directory, whatever the icon says) with `inbox` under it, `mailing-list`,
+  `newsletter ⊑ periodical`, `message-thread ⊑ conversation`,
+  `notification` and `push-notification` under `message`, and `post ⊑
+  message` in the word core freed for it;
+- and `hard-link`, which had been filed under `file-directory` and which the
+  rename turned into a plain falsehood, moved to `computer-file` beside
+  `symbolic-link`.
+
+**Result:** core 4,620 categories (+3: `directory`'s computing synset, `mime`
+the performer and `folder`, which no source has; five renames, nothing lost),
+`packs/computing` 1,386 (+30). The pack's `media-type` tree, the two new
+format families and the mail vocabulary are the answer to Peter's question;
+the pack-refines-core limitation and the 905 unclaimed subtypes are what it
+leaves owed.

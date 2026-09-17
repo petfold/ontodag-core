@@ -215,3 +215,12 @@ product	sumo	-
 product	schemaorg	-
 product	yago	-
 product	opencyc	-
+# ===== v10 re-sensing (2026-09-17, UPPER.md §14): the digital layer. Peter asked for
+# the file/folder/directory/mime sense list; these are the two words WordNet can settle.
+file	wordnet	06508816	# `file`/`data_file`: a set of related records, "either written or electronic" — WordNet's own gloss covers the computer file. The steel hand tool (03336839) is now `hand-file`; the name `data-file` retires with this line
+directory	wordnet	06490451	# WordNet's own "(computer science) a listing of the files stored in memory"; the alphabetical list of names and addresses (06423619) is now `address-directory`. This pulls packs/computing's `file-directory` up into core under the bare word
+# `folder`: the computing container, which WordNet 3.0 has no synset for at all — introduced by name,
+# with no hub, and placed by ruling.  A folder holds files, messages or other folders under one name;
+# a filesystem `directory` and a client's `mail-folder` are both kinds of it (v10, §14).
+folder	wordnet	-
+folder	gpt	-	# the Google taxonomy's `folder` is the stationery product (6884a); the computing container is not a good

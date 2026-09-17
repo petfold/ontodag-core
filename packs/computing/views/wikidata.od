@@ -34,6 +34,7 @@ adapter equipment hardware
 addiction '*'
 addition '*'
 address '*'
+address-directory catalog
 adhesive '*'
 adjacency-list '*'
 adjacency-matrix matrix
@@ -206,6 +207,7 @@ attraction '*'
 auction sale
 audience '*'
 audio '*'
+audio-file-format file-format
 auditor '*'
 auger '*'
 augury '*'
@@ -332,7 +334,7 @@ bikini '*'
 bill cash
 billiard-ball sporting-goods
 billiard-table dining-table sporting-goods table
-binary-file computer-file data-file
+binary-file computer-file file
 binary-heap '*'
 binary-numeral-system '*'
 binary-search '*'
@@ -849,7 +851,7 @@ conduit software
 confederacy '*'
 confession '*'
 confidence '*'
-configuration-file computer-file data-file
+configuration-file computer-file file
 confirmation '*'
 conflict-free-replicated-data-type data-structure
 confrontation '*'
@@ -906,7 +908,7 @@ coral '*'
 cord '*'
 cordial-reception '*'
 core '*'
-core-dump computer-file data-file
+core-dump computer-file file
 corer kitchenware
 corkscrew kitchenware
 corn grain
@@ -1036,7 +1038,6 @@ data-compression '*'
 data-curation '*'
 data-deduplication '*'
 data-field '*'
-data-file '*'
 data-integrity '*'
 data-lake data-warehouse
 data-lineage '*'
@@ -1142,7 +1143,7 @@ diet food
 dig '*'
 digital-archive digital-library
 digital-camera camera
-digital-certificate computer-file data-file
+digital-certificate computer-file file
 digital-computer computer
 digital-library electronic-database
 digital-object-identifier '*'
@@ -1174,7 +1175,7 @@ dishwasher appliance household-appliance
 disinfectant '*'
 disk '*'
 disk-controller '*'
-disk-image computer-file data-file
+disk-image computer-file file
 disk-operating-system operating-system
 disk-partitioning '*'
 diskette '*'
@@ -1459,7 +1460,6 @@ file '*'
 file-archiver '*'
 file-attribute '*'
 file-cabinet armoire closet wardrobe
-file-directory catalog
 file-folder stationery tool
 file-format '*'
 file-path character-string
@@ -1528,13 +1528,14 @@ foe acquaintance adversary
 fog cloud
 foil material
 fold '*'
-folder stationery
 folding-chair chair
+folding-cover stationery
 folding-screen '*'
 folk-music '*'
 folklore custom
 folksonomy '*'
 fond-regard '*'
+font-file-format file-format
 food '*'
 foot '*'
 footwear clothing garment
@@ -1778,6 +1779,7 @@ ham pork
 hammer '*'
 hamming-code '*'
 hammock bed playground-swing swing
+hand-file '*'
 hand-saw '*'
 hand-truck '*'
 handbag housing machine-housing
@@ -1941,6 +1943,7 @@ illness '*'
 illusion '*'
 illustration image
 image '*'
+image-file-format file-format
 image-scanner appliance digital-camera household-appliance input-device
 imagination '*'
 immigrant '*'
@@ -2273,7 +2276,7 @@ locker cabinet
 locomotive '*'
 loft '*'
 log-cabin house
-log-file computer-file data-file
+log-file computer-file file
 log-structured-merge-tree '*'
 loganberry '*'
 logarithm '*'
@@ -2352,7 +2355,7 @@ mandarin citrus-fruit
 mango stone-fruit
 mangosteen commodity tree
 manicure '*'
-manifest-file computer-file data-file
+manifest-file computer-file file
 mannequin '*'
 manual '*'
 manual-memory-management memory-management
@@ -2466,7 +2469,7 @@ mill machine
 millet '*'
 milling-machine '*'
 millstone '*'
-mime '*'
+mime actor
 mind '*'
 mine '*'
 miner '*'
@@ -2540,6 +2543,7 @@ mule '*'
 multi-factor-authentication '*'
 multimedia-container-format file-format
 multiplexer '*'
+multipurpose-internet-mail-extensions '*'
 multithreading concurrency
 murder '*'
 muscle '*'
@@ -2974,7 +2978,6 @@ portfolio file-folder
 portrait image
 poser mannequin
 posix '*'
-post '*'
 post-office-protocol '*'
 postage stationery
 postage-meter machine
@@ -3485,7 +3488,7 @@ shannon-source-coding-theorem '*'
 shape '*'
 shaper '*'
 share contract
-shared-library computer-file data-file software-library
+shared-library computer-file file software-library
 shark fish fish-meat
 shaving '*'
 shaving-brush brush
@@ -3854,7 +3857,7 @@ swing '*'
 swivel '*'
 sword '*'
 symbol concept sign
-symbolic-link computer-file data-file reference reference-data-type
+symbolic-link computer-file file reference reference-data-type
 symmetric-key-cryptography algorithm
 symptom '*'
 syndrome disease illness symptom
@@ -3886,7 +3889,7 @@ tank '*'
 tapeline ruler
 tapenade spread
 tapioca '*'
-tar-file-format computer-file data-file
+tar-file-format computer-file file
 target sporting-goods
 tariff '*'
 taro-root '*'
@@ -3937,7 +3940,7 @@ text '*'
 text-based-user-interface interface user-interface
 text-cursor computer-icon symbol
 text-editor application
-text-file computer-file data-file file-format plain-text
+text-file computer-file file file-format plain-text
 textbook '*'
 tf-idf '*'
 theodolite tool
@@ -4191,6 +4194,7 @@ vest outerwear
 veteran employee warrior
 victim person
 victory '*'
+video-file-format file-format
 videotape magnetic-tape
 view image
 villa house
