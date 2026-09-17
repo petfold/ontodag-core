@@ -1536,3 +1536,46 @@ alone: Wikidata files techniques, tasks and vehicles alike under AI, and
 `autonomous-car ⊑ artificial-intelligence` is not a claim worth accepting when
 `autonomous-car ⊑ autonomous-vehicle` is already carrying it. The same for
 computing's eight architectural patterns.
+
+### 15.4 Two checks worth keeping
+
+Neither of these is in any tool yet; both found real faults in minutes and
+both are mechanical enough to add.
+
+**Compare an edge's two lexicographer files.** WordNet files every noun in one
+of twenty-five semantic fields, and the field of a child against the field of
+its parent is a cheap, blunt test for a sense that has leaked. Most crossings
+are innocent and expected — every `person` sits under `human`, which WordNet
+files with the animals; the goods layer puts food under `commodity`; `icing`
+is a food under `decoration`, an artifact — so the test is a filter for
+reading, not a rule. Thirty-seven crossings in core, and **four were real**,
+every one the same shape: *a second sense of the same word, arriving through a
+source that means the other one*.
+
+- `buffet` is 07576182, the **meal**; it had `⊑ furniture` from 02912065, the
+  sideboard, which core already holds under its own name.
+- `gourd` is 03449451, the **bottle** made from a dried gourd shell; it had
+  `⊑ vegetable` from the plant and the fruit.
+- `pig` is 10179649, "a person regarded as greedy and pig-like"; it had
+  `⊑ mammal` from the animal.
+- `vein` is 05418717, the **blood** vessel; it had `⊑ vessel`, and core's
+  `vessel` is 04531098, "an object used as a container".
+
+This is the polysemy trap of §13 and §14 seen from the other end. Those passes
+asked which sense a *name* should carry; this one asks whether an *edge* was
+written about the sense the concept actually has. The packs were checked the
+same way and are clean.
+
+**Count direct children.** A concept that suddenly has a hundred is usually
+not a good classification but a bad alignment — the way v9 found `product`
+sitting over 120 artifacts because three sources' `Product` classes meant the
+commercial sense. Core's largest are `concept` (16), and in the union
+`device` (258), `information` (214), `artifact` (199): hubs, but the honest
+kind, and no newcomer among them.
+
+**And one about method.** The helper that proposed parents skipped pairs
+already rejected — but it matched them **by name**, and review rows bind by
+**offset** (§13). Four of 746 rulings therefore contradicted Peter's own
+`review.tsv` and had to be withdrawn. They were inert, because `review.tsv`
+outranks `claude-ruling.tsv`, but a tool that reads the review files must use
+`resolve_reviews`, never the raw columns.

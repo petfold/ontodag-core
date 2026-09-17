@@ -921,3 +921,18 @@ west	region	accept	as above: "the countries of (originally) Europe and (now incl
 confederacy	organization	accept	the southern states that seceded, held as an instance; an organization is what core can say about it (2026-09-17 review)	09050244	08008335
 necessity	physical-object	accept	"anything indispensable; food and shelter are necessities of life" — things (2026-09-17 review)	09367203	00002684
 subject	physical-object	accept	"something (a person or object or scene) selected by an artist" (2026-09-17 review)	04347225	00002684
+# ===== Cross-sense contamination (2026-09-17 review).  Found by comparing each edge's two
+# WordNet LEXICOGRAPHER FILES: a food under an artifact, a person under an animal, a body part
+# under a container.  Most such crossings are WordNet's own and fine (every person is under
+# `human`, which is filed with the animals; the goods layer puts food under `commodity`), but
+# four were a second sense of the same word leaking in through a source that means the other one.
+buffet	furniture	reject	core's `buffet` is 07576182, the MEAL; the furniture edge belongs to 02912065, the sideboard, which core has under its own name. A source that means the sideboard by `buffet` put it here (2026-09-17 review)	07576182	03405725
+gourd	vegetable	reject	core's `gourd` is 03449451, the BOTTLE made from a dried gourd shell; the vegetable edge belongs to the plant and the fruit (12157769, 12158031) (2026-09-17 review)	03449451	07707451
+pig	mammal	reject	core's `pig` is 10179649, "a person regarded as greedy and pig-like"; the animal is 02395406 and core has it under its own name (2026-09-17 review)	10179649	01861778
+vein	vessel	reject	core's `vein` is 05418717, the BLOOD vessel, and core's `vessel` is 04531098, "an object used as a container (especially for liquids)" — two different words spelled the same (2026-09-17 review)	05418717	04531098
+# ... and rejecting one contaminated edge lets a COARSER one from the same source take its
+# place, exactly as retiring a published pin did in §14: `pig ⊑ mammal` gone, `⊑ vertebrate`
+# and `⊑ animal` arrive; `vein ⊑ vessel` gone, `⊑ container` arrives.  Reject the chain.
+pig	vertebrate	reject	the animal sense again, one level up (2026-09-17 review)	10179649	01471682
+pig	animal	reject	and again; `pig ⊑ organism` stays, because a person is an organism (2026-09-17 review)	10179649	00015388
+vein	container	reject	OpenCyc's container sense again, one level up; `vein ⊑ body-part` and `⊑ tube` are the true ones (2026-09-17 review)	05418717	03094503
