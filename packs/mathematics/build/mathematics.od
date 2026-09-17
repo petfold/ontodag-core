@@ -34,7 +34,7 @@ arithmetic mathematics
 arithmetic-mean mean
 arithmetic-operation mathematical-operation
 arithmetic-progression concept
-arity number
+arity number numeric-quantity
 asymmetry attribute
 attribute '*'
 attribute-exploration algorithm
@@ -67,14 +67,14 @@ bloom-filter data-structure
 boolean-algebra heyting-algebra
 boolean-function function
 boolean-satisfiability-problem attribute decision-problem
-boundary-condition mathematical-statement
+boundary-condition mathematical-statement precondition
 bounded-lattice mathematical-lattice
 brute-force-attack cryptanalysis procedure
 calculation '*'
 calculus mathematical-analysis
 calculus-of-variations calculus
 cardinal-number number
-cardinality invariant number
+cardinality invariant number numeric-quantity
 catalan-number natural-number
 cipher algorithm
 ciphertext information
@@ -92,7 +92,7 @@ commitment-scheme cryptographic-protocol
 commutative-ring mathematical-ring
 complete-graph connected-graph
 complete-lattice mathematical-lattice
-complex-number number
+complex-number number numeric-quantity
 complexity-class mathematical-set
 composite-number natural-number
 computability-theory mathematical-logic
@@ -167,7 +167,7 @@ discrete-logarithm decision-problem
 discrete-mathematics mathematics
 distributive-lattice mathematical-lattice
 divergent-series mathematical-series
-division arithmetic-operation
+division '*'
 division-ring mathematical-ring
 document '*'
 dodecagon polygon
@@ -227,9 +227,8 @@ formula '*'
 fourier-series mathematical-series
 fractal shape
 fractal-geometry geometry
-fraction complex-number
 frequency-distribution statistical-distribution
-function binary-relation
+function '*'
 function-domain mathematical-set
 fuzzy-logic mathematical-logic
 galois-connection concept
@@ -281,7 +280,7 @@ hyperbolic-geometry non-euclidean-geometry
 hypergraph mathematical-structure
 identity-element concept
 imaginary-number complex-number
-implication logical-relation
+implication '*'
 inclusion-exclusion-principle theorem
 independent-set induced-subgraph
 independent-variable variable
@@ -321,6 +320,7 @@ key-exchange cryptographic-protocol
 knaster-tarski-theorem theorem
 kronecker-delta function
 lambda-calculus formal-system
+language-unit '*'
 latin-square matrix
 least-element concept
 least-squares statistical-method
@@ -378,7 +378,7 @@ mathematical-structure concept
 mathematical-subgroup mathematical-group
 mathematician scientist
 mathematics '*'
-matrix mathematical-structure
+matrix '*'
 matrix-addition matrix-operation
 matrix-algebra algebra
 matrix-diagonal subset
@@ -429,6 +429,7 @@ np-completeness attribute complexity-class
 null-space mathematical-space
 number '*'
 number-theory mathematics
+numeric-quantity '*'
 numerical-accuracy attribute
 numerical-analysis mathematics
 oblique-triangle triangle
@@ -450,7 +451,7 @@ outlier statistical-deviation
 parallel-line shape
 parallelogram quadrilateral
 parametric-statistic statistic
-parity mathematical-relation
+parity mathematical-relation relation
 partial-correlation statistical-correlation
 partial-differential-equation differential-equation
 partial-order antisymmetric-relation preorder
@@ -474,12 +475,13 @@ positive-correlation statistical-correlation
 postulate proposition
 power-series mathematical-series
 power-set mathematical-set
+precondition '*'
 predictor-variable variable
 preorder reflexive-relation transitive-relation
 prime-factorization mathematical-operation
 prime-number natural-number
 private-key cryptographic-key
-probability statistic
+probability '*'
 probability-theory mathematics
 problem '*'
 procedure '*'
@@ -501,7 +503,7 @@ quadratics algebra
 quadrature geometric-construction
 quadrilateral polygon
 quantic homogeneous-polynomial
-quantifier logical-operation
+quantifier logical-operation word
 quantity '*'
 quartile statistic
 quasigroup algebraic-magma
@@ -522,7 +524,7 @@ recursion procedure
 recursive-definition definition
 recursive-function function
 reentrant-polygon concave-polygon
-reflexive-relation binary-relation logical-relation
+reflexive-relation binary-relation logical-relation relation
 regression-analysis multivariate-analysis
 regression-coefficient parametric-statistic
 regression-equation equation
@@ -530,6 +532,7 @@ regression-line curve
 regular-expression mathematical-expression
 regular-hexagon hexagon
 regular-polygon isogon
+relation '*'
 relaxation-method mathematical-operation
 rhomboid parallelogram
 rhombus parallelogram
@@ -582,7 +585,7 @@ statistical-moment statistic
 statistical-population collection
 statistical-regression statistical-method
 statistical-sampling act
-statistical-weight number
+statistical-weight number numeric-quantity
 statistician expert
 stratified-sample sample-distribution
 stream-cipher cipher
@@ -595,7 +598,6 @@ subset mathematical-set
 subspace mathematical-space
 subsumption logical-relation
 subtraction arithmetic-operation
-summation arithmetic-operation
 supremum concept upper-bound
 surjective-function function
 syllogism deductive-reasoning
@@ -620,14 +622,14 @@ transcendental-number irrational-number
 transformation function
 transitive-closure mathematical-operation transitive-relation
 transitive-reduction mathematical-operation
-transitive-relation binary-relation logical-relation
+transitive-relation binary-relation logical-relation relation
 translation isometry transformation
 trapezium quadrilateral
 trapezoid quadrilateral
 tree-graph bipartite-graph connected-graph forest-graph
 triangle '*'
 trie data-structure tree-graph
-trigonometric-function function
+trigonometric-function function mathematical-relation
 trigonometry geometry
 truncation-error event
 truth '*'
@@ -654,5 +656,6 @@ wedge-shape shape
 weighted-graph mathematical-graph
 well-formed-formula mathematical-expression
 well-order total-order
+word '*'
 zero-knowledge-proof cryptographic-protocol
 'zorn'"'"'s-lemma' theorem

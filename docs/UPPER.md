@@ -1338,3 +1338,107 @@ the performer and `folder`, which no source has; five renames, nothing lost),
 format families and the mail vocabulary are the answer to Peter's question;
 the pack-refines-core limitation and the 905 unclaimed subtypes are what it
 leaves owed.
+
+## 15. The review pass (2026-09-17, night) — core v11
+
+Peter asked for a full review of core and every pack: the witnesses, but also a
+reading of whether what is there is right and what is missing. This section is
+core's half of it. The packs' half is §15.3.
+
+### 15.1 The disputes, settled
+
+Fifteen pairs were disputed — two sources placing the same two concepts the
+other way up — and two published v3 pins had been contradicted. Every one of
+the seventeen was decidable by reading the two glosses against each other, and
+most were decidable by reading only one, because WordNet's gloss says which
+way round it goes: a canteen is "a flask for carrying water", a cap is "a
+tight-fitting headdress", a chimney is "a vertical flue", a noodle is "a
+ribbonlike strip of pasta", an emergency is "a sudden unforeseen crisis",
+money is "the official currency issued by a government", a research worker is
+"a scientist who devotes himself to doing research". SUMO was upside down in
+nine of them, Wikidata in five, OpenCyc in one.
+
+Two needed more than a gloss. **`commodity ⊑ vehicle-body`** was SUMO's, an
+alignment artefact, against CPC's `vehicle-body ⊑ commodity`: CPC is right,
+a car body is an article of commerce. **`artistic-creation` and `fine-art`**
+were disputed in both directions and *neither* is true — 00933420 is the act
+of creating, 02743547 the works collectively — so both were rejected. The
+queue is now empty of disputes and of contradicted pins.
+
+**`phenomenon` and `process` are a cycle in WordNet.** 00034213's hypernym is
+00029677 and 00029677's gloss is "a sustained phenomenon". The gloss wins:
+`process ⊑ phenomenon` accepted, `phenomenon ⊑ process` rejected. That leaves
+`phenomenon` with no parent core can reach — WordNet's is `entity` — and it is
+still unplaced. It wants either an eleventh branch or a ruling that core's
+`event` covers states; a question for Peter, not for a pass like this one.
+
+### 15.2 The 362 unplaced — what core could not say
+
+Consensus admits a concept when an accepted parent reaches a root. 362 named
+concepts had no accepted parent at all: every candidate was single-witness, so
+they sat in `align/concepts.tsv` and never entered the pack. They were not a
+long tail of oddities. Three whole branches were missing.
+
+**Core could not say a day.** `date` was the fruit, `period` the punctuation
+mark, `second` a rank, `age` an attribute — and that was the whole temporal
+vocabulary. Forty-five concepts were stranded: `time-period`, `day`, `week`,
+`year`, `hour`, `minute`, `sec`, `decade`, `century`, `era`, `season` and the
+four seasons, `morning`, `afternoon`, `evening`, `night`, `midnight`, `dawn`,
+`twilight`, `past`, `future`, `childhood`, `youth`, `old-age`, `anniversary`,
+`birthday`, `weekend`, `shift`, `reign`. `hour`, `minute`, `second` and `day`
+had no candidate parent whatever, because WordNet hangs them from `time_unit`,
+which was not a concept here. Two synsets were added — **`time`** (00028270,
+the continuum, which WordNet files under `attribute`, one of core's roots) and
+**`time-unit`** — and the branch was built on WordNet's own links: `time-period
+⊑ quantity`, `time-unit ⊑ time-period`, and the rest below. Not on SUMO's,
+which maps the entire temporal vocabulary onto a single term and would have
+made `time` a fifty-child hub — the mistake v9 found in `product`.
+
+**Core could not say a relation or an amount.** WordNet hangs its abstractions
+from `abstraction` through `relation` (00031921) and `quantity` (00033615);
+neither was a concept here, and core's `quantity` is a different synset
+(05855125, "the concept that something has a magnitude"). So `part`,
+`ownership`, `kinship`, `correlation`, `contrast`, `opposite`, `implication`,
+`relevance`, `distance`, `direction`, `north`, `south`, `word`, `syllable`,
+`term` had nowhere to hang, and so did `capacity`, `volume`, `fraction`,
+`maximum`, `minimum`, `probability`, `supply`, `output`, `standard`, `zero`.
+Ten names were added — `relation`, `amount` (WordNet's third lemma for
+00033615, since `quantity` and `measure` were taken), `definite-quantity`,
+`indefinite-quantity`, `numeric-quantity`, `spatial-relation`,
+`spatial-direction`, `cardinal-compass-point`, `language-unit`,
+`system-of-measurement` — and attached where core already files abstractions,
+under `concept`, which is where `quantity` sat.
+
+**The rest were placed by one rule**: the parent is WordNet's *nearest ancestor
+that core already places*. It is the rule the goods layer used, it cannot
+drift, because the synsets are fixed, and it is auditable — every ruling
+records the distance. Everything at three steps or more was read one by one,
+and four were thrown out: `gas ⊑ natural-event` (v9 ruled gas the state of
+matter, and `state-of-matter` became available a round later, which is where it
+went), `crop ⊑ industry` (a yield is not an industry), `backlog ⊑ income`, and
+`reception ⊑ storage-medium` (a broadcast's fidelity is not a medium).
+
+**Then the same rule again, as a refinement.** A concept placed in the first
+round took whatever core had at the time, which was often the branch root:
+`north ⊑ relation`, `hammer ⊑ tool`, `standard ⊑ amount`. With the
+intermediates in, 461 concepts had a nearer ancestor available and 405 were
+given it — `north ⊑ cardinal-compass-point`, `hammer ⊑ hand-tool`, `standard ⊑
+system-of-measurement`, `steak ⊑ cut-of-meat`, `screw`, `nail`, `lock` and
+`button ⊑ fastener` — and consensus's pruning dropped the coarse edge each one
+entailed. Fifty-six were held back: **core's ten roots as subjects**, because
+WordNet would have put `place` under `physical-object` and `possession` under
+`relation` and collapsed the top; pairs already rejected (WordNet offered
+`commodity ⊑ artifact` again, which v9 threw out); and forty read as wrong —
+`planner ⊑ notebook-computer` (the book, not the machine), `web-site ⊑
+computer`, `cacao-bean ⊑ tree`, `grinder ⊑ snack-food` (v9 made `grinder` the
+machine), `chapter`, `conclusion` and `introduction ⊑ music` (WordNet's
+musical-passage sense leaking through `section`).
+
+**Result: core 4,971 categories, up from 4,617**, ten roots unchanged, no
+cycles, still a strict superset of the frozen v1, and 23 unplaced where there
+were 362. What is left is `phenomenon` and `universe` (no reachable parent),
+the celestial bodies `earth`, `moon`, `sun`, `mars`, `venus` and `europe` (core
+has no `celestial-body` or `continent`; the space and geography packs carry
+them), `east` and `west` as regions, and nine odds — `bit`, `fragment`,
+`slice`, `strip`, `subject`, `molecule`, `conscience`, `motivation`,
+`incentive`, `necessity`, `confederacy`, `koran`, `signified`.

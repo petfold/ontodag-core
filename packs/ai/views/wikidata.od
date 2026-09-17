@@ -93,6 +93,7 @@ ambiguity uncertainty
 ambulance '*'
 ammonia '*'
 ammunition artifact
+amount function
 amphetamine '*'
 amphibian '*'
 amplifier '*'
@@ -625,13 +626,13 @@ chamois-leather leather
 champagne sparkling-wine
 champion athlete winner
 chandelier '*'
-change number
+change number numeric-quantity
 channel landform
 chaos '*'
 chap '*'
 chapter board-of-directors
 character '*'
-characteristic number
+characteristic number numeric-quantity
 chard leaf stalk vegetable
 charger appliance household-appliance
 charity '*'
@@ -877,7 +878,7 @@ continual-learning machine-learning
 contract '*'
 contraction '*'
 contradiction '*'
-contrast number
+contrast number numeric-quantity
 contrastive-learning self-supervised-learning
 contribution gift
 control-stick '*'
@@ -1148,7 +1149,7 @@ dolphin '*'
 domain-adaptation reinforcement-learning
 dome ceiling
 domestic-robot service-robot
-dominance '*'
+dominance relation
 donor '*'
 donut dessert snack-food
 door obstacle
@@ -1443,7 +1444,7 @@ flour food powder
 flow-based-generative-model generative-model
 flower plant
 flowerpot '*'
-fluctuation function number
+fluctuation function number numeric-quantity
 flue '*'
 fluid '*'
 flute woodwind
@@ -1477,7 +1478,7 @@ fossil '*'
 foundation-model '*'
 fountain '*'
 fox '*'
-fraction number
+fraction number numeric-quantity
 fracture injury
 frame-based-expert-system expert-system
 frame-problem '*'
@@ -1506,7 +1507,7 @@ frying-pan '*'
 fudge '*'
 fuel chemical
 fun '*'
-function '*'
+function relation
 functional-logic-programming logic-programming
 fundamental-law structure
 funeral '*'
@@ -1840,7 +1841,7 @@ ice-cream frozen-dessert
 ice-skate sporting-goods
 icing spread
 idea '*'
-identity '*'
+identity relation
 identity-card '*'
 ignorance '*'
 illness '*'
@@ -1859,11 +1860,11 @@ immigration '*'
 impact '*'
 implication '*'
 import '*'
-importance function
+importance amount
 imposter '*'
 incense '*'
 income '*'
-increment number
+increment number numeric-quantity
 incremental-learning machine-learning
 incubator '*'
 independent-component-analysis unsupervised-learning
@@ -2047,6 +2048,7 @@ lane '*'
 langtons-ant '*'
 language '*'
 language-model statistical-model
+language-unit '*'
 lantern '*'
 lanyard '*'
 lap '*'
@@ -2123,7 +2125,7 @@ lighting '*'
 limb '*'
 lime citrus-fruit
 limestone '*'
-limit '*'
+limit relation
 linear-classifier '*'
 linear-discriminant-analysis '*'
 linear-programming '*'
@@ -2506,6 +2508,7 @@ nouvelle-ai '*'
 nozzle tip tip-end
 nuclear-reactor '*'
 number '*'
+numeric-quantity '*'
 nun monk
 nurse '*'
 nursery room
@@ -3026,6 +3029,7 @@ rehearsal '*'
 rein '*'
 reinforcement-learning machine-learning
 reinforcement-learning-from-human-feedback reinforcement-learning
+relation '*'
 relationship-extraction text-mining
 relative person
 relevance '*'
@@ -3207,7 +3211,7 @@ scone bread
 scoop '*'
 scooter '*'
 scope '*'
-score function
+score amount
 scoreboard '*'
 scored-goal failure
 scouring-pad tool
@@ -3340,7 +3344,7 @@ silk-fiber '*'
 silver '*'
 silver-screen '*'
 similarity function
-similarity-measure function
+similarity-measure amount
 simulated-annealing '*'
 simultaneous-localization-and-mapping '*'
 sin '*'
@@ -3444,6 +3448,7 @@ sparkling-wine wine
 sparql '*'
 sparse-dictionary-learning feature-learning
 sparse-distributed-memory content-addressable-memory
+spatial-relation '*'
 spatial-temporal-reasoning '*'
 speaker person
 speaker-verification natural-language-processing
@@ -3745,7 +3750,7 @@ tire '*'
 tissue '*'
 tissue-paper paper
 titanium '*'
-title-of-respect sign
+title-of-respect language-unit sign
 toast bread
 toaster appliance household-appliance
 tobacco commodity produce

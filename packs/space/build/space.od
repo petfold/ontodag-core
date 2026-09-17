@@ -36,7 +36,7 @@ astronomical-conjunction encounter
 astronomical-nutation natural-event
 astronomical-opposition natural-event
 astronomical-photometry activity
-astronomical-telescope instrument telescope
+astronomical-telescope telescope
 astronomical-transit natural-event
 astronomy '*'
 astronomy-satellite device satellite
@@ -120,7 +120,7 @@ ephemeris document
 equatorial-coordinate-system celestial-coordinate-system
 equatorial-telescope instrument
 equinoctial-point place
-equinox natural-event
+equinox natural-event time
 eris dwarf-planet
 escape-velocity quantity
 europa galilean-satellite
@@ -328,7 +328,7 @@ semi-major-axis quantity
 sidereal-day quantity sidereal-time
 sidereal-hour quantity sidereal-time
 sidereal-month quantity sidereal-time
-sidereal-time concept
+sidereal-time concept time
 sidereal-year quantity sidereal-time
 siderite meteorite
 small-magellanic-cloud dwarf-galaxy irregular-galaxy
@@ -340,10 +340,10 @@ solar-flare natural-event
 solar-physics astronomy physics
 solar-radiation radiation
 solar-system planetary-system
-solar-telescope instrument telescope
+solar-telescope telescope
 solar-wind natural-event
 solid-propellant-rocket rocket
-solstice natural-event
+solstice natural-event time
 soyuz-spacecraft crewed-spacecraft space-capsule
 space-agency organization
 space-capsule spacecraft
@@ -390,10 +390,11 @@ synodic-month quantity
 telescope '*'
 terrestrial-planet planet
 tidal-locking natural-event
+time '*'
 titan natural-satellite
 total-eclipse event
 trans-neptunian-object minor-planet
-transit-instrument instrument telescope
+transit-instrument telescope
 trapezium-cluster multiple-star
 triton natural-satellite
 uranus planet

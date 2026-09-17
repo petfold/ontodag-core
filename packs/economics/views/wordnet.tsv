@@ -28,6 +28,7 @@ absinthe	food
 absinthe	liqueur
 absinthe	liquid-substance
 absinthe	part
+absinthe	relation
 absinthe	substance
 absorption	process
 abuse	information
@@ -88,6 +89,7 @@ acid	chemical
 acid	compound
 acid	material
 acid	part
+acid	relation
 acid	substance
 acknowledgment	attribute
 acknowledgment	situation
@@ -98,6 +100,7 @@ acquaintance	person
 acquaintance	physical-object
 acquired-knowledge	cognition
 acquisition	possession
+acquisition	relation
 act	event
 act-of-play	information
 action	fiction
@@ -123,6 +126,7 @@ actor	physical-object
 actual-purchase-price	outgo
 actual-purchase-price	possession
 actual-purchase-price	purchase-price
+actual-purchase-price	relation
 ad	information
 ad	promotional-material
 adaptation	information
@@ -149,6 +153,7 @@ adhesion-contract	information
 adhesion-contract	legal-document
 adhesive	material
 adhesive	part
+adhesive	relation
 adhesive	substance
 adjusting-entry	accounting-entry
 adjusting-entry	information
@@ -182,10 +187,12 @@ adult	organism
 adult	person
 adult	physical-object
 advance	possession
+advance	relation
 advance-death-benefit	death-benefit
 advance-death-benefit	outgo
 advance-death-benefit	payment-amount
 advance-death-benefit	possession
+advance-death-benefit	relation
 advancement	act
 advancement	event
 advantage	attribute
@@ -229,8 +236,10 @@ affiliation	attribute
 affiliation	state
 affinity	attraction
 affinity	attribute
+affinity.relation	relation
 affirmation	act
 affirmation	event
+afternoon	amount
 afternoon	time-period
 age	attribute
 agency	group
@@ -242,6 +251,7 @@ aggression	event
 agio	outgo
 agio	possession
 agio	price-charged
+agio	relation
 agitation	act
 agitation	event
 agitation	motion
@@ -260,6 +270,7 @@ agribusiness	transaction
 aid	acquisition
 aid	gift
 aid	possession
+aid	relation
 aids	attribute
 aids	condition
 aids	disease
@@ -304,6 +315,7 @@ airfare	fare
 airfare	outgo
 airfare	possession
 airfare	price-charged
+airfare	relation
 airlift	act
 airlift	event
 airlift	transport
@@ -333,6 +345,7 @@ alabaster	gypsum
 alabaster	material
 alabaster	mineral
 alabaster	part
+alabaster	relation
 alabaster	substance
 alarm	artifact
 alarm	device
@@ -352,6 +365,7 @@ alcohol	drug
 alcohol	food
 alcohol	liquid-substance
 alcohol	part
+alcohol	relation
 alcohol	substance
 aleatory-contract	contract
 aleatory-contract	document
@@ -362,9 +376,14 @@ alfalfa	substance
 alimony	outgo
 alimony	payment-amount
 alimony	possession
+alimony	relation
+alliance	relation
 allotment	possession
+allotment	relation
 allowance	possession
+allowance	relation
 alloy	part
+alloy	relation
 alloy	substance
 ally	country
 ally	group
@@ -389,9 +408,12 @@ altimeter	instrument
 altimeter	physical-object
 altitude	distance
 altitude	placement
+altitude	relation
+altitude	spatial-relation
 aluminum	chemical-element
 aluminum	metal
 aluminum	part
+aluminum	relation
 aluminum	substance
 alumnus	agent
 alumnus	organism
@@ -420,6 +442,7 @@ ammonia	chemical
 ammonia	compound
 ammonia	material
 ammonia	part
+ammonia	relation
 ammonia	substance
 ammunition	artifact
 ammunition	physical-object
@@ -471,6 +494,7 @@ anchorage-fee	fixed-charge
 anchorage-fee	outgo
 anchorage-fee	possession
 anchorage-fee	price-charged
+anchorage-fee	relation
 anemometer	artifact
 anemometer	device
 anemometer	gauge
@@ -496,14 +520,17 @@ animal-fat	fat
 animal-fat	material
 animal-fat	molecule
 animal-fat	part
+animal-fat	relation
 animal-fat	substance
 animal-material	material
 animal-material	part
+animal-material	relation
 animal-material	substance
 animal-pack	group
 animal-product	animal-material
 animal-product	material
 animal-product	part
+animal-product	relation
 animal-product	substance
 anise	fixings
 anise	food
@@ -520,6 +547,7 @@ anklet	physical-object
 annex	addition
 annex	component
 annex	physical-object
+anniversary	amount
 anniversary	time-period
 annotation	information
 announcement	information
@@ -527,11 +555,13 @@ annuity	outgo
 annuity	payment-amount
 annuity	possession
 annuity	regular-payment
+annuity	relation
 annuity-in-advance	annuity
 annuity-in-advance	outgo
 annuity-in-advance	payment-amount
 annuity-in-advance	possession
 annuity-in-advance	regular-payment
+annuity-in-advance	relation
 answer	act
 answer	event
 answering-machine	artifact
@@ -610,6 +640,7 @@ apple-juice	food
 apple-juice	fruit-juice
 apple-juice	liquid-substance
 apple-juice	part
+apple-juice	relation
 apple-juice	substance
 appliance	artifact
 appliance	commodity
@@ -716,6 +747,7 @@ army-division	organization
 arrangement-scheme	cognition
 arrears	debt
 arrears	possession
+arrears	relation
 arrow	artifact
 arrow	device
 arrow	instrument
@@ -746,6 +778,7 @@ artillery-shell	physical-object
 artisan's-lien	financial-interest
 artisan's-lien	lien
 artisan's-lien	possession
+artisan's-lien	relation
 artisan's-lien	security-interest
 artist	agent
 artist	organism
@@ -763,6 +796,7 @@ ashtray	physical-object
 asking-price	outgo
 asking-price	possession
 asking-price	purchase-price
+asking-price	relation
 asparagus	produce
 asparagus	substance
 asparagus	vegetable
@@ -774,6 +808,7 @@ aspect	property
 asphalt	material
 asphalt	mineral
 asphalt	part
+asphalt	relation
 asphalt	substance
 aspiration	attribute
 aspiration	desire
@@ -787,6 +822,7 @@ aspirin	material
 aspirin	medication
 aspirin	painkiller
 aspirin	part
+aspirin	relation
 aspirin	substance
 ass	animal
 ass	mammal
@@ -831,6 +867,7 @@ association	group
 association	organization
 assurance	information
 assurance-insurance	possession
+assurance-insurance	relation
 asterisk	character
 asterisk	information
 asterisk	signal
@@ -851,6 +888,7 @@ athlete	physical-object
 atmosphere	fluid
 atmosphere	substance
 atom	part
+atom	relation
 atom	substance
 attachment	addition
 attachment	component
@@ -911,6 +949,7 @@ authority	organism
 authority	person
 authority	physical-object
 authorized-shares	possession
+authorized-shares	relation
 authorized-shares	share-capital
 autoclave	artifact
 autoclave	container
@@ -925,10 +964,12 @@ automobile-horn	artifact
 automobile-horn	device
 automobile-horn	physical-object
 automobile-insurance	possession
+automobile-insurance	relation
 automobile-loan	debt
 automobile-loan	loan
 automobile-loan	personal-loan
 automobile-loan	possession
+automobile-loan	relation
 autonomy	attribute
 autonomy	freedom
 autonomy	state
@@ -986,6 +1027,7 @@ background	attribute
 backlog	income
 backlog	net-income
 backlog	possession
+backlog	relation
 backlog	retained-earnings
 backpack	artifact
 backpack	bag
@@ -999,6 +1041,7 @@ bacterium	organism
 bacterium	physical-object
 bad-debt	debt
 bad-debt	possession
+bad-debt	relation
 badminton-racquet	artifact
 badminton-racquet	physical-object
 bag	artifact
@@ -1013,6 +1056,7 @@ bail	cognition
 bail	idea
 bail	plan
 bail-bond	possession
+bail-bond	relation
 bait	cognition
 bait-and-switch	act
 bait-and-switch	commerce
@@ -1037,6 +1081,7 @@ baking-soda	chemical
 baking-soda	compound
 baking-soda	material
 baking-soda	part
+baking-soda	relation
 baking-soda	substance
 baking-tray	artifact
 baking-tray	cookware
@@ -1069,6 +1114,7 @@ ball-bearing	physical-object
 ball-bearing	support-device
 ballast	material
 ballast	part
+ballast	relation
 ballast	substance
 ballcock	artifact
 ballcock	control
@@ -1126,12 +1172,14 @@ bank-card	indication
 bank-card	information
 bank-card	open-end-credit
 bank-card	possession
+bank-card	relation
 bank-check	document
 bank-check	information
 bank-check	legal-document
 bank-loan	debt
 bank-loan	loan
 bank-loan	possession
+bank-loan	relation
 banking	act
 banking	commerce
 banking	commercial-enterprise
@@ -1153,6 +1201,7 @@ bar-soap	chemical
 bar-soap	compound
 bar-soap	material
 bar-soap	part
+bar-soap	relation
 bar-soap	soap
 bar-soap	substance
 barbecue-grill	artifact
@@ -1284,6 +1333,8 @@ bat	mammal
 bat	organism
 bat	physical-object
 bat	vertebrate
+batch	amount
+batch	indefinite-quantity
 bath-mat	artifact
 bath-mat	commodity
 bath-mat	linen
@@ -1410,6 +1461,7 @@ beer	drug
 beer	food
 beer	liquid-substance
 beer	part
+beer	relation
 beer	substance
 beet	produce
 beet	substance
@@ -1432,6 +1484,7 @@ bellows	artifact
 bellows	device
 bellows	physical-object
 belongings	possession
+belongings	relation
 beloved	agent
 beloved	organism
 beloved	person
@@ -1516,6 +1569,7 @@ bid	event
 bid-price	outgo
 bid-price	possession
 bid-price	purchase-price
+bid-price	relation
 bidet	artifact
 bidet	container
 bidet	physical-object
@@ -1530,8 +1584,10 @@ bilateral-contract	contract
 bilateral-contract	document
 bilateral-contract	information
 bilateral-contract	legal-document
+bill	amount
 bill	currency
 bill	standard
+bill	system-of-measurement
 bill-of-lading	information
 bill-of-lading	receipt
 billiard-ball	artifact
@@ -1577,6 +1633,7 @@ birdhouse	artifact
 birdhouse	physical-object
 birth	change
 birth	event
+birthday	amount
 birthday	anniversary
 birthday	time-period
 bishop	agent
@@ -1599,11 +1656,13 @@ bitter	drug
 bitter	food
 bitter	liquid-substance
 bitter	part
+bitter	relation
 bitter	substance
 bitumen	chemical
 bitumen	compound
 bitumen	material
 bitumen	part
+bitumen	relation
 bitumen	substance
 black-market	act
 black-market	activity
@@ -1653,11 +1712,13 @@ blessing	activity
 blessing	assist
 blessing	event
 blessing	support
+blink-of-an-eye	amount
 blink-of-an-eye	time-period
 block	physical-object
 block	place
 block	region
 blood	part
+blood	relation
 blood	substance
 bloodshed	act
 bloodshed	event
@@ -1665,6 +1726,7 @@ bloodshed	murder
 blotter	material
 blotter	paper
 blotter	part
+blotter	relation
 blotter	substance
 blow	act
 blow	event
@@ -1672,6 +1734,7 @@ blow	motion
 blue	attribute
 blue-chip	common-stock
 blue-chip	possession
+blue-chip	relation
 blue-chip	share-capital
 board	artifact
 board	physical-object
@@ -1747,6 +1810,7 @@ bongo	physical-object
 bonus	outgo
 bonus	payment-amount
 bonus	possession
+bonus	relation
 book	artifact
 book	physical-object
 book	product
@@ -1820,6 +1884,7 @@ borage	seasoning
 borage	substance
 borrowing-cost	outgo
 borrowing-cost	possession
+borrowing-cost	relation
 bosom	cognition
 bosom	idea
 bosom	intuition
@@ -1839,6 +1904,7 @@ bottled-water	drink
 bottled-water	food
 bottled-water	liquid-substance
 bottled-water	part
+bottled-water	relation
 bottled-water	substance
 bottom	artifact
 bottom	craft-vehicle
@@ -1851,6 +1917,7 @@ boundary-line	place
 bounty	outgo
 bounty	payment-amount
 bounty	possession
+bounty	relation
 bounty	reward-payment
 bow	artifact
 bow	device
@@ -1925,6 +1992,7 @@ brandy	food
 brandy	liquid-substance
 brandy	liquor
 brandy	part
+brandy	relation
 brandy	substance
 brass-instrument	artifact
 brass-instrument	device
@@ -1959,6 +2027,7 @@ breakage	payment-amount
 breakage	possession
 breakage	recompense-payment
 breakage	reimbursement
+breakage	relation
 breakdown	event
 breakfast	food
 breakfast	meal
@@ -2048,6 +2117,7 @@ brown-coal	coal
 brown-coal	fuel
 brown-coal	material
 brown-coal	part
+brown-coal	relation
 brown-coal	substance
 brush	artifact
 brush	physical-object
@@ -2062,8 +2132,10 @@ buckwheat	food
 buckwheat	foodstuff
 buckwheat	grain
 buckwheat	substance
+budget	amount
 budget	fund
 budget	standard
+budget	system-of-measurement
 buffalo	animal
 buffalo	mammal
 buffalo	organism
@@ -2149,6 +2221,7 @@ bus-fare	fare
 bus-fare	outgo
 bus-fare	possession
 bus-fare	price-charged
+bus-fare	relation
 bus-line	carrier-company
 bus-line	group
 bus-line	organization
@@ -2165,11 +2238,14 @@ business-deal	transaction
 business-expense	expense
 business-expense	outgo
 business-expense	possession
+business-expense	relation
 business-interruption-insurance	possession
+business-interruption-insurance	relation
 business-loan	bank-loan
 business-loan	debt
 business-loan	loan
 business-loan	possession
+business-loan	relation
 business-operation	act
 business-operation	activity
 business-operation	event
@@ -2188,6 +2264,7 @@ butane	fluid
 butane	fuel
 butane	material
 butane	part
+butane	relation
 butane	substance
 butcher	agent
 butcher	merchant
@@ -2220,6 +2297,7 @@ buttermilk	foodstuff
 buttermilk	liquid-substance
 buttermilk	milk
 buttermilk	part
+buttermilk	relation
 buttermilk	substance
 buttocks	body-part
 button	artifact
@@ -2247,6 +2325,7 @@ cab-fare	fare
 cab-fare	outgo
 cab-fare	possession
 cab-fare	price-charged
+cab-fare	relation
 cabaret	artifact
 cabaret	physical-object
 cabaret	structure
@@ -2293,6 +2372,7 @@ calculator	device
 calculator	machine
 calculator	physical-object
 calendar	cognition
+calendar-month	amount
 calendar-month	time-period
 calf	animal
 calf	organism
@@ -2309,6 +2389,7 @@ call	visit
 call-loan	debt
 call-loan	loan
 call-loan	possession
+call-loan	relation
 call-option	document
 call-option	information
 call-option	legal-document
@@ -2421,6 +2502,7 @@ cap	physical-object
 capacitor	artifact
 capacitor	device
 capacitor	physical-object
+capacity	amount
 capacity	volume
 caper	fixings
 caper	food
@@ -2429,12 +2511,14 @@ caper	relish-condiment
 caper	seasoning
 caper	substance
 capital	possession
+capital	relation
 capital-city	central-area
 capital-city	physical-object
 capital-city	place
 capital-city	region
 capital-expenditure	outgo
 capital-expenditure	possession
+capital-expenditure	relation
 capital-letter	character
 capital-letter	information
 capital-letter	signal
@@ -2507,19 +2591,23 @@ caravan	recreational-vehicle
 caravan	vehicle
 carbon	chemical-element
 carbon	part
+carbon	relation
 carbon	substance
 carbon-paper	material
 carbon-paper	paper
 carbon-paper	part
+carbon-paper	relation
 carbon-paper	substance
 carbonated-water	drink
 carbonated-water	food
 carbonated-water	liquid-substance
 carbonated-water	part
+carbonated-water	relation
 carbonated-water	substance
 card	material
 card	paper
 card	part
+card	relation
 card	substance
 card-hand	collection
 card-hand	group
@@ -2534,6 +2622,9 @@ cardigan	commodity
 cardigan	garment
 cardigan	physical-object
 cardigan	sweater
+cardinal-compass-point	relation
+cardinal-compass-point	spatial-direction
+cardinal-compass-point	spatial-relation
 cardoon	produce
 cardoon	substance
 cardoon	vegetable
@@ -2593,9 +2684,11 @@ carrot	plant-root
 carrying-charge	outgo
 carrying-charge	possession
 carrying-charge	price-charged
+carrying-charge	relation
 carrying-cost	opportunity-cost
 carrying-cost	outgo
 carrying-cost	possession
+carrying-cost	relation
 carrying-out	act
 carrying-out	event
 cartage	act
@@ -2626,9 +2719,12 @@ casein	material
 casein	molecule
 casein	part
 casein	protein
+casein	relation
 casein	substance
+cash	amount
 cash	currency
 cash	standard
+cash	system-of-measurement
 cash-account	attribute
 cash-account	brokerage-account
 cash-account	state
@@ -2643,8 +2739,10 @@ cash-card	indication
 cash-card	information
 cash-card	open-end-credit
 cash-card	possession
+cash-card	relation
 cash-flow	income
 cash-flow	possession
+cash-flow	relation
 cash-machine	artifact
 cash-machine	device
 cash-machine	machine
@@ -2652,6 +2750,7 @@ cash-machine	physical-object
 cash-payment	outgo
 cash-payment	payment-amount
 cash-payment	possession
+cash-payment	relation
 cash-register	artifact
 cash-register	box
 cash-register	container
@@ -2772,6 +2871,7 @@ cellarage	fixed-charge
 cellarage	outgo
 cellarage	possession
 cellarage	price-charged
+cellarage	relation
 cello	artifact
 cello	device
 cello	musical-instrument
@@ -2812,6 +2912,7 @@ centrifuge	apparatus
 centrifuge	artifact
 centrifuge	equipment
 centrifuge	physical-object
+century	amount
 century	time-period
 ceramic	artifact
 ceramic	physical-object
@@ -2823,6 +2924,7 @@ certificate	document
 certificate	information
 chaff	material
 chaff	part
+chaff	relation
 chaff	substance
 chafing-dish	artifact
 chafing-dish	cookware
@@ -2867,6 +2969,7 @@ chamois-leather	animal-product
 chamois-leather	leather
 chamois-leather	material
 chamois-leather	part
+chamois-leather	relation
 chamois-leather	substance
 champagne	agent
 champagne	alcohol
@@ -2875,6 +2978,7 @@ champagne	drug
 champagne	food
 champagne	liquid-substance
 champagne	part
+champagne	relation
 champagne	sparkling-wine
 champagne	substance
 champagne	wine
@@ -2923,6 +3027,7 @@ charge	event
 charge-rate	outgo
 charge-rate	possession
 charge-rate	price-charged
+charge-rate	relation
 charger	artifact
 charger	device
 charger	physical-object
@@ -2944,6 +3049,7 @@ charter-contract	legal-document
 chattel-mortgage	financial-interest
 chattel-mortgage	mortgage
 chattel-mortgage	possession
+chattel-mortgage	relation
 chattel-mortgage	security-interest
 chauvinist	advocate
 chauvinist	agent
@@ -2988,8 +3094,10 @@ cheesemonger	physical-object
 cheesemonger	trader
 chemical	material
 chemical	part
+chemical	relation
 chemical	substance
 chemical-element	part
+chemical-element	relation
 chemical-element	substance
 chemical-mace	artifact
 chemical-mace	device
@@ -3000,6 +3108,7 @@ chemical-mace	substance
 chemical-mace	weapon
 chemical-reaction	process
 chemical-solution	part
+chemical-solution	relation
 chemical-solution	substance
 chemistry	cognition
 chemistry	field-of-study
@@ -3058,6 +3167,7 @@ childcare	act
 childcare	activity
 childcare	assist
 childcare	event
+childhood	amount
 childhood	time-period
 chili	pepper
 chili	produce
@@ -3105,6 +3215,7 @@ christmas-tree	physical-object
 chromium	chemical-element
 chromium	metal
 chromium	part
+chromium	relation
 chromium	substance
 chronicle	indication
 chronicle	information
@@ -3124,11 +3235,13 @@ cider	drink
 cider	food
 cider	liquid-substance
 cider	part
+cider	relation
 cider	substance
 cigar	agent
 cigar	drug
 cigar	material
 cigar	part
+cigar	relation
 cigar	substance
 cigar	tobacco
 cigar-cutter	artifact
@@ -3139,6 +3252,7 @@ cigarette	agent
 cigarette	drug
 cigarette	material
 cigarette	part
+cigarette	relation
 cigarette	substance
 cigarette	tobacco
 cigarette-case	artifact
@@ -3160,6 +3274,7 @@ cigarillo	cigar
 cigarillo	drug
 cigarillo	material
 cigarillo	part
+cigarillo	relation
 cigarillo	substance
 cigarillo	tobacco
 cinch	artifact
@@ -3250,6 +3365,7 @@ class	group
 class	people
 classified-stock	common-stock
 classified-stock	possession
+classified-stock	relation
 classified-stock	share-capital
 classroom	artifact
 classroom	physical-object
@@ -3261,6 +3377,7 @@ claw	mechanism
 claw	physical-object
 clay	material
 clay	part
+clay	relation
 clay	soil
 clay	substance
 clay-pigeon	artifact
@@ -3324,6 +3441,7 @@ closet	physical-object
 closing-price	outgo
 closing-price	possession
 closing-price	purchase-price
+closing-price	relation
 closure	cognition
 clothespin	artifact
 clothespin	device
@@ -3354,6 +3472,7 @@ club-card	material
 club-card	paper
 club-card	part
 club-card	playing-card
+club-card	relation
 club-card	substance
 clue	indication
 clue	information
@@ -3426,6 +3545,7 @@ coconut-oil	fat
 coconut-oil	material
 coconut-oil	molecule
 coconut-oil	part
+coconut-oil	relation
 coconut-oil	substance
 coconut-oil	vegetable-oil
 code	information
@@ -3435,6 +3555,7 @@ coffee	drink
 coffee	food
 coffee	liquid-substance
 coffee	part
+coffee	relation
 coffee	substance
 coffee-bean	botanical-fruit
 coffee-bean	natural-object
@@ -3469,11 +3590,14 @@ coffin	physical-object
 coil	artifact
 coil	physical-object
 coil	structure
+coin	amount
 coin	currency
 coin	standard
+coin	system-of-measurement
 coincidence	chance-event
 coincidence	event
 coinsurance	possession
+coinsurance	relation
 coke	fuel
 coke	substance
 colander	artifact
@@ -3493,12 +3617,14 @@ cold-storage	event
 cold-storage	storage
 cold-storage	transaction
 coldness	agent
+coldness	amount
 coldness	attribute
 collapse	event
 collar	artifact
 collar	physical-object
 collateral	financial-interest
 collateral	possession
+collateral	relation
 collateral	security-interest
 colleague	agent
 colleague	organism
@@ -3535,6 +3661,7 @@ combat-pay	outgo
 combat-pay	payment-amount
 combat-pay	possession
 combat-pay	regular-payment
+combat-pay	relation
 combat-pay	wage
 combination	collection
 combination	group
@@ -3555,11 +3682,13 @@ command	attribute
 command	state
 commemoration	information
 commemoration	recognition
+commencement	amount
 commerce	act
 commerce	event
 commerce	transaction
 commercial-credit	credit
 commercial-credit	possession
+commercial-credit	relation
 commercial-enterprise	act
 commercial-enterprise	commerce
 commercial-enterprise	event
@@ -3568,6 +3697,7 @@ commercial-letter-of-credit	credit
 commercial-letter-of-credit	information
 commercial-letter-of-credit	letter-of-credit
 commercial-letter-of-credit	possession
+commercial-letter-of-credit	relation
 commercial-trade	act
 commercial-trade	commerce
 commercial-trade	event
@@ -3577,6 +3707,7 @@ commission	fixed-charge
 commission	outgo
 commission	possession
 commission	price-charged
+commission	relation
 commitment	act
 commitment	event
 committee	group
@@ -3588,8 +3719,10 @@ commodity-exchange	place
 commodity-exchange	workplace
 common-sense	cognition
 common-stock	possession
+common-stock	relation
 common-stock	share-capital
 common-stock-equivalent	possession
+common-stock-equivalent	relation
 common-stock-equivalent	share-capital
 communication	act
 communication	event
@@ -3615,6 +3748,7 @@ companionship	state
 company	group
 company	institution
 company	organization
+comparison	relation
 compartment	attribute
 compartment	empty-space
 compartment	physical-object
@@ -3625,6 +3759,7 @@ compensation	outgo
 compensation	payment-amount
 compensation	possession
 compensation	recompense-payment
+compensation	relation
 competence	ability
 competence	attribute
 competition	act
@@ -3656,16 +3791,19 @@ composer	physical-object
 composition	essay
 composition	information
 compost	part
+compost	relation
 compost	substance
 compound	chemical
 compound	material
 compound	part
+compound	relation
 compound	substance
 compound-interest	fixed-charge
 compound-interest	interest
 compound-interest	outgo
 compound-interest	possession
 compound-interest	price-charged
+compound-interest	relation
 compressor	artifact
 compressor	device
 compressor	mechanism
@@ -3746,6 +3884,7 @@ condensed-milk	foodstuff
 condensed-milk	liquid-substance
 condensed-milk	milk
 condensed-milk	part
+condensed-milk	relation
 condensed-milk	substance
 condenser	apparatus
 condenser	artifact
@@ -3759,10 +3898,12 @@ conditional-contract	information
 conditional-contract	legal-document
 conditional-sale	financial-interest
 conditional-sale	possession
+conditional-sale	relation
 conditional-sale	security-interest
 conditioner	chemical
 conditioner	material
 conditioner	part
+conditioner	relation
 conditioner	substance
 condom	artifact
 condom	device
@@ -3786,6 +3927,7 @@ confession	information
 confetti	material
 confetti	paper
 confetti	part
+confetti	relation
 confetti	substance
 confidence	attribute
 confidence	feeling
@@ -3870,6 +4012,7 @@ construction	transaction
 construction-paper	material
 construction-paper	paper
 construction-paper	part
+construction-paper	relation
 construction-paper	substance
 consultation	information
 consulting	act
@@ -3885,6 +4028,7 @@ consumer	user
 consumer-credit	credit
 consumer-credit	credit-line
 consumer-credit	possession
+consumer-credit	relation
 consumption	process
 contact	act
 contact	event
@@ -3916,6 +4060,7 @@ contingency-fee	fixed-charge
 contingency-fee	outgo
 contingency-fee	possession
 contingency-fee	price-charged
+contingency-fee	relation
 contract	document
 contract	information
 contract	legal-document
@@ -3924,6 +4069,8 @@ contraction	act
 contraction	diminution
 contraction	event
 contradiction	information
+contrary	relation
+contrast	relation
 contribution	act
 contribution	event
 control	artifact
@@ -3939,9 +4086,11 @@ control-stick	artifact
 control-stick	bar
 control-stick	physical-object
 control-stock	possession
+control-stock	relation
 control-stock	share-capital
 controlling-interest	financial-interest
 controlling-interest	possession
+controlling-interest	relation
 convalescence	process
 conventionality	attribute
 conversation	information
@@ -3984,6 +4133,7 @@ cooking-oil	fat
 cooking-oil	material
 cooking-oil	molecule
 cooking-oil	part
+cooking-oil	relation
 cooking-oil	substance
 cooking-oil	vegetable-oil
 cooking-pot	artifact
@@ -4010,6 +4160,7 @@ copper	electrical-conductor
 copper	material
 copper	metal
 copper	part
+copper	relation
 copper	substance
 copy	artifact
 copy	physical-object
@@ -4042,6 +4193,7 @@ coriander	substance
 corkage	outgo
 corkage	possession
 corkage	price-charged
+corkage	relation
 corkage	service-charge
 corkscrew	artifact
 corkscrew	bottle-opener
@@ -4085,6 +4237,7 @@ corporate-finance	financial-services
 corporate-finance	transaction
 correction	act
 correction	event
+correlation	relation
 correspondence	information
 correspondence	mail
 correspondence	message
@@ -4113,13 +4266,16 @@ cost-ledger	transaction-record
 cost-of-capital	opportunity-cost
 cost-of-capital	outgo
 cost-of-capital	possession
+cost-of-capital	relation
 cost-of-living-allowance	outgo
 cost-of-living-allowance	payment-amount
 cost-of-living-allowance	possession
 cost-of-living-allowance	price-adjustment
 cost-of-living-allowance	recompense-payment
+cost-of-living-allowance	relation
 cost-overrun	outgo
 cost-overrun	possession
+cost-overrun	relation
 cost-plus-contract	contract
 cost-plus-contract	document
 cost-plus-contract	information
@@ -4155,6 +4311,7 @@ cotton	physical-object
 cotton-fiber	fiber
 cotton-fiber	material
 cotton-fiber	part
+cotton-fiber	relation
 cotton-fiber	substance
 cottonseed	botanical-fruit
 cottonseed	natural-object
@@ -4167,6 +4324,7 @@ cottonseed-oil	fat
 cottonseed-oil	material
 cottonseed-oil	molecule
 cottonseed-oil	part
+cottonseed-oil	relation
 cottonseed-oil	substance
 cottonseed-oil	vegetable-oil
 cough-drop	candy
@@ -4238,6 +4396,7 @@ cover-charge	fixed-charge
 cover-charge	outgo
 cover-charge	possession
 cover-charge	price-charged
+cover-charge	relation
 coverage	information
 covered-option	document
 covered-option	information
@@ -4339,11 +4498,13 @@ creation	activity
 creation	event
 credibility	attribute
 credit	possession
+credit	relation
 credit-account	consumer-credit
 credit-account	credit
 credit-account	credit-line
 credit-account	open-end-credit
 credit-account	possession
+credit-account	relation
 credit-card	consumer-credit
 credit-card	credit
 credit-card	credit-line
@@ -4352,11 +4513,13 @@ credit-card	indication
 credit-card	information
 credit-card	open-end-credit
 credit-card	possession
+credit-card	relation
 credit-entry	accounting-entry
 credit-entry	information
 credit-entry	transaction-record
 credit-line	credit
 credit-line	possession
+credit-line	relation
 credit-order	document
 credit-order	information
 credit-side	information
@@ -4499,6 +4662,7 @@ cumin	physical-object
 cumin	seed
 cumulative-preferred	possession
 cumulative-preferred	preferred-stock
+cumulative-preferred	relation
 cumulative-preferred	share-capital
 cup	artifact
 cup	container
@@ -4509,6 +4673,8 @@ cupboard	physical-object
 cupboard	structure
 cupcake	cake
 cupcake	substance
+cupful	amount
+cupful	indefinite-quantity
 curate	agent
 curate	leader
 curate	organism
@@ -4533,7 +4699,9 @@ currant	natural-object
 currant	physical-object
 currant	produce
 currant	substance
+currency	amount
 currency	standard
+currency	system-of-measurement
 currency-conversion	act
 currency-conversion	commerce
 currency-conversion	event
@@ -4626,6 +4794,7 @@ damages	outgo
 damages	payment-amount
 damages	possession
 damages	recompense-payment
+damages	relation
 danger	attribute
 danger	condition
 danger	state
@@ -4662,7 +4831,11 @@ daughter	relative
 dawn	clock-time
 dawn	cognition
 dawn	time-of-day
+day	amount
+day	time-unit
+day-of-the-month	amount
 day-of-the-month	day
+day-of-the-month	time-unit
 daybook	information
 daybook	transaction-record
 daycare	act
@@ -4678,6 +4851,7 @@ daze	condition
 daze	state
 dead-body	natural-object
 dead-body	physical-object
+deadline	amount
 deal	act
 deal	event
 dearth	attribute
@@ -4690,6 +4864,7 @@ death	event
 death-benefit	outgo
 death-benefit	payment-amount
 death-benefit	possession
+death-benefit	relation
 debate	act
 debate	event
 debate	formal-address
@@ -4704,16 +4879,21 @@ debit-card	indication
 debit-card	information
 debit-card	open-end-credit
 debit-card	possession
+debit-card	relation
 debit-side	information
 debit-side	transaction-record
 debt	possession
+debt	relation
 debt-redemption	outgo
 debt-redemption	payment-amount
 debt-redemption	possession
+debt-redemption	relation
 debt-redemption	repayment
 debt-satisfaction	outgo
 debt-satisfaction	payment-amount
 debt-satisfaction	possession
+debt-satisfaction	relation
+decade	amount
 decade	time-period
 decal	artifact
 decal	decoration
@@ -4722,6 +4902,7 @@ decal	material
 decal	paper
 decal	part
 decal	physical-object
+decal	relation
 decal	substance
 decal	transfer-paper
 decay	natural-event
@@ -4753,6 +4934,7 @@ deducted-amount	payment-amount
 deducted-amount	possession
 deducted-amount	price-adjustment
 deducted-amount	recompense-payment
+deducted-amount	relation
 deed	document
 deed	information
 deed	legal-document
@@ -4772,6 +4954,7 @@ defendant	physical-object
 deferred-payment	outgo
 deferred-payment	payment-amount
 deferred-payment	possession
+deferred-payment	relation
 deficit	attribute
 deficit	insufficiency
 deficit	magnitude
@@ -4781,6 +4964,7 @@ deficit-spending	event
 deficit-spending	payment
 deficit-spending	spending
 deficit-spending	transaction
+definite-quantity	amount
 definition	explanation
 definition	information
 defroster	artifact
@@ -4803,9 +4987,11 @@ delivery	event
 delivery	transport
 demand	information
 demand	request
+demand-deposit	amount
 demand-deposit	deposit
 demand-deposit	fund
 demand-deposit	standard
+demand-deposit	system-of-measurement
 demand.process	process
 demo	information
 democracy	group
@@ -4819,6 +5005,7 @@ demonstrator	physical-object
 demurrage	outgo
 demurrage	possession
 demurrage	price-charged
+demurrage	relation
 denial	assertion
 denial	declaration
 denial	information
@@ -4847,9 +5034,12 @@ departure	event
 depilatory	artifact
 depilatory	cosmetic
 depilatory	physical-object
+deposit	amount
 deposit	fund
 deposit	standard
+deposit	system-of-measurement
 deposit-payment	possession
+deposit-payment	relation
 depository-financial-institution	group
 depository-financial-institution	institution
 depository-financial-institution	organization
@@ -4858,14 +5048,17 @@ depreciation	lost-item
 depreciation	non-cash-expense
 depreciation	outgo
 depreciation	possession
+depreciation	relation
 depreciation-allowance	outgo
 depreciation-allowance	payment-amount
 depreciation-allowance	possession
 depreciation-allowance	price-adjustment
 depreciation-allowance	recompense-payment
+depreciation-allowance	relation
 depreciation-charge	outgo
 depreciation-charge	possession
 depreciation-charge	price-charged
+depreciation-charge	relation
 depression	attribute
 depression	condition
 depression	crisis
@@ -4918,6 +5111,7 @@ detachment	attribute
 detachment	feeling
 detachment	state
 detail	part
+detail	relation
 detective	agent
 detective	organism
 detective	person
@@ -4932,6 +5126,7 @@ detergent	chemical
 detergent	compound
 detergent	material
 detergent	part
+detergent	relation
 detergent	substance
 development	district
 development	physical-object
@@ -5018,6 +5213,7 @@ diplomat	worker
 direct-loan	debt
 direct-loan	loan
 direct-loan	possession
+direct-loan	relation
 direct-marketing	act
 direct-marketing	commerce
 direct-marketing	event
@@ -5045,6 +5241,7 @@ disability	state
 disability-benefit	outgo
 disability-benefit	payment-amount
 disability-benefit	possession
+disability-benefit	relation
 disadvantage	attribute
 disagreement	attribute
 disagreement	conflict
@@ -5076,6 +5273,7 @@ discount-rate	interest-rate
 discount-rate	outgo
 discount-rate	possession
 discount-rate	price-charged
+discount-rate	relation
 discourtesy	act
 discourtesy	activity
 discourtesy	behavior
@@ -5149,6 +5347,7 @@ display-board	physical-object
 display-board	video-display
 disposable-income	income
 disposable-income	possession
+disposable-income	relation
 disposition	attribute
 disposition	trait
 dispute	act
@@ -5159,12 +5358,15 @@ disregard	event
 disregard	practice
 dissertation	information
 distance	placement
+distance	relation
+distance	spatial-relation
 distilled-water	chemical
 distilled-water	compound
 distilled-water	fluid
 distilled-water	liquid
 distilled-water	material
 distilled-water	part
+distilled-water	relation
 distilled-water	substance
 distilled-water	water
 distortion	act
@@ -5189,6 +5391,7 @@ distribution-channel	marketing
 distribution-channel	transaction
 distribution-cost	outgo
 distribution-cost	possession
+distribution-cost	relation
 distributor	company
 distributor	group
 distributor	institution
@@ -5210,6 +5413,7 @@ divestiture	transaction
 dividend	income
 dividend	net-income
 dividend	possession
+dividend	relation
 divider	artifact
 divider	physical-object
 divider	structure
@@ -5226,11 +5430,13 @@ divvy	dividend
 divvy	income
 divvy	net-income
 divvy	possession
+divvy	relation
 dockage	fee
 dockage	fixed-charge
 dockage	outgo
 dockage	possession
 dockage	price-charged
+dockage	relation
 doctor	adult
 doctor	agent
 doctor	organism
@@ -5269,6 +5475,7 @@ dolly	physical-object
 dolomite	material
 dolomite	mineral
 dolomite	part
+dolomite	relation
 dolomite	substance
 dolphin	animal
 dolphin	mammal
@@ -5341,6 +5548,7 @@ double-time	outgo
 double-time	payment-amount
 double-time	possession
 double-time	regular-payment
+double-time	relation
 double-time	wage
 doubt	attribute
 doubt	uncertainty
@@ -5354,6 +5562,7 @@ dowel-pin	physical-object
 down-payment	outgo
 down-payment	payment-amount
 down-payment	possession
+down-payment	relation
 downfall	event
 draft	information
 draft	text
@@ -5432,6 +5641,7 @@ drill-tool	tool
 drink	food
 drink	liquid-substance
 drink	part
+drink	relation
 drink	substance
 drinking	act
 drinking	activity
@@ -5463,6 +5673,7 @@ drop-off-charge	fixed-charge
 drop-off-charge	outgo
 drop-off-charge	possession
 drop-off-charge	price-charged
+drop-off-charge	relation
 drug	agent
 drug	substance
 drug-user	agent
@@ -5493,10 +5704,19 @@ duck	bird
 duck	organism
 duck	physical-object
 duck	vertebrate
+due-east	cardinal-compass-point
+due-east	relation
+due-east	spatial-direction
+due-east	spatial-relation
+due-west	cardinal-compass-point
+due-west	relation
+due-west	spatial-direction
+due-west	spatial-relation
 dues	fixed-charge
 dues	outgo
 dues	possession
 dues	price-charged
+dues	relation
 duffel-bag	artifact
 duffel-bag	bag
 duffel-bag	container
@@ -5524,6 +5744,7 @@ dune-buggy	recreational-vehicle
 dune-buggy	vehicle
 dust	material
 dust	part
+dust	relation
 dust	substance
 duster	artifact
 duster	fabric
@@ -5562,6 +5783,7 @@ dwelling	physical-object
 dwelling	structure
 dye	material
 dye	part
+dye	relation
 dye	substance
 e-commerce	act
 e-commerce	commerce
@@ -5577,10 +5799,13 @@ ear	body-part
 ear	organ
 earnest-money	earnest-payment
 earnest-money	possession
+earnest-money	relation
 earnest-payment	possession
+earnest-payment	relation
 earning-per-share	income
 earning-per-share	net-income
 earning-per-share	possession
+earning-per-share	relation
 earplug	artifact
 earplug	occlusion
 earplug	physical-object
@@ -5610,6 +5835,7 @@ easiness	feeling
 easiness	state
 ebitda	income
 ebitda	possession
+ebitda	relation
 echo	attribute
 economic-consumption	demand.process
 economic-consumption	process
@@ -5621,10 +5847,14 @@ economic-production	industry
 economic-production	transaction
 economic-rent	income
 economic-rent	possession
+economic-rent	relation
 economic-system	group
 economic-system	system
 economic-theory	cognition
 economic-theory	thinking
+economic-utility	amount
+economic-utility	system-of-measurement
+economic-value	amount
 economics	cognition
 economics	field-of-study
 economics	science
@@ -5669,6 +5899,7 @@ eggnog	food
 eggnog	liquid-substance
 eggnog	part
 eggnog	punch-drink
+eggnog	relation
 eggnog	substance
 eggplant	produce
 eggplant	substance
@@ -5717,6 +5948,7 @@ electric-switch	mechanism
 electric-switch	physical-object
 electrical-conductor	material
 electrical-conductor	part
+electrical-conductor	relation
 electrical-conductor	substance
 electrical-work	act
 electrical-work	activity
@@ -5774,6 +6006,7 @@ emolument	outgo
 emolument	payment-amount
 emolument	possession
 emolument	recompense-payment
+emolument	relation
 emotion	attribute
 emotion	feeling
 emotion	state
@@ -5831,6 +6064,7 @@ end-product	product
 ending	event
 endowment-insurance	life-insurance
 endowment-insurance	possession
+endowment-insurance	relation
 endurance	attribute
 endurance	state
 enemy	group
@@ -5876,6 +6110,7 @@ entrance-fee	fixed-charge
 entrance-fee	outgo
 entrance-fee	possession
 entrance-fee	price-charged
+entrance-fee	relation
 entree	cognition
 entree	concept
 entree	idea
@@ -5895,6 +6130,7 @@ equalizing-dividend	dividend
 equalizing-dividend	income
 equalizing-dividend	net-income
 equalizing-dividend	possession
+equalizing-dividend	relation
 equation	information
 equilibrium	attribute
 equilibrium	situation
@@ -5903,10 +6139,12 @@ equipment	artifact
 equipment	physical-object
 equity	financial-interest
 equity	possession
+equity	relation
 equity-account	account
 equity-account	document
 equity-account	information
 equity-account	statement
+era	amount
 era	time-period
 eraser	artifact
 eraser	physical-object
@@ -5941,9 +6179,11 @@ essential-oil	material
 essential-oil	molecule
 essential-oil	oil
 essential-oil	part
+essential-oil	relation
 essential-oil	substance
 estate	belongings
 estate	possession
+estate	relation
 estimate	calculation
 estimate	cognition
 estimate	thinking
@@ -5966,11 +6206,13 @@ evaporated-milk	foodstuff
 evaporated-milk	liquid-substance
 evaporated-milk	milk
 evaporated-milk	part
+evaporated-milk	relation
 evaporated-milk	substance
 evaporative-cooler	artifact
 evaporative-cooler	device
 evaporative-cooler	mechanism
 evaporative-cooler	physical-object
+evening	amount
 evening	time-period
 evidence	cognition
 evolution	process
@@ -5997,9 +6239,11 @@ excess	attribute
 excess	magnitude
 exchange	act
 exchange	event
+exchange-traded-fund	amount
 exchange-traded-fund	fund
 exchange-traded-fund	mutual-fund
 exchange-traded-fund	standard
+exchange-traded-fund	system-of-measurement
 excitement	attribute
 excitement	condition
 excitement	state
@@ -6007,6 +6251,7 @@ excursion-rate	charge-rate
 excursion-rate	outgo
 excursion-rate	possession
 excursion-rate	price-charged
+excursion-rate	relation
 excuse	explanation
 excuse	information
 execution	act
@@ -6047,6 +6292,7 @@ expending	spending
 expending	transaction
 expense	outgo
 expense	possession
+expense	relation
 expense-account	account
 expense-account	document
 expense-account	information
@@ -6057,6 +6303,7 @@ expense-allowance	payment-amount
 expense-allowance	possession
 expense-allowance	recompense-payment
 expense-allowance	reimbursement
+expense-allowance	relation
 experience	acquired-knowledge
 experience	cognition
 experiment	act
@@ -6080,9 +6327,11 @@ explosion	event
 explosive	chemical
 explosive	material
 explosive	part
+explosive	relation
 explosive	substance
 export-credit	credit
 export-credit	possession
+export-credit	relation
 exporting	act
 exporting	commerce
 exporting	event
@@ -6106,6 +6355,7 @@ extension	physical-object
 extension-cord	artifact
 extension-cord	device
 extension-cord	physical-object
+extension.time	amount
 extension.time	pause
 extent	attribute
 extent	state
@@ -6113,8 +6363,10 @@ extra-dividend	dividend
 extra-dividend	income
 extra-dividend	net-income
 extra-dividend	possession
+extra-dividend	relation
 extract	chemical-solution
 extract	part
+extract	relation
 extract	substance
 extraterrestrial-being	cognition
 extreme	attribute
@@ -6170,6 +6422,7 @@ facial-feature	body-part
 facial-tissue	material
 facial-tissue	paper
 facial-tissue	part
+facial-tissue	relation
 facial-tissue	substance
 facial-tissue	tissue-paper
 facility	artifact
@@ -6187,6 +6440,7 @@ factory	works
 factory-price	outgo
 factory-price	possession
 factory-price	purchase-price
+factory-price	relation
 failing	attribute
 failing	state
 failure	attribute
@@ -6199,6 +6453,7 @@ fair-weather	process
 fair-weather	weather
 fairy	belief
 fairy	cognition
+fall	amount
 fall	season
 fall	time-period
 fame	attribute
@@ -6224,6 +6479,7 @@ fanny-pack	pouch
 fare	outgo
 fare	possession
 fare	price-charged
+fare	relation
 farm	physical-object
 farm	place
 farm	workplace
@@ -6247,6 +6503,7 @@ fat	compound
 fat	material
 fat	molecule
 fat	part
+fat	relation
 fat	substance
 father	agent
 father	ancestor
@@ -6281,6 +6538,7 @@ feather	material
 feather	natural-object
 feather	part
 feather	physical-object
+feather	relation
 feather	substance
 feature	cognition
 feature	concept
@@ -6296,6 +6554,7 @@ fee	fixed-charge
 fee	outgo
 fee	possession
 fee	price-charged
+fee	relation
 fee-splitting	act
 fee-splitting	commerce
 fee-splitting	event
@@ -6350,6 +6609,7 @@ ferry-transport	transportation
 fertilizer	chemical
 fertilizer	material
 fertilizer	part
+fertilizer	relation
 fertilizer	substance
 festival	act
 festival	activity
@@ -6362,6 +6622,7 @@ fib	information
 fib	lie
 fiber	material
 fiber	part
+fiber	relation
 fiber	substance
 fibreboard	artifact
 fibreboard	drywall
@@ -6385,6 +6646,7 @@ fig	substance
 fight	act
 fight	event
 figure	possession
+figure	relation
 figurine	artifact
 figurine	model
 figurine	physical-object
@@ -6409,6 +6671,7 @@ filter	physical-object
 filter-paper	material
 filter-paper	paper
 filter-paper	part
+filter-paper	relation
 filter-paper	substance
 final-examination	act
 final-examination	communication
@@ -6427,8 +6690,10 @@ financial-audit	service
 financial-audit	transaction-record
 financial-audit	work
 financial-interest	possession
+financial-interest	relation
 financial-sacrifice	lost-item
 financial-sacrifice	possession
+financial-sacrifice	relation
 financial-services	act
 financial-services	commerce
 financial-services	commercial-enterprise
@@ -6448,10 +6713,12 @@ finder's-fee	fixed-charge
 finder's-fee	outgo
 finder's-fee	possession
 finder's-fee	price-charged
+finder's-fee	relation
 fine	outgo
 fine	payment-amount
 fine	penalty
 fine	possession
+fine	relation
 fine-art	artifact
 fine-art	physical-object
 finger	body-part
@@ -6478,6 +6745,7 @@ fire-extinguisher	artifact
 fire-extinguisher	device
 fire-extinguisher	physical-object
 fire-insurance	possession
+fire-insurance	relation
 fire-sale	attribute
 fire-sale	cut-rate-sale
 fire-sale	opportunity
@@ -6487,6 +6755,7 @@ firecracker	explosive
 firecracker	firework
 firecracker	material
 firecracker	part
+firecracker	relation
 firecracker	substance
 fireman	agent
 fireman	organism
@@ -6502,6 +6771,7 @@ firework	chemical
 firework	explosive
 firework	material
 firework	part
+firework	relation
 firework	substance
 firm	group
 firm	organization
@@ -6517,6 +6787,7 @@ first-aid-kit	physical-object
 first-mortgage	financial-interest
 first-mortgage	mortgage
 first-mortgage	possession
+first-mortgage	relation
 first-mortgage	security-interest
 first-step	act
 first-step	event
@@ -6531,6 +6802,7 @@ fish-liver-oil	material
 fish-liver-oil	molecule
 fish-liver-oil	oil
 fish-liver-oil	part
+fish-liver-oil	relation
 fish-liver-oil	substance
 fish-meat	substance
 fisherman	agent
@@ -6582,6 +6854,7 @@ fix	state
 fixed-charge	outgo
 fixed-charge	possession
 fixed-charge	price-charged
+fixed-charge	relation
 fixings	food
 fixings	foodstuff
 fixings	substance
@@ -6703,6 +6976,7 @@ flute	woodwind
 flux	chemical
 flux	material
 flux	part
+flux	relation
 flux	substance
 fly	animal
 fly	insect
@@ -6766,6 +7040,7 @@ footage-rate	charge-rate
 footage-rate	outgo
 footage-rate	possession
 footage-rate	price-charged
+footage-rate	relation
 football	act
 football	activity
 football	event
@@ -6774,6 +7049,8 @@ football	sport
 footboard	artifact
 footboard	panel
 footboard	physical-object
+footstep	amount
+footstep	indefinite-quantity
 footwear	artifact
 footwear	physical-object
 foray	act
@@ -6810,6 +7087,7 @@ forfeit	outgo
 forfeit	payment-amount
 forfeit	penalty
 forfeit	possession
+forfeit	relation
 fork	artifact
 fork	physical-object
 fork	tableware
@@ -6823,10 +7101,13 @@ formal-proof	indication
 formal-proof	information
 format	information
 formation	placement
+formation	relation
+formation	spatial-relation
 formula	information
 forte	asset
 forte	attribute
 fortune	possession
+fortune	relation
 fortune	wealth
 forum	group
 forum	meeting
@@ -6834,6 +7115,7 @@ fossil	physical-object
 foundation	group
 foundation	institution
 foundation	organization
+foundation.relation	relation
 fountain	artifact
 fountain	fixture
 fountain	physical-object
@@ -6842,6 +7124,9 @@ fox	mammal
 fox	organism
 fox	physical-object
 fox	vertebrate
+fraction	amount
+fraction	definite-quantity
+fraction	numeric-quantity
 fracture	attribute
 fracture	condition
 fracture	injury
@@ -6893,11 +7178,13 @@ freight-charge	charge-rate
 freight-charge	outgo
 freight-charge	possession
 freight-charge	price-charged
+freight-charge	relation
 french-horn	artifact
 french-horn	brass-instrument
 french-horn	device
 french-horn	musical-instrument
 french-horn	physical-object
+frequency	relation
 frequency-band	collection
 frequency-band	group
 freshman	agent
@@ -6915,6 +7202,7 @@ friendship	state
 fringe-benefit	outgo
 fringe-benefit	payment-amount
 fringe-benefit	possession
+fringe-benefit	relation
 frog	amphibian
 frog	animal
 frog	organism
@@ -6937,6 +7225,7 @@ fructose	compound
 fructose	material
 fructose	molecule
 fructose	part
+fructose	relation
 fructose	substance
 fruit	botanical-fruit
 fruit	natural-object
@@ -6950,6 +7239,7 @@ fruit-juice	drink
 fruit-juice	food
 fruit-juice	liquid-substance
 fruit-juice	part
+fruit-juice	relation
 fruit-juice	substance
 fruit-stone	natural-object
 fruit-stone	physical-object
@@ -6985,12 +7275,16 @@ fuel-oil	material
 fuel-oil	molecule
 fuel-oil	oil
 fuel-oil	part
+fuel-oil	relation
 fuel-oil	substance
 fun	act
 fun	activity
 fun	event
+function	relation
 functioning	process
+fund	amount
 fund	standard
+fund	system-of-measurement
 fundamental-law	document
 fundamental-law	information
 fundamental-law	legal-document
@@ -7011,6 +7305,7 @@ fur	animal-material
 fur	animal-product
 fur	material
 fur	part
+fur	relation
 fur	substance
 furnace	artifact
 furnace	enclosure
@@ -7027,6 +7322,7 @@ futon	artifact
 futon	mattress
 futon	physical-object
 future	attribute
+future	time
 gadget	artifact
 gadget	device
 gadget	physical-object
@@ -7072,9 +7368,11 @@ garageman's-lien	financial-interest
 garageman's-lien	lien
 garageman's-lien	mechanic's-lien
 garageman's-lien	possession
+garageman's-lien	relation
 garageman's-lien	security-interest
 garbage	material
 garbage	part
+garbage	relation
 garbage	substance
 garbage	waste
 garbage-disposal	appliance
@@ -7159,6 +7457,7 @@ gasoline	compound
 gasoline	fuel
 gasoline	material
 gasoline	part
+gasoline	relation
 gasoline	substance
 gate	artifact
 gate	physical-barrier
@@ -7207,6 +7506,7 @@ gelatine	material
 gelatine	molecule
 gelatine	part
 gelatine	protein
+gelatine	relation
 gelatine	substance
 gem	substance
 gene	group
@@ -7221,6 +7521,7 @@ general-ledger	transaction-record
 general-lien	financial-interest
 general-lien	lien
 general-lien	possession
+general-lien	relation
 general-lien	security-interest
 generator	artifact
 generator	device
@@ -7267,6 +7568,7 @@ giant	person
 giant	physical-object
 gift	acquisition
 gift	possession
+gift	relation
 gift-wrapping	artifact
 gift-wrapping	physical-object
 gift-wrapping	wrap
@@ -7278,6 +7580,7 @@ gin	food
 gin	liquid-substance
 gin	liquor
 gin	part
+gin	relation
 gin	substance
 ginger	fixings
 ginger	food
@@ -7345,13 +7648,16 @@ glucose	compound
 glucose	material
 glucose	molecule
 glucose	part
+glucose	relation
 glucose	substance
 glue	adhesive
 glue	material
 glue	part
+glue	relation
 glue	substance
 glycerol	liquid-substance
 glycerol	part
+glycerol	relation
 glycerol	substance
 goal	cognition
 goalkeeper	agent
@@ -7381,6 +7687,7 @@ going-out-of-business-sale	state
 gold	chemical-element
 gold	metal
 gold	part
+gold	relation
 gold	substance
 golf	act
 golf	activity
@@ -7433,6 +7740,7 @@ good-will	attribute
 good-will	disposition
 good-will	trait
 goodwill-asset	possession
+goodwill-asset	relation
 goose	animal
 goose	bird
 goose	organism
@@ -7492,6 +7800,8 @@ gradation	attribute
 gradation	rank
 gradation	state
 gradation	status
+grade	relation
+grade	spatial-relation
 graduated-cylinder	artifact
 graduated-cylinder	device
 graduated-cylinder	instrument
@@ -7509,6 +7819,7 @@ grain-merchant	person
 grain-merchant	physical-object
 grain.object	material
 grain.object	part
+grain.object	relation
 grain.object	substance
 grammar	cognition
 grammar	field-of-study
@@ -7533,6 +7844,7 @@ grandma	physical-object
 grandma	relative
 granite	material
 granite	part
+granite	relation
 granite	stone
 granite	substance
 granola	cereal
@@ -7544,6 +7856,7 @@ grant	acquisition
 grant	aid
 grant	gift
 grant	possession
+grant	relation
 grape	botanical-fruit
 grape	fruit
 grape	natural-object
@@ -7555,6 +7868,7 @@ grape-juice	food
 grape-juice	fruit-juice
 grape-juice	liquid-substance
 grape-juice	part
+grape-juice	relation
 grape-juice	substance
 grapefruit	botanical-fruit
 grapefruit	citrus-fruit
@@ -7568,6 +7882,7 @@ grapefruit-juice	food
 grapefruit-juice	fruit-juice
 grapefruit-juice	liquid-substance
 grapefruit-juice	part
+grapefruit-juice	relation
 grapefruit-juice	substance
 graph	information
 graphics	artifact
@@ -7586,11 +7901,13 @@ gratuity	fringe-benefit
 gratuity	outgo
 gratuity	payment-amount
 gratuity	possession
+gratuity	relation
 grave	physical-object
 grave	place
 grave	topographic-point
 gravel	material
 gravel	part
+gravel	relation
 gravel	stone
 gravel	substance
 graveness	attribute
@@ -7613,6 +7930,7 @@ gravy-boat	tableware
 greaseproof-paper	material
 greaseproof-paper	paper
 greaseproof-paper	part
+greaseproof-paper	relation
 greaseproof-paper	substance
 green	attribute
 green-tea	fixings
@@ -7703,8 +8021,10 @@ groover	physical-object
 gross-profit	income
 gross-profit	net-income
 gross-profit	possession
+gross-profit	relation
 gross-sales	income
 gross-sales	possession
+gross-sales	relation
 ground	cognition
 ground	view
 ground-cloth	artifact
@@ -7717,6 +8037,7 @@ ground-rent	outgo
 ground-rent	payment-amount
 ground-rent	possession
 ground-rent	regular-payment
+ground-rent	relation
 ground-rent	rent
 ground-stake	artifact
 ground-stake	device
@@ -7728,20 +8049,25 @@ groundnut-oil	fat
 groundnut-oil	material
 groundnut-oil	molecule
 groundnut-oil	part
+groundnut-oil	relation
 groundnut-oil	substance
 groundnut-oil	vegetable-oil
 group-insurance	possession
+group-insurance	relation
 grout	artifact
 grout	building-material
 grout	part
 grout	physical-object
 grout	plaster
+grout	relation
 grout	substance
 growth	process
 growth-stock	possession
+growth-stock	relation
 growth-stock	share-capital
 grubstake	financial-interest
 grubstake	possession
+grubstake	relation
 grudge	attribute
 grudge	emotion
 grudge	feeling
@@ -7756,6 +8082,7 @@ guarantee	information
 guaranty	collateral
 guaranty	financial-interest
 guaranty	possession
+guaranty	relation
 guaranty	security-interest
 guard	agent
 guard	organism
@@ -7851,6 +8178,7 @@ gypsum	compound
 gypsum	material
 gypsum	mineral
 gypsum	part
+gypsum	relation
 gypsum	substance
 habit	cognition
 habit	custom
@@ -7894,6 +8222,7 @@ half-pay	outgo
 half-pay	payment-amount
 half-pay	possession
 half-pay	regular-payment
+half-pay	relation
 half-pay	wage
 hall	artifact
 hall	building
@@ -7950,6 +8279,7 @@ handkerchief	physical-object
 handkerchief	piece
 handling-cost	outgo
 handling-cost	possession
+handling-cost	relation
 handrail	artifact
 handrail	physical-barrier
 handrail	physical-object
@@ -7972,6 +8302,7 @@ hard-cider	drug
 hard-cider	food
 hard-cider	liquid-substance
 hard-cider	part
+hard-cider	relation
 hard-cider	substance
 hard-coal	coal
 hard-coal	fuel
@@ -8021,6 +8352,7 @@ harrow	cultivator
 harrow	device
 harrow	machine
 harrow	physical-object
+harvest	amount
 harvest	season
 harvest	time-period
 harvester	artifact
@@ -8061,6 +8393,7 @@ hayfield	physical-object
 hayfield	place
 hayfield	region
 hazard-insurance	possession
+hazard-insurance	relation
 hazelnut	botanical-fruit
 hazelnut	natural-object
 hazelnut	nut
@@ -8097,6 +8430,8 @@ headquarters	artifact
 headquarters	office
 headquarters	physical-object
 headquarters	structure
+headroom	relation
+headroom	spatial-relation
 headset	artifact
 headset	device
 headset	headphone
@@ -8115,8 +8450,10 @@ health-condition	attribute
 health-condition	condition
 health-condition	state
 health-insurance	possession
+health-insurance	relation
 health-maintenance-organization	health-insurance
 health-maintenance-organization	possession
+health-maintenance-organization	relation
 hearing-aid	artifact
 hearing-aid	device
 hearing-aid	physical-object
@@ -8127,6 +8464,7 @@ heart-card	material
 heart-card	paper
 heart-card	part
 heart-card	playing-card
+heart-card	relation
 heart-card	substance
 heart-shape	attribute
 heart-shape	shape
@@ -8173,6 +8511,8 @@ help-desk	act
 help-desk	activity
 help-desk	assist
 help-desk	event
+helping	amount
+helping	indefinite-quantity
 hemisphere	physical-object
 hemisphere	place
 hemisphere	region
@@ -8191,10 +8531,12 @@ herb	substance
 herbicide	chemical
 herbicide	material
 herbicide	part
+herbicide	relation
 herbicide	substance
 herd	group
 here-and-now	attribute
 here-and-now	nowadays
+here-and-now	time
 hero	agent
 hero	leader
 hero	organism
@@ -8207,6 +8549,7 @@ hidden-reserve	backlog
 hidden-reserve	income
 hidden-reserve	net-income
 hidden-reserve	possession
+hidden-reserve	relation
 hidden-reserve	reserve-account
 hidden-reserve	retained-earnings
 hide	natural-object
@@ -8224,6 +8567,7 @@ high-finance	financial-services
 high-finance	transaction
 highlight	detail
 highlight	part
+highlight	relation
 highlighter	artifact
 highlighter	marker
 highlighter	physical-object
@@ -8243,6 +8587,7 @@ hire-purchase	outgo
 hire-purchase	payment-amount
 hire-purchase	possession
 hire-purchase	regular-payment
+hire-purchase	relation
 hired-hand	agent
 hired-hand	employee
 hired-hand	laborer
@@ -8255,6 +8600,7 @@ historian	organism
 historian	person
 historian	physical-object
 historian	scholar
+historic-period	amount
 historic-period	era
 historic-period	time-period
 history	cognition
@@ -8262,9 +8608,11 @@ history	field-of-study
 history	humanities
 history.time	attribute
 history.time	past
+history.time	time
 hoard	income
 hoard	net-income
 hoard	possession
+hoard	relation
 hoard	retained-earnings
 hoard	stored-supply
 hobby	artifact
@@ -8292,6 +8640,7 @@ hole	empty-space
 hole	physical-object
 hole	place
 hole	shape
+holiday	amount
 holiday	time-period
 home	artifact
 home	physical-object
@@ -8309,6 +8658,7 @@ home-loan	credit-line
 home-loan	debt
 home-loan	loan
 home-loan	possession
+home-loan	relation
 homecoming	act
 homecoming	event
 honey	fixings
@@ -8321,6 +8671,7 @@ honor	attribute
 honorarium	outgo
 honorarium	payment-amount
 honorarium	possession
+honorarium	relation
 honorarium	reward-payment
 honour	attribute
 honour	state
@@ -8374,6 +8725,7 @@ horsehair	animal-product
 horsehair	fiber
 horsehair	material
 horsehair	part
+horsehair	relation
 horsehair	substance
 horseradish-sauce	fixings
 horseradish-sauce	food
@@ -8408,6 +8760,7 @@ hospital-bed	furniture
 hospital-bed	physical-object
 hospitalization-insurance	health-insurance
 hospitalization-insurance	possession
+hospitalization-insurance	relation
 host	adult
 host	agent
 host	organism
@@ -8431,6 +8784,7 @@ hot-chocolate	drink
 hot-chocolate	food
 hot-chocolate	liquid-substance
 hot-chocolate	part
+hot-chocolate	relation
 hot-chocolate	substance
 hot-plate	appliance
 hot-plate	artifact
@@ -8445,11 +8799,14 @@ hot-sauce	sauce
 hot-sauce	seasoning
 hot-sauce	substance
 hot-stock	possession
+hot-stock	relation
 hot-stock	share-capital
 hotel	artifact
 hotel	building
 hotel	physical-object
 hotel	structure
+hour	amount
+hour	time-unit
 hourglass	artifact
 hourglass	device
 hourglass	instrument
@@ -8613,11 +8970,13 @@ imperativeness	state
 impetus	attribute
 impetus	degree
 impetus	force
+implication	relation
 import	artifact
 import	commodity
 import	physical-object
 import-credit	credit
 import-credit	possession
+import-credit	relation
 importance	attribute
 importance	worth
 importing	act
@@ -8639,6 +8998,7 @@ incense	chemical
 incense	compound
 incense	material
 incense	part
+incense	relation
 incense	substance
 incentive	motivation
 incentive-option	document
@@ -8652,6 +9012,7 @@ incident	event
 inclination	attitude
 inclination	cognition
 income	possession
+income	relation
 increase	process
 increment	attribute
 increment	magnitude
@@ -8659,6 +9020,7 @@ incubator	apparatus
 incubator	artifact
 incubator	equipment
 incubator	physical-object
+indefinite-quantity	amount
 indemnity	attribute
 indemnity	condition
 indemnity	safety
@@ -8671,9 +9033,11 @@ indenture	information
 indenture	legal-document
 index	body-part
 index	finger
+index-fund	amount
 index-fund	fund
 index-fund	mutual-fund
 index-fund	standard
+index-fund	system-of-measurement
 indication	information
 indicator-needle	artifact
 indicator-needle	device
@@ -8744,6 +9108,7 @@ injury	condition
 injury	state
 ink	liquid-substance
 ink	part
+ink	relation
 ink	substance
 inner-tube	artifact
 inner-tube	conduit
@@ -8766,6 +9131,7 @@ insecticide	chemical
 insecticide	material
 insecticide	part
 insecticide	pesticide
+insecticide	relation
 insecticide	substance
 insert	artifact
 insert	physical-object
@@ -8798,21 +9164,26 @@ installation	event
 installation-charge	outgo
 installation-charge	possession
 installation-charge	price-charged
+installation-charge	relation
 installment	outgo
 installment	payment-amount
 installment	possession
+installment	relation
 installment-credit	consumer-credit
 installment-credit	credit
 installment-credit	credit-line
 installment-credit	debt
 installment-credit	loan
 installment-credit	possession
+installment-credit	relation
 installment-debt	debt
 installment-debt	possession
+installment-debt	relation
 installment-plan	outgo
 installment-plan	payment-amount
 installment-plan	possession
 installment-plan	regular-payment
+installment-plan	relation
 instance	event
 instinct	cognition
 institution	group
@@ -8827,7 +9198,9 @@ insulation	building-material
 insulation	physical-object
 insurable-interest	financial-interest
 insurable-interest	possession
+insurable-interest	relation
 insurance-coverage	possession
+insurance-coverage	relation
 insurgent	agent
 insurgent	organism
 insurgent	person
@@ -8855,6 +9228,7 @@ interbank-loan	bank-loan
 interbank-loan	debt
 interbank-loan	loan
 interbank-loan	possession
+interbank-loan	relation
 intercom	artifact
 intercom	physical-object
 intercom	system-instrumentality
@@ -8862,13 +9236,16 @@ interest	fixed-charge
 interest	outgo
 interest	possession
 interest	price-charged
+interest	relation
 interest-expense	expense
 interest-expense	outgo
 interest-expense	possession
+interest-expense	relation
 interest-rate	charge-rate
 interest-rate	outgo
 interest-rate	possession
 interest-rate	price-charged
+interest-rate	relation
 interface	code
 interface	computer-program
 interface	information
@@ -8932,6 +9309,7 @@ investing	event
 investing	financial-services
 investing	transaction
 investment	possession
+investment	relation
 invitation	act
 invitation	artifact
 invitation	event
@@ -8945,11 +9323,13 @@ invoice	statement
 iron	chemical-element
 iron	metal
 iron	part
+iron	relation
 iron	substance
 iron-ore	material
 iron-ore	mineral
 iron-ore	ore
 iron-ore	part
+iron-ore	relation
 iron-ore	substance
 ironing	act
 ironing	activity
@@ -8976,6 +9356,7 @@ iteration	process
 ivory	animal-material
 ivory	material
 ivory	part
+ivory	relation
 ivory	substance
 jack	artifact
 jack	physical-object
@@ -9154,6 +9535,7 @@ justification	cognition
 jute	fiber
 jute	material
 jute	part
+jute	relation
 jute	substance
 kale	cabbage
 kale	produce
@@ -9170,11 +9552,13 @@ kayak	physical-object
 kayak	vehicle
 kayak	watercraft
 keep	possession
+keep	relation
 kerosene	chemical
 kerosene	compound
 kerosene	fuel
 kerosene	material
 kerosene	part
+kerosene	relation
 kerosene	substance
 ketchup	fixings
 ketchup	food
@@ -9225,9 +9609,11 @@ king-card	material
 king-card	paper
 king-card	part
 king-card	playing-card
+king-card	relation
 king-card	substance
 kingdom	group
 kingdom	monarchy
+kinship	relation
 kit	artifact
 kit	equipment
 kit	physical-object
@@ -9332,6 +9718,7 @@ lactose	compound
 lactose	material
 lactose	molecule
 lactose	part
+lactose	relation
 lactose	substance
 ladder	artifact
 ladder	physical-object
@@ -9360,6 +9747,7 @@ lamp-shade	shade
 land	physical-object
 landed-estate	belongings
 landed-estate	possession
+landed-estate	relation
 landing-field	artifact
 landing-field	facility
 landing-field	physical-object
@@ -9371,6 +9759,7 @@ landlord	physical-object
 landlord's-lien	financial-interest
 landlord's-lien	lien
 landlord's-lien	possession
+landlord's-lien	relation
 landlord's-lien	security-interest
 landmine	artifact
 landmine	device
@@ -9391,6 +9780,8 @@ landscaping	transaction
 lane	artifact
 lane	physical-object
 language	information
+language-unit	part
+language-unit	relation
 lantern	artifact
 lantern	device
 lantern	physical-object
@@ -9414,6 +9805,7 @@ lard	fat
 lard	material
 lard	molecule
 lard	part
+lard	relation
 lard	substance
 laser	artifact
 laser	device
@@ -9456,6 +9848,7 @@ laundry-detergent	compound
 laundry-detergent	detergent
 laundry-detergent	material
 laundry-detergent	part
+laundry-detergent	relation
 laundry-detergent	substance
 laurel-wreath	information
 laurel-wreath	signal
@@ -9489,6 +9882,7 @@ layout	cognition
 lead	chemical-element
 lead	metal
 lead	part
+lead	relation
 lead	substance
 leader	agent
 leader	organism
@@ -9517,7 +9911,9 @@ leather	animal-material
 leather	animal-product
 leather	material
 leather	part
+leather	relation
 leather	substance
+leave	amount
 leave	time-period
 lectern	artifact
 lectern	furniture
@@ -9545,6 +9941,7 @@ leg-of-meat	meat
 leg-of-meat	substance
 legal-action	act
 legal-action	event
+legal-age	amount
 legal-age	time-period
 legal-document	document
 legal-document	information
@@ -9553,6 +9950,7 @@ legal-fee	fixed-charge
 legal-fee	outgo
 legal-fee	possession
 legal-fee	price-charged
+legal-fee	relation
 legal-power	attribute
 legal-procedure	act
 legal-procedure	event
@@ -9618,6 +10016,7 @@ letter-bond	letter-security
 letter-of-credit	credit
 letter-of-credit	information
 letter-of-credit	possession
+letter-of-credit	relation
 letter-of-the-alphabet	character
 letter-of-the-alphabet	information
 letter-of-the-alphabet	signal
@@ -9643,6 +10042,7 @@ liability	attribute
 liability	condition
 liability	state
 liability-insurance	possession
+liability-insurance	relation
 liberty	attribute
 liberty	freedom
 liberty	state
@@ -9655,6 +10055,7 @@ library-fine	outgo
 library-fine	payment-amount
 library-fine	penalty
 library-fine	possession
+library-fine	relation
 license	document
 license	information
 license	legal-document
@@ -9673,10 +10074,12 @@ lid	physical-object
 lie	information
 lien	financial-interest
 lien	possession
+lien	relation
 lien	security-interest
 life	attribute
 life	state
 life-insurance	possession
+life-insurance	relation
 life-jacket	artifact
 life-jacket	equipment
 life-jacket	physical-object
@@ -9703,6 +10106,7 @@ lighterage	fixed-charge
 lighterage	outgo
 lighterage	possession
 lighterage	price-charged
+lighterage	relation
 lighting	apparatus
 lighting	artifact
 lighting	equipment
@@ -9724,10 +10128,13 @@ lime-juice	juice
 lime-juice	substance
 limestone	material
 limestone	part
+limestone	relation
 limestone	stone
 limestone	substance
 limit	physical-object
 limit	place
+limit.quantity	amount
+limit.quantity	indefinite-quantity
 limitation	attribute
 limitation	disadvantage
 limited-audit	audited-account
@@ -9739,9 +10146,11 @@ linage-rate	charge-rate
 linage-rate	outgo
 linage-rate	possession
 linage-rate	price-charged
+linage-rate	relation
 line	cognition
 line-formation	group
 line-of-descent	kinship
+line-of-descent	relation
 line-of-text	information
 line-of-text	text
 lineation	physical-object
@@ -9764,7 +10173,9 @@ lingerie	commodity
 lingerie	garment
 lingerie	physical-object
 lingerie	underwear
+linguistic-context	language-unit
 linguistic-context	part
+linguistic-context	relation
 linguistics	cognition
 linguistics	field-of-study
 linguistics	science
@@ -9803,10 +10214,12 @@ liqueur	drug
 liqueur	food
 liqueur	liquid-substance
 liqueur	part
+liqueur	relation
 liqueur	substance
 liquid	fluid
 liquid	substance
 liquid-substance	part
+liquid-substance	relation
 liquid-substance	substance
 liquor	agent
 liquor	alcohol
@@ -9815,12 +10228,14 @@ liquor	drug
 liquor	food
 liquor	liquid-substance
 liquor	part
+liquor	relation
 liquor	substance
 list	information
 list-price	asking-price
 list-price	outgo
 list-price	possession
 list-price	purchase-price
+list-price	relation
 listed-security	document
 listed-security	information
 listed-security	legal-document
@@ -9851,11 +10266,14 @@ loafer	physical-object
 loafer	shoe
 loan	debt
 loan	possession
+loan	relation
 loan-point	debt
 loan-point	loan
 loan-point	possession
+loan-point	relation
 loan-principal	debt
 loan-principal	possession
+loan-principal	relation
 lobby	group
 lobby	organization
 lobster	animal
@@ -9879,6 +10297,7 @@ lockage	fixed-charge
 lockage	outgo
 lockage	possession
 lockage	price-charged
+lockage	relation
 locker	artifact
 locker	physical-object
 locker	room
@@ -9893,6 +10312,7 @@ loft	storey
 loft	structure
 log	material
 log	part
+log	relation
 log	substance
 log	wood
 log-cabin	artifact
@@ -9928,6 +10348,7 @@ longbow	weapon
 loofah	fiber
 loofah	material
 loofah	part
+loofah	relation
 loofah	substance
 look	appearance
 look	attribute
@@ -9948,6 +10369,7 @@ loop	attribute
 loop	curved-shape
 loop	shape
 loot	possession
+loot	relation
 looting	act
 looting	aggression
 looting	event
@@ -9958,11 +10380,13 @@ loquat	physical-object
 loquat	produce
 loquat	substance
 loss	possession
+loss	relation
 loss-leader	artifact
 loss-leader	commodity
 loss-leader	merchandise
 loss-leader	physical-object
 lost-item	possession
+lost-item	relation
 lot	physical-object
 lot	place
 lot	region
@@ -10037,6 +10461,7 @@ luminosity	attribute
 lump-sum	outgo
 lump-sum	payment-amount
 lump-sum	possession
+lump-sum	relation
 lunch	food
 lunch	meal
 lunch	substance
@@ -10099,6 +10524,7 @@ magic-trick	performing
 magnesium	chemical-element
 magnesium	metal
 magnesium	part
+magnesium	relation
 magnesium	substance
 magnet	artifact
 magnet	device
@@ -10154,6 +10580,7 @@ maize	plant
 major-planet	celestial-body
 major-planet	natural-object
 major-planet	physical-object
+majority	amount
 makeover	act
 makeover	beauty-treatment
 makeover	event
@@ -10169,6 +10596,7 @@ malice	emotion
 malice	feeling
 malice	state
 malpractice-insurance	possession
+malpractice-insurance	relation
 malt-grain	food
 malt-grain	foodstuff
 malt-grain	grain
@@ -10181,6 +10609,7 @@ malt-liquor	drug
 malt-liquor	food
 malt-liquor	liquid-substance
 malt-liquor	part
+malt-liquor	relation
 malt-liquor	substance
 maltreatment	act
 maltreatment	activity
@@ -10266,6 +10695,7 @@ maple-sugar	compound
 maple-sugar	material
 maple-sugar	molecule
 maple-sugar	part
+maple-sugar	relation
 maple-sugar	substance
 maple-syrup	fixings
 maple-syrup	food
@@ -10274,6 +10704,7 @@ maple-syrup	seasoning
 maple-syrup	substance
 maple-syrup	sweetener
 maple-syrup	syrup
+mar	amount
 mar	calendar-month
 mar	time-period
 marathon	contest
@@ -10281,6 +10712,7 @@ marathon	event
 marathon	race
 marble	material
 marble	part
+marble	relation
 marble	stone
 marble	substance
 march	act
@@ -10304,7 +10736,10 @@ margin-deposit	down-payment
 margin-deposit	outgo
 margin-deposit	payment-amount
 margin-deposit	possession
+margin-deposit	relation
+marginal-utility	amount
 marginal-utility	economic-utility
+marginal-utility	system-of-measurement
 marinade	fixings
 marinade	food
 marinade	foodstuff
@@ -10334,9 +10769,11 @@ marketing	event
 marketing	transaction
 marketing-cost	outgo
 marketing-cost	possession
+marketing-cost	relation
 markup	income
 markup	net-income
 markup	possession
+markup	relation
 marmalade	food
 marmalade	preserves
 marmalade	substance
@@ -10404,6 +10841,7 @@ matchstick	device
 matchstick	lighter
 matchstick	physical-object
 material	part
+material	relation
 material	substance
 mathematical-product	cognition
 mathematical-product	concept
@@ -10425,6 +10863,8 @@ mattress	artifact
 mattress	physical-object
 mattress-pad	artifact
 mattress-pad	physical-object
+maximum	amount
+maximum	indefinite-quantity
 maximum	limit.quantity
 mayonnaise	fixings
 mayonnaise	food
@@ -10449,6 +10889,7 @@ mead	drug
 mead	food
 mead	liquid-substance
 mead	part
+mead	relation
 mead	substance
 meal	food
 meal	substance
@@ -10474,6 +10915,7 @@ meatpacking	transaction
 mechanic's-lien	financial-interest
 mechanic's-lien	lien
 mechanic's-lien	possession
+mechanic's-lien	relation
 mechanic's-lien	security-interest
 mechanical-press	artifact
 mechanical-press	device
@@ -10491,6 +10933,7 @@ medical-care	work
 medical-expense	expense
 medical-expense	outgo
 medical-expense	possession
+medical-expense	relation
 medical-instrument	artifact
 medical-instrument	device
 medical-instrument	instrument
@@ -10574,10 +11017,12 @@ merit-pay	outgo
 merit-pay	payment-amount
 merit-pay	possession
 merit-pay	regular-payment
+merit-pay	relation
 merit-pay	wage
 message	information
 metal	chemical-element
 metal	part
+metal	relation
 metal	substance
 metal-detector	artifact
 metal-detector	detector
@@ -10639,6 +11084,8 @@ midnight	cognition
 midnight	time-of-day
 migration	act
 migration	event
+mile	amount
+mile	indefinite-quantity
 mileage	compensation
 mileage	expense-allowance
 mileage	outgo
@@ -10646,6 +11093,7 @@ mileage	payment-amount
 mileage	possession
 mileage	recompense-payment
 mileage	reimbursement
+mileage	relation
 mileage	travel-allowance
 military-action	act
 military-action	event
@@ -10674,6 +11122,7 @@ milk	food
 milk	foodstuff
 milk	liquid-substance
 milk	part
+milk	relation
 milk	substance
 milking-machine	artifact
 milking-machine	device
@@ -10717,12 +11166,16 @@ miner	physical-object
 miner	worker
 mineral	material
 mineral	part
+mineral	relation
 mineral	substance
 mineral-water	drink
 mineral-water	food
 mineral-water	liquid-substance
 mineral-water	part
+mineral-water	relation
 mineral-water	substance
+minimum	amount
+minimum	indefinite-quantity
 minimum	limit.quantity
 minister	administrator
 minister	agent
@@ -10737,6 +11190,8 @@ ministry	organization
 minority	attribute
 minority	magnitude
 minority	number
+minute	amount
+minute	time-unit
 miracle	event
 mirror	artifact
 mirror	device
@@ -10824,8 +11279,11 @@ monetary-exchange	event
 monetary-exchange	transaction
 monetary-wealth	belongings
 monetary-wealth	possession
+monetary-wealth	relation
+money	amount
 money	currency
 money	standard
+money	system-of-measurement
 money-market	group
 money-market	organization
 monitor	artifact
@@ -10853,18 +11311,23 @@ moorage	fixed-charge
 moorage	outgo
 moorage	possession
 moorage	price-charged
+moorage	relation
 mop	artifact
 mop	physical-object
 moral-hazard	agent
 morale	attribute
 morale	condition
 morale	state
+morning	amount
 morning	time-period
+morsel	amount
+morsel	indefinite-quantity
 mortar	artifact
 mortar	building-material
 mortar	physical-object
 mortgage	financial-interest
 mortgage	possession
+mortgage	relation
 mortgage	security-interest
 mortgage-backed-security	document
 mortgage-backed-security	information
@@ -10938,6 +11401,7 @@ mouth	body-part
 mouth	passage
 mouthwash	chemical-solution
 mouthwash	part
+mouthwash	relation
 mouthwash	substance
 move	act
 move	event
@@ -10945,6 +11409,7 @@ movement	group
 moving-expense	expense
 moving-expense	outgo
 moving-expense	possession
+moving-expense	relation
 msg	fixings
 msg	food
 msg	foodstuff
@@ -10952,6 +11417,7 @@ msg	seasoning
 msg	substance
 mud	material
 mud	part
+mud	relation
 mud	soil
 mud	substance
 muffin	bread
@@ -11053,8 +11519,10 @@ mustard-seed	seasoning
 mustard-seed	substance
 mutation	change
 mutation	event
+mutual-fund	amount
 mutual-fund	fund
 mutual-fund	standard
+mutual-fund	system-of-measurement
 mystery	attribute
 mystery	condition
 mystery	state
@@ -11072,7 +11540,9 @@ naked-option	document
 naked-option	information
 naked-option	legal-document
 naked-option	purchase-option
+name	language-unit
 name	part
+name	relation
 napkin	artifact
 napkin	commodity
 napkin	linen
@@ -11098,6 +11568,7 @@ natural-law	idea
 natural-object	physical-object
 natural-rubber	material
 natural-rubber	part
+natural-rubber	relation
 natural-rubber	substance
 natural-science	cognition
 natural-science	field-of-study
@@ -11160,8 +11631,10 @@ net	equipment
 net	physical-object
 net-income	income
 net-income	possession
+net-income	relation
 net-sales	income
 net-sales	possession
+net-sales	relation
 network	artifact
 network	facility
 network	physical-object
@@ -11186,11 +11659,14 @@ newspaper	storage-medium
 newsprint	material
 newsprint	paper
 newsprint	part
+newsprint	relation
 newsprint	substance
 nickel	chemical-element
 nickel	metal
 nickel	part
+nickel	relation
 nickel	substance
+night	amount
 night	time-period
 nightgown	artifact
 nightgown	clothing
@@ -11205,7 +11681,9 @@ nightmare	dream
 nightmare	imagination
 no-fault-insurance	automobile-insurance
 no-fault-insurance	possession
+no-fault-insurance	relation
 no-par-value-stock	possession
+no-par-value-stock	relation
 no-par-value-stock	share-capital
 node	attribute
 node	shape
@@ -11218,17 +11696,25 @@ nomination	event
 non-cash-expense	expense
 non-cash-expense	outgo
 non-cash-expense	possession
+non-cash-expense	relation
 noncallable-bond	bond
 noncallable-bond	document
 noncallable-bond	information
 noncallable-bond	legal-document
 nonpayment	lost-item
 nonpayment	possession
+nonpayment	relation
 nonsense	information
 noodle	pasta
 noodle	substance
+norm	amount
 norm	standard
+norm	system-of-measurement
 normal	cognition
+north	cardinal-compass-point
+north	relation
+north	spatial-direction
+north	spatial-relation
 nose	body-part
 nose	organ
 note	indication
@@ -11245,6 +11731,7 @@ notebook-computer	physical-object
 notepad	material
 notepad	paper
 notepad	part
+notepad	relation
 notepad	substance
 notice	information
 notice.communication	act
@@ -11252,13 +11739,16 @@ notice.communication	event
 notion	cognition
 notion	concept
 notion	idea
+noun	language-unit
 noun	part
+noun	relation
 noun	word
 novel	fiction
 novel	information
 novelty	artifact
 novelty	physical-object
 nowadays	attribute
+nowadays	time
 nozzle	artifact
 nozzle	physical-object
 nuance	information
@@ -11276,6 +11766,8 @@ number-one-wood	physical-object
 numeral	information
 numeral	signal
 numeral	symbol
+numeric-quantity	amount
+numeric-quantity	definite-quantity
 nun	agent
 nun	organism
 nun	person
@@ -11346,6 +11838,7 @@ ocarina	artifact
 ocarina	device
 ocarina	musical-instrument
 ocarina	physical-object
+occasion	amount
 occlusion	artifact
 occlusion	physical-object
 occlusion	structure
@@ -11353,6 +11846,8 @@ occupation	act
 occupation	activity
 occupation	event
 ocean	body-of-water
+ocean.quantity	amount
+ocean.quantity	indefinite-quantity
 octopus	animal
 octopus	invertebrate
 octopus	mollusc
@@ -11378,6 +11873,7 @@ offer-price	asking-price
 offer-price	outgo
 offer-price	possession
 offer-price	purchase-price
+offer-price	relation
 office	artifact
 office	physical-object
 office	structure
@@ -11399,6 +11895,7 @@ oil	compound
 oil	material
 oil	molecule
 oil	part
+oil	relation
 oil	substance
 oil-filter	artifact
 oil-filter	device
@@ -11420,12 +11917,14 @@ oilseed	seed
 okra	produce
 okra	substance
 okra	vegetable
+old-age	amount
 old-age	time-period
 old-age-pension	outgo
 old-age-pension	payment-amount
 old-age-pension	pension
 old-age-pension	possession
 old-age-pension	regular-payment
+old-age-pension	relation
 olfactory-property	attribute
 oligopoly	act
 oligopoly	activity
@@ -11446,13 +11945,20 @@ olive-oil	fat
 olive-oil	material
 olive-oil	molecule
 olive-oil	part
+olive-oil	relation
 olive-oil	substance
 olive-oil	vegetable-oil
 omission	act
 omission	event
 omission	mistake
+one-fourth	amount
+one-fourth	definite-quantity
 one-fourth	fraction
+one-fourth	numeric-quantity
+one-half	amount
+one-half	definite-quantity
 one-half	fraction
+one-half	numeric-quantity
 onion	bulb
 onion	natural-object
 onion	physical-object
@@ -11464,15 +11970,20 @@ open-end-credit	consumer-credit
 open-end-credit	credit
 open-end-credit	credit-line
 open-end-credit	possession
+open-end-credit	relation
 opera	information
 opera	music
+operating-budget	amount
 operating-budget	budget
 operating-budget	fund
 operating-budget	standard
+operating-budget	system-of-measurement
 operating-capital	possession
+operating-capital	relation
 operating-expense	expense
 operating-expense	outgo
 operating-expense	possession
+operating-expense	relation
 operating-system	code
 operating-system	information
 operating-system	software
@@ -11492,14 +12003,17 @@ opportunity	attribute
 opportunity	state
 opportunity-cost	outgo
 opportunity-cost	possession
+opportunity-cost	relation
 opposing-view	information
 opposing-view	opinion
+opposite	relation
 opposition	group
 opposition	organization
 opposition	political-party
 optical-fiber	fiber
 optical-fiber	material
 optical-fiber	part
+optical-fiber	relation
 optical-fiber	substance
 optical-instrument	artifact
 optical-instrument	device
@@ -11526,6 +12040,7 @@ orange-juice	food
 orange-juice	fruit-juice
 orange-juice	liquid-substance
 orange-juice	part
+orange-juice	relation
 orange-juice	substance
 orbit	physical-object
 orbit	place
@@ -11542,9 +12057,11 @@ ordinary-annuity	outgo
 ordinary-annuity	payment-amount
 ordinary-annuity	possession
 ordinary-annuity	regular-payment
+ordinary-annuity	relation
 ore	material
 ore	mineral
 ore	part
+ore	relation
 ore	substance
 organ	body-part
 organism	physical-object
@@ -11553,6 +12070,7 @@ organization-expense	business-expense
 organization-expense	expense
 organization-expense	outgo
 organization-expense	possession
+organization-expense	relation
 organizer	artifact
 organizer	device
 organizer	physical-object
@@ -11560,12 +12078,16 @@ orgy	act
 orgy	activity
 orgy	celebration
 orgy	event
+orientation	relation
+orientation	spatial-direction
+orientation	spatial-relation
 origin	attribute
 origination-fee	fee
 origination-fee	fixed-charge
 origination-fee	outgo
 origination-fee	possession
 origination-fee	price-charged
+origination-fee	relation
 ornamental-fountain	artifact
 ornamental-fountain	physical-object
 ornamental-fountain	structure
@@ -11598,8 +12120,11 @@ outfit	clothing
 outfit	commodity
 outfit	physical-object
 outgo	possession
+outgo	relation
 outline	information
 outline	summary
+output	amount
+output	indefinite-quantity
 output-contract	contract
 output-contract	document
 output-contract	information
@@ -11634,11 +12159,13 @@ overcapitalization	transaction
 overcharge	outgo
 overcharge	possession
 overcharge	price-charged
+overcharge	relation
 overdraft-credit	consumer-credit
 overdraft-credit	credit
 overdraft-credit	credit-line
 overdraft-credit	open-end-credit
 overdraft-credit	possession
+overdraft-credit	relation
 overhaul	act
 overhaul	care
 overhaul	event
@@ -11652,6 +12179,7 @@ overhead-projector	projector
 overpaid-amount	outgo
 overpaid-amount	payment-amount
 overpaid-amount	possession
+overpaid-amount	relation
 overpayment	act
 overpayment	commerce
 overpayment	event
@@ -11676,9 +12204,11 @@ owner	businessman
 owner	organism
 owner	person
 owner	physical-object
+ownership	relation
 oxygen	chemical-element
 oxygen	fluid
 oxygen	part
+oxygen	relation
 oxygen	substance
 oyster	animal
 oyster	invertebrate
@@ -11707,6 +12237,7 @@ packet	container
 packet	physical-object
 packing-material	material
 packing-material	part
+packing-material	relation
 packing-material	substance
 paddle	artifact
 paddle	oar
@@ -11720,6 +12251,7 @@ page	material
 page	paper
 page	part
 page	piece-of-paper
+page	relation
 page	substance
 pager	artifact
 pager	device
@@ -11742,6 +12274,7 @@ paint	coating
 paint	material
 paint	part
 paint	physical-object
+paint	relation
 paint	substance
 paintball	artifact
 paintball	container
@@ -11797,6 +12330,7 @@ palm-oil	fat
 palm-oil	material
 palm-oil	molecule
 palm-oil	part
+palm-oil	relation
 palm-oil	substance
 palm-oil	vegetable-oil
 pan	artifact
@@ -11828,6 +12362,7 @@ papaya	produce
 papaya	substance
 paper	material
 paper	part
+paper	relation
 paper	substance
 paper-clip	artifact
 paper-clip	clip
@@ -11839,6 +12374,7 @@ paper-pulp	compound
 paper-pulp	material
 paper-pulp	molecule
 paper-pulp	part
+paper-pulp	relation
 paper-pulp	substance
 paper-towel	artifact
 paper-towel	fabric
@@ -11849,6 +12385,7 @@ paperboard	material
 paperboard	packing-material
 paperboard	paper
 paperboard	part
+paperboard	relation
 paperboard	substance
 paperweight	artifact
 paperweight	physical-object
@@ -11872,6 +12409,7 @@ paraffin-wax	compound
 paraffin-wax	material
 paraffin-wax	molecule
 paraffin-wax	part
+paraffin-wax	relation
 paraffin-wax	substance
 paraffin-wax	wax
 paragraph	information
@@ -11895,6 +12433,8 @@ parent	relative
 park	physical-object
 park	place
 park	region
+parking	relation
+parking	spatial-relation
 parliament	group
 parliament	legislature
 parole	act
@@ -11906,6 +12446,7 @@ paroxysm	trouble
 parsnip	produce
 parsnip	substance
 parsnip	vegetable
+part	relation
 participant	agent
 participant	organism
 participant	peer
@@ -11914,6 +12455,7 @@ participant	physical-object
 participation-loan	debt
 participation-loan	loan
 participation-loan	possession
+participation-loan	relation
 particle	natural-object
 particle	physical-object
 partner	agent
@@ -11958,6 +12500,7 @@ password	identification
 password	indication
 password	information
 past	attribute
+past	time
 pasta	substance
 pasta-sauce	fixings
 pasta-sauce	food
@@ -11992,6 +12535,7 @@ patent-leather	animal-product
 patent-leather	leather
 patent-leather	material
 patent-leather	part
+patent-leather	relation
 patent-leather	substance
 path	physical-object
 path	place
@@ -12017,11 +12561,13 @@ patrol	organization
 pattern	cognition
 pattern	exemplar
 pattern	idea
+pause	amount
 paving	artifact
 paving	physical-object
 pawn	financial-interest
 pawn	pledge
 pawn	possession
+pawn	relation
 pawn	security-interest
 pawn-ticket	information
 pawn-ticket	receipt
@@ -12029,26 +12575,32 @@ pay-envelope	outgo
 pay-envelope	payment-amount
 pay-envelope	possession
 pay-envelope	regular-payment
+pay-envelope	relation
 pay-envelope	wage
 pay-rate	charge-rate
 pay-rate	outgo
 pay-rate	possession
 pay-rate	price-charged
+pay-rate	relation
 payback-return	income
 payback-return	possession
+payback-return	relation
 payment	act
 payment	commerce
 payment	event
 payment	transaction
 payment-amount	outgo
 payment-amount	possession
+payment-amount	relation
 payment-rate	charge-rate
 payment-rate	outgo
 payment-rate	possession
 payment-rate	price-charged
+payment-rate	relation
 payoff	outgo
 payoff	payment-amount
 payoff	possession
+payoff	relation
 pea	produce
 pea	substance
 pea	vegetable
@@ -12092,6 +12644,7 @@ peasant	physical-object
 peasant	worker
 peat	material
 peat	part
+peat	relation
 peat	substance
 peddler	agent
 peddler	merchant
@@ -12115,6 +12668,7 @@ pedometer	instrument
 pedometer	physical-object
 peel	material
 peel	part
+peel	relation
 peel	substance
 peeler	artifact
 peeler	device
@@ -12134,6 +12688,7 @@ pen	physical-object
 penalty	outgo
 penalty	payment-amount
 penalty	possession
+penalty	relation
 pencil	artifact
 pencil	physical-object
 pencil-case	artifact
@@ -12155,8 +12710,11 @@ pension	outgo
 pension	payment-amount
 pension	possession
 pension	regular-payment
+pension	relation
+pension-fund	amount
 pension-fund	fund
 pension-fund	standard
+pension-fund	system-of-measurement
 pensioner	agent
 pensioner	beneficiary
 pensioner	organism
@@ -12190,6 +12748,7 @@ peppercorn-rent	outgo
 peppercorn-rent	payment-amount
 peppercorn-rent	possession
 peppercorn-rent	regular-payment
+peppercorn-rent	relation
 peppercorn-rent	rent
 per-diem	compensation
 per-diem	expense-allowance
@@ -12198,11 +12757,13 @@ per-diem	payment-amount
 per-diem	possession
 per-diem	recompense-payment
 per-diem	reimbursement
+per-diem	relation
 perceiver	agent
 perceiver	organism
 perceiver	person
 perceiver	physical-object
 percentage	ratio
+percentage	relation
 perception	cognition
 perceptiveness	attribute
 perceptiveness	feeling
@@ -12238,12 +12799,14 @@ perfume	physical-object
 period	information
 period	signal
 period	symbol
+period.time	amount
 periodical	artifact
 periodical	physical-object
 periodical	product
 periodical	publication
 permission	information
 perpetual-warrant	possession
+perpetual-warrant	relation
 perpetual-warrant	stock-warrant
 persimmon	berry
 persimmon	botanical-fruit
@@ -12263,19 +12826,23 @@ personal-care	work
 personal-expense	expense
 personal-expense	outgo
 personal-expense	possession
+personal-expense	relation
 personal-identification-number	identification
 personal-identification-number	indication
 personal-identification-number	information
 personal-income	income
 personal-income	possession
+personal-income	relation
 personal-knowledge	cognition
 personal-loan	debt
 personal-loan	loan
 personal-loan	possession
+personal-loan	relation
 personality	attribute
 perspective	attitude
 perspective	cognition
 perspiration	part
+perspiration	relation
 perspiration	secretion
 perspiration	substance
 pest	agent
@@ -12288,6 +12855,7 @@ pest-control	event
 pesticide	chemical
 pesticide	material
 pesticide	part
+pesticide	relation
 pesticide	substance
 pestle	artifact
 pestle	hand-tool
@@ -12310,14 +12878,18 @@ petri-dish	physical-object
 petri-dish	tableware
 petroleum-jelly	jelly
 petroleum-jelly	part
+petroleum-jelly	relation
 petroleum-jelly	substance
 petticoat	artifact
 petticoat	clothing
 petticoat	commodity
 petticoat	garment
 petticoat	physical-object
+petty-cash	amount
 petty-cash	fund
 petty-cash	standard
+petty-cash	system-of-measurement
+phase	amount
 phase	time-period
 phenomenon	process
 philosopher	agent
@@ -12405,6 +12977,7 @@ piece	physical-object
 piece-of-paper	material
 piece-of-paper	paper
 piece-of-paper	part
+piece-of-paper	relation
 piece-of-paper	substance
 pier	artifact
 pier	device
@@ -12467,6 +13040,7 @@ pineapple-juice	food
 pineapple-juice	fruit-juice
 pineapple-juice	liquid-substance
 pineapple-juice	part
+pineapple-juice	relation
 pineapple-juice	substance
 pioneer	agent
 pioneer	organism
@@ -12481,6 +13055,7 @@ pipage-fee	fixed-charge
 pipage-fee	outgo
 pipage-fee	possession
 pipage-fee	price-charged
+pipage-fee	relation
 pipe	attribute
 pipe	shape
 pipe-cutter	artifact
@@ -12520,6 +13095,8 @@ pitch	attribute
 pity	event
 pity	trouble
 place	physical-object
+placement	relation
+placement	spatial-relation
 plaintiff	agent
 plaintiff	organism
 plaintiff	person
@@ -12568,6 +13145,7 @@ plaster	artifact
 plaster	building-material
 plaster	part
 plaster	physical-object
+plaster	relation
 plaster	substance
 plastic	substance
 plastic-film	artifact
@@ -12582,6 +13160,7 @@ plate	tableware
 platinum	chemical-element
 platinum	metal
 platinum	part
+platinum	relation
 platinum	substance
 play	act
 play	activity
@@ -12606,6 +13185,7 @@ playing-card	card
 playing-card	material
 playing-card	paper
 playing-card	part
+playing-card	relation
 playing-card	substance
 playing-field	physical-object
 playing-field	place
@@ -12621,6 +13201,7 @@ pleasure	feeling
 pleasure	state
 pledge	financial-interest
 pledge	possession
+pledge	relation
 pledge	security-interest
 pliers	artifact
 pliers	bar
@@ -12726,6 +13307,7 @@ polish-preparation	chemical
 polish-preparation	compound
 polish-preparation	material
 polish-preparation	part
+polish-preparation	relation
 polish-preparation	substance
 political-campaign	contest
 political-campaign	event
@@ -12738,6 +13320,7 @@ politician	leader
 politician	organism
 politician	person
 politician	physical-object
+politics	relation
 poll	act
 poll	activity
 poll	event
@@ -12776,6 +13359,7 @@ pooled-fund	backlog
 pooled-fund	income
 pooled-fund	net-income
 pooled-fund	possession
+pooled-fund	relation
 pooled-fund	reserve-account
 pooled-fund	retained-earnings
 pooling-of-interest	information
@@ -12784,6 +13368,7 @@ pop	drink
 pop	food
 pop	liquid-substance
 pop	part
+pop	relation
 pop	soft-drink
 pop	substance
 pop-music	information
@@ -12820,6 +13405,7 @@ porter	worker
 porterage	outgo
 porterage	possession
 porterage	price-charged
+porterage	relation
 portfolio	artifact
 portfolio	case
 portfolio	container
@@ -12839,6 +13425,7 @@ poser	physical-object
 poser	worker
 position	attitude
 position	cognition
+possession	relation
 possibility	cognition
 possibility	option
 post-obit-bond	bond
@@ -12852,6 +13439,7 @@ postage	token
 postage-charge	outgo
 postage-charge	possession
 postage-charge	price-charged
+postage-charge	relation
 postage-meter	artifact
 postage-meter	device
 postage-meter	instrument
@@ -12911,6 +13499,7 @@ poundage	fixed-charge
 poundage	outgo
 poundage	possession
 poundage	price-charged
+poundage	relation
 powder	substance
 powdered-milk	dairy-product
 powdered-milk	drink
@@ -12919,6 +13508,7 @@ powdered-milk	foodstuff
 powdered-milk	liquid-substance
 powdered-milk	milk
 powdered-milk	part
+powdered-milk	relation
 powdered-milk	substance
 power	agent
 power-cable	artifact
@@ -12985,12 +13575,14 @@ preference	attribute
 preference	feeling
 preference	state
 preferred-stock	possession
+preferred-stock	relation
 preferred-stock	share-capital
 premise	information
 premise	proposition
 premium	outgo
 premium	payment-amount
 premium	possession
+premium	relation
 premium-bond	bond
 premium-bond	document
 premium-bond	information
@@ -13018,6 +13610,7 @@ presence	state
 present	acquisition
 present	gift
 present	possession
+present	relation
 presentation	artifact
 presentation	physical-object
 preservation	attribute
@@ -13025,6 +13618,7 @@ preservation	condition
 preservation	state
 preserves	food
 preserves	substance
+presidency	amount
 presidency	time-period
 president	agent
 president	organism
@@ -13064,8 +13658,10 @@ price-adjustment	outgo
 price-adjustment	payment-amount
 price-adjustment	possession
 price-adjustment	recompense-payment
+price-adjustment	relation
 price-charged	outgo
 price-charged	possession
+price-charged	relation
 price-quotation	information
 pride	attribute
 pride	feeling
@@ -13079,12 +13675,14 @@ prime-interest-rate	interest-rate
 prime-interest-rate	outgo
 prime-interest-rate	possession
 prime-interest-rate	price-charged
+prime-interest-rate	relation
 primer	artifact
 primer	coating
 primer	material
 primer	paint
 primer	part
 primer	physical-object
+primer	relation
 primer	substance
 prince	agent
 prince	leader
@@ -13126,6 +13724,7 @@ printing	transaction
 printing-ink	ink
 printing-ink	liquid-substance
 printing-ink	part
+printing-ink	relation
 printing-ink	substance
 prism	artifact
 prism	device
@@ -13153,9 +13752,11 @@ privilege	attribute
 prize	acquisition
 prize	gift
 prize	possession
+prize	relation
 prize-ring	artifact
 prize-ring	boxing-ring
 prize-ring	physical-object
+probability	amount
 probe	cognition
 probe	thinking
 problem	information
@@ -13184,6 +13785,7 @@ production-capacity	industry
 production-capacity	transaction
 production-cost	outgo
 production-cost	possession
+production-cost	relation
 production-line	artifact
 production-line	physical-object
 production-line	system-instrumentality
@@ -13226,6 +13828,7 @@ profit-and-loss	document
 profit-and-loss	information
 profit-and-loss	statement
 profit-sharing	possession
+profit-sharing	relation
 profit-taker	agent
 profit-taker	merchant
 profit-taker	organism
@@ -13272,6 +13875,7 @@ promotional-expense	business-expense
 promotional-expense	expense
 promotional-expense	outgo
 promotional-expense	possession
+promotional-expense	relation
 promotional-material	information
 proof	cognition
 proof	evidence
@@ -13283,6 +13887,8 @@ property	cognition
 property	concept
 property	idea
 proportion	placement
+proportion	relation
+proportion	spatial-relation
 proposal	act
 proposal	event
 proposition	information
@@ -13309,6 +13915,7 @@ protein	compound
 protein	material
 protein	molecule
 protein	part
+protein	relation
 protein	substance
 protest	act
 protest	event
@@ -13322,6 +13929,7 @@ provision	event
 provisions-store	income
 provisions-store	net-income
 provisions-store	possession
+provisions-store	relation
 provisions-store	retained-earnings
 provisions-store	stored-supply
 pruning-saw	artifact
@@ -13422,6 +14030,7 @@ pulses	substance
 pulses	vegetable
 pumice-stone	material
 pumice-stone	part
+pumice-stone	relation
 pumice-stone	stone
 pumice-stone	substance
 pump	artifact
@@ -13448,6 +14057,7 @@ punch-drink	drug
 punch-drink	food
 punch-drink	liquid-substance
 punch-drink	part
+punch-drink	relation
 punch-drink	substance
 puncher	artifact
 puncher	physical-object
@@ -13473,11 +14083,13 @@ purchase-incentive	outgo
 purchase-incentive	payment-amount
 purchase-incentive	possession
 purchase-incentive	prize
+purchase-incentive	relation
 purchase-option	document
 purchase-option	information
 purchase-option	legal-document
 purchase-price	outgo
 purchase-price	possession
+purchase-price	relation
 purpose	cognition
 purpose	goal
 pursuit	cognition
@@ -13510,6 +14122,7 @@ pyramid	attribute
 pyramid	shape
 pyramiding	investment
 pyramiding	possession
+pyramiding	relation
 pyramiding	speculation
 quality	attribute
 quality	degree
@@ -13524,7 +14137,9 @@ quarter	physical-object
 quarter	place
 quarter	region
 quarter-stock	possession
+quarter-stock	relation
 quarter-stock	share-capital
+quarter.time	amount
 quarter.time	time-period
 quartz-glass	glass-material
 quartz-glass	substance
@@ -13551,6 +14166,7 @@ quicklime	chemical
 quicklime	compound
 quicklime	material
 quicklime	part
+quicklime	relation
 quicklime	substance
 quince	botanical-fruit
 quince	fruit
@@ -13564,6 +14180,7 @@ quiver	container
 quiver	physical-object
 quota	allotment
 quota	possession
+quota	relation
 quotation	excerpt
 quotation	information
 quotation	music
@@ -13592,6 +14209,7 @@ rack-rent	outgo
 rack-rent	payment-amount
 rack-rent	possession
 rack-rent	regular-payment
+rack-rent	relation
 rack-rent	rent
 racquetball	artifact
 racquetball	ball
@@ -13676,7 +14294,10 @@ raisin	natural-object
 raisin	physical-object
 raisin	produce
 raisin	substance
+rake	relation
+rake	spatial-relation
 rake-off	possession
+rake-off	relation
 rake-off	share-of-profits
 rake-tool	artifact
 rake-tool	physical-object
@@ -13748,6 +14369,8 @@ rate-of-depreciation	charge-rate
 rate-of-depreciation	outgo
 rate-of-depreciation	possession
 rate-of-depreciation	price-charged
+rate-of-depreciation	relation
+ratio	relation
 rationality	attribute
 rationality	condition
 rationality	state
@@ -13761,6 +14384,7 @@ raw-milk	foodstuff
 raw-milk	liquid-substance
 raw-milk	milk
 raw-milk	part
+raw-milk	relation
 raw-milk	substance
 razor	artifact
 razor	cutter
@@ -13782,6 +14406,7 @@ real-estate-business	transaction
 real-estate-loan	debt
 real-estate-loan	loan
 real-estate-loan	possession
+real-estate-loan	relation
 realism	attribute
 reality	attribute
 reality	state
@@ -13800,6 +14425,7 @@ rebate	outgo
 rebate	payment-amount
 rebate	possession
 rebate	refund-amount
+rebate	relation
 rebellion	act
 rebellion	event
 recapitulation	information
@@ -13830,6 +14456,7 @@ recompense	event
 recompense-payment	outgo
 recompense-payment	payment-amount
 recompense-payment	possession
+recompense-payment	relation
 record	accomplishment
 record	act
 record	event
@@ -13840,6 +14467,9 @@ record-player	artifact
 record-player	device
 record-player	machine
 record-player	physical-object
+record.quantity	amount
+record.quantity	definite-quantity
+record.quantity	numeric-quantity
 recorder	artifact
 recorder	device
 recorder	musical-instrument
@@ -13897,6 +14527,7 @@ refresher-fee	legal-fee
 refresher-fee	outgo
 refresher-fee	possession
 refresher-fee	price-charged
+refresher-fee	relation
 refreshment	act
 refreshment	event
 refreshment	repair
@@ -13926,6 +14557,7 @@ refund	transaction
 refund-amount	outgo
 refund-amount	payment-amount
 refund-amount	possession
+refund-amount	relation
 refusal	act
 refusal	event
 region	physical-object
@@ -13945,6 +14577,7 @@ registration	event
 regular-payment	outgo
 regular-payment	payment-amount
 regular-payment	possession
+regular-payment	relation
 regulation	information
 regulator	artifact
 regulator	control
@@ -13964,6 +14597,7 @@ rehearsal	activity
 rehearsal	event
 rehearsal	practice-session
 rehearsal	training
+reign	amount
 reign	era
 reign	historic-period
 reign	time-period
@@ -13972,9 +14606,11 @@ reimbursement	outgo
 reimbursement	payment-amount
 reimbursement	possession
 reimbursement	recompense-payment
+reimbursement	relation
 rein	artifact
 rein	physical-object
 reinsurance	possession
+reinsurance	relation
 rejection	act
 rejection	event
 relationship	attribute
@@ -13985,6 +14621,7 @@ relative	person
 relative	physical-object
 release	act
 release	event
+relevance	relation
 reliance	attribute
 reliance	state
 relief	attribute
@@ -14014,6 +14651,9 @@ relish-condiment	substance
 reluctance	attribute
 reluctance	disposition
 reluctance	trait
+remainder	amount
+remainder	definite-quantity
+remainder	numeric-quantity
 remark	information
 remedy	agent
 remedy	drug
@@ -14022,6 +14662,7 @@ remedy	substance
 remittance	outgo
 remittance	payment-amount
 remittance	possession
+remittance	relation
 remote-control	artifact
 remote-control	device
 remote-control	physical-object
@@ -14040,11 +14681,13 @@ rent	outgo
 rent	payment-amount
 rent	possession
 rent	regular-payment
+rent	relation
 rental	act
 rental	event
 rental	transaction
 rental-income	income
 rental-income	possession
+rental-income	relation
 repair	act
 repair	event
 reparation-payment	compensation
@@ -14052,9 +14695,11 @@ reparation-payment	outgo
 reparation-payment	payment-amount
 reparation-payment	possession
 reparation-payment	recompense-payment
+reparation-payment	relation
 repayment	outgo
 repayment	payment-amount
 repayment	possession
+repayment	relation
 repeat	event
 repeat-order	document
 repeat-order	information
@@ -14062,9 +14707,11 @@ repellent	chemical
 repellent	compound
 repellent	material
 repellent	part
+repellent	relation
 repellent	substance
 replacement-cost	outgo
 replacement-cost	possession
+replacement-cost	relation
 replica	artifact
 replica	copy
 replica	physical-object
@@ -14088,6 +14735,7 @@ representative-agent	physical-object
 representative-agent	representative
 reproduction-cost	outgo
 reproduction-cost	possession
+reproduction-cost	relation
 reptile	animal
 reptile	organism
 reptile	physical-object
@@ -14125,11 +14773,13 @@ reserve-account	backlog
 reserve-account	income
 reserve-account	net-income
 reserve-account	possession
+reserve-account	relation
 reserve-account	retained-earnings
 reserve-stock	backlog
 reserve-stock	income
 reserve-stock	net-income
 reserve-stock	possession
+reserve-stock	relation
 reserve-stock	retained-earnings
 reservoir	body-of-water
 reservoir	lake
@@ -14146,9 +14796,11 @@ residential-district	physical-object
 residential-district	place
 residential-district	region
 residual	part
+residual	relation
 residual-payment	outgo
 residual-payment	payment-amount
 residual-payment	possession
+residual-payment	relation
 resignation	document
 resignation	information
 resistance	act
@@ -14168,6 +14820,7 @@ resource	attribute
 respirator	artifact
 respirator	physical-object
 respirator	protective-mask
+respite	amount
 respite	pause
 response	greeting
 response	information
@@ -14217,11 +14870,13 @@ retailing	transaction
 retained-earnings	income
 retained-earnings	net-income
 retained-earnings	possession
+retained-earnings	relation
 retainer	fee
 retainer	fixed-charge
 retainer	outgo
 retainer	possession
 retainer	price-charged
+retainer	relation
 retaliation	act
 retaliation	event
 retirement	act
@@ -14240,6 +14895,7 @@ reversionary-annuity	outgo
 reversionary-annuity	payment-amount
 reversionary-annuity	possession
 reversionary-annuity	regular-payment
+reversionary-annuity	relation
 review	act
 review	activity
 review	event
@@ -14273,23 +14929,29 @@ revolving-charge-account	credit-account
 revolving-charge-account	credit-line
 revolving-charge-account	open-end-credit
 revolving-charge-account	possession
+revolving-charge-account	relation
+revolving-fund	amount
 revolving-fund	fund
 revolving-fund	standard
+revolving-fund	system-of-measurement
 reward	information
 reward-payment	outgo
 reward-payment	payment-amount
 reward-payment	possession
+reward-payment	relation
 rhetoric	cognition
 rhetoric	field-of-study
 rhetoric	humanities
 rhinestone	material
 rhinestone	mineral
 rhinestone	part
+rhinestone	relation
 rhinestone	substance
 rhubarb	produce
 rhubarb	substance
 rhubarb	vegetable
 rhythm	attribute
+rhythm	time
 rib	body-part
 rib	bone
 rib	tissue
@@ -14462,6 +15124,7 @@ room-rate	charge-rate
 room-rate	outgo
 room-rate	possession
 room-rate	price-charged
+room-rate	relation
 root	physical-object
 root	place
 rope	artifact
@@ -14510,8 +15173,10 @@ royalty	kin
 royalty-payment	outgo
 royalty-payment	payment-amount
 royalty-payment	possession
+royalty-payment	relation
 rubbish	material
 rubbish	part
+rubbish	relation
 rubbish	substance
 rubbish	waste
 rug	artifact
@@ -14545,6 +15210,7 @@ rule.cognition	act
 rule.cognition	activity
 rule.cognition	event
 rule.cognition	procedure
+rule.time	amount
 rule.time	time-period
 ruler	artifact
 ruler	device
@@ -14559,6 +15225,7 @@ rum	food
 rum	liquid-substance
 rum	liquor
 rum	part
+rum	relation
 rum	substance
 rummage-sale	attribute
 rummage-sale	cut-rate-sale
@@ -14600,6 +15267,7 @@ rye-whiskey	food
 rye-whiskey	liquid-substance
 rye-whiskey	liquor
 rye-whiskey	part
+rye-whiskey	relation
 rye-whiskey	substance
 rye-whiskey	whiskey
 sack	artifact
@@ -14661,6 +15329,7 @@ sales-incentive	bonus
 sales-incentive	outgo
 sales-incentive	payment-amount
 sales-incentive	possession
+sales-incentive	relation
 sales-talk	information
 sales-talk	promotional-material
 salesclerk	agent
@@ -14704,6 +15373,7 @@ sanctuary	place
 sanctuary	region
 sand	material
 sand	part
+sand	relation
 sand	soil
 sand	substance
 sandal	artifact
@@ -14721,9 +15391,11 @@ sander	power-tool
 sander	tool
 sandpaper	material
 sandpaper	part
+sandpaper	relation
 sandpaper	substance
 sandstone	material
 sandstone	part
+sandstone	relation
 sandstone	stone
 sandstone	substance
 sanitary-napkin	artifact
@@ -14766,8 +15438,10 @@ sauna	room
 sauna	structure
 sausage	meat
 sausage	substance
+savings	amount
 savings	fund
 savings	standard
+savings	system-of-measurement
 savings-account	attribute
 savings-account	bank-account
 savings-account	state
@@ -14782,6 +15456,7 @@ saw	physical-object
 saw	tool
 sawdust	material
 sawdust	part
+sawdust	relation
 sawdust	substance
 sawdust	wood
 saxophone	artifact
@@ -14802,7 +15477,9 @@ scaffolding	physical-object
 scaffolding	system-instrumentality
 scale	natural-object
 scale	physical-object
+scale-of-measurement	amount
 scale-of-measurement	standard
+scale-of-measurement	system-of-measurement
 scallop	animal
 scallop	invertebrate
 scallop	mollusc
@@ -14852,10 +15529,12 @@ scholarship	aid
 scholarship	gift
 scholarship	possession
 scholarship	prize
+scholarship	relation
 school	group
 school	institution
 school	organization
 school-class	group
+school-term	amount
 school-term	time-period
 schoolchild	agent
 schoolchild	organism
@@ -14894,6 +15573,9 @@ scooter	physical-object
 scooter	vehicle
 scope	attribute
 scope	magnitude
+score	amount
+score	definite-quantity
+score	numeric-quantity
 scoreboard	artifact
 scoreboard	physical-object
 scoreboard	signboard
@@ -14955,6 +15637,7 @@ seal-stamp	signal
 seal-stamp	symbol
 sealant	material
 sealant	part
+sealant	relation
 sealant	substance
 sealed-instrument	contract
 sealed-instrument	document
@@ -14967,6 +15650,7 @@ search	activity
 search	event
 search	work
 seashore	physical-object
+season	amount
 season	time-period
 seasoning	fixings
 seasoning	food
@@ -14981,6 +15665,8 @@ seating-place	region
 seaweed	microorganism
 seaweed	organism
 seaweed	physical-object
+sec	amount
+sec	time-unit
 second	attribute
 second	rank
 second	state
@@ -14988,6 +15674,7 @@ second	status
 second-mortgage	financial-interest
 second-mortgage	mortgage
 second-mortgage	possession
+second-mortgage	relation
 second-mortgage	security-interest
 secrecy	attribute
 secrecy	trait
@@ -15002,6 +15689,7 @@ secretary	person
 secretary	physical-object
 secretary	worker
 secretion	part
+secretion	relation
 secretion	substance
 section	physical-object
 section-title	information
@@ -15022,6 +15710,7 @@ security	event
 security	measure
 security-interest	financial-interest
 security-interest	possession
+security-interest	relation
 security-system	artifact
 security-system	device
 security-system	physical-object
@@ -15030,6 +15719,7 @@ seed	botanical-fruit
 seed	natural-object
 seed	physical-object
 seed-money	possession
+seed-money	relation
 seeded-player	agent
 seeded-player	organism
 seeded-player	person
@@ -15054,6 +15744,7 @@ self	state
 self-control	attribute
 self-control	trait
 self-insurance	possession
+self-insurance	relation
 sell-option	document
 sell-option	information
 sell-option	legal-document
@@ -15087,6 +15778,7 @@ semiconductor	artifact
 semiconductor	device
 semiconductor	physical-object
 seminal-fluid	part
+seminal-fluid	relation
 seminal-fluid	substance
 seminar	act
 seminar	activity
@@ -15149,6 +15841,7 @@ service	work
 service-charge	outgo
 service-charge	possession
 service-charge	price-charged
+service-charge	relation
 service-contract	contract
 service-contract	document
 service-contract	information
@@ -15229,6 +15922,7 @@ shampoo	chemical
 shampoo	compound
 shampoo	material
 shampoo	part
+shampoo	relation
 shampoo	substance
 shape	attribute
 shaper	artifact
@@ -15241,9 +15935,12 @@ share	information
 share	legal-document
 share	stock-certificate
 share-capital	possession
+share-capital	relation
 share-float	possession
+share-float	relation
 share-float	share-capital
 share-of-profits	possession
+share-of-profits	relation
 shark	animal
 shark	fish
 shark	organism
@@ -15299,6 +15996,7 @@ shelter	physical-object
 shelter	structure
 shield	artifact
 shield	physical-object
+shift	amount
 shift	time-period
 shin-guard	artifact
 shin-guard	clothing
@@ -15338,6 +16036,7 @@ shoe-polish	compound
 shoe-polish	material
 shoe-polish	part
 shoe-polish	polish-preparation
+shoe-polish	relation
 shoe-polish	substance
 shoelace	artifact
 shoelace	physical-object
@@ -15430,6 +16129,7 @@ sick-pay	outgo
 sick-pay	payment-amount
 sick-pay	possession
 sick-pay	regular-payment
+sick-pay	relation
 sick-pay	wage
 side	physical-object
 side	place
@@ -15462,8 +16162,10 @@ sign-language-sign	information
 sign-of-the-zodiac	physical-object
 sign-of-the-zodiac	place
 signal	information
+signature	language-unit
 signature	name
 signature	part
+signature	relation
 signboard	artifact
 signboard	physical-object
 signboard	structure
@@ -15478,12 +16180,14 @@ silk-fiber	animal-product
 silk-fiber	fiber
 silk-fiber	material
 silk-fiber	part
+silk-fiber	relation
 silk-fiber	substance
 silver	chemical-element
 silver	electrical-conductor
 silver	material
 silver	metal
 silver	part
+silver	relation
 silver	substance
 silver-screen	artifact
 silver-screen	physical-object
@@ -15493,6 +16197,7 @@ simple-interest	interest
 simple-interest	outgo
 simple-interest	possession
 simple-interest	price-charged
+simple-interest	relation
 simplicity	attribute
 sin	act
 sin	activity
@@ -15507,12 +16212,15 @@ single-file	line-formation
 single-supplement	outgo
 single-supplement	possession
 single-supplement	price-charged
+single-supplement	relation
 single-supplement	surcharge
 sink	artifact
 sink	fixture
 sink	physical-object
+sinking-fund	amount
 sinking-fund	fund
 sinking-fund	standard
+sinking-fund	system-of-measurement
 sister	agent
 sister	organism
 sister	person
@@ -15556,6 +16264,7 @@ skim-milk	foodstuff
 skim-milk	liquid-substance
 skim-milk	milk
 skim-milk	part
+skim-milk	relation
 skim-milk	substance
 skimmer	artifact
 skimmer	cookware
@@ -15594,6 +16303,7 @@ slaked-lime	chemical
 slaked-lime	compound
 slaked-lime	material
 slaked-lime	part
+slaked-lime	relation
 slaked-lime	substance
 slant	attitude
 slant	cognition
@@ -15601,6 +16311,7 @@ slant	point-of-view
 slant	position
 slate	material
 slate	part
+slate	relation
 slate	stone
 slate	substance
 slave	agent
@@ -15663,9 +16374,11 @@ slot-machine	device
 slot-machine	machine
 slot-machine	physical-object
 sludge	substance
+small-change	amount
 small-change	cash
 small-change	currency
 small-change	standard
+small-change	system-of-measurement
 smart-card	consumer-credit
 smart-card	credit
 smart-card	credit-line
@@ -15674,6 +16387,7 @@ smart-card	indication
 smart-card	information
 smart-card	open-end-credit
 smart-card	possession
+smart-card	relation
 smell	cognition
 smell	sense
 smile	information
@@ -15739,6 +16453,7 @@ soap	chemical
 soap	compound
 soap	material
 soap	part
+soap	relation
 soap	substance
 soap-dish	artifact
 soap-dish	fixture
@@ -15768,6 +16483,7 @@ social-welfare	acquisition
 social-welfare	aid
 social-welfare	gift
 social-welfare	possession
+social-welfare	relation
 society	group
 sociology	cognition
 sociology	field-of-study
@@ -15784,6 +16500,7 @@ socket	physical-object
 sodium	chemical-element
 sodium	metal
 sodium	part
+sodium	relation
 sodium	substance
 sofa	artifact
 sofa	furniture
@@ -15793,6 +16510,7 @@ soft-drink	drink
 soft-drink	food
 soft-drink	liquid-substance
 soft-drink	part
+soft-drink	relation
 soft-drink	substance
 soft-sell	act
 soft-sell	advertising
@@ -15806,12 +16524,14 @@ software-library	collection
 software-library	group
 soil	material
 soil	part
+soil	relation
 soil	substance
 solar-panel	artifact
 solar-panel	device
 solar-panel	physical-object
 solder	alloy
 solder	part
+solder	relation
 solder	substance
 soldering-iron	artifact
 soldering-iron	hand-tool
@@ -15855,6 +16575,10 @@ soursop	natural-object
 soursop	physical-object
 soursop	produce
 soursop	substance
+south	cardinal-compass-point
+south	relation
+south	spatial-direction
+south	spatial-relation
 sovereign	agent
 sovereign	organism
 sovereign	person
@@ -15897,10 +16621,14 @@ sparkling-wine	drug
 sparkling-wine	food
 sparkling-wine	liquid-substance
 sparkling-wine	part
+sparkling-wine	relation
 sparkling-wine	substance
 sparkling-wine	wine
+spatial-direction	relation
+spatial-direction	spatial-relation
 spatial-extent	attribute
 spatial-extent	magnitude
+spatial-relation	relation
 spatula	artifact
 spatula	hand-tool
 spatula	physical-object
@@ -15942,6 +16670,7 @@ spectrum	magnitude
 spectrum	scope
 speculation	investment
 speculation	possession
+speculation	relation
 speech	information
 speedometer	artifact
 speedometer	device
@@ -16024,6 +16753,7 @@ spokesperson	person
 spokesperson	physical-object
 sponge	material
 sponge	part
+sponge	relation
 sponge	substance
 spontaneous-abortion	abortion
 spontaneous-abortion	act
@@ -16046,12 +16776,14 @@ spot-market	workplace
 spot-price	outgo
 spot-price	possession
 spot-price	purchase-price
+spot-price	relation
 spouse	agent
 spouse	organism
 spouse	person
 spouse	physical-object
 spouse	relative
 spray	part
+spray	relation
 spray	substance
 spray-gun	artifact
 spray-gun	device
@@ -16075,7 +16807,9 @@ spring	physical-object
 spring-water	food
 spring-water	liquid-substance
 spring-water	part
+spring-water	relation
 spring-water	substance
+springtime	amount
 springtime	season
 springtime	time-period
 sprinkler	artifact
@@ -16135,11 +16869,13 @@ stage-set	artifact
 stage-set	physical-object
 stain	material
 stain	part
+stain	relation
 stain	substance
 stairway	artifact
 stairway	physical-object
 stake	investment
 stake	possession
+stake	relation
 stake	speculation
 stalk	natural-object
 stalk	physical-object
@@ -16166,6 +16902,8 @@ stand-base	place
 stand-base	side
 stand-base	surface
 stand-base	underside
+standard	amount
+standard	system-of-measurement
 staple	artifact
 staple	device
 staple	fastener
@@ -16184,6 +16922,7 @@ starch	compound
 starch	material
 starch	molecule
 starch	part
+starch	relation
 starch	substance
 starter	artifact
 starter	device
@@ -16210,6 +16949,7 @@ stationer	physical-object
 stationery	material
 stationery	paper
 stationery	part
+stationery	relation
 stationery	substance
 statistics	cognition
 statistics	field-of-study
@@ -16231,6 +16971,7 @@ steak	cut-of-meat
 steak	meat
 steak	substance
 steam	part
+steam	relation
 steam	substance
 steam-turbine	artifact
 steam-turbine	device
@@ -16251,6 +16992,7 @@ steamship-company	group
 steamship-company	organization
 steel	alloy
 steel	part
+steel	relation
 steel	substance
 stencil	artifact
 stencil	physical-object
@@ -16291,6 +17033,7 @@ sticking-plaster	tape
 sticky-note	material
 sticky-note	paper
 sticky-note	part
+sticky-note	relation
 sticky-note	substance
 stilt	artifact
 stilt	physical-object
@@ -16306,6 +17049,7 @@ stipend	outgo
 stipend	payment-amount
 stipend	possession
 stipend	regular-payment
+stipend	relation
 stirrer	artifact
 stirrer	physical-object
 stirrup	artifact
@@ -16325,15 +17069,18 @@ stock-dividend	dividend
 stock-dividend	income
 stock-dividend	net-income
 stock-dividend	possession
+stock-dividend	relation
 stock-exchange	physical-object
 stock-exchange	place
 stock-exchange	workplace
 stock-of-record	common-stock
 stock-of-record	possession
+stock-of-record	relation
 stock-of-record	share-capital
 stock-option	outgo
 stock-option	payment-amount
 stock-option	possession
+stock-option	relation
 stock-option-contract	document
 stock-option-contract	information
 stock-option-contract	legal-document
@@ -16345,6 +17092,7 @@ stock-trader	person
 stock-trader	physical-object
 stock-trader	trader
 stock-warrant	possession
+stock-warrant	relation
 stockholder	agent
 stockholder	organism
 stockholder	person
@@ -16365,6 +17113,7 @@ stomach	body-part
 stomach	organ
 stone	material
 stone	part
+stone	relation
 stone	substance
 stone-fruit	botanical-fruit
 stone-fruit	natural-object
@@ -16415,6 +17164,7 @@ storage-tank	vessel
 stored-supply	income
 stored-supply	net-income
 stored-supply	possession
+stored-supply	relation
 stored-supply	retained-earnings
 storey	artifact
 storey	physical-object
@@ -16437,12 +17187,14 @@ stowage	transaction
 stowage-charge	outgo
 stowage-charge	possession
 stowage-charge	price-charged
+stowage-charge	relation
 straight-line-method	depreciation
 straight-line-method	expense
 straight-line-method	lost-item
 straight-line-method	non-cash-expense
 straight-line-method	outgo
 straight-line-method	possession
+straight-line-method	relation
 straight-pin	artifact
 straight-pin	device
 straight-pin	fastener
@@ -16490,6 +17242,7 @@ strike-pay	outgo
 strike-pay	payment-amount
 strike-pay	possession
 strike-pay	regular-payment
+strike-pay	relation
 strike-pay	wage
 string	artifact
 string	physical-object
@@ -16539,6 +17292,7 @@ styrofoam	chemical
 styrofoam	compound
 styrofoam	material
 styrofoam	part
+styrofoam	relation
 styrofoam	substance
 subcontract	contract
 subcontract	document
@@ -16555,7 +17309,9 @@ subscriber	user
 subscription	outgo
 subscription	payment-amount
 subscription	possession
+subscription	relation
 subscription-warrant	possession
+subscription-warrant	relation
 subscription-warrant	stock-warrant
 subsidiary-ledger	information
 subsidiary-ledger	transaction-record
@@ -16572,6 +17328,7 @@ subway-fare	fare
 subway-fare	outgo
 subway-fare	possession
 subway-fare	price-charged
+subway-fare	relation
 subway-fare	train-fare
 success	event
 suffering	attribute
@@ -16623,6 +17380,7 @@ suite	physical-object
 suite	structure
 sulfur	chemical-element
 sulfur	part
+sulfur	relation
 sulfur	substance
 sum	collection
 sum	group
@@ -16631,6 +17389,7 @@ summation	act
 summation	activity
 summation	event
 summation	procedure
+summer	amount
 summer	season
 summer	time-period
 summer-camp	physical-object
@@ -16641,6 +17400,7 @@ summit	meeting
 sunchoke	produce
 sunchoke	substance
 sunchoke	vegetable
+sunday	amount
 sunday	time-period
 sundial	artifact
 sundial	device
@@ -16682,6 +17442,8 @@ supervisor	leader
 supervisor	organism
 supervisor	person
 supervisor	physical-object
+supply	amount
+supply	indefinite-quantity
 support	act
 support	activity
 support	assist
@@ -16692,9 +17454,11 @@ support-device	physical-object
 support-level	outgo
 support-level	possession
 support-level	purchase-price
+support-level	relation
 surcharge	outgo
 surcharge	possession
 surcharge	price-charged
+surcharge	relation
 surface	physical-object
 surface	place
 surfboard	artifact
@@ -16760,6 +17524,7 @@ swab	physical-object
 sweat-equity	equity
 sweat-equity	financial-interest
 sweat-equity	possession
+sweat-equity	relation
 sweater	artifact
 sweater	clothing
 sweater	commodity
@@ -16802,7 +17567,9 @@ sword	device
 sword	instrument
 sword	physical-object
 sword	weapon
+syllable	language-unit
 syllable	part
+syllable	relation
 symbol	information
 symbol	signal
 sympathetic-concern	attribute
@@ -16825,6 +17592,7 @@ synthetic-rubber	chemical
 synthetic-rubber	compound
 synthetic-rubber	material
 synthetic-rubber	part
+synthetic-rubber	relation
 synthetic-rubber	substance
 syringe	artifact
 syringe	device
@@ -16840,6 +17608,7 @@ syrup	sweetener
 system	group
 system-instrumentality	artifact
 system-instrumentality	physical-object
+system-of-measurement	amount
 table	artifact
 table	furniture
 table	physical-object
@@ -16899,6 +17668,7 @@ take-home-pay	outgo
 take-home-pay	payment-amount
 take-home-pay	possession
 take-home-pay	regular-payment
+take-home-pay	relation
 take-home-pay	wage
 talk	conversation
 talk	information
@@ -16909,6 +17679,7 @@ tallow	material
 tallow	molecule
 tallow	oil
 tallow	part
+tallow	relation
 tallow	substance
 tamarindo	botanical-fruit
 tamarindo	fruit
@@ -16962,6 +17733,7 @@ tankage	transaction
 tankage-charge	outgo
 tankage-charge	possession
 tankage-charge	price-charged
+tankage-charge	relation
 tape	artifact
 tape	physical-object
 tape-drive	artifact
@@ -16991,10 +17763,12 @@ tare	payment-amount
 tare	possession
 tare	price-adjustment
 tare	recompense-payment
+tare	relation
 target	information
 target	reference-point
 target	signal
 tariff	possession
+tariff	relation
 tariff	tax
 taro-root	produce
 taro-root	substance
@@ -17019,6 +17793,7 @@ taste	sense
 tattooing	act
 tattooing	event
 tax	possession
+tax	relation
 tax-return	document
 tax-return	information
 tax-return	legal-document
@@ -17030,6 +17805,7 @@ tea	drink
 tea	food
 tea	liquid-substance
 tea	part
+tea	relation
 tea	substance
 tea-leaf	fixings
 tea-leaf	food
@@ -17058,6 +17834,8 @@ teaching	occupation
 teaching	profession
 team	group
 team	organization
+tear	amount
+tear	indefinite-quantity
 teddy-bear	artifact
 teddy-bear	physical-object
 teddy-bear	plaything
@@ -17101,6 +17879,7 @@ temple	physical-object
 temple	structure
 temple-of-head	body-part
 temple-of-head	facial-feature
+tempo	relation
 tenant	agent
 tenant	organism
 tenant	person
@@ -17140,16 +17919,23 @@ tequila	food
 tequila	liquid-substance
 tequila	liquor
 tequila	part
+tequila	relation
 tequila	substance
+term	language-unit
 term	part
+term	relation
 term	word
 term-insurance	possession
+term-insurance	relation
 terminable-interest	financial-interest
 terminable-interest	possession
+terminable-interest	relation
 terminal	artifact
 terminal	equipment
 terminal	physical-object
+terminology	language-unit
 terminology	part
+terminology	relation
 terminology	word
 territory	physical-object
 territory	place
@@ -17300,11 +18086,15 @@ tights	physical-object
 tile	artifact
 tile	physical-object
 tile	slab
+tilt	relation
+tilt	spatial-relation
+time	attribute
 time-and-a-half	charge-rate
 time-and-a-half	outgo
 time-and-a-half	pay-rate
 time-and-a-half	possession
 time-and-a-half	price-charged
+time-and-a-half	relation
 time-deposit-account	attribute
 time-deposit-account	bank-account
 time-deposit-account	savings-account
@@ -17312,14 +18102,19 @@ time-deposit-account	state
 time-loan	debt
 time-loan	loan
 time-loan	possession
+time-loan	relation
 time-of-day	clock-time
 time-of-day	cognition
+time-period	amount
+time-slot	amount
+time-unit	amount
 timetable	information
 timetable	list
 timetable	schedule
 tin	chemical-element
 tin	metal
 tin	part
+tin	relation
 tin	substance
 tin-whistle	artifact
 tin-whistle	device
@@ -17341,16 +18136,20 @@ tissue-growth	state
 tissue-paper	material
 tissue-paper	paper
 tissue-paper	part
+tissue-paper	relation
 tissue-paper	substance
 titanium	chemical-element
 titanium	metal
 titanium	part
+titanium	relation
 titanium	substance
 title	cognition
 title	concept
 title	idea
+title-of-respect	language-unit
 title-of-respect	name
 title-of-respect	part
+title-of-respect	relation
 toast	bread
 toast	food
 toast	foodstuff
@@ -17371,6 +18170,7 @@ tobacco	agent
 tobacco	drug
 tobacco	material
 tobacco	part
+tobacco	relation
 tobacco	substance
 tobacconist	agent
 tobacconist	merchant
@@ -17388,20 +18188,25 @@ toilet	physical-object
 toilet-paper	material
 toilet-paper	paper
 toilet-paper	part
+toilet-paper	relation
 toilet-paper	substance
 toilet-paper	tissue-paper
 token	information
 token	signal
 token	symbol
+token-money	amount
 token-money	standard
+token-money	system-of-measurement
 token-payment	outgo
 token-payment	payment-amount
 token-payment	possession
+token-payment	relation
 toll	fee
 toll	fixed-charge
 toll	outgo
 toll	possession
 toll	price-charged
+toll	relation
 tom-tom	artifact
 tom-tom	device
 tom-tom	drum
@@ -17423,6 +18228,7 @@ tone	information
 tone	manner-of-speaking
 toner	material
 toner	part
+toner	relation
 toner	substance
 tongs	artifact
 tongs	device
@@ -17434,6 +18240,7 @@ tongue-depressor	device
 tongue-depressor	physical-object
 tontine	life-insurance
 tontine	possession
+tontine	relation
 tool	artifact
 tool	physical-object
 tool-bag	artifact
@@ -17454,6 +18261,7 @@ toothpaste	chemical
 toothpaste	compound
 toothpaste	material
 toothpaste	part
+toothpaste	relation
 toothpaste	substance
 toothpick	artifact
 toothpick	building-material
@@ -17537,6 +18345,7 @@ trace	information
 tracing-paper	material
 tracing-paper	paper
 tracing-paper	part
+tracing-paper	relation
 tracing-paper	substance
 track	physical-object
 track	place
@@ -17564,6 +18373,7 @@ trade-discount	payment-amount
 trade-discount	possession
 trade-discount	price-adjustment
 trade-discount	recompense-payment
+trade-discount	relation
 trader	agent
 trader	merchant
 trader	organism
@@ -17593,6 +18403,7 @@ train-fare	fare
 train-fare	outgo
 train-fare	possession
 train-fare	price-charged
+train-fare	relation
 train-set	artifact
 train-set	physical-object
 train-set	plaything
@@ -17617,6 +18428,7 @@ trampoline	artifact
 trampoline	equipment
 trampoline	physical-object
 tranche	possession
+tranche	relation
 transaction	act
 transaction	event
 transaction-record	information
@@ -17626,6 +18438,7 @@ transducer	physical-object
 transfer-paper	material
 transfer-paper	paper
 transfer-paper	part
+transfer-paper	relation
 transfer-paper	substance
 transformer	artifact
 transformer	device
@@ -17678,15 +18491,18 @@ travel-allowance	payment-amount
 travel-allowance	possession
 travel-allowance	recompense-payment
 travel-allowance	reimbursement
+travel-allowance	relation
 traveler's-check	credit
 traveler's-check	information
 traveler's-check	letter-of-credit
 traveler's-check	possession
+traveler's-check	relation
 traveler's-check	traveler's-letter-of-credit
 traveler's-letter-of-credit	credit
 traveler's-letter-of-credit	information
 traveler's-letter-of-credit	letter-of-credit
 traveler's-letter-of-credit	possession
+traveler's-letter-of-credit	relation
 traveling-bag	artifact
 traveling-bag	case
 traveling-bag	container
@@ -17728,6 +18544,7 @@ treasury-security	government-bond
 treasury-security	information
 treasury-security	legal-document
 treasury-stock	possession
+treasury-stock	relation
 treasury-stock	share-capital
 treat	event
 treatment	act
@@ -17807,6 +18624,7 @@ truckage	fixed-charge
 truckage	outgo
 truckage	possession
 truckage	price-charged
+truckage	relation
 truffle	produce
 truffle	substance
 truffle	vegetable
@@ -17818,8 +18636,10 @@ trunk	physical-object
 trust	association
 trust	group
 trust	organization
+trust-fund	amount
 trust-fund	fund
 trust-fund	standard
+trust-fund	system-of-measurement
 trust-relationship	attribute
 trust-relationship	friendship
 trust-relationship	state
@@ -17855,6 +18675,7 @@ tuition-fee	fixed-charge
 tuition-fee	outgo
 tuition-fee	possession
 tuition-fee	price-charged
+tuition-fee	relation
 tulip	organism
 tulip	physical-object
 tulip	plant
@@ -17915,6 +18736,9 @@ tuxedo	artifact
 tuxedo	clothing
 tuxedo	commodity
 tuxedo	physical-object
+twelve	amount
+twelve	definite-quantity
+twelve	numeric-quantity
 twilight	clock-time
 twilight	cognition
 twilight	time-of-day
@@ -17948,9 +18772,11 @@ uncle	relative
 undercharge	outgo
 undercharge	possession
 undercharge	price-charged
+undercharge	relation
 underpaid-amount	outgo
 underpaid-amount	payment-amount
 underpaid-amount	possession
+underpaid-amount	relation
 underpants	artifact
 underpants	clothing
 underpants	commodity
@@ -17994,10 +18820,13 @@ underwear	garment
 underwear	physical-object
 undivided-interest	financial-interest
 undivided-interest	possession
+undivided-interest	relation
 unearned-income	income
 unearned-income	possession
+unearned-income	relation
 unearned-revenue	income
 unearned-revenue	possession
+unearned-revenue	relation
 unemployment	attribute
 unemployment	state
 unicycle	artifact
@@ -18015,6 +18844,7 @@ unit	concept
 unit	idea
 unit-cost	outgo
 unit-cost	possession
+unit-cost	relation
 unit-load-packaging	act
 unit-load-packaging	commerce
 unit-load-packaging	commercial-enterprise
@@ -18049,6 +18879,8 @@ unsuccessful-person	organism
 unsuccessful-person	person
 unsuccessful-person	physical-object
 upgrade	grade
+upgrade	relation
+upgrade	spatial-relation
 upholstery	act
 upholstery	activity
 upholstery	event
@@ -18058,6 +18890,7 @@ upset-price	asking-price
 upset-price	outgo
 upset-price	possession
 upset-price	purchase-price
+upset-price	relation
 urge	attribute
 urge	desire
 urge	feeling
@@ -18070,6 +18903,7 @@ urinal	fixture
 urinal	physical-object
 urine	material
 urine	part
+urine	relation
 urine	substance
 urine	waste
 use	act
@@ -18085,6 +18919,7 @@ usury	interest-rate
 usury	outgo
 usury	possession
 usury	price-charged
+usury	relation
 utensil	artifact
 utensil	physical-object
 utility	artifact
@@ -18100,6 +18935,7 @@ utility-service	activity
 utility-service	event
 utility-service	service
 utility-service	work
+vacation	amount
 vacation	time-period
 vacuum	appliance
 vacuum	artifact
@@ -18111,10 +18947,12 @@ valley	physical-object
 valuation	outgo
 valuation	possession
 valuation	purchase-price
+valuation	relation
 valuation-reserve	backlog
 valuation-reserve	income
 valuation-reserve	net-income
 valuation-reserve	possession
+valuation-reserve	relation
 valuation-reserve	reserve-account
 valuation-reserve	retained-earnings
 value	cognition
@@ -18178,6 +19016,7 @@ vegetable-oil	fat
 vegetable-oil	material
 vegetable-oil	molecule
 vegetable-oil	part
+vegetable-oil	relation
 vegetable-oil	substance
 vegetarian	agent
 vegetarian	consumer
@@ -18218,6 +19057,7 @@ venture	commercial-enterprise
 venture	event
 venture	transaction
 venture-capital	possession
+venture-capital	relation
 venturer	agent
 venturer	merchant
 venturer	organism
@@ -18238,6 +19078,7 @@ vermouth	drug
 vermouth	food
 vermouth	liquid-substance
 vermouth	part
+vermouth	relation
 vermouth	substance
 vermouth	wine
 version	category
@@ -18261,6 +19102,7 @@ vest	garment
 vest	physical-object
 vested-interest	financial-interest
 vested-interest	possession
+vested-interest	relation
 veteran	agent
 veteran	organism
 veteran	person
@@ -18271,6 +19113,7 @@ viatical-settlement	death-benefit
 viatical-settlement	outgo
 viatical-settlement	payment-amount
 viatical-settlement	possession
+viatical-settlement	relation
 viatication	act
 viatication	buying
 viatication	event
@@ -18367,6 +19210,7 @@ vodka	food
 vodka	liquid-substance
 vodka	liquor
 vodka	part
+vodka	relation
 vodka	substance
 voice	ability
 voice	attribute
@@ -18386,6 +19230,7 @@ volleyball-net	artifact
 volleyball-net	equipment
 volleyball-net	net
 volleyball-net	physical-object
+volume	amount
 volunteer	agent
 volunteer	organism
 volunteer	person
@@ -18399,6 +19244,7 @@ voter	organism
 voter	person
 voter	physical-object
 voting-stock	possession
+voting-stock	relation
 voting-stock	share-capital
 voyage	act
 voyage	event
@@ -18422,6 +19268,7 @@ wage	outgo
 wage	payment-amount
 wage	possession
 wage	regular-payment
+wage	relation
 wagon	artifact
 wagon	container
 wagon	physical-object
@@ -18473,6 +19320,7 @@ wallop	process
 wallpaper	material
 wallpaper	paper
 wallpaper	part
+wallpaper	relation
 wallpaper	substance
 walnut	botanical-fruit
 walnut	natural-object
@@ -18490,6 +19338,7 @@ wardrobe	group
 warehouseman's-lien	financial-interest
 warehouseman's-lien	lien
 warehouseman's-lien	possession
+warehouseman's-lien	relation
 warehouseman's-lien	security-interest
 warrant	document
 warrant	information
@@ -18519,6 +19368,7 @@ washer	household-appliance
 washer	physical-object
 waste	material
 waste	part
+waste	relation
 waste	substance
 wastebasket	artifact
 wastebasket	container
@@ -18533,6 +19383,7 @@ water	fluid
 water	liquid
 water	material
 water	part
+water	relation
 water	substance
 water-bottle	artifact
 water-bottle	bottle
@@ -18568,6 +19419,7 @@ water-ski	ski
 water-softener	chemical
 water-softener	material
 water-softener	part
+water-softener	relation
 water-softener	substance
 watercraft	artifact
 watercraft	craft-vehicle
@@ -18578,6 +19430,7 @@ watercress	produce
 watercress	substance
 watercress	vegetable
 watered-stock	possession
+watered-stock	relation
 watered-stock	share-capital
 waterfall	body-of-water
 watering-can	artifact
@@ -18601,16 +19454,19 @@ wax	compound
 wax	material
 wax	molecule
 wax	part
+wax	relation
 wax	substance
 wax-paper	material
 wax-paper	paper
 wax-paper	part
+wax-paper	relation
 wax-paper	substance
 way	act
 way	course
 way	event
 weakness	attribute
 wealth	possession
+wealth	relation
 weapon	artifact
 weapon	device
 weapon	instrument
@@ -18658,7 +19514,9 @@ weeder	artifact
 weeder	hand-tool
 weeder	physical-object
 weeder	tool
+week	amount
 week	time-period
+weekend	amount
 weekend	time-period
 weighing-balance	artifact
 weighing-balance	device
@@ -18672,6 +19530,7 @@ weighing-machine	physical-object
 weight-charge	outgo
 weight-charge	possession
 weight-charge	price-charged
+weight-charge	relation
 welcome	greeting
 welcome	information
 well	artifact
@@ -18689,6 +19548,7 @@ wharfage	fixed-charge
 wharfage	outgo
 wharfage	possession
 wharfage	price-charged
+wharfage	relation
 wheat	grass
 wheat	organism
 wheat	physical-object
@@ -18703,6 +19563,7 @@ wheat-gluten	material
 wheat-gluten	molecule
 wheat-gluten	part
 wheat-gluten	protein
+wheat-gluten	relation
 wheat-gluten	substance
 wheel	artifact
 wheel	device
@@ -18744,6 +19605,7 @@ whiskey	food
 whiskey	liquid-substance
 whiskey	liquor
 whiskey	part
+whiskey	relation
 whiskey	substance
 whistle	artifact
 whistle	device
@@ -18755,6 +19617,7 @@ white-sale	opportunity
 white-sale	state
 whole-life-insurance	life-insurance
 whole-life-insurance	possession
+whole-life-insurance	relation
 wholesale	act
 wholesale	commerce
 wholesale	event
@@ -18819,6 +19682,7 @@ windbreak	structure
 windfall-profit	income
 windfall-profit	net-income
 windfall-profit	possession
+windfall-profit	relation
 window	artifact
 window	physical-object
 window-blind	artifact
@@ -18843,6 +19707,7 @@ wine	drug
 wine	food
 wine	liquid-substance
 wine	part
+wine	relation
 wine	substance
 wine-glass	artifact
 wine-glass	container
@@ -18855,6 +19720,8 @@ winner	organism
 winner	person
 winner	physical-object
 winnings	possession
+winnings	relation
+winter	amount
 winter	season
 winter	time-period
 wire	artifact
@@ -18895,6 +19762,7 @@ woman	physical-object
 wonder	event
 wood	material
 wood	part
+wood	relation
 wood	substance
 woodwind	artifact
 woodwind	device
@@ -18908,6 +19776,7 @@ wool-fiber	animal-product
 wool-fiber	fiber
 wool-fiber	material
 wool-fiber	part
+wool-fiber	relation
 wool-fiber	substance
 worcestershire-sauce	fixings
 worcestershire-sauce	food
@@ -18915,7 +19784,9 @@ worcestershire-sauce	foodstuff
 worcestershire-sauce	sauce
 worcestershire-sauce	seasoning
 worcestershire-sauce	substance
+word	language-unit
 word	part
+word	relation
 wording	information
 work	act
 work	activity
@@ -18962,6 +19833,7 @@ wrap	physical-object
 wrapping-paper	material
 wrapping-paper	paper
 wrapping-paper	part
+wrapping-paper	relation
 wrapping-paper	substance
 wreck	attribute
 wreck	condition
@@ -18987,6 +19859,7 @@ write-off	lost-item
 write-off	non-cash-expense
 write-off	outgo
 write-off	possession
+write-off	relation
 writer	agent
 writer	organism
 writer	person
@@ -19011,6 +19884,7 @@ yard	field
 yard	physical-object
 yard	place
 yard	region
+year	amount
 year	time-period
 yeast	substance
 yellow-dog-contract	contract
@@ -19030,7 +19904,11 @@ young	organism
 young	physical-object
 young-people	group
 young-people	people
+youth	amount
 youth	time-period
+zero	amount
+zero	definite-quantity
+zero	numeric-quantity
 zero-coupon-bond	bond
 zero-coupon-bond	document
 zero-coupon-bond	information
@@ -19042,6 +19920,7 @@ zero-coupon-security	legal-document
 zinc	chemical-element
 zinc	metal
 zinc	part
+zinc	relation
 zinc	substance
 zipper	artifact
 zipper	device

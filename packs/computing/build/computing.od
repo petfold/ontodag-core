@@ -18,7 +18,7 @@ activitypub communications-protocol
 actor-model model-of-computation
 ada-language programming-language
 adjacency-list graph-data-structure
-adjacency-matrix graph-data-structure
+adjacency-matrix graph-data-structure matrix
 administrative-data-processing data-processing
 advanced-audio-coding audio-coding-format audio-file-format
 advanced-video-coding video-coding-format
@@ -411,7 +411,6 @@ distributed-storage-system distributed-system
 distributed-system computer-system
 distributed-version-control version-control
 divide-and-conquer-algorithm algorithm
-division computation
 dns-record data-record
 docker software-container
 document '*'
@@ -721,6 +720,7 @@ label '*'
 lambda-calculus model-of-computation
 lamport-timestamp logical-clock
 language '*'
+language-unit '*'
 latency network-performance-measure
 latex markup-language
 law '*'
@@ -797,6 +797,7 @@ markup-language computer-language
 master-file computer-file
 mathematics '*'
 matlab programming-language
+matrix '*'
 matrix-protocol messaging-protocol
 matroska multimedia-container-format video-file-format
 maximum-flow-problem computational-problem
@@ -973,6 +974,7 @@ pascal-compiler compiler
 pascal-language programming-language
 passphrase password
 password '*'
+pattern '*'
 pattern-matching algorithm data-processing-technique
 paxos consensus-algorithm
 pci-express computer-bus
@@ -1035,7 +1037,7 @@ program-variable concept
 programmer engineer
 programming-language computer-language
 programming-monad software-design-pattern
-programming-paradigm concept
+programming-paradigm concept style
 programming-tool software
 programming-trait object-class
 progressive-web-app web-application
@@ -1046,7 +1048,7 @@ prototype-based-programming object-oriented-programming
 proxy-server computer-server
 public-domain state
 public-key-cryptography cryptography
-public-key-infrastructure computer-security-system
+public-key-infrastructure computer-security-system system
 publish-subscribe-pattern software-design-pattern
 pull-request message
 pure-function subroutine
@@ -1104,14 +1106,14 @@ reference-counting garbage-collection
 reference-data-type data-type
 referential-transparency property
 regression-testing software-testing
-regular-expression code
+regular-expression code pattern
 relational-database electronic-database
 relational-database-management-system database-management-system
 relational-join data-processing
 relational-model data-model
 relocatable-program computer-program
 remote-procedure-call communications-protocol
-removable-disk hard-disk magnetic-disk
+removable-disk hard-disk
 replication-in-computing data-replication
 representational-state-transfer software-architecture
 requirements-analysis activity data-processing
@@ -1278,13 +1280,13 @@ string-searching-algorithm string-algorithm
 strong-consistency property
 strong-typing type-system
 structured-programming imperative-programming
+style '*'
 subdata-base information
 subdirectory directory
 subnetwork computer-network
 subroutine software
 subroutine-call computer-instruction
 suffix-tree trie
-summation computation
 supercomputer mainframe-computer
 supervisory-program computer-program
 supervisory-routine subroutine
@@ -1297,6 +1299,7 @@ symmetric-key-cryptography cryptography
 synchronous-operation computer-operation
 syntax-checker computer-program
 syntax-error software-error
+system '*'
 system-call subroutine subroutine-call
 system-crash trouble
 system-error computer-instruction

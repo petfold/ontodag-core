@@ -64,7 +64,7 @@ authorized-shares share-capital
 automated-market-maker decentralized-exchange
 automobile-insurance possession
 automobile-loan personal-loan
-backlog stored-supply
+backlog '*'
 backorder trade-order
 backtesting procedure
 bad-debt debt
@@ -113,7 +113,7 @@ bond-issue bond
 bond-market financial-market
 bond-trading trading
 bonus payment-amount
-book-fair bazaar
+book-fair bazaar event
 book-value concept
 bookdealer merchant
 bookkeeping '*'
@@ -122,7 +122,7 @@ bounty reward-payment
 breakage reimbursement
 broker businessman economic-agent
 brokerage-account possession
-budget information
+budget '*'
 budget-constraint concept
 building '*'
 bull-market event state
@@ -209,7 +209,7 @@ commodity-exchange workplace
 commodity-market financial-market
 commodity-money money
 common-carrier freight-forwarder
-common-stock share share-capital
+common-stock financial-asset share share-capital
 common-stock-equivalent share-capital
 commons concept
 company '*'
@@ -234,7 +234,7 @@ contract '*'
 contract-theory concept
 control-account transaction-record
 control-stock share-capital
-controlling-interest share
+controlling-interest financial-interest share
 convertible-bond bond
 convertible-security legal-document
 corkage service-charge
@@ -273,7 +273,6 @@ credit-side transaction-record
 credit-spread concept
 creditor economic-agent
 crime '*'
-crop production-output
 cross-chain blockchain
 cross-docking logistics
 crowdfunding business-model financial-services
@@ -294,7 +293,7 @@ custodial-account cash-account
 custodial-wallet cryptocurrency-wallet
 custodian-bank bank
 customs-broker professional
-cut-rate-sale event
+cut-rate-sale '*'
 cutler craftsman trader
 damages compensation
 dark-pool capital-market
@@ -325,7 +324,7 @@ delivery '*'
 demand-deposit deposit
 demand-forecasting procedure
 demurrage price-charged
-deposit possession
+deposit '*'
 deposit-account bank-account
 deposit-payment possession
 depreciation non-cash-expense
@@ -418,7 +417,7 @@ ethereum-name-service decentralized-application
 ethereum-virtual-machine software
 event '*'
 exchange '*'
-exchange-rate concept ratio
+exchange-rate ratio
 exchange-traded-fund mutual-fund security-finance
 excursion-rate charge-rate
 exotic-option option-finance
@@ -470,7 +469,7 @@ fishing-industry commercial-enterprise
 fishmonger trader
 fixed-asset asset
 fixed-charge price-charged
-fleet group
+fleet '*'
 fleet-management management
 floater-policy policy
 floating-rate-note bond
@@ -497,7 +496,7 @@ front-running crime
 fruiterer seller
 fulfillment-house business warehouse
 full-node bitcoin-network
-fund possession
+fund '*'
 fundamental-analysis procedure
 fungibility attribute
 futures-contract forward-contract
@@ -778,7 +777,6 @@ overdraft-credit open-end-credit
 overpaid-amount payment-amount
 overpayment payment
 overproduction economic-production
-ownership concept
 packaging '*'
 par-value concept
 pareto-efficiency concept
@@ -842,7 +840,7 @@ postage-stamp artifact
 postal-delivery delivery
 poultryman merchant
 poundage fee
-preferred-stock share share-capital
+preferred-stock financial-asset share share-capital
 premium-bond bond
 prepayment payment
 present-value concept
@@ -1004,7 +1002,7 @@ service-contract contract
 settlement-date concept
 settlement-finance procedure
 severable-contract contract
-share financial-interest security-finance
+share '*'
 share-capital '*'
 share-float share-capital
 share-of-profits '*'

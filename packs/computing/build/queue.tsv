@@ -1,6 +1,8 @@
 kind	sub	sup	detail
 disputed	computer-language	programming-language	for wordnet; reversed by opencyc yago
+single	access-time	amount	only wordnet
 single	access-time	quantity	only sumo
+single	access-time	time	only sumo
 single	accumulator-register	component	only sumo
 single	accumulator-register	mechanism	only sumo
 single	accumulator-register	physical-object	only wordnet
@@ -27,13 +29,16 @@ single	admission	authorization	only opencyc
 single	agile-software-development	programming	only wikidata
 single	agile-software-development	skill	only wikidata
 single	album	hard-copy	only sumo
+single	algebraic-language	language-unit	only sumo
 single	algebraic-language	line-of-text	only sumo
 single	algebraic-language	programming-language	only wordnet
 single	algol	algorithmic-language	only wordnet
+single	algol	language-unit	only sumo
 single	algol	line-of-text	only sumo
 single	algol	programming-language	only wordnet
 single	algorithm	information	only opencyc
 single	algorithm-error	event	only wordnet
+single	algorithmic-language	language-unit	only sumo
 single	algorithmic-language	line-of-text	only sumo
 single	alpha-software	computer-program	only sumo
 single	alpha-software	information	only wordnet
@@ -78,6 +83,7 @@ single	assembler	information	only wordnet
 single	assembler	measure	only sumo
 single	assembler	routine	only sumo
 single	assembler	software	only wordnet
+single	assembly-language	language-unit	only sumo
 single	assembly-language	line-of-text	only sumo
 single	assertion	control-flow	only wikidata
 single	assertion	program-statement	only wikidata
@@ -135,6 +141,7 @@ single	background-processing	volition	only sumo
 single	backup-file	artifact	only sumo
 single	backup-file	contract-condition	only sumo
 single	backup-file	file	only wordnet
+single	backup-file	language-unit	only sumo
 single	backup-file	line-of-text	only sumo
 single	backup-file	physical-object	only sumo
 single	backup-file	text	only sumo
@@ -142,23 +149,28 @@ single	backup-file	vehicle-body	only sumo
 single	backup-software	information	only yago
 single	bad-block	amateur	only sumo
 single	bad-block	ambiance	only sumo
+single	bad-block	amount	only wordnet
 single	bad-block	attribute	only sumo
 single	bad-block	circumstance	only sumo
 single	bad-block	civilisation	only sumo
 single	bad-block	crowd	only sumo
 single	bad-block	custom	only sumo
 single	bad-block	danger	only sumo
+single	bad-block	definite-quantity	only wordnet
 single	bad-block	expert	only sumo
 single	bad-block	freedom	only sumo
+single	bad-block	hero	only sumo
 single	bad-block	lap	only sumo
 single	bad-block	literary-works	only sumo
 single	bad-block	normal	only sumo
+single	bad-block	point-of-view	only sumo
 single	bad-block	practice	only sumo
 single	bad-block	property	only sumo
 single	bad-block	society	only sumo
 single	bad-block	status	only sumo
 single	bad-block	tension	only sumo
 single	bad-block	way	only sumo
+single	basic-language	language-unit	only sumo
 single	basic-language	line-of-text	only sumo
 single	batch-job	information	only wordnet
 single	batch-job	measure	only sumo
@@ -177,6 +189,7 @@ single	binary-code	indication	only sumo
 single	binary-code	physical-object	only sumo
 single	binary-file	artifact	only sumo
 single	binary-file	contract-condition	only sumo
+single	binary-file	language-unit	only sumo
 single	binary-file	line-of-text	only sumo
 single	binary-file	physical-object	only sumo
 single	binary-file	text	only sumo
@@ -201,6 +214,7 @@ single	bit-field	contract-condition	only sumo
 single	bit-field	group	only wordnet
 single	bit-field	indication	only sumo
 single	bit-field	information	only sumo
+single	bit-field	language-unit	only sumo
 single	bit-field	line-of-text	only sumo
 single	bit-field	physical-object	only sumo
 single	bit-field	set	only wordnet
@@ -216,8 +230,10 @@ single	boolean-operation	act	only sumo
 single	boolean-operation	activity	only sumo
 single	boolean-operation	data-processing	only wordnet
 single	boolean-operation	event	only sumo
+single	boolean-operation	function	only wikidata
 single	boolean-operation	procedure	only sumo
 single	boolean-operation	process	only wordnet
+single	boolean-operation	relation	only wikidata
 single	boolean-operation	volition	only sumo
 single	bracket	character-set	only sumo
 single	briefcase-computer	computer	only wordnet
@@ -247,6 +263,7 @@ single	c-compiler	information	only wordnet
 single	c-compiler	measure	only sumo
 single	c-compiler	routine	only sumo
 single	c-compiler	software	only wordnet
+single	c-language	language-unit	only sumo
 single	c-language	line-of-text	only sumo
 single	c-program	information	only wordnet
 single	c-program	measure	only sumo
@@ -307,6 +324,7 @@ single	checking-program	routine	only sumo
 single	checking-program	software	only wordnet
 single	circuit-card	computer-circuit	only wordnet
 single	client-server-model	computer-science	only wikidata
+single	cobol	language-unit	only sumo
 single	cobol	line-of-text	only sumo
 single	codec	information	only yago
 single	column-oriented-dbms	software	only wikidata
@@ -323,7 +341,9 @@ single	command-line-interface	information	only wordnet
 single	command-line-interface	measure	only sumo
 single	command-line-interface	routine	only sumo
 single	command-line-interface	software	only wordnet
+single	command-processing-overhead-time	amount	only wordnet
 single	command-processing-overhead-time	quantity	only sumo
+single	command-processing-overhead-time	time	only sumo
 single	command-prompt	act	only wordnet
 single	command-prompt	event	only wordnet
 single	command-prompt	indication	only sumo
@@ -376,6 +396,7 @@ single	computer-keyboard	equipment	only wordnet
 single	computer-keyboard	keyboard	only wordnet
 single	computer-keyboard	peripheral	only wordnet
 single	computer-keyboard	physical-object	only wordnet
+single	computer-language	language-unit	only sumo
 single	computer-language	line-of-text	only sumo
 single	computer-monitor	display-device	only wikidata
 single	computer-monitor	output-device	only wikidata
@@ -386,6 +407,8 @@ single	computer-mouse	user-interface	only wikidata
 single	computer-network	device	only opencyc
 single	computer-network	physical-object	only wordnet
 single	computer-network	structure	only opencyc
+single	computer-network	system	only opencyc
+single	computer-network	system-instrumentality	only wordnet
 single	computer-operation	accomplishment	only sumo
 single	computer-operation	act	only sumo
 single	computer-operation	activity	only sumo
@@ -399,6 +422,7 @@ single	computer-programming	event	only opencyc
 single	computer-programming	situation	only opencyc
 single	computer-security-system	device	only sumo
 single	computer-security-system	physical-object	only wordnet
+single	computer-security-system	system-instrumentality	only wordnet
 single	computer-security-system	vehicle-body	only sumo
 single	computer-server	artifact	only wordnet
 single	computer-server	device	only wordnet
@@ -410,6 +434,7 @@ single	computer-simulation	event	only opencyc
 single	computer-simulation	hypothesis	only wordnet
 single	computer-simulation	idea	only wordnet
 single	computer-simulation	situation	only opencyc
+single	computer-simulation	theoretical-account	only wordnet
 single	computer-virus	software-object	only opencyc
 single	concession	authorization	only opencyc
 single	concurrent-operation	accomplishment	only sumo
@@ -447,10 +472,14 @@ single	cpu-cache	hardware	only wikidata
 single	creative-commons-license	information	only yago
 single	cross-site-scripting	software-bug	only wikidata
 single	cryptographic-hash-function	algorithm	only wikidata
+single	cryptographic-hash-function	function	only wikidata
+single	cryptographic-hash-function	relation	only wikidata
 single	cyclic-redundancy-check	algorithm	only wikidata
 single	cyclic-redundancy-check	code	only wordnet
+single	cyclic-redundancy-check	function	only wikidata
 single	cyclic-redundancy-check	information	only wordnet
 single	cyclic-redundancy-check	measure	only sumo
+single	cyclic-redundancy-check	relation	only wikidata
 single	cyclic-redundancy-check	routine	only sumo
 single	data-backup	artifact	only wordnet
 single	data-backup	physical-object	only wordnet
@@ -463,6 +492,7 @@ single	data-descriptor	contract-condition	only sumo
 single	data-descriptor	file	only sumo
 single	data-descriptor	indication	only sumo
 single	data-descriptor	information	only sumo
+single	data-descriptor	language-unit	only sumo
 single	data-descriptor	line-of-text	only sumo
 single	data-descriptor	news	only sumo
 single	data-descriptor	note	only sumo
@@ -534,9 +564,11 @@ single	decision-table	artifact	only sumo
 single	decision-table	contract-condition	only sumo
 single	decision-table	indication	only sumo
 single	decision-table	language	only wordnet
+single	decision-table	language-unit	only sumo
 single	decision-table	line-of-text	only sumo
 single	decision-table	physical-object	only sumo
 single	decision-table	programming-language	only wordnet
+single	decision-table	tabular-array	only wikidata
 single	decision-table	text	only sumo
 single	decision-table	vehicle-body	only sumo
 single	declarative-programming	programming	only wikidata
@@ -556,6 +588,7 @@ single	demodulation	event	only sumo
 single	demodulation	information	only sumo
 single	demodulation	physical-object	only wordnet
 single	demodulation	procedure	only sumo
+single	demodulation	reception	only wordnet
 single	demodulation	storage-medium	only wordnet
 single	demodulation	volition	only sumo
 single	denial-of-service-attack	action	only opencyc
@@ -610,6 +643,8 @@ single	dip-switch	control	only wordnet
 single	dip-switch	physical-object	only wordnet
 single	dip-switch	vehicle-body	only sumo
 single	directed-acyclic-graph	graph	only wikidata
+single	directed-acyclic-graph	system	only opencyc
+single	directed-graph	system	only opencyc
 single	disambiguator	application	only wordnet
 single	disambiguator	information	only wordnet
 single	disambiguator	measure	only sumo
@@ -624,6 +659,8 @@ single	disk-access	event	only sumo
 single	disk-access	procedure	only sumo
 single	disk-access	process	only wordnet
 single	disk-access	volition	only sumo
+single	disk-block	amount	only wordnet
+single	disk-block	definite-quantity	only wordnet
 single	disk-block	quantity	only sumo
 single	disk-cache	artifact	only wordnet
 single	disk-cache	data-buffer	only wordnet
@@ -639,6 +676,7 @@ single	disk-error	event	only wordnet
 single	disk-file	artifact	only sumo
 single	disk-file	contract-condition	only sumo
 single	disk-file	file	only wordnet
+single	disk-file	language-unit	only sumo
 single	disk-file	line-of-text	only sumo
 single	disk-file	physical-object	only sumo
 single	disk-file	text	only sumo
@@ -653,6 +691,8 @@ single	disk-overhead	physical-object	only wordnet
 single	disk-overhead	place	only wordnet
 single	disk-overhead	quantity	only sumo
 single	disk-pack	group	only wordnet
+single	disk-partition	amount	only wordnet
+single	disk-partition	definite-quantity	only wordnet
 single	diskette	artifact	only wordnet
 single	diskette	device	only wordnet
 single	diskette	physical-object	only wordnet
@@ -686,7 +726,10 @@ single	distributed-version-control	information	only yago
 single	division	arithmetic-operation	only claude
 single	document-oriented-database	software	only wikidata
 single	domain-name	indication	only sumo
+single	domain-name	language-unit	only wordnet
+single	domain-name	part	only wordnet
 single	domain-name	physical-object	only sumo
+single	domain-name	relation	only wordnet
 single	domain-ontology	database	only wikidata
 single	domain-ontology	knowledge-base	only wikidata
 single	dongle	hardware	only wikidata
@@ -759,6 +802,7 @@ single	estimate	computation	only sumo
 single	ethernet	artifact	only wordnet
 single	ethernet	physical-object	only wordnet
 single	ethernet	plug	only wikidata
+single	ethernet	system-instrumentality	only wordnet
 single	event-driven-programming	programming	only wikidata
 single	event-driven-programming	skill	only wikidata
 single	examination	computation	only sumo
@@ -772,6 +816,7 @@ single	execution-speed	vector	only sumo
 single	faq	artifact	only sumo
 single	faq	contract-condition	only sumo
 single	faq	indication	only sumo
+single	faq	language-unit	only sumo
 single	faq	line-of-text	only sumo
 single	faq	physical-object	only sumo
 single	faq	text	only sumo
@@ -781,6 +826,7 @@ single	file-archiver	information	only yago
 single	file-path	data-type	only wikidata
 single	file-server	physical-object	only wordnet
 single	file-server	structure	only opencyc
+single	file-server	system	only opencyc
 single	file-server	vehicle-body	only sumo
 single	file-system	information	only yago
 single	file-transfer-protocol	attribute	only sumo
@@ -792,7 +838,9 @@ single	filename	contract-condition	only sumo
 single	filename	identifier	only wikidata
 single	filename	indication	only sumo
 single	filename	line-of-text	only sumo
+single	filename	part	only wordnet
 single	filename	physical-object	only sumo
+single	filename	relation	only wordnet
 single	filename	text	only sumo
 single	filename	vehicle-body	only sumo
 single	firmware	measure	only sumo
@@ -819,6 +867,7 @@ single	flow-chart	artifact	only sumo
 single	flow-chart	contract-condition	only sumo
 single	flow-chart	indication	only sumo
 single	flow-chart	language	only wordnet
+single	flow-chart	language-unit	only sumo
 single	flow-chart	line-of-text	only sumo
 single	flow-chart	physical-object	only sumo
 single	flow-chart	programming-language	only wordnet
@@ -840,8 +889,11 @@ single	foreground-window	physical-object	only wordnet
 single	foreground-window	place	only sumo
 single	foreground-window	video-display	only wordnet
 single	formal-grammar	information	only opencyc
+single	formatted-capacity	amount	only wordnet
+single	formatted-capacity	indefinite-quantity	only wordnet
 single	formatted-capacity	quantity	only sumo
 single	fortran	algorithmic-language	only wordnet
+single	fortran	language-unit	only sumo
 single	fortran	line-of-text	only sumo
 single	fortran	programming-language	only wordnet
 single	fortran-compiler	information	only wordnet
@@ -946,6 +998,8 @@ single	hardware-upgrade	device	only sumo
 single	hardware-upgrade	mechanism	only sumo
 single	hardware-upgrade	physical-object	only wordnet
 single	hardware-upgrade	vehicle-body	only sumo
+single	hash-function	function	only wikidata
+single	hash-function	relation	only wikidata
 single	hash-table	information	only opencyc
 single	head-crash	attribute	only sumo
 single	head-crash	event	only wordnet
@@ -958,6 +1012,7 @@ single	high-level-formatting	accomplishment	only sumo
 single	high-level-formatting	act	only sumo
 single	high-level-formatting	activity	only sumo
 single	high-level-formatting	event	only sumo
+single	high-level-formatting	format	only wordnet
 single	high-level-formatting	information	only wordnet
 single	high-level-formatting	procedure	only sumo
 single	high-level-formatting	volition	only sumo
@@ -970,6 +1025,11 @@ single	home-page	indication	only wordnet
 single	home-page	information	only wordnet
 single	home-page	text-file	only wordnet
 single	hostname	information	only wikidata
+single	html	language-unit	only wordnet
+single	html	part	only wordnet
+single	html	relation	only wordnet
+single	html	terminology	only wordnet
+single	html	word	only wordnet
 single	hyperlink	code	only wordnet
 single	hyperlink	computer-instruction	only wordnet
 single	hyperlink	information	only wordnet
@@ -1018,6 +1078,7 @@ single	inode	information	only opencyc
 single	input-file	artifact	only sumo
 single	input-file	contract-condition	only sumo
 single	input-file	file	only wordnet
+single	input-file	language-unit	only sumo
 single	input-file	line-of-text	only sumo
 single	input-file	physical-object	only sumo
 single	input-file	text	only sumo
@@ -1061,6 +1122,8 @@ single	intranet	machine	only sumo
 single	intranet	machinery	only sumo
 single	intranet	physical-object	only wordnet
 single	intranet	structure	only opencyc
+single	intranet	system	only opencyc
+single	intranet	system-instrumentality	only wordnet
 single	intranet	vehicle-body	only sumo
 single	introductory-text	hard-copy	only sumo
 single	inventory	list	only claude
@@ -1070,6 +1133,7 @@ single	ip-address	information	only opencyc
 single	ip-address	metadata	only wikidata
 single	iso-image	computer-file	only wikidata
 single	iso-image	file	only wikidata
+single	java-language	language-unit	only sumo
 single	java-language	line-of-text	only sumo
 single	java-language	programming-language	only wordnet
 single	javascript	information	only opencyc
@@ -1138,6 +1202,7 @@ single	linux	software	only wikidata
 single	linux-distribution	software	only wikidata
 single	linux-distribution	software-object	only opencyc
 single	linux-distribution	software-package	only opencyc
+single	lisp	language-unit	only sumo
 single	lisp	line-of-text	only sumo
 single	lisp-compiler	information	only wordnet
 single	lisp-compiler	measure	only sumo
@@ -1157,6 +1222,8 @@ single	list-processing	volition	only sumo
 single	local-area-network	device	only opencyc
 single	local-area-network	physical-object	only wordnet
 single	local-area-network	structure	only opencyc
+single	local-area-network	system	only opencyc
+single	local-area-network	system-instrumentality	only wordnet
 single	logic-bomb	measure	only sumo
 single	logic-bomb	routine	only sumo
 single	logic-bomb	software-object	only opencyc
@@ -1164,6 +1231,7 @@ single	logic-diagram	artifact	only sumo
 single	logic-diagram	contract-condition	only sumo
 single	logic-diagram	indication	only sumo
 single	logic-diagram	language	only wordnet
+single	logic-diagram	language-unit	only sumo
 single	logic-diagram	line-of-text	only sumo
 single	logic-diagram	physical-object	only sumo
 single	logic-diagram	programming-language	only wordnet
@@ -1178,14 +1246,17 @@ single	logical-operation	act	only sumo
 single	logical-operation	activity	only sumo
 single	logical-operation	data-processing	only wordnet
 single	logical-operation	event	only sumo
+single	logical-operation	function	only wikidata
 single	logical-operation	procedure	only sumo
 single	logical-operation	process	only wordnet
+single	logical-operation	relation	only wikidata
 single	logical-operation	volition	only sumo
 single	loop-iteration	event	only sumo
 single	low-level-formatting	accomplishment	only sumo
 single	low-level-formatting	act	only sumo
 single	low-level-formatting	activity	only sumo
 single	low-level-formatting	event	only sumo
+single	low-level-formatting	format	only wordnet
 single	low-level-formatting	information	only wordnet
 single	low-level-formatting	procedure	only sumo
 single	low-level-formatting	volition	only sumo
@@ -1203,6 +1274,7 @@ single	machine-readable-dictionary	electronic-database	only wordnet
 single	machine-readable-dictionary	file	only sumo
 single	machine-readable-dictionary	hard-copy	only sumo
 single	machine-readable-dictionary	indication	only sumo
+single	machine-readable-dictionary	language-unit	only sumo
 single	machine-readable-dictionary	line-of-text	only sumo
 single	machine-readable-dictionary	mechanism	only sumo
 single	machine-readable-dictionary	news	only sumo
@@ -1245,6 +1317,7 @@ single	magnetic-tape	tape	only opencyc
 single	mailing-list	list	only claude
 single	mainframe-computer	physical-object	only wordnet
 single	mainframe-computer	structure	only opencyc
+single	mainframe-computer	system	only opencyc
 single	mainframe-computer	vehicle-body	only sumo
 single	majority-operation	accomplishment	only sumo
 single	majority-operation	act	only sumo
@@ -1262,10 +1335,12 @@ single	markup-language	information	only yago
 single	master-file	artifact	only sumo
 single	master-file	contract-condition	only sumo
 single	master-file	file	only wordnet
+single	master-file	language-unit	only sumo
 single	master-file	line-of-text	only sumo
 single	master-file	physical-object	only sumo
 single	master-file	text	only sumo
 single	master-file	vehicle-body	only sumo
+single	matrix	data-structure	only wikidata
 single	matrix-addition	matrix-operation	only claude
 single	matrix-inversion	matrix-operation	only claude
 single	matrix-multiplication	matrix-operation	only claude
@@ -1291,6 +1366,7 @@ single	memory-chip	vehicle-body	only sumo
 single	memory-dump	artifact	only sumo
 single	memory-dump	contract-condition	only sumo
 single	memory-dump	indication	only sumo
+single	memory-dump	language-unit	only sumo
 single	memory-dump	line-of-text	only sumo
 single	memory-dump	physical-object	only sumo
 single	memory-dump	vehicle-body	only sumo
@@ -1321,6 +1397,7 @@ single	middleware	information	only yago
 single	minicomputer	machinery	only sumo
 single	minicomputer	physical-object	only wordnet
 single	minicomputer	structure	only opencyc
+single	minicomputer	system	only opencyc
 single	minicomputer	vehicle-body	only sumo
 single	module	software-object	only opencyc
 single	monadic-operation	accomplishment	only sumo
@@ -1345,6 +1422,7 @@ single	mp3	stream	only opencyc
 single	mp4	image	only opencyc
 single	mp4	information	only opencyc
 single	mp4	stream	only opencyc
+single	multidimensional-language	language-unit	only sumo
 single	multidimensional-language	line-of-text	only sumo
 single	multiplex-operation	accomplishment	only sumo
 single	multiplex-operation	act	only sumo
@@ -1378,6 +1456,7 @@ single	natural-language-processor	software	only wordnet
 single	network-file-system	software	only wikidata
 single	network-firewall	artifact	only wordnet
 single	network-firewall	physical-object	only wordnet
+single	network-firewall	system-instrumentality	only wordnet
 single	network-interface-controller	circuit-card	only wikidata
 single	network-node	machine	only wordnet
 single	network-node	physical-object	only wordnet
@@ -1416,6 +1495,7 @@ single	object-code	computer-program	only sumo
 single	object-code	information	only wordnet
 single	object-code	measure	only sumo
 single	object-code	routine	only sumo
+single	object-language	language-unit	only sumo
 single	object-language	line-of-text	only sumo
 single	object-method	control-flow	only wikidata
 single	object-oriented-database	indication	only sumo
@@ -1429,12 +1509,14 @@ single	object-oriented-programming	computer-programming	only wikidata
 single	object-oriented-programming	programming	only wikidata
 single	object-oriented-programming	skill	only wikidata
 single	object-oriented-programming-language	computer-language	only opencyc
+single	object-oriented-programming-language	language-unit	only sumo
 single	object-oriented-programming-language	line-of-text	only sumo
 single	object-program	information	only wordnet
 single	object-program	measure	only sumo
 single	object-program	routine	only sumo
 single	object-program	software	only wordnet
 single	office-open-xml	file-format	only wikidata
+single	one-dimensional-language	language-unit	only sumo
 single	one-dimensional-language	line-of-text	only sumo
 single	open-source-software	information	only yago
 single	operating-system	software-object	only opencyc
@@ -1443,6 +1525,8 @@ single	operating-system-kernel	information	only opencyc
 single	operating-system-kernel	software-object	only opencyc
 single	operation-code	indication	only sumo
 single	operation-code	physical-object	only sumo
+single	operational-transformation	function	only wikidata
+single	operational-transformation	relation	only wikidata
 single	optical-disk	cylinder	only opencyc
 single	optical-disk	disk	only opencyc
 single	optical-disk	physical-object	only wordnet
@@ -1454,6 +1538,7 @@ single	output-device	physical-object	only wordnet
 single	output-file	artifact	only sumo
 single	output-file	contract-condition	only sumo
 single	output-file	file	only wordnet
+single	output-file	language-unit	only sumo
 single	output-file	line-of-text	only sumo
 single	output-file	physical-object	only sumo
 single	output-file	text	only sumo
@@ -1483,6 +1568,8 @@ single	parallel-operation	volition	only sumo
 single	pari-mutuel-machine	machine	only wordnet
 single	pari-mutuel-machine	physical-object	only wordnet
 single	pari-mutuel-machine	vehicle-body	only sumo
+single	parity-bit	amount	only wordnet
+single	parity-bit	definite-quantity	only wordnet
 single	parity-bit	measure	only sumo
 single	parity-bit	routine	only sumo
 single	parser	information	only wordnet
@@ -1492,10 +1579,12 @@ single	part-of-speech-tagger	information	only wordnet
 single	part-of-speech-tagger	measure	only sumo
 single	part-of-speech-tagger	routine	only sumo
 single	part-of-speech-tagger	software	only wordnet
+single	partial-order	relation	only wikidata
 single	pascal-compiler	information	only wordnet
 single	pascal-compiler	measure	only sumo
 single	pascal-compiler	routine	only sumo
 single	pascal-compiler	software	only wordnet
+single	pascal-language	language-unit	only sumo
 single	pascal-language	line-of-text	only sumo
 single	passphrase	character-string	only wikidata
 single	passphrase	data-type	only wikidata
@@ -1511,6 +1600,7 @@ single	peripheral	physical-object	only wordnet
 single	persistent-identifier	information	only wikidata
 single	personal-computer	physical-object	only wordnet
 single	personal-computer	structure	only opencyc
+single	personal-computer	system	only opencyc
 single	personal-computer	vehicle-body	only sumo
 single	pixel	physical-object	only wordnet
 single	planner	digital-computer	only wordnet
@@ -1559,10 +1649,13 @@ single	processor-register	storage-device	only wordnet
 single	processor-register	vehicle-body	only sumo
 single	program-assertion	control-flow	only wikidata
 single	program-assertion	statement	only wikidata
+single	program-constant	function	only wikidata
+single	program-constant	relation	only wikidata
 single	program-expression	information	only opencyc
 single	program-interpreter	information	only wordnet
 single	program-interpreter	measure	only sumo
 single	program-interpreter	routine	only sumo
+single	program-invariant	relation	only wikidata
 single	program-link	accomplishment	only sumo
 single	program-link	act	only sumo
 single	program-link	activity	only sumo
@@ -1580,9 +1673,11 @@ single	program-variable	program-expression	only opencyc
 single	programmer	agent	only wordnet
 single	programmer	organism	only wordnet
 single	programmer	physical-object	only wordnet
+single	programming-language	language-unit	only sumo
 single	programming-language	line-of-text	only sumo
 single	progressive-web-app	software	only wikidata
 single	progressive-web-app	web-site	only wikidata
+single	prolog	language-unit	only sumo
 single	prolog	line-of-text	only sumo
 single	prototype-based-programming	computer-programming	only wikidata
 single	prototype-based-programming	programming	only wikidata
@@ -1593,6 +1688,7 @@ single	proxy-server	computer	only opencyc
 single	proxy-server	device	only opencyc
 single	proxy-server	service	only wikidata
 single	proxy-server	structure	only opencyc
+single	proxy-server	system	only opencyc
 single	push-button	peripheral	only wikidata
 single	push-button	user-interface	only wikidata
 single	push-down-queue	information	only wordnet
@@ -1625,9 +1721,11 @@ single	raspberry-pi	hardware	only wikidata
 single	raspberry-pi	machine	only wikidata
 single	raspberry-pi	motherboard	only wikidata
 single	rdf-graph	information	only opencyc
+single	rdf-graph	system	only opencyc
 single	read-only-file	artifact	only sumo
 single	read-only-file	contract-condition	only sumo
 single	read-only-file	file	only wordnet
+single	read-only-file	language-unit	only sumo
 single	read-only-file	line-of-text	only sumo
 single	read-only-file	physical-object	only sumo
 single	read-only-file	text	only sumo
@@ -1647,6 +1745,9 @@ single	real-storage	hardware	only wordnet
 single	real-storage	physical-object	only wordnet
 single	real-storage	storage-device	only wordnet
 single	real-storage	vehicle-body	only sumo
+single	real-time	amount	only wordnet
+single	real-time	time	only sumo
+single	real-time	time-period	only wordnet
 single	real-time-operating-system	information	only yago
 single	real-time-operating-system	software	only wikidata
 single	real-time-processing	accomplishment	only sumo
@@ -1662,6 +1763,7 @@ single	recursion	event	only wordnet
 single	recursion	measure	only sumo
 single	recursion	procedure	only wordnet
 single	recursion	routine	only sumo
+single	recursion	rule.cognition	only wordnet
 single	recursive-descent-parser	algorithm	only wikidata
 single	recursive-descent-parser	software	only wikidata
 single	recursive-routine	computer-program	only sumo
@@ -1710,7 +1812,12 @@ single	rich-text-format	information	only yago
 single	rootkit	software	only wikidata
 single	rotary-actuator	physical-object	only wordnet
 single	rotary-actuator	vehicle-body	only sumo
+single	rotational-latency	amount	only wordnet
 single	rotational-latency	quantity	only sumo
+single	rotational-latency	time	only sumo
+single	run-time	amount	only wordnet
+single	run-time	time	only sumo
+single	run-time	time-period	only wordnet
 single	satellite-internet	telecommunication	only wikidata
 single	scanner	user-interface	only wikidata
 single	scratchpad-memory	artifact	only wordnet
@@ -1740,7 +1847,9 @@ single	search-operation	event	only sumo
 single	search-operation	procedure	only sumo
 single	search-operation	process	only wordnet
 single	search-operation	volition	only sumo
+single	seek-time	amount	only wordnet
 single	seek-time	quantity	only sumo
+single	seek-time	time	only sumo
 single	self-adapting-program	information	only wordnet
 single	self-adapting-program	measure	only sumo
 single	self-adapting-program	routine	only sumo
@@ -1814,6 +1923,7 @@ single	smartphone	machine	only wikidata
 single	smartphone	personal-computer	only opencyc
 single	smartphone	phone	only opencyc
 single	smartphone	structure	only opencyc
+single	smartphone	system	only opencyc
 single	snapshot-program	information	only wordnet
 single	snapshot-program	measure	only sumo
 single	snapshot-program	routine	only sumo
@@ -1823,6 +1933,7 @@ single	social-engineering-attack	software-bug	only wikidata
 single	soft-copy	artifact	only sumo
 single	soft-copy	contract-condition	only sumo
 single	soft-copy	indication	only sumo
+single	soft-copy	language-unit	only sumo
 single	soft-copy	line-of-text	only sumo
 single	soft-copy	physical-object	only sumo
 single	soft-copy	text	only sumo
@@ -1837,6 +1948,7 @@ single	software-documentation	artifact	only sumo
 single	software-documentation	code	only wordnet
 single	software-documentation	contract-condition	only sumo
 single	software-documentation	indication	only sumo
+single	software-documentation	language-unit	only sumo
 single	software-documentation	line-of-text	only sumo
 single	software-documentation	physical-object	only sumo
 single	software-documentation	text	only sumo
@@ -1906,9 +2018,16 @@ single	sql-injection	software-bug	only wikidata
 single	stack-data-structure	physical-object	only wordnet
 single	stack-data-structure	storage-device	only wordnet
 single	stack-data-structure	vehicle-body	only sumo
+single	standard-generalized-markup-language	language-unit	only wordnet
+single	standard-generalized-markup-language	part	only wordnet
+single	standard-generalized-markup-language	relation	only wordnet
+single	standard-generalized-markup-language	terminology	only wordnet
+single	standard-generalized-markup-language	word	only wordnet
 single	standard-library	software	only wikidata
 single	statement	control-flow	only wikidata
 single	static-typing	algorithm	only wikidata
+single	storage-capacity	amount	only wordnet
+single	storage-capacity	indefinite-quantity	only wordnet
 single	storage-drive	machine	only sumo
 single	storage-drive	machinery	only sumo
 single	storage-drive	physical-object	only wordnet
@@ -1918,6 +2037,7 @@ single	stored-program	information	only wordnet
 single	stored-program	measure	only sumo
 single	stored-program	routine	only sumo
 single	stored-program	software	only wordnet
+single	stratified-language	language-unit	only sumo
 single	stratified-language	line-of-text	only sumo
 single	structured-programming	programming	only wikidata
 single	structured-programming	skill	only wikidata
@@ -1941,6 +2061,7 @@ single	subtraction	arithmetic-operation	only claude
 single	summation	arithmetic-operation	only claude
 single	supercomputer	physical-object	only wordnet
 single	supercomputer	structure	only opencyc
+single	supercomputer	system	only opencyc
 single	supercomputer	vehicle-body	only sumo
 single	supervisory-program	information	only wordnet
 single	supervisory-program	measure	only sumo
@@ -1955,6 +2076,7 @@ single	supervisory-software	computer-program	only sumo
 single	supervisory-software	information	only wordnet
 single	supervisory-software	measure	only sumo
 single	supervisory-software	routine	only sumo
+single	syllable	character-set	only sumo
 single	symbol	character-set	only sumo
 single	symbolic-link	reference	only wikidata
 single	synchronous-operation	accomplishment	only sumo
@@ -2001,6 +2123,7 @@ single	tablet-computer	device	only opencyc
 single	tablet-computer	machine	only wikidata
 single	tablet-computer	personal-computer	only opencyc
 single	tablet-computer	structure	only opencyc
+single	tablet-computer	system	only opencyc
 single	tagging-program	information	only wordnet
 single	tagging-program	measure	only sumo
 single	tagging-program	routine	only sumo
@@ -2012,6 +2135,7 @@ single	talking-book	information	only sumo
 single	talking-book	recording	only wordnet
 single	talking-book	storage-device	only wordnet
 single	taxonomy	information	only opencyc
+single	taxonomy	system	only opencyc
 single	telecommunications-engineering	cognition	only wordnet
 single	terminal-emulation	cognition	only wordnet
 single	terminal-emulation	method	only wordnet
@@ -2045,8 +2169,11 @@ single	threshold-operation	volition	only sumo
 single	tiff	image	only opencyc
 single	tiff	information	only opencyc
 single	tiff	stream	only opencyc
+single	time-complexity	function	only wikidata
+single	time-complexity	relation	only wikidata
 single	time-series-database	software	only wikidata
 single	time-sharing	event	only sumo
+single	time-sharing	relation	only wordnet
 single	title-bar	indication	only sumo
 single	title-bar	physical-object	only sumo
 single	title-bar	signal	only wordnet
@@ -2064,6 +2191,7 @@ single	touchscreen	device	only opencyc
 single	touchscreen	hardware	only wikidata
 single	touchscreen	input-device	only wikidata
 single	touchscreen	interface	only wikidata
+single	touchscreen	part	only opencyc
 single	touchscreen	peripheral	only wikidata
 single	touchscreen	transducer	only opencyc
 single	touchscreen	user-interface	only wikidata
@@ -2076,15 +2204,19 @@ single	tracing-routine	information	only wordnet
 single	tracing-routine	measure	only sumo
 single	tracing-routine	routine	only sumo
 single	tracing-routine	software	only wordnet
+single	track-to-track-seek-time	amount	only wordnet
 single	track-to-track-seek-time	quantity	only sumo
+single	track-to-track-seek-time	time	only sumo
 single	tract	hard-copy	only sumo
 single	transaction-file	artifact	only sumo
 single	transaction-file	contract-condition	only sumo
 single	transaction-file	file	only wordnet
+single	transaction-file	language-unit	only sumo
 single	transaction-file	line-of-text	only sumo
 single	transaction-file	physical-object	only sumo
 single	transaction-file	text	only sumo
 single	transaction-file	vehicle-body	only sumo
+single	transitive-closure	relation	only wikidata
 single	translator-program	information	only wordnet
 single	translator-program	measure	only sumo
 single	translator-program	routine	only sumo
@@ -2105,6 +2237,8 @@ single	trojan-horse-malware	routine	only sumo
 single	turing-machine	machinery	only sumo
 single	turing-machine	physical-object	only wordnet
 single	turing-machine	vehicle-body	only sumo
+single	unformatted-capacity	amount	only wordnet
+single	unformatted-capacity	indefinite-quantity	only wordnet
 single	unformatted-capacity	quantity	only sumo
 single	unicode-block	information	only yago
 single	uniform-resource-identifier	information	only opencyc
@@ -2115,6 +2249,7 @@ single	unix	software	only wordnet
 single	unix-like	information	only yago
 single	unix-like	software	only wikidata
 single	unix-shell	software-object	only opencyc
+single	unstratified-language	language-unit	only sumo
 single	unstratified-language	line-of-text	only sumo
 single	upper-ontology	database	only wikidata
 single	upper-ontology	knowledge-base	only wikidata
@@ -2133,6 +2268,7 @@ single	videotape	device	only wordnet
 single	videotape	physical-object	only wordnet
 single	videotape	storage-device	only wordnet
 single	virtual-machine	information	only yago
+single	virtual-machine	system	only opencyc
 single	virtual-memory	component	only wordnet
 single	virtual-memory	hardware	only wordnet
 single	virtual-memory	physical-object	only wordnet
@@ -2141,6 +2277,7 @@ single	virtual-memory	vehicle-body	only sumo
 single	virtual-private-network	artifact	only opencyc
 single	virtual-private-network	device	only opencyc
 single	virtual-private-network	structure	only opencyc
+single	virtual-private-network	system	only opencyc
 single	virtual-private-network	wide-area-network	only opencyc
 single	volatile-storage	artifact	only wordnet
 single	volatile-storage	component	only wordnet
@@ -2179,15 +2316,19 @@ single	web-server	computer	only opencyc
 single	web-server	device	only opencyc
 single	web-server	information	only yago
 single	web-server	structure	only opencyc
+single	web-server	system	only opencyc
 single	webcam	peripheral	only wikidata
 single	wi-fi	artifact	only opencyc
 single	wi-fi	computer-network	only opencyc
 single	wi-fi	device	only opencyc
 single	wi-fi	local-area-network	only opencyc
 single	wi-fi	structure	only opencyc
+single	wi-fi	system	only opencyc
 single	wide-area-network	device	only opencyc
 single	wide-area-network	physical-object	only wordnet
 single	wide-area-network	structure	only opencyc
+single	wide-area-network	system	only opencyc
+single	wide-area-network	system-instrumentality	only wordnet
 single	wide-area-network	vehicle-body	only sumo
 single	wide-column-store	software	only wikidata
 single	wiki	software	only wikidata
@@ -2205,6 +2346,7 @@ single	wireless-communication	situation	only opencyc
 single	wireless-local-area-network	artifact	only wordnet
 single	wireless-local-area-network	computer-network	only wordnet
 single	wireless-local-area-network	physical-object	only wordnet
+single	wireless-local-area-network	system-instrumentality	only wordnet
 single	word-processing	accomplishment	only sumo
 single	word-processing	act	only sumo
 single	word-processing	activity	only sumo
@@ -2219,367 +2361,31 @@ single	wordnet	indication	only sumo
 single	wordnet	physical-object	only sumo
 single	world-wide-web	device	only sumo
 single	world-wide-web	physical-object	only wordnet
+single	world-wide-web	system-instrumentality	only wordnet
 single	world-wide-web	vehicle-body	only sumo
 single	zero-day-exploit	software	only wikidata
 single	zero-day-exploit	software-bug	only wikidata
-unplaced	aberration		no accepted parent reaches a root
-unplaced	accelerator		no accepted parent reaches a root
-unplaced	access		no accepted parent reaches a root
-unplaced	advancement		no accepted parent reaches a root
-unplaced	affinity.relation		no accepted parent reaches a root
-unplaced	afternoon		no accepted parent reaches a root
-unplaced	agitation		no accepted parent reaches a root
-unplaced	altitude		no accepted parent reaches a root
-unplaced	alumnus		no accepted parent reaches a root
-unplaced	angel		no accepted parent reaches a root
-unplaced	anniversary		no accepted parent reaches a root
-unplaced	attractive-force		no accepted parent reaches a root
 unplaced	audio-cd	artifact cd compact-disk device optical-disk physical-object recording storage-device	no accepted parent reaches a root
-unplaced	aviation		no accepted parent reaches a root
-unplaced	backlog		no accepted parent reaches a root
-unplaced	bail		no accepted parent reaches a root
-unplaced	bait		no accepted parent reaches a root
-unplaced	bargain		no accepted parent reaches a root
-unplaced	barrier		no accepted parent reaches a root
-unplaced	basis		no accepted parent reaches a root
-unplaced	basketball-ball		no accepted parent reaches a root
-unplaced	batch		no accepted parent reaches a root
-unplaced	beam-of-light		no accepted parent reaches a root
-unplaced	beginning		no accepted parent reaches a root
-unplaced	bias		no accepted parent reaches a root
-unplaced	birthday		no accepted parent reaches a root
 unplaced	bit		no accepted parent reaches a root
-unplaced	blink-of-an-eye		no accepted parent reaches a root
-unplaced	bosom		no accepted parent reaches a root
-unplaced	brink		no accepted parent reaches a root
-unplaced	budget		no accepted parent reaches a root
-unplaced	bustle		no accepted parent reaches a root
-unplaced	calendar-month		no accepted parent reaches a root
-unplaced	camp		no accepted parent reaches a root
-unplaced	capacity		no accepted parent reaches a root
-unplaced	capitalism		no accepted parent reaches a root
-unplaced	cassette		no accepted parent reaches a root
-unplaced	ceiling.communication		no accepted parent reaches a root
-unplaced	century		no accepted parent reaches a root
-unplaced	childhood		no accepted parent reaches a root
-unplaced	chord		no accepted parent reaches a root
-unplaced	clock-time		no accepted parent reaches a root
-unplaced	clod		no accepted parent reaches a root
-unplaced	column.group		no accepted parent reaches a root
-unplaced	commencement		no accepted parent reaches a root
-unplaced	concern.cognition		no accepted parent reaches a root
 unplaced	confederacy		no accepted parent reaches a root
 unplaced	conscience		no accepted parent reaches a root
-unplaced	consequence		no accepted parent reaches a root
-unplaced	consultation		no accepted parent reaches a root
-unplaced	contrary		no accepted parent reaches a root
-unplaced	contrast		no accepted parent reaches a root
-unplaced	correlation		no accepted parent reaches a root
-unplaced	course-credit		no accepted parent reaches a root
-unplaced	course-of-study		no accepted parent reaches a root
-unplaced	creed		no accepted parent reaches a root
-unplaced	crop		no accepted parent reaches a root
-unplaced	cupful		no accepted parent reaches a root
-unplaced	current		no accepted parent reaches a root
-unplaced	cut-rate-sale		no accepted parent reaches a root
-unplaced	dawn		no accepted parent reaches a root
-unplaced	day		no accepted parent reaches a root
-unplaced	day-of-the-month		no accepted parent reaches a root
-unplaced	deadline		no accepted parent reaches a root
-unplaced	decade		no accepted parent reaches a root
-unplaced	deity		no accepted parent reaches a root
-unplaced	demand.process		no accepted parent reaches a root
-unplaced	democracy		no accepted parent reaches a root
-unplaced	deposit		no accepted parent reaches a root
-unplaced	design		no accepted parent reaches a root
-unplaced	detail		no accepted parent reaches a root
-unplaced	direction		no accepted parent reaches a root
-unplaced	disappointment		no accepted parent reaches a root
-unplaced	disembodied-spirit		no accepted parent reaches a root
-unplaced	dismissal		no accepted parent reaches a root
-unplaced	distance		no accepted parent reaches a root
-unplaced	dragon		no accepted parent reaches a root
-unplaced	dramaturgy		no accepted parent reaches a root
-unplaced	due-east		no accepted parent reaches a root
-unplaced	due-west		no accepted parent reaches a root
-unplaced	eagle.communication		no accepted parent reaches a root
 unplaced	earth		no accepted parent reaches a root
 unplaced	east		no accepted parent reaches a root
-unplaced	echo		no accepted parent reaches a root
-unplaced	economic-consumption		no accepted parent reaches a root
-unplaced	economic-system		no accepted parent reaches a root
-unplaced	economic-value		no accepted parent reaches a root
-unplaced	electric-charge		no accepted parent reaches a root
-unplaced	electricity		no accepted parent reaches a root
-unplaced	employer		no accepted parent reaches a root
-unplaced	engagement		no accepted parent reaches a root
-unplaced	entitlement		no accepted parent reaches a root
-unplaced	entree		no accepted parent reaches a root
-unplaced	era		no accepted parent reaches a root
 unplaced	europe		no accepted parent reaches a root
-unplaced	evening		no accepted parent reaches a root
-unplaced	exam		no accepted parent reaches a root
-unplaced	exemption		no accepted parent reaches a root
-unplaced	exercise		no accepted parent reaches a root
-unplaced	extension.time		no accepted parent reaches a root
-unplaced	extraterrestrial-being		no accepted parent reaches a root
-unplaced	fairy		no accepted parent reaches a root
-unplaced	fall		no accepted parent reaches a root
-unplaced	fictional-character		no accepted parent reaches a root
-unplaced	figure		no accepted parent reaches a root
-unplaced	film.artifact		no accepted parent reaches a root
-unplaced	final-examination		no accepted parent reaches a root
-unplaced	fleet		no accepted parent reaches a root
-unplaced	footstep		no accepted parent reaches a root
-unplaced	force		no accepted parent reaches a root
-unplaced	format		no accepted parent reaches a root
-unplaced	formation		no accepted parent reaches a root
-unplaced	foundation.relation		no accepted parent reaches a root
-unplaced	fraction		no accepted parent reaches a root
 unplaced	fragment		no accepted parent reaches a root
-unplaced	freak		no accepted parent reaches a root
-unplaced	frequency		no accepted parent reaches a root
-unplaced	front		no accepted parent reaches a root
-unplaced	frustration		no accepted parent reaches a root
-unplaced	function		no accepted parent reaches a root
-unplaced	fund		no accepted parent reaches a root
-unplaced	future		no accepted parent reaches a root
-unplaced	gap		no accepted parent reaches a root
-unplaced	garden		no accepted parent reaches a root
-unplaced	gas		no accepted parent reaches a root
-unplaced	gene		no accepted parent reaches a root
-unplaced	genus-pan		no accepted parent reaches a root
-unplaced	globe		no accepted parent reaches a root
-unplaced	grade		no accepted parent reaches a root
-unplaced	grain.object		no accepted parent reaches a root
-unplaced	gravity		no accepted parent reaches a root
-unplaced	ground		no accepted parent reaches a root
-unplaced	guidepost		no accepted parent reaches a root
-unplaced	guinea-pig		no accepted parent reaches a root
-unplaced	harvest		no accepted parent reaches a root
-unplaced	head		no accepted parent reaches a root
-unplaced	headroom		no accepted parent reaches a root
-unplaced	heat		no accepted parent reaches a root
-unplaced	hell		no accepted parent reaches a root
-unplaced	helping		no accepted parent reaches a root
-unplaced	here-and-now		no accepted parent reaches a root
-unplaced	hero		no accepted parent reaches a root
-unplaced	hideaway		no accepted parent reaches a root
-unplaced	highlight		no accepted parent reaches a root
-unplaced	hindrance		no accepted parent reaches a root
-unplaced	historic-period		no accepted parent reaches a root
-unplaced	history.time		no accepted parent reaches a root
-unplaced	host		no accepted parent reaches a root
-unplaced	hour		no accepted parent reaches a root
-unplaced	ideal		no accepted parent reaches a root
-unplaced	impetus		no accepted parent reaches a root
-unplaced	implication		no accepted parent reaches a root
 unplaced	incentive		no accepted parent reaches a root
-unplaced	influence.phenomenon		no accepted parent reaches a root
-unplaced	infrastructure		no accepted parent reaches a root
-unplaced	insider		no accepted parent reaches a root
-unplaced	intervention		no accepted parent reaches a root
-unplaced	iteration		no accepted parent reaches a root
-unplaced	jurisprudence		no accepted parent reaches a root
-unplaced	kick		no accepted parent reaches a root
-unplaced	king		no accepted parent reaches a root
-unplaced	kinship		no accepted parent reaches a root
-unplaced	knot		no accepted parent reaches a root
 unplaced	koran	hard-copy	no accepted parent reaches a root
-unplaced	laurel-wreath		no accepted parent reaches a root
-unplaced	leave		no accepted parent reaches a root
-unplaced	legal-age		no accepted parent reaches a root
-unplaced	level		no accepted parent reaches a root
-unplaced	limit.quantity		no accepted parent reaches a root
-unplaced	line-of-descent		no accepted parent reaches a root
-unplaced	lineation		no accepted parent reaches a root
-unplaced	linguistic-context		no accepted parent reaches a root
-unplaced	liquid-substance		no accepted parent reaches a root
-unplaced	load		no accepted parent reaches a root
-unplaced	logarithm		no accepted parent reaches a root
-unplaced	logic.cognition		no accepted parent reaches a root
-unplaced	love		no accepted parent reaches a root
-unplaced	luck		no accepted parent reaches a root
-unplaced	luck.phenomenon		no accepted parent reaches a root
-unplaced	majority		no accepted parent reaches a root
-unplaced	mannequin		no accepted parent reaches a root
-unplaced	manner-of-speaking		no accepted parent reaches a root
-unplaced	mar		no accepted parent reaches a root
 unplaced	mars		no accepted parent reaches a root
-unplaced	matrix	array-data-structure data-structure	no accepted parent reaches a root
-unplaced	maximum		no accepted parent reaches a root
-unplaced	menace		no accepted parent reaches a root
-unplaced	middle		no accepted parent reaches a root
-unplaced	middleman		no accepted parent reaches a root
-unplaced	midnight		no accepted parent reaches a root
-unplaced	mile		no accepted parent reaches a root
-unplaced	minimum		no accepted parent reaches a root
-unplaced	minute		no accepted parent reaches a root
-unplaced	mole.attribute		no accepted parent reaches a root
 unplaced	molecule		no accepted parent reaches a root
-unplaced	monarchy		no accepted parent reaches a root
 unplaced	moon		no accepted parent reaches a root
-unplaced	morning		no accepted parent reaches a root
-unplaced	morsel		no accepted parent reaches a root
 unplaced	motivation		no accepted parent reaches a root
-unplaced	mushroom-food		no accepted parent reaches a root
-unplaced	natural-spring		no accepted parent reaches a root
-unplaced	nature.object		no accepted parent reaches a root
-unplaced	nature.person		no accepted parent reaches a root
 unplaced	necessity		no accepted parent reaches a root
-unplaced	negotiation		no accepted parent reaches a root
-unplaced	network		no accepted parent reaches a root
-unplaced	night		no accepted parent reaches a root
-unplaced	node		no accepted parent reaches a root
-unplaced	norm		no accepted parent reaches a root
-unplaced	north		no accepted parent reaches a root
-unplaced	notice.communication		no accepted parent reaches a root
-unplaced	nowadays		no accepted parent reaches a root
-unplaced	nut-fastener		no accepted parent reaches a root
-unplaced	occasion		no accepted parent reaches a root
-unplaced	ocean.quantity		no accepted parent reaches a root
-unplaced	old-age		no accepted parent reaches a root
-unplaced	one-fourth		no accepted parent reaches a root
-unplaced	one-half		no accepted parent reaches a root
-unplaced	opposite		no accepted parent reaches a root
-unplaced	orientation		no accepted parent reaches a root
-unplaced	output		no accepted parent reaches a root
-unplaced	ownership		no accepted parent reaches a root
-unplaced	page		no accepted parent reaches a root
-unplaced	pain		no accepted parent reaches a root
-unplaced	parking		no accepted parent reaches a root
-unplaced	part		no accepted parent reaches a root
-unplaced	past		no accepted parent reaches a root
-unplaced	pattern		no accepted parent reaches a root
-unplaced	pause		no accepted parent reaches a root
-unplaced	peel		no accepted parent reaches a root
-unplaced	percentage		no accepted parent reaches a root
-unplaced	period.time		no accepted parent reaches a root
-unplaced	phase		no accepted parent reaches a root
 unplaced	phenomenon		no accepted parent reaches a root
-unplaced	pity		no accepted parent reaches a root
-unplaced	placement		no accepted parent reaches a root
-unplaced	plot.communication		no accepted parent reaches a root
-unplaced	point-of-view		no accepted parent reaches a root
-unplaced	poser		no accepted parent reaches a root
-unplaced	precondition		no accepted parent reaches a root
-unplaced	predilection		no accepted parent reaches a root
-unplaced	presidency		no accepted parent reaches a root
-unplaced	pressure		no accepted parent reaches a root
-unplaced	principle		no accepted parent reaches a root
-unplaced	prize		no accepted parent reaches a root
-unplaced	probability		no accepted parent reaches a root
-unplaced	probe		no accepted parent reaches a root
-unplaced	product.phenomenon		no accepted parent reaches a root
-unplaced	projection		no accepted parent reaches a root
-unplaced	projection.communication		no accepted parent reaches a root
-unplaced	proportion		no accepted parent reaches a root
-unplaced	pupil		no accepted parent reaches a root
-unplaced	quarter.time		no accepted parent reaches a root
-unplaced	racism		no accepted parent reaches a root
-unplaced	railway-line		no accepted parent reaches a root
-unplaced	rake		no accepted parent reaches a root
-unplaced	reaction		no accepted parent reaches a root
-unplaced	reaction.phenomenon		no accepted parent reaches a root
-unplaced	rear		no accepted parent reaches a root
-unplaced	reception	broadcasting	no accepted parent reaches a root
-unplaced	record-album		no accepted parent reaches a root
-unplaced	record.quantity		no accepted parent reaches a root
-unplaced	reference-point		no accepted parent reaches a root
-unplaced	refuge		no accepted parent reaches a root
-unplaced	reign		no accepted parent reaches a root
-unplaced	release		no accepted parent reaches a root
-unplaced	relevance		no accepted parent reaches a root
-unplaced	remainder		no accepted parent reaches a root
-unplaced	republic		no accepted parent reaches a root
-unplaced	residual		no accepted parent reaches a root
-unplaced	respite		no accepted parent reaches a root
-unplaced	response		no accepted parent reaches a root
-unplaced	responsibility		no accepted parent reaches a root
-unplaced	restraint.cognition		no accepted parent reaches a root
-unplaced	restriction		no accepted parent reaches a root
-unplaced	right-to-vote		no accepted parent reaches a root
-unplaced	risk		no accepted parent reaches a root
-unplaced	root		no accepted parent reaches a root
-unplaced	rule.cognition		no accepted parent reaches a root
-unplaced	rule.time		no accepted parent reaches a root
-unplaced	sarcasm		no accepted parent reaches a root
-unplaced	scale-of-measurement		no accepted parent reaches a root
-unplaced	school-term		no accepted parent reaches a root
-unplaced	score		no accepted parent reaches a root
-unplaced	season		no accepted parent reaches a root
-unplaced	sec		no accepted parent reaches a root
-unplaced	sequence		no accepted parent reaches a root
-unplaced	share		no accepted parent reaches a root
-unplaced	shift		no accepted parent reaches a root
-unplaced	short-circuit		no accepted parent reaches a root
-unplaced	signature		no accepted parent reaches a root
 unplaced	signified		no accepted parent reaches a root
-unplaced	skin-cream		no accepted parent reaches a root
-unplaced	slant		no accepted parent reaches a root
 unplaced	slice		no accepted parent reaches a root
-unplaced	slot		no accepted parent reaches a root
-unplaced	soprano		no accepted parent reaches a root
-unplaced	south		no accepted parent reaches a root
-unplaced	sovereign		no accepted parent reaches a root
-unplaced	springtime		no accepted parent reaches a root
-unplaced	standard		no accepted parent reaches a root
-unplaced	state-of-matter		no accepted parent reaches a root
 unplaced	strip		no accepted parent reaches a root
-unplaced	stunt-man		no accepted parent reaches a root
-unplaced	style		no accepted parent reaches a root
 unplaced	subject		no accepted parent reaches a root
-unplaced	summer		no accepted parent reaches a root
 unplaced	sun		no accepted parent reaches a root
-unplaced	sunday		no accepted parent reaches a root
-unplaced	supply		no accepted parent reaches a root
-unplaced	surrender		no accepted parent reaches a root
-unplaced	syllable	character-set	no accepted parent reaches a root
-unplaced	sympathy		no accepted parent reaches a root
-unplaced	system		no accepted parent reaches a root
-unplaced	system-instrumentality		no accepted parent reaches a root
-unplaced	tabular-array		no accepted parent reaches a root
-unplaced	tariff		no accepted parent reaches a root
-unplaced	tax		no accepted parent reaches a root
-unplaced	teacher		no accepted parent reaches a root
-unplaced	tear		no accepted parent reaches a root
-unplaced	telephone-line		no accepted parent reaches a root
-unplaced	television-system		no accepted parent reaches a root
-unplaced	tempo		no accepted parent reaches a root
-unplaced	tendency		no accepted parent reaches a root
-unplaced	term		no accepted parent reaches a root
-unplaced	terminology		no accepted parent reaches a root
-unplaced	theoretical-account		no accepted parent reaches a root
-unplaced	tilt		no accepted parent reaches a root
-unplaced	time-of-day		no accepted parent reaches a root
-unplaced	time-period		no accepted parent reaches a root
-unplaced	time-slot		no accepted parent reaches a root
-unplaced	title		no accepted parent reaches a root
-unplaced	title-of-respect		no accepted parent reaches a root
-unplaced	tonality		no accepted parent reaches a root
-unplaced	tone		no accepted parent reaches a root
-unplaced	track		no accepted parent reaches a root
-unplaced	traction		no accepted parent reaches a root
-unplaced	trainer		no accepted parent reaches a root
-unplaced	trial		no accepted parent reaches a root
-unplaced	twelve		no accepted parent reaches a root
-unplaced	twilight		no accepted parent reaches a root
-unplaced	unit		no accepted parent reaches a root
 unplaced	universe		no accepted parent reaches a root
-unplaced	upgrade		no accepted parent reaches a root
-unplaced	variant		no accepted parent reaches a root
 unplaced	venus		no accepted parent reaches a root
-unplaced	version		no accepted parent reaches a root
-unplaced	volume		no accepted parent reaches a root
-unplaced	wallop		no accepted parent reaches a root
-unplaced	web		no accepted parent reaches a root
-unplaced	week		no accepted parent reaches a root
-unplaced	weekend		no accepted parent reaches a root
 unplaced	west		no accepted parent reaches a root
-unplaced	wilderness-trail		no accepted parent reaches a root
-unplaced	winter		no accepted parent reaches a root
-unplaced	wonder		no accepted parent reaches a root
-unplaced	word		no accepted parent reaches a root
-unplaced	year		no accepted parent reaches a root
-unplaced	youth		no accepted parent reaches a root
-unplaced	zero		no accepted parent reaches a root

@@ -28,7 +28,7 @@ alluvial-soil soil
 alp mountain
 alpine-glacier glacier
 alps mountain-range
-altitude geographic-coordinate
+altitude '*'
 altocumulus cumulus
 altostratus stratus
 amazon-river river
@@ -73,7 +73,7 @@ aurora natural-event
 aurora-australis aurora
 aurora-borealis aurora
 australian-continent continent
-autumnal-equinox equinox
+autumnal-equinox equinox time
 avalanche natural-event
 axial-tilt angle
 azimuthal-equidistant-projection azimuthal-projection
@@ -127,7 +127,6 @@ canyon ravine
 canyonside slope
 cape coast
 carboniferous geological-period
-cardinal-compass-point compass-point
 caribbean-island island
 cartesian-coordinate-system coordinate-system
 cartogram thematic-map
@@ -183,7 +182,7 @@ cold-weather weather
 collection '*'
 compass instrument
 compass-card magnetic-compass
-compass-point concept
+compass-point direction spatial-relation
 compass-rose symbol
 concept '*'
 condensation natural-event
@@ -204,7 +203,7 @@ convergent-boundary plate-boundary
 coordinate-system concept
 coordinated-universal-time time-standard
 coral-reef reef
-coriolis-force concept
+coriolis-force concept force
 crack '*'
 crag cliff
 crater natural-depression
@@ -222,6 +221,7 @@ dale valley
 data-processing '*'
 database '*'
 dataset '*'
+day '*'
 daylight-saving-time practice time-standard
 dead-reckoning navigation
 dead-sea lake
@@ -241,6 +241,8 @@ dictionary '*'
 differential-gps global-positioning-system gnss-augmentation
 digital-elevation-model model
 direct-tide high-tide
+direction '*'
+distance '*'
 distributary stream
 ditch waterway
 divergent-boundary plate-boundary
@@ -255,8 +257,6 @@ draught '*'
 drizzle precipitation rain
 drought condition
 dry-season season
-due-east cardinal-compass-point
-due-west cardinal-compass-point
 dune hill natural-ridge
 dust-devil whirlwind
 dust-storm windstorm
@@ -275,10 +275,10 @@ earth-science '*'
 earth-sphere earth-structure layer
 earth-structure structure
 earthquake '*'
-east-by-north compass-point
-east-by-south compass-point
-east-northeast compass-point
-east-southeast compass-point
+east-by-north compass-point spatial-direction
+east-by-south compass-point spatial-direction
+east-northeast compass-point spatial-direction
+east-southeast compass-point spatial-direction
 east-wind wind
 eastern-hemisphere hemisphere
 ebbtide tide
@@ -295,9 +295,9 @@ endogeny geological-phenomenon
 endonym place-name
 engineering '*'
 environment '*'
-eon geological-time-division
+eon geological-time-division time
 epicenter geographic-point
-epoch geological-time-division
+epoch geological-time-division time
 epsg-geodetic-parameter-dataset dataset
 equal-area-projection map-projection
 equator geographic-line
@@ -340,6 +340,7 @@ flurry snow
 fohn wind
 folium geological-formation
 foothill hill natural-elevation
+force '*'
 ford body-of-water
 foreland land
 foreshock tremor
@@ -356,6 +357,7 @@ frigid-zone climatic-zone
 frost-heave geological-phenomenon
 fucoid fossil
 'fuller'"'"'s-earth' soil
+function '*'
 gale wind
 galileo-navigation-system global-navigation-satellite-system
 gall-peters-projection cylindrical-projection
@@ -367,7 +369,7 @@ geocoding activity data-processing
 geocoding-system coordinate-system
 geodesy geophysics
 geodetic-datum spatial-reference-system
-geodetic-network collection
+geodetic-network collection system
 geographic-coordinate quantity
 geographic-coordinate-system coordinate-system
 geographic-data information
@@ -386,16 +388,16 @@ geologic-time-scale time-standard
 geological-abrasion geological-erosion
 geological-cataclysm geological-phenomenon
 geological-eon geological-time-division
-geological-era geological-time-division
+geological-era geological-time-division time
 geological-erosion geological-process
 geological-fault crack geological-formation
 geological-formation physical-object
 geological-heave event
 geological-horizon layer
-geological-period geological-time-division
+geological-period geological-time-division time
 geological-phenomenon natural-event
 geological-process process
-geological-time-division quantity
+geological-time-division time-period
 geological-trough natural-depression
 geology earth-science
 geomagnetic-pole geographic-point
@@ -436,7 +438,7 @@ gravimetry activity
 gravity-anomaly quantity
 great-barrier-reef coral-reef
 great-circle line
-great-circle-distance quantity
+great-circle-distance distance quantity
 great-rift-valley valley
 greenhouse-effect natural-event
 greenland island
@@ -563,7 +565,7 @@ lava magma
 layer '*'
 leaf-mold soil
 leap-second time-standard
-leap-year quantity
+leap-year year
 ledge natural-ridge
 leeward-tide tide
 levanter east-wind
@@ -603,7 +605,7 @@ magnetosphere region
 mainland land
 map '*'
 map-legend document
-map-projection method
+map-projection function method
 map-scale ratio
 'mare'"'"'s-tail' cirrus
 mariana-trench oceanic-trench
@@ -663,7 +665,7 @@ natural-elevation geological-formation
 natural-event '*'
 natural-object '*'
 natural-ridge natural-elevation
-natural-spring geographical-feature geological-formation
+natural-spring '*'
 nautical-chart chart
 naval-chart chart
 navigation activity skill
@@ -678,24 +680,23 @@ nile river
 nimbostratus cloud
 nimbus cloud
 'noah'"'"'s-flood' flood
-north cardinal-compass-point
 north-america continent
 north-american-datum geodetic-datum
-north-by-east compass-point
-north-by-west compass-point
+north-by-east compass-point spatial-direction
+north-by-west compass-point spatial-direction
 north-equatorial-current equatorial-current
-north-northeast compass-point
-north-northwest compass-point
+north-northeast compass-point spatial-direction
+north-northwest compass-point spatial-direction
 north-pole geographic-pole
 north-wind wind
-northeast compass-point
-northeast-by-east compass-point
-northeast-by-north compass-point
+northeast compass-point spatial-direction
+northeast-by-east compass-point spatial-direction
+northeast-by-north compass-point spatial-direction
 northeaster storm
 northern-hemisphere hemisphere
-northwest compass-point
-northwest-by-north compass-point
-northwest-by-west compass-point
+northwest compass-point spatial-direction
+northwest-by-north compass-point spatial-direction
+northwest-by-west compass-point spatial-direction
 northwest-wind wind
 oasis geographical-area geographical-feature
 oblate-spheroid shape
@@ -876,7 +877,7 @@ seamount mountain natural-elevation
 seaquake earthquake
 seashore '*'
 seaside seashore
-season event
+season '*'
 sediment '*'
 sediment-saltation process
 sedimentary-clay soil
@@ -896,7 +897,7 @@ shingling rock-material
 shoal landform sandbank
 shore geological-formation
 shore-boulder boulder
-sidereal-day quantity
+sidereal-day day
 sidereal-time time-standard
 silt sediment soil
 silurian geological-period
@@ -922,34 +923,36 @@ solstice natural-event
 sonar instrument
 sonic-depth-finder depth-finder
 sound '*'
-south cardinal-compass-point
 south-america continent
-south-by-east compass-point
-south-by-west compass-point
+south-by-east compass-point spatial-direction
+south-by-west compass-point spatial-direction
 south-equatorial-current equatorial-current
 south-pole geographic-pole
 south-sea-islands island
-south-southeast compass-point
-south-southwest compass-point
+south-southeast compass-point spatial-direction
+south-southwest compass-point spatial-direction
 south-wind wind
-southeast compass-point
-southeast-by-east compass-point
-southeast-by-south compass-point
+southeast compass-point spatial-direction
+southeast-by-east compass-point spatial-direction
+southeast-by-south compass-point spatial-direction
 southeaster wind
 southern-hemisphere hemisphere
 southern-ocean ocean
-southwest compass-point
-southwest-by-south compass-point
-southwest-by-west compass-point
+southwest compass-point spatial-direction
+southwest-by-south compass-point spatial-direction
+southwest-by-west compass-point spatial-direction
 southwester wind
 spatial-database database information
+spatial-direction '*'
 spatial-reference-system coordinate-system
+spatial-relation '*'
 speleology geology
 spherical-coordinate-system coordinate-system
 spring-tide high-tide
 sprite-lightning atmospheric-electricity
 squall wind
 squall-line cold-front
+standard '*'
 star-chart map
 steppe grassland plain
 stereographic-projection azimuthal-projection
@@ -972,7 +975,7 @@ subduction geological-process
 subsoil soil
 substance '*'
 subtropics climatic-zone
-summer-solstice solstice
+summer-solstice solstice time
 sunset natural-event
 supercontinent continent landmass
 supertwister tornado
@@ -982,6 +985,7 @@ surveying activity
 swale geological-trough
 swamp wetland
 symbol '*'
+system '*'
 taiga biome habitat
 tailwind wind
 talus geological-formation gravel
@@ -1017,7 +1021,9 @@ tide-table document
 tideland seashore shore
 tidewater coastal-plain
 tideway water-channel
-time-standard concept
+time '*'
+time-period '*'
+time-standard standard
 time-zone geographical-area
 tool '*'
 topographic-map map
@@ -1034,7 +1040,7 @@ tramontane north-wind
 transform-fault geological-fault plate-boundary
 transit-zone geographical-area
 transverse-mercator-projection cylindrical-projection
-travel-distance quantity
+travel-distance distance quantity
 travel-route path
 tremor earthquake
 triangulation surveying
@@ -1047,7 +1053,7 @@ tropic-of-capricorn circle-of-latitude
 tropical-climate climate
 tropical-cyclone cyclone
 tropical-rainforest biome
-tropical-year quantity
+tropical-year year
 tropics climatic-zone
 troposphere atmospheric-layer
 tsunami calamity wave
@@ -1068,7 +1074,7 @@ upwelling ocean-current
 utm-coordinate-system spatial-reference-system
 valley '*'
 veld grassland
-vernal-equinox equinox
+vernal-equinox equinox time
 vertebrate-paleontology paleozoology
 vertical-circle place
 vertical-datum geodetic-datum
@@ -1111,10 +1117,10 @@ weathering geological-process
 web-map map
 web-mercator-projection mercator-projection
 well-known-text geographic-data-format
-west-by-north compass-point
-west-by-south compass-point
-west-northwest compass-point
-west-southwest compass-point
+west-by-north compass-point spatial-direction
+west-by-south compass-point spatial-direction
+west-northwest compass-point spatial-direction
+west-southwest compass-point spatial-direction
 west-wind wind
 westerlies prevailing-wind
 western-hemisphere hemisphere
@@ -1131,7 +1137,8 @@ wind '*'
 wind-rose artifact weather-map
 windstorm storm
 winkel-tripel-projection map-projection
-winter-solstice solstice
+winter-solstice solstice time
 world-geodetic-system geodetic-datum
 wormcast fossil
 xenolith rock
+year '*'

@@ -89,6 +89,7 @@ ambiguity uncertainty
 ambulance '*'
 ammonia '*'
 ammunition artifact
+amount function
 amphetamine '*'
 amphibian '*'
 amplifier '*'
@@ -626,7 +627,7 @@ chamois-leather leather
 champagne sparkling-wine
 champion athlete winner
 chandelier '*'
-change number
+change number numeric-quantity
 channel landform
 channel-capacity '*'
 chaos '*'
@@ -636,7 +637,7 @@ character '*'
 character-data-type data-type
 character-encoding data-type
 character-string data-type
-characteristic number
+characteristic number numeric-quantity
 chard leaf stalk vegetable
 charger appliance household-appliance
 charity '*'
@@ -887,7 +888,7 @@ continuous-integration '*'
 contract '*'
 contraction '*'
 contradiction '*'
-contrast number
+contrast number numeric-quantity
 contribution gift
 control-flow '*'
 control-stick '*'
@@ -1518,7 +1519,7 @@ floor option
 flour food powder
 flower plant
 flowerpot '*'
-fluctuation function number
+fluctuation function number numeric-quantity
 flue '*'
 fluid '*'
 flute woodwind
@@ -1557,7 +1558,7 @@ forum public-square
 fossil '*'
 fountain '*'
 fox '*'
-fraction number
+fraction number numeric-quantity
 fracture injury
 frame-buffer '*'
 franchise occupation
@@ -1590,7 +1591,7 @@ fudge '*'
 fuel chemical
 full-text-search information-retrieval
 fun '*'
-function '*'
+function relation
 functional-programming declarative-programming
 fundamental-law structure
 funeral '*'
@@ -1953,12 +1954,12 @@ impact '*'
 imperative-programming computer-programming programming
 implication '*'
 import '*'
-importance function
+importance amount
 imposter '*'
 in-memory-database database-management-system
 incense '*'
 income '*'
-increment number
+increment number numeric-quantity
 incubator '*'
 index finger
 indigence '*'
@@ -2162,6 +2163,7 @@ landmine '*'
 landowner '*'
 lane '*'
 language '*'
+language-unit '*'
 lantern '*'
 lanyard '*'
 lap '*'
@@ -2238,7 +2240,7 @@ lighting '*'
 limb '*'
 lime citrus-fruit
 limestone '*'
-limit '*'
+limit relation
 linear-search information-retrieval
 linen '*'
 lingerie underwear
@@ -2638,6 +2640,7 @@ np-completeness '*'
 nuclear-reactor '*'
 null-pointer '*'
 number '*'
+numeric-quantity '*'
 nun monk
 nurse '*'
 nursery room
@@ -2787,7 +2790,7 @@ parliament legislature
 parser algorithm software
 parsing '*'
 part '*'
-partial-order '*'
+partial-order relation
 particle physical-object
 partnership '*'
 party person
@@ -3050,7 +3053,7 @@ program-assertion program-statement statement
 program-constant function program-variable
 program-expression '*'
 program-interpreter computer-program software
-program-invariant '*'
+program-invariant relation
 program-loader software
 program-module '*'
 program-statement control-flow
@@ -3230,6 +3233,7 @@ regulator function
 rehabilitation '*'
 rehearsal '*'
 rein '*'
+relation '*'
 relational-database database
 relational-database-management-system database-management-system
 relational-join '*'
@@ -3405,7 +3409,7 @@ scone bread
 scoop '*'
 scooter '*'
 scope '*'
-score function
+score amount
 scoreboard '*'
 scored-goal failure
 scouring-pad tool
@@ -3681,6 +3685,7 @@ spam-email message
 sparkling-wine wine
 sparql '*'
 sparql-endpoint computer-server software
+spatial-relation '*'
 speaker person
 spear sporting-goods
 specialist worker
@@ -3985,7 +3990,7 @@ tissue '*'
 tissue-paper paper
 titanium '*'
 title-bar '*'
-title-of-respect sign
+title-of-respect language-unit sign
 toast bread
 toaster appliance household-appliance
 tobacco commodity produce
@@ -4048,7 +4053,7 @@ transaction-durability '*'
 transaction-isolation '*'
 transformer '*'
 transistor '*'
-transitive-closure '*'
+transitive-closure relation
 transitive-reduction '*'
 transmission '*'
 transmission-control-protocol '*'

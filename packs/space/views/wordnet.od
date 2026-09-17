@@ -68,7 +68,7 @@ aerolite meteorite
 affair relationship
 affiliation state
 affinity attraction
-affinity.relation '*'
+affinity.relation relation
 affirmation act
 afternoon time-period
 age attribute
@@ -101,7 +101,7 @@ album book-copy
 alcohol drink drug
 alfalfa food
 alimony outgo
-alliance '*'
+alliance relation
 allotment possession
 allowance possession
 alloy part substance
@@ -122,6 +122,7 @@ ambulance car
 amendment information
 ammonia compound
 ammunition artifact
+amount '*'
 amphetamine drug
 amphibian vertebrate
 amplifier equipment
@@ -358,7 +359,7 @@ bassinet furniture
 bassoon woodwind
 baster cookware
 bat mammal
-batch '*'
+batch indefinite-quantity
 bath-mat linen
 bath-towel linen towel
 bathrobe robe
@@ -667,6 +668,7 @@ card paper
 card-hand collection
 cardamom seasoning
 cardigan sweater
+cardinal-compass-point spatial-direction
 cardoon vegetable
 care repair
 career occupation
@@ -923,7 +925,7 @@ coincidence chance-event
 coke fuel
 colander strainer
 cold disease
-coldness agent attribute
+coldness agent amount attribute
 collapse event
 collar artifact
 colleague peer
@@ -947,7 +949,7 @@ comic-strip cartoon
 coming-together act
 command state
 commemoration recognition
-commencement '*'
+commencement amount
 commerce transaction
 commercial-enterprise commerce
 commission fee
@@ -963,7 +965,7 @@ community group
 compact car
 companionship friendship
 company institution
-comparison '*'
+comparison relation
 compartment empty-space
 compassion attribute
 competence ability
@@ -1060,8 +1062,8 @@ contract legal-document
 contract-condition information
 contraction diminution
 contradiction information
-contrary '*'
-contrast '*'
+contrary relation
+contrast relation
 contribution act
 control mechanism
 control-panel device
@@ -1098,7 +1100,7 @@ corner place
 cornet brass-instrument
 cornice molding
 correction act
-correlation '*'
+correlation relation
 correspondence mail
 corruption act
 corsage decoration group
@@ -1208,7 +1210,7 @@ cumin seed
 cup container tableware
 cupboard structure
 cupcake cake
-cupful '*'
+cupful indefinite-quantity
 curate leader
 curl hair
 curling-iron household-appliance
@@ -1249,13 +1251,13 @@ data-chart information
 date fruit
 daughter child
 dawn time-of-day
-day '*'
+day time-unit
 day-of-the-month day
 daycare childcare
 daylight natural-event
 daze condition
 dead-body natural-object
-deadline '*'
+deadline amount
 deal act
 dearth lack
 death change
@@ -1280,6 +1282,7 @@ default-option option
 defect state
 defendant person
 deficit insufficiency
+definite-quantity amount
 definition explanation
 defroster device
 degree attribute
@@ -1474,8 +1477,8 @@ dry-cleaning cleaning
 dryer appliance
 drywall artifact
 duck bird
-due-east '*'
-due-west '*'
+due-east cardinal-compass-point
+due-west cardinal-compass-point
 duffel-bag bag
 duke leader
 dumbbell equipment
@@ -1506,7 +1509,7 @@ echo attribute
 ecliptic place
 economic-consumption demand.process
 economic-system system
-economic-value '*'
+economic-value amount
 economics social-science
 economist scientist
 economy trait virtue
@@ -1587,7 +1590,7 @@ equation information
 equatorial-telescope telescope
 equilibrium situation
 equinoctial-point place
-equinox attribute
+equinox time
 equipment artifact
 era time-period
 eraser artifact
@@ -1595,7 +1598,7 @@ erosion condition
 error idea
 escalator stairway
 escape act
-escape-velocity '*'
+escape-velocity relation
 escort person
 espresso-maker coffee-maker
 esprit-de-corps disposition
@@ -1827,7 +1830,7 @@ fool person
 foot body-part
 football game sport
 footboard panel
-footstep '*'
+footstep indefinite-quantity
 footwear artifact
 foray attack
 force degree
@@ -1848,10 +1851,10 @@ fortune wealth
 forum meeting
 fossil physical-object
 foundation institution
-foundation.relation '*'
+foundation.relation relation
 fountain fixture
 fox mammal
-fraction '*'
+fraction numeric-quantity
 fracture injury
 fragment '*'
 franchise organization
@@ -1866,7 +1869,7 @@ freeze act
 freezer electric-refrigerator
 freight transportation
 french-horn brass-instrument
-frequency '*'
+frequency relation
 frequency-band collection
 freshman student
 friend peer
@@ -1889,7 +1892,7 @@ fuel-cell device
 fuel-oil fuel oil
 full-moon lunar-phase
 fun activity
-function '*'
+function relation
 functioning process
 fund standard
 fundamental-law legal-document
@@ -1902,7 +1905,7 @@ furnace enclosure
 furniture artifact
 fury anger
 futon mattress
-future attribute
+future time
 gadget device
 gaiter leggings
 galaxy collection
@@ -2017,7 +2020,7 @@ governor leader
 gown outerwear
 grace carriage
 gradation rank
-grade '*'
+grade spatial-relation
 graduated-cylinder instrument
 grain foodstuff
 grain-meal foodstuff
@@ -2160,7 +2163,7 @@ headlamp light
 headline line-of-text
 headphone transducer
 headquarters office
-headroom '*'
+headroom spatial-relation
 headset headphone
 health wellbeing
 health-care tending
@@ -2182,7 +2185,7 @@ helicopter aircraft
 hell cognition
 helmet headdress
 help-desk assist
-helping '*'
+helping indefinite-quantity
 hemisphere region
 hen chicken
 herb seasoning
@@ -2250,7 +2253,7 @@ hot-chocolate drink
 hot-plate kitchen-appliance
 hot-sauce sauce
 hotel building
-hour '*'
+hour time-unit
 hour-angle angle
 hourglass instrument
 house building dwelling
@@ -2301,7 +2304,7 @@ immigration migration
 impact event
 imperativeness need
 impetus force
-implication '*'
+implication relation
 import commodity
 importance worth
 imposter wrongdoer
@@ -2317,6 +2320,7 @@ income possession
 increase process
 increment magnitude
 incubator apparatus
+indefinite-quantity amount
 indemnity safety
 index finger
 indication information
@@ -2476,7 +2480,7 @@ kin group
 king sovereign
 king-card playing-card
 kingdom monarchy
-kinship '*'
+kinship relation
 kit equipment
 kitchen room
 kitchen-appliance household-appliance
@@ -2521,6 +2525,7 @@ landowner person
 landscaping gardening
 lane artifact
 language information
+language-unit part
 lantern device
 lanyard artifact
 lap thigh
@@ -2612,7 +2617,7 @@ lime citrus-fruit
 lime-juice juice
 limestone stone
 limit place
-limit.quantity '*'
+limit.quantity indefinite-quantity
 limitation disadvantage
 line cognition
 line-formation group
@@ -2622,7 +2627,7 @@ lineation place
 linen commodity
 liner artifact
 lingerie underwear
-linguistic-context part
+linguistic-context language-unit
 linguistics science
 link fastener
 linoleum building-material
@@ -2726,7 +2731,7 @@ mailman employee
 mainstream belief
 maize grass
 major-planet celestial-body
-majority '*'
+majority amount
 makeover beauty-treatment
 makeup cosmetic
 maksutov-telescope reflecting-telescope
@@ -2855,7 +2860,7 @@ middle concept
 middleman representative
 midnight time-of-day
 migration act
-mile '*'
+mile indefinite-quantity
 military-action act
 military-control act
 military-operation activity
@@ -2882,7 +2887,7 @@ minister administrator
 ministry administrative-division
 minor-planet celestial-body
 minority number
-minute '*'
+minute time-unit
 miracle event
 mirror device
 misery adversity
@@ -2916,7 +2921,7 @@ moon '*'
 mop artifact
 morale condition
 morning time-period
-morsel '*'
+morsel indefinite-quantity
 mortar building-material
 mortgage possession
 mosaic fine-art
@@ -2978,7 +2983,7 @@ myth fiction
 nadir place
 nail fastener
 nail-polish coating cosmetic
-name part
+name language-unit
 napkin table-linen
 napkin-ring hoop
 narrative information
@@ -3036,7 +3041,7 @@ nonsense information
 noodle pasta
 norm standard
 normal cognition
-north '*'
+north cardinal-compass-point
 nose organ
 note indication
 notebook book-copy
@@ -3049,13 +3054,14 @@ noun word
 nova star
 novel fiction
 novelty artifact
-nowadays attribute
+nowadays time
 nozzle artifact
 nuance meaning
 nuclear-reactor apparatus
 number magnitude
 number-one-wood golf-club
 numeral symbol
+numeric-quantity definite-quantity
 nun person
 nurse professional
 nursery bedroom
@@ -3076,11 +3082,11 @@ observation cognition
 observatory building
 obstacle structure
 ocarina musical-instrument
-occasion '*'
+occasion amount
 occlusion structure
 occupation activity
 ocean body-of-water
-ocean.quantity '*'
+ocean.quantity indefinite-quantity
 octopus mollusc
 odometer instrument
 oeuvre end-product
@@ -3113,7 +3119,7 @@ opinion information
 opinion-poll thinking
 opportunity state
 opposing-view opinion
-opposite '*'
+opposite relation
 opposition political-party
 optical-fiber fiber
 optical-instrument instrument
@@ -3135,7 +3141,7 @@ organism physical-object
 organization group
 organizer device
 orgy celebration
-orientation '*'
+orientation spatial-direction
 origin attribute
 orion diffuse-nebula
 ornamental-fountain structure
@@ -3149,7 +3155,7 @@ outerwear clothing
 outfit clothing
 outgo possession
 outline summary
-output '*'
+output indefinite-quantity
 outside surface
 oven kitchen-appliance
 overall clothing
@@ -3158,7 +3164,7 @@ overhead-projector projector
 overview summary
 owl bird
 owner businessman
-ownership '*'
+ownership relation
 oxygen chemical-element fluid
 oyster mollusc
 pace attribute
@@ -3217,12 +3223,12 @@ parcel act
 pardon warrant
 parent ancestor
 park region
-parking '*'
+parking spatial-relation
 parliament legislature
 parole promise
 paroxysm trouble
 parsnip vegetable
-part '*'
+part relation
 partial-eclipse event
 participant peer
 particle natural-object
@@ -3237,7 +3243,7 @@ passion feeling
 passion-fruit fruit
 passport legal-document
 password identification
-past attribute
+past time
 pasta substance
 pasta-sauce sauce
 pastel attribute
@@ -3257,7 +3263,7 @@ patriot person
 patriotism loyalty
 patrol military-unit
 pattern exemplar
-pause '*'
+pause amount
 paving artifact
 payment commerce
 pea vegetable
@@ -3305,7 +3311,7 @@ perigee periapsis
 perihelion periapsis
 perijove periapsis
 period symbol
-period.time '*'
+period.time amount
 periodical publication
 periselene periapsis
 permission information
@@ -3382,7 +3388,7 @@ pitahaya fruit
 pitch attribute
 pity trouble
 place physical-object
-placement '*'
+placement spatial-relation
 plaintiff person
 plan idea
 plane cutter hand-tool
@@ -3449,7 +3455,7 @@ political-campaign contest
 political-orientation attitude
 political-party organization
 politician leader
-politics '*'
+politics relation
 poll work
 polo-shirt shirt
 pomegranate fruit
@@ -3470,7 +3476,7 @@ portland-cement cement
 portrait image
 poser assistant
 position attitude
-possession '*'
+possession relation
 possibility option
 postage token
 postage-meter instrument
@@ -3550,7 +3556,7 @@ privation condition
 privilege asset
 prize gift
 prize-ring boxing-ring
-probability '*'
+probability amount
 probe thinking
 problem topic
 procedure activity
@@ -3691,7 +3697,7 @@ rainbow curved-shape
 raincoat coat
 raise increment
 raisin dried-fruit
-rake '*'
+rake spatial-relation
 rake-tool tool
 rally group
 ram computer-memory
@@ -3709,7 +3715,7 @@ rape crime
 raspberry berry stone-fruit
 rat mammal
 ratchet mechanism
-ratio '*'
+ratio relation
 rationality condition
 rattle plaything
 raw-milk milk
@@ -3738,7 +3744,7 @@ reconnaissance-satellite satellite
 record accomplishment
 record-album storage-medium
 record-player machine
-record.quantity '*'
+record.quantity numeric-quantity
 recorder musical-instrument
 recording storage-device
 recovery act
@@ -3775,10 +3781,11 @@ rehearsal practice-session
 reign historic-period
 rein artifact
 rejection act
+relation '*'
 relationship state
 relative person
 release act
-relevance '*'
+relevance relation
 reliance state
 relief comfort
 religion belief virtue
@@ -3787,7 +3794,7 @@ religious-service activity
 relish perception
 relish-condiment seasoning
 reluctance disposition
-remainder '*'
+remainder numeric-quantity
 remark information
 remedy medication
 remote-control device
@@ -3852,7 +3859,7 @@ reward information
 rhetoric humanities
 rhinestone mineral
 rhubarb vegetable
-rhythm attribute
+rhythm time
 rib bone
 ribbon artifact
 ribbon-bow decoration
@@ -4012,7 +4019,7 @@ scone bread
 scoop ladle
 scooter container vehicle
 scope magnitude
-score '*'
+score numeric-quantity
 scoreboard signboard
 scored-goal accomplishment
 scouring-pad artifact
@@ -4041,7 +4048,7 @@ seasoning fixings
 seat furniture
 seating-place region
 seaweed microorganism
-sec '*'
+sec time-unit
 second rank
 secrecy trait
 secret information
@@ -4157,10 +4164,10 @@ shuttlecock equipment
 side surface
 side-dish prepared-dish
 sideboard furniture
-sidereal-day sidereal-time
+sidereal-day sidereal-time time-unit
 sidereal-hour hour sidereal-time
-sidereal-month sidereal-time
-sidereal-time attribute
+sidereal-month sidereal-time time-unit
+sidereal-time time
 sidereal-year sidereal-time time-period
 siderite meteorite
 sidewalk artifact
@@ -4278,7 +4285,7 @@ soldier worker
 solicitation request
 solidarity attribute
 solo activity
-solstice attribute
+solstice time
 solution accomplishment
 soprano information
 sorghum grass
@@ -4287,7 +4294,7 @@ sound perception
 soup prepared-dish
 sour-cream cream
 soursop fruit
-south '*'
+south cardinal-compass-point
 sovereign representative
 soy bean
 soy-sauce seasoning
@@ -4304,7 +4311,9 @@ spacecraft craft-vehicle satellite
 spaceflight voyage
 spade shovel
 sparkling-wine wine
+spatial-direction spatial-relation
 spatial-extent magnitude
+spatial-relation relation
 spatula hand-tool
 speaker person
 spear weapon
@@ -4378,7 +4387,7 @@ stall shop
 stamp decorative-design
 stand table
 stand-base underside
-standard '*'
+standard system-of-measurement
 staple fastener
 stapler machine
 star celestial-body
@@ -4507,7 +4516,7 @@ superior-planet major-planet
 supermarket grocery-store
 supernova star
 supervisor leader
-supply '*'
+supply indefinite-quantity
 support assist
 support-device device
 surface place
@@ -4536,7 +4545,7 @@ swing act
 switch act
 swivel mechanism
 sword weapon
-syllable part
+syllable language-unit
 symbol signal
 sympathetic-concern feeling
 sympathy inclination
@@ -4547,6 +4556,7 @@ syringe medical-instrument
 syrup sweetener
 system group
 system-instrumentality artifact
+system-of-measurement amount
 table furniture
 table-knife knife tableware
 table-linen linen
@@ -4596,7 +4606,7 @@ tea-set tableware
 teacher professional
 teaching profession
 team organization
-tear '*'
+tear indefinite-quantity
 teddy-bear plaything
 telephone-line connector
 telephony storage-medium
@@ -4607,7 +4617,7 @@ television-system system-instrumentality
 temper feeling
 temple building
 temple-of-head facial-feature
-tempo '*'
+tempo relation
 tenant person
 tendency route
 tending work
@@ -4664,10 +4674,12 @@ tier rank
 tiger mammal
 tights hosiery
 tile slab
-tilt '*'
+tilt spatial-relation
+time attribute
 time-of-day clock-time
-time-period '*'
-time-slot '*'
+time-period amount
+time-slot amount
+time-unit amount
 timetable schedule
 tin metal
 tin-whistle recorder
@@ -4825,7 +4837,7 @@ turnip vegetable
 turntable artifact
 tutoring teaching
 tuxedo clothing
-twelve '*'
+twelve numeric-quantity
 twilight time-of-day
 twin relative
 twist event
@@ -4935,7 +4947,7 @@ volcano mountain
 volition cognition
 volleyball ball
 volleyball-net net
-volume '*'
+volume amount
 volunteer worker
 vote act
 voter citizen
@@ -5074,7 +5086,7 @@ woodwind musical-instrument
 wool fabric
 wool-fiber animal-product fiber
 worcestershire-sauce sauce
-word part
+word language-unit
 wording information
 work activity
 workbench table
@@ -5110,7 +5122,7 @@ young animal
 young-people people
 youth time-period
 zenith place
-zero '*'
+zero numeric-quantity
 zinc metal
 zipper fastener
 zodiac place

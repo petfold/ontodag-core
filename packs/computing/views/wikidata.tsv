@@ -80,6 +80,8 @@ aluminum	metal
 ambiguity	uncertainty
 ammunition	artifact
 ammunition	physical-object
+amount	function
+amount	relation
 analog-computer	computer
 analog-computer	machine
 animal	organism
@@ -416,6 +418,7 @@ bookmark	physical-object
 boolean-data-type	data-type
 boolean-data-type	primitive-data-type
 boolean-operation	function
+boolean-operation	relation
 boot	artifact
 boot	clothing
 boot	equipment
@@ -710,12 +713,14 @@ champagne	wine
 champion	athlete
 champion	winner
 change	number
+change	numeric-quantity
 channel	landform
 chapter	board-of-directors
 character-data-type	data-type
 character-encoding	data-type
 character-string	data-type
 characteristic	number
+characteristic	numeric-quantity
 chard	leaf
 chard	stalk
 chard	vegetable
@@ -723,6 +728,7 @@ charger	appliance
 charger	household-appliance
 charm	fraction
 charm	number
+charm	numeric-quantity
 charter	contract
 cheese	dairy-product
 chemical-element	chemical
@@ -911,6 +917,7 @@ consulting	service
 context-free-grammar	formal-grammar
 continuous-delivery	devops
 contrast	number
+contrast	numeric-quantity
 contribution	gift
 controlled-thesaurus	controlled-vocabulary
 cook	craftsman
@@ -1034,6 +1041,7 @@ crustacean	physical-object
 cryptographic-hash-function	algorithm
 cryptographic-hash-function	function
 cryptographic-hash-function	hash-function
+cryptographic-hash-function	relation
 crystal	chemical
 crystal	substance
 csv	data-type
@@ -1059,6 +1067,7 @@ cupboard	furniture
 cupboard	room
 cupcake	cake
 curl	function
+curl	relation
 currant	organism
 currant	physical-object
 currant	plant
@@ -1074,6 +1083,7 @@ cutting-board	kitchenware
 cyclic-redundancy-check	algorithm
 cyclic-redundancy-check	function
 cyclic-redundancy-check	hash-function
+cyclic-redundancy-check	relation
 cymbal	artifact
 cymbal	equipment
 cymbal	musical-instrument
@@ -1245,6 +1255,7 @@ domain-ontology	database
 domain-ontology	knowledge-base
 dome	ceiling
 dominance	partial-order
+dominance	relation
 dongle	hardware
 dongle	peripheral
 donut	dessert
@@ -1307,6 +1318,7 @@ duffel-bag	housing
 duffel-bag	machine-housing
 duffel-bag	physical-object
 duffel-bag	tool
+duke	language-unit
 duke	sign
 duke	title-of-respect
 dune-buggy	car
@@ -1530,6 +1542,8 @@ flower	physical-object
 flower	plant
 fluctuation	function
 fluctuation	number
+fluctuation	numeric-quantity
+fluctuation	relation
 flute	woodwind
 flywheel	mechanism
 flywheel	wheel
@@ -1555,6 +1569,7 @@ forest	habitat
 fork	kitchenware
 forum	public-square
 fraction	number
+fraction	numeric-quantity
 fracture	injury
 franchise	occupation
 franchise	organization
@@ -1582,6 +1597,7 @@ frozen-yogurt	prepared-dish
 fruit-juice	juice
 fuel	chemical
 full-text-search	information-retrieval
+function	relation
 functional-programming	computer-programming
 functional-programming	declarative-programming
 functional-programming	programming
@@ -1859,6 +1875,7 @@ harp	physical-object
 harp	tool
 hash-function	algorithm
 hash-function	function
+hash-function	relation
 hash-table	associative-array
 hash-table	data-structure
 hat	artifact
@@ -2005,6 +2022,7 @@ icing	food
 icing	spread
 identifier	information
 identity	partial-order
+identity	relation
 illustration	image
 image-file-format	file-format
 image-scanner	appliance
@@ -2022,10 +2040,13 @@ immutable-object	software-object
 imperative-programming	computer-programming
 imperative-programming	programming
 imperative-programming	skill
+importance	amount
 importance	function
+importance	relation
 in-memory-database	database-management-system
 in-memory-database	software
 increment	number
+increment	numeric-quantity
 index	finger
 individual	organism
 individual	physical-object
@@ -2280,6 +2301,7 @@ lighter	equipment
 lighter	physical-object
 lighter	tool
 lime	citrus-fruit
+limit	relation
 linear-search	information-retrieval
 lingerie	artifact
 lingerie	clothing
@@ -2333,6 +2355,7 @@ logic-programming	programming
 logic-programming	programming-paradigm
 logic-programming	skill
 logical-operation	function
+logical-operation	relation
 longbow	bow
 look-alike	person
 lookout	guard
@@ -2763,6 +2786,7 @@ opera	musical-composition
 operating-system	software
 operation	therapy
 operational-transformation	function
+operational-transformation	relation
 opinion	point-of-view
 opinion	slant
 opposition	political-party
@@ -2848,6 +2872,7 @@ parallel-computing	skill
 parliament	legislature
 parser	algorithm
 parser	software
+partial-order	relation
 particle	physical-object
 party	person
 passenger	person
@@ -3056,6 +3081,7 @@ potato-plant	organism
 potato-plant	physical-object
 potato-plant	plant
 potential	function
+potential	relation
 potpourri	musical-composition
 poultry	livestock
 pound	workplace
@@ -3126,8 +3152,10 @@ program-assertion	program-statement
 program-assertion	statement
 program-constant	function
 program-constant	program-variable
+program-constant	relation
 program-interpreter	computer-program
 program-interpreter	software
+program-invariant	relation
 program-loader	software
 program-statement	control-flow
 programmer	person
@@ -3289,6 +3317,7 @@ regular-expression	pattern-matching
 regular-expression	program-statement
 regular-expression	statement
 regulator	function
+regulator	relation
 relational-database	database
 relational-database-management-system	database-management-system
 relational-database-management-system	software
@@ -3324,6 +3353,7 @@ reserve	medication
 residential-district	settlement
 restaurant	workplace
 restriction	function
+restriction	relation
 retailer	businessman
 retailer	worker
 retirement	notice.communication
@@ -3502,7 +3532,9 @@ science	research
 scientist	research-worker
 scone	bread
 scone	food
+score	amount
 score	function
+score	relation
 scored-goal	failure
 scouring-pad	artifact
 scouring-pad	equipment
@@ -3644,6 +3676,7 @@ signal	sign
 signal-modulation	telecommunication
 signboard	information
 similarity	function
+similarity	relation
 singer	artist
 singer	musician
 singer	person
@@ -4171,12 +4204,14 @@ tights	hosiery
 tights	physical-object
 tights	tool
 time-complexity	function
+time-complexity	relation
 time-series-database	database-management-system
 time-series-database	software
 timetable	schedule
 tin-whistle	flute
 tin-whistle	woodwind
 tissue-paper	paper
+title-of-respect	language-unit
 title-of-respect	sign
 toast	bread
 toast	food
@@ -4238,6 +4273,7 @@ tragedy	drama
 tragedy	dramatic-play
 training-workshop	meeting
 training-workshop	service
+transitive-closure	relation
 transport	service
 transportation	service
 trap	artifact

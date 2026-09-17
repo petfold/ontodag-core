@@ -89,6 +89,8 @@ aluminum	metal
 ambiguity	uncertainty
 ammunition	artifact
 ammunition	physical-object
+amount	function
+amount	relation
 angel-investor	businessman
 angel-investor	investor
 angel-investor	worker
@@ -405,6 +407,7 @@ bicycle	sporting-goods
 bid	price
 bid	purchase-price
 bid-ask-spread	number
+bid-ask-spread	numeric-quantity
 bid-price	price
 bid-price	purchase-price
 bidder	buyer
@@ -873,9 +876,11 @@ champagne	wine
 champion	athlete
 champion	winner
 change	number
+change	numeric-quantity
 channel	landform
 chapter	board-of-directors
 characteristic	number
+characteristic	numeric-quantity
 chard	leaf
 chard	stalk
 chard	vegetable
@@ -884,6 +889,7 @@ charger	goods
 charger	household-appliance
 charm	fraction
 charm	number
+charm	numeric-quantity
 charter	contract
 charter-contract	contract
 checking-account	bank-account
@@ -1120,6 +1126,7 @@ container-ship	cargo-ship
 container-ship	ship
 container-ship	watercraft
 contrast	number
+contrast	numeric-quantity
 contribution	gift
 controlling-interest	contract
 controlling-interest	financial-asset
@@ -1268,6 +1275,7 @@ credit-rating-agency	organization
 credit-risk	financial-risk
 credit-score	credit-rating
 credit-spread	number
+credit-spread	numeric-quantity
 crib	artifact
 crib	bed
 crib	furniture
@@ -1315,6 +1323,7 @@ cryptocurrency-exchange	goods
 cryptocurrency-exchange	market
 cryptocurrency-exchange	payment-system
 cryptographic-hash-function	function
+cryptographic-hash-function	relation
 crystal	chemical
 crystal	substance
 cubicle	bedroom
@@ -1342,6 +1351,7 @@ cupboard	furniture
 cupboard	room
 cupcake	cake
 curl	function
+curl	relation
 currant	organism
 currant	physical-object
 currant	plant
@@ -1512,6 +1522,7 @@ doll	physical-object
 dollhouse	cabinet
 dollhouse	goods
 dome	ceiling
+dominance	relation
 donut	dessert
 donut	dish
 donut	food
@@ -1574,6 +1585,7 @@ duffel-bag	housing
 duffel-bag	machine-housing
 duffel-bag	physical-object
 duffel-bag	tool
+duke	language-unit
 duke	sign
 duke	title-of-respect
 dune-buggy	car
@@ -1594,6 +1606,7 @@ e-commerce	organization
 ear	organ
 earnest-payment	contract
 economic-rent	number
+economic-rent	numeric-quantity
 economics	social-science
 economies-of-scale	comparative-advantage
 economist	research-worker
@@ -1861,6 +1874,8 @@ flower	physical-object
 flower	plant
 fluctuation	function
 fluctuation	number
+fluctuation	numeric-quantity
+fluctuation	relation
 flute	woodwind
 flywheel	mechanism
 flywheel	wheel
@@ -1897,6 +1912,7 @@ forward-contract	security-finance
 forward-price	price
 forward-price	purchase-price
 fraction	number
+fraction	numeric-quantity
 fracture	injury
 franchise	business
 franchise	occupation
@@ -1928,7 +1944,9 @@ fulfillment-house	business
 fulfillment-house	occupation
 fulfillment-house	organization
 fulfillment-house	warehouse
+function	relation
 fundamental-law	structure
+fungibility	relation
 fungus	organism
 fungus	physical-object
 funnel	artifact
@@ -2167,6 +2185,7 @@ grocer	shopkeeper
 grocer	worker
 grocery-store	workplace
 gross-profit	number
+gross-profit	numeric-quantity
 ground	electrical-conductor
 group-insurance	business-model
 group-insurance	financial-services
@@ -2428,12 +2447,16 @@ ice-skate	physical-object
 ice-skate	sporting-goods
 icing	food
 icing	spread
+identity	relation
 illustration	image
 import	international-trade
+importance	amount
 importance	function
+importance	relation
 importing	international-trade
 income-statement	financial-statement
 increment	number
+increment	numeric-quantity
 indenture	contract
 index	finger
 individual	organism
@@ -2714,6 +2737,7 @@ lighter	goods
 lighter	physical-object
 lighter	tool
 lime	citrus-fruit
+limit	relation
 lingerie	artifact
 lingerie	clothing
 lingerie	equipment
@@ -3069,6 +3093,7 @@ name	information
 napkin-ring	kitchenware
 napkin-ring	tableware
 nash-equilibrium	function
+nash-equilibrium	relation
 natural-depression	landform
 natural-gas	chemical
 nausea	symptom
@@ -3502,6 +3527,7 @@ potato-plant	organism
 potato-plant	physical-object
 potato-plant	plant
 potential	function
+potential	relation
 potpourri	musical-composition
 poultry	livestock
 pound	workplace
@@ -3719,6 +3745,7 @@ record-player	tool
 refugee-camp	settlement
 register	pitch
 regulator	function
+regulator	relation
 reinsurance	business
 reinsurance	business-model
 reinsurance	financial-services
@@ -3779,10 +3806,12 @@ residential-district	settlement
 restaurant	workplace
 restitution	commercial-trade
 restriction	function
+restriction	relation
 retail	commercial-trade
 retailer	businessman
 retailer	worker
 retained-earnings	number
+retained-earnings	numeric-quantity
 retirement	notice.communication
 revenue	income
 reverse-auction	auction
@@ -3985,7 +4014,9 @@ scientist	research-worker
 scone	bread
 scone	food
 scope	goods
+score	amount
 score	function
+score	relation
 scored-goal	failure
 scouring-pad	artifact
 scouring-pad	equipment
@@ -4144,6 +4175,7 @@ sign-of-the-zodiac	symbol
 signal	sign
 signboard	information
 similarity	function
+similarity	relation
 simple-interest	interest
 singer	artist
 singer	musician
@@ -4724,6 +4756,7 @@ tin-whistle	flute
 tin-whistle	woodwind
 tire	goods
 tissue-paper	paper
+title-of-respect	language-unit
 title-of-respect	sign
 toast	bread
 toast	food

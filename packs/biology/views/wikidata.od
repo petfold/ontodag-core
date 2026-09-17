@@ -72,6 +72,7 @@ ambulance '*'
 ameloblast cell
 ammonia '*'
 ammunition artifact
+amount function
 amphetamine '*'
 amphibian '*'
 amplifier '*'
@@ -544,13 +545,13 @@ chamois-leather leather
 champagne sparkling-wine
 champion athlete winner
 chandelier '*'
-change number
+change number numeric-quantity
 channel landform
 chaos '*'
 chap '*'
 chapter board-of-directors
 character '*'
-characteristic number
+characteristic number numeric-quantity
 chard leaf stalk vegetable
 charger appliance household-appliance
 charity '*'
@@ -759,7 +760,7 @@ continent '*'
 contract '*'
 contraction '*'
 contradiction '*'
-contrast number
+contrast number numeric-quantity
 contribution gift
 control-stick '*'
 convalescence '*'
@@ -988,7 +989,7 @@ dollhouse cabinet
 dolomite '*'
 dolphin '*'
 dome ceiling
-dominance '*'
+dominance relation
 donor '*'
 donut dessert snack-food
 door obstacle
@@ -1246,7 +1247,7 @@ flower plant
 flower-lip '*'
 flower-style '*'
 flowerpot '*'
-fluctuation function number
+fluctuation function number numeric-quantity
 flue '*'
 fluid '*'
 flute woodwind
@@ -1279,7 +1280,7 @@ forum public-square
 fossil '*'
 fountain '*'
 fox '*'
-fraction number
+fraction number numeric-quantity
 fracture injury
 franchise occupation
 frank culture custom dish prepared-dish
@@ -1305,7 +1306,7 @@ frying-pan '*'
 fudge '*'
 fuel chemical
 fun '*'
-function '*'
+function relation
 fundamental-law structure
 funeral '*'
 fungus organism
@@ -1607,7 +1608,7 @@ ice-cream frozen-dessert
 ice-skate sporting-goods
 icing spread
 idea '*'
-identity '*'
+identity relation
 identity-card '*'
 ignorance '*'
 illness organic-process
@@ -1620,11 +1621,11 @@ immigration '*'
 impact '*'
 implication '*'
 import '*'
-importance function
+importance amount
 imposter '*'
 incense '*'
 income '*'
-increment number
+increment number numeric-quantity
 incubator '*'
 index finger
 indigence '*'
@@ -1765,6 +1766,7 @@ landmine '*'
 landowner '*'
 lane '*'
 language '*'
+language-unit '*'
 lantern '*'
 lanyard '*'
 lap '*'
@@ -1833,7 +1835,7 @@ limb '*'
 limb-adduction '*'
 lime citrus-fruit
 limestone '*'
-limit '*'
+limit relation
 linen '*'
 lingerie underwear
 linguistics humanities social-science
@@ -2152,6 +2154,7 @@ notice.communication '*'
 nozzle tip tip-end
 nuclear-reactor '*'
 number '*'
+numeric-quantity '*'
 nun monk
 nurse '*'
 nursery room
@@ -2637,6 +2640,7 @@ regulator function
 rehabilitation '*'
 rehearsal '*'
 rein '*'
+relation '*'
 relative person
 relevance '*'
 reliance '*'
@@ -2792,7 +2796,7 @@ scone bread
 scoop '*'
 scooter '*'
 scope '*'
-score function
+score amount
 scoreboard '*'
 scored-goal failure
 scouring-pad tool
@@ -2997,6 +3001,7 @@ space-heater appliance household-appliance
 spacecraft vehicle
 spade '*'
 sparkling-wine wine
+spatial-relation '*'
 spawn '*'
 speaker person
 spear sporting-goods
@@ -3265,7 +3270,7 @@ tire '*'
 tissue '*'
 tissue-paper paper
 titanium '*'
-title-of-respect sign
+title-of-respect language-unit sign
 toast bread
 toaster appliance household-appliance
 tobacco commodity produce

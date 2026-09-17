@@ -79,6 +79,7 @@ ambiguity uncertainty
 ambulance '*'
 ammonia '*'
 ammunition artifact
+amount function
 amphetamine '*'
 amphibian '*'
 amplifier '*'
@@ -288,7 +289,7 @@ bikini '*'
 bill cash
 billiard-ball sporting-goods
 billiard-table dining-table sporting-goods table
-binary-relation mathematical-set
+binary-relation relation
 binary-tree data-structure rooted-tree
 binder stationery
 binoculars '*'
@@ -558,7 +559,7 @@ chamois-leather leather
 champagne sparkling-wine
 champion athlete winner
 chandelier '*'
-change number
+change number numeric-quantity
 channel landform
 chaos '*'
 chap '*'
@@ -787,7 +788,7 @@ continent '*'
 contract '*'
 contraction '*'
 contradiction '*'
-contrast number
+contrast number numeric-quantity
 contribution gift
 control-stick '*'
 convalescence '*'
@@ -1311,7 +1312,7 @@ flour food powder
 flow-network directed-graph weighted-graph
 flower plant
 flowerpot '*'
-fluctuation function number
+fluctuation function number numeric-quantity
 flue '*'
 fluid '*'
 flute woodwind
@@ -1707,12 +1708,12 @@ immigration '*'
 impact '*'
 implication '*'
 import '*'
-importance function
+importance amount
 imposter '*'
 incense '*'
 inclusion-exclusion-principle '*'
 income '*'
-increment number
+increment number numeric-quantity
 incubator '*'
 independent-set induced-subgraph
 index finger
@@ -1726,7 +1727,7 @@ infection '*'
 inference-rule '*'
 infimum lower-bound
 infinite-set mathematical-set
-infinitesimal number
+infinitesimal number numeric-quantity
 inflation '*'
 influenza '*'
 informant '*'
@@ -1878,6 +1879,7 @@ landmine '*'
 landowner '*'
 lane '*'
 language '*'
+language-unit '*'
 lantern '*'
 lanyard '*'
 lap '*'
@@ -1987,7 +1989,7 @@ logical-consistency function
 logical-disjunction '*'
 logical-negation '*'
 logical-operation function
-logical-predicate mathematical-set
+logical-predicate relation
 logical-soundness '*'
 longbow bow
 loofah '*'
@@ -2304,6 +2306,7 @@ np-completeness '*'
 nuclear-reactor '*'
 number '*'
 number-theory '*'
+numeric-quantity '*'
 nun monk
 nurse '*'
 nursery room
@@ -2359,7 +2362,7 @@ order-dimension '*'
 order-embedding monotone-function
 order-isomorphism isomorphism
 order-theory '*'
-ordinal-number number quantity
+ordinal-number number numeric-quantity quantity
 ore stone
 organ '*'
 organism physical-object
@@ -2725,7 +2728,7 @@ quarrel '*'
 quarter coin
 quartile '*'
 quasigroup algebraic-magma
-quaternion number
+quaternion number numeric-quantity
 queen leader sovereign
 quest '*'
 questionnaire collection
@@ -2814,6 +2817,7 @@ regulator function
 rehabilitation '*'
 rehearsal '*'
 rein '*'
+relation mathematical-set
 relative person
 relaxation-method '*'
 relevance '*'
@@ -2970,7 +2974,7 @@ scone bread
 scoop '*'
 scooter '*'
 scope '*'
-score function
+score amount
 scoreboard '*'
 scored-goal failure
 scouring-pad tool
@@ -3177,6 +3181,7 @@ spacecraft vehicle
 spade '*'
 spanning-tree subgraph tree-graph
 sparkling-wine wine
+spatial-relation '*'
 speaker person
 spear sporting-goods
 specialist worker
@@ -3456,7 +3461,7 @@ tire '*'
 tissue '*'
 tissue-paper paper
 titanium '*'
-title-of-respect sign
+title-of-respect language-unit sign
 toast bread
 toaster appliance household-appliance
 tobacco commodity produce

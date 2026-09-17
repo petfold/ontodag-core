@@ -167,6 +167,7 @@ autumnal-equinox	attribute	single	wordnet
 autumnal-equinox	day	single	sumo	
 autumnal-equinox	equinox	accepted	claude-ruling wordnet	
 autumnal-equinox	quantity	single	sumo	
+autumnal-equinox	time	accepted	sumo wordnet	
 axial-precession	natural-event	accepted	claude-ruling	
 barred-spiral-galaxy	celestial-body	single	wikidata	
 barred-spiral-galaxy	galaxy	single	wikidata	
@@ -400,8 +401,10 @@ equinox	event	single	opencyc
 equinox	natural-event	accepted	claude-ruling	
 equinox	quantity	single	sumo	
 equinox	situation	single	opencyc	
+equinox	time	accepted	sumo wordnet	
 eris	dwarf-planet	accepted	claude-ruling	
 escape-velocity	quantity	accepted	claude-ruling sumo	
+escape-velocity	relation	single	wordnet	
 escape-velocity	vector	single	sumo	
 europa	galilean-satellite	accepted	claude-ruling	
 europa	natural-satellite	accepted	claude-ruling	
@@ -427,11 +430,13 @@ field-glass	refracting-telescope	accepted	claude wordnet
 field-glass	telescope	single	wordnet	
 field-glass	universe	single	sumo	
 field-glass	vehicle-body	single	sumo	
+first-quarter	amount	single	wordnet	
 first-quarter	appearance	single	wordnet	
 first-quarter	attribute	single	wordnet	
 first-quarter	half-moon	accepted	claude wordnet	
 first-quarter	lunar-phase	single	wordnet	
 first-quarter	quantity	single	sumo	
+first-quarter	time	single	sumo	
 first-quarter	time-period	single	wordnet	
 fixed-star	celestial-body	accepted	sumo wikidata wordnet	
 fixed-star	natural-object	single	wordnet	
@@ -447,10 +452,12 @@ flare-star	place	single	yago
 flare-star	red-dwarf	accepted	claude wordnet	
 flare-star	star	accepted	sumo wordnet	
 flare-star	universe	single	sumo	
+full-moon	amount	single	wordnet	
 full-moon	appearance	single	wordnet	
 full-moon	attribute	single	wordnet	
 full-moon	lunar-phase	accepted	claude wordnet	
 full-moon	quantity	single	sumo	
+full-moon	time	single	sumo	
 full-moon	time-period	single	wordnet	
 galactic-coordinate-system	celestial-coordinate-system	accepted	claude-ruling wikidata	
 galaxy-cluster	celestial-body	accepted	claude wikidata	
@@ -513,16 +520,20 @@ gravitational-lens	natural-event	accepted	claude-ruling
 gravitational-lens	place	single	yago	
 gravitational-wave	wave	accepted	claude-ruling	
 gravity-assist	method	accepted	claude-ruling	
+half-moon	amount	single	wordnet	
 half-moon	appearance	single	wordnet	
 half-moon	attribute	single	wordnet	
 half-moon	lunar-phase	accepted	claude wordnet	
 half-moon	quantity	single	sumo	
+half-moon	time	single	sumo	
 half-moon	time-period	single	wordnet	
+harvest-moon	amount	single	wordnet	
 harvest-moon	appearance	single	wordnet	
 harvest-moon	attribute	single	wordnet	
 harvest-moon	full-moon	accepted	claude wordnet	
 harvest-moon	lunar-phase	single	wordnet	
 harvest-moon	quantity	single	sumo	
+harvest-moon	time	single	sumo	
 harvest-moon	time-period	single	wordnet	
 heliocentric-orbit	curve	single	wikidata	
 heliocentric-orbit	orbit	accepted	claude claude-ruling wikidata	
@@ -622,11 +633,13 @@ lander	vehicle	accepted	sumo wordnet
 lander	vehicle-body	single	sumo	
 large-magellanic-cloud	dwarf-galaxy	accepted	claude-ruling	
 large-magellanic-cloud	irregular-galaxy	accepted	claude-ruling	
+last-quarter	amount	single	wordnet	
 last-quarter	appearance	single	wordnet	
 last-quarter	attribute	single	wordnet	
 last-quarter	half-moon	accepted	claude wordnet	
 last-quarter	lunar-phase	single	wordnet	
 last-quarter	quantity	single	sumo	
+last-quarter	time	single	sumo	
 last-quarter	time-period	single	wordnet	
 launch-pad	artifact	single	opencyc	
 launch-pad	device	single	opencyc	
@@ -653,9 +666,11 @@ lunar-excursion-module	spacecraft	accepted	claude wordnet
 lunar-excursion-module	universe	single	sumo	
 lunar-excursion-module	vehicle	accepted	sumo wordnet	
 lunar-excursion-module	vehicle-body	single	sumo	
+lunar-phase	amount	single	wordnet	
 lunar-phase	appearance	accepted	claude wordnet	
 lunar-phase	attribute	single	wordnet	
 lunar-phase	quantity	single	sumo	
+lunar-phase	time	single	sumo	
 lunar-phase	time-period	single	wordnet	
 magellanic-clouds	celestial-body	single	wikidata	
 magellanic-clouds	collection	accepted	claude-ruling	
@@ -772,10 +787,12 @@ neutron-star	star	accepted	sumo wikidata wordnet
 neutron-star	star.object	single	claude	
 neutron-star	universe	single	sumo	
 new-general-catalogue	astronomical-catalog	accepted	claude-ruling	
+new-moon	amount	single	wordnet	
 new-moon	appearance	single	wordnet	
 new-moon	attribute	single	wordnet	
 new-moon	lunar-phase	accepted	claude wordnet	
 new-moon	quantity	single	sumo	
+new-moon	time	single	sumo	
 new-moon	time-period	single	wordnet	
 newtonian-telescope	artifact	accepted	sumo wordnet	
 newtonian-telescope	astronomical-telescope	single	wordnet	
@@ -1108,22 +1125,34 @@ selenology	physics	single	wordnet
 selenology	science	single	wordnet	
 selenology	signified	single	sumo	
 semi-major-axis	quantity	accepted	claude-ruling	
+sidereal-day	amount	single	wordnet	
 sidereal-day	attribute	single	wordnet	
 sidereal-day	quantity	accepted	claude-ruling	
 sidereal-day	sidereal-time	accepted	claude wordnet	
+sidereal-day	time	single	wordnet	
+sidereal-day	time-unit	single	wordnet	
+sidereal-hour	amount	single	wordnet	
 sidereal-hour	attribute	single	wordnet	
 sidereal-hour	hour	single	wordnet	
 sidereal-hour	quantity	accepted	claude-ruling	
 sidereal-hour	sidereal-time	accepted	claude wordnet	
+sidereal-hour	time	single	wordnet	
+sidereal-hour	time-unit	single	wordnet	
+sidereal-month	amount	single	wordnet	
 sidereal-month	attribute	single	wordnet	
 sidereal-month	quantity	accepted	claude-ruling sumo	
 sidereal-month	sidereal-time	accepted	claude wordnet	
+sidereal-month	time	accepted	sumo wordnet	
+sidereal-month	time-unit	single	wordnet	
 sidereal-time	attribute	dissented	wordnet	
 sidereal-time	concept	accepted	claude-ruling	
 sidereal-time	quantity	single	sumo	
+sidereal-time	time	accepted	sumo wordnet	
+sidereal-year	amount	single	wordnet	
 sidereal-year	attribute	single	wordnet	
 sidereal-year	quantity	accepted	claude-ruling	
 sidereal-year	sidereal-time	accepted	claude wordnet	
+sidereal-year	time	single	wordnet	
 sidereal-year	time-period	single	wordnet	
 siderite	celestial-body	accepted	sumo wikidata	
 siderite	meteorite	accepted	wikidata wordnet	
@@ -1180,6 +1209,7 @@ solstice	event	single	opencyc
 solstice	natural-event	accepted	claude-ruling	
 solstice	quantity	single	sumo	
 solstice	situation	single	opencyc	
+solstice	time	accepted	sumo wordnet	
 soyuz-spacecraft	crewed-spacecraft	accepted	claude wikidata	
 soyuz-spacecraft	space-capsule	accepted	claude wikidata	
 soyuz-spacecraft	spacecraft	single	wikidata	
@@ -1325,6 +1355,7 @@ summer-solstice	attribute	single	wordnet
 summer-solstice	day	single	sumo	
 summer-solstice	quantity	single	sumo	
 summer-solstice	solstice	accepted	claude-ruling wordnet	
+summer-solstice	time	accepted	sumo wordnet	
 sunlight	solar-radiation	single	opencyc	
 sunspot	natural-event	accepted	claude-ruling	
 supergiant-star	celestial-body	accepted	sumo wikidata wordnet	
@@ -1410,6 +1441,7 @@ vernal-equinox	attribute	single	wordnet
 vernal-equinox	day	single	sumo	
 vernal-equinox	equinox	accepted	claude-ruling wordnet	
 vernal-equinox	quantity	single	sumo	
+vernal-equinox	time	accepted	sumo wordnet	
 voyager-1	space-probe	accepted	claude-ruling	
 voyager-2	space-probe	accepted	claude-ruling	
 weather-satellite	artifact	accepted	sumo wordnet	
@@ -1437,6 +1469,7 @@ winter-solstice	attribute	single	wordnet
 winter-solstice	day	single	sumo	
 winter-solstice	quantity	single	sumo	
 winter-solstice	solstice	accepted	claude-ruling wordnet	
+winter-solstice	time	accepted	sumo wordnet	
 zenith	phenomenon	single	sumo	
 zenith	physical-object	single	wordnet	
 zenith	place	accepted	sumo wordnet	

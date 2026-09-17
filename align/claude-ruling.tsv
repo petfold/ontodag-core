@@ -69,3 +69,824 @@ directory	file	accept	v10 (§14): a directory is a set of related records kept t
 # not have said them.  These two lines have no offsets because `folder` has no synset: bound by name.
 folder	collection	accept	a folder holds files, messages or other folders under one name — a collection, and core's `collection` is already both a group and information
 directory	folder	accept	a filesystem directory is the folder a file manager shows; `mail-folder` is the other kind, and they are not the same thing, which is why `folder` is above both rather than beside `directory`	06490451	
+# ===== The 2026-09-17 review pass: core's fifteen disputed pairs and the two contradicted
+# published pins, every one settled by reading the two glosses against each other.
+pellet	ammunition	accept	a pellet is a solid missile discharged from a firearm — ammunition is the class, not the kind	04205759	02703275
+ammunition	pellet	reject	SUMO has it upside down	02703275	04205759
+pellet	projectile	accept	WordNet's own hypernym; SUMO's reverse is upside down	04205759	04008634
+projectile	pellet	reject	as above	04008634	04205759
+fine-art	artistic-creation	reject	different categories, not one above the other: `artistic-creation` (00933420) is the ACT of creating, `fine-art` (02743547) the works collectively	02743547	00933420
+artistic-creation	fine-art	reject	as above, the other way round	00933420	02743547
+cane	walking-stick	accept	both glosses describe a stick leaned on while walking; WordNet and Wikidata agree, SUMO is reversed	02949202	04546194
+walking-stick	cane	reject	as above	04546194	02949202
+canteen	flask	accept	WordNet's gloss is explicit: "a flask for carrying water"	02952374	03359566
+flask	canteen	reject	as above	03359566	02952374
+cap	headdress	accept	WordNet's gloss is explicit: "a tight-fitting headdress"	02954340	03502509
+headdress	cap	reject	as above	03502509	02954340
+chimney	flue	accept	WordNet's gloss is explicit: "a vertical flue that provides a path through which smoke ..."	03017428	03368878
+flue	chimney	reject	as above	03368878	03017428
+vehicle-body	commodity	accept	CPC lists vehicle bodies among the goods; the body of a car is an article of commerce	02861886	03076708
+commodity	vehicle-body	reject	SUMO's alignment artefact — articles of commerce are not car bodies	03076708	02861886
+cooking-oil	vegetable-oil	accept	WordNet's gloss is explicit: "any of numerous vegetable oils used in cooking"	07673145	07673397
+vegetable-oil	cooking-oil	reject	as above; Wikidata has it reversed	07673397	07673145
+emergency	crisis	accept	WordNet's gloss is explicit: "a sudden unforeseen crisis ... that requires immediate action"	07417405	13933560
+crisis	emergency	reject	as above; OpenCyc has it reversed	13933560	07417405
+money	currency	accept	WordNet's gloss is explicit: money is "the official currency issued by a government or national bank"; the published v3 pin says the same and Wikidata's reversal does not overturn two sources and a pin	13384877	13385913
+currency	money	reject	as above	13385913	13384877
+electric-refrigerator	refrigerator	accept	a refrigerator whose coolant is pumped by an electric motor; SUMO is reversed	03273913	04070727
+refrigerator	electric-refrigerator	reject	as above	04070727	03273913
+gate	physical-barrier	accept	WordNet's gloss is explicit: "a movable barrier in a fence or wall"	03427296	02796623
+physical-barrier	gate	reject	as above; Wikidata has it reversed	02796623	03427296
+noodle	pasta	accept	WordNet's gloss is explicit: "a ribbonlike strip of pasta"	07699584	07698915
+pasta	noodle	reject	as above; OpenCyc has it reversed	07698915	07699584
+process	phenomenon	accept	WordNet's gloss is explicit: a process is "a sustained phenomenon or one marked by gradual changes". Inert while `phenomenon` is unplaced, and true when it is placed	00029677	00034213
+phenomenon	process	reject	a phenomenon is anything known through the senses, states included; it is the wider word	00034213	00029677
+research-worker	scientist	accept	WordNet's gloss is explicit: "a scientist who devotes himself to doing research"; the published v3 pin and ontodag's v1 agree	10523076	10560637
+scientist	research-worker	reject	as above; Wikidata has it reversed	10560637	10523076
+shirt	top	accept	a shirt is a garment worn on the upper half of the body, which is what `top` names; SUMO's reverse would make every top a shirt	04197391	04453666
+top	shirt	reject	as above	04453666	04197391
+# ===== The temporal branch (2026-09-17 review).  Core had `date` the fruit, `period` the
+# punctuation mark and `second` a rank, and no way at all to say a day, a week or an hour:
+# forty-odd time concepts sat unplaced.  Built on WordNet's own links, NOT on SUMO's, which
+# maps the whole vocabulary onto one term and would have made `time` a fifty-child hub.
+time	attribute	accept	the continuum of experience — WordNet files it under `attribute`, one of core's ten roots, and that is where the past, the present and the future hang	00028270	00024264
+time-period	quantity	accept	"an amount of time" is a quantity; WordNet's own chain is time-period ⊑ fundamental-quantity ⊑ quantity	15113229	05855125
+time-unit	time-period	accept	a unit for measuring time periods is itself an amount of time; WordNet files time-unit and time-period as siblings under quantity, which left hour, minute, second and day with no parent core could reach	15154774	15113229
+time-period	time	reject	SUMO maps the whole temporal vocabulary onto one term, which would make `time` a hub over fifty concepts (the `product` mistake of v9); an amount of time is not the continuum	15113229	00028270
+clock-time	cognition	accept	a reading of a point in time — WordNet files it under `representation`, which is cognition	15129927	00023271
+pause	time-period	accept	"a time interval during which there is a temporary cessation" — its own gloss; WordNet's hypernym (interruption) is not a concept here	15271008	15113229
+season	time-period	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15236475	15113229
+time-of-day	clock-time	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15228378	15129927
+historic-period	era	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15254028	15248564
+reign	historic-period	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15260814	15254028
+birthday	anniversary	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15250178	15249799
+sunday	day	accept	a day of the week is a day	15163797	15155220
+extension.time	pause	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15272382	15271008
+respite	pause	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15274074	15271008
+day	time-unit	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15155220	15154774
+day-of-the-month	time-unit	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15159583	15154774
+hour	time-unit	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15227846	15154774
+minute	time-unit	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15234764	15154774
+sec	time-unit	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15235126	15154774
+afternoon	time-period	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15166191	15113229
+anniversary	time-period	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15249799	15113229
+blink-of-an-eye	time-period	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15247110	15113229
+calendar-month	time-period	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15209413	15113229
+century	time-period	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15205532	15113229
+childhood	time-period	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15147097	15113229
+era	time-period	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15248564	15113229
+evening	time-period	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15166462	15113229
+leave	time-period	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15139130	15113229
+legal-age	time-period	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15152062	15113229
+mar	time-period	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15210870	15113229
+morning	time-period	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15165289	15113229
+night	time-period	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15167027	15113229
+old-age	time-period	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15153787	15113229
+phase	time-period	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15290337	15113229
+presidency	time-period	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15266265	15113229
+quarter.time	time-period	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15206590	15113229
+rule.time	time-period	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15295416	15113229
+school-term	time-period	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15225249	15113229
+shift	time-period	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15291801	15113229
+youth	time-period	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15147713	15113229
+week	time-period	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15136147	15113229
+year	time-period	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15203791	15113229
+decade	time-period	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15204983	15113229
+fall	season	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15236859	15236475
+harvest	season	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	00921790	15236475
+springtime	season	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15237044	15236475
+summer	season	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15237250	15236475
+winter	season	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15237782	15236475
+dawn	time-of-day	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15168790	15228378
+midnight	time-of-day	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15168185	15228378
+twilight	time-of-day	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15169421	15228378
+past	time	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15120823	00028270
+future	time	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15121625	00028270
+history.time	time	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15121406	00028270
+nowadays	time	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15119536	00028270
+here-and-now	time	accept	WordNet's own hypernym; core had no temporal branch (2026-09-17 review)	15120050	00028270
+# ===== The unplaced, placed (2026-09-17 review).  308 concepts had no accepted parent at all:
+# every candidate was single-witness, so consensus never let them in and they were simply lost.
+# The parent taken here is WordNet's NEAREST ancestor that core already places — the same rule
+# the goods layer used, and the only one that cannot drift, since the synsets are fixed.  `d` is
+# how many hypernym steps away it is; everything at d>=3 was read one by one, and four were
+# thrown out: `gas ⊑ natural-event` (v9 ruled gas the state of matter), `crop ⊑ industry` (a
+# yield is not an industry), `backlog ⊑ income`, `reception ⊑ storage-medium` (a broadcast's
+# fidelity is not a medium).
+aberration	natural-event	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): an optical phenomenon resulting from the failure of a lens	11420139	11408559
+accelerator	bar	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): a pedal that controls the throttle valve; "he stepped on t	02670683	02788689
+access	concept	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): the right to obtain or make use of or take advantage of so	05175467	05835747
+advancement	act	accept	WordNet's nearest placed ancestor, d6 (2026-09-17 review): gradual improvement or growth or development; "advancement	00249501	00030358
+agitation	motion	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): disturbance usually in protest	00554300	00331950
+alumnus	scholar	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): a person who has received a degree from a school (high sch	09786338	10557854
+angel	belief	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): spiritual being attendant upon God	09538915	05941423
+attractive-force	natural-event	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): the force by which one object attracts another	11426530	11408559
+aviation	organization	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): the operation of aircraft to provide transportation	08067218	08008335
+bail	plan	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): the legal system that allows an accused person to be tempo	05903445	05898568
+bait	cognition	accept	WordNet's nearest placed ancestor, d5 (2026-09-17 review): anything that serves as an enticement	05695232	00023271
+bargain	information	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): an agreement between parties (usually arrived at after dis	06771159	00033020
+barrier	natural-object	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): anything serving to maintain separation by obstructing vis	09214581	00019128
+basis	hypothesis	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the fundamental assumptions from which something is begun 	05793554	05888929
+basketball-ball	ball	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): an inflated ball used in playing basketball	02802426	02778669
+beam-of-light	natural-event	accept	WordNet's nearest placed ancestor, d7 (2026-09-17 review): a column of light (as from a beacon)	11428023	11408559
+beginning	concept	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the first part or section of something; "`It was a dark an	05868051	05835747
+bias	inclination	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a partiality that prevents objective consideration of an i	06201908	06196584
+bosom	intuition	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): the locus of feelings and intuitions; "in your heart you k	05919263	05919034
+brink	shape	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): a region marking a boundary	13903738	00027807
+bustle	motion	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): a rapid active commotion	00555138	00331950
+camp	structure	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): a penal institution (often for forced labor); "China has m	02945379	04341686
+capitalism	group	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): an economic system based on private ownership of capital	08364143	00031264
+cassette	container	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): a container that holds a magnetic tape used for recording 	02978881	03094503
+ceiling.communication	argumentation	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): an upper limit on what is allowed; "he put a ceiling on th	06657646	05773049
+chord	musical-note	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): a combination of three or more notes that blend harmonious	06869951	06865345
+clod	collection	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a compact mass; "a ball of mud caught him on the shoulder"	07961016	07951464
+column.group	group	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): a vertical array of numbers or other information; "he adde	08433575	00031264
+concern.cognition	condition	accept	WordNet's nearest placed ancestor, d5 (2026-09-17 review): something that interests you because it is important or af	05670710	13920835
+consequence	process	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a phenomenon that follows and is caused by some previous p	11410625	00029677
+consultation	information	accept	WordNet's nearest placed ancestor, d5 (2026-09-17 review): a conference between two or more people to consider a part	07143137	00033020
+course-credit	accomplishment	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): recognition by a college or university that a course of st	00065855	00035189
+course-of-study	information	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): an integrated course of academic studies; "he was admitted	06676416	00033020
+creed	doctrine	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): any system of principles or beliefs	05959954	05943300
+current	natural-event	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): a flow of electricity through a conductor; "the current wa	11443532	11408559
+cut-rate-sale	opportunity	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): an occasion (usually brief) for buying at specially reduce	01117723	14483917
+deity	belief	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): any supernatural being worshipped as controlling some part	09505418	05941423
+demand.process	process	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the ability and desire to purchase goods and services; "th	13461162	00029677
+democracy	group	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): a political system in which the supreme power lies in a bo	08361329	00031264
+design	artifact	accept	WordNet's nearest placed ancestor, d5 (2026-09-17 review): a preliminary sketch indicating the plan for something; "t	03179318	00021939
+direction	inclination	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): a general course along which something has a tendency to d	06197215	06196584
+disappointment	desire	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): a feeling of dissatisfaction that results when your expect	07540602	07484265
+disembodied-spirit	belief	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): any incorporeal supernatural being that can become visible	09545324	05941423
+dismissal	act	accept	WordNet's nearest placed ancestor, d5 (2026-09-17 review): official notice that you have been fired from your job	07213079	00030358
+division	procedure	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): an arithmetic operation that is the inverse of multiplicat	00870912	01023820
+dragon	cognition	accept	WordNet's nearest placed ancestor, d7 (2026-09-17 review): a creature of Teutonic mythology; usually represented as b	09494388	00023271
+dramaturgy	communication	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): the art of writing and producing plays	07006119	06252138
+eagle.communication	cognition	accept	WordNet's nearest placed ancestor, d6 (2026-09-17 review): an emblem representing power; "the Roman eagle"	06881563	00023271
+echo	attribute	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): the repetition of a sound resulting from reflection of the	05010801	00024264
+economic-consumption	process	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): (economics) the utilization of economic goods to satisfy n	13451804	00029677
+economic-system	group	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the system of production and distribution and consumption	08366753	00031264
+electric-charge	natural-event	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): the quantity of unbalanced electricity in a body (either p	11435028	11408559
+electricity	natural-event	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a physical phenomenon associated with stationary or moving	11449907	11408559
+employer	leader	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): a person or firm that employs workers	10054657	09623038
+engagement	group	accept	WordNet's nearest placed ancestor, d5 (2026-09-17 review): a meeting arranged in advance; "she asked how to avoid kis	08385009	00031264
+entitlement	concept	accept	WordNet's nearest placed ancestor, d5 (2026-09-17 review): right granted by law or contract (especially a right to be	05181754	05835747
+entree	concept	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): the right to enter	05176188	05835747
+exam	communication	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): a set of questions or exercises evaluating skill or knowle	07197021	06252138
+exemption	act	accept	WordNet's nearest placed ancestor, d7 (2026-09-17 review): an act exempting someone; "he was granted immunity from pr	00213903	00030358
+exercise	labor	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the activity of exerting your muscles in various ways to k	00624738	00620752
+extraterrestrial-being	cognition	accept	WordNet's nearest placed ancestor, d6 (2026-09-17 review): a form of life assumed to exist outside the Earth or its a	09484465	00023271
+fairy	belief	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a small being, human in form, playful and having magical p	09540430	05941423
+fictional-character	cognition	accept	WordNet's nearest placed ancestor, d5 (2026-09-17 review): an imaginary person represented in a work of fiction (play	09587565	00023271
+figure	possession	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): an amount of money expressed numerically; "a figure of $17	13331634	00032613
+film.artifact	physical-object	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): a thin coating or layer; "the table was covered with a fil	03338648	00002684
+final-examination	communication	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): an examination administered at the end of an academic term	07198276	06252138
+fleet	organization	accept	WordNet's nearest placed ancestor, d6 (2026-09-17 review): a group of steamships operating together under the same ow	08293336	08008335
+force	degree	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): physical energy or intensity; "he hit with all the force h	05035353	05093890
+format	information	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): the organization of information according to preset specif	06636806	00033020
+freak	organism	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a person or animal that is markedly unusual or deformed	10109443	00004475
+front	artifact	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): the side that is seen or that goes first	03398467	00021939
+frustration	desire	accept	WordNet's nearest placed ancestor, d5 (2026-09-17 review): the feeling that accompanies an experience of being thwart	07540866	07484265
+gap	artifact	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a narrow opening; "he opened the window a crack"	03416329	00021939
+garden	vegetation	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): the flowers or vegetables or fruits or herbs that are cult	08439808	08436759
+gene	group	accept	WordNet's nearest placed ancestor, d5 (2026-09-17 review): (genetics) a segment of DNA that is involved in producing 	05436752	00031264
+genus-pan	group	accept	WordNet's nearest placed ancestor, d5 (2026-09-17 review): chimpanzees; more closely related to Australopithecus than	02481629	00031264
+globe	shape	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): an object with a spherical shape; "a ball of fire"	13899404	00027807
+grain.object	material	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a relatively small granular particle of a substance; "a gr	09290777	14580897
+gravity	natural-event	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): (physics) the force of attraction between all masses in th	11464143	11408559
+ground	view	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): the part of a scene (or picture) that lies behind objects 	05933834	05933246
+guidepost	rule	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): a rule or principle that provides guidance to appropriate 	05848541	05846054
+guinea-pig	person	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): a person who is subjected to experimental or other observa	10668666	00007846
+head	artifact	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): (usually plural) the obverse side of a coin that usually b	03501811	00021939
+heat	trait	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the trait of being intensely emotional	04628192	04616059
+hell	cognition	accept	WordNet's nearest placed ancestor, d5 (2026-09-17 review): (religion) the world of the dead; "No one goes to Hades wi	05629381	00023271
+hero	leader	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): a man distinguished by exceptional courage and nobility an	10325013	09623038
+hideaway	structure	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): an area where you can be alone	03517647	04341686
+hindrance	structure	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): any obstruction that impedes or is burdensome	03520811	04341686
+host	adult	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): a person who invites guests to a social event (such as a p	10187130	09605289
+ideal	role-model	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): model of excellence or perfection of a kind; one having no	10325243	10324851
+impetus	degree	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): an impelling force or strength; "the car's momentum carrie	05035820	05093890
+influence.phenomenon	process	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): the effect of one thing (or person) on another; "the influ	11414608	00029677
+infrastructure	constitution	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the basic structure or features of a system or organizatio	03570372	04933544
+insider	administrator	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): an officer of a corporation or others who have access to p	10208583	09770949
+intervention	argumentation	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): a policy of intervening in the affairs of other countries	06661562	05773049
+iteration	process	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): (computer science) a single execution of a set of instruct	13504173	00029677
+jurisprudence	collection	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): the collection of rules imposed by authority; "civilizatio	08441203	07951464
+kick	cognition	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): the sudden stimulation provided by strong drink (or certai	05827509	00023271
+king	person	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): a male sovereign; ruler of a kingdom	10231515	00007846
+knot	fastener	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): any of various fastenings formed by looping and tying a ro	03627232	03323703
+laurel-wreath	symbol	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): an award for winning a championship or commemorating some 	06706676	06806469
+level	cognition	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): an abstract place usually conceived as having depth; "a go	06246896	00023271
+lineation	place	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): the line that appears to bound an object	08612786	00027167
+liquid-substance	substance	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): a substance that is liquid at room temperature and pressur	14940386	00020827
+load	artifact	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): weight to be borne or conveyed	03679986	00021939
+logarithm	information	accept	WordNet's nearest placed ancestor, d6 (2026-09-17 review): the exponent required to produce a given number	06812631	00033020
+logic.cognition	natural-law	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the principles that guide reasoning within a given field o	05871618	05870916
+love	cognition	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): any object of warm affection or devotion; "the theater was	05813229	00023271
+luck	process	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): an unknown and unpredictable phenomenon that causes an eve	11418138	00029677
+luck.phenomenon	process	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): an unknown and unpredictable phenomenon that leads to a fa	11418460	00029677
+mannequin	assistant	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): a woman who wears clothes to display fashions; "she was to	10291240	09815790
+manner-of-speaking	information	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): your characteristic style or manner of expressing yourself	07071483	00033020
+matrix	group	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): (mathematics) a rectangular array of quantities or express	08267640	00031264
+menace	agent	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): something that is a source of danger; "earthquakes are a c	14543231	00007347
+middle	concept	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): an intermediate part or section; "A whole is that which ha	05868272	05835747
+middleman	representative	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): a person who is in a position to give you special assistan	09960117	10522035
+mole.attribute	appearance	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a small congenital pigmented spot on the skin	04693804	04673965
+monarchy	group	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): an autocracy governed by a monarch who usually inherits th	08363812	00031264
+mushroom-food	vegetable	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): fleshy body of any of numerous edible fungi	07734744	07707451
+natural-spring	physical-object	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a natural flow of ground water	09443453	00002684
+nature.object	natural-object	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the natural physical world including plants and animals an	09366762	00019128
+nature.person	agent	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): a causal agent creating and controlling things in the univ	09503682	00007347
+negotiation	information	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): a discussion intended to produce an agreement; "the buyout	07148192	00033020
+network	facility	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): (broadcasting) a communication system consisting of a grou	03820474	03315023
+node	shape	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a connecting point at which several lines come together	13911045	00027807
+notice.communication	act	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): advance notification (usually written) of the intention to	07212612	00030358
+nut-fastener	artifact	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a small (usually square or hexagonal) metal block with int	03836191	00021939
+page	piece-of-paper	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): one side of one leaf (of a book or magazine or newspaper o	06256697	06255777
+pain	perception	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a somatic sensation of acute discomfort; "as the intensity	05724694	05708432
+pattern	exemplar	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): a model considered worthy of imitation; "the American cons	05938795	05925366
+peel	material	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the rind of a fruit or vegetable	07738353	14580897
+percentage	ratio	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): a proportion in relation to a whole (which is usually the 	13817526	13819207
+pity	trouble	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): an unfortunate development; "it's a pity he couldn't do it	07305098	07289014
+plot.communication	fiction	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the story that is told in a novel or play or movie etc.; "	06373314	06367107
+point-of-view	position	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): a mental position from which things are viewed; "we should	06210363	06196284
+poser	assistant	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): a person who poses for a photographer or painter or sculpt	10324560	09815790
+precondition	premise	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): an assumption on which rests the validity or effect of som	06755568	06753800
+predilection	inclination	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a predisposition in favor of something; "a predilection fo	06200344	06196584
+pressure	natural-event	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the force applied to a unit area of surface; measured in p	11495041	11408559
+principle	natural-law	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): a basic truth or law or assumption; "the principles of dem	05872477	05870916
+prize	gift	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): something given for victory or superiority in a contest or	13268146	13265011
+probe	thinking	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): an inquiry into unfamiliar or questionable activities; "th	05800611	05770926
+product.phenomenon	process	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): a consequence of someone's efforts or of a particular set 	11415842	00029677
+projection	thinking	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): a prediction made by extrapolating from past observations	05775293	05770926
+projection.communication	information	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the projection of an image from a film onto a screen	06887599	00033020
+pupil	hole	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the contractile aperture in the center of the iris of the 	05320183	09304465
+racism	inclination	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): the prejudice that members of one race are intrinsically s	06203758	06196584
+railway-line	road	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): the road consisting of railroad track and roadbed	03671272	04096066
+reaction	natural-event	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): (mechanics) the equal and opposite force that is produced 	11498461	11408559
+reaction.phenomenon	process	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): a response that reveals a person's feelings or attitude; "	11417129	00029677
+rear	artifact	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): the side that goes last or is not normally seen; "he wrote	04059701	00021939
+record-album	storage-medium	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): one or more recordings issued together; originally release	06591815	06254669
+reference-point	signal	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): an indicator that orients you generally; "it is used as a 	07258332	06791372
+refuge	structure	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a shelter from danger or hardship	04071102	04341686
+release	act	accept	WordNet's nearest placed ancestor, d6 (2026-09-17 review): a formal written statement of relinquishment	00213694	00030358
+republic	group	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): a form of government whose head of state is not a monarch;	08362917	00031264
+response	greeting	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): the manner in which something is greeted; "she did not exp	06630852	06630017
+responsibility	act	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): the social force that binds you to the courses of action d	01129920	00030358
+restraint.cognition	rule	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a rule or condition that limits freedom; "legal restraints	06247701	05846054
+restriction	rule	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): a principle that limits the extent of something; "I am wil	05846355	05846054
+right-to-vote	concept	accept	WordNet's nearest placed ancestor, d5 (2026-09-17 review): a legal right guaranteed by the 15th amendment to the US C	05186306	05835747
+risk	undertaking	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a venture undertaken without regard to possible loss or in	00802238	00795720
+root	place	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the place where something begins, where it springs into be	08507558	00027167
+rule.cognition	procedure	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): (mathematics) a standard procedure for solving a class of 	05846932	01023820
+sarcasm	information	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): witty language used to convey insults or scorn; "he used s	06777164	00033020
+sequence	group	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): serial arrangement in which things follow in logical order	08459252	00031264
+share	legal-document	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): any of the equal portions into which the capital stock of 	13342135	06479665
+short-circuit	connector	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): accidental contact between two points in an electric circu	04204755	03091374
+signature	name	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): your name written in your own handwriting	06404582	06333653
+signified	meaning	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): the meaning of a word or expression; the way in which a wo	06602472	06601327
+skin-cream	artifact	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): toiletry consisting of any of various substances in the fo	03128519	00021939
+slant	position	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a biased way of looking at or presenting something	06211078	06196284
+slot	artifact	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): a small slit (as for inserting a coin or depositing mail);	04243370	00021939
+soprano	information	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): the highest female voice; the voice of a boy before pubert	06873139	00033020
+sovereign	person	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a nation's ruler or head of state usually by hereditary ri	10628644	00007846
+state-of-matter	natural-event	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): (chemistry) the three traditional states of matter are sol	14479615	11408559
+stunt-man	peer	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a stand-in for movie stars to perform dangerous stunts; "h	10666846	09626238
+style	information	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): editorial directions to be followed in spelling and punctu	06789215	00033020
+summation	procedure	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): the arithmetic operation of summing; calculating the sum o	00872107	01023820
+surrender	despair	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): acceptance of despair	07542433	07541923
+sympathy	inclination	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): an inclination to support or be loyal to or to agree with 	06199142	06196584
+system	group	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): a group of independent but interrelated elements comprisin	08435388	00031264
+system-instrumentality	artifact	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): instrumentality that combines interrelated interacting art	04377057	00021939
+tabular-array	group	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): a set of data arranged in rows and columns; "see table 1"	08266235	00031264
+tariff	possession	accept	WordNet's nearest placed ancestor, d6 (2026-09-17 review): a government tax on imports or exports; "they signed a tre	13315999	00032613
+tax	possession	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): charge against a citizen's person or property or activity 	13308999	00032613
+teacher	professional	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a person whose occupation is teaching	10694258	10480253
+telephone-line	connector	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): a telephone connection	04402057	03091374
+television-system	artifact	accept	WordNet's nearest placed ancestor, d5 (2026-09-17 review): a telecommunication system that transmits images of object	04404412	00021939
+tendency	route	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a general direction in which something tends to move; "the	08681777	08616311
+theoretical-account	hypothesis	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): a hypothetical description of a complex entity or process;	05890249	05888929
+title	concept	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): an established or recognized right; "a strong legal claim 	05181199	05835747
+title-of-respect	name	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): an identifying appellation signifying status or function: 	06339416	06333653
+tonality	information	accept	WordNet's nearest placed ancestor, d5 (2026-09-17 review): any of 24 major or minor diatonic scales that provide the 	06863751	00033020
+tone	information	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): the quality of a person's voice; "he began in a conversati	07082573	00033020
+track	route	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): (computer science) one of the circular magnetic paths on a	04464211	08616311
+traction	natural-event	accept	WordNet's nearest placed ancestor, d5 (2026-09-17 review): the friction between a body and the surface on which it mo	11460281	11408559
+trainer	leader	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): one who trains other persons or animals	10722575	09623038
+trial	thinking	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): trying something to find out about it; "a sample for ten d	05799212	05770926
+unit	concept	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a single undivided whole; "an idea is not a unit that can 	05869857	05835747
+variant	group	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): (biology) a group of organisms within a species that diffe	08111157	00031264
+version	category	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): something a little different from others of the same type;	05840650	05838765
+wallop	process	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): a forceful consequence; a strong effect; "the book had an 	11414411	00029677
+web	group	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): an interconnected system of things or people; "he owned a 	08434259	00031264
+wilderness-trail	road	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a path or track roughly blazed through wild or hilly count	04466613	04096066
+wonder	event	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): something that causes feelings of wonder; "the wonders of 	07289588	00029378
+# The two roots of those branches: core has no `abstraction`, and files abstract things under
+# `concept` (that is where `quantity` already sits), so that is where these two attach.
+relation	concept	accept	WordNet's `relation` is the sibling of `attribute` under `abstraction`; core has no `abstraction` root, and `quantity ⊑ concept` is the precedent	00031921	05835747
+amount	quantity	accept	"how much there is or how many there are" is a quantity in plain English; core's `quantity` is the concept of magnitude, and this is an instance of it	00033615	05855125
+cardinal-compass-point	spatial-direction	accept	north, south, east and west are directions; WordNet's intervening `compass point` is not a concept here	13831000	13827426
+gas	state-of-matter	accept	WordNet's own hypernym, and v9's ruling that `gas` stays the state of matter	14877585	14580597
+# ... the same rule applied again after the new branch roots went in (round 1):
+affinity.relation	relation	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): a close connection marked by community of interests or s	13811410	00031921
+altitude	relation	accept	WordNet's nearest placed ancestor, d6 (2026-09-17 review): elevation especially above sea level or above the earth'	05131647	00031921
+backlog	income	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): something kept back or saved for future use or a special	13368052	13255145
+batch	amount	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): (often followed by `of') a large number or amount or ext	13774404	00033615
+budget	amount	accept	WordNet's nearest placed ancestor, d6 (2026-09-17 review): a sum of money allocated for a particular purpose; "the 	13421832	00033615
+capacity	amount	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the amount that can be contained; "the gas tank has a ca	13779374	00033615
+cardinal-compass-point	relation	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): one of the four main compass points	13831000	00031921
+commencement	amount	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the time at which something is supposed to begin; "they 	15265518	00033615
+contrary	relation	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): exact opposition; "public opinion to the contrary he is 	13858270	00031921
+contrast	relation	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the opposition or dissimilarity of things that are compa	13855627	00031921
+correlation	relation	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a reciprocal relation between two or more things	13841651	00031921
+crop	industry	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): the yield from plants in a single growing season	13085864	00923444
+cupful	amount	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): the quantity a cup will hold; "he drank a cup of coffee"	13766733	00033615
+deadline	amount	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the point in time at which something must be completed	15180082	00033615
+definite-quantity	amount	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): a specific measure of amount	13576101	00033615
+deposit	amount	accept	WordNet's nearest placed ancestor, d6 (2026-09-17 review): money deposited in a bank or some similar institution	13381145	00033615
+detail	relation	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a small part that can be considered separately from the 	13809920	00031921
+distance	relation	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): the property created by the space between two objects or	05084201	00031921
+due-east	relation	accept	WordNet's nearest placed ancestor, d5 (2026-09-17 review): the cardinal compass point that is at 90 degrees	13832355	00031921
+due-west	relation	accept	WordNet's nearest placed ancestor, d5 (2026-09-17 review): the cardinal compass point that is a 270 degrees	13834399	00031921
+economic-value	amount	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): the amount (of money or goods or services) that is consi	13413493	00033615
+footstep	amount	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the distance covered by a step; "he stepped off ten pace	13757249	00033615
+formation	relation	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): a particular spatial arrangement	03385117	00031921
+foundation.relation	relation	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): the basis on which something is grounded; "there is litt	13790712	00031921
+fraction	amount	accept	WordNet's nearest placed ancestor, d6 (2026-09-17 review): the quotient of two rational numbers	13732078	00033615
+frequency	relation	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): the number of occurrences within a given time period; "t	15278281	00031921
+fund	amount	accept	WordNet's nearest placed ancestor, d5 (2026-09-17 review): a reserve of money set aside for some purpose	13358549	00033615
+grade	relation	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): the gradient of a slope or road or other surface; "the r	05068716	00031921
+headroom	relation	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): vertical space available to allow easy passage under som	13778261	00031921
+helping	amount	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): an individual quantity of food or drink taken as part of	07578363	00033615
+highlight	relation	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): the most interesting or memorable part; "the highlight o	13810141	00031921
+implication	relation	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a logical relation between propositions p and q of the f	13860281	00031921
+indefinite-quantity	amount	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): an estimated quantity	13576355	00033615
+kinship	relation	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): (anthropology) relatedness or connection by blood or mar	13812607	00031921
+language-unit	relation	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): one of the natural units into which linguistic messages 	06284225	00031921
+limit.quantity	amount	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the greatest amount of something that is possible or all	13758296	00033615
+line-of-descent	relation	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the kinship relation between an individual and the indiv	13813042	00031921
+linguistic-context	relation	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): discourse that surrounds a language unit and helps to de	06284898	00031921
+majority	amount	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): (elections) more than half of the votes	13581067	00033615
+maximum	amount	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): the largest possible quantity	13776137	00033615
+mile	amount	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): a large distance; "he missed by a mile"	13776342	00033615
+minimum	amount	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): the smallest possible quantity	13763384	00033615
+morsel	amount	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): a small amount of solid food; a mouthful; "all they had 	07579076	00033615
+norm	amount	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): a standard or model or pattern regarded as typical; "the	13854488	00033615
+north	relation	accept	WordNet's nearest placed ancestor, d5 (2026-09-17 review): the cardinal compass point that is at 0 or 360 degrees	13831176	00031921
+numeric-quantity	amount	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a concept of quantity involving zero and units; "every n	13582013	00033615
+occasion	amount	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): the time of a particular event; "on the occasion of his 	15245829	00033615
+ocean.quantity	amount	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): anything apparently limitless in quantity or volume	13776971	00033615
+one-fourth	amount	accept	WordNet's nearest placed ancestor, d8 (2026-09-17 review): one of four equal parts; "a quarter of a pound"	13737480	00033615
+one-half	amount	accept	WordNet's nearest placed ancestor, d8 (2026-09-17 review): one of two equal parts of a divisible whole; "half a loa	13736799	00033615
+opposite	relation	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a relation of direct opposition; "we thought Sue was old	13858604	00031921
+orientation	relation	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): position or alignment relative to points of the compass 	13828075	00031921
+output	amount	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the quantity of something (as a commodity) that is creat	13758745	00033615
+ownership	relation	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): the relation of an owner to the thing possessed; possess	13240514	00031921
+parking	relation	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): space in which vehicles can be parked; "there is plenty 	13778671	00031921
+part	relation	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): something determined in relation to something that inclu	13809207	00031921
+period.time	amount	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the interval taken to complete one cycle of a regularly 	15289779	00033615
+placement	relation	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the spatial property of the way in which something is pl	05075602	00031921
+probability	amount	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): a measure of how likely it is that some event will occur	05091770	00033615
+proportion	relation	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): harmonious arrangement or relation of parts or elements 	05076827	00031921
+rake	relation	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): degree of deviation from a horizontal plane; "the roof h	05069199	00031921
+reception	storage-medium	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): quality or fidelity of a received broadcast	06281040	06254669
+record.quantity	amount	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): the number of wins versus losses and ties a team has had	13596986	00033615
+relevance	relation	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the relation of something to the matter at hand	13794417	00031921
+remainder	amount	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): the number that remains after subtraction; the number th	13729236	00033615
+residual	relation	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): something left after other parts have been taken away; "	13810818	00031921
+scale-of-measurement	amount	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): an ordered reference standard; "judging on a scale of 1 	13850304	00033615
+signified	meaning	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): the meaning of a word or expression; the way in which a 	06602472	06601327
+south	relation	accept	WordNet's nearest placed ancestor, d5 (2026-09-17 review): the cardinal compass point that is at 180 degrees	13833375	00031921
+spatial-direction	relation	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the spatial relation between something and the course al	13827426	00031921
+spatial-relation	relation	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): the spatial property of a place where or way in which so	05074774	00031921
+standard	amount	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a basis for comparison; a reference point against which 	07260623	00033615
+supply	amount	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): an amount of something available for use	13777344	00033615
+syllable	relation	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): a unit of spoken language larger than a phoneme; "the wo	06304671	00031921
+system-of-measurement	amount	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): a system of related measures that facilitates the quanti	13577171	00033615
+tear	amount	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): a drop of the clear salty saline solution secreted by th	05405324	00033615
+tempo	relation	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): the rate of some repeating event	15283097	00031921
+term	relation	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): a word or expression used for some particular thing; "he	06303888	00031921
+terminology	relation	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): a system of words used to name things in a particular di	06304059	00031921
+tilt	relation	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): the property possessed by a line or surface that departs	05068080	00031921
+time-slot	amount	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a time assigned on a schedule or agenda; "the TV program	15270245	00033615
+twelve	amount	accept	WordNet's nearest placed ancestor, d5 (2026-09-17 review): the cardinal number that is the sum of eleven and one	13746785	00033615
+upgrade	relation	accept	WordNet's nearest placed ancestor, d4 (2026-09-17 review): the property possessed by a slope or surface that rises	05068918	00031921
+volume	amount	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): the amount of 3-dimensional space occupied by an object;	13779032	00033615
+word	relation	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): a unit of language that native speakers can identify; "w	06286395	00031921
+zero	amount	accept	WordNet's nearest placed ancestor, d5 (2026-09-17 review): a mathematical element that when added to another number	13742358	00033615
+# ... the same rule applied again after the new branch roots went in (round 2):
+signified	meaning	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): the meaning of a word or expression; the way in which a 	06602472	06601327
+# ... the same rule applied again after the new branch roots went in (round 3):
+signified	meaning	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): the meaning of a word or expression; the way in which a 	06602472	06601327
+# ... the same rule applied again after the new branch roots went in (round 4):
+signified	meaning	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): the meaning of a word or expression; the way in which a 	06602472	06601327
+# ===== Refinement (2026-09-17 review).  The pass above placed a concept on whatever core
+# already had; once the new branch roots were in, many of those parents were too coarse —
+# `north ⊑ relation` where `north ⊑ cardinal-compass-point` was available, `hammer ⊑ tool`
+# where `hand-tool` was.  Each concept's nearest placed WordNet ancestor is added; consensus's
+# pruning then drops the coarse edge it entails.  Core's ten ROOTS are excluded as subjects
+# (WordNet would have put `place` under `physical-object` and `possession` under `relation`,
+# collapsing the top), as are pairs already rejected and forty-odd read as wrong.
+absence	act	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): something that people do or cause to happen	01234345	00030358
+academic-degree	symbol	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): an arbitrary sign (written or printed) that has acqu	06697331	06806469
+aircraft	craft-vehicle	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a vehicle designed for navigation in or on water or 	02686568	03125870
+airport	landing-field	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a place where planes take off and land	02692232	02687992
+aisle	structure	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a thing constructed; a complex entity constructed of	02694045	04341686
+alliance	relation	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): an abstraction belonging to or characteristic of two	13792183	00031921
+altitude	distance	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the property created by the space between two object	05131647	05084201
+analogue	similarity	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): the quality of being similar	04746430	04743605
+apple-butter	preserves	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): fruit preserved by cooking with sugar	07642742	07642471
+appliance	commodity	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): articles of commerce	02729837	03076708
+aquarium	storage-tank	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a large (usually metallic) vessel for holding gases 	02732072	04388743
+artillery-shell	ammunition	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): projectiles to be fired from a gun	04190464	02703275
+aspect	feature	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a prominent attribute or aspect of something; "the m	05850624	05849789
+audio-amplifier	amplifier	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): electronic equipment that increases strength of sign	02756854	02705944
+awl	hand-tool	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a tool used with workers' hands	02763714	03489162
+bacon	cut-of-meat	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a piece of meat that has been cut from an animal car	07670433	07653394
+banquet	party	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a group of people gathered together for pleasure; "s	08253640	08252602
+batch	indefinite-quantity	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): an estimated quantity	13774404	13576355
+batter	foodstuff	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a substance that can be used or prepared for use as 	07860805	07566340
+bib	napkin	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a small piece of table linen that is used to wipe th	02834295	03807537
+binoculars	optical-instrument	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): an instrument designed to aid vision	02841315	03852280
+blade	tool	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): an implement used in the practice of a vocation	02848216	04451818
+bleach	agent	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): any entity that produces an effect or is responsible	14779205	00007347
+bloodshed	murder	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): unlawful premeditated killing of a human being by a 	00221178	00220522
+book-copy	product	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): an artifact that has been created by someone or some	02870092	04007894
+bottle-opener	hand-tool	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a tool used with workers' hands	02877962	03489162
+bread	foodstuff	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a substance that can be used or prepared for use as 	07679356	07566340
+brick	ceramic	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): an artifact made of hard brittle material produced f	02897820	02997391
+bubble	globe	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): an object with a spherical shape; "a ball of fire"	09229709	13899404
+budget	fund	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a reserve of money set aside for some purpose	13421832	13358549
+button	fastener	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): restraint that attaches to something or holds someth	02928608	03323703
+cage	enclosure	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a structure consisting of an area that has been encl	02936714	03285912
+camcorder	television-camera	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): television equipment consisting of a lens system tha	02942349	04404997
+can-opener	hand-tool	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a tool used with workers' hands	02951585	03489162
+canned-meat	foodstuff	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a substance that can be used or prepared for use as 	07573103	07566340
+capacity	volume	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): the amount of 3-dimensional space occupied by an obj	13779374	13779032
+capitalism	economic-system	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the system of production and distribution and consum	08364143	08366753
+car-battery	storage-battery	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a voltaic battery that stores electric charge	02961225	04328329
+card	paper	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a material made of cellulose pulp derived mainly fro	02962545	14974264
+carpenter-square	hand-tool	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a tool used with workers' hands	04291242	03489162
+chain	connector	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): an instrumentality that connects; "he soldered the c	02999410	03091374
+cheek	facial-feature	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): the characteristic parts of a person's face: eyes an	05602835	05601758
+childcare	assist	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the activity of contributing to the fulfillment of a	01209963	01207609
+chute	gutter	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a channel along the eaves or on the roof; collects a	03029603	03471473
+cigar	tobacco	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): leaves of the tobacco plant dried and prepared for s	03030035	04442831
+cigarette	tobacco	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): leaves of the tobacco plant dried and prepared for s	03030663	04442831
+circuit-card	printed-circuit	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): computer circuit consisting of an electronic sub-ass	03033986	04004210
+club-card	playing-card	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): one of a pack of cards that are used to play card ga	03053788	03963982
+coach	teacher	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a person whose occupation is teaching	09931418	10694258
+cocoa-butter	chocolate	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a food made from roasted ground cacao beans	07602996	07601999
+coldness	amount	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): how much there is or how many there are of something	05015117	00033615
+comparison	relation	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): an abstraction belonging to or characteristic of two	13853808	00031921
+computer-memory	storage-device	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a device that preserves information for retrieval	03744276	03744840
+concrete	building-material	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): material used for constructing buildings	14820180	14786479
+conspiracy	secret-plan	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a secret scheme to do something (especially somethin	05908882	05907682
+constituent-state	district	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a region marked off for administrative or other purp	08654360	08552138
+contraction	diminution	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the act of decreasing or reducing something	00369802	00351638
+control-stick	bar	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a rigid piece of metal or wood; usually used as a fa	04317976	02788689
+cooking-pot	cookware	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a kitchen utensil made of material that does not mel	03990474	03101986
+country	organization	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): a group of people who work together	08168978	08008335
+crank	hand-tool	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a tool used with workers' hands	03127024	03489162
+crystal	glassware	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): an article of tableware made of glass	03142834	03439064
+cupboard	structure	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): a thing constructed; a complex entity constructed of	03148324	04341686
+cupful	indefinite-quantity	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): an estimated quantity	13766733	13576355
+currency	standard	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a basis for comparison; a reference point against wh	13385913	07260623
+dairy-product	foodstuff	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a substance that can be used or prepared for use as 	07843775	07566340
+debate	formal-address	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the act of delivering a formal spoken communication 	07242104	07238694
+deposit	fund	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a reserve of money set aside for some purpose	13381145	13358549
+detail	part	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): something determined in relation to something that i	13809920	13809207
+detergent	compound	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): (chemistry) a substance formed by chemical union of 	03181899	14818238
+diagram	artifact	accept	WordNet's nearest placed ancestor after the new branches, d4 (2026-09-17 review): a man-made object taken as a whole	03186399	00021939
+dignity	feeling	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the experiencing of affective and emotional states; 	04886881	00026192
+disco	room	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): an area within a building enclosed by walls and floo	03206282	04105893
+disinfectant	agent	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): any entity that produces an effect or is responsible	03208229	00007347
+dismissal	notice.communication	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): advance notification (usually written) of the intent	07213079	07212612
+display	entertainment	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): an activity that is diverting and that holds the att	00521209	00429048
+distance	placement	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the spatial property of the way in which something i	05084201	05075602
+disturbance	state	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the way something is with respect to its main attrib	13977366	00024720
+dividend	income	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the financial gain (earned or unearned) accruing ove	13408023	13255145
+door	physical-barrier	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a structure or object that impedes free movement	03221720	02796623
+double	mathematical-product	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a quantity obtained by multiplication; "the product 	05860200	05859630
+dough	foodstuff	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a substance that can be used or prepared for use as 	07860988	07566340
+drain	pipage	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a long tube made of metal or plastic that is used to	03231912	03944672
+drill-press	machine-tool	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a powered machine for cutting or shaping or finishin	03240892	03702248
+drug	agent	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): any entity that produces an effect or is responsible	03247620	00007347
+due-east	cardinal-compass-point	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): one of the four main compass points	13832355	13831000
+due-west	cardinal-compass-point	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): one of the four main compass points	13834399	13831000
+duke	leader	accept	WordNet's nearest placed ancestor after the new branches, d4 (2026-09-17 review): a person who rules or guides or inspires others	10038778	09623038
+earplug	stopper	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): blockage consisting of an object designed to fill a 	03262072	03967942
+economic-consumption	demand.process	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): the ability and desire to purchase goods and service	13451804	13461162
+egg	foodstuff	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a substance that can be used or prepared for use as 	07840804	07566340
+egg-white	fixings	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): food that is a component of a mixture in cooking; "t	07841037	07809096
+electric-shock	process	accept	WordNet's nearest placed ancestor after the new branches, d5 (2026-09-17 review): a sustained phenomenon or one marked by gradual chan	00839292	00029677
+electric-switch	control	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a mechanism that controls the operation of a machine	04372370	03096960
+electronics	physics	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): the science of matter and energy and their interacti	06099269	06090869
+empire	monarchy	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): an autocracy governed by a monarch who usually inher	08405723	08363812
+engine	motor	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): machine that converts other forms of energy into mec	03287733	03789946
+entitlement	title	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): an established or recognized right; "a strong legal 	05181754	05181199
+erosion	condition	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a state at a particular time; "a condition (or state	14518924	13920835
+exemption	release	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a formal written statement of relinquishment	00213903	00213694
+exile	rejection	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the act of rejecting something; "his proposals were 	00207761	00203342
+expressway	highway	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a major road for any form of motor transport	03306610	03519981
+extent	state	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the way something is with respect to its main attrib	13941125	00024720
+eyeglass	lens	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a transparent optical device used to converge or div	03783430	03656484
+eyelid	tissue	accept	WordNet's nearest placed ancestor after the new branches, d4 (2026-09-17 review): part of an organism consisting of an aggregate of ce	05313822	05267345
+facade	front	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): the side that is seen or that goes first	03313333	03398467
+fair	group	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): any number of entities (members) considered as a uni	08408557	00031264
+fanny-pack	pouch	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a small or medium size container for holding or carr	03321563	03993180
+fault	trait	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): a distinguishing feature of your personal nature	04669692	04616059
+feather	animal-material	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): material derived from animals	01896031	14755804
+fence	physical-barrier	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a structure or object that impedes free movement	03327234	02796623
+film	show	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a social event involving a public performance or ent	06613686	06619065
+fingerboard	lumber	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the wood of trees cut and prepared for use as buildi	03341297	14943580
+firecracker	firework	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): (usually plural) a device with an explosive that bur	03345115	03348454
+firework	explosive	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a chemical substance that undergoes a rapid chemical	03348454	03304730
+fixings	foodstuff	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a substance that can be used or prepared for use as 	07809096	07566340
+flat	pneumatic-tire	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a tire made of reinforced rubber and filled with com	03359950	03971422
+float	hand-tool	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a tool used with workers' hands	03364599	03489162
+flour	foodstuff	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a substance that can be used or prepared for use as 	07569106	07566340
+food-coloring	foodstuff	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a substance that can be used or prepared for use as 	07567139	07566340
+footstep	indefinite-quantity	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): an estimated quantity	13757249	13576355
+forestry	biology	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): the science that studies living organisms	06071934	06037666
+formation	placement	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): the spatial property of the way in which something i	03385117	05075602
+freeze	act	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): something that people do or cause to happen	01063697	00030358
+friend	peer	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a person who is of equal standing with another in a 	09785042	09626238
+fruit-jelly	preserves	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): fruit preserved by cooking with sugar	07643306	07642471
+frustration	disappointment	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a feeling of dissatisfaction that results when your 	07540866	07540602
+fund	standard	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): a basis for comparison; a reference point against wh	13358549	07260623
+fur	animal-product	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a product made from animal material	14764061	14700745
+game-equipment	equipment	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): an instrumentality needed for an undertaking or to p	03413828	03294048
+garlic	seasoning	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): something added to food primarily for the savor it i	07818277	07809368
+garlic-press	mechanical-press	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): any machine that exerts pressure to form or shape or	03418915	03999992
+gear-tooth	structure	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a thing constructed; a complex entity constructed of	04453037	04341686
+gene	sequence	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): serial arrangement in which things follow in logical	05436752	08459252
+glue	adhesive	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a substance that unites or bonds surfaces together	14702875	14702416
+glycerol	liquid-substance	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a substance that is liquid at room temperature and p	14885684	14940386
+gooseberry	currant	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): any of several tart red or black berries used primar	07744430	07744246
+government-cabinet	board-of-directors	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a committee having supervisory powers; "the board ha	08381820	08322981
+gown	outerwear	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): clothing for use outdoors	03450516	03859495
+grade	spatial-relation	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the spatial property of a place where or way in whic	05068716	05074774
+grain	foodstuff	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a substance that can be used or prepared for use as 	07802417	07566340
+grain-meal	foodstuff	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a substance that can be used or prepared for use as 	07567707	07566340
+granite	stone	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): material consisting of the aggregate of minerals lik	14890286	14696793
+gravel	stone	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): material consisting of the aggregate of minerals lik	14698884	14696793
+gravity	attractive-force	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): the force by which one object attracts another	11464143	11426530
+grinding-machine	machine-tool	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a powered machine for cutting or shaping or finishin	03460040	03702248
+grout	plaster	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a mixture of lime or gypsum with sand and water; har	14891988	14992287
+gun-barrel	tubing	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): conduit consisting of a long hollow object (usually 	02795528	04493505
+haircut	diminution	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): the act of decreasing or reducing something	00359822	00351638
+ham	cut-of-meat	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a piece of meat that has been cut from an animal car	07669891	07653394
+hammer	hand-tool	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a tool used with workers' hands	03481172	03489162
+hand-file	hand-tool	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a tool used with workers' hands	03336839	03489162
+hard-cider	cider	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a beverage made from juice pressed from apples	07921615	07921455
+hard-disk	magnetic-disk	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): (computer science) a memory device consisting of a f	03492542	03706653
+hardboard	plank	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a stout length of sawn timber; made in a wide variet	15102455	15101854
+hat	headdress	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): clothing for the head	03497657	03502509
+head-covering	garment	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): an article of clothing; "garments of the finest silk	03502331	03419014
+headroom	spatial-relation	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the spatial property of a place where or way in whic	13778261	05074774
+heart-card	playing-card	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): one of a pack of cards that are used to play card ga	03507048	03963982
+heating-system	utility	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a facility composed of one or more pieces of equipme	03509025	04516874
+helmet	headdress	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): clothing for the head	03513137	03502509
+helping	indefinite-quantity	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): an estimated quantity	07578363	13576355
+herb	seasoning	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): something added to food primarily for the savor it i	07811416	07809368
+here-and-now	nowadays	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): the period of time that is happening now; any contin	15120050	15119536
+highlight	detail	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a small part that can be considered separately from 	13810141	13809920
+history.time	past	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): the time that has elapsed; "forget the past"	15121406	15120823
+holiday	time-period	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): an amount of time; "a time period of 30 years"; "has	15183428	15113229
+home	structure	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): a thing constructed; a complex entity constructed of	03528100	04341686
+ice-pack	bag	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a flexible container with a single opening; "he stuf	03557840	02773037
+impetus	force	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): physical energy or intensity; "he hit with all the f	05035820	05035353
+indemnity	safety	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): the state of being certain that adverse effects will	14539826	14538472
+influence.phenomenon	consequence	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a phenomenon that follows and is caused by some prev	11414608	11410625
+injection	medical-care	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): professional treatment for illness or injury	00697365	00657604
+ink	liquid-substance	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a substance that is liquid at room temperature and p	14917635	14940386
+insistence	support	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): aiding the cause or policy or interests of; "the pre	01214557	01212519
+intercom	system-instrumentality	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): instrumentality that combines interrelated interacti	03578055	04377057
+invitation	letter	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a written message addressed to a person or organizat	07186148	06624161
+ivory	animal-material	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): material derived from animals	14757547	14755804
+jam	preserves	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): fruit preserved by cooking with sugar	07642933	07642471
+jewel	jewelry	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): an adornment (as a bracelet or ring or necklace) mad	03596787	03597469
+job-placement	contact	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): close interaction; "they kept in daily contact"; "th	00039990	00039297
+joint	structure	accept	WordNet's nearest placed ancestor after the new branches, d4 (2026-09-17 review): a thing constructed; a complex entity constructed of	03601335	04341686
+juice	foodstuff	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a substance that can be used or prepared for use as 	07923748	07566340
+justification	circumstance	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): information that should be kept in mind when making 	05823054	05822746
+king	sovereign	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a nation's ruler or head of state usually by heredit	10231515	10628644
+king-card	playing-card	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): one of a pack of cards that are used to play card ga	03618219	03963982
+kingdom	monarchy	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): an autocracy governed by a monarch who usually inher	08405603	08363812
+language-unit	part	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): something determined in relation to something that i	06284225	13809207
+lap	thigh	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): the part of the leg between the hip and the knee	05562595	05562249
+laundry	garment	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): an article of clothing; "garments of the finest silk	03648219	03419014
+leather	animal-product	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a product made from animal material	14759722	14700745
+leg-of-meat	cut-of-meat	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a piece of meat that has been cut from an animal car	07655505	07653394
+light-meter	photographic-equipment	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): equipment used by a photographer	03667664	03926148
+limestone	stone	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): material consisting of the aggregate of minerals lik	14936226	14696793
+limit.quantity	indefinite-quantity	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): an estimated quantity	13758296	13576355
+line-of-descent	kinship	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): (anthropology) relatedness or connection by blood or	13813042	13812607
+linen	commodity	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): articles of commerce	03672352	03076708
+link	fastener	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): restraint that attaches to something or holds someth	03673971	03323703
+livestock	mammal	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): any warm-blooded vertebrate having the skin more or 	01887474	01861778
+lock	fastener	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): restraint that attaches to something or holds someth	03682487	03323703
+locker	room	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): an area within a building enclosed by walls and floo	02933462	04105893
+logic.cognition	principle	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a basic truth or law or assumption; "the principles 	05871618	05872477
+loudspeaker	transducer	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): an electrical device that converts one form of energ	03691459	04470953
+luggage-compartment	room	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): an area within a building enclosed by walls and floo	03696065	04105893
+magazine	product	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): an artifact that has been created by someone or some	03704210	04007894
+mail-slot	slot	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a small slit (as for inserting a coin or depositing 	03710819	04243370
+makeup	cosmetic	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a toiletry designed to beautify the body	03714235	03113152
+marble	stone	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): material consisting of the aggregate of minerals lik	14947807	14696793
+marker-post	signal	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): any nonverbal action or gesture that encodes a messa	07257815	06791372
+mat	floor-cover	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a covering for a floor	03727837	03366823
+maximum	limit.quantity	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the greatest amount of something that is possible or	13776137	13758296
+medicine	natural-science	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the sciences involved in the study of the physical w	06045562	06000400
+meeting	group	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): any number of entities (members) considered as a uni	08307589	00031264
+member	peer	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a person who is of equal standing with another in a 	10307234	09626238
+meteorology	earth-science	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): any of the sciences that deal with the earth or its 	06118563	06115476
+mile	indefinite-quantity	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): an estimated quantity	13776342	13576355
+millstone	building-material	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): material used for constructing buildings	03766935	14786479
+minimum	limit.quantity	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the greatest amount of something that is possible or	13763384	13758296
+minority	number	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): the property possessed by a sum or total or indefini	05122850	05121418
+morsel	indefinite-quantity	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): an estimated quantity	07579076	13576355
+motion	act	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): something that people do or cause to happen	00331950	00030358
+mouth	passage	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): a path or channel or duct through or along which som	05302499	05248181
+mystery	condition	accept	WordNet's nearest placed ancestor after the new branches, d5 (2026-09-17 review): a state at a particular time; "a condition (or state	05685538	13920835
+nail	fastener	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): restraint that attaches to something or holds someth	03804744	03323703
+name	language-unit	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): one of the natural units into which linguistic messa	06333653	06284225
+norm	standard	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a basis for comparison; a reference point against wh	13854488	07260623
+north	cardinal-compass-point	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): one of the four main compass points	13831176	13831000
+numeric-quantity	definite-quantity	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a specific measure of amount	13582013	13576101
+obstacle	structure	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a thing constructed; a complex entity constructed of	03839795	04341686
+ocean.quantity	indefinite-quantity	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): an estimated quantity	13776971	13576355
+one-fourth	fraction	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the quotient of two rational numbers	13737480	13732078
+one-half	fraction	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the quotient of two rational numbers	13736799	13732078
+opinion-poll	thinking	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): the process of using your mind to consider something	05800998	05770926
+orientation	spatial-direction	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): the spatial relation between something and the cours	13828075	13827426
+output	indefinite-quantity	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): an estimated quantity	13758745	13576355
+owner	businessman	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a person engaged in commercial or industrial busines	10388924	09882007
+paint	coating	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a thin layer covering something; "a second coat of p	03875218	03058107
+pan	cookware	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a kitchen utensil made of material that does not mel	03880531	03101986
+paper-pulp	compound	accept	WordNet's nearest placed ancestor after the new branches, d6 (2026-09-17 review): (chemistry) a substance formed by chemical union of 	14794418	14818238
+pardon	warrant	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a writ from a court commanding police to perform spe	06552639	06547059
+parking	spatial-relation	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the spatial property of a place where or way in whic	13778671	05074774
+participant	peer	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a person who is of equal standing with another in a 	10401829	09626238
+pass	permission	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): approval to do something; "he asked permission to le	06690408	06689297
+pause	amount	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): how much there is or how many there are of something	15271008	00033615
+paving	artifact	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a man-made object taken as a whole	14977504	00021939
+pestle	hand-tool	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a tool used with workers' hands	03919289	03489162
+phone-call	telephony	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): transmitting speech at a distance	06272803	06272290
+phone-number	signal	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): any nonverbal action or gesture that encodes a messa	06426111	06791372
+photographic-film	photographic-paper	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): light-sensitive paper on which photograph can be pri	03338821	03926412
+physical-barrier	structure	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a thing constructed; a complex entity constructed of	02796623	04341686
+pie	pastry	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): any of various baked foods made of dough or batter	07625493	07622708
+pipe-cutter	hand-tool	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a tool used with workers' hands	03946076	03489162
+placement	spatial-relation	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): the spatial property of a place where or way in whic	05075602	05074774
+plane	hand-tool	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a tool used with workers' hands	03954731	03489162
+playpen	enclosure	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a structure consisting of an area that has been encl	03964495	03285912
+pliers	hand-tool	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a tool used with workers' hands	03966976	03489162
+plunger	hand-tool	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a tool used with workers' hands	03970156	03489162
+pocket	pouch	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a small or medium size container for holding or carr	03972524	03993180
+pole	rod	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a long thin implement made of metal or wood	03976657	04100174
+polish-preparation	compound	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): (chemistry) a substance formed by chemical union of 	14996020	14818238
+politics	relation	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): an abstraction belonging to or characteristic of two	13840719	00031921
+pottery	utensil	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): an implement for practical use (especially in a hous	03992703	04516672
+pouch	bag	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a flexible container with a single opening; "he stuf	03993180	02773037
+pound	enclosure	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a structure consisting of an area that has been encl	03993703	03285912
+president	representative	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a person who represents others	10467179	10522035
+prince	leader	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a person who rules or guides or inspires others	10472799	09623038
+princess	leader	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a person who rules or guides or inspires others	10474064	09623038
+privacy	disposition	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): your usual mood; "he has a happy disposition"	04622932	04623612
+problem	topic	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the subject matter of a conversation or discussion; 	06784003	06599788
+product.phenomenon	consequence	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a phenomenon that follows and is caused by some prev	11415842	11410625
+production-line	system-instrumentality	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): instrumentality that combines interrelated interacti	04008385	04377057
+professional	adult	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a fully developed person from maturity onward	10480253	09605289
+projector	optical-instrument	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): an instrument designed to aid vision	04009552	03852280
+proportion	placement	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): the spatial property of the way in which something i	05076827	05075602
+public-address-system	system-instrumentality	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): instrumentality that combines interrelated interacti	04018155	04377057
+public-service	assist	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the activity of contributing to the fulfillment of a	01210281	01207609
+publication	product	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): an artifact that has been created by someone or some	06589574	04007894
+pumice-stone	stone	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): material consisting of the aggregate of minerals lik	14700438	14696793
+puzzle	game-equipment	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): the game equipment needed in order to play a particu	04028315	03413828
+racism	bias	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a partiality that prevents objective consideration o	06203758	06201908
+radio	system-instrumentality	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): instrumentality that combines interrelated interacti	04041544	04377057
+rainbow	curved-shape	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the trace of a point whose direction of motion chang	09403427	13867641
+rake	spatial-relation	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the spatial property of a place where or way in whic	05069199	05074774
+rake-tool	tool	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): an implement used in the practice of a vocation	04050066	04451818
+rally	group	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): any number of entities (members) considered as a uni	08358332	00031264
+ratio	relation	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): an abstraction belonging to or characteristic of two	13819207	00031921
+reaction.phenomenon	consequence	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a phenomenon that follows and is caused by some prev	11417129	11410625
+realm	situation	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): the general state of things; the combination of circ	14514805	13927383
+recompense	correction	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): the act of offering an improvement to replace a mist	00259643	00258854
+record.quantity	numeric-quantity	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a concept of quantity involving zero and units; "eve	13596986	13582013
+refreshment	restoration	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the act of restoring something or someone to a satis	00401783	00268557
+relish-condiment	seasoning	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): something added to food primarily for the savor it i	07582441	07809368
+residual	part	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): something determined in relation to something that i	13810818	13809207
+restraint.cognition	restriction	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a principle that limits the extent of something; "I 	06247701	05846355
+result	ending	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): event whose occurrence ends something; "his death ma	07292694	07291312
+rhinestone	mineral	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): solid homogeneous inorganic substances occurring in 	14694453	14662574
+rhythm	time	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the continuum of experience in which events pass fro	07086518	00028270
+right-wing	clique	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): an exclusive circle of people with a common purpose	08416652	08240633
+road-shoulder	limit	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the boundary of a specific area	04206948	08592656
+role-model	leader	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a person who rules or guides or inspires others	10324851	09623038
+roll	cylinder	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a solid bounded by a cylindrical surface and two par	04101232	13865298
+romper	garment	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): an article of clothing; "garments of the finest silk	04104770	03419014
+room	structure	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a thing constructed; a complex entity constructed of	04105893	04341686
+rug	floor-cover	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a covering for a floor	04118021	03366823
+sail	piece	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a separate part of a whole; "an important piece of t	04127904	03932203
+salt	seasoning	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): something added to food primarily for the savor it i	07813107	07809368
+sandstone	stone	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): material consisting of the aggregate of minerals lik	14995541	14696793
+sauce	seasoning	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): something added to food primarily for the savor it i	07829412	07809368
+saw	hand-tool	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a tool used with workers' hands	04140064	03489162
+scaffolding	system-instrumentality	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): instrumentality that combines interrelated interacti	04141712	04377057
+scale-of-measurement	standard	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a basis for comparison; a reference point against wh	13850304	07260623
+scenario	premise	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a statement that is assumed to be true and from whic	06756111	06753800
+scheduling-conflict	characteristic	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a distinguishing quality	04714679	04731497
+score	numeric-quantity	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a concept of quantity involving zero and units; "eve	13594585	13582013
+scraper	hand-tool	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a tool used with workers' hands	04150980	03489162
+scratch	appearance	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): outward or visible aspect of a person or thing	04693900	04673965
+screw	fastener	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): restraint that attaches to something or holds someth	04153751	03323703
+screwdriver	hand-tool	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a tool used with workers' hands	04154565	03489162
+seating-place	region	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): a large indefinite location on the surface of the Ea	08647616	08630985
+sector	aspect	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a distinct feature or element in a problem; "he stud	05853100	05850624
+security	measure	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): any maneuver made as part of progress toward a goal;	00823316	00174412
+shaft	rod	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a long thin implement made of metal or wood	04182322	04100174
+shaper	machine-tool	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a powered machine for cutting or shaping or finishin	04184435	03702248
+shaving	cleaning	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): the act of making something clean; "he gave his shoe	00254769	00251013
+sheet	bed-linen	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): linen or cotton articles for a bed (as sheets and pi	04188179	02821030
+shot	photograph	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a representation of a person or scene in the form of	06614729	03925226
+shovel	hand-tool	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a tool used with workers' hands	04208210	03489162
+sieve	strainer	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a filter to retain larger pieces while smaller piece	04216634	04332243
+sign	clue	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): evidence that helps to solve a problem	06646243	06643763
+slant	point-of-view	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a mental position from which things are viewed; "we 	06211078	06210363
+slate	stone	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): material consisting of the aggregate of minerals lik	14700162	14696793
+sleeping-bag	bag	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a flexible container with a single opening; "he stuf	04235860	02773037
+smudge	appearance	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): outward or visible aspect of a person or thing	04694441	04673965
+solder	alloy	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a mixture containing two or more metallic elements o	14718822	14586769
+soldering-iron	hand-tool	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a tool used with workers' hands	04258859	03489162
+south	cardinal-compass-point	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): one of the four main compass points	13833375	13831000
+spacecraft	craft-vehicle	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a vehicle designed for navigation in or on water or 	04264914	03125870
+spatula	hand-tool	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a tool used with workers' hands	04269944	03489162
+spectacles	optical-instrument	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): an instrument designed to aid vision	04272054	03852280
+spectrometer	optical-instrument	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): an instrument designed to aid vision	03726516	03852280
+splint	mechanism	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): device consisting of a piece of machinery; has movin	04282494	03738472
+spread	seasoning	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): something added to food primarily for the savor it i	07856270	07809368
+spreader	hand-tool	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a tool used with workers' hands	04287986	03489162
+spring-water	liquid-substance	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a substance that is liquid at room temperature and p	07936015	14940386
+staff-rod	symbol	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): an arbitrary sign (written or printed) that has acqu	07267160	06806469
+standard	system-of-measurement	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a system of related measures that facilitates the qu	07260623	13577171
+station-facility	facility	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a building or place that provides a particular servi	04306080	03315023
+steak	cut-of-meat	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a piece of meat that has been cut from an animal car	07657903	07653394
+steel	alloy	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a mixture containing two or more metallic elements o	14802450	14586769
+stereo-system	system-instrumentality	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): instrumentality that combines interrelated interacti	04315948	04377057
+stopper	occlusion	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): an obstruction in a pipe or tube; "we had to call a 	03967942	02853449
+stove	kitchen-appliance	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a home appliance used in preparing food	04330340	03620052
+strand	necklace	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): jewelry consisting of a cord or chain (often bearing	02999757	03814906
+straw	tubing	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): conduit consisting of a long hollow object (usually 	04334232	04493505
+struggle	labor	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): productive work (especially physical work done for w	00622068	00620752
+sugar	sweetener	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): something added to foods to make them taste sweeter	07859284	07858595
+sunscreen	skin-cream	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): toiletry consisting of any of various substances in 	04357314	03128519
+supply	indefinite-quantity	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): an estimated quantity	13777344	13576355
+surgical-gown	garment	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): an article of clothing; "garments of the finest silk	03450734	03419014
+surgical-probe	medical-instrument	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): instrument used in the practice of medicine	04006411	03739693
+surrogate	peer	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a person who is of equal standing with another in a 	10680153	09626238
+sweatshirt	pullover	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a sweater that is put on by pulling it over the head	04370456	04021028
+swimming-pool	pool	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): an excavation that is (usually) filled with water	04371225	03982060
+swing	act	accept	WordNet's nearest placed ancestor after the new branches, d4 (2026-09-17 review): something that people do or cause to happen	00327824	00030358
+syllable	language-unit	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): one of the natural units into which linguistic messa	06304671	06284225
+symbol	signal	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): any nonverbal action or gesture that encodes a messa	06806469	06791372
+synthetic-rubber	compound	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): (chemistry) a substance formed by chemical union of 	15006789	14818238
+tablecloth	table-linen	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): linens for the dining table	04380143	04380617
+tampon	stopper	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): blockage consisting of an object designed to fill a 	04388162	03967942
+target	reference-point	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): an indicator that orients you generally; "it is used	07262108	07258332
+tariff	tax	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): charge against a citizen's person or property or act	13315999	13308999
+tea-leaf	herb	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): aromatic potherb used in cookery for its savory qual	07932841	07811416
+tear	indefinite-quantity	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): an estimated quantity	05405324	13576355
+telescope	magnifier	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a scientific instrument that magnifies an image	04403638	03709206
+television-system	system-instrumentality	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): instrumentality that combines interrelated interacti	04404412	04377057
+term	word	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a unit of language that native speakers can identify	06303888	06286395
+thinner	agent	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): any entity that produces an effect or is responsible	14835333	00007347
+time-period	amount	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): how much there is or how many there are of something	15113229	00033615
+time-unit	amount	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): how much there is or how many there are of something	15154774	00033615
+tofu	foodstuff	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a substance that can be used or prepared for use as 	07709881	07566340
+tone	manner-of-speaking	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): your characteristic style or manner of expressing yo	07082573	07071483
+tool-bag	bag	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a flexible container with a single opening; "he stuf	04452528	02773037
+toothpick	hand-tool	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a tool used with workers' hands	04453390	03489162
+tote	bag	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a flexible container with a single opening; "he stuf	02970408	02773037
+towel	piece	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a separate part of a whole; "an important piece of t	04459362	03932203
+trophy	symbol	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): an arbitrary sign (written or printed) that has acqu	04487996	06806469
+umbrella	canopy	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a covering (usually of cloth) that serves as a roof 	04507155	02951843
+upgrade	grade	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): the gradient of a slope or road or other surface; "t	05068918	05068716
+use	practice	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a customary way of operation or behavior; "it is the	00414179	00410247
+vacation	time-period	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): an amount of time; "a time period of 30 years"; "has	15137890	15113229
+vector	variable	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a quantity that can assume any of a set of values	05864577	05857459
+vitamin	food	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): any substance that can be metabolized by an animal t	15089258	00021265
+wall	divider	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a vertical structure that divides or separates (as a	04546855	03894379
+wallop	consequence	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a phenomenon that follows and is caused by some prev	11414411	11410625
+ward	housing	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): structures collectively in which people are housed	04549919	03546340
+water-faucet	faucet	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a regulator for controlling the flow of a liquid fro	04559451	03325088
+watercraft	craft-vehicle	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a vehicle designed for navigation in or on water or 	04530566	03125870
+web	system	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a group of independent but interrelated elements com	08434259	08435388
+whiskey	liquor	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): an alcoholic beverage that is distilled rather than 	07906284	07901587
+wickerwork	product	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): an artifact that has been created by someone or some	04582205	04007894
+wire	connector	accept	WordNet's nearest placed ancestor after the new branches, d3 (2026-09-17 review): an instrumentality that connects; "he soldered the c	04594218	03091374
+wiring	labor	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): productive work (especially physical work done for w	00714806	00620752
+wreck	condition	accept	WordNet's nearest placed ancestor after the new branches, d2 (2026-09-17 review): a state at a particular time; "a condition (or state	14423870	13920835
+wrench	hand-tool	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a tool used with workers' hands	04606574	03489162
+zone	topographic-point	accept	WordNet's nearest placed ancestor after the new branches, d1 (2026-09-17 review): a point located with respect to surface features of 	08688247	08664443

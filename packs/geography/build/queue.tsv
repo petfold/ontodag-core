@@ -21,7 +21,11 @@ single	achondrite	physical-object	only wordnet
 single	achondrite	substance	only sumo
 single	address	geographical-area	only sumo
 single	adobe-clay	artifact	only opencyc
+single	adobe-clay	ground	only opencyc
+single	adobe-clay	part	only wordnet
+single	adobe-clay	relation	only wordnet
 single	adobe-clay	soil	only wordnet
+single	adobe-clay	supply	only opencyc
 single	advection	event	only sumo
 single	aegean-island	geographical-area	only sumo
 single	aegean-island	physical-object	only wordnet
@@ -64,6 +68,8 @@ single	alluvial-flat	place	only sumo
 single	alluvial-flat	plain	only wordnet
 single	alluvial-flat	yard	only sumo
 single	alluvial-sediment	substance	only wordnet
+single	alluvial-soil	part	only wordnet
+single	alluvial-soil	relation	only wordnet
 single	ally	geographical-area	only sumo
 single	alp	geographical-area	only sumo
 single	alp	geological-formation	only wordnet
@@ -127,6 +133,8 @@ single	arete	land	only sumo
 single	arete	physical-object	only wordnet
 single	arete	place	only sumo
 single	arete	yard	only sumo
+single	argil	part	only wordnet
+single	argil	relation	only wordnet
 single	arroyo	cavity	only opencyc
 single	arroyo	geological-formation	only wordnet
 single	arroyo	natural-depression	only wordnet
@@ -150,6 +158,7 @@ single	atlas	contract-condition	only sumo
 single	atlas	device	only sumo
 single	atlas	file	only sumo
 single	atlas	indication	only sumo
+single	atlas	language-unit	only sumo
 single	atlas	line-of-text	only sumo
 single	atlas	mechanism	only sumo
 single	atlas	news	only sumo
@@ -185,10 +194,14 @@ single	aurora-borealis	aurora-australis	only opencyc
 single	aurora-borealis	natural-event	only wordnet
 single	aurora-borealis	process	only wordnet
 single	aurora-borealis	situation	only opencyc
+single	autumnal-equinox	day	only sumo
 single	autumnal-equinox	quantity	only sumo
 single	avalanche	event	only opencyc
 single	avalanche	situation	only opencyc
+single	azimuthal-equidistant-projection	function	only opencyc
 single	azimuthal-equidistant-projection	map-projection	only opencyc
+single	azimuthal-projection	relation	only wikidata
+single	backlog	geographical-feature	only wikidata
 single	backwater	geographical-area	only sumo
 single	backwater	place	only sumo
 single	backwater	pool	only sumo
@@ -228,6 +241,8 @@ single	bedrock	physical-object	only wordnet
 single	bedrock	substance	only sumo
 single	bend	geographical-area	only sumo
 single	bentonite	mineral	only sumo
+single	bentonite	part	only wordnet
+single	bentonite	relation	only wordnet
 single	bentonite	soil	only wordnet
 single	berm	geographical-area	only sumo
 single	berm	natural-elevation	only wordnet
@@ -268,11 +283,15 @@ single	bog	habitat	only wikidata
 single	bog	landform	only yago
 single	bog	place	only yago
 single	bog-soil	material	only wordnet
+single	bog-soil	part	only wordnet
+single	bog-soil	relation	only wordnet
 single	bog-soil	substance	only wordnet
+single	boulder	ground	only opencyc
 single	boulder	landform	only yago
 single	boulder	natural-object	only wordnet
 single	boulder	physical-object	only wordnet
 single	boulder	place	only yago
+single	brink	geographical-feature	only wikidata
 single	brook	body-of-water	only wordnet
 single	brooklet	body-of-water	only wordnet
 single	brooklet	stream	only wordnet
@@ -280,6 +299,7 @@ single	bungalow	geographical-area	only sumo
 single	buoy	artifact	only opencyc
 single	butte	geographical-feature	only wikidata
 single	butte	geological-formation	only wordnet
+single	butte	ground	only opencyc
 single	butte	physical-object	only wordnet
 single	butte	place	only yago
 single	caldera	cavity	only opencyc
@@ -289,7 +309,9 @@ single	caldera	geological-formation	only wordnet
 single	caldera	physical-object	only wordnet
 single	caldera	place	only yago
 single	caliche	material	only wordnet
+single	caliche	part	only wordnet
 single	caliche	physical-object	only sumo
+single	caliche	relation	only wordnet
 single	caliche	substance	only wordnet
 single	calm-air	natural-event	only wordnet
 single	calm-air	process	only wordnet
@@ -309,13 +331,12 @@ single	canyonside	yard	only sumo
 single	cape	physical-object	only wordnet
 single	cape	shore	only wikidata
 single	capital-city	geographical-area	only sumo
-single	cardinal-compass-point	attribute	only sumo
-single	cardinal-compass-point	property	only sumo
 single	caribbean-island	geographical-area	only sumo
 single	caribbean-island	physical-object	only wordnet
 single	caribbean-island	place	only sumo
 single	caribbean-island	yard	only sumo
 single	cartesian-coordinate-system	information	only opencyc
+single	cartesian-coordinate-system	system	only opencyc
 single	cartography	research	only wikidata
 single	cartography	science	only wikidata
 single	cascade	body-of-water	only wordnet
@@ -342,8 +363,12 @@ single	celestial-navigation	procedure	only sumo
 single	celestial-navigation	volition	only sumo
 single	channel	geographical-feature	only wikidata
 single	chernozemic-soil	material	only wordnet
+single	chernozemic-soil	part	only wordnet
+single	chernozemic-soil	relation	only wordnet
 single	chernozemic-soil	soil	only wordnet
 single	chernozemic-soil	substance	only wordnet
+single	china-clay	part	only wordnet
+single	china-clay	relation	only wordnet
 single	china-clay	soil	only wordnet
 single	chinook	natural-event	only wordnet
 single	chinook	process	only wordnet
@@ -409,11 +434,17 @@ single	cloud-bank	material	only sumo
 single	cloud-bank	natural-event	only wordnet
 single	cloud-bank	process	only wordnet
 single	cloud-bank	substance	only sumo
+single	cloud-ceiling	distance	only wordnet
+single	cloud-ceiling	placement	only wordnet
 single	cloud-ceiling	quantity	only sumo
+single	cloud-ceiling	relation	only wordnet
+single	cloud-ceiling	spatial-relation	only wordnet
 single	cloudiness	natural-event	only wordnet
 single	cloudiness	process	only wordnet
 single	cloudiness	weather	only wordnet
 single	clunch	limestone	only wikidata
+single	clunch	part	only wordnet
+single	clunch	relation	only wordnet
 single	coal-seam	layer	only wordnet
 single	coal-seam	physical-object	only wordnet
 single	coal-seam	place	only wordnet
@@ -425,6 +456,7 @@ single	coastal-plain	shore	only wikidata
 single	coastline	environment	only opencyc
 single	coastline	geographical-area	only sumo
 single	coastline	land	only sumo
+single	coastline	lineation	only wordnet
 single	coastline	physical-object	only wordnet
 single	coastline	yard	only sumo
 single	cold-front	event	only opencyc
@@ -438,6 +470,7 @@ single	cold-wave	process	only wordnet
 single	cold-weather	natural-event	only wordnet
 single	cold-weather	process	only wordnet
 single	cold-weather	quantity	only sumo
+single	cold-weather	time	only sumo
 single	compass	equipment	only wikidata
 single	compass	indication	only sumo
 single	compass	information	only sumo
@@ -449,12 +482,16 @@ single	compass-card	physical-object	only wordnet
 single	compass-card	vehicle-body	only sumo
 single	compass-point	attribute	only sumo
 single	compass-point	property	only sumo
+single	compass-point	relation	only wordnet
+single	compass-point	spatial-direction	only wordnet
 single	condensation	event	only sumo
 single	condensation	process	only wordnet
 single	conformal-projection	information	only sumo
 single	conformal-projection	physical-object	only wordnet
+single	conformal-projection	relation	only wikidata
 single	conic-projection	information	only sumo
 single	conic-projection	physical-object	only wordnet
+single	conic-projection	relation	only wikidata
 single	constituent-state	geographical-area	only sumo
 single	continent	geographical-area	only sumo
 single	continental-climate	atmospheric-science	only wikidata
@@ -496,6 +533,8 @@ single	contrail	process	only wordnet
 single	contrail	substance	only sumo
 single	contrail	weather	only wikidata
 single	convection	event	only sumo
+single	coordinate-system	system	only opencyc
+single	coordinated-universal-time	time-period	only opencyc
 single	coral-reef	geographical-feature	only wikidata
 single	coral-reef	geological-formation	only wordnet
 single	coral-reef	island	only wikidata
@@ -543,6 +582,7 @@ single	cyclonic-storm	low	only claude
 single	cyclonic-storm	natural-event	only wordnet
 single	cyclonic-storm	process	only wordnet
 single	cyclonic-storm	storm	only wordnet
+single	cylindrical-projection	relation	only wikidata
 single	dairy	geographic-point	only wordnet
 single	dale	geographical-feature	only wikidata
 single	dale	geological-formation	only wordnet
@@ -562,6 +602,8 @@ single	dell	physical-object	only wordnet
 single	depth-finder	physical-object	only wordnet
 single	depth-finder	vehicle-body	only sumo
 single	desert	geographical-feature	only wikidata
+single	desert-soil	part	only wordnet
+single	desert-soil	relation	only wordnet
 single	dew	compound	only sumo
 single	dew	material	only sumo
 single	dew	process	only wordnet
@@ -623,8 +665,10 @@ single	drought	event	only opencyc
 single	drought	situation	only opencyc
 single	drought	state	only wordnet
 single	drought	weather	only opencyc
+single	dry-season	amount	only wordnet
 single	dry-season	event	only opencyc
 single	dry-season	situation	only opencyc
+single	dry-season	time-period	only wordnet
 single	dry-season	weather	only opencyc
 single	due-east	compass-point	only wordnet
 single	due-west	compass-point	only wordnet
@@ -650,13 +694,21 @@ single	earth-crust	physical-object	only wordnet
 single	earth-mantle	geographical-area	only sumo
 single	earth-mantle	physical-object	only wordnet
 single	east-by-north	attribute	only sumo
+single	east-by-north	orientation	only sumo
 single	east-by-north	property	only sumo
+single	east-by-north	relation	only wordnet
 single	east-by-south	attribute	only sumo
+single	east-by-south	orientation	only sumo
 single	east-by-south	property	only sumo
+single	east-by-south	relation	only wordnet
 single	east-northeast	attribute	only sumo
+single	east-northeast	orientation	only sumo
 single	east-northeast	property	only sumo
+single	east-northeast	relation	only wordnet
 single	east-southeast	attribute	only sumo
+single	east-southeast	orientation	only sumo
 single	east-southeast	property	only sumo
+single	east-southeast	relation	only wordnet
 single	east-wind	natural-event	only wordnet
 single	east-wind	process	only wordnet
 single	east-wind	situation	only opencyc
@@ -696,10 +748,15 @@ single	eon	quantity	only sumo
 single	epoch	quantity	only sumo
 single	equal-area-projection	information	only sumo
 single	equal-area-projection	physical-object	only wordnet
+single	equal-area-projection	relation	only wikidata
 single	equator	physical-object	only wordnet
+single	equidistant-projection	function	only wikidata
+single	equidistant-projection	relation	only wikidata
 single	equinox	event	only opencyc
 single	equinox	situation	only opencyc
+single	equirectangular-projection	function	only wikidata
 single	equirectangular-projection	map-projection	only wikidata
+single	equirectangular-projection	relation	only wikidata
 single	erosive-wash	geographical-area	only sumo
 single	erosive-wash	geological-formation	only wordnet
 single	erosive-wash	natural-depression	only wordnet
@@ -782,6 +839,7 @@ single	folium	substance	only sumo
 single	foothill	geographical-area	only sumo
 single	foothill	geographical-feature	only wikidata
 single	foothill	geological-formation	only wordnet
+single	foothill	ground	only opencyc
 single	foothill	land	only sumo
 single	foothill	physical-object	only wordnet
 single	foothill	place	only sumo
@@ -834,9 +892,12 @@ single	fucoid	agent	only sumo
 single	fucoid	organism	only sumo
 single	fucoid	plant	only sumo
 single	fucoid	species	only sumo
+single	fuller's-earth	part	only wordnet
+single	fuller's-earth	relation	only wordnet
 single	gale	natural-event	only wordnet
 single	gale	process	only wordnet
 single	gale	situation	only opencyc
+single	gap	geographical-feature	only wikidata
 single	gazetteer	collection	only yago
 single	gazetteer	component	only sumo
 single	gazetteer	contract-condition	only sumo
@@ -844,6 +905,7 @@ single	gazetteer	dataset	only yago
 single	gazetteer	device	only sumo
 single	gazetteer	file	only sumo
 single	gazetteer	indication	only sumo
+single	gazetteer	language-unit	only sumo
 single	gazetteer	line-of-text	only sumo
 single	gazetteer	mechanism	only sumo
 single	gazetteer	news	only sumo
@@ -875,6 +937,7 @@ single	geological-cataclysm	event	only sumo
 single	geological-cataclysm	natural-event	only wordnet
 single	geological-cataclysm	process	only wordnet
 single	geological-era	quantity	only sumo
+single	geological-era	time-period	only opencyc
 single	geological-erosion	process	only wordnet
 single	geological-fault	attribute	only wordnet
 single	geological-fault	cavity	only opencyc
@@ -889,6 +952,7 @@ single	geological-horizon	physical-object	only wordnet
 single	geological-horizon	place	only wordnet
 single	geological-horizon	soil-horizon	only claude
 single	geological-period	quantity	only sumo
+single	geological-period	time-period	only opencyc
 single	geological-phenomenon	accomplishment	only sumo
 single	geological-phenomenon	act	only sumo
 single	geological-phenomenon	activity	only sumo
@@ -917,11 +981,15 @@ single	geyser	geological-formation	only wordnet
 single	geyser	physical-object	only wordnet
 single	geyser	pool	only sumo
 single	geyser	stream	only sumo
+single	gilgai-soil	part	only wordnet
+single	gilgai-soil	relation	only wordnet
 single	glacial-ablation	geological-process	only wordnet
 single	glacial-ablation	process	only wordnet
 single	glacial-boulder	natural-object	only wordnet
 single	glacial-boulder	physical-object	only wordnet
 single	glacial-boulder	rock	only wordnet
+single	glacial-till	part	only wordnet
+single	glacial-till	relation	only wordnet
 single	glacier	geographical-feature	only wikidata
 single	glacier	geological-formation	only wordnet
 single	glaciology	research	only wikidata
@@ -932,7 +1000,9 @@ single	glen	physical-object	only wordnet
 single	glen	place	only yago
 single	global-positioning-system	device	only sumo
 single	global-positioning-system	physical-object	only wordnet
+single	global-positioning-system	system-instrumentality	only wordnet
 single	global-positioning-system	vehicle-body	only sumo
+single	gnomonic-projection	function	only opencyc
 single	gnomonic-projection	map-projection	only opencyc
 single	good-weather	amateur	only sumo
 single	good-weather	ambiance	only sumo
@@ -944,10 +1014,12 @@ single	good-weather	custom	only sumo
 single	good-weather	danger	only sumo
 single	good-weather	expert	only sumo
 single	good-weather	freedom	only sumo
+single	good-weather	hero	only sumo
 single	good-weather	lap	only sumo
 single	good-weather	literary-works	only sumo
 single	good-weather	natural-event	only wordnet
 single	good-weather	normal	only sumo
+single	good-weather	point-of-view	only sumo
 single	good-weather	practice	only sumo
 single	good-weather	process	only wordnet
 single	good-weather	property	only sumo
@@ -971,6 +1043,7 @@ single	grassland	physical-object	only wordnet
 single	grassland	place	only wordnet
 single	grassland	region	only wordnet
 single	greenhouse-effect	action	only opencyc
+single	greenhouse-effect	extension.time	only sumo
 single	greenhouse-effect	increase	only sumo
 single	greenhouse-effect	process	only wordnet
 single	greenhouse-effect	situation	only opencyc
@@ -979,7 +1052,9 @@ single	grotto	geographical-feature	only wikidata
 single	grotto	geological-formation	only wordnet
 single	grotto	physical-object	only wordnet
 single	grotto	place	only yago
+single	groundmass	part	only wordnet
 single	groundmass	physical-object	only sumo
+single	groundmass	relation	only wordnet
 single	groundmass	stone	only wordnet
 single	groundmass	substance	only wordnet
 single	growler	geological-formation	only wordnet
@@ -1097,10 +1172,12 @@ single	hot-weather	custom	only sumo
 single	hot-weather	danger	only sumo
 single	hot-weather	expert	only sumo
 single	hot-weather	freedom	only sumo
+single	hot-weather	hero	only sumo
 single	hot-weather	lap	only sumo
 single	hot-weather	literary-works	only sumo
 single	hot-weather	natural-event	only wordnet
 single	hot-weather	normal	only sumo
+single	hot-weather	point-of-view	only sumo
 single	hot-weather	practice	only sumo
 single	hot-weather	process	only wordnet
 single	hot-weather	property	only sumo
@@ -1110,6 +1187,8 @@ single	hot-weather	tension	only sumo
 single	hot-weather	way	only sumo
 single	hour-circle	physical-object	only wordnet
 single	house	geographical-area	only sumo
+single	humus	part	only wordnet
+single	humus	relation	only wordnet
 single	hurricane	cyclone	only wikidata
 single	hurricane	event	only opencyc
 single	hurricane	low	only wikidata
@@ -1184,6 +1263,7 @@ single	igneous-intrusion	mineral	only sumo
 single	igneous-intrusion	natural-object	only wordnet
 single	igneous-intrusion	physical-object	only wordnet
 single	igneous-intrusion	substance	only sumo
+single	igneous-rock	ground	only opencyc
 single	igneous-sill	material	only sumo
 single	igneous-sill	mineral	only sumo
 single	igneous-sill	natural-object	only wordnet
@@ -1192,9 +1272,12 @@ single	igneous-sill	substance	only sumo
 single	inclinometer	equipment	only wikidata
 single	inclinometer	vehicle-body	only sumo
 single	index-fossil	physical-object	only wordnet
+single	indurated-clay	part	only wordnet
+single	indurated-clay	relation	only wordnet
 single	inertial-navigation-system	artifact	only opencyc
 single	inertial-navigation-system	device	only opencyc
 single	inertial-navigation-system	structure	only opencyc
+single	inertial-navigation-system	system	only opencyc
 single	inlet	geographical-feature	only wikidata
 single	inlet	place	only yago
 single	instrument-flying	accomplishment	only sumo
@@ -1217,9 +1300,11 @@ single	isostasy	custom	only sumo
 single	isostasy	danger	only sumo
 single	isostasy	expert	only sumo
 single	isostasy	freedom	only sumo
+single	isostasy	hero	only sumo
 single	isostasy	lap	only sumo
 single	isostasy	literary-works	only sumo
 single	isostasy	normal	only sumo
+single	isostasy	point-of-view	only sumo
 single	isostasy	practice	only sumo
 single	isostasy	property	only sumo
 single	isostasy	situation	only wordnet
@@ -1258,6 +1343,8 @@ single	khamsin	process	only wordnet
 single	khamsin	weather	only wordnet
 single	kitchen	geographical-area	only sumo
 single	kitchenette	geographical-area	only sumo
+single	kitty-litter	part	only wordnet
+single	kitty-litter	relation	only wordnet
 single	knoll	geological-formation	only wordnet
 single	knoll	natural-elevation	only wordnet
 single	knoll	physical-object	only wordnet
@@ -1291,6 +1378,7 @@ single	lakeside	place	only sumo
 single	lakeside	yard	only sumo
 single	land	geographical-area	only sumo
 single	land-accretion	event	only sumo
+single	land-accretion	extension.time	only sumo
 single	land-accretion	process	only wordnet
 single	land-neck	physical-object	only wordnet
 single	landed-estate	geographical-feature	only wikidata
@@ -1309,6 +1397,8 @@ single	landmass	yard	only sumo
 single	landslide	event	only opencyc
 single	landslide	situation	only opencyc
 single	landslip	event	only wordnet
+single	laterite	part	only wordnet
+single	laterite	relation	only wordnet
 single	latitude	attribute	only wordnet
 single	latitude	empty-space	only wordnet
 single	latitude	physical-object	only wordnet
@@ -1316,12 +1406,17 @@ single	latitude	place	only wordnet
 single	latitude	shape	only wordnet
 single	lava	chemical	only wikidata
 single	lava	fluid	only wikidata
+single	lava	ground	only opencyc
 single	leaf-mold	compost	only wikidata
 single	leaf-mold	material	only wordnet
+single	leaf-mold	part	only wordnet
+single	leaf-mold	relation	only wordnet
 single	leaf-mold	substance	only wordnet
+single	leap-year	time-period	only opencyc
 single	ledge	furniture	only gpt
 single	ledge	geographical-area	only sumo
 single	ledge	geological-formation	only wordnet
+single	ledge	ground	only opencyc
 single	ledge	natural-elevation	only wordnet
 single	ledge	physical-object	only wordnet
 single	ledge	place	only sumo
@@ -1375,7 +1470,10 @@ single	littoral	geological-formation	only wordnet
 single	littoral	physical-object	only wordnet
 single	llano	land	only wordnet
 single	llano	physical-object	only wordnet
+single	loam	ground	only opencyc
 single	loam	material	only wordnet
+single	loam	part	only wordnet
+single	loam	relation	only wordnet
 single	loam	substance	only wordnet
 single	loch	landform	only yago
 single	loch	place	only yago
@@ -1384,6 +1482,8 @@ single	lode	geological-phenomenon	only wordnet
 single	lode	natural-event	only wordnet
 single	lode	place	only yago
 single	lode	process	only wordnet
+single	loess	part	only wordnet
+single	loess	relation	only wordnet
 single	log-cabin	geographical-area	only sumo
 single	longitude	attribute	only wordnet
 single	longitude	empty-space	only wordnet
@@ -1399,9 +1499,11 @@ single	lowland	geological-formation	only wordnet
 single	lowland	physical-object	only wordnet
 single	lowland	place	only yago
 single	lunar-calendar	information	only opencyc
+single	lunar-calendar	system	only opencyc
 single	lunar-crater	cavity	only opencyc
 single	lunar-crater	depression	only opencyc
 single	lunar-crater	geological-formation	only wordnet
+single	lunar-crater	ground	only opencyc
 single	lunar-crater	natural-depression	only wordnet
 single	lunar-crater	physical-object	only wordnet
 single	lunar-crater	place	only sumo
@@ -1421,6 +1523,8 @@ single	mainland	geographical-area	only sumo
 single	mainland	physical-object	only wordnet
 single	mainland	place	only sumo
 single	mainland	yard	only sumo
+single	map-projection	relation	only wikidata
+single	map-scale	numeric-quantity	only wikidata
 single	mare's-tail	material	only sumo
 single	mare's-tail	natural-event	only wordnet
 single	mare's-tail	process	only wordnet
@@ -1433,6 +1537,8 @@ single	marine-transgression	natural-event	only wordnet
 single	marine-transgression	procedure	only sumo
 single	marine-transgression	process	only wordnet
 single	marine-transgression	volition	only sumo
+single	marl	part	only wordnet
+single	marl	relation	only wordnet
 single	marsh	geographical-feature	only wikidata
 single	massif	geographical-feature	only wikidata
 single	massif	physical-object	only wordnet
@@ -1442,18 +1548,25 @@ single	meander	landform	only yago
 single	meander	place	only yago
 single	meander	property	only sumo
 single	mental-hospital	geographical-area	only sumo
+single	mercalli-scale	amount	only wordnet
 single	mercalli-scale	quantity	only sumo
+single	mercalli-scale	scale-of-measurement	only wordnet
+single	mercalli-scale	standard	only wordnet
+single	mercalli-scale	system-of-measurement	only wordnet
 single	mercator-projection	conformal-projection	only opencyc
+single	mercator-projection	function	only opencyc
 single	mercator-projection	information	only sumo
 single	mercator-projection	physical-object	only wordnet
 single	meridian	physical-object	only wordnet
 single	mesa	geographical-feature	only wikidata
 single	mesa	geological-formation	only wordnet
+single	mesa	ground	only opencyc
 single	mesa	highland	only wordnet
 single	mesa	hill	only opencyc
 single	mesa	mountain	only yago
 single	mesa	physical-object	only wordnet
 single	mesa	place	only yago
+single	metamorphic-rock	ground	only opencyc
 single	meteor-shower	process	only wordnet
 single	meteor-shower	situation	only opencyc
 single	microfossil	physical-object	only wordnet
@@ -1497,14 +1610,20 @@ single	moderate-gale	process	only wordnet
 single	moderate-gale	weather	only wordnet
 single	moderate-gale	wind	only wordnet
 single	mohorovicic-discontinuity	place	only sumo
+single	moment-magnitude-scale	amount	only wordnet
 single	moment-magnitude-scale	quantity	only sumo
+single	moment-magnitude-scale	scale-of-measurement	only wordnet
+single	moment-magnitude-scale	standard	only wordnet
+single	moment-magnitude-scale	system-of-measurement	only wordnet
 single	monocline	physical-object	only wordnet
 single	monsoon	event	only sumo
 single	monsoon	motion	only wikidata
 single	monsoon	natural-event	only wordnet
 single	monsoon	process	only wordnet
 single	monsoon	weather	only wordnet
+single	monsoon-season	amount	only wordnet
 single	monsoon-season	season	only wordnet
+single	monsoon-season	time-period	only wordnet
 single	monsoon-wind	event	only sumo
 single	monsoon-wind	natural-event	only wordnet
 single	monsoon-wind	precipitation	only wordnet
@@ -1580,34 +1699,54 @@ single	noah's-flood	natural-event	only wordnet
 single	noah's-flood	process	only wordnet
 single	north	compass-point	only wordnet
 single	north-by-east	attribute	only sumo
+single	north-by-east	orientation	only sumo
 single	north-by-east	property	only sumo
+single	north-by-east	relation	only wordnet
 single	north-by-west	attribute	only sumo
+single	north-by-west	orientation	only sumo
 single	north-by-west	property	only sumo
+single	north-by-west	relation	only wordnet
 single	north-equatorial-current	event	only wordnet
 single	north-equatorial-current	geographical-feature	only wikidata
 single	north-equatorial-current	motion	only wikidata
 single	north-northeast	attribute	only sumo
+single	north-northeast	orientation	only sumo
 single	north-northeast	property	only sumo
+single	north-northeast	relation	only wordnet
 single	north-northwest	attribute	only sumo
+single	north-northwest	orientation	only sumo
 single	north-northwest	property	only sumo
+single	north-northwest	relation	only wordnet
 single	north-wind	natural-event	only wordnet
 single	north-wind	process	only wordnet
 single	north-wind	situation	only opencyc
 single	northeast	attribute	only sumo
+single	northeast	orientation	only sumo
 single	northeast	property	only sumo
+single	northeast	relation	only wordnet
 single	northeast-by-east	attribute	only sumo
+single	northeast-by-east	orientation	only sumo
 single	northeast-by-east	property	only sumo
+single	northeast-by-east	relation	only wordnet
 single	northeast-by-north	attribute	only sumo
+single	northeast-by-north	orientation	only sumo
 single	northeast-by-north	property	only sumo
+single	northeast-by-north	relation	only wordnet
 single	northeaster	event	only sumo
 single	northeaster	natural-event	only wordnet
 single	northeaster	process	only wordnet
 single	northwest	attribute	only sumo
+single	northwest	orientation	only sumo
 single	northwest	property	only sumo
+single	northwest	relation	only wordnet
 single	northwest-by-north	attribute	only sumo
+single	northwest-by-north	orientation	only sumo
 single	northwest-by-north	property	only sumo
+single	northwest-by-north	relation	only wordnet
 single	northwest-by-west	attribute	only sumo
+single	northwest-by-west	orientation	only sumo
 single	northwest-by-west	property	only sumo
+single	northwest-by-west	relation	only wordnet
 single	northwest-wind	natural-event	only wordnet
 single	northwest-wind	process	only wordnet
 single	northwest-wind	situation	only opencyc
@@ -1649,6 +1788,7 @@ single	omnirange	component	only sumo
 single	omnirange	device	only sumo
 single	omnirange	mechanism	only sumo
 single	omnirange	physical-object	only wordnet
+single	omnirange	system-instrumentality	only wordnet
 single	omnirange	vehicle-body	only sumo
 single	orbit	geographical-area	only sumo
 single	ore	rock-material	only wikidata
@@ -1659,6 +1799,7 @@ single	orology	cognition	only wordnet
 single	orology	earth-science	only wordnet
 single	orology	natural-science	only wordnet
 single	orology	science	only wordnet
+single	orthographic-projection	relation	only wikidata
 single	outcrop	material	only sumo
 single	outcrop	mineral	only sumo
 single	outcrop	natural-object	only wordnet
@@ -1731,6 +1872,7 @@ single	pasture	biome	only wikidata
 single	path	geographical-area	only sumo
 single	patio	geographical-area	only sumo
 single	peak	geographical-area	only sumo
+single	pebble	ground	only opencyc
 single	pebble	natural-object	only wordnet
 single	pebble	physical-object	only wordnet
 single	peneplain	geographical-feature	only wikidata
@@ -1738,6 +1880,7 @@ single	peneplain	land	only wordnet
 single	peneplain	landform	only wikidata
 single	peneplain	physical-object	only wordnet
 single	peninsula	geographical-feature	only wikidata
+single	peninsula	ground	only opencyc
 single	peninsula	natural-elevation	only opencyc
 single	peninsula	physical-object	only wordnet
 single	peninsula	place	only yago
@@ -1787,6 +1930,8 @@ single	plateau	geological-formation	only wordnet
 single	plateau	physical-object	only wordnet
 single	plateau	place	only yago
 single	plateau	surface	only opencyc
+single	podzol	part	only wordnet
+single	podzol	relation	only wordnet
 single	point	natural-elevation	only opencyc
 single	point	peninsula	only opencyc
 single	point	promontory	only opencyc
@@ -1807,6 +1952,7 @@ single	polar-vortex	motion	only wikidata
 single	polar-vortex	storm	only wikidata
 single	polar-vortex	wind	only wikidata
 single	polyconic-projection	artifact	only wordnet
+single	polyconic-projection	function	only opencyc
 single	polyconic-projection	information	only sumo
 single	polyconic-projection	map-projection	only opencyc
 single	polyconic-projection	physical-object	only wordnet
@@ -1824,6 +1970,8 @@ single	prairie	geographical-area	only wordnet
 single	prairie	group	only wordnet
 single	prairie	physical-object	only wordnet
 single	prairie	region	only wordnet
+single	prairie-soil	part	only wordnet
+single	prairie-soil	relation	only wordnet
 single	precipice	escarpment	only claude
 single	precipice	geographical-area	only sumo
 single	precipice	geological-formation	only wordnet
@@ -1849,6 +1997,7 @@ single	principle-of-superposition	idea	only wordnet
 single	promontory	geographical-area	only sumo
 single	promontory	geographical-feature	only wikidata
 single	promontory	geological-formation	only wordnet
+single	promontory	ground	only opencyc
 single	promontory	land	only sumo
 single	promontory	physical-object	only wordnet
 single	promontory	yard	only sumo
@@ -1874,8 +2023,10 @@ single	rainstorm	natural-event	only wordnet
 single	rainstorm	precipitation	only wordnet
 single	rainstorm	process	only wordnet
 single	rainstorm	weather	only wordnet
+single	rainy-season	amount	only wordnet
 single	rainy-season	event	only opencyc
 single	rainy-season	situation	only opencyc
+single	rainy-season	time-period	only wordnet
 single	rainy-season	weather	only opencyc
 single	ranch	geographic-point	only wordnet
 single	rapids	landform	only yago
@@ -1886,6 +2037,8 @@ single	ravine	geographical-feature	only wikidata
 single	ravine	geological-formation	only wordnet
 single	ravine	physical-object	only wordnet
 single	ravine	place	only yago
+single	red-clay	part	only wordnet
+single	red-clay	relation	only wordnet
 single	red-clay	soil	only wordnet
 single	reef	geographical-feature	only wikidata
 single	reef	geological-formation	only wordnet
@@ -1893,7 +2046,11 @@ single	reef	island	only wikidata
 single	reef	natural-elevation	only wordnet
 single	reef	physical-object	only wordnet
 single	reef	place	only yago
+single	regosol	part	only wordnet
+single	regosol	relation	only wordnet
 single	regur	material	only wordnet
+single	regur	part	only wordnet
+single	regur	relation	only wordnet
 single	regur	soil	only wordnet
 single	regur	substance	only wordnet
 single	relict	physical-object	only wordnet
@@ -1903,7 +2060,13 @@ single	remote-sensing	situation	only opencyc
 single	residence	geographic-point	only wordnet
 single	residence	geographical-area	only sumo
 single	residential-district	geographical-area	only sumo
+single	residual-soil	part	only wordnet
+single	residual-soil	relation	only wordnet
+single	richter-magnitude-scale	amount	only wordnet
 single	richter-magnitude-scale	quantity	only sumo
+single	richter-magnitude-scale	scale-of-measurement	only wordnet
+single	richter-magnitude-scale	standard	only wordnet
+single	richter-magnitude-scale	system-of-measurement	only wordnet
 single	ridge	geographical-feature	only wikidata
 single	rift-valley	cavity	only opencyc
 single	rift-valley	depression	only opencyc
@@ -1965,7 +2128,11 @@ single	rock-bed	geographical-area	only sumo
 single	rock-bed	physical-object	only wordnet
 single	rock-foliation	event	only sumo
 single	rock-foliation	process	only wordnet
+single	rock-material	part	only wordnet
+single	rock-material	relation	only wordnet
 single	rock-material	rock	only sumo
+single	rock-matrix	part	only wordnet
+single	rock-matrix	relation	only wordnet
 single	rock-matrix	stone	only wordnet
 single	rock-wall	physical-object	only wordnet
 single	route	geographical-area	only sumo
@@ -1989,6 +2156,7 @@ single	sandbank	natural-elevation	only wordnet
 single	sandbank	natural-ridge	only wordnet
 single	sandbank	physical-object	only wordnet
 single	sandbank	place	only sumo
+single	sandbar	barrier	only wordnet
 single	sandbar	geographical-area	only sumo
 single	sandbar	geological-formation	only wordnet
 single	sandbar	natural-elevation	only wordnet
@@ -2015,7 +2183,11 @@ single	sea-breeze	natural-event	only wordnet
 single	sea-breeze	process	only wordnet
 single	sea-breeze	situation	only opencyc
 single	sea-cove	body-of-water	only wordnet
+single	sea-level	distance	only wordnet
 single	sea-level	geodetic-datum	only wikidata
+single	sea-level	placement	only wordnet
+single	sea-level	relation	only wordnet
+single	sea-level	spatial-relation	only wordnet
 single	sea-sound	geographical-area	only sumo
 single	sea-sound	geographical-feature	only wikidata
 single	sea-sound	landform	only wikidata
@@ -2024,6 +2196,7 @@ single	sea-sound	pool	only sumo
 single	seamount	geographical-area	only sumo
 single	seamount	geographical-feature	only wikidata
 single	seamount	geological-formation	only wordnet
+single	seamount	ground	only opencyc
 single	seamount	physical-object	only wordnet
 single	seaquake	geological-phenomenon	only wordnet
 single	seaquake	natural-event	only wordnet
@@ -2033,6 +2206,9 @@ single	seaside	geological-formation	only wordnet
 single	seaside	physical-object	only wordnet
 single	seaside	shore	only wordnet
 single	sediment-saltation	event	only sumo
+single	sedimentary-clay	part	only wordnet
+single	sedimentary-clay	relation	only wordnet
+single	sedimentary-rock	ground	only opencyc
 single	sedimentation	event	only sumo
 single	sedimentation	locating	only sumo
 single	sedimentation	natural-event	only wordnet
@@ -2061,6 +2237,8 @@ single	shingling	application	only opencyc
 single	shingling	construction	only opencyc
 single	shingling	event	only opencyc
 single	shingling	mineral	only sumo
+single	shingling	part	only wordnet
+single	shingling	relation	only wordnet
 single	shingling	roofing	only opencyc
 single	shingling	situation	only opencyc
 single	shingling	stone	only wordnet
@@ -2080,6 +2258,8 @@ single	shore-boulder	natural-object	only wordnet
 single	shore-boulder	physical-object	only wordnet
 single	shore-boulder	rock	only wordnet
 single	silt	material	only wordnet
+single	silt	part	only wordnet
+single	silt	relation	only wordnet
 single	silt	substance	only wordnet
 single	simoom	event	only sumo
 single	simoom	natural-event	only wordnet
@@ -2130,9 +2310,13 @@ single	sonic-depth-finder	physical-object	only wordnet
 single	sonic-depth-finder	vehicle-body	only sumo
 single	south	compass-point	only wordnet
 single	south-by-east	attribute	only sumo
+single	south-by-east	orientation	only sumo
 single	south-by-east	property	only sumo
+single	south-by-east	relation	only wordnet
 single	south-by-west	attribute	only sumo
+single	south-by-west	orientation	only sumo
 single	south-by-west	property	only sumo
+single	south-by-west	relation	only wordnet
 single	south-equatorial-current	event	only wordnet
 single	south-equatorial-current	geographical-feature	only wikidata
 single	south-equatorial-current	motion	only wikidata
@@ -2141,28 +2325,44 @@ single	south-sea-islands	physical-object	only wordnet
 single	south-sea-islands	place	only sumo
 single	south-sea-islands	yard	only sumo
 single	south-southeast	attribute	only sumo
+single	south-southeast	orientation	only sumo
 single	south-southeast	property	only sumo
+single	south-southeast	relation	only wordnet
 single	south-southwest	attribute	only sumo
+single	south-southwest	orientation	only sumo
 single	south-southwest	property	only sumo
+single	south-southwest	relation	only wordnet
 single	south-wind	natural-event	only wordnet
 single	south-wind	process	only wordnet
 single	south-wind	situation	only opencyc
 single	southeast	attribute	only sumo
+single	southeast	orientation	only sumo
 single	southeast	property	only sumo
+single	southeast	relation	only wordnet
 single	southeast-by-east	attribute	only sumo
+single	southeast-by-east	orientation	only sumo
 single	southeast-by-east	property	only sumo
+single	southeast-by-east	relation	only wordnet
 single	southeast-by-south	attribute	only sumo
+single	southeast-by-south	orientation	only sumo
 single	southeast-by-south	property	only sumo
+single	southeast-by-south	relation	only wordnet
 single	southeaster	event	only sumo
 single	southeaster	natural-event	only wordnet
 single	southeaster	process	only wordnet
 single	southeaster	weather	only wordnet
 single	southwest	attribute	only sumo
+single	southwest	orientation	only sumo
 single	southwest	property	only sumo
+single	southwest	relation	only wordnet
 single	southwest-by-south	attribute	only sumo
+single	southwest-by-south	orientation	only sumo
 single	southwest-by-south	property	only sumo
+single	southwest-by-south	relation	only wordnet
 single	southwest-by-west	attribute	only sumo
+single	southwest-by-west	orientation	only sumo
 single	southwest-by-west	property	only sumo
+single	southwest-by-west	relation	only wordnet
 single	southwester	event	only sumo
 single	southwester	motion	only wikidata
 single	southwester	natural-event	only wordnet
@@ -2193,6 +2393,7 @@ single	steppe	biome	only wikidata
 single	steppe	land	only wordnet
 single	steppe	physical-object	only wordnet
 single	steppe	place	only yago
+single	stereographic-projection	function	only opencyc
 single	stereographic-projection	map-projection	only opencyc
 single	storm-cloud	material	only sumo
 single	storm-cloud	natural-event	only wordnet
@@ -2242,9 +2443,12 @@ single	subcontinent	geographical-area	only sumo
 single	subcontinent	physical-object	only wordnet
 single	subcontinent	place	only sumo
 single	subcontinent	yard	only sumo
+single	subsoil	part	only wordnet
+single	subsoil	relation	only wordnet
 single	subtropics	physical-object	only wordnet
 single	subtropics	region	only wordnet
 single	summer-camp	geographical-area	only claude
+single	summer-solstice	day	only sumo
 single	summer-solstice	quantity	only sumo
 single	sunset	event	only sumo
 single	sunset	process	only wordnet
@@ -2288,6 +2492,7 @@ single	tar-pit	physical-object	only wordnet
 single	tar-pit	place	only sumo
 single	tar-pit	yard	only sumo
 single	tarn	body-of-water	only wordnet
+single	tectonic-plate	ground	only opencyc
 single	tectonics	cognition	only wordnet
 single	tectonics	earth-science	only wordnet
 single	tectonics	geophysics	only wordnet
@@ -2349,6 +2554,7 @@ single	tidal-basin	geological-formation	only wordnet
 single	tidal-basin	natural-depression	only wordnet
 single	tidal-basin	physical-object	only wordnet
 single	tidal-bore	event	only wordnet
+single	tidal-range	numeric-quantity	only wikidata
 single	tidal-river	geographical-area	only sumo
 single	tidal-river	place	only sumo
 single	tidal-river	pool	only sumo
@@ -2374,6 +2580,8 @@ single	topography	cognition	only wordnet
 single	topography	earth-science	only wordnet
 single	topography	natural-science	only wordnet
 single	topography	research	only wikidata
+single	topsoil	part	only wordnet
+single	topsoil	relation	only wordnet
 single	tor-hill	geographical-feature	only wikidata
 single	tor-hill	geological-formation	only wordnet
 single	tor-hill	landform	only wikidata
@@ -2404,6 +2612,7 @@ single	tramontane	situation	only opencyc
 single	tramontane	wind	only wordnet
 single	transit-zone	physical-object	only wordnet
 single	transit-zone	region	only wordnet
+single	transverse-mercator-projection	function	only opencyc
 single	transverse-mercator-projection	map-projection	only opencyc
 single	tremor	geological-phenomenon	only wordnet
 single	tremor	natural-event	only wordnet
@@ -2443,6 +2652,8 @@ single	tsunami	surface	only opencyc
 single	tsunami	trouble	only wordnet
 single	tundra	land	only wordnet
 single	tundra	physical-object	only wordnet
+single	tundra-soil	part	only wordnet
+single	tundra-soil	relation	only wordnet
 single	turbulence	event	only sumo
 single	turbulence	natural-event	only wordnet
 single	turbulence	process	only wordnet
@@ -2483,6 +2694,7 @@ single	veld	physical-object	only wordnet
 single	veld	place	only wordnet
 single	veld	region	only wordnet
 single	venue	geographical-feature	only wikidata
+single	vernal-equinox	day	only sumo
 single	vernal-equinox	quantity	only sumo
 single	vertebrate-paleontology	cognition	only wordnet
 single	vertebrate-paleontology	earth-science	only wordnet
@@ -2586,13 +2798,21 @@ single	weather-station	place	only yago
 single	weathering	event	only opencyc
 single	weathering	situation	only opencyc
 single	west-by-north	attribute	only sumo
+single	west-by-north	orientation	only sumo
 single	west-by-north	property	only sumo
+single	west-by-north	relation	only wordnet
 single	west-by-south	attribute	only sumo
+single	west-by-south	orientation	only sumo
 single	west-by-south	property	only sumo
+single	west-by-south	relation	only wordnet
 single	west-northwest	attribute	only sumo
+single	west-northwest	orientation	only sumo
 single	west-northwest	property	only sumo
+single	west-northwest	relation	only wordnet
 single	west-southwest	attribute	only sumo
+single	west-southwest	orientation	only sumo
 single	west-southwest	property	only sumo
+single	west-southwest	relation	only wordnet
 single	west-wind	natural-event	only wordnet
 single	west-wind	process	only wordnet
 single	west-wind	situation	only opencyc
@@ -2622,12 +2842,15 @@ single	whole-gale	natural-event	only wordnet
 single	whole-gale	process	only wordnet
 single	whole-gale	weather	only wordnet
 single	whole-gale	wind	only wordnet
+single	wiesenboden	part	only wordnet
+single	wiesenboden	relation	only wordnet
 single	wind-rose	device	only sumo
 single	wind-rose	map	only wordnet
 single	wind-rose	physical-object	only wordnet
 single	wind-rose	vehicle-body	only sumo
 single	windstorm	natural-event	only wordnet
 single	windstorm	process	only wordnet
+single	winter-solstice	day	only sumo
 single	winter-solstice	quantity	only sumo
 single	workshop	geographic-point	only wordnet
 single	world-power	geographical-area	only sumo
@@ -2638,357 +2861,25 @@ single	xenolith	natural-object	only wordnet
 single	xenolith	physical-object	only wordnet
 single	xenolith	substance	only sumo
 single	zone	geographical-area	only sumo
-unplaced	aberration		no accepted parent reaches a root
-unplaced	accelerator		no accepted parent reaches a root
-unplaced	access		no accepted parent reaches a root
-unplaced	advancement		no accepted parent reaches a root
-unplaced	affinity.relation		no accepted parent reaches a root
-unplaced	afternoon		no accepted parent reaches a root
-unplaced	agitation		no accepted parent reaches a root
-unplaced	alumnus		no accepted parent reaches a root
-unplaced	angel		no accepted parent reaches a root
-unplaced	anniversary		no accepted parent reaches a root
-unplaced	attractive-force		no accepted parent reaches a root
-unplaced	aviation		no accepted parent reaches a root
-unplaced	backlog	geographical-feature	no accepted parent reaches a root
-unplaced	bail		no accepted parent reaches a root
-unplaced	bait		no accepted parent reaches a root
-unplaced	bargain		no accepted parent reaches a root
-unplaced	barrier		no accepted parent reaches a root
-unplaced	basis		no accepted parent reaches a root
-unplaced	basketball-ball		no accepted parent reaches a root
-unplaced	batch		no accepted parent reaches a root
-unplaced	beam-of-light		no accepted parent reaches a root
-unplaced	beginning		no accepted parent reaches a root
-unplaced	bias		no accepted parent reaches a root
-unplaced	birthday		no accepted parent reaches a root
 unplaced	bit		no accepted parent reaches a root
-unplaced	blink-of-an-eye		no accepted parent reaches a root
-unplaced	bosom		no accepted parent reaches a root
-unplaced	brink	geographical-feature	no accepted parent reaches a root
-unplaced	budget		no accepted parent reaches a root
-unplaced	bustle		no accepted parent reaches a root
-unplaced	calendar-month		no accepted parent reaches a root
-unplaced	camp		no accepted parent reaches a root
-unplaced	capacity		no accepted parent reaches a root
-unplaced	capitalism		no accepted parent reaches a root
-unplaced	cassette		no accepted parent reaches a root
-unplaced	ceiling.communication		no accepted parent reaches a root
-unplaced	century		no accepted parent reaches a root
-unplaced	childhood		no accepted parent reaches a root
-unplaced	chord		no accepted parent reaches a root
-unplaced	clock-time		no accepted parent reaches a root
-unplaced	clod		no accepted parent reaches a root
-unplaced	column.group		no accepted parent reaches a root
-unplaced	commencement		no accepted parent reaches a root
-unplaced	concern.cognition		no accepted parent reaches a root
 unplaced	confederacy		no accepted parent reaches a root
 unplaced	conscience		no accepted parent reaches a root
-unplaced	consequence		no accepted parent reaches a root
-unplaced	consultation		no accepted parent reaches a root
-unplaced	contrary		no accepted parent reaches a root
-unplaced	contrast		no accepted parent reaches a root
-unplaced	correlation		no accepted parent reaches a root
-unplaced	course-credit		no accepted parent reaches a root
-unplaced	course-of-study		no accepted parent reaches a root
-unplaced	creed		no accepted parent reaches a root
-unplaced	crop		no accepted parent reaches a root
-unplaced	cupful		no accepted parent reaches a root
-unplaced	current		no accepted parent reaches a root
-unplaced	cut-rate-sale		no accepted parent reaches a root
-unplaced	dawn		no accepted parent reaches a root
-unplaced	day		no accepted parent reaches a root
-unplaced	day-of-the-month		no accepted parent reaches a root
-unplaced	deadline		no accepted parent reaches a root
-unplaced	decade		no accepted parent reaches a root
-unplaced	deity		no accepted parent reaches a root
-unplaced	demand.process		no accepted parent reaches a root
-unplaced	democracy		no accepted parent reaches a root
-unplaced	deposit		no accepted parent reaches a root
-unplaced	design		no accepted parent reaches a root
-unplaced	detail		no accepted parent reaches a root
-unplaced	direction		no accepted parent reaches a root
-unplaced	disappointment		no accepted parent reaches a root
-unplaced	disembodied-spirit		no accepted parent reaches a root
-unplaced	dismissal		no accepted parent reaches a root
-unplaced	distance		no accepted parent reaches a root
-unplaced	division		no accepted parent reaches a root
-unplaced	dragon		no accepted parent reaches a root
-unplaced	dramaturgy		no accepted parent reaches a root
-unplaced	eagle.communication		no accepted parent reaches a root
 unplaced	earth		no accepted parent reaches a root
 unplaced	east	geographical-area	no accepted parent reaches a root
-unplaced	echo		no accepted parent reaches a root
-unplaced	economic-consumption		no accepted parent reaches a root
-unplaced	economic-system		no accepted parent reaches a root
-unplaced	economic-value		no accepted parent reaches a root
-unplaced	electric-charge		no accepted parent reaches a root
-unplaced	electricity		no accepted parent reaches a root
-unplaced	employer		no accepted parent reaches a root
-unplaced	engagement		no accepted parent reaches a root
-unplaced	entitlement		no accepted parent reaches a root
-unplaced	entree		no accepted parent reaches a root
-unplaced	era		no accepted parent reaches a root
-unplaced	evening		no accepted parent reaches a root
-unplaced	exam		no accepted parent reaches a root
-unplaced	exemption		no accepted parent reaches a root
-unplaced	exercise		no accepted parent reaches a root
-unplaced	extension.time		no accepted parent reaches a root
-unplaced	extraterrestrial-being		no accepted parent reaches a root
-unplaced	fairy		no accepted parent reaches a root
-unplaced	fall		no accepted parent reaches a root
-unplaced	fictional-character		no accepted parent reaches a root
-unplaced	figure		no accepted parent reaches a root
-unplaced	film.artifact		no accepted parent reaches a root
-unplaced	final-examination		no accepted parent reaches a root
-unplaced	fleet		no accepted parent reaches a root
-unplaced	footstep		no accepted parent reaches a root
-unplaced	force		no accepted parent reaches a root
-unplaced	format		no accepted parent reaches a root
-unplaced	formation		no accepted parent reaches a root
-unplaced	foundation.relation		no accepted parent reaches a root
-unplaced	fraction		no accepted parent reaches a root
 unplaced	fragment		no accepted parent reaches a root
-unplaced	freak		no accepted parent reaches a root
-unplaced	frequency		no accepted parent reaches a root
-unplaced	front		no accepted parent reaches a root
-unplaced	frustration		no accepted parent reaches a root
-unplaced	function		no accepted parent reaches a root
-unplaced	fund		no accepted parent reaches a root
-unplaced	future		no accepted parent reaches a root
-unplaced	gap	geographical-feature	no accepted parent reaches a root
-unplaced	garden		no accepted parent reaches a root
-unplaced	gas		no accepted parent reaches a root
-unplaced	gene		no accepted parent reaches a root
-unplaced	genus-pan		no accepted parent reaches a root
-unplaced	globe		no accepted parent reaches a root
-unplaced	grade		no accepted parent reaches a root
-unplaced	grain.object		no accepted parent reaches a root
-unplaced	gravity		no accepted parent reaches a root
-unplaced	ground		no accepted parent reaches a root
-unplaced	guidepost		no accepted parent reaches a root
-unplaced	guinea-pig		no accepted parent reaches a root
-unplaced	harvest		no accepted parent reaches a root
-unplaced	head		no accepted parent reaches a root
-unplaced	headroom		no accepted parent reaches a root
-unplaced	heat		no accepted parent reaches a root
-unplaced	hell		no accepted parent reaches a root
-unplaced	helping		no accepted parent reaches a root
-unplaced	here-and-now		no accepted parent reaches a root
-unplaced	hero		no accepted parent reaches a root
-unplaced	hideaway		no accepted parent reaches a root
-unplaced	highlight		no accepted parent reaches a root
-unplaced	hindrance		no accepted parent reaches a root
-unplaced	historic-period		no accepted parent reaches a root
-unplaced	history.time		no accepted parent reaches a root
-unplaced	host		no accepted parent reaches a root
-unplaced	hour		no accepted parent reaches a root
-unplaced	ideal		no accepted parent reaches a root
-unplaced	impetus		no accepted parent reaches a root
-unplaced	implication		no accepted parent reaches a root
 unplaced	incentive		no accepted parent reaches a root
-unplaced	influence.phenomenon		no accepted parent reaches a root
-unplaced	infrastructure		no accepted parent reaches a root
-unplaced	insider		no accepted parent reaches a root
-unplaced	intervention		no accepted parent reaches a root
-unplaced	iteration		no accepted parent reaches a root
-unplaced	jurisprudence		no accepted parent reaches a root
-unplaced	kick		no accepted parent reaches a root
-unplaced	king		no accepted parent reaches a root
-unplaced	kinship		no accepted parent reaches a root
-unplaced	knot		no accepted parent reaches a root
 unplaced	koran		no accepted parent reaches a root
-unplaced	laurel-wreath		no accepted parent reaches a root
-unplaced	leave		no accepted parent reaches a root
-unplaced	legal-age		no accepted parent reaches a root
-unplaced	level		no accepted parent reaches a root
-unplaced	limit.quantity		no accepted parent reaches a root
-unplaced	line-of-descent		no accepted parent reaches a root
-unplaced	lineation		no accepted parent reaches a root
-unplaced	linguistic-context		no accepted parent reaches a root
-unplaced	liquid-substance		no accepted parent reaches a root
-unplaced	load		no accepted parent reaches a root
-unplaced	logarithm		no accepted parent reaches a root
-unplaced	logic.cognition		no accepted parent reaches a root
-unplaced	love		no accepted parent reaches a root
-unplaced	luck		no accepted parent reaches a root
-unplaced	luck.phenomenon		no accepted parent reaches a root
-unplaced	majority		no accepted parent reaches a root
-unplaced	mannequin		no accepted parent reaches a root
-unplaced	manner-of-speaking		no accepted parent reaches a root
-unplaced	mar		no accepted parent reaches a root
 unplaced	mars		no accepted parent reaches a root
-unplaced	matrix		no accepted parent reaches a root
-unplaced	maximum		no accepted parent reaches a root
-unplaced	menace		no accepted parent reaches a root
-unplaced	middle		no accepted parent reaches a root
-unplaced	middleman		no accepted parent reaches a root
-unplaced	midnight		no accepted parent reaches a root
-unplaced	mile		no accepted parent reaches a root
-unplaced	minimum		no accepted parent reaches a root
-unplaced	minute		no accepted parent reaches a root
-unplaced	mole.attribute		no accepted parent reaches a root
 unplaced	molecule		no accepted parent reaches a root
-unplaced	monarchy		no accepted parent reaches a root
 unplaced	moon		no accepted parent reaches a root
-unplaced	morning		no accepted parent reaches a root
-unplaced	morsel		no accepted parent reaches a root
 unplaced	motivation		no accepted parent reaches a root
-unplaced	mushroom-food		no accepted parent reaches a root
-unplaced	nature.object		no accepted parent reaches a root
-unplaced	nature.person		no accepted parent reaches a root
 unplaced	necessity		no accepted parent reaches a root
-unplaced	negotiation		no accepted parent reaches a root
-unplaced	network		no accepted parent reaches a root
-unplaced	night		no accepted parent reaches a root
-unplaced	node		no accepted parent reaches a root
-unplaced	norm		no accepted parent reaches a root
-unplaced	notice.communication		no accepted parent reaches a root
-unplaced	nowadays		no accepted parent reaches a root
-unplaced	nut-fastener		no accepted parent reaches a root
-unplaced	occasion		no accepted parent reaches a root
-unplaced	ocean.quantity		no accepted parent reaches a root
-unplaced	old-age		no accepted parent reaches a root
-unplaced	one-fourth		no accepted parent reaches a root
-unplaced	one-half		no accepted parent reaches a root
-unplaced	opposite		no accepted parent reaches a root
-unplaced	orientation		no accepted parent reaches a root
-unplaced	output		no accepted parent reaches a root
-unplaced	ownership		no accepted parent reaches a root
-unplaced	page		no accepted parent reaches a root
-unplaced	pain		no accepted parent reaches a root
-unplaced	parking		no accepted parent reaches a root
-unplaced	part		no accepted parent reaches a root
-unplaced	past		no accepted parent reaches a root
-unplaced	pattern		no accepted parent reaches a root
-unplaced	pause		no accepted parent reaches a root
-unplaced	peel		no accepted parent reaches a root
-unplaced	percentage		no accepted parent reaches a root
-unplaced	period.time		no accepted parent reaches a root
-unplaced	phase		no accepted parent reaches a root
 unplaced	phenomenon		no accepted parent reaches a root
-unplaced	pity		no accepted parent reaches a root
-unplaced	placement		no accepted parent reaches a root
-unplaced	plot.communication		no accepted parent reaches a root
-unplaced	point-of-view		no accepted parent reaches a root
-unplaced	poser		no accepted parent reaches a root
-unplaced	precondition		no accepted parent reaches a root
-unplaced	predilection		no accepted parent reaches a root
-unplaced	presidency		no accepted parent reaches a root
-unplaced	pressure		no accepted parent reaches a root
-unplaced	principle		no accepted parent reaches a root
-unplaced	prize		no accepted parent reaches a root
-unplaced	probability		no accepted parent reaches a root
-unplaced	probe		no accepted parent reaches a root
-unplaced	product.phenomenon		no accepted parent reaches a root
-unplaced	projection		no accepted parent reaches a root
-unplaced	projection.communication		no accepted parent reaches a root
-unplaced	proportion		no accepted parent reaches a root
-unplaced	pupil		no accepted parent reaches a root
-unplaced	quarter.time		no accepted parent reaches a root
-unplaced	racism		no accepted parent reaches a root
-unplaced	railway-line		no accepted parent reaches a root
-unplaced	rake		no accepted parent reaches a root
-unplaced	reaction		no accepted parent reaches a root
-unplaced	reaction.phenomenon		no accepted parent reaches a root
-unplaced	rear		no accepted parent reaches a root
-unplaced	reception		no accepted parent reaches a root
-unplaced	record-album		no accepted parent reaches a root
-unplaced	record.quantity		no accepted parent reaches a root
-unplaced	reference-point		no accepted parent reaches a root
-unplaced	refuge	geographical-feature	no accepted parent reaches a root
-unplaced	reign		no accepted parent reaches a root
-unplaced	release		no accepted parent reaches a root
-unplaced	relevance		no accepted parent reaches a root
-unplaced	remainder		no accepted parent reaches a root
-unplaced	republic		no accepted parent reaches a root
-unplaced	residual		no accepted parent reaches a root
-unplaced	respite		no accepted parent reaches a root
-unplaced	response		no accepted parent reaches a root
-unplaced	responsibility		no accepted parent reaches a root
-unplaced	restraint.cognition		no accepted parent reaches a root
-unplaced	restriction		no accepted parent reaches a root
-unplaced	right-to-vote		no accepted parent reaches a root
-unplaced	risk		no accepted parent reaches a root
-unplaced	root		no accepted parent reaches a root
-unplaced	rule.cognition		no accepted parent reaches a root
-unplaced	rule.time		no accepted parent reaches a root
-unplaced	sarcasm		no accepted parent reaches a root
-unplaced	scale-of-measurement		no accepted parent reaches a root
-unplaced	school-term		no accepted parent reaches a root
-unplaced	score		no accepted parent reaches a root
-unplaced	sec		no accepted parent reaches a root
-unplaced	sequence		no accepted parent reaches a root
-unplaced	share		no accepted parent reaches a root
-unplaced	shift		no accepted parent reaches a root
-unplaced	short-circuit		no accepted parent reaches a root
-unplaced	signature		no accepted parent reaches a root
 unplaced	signified		no accepted parent reaches a root
-unplaced	skin-cream		no accepted parent reaches a root
-unplaced	slant		no accepted parent reaches a root
 unplaced	slice		no accepted parent reaches a root
-unplaced	slot		no accepted parent reaches a root
-unplaced	soprano		no accepted parent reaches a root
-unplaced	sovereign		no accepted parent reaches a root
-unplaced	springtime		no accepted parent reaches a root
-unplaced	standard		no accepted parent reaches a root
-unplaced	state-of-matter		no accepted parent reaches a root
 unplaced	strip		no accepted parent reaches a root
-unplaced	stunt-man		no accepted parent reaches a root
-unplaced	style		no accepted parent reaches a root
 unplaced	subject		no accepted parent reaches a root
-unplaced	summation		no accepted parent reaches a root
-unplaced	summer		no accepted parent reaches a root
 unplaced	sun		no accepted parent reaches a root
-unplaced	sunday		no accepted parent reaches a root
-unplaced	supply		no accepted parent reaches a root
-unplaced	surrender		no accepted parent reaches a root
-unplaced	syllable		no accepted parent reaches a root
-unplaced	sympathy		no accepted parent reaches a root
-unplaced	system		no accepted parent reaches a root
-unplaced	system-instrumentality		no accepted parent reaches a root
-unplaced	tabular-array		no accepted parent reaches a root
-unplaced	tariff		no accepted parent reaches a root
-unplaced	tax		no accepted parent reaches a root
-unplaced	teacher		no accepted parent reaches a root
-unplaced	tear		no accepted parent reaches a root
-unplaced	telephone-line		no accepted parent reaches a root
-unplaced	television-system		no accepted parent reaches a root
-unplaced	tempo		no accepted parent reaches a root
-unplaced	tendency		no accepted parent reaches a root
-unplaced	term		no accepted parent reaches a root
-unplaced	terminology		no accepted parent reaches a root
-unplaced	theoretical-account		no accepted parent reaches a root
-unplaced	tilt		no accepted parent reaches a root
-unplaced	time-of-day		no accepted parent reaches a root
-unplaced	time-period		no accepted parent reaches a root
-unplaced	time-slot		no accepted parent reaches a root
-unplaced	title		no accepted parent reaches a root
-unplaced	title-of-respect		no accepted parent reaches a root
-unplaced	tonality		no accepted parent reaches a root
-unplaced	tone		no accepted parent reaches a root
-unplaced	track		no accepted parent reaches a root
-unplaced	traction		no accepted parent reaches a root
-unplaced	trainer		no accepted parent reaches a root
-unplaced	trial		no accepted parent reaches a root
-unplaced	twelve		no accepted parent reaches a root
-unplaced	twilight		no accepted parent reaches a root
-unplaced	unit		no accepted parent reaches a root
 unplaced	universe		no accepted parent reaches a root
-unplaced	upgrade		no accepted parent reaches a root
-unplaced	variant		no accepted parent reaches a root
 unplaced	venus		no accepted parent reaches a root
-unplaced	version		no accepted parent reaches a root
-unplaced	volume		no accepted parent reaches a root
-unplaced	wallop		no accepted parent reaches a root
-unplaced	web		no accepted parent reaches a root
-unplaced	week		no accepted parent reaches a root
-unplaced	weekend		no accepted parent reaches a root
 unplaced	west		no accepted parent reaches a root
-unplaced	wilderness-trail		no accepted parent reaches a root
-unplaced	winter		no accepted parent reaches a root
-unplaced	wonder		no accepted parent reaches a root
-unplaced	word		no accepted parent reaches a root
-unplaced	year		no accepted parent reaches a root
-unplaced	youth		no accepted parent reaches a root
-unplaced	zero		no accepted parent reaches a root

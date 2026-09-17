@@ -11,8 +11,10 @@ abstract-syntax-tree	tree-data-structure	accepted	claude-ruling
 access-control	computer-security	accepted	claude-ruling	
 access-control-list	access-control	accepted	claude wikidata	
 access-control-list	list	accepted	claude-ruling	
+access-time	amount	single	wordnet	
 access-time	latency	accepted	claude-ruling	
 access-time	quantity	single	sumo	
+access-time	time	single	sumo	
 accumulator-register	artifact	accepted	sumo wordnet	
 accumulator-register	component	single	sumo	
 accumulator-register	device	accepted	sumo wordnet	
@@ -71,6 +73,7 @@ algebraic-data-type	data-type	accepted	claude-ruling wikidata
 algebraic-language	algorithmic-language	accepted	claude wordnet	
 algebraic-language	information	accepted	sumo wordnet	
 algebraic-language	language	accepted	sumo wordnet	
+algebraic-language	language-unit	single	sumo	
 algebraic-language	line-of-text	single	sumo	
 algebraic-language	phenomenon	single	sumo	
 algebraic-language	programming-language	single	wordnet	
@@ -79,6 +82,7 @@ algol	algebraic-language	accepted	claude wordnet
 algol	algorithmic-language	single	wordnet	
 algol	information	accepted	sumo wordnet	
 algol	language	accepted	sumo wordnet	
+algol	language-unit	single	sumo	
 algol	line-of-text	single	sumo	
 algol	phenomenon	single	sumo	
 algol	programming-language	single	wordnet	
@@ -89,6 +93,7 @@ algorithm-error	computer-error	accepted	claude wordnet
 algorithm-error	event	single	wordnet	
 algorithmic-language	information	accepted	sumo wordnet	
 algorithmic-language	language	accepted	sumo wordnet	
+algorithmic-language	language-unit	single	sumo	
 algorithmic-language	line-of-text	single	sumo	
 algorithmic-language	phenomenon	single	sumo	
 algorithmic-language	programming-language	accepted	claude wordnet	
@@ -202,6 +207,7 @@ assembler	signified	single	sumo
 assembler	software	single	wordnet	
 assembly-language	information	accepted	sumo wordnet	
 assembly-language	language	accepted	sumo wordnet	
+assembly-language	language-unit	single	sumo	
 assembly-language	line-of-text	single	sumo	
 assembly-language	phenomenon	single	sumo	
 assembly-language	programming-language	accepted	claude claude-ruling wikidata wordnet	
@@ -311,6 +317,7 @@ backup-file	contract-condition	single	sumo
 backup-file	file	single	wordnet	
 backup-file	indication	accepted	sumo wordnet	
 backup-file	information	accepted	sumo wordnet	
+backup-file	language-unit	single	sumo	
 backup-file	line-of-text	single	sumo	
 backup-file	phenomenon	single	sumo	
 backup-file	physical-object	single	sumo	
@@ -321,12 +328,14 @@ backup-software	information	single	yago
 backup-software	utility-program	accepted	claude-ruling	
 bad-block	amateur	single	sumo	
 bad-block	ambiance	single	sumo	
+bad-block	amount	single	wordnet	
 bad-block	attribute	single	sumo	
 bad-block	circumstance	single	sumo	
 bad-block	civilisation	single	sumo	
 bad-block	crowd	single	sumo	
 bad-block	custom	single	sumo	
 bad-block	danger	single	sumo	
+bad-block	definite-quantity	single	wordnet	
 bad-block	disk-block	accepted	claude-ruling wordnet	
 bad-block	expert	single	sumo	
 bad-block	freedom	single	sumo	
@@ -345,6 +354,7 @@ base64	binary-to-text-encoding	accepted	claude-ruling
 bash-shell	unix-shell	accepted	claude-ruling	
 basic-language	information	accepted	sumo wordnet	
 basic-language	language	accepted	sumo wordnet	
+basic-language	language-unit	single	sumo	
 basic-language	line-of-text	single	sumo	
 basic-language	phenomenon	single	sumo	
 basic-language	programming-language	accepted	wikidata wordnet	
@@ -391,6 +401,7 @@ binary-file	contract-condition	single	sumo
 binary-file	file	accepted	wikidata wordnet	
 binary-file	indication	accepted	sumo wordnet	
 binary-file	information	accepted	sumo wordnet	
+binary-file	language-unit	single	sumo	
 binary-file	line-of-text	single	sumo	
 binary-file	phenomenon	single	sumo	
 binary-file	physical-object	single	sumo	
@@ -431,6 +442,7 @@ bit-field	data-field	accepted	claude wordnet
 bit-field	group	single	wordnet	
 bit-field	indication	single	sumo	
 bit-field	information	single	sumo	
+bit-field	language-unit	single	sumo	
 bit-field	line-of-text	single	sumo	
 bit-field	phenomenon	single	sumo	
 bit-field	physical-object	single	sumo	
@@ -463,6 +475,7 @@ boolean-operation	logical-operation	accepted	claude-ruling
 boolean-operation	phenomenon	single	sumo	
 boolean-operation	procedure	single	sumo	
 boolean-operation	process	single	wordnet	
+boolean-operation	relation	single	wikidata	
 boolean-operation	volition	single	sumo	
 bootloader	system-software	accepted	claude-ruling	
 border-gateway-protocol	routing-protocol	accepted	claude-ruling	
@@ -533,6 +546,7 @@ c-compiler	signified	single	sumo
 c-compiler	software	single	wordnet	
 c-language	information	accepted	sumo wordnet	
 c-language	language	accepted	sumo wordnet	
+c-language	language-unit	single	sumo	
 c-language	line-of-text	single	sumo	
 c-language	phenomenon	single	sumo	
 c-language	programming-language	accepted	claude wordnet	
@@ -663,6 +677,7 @@ clojure	lisp	accepted	claude-ruling
 cloud-computing	distributed-computing	accepted	claude-ruling	
 cobol	information	accepted	sumo wordnet	
 cobol	language	accepted	sumo wordnet	
+cobol	language-unit	single	sumo	
 cobol	line-of-text	single	sumo	
 cobol	phenomenon	single	sumo	
 cobol	programming-language	accepted	claude wordnet	
@@ -704,8 +719,10 @@ command-line-interface	signified	single	sumo
 command-line-interface	software	single	wordnet	
 command-line-interface	text-based-user-interface	accepted	claude wikidata	
 command-line-interface	user-interface	accepted	claude-ruling wikidata	
+command-processing-overhead-time	amount	single	wordnet	
 command-processing-overhead-time	latency	accepted	claude-ruling	
 command-processing-overhead-time	quantity	single	sumo	
+command-processing-overhead-time	time	single	sumo	
 command-prompt	act	single	wordnet	
 command-prompt	communication	accepted	claude wordnet	
 command-prompt	event	single	wordnet	
@@ -825,6 +842,7 @@ computer-keyboard	peripheral	single	wordnet
 computer-keyboard	physical-object	single	wordnet	
 computer-language	information	accepted	opencyc sumo wordnet	
 computer-language	language	accepted	opencyc sumo wordnet	
+computer-language	language-unit	single	sumo	
 computer-language	line-of-text	single	sumo	
 computer-language	phenomenon	single	sumo	
 computer-language	programming-language	disputed	wordnet	opencyc yago
@@ -968,6 +986,7 @@ crowdsourcing	practice	accepted	claude-ruling
 cryptographic-hash-function	algorithm	single	wikidata	
 cryptographic-hash-function	function	single	wikidata	
 cryptographic-hash-function	hash-function	accepted	claude-ruling wikidata	
+cryptographic-hash-function	relation	single	wikidata	
 cryptography	computer-science	accepted	claude-ruling	
 css	text-file-format	accepted	claude-ruling iana	
 csv	data-serialization-format	accepted	claude-ruling	
@@ -983,6 +1002,7 @@ cyclic-redundancy-check	function	single	wikidata
 cyclic-redundancy-check	hash-function	accepted	claude wikidata	
 cyclic-redundancy-check	information	single	wordnet	
 cyclic-redundancy-check	measure	single	sumo	
+cyclic-redundancy-check	relation	single	wikidata	
 cyclic-redundancy-check	routine	single	sumo	
 cyclic-redundancy-check	signified	single	sumo	
 cyrillic-alphabet	alphabet	single	claude	
@@ -1013,6 +1033,7 @@ data-descriptor	file	single	sumo
 data-descriptor	identifier	accepted	claude-ruling	
 data-descriptor	indication	single	sumo	
 data-descriptor	information	single	sumo	
+data-descriptor	language-unit	single	sumo	
 data-descriptor	line-of-text	single	sumo	
 data-descriptor	news	single	sumo	
 data-descriptor	note	single	sumo	
@@ -1159,6 +1180,7 @@ decision-table	contract-condition	single	sumo
 decision-table	indication	single	sumo	
 decision-table	information	accepted	sumo wordnet	
 decision-table	language	single	wordnet	
+decision-table	language-unit	single	sumo	
 decision-table	line-of-text	single	sumo	
 decision-table	multidimensional-language	accepted	claude wordnet	
 decision-table	phenomenon	single	sumo	
@@ -1338,7 +1360,9 @@ disk-access	phenomenon	single	sumo
 disk-access	procedure	single	sumo	
 disk-access	process	single	wordnet	
 disk-access	volition	single	sumo	
+disk-block	amount	single	wordnet	
 disk-block	data-block	accepted	claude-ruling	
+disk-block	definite-quantity	single	wordnet	
 disk-block	quantity	single	sumo	
 disk-cache	artifact	single	wordnet	
 disk-cache	computer-cache	accepted	claude wordnet	
@@ -1360,6 +1384,7 @@ disk-file	contract-condition	single	sumo
 disk-file	file	single	wordnet	
 disk-file	indication	accepted	sumo wordnet	
 disk-file	information	accepted	sumo wordnet	
+disk-file	language-unit	single	sumo	
 disk-file	line-of-text	single	sumo	
 disk-file	phenomenon	single	sumo	
 disk-file	physical-object	single	sumo	
@@ -1384,7 +1409,9 @@ disk-overhead	storage-capacity	accepted	claude-ruling
 disk-pack	collection	accepted	sumo wordnet	
 disk-pack	group	single	wordnet	
 disk-pack	phenomenon	single	sumo	
+disk-partition	amount	single	wordnet	
 disk-partition	data-block	accepted	claude-ruling	
+disk-partition	definite-quantity	single	wordnet	
 disk-partitioning	data-processing	accepted	claude-ruling	
 disk-seek	event	accepted	sumo wordnet	
 disk-seek	phenomenon	single	sumo	
@@ -1454,10 +1481,12 @@ document-oriented-database	software	single	wikidata
 domain-name	identifier	accepted	claude-ruling	
 domain-name	indication	single	sumo	
 domain-name	information	accepted	opencyc sumo	
+domain-name	language-unit	single	wordnet	
 domain-name	name	accepted	claude wordnet	
 domain-name	part	single	wordnet	
 domain-name	phenomenon	single	sumo	
 domain-name	physical-object	single	sumo	
+domain-name	relation	single	wordnet	
 domain-name	universe	single	sumo	
 domain-name-system	communications-protocol	accepted	claude-ruling	
 domain-name-system	distributed-system	accepted	claude-ruling	
@@ -1642,6 +1671,7 @@ faq	artifact	single	sumo
 faq	contract-condition	single	sumo	
 faq	indication	single	sumo	
 faq	information	accepted	opencyc sumo wordnet	
+faq	language-unit	single	sumo	
 faq	line-of-text	single	sumo	
 faq	list	accepted	claude wordnet	
 faq	phenomenon	single	sumo	
@@ -1689,11 +1719,13 @@ filename	contract-condition	single	sumo
 filename	identifier	single	wikidata	
 filename	indication	single	sumo	
 filename	information	accepted	sumo wikidata	
+filename	language-unit	accepted	sumo wordnet	
 filename	line-of-text	single	sumo	
 filename	name	accepted	wikidata wordnet	
 filename	part	single	wordnet	
 filename	phenomenon	single	sumo	
 filename	physical-object	single	sumo	
+filename	relation	single	wordnet	
 filename	text	single	sumo	
 filename	universe	single	sumo	
 filename	vehicle-body	single	sumo	
@@ -1739,6 +1771,7 @@ flow-chart	contract-condition	single	sumo
 flow-chart	indication	single	sumo	
 flow-chart	information	accepted	sumo wordnet	
 flow-chart	language	single	wordnet	
+flow-chart	language-unit	single	sumo	
 flow-chart	line-of-text	single	sumo	
 flow-chart	multidimensional-language	accepted	claude wordnet	
 flow-chart	phenomenon	single	sumo	
@@ -1779,6 +1812,8 @@ formal-concept-analysis	mathematics	accepted	claude-ruling
 formal-grammar	concept	accepted	claude-ruling	
 formal-grammar	information	single	opencyc	
 formal-verification	method	accepted	claude-ruling	
+formatted-capacity	amount	single	wordnet	
+formatted-capacity	indefinite-quantity	single	wordnet	
 formatted-capacity	quantity	single	sumo	
 formatted-capacity	storage-capacity	accepted	claude-ruling wordnet	
 forth-language	programming-language	accepted	claude-ruling	
@@ -1786,6 +1821,7 @@ fortran	algebraic-language	accepted	claude wordnet
 fortran	algorithmic-language	single	wordnet	
 fortran	information	accepted	sumo wordnet	
 fortran	language	accepted	sumo wordnet	
+fortran	language-unit	single	sumo	
 fortran	line-of-text	single	sumo	
 fortran	phenomenon	single	sumo	
 fortran	programming-language	single	wordnet	
@@ -2017,6 +2053,7 @@ hardware-upgrade	vehicle-body	single	sumo
 hash-collision	event	accepted	claude-ruling	
 hash-function	algorithm	accepted	claude-ruling wikidata	
 hash-function	function	single	wikidata	
+hash-function	relation	single	wikidata	
 hash-table	associative-array	accepted	claude-ruling wikidata	
 hash-table	data-structure	accepted	claude-ruling wikidata	
 hash-table	information	single	opencyc	
@@ -2075,8 +2112,10 @@ home-page	text-file	single	wordnet
 home-page	web-page	accepted	wikidata wordnet	
 hostname	identifier	accepted	claude-ruling wikidata	
 hostname	information	single	wikidata	
+html	language-unit	single	wordnet	
 html	markup-language	accepted	claude-ruling wikidata	
 html	part	single	wordnet	
+html	relation	single	wordnet	
 html	terminology	single	wordnet	
 html	text-file-format	accepted	claude-ruling iana	
 html	word	single	wordnet	
@@ -2182,6 +2221,7 @@ input-file	contract-condition	single	sumo
 input-file	file	single	wordnet	
 input-file	indication	accepted	sumo wordnet	
 input-file	information	accepted	sumo wordnet	
+input-file	language-unit	single	sumo	
 input-file	line-of-text	single	sumo	
 input-file	phenomenon	single	sumo	
 input-file	physical-object	single	sumo	
@@ -2295,6 +2335,7 @@ iterator	software-object	accepted	claude-ruling wikidata
 java-bytecode	bytecode	accepted	claude-ruling	
 java-language	information	accepted	sumo wordnet	
 java-language	language	accepted	sumo wordnet	
+java-language	language-unit	single	sumo	
 java-language	line-of-text	single	sumo	
 java-language	object-oriented-programming-language	accepted	claude wordnet	
 java-language	phenomenon	single	sumo	
@@ -2470,6 +2511,7 @@ linux-foundation	nonprofit-organization	accepted	claude-ruling
 linux-kernel	operating-system-kernel	accepted	claude-ruling	
 lisp	information	accepted	sumo wordnet	
 lisp	language	accepted	sumo wordnet	
+lisp	language-unit	single	sumo	
 lisp	line-of-text	single	sumo	
 lisp	phenomenon	single	sumo	
 lisp	programming-language	accepted	claude wordnet	
@@ -2526,6 +2568,7 @@ logic-diagram	contract-condition	single	sumo
 logic-diagram	indication	single	sumo	
 logic-diagram	information	accepted	sumo wordnet	
 logic-diagram	language	single	wordnet	
+logic-diagram	language-unit	single	sumo	
 logic-diagram	line-of-text	single	sumo	
 logic-diagram	multidimensional-language	accepted	claude wordnet	
 logic-diagram	phenomenon	single	sumo	
@@ -2552,6 +2595,7 @@ logical-operation	function	single	wikidata
 logical-operation	phenomenon	single	sumo	
 logical-operation	procedure	single	sumo	
 logical-operation	process	single	wordnet	
+logical-operation	relation	single	wikidata	
 logical-operation	volition	single	sumo	
 loop-iteration	event	single	sumo	
 loop-iteration	phenomenon	single	sumo	
@@ -2589,6 +2633,7 @@ machine-readable-dictionary	file	single	sumo
 machine-readable-dictionary	hard-copy	single	sumo	
 machine-readable-dictionary	indication	single	sumo	
 machine-readable-dictionary	information	accepted	sumo wordnet	
+machine-readable-dictionary	language-unit	single	sumo	
 machine-readable-dictionary	lexical-database	accepted	claude wordnet	
 machine-readable-dictionary	line-of-text	single	sumo	
 machine-readable-dictionary	mechanism	single	sumo	
@@ -2699,6 +2744,7 @@ master-file	contract-condition	single	sumo
 master-file	file	single	wordnet	
 master-file	indication	accepted	sumo wordnet	
 master-file	information	accepted	sumo wordnet	
+master-file	language-unit	single	sumo	
 master-file	line-of-text	single	sumo	
 master-file	phenomenon	single	sumo	
 master-file	physical-object	single	sumo	
@@ -2756,6 +2802,7 @@ memory-dump	artifact	single	sumo
 memory-dump	contract-condition	single	sumo	
 memory-dump	indication	single	sumo	
 memory-dump	information	accepted	sumo wordnet	
+memory-dump	language-unit	single	sumo	
 memory-dump	line-of-text	single	sumo	
 memory-dump	phenomenon	single	sumo	
 memory-dump	physical-object	single	sumo	
@@ -2880,6 +2927,7 @@ mug-file	file	single	claude
 multi-factor-authentication	authentication	accepted	claude-ruling	
 multidimensional-language	information	accepted	sumo wordnet	
 multidimensional-language	language	accepted	sumo wordnet	
+multidimensional-language	language-unit	single	sumo	
 multidimensional-language	line-of-text	single	sumo	
 multidimensional-language	phenomenon	single	sumo	
 multidimensional-language	programming-language	accepted	claude wordnet	
@@ -3052,6 +3100,7 @@ object-encapsulation	data-processing-technique	accepted	claude-ruling
 object-instance	software-object	accepted	claude-ruling wikidata	
 object-language	information	accepted	sumo wordnet	
 object-language	language	accepted	sumo wordnet	
+object-language	language-unit	single	sumo	
 object-language	line-of-text	single	sumo	
 object-language	phenomenon	single	sumo	
 object-language	programming-language	accepted	claude wordnet	
@@ -3080,6 +3129,7 @@ object-oriented-programming	structured-programming	accepted	claude wikidata
 object-oriented-programming-language	computer-language	single	opencyc	
 object-oriented-programming-language	information	accepted	opencyc sumo wordnet	
 object-oriented-programming-language	language	accepted	opencyc sumo wordnet	
+object-oriented-programming-language	language-unit	single	sumo	
 object-oriented-programming-language	line-of-text	single	sumo	
 object-oriented-programming-language	phenomenon	single	sumo	
 object-oriented-programming-language	programming-language	accepted	opencyc wordnet	
@@ -3103,6 +3153,7 @@ ogg	multimedia-container-format	accepted	claude-ruling
 okapi-bm25	algorithm	accepted	claude-ruling	
 one-dimensional-language	information	accepted	sumo wordnet	
 one-dimensional-language	language	accepted	sumo wordnet	
+one-dimensional-language	language-unit	single	sumo	
 one-dimensional-language	line-of-text	single	sumo	
 one-dimensional-language	phenomenon	single	sumo	
 one-dimensional-language	programming-language	accepted	claude wordnet	
@@ -3135,6 +3186,7 @@ operation-code	physical-object	single	sumo
 operation-code	universe	single	sumo	
 operational-transformation	concurrency-control	accepted	claude-ruling	
 operational-transformation	function	single	wikidata	
+operational-transformation	relation	single	wikidata	
 optical-disk	artifact	accepted	opencyc wordnet	
 optical-disk	cylinder	single	opencyc	
 optical-disk	device	accepted	opencyc wordnet	
@@ -3160,6 +3212,7 @@ output-file	contract-condition	single	sumo
 output-file	file	single	wordnet	
 output-file	indication	accepted	sumo wordnet	
 output-file	information	accepted	sumo wordnet	
+output-file	language-unit	single	sumo	
 output-file	line-of-text	single	sumo	
 output-file	phenomenon	single	sumo	
 output-file	physical-object	single	sumo	
@@ -3212,7 +3265,9 @@ pari-mutuel-machine	phenomenon	single	sumo
 pari-mutuel-machine	physical-object	single	wordnet	
 pari-mutuel-machine	universe	single	sumo	
 pari-mutuel-machine	vehicle-body	single	sumo	
+parity-bit	amount	single	wordnet	
 parity-bit	code	accepted	claude-ruling	
+parity-bit	definite-quantity	single	wordnet	
 parity-bit	measure	single	sumo	
 parity-bit	routine	single	sumo	
 parity-bit	signified	single	sumo	
@@ -3234,6 +3289,7 @@ part-of-speech-tagger	signified	single	sumo
 part-of-speech-tagger	software	single	wordnet	
 part-of-speech-tagger	tagging-program	accepted	claude wordnet	
 partial-order	concept	accepted	claude-ruling	
+partial-order	relation	single	wikidata	
 parts-catalog	catalogue	single	claude	
 parts-inventory	inventory	single	claude	
 pascal-compiler	code	accepted	sumo wordnet	
@@ -3246,6 +3302,7 @@ pascal-compiler	signified	single	sumo
 pascal-compiler	software	single	wordnet	
 pascal-language	information	accepted	sumo wordnet	
 pascal-language	language	accepted	sumo wordnet	
+pascal-language	language-unit	single	sumo	
 pascal-language	line-of-text	single	sumo	
 pascal-language	phenomenon	single	sumo	
 pascal-language	programming-language	accepted	claude wordnet	
@@ -3407,6 +3464,7 @@ program-assertion	statement	single	wikidata
 program-constant	code	accepted	claude-ruling	
 program-constant	function	single	wikidata	
 program-constant	program-variable	accepted	claude-ruling wikidata	
+program-constant	relation	single	wikidata	
 program-expression	code	accepted	claude-ruling	
 program-expression	information	single	opencyc	
 program-interpreter	code	accepted	sumo wordnet	
@@ -3418,6 +3476,7 @@ program-interpreter	routine	single	sumo
 program-interpreter	signified	single	sumo	
 program-interpreter	software	accepted	wikidata wordnet	
 program-invariant	property	accepted	claude-ruling	
+program-invariant	relation	single	wikidata	
 program-link	accomplishment	single	sumo	
 program-link	act	single	sumo	
 program-link	activity	single	sumo	
@@ -3453,6 +3512,7 @@ programmer	physical-object	single	wordnet
 programming-language	computer-language	accepted	claude-ruling opencyc yago	wordnet
 programming-language	information	accepted	opencyc sumo wordnet	
 programming-language	language	accepted	opencyc sumo wordnet	
+programming-language	language-unit	single	sumo	
 programming-language	line-of-text	single	sumo	
 programming-language	phenomenon	single	sumo	
 programming-language	universe	single	sumo	
@@ -3465,6 +3525,7 @@ progressive-web-app	web-application	accepted	claude-ruling wikidata
 progressive-web-app	web-site	single	wikidata	
 prolog	information	accepted	sumo wordnet	
 prolog	language	accepted	sumo wordnet	
+prolog	language-unit	single	sumo	
 prolog	line-of-text	single	sumo	
 prolog	phenomenon	single	sumo	
 prolog	programming-language	accepted	claude wordnet	
@@ -3577,6 +3638,7 @@ read-only-file	contract-condition	single	sumo
 read-only-file	file	single	wordnet	
 read-only-file	indication	accepted	sumo wordnet	
 read-only-file	information	accepted	sumo wordnet	
+read-only-file	language-unit	single	sumo	
 read-only-file	line-of-text	single	sumo	
 read-only-file	phenomenon	single	sumo	
 read-only-file	physical-object	single	sumo	
@@ -3613,7 +3675,9 @@ real-storage	physical-object	single	wordnet
 real-storage	storage-device	single	wordnet	
 real-storage	universe	single	sumo	
 real-storage	vehicle-body	single	sumo	
+real-time	amount	single	wordnet	
 real-time	quantity	accepted	claude-ruling sumo	
+real-time	time	single	sumo	
 real-time	time-period	single	wordnet	
 real-time-operating-system	information	single	yago	
 real-time-operating-system	operating-system	accepted	claude-ruling wikidata	
@@ -3753,8 +3817,10 @@ rotary-actuator	phenomenon	single	sumo
 rotary-actuator	physical-object	single	wordnet	
 rotary-actuator	universe	single	sumo	
 rotary-actuator	vehicle-body	single	sumo	
+rotational-latency	amount	single	wordnet	
 rotational-latency	latency	accepted	claude-ruling	
 rotational-latency	quantity	single	sumo	
+rotational-latency	time	single	sumo	
 rpm-package-manager	package-format	accepted	claude-ruling	
 rpm-package-manager	package-manager	accepted	claude-ruling	
 rss	web-feed	accepted	claude-ruling	
@@ -3763,7 +3829,9 @@ rsync	software	accepted	claude-ruling
 ruby-language	programming-language	accepted	claude-ruling	
 run-length-encoding	algorithm	accepted	claude wikidata	
 run-length-encoding	compression-algorithm	accepted	claude-ruling	
+run-time	amount	single	wordnet	
 run-time	quantity	accepted	claude-ruling sumo	
+run-time	time	single	sumo	
 run-time	time-period	single	wordnet	
 runtime-system	software	accepted	claude wikidata	
 runtime-system	system-software	accepted	claude-ruling	
@@ -3833,8 +3901,10 @@ security-exploit	software	accepted	claude-ruling wikidata
 security-vulnerability	defect	accepted	claude-ruling	
 security-vulnerability	software-bug	accepted	claude wikidata	
 seed-catalog	catalogue	single	claude	
+seek-time	amount	single	wordnet	
 seek-time	latency	accepted	claude-ruling	
 seek-time	quantity	single	sumo	
+seek-time	time	single	sumo	
 self-adapting-program	code	accepted	sumo wordnet	
 self-adapting-program	computer-program	accepted	sumo wordnet	
 self-adapting-program	information	single	wordnet	
@@ -4009,6 +4079,7 @@ soft-copy	artifact	single	sumo
 soft-copy	contract-condition	single	sumo	
 soft-copy	indication	single	sumo	
 soft-copy	information	accepted	sumo wordnet	
+soft-copy	language-unit	single	sumo	
 soft-copy	line-of-text	single	sumo	
 soft-copy	phenomenon	single	sumo	
 soft-copy	physical-object	single	sumo	
@@ -4041,6 +4112,7 @@ software-documentation	code	single	wordnet
 software-documentation	contract-condition	single	sumo	
 software-documentation	indication	single	sumo	
 software-documentation	information	accepted	sumo wikidata wordnet	
+software-documentation	language-unit	single	sumo	
 software-documentation	line-of-text	single	sumo	
 software-documentation	phenomenon	single	sumo	
 software-documentation	physical-object	single	sumo	
@@ -4182,8 +4254,10 @@ stack-data-structure	storage-device	single	wordnet
 stack-data-structure	universe	single	sumo	
 stack-data-structure	vehicle-body	single	sumo	
 stack-overflow	web-site	accepted	claude-ruling	
+standard-generalized-markup-language	language-unit	single	wordnet	
 standard-generalized-markup-language	markup-language	accepted	claude-ruling	
 standard-generalized-markup-language	part	single	wordnet	
+standard-generalized-markup-language	relation	single	wordnet	
 standard-generalized-markup-language	terminology	single	wordnet	
 standard-generalized-markup-language	word	single	wordnet	
 standard-library	software	single	wikidata	
@@ -4196,6 +4270,8 @@ static-program-analysis	data-processing	accepted	claude-ruling
 static-typing	algorithm	single	wikidata	
 static-typing	static-program-analysis	dissented	wikidata	
 static-typing	type-system	accepted	claude-ruling wikidata	
+storage-capacity	amount	single	wordnet	
+storage-capacity	indefinite-quantity	single	wordnet	
 storage-capacity	quantity	accepted	claude-ruling sumo	
 storage-drive	artifact	accepted	sumo wordnet	
 storage-drive	device	accepted	sumo wordnet	
@@ -4217,6 +4293,7 @@ stored-program	signified	single	sumo
 stored-program	software	single	wordnet	
 stratified-language	information	accepted	sumo wordnet	
 stratified-language	language	accepted	sumo wordnet	
+stratified-language	language-unit	single	sumo	
 stratified-language	line-of-text	single	sumo	
 stratified-language	phenomenon	single	sumo	
 stratified-language	programming-language	accepted	claude wordnet	
@@ -4485,11 +4562,13 @@ tiff	information	single	opencyc
 tiff	stream	single	opencyc	
 time-complexity	function	single	wikidata	
 time-complexity	quantity	accepted	claude-ruling	
+time-complexity	relation	single	wikidata	
 time-series-database	database-management-system	accepted	claude-ruling wikidata	
 time-series-database	software	single	wikidata	
 time-sharing	data-processing	accepted	claude-ruling	
 time-sharing	event	single	sumo	
 time-sharing	phenomenon	single	sumo	
+time-sharing	relation	single	wordnet	
 timetable.communication	schedule	single	claude	
 title-bar	indication	single	sumo	
 title-bar	information	accepted	sumo wordnet	
@@ -4539,8 +4618,10 @@ tracing-routine	routine	single	sumo
 tracing-routine	signified	single	sumo	
 tracing-routine	software	single	wordnet	
 tracing-routine	subroutine	accepted	claude wordnet	
+track-to-track-seek-time	amount	single	wordnet	
 track-to-track-seek-time	quantity	single	sumo	
 track-to-track-seek-time	seek-time	accepted	claude-ruling wordnet	
+track-to-track-seek-time	time	single	sumo	
 tract	hard-copy	single	sumo	
 transaction-atomicity	property	accepted	claude-ruling	
 transaction-durability	property	accepted	claude-ruling	
@@ -4550,6 +4631,7 @@ transaction-file	contract-condition	single	sumo
 transaction-file	file	single	wordnet	
 transaction-file	indication	accepted	sumo wordnet	
 transaction-file	information	accepted	sumo wordnet	
+transaction-file	language-unit	single	sumo	
 transaction-file	line-of-text	single	sumo	
 transaction-file	phenomenon	single	sumo	
 transaction-file	physical-object	single	sumo	
@@ -4559,6 +4641,7 @@ transaction-file	vehicle-body	single	sumo
 transaction-isolation	property	accepted	claude-ruling	
 transcription	recording	single	claude	
 transitive-closure	concept	accepted	claude-ruling	
+transitive-closure	relation	single	wikidata	
 transitive-reduction	concept	accepted	claude-ruling	
 translator-program	code	accepted	sumo wordnet	
 translator-program	computer-program	accepted	sumo wordnet	
@@ -4622,6 +4705,8 @@ ubuntu	linux-distribution	accepted	claude-ruling
 uefi	firmware	accepted	claude-ruling	
 uefi	technical-standard	accepted	claude-ruling	
 undefined-behavior	property	accepted	claude-ruling	
+unformatted-capacity	amount	single	wordnet	
+unformatted-capacity	indefinite-quantity	single	wordnet	
 unformatted-capacity	quantity	single	sumo	
 unformatted-capacity	storage-capacity	accepted	claude-ruling wordnet	
 unicode	character-encoding	accepted	claude-ruling	
@@ -4651,6 +4736,7 @@ unix-shell	software	accepted	claude wikidata
 unix-shell	software-object	single	opencyc	
 unstratified-language	information	accepted	sumo wordnet	
 unstratified-language	language	accepted	sumo wordnet	
+unstratified-language	language-unit	single	sumo	
 unstratified-language	line-of-text	single	sumo	
 unstratified-language	phenomenon	single	sumo	
 unstratified-language	programming-language	accepted	claude wordnet	

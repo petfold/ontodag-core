@@ -10,7 +10,7 @@ abuse reaction.phenomenon
 academic-degree contract-condition text
 academy association organization team
 access normal
-access-time quantity
+access-time time
 accident event
 accommodation accomplishment act activity procedure volition
 accomplishment event
@@ -65,7 +65,7 @@ affiliation accomplishment act activity procedure volition
 affinity amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 affinity.relation accomplishment act activity procedure volition
 affirmation communication
-afternoon quantity
+afternoon time
 age attribute property
 agenda contract-condition text
 agent universe
@@ -111,6 +111,7 @@ ambition attribute property
 amendment affirmation
 ammonia compound
 ammunition pellet
+amount quantity
 amphetamine material substance
 amphibian vertebrate
 analog-computer computer
@@ -221,7 +222,7 @@ attachment artifact vehicle-body
 attack accomplishment act activity procedure volition
 attempt accomplishment act activity procedure volition
 attention attribute property
-attitude '*'
+attitude relation
 attraction amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 attractive-force event
 attribute '*'
@@ -522,7 +523,7 @@ calamity amateur ambiance circumstance civilisation crowd custom danger expert f
 calculation accomplishment act activity information procedure volition
 calculator machine machinery
 calendar quantity
-calendar-month quantity
+calendar-month time
 calf livestock mammal
 caliper device
 call coming-together
@@ -564,6 +565,7 @@ carbonated-water water
 card playing-card
 card-hand collection
 cardigan clothing fashion
+cardinal-compass-point orientation spatial-direction
 cardoon botanical-fruit
 care accomplishment act activity procedure volition
 career attribute property
@@ -676,7 +678,7 @@ chief attribute property
 child young-people
 child-adoption leader
 childcare care
-childhood quantity
+childhood time
 chili botanical-fruit
 chimney development device
 chin body-part
@@ -728,7 +730,7 @@ clipboard device
 clipping contract-condition text
 clique group
 clock device
-clock-time quantity
+clock-time time
 clod universe
 closet case furniture
 closure accomplishment act activity information procedure volition
@@ -786,10 +788,10 @@ coming-together accomplishment act activity procedure volition
 command attribute property
 command-line communication
 command-line-interface code computer-program
-command-processing-overhead-time quantity
+command-processing-overhead-time time
 command-prompt indication
 commemoration reaction.phenomenon
-commencement quantity
+commencement time
 commerce exchange interaction transaction
 commercial-enterprise exchange interaction transaction
 commission quantity
@@ -893,7 +895,7 @@ context signified
 continent land yard
 contingency-procedure measure routine
 contract signified
-contract-condition artifact indication line-of-text vehicle-body
+contract-condition artifact indication language-unit line-of-text vehicle-body
 contraction event
 contradiction signified
 contrary '*'
@@ -1014,7 +1016,7 @@ cube shape
 cubicle room
 cuff artifact vehicle-body
 cultivator device
-culture '*'
+culture relation
 cupboard room
 cupcake food material substance
 curl hair
@@ -1059,21 +1061,21 @@ data-storage accomplishment act activity procedure volition
 data-structure '*'
 database-management-system code computer-program
 daughter attribute property
-dawn quantity
-day quantity
+dawn time
+day time
 day-of-the-month day
 daycare care
 daylight luminosity
 daze attribute property
 dead-body organism species
-deadline quantity
+deadline time
 deal accomplishment act activity procedure volition
 dearth amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 death event
 debate affirmation
 debt quantity
 debugger code computer-program
-decade quantity
+decade time
 decal information
 decay event
 decision-table contract-condition text
@@ -1090,6 +1092,7 @@ deer mammal
 default-option accomplishment act activity information procedure volition
 defendant attribute property
 deficit quantity
+definite-quantity quantity
 definition signified
 defroster device
 degree quantity
@@ -1365,7 +1368,7 @@ environment place
 equalizer device
 equilibrium amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 equipment device
-era quantity
+era time
 eraser device
 erosion visit
 error-correcting-code measure routine
@@ -1380,7 +1383,7 @@ estimate calculation computation
 estimation '*'
 ethics field-of-study
 evaporative-cooler device
-evening quantity
+evening time
 event phenomenon
 evidence thinking
 evolution event
@@ -1448,7 +1451,7 @@ failure amateur ambiance circumstance civilisation crowd custom danger expert fr
 fair coming-together
 fair-weather event
 fairy self
-fall quantity
+fall time
 fame amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 family kin
 family-line kin
@@ -1882,7 +1885,7 @@ hen chicken
 herb botanical-fruit
 herbicide material substance
 herd group
-here-and-now quantity
+here-and-now time
 hero normal
 hide body-part
 hideaway place
@@ -1893,7 +1896,7 @@ highlighter device
 hindrance universe
 hinge component mechanism
 hip body-part
-historic-period quantity
+historic-period time
 history field-of-study
 hobby doll
 hockey-stick device
@@ -1901,7 +1904,7 @@ hoe device
 hog mammal
 hoist device
 holder device
-holiday quantity
+holiday time
 home association organization team
 home-computer computer
 homecoming visit
@@ -1994,6 +1997,7 @@ income quantity
 increase event
 increment quantity
 incubator device
+indefinite-quantity quantity
 indemnity attribute property
 index finger
 index-register component mechanism
@@ -2053,7 +2057,7 @@ intent signified
 intention accomplishment act activity information procedure volition
 interaction accomplishment act activity procedure volition
 intercom device
-interest number
+interest number numeric-quantity
 interface code computer-program
 interior-design trade
 interoperability attribute property
@@ -2176,7 +2180,8 @@ landmine device
 landowner attribute property
 landscaping care
 lane development
-language line-of-text
+language language-unit line-of-text
+language-unit information
 lantern device
 lanyard artifact vehicle-body
 lap normal
@@ -2206,7 +2211,7 @@ leaf-blade leaf
 lease contract legal-document
 leash artifact vehicle-body
 leather fabric
-leave quantity
+leave time
 lectern artifact vehicle-body
 lecture acquired-knowledge education
 leek botanical-fruit
@@ -2214,7 +2219,7 @@ leftovers food
 leg artifact vehicle-body
 leg-of-meat meat
 legal-action contest war
-legal-age quantity
+legal-age time
 legal-document signified
 legal-power normal
 legal-procedure measure routine
@@ -2473,7 +2478,7 @@ microsoft-windows code computer-program
 microtome device
 middle '*'
 middleman attribute property
-midnight quantity
+midnight time
 migration event
 mile amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 military-action battle
@@ -2525,7 +2530,7 @@ monkey mammal
 monopoly amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 mop device
 morale attribute property
-morning quantity
+morning time
 morsel food
 mosaic fine-art
 mosquito insect
@@ -2611,7 +2616,7 @@ news-report article
 newspaper periodical series
 newsprint artifact vehicle-body
 nickel chemical-element
-night quantity
+night time
 nightgown clothing fashion
 nightmare event
 node '*'
@@ -2634,7 +2639,7 @@ notion signified
 noun word
 novel book fiction folklore legend
 novelty artifact vehicle-body
-nowadays quantity
+nowadays time
 nozzle device
 nuance amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 nuclear-reactor device
@@ -2642,6 +2647,7 @@ number quantity
 number-cruncher computer
 number-one-wood device
 numeral character symbol
+numeric-quantity quantity
 nun association organization people school-class team
 nurse attribute property
 nursery room
@@ -2661,7 +2667,7 @@ object-program code computer-program
 objection reaction.phenomenon
 objective-lens device
 obstacle event
-occasion quantity
+occasion time
 occlusion universe
 occupation attribute property
 ocean.quantity amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
@@ -2679,12 +2685,12 @@ oil compound
 oil-filter filter
 oil-lamp device
 okra botanical-fruit
-old-age quantity
+old-age time
 olfactory-property attribute property
 omission amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 one-dimensional-language language
-one-fourth number
-one-half number
+one-fourth number numeric-quantity
+one-half number numeric-quantity
 onion botanical-fruit
 opera comedy dramatic-play
 operation therapy
@@ -2709,7 +2715,7 @@ organism agent physical-object
 organization group
 organizer computer
 orgy accomplishment act activity procedure volition
-orientation attribute property
+orientation spatial-relation
 origin attribute property
 ornamental-fountain artifact vehicle-body
 oscilloscope device
@@ -2803,7 +2809,7 @@ passenger attribute property
 passing normal
 passion attribute property
 passport contract-condition text
-password line-of-text
+password language-unit line-of-text
 pasta-sauce food material substance
 pastel attribute property
 pastime accomplishment act activity procedure volition
@@ -2822,7 +2828,7 @@ patriot people school-class
 patriotism inclination mentality trait
 patrol association organization team
 pattern '*'
-pause quantity
+pause time
 paving material substance
 peak land yard
 peasant person populace
@@ -2846,7 +2852,7 @@ pepper-plant plant
 pepper-shaker device
 pepper-spray device
 perceiver person populace
-percentage number
+percentage number numeric-quantity
 perception event
 perceptiveness attribute property
 perch physical-object
@@ -2855,7 +2861,7 @@ performance performing
 performing stage-production
 perfume chemical-solution
 period character symbol
-period.time quantity
+period.time time
 periodical contract-condition text
 persimmon botanical-fruit
 person human self
@@ -2873,7 +2879,7 @@ pet-sitting care
 petri-dish dish
 petroleum-jelly oil
 petticoat clothing fashion
-phase quantity
+phase time
 phenomenon '*'
 philosopher field-of-study
 philosophy philosopher
@@ -3032,7 +3038,7 @@ present accomplishment act activity procedure volition
 presentation information
 preservation attribute property
 preserves food material substance
-presidency quantity
+presidency time
 press device
 prestige amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 prey animal body
@@ -3142,7 +3148,7 @@ quality amateur ambiance circumstance civilisation crowd custom danger expert fr
 quantity '*'
 quarrel argument
 quarter land yard
-quarter.time quantity
+quarter.time time
 quartz-glass mineral
 quest accomplishment act activity procedure volition
 question communication
@@ -3192,7 +3198,7 @@ rank attribute property
 rap blow impact
 rape accomplishment act activity procedure volition
 rat mammal
-ratio number
+ratio number numeric-quantity
 rationality attribute property
 rattle plaything
 raw-milk milk
@@ -3204,7 +3210,7 @@ read-only-memory-chip component mechanism
 read-write-head component mechanism
 readiness attribute property
 real-storage device
-real-time quantity
+real-time time
 real-time-processing accomplishment act activity procedure volition
 realism amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
 reality '*'
@@ -3250,9 +3256,10 @@ register contract-condition text
 registration affirmation
 rehabilitation therapy
 rehearsal acquired-knowledge education
-reign quantity
+reign time
 rein device
 rejection accomplishment act activity information procedure volition
+relation '*'
 relational-database indication
 relational-database-management-system code computer-program
 relationship accomplishment act activity procedure volition
@@ -3267,7 +3274,7 @@ relish perception
 relish-condiment food material substance
 relocatable-program code computer-program
 reluctance attribute property
-remainder number
+remainder number numeric-quantity
 remark sentence
 remedy material substance
 renovation amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
@@ -3297,7 +3304,7 @@ resignation contract-condition text
 resistance contest war
 resolution judgment
 resource amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
-respite quantity
+respite time
 response normal
 rest device
 restaurant building
@@ -3367,7 +3374,7 @@ roster contract-condition text
 rotary-actuator device
 rotary-motion event
 rotation event
-rotational-latency quantity
+rotational-latency time
 roulette-wheel artifact vehicle-body
 rounder device
 route place
@@ -3382,10 +3389,10 @@ rug-pad artifact vehicle-body
 ruin development
 rule normal
 rule.cognition measure routine
-rule.time quantity
+rule.time time
 ruler device
 rumor file myth news note
-run-time quantity
+run-time time
 rung universe
 runner person populace
 rural-area place
@@ -3425,7 +3432,7 @@ sauna room
 sausage food material substance
 saw cutter
 sawdust wood
-saying line-of-text
+saying language-unit line-of-text
 scab attribute property
 scabbard case
 scaffolding artifact vehicle-body
@@ -3445,7 +3452,7 @@ scholarly-paper essay
 scholarship accomplishment act activity procedure volition
 school association organization team
 school-class group
-school-term quantity
+school-term time
 schoolchild attribute property
 schoolhouse school
 science field-of-study
@@ -3474,7 +3481,7 @@ sealant material substance
 search accomplishment act activity information procedure volition
 search-engine code computer-program
 search-operation accomplishment act activity procedure volition
-season quantity
+season time
 seasoning food
 seat furniture
 seating-place place
@@ -3491,7 +3498,7 @@ sediment material substance
 seed body-part
 seeded-player attribute property
 seeder device
-seek-time quantity
+seek-time time
 selection collection
 self agent
 self-adapting-program code computer-program
@@ -3505,7 +3512,7 @@ sense attribute property
 sense-of-touch attribute property
 sense-tagger code computer-program
 sensitivity attribute property
-sentence line-of-text
+sentence language-unit line-of-text
 sentiment attribute property
 separation communication
 septic-tank artifact vehicle-body
@@ -3553,7 +3560,7 @@ shelf artifact vehicle-body
 shell body-part
 shelter building
 shield clothing fashion
-shift quantity
+shift time
 shift-register component mechanism
 shin-guard clothing fashion
 ship vehicle
@@ -3699,7 +3706,9 @@ spacecraft vehicle
 spade device
 spam-email device
 sparkling-wine wine
+spatial-direction spatial-relation
 spatial-extent quantity
+spatial-relation attribute property
 speaker attribute property
 spear weapon
 specialist attribute property
@@ -3734,7 +3743,7 @@ spray-gun device
 spread food material substance
 spreadsheet code computer-program
 spring-water water
-springtime quantity
+springtime time
 sprinkler device
 sprout botanical-fruit
 spur device
@@ -3864,7 +3873,7 @@ suit collection
 sulfur chemical-element
 sum collection
 summary contract-condition text
-summer quantity
+summer time
 summer-camp association organization team
 summit coming-together
 sunchoke botanical-fruit
@@ -3920,6 +3929,7 @@ system-call communication
 system-crash normal
 system-error communication
 system-instrumentality phenomenon
+system-of-measurement quantity
 system-program code computer-program
 table furniture
 table-knife device
@@ -3968,18 +3978,18 @@ television-camera camera
 temple building
 temple-of-head body-part
 tenant attribute property
-tendency attribute property
+tendency spatial-relation
 tending care
 tennis-racquet game-equipment
 tension normal
 tensity attribute property
 tent artifact vehicle-body
-term line-of-text
+term language-unit line-of-text
 terminal device
 terminology word
 territory place
 test-tube case
-text artifact indication line-of-text vehicle-body
+text artifact indication language-unit line-of-text vehicle-body
 text-editor code computer-program
 text-matching code computer-program
 text-passage contract-condition text
@@ -4018,11 +4028,13 @@ tier attribute property
 tiger mammal
 tights clothing fashion
 tile artifact vehicle-body
-tilt attribute property
-time-of-day quantity
-time-period quantity
+tilt spatial-relation
+time quantity
+time-of-day time
+time-period time
 time-sharing event
-time-slot quantity
+time-slot time
+time-unit quantity
 timetable contract-condition text
 tin chemical-element
 tip signified
@@ -4057,7 +4069,7 @@ toothbrush brush
 toothpaste chemical-solution
 toothpick device
 top shirt
-top-side attribute property
+top-side spatial-relation
 topic signified
 topographic-point place
 torch device
@@ -4078,7 +4090,7 @@ trace indication
 tracing-paper artifact vehicle-body
 tracing-routine code computer-program
 track device
-track-to-track-seek-time quantity
+track-to-track-seek-time time
 tracking-chart information
 tract book
 tractor vehicle
@@ -4150,7 +4162,7 @@ turntable device
 tutoring acquired-knowledge education
 tuxedo clothing fashion
 twelve percentage
-twilight quantity
+twilight time
 twin attribute property
 twist event
 typewriter device
@@ -4173,7 +4185,7 @@ university school
 unrest attribute property
 unstratified-language language
 unsuccessful-person attribute property
-upgrade attribute property
+upgrade spatial-relation
 upholstery trade
 urge attribute property
 urgency amateur ambiance circumstance civilisation crowd custom danger expert freedom hero lap literary-works point-of-view practice society status tension way
@@ -4305,8 +4317,8 @@ webcam camera
 wedding communication
 wedding-dress clothing fashion
 weed plant
-week quantity
-weekend quantity
+week time
+weekend time
 welcome reaction.phenomenon
 wellbeing attribute property
 whale mammal
@@ -4342,7 +4354,7 @@ wine-glass case
 wing body-part
 winner attribute property
 winnings accomplishment act activity procedure volition
-winter quantity
+winter time
 wire artifact vehicle-body
 wiretap search
 wiring locating
@@ -4356,7 +4368,7 @@ wonder amateur ambiance circumstance civilisation crowd custom danger expert fre
 wood tissue
 wool fabric
 worcestershire-sauce food material substance
-word line-of-text
+word language-unit line-of-text
 word-processing accomplishment act activity procedure volition
 word-processor code computer-program
 wording communication
@@ -4385,8 +4397,8 @@ yard place
 yeast microorganism
 yo-yo plaything
 young-people person populace
-youth quantity
-zero number
+youth time
+zero number numeric-quantity
 zinc chemical-element
 zipper device
 zone place

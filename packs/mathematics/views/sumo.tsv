@@ -44,6 +44,7 @@ academic-degree	artifact
 academic-degree	contract-condition
 academic-degree	indication
 academic-degree	information
+academic-degree	language-unit
 academic-degree	line-of-text
 academic-degree	phenomenon
 academic-degree	physical-object
@@ -87,6 +88,7 @@ account	essay
 account	file
 account	indication
 account	information
+account	language-unit
 account	line-of-text
 account	news
 account	note
@@ -217,6 +219,7 @@ adaptation	artifact
 adaptation	contract-condition
 adaptation	indication
 adaptation	information
+adaptation	language-unit
 adaptation	line-of-text
 adaptation	phenomenon
 adaptation	physical-object
@@ -271,6 +274,7 @@ address-directory	device
 address-directory	file
 address-directory	indication
 address-directory	information
+address-directory	language-unit
 address-directory	line-of-text
 address-directory	mechanism
 address-directory	news
@@ -553,15 +557,18 @@ affirmation	universe
 affirmation	volition
 afternoon	logical-relation
 afternoon	quantity
+afternoon	time
 age	attribute
 age	logical-relation
 age	property
 age-norm	logical-relation
 age-norm	quantity
+age-norm	time
 agenda	artifact
 agenda	contract-condition
 agenda	indication
 agenda	information
+agenda	language-unit
 agenda	line-of-text
 agenda	phenomenon
 agenda	physical-object
@@ -793,6 +800,8 @@ ammunition	phenomenon
 ammunition	universe
 ammunition	vehicle-body
 ammunition	weapon
+amount	logical-relation
+amount	quantity
 amphetamine	material
 amphetamine	phenomenon
 amphetamine	substance
@@ -924,10 +933,12 @@ annex	vehicle-body
 anniversary	day
 anniversary	logical-relation
 anniversary	quantity
+anniversary	time
 annotation	artifact
 annotation	contract-condition
 annotation	indication
 annotation	information
+annotation	language-unit
 annotation	line-of-text
 annotation	phenomenon
 annotation	physical-object
@@ -1148,6 +1159,7 @@ appraisal-report	artifact
 appraisal-report	contract-condition
 appraisal-report	indication
 appraisal-report	information
+appraisal-report	language-unit
 appraisal-report	line-of-text
 appraisal-report	phenomenon
 appraisal-report	physical-object
@@ -1267,6 +1279,7 @@ arithmetic-operation	volition
 arithmetic-progression	logical-relation
 arity	logical-relation
 arity	number
+arity	numeric-quantity
 arity	quantity
 arm	body-part
 arm	phenomenon
@@ -1319,6 +1332,7 @@ article	essay
 article	file
 article	indication
 article	information
+article	language-unit
 article	line-of-text
 article	news
 article	note
@@ -1506,6 +1520,7 @@ attention	attribute
 attention	logical-relation
 attention	property
 attitude	logical-relation
+attitude	relation
 attraction	amateur
 attraction	ambiance
 attraction	attribute
@@ -1671,6 +1686,7 @@ axe-head	phenomenon
 axe-head	universe
 axe-head	vehicle-body
 axiom	information
+axiom	language-unit
 axiom	line-of-text
 axiom	phenomenon
 axiom	sentence
@@ -1812,6 +1828,7 @@ ballot	artifact
 ballot	contract-condition
 ballot	indication
 ballot	information
+ballot	language-unit
 ballot	line-of-text
 ballot	phenomenon
 ballot	physical-object
@@ -2061,6 +2078,7 @@ battlefront	phenomenon
 battlefront	place
 battlefront	universe
 bayes'-postulate	information
+bayes'-postulate	language-unit
 bayes'-postulate	line-of-text
 bayes'-postulate	phenomenon
 bayes'-postulate	sentence
@@ -2349,6 +2367,7 @@ bill	contract-condition
 bill	currency
 bill	indication
 bill	information
+bill	language-unit
 bill	line-of-text
 bill	phenomenon
 bill	physical-object
@@ -2393,6 +2412,7 @@ biography	contract-condition
 biography	file
 biography	indication
 biography	information
+biography	language-unit
 biography	line-of-text
 biography	myth
 biography	news
@@ -2432,6 +2452,7 @@ bird-food	phenomenon
 bird-food	universe
 birdcall	information
 birdcall	language
+birdcall	language-unit
 birdcall	line-of-text
 birdcall	phenomenon
 birdcall	universe
@@ -2446,6 +2467,7 @@ birth	visit
 birthday	day
 birthday	logical-relation
 birthday	quantity
+birthday	time
 biserial-correlation-coefficient	logical-relation
 biserial-correlation-coefficient	quantity
 bit	phenomenon
@@ -2631,6 +2653,7 @@ book-appendix	artifact
 book-appendix	contract-condition
 book-appendix	indication
 book-appendix	information
+book-appendix	language-unit
 book-appendix	line-of-text
 book-appendix	phenomenon
 book-appendix	physical-object
@@ -2652,6 +2675,7 @@ book-index	artifact
 book-index	contract-condition
 book-index	indication
 book-index	information
+book-index	language-unit
 book-index	line-of-text
 book-index	phenomenon
 book-index	physical-object
@@ -2942,6 +2966,7 @@ broadcast	contract-condition
 broadcast	file
 broadcast	indication
 broadcast	information
+broadcast	language-unit
 broadcast	line-of-text
 broadcast	message
 broadcast	news
@@ -3044,6 +3069,7 @@ bulletin	artifact
 bulletin	contract-condition
 bulletin	indication
 bulletin	information
+bulletin	language-unit
 bulletin	line-of-text
 bulletin	phenomenon
 bulletin	physical-object
@@ -3103,6 +3129,7 @@ bus-ticket	artifact
 bus-ticket	contract-condition
 bus-ticket	indication
 bus-ticket	information
+bus-ticket	language-unit
 bus-ticket	line-of-text
 bus-ticket	phenomenon
 bus-ticket	physical-object
@@ -3281,6 +3308,7 @@ calendar	logical-relation
 calendar	quantity
 calendar-month	logical-relation
 calendar-month	quantity
+calendar-month	time
 calf	agent
 calf	animal
 calf	body
@@ -3316,6 +3344,7 @@ calling-card	artifact
 calling-card	contract-condition
 calling-card	indication
 calling-card	information
+calling-card	language-unit
 calling-card	line-of-text
 calling-card	phenomenon
 calling-card	physical-object
@@ -3440,6 +3469,7 @@ caption	artifact
 caption	contract-condition
 caption	indication
 caption	information
+caption	language-unit
 caption	line-of-text
 caption	phenomenon
 caption	physical-object
@@ -3522,8 +3552,15 @@ cardigan	fashion
 cardigan	phenomenon
 cardigan	universe
 cardigan	vehicle-body
+cardinal-compass-point	attribute
+cardinal-compass-point	logical-relation
+cardinal-compass-point	orientation
+cardinal-compass-point	property
+cardinal-compass-point	spatial-direction
+cardinal-compass-point	spatial-relation
 cardinality	logical-relation
 cardinality	number
+cardinality	numeric-quantity
 cardinality	quantity
 cardoon	body-part
 cardoon	botanical-fruit
@@ -3660,6 +3697,7 @@ cash	artifact
 cash	contract-condition
 cash	indication
 cash	information
+cash	language-unit
 cash	line-of-text
 cash	phenomenon
 cash	physical-object
@@ -3816,6 +3854,7 @@ celluloid	artifact
 celluloid	contract-condition
 celluloid	indication
 celluloid	information
+celluloid	language-unit
 celluloid	line-of-text
 celluloid	phenomenon
 celluloid	physical-object
@@ -3887,6 +3926,7 @@ certificate	contract-condition
 certificate	file
 certificate	indication
 certificate	information
+certificate	language-unit
 certificate	line-of-text
 certificate	news
 certificate	note
@@ -4048,6 +4088,7 @@ chapter	contract-condition
 chapter	essay
 chapter	indication
 chapter	information
+chapter	language-unit
 chapter	line-of-text
 chapter	phenomenon
 chapter	physical-object
@@ -4122,6 +4163,7 @@ charter	artifact
 charter	contract-condition
 charter	indication
 charter	information
+charter	language-unit
 charter	line-of-text
 charter	phenomenon
 charter	physical-object
@@ -4262,6 +4304,7 @@ childcare	procedure
 childcare	volition
 childhood	logical-relation
 childhood	quantity
+childhood	time
 chili	body-part
 chili	botanical-fruit
 chili	phenomenon
@@ -4297,6 +4340,7 @@ chit	essay
 chit	file
 chit	indication
 chit	information
+chit	language-unit
 chit	line-of-text
 chit	news
 chit	note
@@ -4329,6 +4373,7 @@ chronicle	contract-condition
 chronicle	file
 chronicle	indication
 chronicle	information
+chronicle	language-unit
 chronicle	line-of-text
 chronicle	myth
 chronicle	news
@@ -4417,6 +4462,7 @@ citation	artifact
 citation	contract-condition
 citation	indication
 citation	information
+citation	language-unit
 citation	line-of-text
 citation	phenomenon
 citation	physical-object
@@ -4582,6 +4628,7 @@ clipping	artifact
 clipping	contract-condition
 clipping	indication
 clipping	information
+clipping	language-unit
 clipping	line-of-text
 clipping	phenomenon
 clipping	physical-object
@@ -4600,6 +4647,7 @@ clock	universe
 clock	vehicle-body
 clock-time	logical-relation
 clock-time	quantity
+clock-time	time
 clod	phenomenon
 clod	universe
 closed-interval	logical-relation
@@ -4756,6 +4804,7 @@ coin	contract-condition
 coin	currency
 coin	indication
 coin	information
+coin	language-unit
 coin	line-of-text
 coin	phenomenon
 coin	physical-object
@@ -4854,6 +4903,7 @@ comedy	fiction
 comedy	folklore
 comedy	indication
 comedy	information
+comedy	language-unit
 comedy	legend
 comedy	line-of-text
 comedy	myth
@@ -4901,6 +4951,7 @@ commemoration	universe
 commemoration	volition
 commencement	logical-relation
 commencement	quantity
+commencement	time
 commerce	accomplishment
 commerce	act
 commerce	activity
@@ -5109,6 +5160,7 @@ compiler	routine
 compiler	signified
 complex-number	logical-relation
 complex-number	number
+complex-number	numeric-quantity
 complex-number	quantity
 complication	amateur
 complication	ambiance
@@ -5149,6 +5201,7 @@ composition	contract-condition
 composition	essay
 composition	indication
 composition	information
+composition	language-unit
 composition	line-of-text
 composition	phenomenon
 composition	physical-object
@@ -5515,6 +5568,7 @@ contract	signified
 contract-condition	artifact
 contract-condition	indication
 contract-condition	information
+contract-condition	language-unit
 contract-condition	line-of-text
 contract-condition	phenomenon
 contract-condition	physical-object
@@ -5672,6 +5726,7 @@ copyright	artifact
 copyright	contract-condition
 copyright	indication
 copyright	information
+copyright	language-unit
 copyright	line-of-text
 copyright	phenomenon
 copyright	physical-object
@@ -5764,6 +5819,7 @@ correction	way
 correlation	logical-relation
 correlation-coefficient	logical-relation
 correlation-coefficient	number
+correlation-coefficient	numeric-quantity
 correlation-coefficient	quantity
 correlational-analysis	logical-relation
 correlational-analysis	measure
@@ -5885,6 +5941,7 @@ coupon	artifact
 coupon	contract-condition
 coupon	indication
 coupon	information
+coupon	language-unit
 coupon	line-of-text
 coupon	phenomenon
 coupon	physical-object
@@ -6131,6 +6188,7 @@ criminal-record	artifact
 criminal-record	contract-condition
 criminal-record	indication
 criminal-record	information
+criminal-record	language-unit
 criminal-record	line-of-text
 criminal-record	phenomenon
 criminal-record	physical-object
@@ -6177,6 +6235,7 @@ critique	artifact
 critique	contract-condition
 critique	indication
 critique	information
+critique	language-unit
 critique	line-of-text
 critique	phenomenon
 critique	physical-object
@@ -6206,6 +6265,7 @@ cross-section	contract-condition
 cross-section	file
 cross-section	indication
 cross-section	information
+cross-section	language-unit
 cross-section	line-of-text
 cross-section	news
 cross-section	note
@@ -6294,6 +6354,7 @@ cultivator	phenomenon
 cultivator	universe
 cultivator	vehicle-body
 culture	logical-relation
+culture	relation
 cupboard	artifact
 cupboard	development
 cupboard	phenomenon
@@ -6323,6 +6384,7 @@ currency	artifact
 currency	contract-condition
 currency	indication
 currency	information
+currency	language-unit
 currency	line-of-text
 currency	phenomenon
 currency	physical-object
@@ -6507,11 +6569,14 @@ daughter	logical-relation
 daughter	property
 dawn	logical-relation
 dawn	quantity
+dawn	time
 day	logical-relation
 day	quantity
+day	time
 day-of-the-month	day
 day-of-the-month	logical-relation
 day-of-the-month	quantity
+day-of-the-month	time
 daycare	accomplishment
 daycare	act
 daycare	activity
@@ -6534,6 +6599,7 @@ dead-body	species
 dead-body	universe
 deadline	logical-relation
 deadline	quantity
+deadline	time
 deal	accomplishment
 deal	act
 deal	activity
@@ -6580,6 +6646,7 @@ debt	logical-relation
 debt	quantity
 decade	logical-relation
 decade	quantity
+decade	time
 decagon	attribute
 decagon	logical-relation
 decagon	property
@@ -6666,6 +6733,8 @@ defendant	logical-relation
 defendant	property
 deficit	logical-relation
 deficit	quantity
+definite-quantity	logical-relation
+definite-quantity	quantity
 definition	logical-relation
 definition	signified
 defroster	artifact
@@ -6940,6 +7009,7 @@ diagram	phenomenon
 diagram	universe
 dialect	information
 dialect	language
+dialect	language-unit
 dialect	line-of-text
 dialect	phenomenon
 dialect	universe
@@ -6958,6 +7028,7 @@ dialogue	artifact
 dialogue	contract-condition
 dialogue	indication
 dialogue	information
+dialogue	language-unit
 dialogue	line-of-text
 dialogue	phenomenon
 dialogue	physical-object
@@ -6986,6 +7057,7 @@ diary	essay
 diary	file
 diary	indication
 diary	information
+diary	language-unit
 diary	line-of-text
 diary	news
 diary	note
@@ -7002,6 +7074,7 @@ dictionary	device
 dictionary	file
 dictionary	indication
 dictionary	information
+dictionary	language-unit
 dictionary	line-of-text
 dictionary	mechanism
 dictionary	news
@@ -7299,6 +7372,7 @@ discussion	artifact
 discussion	contract-condition
 discussion	indication
 discussion	information
+discussion	language-unit
 discussion	line-of-text
 discussion	phenomenon
 discussion	physical-object
@@ -7367,6 +7441,7 @@ dismissal	artifact
 dismissal	contract-condition
 dismissal	indication
 dismissal	information
+dismissal	language-unit
 dismissal	line-of-text
 dismissal	phenomenon
 dismissal	physical-object
@@ -7470,6 +7545,7 @@ dissertation	artifact
 dissertation	contract-condition
 dissertation	indication
 dissertation	information
+dissertation	language-unit
 dissertation	line-of-text
 dissertation	phenomenon
 dissertation	physical-object
@@ -7592,6 +7668,7 @@ document	contract-condition
 document	file
 document	indication
 document	information
+document	language-unit
 document	line-of-text
 document	news
 document	note
@@ -7792,6 +7869,7 @@ draft	artifact
 draft	contract-condition
 draft	indication
 draft	information
+draft	language-unit
 draft	line-of-text
 draft	phenomenon
 draft	physical-object
@@ -7839,6 +7917,7 @@ dramatic-play	fiction
 dramatic-play	folklore
 dramatic-play	indication
 dramatic-play	information
+dramatic-play	language-unit
 dramatic-play	legend
 dramatic-play	line-of-text
 dramatic-play	myth
@@ -8100,6 +8179,7 @@ east	place
 east	universe
 eccentricity	logical-relation
 eccentricity	number
+eccentricity	numeric-quantity
 eccentricity	quantity
 echo	event
 echo	phenomenon
@@ -8512,6 +8592,7 @@ equipment	universe
 equipment	vehicle-body
 era	logical-relation
 era	quantity
+era	time
 eraser	artifact
 eraser	device
 eraser	phenomenon
@@ -8547,6 +8628,7 @@ essay	artifact
 essay	contract-condition
 essay	indication
 essay	information
+essay	language-unit
 essay	line-of-text
 essay	phenomenon
 essay	physical-object
@@ -8583,6 +8665,7 @@ evaporative-cooler	universe
 evaporative-cooler	vehicle-body
 evening	logical-relation
 evening	quantity
+evening	time
 evenness	amateur
 evenness	ambiance
 evenness	attribute
@@ -8623,6 +8706,7 @@ exam	contract-condition
 exam	device
 exam	indication
 exam	information
+exam	language-unit
 exam	line-of-text
 exam	phenomenon
 exam	physical-object
@@ -8657,6 +8741,7 @@ excerpt	artifact
 excerpt	contract-condition
 excerpt	indication
 excerpt	information
+excerpt	language-unit
 excerpt	line-of-text
 excerpt	phenomenon
 excerpt	physical-object
@@ -8975,6 +9060,7 @@ facsimile	phenomenon
 facsimile	universe
 facsimile	vehicle-body
 fact	information
+fact	language-unit
 fact	line-of-text
 fact	phenomenon
 fact	remark
@@ -9061,6 +9147,7 @@ fairy	self
 fairy	universe
 fall	logical-relation
 fall	quantity
+fall	time
 fame	amateur
 fame	ambiance
 fame	attribute
@@ -9309,6 +9396,7 @@ fiction	artifact
 fiction	contract-condition
 fiction	indication
 fiction	information
+fiction	language-unit
 fiction	line-of-text
 fiction	myth
 fiction	phenomenon
@@ -9361,6 +9449,7 @@ file	artifact
 file	contract-condition
 file	indication
 file	information
+file	language-unit
 file	line-of-text
 file	phenomenon
 file	physical-object
@@ -9381,6 +9470,7 @@ film	celluloid
 film	contract-condition
 film	indication
 film	information
+film	language-unit
 film	line-of-text
 film	phenomenon
 film	physical-object
@@ -9407,6 +9497,7 @@ final-examination	device
 final-examination	exam
 final-examination	indication
 final-examination	information
+final-examination	language-unit
 final-examination	line-of-text
 final-examination	phenomenon
 final-examination	physical-object
@@ -9828,6 +9919,7 @@ folklore	artifact
 folklore	contract-condition
 folklore	indication
 folklore	information
+folklore	language-unit
 folklore	line-of-text
 folklore	myth
 folklore	phenomenon
@@ -9898,6 +9990,7 @@ form	artifact
 form	contract-condition
 form	indication
 form	information
+form	language-unit
 form	line-of-text
 form	phenomenon
 form	physical-object
@@ -9920,6 +10013,7 @@ formal-application	artifact
 formal-application	contract-condition
 formal-application	indication
 formal-application	information
+formal-application	language-unit
 formal-application	line-of-text
 formal-application	phenomenon
 formal-application	physical-object
@@ -9946,6 +10040,7 @@ formula	artifact
 formula	contract-condition
 formula	indication
 formula	information
+formula	language-unit
 formula	line-of-text
 formula	phenomenon
 formula	physical-object
@@ -11512,6 +11607,7 @@ headline	artifact
 headline	contract-condition
 headline	indication
 headline	information
+headline	language-unit
 headline	line-of-text
 headline	phenomenon
 headline	physical-object
@@ -11671,6 +11767,7 @@ herd	phenomenon
 herd	universe
 here-and-now	logical-relation
 here-and-now	quantity
+here-and-now	time
 hero	attribute
 hero	logical-relation
 hero	normal
@@ -11739,6 +11836,7 @@ hip	physical-object
 hip	universe
 historic-period	logical-relation
 historic-period	quantity
+historic-period	time
 history	field-of-study
 history	logical-relation
 history	signified
@@ -11781,6 +11879,7 @@ holder	universe
 holder	vehicle-body
 holiday	logical-relation
 holiday	quantity
+holiday	time
 home	agent
 home	association
 home	collection
@@ -12207,6 +12306,7 @@ identity-card	artifact
 identity-card	contract-condition
 identity-card	indication
 identity-card	information
+identity-card	language-unit
 identity-card	line-of-text
 identity-card	phenomenon
 identity-card	physical-object
@@ -12380,6 +12480,8 @@ incubator	device
 incubator	phenomenon
 incubator	universe
 incubator	vehicle-body
+indefinite-quantity	logical-relation
+indefinite-quantity	quantity
 indemnity	attribute
 indemnity	logical-relation
 indemnity	property
@@ -12677,6 +12779,7 @@ intercom	universe
 intercom	vehicle-body
 interest	logical-relation
 interest	number
+interest	numeric-quantity
 interest	quantity
 interface	code
 interface	computer-program
@@ -12799,6 +12902,7 @@ invoice	essay
 invoice	file
 invoice	indication
 invoice	information
+invoice	language-unit
 invoice	line-of-text
 invoice	news
 invoice	note
@@ -12844,6 +12948,7 @@ isotropy	property
 issue	logical-relation
 issue	signified
 item	information
+item	language-unit
 item	line-of-text
 item	phenomenon
 item	remark
@@ -12997,6 +13102,7 @@ journal	artifact
 journal	contract-condition
 journal	indication
 journal	information
+journal	language-unit
 journal	line-of-text
 journal	periodical
 journal	phenomenon
@@ -13412,9 +13518,13 @@ lane	phenomenon
 lane	universe
 lane	vehicle-body
 language	information
+language	language-unit
 language	line-of-text
 language	phenomenon
 language	universe
+language-unit	information
+language-unit	phenomenon
+language-unit	universe
 lantern	artifact
 lantern	device
 lantern	phenomenon
@@ -13588,6 +13698,7 @@ leather	universe
 leather	vehicle-body
 leave	logical-relation
 leave	quantity
+leave	time
 lectern	artifact
 lectern	phenomenon
 lectern	universe
@@ -13631,6 +13742,7 @@ legal-action	volition
 legal-action	war
 legal-age	logical-relation
 legal-age	quantity
+legal-age	time
 legal-document	logical-relation
 legal-document	signified
 legal-power	attribute
@@ -13651,6 +13763,7 @@ legend	artifact
 legend	contract-condition
 legend	indication
 legend	information
+legend	language-unit
 legend	line-of-text
 legend	myth
 legend	phenomenon
@@ -13662,6 +13775,7 @@ legend-key	artifact
 legend-key	contract-condition
 legend-key	indication
 legend-key	information
+legend-key	language-unit
 legend-key	line-of-text
 legend-key	phenomenon
 legend-key	physical-object
@@ -13727,6 +13841,7 @@ letter	contract-condition
 letter	file
 letter	indication
 letter	information
+letter	language-unit
 letter	line-of-text
 letter	news
 letter	note
@@ -13766,6 +13881,7 @@ license	artifact
 license	contract-condition
 license	indication
 license	information
+license	language-unit
 license	line-of-text
 license	phenomenon
 license	physical-object
@@ -13896,6 +14012,7 @@ linguistic-context	artifact
 linguistic-context	contract-condition
 linguistic-context	indication
 linguistic-context	information
+linguistic-context	language-unit
 linguistic-context	line-of-text
 linguistic-context	phenomenon
 linguistic-context	physical-object
@@ -13952,6 +14069,7 @@ list	artifact
 list	contract-condition
 list	indication
 list	information
+list	language-unit
 list	line-of-text
 list	phenomenon
 list	physical-object
@@ -14067,6 +14185,7 @@ logical-consistency	attribute
 logical-consistency	logical-relation
 logical-consistency	property
 logical-negation	information
+logical-negation	language-unit
 logical-negation	line-of-text
 logical-negation	phenomenon
 logical-negation	sentence
@@ -14079,10 +14198,12 @@ logical-operation	phenomenon
 logical-operation	procedure
 logical-operation	volition
 logical-predicate	information
+logical-predicate	language-unit
 logical-predicate	line-of-text
 logical-predicate	phenomenon
 logical-predicate	universe
 logical-subject	information
+logical-subject	language-unit
 logical-subject	line-of-text
 logical-subject	phenomenon
 logical-subject	universe
@@ -14248,6 +14369,7 @@ low	phenomenon
 low	universe
 lower-bound	logical-relation
 lower-bound	number
+lower-bound	numeric-quantity
 lower-bound	quantity
 loyalty	attribute
 loyalty	inclination
@@ -14344,6 +14466,7 @@ mag	artifact
 mag	contract-condition
 mag	indication
 mag	information
+mag	language-unit
 mag	line-of-text
 mag	periodical
 mag	phenomenon
@@ -14356,6 +14479,7 @@ magazine	artifact
 magazine	contract-condition
 magazine	indication
 magazine	information
+magazine	language-unit
 magazine	line-of-text
 magazine	periodical
 magazine	phenomenon
@@ -14577,6 +14701,7 @@ manuscript	artifact
 manuscript	contract-condition
 manuscript	indication
 manuscript	information
+manuscript	language-unit
 manuscript	line-of-text
 manuscript	phenomenon
 manuscript	physical-object
@@ -14599,6 +14724,7 @@ maple-syrup	universe
 mar	calendar-month
 mar	logical-relation
 mar	quantity
+mar	time
 marathon	accomplishment
 marathon	act
 marathon	activity
@@ -14906,6 +15032,7 @@ mead	substance
 mead	universe
 mean	logical-relation
 mean	number
+mean	numeric-quantity
 mean	quantity
 mean-deviation	logical-relation
 meaning	logical-relation
@@ -15024,6 +15151,7 @@ memo	artifact
 memo	contract-condition
 memo	indication
 memo	information
+memo	language-unit
 memo	line-of-text
 memo	phenomenon
 memo	physical-object
@@ -15096,6 +15224,7 @@ message	contract-condition
 message	file
 message	indication
 message	information
+message	language-unit
 message	line-of-text
 message	news
 message	note
@@ -15168,6 +15297,7 @@ middleman	logical-relation
 middleman	property
 midnight	logical-relation
 midnight	quantity
+midnight	time
 migration	event
 migration	phenomenon
 mile	amateur
@@ -15494,6 +15624,7 @@ money	contract-condition
 money	currency
 money	indication
 money	information
+money	language-unit
 money	line-of-text
 money	phenomenon
 money	physical-object
@@ -15544,6 +15675,7 @@ morale	logical-relation
 morale	property
 morning	logical-relation
 morning	quantity
+morning	time
 morsel	food
 morsel	phenomenon
 morsel	universe
@@ -15607,6 +15739,7 @@ motto	artifact
 motto	contract-condition
 motto	indication
 motto	information
+motto	language-unit
 motto	line-of-text
 motto	phenomenon
 motto	physical-object
@@ -15690,6 +15823,7 @@ multimedia	artifact
 multimedia	contract-condition
 multimedia	indication
 multimedia	information
+multimedia	language-unit
 multimedia	line-of-text
 multimedia	phenomenon
 multimedia	physical-object
@@ -15841,6 +15975,7 @@ myth	artifact
 myth	contract-condition
 myth	indication
 myth	information
+myth	language-unit
 myth	line-of-text
 myth	phenomenon
 myth	physical-object
@@ -15893,6 +16028,7 @@ natural-event	procedure
 natural-event	volition
 natural-language	information
 natural-language	language
+natural-language	language-unit
 natural-language	line-of-text
 natural-language	phenomenon
 natural-language	universe
@@ -15948,6 +16084,7 @@ needle	universe
 needle	vehicle-body
 negative-correlation	logical-relation
 negative-correlation	number
+negative-correlation	numeric-quantity
 negative-correlation	quantity
 negligence	attribute
 negligence	inclination
@@ -15991,6 +16128,7 @@ news	artifact
 news	contract-condition
 news	indication
 news	information
+news	language-unit
 news	line-of-text
 news	phenomenon
 news	physical-object
@@ -16001,6 +16139,7 @@ news-program	artifact
 news-program	contract-condition
 news-program	indication
 news-program	information
+news-program	language-unit
 news-program	line-of-text
 news-program	phenomenon
 news-program	physical-object
@@ -16014,6 +16153,7 @@ news-report	essay
 news-report	file
 news-report	indication
 news-report	information
+news-report	language-unit
 news-report	line-of-text
 news-report	news
 news-report	note
@@ -16026,6 +16166,7 @@ newspaper	artifact
 newspaper	contract-condition
 newspaper	indication
 newspaper	information
+newspaper	language-unit
 newspaper	line-of-text
 newspaper	periodical
 newspaper	phenomenon
@@ -16045,6 +16186,7 @@ nickel	substance
 nickel	universe
 night	logical-relation
 night	quantity
+night	time
 nightgown	artifact
 nightgown	clothing
 nightgown	fashion
@@ -16132,6 +16274,7 @@ note	artifact
 note	contract-condition
 note	indication
 note	information
+note	language-unit
 note	line-of-text
 note	phenomenon
 note	physical-object
@@ -16166,6 +16309,7 @@ notice	volition
 notion	logical-relation
 notion	signified
 noun	information
+noun	language-unit
 noun	line-of-text
 noun	phenomenon
 noun	universe
@@ -16179,6 +16323,7 @@ novel	fiction
 novel	folklore
 novel	indication
 novel	information
+novel	language-unit
 novel	legend
 novel	line-of-text
 novel	mechanism
@@ -16194,6 +16339,7 @@ novelty	universe
 novelty	vehicle-body
 nowadays	logical-relation
 nowadays	quantity
+nowadays	time
 nozzle	artifact
 nozzle	device
 nozzle	phenomenon
@@ -16241,6 +16387,8 @@ numeral	information
 numeral	phenomenon
 numeral	symbol
 numeral	universe
+numeric-quantity	logical-relation
+numeric-quantity	quantity
 numerical-analysis	field-of-study
 numerical-analysis	logical-relation
 numerical-analysis	signified
@@ -16325,6 +16473,7 @@ obstacle	event
 obstacle	phenomenon
 occasion	logical-relation
 occasion	quantity
+occasion	time
 occlusion	phenomenon
 occlusion	universe
 occupation	attribute
@@ -16470,6 +16619,7 @@ okra	physical-object
 okra	universe
 old-age	logical-relation
 old-age	quantity
+old-age	time
 olfactory-property	attribute
 olfactory-property	logical-relation
 olfactory-property	property
@@ -16497,9 +16647,11 @@ omission	tension
 omission	way
 one-fourth	logical-relation
 one-fourth	number
+one-fourth	numeric-quantity
 one-fourth	quantity
 one-half	logical-relation
 one-half	number
+one-half	numeric-quantity
 one-half	quantity
 onion	body-part
 onion	botanical-fruit
@@ -16517,6 +16669,7 @@ opera	fiction
 opera	folklore
 opera	indication
 opera	information
+opera	language-unit
 opera	legend
 opera	line-of-text
 opera	myth
@@ -16714,6 +16867,7 @@ orgy	volition
 orientation	attribute
 orientation	logical-relation
 orientation	property
+orientation	spatial-relation
 origin	attribute
 origin	logical-relation
 origin	property
@@ -16790,6 +16944,7 @@ outline	artifact
 outline	contract-condition
 outline	indication
 outline	information
+outline	language-unit
 outline	line-of-text
 outline	phenomenon
 outline	physical-object
@@ -16831,6 +16986,7 @@ overview	artifact
 overview	contract-condition
 overview	indication
 overview	information
+overview	language-unit
 overview	line-of-text
 overview	phenomenon
 overview	physical-object
@@ -17069,6 +17225,7 @@ paragraph	artifact
 paragraph	contract-condition
 paragraph	indication
 paragraph	information
+paragraph	language-unit
 paragraph	line-of-text
 paragraph	phenomenon
 paragraph	physical-object
@@ -17122,6 +17279,7 @@ pardon	artifact
 pardon	contract-condition
 pardon	indication
 pardon	information
+pardon	language-unit
 pardon	line-of-text
 pardon	phenomenon
 pardon	physical-object
@@ -17219,6 +17377,7 @@ pass	artifact
 pass	contract-condition
 pass	indication
 pass	information
+pass	language-unit
 pass	line-of-text
 pass	phenomenon
 pass	physical-object
@@ -17243,6 +17402,7 @@ passport	artifact
 passport	contract-condition
 passport	indication
 passport	information
+passport	language-unit
 passport	line-of-text
 passport	phenomenon
 passport	physical-object
@@ -17250,6 +17410,7 @@ passport	text
 passport	universe
 passport	vehicle-body
 password	information
+password	language-unit
 password	line-of-text
 password	phenomenon
 password	universe
@@ -17302,6 +17463,7 @@ patent	artifact
 patent	contract-condition
 patent	indication
 patent	information
+patent	language-unit
 patent	line-of-text
 patent	phenomenon
 patent	physical-object
@@ -17368,6 +17530,7 @@ patrol	universe
 pattern	logical-relation
 pause	logical-relation
 pause	quantity
+pause	time
 paving	material
 paving	phenomenon
 paving	substance
@@ -17529,6 +17692,7 @@ perceiver	universe
 perceiver	vertebrate
 percentage	logical-relation
 percentage	number
+percentage	numeric-quantity
 percentage	quantity
 percentile	indication
 percentile	information
@@ -17583,10 +17747,12 @@ period	symbol
 period	universe
 period.time	logical-relation
 period.time	quantity
+period.time	time
 periodical	artifact
 periodical	contract-condition
 periodical	indication
 periodical	information
+periodical	language-unit
 periodical	line-of-text
 periodical	phenomenon
 periodical	physical-object
@@ -17695,6 +17861,7 @@ petticoat	universe
 petticoat	vehicle-body
 phase	logical-relation
 phase	quantity
+phase	time
 phi-coefficient	logical-relation
 phi-coefficient	quantity
 philosopher	field-of-study
@@ -17956,6 +18123,7 @@ plane-ticket	artifact
 plane-ticket	contract-condition
 plane-ticket	indication
 plane-ticket	information
+plane-ticket	language-unit
 plane-ticket	line-of-text
 plane-ticket	phenomenon
 plane-ticket	physical-object
@@ -18136,6 +18304,7 @@ poem	fiction
 poem	folklore
 poem	indication
 poem	information
+poem	language-unit
 poem	legend
 poem	line-of-text
 poem	myth
@@ -18150,6 +18319,7 @@ poetry	fiction
 poetry	folklore
 poetry	indication
 poetry	information
+poetry	language-unit
 poetry	legend
 poetry	line-of-text
 poetry	myth
@@ -18204,6 +18374,7 @@ policy	artifact
 policy	contract-condition
 policy	indication
 policy	information
+policy	language-unit
 policy	line-of-text
 policy	phenomenon
 policy	physical-object
@@ -18341,6 +18512,7 @@ position	logical-relation
 position	signified
 positive-correlation	logical-relation
 positive-correlation	number
+positive-correlation	numeric-quantity
 positive-correlation	percentage
 positive-correlation	quantity
 possibility	accomplishment
@@ -18368,6 +18540,7 @@ postcard	phenomenon
 postcard	physical-object
 postcard	universe
 postulate	information
+postulate	language-unit
 postulate	line-of-text
 postulate	phenomenon
 postulate	sentence
@@ -18553,6 +18726,7 @@ preference	attribute
 preference	logical-relation
 preference	property
 premise	information
+premise	language-unit
 premise	line-of-text
 premise	phenomenon
 premise	sentence
@@ -18574,6 +18748,7 @@ prescription	artifact
 prescription	contract-condition
 prescription	indication
 prescription	information
+prescription	language-unit
 prescription	line-of-text
 prescription	phenomenon
 prescription	physical-object
@@ -18607,6 +18782,7 @@ preserves	substance
 preserves	universe
 presidency	logical-relation
 presidency	quantity
+presidency	time
 press	artifact
 press	device
 press	phenomenon
@@ -18665,6 +18841,7 @@ price	status
 price	tension
 price	way
 price-quotation	information
+price-quotation	language-unit
 price-quotation	line-of-text
 price-quotation	phenomenon
 price-quotation	remark
@@ -18810,6 +18987,7 @@ probe	search
 probe	universe
 probe	volition
 problem	information
+problem	language-unit
 problem	line-of-text
 problem	phenomenon
 problem	sentence
@@ -18965,6 +19143,7 @@ promotional-material	artifact
 promotional-material	contract-condition
 promotional-material	indication
 promotional-material	information
+promotional-material	language-unit
 promotional-material	line-of-text
 promotional-material	phenomenon
 promotional-material	physical-object
@@ -19020,6 +19199,7 @@ proposal	procedure
 proposal	universe
 proposal	volition
 proposition	information
+proposition	language-unit
 proposition	line-of-text
 proposition	phenomenon
 proposition	sentence
@@ -19176,6 +19356,7 @@ publication	artifact
 publication	contract-condition
 publication	indication
 publication	information
+publication	language-unit
 publication	line-of-text
 publication	phenomenon
 publication	physical-object
@@ -19186,6 +19367,7 @@ publicity	artifact
 publicity	contract-condition
 publicity	indication
 publicity	information
+publicity	language-unit
 publicity	line-of-text
 publicity	phenomenon
 publicity	physical-object
@@ -19362,6 +19544,7 @@ quality	way
 quantic	logical-relation
 quantic	signified
 quantifier	information
+quantifier	language-unit
 quantifier	line-of-text
 quantifier	phenomenon
 quantifier	universe
@@ -19387,6 +19570,7 @@ quarter	universe
 quarter	yard
 quarter.time	logical-relation
 quarter.time	quantity
+quarter.time	time
 quartile	indication
 quartile	information
 quartile	phenomenon
@@ -19418,6 +19602,7 @@ questionnaire	artifact
 questionnaire	contract-condition
 questionnaire	indication
 questionnaire	information
+questionnaire	language-unit
 questionnaire	line-of-text
 questionnaire	phenomenon
 questionnaire	physical-object
@@ -19447,6 +19632,7 @@ quotation	artifact
 quotation	contract-condition
 quotation	indication
 quotation	information
+quotation	language-unit
 quotation	line-of-text
 quotation	phenomenon
 quotation	physical-object
@@ -19611,6 +19797,7 @@ random-sample	contract-condition
 random-sample	file
 random-sample	indication
 random-sample	information
+random-sample	language-unit
 random-sample	line-of-text
 random-sample	news
 random-sample	note
@@ -19686,6 +19873,7 @@ rat	universe
 rat	vertebrate
 ratio	logical-relation
 ratio	number
+ratio	numeric-quantity
 ratio	quantity
 rationality	attribute
 rationality	logical-relation
@@ -19787,6 +19975,7 @@ recapitulation	artifact
 recapitulation	contract-condition
 recapitulation	indication
 recapitulation	information
+recapitulation	language-unit
 recapitulation	line-of-text
 recapitulation	phenomenon
 recapitulation	physical-object
@@ -19963,6 +20152,7 @@ reference	artifact
 reference	contract-condition
 reference	indication
 reference	information
+reference	language-unit
 reference	line-of-text
 reference	phenomenon
 reference	physical-object
@@ -20098,6 +20288,7 @@ register	artifact
 register	contract-condition
 register	indication
 register	information
+register	language-unit
 register	line-of-text
 register	phenomenon
 register	physical-object
@@ -20158,6 +20349,7 @@ rehearsal	procedure
 rehearsal	volition
 reign	logical-relation
 reign	quantity
+reign	time
 rein	artifact
 rein	device
 rein	phenomenon
@@ -20172,6 +20364,7 @@ rejection	phenomenon
 rejection	procedure
 rejection	universe
 rejection	volition
+relation	logical-relation
 relationship	accomplishment
 relationship	act
 relationship	activity
@@ -20249,8 +20442,10 @@ reluctance	logical-relation
 reluctance	property
 remainder	logical-relation
 remainder	number
+remainder	numeric-quantity
 remainder	quantity
 remark	information
+remark	language-unit
 remark	line-of-text
 remark	phenomenon
 remark	sentence
@@ -20326,6 +20521,7 @@ report	essay
 report	file
 report	indication
 report	information
+report	language-unit
 report	line-of-text
 report	news
 report	note
@@ -20382,6 +20578,7 @@ reputation	status
 reputation	tension
 reputation	way
 request	information
+request	language-unit
 request	line-of-text
 request	phenomenon
 request	sentence
@@ -20436,6 +20633,7 @@ resignation	artifact
 resignation	contract-condition
 resignation	indication
 resignation	information
+resignation	language-unit
 resignation	line-of-text
 resignation	phenomenon
 resignation	physical-object
@@ -20485,6 +20683,7 @@ resource	tension
 resource	way
 respite	logical-relation
 respite	quantity
+respite	time
 response	attribute
 response	logical-relation
 response	normal
@@ -20585,6 +20784,7 @@ review-periodical	artifact
 review-periodical	contract-condition
 review-periodical	indication
 review-periodical	information
+review-periodical	language-unit
 review-periodical	line-of-text
 review-periodical	periodical
 review-periodical	phenomenon
@@ -20885,6 +21085,7 @@ roster	artifact
 roster	contract-condition
 roster	indication
 roster	information
+roster	language-unit
 roster	line-of-text
 roster	phenomenon
 roster	physical-object
@@ -20978,6 +21179,7 @@ rule.cognition	routine
 rule.cognition	signified
 rule.time	logical-relation
 rule.time	quantity
+rule.time	time
 ruler	artifact
 ruler	device
 ruler	phenomenon
@@ -20988,6 +21190,7 @@ rumor	contract-condition
 rumor	file
 rumor	indication
 rumor	information
+rumor	language-unit
 rumor	line-of-text
 rumor	myth
 rumor	news
@@ -21258,6 +21461,7 @@ sawdust	tissue
 sawdust	universe
 sawdust	wood
 saying	information
+saying	language-unit
 saying	line-of-text
 saying	phenomenon
 saying	universe
@@ -21318,6 +21522,7 @@ scarf	phenomenon
 scarf	universe
 scarf	vehicle-body
 scenario	information
+scenario	language-unit
 scenario	line-of-text
 scenario	phenomenon
 scenario	sentence
@@ -21339,6 +21544,7 @@ schedule	artifact
 schedule	contract-condition
 schedule	indication
 schedule	information
+schedule	language-unit
 schedule	line-of-text
 schedule	phenomenon
 schedule	physical-object
@@ -21387,6 +21593,7 @@ scholarly-paper	contract-condition
 scholarly-paper	essay
 scholarly-paper	indication
 scholarly-paper	information
+scholarly-paper	language-unit
 scholarly-paper	line-of-text
 scholarly-paper	phenomenon
 scholarly-paper	physical-object
@@ -21415,6 +21622,7 @@ school-class	phenomenon
 school-class	universe
 school-term	logical-relation
 school-term	quantity
+school-term	time
 schoolchild	attribute
 schoolchild	logical-relation
 schoolchild	property
@@ -21568,6 +21776,7 @@ search	universe
 search	volition
 season	logical-relation
 season	quantity
+season	time
 seasoning	food
 seasoning	phenomenon
 seasoning	universe
@@ -21626,6 +21835,7 @@ section-title	artifact
 section-title	contract-condition
 section-title	indication
 section-title	information
+section-title	language-unit
 section-title	line-of-text
 section-title	phenomenon
 section-title	physical-object
@@ -21712,6 +21922,7 @@ sensitivity	attribute
 sensitivity	logical-relation
 sensitivity	property
 sentence	information
+sentence	language-unit
 sentence	line-of-text
 sentence	phenomenon
 sentence	universe
@@ -21746,6 +21957,7 @@ serial	artifact
 serial	contract-condition
 serial	indication
 serial	information
+serial	language-unit
 serial	line-of-text
 serial	phenomenon
 serial	physical-object
@@ -21756,6 +21968,7 @@ series	artifact
 series	contract-condition
 series	indication
 series	information
+series	language-unit
 series	line-of-text
 series	phenomenon
 series	physical-object
@@ -21995,6 +22208,7 @@ shield	universe
 shield	vehicle-body
 shift	logical-relation
 shift	quantity
+shift	time
 shin-guard	artifact
 shin-guard	clothing
 shin-guard	fashion
@@ -22060,6 +22274,7 @@ short-letter	contract-condition
 short-letter	file
 short-letter	indication
 short-letter	information
+short-letter	language-unit
 short-letter	line-of-text
 short-letter	news
 short-letter	note
@@ -22079,6 +22294,7 @@ shot	celluloid
 shot	contract-condition
 shot	indication
 shot	information
+shot	language-unit
 shot	line-of-text
 shot	phenomenon
 shot	physical-object
@@ -22331,6 +22547,7 @@ sketch	artifact
 sketch	contract-condition
 sketch	indication
 sketch	information
+sketch	language-unit
 sketch	line-of-text
 sketch	phenomenon
 sketch	physical-object
@@ -22819,8 +23036,15 @@ sparkling-wine	phenomenon
 sparkling-wine	substance
 sparkling-wine	universe
 sparkling-wine	wine
+spatial-direction	attribute
+spatial-direction	logical-relation
+spatial-direction	property
+spatial-direction	spatial-relation
 spatial-extent	logical-relation
 spatial-extent	quantity
+spatial-relation	attribute
+spatial-relation	logical-relation
+spatial-relation	property
 speaker	attribute
 speaker	logical-relation
 speaker	property
@@ -22890,6 +23114,7 @@ spell	artifact
 spell	contract-condition
 spell	indication
 spell	information
+spell	language-unit
 spell	line-of-text
 spell	phenomenon
 spell	physical-object
@@ -23049,6 +23274,7 @@ spring-water	universe
 spring-water	water
 springtime	logical-relation
 springtime	quantity
+springtime	time
 sprinkler	artifact
 sprinkler	device
 sprinkler	phenomenon
@@ -23233,6 +23459,7 @@ statement	essay
 statement	file
 statement	indication
 statement	information
+statement	language-unit
 statement	line-of-text
 statement	news
 statement	note
@@ -23285,6 +23512,7 @@ statistical-sampling	universe
 statistical-sampling	volition
 statistical-weight	logical-relation
 statistical-weight	number
+statistical-weight	numeric-quantity
 statistical-weight	quantity
 statistics	field-of-study
 statistics	logical-relation
@@ -23644,6 +23872,7 @@ submission	artifact
 submission	contract-condition
 submission	indication
 submission	information
+submission	language-unit
 submission	line-of-text
 submission	phenomenon
 submission	physical-object
@@ -23740,6 +23969,7 @@ summary	artifact
 summary	contract-condition
 summary	indication
 summary	information
+summary	language-unit
 summary	line-of-text
 summary	phenomenon
 summary	physical-object
@@ -23748,6 +23978,7 @@ summary	universe
 summary	vehicle-body
 summer	logical-relation
 summer	quantity
+summer	time
 summer-camp	agent
 summer-camp	association
 summer-camp	collection
@@ -23772,6 +24003,7 @@ sunchoke	universe
 sunday	day
 sunday	logical-relation
 sunday	quantity
+sunday	time
 sundial	artifact
 sundial	device
 sundial	phenomenon
@@ -23967,6 +24199,8 @@ syrup	universe
 system	collection
 system	phenomenon
 system-instrumentality	phenomenon
+system-of-measurement	logical-relation
+system-of-measurement	quantity
 table	artifact
 table	furniture
 table	phenomenon
@@ -24197,6 +24431,7 @@ tenant	property
 tendency	attribute
 tendency	logical-relation
 tendency	property
+tendency	spatial-relation
 tending	accomplishment
 tending	act
 tending	activity
@@ -24222,6 +24457,7 @@ tent	phenomenon
 tent	universe
 tent	vehicle-body
 term	information
+term	language-unit
 term	line-of-text
 term	phenomenon
 term	universe
@@ -24231,6 +24467,7 @@ terminal	phenomenon
 terminal	universe
 terminal	vehicle-body
 terminology	information
+terminology	language-unit
 terminology	line-of-text
 terminology	phenomenon
 terminology	universe
@@ -24250,6 +24487,7 @@ tetrachoric-correlation-coefficient	quantity
 text	artifact
 text	indication
 text	information
+text	language-unit
 text	line-of-text
 text	phenomenon
 text	physical-object
@@ -24259,6 +24497,7 @@ text-passage	artifact
 text-passage	contract-condition
 text-passage	indication
 text-passage	information
+text-passage	language-unit
 text-passage	line-of-text
 text-passage	phenomenon
 text-passage	physical-object
@@ -24441,6 +24680,7 @@ ticket	artifact
 ticket	contract-condition
 ticket	indication
 ticket	information
+ticket	language-unit
 ticket	line-of-text
 ticket	phenomenon
 ticket	physical-object
@@ -24473,19 +24713,28 @@ tile	vehicle-body
 tilt	attribute
 tilt	logical-relation
 tilt	property
+tilt	spatial-relation
+time	logical-relation
+time	quantity
 time-of-day	logical-relation
 time-of-day	quantity
+time-of-day	time
 time-period	logical-relation
 time-period	quantity
+time-period	time
 time-series	logical-relation
 time-series	quantity
 time-series	vector
 time-slot	logical-relation
 time-slot	quantity
+time-slot	time
+time-unit	logical-relation
+time-unit	quantity
 timetable	artifact
 timetable	contract-condition
 timetable	indication
 timetable	information
+timetable	language-unit
 timetable	line-of-text
 timetable	phenomenon
 timetable	physical-object
@@ -24522,6 +24771,7 @@ title	logical-relation
 title	normal
 title	property
 title-of-respect	information
+title-of-respect	language-unit
 title-of-respect	line-of-text
 title-of-respect	phenomenon
 title-of-respect	universe
@@ -24629,6 +24879,7 @@ top	vehicle-body
 top-side	attribute
 top-side	logical-relation
 top-side	property
+top-side	spatial-relation
 topic	logical-relation
 topic	signified
 topographic-point	phenomenon
@@ -24777,6 +25028,7 @@ tragedy	artifact
 tragedy	contract-condition
 tragedy	indication
 tragedy	information
+tragedy	language-unit
 tragedy	line-of-text
 tragedy	phenomenon
 tragedy	physical-object
@@ -24795,6 +25047,7 @@ train-ticket	artifact
 train-ticket	contract-condition
 train-ticket	indication
 train-ticket	information
+train-ticket	language-unit
 train-ticket	line-of-text
 train-ticket	phenomenon
 train-ticket	physical-object
@@ -24843,6 +25096,7 @@ transaction-record	artifact
 transaction-record	contract-condition
 transaction-record	indication
 transaction-record	information
+transaction-record	language-unit
 transaction-record	line-of-text
 transaction-record	phenomenon
 transaction-record	physical-object
@@ -25165,10 +25419,12 @@ tuxedo	universe
 tuxedo	vehicle-body
 twelve	logical-relation
 twelve	number
+twelve	numeric-quantity
 twelve	percentage
 twelve	quantity
 twilight	logical-relation
 twilight	quantity
+twilight	time
 twin	attribute
 twin	logical-relation
 twin	property
@@ -25292,6 +25548,7 @@ unsuccessful-person	property
 upgrade	attribute
 upgrade	logical-relation
 upgrade	property
+upgrade	spatial-relation
 upholstery	attribute
 upholstery	logical-relation
 upholstery	property
@@ -25782,6 +26039,7 @@ warrant	artifact
 warrant	contract-condition
 warrant	indication
 warrant	information
+warrant	language-unit
 warrant	line-of-text
 warrant	phenomenon
 warrant	physical-object
@@ -26025,8 +26283,10 @@ weed	species
 weed	universe
 week	logical-relation
 week	quantity
+week	time
 weekend	logical-relation
 weekend	quantity
+weekend	time
 welcome	accomplishment
 welcome	act
 welcome	activity
@@ -26136,6 +26396,7 @@ will	artifact
 will	contract-condition
 will	indication
 will	information
+will	language-unit
 will	line-of-text
 will	phenomenon
 will	physical-object
@@ -26231,6 +26492,7 @@ winnings	procedure
 winnings	volition
 winter	logical-relation
 winter	quantity
+winter	time
 wire	artifact
 wire	phenomenon
 wire	universe
@@ -26368,6 +26630,7 @@ worcestershire-sauce	phenomenon
 worcestershire-sauce	substance
 worcestershire-sauce	universe
 word	information
+word	language-unit
 word	line-of-text
 word	phenomenon
 word	universe
@@ -26556,8 +26819,10 @@ young-people	universe
 young-people	vertebrate
 youth	logical-relation
 youth	quantity
+youth	time
 zero	logical-relation
 zero	number
+zero	numeric-quantity
 zero	quantity
 zinc	chemical-element
 zinc	material
