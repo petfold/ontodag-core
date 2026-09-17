@@ -1434,14 +1434,26 @@ computer`, `cacao-bean ⊑ tree`, `grinder ⊑ snack-food` (v9 made `grinder` th
 machine), `chapter`, `conclusion` and `introduction ⊑ music` (WordNet's
 musical-passage sense leaking through `section`).
 
-**Result: core 4,971 categories, up from 4,617**, ten roots unchanged, no
-cycles, still a strict superset of the frozen v1, and 23 unplaced where there
-were 362. What is left is `phenomenon` and `universe` (no reachable parent),
-the celestial bodies `earth`, `moon`, `sun`, `mars`, `venus` and `europe` (core
-has no `celestial-body` or `continent`; the space and geography packs carry
-them), `east` and `west` as regions, and nine odds — `bit`, `fragment`,
-`slice`, `strip`, `subject`, `molecule`, `conscience`, `motivation`,
-`incentive`, `necessity`, `confederacy`, `koran`, `signified`.
+**The last twenty**, after those passes, fell into three kinds. Some had a
+WordNet parent core has no name for: `part`/`piece` (09385911), added here as
+**`physical-part`**, which is what `bit`, `fragment`, `slice` and `strip` were
+waiting for; and `psychological feature`, which cannot be used at all, because
+it sits ABOVE core's `cognition` and using it would inverting the branch —
+`motivation` went to `cognition` directly, with `conscience` and `incentive`
+below it. Some were **WordNet instances**, which carry `@i` and not `@` and so
+have no hypernym edge for any of this machinery to walk: the Earth, the Moon,
+the Sun, Mars, Venus, Europe, the Koran, the Confederacy, the East and the
+West. Core *names* every one of them and could place none — so the Moon was
+not in the ontology anywhere, in core or in the space pack, which cannot place
+a core name. They are placed by ruling. And three simply needed a reading:
+`molecule ⊑ substance` (core already files `atom ⊑ substance`), `necessity`
+and `subject ⊑ physical-object`.
+
+**Result: core 4,992 categories, up from 4,617**, ten roots unchanged, no
+cycles, still a strict superset of the frozen v1, and **3 unplaced where there
+were 362**. All three are deliberate: `signified ⊑ meaning` and `universe ⊑
+natural-object` are Peter's own rejections in `review.tsv`, and `phenomenon`
+is the open question above.
 
 ### 15.3 The packs
 

@@ -893,3 +893,31 @@ zone	topographic-point	accept	WordNet's nearest placed ancestor after the new br
 # 2026-09-17 review, found while reviewing physics: two of core's own leftovers.
 # signified	meaning	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): the message that is intended or expressed or signified	06602472	06601327	[2026-09-17: withdrawn — Peter's review.tsv already rejected this pair, and the nearest-ancestor helper missed it because it matched rejections by NAME while review rows bind by OFFSET]
 # universe	natural-object	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): an object occurring naturally; not made by man	09466280	00019128	[2026-09-17: withdrawn — Peter's review.tsv already rejected this pair, and the nearest-ancestor helper missed it because it matched rejections by NAME while review rows bind by OFFSET]
+# ===== The last of the unplaced (2026-09-17 review).  What was left after the nearest-ancestor
+# passes falls into three kinds: concepts whose WordNet parent is a synset core has no name for
+# (`part`/`piece`, added here as `physical-part`; `psychological feature`, which sits ABOVE core's
+# `cognition` and so cannot be used); WordNet INSTANCES, which carry `@i` and not `@` and so have
+# no hypernym edge at all (the Earth, the Moon, the Sun, Mars, Venus, Europe, the Koran, the
+# Confederacy, the East and the West — core names every one of them and could place none); and
+# three that simply needed a reading.  `phenomenon` is left where it is: see §15.1.
+physical-part	physical-object	accept	"a portion of a natural object" is itself a physical object; WordNet's `thing` is not a concept here (2026-09-17 review)	09385911	00002684
+fragment	physical-part	accept	WordNet's own hypernym (2026-09-17 review)	09285254	09385911
+bit	fragment	accept	WordNet's own hypernym (2026-09-17 review)	09222051	09285254
+slice	physical-part	accept	WordNet's own hypernym (2026-09-17 review)	09437241	09385911
+strip	physical-part	accept	WordNet's own hypernym (2026-09-17 review)	09449510	09385911
+molecule	substance	accept	the smallest unit of a substance; core already files `atom ⊑ substance`, and WordNet's `unit`/`building block` is not a concept here (2026-09-17 review)	14682133	00020827
+motivation	cognition	accept	a motive is a mental thing, and core files abstractions under cognition; WordNet's `psychological feature` sits ABOVE core's `cognition` and cannot be used without inverting it (2026-09-17 review)	00023773	00023271
+conscience	motivation	accept	WordNet's chain: conscience ⊑ ethical motive ⊑ motivation (2026-09-17 review)	09184136	00023773
+incentive	motivation	accept	WordNet's chain: incentive ⊑ rational motive ⊑ motivation (2026-09-17 review)	09179776	00023773
+earth	planet	accept	WordNet holds the planets as INSTANCES of `planet`, so no hypernym edge reaches them; core names them and could not place them (2026-09-17 review)	09270894	09394646
+mars	planet	accept	as above (2026-09-17 review)	09347445	09394646
+venus	planet	accept	as above (2026-09-17 review)	09470762	09394646
+moon	celestial-body	accept	Earth's natural satellite; core's `satellite` is the artificial kind, filed under equipment (2026-09-17 review)	09358358	09239740
+sun	star	accept	WordNet holds it as an instance of `star` (2026-09-17 review)	09450163	09444100
+europe	continent	accept	WordNet holds it as an instance of `continent` (2026-09-17 review)	09275473	09254614
+koran	book	accept	core has no `sacred-text`; a book is true and is what core can say (2026-09-17 review)	06461609	06410904
+east	region	accept	WordNet's gloss is "the countries of Asia" — a region of the world, held as an instance (2026-09-17 review)	08562620	08630985
+west	region	accept	as above: "the countries of (originally) Europe and (now including) North America" (2026-09-17 review)	08682575	08630985
+confederacy	organization	accept	the southern states that seceded, held as an instance; an organization is what core can say about it (2026-09-17 review)	09050244	08008335
+necessity	physical-object	accept	"anything indispensable; food and shelter are necessities of life" — things (2026-09-17 review)	09367203	00002684
+subject	physical-object	accept	"something (a person or object or scene) selected by an artist" (2026-09-17 review)	04347225	00002684

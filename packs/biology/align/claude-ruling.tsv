@@ -35,3 +35,20 @@ taxonomic-group	species	reject	as above	07992450	08110373
 # 2026-09-17 review: fields that were hanging straight from `field-of-study` with nothing
 # between them and the root, because the edge to their real parent had only one witness.
 taxonomy	biology	accept	the classification of organisms is a branch of biology; it was hanging from the bare root (2026-09-17 review)	06153186	06037666
+# 2026-09-17 review: the machinery of biology, placed by WordNet's nearest placed ancestor.
+genome	group	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): any number of entities (members) considered as a unit	08457543	00031264
+mitochondrion	organ	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a fully differentiated structural and functional unit 	05445389	05297523
+organelle	organ	accept	WordNet's nearest placed ancestor, d1 (2026-09-17 review): a fully differentiated structural and functional unit 	05445668	05297523
+photosynthesis	process	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): a sustained phenomenon or one marked by gradual change	13537429	00029677
+ribosome	organ	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): a fully differentiated structural and functional unit 	05446394	05297523
+rna	compound	accept	WordNet's nearest placed ancestor, d2 (2026-09-17 review): (chemistry) a substance formed by chemical union of tw	14832193	14818238
+symbiosis	relation	accept	WordNet's nearest placed ancestor, d3 (2026-09-17 review): an abstraction belonging to or characteristic of two e	13842622	00031921
+# ... and the finer parent, now that `organelle` is in (the pruning drops `⊑ organ`).
+mitochondrion	organelle	accept	WordNet's own hypernym (2026-09-17 review)	05445389	05445668
+ribosome	organelle	accept	WordNet's own hypernym (2026-09-17 review)	05446394	05445668
+# 2026-09-17 review: four branches of biology were landing under `field-of-study` (one witness
+# for `X ⊑ biology`, two for the root), the way physics' and chemistry's were.
+ecology	biology	accept	WordNet's own hypernym: a branch of biology (2026-09-17 review)	06070929	06037666
+zoology	biology	accept	WordNet's own hypernym: a branch of biology (2026-09-17 review)	06083243	06037666
+botany	biology	accept	WordNet's own hypernym: a branch of biology (2026-09-17 review)	06066555	06037666
+molecular-biology	biology	accept	WordNet's own hypernym: a branch of biology (2026-09-17 review)	06078088	06037666

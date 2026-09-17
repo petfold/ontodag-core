@@ -13,7 +13,7 @@ anyone; the product is a published store root that `odag pack core` adopts.
 
 `build/core.od` is the `core` pack (**v9 shipped in ontodag 0.24.0**, which
 carried v7, the services layer, and v8, CPC's goods half, with it — 0.23.0
-had stopped at v6): **v11 built, not yet shipped** — 4,971 concepts, ten branches, every edge carried by two
+had stopped at v6): **v11 built, not yet shipped** — 4,992 concepts, ten branches, every edge carried by two
 independent sources or by Peter's ruling. `docs/UPPER.md` §10 is the everyday goods layer
 (Google Product Taxonomy as witness), §11 the services layer (UN CPC 2.1 and
 Wikidata as witnesses; `service` re-sensed to "goods and services"), §12 the
@@ -24,7 +24,7 @@ CPC goods sections run over the goods layer as witness and coverage check
 (`file` and `directory` re-sensed to the computing senses, `folder` made (no source has it), `mime` given back to the performer, and the
 IANA Media Types registry run over `packs/computing`'s file formats as witness and coverage check —
 `tools/extract_iana.py`, `tools/align_iana.py`, `packs/computing/align/iana-picks.tsv`), and §15 the 2026-09-17 review pass
-(every disputed pair in core and in every pack settled; core's 362 unplaced concepts cut to 23 by giving it the
+(every disputed pair in core and in every pack settled; core's 362 unplaced concepts cut to 3 by giving it the
 temporal, `relation` and `amount` branches it had never had; and the physics and chemistry packs given the basic
 vocabulary of their own fields, which WordNet's topic tags had never reached). It is a strict superset of the hand-written v1 (194 concepts,
 nothing lost). `docs/UPPER.md` §6 records every decision, §7 the policy for
