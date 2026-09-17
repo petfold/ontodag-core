@@ -32,7 +32,7 @@ the sciences, §8 the science packs built beside it — `packs/physics`,
 `packs/mathematics`, `packs/chemistry`, `packs/biology`, `packs/medicine`, `packs/ai`, `packs/economics`, `packs/computing`, `packs/geography`, `packs/space`, each a
 `build/<pack>.od` that merges onto core's hinges (`odag pack core`, then
 `odag merge packs/<pack>/build/<pack>.od`). Rebuild core from the review
-files with `sh tools/build.sh`; check that core and every pack merge into one coherent store with `python3 tools/integrate.py` (UPPER.md §8.1); a pack with
+files with `sh tools/build.sh`; check that core and every pack merge into one coherent store with `python3 tools/regen_ontodag_core.py $(git rev-parse --short HEAD)`, `python3 tools/regen_ontodag_packs.py $(git rev-parse --short HEAD)` and then `python3 tools/integrate.py` — regenerate the shipped modules FIRST or the run is against a stale core (UPPER.md §8.1); a pack with
 `python3 tools/{align,views,consensus}.py --pack NAME`.
 
 ## Pictures

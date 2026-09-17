@@ -327,6 +327,29 @@ the top: `integrate.py` reads the *shipped* core module from `../ontodag`,
 and the module had not been regenerated yet — regenerate ontodag first, then
 integrate. Pinned in ontodag's `tests/test_packs.py` for 0.22.0.
 
+**Re-run for v11 (2026-09-18, after the review pass of §15):** union **11,842
+categories, 13,431 edges**, built in 704 s; sha256 root
+`30946cc31445db5f27644c799f24e185384cf179e0c2186957421ca4e80a7adf`, Swarm/BMT
+root `8fffe45dd9a2b33a0bf64bd07473f3b4614444e19ae9586a5b9c4fe1e8adaee6`. Every
+pack concept present and reachable — 0 missing, 0 stranded, in all ten; all
+eighteen cross-pack claims resolve; the top level is core's ten roots plus
+`dimension`, nothing else; order-independent (three shuffles and the reverse)
+and the re-merge changes nothing; 110 names occur in two or more packs with
+different parents, as before. `get (everything)` returns 11,842 in 24 ms.
+
+The first attempt at this run came out with **48** top-level categories instead
+of eleven — `amount`, `relation`, `time-period`, `day`, `year`, `season`,
+`word`, `part`, `standard`, `spatial-relation` and twenty-seven more sitting
+loose at the top. That is the failure §8.1 already records, in its most
+dramatic form yet: `integrate.py` adopts the **shipped** core module from
+`../ontodag` (`CORE_VERSION` 9), not `build/core.od`, and the review pass had
+just moved core three versions past it. Every one of the 37 was a core v11 name
+that the packs now hang things from and that v9 does not have. Regenerate
+first, then integrate — `tools/regen_ontodag_core.py`, then
+`tools/regen_ontodag_packs.py`, both with this repo's commit. **The regenerated
+modules are left uncommitted in `../ontodag`**: shipping v11 is Peter's call,
+and `CORE_VERSION` still reads 9, which the release would bump.
+
 **Re-run after the duplicate list (0.22.1, the same night):** union **9,777
 categories, 10,837 edges**; sha256 root
 `1d67a67033859582e63faba79538f1e81ab8260e241e36e2cdd18d544f3f0482`, Swarm/BMT
