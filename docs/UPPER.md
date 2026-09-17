@@ -1442,3 +1442,85 @@ has no `celestial-body` or `continent`; the space and geography packs carry
 them), `east` and `west` as regions, and nine odds — `bit`, `fragment`,
 `slice`, `strip`, `subject`, `molecule`, `conscience`, `motivation`,
 `incentive`, `necessity`, `confederacy`, `koran`, `signified`.
+
+### 15.3 The packs
+
+**The disputes.** Seventeen across six packs, all settled from the glosses:
+`species ⊑ taxonomic-group` (SUMO reversed), `bank-card ⊑ credit-card`,
+`shipping-container ⊑ container`, `expending ⊑ spending`, `gyrocompass ⊑
+compass`, `geographical-area ⊑ region`, `logical-relation ⊑ relation`,
+`antibiotic ⊑ antibacterial` (antiseptics are antibacterial without being
+antibiotics), `epithelioma ⊑ carcinoma`. One needed the pack rather than the
+gloss: WordNet's `computer_language` has a narrow gloss that would put
+`programming-language` above it, but the pack already accepts `markup-language
+⊑ computer-language`, and HTML is not a programming language — so OpenCyc and
+YAGO win and `programming-language ⊑ computer-language`.
+
+**geography had a concept disputed with itself.** WordNet has two
+near-duplicate synsets for a soil layer — 08658118, whose lemma is `horizon`,
+and 08658309, whose lemma is `soil_horizon` — and the pack's `names.tsv` gave
+the first the name `soil-horizon`, which the second already had by right. Two
+review lines then bound both ends to one concept and `soil-horizon ⊑
+soil-horizon` came out as a dispute. 08658118 is now `soil-stratum` and the
+two dead lines are disabled. **A hand name must be checked against the other
+synset's own lemma, not only against the names already taken.**
+
+**Physics had no physics in it.** The pack had 185 concepts of real
+substance — quarks, hyperons, Kepler's laws, the Oort cloud, Bose-Einstein
+statistics — and not one of the basics: no `energy`, `temperature`, `entropy`,
+`mass` as a property, `velocity`, `acceleration`, `wavelength`, `photon`,
+`boson`, `fermion`, `magnetism`, `friction`, `viscosity`, `plasma`,
+`superconductivity`. The cause is structural and worth remembering: a pack's
+candidates come from WordNet's *topic* tags, and WordNet does not tag `energy`
+or `temperature` with the physics topic, because they are ordinary words — and
+core did not have them either, so nothing in the build could reach them. The
+same hole had left `physics` with exactly one child, `electronics`. 33 synsets
+were added to `sources.tsv`, three hand-named (`entropy`, whose WordNet lemma
+is `randomness`; `physical-mass`, because core's `mass` is a body of matter;
+`velocity`, whose lemma is `speed`), and the fifteen branches were ruled under
+`physics`. 185 → 216.
+
+**Chemistry had the substances and not the chemistry.** No chemical bond of
+any kind, no oxidation or reduction, no solvent or solute, no hydrocarbon,
+ester, ketone, aldehyde or amine, and two of its branches. 19 synsets added,
+`chemical-reduction` hand-named (`reduction` on its own is the everyday word),
+`electrochemistry`, `inorganic-chemistry` and `physical-chemistry` ruled under
+`chemistry`. 240 → 259.
+
+**The same check run over every pack** — which concepts sit straight under
+`field-of-study` with nothing between them and the root — found only a
+handful more: AI's `artificial-life`, `artificial-consciousness` and
+`computational-neuroscience`, biology's `taxonomy`, geography's `toponymy`,
+medicine's two schools of psychology, physics' `crystallography` (given to
+chemistry, where the formation of crystals sits at least as well). Mathematics,
+medicine, geography, economics and space turned out to be **already right**:
+their `X ⊑ <field>` single-witness edges are redundant, because the concepts
+already hang from a proper intermediate — `plane-geometry ⊑ geometry`,
+`dermatology ⊑ medical-specialty`, `climatology ⊑ atmospheric-science`,
+`reinforcement-learning ⊑ machine-learning`. The raw queue makes a pack look
+worse than it is; what matters is not that an edge is single-witness but
+whether anything better is already carrying the concept.
+
+**A sense trap in medicine, caught before it cost anything.** OpenCyc asserts
+`X ⊑ medicine` of thirty-five drugs — penicillin, amoxicillin, the
+cephalosporins, sedatives, decongestants, bronchodilators — because OpenCyc's
+`medicine` is the preparation you swallow. Core's `medicine` is 06045562, the
+science. Every one of the thirty-five is already correctly filed under
+`medication` or `antibacterial`, and the edges were single-witness so none of
+them entered; but a second witness would have walked the whole pharmacy into a
+branch of natural science. Rejected explicitly.
+
+**What the pass did not fix.** `crosspack` reports one warning, and it is
+instructive: economics' `business` (Wikidata Q4830453) collides with a core
+name `business` that **has no row in `align/concepts.tsv` at all**. Core's
+`business ⊑ organization` is a ruling of Peter's, and a ruling can introduce a
+name with no synset behind it — which is deliberate, but it means the name is
+invisible to every tool that works from the alignment table, `crosspack`
+included. Either core should give `business` a synset, or `crosspack` should
+read `build/core.od` for names as well as `concepts.tsv`. Left for Peter.
+
+AI's 105 single-witness `X ⊑ artificial-intelligence` edges were read and left
+alone: Wikidata files techniques, tasks and vehicles alike under AI, and
+`autonomous-car ⊑ artificial-intelligence` is not a claim worth accepting when
+`autonomous-car ⊑ autonomous-vehicle` is already carrying it. The same for
+computing's eight architectural patterns.

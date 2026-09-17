@@ -32,3 +32,6 @@ disease-vector	physical-object	accept	a plasmid or virus used to carry DNA; name
 # ===== 2026-09-17 review: the pack's disputed pairs, settled by reading the glosses.
 species	taxonomic-group	accept	WordNet's gloss is explicit: "taxonomic group whose members can interbreed"; SUMO is reversed	08110373	07992450
 taxonomic-group	species	reject	as above	07992450	08110373
+# 2026-09-17 review: fields that were hanging straight from `field-of-study` with nothing
+# between them and the root, because the edge to their real parent had only one witness.
+taxonomy	biology	accept	the classification of organisms is a branch of biology; it was hanging from the bare root (2026-09-17 review)	06153186	06037666

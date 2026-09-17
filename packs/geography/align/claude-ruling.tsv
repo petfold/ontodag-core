@@ -569,3 +569,6 @@ gyrocompass	compass	accept	"a compass that does not depend on magnetism but uses
 compass	gyrocompass	reject	as above	03080497	03473078
 geographical-area	region	accept	WordNet's own hypernym: a demarcated area of the Earth is a kind of region; SUMO is reversed	08574314	08630985
 region	geographical-area	reject	as above	08630985	08574314
+# 2026-09-17 review: fields that were hanging straight from `field-of-study` with nothing
+# between them and the root, because the edge to their real parent had only one witness.
+toponymy	geography	accept	the study of place names (2026-09-17 review)		06122178

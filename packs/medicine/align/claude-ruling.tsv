@@ -40,3 +40,47 @@ antibiotic	antibacterial	accept	WordNet files the antibiotic under the antibacte
 antibacterial	antibiotic	reject	as above; SUMO is reversed	02716205	02716866
 epithelioma	carcinoma	accept	`carcinoma` is the standard and wider term — any malignant tumour of epithelial tissue; `epithelioma` is the older name for the same thing and WordNet files it below	14252464	14242337
 carcinoma	epithelioma	reject	as above; Wikidata is reversed	14242337	14252464
+# 2026-09-17 review: fields that were hanging straight from `field-of-study` with nothing
+# between them and the root, because the edge to their real parent had only one witness.
+freudian-psychology	psychology	accept	a branch of psychology (2026-09-17 review)	06057326	06136258
+jungian-psychology	psychology	accept	a branch of psychology (2026-09-17 review)	06057435	06136258
+# ===== 2026-09-17 review: a sense trap.  OpenCyc says `X ⊑ medicine` of thirty-odd DRUGS —
+# penicillin, amoxicillin, the cephalosporins, sedatives, decongestants — because its `medicine`
+# is the preparation you swallow.  Core's `medicine` is 06045562, the SCIENCE.  Every one of
+# these is already correctly under `medication` or `antibacterial`; the edges are single-witness
+# so they never entered, but a second witness would have let the whole pharmacy into the science.
+acyclovir	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	02678528	06045562
+amoxicillin	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	02703894	06045562
+ampicillin	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	02705651	06045562
+anti-inflammatory	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	02721538	06045562
+antiarrhythmic	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	02715941	06045562
+antiemetic	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	02719750	06045562
+antipyretic	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	02723595	06045562
+aztreonam	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	02765868	06045562
+bronchodilator	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	02905612	06045562
+cefadroxil	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	02989178	06045562
+cefoperazone	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	02989313	06045562
+cefotaxime	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	02989475	06045562
+ceftazidime	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	02989685	06045562
+ceftriaxone	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	02989893	06045562
+cefuroxime	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	02990103	06045562
+cephalexin	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	02996249	06045562
+cephalosporin	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	02996840	06045562
+ciprofloxacin	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	03032576	06045562
+cold-medicine	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	03067690	06045562
+decongestant	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	03169271	06045562
+doxycycline	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	03230247	06045562
+drug-cocktail	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	03248560	06045562
+expectorant	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	03304605	06045562
+immunosuppressant	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	03562958	06045562
+methicillin	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	03755388	06045562
+nystatin	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	03837157	06045562
+over-the-counter-drug	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	03866176	06045562
+oxacillin	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	03867355	06045562
+oxytocic	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	03869685	06045562
+penicillin	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	03910033	06045562
+piperacillin	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	03946532	06045562
+sedative	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	04166553	06045562
+sucralfate	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	04349701	06045562
+tobramycin	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	04443588	06045562
+vancomycin	medicine	reject	OpenCyc's `medicine` is the preparation; core's is the science (2026-09-17 review)	04520618	06045562

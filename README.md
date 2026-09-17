@@ -24,8 +24,9 @@ CPC goods sections run over the goods layer as witness and coverage check
 (`file` and `directory` re-sensed to the computing senses, `folder` made (no source has it), `mime` given back to the performer, and the
 IANA Media Types registry run over `packs/computing`'s file formats as witness and coverage check —
 `tools/extract_iana.py`, `tools/align_iana.py`, `packs/computing/align/iana-picks.tsv`), and §15 the 2026-09-17 review pass
-(every disputed pair settled, and the 362 unplaced concepts cut to 23 by giving core the temporal, `relation` and
-`amount` branches it had never had). It is a strict superset of the hand-written v1 (194 concepts,
+(every disputed pair in core and in every pack settled; core's 362 unplaced concepts cut to 23 by giving it the
+temporal, `relation` and `amount` branches it had never had; and the physics and chemistry packs given the basic
+vocabulary of their own fields, which WordNet's topic tags had never reached). It is a strict superset of the hand-written v1 (194 concepts,
 nothing lost). `docs/UPPER.md` §6 records every decision, §7 the policy for
 the sciences, §8 the science packs built beside it — `packs/physics`,
 `packs/mathematics`, `packs/chemistry`, `packs/biology`, `packs/medicine`, `packs/ai`, `packs/economics`, `packs/computing`, `packs/geography`, `packs/space`, each a
