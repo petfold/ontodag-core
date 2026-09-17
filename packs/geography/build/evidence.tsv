@@ -870,7 +870,7 @@ colony	geographical-area	accepted	sumo wordnet
 compass	artifact	accepted	opencyc sumo wikidata wordnet	
 compass	device	accepted	opencyc sumo wordnet	
 compass	equipment	single	wikidata	
-compass	gyrocompass	disputed	wikidata	opencyc sumo wordnet
+compass	gyrocompass	rejected	wikidata	opencyc sumo wordnet
 compass	indication	single	sumo	
 compass	information	single	sumo	
 compass	instrument	accepted	claude wordnet	
@@ -1738,7 +1738,7 @@ geographic-pole	geographical-area	single	sumo
 geographical-area	phenomenon	single	sumo	
 geographical-area	physical-object	single	wordnet	
 geographical-area	place	accepted	sumo wordnet	
-geographical-area	region	disputed	wordnet	sumo
+geographical-area	region	accepted	claude-ruling wordnet	sumo
 geographical-area	universe	single	sumo	
 geographical-feature	natural-object	accepted	claude-ruling	
 geographical-feature	place	accepted	claude-ruling	wikidata
@@ -1785,7 +1785,6 @@ geological-horizon	layer	accepted	claude wordnet
 geological-horizon	phenomenon	single	sumo	
 geological-horizon	physical-object	single	wordnet	
 geological-horizon	place	single	wordnet	
-geological-horizon	soil-horizon	single	claude	
 geological-horizon	universe	single	sumo	
 geological-period	attribute	dissented	wordnet	
 geological-period	geological-time-division	accepted	claude-ruling	
@@ -2059,7 +2058,7 @@ guyot	place	accepted	sumo yago
 guyot	seamount	accepted	wikidata wordnet	
 guyot	universe	single	sumo	
 gyrocompass	artifact	accepted	opencyc sumo wikidata wordnet	
-gyrocompass	compass	disputed	opencyc sumo wordnet	wikidata
+gyrocompass	compass	accepted	claude-ruling opencyc sumo wordnet	wikidata
 gyrocompass	device	accepted	opencyc sumo wordnet	
 gyrocompass	equipment	single	wikidata	
 gyrocompass	indication	single	sumo	
@@ -3826,7 +3825,7 @@ reef	place	single	yago
 reef	shoal	accepted	claude wikidata	
 reference-ellipsoid	shape	accepted	claude-ruling	
 refuge	geographical-feature	dissented	wikidata	
-region	geographical-area	disputed	sumo	wordnet
+region	geographical-area	rejected	sumo	wordnet
 regosol	material	accepted	sumo wordnet	
 regosol	part	single	wordnet	
 regosol	phenomenon	single	sumo	
@@ -4297,7 +4296,6 @@ soil-horizon	layer	accepted	claude claude-ruling wordnet
 soil-horizon	phenomenon	single	sumo	
 soil-horizon	physical-object	single	wordnet	
 soil-horizon	place	single	wordnet	
-soil-horizon	soil-horizon	disputed	claude	claude
 soil-horizon	universe	single	sumo	
 solar-calendar	calendar	accepted	claude-ruling wikidata	
 solar-halo	atmospheric-halo	accepted	claude wordnet	

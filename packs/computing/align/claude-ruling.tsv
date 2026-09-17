@@ -1186,3 +1186,6 @@ advanced-video-coding	video-file-format	reject	video/H264 is an RTP payload type
 high-efficiency-video-coding	video-file-format	reject	video/H265 (RFC 7798), as above		
 vp9	video-file-format	reject	video/VP9 (RFC 9628), as above; VP9 ships in webm		
 av1	video-file-format	reject	video/AV1, as above		
+# ===== 2026-09-17 review: the pack's disputed pairs, settled by reading the glosses.
+programming-language	computer-language	accept	OpenCyc and YAGO both have it this way, and the pack needs it: `markup-language ⊑ computer-language` is already accepted, and HTML is not a programming language. WordNet's narrow gloss for `computer_language` is the odd one out	06898352	06899633
+computer-language	programming-language	reject	as above — it would make every markup and stylesheet language a programming language	06899633	06898352

@@ -574,7 +574,7 @@ frigid-zone	climatic-zone	accept		08573258	08542081
 frost-heave	geological-phenomenon	accept		11461684	11417672
 fug	atmospheric-state	accept		14521954	14520278
 geological-erosion	geological-process	accept		13475538	13486838
-geological-horizon	soil-horizon	accept		08658918	08658118
+# geological-horizon	soil-horizon	accept	  [2026-09-17 review: DISABLED — the sup offset 08658118 (WordNet's `horizon` in the soil sense) is not a concept in this pack, so resolve_reviews fell back to the literal name and bound it to 08658309, which is `soil-horizon` itself: the line asserted soil-horizon ⊑ soil-horizon and showed up as a dispute with itself]	08658918	08658118
 glacial-boulder	boulder	accept		09289177	09227839
 high	air-mass	accept		14520670	14520518
 homolosine-projection	equal-area-projection	accept		03530326	03293471
@@ -627,7 +627,7 @@ shore	geological-formation	accept		09433442	09287968
 shore-boulder	boulder	accept		09433721	09227839
 slope	geological-formation	accept		09437454	09287968
 snowfield	plain	accept		09439032	09393605
-soil-horizon.location	soil-horizon	accept		08658309	08658118
+# soil-horizon.location	soil-horizon	accept	  [2026-09-17 review: DISABLED — the sup offset 08658118 (WordNet's `horizon` in the soil sense) is not a concept in this pack, so resolve_reviews fell back to the literal name and bound it to 08658309, which is `soil-horizon` itself: the line asserted soil-horizon ⊑ soil-horizon and showed up as a dispute with itself]	08658309	08658118
 solar-halo	halo	accept		11487533	11487424
 spit	cape	accept		09442595	09233715
 sprites	atmospheric-electricity	accept		11475992	11476231

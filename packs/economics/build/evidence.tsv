@@ -436,7 +436,7 @@ bank-account	service	single	schemaorg
 bank-account	state	dissented	wordnet	
 bank-card	consumer-credit	single	wordnet	
 bank-card	credit	single	wordnet	
-bank-card	credit-card	disputed	claude wordnet	wikidata
+bank-card	credit-card	accepted	claude claude-ruling wordnet	wikidata
 bank-card	credit-line	single	wordnet	
 bank-card	goods	single	wikidata	
 bank-card	identification	single	wordnet	
@@ -1486,7 +1486,7 @@ consumer-credit	possession	single	wordnet
 consumer-credit	relation	single	wordnet	
 consumer-credit	signified	single	sumo	
 contact-lens	goods	single	opencyc	
-container	shipping-container	disputed	wikidata	opencyc
+container	shipping-container	rejected	wikidata	opencyc
 container-ship	artifact	single	opencyc	
 container-ship	bottom	dissented	wikidata	
 container-ship	cargo-ship	accepted	claude claude-ruling wikidata	
@@ -1755,7 +1755,7 @@ credit-account	credit-line	single	wordnet
 credit-account	open-end-credit	accepted	claude wordnet	
 credit-account	possession	single	wordnet	
 credit-account	relation	single	wordnet	
-credit-card	bank-card	disputed	wikidata	claude wordnet
+credit-card	bank-card	rejected	wikidata	claude wordnet
 credit-card	consumer-credit	single	wordnet	
 credit-card	credit-line	single	wordnet	
 credit-card	goods	single	wikidata	
@@ -2577,7 +2577,7 @@ expending	payment	single	wordnet
 expending	phenomenon	single	sumo	
 expending	procedure	single	sumo	
 expending	situation	single	opencyc	
-expending	spending	disputed	wordnet	opencyc
+expending	spending	accepted	claude-ruling wordnet	opencyc
 expending	transaction	accepted	sumo wordnet	
 expending	volition	single	sumo	
 expense	outgo	accepted	claude wordnet	
@@ -6392,7 +6392,7 @@ spending	activity	single	sumo
 spending	commerce	single	wordnet	
 spending	event	accepted	opencyc sumo wordnet	
 spending	exchange	single	sumo	
-spending	expending	disputed	opencyc	wordnet
+spending	expending	rejected	opencyc	wordnet
 spending	interaction	single	sumo	
 spending	payment	accepted	claude wordnet	
 spending	phenomenon	single	sumo	

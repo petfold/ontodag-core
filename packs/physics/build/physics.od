@@ -2,6 +2,9 @@
 absolute-magnitude magnitude
 absorber material
 absorptivity attribute
+acoustics physics
+aeromechanics physics
+amount '*'
 amplitude event
 angle '*'
 anomaly angle
@@ -25,14 +28,16 @@ astronomical-conjunction event
 astronomical-rising event
 atomic-nucleus particle
 atomic-spectrum physical-phenomenon
+attractive-force '*'
 attractor concept
 attribute '*'
 autumnal-equinoctial-point equinoctial-point
 b-meson meson
 barycenter centre
-baryon hadron
+baryon fermion hadron
 bohr-theory scientific-theory
 bose-einstein-statistics physical-law
+boson particle
 bottom-quark quark
 capacitance electrical-phenomenon linear-dimension
 celestial-body '*'
@@ -55,36 +60,49 @@ coriolis-effect physical-phenomenon
 coriolis-force physical-phenomenon
 corpuscular-theory scientific-theory
 cosmic-string elementary-particle
+crystallography field-of-study
 'dalton'"'"'s-law' physical-law
 declination angle
 delta-ray electron elementary-particle
 density '*'
 device '*'
 diffusion process
+distance '*'
 down-quark quark
 dynamical-system concept
+dynamics physics
 eclipse-egress event
 eclipse-ingress event
 electrical-phenomenon physical-phenomenon
+electromagnetism physics
 electron '*'
+electrostatics physics
 elementary-particle particle
+entropy attribute
 equinoctial-point place
 event '*'
 fermi-dirac-statistics physical-law
+fermion particle
+field-of-study '*'
 field-theory theory
 flux-density linear-dimension magnitude
 free-electron electron elementary-particle
+friction physical-phenomenon
 fundamental-interaction physical-phenomenon
 'gay-lussac'"'"'s-law' physical-law
+gluon boson elementary-particle
 gravitational-accretion increase
-gravitational-mass attribute
+gravitational-mass attribute physical-mass
+graviton particle
 gravity-wave wave-motion
 ground-state state
 hadron elementary-particle
+heat-energy physical-phenomenon
 hodoscope instrument
 'hooke'"'"'s-law' physical-law
 hour-angle angle
 'hubble'"'"'s-law' physical-law
+hydrodynamics physics
 hydrogen-ion proton
 hyperon baryon
 illuminance linear-dimension luminosity
@@ -92,7 +110,7 @@ illumination-phase appearance
 increase '*'
 inductance electrical-phenomenon linear-dimension
 inertia physical-phenomenon
-inertial-mass attribute
+inertial-mass attribute physical-mass
 inferior-conjunction astronomical-conjunction
 instrument '*'
 intermolecular-cohesion physical-phenomenon
@@ -100,12 +118,13 @@ isotopic-abundance ratio
 j-particle meson
 kaon meson
 'kepler'"'"'s-law' physical-law
+kinematics physics
 kinetic-theory scientific-theory
 'kirchhoff'"'"'s-laws' physical-law
 lambda-particle hyperon
 law-of-gravitation physical-law
 law-of-thermodynamics physical-law
-lepton elementary-particle
+lepton elementary-particle fermion
 libration orbital-variation
 linear-dimension '*'
 luminosity '*'
@@ -115,17 +134,19 @@ magnetic-dip angle
 magnetic-dipole-moment physical-phenomenon
 magnetic-flux linear-dimension
 magnetic-reluctance electrical-phenomenon
+magnetism attractive-force
 magnitude '*'
 major-planet '*'
-mass-energy attribute
+mass-energy attribute physical-mass
 mass-energy-equivalence scientific-principle
 material '*'
 maxwell-boltzmann-distribution-law physical-law
 mechanical-strain change
 mechanical-stress physical-phenomenon
 mechanical-work physical-phenomenon
+mechanics physics
 meniscus physical-object
-meson hadron
+meson boson hadron
 metastability attribute
 meteoroid natural-object
 muon lepton
@@ -133,11 +154,13 @@ natural-event '*'
 natural-object '*'
 neutrino lepton
 neutron nucleon
+nuclear-physics physics
 nuclear-reaction process
 nucleon baryon
 nucleosynthesis process
 oort-cloud collection
 optical-density density
+optics physics
 orbital-inclination angle
 orbital-node place
 orbital-plane shape
@@ -146,19 +169,24 @@ oscillation wave-motion
 outer-planet major-planet
 parity-conservation conservation-law
 particle '*'
+particle-physics physics
 pencil-of-lines shape
 periapsis place
 perturbation physical-phenomenon
 phase-space concept
 photoelectron electron elementary-particle
+photon elementary-particle
 physical-law concept
+physical-mass amount
 physical-object '*'
 physical-phenomenon natural-event
 physicist scientist
+physics '*'
 pion meson
 place '*'
 'planck'"'"'s-law' physical-law
 'planck'"'"'s-radiation-law' physical-law
+plasma state-of-matter
 positron antilepton
 primary-body celestial-body
 principle-of-equivalence scientific-principle
@@ -168,6 +196,7 @@ proton nucleon
 ptolemaic-system theory
 quantum concept
 quantum-jump change
+quantum-mechanics physics
 quantum-theory scientific-theory
 quark elementary-particle
 radiation-absorption process
@@ -175,11 +204,12 @@ radioactivity linear-dimension
 ratio '*'
 reactor-containment artifact
 red-shift physical-phenomenon
-relativistic-mass attribute
+relation '*'
+relativistic-mass attribute physical-mass
 relativity scientific-theory
 relaxation-process process
 reluctivity attribute
-rest-mass attribute
+rest-mass attribute physical-mass
 right-ascension angle
 scientific-principle '*'
 scientific-theory theory
@@ -190,23 +220,30 @@ shear-deformation change
 soliton wave-motion
 spallation nuclear-reaction
 state '*'
+state-of-matter '*'
+statistical-mechanics physics
 strange-particle elementary-particle
 strange-quark quark
 strong-interaction fundamental-interaction
+superconductivity physical-phenomenon
 superior-conjunction astronomical-conjunction
 supersymmetry scientific-theory
 surface '*'
 sympathetic-vibration oscillation
 tauon lepton
+temperature amount
 tensile-stress mechanical-stress
 theory concept
 theory-of-gravitation scientific-theory
+thermodynamics physics
 top-quark quark
 transient-oscillation oscillation
 transmutation change
 up-quark quark
 valence-electron electron elementary-particle
+velocity relation
 vernal-equinoctial-point equinoctial-point
+viscosity attribute
 visible-light physical-phenomenon
 voltage electrical-phenomenon linear-dimension
 wave-front surface
@@ -214,5 +251,6 @@ wave-motion event
 wave-node place
 wave-particle-duality attribute
 wave-theory scientific-theory
+wavelength distance
 weak-interaction fundamental-interaction
 weakly-interacting-massive-particle elementary-particle
