@@ -116,7 +116,7 @@ categories at v11's integration) toward 15,000–18,000.
 | # | step | gate |
 |---|---|---|
 | W0 | decisions (§8) | agreed |
-| W1 | `tools/queue_wide.py`: the two-source candidate queue with the part-of-speech filter; `wordfreq` data (CC BY-SA 4.0) recorded in NOTICE as a selection witness, never imported | the queue reproduces from sources; `have`/`great`/`white` absent from it |
+| W1 | `tools/queue_wide.py`: the two-source candidate queue with the part-of-speech filter; `wordfreq` data (CC BY-SA 4.0) recorded in NOTICE as a selection witness, never imported | the queue reproduces from sources; `have`/`great` absent from it, `white` present only in its tagged noun sense (a person, via SemCor) — met 2026-09-23 |
 | W2 | judgement lists as `align/lists/*.tsv` (one per area, with the witness per line); OSM tags added as a witness for places (`tools/extract_osm_tags.py` over the tag wiki's `shop`/`amenity` values) | each list reviewed once by its consumer |
 | W3 | build: views, consensus, review — in batches by area, as §10–§14 were | review queue empty per batch |
 | W4 | integrate (core + packs one store), regenerate the shipped modules | `integrate.py`: nothing missing or stranded |
