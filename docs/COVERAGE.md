@@ -143,3 +143,18 @@ sense choice.
 4. Calendar names: categories, or values of a periodic kind (an ontodag
    question first)?
 5. v12 as one release or per batch (occupations first)?
+
+## 9. Progress
+
+**2026-09-23 — W1 built.** `tools/queue_wide.py` writes `build/queue-wide.tsv`:
+**3,658 candidates, 1,960 whose words are nowhere yet** in core or the packs,
+most frequent first, each with its SemCor count, Zipf frequency, the nearest
+placed ancestor and flags. The noun-dominance filter removes `have` and
+`great`; WordNet's own usage domains remove disparaging, obscene, profane,
+archaic and trade-name senses without a hand list (slang and colloquial senses
+stay, flagged). The known gaps land where §3 expects: `sandwich` under
+`snack-food`, `pizza` under `prepared-dish`, `barn` under `building`, `puppy`
+under `dog`, `pine` and `willow` under `tree`, `november` under
+`calendar-month`, `son` under `child`, `neighborhood` under `community`.
+Occupations run as their own batch (`OCCUPATIONS.md` §10). Next: W2's
+judgement lists, then the queue read area by area into review batches.
