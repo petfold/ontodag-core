@@ -78,6 +78,7 @@ search and a parents/children panel) — regenerable, not tracked:
 | `sources/gpt/taxonomy-with-ids.en-US.txt` | Google Product Taxonomy — the goods witness (UPPER.md §10) | Google's terms; never imported |
 | `sources/cpc/CPC_Ver_2_1_english_structure.txt` | UN Central Product Classification 2.1 structure (Latin-1) — the services witness (UPPER.md §11) | UN Statistics Division, free download; never imported |
 | `sources/iana/*.csv` | IANA Media Types registry, one CSV per top-level type — the file-format witness (UPPER.md §14) | IANA, public domain; never imported |
+| `sources/isco/ISCO-08 EN.csv`, `ISCO-08 -88 EN Index.xlsx` | ILO ISCO-08 structure (10/43/130/436 groups) and index of 7,018 occupational titles — the occupations pack's witness (`docs/OCCUPATIONS.md`) | ILO, free download (isco.ilo.org); never imported |
 | `sources/wikidata/*.json` | bounded P279 pulls (`tools/fetch_wikidata.py`; `core.json` the WordNet-mapped items, `services.json` the tree under *service*) | CC0 |
 
 Fetch commands are in `tools/fetch.sh`. YAGO 4.5 was not found at any public

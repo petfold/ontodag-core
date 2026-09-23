@@ -1,6 +1,6 @@
 # The occupations pack — plan
 
-Status: plan for review, 2026-09-23. Nothing built. Written from loopmarket's
+Status: plan for review, 2026-09-23; first build the same day (§10), unreviewed. Written from loopmarket's
 need (a wanter requiring "a licensed plumber") and measured against the
 shipped core (v9) and WordNet 3.0; to be folded into `UPPER.md` as a section
 once decided, as §10–§14 were.
@@ -178,3 +178,33 @@ review load is §11-sized (hundreds of lines, not thousands).
    it an ontodag design question first?
 6. The ESCO download: register and fetch v1.2.1 CSV (only you can do the
    registration).
+
+## 10. Progress
+
+**2026-09-23 — first build, unreviewed.** `tools/extract_isco.py` (ISCO-08:
+exactly 10/43/130/436 groups; the armed forces' codes had lost their leading
+zero in the ILO's CSV) and `tools/align_isco.py`, registered in `align.py` and
+`views.py` as the `isco` source, aligned by synset. Three findings changed §3–§4:
+
+- **The pool is every WordNet person synset**, not the worker/professional
+  cones: WordNet files occupations all over (tailor under garment-maker), so the
+  cones held only 21 of the 54 sampled. 7,272 non-instance person synsets; ISCO
+  selects.
+- **The index inverts its titles** ("Sitter, baby", "Engineer, civil"): the
+  qualifier put back in front is matched first; the bare head only for the
+  lemma's most frequent person sense (the artist's sitter is not a baby sitter).
+- **Instances out** — Samuel Barber was *barber*'s first person sense.
+
+Result: **714 new concepts selected**, 88 core concepts given an ISCO code, 214
+queued (`align/queue-isco.tsv`: codes across major groups, armed forces, synsets
+held by medicine); of the 54 sampled, 40 selected, 4 already in core v11, 8
+queued with a reason, 2 absent (caregiver — ISCO says "care worker";
+chimney-sweep — WordNet's `chimneysweep`). Consensus: **588 placed**, 129
+unplaced, 92 disputed. Placements mostly sound (plumber, carpenter, welder,
+tailor ⊑ craftsman; chef ⊑ cook); visible errors for review (optician ⊑
+organization and place — label sources naming the shop; translator ⊑
+scientist).
+
+Not in `integrate.py`'s or `regen_ontodag_packs.py`'s pack lists: nothing ships
+until reviewed. Next: Wikidata roots (occupation, profession) as the second
+witness; names; the queue; the medicine overlap through `crosspack.py`.
