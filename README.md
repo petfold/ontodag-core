@@ -11,6 +11,9 @@ anyone; the product is a published store root that `odag pack core` adopts.
 
 ## State (2026-09-17)
 
+Filed asks from consumers, 2026-09-25: `docs/ASKS.md` (general vocabulary
+missing from v11; the legal vocabulary check).
+
 `build/core.od` is the `core` pack (**v9 shipped in ontodag 0.24.0**, which
 carried v7, the services layer, and v8, CPC's goods half, with it — 0.23.0
 had stopped at v6): **v11 built, not yet shipped** — 4,992 concepts, ten branches, every edge carried by two
