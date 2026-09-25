@@ -60,7 +60,7 @@ selection. Not started.
   favour of the pack's own method.
 - **The credential layer** (licensing status per occupation, recognition
   edges such as EU Annex V, the door scale, evidence-basis names,
-  `scheme` per category) is the assurance repository's own pack, not
+  `scheme` per category) is the hansa repository's own pack, not
   core's; it depends on core and the occupations pack and adds nothing to
   them.
 - **Per-key or per-item nodes**: never in a shared pack (the identifier
