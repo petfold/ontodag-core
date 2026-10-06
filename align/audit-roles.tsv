@@ -1,0 +1,79 @@
+# Draft analysis, 2026-10-07, for ROLES.md §9 step 7; nothing here is applied.
+# Edges are the shipped ones (ontodag core v9 + ten packs, built from ontodag-core 4830925); all still present in this repo's HEAD build.
+# Proposals use ⊑ for the replacement edges; in(...) presumes the prelude declares `in` (step 7).
+# Spelling rows leave sup empty; their proposal is the new name. docs/AUDIT_ROLES.md has the reasoning.
+pack	sub	sup	class	confidence	evidence	proposal
+economics	beacon-chain	ethereum	part-of	high	hand-asserted: 'the proof-of-stake consensus layer'; ethereum is an entity (Wikidata Q16783523, P31 only)	⊑ in(ethereum) + ⊑ blockchain
+economics	bitcoin-network	bitcoin	part-of	high	hand-asserted: 'the peer-to-peer network of nodes'; bitcoin ⊑ cryptocurrency, so the edge says the network is a currency	⊑ in(bitcoin) + ⊑ computer-network
+economics	mempool	bitcoin	part-of	high	hand-asserted: 'the pool of unconfirmed transactions' (kept by each node)	⊑ in(bitcoin-network) + ⊑ collection
+economics	full-node	bitcoin-network	part-of	high	hand-asserted: 'a node that validates every block'; a node of the network, and every chain has full nodes	⊑ peer-node (computing); add ⊑ in(bitcoin-network) only for a Bitcoin-specific name
+economics	light-client	bitcoin-network	part-of	high	hand-asserted: 'a node that trusts headers'	⊑ peer-node (computing); add ⊑ in(bitcoin-network) only for a Bitcoin-specific name
+economics	payment-channel	lightning-network	part-of	high	hand-asserted: 'a two-party channel settled on chain'; lightning-network is an entity (Wikidata Q30325114, P31 only)	⊑ in(lightning-network) + a kind parent (smart-contract is the nearest; core's contract is filed as a legal document)
+economics	payment-channel-network	lightning-network	wrong	high	hand-asserted: 'channels routed into a network'; the Lightning Network is one such network, so the edge is inverted	invert: lightning-network ⊑ payment-channel-network; payment-channel-network ⊑ layer-2
+economics	chunk-storage	swarm-storage	part-of	high	hand-asserted: 'content-addressed 4 KB units'; swarm-storage is Swarm (an entity, ⊑ decentralized-storage)	⊑ in(swarm-storage) + ⊑ content-addressable-storage (computing)
+economics	postage-batch	swarm-storage	entity-as-quality	high	hand-asserted: 'prepaid storage rent on Swarm'; a payment, not a storage system	⊑ prepayment + ⊑ in(swarm-storage)
+economics	ethereum-gas	ether	entity-as-quality	high	hand-asserted: 'the unit of computation paid for in ether'; gas is priced in ether, it is not ether (ether ⊑ cryptocurrency)	⊑ quantity + ⊑ in(ethereum)
+economics	account-abstraction	ethereum	entity-as-quality	high	hand-asserted: 'smart-contract accounts as first-class users'; a feature of Ethereum	⊑ concept + ⊑ in(ethereum)
+economics	maximal-extractable-value	ethereum	entity-as-quality	high	hand-asserted: 'value extracted by ordering transactions in a block'	⊑ income + ⊑ in(ethereum)
+economics	bitcoin-halving	bitcoin	entity-as-quality	high	hand-asserted: 'the block subsidy halves every 210,000 blocks'; an event in Bitcoin	⊑ event + ⊑ in(bitcoin)
+economics	timestamp-server	bitcoin	wrong	high	hand-asserted: 'the whitepaper's framing of the chain'; Bitcoin's chain is a timestamp server, not every timestamp server is Bitcoin	⊑ computer-system (computing) or concept; if wanted, bitcoin-network ⊑ timestamp-server
+economics	blockchain-block	blockchain	part-of	high	hand-asserted: 'a batch of transactions chained by hash'; a block is part of a chain	⊑ in(blockchain) + ⊑ data-block (computing)
+geography	atmospheric-layer	earth-atmosphere	part-of	high	hand-asserted; Wikidata: troposphere, stratosphere, mesosphere, thermosphere, ionosphere all P361 'atmosphere of Earth'; WordNet troposphere #p atmosphere	⊑ in(earth-atmosphere) + ⊑ layer
+geography	earth-sphere	earth-structure	part-of	high	hand-asserted: 'the concentric shells'; earth-structure is Wikidata Q1664027 'internal structure of Earth' (P31 only); biosphere, hydrosphere, geosphere, atmosphere of Earth all P361 Earth	drop; add ⊑ in(planet-earth) (keeps ⊑ layer)
+geography	mohorovicic-discontinuity	earth-structure	part-of	high	WordNet: an instance (@i boundary), 'the boundary between the Earth's crust and the underlying mantle'; its only parent is an entity; build: claude-ruling (geography skeleton, third pass [2026-09-03])	⊑ in(planet-earth) + ⊑ place (or a boundary kind)
+geography	air-mass	atmosphere	part-of	high	Wikidata Q216823 P361 troposphere; core's atmosphere is 'the envelope of gases surrounding any celestial body'; build: claude-ruling (geography skeleton [2026-09-03])	drop; add ⊑ in(atmosphere) (keeps ⊑ atmospheric-state)
+core	egg-white	egg	part-of	high	WordNet egg_white #p egg (hypernym ingredient); Wikidata Q796758 P361 bird egg, P279 food; build: accepted by gpt sumo	⊑ in(egg) + ⊑ food
+geography	geographic-line	geographic-point	wrong	high	hand-asserted: 'loci of points on the surface'; a line is made of points, it is not a point	⊑ place (the parent of geographic-point)
+computing	satellite-internet	internet	entity-as-quality	high	Wikidata Q877159 'satellite Internet access' P279 wireless communication; core's internet is the Internet; build: claude-ruling (computing skeleton [2026-09-03])	drop (keeps ⊑ wireless-communication)
+core	colon	intestine	part-of	medium	WordNet gloss 'the part of the large intestine between the cecum and the rectum' (but WordNet hypernym large_intestine); Wikidata (aligned to Q11083 large intestine) P361 intestine; build: accepted by claude wordnet	⊑ in(intestine) + ⊑ organ
+core	thigh	limb	part-of	medium	WordNet thigh #p leg, gloss 'the part of the leg between the hip and the knee' (hypernym limb); Wikidata Q129757 P361 leg; build: accepted by claude wordnet	⊑ in(limb) + ⊑ body-part
+core	roadway	street	part-of	medium	aligned to WordNet street sense 2, 'the part of a thoroughfare between the sidewalks'; Wikidata Q1645474 P361 street, P279 road; Peter's review accepted it before 0.2; build: accepted by peter sumo	⊑ in(street) + ⊑ road
+geography	humus	soil	part-of	medium	WordNet gloss 'the organic component of soil' (hypernym soil); Wikidata Q172645 P361 soil, P279 organic matter; build: claude-ruling (geography skeleton [2026-09-03])	⊑ in(soil) + ⊑ material
+core	leaf-blade	leaf	part-of	medium	WordNet blade @ leaf, but gloss 'the broad portion of a leaf as distinct from the petiole'; the name says the lamina; build: accepted by sumo wordnet	⊑ in(leaf) + ⊑ body-part
+computing	world-wide-web	internet	entity-as-quality	medium	Wikidata Q466 P279 'service on Internet': it runs over the Internet, it is not the Internet; build: claude-ruling (computing skeleton [2026-09-03])	⊑ in(internet) (keeps ⊑ computer-network)
+geography	differential-gps	global-positioning-system	entity-as-quality	medium	'enhancements to the Global Positioning System'; GPS names one system (Wikidata Q18822, P31 global navigation satellite system); Wikidata does give DGPS P279 GPS; build: accepted by claude wikidata	drop (keeps ⊑ gnss-augmentation)
+economics	liquidity-pool	automated-market-maker	part-of	medium	hand-asserted; the AMM's own note: 'prices set by a formula over a liquidity pool'	⊑ in(automated-market-maker) + ⊑ pooled-fund
+economics	staking	proof-of-stake	part-of	medium	hand-asserted: 'locking ether to validate'; an activity within the mechanism	⊑ in(proof-of-stake) + ⊑ activity
+economics	validator	staking	wrong	medium	hand-asserted: 'a staking node that proposes and attests blocks'; a node filed under an activity	⊑ peer-node (computing); in(proof-of-stake) if wanted
+economics	hash-rate	cryptocurrency-mining	wrong	medium	hand-asserted: 'the network's hashing throughput'; a quantity, not a mining activity	⊑ quantity
+economics	mining-difficulty	cryptocurrency-mining	wrong	medium	hand-asserted: 'the target adjusted every 2016 blocks'; a parameter	⊑ quantity
+economics	difficulty-adjustment	cryptocurrency-mining	wrong	medium	hand-asserted: 'the retargeting rule'	⊑ rule
+economics	block-reward	cryptocurrency-mining	wrong	medium	hand-asserted: 'new coins plus fees paid to the block's miner'	⊑ payment-amount
+economics	incoterms	sales-contract	part-of	medium	hand-asserted: 'the standard trade delivery terms'; terms written into a contract, not contracts	⊑ contract-condition (+ ⊑ in(sales-contract) if wanted)
+economics	cross-chain	blockchain	wrong	medium	hand-asserted: 'between chains'; an adjective filed under a kind; nothing below it	drop, or file as a quality under attribute
+economics	reorder-point	inventory-management	wrong	low	hand-asserted: 'the stock level that triggers a reorder'; a quantity under an activity	⊑ quantity
+economics	layer-2	blockchain	wrong	low	hand-asserted: 'a protocol that settles on a base chain' (some layer 2s are chains themselves)	⊑ communications-protocol (computing), or keep
+economics	blockchain-bridge	layer-2	wrong	low	hand-asserted: 'moving assets between chains'; a bridge connects chains, it is not a layer 2	⊑ decentralized-application
+geography	floodhead	flash-flood	part-of	low	WordNet: 'a wall of water rushing ahead of the flood' (hypernym flash_flood); build: accepted by claude wordnet	keep as a phase, or ⊑ in(flash-flood) + ⊑ natural-event
+geography	rapids	stream	part-of	low	WordNet rapid #p river, gloss 'a part of a river where the current is very fast'; build: claude-ruling (geography skeleton [2026-09-03])	keep (a stretch of river is water), optionally add ⊑ in(river)
+geography	rapids	waterway	part-of	low	WordNet rapid #p river, gloss 'a part of a river'; build: accepted by claude wordnet	keep, optionally add ⊑ in(river)
+mathematics	secp256k1	elliptic-curve-cryptography	wrong	low	one named curve (Bitcoin's), filed under the technique that uses it; build: claude-ruling (the curve behind Bitcoin, Ethereum and Swarm signatures)	drop (keeps ⊑ concept)
+core	ash-grey		spelling	high	British grey	ash-gray
+core	axe-head		spelling	high	core already spells the tool ax (ax ⊑ cutter)	ax-head
+biology	bodily-humour		spelling	high	British -our	bodily-humor
+core	centre		spelling	high	pair: centre 'a point equidistant from the ends of a line' vs center 'a building dedicated to a particular activity'; children core, barycenter, center-of-buoyancy	center-point
+core	civilisation		spelling	high	pair (not in ROLES §8): civilisation 'a particular society at a particular time and place' vs civilization 'a society in an advanced state of social development'; both ⊑ society, no children	historical-civilization, or drop as a near-synonym of civilization
+economics	division-of-labour		spelling	high	British -our	division-of-labor
+core	draught		spelling	high	pair: draught 'a current of air' vs draft 'versions of a written work'; children downdraft, updraft are already US; air-draft is a ship's clearance height	draft-of-air
+core	fibreboard		spelling	high	British -re	fiberboard
+mathematics	graph-colouring		spelling	high	British -our	graph-coloring
+economics	grey-market		spelling	high	British grey	gray-market
+computing	hard-disc		spelling	high	duplicate of core's hard-disk (WordNet 03492542 'hard disc, hard disk'): created by a ruling hard-disc ⊑ magnetic-disk whose review line carries hard-disk's offset	hard-disk (a merge: gives the intended edge hard-disk ⊑ magnetic-disk)
+core	honour		spelling	high	pair: honour 'the state of being honored' (children fame, glory, good-name, good-repute) vs honor 'the quality of being honorable'	honored-status
+core	judgement		spelling	high	pair (not in ROLES §8): judgement '(law) the determination by a court' (children verdict, judgment-of-conviction) vs judgment 'the act of judging or assessing'	court-judgment (or judicial-decision)
+core	labour		spelling	high	pair: labour 'a social class comprising those who do manual labor' vs labor 'productive work'	working-class
+geography	levelling		spelling	high	British -ll-	leveling
+core	mollusc		spelling	high	British spelling; many children	mollusk
+core	mould		spelling	high	pair: mould 'container into which liquid is poured to create a given shape' vs mold 'a fungus'	casting-mold
+core	orange-colour		spelling	high	British -our	orange-color
+ai	predictive-modelling		spelling	high	British -ll-	predictive-modeling
+core	programme		spelling	high	pair: programme 'a radio or television show' (children episode, news-program, serial) vs program 'an announcement of the events of a theatrical or sporting event'; software is computer-program	broadcast-program
+space	star-catalogue		spelling	high	British -ogue; its parent is astronomical-catalog	star-catalog
+core	storey		spelling	high	story is free as a name but is the everyday word for a tale (WordNet lemma of narrative); children basement, loft	building-story
+biology	hematopoeitic-stem-cell		spelling	high	typo, not British: hematopoietic	hematopoietic-stem-cell
+core	analogue		spelling	low	variant; US prefers analog	analog (optional)
+space	circumstellar-disc		spelling	low	variant; US astronomy writes disk, and core's node is disk	circumstellar-disk (optional)
+space	scattered-disc		spelling	low	variant; US astronomy writes disk, and core's node is disk	scattered-disk (optional)
+medicine	herniated-disc		spelling	low	variant; US medical usage has both	herniated-disk (optional)
+medicine	cervical-disc-syndrome		spelling	low	variant; US medical usage has both	cervical-disk-syndrome (optional)
+core	dialogue		spelling	low	US-valid, but spelling alone separates it from dialog ('a conversation between two persons'); dialogue is 'the lines spoken by characters in drama or fiction'	scripted-dialogue (optional)
