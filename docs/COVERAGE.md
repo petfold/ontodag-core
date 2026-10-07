@@ -105,7 +105,7 @@ core; a `military` pack is not proposed).
 
 ## 5. Versions and size
 
-The widened core is **v13** (v12 is v11 plus ontodag's step 7, shipped in ontodag 0.30); the change is additive (§1's asymmetry makes
+The widened core is **v14** (v12 is v11 plus ontodag's step 7, shipped in ontodag 0.30; v13 the group and vaccine rulings of 2026-10-07); the change is additive (§1's asymmetry makes
 adding safe and removal a one-way door), so nothing present moves unless
 review says it must. Expected: core from 4,992 to roughly 7,000–8,000;
 packs grow by their judgement lists; the whole store (core + packs, 11,842
@@ -142,7 +142,7 @@ sense choice.
 3. OpenStreetMap tags as a new witness for places of business.
 4. Calendar names: categories, or values of a periodic kind (an ontodag
    question first)?
-5. v13 as one release or per batch (occupations first)?
+5. v14 as one release or per batch (occupations first)?
 
 ## 9. Progress
 

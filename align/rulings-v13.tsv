@@ -1,0 +1,27 @@
+# Rulings for core v13 (Peter, 2026-10-07), applied by tools/step7.py after consensus.
+# action: move = drop the edge to old, add new (* = top level); parent+ = add parents; add = a new concept with these parents.
+# A group is not an agent: WordNet's general group (00031264, any number of entities considered as a unit) had been aligned
+# to SUMO's Group, a group of agents, and inherited agent. Bodies that act as one keep agent in their own right.
+pack	sub	action	old	new	note
+core	group	move	agent	*	an eleventh branch: a group's members can be people, organisms, rows or genes
+core	organization	parent+	-	agent	acts as one
+core	legislature	parent+	-	agent	acts as one
+core	executive	parent+	-	agent	acts as one
+core	jury	parent+	-	agent	acts as one
+core	movement	parent+	-	agent	people who try together to achieve goals
+core	democracy	move	group	system	a political system, not a body of people
+core	monarchy	move	group	system	a political system, not a body of people
+core	republic	move	group	system	a form of government
+core	engagement	move	group	meeting	a meeting arranged in advance
+core	gene	parent+	-	natural-object	a stretch of DNA, as chromosome is
+core	vaccine	add	-	medication	medication treats or prevents (WordNet 03740161); Wikidata: medication
+core	vaccination	add	-	medical-care	giving a vaccine
+medicine	dpt-vaccine	parent+	-	vaccine	the vaccine hinge the build had dropped
+medicine	pneumococcal-vaccine	parent+	-	vaccine	
+medicine	poliovirus-vaccine	parent+	-	vaccine	
+medicine	proteosome-vaccine	parent+	-	vaccine	
+medicine	live-attenuated-vaccine	add	-	vaccine antigen	
+medicine	inactivated-vaccine	add	-	vaccine antigen	
+medicine	subunit-vaccine	add	-	vaccine antigen	
+medicine	mrna-vaccine	add	-	vaccine antigen	
+medicine	toxoid	add	-	vaccine antigen	a toxin made harmless, given to make antitoxin

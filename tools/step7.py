@@ -2,7 +2,9 @@
 step 7): the renames of align/renames-step7.tsv, the role rewrites of
 align/roles-rewrites.tsv, the unit heads core declares for the quantity
 names it owns (align/core-heads.tsv, ROLES.md §8 item 23), and the
-unit-family pins of every dimension head (ROLES.md §8 item 21).
+unit-family pins of every dimension head (ROLES.md §8 item 21), and the
+rulings of align/rulings-v*.tsv (a later core version's edge decisions:
+move, parent+, add).
 
     python3 tools/step7.py            # rewrite build/core.od and packs/*/build/*.od
     python3 tools/step7.py --check    # report only
@@ -25,6 +27,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 RENAMES = ROOT / "align/renames-step7.tsv"
 CORE_HEADS = ROOT / "align/core-heads.tsv"
+RULINGS = sorted(ROOT.glob("align/rulings-v*.tsv"))
 REWRITES = ROOT / "align/roles-rewrites.tsv"
 
 # A pinned head's family is its own name when the registry has a family of
@@ -213,6 +216,49 @@ def main():
                 par[name] = ["*"]
                 order.append(name)
                 log.append(f"applied  {pack} borrows {name}")
+
+    for path in RULINGS:
+        for pack, sub, action, old, new, *note in table(path):
+            order, par = graphs[pack]
+            want = new.split()
+            if action == "add":
+                if sub in par:
+                    log.append(f"already  add {sub}" if set(want) <= set(par[sub])
+                               else f"ERROR    add {sub}: exists with {par[sub]}")
+                    if not set(want) <= set(par[sub]):
+                        errors.append(f"add {sub}: it exists with other parents {par[sub]}")
+                    continue
+                par[sub] = sorted(want)
+                order.append(sub)
+                log.append(f"applied  add {sub} ⊑ {' '.join(want)}")
+            elif action == "parent+":
+                if sub not in par:
+                    errors.append(f"{pack}: no node {sub!r}")
+                elif set(want) <= set(par[sub]):
+                    log.append(f"already  {sub} ⊑ {' '.join(want)}")
+                else:
+                    par[sub] = sorted((set(par[sub]) - {"*"}) | set(want))
+                    log.append(f"applied  {sub} ⊑ {' '.join(want)}")
+            elif action == "move":
+                if sub not in par:
+                    errors.append(f"{pack}: no node {sub!r}")
+                    continue
+                target = [] if want == ["*"] else want
+                if old not in par[sub]:
+                    done = set(target) <= set(par[sub]) and (target or par[sub] in ([], ["*"]))
+                    if done:
+                        log.append(f"already  {sub}: {old} -> {new}")
+                    else:
+                        errors.append(f"{sub} ⊑ {old} is not in {pack}, and the move is not there either")
+                    continue
+                rest = (set(par[sub]) - {old}) | set(target)
+                par[sub] = sorted(rest) if rest else ["*"]
+                log.append(f"applied  {sub}: {old} -> {new}")
+            else:
+                errors.append(f"{path.name}: unknown action {action!r}")
+            for x in want:
+                if x != "*" and x not in known_to(pack):
+                    errors.append(f"{sub}: no node {x!r} for {pack}")
 
     core = graphs["core"][1]
     for name, family, drop, *note in table(CORE_HEADS):
