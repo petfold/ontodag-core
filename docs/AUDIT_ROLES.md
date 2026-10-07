@@ -406,4 +406,12 @@ conversation between two persons"), the same trap as the pairs;
    neither `in` nor `about`; an `information-system` kind would fit it
    better and doesn't exist yet); `floodhead ⊑ in(flash-flood)` (`in`
    covers the parts of events too).
-
+5. **Spelling** (the same day): every rename is listed in
+   `align/renames-step7.tsv`. Group 1 respellings as proposed, plus the
+   `hard-disc` merge. The pairs as proposed, except `draught` →
+   `air-current`. Two names change sense on Peter's ruling: `civilization`
+   is the historical society (the Romans, the Maya), taking over
+   `civilisation`, and the advanced-state sense leaves; `floor` is a level
+   of a building, taking over `storey`, while the walking surface becomes
+   `floor-surface`. `story` stays a tale. The optional variants are taken
+   (`analog`, the four `-disk`, `scripted-dialogue`).
