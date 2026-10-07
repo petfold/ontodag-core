@@ -148,7 +148,15 @@ def main():
         rename(old, new)
         log.append(f"applied  {kind} {old} -> {new}")
 
-    names = {n for _, par in graphs.values() for n in par}
+    core_names = set(graphs["core"][1])
+
+    def known_to(pack):
+        """The names a pack's claims may use: its own and core's. A pack
+        borrowing a sibling's name is its .od's business (written as a stub);
+        core may lean on no pack."""
+        if pack == "core":
+            return core_names
+        return {n for _, par in graphs.values() for n in par}
     for pack, sub, old_sup, action, new_parents, relation in table(REWRITES):
         if action == "keep":
             continue
@@ -165,10 +173,15 @@ def main():
         new = parents_of(new_parents)
         for term in new:
             for constraint in ([term[term.index("(") + 1:-1]] if "(" in term else [term]):
-                if constraint not in names:
+                if constraint not in known_to(pack):
                     errors.append(f"{sub}: no node {constraint!r} ({new_parents})")
         if sub not in par:
             errors.append(f"{pack}: no node {sub!r}")
+            continue
+        stale = [x for x in par[sub] if x not in known_to(pack) and "(" not in x]
+        if old_sup not in par[sub] and stale and set(new) - set(par[sub]):
+            par[sub] = sorted((set(par[sub]) - set(stale)) | set(new))
+            log.append(f"applied  {sub}: {' '.join(stale)} -> {' '.join(new)} (revised)")
             continue
         if old_sup not in par[sub]:
             if set(new) <= set(par[sub]):
@@ -183,6 +196,23 @@ def main():
             child, parent = extra[0], extra[2]
             par[child] = sorted(set(par.get(child, [])) | {parent})
             log.append(f"applied  {child} ⊑ {parent}")
+
+    # A sibling's name a rewrite brought into a pack is written there as a
+    # stub, as the build writes every borrowed name (UPPER.md §8.1).
+    for pack, (order, par) in graphs.items():
+        if pack == "core":
+            continue
+        used = set()
+        for ps in par.values():
+            for x in ps:
+                if x.startswith(tuple(k + "(" for k in PINNABLE)):
+                    continue                          # a family pin, not a name
+                used |= {x[x.index("(") + 1:-1]} if "(" in x else {x}
+        for name in sorted(used - set(par) - core_names - {"*"}):
+            if any(name in g[1] for k, g in graphs.items() if k != pack):
+                par[name] = ["*"]
+                order.append(name)
+                log.append(f"applied  {pack} borrows {name}")
 
     core = graphs["core"][1]
     for name, family, drop, *note in table(CORE_HEADS):
