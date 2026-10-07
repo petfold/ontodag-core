@@ -1,6 +1,8 @@
 # Roles audit of core and the domain packs
 
 Draft analysis, 2026-10-07, for ROLES.md §9 step 7; nothing here is applied.
+Decisions taken the same day are in the section "Decisions" at the end, and
+the edge-by-edge rewrites in `align/roles-rewrites.tsv`.
 
 The question, from ontodag's contract 0.2: which shipped edges are not
 inclusion? Under 0.2 every name is a class of items and `x ⊑ y` says every
@@ -371,3 +373,31 @@ conversation between two persons"), the same trap as the pairs;
    shipped); and a reading of HEAD's 949 new edges beyond the same
    automatic checks, which found one weak case, HEAD's `blade ⊑ tool`
    ("the flat part of a tool or weapon").
+
+## Decisions (2026-10-07, Peter)
+
+1. **Option B for parts of systems.** Components go under `in(...)`
+   (a node, a mempool, a beacon chain, a block, a chunk, a postage
+   batch). Mechanisms, rules, measures and features go under `about(...)`
+   (gas, account abstraction, MEV, the halving, staking, hash rate,
+   difficulty, the block reward). Peter's caveat: the line will not
+   always be easy, so the hard cases are marked `borderline` in the TSV
+   rather than decided.
+2. **A generic part names the kind of whole.** Under the one meaning,
+   `in(X)` is "things in some X", so `mempool ⊑ in(bitcoin-network)`
+   would say every mempool is in the Bitcoin network. Generic parts
+   therefore go under `in(blockchain)`, `in(atmosphere)`,
+   `in(automated-market-maker)`; only a part specific to one system names
+   it (`beacon-chain ⊑ in(ethereum)`, `earth-sphere ⊑ in(planet-earth)`).
+3. **`bitcoin` is the coin, `bitcoin-network` the system**, matching
+   `ether` and `ethereum`. `bitcoin-network ⊑ bitcoin` becomes
+   `bitcoin-network ⊑ blockchain`, as `ethereum` is filed. The
+   distinction is made by words, not case: names are case-sensitive
+   (`Bitcoin` and `bitcoin` would be two nodes), but every shipped name
+   is lowercase, and a case-only distinction would also collide on
+   case-insensitive filesystems through ontodag-fs.
+
+Waiting for Peter: whether a coin is `in` its network (`bitcoin ⊑
+in(bitcoin-network)`, `ether ⊑ in(ethereum)`), and the four borderline
+rows (`payment-channel`, `incoterms`, `world-wide-web`, `floodhead`).
+
