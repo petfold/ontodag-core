@@ -2,14 +2,15 @@
 # B: components go under in(...), mechanisms, rules, measures and features under about(...).
 # A generic part names the KIND of whole (in(X) reads "in some X"); only a part specific to one system names that system.
 # bitcoin is the coin (like ether); bitcoin-network is the system (like ethereum).
-# action: rewrite = drop the old edge, add the new parents; keep = no change; borderline = waiting for Peter.
+# action: rewrite = drop the old edge, add the new parents; keep = no change. The four borderline rows were decided by Peter the same day.
+# A coin is not in its network: bitcoin and bitcoin-network, ether and ethereum, stay related by name only.
 pack	sub	old_sup	action	new_parents	relation
 economics	beacon-chain	ethereum	rewrite	in(ethereum) blockchain	in
 economics	bitcoin-network	bitcoin	rewrite	blockchain	kind
 economics	mempool	bitcoin	rewrite	in(blockchain) collection	in
 economics	full-node	bitcoin-network	rewrite	in(blockchain) peer-node	in
 economics	light-client	bitcoin-network	rewrite	in(blockchain) peer-node	in
-economics	payment-channel	lightning-network	borderline	smart-contract (in(payment-channel-network)?)	in?
+economics	payment-channel	lightning-network	rewrite	smart-contract (a channel need not form a network)	kind
 economics	payment-channel-network	lightning-network	rewrite	layer-2; and lightning-network ⊑ payment-channel-network	kind
 economics	chunk-storage	swarm-storage	rewrite	in(swarm-storage) content-addressable-storage	in
 economics	postage-batch	swarm-storage	rewrite	in(swarm-storage) prepayment	in
@@ -26,7 +27,7 @@ economics	hash-rate	cryptocurrency-mining	rewrite	about(cryptocurrency-mining) q
 economics	mining-difficulty	cryptocurrency-mining	rewrite	about(cryptocurrency-mining) quantity	about
 economics	difficulty-adjustment	cryptocurrency-mining	rewrite	about(cryptocurrency-mining) rule	about
 economics	block-reward	cryptocurrency-mining	rewrite	about(cryptocurrency-mining) payment-amount	about
-economics	incoterms	sales-contract	borderline	contract-condition (in(sales-contract)?)	in?
+economics	incoterms	sales-contract	rewrite	contract-condition (terms go into contracts; no Incoterm is in a particular one)	kind
 economics	cross-chain	blockchain	rewrite	(drop the name: an adjective with nothing below it)	kind
 economics	reorder-point	inventory-management	rewrite	about(inventory-management) quantity	about
 economics	layer-2	blockchain	rewrite	communications-protocol	kind
@@ -38,7 +39,7 @@ geography	air-mass	atmosphere	rewrite	in(atmosphere) atmospheric-state	in
 geography	geographic-line	geographic-point	rewrite	place	kind
 geography	humus	soil	rewrite	in(soil) material	in
 geography	differential-gps	global-positioning-system	rewrite	gnss-augmentation	kind
-geography	floodhead	flash-flood	borderline	in(flash-flood) natural-event? (a part of an event)	in?
+geography	floodhead	flash-flood	rewrite	in(flash-flood) natural-event (in covers parts of events too)	in
 geography	rapids	stream	keep	stream	kind
 geography	rapids	waterway	keep	waterway	kind
 core	egg-white	egg	rewrite	in(egg) food	in
@@ -47,5 +48,5 @@ core	thigh	limb	rewrite	in(limb) body-part	in
 core	roadway	street	rewrite	in(street) road	in
 core	leaf-blade	leaf	rewrite	in(leaf) plant-part	in
 computing	satellite-internet	internet	rewrite	wireless-communication	kind
-computing	world-wide-web	internet	borderline	computer-network (in(internet)? a system running over it, not a component)	in?
+computing	world-wide-web	internet	rewrite	computer-network (runs over the Internet via HTTP: neither in nor about; no information-system name exists yet, the closer kind)	kind
 mathematics	secp256k1	elliptic-curve-cryptography	rewrite	concept (no elliptic-curve name exists)	kind

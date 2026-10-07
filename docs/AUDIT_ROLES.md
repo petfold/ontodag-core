@@ -397,7 +397,13 @@ conversation between two persons"), the same trap as the pairs;
    is lowercase, and a case-only distinction would also collide on
    case-insensitive filesystems through ontodag-fs.
 
-Waiting for Peter: whether a coin is `in` its network (`bitcoin ⊑
-in(bitcoin-network)`, `ether ⊑ in(ethereum)`), and the four borderline
-rows (`payment-channel`, `incoterms`, `world-wide-web`, `floodhead`).
+4. **The borderline cases**, decided the same day on Claude's leanings:
+   a coin is not `in` its network (they stay related by name only);
+   `payment-channel ⊑ smart-contract` and `incoterms ⊑
+   contract-condition` (kind only, since neither is always inside one
+   particular whole); `world-wide-web` drops `⊑ internet` and keeps `⊑
+   computer-network` (it runs over the Internet through HTTP, which is
+   neither `in` nor `about`; an `information-system` kind would fit it
+   better and doesn't exist yet); `floodhead ⊑ in(flash-flood)` (`in`
+   covers the parts of events too).
 
