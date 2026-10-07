@@ -414,4 +414,5 @@ conversation between two persons"), the same trap as the pairs;
    `civilisation`, and the advanced-state sense leaves; `floor` is a level
    of a building, taking over `storey`, while the walking surface becomes
    `floor-surface`. `story` stays a tale. The optional variants are taken
-   (`analog`, the four `-disk`, `scripted-dialogue`).
+   (`analog` and the four `-disk`); `dialogue` is dropped rather than
+   renamed, since `dialog` covers it.
