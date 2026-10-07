@@ -24,7 +24,8 @@ roots = sorted(n for n, p in par.items() if not p)
 src = target.read_text()
 head = src[: src.index("CORE = (")]
 head = re.sub(r"commit [0-9a-f]{7,}\)", f"commit {commit})", head)
-head = re.sub(r"\*\*Ten branches\*\*: .*", "**Ten branches**: " + ", ".join(f"`{r}`" for r in roots) + ".", head)
+count = ["zero","one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve","thirteen","fourteen"][len(roots)].capitalize() if len(roots) < 15 else str(len(roots))
+head = re.sub(r"\*\*\w+ branches\*\*: .*", f"**{count} branches**: " + ", ".join(f"`{r}`" for r in roots) + ".", head)
 body = "CORE = (\n" + "".join(f"    ({n!r}, {par[n]!r}),\n" for n in sorted(par)) + ")\n"
 target.write_text(head + body)
 print(len(par), "entries;", len(roots), "roots:", " ".join(roots))
