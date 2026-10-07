@@ -35,3 +35,6 @@ python3 tools/consensus.py      # build/core.od + evidence + review queue
 python3 tools/align.py
 python3 tools/views.py
 python3 tools/consensus.py
+# --- decisions made after consensus (ontodag ROLES.md §9 step 7): renames,
+# role rewrites, core's unit heads and family pins; idempotent ---------------
+python3 tools/step7.py

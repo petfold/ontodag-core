@@ -16,7 +16,7 @@ africa continent
 afro-eurasia landmass
 afterglow natural-event
 aftershock tremor
-air-mass atmosphere atmospheric-state
+air-mass atmospheric-state 'in(atmosphere)'
 air-pocket natural-event
 aircraft '*'
 airstream wind
@@ -64,7 +64,7 @@ atmosphere '*'
 atmospheric-circulation natural-event
 atmospheric-electricity natural-event
 atmospheric-halo natural-event
-atmospheric-layer earth-atmosphere
+atmospheric-layer 'in(atmosphere)' layer
 atmospheric-science earth-science
 atmospheric-state weather
 atoll coral-reef island
@@ -238,7 +238,7 @@ dew condensation
 dew-point quantity temperature
 diapir geological-formation
 dictionary '*'
-differential-gps global-positioning-system gnss-augmentation
+differential-gps gnss-augmentation
 digital-elevation-model model
 direct-tide high-tide
 direction '*'
@@ -248,12 +248,12 @@ ditch waterway
 divergent-boundary plate-boundary
 document '*'
 doldrums wind
-downdraft draught
+downdraft air-current
 downhill declivity
 downland highland
 downpour rain
 drainage-basin geographical-area
-draught '*'
+air-current '*'
 drizzle precipitation rain
 drought condition
 dry-season season
@@ -272,7 +272,7 @@ earth-outer-core layer
 earth-radius quantity
 earth-rotation natural-event
 earth-science '*'
-earth-sphere earth-structure layer
+earth-sphere 'in(planet-earth)' layer
 earth-structure structure
 earthquake '*'
 east-by-north compass-point spatial-direction
@@ -331,7 +331,7 @@ flash-flood flood
 flatland plain
 flood '*'
 flood-tide tide
-floodhead flash-flood
+floodhead 'in(flash-flood)' natural-event
 floodplain plain
 flowage body-of-water
 fluid '*'
@@ -374,7 +374,7 @@ geographic-coordinate-system coordinate-system
 geographic-data information
 geographic-data-format file-format information
 geographic-information-system software
-geographic-line geographic-point
+geographic-line place
 geographic-point place
 geographic-pole '*'
 geographical-area region
@@ -484,7 +484,7 @@ hot-spring body-of-water natural-spring
 hot-weather weather
 hour-circle place
 humidity quantity
-humus soil
+humus 'in(soil)' material
 hurricane cyclonic-storm tropical-cyclone
 hydrography geography oceanography
 hydrology geophysics
@@ -568,7 +568,7 @@ leap-year year
 ledge natural-ridge
 leeward-tide tide
 levanter east-wind
-levelling surveying
+leveling surveying
 lidar instrument remote-sensing
 light-air breeze
 light-breeze breeze
@@ -640,7 +640,7 @@ mistral north-wind
 model '*'
 moderate-breeze breeze
 moderate-gale gale
-mohorovicic-discontinuity earth-structure
+mohorovicic-discontinuity 'in(planet-earth)' place
 mollweide-projection equal-area-projection
 moment-magnitude-scale measure scale
 monocline geological-formation
@@ -1067,7 +1067,7 @@ underlying-stratum layer
 undertide event
 undertow ocean-current undertide
 unix-time time-standard
-updraft draught
+updraft air-current
 upheaval event
 uphill ascent
 upwelling ocean-current

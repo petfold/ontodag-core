@@ -33,18 +33,18 @@ attractor concept
 attribute '*'
 autumnal-equinoctial-point equinoctial-point
 b-meson meson
-barycenter centre
+barycenter center-point
 baryon fermion hadron
 bohr-theory scientific-theory
 bose-einstein-statistics physical-law
 boson particle
 bottom-quark quark
-capacitance electrical-phenomenon linear-dimension
+capacitance electrical-phenomenon 'linear-dimension(capacitance)'
 celestial-body '*'
 celestial-culmination place
 celestial-limb place
-center-of-buoyancy centre
-centre '*'
+center-of-buoyancy center-point
+center-point '*'
 change '*'
 chaotic-system dynamical-system
 charge-recombination event
@@ -86,7 +86,7 @@ fermi-dirac-statistics physical-law
 fermion particle
 field-of-study '*'
 field-theory theory
-flux-density linear-dimension magnitude
+flux-density 'linear-dimension(flux-density)' magnitude
 free-electron electron elementary-particle
 friction physical-phenomenon
 fundamental-interaction physical-phenomenon
@@ -106,10 +106,10 @@ hour-angle angle
 hydrodynamics physics
 hydrogen-ion proton
 hyperon baryon
-illuminance linear-dimension luminosity
+illuminance 'linear-dimension(illuminance)' luminosity
 illumination-phase appearance
 increase '*'
-inductance electrical-phenomenon linear-dimension
+inductance electrical-phenomenon 'linear-dimension(inductance)'
 inertia physical-phenomenon
 inertial-mass attribute physical-mass
 inferior-conjunction astronomical-conjunction
@@ -129,11 +129,11 @@ lepton elementary-particle fermion
 libration orbital-variation
 linear-dimension '*'
 luminosity '*'
-luminous-flux linear-dimension
-luminous-intensity linear-dimension
+luminous-flux 'linear-dimension(luminous-flux)'
+luminous-intensity 'linear-dimension(luminous-intensity)'
 magnetic-dip angle
 magnetic-dipole-moment physical-phenomenon
-magnetic-flux linear-dimension
+magnetic-flux 'linear-dimension(magnetic-flux)'
 magnetic-reluctance electrical-phenomenon
 magnetism attractive-force
 magnitude '*'
@@ -201,7 +201,7 @@ quantum-mechanics physics
 quantum-theory scientific-theory
 quark elementary-particle
 radiation-absorption process
-radioactivity linear-dimension
+radioactivity 'linear-dimension(radioactivity)'
 ratio '*'
 reactor-containment artifact
 red-shift physical-phenomenon
@@ -246,7 +246,7 @@ velocity relation
 vernal-equinoctial-point equinoctial-point
 viscosity attribute
 visible-light physical-phenomenon
-voltage electrical-phenomenon linear-dimension
+voltage electrical-phenomenon 'linear-dimension(voltage)'
 wave-front surface
 wave-motion event
 wave-node place

@@ -12,7 +12,7 @@
 'warehouseman'"'"'s-lien' lien
 51-percent-attack act
 account '*'
-account-abstraction ethereum
+account-abstraction 'about(ethereum)' concept
 accounting-entry transaction-record
 accounts-payable debt
 accounts-receivable asset
@@ -94,7 +94,7 @@ barriers-to-entry concept
 barter '*'
 barterer trader
 bazaar cut-rate-sale
-beacon-chain ethereum
+beacon-chain blockchain 'in(ethereum)'
 bear-market event state
 bibliopole trader
 bid-ask-spread concept
@@ -106,16 +106,16 @@ bill-of-lading receipt
 binary-option exotic-option
 bitcoin cryptocurrency
 bitcoin-core software
-bitcoin-halving bitcoin
+bitcoin-halving 'about(bitcoin)' event
 bitcoin-improvement-proposal white-paper
-bitcoin-network bitcoin
+bitcoin-network blockchain
 bitcoin-taproot soft-fork
 black-market activity market
 black-scholes-model concept
-block-reward cryptocurrency-mining
+block-reward 'about(cryptocurrency-mining)' payment-amount
 blockchain distributed-ledger hash-chain list
-blockchain-block blockchain
-blockchain-bridge layer-2
+blockchain-block data-block 'in(blockchain)'
+blockchain-bridge decentralized-application
 blockchain-oracle smart-contract
 blue-chip common-stock
 bond security-finance
@@ -190,7 +190,7 @@ charter-contract contract
 chattel-mortgage mortgage
 checking-account deposit-account
 cheesemonger trader
-chunk-storage swarm-storage
+chunk-storage content-addressable-storage 'in(swarm-storage)'
 circularization advertising
 classified-advertising information
 classified-stock common-stock
@@ -284,7 +284,6 @@ credit-side transaction-record
 credit-spread concept
 creditor economic-agent
 crime '*'
-cross-chain blockchain
 cross-docking logistics
 crowdfunding business-model financial-services
 crypto-token cryptocurrency
@@ -345,7 +344,7 @@ depreciation-charge price-charged
 derivative-finance security-finance
 derivatives-market financial-market
 device '*'
-difficulty-adjustment cryptocurrency-mining
+difficulty-adjustment 'about(cryptocurrency-mining)' rule
 digital-signature information
 direct-debit financial-transaction payment
 direct-loan loan
@@ -366,7 +365,7 @@ distribution-cost outgo
 diversification asset-allocation
 divestiture merchandising sale
 dividend '*'
-division-of-labour concept
+division-of-labor concept
 divvy dividend
 dockage fee
 document '*'
@@ -423,7 +422,7 @@ escrow contract
 ether cryptocurrency
 ethereum blockchain
 ethereum-client software
-ethereum-gas ether
+ethereum-gas 'about(ethereum)' quantity
 ethereum-improvement-proposal document
 ethereum-name-service decentralized-application
 ethereum-virtual-machine software
@@ -506,7 +505,7 @@ fringe-benefit payment-amount
 front-running crime
 fruiterer seller
 fulfillment-house business warehouse
-full-node bitcoin-network
+full-node 'in(blockchain)' peer-node
 fund '*'
 fundamental-analysis procedure
 fungibility attribute
@@ -529,7 +528,7 @@ government-bond bond
 government-security legal-document
 grain-merchant merchant
 greengrocer grocer
-grey-market activity market
+gray-market activity market
 grocer shopkeeper
 gross-profit income
 gross-sales income
@@ -546,7 +545,7 @@ hard-fork event
 hard-sell advertising
 hardware-wallet cryptocurrency-wallet
 hash-chain concept
-hash-rate cryptocurrency-mining
+hash-rate 'about(cryptocurrency-mining)' quantity
 hatmaker merchant
 hauling transportation
 hay-bale bale
@@ -574,7 +573,7 @@ importing international-trade
 incentive-option purchase-option
 income '*'
 income-statement financial-statement
-incoterms sales-contract
+incoterms contract-condition
 indent-order document
 indenture contract
 index-fund mutual-fund
@@ -625,7 +624,7 @@ labor-market activity market
 language '*'
 last-mile delivery
 late-fee fee
-layer-2 blockchain
+layer-2 communications-protocol
 lead-time concept
 legal-document '*'
 legal-fee fee
@@ -640,16 +639,16 @@ licensee person
 licensing-agreement contract
 lien security-interest
 life-insurance insurance possession
-light-client bitcoin-network
+light-client 'in(blockchain)' peer-node
 lighterage fee
-lightning-network layer-2
+lightning-network layer-2 payment-channel-network
 limit-order trade-order
 limited-audit audited-account
 limited-review information procedure
 linage-rate charge-rate
 linendraper draper
 liquidity attribute
-liquidity-pool automated-market-maker
+liquidity-pool 'in(automated-market-maker)' pooled-fund
 liquidity-risk financial-risk
 list '*'
 list-price asking-price price
@@ -699,13 +698,13 @@ marriage-contract contract
 mass-production economic-production
 matching-engine software
 matching-market market
-maximal-extractable-value ethereum
+maximal-extractable-value 'about(blockchain)' income
 maximum-drawdown concept
 meatpacking packaging
 mechanism-design concept
 medical-expense expense
 medium-of-exchange concept
-mempool bitcoin
+mempool collection 'in(blockchain)'
 mercer trader
 merchandising commerce
 merchant '*'
@@ -715,7 +714,7 @@ merkle-tree concept
 microfinance financial-services
 micropayment payment
 mileage travel-allowance
-mining-difficulty cryptocurrency-mining
+mining-difficulty 'about(cryptocurrency-mining)' quantity
 mixed-farming farming
 modern-portfolio-theory concept
 momentum-investing investing
@@ -800,8 +799,8 @@ payback-return income
 payment '*'
 payment-amount outgo
 payment-card device payment-system
-payment-channel lightning-network
-payment-channel-network lightning-network
+payment-channel smart-contract
+payment-channel-network layer-2
 payment-processor organization
 payment-rate charge-rate
 payment-system concept
@@ -842,7 +841,7 @@ pork-butcher butcher
 porterage price-charged
 possession '*'
 post-obit-bond bond
-postage-batch swarm-storage
+postage-batch 'in(swarm-storage)' prepayment
 postage-charge price-charged
 postage-stamp artifact
 postal-delivery delivery
@@ -930,7 +929,7 @@ remuneration payment
 rent '*'
 rental-income income
 renting contract
-reorder-point inventory-management
+reorder-point 'about(inventory-management)' quantity
 reparation-payment compensation
 repayment payment-amount
 repeat-order document
@@ -1047,7 +1046,7 @@ spot-market commodity-exchange financial-market
 spot-price purchase-price
 stablecoin cryptocurrency
 stakeholder economic-agent
-staking proof-of-stake
+staking 'about(proof-of-stake)' activity
 stamp-dealer trader
 startup-company business company
 state '*'
@@ -1118,7 +1117,7 @@ time-and-a-half pay-rate
 time-deposit-account savings-account
 time-loan loan
 time-value-of-money concept
-timestamp-server bitcoin
+timestamp-server computer-system
 tobacconist shopkeeper
 token-airdrop payment
 token-money money
@@ -1182,7 +1181,7 @@ usdc stablecoin
 usury interest interest-rate
 utility-bond municipal-bond
 utility-token crypto-token
-validator staking
+validator peer-node
 valuation price
 valuation-reserve reserve-account
 value-at-risk concept
