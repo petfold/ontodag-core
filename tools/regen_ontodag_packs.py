@@ -22,18 +22,30 @@ PACKS = sys.argv[3:] or ["physics", "mathematics", "chemistry", "biology", "medi
 sys.path.insert(0, str(ontodag / "src"))
 from ontodag.core_ontology import CORE            # noqa: E402
 from ontodag.prelude import DECLARATIONS          # noqa: E402
+from ontodag.packs import pack_entries            # noqa: E402
 
 core_names = {n for n, _ in CORE} | {n for n, _ in DECLARATIONS}
 (ontodag / "src/ontodag/domain").mkdir(exist_ok=True)
 
 
+PRELUDE = {n: set(p) for n, p in pack_entries("prelude")}
+
+
 def read_od(path):
+    """A pack's own lines: the .od is written canonical, so it also holds the
+    relation terms' nodes and the prelude's declarations, which are not the
+    pack's claims."""
     par = {}
     for l in open(path):
         if l.startswith("#") or not l.strip():
             continue
         f = shlex.split(l)
-        par[f[0]] = tuple(sorted(x for x in f[1:] if x != "*"))
+        if "(" in f[0]:
+            continue
+        parents = [x for x in f[1:] if x != "*" and x not in PRELUDE.get(f[0], ())]
+        if f[0] in PRELUDE and not parents:
+            continue
+        par[f[0]] = tuple(sorted(parents))
     return par
 
 

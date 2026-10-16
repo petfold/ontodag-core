@@ -1,17 +1,34 @@
 # ontodag store v1
+#:canonical 6.0 80f1adeb2caf2565ad7099f3fb9b2ab2268bcea80a86b79b69b6c34c8bda4e79
 5g technical-standard
 7z archive-file-format
 a-star-search graph-algorithm
 ability '*'
+about enclosing-dimension
+'about(access-control)' about
+'about(chip)' about
+'about(computer)' about
+'about(encryption)' about
+'about(information)' about
+'about(map)' about
+'about(mathematical-graph)' about
+'about(metadata)' about
+'about(place)' about
+'about(software)' about
+'about(telecommunication)' about
 abstract-data-type data-type
 abstract-syntax-tree tree-data-structure
 access-control computer-security
 access-control-list list
+#:meta access-time '{"gloss": "(computer science) the interval between the time data is requested by the system and the time the data is provided by the drive", "wn30": "15171857-n"}'
 access-time latency
+#:meta accumulator-register '{"gloss": "(computer science) a register that has a built-in adder that adds an input number to the contents of the register", "wn30": "02673078-n"}'
 accumulator-register processor-register
 acid-transaction-properties property
+#:meta acoustic-storage '{"gloss": "a storage device consisting of acoustic delay lines", "wn30": "02676805-n"}'
 acoustic-storage device
 act '*'
+#:meta active-application '{"gloss": "an application that is currently running and in the foreground", "wn30": "06570520-n"}'
 active-application application
 activity '*'
 activitypub communications-protocol
@@ -19,26 +36,38 @@ actor-model model-of-computation
 ada-language programming-language
 adjacency-list graph-data-structure
 adjacency-matrix graph-data-structure matrix
+#:meta administrative-data-processing '{"gloss": "data processing in accounting or business management", "wn30": "13427633-n"}'
 administrative-data-processing data-processing
 advanced-audio-coding audio-coding-format audio-file-format
 advanced-video-coding video-coding-format
 agile-software-development computer-programming software-development-methodology
 algebraic-data-type data-type
+#:meta algebraic-language '{"gloss": "an algorithmic language having statements that resemble algebraic expressions", "wn30": "06898794-n"}'
 algebraic-language algorithmic-language
+#:meta algol '{"gloss": "(from a combination of ALGOrithmic and Language); a programming language used to express computer programs as algorithms", "wn30": "06901764-n"}'
 algol algebraic-language
 algorithm '*'
+#:meta algorithm-error '{"gloss": "error resulting from the choice of the wrong algorithm or method for achieving the intended result", "wn30": "07300781-n"}'
 algorithm-error computer-error
+#:meta algorithmic-language '{"gloss": "an artificial language designed to express algorithms", "wn30": "06898972-n"}'
 algorithmic-language programming-language
+#:meta alpha-software '{"gloss": "a first release of a software product that is usually tested only by the developers", "wn30": "06566805-n"}'
 alpha-software software
+#:meta alphabet '{"gloss": "a character set that includes letters and is used to write a language", "wn30": "06497459-n"}'
 alphabet character-set script
+#:meta alphanumerics '{"gloss": "a character set that includes letters and digits and punctuation", "wn30": "06500262-n"}'
 alphanumerics character-set
+amount '*'
 amqp messaging-protocol
+#:meta analog-computer '{"gloss": "a computer that represents information by variable quantities (e.g., positions or voltages)", "wn30": "02708224-n"}'
 analog-computer computer
 analog-signal signal
 analog-to-digital-converter electronic-circuit
 android linux
+#:meta anonymous-ftp '{"gloss": "a common way to make software available; users are allowed to log in as `guest'"'"' without a password and copy whatever has been made available", "wn30": "06665612-n"}'
 anonymous-ftp practice
 anonymous-function subroutine
+#:meta anti-virus-program '{"gloss": "a computer program that checks a computer for viruses and prevents their spread", "wn30": "06569966-n"}'
 anti-virus-program computer-program
 antivirus-software utility-program
 apache-avro data-serialization-format
@@ -51,6 +80,7 @@ apache-spark software-framework
 apache-subversion version-control-software
 apl programming-language
 append-only-log data-structure
+#:meta applet '{"gloss": "a Java application; an application program that uses the client'"'"'s web browser to provide a user interface", "wn30": "06570647-n"}'
 applet application
 application '*'
 application-layer information
@@ -61,18 +91,25 @@ approximation-algorithm algorithm
 arch-linux linux-distribution
 archive-file computer-file
 archive-file-format file-format
+area 'linear-dimension(area)'
 arithmetic-coding entropy-encoding
 arm-architecture instruction-set-architecture
 array-data-structure data-structure
 artifact '*'
+#:meta ascii '{"gloss": "(computer science) a code for information exchange between computers made by different companies; a string of 7 binary digits represents each character; used in most microcomputers", "wn30": "06356755-n"}'
 ascii code
+#:meta ascii-character-set '{"gloss": "(computer science) 128 characters that make up the ASCII coding scheme", "wn30": "06357078-n"}'
 ascii-character-set character-set
+#:meta ascii-text-file '{"gloss": "a text file that contains only ASCII characters without special formatting", "wn30": "06511242-n"}'
 ascii-text-file text-file
 aspect-oriented-programming computer-programming programming-paradigm
+#:meta assembler '{"gloss": "a program to convert assembly language into machine language", "wn30": "06573337-n"}'
 assembler computer-program
+#:meta assembly-language '{"gloss": "a low-level programing language; close approximation to machine language", "wn30": "06899310-n"}'
 assembly-language programming-language
 associative-array abstract-data-type data-structure
 asynchronous-io data-processing
+#:meta asynchronous-operation '{"gloss": "operations that occur without a regular or predictable time relation to other events", "wn30": "13435377-n"}'
 asynchronous-operation computer-operation
 atomic-operation computer-operation
 attribute '*'
@@ -83,33 +120,45 @@ audio-file-format file-format
 authenticated-data-structure data-structure
 authentication data-processing
 authentication-protocol communications-protocol
+#:meta authoring-language '{"gloss": "software that can be used to develop interactive computer programs without the technically demanding task of computer programming", "wn30": "06566949-n"}'
 authoring-language programming-language software
 authorization data-processing
+#:meta automatic-data-processing '{"gloss": "data processing by a computer", "wn30": "13436063-n"}'
 automatic-data-processing data-processing
 autonomous-system computer-network
+#:meta auxiliary-operation '{"gloss": "a operation performed by off-line equipment not under the control of the central processing unit", "wn30": "13436809-n"}'
 auxiliary-operation computer-operation
+#:meta auxiliary-storage '{"gloss": "a data storage device that is not the main memory of a computer", "wn30": "02763306-n"}'
 auxiliary-storage device
 av1 video-coding-format
 avi multimedia-container-format
 avif image-file-format
 avl-tree self-balancing-binary-search-tree
 b-tree tree-data-structure
+#:meta background-processing '{"gloss": "the execution of low priority programs while higher priority programs are not using the processing system", "wn30": "13436992-n"}'
 background-processing priority-processing
 backtracking-search search-algorithm
+#:meta backup-file '{"gloss": "(computer science) a computer file dedicated to storing and updating computer backups", "wn30": "06509513-n"}'
 backup-file computer-file
 backup-software utility-program
+#:meta bad-block '{"gloss": "(computer science) a block (usually one sector) that cannot reliably hold data", "wn30": "13626789-n"}'
 bad-block disk-block
 base64 binary-to-text-encoding
 bash-shell unix-shell
+#:meta basic-language '{"gloss": "a popular programming language that is relatively easy to learn; an acronym for beginner'"'"'s all-purpose symbolic instruction code; no longer in general use", "wn30": "06902909-n"}'
 basic-language programming-language
+#:meta batch-job '{"gloss": "(computer science) a program application that may consist of several steps but is a single logical unit", "wn30": "06572482-n"}'
 batch-job application
 batch-processing data-processing
 behavior-driven-development agile-software-development
 berkeley-software-distribution unix
+#:meta beta-software '{"gloss": "software that has not yet been released but has received an alpha test and still has more bugs than a regular release", "wn30": "06567143-n"}'
 beta-software software
 big-data information
 big-o-notation '*'
+#:meta binary-code '{"gloss": "code using a string of 8 binary digits to represent characters", "wn30": "06357304-n"}'
 binary-code code
+#:meta binary-file '{"gloss": "(computer science) a computer file containing machine-readable information that must be read by an application; characters use all 8 bits of each byte", "wn30": "06509675-n"}'
 binary-file computer-file
 binary-heap tree-data-structure
 binary-numeral-system code
@@ -117,61 +166,81 @@ binary-search search-algorithm
 binary-search-tree binary-tree
 binary-to-text-encoding code
 binary-tree directed-acyclic-graph tree-data-structure
+#:meta biochip '{"gloss": "a microchip that uses tiny strands of DNA to latch onto and quickly recognize thousands of genes at a time; intended for use in a biological environment", "wn30": "02841641-n"}'
 biochip chip
 bios firmware
+#:meta bit-field '{"gloss": "a field containing only binary characters", "wn30": "08005761-n"}'
 bit-field data-field
 bitemporal-modeling data-model
+#:meta bits-per-inch '{"gloss": "a measure of how densely information is packed on a storage medium", "wn30": "05089048-n"}'
 bits-per-inch density
 bittorrent communications-protocol peer-to-peer
 bloom-filter data-structure
 bluetooth communications-protocol
 bmp-file-format image-file-format
 boolean-data-type primitive-data-type
+#:meta boolean-operation '{"gloss": "an operation that follows the rules of Boolean algebra; each operand and the result take one of two values", "wn30": "13440935-n"}'
 boolean-operation logical-operation
 bootloader system-software
 border-gateway-protocol routing-protocol
 botnet computer-network
 branch-and-bound algorithm
 breadth-first-search graph-algorithm
+#:meta briefcase-computer '{"gloss": "a portable computer housed in a box that resembles a briefcase", "wn30": "02900987-n"}'
 briefcase-computer portable-computer
 bsd-license software-license
 btrfs file-system
+#:meta bubble-jet-printer '{"gloss": "a kind of ink-jet printer", "wn30": "02909285-n"}'
 bubble-jet-printer ink-jet-printer
 bubble-sort sorting-algorithm
 buffer-overflow software-bug
 build-automation data-processing
 build-system programming-tool
+#:meta bulletin-board-system '{"gloss": "a computer that is running software that allows users to leave messages and access information of general interest", "wn30": "02916684-n"}'
 bulletin-board-system computer-server digital-computer
 bytecode machine-code
 byzantine-fault fault
 byzantine-fault-tolerance fault-tolerance
 bzip2 compression-algorithm software
+#:meta c-compiler '{"gloss": "a compiler for programs written in C", "wn30": "06573934-n"}'
 c-compiler compiler
+#:meta c-language '{"gloss": "a general-purpose programing language closely associated with the UNIX operating system", "wn30": "06902696-n"}'
 c-language programming-language
 c-plus-plus programming-language
+#:meta c-program '{"gloss": "a program written in C", "wn30": "06902831-n"}'
 c-program computer-program
 c-sharp programming-language
+calendar-dimension dimension
 call-stack stack-data-structure
 callback-function subroutine
 cap-theorem theorem
 capability-based-security access-control
+#:meta carriage-return '{"gloss": "the operation that prepares for the next character to be printed or displayed as the first character on a line", "wn30": "13443537-n"}'
 carriage-return control-operation printing-operation
 cascading-style-sheets computer-language
+#:meta cataloged-procedure '{"gloss": "a set of control statements that have been placed in a library and can be retrieved by name", "wn30": "06583178-n"}'
 cataloged-procedure subroutine
 cbor data-serialization-format
 cd '*'
+#:meta cd-r '{"gloss": "a compact disc on which you can write only once and thereafter is read-only memory", "wn30": "02988486-n"}'
 cd-r cd optical-disk
+#:meta cd-rom '{"gloss": "a compact disk that is used with a computer (rather than with an audio system); a large amount of digital information can be stored and accessed but it cannot be altered by the user", "wn30": "02988679-n"}'
 cd-rom cd rom
 cellular-network computer-network
+cellular-telephone '*'
+#:meta central-processing-unit '{"gloss": "(computer science) the part of a computer (a microprocessor chip) that does most of the data processing", "wn30": "02995345-n"}'
 central-processing-unit chip equipment hardware
 certificate-authority organization
 channel-capacity amount
 character '*'
 character-data-type primitive-data-type
 character-encoding code
+#:meta character-set '{"gloss": "an ordered list of characters that are used together in writing or printing", "wn30": "06488880-n"}'
 character-set list
 character-string data-type
+#:meta chat-room '{"gloss": "a site on the internet where a number of users can communicate in real time (typically one dedicated to a particular topic)", "wn30": "06359467-n"}'
 chat-room web-site
+#:meta checking-program '{"gloss": "a program that examines other computer programs for syntax errors", "wn30": "06573472-n"}'
 checking-program computer-program
 checksum code
 chip '*'
@@ -182,6 +251,7 @@ client-server-model software-architecture
 clock-rate amount
 clojure lisp
 cloud-computing distributed-computing
+#:meta cobol '{"gloss": "common business-oriented language", "wn30": "06902611-n"}'
 cobol programming-language
 code '*'
 code-coverage amount
@@ -191,47 +261,68 @@ code-smell defect
 codec software
 collection '*'
 column-oriented-dbms database-management-system
+#:meta command-line '{"gloss": "commands that a user types in order to run an application", "wn30": "06586355-n"}'
 command-line computer-instruction
+#:meta command-line-interface '{"gloss": "a user interface in which you type commands instead of choosing them from a menu or selecting an icon", "wn30": "06575505-n"}'
 command-line-interface text-based-user-interface
+#:meta command-processing-overhead-time '{"gloss": "(computer science) the processing time required by a device prior to the execution of a command", "wn30": "15298011-n"}'
 command-processing-overhead-time latency
+#:meta command-prompt '{"gloss": "(computer science) a symbol that appears on the computer screen to indicate that the computer is ready to receive a command", "wn30": "06280604-n"}'
 command-prompt symbol
 command-query-responsibility-segregation software-design-pattern
 commercial-enterprise '*'
 communication '*'
 communications-protocol '*'
+#:meta compatible-software '{"gloss": "software that can run on different computers without modification", "wn30": "06567400-n"}'
 compatible-software software
 compiled-language programming-language
 compiler '*'
 complex-instruction-set-computer computer-architecture
+#:meta complex-instruction-set-computing '{"gloss": "(computer science) a kind of computer architecture that has a large number of instructions hard coded into the CPU chip", "wn30": "04932561-n"}'
 complex-instruction-set-computing computer-architecture
 component '*'
 compression-algorithm algorithm data-compression
 compression-format file-format
 computability property
+#:meta computation '{"gloss": "the procedure of calculating; determining something by mathematical or logical methods", "wn30": "00868910-n"}'
 computation procedure
 computational-complexity-theory computer-science
+#:meta computational-ontology '{"gloss": "(computer science) a rigorous and exhaustive organization of some knowledge domain that is usually hierarchical and contains all the relevant entities and their relations", "wn30": "06162979-n"}'
 computational-ontology knowledge-base knowledge-organization-system
 computational-problem problem
 computational-side-effect event
 computer '*'
+#:meta computer-address '{"gloss": "(computer science) the code that identifies where a piece of information is stored", "wn30": "06356515-n"}'
 computer-address code
+#:meta computer-aided-design '{"gloss": "software used in art and architecture and engineering and manufacturing to assist in precision drawing", "wn30": "06567689-n"}'
 computer-aided-design software
+#:meta computer-architecture '{"gloss": "(computer science) the structure and organization of a computer'"'"'s hardware or system software", "wn30": "04932278-n"}'
 computer-architecture constitution
 computer-bus hardware
+#:meta computer-cache '{"gloss": "(computer science) RAM memory that is set aside as a specialized buffer storage that is continually updated; used to optimize data transfers between system elements with different characteristics", "wn30": "02935017-n"}'
 computer-cache computer-memory data-buffer
+#:meta computer-circuit '{"gloss": "a circuit that is part of a computer", "wn30": "03084420-n"}'
 computer-circuit device
 computer-cluster computer-system group
+#:meta computer-error '{"gloss": "(computer science) the occurrence of an incorrect result produced by a computer", "wn30": "07299569-n"}'
 computer-error event
+#:meta computer-file '{"gloss": "(computer science) a file maintained in computer-readable form", "wn30": "06509210-n"}'
 computer-file file
 computer-font file
 computer-hardware hardware
+#:meta computer-icon '{"gloss": "(computer science) a graphic symbol (usually a simple picture) that denotes a program or a command or a data file or a concept in a graphical user interface", "wn30": "07269916-n"}'
 computer-icon symbol
+#:meta computer-instruction '{"gloss": "(computer science) a line of code written as part of a computer program", "wn30": "06584891-n"}'
 computer-instruction code
+#:meta computer-keyboard '{"gloss": "a keyboard that is a data input device for computers; arrangement of keys is modelled after the typewriter keyboard", "wn30": "03085013-n"}'
 computer-keyboard device input-device
+#:meta computer-language '{"gloss": "a programming language designed for use on a specific class of computers", "wn30": "06899633-n"}'
 computer-language language
 computer-memory '*'
 computer-menu '*'
+#:meta computer-network '{"gloss": "(computer science) a network of computers", "wn30": "03085333-n"}'
 computer-network artifact
+#:meta computer-operation '{"gloss": "an elementary operation that a computer is designed and built to perform", "wn30": "13450862-n"}'
 computer-operation data-operation
 computer-port hardware hardware-interface
 computer-process process
@@ -239,12 +330,18 @@ computer-program '*'
 computer-programming activity skill
 computer-science '*'
 computer-security information-security
+#:meta computer-security-system '{"gloss": "(computing) a system that enforces boundaries between computer networks", "wn30": "04166111-n"}'
 computer-security-system artifact
+#:meta computer-server '{"gloss": "(computer science) a computer that provides client stations with access to files and printers as shared resources to a computer network", "wn30": "04175147-n"}'
 computer-server computer server-software
+#:meta computer-simulation '{"gloss": "(computer science) the technique of representing the real world by a computer program", "wn30": "05666700-n"}'
 computer-simulation method
 computer-system machine
+computer-virus malware
+computer-worm malware
 concurrency property
 concurrency-control data-processing-technique
+#:meta concurrent-operation '{"gloss": "two or more operations performed at the same time (or within a give interval)", "wn30": "13451204-n"}'
 concurrent-operation computer-operation
 concurrent-programming computer-programming programming-paradigm
 condition '*'
@@ -258,11 +355,13 @@ content-addressable-storage data-storage
 content-delivery-network distributed-system
 content-identifier persistent-identifier
 context-free-grammar formal-grammar
+#:meta contingency-procedure '{"gloss": "an alternative to the normal procedure; triggered if an unusual but anticipated situation arises", "wn30": "06583354-n"}'
 contingency-procedure subroutine
 continuous-delivery devops software-development-practice
 continuous-deployment continuous-delivery
 continuous-integration software-development-practice
 control-flow attribute
+#:meta control-operation '{"gloss": "an operation that controls the recording or processing or transmission of interpretation of data", "wn30": "13452117-n"}'
 control-operation computer-operation
 controlled-thesaurus controlled-vocabulary
 controlled-vocabulary dataset knowledge-organization-system
@@ -270,8 +369,11 @@ conversation '*'
 copy '*'
 copy-on-write data-processing-technique
 copyleft license
+#:meta core-dump '{"gloss": "(computer science) dump of the contents of the chief registers in the CPU; usually used for debugging", "wn30": "06390051-n"}'
 core-dump computer-file memory-dump
 coroutine subroutine
+count count-dimension
+count-dimension dimension
 cpu-cache computer-cache
 creative-commons-license license
 cron system-software
@@ -284,26 +386,34 @@ css computer-language text-file-format
 csv data-serialization-format text-file-format
 cyberattack activity
 cyc knowledge-base
+#:meta cyclic-redundancy-check '{"gloss": "an error correction code that is recorded in each sector of a magnetic disk and used to catch errors in the data", "wn30": "06357632-n"}'
 cyclic-redundancy-check checksum hash-function
 daemon-process computer-process
+#:meta data-backup '{"gloss": "(computer science) a copy of a file or directory on a separate storage device", "wn30": "02771840-n"}'
 data-backup information
 data-block data-structure
+#:meta data-buffer '{"gloss": "(computer science) a part of RAM used for temporary storage of data that is waiting to be sent to a device; used to compensate for differences in the rate of flow of data between components of a computer system", "wn30": "02911485-n"}'
 data-buffer device
 data-center facility
 data-chunk data-block
 data-compression data-processing
 data-curation practice
 data-deduplication data-processing-technique
+#:meta data-descriptor '{"gloss": "a piece of stored information that is used to identify an item in an information storage and retrieval system", "wn30": "05823747-n"}'
 data-descriptor identifier
 data-encoding code
+#:meta data-encryption '{"gloss": "(computer science) the encryption of data for security purposes", "wn30": "00616807-n"}'
 data-encryption activity
+#:meta data-field '{"gloss": "(computer science) a set of one or more adjacent characters comprising a unit of information", "wn30": "08005580-n"}'
 data-field set
 data-integrity property
 data-lake data-warehouse
 data-lineage metadata
 data-link-layer information
+#:meta data-mining '{"gloss": "data processing using sophisticated data search capabilities and statistical algorithms to discover patterns and correlations in large preexisting databases; a way to discover new meaning in data", "wn30": "13455234-n"}'
 data-mining computer-science data-processing
 data-model information
+#:meta data-operation '{"gloss": "(computer science) data processing in which the result is completely specified by a rule (especially the processing that results from a single instruction)", "wn30": "13524925-n"}'
 data-operation data-processing
 data-pipeline data-processing
 data-processing '*'
@@ -312,6 +422,7 @@ data-record data-structure
 data-redundancy property
 data-replication data-processing
 data-retention practice
+#:meta data-retrieval '{"gloss": "(computer science) the operation of accessing information from the computer'"'"'s memory", "wn30": "13550940-n"}'
 data-retrieval computer-operation information-retrieval
 data-serialization-format file-format
 data-storage computer-operation
@@ -323,6 +434,7 @@ database '*'
 database-consistency property
 database-index data-structure
 database-journal append-only-log log-file
+#:meta database-management-system '{"gloss": "a software system that facilitates the creation and maintenance and use of an electronic database", "wn30": "06588785-n"}'
 database-management-system software
 database-normalization data-processing
 database-partition data-structure
@@ -340,14 +452,18 @@ dbpedia knowledge-base
 deadlock state
 debian linux-distribution
 debian-package package-format
+#:meta debugger '{"gloss": "a program that helps in locating and correcting programming errors", "wn30": "06574334-n"}'
 debugger computer-program programming-tool
 debugging activity
 decentralized-storage distributed-storage-system peer-to-peer
+#:meta decision-table '{"gloss": "a table of all contingencies and the actions to be taken for each", "wn30": "06581959-n"}'
 decision-table multidimensional-language
 declarative-programming computer-programming programming-paradigm
+#:meta dedicated-file-server '{"gloss": "(computer science) a file server that can be used only as a file server", "wn30": "03170459-n"}'
 dedicated-file-server file-server
 defect '*'
 deflate compression-algorithm compression-format
+#:meta demodulation '{"gloss": "(electronics) the reception of a signal by extracting it from the carrier wave", "wn30": "06282209-n"}'
 demodulation signal-processing
 denial-of-service-attack cyberattack
 denormalization data-processing
@@ -356,19 +472,26 @@ dependency-hell state
 dependency-injection inversion-of-control
 depth-first-search graph-algorithm
 design-by-contract software-development-methodology
+desktop-computer personal-computer
 desktop-environment system-software
+#:meta desktop-publishing '{"gloss": "(computer science) the use of microcomputers with graphics capacity to produce printed materials", "wn30": "01102256-n"}'
 desktop-publishing commercial-enterprise
 device '*'
+#:meta device-driver '{"gloss": "(computer science) a program that determines how a computer will communicate with a peripheral device", "wn30": "06574473-n"}'
 device-driver utility-program
 device-file computer-file
 devops software-development-methodology
 dhcp application-layer-protocol
+#:meta diagnostic-program '{"gloss": "a program that recognizes and explains faults in the equipment or mistakes in a computer program", "wn30": "06574680-n"}'
 diagnostic-program utility-program
+#:meta dialog-box '{"gloss": "(computer science) a small temporary window in a graphical user interface that appears in order to request information from the user; after the information has been provided the user dismisses the box with `okay'"'"' or `cancel'"'"'", "wn30": "03187268-n"}'
 dialog-box gui-window
 dictionary '*'
+#:meta differential-analyzer '{"gloss": "an analog computer designed to solve differential equations", "wn30": "03194170-n"}'
 differential-analyzer analog-computer
 digital-archive digital-library
 digital-certificate computer-file document
+#:meta digital-computer '{"gloss": "a computer that represents information by numerical (binary) digits", "wn30": "03196324-n"}'
 digital-computer computer
 digital-library electronic-database
 digital-object-identifier persistent-identifier
@@ -376,32 +499,50 @@ digital-preservation practice
 digital-signal signal
 digital-signature information
 dijkstra-algorithm graph-algorithm search-algorithm
+dimension '*'
+#:meta dip-switch '{"gloss": "(computer science) one of a set of small on-off switches mounted in computer hardware; used in place of jumpers to configure the machine for a user", "wn30": "03204558-n"}'
 dip-switch electric-switch
 directed-acyclic-graph '*'
 directed-graph '*'
 directory '*'
+#:meta disambiguator '{"gloss": "(computer science) a natural language processing application that tries to determine the intended meaning of a word or phrase by examining the linguistic context in which it is used", "wn30": "06572204-n"}'
 disambiguator natural-language-processor
 disaster-recovery practice
+#:meta disk-access '{"gloss": "memory access to the computer disk on which information is stored", "wn30": "03208815-n"}'
 disk-access memory-access
+#:meta disk-block '{"gloss": "(computer science) a sector or group of sectors that function as the smallest data unit permitted", "wn30": "13626464-n"}'
 disk-block data-block
+#:meta disk-cache '{"gloss": "a cache that stores copies of frequently used disk sectors in random access memory (RAM) so they can be read without accessing the slower disk", "wn30": "03209141-n"}'
 disk-cache computer-cache
+#:meta disk-controller '{"gloss": "(computer science) a circuit or chip that translates commands into a form that can control a hard disk drive", "wn30": "03209477-n"}'
 disk-controller mechanism
+#:meta disk-error '{"gloss": "error resulting from malfunction of a magnetic disk", "wn30": "07299965-n"}'
 disk-error hardware-error
+#:meta disk-file '{"gloss": "(computer science) a computer file stored on a magnetic disk and identified by a unique label", "wn30": "06510103-n"}'
 disk-file computer-file
 disk-image computer-file
+#:meta disk-operating-system '{"gloss": "an operating system that is on a disk", "wn30": "06568422-n"}'
 disk-operating-system operating-system
+#:meta disk-overhead '{"gloss": "(computer science) the disk space required for information that is not data but is used for location and timing", "wn30": "08556065-n"}'
 disk-overhead storage-capacity
+#:meta disk-pack '{"gloss": "(computer science) a portable pack of magnetic disks used in a disk storage device", "wn30": "07956552-n"}'
 disk-pack collection
+#:meta disk-partition '{"gloss": "(computer science) the part of a hard disk that is dedicated to a particular operating system or application and accessed as a single unit", "wn30": "13627114-n"}'
 disk-partition data-block
 disk-partitioning data-processing
+#:meta disk-seek '{"gloss": "the movement of a read/write head to a specific data track on a disk", "wn30": "07350893-n"}'
 disk-seek event
+#:meta diskette '{"gloss": "a small plastic magnetic disk enclosed in a stiff envelope with a radial slit; used to store data or programs for a microcomputer", "wn30": "03209910-n"}'
 diskette magnetic-disk
+#:meta display-adapter '{"gloss": "(computer science) an electronic device that converts information in memory to video output to a display", "wn30": "03211413-n"}'
 display-adapter device
 display-device output-device
+#:meta display-resolution '{"gloss": "(computer science) the number of pixels per square inch on a computer-generated display; the greater the resolution, the better the picture", "wn30": "11505952-n"}'
 display-resolution property
 distributed-algorithm algorithm
 distributed-computing parallel-computing
 distributed-consensus computational-problem
+#:meta distributed-data-processing '{"gloss": "data processing in which some of the functions are performed in different places and connected by transmission facilities", "wn30": "13468542-n"}'
 distributed-data-processing data-processing
 distributed-file-system file-system
 distributed-hash-table hash-table
@@ -415,27 +556,38 @@ document '*'
 document-file-format file-format
 document-object-model application-programming-interface data-model
 document-oriented-database nosql
+#:meta domain-name '{"gloss": "strings of letters and numbers (separated by periods) that are used to name organizations and computers and addresses on the internet", "wn30": "06845303-n"}'
 domain-name identifier name
 domain-name-system communications-protocol
 domain-ontology computational-ontology
 domain-specific-language computer-language
+dominance-dimension dimension
+#:meta dongle '{"gloss": "(computer science) an electronic device that must be attached to a computer in order for it to use protected software", "wn30": "03221351-n"}'
 dongle peripheral
-dot-matrix-printer peripheral printer
+#:meta dot-matrix-printer '{"gloss": "a printer that represents each character as a pattern of dots from a dot matrix", "wn30": "03225777-n"}'
+dot-matrix-printer printer
 double-ended-queue queue-data-structure
+#:meta drop-down-menu '{"gloss": "a menu of options that appears below the item when the computer user clicks on it", "wn30": "06493579-n"}'
 drop-down-menu computer-menu
 dublin-core metadata-standard
 duck-typing dynamic-typing
+#:meta dump-routine '{"gloss": "a routine that writes from an internal store to some external medium", "wn30": "06583518-n"}'
 dump-routine utility-routine
+duration 'linear-dimension(duration)'
+#:meta dyadic-operation '{"gloss": "an operation on exactly two operands", "wn30": "13470392-n"}'
 dyadic-operation computer-operation
 dynamic-array array-data-structure
 dynamic-link-library shared-library
 dynamic-programming method
 dynamic-typing type-system
 eager-evaluation data-processing-technique
+#:meta editor-program '{"gloss": "(computer science) a program designed to perform such editorial functions as rearrangement or modification or deletion of data", "wn30": "06574841-n"}'
 editor-program application
 electric-switch '*'
 electronic-circuit device
+#:meta electronic-data-processing '{"gloss": "automatic data processing by electronic means without the use of tabulating cards or punched tapes", "wn30": "13472341-n"}'
 electronic-data-processing automatic-data-processing
+#:meta electronic-database '{"gloss": "(computer science) a database that can be accessed by computers", "wn30": "06588511-n"}'
 electronic-database database
 elixir-language programming-language
 elm-language programming-language
@@ -448,9 +600,11 @@ embedded-database database-management-system software-library
 embedded-system computer computer-system
 eml-file-format message-file-format
 emoji symbol
+enclosing-dimension dimension
 encryption data-processing
 end-to-end-encryption encryption
 endianness code
+energy 'linear-dimension(energy)'
 engineer '*'
 engineering '*'
 entropy-encoding compression-algorithm
@@ -458,11 +612,14 @@ enumerated-type data-type
 environment-variable program-variable
 epub document-file-format
 equipment '*'
+#:meta erasable-programmable-read-only-memory '{"gloss": "(computer science) a read-only memory chip that can be erased by ultraviolet light and programmed again with new data", "wn30": "03294604-n"}'
 erasable-programmable-read-only-memory read-only-memory
 erasure-code error-correcting-code
 erlang-language programming-language
+#:meta error-correcting-code '{"gloss": "(telecommunication) a coding system that incorporates extra parity bits in order to detect errors", "wn30": "06357424-n"}'
 error-correcting-code code
 error-detection-and-correction data-processing-technique telecommunication
+#:meta ethernet '{"gloss": "a type of network technology for local area networks; coaxial cable carries radio frequency signals between computers at a rate of 10 megabits per second", "wn30": "03300216-n"}'
 ethernet communications-protocol local-area-network
 ethernet-hub networking-hardware
 event '*'
@@ -472,7 +629,9 @@ event-sourcing software-design-pattern
 eventual-consistency property
 exception-handling control-flow data-processing-technique
 executable-and-linkable-format file-format
+#:meta executable-file '{"gloss": "a pre-compiled, pre-linked program that is ready to run under a given operating system; a binary for one operating system will not run on a different operating system", "wn30": "06570963-n"}'
 executable-file computer-program
+#:meta execution-speed '{"gloss": "(computer science) the speed with which a computational device can execute instructions; measured in MIPS", "wn30": "05061619-n"}'
 execution-speed pace
 execution-thread process
 exif metadata-standard
@@ -484,6 +643,7 @@ faceted-search information-retrieval
 facility '*'
 factory-method-pattern software-design-pattern
 failover data-processing-technique
+#:meta faq '{"gloss": "a list of questions that are frequently asked (about a given topic) along with their answers", "wn30": "06491026-n"}'
 faq list
 fault '*'
 fault-tolerance software-quality-attribute
@@ -498,37 +658,53 @@ file-attribute metadata
 file-format '*'
 file-owner file-attribute
 file-path character-string identifier
+#:meta file-server '{"gloss": "(computer science) a digital computer that provides workstations on a network with controlled access to shared resources", "wn30": "03337494-n"}'
 file-server digital-computer
 file-size file-attribute
 file-synchronization data-synchronization
 file-system data-structure system-software
 file-system-permissions file-attribute
 file-timestamp file-attribute
+#:meta file-transfer-protocol '{"gloss": "protocol that allows users to copy files between their local system and any system they can reach on the network", "wn30": "06665370-n"}'
 file-transfer-protocol application-layer-protocol
+#:meta filename '{"gloss": "(computer science) the name given to a computer file in order to distinguish it from other files; may contain an extension that indicates the type of file", "wn30": "06335532-n"}'
 filename name
 filename-extension identifier
 finite-automaton model-of-computation
+#:meta firmware '{"gloss": "(computer science) coded instructions that are stored permanently in read-only memory", "wn30": "06357814-n"}'
 firmware software
+#:meta fixed-cycle-operation '{"gloss": "an operation that is completed in a specified number of regularly timed execution cycles", "wn30": "13481727-n"}'
 fixed-cycle-operation computer-operation
 flac audio-coding-format audio-file-format
 floating-point-format code primitive-data-type
+#:meta floating-point-operation '{"gloss": "an arithmetic operation performed on floating-point numbers", "wn30": "13481994-n"}'
 floating-point-operation computer-operation
+#:meta flow-chart '{"gloss": "a diagram of the sequence of operations in a computer program or an accounting system", "wn30": "06582085-n"}'
 flow-chart multidimensional-language
 folder '*'
 folksonomy classification-scheme
+#:meta font-cartridge '{"gloss": "any font that is contained in a cartridge that can be plugged into a computer printer", "wn30": "06826407-n"}'
 font-cartridge hardware
 font-file-format file-format
+#:meta foreground-processing '{"gloss": "the execution of a program that preempts the use of the processing system", "wn30": "13483331-n"}'
 foreground-processing priority-processing
+#:meta foreground-window '{"gloss": "(computer science) a window for an active application", "wn30": "03382708-n"}'
 foreground-window gui-window
 foreign-key identifier
 formal-concept-analysis '*'
 formal-grammar formal-system
+formal-system '*'
 formal-verification method
+#:meta formatted-capacity '{"gloss": "(computer science) the usable capacity of a disk drive; the amount of space that is left after the sector headings and boundary definitions and timing information have been added by formatting the disk", "wn30": "13755342-n"}'
 formatted-capacity storage-capacity
 forth-language programming-language
+#:meta fortran '{"gloss": "a high-level programing language for mathematical and scientific purposes; stands for formula translation", "wn30": "06902362-n"}'
 fortran algebraic-language
+#:meta fortran-compiler '{"gloss": "a compiler for programs written in FORTRAN", "wn30": "06574027-n"}'
 fortran-compiler compiler
+#:meta fortran-program '{"gloss": "a program written in FORTRAN", "wn30": "06902521-n"}'
 fortran-program computer-program
+#:meta frame-buffer '{"gloss": "(computer science) a buffer that stores the contents of an image pixel by pixel", "wn30": "03391613-n"}'
 frame-buffer data-buffer
 fraud '*'
 free-and-open-source-software free-software
@@ -536,19 +712,26 @@ free-software open-source-software
 free-software-foundation nonprofit-organization
 freebase knowledge-base
 freebsd berkeley-software-distribution unix-like
+#:meta freemail '{"gloss": "a service providing free email delivery in exchange for exposure to advertising", "wn30": "06279805-n"}'
 freemail email
+#:meta freeware '{"gloss": "software that is provided without charge", "wn30": "06567865-n"}'
 freeware software
 full-text-search information-retrieval
+function '*'
+#:meta function-argument '{"gloss": "(computer science) a reference or value that is passed to a function, procedure, subroutine, command, or program", "wn30": "06356299-n"}'
 function-argument value
+#:meta function-call '{"gloss": "a call that passes control to a subroutine; after the subroutine is executed control returns to the next instruction in main program", "wn30": "06582986-n"}'
 function-call subroutine-call
 functional-database immutable-database
 functional-programming declarative-programming
 fuse-filesystem file-system
 fuzzing test-automation
 garbage-collection memory-management
+#:meta gene-chip '{"gloss": "a microchip that holds DNA probes that form half of the DNA double helix and can recognize DNA from samples being tested", "wn30": "03433247-n"}'
 gene-chip chip
 generator-routine coroutine
 generic-programming computer-programming programming-paradigm
+geo rectangle-dimension
 geojson file-format
 gif image-file-format
 git version-control-software
@@ -561,30 +744,41 @@ gps-exchange-format xml
 graph-algorithm algorithm
 graph-data-structure data-structure
 graph-database database-management-system electronic-database
+graph-dimension dimension
 graph-theory 'about(mathematical-graph)' mathematics
+#:meta graphical-user-interface '{"gloss": "a user interface based on graphics (icons and pictures and menus) instead of text; uses a mouse as well as a keyboard as an input device", "wn30": "06575681-n"}'
 graphical-user-interface user-interface
 graphics-processing-unit chip
 graphql query-language
 greedy-algorithm algorithm
 grid-computing distributed-computing
 group '*'
+#:meta groupware '{"gloss": "software that can be used by a group of people who are working on the same information but may be distributed in space", "wn30": "06567960-n"}'
 groupware software
 grpc remote-procedure-call
 gui-widget software-object
+#:meta gui-window '{"gloss": "(computer science) a rectangular part of a computer screen that contains a display different from the rest of the screen", "wn30": "04588739-n"}'
 gui-window gui-widget
 gzip compression-format
 gzip-file-format compression-format
 halting-problem computational-problem
 hamming-code error-correcting-code
+#:meta hand-held-computer '{"gloss": "a portable battery-powered computer small enough to be carried in your pocket", "wn30": "03485407-n"}'
 hand-held-computer portable-computer
+#:meta hard-copy '{"gloss": "(computer science) matter that is held in a computer and is typed or printed on paper", "wn30": "06391566-n"}'
 hard-copy information
 hard-disk non-volatile-storage
 hard-link computer-file
 hardware '*'
+#:meta hardware-counter '{"gloss": "(computer science) a register whose contents go through a regular series of states (usually states indicating consecutive integers)", "wn30": "03117420-n"}'
 hardware-counter processor-register
+#:meta hardware-emulation '{"gloss": "(computer science) technique of one machine obtaining the same results as another", "wn30": "05665984-n"}'
 hardware-emulation method
+#:meta hardware-error '{"gloss": "error resulting from a malfunction of some physical component of the computer", "wn30": "07299790-n"}'
 hardware-error computer-error
+#:meta hardware-interface '{"gloss": "(computer science) computer circuit consisting of the hardware and associated circuitry that links one device with another (especially a computer and a hard disk drive or other peripherals)", "wn30": "03578656-n"}'
 hardware-interface computer-circuit
+#:meta hardware-upgrade '{"gloss": "hardware that provides better performance than an earlier version did", "wn30": "04513686-n"}'
 hardware-upgrade hardware
 hash-chain authenticated-data-structure
 hash-collision event
@@ -593,31 +787,40 @@ hash-table associative-array
 haskell programming-language
 hdf5 file-format
 hdmi hardware-interface technical-standard
+#:meta head-crash '{"gloss": "(computer science) a crash of a read/write head in a hard disk drive (usually caused by contact of the head with the surface of the magnetic disk)", "wn30": "07479144-n"}'
 head-crash hardware-error system-crash
 heap-memory computer-memory
 heapsort sorting-algorithm
 heif image-file-format
 hexadecimal code
 hidden-file computer-file
+#:meta hierarchical-menu '{"gloss": "a secondary menu that appears while you are holding the cursor over an item on the primary menu", "wn30": "06493721-n"}'
 hierarchical-menu computer-menu
 hierarchy '*'
 high-availability software-quality-attribute
 high-efficiency-video-coding video-coding-format
+#:meta high-level-formatting '{"gloss": "(computer science) the format for the root directory and the file allocation tables and other basic configurations", "wn30": "06637149-n"}'
 high-level-formatting code
 higher-order-function subroutine
 hmac message-authentication-code
+#:meta home-computer '{"gloss": "a computer intended for use in the home", "wn30": "03528523-n"}'
 home-computer computer
 home-directory directory
+#:meta home-page '{"gloss": "the opening page of a web site", "wn30": "06359096-n"}'
 home-page web-page
 hostname identifier
+#:meta html '{"gloss": "a set of tags and rules (conforming to SGML) for using them in developing hypertext documents", "wn30": "06788262-n"}'
 html markup-language text-file-format
 http-2 hypertext-transfer-protocol
 http-3 hypertext-transfer-protocol
 https cryptographic-protocol hypertext-transfer-protocol
 huffman-coding entropy-encoding
 human-computer-interaction 'about(computer)' computer-science
+#:meta hyperlink '{"gloss": "a link from a hypertext file to another location or file; typically activated by clicking on a highlighted word or icon at a particular location on the screen", "wn30": "06586672-n"}'
 hyperlink program-link
+#:meta hypertext-system '{"gloss": "a database management system that allows strings of text (`objects'"'"') to be processed as a complex network of nodes that are linked together in an arbitrary way", "wn30": "06589352-n"}'
 hypertext-system object-oriented-database-management-system
+#:meta hypertext-transfer-protocol '{"gloss": "a protocol (utilizing TCP) to transfer hypertext requests and information between servers and browsers", "wn30": "06665847-n"}'
 hypertext-transfer-protocol application-layer-protocol
 hypervisor system-software
 icalendar data-serialization-format text-file-format
@@ -628,8 +831,10 @@ image-file-format file-format
 immutable-database database
 immutable-object software-object
 imperative-programming computer-programming programming-paradigm
+in transitive-dimension
 in-memory-database database-management-system
 inbox mail-folder
+#:meta index-register '{"gloss": "(computer science) a register used to determine the address of an operand", "wn30": "03567635-n"}'
 index-register processor-register
 indication '*'
 information '*'
@@ -638,23 +843,31 @@ information-entropy amount
 information-redundancy information-entropy
 information-retrieval 'about(information)' computer-science
 information-security practice
+#:meta information-technology '{"gloss": "the branch of engineering that deals with the use of computers and telecommunications to retrieve and store and transmit information", "wn30": "06134510-n"}'
 information-technology 'about(computer)' engineering
+#:meta information-theory '{"gloss": "(computer science) a statistical theory dealing with the limits and efficiency of information processing", "wn30": "06108643-n"}'
 information-theory 'about(information)' computer-science mathematics
 infrastructure-as-a-service cloud-computing
 init-system system-software
+#:meta ink-jet-printer '{"gloss": "a printer that produces characters by projecting electrically charged droplets of ink", "wn30": "03571942-n"}'
 ink-jet-printer dot-matrix-printer
 inode data-structure
 input-device peripheral
+#:meta input-file '{"gloss": "(computer science) a computer file that contains data that serve as input to a device or program", "wn30": "06510478-n"}'
 input-file computer-file
 input-method software
+#:meta input-program '{"gloss": "a utility program that organizes the input to a computer", "wn30": "06575092-n"}'
 input-program utility-program
+#:meta input-routine '{"gloss": "a routine that writes from an external source to an internal store", "wn30": "06583645-n"}'
 input-routine utility-routine
 insertion-sort sorting-algorithm
+#:meta instruction-execution '{"gloss": "(computer science) the process of carrying out an instruction by a computer", "wn30": "13477462-n"}'
 instruction-execution process
 instruction-set-architecture computer-architecture
 integer-data-type primitive-data-type
 integer-overflow software-bug
 integrated-circuit '*'
+#:meta integrated-data-processing '{"gloss": "automatic data processing in which data acquisition and other stages or processing are integrated into a coherent system", "wn30": "13500860-n"}'
 integrated-data-processing automatic-data-processing
 integrated-development-environment application programming-tool
 integration-testing software-testing
@@ -671,8 +884,10 @@ internet-protocol network-layer-protocol
 internet-protocol-suite technical-standard
 internet-service-provider organization
 internet-standard technical-standard
+#:meta interoperability '{"gloss": "(computer science) the ability to exchange and use information (usually in a large heterogeneous network made up of several local area networks)", "wn30": "05200816-n"}'
 interoperability ability
 interpreted-language programming-language
+#:meta intranet '{"gloss": "a restricted computer network; a private network created using World Wide Web software", "wn30": "03581756-n"}'
 intranet computer-network device
 intrusion-detection-system computer-security-system
 inversion-of-control software-architecture software-design-pattern
@@ -685,10 +900,13 @@ ipv6 internet-protocol
 iso-image disk-image
 iterator data-type software-object
 java-bytecode bytecode
+#:meta java-language '{"gloss": "a platform-independent object-oriented programming language", "wn30": "06901053-n"}'
 java-language object-oriented-programming-language
 javascript scripting-language
+#:meta job-control '{"gloss": "a program that is called to prepare each job to be run", "wn30": "06576153-n"}'
 job-control computer-program
 journaling-file-system file-system
+#:meta joystick '{"gloss": "a manual control consisting of a vertical handle that can move freely in two directions; used as an input device to computers or to devices controlled by computers", "wn30": "03602883-n"}'
 joystick input-device mechanism
 jpeg compression-format image-file-format
 json data-serialization-format
@@ -700,6 +918,7 @@ kademlia distributed-hash-table
 kanban-software-development agile-software-development
 kerberos-protocol authentication-protocol
 key-value-database nosql
+#:meta keyboard-buffer '{"gloss": "a buffer that keeps track of key strokes until the computer is ready to respond to them", "wn30": "03614383-n"}'
 keyboard-buffer data-buffer
 keyboard-layout information
 keyhole-markup-language file-format markup-language
@@ -716,6 +935,7 @@ lambda-calculus model-of-computation
 lamport-timestamp logical-clock
 language '*'
 language-unit '*'
+laptop portable-computer
 latency network-performance-measure
 latex markup-language
 law '*'
@@ -724,16 +944,33 @@ ldap application-layer-protocol
 leader-election data-processing
 legacy-system computer-system
 lempel-ziv compression-algorithm lossless-compression
+length 'linear-dimension(length)'
 lexer computer-program
 lexical-closure subroutine
+#:meta lexical-database '{"gloss": "a database of information about words", "wn30": "06638868-n"}'
 lexical-database electronic-database
 libp2p communications-protocol software-library
+#:meta library-program '{"gloss": "a program in a program library", "wn30": "06576265-n"}'
 library-program computer-program
+#:meta library-routine '{"gloss": "a debugged routine that is maintained in a program library", "wn30": "06583790-n"}'
 library-routine subroutine
 license '*'
+#:meta light-pen '{"gloss": "(computer science) a pointer that when pointed at a computer display senses whether or not the spot is illuminated", "wn30": "03668279-n"}'
 light-pen device
+#:meta line-feed '{"gloss": "the operation that prepares for the next character to be printed or displayed on the next line", "wn30": "13508183-n"}'
 line-feed control-operation printing-operation
+linear-dimension dimension
+'linear-dimension(area)' linear-dimension
+'linear-dimension(duration)' linear-dimension
+'linear-dimension(energy)' linear-dimension
+'linear-dimension(length)' linear-dimension
+'linear-dimension(mass)' linear-dimension
+'linear-dimension(pressure)' linear-dimension
+'linear-dimension(speed)' linear-dimension
+'linear-dimension(temperature)' linear-dimension
+'linear-dimension(volume)' linear-dimension
 linear-search search-algorithm
+#:meta linkage-editor '{"gloss": "an editor program that creates one module from several by resolving cross-references among the modules", "wn30": "06576376-n"}'
 linkage-editor editor-program
 linked-data information
 linked-list data-structure list
@@ -744,52 +981,77 @@ linux free-and-open-source-software unix-like
 linux-distribution unix-like
 linux-foundation nonprofit-organization
 linux-kernel operating-system-kernel
+#:meta lisp '{"gloss": "a flexible procedure-oriented programing language that manipulates symbols in the form of lists", "wn30": "06901936-n"}'
 lisp programming-language
+#:meta lisp-compiler '{"gloss": "a compiler for programs written in LISP", "wn30": "06574132-n"}'
 lisp-compiler compiler
+#:meta lisp-program '{"gloss": "a program written in LISP", "wn30": "06902109-n"}'
 lisp-program computer-program
 list '*'
+#:meta list-processing '{"gloss": "processing data that is given in the form of chained lists", "wn30": "13508830-n"}'
 list-processing data-processing
 load-balancing data-processing-technique
+#:meta local-area-network '{"gloss": "a local computer network for communication between computers; especially a network connecting computers and word processors and other electronic office equipment to create a communication system between offices", "wn30": "03681477-n"}'
 local-area-network computer-network
 local-first-software software
 log-file computer-file
 log-structured-merge-tree data-structure
+#:meta logic-bomb '{"gloss": "a set of instructions inserted into a program that are designed to execute (or `explode'"'"') if a particular condition is satisfied; when exploded it may delete or corrupt data, or print a spurious message, or have other harmful effects", "wn30": "06585203-n"}'
 logic-bomb malware
+#:meta logic-diagram '{"gloss": "a graphical representation of a program using formal logic", "wn30": "06582267-n"}'
 logic-diagram multidimensional-language
 logic-gate electronic-circuit
 logic-programming computer-science declarative-programming
 logical-clock data-structure
+#:meta logical-operation '{"gloss": "an operation that follows the rules of symbolic logic", "wn30": "13509042-n"}'
 logical-operation computer-operation
+#:meta loop-iteration '{"gloss": "(computer science) executing the same set of instructions a given number of times or until a specified result is obtained", "wn30": "13503908-n"}'
 loop-iteration process
 lossless-compression data-compression
 lossy-compression data-compression
+#:meta low-level-formatting '{"gloss": "(computer science) the format of sectors on the surface of a hard disk drive so that the operating system can access them and setting a starting position", "wn30": "06637350-n"}'
 low-level-formatting code
 lua scripting-language
 mac-address identifier
 machine '*'
+#:meta machine-code '{"gloss": "a set of instructions coded so that the computer can use it directly without further translation", "wn30": "06357985-n"}'
 machine-code code programming-language
+#:meta machine-readable-dictionary '{"gloss": "a machine-readable version of a standard dictionary; organized alphabetically", "wn30": "06639023-n"}'
 machine-readable-dictionary lexical-database
 machine-word code
 macos unix-like
+#:meta macro-instruction '{"gloss": "a single computer instruction that results in a series of instructions in machine language", "wn30": "06586886-n"}'
 macro-instruction computer-instruction
+#:meta magnetic-bubble-memory '{"gloss": "a nonvolatile storage device that holds information in the form of bubbles on a thin film of magnetic silicate; no longer used in most computers", "wn30": "03706016-n"}'
 magnetic-bubble-memory non-volatile-storage
+#:meta magnetic-core-memory '{"gloss": "(computer science) a computer memory consisting of an array of magnetic cores; now superseded by semiconductor memories", "wn30": "03706415-n"}'
 magnetic-core-memory ram
 magnetic-disk '*'
+#:meta magnetic-stripe '{"gloss": "a short strip of magnetic tape attached to a credit card or debit card; it contains data that will tell a reading device who you are and what your account number is, etc.", "wn30": "03707766-n"}'
 magnetic-stripe magnetic-tape
+#:meta magnetic-tape '{"gloss": "memory device consisting of a long thin plastic strip coated with iron oxide; used to record audio or video signals or to store computer information", "wn30": "03708036-n"}'
 magnetic-tape device
 mail-folder folder
 mailing-list list
+#:meta mainframe-computer '{"gloss": "a large digital computer serving 100-400 users and occupying a special air-conditioned room", "wn30": "03711711-n"}'
 mainframe-computer computer-server digital-computer
+#:meta majority-operation '{"gloss": "a threshold operation in which each operand is 0 or 1; output is 1 if and only if more than half the operands have the value 1", "wn30": "13510638-n"}'
 majority-operation threshold-operation
 makefile configuration-file
+#:meta malware '{"gloss": "a computer program designed to have undesirable or harmful effects", "wn30": "06573020-n"}'
 malware computer-program
 man-in-the-middle-attack cyberattack
 manifest-file computer-file
 manual-memory-management memory-management
+map '*'
 mapreduce data-processing-technique software-design-pattern
 markdown markup-language text-file-format
 markup-language computer-language
+mass 'linear-dimension(mass)'
+#:meta master-file '{"gloss": "(computer science) a computer file that is used as the authority in a given job and that is relatively permanent", "wn30": "06509902-n"}'
 master-file computer-file
+mathematical-graph '*'
+mathematical-object '*'
 mathematics '*'
 matlab programming-language
 matrix '*'
@@ -804,9 +1066,13 @@ media-type identifier metadata
 mediawiki wiki-software
 memcached key-value-database
 memoization data-processing-technique
+#:meta memory-access '{"gloss": "(computer science) the operation of reading or writing stored information", "wn30": "02671224-n"}'
 memory-access computer-operation
+#:meta memory-allocation '{"gloss": "(computer science) the assignment of particular areas of a magnetic disk to particular data or instructions", "wn30": "00164579-n"}'
 memory-allocation act
+#:meta memory-chip '{"gloss": "a RAM microchip that can be plugged into a computer to provide additional memory", "wn30": "03744684-n"}'
 memory-chip chip
+#:meta memory-dump '{"gloss": "(computer science) a copy of the contents of a computer storage device; sometimes used in debugging programs", "wn30": "06390227-n"}'
 memory-dump text
 memory-leak software-bug
 memory-management data-processing-technique
@@ -830,17 +1096,22 @@ metadata-tag metadata
 metaprogramming computer-programming programming-paradigm
 method '*'
 microcontroller chip hardware integrated-circuit
+#:meta microprocessor '{"gloss": "integrated circuit semiconductor chip that performs the bulk of the processing and controls the parts of a system", "wn30": "03760310-n"}'
 microprocessor chip
 microservices service-oriented-architecture
+#:meta microsoft-windows '{"gloss": "(trademark) an operating system with a graphical user interface", "wn30": "06581823-n"}'
 microsoft-windows operating-system
 middleware system-software
+#:meta minicomputer '{"gloss": "a digital computer of medium size", "wn30": "03770224-n"}'
 minicomputer digital-computer
 minimum-spanning-tree tree-data-structure
 mit-license software-license
 mixin object-class
 model-of-computation mathematical-object
 model-view-controller software-design-pattern
+#:meta monadic-operation '{"gloss": "an operation with exactly one operand", "wn30": "13517080-n"}'
 monadic-operation computer-operation
+#:meta monitor-program '{"gloss": "a program that observes and regulates and controls or verifies the operations of a data-processing system", "wn30": "06576539-n"}'
 monitor-program computer-program
 monolithic-application software-architecture
 moores-law 'about(chip)' proposition
@@ -851,13 +1122,18 @@ mp3 audio-coding-format audio-file-format
 mp4 multimedia-container-format video-file-format
 mqtt messaging-protocol
 multi-factor-authentication authentication
+#:meta multidimensional-language '{"gloss": "a programming language whose expressions are assembled in more than one dimension", "wn30": "06900282-n"}'
 multidimensional-language programming-language
 multimedia-container-format file-format
+#:meta multiplex-operation '{"gloss": "an operation in which two or more activities are interleaved", "wn30": "13517717-n"}'
 multiplex-operation computer-operation
+#:meta multiprocessing '{"gloss": "simultaneous processing by two or more processing units", "wn30": "13518140-n"}'
 multiprocessing data-processing
+#:meta multiprocessor '{"gloss": "a computer that uses two or more processing units under integrated control", "wn30": "03799240-n"}'
 multiprocessor digital-computer
 multipurpose-internet-mail-extensions internet-standard
 multithreading concurrency data-processing-technique
+#:meta musical-instrument-digital-interface '{"gloss": "a standard protocol for communication between electronic musical instruments and computers", "wn30": "06666030-n"}'
 musical-instrument-digital-interface communications-protocol
 mutation-testing software-testing
 mutex data-type software-object
@@ -867,22 +1143,27 @@ n-triples rdf-serialization-format
 name '*'
 named-pipe computer-file
 namespace identifier set
+#:meta natural-language-processor '{"gloss": "an application program that deals with natural language text", "wn30": "06572011-n"}'
 natural-language-processor application
 network-address-translation data-processing-technique
 network-architecture method
 network-bandwidth network-performance-measure
 network-client software
 network-file-system distributed-file-system
+#:meta network-firewall '{"gloss": "(computing) a security system consisting of a combination of hardware and software that limits the exposure of a computer or computer network to attack from crackers; commonly used on local area networks that are connected to the internet", "wn30": "03348142-n"}'
 network-firewall computer-security-system
 network-gateway networking-hardware
 network-host network-node
 network-interface-controller networking-hardware
 network-layer information
 network-layer-protocol communications-protocol
+#:meta network-node '{"gloss": "(computer science) any computer that is hooked up to a computer network", "wn30": "03827107-n"}'
 network-node computer
+#:meta network-packet '{"gloss": "(computer science) a message or message fragment", "wn30": "07281099-n"}'
 network-packet message
 network-performance-measure amount
 network-port computer-address
+#:meta network-router '{"gloss": "(computer science) a device that forwards data packets between computer networks", "wn30": "04114844-n"}'
 network-router networking-hardware
 network-routing data-processing
 network-socket software-object
@@ -890,33 +1171,45 @@ network-switch networking-hardware
 network-time-protocol application-layer-protocol
 network-topology attribute
 networking-hardware hardware
+#:meta new-line '{"gloss": "the operation that prepares for the next character to be printed or displayed as the first character on the next line", "wn30": "13521444-n"}'
 new-line control-operation printing-operation
 newsletter periodical
 nim-language programming-language
 noisy-channel-coding-theorem theorem
+#:meta non-dedicated-file-server '{"gloss": "(computer science) a file server that can be used simultaneously as a workstation", "wn30": "03827830-n"}'
 non-dedicated-file-server file-server
+#:meta non-volatile-storage '{"gloss": "computer storage that is not lost when the power is turned off", "wn30": "03829340-n"}'
 non-volatile-storage computer-memory
 nonprofit-organization organization
+#:meta nonsolid-color '{"gloss": "a color produced by a pattern of differently colored dots that together simulate the desired color", "wn30": "04978561-n"}'
 nonsolid-color attribute
 nosql database-management-system
+notebook-computer portable-computer
 notification message
 np-completeness property
 null-pointer pointer-data-type
+#:meta number-cruncher '{"gloss": "a computer capable of performing a large number of mathematical operations per second", "wn30": "03835582-n"}'
 number-cruncher computer
 nvm-express hardware-interface
 nyquist-shannon-sampling-theorem theorem
 oauth authentication-protocol
 object-class data-type
+#:meta object-code '{"gloss": "the machine-language output of a compiler that is ready for execution on a particular computer", "wn30": "06358159-n"}'
 object-code code
 object-database database database-management-system
 object-encapsulation data-processing-technique
 object-instance software-object
+#:meta object-language '{"gloss": "a computer language into which something written in another computer language is to be translated", "wn30": "06900507-n"}'
 object-language programming-language
 object-method subroutine
+#:meta object-oriented-database '{"gloss": "a database in which the operations carried out on information items (data objects) are considered part of their definition", "wn30": "06638527-n"}'
 object-oriented-database electronic-database
+#:meta object-oriented-database-management-system '{"gloss": "a database management system designed to manage an object-oriented database", "wn30": "06589151-n"}'
 object-oriented-database-management-system database-management-system
 object-oriented-programming structured-programming
+#:meta object-oriented-programming-language '{"gloss": "(computer science) a programming language that enables the programmer to associate a set of procedures with each type of data structure", "wn30": "06900684-n"}'
 object-oriented-programming-language programming-language
+#:meta object-program '{"gloss": "a fully compiled or assembled program ready to be loaded into the computer", "wn30": "06576893-n"}'
 object-program computer-program
 object-relational-mapping data-processing-technique
 observability software-quality-attribute
@@ -925,6 +1218,7 @@ ocaml programming-language
 office-open-xml document-file-format zip-file-format
 ogg multimedia-container-format
 okapi-bm25 algorithm
+#:meta one-dimensional-language '{"gloss": "a programming language whose expressions are represented by strings of characters", "wn30": "06901163-n"}'
 one-dimensional-language programming-language
 online-encyclopedia web-site
 ontology-alignment '*'
@@ -942,15 +1236,21 @@ openstreetmap 'about(place)' dataset web-site
 opentype font-file-format
 operating-system '*'
 operating-system-kernel system-software
+#:meta operation-code '{"gloss": "the portion of a set of operation descriptions that specifies the operation to be performed; the set of operations in a computer", "wn30": "06358311-n"}'
 operation-code code
 operational-transformation concurrency-control
+#:meta optical-disk '{"gloss": "a disk coated with plastic that can store digital data as tiny pits etched in the surface; is read with a laser that scans the surface", "wn30": "03851787-n"}'
 optical-disk device
 opus-codec audio-coding-format audio-file-format
 organization '*'
 osi-model technical-standard
+#:meta output-device '{"gloss": "electronic or electromechanical equipment connected to a computer and used to transfer data out of the computer in the form of text, images, sounds, or other media", "wn30": "03861048-n"}'
 output-device peripheral
+#:meta output-file '{"gloss": "(computer science) a computer file that contains data that are the output of a device or program", "wn30": "06510663-n"}'
 output-file computer-file
+#:meta output-program '{"gloss": "a utility program that organizes the output of a computer", "wn30": "06577232-n"}'
 output-program utility-program
+#:meta output-routine '{"gloss": "a routine that controls an output device", "wn30": "06583929-n"}'
 output-routine utility-routine
 p-versus-np-problem computational-problem
 pace '*'
@@ -958,14 +1258,21 @@ package-format archive-file-format
 package-manager utility-program
 pagerank algorithm
 parallel-computing data-processing
+#:meta parallel-operation '{"gloss": "the simultaneous execution of two or more operations", "wn30": "13532196-n"}'
 parallel-operation computer-operation
+#:meta pari-mutuel-machine '{"gloss": "computer that registers bets and divides the total amount bet among those who won", "wn30": "03890514-n"}'
 pari-mutuel-machine computer
+#:meta parity-bit '{"gloss": "(computer science) a bit that is used in an error detection procedure in which a 0 or 1 is added to each group of bits so that it will have either an odd number of 1'"'"'s or an even number of 1'"'"'s; e.g., if the parity is odd then any group of bits that arrives with an even number of 1'"'"'s must contain an error", "wn30": "13625482-n"}'
 parity-bit code
+#:meta parser '{"gloss": "a computer program that divides code up into functional components", "wn30": "06577369-n"}'
 parser computer-program
 parsing data-processing
+#:meta part-of-speech-tagger '{"gloss": "a tagging program whose labels indicate a word'"'"'s part of speech", "wn30": "06577916-n"}'
 part-of-speech-tagger tagging-program
 partial-order '*'
+#:meta pascal-compiler '{"gloss": "a compiler for programs written in Pascal", "wn30": "06574231-n"}'
 pascal-compiler compiler
+#:meta pascal-language '{"gloss": "a programing language designed to teach programming through a top-down modular approach", "wn30": "06903115-n"}'
 pascal-language programming-language
 passphrase password
 password '*'
@@ -977,24 +1284,31 @@ pdf document-file-format
 peer-node network-node
 peer-to-peer network-architecture software-architecture
 penetration-test test
+perception '*'
 periodical '*'
+#:meta peripheral '{"gloss": "(computer science) electronic equipment connected by cable to the CPU of a computer", "wn30": "03916720-n"}'
 peripheral equipment hardware
 perl scripting-language
 persistent-data-structure data-structure
 persistent-identifier identifier
 person '*'
+#:meta personal-computer '{"gloss": "a small digital computer based on a microprocessor and designed to be used by one person at a time", "wn30": "03918480-n"}'
 personal-computer digital-computer
 phishing cyberattack fraud
 php scripting-language
 physical-layer information
 physical-object '*'
+#:meta pixel '{"gloss": "(computer science) the smallest discrete component of an image or picture on a CRT screen (usually a colored dot)", "wn30": "03952277-n"}'
 pixel component
+place '*'
 plain-text text
 platform-as-a-service cloud-computing
 png image-file-format
 pointer-data-type data-type
+#:meta portable-computer '{"gloss": "a personal computer that can easily be carried by hand", "wn30": "03985232-n"}'
 portable-computer personal-computer
 portable-executable executable-file file-format
+#:meta portal-site '{"gloss": "a site that the owner positions as an entrance to other sites on the internet", "wn30": "06359657-n"}'
 portal-site web-site
 posix technical-standard
 post message
@@ -1002,14 +1316,20 @@ post-office-protocol email-protocol
 postcondition condition
 postgresql relational-database-management-system
 postscript document-file-format programming-language
+#:meta power-user '{"gloss": "(computing) a computer user who needs the fastest and most powerful computers available", "wn30": "10462588-n"}'
 power-user expert user
 practice '*'
+prefix-dimension dimension
+pressure 'linear-dimension(pressure)'
 primary-key identifier
 primitive-data-type data-type
 principle-of-least-privilege 'about(access-control)' rule
+#:meta print-buffer '{"gloss": "a buffer that stores data until the printer is ready", "wn30": "04004099-n"}'
 print-buffer data-buffer
 printer peripheral
+#:meta printing-operation '{"gloss": "an operation that controls the printing or display of information", "wn30": "13540791-n"}'
 printing-operation computer-operation
+#:meta priority-processing '{"gloss": "data processing in which the operations performed are determined by a system of priorities", "wn30": "13540975-n"}'
 priority-processing data-processing
 priority-queue queue-data-structure
 problem '*'
@@ -1017,27 +1337,35 @@ procedural-programming structured-programming
 procedure '*'
 process '*'
 process-scheduler system-software
+#:meta processor-register '{"gloss": "(computer science) memory device that is the part of computer memory that has a specific address and that is used to hold information of a specific kind", "wn30": "04071876-n"}'
 processor-register device
 program-assertion program-statement
 program-constant code program-variable
 program-expression code
+#:meta program-interpreter '{"gloss": "(computer science) a program that translates and executes source language statements one line at a time", "wn30": "06575932-n"}'
 program-interpreter computer-program programming-tool
 program-invariant property
+#:meta program-link '{"gloss": "(computing) an instruction that connects one part of a program or an element on a list to another program or list", "wn30": "06586471-n"}'
 program-link computer-instruction
 program-loader system-software
+#:meta program-loop '{"gloss": "a computer program that performs a series of instructions repeatedly until some specified condition is satisfied", "wn30": "06572857-n"}'
 program-loop computer-program
 program-module software
 program-statement code
 program-variable information
+#:meta programmer '{"gloss": "a person who designs and writes and tests computer programs", "wn30": "10481268-n"}'
 programmer engineer
+#:meta programming-language '{"gloss": "(computer science) a language designed for programming computers", "wn30": "06898352-n"}'
 programming-language computer-language
 programming-monad software-design-pattern
 programming-paradigm method
 programming-tool software
 programming-trait object-class
 progressive-web-app web-application
+#:meta prolog '{"gloss": "a computer language designed in Europe to support natural language processing", "wn30": "06902193-n"}'
 prolog programming-language
 property '*'
+proposition '*'
 protocol-buffers data-serialization-format
 prototype-based-programming object-oriented-programming
 proxy-server computer-server
@@ -1047,27 +1375,31 @@ public-key-infrastructure computer-security-system system
 publish-subscribe-pattern software-design-pattern
 pull-request message
 pure-function subroutine
+#:meta push-down-queue '{"gloss": "a queue in which the last item to go in is the first item to come out (LIFO)", "wn30": "06502054-n"}'
 push-down-queue queue-data-structure stack-data-structure
 push-notification notification
 pushdown-automaton finite-automaton
 python-language programming-language
-amount '*'
 query-expansion data-processing-technique
 query-language computer-language
 query-optimization data-processing
 query-plan data-structure
+#:meta queue-data-structure '{"gloss": "(information processing) an ordered list of tasks to be performed or messages to be transmitted", "wn30": "06494816-n"}'
 queue-data-structure abstract-data-type list
 quic transport-layer-protocol
 quicksort sorting-algorithm
 quicktime-file-format multimedia-container-format video-file-format
 r-language programming-language
 race-condition software-bug
+#:meta radiotelephone '{"gloss": "telephony that uses transmission by radio rather than by wire", "wn30": "06276501-n"}'
 radiotelephone artifact
 radix-sort sorting-algorithm
 raft-consensus-algorithm consensus-algorithm
 raid data-storage hardware
 ram '*'
+#:meta ram-disk '{"gloss": "(computer science) a virtual drive that is created by setting aside part of the random-access memory to use as if it were a group of sectors", "wn30": "04050600-n"}'
 ram-disk storage-drive
+#:meta random-number-generator '{"gloss": "a routine designed to yield a random number", "wn30": "06584049-n"}'
 random-number-generator subroutine
 randomized-algorithm algorithm
 ransomware malware
@@ -1078,22 +1410,32 @@ rdf-graph dataset
 rdf-schema ontology-language
 rdf-serialization-format data-serialization-format
 reactive-programming programming-paradigm
+#:meta read-only-file '{"gloss": "(computer science) a file that you can read but cannot change", "wn30": "06510836-n"}'
 read-only-file computer-file
 read-only-memory computer-memory
+#:meta read-only-memory-chip '{"gloss": "a memory chip providing read-only memory", "wn30": "04058486-n"}'
 read-only-memory-chip memory-chip
+#:meta read-write-head '{"gloss": "(computer science) a tiny electromagnetic coil and metal pole used to write and read magnetic patterns on a disk", "wn30": "04058721-n"}'
 read-write-head device
+#:meta real-storage '{"gloss": "the main memory in a virtual memory system", "wn30": "04059298-n"}'
 real-storage computer-memory
+#:meta real-time '{"gloss": "(computer science) the time it takes for a process under computer control to occur", "wn30": "15298695-n"}'
 real-time amount
 real-time-operating-system operating-system
+#:meta real-time-processing '{"gloss": "data processing fast enough to keep up with an outside process", "wn30": "13547048-n"}'
 real-time-processing data-processing
 recommender-system '*'
 record '*'
 record-data-type data-type
+rectangle-dimension dimension
+#:meta recursion '{"gloss": "(mathematics) an expression such that each term is generated by repeating a particular mathematical operation", "wn30": "05848357-n"}'
 recursion method procedure
 recursive-descent-parser parser
+#:meta recursive-routine '{"gloss": "a routine that can call itself", "wn30": "06584162-n"}'
 recursive-routine subroutine
 red-black-tree self-balancing-binary-search-tree
 redis key-value-database
+#:meta reduced-instruction-set-computer '{"gloss": "(computer science) a kind of computer architecture that has a relatively small set of computer instructions that it can perform", "wn30": "04932875-n"}'
 reduced-instruction-set-computer instruction-set-architecture
 reed-solomon-code erasure-code
 reference-counting garbage-collection
@@ -1101,28 +1443,37 @@ reference-data-type data-type
 referential-transparency property
 regression-testing software-testing
 regular-expression code pattern
+#:meta relational-database '{"gloss": "a database in which relations between information items are explicitly specified as accessible attributes", "wn30": "06637973-n"}'
 relational-database electronic-database
+#:meta relational-database-management-system '{"gloss": "a database management system designed to manage a relational database", "wn30": "06588998-n"}'
 relational-database-management-system database-management-system
 relational-join data-processing
 relational-model data-model
+#:meta relocatable-program '{"gloss": "a program that can be located in different parts of memory at different times", "wn30": "06578060-n"}'
 relocatable-program computer-program
 remote-procedure-call communications-protocol
+#:meta removable-disk '{"gloss": "a hard disk that can be removed from the disk drive; removal prevents unauthorized use", "wn30": "04075468-n"}'
 removable-disk hard-disk
 replication-in-computing data-replication
 representational-state-transfer software-architecture
 requirements-analysis activity data-processing
 resource-description-framework data-model
 restructuredtext markup-language
+#:meta reusable-program '{"gloss": "a program that can be loaded once and executed repeatedly", "wn30": "06578203-n"}'
 reusable-program computer-program
+#:meta reusable-routine '{"gloss": "a routine that can be loaded once and executed repeatedly", "wn30": "06584256-n"}'
 reusable-routine subroutine
 reverse-proxy proxy-server
+reversed-dimension dimension
 rich-text-format document-file-format text-file-format
 risc-v instruction-set-architecture
 role-based-access-control access-control
 rom '*'
 root-directory directory
 rootkit malware
+#:meta rotary-actuator '{"gloss": "(computer science) the actuator that moves a read/write head to the proper data track", "wn30": "04110439-n"}'
 rotary-actuator mechanism
+#:meta rotational-latency '{"gloss": "(computer science) the time it takes for a specific block of data on a data track to rotate around to the read/write head", "wn30": "15297069-n"}'
 rotational-latency latency
 routing-protocol communications-protocol
 rpm-package-manager package-format package-manager
@@ -1131,6 +1482,7 @@ rsync communications-protocol software
 ruby-language programming-language
 rule '*'
 run-length-encoding compression-algorithm
+#:meta run-time '{"gloss": "(computer science) the length of time it takes to execute a software program", "wn30": "15262360-n"}'
 run-time amount
 runtime-system system-software
 rust-language programming-language
@@ -1140,34 +1492,44 @@ scala programming-language
 scalability software-quality-attribute
 schema-org computational-ontology web-standard
 scheme-language lisp
+#:meta scratchpad-memory '{"gloss": "(computer science) a high-speed internal memory used for temporary storage of preliminary information", "wn30": "04151228-n"}'
 scratchpad-memory computer-memory
+#:meta screen-saver '{"gloss": "(computer science) a moving design that appears on a computer screen when there has been no input for a specified period of time", "wn30": "04153436-n"}'
 screen-saver computer-program
 screenshot image-file
 script '*'
 scripting-language programming-language
 search-algorithm algorithm
+#:meta search-engine '{"gloss": "a computer program that retrieves documents or files or data from a database or from a computer network (especially from the internet)", "wn30": "06578654-n"}'
 search-engine application
 search-engine-indexing computer-process data-processing
 search-engine-optimization practice
+#:meta search-operation '{"gloss": "an operation that determines whether one or more of a set of items has a specified property", "wn30": "13553560-n"}'
 search-operation computer-operation
 search-query text
 search-relevance property
 secure-shell application-layer-protocol cryptographic-protocol
 security-exploit software
 security-vulnerability software-bug
+#:meta seek-time '{"gloss": "(computer science) the time it takes for a read/write head to move to a specific data track", "wn30": "15269128-n"}'
 seek-time latency
+#:meta self-adapting-program '{"gloss": "a program that can change its performance in response to its environment", "wn30": "06579452-n"}'
 self-adapting-program computer-program
 self-balancing-binary-search-tree binary-search-tree
 self-extracting-archive file-format software
+#:meta semantic-error '{"gloss": "an error in logic or arithmetic that must be detected at run time", "wn30": "07300316-n"}'
 semantic-error software-error
 semantic-reasoner '*'
 semantic-versioning software-versioning
 semantic-web information
 semaphore-primitive data-type software-object
+#:meta sense-tagger '{"gloss": "a tagging program whose labels indicate the meanings of words or expressions", "wn30": "06577781-n"}'
 sense-tagger tagging-program
 separation-of-concerns rule
 serial-ata computer-bus
+#:meta serial-operation '{"gloss": "the sequential execution of operations one after another", "wn30": "13554800-n"}'
 serial-operation computer-operation
+#:meta serial-processing '{"gloss": "sequential processing by two or more processing units", "wn30": "13554984-n"}'
 serial-processing data-processing
 serialization data-processing
 server-software software
@@ -1175,13 +1537,18 @@ serverless-computing cloud-computing
 service-oriented-architecture software-architecture
 set '*'
 set-data-structure abstract-data-type
+#:meta seventy-eight '{"gloss": "a shellac based phonograph record that played at 78 revolutions per minute", "wn30": "04178190-n"}'
 seventy-eight audio
 shannon-source-coding-theorem theorem
 shared-library computer-file software-library
+shared-with reversed-dimension
+#:meta shareware '{"gloss": "software that is available free of charge; may be distributed for evaluation with a fee requested for additional features or a manual etc.", "wn30": "06587596-n"}'
 shareware software
 shell-script computer-program
+#:meta shift-register '{"gloss": "(computer science) register in which all bits can be shifted one or more positions to the left or to the right", "wn30": "04193552-n"}'
 shift-register processor-register
 shortest-path computational-problem
+#:meta shrink-wrapped-software '{"gloss": "software on CD-ROMs that are boxed and shrink-wrapped and sold in stores (implying a widely supported standard platform)", "wn30": "06587790-n"}'
 shrink-wrapped-software software
 signal '*'
 signal-modulation signal-processing telecommunication
@@ -1193,19 +1560,24 @@ single-board-computer computer
 single-page-application web-application web-page
 single-sign-on authentication
 singleton-pattern software-design-pattern
+size dominance-dimension
 skill '*'
 skip-list list
 skos data-model
+#:meta slide-rule '{"gloss": "analog computer consisting of a handheld instrument used for rapid calculations; have been replaced by pocket calculators", "wn30": "04238763-n"}'
 slide-rule analog-computer tool
 smalltalk object-oriented-programming-language
 smartphone cellular-telephone portable-computer
+#:meta snapshot-program '{"gloss": "a trace program that produces output for selected conditions", "wn30": "06579592-n"}'
 snapshot-program trace-program
 social-engineering-attack cyberattack
+#:meta soft-copy '{"gloss": "(computer science) matter that is in a form that a computer can store or display it on a computer screen", "wn30": "06391347-n"}'
 soft-copy information
 software '*'
 software-abstraction method
 software-architecture method
 software-as-a-service cloud-computing
+#:meta software-bug '{"gloss": "a fault or defect in a computer program, system, or machine", "wn30": "14464675-n"}'
 software-bug defect
 software-cohesion property
 software-container software virtualization
@@ -1216,8 +1588,10 @@ software-development-kit software
 software-development-methodology method
 software-development-practice practice
 software-development-process process
+#:meta software-documentation '{"gloss": "program listings or technical manuals describing the operation and use of programs", "wn30": "06588326-n"}'
 software-documentation 'about(software)' information
 software-engineering 'about(software)' computer-science engineering
+#:meta software-error '{"gloss": "error resulting from bad code in some program involved in producing the erroneous result", "wn30": "07300092-n"}'
 software-error computer-error
 software-framework software-library
 software-library '*'
@@ -1225,8 +1599,10 @@ software-license license
 software-localization data-processing
 software-logging data-processing
 software-maintenance activity
+#:meta software-object '{"gloss": "(computing) a discrete item that provides a description of virtually anything known to a computer", "wn30": "06132724-n"}'
 software-object information
 software-package software
+#:meta software-patch '{"gloss": "a short set of commands to correct a bug in a computer program", "wn30": "06573223-n"}'
 software-patch computer-program
 software-quality-attribute property
 software-repository electronic-database
@@ -1235,26 +1611,37 @@ software-specification 'about(software)' document
 software-testing activity
 software-transactional-memory concurrency-control
 software-update process
+#:meta software-upgrade '{"gloss": "software that provides better performance than an earlier version did", "wn30": "06903255-n"}'
 software-upgrade software
 software-versioning practice
 solid-state-drive non-volatile-storage
 solidity programming-language
+#:meta sort-operation '{"gloss": "an operation that segregates items into groups according to a specified criterion", "wn30": "13558696-n"}'
 sort-operation computer-operation
+#:meta sort-program '{"gloss": "a utility program that sorts data items", "wn30": "06580103-n"}'
 sort-program utility-program
+#:meta sorting-algorithm '{"gloss": "an algorithm for sorting a list", "wn30": "05847658-n"}'
 sorting-algorithm algorithm
+#:meta source-code '{"gloss": "program instructions written as an ASCII text file; must be translated by a compiler or interpreter or assembler into the object code for a particular computer before execution", "wn30": "06358513-n"}'
 source-code ascii-text-file code text
+#:meta source-program '{"gloss": "a program written in a language from which statements are translated into machine language", "wn30": "06577063-n"}'
 source-program computer-program
 space-complexity amount
+#:meta spam-email '{"gloss": "unwanted e-mail (usually of a commercial nature sent out in bulk)", "wn30": "06280347-n"}'
 spam-email email
 sparql query-language
 sparql-endpoint server-software
+speed 'linear-dimension(speed)'
+#:meta spyware '{"gloss": "computer software that obtains information from a user'"'"'s computer without the user'"'"'s knowledge or consent", "wn30": "06587980-n"}'
 spyware application malware
 sql query-language
 sql-injection cyberattack security-vulnerability
 sqlite embedded-database relational-database-management-system
 ssh-file-transfer-protocol application-layer-protocol
+#:meta stack-data-structure '{"gloss": "a storage device that handles data so that the next item to be retrieved is the item most recently stored (LIFO)", "wn30": "04027504-n"}'
 stack-data-structure abstract-data-type data-structure
 stack-overflow web-site
+#:meta standard-generalized-markup-language '{"gloss": "(computer science) a standardized language for the descriptive markup of documents; a set of rules for using whatever markup vocabulary is adopted", "wn30": "06788007-n"}'
 standard-generalized-markup-language markup-language
 standard-library software-library
 standards-organization organization
@@ -1262,11 +1649,15 @@ state '*'
 state-machine-replication data-processing-technique
 static-program-analysis data-processing
 static-typing type-system
+#:meta storage-capacity '{"gloss": "(computer science) the amount of information (in bytes) that can be stored on a disk drive", "wn30": "13755053-n"}'
 storage-capacity amount
+#:meta storage-drive '{"gloss": "(computer science) a device that writes data onto or reads data from a storage medium", "wn30": "03243218-n"}'
 storage-drive device
 storage-snapshot data-backup
 stored-procedure subroutine
+#:meta stored-program '{"gloss": "a program that is stored in the memory of the computer that executes it", "wn30": "06580219-n"}'
 stored-program computer-program
+#:meta stratified-language '{"gloss": "a language that cannot be used as its own metalanguage", "wn30": "06901333-n"}'
 stratified-language programming-language
 stream-processing data-processing
 string-algorithm algorithm
@@ -1275,35 +1666,52 @@ strong-consistency property
 strong-typing type-system
 structured-programming imperative-programming
 style '*'
+#:meta subdata-base '{"gloss": "a subset of data in a database that are used in a specific application", "wn30": "06638739-n"}'
 subdata-base information
+#:meta subdirectory '{"gloss": "(computer science) a directory that is listed in another directory", "wn30": "06490743-n"}'
 subdirectory directory
 subnetwork computer-network
+#:meta subroutine '{"gloss": "a set sequence of steps, part of larger computer program", "wn30": "06582403-n"}'
 subroutine software
+#:meta subroutine-call '{"gloss": "an instruction that interrupts the program being executed", "wn30": "06582761-n"}'
 subroutine-call computer-instruction
 suffix-tree trie
+#:meta supercomputer '{"gloss": "a mainframe computer that is one of the most powerful available at a given time", "wn30": "04358117-n"}'
 supercomputer mainframe-computer
+#:meta supervisory-program '{"gloss": "a program that controls the execution of other programs", "wn30": "06580351-n"}'
 supervisory-program computer-program
+#:meta supervisory-routine '{"gloss": "a routine that coordinates the operation of subroutines", "wn30": "06584376-n"}'
 supervisory-routine subroutine
+#:meta supervisory-software '{"gloss": "specialized programs that reside permanently in the computer'"'"'s main memory and control the processing of user'"'"'s programs", "wn30": "06588139-n"}'
 supervisory-software software
 svg image-file-format xml
 swift-language programming-language
 symbol '*'
 symbolic-link computer-file
 symmetric-key-cryptography cryptography
+#:meta synchronous-operation '{"gloss": "operations that are initiated predictably by a clock", "wn30": "13564501-n"}'
 synchronous-operation computer-operation
+#:meta syntax-checker '{"gloss": "a program to check natural language syntax", "wn30": "06580543-n"}'
 syntax-checker computer-program
+#:meta syntax-error '{"gloss": "an error of language resulting from code that does not conform to the syntax of the programming language", "wn30": "07300494-n"}'
 syntax-error software-error
 system '*'
+#:meta system-call '{"gloss": "an instruction that interrupts the program being executed and passes control to the supervisor", "wn30": "06587217-n"}'
 system-call subroutine subroutine-call
+#:meta system-crash '{"gloss": "(computer science) an event that causes a computer system to become inoperative", "wn30": "07478874-n"}'
 system-crash trouble
+#:meta system-error '{"gloss": "an instruction that is either not recognized by an operating system or is in violation of the procedural rules", "wn30": "06587048-n"}'
 system-error computer-instruction
 system-monitoring activity
+#:meta system-program '{"gloss": "a program (as an operating system or compiler or utility program) that controls some aspect of the operation of a computer", "wn30": "06580646-n"}'
 system-program computer-program
 system-software software
 systemd init-system
 tablet-computer portable-computer
+#:meta tagging-program '{"gloss": "a computer program that attaches labels to the grammatical constituents of textual matter", "wn30": "06577585-n"}'
 tagging-program computer-program
 tail-call subroutine-call
+#:meta talking-book '{"gloss": "sound recording of someone reading a book; frequently used by blind people", "wn30": "04386962-n"}'
 talking-book audio
 tar-file-format archive-file-format
 taxonomy '*'
@@ -1311,10 +1719,13 @@ technical-debt condition
 technical-documentation document
 technical-standard document
 telecommunication communication
+#:meta telecommunications-engineering '{"gloss": "(often plural) the branch of electrical engineering concerned with the technology of electronic communication at a distance", "wn30": "06128307-n"}'
 telecommunications-engineering 'about(telecommunication)' engineering
 telephony '*'
+temperature 'linear-dimension(temperature)'
 temporal-database database
 temporary-file computer-file
+#:meta terminal-emulation '{"gloss": "(computer science) having a computer act exactly like a terminal", "wn30": "05666176-n"}'
 terminal-emulation hardware-emulation
 terminal-emulator application
 test activity
@@ -1323,41 +1734,58 @@ test-driven-development software-development-practice
 tex typesetting-system
 text '*'
 text-based-user-interface user-interface
+#:meta text-cursor '{"gloss": "(computer science) indicator consisting of a movable spot of light (an icon) on a visual display; moving it allows the user to point to commands or screen positions", "wn30": "03150795-n"}'
 text-cursor symbol
+#:meta text-editor '{"gloss": "(computer science) an application that can be used to create and view and edit text files", "wn30": "06576727-n"}'
 text-editor editor-program
+#:meta text-file '{"gloss": "(computer science) a computer file that contains text (and possibly formatting instructions) using seven-bit ASCII characters", "wn30": "06510977-n"}'
 text-file computer-file
 text-file-format file-format
+#:meta text-matching '{"gloss": "a computer program that looks for text that matches a given text", "wn30": "06581068-n"}'
 text-matching computer-program
 tf-idf amount
 theorem '*'
 theoretical-computer-science computer-science
 thin-client computer network-client
 three-tier-architecture software-architecture
+#:meta threshold-operation '{"gloss": "an operation performed on operands in order to obtain the value of a threshold function", "wn30": "13567344-n"}'
 threshold-operation computer-operation
 throughput network-performance-measure
 thumbnail image-file
 tiff image-file-format
+time calendar-dimension
 time-complexity amount
 time-series-database database-management-system
+#:meta time-sharing '{"gloss": "(computer science) the use of a central computer by many users simultaneously", "wn30": "13844057-n"}'
 time-sharing data-processing
+#:meta title-bar '{"gloss": "(computer science) a horizontal label at the top of a window, bearing the name of the currently active document", "wn30": "07273616-n"}'
 title-bar gui-widget
+#:meta toggle-instruction '{"gloss": "any instruction that works first one way and then the other; it turns something on the first time it is used and then turns it off the next time", "wn30": "06587399-n"}'
 toggle-instruction computer-instruction
 toml data-serialization-format
 tool '*'
 toolchain programming-tool
 topological-ordering '*'
 touchscreen input-device output-device
+#:meta trace-program '{"gloss": "a utility program that exhibits the sequence and results of executing the instructions in another program", "wn30": "06580866-n"}'
 trace-program utility-program
+#:meta tracing-routine '{"gloss": "a routine that provides a chronological record of the execution of a computer program", "wn30": "06584536-n"}'
 tracing-routine subroutine
+#:meta track-to-track-seek-time '{"gloss": "(computer science) the time it takes for a read/write head to move to an adjacent data track", "wn30": "15269331-n"}'
 track-to-track-seek-time seek-time
 transaction-atomicity property
 transaction-durability property
+#:meta transaction-file '{"gloss": "(computer science) a computer file containing relatively transient data about a particular data processing task", "wn30": "06510271-n"}'
 transaction-file computer-file
 transaction-isolation property
 transitive-closure '*'
+transitive-dimension dimension
 transitive-reduction '*'
+#:meta translator-program '{"gloss": "a program that translates one programming language into another", "wn30": "06581268-n"}'
 translator-program computer-program
+#:meta transmission-control-protocol '{"gloss": "a protocol developed for the internet to get data from one network device to another", "wn30": "06666210-n"}'
 transmission-control-protocol transport-layer-protocol
+#:meta transmission-control-protocol-internet-protocol '{"gloss": "a set of protocols (including TCP) developed for the internet in the 1970s to get data from one network device to another", "wn30": "06666486-n"}'
 transmission-control-protocol-internet-protocol communications-protocol
 transport-layer information
 transport-layer-protocol communications-protocol
@@ -1366,9 +1794,11 @@ tree-data-structure data-structure
 tree-structure data-structure
 trie tree-data-structure
 triplestore graph-database
+#:meta trojan-horse-malware '{"gloss": "a program that appears desirable but actually contains something harmful", "wn30": "06585552-n"}'
 trojan-horse-malware malware
 trouble '*'
 truetype font-file-format
+#:meta turing-machine '{"gloss": "a hypothetical computer with an infinitely long memory tape", "wn30": "04499180-n"}'
 turing-machine model-of-computation
 turtle-syntax rdf-serialization-format text-file-format
 two-phase-commit consensus-algorithm
@@ -1382,6 +1812,7 @@ typesetting-system software
 ubuntu linux-distribution
 uefi firmware technical-standard
 undefined-behavior property
+#:meta unformatted-capacity '{"gloss": "(computer science) the total number of bytes on a disk including the space that will be required to format it", "wn30": "13755627-n"}'
 unformatted-capacity storage-capacity
 unicode character-encoding technical-standard
 unicode-block character-set
@@ -1389,12 +1820,15 @@ uniform-resource-identifier identifier
 uniform-resource-name persistent-identifier uniform-resource-identifier
 unit-testing software-testing
 universally-unique-identifier identifier
+#:meta unix '{"gloss": "trademark for a powerful operating system", "wn30": "06568706-n"}'
 unix operating-system
 unix-like operating-system
 unix-pipeline data-processing-technique
 unix-shell command-line-interface program-interpreter
+#:meta unstratified-language '{"gloss": "a programming language that (like natural language) can be used as its own metalanguage", "wn30": "06901591-n"}'
 unstratified-language programming-language
 upper-ontology computational-ontology
+#:meta url '{"gloss": "the address of a web page on the world wide web", "wn30": "06358747-n"}'
 url computer-address uniform-resource-identifier
 usability software-quality-attribute
 usb computer-bus technical-standard
@@ -1403,7 +1837,9 @@ user-datagram-protocol transport-layer-protocol
 user-experience perception
 user-interface interface
 utf-8 character-encoding
+#:meta utility-program '{"gloss": "(computer science) a program designed for general support of the processes of a computer", "wn30": "06581410-n"}'
 utility-program computer-program
+#:meta utility-routine '{"gloss": "a routine that can be used as needed", "wn30": "06584702-n"}'
 utility-routine subroutine
 value '*'
 vcard data-serialization-format text-file-format
@@ -1418,13 +1854,18 @@ versioned-database immutable-database
 video-coding-format compression-format
 video-file media-file
 video-file-format file-format
+#:meta videotape '{"gloss": "a relatively wide magnetic tape for use in recording visual images and associated sound", "wn30": "04534359-n"}'
 videotape magnetic-tape
 virtual-machine application
+#:meta virtual-memory '{"gloss": "(computer science) memory created by using the hard disk to simulate additional random-access memory; the addressable storage space available to the user of a computer system in which virtual addresses are mapped into real addresses", "wn30": "04537919-n"}'
 virtual-memory memory-management
 virtual-private-network computer-network
 virtualization data-processing-technique software-abstraction
+#:meta volatile-storage '{"gloss": "computer storage that is erased when the power is turned off", "wn30": "04539876-n"}'
 volatile-storage computer-memory
+volume 'linear-dimension(volume)'
 von-neumann-architecture computer-architecture
+#:meta von-neumann-machine '{"gloss": "any digital computer incorporating the ideas of stored programs and serial counters that were proposed in 1946 by von Neumann and his colleagues", "wn30": "04541777-n"}'
 von-neumann-machine digital-computer
 vp9 video-coding-format
 vyper programming-language
@@ -1434,11 +1875,14 @@ wayland communications-protocol system-software
 web-accessibility software-quality-attribute
 web-api application-programming-interface
 web-application application web-site
+#:meta web-browser '{"gloss": "a program used to view HTML documents", "wn30": "06571301-n"}'
 web-browser application
 web-cache computer-cache
+#:meta web-crawler '{"gloss": "a computer program that prowls the internet looking for publicly accessible resources that can be added to a database; the database can then be searched with a search engine", "wn30": "06579715-n"}'
 web-crawler computer-program
 web-feed code file-format
 web-framework software-framework
+#:meta web-map-service '{"gloss": "a computer program that produces maps of spatially referenced data dynamically from geographic information", "wn30": "06578323-n"}'
 web-map-service 'about(map)' computer-program
 web-ontology-language ontology-language
 web-page '*'
@@ -1453,6 +1897,7 @@ webp image-file-format
 webrtc application-programming-interface
 websocket communications-protocol
 wi-fi communications-protocol
+#:meta wide-area-network '{"gloss": "a computer network that spans a wider area than does a local area network", "wn30": "04583477-n"}'
 wide-area-network computer-network
 wide-column-store database-management-system
 wiki web-site
@@ -1465,13 +1910,19 @@ wikimedia-foundation nonprofit-organization
 wikipedia online-encyclopedia wiki
 wiktionary dictionary wiki
 window-manager system-software
+#:meta wire-matrix-printer '{"gloss": "an impact printer in which each character is represented by a pattern of dots made by wires or styli", "wn30": "04595285-n"}'
 wire-matrix-printer dot-matrix-printer
 wireless-communication telecommunication
+#:meta wireless-local-area-network '{"gloss": "a local area network that uses high frequency radio signals to transmit and receive data over distances of a few hundred feet; uses ethernet protocol", "wn30": "04595028-n"}'
 wireless-local-area-network local-area-network
+#:meta word-processing '{"gloss": "rapid and efficient processing (storage and printing) of linguistic data for composition and editing", "wn30": "13574928-n"}'
 word-processing data-processing
+#:meta word-processor '{"gloss": "an application that provides the user with tools needed to write and edit and format text and to send it to a printer", "wn30": "06572654-n"}'
 word-processor application
+#:meta wordnet '{"gloss": "any of the machine-readable lexical databases modeled after the Princeton WordNet", "wn30": "06639428-n"}'
 wordnet lexical-database
 working-directory directory
+#:meta world-wide-web '{"gloss": "computer network consisting of a collection of internet sites that offer text and graphics and sound and animation resources through the hypertext transfer protocol", "wn30": "04604276-n"}'
 world-wide-web computer-network
 world-wide-web-consortium standards-organization
 write-ahead-log append-only-log
@@ -1487,17 +1938,3 @@ zero-day-exploit security-exploit
 zfs file-system
 zig-language programming-language
 zip-file-format archive-file-format
-computer-virus malware
-computer-worm malware
-desktop-computer personal-computer
-laptop portable-computer
-notebook-computer portable-computer
-cellular-telephone '*'
-formal-system '*'
-function '*'
-map '*'
-mathematical-graph '*'
-mathematical-object '*'
-perception '*'
-place '*'
-proposition '*'

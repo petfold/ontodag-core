@@ -1,83 +1,133 @@
 # ontodag store v1
+#:canonical 6.0 67972e8b46ff55d218aed4d14bbe034b77ea9e4c41cb563d5894b1f80110ccf6
+about enclosing-dimension
+'about(aircraft)' about
+'about(celestial-body)' about
+'about(moon)' about
+'about(planet)' about
+'about(space-debris)' about
+'about(spacecraft)' about
+'about(spaceflight)' about
+'about(star)' about
+'about(sun)' about
+#:meta absolute-magnitude '{"gloss": "(astronomy) the magnitude that a star would have if it were viewed from a distance of 10 parsecs (32.62 light years) from the earth", "wn30": "05090979-n"}'
 absolute-magnitude amount magnitude
 act '*'
 active-galactic-nucleus celestial-body
 activity '*'
 adaptive-optics method
+#:meta aerolite '{"gloss": "a stony meteorite consisting of silicate minerals", "wn30": "09189289-n"}'
 aerolite meteorite
 aerospace-engineering 'about(aircraft)' 'about(spacecraft)' engineering
 age-of-the-universe amount
+aircraft '*'
 amateur-astronomy activity astronomy
+amount '*'
+#:meta andromeda-galaxy '{"gloss": "a spiral galaxy in the constellation of Andromeda that is visible to the naked eye", "wn30": "08271656-n"}'
 andromeda-galaxy spiral-galaxy
 angle '*'
+#:meta annular-eclipse '{"gloss": "only a thin outer disk of the sun can be seen", "wn30": "07369099-n"}'
 annular-eclipse solar-eclipse
+#:meta aphelion '{"gloss": "apoapsis in solar orbit; the point in the orbit of a planet or comet that is at the greatest distance from the sun", "wn30": "08495908-n"}'
 aphelion apoapsis
+#:meta apoapsis '{"gloss": "(astronomy) the point in an orbit farthest from the body being orbited", "wn30": "08495617-n"}'
 apoapsis apsis place
+#:meta apogee '{"gloss": "apoapsis in Earth orbit; the point in its orbit where a satellite is at the greatest distance from the Earth", "wn30": "08495420-n"}'
 apogee apoapsis
+#:meta apojove '{"gloss": "apoapsis in orbit around Jupiter", "wn30": "08496095-n"}'
 apojove apoapsis
 apollo-11 space-mission
 apollo-program space-program
+#:meta aposelene '{"gloss": "apoapsis in orbit around the moon", "wn30": "08496199-n"}'
 aposelene apoapsis
 apparent-magnitude amount
 appearance '*'
 apsis orbital-position
+area 'linear-dimension(area)'
+#:meta armillary-sphere '{"gloss": "a celestial globe consisting of metal hoops; used by early astronomers to determine the positions of stars", "wn30": "02739248-n"}'
 armillary-sphere model
 artifact '*'
+#:meta ascending-node '{"gloss": "the point at which an orbit crosses the ecliptic plane going north", "wn30": "08498279-n"}'
 ascending-node orbital-node
+#:meta asterism '{"gloss": "(astronomy) a cluster of stars (or a small constellation)", "wn30": "09208496-n"}'
 asterism natural-object
+#:meta asteroid '{"gloss": "any of numerous small celestial bodies composed of rock and metal that move around the sun (mainly between the orbits of Mars and Jupiter)", "wn30": "09208702-n"}'
 asteroid minor-planet
 asteroid-belt circumstellar-disk
 astrobiology astronomy biology
+#:meta astrometry '{"gloss": "the branch of astronomy that deals with the measurement of the position and motion of celestial bodies", "wn30": "06096600-n"}'
 astrometry astronomy
+#:meta astronaut '{"gloss": "a person trained to travel in a spacecraft", "wn30": "09818022-n"}'
 astronaut person
 astronautics 'about(spaceflight)' engineering
 astronomical-catalog 'about(celestial-body)' document
+#:meta astronomical-conjunction '{"gloss": "(astronomy) apparent meeting or passing of two or more celestial bodies in the same degree of the zodiac", "wn30": "07415167-n"}'
 astronomical-conjunction encounter
 astronomical-nutation natural-event
 astronomical-opposition natural-event
 astronomical-photometry activity
+#:meta astronomical-telescope '{"gloss": "any telescope designed to collect and record electromagnetic radiation from cosmic sources", "wn30": "02751295-n"}'
 astronomical-telescope telescope
 astronomical-transit natural-event
 astronomy '*'
+#:meta astronomy-satellite '{"gloss": "a satellite equipped with a telescope to observe infrared radiation", "wn30": "02751490-n"}'
 astronomy-satellite device satellite
 astrophotography photography
+#:meta astrophysics '{"gloss": "the branch of astronomy concerned with the physical and chemical properties of celestial bodies", "wn30": "06097775-n"}'
 astrophysics astronomy
 atmospheric-entry event
+#:meta autumnal-equinoctial-point '{"gloss": "(astronomy) the equinoctial point that lies in the constellation of Virgo", "wn30": "08521112-n"}'
 autumnal-equinoctial-point equinoctial-point
+#:meta autumnal-equinox '{"gloss": "September 22", "wn30": "15223750-n"}'
 autumnal-equinox equinox
 axial-precession natural-event
 barred-spiral-galaxy spiral-galaxy
 barycenter '*'
 bayer-designation code
+#:meta big-bang '{"gloss": "(cosmology) the cosmic explosion that is hypothesized to have marked the origin of the universe", "wn30": "07408796-n"}'
 big-bang explosion
+#:meta binary-star '{"gloss": "a system of two stars that revolve around each other under their mutual gravitation", "wn30": "09221070-n"}'
 binary-star star-system
 biology '*'
+#:meta black-hole '{"gloss": "a region of space resulting from the collapse of a star; extremely high gravitational field", "wn30": "09223177-n"}'
 black-hole stellar-remnant
 bolide meteor
+#:meta booster-rocket '{"gloss": "the first stage of a multistage rocket", "wn30": "02872333-n"}'
 booster-rocket engine
 brown-dwarf celestial-body
 building '*'
+calendar-dimension dimension
 callisto galilean-satellite
+#:meta cassegrainian-telescope '{"gloss": "a reflecting telescope that has a paraboloidal primary mirror and a hyperboloidal secondary mirror; light is brought to a focus through an aperture in the center of the primary mirror", "wn30": "02978478-n"}'
 cassegrainian-telescope reflecting-telescope
 celestial-body '*'
 celestial-coordinate-system coordinate-system
+#:meta celestial-culmination '{"gloss": "(astronomy) a heavenly body'"'"'s highest celestial point above an observer'"'"'s horizon", "wn30": "08548239-n"}'
 celestial-culmination place
+#:meta celestial-equator '{"gloss": "the great circle on the celestial sphere midway between the celestial poles", "wn30": "08520190-n"}'
 celestial-equator place
+#:meta celestial-mechanics '{"gloss": "the branch of astronomy concerned with the application of Newton'"'"'s laws of motion to the motions of heavenly bodies", "wn30": "06097594-n"}'
 celestial-mechanics astronomy
 celestial-navigation '*'
 celestial-point point
+#:meta celestial-pole '{"gloss": "one of two points of intersection of the Earth'"'"'s axis and the celestial sphere", "wn30": "08621099-n"}'
 celestial-pole celestial-point place
+#:meta celestial-sphere '{"gloss": "the apparent surface of the imaginary sphere on which celestial bodies appear to be projected", "wn30": "08521267-n"}'
 celestial-sphere surface
 ceres asteroid dwarf-planet
 charon natural-satellite
+#:meta chiron '{"gloss": "an asteroid discovered in 1977; it is unique in having an orbit lying mainly between the orbits of Saturn and Uranus", "wn30": "09244022-n"}'
 chiron asteroid
 chromosphere layer
 circumstellar-disk celestial-body
+classification-scheme '*'
 clothing '*'
 cnsa space-agency
 code '*'
 collection '*'
+#:meta collimator '{"gloss": "a small telescope attached to a large telescope to use in setting the line of the larger one", "wn30": "03070854-n"}'
 collimator instrument
+#:meta communications-satellite '{"gloss": "an artificial satellite that relays signals back to earth; moves in a geostationary orbit", "wn30": "03077741-n"}'
 communications-satellite satellite spacecraft
 company '*'
 condition '*'
@@ -88,39 +138,59 @@ cosmic-inflation theory
 cosmic-microwave-background radiation
 cosmic-ray radiation
 cosmological-constant amount
+#:meta cosmologist '{"gloss": "an astronomer who studies the evolution and space-time relations of the universe", "wn30": "09819667-n"}'
 cosmologist scientist
+#:meta cosmology '{"gloss": "the branch of astrophysics that studies the origin and evolution and structure of the universe", "wn30": "06098195-n"}'
 cosmology astrophysics
+#:meta coude-telescope '{"gloss": "a reflecting telescope so constructed that the light is led to a plate holder or spectrograph", "wn30": "03116163-n"}'
 coude-telescope reflecting-telescope
+count count-dimension
+count-dimension dimension
 crewed-spacecraft spacecraft
 cubesat satellite
 dark-energy physical-phenomenon
+#:meta dark-matter '{"gloss": "(cosmology) a hypothetical form of matter that is believed to make up 90 percent of the universe; it is invisible (does not absorb or emit light) and does not collide with atomic particles but exerts gravitational force", "wn30": "14582220-n"}'
 dark-matter substance
 dark-nebula nebula
 data-chart '*'
+day '*'
+#:meta declination '{"gloss": "(astronomy) the angular distance of a celestial body north or to the south of the celestial equator; expressed in degrees; used with right ascension to specify positions on the celestial sphere", "wn30": "08632894-n"}'
 declination angle
 deimos natural-satellite
+#:meta descending-node '{"gloss": "the point at which an orbit crosses the ecliptic plane going south", "wn30": "08548924-n"}'
 descending-node orbital-node
 device '*'
+#:meta diffuse-nebula '{"gloss": "a cluster of stars within an intricate cloud of gas and dust", "wn30": "09266790-n"}'
 diffuse-nebula nebula
+dimension '*'
 document '*'
+dominance-dimension dimension
+duration 'linear-dimension(duration)'
 dwarf-galaxy galaxy
 dwarf-planet celestial-body
 earth-observation-satellite satellite
 eclipse natural-event
+#:meta ecliptic '{"gloss": "the great circle representing the apparent annual path of the sun; the plane of the Earth'"'"'s orbit around the sun; makes an angle of about 23 degrees with the equator", "wn30": "08565214-n"}'
 ecliptic place
 ecliptic-coordinate-system celestial-coordinate-system
 elliptical-galaxy galaxy
 emission-nebula nebula
 enceladus natural-satellite
+enclosing-dimension dimension
 encounter '*'
+energy 'linear-dimension(energy)'
 engine '*'
 engineering '*'
 ephemeris 'about(celestial-body)' document
 equatorial-coordinate-system celestial-coordinate-system
+#:meta equatorial-telescope '{"gloss": "a telescope whose mounting has only two axes of motion, one parallel to the Earth'"'"'s axis and the other one at right angles to it", "wn30": "03293863-n"}'
 equatorial-telescope instrument
+#:meta equinoctial-point '{"gloss": "(astronomy) either of the two celestial points at which the celestial equator intersects the ecliptic", "wn30": "08520728-n"}'
 equinoctial-point place
+#:meta equinox '{"gloss": "either of two times of the year when the sun crosses the plane of the earth'"'"'s equator and day and night are of equal length", "wn30": "15223343-n"}'
 equinox natural-event time
 eris dwarf-planet
+#:meta escape-velocity '{"gloss": "the minimum velocity needed to escape a gravitational field", "wn30": "15283554-n"}'
 escape-velocity amount
 europa galilean-satellite
 european-space-agency space-agency
@@ -132,182 +202,278 @@ explosion '*'
 extravehicular-activity activity
 facility '*'
 falcon-9 reusable-launch-system
+#:meta field-glass '{"gloss": "a small refracting telescope", "wn30": "03333129-n"}'
 field-glass refracting-telescope
 field-of-study '*'
+#:meta first-quarter '{"gloss": "the first fourth of the Moon'"'"'s period of revolution around the Earth", "wn30": "15207302-n"}'
 first-quarter half-moon
+#:meta fixed-star '{"gloss": "any star in the Ptolemaic theory of planetary motion", "wn30": "09280995-n"}'
 fixed-star star
+#:meta flare-star '{"gloss": "a red dwarf star in which luminosity can change several magnitudes in a few minutes", "wn30": "09281252-n"}'
 flare-star red-dwarf
+#:meta full-moon '{"gloss": "the time when the Moon is fully illuminated", "wn30": "15207556-n"}'
 full-moon lunar-phase
 galactic-coordinate-system celestial-coordinate-system
 galaxy '*'
 galaxy-cluster celestial-body collection
 galaxy-group collection
 galaxy-supercluster collection
+#:meta galilean-satellite '{"gloss": "one of the four satellites of Jupiter that were discovered by Galileo", "wn30": "09285979-n"}'
 galilean-satellite natural-satellite
+#:meta galilean-telescope '{"gloss": "a type of refracting telescope that is no longer used in astronomy", "wn30": "03411208-n"}'
 galilean-telescope refracting-telescope
 ganymede galilean-satellite
 gas-giant planet
+geo rectangle-dimension
 geomagnetic-storm natural-event
+#:meta geostationary-orbit '{"gloss": "a geosynchronous orbit that is fixed with respect to a position on the Earth", "wn30": "08612644-n"}'
 geostationary-orbit geosynchronous-orbit
+#:meta geosynchronous-orbit '{"gloss": "a circular orbit around the Earth having a period of 24 hours", "wn30": "08612498-n"}'
 geosynchronous-orbit orbit
+#:meta giant-star '{"gloss": "a very bright star of large diameter and low density (relative to the Sun)", "wn30": "09288769-n"}'
 giant-star star
 globular-cluster star-cluster
+graph-dimension dimension
 gravitational-lens natural-event
 gravitational-wave wave
 gravity-assist method
+#:meta half-moon '{"gloss": "the time at which the Moon is at first or last quarter when half its face is illuminated", "wn30": "15207103-n"}'
 half-moon lunar-phase
+#:meta harvest-moon '{"gloss": "the full moon nearest the September equinox", "wn30": "15207770-n"}'
 harvest-moon full-moon
 heliocentric-orbit orbit
 heliosphere region
+#:meta herschelian-telescope '{"gloss": "a reflecting telescope with the mirror slightly tilted to throw the image to the side where it can be viewed", "wn30": "03516647-n"}'
 herschelian-telescope reflecting-telescope
 hertzsprung-russell-diagram 'about(star)' image
 hill-sphere region
 hohmann-transfer-orbit orbit
 horizontal-coordinate-system celestial-coordinate-system
+#:meta host-star '{"gloss": "any star around which a planetary system revolves", "wn30": "09450454-n"}'
 host-star star
+#:meta hour-angle '{"gloss": "(astronomy) the angular distance of a celestial point measured westward along the celestial equator from the zenith crossing; the right ascension for an observer at a particular location and time of day", "wn30": "13888783-n"}'
 hour-angle angle
-hubble-space-telescope space-telescope
 'hubble'"'"'s-law' '*'
+hubble-space-telescope space-telescope
 human-spaceflight spaceflight
+hypothesis '*'
 ice-giant planet
 image '*'
+in transitive-dimension
+#:meta inferior-planet '{"gloss": "any of the planets whose orbit lies inside the earth'"'"'s orbit", "wn30": "09312999-n"}'
 inferior-planet major-planet
 information '*'
 inner-planet terrestrial-planet
 instrument '*'
 interferometry method
+#:meta intergalactic-space '{"gloss": "the space between galaxies", "wn30": "08501887-n"}'
 intergalactic-space place
 international-astronomical-union organization
 international-space-station space-station
 interplanetary-medium substance
 interstellar-medium substance
+#:meta interstellar-space '{"gloss": "the space between stars", "wn30": "08500989-n"}'
 interstellar-space place
 io galilean-satellite
 irregular-galaxy galaxy
 isro space-agency
 j2000 time-standard
 james-webb-space-telescope space-telescope
+#:meta jovian-planet '{"gloss": "any of the four outermost planets in the solar system; much larger than Earth and gaseous in nature (like Jupiter)", "wn30": "09322087-n"}'
 jovian-planet major-planet
 jupiter planet
 'kepler'"'"'s-law' '*'
 kessler-syndrome 'about(space-debris)' hypothesis
 kuiper-belt circumstellar-disk
+#:meta kuiper-belt-object '{"gloss": "any of many minor planets in the Kuiper belt outside the orbit of Neptune at the edge of the solar system", "wn30": "09327705-n"}'
 kuiper-belt-object minor-planet
 lagrange-point celestial-point
 lambda-cdm-model theory
+#:meta lander '{"gloss": "a space vehicle that is designed to land on the moon or another planet", "wn30": "03638180-n"}'
 lander spacecraft
 laniakea-supercluster galaxy-supercluster
 large-magellanic-cloud dwarf-galaxy irregular-galaxy
+#:meta last-quarter '{"gloss": "the last fourth of the Moon'"'"'s period of revolution around the Earth", "wn30": "15207430-n"}'
 last-quarter half-moon
 launch-pad facility
 launch-vehicle rocket
 layer '*'
+length 'linear-dimension(length)'
 light-pollution condition
+linear-dimension dimension
+'linear-dimension(area)' linear-dimension
+'linear-dimension(duration)' linear-dimension
+'linear-dimension(energy)' linear-dimension
+'linear-dimension(length)' linear-dimension
+'linear-dimension(mass)' linear-dimension
+'linear-dimension(pressure)' linear-dimension
+'linear-dimension(speed)' linear-dimension
+'linear-dimension(temperature)' linear-dimension
+'linear-dimension(volume)' linear-dimension
 liquid-propellant-rocket rocket
 local-group galaxy-group
 low-earth-orbit orbit
+#:meta lunar-eclipse '{"gloss": "the earth interrupts light shining on the moon", "wn30": "07368993-n"}'
 lunar-eclipse eclipse
+#:meta lunar-excursion-module '{"gloss": "a spacecraft that carries astronauts from the command module to the surface of the moon and back", "wn30": "03697366-n"}'
 lunar-excursion-module spacecraft
+#:meta lunar-phase '{"gloss": "a time when the Moon presents a particular recurring appearance", "wn30": "15206744-n"}'
 lunar-phase appearance
 magellanic-clouds collection
 magnetar neutron-star
+magnitude '*'
 main-sequence collection
 major-planet '*'
+#:meta maksutov-telescope '{"gloss": "reflecting telescope in which the aberration of the concave mirror is reduced by a meniscus lens", "wn30": "03715114-n"}'
 maksutov-telescope reflecting-telescope
 map '*'
+mass 'linear-dimension(mass)'
 medium-earth-orbit orbit
 mercury-planet planet
 messier-object celestial-body
+#:meta meteor '{"gloss": "a streak of light in the sky at night that results when a meteoroid hits the earth'"'"'s atmosphere and air friction causes the meteoroid to melt or vaporize or explode", "wn30": "11483990-n"}'
 meteor natural-event
+#:meta meteor-shower '{"gloss": "a transient shower of meteors when a meteor swarm enters the earth'"'"'s atmosphere", "wn30": "11507000-n"}'
 meteor-shower natural-event
+#:meta meteor-swarm '{"gloss": "a group of meteoroids with similar paths", "wn30": "09353338-n"}'
 meteor-swarm collection
+#:meta meteorite '{"gloss": "stony or metallic object that is the remains of a meteoroid that has reached the earth'"'"'s surface", "wn30": "09352849-n"}'
 meteorite meteoroid
+#:meta meteoroid '{"gloss": "(astronomy) any of the small solid extraterrestrial bodies that hits the earth'"'"'s atmosphere", "wn30": "09353109-n"}'
 meteoroid celestial-body
 method '*'
+#:meta micrometeorite '{"gloss": "a meteorite or meteoroid so small that it drifts down to earth without becoming intensely heated in the atmosphere", "wn30": "09353918-n"}'
 micrometeorite meteorite
+#:meta milky-way '{"gloss": "the galaxy containing the solar system; consists of millions of stars that can be seen as a diffuse band of light stretching across the night sky", "wn30": "09354984-n"}'
 milky-way galaxy
+#:meta minor-planet '{"gloss": "any of numerous small celestial bodies that move around the sun", "wn30": "09355623-n"}'
 minor-planet celestial-body
 model '*'
+moon '*'
+#:meta multiple-star '{"gloss": "a system of three or more stars associated by gravity", "wn30": "09363064-n"}'
 multiple-star star-system
+#:meta nadir '{"gloss": "the point below the observer that is directly opposite the zenith on the imaginary sphere against which celestial bodies appear to be projected", "wn30": "08600760-n"}'
 nadir place
 nasa space-agency
 natural-event '*'
 natural-object '*'
+#:meta natural-satellite '{"gloss": "any celestial body orbiting around a planet or star", "wn30": "09424270-n"}'
 natural-satellite celestial-body
 navigation-satellite satellite spacecraft
 near-earth-object celestial-body
 nebula celestial-body
 neptune planet
+#:meta neutron-star '{"gloss": "a star that has collapsed under its own gravity; it is composed of neutrons", "wn30": "09369692-n"}'
 neutron-star star stellar-remnant
 new-general-catalogue astronomical-catalog
+#:meta new-moon '{"gloss": "the time at which the Moon appears as a narrow waxing crescent", "wn30": "15206943-n"}'
 new-moon lunar-phase
+#:meta newtonian-telescope '{"gloss": "reflecting telescope in which the image is viewed through an eyepiece perpendicular to main axis", "wn30": "03822767-n"}'
 newtonian-telescope reflecting-telescope
+#:meta nova '{"gloss": "a star that ejects some of its material in the form of a cloud and become more luminous in the process", "wn30": "09374493-n"}'
 nova variable-star
+#:meta nucleosynthesis '{"gloss": "(astronomy) the cosmic synthesis of atoms more complex than the hydrogen atom", "wn30": "13523503-n"}'
 nucleosynthesis natural-event process
 observable-universe region
 observational-astronomy astronomy
+#:meta observatory '{"gloss": "a building designed and equipped to observe astronomical phenomena", "wn30": "03839671-n"}'
 observatory building
 occultation natural-event
+#:meta oort-cloud '{"gloss": "(astronomy) a hypothetical huge collection of comets orbiting the sun far beyond the orbit of Pluto; perturbations (as by other stars) can upset a comet'"'"'s orbit and may send it tumbling toward the sun", "wn30": "08270662-n"}'
 oort-cloud celestial-body collection
 open-cluster star-cluster
+#:meta optical-telescope '{"gloss": "an astronomical telescope designed to collect and record light from cosmic sources", "wn30": "03852688-n"}'
 optical-telescope astronomical-telescope
 orbit '*'
 orbital-eccentricity amount
 orbital-elements amount
+#:meta orbital-inclination '{"gloss": "(astronomy) the angle between the plane of the orbit and the plane of the ecliptic stated in degrees", "wn30": "13889843-n"}'
 orbital-inclination amount angle
+#:meta orbital-mechanics '{"gloss": "the branch of astronomy that studies the motion of natural and artificial bodies in space", "wn30": "06096451-n"}'
 orbital-mechanics celestial-mechanics
+#:meta orbital-node '{"gloss": "(astronomy) a point where an orbit crosses a plane", "wn30": "08498424-n"}'
 orbital-node place
 orbital-period amount
 orbital-position celestial-point
 orbital-spaceflight spaceflight
 orbiter satellite
 organization '*'
+#:meta orion '{"gloss": "a constellation on the equator to the east of Taurus; contains Betelgeuse and Rigel", "wn30": "09380117-n"}'
 orion constellation
+#:meta outer-planet '{"gloss": "(astronomy) a major planet whose orbit is outside the asteroid belt (Jupiter, Saturn, Uranus, Neptune, Pluto)", "wn30": "09381480-n"}'
 outer-planet major-planet
+#:meta pallasite '{"gloss": "a meteorite composed principally of olivine and metallic iron", "wn30": "09384106-n"}'
 pallasite meteorite
 parallax angle
+#:meta partial-eclipse '{"gloss": "an eclipse in which the eclipsed body is only partially obscured", "wn30": "07369344-n"}'
 partial-eclipse event
+#:meta periapsis '{"gloss": "(astronomy) the point in an orbit closest to the body being orbited", "wn30": "08618379-n"}'
 periapsis apsis place
+#:meta perigee '{"gloss": "periapsis in Earth orbit; the point in its orbit where a satellite is nearest to the Earth", "wn30": "08618669-n"}'
 perigee periapsis
+#:meta perihelion '{"gloss": "periapsis in solar orbit; the point in the orbit of a planet or comet where it is nearest to the sun", "wn30": "08618831-n"}'
 perihelion periapsis
+#:meta perijove '{"gloss": "periapsis in orbit around Jupiter", "wn30": "08619006-n"}'
 perijove periapsis
+#:meta periselene '{"gloss": "periapsis in orbit around the moon", "wn30": "08619112-n"}'
 periselene periapsis
 person '*'
 phobos natural-satellite
 photography '*'
 photosphere layer
 physical-object '*'
+physical-phenomenon '*'
 physics '*'
 place '*'
 planet '*'
+#:meta planetarium '{"gloss": "a building housing an instrument for projecting the positions of the planets onto a domed ceiling", "wn30": "03956157-n"}'
 planetarium building
+#:meta planetary-moon '{"gloss": "any natural satellite of a planet", "wn30": "09358226-n"}'
 planetary-moon natural-satellite
+#:meta planetary-nebula '{"gloss": "a nebula that was once thought to be a star with its planets but is now thought to be a very hot star surrounded by an expanding envelope of ionized gases that emit a fluorescent glow because of intense radiation from the star", "wn30": "09394797-n"}'
 planetary-nebula emission-nebula
 planetary-rover spacecraft
 planetary-science 'about(planet)' astronomy
 planetary-system celestial-body collection
+#:meta planetesimal '{"gloss": "one of many small solid celestial bodies thought to have existed at an early stage in the development of the solar system", "wn30": "09395086-n"}'
 planetesimal celestial-body
 pluto dwarf-planet
 point '*'
 polar-orbit orbit
+prefix-dimension dimension
+pressure 'linear-dimension(pressure)'
+#:meta primary-body '{"gloss": "(astronomy) a celestial body (especially a star) relative to other objects in orbit around it", "wn30": "09398769-n"}'
 primary-body celestial-body
+process '*'
 proper-motion amount
 protostar star
+#:meta pulsar '{"gloss": "a degenerate neutron star; small and extremely dense; rotates very fast and emits regular pulses of polarized radiation", "wn30": "09400987-n"}'
 pulsar neutron-star
-amount '*'
+#:meta quasar '{"gloss": "a starlike object that may send out radio waves and other forms of energy; many have large red shifts", "wn30": "09402370-n"}'
 quasar active-galactic-nucleus
 radiation '*'
+#:meta radio-astronomy '{"gloss": "the branch of astronomy that detects and studies the radio waves emitted by celestial bodies", "wn30": "06096759-n"}'
 radio-astronomy observational-astronomy
+#:meta radio-interferometer '{"gloss": "radio telescope that uses interference patterns from two antennas instead of a parabolic antenna", "wn30": "04042632-n"}'
 radio-interferometer radio-telescope
+#:meta radio-telescope '{"gloss": "astronomical telescope that picks up electromagnetic radiations in the radio-frequency range from extraterrestrial sources", "wn30": "04044716-n"}'
 radio-telescope astronomical-telescope
+#:meta reconnaissance-satellite '{"gloss": "a satellite with sensors to detect nuclear explosions", "wn30": "04290762-n"}'
 reconnaissance-satellite earth-observation-satellite
+rectangle-dimension dimension
+#:meta red-dwarf '{"gloss": "a small, old, relatively cool star; approximately 100 times the mass of Jupiter", "wn30": "09406198-n"}'
 red-dwarf star
+#:meta red-giant '{"gloss": "a large, old, luminous star; has a relatively low surface temperature and a diameter large relative to the sun", "wn30": "09406368-n"}'
 red-giant giant-star
 red-shift '*'
+#:meta reflecting-telescope '{"gloss": "optical telescope consisting of a large concave mirror that produces an image that is magnified by the eyepiece", "wn30": "04068601-n"}'
 reflecting-telescope optical-telescope
+#:meta refracting-telescope '{"gloss": "optical telescope that has a large convex lens that produces an image that is viewed through the eyepiece", "wn30": "04070207-n"}'
 refracting-telescope optical-telescope
 region '*'
 reusable-launch-system launch-vehicle spacecraft
+reversed-dimension dimension
+#:meta right-ascension '{"gloss": "(astronomy) the equatorial coordinate specifying the angle, measured eastward along the celestial equator, from the vernal equinox to the intersection of the hour circle that passes through an object in the sky; usually expressed in hours and minutes and seconds; used with declination to specify positions on the celestial sphere", "wn30": "08633191-n"}'
 right-ascension angle
 roche-limit amount
 rocket '*'
@@ -318,54 +484,82 @@ satellite '*'
 saturn planet
 saturn-v launch-vehicle
 scattered-disk circumstellar-disk
+#:meta schmidt-telescope '{"gloss": "reflecting telescope that has plate that corrects for aberration so a wide area of sky can be photographed", "wn30": "04145863-n"}'
 schmidt-telescope reflecting-telescope
 science '*'
 scientist '*'
+#:meta selenology '{"gloss": "the branch of astronomy that deals with the moon", "wn30": "06097983-n"}'
 selenology 'about(moon)' astronomy
 semi-major-axis amount
+shared-with reversed-dimension
+#:meta sidereal-day '{"gloss": "the time for one complete rotation of the earth relative to a particular star, about 4 minutes shorter than a mean solar day", "wn30": "15208333-n"}'
 sidereal-day day sidereal-time
+#:meta sidereal-hour '{"gloss": "1/24 of a sidereal day", "wn30": "15209074-n"}'
 sidereal-hour amount sidereal-time
+#:meta sidereal-month '{"gloss": "period between successive conjunctions with a star, 27.322 days", "wn30": "15209174-n"}'
 sidereal-month amount sidereal-time
+#:meta sidereal-time '{"gloss": "measured by the diurnal motion of stars", "wn30": "15208162-n"}'
 sidereal-time time time-standard
+#:meta sidereal-year '{"gloss": "the time for the earth to make one complete revolution around the sun, relative to the fixed stars", "wn30": "15208898-n"}'
 sidereal-year amount sidereal-time
+#:meta siderite '{"gloss": "a meteorite consisting principally of nickel and iron", "wn30": "09434237-n"}'
 siderite meteorite
+size dominance-dimension
 small-magellanic-cloud dwarf-galaxy irregular-galaxy
+#:meta solar-antapex '{"gloss": "the point opposite in direction from the solar apex; the point the solar system is moving away from", "wn30": "08495249-n"}'
 solar-antapex place
+#:meta solar-apex '{"gloss": "the point on the celestial sphere toward which the sun and solar system appear to be moving relative to the fixed stars", "wn30": "08494987-n"}'
 solar-apex place
 solar-cycle natural-event
+#:meta solar-eclipse '{"gloss": "the moon interrupts light from the sun", "wn30": "07368877-n"}'
 solar-eclipse eclipse
 solar-flare natural-event
+#:meta solar-physics '{"gloss": "the branch of astronomy that deals with the sun", "wn30": "06098088-n"}'
 solar-physics 'about(sun)' astronomy physics
 solar-radiation radiation
+#:meta solar-system '{"gloss": "the sun with the celestial bodies that revolve around it in its gravitational field", "wn30": "09439433-n"}'
 solar-system planetary-system
+#:meta solar-telescope '{"gloss": "a telescope designed to make observations of the sun", "wn30": "04258618-n"}'
 solar-telescope telescope
 solar-wind natural-event
 solid-propellant-rocket rocket
+#:meta solstice '{"gloss": "either of the two times of the year when the sun is at its greatest distance from the celestial equator", "wn30": "15221818-n"}'
 solstice natural-event time
 soyuz-spacecraft crewed-spacecraft space-capsule
 space-agency organization
+#:meta space-capsule '{"gloss": "a spacecraft designed to transport people and support human life in outer space", "wn30": "04264765-n"}'
 space-capsule spacecraft
 space-debris physical-object
 space-mission activity
+#:meta space-probe '{"gloss": "a rocket-propelled guided missile that can escape the earth'"'"'s atmosphere; makes observations of the solar system that cannot be made by terrestrial observation", "wn30": "04265668-n"}'
 space-probe vehicle
+#:meta space-program '{"gloss": "a technological program intended to explore outer space", "wn30": "05900716-n"}'
 space-program activity
 space-rendezvous event
+#:meta space-shuttle '{"gloss": "a reusable spacecraft with wings for a controlled descent through the Earth'"'"'s atmosphere", "wn30": "04266014-n"}'
 space-shuttle reusable-launch-system
+#:meta space-station '{"gloss": "a manned artificial satellite in a fixed orbit designed for scientific research", "wn30": "04266162-n"}'
 space-station crewed-spacecraft satellite
+#:meta space-suit '{"gloss": "a pressure suit worn by astronauts while in outer space", "wn30": "04266375-n"}'
 space-suit clothing
 space-telescope satellite telescope
 space-weather astrophysics
 spacecraft '*'
+#:meta spaceflight '{"gloss": "a voyage outside the Earth'"'"'s atmosphere", "wn30": "00313502-n"}'
 spaceflight voyage
 spaceport facility
 spacex company
 spectral-class stellar-classification
+#:meta spectrograph '{"gloss": "a spectroscope by which spectra can be photographed", "wn30": "04272782-n"}'
 spectrograph instrument
 spectroscopy activity
+speed 'linear-dimension(speed)'
+#:meta spiral-galaxy '{"gloss": "a galaxy having a spiral structure; arms containing younger stars spiral out from old stars at the center", "wn30": "08271457-n"}'
 spiral-galaxy galaxy
 sputnik-1 satellite
 star '*'
 star-catalog 'about(star)' astronomical-catalog
+#:meta star-chart '{"gloss": "a chart showing the relative positions of the stars in a particular part of the sky", "wn30": "07002459-n"}'
 star-chart 'about(star)' data-chart map
 star-cluster celestial-body collection
 star-system celestial-body collection
@@ -375,50 +569,61 @@ stellar-parallax parallax
 stellar-remnant celestial-body
 suborbital-spaceflight spaceflight
 substance '*'
+#:meta summer-solstice '{"gloss": "June 21, when the sun is at its northernmost point", "wn30": "15222012-n"}'
 summer-solstice solstice
+sun '*'
 sun-synchronous-orbit polar-orbit
 sunspot natural-event
+#:meta supergiant-star '{"gloss": "an extremely bright star of very large diameter and low density", "wn30": "09450708-n"}'
 supergiant-star star
+#:meta superior-planet '{"gloss": "any of the planets whose orbit lies outside the earth'"'"'s orbit", "wn30": "09450866-n"}'
 superior-planet major-planet
 supermassive-black-hole black-hole
+#:meta supernova '{"gloss": "a star that explodes and becomes extremely luminous in the process", "wn30": "09451237-n"}'
 supernova star
 supernova-remnant emission-nebula
 surface '*'
 synodic-month amount
 telescope '*'
+temperature 'linear-dimension(temperature)'
+#:meta terrestrial-planet '{"gloss": "a planet having a compact rocky surface like the Earth'"'"'s; the four innermost planets in the solar system", "wn30": "09456369-n"}'
 terrestrial-planet planet
+theory '*'
 tidal-locking natural-event
-time '*'
+time calendar-dimension
+time-standard '*'
 titan natural-satellite
+#:meta total-eclipse '{"gloss": "an eclipse as seen from a place where the eclipsed body is completely obscured", "wn30": "07369206-n"}'
 total-eclipse event
 trans-neptunian-object minor-planet
+#:meta transit-instrument '{"gloss": "a telescope mounted on an axis running east and west and used to time the transit of a celestial body across the meridian", "wn30": "04471912-n"}'
 transit-instrument telescope
+transitive-dimension dimension
+#:meta trapezium-cluster '{"gloss": "a multiple star in the constellation of Orion", "wn30": "09461069-n"}'
 trapezium-cluster multiple-star
 triton natural-satellite
 uranus planet
+#:meta variable-star '{"gloss": "a star that varies noticeably in brightness", "wn30": "09469152-n"}'
 variable-star star
 vehicle '*'
+#:meta vernal-equinoctial-point '{"gloss": "(astronomy) the equinoctial point that lies in the constellation of Pisces", "wn30": "08520958-n"}'
 vernal-equinoctial-point equinoctial-point
+#:meta vernal-equinox '{"gloss": "March 21", "wn30": "15223574-n"}'
 vernal-equinox equinox
 virgo-supercluster galaxy-supercluster
+volume 'linear-dimension(volume)'
 voyage '*'
 voyager-1 space-probe
 voyager-2 space-probe
 wave '*'
 weapon '*'
+#:meta weather-satellite '{"gloss": "a satellite that transmits frequent picture of the earth below", "wn30": "04567593-n"}'
 weather-satellite earth-observation-satellite
+#:meta white-dwarf '{"gloss": "a faint star of enormous density", "wn30": "09478569-n"}'
 white-dwarf star stellar-remnant
+#:meta winter-solstice '{"gloss": "December 22, when the sun is at its southernmost point", "wn30": "15223190-n"}'
 winter-solstice solstice
+#:meta zenith '{"gloss": "the point above the observer that is directly opposite the nadir on the imaginary sphere against which celestial bodies appear to be projected", "wn30": "08684769-n"}'
 zenith place
+#:meta zodiac '{"gloss": "a belt-shaped region in the heavens on either side to the ecliptic; divided into 12 constellations or signs for astrological purposes", "wn30": "08685188-n"}'
 zodiac place
-aircraft '*'
-classification-scheme '*'
-day '*'
-hypothesis '*'
-magnitude '*'
-moon '*'
-physical-phenomenon '*'
-process '*'
-sun '*'
-theory '*'
-time-standard '*'

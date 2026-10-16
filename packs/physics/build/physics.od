@@ -1,271 +1,523 @@
 # ontodag store v1
+#:canonical 6.0 e973119cc4f915b55ffab7a2642629418e267132268f6118ad6f0812e81ca4ee
+about enclosing-dimension
+'about(atom)' about
+'about(atomic-nucleus)' about
+'about(boson)' about
+'about(electric-charge)' about
+'about(electricity)' about
+'about(elementary-particle)' about
+'about(fermion)' about
+'about(fluid)' about
+'about(force)' about
+'about(galaxy)' about
+'about(gas)' about
+'about(gravity)' about
+'about(heat-energy)' about
+'about(magnetism)' about
+'about(planet)' about
+'about(radiation)' about
+'about(solar-system)' about
+'about(visible-light)' about
 absolute-magnitude '*'
+#:meta absorber '{"gloss": "(physics) material in a nuclear reactor that absorbs radiation", "wn30": "14598079-n"}'
 absorber material
+#:meta absorptivity '{"gloss": "(physics) the property of a body that determines the fraction of the incident radiation or sound flux absorbed or absorbable by the body", "wn30": "05010062-n"}'
 absorptivity attribute
+#:meta acoustics '{"gloss": "the study of the physical properties of sound", "wn30": "06094774-n"}'
 acoustics physics
+#:meta aeromechanics '{"gloss": "the branch of mechanics that deals with the motion of gases (especially air) and their effects on bodies in the flow", "wn30": "06114351-n"}'
 aeromechanics 'about(gas)' physics
 amount '*'
+#:meta amplitude '{"gloss": "(physics) the maximum displacement of a periodic wave", "wn30": "07444882-n"}'
 amplitude magnitude
 angle '*'
+#:meta anomaly '{"gloss": "(astronomy) position of a planet as defined by its angular distance from its perihelion (as observed from the sun)", "wn30": "08622763-n"}'
 anomaly angle
+#:meta antibaryon '{"gloss": "the antiparticle of a baryon; a hadron with a baryon number of -1", "wn30": "09199219-n"}'
 antibaryon antiparticle hadron
+#:meta antilepton '{"gloss": "the antiparticle of a lepton", "wn30": "09199341-n"}'
 antilepton antiparticle
+#:meta antimeson '{"gloss": "the antiparticle of a meson", "wn30": "09199498-n"}'
 antimeson hadron
+#:meta antimuon '{"gloss": "the antiparticle of a muon; decays to positron and neutrino and antineutrino", "wn30": "09199581-n"}'
 antimuon antilepton
+#:meta antineutrino '{"gloss": "the antiparticle of a neutrino", "wn30": "09199728-n"}'
 antineutrino antilepton
+#:meta antineutron '{"gloss": "the antiparticle of a neutron", "wn30": "09199817-n"}'
 antineutron antibaryon
+#:meta antinode '{"gloss": "(physics) the point of maximum displacement in a periodic system", "wn30": "08498732-n"}'
 antinode place
+#:meta antiparticle '{"gloss": "a particle that has the same mass as another particle but has opposite values for its other properties; interaction of a particle and its antiparticle results in annihilation and the production of radiant energy", "wn30": "09199904-n"}'
 antiparticle elementary-particle
+#:meta antiproton '{"gloss": "an unstable negatively charged proton; the antiparticle of a proton", "wn30": "09200193-n"}'
 antiproton antibaryon
+#:meta antiquark '{"gloss": "the antiparticle of a quark", "wn30": "09200317-n"}'
 antiquark elementary-particle
+#:meta antitauon '{"gloss": "an antilepton of very great mass", "wn30": "09200419-n"}'
 antitauon antilepton
 apoapsis '*'
 appearance '*'
+area 'linear-dimension(area)'
 artifact '*'
 asterism '*'
+#:meta astronomer '{"gloss": "a physicist who studies astronomy", "wn30": "09818343-n"}'
 astronomer physicist
 astronomical-conjunction '*'
+#:meta astronomical-rising '{"gloss": "(astronomy) the rising of a star above the horizon", "wn30": "07311661-n"}'
 astronomical-rising event
+atom '*'
+#:meta atomic-nucleus '{"gloss": "the positively charged dense center of an atom", "wn30": "09375085-n"}'
 atomic-nucleus particle
+#:meta atomic-spectrum '{"gloss": "(physics) a spectrum of radiation caused by electron transitions within an atom; the series of spectrum lines is characteristic of the element", "wn30": "11426288-n"}'
 atomic-spectrum physical-phenomenon
 attractive-force '*'
+#:meta attractor '{"gloss": "(physics) a point in the ideal multidimensional phase space that is used to describe a system toward which the system tends to evolve regardless of the starting conditions of the system", "wn30": "05866199-n"}'
 attractor mathematical-object
 attribute '*'
 autumnal-equinoctial-point '*'
+#:meta b-meson '{"gloss": "exceedingly short-lived meson", "wn30": "09224828-n"}'
 b-meson meson
+#:meta barycenter '{"gloss": "(astronomy) the common center of mass around which two or more bodies revolve", "wn30": "08523064-n"}'
 barycenter center-point point
+#:meta baryon '{"gloss": "any of the elementary particles having a mass equal to or greater than that of a proton and that participate in strong interactions; a hadron with a baryon number of +1", "wn30": "09215023-n"}'
 baryon fermion hadron
+#:meta bohr-theory '{"gloss": "(physics) a theory of atomic structure that combined Rutherford'"'"'s model with the quantum theory; electrons orbiting a nucleus can only be in certain stationary energy states and light is emitted when electrons jump from one energy state to another", "wn30": "06103422-n"}'
 bohr-theory 'about(atom)' scientific-theory
+#:meta bose-einstein-statistics '{"gloss": "(physics) statistical law obeyed by a system of particles whose wave function is not changed when two particles are interchanged (the Pauli exclusion principle does not apply)", "wn30": "05875723-n"}'
 bose-einstein-statistics 'about(boson)' physical-law
+#:meta boson '{"gloss": "any particle that obeys Bose-Einstein statistics but not the Pauli exclusion principle; all nuclei with an even mass number are bosons", "wn30": "09226997-n"}'
 boson particle
+#:meta bottom-quark '{"gloss": "a quark with a charge of -1/3 and a mass about 10,000 times that of an electron", "wn30": "09227530-n"}'
 bottom-quark quark
+calendar-dimension dimension
+#:meta capacitance '{"gloss": "an electrical phenomenon whereby an electric charge is stored", "wn30": "11433546-n"}'
 capacitance attribute 'linear-dimension(capacitance)'
 celestial-body '*'
 celestial-culmination '*'
+#:meta celestial-limb '{"gloss": "(astronomy) the circumferential edge of the apparent disc of the sun or the moon or a planet", "wn30": "08592494-n"}'
 celestial-limb place
+#:meta center-of-buoyancy '{"gloss": "(physics) the center of mass of the immersed part of ship or other floating object", "wn30": "08522287-n"}'
 center-of-buoyancy center-point
 center-point '*'
 change '*'
+#:meta chaotic-system '{"gloss": "(physics) a dynamical system that is extremely sensitive to its initial conditions", "wn30": "06246529-n"}'
 chaotic-system dynamical-system
+#:meta charge-recombination '{"gloss": "(physics) a combining of charges or transfer of electrons in a gas that results in the neutralization of ions; important for ions arising from the passage of high-energy particles", "wn30": "07374357-n"}'
 charge-recombination event
+#:meta charm-quark '{"gloss": "a quark with an electric charge of +2/3 and a mass 2900 times that of an electron and a charm of +1", "wn30": "09242232-n"}'
 charm-quark quark
 chemistry '*'
 collection '*'
+#:meta collision '{"gloss": "(physics) a brief event in which two or more bodies come together", "wn30": "07302542-n"}'
 collision event
+#:meta comet-coma '{"gloss": "(astronomy) the luminous cloud of particles surrounding the frozen nucleus of a comet; forms as the comet approaches the sun and is warmed", "wn30": "09251002-n"}'
 comet-coma natural-object
+#:meta comet-nucleus '{"gloss": "(astronomy) the center of the head of a comet; consists of small solid particles of ice and frozen gas that vaporizes on approaching the sun to form the coma and tail", "wn30": "09375223-n"}'
 comet-nucleus natural-object
+#:meta conservation-law '{"gloss": "(physics) the maintenance of a certain quantities unchanged during chemical reactions or physical transformations", "wn30": "06104073-n"}'
 conservation-law physical-law
+#:meta copernican-system '{"gloss": "(astronomy) Copernicus'"'"' astronomical model in which the Earth rotates around the sun", "wn30": "05890642-n"}'
 copernican-system 'about(solar-system)' theory
+#:meta coriolis-effect '{"gloss": "(physics) an effect whereby a body moving in a rotating frame of reference experiences the Coriolis force acting perpendicular to the direction of motion and to the axis of rotation; on Earth the Coriolis effect deflects moving bodies to the right in the northern hemisphere and to the left in the southern hemisphere", "wn30": "11413263-n"}'
 coriolis-effect physical-phenomenon
+#:meta coriolis-force '{"gloss": "(physics) a force due to the earth'"'"'s rotation; acts on a body in motion (airplane or projectile) in a rotating reference frame; in a rotating frame of reference Newton'"'"'s second law of motion can be made to apply if in addition to the real forces acting on a body a Coriolis force and a centrifugal force are introduced", "wn30": "11440123-n"}'
 coriolis-force force physical-phenomenon
+#:meta corpuscular-theory '{"gloss": "(physics) the theory that light is transmitted as a stream of particles", "wn30": "06106084-n"}'
 corpuscular-theory 'about(visible-light)' scientific-theory
+#:meta cosmic-string '{"gloss": "(cosmology) a hypothetical one-dimensional subatomic particle having a concentration of energy and the dynamic properties of a flexible loop", "wn30": "09449282-n"}'
 cosmic-string elementary-particle
+count count-dimension
+count-dimension dimension
+#:meta crystallography '{"gloss": "the branch of science that studies the formation and structure of crystals", "wn30": "06098876-n"}'
 crystallography chemistry
+#:meta 'dalton'"'"'s-law' '{"gloss": "(chemistry and physics) law stating that the pressure exerted by a mixture of gases equals the sum of the partial pressures of the gases in the mixture; the pressure of a gas in a mixture equals the pressure it would exert if it occupied the same volume alone at the same temperature", "wn30": "05876469-n"}'
 'dalton'"'"'s-law' 'about(gas)' physical-law
 declination '*'
-delta-ray electron elementary-particle
+#:meta delta-ray '{"gloss": "an electron ejected from matter by ionizing radiation", "wn30": "09265025-n"}'
+delta-ray electron
 density '*'
 device '*'
+#:meta diffusion '{"gloss": "(physics) the process in which there is movement of a substance from an area of high concentration of that substance to an area of lower concentration", "wn30": "13465530-n"}'
 diffusion process
+dimension '*'
 distance '*'
+dominance-dimension dimension
+#:meta down-quark '{"gloss": "a stable quark with an electric charge of -1/3 and a mass 607 times that of an electron", "wn30": "09269573-n"}'
 down-quark quark
+duration 'linear-dimension(duration)'
+#:meta dynamical-system '{"gloss": "(physics) a phase space together with a transformation of that space", "wn30": "06246361-n"}'
 dynamical-system mathematical-object
+#:meta dynamics '{"gloss": "the branch of mechanics concerned with the forces that cause motions of bodies", "wn30": "06113597-n"}'
 dynamics 'about(force)' physics
+#:meta eclipse-egress '{"gloss": "(astronomy) the reappearance of a celestial body after an eclipse", "wn30": "07322138-n"}'
 eclipse-egress event
+#:meta eclipse-ingress '{"gloss": "(astronomy) the disappearance of a celestial body prior to an eclipse", "wn30": "07322341-n"}'
 eclipse-ingress event
+electric-charge '*'
+#:meta electrical-phenomenon '{"gloss": "a physical phenomenon involving electricity", "wn30": "11449002-n"}'
 electrical-phenomenon physical-phenomenon
+electricity '*'
+#:meta electromagnetism '{"gloss": "the branch of physics concerned with electromagnetic phenomena", "wn30": "06099107-n"}'
 electromagnetism 'about(electricity)' 'about(magnetism)' physics
 electron lepton
+#:meta electrostatics '{"gloss": "the branch of physics that deals with static electricity", "wn30": "06100101-n"}'
 electrostatics 'about(electric-charge)' physics
+#:meta elementary-particle '{"gloss": "(physics) a particle that is less complex than an atom; regarded as constituents of all matter", "wn30": "09272085-n"}'
 elementary-particle particle
+enclosing-dimension dimension
+energy 'linear-dimension(energy)'
+#:meta entropy '{"gloss": "(thermodynamics) a thermodynamic quantity representing the amount of energy in a system that is no longer available for doing mechanical work", "wn30": "05012585-n"}'
 entropy attribute
 equinoctial-point '*'
 event '*'
+#:meta fermi-dirac-statistics '{"gloss": "(physics) law obeyed by a systems of particles whose wave function changes when two particles are interchanged (the Pauli exclusion principle applies)", "wn30": "05877991-n"}'
 fermi-dirac-statistics 'about(fermion)' physical-law
+#:meta fermion '{"gloss": "any particle that obeys Fermi-Dirac statistics and is subject to the Pauli exclusion principle", "wn30": "09279161-n"}'
 fermion particle
 field-of-study '*'
+#:meta field-theory '{"gloss": "(physics) a theory that explains a physical phenomenon in terms of a field and the manner in which it interacts with matter or with other fields", "wn30": "05994484-n"}'
 field-theory theory
+fluid '*'
+#:meta flux-density '{"gloss": "the amount of magnetic flux in a unit area perpendicular to the direction of magnetic flow", "wn30": "05100525-n"}'
 flux-density 'linear-dimension(flux-density)' magnitude
-free-electron electron elementary-particle
+force '*'
+#:meta free-electron '{"gloss": "electron that is not attached to an atom or ion or molecule but is free to move under the influence of an electric field", "wn30": "09285648-n"}'
+free-electron electron
+#:meta friction '{"gloss": "the resistance encountered when one body is moved in contact with another", "wn30": "11459538-n"}'
 friction physical-phenomenon
+#:meta fundamental-interaction '{"gloss": "(physics) the transfer of energy between elementary particles or between an elementary particle and a field or between fields; mediated by gauge bosons", "wn30": "11516113-n"}'
 fundamental-interaction physical-phenomenon
+galaxy '*'
+gas '*'
+#:meta 'gay-lussac'"'"'s-law' '{"gloss": "(physics) the density of an ideal gas at constant pressure varies inversely with the temperature", "wn30": "05878229-n"}'
 'gay-lussac'"'"'s-law' 'about(gas)' physical-law
+geo rectangle-dimension
+#:meta gluon '{"gloss": "a gauge boson that mediates strong interaction among quarks", "wn30": "09289802-n"}'
 gluon boson elementary-particle
+graph-dimension dimension
+#:meta gravitational-accretion '{"gloss": "(astronomy) the formation of a celestial object by the effect of gravity pulling together surrounding objects and gases", "wn30": "13425425-n"}'
 gravitational-accretion increase
+#:meta gravitational-mass '{"gloss": "(physics) the mass of a body as measured by its gravitational attraction for other bodies", "wn30": "05025520-n"}'
 gravitational-mass attribute physical-mass
+#:meta graviton '{"gloss": "a gauge boson that mediates the (extremely weak) gravitational interactions between particles", "wn30": "09291633-n"}'
 graviton particle
+gravity '*'
+#:meta gravity-wave '{"gloss": "(physics) a wave that is hypothesized to propagate gravity and to travel at the speed of light", "wn30": "07344875-n"}'
 gravity-wave wave-motion
+#:meta ground-state '{"gloss": "(physics) the lowest energy state of an atom or other particle", "wn30": "13924196-n"}'
 ground-state state
+#:meta hadron '{"gloss": "any elementary particle that interacts strongly with other particles", "wn30": "09300674-n"}'
 hadron elementary-particle
+#:meta heat-energy '{"gloss": "a form of energy that is transferred by a difference in temperature", "wn30": "11466043-n"}'
 heat-energy attribute
+#:meta hodoscope '{"gloss": "(physics) scientific instrument that traces the path of a charged particle", "wn30": "03524425-n"}'
 hodoscope instrument
+#:meta 'hooke'"'"'s-law' '{"gloss": "(physics) the principle that (within the elastic limit) the stress applied to a solid is proportional to the strain produced", "wn30": "05879003-n"}'
 'hooke'"'"'s-law' physical-law
 hour-angle '*'
+#:meta 'hubble'"'"'s-law' '{"gloss": "(astronomy) the generalization that the speed of recession of distant galaxies (the red shift) is proportional to their distance from the observer", "wn30": "05879204-n"}'
 'hubble'"'"'s-law' 'about(galaxy)' physical-law
+#:meta hydrodynamics '{"gloss": "study of fluids in motion", "wn30": "06113914-n"}'
 hydrodynamics 'about(fluid)' physics
+#:meta hydrogen-ion '{"gloss": "a positively charged atom of hydrogen; that is to say, a normal hydrogen atomic nucleus", "wn30": "09307719-n"}'
 hydrogen-ion proton
+#:meta hyperon '{"gloss": "any baryon that is not a nucleon; unstable particle with mass greater than a neutron", "wn30": "09308242-n"}'
 hyperon baryon
+#:meta illuminance '{"gloss": "the luminous flux incident on a unit area", "wn30": "05018542-n"}'
 illuminance 'linear-dimension(illuminance)' luminosity
+#:meta illumination-phase '{"gloss": "(astronomy) the particular appearance of a body'"'"'s state of illumination (especially one of the recurring shapes of the part of Earth'"'"'s moon that is illuminated by the sun)", "wn30": "04676540-n"}'
 illumination-phase appearance
+in transitive-dimension
 increase '*'
+#:meta inductance '{"gloss": "an electrical phenomenon whereby an electromotive force (EMF) is generated in a closed circuit by a change in the flow of current", "wn30": "11468172-n"}'
 inductance attribute 'linear-dimension(inductance)'
+#:meta inertia '{"gloss": "(physics) the tendency of a body to maintain its state of rest or uniform motion unless acted upon by an external force", "wn30": "11468763-n"}'
 inertia attribute
+#:meta inertial-mass '{"gloss": "(physics) the mass of a body as determined by the second law of motion from the acceleration of the body when it is subjected to a force that is not due to gravity", "wn30": "05025693-n"}'
 inertial-mass attribute physical-mass
+#:meta inferior-conjunction '{"gloss": "(astronomy) the alignment of the Earth and a planet on the same side of the sun", "wn30": "07415396-n"}'
 inferior-conjunction astronomical-conjunction
 instrument '*'
+#:meta intermolecular-cohesion '{"gloss": "(physics) the intermolecular force that holds together the molecules in a solid or liquid", "wn30": "11436585-n"}'
 intermolecular-cohesion physical-phenomenon
+#:meta isotopic-abundance '{"gloss": "(physics) the ratio of the number of atoms of a specific isotope of an element to the total number of isotopes present", "wn30": "13820239-n"}'
 isotopic-abundance ratio
+#:meta j-particle '{"gloss": "a neutral meson with a large mass", "wn30": "09322349-n"}'
 j-particle meson
+#:meta kaon '{"gloss": "an unstable meson produced as the result of a high-energy particle collision", "wn30": "09323660-n"}'
 kaon meson
+#:meta 'kepler'"'"'s-law' '{"gloss": "(astronomy) one of three empirical laws of planetary motion stated by Johannes Kepler", "wn30": "05879441-n"}'
 'kepler'"'"'s-law' 'about(planet)' physical-law
+#:meta kinematics '{"gloss": "the branch of mechanics concerned with motion without reference to force or mass", "wn30": "06113777-n"}'
 kinematics physics
+#:meta kinetic-theory '{"gloss": "(physics) a theory that gases consist of small particles in random motion", "wn30": "06106305-n"}'
 kinetic-theory 'about(gas)' scientific-theory
+#:meta 'kirchhoff'"'"'s-laws' '{"gloss": "(physics) two laws governing electric networks in which steady currents flow: the sum of all the currents at a point is zero and the sum of the voltage gains and drops around any closed circuit is zero", "wn30": "05880432-n"}'
 'kirchhoff'"'"'s-laws' physical-law
+#:meta lambda-particle '{"gloss": "an electrically neutral baryon with isotopic spin 1", "wn30": "09334266-n"}'
 lambda-particle hyperon
+#:meta law-of-gravitation '{"gloss": "(physics) the law that states any two bodies attract each other with a force that is directly proportional to the product of their masses and inversely proportional to the square of the distance between them", "wn30": "05881867-n"}'
 law-of-gravitation 'about(gravity)' physical-law
+#:meta law-of-thermodynamics '{"gloss": "(physics) a law governing the relations between states of energy in a closed system", "wn30": "05882793-n"}'
 law-of-thermodynamics 'about(heat-energy)' physical-law
+length 'linear-dimension(length)'
+#:meta lepton '{"gloss": "an elementary particle that participates in weak interactions; has a baryon number of 0", "wn30": "09338013-n"}'
 lepton elementary-particle fermion
+#:meta libration '{"gloss": "(astronomy) a real or apparent slow oscillation of a moon or satellite", "wn30": "13507617-n"}'
 libration orbital-variation
-linear-dimension '*'
+linear-dimension dimension
+'linear-dimension(area)' linear-dimension
+'linear-dimension(capacitance)' linear-dimension
+'linear-dimension(duration)' linear-dimension
+'linear-dimension(energy)' linear-dimension
+'linear-dimension(flux-density)' linear-dimension
+'linear-dimension(illuminance)' linear-dimension
+'linear-dimension(inductance)' linear-dimension
+'linear-dimension(length)' linear-dimension
+'linear-dimension(luminous-flux)' linear-dimension
+'linear-dimension(luminous-intensity)' linear-dimension
+'linear-dimension(magnetic-flux)' linear-dimension
+'linear-dimension(mass)' linear-dimension
+'linear-dimension(pressure)' linear-dimension
+'linear-dimension(radioactivity)' linear-dimension
+'linear-dimension(speed)' linear-dimension
+'linear-dimension(temperature)' linear-dimension
+'linear-dimension(voltage)' linear-dimension
+'linear-dimension(volume)' linear-dimension
 luminosity '*'
+#:meta luminous-flux '{"gloss": "the rate of flow of light energy", "wn30": "15287486-n"}'
 luminous-flux 'linear-dimension(luminous-flux)'
 luminous-intensity 'linear-dimension(luminous-intensity)'
+#:meta magnetic-dip '{"gloss": "(physics) the angle that a magnetic needle makes with the plane of the horizon", "wn30": "13892897-n"}'
 magnetic-dip angle
+#:meta magnetic-dipole-moment '{"gloss": "(physics) a current loop gives rise to a magnetic field characteristic of a magnetic dipole", "wn30": "11483580-n"}'
 magnetic-dipole-moment attribute
+#:meta magnetic-flux '{"gloss": "a measure of the strength of a magnetic field over a given area", "wn30": "13599730-n"}'
 magnetic-flux 'linear-dimension(magnetic-flux)'
+#:meta magnetic-reluctance '{"gloss": "(physics) opposition to magnetic flux (analogous to electric resistance)", "wn30": "11504750-n"}'
 magnetic-reluctance attribute
 magnetism '*'
 magnitude '*'
 major-planet '*'
+mass 'linear-dimension(mass)'
+#:meta mass-energy '{"gloss": "(physics) the mass of a body regarded relativistically as energy", "wn30": "05026171-n"}'
 mass-energy attribute physical-mass
+#:meta mass-energy-equivalence '{"gloss": "(physics) the principle that a measured quantity of mass is equivalent (according to relativity theory) to a measured quantity of energy", "wn30": "05885187-n"}'
 mass-energy-equivalence scientific-principle
 material '*'
+mathematical-object '*'
+mathematical-space '*'
+#:meta maxwell-boltzmann-distribution-law '{"gloss": "(physics) a law expressing the distribution of energy among the molecules of a gas in thermal equilibrium", "wn30": "05877178-n"}'
 maxwell-boltzmann-distribution-law 'about(gas)' physical-law
+#:meta mechanical-strain '{"gloss": "(physics) deformation of a physical body under the action of applied forces", "wn30": "11515325-n"}'
 mechanical-strain change
+#:meta mechanical-stress '{"gloss": "(physics) force that produces strain on a physical body", "wn30": "11514805-n"}'
 mechanical-stress attribute
+#:meta mechanical-work '{"gloss": "(physics) a manifestation of energy; the transfer of energy from one physical system to another expressed as the product of a force and the distance through which it moves a body in the direction of that force", "wn30": "11453420-n"}'
 mechanical-work attribute
+#:meta mechanics '{"gloss": "the branch of physics concerned with the motion of bodies in a frame of reference", "wn30": "06100236-n"}'
 mechanics physics
+#:meta meniscus '{"gloss": "(physics) the curved upper surface of a nonturbulent liquid in a vertical tube", "wn30": "03745712-n"}'
 meniscus physical-object
+#:meta meson '{"gloss": "an elementary particle responsible for the forces in the atomic nucleus; a hadron with a baryon number of 0", "wn30": "09352282-n"}'
 meson boson hadron
+#:meta metastability '{"gloss": "the quality of a physical system that persists in its existing equilibrium when undisturbed (or only slightly disturbed) but able to pass to a more stable equilibrium when sufficiently disturbed", "wn30": "04739262-n"}'
 metastability attribute
 meteoroid '*'
+#:meta muon '{"gloss": "an elementary particle with a negative charge and a half-life of 2 microsecond; decays to electron and neutrino and antineutrino", "wn30": "09363214-n"}'
 muon lepton
 natural-event '*'
 natural-object '*'
+#:meta neutrino '{"gloss": "an elementary particle with zero charge and zero mass", "wn30": "09369412-n"}'
 neutrino lepton
+#:meta neutron '{"gloss": "an elementary particle with 0 charge and mass about equal to a proton; enters into the structure of the atomic nucleus", "wn30": "09369520-n"}'
 neutron nucleon
+#:meta nuclear-physics '{"gloss": "the branch of physics that studies the internal structure of atomic nuclei", "wn30": "06100555-n"}'
 nuclear-physics 'about(atomic-nucleus)' physics
+#:meta nuclear-reaction '{"gloss": "(physics) a process that alters the energy or structure or composition of atomic nuclei", "wn30": "13523208-n"}'
 nuclear-reaction process
+#:meta nucleon '{"gloss": "a constituent (proton or neutron) of an atomic nucleus", "wn30": "09374886-n"}'
 nucleon baryon
 nucleosynthesis '*'
 oort-cloud '*'
+#:meta optical-density '{"gloss": "(physics) a measure of the extent to which a substance transmits light or other electromagnetic radiation", "wn30": "05089367-n"}'
 optical-density density
+#:meta optics '{"gloss": "the branch of physics that studies the physical properties of light", "wn30": "06100778-n"}'
 optics 'about(visible-light)' physics
 orbital-inclination '*'
 orbital-node '*'
+#:meta orbital-plane '{"gloss": "(astronomy) the plane on which a body is orbiting", "wn30": "13861806-n"}'
 orbital-plane shape
+#:meta orbital-variation '{"gloss": "(astronomy) any perturbation of the mean motion or orbit of a planet or satellite (especially a perturbation of the earth'"'"'s moon)", "wn30": "11415084-n"}'
 orbital-variation perturbation
+#:meta oscillation '{"gloss": "(physics) a regular periodic variation in value about a mean", "wn30": "07345166-n"}'
 oscillation wave-motion
 outer-planet '*'
+#:meta parity-conservation '{"gloss": "(physics) parity is conserved in a universe in which the laws of physics are the same in a right-handed system of coordinates as in a left-handed system", "wn30": "06105314-n"}'
 parity-conservation conservation-law
 particle '*'
+#:meta particle-physics '{"gloss": "the branch of physics that studies subatomic particles and their interactions", "wn30": "06101551-n"}'
 particle-physics 'about(elementary-particle)' physics
 pencil-of-lines '*'
 periapsis '*'
+#:meta perturbation '{"gloss": "(physics) a secondary influence on a system that causes it to deviate slightly", "wn30": "11414874-n"}'
 perturbation physical-phenomenon
+#:meta phase-space '{"gloss": "(physics) an ideal space in which the coordinate dimensions represent the variables that are required to describe a system or substance", "wn30": "00029114-n"}'
 phase-space mathematical-space
-photoelectron electron elementary-particle
+#:meta photoelectron '{"gloss": "an electron that is emitted from an atom or molecule by an incident photon", "wn30": "09391089-n"}'
+photoelectron electron
+#:meta photon '{"gloss": "a quantum of electromagnetic radiation; an elementary particle that is its own antiparticle", "wn30": "09391223-n"}'
 photon elementary-particle
 physical-law '*'
+#:meta physical-mass '{"gloss": "the property of a body that causes it to have weight in a gravitational field", "wn30": "05024254-n"}'
 physical-mass amount
 physical-object '*'
 physical-phenomenon '*'
+#:meta physicist '{"gloss": "a scientist trained in physics", "wn30": "10428004-n"}'
 physicist scientist
 physics '*'
+#:meta pion '{"gloss": "a meson involved in holding the nucleus together; produced as the result of high-energy particle collision", "wn30": "09392656-n"}'
 pion meson
 place '*'
+#:meta 'planck'"'"'s-law' '{"gloss": "(physics) the basis of quantum theory; the energy of electromagnetic waves is contained in indivisible quanta that have to be radiated or absorbed as a whole; the magnitude is proportional to frequency where the constant of proportionality is given by Planck'"'"'s constant", "wn30": "05887365-n"}'
 'planck'"'"'s-law' 'about(radiation)' physical-law
+#:meta 'planck'"'"'s-radiation-law' '{"gloss": "(physics) an equation that expresses the distribution of energy in the radiated spectrum of an ideal black body", "wn30": "05887712-n"}'
 'planck'"'"'s-radiation-law' 'about(radiation)' physical-law
+planet '*'
+#:meta plasma '{"gloss": "(physical chemistry) a fourth state of matter distinct from solid or liquid or gas and present in stars and fusion reactors; a gas becomes a plasma when it is heated until the atoms lose all their electrons, leaving a highly electrified collection of nuclei and free electrons", "wn30": "14481511-n"}'
 plasma state-of-matter
+point '*'
+#:meta positron '{"gloss": "an elementary particle with positive charge; interaction of a positron and an electron results in annihilation", "wn30": "09397896-n"}'
 positron antilepton
+prefix-dimension dimension
+pressure 'linear-dimension(pressure)'
 primary-body '*'
+#:meta principle-of-equivalence '{"gloss": "(physics) the principle that an observer has no way of distinguishing whether his laboratory is in a uniform gravitational field or is in an accelerated frame of reference", "wn30": "05990981-n"}'
 principle-of-equivalence 'about(gravity)' scientific-principle
+#:meta principle-of-relativity '{"gloss": "(physics) a universal law that states that the laws of mechanics are not affected by a uniform rectilinear motion of the system of coordinates to which they are referred", "wn30": "05990480-n"}'
 principle-of-relativity physical-law
 process '*'
+#:meta proton '{"gloss": "a stable particle with positive charge equal to the negative charge of an electron", "wn30": "09400037-n"}'
 proton nucleon
+#:meta ptolemaic-system '{"gloss": "(astronomy) Ptolemy'"'"'s model of the universe with the Earth at the center", "wn30": "05890809-n"}'
 ptolemaic-system theory
+#:meta quantum '{"gloss": "(physics) the smallest discrete quantity of some physical property that a system can possess (according to quantum theory)", "wn30": "05855517-n"}'
 quantum amount
+#:meta quantum-jump '{"gloss": "(physics) an abrupt transition of an electron or atom or molecule from one quantum state to another with the emission or absorption of a quantum", "wn30": "07359377-n"}'
 quantum-jump change
+#:meta quantum-mechanics '{"gloss": "the branch of quantum physics that accounts for matter at the atomic level; an extension of statistical mechanics based on quantum theory (especially the Pauli exclusion principle)", "wn30": "06111961-n"}'
 quantum-mechanics 'about(atom)' physics
+#:meta quantum-theory '{"gloss": "(physics) a physical theory that certain properties occur only in discrete amounts (quanta)", "wn30": "06107660-n"}'
 quantum-theory scientific-theory
+#:meta quark '{"gloss": "(physics) hypothetical truly fundamental particle in mesons and baryons; there are supposed to be six flavors of quarks (and their antiquarks), which come in pairs; each has an electric charge of +2/3 or -1/3", "wn30": "09401834-n"}'
 quark elementary-particle
+radiation '*'
+#:meta radiation-absorption '{"gloss": "(physics) the process in which incident radiated energy is retained without reflection or transmission on passing through a medium", "wn30": "13424183-n"}'
 radiation-absorption process
 radioactivity 'linear-dimension(radioactivity)'
 ratio '*'
+#:meta reactor-containment '{"gloss": "(physics) a system designed to prevent the accidental release of radioactive material from a reactor", "wn30": "03095965-n"}'
 reactor-containment artifact
+rectangle-dimension dimension
+#:meta red-shift '{"gloss": "(astronomy) a shift in the spectra of very distant galaxies toward longer wavelengths (toward the red end of the spectrum); generally interpreted as evidence that the universe is expanding", "wn30": "11513357-n"}'
 red-shift physical-phenomenon
 relation '*'
+#:meta relativistic-mass '{"gloss": "(physics) the mass of a body in motion relative to the observer: it is equal to the rest mass multiplied by a factor that is greater than 1 and that increases as the magnitude of the velocity increases", "wn30": "05025129-n"}'
 relativistic-mass attribute physical-mass
+#:meta relativity '{"gloss": "(physics) the theory that space and time are relative concepts rather than absolute concepts", "wn30": "06106502-n"}'
 relativity scientific-theory
+#:meta relaxation-process '{"gloss": "(physics) the exponential return of a system to equilibrium after a disturbance", "wn30": "13549311-n"}'
 relaxation-process process
+#:meta reluctivity '{"gloss": "(physics) the resistance of a material to the establishment of a magnetic field in it", "wn30": "05019499-n"}'
 reluctivity attribute
+#:meta rest-mass '{"gloss": "(physics) the mass of a body as measured when the body is at rest relative to an observer, an inherent property of the body", "wn30": "05024931-n"}'
 rest-mass attribute physical-mass
+reversed-dimension dimension
 right-ascension '*'
 scientific-principle '*'
+#:meta scientific-theory '{"gloss": "a theory that explains scientific observations", "wn30": "05993844-n"}'
 scientific-theory theory
 scientist '*'
+#:meta scintillation '{"gloss": "(physics) a flash of light that is produced in a phosphor when it absorbs a photon or ionizing particle", "wn30": "11506349-n"}'
 scintillation visible-light
 shape '*'
+shared-with reversed-dimension
+#:meta shear-deformation '{"gloss": "(physics) a deformation of an object in which parallel planes remain parallel but are shifted in a direction parallel to themselves", "wn30": "11506738-n"}'
 shear-deformation change
+size dominance-dimension
+solar-system '*'
+#:meta soliton '{"gloss": "(physics) a quantum of energy or quasiparticle that can be propagated as a traveling wave in nonlinear systems and is neither preceded nor followed by another such disturbance; does not obey the superposition principle and does not dissipate", "wn30": "07346344-n"}'
 soliton wave-motion
+#:meta spallation '{"gloss": "(physics) a nuclear reaction in which a bombarded nucleus breaks up into many particles", "wn30": "13559509-n"}'
 spallation nuclear-reaction
+speed 'linear-dimension(speed)'
 state '*'
 state-of-matter '*'
+#:meta statistical-mechanics '{"gloss": "the branch of physics that makes theoretical predictions about the behavior of macroscopic systems on the basis of statistical laws governing its component particles", "wn30": "06111728-n"}'
 statistical-mechanics physics
+#:meta strange-particle '{"gloss": "an elementary particle with non-zero strangeness", "wn30": "09447806-n"}'
 strange-particle elementary-particle
+#:meta strange-quark '{"gloss": "a quark with an electric charge of -1/3 and a mass 988 times that of an electron and a strangeness of -1", "wn30": "09447917-n"}'
 strange-quark quark
+#:meta strong-interaction '{"gloss": "(physics) the interaction that binds protons and neutrons together in the nuclei of atoms; mediated by gluons", "wn30": "11516819-n"}'
 strong-interaction fundamental-interaction
+#:meta superconductivity '{"gloss": "the disappearance of electrical resistance at very low temperatures", "wn30": "11409892-n"}'
 superconductivity physical-phenomenon
+#:meta superior-conjunction '{"gloss": "(astronomy) the alignment of the Earth and a planet on the opposite side of the sun", "wn30": "07415561-n"}'
 superior-conjunction astronomical-conjunction
+#:meta supersymmetry '{"gloss": "(physics) a theory that tries to link the four fundamental forces", "wn30": "06107436-n"}'
 supersymmetry 'about(elementary-particle)' scientific-theory
 surface '*'
+#:meta sympathetic-vibration '{"gloss": "(physics) vibration produced by resonance", "wn30": "11478171-n"}'
 sympathetic-vibration oscillation
+#:meta tauon '{"gloss": "a lepton of very great mass", "wn30": "09455206-n"}'
 tauon lepton
-temperature amount
+#:meta temperature '{"gloss": "the degree of hotness or coldness of a body or environment (corresponding to its molecular activity)", "wn30": "05011790-n"}'
+temperature amount 'linear-dimension(temperature)'
+#:meta tensile-stress '{"gloss": "(physics) a stress that produces an elongation of an elastic physical body", "wn30": "11515051-n"}'
 tensile-stress mechanical-stress
 theory '*'
+#:meta theory-of-gravitation '{"gloss": "(physics) the theory that any two particles of matter attract one another with a force directly proportional to the product of their masses and inversely proportional to the square of the distance between them", "wn30": "05990089-n"}'
 theory-of-gravitation 'about(gravity)' scientific-theory
+#:meta thermodynamics '{"gloss": "the branch of physics concerned with the conversion of different forms of energy", "wn30": "06114578-n"}'
 thermodynamics 'about(heat-energy)' physics
+time calendar-dimension
+#:meta top-quark '{"gloss": "a hypothetical quark with a charge of +2/3 and a mass more than 100,000 times that of an electron", "wn30": "09459812-n"}'
 top-quark quark
+traction friction
+#:meta transient-oscillation '{"gloss": "(physics) a short-lived oscillation in a system caused by a sudden change of voltage or current or load", "wn30": "07347468-n"}'
 transient-oscillation oscillation
+transitive-dimension dimension
+#:meta transmutation '{"gloss": "(physics) the change of one chemical element into another (as by nuclear decay or radioactive bombardment)", "wn30": "07416441-n"}'
 transmutation change
+#:meta up-quark '{"gloss": "a stable quark with an electric charge of +2/3 and a mass 607 times that of an electron", "wn30": "09467043-n"}'
 up-quark quark
-valence-electron electron elementary-particle
+#:meta valence-electron '{"gloss": "an electron in the outer shell of an atom which can combine with other atoms to form molecules", "wn30": "09468447-n"}'
+valence-electron electron
+#:meta velocity '{"gloss": "distance travelled per unit time", "wn30": "15282696-n"}'
 velocity relation
 vernal-equinoctial-point '*'
+#:meta viscosity '{"gloss": "resistance of a liquid to shear forces (and hence to flow)", "wn30": "04935003-n"}'
 viscosity attribute
+#:meta visible-light '{"gloss": "(physics) electromagnetic radiation that can produce a visual sensation", "wn30": "11473954-n"}'
 visible-light physical-phenomenon
+#:meta voltage '{"gloss": "the rate at which energy is drawn from a source that produces a flow of electricity in a circuit; expressed in volts", "wn30": "11523538-n"}'
 voltage attribute 'linear-dimension(voltage)'
+volume 'linear-dimension(volume)'
+#:meta wave-front '{"gloss": "(physics) an imaginary surface joining all points in space that are reached at the same instant by a wave propagating through a medium", "wn30": "08681966-n"}'
 wave-front surface
+#:meta wave-motion '{"gloss": "(physics) a movement up and down or back and forth", "wn30": "07345593-n"}'
 wave-motion event
+#:meta wave-node '{"gloss": "(physics) the point of minimum displacement in a periodic system", "wn30": "08498580-n"}'
 wave-node place
+#:meta wave-particle-duality '{"gloss": "(physics) the property of matter and electromagnetic radiation that is characterized by the fact that some properties can be explained best by wave theory and others by particle theory", "wn30": "04920568-n"}'
 wave-particle-duality attribute
+#:meta wave-theory '{"gloss": "(physics) the theory that light is transmitted as waves", "wn30": "06105873-n"}'
 wave-theory 'about(visible-light)' scientific-theory
+#:meta wavelength '{"gloss": "the distance (measured in the direction of propagation) between two points in the same phase in consecutive cycles of a wave", "wn30": "05086269-n"}'
 wavelength distance
+#:meta weak-interaction '{"gloss": "(physics) an interaction between elementary particles involving neutrinos or antineutrinos that is responsible for certain kinds of radioactive decay; mediated by intermediate vector bosons", "wn30": "11517210-n"}'
 weak-interaction fundamental-interaction
+#:meta weakly-interacting-massive-particle '{"gloss": "a hypothetical subatomic particle of large mass that interacts weakly with ordinary matter through gravitation; postulated as a constituent of the dark matter of the universe", "wn30": "09476717-n"}'
 weakly-interacting-massive-particle elementary-particle
-traction friction
-atom '*'
-electric-charge '*'
-electricity '*'
-fluid '*'
-force '*'
-galaxy '*'
-gas '*'
-gravity '*'
-mathematical-object '*'
-mathematical-space '*'
-planet '*'
-point '*'
-radiation '*'
-solar-system '*'

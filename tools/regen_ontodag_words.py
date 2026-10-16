@@ -9,7 +9,9 @@ picture, pic), lowercased, with WordNet's underscores as dashes, the
 category's own name left out. They are a finding aid for people typing
 (ontodag's docs/plans/BROWSER.md §17): never names, never stored.
 """
-import csv, sys
+import csv
+import shlex
+import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent.parent
@@ -25,7 +27,9 @@ for line in open(DATA, encoding="latin-1"):
     f = line.split("|")[0].split()
     lemmas[f[0]] = [f[4 + 2 * i] for i in range(int(f[3], 16))]
 
-core = {line.split()[0] for line in open(HERE / "build/core.od") if line.strip() and not line.startswith("#")}
+core = {n for n in (shlex.split(line)[0] for line in open(HERE / "build/core.od")
+                    if line.strip() and not line.startswith("#"))
+        if "(" not in n}                           # canonical .od: a term's node is ontodag's
 words = {}
 for row in csv.DictReader(open(HERE / "align/concepts.tsv"), delimiter="\t"):
     name, sid = row["name"], row["wordnet"]

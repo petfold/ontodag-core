@@ -58,6 +58,8 @@ par, owner = {}, {}
 for store, path in [("core", ROOT / "build/core.od")] + \
         [(p, ROOT / f"packs/{p}/build/{p}.od") for p in PACKS]:
     for name, ps in entries(path):
+        if "(" in name:
+            continue                                  # a term's node (canonical .od)
         if ps == ["*"] and name in par:
             continue                                  # a borrowed name
         names = [x for x in ps if x != "*" and "(" not in x]

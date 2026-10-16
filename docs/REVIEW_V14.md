@@ -550,6 +550,23 @@ In ontodag (working tree, uncommitted):
 The pack and web tests, the invariants, boundaries and reference tests,
 and the lint all pass.
 
+**Canonical files with glosses.** step7 now writes every store through
+ontodag's own writer, `native.dumps`. The files carry the `#:canonical`
+marker, so core loads in about 0.7 s instead of re-reducing line by line.
+Each node carries its gloss as `#:meta` (`{"gloss", "wn30"}`): WordNet
+3.0's definition of its synset, examples dropped, on the name's owner
+only. `align/glosses-v14.tsv` gives the gloss where a ruling changed the
+sense (`money`, `currency`, `publication`, `lighting`) or added the node.
+
+Canonical form stores only the transitive reduction. So edges another
+path implies are not stored: `pressure ⊑ attribute` follows from the
+prelude's `linear-dimension(pressure)`, and `foliation ⊑ organic-process`
+from `growth ⊑ organic-process`. No node's ancestors changed, in any store
+or in the union. step7's checks read implied edges, and a ruling's edge is
+still stored when another path implies it, so the result does not depend
+on rule order. The regen tools and `tools/closure.py` skip the term nodes
+and the prelude's declarations that a canonical file also holds.
+
 **Peter's doubtful-list answers** (column 3) applied:
 - machine learning moves from artificial intelligence to computer science;
 - championship and meeting are events only;

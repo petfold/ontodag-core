@@ -14,12 +14,22 @@ HERE = Path(__file__).resolve().parent.parent
 commit = sys.argv[1]
 ontodag = Path(sys.argv[2]) if len(sys.argv) > 2 else HERE.parent / "ontodag"
 target = ontodag / "src/ontodag/core_ontology.py"
+sys.path.insert(0, str(ontodag / "src"))
+from ontodag.packs import pack_entries               # noqa: E402
+prelude = {n: set(p) for n, p in pack_entries("prelude")}
 par = {}
 for l in open(HERE / "build/core.od"):
     if l.startswith("#") or not l.strip():
         continue
     f = shlex.split(l)
-    par[f[0]] = tuple(sorted(x for x in f[1:] if x != "*"))
+    # core.od is written canonical, so it holds the relation terms' nodes and
+    # the prelude's declarations too; CORE holds core's own claims only
+    if "(" in f[0]:
+        continue
+    parents = [x for x in f[1:] if x != "*" and x not in prelude.get(f[0], ())]
+    if f[0] in prelude and not parents:
+        continue
+    par[f[0]] = tuple(sorted(parents))
 roots = sorted(n for n, p in par.items() if not p)
 src = target.read_text()
 head = src[: src.index("CORE = (")]

@@ -1,8 +1,30 @@
 # ontodag store v1
+#:canonical 6.0 37050d1ae3036e9c780b4b1ddd9d0004d646be79ade679b5b2ea5e611c6e8a66
 3d-reconstruction computer-vision
 a-star-search best-first-search
 abductive-logic-programming logic-programming
 abductive-reasoning thinking
+about enclosing-dimension
+'about(artificial-intelligence)' about
+'about(automaton)' about
+'about(brain)' about
+'about(cognition)' about
+'about(complex-network)' about
+'about(computational-ontology)' about
+'about(control-system)' about
+'about(document)' about
+'about(education)' about
+'about(emotion)' about
+'about(game)' about
+'about(humanoid-robot)' about
+'about(image)' about
+'about(information)' about
+'about(language)' about
+'about(mind)' about
+'about(plan)' about
+'about(speech)' about
+'about(text)' about
+'about(theorem)' about
 act '*'
 activation-function function
 active-learning machine-learning
@@ -26,7 +48,9 @@ aircraft '*'
 algorithm '*'
 algorithmic-bias attribute
 alpha-beta-pruning search-algorithm
+amount '*'
 analogical-reasoning thinking
+#:meta animatronics '{"gloss": "the construction of robots to look like animals (developed for Disneyland)", "wn30": "06133802-n"}'
 animatronics robotics
 anomaly-detection machine-learning
 answer-set-programming logic-programming
@@ -34,6 +58,7 @@ ant-colony-optimization metaheuristic
 apprenticeship-learning imitation-learning
 approximation-algorithm '*'
 apriori-algorithm machine-learning-algorithm
+area 'linear-dimension(area)'
 argumentation-framework mathematical-object
 articulated-robot automaton
 artifact '*'
@@ -42,8 +67,10 @@ artificial-consciousness artificial-intelligence
 artificial-empathy artificial-intelligence
 artificial-general-intelligence artificial-intelligence
 artificial-immune-system computational-intelligence
+#:meta artificial-intelligence '{"gloss": "the branch of computer science that deal with writing computer programs that can solve problems creatively", "wn30": "06133203-n"}'
 artificial-intelligence computer-science
 artificial-life artificial-intelligence
+#:meta artificial-neural-network '{"gloss": "computer architecture in which processors are connected in a manner suggestive of connections between neurons; can learn by trial and error", "wn30": "06725467-n"}'
 artificial-neural-network ai-model
 artificial-society agent-based-model
 association-rule-learning data-mining
@@ -103,26 +130,32 @@ boolean-satisfiability-problem constraint-satisfaction-problem
 boosting-algorithm machine-learning-algorithm
 bootstrap-aggregating machine-learning-algorithm
 bounded-rationality decision-theory
+brain '*'
 brain-computer-interface device
 breadth-first-search graph-traversal
+calendar-dimension dimension
 capsule-neural-network convolutional-neural-network
 case-based-reasoning artificial-intelligence
 catastrophic-forgetting problem
 causal-diagram statistical-model
 cellular-automaton mathematical-object
 centrality amount
+change '*'
 chatbot software software-agent
 chatbot-evaluation procedure
 chinese-room information
 classification-algorithm machine-learning-algorithm
+#:meta closed-loop '{"gloss": "a control system with a feedback loop that is active", "wn30": "03049326-n"}'
 closed-loop control-system
 closed-world-assumption principle
 cluster-analysis data-mining machine-learning statistics
 clustering-algorithm machine-learning-algorithm
 code '*'
+cognition '*'
 cognitive-architecture 'about(mind)' theory
 cognitive-computing artificial-intelligence
 cognitive-robotics robotics
+#:meta cognitive-science '{"gloss": "the field of science concerned with cognition; includes parts of cognitive psychology and linguistics and computer science and cognitive neuroscience and philosophy of mind", "wn30": "06142861-n"}'
 cognitive-science 'about(cognition)' science
 collaborative-filtering machine-learning-algorithm
 collaborative-robot automaton
@@ -138,6 +171,7 @@ compressed-sensing signal-processing
 computational-humor computational-linguistics
 computational-intelligence artificial-intelligence
 computational-learning-theory machine-learning
+#:meta computational-linguistics '{"gloss": "the use of computers for linguistic research and applications", "wn30": "06168552-n"}'
 computational-linguistics linguistics
 computational-neuroscience 'about(brain)' artificial-intelligence
 computational-ontology '*'
@@ -150,6 +184,7 @@ computer-simulation '*'
 computer-vision 'about(image)' machine-perception
 concept-drift change
 concurrent-logic-programming logic-programming
+condition '*'
 conditional-random-field statistical-model
 confusion-matrix model-evaluation-method
 connectionism 'about(mind)' theory
@@ -160,6 +195,7 @@ constraint-satisfaction-problem problem
 content-addressable-memory device
 continual-learning machine-learning
 contrastive-learning self-supervised-learning
+#:meta control-system '{"gloss": "a system for controlling the operation of another system", "wn30": "03098806-n"}'
 control-system artifact
 control-theory 'about(control-system)' engineering mathematics
 controlled-vocabulary '*'
@@ -167,13 +203,18 @@ conversational-ai natural-language-processing
 convex-optimization mathematical-optimization
 convolutional-neural-network feedforward-neural-network
 cosine-similarity similarity-measure
+count count-dimension
+count-dimension dimension
 cross-validation model-evaluation-method
 cultural-algorithm evolutionary-algorithm
 curriculum-learning machine-learning
+#:meta cybernetics '{"gloss": "(biology) the field of science concerned with processes of communication and control (especially the comparison of these processes in biological and artificial systems)", "wn30": "06142598-n"}'
 cybernetics information-science
+danger '*'
 data-augmentation procedure
 data-mining '*'
 data-poisoning adversarial-machine-learning
+data-processing '*'
 database '*'
 dataset '*'
 dbscan clustering-algorithm
@@ -196,27 +237,33 @@ depth-first-search graph-traversal
 developmental-robotics robotics
 device '*'
 diagnostic-expert-system expert-system
+diagram '*'
 dialogue-system software
 differential-evolution evolutionary-algorithm
 differential-privacy attribute
 diffusion-model generative-model latent-variable-model
 digital-twin computer-simulation
 dijkstra-algorithm '*'
+dimension '*'
 dimensionality-reduction machine-learning
 distant-supervision weakly-supervised-learning
 distilled-ai-model ai-model
 distributed-artificial-intelligence artificial-intelligence
 distributed-cognition 'about(cognition)' theory
 distributional-semantics computational-linguistics
+document '*'
 document-classification 'about(document)' statistical-classification
 domain-adaptation transfer-learning
 domestic-robot service-robot
+dominance-dimension dimension
+duration 'linear-dimension(duration)'
 dynamic-bayesian-network bayesian-network
 dynamic-knowledge-graph knowledge-graph
 early-stopping procedure
 echo-state-network recurrent-neural-network
 edge-detection image-processing
 edge-of-chaos state
+education '*'
 educational-data-mining 'about(education)' data-mining
 eigenvector-centrality centrality
 elementary-cellular-automaton cellular-automaton
@@ -225,13 +272,17 @@ embedding-model ai-model
 embodied-agent intelligent-agent
 embodied-artificial-intelligence artificial-intelligence
 embodied-cognition 'about(cognition)' theory
+emotion '*'
 emotion-recognition affective-computing
 enactivism 'about(cognition)' theory
+enclosing-dimension dimension
+energy 'linear-dimension(energy)'
 energy-based-model ai-model statistical-model
 engineering '*'
 ensemble-averaging ensemble-learning
 ensemble-learning machine-learning
 entertainment-robot automaton
+equation '*'
 erdos-renyi-model statistical-model
 estimation-of-distribution-algorithm evolutionary-algorithm
 ethics-of-artificial-intelligence philosophy-of-artificial-intelligence
@@ -257,20 +308,24 @@ feature-extraction dimensionality-reduction
 feature-learning machine-learning
 feature-selection dimensionality-reduction
 federated-learning machine-learning
+#:meta feedback-loop '{"gloss": "the process in which part of the output of a system is returned to its input in order to regulate its further output", "wn30": "13479380-n"}'
 feedback-loop process
 feedforward-neural-network artificial-neural-network
 few-shot-learning machine-learning
 field-of-study '*'
 fitness-function function
 flow-based-generative-model generative-model
+formal-system '*'
 forward-chaining algorithm
 forward-kinematics robotics
 foundation-model ai-model
 frame-based-expert-system expert-system
 frame-problem problem
 friendly-artificial-intelligence artificial-general-intelligence
+function '*'
 functional-logic-programming logic-programming
 fuzzy-set mathematical-set
+game '*'
 game-of-life cellular-automaton
 game-theory '*'
 game-tree mathematical-object
@@ -286,6 +341,7 @@ generative-model ai-model statistical-model
 generative-pre-trained-transformer large-language-model
 genetic-algorithm evolutionary-algorithm informed-search-algorithm
 genetic-programming evolutionary-computation
+geo rectangle-dimension
 geometric-feature-learning feature-learning
 gibbs-sampling markov-chain-monte-carlo
 gofai symbolic-ai
@@ -295,6 +351,7 @@ gradient-boosting boosting-algorithm
 gradient-descent algorithm
 graph-attention-network artificial-neural-network
 graph-convolutional-network artificial-neural-network
+graph-dimension dimension
 graph-embedding vector-embedding
 graph-neural-network artificial-neural-network
 graph-traversal search-algorithm
@@ -302,6 +359,7 @@ greedy-algorithm '*'
 grid-search hyperparameter-optimization
 handwriting-recognition 'about(text)' pattern-recognition
 hebbian-learning theory
+#:meta heuristic '{"gloss": "a commonsense rule (or set of rules) intended to increase the probability of solving some problem", "wn30": "05847956-n"}'
 heuristic rule
 heuristic-search-algorithm search-algorithm
 hidden-layer neural-network-layer
@@ -320,12 +378,15 @@ human-robot-interaction human-computer-interaction robotics
 humanoid-robot automaton
 hyperparameter amount
 hyperparameter-optimization automated-machine-learning mathematical-optimization
+hypothesis '*'
+image '*'
 image-classification computer-vision image-processing
 image-dataset 'about(image)' dataset
 image-processing 'about(image)' signal-processing
 image-segmentation computer-vision
 image-to-image-translation image-processing machine-learning
 imitation-learning robot-learning
+in transitive-dimension
 incremental-learning machine-learning
 independent-component-analysis unsupervised-learning
 inductive-bias principle
@@ -338,6 +399,7 @@ information '*'
 information-bottleneck method
 information-extraction information-retrieval natural-language-processing
 information-retrieval '*'
+#:meta information-science '{"gloss": "the sciences concerned with gathering, manipulating, storing, retrieving, and classifying recorded information", "wn30": "06142118-n"}'
 information-science 'about(information)' computer-science
 informed-search-algorithm search-algorithm
 instance-based-learning machine-learning
@@ -383,9 +445,20 @@ lazy-learning machine-learning
 learning-analytics artificial-intelligence
 learning-rate amount
 lemmatization natural-language-processing
+length 'linear-dimension(length)'
 lidar '*'
 life-like-cellular-automaton cellular-automaton
 linear-classifier classification-algorithm
+linear-dimension dimension
+'linear-dimension(area)' linear-dimension
+'linear-dimension(duration)' linear-dimension
+'linear-dimension(energy)' linear-dimension
+'linear-dimension(length)' linear-dimension
+'linear-dimension(mass)' linear-dimension
+'linear-dimension(pressure)' linear-dimension
+'linear-dimension(speed)' linear-dimension
+'linear-dimension(temperature)' linear-dimension
+'linear-dimension(volume)' linear-dimension
 linear-discriminant-analysis classification-algorithm
 linear-programming mathematical-optimization
 linguistics '*'
@@ -404,13 +477,19 @@ machine-learning computer-science
 machine-learning-algorithm algorithm
 machine-perception artificial-intelligence
 machine-reading-comprehension natural-language-processing
+#:meta machine-translation '{"gloss": "the use of computers to translate from one language to another", "wn30": "06133503-n"}'
 machine-translation natural-language-processing
 management '*'
 markov-chain mathematical-object
 markov-chain-monte-carlo monte-carlo-method
 markov-decision-process mathematical-object
 masked-language-model language-model
+mass 'linear-dimension(mass)'
+mathematical-expression '*'
+mathematical-object '*'
 mathematical-optimization mathematics
+mathematical-set '*'
+mathematical-space '*'
 mathematics '*'
 maximum-likelihood-estimation procedure
 mechanism '*'
@@ -425,6 +504,7 @@ metropolis-hastings-algorithm markov-chain-monte-carlo
 microbot automaton
 microbotics robotics
 military-robot automaton
+mind '*'
 minimax-rule algorithm
 minimum-description-length principle
 mixture-model latent-variable-model
@@ -457,6 +537,7 @@ naive-bayes-classifier bayes-classifier
 named-entity-recognition information-extraction
 nanorobotics robotics
 natural-language-generation natural-language-processing
+#:meta natural-language-processing '{"gloss": "the branch of information science that deals with natural language information", "wn30": "06142412-n"}'
 natural-language-processing artificial-intelligence computational-linguistics information-science
 natural-language-understanding natural-language-processing
 nearest-neighbor-classifier classification-algorithm
@@ -487,6 +568,7 @@ ontology-alignment 'about(computational-ontology)' data-processing knowledge-eng
 ontology-engineering 'about(computational-ontology)' knowledge-engineering
 ontology-learning 'about(computational-ontology)' knowledge-engineering
 open-world-assumption principle
+#:meta operations-research '{"gloss": "research designed to determine most efficient way to do something", "wn30": "00637546-n"}'
 operations-research research
 optical-character-recognition 'about(text)' pattern-recognition
 optical-flow attribute
@@ -509,6 +591,7 @@ perceptron feedforward-neural-network linear-classifier
 personal-robot automaton
 philosophy '*'
 philosophy-of-artificial-intelligence 'about(artificial-intelligence)' philosophy
+plan '*'
 policy-gradient-method reinforcement-learning
 positive-feedback feedback-loop
 precision-and-recall model-evaluation-method
@@ -516,11 +599,15 @@ predictive-modeling machine-learning
 preference-elicitation procedure
 preference-learning machine-learning
 preferential-attachment process
+prefix-dimension dimension
+pressure 'linear-dimension(pressure)'
 principal-component-analysis dimensionality-reduction
+principle '*'
 problem '*'
 procedure '*'
 process '*'
 prompt-engineering procedure
+proposition '*'
 proximal-policy-optimization machine-learning-algorithm
 pulse-coupled-network artificial-neural-network
 q-learning machine-learning-algorithm
@@ -538,6 +625,7 @@ reactive-planning automated-planning
 reasoning-language-model large-language-model
 receiver-operating-characteristic model-evaluation-method
 recommender-system software
+rectangle-dimension dimension
 recurrent-neural-network artificial-neural-network
 recursive-neural-network recurrent-neural-network
 region-based-convolutional-neural-network convolutional-neural-network
@@ -552,6 +640,7 @@ residual-neural-network artificial-neural-network
 resource-description-framework '*'
 restricted-boltzmann-machine boltzmann-machine stochastic-neural-network
 retrieval-augmented-generation generative-ai natural-language-processing
+reversed-dimension dimension
 reversible-cellular-automaton cellular-automaton
 reward-hacking specification-gaming
 roboethics ethics-of-artificial-intelligence
@@ -564,6 +653,7 @@ robot-rights attribute
 robotic-arm automaton
 robotic-manipulator machine
 robotic-spacecraft automaton
+#:meta robotics '{"gloss": "the area of AI concerned with the practical use of robots", "wn30": "06133654-n"}'
 robotics 'about(automaton)' artificial-intelligence
 robust-control control-theory
 rule '*'
@@ -598,7 +688,9 @@ sentiment-analysis affective-computing natural-language-processing
 sequence-labeling pattern-recognition
 sequence-to-sequence-learning machine-learning
 service-robot automaton
+#:meta servo '{"gloss": "control system that converts a small mechanical motion into one requiring much greater power; may include a negative feedback system", "wn30": "04176295-n"}'
 servo control-system mechanism
+shared-with reversed-dimension
 sigmoid-function activation-function
 signal-processing '*'
 similarity-measure function
@@ -606,6 +698,7 @@ simulated-annealing metaheuristic
 simultaneous-localization-and-mapping robot-navigation
 situated-cognition 'about(cognition)' theory
 situation-calculus formal-system
+size dominance-dimension
 small-language-model language-model
 small-world-network complex-network
 social-robot automaton
@@ -621,10 +714,13 @@ sparse-distributed-memory ai-model
 spatial-temporal-reasoning artificial-intelligence
 speaker-verification 'about(speech)' signal-processing
 specification-gaming problem
+speech '*'
 speech-dataset 'about(speech)' dataset
 speech-recognition machine-perception natural-language-processing
 speech-synthesis natural-language-processing
+speed 'linear-dimension(speed)'
 spiking-neural-network artificial-neural-network
+state '*'
 state-observer system
 state-space-search search-algorithm
 statistical-classification machine-learning
@@ -634,6 +730,7 @@ statistical-machine-translation machine-translation
 statistical-model information
 statistical-relational-learning machine-learning
 statistics '*'
+#:meta stemmer '{"gloss": "an algorithm for removing inflectional and derivational endings in order to reduce word forms to a common stem", "wn30": "05847753-n"}'
 stemmer algorithm
 stemming natural-language-processing
 stochastic-block-model generative-model
@@ -654,13 +751,17 @@ symbolic-ai artificial-intelligence
 syntactic-parsing natural-language-processing
 synthetic-data information
 synthetic-media information
+system '*'
 system-identification control-theory
 t-sne machine-learning-algorithm
 tabu-search metaheuristic
 teacher-forcing procedure
 teleoperation procedure
+#:meta telerobotics '{"gloss": "the area of robotics that is concerned with the control of robots from a distance", "wn30": "06133935-n"}'
 telerobotics robotics
+temperature 'linear-dimension(temperature)'
 temporal-knowledge-graph knowledge-graph
+text '*'
 text-classification natural-language-processing statistical-classification
 text-mining natural-language-processing
 text-segmentation natural-language-processing
@@ -668,14 +769,18 @@ text-to-image-model generative-model
 text-to-video-model generative-model
 text-tokenization natural-language-processing
 tf-idf '*'
+theorem '*'
+theory '*'
 thinking '*'
 thompson-sampling algorithm
+time calendar-dimension
 topic-model latent-variable-model
 toy-problem problem
 training-set dataset
 transductive-learning supervised-learning
 transfer-learning machine-learning
 transformer-model artificial-neural-network
+transitive-dimension dimension
 tree-traversal graph-traversal
 triplestore '*'
 turing-test procedure
@@ -700,45 +805,15 @@ virtual-human computer-simulation
 vision-transformer transformer-model
 visual-odometry computer-vision
 voice-user-interface software
+volume 'linear-dimension(volume)'
 weak-artificial-intelligence artificial-intelligence
 weakly-supervised-learning supervised-learning
 web-crawler internet-bot
 web-ontology-language '*'
 weighted-constraint-satisfaction-problem constraint-satisfaction-problem
 winner-take-all-network recurrent-neural-network
+word '*'
 word-embedding vector-embedding
 word-sense-disambiguation natural-language-processing
 world-model ai-model
 zero-shot-learning machine-learning
-amount '*'
-brain '*'
-change '*'
-cognition '*'
-condition '*'
-danger '*'
-data-processing '*'
-diagram '*'
-document '*'
-education '*'
-emotion '*'
-equation '*'
-formal-system '*'
-function '*'
-game '*'
-hypothesis '*'
-image '*'
-mathematical-expression '*'
-mathematical-object '*'
-mathematical-set '*'
-mathematical-space '*'
-mind '*'
-plan '*'
-principle '*'
-proposition '*'
-speech '*'
-state '*'
-system '*'
-text '*'
-theorem '*'
-theory '*'
-word '*'

@@ -757,7 +757,6 @@ class	sub	ancestor	entailed_by	testable_in	reversed_in
 0-testable	pottery	device		wordnet sumo	
 0-testable	practice-session	service		wordnet sumo wikidata	
 0-testable	practice-session	work		wordnet sumo wikidata	
-0-testable	pressure	attribute		wordnet sumo opencyc	
 0-testable	pressure-cooker	device		wordnet sumo	
 0-testable	pressure-cooker	utensil		wordnet sumo gpt	
 0-testable	pretzel	prepared-dish		wordnet sumo wikidata	
@@ -1118,8 +1117,11 @@ class	sub	ancestor	entailed_by	testable_in	reversed_in
 0-testable	wristband	commodity		wordnet sumo wikidata	
 0-testable	yacht	machine		wordnet sumo wikidata yago gpt	
 0-testable	yam	food		wordnet sumo wikidata gpt	
+0-untestable	about	dimension			
+0-untestable	about	enclosing-dimension			
 0-untestable	art	practice			
 0-untestable	calendar-dimension	attribute			
+0-untestable	calendar-dimension	dimension			
 0-untestable	carbohydrate	chemical			
 0-untestable	carbohydrate	compound			
 0-untestable	carbohydrate	material			
@@ -1127,40 +1129,88 @@ class	sub	ancestor	entailed_by	testable_in	reversed_in
 0-untestable	chit	financial-document			
 0-untestable	circle	mathematical-object			
 0-untestable	classification-scheme	knowledge-organization-system			
+0-untestable	clock-time	calendar-dimension			
+0-untestable	clock-time	dimension			
+0-untestable	commencement	calendar-dimension			
+0-untestable	commencement	dimension			
 0-untestable	compact	land-vehicle			
+0-untestable	count	attribute			
+0-untestable	count	count-dimension			
+0-untestable	count	dimension			
 0-untestable	count-dimension	attribute			
+0-untestable	count-dimension	dimension			
+0-untestable	dawn	calendar-dimension			
+0-untestable	dawn	dimension			
+0-untestable	deadline	calendar-dimension			
+0-untestable	deadline	dimension			
 0-untestable	directory	folder			
+0-untestable	dominance-dimension	dimension			
+0-untestable	enclosing-dimension	dimension			
 0-untestable	folder	collection			
 0-untestable	folder	group			
 0-untestable	fructose	carbohydrate			
 0-untestable	fructose	monosaccharide			
+0-untestable	future	calendar-dimension			
+0-untestable	future	dimension			
+0-untestable	geo	dimension			
+0-untestable	geo	rectangle-dimension			
 0-untestable	glucose	carbohydrate			
 0-untestable	glucose	monosaccharide			
+0-untestable	graph-dimension	dimension			
+0-untestable	here-and-now	calendar-dimension			
+0-untestable	here-and-now	dimension			
+0-untestable	in	dimension			
+0-untestable	in	transitive-dimension			
 0-untestable	jazz	art			
 0-untestable	lactose	carbohydrate			
 0-untestable	lactose	disaccharide			
 0-untestable	law-of-nature	information			
 0-untestable	law-of-nature	proposition			
 0-untestable	linear-dimension	attribute			
+0-untestable	linear-dimension	dimension			
 0-untestable	marching-music	art			
+0-untestable	midnight	calendar-dimension			
+0-untestable	midnight	dimension			
+0-untestable	nowadays	calendar-dimension			
+0-untestable	nowadays	dimension			
+0-untestable	occasion	calendar-dimension			
+0-untestable	occasion	dimension			
 0-untestable	one-fourth	algebraic-number			
 0-untestable	one-fourth	rational-number			
 0-untestable	one-fourth	real-number			
 0-untestable	one-half	algebraic-number			
 0-untestable	one-half	rational-number			
 0-untestable	one-half	real-number			
+0-untestable	past	calendar-dimension			
+0-untestable	past	dimension			
+0-untestable	past-events	calendar-dimension			
+0-untestable	past-events	dimension			
 0-untestable	physical-law	law-of-nature			
+0-untestable	prefix-dimension	dimension			
 0-untestable	printed-publication	artifact			
 0-untestable	printed-publication	information			
 0-untestable	printed-publication	physical-object			
 0-untestable	printed-publication	product			
 0-untestable	printed-publication	publication			
+0-untestable	rectangle-dimension	dimension			
+0-untestable	reversed-dimension	dimension			
+0-untestable	shared-with	dimension			
+0-untestable	shared-with	reversed-dimension			
+0-untestable	size	dimension			
+0-untestable	size	dominance-dimension			
 0-untestable	square	mathematical-object			
 0-untestable	starch	carbohydrate			
 0-untestable	statistics	formal-science			
+0-untestable	time	calendar-dimension			
+0-untestable	time	dimension			
+0-untestable	time-of-day	calendar-dimension			
+0-untestable	time-of-day	dimension			
 0-untestable	time-standard	standard			
+0-untestable	transitive-dimension	dimension			
 0-untestable	triangle	geometric-shape			
 0-untestable	triangle	mathematical-object			
+0-untestable	twilight	calendar-dimension			
+0-untestable	twilight	dimension			
 0-untestable	vaccination	act			
 0-untestable	vaccination	activity			
 0-untestable	vaccination	event			
@@ -17665,6 +17715,7 @@ class	sub	ancestor	entailed_by	testable_in	reversed_in
 2+	telescope	artifact	wordnet sumo opencyc	wordnet sumo opencyc wikidata	
 2+	telescope	device	wordnet sumo opencyc	wordnet sumo opencyc	
 2+	television-camera	artifact	wordnet sumo	wordnet sumo wikidata	
+2+	temperature	amount	wordnet sumo	wordnet sumo wikidata	
 2+	temple	artifact	wordnet sumo opencyc	wordnet sumo opencyc wikidata	
 2+	temple	building	wordnet sumo	wordnet sumo wikidata yago	
 2+	temple-of-head	body-part	wordnet sumo	wordnet sumo	
