@@ -536,6 +536,8 @@ class	sub	ancestor	entailed_by	testable_in	reversed_in
 0-testable	logarithm	numeric-quantity		wordnet sumo wikidata	
 0-testable	loquat	food		wordnet sumo wikidata gpt	
 0-testable	low	event		wordnet sumo wikidata	
+0-testable	luck	attribute		wordnet sumo opencyc	
+0-testable	luck	state		wordnet sumo opencyc	
 0-testable	luggage-compartment	container		wordnet sumo	
 0-testable	lychee	food		wordnet sumo wikidata gpt	
 0-testable	machete	cutter		wordnet sumo wikidata gpt	
@@ -584,6 +586,12 @@ class	sub	ancestor	entailed_by	testable_in	reversed_in
 0-testable	mental-hospital	group		wordnet sumo wikidata	
 0-testable	mental-hospital	organization		wordnet sumo wikidata	
 0-testable	metro	agent		wordnet sumo wikidata	
+0-testable	metro	artifact		wordnet sumo wikidata	
+0-testable	metro	physical-object		wordnet sumo wikidata	
+0-testable	metro	place		wordnet sumo wikidata	
+0-testable	metro	railway-line		wordnet sumo	
+0-testable	metro	road		wordnet sumo wikidata	
+0-testable	metro	structure		wordnet sumo wikidata	
 0-testable	middle	part		wordnet sumo	
 0-testable	midnight	attribute		wordnet sumo opencyc	
 0-testable	milling-machine	tool		wordnet sumo wikidata	
@@ -795,6 +803,12 @@ class	sub	ancestor	entailed_by	testable_in	reversed_in
 0-testable	railcar	device		wordnet sumo	
 0-testable	railcar	machine		wordnet sumo wikidata yago	
 0-testable	railway	agent		wordnet sumo wikidata	
+0-testable	railway	artifact		wordnet sumo wikidata	
+0-testable	railway	physical-object		wordnet sumo wikidata	
+0-testable	railway	place		wordnet sumo wikidata	
+0-testable	railway	railway-line		wordnet sumo	
+0-testable	railway	road		wordnet sumo wikidata	
+0-testable	railway	structure		wordnet sumo wikidata	
 0-testable	railway-line	place		wordnet sumo	
 0-testable	railway-line	structure		wordnet sumo	
 0-testable	rain-shower	event		wordnet sumo	
@@ -1070,6 +1084,7 @@ class	sub	ancestor	entailed_by	testable_in	reversed_in
 0-testable	venus	physical-object		wordnet sumo wikidata	
 0-testable	venus	planet		wordnet sumo wikidata	
 0-testable	village	region		wordnet sumo wikidata yago claude	
+0-testable	virus	natural-object		wordnet sumo	
 0-testable	volcano	natural-object		wordnet sumo	
 0-testable	voyage	activity		wordnet sumo	
 0-testable	waders	commodity		wordnet sumo	
@@ -1726,7 +1741,6 @@ class	sub	ancestor	entailed_by	testable_in	reversed_in
 1	bail	idea	wordnet	wordnet sumo wikidata	
 1	bail	plan	wordnet	wordnet sumo	
 1	bail-bond	possession	wordnet	wordnet sumo	
-1	bait	cognition	wordnet	wordnet sumo	
 1	bakery	artifact	wordnet	wordnet sumo wikidata	
 1	bakery	physical-object	wordnet	wordnet sumo wikidata yago	
 1	bakery	shop	wordnet	wordnet sumo wikidata	
@@ -6205,8 +6219,6 @@ class	sub	ancestor	entailed_by	testable_in	reversed_in
 1	lp	device	wordnet	wordnet sumo	
 1	lp	phonograph-recording	wordnet	wordnet sumo wikidata	
 1	lp	recording	wordnet	wordnet sumo	
-1	luck	event	sumo	wordnet sumo opencyc wikidata	
-1	luck	process	wordnet	wordnet sumo	
 1	luggage	container	wordnet	wordnet sumo wikidata gpt cpc	
 1	luggage-compartment	physical-object	wordnet	wordnet sumo	
 1	luggage-rack	carrier	wordnet	wordnet sumo wikidata gpt	
@@ -8512,8 +8524,6 @@ class	sub	ancestor	entailed_by	testable_in	reversed_in
 1	salvation	condition	wordnet	wordnet sumo	
 1	salvation	safety	wordnet	wordnet sumo	
 1	salvation	state	wordnet	wordnet sumo opencyc	
-1	sample	cognition	wordnet	wordnet sumo opencyc wikidata	
-1	sample	example	wordnet	wordnet sumo	
 1	sand	material	wordnet	wordnet sumo wikidata gpt	
 1	sand	substance	wordnet	wordnet sumo wikidata	
 1	sandbox	plaything	wordnet	wordnet sumo	
@@ -9706,7 +9716,6 @@ class	sub	ancestor	entailed_by	testable_in	reversed_in
 1	telephone-line	connector	wordnet	wordnet sumo	
 1	telephone-line	physical-object	wordnet	wordnet sumo wikidata	
 1	telescope	instrument	wordnet	wordnet sumo	
-1	telescope	magnifier	wordnet	wordnet sumo gpt	
 1	telescope	physical-object	wordnet	wordnet sumo wikidata yago	
 1	television	artifact	wordnet	wordnet sumo wikidata	
 1	television	equipment	wordnet	wordnet sumo wikidata gpt	
@@ -18232,8 +18241,6 @@ class	sub	ancestor	entailed_by	testable_in	reversed_in
 2+	virgin	physical-object	wordnet wikidata	wordnet sumo wikidata	
 2+	virtue	attribute	wordnet sumo	wordnet sumo opencyc	
 2+	virus	agent	wordnet sumo	wordnet sumo wikidata	
-2+	virus	microorganism	wordnet sumo opencyc wikidata	wordnet sumo opencyc wikidata	
-2+	virus	organism	wordnet sumo wikidata	wordnet sumo wikidata yago	
 2+	virus	physical-object	wordnet sumo wikidata	wordnet sumo wikidata yago	
 2+	vise	artifact	wordnet sumo opencyc	wordnet sumo opencyc wikidata	
 2+	vise	device	wordnet sumo opencyc	wordnet sumo opencyc	

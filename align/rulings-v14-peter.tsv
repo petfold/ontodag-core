@@ -33,3 +33,21 @@ core	championship	cut	status		"event": the contest, not the title (one reading w
 core	meeting	cut	group		"event": the gathering as an event, not the people
 core	academy	move	school	institution	"no": an academy of sciences is "a learned establishment", not a school; institution is school's parent
 economics	interest-rate	move	charge-rate	ratio	"no": an interest rate is a ratio, not a price charged; discount rates and the prime rate follow
+# --- doubtful-list answers, 2026-10-17 ---
+core	luck	move	process	state	"luck is more a state than a process": WordNet 14473222, one's overall circumstances
+computing	computer-server	cut	server-software		"server is hardware"
+core	telescope	move	magnifier	instrument	"telescope is not magnifier, it's an instrument": a radio telescope magnifies no image
+core	railway	parent+	-	railway-line	"railway is both an organisation and physical infrastructure": the track system as well as the company; metro follows
+# --- bait and sample leave core (Peter 2026-10-17: "leave them out of core if possible without too much disruption. Core should be for clear and unchanging things") ---
+mathematics	cross-section	move	sample	subpopulation	a statistical sample is part of a population (Peter: "subpopulation is ok")
+mathematics	grab-sample	move	sample	subpopulation	as cross-section
+mathematics	random-sample	move	sample	subpopulation	as cross-section
+mathematics	sample	drop			the stub of core's sample, which leaves core
+core	sample	drop			two readings (a statistical sample and a physical specimen), neither of them clear enough for core
+core	bait	drop			WordNet's enticement sense and the fisherman's bait: no reading clear enough for core
+# --- Peter 2026-10-17: "agree with your recommendations" ---
+core	virus	move	microorganism	natural-object	whether a virus is an organism is contested (no cells, no metabolism of its own); a natural object and an agent are true either way
+medicine	pathogen	cut	microorganism		prions and parasitic worms are pathogens and not microorganisms; it stays under agent
+biology	cosmid	cut	virus		"a large vector that is made from a bacteriophage": made from a virus, not one; it stays under cloning-vector
+computing	web-server	move	computer-server	server-software	the program (nginx, Apache) in ordinary use; computer-server is the machine
+computing	proxy-server	move	computer-server	server-software	the program (Squid) in ordinary use; reverse-proxy follows

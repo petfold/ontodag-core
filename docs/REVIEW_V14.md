@@ -550,6 +550,30 @@ In ontodag (working tree, uncommitted):
 The pack and web tests, the invariants, boundaries and reference tests,
 and the lint all pass.
 
+**Peter's answers of 2026-10-17:**
+- `luck` is a state (WordNet's "one's overall circumstances").
+- `computer-server` is hardware only.
+- `telescope` is an instrument, not a magnifier.
+- `railway` is both the organization and the track (`railway-line`).
+- `bait` and `sample` leave core, since "core should be for clear and
+  unchanging things"; the statistical samples in mathematics move under
+  `subpopulation`.
+
+Then, on Claude's recommendations:
+- `virus` sits under `natural-object` and `agent`, not `microorganism`;
+  whether a virus is an organism is contested.
+- `pathogen` sits under `agent` only, since prions and worms are not
+  microorganisms.
+- `cosmid` is not a virus: it is made from one.
+- `web-server` and `proxy-server` are server software.
+
+A word filed under both of its readings stays so "for now": `railway`
+(company and track), `pharmacy` (business and shop) and the
+building/organization pairs. This is a recorded exception to CORE.md's
+"one reading where a word has two". The test that would undo it is an
+instance that has only one of the readings: a train operating company
+that owns no track, an online pharmacy.
+
 **Canonical files with glosses.** step7 now writes every store through
 ontodag's own writer, `native.dumps`. The files carry the `#:canonical`
 marker, so core loads in about 0.7 s instead of re-reducing line by line.
