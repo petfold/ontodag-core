@@ -1,0 +1,300 @@
+# The about() pass (Peter 2026-10-16: "maybe we should have a lot more about() in core"): a field of study, or a kind of
+# information, is filed under about(X) for what it is about. about follows the graph and in(...) (ROLES.md), so
+# about(dog) ⊑ about(animal), and a subfield inherits its field's subject: each edge was checked against every node below it.
+# Witnesses: Wikidata P2578 "studies" (fetched 2026-10-16), the WordNet gloss ("the branch of X that studies Y"), Claude's reading.
+# Rows use parent+ (the node keeps its kind parents). Each note opens with its witnesses: wikidata (P2578), wn-gloss (the WordNet
+# gloss names the subject), wn-domain (WordNet's topic-domain members of the field fall under the subject), claude (Claude's reading only).
+# Applied by tools/step7.py after the other rulings files.
+pack	sub	action	old	new	note
+# --- batch 1: core's fields ---
+core	architecture	parent+	-	about(building)	[wn-gloss] "the discipline dealing with the principles of design and construction" of buildings
+core	business-studies	parent+	-	about(business)	[claude] the study of business
+core	history	parent+	-	about(past)	[wn-gloss] "records and interprets past events"; Wikidata P1269 facet of past
+core	linguistics	parent+	-	about(language)	[wikidata wn-gloss] "the scientific study of language"; Wikidata P2578 language
+core	rhetoric	parent+	-	about(language)	[wn-gloss] "the technique and rules for using language effectively"
+core	theology	parent+	-	about(religion)	[wn-gloss] "the systematic study of religion"
+ai	cognitive-science	parent+	-	about(cognition)	[wikidata wn-gloss] "concerned with cognition"; Wikidata P2578 cognition
+core	astronomy	parent+	-	about(celestial-body)	[wn-domain wn-gloss] "studies celestial bodies and the universe"
+core	biology	parent+	-	about(organism)	[wikidata wn-domain wn-gloss] "the science that studies living organisms"; Wikidata P2578 organism
+core	chemistry	parent+	-	about(substance)	[wikidata wn-domain wn-gloss] "the science of matter ... the composition of substances"
+core	earth-science	parent+	-	about(earth)	[wn-gloss] "the sciences that deal with the earth or its parts"
+core	geography	parent+	-	about(place)	[wn-gloss] "study of the earth's surface"; its subfields map, name and describe places
+core	meteorology	parent+	-	about(weather)	[wikidata wn-domain wn-gloss] "phenomena of the atmosphere (especially weather)"; Wikidata P2578 weather
+core	medicine	parent+	-	about(health)	[wn-gloss] "the maintenance of health and the prevention and treatment of disease"
+core	psychology	parent+	-	about(mind)	[wn-gloss] "the science of mental life"
+core	sociology	parent+	-	about(society)	[wn-gloss] "the study of human societies"
+core	electronics	parent+	-	about(electron)	[wn-gloss] "the emission and effects of electrons"
+core	economics	parent+	-	about(economic-system)	[wn-gloss] "production and distribution and consumption", which is the gloss of core's economic-system (core's economy is frugality)
+# --- batch 2: the packs' fields ---
+ai	robotics	parent+	-	about(automaton)	[wn-gloss] "the practical use of robots"
+ai	control-theory	parent+	-	about(control-system)	[claude] Wikidata P2578 feedback
+ai	philosophy-of-artificial-intelligence	parent+	-	about(artificial-intelligence)	[claude] the philosophy of AI
+ai	regulation-of-artificial-intelligence	parent+	-	about(artificial-intelligence)	[claude] Wikidata P921 artificial intelligence
+ai	information-science	parent+	-	about(information)	[wikidata wn-domain wn-gloss] "gathering, manipulating, storing, retrieving, and classifying recorded information"; Wikidata P2578 information
+ai	human-computer-interaction	parent+	-	about(computer)	[wikidata] Wikidata P2578 computer
+computing	information-technology	parent+	-	about(computer)	[wn-gloss] "the use of computers and telecommunications"
+computing	software-engineering	parent+	-	about(software)	[claude] the engineering of software
+computing	telecommunications-engineering	parent+	-	about(telecommunication)	[wn-gloss] "the technology of electronic communication"
+computing	cryptography	parent+	-	about(encryption)	[claude] the study of secure encoding
+computing	information-theory	parent+	-	about(information)	[wn-gloss] "the limits and efficiency of information processing"
+computing	graph-theory	parent+	-	about(mathematical-graph)	[wikidata] Wikidata P2578 graph
+space	aerospace-engineering	parent+	-	about(aircraft)	[claude] the engineering of aircraft and spacecraft
+space	aerospace-engineering	parent+	-	about(spacecraft)	[claude] the engineering of aircraft and spacecraft
+space	astronautics	parent+	-	about(spaceflight)	[claude] the science of spaceflight
+space	planetary-science	parent+	-	about(planet)	[wikidata] Wikidata P2578 planet
+space	selenology	parent+	-	about(moon)	[wn-gloss] "the branch of astronomy that deals with the moon"
+space	solar-physics	parent+	-	about(sun)	[wn-gloss] "the branch of astronomy that deals with the sun"
+geography	cartography	parent+	-	about(map)	[wikidata] Wikidata P2578 map
+geography	atmospheric-science	parent+	-	about(earth-atmosphere)	[claude] the science of the atmosphere
+geography	climatology	parent+	-	about(climate)	[wikidata wn-gloss] "meteorology of climates"; Wikidata P2578 climate
+geography	geomorphology	parent+	-	about(landform)	[wikidata] Wikidata P2578 landform
+geography	hydrography	parent+	-	about(body-of-water)	[wn-gloss] "the surface waters of the earth"
+geography	bathymetry	parent+	-	about(ocean-floor)	[claude] the depth of the sea floor; Wikidata P1269 ocean floor
+geography	toponymy	parent+	-	about(place-name)	[wikidata] Wikidata P2578 toponym
+geography	topography	parent+	-	about(terrain)	[wn-gloss] "the surface features of a region"; Wikidata P2578 (for geomorphology) terrain
+geography	hydrology	parent+	-	about(water)	[wn-gloss] "studies water on the earth and in the atmosphere"
+geography	glaciology	parent+	-	about(glacier)	[wikidata] Wikidata P2578 glacier
+geography	seismology	parent+	-	about(earthquake)	[wikidata wn-gloss] "studies earthquakes"; Wikidata P2578 earthquake
+geography	volcanology	parent+	-	about(volcano)	[wn-gloss] "studies volcanoes"
+geography	mineralogy	parent+	-	about(mineral)	[wikidata wn-gloss] "studies minerals"; Wikidata P2578 mineral
+geography	orology	parent+	-	about(mountain)	[wn-gloss] "the science of mountains"
+geography	petrology	parent+	-	about(rock)	[wn-gloss] "studies rocks"
+geography	speleology	parent+	-	about(cave)	[wikidata wn-gloss] "the scientific study of caves"; Wikidata P2578 cave
+geography	stratigraphy	parent+	-	about(stratum)	[wikidata wn-gloss] "the arrangement and succession of strata"; Wikidata P2578 stratum
+geography	tectonics	parent+	-	about(earth-crust)	[wn-gloss] "the folding and faulting of the earth's crust"
+geography	limnology	parent+	-	about(lake)	[wn-gloss] "bodies of fresh water"
+geography	nephology	parent+	-	about(cloud)	[wn-gloss] "studies clouds and cloud formation"
+geography	oceanography	parent+	-	about(ocean)	[wikidata wn-gloss] "physical and biological aspects of the oceans"; Wikidata P2578 ocean
+geography	paleontology	parent+	-	about(fossil)	[wn-gloss] "studies fossil organisms and related remains"
+geography	micropaleontology	parent+	-	about(microfossil)	[wn-gloss] "the paleontology of microfossils"
+geography	pedology	parent+	-	about(soil)	[wikidata] Wikidata P2578 soil
+geography	paleobotany	parent+	-	about(plant)	[wn-gloss] "the study of fossil plants"
+geography	paleodendrology	parent+	-	about(tree)	[wn-gloss] "studies fossil trees"
+geography	paleozoology	parent+	-	about(animal)	[wn-gloss] "the study of fossil animals"
+geography	paleomammalogy	parent+	-	about(mammal)	[wn-gloss] "the paleobiology of ancient mammals"
+geography	paleornithology	parent+	-	about(bird)	[wn-gloss] "the paleobiology of birds"
+geography	vertebrate-paleontology	parent+	-	about(vertebrate)	[wn-gloss] "the paleontology of vertebrates"
+geography	paleoanthropology	parent+	-	about(human)	[wn-gloss] "the scientific study of human fossils"
+biology	anatomy	parent+	-	about(body)	[wn-gloss] "deals with the structure of animals"
+medicine	bacteriology	parent+	-	about(bacterium)	[wn-gloss] "studies bacteria"
+biology	botany	parent+	-	about(plant)	[wn-domain wn-gloss] "studies plants"
+biology	ecology	parent+	-	about(environment)	[wikidata wn-gloss] "the relations between organisms and their environment"; Wikidata P2578 environment
+biology	embryology	parent+	-	about(embryo)	[wn-gloss] "the formation and early development of living organisms"
+biology	genetics	parent+	-	about(gene)	[wn-domain wn-gloss] "studies heredity and variation"; Wikidata P2578 genome
+biology	microbiology	parent+	-	about(microorganism)	[wn-domain wn-gloss] "studies microorganisms"
+biology	taxonomy	parent+	-	about(taxonomic-group)	[claude] the classification of organisms into taxa
+biology	zoology	parent+	-	about(animal)	[wn-gloss] "studies animals"
+medicine	endocrinology	parent+	-	about(hormone)	[wikidata wn-gloss] "the endocrine glands and their secretions"; Wikidata P2578 hormone
+medicine	immunology	parent+	-	about(immunity)	[wikidata wn-gloss] "studies the body's immune system"; Wikidata P2578 immunity
+medicine	pharmacology	parent+	-	about(drug)	[wikidata wn-domain wn-gloss] "the science or study of drugs"; Wikidata P2578 drug
+medicine	virology	parent+	-	about(virus)	[wn-domain wn-gloss] "studies viruses and viral diseases"
+medicine	cardiology	parent+	-	about(heart)	[wikidata wn-gloss] "the heart and its diseases"; Wikidata P2578 heart
+medicine	dentistry	parent+	-	about(tooth)	[wikidata wn-gloss] "the teeth"; Wikidata P2578 tooth
+medicine	dermatology	parent+	-	about(skin)	[wikidata wn-gloss] "the skin and its diseases"; Wikidata P2578 skin
+medicine	epidemiology	parent+	-	about(disease)	[wn-gloss] "the transmission and control of disease"
+medicine	gynecology	parent+	-	about(woman)	[wn-gloss] "the diseases and hygiene of women"
+medicine	hematology	parent+	-	about(blood)	[wn-gloss] "diseases of the blood"
+medicine	nephrology	parent+	-	about(kidney)	[wikidata wn-gloss] "the kidney"; Wikidata P2578 kidney
+medicine	neuropsychiatry	parent+	-	about(mental-disorder)	[wn-gloss] "mental disorders attributable to diseases of the nervous system"
+medicine	nosology	parent+	-	about(disease)	[wn-gloss] "the classification of disease"
+medicine	oncology	parent+	-	about(tumor)	[wn-gloss] "the study and treatment of tumors"
+medicine	ophthalmology	parent+	-	about(eye)	[wn-gloss] "the eye and its diseases"
+medicine	otology	parent+	-	about(ear)	[wn-gloss] "concerned with the ear"
+medicine	pediatrics	parent+	-	about(child)	[wn-gloss] "the treatment of infants and children"
+medicine	podiatry	parent+	-	about(foot)	[wn-gloss] "concerned with the feet"
+medicine	proctology	parent+	-	about(colon)	[wn-gloss] "disorders of the colon and rectum"
+medicine	psychiatry	parent+	-	about(mental-disorder)	[wn-domain wn-gloss] "the diagnosis and treatment of mental disorders"
+medicine	rhinolaryngology	parent+	-	about(ear)	[wn-gloss] "diseases of the ear, nose and throat"
+medicine	rhinolaryngology	parent+	-	about(nose)	[wn-gloss] "diseases of the ear, nose and throat"
+medicine	rhinolaryngology	parent+	-	about(throat)	[wn-gloss] "diseases of the ear, nose and throat"
+medicine	traumatology	parent+	-	about(injury)	[wn-gloss] "the surgical repair of injuries and wounds"
+medicine	veterinary-medicine	parent+	-	about(animal)	[wn-gloss] "diseases and injuries of animals"
+medicine	pathology	parent+	-	about(disease)	[wn-domain wn-gloss] "the causes and nature and effects of diseases"
+medicine	clinical-psychology	parent+	-	about(mental-disorder)	[wn-gloss] "the treatment of abnormal mentation and behavior"
+chemistry	electrochemistry	parent+	-	about(electricity)	[wn-gloss] "the chemical action of electricity"
+chemistry	biochemistry	parent+	-	about(organism)	[wn-gloss] "compounds and processes occurring in organisms"
+physics	dynamics	parent+	-	about(force)	[wn-gloss] "the forces that cause motions of bodies"
+physics	hydrodynamics	parent+	-	about(fluid)	[wn-gloss] "study of fluids in motion"
+physics	nuclear-physics	parent+	-	about(atomic-nucleus)	[wn-gloss] "the internal structure of atomic nuclei"
+physics	optics	parent+	-	about(visible-light)	[wikidata wn-gloss] "the physical properties of light"; Wikidata P2578 light (core's light is a lamp)
+physics	particle-physics	parent+	-	about(elementary-particle)	[wn-gloss] "subatomic particles and their interactions"
+physics	thermodynamics	parent+	-	about(heat-energy)	[wikidata wn-gloss] "the conversion of different forms of energy"; Wikidata P2578 heat
+mathematics	arithmetic	parent+	-	about(number)	[wn-gloss] "the theory of numerical calculations"
+mathematics	linear-algebra	parent+	-	about(linear-map)	[wn-gloss] "linear equations and linear transformations"
+mathematics	matrix-algebra	parent+	-	about(matrix)	[wn-gloss] "the theory of matrices"
+mathematics	quadratics	parent+	-	about(quadratic-equation)	[wn-gloss] "quadratic equations"
+mathematics	vector-algebra	parent+	-	about(euclidean-vector)	[wn-gloss] "the theory of vectors"
+mathematics	geometry	parent+	-	about(shape)	[wn-domain wn-gloss] "points and lines and curves and surfaces"
+mathematics	fractal-geometry	parent+	-	about(fractal)	[wn-gloss] "the geometry of fractals"
+mathematics	trigonometry	parent+	-	about(triangle)	[wn-gloss] "the mathematics of triangles"
+mathematics	group-theory	parent+	-	about(mathematical-group)	[wn-gloss] "dealing with groups"
+mathematics	mathematical-analysis	parent+	-	about(function)	[wn-gloss] "calculus and the theory of limits; sequences and series"; calculus inherits it
+mathematics	metamathematics	parent+	-	about(mathematics)	[wikidata wn-gloss] "the logical analysis of mathematical reasoning"; Wikidata P2578 mathematics
+mathematics	number-theory	parent+	-	about(integer)	[wikidata] Wikidata P2578 integer
+mathematics	order-theory	parent+	-	about(partially-ordered-set)	[wikidata] Wikidata P2578 partially ordered set
+mathematics	probability-theory	parent+	-	about(probability)	[wn-gloss] "deals with probabilities"
+mathematics	set-theory	parent+	-	about(mathematical-set)	[wn-gloss] "the nature and relations of sets"
+mathematics	topology	parent+	-	about(topological-space)	[wikidata] Wikidata P2578 topological space
+economics	auction-theory	parent+	-	about(auction)	[wikidata] Wikidata P2578 auction
+economics	tokenomics	parent+	-	about(cryptocurrency)	[claude] Wikidata P1269 cryptocurrency
+# --- batch 3: kinds of information defined by their subject ---
+core	biography	parent+	-	about(person)	[wn-gloss] "an account of the series of events making up a person's life"
+core	portrait	parent+	-	about(person)	[wn-gloss] "any likeness of a person"
+core	map	parent+	-	about(place)	[wn-gloss] "a diagrammatic representation of the earth's surface"; star charts and weather maps below it map places too
+core	dictionary	parent+	-	about(word)	[wn-gloss] "an alphabetical list of words with information about them"; gazetteers below it list place names
+core	menu	parent+	-	about(food)	[wn-gloss] "a list of dishes available at a restaurant" (core's dish is dishware)
+core	prescription	parent+	-	about(drug)	[wn-gloss] "instructions from a physician ... concerning the form and dosage of a drug"
+core	news	parent+	-	about(event)	[wn-gloss] "information about recent and important events"
+core	news-report	parent+	-	about(event)	[wn-gloss] "a short account of the news"
+core	game-rule	parent+	-	about(game)	[wn-gloss] "directions that define the way a game or sport is to be conducted"
+core	opinion-poll	parent+	-	about(opinion)	[wn-gloss] "an inquiry into public opinion"
+core	criminal-record	parent+	-	about(crime)	[wn-gloss] "a list of crimes for which an accused person has been previously convicted"
+core	census	parent+	-	about(population)	[wn-gloss] "a periodic count of the population"
+core	address-directory	parent+	-	about(address)	[wn-gloss] "an alphabetical list of names and addresses"
+core	tax-return	parent+	-	about(tax)	[wn-gloss] "information about the taxpayer's tax liability"
+core	price-quotation	parent+	-	about(price)	[wn-gloss] "a statement of the current market price"
+geography	weather-forecast	parent+	-	about(weather)	[claude] a forecast of the weather
+geography	weather-map	parent+	-	about(weather)	[wn-gloss] "a map showing the principal meteorological conditions"
+geography	road-map	parent+	-	about(road)	[claude] a map of roads
+geography	star-chart	parent+	-	about(star)	[claude] a map of the stars
+geography	topographic-map	parent+	-	about(terrain)	[claude] a map of the shape of the land
+geography	nautical-chart	parent+	-	about(sea)	[claude] a chart for navigation at sea
+geography	bathymetric-chart	parent+	-	about(ocean-floor)	[claude] a chart of the depth of water bodies
+geography	tide-table	parent+	-	about(tide)	[claude] a table of the times and heights of tides
+geography	climate-classification	parent+	-	about(climate)	[claude] a classification of climates
+geography	gazetteer	parent+	-	about(place)	[wn-gloss] "a geographical dictionary"
+geography	atlas	parent+	-	about(place)	[wn-gloss] "a collection of maps in book form"
+space	astronomical-catalog	parent+	-	about(celestial-body)	[claude] a list of astronomical objects
+space	star-catalog	parent+	-	about(star)	[claude] a catalog of stars
+space	ephemeris	parent+	-	about(celestial-body)	[wn-gloss] "a table showing the positions of a heavenly body on a number of dates"
+space	hertzsprung-russell-diagram	parent+	-	about(star)	[claude] a plot of stars' luminosity against temperature
+medicine	formulary	parent+	-	about(drug)	[wn-gloss] "a book containing a list of pharmaceutical products with their formulas"
+computing	software-documentation	parent+	-	about(software)	[claude] documentation of software
+computing	metadata	parent+	-	about(information)	[claude] data that describes other data
+economics	income-statement	parent+	-	about(income)	[claude] a statement of a firm's income and expenses
+economics	cash-flow-statement	parent+	-	about(cash-flow)	[claude] a statement of cash flows
+economics	bill-of-lading	parent+	-	about(shipment)	[wn-gloss] "a receipt given by the carrier ... acknowledging receipt of goods being shipped"
+economics	waybill	parent+	-	about(shipment)	[claude] a document describing a shipment
+economics	credit-rating	parent+	-	about(credit)	[claude] an evaluation of creditworthiness; credit scores below it inherit
+# --- batch 4: the packs' fields left without a subject ---
+mathematics	computability-theory	parent+	-	about(computational-problem)	[claude] which problems are computable; computational complexity theory below it inherits
+ai	information-retrieval	parent+	-	about(information)	[claude] the retrieval of information; data retrieval and full-text search inherit
+geography	geomatics	parent+	-	about(geographic-data)	[claude] the gathering and processing of geographic data
+mathematics	coding-theory	parent+	-	about(error-correcting-code)	[claude] the theory of codes for error detection and correction
+mathematics	numerical-analysis	parent+	-	about(algorithm)	[wn-gloss] "studies algorithms for approximating solutions"
+mathematics	proof-theory	parent+	-	about(formal-proof)	[claude] proofs as mathematical objects
+mathematics	type-theory	parent+	-	about(type-system)	[wikidata] Wikidata P2578 data type, type system
+physics	aeromechanics	parent+	-	about(gas)	[wn-gloss] "the motion of gases (especially air)"
+physics	electromagnetism	parent+	-	about(electricity)	[wn-gloss] "electromagnetic phenomena": electricity and magnetism
+physics	electromagnetism	parent+	-	about(magnetism)	[wn-gloss] "electromagnetic phenomena": electricity and magnetism
+physics	electrostatics	parent+	-	about(electric-charge)	[wn-gloss] "static electricity", charges at rest
+physics	quantum-mechanics	parent+	-	about(atom)	[wn-gloss] "matter at the atomic level"
+ai	affective-computing	parent+	-	about(emotion)	[claude] computing that recognises and simulates emotions; emotion recognition inherits
+ai	ai-safety	parent+	-	about(artificial-intelligence)	[claude] the safety of AI systems; alignment and scalable oversight inherit
+ai	explainable-ai	parent+	-	about(artificial-intelligence)	[claude] making AI systems' decisions explainable
+ai	computer-vision	parent+	-	about(image)	[claude] understanding images and video; object detection and segmentation inherit
+ai	image-processing	parent+	-	about(image)	[claude] processing images; edge detection inherits
+ai	handwriting-recognition	parent+	-	about(text)	[claude] recognising handwritten text
+ai	optical-character-recognition	parent+	-	about(text)	[claude] recognising printed or written text
+ai	document-classification	parent+	-	about(document)	[claude] classifying documents
+ai	ontology-engineering	parent+	-	about(computational-ontology)	[wikidata] Wikidata P2578 ontology
+ai	ontology-learning	parent+	-	about(computational-ontology)	[claude] learning ontologies from data
+ai	ontology-alignment	parent+	-	about(computational-ontology)	[claude] matching ontologies
+ai	network-science	parent+	-	about(complex-network)	[claude] the study of complex networks; community detection and link prediction inherit
+ai	speaker-verification	parent+	-	about(speech)	[claude] verifying a speaker from their voice
+ai	computational-neuroscience	parent+	-	about(brain)	[claude] modelling the brain and nervous system
+ai	educational-data-mining	parent+	-	about(education)	[claude] data mining applied to education
+ai	game-theory	parent+	-	about(game)	[wn-gloss] "a theory of competition stated in terms of gains and losses among opposing players"; auction theory inherits
+ai	general-game-playing	parent+	-	about(game)	[claude] playing arbitrary games
+ai	automated-theorem-proving	parent+	-	about(theorem)	[claude] proving theorems by computer
+ai	automated-planning	parent+	-	about(plan)	[claude] producing plans; its subfields inherit
+# --- batch 5: the packs' information: theories, laws, datasets, contracts ---
+ai	image-dataset	parent+	-	about(image)	[claude] a dataset of images
+ai	speech-dataset	parent+	-	about(speech)	[claude] a dataset of recorded speech
+ai	cognitive-architecture	parent+	-	about(mind)	[claude] a theory of the structure of the mind
+ai	computational-theory-of-mind	parent+	-	about(mind)	[wn-gloss] "the mind is a computational system"
+ai	connectionism	parent+	-	about(mind)	[claude] a theory of mind as networks of simple units
+ai	distributed-cognition	parent+	-	about(cognition)	[claude] a theory of cognition
+ai	embodied-cognition	parent+	-	about(cognition)	[claude] a theory of cognition
+ai	situated-cognition	parent+	-	about(cognition)	[claude] a theory of cognition
+ai	enactivism	parent+	-	about(cognition)	[claude] a theory of cognition
+ai	extended-mind-thesis	parent+	-	about(mind)	[claude] a thesis about the mind
+ai	language-model	parent+	-	about(language)	[claude] a model of language; the large language models inherit
+ai	uncanny-valley	parent+	-	about(humanoid-robot)	[claude] the hypothesised unease at nearly humanlike robots
+biology	cell-theory	parent+	-	about(cell)	[wn-gloss] "cells form the fundamental structural units of all plants and animals"
+biology	theory-of-evolution	parent+	-	about(evolution)	[wn-gloss] "a scientific theory of the origin of species"
+biology	mendel's-law	parent+	-	about(genetic-inheritance)	[wn-gloss] "principles of heredity"
+biology	theory-of-inheritance	parent+	-	about(genetic-inheritance)	[wn-gloss] "how characteristics of one generation are derived from earlier generations"
+chemistry	atomism	parent+	-	about(atom)	[wn-gloss] "all matter is composed of tiny discrete finite indivisible particles"
+chemistry	dalton's-law	parent+	-	about(gas)	[wn-gloss] "the pressure exerted by a mixture of gases"
+chemistry	henry's-law	parent+	-	about(gas)	[claude] the solubility of a gas
+chemistry	law-of-constant-proportion	parent+	-	about(compound)	[wn-gloss] "every pure substance always contains the same elements combined in the same proportions"
+chemistry	law-of-multiple-proportions	parent+	-	about(compound)	[claude] the proportions in which two elements combine
+chemistry	law-of-equivalent-proportions	parent+	-	about(chemical-element)	[claude] the proportions in which elements combine
+chemistry	law-of-mass-action	parent+	-	about(chemical-reaction)	[claude] the rate of a chemical reaction
+chemistry	equilibrium-law	parent+	-	about(chemical-reaction)	[claude] chemical equilibrium
+chemistry	periodic-law	parent+	-	about(chemical-element)	[wn-gloss] "chemical properties of the elements are periodic functions of their atomic numbers"
+chemistry	periodic-table	parent+	-	about(chemical-element)	[wn-gloss] "a tabular arrangement of the chemical elements"
+chemistry	theory-of-indicators	parent+	-	about(chemical-indicator)	[wn-gloss] "all indicators are either weak acids or weak bases"
+computing	moores-law	parent+	-	about(chip)	[claude] the number of transistors on a chip
+computing	web-map-service	parent+	-	about(map)	[claude] a service that produces maps
+computing	openstreetmap	parent+	-	about(place)	[claude] a map dataset of the world
+computing	software-specification	parent+	-	about(software)	[claude] a specification of software
+computing	principle-of-least-privilege	parent+	-	about(access-control)	[claude] a principle of access control
+computing	metadata-standard	parent+	-	about(metadata)	[claude] a standard for metadata; Dublin Core and Exif inherit
+economics	arbitrage-pricing-theory	parent+	-	about(price)	[claude] a theory of asset pricing
+economics	capital-asset-pricing-model	parent+	-	about(rate-of-return)	[claude] the expected return of an asset
+economics	fama-french-three-factor-model	parent+	-	about(rate-of-return)	[claude] a model of asset returns
+economics	black-scholes-model	parent+	-	about(option-finance)	[claude] a model for pricing options
+economics	contract-theory	parent+	-	about(contract)	[claude] the theory of contracts
+economics	consumer-choice	parent+	-	about(consumer)	[claude] the theory of consumers' choices
+economics	efficient-market-hypothesis	parent+	-	about(financial-market)	[claude] a hypothesis about financial markets
+economics	supply-and-demand	parent+	-	about(price)	[claude] the model of price determination in a market
+economics	time-value-of-money	parent+	-	about(money)	[claude] a principle about money
+economics	bitcoin-improvement-proposal	parent+	-	about(bitcoin-network)	[claude] a proposal to change Bitcoin
+economics	ethereum-improvement-proposal	parent+	-	about(ethereum)	[claude] a proposal to change Ethereum
+economics	employment-contract	parent+	-	about(employment)	[wn-gloss] "contract between employer and employee"
+economics	sales-contract	parent+	-	about(sale)	[claude] a contract of sale
+economics	purchase-contract	parent+	-	about(sale)	[wn-gloss] "a contract stating the terms of a purchase"
+economics	service-contract	parent+	-	about(service)	[wn-gloss] "a contract for maintenance services"
+economics	health-insurance	parent+	-	about(health)	[wn-gloss] "insurance against loss due to ill health"
+geography	plate-tectonics	parent+	-	about(lithosphere)	[claude] the theory of the movement of the lithosphere's plates
+geography	principle-of-superposition	parent+	-	about(stratum)	[wn-gloss] "in a series of stratified sedimentary rocks the lowest stratum is the oldest"
+geography	weather-forecasting	parent+	-	about(weather)	[wn-gloss] "predicting what the weather will be"
+geography	map-legend	parent+	-	about(map)	[claude] the key to a map
+geography	geographic-data	parent+	-	about(place)	[claude] data about places; digital elevation models and geographic data formats inherit
+geography	spatial-database	parent+	-	about(place)	[claude] a database of spatial data
+medicine	germ-theory	parent+	-	about(disease)	[wn-gloss] "all contagious diseases are caused by microorganisms"
+physics	bohr-theory	parent+	-	about(atom)	[wn-gloss] "a theory of atomic structure"
+physics	bose-einstein-statistics	parent+	-	about(boson)	[wn-gloss] "statistical law obeyed by a system of particles" (bosons)
+physics	fermi-dirac-statistics	parent+	-	about(fermion)	[claude] the statistics of fermions
+physics	copernican-system	parent+	-	about(solar-system)	[wn-gloss] "the Earth and planets move around the sun"
+physics	corpuscular-theory	parent+	-	about(visible-light)	[wn-gloss] "light is transmitted as a stream of particles"
+physics	wave-theory	parent+	-	about(visible-light)	[wn-gloss] "light is transmitted as waves"
+physics	gay-lussac's-law	parent+	-	about(gas)	[wn-gloss] "the density of an ideal gas"
+physics	kinetic-theory	parent+	-	about(gas)	[wn-gloss] "gases consist of small particles in random motion"
+physics	maxwell-boltzmann-distribution-law	parent+	-	about(gas)	[wn-gloss] "the distribution of energy among the molecules of a gas"
+physics	hubble's-law	parent+	-	about(galaxy)	[wn-gloss] "the speed of recession of distant galaxies"
+space	hubble's-law	parent+	-	about(galaxy)	[claude] the speed of recession of galaxies
+physics	kepler's-law	parent+	-	about(planet)	[wn-gloss] "empirical laws of planetary motion"
+space	kepler's-law	parent+	-	about(planet)	[claude] the laws of planetary motion
+physics	law-of-gravitation	parent+	-	about(gravity)	[wn-gloss] "any two bodies attract each other"
+physics	theory-of-gravitation	parent+	-	about(gravity)	[wn-gloss] "any two particles of matter attract one another"
+physics	principle-of-equivalence	parent+	-	about(gravity)	[claude] gravitation and acceleration are indistinguishable
+physics	law-of-thermodynamics	parent+	-	about(heat-energy)	[wn-gloss] "the relations between states of energy"
+physics	planck's-law	parent+	-	about(radiation)	[wn-gloss] "the energy of electromagnetic radiation"
+physics	planck's-radiation-law	parent+	-	about(radiation)	[wn-gloss] "the distribution of energy radiated by a blackbody"
+physics	supersymmetry	parent+	-	about(elementary-particle)	[claude] a symmetry between kinds of particles
+space	kessler-syndrome	parent+	-	about(space-debris)	[claude] a cascade of collisions of debris in orbit
+space	stellar-classification	parent+	-	about(star)	[claude] the classification of stars; spectral classes inherit
+mathematics	bayes'-theorem	parent+	-	about(conditional-probability)	[wn-gloss] "how the conditional probability of a set of possible causes ... can be computed"
+mathematics	bernoulli's-law	parent+	-	about(probability)	[claude] the law of large numbers
+mathematics	binomial-theorem	parent+	-	about(binomial)	[wn-gloss] "the expansion of a binomial raised to a given power"
+mathematics	godel-incompleteness-theorem	parent+	-	about(formal-system)	[claude] the limits of formal systems
+mathematics	knaster-tarski-theorem	parent+	-	about(mathematical-lattice)	[claude] fixed points on complete lattices
+mathematics	inclusion-exclusion-principle	parent+	-	about(mathematical-set)	[claude] the size of a union of sets
+mathematics	zorn's-lemma	parent+	-	about(partially-ordered-set)	[claude] maximal elements of partially ordered sets
+mathematics	hasse-diagram	parent+	-	about(partially-ordered-set)	[claude] a diagram of a partially ordered set
+mathematics	truth-table	parent+	-	about(truth-value)	[claude] the truth values of a logical expression
+mathematics	maxwell's-equations	parent+	-	about(electricity)	[wn-gloss] "classical properties of electromagnetic fields"
+mathematics	maxwell's-equations	parent+	-	about(magnetism)	[wn-gloss] "classical properties of electromagnetic fields"

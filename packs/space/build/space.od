@@ -1,12 +1,12 @@
 # ontodag store v1
-absolute-magnitude quantity
+absolute-magnitude amount magnitude
 act '*'
 active-galactic-nucleus celestial-body
 activity '*'
 adaptive-optics method
 aerolite meteorite
-aerospace-engineering engineering
-age-of-the-universe quantity
+aerospace-engineering 'about(aircraft)' 'about(spacecraft)' engineering
+age-of-the-universe amount
 amateur-astronomy activity astronomy
 andromeda-galaxy spiral-galaxy
 angle '*'
@@ -18,20 +18,20 @@ apojove apoapsis
 apollo-11 space-mission
 apollo-program space-program
 aposelene apoapsis
-apparent-magnitude quantity
+apparent-magnitude amount
 appearance '*'
 apsis orbital-position
-armillary-sphere map model
+armillary-sphere model
 artifact '*'
 ascending-node orbital-node
-asterism concept
+asterism natural-object
 asteroid minor-planet
 asteroid-belt circumstellar-disk
 astrobiology astronomy biology
 astrometry astronomy
 astronaut person
-astronautics engineering
-astronomical-catalog document
+astronautics 'about(spaceflight)' engineering
+astronomical-catalog 'about(celestial-body)' document
 astronomical-conjunction encounter
 astronomical-nutation natural-event
 astronomical-opposition natural-event
@@ -47,7 +47,7 @@ autumnal-equinoctial-point equinoctial-point
 autumnal-equinox equinox
 axial-precession natural-event
 barred-spiral-galaxy spiral-galaxy
-barycenter point
+barycenter '*'
 bayer-designation code
 big-bang explosion
 binary-star star-system
@@ -60,11 +60,11 @@ building '*'
 callisto galilean-satellite
 cassegrainian-telescope reflecting-telescope
 celestial-body '*'
-celestial-coordinate-system concept coordinate-system
+celestial-coordinate-system coordinate-system
 celestial-culmination place
 celestial-equator place
 celestial-mechanics astronomy
-celestial-navigation activity
+celestial-navigation '*'
 celestial-point point
 celestial-pole celestial-point place
 celestial-sphere surface
@@ -80,21 +80,20 @@ collection '*'
 collimator instrument
 communications-satellite satellite spacecraft
 company '*'
-concept '*'
 condition '*'
 constellation '*'
 coordinate-system '*'
 coronal-mass-ejection natural-event
-cosmic-inflation concept
+cosmic-inflation theory
 cosmic-microwave-background radiation
 cosmic-ray radiation
-cosmological-constant quantity
+cosmological-constant amount
 cosmologist scientist
 cosmology astrophysics
 coude-telescope reflecting-telescope
 crewed-spacecraft spacecraft
 cubesat satellite
-dark-energy concept
+dark-energy physical-phenomenon
 dark-matter substance
 dark-nebula nebula
 data-chart '*'
@@ -116,13 +115,13 @@ enceladus natural-satellite
 encounter '*'
 engine '*'
 engineering '*'
-ephemeris document
+ephemeris 'about(celestial-body)' document
 equatorial-coordinate-system celestial-coordinate-system
 equatorial-telescope instrument
 equinoctial-point place
 equinox natural-event time
 eris dwarf-planet
-escape-velocity quantity
+escape-velocity amount
 europa galilean-satellite
 european-space-agency space-agency
 event '*'
@@ -161,14 +160,14 @@ harvest-moon full-moon
 heliocentric-orbit orbit
 heliosphere region
 herschelian-telescope reflecting-telescope
-hertzsprung-russell-diagram image
+hertzsprung-russell-diagram 'about(star)' image
 hill-sphere region
 hohmann-transfer-orbit orbit
 horizontal-coordinate-system celestial-coordinate-system
 host-star star
 hour-angle angle
 hubble-space-telescope space-telescope
-hubbles-law concept
+'hubble'"'"'s-law' '*'
 human-spaceflight spaceflight
 ice-giant planet
 image '*'
@@ -186,16 +185,16 @@ interstellar-space place
 io galilean-satellite
 irregular-galaxy galaxy
 isro space-agency
-j2000 concept
+j2000 time-standard
 james-webb-space-telescope space-telescope
 jovian-planet major-planet
 jupiter planet
-keplers-laws concept
-kessler-syndrome concept
+'kepler'"'"'s-law' '*'
+kessler-syndrome 'about(space-debris)' hypothesis
 kuiper-belt circumstellar-disk
 kuiper-belt-object minor-planet
 lagrange-point celestial-point
-lambda-cdm-model concept
+lambda-cdm-model theory
 lander spacecraft
 laniakea-supercluster galaxy-supercluster
 large-magellanic-cloud dwarf-galaxy irregular-galaxy
@@ -212,7 +211,7 @@ lunar-excursion-module spacecraft
 lunar-phase appearance
 magellanic-clouds collection
 magnetar neutron-star
-main-sequence concept
+main-sequence collection
 major-planet '*'
 maksutov-telescope reflecting-telescope
 map '*'
@@ -244,21 +243,21 @@ new-general-catalogue astronomical-catalog
 new-moon lunar-phase
 newtonian-telescope reflecting-telescope
 nova variable-star
-nucleosynthesis natural-event
+nucleosynthesis natural-event process
 observable-universe region
 observational-astronomy astronomy
 observatory building
 occultation natural-event
-oort-cloud celestial-body
+oort-cloud celestial-body collection
 open-cluster star-cluster
 optical-telescope astronomical-telescope
 orbit '*'
-orbital-eccentricity quantity
-orbital-elements quantity
-orbital-inclination quantity
+orbital-eccentricity amount
+orbital-elements amount
+orbital-inclination amount angle
 orbital-mechanics celestial-mechanics
 orbital-node place
-orbital-period quantity
+orbital-period amount
 orbital-position celestial-point
 orbital-spaceflight spaceflight
 orbiter satellite
@@ -285,17 +284,17 @@ planetarium building
 planetary-moon natural-satellite
 planetary-nebula emission-nebula
 planetary-rover spacecraft
-planetary-science astronomy
+planetary-science 'about(planet)' astronomy
 planetary-system celestial-body collection
 planetesimal celestial-body
 pluto dwarf-planet
 point '*'
 polar-orbit orbit
 primary-body celestial-body
-proper-motion quantity
+proper-motion amount
 protostar star
 pulsar neutron-star
-quantity '*'
+amount '*'
 quasar active-galactic-nucleus
 radiation '*'
 radio-astronomy observational-astronomy
@@ -304,13 +303,13 @@ radio-telescope astronomical-telescope
 reconnaissance-satellite earth-observation-satellite
 red-dwarf star
 red-giant giant-star
-red-shift natural-event
+red-shift '*'
 reflecting-telescope optical-telescope
 refracting-telescope optical-telescope
 region '*'
 reusable-launch-system launch-vehicle spacecraft
 right-ascension angle
-roche-limit quantity
+roche-limit amount
 rocket '*'
 rocket-engine engine
 rocket-launch event
@@ -322,13 +321,13 @@ scattered-disk circumstellar-disk
 schmidt-telescope reflecting-telescope
 science '*'
 scientist '*'
-selenology astronomy
-semi-major-axis quantity
-sidereal-day quantity sidereal-time
-sidereal-hour quantity sidereal-time
-sidereal-month quantity sidereal-time
-sidereal-time concept time
-sidereal-year quantity sidereal-time
+selenology 'about(moon)' astronomy
+semi-major-axis amount
+sidereal-day day sidereal-time
+sidereal-hour amount sidereal-time
+sidereal-month amount sidereal-time
+sidereal-time time time-standard
+sidereal-year amount sidereal-time
 siderite meteorite
 small-magellanic-cloud dwarf-galaxy irregular-galaxy
 solar-antapex place
@@ -336,7 +335,7 @@ solar-apex place
 solar-cycle natural-event
 solar-eclipse eclipse
 solar-flare natural-event
-solar-physics astronomy physics
+solar-physics 'about(sun)' astronomy physics
 solar-radiation radiation
 solar-system planetary-system
 solar-telescope telescope
@@ -348,8 +347,8 @@ space-agency organization
 space-capsule spacecraft
 space-debris physical-object
 space-mission activity
-space-probe vehicle weapon
-space-program method
+space-probe vehicle
+space-program activity
 space-rendezvous event
 space-shuttle reusable-launch-system
 space-station crewed-spacecraft satellite
@@ -366,11 +365,11 @@ spectroscopy activity
 spiral-galaxy galaxy
 sputnik-1 satellite
 star '*'
-star-catalog astronomical-catalog
-star-chart data-chart
+star-catalog 'about(star)' astronomical-catalog
+star-chart 'about(star)' data-chart map
 star-cluster celestial-body collection
 star-system celestial-body collection
-stellar-classification concept
+stellar-classification 'about(star)' classification-scheme
 stellar-evolution natural-event
 stellar-parallax parallax
 stellar-remnant celestial-body
@@ -385,7 +384,7 @@ supermassive-black-hole black-hole
 supernova star
 supernova-remnant emission-nebula
 surface '*'
-synodic-month quantity
+synodic-month amount
 telescope '*'
 terrestrial-planet planet
 tidal-locking natural-event
@@ -412,3 +411,14 @@ white-dwarf star stellar-remnant
 winter-solstice solstice
 zenith place
 zodiac place
+aircraft '*'
+classification-scheme '*'
+day '*'
+hypothesis '*'
+magnitude '*'
+moon '*'
+physical-phenomenon '*'
+process '*'
+sun '*'
+theory '*'
+time-standard '*'

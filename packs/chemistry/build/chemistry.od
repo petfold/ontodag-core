@@ -12,13 +12,13 @@ alkali-metal metal
 alkaline-earth metal
 allomerism variation
 allotrope chemical-element
-alloy '*'
+alloy mixture
 alloy-iron cast-iron
 alpha-iron iron
-alum chemical-element compound
+alum compound
 americium metal radioactive-material
 amine compound
-ammonia-alum chemical-element compound
+ammonia-alum compound
 amount-of-substance 'linear-dimension(amount)'
 anticatalyst substance
 antimonial-lead lead
@@ -29,7 +29,7 @@ astatine chemical-element
 atom '*'
 atomic-mass attribute
 atomic-migration event
-atomism concept
+atomism 'about(atom)' theory
 attribute '*'
 barium metal
 barium-dioxide baryta
@@ -41,7 +41,7 @@ basic-iron pig-iron
 berkelium metal
 beryllium metal
 beta-iron iron
-biochemistry organic-chemistry
+biochemistry 'about(organism)' organic-chemistry
 bismuth metal
 blister-copper copper
 bohrium chemical-element
@@ -71,7 +71,7 @@ chemical-activity condition
 chemical-association chemical-process
 chemical-bond natural-event
 chemical-buffer compound
-chemical-chain chemical-group concept
+chemical-chain chemical-group
 chemical-decomposition chemical-process chemical-reaction
 chemical-dimorphism attribute
 chemical-dissociation chemical-process
@@ -81,7 +81,7 @@ chemical-indicator material
 chemical-phenomenon natural-event
 chemical-polymorphism chemical-phenomenon
 chemical-process process
-chemical-reaction '*'
+chemical-reaction chemical-process
 chemical-reduction chemical-process
 chemist scientist
 chemistry '*'
@@ -95,29 +95,28 @@ coin-silver silver
 collection '*'
 compound '*'
 concentration '*'
-concept '*'
 condition '*'
 copper '*'
 covalent-bond chemical-bond
 curium metal radioactive-material
-'dalton'"'"'s-law' concept
+'dalton'"'"'s-law' '*'
 darmstadtium chemical-element
 delta-iron iron
 displacement-reaction chemical-process chemical-reaction
 distillation event
 distillation-rectification process
-distribution-law concept
+distribution-law law-of-nature
 dubnium chemical-element
 dysprosium metal
 einsteinium metal
-electrochemistry chemistry
+electrochemistry 'about(electricity)' chemistry
 electrolysis chemical-decomposition
 electron-acceptor compound
 electronegativity attribute
 elemental-abundance ratio
 emulsion mixture
 equilibrium-constant number numeric-quantity
-equilibrium-law concept
+equilibrium-law 'about(chemical-reaction)' law-of-nature
 erbium metal
 ester compound
 europium metal
@@ -146,7 +145,7 @@ hard-lead lead
 hassium chemical-element
 heavy-metal metal
 helium noble-gas nonmetal
-'henry'"'"'s-law' concept
+'henry'"'"'s-law' 'about(gas)' law-of-nature
 holmium metal
 hydrocarbon compound
 hydrogen chemical-element
@@ -167,10 +166,10 @@ isotope atom
 ketone compound
 krypton noble-gas
 lanthanum metal
-law-of-constant-proportion concept
-law-of-equivalent-proportions concept
-law-of-mass-action concept
-law-of-multiple-proportions concept
+law-of-constant-proportion 'about(compound)' law-of-nature
+law-of-equivalent-proportions 'about(chemical-element)' law-of-nature
+law-of-mass-action 'about(chemical-reaction)' law-of-nature
+law-of-multiple-proportions 'about(compound)' law-of-nature
 lawrencium chemical-element
 lead '*'
 linear-dimension '*'
@@ -188,7 +187,7 @@ mercury metal
 metal '*'
 mine-pig pig-iron
 mineral '*'
-mixture chemical
+mixture substance
 molecular-weight attribute
 molybdenum metal
 monovalent-atom atom
@@ -214,8 +213,8 @@ oxygen '*'
 palladium metal
 particle '*'
 pencil-lead graphite
-periodic-law concept
-periodic-table information
+periodic-law 'about(chemical-element)' law-of-nature
+periodic-table 'about(chemical-element)' information
 ph-value concentration
 phosphorus chemical-element
 physical-chemistry chemistry
@@ -274,8 +273,8 @@ technetium metal radioactive-material
 tellurium chemical-element
 terbium metal
 thallium metal
-theory-of-dissociation concept
-theory-of-indicators concept
+theory-of-dissociation theory
+theory-of-indicators 'about(chemical-indicator)' theory
 thorium metal radioactive-material
 thorium-228 radioisotope thorium
 thulium metal
@@ -303,3 +302,27 @@ ytterbium metal
 yttrium metal
 zinc '*'
 zirconium metal
+monosaccharide carbohydrate
+disaccharide carbohydrate
+air mixture
+asphalt mixture
+blood mixture
+chemical-solution mixture
+compost mixture
+gasoline mixture
+grout mixture
+mist mixture
+perfume mixture
+plaster mixture
+smoke mixture
+spray mixture
+toothpaste mixture
+glucose monosaccharide
+fructose monosaccharide
+lactose disaccharide
+carbohydrate '*'
+electricity '*'
+gas '*'
+law-of-nature '*'
+organism '*'
+theory '*'

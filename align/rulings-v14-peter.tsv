@@ -1,0 +1,35 @@
+# Peter's rulings of 2026-10-16 on the review (docs/REVIEW_V14.md), applied by tools/step7.py before the removed list.
+# action: add = a new concept with these parents; move = drop the edge to old, add new; parent+ = add parents.
+pack	sub	action	old	new	note
+core	carbohydrate	add	-	compound	the chemistry sense of sugar (WordNet carbohydrate, saccharide, sugar 14792703); the chemistry pack has none, and core may lean on no pack
+core	fructose	move	compound	carbohydrate	a sugar in the chemistry sense, not table sugar
+core	glucose	move	compound	carbohydrate	a sugar in the chemistry sense, not table sugar
+core	lactose	move	compound	carbohydrate	milk sugar: a sugar in the chemistry sense
+core	starch	move	compound	carbohydrate	"a complex carbohydrate"
+core	art	move	field-of-study	practice	art is a cultural practice, which is sometimes the subject of a field of study, not a field of study
+# With art ⊑ practice ⊑ activity, works under music would become practices; the works go to the information side
+# of music (music ⊑ information), the genres (jazz, opera, folk music) stay under music.
+core	musical-composition	move	music	information	"a musical work that has been created" is a work, not a practice; sheet-music follows
+core	tune	move	music	information	"a succession of notes forming a distinctive sequence" is a work, not a practice; melodic-theme follows
+core	musical-harmony	move	music	attribute	"the structure of music with respect to the composition and progression of chords" is a property of music, not a practice
+core	river-bank	cut	shore		geography's riverbank merged into core's river-bank (align/renames-step7.tsv) brought its shore edge; shore is geography's, and core may lean on no pack
+core	coin	parent+	-	artifact	a coin is a physical object, which it was only through currency ⊑ artifact
+core	banknote	parent+	-	artifact	paper money is a physical object, which it was only through currency ⊑ artifact (core's bill, renamed banknote, with economics' banknote merged in)
+chemistry	monosaccharide	add	-	carbohydrate	a simple sugar (WordNet 14954284); core's glucose and fructose cannot sit under it, since core may lean on no pack
+chemistry	disaccharide	add	-	carbohydrate	a sugar made of two monosaccharides (WordNet 14836642); core's lactose cannot sit under it, since core may lean on no pack
+medicine	pharmacy	cut	medical-specialty		the shop, not the field (Peter 2026-10-16); the field is pharmacology
+core	money	move	currency	possession	Peter 2026-10-16: money in general (WordNet 13384557 "the most common medium of exchange"; the node's synset is still 13384877) is the wider class; currency is a kind of money
+core	currency	move	artifact	money	currency is not a physical object (Peter 2026-10-16), and it is a kind of money: fiat currency, cryptocurrency and cash. WordNet files it under medium of exchange, a possession. This settles the doubtful row on money ⊑ currency
+economics	token-money	move	money	coin	"coins of regular issue whose face value is greater than their intrinsic value"
+economics	token-money	cut	artifact		implied: token-money ⊑ coin ⊑ artifact (if an earlier build gave it artifact directly)
+core	publication	move	product	information	Peter 2026-10-16: a publication is not physical; the printed copy is printed-publication
+core	printed-publication	add	-	publication product	the physical copy of a publication, the goods sense
+core	periodical	cut	information		implied: periodical ⊑ publication ⊑ information since publication moved
+core	tract	cut	information		implied: tract ⊑ publication ⊑ information since publication moved
+core	owner	drop			Peter 2026-10-16: owner is a role (CORE.md: "relations to a filler"), not a category
+# --- answers in the doubtful list (Peter 2026-10-16, column 3), applied when he said "do these open things" ---
+ai	machine-learning	move	artificial-intelligence	computer-science	"No, there are machine learning things that are not AI"; machine learning stays a branch of computer science
+core	championship	cut	status		"event": the contest, not the title (one reading where a word has two)
+core	meeting	cut	group		"event": the gathering as an event, not the people
+core	academy	move	school	institution	"no": an academy of sciences is "a learned establishment", not a school; institution is school's parent
+economics	interest-rate	move	charge-rate	ratio	"no": an interest rate is a ratio, not a price charged; discount rates and the prime rate follow

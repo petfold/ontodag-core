@@ -11,6 +11,8 @@ anyone; the product is a published store root that `odag pack core` adopts.
 
 ## State (2026-09-17)
 
+Core review, 2026-10-16: `docs/REVIEW_V14.md` (every item re-read against the transitivity rule, and the packs through the closure check `tools/closure.py --packs`; the removed list `align/rulings-v14-removed.tsv` and Peter's rulings `align/rulings-v14-peter.tsv`, replayed by `tools/step7.py`, and the doubtful list `align/doubtful-v14.tsv` for Peter; not shipped).
+
 Filed asks from consumers, 2026-09-25: `docs/ASKS.md` (general vocabulary
 missing from v11; the legal vocabulary check).
 

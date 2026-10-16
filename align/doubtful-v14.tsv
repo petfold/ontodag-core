@@ -1,0 +1,57 @@
+# The doubtful list: core review of 2026-10-16 (Claude, at Peter's request). Edges kept in core for now but not				
+# certain enough for a pack that commits to the truth of every edge; at most 200 rows. For Peter's ruling.				
+pack	sub		parent	note
+# --- batch 1 ---				
+"# The building-and-organization pattern: CORE.md's rule ""one reading where a word has two"" is broken by nodes filed both as a"				
+# building (physical-object) and as an organization (agent, group). WordNet's synset is the building in each case; the				
+# organization edge came from schema.org/YAGO/Wikidata, whose classes join the two. Which reading the name keeps is a sense decision.				
+core	hospital	a pharmacy can be both a place and an organization? Then these too?	organization	building + organization: a group of people that is also a building; WordNet 03540595 is the building
+core	hotel		organization	building + organization (WordNet 03542333 is the building)
+core	library		organization	building + organization (WordNet 03661043 is the building)
+core	restaurant		organization	building + organization (WordNet 04081281 is the building); cafe inherits
+core	bakery		organization	workplace + shop + organization (WordNet 02776631 is the workplace)
+core	brewery		organization	works + place + organization (WordNet 02897237 is the plant)
+core	factory		organization	works + organization (WordNet 03316406 is the plant)
+core	grocery-store		organization	structure + place + organization (WordNet 03461385 is the marketplace); supermarket inherits
+core	archive		organization	facility + organization (WordNet 02735086 is the depository)
+core	dairy		organization	farm + organization (WordNet 03159535 is the farm)
+core	summer-camp		organization	region + organization (WordNet 02945594 is the site)
+core	academy	no	school	"WordNet 02669885 is ""a learned establishment for the advancement of knowledge"" (an academy of sciences is not a school); also structure + organization"
+core	country	yes	place	organization + place: the polity (WordNet 08168978, the node's sense) and the territory are two readings; in(japan) needs the place, agent needs the polity
+core	railway		organization	"WordNet files railway (noun.artifact, lemmas railway_line, railway_system) under the company sense of line; the name reads as the track system, and metro (""an electric railway operating below the surface"") inherits organization and agent"
+# --- batch 2 ---				
+core	virus		microorganism	whether viruses are organisms is contested (no cells, no metabolism of their own); four sources assert it, biology textbooks divide
+core	owner	no	businessman	"CORE.md lists owner among the roles that are not categories (""relations to a filler""); WordNet's sense is the owner of a business, the name reads as any owner"
+# --- batch 4 ---				
+core	amount	not a synonym of quantity?	*	removing amount ⊑ quantity (the concept) leaves amount at the top level, as WordNet has measure (with relation and part core now has fourteen top-level branches); the alternative is attribute (ontodag's dimensions are attributes), but teardrops and helpings of food are under amount too
+core	money	Currency < money ?	currency	money ⊑ currency ⊑ artifact makes all money a metal or paper medium; bank money is not, and CORE.md files money under possession
+core	championship	event	status	"WordNet's synset is the title (""he held the title for two years"", ⊑ status); Cyc and YAGO add the competition (⊑ event); one node cannot be both a status and an event"
+core	bait		cognition	WordNet's enticement sense (⊑ motivation, placed under cognition); fishing bait is a physical thing; core has no true parent for both
+core	sample		example	"""a small part of something intended as representative of the whole"": a blood or soil sample is a physical part, not an item of information"
+# --- batch 5 ---				
+core	relation	yes	*	removing relation ⊑ concept leaves relation at the top level (WordNet's own placement); the alternative is attribute (ontodag's reading of qualities: things standing in a relation)
+core	part	yes	*	removing part ⊑ relation leaves part at the top level with detail, highlight, residual, beginning and middle; part is a role category (ROLES.md: parts go under in(...)), so dropping it is the other choice
+# --- batch 6 ---				
+core	meeting	event	group	"group + activity: ""a formally arranged gathering"" is the people (WordNet's sense, ""the meeting elected a chairperson"") and the event (conference, summit, forum, engagement since v13); one reading where a word has two"
+core	housework	yes	service	"the services layer files acts under service (""work done by one person or group that benefits another"") that are often done for oneself: housework, cleaning, repair, ironing, recycling, photography, shaving (via beauty-treatment); true of the CPC product, not of every act"
+# --- batch 8 ---				
+core	luck	no	process	"WordNet's phenomena (consequence, luck, good-fortune, market-demand) sit under process (""a sustained phenomenon ... through a series of states"") because WordNet files phenomenon under process; luck and demand are not processes. UPPER.md §15.2 left phenomenon open"
+# --- batch 9 ---				
+core	book	yes	publication	book ⊑ document (Peter) and ⊑ publication ⊑ product ⊑ artifact: the work and the printed copy in one node; CORE.md says a document is information only, the goods layer sells copies (periodical and magazine likewise)
+# --- batch 13 ---				
+core	vehicle	yes	machine	"Peter's ruling; machine is ""any mechanical or electrical device that transmits or modifies energy"", and a canoe, a sled, a stroller, a glider or a hang-glider is not one"
+# --- batch 17 ---				
+core	body-of-water	yes	natural-object	"Peter's ruling; reservoirs (""artificial lake""), canals and harbours are bodies of water and are man-made, so reservoir ⊑ lake ⊑ body-of-water makes it a natural object"
+# --- batch 18 ---				
+core	pet	yes	animal	"CORE.md: ""Roles and stages are out. pet, child, adult are not kinds"" and ""author, owner, sender, pet are relations to a filler""; pet, child, adult and owner are in core all the same (the edges are true, the nodes are against the policy)"
+# --- second sweep ---				
+core	profile	yes	information	WordNet's sense is the outline of a face seen from one side (⊑ view); Cyc's and SUMO's information edge is the other sense, a description of a person; for OntoDAG's users the name reads as a user profile
+# --- packs: the closure check, 2026-10-16 ---				
+medicine	pharmacy	yes	medical-specialty organization place	three readings in one node: the field, the shop and the business (the building/organization pattern above)
+ai	ai-model	concept is quite bad, everything in ontodag is a concept; information	concept	an architecture is an idea, but a trained model (GPT, BERT) is software; under concept ⊑ idea ⊑ cognition every language model is a thought
+ai	machine-learning	No, there are machine learning things that are not AI	artificial-intelligence	about 250 ai entries are filed as fields of study; most are subfields, but some are tasks or techniques (cross-validation, image segmentation, grid search). The clear algorithms and measures were moved; the rest needs a field/technique decision
+computing	computer-server	no	computer server-software	the hardware and the software in one node: web servers, proxy servers and file servers are machines and programs at once
+economics	interest-rate	no	charge-rate	WordNet's chain makes an interest rate a price charged and so a possession (an outgo); it is a ratio
+ai	catastrophic-forgetting	yes	problem	core's problem is a topic (a question raised for consideration), under information; catastrophic forgetting, vanishing gradients and reward hacking are phenomena or difficulties
+space	radio-telescope	yes	astronomical-telescope	"core's telescope is WordNet's ""magnifier of images of distant objects""; a radio telescope magnifies no image"
+computing	wiktionary	yes, dictionary is not physical	dictionary	"core's dictionary is under book, ""printed on pages bound together""; Wiktionary, GeoNames and the Getty thesaurus are web resources (book is already a row above)"

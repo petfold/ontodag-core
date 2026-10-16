@@ -1,12 +1,12 @@
 # ontodag store v1
-5g cellular-network
+5g technical-standard
 7z archive-file-format
 a-star-search graph-algorithm
 ability '*'
 abstract-data-type data-type
 abstract-syntax-tree tree-data-structure
 access-control computer-security
-access-control-list access-control list
+access-control-list list
 access-time latency
 accumulator-register processor-register
 acid-transaction-properties property
@@ -26,7 +26,7 @@ agile-software-development computer-programming software-development-methodology
 algebraic-data-type data-type
 algebraic-language algorithmic-language
 algol algebraic-language
-algorithm procedure
+algorithm '*'
 algorithm-error computer-error
 algorithmic-language programming-language
 alpha-software software
@@ -53,7 +53,7 @@ apl programming-language
 append-only-log data-structure
 applet application
 application '*'
-application-layer concept
+application-layer information
 application-layer-protocol communications-protocol
 application-programming-interface interface
 application-specific-integrated-circuit chip
@@ -108,7 +108,7 @@ behavior-driven-development agile-software-development
 berkeley-software-distribution unix
 beta-software software
 big-data information
-big-o-notation symbol
+big-o-notation '*'
 binary-code code
 binary-file computer-file
 binary-heap tree-data-structure
@@ -142,7 +142,7 @@ buffer-overflow software-bug
 build-automation data-processing
 build-system programming-tool
 bulletin-board-system computer-server digital-computer
-bytecode instruction-set-architecture machine-code
+bytecode machine-code
 byzantine-fault fault
 byzantine-fault-tolerance fault-tolerance
 bzip2 compression-algorithm software
@@ -153,7 +153,7 @@ c-program computer-program
 c-sharp programming-language
 call-stack stack-data-structure
 callback-function subroutine
-cap-theorem concept theorem
+cap-theorem theorem
 capability-based-security access-control
 carriage-return control-operation printing-operation
 cascading-style-sheets computer-language
@@ -162,10 +162,10 @@ cbor data-serialization-format
 cd '*'
 cd-r cd optical-disk
 cd-rom cd rom
-cellular-network computer-network telecommunication
+cellular-network computer-network
 central-processing-unit chip equipment hardware
 certificate-authority organization
-channel-capacity quantity
+channel-capacity amount
 character '*'
 character-data-type primitive-data-type
 character-encoding code
@@ -179,12 +179,12 @@ chord-protocol distributed-hash-table
 class-inheritance data-processing-technique
 classification-scheme knowledge-organization-system
 client-server-model software-architecture
-clock-rate quantity
+clock-rate amount
 clojure lisp
 cloud-computing distributed-computing
 cobol programming-language
 code '*'
-code-coverage measure
+code-coverage amount
 code-refactoring software-development-practice
 code-review software-development-practice
 code-smell defect
@@ -192,13 +192,13 @@ codec software
 collection '*'
 column-oriented-dbms database-management-system
 command-line computer-instruction
-command-line-interface human-computer-interaction text-based-user-interface
+command-line-interface text-based-user-interface
 command-processing-overhead-time latency
-command-prompt communication
+command-prompt symbol
 command-query-responsibility-segregation software-design-pattern
 commercial-enterprise '*'
 communication '*'
-communications-protocol information
+communications-protocol '*'
 compatible-software software
 compiled-language programming-language
 compiler '*'
@@ -243,7 +243,6 @@ computer-security-system artifact
 computer-server computer server-software
 computer-simulation method
 computer-system machine
-concept '*'
 concurrency property
 concurrency-control data-processing-technique
 concurrent-operation computer-operation
@@ -263,10 +262,10 @@ contingency-procedure subroutine
 continuous-delivery devops software-development-practice
 continuous-deployment continuous-delivery
 continuous-integration software-development-practice
-control-flow concept
+control-flow attribute
 control-operation computer-operation
 controlled-thesaurus controlled-vocabulary
-controlled-vocabulary knowledge-organization-system
+controlled-vocabulary dataset knowledge-organization-system
 conversation '*'
 copy '*'
 copy-on-write data-processing-technique
@@ -278,16 +277,16 @@ creative-commons-license license
 cron system-software
 cross-site-scripting security-vulnerability
 crowdsourcing practice
-cryptographic-hash-function hash-function
-cryptographic-protocol communications-protocol
-cryptography computer-science
+cryptographic-hash-function function hash-function
+cryptographic-protocol communications-protocol procedure
+cryptography 'about(encryption)' computer-science mathematics
 css computer-language text-file-format
 csv data-serialization-format text-file-format
 cyberattack activity
 cyc knowledge-base
 cyclic-redundancy-check checksum hash-function
 daemon-process computer-process
-data-backup copy
+data-backup information
 data-block data-structure
 data-buffer device
 data-center facility
@@ -299,16 +298,15 @@ data-descriptor identifier
 data-encoding code
 data-encryption activity
 data-field set
-data-input-device peripheral
 data-integrity property
 data-lake data-warehouse
 data-lineage metadata
-data-link-layer concept
-data-mining data-processing
-data-model concept
+data-link-layer information
+data-mining computer-science data-processing
+data-model information
 data-operation data-processing
 data-pipeline data-processing
-data-processing process
+data-processing '*'
 data-processing-technique method
 data-record data-structure
 data-redundancy property
@@ -317,11 +315,11 @@ data-retention practice
 data-retrieval computer-operation information-retrieval
 data-serialization-format file-format
 data-storage computer-operation
-data-structure concept
+data-structure '*'
 data-synchronization data-processing
-data-type concept
+data-type information
 data-warehouse electronic-database
-database collection
+database '*'
 database-consistency property
 database-index data-structure
 database-journal append-only-log log-file
@@ -377,10 +375,10 @@ digital-object-identifier persistent-identifier
 digital-preservation practice
 digital-signal signal
 digital-signature information
-dijkstra-algorithm graph-algorithm
+dijkstra-algorithm graph-algorithm search-algorithm
 dip-switch electric-switch
-directed-acyclic-graph directed-graph
-directed-graph concept
+directed-acyclic-graph '*'
+directed-graph '*'
 directory '*'
 disambiguator natural-language-processor
 disaster-recovery practice
@@ -406,7 +404,7 @@ distributed-computing parallel-computing
 distributed-consensus computational-problem
 distributed-data-processing data-processing
 distributed-file-system file-system
-distributed-hash-table distributed-system hash-table
+distributed-hash-table hash-table
 distributed-storage-system distributed-system
 distributed-system computer-system
 distributed-version-control version-control
@@ -418,7 +416,7 @@ document-file-format file-format
 document-object-model application-programming-interface data-model
 document-oriented-database nosql
 domain-name identifier name
-domain-name-system communications-protocol distributed-system
+domain-name-system communications-protocol
 domain-ontology computational-ontology
 domain-specific-language computer-language
 dongle peripheral
@@ -497,7 +495,7 @@ field-programmable-gate-array chip
 file '*'
 file-archiver utility-program
 file-attribute metadata
-file-format information
+file-format '*'
 file-owner file-attribute
 file-path character-string identifier
 file-server digital-computer
@@ -518,13 +516,13 @@ floating-point-operation computer-operation
 flow-chart multidimensional-language
 folder '*'
 folksonomy classification-scheme
-font-cartridge character
+font-cartridge hardware
 font-file-format file-format
 foreground-processing priority-processing
 foreground-window gui-window
 foreign-key identifier
-formal-concept-analysis mathematics
-formal-grammar concept
+formal-concept-analysis '*'
+formal-grammar formal-system
 formal-verification method
 formatted-capacity storage-capacity
 forth-language programming-language
@@ -553,8 +551,8 @@ generator-routine coroutine
 generic-programming computer-programming programming-paradigm
 geojson file-format
 gif image-file-format
-git distributed-version-control version-control-software
-github software-repository web-site
+git version-control-software
+github web-site
 gnu-general-public-license copyleft software-license
 gnu-project organization
 gnutella communications-protocol peer-to-peer
@@ -563,7 +561,7 @@ gps-exchange-format xml
 graph-algorithm algorithm
 graph-data-structure data-structure
 graph-database database-management-system electronic-database
-graph-theory mathematics
+graph-theory 'about(mathematical-graph)' mathematics
 graphical-user-interface user-interface
 graphics-processing-unit chip
 graphql query-language
@@ -573,15 +571,14 @@ group '*'
 groupware software
 grpc remote-procedure-call
 gui-widget software-object
-gui-window device gui-widget
+gui-window gui-widget
 gzip compression-format
 gzip-file-format compression-format
 halting-problem computational-problem
 hamming-code error-correcting-code
 hand-held-computer portable-computer
 hard-copy information
-hard-disk '*'
-hard-disk-drive non-volatile-storage
+hard-disk non-volatile-storage
 hard-link computer-file
 hardware '*'
 hardware-counter processor-register
@@ -618,7 +615,7 @@ http-2 hypertext-transfer-protocol
 http-3 hypertext-transfer-protocol
 https cryptographic-protocol hypertext-transfer-protocol
 huffman-coding entropy-encoding
-human-computer-interaction computer-science
+human-computer-interaction 'about(computer)' computer-science
 hyperlink program-link
 hypertext-system object-oriented-database-management-system
 hypertext-transfer-protocol application-layer-protocol
@@ -628,7 +625,6 @@ identifier information
 image '*'
 image-file media-file
 image-file-format file-format
-image-scanner data-input-device
 immutable-database database
 immutable-object software-object
 imperative-programming computer-programming programming-paradigm
@@ -637,18 +633,18 @@ inbox mail-folder
 index-register processor-register
 indication '*'
 information '*'
-information-architecture concept
-information-entropy quantity
+information-architecture method
+information-entropy amount
 information-redundancy information-entropy
-information-retrieval computer-science
+information-retrieval 'about(information)' computer-science
 information-security practice
-information-technology engineering
-information-theory computer-science mathematics
+information-technology 'about(computer)' engineering
+information-theory 'about(information)' computer-science mathematics
 infrastructure-as-a-service cloud-computing
-init-system daemon-process system-software
+init-system system-software
 ink-jet-printer dot-matrix-printer
 inode data-structure
-input-device '*'
+input-device peripheral
 input-file computer-file
 input-method software
 input-program utility-program
@@ -683,7 +679,7 @@ inversion-of-control software-architecture software-design-pattern
 inverted-index database-index
 ios unix-like
 ip-address computer-address identifier
-ipfs communications-protocol decentralized-storage
+ipfs communications-protocol decentralized-storage software
 ipv4 internet-protocol
 ipv6 internet-protocol
 iso-image disk-image
@@ -705,13 +701,13 @@ kanban-software-development agile-software-development
 kerberos-protocol authentication-protocol
 key-value-database nosql
 keyboard-buffer data-buffer
-keyboard-layout concept
+keyboard-layout information
 keyhole-markup-language file-format markup-language
-knowledge-base database
+knowledge-base database dataset
 knowledge-graph knowledge-base
 knowledge-organization-system information
 knuth-morris-pratt-algorithm string-searching-algorithm
-kolmogorov-complexity quantity
+kolmogorov-complexity amount
 kotlin programming-language
 kruskals-algorithm graph-algorithm
 kubernetes software
@@ -740,8 +736,8 @@ line-feed control-operation printing-operation
 linear-search search-algorithm
 linkage-editor editor-program
 linked-data information
-linked-list list
-linked-open-data linked-data open-data
+linked-list data-structure list
+linked-open-data dataset linked-data open-data
 linker programming-tool
 linter programming-tool
 linux free-and-open-source-software unix-like
@@ -756,12 +752,12 @@ list-processing data-processing
 load-balancing data-processing-technique
 local-area-network computer-network
 local-first-software software
-log-file computer-file record
+log-file computer-file
 log-structured-merge-tree data-structure
 logic-bomb malware
 logic-diagram multidimensional-language
 logic-gate electronic-circuit
-logic-programming declarative-programming
+logic-programming computer-science declarative-programming
 logical-clock data-structure
 logical-operation computer-operation
 loop-iteration process
@@ -828,8 +824,8 @@ message-queue software
 message-thread conversation
 messagepack data-serialization-format
 messaging-protocol application-layer-protocol
-metadata information
-metadata-standard technical-standard
+metadata 'about(information)' information
+metadata-standard 'about(metadata)' technical-standard
 metadata-tag metadata
 metaprogramming computer-programming programming-paradigm
 method '*'
@@ -842,12 +838,12 @@ minicomputer digital-computer
 minimum-spanning-tree tree-data-structure
 mit-license software-license
 mixin object-class
-model-of-computation concept
+model-of-computation mathematical-object
 model-view-controller software-design-pattern
 monadic-operation computer-operation
 monitor-program computer-program
 monolithic-application software-architecture
-moores-law law
+moores-law 'about(chip)' proposition
 motherboard hardware
 mount-point directory
 mozilla-foundation nonprofit-organization
@@ -865,7 +861,7 @@ multithreading concurrency data-processing-technique
 musical-instrument-digital-interface communications-protocol
 mutation-testing software-testing
 mutex data-type software-object
-mutual-information quantity
+mutual-information amount
 mysql relational-database-management-system
 n-triples rdf-serialization-format
 name '*'
@@ -873,7 +869,7 @@ named-pipe computer-file
 namespace identifier set
 natural-language-processor application
 network-address-translation data-processing-technique
-network-architecture concept
+network-architecture method
 network-bandwidth network-performance-measure
 network-client software
 network-file-system distributed-file-system
@@ -881,23 +877,23 @@ network-firewall computer-security-system
 network-gateway networking-hardware
 network-host network-node
 network-interface-controller networking-hardware
-network-layer concept
+network-layer information
 network-layer-protocol communications-protocol
 network-node computer
 network-packet message
-network-performance-measure quantity
+network-performance-measure amount
 network-port computer-address
 network-router networking-hardware
 network-routing data-processing
 network-socket software-object
 network-switch networking-hardware
 network-time-protocol application-layer-protocol
-network-topology concept
+network-topology attribute
 networking-hardware hardware
 new-line control-operation printing-operation
 newsletter periodical
 nim-language programming-language
-noisy-channel-coding-theorem concept theorem
+noisy-channel-coding-theorem theorem
 non-dedicated-file-server file-server
 non-volatile-storage computer-memory
 nonprofit-organization organization
@@ -908,7 +904,7 @@ np-completeness property
 null-pointer pointer-data-type
 number-cruncher computer
 nvm-express hardware-interface
-nyquist-shannon-sampling-theorem concept theorem
+nyquist-shannon-sampling-theorem theorem
 oauth authentication-protocol
 object-class data-type
 object-code code
@@ -923,7 +919,7 @@ object-oriented-programming structured-programming
 object-oriented-programming-language programming-language
 object-program computer-program
 object-relational-mapping data-processing-technique
-observability software-quality-attribute system-monitoring
+observability software-quality-attribute
 observer-pattern software-design-pattern
 ocaml programming-language
 office-open-xml document-file-format zip-file-format
@@ -931,7 +927,7 @@ ogg multimedia-container-format
 okapi-bm25 algorithm
 one-dimensional-language programming-language
 online-encyclopedia web-site
-ontology-alignment data-processing
+ontology-alignment '*'
 ontology-language computer-language
 open-data information
 open-knowledge information
@@ -942,7 +938,7 @@ open-source-software software
 opendocument document-file-format
 openid-connect authentication-protocol
 openssh software
-openstreetmap dataset web-site
+openstreetmap 'about(place)' dataset web-site
 opentype font-file-format
 operating-system '*'
 operating-system-kernel system-software
@@ -951,7 +947,7 @@ operational-transformation concurrency-control
 optical-disk device
 opus-codec audio-coding-format audio-file-format
 organization '*'
-osi-model model-of-computation technical-standard
+osi-model technical-standard
 output-device peripheral
 output-file computer-file
 output-program utility-program
@@ -961,14 +957,14 @@ pace '*'
 package-format archive-file-format
 package-manager utility-program
 pagerank algorithm
-parallel-computing computer-science data-processing
+parallel-computing data-processing
 parallel-operation computer-operation
 pari-mutuel-machine computer
 parity-bit code
 parser computer-program
 parsing data-processing
 part-of-speech-tagger tagging-program
-partial-order concept
+partial-order '*'
 pascal-compiler compiler
 pascal-language programming-language
 passphrase password
@@ -990,7 +986,7 @@ person '*'
 personal-computer digital-computer
 phishing cyberattack fraud
 php scripting-language
-physical-layer concept
+physical-layer information
 physical-object '*'
 pixel component
 plain-text text
@@ -1010,9 +1006,9 @@ power-user expert user
 practice '*'
 primary-key identifier
 primitive-data-type data-type
-principle-of-least-privilege rule
+principle-of-least-privilege 'about(access-control)' rule
 print-buffer data-buffer
-printer '*'
+printer peripheral
 printing-operation computer-operation
 priority-processing data-processing
 priority-queue queue-data-structure
@@ -1032,11 +1028,11 @@ program-loader system-software
 program-loop computer-program
 program-module software
 program-statement code
-program-variable concept
+program-variable information
 programmer engineer
 programming-language computer-language
 programming-monad software-design-pattern
-programming-paradigm concept style
+programming-paradigm method
 programming-tool software
 programming-trait object-class
 progressive-web-app web-application
@@ -1055,7 +1051,7 @@ push-down-queue queue-data-structure stack-data-structure
 push-notification notification
 pushdown-automaton finite-automaton
 python-language programming-language
-quantity '*'
+amount '*'
 query-expansion data-processing-technique
 query-language computer-language
 query-optimization data-processing
@@ -1072,7 +1068,6 @@ raft-consensus-algorithm consensus-algorithm
 raid data-storage hardware
 ram '*'
 ram-disk storage-drive
-random-access-memory computer-memory
 random-number-generator subroutine
 randomized-algorithm algorithm
 ransomware malware
@@ -1088,13 +1083,13 @@ read-only-memory computer-memory
 read-only-memory-chip memory-chip
 read-write-head device
 real-storage computer-memory
-real-time quantity
+real-time amount
 real-time-operating-system operating-system
 real-time-processing data-processing
-recommender-system software
+recommender-system '*'
 record '*'
 record-data-type data-type
-recursion method
+recursion method procedure
 recursive-descent-parser parser
 recursive-routine subroutine
 red-black-tree self-balancing-binary-search-tree
@@ -1136,7 +1131,7 @@ rsync communications-protocol software
 ruby-language programming-language
 rule '*'
 run-length-encoding compression-algorithm
-run-time quantity
+run-time amount
 runtime-system system-software
 rust-language programming-language
 saml authentication-protocol markup-language
@@ -1165,9 +1160,9 @@ self-adapting-program computer-program
 self-balancing-binary-search-tree binary-search-tree
 self-extracting-archive file-format software
 semantic-error software-error
-semantic-reasoner software
+semantic-reasoner '*'
 semantic-versioning software-versioning
-semantic-web world-wide-web
+semantic-web information
 semaphore-primitive data-type software-object
 sense-tagger tagging-program
 separation-of-concerns rule
@@ -1181,7 +1176,7 @@ service-oriented-architecture software-architecture
 set '*'
 set-data-structure abstract-data-type
 seventy-eight audio
-shannon-source-coding-theorem concept theorem
+shannon-source-coding-theorem theorem
 shared-library computer-file software-library
 shareware software
 shell-script computer-program
@@ -1203,26 +1198,26 @@ skip-list list
 skos data-model
 slide-rule analog-computer tool
 smalltalk object-oriented-programming-language
-smartphone portable-computer telephony
+smartphone cellular-telephone portable-computer
 snapshot-program trace-program
 social-engineering-attack cyberattack
 soft-copy information
 software '*'
-software-abstraction concept
-software-architecture concept software-engineering
+software-abstraction method
+software-architecture method
 software-as-a-service cloud-computing
 software-bug defect
 software-cohesion property
 software-container software virtualization
 software-coupling property
 software-dependency software-coupling
-software-design-pattern concept
+software-design-pattern method
 software-development-kit software
 software-development-methodology method
 software-development-practice practice
 software-development-process process
-software-documentation information
-software-engineering computer-science engineering
+software-documentation 'about(software)' information
+software-engineering 'about(software)' computer-science engineering
 software-error computer-error
 software-framework software-library
 software-library '*'
@@ -1235,8 +1230,8 @@ software-package software
 software-patch computer-program
 software-quality-attribute property
 software-repository electronic-database
-software-sandbox computer-security-system
-software-specification document
+software-sandbox software
+software-specification 'about(software)' document
 software-testing activity
 software-transactional-memory concurrency-control
 software-update process
@@ -1249,16 +1244,16 @@ sort-program utility-program
 sorting-algorithm algorithm
 source-code ascii-text-file code text
 source-program computer-program
-space-complexity quantity
+space-complexity amount
 spam-email email
 sparql query-language
-sparql-endpoint computer-server
+sparql-endpoint server-software
 spyware application malware
 sql query-language
 sql-injection cyberattack security-vulnerability
 sqlite embedded-database relational-database-management-system
 ssh-file-transfer-protocol application-layer-protocol
-stack-data-structure abstract-data-type data-structure device
+stack-data-structure abstract-data-type data-structure
 stack-overflow web-site
 standard-generalized-markup-language markup-language
 standard-library software-library
@@ -1267,7 +1262,7 @@ state '*'
 state-machine-replication data-processing-technique
 static-program-analysis data-processing
 static-typing type-system
-storage-capacity quantity
+storage-capacity amount
 storage-drive device
 storage-snapshot data-backup
 stored-procedure subroutine
@@ -1275,7 +1270,7 @@ stored-program computer-program
 stratified-language programming-language
 stream-processing data-processing
 string-algorithm algorithm
-string-searching-algorithm string-algorithm
+string-searching-algorithm search-algorithm string-algorithm
 strong-consistency property
 strong-typing type-system
 structured-programming imperative-programming
@@ -1311,12 +1306,12 @@ tagging-program computer-program
 tail-call subroutine-call
 talking-book audio
 tar-file-format archive-file-format
-taxonomy classification-scheme
-technical-debt concept
+taxonomy '*'
+technical-debt condition
 technical-documentation document
 technical-standard document
 telecommunication communication
-telecommunications-engineering engineering
+telecommunications-engineering 'about(telecommunication)' engineering
 telephony '*'
 temporal-database database
 temporary-file computer-file
@@ -1328,12 +1323,12 @@ test-driven-development software-development-practice
 tex typesetting-system
 text '*'
 text-based-user-interface user-interface
-text-cursor device symbol
+text-cursor symbol
 text-editor editor-program
 text-file computer-file
 text-file-format file-format
 text-matching computer-program
-tf-idf quantity
+tf-idf amount
 theorem '*'
 theoretical-computer-science computer-science
 thin-client computer network-client
@@ -1342,16 +1337,16 @@ threshold-operation computer-operation
 throughput network-performance-measure
 thumbnail image-file
 tiff image-file-format
-time-complexity quantity
+time-complexity amount
 time-series-database database-management-system
 time-sharing data-processing
-title-bar label
+title-bar gui-widget
 toggle-instruction computer-instruction
 toml data-serialization-format
 tool '*'
 toolchain programming-tool
-topological-ordering data-processing
-touchscreen data-input-device output-device
+topological-ordering '*'
+touchscreen input-device output-device
 trace-program utility-program
 tracing-routine subroutine
 track-to-track-seek-time seek-time
@@ -1359,29 +1354,29 @@ transaction-atomicity property
 transaction-durability property
 transaction-file computer-file
 transaction-isolation property
-transitive-closure concept
-transitive-reduction concept
+transitive-closure '*'
+transitive-reduction '*'
 translator-program computer-program
 transmission-control-protocol transport-layer-protocol
 transmission-control-protocol-internet-protocol communications-protocol
-transport-layer concept
+transport-layer information
 transport-layer-protocol communications-protocol
 transport-layer-security cryptographic-protocol
 tree-data-structure data-structure
-tree-structure hierarchy
+tree-structure data-structure
 trie tree-data-structure
 triplestore graph-database
 trojan-horse-malware malware
 trouble '*'
 truetype font-file-format
-turing-machine computer model-of-computation
+turing-machine model-of-computation
 turtle-syntax rdf-serialization-format text-file-format
 two-phase-commit consensus-algorithm
 twos-complement code
 type-class type-system
 type-inference data-processing type-system
 type-polymorphism property
-type-system concept
+type-system rule
 typescript programming-language
 typesetting-system software
 ubuntu linux-distribution
@@ -1405,7 +1400,7 @@ usability software-quality-attribute
 usb computer-bus technical-standard
 user '*'
 user-datagram-protocol transport-layer-protocol
-user-experience concept
+user-experience perception
 user-interface interface
 utf-8 character-encoding
 utility-program computer-program
@@ -1416,7 +1411,7 @@ vector-clock logical-clock
 vector-graphics image
 version-control practice
 version-control-branch data-structure
-version-control-commit record
+version-control-commit computer-operation
 version-control-merge data-processing
 version-control-software software
 versioned-database immutable-database
@@ -1425,7 +1420,7 @@ video-file media-file
 video-file-format file-format
 videotape magnetic-tape
 virtual-machine application
-virtual-memory computer-memory memory-management
+virtual-memory memory-management
 virtual-private-network computer-network
 virtualization data-processing-technique software-abstraction
 volatile-storage computer-memory
@@ -1444,7 +1439,7 @@ web-cache computer-cache
 web-crawler computer-program
 web-feed code file-format
 web-framework software-framework
-web-map-service computer-program
+web-map-service 'about(map)' computer-program
 web-ontology-language ontology-language
 web-page '*'
 web-search-engine search-engine
@@ -1492,3 +1487,17 @@ zero-day-exploit security-exploit
 zfs file-system
 zig-language programming-language
 zip-file-format archive-file-format
+computer-virus malware
+computer-worm malware
+desktop-computer personal-computer
+laptop portable-computer
+notebook-computer portable-computer
+cellular-telephone '*'
+formal-system '*'
+function '*'
+map '*'
+mathematical-graph '*'
+mathematical-object '*'
+perception '*'
+place '*'
+proposition '*'

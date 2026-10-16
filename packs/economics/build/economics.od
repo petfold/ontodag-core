@@ -12,12 +12,12 @@
 'warehouseman'"'"'s-lien' lien
 51-percent-attack act
 account '*'
-account-abstraction 'about(ethereum)' concept
+account-abstraction 'about(ethereum)' method
 accounting-entry transaction-record
 accounts-payable debt
-accounts-receivable asset
+accounts-receivable possession
 accredited-investor investor
-accrual concept
+accrual amount
 accrual-basis procedure
 act '*'
 active-management asset-management investing
@@ -28,7 +28,7 @@ ad '*'
 adhesion-contract contract
 adjusting-entry accounting-entry
 advance-death-benefit death-benefit
-adverse-selection concept
+adverse-selection situation
 advertising '*'
 aerial-delivery airlift delivery
 agent '*'
@@ -48,7 +48,7 @@ annuity regular-payment
 annuity-in-advance annuity
 anti-money-laundering procedure
 arbitrage investing
-arbitrage-pricing-theory concept
+arbitrage-pricing-theory 'about(price)' theory
 argosy fleet
 arrears debt
 art-dealer trader
@@ -60,7 +60,7 @@ asking-price purchase-price
 asset '*'
 asset-allocation asset-management investing
 asset-backed-security security-finance
-asset-class concept
+asset-class group
 asset-management financial-services management
 asset-realization cut-rate-sale
 assurance-insurance possession
@@ -68,7 +68,7 @@ atomic-swap financial-transaction
 attribute '*'
 auction '*'
 auction-bid price purchase-price
-auction-theory game-theory
+auction-theory 'about(auction)' game-theory
 audited-account information procedure
 authorized-shares share-capital
 automated-market-maker decentralized-exchange
@@ -82,36 +82,35 @@ bait-and-switch merchandising
 baker merchant
 balance-sheet financial-statement
 bale bundle
-bank '*'
+river-bank '*'
 bank-account possession
 bank-card credit-card payment-card
 bank-loan loan
 banking financial-services
-banknote cash
 barcode information
 barrier-option exotic-option
-barriers-to-entry concept
+barriers-to-entry condition
 barter '*'
 barterer trader
 bazaar cut-rate-sale
 beacon-chain blockchain 'in(ethereum)'
 bear-market event state
 bibliopole trader
-bid-ask-spread concept
+bid-ask-spread amount
 bid-price price purchase-price
 bidder buyer
 bidding act
 bilateral-contract contract
-bill-of-lading receipt
+bill-of-lading 'about(shipment)' receipt
 binary-option exotic-option
 bitcoin cryptocurrency
 bitcoin-core software
 bitcoin-halving 'about(bitcoin)' event
-bitcoin-improvement-proposal white-paper
+bitcoin-improvement-proposal 'about(bitcoin-network)' white-paper
 bitcoin-network blockchain
 bitcoin-taproot soft-fork
 black-market activity market
-black-scholes-model concept
+black-scholes-model 'about(option-finance)' information
 block-reward 'about(cryptocurrency-mining)' payment-amount
 blockchain distributed-ledger hash-chain list
 blockchain-block data-block 'in(blockchain)'
@@ -123,20 +122,20 @@ bond-issue bond
 bond-market financial-market
 bond-trading trading
 bonus payment-amount
-book-fair bazaar event
-book-value concept
+book-fair bazaar
+book-value value
 bookdealer merchant
 bookkeeping '*'
 borrowing-cost outgo
 bounty reward-payment
 breakage reimbursement
-broker businessman economic-agent
+broker economic-agent
 brokerage-account possession
 budget '*'
-budget-constraint concept
+budget-constraint condition
 building '*'
 bull-market event state
-bullwhip-effect concept
+bullwhip-effect process
 bundle '*'
 bus-fare fare
 bus-line transit-line
@@ -144,9 +143,9 @@ business '*'
 business-expense expense
 business-interruption-insurance insurance possession
 business-loan bank-loan
-business-model concept
+business-model plan
 businessman '*'
-butcher merchant
+butcher '*'
 butcher-business commercial-enterprise
 buy-and-hold investing
 buy-option stock-option-contract
@@ -156,9 +155,9 @@ byzantine-fault-tolerance consensus-mechanism
 bzz crypto-token
 cab-fare fare
 call-loan loan
-call-option option option-finance purchase-option
+call-option option-finance purchase-option
 capital '*'
-capital-asset-pricing-model concept
+capital-asset-pricing-model 'about(rate-of-return)' information
 capital-expenditure outgo
 capital-gain income
 capital-loss expense
@@ -178,13 +177,13 @@ cash-account brokerage-account
 cash-basis procedure
 cash-card payment-card
 cash-flow income
-cash-flow-statement financial-statement
+cash-flow-statement 'about(cash-flow)' financial-statement
 cash-payment payment-amount
 cellarage fee
 central-counterparty organization
 certificate-of-deposit security-finance
 chandler retailer
-charge-rate concept price-charged
+charge-rate price-charged
 chart-of-accounts document
 charter-contract contract
 chattel-mortgage mortgage
@@ -221,27 +220,26 @@ commodity-money money
 common-carrier freight-forwarder
 common-stock financial-asset share share-capital
 common-stock-equivalent share-capital
-commons concept
+commons possession
 company '*'
-comparative-advantage concept
+comparative-advantage attribute
 compensation recompense-payment
 compound-interest interest
 computer-program '*'
-concept '*'
 concession-contract contract
 conditional-contract contract
 conditional-sale security-interest
 consensus-mechanism procedure
 consignment delivery sale
-consumer-choice concept
+consumer-choice 'about(consumer)' theory
 consumer-credit credit-line
 container '*'
 container-ship cargo-ship
 containerization procedure
-content-addressable-storage concept
+content-addressable-storage '*'
 contingency-fee fee
 contract '*'
-contract-theory concept
+contract-theory 'about(contract)' theory
 control-account transaction-record
 control-stock share-capital
 controlling-interest financial-interest share
@@ -271,17 +269,17 @@ craft-fair bazaar
 craftsman '*'
 credit '*'
 credit-account open-end-credit
-credit-card '*'
+credit-card payment-card
 credit-default-swap swap-finance
 credit-entry accounting-entry
 credit-line credit
 credit-order document
-credit-rating information
+credit-rating 'about(credit)' information
 credit-rating-agency business
 credit-risk financial-risk
 credit-score credit-rating
 credit-side transaction-record
-credit-spread concept
+credit-spread amount
 creditor economic-agent
 crime '*'
 cross-docking logistics
@@ -292,13 +290,13 @@ cryptocurrency-exchange organization
 cryptocurrency-miner economic-agent
 cryptocurrency-mining process
 cryptocurrency-wallet software
-cryptographic-hash-function procedure
+cryptographic-hash-function '*'
 cumulative-preferred preferred-stock
 curb-market stock-exchange
 currency '*'
 currency-conversion monetary-exchange
-currency-pair concept
-current-asset asset
+currency-pair information
+current-asset possession
 custodial-account cash-account
 custodial-wallet cryptocurrency-wallet
 custodian-bank bank
@@ -324,8 +322,8 @@ debtor economic-agent
 decentralized-application software
 decentralized-autonomous-organization organization
 decentralized-exchange decentralized-application
-decentralized-finance smart-contract
-decentralized-storage peer-to-peer
+decentralized-finance financial-services
+decentralized-storage '*'
 deducted-amount price-adjustment
 deductible payment-amount
 default-finance event failure
@@ -345,7 +343,7 @@ derivative-finance security-finance
 derivatives-market financial-market
 device '*'
 difficulty-adjustment 'about(cryptocurrency-mining)' rule
-digital-signature information
+digital-signature '*'
 direct-debit financial-transaction payment
 direct-loan loan
 direct-marketing ad marketing
@@ -365,7 +363,7 @@ distribution-cost outgo
 diversification asset-allocation
 divestiture merchandising sale
 dividend '*'
-division-of-labor concept
+division-of-labor practice
 divvy dividend
 dockage fee
 document '*'
@@ -384,29 +382,28 @@ dues fixed-charge
 dumping merchandising
 dutch-auction auction merchandising
 dynamic-pricing pricing-strategy
-e-commerce business commerce
+e-commerce commerce
 earnest-money earnest-payment
 earnest-payment payment-amount
-earning-per-share concept
 earnings income
-earnings-per-share concept
+earnings-per-share ratio
 ebitda income
 economic-agent agent
-economic-elasticity concept
-economic-order-quantity concept
+economic-elasticity ratio
+economic-order-quantity amount
 economic-production industry
 economic-rent income
 economic-theory thinking
-economic-utility concept
+economic-utility attribute
 economics '*'
-economies-of-scale concept
-efficient-market-hypothesis concept
+economies-of-scale attribute
+efficient-market-hypothesis 'about(financial-market)' hypothesis
 electronic-communication-network financial-market
 electronic-funds-transfer payment
-elliptic-curve-cryptography procedure
+elliptic-curve-cryptography '*'
 emolument compensation
 employee-owned-enterprise commercial-enterprise
-employment-contract contract
+employment-contract 'about(employment)' contract
 endowment-insurance life-insurance
 english-auction auction
 enterprise business
@@ -422,8 +419,8 @@ escrow contract
 ether cryptocurrency
 ethereum blockchain
 ethereum-client software
-ethereum-gas 'about(ethereum)' quantity
-ethereum-improvement-proposal document
+ethereum-gas 'about(ethereum)' amount
+ethereum-improvement-proposal 'about(ethereum)' document
 ethereum-name-service decentralized-application
 ethereum-virtual-machine software
 event '*'
@@ -432,41 +429,41 @@ exchange-rate ratio
 exchange-traded-fund mutual-fund security-finance
 excursion-rate charge-rate
 exotic-option option-finance
-expected-shortfall concept
+expected-shortfall amount
 expending spending
 expense outgo
 expense-account account
 expense-allowance reimbursement
-expiration-date concept
+expiration-date day
 export-credit credit
 exporting international-trade
 express-delivery transportation
-externality concept
+externality consequence
 extra-dividend dividend
 factoring financial-transaction transaction
 factory-price purchase-price
 failure '*'
-fair-value concept
-fama-french-three-factor-model concept
+fair-value value
+fama-french-three-factor-model 'about(rate-of-return)' information
 family-office organization
 fare '*'
 farming '*'
 fee '*'
 fee-splitting payment
 ferry-transport transportation
-fiat-money currency
+fiat-currency currency
 fiduciary economic-agent
 fill-or-kill trade-order
 financial-advisor professional
 financial-asset intangible-asset
-financial-audit audited-account work
+financial-audit work
 financial-bubble event
 financial-capital possession
 financial-instrument contract
 financial-interest possession
-financial-leverage concept
+financial-leverage ratio
 financial-market market
-financial-risk concept
+financial-risk danger
 financial-services commercial-enterprise service
 financial-statement document
 financial-transaction act
@@ -477,7 +474,7 @@ fire-sale cut-rate-sale
 first-mortgage mortgage
 fishing-industry commercial-enterprise
 fishmonger trader
-fixed-asset asset
+fixed-asset possession
 fixed-charge price-charged
 fleet '*'
 fleet-management management
@@ -512,18 +509,17 @@ fungibility attribute
 futures-contract forward-contract
 futures-market derivatives-market
 gambling-contract contract
-game-theory concept
+game-theory 'about(game)' mathematics
 garage-sale cut-rate-sale
 gas-fee transaction-fee
 general-ledger transaction-record
 general-lien lien
 genesis-block blockchain-block
-gig-economy concept
+gig-economy economic-system
 giro-account bank-account
 going-out-of-business-sale cut-rate-sale
 goods possession
-goods-and-services concept
-goodwill-asset financial-asset possession
+goodwill-asset financial-asset
 government-bond bond
 government-security legal-document
 grain-merchant merchant
@@ -543,14 +539,14 @@ half-pay wage
 handling-cost outgo
 hard-fork event
 hard-sell advertising
-hardware-wallet cryptocurrency-wallet
-hash-chain concept
-hash-rate 'about(cryptocurrency-mining)' quantity
+hardware-wallet computer
+hash-chain '*'
+hash-rate 'about(cryptocurrency-mining)' amount
 hatmaker merchant
 hauling transportation
 hay-bale bale
 hazard-insurance possession
-health-insurance insurance possession
+health-insurance 'about(health)' insurance possession
 health-maintenance-organization health-insurance
 hedge-finance investing
 hedge-fund fund
@@ -567,21 +563,21 @@ hosier shopkeeper
 hospitalization-insurance health-insurance
 hot-stock share-capital
 hot-wallet cryptocurrency-wallet
-implied-volatility concept
+implied-volatility amount
 import-credit credit
 importing international-trade
 incentive-option purchase-option
 income '*'
-income-statement financial-statement
+income-statement 'about(income)' financial-statement
 incoterms contract-condition
 indent-order document
 indenture contract
 index-fund mutual-fund
-indifference-curve concept
+indifference-curve curve
 industry '*'
 inflation-indexed-bond bond
 information '*'
-information-asymmetry concept
+information-asymmetry situation
 initial-coin-offering crowdfunding
 initial-public-offering commerce
 insider-trading exchange market-abuse trading
@@ -594,26 +590,26 @@ institutional-investor investor
 insurable-interest financial-interest
 insurance contract financial-services
 insurance-policy contract
-intangible-asset asset
+intangible-asset possession
 interbank-loan bank-loan
 interest '*'
 interest-expense expense
-interest-rate charge-rate
+interest-rate ratio
 interest-rate-swap swap-finance
 intermediary economic-agent
 intermodal-container shipping-container
 internal-control activity
-internal-rate-of-return concept
+internal-rate-of-return ratio
 international-trade commercial-trade
-interoperability attribute
-intrinsic-value concept
+interoperability '*'
+intrinsic-value value
 inventory transaction-record
 inventory-management management
-inventory-turnover concept
+inventory-turnover ratio
 investing financial-services
 investment '*'
 investor economic-agent worker
-ipfs decentralized-storage software
+ipfs '*'
 ironmonger trader
 jeweler merchant
 junk-bond bond
@@ -625,7 +621,7 @@ language '*'
 last-mile delivery
 late-fee fee
 layer-2 communications-protocol
-lead-time concept
+lead-time time-period
 legal-document '*'
 legal-fee fee
 legal-tender money
@@ -669,64 +665,64 @@ margin-account brokerage-account
 margin-call event
 margin-deposit down-payment
 margin-trading securities-trading
-marginal-cost concept
+marginal-cost amount
 marginal-utility economic-utility
-market concept
+market economic-system
 market-abuse crime
-market-capitalization concept
+market-capitalization amount
 market-clearing process
 market-corner market-monopoly
 market-correction event
-market-depth concept
+market-depth attribute
 market-design mechanism-design
-market-failure concept
-market-index concept
+market-failure situation
+market-index amount
 market-liquidity liquidity
 market-maker economic-agent
 market-manipulation market-abuse
 market-monopoly activity
 market-order document trade-order
 market-participant economic-agent
-market-power concept
+market-power attribute
 market-price price purchase-price
 market-risk financial-risk
 marketing '*'
 marketing-cost outgo
 marketplace market place
-markup concept
+markup amount
 marriage-contract contract
 mass-production economic-production
 matching-engine software
 matching-market market
 maximal-extractable-value 'about(blockchain)' income
-maximum-drawdown concept
+maximum-drawdown amount
 meatpacking packaging
-mechanism-design concept
+mechanism-design economics
 medical-expense expense
-medium-of-exchange concept
+medium-of-exchange possession
 mempool collection 'in(blockchain)'
 mercer trader
 merchandising commerce
 merchant '*'
 merger-agreement contract
 merit-pay wage
-merkle-tree concept
+merkle-tree tree-graph
 microfinance financial-services
 micropayment payment
 mileage travel-allowance
-mining-difficulty 'about(cryptocurrency-mining)' quantity
+mining-difficulty 'about(cryptocurrency-mining)' amount
 mixed-farming farming
-modern-portfolio-theory concept
+modern-portfolio-theory theory
 momentum-investing investing
 monetary-exchange commerce
 money '*'
 money-laundering crime
 money-market financial-market
-monopolistic-competition concept
+monopolistic-competition situation
 monopsony activity
 monte-carlo-methods-in-finance procedure
 moorage fee
-moral-hazard concept
+moral-hazard situation
 mortgage '*'
 mortgage-backed-security asset-backed-security
 mortgage-loan credit loan
@@ -736,12 +732,12 @@ municipal-bond bond
 mutual-fund fund
 nakamoto-consensus consensus-mechanism
 naked-option purchase-option
-nash-equilibrium concept
+nash-equilibrium situation
 net-income income
-net-present-value concept
+net-present-value value
 net-sales income
 netting procedure
-network-effect concept
+network-effect attribute
 newsagent shopkeeper
 no-fault-insurance automobile-insurance
 no-par-value-stock share-capital
@@ -751,17 +747,17 @@ noncallable-bond bond
 novation contract
 offer-price asking-price
 old-age-pension pension
-oligopoly activity concept
+oligopoly activity
 online-marketplace marketplace web-site
 open-account contract credit-order
 open-end-credit consumer-credit
-open-interest concept
+open-interest amount
 operating-budget budget
 operating-capital possession
 operating-expense expense
 operating-income income
 operational-risk financial-risk
-opportunity-cost concept
+opportunity-cost amount
 optimistic-rollup rollup
 option '*'
 option-finance derivative-finance
@@ -785,8 +781,8 @@ overpaid-amount payment-amount
 overpayment payment
 overproduction economic-production
 packaging '*'
-par-value concept
-pareto-efficiency concept
+par-value value
+pareto-efficiency situation
 participation-loan loan
 partnership-certificate legal-document
 passbook-savings-account savings-account
@@ -803,11 +799,11 @@ payment-channel smart-contract
 payment-channel-network layer-2
 payment-processor organization
 payment-rate charge-rate
-payment-system concept
+payment-system system
 payment-terms information
 payoff payment-amount
 peddler seller
-peer-to-peer concept
+peer-to-peer '*'
 peer-to-peer-lending loan
 penalty payment-amount
 penetration-pricing pricing-strategy
@@ -816,7 +812,7 @@ pension '*'
 pension-fund fund
 peppercorn-rent rent
 per-diem expense-allowance
-perfect-competition concept
+perfect-competition situation
 performance-bond bond
 perpetual-warrant stock-warrant
 perpetuity annuity
@@ -830,7 +826,7 @@ physical-object '*'
 pipage-fee fee
 place '*'
 plan '*'
-platform-economy concept
+platform-economy economic-system
 pledge security-interest
 point-of-sale event
 policy '*'
@@ -850,30 +846,30 @@ poundage fee
 preferred-stock financial-asset share share-capital
 premium-bond bond
 prepayment payment
-present-value concept
+present-value value
 price '*'
 price-adjustment recompense-payment
 price-charged outgo
 price-discrimination pricing-strategy
-price-earnings-ratio concept
+price-earnings-ratio ratio
 price-skimming pricing-strategy
 price-volatility attribute
 price-war event
 pricing-strategy plan
 primary-market financial-market
 prime-interest-rate interest-rate
-principal-agent-problem concept
+principal-agent-problem situation
 print-seller art-dealer retailer
-prisoners-dilemma concept
+prisoners-dilemma mathematical-object
 private-equity financial-services
-private-key information
+private-key '*'
 private-treaty merchandising
 problem '*'
 procedure '*'
 process '*'
 procurement buying
 product-bundling pricing-strategy
-production-capacity economic-production
+production-capacity attribute
 production-cost outgo
 production-order document
 production-output economic-production
@@ -889,17 +885,17 @@ property-title legal-document
 proprietorship-certificate legal-document
 provisions-store stored-supply
 psychological-pricing pricing-strategy
-public-good concept
-public-key information
+public-good goods
+public-key '*'
 pump-and-dump fraud
 purchase '*'
-purchase-contract contract
+purchase-contract 'about(sale)' contract
 purchase-incentive bonus
 purchase-option '*'
 purchase-order document
 purchase-price outgo
 purchasing procurement
-put-option option option-finance purchase-option
+put-option option-finance purchase-option
 pyramid-scheme business-model fraud
 pyramiding speculation
 qr-code barcode
@@ -908,7 +904,7 @@ quasi-contract contract
 rack-rent rent
 rake-off share-of-profits
 rate-of-depreciation charge-rate
-rate-of-return concept
+rate-of-return ratio
 ratio '*'
 real-estate-business business commercial-enterprise
 real-estate-loan loan
@@ -929,7 +925,7 @@ remuneration payment
 rent '*'
 rental-income income
 renting contract
-reorder-point 'about(inventory-management)' quantity
+reorder-point 'about(inventory-management)' amount
 reparation-payment compensation
 repayment payment-amount
 repeat-order document
@@ -948,10 +944,10 @@ retailing merchandising
 retained-earnings net-income
 retainer fee
 return-merchandise-authorization reverse-logistics
-return-on-investment concept
+return-on-investment ratio
 revenue income
 revenue-bond bond
-revenue-model concept
+revenue-model plan
 reverse-auction auction
 reverse-logistics logistics
 reversionary-annuity annuity
@@ -962,24 +958,24 @@ rfid device
 risk-arbitrage arbitrage
 risk-free-interest-rate interest-rate
 risk-management management
-risk-neutral-measure concept
+risk-neutral-measure mathematical-object
 rollup layer-2
 room-rate charge-rate
 route-planning procedure
 rug-merchant merchant
 rummage-sale cut-rate-sale
-safety-stock concept
+safety-stock stored-supply
 salary income payment
-sale '*'
+sale merchandising
 sale-in-gross contract
-sales-contract contract
+sales-contract 'about(sale)' contract
 sales-incentive bonus
-salter merchant
-satoshi concept
+salter '*'
+satoshi amount
 savings fund
 savings-account deposit-account
 savings-bond government-bond
-scarcity concept
+scarcity condition
 scrip currency legal-document
 sealed-bid-auction auction
 sealed-instrument contract
@@ -996,7 +992,7 @@ seed-money possession
 seed-phrase information
 seedsman trader
 segwit soft-fork
-self-custody cryptocurrency-wallet
+self-custody practice
 self-insurance possession
 sell-option stock-option-contract
 seller '*'
@@ -1004,8 +1000,8 @@ selling-agent seller
 selloff cut-rate-sale
 service '*'
 service-charge price-charged
-service-contract contract
-settlement-date concept
+service-contract 'about(service)' contract
+settlement-date day
 settlement-finance procedure
 severable-contract contract
 share '*'
@@ -1013,9 +1009,9 @@ share-capital '*'
 share-float share-capital
 share-of-profits '*'
 share-repurchase financial-transaction transaction
-shareholder stakeholder
-sharing-economy concept
-sharpe-ratio concept
+stockholder stakeholder
+sharing-economy economic-system
+sharpe-ratio ratio
 ship '*'
 shipment goods
 shipping-container container
@@ -1038,7 +1034,7 @@ soft-fork event
 soft-sell advertising
 software '*'
 sole-proprietorship company enterprise
-solidity language
+solidity '*'
 sovereign-wealth-fund fund
 speculation investment
 spending payment
@@ -1066,14 +1062,14 @@ stock-option-contract purchase-option
 stock-split event
 stock-trader securities-trader
 stock-warrant possession
-stockbroker broker securities-trader
+stockbroker securities-trader
 stockjobber stock-trader
 stockout event
 stop-loss-order trade-order
 stop-order document trade-order
 stop-payment document
 storage '*'
-store-of-value concept
+store-of-value attribute
 stored-supply possession
 stowage storage
 stowage-charge price-charged
@@ -1088,8 +1084,8 @@ subscription-warrant stock-warrant
 subsidiary-ledger transaction-record
 subway-fare train-fare
 sunk-cost expense
-supply-and-demand concept
-supply-chain concept
+supply-and-demand 'about(price)' theory
+supply-chain system
 supply-chain-management logistics
 support-level purchase-price
 surcharge payment price-charged
@@ -1109,20 +1105,20 @@ term-insurance possession
 terminable-interest financial-interest
 thinking '*'
 third-party-logistics logistics transportation
-tick-size concept
+tick-size amount
 ticker-symbol information
 ticket-agent seller
 ticket-stub receipt
 time-and-a-half pay-rate
 time-deposit-account savings-account
 time-loan loan
-time-value-of-money concept
+time-value-of-money 'about(money)' principle
 timestamp-server computer-system
 tobacconist shopkeeper
 token-airdrop payment
-token-money money
+token-money coin
 token-payment payment-amount
-tokenomics economics
+tokenomics 'about(cryptocurrency)' economics
 tontine life-insurance
 trade-credit credit
 trade-discount deducted-amount
@@ -1131,14 +1127,14 @@ trademark information
 trader '*'
 trading commerce
 trading-halt event
-trading-volume concept
-tragedy-of-the-commons concept
+trading-volume amount
+tragedy-of-the-commons situation
 train '*'
 train-fare fare
-tranche concept possession security-finance
+tranche security-finance
 transaction '*'
-transaction-cost concept
-transaction-fee financial-transaction
+transaction-cost amount
+transaction-fee fee
 transaction-record '*'
 transit-line carrier-company
 transport '*'
@@ -1171,7 +1167,7 @@ unearned-income income
 unearned-revenue income
 unit-cost price purchase-price
 unit-load-packaging packaging
-unit-of-account concept
+unit-of-account attribute
 unitization currency-conversion
 unlisted-security legal-document
 unsecured-bond bond
@@ -1184,13 +1180,13 @@ utility-token crypto-token
 validator peer-node
 valuation price
 valuation-reserve reserve-account
-value-at-risk concept
+value-at-risk amount
 value-investing investing
-value-proposition concept
+value-proposition information
 vehicle '*'
 vehicle-routing-problem problem
 vending merchandising
-vendor business economic-agent
+vendor economic-agent
 venture-capital possession private-equity
 venturer merchant
 vested-interest financial-interest
@@ -1204,10 +1200,10 @@ warehouse building
 warehouse-management-system software
 watercraft '*'
 watered-stock share-capital
-waybill document
+waybill 'about(shipment)' document
 wealth-management financial-services management
 web-site '*'
-web3 concept
+web3 idea
 weight-charge price-charged
 wharfage fee
 white-paper document
@@ -1225,9 +1221,9 @@ write-off depreciation
 xbzz crypto-token
 xdai stablecoin
 yellow-dog-contract labor-contract
-yield-curve concept
+yield-curve curve
 yield-farming decentralized-finance
-yield-finance concept
+yield-finance ratio
 zero-coupon-bond bond zero-coupon-security
 zero-coupon-security legal-document
 zero-knowledge-rollup rollup
@@ -1235,3 +1231,33 @@ communications-protocol '*'
 computer-system '*'
 data-block '*'
 peer-node '*'
+amount '*'
+bank '*'
+coin '*'
+collection '*'
+computer '*'
+condition '*'
+consequence '*'
+consumer '*'
+contract-condition '*'
+curve '*'
+danger '*'
+day '*'
+economic-system '*'
+employment '*'
+game '*'
+health '*'
+hypothesis '*'
+idea '*'
+mathematical-object '*'
+mathematics '*'
+method '*'
+practice '*'
+principle '*'
+rule '*'
+situation '*'
+system '*'
+theory '*'
+time-period '*'
+tree-graph '*'
+value '*'

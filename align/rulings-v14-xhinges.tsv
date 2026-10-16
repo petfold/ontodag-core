@@ -1,0 +1,221 @@
+# Hinges promoted into core (Peter 2026-10-16: "yes, promote the shared names into core"). These are general names that sibling packs
+# borrow from one another, so packs should depend on core alone: adopting a pack is then importing core and the pack, with no name
+# left as an unfilled placeholder. A promote row moves the entry into core with core parents; the pack keeps any parent of its own as a
+# refinement. Left in their packs, by CORE.md's policy: the mathematical structures (qualified names, the mathematics pack), the
+# measured quantities (the unit registry: temperature), and computing's specialist names that economics' crypto vocabulary builds on.
+# The file sorts after rulings-v14-tiers.tsv on purpose: it runs last.
+pack	sub	action	old	new	note
+physics	theory	promote	-	information	used by seven packs; WordNet 05989479 "a well-substantiated explanation of some aspect of the natural world"
+mathematics	theorem	promote	-	proposition	used by ai and computing; WordNet 06752293 "a proposition deducible from basic postulates"
+physics	physical-law	promote	-	law-of-nature	used by chemistry; WordNet 05872982 (a law of nature in physics)
+physics	physical-phenomenon	promote	-	natural-event	used by space; WordNet 11419404 "a natural phenomenon involving the physical properties of matter and energy"
+physics	magnetism	promote	-	attractive-force	used by mathematics; WordNet 11479058 "attraction for iron"
+biology	hormone	promote	-	secretion	used by medicine; WordNet 05407119 "the secretion of an endocrine gland"
+computing	data-structure	promote	-	information	used by economics, and an entry in mathematics as well; WordNet 05728493
+mathematics	data-structure	promote	-	information	mathematics' own entry for the same name
+computing	data-processing	promote	-	process	used by geography; WordNet 13455487 "a series of operations on data by a computer"
+computing	data-storage	promote	-	data-processing	used by economics and mathematics; WordNet 13562133 "the process of storing information in a computer"; computing keeps computer-operation as a refinement
+computing	database	promote	-	collection	used by geography and ai; "an organized body of related information"
+computing	file-format	promote	-	information	used by geography
+computing	classification-scheme	promote	-	information	used by geography and space; computing keeps knowledge-organization-system as a refinement
+computing	communications-protocol	promote	-	information	used by economics; WordNet 06665108 "rules determining the format and transmission of data"
+geography	time-standard	promote	-	standard	used by space (UTC, J2000)
+# --- duplicates merged by renames-step7.tsv: the refinements a refine-merge leaves in the pack ---
+computing	hard-disk	refine-cross	-	non-volatile-storage	a hard disk is non-volatile storage (computing's hard-disk-drive, merged)
+economics	stockholder	refine-cross	-	stakeholder	a stockholder has a stake (economics' shareholder, merged)
+computing	input-device	refine	-	peripheral	computing's data-input-device, merged
+# --- one owner per name (Peter 2026-10-16: "do these open things") ---
+# A name that two or more packs defined is owned by one, chosen by subject (astronomy: space; the theory of computation and data
+# structures: computing; graph and order theory: mathematics; people: occupations ...). The other packs disown their copy: they keep
+# a stub, plus any parent from their own vocabulary as a refinement of the owner's name. A parent the owner can state without a new
+# dependency (a core name or its own) moves to the owner first.
+space	absolute-magnitude	parent+	-	magnitude	from physics's copy
+physics	barycenter	parent+	-	point	from space's copy
+mathematics	big-o-notation	parent+	-	symbol	from computing's copy
+occupations	broker	parent+	-	businessman	from economics's copy
+occupations	butcher	parent+	-	merchant	from economics's copy
+computing	controlled-vocabulary	parent+	-	dataset	from ai's copy
+physics	coriolis-force	parent+	-	force	from geography's copy
+computing	cryptographic-hash-function	parent+	-	function	from mathematics's copy
+computing	cryptographic-protocol	parent+	-	procedure	from mathematics's copy
+computing	cryptography	parent+	-	mathematics	from mathematics's copy
+physics	dalton's-law	parent+	-	about(gas)	from chemistry's copy
+computing	data-mining	parent+	-	computer-science	from ai's copy
+computing	dijkstra-algorithm	parent+	-	search-algorithm	from ai's copy
+mathematics	elliptic-curve-cryptography	parent+	-	procedure	from economics's copy
+economics	game-theory	parent+	-	about(game)	from ai's copy
+computing	human-computer-interaction	parent+	-	about(computer)	from ai's copy
+computing	information-retrieval	parent+	-	about(information)	from ai's copy
+computing	ipfs	parent+	-	software	from economics's copy
+computing	knowledge-base	parent+	-	dataset	from ai's copy
+computing	linked-list	parent+	-	data-structure	from mathematics's copy
+computing	linked-open-data	parent+	-	dataset	from ai's copy
+computing	logic-programming	parent+	-	computer-science	from ai's copy
+space	nucleosynthesis	parent+	-	process	from physics's copy
+ai	ontology-alignment	parent+	-	data-processing	from computing's copy
+space	oort-cloud	parent+	-	collection	from physics's copy
+space	orbital-inclination	parent+	-	angle	from physics's copy
+computing	recursion	parent+	-	procedure	from mathematics's copy
+occupations	salter	parent+	-	merchant	from economics's copy
+space	sidereal-day	parent+	-	day	from geography's copy
+space	sidereal-time	parent+	-	time-standard	from geography's copy
+space	star-chart	parent+	-	about(star)	from geography's copy
+space	star-chart	parent+	-	map	from geography's copy
+occupations	statistician	parent+	-	expert	from mathematics's copy
+computing	string-searching-algorithm	parent+	-	search-algorithm	from ai's copy
+biology	taxonomy	parent+	-	classification-scheme	from computing's copy
+mathematics	topological-ordering	parent+	-	data-processing	from computing's copy
+ai	a-star-search	disown	-	best-first-search	owned by computing
+physics	absolute-magnitude	disown	-		owned by space
+mathematics	adjacency-matrix	disown	-		owned by computing
+physics	apoapsis	disown	-		owned by space
+ai	approximation-algorithm	disown	-		owned by computing
+physics	asterism	disown	-		owned by space
+physics	astronomical-conjunction	disown	-		owned by space
+physics	autumnal-equinoctial-point	disown	-		owned by space
+geography	autumnal-equinox	disown	-		owned by space
+ai	backtracking-search	disown	-		owned by computing
+space	barycenter	disown	-		owned by physics
+ai	big-data	disown	-		owned by computing
+computing	big-o-notation	disown	-		owned by mathematics
+mathematics	binary-tree	disown	-	rooted-tree tree-graph	owned by computing
+mathematics	blockchain	disown	-		owned by economics
+mathematics	bloom-filter	disown	-		owned by computing
+ai	boolean-satisfiability-problem	disown	-	constraint-satisfaction-problem	owned by mathematics
+ai	breadth-first-search	disown	-	graph-traversal	owned by computing
+economics	broker	disown	-	economic-agent	owned by occupations
+economics	butcher	disown	-		owned by occupations
+economics	buyer	disown	-	economic-agent	owned by occupations
+economics	byzantine-fault-tolerance	disown	-	consensus-mechanism	owned by computing
+physics	celestial-culmination	disown	-		owned by space
+geography	celestial-equator	disown	-	great-circle	owned by space
+space	celestial-navigation	disown	-		owned by geography
+mathematics	computational-complexity-theory	disown	-	computability-theory	owned by computing
+ai	computational-ontology	disown	-		owned by computing
+ai	computer-simulation	disown	-		owned by computing
+economics	content-addressable-storage	disown	-		owned by computing
+mathematics	content-addressable-storage	disown	-		owned by computing
+ai	controlled-vocabulary	disown	-		owned by computing
+geography	coriolis-force	disown	-		owned by physics
+economics	cryptographic-hash-function	disown	-		owned by computing
+mathematics	cryptographic-hash-function	disown	-	cryptographic-primitive	owned by computing
+mathematics	cryptographic-protocol	disown	-		owned by computing
+mathematics	cryptography	disown	-		owned by computing
+biology	cybernetics	disown	-		owned by ai
+chemistry	dalton's-law	disown	-		owned by physics
+ai	data-mining	disown	-		owned by computing
+economics	decentralized-storage	disown	-		owned by computing
+physics	declination	disown	-		owned by space
+ai	depth-first-search	disown	-	graph-traversal	owned by computing
+mathematics	digital-certificate	disown	-		owned by computing
+economics	digital-signature	disown	-		owned by computing
+mathematics	digital-signature	disown	-	cryptographic-primitive	owned by computing
+ai	dijkstra-algorithm	disown	-		owned by computing
+computing	directed-acyclic-graph	disown	-		owned by mathematics
+computing	directed-graph	disown	-		owned by mathematics
+geography	ecliptic	disown	-		owned by space
+economics	elliptic-curve-cryptography	disown	-		owned by mathematics
+mathematics	encryption	disown	-	mathematical-operation	owned by computing
+physics	equinoctial-point	disown	-		owned by space
+geography	equinox	disown	-		owned by space
+mathematics	error-correcting-code	disown	-		owned by computing
+mathematics	finite-automaton	disown	-	formal-system	owned by computing
+computing	formal-concept-analysis	disown	-		owned by mathematics
+mathematics	formal-grammar	disown	-		owned by computing
+ai	game-theory	disown	-		owned by economics
+geography	geojson	disown	-	geographic-data-format	owned by computing
+geography	gps-exchange-format	disown	-	geographic-data-format	owned by computing
+ai	greedy-algorithm	disown	-		owned by computing
+economics	hash-chain	disown	-		owned by computing
+mathematics	hash-chain	disown	-		owned by computing
+mathematics	hash-table	disown	-		owned by computing
+mathematics	hmac	disown	-		owned by computing
+physics	hour-angle	disown	-		owned by space
+space	hubble's-law	disown	-		owned by physics
+ai	human-computer-interaction	disown	-		owned by computing
+ai	information-retrieval	disown	-		owned by computing
+mathematics	information-theory	disown	-		owned by computing
+economics	interoperability	disown	-		owned by computing
+economics	ipfs	disown	-		owned by computing
+space	kepler's-law	disown	-		owned by physics
+geography	keyhole-markup-language	disown	-	geographic-data-format	owned by computing
+ai	knowledge-base	disown	-		owned by computing
+ai	knowledge-graph	disown	-		owned by computing
+ai	kolmogorov-complexity	disown	-		owned by computing
+mathematics	lambda-calculus	disown	-	formal-system	owned by computing
+ai	lidar	disown	-		owned by geography
+ai	linked-data	disown	-		owned by computing
+mathematics	linked-list	disown	-		owned by computing
+ai	linked-open-data	disown	-		owned by computing
+ai	logic-programming	disown	-		owned by computing
+mathematics	logical-operation	disown	-	mathematical-operation	owned by computing
+economics	merkle-tree	disown	-	tree-graph	owned by computing
+mathematics	merkle-tree	disown	-	tree-graph	owned by computing
+mathematics	message-authentication-code	disown	-	cryptographic-primitive	owned by computing
+geography	meteor-shower	disown	-		owned by space
+physics	meteoroid	disown	-		owned by space
+computing	minimum-spanning-tree	disown	-	tree-data-structure	owned by mathematics
+ai	mutual-information	disown	-		owned by computing
+mathematics	np-completeness	disown	-	complexity-class	owned by computing
+physics	nucleosynthesis	disown	-		owned by space
+computing	ontology-alignment	disown	-		owned by ai
+physics	oort-cloud	disown	-		owned by space
+physics	orbital-inclination	disown	-		owned by space
+physics	orbital-node	disown	-		owned by space
+biology	osmosis	disown	-		owned by chemistry
+physics	outer-planet	disown	-		owned by space
+ai	pagerank	disown	-		owned by computing
+ai	parser	disown	-		owned by computing
+computing	partial-order	disown	-		owned by mathematics
+economics	peer-to-peer	disown	-		owned by computing
+physics	pencil-of-lines	disown	-		owned by mathematics
+physics	periapsis	disown	-		owned by space
+physics	primary-body	disown	-		owned by space
+economics	private-key	disown	-		owned by mathematics
+mathematics	proof-of-work	disown	-	cryptographic-protocol	owned by economics
+economics	public-key	disown	-		owned by mathematics
+mathematics	public-key-cryptography	disown	-		owned by computing
+mathematics	public-key-infrastructure	disown	-		owned by computing
+ai	rdf-graph	disown	-		owned by computing
+computing	recommender-system	disown	-		owned by ai
+mathematics	recursion	disown	-		owned by computing
+space	red-shift	disown	-		owned by physics
+mathematics	regular-expression	disown	-	mathematical-expression	owned by computing
+ai	resource-description-framework	disown	-		owned by computing
+physics	right-ascension	disown	-		owned by space
+economics	salter	disown	-		owned by occupations
+ai	search-algorithm	disown	-		owned by computing
+computing	semantic-reasoner	disown	-		owned by ai
+ai	semantic-web	disown	-		owned by computing
+computing	shortest-path	disown	-	computational-problem	owned by mathematics
+geography	sidereal-day	disown	-		owned by space
+geography	sidereal-time	disown	-		owned by space
+ai	signal-processing	disown	-		owned by computing
+economics	solidity	disown	-		owned by computing
+geography	solstice	disown	-		owned by space
+ai	sorting-algorithm	disown	-		owned by computing
+ai	sparql	disown	-		owned by computing
+geography	star-chart	disown	-		owned by space
+mathematics	statistician	disown	-		owned by occupations
+economics	stockbroker	disown	-	securities-trader	owned by occupations
+ai	string-searching-algorithm	disown	-		owned by computing
+geography	summer-solstice	disown	-		owned by space
+mathematics	symmetric-key-cryptography	disown	-		owned by computing
+computing	taxonomy	disown	-		owned by biology
+ai	tf-idf	disown	-		owned by computing
+computing	topological-ordering	disown	-		owned by mathematics
+computing	transitive-closure	disown	-		owned by mathematics
+computing	transitive-reduction	disown	-		owned by mathematics
+mathematics	trie	disown	-	tree-graph	owned by computing
+ai	triplestore	disown	-		owned by computing
+mathematics	turing-machine	disown	-		owned by computing
+physics	vernal-equinoctial-point	disown	-		owned by space
+geography	vernal-equinox	disown	-		owned by space
+geography	weather-satellite	disown	-		owned by space
+ai	web-crawler	disown	-	internet-bot	owned by computing
+ai	web-ontology-language	disown	-		owned by computing
+geography	winter-solstice	disown	-		owned by space
+# --- algorithm: defined by ai, computing and mathematics alike, so a hinge ---
+computing	algorithm	promote	-	procedure	WordNet 05847438 "a precise rule (or set of rules) specifying how to solve some problem"
+ai	algorithm	promote	-	procedure	ai's copy of the same name
+mathematics	algorithm	promote	-	procedure	mathematics' copy of the same name

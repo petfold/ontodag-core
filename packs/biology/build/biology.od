@@ -9,7 +9,7 @@ allele gene
 ameloblast embryonic-cell
 amino-acid compound
 amphidiploid organism
-anatomy biology
+anatomy 'about(body)' biology
 animal-egg ovum
 anisogamete gamete
 anisogamy reproduction
@@ -54,7 +54,7 @@ body-part '*'
 bone-cell somatic-cell
 botanical-cohesion growth organic-process
 botanical-division phylum
-botany biology
+botany 'about(plant)' biology
 brachium body-part
 bract-tuft bunch
 brain-cell nerve-cell
@@ -63,7 +63,7 @@ calyx plant-part
 cancer-cell neoplastic-cell
 cataplasia change
 cell '*'
-cell-theory concept
+cell-theory 'about(cell)' theory
 change '*'
 chemical-reaction '*'
 choanocyte flagellated-cell
@@ -77,7 +77,6 @@ collection '*'
 columnar-cell epithelial-cell
 combination '*'
 compound '*'
-concept '*'
 condition '*'
 cone-cell visual-cell
 corolla plant-part
@@ -85,7 +84,7 @@ cosmid cloning-vector virus
 crustacean-roe spawn
 cuboidal-cell epithelial-cell
 culture-medium substance
-cybernetics science
+cybernetics '*'
 cystic-fibrosis-transport-regulator mutant-gene
 daughter-cell cell
 dehiscence organic-phenomenon
@@ -99,10 +98,10 @@ dominant-gene gene
 ecological-establishment process
 ecological-niche condition
 ecological-succession organic-process
-ecology biology
+ecology 'about(environment)' biology
 ecosystem environment system
 effector nerve-fiber
-embryology biology
+embryology 'about(embryo)' biology
 embryonic-cell cell
 environment '*'
 enzyme biological-activator protein
@@ -112,7 +111,7 @@ epithelial-cell somatic-cell
 equilibrium '*'
 erythroblast somatic-cell
 estivation attribute
-etiolation act organic-process
+etiolation organic-process
 eukaryote organism
 event '*'
 fat-cell somatic-cell
@@ -152,7 +151,7 @@ genetic-reversion mutation
 genetic-segregation organic-process
 genetic-transduction organic-process
 genetic-transposition mutation
-genetics biology
+genetics 'about(gene)' biology
 genome group
 genus taxonomic-group
 germ-tube natural-object plant-part
@@ -160,7 +159,7 @@ goblet-cell epithelial-cell
 'golgi'"'"'s-cell' brain-cell
 granulocyte leukocyte
 group '*'
-growth '*'
+growth organic-process
 hair-cell epithelial-cell
 haploid organism
 haplotype combination
@@ -177,7 +176,7 @@ homeostasis equilibrium
 homeotic-gene gene
 homogeny similarity
 homozygote organism
-hormone secretion
+hormone '*'
 hybridization organic-process
 hybridoma somatic-cell
 immune-recognition organic-phenomenon
@@ -189,7 +188,7 @@ isogamete gamete
 isogamy reproduction
 killer-t-cell t-cell
 'kupffer'"'"'s-cell' cell
-leaf '*'
+leaf plant-part
 leaf-lobe natural-object plant-part
 leaf-node body-part
 lethal-gene gene
@@ -213,9 +212,9 @@ meiosis organic-process
 melanoblast epidermal-cell
 melanocyte epidermal-cell
 meme cognition information
-'mendel'"'"'s-law' concept
+'mendel'"'"'s-law' 'about(genetic-inheritance)' law-of-nature
 metabolism organic-process
-microbiology biology
+microbiology 'about(microorganism)' biology
 microcyte red-blood-cell
 microgliacyte neurogliacyte
 microorganism '*'
@@ -231,14 +230,14 @@ monotype taxonomic-group
 morphological-polymorphism organic-phenomenon
 mother-cell cell
 motion '*'
-motor-fiber material nerve-fiber
+motor-fiber nerve-fiber
 motor-neuron nerve-cell
 muscle '*'
 muscle-cell fiber-cell somatic-cell
 muscle-relaxation increase
 mutant organism
 mutant-gene gene
-mutation '*'
+mutation organic-process
 myeloblast leukocyte
 myelocyte leukocyte
 natural-event '*'
@@ -265,11 +264,11 @@ oosphere gamete
 ootid ovum
 operator-gene gene
 organ '*'
-organelle organ
+organelle body-part
 organic-phenomenon natural-event
 organic-process process
 organism '*'
-osmosis process
+osmosis '*'
 osteoblast embryonic-cell
 osteoclast bone-cell macrophage
 osteocyte bone-cell
@@ -345,7 +344,7 @@ secretion '*'
 sense '*'
 sensitiveness sense
 sensory-adaptation event
-sensory-fiber material nerve-fiber
+sensory-fiber nerve-fiber
 sensory-neuron nerve-cell
 sertoli-cell cell
 sex-chromosome chromosome
@@ -361,7 +360,7 @@ skin-cell somatic-cell
 smooth-muscle-cell muscle-cell
 somatic-cell cell
 spawn animal-egg
-species '*'
+species taxonomic-group
 sperm gamete
 spermatid gamete
 spermatocyte gametocyte
@@ -396,13 +395,13 @@ taste-cell epithelial-cell
 taxonomic-class taxonomic-group
 taxonomic-division taxonomic-group
 taxonomic-family taxonomic-group
-taxonomic-group concept
+taxonomic-group group
 taxonomic-order taxonomic-group
 taxonomic-tribe taxonomic-group
 taxonomic-variety taxonomic-group
-taxonomy biology
-theory-of-evolution concept
-theory-of-inheritance concept
+taxonomy 'about(taxonomic-group)' biology classification-scheme
+theory-of-evolution 'about(evolution)' theory
+theory-of-inheritance 'about(genetic-inheritance)' theory
 tissue '*'
 transgene gene
 tumor-suppressor-gene suppressor-gene
@@ -419,5 +418,20 @@ visual-accommodation organic-process
 visual-cell somatic-cell
 x-linked-gene gene
 y-linked-gene gene
-zoology biology
+zoology 'about(animal)' biology
 zygote cell
+botanical-fruit plant-part
+seed plant-part
+stalk plant-part
+bulb plant-part
+conception organic-process
+consumption organic-process
+convalescence organic-process
+electric-shock organic-process
+evolution organic-process
+animal '*'
+body '*'
+classification-scheme '*'
+embryo '*'
+law-of-nature '*'
+theory '*'

@@ -1,0 +1,87 @@
+# Refinement rows (Peter 2026-10-16: "allow refinement rows and review the 258 candidates"): a pack adds a parent to a core name,
+# inserting a tier the core does not have (glucose ⊑ monosaccharide ⊑ carbohydrate). core keeps its own edge; merging the pack drops it
+# as implied. refine = the new parent lies under one of the core node's parents (a pure insertion); refine-cross = a reviewed
+# cross-branch claim. Candidates: core ⊑ pack-node pairs that two or more sources entail and the graph lacked (tools/closure.py's
+# view union), the lowest per core node: 258, of which these were accepted; the rest are in align/refinements-v14-rejected.tsv.
+pack	sub	action	old	new	note
+chemistry	mixture	move	chemical	substance	WordNet 14586258: mixture ⊑ substance. Under chemical, every mixture below (wine, blood, air) would be "a material used in or produced by a reaction"
+biology	botanical-fruit	refine-cross	-	plant-part	WordNet: fruit ⊑ reproductive structure ⊑ plant organ ⊑ plant part; every fruit, berry and nut inherits it (my reading, standing in for the 25 fruits OpenCyc and WordNet place under plant part)
+biology	seed	refine-cross	-	plant-part	opencyc wordnet; nuts and oilseeds inherit
+biology	leaf	refine-cross	-	plant-part	opencyc wordnet; "the main organ of photosynthesis"
+biology	stalk	refine-cross	-	plant-part	opencyc wordnet
+biology	bulb	refine-cross	-	plant-part	opencyc wordnet; "a modified bud"
+biology	conception	refine	-	organic-process	sumo wikidata wordnet
+biology	consumption	refine	-	organic-process	sumo wordnet; "taking food into the body"
+biology	convalescence	refine	-	organic-process	sumo wordnet; "gradual healing"
+biology	electric-shock	refine	-	organic-process	sumo wordnet; "a reflex response"
+biology	evolution	refine	-	organic-process	sumo wikidata wordnet
+biology	growth	refine	-	organic-process	sumo wikidata wordnet; "an individual organism growing"
+biology	mutation	refine-cross	-	organic-process	sumo wikidata; "any event that changes genetic structure"
+biology	species	refine	-	taxonomic-group	opencyc wordnet
+chemistry	air	refine-cross	-	mixture	opencyc sumo; "a mixture of gases"
+chemistry	alloy	refine-cross	-	mixture	opencyc sumo wordnet; steel and solder inherit
+chemistry	asphalt	refine-cross	-	mixture	opencyc wikidata
+chemistry	blood	refine	-	mixture	opencyc sumo; cells suspended in plasma
+chemistry	chemical-solution	refine	-	mixture	sumo wordnet; "a homogeneous mixture"; extracts and mouthwash inherit
+chemistry	compost	refine	-	mixture	sumo wordnet; "a mixture of decaying vegetation and manure"
+chemistry	gasoline	refine-cross	-	mixture	sumo wikidata; "a mixture of hydrocarbons"
+chemistry	grout	refine-cross	-	mixture	sumo wordnet; a thin mortar
+chemistry	mist	refine-cross	-	mixture	opencyc sumo; water droplets in air
+chemistry	perfume	refine-cross	-	mixture	opencyc sumo
+chemistry	plaster	refine-cross	-	mixture	opencyc sumo wordnet; "a mixture of lime or gypsum with sand and water"
+chemistry	smoke	refine	-	mixture	opencyc sumo; "fine particles suspended in a gas"
+chemistry	spray	refine	-	mixture	wikidata wordnet
+chemistry	toothpaste	refine-cross	-	mixture	opencyc sumo
+chemistry	chemical-reaction	refine	-	chemical-process	opencyc sumo wordnet; flame inherits
+computing	computer-virus	refine	-	malware	wikidata wordnet
+computing	computer-worm	refine	-	malware	wikidata wordnet
+computing	desktop-computer	refine	-	personal-computer	opencyc wikidata wordnet
+computing	input-device	refine	-	peripheral	wikidata wordnet; scanners inherit
+computing	printer	refine	-	peripheral	wikidata wordnet
+computing	laptop	refine	-	portable-computer	sumo wikidata wordnet
+computing	notebook-computer	refine	-	portable-computer	wikidata wordnet
+economics	credit-card	refine-cross	-	payment-card	schemaorg wikidata; the card
+economics	sale	refine	-	merchandising	sumo wordnet; "a particular instance of selling"
+geography	battlefield	refine	-	geographical-area	sumo wordnet
+geography	cemetery	refine	-	geographical-area	sumo wordnet
+geography	colony	refine	-	geographical-area	sumo wordnet
+geography	dig	refine	-	geographical-area	sumo wordnet
+geography	field	refine	-	geographical-area	sumo wordnet; lawns inherit
+geography	lot	refine	-	geographical-area	sumo wordnet
+geography	park	refine	-	geographical-area	sumo wordnet
+geography	playing-field	refine	-	geographical-area	sumo wordnet
+geography	plot	refine	-	geographical-area	sumo wordnet; garden beds inherit
+geography	public-square	refine	-	geographical-area	sumo wordnet
+geography	range	refine	-	geographical-area	sumo wordnet
+geography	rural-area	refine	-	geographical-area	sumo wordnet
+geography	settlement	refine	-	geographical-area	sumo wordnet; cities and towns inherit
+geography	sphere-of-influence	refine	-	geographical-area	sumo wordnet
+geography	territory	refine	-	geographical-area	sumo wordnet
+geography	wilderness	refine	-	geographical-area	sumo wordnet
+geography	yard	refine	-	geographical-area	sumo wordnet
+geography	hayfield	refine	-	grassland	wikidata wordnet
+geography	pasture	refine	-	grassland	opencyc wikidata wordnet
+geography	marsh	refine	-	wetland	opencyc wikidata
+geography	hill	refine-cross	-	natural-elevation	opencyc wordnet
+geography	mountain	refine-cross	-	natural-elevation	opencyc wordnet
+geography	rain	refine	-	precipitation	wikidata wordnet
+geography	snow	refine	-	precipitation	wikidata wordnet
+geography	sandstone	refine-cross	-	sedimentary-rock	opencyc wikidata
+geography	seashore	refine	-	shore	wikidata wordnet
+geography	cardinal-compass-point	refine-cross	-	compass-point	opencyc sumo wordnet
+mathematics	circle	refine	-	conic-section	wikidata wordnet
+mathematics	equation	refine	-	mathematical-statement	opencyc wordnet
+mathematics	fraction	refine	-	rational-number	"the quotient of two rational numbers" is a rational number (the sources' complex-number is true but coarser)
+mathematics	implication	refine	-	logical-relation	sumo wordnet
+mathematics	square	refine	-	rectangle	wikidata wordnet
+mathematics	triangle	refine	-	polygon	opencyc wordnet
+medicine	pneumonia	refine	-	respiratory-disease	opencyc wordnet
+occupations	congressman	refine	-	legislator	wikidata wordnet
+occupations	economist	refine	-	social-scientist	wikidata wordnet
+occupations	president	refine-cross	-	head-of-state	wikidata wordnet; "the chief executive of a republic"
+physics	electron	refine	-	lepton	opencyc wordnet
+physics	traction	refine-cross	-	friction	wikidata wordnet; "the friction between a body and the surface on which it moves"
+# --- the sugars (Peter's monosaccharide and disaccharide, which core could not use) ---
+chemistry	glucose	refine	-	monosaccharide	a simple sugar
+chemistry	fructose	refine	-	monosaccharide	a simple sugar
+chemistry	lactose	refine	-	disaccharide	milk sugar, glucose and galactose joined

@@ -111,7 +111,7 @@ azathioprine medication
 aztreonam antibacterial antibiotic
 baby-doctor medical-specialist
 bacitracin antibacterial
-bacteriology biology medical-specialty
+bacteriology 'about(bacterium)' biology medical-specialty
 ballistocardiograph instrument
 bandage '*'
 bee-sting event sting
@@ -155,7 +155,7 @@ carcinoma cancer
 carcinoma-in-situ carcinoma
 cardiograph instrument
 cardiologist medical-specialist
-cardiology medical-specialty
+cardiology 'about(heart)' medical-specialty
 cardiomegaly symptom
 carminative medication
 castration operation
@@ -203,8 +203,8 @@ chrysotherapy chemotherapy
 ciprofloxacin antibacterial
 circulatory-shock illness
 client-centered-therapy psychotherapy-treatment
-clinical-psychology psychology
-clinical-sign evidence
+clinical-psychology 'about(mental-disorder)' psychology
+clinical-sign condition
 clinician professional
 clitoridectomy ablation
 clofibrate medication
@@ -221,7 +221,6 @@ communicable-disease disease
 complete-fracture fracture
 compound-fracture fracture
 compression-fracture fracture
-concept '*'
 condition '*'
 confabulation memory
 'conn'"'"'s-syndrome' syndrome
@@ -261,7 +260,7 @@ delirium-tremens psychosis
 dementia insanity
 demulcent medication
 dental-appliance device
-dental-bonding method
+dental-bonding dental-procedure
 dental-crown dental-appliance
 dental-filling dental-appliance
 dental-impression artifact
@@ -270,12 +269,12 @@ dental-procedure procedure
 dental-surgeon dentist
 dental-surgery dentistry
 dentist '*'
-dentistry medical-specialty
+dentistry 'about(tooth)' medical-specialty
 depressed-fracture fracture
 depressive-disorder '*'
 derangement insanity
 dermatologist medical-specialist
-dermatology medical-specialty
+dermatology 'about(skin)' medical-specialty
 dermatome surgical-instrument
 desensitization-technique behavior-therapy
 detector '*'
@@ -321,7 +320,7 @@ dyspnea event symptom
 ear-doctor medical-specialist
 ebola-hemorrhagic-fever hemorrhagic-fever
 ecchymosis injury
-echolalia activity
+echolalia symptom
 electric-burn burn
 electric-shock-injury injury
 electrocautery thermocautery
@@ -341,7 +340,7 @@ emergency-procedure procedure
 endarterectomy ablation
 endemic-disease disease
 endocrinologist internist
-endocrinology biology medical-specialty
+endocrinology 'about(hormone)' biology medical-specialty
 endodontics dentistry
 endodontist dentist
 endometrial-carcinoma carcinoma
@@ -352,7 +351,7 @@ enterostomy operation
 enucleation operation
 eosinopenia symptom
 eosinophilia symptom
-epidemiology medical-specialty
+epidemiology 'about(disease)' medical-specialty
 epikeratophakia keratoplasty
 epithelioma skin-cancer
 equipment '*'
@@ -399,11 +398,11 @@ flea-bite sting
 flight-surgeon medical-officer
 focal-infection condition
 forensic-medicine medical-specialty
-formulary book
+formulary 'about(drug)' book
 foundling-hospital hospital
 fowl-cholera animal-disease blood-poisoning
 fracture '*'
-freudian-psychology concept psychology
+freudian-psychology psychology
 frostbite event injury
 furuncle staphylococcal-infection
 gas-gangrene condition
@@ -419,7 +418,7 @@ general-practitioner doctor
 genetic-disease disease
 gentamicin antibacterial antibiotic
 geriatrics medical-specialty
-germ-theory concept
+germ-theory 'about(disease)' theory
 gerontologist medical-specialist
 giardiasis protozoal-infection
 glycosuria symptom
@@ -433,7 +432,7 @@ group-therapy psychotherapy-treatment
 gulf-war-syndrome syndrome
 gumboil abscess furuncle
 gynecologist medical-specialist
-gynecology medical-specialty
+gynecology 'about(woman)' medical-specialty
 hairline-fracture fracture
 hakim doctor
 hammer '*'
@@ -445,7 +444,7 @@ hebephrenia schizophrenia
 heliotherapy therapy
 hematinic medication
 hematologist internist
-hematology medical-specialty
+hematology 'about(blood)' medical-specialty
 hematuria symptom
 hemoglobinemia symptom
 hemoglobinuria symptom
@@ -492,7 +491,7 @@ hypokalemia event symptom
 hyponatremia event symptom
 hypophysectomy ablation
 hypoproteinemia symptom
-hysterectomy ablation surgery
+hysterectomy ablation
 hysterotomy operation
 ileostomy ostomy
 illness '*'
@@ -500,7 +499,7 @@ immunity condition
 immunochemistry chemistry immunology
 immunofluorescence method
 immunological-incompatibility condition
-immunology biology medical-specialty
+immunology 'about(immunity)' biology medical-specialty
 immunopathology immunology
 immunosuppressant medication
 immunotherapy therapy
@@ -537,11 +536,11 @@ iridotomy eye-operation
 isoproterenol medication
 isosorbide medication
 'jacquemier'"'"'s-sign' symptom
-jactitation attribute symptom
+jactitation symptom
 jaundice clinical-sign event symptom
 jejunostomy operation
 joint-dislocation injury
-jungian-psychology concept psychology
+jungian-psychology psychology
 jungle-fever malaria
 kaliuresis symptom
 kanamycin antibacterial antibiotic chemical
@@ -674,22 +673,22 @@ natural-event '*'
 neomycin antibacterial antibiotic antiseptic
 neonatology pediatrics
 nephrectomy ablation
-nephrology internal-medicine
+nephrology 'about(kidney)' internal-medicine
 nephrotic-syndrome syndrome
 neurectomy ablation
 neurologist medical-specialist
 neurology medical-specialty
 neuroplasty plastic-surgery
-neuropsychiatry medical-specialty
+neuropsychiatry 'about(mental-disorder)' medical-specialty
 neurosarcoma sarcoma
 neurosurgeon surgeon
-neurosurgery operation surgery
+neurosurgery operation
 neutering surgical-sterilization
 noise '*'
 nonsocial-infection condition
 'noonan'"'"'s-syndrome' syndrome
 nosebleed bleeding
-nosology medical-specialty
+nosology 'about(disease)' medical-specialty
 novobiocin antibacterial antibiotic
 nuclear-medicine radiology
 numbness event symptom
@@ -708,7 +707,7 @@ ochronosis clinical-sign symptom
 ointment remedy
 oliguria symptom
 oncologist medical-specialist
-oncology medical-specialty
+oncology 'about(tumor)' medical-specialty
 onychosis disease
 oophorectomy ablation
 oophorosalpingectomy ablation
@@ -716,7 +715,7 @@ open-heart-surgery heart-surgery
 operation '*'
 ophthalmectomy ablation
 ophthalmologist medical-specialist
-ophthalmology medical-specialty
+ophthalmology 'about(eye)' medical-specialty
 ophthalmoscope '*'
 opportunistic-infection condition
 oral-cancer carcinoma
@@ -736,7 +735,7 @@ osteosarcoma sarcoma
 osteotomy operation
 ostomy operation
 otolaryngologist medical-specialist
-otology medical-specialty
+otology 'about(ear)' medical-specialty
 otoplasty plastic-surgery
 over-the-counter-drug medication
 overbite malocclusion
@@ -764,9 +763,9 @@ pathogen-invasion event
 pathological-curvature condition
 pathological-plaque physical-object symptom
 pathological-strangulation condition event
-pathology medicine
+pathology 'about(disease)' medicine
 patient '*'
-pediatrics medical-specialty
+pediatrics 'about(child)' medical-specialty
 pedodontist dentist
 penetrating-trauma injury
 penicillamine medication
@@ -793,8 +792,8 @@ pharmaceutical medication
 pharmacist professional
 pharmacokinetics pharmacology
 pharmacologist scientist
-pharmacology biology medical-specialty
-pharmacy medical-specialty organization place
+pharmacology 'about(drug)' biology medical-specialty
+pharmacy organization place
 phlebectomy operation
 phlebothrombosis disease
 photocoagulation operation
@@ -812,13 +811,13 @@ place '*'
 placebo medication
 plan '*'
 plant-disease disease
-plastic-surgery operation surgery
+plastic-surgery operation
 play-therapy psychotherapy-treatment
 pleomorphic-rhabdomyosarcoma rhabdomyosarcoma
 pneumococcal-vaccine antigen vaccine
 pneumonectomy ablation
-pneumonia '*'
-podiatry medical-specialty
+pneumonia respiratory-disease
+podiatry 'about(foot)' medical-specialty
 poliovirus-vaccine antigen vaccine
 polygraph detector instrument
 polymyxin antibacterial antibiotic
@@ -835,7 +834,7 @@ probenecid medication
 procedure '*'
 process '*'
 proctologist medical-specialist
-proctology medical-specialty
+proctology 'about(colon)' medical-specialty
 proctoplasty plastic-surgery
 proctoscope endoscope
 prodrome symptom
@@ -850,7 +849,7 @@ protein '*'
 proteosome-vaccine antigen vaccine
 protozoal-infection condition
 psychiatrist medical-specialist
-psychiatry medical-specialty
+psychiatry 'about(mental-disorder)' medical-specialty
 psychoanalysis '*'
 psychological-compensation defense-mechanism
 psychological-conversion defense-mechanism
@@ -908,7 +907,7 @@ rhabdomyosarcoma sarcoma
 rheumatism disease
 rheumatologist internist
 rheumatology medical-specialty
-rhinolaryngology medical-specialty
+rhinolaryngology 'about(ear)' 'about(nose)' 'about(throat)' medical-specialty
 rhinoplasty plastic-surgery
 rhinorrhea symptom
 rhinoscope endoscope
@@ -1014,7 +1013,7 @@ surgical-snare surgical-instrument
 surgical-sterilization operation
 surgical-stoma passage
 surgical-taxis operation
-swelling state symptom
+swelling symptom
 sympathectomy ablation
 symptom '*'
 symptomatic-aura symptom
@@ -1067,7 +1066,7 @@ transplant operation
 transplant-recipient person
 transplant-rejection natural-event
 transurethral-resection-of-the-prostate resection
-traumatology medical-specialty
+traumatology 'about(injury)' medical-specialty
 trench-foot frostbite
 trepan surgical-instrument
 trephination operation
@@ -1083,9 +1082,9 @@ ulemorrhagia bleeding
 umbilical-hernia hernia
 upper-respiratory-infection respiratory-tract-infection
 uranoplasty operation
-uratemia condition symptom
+uratemia symptom
 uraturia symptom
-uricaciduria condition symptom
+uricaciduria symptom
 urinalysis procedure
 urologist medical-specialist
 urology medical-specialty
@@ -1097,15 +1096,15 @@ venipuncture activity
 vermicide medication
 vermifuge medication
 veterinarian medical-specialist
-veterinary-medicine medical-specialty
+veterinary-medicine 'about(animal)' medical-specialty
 viomycin antibacterial
 viral-infection condition
 viral-pneumonia pneumonia respiratory-disease viral-infection
-virology biology medical-specialty
+virology 'about(virus)' biology medical-specialty
 visceral-leishmaniasis leishmaniasis
 visiting-nurse nurse
 vitrectomy eye-operation
-vivisection operation
+vivisection procedure
 vulvectomy ablation
 wart skin-disease
 waterhouse-friderichsen-syndrome syndrome
@@ -1131,3 +1130,22 @@ inactivated-vaccine antigen vaccine
 subunit-vaccine antigen vaccine
 mrna-vaccine antigen vaccine
 toxoid antigen vaccine
+animal '*'
+bacterium '*'
+blood '*'
+child '*'
+colon '*'
+ear '*'
+eye '*'
+foot '*'
+heart '*'
+hormone '*'
+kidney '*'
+nose '*'
+skin '*'
+theory '*'
+throat '*'
+tooth '*'
+tumor '*'
+vaccine '*'
+virus '*'

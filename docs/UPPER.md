@@ -1616,3 +1616,22 @@ plain `luck`'s), `period-of-rule`, `mother-nature`, `storyline`,
 `skin-mole`, `vast-quantity`, `grounds`, `upshot` and the rest. **Core now
 carries no automatic collision name at all.** Thirty names out, thirty in,
 union unchanged.
+
+## 16. The 2026-10-16 review — a v14 candidate, unshipped
+
+Every item in core read again against the transitivity rule (an edge is
+wrong if any ancestor it brings in is false of the child), then a closure check
+(`tools/closure.py`) against each source's own entailments: 260 wrong edges
+removed from core, `amount`, `relation` and `part` left at the top level,
+and 153 name traps listed. Peter's rulings of the same day
+(`align/rulings-v14-peter.tsv`) add `carbohydrate` for the chemical sugars,
+move `art` under `practice`, keep the lighting edges, give `bank` to the
+money bank (`river-bank` for the slope) and move `currency` from `artifact`
+to `possession`, under a wider `money`. The closure check on the eleven
+packs (`tools/closure.py --packs`) took 127 more edges out of them. A
+concept pass then re-filed the 313 nodes under `concept` (statements to
+information, mathematical objects to the mathematics pack's
+`mathematical-object`, measures to `amount`, which absorbs `quantity`) and
+dropped `concept`. An about() pass then gave 288 fields of study and kinds of information, in core and every pack, their subject (`cardiology ⊑ about(heart)`; `align/rulings-v14-subjects.tsv`). Packs may now refine core: a refinement row adds a parent from the pack to a core name (`align/rulings-v14-tiers.tsv`, 79 rows, 183 candidates rejected), and merging drops core's then-implied edge. Fourteen general names that packs borrowed from one another were promoted into core (`align/rulings-v14-xhinges.tsv`), so most packs now depend on core alone. Duplicates were merged, each name has one owning pack (others keep refinements), and what packs still borrow from siblings is declared as `USES`, a soft dependency `odag pack` offers. The doubtful list carries Peter's answers. The record is
+`docs/REVIEW_V14.md`; the removed list `align/rulings-v14-removed.tsv` is
+replayed by `tools/step7.py` after consensus, as the v13 rulings are.

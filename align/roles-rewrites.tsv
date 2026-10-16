@@ -14,7 +14,7 @@ economics	payment-channel	lightning-network	rewrite	smart-contract (a channel ne
 economics	payment-channel-network	lightning-network	rewrite	layer-2; and lightning-network ⊑ payment-channel-network	kind
 economics	chunk-storage	swarm-storage	rewrite	in(swarm-storage) content-addressable-storage	in
 economics	postage-batch	swarm-storage	rewrite	in(swarm-storage) prepayment	in
-economics	ethereum-gas	ether	rewrite	about(ethereum) quantity	about
+economics	ethereum-gas	ether	rewrite	about(ethereum) amount	about
 economics	account-abstraction	ethereum	rewrite	about(ethereum) concept	about
 economics	maximal-extractable-value	ethereum	rewrite	about(blockchain) income	about
 economics	bitcoin-halving	bitcoin	rewrite	about(bitcoin) event	about
@@ -23,18 +23,18 @@ economics	blockchain-block	blockchain	rewrite	in(blockchain) data-block	in
 economics	liquidity-pool	automated-market-maker	rewrite	in(automated-market-maker) pooled-fund	in
 economics	staking	proof-of-stake	rewrite	about(proof-of-stake) activity	about
 economics	validator	staking	rewrite	peer-node	kind
-economics	hash-rate	cryptocurrency-mining	rewrite	about(cryptocurrency-mining) quantity	about
-economics	mining-difficulty	cryptocurrency-mining	rewrite	about(cryptocurrency-mining) quantity	about
+economics	hash-rate	cryptocurrency-mining	rewrite	about(cryptocurrency-mining) amount	about
+economics	mining-difficulty	cryptocurrency-mining	rewrite	about(cryptocurrency-mining) amount	about
 economics	difficulty-adjustment	cryptocurrency-mining	rewrite	about(cryptocurrency-mining) rule	about
 economics	block-reward	cryptocurrency-mining	rewrite	about(cryptocurrency-mining) payment-amount	about
 economics	incoterms	sales-contract	rewrite	contract-condition (terms go into contracts; no Incoterm is in a particular one)	kind
 economics	cross-chain	blockchain	rewrite	(drop the name: an adjective with nothing below it)	kind
-economics	reorder-point	inventory-management	rewrite	about(inventory-management) quantity	about
+economics	reorder-point	inventory-management	rewrite	about(inventory-management) amount	about
 economics	layer-2	blockchain	rewrite	communications-protocol	kind
 economics	blockchain-bridge	layer-2	rewrite	decentralized-application	kind
 geography	atmospheric-layer	earth-atmosphere	rewrite	in(atmosphere) layer	in
-geography	earth-sphere	earth-structure	rewrite	in(planet-earth) layer	in
-geography	mohorovicic-discontinuity	earth-structure	rewrite	in(planet-earth) place	in
+geography	earth-sphere	earth-structure	rewrite	in(earth) layer	in
+geography	mohorovicic-discontinuity	earth-structure	rewrite	in(earth) place	in
 geography	air-mass	atmosphere	rewrite	in(atmosphere) atmospheric-state	in
 geography	geographic-line	geographic-point	rewrite	place	kind
 geography	humus	soil	rewrite	in(soil) material	in

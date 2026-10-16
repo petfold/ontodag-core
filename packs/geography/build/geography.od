@@ -6,7 +6,7 @@ achondrite rock
 act '*'
 activity '*'
 adobe-clay clay
-advection motion process
+advection process
 aegean-island island
 aeolian-deflation geological-erosion
 aerial-photography photography
@@ -59,13 +59,13 @@ asia continent
 asthenosphere layer
 astrolabe instrument
 atlantic-ocean ocean
-atlas book
+atlas 'about(place)' book
 atmosphere '*'
 atmospheric-circulation natural-event
 atmospheric-electricity natural-event
 atmospheric-halo natural-event
 atmospheric-layer 'in(atmosphere)' layer
-atmospheric-science earth-science
+atmospheric-science 'about(earth-atmosphere)' earth-science
 atmospheric-state weather
 atoll coral-reef island
 attribute '*'
@@ -73,7 +73,7 @@ aurora natural-event
 aurora-australis aurora
 aurora-borealis aurora
 australian-continent continent
-autumnal-equinox equinox time
+autumnal-equinox '*'
 avalanche natural-event
 axial-tilt angle
 azimuthal-equidistant-projection azimuthal-projection
@@ -81,16 +81,16 @@ azimuthal-projection map-projection
 backwater body-of-water
 bad-weather weather
 balloon '*'
-bank '*'
+river-bank '*'
 barrier-island island
 barrier-reef coral-reef
-bathymetric-chart chart topographic-map
-bathymetry activity hydrography
+bathymetric-chart 'about(ocean-floor)' chart topographic-map
+bathymetry 'about(ocean-floor)' activity hydrography
 bay '*'
 bayou lake
 beach-erosion geological-erosion
 beachfront land
-beaufort-scale measure scale
+beaufort-scale system-of-measurement
 bedrock rock
 beidou global-navigation-satellite-system
 belemnite fossil
@@ -130,14 +130,14 @@ carboniferous geological-period
 caribbean-island island
 cartesian-coordinate-system coordinate-system
 cartogram thematic-map
-cartography engineering geography
+cartography 'about(map)' engineering geography
 cascade waterfall
 cataract waterfall
 cave '*'
 cavern cave
 cavity '*'
 cay coral-reef
-celestial-equator great-circle place
+celestial-equator great-circle
 celestial-horizon place
 celestial-navigation navigation
 cenozoic geological-era
@@ -161,10 +161,10 @@ clay '*'
 clear-air-turbulence turbulence
 cliff '*'
 climate '*'
-climate-classification classification-scheme concept
+climate-classification 'about(climate)' classification-scheme
 climate-oscillation natural-event
 climatic-zone geographical-area
-climatology atmospheric-science meteorology physical-geography
+climatology 'about(climate)' atmospheric-science meteorology physical-geography
 cloud '*'
 cloud-bank cloud
 cloud-ceiling altitude
@@ -182,9 +182,8 @@ cold-weather weather
 collection '*'
 compass instrument
 compass-card magnetic-compass
-compass-point direction spatial-relation
+compass-point spatial-relation
 compass-rose symbol
-concept '*'
 condensation natural-event
 condition '*'
 conformal-projection map-projection
@@ -200,10 +199,10 @@ contour-map map
 contrail cloud
 convection process
 convergent-boundary plate-boundary
-coordinate-system concept
+coordinate-system mathematical-object
 coordinated-universal-time time-standard
 coral-reef reef
-coriolis-force concept force
+coriolis-force '*'
 crack '*'
 crag cliff
 crater natural-depression
@@ -235,11 +234,11 @@ desert-soil soil
 device '*'
 devonian geological-period
 dew condensation
-dew-point quantity temperature
+dew-point temperature
 diapir geological-formation
 dictionary '*'
 differential-gps gnss-augmentation
-digital-elevation-model model
+digital-elevation-model geographic-data
 direct-tide high-tide
 direction '*'
 distance '*'
@@ -269,10 +268,10 @@ earth-magnetic-field natural-event
 earth-mantle layer
 earth-orbit orbit
 earth-outer-core layer
-earth-radius quantity
+earth-radius amount
 earth-rotation natural-event
 earth-science '*'
-earth-sphere 'in(planet-earth)' layer
+earth-sphere 'in(earth)' layer
 earth-structure structure
 earthquake '*'
 east-by-north compass-point spatial-direction
@@ -282,8 +281,8 @@ east-southeast compass-point spatial-direction
 east-wind wind
 eastern-hemisphere hemisphere
 ebbtide tide
-echo-sounding sonar
-ecliptic place
+echo-sounding activity
+ecliptic '*'
 economic-geography geography
 economic-geology geology
 ecoregion region
@@ -304,7 +303,7 @@ equator geographic-line
 equatorial-current ocean-current
 equidistant-projection map-projection
 equilibrium '*'
-equinox natural-event
+equinox '*'
 equirectangular-projection cylindrical-projection equidistant-projection
 erosive-wash streambed
 escarpment landform slope
@@ -360,7 +359,7 @@ function '*'
 gale wind
 galileo-navigation-system global-navigation-satellite-system
 gall-peters-projection cylindrical-projection
-gazetteer dictionary
+gazetteer 'about(place)' dictionary
 gentle-breeze breeze
 geochemistry chemistry geology
 geocode code
@@ -369,9 +368,9 @@ geocoding-system coordinate-system
 geodesy geophysics
 geodetic-datum spatial-reference-system
 geodetic-network collection system
-geographic-coordinate quantity
+geographic-coordinate amount
 geographic-coordinate-system coordinate-system
-geographic-data information
+geographic-data 'about(place)' information
 geographic-data-format file-format information
 geographic-information-system software
 geographic-line place
@@ -400,11 +399,11 @@ geological-time-division time-period
 geological-trough natural-depression
 geology earth-science
 geomagnetic-pole geographic-point
-geomatics engineering
-geomorphology geography geophysics
+geomatics 'about(geographic-data)' engineering
+geomorphology 'about(landform)' geography geophysics
 geonames gazetteer
 geophysics geology physics
-geopotential quantity
+geopotential amount
 geospatial-analysis activity data-processing
 geosphere earth-sphere
 geotagging activity data-processing
@@ -418,7 +417,7 @@ glacial-period geological-time-division
 glacial-till soil
 glaciation geological-process
 glacier '*'
-glaciology hydrology
+glaciology 'about(glacier)' hydrology
 glen valley
 global-navigation-satellite-system satellite-navigation
 global-positioning-system global-navigation-satellite-system
@@ -434,10 +433,10 @@ gps-time time-standard
 grassland biome geographical-area
 gravel '*'
 gravimetry activity
-gravity-anomaly quantity
+gravity-anomaly amount
 great-barrier-reef coral-reef
 great-circle line
-great-circle-distance distance quantity
+great-circle-distance distance amount
 great-rift-valley valley
 greenhouse-effect natural-event
 greenland island
@@ -470,7 +469,7 @@ high-sea body-of-water
 high-tide tide
 high-wind wind
 highland natural-elevation place
-hill '*'
+hill natural-elevation
 hillside slope
 himalayas mountain-range
 hogback ridge
@@ -483,11 +482,11 @@ horse-latitude place
 hot-spring body-of-water natural-spring
 hot-weather weather
 hour-circle place
-humidity quantity
+humidity amount
 humus 'in(soil)' material
 hurricane cyclonic-storm tropical-cyclone
-hydrography geography oceanography
-hydrology geophysics
+hydrography 'about(body-of-water)' geography oceanography
+hydrology 'about(water)' geophysics
 hydrosphere earth-sphere
 hypocenter place
 hypsography geology
@@ -569,13 +568,13 @@ ledge natural-ridge
 leeward-tide tide
 levanter east-wind
 leveling surveying
-lidar instrument remote-sensing
+lidar instrument
 light-air breeze
 light-breeze breeze
 lighthouse building
 lightning atmospheric-electricity
 liman lagoon
-limnology earth-science
+limnology 'about(lake)' earth-science
 line '*'
 line-squall squall
 line-storm rainstorm
@@ -603,7 +602,7 @@ magnetic-meridian meridian
 magnetosphere region
 mainland land
 map '*'
-map-legend document
+map-legend 'about(map)' document
 map-projection function method
 map-scale ratio
 'mare'"'"'s-tail' cirrus
@@ -615,18 +614,18 @@ massif geological-formation landform
 material '*'
 meander curved-shape geographical-feature
 measure '*'
-mercalli-scale measure
+mercalli-scale system-of-measurement
 mercator-projection cylindrical-projection
 meridian great-circle place
 mesa plateau
 mesosphere atmospheric-layer
 mesozoic geological-era
 metamorphic-rock rock-material
-meteor-shower natural-event
+meteor-shower '*'
 meteorology '*'
 method '*'
 microfossil fossil
-micropaleontology paleontology
+micropaleontology 'about(microfossil)' paleontology
 mid-ocean-ridge oceanic-ridge
 mid-water body-of-water
 midnight-sun natural-event
@@ -634,15 +633,15 @@ military-grid-reference-system spatial-reference-system
 mineral '*'
 mineral-seam layer
 mineral-vein geological-formation
-mineralogy geology
+mineralogy 'about(mineral)' geology
 mining-geology economic-geology
 mistral north-wind
 model '*'
 moderate-breeze breeze
 moderate-gale gale
-mohorovicic-discontinuity 'in(planet-earth)' place
+mohorovicic-discontinuity 'in(earth)' place
 mollweide-projection equal-area-projection
-moment-magnitude-scale measure scale
+moment-magnitude-scale system-of-measurement
 monocline geological-formation
 monsoon wind
 monsoon-season rainy-season
@@ -651,7 +650,7 @@ moor habitat plain
 mother-lode lode
 motion '*'
 mount-everest mountain
-mountain '*'
+mountain natural-elevation
 mountain-range '*'
 mountainside slope
 nacreous-cloud cloud
@@ -665,7 +664,7 @@ natural-event '*'
 natural-object '*'
 natural-ridge natural-elevation
 natural-spring '*'
-nautical-chart chart
+nautical-chart 'about(sea)' chart
 naval-chart chart
 navigation activity skill
 navigational-bearing angle
@@ -673,7 +672,7 @@ navigational-system device
 neap-tide tide
 nebule cloud
 neogene geological-period
-nephology meteorology
+nephology 'about(cloud)' meteorology
 neritic-zone geographical-area pelagic-zone
 nile river
 nimbostratus cloud
@@ -702,7 +701,7 @@ oblate-spheroid shape
 'observer'"'"'s-meridian' meridian
 occluded-front weather-front
 ocean '*'
-ocean-current motion
+ocean-current natural-event
 ocean-floor geological-formation waterbody-bed
 ocean-gyre ocean-current
 ocean-swell wave
@@ -710,7 +709,7 @@ oceanfront geological-formation
 oceania geographical-area
 oceanic-ridge geological-formation landform
 oceanic-trench landform natural-depression
-oceanography earth-science
+oceanography 'about(ocean)' earth-science
 offing body-of-water
 omnirange artifact
 open-location-code geocode
@@ -719,7 +718,7 @@ ordovician geological-period
 ore-bed rock-bed
 organization '*'
 orogeny geological-process
-orology geology
+orology 'about(mountain)' geology
 orthographic-projection azimuthal-projection
 orthometric-height altitude
 orthophoto image
@@ -730,20 +729,20 @@ oxbow land
 oxbow-lake lake
 ozone-layer atmospheric-layer
 pacific-ocean ocean
-paleoanthropology vertebrate-paleontology
+paleoanthropology 'about(human)' vertebrate-paleontology
 paleobiology biology paleontology
-paleobotany paleobiology
-paleodendrology paleobotany
+paleobotany 'about(plant)' paleobiology
+paleodendrology 'about(tree)' paleobotany
 paleogene geological-period
 paleogeology geology
-paleomammalogy paleozoology
-paleontology earth-science
-paleornithology paleozoology
+paleomammalogy 'about(mammal)' paleozoology
+paleontology 'about(fossil)' earth-science
+paleornithology 'about(bird)' paleozoology
 paleozoic geological-era
-paleozoology paleobiology
+paleozoology 'about(animal)' paleobiology
 path '*'
 pebble rock
-pedology earth-science
+pedology 'about(soil)' earth-science
 pedosphere earth-sphere
 pelagic-zone body-of-water
 peneplain plain
@@ -753,7 +752,7 @@ permian geological-period
 peruvian-current ocean-current
 petrifaction rock
 petroleum-geology economic-geology
-petrology geology
+petrology 'about(rock)' geology
 phanerozoic eon
 photogrammetry remote-sensing
 photography '*'
@@ -768,10 +767,9 @@ placer alluvial-sediment
 plain land landform
 planation geological-erosion
 planet '*'
-planet-earth planet
 plat-map map
 plate-boundary geological-formation
-plate-tectonics concept theory
+plate-tectonics 'about(lithosphere)' theory
 plateau highland landform
 pleistocene epoch
 podzol soil
@@ -794,17 +792,17 @@ precipitation weather
 prevailing-westerly west-wind
 prevailing-wind wind
 prime-meridian meridian
-principle-of-superposition scientific-principle
+principle-of-superposition 'about(stratum)' scientific-principle
 process '*'
 prognosis '*'
 promontory landform natural-elevation
 proterozoic eon
 publication '*'
-quantity '*'
+amount '*'
 quaternary geological-period
 quicksand cavity
 radar instrument tool
-rain '*'
+rain precipitation
 rain-wash washout
 rainstorm rain storm
 rainy-season season
@@ -824,7 +822,7 @@ remote-sensing activity
 residual-soil soil
 reverse-geocoding geocoding
 rhumb-line line
-richter-magnitude-scale measure scale
+richter-magnitude-scale system-of-measurement
 ridge '*'
 rift-valley valley
 rill water-channel
@@ -836,10 +834,9 @@ river-boulder boulder
 river-delta alluvial-sediment plain river-mouth
 river-mouth geographic-point geological-formation
 river-source geographic-point stream
-riverbank bank landform shore
 riverbed waterbody-bed
 rivulet stream
-road-map map
+road-map 'about(road)' map
 robinson-projection map-projection
 rock '*'
 rock-bed layer
@@ -870,11 +867,11 @@ scientific-principle '*'
 sea-breeze breeze
 sea-cove inlet
 sea-ice ice-mass
-sea-level quantity vertical-datum
+sea-level amount vertical-datum
 sea-sound inlet
 seamount mountain natural-elevation
 seaquake earthquake
-seashore '*'
+seashore shore
 seaside seashore
 season '*'
 sediment '*'
@@ -886,7 +883,7 @@ seiche wave
 seif-dune dune
 seismic-disturbance earthquake
 seismic-wave wave
-seismology geophysics
+seismology 'about(earthquake)' geophysics
 seismometer instrument
 sextant instrument
 shallows body-of-water
@@ -896,8 +893,8 @@ shingling rock-material
 shoal landform sandbank
 shore geological-formation
 shore-boulder boulder
-sidereal-day day
-sidereal-time time-standard
+sidereal-day '*'
+sidereal-time '*'
 silt sediment soil
 silurian geological-period
 simoom wind
@@ -909,7 +906,7 @@ skill '*'
 slack-water tide
 sleet precipitation
 slope '*'
-snow '*'
+snow precipitation
 snowfield plain
 software '*'
 soil '*'
@@ -918,7 +915,7 @@ soil-horizon layer
 solar-calendar calendar
 solar-halo atmospheric-halo
 solar-time time-standard
-solstice natural-event
+solstice '*'
 sonar instrument
 sonic-depth-finder depth-finder
 sound '*'
@@ -941,18 +938,18 @@ southwest compass-point spatial-direction
 southwest-by-south compass-point spatial-direction
 southwest-by-west compass-point spatial-direction
 southwester wind
-spatial-database database information
+spatial-database 'about(place)' database information
 spatial-direction '*'
 spatial-reference-system coordinate-system
 spatial-relation '*'
-speleology geology
+speleology 'about(cave)' geology
 spherical-coordinate-system coordinate-system
 spring-tide high-tide
 sprite-lightning atmospheric-electricity
 squall wind
 squall-line cold-front
 standard '*'
-star-chart map
+star-chart '*'
 steppe grassland plain
 stereographic-projection azimuthal-projection
 storm '*'
@@ -960,7 +957,7 @@ storm-cloud cloud
 storm-surge flood
 strait landform water-channel
 stratigraphic-superposition accretion
-stratigraphy geology
+stratigraphy 'about(stratum)' geology
 stratosphere atmospheric-layer
 stratum layer
 stratus cloud
@@ -974,7 +971,7 @@ subduction geological-process
 subsoil soil
 substance '*'
 subtropics climatic-zone
-summer-solstice solstice time
+summer-solstice '*'
 sunset natural-event
 supercontinent continent landmass
 supertwister tornado
@@ -991,14 +988,14 @@ talus geological-formation gravel
 tar-pit cavity landform
 tarn lake
 tectonic-plate geographical-feature geological-formation
-tectonics geology
+tectonics 'about(earth-crust)' geology
 temperate-climate climate
 temperate-zone climatic-zone
 temperature '*'
 temperature-inversion natural-event
 terrace plateau
 terrain geographical-feature
-terrestrial-globe map model
+terrestrial-globe model
 territorial-waters body-of-water
 thaw weather
 thematic-map map
@@ -1006,29 +1003,29 @@ theory '*'
 thermal-updraft convection wind
 thermohaline-circulation ocean-current
 thermosphere atmospheric-layer
-thunder sound
+thunder natural-event
 thunderhead cumulus
 thundershower rainstorm
 thunderstorm storm weather
 tidal-basin natural-basin
 tidal-bore tidal-flow wave
 tidal-flow event
-tidal-range quantity
+tidal-range amount
 tidal-river stream
 tide '*'
 tide-gauge instrument
-tide-table document
+tide-table 'about(tide)' document
 tideland seashore shore
 tidewater coastal-plain
 tideway water-channel
 time '*'
 time-period '*'
-time-standard standard
+time-standard '*'
 time-zone geographical-area
 tool '*'
-topographic-map map
-topography physical-geography
-toponymy geography
+topographic-map 'about(terrain)' map
+topography 'about(terrain)' physical-geography
+toponymy 'about(place-name)' geography
 topsoil soil
 tor-hill hill outcrop
 tor-rock rock
@@ -1040,7 +1037,7 @@ tramontane north-wind
 transform-fault geological-fault plate-boundary
 transit-zone geographical-area
 transverse-mercator-projection cylindrical-projection
-travel-distance distance quantity
+travel-distance distance amount
 travel-route path
 tremor earthquake
 triangulation surveying
@@ -1074,8 +1071,8 @@ upwelling ocean-current
 utm-coordinate-system spatial-reference-system
 valley '*'
 veld grassland
-vernal-equinox equinox time
-vertebrate-paleontology paleozoology
+vernal-equinox '*'
+vertebrate-paleontology 'about(vertebrate)' paleozoology
 vertical-circle place
 vertical-datum geodetic-datum
 vincenty-formulae formula
@@ -1084,7 +1081,7 @@ visual-range attribute
 volcanic-crater geological-formation place
 volcanic-eruption event
 volcanism geological-phenomenon
-volcanology geophysics
+volcanology 'about(volcano)' geophysics
 wadi gully
 wall-rock rock
 warm-front weather-front
@@ -1102,16 +1099,16 @@ waterside land
 waterspout tornado
 waterway body-of-water
 wave '*'
-wave-height quantity
+wave-height amount
 waypoint geographic-point
 weather '*'
 weather-balloon aircraft balloon
-weather-forecast prognosis
-weather-forecasting information
+weather-forecast 'about(weather)' prognosis
+weather-forecasting 'about(weather)' information
 weather-front '*'
-weather-map map
+weather-map 'about(weather)' map
 weather-radar radar
-weather-satellite satellite
+weather-satellite '*'
 weather-station facility
 weathering geological-process
 web-map map
@@ -1134,11 +1131,46 @@ whole-gale gale
 wide-area-augmentation-system gnss-augmentation
 wiesenboden soil
 wind '*'
-wind-rose artifact weather-map
+wind-rose weather-map
 windstorm storm
 winkel-tripel-projection map-projection
-winter-solstice solstice time
+winter-solstice '*'
 world-geodetic-system geodetic-datum
 wormcast fossil
 xenolith rock
 year '*'
+battlefield geographical-area
+cemetery geographical-area
+colony geographical-area
+dig geographical-area
+field geographical-area
+lot geographical-area
+park geographical-area
+playing-field geographical-area
+plot geographical-area
+public-square geographical-area
+range geographical-area
+rural-area geographical-area
+settlement geographical-area
+sphere-of-influence geographical-area
+territory geographical-area
+wilderness geographical-area
+yard geographical-area
+hayfield grassland
+pasture grassland
+marsh wetland
+sandstone sedimentary-rock
+cardinal-compass-point compass-point
+animal '*'
+bird '*'
+earth '*'
+human '*'
+mammal '*'
+mathematical-object '*'
+plant '*'
+road '*'
+sea '*'
+system-of-measurement '*'
+tree '*'
+vertebrate '*'
+volcano '*'

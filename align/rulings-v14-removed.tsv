@@ -1,0 +1,821 @@
+# The removed list: core review of 2026-10-16 (Claude, at Peter's request), applied by tools/step7.py after consensus.
+# Every item in core was read with its gloss and its full ancestor set: under the transitivity policy, X ⊑ Y and Y ⊑ Z
+# say every X is a Z, so an edge is wrong if any ancestor it brings in is false of the child.
+# Clearly wrong edges are removed here; borderline ones are in align/doubtful-v14.tsv (at most 200).
+# action: cut = drop the edge sub ⊑ old, the node keeps its other parents;
+#         move = drop the edge to old and add new (used when old was the only parent: new is a true ancestor, so nothing new is claimed);
+#         drop = remove the node (its children are moved first, by rows above it).
+pack	sub	action	old	new	note
+# --- batch 1 (sheet 0000-0249: agent — drugs, organizations, persons) ---
+core	cigar	cut	device		a roll of tobacco is not an instrumentality invented for a purpose
+core	cigar	cut	material		a cigar is not a material (the substance a physical object is made of); it stays under tobacco
+core	cigarette	cut	device		tobacco wrapped in paper is not an instrumentality; it stays under tobacco
+core	alliance	cut	relation		the node joined WordNet's bond sense (13792183) with Wikidata's and YAGO's organization of allies; a bond is not a group of people, and the name reads as the organization (NATO is an alliance)
+core	conspiracy	cut	organization		a conspiracy is a plot (WordNet 05908882, kept under secret-plan); the people in it are the cabal, not the plot
+core	empire	cut	monarchy		since v13 monarchy is the political system; the Roman Empire is a state (kept under organization), not a system of government
+core	government-cabinet	move	board-of-directors	committee	a cabinet is a committee, but not a board of directors (the name WordNet's "board" was given)
+core	fleet	move	organization	group	a fleet is a group of ships (or vehicles), not a group of people who work together
+core	aviation	move	organization	industry	the operation of aircraft to provide transportation is an activity; WordNet files it under industry, which core holds as the commercial activity
+core	host	move	adult	person	a child who hosts a party is a host
+core	girlfriend	move	woman	person	the gloss says "a girl or young woman"; woman is adult
+core	princess	cut	leader		a princess (a daughter of a sovereign) rules or guides no one by being one
+core	princess	move	woman	person	a princess can be a child (woman is adult)
+core	defendant	move	person	agent	the gloss says "a person or institution"; a company can be sued
+core	poser	move	assistant	human worker	a person who poses for a painter is not an assistant (WordNet's model ⊑ assistant)
+core	mannequin	move	assistant	human worker	a fashion model is not an assistant
+core	hunter	cut	worker		most hunters hunt for sport; a worker works at an occupation (kept under human)
+core	insider	move	administrator	person	the gloss says "an officer of a corporation or others"; a large shareholder or an employee can be an insider
+core	adviser	move	authority	expert	an adviser gives advice; authority is "an expert whose views are taken as definitive"
+# --- batch 2 (sheet 0250-0499: persons, relatives, workers; attributes to right) ---
+core	prince	move	leader	person	a male member of a royal family other than the sovereign rules or guides no one by being one; princes can be children
+core	duke	move	leader	person	a duke holds a title; leader is "a person who rules or guides or inspires others" (WordNet's aristocrat ⊑ leader)
+core	employer	move	leader	agent	the gloss says "a person or firm that employs workers"; employing someone does not make one a leader
+core	manufacturer	move	person	agent	manufacturers are mostly firms; the name reads as the business
+core	retailer	move	merchant	agent	a retailer is mostly a firm; merchant is "a businessperson"
+core	seller	move	merchant	agent	anyone who sells something is a seller; merchant is "a businessperson engaged in retail trade"
+core	plaintiff	move	person	agent	a company can bring an action (as defendant, batch 1)
+core	trustee	move	person	agent	the gloss says "a person (or institution)"
+core	detective	move	policeman	person	private detectives are detectives; the name reads wider than WordNet's police-detective synset
+core	member	move	peer	person	WordNet's member ⊑ associate ⊑ peer: a member of a group is not thereby of equal standing with another
+core	participant	move	peer	person	someone who takes part in an activity is not thereby of equal standing (via WordNet's associate ⊑ peer)
+core	stunt-man	move	peer	person	a stand-in for a movie star is not of equal standing with him (via WordNet's associate ⊑ peer)
+core	surrogate	move	peer	person	someone who takes the place of another is not thereby of equal standing (via WordNet's associate ⊑ peer)
+core	parent	move	ancestor	relative	the gloss includes "one who nurtures and raises a child; a relative who plays the role of guardian": an adoptive parent is not an ancestor
+core	middleman	move	representative	person	the gloss is "a person who is in a position to give you special assistance" (a contact), who represents no one
+core	alumnus	move	scholar	person	a high-school graduate is an alumnus; scholar is "a learned person ... who by long study has gained mastery"
+core	cook	move	worker	person	"someone who cooks food": most cooks cook at home, not at an occupation
+core	pilot	move	worker	person	"someone who is licensed to operate an aircraft": private pilots fly for pleasure
+core	veteran	move	worker	person	most veterans are former servicemen, no longer at the occupation
+core	credibility	cut	probability		believability is a quality, not a probability (kept under attribute)
+# --- batch 3 (sheet 0500-0749: attributes, shapes, states, conditions, feelings) ---
+core	consensus	cut	event		a consensus is a state of agreement (kept under agreement); reaching one is an event, the consensus is not
+core	syndrome	cut	symptom		a syndrome is "a pattern of symptoms", not itself a symptom (kept under disease)
+core	failure	move	destiny	state	"lack of success": an engine failure or a crop failure is not anyone's overall circumstances in life
+core	disappointment	move	desire	feeling	disappointment is dissatisfaction when expectations fail, not a desire
+# --- batch 4 (sheet 0750-0999: states, traits, cognition, concept, quantity, amount) ---
+core	rhythm	move	time	attribute	WordNet's rhythm is the musical meter ("time, meter"), not the continuum of experience that core's time is
+core	privacy	move	disposition	attribute	being secluded from the view of others is not a usual mood or temperament
+core	fault	move	trait	attribute	"responsibility for a bad situation" ("it was John's fault") is not a feature of anyone's personal nature
+core	mark	move	appraisal	cognition	a grade (B+) is not an act of appraisal; appraisal is also an event, and a grade is not one
+core	symptom	move	evidence	condition	a fever or nausea is a bodily condition; it serves as evidence of disease, but it is not information (evidence ⊑ information)
+core	nausea	cut	event		"the state that precedes vomiting" is a state, not a happening (kept under symptom)
+core	beginning	move	concept	part	"the first part or section of something" is a part (WordNet: beginning ⊑ part), not an abstract idea
+core	middle	move	concept	part	"an intermediate part or section" is a part, not an abstract idea
+core	principle	move	natural-law	proposition	(target concept until the concept pass) the principles of democracy or of physics are not "rules of conduct inherent in human nature"
+# The amount branch. v11 hung WordNet's measure/quantity/amount (00033615) under core's quantity, which is a different
+# synset, "the concept that something has a magnitude" (UPPER.md §15.2), so through concept ⊑ idea ⊑ cognition every
+# amount became a cognition: an afternoon, a century, a coin, a teardrop, a morsel of food. WordNet holds measure as a
+# top-level abstraction, beside relation and attribute; with the edge removed amount is a top-level branch again
+# (as v13 made group one; see align/doubtful-v14.tsv).
+core	amount	move	concept	*	(was: move quantity → *; quantity is merged into amount by renames-step7.tsv, which hands amount quantity's concept edge) an amount (how much there is of something) is not a concept; an afternoon or a cup of sugar is not an idea
+core	clock-time	move	cognition	time	"ten o'clock" is a point in time, not a cognition (WordNet's clock time ⊑ reading ⊑ datum); dawn, midnight and twilight inherited cognition
+core	commencement	move	amount	time	"the time at which something is supposed to begin" is a point in time, not an amount
+core	deadline	move	amount	time	"the point in time at which something must be completed" is not an amount
+core	occasion	move	amount	time	"the time of a particular event" is a point in time, not an amount
+core	currency	cut	standard		"the metal or paper medium of exchange" is not a basis for comparison, nor (through system-of-measurement) an amount; kept under artifact
+core	coin	cut	information		a flat metal disc used as money is not information
+core	fund	move	standard	possession	"a reserve of money set aside for some purpose" is owned, not a standard (WordNet's fund ⊑ money ⊑ standard)
+# --- batch 5 (sheet 1000-1249: time periods, quantity, relation, cognition, first acts) ---
+core	deadline-extension	move	pause	time-period	extra time agreed for a loan or a job is not "a temporary cessation of something"
+# The relation branch, as the amount branch: v11 hung WordNet's relation (00031921) under concept, so kinship, ownership,
+# north and a parking space became ideas, and through part ⊑ relation so did blood and fur. WordNet holds relation as a
+# top-level abstraction; with the edge removed relation is a top-level branch again (align/doubtful-v14.tsv).
+core	relation	move	concept	*	"an abstraction belonging to two entities together" (kinship, ownership, north) is not a psychological result of perception and reasoning
+core	part	move	relation	*	"something determined in relation to something that includes it": a component or a portion is a thing, not a relation; nothing in core is true of every part (the beginning of a story, a detail, a residue), so part stands alone
+core	blood	cut	part		blood is a substance (kept), not a relation (via part ⊑ relation)
+core	fur	cut	part		the dressed coat of a mammal is a material (kept under animal-product), not a relation
+core	language-unit	move	part	information	a word, a syllable or a name is something communicated (core's information is WordNet's communication); name and noun already had information
+core	terminology	move	word	information	"a system of words used to name things in a particular discipline" is not a word
+core	parking	move	spatial-relation	place	"space in which vehicles can be parked" is an area, not a spatial relation
+core	option	cut	contract		core's option is the choice ("one of a number of things from which only one can be chosen"), and default-option and possibility inherited legal-document; the financial option is the economics pack's option-finance and core's purchase-option
+core	upper-limit	move	argumentation	restriction	a price cap or a salary ceiling is a restriction, not a course of reasoning
+core	intervention	move	argumentation	plan	"a policy of intervening in the affairs of other countries" is a plan of action, not a course of reasoning
+core	acquisition	cut	event		"something acquired" (a museum's recent acquisition) is a possession (kept), not a happening; gifts, prizes and grants inherited event
+core	spontaneous-abortion	move	abortion	event	a miscarriage is "a natural loss", not "something that people do" (abortion ⊑ act)
+core	course-credit	move	accomplishment	acknowledgment	"recognition by a college ... that a course has been completed" is a recognition, not an act
+# --- batch 6 (sheet 1250-1499: games, journeys, meetings, occupations, services, acts) ---
+core	game	cut	information		"a contest with rules to determine a winner" is an activity (kept); schema.org's, Cyc's and YAGO's Game is the designed product, a creative work; through game, tennis and the marathon were information
+core	hunt	move	sport	activity	hunting has no competition (sport is "an active diversion requiring physical exertion and competition", and through game "a contest with rules to determine a winner")
+core	appointment	cut	information		"the job to which you are appointed" is an occupation (kept), not information
+core	teaching	cut	profession		lecture, lesson, piano-lesson and tutoring are teaching, and are not occupations; teaching stays under education
+core	play	cut	information		children's play ("activity guided more by imagination than by fixed rules") is not a creative work; schema.org's and YAGO's play is the theatrical play
+core	review	cut	information		the brushup ("practice intended to polish performance or refresh the memory") is not a written review
+core	exercise	move	labor	activity	exercise to keep fit is not "productive work done for wages", nor (labor ⊑ service) work that benefits another
+core	struggle	move	labor	activity	"the struggle to get through the crowd" is not productive work done for wages
+core	care	move	repair	service	maintenance keeps a thing in working order; repair puts it "in working order again" (washing a car is car care, not repair); flagged since v7
+core	refreshment	move	restoration	activity	recreation by the pool is not restoring something to a satisfactory state, nor (restoration ⊑ repair) a repair
+core	recompense	move	correction	act	paying for a service is not correcting a mistake
+core	course	cut	information		"a mode of action" (a course of action) is not information; schema.org's and YAGO's Course is the educational course
+core	alteration	move	service	change	"the act of making something different" is a change (WordNet: alteration ⊑ change); altering one's own plans is no service to another
+core	telephony	move	artifact	communication	"transmitting speech at a distance" is communication, not an artifact; phone-call inherited artifact through it
+# --- batch 7 (sheet 1500-1749: acts, transactions, events, natural phenomena) ---
+core	contraction	move	diminution	event	a muscle contraction is a bodily event, not "something that people do" (diminution ⊑ act)
+core	invitation	cut	letter		"a request (spoken or written)": a spoken invitation is not a letter (kept under act)
+core	amendment	cut	event		"a statement that is added to or revises a proposal or document" is a text (kept under information), not a happening
+core	introduction	cut	event		"the first section of a communication" is a text (kept under information), not a happening
+core	crop	move	industry	output	"the yield from plants in a single growing season" is not an industry (UPPER.md §15.2 already threw this edge out once)
+core	gardening	move	farming	activity	"the cultivation of plants": a home garden is not a commercial enterprise (farming ⊑ industry ⊑ commercial-enterprise)
+core	factor	move	event	agent	"anything that contributes causally to a result" is core's agent ("any entity that produces an effect"); age or price is a factor and not an event; parameter inherited event
+core	calling-card	move	greeting	information	"a printed or written greeting that is left" is a card, not an act of greeting (greeting ⊑ event)
+# natural-event is WordNet's natural_phenomenon under core's event ("something that happens at a given place and time");
+# the phenomena that are things, quantities, forces or states move to a parent that is true of them.
+core	cloud	move	natural-event	natural-object	"a visible mass of water or ice particles" is a natural object, not a happening; fog and mist follow
+core	smoke	move	natural-event	substance	"a cloud of fine particles suspended in a gas" is matter, not a happening
+core	pressure	move	natural-event	attribute	"the force applied to a unit area" is a physical quantity (the registry has a pressure family; core could declare it a head, as force)
+core	electric-charge	move	natural-event	attribute	"the quantity of unbalanced electricity in a body" is a physical quantity (the registry's charge family), not a happening
+core	attractive-force	move	natural-event	force	"the force by which one object attracts another" is a force (gravity follows); as impetus ⊑ force
+core	reaction	move	natural-event	force	"the equal and opposite force that is produced when any force is applied" is a force
+core	traction	move	natural-event	force	"the friction between a body and the surface on which it moves" is a force
+core	state-of-matter	move	natural-event	state	solid, liquid and gas are states, not happenings
+core	sunlight	cut	light		core's light is "any device serving as a source of illumination" (a lamp); sunlight is not a device or an artifact (kept under natural-event)
+# --- batch 8 (sheet 1750-1999: processes, shows, fields of study, group, information) ---
+core	economic-consumption	move	market-demand	process	using up goods ("the consumption of energy has increased") is not "the ability and desire to purchase"
+core	serial	cut	text		"a serialized set of programs; a comedy series" is a broadcast programme (kept), not a text
+# recording is WordNet's "storage device on which information has been recorded" (the disc, the tape). Audio and video
+# are the content (CORE.md: one reading; a document is information only), so a podcast and a film were devices.
+core	audio	cut	recording		a podcast, a music recording or a voice message is content (kept under information), not a storage device
+core	video	cut	recording		a video, and through it a film, is content (kept under information), not a storage device
+core	phonograph-recording	move	audio	recording	"a disk with a continuous groove" is the storage medium itself, beside cd and tape-recording
+core	right-wing	move	clique	group	"those who support political conservatism" are not "an exclusive circle of people"
+core	collection	cut	information		"several things grouped together": a pile, a galaxy or a bunch of trees is not information (schema.org's and YAGO's Collection is a collection of creative works)
+core	kingdom	move	monarchy	country	since v13 monarchy is the political system; a kingdom is a state with a king or queen, as empire (batch 1)
+core	bible	cut	artifact		"the sacred writings of the Christian religions" is a text (kept under information); CORE.md: a document is information only, though a printed copy is an artifact
+core	consultation	move	information	discussion	"a conference between two or more people to consider a particular question" is a discussion, not something communicated
+# --- batch 9 (sheet 2000-2249: documents, images, lists, symbols, signals) ---
+# CORE.md: "a document is information only, never also an artifact, though a paper letter is one". SUMO's and Cyc's
+# artifact edges on texts, images and tickets came back with later layers; a photo file or an e-ticket is no physical object.
+core	diary	cut	artifact		a written record is information only (CORE.md); kept under information
+core	appraisal-report	cut	artifact		a document is information only (CORE.md); kept under document
+core	article	cut	physical-object		nonfictional prose is information only (CORE.md); kept under document and text
+core	scholarly-paper	cut	artifact		a scholarly article is information only (CORE.md); kept under article
+core	charter	cut	artifact		a document is information only (CORE.md); kept under document
+core	will	cut	artifact		a document is information only (CORE.md); kept under legal-document
+core	chart	cut	physical-object		a navigation map is information only, as map is (Peter: document, image); kept under map
+core	letter	cut	physical-object		CORE.md's own example: information only, though a paper letter is one; an emailed letter is a letter
+core	short-letter	cut	artifact		a note to a friend is information only; kept under letter
+core	bus-ticket	cut	artifact		an e-ticket is a bus ticket; a ticket is a document (kept under transport-ticket)
+core	train-ticket	cut	artifact		an e-ticket is a train ticket; kept under transport-ticket
+core	photograph	cut	physical-object		a photo file is a photograph; core's image branch is information only (as drawing, portrait)
+core	illustration	cut	artifact		a picture or diagram that illustrates is information only; kept under image
+core	diagram	cut	artifact		a drawing that explains how something works is information only; kept under image
+core	shot	cut	artifact		"a consecutive series of pictures that constitutes a unit of action in a film" is a part of a film, not an artifact
+core	shot	move	photograph	video	a series of pictures in a film is not a photograph; it is a stretch of video
+core	copyright	move	document	title	copyright is the exclusive right itself ("an established or recognized right"), not a document
+core	negotiation	move	information	discussion	"a discussion intended to produce an agreement" is a discussion (as consultation, batch 8), not something communicated
+core	chord	move	musical-note	information	"a combination of three or more notes" is not a note
+core	logarithm	move	information	numeric-quantity	"the exponent required to produce a given number" is a number, not something communicated
+core	file	move	indication	information	a data file is not "something that serves to indicate or suggest"; it is information (directory, computer-file and computer-font follow)
+core	phone-number	move	signal	information	a phone number is not "a nonverbal action or gesture that encodes a message"
+core	marker-post	move	signal	artifact	"a pole or stake set up to mark something" is a made thing, not an action or gesture
+core	postage	move	token	symbol	a postage stamp is not "an individual instance of a type of symbol" (the r's in "error"); it stays a symbol
+core	target	cut	reference-point		an archery target (kept under sporting-goods and device) is not a signal (reference-point ⊑ signal ⊑ information)
+core	signboard	cut	information		"structure displaying a board on which advertisements can be posted" is a structure (kept); what is posted on it is information
+core	display-board	cut	video-display		a notice board is not an electronic video display (kept under signboard)
+# --- batch 10 (sheet 2250-2499: texts; artifacts, building materials, clothing) ---
+core	clipping	cut	artifact		an excerpt cut from a newspaper is information only (CORE.md); kept under excerpt
+core	caption	move	section-title	text	a caption beneath an illustration is not a heading for a section of a written work
+core	sketch	cut	artifact		WordNet's sense is "a short descriptive summary (of events)", not a drawing; kept under summary
+core	wallpaper	cut	information		"a decorative paper for the walls of rooms" is not information (the desktop image is another sense); kept under decor and paper
+core	hardboard	cut	plank		"a material made from wood chips that are pressed together" is not "a stout length of sawn timber"; kept under fiberboard
+core	fingerboard	move	lumber	artifact	the strip on the neck of a violin or guitar is not building timber
+core	millstone	move	building-material	artifact	a millstone grinds grain; it is not material for constructing buildings
+core	grout	move	plaster	mortar	"a thin mortar that can be poured": since v9 mortar is the building mortar, which grout is; it is not plaster
+core	roofing	cut	equipment		"material used to construct a roof" is a material, not equipment (kept under building-material)
+core	channel	move	artifact	information	"a television station and its programs" is not a man-made physical object
+core	barrette	cut	clothing		a hair clip is not "a covering designed to be worn on a person's body" (kept under fastener)
+core	cufflink	cut	clothing		cufflinks are jewelry (kept), not a covering worn on the body
+core	ski-boot	cut	shoe		shoe is "footwear shaped to fit the foot (below the ankle)"; a ski boot covers the ankle (kept under boot)
+core	laundry	move	garment	artifact	"garments or white goods that can be cleaned by laundering": sheets and towels in the wash are not garments
+core	ribbon	move	clothing	artifact	"a narrow strip of fine material used for trimming" is not clothing
+core	wrap	move	clothing	artifact	"the covering (usually paper or cellophane) in which something is wrapped" is not clothing; plastic wrap and gift wrapping inherited it (Cyc's and Wikidata's wrap is the garment)
+# --- batch 11 (sheet 2500-2749: coatings, conduits, containers, vehicles, decorations, devices) ---
+core	inner-tube	move	tubing	artifact	an inflatable ring inside a tyre conducts nothing (tubing ⊑ conduit, "a passage through which water or electric wires can pass")
+core	test-tube	cut	tubing		a tube closed at one end is a vessel, not a passage (kept under device)
+core	short-circuit	move	connector	event	"accidental contact between two points in an electric circuit" is a fault that happens, not a man-made connector
+core	bundle	move	container	collection	"a package of several things tied together" (a bundle of sticks) is a collection, as package is, not a container
+core	mixing-bowl	cut	serving-bowl		a bowl used with an electric mixer is not for serving food (kept under bowl)
+# CORE.md records that the review rejected "WordNet's wheeled-vehicle ⊑ container chain"; Cyc's half of it returned.
+core	motor-vehicle	cut	container		CORE.md: WordNet's wheeled-vehicle ⊑ container chain was rejected; a car is a vehicle (kept)
+core	motor-scooter	cut	container		as motor-vehicle; kept under vehicle
+core	tractor	cut	container		as motor-vehicle; a tractor holds nothing; kept under vehicle
+core	trailer	cut	container		as motor-vehicle; kept under vehicle
+core	wagon	cut	container		as motor-vehicle; kept under vehicle
+core	wheelbarrow	cut	container		as motor-vehicle; kept under handcart
+core	aquarium	cut	place		WordNet's sense is the tank ("a tank or pool or bowl filled with water for keeping live fish"); schema.org's and YAGO's Aquarium is the public institution
+core	finial	move	decor	decoration	"an ornament at the top of a spire or gable" is architecture, not the furnishings of an interior
+core	parasol	move	shade	canopy	"a handheld collapsible source of shade" is a canopy, as umbrella is, not interior decor (shade ⊑ decor)
+core	jewel	cut	mineral		pearl, amber and coral are gems and not minerals (pearl is under jewel); kept under jewelry
+core	design	move	artifact	image	"a preliminary sketch indicating the plan for something" is a drawing; core's images are information only (as diagram, batch 9)
+# --- batch 12 (sheet 2750-2999: appliances, devices, components, ingredients, fasteners, instruments) ---
+core	furnace	cut	household-appliance		the gloss includes furnaces that "smelt or refine ores"; a blast furnace is not a household appliance (kept under enclosure)
+core	cooler	move	refrigerator	container	an ice chest is an unpowered box, not an appliance (refrigerator ⊑ kitchen-appliance)
+core	wardrobe	cut	furniture		the node is WordNet's "collection of clothing belonging to one person" (kept under collection); the furniture is core's closet ({wardrobe, closet, press})
+core	ingredient	move	component	substance	"a component of a mixture or compound": component is "an artifact that is one of the parts of a composite entity" and is under device, so honey, sugar, lard, yeast and vinegar were man-made devices
+core	annex	move	addition	structure	"an addition that extends a main building" is a structure, not a device (addition ⊑ component ⊑ device)
+core	chute	move	gutter	device	"a sloping channel through which things can descend" is not a rain gutter along the eaves
+# --- batch 13 (sheet 3000-3249: instruments, weapons, lights, machines, vehicles, mechanisms) ---
+core	spectrometer	move	optical-instrument	instrument	a mass spectrometer deflects ions; it is not "an instrument designed to aid vision"
+core	torpedo	move	projectile	weapon	projectile is "a weapon ... thrown or projected ... but is not self-propelled"; a torpedo is self-propelled
+core	light-bulb	move	lamp	light	core's lamp is "a piece of furniture holding one or more electric light bulbs"; the bulb is a source of illumination, not furniture
+core	locker	cut	room		a storage compartment for clothes is not a room of a building (kept under furniture and device)
+core	generator	move	engine	machine	a generator turns mechanical energy into electrical; engine is "motor that converts thermal energy to mechanical work"
+core	planner	move	machine	notebook	"a notebook for recording appointments" is not a machine (WordNet's notebook-computer sense leaking in; UPPER.md §15.2 caught planner ⊑ notebook-computer once)
+core	saw	move	hand-tool	tool	band, jig, reciprocating and table saws are saws and are not hand tools; saw is widened to tool, and the hand saw keeps hand-tool (next row)
+core	hand-saw	parent+		hand-tool	the hand saw is a hand tool (it was one through saw before saw was widened)
+core	ax-head	move	mechanism	device	"the cutting head of an ax" has no moving parts (mechanism: "has moving parts that perform some function")
+core	axis	move	mechanism	device	"the center around which something rotates" has no moving parts
+core	ramp	move	mechanism	structure	"an inclined surface connecting two levels" is a structure, not machinery with moving parts
+# --- batch 14 (sheet 3250-3499: musical instruments, devices, supports, tools, utensils) ---
+core	spermicide	move	device	agent substance	"a contraceptive agent that kills spermatozoa" is a chemical agent, as antacid and disinfectant are, not a device
+core	blade	move	tool	artifact	"the flat part of a tool or weapon that has a cutting edge" is a part of a tool, not a tool (ROLES.md: parts are not kinds of their whole)
+# --- batch 15 (sheet 3500-3749: devices, equipment, fabrics, facilities, furniture, artifacts) ---
+core	photographic-film	move	photographic-paper	photographic-equipment	film is "a base of celluloid covered with a photographic emulsion", not paper (WordNet's synset is photographic material; the name is paper)
+core	nozzle	move	plumbing	artifact	"a projecting spout from which a fluid is discharged": a rocket nozzle or a hose nozzle is not a building's plumbing
+core	graphics	move	fine-art	image	"the drawings and photographs in the layout of a book" are images (information only), not works of fine art
+core	stool	move	chair	seat	"a simple seat without a back or arms"; chair is "a seat for one person, with a support for the back"
+core	import	cut	artifact		"commodities (goods or services) bought from a foreign country": imported crude oil or services are not man-made objects (kept under commodity)
+core	load	move	artifact	physical-object	"weight to be borne or conveyed": a load of sand or hay is not a man-made object
+# --- batch 16 (sheet 3750-3999: artifacts, products, publications, structures, buildings, rooms) ---
+core	oeuvre	move	end-product	collection	"the total output of a writer or artist" (the Wagnerian oeuvre) is a body of work, not a man-made physical object
+core	rhinestone	cut	mineral		"an imitation diamond made from rock crystal or glass or paste": glass and paste are not minerals (kept under artifact)
+core	reception	move	storage-medium	attribute	"quality or fidelity of a received broadcast" is a quality, not a storage medium (UPPER.md §15.2 threw this edge out once)
+core	tower	move	building	structure	"a structure taller than its diameter; can stand alone or be attached to a larger building": a radio mast has no roof and walls (building)
+core	gear-tooth	move	structure	artifact	"one of a number of uniform projections on a gear" is a part of a gear, not a constructed structure
+core	hideaway	move	structure	place	"an area where you can be alone" is a place, not a constructed structure
+core	stopper	parent+		artifact	a stopper is "an object designed to fill a hole tightly", an artifact; it kept artifact only through occlusion ⊑ structure (next row)
+core	occlusion	move	structure	physical-object	"an obstruction in a pipe or tube": a clog of hair or a blood clot is not a constructed structure
+core	luggage-compartment	move	room	container	a car's boot is not "an area within a building enclosed by walls and floor and ceiling"; it holds luggage
+core	whipped-cream	cut	artifact		cream that has been beaten is food (kept under dairy-product), not a man-made object
+# --- batch 17 (sheet 4000-4249: body parts, tissues, commodities, land, waters, fruits, seeds, celestial bodies) ---
+core	tooth	move	bone	body-part	teeth are "bonelike structures", not bone (enamel and dentin, not bone tissue)
+core	wood	cut	tissue		wood as a material and commodity is not a body part (tissue ⊑ body-part, "any part of an organism"): firewood, logs and sawdust inherited body-part
+core	barrier	move	natural-object	physical-object	"anything serving to maintain separation by obstructing vision or access": a wall is a barrier and is made by man
+core	reservoir	cut	landform		"lake used to store water for community use" (an artificial lake) is not a natural feature of the land (kept under lake)
+core	seed	move	botanical-fruit	natural-object	a seed is the part of a fruit that grows into a plant, not "the ripened reproductive body of a seed plant" (WordNet's gloss "a small hard fruit" is wrong botany)
+core	constellation	move	natural-object	group	"a configuration of stars as seen from the earth" is a grouping of stars at different distances, not one object
+# --- batch 18 (sheet 4250-4499: plant parts, organisms, animals, plants, physical parts, places, regions) ---
+core	cutting	move	stalk	natural-object	"a part (sometimes a root or leaf or bud) removed from a plant": a leaf cutting is not a stem
+core	chips	move	potato	prepared-dish	french fries are a prepared dish, not a tuber or a plant stem (potato ⊑ tuber ⊑ stalk ⊑ natural-object)
+core	livestock	move	mammal	animal	"any animals kept for use or profit": through livestock, chickens, ducks, geese and turkeys (poultry ⊑ livestock) were mammals (WordNet's livestock ⊑ placental)
+core	core	move	center-point	place	"the center of an object; the ball has a titanium core" is a region of an object, not "a point equidistant from the ends of a line"
+core	road-shoulder	move	limit	place	the strip of land beside a road is an area, not "the boundary of a specific area"
+core	capital-city	cut	central-area		"a seat of government" need not lie in the middle of its country (kept under city)
+core	sanctuary	move	region	place	"a consecrated place where sacred objects are kept" is a place in a building, not "a large indefinite location on the surface of the Earth"
+core	seating-place	move	region	place	"a space reserved for sitting (as in a theater)" is not a large region of the Earth's surface
+core	venue	move	region	place	"the scene of any event or action (especially the place of a meeting)": a concert hall is not a large region of the Earth's surface
+core	tendency	move	route	spatial-direction	"a general direction in which something tends to move" is a direction, not "an established line of travel or access"
+# --- batch 19 (sheet 4500-4749: possessions, money, substances, elements, waters, foods, drinks) ---
+core	figure	move	possession	amount	"an amount of money expressed numerically; a figure of $17 was suggested" is an amount, not something owned
+core	backlog	move	income	possession	"something kept back or saved for future use" (a stockpile) is not income (UPPER.md §15.2 threw this edge out once)
+core	loss	move	possession	amount	"the amount by which the cost of a business exceeds its revenue" is an amount, not something owned
+core	water	cut	liquid		water is the compound H2O (kept under compound, now carbohydrate, Peter 2026-10-16); ice and steam are under it, and through water ⊑ liquid were liquids
+core	punch-drink	move	alcohol	drink	"an iced mixed drink usually containing alcohol": fruit punch is punch
+core	powdered-milk	move	milk	dairy-product	dehydrated milk is not a drink (milk ⊑ drink ⊑ liquid-substance)
+core	spread	move	seasoning	foodstuff	margarine, nut butter and hummus are spreads, not "something added to food primarily for the savor it imparts"
+# --- batch 20 (sheet 4750-4991: meals, meat, dishes, vegetables, fuels, materials, chemicals, minerals) ---
+# compound is "(chemistry) a substance formed by chemical union of two or more elements ... in definite proportion";
+# formulated products and natural mixtures are not compounds. They move up to material, which compound is under.
+core	bitumen	move	compound	material	"any of various naturally occurring impure mixtures of hydrocarbons" is a mixture, not a compound
+core	paper-pulp	move	compound	material	"a mixture of cellulose fibers" is a mixture, not a compound
+core	toothpaste	move	compound	material	a toothpaste is a formulated paste (a mixture), not a compound in definite proportion
+core	shampoo	move	compound	material	"consisting of soaps or detergents": a formulated product, not a compound
+core	polish-preparation	move	compound	material	"a preparation used in polishing" is a mixture, not a compound
+core	incense	move	compound	material	"a substance that produces a fragrant odor when burned" is a blend of resins and woods, not a compound
+core	detergent	move	compound	material	a detergent product is a formulation of surfactants and builders, not a compound in definite proportion
+core	asphalt	move	mineral	material	mineral is "solid homogeneous inorganic substances ... having a definite chemical composition"; asphalt is a mixture of hydrocarbons
+core	sand	move	soil	material	soil is "the part of the earth's surface consisting of humus and disintegrated rock"; beach sand has no humus
+# --- the amount branch, finished: what is left under amount once currency and fund have gone ---
+core	standard	move	system-of-measurement	information	(target concept until the concept pass) "a basis for comparison; a reference point" (federal standards, a norm, a scale of 1 to 10) is not a system of measures, nor an amount
+core	system-of-measurement	move	amount	system	"a system of related measures" (the metric system) is a system, not an amount (how much there is of something)
+# --- second sweep: WordNet's lexicographer file against the branch a concept lands in (rare pairings read again) ---
+# Rights are WordNet attributes (noun.attribute); under concept ⊑ idea ⊑ cognition they were psychological results, as relation and amount were.
+core	access	move	concept	attribute	"the right to obtain or make use of something" is a right a party has, not a psychological result of perception and reasoning
+core	entree	move	concept	attribute	"the right to enter", as access
+core	right-to-vote	move	concept	attribute	a legal right is held, not thought (as access)
+core	title	move	concept	attribute	"an established or recognized right" (a legal claim), as access; entitlement and copyright follow
+core	mathematical-rule	move	procedure	method	"a standard procedure for solving a class of mathematical problems" (Descartes' rule of signs, a formula) is a method, not an activity (procedure ⊑ activity ⊑ act)
+core	theatrical-role	move	activity	cognition	"she played the part of Desdemona": the part is the character portrayed, not an activity
+core	trophy	move	symbol	artifact	a cup given as a token of victory is a made object, not "an arbitrary sign (written or printed)"
+# --- closure check (2026-10-16): every (concept, ancestor) pair of the new core tested against each source's own
+# entailments (views/*.tsv); chains whose links each have support but whose whole no source entails were read again.
+# plumbing is "utility consisting of the pipes and fixtures for the distribution of water": a fixture in it is a part, not the utility (GPT's retail aisle)
+core	bidet	cut	plumbing		a bidet is a fixture of the plumbing, not the utility itself (kept under vessel)
+core	ballcock	cut	plumbing		a float valve is part of a cistern, not the utility (kept under regulator)
+core	faucet	cut	plumbing		a tap is part of the plumbing, not the utility (kept under regulator); stopcock and water-faucet follow
+core	drinking-fountain	cut	plumbing		a fixture, not the utility (kept under device and ornamental-fountain)
+core	toilet	cut	plumbing		a fixture of the plumbing, not the utility (kept under fixture and device)
+core	urinal	cut	plumbing		a fixture of the plumbing, not the utility (kept under fixture and device)
+core	shower-stall	cut	plumbing		a booth in a bathroom, not the utility (kept under booth)
+core	commercial-enterprise	move	commerce	activity	"the activity of providing goods and services" is wider than commerce, "transactions (sales and purchases)": through it, house-painting, construction, farming and manufacturing were transactions
+core	fructose	cut	sugar		core's sugar is refined table sugar ("used as a sweetener and preservative", ⊑ seasoning); fructose is a chemical sugar (kept under compound, now carbohydrate, Peter 2026-10-16)
+core	glucose	cut	sugar		as fructose (kept under compound, now carbohydrate, Peter 2026-10-16)
+core	lactose	cut	sugar		milk sugar is not table sugar, nor a seasoning (kept under compound, now carbohydrate, Peter 2026-10-16)
+# --- transitive reduction: edges the moves above made implied (not errors; core stores the reduction) ---
+core	name	cut	information		implied: name ⊑ language-unit ⊑ information since language-unit moved (batch 5)
+core	noun	cut	information		implied: noun ⊑ word ⊑ language-unit ⊑ information
+core	phone-call	cut	communication		implied: phone-call ⊑ telephony ⊑ communication since telephony moved (batch 6)
+core	yeast	cut	substance		implied: yeast ⊑ ingredient ⊑ substance since ingredient moved (batch 12)
+
+# --- packs: the closure check (tools/closure.py --packs), 2026-10-16 ---
+# Pack entries whose ancestors span two unrelated top-level branches, and the hinge edges behind unsupported pairs, read like core.
+# --- ai ---
+ai	evolutionary-algorithm	cut	evolutionary-computation		an algorithm is not a field of study; it stays under metaheuristic (and so algorithm)
+ai	apriori-algorithm	move	association-rule-learning	machine-learning-algorithm	an algorithm for association rule learning, not the field
+ai	support-vector-machine	cut	supervised-learning		a classifier, not a branch of machine learning; it stays under classification-algorithm
+ai	deep-q-network	cut	deep-reinforcement-learning		a network, not a field; it stays under artificial-neural-network
+ai	generative-adversarial-network	move	generative-ai	generative-model	a model architecture, not a field
+ai	expert-system	cut	artificial-intelligence		a computer system, not a field; it stays under knowledge-based-system (software)
+geography	lidar	cut	remote-sensing		the measuring instrument, not the activity; it stays under instrument
+computing	semantic-web	move	world-wide-web	information	(target concept until the concept pass) an extension of the web's standards, not a computer network (a physical object); ai files it under concept
+ai	triplestore	cut	database		a database management system (software), not the body of data; it stays under graph-database
+mathematics	boolean-satisfiability-problem	cut	attribute		a decision problem, not an attribute
+ai	actor-critic-algorithm	move	reinforcement-learning	machine-learning-algorithm	an algorithm, not a field
+ai	boosting-algorithm	move	ensemble-learning	machine-learning-algorithm	an algorithm, not a field (gradient-boosting follows)
+ai	random-forest	move	ensemble-learning	machine-learning-algorithm	a learning method and its model, not a field
+ai	bootstrap-aggregating	move	ensemble-learning	machine-learning-algorithm	an ensemble meta-algorithm, not a field
+ai	neat-algorithm	move	neuroevolution	evolutionary-algorithm	a genetic algorithm for evolving networks, not a field
+ai	particle-swarm-optimization	move	swarm-intelligence	metaheuristic	an optimisation method, not a field
+ai	ant-colony-optimization	move	swarm-intelligence	metaheuristic	an optimisation method, not a field
+ai	q-learning	move	model-free-reinforcement-learning	machine-learning-algorithm	an algorithm, not a field
+ai	proximal-policy-optimization	move	model-free-reinforcement-learning	machine-learning-algorithm	an algorithm, not a field (it also leaves policy-gradient-method)
+ai	proximal-policy-optimization	cut	policy-gradient-method		see above
+ai	t-sne	move	nonlinear-dimensionality-reduction	machine-learning-algorithm	an algorithm, not a field
+ai	isomap	move	nonlinear-dimensionality-reduction	machine-learning-algorithm	an algorithm, not a field
+ai	model-evaluation-method	move	machine-learning	method	a method, not a field: confusion matrices, F1 scores and ROC curves were branches of knowledge
+ai	dialogue-system	move	natural-language-processing	software	a computer system that converses, not a field
+# --- computing ---
+computing	tree-structure	move	hierarchy	data-structure	core's hierarchy is under organization (a social group, an agent): a data structure is not an agent
+computing	cellular-network	cut	telecommunication		a network is not the act of communicating; it stays under computer-network
+computing	5g	move	cellular-network	technical-standard	the fifth-generation technology standard, not a network
+computing	command-line-interface	cut	human-computer-interaction		an interface, not a field of study; it stays under text-based-user-interface
+computing	bytecode	cut	instruction-set-architecture		code, not an architecture (an attribute of a computer); it stays under machine-code
+computing	parallel-computing	cut	computer-science		computation done in parallel, not a field: through it SaaS, PaaS, IaaS and serverless were fields of study; it stays under data-processing
+computing	gui-window	cut	device		a window on screen is a software object, not an instrumentality; it stays under gui-widget
+computing	text-cursor	cut	device		the screen marker, not a device; it stays under symbol
+computing	title-bar	move	label	gui-widget	core's label is a physical tag
+computing	stack-data-structure	cut	device		the data structure, not WordNet's push-down storage device
+computing	distributed-hash-table	cut	distributed-system		a data structure spread over nodes, not a computer system (a machine); it stays under hash-table
+computing	software-architecture	cut	software-engineering		a system's architecture is not the engineering field; it stays under concept
+computing	domain-name-system	cut	distributed-system		the naming system and protocol, not a machine; it stays under communications-protocol
+computing	git	cut	distributed-version-control		the software, not the practice; it stays under version-control-software
+computing	github	cut	software-repository		a hosting web site, not a repository; it stays under web-site
+computing	init-system	cut	daemon-process		the software, not a running process (an event); it stays under system-software
+computing	log-file	cut	record		core's record is an accomplishment (a best performance); it stays under computer-file
+computing	version-control-commit	move	record	computer-operation	core's record is an accomplishment (a best performance)
+computing	osi-model	cut	model-of-computation		a layered model of networking, not a model of computation; it stays under technical-standard
+computing	smartphone	move	telephony	cellular-telephone	a phone, not the act of telephoning
+computing	turing-machine	cut	computer		an abstract model, not a machine; it stays under model-of-computation
+computing	virtual-memory	cut	computer-memory		a memory-management technique, not hardware; it stays under memory-management
+computing	sparql-endpoint	move	computer-server	server-software	a web service, not a computer: the Wikidata Query Service was a machine
+computing	observability	cut	system-monitoring		a property of a system, not the activity of monitoring it; it stays under software-quality-attribute
+computing	access-control-list	cut	access-control		a list, not the practice; it stays under list
+mathematics	information-theory	cut	concept		a field of study, not an idea; it stays under computer-science and mathematics
+computing	moores-law	move	law	proposition	(target concept until the concept pass) core's law is the field of study (jurisprudence); Moore's law is an observed regularity
+computing	command-prompt	move	communication	symbol	the symbol on screen, not the act of communicating
+computing	font-cartridge	move	character	hardware	a plug-in cartridge holding fonts, not a written character
+computing	data-backup	move	copy	information	a backup is data; core's copy is an artifact
+computing	software-sandbox	move	computer-security-system	software	a sandbox is software; computer-security-system is a physical artifact
+# --- biology ---
+biology	motor-fiber	cut	material		a nerve fiber is not a material; it stays under nerve-fiber
+biology	sensory-fiber	cut	material		a nerve fiber is not a material; it stays under nerve-fiber
+biology	organelle	move	organ	body-part	a part of a cell, not an organ (a group of tissues)
+biology	etiolation	cut	act		a plant process, not a deliberate act; it stays under organic-process
+# --- chemistry ---
+chemistry	chemical-chain	cut	concept		a chain of atoms is a physical structure, not an idea; it stays under chemical-group
+chemistry	alum	cut	chemical-element		a double sulphate, a compound, not an element
+chemistry	ammonia-alum	cut	chemical-element		a compound, not an element
+# --- physics: quantities filed as happenings (core moved pressure and electric-charge the same way) ---
+physics	amplitude	move	event	magnitude	the maximum displacement of a wave, a magnitude, not a happening
+physics	capacitance	move	electrical-phenomenon	attribute	the ability to store charge, a physical quantity, not a happening
+physics	inductance	move	electrical-phenomenon	attribute	a physical quantity, not a happening
+physics	magnetic-reluctance	move	electrical-phenomenon	attribute	a physical quantity, not a happening
+physics	voltage	move	electrical-phenomenon	attribute	a potential difference, a physical quantity, not a happening
+physics	heat-energy	move	physical-phenomenon	attribute	an amount of energy, not a happening
+physics	inertia	move	physical-phenomenon	attribute	a property of matter, not a happening
+physics	magnetic-dipole-moment	move	physical-phenomenon	attribute	a physical quantity, not a happening
+physics	mechanical-work	move	physical-phenomenon	attribute	a physical quantity (energy transferred), not a happening
+physics	mechanical-stress	move	physical-phenomenon	attribute	force per unit area, a physical quantity, as pressure in core
+# --- space ---
+space	space-probe	cut	weapon		a space probe is not a weapon; it stays under vehicle
+space	space-program	move	method	activity	a programme of missions is an undertaking, not a method
+space	armillary-sphere	cut	map		a physical model of the celestial sphere, not a document (CORE.md: a document is information only); it stays under model
+# --- occupations ---
+occupations	groom	move	organism	person	the bridegroom (WordNet 10148035), a person
+occupations	libertine	move	organism	person	a person (WordNet 10257647), not an occupation
+occupations	monsignor	move	attribute	priest	WordNet 10329789: a priest with an ecclesiastical title of honour, not the title
+occupations	vicar	move	attribute	priest	WordNet 10750031: a priest who acts for a higher-ranking clergyman
+occupations	friar	move	agent	person	a member of a religious order
+occupations	environmentalist	move	agent	person	someone who works to protect the environment
+occupations	police-matron	move	agent	policeman	WordNet 10449412: a policewoman
+occupations	optician	cut	organization		the lens maker (WordNet 10380000), not the shop
+occupations	optician	cut	place		the lens maker, not the shop
+# --- economics ---
+core	cut-rate-sale	move	opportunity	event	WordNet 01117723 is "an occasion for buying at reduced prices" (a sales event, act lexfile), but its hypernym opportunity is a state: every garage sale and clearance sale was a state
+economics	intangible-asset	move	asset	possession	the accounting asset (Wikidata Q427581) is owned value; core's asset is WordNet 05154517 "a useful or valuable quality": every bond and share was an attribute
+economics	accounts-receivable	move	asset	possession	money owed to a firm is owned value, not a quality (core's asset)
+economics	current-asset	move	asset	possession	an accounting asset, not a quality (core's asset)
+economics	fixed-asset	move	asset	possession	an accounting asset, not a quality (core's asset)
+economics	custodian-bank	move	river-bank	bank	the consensus build files it under WordNet's sloping-land bank, which Peter renamed river-bank on 2026-10-16; bank now names the financial institution
+economics	call-option	cut	option		core's option is a choice (cognition); the contract stays under option-finance and purchase-option
+economics	put-option	cut	option		core's option is a choice (cognition); the contract stays under option-finance and purchase-option
+economics	e-commerce	cut	business		trade done online, not an organization; it stays under commerce
+economics	vendor	cut	business		a seller may be a person; it stays under economic-agent
+economics	financial-audit	cut	audited-account		the examination, not the audited account; it stays under work
+economics	transaction-fee	move	financial-transaction	fee	a fee is an amount paid, not the transaction (gas fees were acts)
+economics	production-capacity	move	economic-production	attribute	the most a plant can produce, a magnitude, not the act of producing
+economics	hardware-wallet	move	cryptocurrency-wallet	computer	a special-purpose computer that holds keys (Peter 2026-10-16); cryptocurrency-wallet is software
+economics	self-custody	move	cryptocurrency-wallet	practice	holding one's own keys is a practice, not a wallet
+economics	decentralized-finance	move	smart-contract	financial-services	financial services built on blockchains, not a program (yield farming was a smart contract)
+# --- geography ---
+geography	compass-point	cut	direction		core's direction is WordNet's inclination, an attitude (cognition): northeast was a state of mind; it stays under spatial-relation
+geography	beaufort-scale	move	measure	system-of-measurement	core's measure is "a step toward a goal" (an act)
+geography	beaufort-scale	cut	scale		the scale node beside it is the fish or reptile scale (natural-object)
+geography	moment-magnitude-scale	move	measure	system-of-measurement	core's measure is "a step toward a goal" (an act)
+geography	moment-magnitude-scale	cut	scale		the scale node beside it is a natural object
+geography	richter-magnitude-scale	move	measure	system-of-measurement	core's measure is "a step toward a goal" (an act)
+geography	richter-magnitude-scale	cut	scale		the scale node beside it is a natural object
+geography	mercalli-scale	move	measure	system-of-measurement	core's measure is "a step toward a goal" (an act)
+computing	code-coverage	move	measure	amount	a metric, not a step toward a goal (core's measure)
+geography	terrestrial-globe	cut	map		a physical globe, not a document (CORE.md: a document is information only); it stays under model
+geography	wind-rose	cut	artifact		a diagram of winds, information; it stays under weather-map
+geography	digital-elevation-model	move	model	geographic-data	elevation data, not a physical model (core's model is an artifact)
+geography	thunder	move	sound	natural-event	core's sound is WordNet 05718254 "the subjective sensation of hearing"; thunder is the noise lightning makes
+geography	echo-sounding	move	sonar	activity	measuring depth by echoes is an activity, not the instrument
+# --- mathematics ---
+mathematics	logical-connective	move	logical-operation	mathematical-operation	computing's logical-operation is a computer operation (data processing): "and", "or" and "not" were things a computer does
+mathematics	quantifier	cut	logical-operation		(a move to concept until the concept pass) "for all" and "there exists" are not computer operations; it stays under word as well
+mathematics	brute-force-attack	cut	cryptanalysis		an attack, not the field; it stays under procedure
+mathematics	rsa-cryptosystem	move	public-key-cryptography	cryptographic-primitive	a cryptosystem, not a field of study
+mathematics	corollary	move	thinking	proposition	a proposition that follows from a theorem, not an act of thinking
+# --- medicine ---
+medicine	clinical-sign	move	evidence	condition	core's evidence is under cognition and information (core cut symptom ⊑ evidence for the same reason): a cough and a nosebleed were knowledge
+medicine	hysterectomy	cut	surgery		an operation, not the field of surgery; it stays under ablation
+medicine	plastic-surgery	cut	surgery		WordNet 00690501 is the procedure: through the field, rhinoplasty and face-lifts were fields of study; it stays under operation
+medicine	neurosurgery	cut	surgery		WordNet 00688915 is the procedure: lobotomy was a field of study; it stays under operation
+medicine	vivisection	move	operation	procedure	operating on live animals for research is not therapy (core: operation ⊑ therapy ⊑ medical-care)
+medicine	dental-bonding	move	method	dental-procedure	a dental procedure, not a method
+medicine	echolalia	move	activity	symptom	the involuntary repetition of another's words is a symptom, not an activity
+# --- geography: core's motion is an act ---
+geography	ocean-current	move	motion	natural-event	core's motion is WordNet 00331950 "the act of changing location": the Gulf Stream was an act
+geography	advection	cut	motion		core's motion is an act; it stays under process
+# --- packs: transitive reduction after the moves above ---
+economics	book-fair	cut	event		implied: book-fair ⊑ bazaar ⊑ cut-rate-sale ⊑ event since cut-rate-sale moved
+economics	goodwill-asset	cut	possession		implied: goodwill-asset ⊑ financial-asset ⊑ intangible-asset ⊑ possession since intangible-asset moved
+economics	tranche	cut	possession		implied: tranche ⊑ security-finance ⊑ financial-asset ⊑ intangible-asset ⊑ possession
+medicine	jactitation	cut	attribute		implied: jactitation ⊑ symptom ⊑ condition ⊑ state ⊑ attribute since core's symptom moved
+medicine	swelling	cut	state		implied: swelling ⊑ symptom ⊑ condition ⊑ state since core's symptom moved
+medicine	uratemia	cut	condition		implied: uratemia ⊑ symptom ⊑ condition since core's symptom moved
+medicine	uricaciduria	cut	condition		implied: uricaciduria ⊑ symptom ⊑ condition since core's symptom moved
+
+# --- the concept pass (Peter 2026-10-16: "we should try to eliminate concept"; "concept is quite bad, everything in ontodag is a concept") ---
+# 313 nodes sat directly under concept ⊑ idea ⊑ cognition, which made a data structure, a market and a law of nature psychological states.
+# Statements (theories, laws, principles, hypotheses, rules) go to information as theorem ⊑ proposition does; mathematical objects to a new
+# mathematical-object in the mathematics pack; measures to amount; situations to state; designs and techniques to method.
+core	law-of-nature	add	-	proposition	WordNet 05872982 "a generalization that describes recurring facts or events in nature"
+mathematics	mathematical-object	add	-	*	an abstract object of mathematics (Wikidata Q246672); top level in the mathematics pack, since core holds no abstract objects
+mathematics	mathematical-set	parent+	-	collection	WordNet: set (mathematics) ⊑ collection
+computing	programming-paradigm	cut	style		core's style is WordNet's editorial directions (spelling and punctuation)
+core	amount	move	concept	*	quantity merged into amount (renames-step7.tsv) brings its concept edge; amount stays at the top level
+# sub	target (- = cut, the node keeps its other parents)	note
+# --- core ---
+core	category	move	concept	idea	"a general concept that marks divisions in a conceptual scheme" stays a thought, one level up; brand and version follow
+core	hypothesis	move	concept	proposition	a proposed explanation is a statement, like theorem ⊑ proposition
+core	natural-law	move	concept	rule	WordNet's sense is ethics' "rules of conduct inherent in human nature", a body of rules
+core	notion	move	concept	idea	a synonym of idea
+core	principle	move	concept	proposition	"a basic generalization that is accepted as true"
+core	property	move	concept	attribute	"a basic or essential attribute shared by all members of a class"; feature and the software quality attributes follow
+core	rule	move	concept	information	a prescribed guide or a principle, stated; heuristic and inference rule follow
+core	scientific-principle	move	concept	principle	a principle of a science
+core	standard	move	concept	information	"a basis for comparison; a reference point" (norms, time standards, measurement scales) is a specification
+core	unit	move	concept	idea	"a single undivided whole" (WordNet ⊑ whole, a concept); no children
+# --- ai ---
+ai	activation-function	move	concept	function	a mathematical function
+ai	adversarial-example	move	concept	information	an input crafted to mislead a model
+ai	ai-model	move	concept	information	Peter 2026-10-16: a model is information, not a thought
+ai	algorithmic-bias	move	concept	attribute	a systematic error, a property of a system
+ai	argumentation-framework	move	concept	mathematical-object	Dung's abstract argumentation framework is a directed graph
+ai	attention-mechanism	move	concept	method	a technique inside neural networks
+ai	behavior-tree	move	concept	information	a model of plan execution
+ai	belief-revision	move	concept	thinking	the process of changing beliefs
+ai	bellman-equation	move	concept	equation	an equation
+ai	bias-variance-tradeoff	move	concept	attribute	a property of learning methods
+ai	bounded-rationality	cut	concept		a field topic; it stays under decision-theory
+ai	cellular-automaton	move	concept	mathematical-object	a discrete model of computation
+ai	centrality	move	concept	amount	a measure of a node's importance
+ai	chinese-room	move	concept	information	a thought experiment, an argument (core's argument is a discussion)
+ai	closed-world-assumption	move	concept	principle	an assumption of a reasoning system
+ai	open-world-assumption	move	concept	principle	an assumption of a reasoning system
+ai	cognitive-architecture	move	concept	theory	a theory of the structure of the mind
+ai	collective-intelligence	move	concept	attribute	an ability of a group
+ai	complex-adaptive-system	move	concept	system	a system
+ai	complex-network	move	concept	mathematical-object	a graph with non-trivial structure
+ai	computational-theory-of-mind	move	concept	theory	a theory
+ai	concept-drift	move	concept	change	a change in the data a model sees
+ai	connectionism	move	concept	theory	a theory of mind
+ai	decision-tree	move	concept	information	a model
+ai	default-logic	move	concept	formal-system	a non-monotonic logic
+ai	dempster-shafer-theory	move	concept	theory	a theory
+ai	differential-privacy	move	concept	attribute	a property of algorithms
+ai	distributed-cognition	move	concept	theory	a theory
+ai	embodied-cognition	move	concept	theory	a theory
+ai	enactivism	move	concept	theory	a theory
+ai	extended-mind-thesis	move	concept	theory	a thesis
+ai	situated-cognition	move	concept	theory	a theory
+ai	edge-of-chaos	move	concept	state	a regime between order and disorder
+ai	existential-risk-from-agi	move	concept	danger	a possible danger (core's risk is a venture)
+ai	factor-graph	move	concept	mathematical-object	a bipartite graph
+ai	fitness-function	move	concept	function	a function
+ai	fuzzy-set	move	concept	mathematical-set	a set
+ai	game-theory	move	concept	mathematics	a branch of mathematics; auction theory follows
+economics	game-theory	move	concept	mathematics	a branch of mathematics; auction theory follows
+ai	game-tree	move	concept	mathematical-object	a tree
+ai	gaussian-process	move	concept	mathematical-object	a stochastic process
+ai	generalization-error	move	concept	amount	a measure of error
+ai	goodharts-law	move	concept	proposition	an adage
+ai	hebbian-learning	move	concept	theory	a theory of synaptic plasticity
+ai	horn-clause	move	concept	mathematical-expression	a logical formula
+ai	hyperparameter	move	concept	amount	a value set before learning
+ai	inductive-bias	move	concept	principle	the assumptions a learner makes
+ai	influence-diagram	move	concept	diagram	a diagram
+ai	information-bottleneck	move	concept	method	a method
+ai	instrumental-convergence	move	concept	hypothesis	a hypothesis
+ai	intelligence-amplification	move	concept	activity	the use of IT to augment human intelligence
+ai	kolmogorov-complexity	move	concept	amount	it stays under quantity, now amount; in ai concept was its only parent, so it takes the parents the other pack gives it
+ai	latent-space	move	concept	mathematical-space	a space
+ai	learning-rate	move	concept	amount	a value
+ai	loss-function	move	concept	function	a function
+ai	markov-chain	move	concept	mathematical-object	a stochastic process
+ai	markov-decision-process	move	concept	mathematical-object	a mathematical model of decisions
+ai	minimum-description-length	move	concept	principle	a principle of model selection
+ai	mutual-information	move	concept	amount	it stays under quantity, now amount; in ai concept was its only parent, so it takes the parents the other pack gives it
+ai	n-gram	move	concept	information	a sequence of n items of text or speech
+ai	neural-network-layer	move	concept	information	part of a model, as ai-model
+ai	no-free-lunch-theorem	move	concept	theorem	a theorem
+ai	optical-flow	move	concept	attribute	the apparent motion in an image sequence
+ai	overfitting	move	concept	condition	a condition of a model
+ai	pac-learning	cut	concept		it stays under computational-learning-theory
+ai	rademacher-complexity	move	concept	amount	a measure
+ai	radial-basis-function	move	concept	function	a function
+ai	resource-description-framework	move	concept	data-model	it stays under data-model; in ai concept was its only parent, so it takes the parents the other pack gives it
+ai	robot-rights	move	concept	attribute	rights, filed as access and title are
+ai	sample-complexity	move	concept	amount	a number of samples
+ai	satisficing	move	concept	method	a decision strategy
+ai	semantic-web	move	concept	information	an extension of the web's standards (computing's row moves it here directly)
+computing	semantic-web	move	concept	information	an extension of the web's standards (computing's row moves it here directly)
+ai	similarity-measure	move	concept	function	a function
+ai	situation-calculus	move	concept	formal-system	a logic formalism
+ai	state-observer	move	concept	system	a system that estimates internal state
+ai	statistical-learning-theory	cut	concept		it stays under computational-learning-theory
+ai	statistical-model	move	concept	information	a model, as ai-model
+ai	stop-word	move	concept	word	a word
+ai	tf-idf	move	concept	amount	it stays under quantity, now amount; in ai concept was its only parent, so it takes the parents the other pack gives it
+ai	uncanny-valley	move	concept	hypothesis	a hypothesized relation between likeness and affinity
+ai	universal-approximation-theorem	move	concept	theorem	a theorem
+ai	user-modeling	move	concept	activity	building models of users
+ai	value-function	move	concept	function	a function
+ai	vector-embedding	move	concept	information	a representation
+# --- biology ---
+biology	cell-theory	move	concept	theory	a theory
+biology	theory-of-evolution	move	concept	theory	a theory
+biology	theory-of-inheritance	move	concept	theory	a theory
+biology	mendel's-law	move	concept	law-of-nature	a law of nature
+biology	taxonomic-group	move	concept	group	a taxon is a group of organisms (core: group holds species and herds)
+# --- chemistry ---
+chemistry	atomism	move	concept	theory	a theory
+chemistry	dalton's-law	move	concept	physical-law	it stays under physical-law; in chemistry concept was its only parent, so it takes the parents the other pack gives it
+chemistry	distribution-law	move	concept	law-of-nature	a law of nature
+chemistry	equilibrium-law	move	concept	law-of-nature	a law of nature
+chemistry	henry's-law	move	concept	law-of-nature	a law of nature
+chemistry	law-of-constant-proportion	move	concept	law-of-nature	a law of nature
+chemistry	law-of-equivalent-proportions	move	concept	law-of-nature	a law of nature
+chemistry	law-of-mass-action	move	concept	law-of-nature	a law of nature
+chemistry	law-of-multiple-proportions	move	concept	law-of-nature	a law of nature
+chemistry	periodic-law	move	concept	law-of-nature	a law of nature
+chemistry	theory-of-dissociation	move	concept	theory	a theory
+chemistry	theory-of-indicators	move	concept	theory	a theory
+# --- computing ---
+computing	application-layer	move	concept	information	a layer of a protocol stack (a set of protocols)
+computing	data-link-layer	move	concept	information	a layer of a protocol stack
+computing	network-layer	move	concept	information	a layer of a protocol stack
+computing	physical-layer	move	concept	information	a layer of a protocol stack
+computing	transport-layer	move	concept	information	a layer of a protocol stack
+computing	cap-theorem	cut	concept		it stays under theorem
+economics	content-addressable-storage	move	concept	data-storage	it stays under data-storage; in economics concept was its only parent, so it takes the parents the other pack gives it
+mathematics	content-addressable-storage	move	concept	data-storage	it stays under data-storage; in mathematics concept was its only parent, so it takes the parents the other pack gives it
+computing	control-flow	move	concept	attribute	the order in which instructions run, a property of a program
+mathematics	cryptographic-protocol	cut	concept		it stays under communications-protocol and procedure
+computing	data-model	move	concept	information	a specification of how data is organised
+computing	data-structure	move	concept	information	a way of organising data
+mathematics	data-structure	move	concept	information	a way of organising data
+computing	data-type	move	concept	information	a classification of data
+computing	directed-graph	move	concept	mathematical-graph	it stays under mathematical-graph; in computing concept was its only parent, so it takes the parents the other pack gives it
+mathematics	error-correcting-code	move	concept	code	it stays under code; in mathematics concept was its only parent, so it takes the parents the other pack gives it
+computing	formal-grammar	move	concept	formal-system	it stays under formal-system; in computing concept was its only parent, so it takes the parents the other pack gives it
+economics	hash-chain	move	concept	authenticated-data-structure data-structure	it stays under authenticated-data-structure and data-structure; in economics concept was its only parent, so it takes the parents the other pack gives it
+computing	information-architecture	move	concept	method	the structural design of information
+computing	keyboard-layout	move	concept	information	an arrangement of keys, specified
+economics	merkle-tree	move	concept	authenticated-data-structure data-structure tree-data-structure tree-graph	it stays under authenticated-data-structure and tree-data-structure; in economics concept was its only parent, so it takes the parents the other pack gives it
+computing	model-of-computation	move	concept	mathematical-object	an abstract machine
+computing	moores-law	move	concept	proposition	an observed regularity (computing's row moves it here directly)
+computing	network-architecture	move	concept	method	a design of networks
+computing	network-topology	move	concept	attribute	the arrangement of a network
+computing	noisy-channel-coding-theorem	cut	concept		it stays under theorem
+computing	nyquist-shannon-sampling-theorem	cut	concept		it stays under theorem
+computing	shannon-source-coding-theorem	cut	concept		it stays under theorem
+computing	partial-order	move	concept	antisymmetric-relation preorder	it stays under antisymmetric-relation and preorder; in computing concept was its only parent, so it takes the parents the other pack gives it
+economics	peer-to-peer	move	concept	network-architecture software-architecture	it stays under network-architecture and software-architecture; in economics concept was its only parent, so it takes the parents the other pack gives it
+computing	program-variable	move	concept	information	a named storage location in a program
+computing	programming-paradigm	move	concept	method	a style of programming (core's style is editorial directions, cut below)
+mathematics	public-key-infrastructure	move	concept	computer-security-system system	it stays under computer-security-system and system; in mathematics concept was its only parent, so it takes the parents the other pack gives it
+computing	software-abstraction	move	concept	method	a technique
+computing	software-architecture	move	concept	method	an architectural style (client-server, REST, microservices)
+computing	software-design-pattern	move	concept	method	a reusable solution
+computing	technical-debt	move	concept	condition	a condition of a codebase
+computing	transitive-closure	move	concept	mathematical-operation transitive-relation	it stays under mathematical-operation and transitive-relation; in computing concept was its only parent, so it takes the parents the other pack gives it
+computing	transitive-reduction	move	concept	mathematical-operation	it stays under mathematical-operation; in computing concept was its only parent, so it takes the parents the other pack gives it
+mathematics	turing-machine	move	concept	model-of-computation	it stays under model-of-computation; in mathematics concept was its only parent, so it takes the parents the other pack gives it
+computing	type-system	move	concept	rule	a set of rules that assigns types
+computing	user-experience	move	concept	perception	a person's perceptions in using a product
+# --- economics ---
+economics	account-abstraction	move	concept	method	a design feature of Ethereum accounts
+economics	accrual	move	concept	amount	an accumulated amount
+economics	adverse-selection	move	concept	situation	a market situation
+economics	arbitrage-pricing-theory	move	concept	theory	a theory
+economics	asset-class	move	concept	group	a group of securities
+economics	barriers-to-entry	move	concept	condition	obstacles to entering a market
+economics	bid-ask-spread	move	concept	amount	a difference of prices
+economics	black-scholes-model	move	concept	information	a mathematical model
+economics	book-value	move	concept	value	a value
+economics	budget-constraint	move	concept	condition	a constraint
+economics	bullwhip-effect	move	concept	process	the amplification of order swings along a supply chain
+economics	business-model	move	concept	plan	a plan
+economics	capital-asset-pricing-model	move	concept	information	a mathematical model
+economics	charge-rate	cut	concept		it stays under price-charged
+economics	commons	move	concept	possession	resources held in common
+economics	comparative-advantage	move	concept	attribute	an advantage
+economics	consumer-choice	move	concept	theory	a theory of microeconomics
+economics	contract-theory	move	concept	theory	a theory
+economics	credit-spread	move	concept	amount	a difference of yields
+economics	currency-pair	move	concept	information	a quotation of two currencies
+economics	division-of-labor	move	concept	practice	a social arrangement of work
+economics	earnings-per-share	move	concept	ratio	a ratio
+economics	economic-elasticity	move	concept	ratio	a ratio of changes
+economics	economic-order-quantity	move	concept	amount	an amount
+economics	economic-utility	move	concept	attribute	the quality of being useful; marginal utility follows
+economics	economies-of-scale	move	concept	attribute	a cost advantage
+economics	efficient-market-hypothesis	move	concept	hypothesis	a hypothesis
+economics	expected-shortfall	move	concept	amount	a risk measure
+economics	expiration-date	move	concept	day	a day (core's date is the fruit)
+economics	settlement-date	move	concept	day	a day (core's date is the fruit)
+economics	externality	move	concept	consequence	a cost or benefit to a third party
+economics	fair-value	move	concept	value	a value
+economics	fama-french-three-factor-model	move	concept	information	a mathematical model
+economics	financial-leverage	move	concept	ratio	a ratio of debt
+economics	financial-risk	move	concept	danger	a possibility of loss (core's risk is a venture)
+economics	gig-economy	move	concept	economic-system	an economic system
+economics	goods-and-services	drop			Peter 2026-10-16: dropped; a conjunction of two categories, not one (a query says goods or service)
+economics	implied-volatility	move	concept	amount	a value
+economics	indifference-curve	move	concept	curve	a curve
+economics	information-asymmetry	move	concept	situation	a situation
+economics	internal-rate-of-return	move	concept	ratio	a rate
+economics	intrinsic-value	move	concept	value	a value
+economics	inventory-turnover	move	concept	ratio	a ratio
+economics	lead-time	move	concept	time-period	a period of time
+economics	marginal-cost	move	concept	amount	a cost
+economics	market	move	concept	economic-system	a system of exchange (the markets and exchanges follow)
+economics	market-capitalization	move	concept	amount	a value
+economics	market-depth	move	concept	attribute	a property of a market
+economics	market-failure	move	concept	situation	a situation
+economics	market-index	move	concept	amount	an index number
+economics	market-power	move	concept	attribute	an ability (core's power is an agent)
+economics	markup	move	concept	amount	an amount
+economics	maximum-drawdown	move	concept	amount	an amount
+economics	mechanism-design	move	concept	economics	a field of economics
+economics	medium-of-exchange	move	concept	possession	WordNet's lexicographer file for it; money and currency are possessions
+economics	modern-portfolio-theory	move	concept	theory	a theory
+economics	monopolistic-competition	move	concept	situation	a market structure
+economics	moral-hazard	move	concept	situation	a situation
+economics	nash-equilibrium	move	concept	situation	a situation no player gains by leaving
+economics	net-present-value	move	concept	value	a value
+economics	network-effect	move	concept	attribute	a property of goods whose value grows with users
+economics	oligopoly	cut	concept		it stays under activity
+economics	open-interest	move	concept	amount	a number of contracts
+economics	opportunity-cost	move	concept	amount	a cost
+economics	par-value	move	concept	value	a value
+economics	pareto-efficiency	move	concept	situation	a situation
+economics	payment-system	move	concept	system	a system
+economics	perfect-competition	move	concept	situation	a market structure
+economics	platform-economy	move	concept	economic-system	an economic system
+economics	present-value	move	concept	value	a value
+economics	price-earnings-ratio	move	concept	ratio	a ratio
+economics	principal-agent-problem	move	concept	situation	a situation
+economics	prisoners-dilemma	move	concept	mathematical-object	a game, in game theory's sense
+economics	public-good	move	concept	goods	a good
+economics	rate-of-return	move	concept	ratio	a ratio
+economics	return-on-investment	move	concept	ratio	a ratio
+economics	revenue-model	move	concept	plan	a plan
+economics	risk-neutral-measure	move	concept	mathematical-object	a probability measure
+economics	safety-stock	move	concept	stored-supply	a stock kept in reserve
+economics	satoshi	move	concept	amount	the smallest amount of bitcoin
+economics	scarcity	move	concept	condition	a condition
+economics	sharing-economy	move	concept	economic-system	an economic system
+economics	sharpe-ratio	move	concept	ratio	a ratio
+economics	store-of-value	move	concept	attribute	a function of money
+economics	unit-of-account	move	concept	attribute	a function of money
+economics	supply-and-demand	move	concept	theory	an economic model
+economics	supply-chain	move	concept	system	a system
+economics	tick-size	move	concept	amount	an amount
+economics	time-value-of-money	move	concept	principle	a principle
+economics	trading-volume	move	concept	amount	an amount
+economics	tragedy-of-the-commons	move	concept	situation	a situation
+economics	tranche	cut	concept		it stays under security-finance
+economics	transaction-cost	move	concept	amount	a cost
+economics	value-at-risk	move	concept	amount	a risk measure
+economics	value-proposition	move	concept	information	a statement of value
+economics	web3	move	concept	idea	an idea of a decentralised web
+economics	yield-curve	move	concept	curve	a curve
+economics	yield-finance	move	concept	ratio	a return as a percentage
+# --- geography ---
+geography	climate-classification	cut	concept		it stays under classification-scheme
+geography	coordinate-system	move	concept	mathematical-object	a system of coordinates
+geography	coriolis-force	cut	concept		it stays under force and physical-phenomenon
+geography	plate-tectonics	cut	concept		it stays under theory
+space	sidereal-time	cut	concept		it stays under time-standard and time
+# --- mathematics ---
+mathematics	arithmetic-progression	move	concept	mathematical-object	a sequence
+mathematics	geometric-progression	move	concept	mathematical-object	a sequence
+mathematics	harmonic-progression	move	concept	mathematical-object	a sequence
+mathematics	fibonacci-sequence	move	concept	mathematical-object	a sequence
+mathematics	cryptographic-key	cut	concept		it stays under information
+mathematics	cryptographic-padding	move	concept	method	a technique
+mathematics	euclidean-vector	move	concept	mathematical-object	a vector
+mathematics	fixed-point	move	concept	mathematical-object	a point
+mathematics	formal-concept	move	concept	mathematical-object	a pair of sets
+mathematics	formal-system	move	concept	mathematical-object	a system of axioms and rules
+mathematics	galois-connection	move	concept	mathematical-relation	a relation between orders
+mathematics	graph-coloring	move	concept	mathematical-object	an assignment of colours
+mathematics	graph-vertex	move	concept	mathematical-object	a vertex
+mathematics	greatest-element	move	concept	mathematical-object	an element of an order
+mathematics	least-element	move	concept	mathematical-object	an element of an order
+mathematics	maximal-element	move	concept	mathematical-object	an element of an order
+mathematics	minimal-element	move	concept	mathematical-object	an element of an order
+mathematics	identity-element	move	concept	mathematical-object	an element of an algebra
+mathematics	infimum	cut	concept		it stays under lower-bound
+mathematics	supremum	cut	concept		it stays under upper-bound
+mathematics	initialization-vector	cut	concept		it stays under information
+mathematics	nonce	cut	concept		it stays under information
+mathematics	integer-partition	move	concept	mathematical-object	a partition
+mathematics	k-combination	move	concept	mathematical-object	a subset
+mathematics	mathematical-expression	cut	concept		it stays under information
+mathematics	mathematical-relation	move	concept	relation	WordNet: mathematical relation ⊑ relation (as core's function)
+mathematics	mathematical-set	move	concept	mathematical-object	a set; it also goes under collection (next row)
+mathematics	mathematical-structure	move	concept	mathematical-object	a structure
+mathematics	quantifier	cut	concept		it stays under word
+mathematics	random-oracle	move	concept	mathematical-object	an idealised function
+mathematics	secp256k1	move	concept	mathematical-object	an elliptic curve
+mathematics	tensor	move	concept	mathematical-object	a tensor
+mathematics	truth-table	move	concept	information	a table
+mathematics	truth-value	move	concept	mathematical-object	a value of logic
+# --- medicine ---
+medicine	freudian-psychology	cut	concept		it stays under psychology
+medicine	jungian-psychology	cut	concept		it stays under psychology
+medicine	germ-theory	move	concept	theory	a theory
+# --- physics ---
+space	asterism	move	concept	natural-object	it stays under natural-object; in space concept was its only parent, so it takes the parents the other pack gives it
+physics	attractor	move	concept	mathematical-object	a set in a dynamical system
+physics	dynamical-system	move	concept	mathematical-object	a system of equations
+physics	phase-space	move	concept	mathematical-space	a space
+physics	physical-law	move	concept	law-of-nature	a law of nature
+physics	quantum	move	concept	amount	a discrete amount of energy
+physics	theory	move	concept	information	a theory is a body of propositions, as theorem ⊑ proposition
+# --- space ---
+space	celestial-coordinate-system	cut	concept		it stays under coordinate-system
+space	cosmic-inflation	move	concept	theory	the theory of the early expansion
+space	dark-energy	move	concept	physical-phenomenon	a form of energy, filed as WordNet files energy (a physical phenomenon)
+space	hubble's-law	move	concept	law-of-nature	a law of nature
+space	kepler's-law	move	concept	law-of-nature	laws of nature
+space	j2000	move	concept	time-standard	a standard epoch
+space	kessler-syndrome	move	concept	hypothesis	a hypothesised cascade
+space	lambda-cdm-model	move	concept	theory	a cosmological model
+space	main-sequence	move	concept	collection	the band of stars on the Hertzsprung-Russell diagram
+space	stellar-classification	move	concept	classification-scheme	a classification scheme
+
+# --- concept is empty after the pass: dropped from core, and its stubs from the packs ---
+ai	concept	drop			Peter 2026-10-16: "we should try to eliminate concept"; no node is under it
+biology	concept	drop			Peter 2026-10-16: "we should try to eliminate concept"; no node is under it
+chemistry	concept	drop			Peter 2026-10-16: "we should try to eliminate concept"; no node is under it
+computing	concept	drop			Peter 2026-10-16: "we should try to eliminate concept"; no node is under it
+economics	concept	drop			Peter 2026-10-16: "we should try to eliminate concept"; no node is under it
+geography	concept	drop			Peter 2026-10-16: "we should try to eliminate concept"; no node is under it
+mathematics	concept	drop			Peter 2026-10-16: "we should try to eliminate concept"; no node is under it
+medicine	concept	drop			Peter 2026-10-16: "we should try to eliminate concept"; no node is under it
+occupations	concept	drop			Peter 2026-10-16: "we should try to eliminate concept"; no node is under it
+physics	concept	drop			Peter 2026-10-16: "we should try to eliminate concept"; no node is under it
+space	concept	drop			Peter 2026-10-16: "we should try to eliminate concept"; no node is under it
+core	concept	drop			Peter 2026-10-16: "we should try to eliminate concept"; no node is under it
+# --- transitive reduction after the concept pass ---
+geography	dew-point	cut	amount		implied: dew-point ⊑ temperature ⊑ amount (quantity merged into amount)
+space	sidereal-day	cut	amount		implied: sidereal-day ⊑ day ⊑ time-unit ⊑ time-period ⊑ amount (geography's entry)
+mathematics	logical-relation	cut	relation		implied: logical-relation ⊑ mathematical-relation ⊑ relation since mathematical-relation moved
+mathematics	parity	cut	relation		implied: parity ⊑ mathematical-relation ⊑ relation since mathematical-relation moved
+mathematics	np-completeness	cut	attribute		implied: np-completeness ⊑ property ⊑ attribute (computing's entry) since property moved

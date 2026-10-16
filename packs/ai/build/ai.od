@@ -4,37 +4,37 @@ a-star-search best-first-search
 abductive-logic-programming logic-programming
 abductive-reasoning thinking
 act '*'
-activation-function concept
+activation-function function
 active-learning machine-learning
 activity '*'
-actor-critic-algorithm reinforcement-learning
+actor-critic-algorithm machine-learning-algorithm
 actuator device
 adam-optimizer stochastic-gradient-descent
 adaptive-control control-theory
-adversarial-example concept
+adversarial-example information
 adversarial-machine-learning machine-learning
 adversarial-training adversarial-machine-learning
-affective-computing artificial-intelligence
+affective-computing 'about(emotion)' artificial-intelligence
 agent '*'
 agent-based-model computer-simulation
 agricultural-robot automaton
 ai-agent intelligent-agent
 ai-alignment ai-safety
-ai-model concept
-ai-safety artificial-intelligence
+ai-model information
+ai-safety 'about(artificial-intelligence)' artificial-intelligence
 aircraft '*'
-algorithm procedure
-algorithmic-bias concept
+algorithm '*'
+algorithmic-bias attribute
 alpha-beta-pruning search-algorithm
 analogical-reasoning thinking
 animatronics robotics
 anomaly-detection machine-learning
 answer-set-programming logic-programming
-ant-colony-optimization swarm-intelligence
+ant-colony-optimization metaheuristic
 apprenticeship-learning imitation-learning
-approximation-algorithm algorithm
-apriori-algorithm association-rule-learning
-argumentation-framework concept
+approximation-algorithm '*'
+apriori-algorithm machine-learning-algorithm
+argumentation-framework mathematical-object
 articulated-robot automaton
 artifact '*'
 artificial-chemistry artificial-life
@@ -47,13 +47,13 @@ artificial-life artificial-intelligence
 artificial-neural-network ai-model
 artificial-society agent-based-model
 association-rule-learning data-mining
-attention-mechanism concept
+attention-mechanism method
 attribute '*'
 autoencoder artificial-neural-network
 automated-machine-learning machine-learning
-automated-planning artificial-intelligence
+automated-planning 'about(plan)' artificial-intelligence
 automated-reasoning artificial-intelligence
-automated-theorem-proving artificial-intelligence
+automated-theorem-proving 'about(theorem)' artificial-intelligence
 automatic-summarization text-mining
 automaton '*'
 autonomic-computing artificial-intelligence
@@ -69,7 +69,7 @@ autonomous-weapon military-robot
 autoregressive-model statistical-model
 backpropagation algorithm
 backpropagation-through-time backpropagation
-backtracking-search search-algorithm
+backtracking-search '*'
 backward-chaining algorithm
 bag-of-words-model ai-model
 barabasi-albert-model statistical-model
@@ -78,20 +78,20 @@ bayes-classifier classification-algorithm
 bayesian-network statistical-model
 bayesian-optimization hyperparameter-optimization
 behavior-based-robotics robotics
-behavior-tree concept
+behavior-tree information
 belief-propagation algorithm
-belief-revision concept
-bellman-equation concept
+belief-revision thinking
+bellman-equation equation
 benchmark-dataset dataset
 bert-model transformer-model
 best-first-search informed-search-algorithm
 betweenness-centrality centrality
-bias-variance-tradeoff concept
+bias-variance-tradeoff attribute
 biclustering cluster-analysis
 bidirectional-associative-memory recurrent-neural-network
 bidirectional-recurrent-neural-network recurrent-neural-network
 bidirectional-search search-algorithm
-big-data information
+big-data '*'
 binary-classification statistical-classification
 bio-inspired-robotics robotics
 biorobotics robotics
@@ -100,60 +100,59 @@ blind-signal-separation signal-processing
 blocks-world toy-problem
 boltzmann-machine energy-based-model
 boolean-satisfiability-problem constraint-satisfaction-problem
-boosting-algorithm ensemble-learning
-bootstrap-aggregating ensemble-learning
-bounded-rationality concept decision-theory
+boosting-algorithm machine-learning-algorithm
+bootstrap-aggregating machine-learning-algorithm
+bounded-rationality decision-theory
 brain-computer-interface device
 breadth-first-search graph-traversal
 capsule-neural-network convolutional-neural-network
 case-based-reasoning artificial-intelligence
 catastrophic-forgetting problem
 causal-diagram statistical-model
-cellular-automaton concept
-centrality concept
+cellular-automaton mathematical-object
+centrality amount
 chatbot software software-agent
 chatbot-evaluation procedure
-chinese-room concept
+chinese-room information
 classification-algorithm machine-learning-algorithm
 closed-loop control-system
-closed-world-assumption concept
+closed-world-assumption principle
 cluster-analysis data-mining machine-learning statistics
 clustering-algorithm machine-learning-algorithm
 code '*'
-cognitive-architecture concept
+cognitive-architecture 'about(mind)' theory
 cognitive-computing artificial-intelligence
 cognitive-robotics robotics
-cognitive-science science
+cognitive-science 'about(cognition)' science
 collaborative-filtering machine-learning-algorithm
 collaborative-robot automaton
-collective-intelligence concept
+collective-intelligence attribute
 commonsense-knowledge-base knowledge-base
 commonsense-reasoning artificial-intelligence
 community-detection network-science
 companion-robot automaton
-complex-adaptive-system concept
-complex-network concept
+complex-adaptive-system system
+complex-network mathematical-object
 compositional-pattern-producing-network artificial-neural-network
 compressed-sensing signal-processing
 computational-humor computational-linguistics
 computational-intelligence artificial-intelligence
 computational-learning-theory machine-learning
 computational-linguistics linguistics
-computational-neuroscience artificial-intelligence
-computational-ontology knowledge-base
-computational-theory-of-mind concept
+computational-neuroscience 'about(brain)' artificial-intelligence
+computational-ontology '*'
+computational-theory-of-mind 'about(mind)' theory
 computer-chess artificial-intelligence
 computer-go artificial-intelligence
 computer-program '*'
 computer-science '*'
-computer-simulation method
-computer-vision machine-perception
-concept '*'
-concept-drift concept
+computer-simulation '*'
+computer-vision 'about(image)' machine-perception
+concept-drift change
 concurrent-logic-programming logic-programming
 conditional-random-field statistical-model
 confusion-matrix model-evaluation-method
-connectionism concept
+connectionism 'about(mind)' theory
 connectionist-expert-system artificial-neural-network expert-system
 constraint-logic-programming constraint-programming logic-programming
 constraint-programming computer-science
@@ -162,8 +161,8 @@ content-addressable-memory device
 continual-learning machine-learning
 contrastive-learning self-supervised-learning
 control-system artifact
-control-theory engineering mathematics
-controlled-vocabulary dataset
+control-theory 'about(control-system)' engineering mathematics
+controlled-vocabulary '*'
 conversational-ai natural-language-processing
 convex-optimization mathematical-optimization
 convolutional-neural-network feedforward-neural-network
@@ -173,43 +172,43 @@ cultural-algorithm evolutionary-algorithm
 curriculum-learning machine-learning
 cybernetics information-science
 data-augmentation procedure
-data-mining computer-science process
+data-mining '*'
 data-poisoning adversarial-machine-learning
 database '*'
 dataset '*'
 dbscan clustering-algorithm
 decision-support-system software
 decision-theory mathematics
-decision-tree concept
+decision-tree information
 decision-tree-learning machine-learning-algorithm
 deep-belief-network artificial-neural-network
 deep-generative-model generative-model
 deep-learning machine-learning
 deep-neural-network artificial-neural-network
-deep-q-network artificial-neural-network deep-reinforcement-learning
+deep-q-network artificial-neural-network
 deep-reinforcement-learning deep-learning reinforcement-learning
 deepfake synthetic-media
-default-logic concept
+default-logic formal-system
 delta-robot automaton
-dempster-shafer-theory concept
+dempster-shafer-theory theory
 denoising-autoencoder autoencoder
 depth-first-search graph-traversal
 developmental-robotics robotics
 device '*'
 diagnostic-expert-system expert-system
-dialogue-system natural-language-processing
+dialogue-system software
 differential-evolution evolutionary-algorithm
-differential-privacy concept
+differential-privacy attribute
 diffusion-model generative-model latent-variable-model
 digital-twin computer-simulation
-dijkstra-algorithm search-algorithm
+dijkstra-algorithm '*'
 dimensionality-reduction machine-learning
 distant-supervision weakly-supervised-learning
 distilled-ai-model ai-model
 distributed-artificial-intelligence artificial-intelligence
-distributed-cognition concept
+distributed-cognition 'about(cognition)' theory
 distributional-semantics computational-linguistics
-document-classification statistical-classification
+document-classification 'about(document)' statistical-classification
 domain-adaptation transfer-learning
 domestic-robot service-robot
 dynamic-bayesian-network bayesian-network
@@ -217,17 +216,17 @@ dynamic-knowledge-graph knowledge-graph
 early-stopping procedure
 echo-state-network recurrent-neural-network
 edge-detection image-processing
-edge-of-chaos concept
-educational-data-mining data-mining
+edge-of-chaos state
+educational-data-mining 'about(education)' data-mining
 eigenvector-centrality centrality
 elementary-cellular-automaton cellular-automaton
 elman-network artificial-neural-network
 embedding-model ai-model
 embodied-agent intelligent-agent
 embodied-artificial-intelligence artificial-intelligence
-embodied-cognition concept
+embodied-cognition 'about(cognition)' theory
 emotion-recognition affective-computing
-enactivism concept
+enactivism 'about(cognition)' theory
 energy-based-model ai-model statistical-model
 engineering '*'
 ensemble-averaging ensemble-learning
@@ -237,22 +236,22 @@ erdos-renyi-model statistical-model
 estimation-of-distribution-algorithm evolutionary-algorithm
 ethics-of-artificial-intelligence philosophy-of-artificial-intelligence
 event '*'
-evolutionary-algorithm evolutionary-computation metaheuristic
+evolutionary-algorithm metaheuristic
 evolutionary-computation artificial-intelligence
 evolutionary-robotics robotics
 example-based-machine-translation machine-translation
-existential-risk-from-agi concept
+existential-risk-from-agi danger
 expectation-maximization algorithm
 expectation-propagation algorithm
-expert-system artificial-intelligence knowledge-based-system
+expert-system knowledge-based-system
 explainability attribute
-explainable-ai artificial-intelligence
+explainable-ai 'about(artificial-intelligence)' artificial-intelligence
 explanation-based-learning machine-learning
 exploration-exploitation-dilemma problem
-extended-mind-thesis concept
+extended-mind-thesis 'about(mind)' theory
 f1-score model-evaluation-method
 facial-recognition-system software
-factor-graph concept
+factor-graph mathematical-object
 feature-detection computer-vision
 feature-extraction dimensionality-reduction
 feature-learning machine-learning
@@ -262,7 +261,7 @@ feedback-loop process
 feedforward-neural-network artificial-neural-network
 few-shot-learning machine-learning
 field-of-study '*'
-fitness-function concept
+fitness-function function
 flow-based-generative-model generative-model
 forward-chaining algorithm
 forward-kinematics robotics
@@ -271,16 +270,16 @@ frame-based-expert-system expert-system
 frame-problem problem
 friendly-artificial-intelligence artificial-general-intelligence
 functional-logic-programming logic-programming
-fuzzy-set concept
+fuzzy-set mathematical-set
 game-of-life cellular-automaton
-game-theory concept
-game-tree concept
+game-theory '*'
+game-tree mathematical-object
 gated-recurrent-unit recurrent-neural-network
 gaussian-mixture-model mixture-model
-gaussian-process concept
-general-game-playing artificial-intelligence
-generalization-error concept
-generative-adversarial-network generative-ai
+gaussian-process mathematical-object
+general-game-playing 'about(game)' artificial-intelligence
+generalization-error amount
+generative-adversarial-network generative-model
 generative-ai artificial-intelligence generative-model
 generative-ai-chatbot chatbot
 generative-model ai-model statistical-model
@@ -290,7 +289,7 @@ genetic-programming evolutionary-computation
 geometric-feature-learning feature-learning
 gibbs-sampling markov-chain-monte-carlo
 gofai symbolic-ai
-goodharts-law concept
+goodharts-law proposition
 governance-of-artificial-intelligence management
 gradient-boosting boosting-algorithm
 gradient-descent algorithm
@@ -299,10 +298,10 @@ graph-convolutional-network artificial-neural-network
 graph-embedding vector-embedding
 graph-neural-network artificial-neural-network
 graph-traversal search-algorithm
-greedy-algorithm algorithm
+greedy-algorithm '*'
 grid-search hyperparameter-optimization
-handwriting-recognition pattern-recognition
-hebbian-learning concept
+handwriting-recognition 'about(text)' pattern-recognition
+hebbian-learning theory
 heuristic rule
 heuristic-search-algorithm search-algorithm
 hidden-layer neural-network-layer
@@ -314,38 +313,38 @@ hierarchical-temporal-memory artificial-neural-network
 hill-climbing-search search-algorithm
 hits-algorithm algorithm
 hopfield-network recurrent-neural-network
-horn-clause concept
+horn-clause mathematical-expression
 human-based-computation computer-science
-human-computer-interaction computer-science
+human-computer-interaction '*'
 human-robot-interaction human-computer-interaction robotics
 humanoid-robot automaton
-hyperparameter concept
+hyperparameter amount
 hyperparameter-optimization automated-machine-learning mathematical-optimization
 image-classification computer-vision image-processing
-image-dataset dataset
-image-processing signal-processing
+image-dataset 'about(image)' dataset
+image-processing 'about(image)' signal-processing
 image-segmentation computer-vision
 image-to-image-translation image-processing machine-learning
 imitation-learning robot-learning
 incremental-learning machine-learning
 independent-component-analysis unsupervised-learning
-inductive-bias concept
+inductive-bias principle
 inductive-logic-programming inductive-programming logic-programming
 inductive-programming machine-learning
 industrial-robot automaton
 inference-engine software
-influence-diagram concept
+influence-diagram diagram
 information '*'
-information-bottleneck concept
+information-bottleneck method
 information-extraction information-retrieval natural-language-processing
-information-retrieval computer-science
-information-science computer-science
+information-retrieval '*'
+information-science 'about(information)' computer-science
 informed-search-algorithm search-algorithm
 instance-based-learning machine-learning
 instance-segmentation image-segmentation
 instruction-tuned-model large-language-model
-instrumental-convergence concept
-intelligence-amplification concept
+instrumental-convergence hypothesis
+intelligence-amplification activity
 intelligent-agent agent
 intelligent-system software
 intelligent-tutoring-system software
@@ -353,63 +352,63 @@ interactive-machine-learning machine-learning
 internet-bot software-agent
 inverse-kinematics robotics
 inverse-reinforcement-learning reinforcement-learning
-isomap nonlinear-dimensionality-reduction
+isomap machine-learning-algorithm
 iterative-deepening-depth-first-search depth-first-search
 junction-tree-algorithm algorithm
 k-means-clustering clustering-algorithm
 k-nearest-neighbors classification-algorithm
 kalman-filter algorithm
 kernel-method machine-learning-algorithm
-knowledge-base dataset
+knowledge-base '*'
 knowledge-based-agent intelligent-agent
 knowledge-based-system software
 knowledge-distillation machine-learning
 knowledge-engineering artificial-intelligence
 knowledge-extraction data-mining
-knowledge-graph knowledge-base
+knowledge-graph '*'
 knowledge-graph-embedding graph-embedding
 knowledge-management management
 knowledge-representation artificial-intelligence
-kolmogorov-complexity concept
+kolmogorov-complexity '*'
 langtons-ant cellular-automaton
 language '*'
-language-model ai-model statistical-model
+language-model 'about(language)' ai-model statistical-model
 large-action-model large-language-model
 large-language-model language-model
 latent-dirichlet-allocation generative-model
-latent-space concept
+latent-space mathematical-space
 latent-variable-model statistical-model
 law '*'
 lazy-learning machine-learning
 learning-analytics artificial-intelligence
-learning-rate concept
+learning-rate amount
 lemmatization natural-language-processing
-lidar device
+lidar '*'
 life-like-cellular-automaton cellular-automaton
 linear-classifier classification-algorithm
 linear-discriminant-analysis classification-algorithm
 linear-programming mathematical-optimization
 linguistics '*'
 link-prediction network-science
-linked-data information
-linked-open-data dataset linked-data
+linked-data '*'
+linked-open-data '*'
 locality-sensitive-hashing algorithm
-logic-programming computer-science
+logic-programming '*'
 logic-programming-language language
 logistic-regression classification-algorithm statistical-model
 long-short-term-memory recurrent-neural-network
-loss-function concept
+loss-function function
 machine '*'
 machine-ethics ethics-of-artificial-intelligence
-machine-learning artificial-intelligence
+machine-learning computer-science
 machine-learning-algorithm algorithm
 machine-perception artificial-intelligence
 machine-reading-comprehension natural-language-processing
 machine-translation natural-language-processing
 management '*'
-markov-chain concept
+markov-chain mathematical-object
 markov-chain-monte-carlo monte-carlo-method
-markov-decision-process concept
+markov-decision-process mathematical-object
 masked-language-model language-model
 mathematical-optimization mathematics
 mathematics '*'
@@ -427,12 +426,12 @@ microbot automaton
 microbotics robotics
 military-robot automaton
 minimax-rule algorithm
-minimum-description-length concept
+minimum-description-length principle
 mixture-model latent-variable-model
 mixture-of-experts-model large-language-model transformer-model
 mobile-robot automaton
 mobile-robotics robotics
-model-evaluation-method machine-learning
+model-evaluation-method method
 model-free-reinforcement-learning reinforcement-learning
 model-predictive-control control-theory
 modular-neural-network artificial-neural-network
@@ -452,8 +451,8 @@ multimodal-artificial-intelligence artificial-intelligence
 multimodal-large-language-model large-language-model
 multimodal-learning machine-learning
 multiple-instance-learning supervised-learning
-mutual-information concept
-n-gram concept
+mutual-information '*'
+n-gram information
 naive-bayes-classifier bayes-classifier
 named-entity-recognition information-extraction
 nanorobotics robotics
@@ -461,12 +460,12 @@ natural-language-generation natural-language-processing
 natural-language-processing artificial-intelligence computational-linguistics information-science
 natural-language-understanding natural-language-processing
 nearest-neighbor-classifier classification-algorithm
-neat-algorithm neuroevolution
+neat-algorithm evolutionary-algorithm
 negative-feedback feedback-loop
-network-science mathematics
+network-science 'about(complex-network)' mathematics
 neural-architecture-search automated-machine-learning
 neural-machine-translation machine-translation
-neural-network-layer concept
+neural-network-layer information
 neural-network-model artificial-neural-network
 neural-radiance-field ai-model
 neural-turing-machine memory-augmented-neural-network
@@ -474,7 +473,7 @@ neuro-symbolic-ai artificial-intelligence
 neuroevolution evolutionary-computation
 neuromorphic-engineering engineering
 neurorobotics robotics
-no-free-lunch-theorem concept
+no-free-lunch-theorem theorem
 non-negative-matrix-factorization algorithm
 nonlinear-dimensionality-reduction dimensionality-reduction
 nouvelle-ai artificial-intelligence
@@ -484,23 +483,23 @@ one-class-classification statistical-classification
 one-shot-learning few-shot-learning
 online-algorithm algorithm
 online-machine-learning incremental-learning
-ontology-alignment knowledge-engineering
-ontology-engineering knowledge-engineering
-ontology-learning knowledge-engineering
-open-world-assumption concept
+ontology-alignment 'about(computational-ontology)' data-processing knowledge-engineering
+ontology-engineering 'about(computational-ontology)' knowledge-engineering
+ontology-learning 'about(computational-ontology)' knowledge-engineering
+open-world-assumption principle
 operations-research research
-optical-character-recognition pattern-recognition
-optical-flow concept
+optical-character-recognition 'about(text)' pattern-recognition
+optical-flow attribute
 optimal-control control-theory
-overfitting concept
-pac-learning computational-learning-theory concept
-pagerank algorithm
+overfitting condition
+pac-learning computational-learning-theory
+pagerank '*'
 panoptic-segmentation image-segmentation
-parser computer-program
+parser '*'
 part-of-speech-tagging natural-language-processing
 partial-order-planning automated-planning
 particle-filter algorithm
-particle-swarm-optimization swarm-intelligence
+particle-swarm-optimization metaheuristic
 path-planning motion-planning
 pathfinding search-algorithm
 pattern-recognition machine-learning
@@ -509,7 +508,7 @@ pedestrian-detection object-detection
 perceptron feedforward-neural-network linear-classifier
 personal-robot automaton
 philosophy '*'
-philosophy-of-artificial-intelligence philosophy
+philosophy-of-artificial-intelligence 'about(artificial-intelligence)' philosophy
 policy-gradient-method reinforcement-learning
 positive-feedback feedback-loop
 precision-and-recall model-evaluation-method
@@ -522,19 +521,19 @@ problem '*'
 procedure '*'
 process '*'
 prompt-engineering procedure
-proximal-policy-optimization model-free-reinforcement-learning policy-gradient-method
+proximal-policy-optimization machine-learning-algorithm
 pulse-coupled-network artificial-neural-network
-q-learning model-free-reinforcement-learning
+q-learning machine-learning-algorithm
 qualitative-reasoning artificial-intelligence
 quantum-machine-learning machine-learning
 quantum-neural-network artificial-neural-network
 question-answering natural-language-processing
-rademacher-complexity concept
-radial-basis-function concept
+rademacher-complexity amount
+radial-basis-function function
 radial-basis-function-network artificial-neural-network
-random-forest ensemble-learning
+random-forest machine-learning-algorithm
 rational-agent agent
-rdf-graph dataset
+rdf-graph '*'
 reactive-planning automated-planning
 reasoning-language-model large-language-model
 receiver-operating-characteristic model-evaluation-method
@@ -542,7 +541,7 @@ recommender-system software
 recurrent-neural-network artificial-neural-network
 recursive-neural-network recurrent-neural-network
 region-based-convolutional-neural-network convolutional-neural-network
-regulation-of-artificial-intelligence law
+regulation-of-artificial-intelligence 'about(artificial-intelligence)' law
 reinforcement-learning machine-learning
 reinforcement-learning-from-human-feedback reinforcement-learning
 relationship-extraction text-mining
@@ -550,7 +549,7 @@ rescue-robot automaton
 research '*'
 reservoir-computing recurrent-neural-network
 residual-neural-network artificial-neural-network
-resource-description-framework concept
+resource-description-framework '*'
 restricted-boltzmann-machine boltzmann-machine stochastic-neural-network
 retrieval-augmented-generation generative-ai natural-language-processing
 reversible-cellular-automaton cellular-automaton
@@ -561,11 +560,11 @@ robot-end-effector device
 robot-learning machine-learning
 robot-navigation robotics
 robot-planning robotics
-robot-rights concept
+robot-rights attribute
 robotic-arm automaton
 robotic-manipulator machine
 robotic-spacecraft automaton
-robotics artificial-intelligence
+robotics 'about(automaton)' artificial-intelligence
 robust-control control-theory
 rule '*'
 rule-based-expert-system expert-system
@@ -573,13 +572,13 @@ rule-based-machine-learning machine-learning
 rule-based-machine-translation machine-translation
 rule-based-system knowledge-based-system
 rule-induction machine-learning
-sample-complexity concept
+sample-complexity amount
 sat-solver software
-satisficing concept
+satisficing method
 scalable-oversight ai-alignment
 scale-free-network complex-network
 science '*'
-search-algorithm algorithm
+search-algorithm '*'
 self-attention attention-mechanism
 self-organization process
 self-organizing-map artificial-neural-network
@@ -591,7 +590,7 @@ semantic-parsing natural-language-processing
 semantic-reasoner inference-engine
 semantic-role-labeling natural-language-processing
 semantic-segmentation image-segmentation
-semantic-web concept
+semantic-web '*'
 semi-supervised-learning machine-learning
 sensor-fusion machine-perception
 sentence-embedding feature-learning natural-language-processing
@@ -601,12 +600,12 @@ sequence-to-sequence-learning machine-learning
 service-robot automaton
 servo control-system mechanism
 sigmoid-function activation-function
-signal-processing engineering
-similarity-measure concept
+signal-processing '*'
+similarity-measure function
 simulated-annealing metaheuristic
 simultaneous-localization-and-mapping robot-navigation
-situated-cognition concept
-situation-calculus concept
+situated-cognition 'about(cognition)' theory
+situation-calculus formal-system
 small-language-model language-model
 small-world-network complex-network
 social-robot automaton
@@ -615,24 +614,24 @@ soft-robotics robotics
 softmax-function activation-function
 software '*'
 software-agent '*'
-sorting-algorithm algorithm
-sparql language
+sorting-algorithm '*'
+sparql '*'
 sparse-dictionary-learning feature-learning
 sparse-distributed-memory ai-model
 spatial-temporal-reasoning artificial-intelligence
-speaker-verification signal-processing
+speaker-verification 'about(speech)' signal-processing
 specification-gaming problem
-speech-dataset dataset
+speech-dataset 'about(speech)' dataset
 speech-recognition machine-perception natural-language-processing
 speech-synthesis natural-language-processing
 spiking-neural-network artificial-neural-network
-state-observer concept
+state-observer system
 state-space-search search-algorithm
 statistical-classification machine-learning
 statistical-language-model language-model
-statistical-learning-theory computational-learning-theory concept
+statistical-learning-theory computational-learning-theory
 statistical-machine-translation machine-translation
-statistical-model concept
+statistical-model information
 statistical-relational-learning machine-learning
 statistics '*'
 stemmer algorithm
@@ -640,14 +639,14 @@ stemming natural-language-processing
 stochastic-block-model generative-model
 stochastic-gradient-descent gradient-descent
 stochastic-neural-network artificial-neural-network
-stop-word concept
-string-searching-algorithm search-algorithm
+stop-word word
+string-searching-algorithm '*'
 structure-from-motion 3d-reconstruction
 structured-prediction machine-learning
 subsumption-architecture cognitive-architecture
 superintelligence artificial-general-intelligence
 supervised-learning machine-learning
-support-vector-machine classification-algorithm supervised-learning
+support-vector-machine classification-algorithm
 swarm-intelligence artificial-intelligence
 swarm-robotics robotics
 symbol-grounding-problem problem
@@ -656,7 +655,7 @@ syntactic-parsing natural-language-processing
 synthetic-data information
 synthetic-media information
 system-identification control-theory
-t-sne nonlinear-dimensionality-reduction
+t-sne machine-learning-algorithm
 tabu-search metaheuristic
 teacher-forcing procedure
 teleoperation procedure
@@ -668,7 +667,7 @@ text-segmentation natural-language-processing
 text-to-image-model generative-model
 text-to-video-model generative-model
 text-tokenization natural-language-processing
-tf-idf concept
+tf-idf '*'
 thinking '*'
 thompson-sampling algorithm
 topic-model latent-variable-model
@@ -678,24 +677,23 @@ transductive-learning supervised-learning
 transfer-learning machine-learning
 transformer-model artificial-neural-network
 tree-traversal graph-traversal
-triplestore database software
+triplestore '*'
 turing-test procedure
 u-net convolutional-neural-network
-uncanny-valley concept
+uncanny-valley 'about(humanoid-robot)' hypothesis
 underwater-robot automaton
 uniform-cost-search search-algorithm
 uninformed-search-algorithm search-algorithm
-universal-approximation-theorem concept
-unmanned-aerial-vehicle aircraft
+universal-approximation-theorem theorem
 unsupervised-learning machine-learning
 upper-confidence-bound algorithm
-user-modeling concept
+user-modeling activity
 value-alignment ai-alignment
-value-function concept
+value-function function
 vanishing-gradient-problem problem
 variational-autoencoder autoencoder
 vector-database software
-vector-embedding concept
+vector-embedding information
 vehicle '*'
 virtual-assistant software-agent
 virtual-human computer-simulation
@@ -704,11 +702,43 @@ visual-odometry computer-vision
 voice-user-interface software
 weak-artificial-intelligence artificial-intelligence
 weakly-supervised-learning supervised-learning
-web-crawler information internet-bot
-web-ontology-language language
+web-crawler internet-bot
+web-ontology-language '*'
 weighted-constraint-satisfaction-problem constraint-satisfaction-problem
 winner-take-all-network recurrent-neural-network
 word-embedding vector-embedding
 word-sense-disambiguation natural-language-processing
 world-model ai-model
 zero-shot-learning machine-learning
+amount '*'
+brain '*'
+change '*'
+cognition '*'
+condition '*'
+danger '*'
+data-processing '*'
+diagram '*'
+document '*'
+education '*'
+emotion '*'
+equation '*'
+formal-system '*'
+function '*'
+game '*'
+hypothesis '*'
+image '*'
+mathematical-expression '*'
+mathematical-object '*'
+mathematical-set '*'
+mathematical-space '*'
+mind '*'
+plan '*'
+principle '*'
+proposition '*'
+speech '*'
+state '*'
+system '*'
+text '*'
+theorem '*'
+theory '*'
+word '*'
