@@ -4,7 +4,7 @@ align/roles-rewrites.tsv, the unit heads core declares for the quantity
 names it owns (align/core-heads.tsv, ROLES.md §8 item 23), and the
 unit-family pins of every dimension head (ROLES.md §8 item 21), and the
 rulings of align/rulings-v*.tsv (a later core version's edge decisions:
-move, parent+, add).
+move, parent+, add, cut, drop, refine, refine-cross, promote, disown).
 
     python3 tools/step7.py            # rewrite build/core.od and packs/*/build/*.od
     python3 tools/step7.py --check    # report only
@@ -17,8 +17,10 @@ build (an error, so the build stops rather than ship half a decision).
 
 A name is a name in every pack: a rename rewrites it wherever it occurs, as
 a node or a parent. A drop removes a node that must have no children.
-A merge whose target is a core name moves the entry's parents into core,
-since a pack never carries entries for core names.
+A merge whose target is a core name moves the entry's parents into core.
+A pack may carry an entry for a core name only to refine it (the rulings
+actions `refine` and `refine-cross`): it adds a parent from the pack, never
+removes or renames anything, and core keeps its own edge.
 """
 import shlex
 import sys
@@ -107,19 +109,30 @@ def main():
 
     def mentions(name):
         return [(k, n) for k, (_, par) in graphs.items()
-                for n, ps in par.items() if name in ps]
+                for n, ps in par.items()
+                if name in ps or any(x.endswith(f"({name})") for x in ps)]
+
+    def renamed(x, old, new):
+        if x == old:
+            return new
+        if "(" in x and x[x.index("(") + 1:-1] == old:      # in(old), about(old)
+            return x[:x.index("(") + 1] + new + ")"
+        return x
 
     def rename(old, new):
         for k, (order, par) in graphs.items():
             if old in par:
                 if new in par:
-                    par[new] = sorted(set(par[new]) | set(par.pop(old)))
+                    joined = set(par[new]) | set(par.pop(old))
+                    par[new] = sorted(joined - {"*"}) or ["*"]   # into a stub: the stub fills
                 else:
                     par[new] = par.pop(old)
                     order[order.index(old)] = new
             for n, ps in par.items():
-                if old in ps:
-                    par[n] = [new if x == old else x for x in ps]
+                if any(renamed(x, old, new) != x for x in ps):
+                    par[n] = [renamed(x, old, new) for x in ps]
+            if new in par.get(new, []):               # a child merged into its parent
+                par[new] = [x for x in par[new] if x != new]
 
     rows = table(RENAMES)
     for i, (pack, old, new, kind, *note) in enumerate(rows):
@@ -144,6 +157,8 @@ def main():
         if not where(old) and not mentions(old):
             log.append(f"already  {kind} {old} -> {new}")
             continue
+        # refine-merge: a pack's duplicate of a core name keeps its own parent
+        # as a refinement in the pack (plain rename); merge moves it into core
         if kind == "merge" and new in graphs["core"][1] and pack != "core":
             moved = graphs[pack][1].pop(old, [])
             core = graphs["core"][1]
@@ -158,12 +173,18 @@ def main():
         borrowing a sibling's name is its .od's business (written as a stub);
         core may lean on no pack."""
         if pack == "core":
-            return core_names
+            return core_names | set(graphs["core"][1])   # and what a ruling has added
         return {n for _, par in graphs.values() for n in par}
+    # A rewritten edge that a later ruling changes again (the concept pass
+    # moved account-abstraction off concept) is done, not missing.
+    ruled = {(r[0], r[1]) for path in RULINGS for r in table(path)}
     for pack, sub, old_sup, action, new_parents, relation in table(REWRITES):
         if action == "keep":
             continue
         order, par = graphs[pack]
+        if (pack, sub) in ruled and sub in par and old_sup not in par[sub]:
+            log.append(f"already  {sub}: {old_sup} -> (rewritten, then ruled on)")
+            continue
         if "(drop the name" in new_parents:
             if sub not in par:
                 log.append(f"already  drop {sub}")
@@ -200,26 +221,27 @@ def main():
             par[child] = sorted(set(par.get(child, [])) | {parent})
             log.append(f"applied  {child} ⊑ {parent}")
 
-    # A sibling's name a rewrite brought into a pack is written there as a
-    # stub, as the build writes every borrowed name (UPPER.md §8.1).
-    for pack, (order, par) in graphs.items():
-        if pack == "core":
-            continue
-        used = set()
-        for ps in par.values():
-            for x in ps:
-                if x.startswith(tuple(k + "(" for k in PINNABLE)):
-                    continue                          # a family pin, not a name
-                used |= {x[x.index("(") + 1:-1]} if "(" in x else {x}
-        for name in sorted(used - set(par) - core_names - {"*"}):
-            if any(name in g[1] for k, g in graphs.items() if k != pack):
-                par[name] = ["*"]
-                order.append(name)
-                log.append(f"applied  {pack} borrows {name}")
+    def union_ancestors(name):
+        """Every name above `name` in core and all packs together."""
+        seen, todo = set(), [name]
+        while todo:
+            n = todo.pop()
+            for k, (_, par) in graphs.items():
+                for x in par.get(n, []):
+                    if x != "*" and "(" not in x and x not in seen:
+                        seen.add(x)
+                        todo.append(x)
+        return seen
 
+    disowned = {(r[0], r[1]): set(r[4].split()) or {"*"}
+                for path in RULINGS for r in table(path) if r[2] == "disown"}
     for path in RULINGS:
         for pack, sub, action, old, new, *note in table(path):
             order, par = graphs[pack]
+            if (action != "disown" and (pack, sub) in disowned
+                    and set(par.get(sub, [])) == disowned[(pack, sub)]):
+                log.append(f"already  {action} {sub} ({pack} has disowned its copy)")
+                continue
             want = new.split()
             if action == "add":
                 if sub in par:
@@ -245,7 +267,9 @@ def main():
                     continue
                 target = [] if want == ["*"] else want
                 if old not in par[sub]:
-                    done = set(target) <= set(par[sub]) and (target or par[sub] in ([], ["*"]))
+                    # a name promoted into core later carries its parents there
+                    have = set(par[sub]) | (set(graphs["core"][1].get(sub, [])) if pack != "core" else set())
+                    done = set(target) <= have and (target or par[sub] in ([], ["*"]))
                     if done:
                         log.append(f"already  {sub}: {old} -> {new}")
                     else:
@@ -254,11 +278,131 @@ def main():
                 rest = (set(par[sub]) - {old}) | set(target)
                 par[sub] = sorted(rest) if rest else ["*"]
                 log.append(f"applied  {sub}: {old} -> {new}")
+            elif action == "cut":
+                # drop the edge sub ⊑ old; the node keeps its other parents
+                if sub not in par:
+                    errors.append(f"{pack}: no node {sub!r}")
+                elif old not in par[sub]:
+                    log.append(f"already  cut {sub} ⊑ {old}")
+                elif not set(par[sub]) - {old, "*"}:
+                    errors.append(f"cut {sub} ⊑ {old}: it is {sub}'s only parent (use move)")
+                else:
+                    par[sub] = sorted(set(par[sub]) - {old})
+                    log.append(f"applied  cut {sub} ⊑ {old}")
+                want = []
+            elif action in ("refine", "refine-cross"):
+                # A pack adds a parent to a core name: refinement by merge.
+                # core keeps its own edge (it leans on no pack); merging the
+                # pack drops that edge as implied. `refine` must insert a
+                # level: the new parent lies under one of the core node's
+                # parents. `refine-cross` is a reviewed cross-branch claim.
+                core = graphs["core"][1]
+                if pack == "core" or sub not in core:
+                    errors.append(f"{action} {sub}: not a core name refined by a pack")
+                    want = []
+                elif set(want) <= set(par.get(sub, [])):
+                    log.append(f"already  {pack} refines {sub} ⊑ {' '.join(want)}")
+                else:
+                    for x in want:
+                        if "(" in x:
+                            errors.append(f"{action} {sub} ⊑ {x}: a refinement adds a kind, never a "
+                                          f"relation or a unit pin (whoever owns a name declares its head)")
+                        elif x in core:
+                            errors.append(f"{action} {sub} ⊑ {x}: a core-to-core edge belongs in core")
+                        elif action == "refine" and not any(
+                                c in union_ancestors(x) for c in core[sub] if c != "*" and "(" not in c):
+                            errors.append(f"refine {sub} ⊑ {x}: {x} is not under any of "
+                                          f"{sub}'s core parents (a cross-branch claim: refine-cross)")
+                    if sub not in par:
+                        order.append(sub)
+                    par[sub] = sorted((set(par.get(sub, [])) - {"*"}) | set(want))
+                    log.append(f"applied  {pack} refines {sub} ⊑ {' '.join(want)}")
+            elif action == "promote":
+                # A pack's general name moves into core (a hinge several packs
+                # use), with the core parents in `new`. The pack keeps any
+                # parent of its own as a refinement, which must insert a tier
+                # under one of the core parents; otherwise its entry becomes a
+                # stub, as for every core name it hangs from.
+                core_order, core = graphs["core"]
+                if pack == "core":
+                    errors.append(f"promote {sub}: name a pack")
+                    want = []
+                elif any(x not in core for x in want):
+                    errors.append(f"promote {sub}: core parents only, got {want}")
+                    want = []
+                elif sub in core and set(want) <= set(core[sub]) and all(
+                        x == "*" or x not in core for x in par.get(sub, ["*"])):
+                    log.append(f"already  promote {sub} ⊑ {' '.join(want)} ({pack})")
+                    want = []
+                elif sub not in par and sub not in core:
+                    errors.append(f"{pack}: no node {sub!r} to promote")
+                    want = []
+                else:
+                    if sub not in core:
+                        core_order.append(sub)
+                    core[sub] = sorted((set(core.get(sub, [])) - {"*"}) | set(want))
+                    keep = [x for x in par.get(sub, []) if x != "*" and x not in core]
+                    for x in keep:
+                        if "(" in x or not any(c in union_ancestors(x) for c in want):
+                            errors.append(f"promote {sub}: {pack} keeps {x}, which is not under {want}")
+                    if sub not in par:
+                        order.append(sub)
+                    par[sub] = sorted(keep) if keep else ["*"]
+                    log.append(f"applied  promote {sub} ⊑ {' '.join(want)} into core"
+                               + (f"; {pack} refines it ⊑ {' '.join(keep)}" if keep else ""))
+                want = []
+            elif action == "disown":
+                # One owner per name: a pack gives up its copy of a name that
+                # core or a sibling pack owns, keeping a stub (a borrowed name).
+                others = [k for k, (_, p) in graphs.items()
+                          if k != pack and p.get(sub) not in (None, ["*"])]
+                if not others:
+                    errors.append(f"disown {sub}: no other store owns it")
+                elif set(par.get(sub) or ["*"]) == (set(want) or {"*"}):
+                    log.append(f"already  {pack} disowns {sub}")
+                elif not set(want) <= set(par.get(sub, [])):
+                    errors.append(f"disown {sub}: {pack} can keep only parents it has, not {want}")
+                else:
+                    # `new` lists the parents the pack's own vocabulary adds:
+                    # it keeps them as a refinement of the owner's name
+                    par[sub] = sorted(want) or ["*"]
+                    log.append(f"applied  {pack} disowns {sub} (owned by {', '.join(others)})"
+                               + (f", keeping ⊑ {' '.join(want)}" if want else ""))
+                want = []
+            elif action == "drop":
+                # remove the node; its children must have been moved first
+                if sub not in par:
+                    log.append(f"already  drop {sub}")
+                elif mentions(sub):
+                    errors.append(f"drop {sub}: it has children {mentions(sub)}")
+                else:
+                    del par[sub]
+                    log.append(f"applied  drop {sub}")
+                want = []
             else:
                 errors.append(f"{path.name}: unknown action {action!r}")
             for x in want:
-                if x != "*" and x not in known_to(pack):
-                    errors.append(f"{sub}: no node {x!r} for {pack}")
+                name = x[x.index("(") + 1:-1] if "(" in x else x   # about(x), in(x): the argument
+                if x != "*" and name not in known_to(pack):
+                    errors.append(f"{sub}: no node {name!r} for {pack}")
+
+    # A name from core or a sibling that a rewrite or a ruling brought into
+    # a pack is written there as a stub, as the build writes every borrowed
+    # name (UPPER.md §8.1).
+    for pack, (order, par) in graphs.items():
+        if pack == "core":
+            continue
+        used = set()
+        for ps in par.values():
+            for x in ps:
+                if x.startswith(tuple(k + "(" for k in PINNABLE)):
+                    continue                          # a family pin, not a name
+                used |= {x[x.index("(") + 1:-1]} if "(" in x else {x}
+        for name in sorted(used - set(par) - {"*"}):
+            if any(name in g[1] for k, g in graphs.items() if k != pack):
+                par[name] = ["*"]
+                order.append(name)
+                log.append(f"applied  {pack} borrows {name}")
 
     core = graphs["core"][1]
     for name, family, drop, *note in table(CORE_HEADS):

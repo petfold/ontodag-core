@@ -6,8 +6,8 @@ Writes src/ontodag/domain/<name>.py for every domain pack (default: all ten):
 PACK = the pack's own claims as (name, parents); BORROWED = the names it hangs
 things from that belong to a SIBLING pack (written as parentless entries so
 the pack adopts alone, at top level until the sibling arrives — UPPER.md
-§8.1); core's and the prelude's names are parents only, never entries, since
-`pack NAME` applies core first.
+§8.1); core's and the prelude's names are parents, and entries only where the
+pack refines them with a parent of its own; `pack NAME` applies core first.
 """
 import shlex
 import re
@@ -37,11 +37,27 @@ def read_od(path):
     return par
 
 
+ALL = {n: read_od(HERE / "packs" / n / "build" / f"{n}.od") for n in PACKS}
+
+
+def uses(name, borrowed):
+    """The sibling packs whose own entries the borrowed names are: a soft
+    dependency, which `odag pack` offers (ontodag packs.uses)."""
+    return tuple(sorted({q for b in borrowed for q, par in ALL.items()
+                         if q != name and par.get(b)}))
+
+
 for name in PACKS:
     par = read_od(HERE / "packs" / name / "build" / f"{name}.od")
     own = {n: p for n, p in par.items() if p and n not in core_names}
+    # A pack's entry for a core name refines it: an extra parent from the pack
+    # (step7's refine rows). Merged into a store with core, core's own edge
+    # becomes implied and reduction drops it.
+    own.update({n: p for n, p in par.items() if p and n in core_names
+                and n not in {d for d, _ in DECLARATIONS}})
     borrowed = sorted(n for n, p in par.items() if not p and n not in core_names)
-    mentioned = {x for p in own.values() for x in p}
+    mentioned = {x[x.index("(") + 1:-1] if "(" in x else x      # about(x), in(x): the argument
+                 for p in own.values() for x in p}
     borrowed = [n for n in borrowed if n in mentioned]      # a borrowed name nothing hangs from is noise
     target = ontodag / "src/ontodag/domain" / f"{name}.py"
     # VERSION is a hand-bumped fact about the pack's history, not derivable from the
@@ -55,15 +71,21 @@ GENERATED — do not edit by hand. Built by consensus in the sister repo
 github.com/petfold/ontodag-core (packs/{name}, commit {commit}) from WordNet 3.0
 and Wikidata with hand rulings; every name is a plain word that no everyday
 sense already owns (a pack never takes an everyday word). It presumes `core`,
-which `pack {name}` applies first; core's names appear below only as parents.
+which `pack {name}` applies first; core's names appear below as parents, and as
+entries only where the pack refines them (adds a parent from the pack).
 `BORROWED` are names that belong to a sibling pack — entered parentless so
 this pack adopts on its own, filed the moment the sibling is adopted
-(refinement by merge). ontodag-core's docs/UPPER.md §8 is the record.
+(refinement by merge); `USES` names those siblings, a soft dependency.
+ontodag-core's docs/UPPER.md §8 is the record.
 """
 
 VERSION = {version}
 
 BORROWED = {tuple(borrowed)!r}
+
+# The sibling packs the borrowed names belong to: offered by `odag pack`,
+# never adopted for you (core, by contrast, always comes along).
+USES = {uses(name, borrowed)!r}
 
 # (name, parents) — sorted by name.
 PACK = (
