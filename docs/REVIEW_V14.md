@@ -591,6 +591,15 @@ still stored when another path implies it, so the result does not depend
 on rule order. The regen tools and `tools/closure.py` skip the term nodes
 and the prelude's declarations that a canonical file also holds.
 
+Since 2026-10-17 (Peter: a geography pack may hold thousands of `in()`
+terms) the files are ontodag's canonical form 2. A term whose line would
+say only where it is anchored (`'about(address)' about`, `'in(alps)' in`,
+`'linear-dimension(area)' linear-dimension`) has no line; the load derives
+it from the lines filed under it. Core lost 45 such lines and the packs
+309. Every file loads to the same store as before, and a replay from the
+v13 files reproduces them byte for byte. The knowledge ids moved, because
+they name the text.
+
 **Peter's doubtful-list answers** (column 3) applied:
 - machine learning moves from artificial intelligence to computer science;
 - championship and meeting are events only;
