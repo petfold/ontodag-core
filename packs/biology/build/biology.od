@@ -1,19 +1,17 @@
 # ontodag store v1
-#:canonical 6.0 69701c7c0894d96987a3387fa3d89955a10c71dacc9b4b8b75a9c00272a96e44 2
+#:canonical 6.0 715a2f5eb5c79f66db66128df760bf3b364492891142a22bb1545df98eb82288 2
 about enclosing-dimension
 #:meta acanthocyte '{"gloss": "an abnormal red blood cell that has thorny projections of protoplasm", "wn30": "05454452-n"}'
 acanthocyte cell
 #:meta acid-base-equilibrium '{"gloss": "(physiology) the normal equilibrium between acids and alkalis in the body", "wn30": "13425980-n"}'
 acid-base-equilibrium state
-act '*'
 activity '*'
-agent '*'
 #:meta akaryocyte '{"gloss": "a cell without a nucleus (as an erythrocyte)", "wn30": "05449538-n"}'
 akaryocyte cell
 #:meta allele '{"gloss": "(genetics) either of a pair (or series) of alternative forms of a gene that can occupy the same locus on a particular chromosome and that control the same character", "wn30": "05437785-n"}'
 allele gene
 #:meta ameloblast '{"gloss": "a cell from which tooth enamel develops", "wn30": "05448053-n"}'
-ameloblast embryonic-cell
+ameloblast somatic-cell
 #:meta amino-acid '{"gloss": "organic compounds containing an amino group and a carboxylic acid group", "wn30": "14601829-n"}'
 amino-acid compound
 #:meta amphidiploid '{"gloss": "(genetics) an organism or cell having a diploid set of chromosomes from each parent", "wn30": "01319932-n"}'
@@ -22,7 +20,7 @@ amphidiploid organism
 anatomy 'about(body)' biology
 animal '*'
 #:meta animal-egg '{"gloss": "animal reproductive body consisting of an ovum or embryo together with nutritive and protective envelopes; especially the thin-shelled reproductive body laid by e.g. female birds", "wn30": "01460457-n"}'
-animal-egg ovum
+animal-egg natural-object
 #:meta anisogamete '{"gloss": "either of a pair of unlike gametes especially those unlike in size", "wn30": "05457201-n"}'
 anisogamete gamete
 #:meta anisogamy '{"gloss": "(biology) reproduction by the union or fusion of two differing gametes (especially differing in size)", "wn30": "13432249-n"}'
@@ -35,7 +33,7 @@ antagonistic-muscle muscle
 antherozoid gamete
 #:meta apogamy '{"gloss": "(botany) development of an embryo without fertilization; especially the development in some ferns of a sporophyte from the gametophyte without fertilization", "wn30": "13433462-n"}'
 apogamy reproduction
-#:meta apophysis '{"gloss": "(botany) a natural swelling or enlargement: at the base of the stalk or seta in certain mosses or on the cone scale of certain conifers", "wn30": "13088460-n"}'
+#:meta apophysis '{"gloss": "(anatomy) a natural outgrowth or projection on an organ or body part such as the process of a vertebra", "wn30": "05473104-n"}'
 apophysis body-part
 #:meta appositional-growth '{"gloss": "(biology) growth in the thickness of a cell wall by the deposit of successive layers of material", "wn30": "13433948-n"}'
 appositional-growth growth
@@ -97,8 +95,6 @@ blastocyte embryonic-cell
 blastomere embryonic-cell
 #:meta blood-cell '{"gloss": "either of two types of cells (erythrocytes and leukocytes) and sometimes including platelets", "wn30": "05449268-n"}'
 blood-cell somatic-cell
-#:meta bodily-humor '{"gloss": "(Middle Ages) one of the four fluids in the body whose balance was believed to determine your emotional and physical state", "wn30": "05604535-n"}'
-bodily-humor substance
 body '*'
 body-part '*'
 #:meta bone-cell '{"gloss": "a cell that is part of a bone", "wn30": "05447599-n"}'
@@ -138,12 +134,10 @@ chromosomal-inversion mutation
 chromosomal-translocation organic-process
 #:meta chromosome '{"gloss": "a threadlike strand of DNA in the cell nucleus that carries the genes in a linear order", "wn30": "05442131-n"}'
 chromosome natural-object
-classification-scheme '*'
 #:meta cloning-vector '{"gloss": "(genetics) a virus or other agent that is used to deliver DNA to a cell", "wn30": "01372038-n"}'
 cloning-vector physical-object
 #:meta coarctation '{"gloss": "(biology) a narrowing or constriction of a vessel or canal; especially a congenital narrowing of the aorta", "wn30": "05071185-n"}'
-coarctation attribute event
-cognition '*'
+coarctation attribute
 collection '*'
 #:meta columnar-cell '{"gloss": "an epithelial cell that is shaped like a column; some have cilia", "wn30": "05242070-n"}'
 columnar-cell epithelial-cell
@@ -165,11 +159,8 @@ count-dimension dimension
 crustacean-roe spawn
 #:meta cuboidal-cell '{"gloss": "an epithelial cell that shaped like a cube", "wn30": "05242396-n"}'
 cuboidal-cell epithelial-cell
-#:meta culture-medium '{"gloss": "(biology) a substance in which specimens are preserved or displayed", "wn30": "14899530-n"}'
+#:meta culture-medium '{"gloss": "(bacteriology) a nutrient substance (solid or liquid) that is used to cultivate micro-organisms", "wn30": "14899328-n"}'
 culture-medium substance
-cybernetics '*'
-#:meta cystic-fibrosis-transport-regulator '{"gloss": "the gene that is mutated in cystic fibrosis", "wn30": "05439810-n"}'
-cystic-fibrosis-transport-regulator mutant-gene
 #:meta daughter-cell '{"gloss": "a cell formed by the division or budding of another cell", "wn30": "11688552-n"}'
 daughter-cell cell
 #:meta dehiscence '{"gloss": "(biology) release of material by splitting open of an organ or tissue; the natural bursting open at maturity of a fruit or other reproductive body to release seeds or spores or the bursting open of a surgically closed wound", "wn30": "11444816-n"}'
@@ -179,8 +170,6 @@ dendrite nerve-fiber part
 dimension '*'
 #:meta diploid '{"gloss": "(genetics) an organism or cell having the normal amount of DNA per cell; i.e., two sets of chromosomes or twice the haploid number", "wn30": "01320093-n"}'
 diploid organism
-#:meta dissilience '{"gloss": "the emergence of seeds as seed pods burst open when they are ripe", "wn30": "07434782-n"}'
-dissilience event
 #:meta dna '{"gloss": "(biochemistry) a long linear polymer found in the nucleus of a cell and formed from nucleotides and shaped like a double helix; associated with the transmission of genetic information", "wn30": "14830364-n"}'
 dna nucleic-acid
 #:meta dna-replication '{"gloss": "(genetics) the process whereby DNA makes a copy of itself before cell division", "wn30": "13549916-n"}'
@@ -188,8 +177,6 @@ dna-replication organic-process
 dominance-dimension dimension
 #:meta dominant-allele '{"gloss": "an allele that produces the same phenotype whether its paired allele is identical or different", "wn30": "05438130-n"}'
 dominant-allele allele
-#:meta dominant-gene '{"gloss": "gene that produces the same phenotype in the organism whether or not its allele identical", "wn30": "05437600-n"}'
-dominant-gene gene
 duration 'linear-dimension(duration)'
 #:meta ecological-establishment '{"gloss": "(ecology) the process by which a plant or animal becomes established in a new habitat", "wn30": "13476267-n"}'
 ecological-establishment process
@@ -200,9 +187,9 @@ ecological-succession organic-process
 #:meta ecology '{"gloss": "the branch of biology concerned with the relations between organisms and their environment", "wn30": "06070929-n"}'
 ecology 'about(environment)' biology
 #:meta ecosystem '{"gloss": "a system formed by the interaction of a community of organisms with their physical environment", "wn30": "08368757-n"}'
-ecosystem environment system
-#:meta effector '{"gloss": "a nerve fiber that terminates on a muscle or gland and stimulates contraction or secretion", "wn30": "05465228-n"}'
-effector nerve-fiber
+ecosystem system
+#:meta effector '{"gloss": "an organ (a gland or muscle) that becomes active in response to nerve impulses", "wn30": "05298421-n"}'
+effector organ
 electric-shock organic-process
 embryo '*'
 #:meta embryology '{"gloss": "the branch of biology that studies the formation and early development of living organisms", "wn30": "06071426-n"}'
@@ -213,7 +200,7 @@ enclosing-dimension dimension
 energy 'linear-dimension(energy)'
 environment '*'
 #:meta enzyme '{"gloss": "any of several complex proteins that are produced by cells and act as catalysts in specific biochemical reactions", "wn30": "14732946-n"}'
-enzyme biological-activator protein
+enzyme protein
 #:meta eosinophil '{"gloss": "a leukocyte readily stained with eosin", "wn30": "05453943-n"}'
 eosinophil granulocyte
 #:meta epidermal-cell '{"gloss": "any of the cells making up the epidermis", "wn30": "05241218-n"}'
@@ -223,8 +210,8 @@ epithelial-cell somatic-cell
 equilibrium '*'
 #:meta erythroblast '{"gloss": "a nucleated cell in bone marrow from which red blood cells develop", "wn30": "05448257-n"}'
 erythroblast somatic-cell
-#:meta estivation '{"gloss": "(botany) the arrangement of sepals and petals in a flower bud before it opens", "wn30": "07947069-n"}'
-estivation attribute
+#:meta estivation '{"gloss": "(zoology) cessation or slowing of activity during the summer; especially slowing of metabolism in some animals during a hot or dry period", "wn30": "14014162-n"}'
+estivation state
 #:meta etiolation '{"gloss": "(botany) the act of causing a plant to develop without chlorophyll by growing it without exposure to sunlight", "wn30": "00274206-n"}'
 etiolation organic-process
 #:meta eukaryote '{"gloss": "an organism with cells characteristic of all life forms except primitive microorganisms such as bacteria; i.e. an organism with `good'"'"' or membrane-bound nuclei in its cells", "wn30": "01415626-n"}'
@@ -239,7 +226,6 @@ fiber-cell cell
 fibroblast somatic-cell
 #:meta fibrous-astrocyte '{"gloss": "star-shaped cells with long processes; found in the white matter of the brain and spinal cord", "wn30": "05467922-n"}'
 fibrous-astrocyte astrocyte
-field-of-study '*'
 #:meta fish-roe '{"gloss": "eggs of female fish", "wn30": "02322624-n"}'
 fish-roe animal-egg
 #:meta fixed-phagocyte '{"gloss": "a phagocyte that does not circulate in the blood but is fixed in the liver or spleen or bone marrow etc.", "wn30": "05451099-n"}'
@@ -257,11 +243,11 @@ flower-style natural-object plant-part
 #:meta foliation '{"gloss": "(botany) the process of forming leaves", "wn30": "13483190-n"}'
 foliation growth
 #:meta food-chain '{"gloss": "(ecology) a community of organisms where each member is eaten in turn by another member", "wn30": "11455901-n"}'
-food-chain organic-phenomenon
+food-chain system
 #:meta food-pyramid '{"gloss": "(ecology) a hierarchy of food chains with the principal predator at the top; each level preys on the level below", "wn30": "11456083-n"}'
-food-pyramid organic-phenomenon
+food-pyramid system
 #:meta food-web '{"gloss": "(ecology) a community of organisms where there are several interrelated food chains", "wn30": "11456273-n"}'
-food-web organic-phenomenon
+food-web system
 #:meta form-family '{"gloss": "(biology) an artificial taxonomic category for organisms of which the true relationships are obscure", "wn30": "08108450-n"}'
 form-family taxonomic-family
 #:meta form-genus '{"gloss": "(biology) an artificial taxonomic category for organisms of which the true relationships are obscure", "wn30": "08110197-n"}'
@@ -343,8 +329,8 @@ heterosis attribute
 heterozygote organism
 #:meta histiocyte '{"gloss": "a macrophage that is found in connective tissue", "wn30": "05450617-n"}'
 histiocyte macrophage
-#:meta homeobox '{"gloss": "one of various similar homeotic genes that are involved in bodily segmentation during embryonic development", "wn30": "05438778-n"}'
-homeobox homeotic-gene
+#:meta homeobox-gene '{"gloss": "one of various similar homeotic genes that are involved in bodily segmentation during embryonic development", "wn30": "05438778-n"}'
+homeobox-gene homeotic-gene
 #:meta homeostasis '{"gloss": "(physiology) metabolic equilibrium actively maintained by several complex biological mechanisms that operate via the autonomic nervous system to offset disrupting changes", "wn30": "14003167-n"}'
 homeostasis equilibrium
 #:meta homeotic-gene '{"gloss": "one the genes that are involved in embryologic development", "wn30": "05438642-n"}'
@@ -353,7 +339,6 @@ homeotic-gene gene
 homogeny similarity
 #:meta homozygote '{"gloss": "(genetics) an organism having two identical alleles of a particular gene and so breeding true for the particular characteristic", "wn30": "05432420-n"}'
 homozygote organism
-hormone '*'
 #:meta hybridization '{"gloss": "(genetics) the act of mixing different species or varieties of animals or plants and thus to produce hybrids", "wn30": "00850425-n"}'
 hybridization organic-process
 #:meta hybridoma '{"gloss": "a hybrid cell resulting from the fusion of a lymphocyte and a tumor cell; used to culture a specific monoclonal antibody", "wn30": "05470013-n"}'
@@ -362,7 +347,6 @@ hybridoma somatic-cell
 immune-recognition organic-phenomenon
 in transitive-dimension
 increase '*'
-information '*'
 #:meta insertional-mutagenesis '{"gloss": "(genetics) a mutation caused by the insertion of exogenous DNA into a genome", "wn30": "07426241-n"}'
 insertional-mutagenesis event
 #:meta intussusception '{"gloss": "(biology) growth in the surface area of a cell by the deposit of new particles between existing particles in the cell wall", "wn30": "13501738-n"}'
@@ -414,7 +398,7 @@ medullated-nerve-fiber nerve-fiber
 #:meta megakaryocyte '{"gloss": "a large bone marrow cell; regarded as the source of blood platelets", "wn30": "05448928-n"}'
 megakaryocyte somatic-cell
 #:meta megaloblast '{"gloss": "abnormally large red blood cell present in pernicious anemia and folic acid deficiency", "wn30": "05449797-n"}'
-megaloblast red-blood-cell
+megaloblast erythroblast
 #:meta megalocyte '{"gloss": "abnormally large red blood cell (associated with pernicious anemia)", "wn30": "05449661-n"}'
 megalocyte red-blood-cell
 #:meta meiosis '{"gloss": "(genetics) cell division that produces reproductive cells in sexually reproducing organisms; the nucleus divides into four nuclei each containing half the chromosome number (leading to gametes in animals and spores in plants)", "wn30": "13512725-n"}'
@@ -423,8 +407,6 @@ meiosis organic-process
 melanoblast epidermal-cell
 #:meta melanocyte '{"gloss": "a cell in the basal layer of the epidermis that produces melanin under the control of the melanocyte-stimulating hormone", "wn30": "05241485-n"}'
 melanocyte epidermal-cell
-#:meta meme '{"gloss": "a cultural unit (an idea or value or pattern of behavior) that is passed from one person to another by non-genetic means (as by imitation)", "wn30": "05985126-n"}'
-meme cognition information
 #:meta 'mendel'"'"'s-law' '{"gloss": "(genetics) one of two principles of heredity formulated by Gregor Mendel on the basis of his experiments with plants; the principles were limited and modified by subsequent genetic research", "wn30": "05884433-n"}'
 'mendel'"'"'s-law' 'about(genetic-inheritance)' law-of-nature
 #:meta metabolism '{"gloss": "the organic processes (in a cell or organism) that are necessary for life", "wn30": "13514314-n"}'
@@ -446,8 +428,6 @@ mitosis event
 modifier-gene gene
 #:meta molecular-biology '{"gloss": "the branch of biology that studies the structure and activity of macromolecules essential to life (and especially with their genetic role)", "wn30": "06078088-n"}'
 molecular-biology biology
-#:meta monad-organism '{"gloss": "(biology) a single-celled microorganism (especially a flagellate protozoan)", "wn30": "01326751-n"}'
-monad-organism microorganism
 #:meta monoblast '{"gloss": "a large immature monocyte normally found in bone marrow", "wn30": "05453412-n"}'
 monoblast monocyte
 #:meta monocyte '{"gloss": "a type of granular leukocyte that functions in the ingestion of bacteria", "wn30": "05453267-n"}'
@@ -488,7 +468,7 @@ neoplastic-cell somatic-cell
 #:meta nerve-cell '{"gloss": "a cell that is specialized to conduct nerve impulses", "wn30": "05465567-n"}'
 nerve-cell somatic-cell
 #:meta nerve-fiber '{"gloss": "a threadlike extension of a nerve cell", "wn30": "05464104-n"}'
-nerve-fiber fiber-cell
+nerve-fiber body-part
 #:meta neural-irradiation '{"gloss": "(physiology) the spread of sensory neural impulses in the cortex", "wn30": "07332550-n"}'
 neural-irradiation event
 #:meta neural-summation '{"gloss": "(physiology) the process whereby multiple stimuli can produce a response (in a muscle or nerve or other part) that one stimulus alone does not produce", "wn30": "13563139-n"}'
@@ -529,24 +509,23 @@ organic-phenomenon natural-event
 #:meta organic-process '{"gloss": "a process occurring in living organisms", "wn30": "13526110-n"}'
 organic-process process
 organism '*'
-osmosis '*'
 #:meta osteoblast '{"gloss": "a cell from which bone develops", "wn30": "05448149-n"}'
-osteoblast embryonic-cell
+osteoblast bone-cell
 #:meta osteoclast '{"gloss": "cell that functions in the breakdown and resorption of bone tissue", "wn30": "05449073-n"}'
 osteoclast bone-cell macrophage
 #:meta osteocyte '{"gloss": "mature bone cell", "wn30": "05449196-n"}'
 osteocyte bone-cell
-#:meta ovule '{"gloss": "a small or immature ovum", "wn30": "05458300-n"}'
-ovule ovum
+#:meta ovule '{"gloss": "a small body that contains the female germ cell of a plant; develops into a seed after fertilization", "wn30": "11678768-n"}'
+ovule plant-part
 #:meta ovum '{"gloss": "the female reproductive cell; the female gamete", "wn30": "05457973-n"}'
 ovum gamete
 #:meta packed-cells '{"gloss": "a preparation of blood cells separated from the liquid plasma", "wn30": "05450370-n"}'
-packed-cells cell material
-#:meta papilla '{"gloss": "(botany) a tiny outgrowth on the surface of a petal or leaf", "wn30": "11820191-n"}'
+packed-cells material
+#:meta papilla '{"gloss": "a small nipple-shaped protuberance concerned with taste, touch, or smell", "wn30": "05473735-n"}'
 papilla body-part
 part '*'
 #:meta parthenocarpy '{"gloss": "(botany) the development of a fruit without fertilization or seeds", "wn30": "13532356-n"}'
-parthenocarpy reproduction
+parthenocarpy organic-process
 #:meta parthenote '{"gloss": "a cell resulting from parthenogenesis", "wn30": "05432623-n"}'
 parthenote cell
 #:meta perennial-plant '{"gloss": "(botany) a plant lasting for three seasons or more", "wn30": "11553240-n"}'
@@ -562,7 +541,7 @@ phloem natural-object plant-part
 #:meta photosynthesis '{"gloss": "synthesis of compounds with the aid of radiant energy (especially in plants)", "wn30": "13537429-n"}'
 photosynthesis process
 #:meta phylogenetic-relation '{"gloss": "(biology) state of relationship between organisms or groups of organisms resulting in resemblance in structure or structural parts", "wn30": "13812296-n"}'
-phylogenetic-relation attribute
+phylogenetic-relation relation
 #:meta phylum '{"gloss": "(biology) the major taxonomic group of animals and plants; contains classes", "wn30": "08102555-n"}'
 phylum taxonomic-group
 physical-object '*'
@@ -588,8 +567,6 @@ plant-embryo plant
 #:meta plant-part '{"gloss": "any part of a plant or fungus", "wn30": "13086908-n"}'
 plant-part body-part
 plant-root '*'
-#:meta plantae '{"gloss": "(botany) the taxonomic kingdom comprising all living or extinct plants", "wn30": "11529603-n"}'
-plantae taxonomic-group
 #:meta plasma-cell '{"gloss": "a cell that develops from a B lymphocyte in reaction to a specific antigen; found in bone marrow and sometimes in the blood", "wn30": "05452845-n"}'
 plasma-cell b-cell
 #:meta plasmablast '{"gloss": "the precursor of a plasma cell", "wn30": "05453057-n"}'
@@ -627,10 +604,8 @@ protoplasmic-astrocyte astrocyte
 purkinje-cell brain-cell
 #:meta recessive-allele '{"gloss": "an allele that produces its characteristic phenotype only when its paired allele is identical", "wn30": "05438315-n"}'
 recessive-allele allele
-#:meta recessive-gene '{"gloss": "gene that produces its characteristic phenotype only when its allele is identical", "wn30": "05440875-n"}'
-recessive-gene gene
 #:meta recombinant '{"gloss": "a cell or organism in which genetic recombination has occurred", "wn30": "01313888-n"}'
-recombinant cell organism
+recombinant organism
 rectangle-dimension dimension
 #:meta red-blood-cell '{"gloss": "a mature blood cell that contains hemoglobin to carry oxygen to the bodily tissues; a biconcave disc that has no nucleus", "wn30": "05454070-n"}'
 red-blood-cell blood-cell
@@ -660,12 +635,10 @@ rod-cell visual-cell
 saltation mutation
 #:meta schwann-cell '{"gloss": "any cell that covers the nerve fibers in the peripheral nervous system and forms the myelin sheath", "wn30": "05465071-n"}'
 schwann-cell neurogliacyte
-science '*'
 scientific-principle '*'
 scientist '*'
 #:meta scurf '{"gloss": "(botany) a covering that resembles scales or bran that covers some plant parts", "wn30": "09426621-n"}'
 scurf plant-part
-secretion '*'
 seed plant-part
 sense '*'
 #:meta sensitiveness '{"gloss": "(physiology) responsiveness to external stimuli; the faculty of sensation", "wn30": "05652926-n"}'
@@ -680,7 +653,6 @@ sensory-neuron nerve-cell
 sertoli-cell cell
 #:meta sex-chromosome '{"gloss": "(genetics) a chromosome that determines the sex of an individual", "wn30": "05443651-n"}'
 sex-chromosome chromosome
-shape '*'
 shared-with reversed-dimension
 #:meta sickle-cell '{"gloss": "an abnormal red blood cell that has a crescent shape and an abnormal form of hemoglobin", "wn30": "05454833-n"}'
 sickle-cell red-blood-cell
@@ -693,7 +665,6 @@ silkworm-seed animal-egg
 similarity '*'
 #:meta single-nucleotide-polymorphism '{"gloss": "(genetics) genetic variation in a DNA sequence that occurs when a single nucleotide in a genome is altered; SNPs are usually considered to be point mutations that have been evolutionarily successful enough to recur in a significant proportion of the population of a species", "wn30": "11493452-n"}'
 single-nucleotide-polymorphism biological-polymorphism
-situation '*'
 size dominance-dimension
 #:meta skin-cell '{"gloss": "any of the cells making up the skin", "wn30": "05241072-n"}'
 skin-cell somatic-cell
@@ -780,7 +751,7 @@ taxonomic-tribe taxonomic-group
 #:meta taxonomic-variety '{"gloss": "(biology) a taxonomic category consisting of members of a species that differ from others of the same species in minor but heritable characteristics", "wn30": "08101085-n"}'
 taxonomic-variety taxonomic-group
 #:meta taxonomy '{"gloss": "(biology) study of the general principles of scientific classification", "wn30": "06153186-n"}'
-taxonomy 'about(taxonomic-group)' biology classification-scheme
+taxonomy 'about(taxonomic-group)' biology
 temperature 'linear-dimension(temperature)'
 theory '*'
 #:meta theory-of-evolution '{"gloss": "(biology) a scientific theory of the origin of species of plants and animals", "wn30": "06109227-n"}'
@@ -803,14 +774,13 @@ type-species species
 #:meta type-taxon '{"gloss": "(biology) the taxonomic group whose characteristics are used to define the next higher taxon", "wn30": "08111419-n"}'
 type-taxon taxonomic-group
 #:meta uncus '{"gloss": "(biology) any hook-shaped process or part", "wn30": "13869676-n"}'
-uncus body-part shape
+uncus body-part
 #:meta unit-character '{"gloss": "(genetics) a character inherited on an all-or-none basis and dependent on the presence of a single gene", "wn30": "04617106-n"}'
 unit-character heritable-character
 #:meta venation '{"gloss": "(botany) the arrangement of veins in a leaf", "wn30": "08373244-n"}'
 venation attribute
 #:meta vernation '{"gloss": "(botany) the arrangement of young leaves in a leaf bud before it opens", "wn30": "08373380-n"}'
 vernation attribute
-virus '*'
 #:meta visual-accommodation '{"gloss": "(physiology) the automatic adjustment in focal length of the natural lens of the eye", "wn30": "00193225-n"}'
 visual-accommodation organic-process
 #:meta visual-cell '{"gloss": "one of the cells of the retina that is sensitive to light", "wn30": "05455912-n"}'

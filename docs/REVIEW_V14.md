@@ -716,10 +716,10 @@ as the v9 sense list did.
 
 ## Not done
 
-- The packs were not read item by item as core was; they were read through
+- (2026-10-16) The packs were not read item by item as core was; they were read through
   the closure check, by their mixed-branch concepts and small groups.
 - `ontodag`'s modules were not regenerated, so `CORE_VERSION` is unchanged.
-- Nothing is committed.
+- Nothing was committed at the time (2026-10-16); it was, in later commits.
 
 ## The everyday-sense pass (2026-10-22)
 
@@ -802,6 +802,11 @@ on the dropped node nor re-adds the edge. A pack stub of a name no store
 holds any more is removed. `step7 --check` is clean on the result. A replay
 from the v13 files reproduces every file byte for byte.
 
+Rows on a name Peter ruled on, in `rulings-v14-peter.tsv` or in his
+answers on the doubtful list, are not applied. Examples are `ai`'s
+`machine-learning ⊑ artificial-intelligence` and `pharmacy`. His later
+comments on the "a" names stand.
+
 **Result for core**: from 5,027 names to 4,732. 355 left: drops, and the old
 names of renames. 60 new names came from renames and splits, such as
 `knowledge`, `index-finger`, `marijuana`, `light-source` and
@@ -837,3 +842,60 @@ names of renames. 60 new names came from renames and splits, such as
   datasets were dropped from the packs where the readers were sure. Named
   theorems, named laws, satellite systems and time standards wait for one
   ruling.
+
+**The packs (same day).** Eleven readers read every name each pack owns:
+7,514 names in all, the borrowed stubs left out. They used the same
+rules, with two differences:
+- a plain name means what a practitioner of the domain means first;
+- a pack keeps its specialist terms, so a drop is only for the vague, the
+  off-domain, duplicates, and single things filed as classes. A
+  geography pack's places are instances by design.
+
+Of their 966 decisions, 901 apply (by pack, applied of decided):
+
+| pack | applied | decided |
+|---|---|---|
+| ai | 86 | 87 |
+| biology | 32 | 32 |
+| chemistry | 27 | 29 |
+| computing | 155 | 166 |
+| economics | 152 | 167 |
+| geography | 108 | 111 |
+| mathematics | 72 | 91 |
+| medicine | 106 | 109 |
+| occupations | 112 | 119 |
+| physics | 14 | 14 |
+| space | 37 | 45 |
+
+The main kinds of fix:
+- **AND parents that were alternatives.** A symptom that was also an event
+  (medicine); an act that was also a field (ai's tasks and techniques, kept
+  medium until Peter rules on fields versus techniques); a contract that
+  was also a business activity (economics); a protocol that was also an
+  act (computing).
+- **Wrong genus.** cast iron under iron instead of alloy, hadrons under
+  elementary-particle, a reef under shoal, `professional` on performers.
+- **Senses.** smith the metalworker, skipper the boat's master, the IUPAC
+  names for elements 112–116.
+
+The single things filed as classes are left as low rows, one policy each:
+- named theorems and laws;
+- satellite systems, time standards and datums;
+- foundations, websites and datasets.
+
+The readers also reported core links that are wrong for the packs; they are
+listed under "Questions the readers left for Peter" above.
+
+step7 learned three more things from the packs:
+- **Disowned copies.** A later `disown` makes earlier rows on that pack's
+  copy done.
+- **Re-filed refinements.** A refinement a later row re-files is still
+  created when it is missing.
+- **Unused stubs.** A pack drops a stub nothing in it uses: a borrowed name
+  another store holds, or a name a ruling removed. 267 such stubs went,
+  most of them left by the disowns. A pack's own top-level name is written
+  the same way as a stub, but it is never touched.
+
+`step7 --check` is clean, and a replay from the v13 files reproduces every
+file byte for byte. The union of core and the ten domain packs now loads
+12,148 names.

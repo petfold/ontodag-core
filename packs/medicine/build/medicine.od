@@ -1,5 +1,5 @@
 # ontodag store v1
-#:canonical 6.0 235230b912a0e9e3111d10414ff6ab3a78cfa95b17cd39393ad574c978328fca 2
+#:canonical 6.0 7b687d7f94cf5f831a4db24c3cd881a2883debb39f4794a6c6cc086c139af865 2
 #:meta abdominoplasty '{"gloss": "cosmetic surgery of the abdomen to remove wrinkles and tighten the skin over the stomach", "wn30": "00034777-n"}'
 abdominoplasty plastic-surgery
 #:meta ablation '{"gloss": "surgical removal of a body part or tissue", "wn30": "00393369-n"}'
@@ -36,22 +36,15 @@ adenocarcinoma carcinoma
 adenoidectomy ablation
 #:meta adrenalectomy '{"gloss": "surgical removal of one or both adrenal glands", "wn30": "00666107-n"}'
 adrenalectomy ablation
-adult '*'
 #:meta aeromedicine '{"gloss": "the study and treatment of disorders associated with flight (especially with space flight)", "wn30": "06046037-n"}'
-aeromedicine biomedicine
+aeromedicine medical-specialty
 agent '*'
-#:meta ague '{"gloss": "successive stages of chills and fever that is a symptom of malaria", "wn30": "14340462-n"}'
-ague symptom
 #:meta albuminuria '{"gloss": "the presence of excessive protein (chiefly albumin but also globulin) in the urine; usually a symptom of kidney disorder", "wn30": "14265958-n"}'
 albuminuria symptom
 #:meta alcoholic-dementia '{"gloss": "dementia observed during the last stages of severe chronic alcoholism; involves loss of memory for recent events although long term memory is intact", "wn30": "14395597-n"}'
 alcoholic-dementia dementia
 #:meta alendronate '{"gloss": "a tablet (trade name Fosamax) prescribed to prevent or treat osteoporosis in women after menopause", "wn30": "02696384-n"}'
 alendronate medication
-#:meta alienism '{"gloss": "an obsolete term for the study and treatment of mental illness", "wn30": "06056787-n"}'
-alienism psychiatry
-#:meta alienist '{"gloss": "a psychiatrist and specialist in the legal aspects of mental illness", "wn30": "09783653-n"}'
-alienist psychiatrist
 #:meta alkalinuria '{"gloss": "a condition in which the urine (which is normally slightly acidic) is alkaline", "wn30": "14021118-n"}'
 alkalinuria symptom
 #:meta allergist '{"gloss": "a physician skilled in the diagnosis and treatment of allergies", "wn30": "09784306-n"}'
@@ -112,7 +105,7 @@ animal '*'
 #:meta animal-disease '{"gloss": "a disease that typically does not affect human beings", "wn30": "14253124-n"}'
 animal-disease disease
 #:meta anorexia-nervosa '{"gloss": "(psychiatry) a psychological disorder characterized by somatic delusions that you are too fat despite being emaciated", "wn30": "14061263-n"}'
-anorexia-nervosa condition
+anorexia-nervosa mental-disorder
 #:meta anthrax '{"gloss": "a disease of humans that is not communicable; caused by infection with Bacillus anthracis followed by septicemia", "wn30": "14072423-n"}'
 anthrax disease
 #:meta anti-inflammatory '{"gloss": "a medicine intended to reduce inflammation", "wn30": "02721538-n"}'
@@ -166,7 +159,7 @@ antitussive medication
 #:meta antiviral '{"gloss": "any drug that destroys viruses", "wn30": "02725367-n"}'
 antiviral medication
 #:meta apnea '{"gloss": "transient cessation of respiration", "wn30": "14369408-n"}'
-apnea event symptom
+apnea symptom
 #:meta appendectomy '{"gloss": "surgical removal of the vermiform appendix", "wn30": "00666232-n"}'
 appendectomy ablation
 area 'linear-dimension(area)'
@@ -214,24 +207,20 @@ aversion-therapy behavior-therapy
 azathioprine medication
 #:meta aztreonam '{"gloss": "an antibiotic (trade name Azactam) used against severe infections; has minimal side effects", "wn30": "02765868-n"}'
 aztreonam antibacterial antibiotic
-#:meta baby-doctor '{"gloss": "a specialist in the care of babies", "wn30": "09828760-n"}'
-baby-doctor medical-specialist
 #:meta bacitracin '{"gloss": "a polypeptide antibiotic of known chemical structure effective against several types of Gram-positive organisms; usually applied locally", "wn30": "02767240-n"}'
 bacitracin antibacterial
 #:meta bacteriology '{"gloss": "the branch of medical science that studies bacteria in relation to disease", "wn30": "06046692-n"}'
 bacteriology 'about(bacterium)' biology medical-specialty
 bacterium '*'
 #:meta ballistocardiograph '{"gloss": "a medical instrument that measures the mechanical force of cardiac contractions and the amount of blood passing through the heart during a specified period by measuring the recoil of the body as blood is pumped from the ventricles", "wn30": "02781764-n"}'
-ballistocardiograph instrument
+ballistocardiograph medical-instrument
 bandage '*'
 #:meta bee-sting '{"gloss": "a sting inflicted by a bee", "wn30": "14287741-n"}'
-bee-sting event sting
+bee-sting sting
 #:meta behavior-therapy '{"gloss": "psychotherapy that seeks to extinguish or inhibit abnormal or maladaptive behavior by reinforcing desired behavior and extinguishing undesired behavior", "wn30": "00700979-n"}'
-behavior-therapy psychotherapy-treatment
+behavior-therapy psychotherapy
 biology '*'
-#:meta biomedical-science '{"gloss": "the branch of medical science that applies biological and physiological principles to clinical practice", "wn30": "06047096-n"}'
-biomedical-science medical-specialty
-#:meta biomedicine '{"gloss": "the branch of medical science that studies the ability of organisms to withstand environmental stress (as in space travel)", "wn30": "06046898-n"}'
+#:meta biomedicine '{"gloss": "the branch of medical science that applies biological and physiological principles to clinical practice", "wn30": "06047096-n"}'
 biomedicine medical-specialty
 #:meta birth-trauma '{"gloss": "physical injury to an infant during the birth process", "wn30": "14287995-n"}'
 birth-trauma injury
@@ -239,8 +228,8 @@ birth-trauma injury
 bite-wound wound
 #:meta black-eye '{"gloss": "a swollen bruise caused by a blow to the eye", "wn30": "14289387-n"}'
 black-eye bruise
-#:meta blackwater-fever '{"gloss": "any of several human or animal diseases characterized by dark urine resulting from rapid breakdown of red blood cells", "wn30": "14073331-n"}'
-blackwater-fever disease malaria
+#:meta blackwater-fever '{"gloss": "severe and often fatal malaria characterized by kidney damage resulting in dark urine", "wn30": "14073647-n"}'
+blackwater-fever malaria
 #:meta blain '{"gloss": "an inflammatory swelling or sore", "wn30": "14183420-n"}'
 blain sore
 #:meta blast-trauma '{"gloss": "injury caused the explosion of a bomb (especially in enclosed spaces)", "wn30": "14288107-n"}'
@@ -253,7 +242,7 @@ blister symptom
 blocker-drug medication
 blood '*'
 #:meta blood-extravasation '{"gloss": "the leakage of blood from a vessel into tissues surrounding it; can occur in injuries or burns or allergic reactions", "wn30": "14370526-n"}'
-blood-extravasation bleeding process
+blood-extravasation bleeding
 #:meta blood-poisoning '{"gloss": "invasion of the bloodstream by virulent microorganisms from a focus of infection", "wn30": "14189837-n"}'
 blood-poisoning sepsis
 #:meta bloodletting '{"gloss": "formerly used as a treatment to reduce excess blood (one of the four humors of medieval medicine)", "wn30": "00698004-n"}'
@@ -276,7 +265,7 @@ breast-cancer carcinoma
 #:meta bronchodilator '{"gloss": "a drug that relaxes and dilates the bronchial passageways and improves the passages of air into the lungs", "wn30": "02905612-n"}'
 bronchodilator medication
 #:meta bronchoscope '{"gloss": "a slender tubular instrument used to examine the bronchial tubes", "wn30": "02905886-n"}'
-bronchoscope instrument
+bronchoscope endoscope
 #:meta bruise '{"gloss": "an injury that doesn'"'"'t break the skin but results in some discoloration", "wn30": "14288871-n"}'
 bruise injury
 #:meta bubo '{"gloss": "a lymph node that is inflamed and swollen because of plague or gonorrhea or tuberculosis", "wn30": "14315722-n"}'
@@ -301,7 +290,7 @@ carcinoma cancer
 #:meta carcinoma-in-situ '{"gloss": "a cluster of malignant cells that has not yet invaded the deeper epithelial tissue or spread to other parts of the body", "wn30": "14247035-n"}'
 carcinoma-in-situ carcinoma
 #:meta cardiograph '{"gloss": "medical instrument that records electric currents associated with contractions of the heart", "wn30": "02963503-n"}'
-cardiograph instrument
+cardiograph medical-instrument
 #:meta cardiologist '{"gloss": "a specialist in cardiology; a specialist in the structure and function and disorders of the heart", "wn30": "09894445-n"}'
 cardiologist medical-specialist
 #:meta cardiology '{"gloss": "the branch of medicine dealing with the heart and its diseases", "wn30": "06047275-n"}'
@@ -338,7 +327,7 @@ ceftriaxone cephalosporin
 #:meta cefuroxime '{"gloss": "a cephalosporin that can be given parenterally (trade name Zinacef) or orally by tablets (trade name Ceftin); indicated for infections of the lungs or throat or ears or urinary tract or meninges", "wn30": "02990103-n"}'
 cefuroxime cephalosporin
 #:meta centesis '{"gloss": "(surgery) the act of puncturing a body cavity or organ with a hollow needle in order to draw out fluid", "wn30": "00943187-n"}'
-centesis event
+centesis procedure
 #:meta cephalexin '{"gloss": "an oral cephalosporin (trade names Keflex and Keflin and Keftab) commonly prescribe for mild to moderately severe infections of the skin or ears or throat or lungs or urinary tract", "wn30": "02996249-n"}'
 cephalexin cephalosporin
 #:meta cephaloglycin '{"gloss": "antibiotic related to cephalosporin but no longer in common use", "wn30": "02996570-n"}'
@@ -350,7 +339,7 @@ cephalosporin antibacterial antibiotic
 #:meta cephalothin '{"gloss": "a semisynthetic analogue of cephalosporin", "wn30": "02997292-n"}'
 cephalothin cephalosporin
 #:meta cerebral-hemorrhage '{"gloss": "bleeding from a ruptured blood vessel in the brain", "wn30": "14370391-n"}'
-cerebral-hemorrhage bleeding event
+cerebral-hemorrhage bleeding
 #:meta cervical-disk-syndrome '{"gloss": "an abnormal condition resulting from compression of spinal nerve roots in the neck region; involves neck pains and muscular weakness and paresthesia", "wn30": "14304722-n"}'
 cervical-disk-syndrome syndrome
 #:meta chafing-sore '{"gloss": "a skin sore caused by chafing", "wn30": "14184390-n"}'
@@ -399,7 +388,7 @@ ciprofloxacin antibacterial
 #:meta circulatory-shock '{"gloss": "(pathology) bodily collapse or near collapse caused by inadequate oxygen delivery to the cells; characterized by reduced cardiac output and rapid heartbeat and circulatory insufficiency and pallor", "wn30": "14067076-n"}'
 circulatory-shock illness
 #:meta client-centered-therapy '{"gloss": "a method of psychotherapy developed by Carl Rogers in which the client determines the focus and pace of each session", "wn30": "00703236-n"}'
-client-centered-therapy psychotherapy-treatment
+client-centered-therapy psychotherapy
 #:meta clinical-psychology '{"gloss": "the branch of psychology concerned with the treatment of abnormal mentation and behavior", "wn30": "06057172-n"}'
 clinical-psychology 'about(mental-disorder)' psychology
 #:meta clinical-sign '{"gloss": "(medicine) any objective evidence of the presence of a disorder or disease", "wn30": "14301785-n"}'
@@ -442,7 +431,7 @@ confabulation memory
 #:meta 'conn'"'"'s-syndrome' '{"gloss": "disturbances in saltwater balance and symptoms of weakness and muscular cramps and twitching and convulsions and sometimes paralysis; usually caused by a benign tumor of the cortex of the adrenal gland that leads to excess secretion of aldosterone", "wn30": "14305149-n"}'
 'conn'"'"'s-syndrome' syndrome
 #:meta constipation '{"gloss": "irregular and infrequent or difficult evacuation of the bowels; can be a symptom of intestinal obstruction or diverticulitis", "wn30": "14371161-n"}'
-constipation event symptom
+constipation symptom
 #:meta contraindication '{"gloss": "(medicine) a reason that makes it inadvisable to prescribe a particular drug or employ a particular procedure or treatment", "wn30": "06797947-n"}'
 contraindication information
 #:meta corneal-nebula '{"gloss": "(pathology) a faint cloudy spot on the cornea", "wn30": "04682184-n"}'
@@ -465,15 +454,15 @@ counterirritant medication
 #:meta country-doctor '{"gloss": "a doctor who practices in the country (rather than in a city) usually remote from a modern hospital", "wn30": "09970493-n"}'
 country-doctor general-practitioner
 #:meta cramp '{"gloss": "a painful and involuntary muscular contraction", "wn30": "14360459-n"}'
-cramp event symptom
+cramp symptom
 #:meta craniotomy '{"gloss": "a surgical opening through the skull", "wn30": "00668736-n"}'
 craniotomy operation
 #:meta crepitation-rale '{"gloss": "the crackling sound heard on auscultation when patients with respiratory diseases inhale; associated with tuberculosis and pneumonia and congestive heart failure", "wn30": "07382044-n"}'
-crepitation-rale noise symptom
+crepitation-rale symptom
 #:meta crimea-congo-hemorrhagic-fever '{"gloss": "an infection common in Arab states caused by a bunyavirus; transmitted by a tick that thrives on sheep", "wn30": "14179390-n"}'
 crimea-congo-hemorrhagic-fever hemorrhagic-fever
 #:meta crisis-intervention '{"gloss": "psychotherapy that focuses on acute critical situations (depressive episodes or attempted suicides or drug overdoses) with the aim of restoring the person to the level of functioning before the crisis", "wn30": "00703422-n"}'
-crisis-intervention psychotherapy-treatment
+crisis-intervention psychotherapy
 #:meta cryocautery '{"gloss": "application of a substance that destroys tissue by freezing it", "wn30": "00697614-n"}'
 cryocautery cautery
 #:meta cryosurgery '{"gloss": "the use of extreme cold (usually liquid nitrogen) to destroy unwanted tissue (warts or cataracts or skin cancers)", "wn30": "00668829-n"}'
@@ -487,7 +476,7 @@ curette surgical-instrument
 #:meta cutaneous-leishmaniasis '{"gloss": "leishmaniasis of the skin; characterized by ulcerative skin lesions", "wn30": "14181187-n"}'
 cutaneous-leishmaniasis leishmaniasis
 #:meta cyanosis '{"gloss": "a bluish discoloration of the skin and mucous membranes; a sign that oxygen in the blood is dangerously diminished (as in carbon monoxide poisoning)", "wn30": "14303009-n"}'
-cyanosis event symptom
+cyanosis symptom
 #:meta cyclodestructive-surgery '{"gloss": "an eye operation that treats glaucoma by destroying the ciliary body with a laser", "wn30": "00678988-n"}'
 cyclodestructive-surgery eye-operation
 #:meta cycloserine '{"gloss": "an antibiotic that is especially active against the tubercle bacillus", "wn30": "03155788-n"}'
@@ -509,7 +498,7 @@ deficiency-disease disease
 #:meta delirium-tremens '{"gloss": "acute delirium caused by alcohol poisoning", "wn30": "14398279-n"}'
 delirium-tremens psychosis
 #:meta dementia '{"gloss": "mental deterioration of organic or functional origin", "wn30": "14395403-n"}'
-dementia insanity
+dementia mental-disorder
 #:meta demulcent '{"gloss": "a medication (in the form of an oil or salve etc.) that soothes inflamed or injured skin", "wn30": "03174829-n"}'
 demulcent medication
 #:meta dental-appliance '{"gloss": "a device to repair teeth or replace missing teeth", "wn30": "03175604-n"}'
@@ -551,7 +540,7 @@ device '*'
 #:meta diagnostician '{"gloss": "a doctor who specializes in medical diagnosis", "wn30": "10011074-n"}'
 diagnostician medical-specialist
 #:meta dialyzer '{"gloss": "a medical instrument for separating substances in solution by unequal diffusion through semipermeable membranes", "wn30": "03187751-n"}'
-dialyzer instrument
+dialyzer medical-instrument
 #:meta diaphoretic '{"gloss": "used to produce perspiration", "wn30": "03188979-n"}'
 diaphoretic medication
 #:meta diarrhea '{"gloss": "frequent and watery bowel movements; can be a symptom of infection or food poisoning or colitis or a gastrointestinal tumor", "wn30": "14371913-n"}'
@@ -559,7 +548,7 @@ diarrhea symptom
 #:meta diastasis '{"gloss": "separation of an epiphysis from the long bone to which it is normally attached without fracture of the bone", "wn30": "14294354-n"}'
 diastasis joint-dislocation
 #:meta diathermy-machine '{"gloss": "a medical instrument for local heating of bodily tissues for medical purposes", "wn30": "03189818-n"}'
-diathermy-machine instrument
+diathermy-machine medical-instrument
 #:meta digital-clubbing '{"gloss": "a condition in which the ends of toes and fingers become wide and thick; a symptom of heart or lung disease", "wn30": "14302847-n"}'
 digital-clubbing symptom
 #:meta dihydrostreptomycin '{"gloss": "antibiotic consisting of a hydrogenated form of streptomycin; used against tuberculosis and tularemia and Gram-negative organisms", "wn30": "03198028-n"}'
@@ -573,7 +562,7 @@ dimension '*'
 diplomate medical-specialist
 disease '*'
 #:meta disease-carrier '{"gloss": "(medicine) a person (or animal) who has some pathogen to which he is immune but who can pass it on to others", "wn30": "09897350-n"}'
-disease-carrier person
+disease-carrier organism
 #:meta disease-mimesis '{"gloss": "any disease that shows symptoms characteristic of another disease", "wn30": "14078733-n"}'
 disease-mimesis disease
 #:meta disease-of-the-neuromuscular-junction '{"gloss": "a disease characterized by impairment of neuromuscular junctions", "wn30": "14071235-n"}'
@@ -590,7 +579,7 @@ diuresis symptom
 #:meta diverticulum '{"gloss": "a herniation through the muscular wall of a tubular organ (especially the colon)", "wn30": "14295829-n"}'
 diverticulum hernia
 #:meta dizziness '{"gloss": "a reeling sensation; a feeling that you are about to fall", "wn30": "14372513-n"}'
-dizziness event symptom
+dizziness symptom
 doctor '*'
 #:meta dog-bite '{"gloss": "a bite inflicted by a dog", "wn30": "14287567-n"}'
 dog-bite bite-wound
@@ -622,10 +611,8 @@ duration 'linear-dimension(duration)'
 #:meta dysfunction '{"gloss": "(medicine) any disturbance in the functioning of an organ or body part or a disturbance in the functioning of a social group", "wn30": "14557898-n"}'
 dysfunction condition
 #:meta dyspnea '{"gloss": "difficult or labored respiration", "wn30": "14369744-n"}'
-dyspnea event symptom
+dyspnea symptom
 ear '*'
-#:meta ear-doctor '{"gloss": "a physician who specializes in the ear and its diseases", "wn30": "10041195-n"}'
-ear-doctor medical-specialist
 #:meta ebola-hemorrhagic-fever '{"gloss": "a severe and often fatal disease in humans and nonhuman primates (monkeys and chimpanzees) caused by the Ebola virus; characterized by high fever and severe internal bleeding; can be spread from person to person; is largely limited to Africa", "wn30": "14135623-n"}'
 ebola-hemorrhagic-fever hemorrhagic-fever
 #:meta ecchymosis '{"gloss": "the purple or black-and-blue area resulting from a bruise", "wn30": "14289079-n"}'
@@ -641,11 +628,11 @@ electrocautery thermocautery
 #:meta electroconvulsive-therapy '{"gloss": "the administration of a strong electric current that passes through the brain to induce convulsions and coma", "wn30": "00706605-n"}'
 electroconvulsive-therapy electrotherapy shock-therapy
 #:meta electroencephalograph '{"gloss": "medical instrument that records electric currents generated by the brain", "wn30": "03275311-n"}'
-electroencephalograph instrument
+electroencephalograph medical-instrument
 #:meta electrologist '{"gloss": "someone skilled in the use of electricity to remove moles or warts or hair roots", "wn30": "10049648-n"}'
 electrologist professional
 #:meta electromyograph '{"gloss": "a medical instrument that records the electrical waves associated with the activity of skeletal muscles", "wn30": "03276839-n"}'
-electromyograph instrument
+electromyograph medical-instrument
 #:meta electrosurgery '{"gloss": "surgery performed with electrical devices (as in electrocautery)", "wn30": "00670897-n"}'
 electrosurgery operation
 #:meta electrotherapy '{"gloss": "the therapeutic application of electricity to the body (as in the treatment of various forms of paralysis)", "wn30": "00662681-n"}'
@@ -655,7 +642,7 @@ emasculation neutering
 #:meta embolectomy '{"gloss": "surgical removal of an embolus (usually from an artery)", "wn30": "00673234-n"}'
 embolectomy ablation
 #:meta embryologist '{"gloss": "a physician who specializes in embryology", "wn30": "10051761-n"}'
-embryologist medical-specialist scientist
+embryologist scientist
 #:meta embryonal-carcinoma '{"gloss": "malignant neoplasm of the testis", "wn30": "14247360-n"}'
 embryonal-carcinoma carcinoma
 #:meta embryonal-rhabdomyosarcoma '{"gloss": "form of rhabdomyosarcoma occurring mainly in infants and children", "wn30": "14245594-n"}'
@@ -680,10 +667,10 @@ endodontist dentist
 #:meta endometrial-carcinoma '{"gloss": "cancer of the uterine lining", "wn30": "14247458-n"}'
 endometrial-carcinoma carcinoma
 #:meta endoscope '{"gloss": "a long slender medical instrument for examining the interior of a bodily organ or performing minor surgery", "wn30": "03286572-n"}'
-endoscope instrument
+endoscope medical-instrument
 energy 'linear-dimension(energy)'
 #:meta enterobiasis '{"gloss": "an infestation with or a resulting infection caused by the pinworm Enterobius vermicularis; occurs especially in children", "wn30": "14176372-n"}'
-enterobiasis condition
+enterobiasis infection
 #:meta enteropathy '{"gloss": "a disease of the intestinal tract", "wn30": "14074606-n"}'
 enteropathy disease
 #:meta enterostomy '{"gloss": "surgical operation that creates a permanent opening through the abdominal wall into the intestine", "wn30": "00671022-n"}'
@@ -708,7 +695,6 @@ etiologist diagnostician
 event '*'
 #:meta eventration '{"gloss": "protrusion of the intestine through the abdominal wall", "wn30": "14296142-n"}'
 eventration hernia
-evidence '*'
 #:meta evisceration '{"gloss": "surgical removal of an organ (or the contents of an organ) from a patient", "wn30": "00673578-n"}'
 evisceration operation
 #:meta 'ewing'"'"'s-sarcoma' '{"gloss": "malignant tumor in bone marrow (usually in the pelvis or in long bones)", "wn30": "14240587-n"}'
@@ -738,7 +724,6 @@ eye '*'
 eye-disease disease
 #:meta eye-operation '{"gloss": "any surgical procedure involving the eyes", "wn30": "00673863-n"}'
 eye-operation operation
-fabric '*'
 #:meta face-lift '{"gloss": "plastic surgery to remove wrinkles and other signs of aging from your face; an incision is made near the hair line and skin is pulled back and excess tissue is excised", "wn30": "00674158-n"}'
 face-lift plastic-surgery
 #:meta family-doctor '{"gloss": "a general practitioner who treats all the family members", "wn30": "10077278-n"}'
@@ -756,7 +741,7 @@ festering process
 #:meta festination '{"gloss": "involuntary shortening of stride and quickening of gait that occurs in some diseases (e.g., Parkinson'"'"'s disease)", "wn30": "14313154-n"}'
 festination symptom
 #:meta fetal-alcohol-syndrome '{"gloss": "a congenital medical condition in which body deformation occurs or facial development or mental ability is impaired because the mother drinks alcohol during pregnancy", "wn30": "14305458-n"}'
-fetal-alcohol-syndrome event syndrome
+fetal-alcohol-syndrome syndrome
 #:meta fetology '{"gloss": "the branch of medicine concerned with the fetus in the uterus", "wn30": "06053854-n"}'
 fetology obstetrics
 #:meta fetoscope '{"gloss": "a stethoscope placed on the pregnant woman'"'"'s abdomen to listen for the fetal heartbeat", "wn30": "03330792-n"}'
@@ -767,7 +752,6 @@ fiberscope endoscope
 fibrocystic-breast-disease disease
 #:meta field-hospital '{"gloss": "a temporary military hospital near the battle lines", "wn30": "03333349-n"}'
 field-hospital military-hospital
-field-of-study '*'
 #:meta filariasis '{"gloss": "a disease caused by nematodes in the blood or tissues of the body causing blockage of lymphatic vessels", "wn30": "14368032-n"}'
 filariasis disease
 #:meta filtration-surgery '{"gloss": "eye surgery that opens a passage allowing excess aqueous humor to drain into surrounding tissues; a treatment for glaucoma", "wn30": "00679379-n"}'
@@ -781,21 +765,19 @@ flea-bite sting
 #:meta flight-surgeon '{"gloss": "a medical officer specializing in aviation medicine", "wn30": "10096508-n"}'
 flight-surgeon medical-officer
 #:meta focal-infection '{"gloss": "bacterial infection limited to a specific organ or region especially one causing symptoms elsewhere", "wn30": "14176715-n"}'
-focal-infection condition
+focal-infection infection
 foot '*'
 #:meta forensic-medicine '{"gloss": "the branch of medical science that uses medical knowledge for legal purposes", "wn30": "06050257-n"}'
 forensic-medicine medical-specialty
 #:meta formulary '{"gloss": "(pharmacology) a book containing a compilation of pharmaceutical products with their formulas and methods of preparation", "wn30": "06411883-n"}'
 formulary 'about(drug)' book
-#:meta foundling-hospital '{"gloss": "a hospital where foundlings (infant children of unknown parents) are taken in and cared for", "wn30": "03129471-n"}'
-foundling-hospital hospital
 #:meta fowl-cholera '{"gloss": "an acute diarrheal disease (especially of chickens) caused by the microorganism that causes hemorrhagic septicemia", "wn30": "14263562-n"}'
 fowl-cholera animal-disease blood-poisoning
 fracture '*'
 #:meta freudian-psychology '{"gloss": "the psychological theories of Sigmund Freud", "wn30": "06057326-n"}'
 freudian-psychology psychology
 #:meta frostbite '{"gloss": "destruction of tissue by freezing and characterized by tingling, blistering and possibly gangrene", "wn30": "14294678-n"}'
-frostbite event injury
+frostbite injury
 #:meta furuncle '{"gloss": "a painful sore with a hard core filled with pus", "wn30": "14183210-n"}'
 furuncle staphylococcal-infection
 #:meta gas-gangrene '{"gloss": "(pathology) a deadly form of gangrene usually caused by clostridium bacteria that produce toxins that cause tissue death; can be used as a bioweapon", "wn30": "14313943-n"}'
@@ -828,7 +810,7 @@ geriatrics medical-specialty
 #:meta germ-theory '{"gloss": "(medicine) the theory that all contagious diseases are caused by microorganisms", "wn30": "06108487-n"}'
 germ-theory 'about(disease)' theory
 #:meta gerontologist '{"gloss": "a specialist in gerontology", "wn30": "10128381-n"}'
-gerontologist medical-specialist
+gerontologist specialist
 #:meta giardiasis '{"gloss": "infection of the intestines with protozoa found in contaminated food and water; characterized by diarrhea and nausea and flatulence and abdominal discomfort", "wn30": "14177210-n"}'
 giardiasis protozoal-infection
 #:meta glycosuria '{"gloss": "the presence of abnormally high levels of sugar in the urine", "wn30": "14267841-n"}'
@@ -847,7 +829,7 @@ greenstick-fracture incomplete-fracture
 #:meta griseofulvin '{"gloss": "a kind of penicillin (a fungicidal antibiotic with the trade name Fulvicin) produced by molds of the genus Penicillium", "wn30": "03460674-n"}'
 griseofulvin medication
 #:meta group-therapy '{"gloss": "psychotherapy in which a small group of individuals meet with a therapist; interactions among the members are considered to be therapeutic", "wn30": "00703688-n"}'
-group-therapy psychotherapy-treatment
+group-therapy psychotherapy
 #:meta gulf-war-syndrome '{"gloss": "a medical condition of uncertain origin that affected many veterans of the 1991 Gulf War; characterized by fatigue and headache and dizziness and nausea and rashes and joint pain and respiratory disorders", "wn30": "14305699-n"}'
 gulf-war-syndrome syndrome
 #:meta gumboil '{"gloss": "a boil or abscess on the gums", "wn30": "14183337-n"}'
@@ -865,7 +847,7 @@ hammer '*'
 head-nurse nurse
 heart '*'
 #:meta heart-murmur '{"gloss": "an abnormal sound of the heart; sometimes a sign of abnormal function of the heart valves", "wn30": "14334814-n"}'
-heart-murmur event symptom
+heart-murmur symptom
 #:meta heart-surgery '{"gloss": "any surgical procedure involving the heart", "wn30": "00675219-n"}'
 heart-surgery operation
 #:meta heartburn '{"gloss": "a painful burning sensation in the chest caused by gastroesophageal reflux (backflow from the stomach irritating the esophagus); symptomatic of an ulcer or a diaphragmatic hernia or other disorder", "wn30": "14335223-n"}'
@@ -887,7 +869,7 @@ hemoglobinemia symptom
 #:meta hemoglobinuria '{"gloss": "presence of hemoglobin in the urine", "wn30": "14314483-n"}'
 hemoglobinuria symptom
 #:meta hemoptysis '{"gloss": "coughing up blood from the respiratory tract; usually indicates a severe infection of the bronchi or lungs", "wn30": "14192199-n"}'
-hemoptysis event symptom
+hemoptysis symptom
 #:meta hemorrhagic-fever '{"gloss": "a group of illnesses caused by a viral infection (usually restricted to a specific geographic area); fever and gastrointestinal symptoms are followed by capillary hemorrhage", "wn30": "14177423-n"}'
 hemorrhagic-fever viral-infection
 #:meta hemorrhagic-stroke '{"gloss": "stroke caused by the rupture of a blood vessel in the brain", "wn30": "14288561-n"}'
@@ -903,7 +885,7 @@ hepatoma carcinoma
 #:meta herbal-medicine '{"gloss": "a medicine made from plants and used to prevent or treat disease or promote health", "wn30": "03515500-n"}'
 herbal-medicine medication
 #:meta hernia '{"gloss": "rupture in smooth muscle tissue through which a bodily structure protrudes", "wn30": "14295389-n"}'
-hernia disease event tissue-rupture
+hernia disease tissue-rupture
 #:meta hernia-truss '{"gloss": "(medicine) a bandage consisting of a pad and belt; worn to hold a hernia in place by pressure", "wn30": "04492585-n"}'
 hernia-truss bandage
 #:meta herniated-disk '{"gloss": "a painful rupture of the fibrocartilage of the disc between spinal vertebrae; occurs most often in the lumbar region", "wn30": "14296579-n"}'
@@ -913,7 +895,7 @@ herpangia viral-infection
 #:meta hiatus-hernia '{"gloss": "hernia resulting from the protrusion of part of the stomach through the diaphragm", "wn30": "14296399-n"}'
 hiatus-hernia hernia
 #:meta hiccup '{"gloss": "(usually plural) the state of having reflex spasms of the diaphragm accompanied by a rapid closure of the glottis producing an audible sound; sometimes a symptom of indigestion", "wn30": "14359459-n"}'
-hiccup process symptom
+hiccup symptom
 #:meta histamine-blocker '{"gloss": "a medicine used to treat the gastric effects of histamine in cases of peptic ulcers and gastritis and gastroesophageal reflux; works by blocking the effects of histamine on the receptor site known as H2", "wn30": "03522239-n"}'
 histamine-blocker medication
 #:meta hiv-infection '{"gloss": "infection by the human immunodeficiency virus", "wn30": "14179744-n"}'
@@ -934,10 +916,8 @@ hot-flash symptom
 house-physician doctor
 #:meta hydrophobia '{"gloss": "a symptom of rabies in humans consisting of an aversion to swallowing liquids", "wn30": "14383624-n"}'
 hydrophobia symptom
-#:meta hygiene '{"gloss": "the science concerned with the prevention of illness and maintenance of health", "wn30": "06051380-n"}'
-hygiene medical-specialty
-#:meta hygienist '{"gloss": "a medical specialist in hygiene", "wn30": "10194969-n"}'
-hygienist medical-specialist
+#:meta hygiene '{"gloss": "a condition promoting sanitary practices", "wn30": "14495080-n"}'
+hygiene condition
 #:meta hypercalcemia '{"gloss": "the presence of abnormally high levels of calcium in the blood; usually the result of excessive bone resorption in hyperparathyroidism or Paget'"'"'s disease", "wn30": "14268623-n"}'
 hypercalcemia symptom
 #:meta hypercalciuria '{"gloss": "the presence of abnormally high levels of calcium in the urine; usually the result of excessive bone resorption in hyperparathyroidism or osteoporosis", "wn30": "14269090-n"}'
@@ -947,7 +927,7 @@ hypercholesterolemia symptom
 #:meta hyperglycemia '{"gloss": "abnormally high blood sugar usually associated with diabetes", "wn30": "14319299-n"}'
 hyperglycemia symptom
 #:meta hyperkalemia '{"gloss": "higher than normal levels of potassium in the circulating blood; associated with kidney failure or sometimes with the use of diuretic drugs", "wn30": "14269556-n"}'
-hyperkalemia event symptom
+hyperkalemia symptom
 #:meta hypernatremia '{"gloss": "excessive amounts of sodium in the blood; possibly indicating diabetes insipidus", "wn30": "14271015-n"}'
 hypernatremia symptom
 #:meta hypersplenism '{"gloss": "enlarged spleen and a decrease in one or more types of blood cells; associated with many disorders", "wn30": "14271322-n"}'
@@ -957,17 +937,17 @@ hyphema bleeding
 #:meta hypnoanalysis '{"gloss": "the use of hypnosis in conjunction with psychoanalysis", "wn30": "00705319-n"}'
 hypnoanalysis psychoanalysis
 #:meta hypnotherapy '{"gloss": "the use of hypnosis in psychotherapy", "wn30": "00704064-n"}'
-hypnotherapy psychotherapy-treatment
+hypnotherapy psychotherapy
 #:meta hypocalcemia '{"gloss": "abnormally low level of calcium in the blood; associated with hypoparathyroidism or kidney malfunction or vitamin D deficiency", "wn30": "14268871-n"}'
 hypocalcemia symptom
 #:meta hypodermic-syringe '{"gloss": "a piston syringe that is fitted with a hypodermic needle for giving injections", "wn30": "03555662-n"}'
 hypodermic-syringe syringe
 #:meta hypoglycemia '{"gloss": "abnormally low blood sugar usually resulting from excessive insulin or a poor diet", "wn30": "14319454-n"}'
-hypoglycemia event symptom
+hypoglycemia symptom
 #:meta hypokalemia '{"gloss": "abnormally low level of potassium in the circulating blood leading to weakness and heart abnormalities; associated with adrenal tumors or starvation or taking diuretics", "wn30": "14269772-n"}'
-hypokalemia event symptom
+hypokalemia symptom
 #:meta hyponatremia '{"gloss": "abnormally low level of sodium in the blood; associated with dehydration", "wn30": "14271173-n"}'
-hyponatremia event symptom
+hyponatremia symptom
 #:meta hypophysectomy '{"gloss": "surgical removal of the pituitary gland", "wn30": "00677038-n"}'
 hypophysectomy ablation
 #:meta hypoproteinemia '{"gloss": "abnormally low level of protein in the blood; can indicate inadequate diet or intestinal or renal disorders", "wn30": "14270846-n"}'
@@ -1004,13 +984,14 @@ inactivated-vaccine antigen vaccine
 #:meta incomplete-fracture '{"gloss": "fracture that does not go across the entire width of the bone", "wn30": "14293840-n"}'
 incomplete-fracture fracture
 #:meta incubation-period '{"gloss": "(pathology) the phase in the development of an infection between the time a pathogen enters the body and the time the first symptoms appear", "wn30": "15287578-n"}'
-incubation-period state time-period
+incubation-period time-period
 #:meta index-case '{"gloss": "the earliest documented case of a disease that is included in an epidemiological study", "wn30": "10202854-n"}'
 index-case patient
 #:meta indigestion '{"gloss": "a disorder of digestive function characterized by discomfort or heartburn or nausea", "wn30": "14336317-n"}'
 indigestion clinical-sign symptom
 #:meta infantile-autism '{"gloss": "a rare but serious syndrome of childhood characterized by withdrawal and lack of social responsiveness or interest in others and serious linguistic deficits", "wn30": "05897255-n"}'
 infantile-autism autism
+infection '*'
 #:meta infection-process '{"gloss": "(medicine) the invasion of the body by pathogenic microorganisms and their multiplication which can lead to tissue damage and disease", "wn30": "13498404-n"}'
 infection-process process
 #:meta inflammation '{"gloss": "a response of body tissues to injury or irritation; characterized by pain and swelling and redness and heat", "wn30": "14336539-n"}'
@@ -1032,12 +1013,12 @@ inlay dental-filling
 #:meta inoculator '{"gloss": "a medical practitioner who inoculates people against diseases", "wn30": "10207514-n"}'
 inoculator medical-practitioner
 #:meta insanity '{"gloss": "relatively permanent disorder of the mind", "wn30": "14395018-n"}'
-insanity condition
+insanity mental-disorder
 instrument '*'
 #:meta insufflation '{"gloss": "(medicine) blowing air or medicated powder into the lungs (or into some other body cavity)", "wn30": "13500674-n"}'
 insufflation process
-#:meta insulin-shock '{"gloss": "the administration of sufficient insulin to induce convulsions and coma", "wn30": "00706847-n"}'
-insulin-shock shock-therapy
+#:meta insulin-shock '{"gloss": "hypoglycemia produced by excessive insulin in the system causing coma", "wn30": "14068177-n"}'
+insulin-shock hypoglycemia
 #:meta internal-medicine '{"gloss": "the branch of medicine that deals with the diagnosis and (nonsurgical) treatment of diseases of the internal organs (especially in adults)", "wn30": "06052300-n"}'
 internal-medicine medical-specialty
 #:meta internist '{"gloss": "a specialist in internal medicine", "wn30": "10212231-n"}'
@@ -1063,7 +1044,7 @@ isosorbide medication
 #:meta jactitation '{"gloss": "(pathology) extremely restless tossing and twitching usually by a person with a severe illness", "wn30": "04625515-n"}'
 jactitation symptom
 #:meta jaundice '{"gloss": "yellowing of the skin and the whites of the eyes caused by an accumulation of bile pigment (bilirubin) in the blood; can be a symptom of gallstones or liver infection or anemia", "wn30": "14319684-n"}'
-jaundice clinical-sign event symptom
+jaundice clinical-sign symptom
 #:meta jejunostomy '{"gloss": "surgical creation of an opening between the jejunum and the anterior abdominal wall; will allow artificial feeding", "wn30": "00681441-n"}'
 jejunostomy operation
 #:meta joint-dislocation '{"gloss": "a displacement of a part (especially a bone) from its normal position (as in the shoulder or the vertebral column)", "wn30": "14291561-n"}'
@@ -1089,7 +1070,7 @@ keratomalacia symptom
 #:meta keratoplasty '{"gloss": "a surgical procedure in which part or all of a damaged or diseased cornea is replaced by healthy corneal tissue from a donor", "wn30": "00681613-n"}'
 keratoplasty microsurgery plastic-surgery transplant
 #:meta keratoscope '{"gloss": "medical instrument to examine the cornea in order to detect irregularities in its anterior surface", "wn30": "03610836-n"}'
-keratoscope instrument
+keratoscope medical-instrument
 #:meta keratotomy '{"gloss": "surgical incision into the cornea", "wn30": "00679910-n"}'
 keratotomy eye-operation
 #:meta 'kernig'"'"'s-sign' '{"gloss": "symptom of meningitis; patient cannot extend the leg at the knee when the thigh is flexed because of stiffness in the hamstrings", "wn30": "14267017-n"}'
@@ -1098,8 +1079,6 @@ keratotomy eye-operation
 ketonemia symptom
 #:meta ketonuria '{"gloss": "excessive amounts of ketone bodies in the urine as in diabetes mellitus or starvation", "wn30": "14271480-n"}'
 ketonuria symptom
-#:meta kibe '{"gloss": "ulcerated chilblain on the heel", "wn30": "14183692-n"}'
-kibe chilblain
 kidney '*'
 #:meta 'klinefelter'"'"'s-syndrome' '{"gloss": "syndrome in males that is characterized by small testes and long legs and enlarged breasts and reduced sperm production and mental retardation; a genetic defect in which an extra X chromosome (XXY) is present in the male", "wn30": "14306475-n"}'
 'klinefelter'"'"'s-syndrome' syndrome
@@ -1130,8 +1109,6 @@ laser-assisted-subepithelial-keratomileusis eye-operation
 laser-trabecular-surgery eye-operation
 #:meta lassa-fever '{"gloss": "an acute contagious viral disease of central western Africa; characterized by fever and inflammation and muscular pains and difficulty swallowing; can be used as a bioweapon", "wn30": "14135956-n"}'
 lassa-fever hemorrhagic-fever
-#:meta lazaretto '{"gloss": "hospital for persons with infectious diseases (especially leprosy)", "wn30": "03650803-n"}'
-lazaretto hospital
 #:meta leiomyosarcoma '{"gloss": "sarcoma of smooth muscle; occurs most often digestive tract or uterus or bladder or prostate", "wn30": "14241088-n"}'
 leiomyosarcoma sarcoma
 #:meta leishmaniasis '{"gloss": "sores resulting from a tropical infection by protozoa of the genus Leishmania which are spread by sandflies", "wn30": "14178077-n"}'
@@ -1167,8 +1144,6 @@ liver-disease disease
 lobectomy ablation
 #:meta lobotomy '{"gloss": "surgical interruption of nerve tracts to and from the frontal lobe of the brain; often results in marked cognitive and personality changes", "wn30": "00684128-n"}'
 lobotomy psychosurgery
-#:meta low-level-radioactive-waste '{"gloss": "(medicine) radioactive waste consisting of objects that have been briefly exposed to radioactivity (as in certain medical tests)", "wn30": "14943359-n"}'
-low-level-radioactive-waste material
 #:meta lower-respiratory-infection '{"gloss": "infection of the lower respiratory tract", "wn30": "14179276-n"}'
 lower-respiratory-infection respiratory-tract-infection
 #:meta lumpectomy '{"gloss": "surgical removal of a tumor without removing much of the surrounding tissue or lymph nodes; performed in some cases of breast cancer", "wn30": "00684648-n"}'
@@ -1206,7 +1181,6 @@ mastectomy ablation
 mastoidectomy ablation
 #:meta mastopexy '{"gloss": "plastic surgery to lift or reshape the breasts", "wn30": "00682436-n"}'
 mastopexy plastic-surgery
-material '*'
 #:meta maternity-hospital '{"gloss": "a hospital that provides care for women during pregnancy and childbirth and for newborn infants", "wn30": "03730334-n"}'
 maternity-hospital hospital
 #:meta 'meckel'"'"'s-diverticulum' '{"gloss": "a congenital diverticulum in the ileum resulting from incomplete closure of the yolk sac", "wn30": "14295986-n"}'
@@ -1223,6 +1197,7 @@ medical-imaging activity
 medical-indication information
 #:meta medical-infusion '{"gloss": "(medicine) the passive introduction of a substance (a fluid or drug or electrolyte) into a vein or between tissues (as by gravitational force)", "wn30": "00323532-n"}'
 medical-infusion act
+medical-instrument '*'
 #:meta medical-intern '{"gloss": "an advanced student or graduate in medicine gaining supervised practical experience (`houseman'"'"' is a British term)", "wn30": "10211203-n"}'
 medical-intern doctor
 #:meta medical-officer '{"gloss": "a medical practitioner in the armed forces", "wn30": "10305635-n"}'
@@ -1253,7 +1228,7 @@ meningism clinical-sign symptom
 #:meta meniscectomy '{"gloss": "surgical removal of the meniscus of the knee", "wn30": "00686282-n"}'
 meniscectomy ablation
 #:meta menorrhagia '{"gloss": "abnormally heavy or prolonged menstruation; can be a symptom of uterine tumors and can lead to anemia if prolonged", "wn30": "13513540-n"}'
-menorrhagia process symptom
+menorrhagia symptom
 #:meta mental-disorder '{"gloss": "(psychiatry) a psychological disorder of thought or emotion; a more neutral term than mental illness", "wn30": "14083790-n"}'
 mental-disorder disease
 #:meta mesothelioma '{"gloss": "a form of carcinoma of the mesothelium lining lungs or abdomen or heart; usually associated with exposure to asbestos dust", "wn30": "14251435-n"}'
@@ -1267,13 +1242,12 @@ method '*'
 metrazol-shock shock-therapy
 #:meta metrorrhagia '{"gloss": "bleeding from the uterus that is not due to menstruation; usually indicative of disease (as cervical cancer)", "wn30": "14370825-n"}'
 metrorrhagia bleeding
-microorganism '*'
 #:meta microsurgery '{"gloss": "surgery using operating microscopes and miniaturized precision instruments to perform intricate procedures on very small structures", "wn30": "00684988-n"}'
 microsurgery operation
 #:meta microwave-diathermy-machine '{"gloss": "diathermy machine that uses microwave radiation as the source of heat", "wn30": "03761588-n"}'
 microwave-diathermy-machine diathermy-machine
 #:meta midwife '{"gloss": "a woman skilled in aiding the delivery of babies", "wn30": "10314836-n"}'
-midwife nurse
+midwife professional
 #:meta military-hospital '{"gloss": "hospital for soldiers and other military personnel", "wn30": "03762982-n"}'
 military-hospital hospital
 #:meta milk-sickness '{"gloss": "caused by consuming milk from cattle suffering from trembles", "wn30": "14078613-n"}'
@@ -1354,14 +1328,13 @@ neurosurgeon surgeon
 neurosurgery operation
 #:meta neutering '{"gloss": "the sterilization of an animal", "wn30": "00692506-n"}'
 neutering surgical-sterilization
-noise '*'
-#:meta nonsocial-infection '{"gloss": "an infection that is acquired at a hospital or other healthcare facility", "wn30": "14178326-n"}'
-nonsocial-infection condition
 #:meta 'noonan'"'"'s-syndrome' '{"gloss": "syndrome seen only in males; marked by short stature and lowset ears and subnormal fertility", "wn30": "14308012-n"}'
 'noonan'"'"'s-syndrome' syndrome
 nose '*'
 #:meta nosebleed '{"gloss": "bleeding from the nose", "wn30": "14370992-n"}'
 nosebleed bleeding
+#:meta nosocomial-infection '{"gloss": "an infection that is acquired at a hospital or other healthcare facility", "wn30": "14178326-n"}'
+nosocomial-infection condition
 #:meta nosology '{"gloss": "the branch of medical science dealing with the classification of disease", "wn30": "06053280-n"}'
 nosology 'about(disease)' medical-specialty
 #:meta novobiocin '{"gloss": "an antibiotic obtained from an actinomycete and used to treat infections by Gram-positive bacteria", "wn30": "03833409-n"}'
@@ -1369,7 +1342,7 @@ novobiocin antibacterial antibiotic
 #:meta nuclear-medicine '{"gloss": "the branch of medicine that uses radioactive materials either to image a patient'"'"'s body or to destroy diseased cells", "wn30": "06052685-n"}'
 nuclear-medicine radiology
 #:meta numbness '{"gloss": "partial or total lack of sensation in a part of the body; a symptom of nerve damage or dysfunction", "wn30": "14322528-n"}'
-numbness event symptom
+numbness symptom
 nurse '*'
 #:meta nurse-midwife '{"gloss": "a registered nurse who has received special training as a midwife", "wn30": "10367694-n"}'
 nurse-midwife registered-nurse
@@ -1418,17 +1391,15 @@ ophthalmologist medical-specialist
 ophthalmology 'about(eye)' medical-specialty
 ophthalmoscope '*'
 #:meta opportunistic-infection '{"gloss": "any infection caused by a microorganism that does not normally cause disease in humans; occurs in persons with abnormally functioning immune systems (as AIDS patients or transplant patients receiving immunosuppressive drugs)", "wn30": "14178482-n"}'
-opportunistic-infection condition
+opportunistic-infection infection
 #:meta oral-cancer '{"gloss": "malignant neoplasm of the lips of mouth; most common in men over the age of 60", "wn30": "14251845-n"}'
 oral-cancer carcinoma
 #:meta orchidectomy '{"gloss": "surgical removal of one or both testicles", "wn30": "00686913-n"}'
 orchidectomy ablation
 #:meta orchiopexy '{"gloss": "operation to bring an undescended testicle into the scrotum", "wn30": "00689186-n"}'
 orchiopexy operation
-#:meta organ-incompetence '{"gloss": "inability of a part or organ to function properly", "wn30": "14076126-n"}'
-organ-incompetence disease
 #:meta organ-insufficiency '{"gloss": "(pathology) inability of a bodily part or organ to function normally", "wn30": "14113471-n"}'
-organ-insufficiency attribute
+organ-insufficiency dysfunction
 organism '*'
 organization '*'
 #:meta orthodontics '{"gloss": "the branch of dentistry dealing with the prevention or correction of irregularities of the teeth", "wn30": "06048552-n"}'
@@ -1440,7 +1411,7 @@ orthopedics surgery
 #:meta orthopedist '{"gloss": "a specialist in correcting deformities of the skeletal system (especially in children)", "wn30": "10385159-n"}'
 orthopedist medical-specialist surgeon
 #:meta orthoptist '{"gloss": "a specialist in orthoptics", "wn30": "10385354-n"}'
-orthoptist medical-specialist
+orthoptist specialist
 #:meta orthoscope '{"gloss": "an ophthalmoscope with a layer of water to neutralize the refraction of the cornea", "wn30": "03857291-n"}'
 orthoscope ophthalmoscope
 #:meta osteosarcoma '{"gloss": "malignant bone tumor; most common in children and young adults where it tends to affect the femur", "wn30": "14241556-n"}'
@@ -1451,6 +1422,8 @@ osteotomy operation
 ostomy operation
 #:meta otolaryngologist '{"gloss": "a specialist in the disorders of the ear or nose or throat", "wn30": "10059323-n"}'
 otolaryngologist medical-specialist
+#:meta otologist '{"gloss": "a physician who specializes in the ear and its diseases", "wn30": "10041195-n"}'
+otologist medical-specialist
 #:meta otology '{"gloss": "the branch of medicine concerned with the ear", "wn30": "06054700-n"}'
 otology 'about(ear)' medical-specialty
 #:meta otoplasty '{"gloss": "reconstructive surgery of the auricle of the external ear", "wn30": "00682625-n"}'
@@ -1474,9 +1447,9 @@ palatopharyngoplasty operation
 #:meta paleopathology '{"gloss": "the study of disease of former times (as inferred from fossil evidence)", "wn30": "06145729-n"}'
 paleopathology pathology
 #:meta palpitation '{"gloss": "a rapid and irregular heart beat", "wn30": "14335097-n"}'
-palpitation event symptom
-#:meta palsy '{"gloss": "a condition marked by uncontrollable tremor", "wn30": "14316470-n"}'
-palsy clinical-sign disease symptom
+palpitation symptom
+#:meta palsy '{"gloss": "loss of the ability to move a body part", "wn30": "14558226-n"}'
+palsy dysfunction
 #:meta pancreatectomy '{"gloss": "surgical removal of part or all of the pancreas", "wn30": "00687027-n"}'
 pancreatectomy ablation
 #:meta pancreatic-cancer '{"gloss": "cancer of the pancreas", "wn30": "14251981-n"}'
@@ -1492,7 +1465,7 @@ paregoric medication
 #:meta paresthesia '{"gloss": "abnormal skin sensations (as tingling or tickling or itching or burning) usually associated with peripheral nerve damage", "wn30": "14324795-n"}'
 paresthesia symptom
 #:meta paronychia '{"gloss": "infection in the tissues adjacent to a nail on a finger or toe", "wn30": "14178794-n"}'
-paronychia condition
+paronychia infection
 #:meta patent-medicine '{"gloss": "medicine that is protected by a patent and available without a doctor'"'"'s prescription", "wn30": "03898936-n"}'
 patent-medicine medication
 #:meta pathogen '{"gloss": "any disease-producing agent (especially a virus or bacterium or other microorganism)", "wn30": "01386007-n"}'
@@ -1502,12 +1475,14 @@ pathogen-invasion event
 #:meta pathological-curvature '{"gloss": "(medicine) a curving or bending; often abnormal", "wn30": "14213328-n"}'
 pathological-curvature condition
 #:meta pathological-plaque '{"gloss": "(pathology) a small abnormal patch on or inside the body", "wn30": "05244239-n"}'
-pathological-plaque physical-object symptom
+pathological-plaque symptom
 #:meta pathological-strangulation '{"gloss": "(pathology) constriction of a body part so as to cut off the flow of blood or other fluid", "wn30": "00227264-n"}'
-pathological-strangulation condition event
+pathological-strangulation condition
 #:meta pathology '{"gloss": "the branch of medical science that studies the causes and nature and effects of diseases", "wn30": "06060845-n"}'
 pathology 'about(disease)' medicine
 patient '*'
+#:meta pediatrician '{"gloss": "a specialist in the care of babies", "wn30": "09828760-n"}'
+pediatrician medical-specialist
 #:meta pediatrics '{"gloss": "the branch of medicine concerned with the treatment of infants and children", "wn30": "06061631-n"}'
 pediatrics 'about(child)' medical-specialty
 #:meta pedodontist '{"gloss": "a dentist who specializes in the care of children'"'"'s teeth", "wn30": "10412554-n"}'
@@ -1599,7 +1574,7 @@ plant-disease disease
 #:meta plastic-surgery '{"gloss": "surgery concerned with therapeutic or cosmetic reformation of tissue", "wn30": "00690501-n"}'
 plastic-surgery operation
 #:meta play-therapy '{"gloss": "form of psychotherapy for children that uses play situations for diagnosis or treatment", "wn30": "00704159-n"}'
-play-therapy psychotherapy-treatment
+play-therapy psychotherapy
 #:meta pleomorphic-rhabdomyosarcoma '{"gloss": "form of rhabdomyosarcoma that affects limb muscles of older adults", "wn30": "14245928-n"}'
 pleomorphic-rhabdomyosarcoma rhabdomyosarcoma
 #:meta pneumococcal-vaccine '{"gloss": "vaccine (trade name Pneumovax) effective against the 23 most common strains of pneumococcus", "wn30": "03971771-n"}'
@@ -1666,7 +1641,7 @@ protein '*'
 #:meta proteosome-vaccine '{"gloss": "a form of vaccine that can be administered by an inhaler", "wn30": "04015652-n"}'
 proteosome-vaccine antigen vaccine
 #:meta protozoal-infection '{"gloss": "any infection caused by a protozoan", "wn30": "14178913-n"}'
-protozoal-infection condition
+protozoal-infection infection
 #:meta psychiatrist '{"gloss": "a physician who specializes in psychiatry", "wn30": "10488016-n"}'
 psychiatrist medical-specialist
 #:meta psychiatry '{"gloss": "the branch of medicine dealing with the diagnosis and treatment of mental disorders", "wn30": "06055946-n"}'
@@ -1700,13 +1675,11 @@ psychology '*'
 #:meta psychopharmacology '{"gloss": "the study of drugs that affect the mind", "wn30": "06055824-n"}'
 psychopharmacology pharmacology
 #:meta psychosis '{"gloss": "any severe mental disorder in which contact with reality is lost or highly distorted", "wn30": "14398067-n"}'
-psychosis condition
+psychosis mental-disorder
 #:meta psychosurgery '{"gloss": "brain surgery on human patients intended to relieve severe and otherwise intractable mental or behavioral problems", "wn30": "00667384-n"}'
 psychosurgery brain-surgery neurosurgery
-#:meta psychotherapy '{"gloss": "the branch of psychiatry concerned with psychological methods", "wn30": "06056923-n"}'
-psychotherapy psychiatry
-#:meta psychotherapy-treatment '{"gloss": "the treatment of mental or emotional problems by psychological means", "wn30": "00700652-n"}'
-psychotherapy-treatment therapy
+#:meta psychotherapy '{"gloss": "the treatment of mental or emotional problems by psychological means", "wn30": "00700652-n"}'
+psychotherapy therapy
 #:meta puerperal-fever '{"gloss": "serious form of septicemia contracted by a woman during childbirth or abortion (usually attributable to unsanitary conditions); formerly widespread but now uncommon", "wn30": "14190493-n"}'
 puerperal-fever blood-poisoning
 #:meta pulmonary-aspergillosis '{"gloss": "disease especially in agricultural workers caused by inhalation of Aspergillus spores causing lumps in skin and ears and respiratory organs", "wn30": "14071559-n"}'
@@ -1734,7 +1707,7 @@ radical-hysterectomy hysterectomy
 #:meta radical-mastectomy '{"gloss": "removal of a breast and the underlying muscles (pectoralis major and pectoralis minor) and lymph nodes in the adjacent armpit", "wn30": "00685837-n"}'
 radical-mastectomy mastectomy
 #:meta radiographer '{"gloss": "a person who makes radiographs", "wn30": "10503965-n"}'
-radiographer medical-specialist specialist
+radiographer specialist
 #:meta radiologist '{"gloss": "a medical specialist who uses radioactive substances and X-rays in the treatment of disease", "wn30": "10504206-n"}'
 radiologist medical-specialist
 #:meta radiology '{"gloss": "the branch of medical science dealing with the medical use of X-rays or other penetrating radiation", "wn30": "06062407-n"}'
@@ -1769,9 +1742,9 @@ resection operation
 #:meta respiratory-disease '{"gloss": "a disease affecting the respiratory system", "wn30": "14145095-n"}'
 respiratory-disease disease
 #:meta respiratory-tract-infection '{"gloss": "any infection of the respiratory tract", "wn30": "14179104-n"}'
-respiratory-tract-infection condition
+respiratory-tract-infection infection
 #:meta restless-legs-syndrome '{"gloss": "feeling of uneasiness and restlessness in the legs after going to bed (sometimes causing insomnia); may be relieved temporarily by walking or moving the legs", "wn30": "14309394-n"}'
-restless-legs-syndrome event syndrome
+restless-legs-syndrome syndrome
 reversed-dimension dimension
 #:meta 'reye'"'"'s-syndrome' '{"gloss": "acquired encephalopathy following acute viral infections (especially influenza or chicken pox) in young children; characterized by fever, vomiting, disorientation, coma, and fatty infiltration of the liver", "wn30": "14309653-n"}'
 'reye'"'"'s-syndrome' syndrome
@@ -1826,14 +1799,11 @@ scald burn
 #:meta scalenus-syndrome '{"gloss": "discomfort and vascular symptoms and loss of sensation in a shoulder and arm; caused by a scalene muscle compressing the subclavian artery and part of the brachial plexus", "wn30": "14309938-n"}'
 scalenus-syndrome syndrome
 #:meta scar '{"gloss": "a mark left (usually on the skin) by the healing of injured tissue", "wn30": "14363483-n"}'
-scar symptom tissue
-#:meta scatology '{"gloss": "(medicine) the chemical analysis of excrement (for medical diagnosis or for paleontological purposes)", "wn30": "00646504-n"}'
-scatology activity
+scar tissue
 #:meta schistosomiasis '{"gloss": "an infestation with or a resulting infection caused by a parasite of the genus Schistosoma; common in the tropics and Far East; symptoms depend on the part of the body infected", "wn30": "14180565-n"}'
-schistosomiasis condition
+schistosomiasis infection
 #:meta schizophrenia '{"gloss": "any of several psychotic disorders characterized by distortions of reality and disturbances of thought and language and withdrawal from social contact", "wn30": "14398523-n"}'
 schizophrenia psychosis
-science '*'
 scientist '*'
 #:meta scorch-burn '{"gloss": "a surface burn", "wn30": "14289942-n"}'
 scorch-burn burn
@@ -1846,13 +1816,13 @@ sedation drug-administration
 #:meta sedative '{"gloss": "a drug that reduces excitability and calms a person", "wn30": "04166553-n"}'
 sedative medication
 #:meta self-analysis '{"gloss": "the application of psychotherapeutic principles to the analysis of your own personality", "wn30": "00705433-n"}'
-self-analysis psychotherapy-treatment
+self-analysis psychotherapy
 #:meta seminoma '{"gloss": "malignant tumor of the testis; usually occurring in older men", "wn30": "14252184-n"}'
 seminoma carcinoma
 #:meta senile-dementia '{"gloss": "dementia of the aged; results from degeneration of the brain in the absence of cerebrovascular disease", "wn30": "14396707-n"}'
 senile-dementia dementia
 #:meta sepsis '{"gloss": "the presence of pus-forming bacteria or their toxins in the blood or tissues", "wn30": "14180848-n"}'
-sepsis condition
+sepsis infection
 #:meta septectomy '{"gloss": "surgical removal of all or part of a septum (especially the nasal septum or atrial septum)", "wn30": "00687472-n"}'
 septectomy ablation
 #:meta serology '{"gloss": "the branch of medical science that deals with serums; especially with blood serums and disease", "wn30": "06063072-n"}'
@@ -1882,7 +1852,7 @@ skin '*'
 skin-cancer carcinoma
 #:meta skin-disease '{"gloss": "a disease affecting the skin", "wn30": "14219661-n"}'
 skin-disease disease
-#:meta skin-eruption '{"gloss": "symptom consisting of a breaking out and becoming visible", "wn30": "14321469-n"}'
+#:meta skin-eruption '{"gloss": "eruption on the skin occurring as a symptom of a disease", "wn30": "14321814-n"}'
 skin-eruption symptom
 #:meta skin-wale '{"gloss": "a raised mark on the skin (as produced by the blow of a whip); characteristic of many allergic reactions", "wn30": "14298620-n"}'
 skin-wale injury
@@ -1891,7 +1861,7 @@ snake-oil substance
 #:meta snakebite '{"gloss": "a bite inflicted by a (venomous) snake", "wn30": "14287647-n"}'
 snakebite bite-wound
 #:meta sneeze '{"gloss": "a symptom consisting of the involuntary expulsion of air from the nose", "wn30": "14314850-n"}'
-sneeze clinical-sign process symptom
+sneeze clinical-sign symptom
 #:meta soothing-syrup '{"gloss": "medicine in the form of a syrup that has a calming effect", "wn30": "04260816-n"}'
 soothing-syrup medication
 #:meta sore '{"gloss": "an open skin infection", "wn30": "14183065-n"}'
@@ -1899,7 +1869,7 @@ sore condition
 #:meta space-medicine '{"gloss": "the branch of medicine concerned with the effects of space flight on human beings", "wn30": "06063275-n"}'
 space-medicine medical-specialty
 #:meta spasm '{"gloss": "(pathology) sudden constriction of a hollow organ (as a blood vessel)", "wn30": "00226107-n"}'
-spasm clinical-sign event symptom
+spasm clinical-sign symptom
 #:meta spaying '{"gloss": "neutering a female by removing the ovaries", "wn30": "00692726-n"}'
 spaying neutering
 specialist '*'
@@ -1908,7 +1878,7 @@ specific-remedy medication
 #:meta spectinomycin '{"gloss": "an antibiotic used to treat gonorrhea", "wn30": "04272541-n"}'
 spectinomycin antibacterial antibiotic
 #:meta speculum '{"gloss": "a medical instrument for dilating a bodily passage or cavity in order to examine the interior", "wn30": "04273285-n"}'
-speculum instrument
+speculum medical-instrument
 #:meta speech-therapy '{"gloss": "any therapy intended to correct a disorder of speech", "wn30": "00707213-n"}'
 speech-therapy therapy
 speed 'linear-dimension(speed)'
@@ -1923,12 +1893,11 @@ spondylolisthesis joint-dislocation
 #:meta sports-medicine '{"gloss": "the branch of medicine concerned with the treatment of injuries or illness resulting from athletic activities", "wn30": "06063417-n"}'
 sports-medicine medical-specialty
 #:meta sprain '{"gloss": "a painful injury to a joint caused by a sudden wrenching of its ligaments", "wn30": "14299336-n"}'
-sprain event wrench-injury
+sprain wrench-injury
 #:meta stapedectomy '{"gloss": "surgical removal of the stapes of the middle ear", "wn30": "00687857-n"}'
 stapedectomy ablation
 #:meta staphylococcal-infection '{"gloss": "an infection with staphylococcus bacteria; usually marked by abscess formation", "wn30": "14184801-n"}'
-staphylococcal-infection condition
-state '*'
+staphylococcal-infection infection
 #:meta steatorrhea '{"gloss": "the presence of greater than normal amounts of fat in the feces which are frothy and foul smelling and floating; a symptom of disorders of fat metabolism and malabsorption syndrome", "wn30": "14567956-n"}'
 steatorrhea symptom
 stethoscope '*'
@@ -1936,7 +1905,7 @@ sting '*'
 #:meta strabotomy '{"gloss": "the surgical operation of cutting a muscle or tendon of the eye in order to correct strabismus", "wn30": "00692840-n"}'
 strabotomy operation
 #:meta streptococcal-sore-throat '{"gloss": "an infection of the oral pharynx and tonsils by streptococcus", "wn30": "14184986-n"}'
-streptococcal-sore-throat inflammatory-disease
+streptococcal-sore-throat infection inflammatory-disease
 #:meta streptomycin '{"gloss": "an antibiotic produced by the actinomycete Streptomyces griseus and used to treat tuberculosis", "wn30": "04336380-n"}'
 streptomycin antibacterial antibiotic
 #:meta streptothricin '{"gloss": "a basic antibiotic derived from a soil actinomycete", "wn30": "04336533-n"}'
@@ -1945,7 +1914,7 @@ streptothricin antibacterial antibiotic
 stridor clinical-sign symptom
 stroke '*'
 #:meta sty '{"gloss": "an infection of the sebaceous gland of the eyelid", "wn30": "14185219-n"}'
-sty condition
+sty infection
 substance '*'
 #:meta subtilin '{"gloss": "a polypeptide antibiotic (similar to bacitracin) obtained from a soil bacterium", "wn30": "04348854-n"}'
 subtilin antibacterial antibiotic
@@ -1954,19 +1923,15 @@ subunit-vaccine antigen vaccine
 sucralfate medication
 #:meta suction-curettage '{"gloss": "a method of induced abortion; prior to the 14th week of gestation the embryo and placenta are removed by applying suction to the dilated cervix", "wn30": "00669687-n"}'
 suction-curettage abortion curettage
-#:meta sudorific '{"gloss": "a medicine that causes or increases sweating", "wn30": "04350347-n"}'
-sudorific substance
 #:meta sunburn '{"gloss": "redness of the skin caused by exposure to the rays of the sun", "wn30": "14290365-n"}'
-sunburn event first-degree-burn skin-disease
+sunburn first-degree-burn skin-disease
 #:meta superinfection '{"gloss": "infection that occurs while you are being treated for another infection", "wn30": "14185353-n"}'
-superinfection condition
+superinfection infection
 #:meta suppository '{"gloss": "a small plug of medication designed for insertion into the rectum or vagina where it melts", "wn30": "04361381-n"}'
 suppository medication
 #:meta suprainfection '{"gloss": "secondary infection caused by an opportunistic infection", "wn30": "14185503-n"}'
-suprainfection condition
+suprainfection infection
 surgeon '*'
-#:meta surgeon-general '{"gloss": "the senior medical officer in an Army or Navy", "wn30": "10679503-n"}'
-surgeon-general medical-officer
 surgery '*'
 #:meta surgical-contraception '{"gloss": "contraception by surgical sterilization", "wn30": "00853487-n"}'
 surgical-contraception surgical-sterilization
@@ -1975,7 +1940,7 @@ surgical-drain equipment
 #:meta surgical-implantation '{"gloss": "a surgical procedure that places something in the human body", "wn30": "00677808-n"}'
 surgical-implantation operation
 #:meta surgical-instrument '{"gloss": "a medical instrument used in surgery", "wn30": "04364545-n"}'
-surgical-instrument instrument
+surgical-instrument medical-instrument
 #:meta surgical-knife '{"gloss": "a very sharp knife used in surgery", "wn30": "04364827-n"}'
 surgical-knife knife surgical-instrument
 #:meta surgical-ligation '{"gloss": "(surgery) tying a duct or blood vessel with a ligature (as to prevent bleeding during surgery)", "wn30": "00148242-n"}'
@@ -1997,15 +1962,13 @@ sympathectomy ablation
 symptom '*'
 #:meta symptomatic-aura '{"gloss": "a sensation (as of a cold breeze or bright light) that precedes the onset of certain disorders such as a migraine attack or epileptic seizure", "wn30": "14302460-n"}'
 symptomatic-aura symptom
-#:meta symptomatic-effect '{"gloss": "a symptom caused by an illness or a drug", "wn30": "14311348-n"}'
-symptomatic-effect symptom
 syndrome '*'
 syringe '*'
 #:meta tapeworm-infection '{"gloss": "intestinal infection by a species of parasitic tapeworm; usually the result of eating inadequately cooked meat or fish", "wn30": "14185620-n"}'
-tapeworm-infection condition
+tapeworm-infection infection
 temperature 'linear-dimension(temperature)'
 #:meta tetanus '{"gloss": "an acute and serious infection of the central nervous system caused by bacterial infection of open wounds; spasms of the jaw and laryngeal muscles may occur during the late stages", "wn30": "14185803-n"}'
-tetanus condition
+tetanus infection
 #:meta tetany '{"gloss": "clinical neurological syndrome characterized by muscular twitching and cramps and (when severe) seizures; associated with calcium deficiency (hypoparathyroidism) or vitamin D deficiency or alkalosis", "wn30": "14310504-n"}'
 tetany syndrome
 #:meta tetralogy-of-fallot '{"gloss": "a congenital heart defect producing cyanosis; characterized by four symptoms: pulmonary stenosis and ventricular septal defect and malposition of the aorta over both ventricles and hypertrophy of the right ventricle", "wn30": "14469766-n"}'
@@ -2019,7 +1982,7 @@ therapy '*'
 #:meta thermocautery '{"gloss": "cautery (destruction of tissue) by heat", "wn30": "00697887-n"}'
 thermocautery cautery
 #:meta thermograph '{"gloss": "medical instrument that uses an infrared camera to reveal temperature variations on the surface of the body", "wn30": "04421417-n"}'
-thermograph instrument
+thermograph medical-instrument
 #:meta thermotherapy '{"gloss": "the use of heat to treat a disease or disorder; heating pads or hot compresses or hot-water bottles are used to promote circulation in peripheral vascular disease or to relax tense muscles", "wn30": "00707537-n"}'
 thermotherapy therapy
 #:meta third-degree-burn '{"gloss": "burn characterized by destruction of both epidermis and dermis", "wn30": "14291435-n"}'
@@ -2080,7 +2043,7 @@ toxic-shock syndrome
 toxicology chemistry pharmacology
 toxoid antigen vaccine
 #:meta toxoplasmosis '{"gloss": "infection caused by parasites transmitted to humans from infected cats; if contracted by a pregnant woman it can result in serious damage to the fetus", "wn30": "14186046-n"}'
-toxoplasmosis condition
+toxoplasmosis infection
 #:meta tracheostomy '{"gloss": "a surgical operation that creates an opening into the trachea with a tube inserted to provide a passage for air; performed when the pharynx is obstructed by edema or cancer or other causes", "wn30": "00693399-n"}'
 tracheostomy operation
 transitive-dimension dimension
@@ -2097,7 +2060,7 @@ transurethral-resection-of-the-prostate resection
 #:meta traumatology '{"gloss": "the branch of medicine that deals with the surgical repair of injuries and wounds arising from accidents", "wn30": "06064838-n"}'
 traumatology 'about(injury)' medical-specialty
 #:meta trench-foot '{"gloss": "resembling frostbite but without freezing; resulting from exposure to cold and wet", "wn30": "14299480-n"}'
-trench-foot frostbite
+trench-foot injury
 #:meta trepan '{"gloss": "a surgical instrument used to remove sections of bone from the skull", "wn30": "04479526-n"}'
 trepan surgical-instrument
 #:meta trephination '{"gloss": "an operation that removes a circular section of bone from the skull", "wn30": "00694276-n"}'
@@ -2141,7 +2104,7 @@ urologist medical-specialist
 urology medical-specialty
 vaccine '*'
 #:meta vaccinia '{"gloss": "a local infection induced in humans by inoculation with the virus causing cowpox in order to confer resistance to smallpox; normally lasts three weeks and leaves a pitted scar", "wn30": "14358022-n"}'
-vaccinia condition
+vaccinia infection
 #:meta vancomycin '{"gloss": "an antibiotic (trade name Vancocin) effective against some bacterial infections", "wn30": "04520618-n"}'
 vancomycin antibacterial antibiotic
 #:meta vasectomy '{"gloss": "surgical procedure that removes all or part of the vas deferens (usually as a means of sterilization); is sometimes reversible", "wn30": "00716179-n"}'
@@ -2161,7 +2124,7 @@ veterinary-medicine 'about(animal)' medical-specialty
 #:meta viomycin '{"gloss": "a basic polypeptide antibiotic (trade name Viocin) administered intramuscularly (along with other drugs) in the treatment of tuberculosis", "wn30": "04537235-n"}'
 viomycin antibacterial
 #:meta viral-infection '{"gloss": "infection by a virus that is pathogenic to humans", "wn30": "14186340-n"}'
-viral-infection condition
+viral-infection infection
 #:meta viral-pneumonia '{"gloss": "pneumonia caused by a virus", "wn30": "14179839-n"}'
 viral-pneumonia pneumonia viral-infection
 #:meta virology '{"gloss": "the branch of medical science that studies viruses and viral diseases", "wn30": "06065640-n"}'
@@ -2185,17 +2148,16 @@ waterhouse-friderichsen-syndrome syndrome
 #:meta wheeziness '{"gloss": "presence of abnormal high-pitched sound heard with a stethoscope when an airway is blocked (as in asthma or chronic bronchitis)", "wn30": "14372855-n"}'
 wheeziness symptom
 #:meta whiplash '{"gloss": "an injury to the neck (the cervical vertebrae) resulting from rapid acceleration or deceleration (as in an automobile accident)", "wn30": "14298420-n"}'
-whiplash event injury
+whiplash injury
 #:meta whitlow '{"gloss": "a purulent infection at the end of a finger or toe in the area surrounding the nail", "wn30": "14176570-n"}'
-whitlow condition
+whitlow infection
 #:meta williams-syndrome '{"gloss": "a rare congenital disorder associated with deletion of genetic material in chromosome 7; characterized by mental deficiency and some growth deficiency and elfin faces but an overly social personality and a remarkable gift for vocabulary", "wn30": "14470754-n"}'
-williams-syndrome event syndrome
+williams-syndrome syndrome
 #:meta 'wilms'"'"'-tumor' '{"gloss": "malignant renal tumor of young children characterized by hypertension and blood in the urine and the presence of a palpable mass", "wn30": "14246097-n"}'
 'wilms'"'"'-tumor' sarcoma
 #:meta withdrawal-symptom '{"gloss": "any physical or psychological disturbance (as sweating or depression) experienced by a drug addict when deprived of the drug", "wn30": "14373057-n"}'
 withdrawal-symptom symptom
 woman '*'
-work '*'
 wound '*'
 #:meta wound-irrigation '{"gloss": "(medicine) cleaning a wound or body organ by flushing or washing out with water or a medicated solution", "wn30": "00695448-n"}'
 wound-irrigation care
@@ -2210,5 +2172,3 @@ x-ray-therapy radiotherapy
 xenotransplant transplant
 #:meta zollinger-ellison-syndrome '{"gloss": "syndrome consisting of intractable peptic ulceration with gastric hypersecretion and hyperacidity", "wn30": "14471054-n"}'
 zollinger-ellison-syndrome syndrome
-#:meta zymosis '{"gloss": "(medicine) the development and spread of an infectious disease (especially one caused by a fungus)", "wn30": "13575226-n"}'
-zymosis infection-process

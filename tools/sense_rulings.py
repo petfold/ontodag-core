@@ -21,7 +21,8 @@ Actions, in the review's vocabulary (see tools/sense_audit.py):
   move, and the old name is dropped.
 - `drop`: the node leaves.
 
-The decisions are applied, in order, to a copy of the built graphs, and
+The decisions are applied, in order, to a copy of the built graphs as
+they were before the pass (`BASE`), and
 every row is written from the state at that point, as step7 will meet it.
 The order:
 1. Renames and splits come first, each after the row that frees the name it
@@ -49,8 +50,20 @@ GLOSSES = ROOT / "align/glosses-v14.tsv"
 MARK = "# --- the everyday-sense pass, 2026-10-22 (tools/sense_rulings.py writes this section) ---"
 
 
+# The built files the pass starts from: the commit before its first rulings.
+# The decisions were read against them, and step7 replays the rulings on top
+# of everything before them, so the rows are written from this state.
+BASE = "5c21408"
+
+
 def built(store):
-    return ROOT / ("build/core.od" if store == "core" else f"packs/{store}/build/{store}.od")
+    return "build/core.od" if store == "core" else f"packs/{store}/build/{store}.od"
+
+
+def lines(store):
+    import subprocess
+    return subprocess.run(["git", "show", f"{BASE}:{built(store)}"], cwd=ROOT, check=True,
+                          capture_output=True, text=True).stdout.splitlines()
 
 
 def graphs():
@@ -59,7 +72,7 @@ def graphs():
     out = {}
     for store in stores:
         par = {}
-        for line in open(built(store), encoding="utf-8"):
+        for line in lines(store):
             if line.startswith("#") or not line.strip():
                 continue
             tokens = shlex.split(line)
@@ -70,7 +83,7 @@ def graphs():
 
 def metas(store):
     out = {}
-    for line in open(built(store), encoding="utf-8"):
+    for line in lines(store):
         if line.startswith("#:meta "):
             _, name, blob = shlex.split(line)
             out[name] = json.loads(blob)
@@ -86,8 +99,8 @@ class Sim:
         self.meta = {}
 
     def exists(self, name):
-        return any(name in par and par[name] != ["*"] for par in self.g.values()) \
-            or name in self.g["core"]
+        # a pack's "*" line is a stub or the pack's own top-level name: either way the name is there
+        return any(name in par for par in self.g.values())
 
     def owner(self, name):
         return next((s for s, par in self.g.items() if name in par and par[name] != ["*"]), None)

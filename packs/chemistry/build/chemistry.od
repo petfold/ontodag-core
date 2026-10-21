@@ -1,14 +1,11 @@
 # ontodag store v1
-#:canonical 6.0 23403a3fffd0968642ab87b62864b0387884206104671248e30136a170fdf368 2
+#:canonical 6.0 b0a4887c1d7462c54cba20dd920c0c17c6e87d191ed146c22b25ecc6f898914e 2
 #:meta 24-karat-gold '{"gloss": "100 per cent gold", "wn30": "14639467-n"}'
 24-karat-gold gold
 about enclosing-dimension
 absorption '*'
 #:meta acid-value '{"gloss": "(chemistry) the amount of free acid present in fat as measured by the milligrams of potassium hydroxide needed to neutralize it", "wn30": "13581598-n"}'
 acid-value attribute
-act '*'
-#:meta actinide-series '{"gloss": "(chemistry) a series of 15 radioactive elements with increasing atomic numbers from actinium to lawrencium", "wn30": "14625110-n"}'
-actinide-series chemical-group collection
 #:meta actinium '{"gloss": "a radioactive element of the actinide series; found in uranium ores", "wn30": "14627655-n"}'
 actinium chemical-element radioactive-material
 #:meta activated-carbon '{"gloss": "powdered or granular carbon used for purifying by adsorption; given orally (as a slurry) it is an antidote for some kinds of poisons", "wn30": "14796359-n"}'
@@ -21,8 +18,6 @@ aldehyde compound
 alkali-metal metal
 #:meta alkaline-earth '{"gloss": "any of the bivalent metals of group II of the periodic table (calcium or strontium or barium or magnesium or beryllium)", "wn30": "14712489-n"}'
 alkaline-earth metal
-#:meta allomerism '{"gloss": "(chemistry) variability in chemical composition without variation in crystalline form", "wn30": "07337935-n"}'
-allomerism variation
 #:meta allotrope '{"gloss": "a structurally different form of an element", "wn30": "14624025-n"}'
 allotrope chemical-element
 alloy mixture
@@ -42,7 +37,7 @@ amount-of-substance 'linear-dimension(amount)'
 #:meta anticatalyst '{"gloss": "(chemistry) a substance that retards a chemical reaction or diminishes the activity of a catalyst", "wn30": "14725024-n"}'
 anticatalyst substance
 #:meta antimonial-lead '{"gloss": "a lead alloy that contains about 5% antimony", "wn30": "14905197-n"}'
-antimonial-lead lead
+antimonial-lead alloy
 #:meta antimony '{"gloss": "a metallic element having four allotropic forms; used in a wide variety of alloys; found in stibnite", "wn30": "14628668-n"}'
 antimony metal
 area 'linear-dimension(area)'
@@ -103,7 +98,7 @@ cadmium metal
 #:meta calcium '{"gloss": "a white metallic element that burns with a brilliant light; the fifth most abundant element in the earth'"'"'s crust; an important component of most plants and animals", "wn30": "14632648-n"}'
 calcium metal
 #:meta calcium-ion '{"gloss": "ion of calcium; a factor in the clotting of blood", "wn30": "15071229-n"}'
-calcium-ion calcium
+calcium-ion ion
 calendar-dimension dimension
 #:meta californium '{"gloss": "a radioactive transuranic element; discovered by bombarding curium with alpha particles", "wn30": "14633037-n"}'
 californium metal
@@ -116,7 +111,7 @@ carbon-nanotube fullerene
 #:meta carbonado '{"gloss": "an inferior dark diamond used in industry for drilling and polishing", "wn30": "14793393-n"}'
 carbonado carbon mineral
 #:meta cast-iron '{"gloss": "an alloy of iron containing so much carbon that it is brittle and so cannot be wrought but must be shaped by casting", "wn30": "14801921-n"}'
-cast-iron iron
+cast-iron alloy
 #:meta catalyst '{"gloss": "(chemistry) a substance that initiates or accelerates a chemical reaction without itself being affected", "wn30": "14723628-n"}'
 catalyst substance
 catalytic-activity 'linear-dimension(catalytic-activity)'
@@ -133,13 +128,13 @@ char carbon
 charcoal carbon fuel
 chemical '*'
 #:meta chemical-activity '{"gloss": "(chemistry) the capacity of a substance to take part in a chemical reaction", "wn30": "14531203-n"}'
-chemical-activity condition
+chemical-activity attribute
 #:meta chemical-association '{"gloss": "(chemistry) any process of combination (especially in solution) that depends on relatively weak chemical bonding", "wn30": "13435152-n"}'
 chemical-association chemical-process
 #:meta chemical-bond '{"gloss": "an electrical force linking atoms", "wn30": "11436283-n"}'
 chemical-bond natural-event
 #:meta chemical-buffer '{"gloss": "(chemistry) an ionic compound that resists changes in its pH", "wn30": "14785941-n"}'
-chemical-buffer compound
+chemical-buffer chemical-solution
 #:meta chemical-chain '{"gloss": "(chemistry) a series of linked atoms (generally in an organic molecule)", "wn30": "09240621-n"}'
 chemical-chain chemical-group
 #:meta chemical-decomposition '{"gloss": "(chemistry) separation of a substance into two or more substances that may differ from each other and from the original substance", "wn30": "13458268-n"}'
@@ -156,7 +151,7 @@ chemical-indicator material
 #:meta chemical-phenomenon '{"gloss": "any natural phenomenon involving chemistry (as changes to atoms or molecules)", "wn30": "11409059-n"}'
 chemical-phenomenon natural-event
 #:meta chemical-polymorphism '{"gloss": "(chemistry) the existence of different kinds of crystal of the same chemical compound", "wn30": "11492833-n"}'
-chemical-polymorphism chemical-phenomenon
+chemical-polymorphism attribute
 #:meta chemical-process '{"gloss": "(chemistry) any process determined by the atomic and molecular composition and structure of the substances involved", "wn30": "13446390-n"}'
 chemical-process process
 chemical-reaction chemical-process
@@ -177,14 +172,15 @@ closed-chain chemical-chain
 #:meta cobalt '{"gloss": "a hard ferromagnetic silver-white bivalent or trivalent metallic element; a trace element in plant and animal nutrition", "wn30": "14635290-n"}'
 cobalt metal
 #:meta cobalt-60 '{"gloss": "a radioactive isotope of cobalt with mass number 60; a source of exceptionally intense gamma rays; used in radiation therapy", "wn30": "14635542-n"}'
-cobalt-60 cobalt
+cobalt-60 cobalt radioisotope
 #:meta coin-silver '{"gloss": "a silver of the degree of purity established for making legal silver coins", "wn30": "14816613-n"}'
-coin-silver silver
-collection '*'
+coin-silver alloy
 compost mixture
 compound '*'
 concentration '*'
 condition '*'
+#:meta copernicium '{"gloss": "a radioactive transuranic element", "wn30": "14659794-n"}'
+copernicium chemical-element
 copper '*'
 count count-dimension
 count-dimension dimension
@@ -192,7 +188,6 @@ count-dimension dimension
 covalent-bond chemical-bond
 #:meta curium '{"gloss": "a radioactive transuranic metallic element; produced by bombarding plutonium with helium nuclei", "wn30": "14636220-n"}'
 curium metal radioactive-material
-'dalton'"'"'s-law' '*'
 #:meta darmstadtium '{"gloss": "a radioactive transuranic element", "wn30": "14636392-n"}'
 darmstadtium chemical-element
 #:meta delta-iron '{"gloss": "an allotrope of iron that is stable between 1403 degrees centigrade and the melting point (= 1532 degrees)", "wn30": "14722426-n"}'
@@ -244,8 +239,8 @@ europium metal
 event '*'
 #:meta fermium '{"gloss": "a radioactive transuranic metallic element produced by bombarding plutonium with neutrons", "wn30": "14637339-n"}'
 fermium metal
-field-of-study '*'
-fluid '*'
+#:meta flerovium '{"gloss": "a radioactive transuranic element", "wn30": "14660183-n"}'
+flerovium chemical-element
 #:meta fluorine '{"gloss": "a nonmetallic univalent element belonging to the halogens; usually a yellow irritating toxic flammable gas; a powerful oxidizing agent; recovered from fluorite or cryolite or fluorapatite", "wn30": "14637507-n"}'
 fluorine nonmetal
 #:meta fluorocarbon '{"gloss": "a halocarbon in which some hydrogen atoms have been replaced by fluorine; used in refrigerators and aerosols", "wn30": "14871968-n"}'
@@ -277,12 +272,10 @@ graph-dimension dimension
 #:meta graphite '{"gloss": "used as a lubricant and as a moderator in nuclear reactors", "wn30": "14796575-n"}'
 graphite carbon
 #:meta green-gold '{"gloss": "a gold alloy (at least 14 karat gold with silver or silver and cadmium) that has a green appearance", "wn30": "14891425-n"}'
-green-gold gold
+green-gold alloy
 #:meta grid-metal '{"gloss": "a kind of hard lead that is used for grids in storage batteries", "wn30": "14891868-n"}'
 grid-metal antimonial-lead
 grout mixture
-#:meta guinea-gold '{"gloss": "22-karat gold from which guinea coins were made", "wn30": "14892405-n"}'
-guinea-gold gold
 #:meta hafnium '{"gloss": "a grey tetravalent metallic element that resembles zirconium chemically and is found in zirconium minerals; used in filaments for its ready emission of electrons", "wn30": "14639556-n"}'
 hafnium metal
 #:meta hard-lead '{"gloss": "unrefined lead that is hard because of the impurities it contains", "wn30": "14905076-n"}'
@@ -316,9 +309,9 @@ inorganic-chemistry chemistry
 #:meta iodine '{"gloss": "a nonmetallic element belonging to the halogens; used especially in medicine and photography and in dyes; occurs naturally only in combination in small quantities (as in sea water or rocks)", "wn30": "14641397-n"}'
 iodine nonmetal
 #:meta iodine-125 '{"gloss": "light radioactive isotope of iodine with a half-life of 60 days; used as a tracer in thyroid studies and as a treatment for hyperthyroidism", "wn30": "14642005-n"}'
-iodine-125 iodine
+iodine-125 iodine radioisotope
 #:meta iodine-131 '{"gloss": "heavy radioactive isotope of iodine with a half-life of 8 days; used in a sodium salt to diagnose thyroid disease and to treat goiter", "wn30": "14641797-n"}'
-iodine-131 iodine isotope
+iodine-131 iodine radioisotope
 #:meta ion '{"gloss": "a particle that is electrically charged (positive or negative); an atom or molecule or group that has lost or gained one or more electrons", "wn30": "09315159-n"}'
 ion particle
 #:meta ionic-bond '{"gloss": "a chemical bond in which one atom loses an electron to form a positive ion and the other atom gains an electron to form a negative ion", "wn30": "11437344-n"}'
@@ -327,7 +320,7 @@ ionic-bond chemical-bond
 iridium metal
 iron '*'
 #:meta isotope '{"gloss": "one of two or more atoms with the same atomic number but with different numbers of neutrons", "wn30": "14619658-n"}'
-isotope atom
+isotope chemical-element
 #:meta ketone '{"gloss": "any of a class of organic compounds having a carbonyl group linked to a carbon atom in each of two hydrocarbon radicals", "wn30": "14926294-n"}'
 ketone compound
 #:meta krypton '{"gloss": "a colorless element that is one of the six inert gasses; occurs in trace amounts in air", "wn30": "14642916-n"}'
@@ -356,6 +349,8 @@ liquid-nitrogen liquid nitrogen
 liquid-oxygen liquid oxygen
 #:meta lithium '{"gloss": "a soft silver-white univalent element of the alkali metal group; the lightest metal known; occurs in several minerals", "wn30": "14643793-n"}'
 lithium metal
+#:meta livermorium '{"gloss": "a radioactive transuranic element", "wn30": "14659922-n"}'
+livermorium chemical-element
 #:meta long-chain '{"gloss": "(chemistry) a relatively long chain of atoms in a molecule", "wn30": "09343266-n"}'
 long-chain chemical-chain
 #:meta lutetium '{"gloss": "a trivalent metallic element of the rare earth group; usually occurs in association with yttrium", "wn30": "14644063-n"}'
@@ -385,6 +380,8 @@ molybdenum metal
 monosaccharide carbohydrate
 #:meta monovalent-atom '{"gloss": "(chemistry) an atom having a valence of one", "wn30": "14621080-n"}'
 monovalent-atom atom
+#:meta moscovium '{"gloss": "a radioactive transuranic element", "wn30": "14660052-n"}'
+moscovium chemical-element
 natural-event '*'
 #:meta neodymium '{"gloss": "a yellow trivalent metallic element of the rare earth group; occurs in monazite and bastnasite in association with cerium and lanthanum and praseodymium", "wn30": "14645882-n"}'
 neodymium metal
@@ -396,6 +393,8 @@ neptunium metal radioactive-material
 ni-hard alloy-iron
 #:meta ni-resist '{"gloss": "cast iron consisting of graphite in a matrix of austenite", "wn30": "14963187-n"}'
 ni-resist alloy-iron
+#:meta nihonium '{"gloss": "a radioactive transuranic element", "wn30": "14660314-n"}'
+nihonium chemical-element
 #:meta niobium '{"gloss": "a soft grey ductile metallic element used in alloys; occurs in niobite; formerly called columbium", "wn30": "14646942-n"}'
 niobium metal
 #:meta nitrogen '{"gloss": "a common nonmetallic element that is normally a colorless odorless tasteless inert diatomic gas; constitutes 78 percent of the atmosphere by volume; a constituent of all living tissues", "wn30": "14647235-n"}'
@@ -423,8 +422,8 @@ oxygen '*'
 #:meta palladium '{"gloss": "a silver-white metallic element of the platinum group that resembles platinum; occurs in some copper and nickel ores; does not tarnish at ordinary temperatures and is used (alloyed with gold) in jewelry", "wn30": "14648754-n"}'
 palladium metal
 particle '*'
-#:meta pencil-lead '{"gloss": "graphite (or a similar substance) used in such a way as to be a medium of communication", "wn30": "14796748-n"}'
-pencil-lead graphite
+#:meta pencil-lead '{"gloss": "mixture of graphite with clay in different degrees of hardness; the marking substance in a pencil", "wn30": "03651084-n"}'
+pencil-lead mixture
 perfume mixture
 #:meta periodic-law '{"gloss": "(chemistry) the principle that chemical properties of the elements are periodic functions of their atomic numbers", "wn30": "05887156-n"}'
 periodic-law 'about(chemical-element)' law-of-nature
@@ -438,7 +437,7 @@ phosphorus chemical-element
 physical-chemistry chemistry
 physical-object '*'
 #:meta pig-iron '{"gloss": "crude iron tapped from a blast furnace", "wn30": "14983491-n"}'
-pig-iron alloy iron
+pig-iron alloy
 #:meta pig-lead '{"gloss": "lead that is cast in pigs", "wn30": "14983694-n"}'
 pig-lead lead
 plaster mixture
@@ -452,8 +451,8 @@ polonium metal radioactive-material
 polymer compound
 #:meta polyvalence '{"gloss": "(chemistry) the state of having a valence greater than two", "wn30": "14570330-n"}'
 polyvalence state
-#:meta pot-metal '{"gloss": "cast iron used for making cooking wares", "wn30": "14802167-n"}'
-pot-metal alloy cast-iron
+#:meta pot-metal '{"gloss": "today pot metal is a cheap low-melting (zinc) alloy; the cooking cast-iron sense is archaic"}'
+pot-metal alloy
 #:meta potassium '{"gloss": "a light soft silver-white metallic element of the alkali metal group; oxidizes rapidly in air and reacts violently with water; is abundant in nature in combined forms occurring in sea water and in carnallite and kainite and sylvite", "wn30": "14650807-n"}'
 potassium metal
 #:meta praseodymium '{"gloss": "a soft yellowish-white trivalent metallic element of the rare earth group; can be recovered from bastnasite or monazite by an ion-exchange process", "wn30": "14651212-n"}'
@@ -480,7 +479,7 @@ radon noble-gas radioactive-material
 ratio '*'
 rectangle-dimension dimension
 #:meta reverse-osmosis '{"gloss": "(chemistry) a method of producing pure water; a solvent passes through a semipermeable membrane in a direction opposite to that for natural osmosis when it is subjected to a hydrostatic pressure greater than the osmotic pressure", "wn30": "13528441-n"}'
-reverse-osmosis osmosis
+reverse-osmosis process
 reversed-dimension dimension
 #:meta rhenium '{"gloss": "a rare heavy polyvalent metallic element that resembles manganese chemically and is used in some alloys; is obtained as a by-product in refining molybdenum", "wn30": "14652390-n"}'
 rhenium metal
@@ -512,7 +511,6 @@ sensitizer substance
 shared-with reversed-dimension
 #:meta silicon '{"gloss": "a tetravalent nonmetallic element; next to oxygen it is the most abundant element in the earth'"'"'s crust; occurs in clay and feldspar and granite and quartz and sand; used as a semiconductor in transistors", "wn30": "14654541-n"}'
 silicon chemical-element material
-silver '*'
 size dominance-dimension
 smoke mixture
 #:meta solute '{"gloss": "the dissolved matter in a solution; the component of a solution that changes its state", "wn30": "15047849-n"}'
@@ -531,7 +529,7 @@ stoichiometry ratio
 #:meta strontium '{"gloss": "a soft silver-white or yellowish metallic element of the alkali metal group; turns yellow in air; occurs in celestite and strontianite", "wn30": "14655731-n"}'
 strontium metal
 #:meta strontium-90 '{"gloss": "a radioactive isotope of strontium (with the mass number 90) that is present in the fallout from nuclear explosions; can be assimilated like calcium into bones", "wn30": "14656001-n"}'
-strontium-90 strontium
+strontium-90 radioisotope strontium
 #:meta structural-iron '{"gloss": "iron that has been cast or worked in structural shapes", "wn30": "15063108-n"}'
 structural-iron iron
 #:meta sublimation '{"gloss": "(chemistry) a change directly from the solid to the gaseous state without becoming liquid", "wn30": "07360293-n"}'
@@ -576,27 +574,16 @@ transuranic-element chemical-element
 tritium hydrogen radioactive-material radioisotope
 #:meta tungsten '{"gloss": "a heavy grey-white metallic element; the pure form is used mainly in electrical applications; it is found in several ores including wolframite and scheelite", "wn30": "14659512-n"}'
 tungsten metal
-#:meta ununbium '{"gloss": "a radioactive transuranic element", "wn30": "14659794-n"}'
-ununbium chemical-element
-#:meta ununhexium '{"gloss": "a radioactive transuranic element", "wn30": "14659922-n"}'
-ununhexium chemical-element
-#:meta ununpentium '{"gloss": "a radioactive transuranic element", "wn30": "14660052-n"}'
-ununpentium chemical-element
-#:meta ununquadium '{"gloss": "a radioactive transuranic element", "wn30": "14660183-n"}'
-ununquadium chemical-element
-#:meta ununtrium '{"gloss": "a radioactive transuranic element", "wn30": "14660314-n"}'
-ununtrium chemical-element
 #:meta uranium '{"gloss": "a heavy toxic silvery-white radioactive metallic element; occurs in many isotopes; used for nuclear fuels and nuclear weapons", "wn30": "14660443-n"}'
 uranium metal radioactive-material
 #:meta uranium-235 '{"gloss": "a uranium isotope with mass number 235; capable of sustaining chain reactions", "wn30": "14660700-n"}'
-uranium-235 uranium
+uranium-235 radioisotope uranium
 #:meta uranium-238 '{"gloss": "the commonest isotope of uranium; it is not fissionable but when irradiated with neutrons it produces fissionable plutonium 239", "wn30": "14660835-n"}'
-uranium-238 uranium
+uranium-238 radioisotope uranium
 #:meta valence '{"gloss": "(chemistry) a property of atoms or radicals; their combining power given in terms of the number of hydrogen atoms (or the equivalent)", "wn30": "05034473-n"}'
 valence attribute
 #:meta vanadium '{"gloss": "a soft silvery white toxic metallic element used in steel alloys; it occurs in several complex minerals including carnotite and vanadinite", "wn30": "14661020-n"}'
 vanadium metal
-variation '*'
 volume 'linear-dimension(volume)'
 #:meta weapons-plutonium '{"gloss": "plutonium 239 that is recovered when nuclear weapons are disassembled; it is stored in plutonium pits", "wn30": "14650366-n"}'
 weapons-plutonium plutonium-239

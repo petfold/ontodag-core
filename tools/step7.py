@@ -381,9 +381,13 @@ def main():
             if action != "drop" and sub not in par and dropped_later(i, pack, sub):
                 log.append(f"already  {action} {sub} (a later ruling drops it)")
                 continue
+            if action not in ("disown", "add", "refine", "refine-cross", "promote") \
+                    and sub not in par and any(a == "disown" for a, _ in later(i, pack, sub)):
+                log.append(f"already  {action} {sub} ({pack} disowns its copy later)")
+                continue
             want = new.split()
             undone = superseded(i, "core" if action == "promote" else pack, sub, want) \
-                if action in ("add", "parent+", "move", "promote") else set()
+                if action in ("add", "parent+", "move", "promote", "refine", "refine-cross") else set()
             if undone:
                 want = [x for x in want if x not in undone]
                 if action == "promote" and not want and sub in graphs["core"][1]:
@@ -394,12 +398,19 @@ def main():
                     continue
                 if action == "move" and not want:
                     if old in par.get(sub, []):
-                        rest = [x for x in par[sub] if x != old]
-                        par[sub] = rest or ["*"]
-                        log.append(f"applied  {sub}: {old} -> (a later ruling places it)")
+                        rest = [x for x in par[sub] if x != old and x != "*"]
+                        # the only parent: the move is made, a later row moves on from it
+                        par[sub] = rest or sorted(new.split())
+                        log.append(f"applied  {sub}: {old} -> "
+                                   + ("(a later ruling places it)" if rest else new))
                     else:
                         log.append(f"already  {sub}: {old} -> {new} (a later ruling places it)")
                     continue
+                if action in ("refine", "refine-cross") and not want:
+                    if sub in par:
+                        log.append(f"already  {pack} refines {sub} ⊑ {new} (a later ruling changes it)")
+                        continue
+                    want = new.split()               # the entry a later row re-files
                 if action == "parent+" and not want:
                     log.append(f"already  {sub} ⊑ {new} (a later ruling changes it)")
                     continue
@@ -458,6 +469,8 @@ def main():
                     errors.append(f"{pack}: no node {sub!r}")
                 elif old not in par[sub]:
                     log.append(f"already  cut {sub} ⊑ {old}")
+                elif old in readded(i, pack, sub):
+                    log.append(f"already  cut {sub} ⊑ {old} (a later ruling puts it back)")
                 elif not set(par[sub]) - {old, "*"}:
                     errors.append(f"cut {sub} ⊑ {old}: it is {sub}'s only parent (use move)")
                 else:
@@ -535,11 +548,14 @@ def main():
                 # core or a sibling pack owns, keeping a stub (a borrowed name).
                 others = [k for k, (_, p) in graphs.items()
                           if k != pack and p.get(sub) not in (None, ["*"])]
-                if not others:
+                have = set(par.get(sub) or ["*"]) - {"*"}
+                if not others and any(a == "drop" for k in graphs for a, _ in later(i, k, sub)):
+                    log.append(f"already  {pack} disowns {sub} (a later ruling drops it)")
+                elif not others:
                     errors.append(f"disown {sub}: no other store owns it")
-                elif set(par.get(sub) or ["*"]) == (set(want) or {"*"}):
+                elif have == set(want) or (have and have <= set(want) <= implied(sub, pack)):
                     log.append(f"already  {pack} disowns {sub}")
-                elif not set(want) <= set(par.get(sub, [])):
+                elif not set(want) <= set(par.get(sub, [])) | implied(sub, pack):
                     errors.append(f"disown {sub}: {pack} can keep only parents it has, not {want}")
                 else:
                     # `new` lists the parents the pack's own vocabulary adds:
@@ -565,6 +581,8 @@ def main():
                 if x != "*" and name not in known_to(pack):
                     errors.append(f"{sub}: no node {name!r} for {pack}")
 
+    removed = ({r[1] for path in RULINGS for r in table(path) if r[2] == "drop"}
+               | {r[1] for r in table(RENAMES)})
     # A name from core or a sibling that a rewrite or a ruling brought into
     # a pack is written there as a stub, as the build writes every borrowed
     # name (UPPER.md §8.1).
@@ -582,15 +600,16 @@ def main():
                 par[name] = ["*"]
                 order.append(name)
                 log.append(f"applied  {pack} borrows {name}")
-        # and a stub of a name no store holds any more goes (a ruling renamed
-        # or dropped it, and nothing in the pack uses it)
+        # and a stub nothing in the pack uses goes: a borrowed name another
+        # store holds, or one a ruling dropped or renamed away. (A pack's own
+        # top-level name is written the same way, so it is never touched.)
         for name in sorted(n for n, ps in par.items() if ps == ["*"] and n not in used):
-            # core's "*" is the top level; a pack's is a stub
-            if name not in PRELUDE and name not in graphs["core"][1] and not any(
-                    g[1].get(name, ["*"]) != ["*"] for k, g in graphs.items() if k != pack):
+            held = name in graphs["core"][1] or any(
+                g[1].get(name, ["*"]) != ["*"] for k, g in graphs.items() if k != pack)
+            if name not in PRELUDE and (held or name in removed):
                 del par[name]
                 order.remove(name)
-                log.append(f"applied  {pack} drops its stub of {name} (no store holds it)")
+                log.append(f"applied  {pack} no longer borrows {name} (nothing in it uses it)")
 
     core = graphs["core"][1]
     for name, family, drop, *note in table(CORE_HEADS):

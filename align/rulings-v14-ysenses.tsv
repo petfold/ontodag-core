@@ -334,6 +334,63 @@ core	tribunal	drop	-	-	renamed court: holds court rank 1 (08329453); after court
 core	anatomical-tube	add	-	body-part	tube's sense, under the name anatomical-tube
 core	vein	move	tube	anatomical-tube	follows tube's old sense to anatomical-tube
 core	tube	drop	-	-	renamed anatomical-tube: plain tube is a hollow cylinder (held by tubing); this node is the anatomy sense
+biology	homeobox-gene	add	-	homeotic-gene	homeobox's sense, under the name homeobox-gene
+biology	homeobox	drop	-	-	renamed homeobox-gene: a homeobox is the DNA motif; the node holds the gene sense
+chemistry	copernicium	add	-	chemical-element	ununbium's sense, under the name copernicium
+chemistry	ununbium	drop	-	-	renamed copernicium: obsolete IUPAC placeholder; element 112 is copernicium since 2010
+chemistry	livermorium	add	-	chemical-element	ununhexium's sense, under the name livermorium
+chemistry	ununhexium	drop	-	-	renamed livermorium: obsolete IUPAC placeholder; element 116 is livermorium since 2012
+chemistry	moscovium	add	-	chemical-element	ununpentium's sense, under the name moscovium
+chemistry	ununpentium	drop	-	-	renamed moscovium: obsolete IUPAC placeholder; element 115 is moscovium since 2016
+chemistry	flerovium	add	-	chemical-element	ununquadium's sense, under the name flerovium
+chemistry	ununquadium	drop	-	-	renamed flerovium: obsolete IUPAC placeholder; element 114 is flerovium since 2012
+chemistry	nihonium	add	-	chemical-element	ununtrium's sense, under the name nihonium
+chemistry	ununtrium	drop	-	-	renamed nihonium: obsolete IUPAC placeholder; element 113 is nihonium since 2016
+economics	mileage-allowance	add	-	travel-allowance	mileage's sense, under the name mileage-allowance
+economics	mileage	drop	-	-	renamed mileage-allowance: plain name holds rare sense 3/3 (allowance); mileage is a distance
+economics	employee-stock-option	add	-	payment-amount	stock-option's sense, under the name employee-stock-option
+economics	stock-option	move	payment-amount	purchase-option	stock-option-contract's sense, under the name stock-option
+economics	buy-option	move	stock-option-contract	stock-option	follows stock-option-contract's sense to stock-option
+economics	sell-option	move	stock-option-contract	stock-option	follows stock-option-contract's sense to stock-option
+economics	stock-option-contract	drop	-	-	renamed stock-option: after the rename above: practitioner's stock option is the option on a stock
+geography	undercurrent	add	-	event	undertide's sense, under the name undercurrent
+geography	undertow	move	undertide	undercurrent	follows undertide's old sense to undercurrent
+geography	undertide	drop	-	-	renamed undercurrent: same WN synset (07404798); undercurrent is the common word
+mathematics	uniform-distribution	add	-	statistical-distribution	equidistribution's sense, under the name uniform-distribution
+mathematics	equidistribution	drop	-	-	renamed uniform-distribution: holds 'a flat distribution'; equidistribution in mathematics means equidistributed sequences
+mathematics	np-complete	add	-	complexity-class	np-completeness's sense, under the name np-complete
+mathematics	np-completeness	drop	-	-	renamed np-complete: the node is the complexity class NP-complete; np-completeness names the property
+medicine	pediatrician	add	-	medical-specialist	baby-doctor's sense, under the name pediatrician
+medicine	baby-doctor	drop	-	-	renamed pediatrician: same synset; pediatrician is the name a practitioner uses
+medicine	otologist	add	-	medical-specialist	ear-doctor's sense, under the name otologist
+medicine	ear-doctor	drop	-	-	renamed otologist: same synset; otologist is the name a practitioner uses
+medicine	nosocomial-infection	add	-	condition	nonsocial-infection's sense, under the name nosocomial-infection
+medicine	nonsocial-infection	drop	-	-	renamed nosocomial-infection: "nonsocial" is WordNet's misspelling; the medical name of a hospital-acquired infection is nosocomial infection (then under infection)
+medicine	psychotherapy	move	psychiatry	therapy	psychotherapy-treatment's sense, under the name psychotherapy
+medicine	behavior-therapy	move	psychotherapy-treatment	psychotherapy	follows psychotherapy-treatment's sense to psychotherapy
+medicine	client-centered-therapy	move	psychotherapy-treatment	psychotherapy	follows psychotherapy-treatment's sense to psychotherapy
+medicine	crisis-intervention	move	psychotherapy-treatment	psychotherapy	follows psychotherapy-treatment's sense to psychotherapy
+medicine	group-therapy	move	psychotherapy-treatment	psychotherapy	follows psychotherapy-treatment's sense to psychotherapy
+medicine	hypnotherapy	move	psychotherapy-treatment	psychotherapy	follows psychotherapy-treatment's sense to psychotherapy
+medicine	play-therapy	move	psychotherapy-treatment	psychotherapy	follows psychotherapy-treatment's sense to psychotherapy
+medicine	self-analysis	move	psychotherapy-treatment	psychotherapy	follows psychotherapy-treatment's sense to psychotherapy
+medicine	psychotherapy-treatment	drop	-	-	renamed psychotherapy: the treatment is what psychotherapy means; after the branch-sense node is dropped
+occupations	police-inspector	add	-	policeman	inspector's sense, under the name police-inspector
+occupations	inspector	drop	-	-	renamed police-inspector: holds the police rank; plain inspector is an official who inspects (core examiner holds that synset)
+occupations	military-orderly	add	-	worker	orderly.person's sense, under the name military-orderly
+occupations	orderly.person	drop	-	-	renamed military-orderly: .person does not tell it from orderly (hospital), also a person
+occupations	company-president	add	-	chief	president.person's sense, under the name company-president
+occupations	president.person	drop	-	-	renamed company-president: .person does not tell it from president (of a republic), also a person
+occupations	court-usher	add	-	worker	usher.person's sense, under the name court-usher
+occupations	usher.person	drop	-	-	renamed court-usher: .person does not tell it from usher, also a person
+physics	orbital-anomaly	add	-	angle	anomaly's sense, under the name orbital-anomaly
+physics	anomaly	drop	-	-	renamed orbital-anomaly: the plain word means a deviation from the norm; this is the astronomer's orbital angle
+physics	planck-relation	add	-	about(radiation) physical-law	planck's-law's sense, under the name planck-relation
+physics	planck's-law	drop	-	-	renamed planck-relation: this node holds E=hv; physicists' Planck's law is the black-body law, held by planck's-radiation-law, which could then take the plain name
+space	gravitational-lensing	add	-	natural-event	gravitational-lens's sense, under the name gravitational-lensing
+space	gravitational-lens	drop	-	-	renamed gravitational-lensing: the node is filed as an event; the lens itself is a mass (a galaxy or cluster) acting as one, a role
+space	iron-meteorite	add	-	meteorite	siderite's sense, under the name iron-meteorite
+space	siderite	drop	-	-	renamed iron-meteorite: siderite is first the iron-carbonate mineral; iron-meteorite is the current term
 core	abuse	move	information	practice	Peter: can be physical too; everyday abuse is mistreatment (an act), not a rude expression; maltreatment holds the same synset (see maltreatment row)
 core	academic-degree	move	symbol	certificate	Peter: not a certification?; a degree is a certified award, not a symbol; no award/qualification node exists, certificate is nearest
 core	academy	cut	structure	-	Peter: structure?; ruled academy ⊑ institution
@@ -599,7 +656,6 @@ core	power	move	agent	attribute	rare sense (a powerful agent); everyday power is
 core	presentation	move	document	show	rare sense (a visual display); everyday presentation is a show or demonstration
 core	president	move	representative	leader	a head of state is a leader, not a representative
 core	prize	move	gift	acquisition	a prize is won, not a gift
-core	profile	cut	view	-	everyday profile is a biographical sketch; current is information AND a percept
 core	profit	move	asset	income	rare sense (benefit); everyday profit is money earned
 core	promise	cut	act	-	a promise is a commitment said, information; AND act is wrong
 core	proportion	move	placement	ratio	rare sense (harmony); everyday proportion is part-to-whole quotient
@@ -675,7 +731,6 @@ core	time-slot	move	amount	time-period	a slot is a period of time, sibling of we
 core	tortilla	cut	cake	-	a tortilla is a flatbread, not a sweet cake [also core-02: cut cake]
 core	touch	cut	perception	-	event+perception is an OR; everyday touch is the contact; faculty is held by sense-of-touch
 core	track	move	route	audio	disk-track sense is specialist; path, racetrack and railroad-track hold the other senses, music track is left
-core	tract	move	publication	region	pamphlet sense is rare; everyday tract is a tract of land
 core	traffic	move	commerce	collection	everyday traffic is vehicles on the road, not illicit dealing
 core	trail	move	evidence	path	everyday trail is a path through wild country, not a clue; a trail is a path, not a road
 core	train	move	artifact	vehicle	a train is a vehicle, like railcar and locomotive
@@ -707,6 +762,718 @@ core	withdrawal	move	act	transaction	everyday withdrawal is taking money out; re
 core	wonder	move	event	emotion	everyday wonder is the feeling, not a marvel
 core	wrapping-paper	move	gift-wrapping	wrap	inverted: gift-wrapping is a kind of wrapping paper, not its parent
 core	zone	move	topographic-point	region	a zone is an area, not a point
+ai	3d-reconstruction	move	computer-vision	image-processing	task, not field: recovering 3-D shape from images
+ai	adversarial-training	move	adversarial-machine-learning	method	technique, not field
+ai	anomaly-detection	move	machine-learning	data-processing	task, not field: identifying rare items in data
+ai	artificial-general-intelligence	move	artificial-intelligence	intelligent-agent	AGI is a hypothetical kind of intelligent agent, not a field; superintelligence and friendly-AI follow
+ai	autonomous-weapon	parent+	-	weapon	an autonomous weapon is a weapon
+ai	bayesian-optimization	move	hyperparameter-optimization	method	a black-box optimization strategy, used beyond hyperparameters
+ai	bounded-rationality	move	decision-theory	theory	the idea that rationality is limited, not a field
+ai	cluster-analysis	move	machine-learning	data-processing	task, not field: grouping objects [also ai-01: cut statistics]
+ai	cluster-analysis	cut	statistics	-	task, not a field; data-mining stays
+ai	community-detection	move	network-science	problem	the problem of finding communities, not a field
+ai	computational-neuroscience	move	artificial-intelligence	biology	a branch of neuroscience, not of AI
+ai	confusion-matrix	move	model-evaluation-method	matrix	a confusion matrix is a table of counts (a matrix), not a method
+ai	data-poisoning	move	adversarial-machine-learning	activity	an attack, not a field
+ai	dimensionality-reduction	move	machine-learning	data-processing	a transformation of data, not a field (PCA, feature selection follow)
+ai	emotion-recognition	move	affective-computing	data-processing	task, not field
+ai	ensemble-averaging	move	ensemble-learning	method	technique, not field
+ai	f1-score	move	model-evaluation-method	amount	the F1 score is a number, not a method
+ai	feature-detection	move	computer-vision	image-processing	technique, not field: computing image features
+ai	forward-kinematics	move	robotics	calculation	computing an end-effector pose from joint values, not a field
+ai	generative-ai	cut	artificial-intelligence	-	AND of field and model is wrong; Wikidata Q117246174 is the model sense
+ai	grid-search	move	hyperparameter-optimization	method	technique, not field or problem
+ai	handwriting-recognition	move	pattern-recognition	data-processing	task, not field: interpreting handwritten input
+ai	hierarchical-task-network	move	automated-planning	method	a planning technique, not a field
+ai	hyperparameter-optimization	move	automated-machine-learning	problem	the problem of choosing hyperparameters, not a field [also ai-01: cut mathematical-optimization]
+ai	hyperparameter-optimization	cut	mathematical-optimization	-	mathematical-optimization is the field here
+ai	image-classification	cut	computer-vision	-	task, not field; image-processing stays
+ai	image-segmentation	move	computer-vision	image-processing	task, not field: the process of partitioning an image (children follow)
+ai	image-to-image-translation	cut	machine-learning	-	task, not field; image-processing stays
+ai	independent-component-analysis	move	unsupervised-learning	method	a computational method, not a learning paradigm
+ai	information-extraction	move	information-retrieval	data-processing	task, not field (named-entity-recognition follows) [also ai-01: cut natural-language-processing]
+ai	information-extraction	cut	natural-language-processing	-	task, not field
+ai	information-science	move	computer-science	science	WordNet: information science ⊑ science (only part of CS); library science is not CS
+ai	inverse-kinematics	move	robotics	calculation	computing joint values for a pose, not a field
+ai	knowledge-distillation	move	machine-learning	method	technique, not field: transferring a large model's knowledge to a small one
+ai	lemmatization	move	natural-language-processing	data-processing	a text-processing step, not a field
+ai	link-prediction	move	network-science	problem	the problem of predicting links, not a field
+ai	membership-inference-attack	move	adversarial-machine-learning	activity	an attack, not a field
+ai	mixture-of-experts-model	cut	large-language-model	-	MoE transformers are not all language models (vision MoE); transformer-model stays
+ai	morphological-analysis	move	natural-language-processing	data-processing	a text-processing step, not a field
+ai	motion-planning	move	robotics	problem	a computational problem, not a field (path-planning follows)
+ai	object-detection	move	computer-vision	image-processing	task, not field: detecting object instances in images
+ai	obstacle-avoidance	cut	robot-navigation	-	a task, not a field; path-planning stays
+ai	ontology-alignment	cut	knowledge-engineering	-	a process, not a field; data-processing stays
+ai	ontology-learning	move	knowledge-engineering	data-processing	the (semi-)automatic creation of ontologies, not a field
+ai	optical-character-recognition	move	pattern-recognition	data-processing	task, not field: converting text images to text
+ai	pac-learning	move	computational-learning-theory	theory	a framework (theory), not a field
+ai	part-of-speech-tagging	move	natural-language-processing	data-processing	a text-processing step, not a field
+ai	partial-order-planning	move	automated-planning	method	a planning technique, not a field
+ai	pathfinding	move	search-algorithm	data-processing	pathfinding is the plotting of a route by computer, not an algorithm
+ai	policy-gradient-method	move	reinforcement-learning	machine-learning-algorithm	a class of RL algorithms, not a field
+ai	precision-and-recall	move	model-evaluation-method	amount	precision and recall are two measures, not a method
+ai	reactive-planning	move	automated-planning	method	a class of planning techniques, not a field
+ai	receiver-operating-characteristic	move	model-evaluation-method	graph	the ROC curve is a plotted graph, not a method
+ai	recursive-neural-network	move	recurrent-neural-network	artificial-neural-network	recurrent nets are a special case of recursive nets, not the other way round
+ai	regulation-of-artificial-intelligence	move	law	governance-of-artificial-intelligence	AI regulation is policy-making (governance), not the field of law
+ai	reinforcement-learning-from-human-feedback	move	reinforcement-learning	method	technique, not field
+ai	reservoir-computing	move	recurrent-neural-network	method	a computing framework derived from RNN theory, not a network itself
+ai	retrieval-augmented-generation	move	generative-ai	method	RAG is a technique, not a generative model [also ai-01: cut natural-language-processing]
+ai	retrieval-augmented-generation	cut	natural-language-processing	-	RAG is a technique, not a field
+ai	robotic-spacecraft	parent+	-	spacecraft	a robotic spacecraft is an uncrewed spacecraft
+ai	semantic-analysis	move	natural-language-processing	data-processing	task, not field: relating syntax to meaning
+ai	semantic-network	move	knowledge-representation	knowledge-base	a semantic network is a knowledge base (a network of concepts), not a field
+ai	semantic-parsing	move	natural-language-processing	data-processing	task, not field: mapping text to a logical form
+ai	semantic-role-labeling	move	natural-language-processing	data-processing	a text-processing step, not a field
+ai	sensor-fusion	move	machine-perception	data-processing	the process of combining sensor data, not a field
+ai	sentence-embedding	move	feature-learning	vector-embedding	a sentence embedding is a vector, like word-embedding [also ai-01: cut natural-language-processing]
+ai	sentence-embedding	cut	natural-language-processing	-	a vector is not a field
+ai	sentiment-analysis	move	affective-computing	data-processing	task, not field [also ai-01: cut natural-language-processing]
+ai	sentiment-analysis	cut	natural-language-processing	-	task, not field
+ai	sequence-labeling	move	pattern-recognition	data-processing	task, not field
+ai	simultaneous-localization-and-mapping	move	robot-navigation	problem	the computational problem of mapping while localizing, not a field
+ai	speech-synthesis	move	natural-language-processing	data-processing	the artificial production of speech, not a field
+ai	statistical-classification	move	machine-learning	problem	classification is the problem of assigning categories, not a field (its 5 children follow)
+ai	stemming	move	natural-language-processing	data-processing	a text-processing step, not a field
+ai	syntactic-parsing	move	natural-language-processing	data-processing	a text-processing step, not a field
+ai	text-classification	cut	natural-language-processing	-	a classification problem, not a field; statistical-classification stays
+ai	text-mining	move	natural-language-processing	data-processing	the process of deriving information from text, not a field (summarization, relation extraction follow)
+ai	text-segmentation	move	natural-language-processing	data-processing	a text-processing step, not a field
+ai	text-tokenization	move	natural-language-processing	data-processing	a text-processing step, not a field
+ai	visual-odometry	move	computer-vision	image-processing	task, not field: pose estimation from camera images
+ai	word-sense-disambiguation	move	natural-language-processing	data-processing	task, not field: choosing a word's sense
+biology	ameloblast	move	embryonic-cell	somatic-cell	ameloblasts form enamel until tooth eruption, after birth too; not cells of an embryo
+biology	animal-egg	move	ovum	natural-object	a laid egg (shell, albumen, often an embryo) is not a single cell or a gamete; fixes nit, fish-roe, spawn, silkworm-seed
+biology	coarctation	cut	event	-	a narrowing of a vessel is a condition, not both an attribute and an event
+biology	ecosystem	cut	environment	-	an ecosystem is a system that includes its environment, not the environment (region, place) itself
+biology	effector	move	nerve-fiber	organ	in physiology an effector is the muscle or gland that responds; the nerve-fibre sense is obsolete
+biology	enzyme	cut	biological-activator	-	an enzyme catalyses reactions; an activator is a molecule that raises an enzyme's activity
+biology	estivation	move	attribute	state	estivation is first summer dormancy (WN rank 1); the flower-bud arrangement is a rare botanical sense
+biology	food-chain	move	organic-phenomenon	system	a food chain is a structure of feeding relations among organisms, not an event
+biology	food-pyramid	move	organic-phenomenon	system	a hierarchy of food chains is a structure, not an event
+biology	food-web	move	organic-phenomenon	system	a food web is a network of feeding relations, not an event
+biology	megaloblast	move	red-blood-cell	erythroblast	a megaloblast is a large nucleated erythroid precursor in marrow, not a mature anucleate RBC
+biology	nerve-fiber	move	fiber-cell	body-part	a nerve fibre is a threadlike extension of a neuron, not a cell; fixes the chain for axon, dendrite, motor/sensory fibres
+biology	osteoblast	move	embryonic-cell	bone-cell	osteoblasts build bone throughout life; they are not cells of an embryo
+biology	ovule	move	ovum	plant-part	in biology an ovule is the seed-plant structure that becomes a seed; "small immature ovum" is a rare zoology sense
+biology	packed-cells	cut	cell	-	a preparation of many blood cells is a material, not a cell (and arguably medicine, not biology)
+biology	parthenocarpy	move	reproduction	organic-process	seedless fruit development yields no offspring, so it is not reproduction
+biology	phylogenetic-relation	move	attribute	relation	relatedness between organisms is a relation (like symbiosis, kinship)
+biology	recombinant	cut	cell	-	gloss is cell OR organism; AND is false; keep organism as for diploid, haploid
+biology	taxonomy	cut	classification-scheme	-	the gloss is the discipline; classification-scheme is the other sense, AND makes the field a scheme
+biology	uncus	cut	shape	-	a hook-shaped body part is not an attribute
+chemistry	antimonial-lead	move	lead	alloy	a lead-antimony alloy (its own gloss), not the element lead; fixes grid-metal
+chemistry	calcium-ion	move	calcium	ion	a calcium ion is an ion, not metallic calcium (calcium is a metal)
+chemistry	cast-iron	move	iron	alloy	cast iron is an iron-carbon alloy (its own gloss), not the element; fixes alloy-iron, ni-hard, ni-resist, pot-metal
+chemistry	chemical-activity	move	condition	attribute	reactivity is a capacity of a substance, not a condition at a time
+chemistry	chemical-buffer	move	compound	chemical-solution	to a chemist a buffer is a solution of a weak acid and its conjugate base, not one compound
+chemistry	chemical-polymorphism	move	chemical-phenomenon	attribute	the existence of several crystal forms is a property, like chemical-dimorphism (attribute), not an event
+chemistry	cobalt-60	parent+	-	radioisotope	a radioactive isotope (own gloss), filed only under the element
+chemistry	coin-silver	move	silver	alloy	coin silver is a silver-copper alloy (about 90% silver), not the element
+chemistry	green-gold	move	gold	alloy	a gold-silver alloy (its own gloss), not the element gold
+chemistry	iodine-125	parent+	-	radioisotope	a radioactive isotope (own gloss), filed only under the element
+chemistry	iodine-131	move	isotope	radioisotope	I-131 is radioactive (own gloss); radioisotope is the nearer parent
+chemistry	isotope	move	atom	chemical-element	elements are substances here, so isotope as atom makes every U-235, Cs-137 both a substance and a particle; an isotope is a form of an element
+chemistry	pencil-lead	move	graphite	mixture	pencil lead is graphite mixed with clay; held sense is an odd "medium of communication" gloss
+chemistry	pig-iron	cut	iron	-	crude high-carbon iron is an alloy, not the element; keeps alloy; fixes basic-iron, cinder-pig, mine-pig, spiegeleisen
+chemistry	pot-metal	cut	cast-iron	-	today pot metal is a cheap low-melting (zinc) alloy; the cooking cast-iron sense is archaic
+chemistry	reverse-osmosis	move	osmosis	process	reverse osmosis is pressure-driven filtration against the osmotic flow, not a kind of osmosis
+chemistry	strontium-90	parent+	-	radioisotope	a radioactive isotope (own gloss), filed only under the element
+chemistry	uranium-235	parent+	-	radioisotope	a radioactive isotope, filed only under the element
+chemistry	uranium-238	parent+	-	radioisotope	a radioactive isotope, filed only under the element
+computing	agile-software-development	cut	computer-programming	-	a development methodology, not an act of programming
+computing	android	move	linux	unix-like	Android is Linux-kernel based but not a FOSS Linux (proprietary parts)
+computing	application-programming-interface	move	interface	software	core interface is a UI program; an API is not a program [also computing-02: same]
+computing	aspect-oriented-programming	cut	computer-programming	-	a programming paradigm (method); act AND method is OR
+computing	authoring-language	cut	software	-	language AND software is OR; the name says language
+computing	bittorrent	cut	peer-to-peer	-	a protocol is not an architecture (peer-to-peer is a method) [also computing-02: same]
+computing	byzantine-fault	move	fault	computer-error	core fault is 'responsibility' (blame); a Byzantine fault is a component failure
+computing	bzip2	cut	compression-algorithm	-	bzip2 is the program (and format); AND with the algorithm mixes software and act
+computing	cloud-computing	move	distributed-computing	service	(chunk 01) a delivery model for computing services (SaaS, PaaS), not parallel data processing
+computing	compression-algorithm	cut	data-compression	-	an algorithm is not a compression process; highest wrong link for all compression algorithms
+computing	computer-cluster	cut	group	-	a cluster is a computer system (machine); group adds a disjoint branch
+computing	computer-programming	cut	skill	-	programming is the activity; skill is the ability (cognition) [also computing-02: same]
+computing	concurrent-programming	cut	computer-programming	-	a programming paradigm (method); act AND method is OR
+computing	continuous-delivery	cut	devops	-	a practice, not a kind of methodology; part of DevOps, not a DevOps
+computing	cryptographic-protocol	cut	procedure	-	a protocol is a set of rules (information), not an act; fixes https, ssh, tls chains [also computing-02: same]
+computing	cyclic-redundancy-check	cut	hash-function	-	the gloss is the check code; code AND function is OR
+computing	data-field	move	set	data-structure	a record field is data; set makes it a group
+computing	data-mining	cut	computer-science	-	gloss is the process; process AND field of study is OR
+computing	data-retrieval	cut	information-retrieval	-	an operation, not the field of study information-retrieval
+computing	datalog	cut	logic-programming	-	Datalog is a language, not a paradigm or field; keeps query-language
+computing	datomic	cut	functional-database	-	Datomic is a DBMS (software); functional-database is a data collection
+computing	decentralized-storage	cut	peer-to-peer	-	a storage system (machine) cannot also be an architecture (method) [also computing-02: same]
+computing	declarative-programming	cut	computer-programming	-	a programming paradigm (method); act AND method is OR [also computing-02: same]
+computing	disk-pack	move	collection	storage-device	a physical removable disk unit, not an abstract collection
+computing	docker	move	software-container	software	Docker is the platform that runs containers, not a container
+computing	endianness	move	code	property	byte order is a property of data, not a code
+computing	erasable-programmable-read-only-memory	move	read-only-memory	rom	(chunk 01) pack read-only-memory duplicates core rom
+computing	error-detection-and-correction	cut	telecommunication	-	a technique (method), not an act of telecommunication
+computing	ethernet	cut	local-area-network	-	Ethernet is the networking standard, not a LAN
+computing	event-driven-programming	cut	computer-programming	-	a programming paradigm (method); act AND method is OR
+computing	exception-handling	cut	control-flow	-	a mechanism (method), not an attribute; AND is OR
+computing	faceted-search	move	information-retrieval	data-retrieval	a search technique, not a field of study
+computing	flow-chart	move	multidimensional-language	diagram	a flowchart is a diagram, not a programming language [also computing-02: same]
+computing	full-text-search	move	information-retrieval	data-retrieval	a search technique, not a field of study
+computing	function-argument	move	value	information	core value is a numerical quantity; arguments can be references or strings
+computing	generic-programming	cut	computer-programming	-	a programming paradigm (method); act AND method is OR
+computing	gnutella	cut	peer-to-peer	-	a protocol is not an architecture (peer-to-peer is a method) [also computing-02: same]
+computing	graph-database	cut	electronic-database	-	as with key-value and document databases, the DBMS; DBMS AND data collection is OR
+computing	hash-function	move	algorithm	function	a hash function is a function (core function), as its child cryptographic-hash-function already says; algorithm made it an act
+computing	hdmi	cut	hardware-interface	-	HDMI is the interface standard; the port is a separate thing
+computing	imperative-programming	cut	computer-programming	-	a programming paradigm (method); act AND method is OR [also computing-02: same]
+computing	information-redundancy	move	information-entropy	amount	redundancy is the shortfall from maximum entropy, not an entropy
+computing	ink-jet-printer	move	dot-matrix-printer	printer	for practitioners, dot-matrix means impact printers; inkjet is not one
+computing	internationalization	move	data-processing	software-development-practice	i18n is a software design practice, not data processing
+computing	internet-exchange-point	move	network-node	facility	an IXP is a physical facility, not a computer [also computing-02: same]
+computing	intranet	cut	device	-	a network is not a device; computer-network already covers it
+computing	ipfs	move	decentralized-storage	distributed-file-system	decentralized-storage chain ends in machine/physical-object; IPFS is a protocol and file system
+computing	iterator	cut	data-type	-	(chunk 01) an iterator is a software object; type and instance mixed
+computing	latency	move	network-performance-measure	time-period	latency is any delay (disk, device, network); children access-time and seek-time are not network measures [also computing-02: move network-performance-measure amount]
+computing	lempel-ziv	cut	lossless-compression	-	an algorithm, not the compression process
+computing	logic-diagram	move	multidimensional-language	diagram	a diagram, not a programming language
+computing	logic-programming	cut	computer-science	-	a programming paradigm, not the field of computer science [also computing-01: cut computer-science]
+computing	low-level-formatting	move	code	data-processing	the disk-formatting process, not code
+computing	machine-code	cut	programming-language	-	machine code is the instructions (code), not a language
+computing	memory-dump	move	text	information	a dump is binary data, not written words (core text)
+computing	metaprogramming	cut	computer-programming	-	a programming technique (method), not the activity [also computing-01: cut computer-programming]
+computing	monolithic-application	move	software-architecture	application	an application built as one unit, not an architecture (method)
+computing	multithreading	cut	concurrency	-	a technique (method) AND a property (attribute) clash
+computing	mutex	cut	data-type	-	a mutex is a software object; type and instance mixed
+computing	namespace	cut	identifier	-	a namespace is a set of names, not an identifier
+computing	nonsolid-color	move	attribute	color	WN: a kind of color (dithered color)
+computing	nvm-express	move	hardware-interface	technical-standard	NVMe is an interface specification, not a circuit
+computing	oauth	move	authentication-protocol	communications-protocol	OAuth is an authorization protocol, not authentication
+computing	p-versus-np-problem	move	computational-problem	problem	an open question about complexity classes, not a computational problem
+computing	pattern-matching	cut	algorithm	-	a technique; algorithm (event) AND method (cognition) clash
+computing	pixel	move	component	part	an element of an image, not a device component
+computing	portable-executable	cut	executable-file	-	PE is a file format, not an executable file
+computing	postcondition	move	condition	proposition	a predicate that must hold, not a state (core condition)
+computing	program-constant	cut	program-variable	-	a constant is by definition not a variable
+computing	program-loop	move	computer-program	code	a loop is a construct inside a program, not a program
+computing	pushdown-automaton	move	finite-automaton	model-of-computation	a PDA has a stack, so it is not a finite automaton
+computing	radiotelephone	move	artifact	phone	gloss is telephony but parent artifact; take the device sense
+computing	raid	cut	data-storage	-	RAID is storage hardware, not a computer operation (event)
+computing	read-only-memory-chip	move	memory-chip	chip	memory-chip holds the RAM-chip sense; a ROM chip is not a RAM chip
+computing	recursion	cut	procedure	-	method (cognition) AND procedure (event) clash; recursion is a technique
+computing	regular-expression	cut	pattern	-	core pattern is an exemplar (a model to imitate)
+computing	requirements-analysis	cut	data-processing	-	human engineering work, not computer data processing
+computing	rpm-package-manager	cut	package-format	-	the tool; format AND software mixed
+computing	rsync	cut	communications-protocol	-	the tool; tool AND protocol mixed
+computing	search-engine-indexing	cut	computer-process	-	computer-process is a running program instance (sibling daemon-process)
+computing	self-extracting-archive	move	file-format	executable-file	an executable file holding an archive, not a format
+computing	semaphore-primitive	cut	data-type	-	a semaphore is a software object; type and instance mixed
+computing	signal-processing	cut	engineering	-	its children (here and in ai) are processes; process AND field mixed [also computing-01: cut engineering]
+computing	slide-rule	cut	analog-computer	-	a manual instrument, not a machine (computer ⊑ machine); keep tool
+computing	software-container	cut	virtualization	-	a container is software, not a technique (method)
+computing	software-localization	move	data-processing	activity	translating and adapting software is human work, not data processing
+computing	source-code	cut	ascii-text-file	-	source code need not be ASCII, nor a file
+computing	spyware	cut	application	-	malware, not a user application
+computing	sql-injection	cut	security-vulnerability	-	an attack (event) AND a vulnerability (state) clash
+computing	stack-overflow	move	web-site	software-error	practitioner sense is the run-time error; the website is a single instance
+computing	storage-snapshot	move	data-backup	information	a snapshot is not a backup on a separate device
+computing	supercomputer	move	mainframe-computer	digital-computer	supercomputers are not mainframes (today clusters)
+computing	system-call	cut	subroutine	-	gloss is the call instruction, not the called routine
+computing	thin-client	cut	network-client	-	a computer (hardware) AND client software clash
+computing	type-class	move	type-system	data-type	a construct within a type system, not a type system
+computing	type-inference	cut	type-system	-	a process (event) AND a set of rules (information) clash
+computing	uefi	cut	firmware	-	the specification; spec AND its firmware implementation mixed
+computing	usb	cut	technical-standard	-	hardware (physical object) AND document clash; keep the bus
+computing	virtual-machine	move	application	software	an emulated computer, not a user application
+computing	wayland	cut	system-software	-	a display-server protocol; protocol AND software mixed
+computing	web-application	cut	web-site	-	software, not a web site (core web-site gloss is a computer serving pages)
+computing	web-cache	move	computer-cache	software	a web cache is software/stored copies, not RAM hardware
+computing	world-wide-web	move	computer-network	information	the Web is an information space of linked pages, not a computer network
+computing	write-once-read-many	cut	data-storage	-	WORM is storage hardware, not a computer operation (event)
+economics	asset-realization	move	cut-rate-sale	sale	a sale to raise money, not a reduced-price sales event
+economics	audited-account	cut	information	-	the gloss is the audit (an inspection), an act; name could become audit [also economics-02: same]
+economics	automobile-insurance	parent+	-	insurance	a kind of insurance missing its genus (hangs only under possession) [also economics-02: same]
+economics	backorder	move	trade-order	order	an order for goods out of stock, not a securities trade order
+economics	bazaar	move	cut-rate-sale	marketplace	everyday bazaar is an oriental market street; charity-sale sense is rank 3/3 (apply with book-fair and craft-fair rows)
+economics	bear-market	move	event	financial-market	WN: a securities market with falling prices; event AND state was OR [also economics-01: cut state]
+economics	bear-market	cut	state	-	replaced by financial-market (WN hypernym)
+economics	bidder	move	buyer	economic-agent	losing bidders never buy, and in tenders bidders are sellers
+economics	bill-of-lading	move	receipt	legal-document	core receipt acknowledges payment; a bill of lading is a document of title for goods
+economics	bitcoin-improvement-proposal	move	white-paper	document	a design proposal, not a white paper; matches ethereum-improvement-proposal
+economics	black-market	cut	activity	-	a black market is a market; act AND economic-system is the OR of two alignments
+economics	book-fair	move	bazaar	fair	everyday book fair is a publishers' trade fair; the charity book sale is the rare sense
+economics	bull-market	move	event	financial-market	WN: a securities market with rising prices; event AND state was OR [also economics-01: cut state]
+economics	bull-market	cut	state	-	replaced by financial-market (WN hypernym)
+economics	buyer's-market	move	activity	market	a market (WN hypernym market), not an activity
+economics	bzz	parent+	-	cryptocurrency	keeps BZZ a currency (paid for storage) once crypto-token leaves cryptocurrency; same for xbzz [also economics-02: same]
+economics	capital-loss	move	expense	loss	a capital loss is a loss on a sale, not an amount paid for goods and services
+economics	cold-chain	cut	logistics	-	a cold chain is a temperature-controlled supply chain; act AND system was OR
+economics	common-stock-equivalent	move	share-capital	convertible-security	convertible bonds and warrants are not share capital; it is a convertible security
+economics	consignment	cut	sale	-	consigned goods are delivered for later sale; consignment is not itself a sale
+economics	controlling-interest	cut	share	-	a majority holding of shares, not one share
+economics	convertible-security	move	legal-document	security-finance	a security; belongs with bond and stock under security-finance
+economics	cost-plus-contract	cut	pricing-strategy	-	a contract, not a pricing strategy (cost-plus-pricing is the strategy)
+economics	craft-fair	move	bazaar	fair	a gathering of craftsmen selling their goods; frees bazaar for its everyday sense
+economics	crowdfunding	cut	business-model	-	crowdfunding is raising money (financing), not a business model; plan AND activity was OR
+economics	crypto-token	move	cryptocurrency	intangible-asset	NFTs and utility tokens are tokens but not currencies; crypto-token under cryptocurrency makes every NFT money [also economics-02: same]
+economics	cryptocurrency	cut	payment-system	-	AND of money and system (group); the network is bitcoin-network/ethereum, the currency is money [also economics-02: same]
+economics	default-finance	cut	failure	-	a default is a missed payment (event), not "lack of success" (state)
+economics	depreciation-charge	move	price-charged	non-cash-expense	an accounting charge against revenue, not a price charged for an article or service
+economics	direct-marketing	cut	ad	-	direct marketing is marketing (act), not an ad (information)
+economics	economic-theory	move	thinking	theory	a theory (information) like its sibling theories, not the process of thinking
+economics	employee-owned-enterprise	move	commercial-enterprise	business	an employee-owned enterprise is a firm (organization), not an activity
+economics	erc-20-token	cut	smart-contract	-	the token is the asset; the contract that issues it is software (AND of money and program)
+economics	financial-services	cut	service	-	node holds WN finance (providing funds and capital); investing, corporate-finance, flotation are not work done for another
+economics	goodwill-asset	move	financial-asset	intangible-asset	goodwill is an intangible asset but not a financial asset (cash, securities, receivables)
+economics	government-security	move	legal-document	security-finance	a security; belongs with bond and stock under security-finance
+economics	gray-market	cut	activity	-	a gray market is a market; act AND economic-system is the OR of two alignments
+economics	guaranty	cut	collateral	-	"collateral agreement" means accessory; a guaranty is a personal undertaking, not pledged security
+economics	hazard-insurance	parent+	-	insurance	a kind of insurance missing its genus (hangs only under possession)
+economics	hire-purchase	cut	credit	-	WN: a kind of installment plan; it is not money available to borrow
+economics	honorarium	cut	payment	-	an honorarium is a sum (reward-payment), not the act of paying
+economics	installment	cut	payment	-	an installment is a sum (payment-amount), not the act of paying
+economics	institutional-investor	parent+	-	organization	an institutional investor is an organization (pension fund, insurer), not a person
+economics	insurance	cut	financial-services	-	AND of contract and business activity; its children (fire-, health-, life-insurance) are coverage contracts, not activities [also economics-02: same]
+economics	inventory	move	transaction-record	current-asset	the gloss is the value of stock, a current asset, not a transaction record
+economics	investor	cut	worker	-	investors include firms and funds; investing is not an occupation (brings person, worker to institutional-investor)
+economics	labor-market	cut	activity	-	the labor market is a market; act AND economic-system is the OR of two alignments
+economics	letter-of-credit	cut	payment-system	-	a letter of credit is a document/credit, not a system (group) [also economics-01: cut payment-system]
+economics	letter-security	move	legal-document	security-finance	a letter security is a security; WN's security synset was skipped to legal-document
+economics	limited-review	cut	information	-	gloss is a service/procedure, not information; AND of information and act [also economics-01: cut information]
+economics	list-price	cut	price	-	core price is the attribute sense (worth); the money sense is purchase-price, already an ancestor
+economics	listed-security	move	legal-document	security-finance	a listed security is a security, not a bare legal document
+economics	lump-sum	cut	payment	-	a sum of money (payment-amount), not the act of paying; AND of act and amount
+economics	malpractice-insurance	parent+	-	liability-insurance	hangs on bare possession; malpractice cover is professional liability insurance
+economics	margin-call	move	event	demand	gloss: a demand by a broker; WN parent is demand
+economics	market-monopoly	move	activity	market	gloss: a market in which...; WN parent is market
+economics	market-price	cut	price	-	OR of two price senses; keep purchase-price (money)
+economics	marketplace	cut	place	-	AND of market (economic system) and place; its kid online-marketplace is not a place
+economics	monopsony	move	activity	market	gloss: a market in which...; WN parent is market
+economics	oligopoly	move	activity	market	gloss: a market in which...; WN parent is market
+economics	operating-capital	move	possession	capital	gloss: capital available for the operations of a firm
+economics	overpayment	move	payment	payment-amount	plain name holds rare act sense; everyday overpayment is the excess sum
+economics	payment-card	cut	payment-system	-	a card is a device, not a system (group); AND of device and system [also economics-01: cut payment-system]
+economics	peer-to-peer-lending	move	loan	financial-services	P2P lending is a lending practice/service, not a loan (debt)
+economics	performance-bond	move	bond	guaranty	a performance (surety) bond is a guarantee against non-performance, not an investment security
+economics	physical-capital	move	possession	capital	physical capital (machines, buildings) is capital
+economics	ponzi-scheme	move	pyramid-scheme	fraud	a Ponzi scheme is a distinct fraud (no recruitment structure), not a kind of pyramid scheme
+economics	profit-sharing	move	possession	plan	gloss: a system/scheme for sharing profits, not a possession
+economics	pyramid-scheme	cut	business-model	-	a pyramid scheme is a fraud, not a business model; AND of plan and act
+economics	rate-of-depreciation	move	charge-rate	ratio	a depreciation rate is a percentage, not money paid out (as interest-rate ⊑ ratio)
+economics	real-estate-business	cut	business	-	gloss: the business (line of activity) of selling real estate; AND of organization and activity
+economics	rebate	move	refund-amount	refund	follows the refund re-sense
+economics	refund	move	payment	payment-amount	everyday refund is the money returned (WN sense 1); node holds the act (sense 2)
+economics	registered-security	move	legal-document	security-finance	a registered security is a security (registered-bond already sits under bond)
+economics	remittance	cut	payment	-	a payment of money sent (an amount), not the act; AND of act and amount
+economics	reservation-price	cut	price	-	OR of two price senses; keep purchase-price (money)
+economics	return-merchandise-authorization	move	reverse-logistics	document	an RMA is an authorization (number/document), not the logistics activity
+economics	salary	move	payment	wage	salary is pay (WN puts it in the wage synset), not the act of paying
+economics	scrip	cut	currency	-	gloss: scrip is not currency
+economics	seed-money	move	possession	capital	gloss: capital needed to set up a new business
+economics	seller's-market	move	activity	market	gloss: a market in which...; WN parent is market
+economics	short-account	move	possession	brokerage-account	gloss: a brokerage account of someone who sells short
+economics	short-position	cut	securities-trading	-	a position is a state (as long-position), not the act of trading
+economics	speculation	move	investment	trading	practitioner's speculation is the activity (risky trading), not a risky investment; kid pyramiding fits
+economics	spot-market	cut	commodity-exchange	-	a spot market is a market, not an exchange building; spot trades are also OTC
+economics	stipend	cut	payment	-	a sum allotted regularly (regular-payment), not the act of paying
+economics	stock-exchange	cut	capital-market	-	an exchange is a venue/institution (like commodity-exchange); the market for stocks is stock-market
+economics	stock-warrant	move	possession	security-finance	gloss: a type of security issued by a corporation
+economics	stockbroker	move	securities-trader	broker	a stockbroker is an agent (broker), not a trader holding inventory; WN parent is broker
+economics	strike-price	cut	price	-	OR of two price senses; keep purchase-price (money)
+economics	surcharge	cut	payment	-	an additional charge (price-charged), not the act of paying
+economics	term-insurance	parent+	-	insurance	hangs on bare possession; WN puts it under insurance
+economics	trade-order	move	financial-transaction	document	an order to a broker is an instruction, not a transaction; kids market-order, stop-order already sit under document
+economics	traveler's-check	move	artifact	bank-check	a traveler's cheque is a cheque; artifact+letter-of-credit is an AND of physical object and document
+economics	underpayment	move	payment	payment-amount	plain name holds the act sense; everyday underpayment is the sum
+economics	unit-cost	cut	price	-	OR of two price senses; WN puts unit cost under cost (money), keep purchase-price
+economics	unlisted-security	move	legal-document	security-finance	an unlisted security is a security (kids over-the-counter-stock, penny-stock)
+economics	usury	cut	interest	-	gloss: an exorbitant rate of interest, so interest-rate; AND of amount and ratio
+economics	valuation	move	price	purchase-price	WN valuation (assessed price) sits under the money sense of price (pack purchase-price), not core price (worth)
+economics	venture-capital	cut	private-equity	-	gloss is wealth (possession); private-equity here is a financial service (act) [also economics-02: move possession capital]
+economics	venture-capital	move	possession	capital	VC is capital (WN: under working capital)
+economics	xbzz	parent+	-	cryptocurrency	xBZZ is a currency token; keeps currency if crypto-token leaves cryptocurrency
+economics	zero-coupon-security	move	legal-document	security-finance	a zero-coupon security is a security
+geography	abyssal-zone	cut	ocean-floor	-	the gloss is the deep water layer (pelagic), not the seabed
+geography	antarctic-circle	move	circle-of-latitude	polar-circle	the Antarctic Circle is a polar circle
+geography	arctic-circle	move	circle-of-latitude	polar-circle	the Arctic Circle is a polar circle
+geography	bathymetry	cut	activity	-	pick one sense; bathymetry is the branch of hydrography
+geography	cape	move	coast	land landform	a cape is a headland that projects from the coast, not a kind of coast; as peninsula
+geography	cartography	cut	engineering	-	cartography is mapmaking, a branch of geography, not engineering
+geography	cay	move	coral-reef	island	a cay is a small low island on a reef, not the reef itself
+geography	celestial-horizon	move	place	great-circle	a great circle on the celestial sphere, as celestial-equator
+geography	circle-of-latitude	cut	circle	-	core circle is a shape attribute; a parallel is a line on the Earth (geographic-line)
+geography	cloudiness	move	bad-weather	weather	cloudy weather is not necessarily bad weather
+geography	compass-point	move	spatial-relation	direction	every compass point is a direction (core's spatial-direction is now direction)
+geography	condensation	move	natural-event	process	a geographer's condensation is the process of vapour turning liquid; the node held condensed moisture filed as an event; its only child dew moves to water
+geography	contour-map	move	map	topographic-map	a contour map is a kind of topographic map
+geography	daylight-saving-time	cut	time-standard	-	DST is the practice of moving clocks forward; one node cannot be both a practice and a standard
+geography	dew	move	condensation	water	dew is water droplets, not an event or a process
+geography	ditch	move	waterway	trench	the everyday ditch is a dug channel; the node held the rare "any small natural waterway"
+geography	doldrums	move	wind	climatic-zone	the doldrums are a belt (a region) of calms, not a wind; as horse-latitude
+geography	firestorm	cut	storm	-	a firestorm is a fire, often over bombed cities; storm makes it a natural weather event
+geography	geohash	cut	geocoding	-	a geohash is a code, not an activity [also geography-01: cut geocoding-system]
+geography	geohash	cut	geocoding-system	-	a geohash string is a geocode; one node cannot be both the code and a coordinate system
+geography	glacial-ablation	move	geological-erosion	geological-process	ablation is the loss of ice by melting, sublimation and calving, not erosion
+geography	glacial-till	move	soil	sediment	till is glacial sediment, not soil
+geography	gully	cut	body-of-water	-	a gully is a channel cut in the land, not water; also fixes arroyo and wadi
+geography	hayfield	move	grassland	field	a hayfield is a farm field, not a biome (grassland is under biome)
+geography	horse-latitude	move	place	climatic-zone	a latitude belt of calms, as doldrums and subtropics
+geography	hour-circle	move	place	great-circle	a great circle on the celestial sphere, as celestial-equator
+geography	ice-age	move	geological-period	geological-time-division	an ice age is not a formal geological period like the Jurassic
+geography	ice-field	cut	glacier	-	the gloss is floating sea ice, not a glacier; ice-mass covers both senses
+geography	ice-floe	cut	ice	-	a floe is a mass of ice (ice-mass), not the substance ice
+geography	iceberg	cut	ice	-	an iceberg is a mass of ice (ice-mass), not the substance ice
+geography	instrument-flying	move	activity	navigation	the gloss says it is navigation by instruments
+geography	leap-second	move	time-standard	time-period	a leap second is an added second, not a time standard
+geography	lowland	cut	natural-depression	-	low-lying land is not a depression; plain stays
+geography	meander	cut	curved-shape	-	a meander is a river bend (a feature), not a shape attribute
+geography	monsoon	move	wind	monsoon-wind	the South Asian monsoon is a seasonal wind (monsoon-wind)
+geography	moor	move	plain	land	moors are mostly upland; not every moor is a plain
+geography	navigation	cut	skill	-	navigation is the act of guiding a ship or plane; its children are methods, not skills
+geography	omnirange	move	artifact	navigational-system	the gloss says it is a navigational system
+geography	pasture	move	grassland	field	a pasture is a farm field, not a biome (grassland is under biome)
+geography	petrifaction	move	rock	geological-process	a geologist's petrifaction is the process; the node held the rare "a rock created by petrifaction"
+geography	polar-circle	move	place	circle-of-latitude	the polar circles are circles of latitude
+geography	pond	cut	landform	-	a pond is water; lake already gives body-of-water
+geography	quicksand	move	cavity	sediment	quicksand is saturated sand, a material, not a pit
+geography	red-clay	cut	mineral	-	red clay is a clay or sediment, not a mineral species
+geography	reef	move	shoal	natural-ridge	a reef is a ridge of rock or coral, not a sandbank; shoal made every reef, coral reef, atoll and the Great Barrier Reef a sandbank
+geography	rill	move	water-channel	natural-depression	a rill is a small erosion channel, not a navigable body of water (core water-channel)
+geography	river-delta	cut	alluvial-sediment	-	a delta is a landform, not a substance; plain and river-mouth stay
+geography	river-mouth	cut	geographic-point	-	its children estuary and river-delta are areas, not points
+geography	scablands	move	physical-object	land	the gloss describes elevated land
+geography	spring-tide	move	high-tide	tide	a spring tide has both higher highs and lower lows; it is not only a high tide
+geography	survey-benchmark	cut	geographical-feature	-	a benchmark is a man-made survey marker, not a natural object
+geography	talus	cut	gravel	-	talus is a slope deposit (formation), not the material gravel
+geography	terrace	move	plateau	landform	a river or marine terrace is a step, not a highland plateau
+geography	topography	move	physical-geography	shape	a geographer's topography is the shape of the land; the node held the rare "the study" sense
+geography	tropic-of-cancer	move	circle-of-latitude	tropic	the Tropic of Cancer is a tropic
+geography	tropic-of-capricorn	move	circle-of-latitude	tropic	the Tropic of Capricorn is a tropic
+geography	tsunami	cut	calamity	-	a tsunami is a wave; not every tsunami is a calamity
+geography	vertical-circle	move	place	great-circle	a great circle on the celestial sphere, as celestial-equator
+geography	visual-range	move	attribute	distance	visual range is a distance
+geography	water-table	cut	geological-formation	-	the water table is a surface (a level), not a formation
+geography	weather-balloon	cut	balloon	-	core balloon is the toy rubber bag; aircraft stays
+geography	weather-forecasting	move	information	activity	forecasting is the activity; weather-forecast holds the statement
+geography	westerlies	parent+	-	west-wind	the westerlies are west winds; absorbs prevailing-westerly
+geography	whirlwind	cut	windstorm	-	a whirlwind or dust devil is not a storm; tornado keeps windstorm through cyclonic-storm
+mathematics	acceptance-sampling	cut	activity	-	a statistical method; activity (act) AND method (cognition) is two readings
+mathematics	additive-inverse	move	number	numeric-quantity	a number (value), not core number's property sense
+mathematics	algebra-over-a-field	cut	mathematical-ring	-	algebras need not be associative or unital; its child lie-algebra is not a ring
+mathematics	antiderivative	move	mathematical-expression	function	holds WN 'primitive' (a source expression); an antiderivative is a function F with F'=f
+mathematics	arity	cut	numeric-quantity	-	'the number of arguments' is core number's property sense; property AND amount is two readings
+mathematics	banach-space	parent+	-	vector-space metric-space	a Banach space is a complete normed vector space, hence metric
+mathematics	big-o-notation	cut	mathematical-relation	-	a notation is a symbol system; relation AND symbol is two readings
+mathematics	bijection	parent+	-	injective-function	a bijection is injective and surjective
+mathematics	binomial	cut	amount	-	a binomial is a two-term polynomial; amount AND polynomial (relation) is two readings
+mathematics	binomial-coefficient	move	number	natural-number	binomial coefficients C(n,k) are natural numbers
+mathematics	cardinal-number	move	number	numeric-quantity	WN cardinal number is under numeric-quantity, not the property sense
+mathematics	cardinality	cut	numeric-quantity	-	'number of elements, as a property of the set' is core number's property sense, with invariant
+mathematics	classical-logic	cut	mathematical-logic	-	a logic (formal system) is not the field of mathematical logic; AND of the two readings
+mathematics	complex-number	cut	number	-	core number is the property sense; WN complex number is under numeric-quantity; fixes the whole number tower
+mathematics	computational-complexity-theory	move	computability-theory	computer-science	complexity theory is a sibling of computability theory in theory of computation, not part of it
+mathematics	conic-section	cut	locus	-	a conic is a shape like circle in core; locus brings set and group, disjoint from attribute
+mathematics	description-logic	cut	mathematical-logic	-	description logics are formal systems, not the field; AND of the two readings
+mathematics	digital-signature	move	cryptographic-primitive	information	the scheme is signature-scheme; a digital signature is the value, as computing's overlay has it
+mathematics	discrete-logarithm	move	decision-problem	problem	the discrete logarithm problem is a search problem, not a decision problem
+mathematics	elliptic-curve-cryptography	cut	procedure	-	an approach within public-key cryptography (field); procedure AND field is two readings
+mathematics	first-order-logic	move	mathematical-logic	formal-system	first-order logic is a formal system studied in mathematical logic, not the field itself
+mathematics	fuzzy-logic	move	mathematical-logic	formal-system	WN: 'a form of mathematical logic', a logic system, not the field
+mathematics	geometric-shape	cut	locus	-	core files figures (triangle, circle, square) under shape (attribute); locus brings set and group, disjoint
+mathematics	infinitesimal	cut	number	-	WN: a variable with limit zero; core number is the property sense
+mathematics	interpolation	cut	algorithm	-	an interpolation is a calculation like extrapolation; algorithm AND calculation mixes act and cognition
+mathematics	intuitionistic-logic	move	mathematical-logic	formal-system	intuitionistic logic is a formal system, not the field of mathematical logic
+mathematics	isometry	move	bijection	injective-function	gloss: one-to-one mapping into another space; an isometry need not be onto
+mathematics	key-derivation-function	cut	function	-	a cryptographic primitive (algorithm, an act in core); function AND algorithm is two readings
+mathematics	logical-connective	move	mathematical-operation	mathematical-operator	a connective is an operator (truth function), not an act of calculating
+mathematics	logical-negation	cut	proposition	-	practitioner's negation is the connective NOT, like its siblings; connective AND proposition is two readings
+mathematics	lower-bound	move	number	mathematical-object	a bound is an element of an ordered set, like least-element, not core number's property sense
+mathematics	mathematical-induction	move	formal-proof	method	induction is a method of proof, not a proof
+mathematics	mathematical-operation	cut	function	-	gloss and 17 of 20 children are acts (calculation); function+procedure is AND of relation and act
+mathematics	mathematical-series	move	function	mathematical-expression	a series is a sum of terms (an expression), not a function
+mathematics	modal-logic	cut	mathematical-logic	-	a modal logic is a formal system, not the field; AND of the two readings
+mathematics	multiplicative-inverse	move	number	numeric-quantity	a number (value), not core number's property sense
+mathematics	null-space	move	mathematical-space	subspace	WN 'a space with no points'; practitioner's null space is the kernel of a linear map
+mathematics	ordinal-number	move	number	numeric-quantity	WN ordinal number is under numeric-quantity, not the property sense
+mathematics	parity	move	mathematical-relation	property	parity (even or odd) is a property of an integer; evenness and oddness are not relations
+mathematics	permutation	cut	mathematical-operation	-	a permutation is a bijection of a set onto itself, not the act of rearranging
+mathematics	propositional-logic	cut	mathematical-logic	-	propositional logic is a formal system, not the field; AND of the two readings
+mathematics	quantifier	move	word	symbol	in logic a quantifier (for-all, exists) is a symbol binding variables, not a word
+mathematics	quaternion	move	number	numeric-quantity	a hypercomplex number, a numeric quantity like complex-number
+mathematics	reflexive-relation	cut	logical-relation	-	logical-relation is 'a relation between propositions'; makes every preorder and order relate propositions
+mathematics	rooted-tree	move	polytree	tree-graph	a rooted tree is a tree with a chosen root; polytree makes binary-tree both directed and undirected
+mathematics	scalar	move	number	numeric-quantity	a scalar is a field element (a value), not core number's property sense
+mathematics	scalar-field	cut	mathematical-field	-	a scalar field assigns a scalar to each point (a function); function AND field is two readings
+mathematics	signature-scheme	move	cryptographic-protocol	cryptographic-primitive	a signature scheme is a set of algorithms (a primitive), not a communications protocol
+mathematics	spherical-polygon	move	polygon	geometric-shape	polygon is 'a closed plane figure bounded by straight sides'; a spherical polygon is neither
+mathematics	statistic	move	cognition	information	WN: a datum (data point < information); a statistic is not a mental content
+mathematics	statistical-correlation	move	statistic	relation	correlation is a relation between variables (gloss); the coefficient is the statistic
+mathematics	statistical-distribution	move	cognition	function	a distribution maps values to frequencies or probabilities; not a cognition
+mathematics	statistical-weight	cut	number	-	a weight is a coefficient (numeric-quantity); core number is the property sense
+mathematics	stratified-sample	move	sample-distribution	subpopulation	a stratified sample is a sample (a subpopulation), like random-sample, not a distribution
+mathematics	strongly-connected-component	move	connected-component	subgraph	connected-component sits under undirected-graph; an SCC is a directed subgraph
+mathematics	topological-ordering	cut	data-processing	-	a topological ordering is a total order (linear extension), not a process
+mathematics	transitive-closure	cut	mathematical-operation	-	the transitive closure is the relation R+; operation AND relation is two readings
+mathematics	transitive-reduction	move	mathematical-operation	binary-relation	the transitive reduction is a relation (Hasse diagram's edges), as its sibling transitive-closure
+mathematics	transitive-relation	cut	logical-relation	-	logical-relation is 'a relation between propositions'; makes every order and equivalence relate propositions
+mathematics	truncation-error	move	event	numeric-quantity	a truncation error is the size of a discrepancy, not an event
+mathematics	type-theory	cut	formal-system	-	with about(type-system) and mathematical-logic it is the field; formal system AND field is two readings
+mathematics	upper-bound	move	number	mathematical-object	a bound is an element of an ordered set, like greatest-element, not core number's property sense
+medicine	aeromedicine	move	biomedicine	medical-specialty	aerospace medicine is a medical specialty; biomedicine is re-sensed
+medicine	anorexia-nervosa	move	condition	mental-disorder	an eating disorder is a mental disorder (gloss: a psychological disorder)
+medicine	apnea	cut	event	-	AND error: a symptom (state) is not also an event
+medicine	ballistocardiograph	move	instrument	medical-instrument	gloss: a medical instrument; core medical-instrument exists
+medicine	bee-sting	cut	event	-	AND error: a sting is an injury (state), not also an event
+medicine	blackwater-fever	cut	disease	-	its gloss is any dark-urine disease, yet it sits under malaria; blackwater fever is the severe malaria (WordNet 14073647)
+medicine	blood-extravasation	cut	process	-	AND error: bleeding (state) is not also a process
+medicine	bronchoscope	move	instrument	endoscope	a bronchoscope is an endoscope, like its siblings laryngoscope and gastroscope
+medicine	cardiograph	move	instrument	medical-instrument	gloss: a medical instrument; core medical-instrument exists
+medicine	centesis	move	event	procedure	a needle puncture to draw fluid is a medical procedure (act), not a bare event
+medicine	cerebral-hemorrhage	cut	event	-	AND error: bleeding is a state, not also an event
+medicine	constipation	cut	event	-	AND error: a symptom (state) is not also an event
+medicine	cramp	cut	event	-	AND error: a symptom (state) is not also an event
+medicine	crepitation-rale	cut	noise	-	AND error: noise is an event, symptom a state; keep symptom like stridor and wheeziness
+medicine	cyanosis	cut	event	-	AND error: a symptom (state) is not also an event
+medicine	dementia	move	insanity	mental-disorder	dementia is a neurocognitive disorder, not insanity; mental-disorder has no children yet
+medicine	dialyzer	move	instrument	medical-instrument	gloss: a medical instrument; core medical-instrument exists
+medicine	diathermy-machine	move	instrument	medical-instrument	gloss: a medical instrument; core medical-instrument exists
+medicine	disease-carrier	move	person	organism	gloss: a person or an animal; organism covers both
+medicine	dizziness	cut	event	-	AND error: a symptom (state) is not also an event
+medicine	dyspnea	cut	event	-	AND error: a symptom (state) is not also an event
+medicine	electroencephalograph	move	instrument	medical-instrument	gloss: a medical instrument; core medical-instrument exists
+medicine	electromyograph	move	instrument	medical-instrument	gloss: a medical instrument; core medical-instrument exists
+medicine	embryologist	cut	medical-specialist	-	an embryologist is a scientist, rarely a physician (medical-specialist < doctor)
+medicine	endoscope	move	instrument	medical-instrument	gloss: a medical instrument; core medical-instrument exists
+medicine	enterobiasis	move	condition	infection	WordNet hyponym of infection 14174549; core-05 re-senses infection to that pathological state
+medicine	fetal-alcohol-syndrome	cut	event	-	AND error: a congenital syndrome is a state, not an event
+medicine	focal-infection	move	condition	infection	an infection; core-05 re-senses infection to the pathological state 14174549
+medicine	frostbite	cut	event	-	AND error: an injury (state) is not also an event
+medicine	gerontologist	move	medical-specialist	specialist	gerontology is the study of ageing; the physician is the geriatrician; not every gerontologist is a doctor
+medicine	heart-murmur	cut	event	-	AND error: a symptom (state) is not also an event; siblings stridor and wheeziness are symptoms only
+medicine	hemoptysis	cut	event	-	AND error: a symptom (state) is not also an event
+medicine	hernia	cut	event	-	AND error: a tissue rupture (state) is not also an event
+medicine	hiccup	cut	process	-	AND error: a symptom (state) is not also a process
+medicine	hygiene	move	medical-specialty	condition	everyday and clinical hygiene is the sanitary condition and practice (personal or hand hygiene), not a science
+medicine	hyperkalemia	cut	event	-	AND error: a blood finding (state) is not an event
+medicine	hypoglycemia	cut	event	-	AND error: a blood finding (state) is not an event
+medicine	hypokalemia	cut	event	-	AND error: a blood finding (state) is not an event
+medicine	hyponatremia	cut	event	-	AND error: a blood finding (state) is not an event
+medicine	incubation-period	cut	state	-	AND error: a period of time is not a state
+medicine	insanity	move	condition	mental-disorder	a disorder of the mind is a mental disorder; mental-disorder has no children yet
+medicine	insulin-shock	move	shock-therapy	hypoglycemia	in medicine insulin shock is hypoglycemic coma (WordNet sense 1); the shock-therapy sense is obsolete
+medicine	jaundice	cut	event	-	AND error: a sign/symptom (state) is not also an event
+medicine	keratoscope	move	instrument	medical-instrument	gloss: a medical instrument; core medical-instrument exists
+medicine	menorrhagia	cut	process	-	AND error: a symptom (state) is not also a process
+medicine	midwife	move	nurse	professional	not every midwife is a nurse; nurse-midwife is the nurse kind
+medicine	numbness	cut	event	-	AND error: a symptom (state) is not also an event
+medicine	opportunistic-infection	move	condition	infection	an infection; core-05 re-senses infection to the pathological state 14174549
+medicine	organ-insufficiency	move	attribute	dysfunction	a failure of an organ to function is a dysfunction (a condition), the parent its dropped duplicate had in spirit
+medicine	orthoptist	move	medical-specialist	specialist	orthoptists are allied health specialists, not doctors
+medicine	palpitation	cut	event	-	AND error: a symptom (state) is not also an event
+medicine	palsy	move	clinical-sign	dysfunction	palsy means paralysis (Bell's palsy, cerebral palsy); node holds the rare tremor sense
+medicine	palsy	cut	disease	-	the old sense's parent
+medicine	palsy	cut	symptom	-	the old sense's parent
+medicine	paronychia	move	condition	infection	an infection (gloss); core-05 re-senses infection to the pathological state 14174549
+medicine	pathological-plaque	cut	physical-object	-	AND error: physical-object and symptom (state); lesions are filed as symptoms in this pack
+medicine	pathological-strangulation	cut	event	-	AND error: filed as condition and event; keep the condition
+medicine	protozoal-infection	move	condition	infection	an infection; core-05 re-senses infection to the pathological state 14174549
+medicine	psychosis	move	condition	mental-disorder	psychosis is a mental disorder; mental-disorder has no children yet
+medicine	radiographer	cut	medical-specialist	-	a radiographer is a technician, not a doctor (medical-specialist < doctor)
+medicine	respiratory-tract-infection	move	condition	infection	an infection; core-05 re-senses infection to the pathological state 14174549
+medicine	restless-legs-syndrome	cut	event	-	AND error: a syndrome (state) is not also an event
+medicine	scar	cut	symptom	-	AND error: tissue (physical) and symptom (state); a healed scar is tissue, not a symptom
+medicine	schistosomiasis	move	condition	infection	WordNet hyponym of infection 14174549; core-05 re-senses infection to that pathological state
+medicine	sepsis	move	condition	infection	WordNet hyponym of infection 14174549; core-05 re-senses infection to that pathological state
+medicine	sneeze	cut	process	-	AND error: a symptom (state) is not also a process; sibling cough is sign+symptom only
+medicine	spasm	cut	event	-	AND error: symptom (state) and event; also the node holds the rare hollow-organ sense, while plain spasm (muscle spasm, 14360459) is held by cramp
+medicine	speculum	move	instrument	medical-instrument	gloss: a medical instrument; core medical-instrument exists
+medicine	sprain	cut	event	-	AND error: an injury (state) is not also an event
+medicine	staphylococcal-infection	move	condition	infection	an infection; core-05 re-senses infection to the pathological state 14174549
+medicine	streptococcal-sore-throat	parent+	-	infection	an infection of the pharynx (gloss); core-05 re-senses infection to the pathological state 14174549
+medicine	sty	move	condition	infection	an infection (gloss); core-05 re-senses infection to the pathological state 14174549
+medicine	sunburn	cut	event	-	AND error: a burn (state) is not also an event
+medicine	superinfection	move	condition	infection	an infection; core-05 re-senses infection to the pathological state 14174549
+medicine	suprainfection	move	condition	infection	an infection; core-05 re-senses infection to the pathological state 14174549
+medicine	surgical-instrument	move	instrument	medical-instrument	gloss: a medical instrument used in surgery; core medical-instrument exists
+medicine	tapeworm-infection	move	condition	infection	an infection; core-05 re-senses infection to the pathological state 14174549
+medicine	tetanus	move	condition	infection	an infection (gloss); core-05 re-senses infection to the pathological state 14174549
+medicine	thermograph	move	instrument	medical-instrument	gloss: a medical instrument; core medical-instrument exists
+medicine	toxoplasmosis	move	condition	infection	an infection (gloss); core-05 re-senses infection to the pathological state 14174549
+medicine	trench-foot	move	frostbite	injury	its own gloss: resembles frostbite but without freezing, so it is not frostbite
+medicine	vaccinia	move	condition	infection	a local infection (gloss); core-05 re-senses infection to the pathological state 14174549
+medicine	viral-infection	move	condition	infection	an infection; core-05 re-senses infection to the pathological state 14174549
+medicine	whiplash	cut	event	-	AND error: an injury (state) is not also an event
+medicine	whitlow	move	condition	infection	a purulent infection (gloss); core-05 re-senses infection to the pathological state 14174549
+medicine	williams-syndrome	cut	event	-	AND error: a congenital disorder is a state, not an event
+occupations	acrobat	cut	professional	-	professional is the learned professions; an acrobat is a performer
+occupations	ambassador	cut	manager	-	an ambassador does not control resources and expenditures; diplomat already covers it [also occupations-01: cut member]
+occupations	ambassador	cut	member	-	member of a social group adds nothing true of every ambassador (GPT alignment)
+occupations	announcer	move	human	worker	held sense is anyone who proclaims publicly; the occupation reads news on radio or TV
+occupations	arbiter	cut	professional	-	an arbiter need not be in a learned profession; specialist covers it
+occupations	assayer	move	analyst.person	analyst	analyst.person duplicates core analyst (same synset 09790482)
+occupations	bandleader	cut	professional	-	professional is the learned professions; musician covers it
+occupations	baritone	cut	professional	-	professional is the learned professions (doctor, lawyer, clergy); a singer is not in one
+occupations	barrister	cut	jurist	-	jurist is a legal scholar; a barrister is a practising lawyer, lawyer covers it
+occupations	bookmaker	move	person	worker	everyday bookmaker takes bets; "a maker of books" is rare
+occupations	canon	move	person	priest	gloss: a priest who is a member of a cathedral chapter
+occupations	cellist	cut	professional	-	professional is the learned professions; instrumentalist covers it
+occupations	chief-executive-officer	cut	member	-	not every CEO is a member of the group they run; chief and worker cover it
+occupations	clown	move	artist	comedian	held sense is "a rude or vulgar fool"; the occupation is the circus clown, a comedian
+occupations	clown	cut	human	-	the old sense's parent
+occupations	clown	cut	professional	-	the old sense's parent
+occupations	comedian	cut	professional	-	professional is the learned professions; a comedian is a performer
+occupations	correspondent	move	artist	reporter	held sense is a letter writer; the occupation is the news correspondent
+occupations	correspondent	cut	communicator	-	the old sense's parent
+occupations	correspondent	cut	professional	-	the old sense's parent
+occupations	counsel	cut	jurist	-	jurist is a legal scholar; counsel is a practising lawyer, lawyer covers it
+occupations	cowgirl	cut	breeder	-	a cowgirl tends cattle; she does not breed animals
+occupations	dairymaid	cut	farmer	-	a dairymaid works in a dairy; farmer means she operates the farm
+occupations	dancer	cut	professional	-	professional is the learned professions; a dancer is a performer (chain to ballet-dancer, tap-dancer)
+occupations	dispatcher	move	worker	employee	held sense is the race starter; everyday dispatcher sends out vehicles
+occupations	drafter	move	writer	skilled-worker	held sense is a writer of a draft; the occupation (drafter, draftsperson) draws plans
+occupations	forecaster	move	visionary	person	a weather or economic forecaster has no "unusual powers of foresight"; visionary is false of every forecaster
+occupations	groom	move	person	worker	held sense is the bridegroom; the occupation is the stable groom
+occupations	groundsman	cut	farmer	-	a groundsman maintains grounds of an estate, park or field; he does not operate a farm
+occupations	guitarist	move	professional	instrumentalist	a guitarist plays an instrument; professional (learned professions) is false
+occupations	head-of-state	move	politician	leader	a hereditary monarch is a head of state but not a party politician
+occupations	headhunter	move	human	worker	held sense is a savage who takes heads; the occupation is the recruiter of personnel
+occupations	headhunter	cut	professional	-	the old sense's parent
+occupations	herder	cut	breeder	-	a herder drives a herd; breeder (and through it farmer, operates a farm) is false of nomadic herders
+occupations	horticulturist	cut	farmer	-	an expert in the science of cultivating plants does not necessarily operate a farm
+occupations	hypnotist	move	psychologist	person	stage hypnotists are not psychologists
+occupations	intelligence-analyst	move	analyst.person	analyst	analyst.person duplicates core analyst (same synset 09790482)
+occupations	joiner	move	cabinetmaker	woodworker	held sense is someone who likes joining groups; the occupation is the woodworker (parent cabinetmaker was for this sense)
+occupations	lobbyist	move	professional	worker	lobbying is not a learned profession
+occupations	magician	cut	professional	-	professional is the learned professions; a magician is a performer
+occupations	magistrate	move	jurist	judge	a magistrate is a (often lay) judge, not a legal scholar; jurist is false of lay magistrates
+occupations	mediator	cut	professional	-	a mediator need not be in a learned profession; specialist covers it
+occupations	missionary	move	educator	worker	a missionary converts people; educator (someone who educates young people) is false [also occupations-01: cut professional]
+occupations	missionary	cut	professional	-	lay missionaries are not in a learned profession
+occupations	narrator	cut	professional	-	professional is the learned professions; not every narrator is in one
+occupations	organist	cut	professional	-	professional is the learned professions; instrumentalist covers it
+occupations	pearl-diver	move	craftsman	diver	a pearl diver is a diver, not a craftsman of a trade or handicraft
+occupations	pianist	cut	professional	-	professional is the learned professions; instrumentalist covers it
+occupations	pomologist	cut	engineer	-	a pomologist studies or grows fruit trees; not an engineer
+occupations	promoter	move	worker	booker	held sense is a supporter, not a worker; the occupation is the impresario (synset now held by showman, dropped)
+occupations	psychotherapist	move	scientist	therapist	a psychotherapist is a therapist (gloss), not necessarily a scientist
+occupations	registrar	move	worker	official	held sense is a company's stock registrar; everyday registrar keeps official records
+occupations	salter	cut	merchant	-	gloss is someone who preserves food with salt, not a retail merchant
+occupations	saxophonist	move	professional	instrumentalist	a saxophonist plays an instrument; professional (learned professions) is false
+occupations	secretary-general	cut	chairman	-	a secretary-general is not the officer who presides at the meetings (UN SG does not chair the Assembly)
+occupations	shepherd	move	worker	herder	held sense is a clergyman; everyday shepherd herds sheep
+occupations	skipper	move	person	worker	held sense is a truant student; everyday skipper commands a ship
+occupations	smith	move	worker	craftsman	held sense is the vague "works at something specified"; smith is the metalworker (fits gunsmith, locksmith, tinsmith)
+occupations	smuggler	cut	worker	-	not every smuggler works at it as an occupation
+occupations	sports-announcer	move	professional	announcer	a sports announcer is an announcer, not in a learned profession
+occupations	stockbroker	cut	trader	-	a stockbroker is an agent, not a trader keeping an inventory (trader brings merchant, retail trade)
+occupations	technician	cut	professional	-	a technician is a skilled worker, not in a learned profession (chain to dental-technician, webmaster)
+occupations	tenor	cut	instrumentalist	-	a tenor sings; instrumentalist is someone who plays a musical instrument [also occupations-01: cut professional]
+occupations	tenor	cut	professional	-	professional is the learned professions; most tenors are not in one
+occupations	tinker	move	worker	mender	held sense is a hobbyist; the occupation is the travelling mender of pots
+occupations	translator	cut	scientist	-	a translator is not a scientist
+occupations	trumpeter	move	professional	instrumentalist	a trumpeter plays an instrument; professional (learned professions) is false
+occupations	violinist	cut	professional	-	professional is the learned professions; instrumentalist covers it
+physics	antilepton	parent+	-	elementary-particle	keeps positron, antimuon, antineutrino and antitauon elementary once antiparticle leaves elementary-particle
+physics	antiparticle	move	elementary-particle	particle	antiprotons and antineutrons are antiparticles but composite, so antiparticle is not a kind of elementary particle
+physics	astronomer	move	physicist	scientist	not every astronomer is a physicist (amateur and early astronomers); astronomy is the scientist's subject
+physics	barycenter	cut	point	-	core point is "a V shape"; center-point already gives the location
+physics	cosmic-string	move	elementary-particle	natural-object	a cosmic string is a hypothetical topological defect of cosmic length, not a subatomic particle
+physics	hadron	move	elementary-particle	particle	hadrons are composite (made of quarks), so not elementary to a physicist; highest wrong link for baryon, meson, nucleon, proton, neutron, hyperon
+physics	libration	move	orbital-variation	oscillation	libration is a real or apparent rocking of a moon, mostly an optical effect of its orbit, not a perturbation of the orbit
+physics	meniscus	move	physical-object	surface	the meniscus is the curved surface of a liquid, not a separate object (WordNet: surface)
+physics	oscillation	move	wave-motion	variation	an oscillation (pendulum, LC circuit) need not propagate, so it is not a wave; it is a periodic variation
+physics	strange-particle	move	elementary-particle	hadron	strange particles (kaons, hyperons) are hadrons carrying a strange quark, not elementary
+space	amateur-astronomy	cut	astronomy	-	a hobby (activity), not a branch of the science; AND would make it a field of study
+space	asterism	move	natural-object	collection	a pattern of stars seen from Earth, not one physical object
+space	astronomical-conjunction	move	encounter	natural-event	core encounter is a casual or unexpected meeting; conjunctions are predictable alignments, like opposition and transit (natural-event)
+space	bayer-designation	move	code	name	core code is computer code; a Bayer designation (Alpha Centauri) is a star's name
+space	big-bang	move	explosion	natural-event	core explosion is caused by a chemical or nuclear reaction; the Big Bang was an expansion of space, not such an explosion
+space	black-hole	move	stellar-remnant	celestial-body	supermassive black holes (its child) do not come from the collapse of a star
+space	celestial-point	move	point	place	core point is "a V shape", which makes every apsis, apogee, perihelion, pole and Lagrange point a shape and an attribute
+space	equatorial-telescope	move	instrument	telescope	its gloss says it is a telescope; instrument is too weak
+space	event-horizon	move	region	surface	core region is a location on the surface of the Earth; an event horizon is the boundary of a black hole
+space	gravitational-wave	move	wave	physical-phenomenon	core wave is a ridge on the surface of water
+space	heliosphere	move	region	place	core region is a location on the surface of the Earth
+space	hill-sphere	move	region	place	core region is a location on the surface of the Earth
+space	meteorite	move	meteoroid	natural-object	a meteorite is the piece that lands on Earth; meteoroid < celestial-body puts it in space and in the sky
+space	neutron-star	cut	star	-	core star is powered by fusion and a neutron star is not; stellar-remnant already holds it
+space	observable-universe	move	region	place	core region is a location on the surface of the Earth
+space	optical-telescope	move	astronomical-telescope	telescope	an optical telescope is any telescope that collects light; galilean-telescope (no longer used in astronomy) and field-glass sit below it
+space	partial-eclipse	move	event	eclipse	a partial eclipse is an eclipse; the pack's own eclipse node holds the others
+space	planetary-rover	move	spacecraft	vehicle	a rover drives on a surface and does not fly through space itself
+space	protostar	move	star	celestial-body	not yet fusing hydrogen, so not a star in core's sense
+space	sidereal-day	cut	sidereal-time	-	a sidereal day is a length of time, not a time scale (time-standard < standard < information); day already holds it
+space	sidereal-hour	move	sidereal-time	time-unit	a unit of time, not a time scale (sidereal-time < time-standard < information)
+space	sidereal-month	move	sidereal-time	time-unit	a period of 27.3 days, not a time scale (sidereal-time < time-standard < information)
+space	sidereal-year	move	sidereal-time	time-unit	a period of time, not a time scale (sidereal-time < time-standard < information)
+space	space-probe	move	vehicle	spacecraft	a space probe is an uncrewed spacecraft (WordNet's "guided missile" gloss is wrong)
+space	space-weather	move	astrophysics	condition	space weather is the changing conditions in space (solar wind, storms), not a branch of astrophysics
+space	star-chart	cut	map	-	core map is a picture of the Earth's surface (about(place)); a star chart shows the sky
+space	supernova	move	star	natural-event	to astronomers a supernova is the explosion of a star, an event, not a kind of star
+space	total-eclipse	move	event	eclipse	a total eclipse is an eclipse; the pack's own eclipse node holds the others
+space	white-dwarf	cut	star	-	core star is powered by fusion and a white dwarf is not; stellar-remnant already holds it
+ai	heuristic-search-algorithm	drop	-	-	duplicate of informed-search-algorithm (Wikidata: informed search is generally heuristic)
+ai	intelligent-system	drop	-	-	vague (Wikidata: a system showing signs of AI, or claiming to)
+ai	learning-analytics	drop	-	-	analysis of data about learners; education, not AI
+ai	nearest-neighbor-classifier	drop	-	-	duplicate of k-nearest-neighbors
+ai	neural-network-model	drop	-	-	vague duplicate of artificial-neural-network (Wikidata: a network with a specific architecture)
+biology	bodily-humor	drop	-	-	medieval belief about body fluids, not biology
+biology	cystic-fibrosis-transport-regulator	drop	-	-	one particular gene (an instance), and it is not itself a mutant gene
+biology	dissilience	drop	-	-	rare word for dehiscence of seed pods; dehiscence covers it
+biology	dominant-gene	drop	-	-	duplicate of dominant-allele
+biology	meme	drop	-	-	cultural unit, contested and not of biology's domain
+biology	monad-organism	drop	-	-	archaic term for a single-celled organism; microorganism covers it
+biology	plantae	drop	-	-	a single taxon (the plant kingdom) filed as a class; plant covers it
+biology	recessive-gene	drop	-	-	duplicate of recessive-allele
+chemistry	actinide-series	drop	-	-	one particular set of 15 elements (an instance); its chemical-group parent is the radical sense, also wrong
+chemistry	allomerism	drop	-	-	obsolete mineralogy term; and a property, not an event (variation < change)
+chemistry	guinea-gold	drop	-	-	archaic: 22-karat gold of the old guinea coin (WN's first sense is red brass)
+computing	active-application	drop	-	-	a state (running in the foreground), not a kind
+computing	anti-virus-program	drop	-	-	duplicate of antivirus-software
+computing	apache-software-foundation	drop	-	-	a single organization filed as a class
+computing	biochip	drop	-	-	a DNA lab device, not computing
+computing	cascading-style-sheets	drop	-	-	duplicate of css
+computing	complex-instruction-set-computer	drop	-	-	duplicate of complex-instruction-set-computing (same synset, same parent)
+computing	computer-hardware	drop	-	-	duplicate: core hardware already holds the computer-hardware sense (03493333)
+computing	data-encryption	drop	-	-	duplicate of encryption
+computing	feed	drop	-	-	duplicate of web-feed, and hung under it although it is the wider word
+computing	foreground-window	drop	-	-	a state of a window, not a kind
+computing	free-software-foundation	drop	-	-	a single organization filed as a class
+computing	freemail	drop	-	-	odd WordNet term; a mail service, not an email message
+computing	gene-chip	drop	-	-	a DNA-microarray lab device, not computing
+computing	github	drop	-	-	a single website filed as a class
+computing	gnu-project	drop	-	-	a single project filed as a class
+computing	gzip-file-format	drop	-	-	duplicate of gzip (both compression-format)
+computing	internet-engineering-task-force	drop	-	-	a single organization filed as a class
+computing	library-program	drop	-	-	vague relation (a program kept in a library); overlaps library-routine
+computing	linkage-editor	drop	-	-	WordNet's old name for a linker; duplicate of linker
+computing	linux-foundation	drop	-	-	a single organization filed as a class
+computing	mozilla-foundation	drop	-	-	single organization, not a kind
+computing	multiplex-operation	drop	-	-	vague archaic WN operation
+computing	newsletter	drop	-	-	not computing (a periodical)
+computing	notebook-computer	drop	-	-	(chunk 02) duplicate of laptop in everyday use
+computing	number-cruncher	drop	-	-	informal slang for a powerful computer
+computing	object-database	drop	-	-	duplicate of object-oriented-database and its DBMS; also database AND DBMS
+computing	object-language	drop	-	-	a role (target language of a translation), not a kind
+computing	one-dimensional-language	drop	-	-	odd WN distinction nobody uses
+computing	open-knowledge	drop	-	-	vague; overlaps open-data
+computing	open-source	drop	-	-	duplicate of open-source-model
+computing	open-source-initiative	drop	-	-	single organization, not a kind
+computing	openstreetmap	drop	-	-	single instance (one map database), not a kind
+computing	push-down-queue	drop	-	-	duplicate of stack-data-structure (LIFO)
+computing	replication-in-computing	drop	-	-	duplicate of data-replication
+computing	schema-org	drop	-	-	single instance (one vocabulary); also ontology (group) AND standard (document)
+computing	seventy-eight	drop	-	-	a shellac phonograph record: not computing, and not information
+computing	software-dependency	drop	-	-	a relation/role (what a program depends on), filed as a property
+computing	stratified-language	drop	-	-	a logic notion (own metalanguage or not), not a kind of programming language
+computing	subdata-base	drop	-	-	odd WN term
+computing	system-error	drop	-	-	odd WN sense (an instruction); everyday 'system error' is vague
+computing	talking-book	drop	-	-	a sound recording, not computing
+computing	text-matching	drop	-	-	odd off-WN node; covered by string-searching-algorithm
+computing	tree-structure	drop	-	-	duplicate of tree-data-structure
+computing	unstratified-language	drop	-	-	a logic notion (own metalanguage or not), not a kind of programming language
+computing	wikidata	drop	-	-	single instance, not a kind
+computing	wikidata-query-service	drop	-	-	single instance, not a kind
+computing	wikimedia-commons	drop	-	-	single instance, not a kind
+computing	wikimedia-foundation	drop	-	-	single organization, not a kind
+computing	world-wide-web-consortium	drop	-	-	single organization, not a kind
+computing	yago	drop	-	-	single instance (one knowledge base), not a kind
 core	aberration	drop	-	-	optical-lens sense is specialist; the everyday "deviation from the norm" is vague
 core	act-of-play	drop	-	-	Peter's example: vague leaf
 core	action-mechanism	drop	-	-	specialist (piano/gun action), odd name, unused leaf
@@ -993,3 +1760,153 @@ core	whirligig	drop	-	-	archaic toy name
 core	wilderness-trail	drop	-	-	duplicate of trail after its resense
 core	wimp	drop	-	-	colloquial insult; vague leaf
 core	window-unit	drop	-	-	duplicate of window after its resense
+economics	argosy	drop	-	-	archaic poetic word for merchant ships
+economics	ask-price	drop	-	-	duplicate of offer-price and asking-price; also an AND of price and purchase-price
+economics	assurance-insurance	drop	-	-	British synonym for kinds of insurance; duplicate, not a kind of its own
+economics	beacon-chain	drop	-	-	a single chain of Ethereum filed as a class
+economics	bibliopole	drop	-	-	archaic; bookdealer covers it
+economics	bitcoin-core	drop	-	-	a single software product filed as a class
+economics	bitcoin-taproot	drop	-	-	a single upgrade (instance) filed as a class
+economics	buy-option	drop	-	-	duplicate of call-option ("an option to buy")
+economics	carriage-trade	drop	-	-	dated idiom, not a kind of commerce
+economics	cellarage	drop	-	-	archaic, obscure storage fee
+economics	circularization	drop	-	-	obscure term for advertising by circulars
+economics	common-carrier	drop	-	-	duplicate of carrier-company; also wrongly under freight-forwarder
+economics	cosmetician	drop	-	-	sells or applies cosmetics; not a merchant, not economics
+economics	cutler	drop	-	-	archaic trade; gloss (dealer) contradicts its craftsman parent
+economics	divvy	drop	-	-	slang abbreviation of dividend
+economics	ethereum-name-service	drop	-	-	a single system filed as a class
+economics	expending	drop	-	-	duplicate of spending
+economics	fire-sale	drop	-	-	holds the rare sense (fire-damaged goods); the everyday fire-sale synset 01119116 is held by distress-sale
+economics	flower-girl	drop	-	-	odd sense; everyday flower girl is a child at a wedding
+economics	footage-rate	drop	-	-	obscure charge rate per linear foot
+economics	grubstake	drop	-	-	colloquial; funds advanced, not a financial interest
+economics	horse-trade	drop	-	-	literal swap of horses; odd sense of the idiom
+economics	insurance-policy	drop	-	-	duplicate of core policy (same synset 06523641, written contract of insurance)
+economics	lightning-network	drop	-	-	a single network (instance), not a kind
+economics	monte-carlo-methods-in-finance	drop	-	-	an article title (topic), not a kind; monte-carlo-method is in the ai pack
+economics	mortgage-loan	drop	-	-	duplicate of real-estate-loan (same WN synset); Peter may prefer the mortgage-loan name
+economics	overpaid-amount	drop	-	-	duplicate once overpayment takes its sense 13279046
+economics	poundage	drop	-	-	odd sense 2/4 (fee for impounded animals); the weight charge is weight-charge
+economics	remuneration	drop	-	-	holds rare act sense; everyday remuneration is pay, held by core wage
+economics	renting	drop	-	-	duplicate of core rental (same WN synset); and it is an act, not a contract
+economics	sales-contract	drop	-	-	duplicate of purchase-contract (one contract of sale, seen from either side)
+economics	segwit	drop	-	-	a single protocol upgrade (instance), not a kind
+economics	sell-option	drop	-	-	duplicate of put-option (WN's second put-option synset)
+economics	short-selling	drop	-	-	duplicate of short-sale (same WN synset)
+economics	stop-loss-order	drop	-	-	duplicate of stop-order (WN synonyms)
+economics	tankage	drop	-	-	odd sense 3/3 (act of storing in tanks); the fee is tankage-charge
+economics	underlying-asset	drop	-	-	a role (whatever underlies a derivative), not a kind; and not always a security (commodities, indices)
+economics	underpaid-amount	drop	-	-	duplicate once underpayment takes its sense 13279162
+economics	unitization	drop	-	-	odd sense 3/4 (investment-trust conversion) and wrongly under currency-conversion
+economics	vendor	drop	-	-	duplicate of core seller (WN vendor is in seller's synset)
+economics	web3	drop	-	-	vague buzzword, not a clear kind
+geography	beaufort-scale	drop	-	-	single instance of a scale, not a kind
+geography	beidou	drop	-	-	single instance of GNSS, not a kind (the pack's extra-edges note says so)
+geography	clunch	drop	-	-	duplicate of indurated-clay (both WN "hardened clay"); archaic
+geography	coordinated-universal-time	drop	-	-	single instance of a time standard, not a kind
+geography	earth-structure	drop	-	-	unglossed; its parent structure makes it an artifact; the Earth's structure is one thing, not a kind
+geography	endogeny	drop	-	-	obscure WN term, vague
+geography	epsg-geodetic-parameter-dataset	drop	-	-	single dataset, not a kind
+geography	etrs89	drop	-	-	single instance of a geodetic datum, not a kind
+geography	fine-spray	drop	-	-	odd WN term, vague
+geography	fire-pit	drop	-	-	rare sense (a lava pit); the everyday fire pit is a pit for a campfire
+geography	flowage	drop	-	-	rare sense; a man-made flooded area filed as a natural body of water
+geography	foreland	drop	-	-	vague sense; the headland sense is promontory
+geography	galileo-navigation-system	drop	-	-	single instance of GNSS, not a kind
+geography	geologic-time-scale	drop	-	-	single instance of a scale, not a kind
+geography	geological-eon	drop	-	-	duplicate of eon, which holds archean, hadean, phanerozoic and proterozoic
+geography	geonames	drop	-	-	single gazetteer database, not a kind
+geography	getty-thesaurus-of-geographic-names	drop	-	-	single work, not a kind
+geography	global-positioning-system	drop	-	-	single instance of GNSS (GPS), not a kind
+geography	glonass	drop	-	-	single instance of GNSS, not a kind
+geography	gps-time	drop	-	-	single instance of a time standard, not a kind
+geography	gregorian-calendar	drop	-	-	single instance of a calendar, not a kind; not geography
+geography	international-atomic-time	drop	-	-	single instance of a time standard, not a kind
+geography	international-terrestrial-reference-system	drop	-	-	single instance of a reference system, not a kind
+geography	julian-day	drop	-	-	single dating system (astronomy), not a kind
+geography	kitty-litter	drop	-	-	a pet-care product, not geography
+geography	koppen-climate-classification	drop	-	-	single classification scheme, not a kind
+geography	landslip	drop	-	-	duplicate of landslide (same WN synset 07405411)
+geography	mercalli-scale	drop	-	-	single instance of a scale, not a kind
+geography	military-grid-reference-system	drop	-	-	single instance of a reference system, not a kind
+geography	moment-magnitude-scale	drop	-	-	single instance of a scale, not a kind
+geography	naval-chart	drop	-	-	duplicate of nautical-chart (WN naval/navigational chart)
+geography	nebule	drop	-	-	archaic word for a small cloud
+geography	noah's-flood	drop	-	-	a biblical event, not geography
+geography	north-american-datum	drop	-	-	single instance of a geodetic datum, not a kind
+geography	prevailing-westerly	drop	-	-	duplicate of westerlies
+geography	richter-magnitude-scale	drop	-	-	single instance of a scale, not a kind
+geography	shingling	drop	-	-	rare sense; geologists call it imbrication
+geography	transit-zone	drop	-	-	a drug-smuggling area of the US government, not a geographic kind
+geography	unix-time	drop	-	-	single instance of a time standard; computing, not geography
+geography	utm-coordinate-system	drop	-	-	single instance of a reference system, not a kind
+geography	wgs-84	drop	-	-	single instance of a geodetic datum, not a kind
+geography	wide-area-augmentation-system	drop	-	-	single instance (WAAS), not a kind
+geography	wormcast	drop	-	-	rare sense (fossil trail); the everyday wormcast is an earthworm casting
+mathematics	age-norm	drop	-	-	developmental psychology norm, not mathematics
+mathematics	combinatorial-combination	drop	-	-	holds the act of arranging; the mathematical combination is k-combination
+mathematics	drawn-box	drop	-	-	WN 'box: a rectangular drawing' (a flowchart box), not mathematics
+mathematics	exceedance	drop	-	-	only WN sense is a geology probability; vague as a bare word
+mathematics	heap-data-structure	drop	-	-	a computing data structure (computing has binary-heap), not mathematics
+medicine	ague	drop	-	-	archaic word for malarial fever; rare sense flagged
+medicine	alienism	drop	-	-	its gloss: an obsolete term for psychiatry
+medicine	alienist	drop	-	-	archaic name for a forensic psychiatrist
+medicine	biomedical-science	drop	-	-	duplicate: holds biomedicine's sense 06047096 under another name, which biomedicine takes back
+medicine	foundling-hospital	drop	-	-	archaic, and not a medical hospital: a home for abandoned infants
+medicine	hygienist	drop	-	-	holds an odd sense (medical specialist in hygiene); the everyday hygienist is a dental hygienist, not a doctor
+medicine	kibe	drop	-	-	archaic word for an ulcerated chilblain
+medicine	lazaretto	drop	-	-	archaic: a historic leper or quarantine house
+medicine	low-level-radioactive-waste	drop	-	-	not of the medicine domain: nuclear waste management
+medicine	organ-incompetence	drop	-	-	duplicate of organ-insufficiency (inability of an organ to function)
+medicine	scatology	drop	-	-	rare sense (stool analysis); the word means a preoccupation with obscenity
+medicine	sudorific	drop	-	-	duplicate of diaphoretic (a medicine that causes sweating), and filed under substance instead of medication
+medicine	surgeon-general	drop	-	-	a title or office, not a kind; and the rarer of its two senses
+medicine	symptomatic-effect	drop	-	-	vague duplicate of symptom (a symptom caused by an illness or a drug)
+medicine	zymosis	drop	-	-	archaic sense; the word's common sense is fermentation
+occupations	associate	drop	-	-	a role (someone who joins with others), not an occupation
+occupations	basket-maker	drop	-	-	held sense is the Basket Maker people (early Amerindians), not a trade; basketweaver holds the craft
+occupations	beachcomber	drop	-	-	not an occupation (a vagrant on a beach)
+occupations	changer	drop	-	-	vague (a person who changes something)
+occupations	conciliator	drop	-	-	a role, not an occupation (someone who tries to bring peace); mediator covers the job
+occupations	dancing-partner	drop	-	-	a role, not an occupation
+occupations	dawdler	drop	-	-	not an occupation
+occupations	elder	drop	-	-	held sense is a relation (someone older than you), not an occupation
+occupations	energizer	drop	-	-	not an occupation, vague
+occupations	executive-director	drop	-	-	duplicate of core executive (same synset 10069645, same gloss)
+occupations	fellow	drop	-	-	held sense is "a boy or man", not an occupation
+occupations	gambler	drop	-	-	an activity, not an occupation (bookmaker re-sensed off it)
+occupations	hanger.person	drop	-	-	vague (a worker who hangs something)
+occupations	hearer	drop	-	-	not an occupation (someone who listens)
+occupations	imp	drop	-	-	not an occupation (a mischievous person)
+occupations	jogger	drop	-	-	not an occupation
+occupations	jumper	drop	-	-	not an occupation (a person who jumps)
+occupations	lass	drop	-	-	not an occupation (an unmarried young woman)
+occupations	libertine	drop	-	-	not an occupation (a dissolute person)
+occupations	litigant	drop	-	-	a role in a lawsuit, not an occupation
+occupations	matron	drop	-	-	held sense is a staid married woman; the nursing sense is medicine's nursing-matron
+occupations	murderer	drop	-	-	not an occupation; its parent worker is false
+occupations	numerologist	drop	-	-	a believer in numerology, not an occupation
+occupations	orthoepist	drop	-	-	odd, archaic (17th-18th century spelling reformers)
+occupations	picker	drop	-	-	vague (a person who chooses or selects out)
+occupations	reckoner	drop	-	-	archaic and vague (an expert at calculation)
+occupations	remover	drop	-	-	duplicate of mover (furniture remover, WN hyponym of mover)
+occupations	scribe	drop	-	-	held sense is slang for journalist; copyist holds the scribe synset
+occupations	seasoner	drop	-	-	odd, not an occupation (a cook who uses seasonings)
+occupations	shaver	drop	-	-	not an occupation (an adult male who shaves)
+occupations	shooter	drop	-	-	not an occupation (a person who shoots)
+occupations	showman	drop	-	-	duplicate: promoter takes the impresario synset 10593745
+occupations	smasher	drop	-	-	not an occupation (an attractive woman)
+occupations	social-climber	drop	-	-	not an occupation
+occupations	topper	drop	-	-	vague (a worker who adds the top to something)
+occupations	transferer	drop	-	-	vague (someone who transfers something)
+occupations	traveler	drop	-	-	not an occupation (a person who changes location)
+occupations	undoer	drop	-	-	vague (a person who unfastens or opens)
+occupations	window-washer	drop	-	-	duplicate of window-cleaner
+physics	gravity-wave	drop	-	-	duplicate of space's gravitational-wave; to physicists a gravity wave is a buoyancy wave in a fluid, not this sense
+physics	theory-of-gravitation	drop	-	-	same content as law-of-gravitation (Newton's inverse-square law), filed again as a theory
+space	age-of-the-universe	drop	-	-	a single value (13.8 billion years), not a kind; the pack keeps no numbers
+space	chiron	drop	-	-	one obscure asteroid, not among the pack's chosen instances
+space	field-glass	drop	-	-	a terrestrial spyglass, not astronomy or spaceflight
+space	host-star	drop	-	-	a role: a star counts as a host only relative to its planets
+space	primary-body	drop	-	-	a role: a body counts as primary only relative to what orbits it

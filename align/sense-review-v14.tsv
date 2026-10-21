@@ -609,7 +609,7 @@ core	prize-ring	drop		high	archaic duplicate of boxing-ring	core-07	yes
 core	probe	drop		medium	journalistic sense; placed under thinking, an investigation is not thinking	core-07	yes	
 core	professorship	drop		medium	rare word for an academic post	core-07	yes	
 core	proficiency	drop		medium	vague skill noun like adeptness	core-07	yes	
-core	profile	resense	06516404 information	medium	everyday profile is a biographical sketch; current is information AND a percept	core-07	yes	
+core	profile	resense	06516404 information	medium	everyday profile is a biographical sketch; current is information AND a percept	core-07		Peter ruled on this name (rulings-v14-peter, doubtful-v14)
 core	profit	resense	13258362 income	medium	rare sense (benefit); everyday profit is money earned	core-07	yes	
 core	program	drop		medium	rare sense (playbill); everyday senses held by plan, broadcast-program, computer-program	core-07	yes	
 core	promise	cut	act	medium	a promise is a commitment said, information; AND act is wrong	core-07	yes	
@@ -786,7 +786,7 @@ core	total-darkness	drop		medium	odd compound; dark covers it	core-09	yes
 core	touch	resense	07409592 event	medium	event+perception is an OR; everyday touch is the contact; faculty is held by sense-of-touch	core-09	yes	
 core	track	resense	06612865 audio	medium	disk-track sense is specialist; path, racetrack and railroad-track hold the other senses, music track is left	core-09	yes	
 core	tracking-chart	drop		medium	invented name for a WN plot sense; nobody looks for it	core-09	yes	
-core	tract	resense	08673395 region	medium	pamphlet sense is rare; everyday tract is a tract of land	core-09	yes	
+core	tract	resense	08673395 region	medium	pamphlet sense is rare; everyday tract is a tract of land	core-09		Peter ruled on this name (rulings-v14-peter, doubtful-v14)
 core	trade	split	skilled-trade | 01091905 commerce	medium	everyday trade is buying and selling; the craft sense keeps its 11 children	core-09	yes	
 core	traffic	resense	08425303 collection	high	everyday traffic is vehicles on the road, not illicit dealing	core-09	yes	
 core	trail	resense	04466613 path	medium	everyday trail is a path through wild country, not a clue; a trail is a path, not a road	core-09	yes	
@@ -837,3 +837,973 @@ core	withdrawal	resense	01262713 transaction	medium	everyday withdrawal is takin
 core	wonder	resense	07509996 emotion	medium	everyday wonder is the feeling, not a marvel	core-09	yes	
 core	wrapping-paper	move	gift-wrapping wrap	high	inverted: gift-wrapping is a kind of wrapping paper, not its parent	core-09	yes	
 core	zone	move	topographic-point region	medium	a zone is an area, not a point	core-09	yes	
+ai	3d-reconstruction	move	computer-vision image-processing	medium	task, not field: recovering 3-D shape from images	ai-01	yes	
+ai	adversarial-training	move	adversarial-machine-learning method	medium	technique, not field	ai-01	yes	
+ai	anomaly-detection	move	machine-learning data-processing	medium	task, not field: identifying rare items in data	ai-01	yes	
+ai	artificial-general-intelligence	move	artificial-intelligence intelligent-agent	medium	AGI is a hypothetical kind of intelligent agent, not a field; superintelligence and friendly-AI follow	ai-01	yes	
+ai	autonomous-weapon	parent+	weapon	medium	an autonomous weapon is a weapon	ai-01	yes	
+ai	bayesian-optimization	move	hyperparameter-optimization method	medium	a black-box optimization strategy, used beyond hyperparameters	ai-01	yes	
+ai	bounded-rationality	move	decision-theory theory	medium	the idea that rationality is limited, not a field	ai-01	yes	
+ai	cluster-analysis	move	machine-learning data-processing	medium	task, not field: grouping objects [also ai-01: cut statistics]	ai-01	yes	
+ai	cluster-analysis	cut	statistics	medium	task, not a field; data-mining stays	ai-01	yes	
+ai	community-detection	move	network-science problem	medium	the problem of finding communities, not a field	ai-01	yes	
+ai	computational-neuroscience	move	artificial-intelligence biology	medium	a branch of neuroscience, not of AI	ai-01	yes	
+ai	confusion-matrix	move	model-evaluation-method matrix	high	a confusion matrix is a table of counts (a matrix), not a method	ai-01	yes	
+ai	data-poisoning	move	adversarial-machine-learning activity	medium	an attack, not a field	ai-01	yes	
+ai	dimensionality-reduction	move	machine-learning data-processing	medium	a transformation of data, not a field (PCA, feature selection follow)	ai-01	yes	
+ai	emotion-recognition	move	affective-computing data-processing	medium	task, not field	ai-01	yes	
+ai	ensemble-averaging	move	ensemble-learning method	medium	technique, not field	ai-01	yes	
+ai	f1-score	move	model-evaluation-method amount	high	the F1 score is a number, not a method	ai-01	yes	
+ai	feature-detection	move	computer-vision image-processing	medium	technique, not field: computing image features	ai-01	yes	
+ai	forward-kinematics	move	robotics calculation	medium	computing an end-effector pose from joint values, not a field	ai-01	yes	
+ai	generative-ai	cut	artificial-intelligence	medium	AND of field and model is wrong; Wikidata Q117246174 is the model sense	ai-01	yes	
+ai	grid-search	move	hyperparameter-optimization method	medium	technique, not field or problem	ai-01	yes	
+ai	handwriting-recognition	move	pattern-recognition data-processing	medium	task, not field: interpreting handwritten input	ai-01	yes	
+ai	heuristic-search-algorithm	drop		medium	duplicate of informed-search-algorithm (Wikidata: informed search is generally heuristic)	ai-01	yes	
+ai	hierarchical-task-network	move	automated-planning method	medium	a planning technique, not a field	ai-01	yes	
+ai	hyperparameter-optimization	move	automated-machine-learning problem	medium	the problem of choosing hyperparameters, not a field [also ai-01: cut mathematical-optimization]	ai-01	yes	
+ai	hyperparameter-optimization	cut	mathematical-optimization	medium	mathematical-optimization is the field here	ai-01	yes	
+ai	image-classification	cut	computer-vision	medium	task, not field; image-processing stays	ai-01	yes	
+ai	image-segmentation	move	computer-vision image-processing	medium	task, not field: the process of partitioning an image (children follow)	ai-01	yes	
+ai	image-to-image-translation	cut	machine-learning	medium	task, not field; image-processing stays	ai-01	yes	
+ai	independent-component-analysis	move	unsupervised-learning method	medium	a computational method, not a learning paradigm	ai-01	yes	
+ai	information-extraction	move	information-retrieval data-processing	medium	task, not field (named-entity-recognition follows) [also ai-01: cut natural-language-processing]	ai-01	yes	
+ai	information-extraction	cut	natural-language-processing	medium	task, not field	ai-01	yes	
+ai	information-science	move	computer-science science	medium	WordNet: information science ⊑ science (only part of CS); library science is not CS	ai-01	yes	
+ai	intelligent-system	drop		medium	vague (Wikidata: a system showing signs of AI, or claiming to)	ai-01	yes	
+ai	inverse-kinematics	move	robotics calculation	medium	computing joint values for a pose, not a field	ai-01	yes	
+ai	knowledge-distillation	move	machine-learning method	medium	technique, not field: transferring a large model's knowledge to a small one	ai-01	yes	
+ai	learning-analytics	drop		medium	analysis of data about learners; education, not AI	ai-01	yes	
+ai	lemmatization	move	natural-language-processing data-processing	medium	a text-processing step, not a field	ai-01	yes	
+ai	link-prediction	move	network-science problem	medium	the problem of predicting links, not a field	ai-01	yes	
+ai	machine-learning	parent+	artificial-intelligence	medium	machine learning is a subfield of AI; the pack's two main fields are unlinked	ai-01		Peter ruled on this name (rulings-v14-peter, doubtful-v14)
+ai	membership-inference-attack	move	adversarial-machine-learning activity	medium	an attack, not a field	ai-01	yes	
+ai	mixture-of-experts-model	cut	large-language-model	medium	MoE transformers are not all language models (vision MoE); transformer-model stays	ai-01	yes	
+ai	morphological-analysis	move	natural-language-processing data-processing	medium	a text-processing step, not a field	ai-01	yes	
+ai	motion-planning	move	robotics problem	medium	a computational problem, not a field (path-planning follows)	ai-01	yes	
+ai	nearest-neighbor-classifier	drop		medium	duplicate of k-nearest-neighbors	ai-01	yes	
+ai	neural-network-model	drop		medium	vague duplicate of artificial-neural-network (Wikidata: a network with a specific architecture)	ai-01	yes	
+ai	object-detection	move	computer-vision image-processing	medium	task, not field: detecting object instances in images	ai-01	yes	
+ai	obstacle-avoidance	cut	robot-navigation	medium	a task, not a field; path-planning stays	ai-01	yes	
+ai	ontology-alignment	cut	knowledge-engineering	medium	a process, not a field; data-processing stays	ai-01	yes	
+ai	ontology-learning	move	knowledge-engineering data-processing	medium	the (semi-)automatic creation of ontologies, not a field	ai-01	yes	
+ai	optical-character-recognition	move	pattern-recognition data-processing	medium	task, not field: converting text images to text	ai-01	yes	
+ai	pac-learning	move	computational-learning-theory theory	medium	a framework (theory), not a field	ai-01	yes	
+ai	part-of-speech-tagging	move	natural-language-processing data-processing	medium	a text-processing step, not a field	ai-01	yes	
+ai	partial-order-planning	move	automated-planning method	medium	a planning technique, not a field	ai-01	yes	
+ai	pathfinding	move	search-algorithm data-processing	medium	pathfinding is the plotting of a route by computer, not an algorithm	ai-01	yes	
+ai	policy-gradient-method	move	reinforcement-learning machine-learning-algorithm	medium	a class of RL algorithms, not a field	ai-01	yes	
+ai	precision-and-recall	move	model-evaluation-method amount	high	precision and recall are two measures, not a method	ai-01	yes	
+ai	reactive-planning	move	automated-planning method	medium	a class of planning techniques, not a field	ai-01	yes	
+ai	receiver-operating-characteristic	move	model-evaluation-method graph	high	the ROC curve is a plotted graph, not a method	ai-01	yes	
+ai	recursive-neural-network	move	recurrent-neural-network artificial-neural-network	medium	recurrent nets are a special case of recursive nets, not the other way round	ai-01	yes	
+ai	regulation-of-artificial-intelligence	move	law governance-of-artificial-intelligence	medium	AI regulation is policy-making (governance), not the field of law	ai-01	yes	
+ai	reinforcement-learning-from-human-feedback	move	reinforcement-learning method	medium	technique, not field	ai-01	yes	
+ai	reservoir-computing	move	recurrent-neural-network method	medium	a computing framework derived from RNN theory, not a network itself	ai-01	yes	
+ai	retrieval-augmented-generation	move	generative-ai method	medium	RAG is a technique, not a generative model [also ai-01: cut natural-language-processing]	ai-01	yes	
+ai	retrieval-augmented-generation	cut	natural-language-processing	medium	RAG is a technique, not a field	ai-01	yes	
+ai	robotic-spacecraft	parent+	spacecraft	medium	a robotic spacecraft is an uncrewed spacecraft	ai-01	yes	
+ai	semantic-analysis	move	natural-language-processing data-processing	medium	task, not field: relating syntax to meaning	ai-01	yes	
+ai	semantic-network	move	knowledge-representation knowledge-base	high	a semantic network is a knowledge base (a network of concepts), not a field	ai-01	yes	
+ai	semantic-parsing	move	natural-language-processing data-processing	medium	task, not field: mapping text to a logical form	ai-01	yes	
+ai	semantic-role-labeling	move	natural-language-processing data-processing	medium	a text-processing step, not a field	ai-01	yes	
+ai	sensor-fusion	move	machine-perception data-processing	medium	the process of combining sensor data, not a field	ai-01	yes	
+ai	sentence-embedding	move	feature-learning vector-embedding	medium	a sentence embedding is a vector, like word-embedding [also ai-01: cut natural-language-processing]	ai-01	yes	
+ai	sentence-embedding	cut	natural-language-processing	medium	a vector is not a field	ai-01	yes	
+ai	sentiment-analysis	move	affective-computing data-processing	medium	task, not field [also ai-01: cut natural-language-processing]	ai-01	yes	
+ai	sentiment-analysis	cut	natural-language-processing	medium	task, not field	ai-01	yes	
+ai	sequence-labeling	move	pattern-recognition data-processing	medium	task, not field	ai-01	yes	
+ai	simultaneous-localization-and-mapping	move	robot-navigation problem	medium	the computational problem of mapping while localizing, not a field	ai-01	yes	
+ai	speech-synthesis	move	natural-language-processing data-processing	medium	the artificial production of speech, not a field	ai-01	yes	
+ai	statistical-classification	move	machine-learning problem	medium	classification is the problem of assigning categories, not a field (its 5 children follow)	ai-01	yes	
+ai	stemming	move	natural-language-processing data-processing	medium	a text-processing step, not a field	ai-01	yes	
+ai	syntactic-parsing	move	natural-language-processing data-processing	medium	a text-processing step, not a field	ai-01	yes	
+ai	text-classification	cut	natural-language-processing	medium	a classification problem, not a field; statistical-classification stays	ai-01	yes	
+ai	text-mining	move	natural-language-processing data-processing	medium	the process of deriving information from text, not a field (summarization, relation extraction follow)	ai-01	yes	
+ai	text-segmentation	move	natural-language-processing data-processing	medium	a text-processing step, not a field	ai-01	yes	
+ai	text-tokenization	move	natural-language-processing data-processing	medium	a text-processing step, not a field	ai-01	yes	
+ai	visual-odometry	move	computer-vision image-processing	medium	task, not field: pose estimation from camera images	ai-01	yes	
+ai	word-sense-disambiguation	move	natural-language-processing data-processing	medium	task, not field: choosing a word's sense	ai-01	yes	
+biology	ameloblast	move	embryonic-cell somatic-cell	medium	ameloblasts form enamel until tooth eruption, after birth too; not cells of an embryo	biology-01	yes	
+biology	animal-egg	move	ovum natural-object	medium	a laid egg (shell, albumen, often an embryo) is not a single cell or a gamete; fixes nit, fish-roe, spawn, silkworm-seed	biology-01	yes	
+biology	apophysis	resense	05473104 body-part	medium	apophysis is first the anatomical outgrowth on a bone; the moss-seta sense is rare	biology-01	yes	
+biology	bodily-humor	drop		medium	medieval belief about body fluids, not biology	biology-01	yes	
+biology	coarctation	cut	event	medium	a narrowing of a vessel is a condition, not both an attribute and an event	biology-01	yes	
+biology	culture-medium	resense	14899328 substance	high	a biologist's culture medium is the nutrient medium for growing microbes or cells, not a specimen-preserving medium	biology-01	yes	
+biology	cystic-fibrosis-transport-regulator	drop		medium	one particular gene (an instance), and it is not itself a mutant gene	biology-01	yes	
+biology	dissilience	drop		medium	rare word for dehiscence of seed pods; dehiscence covers it	biology-01	yes	
+biology	dominant-gene	drop		medium	duplicate of dominant-allele	biology-01	yes	
+biology	ecosystem	cut	environment	medium	an ecosystem is a system that includes its environment, not the environment (region, place) itself	biology-01	yes	
+biology	effector	resense	05298421 organ	medium	in physiology an effector is the muscle or gland that responds; the nerve-fibre sense is obsolete	biology-01	yes	
+biology	enzyme	cut	biological-activator	medium	an enzyme catalyses reactions; an activator is a molecule that raises an enzyme's activity	biology-01	yes	
+biology	estivation	resense	14014162 state	high	estivation is first summer dormancy (WN rank 1); the flower-bud arrangement is a rare botanical sense	biology-01	yes	
+biology	food-chain	move	organic-phenomenon system	medium	a food chain is a structure of feeding relations among organisms, not an event	biology-01	yes	
+biology	food-pyramid	move	organic-phenomenon system	medium	a hierarchy of food chains is a structure, not an event	biology-01	yes	
+biology	food-web	move	organic-phenomenon system	medium	a food web is a network of feeding relations, not an event	biology-01	yes	
+biology	homeobox	rename	homeobox-gene	medium	a homeobox is the DNA motif; the node holds the gene sense	biology-01	yes	
+biology	megaloblast	move	red-blood-cell erythroblast	medium	a megaloblast is a large nucleated erythroid precursor in marrow, not a mature anucleate RBC	biology-01	yes	
+biology	meme	drop		medium	cultural unit, contested and not of biology's domain	biology-01	yes	
+biology	monad-organism	drop		medium	archaic term for a single-celled organism; microorganism covers it	biology-01	yes	
+biology	nerve-fiber	move	fiber-cell body-part	high	a nerve fibre is a threadlike extension of a neuron, not a cell; fixes the chain for axon, dendrite, motor/sensory fibres	biology-01	yes	
+biology	osteoblast	move	embryonic-cell bone-cell	medium	osteoblasts build bone throughout life; they are not cells of an embryo	biology-01	yes	
+biology	ovule	resense	11678768 plant-part	high	"in biology an ovule is the seed-plant structure that becomes a seed; ""small immature ovum"" is a rare zoology sense"	biology-01	yes	
+biology	packed-cells	cut	cell	high	a preparation of many blood cells is a material, not a cell (and arguably medicine, not biology)	biology-01	yes	
+biology	papilla	resense	05473735 body-part	medium	a biologist's papilla is first the anatomical one (tongue, dermal); the petal-outgrowth sense is rare	biology-01	yes	
+biology	parthenocarpy	move	reproduction organic-process	medium	seedless fruit development yields no offspring, so it is not reproduction	biology-01	yes	
+biology	phylogenetic-relation	move	attribute relation	medium	relatedness between organisms is a relation (like symbiosis, kinship)	biology-01	yes	
+biology	plantae	drop		medium	a single taxon (the plant kingdom) filed as a class; plant covers it	biology-01	yes	
+biology	recessive-gene	drop		medium	duplicate of recessive-allele	biology-01	yes	
+biology	recombinant	cut	cell	medium	gloss is cell OR organism; AND is false; keep organism as for diploid, haploid	biology-01	yes	
+biology	taxonomy	cut	classification-scheme	high	the gloss is the discipline; classification-scheme is the other sense, AND makes the field a scheme	biology-01	yes	
+biology	uncus	cut	shape	high	a hook-shaped body part is not an attribute	biology-01	yes	
+chemistry	actinide-series	drop		medium	one particular set of 15 elements (an instance); its chemical-group parent is the radical sense, also wrong	chemistry-01	yes	
+chemistry	allomerism	drop		medium	obsolete mineralogy term; and a property, not an event (variation < change)	chemistry-01	yes	
+chemistry	antimonial-lead	move	lead alloy	high	a lead-antimony alloy (its own gloss), not the element lead; fixes grid-metal	chemistry-01	yes	
+chemistry	calcium-ion	move	calcium ion	medium	a calcium ion is an ion, not metallic calcium (calcium is a metal)	chemistry-01	yes	
+chemistry	cast-iron	move	iron alloy	high	cast iron is an iron-carbon alloy (its own gloss), not the element; fixes alloy-iron, ni-hard, ni-resist, pot-metal	chemistry-01	yes	
+chemistry	chemical-activity	move	condition attribute	medium	reactivity is a capacity of a substance, not a condition at a time	chemistry-01	yes	
+chemistry	chemical-buffer	move	compound chemical-solution	medium	to a chemist a buffer is a solution of a weak acid and its conjugate base, not one compound	chemistry-01	yes	
+chemistry	chemical-polymorphism	move	chemical-phenomenon attribute	medium	the existence of several crystal forms is a property, like chemical-dimorphism (attribute), not an event	chemistry-01	yes	
+chemistry	cobalt-60	parent+	radioisotope	high	a radioactive isotope (own gloss), filed only under the element	chemistry-01	yes	
+chemistry	coin-silver	move	silver alloy	medium	coin silver is a silver-copper alloy (about 90% silver), not the element	chemistry-01	yes	
+chemistry	electron-acceptor	drop		low	a role in forming a bond (Lewis acid), not a kind of compound (question for Peter)	chemistry-01		
+chemistry	green-gold	move	gold alloy	high	a gold-silver alloy (its own gloss), not the element gold	chemistry-01	yes	
+chemistry	guinea-gold	drop		medium	archaic: 22-karat gold of the old guinea coin (WN's first sense is red brass)	chemistry-01	yes	
+chemistry	iodine-125	parent+	radioisotope	high	a radioactive isotope (own gloss), filed only under the element	chemistry-01	yes	
+chemistry	iodine-131	move	isotope radioisotope	high	I-131 is radioactive (own gloss); radioisotope is the nearer parent	chemistry-01	yes	
+chemistry	isotope	move	atom chemical-element	medium	elements are substances here, so isotope as atom makes every U-235, Cs-137 both a substance and a particle; an isotope is a form of an element	chemistry-01	yes	
+chemistry	pencil-lead	resense	03651084 mixture	high	"pencil lead is graphite mixed with clay; held sense is an odd ""medium of communication"" gloss"	chemistry-01	yes	
+chemistry	pig-iron	cut	iron	high	crude high-carbon iron is an alloy, not the element; keeps alloy; fixes basic-iron, cinder-pig, mine-pig, spiegeleisen	chemistry-01	yes	
+chemistry	pot-metal	resense	- alloy	medium	today pot metal is a cheap low-melting (zinc) alloy; the cooking cast-iron sense is archaic	chemistry-01	yes	
+chemistry	reverse-osmosis	move	osmosis process	medium	reverse osmosis is pressure-driven filtration against the osmotic flow, not a kind of osmosis	chemistry-01	yes	
+chemistry	solute	drop		low	a role relative to a solution, not a kind of substance (question for Peter; cf. owner)	chemistry-01		
+chemistry	strontium-90	parent+	radioisotope	high	a radioactive isotope (own gloss), filed only under the element	chemistry-01	yes	
+chemistry	ununbium	rename	copernicium	high	obsolete IUPAC placeholder; element 112 is copernicium since 2010	chemistry-01	yes	
+chemistry	ununhexium	rename	livermorium	high	obsolete IUPAC placeholder; element 116 is livermorium since 2012	chemistry-01	yes	
+chemistry	ununpentium	rename	moscovium	high	obsolete IUPAC placeholder; element 115 is moscovium since 2016	chemistry-01	yes	
+chemistry	ununquadium	rename	flerovium	high	obsolete IUPAC placeholder; element 114 is flerovium since 2012	chemistry-01	yes	
+chemistry	ununtrium	rename	nihonium	high	obsolete IUPAC placeholder; element 113 is nihonium since 2016	chemistry-01	yes	
+chemistry	uranium-235	parent+	radioisotope	high	a radioactive isotope, filed only under the element	chemistry-01	yes	
+chemistry	uranium-238	parent+	radioisotope	high	a radioactive isotope, filed only under the element	chemistry-01	yes	
+computing	active-application	drop		medium	a state (running in the foreground), not a kind	computing-01	yes	
+computing	agile-software-development	cut	computer-programming	medium	a development methodology, not an act of programming	computing-01	yes	
+computing	android	move	linux unix-like	medium	Android is Linux-kernel based but not a FOSS Linux (proprietary parts)	computing-01	yes	
+computing	anti-virus-program	drop		high	duplicate of antivirus-software	computing-01	yes	
+computing	apache-software-foundation	drop		medium	a single organization filed as a class	computing-01	yes	
+computing	application-programming-interface	move	interface software	medium	core interface is a UI program; an API is not a program [also computing-02: same]	computing-01	yes	
+computing	aspect-oriented-programming	cut	computer-programming	medium	a programming paradigm (method); act AND method is OR	computing-01	yes	
+computing	authoring-language	cut	software	medium	language AND software is OR; the name says language	computing-01	yes	
+computing	biochip	drop		medium	a DNA lab device, not computing	computing-01	yes	
+computing	bittorrent	cut	peer-to-peer	medium	a protocol is not an architecture (peer-to-peer is a method) [also computing-02: same]	computing-01	yes	
+computing	byzantine-fault	move	fault computer-error	medium	core fault is 'responsibility' (blame); a Byzantine fault is a component failure	computing-01	yes	
+computing	bzip2	cut	compression-algorithm	medium	bzip2 is the program (and format); AND with the algorithm mixes software and act	computing-01	yes	
+computing	cascading-style-sheets	drop		high	duplicate of css	computing-01	yes	
+computing	cloud-computing	move	distributed-computing service	medium	(chunk 01) a delivery model for computing services (SaaS, PaaS), not parallel data processing	computing-02	yes	
+computing	complex-instruction-set-computer	drop		high	duplicate of complex-instruction-set-computing (same synset, same parent)	computing-01	yes	
+computing	compression-algorithm	cut	data-compression	medium	an algorithm is not a compression process; highest wrong link for all compression algorithms	computing-01	yes	
+computing	computer-cluster	cut	group	medium	a cluster is a computer system (machine); group adds a disjoint branch	computing-01	yes	
+computing	computer-hardware	drop		high	duplicate: core hardware already holds the computer-hardware sense (03493333)	computing-01	yes	
+computing	computer-programming	cut	skill	medium	programming is the activity; skill is the ability (cognition) [also computing-02: same]	computing-01	yes	
+computing	concurrent-programming	cut	computer-programming	medium	a programming paradigm (method); act AND method is OR	computing-01	yes	
+computing	continuous-delivery	cut	devops	medium	a practice, not a kind of methodology; part of DevOps, not a DevOps	computing-01	yes	
+computing	cryptographic-protocol	cut	procedure	medium	a protocol is a set of rules (information), not an act; fixes https, ssh, tls chains [also computing-02: same]	computing-01	yes	
+computing	cyc	drop		low	a single knowledge base filed as a class; keep as with named software?	computing-01		
+computing	cyclic-redundancy-check	cut	hash-function	medium	the gloss is the check code; code AND function is OR	computing-01	yes	
+computing	data-encryption	drop		medium	duplicate of encryption	computing-01	yes	
+computing	data-field	move	set data-structure	medium	a record field is data; set makes it a group	computing-01	yes	
+computing	data-mining	cut	computer-science	medium	gloss is the process; process AND field of study is OR	computing-01	yes	
+computing	data-retrieval	cut	information-retrieval	medium	an operation, not the field of study information-retrieval	computing-01	yes	
+computing	datalog	cut	logic-programming	high	Datalog is a language, not a paradigm or field; keeps query-language	computing-01	yes	
+computing	datomic	cut	functional-database	medium	Datomic is a DBMS (software); functional-database is a data collection	computing-01	yes	
+computing	dbpedia	drop		low	a single dataset filed as a class; keep as with named software?	computing-01		
+computing	decentralized-storage	cut	peer-to-peer	medium	a storage system (machine) cannot also be an architecture (method) [also computing-02: same]	computing-01	yes	
+computing	decision-table	move	multidimensional-language	low	a table of conditions, not a programming language; core table is furniture, so no target [also computing-02: move multidimensional-language document]	computing-01		move to nothing
+computing	declarative-programming	cut	computer-programming	medium	a programming paradigm (method); act AND method is OR [also computing-02: same]	computing-01	yes	
+computing	disk-pack	move	collection storage-device	medium	a physical removable disk unit, not an abstract collection	computing-01	yes	
+computing	docker	move	software-container software	medium	Docker is the platform that runs containers, not a container	computing-01	yes	
+computing	endianness	move	code property	medium	byte order is a property of data, not a code	computing-01	yes	
+computing	erasable-programmable-read-only-memory	move	read-only-memory rom	medium	(chunk 01) pack read-only-memory duplicates core rom	computing-02	yes	
+computing	error-detection-and-correction	cut	telecommunication	medium	a technique (method), not an act of telecommunication	computing-01	yes	
+computing	ethernet	cut	local-area-network	medium	Ethernet is the networking standard, not a LAN	computing-01	yes	
+computing	event-driven-programming	cut	computer-programming	medium	a programming paradigm (method); act AND method is OR	computing-01	yes	
+computing	exception-handling	cut	control-flow	medium	a mechanism (method), not an attribute; AND is OR	computing-01	yes	
+computing	faceted-search	move	information-retrieval data-retrieval	medium	a search technique, not a field of study	computing-01	yes	
+computing	feed	drop		medium	duplicate of web-feed, and hung under it although it is the wider word	computing-01	yes	
+computing	flow-chart	move	multidimensional-language diagram	high	a flowchart is a diagram, not a programming language [also computing-02: same]	computing-01	yes	
+computing	foreground-window	drop		medium	a state of a window, not a kind	computing-01	yes	
+computing	free-software-foundation	drop		medium	a single organization filed as a class	computing-01	yes	
+computing	freebase	drop		low	a single (defunct) dataset filed as a class; keep as with named software?	computing-01		
+computing	freemail	drop		medium	odd WordNet term; a mail service, not an email message	computing-01	yes	
+computing	full-text-search	move	information-retrieval data-retrieval	medium	a search technique, not a field of study	computing-01	yes	
+computing	function-argument	move	value information	medium	core value is a numerical quantity; arguments can be references or strings	computing-01	yes	
+computing	gene-chip	drop		medium	a DNA-microarray lab device, not computing	computing-01	yes	
+computing	generic-programming	cut	computer-programming	medium	a programming paradigm (method); act AND method is OR	computing-01	yes	
+computing	github	drop		medium	a single website filed as a class	computing-01	yes	
+computing	gnu-project	drop		medium	a single project filed as a class	computing-01	yes	
+computing	gnutella	cut	peer-to-peer	medium	a protocol is not an architecture (peer-to-peer is a method) [also computing-02: same]	computing-01	yes	
+computing	graph-database	cut	electronic-database	medium	as with key-value and document databases, the DBMS; DBMS AND data collection is OR	computing-01	yes	
+computing	gzip-file-format	drop		high	duplicate of gzip (both compression-format)	computing-01	yes	
+computing	hash-function	move	algorithm function	medium	a hash function is a function (core function), as its child cryptographic-hash-function already says; algorithm made it an act	computing-01	yes	
+computing	hdmi	cut	hardware-interface	medium	HDMI is the interface standard; the port is a separate thing	computing-01	yes	
+computing	heap-memory	move	computer-memory	low	the heap is a runtime-managed memory region, not hardware; no fitting parent exists	computing-01		move to nothing
+computing	imperative-programming	cut	computer-programming	medium	a programming paradigm (method); act AND method is OR [also computing-02: same]	computing-01	yes	
+computing	information-redundancy	move	information-entropy amount	medium	redundancy is the shortfall from maximum entropy, not an entropy	computing-01	yes	
+computing	ink-jet-printer	move	dot-matrix-printer printer	medium	for practitioners, dot-matrix means impact printers; inkjet is not one	computing-01	yes	
+computing	internationalization	move	data-processing software-development-practice	medium	i18n is a software design practice, not data processing	computing-01	yes	
+computing	internet-engineering-task-force	drop		medium	a single organization filed as a class	computing-01	yes	
+computing	internet-exchange-point	move	network-node facility	medium	an IXP is a physical facility, not a computer [also computing-02: same]	computing-01	yes	
+computing	intranet	cut	device	medium	a network is not a device; computer-network already covers it	computing-01	yes	
+computing	ipfs	move	decentralized-storage distributed-file-system	medium	decentralized-storage chain ends in machine/physical-object; IPFS is a protocol and file system	computing-01	yes	
+computing	iterator	cut	data-type	medium	(chunk 01) an iterator is a software object; type and instance mixed	computing-02	yes	
+computing	latency	move	network-performance-measure time-period	medium	latency is any delay (disk, device, network); children access-time and seek-time are not network measures [also computing-02: move network-performance-measure amount]	computing-01	yes	
+computing	lempel-ziv	cut	lossless-compression	medium	an algorithm, not the compression process	computing-01	yes	
+computing	library-program	drop		medium	vague relation (a program kept in a library); overlaps library-routine	computing-01	yes	
+computing	linkage-editor	drop		medium	WordNet's old name for a linker; duplicate of linker	computing-01	yes	
+computing	linux-foundation	drop		medium	a single organization filed as a class	computing-01	yes	
+computing	logic-diagram	move	multidimensional-language diagram	high	a diagram, not a programming language	computing-02	yes	
+computing	logic-programming	cut	computer-science	high	a programming paradigm, not the field of computer science [also computing-01: cut computer-science]	computing-02	yes	
+computing	low-level-formatting	move	code data-processing	medium	the disk-formatting process, not code	computing-02	yes	
+computing	machine-code	cut	programming-language	medium	machine code is the instructions (code), not a language	computing-02	yes	
+computing	memory-dump	move	text information	medium	a dump is binary data, not written words (core text)	computing-02	yes	
+computing	metaprogramming	cut	computer-programming	medium	a programming technique (method), not the activity [also computing-01: cut computer-programming]	computing-02	yes	
+computing	monolithic-application	move	software-architecture application	medium	an application built as one unit, not an architecture (method)	computing-02	yes	
+computing	mozilla-foundation	drop		medium	single organization, not a kind	computing-02	yes	
+computing	multidimensional-language	drop		low	odd WN sense; its 3 children (flow-chart, decision-table, logic-diagram) are diagrams/tables and should leave it, then drop	computing-02		drop of a node with children or users
+computing	multiplex-operation	drop		medium	vague archaic WN operation	computing-02	yes	
+computing	multithreading	cut	concurrency	high	a technique (method) AND a property (attribute) clash	computing-02	yes	
+computing	mutex	cut	data-type	medium	a mutex is a software object; type and instance mixed	computing-02	yes	
+computing	namespace	cut	identifier	medium	a namespace is a set of names, not an identifier	computing-02	yes	
+computing	newsletter	drop		medium	not computing (a periodical)	computing-02	yes	
+computing	nonprofit-organization	drop		low	not computing; its 6 children are single foundations	computing-02		drop of a node with children or users
+computing	nonsolid-color	move	attribute color	high	WN: a kind of color (dithered color)	computing-02	yes	
+computing	notebook-computer	drop		medium	(chunk 02) duplicate of laptop in everyday use	computing-01	yes	
+computing	number-cruncher	drop		medium	informal slang for a powerful computer	computing-02	yes	
+computing	nvm-express	move	hardware-interface technical-standard	medium	NVMe is an interface specification, not a circuit	computing-02	yes	
+computing	oauth	move	authentication-protocol communications-protocol	medium	OAuth is an authorization protocol, not authentication	computing-02	yes	
+computing	object-database	drop		high	duplicate of object-oriented-database and its DBMS; also database AND DBMS	computing-02	yes	
+computing	object-language	drop		medium	a role (target language of a translation), not a kind	computing-02	yes	
+computing	one-dimensional-language	drop		medium	odd WN distinction nobody uses	computing-02	yes	
+computing	open-knowledge	drop		medium	vague; overlaps open-data	computing-02	yes	
+computing	open-source	drop		medium	duplicate of open-source-model	computing-02	yes	
+computing	open-source-initiative	drop		medium	single organization, not a kind	computing-02	yes	
+computing	openstreetmap	drop		medium	single instance (one map database), not a kind	computing-02	yes	
+computing	p-versus-np-problem	move	computational-problem problem	medium	an open question about complexity classes, not a computational problem	computing-02	yes	
+computing	pattern-matching	cut	algorithm	medium	a technique; algorithm (event) AND method (cognition) clash	computing-02	yes	
+computing	pixel	move	component part	medium	an element of an image, not a device component	computing-02	yes	
+computing	portable-executable	cut	executable-file	medium	PE is a file format, not an executable file	computing-02	yes	
+computing	postcondition	move	condition proposition	medium	a predicate that must hold, not a state (core condition)	computing-02	yes	
+computing	program-constant	cut	program-variable	high	a constant is by definition not a variable	computing-02	yes	
+computing	program-loop	move	computer-program code	medium	a loop is a construct inside a program, not a program	computing-02	yes	
+computing	push-down-queue	drop		high	duplicate of stack-data-structure (LIFO)	computing-02	yes	
+computing	pushdown-automaton	move	finite-automaton model-of-computation	high	a PDA has a stack, so it is not a finite automaton	computing-02	yes	
+computing	radiotelephone	resense	04044498 phone	high	gloss is telephony but parent artifact; take the device sense	computing-02	yes	
+computing	raid	cut	data-storage	high	RAID is storage hardware, not a computer operation (event)	computing-02	yes	
+computing	read-only-memory	drop		low	duplicate of core rom; re-hang erasable-programmable-read-only-memory under rom first	computing-02		drop of a node with children or users
+computing	read-only-memory-chip	move	memory-chip chip	medium	memory-chip holds the RAM-chip sense; a ROM chip is not a RAM chip	computing-02	yes	
+computing	recursion	cut	procedure	high	method (cognition) AND procedure (event) clash; recursion is a technique	computing-02	yes	
+computing	regular-expression	cut	pattern	high	core pattern is an exemplar (a model to imitate)	computing-02	yes	
+computing	replication-in-computing	drop		medium	duplicate of data-replication	computing-02	yes	
+computing	requirements-analysis	cut	data-processing	high	human engineering work, not computer data processing	computing-02	yes	
+computing	rpm-package-manager	cut	package-format	medium	the tool; format AND software mixed	computing-02	yes	
+computing	rsync	cut	communications-protocol	medium	the tool; tool AND protocol mixed	computing-02	yes	
+computing	schema-org	drop		medium	single instance (one vocabulary); also ontology (group) AND standard (document)	computing-02	yes	
+computing	search-engine-indexing	cut	computer-process	high	computer-process is a running program instance (sibling daemon-process)	computing-02	yes	
+computing	self-extracting-archive	move	file-format executable-file	medium	an executable file holding an archive, not a format	computing-02	yes	
+computing	semaphore-primitive	cut	data-type	medium	a semaphore is a software object; type and instance mixed	computing-02	yes	
+computing	seventy-eight	drop		medium	a shellac phonograph record: not computing, and not information	computing-02	yes	
+computing	signal-processing	cut	engineering	medium	its children (here and in ai) are processes; process AND field mixed [also computing-01: cut engineering]	computing-02	yes	
+computing	slide-rule	cut	analog-computer	high	a manual instrument, not a machine (computer ⊑ machine); keep tool	computing-02	yes	
+computing	software-container	cut	virtualization	medium	a container is software, not a technique (method)	computing-02	yes	
+computing	software-dependency	drop		medium	a relation/role (what a program depends on), filed as a property	computing-02	yes	
+computing	software-localization	move	data-processing activity	medium	translating and adapting software is human work, not data processing	computing-02	yes	
+computing	source-code	cut	ascii-text-file	high	source code need not be ASCII, nor a file	computing-02	yes	
+computing	spyware	cut	application	medium	malware, not a user application	computing-02	yes	
+computing	sql-injection	cut	security-vulnerability	high	an attack (event) AND a vulnerability (state) clash	computing-02	yes	
+computing	stack-data-structure	resense	06494646 abstract-data-type data-structure	high	anchor is WN's storage-device stack; the node is the LIFO list (WN push-down list)	computing-02	yes	
+computing	stack-overflow	resense	- software-error	medium	practitioner sense is the run-time error; the website is a single instance	computing-02	yes	
+computing	storage-snapshot	move	data-backup information	medium	a snapshot is not a backup on a separate device	computing-02	yes	
+computing	stratified-language	drop		medium	a logic notion (own metalanguage or not), not a kind of programming language	computing-02	yes	
+computing	subdata-base	drop		medium	odd WN term	computing-02	yes	
+computing	supercomputer	move	mainframe-computer digital-computer	medium	supercomputers are not mainframes (today clusters)	computing-02	yes	
+computing	system-call	cut	subroutine	medium	gloss is the call instruction, not the called routine	computing-02	yes	
+computing	system-error	drop		medium	odd WN sense (an instruction); everyday 'system error' is vague	computing-02	yes	
+computing	talking-book	drop		medium	a sound recording, not computing	computing-02	yes	
+computing	text-matching	drop		medium	odd off-WN node; covered by string-searching-algorithm	computing-02	yes	
+computing	thin-client	cut	network-client	high	a computer (hardware) AND client software clash	computing-02	yes	
+computing	tree-structure	drop		medium	duplicate of tree-data-structure	computing-02	yes	
+computing	type-class	move	type-system data-type	medium	a construct within a type system, not a type system	computing-02	yes	
+computing	type-inference	cut	type-system	high	a process (event) AND a set of rules (information) clash	computing-02	yes	
+computing	uefi	cut	firmware	medium	the specification; spec AND its firmware implementation mixed	computing-02	yes	
+computing	unstratified-language	drop		medium	a logic notion (own metalanguage or not), not a kind of programming language	computing-02	yes	
+computing	usb	cut	technical-standard	medium	hardware (physical object) AND document clash; keep the bus	computing-02	yes	
+computing	user-interface	drop		low	duplicate of core interface (whose gloss is the user-interface program); merge, or re-sense core interface	computing-02		drop of a node with children or users
+computing	virtual-machine	move	application software	medium	an emulated computer, not a user application	computing-02	yes	
+computing	wayland	cut	system-software	medium	a display-server protocol; protocol AND software mixed	computing-02	yes	
+computing	web-application	cut	web-site	medium	software, not a web site (core web-site gloss is a computer serving pages)	computing-02	yes	
+computing	web-cache	move	computer-cache software	medium	a web cache is software/stored copies, not RAM hardware	computing-02	yes	
+computing	wikidata	drop		medium	single instance, not a kind	computing-02	yes	
+computing	wikidata-query-service	drop		medium	single instance, not a kind	computing-02	yes	
+computing	wikimedia-commons	drop		medium	single instance, not a kind	computing-02	yes	
+computing	wikimedia-foundation	drop		medium	single organization, not a kind	computing-02	yes	
+computing	wikipedia	drop		low	single website, not a kind (unless its language editions count)	computing-02		
+computing	wiktionary	drop		low	single website; also core dictionary ⊑ book makes it a printed book	computing-02		Peter ruled on this name (rulings-v14-peter, doubtful-v14)
+computing	world-wide-web	move	computer-network information	medium	the Web is an information space of linked pages, not a computer network	computing-02	yes	
+computing	world-wide-web-consortium	drop		medium	single organization, not a kind	computing-02	yes	
+computing	write-once-read-many	cut	data-storage	high	WORM is storage hardware, not a computer operation (event)	computing-02	yes	
+computing	yago	drop		medium	single instance (one knowledge base), not a kind	computing-02	yes	
+economics	argosy	drop		medium	archaic poetic word for merchant ships	economics-01	yes	
+economics	ask-price	drop		medium	duplicate of offer-price and asking-price; also an AND of price and purchase-price	economics-01	yes	
+economics	asset-realization	move	cut-rate-sale sale	medium	a sale to raise money, not a reduced-price sales event	economics-01	yes	
+economics	assurance-insurance	drop		medium	British synonym for kinds of insurance; duplicate, not a kind of its own	economics-01	yes	
+economics	auction-bid	cut	price	low	AND of price (worth, attribute) and purchase-price (outgo); keep one, depends on core price sense	economics-01		
+economics	audited-account	cut	information	medium	the gloss is the audit (an inspection), an act; name could become audit [also economics-02: same]	economics-01	yes	
+economics	automobile-insurance	parent+	insurance	medium	a kind of insurance missing its genus (hangs only under possession) [also economics-02: same]	economics-01	yes	
+economics	backorder	move	trade-order order	medium	an order for goods out of stock, not a securities trade order	economics-01	yes	
+economics	banking	resense	01100658 financial-services	medium	practitioner banking is the banking business, not a customer transacting with a bank; home-banking fits as a banking service	economics-01	yes	
+economics	bazaar	resense	02813645 marketplace	medium	everyday bazaar is an oriental market street; charity-sale sense is rank 3/3 (apply with book-fair and craft-fair rows)	economics-01	yes	
+economics	beacon-chain	drop		medium	a single chain of Ethereum filed as a class	economics-01	yes	
+economics	bear-market	move	event financial-market	medium	WN: a securities market with falling prices; event AND state was OR [also economics-01: cut state]	economics-01	yes	
+economics	bear-market	cut	state	medium	replaced by financial-market (WN hypernym)	economics-01	yes	
+economics	bibliopole	drop		medium	archaic; bookdealer covers it	economics-01	yes	
+economics	bid-price	cut	price	low	AND of price (worth, attribute) and purchase-price (outgo); keep one, depends on core price sense	economics-01		
+economics	bidder	move	buyer economic-agent	medium	losing bidders never buy, and in tenders bidders are sellers	economics-01	yes	
+economics	bill-of-lading	move	receipt legal-document	medium	core receipt acknowledges payment; a bill of lading is a document of title for goods	economics-01	yes	
+economics	bitcoin-core	drop		medium	a single software product filed as a class	economics-01	yes	
+economics	bitcoin-improvement-proposal	move	white-paper document	medium	a design proposal, not a white paper; matches ethereum-improvement-proposal	economics-01	yes	
+economics	bitcoin-network	drop		low	a single network filed as a class; used by terms, so for Peter	economics-01		drop of a node with children or users
+economics	bitcoin-taproot	drop		medium	a single upgrade (instance) filed as a class	economics-01	yes	
+economics	black-market	cut	activity	high	a black market is a market; act AND economic-system is the OR of two alignments	economics-01	yes	
+economics	book-fair	resense	08408418 fair	high	everyday book fair is a publishers' trade fair; the charity book sale is the rare sense	economics-01	yes	
+economics	bull-market	move	event financial-market	medium	WN: a securities market with rising prices; event AND state was OR [also economics-01: cut state]	economics-01	yes	
+economics	bull-market	cut	state	medium	replaced by financial-market (WN hypernym)	economics-01	yes	
+economics	buy-option	drop		medium	"duplicate of call-option (""an option to buy"")"	economics-01	yes	
+economics	buyer's-market	move	activity market	medium	a market (WN hypernym market), not an activity	economics-01	yes	
+economics	bzz	parent+	cryptocurrency	medium	keeps BZZ a currency (paid for storage) once crypto-token leaves cryptocurrency; same for xbzz [also economics-02: same]	economics-01	yes	
+economics	capital-loss	move	expense loss	medium	a capital loss is a loss on a sale, not an amount paid for goods and services	economics-01	yes	
+economics	capitalization	resense		low	holds the rarest sense (sale of capital stock, 4/4); practitioner sense is capital structure; market-capitalization exists	economics-01		resense needs a WN30 offset
+economics	carriage-trade	drop		medium	dated idiom, not a kind of commerce	economics-01	yes	
+economics	cellarage	drop		medium	archaic, obscure storage fee	economics-01	yes	
+economics	circularization	drop		medium	obscure term for advertising by circulars	economics-01	yes	
+economics	cold-chain	cut	logistics	high	a cold chain is a temperature-controlled supply chain; act AND system was OR	economics-01	yes	
+economics	common-carrier	drop		medium	duplicate of carrier-company; also wrongly under freight-forwarder	economics-01	yes	
+economics	common-stock-equivalent	move	share-capital convertible-security	medium	convertible bonds and warrants are not share capital; it is a convertible security	economics-01	yes	
+economics	consignment	cut	sale	medium	consigned goods are delivered for later sale; consignment is not itself a sale	economics-01	yes	
+economics	controlling-interest	cut	share	medium	a majority holding of shares, not one share	economics-01	yes	
+economics	convertible-security	move	legal-document security-finance	medium	a security; belongs with bond and stock under security-finance	economics-01	yes	
+economics	cosmetician	drop		medium	sells or applies cosmetics; not a merchant, not economics	economics-01	yes	
+economics	cost-plus-contract	cut	pricing-strategy	high	a contract, not a pricing strategy (cost-plus-pricing is the strategy)	economics-01	yes	
+economics	craft-fair	move	bazaar fair	medium	a gathering of craftsmen selling their goods; frees bazaar for its everyday sense	economics-01	yes	
+economics	crowdfunding	cut	business-model	medium	crowdfunding is raising money (financing), not a business model; plan AND activity was OR	economics-01	yes	
+economics	crypto-token	move	cryptocurrency intangible-asset	medium	NFTs and utility tokens are tokens but not currencies; crypto-token under cryptocurrency makes every NFT money [also economics-02: same]	economics-01	yes	
+economics	cryptocurrency	cut	payment-system	medium	AND of money and system (group); the network is bitcoin-network/ethereum, the currency is money [also economics-02: same]	economics-01	yes	
+economics	cutler	drop		medium	archaic trade; gloss (dealer) contradicts its craftsman parent	economics-01	yes	
+economics	default-finance	cut	failure	medium	"a default is a missed payment (event), not ""lack of success"" (state)"	economics-01	yes	
+economics	depreciation-charge	move	price-charged non-cash-expense	medium	an accounting charge against revenue, not a price charged for an article or service	economics-01	yes	
+economics	direct-marketing	cut	ad	high	direct marketing is marketing (act), not an ad (information)	economics-01	yes	
+economics	divvy	drop		medium	slang abbreviation of dividend	economics-01	yes	
+economics	economic-theory	move	thinking theory	high	a theory (information) like its sibling theories, not the process of thinking	economics-01	yes	
+economics	employee-owned-enterprise	move	commercial-enterprise business	medium	an employee-owned enterprise is a firm (organization), not an activity	economics-01	yes	
+economics	equilibrium-price	cut	price	low	AND of price (worth, attribute) and purchase-price (outgo); keep one, depends on core price sense	economics-01		
+economics	erc-20-token	cut	smart-contract	medium	the token is the asset; the contract that issues it is software (AND of money and program)	economics-01	yes	
+economics	ethereum	drop		low	a single blockchain filed as a class; used by terms, so for Peter	economics-01		drop of a node with children or users
+economics	ethereum-name-service	drop		medium	a single system filed as a class	economics-01	yes	
+economics	expending	drop		medium	duplicate of spending	economics-01	yes	
+economics	financial-services	cut	service	medium	node holds WN finance (providing funds and capital); investing, corporate-finance, flotation are not work done for another	economics-01	yes	
+economics	fire-sale	drop		medium	holds the rare sense (fire-damaged goods); the everyday fire-sale synset 01119116 is held by distress-sale	economics-01	yes	
+economics	flower-girl	drop		medium	odd sense; everyday flower girl is a child at a wedding	economics-01	yes	
+economics	footage-rate	drop		medium	obscure charge rate per linear foot	economics-01	yes	
+economics	forward-price	cut	price	low	AND of price (worth, attribute) and purchase-price (outgo); keep one, depends on core price sense	economics-01		
+economics	fulfillment-house	cut	warehouse	low	AND of business (organization) and warehouse (building), like the building+organization nodes	economics-01		
+economics	goods	move	possession commodity	low	duplicate of core commodity (articles of commerce); re-hang public-good and shipment and drop?	economics-01		
+economics	goodwill-asset	move	financial-asset intangible-asset	high	goodwill is an intangible asset but not a financial asset (cash, securities, receivables)	economics-01	yes	
+economics	government-security	move	legal-document security-finance	medium	a security; belongs with bond and stock under security-finance	economics-01	yes	
+economics	gray-market	cut	activity	high	a gray market is a market; act AND economic-system is the OR of two alignments	economics-01	yes	
+economics	grubstake	drop		medium	colloquial; funds advanced, not a financial interest	economics-01	yes	
+economics	guaranty	cut	collateral	high	"""collateral agreement"" means accessory; a guaranty is a personal undertaking, not pledged security"	economics-01	yes	
+economics	hazard-insurance	parent+	insurance	medium	a kind of insurance missing its genus (hangs only under possession)	economics-01	yes	
+economics	hire-purchase	cut	credit	medium	WN: a kind of installment plan; it is not money available to borrow	economics-01	yes	
+economics	honorarium	cut	payment	medium	an honorarium is a sum (reward-payment), not the act of paying	economics-01	yes	
+economics	horse-trade	drop		medium	literal swap of horses; odd sense of the idiom	economics-01	yes	
+economics	indenture	resense	06773006 contract	medium	in finance an indenture is the bond agreement; the servant contract is historical	economics-01	yes	
+economics	installment	cut	payment	medium	an installment is a sum (payment-amount), not the act of paying	economics-01	yes	
+economics	institutional-investor	parent+	organization	high	an institutional investor is an organization (pension fund, insurer), not a person	economics-01	yes	
+economics	insurance	cut	financial-services	medium	AND of contract and business activity; its children (fire-, health-, life-insurance) are coverage contracts, not activities [also economics-02: same]	economics-01	yes	
+economics	insurance-policy	drop		high	duplicate of core policy (same synset 06523641, written contract of insurance)	economics-01	yes	
+economics	inventory	move	transaction-record current-asset	medium	the gloss is the value of stock, a current asset, not a transaction record	economics-01	yes	
+economics	investor	cut	worker	high	investors include firms and funds; investing is not an occupation (brings person, worker to institutional-investor)	economics-01	yes	
+economics	labor-market	cut	activity	high	the labor market is a market; act AND economic-system is the OR of two alignments	economics-01	yes	
+economics	letter-of-credit	cut	payment-system	high	a letter of credit is a document/credit, not a system (group) [also economics-01: cut payment-system]	economics-02	yes	
+economics	letter-security	move	legal-document security-finance	high	a letter security is a security; WN's security synset was skipped to legal-document	economics-02	yes	
+economics	lightning-network	drop		medium	a single network (instance), not a kind	economics-02	yes	
+economics	limited-review	cut	information	high	gloss is a service/procedure, not information; AND of information and act [also economics-01: cut information]	economics-02	yes	
+economics	list-price	cut	price	medium	core price is the attribute sense (worth); the money sense is purchase-price, already an ancestor	economics-02	yes	
+economics	listed-security	move	legal-document security-finance	high	a listed security is a security, not a bare legal document	economics-02	yes	
+economics	lump-sum	cut	payment	high	a sum of money (payment-amount), not the act of paying; AND of act and amount	economics-02	yes	
+economics	malpractice-insurance	parent+	liability-insurance	high	hangs on bare possession; malpractice cover is professional liability insurance	economics-02	yes	
+economics	margin-call	move	event demand	high	gloss: a demand by a broker; WN parent is demand	economics-02	yes	
+economics	market-monopoly	move	activity market	high	gloss: a market in which...; WN parent is market	economics-02	yes	
+economics	market-price	cut	price	medium	OR of two price senses; keep purchase-price (money)	economics-02	yes	
+economics	marketplace	cut	place	medium	AND of market (economic system) and place; its kid online-marketplace is not a place	economics-02	yes	
+economics	mileage	rename	mileage-allowance	medium	plain name holds rare sense 3/3 (allowance); mileage is a distance	economics-02	yes	
+economics	monopsony	move	activity market	high	gloss: a market in which...; WN parent is market	economics-02	yes	
+economics	monte-carlo-methods-in-finance	drop		medium	an article title (topic), not a kind; monte-carlo-method is in the ai pack	economics-02	yes	
+economics	mortgage-loan	drop		medium	duplicate of real-estate-loan (same WN synset); Peter may prefer the mortgage-loan name	economics-02	yes	
+economics	oligopoly	move	activity market	high	gloss: a market in which...; WN parent is market	economics-02	yes	
+economics	operating-capital	move	possession capital	high	gloss: capital available for the operations of a firm	economics-02	yes	
+economics	overpaid-amount	drop		medium	duplicate once overpayment takes its sense 13279046	economics-02	yes	
+economics	overpayment	resense	13279046 payment-amount	medium	plain name holds rare act sense; everyday overpayment is the excess sum	economics-02	yes	
+economics	payment-card	cut	payment-system	high	a card is a device, not a system (group); AND of device and system [also economics-01: cut payment-system]	economics-02	yes	
+economics	peer-to-peer-lending	move	loan financial-services	medium	P2P lending is a lending practice/service, not a loan (debt)	economics-02	yes	
+economics	performance-bond	move	bond guaranty	medium	a performance (surety) bond is a guarantee against non-performance, not an investment security	economics-02	yes	
+economics	physical-capital	move	possession capital	medium	physical capital (machines, buildings) is capital	economics-02	yes	
+economics	point-of-sale	move	event place	low	POS is where (checkout/terminal) a sale is completed, not an event; or the POS system	economics-02		
+economics	ponzi-scheme	move	pyramid-scheme fraud	medium	a Ponzi scheme is a distinct fraud (no recruitment structure), not a kind of pyramid scheme	economics-02	yes	
+economics	postage-batch	move	prepayment possession	low	a postage batch is a prepaid storage allowance held, not the act of paying in advance	economics-02		
+economics	poundage	drop		medium	odd sense 2/4 (fee for impounded animals); the weight charge is weight-charge	economics-02	yes	
+economics	profit-sharing	move	possession plan	medium	gloss: a system/scheme for sharing profits, not a possession	economics-02	yes	
+economics	purchase-price	move	outgo value	low	an asking or bid price is not money paid out; a price is a monetary value (row for chunk 02)	economics-01		
+economics	pyramid-scheme	cut	business-model	medium	a pyramid scheme is a fraud, not a business model; AND of plan and act	economics-02	yes	
+economics	rate-of-depreciation	move	charge-rate ratio	medium	a depreciation rate is a percentage, not money paid out (as interest-rate ⊑ ratio)	economics-02	yes	
+economics	real-estate-business	cut	business	high	gloss: the business (line of activity) of selling real estate; AND of organization and activity	economics-02	yes	
+economics	rebate	move	refund-amount refund	medium	follows the refund re-sense	economics-02	yes	
+economics	refund	resense	13282161 payment-amount	medium	everyday refund is the money returned (WN sense 1); node holds the act (sense 2)	economics-02	yes	
+economics	refund-amount	drop		low	duplicate once refund takes 13282161; has kid rebate until it moves	economics-02		drop of a node with children or users
+economics	registered-security	move	legal-document security-finance	high	a registered security is a security (registered-bond already sits under bond)	economics-02	yes	
+economics	remittance	cut	payment	high	a payment of money sent (an amount), not the act; AND of act and amount	economics-02	yes	
+economics	remuneration	drop		medium	holds rare act sense; everyday remuneration is pay, held by core wage	economics-02	yes	
+economics	renting	drop		high	duplicate of core rental (same WN synset); and it is an act, not a contract	economics-02	yes	
+economics	reservation-price	cut	price	medium	OR of two price senses; keep purchase-price (money)	economics-02	yes	
+economics	return-merchandise-authorization	move	reverse-logistics document	medium	an RMA is an authorization (number/document), not the logistics activity	economics-02	yes	
+economics	salary	move	payment wage	medium	salary is pay (WN puts it in the wage synset), not the act of paying	economics-02	yes	
+economics	sales-contract	drop		medium	duplicate of purchase-contract (one contract of sale, seen from either side)	economics-02	yes	
+economics	scrip	cut	currency	high	gloss: scrip is not currency	economics-02	yes	
+economics	seed-money	move	possession capital	high	gloss: capital needed to set up a new business	economics-02	yes	
+economics	segwit	drop		medium	a single protocol upgrade (instance), not a kind	economics-02	yes	
+economics	sell-option	drop		medium	duplicate of put-option (WN's second put-option synset)	economics-02	yes	
+economics	seller's-market	move	activity market	high	gloss: a market in which...; WN parent is market	economics-02	yes	
+economics	short-account	move	possession brokerage-account	high	gloss: a brokerage account of someone who sells short	economics-02	yes	
+economics	short-position	cut	securities-trading	high	a position is a state (as long-position), not the act of trading	economics-02	yes	
+economics	short-selling	drop		high	duplicate of short-sale (same WN synset)	economics-02	yes	
+economics	speculation	resense	- trading	medium	practitioner's speculation is the activity (risky trading), not a risky investment; kid pyramiding fits	economics-02	yes	
+economics	spot-market	cut	commodity-exchange	high	a spot market is a market, not an exchange building; spot trades are also OTC	economics-02	yes	
+economics	stipend	cut	payment	high	a sum allotted regularly (regular-payment), not the act of paying	economics-02	yes	
+economics	stock-exchange	cut	capital-market	medium	an exchange is a venue/institution (like commodity-exchange); the market for stocks is stock-market	economics-02	yes	
+economics	stock-option	rename	employee-stock-option	medium	plain name holds WN's 2nd sense (employee benefit)	economics-02	yes	
+economics	stock-option-contract	rename	stock-option	medium	after the rename above: practitioner's stock option is the option on a stock	economics-02	yes	
+economics	stock-warrant	move	possession security-finance	high	gloss: a type of security issued by a corporation	economics-02	yes	
+economics	stockbroker	move	securities-trader broker	high	a stockbroker is an agent (broker), not a trader holding inventory; WN parent is broker	economics-02	yes	
+economics	stop-loss-order	drop		medium	duplicate of stop-order (WN synonyms)	economics-02	yes	
+economics	strike-price	cut	price	medium	OR of two price senses; keep purchase-price (money)	economics-02	yes	
+economics	surcharge	cut	payment	high	an additional charge (price-charged), not the act of paying	economics-02	yes	
+economics	syndication	resense	01138547 financing	low	in finance syndication first means forming a lending/underwriting syndicate; node holds media syndication	economics-02		
+economics	tankage	drop		medium	odd sense 3/3 (act of storing in tanks); the fee is tankage-charge	economics-02	yes	
+economics	term-insurance	parent+	insurance	high	hangs on bare possession; WN puts it under insurance	economics-02	yes	
+economics	trade-order	move	financial-transaction document	medium	an order to a broker is an instruction, not a transaction; kids market-order, stop-order already sit under document	economics-02	yes	
+economics	traveler's-check	move	artifact bank-check	medium	a traveler's cheque is a cheque; artifact+letter-of-credit is an AND of physical object and document	economics-02	yes	
+economics	underlying-asset	drop		medium	a role (whatever underlies a derivative), not a kind; and not always a security (commodities, indices)	economics-02	yes	
+economics	underpaid-amount	drop		medium	duplicate once underpayment takes its sense 13279162	economics-02	yes	
+economics	underpayment	resense	13279162 payment-amount	medium	plain name holds the act sense; everyday underpayment is the sum	economics-02	yes	
+economics	unearned-income	resense	13261597 income	medium	senses swapped: unearned income is personal income not earned (dividends, rent)	economics-02	yes	
+economics	unearned-revenue	resense	13261380 income	medium	senses swapped: unearned revenue is the accounting sense (received, not yet earned)	economics-02	yes	
+economics	unit-cost	cut	price	medium	OR of two price senses; WN puts unit cost under cost (money), keep purchase-price	economics-02	yes	
+economics	unitization	drop		medium	odd sense 3/4 (investment-trust conversion) and wrongly under currency-conversion	economics-02	yes	
+economics	unlisted-security	move	legal-document security-finance	high	an unlisted security is a security (kids over-the-counter-stock, penny-stock)	economics-02	yes	
+economics	unsecured-bond	resense		low	gloss is WordNet's error (it is credit's gloss); should read a bond backed only by the issuer's credit (debenture); node and parent are fine	economics-02		resense needs a WN30 offset
+economics	usury	cut	interest	high	gloss: an exorbitant rate of interest, so interest-rate; AND of amount and ratio	economics-02	yes	
+economics	valuation	move	price purchase-price	medium	WN valuation (assessed price) sits under the money sense of price (pack purchase-price), not core price (worth)	economics-02	yes	
+economics	vendor	drop		medium	duplicate of core seller (WN vendor is in seller's synset)	economics-02	yes	
+economics	venture-capital	cut	private-equity	medium	gloss is wealth (possession); private-equity here is a financial service (act) [also economics-02: move possession capital]	economics-02	yes	
+economics	venture-capital	move	possession capital	medium	VC is capital (WN: under working capital)	economics-02	yes	
+economics	vintner	resense	10754189 merchant	high	gloss says winemaker but parent is merchant; take wine-merchant sense	economics-02	yes	
+economics	web3	drop		medium	vague buzzword, not a clear kind	economics-02	yes	
+economics	xbzz	parent+	cryptocurrency	medium	xBZZ is a currency token; keeps currency if crypto-token leaves cryptocurrency	economics-02	yes	
+economics	zero-coupon-security	move	legal-document security-finance	high	a zero-coupon security is a security	economics-02	yes	
+geography	abyssal-zone	cut	ocean-floor	medium	the gloss is the deep water layer (pelagic), not the seabed	geography-01	yes	
+geography	antarctic-circle	move	circle-of-latitude polar-circle	medium	the Antarctic Circle is a polar circle	geography-01	yes	
+geography	arctic-circle	move	circle-of-latitude polar-circle	medium	the Arctic Circle is a polar circle	geography-01	yes	
+geography	bathymetry	cut	activity	medium	pick one sense; bathymetry is the branch of hydrography	geography-01	yes	
+geography	beaufort-scale	drop		medium	single instance of a scale, not a kind	geography-01	yes	
+geography	beidou	drop		medium	single instance of GNSS, not a kind (the pack's extra-edges note says so)	geography-01	yes	
+geography	cape	move	coast land landform	medium	a cape is a headland that projects from the coast, not a kind of coast; as peninsula	geography-01	yes	
+geography	cartography	cut	engineering	medium	cartography is mapmaking, a branch of geography, not engineering	geography-01	yes	
+geography	cay	move	coral-reef island	medium	a cay is a small low island on a reef, not the reef itself	geography-01	yes	
+geography	celestial-horizon	move	place great-circle	medium	a great circle on the celestial sphere, as celestial-equator	geography-01	yes	
+geography	circle-of-latitude	cut	circle	medium	core circle is a shape attribute; a parallel is a line on the Earth (geographic-line)	geography-01	yes	
+geography	cloudiness	move	bad-weather weather	medium	cloudy weather is not necessarily bad weather	geography-01	yes	
+geography	clunch	drop		medium	"duplicate of indurated-clay (both WN ""hardened clay""); archaic"	geography-01	yes	
+geography	compass-point	move	spatial-relation direction	medium	every compass point is a direction (core's spatial-direction is now direction)	geography-01	yes	
+geography	condensation	resense	13451348 process	medium	a geographer's condensation is the process of vapour turning liquid; the node held condensed moisture filed as an event; its only child dew moves to water	geography-01	yes	
+geography	contour-map	move	map topographic-map	medium	a contour map is a kind of topographic map	geography-01	yes	
+geography	coordinated-universal-time	drop		medium	single instance of a time standard, not a kind	geography-01	yes	
+geography	daylight-saving-time	cut	time-standard	medium	DST is the practice of moving clocks forward; one node cannot be both a practice and a standard	geography-01	yes	
+geography	dew	move	condensation water	high	dew is water droplets, not an event or a process	geography-01	yes	
+geography	ditch	resense	03214253 trench	medium	"the everyday ditch is a dug channel; the node held the rare ""any small natural waterway"""	geography-01	yes	
+geography	doldrums	move	wind climatic-zone	medium	the doldrums are a belt (a region) of calms, not a wind; as horse-latitude	geography-01	yes	
+geography	earth-structure	drop		medium	unglossed; its parent structure makes it an artifact; the Earth's structure is one thing, not a kind	geography-01	yes	
+geography	endogeny	drop		medium	obscure WN term, vague	geography-01	yes	
+geography	epsg-geodetic-parameter-dataset	drop		medium	single dataset, not a kind	geography-01	yes	
+geography	etrs89	drop		medium	single instance of a geodetic datum, not a kind	geography-01	yes	
+geography	fine-spray	drop		medium	odd WN term, vague	geography-01	yes	
+geography	fire-pit	drop		medium	rare sense (a lava pit); the everyday fire pit is a pit for a campfire	geography-01	yes	
+geography	firestorm	cut	storm	medium	a firestorm is a fire, often over bombed cities; storm makes it a natural weather event	geography-01	yes	
+geography	flowage	drop		medium	rare sense; a man-made flooded area filed as a natural body of water	geography-01	yes	
+geography	foreland	drop		medium	vague sense; the headland sense is promontory	geography-01	yes	
+geography	galileo-navigation-system	drop		medium	single instance of GNSS, not a kind	geography-01	yes	
+geography	geohash	cut	geocoding	high	a geohash is a code, not an activity [also geography-01: cut geocoding-system]	geography-01	yes	
+geography	geohash	cut	geocoding-system	medium	a geohash string is a geocode; one node cannot be both the code and a coordinate system	geography-01	yes	
+geography	geologic-time-scale	drop		medium	single instance of a scale, not a kind	geography-01	yes	
+geography	geological-eon	drop		high	duplicate of eon, which holds archean, hadean, phanerozoic and proterozoic	geography-01	yes	
+geography	geonames	drop		medium	single gazetteer database, not a kind	geography-01	yes	
+geography	getty-thesaurus-of-geographic-names	drop		medium	single work, not a kind	geography-01	yes	
+geography	glacial-ablation	move	geological-erosion geological-process	medium	ablation is the loss of ice by melting, sublimation and calving, not erosion	geography-01	yes	
+geography	glacial-till	move	soil sediment	medium	till is glacial sediment, not soil	geography-01	yes	
+geography	global-positioning-system	drop		medium	single instance of GNSS (GPS), not a kind	geography-01	yes	
+geography	glonass	drop		medium	single instance of GNSS, not a kind	geography-01	yes	
+geography	gps-time	drop		medium	single instance of a time standard, not a kind	geography-01	yes	
+geography	gregorian-calendar	drop		medium	single instance of a calendar, not a kind; not geography	geography-01	yes	
+geography	gully	cut	body-of-water	high	a gully is a channel cut in the land, not water; also fixes arroyo and wadi	geography-01	yes	
+geography	hayfield	move	grassland field	medium	a hayfield is a farm field, not a biome (grassland is under biome)	geography-01	yes	
+geography	horse-latitude	move	place climatic-zone	medium	a latitude belt of calms, as doldrums and subtropics	geography-01	yes	
+geography	hour-circle	move	place great-circle	medium	a great circle on the celestial sphere, as celestial-equator	geography-01	yes	
+geography	ice-age	move	geological-period geological-time-division	medium	an ice age is not a formal geological period like the Jurassic	geography-01	yes	
+geography	ice-field	cut	glacier	medium	the gloss is floating sea ice, not a glacier; ice-mass covers both senses	geography-01	yes	
+geography	ice-floe	cut	ice	medium	a floe is a mass of ice (ice-mass), not the substance ice	geography-01	yes	
+geography	iceberg	cut	ice	medium	an iceberg is a mass of ice (ice-mass), not the substance ice	geography-01	yes	
+geography	instrument-flying	move	activity navigation	medium	the gloss says it is navigation by instruments	geography-01	yes	
+geography	international-atomic-time	drop		medium	single instance of a time standard, not a kind	geography-01	yes	
+geography	international-terrestrial-reference-system	drop		medium	single instance of a reference system, not a kind	geography-01	yes	
+geography	julian-day	drop		medium	single dating system (astronomy), not a kind	geography-01	yes	
+geography	kitty-litter	drop		high	a pet-care product, not geography	geography-01	yes	
+geography	koppen-climate-classification	drop		medium	single classification scheme, not a kind	geography-01	yes	
+geography	landslip	drop		high	duplicate of landslide (same WN synset 07405411)	geography-01	yes	
+geography	leap-second	move	time-standard time-period	medium	a leap second is an added second, not a time standard	geography-01	yes	
+geography	lowland	cut	natural-depression	high	low-lying land is not a depression; plain stays	geography-01	yes	
+geography	meander	cut	curved-shape	medium	a meander is a river bend (a feature), not a shape attribute	geography-01	yes	
+geography	mercalli-scale	drop		medium	single instance of a scale, not a kind	geography-01	yes	
+geography	military-grid-reference-system	drop		medium	single instance of a reference system, not a kind	geography-01	yes	
+geography	moment-magnitude-scale	drop		medium	single instance of a scale, not a kind	geography-01	yes	
+geography	monsoon	move	wind monsoon-wind	medium	the South Asian monsoon is a seasonal wind (monsoon-wind)	geography-01	yes	
+geography	moor	move	plain land	medium	moors are mostly upland; not every moor is a plain	geography-01	yes	
+geography	naval-chart	drop		medium	duplicate of nautical-chart (WN naval/navigational chart)	geography-01	yes	
+geography	navigation	cut	skill	medium	navigation is the act of guiding a ship or plane; its children are methods, not skills	geography-01	yes	
+geography	nebule	drop		medium	archaic word for a small cloud	geography-01	yes	
+geography	noah's-flood	drop		medium	a biblical event, not geography	geography-01	yes	
+geography	north-american-datum	drop		medium	single instance of a geodetic datum, not a kind	geography-01	yes	
+geography	omnirange	move	artifact navigational-system	medium	the gloss says it is a navigational system	geography-01	yes	
+geography	pasture	move	grassland field	medium	a pasture is a farm field, not a biome (grassland is under biome)	geography-01	yes	
+geography	petrifaction	resense	13535583 geological-process	medium	"a geologist's petrifaction is the process; the node held the rare ""a rock created by petrifaction"""	geography-01	yes	
+geography	polar-circle	move	place circle-of-latitude	medium	the polar circles are circles of latitude	geography-01	yes	
+geography	pond	cut	landform	medium	a pond is water; lake already gives body-of-water	geography-01	yes	
+geography	prevailing-westerly	drop		medium	duplicate of westerlies	geography-01	yes	
+geography	quicksand	move	cavity sediment	medium	quicksand is saturated sand, a material, not a pit	geography-01	yes	
+geography	red-clay	cut	mineral	medium	red clay is a clay or sediment, not a mineral species	geography-01	yes	
+geography	reef	move	shoal natural-ridge	high	a reef is a ridge of rock or coral, not a sandbank; shoal made every reef, coral reef, atoll and the Great Barrier Reef a sandbank	geography-01	yes	
+geography	richter-magnitude-scale	drop		medium	single instance of a scale, not a kind	geography-01	yes	
+geography	rill	move	water-channel natural-depression	medium	a rill is a small erosion channel, not a navigable body of water (core water-channel)	geography-01	yes	
+geography	river-delta	cut	alluvial-sediment	high	a delta is a landform, not a substance; plain and river-mouth stay	geography-01	yes	
+geography	river-mouth	cut	geographic-point	medium	its children estuary and river-delta are areas, not points	geography-01	yes	
+geography	scablands	move	physical-object land	medium	the gloss describes elevated land	geography-01	yes	
+geography	shingling	drop		medium	rare sense; geologists call it imbrication	geography-01	yes	
+geography	snowfield	move	plain ice-mass	low	a permanent expanse of snow, not a plain of land; is ice-mass the right home?	geography-01		
+geography	spring-tide	move	high-tide tide	medium	a spring tide has both higher highs and lower lows; it is not only a high tide	geography-01	yes	
+geography	survey-benchmark	cut	geographical-feature	high	a benchmark is a man-made survey marker, not a natural object	geography-01	yes	
+geography	talus	cut	gravel	medium	talus is a slope deposit (formation), not the material gravel	geography-01	yes	
+geography	terrace	move	plateau landform	medium	a river or marine terrace is a step, not a highland plateau	geography-01	yes	
+geography	topography	resense	05064541 shape	medium	"a geographer's topography is the shape of the land; the node held the rare ""the study"" sense"	geography-01	yes	
+geography	transit-zone	drop		medium	a drug-smuggling area of the US government, not a geographic kind	geography-01	yes	
+geography	tropic-of-cancer	move	circle-of-latitude tropic	medium	the Tropic of Cancer is a tropic	geography-01	yes	
+geography	tropic-of-capricorn	move	circle-of-latitude tropic	medium	the Tropic of Capricorn is a tropic	geography-01	yes	
+geography	tsunami	cut	calamity	medium	a tsunami is a wave; not every tsunami is a calamity	geography-01	yes	
+geography	undertide	rename	undercurrent	medium	same WN synset (07404798); undercurrent is the common word	geography-01	yes	
+geography	unix-time	drop		medium	single instance of a time standard; computing, not geography	geography-01	yes	
+geography	upheaval	rename	uplift	medium	same WN synset (07375781); uplift is the geologist's word, upheaval everyday means turmoil [also geography-01: move event geological-process]	geography-01		reviewers disagree
+geography	utm-coordinate-system	drop		medium	single instance of a reference system, not a kind	geography-01	yes	
+geography	vertical-circle	move	place great-circle	medium	a great circle on the celestial sphere, as celestial-equator	geography-01	yes	
+geography	visual-range	move	attribute distance	medium	visual range is a distance	geography-01	yes	
+geography	water-table	cut	geological-formation	medium	the water table is a surface (a level), not a formation	geography-01	yes	
+geography	weather-balloon	cut	balloon	high	core balloon is the toy rubber bag; aircraft stays	geography-01	yes	
+geography	weather-forecasting	move	information activity	medium	forecasting is the activity; weather-forecast holds the statement	geography-01	yes	
+geography	westerlies	parent+	west-wind	medium	the westerlies are west winds; absorbs prevailing-westerly	geography-01	yes	
+geography	wgs-84	drop		medium	single instance of a geodetic datum, not a kind	geography-01	yes	
+geography	whirlwind	cut	windstorm	medium	a whirlwind or dust devil is not a storm; tornado keeps windstorm through cyclonic-storm	geography-01	yes	
+geography	wide-area-augmentation-system	drop		medium	single instance (WAAS), not a kind	geography-01	yes	
+geography	world-geodetic-system	drop		low	single instance (a standard series); has the child wgs-84, so drop only with it	geography-01		drop of a node with children or users
+geography	wormcast	drop		medium	rare sense (fossil trail); the everyday wormcast is an earthworm casting	geography-01	yes	
+mathematics	acceptance-sampling	cut	activity	medium	a statistical method; activity (act) AND method (cognition) is two readings	mathematics-01	yes	
+mathematics	additive-inverse	move	number numeric-quantity	medium	a number (value), not core number's property sense	mathematics-01	yes	
+mathematics	age-norm	drop		medium	developmental psychology norm, not mathematics	mathematics-01	yes	
+mathematics	algebra-over-a-field	cut	mathematical-ring	medium	algebras need not be associative or unital; its child lie-algebra is not a ring	mathematics-01	yes	
+mathematics	antiderivative	resense	06015505 function	medium	holds WN 'primitive' (a source expression); an antiderivative is a function F with F'=f	mathematics-01	yes	
+mathematics	arity	cut	numeric-quantity	medium	'the number of arguments' is core number's property sense; property AND amount is two readings	mathematics-01	yes	
+mathematics	banach-space	parent+	vector-space metric-space	high	a Banach space is a complete normed vector space, hence metric	mathematics-01	yes	
+mathematics	bayes'-postulate	drop		low	single instance filed as a class (pack rule); keep if named results are wanted	mathematics-01		
+mathematics	bayes'-theorem	drop		low	single instance filed as a class (pack rule); keep if named results are wanted	mathematics-01		
+mathematics	bernoulli's-law	drop		low	single instance filed as a class (pack rule); keep if named results are wanted	mathematics-01		
+mathematics	big-o-notation	cut	mathematical-relation	medium	a notation is a symbol system; relation AND symbol is two readings	mathematics-01	yes	
+mathematics	bijection	parent+	injective-function	high	a bijection is injective and surjective	mathematics-01	yes	
+mathematics	binomial	cut	amount	high	a binomial is a two-term polynomial; amount AND polynomial (relation) is two readings	mathematics-01	yes	
+mathematics	binomial-coefficient	move	number natural-number	medium	binomial coefficients C(n,k) are natural numbers	mathematics-01	yes	
+mathematics	binomial-theorem	drop		low	single instance filed as a class (pack rule); keep if named results are wanted	mathematics-01		
+mathematics	boolean-satisfiability-problem	drop		low	single instance filed as a class (pack rule); keep if named results are wanted	mathematics-01		
+mathematics	cardinal-number	move	number numeric-quantity	medium	WN cardinal number is under numeric-quantity, not the property sense	mathematics-01	yes	
+mathematics	cardinality	cut	numeric-quantity	medium	'number of elements, as a property of the set' is core number's property sense, with invariant	mathematics-01	yes	
+mathematics	classical-logic	cut	mathematical-logic	medium	a logic (formal system) is not the field of mathematical logic; AND of the two readings	mathematics-01	yes	
+mathematics	combinatorial-combination	drop		medium	holds the act of arranging; the mathematical combination is k-combination	mathematics-01	yes	
+mathematics	complex-number	cut	number	high	core number is the property sense; WN complex number is under numeric-quantity; fixes the whole number tower	mathematics-01	yes	
+mathematics	computational-complexity-theory	move	computability-theory computer-science	medium	complexity theory is a sibling of computability theory in theory of computation, not part of it	mathematics-01	yes	
+mathematics	conic-section	cut	locus	medium	a conic is a shape like circle in core; locus brings set and group, disjoint from attribute	mathematics-01	yes	
+mathematics	cross-section	resense	08548065 plane-section	medium	a mathematician's cross section is the plane section of a solid, not a representative sample	mathematics-01		Peter ruled on this name (rulings-v14-peter, doubtful-v14)
+mathematics	description-logic	cut	mathematical-logic	medium	description logics are formal systems, not the field; AND of the two readings	mathematics-01	yes	
+mathematics	digital-signature	move	cryptographic-primitive information	medium	the scheme is signature-scheme; a digital signature is the value, as computing's overlay has it	mathematics-01	yes	
+mathematics	discrete-logarithm	move	decision-problem problem	medium	the discrete logarithm problem is a search problem, not a decision problem	mathematics-01	yes	
+mathematics	drawn-box	drop		high	WN 'box: a rectangular drawing' (a flowchart box), not mathematics	mathematics-01	yes	
+mathematics	elliptic-curve-cryptography	cut	procedure	medium	an approach within public-key cryptography (field); procedure AND field is two readings	mathematics-01	yes	
+mathematics	empty-set	drop		low	single instance filed as a class (pack rule); keep if named results are wanted	mathematics-01		
+mathematics	equidistribution	rename	uniform-distribution	medium	holds 'a flat distribution'; equidistribution in mathematics means equidistributed sequences	mathematics-01	yes	
+mathematics	exceedance	drop		medium	only WN sense is a geology probability; vague as a bare word	mathematics-01	yes	
+mathematics	fibonacci-sequence	drop		low	single instance filed as a class (pack rule); keep if named results are wanted	mathematics-01		
+mathematics	first-order-logic	move	mathematical-logic formal-system	medium	first-order logic is a formal system studied in mathematical logic, not the field itself	mathematics-01	yes	
+mathematics	fuzzy-logic	move	mathematical-logic formal-system	medium	WN: 'a form of mathematical logic', a logic system, not the field	mathematics-01	yes	
+mathematics	geometric-shape	cut	locus	medium	core files figures (triangle, circle, square) under shape (attribute); locus brings set and group, disjoint	mathematics-01	yes	
+mathematics	godel-incompleteness-theorem	drop		low	single instance filed as a class (pack rule); keep if named results are wanted	mathematics-01		
+mathematics	grab-sample	drop		medium	environmental-monitoring term (a single measurement), not a mathematical sample	mathematics-01		Peter ruled on this name (rulings-v14-peter, doubtful-v14)
+mathematics	heap-data-structure	drop		medium	a computing data structure (computing has binary-heap), not mathematics	mathematics-01	yes	
+mathematics	inclusion-exclusion-principle	drop		low	single instance filed as a class (pack rule); keep if named results are wanted	mathematics-01		
+mathematics	infinitesimal	cut	number	high	WN: a variable with limit zero; core number is the property sense	mathematics-01	yes	
+mathematics	interpolation	cut	algorithm	medium	an interpolation is a calculation like extrapolation; algorithm AND calculation mixes act and cognition	mathematics-01	yes	
+mathematics	intuitionistic-logic	move	mathematical-logic formal-system	medium	intuitionistic logic is a formal system, not the field of mathematical logic	mathematics-01	yes	
+mathematics	isometry	move	bijection injective-function	medium	gloss: one-to-one mapping into another space; an isometry need not be onto	mathematics-01	yes	
+mathematics	key-derivation-function	cut	function	medium	a cryptographic primitive (algorithm, an act in core); function AND algorithm is two readings	mathematics-01	yes	
+mathematics	knaster-tarski-theorem	drop		low	single instance filed as a class (pack rule); keep if named results are wanted	mathematics-01		
+mathematics	kronecker-delta	drop		low	single instance filed as a class (pack rule); keep if named results are wanted	mathematics-01		
+mathematics	logical-connective	move	mathematical-operation mathematical-operator	high	a connective is an operator (truth function), not an act of calculating	mathematics-01	yes	
+mathematics	logical-negation	resense	- logical-connective	medium	practitioner's negation is the connective NOT, like its siblings; connective AND proposition is two readings	mathematics-01	yes	
+mathematics	lower-bound	move	number mathematical-object	medium	a bound is an element of an ordered set, like least-element, not core number's property sense	mathematics-01	yes	
+mathematics	mandelbrot-set	drop		low	single instance filed as a class (pack rule); keep if named results are wanted	mathematics-01		
+mathematics	mathematical-induction	move	formal-proof method	medium	induction is a method of proof, not a proof	mathematics-01	yes	
+mathematics	mathematical-operation	cut	function	high	gloss and 17 of 20 children are acts (calculation); function+procedure is AND of relation and act	mathematics-01	yes	
+mathematics	mathematical-series	move	function mathematical-expression	medium	a series is a sum of terms (an expression), not a function	mathematics-01	yes	
+mathematics	maxwell's-equations	drop		low	single instance filed as a class (pack rule); keep if named results are wanted	mathematics-01		
+mathematics	modal-logic	cut	mathematical-logic	medium	a modal logic is a formal system, not the field; AND of the two readings	mathematics-01	yes	
+mathematics	monic-polynomial	resense	- polynomial	medium	WN gloss is 'a polynomial in one variable'; monic means leading coefficient 1	mathematics-01	yes	
+mathematics	multiplicative-inverse	move	number numeric-quantity	medium	a number (value), not core number's property sense	mathematics-01	yes	
+mathematics	np-completeness	rename	np-complete	medium	the node is the complexity class NP-complete; np-completeness names the property	mathematics-01	yes	
+mathematics	null-space	resense	- subspace	medium	WN 'a space with no points'; practitioner's null space is the kernel of a linear map	mathematics-01	yes	
+mathematics	ordinal-number	move	number numeric-quantity	medium	WN ordinal number is under numeric-quantity, not the property sense	mathematics-01	yes	
+mathematics	parity	resense	- property	medium	parity (even or odd) is a property of an integer; evenness and oddness are not relations	mathematics-01	yes	
+mathematics	permutation	resense	- bijection	medium	a permutation is a bijection of a set onto itself, not the act of rearranging	mathematics-01	yes	
+mathematics	pigeonhole-principle	drop		low	single instance filed as a class (pack rule); keep if named results are wanted	mathematics-01		
+mathematics	propositional-logic	cut	mathematical-logic	medium	propositional logic is a formal system, not the field; AND of the two readings	mathematics-01	yes	
+mathematics	quantifier	move	word symbol	medium	in logic a quantifier (for-all, exists) is a symbol binding variables, not a word	mathematics-01	yes	
+mathematics	quaternion	move	number numeric-quantity	medium	a hypercomplex number, a numeric quantity like complex-number	mathematics-01	yes	
+mathematics	reflexive-relation	cut	logical-relation	high	logical-relation is 'a relation between propositions'; makes every preorder and order relate propositions	mathematics-01	yes	
+mathematics	rooted-tree	move	polytree tree-graph	medium	a rooted tree is a tree with a chosen root; polytree makes binary-tree both directed and undirected	mathematics-01	yes	
+mathematics	rounding	resense	- mathematical-operation	medium	holds WN 'rounding error' (a miscalculation); practitioner's rounding is the operation	mathematics-01	yes	
+mathematics	sample-distribution	resense	- statistical-distribution	medium	holds WN 'sample' (items selected) under distribution; a sample distribution is the distribution of a sample	mathematics-01	yes	
+mathematics	scalar	move	number numeric-quantity	medium	a scalar is a field element (a value), not core number's property sense	mathematics-01	yes	
+mathematics	scalar-field	cut	mathematical-field	medium	a scalar field assigns a scalar to each point (a function); function AND field is two readings	mathematics-01	yes	
+mathematics	schrodinger-equation	drop		low	single instance filed as a class (pack rule); keep if named results are wanted	mathematics-01		
+mathematics	secp256k1	drop		low	single instance filed as a class (pack rule); keep if named results are wanted	mathematics-01		
+mathematics	signature-scheme	move	cryptographic-protocol cryptographic-primitive	medium	a signature scheme is a set of algorithms (a primitive), not a communications protocol	mathematics-01	yes	
+mathematics	spherical-polygon	move	polygon geometric-shape	medium	polygon is 'a closed plane figure bounded by straight sides'; a spherical polygon is neither	mathematics-01	yes	
+mathematics	statistic	move	cognition information	medium	WN: a datum (data point < information); a statistic is not a mental content	mathematics-01	yes	
+mathematics	statistical-correlation	move	statistic relation	medium	correlation is a relation between variables (gloss); the coefficient is the statistic	mathematics-01	yes	
+mathematics	statistical-distribution	move	cognition function	medium	a distribution maps values to frequencies or probabilities; not a cognition	mathematics-01	yes	
+mathematics	statistical-weight	cut	number	high	a weight is a coefficient (numeric-quantity); core number is the property sense	mathematics-01	yes	
+mathematics	stratified-sample	move	sample-distribution subpopulation	high	a stratified sample is a sample (a subpopulation), like random-sample, not a distribution	mathematics-01	yes	
+mathematics	strongly-connected-component	move	connected-component subgraph	medium	connected-component sits under undirected-graph; an SCC is a directed subgraph	mathematics-01	yes	
+mathematics	topological-ordering	cut	data-processing	medium	a topological ordering is a total order (linear extension), not a process	mathematics-01	yes	
+mathematics	transitive-closure	cut	mathematical-operation	medium	the transitive closure is the relation R+; operation AND relation is two readings	mathematics-01	yes	
+mathematics	transitive-reduction	move	mathematical-operation binary-relation	medium	the transitive reduction is a relation (Hasse diagram's edges), as its sibling transitive-closure	mathematics-01	yes	
+mathematics	transitive-relation	cut	logical-relation	high	logical-relation is 'a relation between propositions'; makes every order and equivalence relate propositions	mathematics-01	yes	
+mathematics	truncation-error	resense	- numeric-quantity	medium	a truncation error is the size of a discrepancy, not an event	mathematics-01	yes	
+mathematics	type-theory	cut	formal-system	medium	with about(type-system) and mathematical-logic it is the field; formal system AND field is two readings	mathematics-01	yes	
+mathematics	upper-bound	move	number mathematical-object	medium	a bound is an element of an ordered set, like greatest-element, not core number's property sense	mathematics-01	yes	
+mathematics	zorn's-lemma	drop		low	single instance filed as a class (pack rule); keep if named results are wanted	mathematics-01		
+medicine	aeromedicine	move	biomedicine medical-specialty	medium	aerospace medicine is a medical specialty; biomedicine is re-sensed	medicine-01	yes	
+medicine	ague	drop		medium	archaic word for malarial fever; rare sense flagged	medicine-01	yes	
+medicine	alienism	drop		high	its gloss: an obsolete term for psychiatry	medicine-01	yes	
+medicine	alienist	drop		medium	archaic name for a forensic psychiatrist	medicine-01	yes	
+medicine	anorexia-nervosa	move	condition mental-disorder	medium	an eating disorder is a mental disorder (gloss: a psychological disorder)	medicine-01	yes	
+medicine	apnea	cut	event	high	AND error: a symptom (state) is not also an event	medicine-01	yes	
+medicine	baby-doctor	rename	pediatrician	high	same synset; pediatrician is the name a practitioner uses	medicine-01	yes	
+medicine	ballistocardiograph	move	instrument medical-instrument	medium	gloss: a medical instrument; core medical-instrument exists	medicine-01	yes	
+medicine	bee-sting	cut	event	high	AND error: a sting is an injury (state), not also an event	medicine-01	yes	
+medicine	biomedical-science	drop		medium	duplicate: holds biomedicine's sense 06047096 under another name, which biomedicine takes back	medicine-01	yes	
+medicine	biomedicine	resense	06047096 medical-specialty	medium	holds the rare stress-in-space-travel sense; plain biomedicine is WordNet sense 1, the clinical-biology branch	medicine-01	yes	
+medicine	blackwater-fever	resense	14073647 malaria	medium	its gloss is any dark-urine disease, yet it sits under malaria; blackwater fever is the severe malaria (WordNet 14073647)	medicine-01	yes	
+medicine	blood-extravasation	cut	process	high	AND error: bleeding (state) is not also a process	medicine-01	yes	
+medicine	bronchoscope	move	instrument endoscope	medium	a bronchoscope is an endoscope, like its siblings laryngoscope and gastroscope	medicine-01	yes	
+medicine	cardiograph	move	instrument medical-instrument	medium	gloss: a medical instrument; core medical-instrument exists	medicine-01	yes	
+medicine	centesis	move	event procedure	medium	a needle puncture to draw fluid is a medical procedure (act), not a bare event	medicine-01	yes	
+medicine	cerebral-hemorrhage	cut	event	high	AND error: bleeding is a state, not also an event	medicine-01	yes	
+medicine	chiropodist	move	medical-specialist specialist	low	chiropodists (UK) are not medical doctors; US podiatrists hold a DPM; plain name would be podiatrist	medicine-01		
+medicine	constipation	cut	event	high	AND error: a symptom (state) is not also an event	medicine-01	yes	
+medicine	cramp	cut	event	high	AND error: a symptom (state) is not also an event	medicine-01	yes	
+medicine	crepitation-rale	cut	noise	medium	AND error: noise is an event, symptom a state; keep symptom like stridor and wheeziness	medicine-01	yes	
+medicine	cyanosis	cut	event	high	AND error: a symptom (state) is not also an event	medicine-01	yes	
+medicine	dementia	move	insanity mental-disorder	medium	dementia is a neurocognitive disorder, not insanity; mental-disorder has no children yet	medicine-01	yes	
+medicine	dialyzer	move	instrument medical-instrument	medium	gloss: a medical instrument; core medical-instrument exists	medicine-01	yes	
+medicine	diathermy-machine	move	instrument medical-instrument	medium	gloss: a medical instrument; core medical-instrument exists	medicine-01	yes	
+medicine	disease-carrier	move	person organism	medium	gloss: a person or an animal; organism covers both	medicine-01	yes	
+medicine	dizziness	cut	event	high	AND error: a symptom (state) is not also an event	medicine-01	yes	
+medicine	dyspnea	cut	event	high	AND error: a symptom (state) is not also an event	medicine-01	yes	
+medicine	ear-doctor	rename	otologist	medium	same synset; otologist is the name a practitioner uses	medicine-01	yes	
+medicine	electroencephalograph	move	instrument medical-instrument	medium	gloss: a medical instrument; core medical-instrument exists	medicine-01	yes	
+medicine	electromyograph	move	instrument medical-instrument	medium	gloss: a medical instrument; core medical-instrument exists	medicine-01	yes	
+medicine	embryologist	cut	medical-specialist	medium	an embryologist is a scientist, rarely a physician (medical-specialist < doctor)	medicine-01	yes	
+medicine	endoscope	move	instrument medical-instrument	medium	gloss: a medical instrument; core medical-instrument exists	medicine-01	yes	
+medicine	enterobiasis	move	condition infection	medium	WordNet hyponym of infection 14174549; core-05 re-senses infection to that pathological state	medicine-01	yes	
+medicine	fetal-alcohol-syndrome	cut	event	high	AND error: a congenital syndrome is a state, not an event	medicine-01	yes	
+medicine	focal-infection	move	condition infection	medium	an infection; core-05 re-senses infection to the pathological state 14174549	medicine-01	yes	
+medicine	foundling-hospital	drop		medium	archaic, and not a medical hospital: a home for abandoned infants	medicine-01	yes	
+medicine	frostbite	cut	event	high	AND error: an injury (state) is not also an event	medicine-01	yes	
+medicine	gerontologist	move	medical-specialist specialist	medium	gerontology is the study of ageing; the physician is the geriatrician; not every gerontologist is a doctor	medicine-01	yes	
+medicine	heart-murmur	cut	event	high	AND error: a symptom (state) is not also an event; siblings stridor and wheeziness are symptoms only	medicine-01	yes	
+medicine	hemoptysis	cut	event	high	AND error: a symptom (state) is not also an event	medicine-01	yes	
+medicine	hernia	cut	event	high	AND error: a tissue rupture (state) is not also an event	medicine-01	yes	
+medicine	hiccup	cut	process	high	AND error: a symptom (state) is not also a process	medicine-01	yes	
+medicine	hygiene	resense	14495080 condition	medium	everyday and clinical hygiene is the sanitary condition and practice (personal or hand hygiene), not a science	medicine-01	yes	
+medicine	hygienist	drop		medium	holds an odd sense (medical specialist in hygiene); the everyday hygienist is a dental hygienist, not a doctor	medicine-01	yes	
+medicine	hyperkalemia	cut	event	high	AND error: a blood finding (state) is not an event	medicine-01	yes	
+medicine	hypoglycemia	cut	event	high	AND error: a blood finding (state) is not an event	medicine-01	yes	
+medicine	hypokalemia	cut	event	high	AND error: a blood finding (state) is not an event	medicine-01	yes	
+medicine	hyponatremia	cut	event	high	AND error: a blood finding (state) is not an event	medicine-01	yes	
+medicine	incubation-period	cut	state	high	AND error: a period of time is not a state	medicine-01	yes	
+medicine	insanity	move	condition mental-disorder	medium	a disorder of the mind is a mental disorder; mental-disorder has no children yet	medicine-01	yes	
+medicine	insulin-shock	resense	14068177 hypoglycemia	medium	in medicine insulin shock is hypoglycemic coma (WordNet sense 1); the shock-therapy sense is obsolete	medicine-01	yes	
+medicine	jaundice	cut	event	high	AND error: a sign/symptom (state) is not also an event	medicine-01	yes	
+medicine	keratoscope	move	instrument medical-instrument	medium	gloss: a medical instrument; core medical-instrument exists	medicine-01	yes	
+medicine	kibe	drop		medium	archaic word for an ulcerated chilblain	medicine-01	yes	
+medicine	lazaretto	drop		medium	archaic: a historic leper or quarantine house	medicine-01	yes	
+medicine	low-level-radioactive-waste	drop		medium	not of the medicine domain: nuclear waste management	medicine-01	yes	
+medicine	medical-specialty	resense	- medicine	low	gloss says nonsurgical branches only, yet dentistry (with dental-surgery), obstetrics, ophthalmology, traumatology sit under it; gloss should be any branch of medicine	medicine-01		
+medicine	menorrhagia	cut	process	medium	AND error: a symptom (state) is not also a process	medicine-01	yes	
+medicine	midwife	move	nurse professional	medium	not every midwife is a nurse; nurse-midwife is the nurse kind	medicine-01	yes	
+medicine	nonsocial-infection	rename	nosocomial-infection	high	"""nonsocial"" is WordNet's misspelling; the medical name of a hospital-acquired infection is nosocomial infection (then under infection)"	medicine-01	yes	
+medicine	numbness	cut	event	high	AND error: a symptom (state) is not also an event	medicine-01	yes	
+medicine	opportunistic-infection	move	condition infection	medium	an infection; core-05 re-senses infection to the pathological state 14174549	medicine-01	yes	
+medicine	organ-incompetence	drop		medium	duplicate of organ-insufficiency (inability of an organ to function)	medicine-01	yes	
+medicine	organ-insufficiency	move	attribute dysfunction	medium	a failure of an organ to function is a dysfunction (a condition), the parent its dropped duplicate had in spirit	medicine-01	yes	
+medicine	orthoptist	move	medical-specialist specialist	medium	orthoptists are allied health specialists, not doctors	medicine-01	yes	
+medicine	palpitation	cut	event	high	AND error: a symptom (state) is not also an event	medicine-01	yes	
+medicine	palsy	resense	14558226 dysfunction	medium	palsy means paralysis (Bell's palsy, cerebral palsy); node holds the rare tremor sense	medicine-01	yes	
+medicine	paronychia	move	condition infection	medium	an infection (gloss); core-05 re-senses infection to the pathological state 14174549	medicine-01	yes	
+medicine	pathological-plaque	cut	physical-object	medium	AND error: physical-object and symptom (state); lesions are filed as symptoms in this pack	medicine-01	yes	
+medicine	pathological-strangulation	cut	event	medium	AND error: filed as condition and event; keep the condition	medicine-01	yes	
+medicine	pharmacy	resense	03249342 organization place	medium	Peter ruled pharmacy is the shop (2026-10-16), but the gloss and wn30 still hold the field 06055300; parents unchanged	medicine-01		Peter ruled on this name (rulings-v14-peter, doubtful-v14)
+medicine	protozoal-infection	move	condition infection	medium	an infection; core-05 re-senses infection to the pathological state 14174549	medicine-01	yes	
+medicine	psychosis	move	condition mental-disorder	medium	psychosis is a mental disorder; mental-disorder has no children yet	medicine-01	yes	
+medicine	psychotherapy	drop		medium	holds the branch-of-psychiatry sense; plain psychotherapy is the treatment, held by psychotherapy-treatment	medicine-01	yes	
+medicine	psychotherapy-treatment	rename	psychotherapy	medium	the treatment is what psychotherapy means; after the branch-sense node is dropped	medicine-01	yes	
+medicine	radiographer	cut	medical-specialist	high	a radiographer is a technician, not a doctor (medical-specialist < doctor)	medicine-01	yes	
+medicine	respiratory-tract-infection	move	condition infection	medium	an infection; core-05 re-senses infection to the pathological state 14174549	medicine-01	yes	
+medicine	restless-legs-syndrome	cut	event	high	AND error: a syndrome (state) is not also an event	medicine-01	yes	
+medicine	scar	cut	symptom	medium	AND error: tissue (physical) and symptom (state); a healed scar is tissue, not a symptom	medicine-01	yes	
+medicine	scatology	drop		medium	rare sense (stool analysis); the word means a preoccupation with obscenity	medicine-01	yes	
+medicine	schistosomiasis	move	condition infection	medium	WordNet hyponym of infection 14174549; core-05 re-senses infection to that pathological state	medicine-01	yes	
+medicine	sepsis	move	condition infection	medium	WordNet hyponym of infection 14174549; core-05 re-senses infection to that pathological state	medicine-01	yes	
+medicine	skin-eruption	resense	14321814 symptom	medium	holds plain eruption (14321469); the name skin-eruption is WordNet 14321814 (exanthem)	medicine-01	yes	
+medicine	sneeze	cut	process	high	AND error: a symptom (state) is not also a process; sibling cough is sign+symptom only	medicine-01	yes	
+medicine	spasm	cut	event	medium	AND error: symptom (state) and event; also the node holds the rare hollow-organ sense, while plain spasm (muscle spasm, 14360459) is held by cramp	medicine-01	yes	
+medicine	speculum	move	instrument medical-instrument	medium	gloss: a medical instrument; core medical-instrument exists	medicine-01	yes	
+medicine	sprain	cut	event	high	AND error: an injury (state) is not also an event	medicine-01	yes	
+medicine	staphylococcal-infection	move	condition infection	medium	an infection; core-05 re-senses infection to the pathological state 14174549	medicine-01	yes	
+medicine	streptococcal-sore-throat	parent+	infection	medium	an infection of the pharynx (gloss); core-05 re-senses infection to the pathological state 14174549	medicine-01	yes	
+medicine	sty	move	condition infection	medium	an infection (gloss); core-05 re-senses infection to the pathological state 14174549	medicine-01	yes	
+medicine	sudorific	drop		medium	duplicate of diaphoretic (a medicine that causes sweating), and filed under substance instead of medication	medicine-01	yes	
+medicine	sunburn	cut	event	high	AND error: a burn (state) is not also an event	medicine-01	yes	
+medicine	superinfection	move	condition infection	medium	an infection; core-05 re-senses infection to the pathological state 14174549	medicine-01	yes	
+medicine	suprainfection	move	condition infection	medium	an infection; core-05 re-senses infection to the pathological state 14174549	medicine-01	yes	
+medicine	surgeon-general	drop		medium	a title or office, not a kind; and the rarer of its two senses	medicine-01	yes	
+medicine	surgical-instrument	move	instrument medical-instrument	medium	gloss: a medical instrument used in surgery; core medical-instrument exists	medicine-01	yes	
+medicine	symptomatic-effect	drop		medium	vague duplicate of symptom (a symptom caused by an illness or a drug)	medicine-01	yes	
+medicine	tapeworm-infection	move	condition infection	medium	an infection; core-05 re-senses infection to the pathological state 14174549	medicine-01	yes	
+medicine	tetanus	move	condition infection	medium	an infection (gloss); core-05 re-senses infection to the pathological state 14174549	medicine-01	yes	
+medicine	thermograph	move	instrument medical-instrument	medium	gloss: a medical instrument; core medical-instrument exists	medicine-01	yes	
+medicine	toxoplasmosis	move	condition infection	medium	an infection (gloss); core-05 re-senses infection to the pathological state 14174549	medicine-01	yes	
+medicine	trench-foot	move	frostbite injury	high	its own gloss: resembles frostbite but without freezing, so it is not frostbite	medicine-01	yes	
+medicine	vaccinia	move	condition infection	medium	a local infection (gloss); core-05 re-senses infection to the pathological state 14174549	medicine-01	yes	
+medicine	viral-infection	move	condition infection	medium	an infection; core-05 re-senses infection to the pathological state 14174549	medicine-01	yes	
+medicine	whiplash	cut	event	high	AND error: an injury (state) is not also an event	medicine-01	yes	
+medicine	whitlow	move	condition infection	medium	a purulent infection (gloss); core-05 re-senses infection to the pathological state 14174549	medicine-01	yes	
+medicine	williams-syndrome	cut	event	high	AND error: a congenital disorder is a state, not an event	medicine-01	yes	
+medicine	zymosis	drop		medium	archaic sense; the word's common sense is fermentation	medicine-01	yes	
+occupations	acrobat	cut	professional	medium	professional is the learned professions; an acrobat is a performer	occupations-01	yes	
+occupations	ambassador	cut	manager	high	an ambassador does not control resources and expenditures; diplomat already covers it [also occupations-01: cut member]	occupations-01	yes	
+occupations	ambassador	cut	member	medium	member of a social group adds nothing true of every ambassador (GPT alignment)	occupations-01	yes	
+occupations	analyst.person	drop		low	duplicate of core analyst (same synset); drop once assayer and intelligence-analyst move	occupations-01		drop of a node with children or users
+occupations	announcer	resense	09795124 worker	medium	held sense is anyone who proclaims publicly; the occupation reads news on radio or TV	occupations-01	yes	
+occupations	arbiter	cut	professional	medium	an arbiter need not be in a learned profession; specialist covers it	occupations-01	yes	
+occupations	assayer	move	analyst.person analyst	high	analyst.person duplicates core analyst (same synset 09790482)	occupations-01	yes	
+occupations	associate	drop		medium	a role (someone who joins with others), not an occupation	occupations-01	yes	
+occupations	bandleader	cut	professional	medium	professional is the learned professions; musician covers it	occupations-01	yes	
+occupations	baritone	cut	professional	medium	professional is the learned professions (doctor, lawyer, clergy); a singer is not in one	occupations-01	yes	
+occupations	barrister	cut	jurist	medium	jurist is a legal scholar; a barrister is a practising lawyer, lawyer covers it	occupations-01	yes	
+occupations	basket-maker	drop		high	held sense is the Basket Maker people (early Amerindians), not a trade; basketweaver holds the craft	occupations-01	yes	
+occupations	beachcomber	drop		medium	not an occupation (a vagrant on a beach)	occupations-01	yes	
+occupations	bookmaker	resense	09866222 worker	medium	"everyday bookmaker takes bets; ""a maker of books"" is rare"	occupations-01	yes	
+occupations	butcher	resense	09884391 merchant worker	medium	held sense is the slaughterer, for whom merchant is false; everyday butcher is the meat retailer, parents unchanged	occupations-01	yes	
+occupations	canon	move	person priest	medium	gloss: a priest who is a member of a cathedral chapter	occupations-01	yes	
+occupations	cellist	cut	professional	medium	professional is the learned professions; instrumentalist covers it	occupations-01	yes	
+occupations	chancellor-of-the-exchequer	drop		low	a single British office, close to an instance	occupations-01		
+occupations	changer	drop		high	vague (a person who changes something)	occupations-01	yes	
+occupations	chief-executive-officer	cut	member	medium	not every CEO is a member of the group they run; chief and worker cover it	occupations-01	yes	
+occupations	clown	resense	09930876 comedian	high	"held sense is ""a rude or vulgar fool""; the occupation is the circus clown, a comedian"	occupations-01	yes	
+occupations	comedian	cut	professional	medium	professional is the learned professions; a comedian is a performer	occupations-01	yes	
+occupations	conciliator	drop		medium	a role, not an occupation (someone who tries to bring peace); mediator covers the job	occupations-01	yes	
+occupations	correspondent	resense	09966710 reporter	high	held sense is a letter writer; the occupation is the news correspondent	occupations-01	yes	
+occupations	counsel	cut	jurist	medium	jurist is a legal scholar; counsel is a practising lawyer, lawyer covers it	occupations-01	yes	
+occupations	cowgirl	cut	breeder	high	a cowgirl tends cattle; she does not breed animals	occupations-01	yes	
+occupations	dairymaid	cut	farmer	high	a dairymaid works in a dairy; farmer means she operates the farm	occupations-01	yes	
+occupations	dancer	cut	professional	medium	professional is the learned professions; a dancer is a performer (chain to ballet-dancer, tap-dancer)	occupations-01	yes	
+occupations	dancing-partner	drop		medium	a role, not an occupation	occupations-01	yes	
+occupations	dawdler	drop		high	not an occupation	occupations-01	yes	
+occupations	developer	rename	property-developer	low	in occupations a developer is first a software developer (computing has programmer); free the plain name?	occupations-01		
+occupations	dispatcher	resense	10017422 employee	high	held sense is the race starter; everyday dispatcher sends out vehicles	occupations-01	yes	
+occupations	drafter	resense	10029269 skilled-worker	medium	held sense is a writer of a draft; the occupation (drafter, draftsperson) draws plans	occupations-01	yes	
+occupations	elder	drop		medium	held sense is a relation (someone older than you), not an occupation	occupations-01	yes	
+occupations	energizer	drop		high	not an occupation, vague	occupations-01	yes	
+occupations	executive-director	drop		medium	duplicate of core executive (same synset 10069645, same gloss)	occupations-01	yes	
+occupations	fellow	drop		medium	"held sense is ""a boy or man"", not an occupation"	occupations-01	yes	
+occupations	forecaster	move	visionary person	high	"a weather or economic forecaster has no ""unusual powers of foresight""; visionary is false of every forecaster"	occupations-01	yes	
+occupations	forger	rename	forge-worker	low	everyday forger is a counterfeiter; the forge operator could take a plain trade name	occupations-01		
+occupations	gambler	drop		medium	an activity, not an occupation (bookmaker re-sensed off it)	occupations-01	yes	
+occupations	girl	drop		low	"not an occupation (""a young woman""); drop once its child lass goes"	occupations-01		drop of a node with children or users
+occupations	groom	resense	10644301 worker	high	held sense is the bridegroom; the occupation is the stable groom	occupations-01	yes	
+occupations	groundsman	cut	farmer	high	a groundsman maintains grounds of an estate, park or field; he does not operate a farm	occupations-01	yes	
+occupations	guitarist	move	professional instrumentalist	medium	a guitarist plays an instrument; professional (learned professions) is false	occupations-01	yes	
+occupations	hanger.person	drop		medium	vague (a worker who hangs something)	occupations-01	yes	
+occupations	head-of-state	move	politician leader	medium	a hereditary monarch is a head of state but not a party politician	occupations-01	yes	
+occupations	headhunter	resense	10163593 worker	high	held sense is a savage who takes heads; the occupation is the recruiter of personnel	occupations-01	yes	
+occupations	hearer	drop		high	not an occupation (someone who listens)	occupations-01	yes	
+occupations	herder	cut	breeder	high	a herder drives a herd; breeder (and through it farmer, operates a farm) is false of nomadic herders	occupations-01	yes	
+occupations	horticulturist	cut	farmer	medium	an expert in the science of cultivating plants does not necessarily operate a farm	occupations-01	yes	
+occupations	hypnotist	move	psychologist person	medium	stage hypnotists are not psychologists	occupations-01	yes	
+occupations	imp	drop		high	not an occupation (a mischievous person)	occupations-01	yes	
+occupations	impersonator	resense	10319163 artist	medium	held sense is a fraudster; the occupation is the entertainer who does impressions	occupations-01	yes	
+occupations	inspector	rename	police-inspector	medium	holds the police rank; plain inspector is an official who inspects (core examiner holds that synset)	occupations-01	yes	
+occupations	intelligence-analyst	move	analyst.person analyst	high	analyst.person duplicates core analyst (same synset 09790482)	occupations-01	yes	
+occupations	jogger	drop		high	not an occupation	occupations-01	yes	
+occupations	joiner	resense	10223869 woodworker	high	held sense is someone who likes joining groups; the occupation is the woodworker (parent cabinetmaker was for this sense)	occupations-01	yes	
+occupations	jumper	drop		high	not an occupation (a person who jumps)	occupations-01	yes	
+occupations	knacker	resense	10238029 worker	medium	everyday knacker buys up old horses for slaughter; the ship-breaker sense is rare	occupations-01	yes	
+occupations	lass	drop		high	not an occupation (an unmarried young woman)	occupations-01	yes	
+occupations	libertine	drop		high	not an occupation (a dissolute person)	occupations-01	yes	
+occupations	litigant	drop		medium	a role in a lawsuit, not an occupation	occupations-01	yes	
+occupations	lobbyist	move	professional worker	medium	lobbying is not a learned profession	occupations-01	yes	
+occupations	magician	cut	professional	medium	professional is the learned professions; a magician is a performer	occupations-01	yes	
+occupations	magistrate	move	jurist judge	medium	a magistrate is a (often lay) judge, not a legal scholar; jurist is false of lay magistrates	occupations-01	yes	
+occupations	matron	drop		medium	held sense is a staid married woman; the nursing sense is medicine's nursing-matron	occupations-01	yes	
+occupations	mediator	cut	professional	medium	a mediator need not be in a learned profession; specialist covers it	occupations-01	yes	
+occupations	missionary	move	educator worker	medium	a missionary converts people; educator (someone who educates young people) is false [also occupations-01: cut professional]	occupations-01	yes	
+occupations	missionary	cut	professional	medium	lay missionaries are not in a learned profession	occupations-01	yes	
+occupations	murderer	drop		medium	not an occupation; its parent worker is false	occupations-01	yes	
+occupations	narrator	cut	professional	medium	professional is the learned professions; not every narrator is in one	occupations-01	yes	
+occupations	numerologist	drop		medium	a believer in numerology, not an occupation	occupations-01	yes	
+occupations	orderly.person	rename	military-orderly	medium	.person does not tell it from orderly (hospital), also a person	occupations-01	yes	
+occupations	organist	cut	professional	medium	professional is the learned professions; instrumentalist covers it	occupations-01	yes	
+occupations	orthoepist	drop		medium	odd, archaic (17th-18th century spelling reformers)	occupations-01	yes	
+occupations	paperhanger	resense	10397001 craftsman	high	held sense is a passer of bad checks; the occupation is the wallpaper hanger	occupations-01	yes	
+occupations	pearl-diver	move	craftsman diver	high	a pearl diver is a diver, not a craftsman of a trade or handicraft	occupations-01	yes	
+occupations	pianist	cut	professional	medium	professional is the learned professions; instrumentalist covers it	occupations-01	yes	
+occupations	picker	drop		medium	vague (a person who chooses or selects out)	occupations-01	yes	
+occupations	pomologist	cut	engineer	medium	a pomologist studies or grows fruit trees; not an engineer	occupations-01	yes	
+occupations	president-of-the-united-states	drop		low	a single office, close to an instance	occupations-01		
+occupations	president.person	rename	company-president	medium	.person does not tell it from president (of a republic), also a person	occupations-01	yes	
+occupations	promoter	resense	10593745 booker	medium	held sense is a supporter, not a worker; the occupation is the impresario (synset now held by showman, dropped)	occupations-01	yes	
+occupations	psychotherapist	move	scientist therapist	medium	a psychotherapist is a therapist (gloss), not necessarily a scientist	occupations-01	yes	
+occupations	reckoner	drop		medium	archaic and vague (an expert at calculation)	occupations-01	yes	
+occupations	registrar	resense	10516874 official	medium	held sense is a company's stock registrar; everyday registrar keeps official records	occupations-01	yes	
+occupations	remover	drop		medium	duplicate of mover (furniture remover, WN hyponym of mover)	occupations-01	yes	
+occupations	salter	cut	merchant	high	gloss is someone who preserves food with salt, not a retail merchant	occupations-01	yes	
+occupations	saxophonist	move	professional instrumentalist	medium	a saxophonist plays an instrument; professional (learned professions) is false	occupations-01	yes	
+occupations	scribe	drop		medium	held sense is slang for journalist; copyist holds the scribe synset	occupations-01	yes	
+occupations	seasoner	drop		medium	odd, not an occupation (a cook who uses seasonings)	occupations-01	yes	
+occupations	secretary-general	cut	chairman	medium	a secretary-general is not the officer who presides at the meetings (UN SG does not chair the Assembly)	occupations-01	yes	
+occupations	shaver	drop		high	not an occupation (an adult male who shaves)	occupations-01	yes	
+occupations	shepherd	resense	10587605 herder	high	held sense is a clergyman; everyday shepherd herds sheep	occupations-01	yes	
+occupations	shooter	drop		medium	not an occupation (a person who shoots)	occupations-01	yes	
+occupations	showman	drop		medium	duplicate: promoter takes the impresario synset 10593745	occupations-01	yes	
+occupations	sitter	resense	09829305 worker	high	"held sense is ""an organism that sits""; the occupation is the babysitter"	occupations-01	yes	
+occupations	skipper	resense	10298912 worker	high	held sense is a truant student; everyday skipper commands a ship	occupations-01	yes	
+occupations	smasher	drop		high	not an occupation (an attractive woman)	occupations-01	yes	
+occupations	smith	resense	10614629 craftsman	high	"held sense is the vague ""works at something specified""; smith is the metalworker (fits gunsmith, locksmith, tinsmith)"	occupations-01	yes	
+occupations	smuggler	cut	worker	medium	not every smuggler works at it as an occupation	occupations-01	yes	
+occupations	social-climber	drop		high	not an occupation	occupations-01	yes	
+occupations	sports-announcer	move	professional announcer	medium	a sports announcer is an announcer, not in a learned profession	occupations-01	yes	
+occupations	stockbroker	cut	trader	high	a stockbroker is an agent, not a trader keeping an inventory (trader brings merchant, retail trade)	occupations-01	yes	
+occupations	technician	cut	professional	medium	a technician is a skilled worker, not in a learned profession (chain to dental-technician, webmaster)	occupations-01	yes	
+occupations	tenor	cut	instrumentalist	high	a tenor sings; instrumentalist is someone who plays a musical instrument [also occupations-01: cut professional]	occupations-01	yes	
+occupations	tenor	cut	professional	medium	professional is the learned professions; most tenors are not in one	occupations-01	yes	
+occupations	tinker	resense	10711852 mender	medium	held sense is a hobbyist; the occupation is the travelling mender of pots	occupations-01	yes	
+occupations	topper	drop		medium	vague (a worker who adds the top to something)	occupations-01	yes	
+occupations	transferer	drop		high	vague (someone who transfers something)	occupations-01	yes	
+occupations	translator	cut	scientist	high	a translator is not a scientist	occupations-01	yes	
+occupations	traveler	drop		medium	not an occupation (a person who changes location)	occupations-01	yes	
+occupations	trumpeter	move	professional instrumentalist	medium	a trumpeter plays an instrument; professional (learned professions) is false	occupations-01	yes	
+occupations	undoer	drop		high	vague (a person who unfastens or opens)	occupations-01	yes	
+occupations	usher.person	rename	court-usher	medium	.person does not tell it from usher, also a person	occupations-01	yes	
+occupations	vicar	resense	10750188 priest	medium	everyday vicar is the Church of England parish priest, not the Roman Catholic deputy	occupations-01	yes	
+occupations	violinist	cut	professional	medium	professional is the learned professions; instrumentalist covers it	occupations-01	yes	
+occupations	visionary	drop		low	not an occupation; drop once forecaster moves off	occupations-01		drop of a node with children or users
+occupations	window-washer	drop		medium	duplicate of window-cleaner	occupations-01	yes	
+physics	anomaly	rename	orbital-anomaly	medium	the plain word means a deviation from the norm; this is the astronomer's orbital angle	physics-01	yes	
+physics	antilepton	parent+	elementary-particle	high	keeps positron, antimuon, antineutrino and antitauon elementary once antiparticle leaves elementary-particle	physics-01	yes	
+physics	antiparticle	move	elementary-particle particle	high	antiprotons and antineutrons are antiparticles but composite, so antiparticle is not a kind of elementary particle	physics-01	yes	
+physics	astronomer	move	physicist scientist	medium	not every astronomer is a physicist (amateur and early astronomers); astronomy is the scientist's subject	physics-01	yes	
+physics	barycenter	cut	point	high	"core point is ""a V shape""; center-point already gives the location"	physics-01	yes	
+physics	cosmic-string	move	elementary-particle natural-object	medium	a cosmic string is a hypothetical topological defect of cosmic length, not a subatomic particle	physics-01	yes	
+physics	gravity-wave	drop		medium	duplicate of space's gravitational-wave; to physicists a gravity wave is a buoyancy wave in a fluid, not this sense	physics-01	yes	
+physics	hadron	move	elementary-particle particle	high	hadrons are composite (made of quarks), so not elementary to a physicist; highest wrong link for baryon, meson, nucleon, proton, neutron, hyperon	physics-01	yes	
+physics	libration	move	orbital-variation oscillation	medium	libration is a real or apparent rocking of a moon, mostly an optical effect of its orbit, not a perturbation of the orbit	physics-01	yes	
+physics	meniscus	move	physical-object surface	medium	the meniscus is the curved surface of a liquid, not a separate object (WordNet: surface)	physics-01	yes	
+physics	oscillation	move	wave-motion variation	medium	an oscillation (pendulum, LC circuit) need not propagate, so it is not a wave; it is a periodic variation	physics-01	yes	
+physics	planck's-law	rename	planck-relation	medium	this node holds E=hv; physicists' Planck's law is the black-body law, held by planck's-radiation-law, which could then take the plain name	physics-01	yes	
+physics	strange-particle	move	elementary-particle hadron	medium	strange particles (kaons, hyperons) are hadrons carrying a strange quark, not elementary	physics-01	yes	
+physics	theory-of-gravitation	drop		medium	same content as law-of-gravitation (Newton's inverse-square law), filed again as a theory	physics-01	yes	
+space	age-of-the-universe	drop		medium	a single value (13.8 billion years), not a kind; the pack keeps no numbers	space-01	yes	
+space	amateur-astronomy	cut	astronomy	medium	a hobby (activity), not a branch of the science; AND would make it a field of study	space-01	yes	
+space	asterism	move	natural-object collection	medium	a pattern of stars seen from Earth, not one physical object	space-01	yes	
+space	astronomical-conjunction	move	encounter natural-event	medium	core encounter is a casual or unexpected meeting; conjunctions are predictable alignments, like opposition and transit (natural-event)	space-01	yes	
+space	bayer-designation	move	code name	medium	core code is computer code; a Bayer designation (Alpha Centauri) is a star's name	space-01	yes	
+space	big-bang	move	explosion natural-event	medium	core explosion is caused by a chemical or nuclear reaction; the Big Bang was an expansion of space, not such an explosion	space-01	yes	
+space	black-hole	move	stellar-remnant celestial-body	high	supermassive black holes (its child) do not come from the collapse of a star	space-01	yes	
+space	celestial-point	move	point place	high	"core point is ""a V shape"", which makes every apsis, apogee, perihelion, pole and Lagrange point a shape and an attribute"	space-01	yes	
+space	chiron	drop		medium	one obscure asteroid, not among the pack's chosen instances	space-01	yes	
+space	cnsa	drop		low	a single organization filed as a class; the pack's design lists named bodies and craft as instances, not agencies	space-01		
+space	collimator	resense	03070587 instrument	medium	"to optics and astronomy a collimator makes a parallel beam; the ""small finder telescope"" sense is odd"	space-01	yes	
+space	equatorial-telescope	move	instrument telescope	medium	its gloss says it is a telescope; instrument is too weak	space-01	yes	
+space	european-space-agency	drop		low	a single organization filed as a class; the pack's design lists named bodies and craft as instances, not agencies	space-01		
+space	event-horizon	move	region surface	medium	core region is a location on the surface of the Earth; an event horizon is the boundary of a black hole	space-01	yes	
+space	field-glass	drop		medium	a terrestrial spyglass, not astronomy or spaceflight	space-01	yes	
+space	gravitational-lens	rename	gravitational-lensing	medium	the node is filed as an event; the lens itself is a mass (a galaxy or cluster) acting as one, a role	space-01	yes	
+space	gravitational-wave	move	wave physical-phenomenon	high	core wave is a ridge on the surface of water	space-01	yes	
+space	heliosphere	move	region place	medium	core region is a location on the surface of the Earth	space-01	yes	
+space	hill-sphere	move	region place	medium	core region is a location on the surface of the Earth	space-01	yes	
+space	host-star	drop		medium	a role: a star counts as a host only relative to its planets	space-01	yes	
+space	international-astronomical-union	drop		low	a single organization filed as a class; the pack's design lists named bodies and craft as instances, not agencies	space-01		
+space	isro	drop		low	a single organization filed as a class; the pack's design lists named bodies and craft as instances, not agencies	space-01		
+space	j2000	drop		low	a single reference epoch filed as a class of time-standard	space-01		
+space	meteorite	move	meteoroid natural-object	medium	a meteorite is the piece that lands on Earth; meteoroid < celestial-body puts it in space and in the sky	space-01	yes	
+space	nasa	drop		low	a single organization filed as a class; the pack's design lists named bodies and craft as instances, not agencies	space-01		
+space	neutron-star	cut	star	medium	core star is powered by fusion and a neutron star is not; stellar-remnant already holds it	space-01	yes	
+space	new-general-catalogue	drop		low	a single catalogue filed as a class	space-01		
+space	observable-universe	move	region place	medium	core region is a location on the surface of the Earth	space-01	yes	
+space	optical-telescope	move	astronomical-telescope telescope	medium	an optical telescope is any telescope that collects light; galilean-telescope (no longer used in astronomy) and field-glass sit below it	space-01	yes	
+space	partial-eclipse	move	event eclipse	medium	a partial eclipse is an eclipse; the pack's own eclipse node holds the others	space-01	yes	
+space	planetary-rover	move	spacecraft vehicle	medium	a rover drives on a surface and does not fly through space itself	space-01	yes	
+space	primary-body	drop		medium	a role: a body counts as primary only relative to what orbits it	space-01	yes	
+space	protostar	move	star celestial-body	medium	not yet fusing hydrogen, so not a star in core's sense	space-01	yes	
+space	sidereal-day	cut	sidereal-time	high	a sidereal day is a length of time, not a time scale (time-standard < standard < information); day already holds it	space-01	yes	
+space	sidereal-hour	move	sidereal-time time-unit	high	a unit of time, not a time scale (sidereal-time < time-standard < information)	space-01	yes	
+space	sidereal-month	move	sidereal-time time-unit	high	a period of 27.3 days, not a time scale (sidereal-time < time-standard < information)	space-01	yes	
+space	sidereal-year	move	sidereal-time time-unit	high	a period of time, not a time scale (sidereal-time < time-standard < information)	space-01	yes	
+space	siderite	rename	iron-meteorite	medium	siderite is first the iron-carbonate mineral; iron-meteorite is the current term	space-01	yes	
+space	space-probe	move	vehicle spacecraft	high	"a space probe is an uncrewed spacecraft (WordNet's ""guided missile"" gloss is wrong)"	space-01	yes	
+space	space-weather	move	astrophysics condition	medium	space weather is the changing conditions in space (solar wind, storms), not a branch of astrophysics	space-01	yes	
+space	spacex	drop		low	a single company filed as a class; the pack's design lists named bodies and craft as instances, not companies	space-01		
+space	star-chart	cut	map	medium	core map is a picture of the Earth's surface (about(place)); a star chart shows the sky	space-01	yes	
+space	supernova	move	star natural-event	medium	to astronomers a supernova is the explosion of a star, an event, not a kind of star	space-01	yes	
+space	total-eclipse	move	event eclipse	medium	a total eclipse is an eclipse; the pack's own eclipse node holds the others	space-01	yes	
+space	white-dwarf	cut	star	medium	core star is powered by fusion and a white dwarf is not; stellar-remnant already holds it	space-01	yes	

@@ -1,8 +1,7 @@
 # ontodag store v1
-#:canonical 6.0 7362373300ea29ed4b5c2e6ed5239b752a4b4a6a055b550bf4366576bb0457fa 2
+#:canonical 6.0 ccc4529b1186f3a3e8b4e5418935bbbf4efd96547c9ba61993eda67bc10a47ea 2
 51-percent-attack act
 about enclosing-dimension
-account '*'
 account-abstraction 'about(ethereum)' method
 account-statement '*'
 #:meta accounting-entry '{"gloss": "a written record of a commercial transaction", "wn30": "13405296-n"}'
@@ -19,7 +18,6 @@ activity '*'
 #:meta actual-purchase-price '{"gloss": "the price at which something is actually purchased", "wn30": "13305262-n"}'
 actual-purchase-price purchase-price
 actuary professional
-ad '*'
 #:meta adhesion-contract '{"gloss": "a contract that heavily restricts one party while leaving the other free (as some standard form printed contracts); implies inequality in bargaining power", "wn30": "06521878-n"}'
 adhesion-contract contract
 #:meta adjusting-entry '{"gloss": "an accounting entry made at the end of an accounting period to allocate items between accounting periods", "wn30": "13405480-n"}'
@@ -62,8 +60,6 @@ anti-money-laundering procedure
 arbitrage investing
 arbitrage-pricing-theory 'about(price)' theory
 area 'linear-dimension(area)'
-#:meta argosy '{"gloss": "one or more large merchant ships", "wn30": "08386280-n"}'
-argosy fleet
 #:meta arrears '{"gloss": "an unpaid overdue debt", "wn30": "13397443-n"}'
 arrears debt
 #:meta art-dealer '{"gloss": "a dealer in works of art requiring esthetic evaluation", "wn30": "09810983-n"}'
@@ -74,34 +70,29 @@ artifact '*'
 #:meta 'artisan'"'"'s-lien' '{"gloss": "lien permitting an artisan to retain possession of a piece of work until has been paid for", "wn30": "13401261-n"}'
 'artisan'"'"'s-lien' lien
 asian-option exotic-option
-ask-price price purchase-price
 #:meta asking-price '{"gloss": "the price at which something is offered for sale", "wn30": "13304009-n"}'
 asking-price purchase-price
-asset '*'
 asset-allocation asset-management investing
 asset-backed-security security-finance
 asset-class group
 asset-management financial-services management
 #:meta asset-realization '{"gloss": "a sale in order to obtain money (as a sale of stock or a sale of the estate of a bankrupt person) or the money so obtained", "wn30": "01119620-n"}'
-asset-realization cut-rate-sale
-#:meta assurance-insurance '{"gloss": "a British term for some kinds of insurance", "wn30": "13345286-n"}'
-assurance-insurance possession
+asset-realization sale
 atomic-swap financial-transaction
 attribute '*'
 auction '*'
 auction-bid price purchase-price
 auction-theory 'about(auction)' game-theory
 #:meta audited-account '{"gloss": "an inspection of the accounting procedures and records by a trained accountant or CPA", "wn30": "13411157-n"}'
-audited-account information procedure
+audited-account procedure
 #:meta authorized-shares '{"gloss": "the maximum number of shares authorized under the terms of a corporation'"'"'s articles of incorporation", "wn30": "13342398-n"}'
 authorized-shares share-capital
 automated-market-maker decentralized-exchange
 #:meta automobile-insurance '{"gloss": "insurance against loss due to theft or traffic accidents", "wn30": "13345403-n"}'
-automobile-insurance possession
+automobile-insurance insurance possession
 #:meta automobile-loan '{"gloss": "a personal loan to purchase an automobile", "wn30": "13400024-n"}'
 automobile-loan personal-loan
-backlog '*'
-backorder trade-order
+backorder order
 backtesting procedure
 #:meta bad-debt '{"gloss": "a debt that is unlikely to be repaid", "wn30": "13398768-n"}'
 bad-debt debt
@@ -117,41 +108,36 @@ bank '*'
 bank-account possession
 #:meta bank-card '{"gloss": "a credit card issued by a bank", "wn30": "13376426-n"}'
 bank-card credit-card
+bank-check '*'
 #:meta bank-loan '{"gloss": "a loan made by a bank; to be repaid with interest on or before a fixed date", "wn30": "13374597-n"}'
 bank-loan loan
-#:meta banking '{"gloss": "transacting business with a bank; depositing or withdrawing funds or requesting a loan etc.", "wn30": "01100273-n"}'
+#:meta banking '{"gloss": "engaging in the business of keeping money for savings and checking accounts or for exchange or for issuing loans and credit etc.", "wn30": "01100658-n"}'
 banking financial-services
 barcode information
 barrier-option exotic-option
 barriers-to-entry condition
-barter '*'
 #:meta barterer '{"gloss": "a trader who exchanges goods and not money", "wn30": "09841400-n"}'
 barterer trader
-#:meta bazaar '{"gloss": "a sale of miscellany; often for charity", "wn30": "01118182-n"}'
-bazaar cut-rate-sale
-beacon-chain blockchain 'in(ethereum)'
+#:meta bazaar '{"gloss": "a street of small shops (especially in Orient)", "wn30": "02813645-n"}'
+bazaar marketplace
 #:meta bear-market '{"gloss": "a market characterized by falling prices for securities", "wn30": "08073130-n"}'
-bear-market event state
-#:meta bibliopole '{"gloss": "a dealer in secondhand books (especially rare or curious books)", "wn30": "09852826-n"}'
-bibliopole trader
+bear-market financial-market
 bid-ask-spread amount
 #:meta bid-price '{"gloss": "(stock market) the price at which a broker is willing to buy a certain security", "wn30": "13304186-n"}'
 bid-price price purchase-price
-bidder buyer
+bidder economic-agent
 bidding act
 #:meta bilateral-contract '{"gloss": "a contract involving mutual promises (each party is both promisor and promisee)", "wn30": "06522357-n"}'
 bilateral-contract contract
 #:meta bill-of-lading '{"gloss": "a receipt given by the carrier to the shipper acknowledging receipt of the goods being shipped and specifying the terms of delivery", "wn30": "06520742-n"}'
-bill-of-lading 'about(shipment)' receipt
+bill-of-lading 'about(shipment)' legal-document
 binary-option exotic-option
 bitcoin cryptocurrency
-bitcoin-core software
 bitcoin-halving 'about(bitcoin)' event
-bitcoin-improvement-proposal 'about(bitcoin-network)' white-paper
+bitcoin-improvement-proposal 'about(bitcoin-network)' document
 bitcoin-network blockchain
-bitcoin-taproot soft-fork
 #:meta black-market '{"gloss": "an illegal market in which goods or currencies are bought and sold in violation of rationing or controls", "wn30": "01097739-n"}'
-black-market activity market
+black-market market
 black-scholes-model 'about(option-finance)' information
 block-reward 'about(cryptocurrency-mining)' payment-amount
 blockchain distributed-ledger hash-chain list
@@ -169,8 +155,8 @@ bond-market financial-market
 bond-trading trading
 #:meta bonus '{"gloss": "an additional payment (or other remuneration) to employees as a means of increasing output", "wn30": "13273154-n"}'
 bonus payment-amount
-#:meta book-fair '{"gloss": "bazaar at which books are sold or auctioned off in order to raise funds for a worthy cause", "wn30": "01118338-n"}'
-book-fair bazaar
+#:meta book-fair '{"gloss": "fair organized by publishers or booksellers to promote the sale of books", "wn30": "08408418-n"}'
+book-fair fair
 book-value value
 #:meta bookdealer '{"gloss": "a dealer in books; a merchant who sells books", "wn30": "09865838-n"}'
 bookdealer merchant
@@ -188,7 +174,7 @@ budget '*'
 budget-constraint condition
 building '*'
 #:meta bull-market '{"gloss": "a market characterized by rising prices for securities", "wn30": "08073243-n"}'
-bull-market event state
+bull-market financial-market
 bullwhip-effect process
 bundle '*'
 #:meta bus-fare '{"gloss": "the fare charged for riding a bus or streetcar", "wn30": "13308432-n"}'
@@ -208,15 +194,13 @@ butcher '*'
 #:meta butcher-business '{"gloss": "the business of a butcher", "wn30": "00620424-n"}'
 butcher-business commercial-enterprise
 buy-and-hold investing
-#:meta buy-option '{"gloss": "an option to buy", "wn30": "13242410-n"}'
-buy-option stock-option-contract
 buyer economic-agent
 #:meta 'buyer'"'"'s-market' '{"gloss": "a market in which more people want to sell than want to buy", "wn30": "01097920-n"}'
-'buyer'"'"'s-market' activity
+'buyer'"'"'s-market' market
 #:meta buying '{"gloss": "the act of buying", "wn30": "00081572-n"}'
 buying exchange purchase
 byzantine-fault-tolerance consensus-mechanism
-bzz crypto-token
+bzz crypto-token cryptocurrency
 #:meta cab-fare '{"gloss": "the fare charged for riding in a taxicab", "wn30": "13308543-n"}'
 cab-fare fare
 calendar-dimension dimension
@@ -229,7 +213,7 @@ capital-asset-pricing-model 'about(rate-of-return)' information
 #:meta capital-expenditure '{"gloss": "the cost of long-term improvements", "wn30": "13278275-n"}'
 capital-expenditure expenditure
 capital-gain income
-capital-loss expense
+capital-loss loss
 capital-market financial-market
 #:meta capitalization '{"gloss": "the sale of capital stock", "wn30": "00093006-n"}'
 capitalization merchandising
@@ -237,8 +221,6 @@ capitalization merchandising
 car-boot-sale cut-rate-sale
 cargo-aircraft aircraft
 cargo-ship ship
-#:meta carriage-trade '{"gloss": "trade from upper-class customers", "wn30": "01106715-n"}'
-carriage-trade commerce
 #:meta carrier-company '{"gloss": "a commercial organization serving as a common carrier", "wn30": "03671473-n"}'
 carrier-company organization
 #:meta carrying-charge '{"gloss": "charge made for carrying an account or for merchandise sold on an installment plan", "wn30": "13307370-n"}'
@@ -248,7 +230,6 @@ carrying-cost opportunity-cost
 #:meta cartage '{"gloss": "the work of taking something away in a cart or truck and disposing of it", "wn30": "01106118-n"}'
 cartage hauling
 cartel organization
-cash '*'
 #:meta cash-account '{"gloss": "an account with a securities brokerage whose transactions are settled on a cash basis", "wn30": "13351680-n"}'
 cash-account brokerage-account
 #:meta cash-basis '{"gloss": "a method of accounting in which each item is entered as payments are received or made", "wn30": "13406852-n"}'
@@ -260,8 +241,6 @@ cash-flow income
 cash-flow-statement 'about(cash-flow)' financial-statement
 #:meta cash-payment '{"gloss": "prompt payment for goods or services in currency or by check", "wn30": "13386465-n"}'
 cash-payment payment-amount
-#:meta cellarage '{"gloss": "a charge for storing goods in a cellar", "wn30": "13320766-n"}'
-cellarage fee
 central-counterparty organization
 certificate-of-deposit security-finance
 #:meta chandler '{"gloss": "a retail dealer in provisions and supplies", "wn30": "09907804-n"}'
@@ -278,8 +257,6 @@ checking-account deposit-account
 #:meta cheesemonger '{"gloss": "someone who sells cheese", "wn30": "09913741-n"}'
 cheesemonger trader
 chunk-storage content-addressable-storage 'in(swarm-storage)'
-#:meta circularization '{"gloss": "circulating printed notices as a means of advertising", "wn30": "01101753-n"}'
-circularization advertising
 classified-advertising information
 #:meta classified-stock '{"gloss": "common stock classified as A or B where A has certain advantages (e.g., voting power) that B does not", "wn30": "13335008-n"}'
 classified-stock common-stock
@@ -296,7 +273,7 @@ coin '*'
 coinbase-transaction financial-transaction
 #:meta coinsurance '{"gloss": "insurance issued jointly by two or more underwriters", "wn30": "13346209-n"}'
 coinsurance insurance possession
-cold-chain logistics supply-chain
+cold-chain supply-chain
 #:meta cold-storage '{"gloss": "refrigerated storage for preservation", "wn30": "00811825-n"}'
 cold-storage storage
 #:meta collateral '{"gloss": "a security pledged for the repayment of a loan", "wn30": "13352865-n"}'
@@ -321,11 +298,10 @@ commercial-trade commerce
 commodity-exchange workplace
 commodity-market financial-market
 commodity-money money
-common-carrier freight-forwarder
 #:meta common-stock '{"gloss": "stock other than preferred stock; entitles the owner to a share of the corporation'"'"'s profits and a share of the voting power in shareholder elections", "wn30": "13335172-n"}'
 common-stock financial-asset share share-capital
 #:meta common-stock-equivalent '{"gloss": "preferred stock or convertible bonds or warrants that can be converted into common stock", "wn30": "13336492-n"}'
-common-stock-equivalent share-capital
+common-stock-equivalent convertible-security
 commons possession
 communications-protocol '*'
 company '*'
@@ -347,7 +323,7 @@ conditional-sale security-interest
 consensus-mechanism procedure
 consequence '*'
 #:meta consignment '{"gloss": "the delivery of goods for sale or disposal", "wn30": "00317917-n"}'
-consignment delivery sale
+consignment delivery
 consumer '*'
 consumer-choice 'about(consumer)' theory
 #:meta consumer-credit '{"gloss": "a line of credit extended for personal or household use", "wn30": "13374426-n"}'
@@ -366,11 +342,11 @@ control-account transaction-record
 #:meta control-stock '{"gloss": "shares owned by shareholders who have a controlling interest", "wn30": "13336650-n"}'
 control-stock share-capital
 #:meta controlling-interest '{"gloss": "ownership of more than 50% of a corporation'"'"'s voting shares", "wn30": "13287414-n"}'
-controlling-interest financial-interest share
+controlling-interest financial-interest
 #:meta convertible-bond '{"gloss": "a bond that can be converted to other securities under certain conditions", "wn30": "13337634-n"}'
 convertible-bond bond
 #:meta convertible-security '{"gloss": "a corporate security (usually bonds or preferred stock) that can be exchanged for another form of security (usually common stock)", "wn30": "13419325-n"}'
-convertible-security legal-document
+convertible-security security-finance
 #:meta corkage '{"gloss": "a charge added at a restaurant for every bottle of wine served that was not bought on the premises", "wn30": "13307995-n"}'
 corkage service-charge
 #:meta corn-exchange '{"gloss": "an exchange where grains are bought and sold", "wn30": "03110937-n"}'
@@ -380,8 +356,6 @@ corporate-bond bond
 #:meta corporate-finance '{"gloss": "the financial activities of corporation", "wn30": "01098968-n"}'
 corporate-finance financial-services
 corporation company
-#:meta cosmetician '{"gloss": "someone who sells or applies cosmetics", "wn30": "09967063-n"}'
-cosmetician seller
 #:meta cost-ledger '{"gloss": "ledger showing the accumulated costs classified in various ways", "wn30": "13404534-n"}'
 cost-ledger transaction-record
 #:meta cost-of-capital '{"gloss": "the opportunity cost of the funds employed as the result of an investment decision; the rate of return that a business could earn if it chose another investment with equivalent risk", "wn30": "13305932-n"}'
@@ -392,7 +366,7 @@ cost-of-living-allowance price-adjustment
 #:meta cost-overrun '{"gloss": "excess of cost over budget", "wn30": "13301835-n"}'
 cost-overrun expenditure
 #:meta cost-plus-contract '{"gloss": "a contract in which the contractor is paid his total cost plus a stated percentage of profit", "wn30": "06522784-n"}'
-cost-plus-contract contract pricing-strategy
+cost-plus-contract contract
 cost-plus-pricing pricing-strategy
 #:meta costermonger '{"gloss": "a hawker of fruit and vegetables from a barrow", "wn30": "09968128-n"}'
 costermonger peddler trader
@@ -409,8 +383,7 @@ cover-charge fixed-charge
 #:meta covered-option '{"gloss": "a put or call option backed by the shares underlying the option", "wn30": "00080619-n"}'
 covered-option purchase-option
 #:meta craft-fair '{"gloss": "a fair at which objects made by craftsmen are offered for sale", "wn30": "01118495-n"}'
-craft-fair bazaar
-craftsman '*'
+craft-fair fair
 credit '*'
 #:meta credit-account '{"gloss": "credit extended by a business to a customer", "wn30": "13375604-n"}'
 credit-account open-end-credit
@@ -432,14 +405,13 @@ credit-spread amount
 creditor economic-agent
 crime '*'
 cross-docking logistics
-crowdfunding business-model financial-services
-crypto-token cryptocurrency
-cryptocurrency currency payment-system
+crowdfunding financial-services
+crypto-token intangible-asset
+cryptocurrency currency
 cryptocurrency-exchange organization
 cryptocurrency-miner economic-agent
 cryptocurrency-mining process
 cryptocurrency-wallet software
-cryptographic-hash-function '*'
 #:meta cumulative-preferred '{"gloss": "preferred stock whose dividends if omitted accumulate until paid out", "wn30": "13336204-n"}'
 cumulative-preferred preferred-stock
 #:meta curb-market '{"gloss": "a stock market for trading in securities not listed on the New York Stock Exchange", "wn30": "03149261-n"}'
@@ -456,8 +428,6 @@ custodial-wallet cryptocurrency-wallet
 custodian-bank bank
 customs-broker professional
 cut-rate-sale '*'
-#:meta cutler '{"gloss": "a dealer in cutlery", "wn30": "09985207-n"}'
-cutler craftsman trader
 dai stablecoin
 #:meta damages '{"gloss": "a sum of money paid in compensation for loss or injury", "wn30": "13290676-n"}'
 damages compensation
@@ -493,12 +463,13 @@ decentralized-storage '*'
 #:meta deducted-amount '{"gloss": "an amount or percentage deducted", "wn30": "13274597-n"}'
 deducted-amount price-adjustment
 deductible payment-amount
-default-finance event failure
+default-finance event
 #:meta deferred-payment '{"gloss": "arrangement for deferred payment for goods and services", "wn30": "13374281-n"}'
 deferred-payment payment-amount
 #:meta deficit-spending '{"gloss": "spending money raised by borrowing; used by governments to stimulate their economy", "wn30": "01122754-n"}'
 deficit-spending spending
 delivery '*'
+demand '*'
 #:meta demand-deposit '{"gloss": "a bank deposit from which withdrawals can be made without notice", "wn30": "13381303-n"}'
 demand-deposit deposit
 demand-forecasting procedure
@@ -513,7 +484,7 @@ depreciation non-cash-expense
 #:meta depreciation-allowance '{"gloss": "an allowance for loss due to depreciation", "wn30": "13274487-n"}'
 depreciation-allowance price-adjustment
 #:meta depreciation-charge '{"gloss": "an amount periodically charged to expense or against revenue in compensation for depreciation of property", "wn30": "13307514-n"}'
-depreciation-charge price-charged
+depreciation-charge non-cash-expense
 derivative-finance security-finance
 derivatives-market financial-market
 device '*'
@@ -524,7 +495,7 @@ direct-debit financial-transaction payment
 #:meta direct-loan '{"gloss": "a loan by a lender to a customer without the use of a third party; direct lending gives the lender greater discretion in making loans", "wn30": "13399379-n"}'
 direct-loan loan
 #:meta direct-marketing '{"gloss": "marketing via a promotion delivered directly to the individual prospective customer", "wn30": "01112739-n"}'
-direct-marketing ad marketing
+direct-marketing marketing
 #:meta disability-benefit '{"gloss": "insurance benefits paid in case of disability", "wn30": "13297740-n"}'
 disability-benefit payment-amount
 #:meta discount-business '{"gloss": "the business of selling merchandise at a discount", "wn30": "01101114-n"}'
@@ -552,8 +523,6 @@ diversification asset-allocation
 divestiture sale
 dividend '*'
 division-of-labor practice
-#:meta divvy '{"gloss": "short for dividend; especially one paid by a cooperative society", "wn30": "13408641-n"}'
-divvy dividend
 #:meta dockage '{"gloss": "a fee charged for a vessel to use a dock", "wn30": "13321230-n"}'
 dockage fee
 document '*'
@@ -601,7 +570,7 @@ economic-production industry
 #:meta economic-rent '{"gloss": "the return derived from cultivated land in excess of that derived from the poorest land cultivated under similar conditions", "wn30": "13296270-n"}'
 economic-rent income
 #:meta economic-theory '{"gloss": "(economics) a theory of commercial activities (such as the production and consumption of goods)", "wn30": "05994935-n"}'
-economic-theory thinking
+economic-theory theory
 #:meta economic-utility '{"gloss": "(economics) a measure that is to be maximized in any situation involving choice", "wn30": "13580058-n"}'
 economic-utility attribute
 economics '*'
@@ -610,11 +579,12 @@ economy '*'
 efficient-market-hypothesis 'about(financial-market)' hypothesis
 electronic-communication-network financial-market
 electronic-funds-transfer payment
-elliptic-curve-cryptography '*'
 #:meta emolument '{"gloss": "compensation received by virtue of holding an office or having employment (usually in the form of wages or fees)", "wn30": "13290285-n"}'
 emolument compensation
 #:meta employee-owned-enterprise '{"gloss": "a commercial enterprise owned by the people who work for it", "wn30": "01098541-n"}'
-employee-owned-enterprise commercial-enterprise
+employee-owned-enterprise business
+#:meta employee-stock-option '{"gloss": "a benefit given by a company to an employee in the form of an option to buy stock in the company at a discount or at a fixed price", "wn30": "13241940-n"}'
+employee-stock-option payment-amount
 employment '*'
 #:meta employment-contract '{"gloss": "contract between employer and employee", "wn30": "06527320-n"}'
 employment-contract 'about(employment)' contract
@@ -633,7 +603,7 @@ equilibrium-price price purchase-price
 equity financial-interest
 #:meta equity-account '{"gloss": "(finance) an account of the net value of a business at a specified date", "wn30": "13355504-n"}'
 equity-account account-statement
-erc-20-token crypto-token smart-contract
+erc-20-token crypto-token
 erc-721-token non-fungible-token
 escrow contract
 ether cryptocurrency
@@ -641,7 +611,6 @@ ethereum blockchain
 ethereum-client software
 ethereum-gas 'about(ethereum)' amount
 ethereum-improvement-proposal 'about(ethereum)' document
-ethereum-name-service decentralized-application
 ethereum-virtual-machine software
 event '*'
 exchange '*'
@@ -652,8 +621,6 @@ exchange-traded-fund mutual-fund security-finance
 excursion-rate charge-rate
 exotic-option option-finance
 expected-shortfall amount
-#:meta expending '{"gloss": "the act of spending money for goods or services", "wn30": "01122601-n"}'
-expending spending
 expenditure '*'
 #:meta expense '{"gloss": "amounts paid for goods and services that may be currently tax deductible (as opposed to capital expenditures)", "wn30": "13275495-n"}'
 expense expenditure
@@ -674,7 +641,7 @@ extra-dividend dividend
 factoring financial-transaction transaction
 #:meta factory-price '{"gloss": "price charged for goods picked up at the factory", "wn30": "13304819-n"}'
 factory-price purchase-price
-failure '*'
+fair '*'
 fair-value value
 fama-french-three-factor-model 'about(rate-of-return)' information
 family-office organization
@@ -701,7 +668,7 @@ financial-leverage ratio
 financial-market market
 financial-risk danger
 #:meta financial-services '{"gloss": "the commercial activity of providing funds and capital", "wn30": "01098698-n"}'
-financial-services commercial-enterprise service
+financial-services commercial-enterprise
 financial-statement document
 financial-transaction act
 #:meta financing '{"gloss": "the act of financing", "wn30": "01099109-n"}'
@@ -712,8 +679,6 @@ financing financial-services
 fine penalty
 #:meta fire-insurance '{"gloss": "insurance against loss due to fire", "wn30": "13346337-n"}'
 fire-insurance insurance possession
-#:meta fire-sale '{"gloss": "a sale of merchandise supposedly damaged by fire", "wn30": "01119012-n"}'
-fire-sale cut-rate-sale
 #:meta first-mortgage '{"gloss": "a mortgage that has priority over all mortgages and liens except those imposed by law", "wn30": "13352464-n"}'
 first-mortgage mortgage
 #:meta fishing-industry '{"gloss": "the occupation of catching fish for a living", "wn30": "00454121-n"}'
@@ -723,7 +688,6 @@ fishmonger trader
 fixed-asset possession
 #:meta fixed-charge '{"gloss": "a periodic charge that does not vary with business volume (as insurance or rent or mortgage payments etc.)", "wn30": "13318147-n"}'
 fixed-charge price-charged
-fleet '*'
 fleet-management management
 #:meta floater-policy '{"gloss": "an insurance policy covering loss of movable property (e.g. jewelry) regardless of its location", "wn30": "06526124-n"}'
 floater-policy policy
@@ -732,10 +696,6 @@ floating-rate-note bond
 florist shopkeeper
 #:meta flotation '{"gloss": "financing a commercial enterprise by bond or stock shares", "wn30": "01100147-n"}'
 flotation financial-services
-#:meta flower-girl '{"gloss": "a woman who sells flowers in the street", "wn30": "10097995-n"}'
-flower-girl seller
-#:meta footage-rate '{"gloss": "a rate of charging by the linear foot of work done", "wn30": "13326871-n"}'
-footage-rate charge-rate
 #:meta foreign-exchange '{"gloss": "the system by which one currency is exchanged for another; enables international transactions to take place", "wn30": "13378348-n"}'
 foreign-exchange monetary-exchange
 foreign-exchange-market financial-market
@@ -789,16 +749,16 @@ giro-account bank-account
 going-out-of-business-sale cut-rate-sale
 goods possession
 #:meta goodwill-asset '{"gloss": "(accounting) an intangible asset valued according to the advantage or reputation a business has acquired (over and above its tangible assets)", "wn30": "13332820-n"}'
-goodwill-asset financial-asset
+goodwill-asset intangible-asset
 #:meta government-bond '{"gloss": "a bond that is an IOU of the United States Treasury; considered the safest security in the investment world", "wn30": "13338234-n"}'
 government-bond bond
 #:meta government-security '{"gloss": "a security issued by United States government agencies or the Farm Credit System", "wn30": "13340080-n"}'
-government-security legal-document
+government-security security-finance
 #:meta grain-merchant '{"gloss": "a merchant who deals in food grains", "wn30": "10141268-n"}'
 grain-merchant merchant
 graph-dimension dimension
 #:meta gray-market '{"gloss": "an unofficial market in which goods are bought and sold at prices lower than the official price set by a regulatory agency", "wn30": "01098071-n"}'
-gray-market activity market
+gray-market market
 #:meta greengrocer '{"gloss": "a grocer who sells fresh fruits and vegetables", "wn30": "10146559-n"}'
 greengrocer grocer
 #:meta grocer '{"gloss": "a retail merchant who sells foodstuffs (and some household supplies)", "wn30": "10147710-n"}'
@@ -815,10 +775,8 @@ group-insurance insurance possession
 growth-investing investing
 #:meta growth-stock '{"gloss": "stock of a corporation that has had faster than average gains in earnings and is expected to continue to", "wn30": "13336770-n"}'
 growth-stock share-capital
-#:meta grubstake '{"gloss": "funds advanced to a prospector or to someone starting a business in return for a share of the profits", "wn30": "13287239-n"}'
-grubstake financial-interest
 #:meta guaranty '{"gloss": "a collateral agreement to answer for the debt of another in case that person defaults", "wn30": "13353004-n"}'
-guaranty collateral contract
+guaranty contract
 #:meta half-pay '{"gloss": "reduced wage paid to someone who is not working full time", "wn30": "13280139-n"}'
 half-pay wage
 #:meta handling-cost '{"gloss": "the cost of handling (especially the cost of packaging and mailing an order)", "wn30": "13302467-n"}'
@@ -836,7 +794,7 @@ hauling transportation
 #:meta hay-bale '{"gloss": "a bale of hay", "wn30": "03500389-n"}'
 hay-bale bale
 #:meta hazard-insurance '{"gloss": "insurance that provides protection against certain risks such as storms or fires", "wn30": "13346630-n"}'
-hazard-insurance possession
+hazard-insurance insurance possession
 health '*'
 #:meta health-insurance '{"gloss": "insurance against loss due to ill health", "wn30": "13346773-n"}'
 health-insurance 'about(health)' insurance possession
@@ -850,7 +808,7 @@ hidden-reserve reserve-account
 high-finance financial-services
 high-frequency-trading algorithmic-trading
 #:meta hire-purchase '{"gloss": "installment plan", "wn30": "13296752-n"}'
-hire-purchase contract credit installment-plan
+hire-purchase contract installment-plan
 #:meta hoard '{"gloss": "a secret store of valuables or money", "wn30": "13366912-n"}'
 hoard stored-supply treasure
 #:meta home-banking '{"gloss": "banking in which transactions are conducted by means of electronic communication (via telephone or computer)", "wn30": "01100491-n"}'
@@ -858,9 +816,7 @@ home-banking banking
 #:meta home-loan '{"gloss": "a loan secured by equity value in the borrower'"'"'s home", "wn30": "13374979-n"}'
 home-loan consumer-credit loan
 #:meta honorarium '{"gloss": "a fee paid for a nominally free service", "wn30": "13283952-n"}'
-honorarium payment reward-payment
-#:meta horse-trade '{"gloss": "the swapping of horses (accompanied by much bargaining)", "wn30": "01109934-n"}'
-horse-trade barter commercial-trade
+honorarium reward-payment
 #:meta hosier '{"gloss": "a tradesman who sells hosiery and (in England) knitwear", "wn30": "10186578-n"}'
 hosier shopkeeper
 #:meta hospitalization-insurance '{"gloss": "insurance that pays all or part of a patient'"'"'s hospital expense", "wn30": "13346912-n"}'
@@ -869,7 +825,6 @@ hospitalization-insurance health-insurance
 hot-stock share-capital
 hot-wallet cryptocurrency-wallet
 hypothesis '*'
-idea '*'
 implied-volatility amount
 #:meta import-credit '{"gloss": "credit opened by an importer at a bank in his own country upon which an exporter may draw", "wn30": "13379264-n"}'
 import-credit credit
@@ -883,7 +838,7 @@ income-statement 'about(income)' financial-statement
 incoterms contract-condition
 #:meta indent-order '{"gloss": "an order for goods to be exported or imported", "wn30": "06529879-n"}'
 indent-order document
-#:meta indenture '{"gloss": "a contract binding one party into the service of another for a specified term", "wn30": "06772837-n"}'
+#:meta indenture '{"gloss": "formal agreement between the issuer of bonds and the bondholders as to terms of the debt", "wn30": "06773006-n"}'
 indenture contract
 #:meta index-fund '{"gloss": "a mutual fund whose assets are stocks on a given list", "wn30": "13359153-n"}'
 index-fund mutual-fund
@@ -900,18 +855,17 @@ insider-trading exchange market-abuse trading
 #:meta installation-charge '{"gloss": "the charge for installing something", "wn30": "13324609-n"}'
 installation-charge price-charged
 #:meta installment '{"gloss": "a payment of part of a debt; usually paid at regular intervals", "wn30": "13301715-n"}'
-installment payment payment-amount
+installment payment-amount
 #:meta installment-credit '{"gloss": "a loan repaid with interest in equal periodic payments", "wn30": "13375167-n"}'
 installment-credit consumer-credit loan
 #:meta installment-debt '{"gloss": "debt to be paid by installments", "wn30": "13398859-n"}'
 installment-debt debt
 #:meta installment-plan '{"gloss": "a system for paying for goods by installments", "wn30": "13296593-n"}'
 installment-plan regular-payment
-institutional-investor investor
+institutional-investor investor organization
 #:meta insurable-interest '{"gloss": "an interest in a person or thing that will support the issuance of an insurance policy; an interest in the survival of the insured or in the preservation of the thing that is insured", "wn30": "13287540-n"}'
 insurable-interest financial-interest
-insurance contract financial-services
-insurance-policy contract
+insurance contract
 intangible-asset possession
 #:meta interbank-loan '{"gloss": "a loan from one bank to another", "wn30": "13374887-n"}'
 interbank-loan bank-loan
@@ -927,17 +881,14 @@ intermodal-container shipping-container
 internal-control activity
 internal-rate-of-return ratio
 international-trade commercial-trade
-interoperability '*'
 intrinsic-value value
 #:meta inventory '{"gloss": "(accounting) the value of a firm'"'"'s current assets including raw materials and work in progress and finished goods", "wn30": "13412533-n"}'
-inventory transaction-record
+inventory current-asset
 inventory-management management
 inventory-turnover ratio
 #:meta investing '{"gloss": "the act of investing; laying out money or capital in an enterprise with the expectation of profit", "wn30": "01099436-n"}'
 investing financial-services
-investment '*'
-investor economic-agent worker
-ipfs '*'
+investor economic-agent
 #:meta ironmonger '{"gloss": "someone who sells hardware", "wn30": "10216690-n"}'
 ironmonger trader
 #:meta jeweler '{"gloss": "someone in the business of selling jewelry", "wn30": "10221777-n"}'
@@ -949,10 +900,9 @@ know-your-customer procedure
 #:meta labor-contract '{"gloss": "contract between labor and management governing wages and benefits and working conditions", "wn30": "06526961-n"}'
 labor-contract contract
 #:meta labor-market '{"gloss": "the market in which workers compete for jobs and employers compete for workers", "wn30": "01098404-n"}'
-labor-market activity market
+labor-market market
 #:meta 'landlord'"'"'s-lien' '{"gloss": "lien on a tenant'"'"'s property for the satisfaction of unpaid rent or property damage; the landlord is given the status of a preferred creditor with regard to the tenant'"'"'s property", "wn30": "13401970-n"}'
 'landlord'"'"'s-lien' lien
-language '*'
 last-mile delivery
 late-fee fee
 layer-2 communications-protocol
@@ -965,9 +915,9 @@ length 'linear-dimension(length)'
 #:meta letter-bond '{"gloss": "a bond that has not been registered with the Securities and Exchange Commission and cannot be sold to the general public", "wn30": "13420722-n"}'
 letter-bond letter-security
 #:meta letter-of-credit '{"gloss": "a document issued by a bank that guarantees the payment of a customer'"'"'s draft; substitutes the bank'"'"'s credit for the customer'"'"'s credit", "wn30": "13379753-n"}'
-letter-of-credit credit information payment-system
+letter-of-credit credit information
 #:meta letter-security '{"gloss": "a stock or bond that is not registered with the Securities and Exchange Commission and cannot be sold in the public market", "wn30": "13419535-n"}'
-letter-security legal-document
+letter-security security-finance
 #:meta letter-stock '{"gloss": "stock that has not been registered with the Securities and Exchange Commission and cannot be sold to the general public", "wn30": "13420544-n"}'
 letter-stock letter-security
 #:meta liability-insurance '{"gloss": "insurance that provides protection from claims arising from injuries or damage to other people or property", "wn30": "13347065-n"}'
@@ -985,12 +935,11 @@ life-insurance insurance possession
 light-client 'in(blockchain)' peer-node
 #:meta lighterage '{"gloss": "the fee charged for carrying goods in lighters", "wn30": "13322520-n"}'
 lighterage fee
-lightning-network payment-channel-network
 limit-order trade-order
 #:meta limited-audit '{"gloss": "an audit of limited scope (limited in time span or confined to particular accounts etc.)", "wn30": "13411385-n"}'
 limited-audit audited-account
 #:meta limited-review '{"gloss": "(accounting) a service (less exhaustive than an audit) that provides some assurance to interested parties as to the reliability of financial data", "wn30": "13411533-n"}'
-limited-review information procedure
+limited-review procedure
 #:meta linage-rate '{"gloss": "a rate of payment for written material that is measured according to the number of lines submitted", "wn30": "13326975-n"}'
 linage-rate charge-rate
 linear-dimension dimension
@@ -1001,9 +950,9 @@ liquidity-pool 'in(automated-market-maker)' pooled-fund
 liquidity-risk financial-risk
 list '*'
 #:meta list-price '{"gloss": "the selling price of something as stated in a catalogue or price list; often subject to discounts", "wn30": "13305070-n"}'
-list-price asking-price price
+list-price asking-price
 #:meta listed-security '{"gloss": "a security that has been accepted for trading by one of the organized and registered securities exchanges in the US", "wn30": "13420900-n"}'
-listed-security legal-document
+listed-security security-finance
 loan '*'
 #:meta loan-point '{"gloss": "one percent of the total principal of a loan; it is paid at the time the loan is made and is independent of the interest on the loan", "wn30": "13400150-n"}'
 loan-point fee
@@ -1015,18 +964,19 @@ lock-up-option purchase-option
 lockage fee
 logistics management
 long-position state
+loss '*'
 #:meta lump-sum '{"gloss": "a complete payment consisting of a single sum of money", "wn30": "13299248-n"}'
-lump-sum payment payment-amount
+lump-sum payment-amount
 #:meta mail-order '{"gloss": "a purchase negotiated by mail", "wn30": "06530703-n"}'
 mail-order document
 #:meta mail-order-buying '{"gloss": "buying goods to be shipped through the mail", "wn30": "00082223-n"}'
 mail-order-buying buying
 #:meta malpractice-insurance '{"gloss": "insurance purchased by physicians and hospitals to cover the cost of being sued for malpractice", "wn30": "13348227-n"}'
-malpractice-insurance possession
+malpractice-insurance liability-insurance
 management '*'
 #:meta margin-account '{"gloss": "an account with a securities brokerage in which the broker extends credit", "wn30": "13351986-n"}'
 margin-account brokerage-account
-margin-call event
+margin-call demand
 #:meta margin-deposit '{"gloss": "the amount of collateral a customer deposits with a broker when borrowing from the broker to buy securities", "wn30": "13351278-n"}'
 margin-deposit down-payment
 margin-trading securities-trading
@@ -1048,17 +998,17 @@ market-liquidity liquidity
 market-maker economic-agent
 market-manipulation market-abuse
 #:meta market-monopoly '{"gloss": "(economics) a market in which there are many buyers but only one seller", "wn30": "14444326-n"}'
-market-monopoly activity
+market-monopoly market
 #:meta market-order '{"gloss": "an order to a broker to sell or buy stocks or commodities at the prevailing market price", "wn30": "06529996-n"}'
-market-order document trade-order
+market-order trade-order
 market-participant economic-agent
 market-power attribute
-market-price price purchase-price
+market-price purchase-price
 market-risk financial-risk
 marketing '*'
 #:meta marketing-cost '{"gloss": "the cost of marketing (e.g., the cost of transferring title and moving goods to the customer)", "wn30": "13302621-n"}'
 marketing-cost expenditure
-marketplace market place
+marketplace market
 #:meta markup '{"gloss": "the amount added to the cost to determine the asking price", "wn30": "13303880-n"}'
 markup amount
 #:meta marriage-contract '{"gloss": "a prenuptial agreement or contract", "wn30": "06523353-n"}'
@@ -1094,8 +1044,8 @@ merkle-tree tree-graph
 method '*'
 microfinance financial-services
 micropayment payment
-#:meta mileage '{"gloss": "a travel allowance at a given rate per mile traveled", "wn30": "13294029-n"}'
-mileage travel-allowance
+#:meta mileage-allowance '{"gloss": "a travel allowance at a given rate per mile traveled", "wn30": "13294029-n"}'
+mileage-allowance travel-allowance
 mining-difficulty 'about(cryptocurrency-mining)' amount
 #:meta mixed-farming '{"gloss": "growing crops and feed and livestock all on the same farm", "wn30": "00919396-n"}'
 mixed-farming farming
@@ -1109,8 +1059,7 @@ money-laundering crime
 money-market financial-market
 monopolistic-competition situation
 #:meta monopsony '{"gloss": "(economics) a market in which goods or services are offered by several sellers but there is only one buyer", "wn30": "14444644-n"}'
-monopsony activity
-monte-carlo-methods-in-finance procedure
+monopsony market
 #:meta moorage '{"gloss": "a fee for mooring", "wn30": "13322867-n"}'
 moorage fee
 #:meta moral-hazard '{"gloss": "(economics) the lack of any incentive to guard against a risk when you are protected against it (as by insurance)", "wn30": "14542579-n"}'
@@ -1118,7 +1067,6 @@ moral-hazard situation
 mortgage '*'
 #:meta mortgage-backed-security '{"gloss": "a security created when a group of mortgages are gathered together and bonds are sold to other institutions or the public; investors receive a portion of the interest payments on the mortgages as well as the principal payments; usually guaranteed by the government", "wn30": "13340244-n"}'
 mortgage-backed-security asset-backed-security
-mortgage-loan credit loan
 #:meta moving-expense '{"gloss": "the cost of moving your residence from one location to another", "wn30": "13277056-n"}'
 moving-expense expense
 multisignature digital-signature
@@ -1154,7 +1102,7 @@ offer-price asking-price
 #:meta old-age-pension '{"gloss": "a monthly payment made to someone who is retired from work", "wn30": "13384341-n"}'
 old-age-pension pension
 #:meta oligopoly '{"gloss": "(economics) a market in which control over the supply of a commodity is in the hands of a small number of producers and each one can influence prices and affect competitors", "wn30": "14444825-n"}'
-oligopoly activity
+oligopoly market
 online-marketplace marketplace web-site
 #:meta open-account '{"gloss": "an unpaid credit order", "wn30": "06529798-n"}'
 open-account contract credit-order
@@ -1164,7 +1112,7 @@ open-interest amount
 #:meta operating-budget '{"gloss": "a budget for current expenses as distinct from financial transactions or permanent improvements", "wn30": "13422234-n"}'
 operating-budget budget
 #:meta operating-capital '{"gloss": "capital available for the operations of a firm (e.g. manufacturing or transportation) as distinct from financial transactions and long-term improvements", "wn30": "13354769-n"}'
-operating-capital possession
+operating-capital capital
 #:meta operating-expense '{"gloss": "the expense of maintaining property (e.g., paying property taxes and utilities and insurance); it does not include depreciation or the cost of financing or income taxes", "wn30": "13277179-n"}'
 operating-expense expense
 operating-income income
@@ -1172,15 +1120,14 @@ operational-risk financial-risk
 #:meta opportunity-cost '{"gloss": "cost in terms of foregoing alternatives", "wn30": "13305794-n"}'
 opportunity-cost amount
 optimistic-rollup rollup
-option '*'
 option-finance derivative-finance
 #:meta option-straddle '{"gloss": "the option to buy or sell a given stock (or stock index or commodity future) at a given price before a given date; consists of an equal number of put and call options", "wn30": "00081174-n"}'
 option-straddle purchase-option
+order '*'
 order-book information
 order-fulfillment act
 #:meta ordinary-annuity '{"gloss": "an annuity paid in a series of more or less equal payments at the end of equally spaced periods", "wn30": "13295025-n"}'
 ordinary-annuity annuity
-organism '*'
 organization '*'
 #:meta organization-expense '{"gloss": "the cost (over a period of five years) of organizing a new corporation or partnership", "wn30": "13277492-n"}'
 organization-expense business-expense
@@ -1199,10 +1146,8 @@ overcharge price-charged
 overdraft debt
 #:meta overdraft-credit '{"gloss": "credit provided by a bank in honoring a customer'"'"'s overdrafts", "wn30": "13380996-n"}'
 overdraft-credit open-end-credit
-#:meta overpaid-amount '{"gloss": "a payment larger than needed or expected", "wn30": "13279046-n"}'
-overpaid-amount payment-amount
-#:meta overpayment '{"gloss": "the act of paying too much", "wn30": "01121390-n"}'
-overpayment payment
+#:meta overpayment '{"gloss": "a payment larger than needed or expected", "wn30": "13279046-n"}'
+overpayment payment-amount
 #:meta overproduction '{"gloss": "too much production or more than expected", "wn30": "00914343-n"}'
 overproduction economic-production
 packaging '*'
@@ -1228,7 +1173,7 @@ payback-return income
 payment '*'
 #:meta payment-amount '{"gloss": "a sum of money paid or a claim discharged", "wn30": "13278375-n"}'
 payment-amount expenditure
-payment-card device payment-system
+payment-card device
 payment-channel smart-contract
 payment-channel-network layer-2
 payment-processor organization
@@ -1241,8 +1186,7 @@ payoff payment-amount
 #:meta peddler '{"gloss": "someone who travels about selling his wares (as on the streets or at carnivals)", "wn30": "10411551-n"}'
 peddler seller
 peer-node '*'
-peer-to-peer '*'
-peer-to-peer-lending loan
+peer-to-peer-lending financial-services
 #:meta penalty '{"gloss": "a payment required for not fulfilling a contract", "wn30": "13300555-n"}'
 penalty payment-amount
 penetration-pricing pricing-strategy
@@ -1257,7 +1201,7 @@ peppercorn-rent rent
 per-diem expense-allowance
 perfect-competition situation
 #:meta performance-bond '{"gloss": "a bond given to protect the recipient against loss in case the terms of a contract are not filled; a surety company assumes liability for nonperformance", "wn30": "13338960-n"}'
-performance-bond bond
+performance-bond guaranty
 #:meta perpetual-warrant '{"gloss": "a warrant with no expiration date", "wn30": "13418616-n"}'
 perpetual-warrant stock-warrant
 perpetuity annuity
@@ -1270,18 +1214,16 @@ personal-income income
 personal-loan loan
 #:meta petty-cash '{"gloss": "a small fund of cash that a firm keeps for the payment of incidental expenses", "wn30": "13422411-n"}'
 petty-cash fund
-physical-capital possession
-physical-object '*'
+physical-capital capital
 #:meta pipage-fee '{"gloss": "a fee charged for the use of pipes", "wn30": "13323102-n"}'
 pipage-fee fee
-place '*'
 plan '*'
 platform-economy economy
 #:meta pledge '{"gloss": "a deposit of personal property as security for a debt", "wn30": "13350702-n"}'
 pledge security-interest
 point-of-sale event
 policy '*'
-ponzi-scheme pyramid-scheme
+ponzi-scheme fraud
 #:meta pooled-fund '{"gloss": "any communal combination of funds", "wn30": "13369857-n"}'
 pooled-fund fund
 #:meta pooling-of-interest '{"gloss": "an accounting method used in the merging of companies; the balance sheets are added together item by item; this method is tax-free", "wn30": "13407012-n"}'
@@ -1301,8 +1243,6 @@ postage-stamp artifact
 postal-delivery delivery
 #:meta poultryman '{"gloss": "a dealer in poultry and poultry products", "wn30": "10461060-n"}'
 poultryman merchant
-#:meta poundage '{"gloss": "a fee charged for the recovery of impounded animals", "wn30": "13323207-n"}'
-poundage fee
 practice '*'
 #:meta preferred-stock '{"gloss": "stock whose holders are guaranteed priority in the payment of dividends but whose holders have no voting rights", "wn30": "13335974-n"}'
 preferred-stock financial-asset share share-capital
@@ -1333,7 +1273,6 @@ principle '*'
 print-seller art-dealer retailer
 prisoners-dilemma mathematical-object
 private-equity financial-services
-private-key '*'
 #:meta private-treaty '{"gloss": "a sale of property at a price agreed on by the seller and buyer without an intervening agency", "wn30": "00092212-n"}'
 private-treaty merchandising
 problem '*'
@@ -1353,7 +1292,7 @@ professional '*'
 #:meta profit-and-loss '{"gloss": "an account compiled at the end of an accounting period to show gross and net profit or loss", "wn30": "13407844-n"}'
 profit-and-loss account-statement
 #:meta profit-sharing '{"gloss": "a system in which employees receive a share of the net profits of the business", "wn30": "13289020-n"}'
-profit-sharing possession
+profit-sharing plan
 #:meta profit-taker '{"gloss": "someone who sells stock shares at a profit", "wn30": "10481167-n"}'
 profit-taker stock-trader
 #:meta program-trading '{"gloss": "a trading technique involving large blocks of stock with trades triggered by computer programs", "wn30": "00079752-n"}'
@@ -1369,7 +1308,6 @@ proprietorship-certificate legal-document
 provisions-store stored-supply
 psychological-pricing pricing-strategy
 public-good goods
-public-key '*'
 pump-and-dump fraud
 purchase '*'
 #:meta purchase-contract '{"gloss": "a contract stating the terms of a purchase", "wn30": "06523842-n"}'
@@ -1383,7 +1321,7 @@ purchase-price expenditure
 purchasing procurement
 #:meta put-option '{"gloss": "the option to sell a given stock (or stock index or commodity future) at a given price before a given date", "wn30": "00080968-n"}'
 put-option option-finance purchase-option
-pyramid-scheme business-model fraud
+pyramid-scheme fraud
 #:meta pyramiding '{"gloss": "(stock market) a series of transactions in which the speculator increases his holdings by using the rising market value of those holdings as margin for further purchases", "wn30": "13343284-n"}'
 pyramiding speculation
 qr-code barcode
@@ -1396,15 +1334,15 @@ rack-rent rent
 #:meta rake-off '{"gloss": "a percentage (of winnings or loot or profit) taken by an operator or gangster", "wn30": "13289306-n"}'
 rake-off share-of-profits
 #:meta rate-of-depreciation '{"gloss": "the rate at which the value of property is reduced; used to calculate tax deduction", "wn30": "13326450-n"}'
-rate-of-depreciation charge-rate
+rate-of-depreciation ratio
 rate-of-return ratio
 ratio '*'
 #:meta real-estate-business '{"gloss": "the business of selling real estate", "wn30": "01101227-n"}'
-real-estate-business business commercial-enterprise
+real-estate-business commercial-enterprise
 #:meta real-estate-loan '{"gloss": "a loan on real estate that is usually secured by a mortgage", "wn30": "13400334-n"}'
 real-estate-loan loan
 #:meta rebate '{"gloss": "a refund of some fraction of the amount paid", "wn30": "13282275-n"}'
-rebate refund-amount
+rebate refund
 receipt '*'
 #:meta recompense-payment '{"gloss": "payment or reward (as for service rendered)", "wn30": "13282007-n"}'
 recompense-payment payment-amount
@@ -1413,14 +1351,14 @@ rectangle-dimension dimension
 redemption exchange purchase
 #:meta refresher-fee '{"gloss": "a fee (in addition to that marked on the brief) paid to counsel in a case that lasts more than one day", "wn30": "13322343-n"}'
 refresher-fee legal-fee
-#:meta refund '{"gloss": "the act of returning money received previously", "wn30": "01121690-n"}'
-refund payment
+#:meta refund '{"gloss": "money returned to a payer", "wn30": "13282161-n"}'
+refund payment-amount
 #:meta refund-amount '{"gloss": "money returned to a payer", "wn30": "13282161-n"}'
 refund-amount payment-amount
 #:meta registered-bond '{"gloss": "a bond whose owner is recorded on the books of the issuer; can be transferred to another owner only when endorsed by the registered owner", "wn30": "13339325-n"}'
 registered-bond bond registered-security
 #:meta registered-security '{"gloss": "a security whose owner'"'"'s name is recorded on the books of the issuer (or issuer'"'"'s agent)", "wn30": "13340579-n"}'
-registered-security legal-document
+registered-security security-finance
 #:meta regular-payment '{"gloss": "a payment made at regular times", "wn30": "13281275-n"}'
 regular-payment payment-amount
 #:meta reimbursement '{"gloss": "compensation paid (to someone) for damages or losses or money already spent etc.", "wn30": "13290002-n"}'
@@ -1428,13 +1366,10 @@ reimbursement compensation
 #:meta reinsurance '{"gloss": "sharing the risk by insurance companies; part or all of the insurer'"'"'s risk is assumed by other companies in return for part of the premium paid by the insured", "wn30": "13348456-n"}'
 reinsurance insurance possession
 #:meta remittance '{"gloss": "a payment of money sent to a person in another place", "wn30": "13299453-n"}'
-remittance payment payment-amount
-#:meta remuneration '{"gloss": "the act of paying for goods or services or to recompense for losses", "wn30": "01121855-n"}'
-remuneration payment
+remittance payment-amount
 rent '*'
 #:meta rental-income '{"gloss": "income received from rental properties", "wn30": "13260092-n"}'
 rental-income income
-renting contract
 reorder-point 'about(inventory-management)' amount
 #:meta reparation-payment '{"gloss": "compensation (given or received) for an insult or injury", "wn30": "13292613-n"}'
 reparation-payment compensation
@@ -1451,7 +1386,7 @@ repurchase-agreement financial-transaction
 requirements-contract contract
 #:meta resale '{"gloss": "the selling of something purchased", "wn30": "01117454-n"}'
 resale merchandising
-reservation-price price purchase-price
+reservation-price purchase-price
 #:meta reserve-account '{"gloss": "funds taken out of earnings to provide for anticipated future payments", "wn30": "13370014-n"}'
 reserve-account stockpile
 #:meta reserve-stock '{"gloss": "a supply or stock held in reserve for future use (especially in emergencies)", "wn30": "13368318-n"}'
@@ -1467,7 +1402,7 @@ retailing merchandising
 retained-earnings net-income
 #:meta retainer '{"gloss": "a fee charged in advance to retain the services of someone", "wn30": "13323313-n"}'
 retainer fee
-return-merchandise-authorization reverse-logistics
+return-merchandise-authorization document
 return-on-investment ratio
 revenue income
 #:meta revenue-bond '{"gloss": "a bond issued by an agency that is commissioned to finance public works; revenue from the public property is used to pay off the bond", "wn30": "13339542-n"}'
@@ -1490,7 +1425,6 @@ risk-arbitrage arbitrage
 risk-free-interest-rate interest-rate
 risk-management management
 risk-neutral-measure mathematical-object
-river-bank '*'
 rollup layer-2
 #:meta room-rate '{"gloss": "the rate charged daily for a hotel room", "wn30": "13327136-n"}'
 room-rate charge-rate
@@ -1501,14 +1435,12 @@ rule '*'
 #:meta rummage-sale '{"gloss": "a sale of donated articles", "wn30": "01119850-n"}'
 rummage-sale cut-rate-sale
 safety-stock stored-supply
-salary income payment
+salary income wage
 sale merchandising
 #:meta sale-in-gross '{"gloss": "a sale of a tract of land as a whole without a warranty as to the acreage", "wn30": "06528403-n"}'
 sale-in-gross contract
-sales-contract 'about(sale)' contract
 #:meta sales-incentive '{"gloss": "remuneration offered to a salesperson for exceeding some predetermined sales goal", "wn30": "13273949-n"}'
 sales-incentive bonus
-salter '*'
 satoshi amount
 #:meta savings '{"gloss": "a fund of money put by as a reserve", "wn30": "13359572-n"}'
 savings fund
@@ -1518,7 +1450,7 @@ savings-account deposit-account
 savings-bond government-bond
 scarcity condition
 #:meta scrip '{"gloss": "a certificate whose value is recognized by the payer and payee; scrip is not currency but may be convertible into currency", "wn30": "13416897-n"}'
-scrip currency legal-document
+scrip legal-document
 sealed-bid-auction auction
 #:meta sealed-instrument '{"gloss": "a contract that is signed and has the (wax) seal of the signer attached", "wn30": "06524278-n"}'
 sealed-instrument contract
@@ -1535,19 +1467,16 @@ security-finance financial-asset financial-instrument
 #:meta security-interest '{"gloss": "any interest in a property that secures the payment of an obligation", "wn30": "13287984-n"}'
 security-interest financial-interest
 #:meta seed-money '{"gloss": "capital needed to set up a new business or enterprise", "wn30": "13356002-n"}'
-seed-money possession
+seed-money capital
 seed-phrase information
 #:meta seedsman '{"gloss": "a dealer in seeds", "wn30": "10575705-n"}'
 seedsman trader
-segwit soft-fork
 self-custody practice
 #:meta self-insurance '{"gloss": "insuring yourself by setting aside money to cover possible losses rather than by purchasing an insurance policy", "wn30": "13348792-n"}'
 self-insurance possession
-#:meta sell-option '{"gloss": "an option to sell", "wn30": "13242484-n"}'
-sell-option stock-option-contract
 seller '*'
 #:meta 'seller'"'"'s-market' '{"gloss": "a market in which more people want to buy than want to sell", "wn30": "01098265-n"}'
-'seller'"'"'s-market' activity
+'seller'"'"'s-market' market
 #:meta selling-agent '{"gloss": "someone who sells goods (on commission) for others", "wn30": "10577710-n"}'
 selling-agent seller
 #:meta selloff '{"gloss": "a sale of a relatively large number of assets (stocks or bonds or commodities) at a low price typically done to dispose of them rather than as normal trade", "wn30": "01119949-n"}'
@@ -1580,13 +1509,12 @@ shipping-traffic transportation
 #:meta shopkeeper '{"gloss": "a merchant who owns or manages a shop", "wn30": "10592152-n"}'
 shopkeeper merchant worker
 #:meta short-account '{"gloss": "a brokerage account of someone who sells short (sells securities he does not own)", "wn30": "13929336-n"}'
-short-account possession
+short-account brokerage-account
 #:meta short-covering '{"gloss": "the purchase of securities or commodities by a short seller to close out a short sale", "wn30": "00080096-n"}'
 short-covering trading
-short-position securities-trading state
+short-position state
 #:meta short-sale '{"gloss": "sale of securities or commodity futures not owned by the seller (who hopes to buy them back later at a lower price)", "wn30": "00079908-n"}'
 short-sale trading
-short-selling trading
 #:meta sick-pay '{"gloss": "wages paid to an employee who is on sick leave", "wn30": "13280795-n"}'
 sick-pay wage
 sidechain blockchain
@@ -1608,15 +1536,14 @@ soft-fork event
 soft-sell advertising
 software '*'
 sole-proprietorship company enterprise
-solidity '*'
 sovereign-wealth-fund fund
-#:meta speculation '{"gloss": "an investment that is very risky but could yield great profits", "wn30": "13342692-n"}'
-speculation investment
+#:meta speculation '{"gloss": "practitioner'"'"'s speculation is the activity (risky trading), not a risky investment; kid pyramiding fits"}'
+speculation trading
 speed 'linear-dimension(speed)'
 #:meta spending '{"gloss": "the act of spending or disbursing money", "wn30": "01122149-n"}'
 spending payment
 #:meta spot-market '{"gloss": "a market in which a commodity is bought or sold for immediate delivery or delivery in the very near future", "wn30": "04286796-n"}'
-spot-market commodity-exchange financial-market
+spot-market financial-market
 #:meta spot-price '{"gloss": "the current delivery price of a commodity traded in the spot market", "wn30": "13305373-n"}'
 spot-price purchase-price
 stablecoin cryptocurrency
@@ -1631,37 +1558,34 @@ stationer retailer
 #:meta steamship-company '{"gloss": "a line responsible for the operation of a fleet of steamships", "wn30": "04310347-n"}'
 steamship-company carrier-company
 #:meta stipend '{"gloss": "a sum of money allotted on a regular basis; usually for some specific purpose", "wn30": "13294135-n"}'
-stipend payment regular-payment
+stipend regular-payment
 #:meta stock-certificate '{"gloss": "a certificate documenting the shareholder'"'"'s ownership in the corporation", "wn30": "13417071-n"}'
 stock-certificate security-finance
 #:meta stock-dividend '{"gloss": "a dividend paid in stock rather than in cash", "wn30": "13408256-n"}'
 stock-dividend dividend
 #:meta stock-exchange '{"gloss": "an exchange where security trading is conducted by professional stockbrokers", "wn30": "04323026-n"}'
-stock-exchange capital-market workplace
+stock-exchange workplace
 stock-keeping-unit information
 stock-market capital-market
 stock-market-crash event
 stock-market-index market-index
 #:meta stock-of-record '{"gloss": "stock held by stockholders of record on a given date", "wn30": "13335521-n"}'
 stock-of-record common-stock
-#:meta stock-option '{"gloss": "a benefit given by a company to an employee in the form of an option to buy stock in the company at a discount or at a fixed price", "wn30": "13241940-n"}'
-stock-option payment-amount
-#:meta stock-option-contract '{"gloss": "the right to buy or sell a stock at a specified price within a stated period", "wn30": "13242239-n"}'
-stock-option-contract purchase-option
+#:meta stock-option '{"gloss": "the right to buy or sell a stock at a specified price within a stated period", "wn30": "13242239-n"}'
+stock-option purchase-option
 stock-split event
 #:meta stock-trader '{"gloss": "someone who buys and sells stock shares", "wn30": "10657835-n"}'
 stock-trader securities-trader
 #:meta stock-warrant '{"gloss": "a type of security issued by a corporation (usually together with a bond or preferred stock) that gives the holder the right to purchase a certain amount of common stock at a stated price", "wn30": "13418219-n"}'
-stock-warrant possession
+stock-warrant security-finance
 stockbroker securities-trader
 stockholder stakeholder
 #:meta stockjobber '{"gloss": "one who deals only with brokers or other jobbers", "wn30": "10657556-n"}'
 stockjobber stock-trader
 stockout event
 stockpile '*'
-stop-loss-order trade-order
 #:meta stop-order '{"gloss": "an order to a broker to sell (buy) when the price of a security falls (rises) to a designated level", "wn30": "06530412-n"}'
-stop-order document trade-order
+stop-order trade-order
 #:meta stop-payment '{"gloss": "a depositor'"'"'s order to a bank to refuse payment on a check", "wn30": "06530586-n"}'
 stop-payment document
 storage '*'
@@ -1676,7 +1600,7 @@ stowage-charge price-charged
 straight-line-method procedure
 #:meta strike-pay '{"gloss": "money paid to strikers from union funds", "wn30": "13280896-n"}'
 strike-pay wage
-strike-price price purchase-price
+strike-price purchase-price
 structured-product derivative-finance
 #:meta subcontract '{"gloss": "a contract assigning to another party some obligations of a prior contract", "wn30": "06524767-n"}'
 subcontract contract
@@ -1696,7 +1620,7 @@ supply-chain-management logistics
 #:meta support-level '{"gloss": "(stock market) the price at which a certain security becomes attractive to investors", "wn30": "13305510-n"}'
 support-level purchase-price
 #:meta surcharge '{"gloss": "an additional charge (as for items previously omitted or as a penalty for failure to exercise common caution or common skill)", "wn30": "13325505-n"}'
-surcharge payment price-charged
+surcharge price-charged
 #:meta suspense-account '{"gloss": "an account used temporarily to carry doubtful receipts and disbursements or discrepancies pending their analysis and permanent classification", "wn30": "13408776-n"}'
 suspense-account account-statement
 swap-finance derivative-finance
@@ -1708,8 +1632,6 @@ syndication merchandising
 system '*'
 #:meta take-home-pay '{"gloss": "what is left of your pay after deductions for taxes and dues and insurance etc", "wn30": "13280992-n"}'
 take-home-pay wage
-#:meta tankage '{"gloss": "the act of storing in tanks", "wn30": "00812055-n"}'
-tankage storage
 #:meta tankage-charge '{"gloss": "the charge for storing something in tanks", "wn30": "13326103-n"}'
 tankage-charge price-charged
 #:meta tare '{"gloss": "an adjustment made for the weight of the packaging in order to determine the net weight of the goods", "wn30": "13275137-n"}'
@@ -1721,11 +1643,10 @@ telemarketing merchandising
 telephone-order telemarketing
 temperature 'linear-dimension(temperature)'
 #:meta term-insurance '{"gloss": "low-cost insurance that is valid only for a stated period of time and has no cash surrender value or loan value", "wn30": "13348964-n"}'
-term-insurance possession
+term-insurance insurance possession
 #:meta terminable-interest '{"gloss": "an interest in property that terminates under specific conditions", "wn30": "13288206-n"}'
 terminable-interest financial-interest
 theory '*'
-thinking '*'
 third-party-logistics logistics transportation
 tick-size amount
 ticker-symbol information
@@ -1756,7 +1677,7 @@ tontine life-insurance
 trade-credit credit
 #:meta trade-discount '{"gloss": "a discount from the list price of a commodity allowed by a manufacturer or wholesaler to a merchant", "wn30": "13274732-n"}'
 trade-discount deducted-amount
-trade-order financial-transaction
+trade-order document
 trademark information
 trader '*'
 #:meta trading '{"gloss": "buying or selling securities or commodities", "wn30": "00079398-n"}'
@@ -1784,7 +1705,7 @@ transshipment freight freight-transport transport
 #:meta travel-allowance '{"gloss": "a sum allowed for travel", "wn30": "13293901-n"}'
 travel-allowance expense-allowance
 #:meta 'traveler'"'"'s-check' '{"gloss": "a letter of credit issued by a bank or express company that is payable on presentation to any correspondent of the issuer", "wn30": "13380309-n"}'
-'traveler'"'"'s-check' artifact 'traveler'"'"'s-letter-of-credit'
+'traveler'"'"'s-check' bank-check 'traveler'"'"'s-letter-of-credit'
 #:meta 'traveler'"'"'s-letter-of-credit' '{"gloss": "a letter of credit given to a traveler", "wn30": "13380148-n"}'
 'traveler'"'"'s-letter-of-credit' letter-of-credit
 treasure '*'
@@ -1812,11 +1733,8 @@ tuition-fee fee
 two-sided-market market
 #:meta undercharge '{"gloss": "a price that is too low", "wn30": "13307685-n"}'
 undercharge price-charged
-underlying-asset security-finance
-#:meta underpaid-amount '{"gloss": "a payment smaller than needed or expected", "wn30": "13279162-n"}'
-underpaid-amount payment-amount
-#:meta underpayment '{"gloss": "the act of paying less than required", "wn30": "01122488-n"}'
-underpayment payment
+#:meta underpayment '{"gloss": "a payment smaller than needed or expected", "wn30": "13279162-n"}'
+underpayment payment-amount
 #:meta underproduction '{"gloss": "inadequate production or less than expected", "wn30": "00914509-n"}'
 underproduction economic-production
 #:meta underseller '{"gloss": "a seller that sells at a lower price than others do", "wn30": "10736926-n"}'
@@ -1824,19 +1742,17 @@ underseller seller
 underwriting financial-services
 #:meta undivided-interest '{"gloss": "the interest in property owned by tenants whereby each tenant has an equal right to enjoy the entire property", "wn30": "13288337-n"}'
 undivided-interest financial-interest
-#:meta unearned-income '{"gloss": "(accounting) income received but not yet earned (usually considered a current liability on a company'"'"'s balance sheet)", "wn30": "13261380-n"}'
+#:meta unearned-income '{"gloss": "personal income that you did not earn (e.g., dividends or interest or rent income)", "wn30": "13261597-n"}'
 unearned-income income
-#:meta unearned-revenue '{"gloss": "personal income that you did not earn (e.g., dividends or interest or rent income)", "wn30": "13261597-n"}'
+#:meta unearned-revenue '{"gloss": "(accounting) income received but not yet earned (usually considered a current liability on a company'"'"'s balance sheet)", "wn30": "13261380-n"}'
 unearned-revenue income
 #:meta unit-cost '{"gloss": "calculated cost for a given unit of a product", "wn30": "13303214-n"}'
-unit-cost price purchase-price
+unit-cost purchase-price
 #:meta unit-load-packaging '{"gloss": "the act of packaging cargo into unit loads", "wn30": "01104174-n"}'
 unit-load-packaging packaging
 unit-of-account attribute
-#:meta unitization '{"gloss": "conversion of an investment trust into a unit investment trust", "wn30": "01093532-n"}'
-unitization currency-conversion
 #:meta unlisted-security '{"gloss": "a security traded in the over-the-counter market", "wn30": "13421095-n"}'
-unlisted-security legal-document
+unlisted-security security-finance
 #:meta unsecured-bond '{"gloss": "the ability of a customer to obtain goods or services before payment, based on the trust that payment will be made in the future", "wn30": "13339844-n"}'
 unsecured-bond bond
 unspent-transaction-output information
@@ -1844,13 +1760,13 @@ unspent-transaction-output information
 upset-price asking-price
 usdc stablecoin
 #:meta usury '{"gloss": "an exorbitant or unlawful rate of interest", "wn30": "13320045-n"}'
-usury interest interest-rate
+usury interest-rate
 #:meta utility-bond '{"gloss": "a bond issued to finance the construction of public utility services", "wn30": "13340902-n"}'
 utility-bond municipal-bond
 utility-token crypto-token
 validator peer-node
 #:meta valuation '{"gloss": "assessed price", "wn30": "13305673-n"}'
-valuation price
+valuation purchase-price
 #:meta valuation-reserve '{"gloss": "a reserve fund created by a charge against profits in order to provide for changes in the value of a company'"'"'s assets", "wn30": "13370215-n"}'
 valuation-reserve reserve-account
 value '*'
@@ -1861,9 +1777,8 @@ vehicle '*'
 vehicle-routing-problem problem
 #:meta vending '{"gloss": "the act of selling goods for a living", "wn30": "01116968-n"}'
 vending merchandising
-vendor economic-agent
 #:meta venture-capital '{"gloss": "wealth available for investment in new or speculative enterprises", "wn30": "13354260-n"}'
-venture-capital possession private-equity
+venture-capital capital
 #:meta venturer '{"gloss": "a merchant who undertakes a trading venture (especially a venture that sends goods overseas)", "wn30": "10748142-n"}'
 venturer merchant
 #:meta vested-interest '{"gloss": "(law) an interest in which there is a fixed right to present or future enjoyment and that can be conveyed to another", "wn30": "13287787-n"}'
@@ -1873,7 +1788,7 @@ viatical-settlement advance-death-benefit
 #:meta viatication '{"gloss": "purchasing insurance policies for cash from terminally ill policy holders", "wn30": "00082347-n"}'
 viatication buying
 vickrey-auction auction
-#:meta vintner '{"gloss": "someone who makes wine", "wn30": "10754088-n"}'
+#:meta vintner '{"gloss": "someone who sells wine", "wn30": "10754189-n"}'
 vintner merchant
 volume 'linear-dimension(volume)'
 #:meta voting-stock '{"gloss": "shares in a corporation that entitle the shareholder to voting and proxy rights", "wn30": "13420221-n"}'
@@ -1883,13 +1798,11 @@ warehouse building
 warehouse-management-system software
 #:meta 'warehouseman'"'"'s-lien' '{"gloss": "right of a warehouseman to retain goods until all storage charges have been paid", "wn30": "13402879-n"}'
 'warehouseman'"'"'s-lien' lien
-watercraft '*'
 #:meta watered-stock '{"gloss": "stock representing ownership of overvalued assets; stock of a corporation whose total worth is less than its invested capital", "wn30": "13420359-n"}'
 watered-stock share-capital
 waybill 'about(shipment)' document
 wealth-management financial-services management
 web-site '*'
-web3 idea
 #:meta weight-charge '{"gloss": "a charge based on weight measured in pounds", "wn30": "13324912-n"}'
 weight-charge price-charged
 #:meta wharfage '{"gloss": "a fee charged for the use of a wharf or quay", "wn30": "13324188-n"}'
@@ -1911,7 +1824,7 @@ workplace '*'
 wrapped-token crypto-token
 #:meta write-off '{"gloss": "(accounting) reduction in the book value of an asset", "wn30": "13328853-n"}'
 write-off depreciation
-xbzz crypto-token
+xbzz crypto-token cryptocurrency
 xdai stablecoin
 #:meta yellow-dog-contract '{"gloss": "a labor contract (now illegal) whereby the employee agrees not to join a trade union", "wn30": "06527170-n"}'
 yellow-dog-contract labor-contract
@@ -1921,5 +1834,5 @@ yield-finance ratio
 #:meta zero-coupon-bond '{"gloss": "a bond that is issued at a deep discount from its value at maturity and pays no interest during the life of the bond; the commonest form of zero-coupon security", "wn30": "13341052-n"}'
 zero-coupon-bond bond zero-coupon-security
 #:meta zero-coupon-security '{"gloss": "a security that makes no interest payments but instead is sold at a deep discount from its face value", "wn30": "13418823-n"}'
-zero-coupon-security legal-document
+zero-coupon-security security-finance
 zero-knowledge-rollup rollup

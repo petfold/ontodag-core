@@ -1,13 +1,12 @@
 # ontodag store v1
-#:canonical 6.0 a11b5d8669fd9919faf810a5f6c7ac058b14ae97a23198338ec9ef5bc47f5e93 2
+#:canonical 6.0 c637a0f7d7d5604012fd6aae41d5585e5c5b7eb1f7e878c8c044755ad9bb4912 2
 about enclosing-dimension
 abyssal-plain ocean-floor plain
 #:meta abyssal-zone '{"gloss": "the deep sea (2000 meters or more) where there is no light", "wn30": "09186592-n"}'
-abyssal-zone ocean-floor pelagic-zone
+abyssal-zone pelagic-zone
 accretion '*'
 #:meta achondrite '{"gloss": "a stony meteor lacking chondrules", "wn30": "09186928-n"}'
 achondrite rock
-act '*'
 activity '*'
 #:meta adobe-clay '{"gloss": "the clay from which adobe bricks are made", "wn30": "14600927-n"}'
 adobe-clay clay
@@ -62,7 +61,7 @@ amount '*'
 andes mountain-range
 angle '*'
 animal '*'
-antarctic-circle circle-of-latitude
+antarctic-circle polar-circle
 antarctic-ice-sheet ice-sheet
 antarctica continent
 #:meta anticyclone '{"gloss": "(meteorology) winds spiraling outward from a high pressure center; circling clockwise in the northern hemisphere and counterclockwise in the southern", "wn30": "14521021-n"}'
@@ -77,7 +76,7 @@ aquifer geological-formation
 archean eon
 #:meta archipelago '{"gloss": "a group of many islands in a large body of water", "wn30": "09203827-n"}'
 archipelago land landform
-arctic-circle circle-of-latitude
+arctic-circle polar-circle
 arctic-ocean ocean
 area 'linear-dimension(area)'
 #:meta arete '{"gloss": "a sharp narrow ridge found in rugged mountains", "wn30": "09205509-n"}'
@@ -87,7 +86,6 @@ argil clay
 arid-climate climate
 #:meta arroyo '{"gloss": "a stream or brook", "wn30": "09206896-n"}'
 arroyo gully
-artifact '*'
 #:meta artificial-horizon '{"gloss": "a navigational instrument based on a gyroscope; it artificially provides a simulated horizon for the pilot", "wn30": "02745611-n"}'
 artificial-horizon instrument
 #:meta ascent '{"gloss": "an upward slope or grade (as in a road)", "wn30": "09206985-n"}'
@@ -110,7 +108,6 @@ atmospheric-science 'about(earth-atmosphere)' earth-science
 atmospheric-state weather
 #:meta atoll '{"gloss": "an island consisting of a circular coral reef surrounding a lagoon", "wn30": "09210862-n"}'
 atoll coral-reef island
-attribute '*'
 #:meta aurora '{"gloss": "an atmospheric phenomenon consisting of bands of light caused by charged solar particles following the earth'"'"'s magnetic lines of force", "wn30": "11427241-n"}'
 aurora natural-event
 #:meta aurora-australis '{"gloss": "the aurora of the southern hemisphere", "wn30": "11427501-n"}'
@@ -118,7 +115,6 @@ aurora-australis aurora
 #:meta aurora-borealis '{"gloss": "the aurora of the northern hemisphere", "wn30": "11427619-n"}'
 aurora-borealis aurora
 australian-continent continent
-autumnal-equinox '*'
 avalanche natural-event
 axial-tilt angle
 azimuthal-equidistant-projection azimuthal-projection
@@ -127,13 +123,12 @@ azimuthal-projection map-projection
 backwater body-of-water
 #:meta bad-weather '{"gloss": "weather unsuitable for outdoor activities", "wn30": "14523090-n"}'
 bad-weather weather
-balloon '*'
 #:meta barrier-island '{"gloss": "a long narrow sandy island (wider than a reef) running parallel to the shore", "wn30": "09214760-n"}'
 barrier-island island
 #:meta barrier-reef '{"gloss": "a long coral reef near and parallel to the shore", "wn30": "09214916-n"}'
 barrier-reef coral-reef
 bathymetric-chart 'about(ocean-floor)' chart topographic-map
-bathymetry 'about(ocean-floor)' activity hydrography
+bathymetry 'about(ocean-floor)' hydrography
 battlefield geographical-area
 bay '*'
 #:meta bayou '{"gloss": "a swampy arm or slow-moving outlet of a lake (term used mainly in Mississippi and Louisiana)", "wn30": "09217086-n"}'
@@ -142,10 +137,8 @@ bayou lake
 beach-erosion geological-erosion
 #:meta beachfront '{"gloss": "a strip of land running along a beach", "wn30": "09217414-n"}'
 beachfront land
-beaufort-scale system-of-measurement
 #:meta bedrock '{"gloss": "solid unweathered rock lying beneath surface deposits of soil", "wn30": "09218044-n"}'
 bedrock rock
-beidou global-navigation-satellite-system
 #:meta belemnite '{"gloss": "a conical calcareous fossil tapering to a point at one end and with a conical cavity at the other end containing (when unbroken) a small chambered phragmocone from the shell of any of numerous extinct cephalopods of the family Belemnitidae", "wn30": "01973723-n"}'
 belemnite fossil
 #:meta bentonite '{"gloss": "an absorbent aluminum silicate clay formed from volcanic ash", "wn30": "14813709-n"}'
@@ -187,7 +180,6 @@ building '*'
 buoy device
 #:meta butte '{"gloss": "a hill that rises abruptly from the surrounding region; has a flat top and sloping sides", "wn30": "09230202-n"}'
 butte hill
-calamity '*'
 #:meta caldera '{"gloss": "a large crater caused by the violent explosion of a volcano that collapses into a depression", "wn30": "09231117-n"}'
 caldera landform natural-depression volcanic-crater
 calendar '*'
@@ -202,7 +194,7 @@ canyon ravine
 #:meta canyonside '{"gloss": "the steeply sloping side of a canyon", "wn30": "09233603-n"}'
 canyonside slope
 #:meta cape '{"gloss": "a strip of land projecting into a body of water", "wn30": "09233715-n"}'
-cape coast
+cape land landform
 carboniferous geological-period
 cardinal-compass-point compass-point
 #:meta caribbean-island '{"gloss": "an island in the Caribbean Sea", "wn30": "08746942-n"}'
@@ -210,7 +202,7 @@ caribbean-island island
 #:meta cartesian-coordinate-system '{"gloss": "a coordinate system for which the coordinates of a point are its distances from a set perpendicular lines that intersect at the origin of the system", "wn30": "05728271-n"}'
 cartesian-coordinate-system coordinate-system
 cartogram thematic-map
-cartography 'about(map)' engineering geography
+cartography 'about(map)' geography
 #:meta cascade '{"gloss": "a small waterfall or series of small waterfalls", "wn30": "09236957-n"}'
 cascade waterfall
 #:meta cataract '{"gloss": "a large waterfall; violent rush of water over a precipice", "wn30": "09237918-n"}'
@@ -220,10 +212,10 @@ cave '*'
 cavern cave
 cavity '*'
 #:meta cay '{"gloss": "a coral reef off the southern coast of Florida", "wn30": "09325395-n"}'
-cay coral-reef
+cay island
 celestial-equator great-circle
 #:meta celestial-horizon '{"gloss": "the great circle on the celestial sphere whose plane passes through the sensible horizon and the center of the Earth", "wn30": "08585846-n"}'
-celestial-horizon place
+celestial-horizon great-circle
 #:meta celestial-navigation '{"gloss": "navigating according to the positions of the stars", "wn30": "00816530-n"}'
 celestial-navigation navigation
 cemetery geographical-area
@@ -240,8 +232,7 @@ chinook wind
 chondrite rock
 #:meta choropleth-map '{"gloss": "a map that uses graded differences in shading or color or the placing of symbols inside defined areas on the map in order to indicate the average values of some property or quantity in those areas", "wn30": "03026093-n"}'
 choropleth-map thematic-map
-circle '*'
-circle-of-latitude circle geographic-line
+circle-of-latitude geographic-line
 #:meta cirque '{"gloss": "a steep-walled semicircular basin in a mountain; may contain a lake", "wn30": "09245515-n"}'
 cirque natural-basin
 #:meta cirrocumulus '{"gloss": "a cloud at a high altitude consisting of a series of regularly arranged small clouds resembling ripples", "wn30": "09245650-n"}'
@@ -272,9 +263,7 @@ cloud-bank cloud
 #:meta cloud-ceiling '{"gloss": "(meteorology) altitude of the lowest layer of clouds", "wn30": "05132542-n"}'
 cloud-ceiling altitude
 #:meta cloudiness '{"gloss": "the state of the sky when it is covered by clouds", "wn30": "14524198-n"}'
-cloudiness bad-weather
-#:meta clunch '{"gloss": "hardened clay", "wn30": "14814531-n"}'
-clunch soil
+cloudiness weather
 #:meta coal-seam '{"gloss": "a seam of coal", "wn30": "08659242-n"}'
 coal-seam mineral-seam
 coast geographical-feature land shore
@@ -297,10 +286,10 @@ compass instrument
 #:meta compass-card '{"gloss": "compass in the form of a card that rotates so that 0 degrees or North points to magnetic north", "wn30": "03080731-n"}'
 compass-card magnetic-compass
 #:meta compass-point '{"gloss": "any of 32 horizontal directions indicated on the card of a compass", "wn30": "13830305-n"}'
-compass-point spatial-relation
+compass-point direction
 compass-rose symbol
-#:meta condensation '{"gloss": "atmospheric moisture that has condensed because of cold", "wn30": "11446242-n"}'
-condensation natural-event
+#:meta condensation '{"gloss": "the process of changing from a gaseous to a liquid or solid state", "wn30": "13451348-n"}'
+condensation process
 condition '*'
 #:meta conformal-projection '{"gloss": "a map projection in which a small area is rendered in its true shape", "wn30": "03090437-n"}'
 conformal-projection map-projection
@@ -318,17 +307,15 @@ continental-shelf landform ocean-floor
 continental-slope landform ocean-floor
 contour-line isoline
 #:meta contour-map '{"gloss": "a map having contour lines through points of equal elevation", "wn30": "03096142-n"}'
-contour-map map
+contour-map topographic-map
 #:meta contrail '{"gloss": "an artificial cloud created by an aircraft; caused either by condensation due to the reduction in air pressure above the wing surface or by water vapor in the engine exhaust", "wn30": "09255519-n"}'
 contrail cloud
 #:meta convection '{"gloss": "(meteorology) the vertical movement of heat or other properties by massive motion within the atmosphere", "wn30": "13452750-n"}'
 convection process
 convergent-boundary plate-boundary
 coordinate-system mathematical-object
-coordinated-universal-time time-standard
 #:meta coral-reef '{"gloss": "a reef consisting of coral consolidated into limestone", "wn30": "09256479-n"}'
 coral-reef reef
-coriolis-force '*'
 count count-dimension
 count-dimension dimension
 crack '*'
@@ -346,7 +333,6 @@ cryosphere earth-sphere
 cumulonimbus cloud
 #:meta cumulus '{"gloss": "a globular cloud", "wn30": "09261960-n"}'
 cumulus cloud
-curved-shape '*'
 #:meta cyclone '{"gloss": "(meteorology) rapid inward circulation of air masses about a low pressure center; circling counterclockwise in the northern hemisphere and clockwise in the southern", "wn30": "14521302-n"}'
 cyclone atmospheric-state low
 #:meta cyclonic-storm '{"gloss": "a violent rotating windstorm", "wn30": "11443721-n"}'
@@ -356,9 +342,7 @@ cylindrical-projection map-projection
 dale valley
 data-processing '*'
 database '*'
-dataset '*'
-day '*'
-daylight-saving-time practice time-standard
+daylight-saving-time practice
 #:meta dead-reckoning '{"gloss": "navigation without the aid of celestial observations", "wn30": "00817394-n"}'
 dead-reckoning navigation
 dead-sea lake
@@ -368,14 +352,13 @@ declivity '*'
 dell hollow
 #:meta depth-finder '{"gloss": "navigational instrument used to measure the depth of a body of water (as by ultrasound or radar)", "wn30": "03178000-n"}'
 depth-finder instrument
-descent '*'
 desert '*'
 #:meta desert-soil '{"gloss": "a type of soil that develops in arid climates", "wn30": "14834013-n"}'
 desert-soil soil
 device '*'
 devonian geological-period
 #:meta dew '{"gloss": "water that has condensed on a cool surface overnight from water vapor in the air", "wn30": "14834132-n"}'
-dew condensation
+dew water
 dew-point temperature
 #:meta diapir '{"gloss": "a domed rock formation where a core of rock has moved upward and pierced through the more brittle overlying strata", "wn30": "09266604-n"}'
 diapir geological-formation
@@ -390,12 +373,12 @@ direction '*'
 distance '*'
 #:meta distributary '{"gloss": "a branch of a river that flows away from the main stream and does not rejoin it", "wn30": "09267602-n"}'
 distributary stream
-#:meta ditch '{"gloss": "any small natural waterway", "wn30": "09267758-n"}'
-ditch waterway
+#:meta ditch '{"gloss": "a long narrow excavation in the earth", "wn30": "03214253-n"}'
+ditch trench
 divergent-boundary plate-boundary
 document '*'
 #:meta doldrums '{"gloss": "a belt of calms and light winds between the northern and southern trade winds of the Atlantic and Pacific", "wn30": "11447691-n"}'
-doldrums wind
+doldrums climatic-zone
 dominance-dimension dimension
 #:meta downdraft '{"gloss": "a strong downward air current", "wn30": "11522730-n"}'
 downdraft air-current
@@ -437,23 +420,21 @@ earth-radius amount
 earth-rotation natural-event
 earth-science '*'
 earth-sphere 'in(earth)' layer
-earth-structure structure
 earthquake '*'
 #:meta east-by-north '{"gloss": "the compass point that is one point north of due east", "wn30": "13832236-n"}'
-east-by-north compass-point direction
+east-by-north compass-point
 #:meta east-by-south '{"gloss": "the compass point that is one point south of due east", "wn30": "13832480-n"}'
-east-by-south compass-point direction
+east-by-south compass-point
 #:meta east-northeast '{"gloss": "the compass point midway between northeast and east", "wn30": "13832118-n"}'
-east-northeast compass-point direction
+east-northeast compass-point
 #:meta east-southeast '{"gloss": "the compass point midway between east and southeast", "wn30": "13832599-n"}'
-east-southeast compass-point direction
+east-southeast compass-point
 #:meta east-wind '{"gloss": "a wind from the east", "wn30": "11448343-n"}'
 east-wind wind
 eastern-hemisphere hemisphere
 #:meta ebbtide '{"gloss": "the tide while water is flowing out", "wn30": "07402393-n"}'
 ebbtide tide
 echo-sounding activity
-ecliptic '*'
 #:meta economic-geography '{"gloss": "the branch of geography concerned with the production and distribution of commodities", "wn30": "06122976-n"}'
 economic-geography geography
 #:meta economic-geology '{"gloss": "the branch of geology that deals with economically valuable geological materials", "wn30": "06121854-n"}'
@@ -468,18 +449,14 @@ el-nino-southern-oscillation climate-oscillation
 #:meta elves-emission '{"gloss": "an acronym for emissions of light and very low frequency perturbations due to electromagnetic pulse sources; extremely bright extremely short (less than a msec) electrical flashes forming a huge ring (up to 400 km diameter) in the ionosphere", "wn30": "11474774-n"}'
 elves-emission atmospheric-electricity
 enclosing-dimension dimension
-#:meta endogeny '{"gloss": "a geological phenomenon below the surface of the earth", "wn30": "11418011-n"}'
-endogeny geological-phenomenon
 endonym place-name
 energy 'linear-dimension(energy)'
 engineering '*'
-environment '*'
 #:meta eon '{"gloss": "the longest division of geological time", "wn30": "15243730-n"}'
 eon geological-time-division time
 epicenter geographic-point
 #:meta epoch '{"gloss": "a unit of geological time that is a subdivision of a period and is itself divided into ages", "wn30": "15248269-n"}'
 epoch geological-time-division time
-epsg-geodetic-parameter-dataset dataset
 #:meta equal-area-projection '{"gloss": "a map projection in which quadrilaterals formed by meridians and parallels have an area on the map proportional to their area on the globe", "wn30": "03293471-n"}'
 equal-area-projection map-projection
 #:meta equator '{"gloss": "an imaginary line around the Earth forming the great circle that is equidistant from the north and south poles", "wn30": "08568719-n"}'
@@ -488,7 +465,6 @@ equator geographic-line
 equatorial-current ocean-current
 equidistant-projection map-projection
 equilibrium '*'
-equinox '*'
 equirectangular-projection cylindrical-projection equidistant-projection
 #:meta erosive-wash '{"gloss": "the dry bed of an intermittent stream (as at the bottom of a canyon)", "wn30": "09474895-n"}'
 erosive-wash streambed
@@ -498,7 +474,6 @@ escarpment landform slope
 esker natural-ridge
 #:meta estuary '{"gloss": "the wide part of a river where it nears the sea; fresh and salt water mix", "wn30": "09274500-n"}'
 estuary body-of-water river-mouth
-etrs89 geodetic-datum
 eurasia landmass
 #:meta evaporite '{"gloss": "the sediment that is left after the evaporation of seawater", "wn30": "15009192-n"}'
 evaporite sediment
@@ -509,15 +484,10 @@ facility '*'
 #:meta fault-line '{"gloss": "(geology) line determined by the intersection of a geological fault and the earth'"'"'s surface", "wn30": "08569591-n"}'
 fault-line geographic-line
 field geographical-area
-field-of-study '*'
 figure-of-the-earth shape
 file-format '*'
-#:meta fine-spray '{"gloss": "precipitation in very small drops", "wn30": "11457496-n"}'
-fine-spray precipitation
-#:meta fire-pit '{"gloss": "a pit whose floor is incandescent lava", "wn30": "09280113-n"}'
-fire-pit cavity
 #:meta firestorm '{"gloss": "a storm in which violent winds are drawn into the column of hot air rising over a severely bombed area", "wn30": "11457944-n"}'
-firestorm flame storm
+firestorm flame
 #:meta firth '{"gloss": "a long narrow estuary (especially in Scotland)", "wn30": "09280380-n"}'
 firth estuary
 #:meta fjord '{"gloss": "a long narrow inlet of the sea between steep cliffs; common in Norway", "wn30": "09281104-n"}'
@@ -534,8 +504,6 @@ flood-tide tide
 floodhead 'in(flash-flood)' natural-event
 #:meta floodplain '{"gloss": "a low plain adjacent to a river that is formed chiefly of river sediment and is subject to flooding", "wn30": "09281914-n"}'
 floodplain plain
-#:meta flowage '{"gloss": "a body of water that has been created by deliberately flooding an area", "wn30": "09282534-n"}'
-flowage body-of-water
 fluid '*'
 #:meta flurry '{"gloss": "a light brief snowfall and gust of wind (or something resembling that)", "wn30": "11508578-n"}'
 flurry snow
@@ -545,11 +513,8 @@ fohn wind
 folium geological-formation
 #:meta foothill '{"gloss": "a relatively low hill on the lower slope of a mountain", "wn30": "09283405-n"}'
 foothill hill
-force '*'
 #:meta ford '{"gloss": "a shallow area in a stream that can be forded", "wn30": "09283623-n"}'
 ford body-of-water
-#:meta foreland '{"gloss": "land forming the forward margin of something", "wn30": "09283767-n"}'
-foreland land
 #:meta foreshock '{"gloss": "a tremor preceding an earthquake", "wn30": "07429782-n"}'
 foreshock tremor
 #:meta foreshore '{"gloss": "the part of the seashore between the highwater mark and the low-water mark", "wn30": "09283866-n"}'
@@ -577,7 +542,6 @@ fucoid fossil
 function '*'
 #:meta gale '{"gloss": "a strong wind moving 45-90 knots; force 7 to 10 on Beaufort scale", "wn30": "11461825-n"}'
 gale wind
-galileo-navigation-system global-navigation-satellite-system
 gall-peters-projection cylindrical-projection
 #:meta gazetteer '{"gloss": "a geographical dictionary (as at the back of an atlas)", "wn30": "06419628-n"}'
 gazetteer 'about(place)' dictionary
@@ -605,15 +569,13 @@ geographic-pole '*'
 geographical-area region
 geographical-feature natural-object place
 geography '*'
-geohash geocode geocoding geocoding-system
+geohash geocode
 geoid shape
 geojson geographic-data-format
-geologic-time-scale time-standard
 #:meta geological-abrasion '{"gloss": "erosion by friction", "wn30": "13423615-n"}'
 geological-abrasion geological-erosion
 #:meta geological-cataclysm '{"gloss": "a sudden violent change in the earth'"'"'s surface", "wn30": "11434016-n"}'
 geological-cataclysm geological-phenomenon
-geological-eon geological-time-division
 #:meta geological-era '{"gloss": "a major division of geological time; an era is usually divided into two or more periods", "wn30": "15248020-n"}'
 geological-era geological-time-division time
 #:meta geological-erosion '{"gloss": "(geology) the mechanical process of wearing or grinding something down (as by particles washing over it)", "wn30": "13475538-n"}'
@@ -641,7 +603,6 @@ geomagnetic-pole geographic-point
 geomatics 'about(geographic-data)' engineering
 #:meta geomorphology '{"gloss": "the branch of geology that studies the characteristics and configuration and evolution of rocks and land forms", "wn30": "06117855-n"}'
 geomorphology 'about(landform)' geography geophysics
-geonames gazetteer
 #:meta geophysics '{"gloss": "geology that uses physical principles to study properties of the earth", "wn30": "06117562-n"}'
 geophysics geology physics
 geopotential amount
@@ -649,27 +610,23 @@ geospatial-analysis activity data-processing
 geosphere earth-sphere
 geotagging activity data-processing
 geotiff geographic-data-format
-getty-thesaurus-of-geographic-names gazetteer
 #:meta geyser '{"gloss": "a spring that discharges hot water and steam", "wn30": "09288635-n"}'
 geyser hot-spring landform
 #:meta gilgai-soil '{"gloss": "soil in the melon holes of Australia", "wn30": "14879492-n"}'
 gilgai-soil soil
 #:meta glacial-ablation '{"gloss": "the erosive process that reduces the size of glaciers", "wn30": "13423489-n"}'
-glacial-ablation geological-erosion
+glacial-ablation geological-process
 #:meta glacial-boulder '{"gloss": "a boulder that has been carried by a glacier to a place far distant from its place of origin", "wn30": "09289177-n"}'
 glacial-boulder boulder
 glacial-period geological-time-division
 #:meta glacial-till '{"gloss": "unstratified soil deposited by a glacier; consists of sand and clay and gravel and boulders mixed together", "wn30": "15074772-n"}'
-glacial-till soil
+glacial-till sediment
 glaciation geological-process
 glacier '*'
 glaciology 'about(glacier)' hydrology
 #:meta glen '{"gloss": "a narrow secluded valley (in the mountains)", "wn30": "09289596-n"}'
 glen valley
 global-navigation-satellite-system satellite-navigation
-#:meta global-positioning-system '{"gloss": "a navigational system involving satellites and computers that can determine the latitude and longitude of a receiver on Earth by computing the time difference for signals from different satellites to reach the receiver", "wn30": "03440216-n"}'
-global-positioning-system global-navigation-satellite-system
-glonass global-navigation-satellite-system
 gnomonic-projection azimuthal-projection
 gnss-augmentation method
 gobi-desert desert
@@ -679,11 +636,9 @@ good-weather weather
 gorge canyon
 gps-exchange-format geographic-data-format
 gps-receiver instrument
-gps-time time-standard
 graph-dimension dimension
 #:meta grassland '{"gloss": "land where grass or grasslike vegetation grows and is the dominant form of plant life", "wn30": "08598301-n"}'
 grassland biome geographical-area
-gravel '*'
 gravimetry activity
 gravity-anomaly amount
 great-barrier-reef coral-reef
@@ -695,7 +650,6 @@ great-rift-valley valley
 greenhouse-effect natural-event
 greenland island
 greenland-ice-sheet ice-sheet
-gregorian-calendar solar-calendar
 #:meta grotto '{"gloss": "a small cave (usually with attractive features)", "wn30": "09294877-n"}'
 grotto cave
 #:meta groundmass '{"gloss": "(geology) the matrix of fine-grained crystalline material in which larger crystals are embedded", "wn30": "14891678-n"}'
@@ -710,7 +664,7 @@ gulf bay
 #:meta gulf-stream '{"gloss": "a warm ocean current that flows from the Gulf of Mexico northward through the Atlantic Ocean", "wn30": "11489536-n"}'
 gulf-stream ocean-current
 #:meta gully '{"gloss": "deep ditch cut by running water (especially after a prolonged downpour)", "wn30": "09300306-n"}'
-gully body-of-water valley
+gully valley
 #:meta gust '{"gloss": "a strong current of air", "wn30": "11465017-n"}'
 gust wind
 #:meta guyot '{"gloss": "a seamount of volcanic origin (especially in the Pacific Ocean)", "wn30": "09300559-n"}'
@@ -727,7 +681,7 @@ hailstorm storm
 #:meta harmattan '{"gloss": "a dusty wind from the Sahara that blows toward the western coast of Africa during the winter", "wn30": "11438756-n"}'
 harmattan trade-wind
 haversine-formula formula
-hayfield grassland
+hayfield field
 #:meta headwind '{"gloss": "wind blowing opposite to the path of a ship or aircraft", "wn30": "11443173-n"}'
 headwind wind
 #:meta heat-wave '{"gloss": "a wave of unusually hot weather", "wn30": "11472612-n"}'
@@ -759,13 +713,13 @@ homolosine-projection equal-area-projection
 hoodoo geological-formation
 horizontal-datum geodetic-datum
 #:meta horse-latitude '{"gloss": "either of two belts or regions near 30 degrees north or 30 degrees south; characterized by calms and light-baffling winds", "wn30": "08586036-n"}'
-horse-latitude place
+horse-latitude climatic-zone
 #:meta hot-spring '{"gloss": "a natural spring of water at a temperature of 70 F or above", "wn30": "09305898-n"}'
 hot-spring body-of-water natural-spring
 #:meta hot-weather '{"gloss": "a period of unusually high temperatures", "wn30": "11466701-n"}'
 hot-weather weather
 #:meta hour-circle '{"gloss": "a great circle on the celestial sphere that passes through both celestial poles", "wn30": "08586688-n"}'
-hour-circle place
+hour-circle great-circle
 human '*'
 humidity amount
 #:meta humus '{"gloss": "partially decomposed organic matter; the organic component of soil", "wn30": "14908822-n"}'
@@ -781,15 +735,14 @@ hydrosphere earth-sphere
 hypocenter place
 #:meta hypsography '{"gloss": "the scientific study of the earth'"'"'s configuration above sea level (emphasizing the measurement of land altitudes relative to sea level)", "wn30": "06117202-n"}'
 hypsography geology
-ice '*'
 #:meta ice-age '{"gloss": "any period of time during which glaciers covered a large part of the earth'"'"'s surface", "wn30": "15255195-n"}'
-ice-age geological-period
+ice-age geological-time-division
 #:meta ice-cap '{"gloss": "a mass of ice and snow that permanently covers a large area of land (e.g., the polar regions or a mountain peak)", "wn30": "09308743-n"}'
 ice-cap glacier ice-mass
 #:meta ice-field '{"gloss": "a large flat mass of ice (larger than an ice floe) floating at sea", "wn30": "09309046-n"}'
-ice-field glacier ice-mass
+ice-field ice-mass
 #:meta ice-floe '{"gloss": "a flat mass of ice (smaller than an ice field) floating at sea", "wn30": "09309168-n"}'
-ice-floe ice ice-mass
+ice-floe ice-mass
 #:meta ice-mass '{"gloss": "a large mass of ice", "wn30": "09309292-n"}'
 ice-mass geological-formation
 ice-sheet glacier
@@ -797,7 +750,7 @@ ice-shelf glacier ice-mass
 #:meta ice-storm '{"gloss": "a storm with freezing rain that leaves everything glazed with ice", "wn30": "11467650-n"}'
 ice-storm storm
 #:meta iceberg '{"gloss": "a large mass of ice floating at sea; usually broken off of a polar glacier", "wn30": "09308572-n"}'
-iceberg ice ice-mass
+iceberg ice-mass
 iers-reference-meridian prime-meridian
 #:meta igneous-intrusion '{"gloss": "rock produced by an intrusive process", "wn30": "09314964-n"}'
 igneous-intrusion rock
@@ -821,12 +774,10 @@ inlet body-of-water landform
 insolation natural-event
 instrument '*'
 #:meta instrument-flying '{"gloss": "navigation of an airplane solely by instruments", "wn30": "00816419-n"}'
-instrument-flying activity
+instrument-flying navigation
 intercardinal-direction compass-point
 interglacial geological-time-division
-international-atomic-time time-standard
 international-date-line geographic-line
-international-terrestrial-reference-system spatial-reference-system
 #:meta ionosphere '{"gloss": "the outer region of the Earth'"'"'s atmosphere; contains a high concentration of free electrons", "wn30": "08588916-n"}'
 ionosphere atmospheric-layer
 island '*'
@@ -843,7 +794,6 @@ isthmus land landform
 japan-current ocean-current
 #:meta jet-stream '{"gloss": "a high-speed high-altitude airstream blowing from west to east near the top of the troposphere; has important effects of the formation of weather fronts", "wn30": "11470139-n"}'
 jet-stream airstream
-julian-day time-standard
 jurassic geological-period
 karst landform
 #:meta katabatic-wind '{"gloss": "a wind caused by the downward motion of cold air", "wn30": "11443283-n"}'
@@ -853,13 +803,10 @@ kettle-hole natural-depression
 keyhole-markup-language geographic-data-format
 #:meta khamsin '{"gloss": "an oppressively hot southerly wind from the Sahara that blows across Egypt in the spring", "wn30": "11442752-n"}'
 khamsin wind
-#:meta kitty-litter '{"gloss": "granulated clay; placed in a container where it absorbs the waste products of a cat or dog", "wn30": "14813957-n"}'
-kitty-litter clay
 #:meta knoll '{"gloss": "a small natural hill", "wn30": "09326662-n"}'
 knoll hill
 #:meta kopje '{"gloss": "a small hill rising up from the African veld", "wn30": "09327077-n"}'
 kopje knoll
-koppen-climate-classification climate-classification
 la-nina climate-oscillation
 #:meta lagoon '{"gloss": "a body of water cut off from a larger body by a reef of sand or coral", "wn30": "09328746-n"}'
 lagoon lake
@@ -883,8 +830,6 @@ landform '*'
 #:meta landmass '{"gloss": "a large continuous extent of land", "wn30": "09335916-n"}'
 landmass land
 landslide geological-phenomenon
-#:meta landslip '{"gloss": "(geology) the descent of a large mass of earth or rocks or snow etc.", "wn30": "07404944-n"}'
-landslip descent
 #:meta laterite '{"gloss": "a red soil produced by rock decay; contains insoluble deposits of ferric and aluminum oxides", "wn30": "14930165-n"}'
 laterite soil
 #:meta latitude '{"gloss": "the angular distance between an imaginary line around a heavenly body parallel to its equator and the equator itself", "wn30": "08595531-n"}'
@@ -893,7 +838,7 @@ lava magma
 layer '*'
 #:meta leaf-mold '{"gloss": "soil composed mainly of decaying leaves", "wn30": "14933911-n"}'
 leaf-mold soil
-leap-second time-standard
+leap-second time-period
 leap-year year
 #:meta ledge '{"gloss": "a projecting ridge on a mountain or submerged under water", "wn30": "09337253-n"}'
 ledge natural-ridge
@@ -944,7 +889,7 @@ low '*'
 #:meta low-tide '{"gloss": "the lowest (farthest) ebb of the tide", "wn30": "07402271-n"}'
 low-tide tide
 #:meta lowland '{"gloss": "low level country", "wn30": "09344198-n"}'
-lowland natural-depression plain
+lowland plain
 lunar-calendar calendar
 #:meta lunar-crater '{"gloss": "a crater on the Earth'"'"'s Moon", "wn30": "09344324-n"}'
 lunar-crater crater
@@ -980,10 +925,7 @@ massif geological-formation landform
 material '*'
 mathematical-object '*'
 #:meta meander '{"gloss": "a bend or curve, as in a stream or river", "wn30": "09349648-n"}'
-meander curved-shape geographical-feature
-measure '*'
-#:meta mercalli-scale '{"gloss": "a scale formerly used to describe the magnitude of an earthquake; an earthquake detected only by seismographs is a I and an earthquake that destroys all buildings is a XII", "wn30": "13851426-n"}'
-mercalli-scale system-of-measurement
+meander geographical-feature
 #:meta mercator-projection '{"gloss": "a map projection of the earth onto a cylinder; areas appear greater the farther they are from the equator", "wn30": "03748691-n"}'
 mercator-projection cylindrical-projection
 #:meta meridian '{"gloss": "an imaginary great circle on the surface of the earth passing through the north and south poles at right angles to the equator", "wn30": "08598823-n"}'
@@ -993,7 +935,6 @@ mesa plateau
 mesosphere atmospheric-layer
 mesozoic geological-era
 metamorphic-rock rock-material
-meteor-shower '*'
 meteorology '*'
 method '*'
 #:meta microfossil '{"gloss": "a fossil that must be studied microscopically", "wn30": "09353815-n"}'
@@ -1005,7 +946,6 @@ mid-ocean-ridge oceanic-ridge
 mid-water body-of-water
 #:meta midnight-sun '{"gloss": "the sun visible at midnight (inside the Arctic or Antarctic Circles)", "wn30": "11482579-n"}'
 midnight-sun natural-event
-military-grid-reference-system spatial-reference-system
 mineral '*'
 #:meta mineral-seam '{"gloss": "a stratum of ore or coal thick enough to be mined with profit", "wn30": "08659076-n"}'
 mineral-seam layer
@@ -1025,21 +965,18 @@ moderate-gale gale
 #:meta mohorovicic-discontinuity '{"gloss": "the boundary between the Earth'"'"'s crust and the underlying mantle", "wn30": "09357080-n"}'
 mohorovicic-discontinuity 'in(earth)' place
 mollweide-projection equal-area-projection
-#:meta moment-magnitude-scale '{"gloss": "a logarithmic scale of 1 to 10 (a successor to the Richter scale) that enables seismologists to compare the energy released by different earthquakes on the basis of the area of the geological fault that ruptured in the quake", "wn30": "13852083-n"}'
-moment-magnitude-scale system-of-measurement
 #:meta monocline '{"gloss": "a geological formation in which all strata are inclined in the same direction", "wn30": "09357447-n"}'
 monocline geological-formation
 #:meta monsoon '{"gloss": "a seasonal wind in southern Asia; blows from the southwest (bringing rain) in summer and from the northeast in winter", "wn30": "11484570-n"}'
-monsoon wind
+monsoon monsoon-wind
 #:meta monsoon-season '{"gloss": "rainy season in southern Asia when the southwestern monsoon blows, bringing heavy rains", "wn30": "15239033-n"}'
 monsoon-season rainy-season
 #:meta monsoon-wind '{"gloss": "any wind that changes direction with the seasons", "wn30": "11484741-n"}'
 monsoon-wind wind
 #:meta moor '{"gloss": "open land usually with peaty soil covered with heather and bracken and moss", "wn30": "09358751-n"}'
-moor habitat plain
+moor habitat land
 #:meta mother-lode '{"gloss": "the main vein of ore in a deposit", "wn30": "11445960-n"}'
 mother-lode lode
-motion '*'
 mount-everest mountain
 mountain natural-elevation
 mountain-range '*'
@@ -1062,15 +999,11 @@ natural-object '*'
 natural-ridge natural-elevation
 natural-spring '*'
 nautical-chart 'about(sea)' chart
-#:meta naval-chart '{"gloss": "a chart for a navigator showing the prevailing meteorological and hydrographic and navigational conditions", "wn30": "03811648-n"}'
-naval-chart chart
-navigation activity skill
+navigation activity
 navigational-bearing angle
 navigational-system device
 #:meta neap-tide '{"gloss": "a less than average tide occurring at the first and third quarters of the moon", "wn30": "07403300-n"}'
 neap-tide tide
-#:meta nebule '{"gloss": "a small cloud", "wn30": "09367137-n"}'
-nebule cloud
 neogene geological-period
 #:meta nephology '{"gloss": "the branch of meteorology that studies clouds and cloud formation", "wn30": "06119608-n"}'
 nephology 'about(cloud)' meteorology
@@ -1080,38 +1013,35 @@ nile river
 nimbostratus cloud
 #:meta nimbus '{"gloss": "a dark grey cloud bearing rain", "wn30": "09371686-n"}'
 nimbus cloud
-#:meta 'noah'"'"'s-flood' '{"gloss": "(Biblical) the great deluge that is said in the Book of Genesis to have occurred in the time of Noah; it was brought by God upon the earth because of the wickedness of human beings", "wn30": "11455386-n"}'
-'noah'"'"'s-flood' flood
 north-america continent
-north-american-datum geodetic-datum
 #:meta north-by-east '{"gloss": "the compass point that is one point east (clockwise) of due north", "wn30": "13831310-n"}'
-north-by-east compass-point direction
+north-by-east compass-point
 #:meta north-by-west '{"gloss": "the compass point that is one point west of due north", "wn30": "13835308-n"}'
-north-by-west compass-point direction
+north-by-west compass-point
 #:meta north-equatorial-current '{"gloss": "an equatorial current that flows west across the Pacific just north of the equator", "wn30": "11489230-n"}'
 north-equatorial-current equatorial-current
 #:meta north-northeast '{"gloss": "the compass point that is midway between north and northeast", "wn30": "13831572-n"}'
-north-northeast compass-point direction
+north-northeast compass-point
 #:meta north-northwest '{"gloss": "the compass point that is midway between north and northwest", "wn30": "13835163-n"}'
-north-northwest compass-point direction
+north-northwest compass-point
 north-pole geographic-pole
 #:meta north-wind '{"gloss": "a wind that blows from the north", "wn30": "11487950-n"}'
 north-wind wind
 #:meta northeast '{"gloss": "the compass point midway between north and east; at 45 degrees", "wn30": "13831843-n"}'
-northeast compass-point direction
+northeast compass-point
 #:meta northeast-by-east '{"gloss": "the compass point that is one point east of northeast", "wn30": "13831994-n"}'
-northeast-by-east compass-point direction
+northeast-by-east compass-point
 #:meta northeast-by-north '{"gloss": "the compass point that is one point north of northeast", "wn30": "13831717-n"}'
-northeast-by-north compass-point direction
+northeast-by-north compass-point
 #:meta northeaster '{"gloss": "a storm blowing from the northeast", "wn30": "11462951-n"}'
 northeaster storm
 northern-hemisphere hemisphere
 #:meta northwest '{"gloss": "the compass point midway between north and west; at 315 degrees", "wn30": "13834885-n"}'
-northwest compass-point direction
+northwest compass-point
 #:meta northwest-by-north '{"gloss": "the compass point that is one point north of northwest", "wn30": "13835037-n"}'
-northwest-by-north compass-point direction
+northwest-by-north compass-point
 #:meta northwest-by-west '{"gloss": "the compass point that is one point west of northwest", "wn30": "13834761-n"}'
-northwest-by-west compass-point direction
+northwest-by-west compass-point
 #:meta northwest-wind '{"gloss": "a wind from the northwest", "wn30": "11448475-n"}'
 northwest-wind wind
 oasis geographical-area geographical-feature
@@ -1139,7 +1069,7 @@ oceanography 'about(ocean)' earth-science
 #:meta offing '{"gloss": "the part of the sea that can be seen from the shore and is beyond the anchoring area", "wn30": "09377125-n"}'
 offing body-of-water
 #:meta omnirange '{"gloss": "a navigational system consisting of a network of radio beacons that provide aircraft with information about exact position and bearing", "wn30": "03846970-n"}'
-omnirange artifact
+omnirange navigational-system
 open-location-code geocode
 orbit '*'
 ordovician geological-period
@@ -1186,7 +1116,7 @@ paleozoic geological-era
 #:meta paleozoology '{"gloss": "the study of fossil animals", "wn30": "06074860-n"}'
 paleozoology 'about(animal)' paleobiology
 park geographical-area
-pasture grassland
+pasture field
 path '*'
 #:meta pebble '{"gloss": "a small smooth rounded rock", "wn30": "09388023-n"}'
 pebble rock
@@ -1202,8 +1132,8 @@ permafrost physical-object
 permian geological-period
 #:meta peruvian-current '{"gloss": "a cold ocean current that flows north along the Pacific Coast of South America before turning west", "wn30": "11489878-n"}'
 peruvian-current ocean-current
-#:meta petrifaction '{"gloss": "a rock created by petrifaction; an organic object infiltrated with mineral matter and preserved in its original form", "wn30": "09390680-n"}'
-petrifaction rock
+#:meta petrifaction '{"gloss": "the process of turning some plant material into stone by infiltration with water carrying mineral particles without changing the original shape", "wn30": "13535583-n"}'
+petrifaction geological-process
 #:meta petroleum-geology '{"gloss": "the branch of economic geology that deals with the occurrence and exploitation of oil and gas fields", "wn30": "06121690-n"}'
 petroleum-geology economic-geology
 #:meta petrology '{"gloss": "the branch of geology that studies rocks: their origin and formation and mineral composition and classification", "wn30": "06121375-n"}'
@@ -1227,7 +1157,6 @@ placer alluvial-sediment
 plain land landform
 #:meta planation '{"gloss": "the process of erosion whereby a level surface is produced", "wn30": "13538182-n"}'
 planation geological-erosion
-planet '*'
 plant '*'
 #:meta plat-map '{"gloss": "a map showing planned or actual features of an area (streets and building lots etc.)", "wn30": "03959350-n"}'
 plat-map map
@@ -1242,7 +1171,7 @@ plot geographical-area
 podzol soil
 point-of-interest geographic-point
 #:meta polar-circle '{"gloss": "a line of latitude at the north or south poles", "wn30": "08496655-n"}'
-polar-circle place
+polar-circle circle-of-latitude
 polar-climate climate
 #:meta polar-glacier '{"gloss": "a glacier near the Arctic or Antarctic poles", "wn30": "09396608-n"}'
 polar-glacier continental-glacier
@@ -1252,7 +1181,7 @@ polyconic-projection conic-projection
 #:meta polynya '{"gloss": "a stretch of open water surrounded by ice (especially in Arctic seas)", "wn30": "09397268-n"}'
 polynya body-of-water
 #:meta pond '{"gloss": "a small lake", "wn30": "09397391-n"}'
-pond lake landform
+pond lake
 postal-address information
 postal-code code
 #:meta pothole '{"gloss": "a pit or hole produced by wear or weathering (especially in a road surface)", "wn30": "09398076-n"}'
@@ -1268,8 +1197,6 @@ precipice cliff
 precipitation weather
 prefix-dimension dimension
 pressure 'linear-dimension(pressure)'
-#:meta prevailing-westerly '{"gloss": "the winds from the west that occur in the temperate zones of the Earth", "wn30": "11525614-n"}'
-prevailing-westerly west-wind
 #:meta prevailing-wind '{"gloss": "the predominant wind direction", "wn30": "11497586-n"}'
 prevailing-wind wind
 #:meta prime-meridian '{"gloss": "meridian at zero degree longitude from which east and west are reckoned (usually the Greenwich longitude in England)", "wn30": "08599292-n"}'
@@ -1282,10 +1209,9 @@ prognosis '*'
 promontory landform natural-elevation
 proterozoic eon
 public-square geographical-area
-publication '*'
 quaternary geological-period
 #:meta quicksand '{"gloss": "a pit filled with loose wet sand into which objects are sucked down", "wn30": "09402944-n"}'
-quicksand cavity
+quicksand sediment
 radar instrument tool
 rain precipitation
 #:meta rain-wash '{"gloss": "the washing away of soil or other loose material by rain", "wn30": "13545733-n"}'
@@ -1303,9 +1229,9 @@ ravine valley
 real-time-kinematic-positioning gnss-augmentation
 rectangle-dimension dimension
 #:meta red-clay '{"gloss": "clay whose redness results from iron oxide", "wn30": "14695069-n"}'
-red-clay clay mineral
+red-clay clay
 #:meta reef '{"gloss": "a submerged ridge of rock or coral near the surface of the water", "wn30": "09406793-n"}'
-reef shoal
+reef natural-ridge
 reference-ellipsoid shape
 region '*'
 #:meta regosol '{"gloss": "a type of soil consisting of unconsolidated material from freshly deposited alluvium or sand", "wn30": "14695351-n"}'
@@ -1321,13 +1247,11 @@ residual-soil soil
 reverse-geocoding geocoding
 reversed-dimension dimension
 rhumb-line line
-#:meta richter-magnitude-scale '{"gloss": "a logarithmic scale of 1 to 10 formerly used to express the magnitude of an earthquake on the basis of the size of seismograph oscillations", "wn30": "13851865-n"}'
-richter-magnitude-scale system-of-measurement
 ridge '*'
 #:meta rift-valley '{"gloss": "a valley with steep sides; formed by a rift in the earth'"'"'s crust", "wn30": "09410224-n"}'
 rift-valley valley
 #:meta rill '{"gloss": "a small channel (as one formed by soil erosion)", "wn30": "09410460-n"}'
-rill water-channel
+rill natural-depression
 #:meta rip-current '{"gloss": "a strong surface current flowing outwards from a shore", "wn30": "07404443-n"}'
 rip-current ocean-current
 #:meta riparian-forest '{"gloss": "woodlands along the banks of stream or river", "wn30": "09411189-n"}'
@@ -1335,13 +1259,12 @@ riparian-forest forest
 #:meta ripple-mark '{"gloss": "one of a series of small ridges produced in sand by water currents or by wind", "wn30": "09411295-n"}'
 ripple-mark natural-ridge
 river '*'
-river-bank '*'
 #:meta river-boulder '{"gloss": "a boulder that has been carried by a river to a place remote from its place of origin", "wn30": "09415793-n"}'
 river-boulder boulder
 #:meta river-delta '{"gloss": "a low triangular area of alluvial deposits where a river divides before entering a larger body of water", "wn30": "09264803-n"}'
-river-delta alluvial-sediment plain river-mouth
+river-delta plain river-mouth
 #:meta river-mouth '{"gloss": "the point where a stream issues into a larger body of water", "wn30": "09362316-n"}'
-river-mouth geographic-point geological-formation
+river-mouth geological-formation
 #:meta river-source '{"gloss": "a stream that forms the source of a river", "wn30": "09302127-n"}'
 river-source geographic-point stream
 #:meta riverbed '{"gloss": "a channel occupied (or formerly occupied) by a river", "wn30": "09415671-n"}'
@@ -1383,17 +1306,14 @@ sandblast gust
 sandstone sedimentary-rock
 #:meta santa-ana '{"gloss": "a strong hot dry wind that blows in winter from the deserts of southern California toward the Pacific Coast", "wn30": "11442894-n"}'
 santa-ana wind
-satellite '*'
 satellite-geodesy geodesy
 satellite-imagery image
 satellite-navigation navigational-system
 #:meta savanna '{"gloss": "a flat grassland in tropical or subtropical regions", "wn30": "08645847-n"}'
 savanna grassland
 #:meta scablands '{"gloss": "(geology) flat elevated land with poor soil and little vegetation that is scarred by dry channels of glacial origin (especially in eastern Washington)", "wn30": "09425344-n"}'
-scablands physical-object
-scale '*'
+scablands land
 scale-bar symbol
-science '*'
 scientific-principle '*'
 sea '*'
 #:meta sea-breeze '{"gloss": "a cooling breeze from the sea (during the daytime)", "wn30": "11432155-n"}'
@@ -1437,16 +1357,12 @@ shallows body-of-water
 shape '*'
 shapefile geographic-data-format
 shared-with reversed-dimension
-#:meta shingling '{"gloss": "(geology) sediment in which flat pebbles are uniformly tilted in the same direction", "wn30": "14700280-n"}'
-shingling rock-material
 #:meta shoal '{"gloss": "a sandbank in a stretch of water that is visible at low tide", "wn30": "09433312-n"}'
 shoal landform sandbank
 #:meta shore '{"gloss": "the land along the edge of a body of water", "wn30": "09433442-n"}'
 shore geological-formation
 #:meta shore-boulder '{"gloss": "a boulder found on a shore remote from its place of origin", "wn30": "09433721-n"}'
 shore-boulder boulder
-sidereal-day '*'
-sidereal-time '*'
 #:meta silt '{"gloss": "mud or clay or small rocks deposited by a river or lake", "wn30": "15042052-n"}'
 silt sediment soil
 silurian geological-period
@@ -1461,7 +1377,6 @@ size dominance-dimension
 sketch-map map
 #:meta ski-slope '{"gloss": "a snow-covered slope for skiing", "wn30": "09436444-n"}'
 ski-slope slope
-skill '*'
 #:meta slack-water '{"gloss": "the occurrence of relatively still water at the turn of the (low) tide", "wn30": "07403779-n"}'
 slack-water tide
 #:meta sleet '{"gloss": "partially melted snow (or a mixture of rain and snow)", "wn30": "11507951-n"}'
@@ -1480,64 +1395,59 @@ solar-calendar calendar
 #:meta solar-halo '{"gloss": "a luminous halo parallel to the horizon at the altitude of the sun; caused by ice crystals in the atmosphere", "wn30": "11487533-n"}'
 solar-halo atmospheric-halo
 solar-time time-standard
-solstice '*'
 #:meta sonar '{"gloss": "a measuring instrument that sends out an acoustic pulse in water and measures distances in terms of the time for the echo of the pulse to return", "wn30": "04259771-n"}'
 sonar instrument
 #:meta sonic-depth-finder '{"gloss": "depth finder for determining depth of water or a submerged object by means of ultrasound waves", "wn30": "04260192-n"}'
 sonic-depth-finder depth-finder
-sound '*'
 south-america continent
 #:meta south-by-east '{"gloss": "the compass point that is one point east of due south", "wn30": "13833256-n"}'
-south-by-east compass-point direction
+south-by-east compass-point
 #:meta south-by-west '{"gloss": "the compass point that is one point west of due south", "wn30": "13833504-n"}'
-south-by-west compass-point direction
+south-by-west compass-point
 #:meta south-equatorial-current '{"gloss": "an equatorial current that flows west across the Pacific just south of the equator", "wn30": "11489383-n"}'
 south-equatorial-current equatorial-current
 south-pole geographic-pole
 #:meta south-sea-islands '{"gloss": "any islands in the southern or southwestern of central parts of the Pacific Ocean", "wn30": "09442001-n"}'
 south-sea-islands island
 #:meta south-southeast '{"gloss": "the compass point midway between south and southeast", "wn30": "13833119-n"}'
-south-southeast compass-point direction
+south-southeast compass-point
 #:meta south-southwest '{"gloss": "the compass point midway between south and southwest", "wn30": "13833623-n"}'
-south-southwest compass-point direction
+south-southwest compass-point
 #:meta south-wind '{"gloss": "a wind from the south", "wn30": "11511405-n"}'
 south-wind wind
 #:meta southeast '{"gloss": "the compass point midway between south and east; at 135 degrees", "wn30": "13832841-n"}'
-southeast compass-point direction
+southeast compass-point
 #:meta southeast-by-east '{"gloss": "the compass point that is one point east of southeast", "wn30": "13832717-n"}'
-southeast-by-east compass-point direction
+southeast-by-east compass-point
 #:meta southeast-by-south '{"gloss": "the compass point that is one point south of southeast", "wn30": "13832993-n"}'
-southeast-by-south compass-point direction
+southeast-by-south compass-point
 #:meta southeaster '{"gloss": "a strong wind from the southeast", "wn30": "11448714-n"}'
 southeaster wind
 southern-hemisphere hemisphere
 southern-ocean ocean
 #:meta southwest '{"gloss": "the compass point midway between south and west; at 225 degrees", "wn30": "13833886-n"}'
-southwest compass-point direction
+southwest compass-point
 #:meta southwest-by-south '{"gloss": "the compass point that is one point south of southwest", "wn30": "13833760-n"}'
-southwest-by-south compass-point direction
+southwest-by-south compass-point
 #:meta southwest-by-west '{"gloss": "the compass point that is one point west of southwest", "wn30": "13834038-n"}'
-southwest-by-west compass-point direction
+southwest-by-west compass-point
 #:meta southwester '{"gloss": "a strong wind from the southwest", "wn30": "11448593-n"}'
 southwester wind
 spatial-database 'about(place)' database information
 spatial-reference-system coordinate-system
-spatial-relation '*'
 speed 'linear-dimension(speed)'
 #:meta speleology '{"gloss": "the scientific study of caves", "wn30": "06121554-n"}'
 speleology 'about(cave)' geology
 sphere-of-influence geographical-area
 spherical-coordinate-system coordinate-system
 #:meta spring-tide '{"gloss": "a greater than average tide occurring during the new and full moons", "wn30": "07403459-n"}'
-spring-tide high-tide
+spring-tide tide
 #:meta sprite-lightning '{"gloss": "atmospheric electricity (lasting 10 msec) appearing as globular flashes of red (pink to blood-red) light rising to heights of 60 miles (sometimes seen together with elves)", "wn30": "11475992-n"}'
 sprite-lightning atmospheric-electricity
 #:meta squall '{"gloss": "sudden violent winds; often accompanied by precipitation", "wn30": "11514008-n"}'
 squall wind
 #:meta squall-line '{"gloss": "a cold front along which squalls or thunderstorms are likely", "wn30": "11460962-n"}'
 squall-line cold-front
-standard '*'
-star-chart '*'
 #:meta steppe '{"gloss": "extensive plain without trees (associated with eastern Russia and Siberia)", "wn30": "09445289-n"}'
 steppe grassland plain
 stereographic-projection azimuthal-projection
@@ -1563,35 +1473,31 @@ streambed waterbody-bed
 strong-breeze breeze
 #:meta strong-gale '{"gloss": "wind moving 47-54 knots; 9 on the Beaufort scale", "wn30": "11462276-n"}'
 strong-gale gale
-structure '*'
 #:meta subcontinent '{"gloss": "a large and distinctive landmass (as India or Greenland) that is a distinct part of some continent", "wn30": "09449949-n"}'
 subcontinent landmass
 subduction geological-process
 #:meta subsoil '{"gloss": "the layer of soil between the topsoil and bedrock", "wn30": "14695838-n"}'
 subsoil soil
-substance '*'
 #:meta subtropics '{"gloss": "regions adjacent to the tropics", "wn30": "08674344-n"}'
 subtropics climatic-zone
-summer-solstice '*'
 #:meta sunset '{"gloss": "atmospheric phenomena accompanying the daily disappearance of the sun", "wn30": "11517776-n"}'
 sunset natural-event
 supercontinent continent landmass
 #:meta supertwister '{"gloss": "the most powerful tornado which can create enormously devastating damage", "wn30": "11517041-n"}'
 supertwister tornado
 surface '*'
-survey-benchmark geographic-point geographical-feature
+survey-benchmark geographic-point
 surveying activity
 #:meta swale '{"gloss": "a low area (especially a marshy area between ridges)", "wn30": "09452291-n"}'
 swale geological-trough
 swamp wetland
 symbol '*'
 system '*'
-system-of-measurement '*'
 taiga biome habitat
 #:meta tailwind '{"gloss": "wind blowing in the same direction as the path of a ship or aircraft", "wn30": "11443409-n"}'
 tailwind wind
 #:meta talus '{"gloss": "a sloping mass of loose rocks at the base of a cliff", "wn30": "09454153-n"}'
-talus geological-formation gravel
+talus geological-formation
 #:meta tar-pit '{"gloss": "a natural accumulation of bitumens at the surface of the earth; often acts as a trap for animals whose bones are thus preserved", "wn30": "09454744-n"}'
 tar-pit cavity landform
 #:meta tarn '{"gloss": "a mountain lake (especially one formed by glaciers)", "wn30": "09454642-n"}'
@@ -1606,7 +1512,7 @@ temperature 'linear-dimension(temperature)'
 #:meta temperature-inversion '{"gloss": "the layer of air near the earth is cooler than an overlying layer", "wn30": "11461563-n"}'
 temperature-inversion natural-event
 #:meta terrace '{"gloss": "a level shelf of land interrupting a declivity (with steep slopes above and below)", "wn30": "09456207-n"}'
-terrace plateau
+terrace landform
 terrain geographical-feature
 #:meta terrestrial-globe '{"gloss": "a sphere on which a map (especially of the earth) is represented", "wn30": "03440512-n"}'
 terrestrial-globe model
@@ -1653,8 +1559,8 @@ time-standard '*'
 time-zone geographical-area
 tool '*'
 topographic-map 'about(terrain)' map
-#:meta topography '{"gloss": "precise detailed study of the surface features of a region", "wn30": "06122578-n"}'
-topography 'about(terrain)' physical-geography
+#:meta topography '{"gloss": "the configuration of a surface and the relations among its man-made and natural features", "wn30": "05064541-n"}'
+topography 'about(terrain)' shape
 toponymy 'about(place-name)' geography
 #:meta topsoil '{"gloss": "the layer of soil on the surface", "wn30": "14695737-n"}'
 topsoil soil
@@ -1672,8 +1578,6 @@ trade-wind prevailing-wind
 #:meta tramontane '{"gloss": "a cold dry wind that blows south out of the mountains into Italy and the western Mediterranean", "wn30": "11520271-n"}'
 tramontane north-wind
 transform-fault geological-fault plate-boundary
-#:meta transit-zone '{"gloss": "a six million square mile area that includes the Caribbean and the Gulf of Mexico and the eastern Pacific Ocean; includes the principal routes used by drug smugglers", "wn30": "08691445-n"}'
-transit-zone geographical-area
 transitive-dimension dimension
 transverse-mercator-projection cylindrical-projection
 travel-distance amount distance
@@ -1681,6 +1585,7 @@ travel-route path
 tree '*'
 #:meta tremor '{"gloss": "a small earthquake", "wn30": "07429484-n"}'
 tremor earthquake
+trench '*'
 #:meta triangulation '{"gloss": "a method of surveying; the area is divided into triangles and the length of one side and its angles with the other two are measured, then the lengths of the other sides can be calculated", "wn30": "00617337-n"}'
 triangulation surveying
 triassic geological-period
@@ -1688,8 +1593,8 @@ tributary stream
 trilateration method
 #:meta tropic '{"gloss": "either of two parallels of latitude about 23.5 degrees to the north and south of the equator representing the points farthest north and south at which the sun can shine directly overhead and constituting the boundaries of the Torrid Zone or tropics", "wn30": "08675145-n"}'
 tropic circle-of-latitude
-tropic-of-cancer circle-of-latitude
-tropic-of-capricorn circle-of-latitude
+tropic-of-cancer tropic
+tropic-of-capricorn tropic
 tropical-climate climate
 tropical-cyclone cyclone
 tropical-rainforest biome
@@ -1698,7 +1603,7 @@ tropics climatic-zone
 #:meta troposphere '{"gloss": "the lowest atmospheric layer; from 4 to 11 miles high (depending on latitude)", "wn30": "09462600-n"}'
 troposphere atmospheric-layer
 #:meta tsunami '{"gloss": "a cataclysm resulting from a destructive sea wave caused by an earthquake or volcanic eruption", "wn30": "07349299-n"}'
-tsunami calamity wave
+tsunami wave
 #:meta tundra '{"gloss": "a vast treeless plain in the Arctic regions where the subsoil is permanently frozen", "wn30": "09463226-n"}'
 tundra biome plain
 #:meta tundra-soil '{"gloss": "a black mucky soil with a frozen subsoil that is characteristic of Arctic and subarctic regions", "wn30": "15081675-n"}'
@@ -1710,13 +1615,12 @@ turn-by-turn-navigation navigation
 twilight-zone pelagic-zone
 #:meta typhoon '{"gloss": "a tropical cyclone occurring in the western Pacific or Indian oceans", "wn30": "11521145-n"}'
 typhoon cyclonic-storm tropical-cyclone
+#:meta undercurrent '{"gloss": "a current below the surface of a fluid", "wn30": "07404798-n"}'
+undercurrent event
 #:meta underlying-stratum '{"gloss": "any stratum or layer lying underneath another", "wn30": "08657887-n"}'
 underlying-stratum layer
-#:meta undertide '{"gloss": "a current below the surface of a fluid", "wn30": "07404798-n"}'
-undertide event
 #:meta undertow '{"gloss": "the seaward undercurrent created after waves have broken on the shore", "wn30": "07404261-n"}'
-undertow ocean-current undertide
-unix-time time-standard
+undertow ocean-current undercurrent
 #:meta updraft '{"gloss": "a strong upward air current", "wn30": "11522649-n"}'
 updraft air-current
 #:meta upheaval '{"gloss": "(geology) a rise of land to a higher elevation (as in the process of mountain building)", "wn30": "07375781-n"}'
@@ -1724,22 +1628,20 @@ upheaval event
 #:meta uphill '{"gloss": "the upward slope of a hill", "wn30": "09466678-n"}'
 uphill ascent
 upwelling ocean-current
-utm-coordinate-system spatial-reference-system
 valley '*'
 #:meta veld '{"gloss": "elevated open grassland in southern Africa", "wn30": "08677424-n"}'
 veld grassland
-vernal-equinox '*'
 vertebrate '*'
 #:meta vertebrate-paleontology '{"gloss": "the paleontology of vertebrates", "wn30": "06192789-n"}'
 vertebrate-paleontology 'about(vertebrate)' paleozoology
 #:meta vertical-circle '{"gloss": "a great circle on the celestial sphere passing through the zenith and perpendicular to the horizon", "wn30": "08677991-n"}'
-vertical-circle place
+vertical-circle great-circle
 vertical-datum geodetic-datum
 vincenty-formulae formula
 #:meta virga '{"gloss": "light wispy precipitation that evaporates before it reaches the ground (especially when the lower air is low in humidity)", "wn30": "11509204-n"}'
 virga precipitation
 #:meta visual-range '{"gloss": "distance at which a given standard object can be seen with the unaided eye", "wn30": "05017757-n"}'
-visual-range attribute
+visual-range distance
 #:meta volcanic-crater '{"gloss": "a bowl-shaped geological formation at the top of a volcano", "wn30": "09472413-n"}'
 volcanic-crater geological-formation place
 #:meta volcanic-eruption '{"gloss": "the sudden occurrence of a violent discharge of steam and volcanic material", "wn30": "07436475-n"}'
@@ -1764,7 +1666,7 @@ water-cycle natural-event
 #:meta water-hole '{"gloss": "a natural hole or hollow containing water", "wn30": "09475827-n"}'
 water-hole pond
 #:meta water-table '{"gloss": "underground surface below which the ground is wholly saturated with water", "wn30": "09476123-n"}'
-water-table geological-formation surface
+water-table surface
 #:meta waterbody-bed '{"gloss": "a depression forming the ground under a body of water", "wn30": "09217638-n"}'
 waterbody-bed natural-depression
 #:meta watercourse '{"gloss": "natural or artificial channel through which water flows", "wn30": "09475179-n"}'
@@ -1782,46 +1684,43 @@ wave '*'
 wave-height amount
 waypoint geographic-point
 weather '*'
-weather-balloon aircraft balloon
+weather-balloon aircraft
 #:meta weather-forecast '{"gloss": "a forecast of the weather", "wn30": "06750698-n"}'
 weather-forecast 'about(weather)' prognosis
 #:meta weather-forecasting '{"gloss": "predicting what the weather will be", "wn30": "06749729-n"}'
-weather-forecasting 'about(weather)' information
+weather-forecasting 'about(weather)' activity
 weather-front '*'
 #:meta weather-map '{"gloss": "(meteorology) a map showing the principal meteorological elements at a given time and over an extended region", "wn30": "04567222-n"}'
 weather-map 'about(weather)' map
 weather-radar radar
-weather-satellite '*'
 weather-station facility
 weathering geological-process
 web-map map
 web-mercator-projection mercator-projection
 well-known-text geographic-data-format
 #:meta west-by-north '{"gloss": "the compass point that is one point north of due west", "wn30": "13834524-n"}'
-west-by-north compass-point direction
+west-by-north compass-point
 #:meta west-by-south '{"gloss": "the compass point that is one point south of due west", "wn30": "13834280-n"}'
-west-by-south compass-point direction
+west-by-south compass-point
 #:meta west-northwest '{"gloss": "the compass point midway between west and northwest", "wn30": "13834643-n"}'
-west-northwest compass-point direction
+west-northwest compass-point
 #:meta west-southwest '{"gloss": "the compass point midway between west and southwest", "wn30": "13834162-n"}'
-west-southwest compass-point direction
+west-southwest compass-point
 #:meta west-wind '{"gloss": "wind that blows from west to east", "wn30": "11525480-n"}'
 west-wind wind
-westerlies prevailing-wind
+westerlies prevailing-wind west-wind
 western-hemisphere hemisphere
 wetland geographical-feature habitat land
-wgs-84 world-geodetic-system
 #:meta whinstone '{"gloss": "any of various hard colored rocks (especially rocks consisting of chert or basalt)", "wn30": "09478210-n"}'
 whinstone rock
 #:meta whirlpool '{"gloss": "a powerful circular current of water (usually the result of conflicting tides)", "wn30": "07433145-n"}'
 whirlpool event
 #:meta whirlwind '{"gloss": "a more or less vertical column of air whirling around itself as it moves over the surface of the Earth", "wn30": "11525779-n"}'
-whirlwind wind windstorm
+whirlwind wind
 #:meta whiteout '{"gloss": "an arctic atmospheric condition with clouds over snow produce a uniform whiteness and objects are difficult to see; occurs when the light reflected off the snow equals the light coming through the clouds", "wn30": "11508808-n"}'
 whiteout weather
 #:meta whole-gale '{"gloss": "wind moving 55-63 knots; 10 on the Beaufort scale", "wn30": "11462401-n"}'
 whole-gale gale
-wide-area-augmentation-system gnss-augmentation
 #:meta wiesenboden '{"gloss": "a dark meadow soil rich in organic material; developed through poor drainage in humid grassy or sedge regions", "wn30": "15097994-n"}'
 wiesenboden soil
 wilderness geographical-area
@@ -1831,10 +1730,7 @@ wind-rose weather-map
 #:meta windstorm '{"gloss": "a storm consisting of violent winds", "wn30": "11527014-n"}'
 windstorm storm
 winkel-tripel-projection map-projection
-winter-solstice '*'
 world-geodetic-system geodetic-datum
-#:meta wormcast '{"gloss": "fossil trail of a worm", "wn30": "09480959-n"}'
-wormcast fossil
 #:meta xenolith '{"gloss": "(geology) a piece of rock of different origin from the igneous rock in which it is embedded", "wn30": "09481120-n"}'
 xenolith rock
 yard geographical-area

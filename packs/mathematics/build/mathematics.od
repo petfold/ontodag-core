@@ -1,34 +1,29 @@
 # ontodag store v1
-#:canonical 6.0 d05f081c1d4024f07b82664b6782d007a6ca160bf75a0b86b87a32f0ae8c7713 2
+#:canonical 6.0 9bfdad3005a84a34cb23497055641656bc01f0b58a666bfe654bf8a4f6fefe76 2
 #:meta abelian-group '{"gloss": "a group that satisfies the commutative law", "wn30": "06017472-n"}'
 abelian-group mathematical-group
 about enclosing-dimension
 #:meta acceptance-sampling '{"gloss": "a statistical procedure for accepting or rejecting a batch of merchandise or documents; involves determining the maximum number of defects discovered in a sample before the entire batch is rejected", "wn30": "00806621-n"}'
-acceptance-sampling activity statistical-method
+acceptance-sampling statistical-method
 act '*'
-activity '*'
 #:meta acute-triangle '{"gloss": "a triangle whose interior angles are all acute", "wn30": "13879816-n"}'
 acute-triangle triangle
 #:meta additive-inverse '{"gloss": "(mathematics) one of a pair of numbers whose sum is zero; the additive inverse of -5 is +5", "wn30": "13843001-n"}'
-additive-inverse number
-adjacency-matrix '*'
+additive-inverse numeric-quantity
 aes block-cipher
 #:meta affine-geometry '{"gloss": "the geometry of affine transformations", "wn30": "06005399-n"}'
 affine-geometry geometry
 #:meta affine-transformation '{"gloss": "(mathematics) a transformation that is a combination of single transformations such as translation or rotation or reflection on an axis", "wn30": "13785965-n"}'
 affine-transformation bijection transformation
-#:meta age-norm '{"gloss": "the average age at which particular performances are expected to appear", "wn30": "06023243-n"}'
-age-norm average
 #:meta algebra '{"gloss": "the mathematics of generalized arithmetical operations", "wn30": "06012726-n"}'
 algebra mathematics
-algebra-over-a-field mathematical-ring vector-space
+algebra-over-a-field vector-space
 algebraic-magma algebraic-structure
 algebraic-number complex-number
 algebraic-structure mathematical-structure
 #:meta algebraic-transposition '{"gloss": "(mathematics) the transfer of a quantity from one side of an equation to the other along with a change of sign", "wn30": "00869260-n"}'
 algebraic-transposition procedure
 algorithm '*'
-amount '*'
 #:meta analysis-of-variance '{"gloss": "a statistical method for making simultaneous comparisons between two or more means; a statistical method that yields values that can be tested to determine whether a significant relation exists between variables", "wn30": "06030601-n"}'
 analysis-of-variance multivariate-analysis
 #:meta analytic-geometry '{"gloss": "the use of algebra to study geometric properties; operates on symbols defined in a coordinate system", "wn30": "06008382-n"}'
@@ -37,8 +32,8 @@ angle '*'
 #:meta angle-of-inclination '{"gloss": "(geometry) the angle formed by the x-axis and a given line (measured counterclockwise from the positive half of the x-axis)", "wn30": "13889602-n"}'
 angle-of-inclination angle
 antichain subset
-#:meta antiderivative '{"gloss": "a mathematical expression from which another expression is derived", "wn30": "06295113-n"}'
-antiderivative mathematical-expression
+#:meta antiderivative '{"gloss": "the result of a mathematical integration; F(x) is the integral of f(x) if dF/dx = f(x)", "wn30": "06015505-n"}'
+antiderivative function
 antisymmetric-relation binary-relation
 #:meta arc-cosecant '{"gloss": "the angle that has a cosecant equal to a given number", "wn30": "13789136-n"}'
 arc-cosecant trigonometric-function
@@ -62,7 +57,7 @@ arithmetic-operation mathematical-operation
 #:meta arithmetic-progression '{"gloss": "(mathematics) a progression in which a constant is added to each term in order to obtain the next term", "wn30": "08460924-n"}'
 arithmetic-progression mathematical-object
 #:meta arity '{"gloss": "the number of arguments that a function can take", "wn30": "05857974-n"}'
-arity number numeric-quantity
+arity number
 #:meta asymmetry '{"gloss": "(mathematics) a lack of symmetry", "wn30": "05065717-n"}'
 asymmetry attribute
 attribute '*'
@@ -73,20 +68,20 @@ automorphism endomorphism isomorphism
 average '*'
 #:meta axiom '{"gloss": "(logic) a proposition that is not susceptible of proof or disproof; its truth is assumed to be self-evident", "wn30": "06753550-n"}'
 axiom proposition
-banach-space mathematical-structure
+banach-space metric-space vector-space
 #:meta 'bayes'"'"'-postulate' '{"gloss": "(statistics) the difficulty of applying Bayes'"'"' theorem is that the probabilities of the different causes are seldom known, in which case it may be postulated that they are all equal (sometimes known as postulating the equidistribution of ignorance)", "wn30": "05918704-n"}'
 'bayes'"'"'-postulate' postulate
 #:meta 'bayes'"'"'-theorem' '{"gloss": "(statistics) a theorem describing how the conditional probability of a set of possible causes for a given observed event can be computed from knowledge of the probability of each cause and the conditional probability of the outcome of each cause", "wn30": "05918379-n"}'
 'bayes'"'"'-theorem' 'about(conditional-probability)' theorem
 #:meta 'bernoulli'"'"'s-law' '{"gloss": "(statistics) law stating that a large number of items taken at random from a population will (on the average) have the population statistics", "wn30": "05875148-n"}'
 'bernoulli'"'"'s-law' 'about(probability)' theorem
-big-o-notation mathematical-relation symbol
-bijection surjective-function
+big-o-notation symbol
+bijection injective-function surjective-function
 binary-relation mathematical-relation
-binary-tree rooted-tree tree-graph
+binary-tree rooted-tree
 #:meta binomial '{"gloss": "(mathematics) a quantity expressed as a sum or difference of two terms; a polynomial with two terms", "wn30": "06036506-n"}'
-binomial amount polynomial
-binomial-coefficient number
+binomial polynomial
+binomial-coefficient natural-number
 #:meta binomial-distribution '{"gloss": "a theoretical distribution of the number of successes in a finite set of independent trials with a constant probability of success", "wn30": "06036697-n"}'
 binomial-distribution statistical-distribution
 #:meta binomial-theorem '{"gloss": "a theorem giving the expansion of a binomial raised to a given power", "wn30": "06036939-n"}'
@@ -100,8 +95,6 @@ biquadratic-equation equation
 biserial-correlation-coefficient correlation-coefficient
 bit-string data-structure
 block-cipher cipher
-blockchain '*'
-bloom-filter '*'
 boolean-algebra heyting-algebra
 boolean-function function
 boolean-satisfiability-problem decision-problem
@@ -115,14 +108,14 @@ calculus mathematical-analysis
 #:meta calculus-of-variations '{"gloss": "the calculus of maxima and minima of definite integrals", "wn30": "06015978-n"}'
 calculus-of-variations calculus
 calendar-dimension dimension
-cardinal-number number
+cardinal-number numeric-quantity
 #:meta cardinality '{"gloss": "(mathematics) the number of elements in a set or group (considered as a property of that grouping)", "wn30": "13591586-n"}'
-cardinality invariant number numeric-quantity
+cardinality invariant number
 catalan-number natural-number
 cipher algorithm
 ciphertext information
 circle conic-section
-classical-logic formal-system mathematical-logic
+classical-logic formal-system
 #:meta closed-interval '{"gloss": "an interval that includes its endpoints", "wn30": "06016462-n"}'
 closed-interval mathematical-interval
 closure-operator mathematical-operator monotone-function
@@ -130,23 +123,19 @@ closure-system mathematical-set
 coding-theory 'about(error-correcting-code)' discrete-mathematics
 #:meta coefficient-of-concordance '{"gloss": "a coefficient of agreement (concordance) between different sets of rank orderings of the same set of things", "wn30": "06035014-n"}'
 coefficient-of-concordance kendall-test
-cognition '*'
 collection '*'
-#:meta combinatorial-combination '{"gloss": "the act of arranging elements into specified groups without regard to order", "wn30": "00870453-n"}'
-combinatorial-combination mathematical-operation
 combinatorics discrete-mathematics
 commitment-scheme cryptographic-protocol
 commutative-ring mathematical-ring
 complete-graph connected-graph
 complete-lattice mathematical-lattice
 #:meta complex-number '{"gloss": "(mathematics) a number of the form a+bi where a and b are real numbers and i is the square root of -1", "wn30": "13729428-n"}'
-complex-number number numeric-quantity
+complex-number numeric-quantity
 complexity-class mathematical-set
 composite-number natural-number
 computability-theory 'about(computational-problem)' mathematical-logic
 computational-complexity-theory computability-theory
 computational-problem '*'
-computer-science '*'
 #:meta concave-polygon '{"gloss": "a polygon such that there is a straight line that cuts it in four or more points", "wn30": "13866827-n"}'
 concave-polygon polygon
 concept-extent mathematical-set
@@ -156,11 +145,10 @@ condition '*'
 #:meta conditional-probability '{"gloss": "the probability that an event will occur given that one or more other events have occurred", "wn30": "05092236-n"}'
 conditional-probability probability
 #:meta conic-section '{"gloss": "(geometry) a curve generated by the intersection of a plane and a circular cone", "wn30": "13872975-n"}'
-conic-section locus shape
+conic-section shape
 conjecture proposition
 connected-component connected-graph subgraph
 connected-graph undirected-graph
-content-addressable-storage '*'
 #:meta convex-polygon '{"gloss": "a polygon such that no side extended cuts any other side or vertex; it can be cut by a straight line in at most two points", "wn30": "13866626-n"}'
 convex-polygon polygon
 #:meta coordinate-origin '{"gloss": "the point of intersection of coordinate axes; where the values of the coordinates are all zero", "wn30": "06009086-n"}'
@@ -204,7 +192,6 @@ curvilinear-correlation statistical-correlation
 curvilinear-regression statistical-regression
 cyclic-graph undirected-graph
 cyclic-group abelian-group
-data-processing '*'
 data-structure '*'
 #:meta decagon '{"gloss": "a polygon with 10 sides and 10 angles", "wn30": "13882713-n"}'
 decagon polygon
@@ -223,7 +210,7 @@ demographic statistic
 #:meta dependent-variable '{"gloss": "(statistics) a variable in a logical or mathematical expression whose value depends on the independent variable", "wn30": "05858699-n"}'
 dependent-variable variable
 derivation-operator function
-description-logic formal-system mathematical-logic
+description-logic formal-system
 design-theory combinatorics
 #:meta diagonal-line '{"gloss": "(geometry) a straight line connecting any two vertices of a polygon that are not adjacent", "wn30": "13904325-n"}'
 diagonal-line shape
@@ -235,25 +222,21 @@ differential-equation equation
 #:meta differentiation '{"gloss": "the mathematical process of obtaining the derivative of a function", "wn30": "00870640-n"}'
 differentiation mathematical-operation
 diffie-hellman key-exchange
-digital-certificate '*'
 digital-signature cryptographic-primitive
 dimension '*'
 directed-acyclic-graph directed-graph
 directed-graph mathematical-graph
 directed-set partially-ordered-set
-discrete-logarithm decision-problem
+discrete-logarithm problem
 discrete-mathematics mathematics
 distributive-lattice mathematical-lattice
 #:meta divergent-series '{"gloss": "an infinite series that has no limit", "wn30": "05863302-n"}'
 divergent-series mathematical-series
 division '*'
 division-ring mathematical-ring
-document '*'
 #:meta dodecagon '{"gloss": "a twelve-sided polygon", "wn30": "13882883-n"}'
 dodecagon polygon
 dominance-dimension dimension
-#:meta drawn-box '{"gloss": "a rectangular drawing", "wn30": "13883494-n"}'
-drawn-box rectangle
 duration 'linear-dimension(duration)'
 #:meta eccentricity '{"gloss": "(geometry) a ratio describing the shape of a conic section; the ratio of the distance between the foci to the length of the major axis", "wn30": "13877129-n"}'
 eccentricity ratio real-number
@@ -261,7 +244,7 @@ ecdsa signature-scheme
 electricity '*'
 #:meta elementary-geometry '{"gloss": "(mathematics) geometry based on Euclid'"'"'s axioms", "wn30": "06005518-n"}'
 elementary-geometry geometry
-elliptic-curve-cryptography procedure public-key-cryptography
+elliptic-curve-cryptography public-key-cryptography
 #:meta elliptic-geometry '{"gloss": "(mathematics) a non-Euclidean geometry that regards space as like a sphere and a line as like a great circle", "wn30": "06007381-n"}'
 elliptic-geometry non-euclidean-geometry
 empty-set finite-set
@@ -272,8 +255,6 @@ energy 'linear-dimension(energy)'
 equation mathematical-statement
 #:meta equation-root '{"gloss": "the set of values that give a true statement when substituted into an equation", "wn30": "08005954-n"}'
 equation-root mathematical-set
-#:meta equidistribution '{"gloss": "a flat distribution having equal frequencies of occurrence", "wn30": "05729362-n"}'
-equidistribution statistical-distribution
 #:meta equilateral-triangle '{"gloss": "a three-sided regular polygon", "wn30": "13879947-n"}'
 equilateral-triangle regular-polygon triangle
 equivalence-relation preorder symmetric-relation
@@ -288,10 +269,7 @@ eulerian-path graph-path
 even-number integer
 #:meta evenness '{"gloss": "the parity of even numbers (divisible by two)", "wn30": "13790492-n"}'
 evenness parity
-event '*'
-exceedance probability
 existential-quantifier quantifier
-expert '*'
 #:meta exponential '{"gloss": "a function in which an independent variable appears as an exponent", "wn30": "13789462-n"}'
 exponential function
 #:meta exponential-equation '{"gloss": "an equation involving exponential functions of a variable", "wn30": "13789627-n"}'
@@ -310,21 +288,19 @@ factor-analysis correlational-analysis
 factorization mathematical-operation
 feature '*'
 fibonacci-sequence mathematical-object
-field-of-study '*'
 finite-automaton formal-system
 finite-field finite-set mathematical-field
 finite-group mathematical-group
 finite-set countable-set
 #:meta first-order-correlation '{"gloss": "a partial correlation in which the effects of only one variable are removed (held constant)", "wn30": "06032066-n"}'
 first-order-correlation partial-correlation
-first-order-logic mathematical-logic
+first-order-logic formal-system
 fixed-point mathematical-object
 flow-network directed-graph weighted-graph
 forest-graph undirected-graph
 formal-concept mathematical-object
 formal-concept-analysis order-theory
 formal-context binary-relation
-formal-grammar '*'
 formal-proof '*'
 formal-system mathematical-object
 formula '*'
@@ -340,7 +316,7 @@ frequency-distribution statistical-distribution
 function '*'
 #:meta function-domain '{"gloss": "(mathematics) the set of values of the independent variable for which a function is defined", "wn30": "08000118-n"}'
 function-domain mathematical-set
-fuzzy-logic mathematical-logic
+fuzzy-logic formal-system
 galois-connection mathematical-relation
 #:meta galois-theory '{"gloss": "group theory applied to the solution of algebraic equations", "wn30": "06017334-n"}'
 galois-theory group-theory
@@ -366,7 +342,7 @@ geometric-reflection transformation
 geometric-rotation transformation
 #:meta geometric-series '{"gloss": "a geometric progression written as a sum", "wn30": "05863480-n"}'
 geometric-series mathematical-series
-geometric-shape locus shape
+geometric-shape shape
 #:meta geometric-superposition '{"gloss": "(geometry) the placement of one object ideally in the position of another one in order to show that the two coincide", "wn30": "01053404-n"}'
 geometric-superposition locating
 #:meta geometry '{"gloss": "the pure mathematics of points and lines and curves and surfaces", "wn30": "06004685-n"}'
@@ -393,18 +369,14 @@ hamming-distance metric-function
 harmonic-mean mean
 #:meta harmonic-progression '{"gloss": "(mathematics) a progression of terms whose reciprocals form an arithmetic progression", "wn30": "08461424-n"}'
 harmonic-progression mathematical-object
-hash-chain '*'
-hash-table '*'
 hasse-diagram 'about(partially-ordered-set)' diagram
-heap-data-structure data-structure
 #:meta heptagon '{"gloss": "a seven-sided polygon", "wn30": "13882487-n"}'
 heptagon polygon
 #:meta hexagon '{"gloss": "a six-sided polygon", "wn30": "13882276-n"}'
 hexagon polygon
 heyting-algebra bounded-lattice distributive-lattice
 #:meta hilbert-space '{"gloss": "a metric space that is linear and complete and (usually) infinite-dimensional", "wn30": "08005123-n"}'
-hilbert-space banach-space metric-space vector-space
-hmac '*'
+hilbert-space banach-space
 #:meta homogeneous-polynomial '{"gloss": "a polynomial consisting of terms all of the same degree", "wn30": "05862268-n"}'
 homogeneous-polynomial polynomial
 homomorphic-encryption encryption
@@ -427,9 +399,8 @@ inference-rule rule
 infimum lower-bound
 infinite-set mathematical-set
 #:meta infinitesimal '{"gloss": "(mathematics) a variable that has zero as its limit", "wn30": "05864047-n"}'
-infinitesimal number variable
+infinitesimal variable
 information '*'
-information-theory '*'
 initialization-vector information
 injective-function function
 integer rational-number
@@ -438,9 +409,9 @@ integer-partition mathematical-object
 integral-calculus calculus
 integral-domain commutative-ring
 #:meta interpolation '{"gloss": "(mathematics) calculation of the value of a function between the values already known", "wn30": "05802730-n"}'
-interpolation algorithm calculation
+interpolation calculation
 interval-order partial-order
-intuitionistic-logic mathematical-logic
+intuitionistic-logic formal-system
 #:meta invariance '{"gloss": "the nature of a quantity or property or function that remains unchanged when a given transformation is applied to it", "wn30": "04738995-n"}'
 invariance attribute
 #:meta invariant '{"gloss": "a feature (quantity or property or function) that remains unchanged when a particular transformation is applied to it", "wn30": "05850432-n"}'
@@ -451,7 +422,7 @@ irrational-number real-number
 #:meta isogon '{"gloss": "an equiangular polygon", "wn30": "13866515-n"}'
 isogon polygon
 #:meta isometry '{"gloss": "a one-to-one mapping of one metric space into another metric space that preserves the distances between each pair of points", "wn30": "13786187-n"}'
-isometry bijection
+isometry injective-function
 isomorphism homomorphism
 #:meta isosceles-triangle '{"gloss": "a triangle with two equal sides", "wn30": "13880199-n"}'
 isosceles-triangle triangle
@@ -464,13 +435,12 @@ keccak cryptographic-hash-function
 kendall-partial-rank-correlation kendall-test
 #:meta kendall-test '{"gloss": "any of several nonparametric measures of correlation (used when the assumptions of standard correlational analysis are not met)", "wn30": "06034611-n"}'
 kendall-test nonparametric-statistic
-key-derivation-function cryptographic-primitive function
+key-derivation-function cryptographic-primitive
 key-exchange cryptographic-protocol
 knaster-tarski-theorem 'about(mathematical-lattice)' theorem
 #:meta kronecker-delta '{"gloss": "a function of two variables i and j that equals 1 when i=j and equals 0 otherwise", "wn30": "13784763-n"}'
 kronecker-delta function
 lambda-calculus formal-system
-language-unit '*'
 latin-square matrix
 least-element mathematical-object
 #:meta least-squares '{"gloss": "a method of fitting a curve to data points so as to minimize the sum of the squares of the distances of the points from the curve", "wn30": "06021013-n"}'
@@ -489,7 +459,6 @@ linear-map homomorphism
 linear-operator linear-map mathematical-operator
 #:meta linear-regression '{"gloss": "the relation between variables when the regression equation is linear: e.g., y = ax + b", "wn30": "06028904-n"}'
 linear-regression statistical-regression
-linked-list '*'
 locating '*'
 #:meta locus '{"gloss": "the set of all points or lines that satisfy or are determined by specific conditions", "wn30": "08000881-n"}'
 locus mathematical-set
@@ -497,13 +466,13 @@ logic '*'
 #:meta logical-completeness '{"gloss": "(logic) an attribute of a logical system that is so constituted that a contradiction arises if any proposition is introduced that cannot be derived from the axioms of the system", "wn30": "04785414-n"}'
 logical-completeness attribute
 logical-conjunction logical-connective
-logical-connective mathematical-operation
+logical-connective mathematical-operator
 logical-consequence logical-relation
 #:meta logical-consistency '{"gloss": "(logic) an attribute of a logical system that is so constituted that none of the propositions deducible from the axioms contradict one another", "wn30": "04785195-n"}'
 logical-consistency attribute
 logical-disjunction logical-connective
-#:meta logical-negation '{"gloss": "(logic) a proposition that is true if and only if another proposition is false", "wn30": "06751572-n"}'
-logical-negation logical-connective proposition
+#:meta logical-negation '{"gloss": "practitioner'"'"'s negation is the connective NOT, like its siblings; connective AND proposition is two readings"}'
+logical-negation logical-connective
 logical-operation mathematical-operation
 #:meta logical-predicate '{"gloss": "(logic) what is predicated of the subject of a proposition; the second term in a proposition is predicated of the first term by means of the copula", "wn30": "06316813-n"}'
 logical-predicate information
@@ -515,7 +484,7 @@ logical-subject information
 #:meta long-division '{"gloss": "the operation of division in which the sequence of steps are indicated in detail", "wn30": "00871123-n"}'
 long-division division
 #:meta lower-bound '{"gloss": "(mathematics) a number equal to or less than any other number in a given set", "wn30": "13904011-n"}'
-lower-bound number
+lower-bound mathematical-object
 lower-set subset
 magnetism '*'
 #:meta mandelbrot-set '{"gloss": "a set of complex numbers that has a highly convoluted fractal boundary when plotted; the set of all points in the complex plane that are bounded under a certain mathematical iteration", "wn30": "08001441-n"}'
@@ -534,7 +503,7 @@ mathematical-field commutative-ring division-ring mathematical-set
 mathematical-graph mathematical-structure
 #:meta mathematical-group '{"gloss": "a set that is closed, associative, has an identity element and every element has an inverse", "wn30": "06016853-n"}'
 mathematical-group mathematical-set monoid quasigroup
-mathematical-induction formal-proof
+mathematical-induction method
 #:meta mathematical-integration '{"gloss": "an operation used in the calculus whereby the integral of a function is determined", "wn30": "00871418-n"}'
 mathematical-integration mathematical-operation
 #:meta mathematical-interval '{"gloss": "a set containing all points (or all real numbers) between two given endpoints", "wn30": "06016276-n"}'
@@ -544,14 +513,14 @@ mathematical-logic logic mathematics
 mathematical-module algebraic-structure
 mathematical-object '*'
 #:meta mathematical-operation '{"gloss": "(mathematics) calculation by mathematical methods", "wn30": "00869583-n"}'
-mathematical-operation function procedure
+mathematical-operation procedure
 #:meta mathematical-operator '{"gloss": "(mathematics) a symbol or function representing a mathematical operation", "wn30": "13786413-n"}'
 mathematical-operator function
 #:meta mathematical-relation '{"gloss": "a relation between mathematical expressions (such as equality or inequality)", "wn30": "13783581-n"}'
 mathematical-relation relation
 mathematical-ring algebraic-structure
 #:meta mathematical-series '{"gloss": "(mathematics) the sum of a finite or infinite sequence of expressions", "wn30": "05862721-n"}'
-mathematical-series function
+mathematical-series mathematical-expression
 #:meta mathematical-set '{"gloss": "(mathematics) an abstract collection of numbers or symbols", "wn30": "07999699-n"}'
 mathematical-set collection mathematical-object
 #:meta mathematical-space '{"gloss": "(mathematics) any set of points that satisfy a set of postulates of some kind", "wn30": "08001685-n"}'
@@ -603,11 +572,11 @@ metric-function function
 metric-space mathematical-space topological-space
 minimal-element mathematical-object
 minimum-spanning-tree spanning-tree weighted-graph
-modal-logic formal-system mathematical-logic
+modal-logic formal-system
 model-theory mathematical-logic
 modular-arithmetic arithmetic
 modular-lattice mathematical-lattice
-#:meta monic-polynomial '{"gloss": "a polynomial in one variable", "wn30": "05862410-n"}'
+#:meta monic-polynomial '{"gloss": "WN gloss is '"'"'a polynomial in one variable'"'"'; monic means leading coefficient 1"}'
 monic-polynomial polynomial
 monoid semigroup
 monotone-function function
@@ -621,7 +590,7 @@ multiple-regression multivariate-analysis
 #:meta multiplication '{"gloss": "an arithmetic operation that is the inverse of division; the product of two numbers is computed", "wn30": "00871576-n"}'
 multiplication arithmetic-operation
 #:meta multiplicative-inverse '{"gloss": "(mathematics) one of a pair of numbers whose product is 1: the reciprocal of 2/3 is 3/2; the multiplicative inverse of 7 is 1/7", "wn30": "13843173-n"}'
-multiplicative-inverse number
+multiplicative-inverse numeric-quantity
 #:meta multivariate-analysis '{"gloss": "a generic term for any statistical technique used to analyze data from more than one variable", "wn30": "06021247-n"}'
 multivariate-analysis statistical-method
 natural-number integer
@@ -640,9 +609,10 @@ nonparametric-statistic statistic
 normal-curve curved-shape
 #:meta normal-distribution '{"gloss": "a theoretical distribution with finite mean and variance", "wn30": "06025689-n"}'
 normal-distribution statistical-distribution
+np-complete complexity-class
 np-completeness complexity-class
-#:meta null-space '{"gloss": "a space that contains no points; and empty space", "wn30": "08004443-n"}'
-null-space mathematical-space
+#:meta null-space '{"gloss": "WN '"'"'a space with no points'"'"'; practitioner'"'"'s null space is the kernel of a linear map"}'
+null-space subspace
 number '*'
 number-theory 'about(integer)' mathematics
 numeric-quantity '*'
@@ -669,7 +639,7 @@ order-filter upper-set
 order-ideal lower-set
 order-isomorphism isomorphism monotone-function
 order-theory 'about(partially-ordered-set)' mathematics
-ordinal-number number
+ordinal-number numeric-quantity
 #:meta outlier '{"gloss": "an extreme deviation from the mean", "wn30": "06023369-n"}'
 outlier statistical-deviation
 #:meta parallel-line '{"gloss": "(mathematics) one of a set of parallel geometric figures (parallel lines or planes)", "wn30": "13880994-n"}'
@@ -678,8 +648,8 @@ parallel-line shape
 parallelogram quadrilateral
 #:meta parametric-statistic '{"gloss": "any statistic computed by procedures that assume the data were drawn from a particular distribution", "wn30": "06023022-n"}'
 parametric-statistic statistic
-#:meta parity '{"gloss": "(mathematics) a relation between a pair of integers: if both integers are odd or both are even they have the same parity; if one is odd and the other is even they have different parity", "wn30": "13790133-n"}'
-parity mathematical-relation
+#:meta parity '{"gloss": "parity (even or odd) is a property of an integer; evenness and oddness are not relations"}'
+parity property
 #:meta partial-correlation '{"gloss": "a correlation between two variables when the effects of one or more related variables are removed", "wn30": "06031866-n"}'
 partial-correlation statistical-correlation
 #:meta partial-differential-equation '{"gloss": "a differential equation involving a functions of more than one variable", "wn30": "06670866-n"}'
@@ -694,8 +664,8 @@ pencil-of-lines shape
 pentagon polygon
 #:meta percentile '{"gloss": "(statistics) any of the 99 numbered points that divide an ordered set of scores into 100 parts each of which contains one-hundredth of the total", "wn30": "05737752-n"}'
 percentile statistic
-#:meta permutation '{"gloss": "the act of changing the arrangement of a given number of elements", "wn30": "00870312-n"}'
-permutation bijection mathematical-operation
+#:meta permutation '{"gloss": "a permutation is a bijection of a set onto itself, not the act of rearranging"}'
+permutation bijection
 #:meta phi-coefficient '{"gloss": "an index of the relation between any two sets of scores that can both be represented on ordered binary dimensions (e.g., male-female)", "wn30": "06035413-n"}'
 phi-coefficient nonparametric-statistic
 pigeonhole-principle theorem
@@ -743,11 +713,10 @@ proof-of-work cryptographic-protocol
 proof-theory 'about(formal-proof)' mathematical-logic
 property '*'
 proposition '*'
-propositional-logic formal-system mathematical-logic
+propositional-logic formal-system
 pseudorandom-generator algorithm
 public-key cryptographic-key
 public-key-cryptography '*'
-public-key-infrastructure '*'
 #:meta quadratic '{"gloss": "a polynomial of the second degree", "wn30": "05862501-n"}'
 quadratic polynomial
 #:meta quadratic-equation '{"gloss": "an equation in which the highest power of an unknown quantity is a square", "wn30": "06670240-n"}'
@@ -761,11 +730,11 @@ quadrilateral polygon
 #:meta quantic '{"gloss": "a homogeneous polynomial having at least two variables", "wn30": "05862613-n"}'
 quantic homogeneous-polynomial
 #:meta quantifier '{"gloss": "(logic) a word (such as `some'"'"' or `all'"'"' or `no'"'"') that binds the variables in a logical proposition", "wn30": "06302542-n"}'
-quantifier word
+quantifier symbol
 #:meta quartile '{"gloss": "(statistics) any of three points that divide an ordered distribution into four parts each containing one quarter of the scores", "wn30": "05738204-n"}'
 quartile statistic
 quasigroup algebraic-magma
-quaternion number
+quaternion numeric-quantity
 #:meta radical-expression '{"gloss": "(mathematics) a quantity expressed as the root of another quantity", "wn30": "13731530-n"}'
 radical-expression mathematical-expression
 random-oracle mathematical-object
@@ -785,14 +754,13 @@ real-number complex-number
 rectangle parallelogram
 rectangle-dimension dimension
 recurrence-relation mathematical-relation
-recursion '*'
 #:meta recursive-definition '{"gloss": "(mathematics) a definition of a function from which values of the function can be calculated in a finite number of steps", "wn30": "06745422-n"}'
 recursive-definition definition
 recursive-function function
 #:meta reentrant-polygon '{"gloss": "a polygon with one or more reentrant angles", "wn30": "13867005-n"}'
 reentrant-polygon concave-polygon
 #:meta reflexive-relation '{"gloss": "(logic and mathematics) a relation such that it holds between an element and itself", "wn30": "13798814-n"}'
-reflexive-relation binary-relation logical-relation
+reflexive-relation binary-relation
 #:meta regression-analysis '{"gloss": "the use of regression to make quantitative predictions of one variable from the values of another", "wn30": "06028021-n"}'
 regression-analysis multivariate-analysis
 #:meta regression-coefficient '{"gloss": "when the regression line is linear (y = ax + b) the regression coefficient is the constant (a) that represents the rate of change of one variable (y) as a function of changes in the other (x); it is the slope of the regression line", "wn30": "06028566-n"}'
@@ -816,16 +784,16 @@ rhomboid parallelogram
 rhombus parallelogram
 #:meta right-triangle '{"gloss": "a triangle with one right angle", "wn30": "13880551-n"}'
 right-triangle triangle
-rooted-tree polytree
-#:meta rounding '{"gloss": "(mathematics) a miscalculation that results from rounding off numbers to a convenient number of decimals", "wn30": "00073177-n"}'
+rooted-tree tree-graph
+#:meta rounding '{"gloss": "holds WN '"'"'rounding error'"'"' (a miscalculation); practitioner'"'"'s rounding is the operation"}'
 rounding mathematical-operation
 rsa-cryptosystem cryptographic-primitive
 rule '*'
-#:meta sample-distribution '{"gloss": "items selected at random from a population and used to test hypotheses about the population", "wn30": "06026635-n"}'
+#:meta sample-distribution '{"gloss": "holds WN '"'"'sample'"'"' (items selected) under distribution; a sample distribution is the distribution of a sample"}'
 sample-distribution statistical-distribution
-scalar number
+scalar numeric-quantity
 #:meta scalar-field '{"gloss": "a field of scalars", "wn30": "08005877-n"}'
-scalar-field function mathematical-field
+scalar-field function
 #:meta scalene-triangle '{"gloss": "a triangle with no two sides of equal length", "wn30": "13880704-n"}'
 scalene-triangle triangle
 #:meta schrodinger-equation '{"gloss": "the fundamental equation of wave mechanics", "wn30": "06671013-n"}'
@@ -853,7 +821,7 @@ shared-with reversed-dimension
 #:meta short-division '{"gloss": "the operation of division in which the sequence of steps is performed without writing them out", "wn30": "00871263-n"}'
 short-division division
 shortest-path graph-path
-signature-scheme cryptographic-protocol
+signature-scheme cryptographic-primitive
 #:meta simultaneous-equations '{"gloss": "a set of equations in two or more variables for which there are values that can satisfy all the equations simultaneously", "wn30": "06671150-n"}'
 simultaneous-equations equation formula
 #:meta sine '{"gloss": "ratio of the length of the side opposite the given angle to the length of the hypotenuse of a right-angled triangle", "wn30": "13787379-n"}'
@@ -867,7 +835,7 @@ speed 'linear-dimension(speed)'
 #:meta spherical-geometry '{"gloss": "(mathematics) the geometry of figures on the surface of a sphere", "wn30": "06007859-n"}'
 spherical-geometry geometry
 #:meta spherical-polygon '{"gloss": "a figure on the surface of a sphere bounded by arcs of 3 or more great circles", "wn30": "13883603-n"}'
-spherical-polygon polygon
+spherical-polygon geometric-shape
 #:meta spherical-triangle '{"gloss": "a spherical polygon formed by the arcs of 3 great circles", "wn30": "13883763-n"}'
 spherical-triangle spherical-polygon
 #:meta spherical-trigonometry '{"gloss": "(mathematics) the trigonometry of spherical triangles", "wn30": "06008007-n"}'
@@ -880,13 +848,13 @@ square rectangle
 #:meta standard-deviation '{"gloss": "the square root of the variance", "wn30": "06025172-n"}'
 standard-deviation statistic
 #:meta statistic '{"gloss": "a datum that can be represented numerically", "wn30": "06021499-n"}'
-statistic cognition
+statistic information
 #:meta statistical-correlation '{"gloss": "a statistical relation between two or more variables such that systematic changes in the value of one variable are accompanied by systematic changes in the other", "wn30": "06031248-n"}'
-statistical-correlation statistic
+statistical-correlation relation
 #:meta statistical-deviation '{"gloss": "the difference between an observed value and the expected value of a variable or function", "wn30": "06022291-n"}'
 statistical-deviation statistic
 #:meta statistical-distribution '{"gloss": "(statistics) an arrangement of values of a variable showing their observed or theoretical frequency of occurrence", "wn30": "05729036-n"}'
-statistical-distribution cognition
+statistical-distribution function
 #:meta statistical-method '{"gloss": "a method of analyzing or representing statistical data; a procedure for calculating a statistic", "wn30": "06020737-n"}'
 statistical-method method
 #:meta statistical-mode '{"gloss": "the most frequent value of a random variable", "wn30": "06023675-n"}'
@@ -900,13 +868,12 @@ statistical-regression statistical-method
 #:meta statistical-sampling '{"gloss": "(statistics) the selection of a suitable sample for study", "wn30": "00161888-n"}'
 statistical-sampling act
 #:meta statistical-weight '{"gloss": "(statistics) a coefficient assigned to elements of a frequency distribution in order to represent their relative importance", "wn30": "13589321-n"}'
-statistical-weight number numeric-quantity
-statistician '*'
+statistical-weight numeric-quantity
 #:meta stratified-sample '{"gloss": "the population is divided into strata and a random sample is taken from each stratum", "wn30": "06027051-n"}'
-stratified-sample sample-distribution
+stratified-sample subpopulation
 stream-cipher cipher
 strict-order antisymmetric-relation transitive-relation
-strongly-connected-component connected-component directed-graph
+strongly-connected-component directed-graph subgraph
 #:meta sub-interval '{"gloss": "an interval that is included in another interval", "wn30": "06016746-n"}'
 sub-interval mathematical-interval
 subgraph mathematical-graph
@@ -923,7 +890,6 @@ supremum upper-bound
 surjective-function function
 syllogism deductive-reasoning
 symbol '*'
-symmetric-key-cryptography '*'
 symmetric-relation binary-relation
 #:meta symmetry '{"gloss": "(mathematics) an attribute of a shape or relation; exact reflection of form on opposite sides of a dividing line or plane", "wn30": "05064827-n"}'
 symmetry attribute
@@ -944,7 +910,7 @@ threshold-function function
 time calendar-dimension
 #:meta time-series '{"gloss": "a series of values of a variable at successive times", "wn30": "06029547-n"}'
 time-series statistic
-topological-ordering data-processing total-order
+topological-ordering total-order
 topological-space mathematical-structure
 #:meta topology '{"gloss": "the branch of pure mathematics that deals only with the properties of a figure X that hold for every figure into which X can be transformed with a one-to-one correspondence that is continuous in both directions", "wn30": "06017594-n"}'
 topology 'about(topological-space)' mathematics
@@ -953,11 +919,11 @@ totally-ordered-set mathematical-lattice
 transcendental-number irrational-number
 #:meta transformation '{"gloss": "(mathematics) a function that changes the position or direction of the axes of a coordinate system", "wn30": "13785136-n"}'
 transformation function
-transitive-closure mathematical-operation transitive-relation
+transitive-closure transitive-relation
 transitive-dimension dimension
-transitive-reduction mathematical-operation
+transitive-reduction binary-relation
 #:meta transitive-relation '{"gloss": "(logic and mathematics) a relation between three elements such that if it holds between the first and second and it also holds between the second and third it must necessarily hold between the first and third", "wn30": "13798491-n"}'
-transitive-relation binary-relation logical-relation
+transitive-relation binary-relation
 #:meta translation '{"gloss": "(mathematics) a transformation in which the origin of the coordinate system is moved to another position but the direction of each axis remains the same", "wn30": "13785736-n"}'
 translation isometry transformation
 #:meta trapezium '{"gloss": "a quadrilateral with no parallel sides", "wn30": "13881381-n"}'
@@ -971,25 +937,26 @@ trie tree-graph
 trigonometric-function function mathematical-relation
 #:meta trigonometry '{"gloss": "the mathematics of triangles and trigonometric functions", "wn30": "06012513-n"}'
 trigonometry 'about(triangle)' geometry
-#:meta truncation-error '{"gloss": "(mathematics) a miscalculation that results from cutting off a numerical calculation before it is finished", "wn30": "00073525-n"}'
-truncation-error event
+#:meta truncation-error '{"gloss": "a truncation error is the size of a discrepancy, not an event"}'
+truncation-error numeric-quantity
 truth '*'
 truth-table 'about(truth-value)' information
 truth-value mathematical-object
-turing-machine '*'
 type-system '*'
-type-theory 'about(type-system)' formal-system mathematical-logic
+type-theory 'about(type-system)' mathematical-logic
 uncountable-set infinite-set
 #:meta undecagon '{"gloss": "an eleven-sided polygon", "wn30": "13882804-n"}'
 undecagon polygon
 undirected-graph mathematical-graph
+#:meta uniform-distribution '{"gloss": "a flat distribution having equal frequencies of occurrence", "wn30": "05729362-n"}'
+uniform-distribution statistical-distribution
 #:meta universal-proposition '{"gloss": "(logic) a proposition that asserts something of all members of a class", "wn30": "06751367-n"}'
 universal-proposition proposition
 universal-quantifier quantifier
 #:meta universal-set '{"gloss": "(mathematics) the set that contains all the elements or objects involved in the problem under consideration", "wn30": "08000644-n"}'
 universal-set mathematical-set
 #:meta upper-bound '{"gloss": "(mathematics) a number equal to or greater than any other number in a given set", "wn30": "13903855-n"}'
-upper-bound number
+upper-bound mathematical-object
 upper-set subset
 variable '*'
 #:meta variance '{"gloss": "the second moment around the mean; the expected value of the square of the deviations of a random variable from its mean value", "wn30": "06024936-n"}'
@@ -1008,6 +975,5 @@ wedge-shape shape
 weighted-graph mathematical-graph
 well-formed-formula mathematical-expression
 well-order total-order
-word '*'
 zero-knowledge-proof cryptographic-protocol
 'zorn'"'"'s-lemma' 'about(partially-ordered-set)' theorem
