@@ -238,6 +238,9 @@ def main():
             elif (holder, q) in drops and holder == store and not sim.children(q):
                 done.add((holder, q))            # the drop's holder is re-sensed instead
                 over = True
+            elif (holder, q) in drops and not sim.children(q):
+                done.add((holder, q))            # another store's holder goes first
+                sim.drop(holder, q, drops[(holder, q)]["reason"])
             if not over:
                 sim.errors.append(f"{r['action']} {s}: {q} exists")
                 return
@@ -259,7 +262,7 @@ def main():
             tail = r["args"].split("|")[1].split()
             wn30, new = tail[0], tail[1:]
             sim.reparent(store, s, new, r["reason"])
-            sim.glosses.append((s, wn30, r["reason"] if wn30 == "-" else ""))
+            sim.glosses.append((s, wn30, ""))   # "-": no synset fits, so no gloss
 
     for r in renames:
         apply_rename(r)
@@ -302,7 +305,7 @@ def main():
             sim.emit(store, name, "parent+", "", " ".join(args), r["reason"])
         elif action == "resense":
             sim.reparent(store, name, args[1:], r["reason"])
-            sim.glosses.append((name, args[0], r["reason"] if args[0] == "-" else ""))
+            sim.glosses.append((name, args[0], ""))   # "-": no synset fits, so no gloss
         else:
             sim.errors.append(f"{name}: unknown action {action!r}")
 

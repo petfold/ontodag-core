@@ -767,14 +767,14 @@ merged, de-duplicated and checked:
 - a drop leaves no children and no pack or term user;
 - no rename recreates a name the 2026-10-07 renames retired.
 
-High and medium rows that pass are applied (`apply = yes`). That is 771
-rows:
-- 307 drops
-- 197 resenses
-- 111 moves
-- 79 renames
-- 60 cuts
-- 15 splits
+High and medium rows that pass are applied (`apply = yes`). After the
+second check (below), that is 695 rows:
+- 286 drops
+- 173 resenses
+- 108 moves
+- 60 renames
+- 57 cuts
+- 9 splits
 - 2 additions
 
 The 47 low rows, and the rows that failed a check or on which readers
@@ -807,8 +807,8 @@ answers on the doubtful list, are not applied. Examples are `ai`'s
 `machine-learning ⊑ artificial-intelligence` and `pharmacy`. His later
 comments on the "a" names stand.
 
-**Result for core**: from 5,027 names to 4,732. 355 left: drops, and the old
-names of renames. 60 new names came from renames and splits, such as
+**Result for core**: from 5,027 names to 4,750. 326 left: drops, and the old
+names of renames. 49 new names came from renames and splits, such as
 `knowledge`, `index-finger`, `marijuana`, `light-source` and
 `account-statement`. The fifteen top-level branches are unchanged.
 
@@ -851,21 +851,22 @@ rules, with two differences:
   off-domain, duplicates, and single things filed as classes. A
   geography pack's places are instances by design.
 
-Of their 966 decisions, 901 apply (by pack, applied of decided):
+Of their 966 decisions, 870 apply after the second check (by pack,
+applied of decided):
 
 | pack | applied | decided |
 |---|---|---|
 | ai | 86 | 87 |
 | biology | 32 | 32 |
 | chemistry | 27 | 29 |
-| computing | 155 | 166 |
-| economics | 152 | 167 |
-| geography | 108 | 111 |
-| mathematics | 72 | 91 |
+| computing | 154 | 166 |
+| economics | 151 | 167 |
+| geography | 85 | 111 |
+| mathematics | 69 | 91 |
 | medicine | 106 | 109 |
 | occupations | 112 | 119 |
-| physics | 14 | 14 |
-| space | 37 | 45 |
+| physics | 13 | 14 |
+| space | 35 | 45 |
 
 The main kinds of fix:
 - **AND parents that were alternatives.** A symptom that was also an event
@@ -898,4 +899,48 @@ step7 learned three more things from the packs:
 
 `step7 --check` is clean, and a replay from the v13 files reproduces every
 file byte for byte. The union of core and the ten domain packs now loads
-12,148 names.
+12,190 names.
+
+**The second check (same night).** Eight more readers took every applied row
+and checked it adversarially:
+- Is a dropped thing in fact clear and everyday?
+- Does a resense's WordNet offset mean what its reason says?
+- Is every ancestor after the change true?
+
+They found:
+- **39 reverts**, now not applied. Among them:
+  - 23 geography drops of GPS, UTC, WGS 84, the Richter and Beaufort
+    scales, Köppen and the Gregorian calendar, which Peter's geography
+    brief (UPPER.md) asks for by name;
+  - air and atmosphere under a `gas` that was never split;
+  - `craft` under trade-as-commerce;
+  - celestial-point and barycenter moved off a `point` that core had
+    re-sensed to a location;
+  - the deliberate v7 services and v8 goods picks `job-placement`,
+    `funeral-directing`, `ground-stake`, `facsimile` and `grill`.
+- **3 amendments**: drops that became renames, namely `whirligig` →
+  spinning-top, the plant's `spine` → thorn, and `router` → wood-router.
+- **95 doubts**, still applied, each noted in the sheet's `check` column for
+  Peter. Duplicate synsets left by resenses (pig/hog, pit/cavity,
+  deal/business-deal) are the main kind.
+
+The second check also found three faults in the first apply, now fixed:
+- **Disowned copies.** Rows on a pack's disowned copy (`digital-signature`,
+  `np-completeness` in mathematics) were silently skipped. They are now
+  marked not applied: the owner's rows decide.
+- **Blocked splits.** A split whose new name another pack holds and drops
+  (`policy` → insurance-policy) was blocked. A holder in another store is
+  now dropped first; the four splits still blocked say why in the sheet.
+- **Reasons as glosses.** A resense with no WordNet synset (`-`) had its
+  reason written in as its gloss. It now gets no gloss, and step7 drops an
+  empty `-` row's gloss.
+
+Two more guards keep earlier decisions:
+- names on Peter's v13 rulings are not touched;
+- the goods and services picks (`services.tsv`, `cpc-picks.tsv`,
+  `gpt-picks.tsv`, `goods-extra.tsv`, `cpc-goods.tsv`, which loopmarket
+  relies on) are never dropped or re-sensed here (60 rows).
+
+Result: 1,565 decisions applied (695 in core, 870 in the packs). Core goes
+from 5,027 names to 4,750. `step7 --check` is clean, and a replay from the
+v13 files reproduces every file byte for byte.

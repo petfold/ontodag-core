@@ -1,5 +1,5 @@
 # ontodag store v1
-#:canonical 6.0 c637a0f7d7d5604012fd6aae41d5585e5c5b7eb1f7e878c8c044755ad9bb4912 2
+#:canonical 6.0 36130f74d67e4b78f7d7dd7e1ae0eb37272301181837a0035c7426b980b7cbc3 2
 about enclosing-dimension
 abyssal-plain ocean-floor plain
 #:meta abyssal-zone '{"gloss": "the deep sea (2000 meters or more) where there is no light", "wn30": "09186592-n"}'
@@ -137,8 +137,10 @@ bayou lake
 beach-erosion geological-erosion
 #:meta beachfront '{"gloss": "a strip of land running along a beach", "wn30": "09217414-n"}'
 beachfront land
+beaufort-scale system-of-measurement
 #:meta bedrock '{"gloss": "solid unweathered rock lying beneath surface deposits of soil", "wn30": "09218044-n"}'
 bedrock rock
+beidou global-navigation-satellite-system
 #:meta belemnite '{"gloss": "a conical calcareous fossil tapering to a point at one end and with a conical cavity at the other end containing (when unbroken) a small chambered phragmocone from the shell of any of numerous extinct cephalopods of the family Belemnitidae", "wn30": "01973723-n"}'
 belemnite fossil
 #:meta bentonite '{"gloss": "an absorbent aluminum silicate clay formed from volcanic ash", "wn30": "14813709-n"}'
@@ -314,6 +316,7 @@ contrail cloud
 convection process
 convergent-boundary plate-boundary
 coordinate-system mathematical-object
+coordinated-universal-time time-standard
 #:meta coral-reef '{"gloss": "a reef consisting of coral consolidated into limestone", "wn30": "09256479-n"}'
 coral-reef reef
 count count-dimension
@@ -474,6 +477,7 @@ escarpment landform slope
 esker natural-ridge
 #:meta estuary '{"gloss": "the wide part of a river where it nears the sea; fresh and salt water mix", "wn30": "09274500-n"}'
 estuary body-of-water river-mouth
+etrs89 geodetic-datum
 eurasia landmass
 #:meta evaporite '{"gloss": "the sediment that is left after the evaporation of seawater", "wn30": "15009192-n"}'
 evaporite sediment
@@ -542,6 +546,7 @@ fucoid fossil
 function '*'
 #:meta gale '{"gloss": "a strong wind moving 45-90 knots; force 7 to 10 on Beaufort scale", "wn30": "11461825-n"}'
 gale wind
+galileo-navigation-system global-navigation-satellite-system
 gall-peters-projection cylindrical-projection
 #:meta gazetteer '{"gloss": "a geographical dictionary (as at the back of an atlas)", "wn30": "06419628-n"}'
 gazetteer 'about(place)' dictionary
@@ -572,6 +577,7 @@ geography '*'
 geohash geocode
 geoid shape
 geojson geographic-data-format
+geologic-time-scale time-standard
 #:meta geological-abrasion '{"gloss": "erosion by friction", "wn30": "13423615-n"}'
 geological-abrasion geological-erosion
 #:meta geological-cataclysm '{"gloss": "a sudden violent change in the earth'"'"'s surface", "wn30": "11434016-n"}'
@@ -627,6 +633,9 @@ glaciology 'about(glacier)' hydrology
 #:meta glen '{"gloss": "a narrow secluded valley (in the mountains)", "wn30": "09289596-n"}'
 glen valley
 global-navigation-satellite-system satellite-navigation
+#:meta global-positioning-system '{"gloss": "a navigational system involving satellites and computers that can determine the latitude and longitude of a receiver on Earth by computing the time difference for signals from different satellites to reach the receiver", "wn30": "03440216-n"}'
+global-positioning-system global-navigation-satellite-system
+glonass global-navigation-satellite-system
 gnomonic-projection azimuthal-projection
 gnss-augmentation method
 gobi-desert desert
@@ -636,6 +645,7 @@ good-weather weather
 gorge canyon
 gps-exchange-format geographic-data-format
 gps-receiver instrument
+gps-time time-standard
 graph-dimension dimension
 #:meta grassland '{"gloss": "land where grass or grasslike vegetation grows and is the dominant form of plant life", "wn30": "08598301-n"}'
 grassland biome geographical-area
@@ -650,6 +660,7 @@ great-rift-valley valley
 greenhouse-effect natural-event
 greenland island
 greenland-ice-sheet ice-sheet
+gregorian-calendar solar-calendar
 #:meta grotto '{"gloss": "a small cave (usually with attractive features)", "wn30": "09294877-n"}'
 grotto cave
 #:meta groundmass '{"gloss": "(geology) the matrix of fine-grained crystalline material in which larger crystals are embedded", "wn30": "14891678-n"}'
@@ -777,7 +788,9 @@ instrument '*'
 instrument-flying navigation
 intercardinal-direction compass-point
 interglacial geological-time-division
+international-atomic-time time-standard
 international-date-line geographic-line
+international-terrestrial-reference-system spatial-reference-system
 #:meta ionosphere '{"gloss": "the outer region of the Earth'"'"'s atmosphere; contains a high concentration of free electrons", "wn30": "08588916-n"}'
 ionosphere atmospheric-layer
 island '*'
@@ -794,6 +807,7 @@ isthmus land landform
 japan-current ocean-current
 #:meta jet-stream '{"gloss": "a high-speed high-altitude airstream blowing from west to east near the top of the troposphere; has important effects of the formation of weather fronts", "wn30": "11470139-n"}'
 jet-stream airstream
+julian-day time-standard
 jurassic geological-period
 karst landform
 #:meta katabatic-wind '{"gloss": "a wind caused by the downward motion of cold air", "wn30": "11443283-n"}'
@@ -807,6 +821,7 @@ khamsin wind
 knoll hill
 #:meta kopje '{"gloss": "a small hill rising up from the African veld", "wn30": "09327077-n"}'
 kopje knoll
+koppen-climate-classification climate-classification
 la-nina climate-oscillation
 #:meta lagoon '{"gloss": "a body of water cut off from a larger body by a reef of sand or coral", "wn30": "09328746-n"}'
 lagoon lake
@@ -926,6 +941,8 @@ material '*'
 mathematical-object '*'
 #:meta meander '{"gloss": "a bend or curve, as in a stream or river", "wn30": "09349648-n"}'
 meander geographical-feature
+#:meta mercalli-scale '{"gloss": "a scale formerly used to describe the magnitude of an earthquake; an earthquake detected only by seismographs is a I and an earthquake that destroys all buildings is a XII", "wn30": "13851426-n"}'
+mercalli-scale system-of-measurement
 #:meta mercator-projection '{"gloss": "a map projection of the earth onto a cylinder; areas appear greater the farther they are from the equator", "wn30": "03748691-n"}'
 mercator-projection cylindrical-projection
 #:meta meridian '{"gloss": "an imaginary great circle on the surface of the earth passing through the north and south poles at right angles to the equator", "wn30": "08598823-n"}'
@@ -946,6 +963,7 @@ mid-ocean-ridge oceanic-ridge
 mid-water body-of-water
 #:meta midnight-sun '{"gloss": "the sun visible at midnight (inside the Arctic or Antarctic Circles)", "wn30": "11482579-n"}'
 midnight-sun natural-event
+military-grid-reference-system spatial-reference-system
 mineral '*'
 #:meta mineral-seam '{"gloss": "a stratum of ore or coal thick enough to be mined with profit", "wn30": "08659076-n"}'
 mineral-seam layer
@@ -965,6 +983,8 @@ moderate-gale gale
 #:meta mohorovicic-discontinuity '{"gloss": "the boundary between the Earth'"'"'s crust and the underlying mantle", "wn30": "09357080-n"}'
 mohorovicic-discontinuity 'in(earth)' place
 mollweide-projection equal-area-projection
+#:meta moment-magnitude-scale '{"gloss": "a logarithmic scale of 1 to 10 (a successor to the Richter scale) that enables seismologists to compare the energy released by different earthquakes on the basis of the area of the geological fault that ruptured in the quake", "wn30": "13852083-n"}'
+moment-magnitude-scale system-of-measurement
 #:meta monocline '{"gloss": "a geological formation in which all strata are inclined in the same direction", "wn30": "09357447-n"}'
 monocline geological-formation
 #:meta monsoon '{"gloss": "a seasonal wind in southern Asia; blows from the southwest (bringing rain) in summer and from the northeast in winter", "wn30": "11484570-n"}'
@@ -1014,6 +1034,7 @@ nimbostratus cloud
 #:meta nimbus '{"gloss": "a dark grey cloud bearing rain", "wn30": "09371686-n"}'
 nimbus cloud
 north-america continent
+north-american-datum geodetic-datum
 #:meta north-by-east '{"gloss": "the compass point that is one point east (clockwise) of due north", "wn30": "13831310-n"}'
 north-by-east compass-point
 #:meta north-by-west '{"gloss": "the compass point that is one point west of due north", "wn30": "13835308-n"}'
@@ -1247,6 +1268,8 @@ residual-soil soil
 reverse-geocoding geocoding
 reversed-dimension dimension
 rhumb-line line
+#:meta richter-magnitude-scale '{"gloss": "a logarithmic scale of 1 to 10 formerly used to express the magnitude of an earthquake on the basis of the size of seismograph oscillations", "wn30": "13851865-n"}'
+richter-magnitude-scale system-of-measurement
 ridge '*'
 #:meta rift-valley '{"gloss": "a valley with steep sides; formed by a rift in the earth'"'"'s crust", "wn30": "09410224-n"}'
 rift-valley valley
@@ -1493,6 +1516,7 @@ swale geological-trough
 swamp wetland
 symbol '*'
 system '*'
+system-of-measurement '*'
 taiga biome habitat
 #:meta tailwind '{"gloss": "wind blowing in the same direction as the path of a ship or aircraft", "wn30": "11443409-n"}'
 tailwind wind
@@ -1621,6 +1645,7 @@ undercurrent event
 underlying-stratum layer
 #:meta undertow '{"gloss": "the seaward undercurrent created after waves have broken on the shore", "wn30": "07404261-n"}'
 undertow ocean-current undercurrent
+unix-time time-standard
 #:meta updraft '{"gloss": "a strong upward air current", "wn30": "11522649-n"}'
 updraft air-current
 #:meta upheaval '{"gloss": "(geology) a rise of land to a higher elevation (as in the process of mountain building)", "wn30": "07375781-n"}'
@@ -1628,6 +1653,7 @@ upheaval event
 #:meta uphill '{"gloss": "the upward slope of a hill", "wn30": "09466678-n"}'
 uphill ascent
 upwelling ocean-current
+utm-coordinate-system spatial-reference-system
 valley '*'
 #:meta veld '{"gloss": "elevated open grassland in southern Africa", "wn30": "08677424-n"}'
 veld grassland
@@ -1711,6 +1737,7 @@ west-wind wind
 westerlies prevailing-wind west-wind
 western-hemisphere hemisphere
 wetland geographical-feature habitat land
+wgs-84 world-geodetic-system
 #:meta whinstone '{"gloss": "any of various hard colored rocks (especially rocks consisting of chert or basalt)", "wn30": "09478210-n"}'
 whinstone rock
 #:meta whirlpool '{"gloss": "a powerful circular current of water (usually the result of conflicting tides)", "wn30": "07433145-n"}'
@@ -1721,6 +1748,7 @@ whirlwind wind
 whiteout weather
 #:meta whole-gale '{"gloss": "wind moving 55-63 knots; 10 on the Beaufort scale", "wn30": "11462401-n"}'
 whole-gale gale
+wide-area-augmentation-system gnss-augmentation
 #:meta wiesenboden '{"gloss": "a dark meadow soil rich in organic material; developed through poor drainage in humid grassy or sedge regions", "wn30": "15097994-n"}'
 wiesenboden soil
 wilderness geographical-area

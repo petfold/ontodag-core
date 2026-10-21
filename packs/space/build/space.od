@@ -1,5 +1,5 @@
 # ontodag store v1
-#:canonical 6.0 f239ed55c894e3543f7c3b2c734f8c1534d59cc6264991691b1487ac1abf4830 2
+#:canonical 6.0 187d7bb232789914be6c6194577033a39994d992a908980b5105f7ec106e3219 2
 about enclosing-dimension
 #:meta absolute-magnitude '{"gloss": "(astronomy) the magnitude that a star would have if it were viewed from a distance of 10 parsecs (32.62 light years) from the earth", "wn30": "05090979-n"}'
 absolute-magnitude amount magnitude
@@ -20,7 +20,7 @@ annular-eclipse solar-eclipse
 #:meta aphelion '{"gloss": "apoapsis in solar orbit; the point in the orbit of a planet or comet that is at the greatest distance from the sun", "wn30": "08495908-n"}'
 aphelion apoapsis
 #:meta apoapsis '{"gloss": "(astronomy) the point in an orbit farthest from the body being orbited", "wn30": "08495617-n"}'
-apoapsis apsis
+apoapsis apsis place
 #:meta apogee '{"gloss": "apoapsis in Earth orbit; the point in its orbit where a satellite is at the greatest distance from the Earth", "wn30": "08495420-n"}'
 apogee apoapsis
 #:meta apojove '{"gloss": "apoapsis in orbit around Jupiter", "wn30": "08496095-n"}'
@@ -95,9 +95,9 @@ celestial-culmination place
 celestial-equator place
 #:meta celestial-mechanics '{"gloss": "the branch of astronomy concerned with the application of Newton'"'"'s laws of motion to the motions of heavenly bodies", "wn30": "06097594-n"}'
 celestial-mechanics astronomy
-celestial-point place
+celestial-point point
 #:meta celestial-pole '{"gloss": "one of two points of intersection of the Earth'"'"'s axis and the celestial sphere", "wn30": "08621099-n"}'
-celestial-pole celestial-point
+celestial-pole celestial-point place
 #:meta celestial-sphere '{"gloss": "the apparent surface of the imaginary sphere on which celestial bodies appear to be projected", "wn30": "08521267-n"}'
 celestial-sphere surface
 ceres asteroid dwarf-planet
@@ -227,6 +227,8 @@ hertzsprung-russell-diagram 'about(star)' image
 hill-sphere place
 hohmann-transfer-orbit orbit
 horizontal-coordinate-system celestial-coordinate-system
+#:meta host-star '{"gloss": "any star around which a planetary system revolves", "wn30": "09450454-n"}'
+host-star star
 #:meta hour-angle '{"gloss": "(astronomy) the angular distance of a celestial point measured westward along the celestial equator from the zenith crossing; the right ascension for an observer at a particular location and time of day", "wn30": "13888783-n"}'
 hour-angle angle
 hubble-space-telescope space-telescope
@@ -374,7 +376,7 @@ parallax angle
 #:meta partial-eclipse '{"gloss": "an eclipse in which the eclipsed body is only partially obscured", "wn30": "07369344-n"}'
 partial-eclipse eclipse
 #:meta periapsis '{"gloss": "(astronomy) the point in an orbit closest to the body being orbited", "wn30": "08618379-n"}'
-periapsis apsis
+periapsis apsis place
 #:meta perigee '{"gloss": "periapsis in Earth orbit; the point in its orbit where a satellite is nearest to the Earth", "wn30": "08618669-n"}'
 perigee periapsis
 #:meta perihelion '{"gloss": "periapsis in solar orbit; the point in the orbit of a planet or comet where it is nearest to the sun", "wn30": "08618831-n"}'
@@ -404,6 +406,7 @@ planetary-system celestial-body collection
 #:meta planetesimal '{"gloss": "one of many small solid celestial bodies thought to have existed at an early stage in the development of the solar system", "wn30": "09395086-n"}'
 planetesimal celestial-body
 pluto dwarf-planet
+point '*'
 polar-orbit orbit
 prefix-dimension dimension
 pressure 'linear-dimension(pressure)'

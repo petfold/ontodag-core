@@ -148,7 +148,10 @@ def glosses(renamed):
                 syn[name] = r["wordnet"]
     out = {n: {"gloss": defs[s], "wn30": f"{s}-n"} for n, s in syn.items() if s in defs}
     for row in table(ROOT / "align/glosses-v14.tsv"):
-        name, offset, gloss = row[0], row[1], row[2]
+        name, offset, gloss = row[0], row[1], (row[2] if len(row) > 2 else "")
+        if offset == "-" and not gloss:
+            out.pop(name, None)                # a new sense no synset fits: no gloss
+            continue
         out[name] = ({"gloss": defs[offset], "wn30": f"{offset}-n"} if offset != "-"
                      else {"gloss": gloss})
     return out

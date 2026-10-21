@@ -25,22 +25,16 @@ core	stockpile	add	-	possession	backlog's old sense, under the name stockpile
 economics	reserve-account	move	backlog	stockpile	follows backlog's old sense to stockpile
 economics	reserve-stock	move	backlog	stockpile	follows backlog's old sense to stockpile
 core	backlog	move	possession	collection	everyday backlog is unfinished work; the reserve sense keeps economics' reserve-account and reserve-stock
-core	wire-rope	add	-	rope	cable's sense, under the name wire-rope
 core	canister	add	-	container	cannister's sense, under the name canister
 core	cannister	drop	-	-	renamed canister: standard spelling
 core	cantaloupe	add	-	melon	cantaloup's sense, under the name cantaloupe
 core	cantaloup	drop	-	-	renamed cantaloupe: standard spelling
-core	head	move	artifact	body-part	caput's sense, under the name head
-core	caput	drop	-	-	renamed head: holds 05538625 head/caput, the everyday head; after head is renamed [also core-04: same]
 core	maintenance	add	-	service	care's sense, under the name maintenance
 core	car-care	move	care	maintenance	follows care's old sense to maintenance
 core	overhaul	move	care	maintenance	follows care's old sense to maintenance
 core	posture	add	-	attribute	carriage's old sense, under the name posture
 core	grace	move	carriage	posture	follows carriage's old sense to posture
 core	carriage	move	attribute	vehicle	node holds posture (3/3) with child grace; everyday carriage is the vehicle
-core	plaster-cast	add	-	bandage	cast's sense, under the name plaster-cast
-core	cast	move	bandage	group	cast-of-characters's sense, under the name cast
-core	cast-of-characters	drop	-	-	renamed cast: holds cast rank 1 (08237863); after cast is renamed
 core	challenge	move	act	situation	challenging-situation's sense, under the name challenge
 core	challenging-situation	drop	-	-	renamed challenge: holds challenge rank 1 (13932948); after challenge is dropped
 core	written-character	add	-	symbol	character's sense, under the name written-character
@@ -49,8 +43,6 @@ core	capital-letter	move	character	written-character	follows character's old sen
 core	letter-of-the-alphabet	move	character	written-character	follows character's old sense to written-character
 core	space	move	character	written-character	follows character's old sense to written-character
 core	character	drop	-	-	renamed written-character: node holds the written symbol (8/9); everyday character is fictional-character or moral character; computing has a stub
-core	cudgel	add	-	stick	club's sense, under the name cudgel
-core	baseball-bat	move	club	cudgel	follows club's old sense to cudgel
 core	coconut-meat	add	-	fruit	coconut's sense, under the name coconut-meat
 core	coconut	move	fruit	nut	cocoanut's sense, under the name coconut
 core	cocoanut	drop	-	-	renamed coconut: holds the everyday coconut (07772935); after coconut is renamed
@@ -58,12 +50,6 @@ core	composition	move	essay	attribute	constitution's sense, under the name compo
 core	infrastructure	move	constitution	composition	follows constitution's sense to composition
 computing	computer-architecture	move	constitution	composition	follows constitution's sense to composition
 core	constitution	drop	-	-	renamed composition: holds makeup/composition (04933544, child infrastructure, computing uses it); after composition is dropped
-core	marijuana	add	-	drug	pot's sense, under the name marijuana
-core	pot	move	drug	cookware vessel	cooking-pot's sense, under the name pot
-core	dutch-oven	move	cooking-pot	pot	follows cooking-pot's sense to pot
-core	kettle	move	cooking-pot	pot	follows cooking-pot's sense to pot
-core	percolator	move	cooking-pot	pot	follows cooking-pot's sense to pot
-core	cooking-pot	drop	-	-	renamed pot: everyday pot, once pot (marijuana) is renamed
 core	course-of-action	add	-	act	course's sense, under the name course-of-action
 core	way	move	course	course-of-action	follows course's old sense to course-of-action
 core	course	move	act	education	course-of-instruction's sense, under the name course
@@ -71,8 +57,6 @@ core	seminar	move	course-of-instruction	course	follows course-of-instruction's s
 core	training-workshop	move	course-of-instruction	course	follows course-of-instruction's sense to course
 core	course-of-instruction	drop	-	-	renamed course: holds the everyday course (lessons); after course is renamed
 core	courtyard	add	-	structure	court's sense, under the name courtyard
-core	date-fruit	add	-	fruit	date's old sense, under the name date-fruit
-core	date	move	fruit	day	holds the fruit (rank 8/8); everyday date is the calendar date
 core	extension	move	phone	time-period	deadline-extension's sense, under the name extension
 core	deadline-extension	drop	-	-	renamed extension: WN extension sense 1; after extension's drop
 core	economic-depression	add	-	crisis	depression's sense, under the name economic-depression
@@ -98,10 +82,6 @@ economics	market	move	economic-system	economy	follows economic-system's sense to
 economics	platform-economy	move	economic-system	economy	follows economic-system's sense to economy
 economics	sharing-economy	move	economic-system	economy	follows economic-system's sense to economy
 core	economic-system	drop	-	-	renamed economy: everyday name; after economy's drop; used by economics and term packs
-core	switch	move	act	control	electric-switch's sense, under the name switch
-core	push-button	move	electric-switch	switch	follows electric-switch's sense to switch
-computing	dip-switch	move	electric-switch	switch	follows electric-switch's sense to switch
-core	electric-switch	drop	-	-	renamed switch: the everyday switch, once the act sense is dropped
 core	affection	add	-	feeling	fond-regard's sense, under the name affection
 core	fond-regard	drop	-	-	renamed affection: everyday name of 07545161 is affection; affection does not exist yet
 core	gradient	add	-	spatial-relation	grade's sense, under the name gradient
@@ -115,9 +95,6 @@ core	index-finger	add	-	finger	index's sense, under the name index-finger
 core	index	drop	-	-	renamed index-finger: holds the finger sense; plain index is a book index or a numerical index
 core	poverty	add	-	condition	indigence's sense, under the name poverty
 core	indigence	drop	-	-	renamed poverty: rare word; poverty is the plain name (WN 14493145 its hypernym)
-core	jelly-substance	add	-	substance	jelly's old sense, under the name jelly-substance
-core	petroleum-jelly	move	jelly	jelly-substance	follows jelly's old sense to jelly-substance
-core	jelly	move	substance	dessert	everyday jelly is the gelatin dessert; petroleum-jelly stays under the substance sense
 core	light-source	add	-	device	light's old sense, under the name light-source
 core	floodlight	move	light	light-source	follows light's old sense to light-source
 core	headlamp	move	light	light-source	follows light's old sense to light-source
@@ -152,9 +129,6 @@ core	odor	add	-	attribute	olfactory-property's sense, under the name odor
 core	olfactory-property	drop	-	-	renamed odor: same synset (odor, smell, scent); the name is technical
 core	half	add	-	fraction	one-half's sense, under the name half
 core	one-half	drop	-	-	renamed half: the everyday name of the fraction
-core	fountain	move	fixture	structure	ornamental-fountain's sense, under the name fountain
-core	drinking-fountain	move	ornamental-fountain	fountain	follows ornamental-fountain's sense to fountain
-core	ornamental-fountain	drop	-	-	renamed fountain: everyday name; after fountain (plumbing sense) is dropped
 core	expenditure	add	-	possession	outgo's sense, under the name expenditure
 core	alimony	move	outgo	expenditure	follows outgo's old sense to expenditure
 core	dividend	move	outgo	expenditure	follows outgo's old sense to expenditure
@@ -188,32 +162,6 @@ medicine	surgical-stoma	move	passage	body-passage	follows passage's old sense to
 core	passage	drop	-	-	renamed body-passage: the node is the anatomical passage (mouth); plain passage reads as a corridor or a text passage
 core	full-stop	add	-	symbol	period's sense, under the name full-stop
 core	period	drop	-	-	renamed full-stop: plain period reads as a period of time (time-period holds it); the node is the punctuation mark
-core	woodworking-plane	add	-	cutter hand-tool	plane's sense, under the name woodworking-plane
-core	plane	drop	-	-	renamed woodworking-plane: plain plane reads as an airplane (airplane holds it); the node is the carpenter's tool
-core	swing	move	act	mechanism plaything	playground-swing's sense, under the name swing
-core	playground-swing	drop	-	-	renamed swing: the everyday swing, once the motion sense is dropped
-core	toy	add	-	artifact	plaything's sense, under the name toy
-core	balloon	move	plaything	toy	follows plaything's old sense to toy
-core	doll	move	plaything	toy	follows plaything's old sense to toy
-core	dollhouse	move	plaything	toy	follows plaything's old sense to toy
-core	hobby	move	plaything	toy	follows plaything's old sense to toy
-core	kaleidoscope	move	plaything	toy	follows plaything's old sense to toy
-core	kite	move	plaything	toy	follows plaything's old sense to toy
-core	lego	move	plaything	toy	follows plaything's old sense to toy
-core	playhouse	move	plaything	toy	follows plaything's old sense to toy
-core	pogo-stick	move	plaything	toy	follows plaything's old sense to toy
-core	rattle	move	plaything	toy	follows plaything's old sense to toy
-core	sandbox	move	plaything	toy	follows plaything's old sense to toy
-core	slide	move	plaything	toy	follows plaything's old sense to toy
-core	swing	move	plaything	toy	follows plaything's old sense to toy
-core	teddy-bear	move	plaything	toy	follows plaything's old sense to toy
-core	train-set	move	plaything	toy	follows plaything's old sense to toy
-core	whirligig	move	plaything	toy	follows plaything's old sense to toy
-core	yo-yo	move	plaything	toy	follows plaything's old sense to toy
-core	plaything	drop	-	-	renamed toy: everyday name
-core	polish	move	state	material	polish-preparation's sense, under the name polish
-core	shoe-polish	move	polish-preparation	polish	follows polish-preparation's sense to polish
-core	polish-preparation	drop	-	-	renamed polish: the everyday polish, once polish (perfection) is dropped
 core	pub	add	-	building	public-house's sense, under the name pub
 core	public-house	drop	-	-	renamed pub: everyday name
 core	rake	move	spatial-relation	tool	rake-tool's sense, under the name rake
@@ -228,14 +176,6 @@ core	x-ray	add	-	photograph	roentgenogram's sense, under the name x-ray
 core	roentgenogram	drop	-	-	renamed x-ray: everyday name
 core	second	move	rank	time-unit	sec's sense, under the name second
 core	sec	drop	-	-	renamed second: the time unit's everyday name, once the ordinal second is dropped
-core	security-measure	add	-	measure service	security's old sense, under the name security-measure
-core	guard-duty	move	security	security-measure	follows security's old sense to security-measure
-core	security	move	measure	safety	everyday security is the state of being safe; precaution sense keeps guard-duty
-core	security	cut	service	-	the old sense's parent
-core	semen	add	-	substance	seminal-fluid's sense, under the name semen
-core	seminal-fluid	drop	-	-	renamed semen: everyday name; same WordNet synset
-core	shorts	add	-	trousers	short-pants's sense, under the name shorts
-core	short-pants	drop	-	-	renamed shorts: everyday name; same WordNet synset
 core	projection-screen	add	-	artifact	silver-screen's sense, under the name projection-screen
 core	silver-screen	drop	-	-	renamed projection-screen: holds the projection screen; 'silver screen' reads as the film industry
 core	skeleton	add	-	body-part	skeletal-system's sense, under the name skeleton
@@ -243,8 +183,6 @@ core	skeletal-system	drop	-	-	renamed skeleton: everyday name; same WordNet syns
 core	coin-machine	add	-	machine	slot-machine's sense, under the name coin-machine
 core	vending-machine	move	slot-machine	coin-machine	follows slot-machine's old sense to coin-machine
 core	slot-machine	drop	-	-	renamed coin-machine: holds generic coin-operated machine (vending-machine under it); 'slot machine' reads as the gambling machine
-core	club	move	stick	association	social-club's sense, under the name club
-core	social-club	drop	-	-	renamed club: holds club rank 1 (08227214); after club is renamed
 core	direction	move	inclination	spatial-relation	spatial-direction's sense, under the name direction
 core	cardinal-compass-point	move	spatial-direction	direction	follows spatial-direction's sense to direction
 core	orientation	move	spatial-direction	direction	follows spatial-direction's sense to direction
@@ -278,12 +216,10 @@ geography	west-by-south	move	spatial-direction	direction	follows spatial-directi
 geography	west-northwest	move	spatial-direction	direction	follows spatial-direction's sense to direction
 geography	west-southwest	move	spatial-direction	direction	follows spatial-direction's sense to direction
 core	spatial-direction	drop	-	-	renamed direction: everyday name; after direction's drop; used by geography pack
+core	thorn	add	-	body-part	spine's sense, under the name thorn
 core	spinal-column	drop	-	-	renamed spine: everyday name for the backbone, once the thorn sense is dropped
 core	miscarriage	add	-	event	spontaneous-abortion's sense, under the name miscarriage
 core	spontaneous-abortion	drop	-	-	renamed miscarriage: everyday name; same sense
-core	coil-spring	add	-	device	spring's sense, under the name coil-spring
-core	spring	move	device	season	springtime's sense, under the name spring
-core	springtime	drop	-	-	renamed spring: the season takes the plain name once the device is renamed coil-spring
 core	station	move	place	facility	station-facility's sense, under the name station
 core	power-station	move	station-facility	station	follows station-facility's sense to station
 core	station-facility	drop	-	-	renamed station: gas station, train station, power station: the everyday station, once the post sense is dropped
@@ -325,15 +261,10 @@ core	roofing-work	move	trade	skilled-trade	follows trade's old sense to skilled-
 core	tailoring	move	trade	skilled-trade	follows trade's old sense to skilled-trade
 core	upholstery	move	trade	skilled-trade	follows trade's old sense to skilled-trade
 core	trade	move	occupation	commerce	everyday trade is buying and selling; the craft sense keeps its 11 children
-core	cable	move	rope	device	transmission-line's sense, under the name cable
-core	coaxial-cable	move	transmission-line	cable	follows transmission-line's sense to cable
-core	power-cable	move	transmission-line	cable	follows transmission-line's sense to cable
-core	transmission-line	drop	-	-	renamed cable: holds 02934168 cable/line/transmission_line; covers coaxial-cable, power-cable
 core	court	move	structure	organization	tribunal's sense, under the name court
 core	tribunal	drop	-	-	renamed court: holds court rank 1 (08329453); after court is renamed
-core	anatomical-tube	add	-	body-part	tube's sense, under the name anatomical-tube
-core	vein	move	tube	anatomical-tube	follows tube's old sense to anatomical-tube
-core	tube	drop	-	-	renamed anatomical-tube: plain tube is a hollow cylinder (held by tubing); this node is the anatomy sense
+core	spinning-top	add	-	plaything	whirligig's sense, under the name spinning-top
+core	whirligig	drop	-	-	renamed spinning-top: the spinning top (04454240), a toy; renamed, not dropped (second check: node is WN 04454240 top/whirligig/spinning_top, a concrete everyday toy (yo-yo, kite kept); rename to spinning-top, do not drop)
 biology	homeobox-gene	add	-	homeotic-gene	homeobox's sense, under the name homeobox-gene
 biology	homeobox	drop	-	-	renamed homeobox-gene: a homeobox is the DNA motif; the node holds the gene sense
 chemistry	copernicium	add	-	chemical-element	ununbium's sense, under the name copernicium
@@ -358,8 +289,6 @@ geography	undertow	move	undertide	undercurrent	follows undertide's old sense to 
 geography	undertide	drop	-	-	renamed undercurrent: same WN synset (07404798); undercurrent is the common word
 mathematics	uniform-distribution	add	-	statistical-distribution	equidistribution's sense, under the name uniform-distribution
 mathematics	equidistribution	drop	-	-	renamed uniform-distribution: holds 'a flat distribution'; equidistribution in mathematics means equidistributed sequences
-mathematics	np-complete	add	-	complexity-class	np-completeness's sense, under the name np-complete
-mathematics	np-completeness	drop	-	-	renamed np-complete: the node is the complexity class NP-complete; np-completeness names the property
 medicine	pediatrician	add	-	medical-specialist	baby-doctor's sense, under the name pediatrician
 medicine	baby-doctor	drop	-	-	renamed pediatrician: same synset; pediatrician is the name a practitioner uses
 medicine	otologist	add	-	medical-specialist	ear-doctor's sense, under the name otologist
@@ -396,14 +325,11 @@ core	academic-degree	move	symbol	certificate	Peter: not a certification?; a degr
 core	academy	cut	structure	-	Peter: structure?; ruled academy ⊑ institution
 core	accelerator	move	bar	control	Peter: pedal?; no pedal node exists; the gas pedal is a control, not a rigid bar
 core	access	move	attribute	right	Peter: right?; access is a right (needs the right re-sense) [also core-07: same]
-core	accommodation	move	assist	housing	Peter: not somewhere to stay?; everyday accommodation is lodging, not the act of providing
-core	accommodation	cut	service	-	the old sense's parent
 core	acknowledgment	move	situation	information	Peter: not a situation, maybe confirmation; everyday acknowledgment is a statement acknowledging something (receipt, thanks)
 core	action	move	event	act	plain action is something done; current plot-action sense is 5/10 and specialist
 core	adoption	move	activity	act	everyday adoption is adopting a child; the "acceptance with approval" sense is vaguer; see child-adoption
 core	adult	cut	animal	-	Peter: AND, not OR; an adult is a grown person; persons are not under animal in core [also core-02: same] [also core-03: same] [also core-07: same] [also core-08: same]
 core	adversity	move	destiny	condition	Peter: really? not correct; adversity is a bad condition, not a destiny [also core-03: same] [also core-06: same]
-core	air	move	fluid	gas	Peter: gas not fluid; needs the gas split (gas the substance, still ⊑ fluid); while gas is the state of matter air ⊑ gas would make air a state
 core	aisle	move	structure	artifact	everyday aisle is the passage between seats or shop shelves; the church-nave sense (3/3) is specialist; no passageway node exists
 core	album	move	book-copy	audio	everyday album is a music album; the photo-album sense is 2/2
 core	analyst	move	adult	expert	everyday analyst analyses data; current psychoanalyst sense (3/3) sits under adult
@@ -414,7 +340,6 @@ core	appeal	move	appearance	attraction	appeal is attractiveness, not outward loo
 core	appointment	move	occupation	meeting	everyday appointment is an arranged meeting; the job sense is 5/6; engagement holds this synset now (see engagement)
 core	arch	move	entrance	structure	everyday arch is the masonry arch; the archway-passage sense is 3/4
 core	ash-gray	move	attribute	color	Peter: color? [also core-02: same]
-core	atmosphere	move	fluid	gas	the atmosphere is a mass of gas; only after the gas split
 core	atom	move	substance	particle	an atom is a particle, not a substance (no atom is "a substance") [also core-06: same]
 core	auditor	move	human	accountant	Peter: someone who checks the books, not a student auditing a class
 core	auditor	cut	student	-	the old sense's parent
@@ -462,17 +387,14 @@ core	confusion	move	mistake	condition	everyday confusion is the mental state; no
 core	connection	move	transport	relation	everyday connection is a relation between things; node holds transport connection (8/9)
 core	consequence	move	process	event	a consequence (result, upshot, effect) is not necessarily a sustained process
 core	control-stick	move	bar	control	a joystick is a control mechanism, not a rigid bar (core has no lever)
-core	cord	move	fabric	artifact	everyday cord is a line of twisted fibres; node holds corduroy (4/4)
 core	cotton-fiber	cut	physical-object	-	raw fibre is a material (keeps fiber<material); physical-object makes it an object
 core	course-credit	move	acknowledgment	recognition	chain error: acknowledgment<situation (Peter: not a situation); a course credit is a recognition [also core-01: move acknowledgment accomplishment]
-core	craft	move	intelligence	trade	holds cunning (rank 5/5); everyday craft is handicraft; the vessel sense is craft-vehicle
 core	credit-card	move	identification	artifact	a physical card, like Peter's banknote/coin ruling; identification brings in information (disjoint with credit)
 core	crop	move	output	plant	everyday crops are cultivated plants, not an amount
 core	crown	cut	equipment	-	a crown is a headdress, not equipment for an undertaking
 core	cruelty	move	feeling	maltreatment	everyday cruelty is cruel treatment (an act), not a feeling
 core	cruise	move	act	journey	an ocean trip is a journey
 core	crystal	move	glassware	substance	holds rare "glassware made of quartz" (5/6); everyday crystal is the regular solid
-core	cubicle	move	room	booth	holds a monk's cell; everyday cubicle is a partitioned office workspace (booth's synset lists cubicle)
 core	cumin	parent+	-	spice	cumin is used and sold as a spice, not only a seed
 core	cupboard	move	room	furniture	a kitchen cupboard is not a room
 core	custom	move	cognition	practice	a custom is a practice, not cognition; child habit fits
@@ -484,15 +406,12 @@ core	debate	move	formal-address	discussion	a debate is a discussion between two 
 core	decal	cut	paper	-	a decal is a design or sticker, not paper material; the gloss is OR
 core	derrick	move	crane	structure	everyday derrick is the oil-well framework, not a small crane
 core	design	move	image	creation	holds "preliminary sketch" (6/7); everyday design is the act of designing
-core	detective	move	person	policeman	gloss is a police officer who investigates crimes
 core	development	move	district	process	holds "a developed district" (6/9); everyday development is the process
-core	die	move	tool	game-equipment	everyday die is one of a pair of dice, not a metal-shaping tool
 core	dignity	move	feeling	attribute	a quality of worth (WN lexfile attribute), not a feeling
 core	directory	cut	file	-	a directory is a listing or folder, not a file; folder and list are also disjoint
 core	discipline	move	punishment	trait	holds "act of punishing" (5/5); everyday discipline is orderly behaviour; field sense is field-of-study
 core	discovery	move	insight	act	everyday discovery is the act of discovering, not an insight
 core	dismissal	move	advance-notice	act	everyday dismissal is the firing itself, not the notice of it
-core	display	move	entertainment	device	everyday display is a screen; "something shown to the public" is not entertainment
 core	dividend	cut	expenditure	-	income and outgo are disjoint; WN has dividend under net income only
 core	documentation	move	act	document	holds "documentary validation" (act + information); everyday documentation is manuals
 core	documentation	cut	information	-	the old sense's parent
@@ -501,24 +420,21 @@ core	dome	cut	ceiling	-	a dome is a roof
 core	dragon	move	cognition	fictional-character	a mythical creature, not a cognition (Peter's angel note)
 core	dream	move	imagination	mental-image	imagination is the ability; a dream is a series of mental images
 core	drinking	move	activity	consumption	everyday drinking is consuming liquids, not drinking to excess
+core	drinking-fountain	move	ornamental-fountain	fountain	a drinking fountain is not ornamental; fountain is the plumbing fixture [also core-06: same]
 core	duck	move	poultry	bird	ducks include wild ones; poultry is domestic gallinaceous fowl
 core	ease	move	condition	attribute	holds "freedom from financial difficulty"; everyday ease is freedom from difficulty
 core	echo	move	attribute	natural-event	an echo is a reflected sound, not an attribute
 core	edge	move	artifact	side	not every edge is man-made (cliff, leaf); WN puts edge under side
 core	emergency	cut	event	-	an emergency is a crisis (condition); event and condition are disjoint
 core	enemy	move	people	adversary	everyday enemy is a hostile person, not "any hostile group"
-core	engagement	move	meeting	promise	everyday engagement is a promise to marry, not an appointment [also core-01: resense 07228211 promise]
 core	enthusiasm	move	condition	feeling	everyday enthusiasm is a feeling of excitement, not a condition
 core	entree	move	attribute	prepared-dish	holds "the right to enter"; everyday entree is a dish on a menu
 core	erosion	move	condition	natural-event	everyday erosion is the wearing-away process, not a condition
 core	erosion	cut	event	-	the old sense's parent
 core	examination	move	work	act	everyday examination is close inspection; the test sense is exam
-core	executive	move	agent	administrator	everyday executive is a business executive person, not "persons who administer the law"
-core	executive	cut	group	-	the old sense's parent
 core	expedition	move	organization	journey	everyday expedition is the journey, not the group
 core	extent	move	state	degree	WN puts extent under degree; it is not a state
 core	eyelid	move	tissue	body-part	an eyelid is a body part, not a tissue
-core	facsimile	move	apparatus	copy	holds the fax machine; everyday facsimile is an exact copy
 core	fair	cut	group	-	a fair is an event; event and group are disjoint
 core	fairy	move	belief	fictional-character	a creature of folklore, not a belief (Peter's angel note) [also core-01: move belief fictional-character]
 core	feedback	cut	event	-	feedback is a reply (information), not an event
@@ -537,17 +453,13 @@ core	front	move	artifact	side	the front is a side, not an artifact (pairs with r
 core	gap	move	artifact	empty-space	a gap between things is not an artifact; WN opening/gap sits under empty-space's synset
 core	garden	move	vegetation	plot	held sense is the plants grown (2/3); everyday garden is the plot of ground (WN 1), whose WN parent is plot
 core	garlic-press	move	mechanical-press	utensil	a garlic press is a kitchen utensil, not a machine
-core	gene	cut	sequence	-	sequence is a serial arrangement (group); a gene is a DNA segment (natural-object)
 core	globe	move	shape	model	held sense is a spherical shape (sphere covers it); everyday globe is the map of the earth (geography's terrestrial-globe would merge)
 core	good-fortune	move	process	luck	Peter: luck ⊑ state; good fortune is good luck, not a process
 core	gossip	move	act	information	gossip is a report (information); rumor below it inherits [also core-07: same]
-core	gourd	move	bottle	botanical-fruit	held sense is a bottle; everyday gourd is the hard-rinded fruit
 core	grain-particle	move	material	physical-object	a grain is a small piece, not a material
 core	green	move	attribute	color	a color (Peter on ash-gray: color?) [also core-01: move attribute color]
 core	greeting	cut	event	-	a greeting is an expression (information), as feedback
-core	grill	cut	structure	-	the everyday grill is a cooking appliance, not a structure
 core	grimace	move	event	gesture	a facial gesture (WN facial expression), not a bare event
-core	grip	move	influence	act	held sense (intellectual hold) is 6/7; WN 1 is the act of grasping
 core	ground	move	view	material	held sense is a picture's background (6/11); WN 1 is held by land; next everyday is earth/ground material
 core	guinea-pig	move	person	mammal	everyday guinea pig is the pet rodent, not an experimental subject
 core	handball	move	ball	sport	everyday handball is the game, not the ball
@@ -556,7 +468,6 @@ core	harvest	move	season	activity	held sense is the season (4/4); crop holds the
 core	heat	move	trait	temperature	held sense is an emotional trait (4/7); everyday heat is hotness (physics' heat-energy holds the energy sense)
 core	hero	move	leader	person	a hero need not be a leader
 core	holiday	cut	event	-	a holiday is a day (time-period); the event parent makes every day off an event
-core	home	move	structure	residence	held sense is a care institution (9/9); everyday home is where you live (WN 1, under residence)
 core	icing	cut	decoration	-	icing is food; decoration brings artifact/physical-object
 core	ideal	move	role-model	idea	everyday ideal is the idea of perfection, not a paragon person
 core	impression	move	appearance	idea	everyday impression is a vague idea/belief, not outward appearance
@@ -615,7 +526,6 @@ core	natural-spring	move	physical-object	natural-object	a natural flow of ground
 core	nature	move	attribute	natural-object	everyday nature is the natural world, not "essential qualities"
 core	necessity	move	physical-object	need	"anything indispensable" ⊑ physical-object is false of time or love; use the condition sense
 core	nerve	move	tissue	body-part	a nerve is a bundle of fibres, a body structure, not a tissue
-core	network	move	facility	system	everyday network is an interconnected system (computer, social), not only a broadcasting chain; web holds the same gloss
 core	newspaper	move	series	periodical	newspaper is a periodical; frees series for its everyday sense
 core	nomination	cut	information	-	the act of naming a candidate is an act; information is the other reading
 core	nonpayment	move	lost-item	act	everyday nonpayment is the failure to pay, not the resulting loss
@@ -640,12 +550,10 @@ core	picket	move	lumber	demonstrator	everyday picket is a striker posted outside
 core	pier	move	support-device	structure	everyday pier is a platform built out into the water, not a bridge support
 core	pig	move	person	mammal	everyday pig is the animal, not a greedy person; hog holds the same synset, merge them
 core	pill	move	artifact	medication	everyday pill is a tablet of medicine, not only the contraceptive
-core	pipe	move	shape	tubing	everyday pipe is the tube that carries water or gas, not "a hollow cylindrical shape"
 core	pit	move	trap	natural-depression	everyday pit is a hole in the ground, not a concealed trap; cavity holds this gloss now
 core	pity	move	trouble	sympathetic-concern	everyday pity is the feeling of sorrow for others; "it's a pity" is the rarer reading
 core	plastic	move	substance	material	plastic is a material (styrofoam, vinyl)
 core	pliers	cut	bar	-	pliers are not a rigid bar (cf. accelerator ⊑ bar) [also core-01: cut bar]
-core	point	move	shape	place	held sense 'a V shape' is rare; physics barycenter and space celestial-point use point as a location
 core	poker	move	artifact	game	everyday poker is the card game, not the fire iron
 core	politics	move	event	activity	everyday politics is the affairs of government; disjoint event+relation
 core	politics	cut	relation	-	the old sense's parent
@@ -683,11 +591,9 @@ core	right-to-vote	move	attribute	right	a right, once right is the entitlement [
 core	risk	move	undertaking	danger	everyday risk is a possibility of loss or harm, not a venture
 core	role-model	move	leader	person	a role model is not a leader (chain into ideal)
 core	roll	move	cylinder	artifact	a roll of paper or film is an object, not a shape (attribute)
-core	roofing-tile	cut	building-material	-	a tile is an object; keeps tile<slab (needed if building-material moves)
 core	root	move	place	natural-object	rare sense (where something begins); everyday root is the plant organ (like leaf, stalk)
 core	scene	move	information	place	everyday scene is where something happens (scene of the crime); play-subdivision is like act-of-play
 core	scissors	cut	bar	-	scissors are not a rigid bar; cutter remains [also core-01: cut bar]
-core	screen	move	artifact	video-display	everyday screen is a display screen; the concealing-cover sense is rare
 core	sculpture	cut	information	-	a sculpture is a physical work; fine-art already puts it under artifact; reaches statue, bronze, figurine [also core-04: cut information]
 core	seafood	move	substance	food	edible fish and shellfish are food; reaches shrimp, tuna, roe [also core-02: move substance food] [also core-09: same]
 core	seashore	move	physical-object	landform	a shore is a landform and a place, like hill and cliff
@@ -717,8 +623,6 @@ core	sweatshirt	move	sporting-goods	activewear	a sweatshirt is sportswear, not s
 core	swimming-pool	cut	device	-	a pool is not a device; facility and pool remain
 core	swivel	cut	fishing-tackle	-	a swivel coupling is not fishing tackle in general; mechanism remains
 core	sympathy	move	inclination	feeling	everyday sympathy is fellow feeling for someone's sorrow
-core	tag	move	fabric	label	everyday tag is a label (price tag); rag sense makes it a fabric
-core	tag	cut	piece	-	the old sense's parent
 core	talk	cut	information	-	conversation is an act; talk ⊑ conversation and information is an AND of act and content
 core	tea-leaf	move	herb	foodstuff	tea is not a cooking herb; herb drags in seasoning [also core-04: move herb foodstuff]
 core	tear	move	indefinite-quantity	secretion	a tear is a drop of secreted fluid, not an amount
@@ -730,7 +634,6 @@ core	tide	move	event	natural-event	the tide is a natural phenomenon
 core	time-slot	move	amount	time-period	a slot is a period of time, sibling of week and shift
 core	tortilla	cut	cake	-	a tortilla is a flatbread, not a sweet cake [also core-02: cut cake]
 core	touch	cut	perception	-	event+perception is an OR; everyday touch is the contact; faculty is held by sense-of-touch
-core	track	move	route	audio	disk-track sense is specialist; path, racetrack and railroad-track hold the other senses, music track is left
 core	traffic	move	commerce	collection	everyday traffic is vehicles on the road, not illicit dealing
 core	trail	move	evidence	path	everyday trail is a path through wild country, not a clue; a trail is a path, not a road
 core	train	move	artifact	vehicle	a train is a vehicle, like railcar and locomotive
@@ -740,13 +643,10 @@ core	trial	move	thinking	legal-action	everyday trial is a court trial; trial-run
 core	trust	move	association	belief	cartel sense is specialist; everyday trust is confidence in someone
 core	unit	move	idea	definite-quantity	everyday unit is a unit of measurement, not "a single undivided whole"
 core	unrest	move	feeling	condition	everyday unrest is social or political agitation, not a private feeling
-core	upholstery	move	service	artifact	everyday upholstery is the furniture covering, not the craft
-core	upholstery	cut	skilled-trade	-	the old sense's parent
 core	use	move	practice	activity	node holds the habit sense; everyday use is the act of using
 core	vanity	move	table	pride	everyday vanity is excessive pride, not a dressing table
 core	village	cut	community	-	community+settlement is an OR; everyday village is the place, like town
 core	volleyball	move	ball	sport	everyday volleyball is the game, like football and basketball
-core	walker	cut	structure	-	baby-walker sense is rarest; pedestrian holds the person; walking frame is the common object
 core	washcloth	cut	tool	-	a washcloth is not a vocational tool; linen and towel suffice
 core	water-cooler	move	kitchen-appliance	appliance	water coolers stand in offices, not kitchens
 core	wave	move	event	natural-event	a water wave is a natural phenomenon
@@ -754,10 +654,7 @@ core	web	move	system	artifact	everyday web is the World Wide Web (web-page, web-
 core	wellbeing	move	destiny	state	wellbeing is not a destiny (cf. adversity ruling); fixes health too [also core-01: move destiny condition]
 core	west	move	region	cardinal-compass-point	everyday west is the direction, like north and south; the West as a bloc is contested [also core-03: drop ]
 core	wildlife	move	organism	collection	wildlife is a collective, like vegetation; not one organism
-core	window	move	artifact	structure	node holds the rare service-hatch sense; everyday window is held by window-unit
 core	window-frame	cut	building-material	-	a frame is an object; keeps structure (needed if building-material moves)
-core	wiring	move	electrical-work	device	everyday wiring is the circuit of wires, not the installing work
-core	wiring	cut	labor	-	the old sense's parent
 core	withdrawal	move	act	transaction	everyday withdrawal is taking money out; retraction of a position is rarer
 core	wonder	move	event	emotion	everyday wonder is the feeling, not a marvel
 core	wrapping-paper	move	gift-wrapping	wrap	inverted: gift-wrapping is a kind of wrapping paper, not its parent
@@ -1074,7 +971,6 @@ economics	spot-market	cut	commodity-exchange	-	a spot market is a market, not an
 economics	stipend	cut	payment	-	a sum allotted regularly (regular-payment), not the act of paying
 economics	stock-exchange	cut	capital-market	-	an exchange is a venue/institution (like commodity-exchange); the market for stocks is stock-market
 economics	stock-warrant	move	possession	security-finance	gloss: a type of security issued by a corporation
-economics	stockbroker	move	securities-trader	broker	a stockbroker is an agent (broker), not a trader holding inventory; WN parent is broker
 economics	strike-price	cut	price	-	OR of two price senses; keep purchase-price (money)
 economics	surcharge	cut	payment	-	an additional charge (price-charged), not the act of paying
 economics	term-insurance	parent+	-	insurance	hangs on bare possession; WN puts it under insurance
@@ -1167,10 +1063,8 @@ mathematics	cardinal-number	move	number	numeric-quantity	WN cardinal number is u
 mathematics	cardinality	cut	numeric-quantity	-	'number of elements, as a property of the set' is core number's property sense, with invariant
 mathematics	classical-logic	cut	mathematical-logic	-	a logic (formal system) is not the field of mathematical logic; AND of the two readings
 mathematics	complex-number	cut	number	-	core number is the property sense; WN complex number is under numeric-quantity; fixes the whole number tower
-mathematics	computational-complexity-theory	move	computability-theory	computer-science	complexity theory is a sibling of computability theory in theory of computation, not part of it
 mathematics	conic-section	cut	locus	-	a conic is a shape like circle in core; locus brings set and group, disjoint from attribute
 mathematics	description-logic	cut	mathematical-logic	-	description logics are formal systems, not the field; AND of the two readings
-mathematics	digital-signature	move	cryptographic-primitive	information	the scheme is signature-scheme; a digital signature is the value, as computing's overlay has it
 mathematics	discrete-logarithm	move	decision-problem	problem	the discrete logarithm problem is a search problem, not a decision problem
 mathematics	elliptic-curve-cryptography	cut	procedure	-	an approach within public-key cryptography (field); procedure AND field is two readings
 mathematics	first-order-logic	move	mathematical-logic	formal-system	first-order logic is a formal system studied in mathematical logic, not the field itself
@@ -1372,7 +1266,6 @@ occupations	violinist	cut	professional	-	professional is the learned professions
 physics	antilepton	parent+	-	elementary-particle	keeps positron, antimuon, antineutrino and antitauon elementary once antiparticle leaves elementary-particle
 physics	antiparticle	move	elementary-particle	particle	antiprotons and antineutrons are antiparticles but composite, so antiparticle is not a kind of elementary particle
 physics	astronomer	move	physicist	scientist	not every astronomer is a physicist (amateur and early astronomers); astronomy is the scientist's subject
-physics	barycenter	cut	point	-	core point is "a V shape"; center-point already gives the location
 physics	cosmic-string	move	elementary-particle	natural-object	a cosmic string is a hypothetical topological defect of cosmic length, not a subatomic particle
 physics	hadron	move	elementary-particle	particle	hadrons are composite (made of quarks), so not elementary to a physicist; highest wrong link for baryon, meson, nucleon, proton, neutron, hyperon
 physics	libration	move	orbital-variation	oscillation	libration is a real or apparent rocking of a moon, mostly an optical effect of its orbit, not a perturbation of the orbit
@@ -1385,7 +1278,6 @@ space	astronomical-conjunction	move	encounter	natural-event	core encounter is a 
 space	bayer-designation	move	code	name	core code is computer code; a Bayer designation (Alpha Centauri) is a star's name
 space	big-bang	move	explosion	natural-event	core explosion is caused by a chemical or nuclear reaction; the Big Bang was an expansion of space, not such an explosion
 space	black-hole	move	stellar-remnant	celestial-body	supermassive black holes (its child) do not come from the collapse of a star
-space	celestial-point	move	point	place	core point is "a V shape", which makes every apsis, apogee, perihelion, pole and Lagrange point a shape and an attribute
 space	equatorial-telescope	move	instrument	telescope	its gloss says it is a telescope; instrument is too weak
 space	event-horizon	move	region	surface	core region is a location on the surface of the Earth; an event horizon is the boundary of a black hole
 space	gravitational-wave	move	wave	physical-phenomenon	core wave is a ridge on the surface of water
@@ -1432,7 +1324,6 @@ computing	cascading-style-sheets	drop	-	-	duplicate of css
 computing	complex-instruction-set-computer	drop	-	-	duplicate of complex-instruction-set-computing (same synset, same parent)
 computing	computer-hardware	drop	-	-	duplicate: core hardware already holds the computer-hardware sense (03493333)
 computing	data-encryption	drop	-	-	duplicate of encryption
-computing	feed	drop	-	-	duplicate of web-feed, and hung under it although it is the wider word
 computing	foreground-window	drop	-	-	a state of a window, not a kind
 computing	free-software-foundation	drop	-	-	a single organization filed as a class
 computing	freemail	drop	-	-	odd WordNet term; a mail service, not an email message
@@ -1499,7 +1390,6 @@ core	bodkin	drop	-	-	archaic tool word
 core	boldness	drop	-	-	rare-sense abstract trait leaf (impudence); courage covers the everyday sense
 core	bosom	drop	-	-	holds "the locus of feelings" (5/6), a rare sense nobody would look for; breast covers the body sense [also core-05: same]
 core	brink	drop	-	-	vague leaf (region marking a boundary) under shape
-core	buffer	drop	-	-	holds the buffing power-tool sense (5/7), a rare sense nobody would look for
 core	business-operation	drop	-	-	vague duplicate of business, filed as an undertaking
 core	bustle	drop	-	-	vague 'rapid active commotion'
 core	call	drop	-	-	rare sense (social visit, 6/13); everyday call is held by phone-call
@@ -1557,7 +1447,6 @@ core	eyeglass	drop	-	-	holds monocle; spectacles exists for the everyday sense
 core	field-hockey-ball	drop	-	-	specialist sports leaf
 core	financial-sacrifice	drop	-	-	odd leaf with no tagged sense
 core	finder	drop	-	-	held sense is a camera viewfinder (rare); nobody looks for it
-core	fingerboard	drop	-	-	specialist part of a stringed instrument
 core	finial	drop	-	-	specialist architectural ornament
 core	first-step	drop	-	-	vague leaf
 core	flak	drop	-	-	informal synonym of criticism
@@ -1569,9 +1458,7 @@ core	foray	drop	-	-	specialist military leaf; attack chain is wrong anyway (Pete
 core	forte	drop	-	-	rare abstract leaf (asset of special worth)
 core	freeze	drop	-	-	vague leaf (suspension of progress)
 core	frequency-band	drop	-	-	specialist radio leaf
-core	fryer	drop	-	-	held sense is a frying chicken; the everyday fryer appliance has no synset
 core	functioning	drop	-	-	vague process leaf
-core	funeral-directing	drop	-	-	odd leaf with no tagged sense
 core	gear-tooth	drop	-	-	specialist part leaf
 core	gearing	drop	-	-	specialist duplicate of gear
 core	genus-pan	drop	-	-	taxonomic genus, specialist
@@ -1581,10 +1468,8 @@ core	good-name	drop	-	-	duplicate of reputation
 core	good-repute	drop	-	-	duplicate of reputation, circular gloss
 core	gouge	drop	-	-	specialist woodworking tool
 core	gradation	drop	-	-	vague leaf
-core	grinder	drop	-	-	held sense is a regional sandwich name; everyday grinder is a machine (grinding-machine exists)
 core	groover	drop	-	-	specialist tool
 core	ground-cloth	drop	-	-	specialist camping leaf
-core	ground-stake	drop	-	-	odd name with no tagged sense
 core	grounds	drop	-	-	rare abstract sense (basis) nobody looks for
 core	guidepost	drop	-	-	figurative sense; the everyday signpost is not this node
 core	headroom	drop	-	-	specialist leaf
@@ -1617,11 +1502,8 @@ core	intent	drop	-	-	rare sense (meaning of a communication); everyday sense is 
 core	intention	drop	-	-	everyday sense (05982152) is held by purpose; node holds the act of intending
 core	intro	drop	-	-	informal duplicate of introduction
 core	introductory-text	drop	-	-	made-up name for primer, odd leaf
-core	ironware	drop	-	-	archaic collective leaf
 core	isotropy	drop	-	-	specialist physics leaf
 core	iteration	drop	-	-	specialist computing leaf, unused by packs
-core	jig	drop	-	-	rare sense (fishing lure); everyday jig is a dance
-core	job-placement	drop	-	-	made-up name, odd leaf
 core	judging	drop	-	-	duplicate-ish cognitive process of judgment, rare leaf
 core	judgment-of-conviction	drop	-	-	specialist legal leaf
 core	judicial-opinion	drop	-	-	specialist legal document leaf
@@ -1632,7 +1514,6 @@ core	legal-power	drop	-	-	specialist leaf (jurisdiction)
 core	legal-procedure	drop	-	-	made-up name, vague leaf
 core	legal-restraint	drop	-	-	made-up name, vague leaf
 core	lengthiness	drop	-	-	odd abstract leaf
-core	level	drop	-	-	rare abstract sense; everyday senses are held by degree and floor
 core	lineation	drop	-	-	odd leaf
 core	linguistic-context	drop	-	-	specialist linguistics leaf
 core	literary-works	drop	-	-	made-up name; literature takes this sense
@@ -1648,7 +1529,6 @@ core	matter-of-concern	drop	-	-	made-up name, vague leaf filed as a condition
 core	means	drop	-	-	vague leaf (an instrumentality)
 core	melodic-theme	drop	-	-	specialist music leaf
 core	mental-association	drop	-	-	made-up name, specialist leaf
-core	microtome	drop	-	-	specialist laboratory instrument
 core	monetary-wealth	drop	-	-	odd name, duplicates money and wealth
 core	mother-nature	drop	-	-	personification, vague; nature covers it
 core	multiplexer	drop	-	-	specialist electronics
@@ -1671,9 +1551,9 @@ core	perceptiveness	drop	-	-	vague "a feeling of understanding"
 core	period-of-rule	drop	-	-	duplicate of reign
 core	personal-knowledge	drop	-	-	vague
 core	photographic-plate	drop	-	-	archaic photographic material
-core	pigeon-pea	drop	-	-	specialist crop; bean AND pea AND pulses is also wrong
 core	piling	drop	-	-	construction term
 core	plumcot	drop	-	-	specialist hybrid fruit
+core	polish	drop	-	-	rare sense (state of perfection); everyday polish is the substance
 core	portland-cement	drop	-	-	specialist material name
 core	poser	drop	-	-	rare sense (artist's model); everyday poser is a pretender or a puzzle
 core	postage-meter	drop	-	-	specialist office machine
@@ -1710,7 +1590,6 @@ core	reversion	drop	-	-	rare sense; rotation covers turning
 core	rightful-claim	drop	-	-	vague, off-WordNet
 core	rotary-motion	drop	-	-	rare name, near-duplicate of rotation
 core	rounder	drop	-	-	specialist tool
-core	router	drop	-	-	specialist woodworking sense; everyday router is computing's network-router
 core	sapote	drop	-	-	obscure fruit
 core	scab	drop	-	-	pejorative sense (strikebreaker)
 core	scheduling-conflict	drop	-	-	vague compound, not a lasting kind; and not a characteristic
@@ -1727,7 +1606,6 @@ core	sign-of-the-zodiac	drop	-	-	astrology, contested; not a place
 core	single-file	drop	-	-	idiom ('in single file'), not a kind
 core	slaked-lime	drop	-	-	specialist chemical; chemistry pack if needed
 core	soprano	drop	-	-	voice-range sense nobody looks for; the singer is the occupations pack's soprano.person
-core	spinner	drop	-	-	fishing-lure specialist term
 core	spiritualist	drop	-	-	contested (medium between living and dead)
 core	split	drop	-	-	'lengthwise crack in wood' is minor; schism holds the everyday split
 core	staff-rod	drop	-	-	rare sense; a physical rod filed as a symbol
@@ -1737,6 +1615,7 @@ core	subject	drop	-	-	held sense is an artist's depicted object; everyday topic 
 core	subsister	drop	-	-	'one who lives through affliction': rare, odd
 core	surroundings	drop	-	-	gloss is 'setting' (a story's setting), not surroundings; everyday surroundings is environment, which exists
 core	survival	drop	-	-	held sense is natural selection, not survival; the staying-alive sense is held by endurance
+core	swing	drop	-	-	'moving back and forth' sense is rare; the playground swing is playground-swing
 core	tea-maker	drop	-	-	name means a tea machine; perforated-spoon sense nobody looks for
 core	tensity	drop	-	-	odd name for physical tautness; nobody looks for it
 core	theoretical-account	drop	-	-	odd name for a scientific model; vague leaf
@@ -1745,7 +1624,6 @@ core	thriftlessness	drop	-	-	odd trait leaf, like activeness
 core	tonality	drop	-	-	music-theory term (key); specialist leaf
 core	total-darkness	drop	-	-	odd compound; dark covers it
 core	tracking-chart	drop	-	-	invented name for a WN plot sense; nobody looks for it
-core	tree-surgery	drop	-	-	specialist service leaf
 core	tribulation	drop	-	-	literary leaf; trouble and calamity cover it
 core	trust-relationship	drop	-	-	vague leaf; not every trustful relationship is a friendship
 core	unsuccessful-person	drop	-	-	invented compound for loser; nobody looks for it
@@ -1756,10 +1634,8 @@ core	vast-quantity	drop	-	-	odd compound; vague leaf
 core	vegetation-growth	drop	-	-	vague leaf; vegetation covers it
 core	vertex	drop	-	-	current sense duplicates peak; geometric vertex belongs in mathematics
 core	wallop	drop	-	-	colloquial synonym of impact; vague leaf
-core	whirligig	drop	-	-	archaic toy name
 core	wilderness-trail	drop	-	-	duplicate of trail after its resense
 core	wimp	drop	-	-	colloquial insult; vague leaf
-core	window-unit	drop	-	-	duplicate of window after its resense
 economics	argosy	drop	-	-	archaic poetic word for merchant ships
 economics	ask-price	drop	-	-	duplicate of offer-price and asking-price; also an AND of price and purchase-price
 economics	assurance-insurance	drop	-	-	British synonym for kinds of insurance; duplicate, not a kind of its own
@@ -1801,48 +1677,25 @@ economics	underpaid-amount	drop	-	-	duplicate once underpayment takes its sense 
 economics	unitization	drop	-	-	odd sense 3/4 (investment-trust conversion) and wrongly under currency-conversion
 economics	vendor	drop	-	-	duplicate of core seller (WN vendor is in seller's synset)
 economics	web3	drop	-	-	vague buzzword, not a clear kind
-geography	beaufort-scale	drop	-	-	single instance of a scale, not a kind
-geography	beidou	drop	-	-	single instance of GNSS, not a kind (the pack's extra-edges note says so)
 geography	clunch	drop	-	-	duplicate of indurated-clay (both WN "hardened clay"); archaic
-geography	coordinated-universal-time	drop	-	-	single instance of a time standard, not a kind
 geography	earth-structure	drop	-	-	unglossed; its parent structure makes it an artifact; the Earth's structure is one thing, not a kind
 geography	endogeny	drop	-	-	obscure WN term, vague
 geography	epsg-geodetic-parameter-dataset	drop	-	-	single dataset, not a kind
-geography	etrs89	drop	-	-	single instance of a geodetic datum, not a kind
 geography	fine-spray	drop	-	-	odd WN term, vague
 geography	fire-pit	drop	-	-	rare sense (a lava pit); the everyday fire pit is a pit for a campfire
 geography	flowage	drop	-	-	rare sense; a man-made flooded area filed as a natural body of water
 geography	foreland	drop	-	-	vague sense; the headland sense is promontory
-geography	galileo-navigation-system	drop	-	-	single instance of GNSS, not a kind
-geography	geologic-time-scale	drop	-	-	single instance of a scale, not a kind
 geography	geological-eon	drop	-	-	duplicate of eon, which holds archean, hadean, phanerozoic and proterozoic
 geography	geonames	drop	-	-	single gazetteer database, not a kind
 geography	getty-thesaurus-of-geographic-names	drop	-	-	single work, not a kind
-geography	global-positioning-system	drop	-	-	single instance of GNSS (GPS), not a kind
-geography	glonass	drop	-	-	single instance of GNSS, not a kind
-geography	gps-time	drop	-	-	single instance of a time standard, not a kind
-geography	gregorian-calendar	drop	-	-	single instance of a calendar, not a kind; not geography
-geography	international-atomic-time	drop	-	-	single instance of a time standard, not a kind
-geography	international-terrestrial-reference-system	drop	-	-	single instance of a reference system, not a kind
-geography	julian-day	drop	-	-	single dating system (astronomy), not a kind
 geography	kitty-litter	drop	-	-	a pet-care product, not geography
-geography	koppen-climate-classification	drop	-	-	single classification scheme, not a kind
 geography	landslip	drop	-	-	duplicate of landslide (same WN synset 07405411)
-geography	mercalli-scale	drop	-	-	single instance of a scale, not a kind
-geography	military-grid-reference-system	drop	-	-	single instance of a reference system, not a kind
-geography	moment-magnitude-scale	drop	-	-	single instance of a scale, not a kind
 geography	naval-chart	drop	-	-	duplicate of nautical-chart (WN naval/navigational chart)
 geography	nebule	drop	-	-	archaic word for a small cloud
 geography	noah's-flood	drop	-	-	a biblical event, not geography
-geography	north-american-datum	drop	-	-	single instance of a geodetic datum, not a kind
 geography	prevailing-westerly	drop	-	-	duplicate of westerlies
-geography	richter-magnitude-scale	drop	-	-	single instance of a scale, not a kind
 geography	shingling	drop	-	-	rare sense; geologists call it imbrication
 geography	transit-zone	drop	-	-	a drug-smuggling area of the US government, not a geographic kind
-geography	unix-time	drop	-	-	single instance of a time standard; computing, not geography
-geography	utm-coordinate-system	drop	-	-	single instance of a reference system, not a kind
-geography	wgs-84	drop	-	-	single instance of a geodetic datum, not a kind
-geography	wide-area-augmentation-system	drop	-	-	single instance (WAAS), not a kind
 geography	wormcast	drop	-	-	rare sense (fossil trail); the everyday wormcast is an earthworm casting
 mathematics	age-norm	drop	-	-	developmental psychology norm, not mathematics
 mathematics	combinatorial-combination	drop	-	-	holds the act of arranging; the mathematical combination is k-combination
@@ -1908,5 +1761,4 @@ physics	theory-of-gravitation	drop	-	-	same content as law-of-gravitation (Newto
 space	age-of-the-universe	drop	-	-	a single value (13.8 billion years), not a kind; the pack keeps no numbers
 space	chiron	drop	-	-	one obscure asteroid, not among the pack's chosen instances
 space	field-glass	drop	-	-	a terrestrial spyglass, not astronomy or spaceflight
-space	host-star	drop	-	-	a role: a star counts as a host only relative to its planets
 space	primary-body	drop	-	-	a role: a body counts as primary only relative to what orbits it
