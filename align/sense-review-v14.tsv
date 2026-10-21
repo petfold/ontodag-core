@@ -1,0 +1,839 @@
+# The everyday-sense review of core (Peter's rules of 2026-10-22). Claude's reviewers' decisions, merged
+# and checked: apply = yes for high- and medium-confidence rows that pass the check; low rows are for Peter.
+# tools/sense_rulings.py writes the applied rows as align/rulings-v14-ysenses.tsv. Edit `apply` and rerun it.
+pack	name	action	args	confidence	reason	reviewer	apply	check
+core	aberration	drop		high	"optical-lens sense is specialist; the everyday ""deviation from the norm"" is vague"	core-01	yes	
+core	abuse	resense	00419908 practice	high	Peter: can be physical too; everyday abuse is mistreatment (an act), not a rude expression; maltreatment holds the same synset (see maltreatment row)	core-01	yes	
+core	academic-degree	move	symbol certificate	medium	Peter: not a certification?; a degree is a certified award, not a symbol; no award/qualification node exists, certificate is nearest	core-01	yes	
+core	academy	cut	structure	high	Peter: structure?; ruled academy ⊑ institution	core-01	yes	
+core	accelerator	move	bar control	high	Peter: pedal?; no pedal node exists; the gas pedal is a control, not a rigid bar	core-01	yes	
+core	access	move	attribute right	high	Peter: right?; access is a right (needs the right re-sense) [also core-07: same]	core-01	yes	
+core	accommodation	resense	02672371 housing	high	Peter: not somewhere to stay?; everyday accommodation is lodging, not the act of providing	core-01	yes	
+core	account	split	account-statement | 13929037 possession	medium	Peter: not just a statement; everyday account is a bank/customer account; the statement sense keeps economics' equity-account, expense-account, profit-and-loss	core-01	yes	
+core	acknowledgment	resense	06628861 information	high	Peter: not a situation, maybe confirmation; everyday acknowledgment is a statement acknowledging something (receipt, thanks)	core-01	yes	
+core	acquired-knowledge	rename	knowledge	high	Peter: knowledge?; knowledge does not exist yet	core-01	yes	
+core	act-of-play	drop		high	Peter's example: vague leaf	core-01	yes	
+core	action	resense	00037396 act	medium	plain action is something done; current plot-action sense is 5/10 and specialist	core-01	yes	
+core	action-mechanism	drop		high	specialist (piano/gun action), odd name, unused leaf	core-01	yes	
+core	activeness	drop		high	Peter's example: vague leaf	core-01	yes	
+core	adeptness	drop		high	Peter's example: vague leaf	core-01	yes	
+core	admission	cut	event	low	same act/content AND pattern as answer; an admission (with confession under it) is a statement	core-01		
+core	adoption	resense	01185292 act	medium	"everyday adoption is adopting a child; the ""acceptance with approval"" sense is vaguer; see child-adoption"	core-01	yes	
+core	adult	cut	animal	high	Peter: AND, not OR; an adult is a grown person; persons are not under animal in core [also core-02: same] [also core-03: same] [also core-07: same] [also core-08: same]	core-01	yes	
+core	advance	rename	cash-advance	medium	the node holds the cash-advance sense (5/6); plain advance reads as progress	core-01	yes	
+core	advancement	drop		medium	vague abstract leaf (gradual improvement), rare word; improvement and accomplishment cover it	core-01	yes	
+core	adversity	move	destiny condition	high	Peter: really? not correct; adversity is a bad condition, not a destiny [also core-03: same] [also core-06: same]	core-01	yes	
+core	affirmation	drop		medium	rare-sense abstract leaf; assertion covers the everyday sense	core-01	yes	
+core	agitation	drop		medium	rare-sense abstract leaf (protest disturbance under motion); vague	core-01	yes	
+core	air	move	fluid gas	medium	Peter: gas not fluid; needs the gas split (gas the substance, still ⊑ fluid); while gas is the state of matter air ⊑ gas would make air a state	core-01	yes	
+core	aisle	resense	02693860 artifact	medium	everyday aisle is the passage between seats or shop shelves; the church-nave sense (3/3) is specialist; no passageway node exists	core-01	yes	
+core	album	resense	06591815 audio	medium	everyday album is a music album; the photo-album sense is 2/2	core-01	yes	
+core	alliance	resense	08293982 organization	high	the gloss holds the kinship-connection sense while the parent is organization; everyday alliance is the pact organization	core-01	yes	
+core	aloofness	drop		medium	vague abstract trait leaf, like activeness	core-01	yes	
+core	analog	drop		medium	"Peter: one sense chosen, others ignored; the noun means only ""an analogue"", vague; the everyday analog-vs-digital sense is adjectival"	core-01	yes	
+core	analyst	resense	09790482 expert	high	everyday analyst analyses data; current psychoanalyst sense (3/3) sits under adult	core-01	yes	
+core	anchor	move	claw device	medium	an anchor is a device, not a claw; frees claw	core-02	yes	
+core	angel	move	belief fictional-character	medium	Peter: more like a fictional character, though religious; an angel is not a belief; no supernatural-being node exists	core-01	yes	
+core	answer	cut	act	low	act AND information reads the two senses of answer (the deed, the reply) as both; same pattern on ~20 speech-act nodes	core-01		
+core	antacid	move	agent medication	medium	an antacid is a medicine; agent alone loses that	core-01	yes	
+core	appeal	move	appearance attraction	medium	appeal is attractiveness, not outward look; attraction holds that quality	core-01	yes	
+core	appointment	resense	08385009 meeting	high	everyday appointment is an arranged meeting; the job sense is 5/6; engagement holds this synset now (see engagement)	core-01	yes	
+core	arch	resense	02733524 structure	high	everyday arch is the masonry arch; the archway-passage sense is 3/4	core-01	yes	
+core	arena	drop		medium	the Roman amphitheatre floor sense is rare; the everyday venue sense is stadium's synset (arena is one of its lemmas)	core-01	yes	
+core	argumentation	drop		high	Peter's example; argument and thinking cover it	core-01	yes	
+core	articulation	rename	joint	medium	same sense (anatomical joint) under its everyday name; after joint is dropped; ankle, elbow, knee, wrist stay [also core-05: same]	core-01	yes	
+core	artistic-creation	drop		high	Peter's example; art and creation cover it	core-01	yes	
+core	ash-gray	move	attribute color	high	Peter: color? [also core-02: same]	core-01	yes	
+core	ass	rename	donkey	medium	plain ass reads as buttocks (held by buttocks); donkey is the everyday word for this animal	core-01	yes	
+core	atmosphere	move	fluid gas	medium	the atmosphere is a mass of gas; only after the gas split	core-01	yes	
+core	atom	move	substance particle	medium	"an atom is a particle, not a substance (no atom is ""a substance"") [also core-06: same]"	core-01	yes	
+core	attack	resense	00773814 aggression	high	Peter: military operation is just one kind of attack; everyday attack is any act of attacking; foray and military-strike still fit [also core-06: split military-attack | 00773814 aggression]	core-01		reviewers disagree
+core	auditor	resense	09822955 accountant	high	Peter: someone who checks the books, not a student auditing a class	core-01	yes	
+core	augury	drop		high	Peter's example: archaic leaf	core-01	yes	
+core	authorities	resense	08050678 organization	high	Peter: not a person, an organization; note government already holds this synset, merging into government is the alternative	core-01	yes	
+core	average	move	cognition function	medium	Peter: a mathematical function or a calculation; value (a computed number) is the alternative if the statistic reading is wanted; mathematics hangs mean, median, mode under it	core-01	yes	
+core	avocation	drop		medium	formal synonym of hobby; pastime covers it [also core-04: rename hobby]	core-01		reviewers disagree
+core	axis	drop		medium	holds the axis-of-rotation mechanism (6/6); the everyday axis (a geometric line) has no core parent	core-01	yes	
+core	backlog	split	stockpile | 07953603 collection	medium	everyday backlog is unfinished work; the reserve sense keeps economics' reserve-account and reserve-stock	core-01	yes	
+core	bail	resense	13350976 possession	medium	everyday bail is the money set for release; the legal-system sense under plan is odd	core-01	yes	
+core	bail-bond	drop		medium	its synset goes to bail	core-01	yes	
+core	band	drop		medium	holds the decorative-strip sense (4/13), unused leaf; plain band is a music band	core-01	yes	
+core	baron	resense	09840520 person	medium	everyday baron is the nobleman (rank 1); the tycoon sense is 3/3; person as for duke	core-01	yes	
+core	barrel-shape	drop		medium	odd specialist shape leaf	core-01	yes	
+core	basis	drop		medium	vague abstract leaf; basis ⊑ hypothesis is also false (a basis is not a hypothesis)	core-01	yes	
+core	batch	resense	08400452 collection	high	"everyday batch is a group of things handled together; ""a large number"" sense is rare"	core-01	yes	
+core	betrothal	drop		medium	archaic; its synset goes to engagement	core-01	yes	
+core	bid	resense	07165086 offer	high	"everyday bid is an offer to buy; ""an authoritative direction"" (bidding) is rare [also core-02: rename command]"	core-01		reviewers disagree
+core	biota	drop		medium	specialist ecology term, unused leaf	core-01	yes	
+core	bite	resense	14287408 wound	medium	everyday bite is a bite wound (or the act); the snack-meal sense is 4/9	core-01	yes	
+core	blink-of-an-eye	drop		high	idiom, not a category	core-01	yes	
+core	blue	move	attribute color	high	a colour; color has no children while every colour sits on bare attribute [also core-02: same] [also core-03: same] [also core-04: same]	core-01	yes	
+core	board	resense	02856463 artifact	high	everyday board is a flat piece of material; the gameboard sense is 9/9; dartboard still fits	core-01	yes	
+core	board-of-directors	resense	08380768 committee	high	the gloss holds generic board (committee) while the name is board of directors	core-01	yes	
+core	bodkin	drop		high	archaic tool word	core-01	yes	
+core	boiler	cut	household-appliance	medium	not every boiler is a household appliance (industrial, locomotive boilers)	core-01	yes	
+core	boldness	drop		medium	rare-sense abstract trait leaf (impudence); courage covers the everyday sense	core-01	yes	
+core	bosom	drop		high	"holds ""the locus of feelings"" (5/6), a rare sense nobody would look for; breast covers the body sense [also core-05: same]"	core-01	yes	
+core	bottom	resense	08511970 part	high	"holds ""a cargo ship"" (7/7); everyday bottom is the lowest part"	core-01	yes	
+core	brand	resense	06845599 name	high	"everyday brand is a brand name; ""a recognizable kind"" is 2/6"	core-01	yes	
+core	brink	drop		medium	vague leaf (region marking a boundary) under shape	core-01	yes	
+core	broadcast-program	move	show information	medium	a TV or radio programme is content, not a social event; reaches serial, episode, news-program	core-08	yes	
+core	bronze	resense	14717275 alloy	high	everyday bronze is the alloy; the sculpture sense is 2/2	core-01	yes	
+core	bubble	cut	globe	medium	globe ⊑ shape makes every bubble a shape (attribute); a bubble is a physical object [also core-04: same]	core-01	yes	
+core	buffer	drop		high	holds the buffing power-tool sense (5/7), a rare sense nobody would look for	core-01	yes	
+core	building-material	move	artifact material	low	cement, sand, timber are not man-made objects; but handrail, molding, shutter, window-frame, flagstone, roofing-tile are components, not materials, and would need to move first [also core-02: same] [also core-05: same]	core-01		
+core	bus	move	artifact motor-vehicle	high	a bus is a motor vehicle; it now sits bare under artifact	core-02	yes	
+core	business-operation	drop		medium	vague duplicate of business, filed as an undertaking	core-02	yes	
+core	bustle	drop		medium	vague 'rapid active commotion'	core-02	yes	
+core	cable	rename	wire-rope	medium	node holds cable as rope (3/6); everyday cable is the electrical conductor	core-02	yes	
+core	cake	move	substance food	high	cake is a food; it hangs from substance with no food ancestor [also core-03: same] [also core-09: same]	core-02	yes	
+core	call	drop		medium	rare sense (social visit, 6/13); everyday call is held by phone-call	core-02	yes	
+core	calling-card	drop		medium	archaic visiting card, filed as information	core-02	yes	
+core	camp	resense	02945161 housing	medium	everyday camp is temporary lodging for campers; node holds penal camp (5/8)	core-02	yes	
+core	campaign	resense	00798245 undertaking	medium	everyday campaign is a series of actions toward a goal (political, ad, military); node holds military only (3/4)	core-02	yes	
+core	cannister	rename	canister	medium	standard spelling	core-02	yes	
+core	cantaloup	rename	cantaloupe	medium	standard spelling	core-02	yes	
+core	caprice	drop		medium	literary, vague feeling	core-02	yes	
+core	caput	rename	head	medium	holds 05538625 head/caput, the everyday head; after head is renamed [also core-04: same]	core-02	yes	
+core	card	cut	paper	medium	paper is a material; a card is an object, so playing-card and its kinds became substances [also core-05: same] [also core-07: same]	core-04	yes	
+core	care	rename	maintenance	medium	node holds care/maintenance/upkeep (children car-care, overhaul); everyday care is tending	core-02	yes	
+core	carnival	resense	00511555 festival	medium	everyday carnival is the festival (rank 1); node holds traveling show (3/3)	core-02	yes	
+core	carob	move	seed botanical-fruit	medium	a carob pod is a fruit (pod), not a seed	core-02	yes	
+core	carriage	split	posture | 02968473 vehicle	medium	node holds posture (3/3) with child grace; everyday carriage is the vehicle	core-02	yes	
+core	carrier	drop		low	rare rack sense (10/11); everyday carrier has many senses; drop once luggage-rack moves	core-02		drop of a node with children or users
+core	carrying-out	drop		high	vague act name, like act-of-play	core-02	yes	
+core	cast	rename	plaster-cast	medium	node holds plaster cast (5/9); everyday cast is the actors	core-02	yes	
+core	cast-of-characters	rename	cast	medium	holds cast rank 1 (08237863); after cast is renamed	core-02	yes	
+core	cause	drop		low	its synset 00798245 should pass to campaign; everyday cause is a causal role, not a kind	core-02		
+core	caution	resense	04664058 trait	medium	everyday caution is the trait of being cautious (rank 1); node holds 3/4 under cognition	core-02	yes	
+core	cavity	resense		low	"holds pit's sense ""a sizeable hole in the ground""; everyday cavity is a hollow or tooth decay"	core-06		resense needs a WN30 offset
+core	celluloid	drop		medium	'film as a medium', odd sense	core-02	yes	
+core	census	cut	information	medium	a census is the act of counting (keeps work); AND with information is wrong	core-02	yes	
+core	cereal	move	substance food	high	breakfast cereal is a food; no food ancestor today [also core-04: same]	core-02	yes	
+core	challenge	drop		medium	rare sense (questioning, 3/5); everyday sense is held by challenging-situation	core-02	yes	
+core	challenging-situation	rename	challenge	medium	holds challenge rank 1 (13932948); after challenge is dropped	core-02	yes	
+core	chap	drop		medium	leggings sense rare (4/4); everyday 'chap' is informal for man	core-02	yes	
+core	character	rename	written-character	medium	node holds the written symbol (8/9); everyday character is fictional-character or moral character; computing has a stub	core-02	yes	
+core	charge	resense	13306870 outgo	medium	everyday charge is the price charged for a service; node holds request for payment (11/15) under act	core-02		target outgo does not exist
+core	chart	rename	navigation-chart	low	node holds the navigation map (2/2), which geography's aeronautical/nautical/naval charts hang on; everyday chart is data-chart	core-02		
+core	check	drop		medium	chess check (13/13); everyday check (cheque) is held by bank-check	core-02	yes	
+core	child	cut	animal	high	AND error like adult: a human offspring is not filed under animal in core; keeps offspring<person [also core-01: cut animal] [also core-03: same]	core-02	yes	
+core	child-adoption	drop		medium	its synset moves to adoption	core-01	yes	
+core	china-cabinet	cut	device	medium	a cabinet is furniture, not a device	core-02	yes	
+core	chit	drop		medium	odd name for a restaurant bill; invoice covers it	core-02	yes	
+core	chocolate	move	substance food	high	chocolate is a food; no food ancestor today	core-02	yes	
+core	cinch	drop		medium	saddle girth, rare (2/3); everyday sense is an easy task	core-02	yes	
+core	circumstance	resense	13942875 condition	medium	everyday circumstance is a condition around an event (rank 1); node holds 3/4 under cognition	core-02	yes	
+core	claw	resense	02156140 body-part	medium	everyday claw is an animal's claw; node holds mechanical claw (2/4); move anchor first	core-02	yes	
+core	cleaning	move	service work	low	cleaning one's own house (housecleaning, shaving) is not a service done for another [also core-08: move service act]	core-04		
+core	clemency	drop		medium	specialist legal term, vague parent event	core-02	yes	
+core	clod	drop		medium	'a compact mass' under collection: odd sense and wrong parent	core-02	yes	
+core	close-connection	drop		medium	vague (affinity)	core-02	yes	
+core	closet	cut	device	medium	furniture (wardrobe), not a device	core-02	yes	
+core	closure	resense	00229260 act	medium	everyday closure is a shutdown (road, school closure); node holds settlement (4/7) under cognition	core-02	yes	
+core	club	rename	cudgel	medium	node holds the stick (3/7), child baseball-bat fits; everyday club is the association	core-02	yes	
+core	coach	resense	09931640 trainer	medium	everyday coach is the sports coach (rank 1); node holds private tutor (2/5)	core-02	yes	
+core	coalescence	drop		medium	vague, specialist; a process filed as an act	core-02	yes	
+core	cocoanut	rename	coconut	medium	holds the everyday coconut (07772935); after coconut is renamed	core-02	yes	
+core	coconut	rename	coconut-meat	medium	node holds coconut meat; the whole nut is under the archaic spelling cocoanut	core-02	yes	
+core	coevals	drop		high	archaic plural	core-02	yes	
+core	coldness	cut	amount	medium	absence of heat is a quality, not a quantity; keeps attribute	core-02	yes	
+core	collapse	resense	07361128 natural-event	medium	everyday collapse is something falling down; node holds a stock-market crash (4/4)	core-02	yes	
+core	color	resense	04956594 appearance	medium	everyday color is the visual attribute (rank 1); node holds rank 8/8, has no children	core-02	yes	
+core	comet	move	natural-object celestial-body	high	a comet is a celestial body; under-filed	core-02	yes	
+core	command	drop		medium	rare sense (mastery, 6/7); the everyday command synset 07168131 is held by bid	core-02	yes	
+core	commemoration	resense	07452841 ceremony	medium	everyday commemoration is the ceremony (rank 1); node holds 2/2	core-02	yes	
+core	commencement	drop		medium	vague 'time something begins'; everyday sense is graduation	core-02	yes	
+core	communicative-contact	drop		medium	vague, duplicates communication	core-02	yes	
+core	communist	move	politician member	high	a party member is not a politician, leader or worker	core-02	yes	
+core	comparison	cut	event	medium	node holds the relation sense; event+relation AND is wrong	core-02	yes	
+core	competitive-lead	drop		medium	odd name, duplicates competitive-edge	core-02	yes	
+core	composition	drop		medium	school-essay sense (8/9); everyday senses are musical-composition and constitution's makeup	core-02	yes	
+core	comrade	resense	09945905 friend	medium	everyday comrade is a companion; node holds a term of address (3/3)	core-02	yes	
+core	conclusion	resense	05838176 belief	medium	everyday conclusion is a judgment reached; node holds last section of a text (8/9)	core-02	yes	
+core	confederacy	drop		high	held sense is the historical Confederacy, an instance not a kind	core-02	yes	
+core	conflict	cut	event	high	node holds the state of opposition; event+state AND is wrong; war keeps event via act [also core-03: same] [also core-09: cut state]	core-02	yes	
+core	confusion	resense	05683582 condition	medium	everyday confusion is the mental state; node holds a mix-up mistake (5/5)	core-02	yes	
+core	connection	resense	13791389 relation	medium	everyday connection is a relation between things; node holds transport connection (8/9)	core-02	yes	
+core	consequence	move	process event	medium	a consequence (result, upshot, effect) is not necessarily a sustained process	core-02	yes	
+core	constitution	rename	composition	medium	holds makeup/composition (04933544, child infrastructure, computing uses it); after composition is dropped	core-02	yes	
+core	contrary	drop		medium	vague; duplicates opposite	core-02	yes	
+core	control	split	control-mechanism | 05196375 attribute	low	node holds the mechanism (9/11) with 4 children; everyday control is power to direct	core-02		
+core	control-stick	move	bar control	medium	a joystick is a control mechanism, not a rigid bar (core has no lever)	core-02	yes	
+core	conventionality	drop		medium	vague abstract quality	core-02	yes	
+core	cooking-pot	rename	pot	medium	everyday pot, once pot (marijuana) is renamed	core-07	yes	
+core	cord	resense	03106110 artifact	medium	everyday cord is a line of twisted fibres; node holds corduroy (4/4)	core-02	yes	
+core	cordial-reception	drop		medium	odd name for hospitality	core-02	yes	
+core	cotton-fiber	cut	physical-object	high	raw fibre is a material (keeps fiber<material); physical-object makes it an object	core-02	yes	
+core	course	rename	course-of-action	medium	node holds 'a mode of action' (child way); everyday course is course-of-instruction	core-02	yes	
+core	course-credit	move	acknowledgment recognition	medium	chain error: acknowledgment<situation (Peter: not a situation); a course credit is a recognition [also core-01: move acknowledgment accomplishment]	core-02	yes	
+core	course-drift	drop		medium	specialist navigation term	core-02	yes	
+core	course-of-instruction	rename	course	medium	holds the everyday course (lessons); after course is renamed	core-02	yes	
+core	court	rename	courtyard	medium	node holds courtyard (10/11); everyday court is the court of law	core-02	yes	
+core	crack-up	drop		medium	informal word for a breakdown; illness and disease cover it	core-03	yes	
+core	crackpot	drop		medium	evaluative slang for a person, not a clear category	core-03	yes	
+core	craft	resense	00714944 trade	medium	holds cunning (rank 5/5); everyday craft is handicraft; the vessel sense is craft-vehicle	core-03	yes	
+core	credit-card	move	identification artifact	medium	a physical card, like Peter's banknote/coin ruling; identification brings in information (disjoint with credit)	core-03	yes	
+core	crevice	drop		medium	synonym of crack (same WN lemmas); the shape-attribute sense is odd	core-03	yes	
+core	crook	drop		high	"holds ""bend in a curve""; everyday crook is a criminal, which exists"	core-03	yes	
+core	crop	resense	11530512 plant	medium	everyday crops are cultivated plants, not an amount	core-03	yes	
+core	crown	cut	equipment	medium	a crown is a headdress, not equipment for an undertaking	core-03	yes	
+core	cruelty	resense	00424599 maltreatment	medium	everyday cruelty is cruel treatment (an act), not a feeling	core-03	yes	
+core	cruise	move	act journey	high	an ocean trip is a journey	core-03	yes	
+core	crystal	resense	14883206 substance	medium	"holds rare ""glassware made of quartz"" (5/6); everyday crystal is the regular solid"	core-03	yes	
+core	cube	resense	13916721 shape	high	everyday cube has six equal square faces; node holds the rectangular block	core-03	yes	
+core	cubicle	resense	- booth	medium	holds a monk's cell; everyday cubicle is a partitioned office workspace (booth's synset lists cubicle)	core-03	yes	
+core	cumin	parent+	spice	medium	cumin is used and sold as a spice, not only a seed	core-03	yes	
+core	cupboard	move	room furniture	medium	a kitchen cupboard is not a room	core-03	yes	
+core	curate	drop		medium	specialist church office	core-03	yes	
+core	curve	move	shape curved-shape	low	graph line under shape; curved-shape holds WN curve sense 1 and should perhaps take the name curve	core-03		
+core	custom	move	cognition practice	high	a custom is a practice, not cognition; child habit fits	core-03	yes	
+core	cycle-period	move	amount time-period	high	the interval is an amount of time	core-03	yes	
+core	darling	drop		medium	term of endearment, not a category of person	core-03	yes	
+core	dartboard	move	board game-equipment	medium	board is the board-game board; a dartboard is game equipment	core-03	yes	
+core	dash	drop		medium	"holds rare ""stylish elegance""; no punctuation node for the everyday sense"	core-03	yes	
+core	data-chart	rename	chart	low	holds chart rank 1 (06999802); only after chart is renamed and geography follows	core-02		rename target ['chart'] exists or is missing
+core	database	move	collection information	medium	an organized body of information, like list and dataset; not a group	core-03	yes	
+core	date	split	date-fruit | 15159583 day	medium	holds the fruit (rank 8/8); everyday date is the calendar date	core-03	yes	
+core	day-of-the-month	drop		medium	same synset 15159583 as the plain date after date's split	core-03	yes	
+core	deadline-extension	rename	extension	medium	WN extension sense 1; after extension's drop	core-03	yes	
+core	deal	resense	01110274 transaction	high	holds dealing playing cards (rank 8/9); everyday deal is a business deal	core-03	yes	
+core	dearth	drop		medium	literary synonym of lack	core-03	yes	
+core	debate	move	formal-address discussion	medium	a debate is a discussion between two sides, not one formal address	core-03	yes	
+core	decal	cut	paper	medium	a decal is a design or sticker, not paper material; the gloss is OR	core-03	yes	
+core	declivity	drop		low	archaic word for slope, but used by the geography pack	core-03		drop of a node with children or users
+core	decor	resense	- decoration	medium	gloss is the layout of an interior, but its 15 children (vase, tassel, wallpaper...) are home-decor articles	core-09	yes	
+core	deity	move	belief fictional-character	low	every deity is a belief is wrong; Peter's angel note, but religious; maybe a supernatural-being node [also core-01: move belief fictional-character]	core-03		
+core	depression	rename	economic-depression	medium	holds the economic sense; everyday depression is the mental illness	core-03	yes	
+core	depressive-disorder	rename	depression	medium	everyday name; after depression's rename [also core-03: move condition illness]	core-03		reviewers disagree
+core	deputation	drop		medium	archaic; delegation	core-03	yes	
+core	derrick	resense	03178538 structure	medium	everyday derrick is the oil-well framework, not a small crane	core-03	yes	
+core	deservingness	drop		high	odd abstract noun	core-03	yes	
+core	design	resense	00928077 creation	medium	"holds ""preliminary sketch"" (6/7); everyday design is the act of designing"	core-03	yes	
+core	destiny	drop		low	same synset as luck (14473222); drop after adversity and wellbeing move; fate sense is contested [also core-01: drop ]	core-03		drop of a node with children or users
+core	detective	move	person policeman	high	gloss is a police officer who investigates crimes	core-03	yes	
+core	development	resense	13464820 process	medium	"holds ""a developed district"" (6/9); everyday development is the process"	core-03	yes	
+core	die	resense	03191029 game-equipment	medium	everyday die is one of a pair of dice, not a metal-shaping tool	core-03	yes	
+core	dignity	move	feeling attribute	medium	a quality of worth (WN lexfile attribute), not a feeling	core-03	yes	
+core	direction	drop		medium	"holds ""trend"" (3/9); everyday direction is spatial-direction, which should take the name"	core-03	yes	
+core	directory	cut	file	medium	a directory is a listing or folder, not a file; folder and list are also disjoint	core-03	yes	
+core	discipline	resense	04881623 trait	medium	"holds ""act of punishing"" (5/5); everyday discipline is orderly behaviour; field sense is field-of-study"	core-03	yes	
+core	discovery	resense	00043195 act	medium	everyday discovery is the act of discovering, not an insight	core-03	yes	
+core	disembodied-spirit	drop		medium	rare synonym of spirit; ghost covers it [also core-01: move belief fictional-character]	core-03	yes	
+core	dismissal	resense	00216174 act	medium	everyday dismissal is the firing itself, not the notice of it	core-03	yes	
+core	disorderliness	drop		medium	odd abstract noun	core-03	yes	
+core	display	resense	03211117 device	medium	"everyday display is a screen; ""something shown to the public"" is not entertainment"	core-03	yes	
+core	diverseness	rename	diversity	medium	everyday name for the same sense	core-03	yes	
+core	dividend	cut	outgo	medium	income and outgo are disjoint; WN has dividend under net income only	core-03	yes	
+core	documentation	resense	06588326 document	medium	"holds ""documentary validation"" (act + information); everyday documentation is manuals"	core-03	yes	
+core	doll	cut	device	medium	a doll is a plaything, not a device	core-03	yes	
+core	dome	cut	ceiling	medium	a dome is a roof	core-03	yes	
+core	dominion	drop		medium	archaic synonym of dominance	core-03	yes	
+core	donor	resense	10025730 person	high	everyday donor is anyone who gives; organ donors are a kind of it	core-03	yes	
+core	dragon	move	cognition fictional-character	medium	a mythical creature, not a cognition (Peter's angel note)	core-03	yes	
+core	drama	drop		medium	"holds ""a turbulent episode""; everyday drama is the play (dramatic-play), which should take the name"	core-03	yes	
+core	dramatic-play	rename	drama	medium	everyday name; after drama's drop	core-03	yes	
+core	dramaturgy	drop		medium	specialist	core-03	yes	
+core	dream	move	imagination mental-image	medium	imagination is the ability; a dream is a series of mental images	core-03	yes	
+core	dressing	split	wound-dressing | 07832902 sauce	medium	everyday dressing is salad dressing; bandage stays under wound-dressing	core-03	yes	
+core	drill	drop		medium	holds military marching drill (4/4); everyday drill is the tool (drill-tool)	core-03	yes	
+core	drill-tool	rename	drill	medium	everyday name; after drill's drop	core-03	yes	
+core	drinking	resense	00843128 consumption	medium	everyday drinking is consuming liquids, not drinking to excess	core-03	yes	
+core	drinking-fountain	move	ornamental-fountain fountain	high	a drinking fountain is not ornamental; fountain is the plumbing fixture [also core-06: same]	core-03	yes	
+core	duck	move	poultry bird	high	ducks include wild ones; poultry is domestic gallinaceous fowl	core-03	yes	
+core	due-east	rename	east	medium	everyday east is the compass point; after east's drop (north and south already plain) [also core-09: drop ]	core-03		reviewers disagree
+core	due-west	rename	west	medium	everyday west is the compass point; after west's drop (north and south already plain) [also core-09: drop ]	core-03		rename target ['west'] exists or is missing; reviewers disagree
+core	eagle-emblem	drop		medium	odd node: an emblem under cognition	core-03	yes	
+core	ease	resense	04708113 attribute	medium	"holds ""freedom from financial difficulty""; everyday ease is freedom from difficulty"	core-03	yes	
+core	easiness	drop		medium	"odd ""tranquility"" sense; ease covers it after its resense"	core-03	yes	
+core	east	drop		medium	"vague region ""the countries of Asia""; the plain name should go to due-east [also core-09: resense 13832355 cardinal-compass-point]"	core-03		reviewers disagree
+core	echo	move	attribute natural-event	medium	an echo is a reflected sound, not an attribute	core-03	yes	
+core	economic-system	rename	economy	medium	everyday name; after economy's drop; used by economics and term packs	core-03	yes	
+core	economy	drop		medium	holds frugality (3/4); everyday economy is economic-system, which should take the name	core-03	yes	
+core	edge	move	artifact side	medium	not every edge is man-made (cliff, leaf); WN puts edge under side	core-03	yes	
+core	electric-switch	rename	switch	medium	the everyday switch, once the act sense is dropped	core-08	yes	
+core	emergency	cut	event	medium	an emergency is a crisis (condition); event and condition are disjoint	core-03	yes	
+core	enchantment	drop		medium	"odd ""magical spell state"" sense"	core-03	yes	
+core	enchantress	drop		medium	archaic	core-03	yes	
+core	endurance	resense	05032565 strength	high	"holds ""a state of surviving""; everyday endurance is the power to withstand stress [also core-08: rename survival]"	core-03		reviewers disagree
+core	enemy	resense	10098710 adversary	medium	"everyday enemy is a hostile person, not ""any hostile group"""	core-03	yes	
+core	engagement	resense	07228211 promise	medium	everyday engagement is a promise to marry, not an appointment [also core-01: resense 07228211 promise]	core-03	yes	
+core	engrossment	drop		high	odd abstract noun	core-03	yes	
+core	enthusiasm	resense	07555014 feeling	medium	everyday enthusiasm is a feeling of excitement, not a condition	core-03	yes	
+core	enticement	drop		medium	odd abstract noun	core-03	yes	
+core	entree	resense	07579575 prepared-dish	medium	"holds ""the right to enter""; everyday entree is a dish on a menu"	core-03	yes	
+core	erosion	resense	13475538 natural-event	high	everyday erosion is the wearing-away process, not a condition	core-03	yes	
+core	error	drop		medium	"holds ""misconception""; everyday error is a mistake, which exists with that synset"	core-03	yes	
+core	escort	drop		medium	"holds ""a participant in a date"" (rare); unclear category"	core-03	yes	
+core	esprit-de-corps	drop		medium	foreign phrase, specialist	core-03	yes	
+core	estimation	drop		medium	"holds rare ""respect"" sense; estimate covers the everyday one"	core-03	yes	
+core	examination	resense	00635850 act	medium	everyday examination is close inspection; the test sense is exam	core-03	yes	
+core	executive	resense	10069645 administrator	medium	"everyday executive is a business executive person, not ""persons who administer the law"""	core-03	yes	
+core	expedition	resense	00309647 journey	high	everyday expedition is the journey, not the group	core-03	yes	
+core	expertness	rename	expertise	medium	everyday name for the same sense [also core-03: move state skill]	core-03		reviewers disagree
+core	explaining	drop		medium	duplicate of explanation	core-03	yes	
+core	extension	drop		medium	holds telephone extension (10/12); plain name should go to deadline-extension (WN sense 1)	core-03	yes	
+core	extent	move	state degree	high	WN puts extent under degree; it is not a state	core-03	yes	
+core	extraterrestrial-being	drop		medium	hypothetical being filed under cognition	core-03	yes	
+core	eyeglass	drop		medium	holds monocle; spectacles exists for the everyday sense	core-03	yes	
+core	eyelid	move	tissue body-part	medium	an eyelid is a body part, not a tissue	core-03	yes	
+core	facsimile	resense	03316274 copy	medium	holds the fax machine; everyday facsimile is an exact copy	core-03	yes	
+core	fair	cut	group	medium	a fair is an event; event and group are disjoint	core-03	yes	
+core	fairy	move	belief fictional-character	medium	a creature of folklore, not a belief (Peter's angel note) [also core-01: move belief fictional-character]	core-03	yes	
+core	feedback	cut	event	high	feedback is a reply (information), not an event	core-04	yes	
+core	female-child	rename	girl	medium	everyday name of 10084295 is girl; girl does not exist yet	core-04	yes	
+core	field-hockey-ball	drop		medium	specialist sports leaf	core-04	yes	
+core	figure	resense	06999647 illustration	medium	held sense (sum of money) is rank 7/13; everyday figure is a diagram/picture in a text (WN sense 1)	core-04	yes	
+core	film	cut	show	high	show is a social event; a film is a work (video), not an event [also core-08: same]	core-04	yes	
+core	financial-sacrifice	drop		medium	odd leaf with no tagged sense	core-04	yes	
+core	finder	drop		medium	held sense is a camera viewfinder (rare); nobody looks for it	core-04	yes	
+core	fingerboard	drop		medium	specialist part of a stringed instrument	core-04	yes	
+core	finial	drop		medium	specialist architectural ornament	core-04	yes	
+core	finish	resense	04700642 appearance	medium	held sense (finish line) is rare; WN sense 1 is a surface finish	core-04	yes	
+core	fire	resense	07302836 event	high	held sense is a fireplace with a fire (4/9); everyday fire is something burning (WN 1); combustion is already held by flame	core-04	yes	
+core	fireplace	cut	device	medium	a fireplace is a recess in a wall (enclosure/structure), not a device	core-04	yes	
+core	firework	cut	explosive	medium	explosive is a chemical substance; a firework is a device containing one	core-04	yes	
+core	first-step	drop		medium	vague leaf	core-04	yes	
+core	fish-meat	move	substance seafood	medium	the flesh of fish as food is seafood, not just a substance [also core-02: move substance food]	core-04	yes	
+core	flak	drop		medium	informal synonym of criticism	core-04	yes	
+core	flat	drop		high	held sense is a flat tyre (5/7); everyday flat (02726305) is already held by apartment	core-04	yes	
+core	float	drop		medium	held sense is a plasterer's tool (5/7); rare sense nobody looks for	core-04	yes	
+core	floor	split	storey | 03365592 artifact	medium	held sense is a storey (keeps basement, loft); everyday floor is the surface walked on (WN 1), now floor-surface	core-04		touches a name the 2026-10-07 renames decided (Peter)
+core	floor-surface	drop		medium	merged into plain floor by the floor split	core-04		touches a name the 2026-10-07 renames decided (Peter)
+core	fluctuation	drop		medium	vague quality leaf	core-04	yes	
+core	flux	drop		medium	specialist metallurgy sense	core-04	yes	
+core	fond-regard	rename	affection	medium	everyday name of 07545161 is affection; affection does not exist yet	core-04	yes	
+core	footboard	cut	device	medium	a bed's footboard is a panel, not a device	core-04	yes	
+core	footstep	resense	07383823 noise	medium	held sense (distance of a step) is rare; WN 1 is the sound of a step	core-04	yes	
+core	foray	drop		medium	specialist military leaf; attack chain is wrong anyway (Peter)	core-04	yes	
+core	forte	drop		medium	rare abstract leaf (asset of special worth)	core-04	yes	
+core	fossil	move	physical-object natural-object	medium	a fossil occurs naturally	core-04	yes	
+core	fountain	drop		medium	held sense is a plumbing fixture (4/4); everyday fountain (03388043) is ornamental-fountain	core-04	yes	
+core	freeze	drop		medium	vague leaf (suspension of progress)	core-04	yes	
+core	frequency-band	drop		medium	specialist radio leaf	core-04	yes	
+core	friend	resense	10112591 person	high	held sense is ally (rank 2/5); everyday friend is someone you know well and trust (WN 1); peer is wrong	core-04	yes	
+core	front	move	artifact side	medium	the front is a side, not an artifact (pairs with rear)	core-07	yes	
+core	fryer	drop		medium	held sense is a frying chicken; the everyday fryer appliance has no synset	core-04	yes	
+core	functioning	drop		medium	vague process leaf	core-04	yes	
+core	fundamental-law	rename	constitution	low	everyday name is constitution, but that name holds the 'composition' sense; swap if Peter agrees [also core-02: rename constitution]	core-04		
+core	funeral-directing	drop		medium	odd leaf with no tagged sense	core-04	yes	
+core	gap	resense	09379111 empty-space	medium	a gap between things is not an artifact; WN opening/gap sits under empty-space's synset	core-04	yes	
+core	garden	resense	03417345 plot	high	held sense is the plants grown (2/3); everyday garden is the plot of ground (WN 1), whose WN parent is plot	core-04	yes	
+core	garlic-press	move	mechanical-press utensil	medium	a garlic press is a kitchen utensil, not a machine	core-04	yes	
+core	gas	split	gaseous-state | 14877585 fluid	low	Peter kept gas as the state of matter (v9) but now says air is a gas; air ⊑ gas would make air a state [also core-01: split gaseous-state | 14877585 fluid]	core-04		
+core	gear-tooth	drop		medium	specialist part leaf	core-04	yes	
+core	gearing	drop		medium	specialist duplicate of gear	core-04	yes	
+core	gene	cut	sequence	medium	sequence is a serial arrangement (group); a gene is a DNA segment (natural-object)	core-04	yes	
+core	genus-pan	drop		high	taxonomic genus, specialist	core-04	yes	
+core	geometric-base	drop		medium	specialist geometry leaf	core-04	yes	
+core	ghost	move	agent disembodied-spirit	medium	WN parent; agent makes a ghost a real actor (the belief link is Peter's angel question)	core-04		target disembodied-spirit does not exist
+core	globe	resense	03440512 model	medium	held sense is a spherical shape (sphere covers it); everyday globe is the map of the earth (geography's terrestrial-globe would merge)	core-04	yes	
+core	glove-finger	drop		medium	odd part leaf	core-04	yes	
+core	good-fortune	resense	14473655 luck	high	Peter: luck ⊑ state; good fortune is good luck, not a process	core-04	yes	
+core	good-name	drop		medium	duplicate of reputation	core-04	yes	
+core	good-repute	drop		medium	duplicate of reputation, circular gloss	core-04	yes	
+core	gossip	move	act information	medium	gossip is a report (information); rumor below it inherits [also core-07: same]	core-04	yes	
+core	gouge	drop		medium	specialist woodworking tool	core-04	yes	
+core	gourd	resense	12158031 botanical-fruit	medium	held sense is a bottle; everyday gourd is the hard-rinded fruit	core-04	yes	
+core	gradation	drop		medium	vague leaf	core-04	yes	
+core	grade	rename	gradient	medium	held sense is the gradient of a slope (3/9, keeps upgrade); everyday grade (a mark) is held by mark	core-04	yes	
+core	grain-particle	move	material physical-object	medium	a grain is a small piece, not a material	core-04	yes	
+core	grandma	rename	grandmother	medium	plain everyday name of 10142747	core-04	yes	
+core	green	move	attribute color	high	a color (Peter on ash-gray: color?) [also core-01: move attribute color]	core-04	yes	
+core	greeting	cut	event	medium	a greeting is an expression (information), as feedback	core-04	yes	
+core	grill	cut	structure	medium	the everyday grill is a cooking appliance, not a structure	core-04	yes	
+core	grimace	move	event gesture	medium	a facial gesture (WN facial expression), not a bare event	core-04	yes	
+core	grinder	drop		medium	held sense is a regional sandwich name; everyday grinder is a machine (grinding-machine exists)	core-04	yes	
+core	grip	resense	00812526 act	medium	held sense (intellectual hold) is 6/7; WN 1 is the act of grasping	core-04	yes	
+core	groover	drop		medium	specialist tool	core-04	yes	
+core	ground	resense	14842992 material	medium	held sense is a picture's background (6/11); WN 1 is held by land; next everyday is earth/ground material	core-04	yes	
+core	ground-cloth	drop		medium	specialist camping leaf	core-04	yes	
+core	ground-stake	drop		medium	odd name with no tagged sense	core-04	yes	
+core	groundnut-oil	rename	peanut-oil	medium	everyday name of 07674749	core-04	yes	
+core	grounds	drop		medium	rare abstract sense (basis) nobody looks for	core-04	yes	
+core	guidepost	drop		medium	figurative sense; the everyday signpost is not this node	core-04	yes	
+core	guinea-pig	resense	02364673 mammal	medium	everyday guinea pig is the pet rodent, not an experimental subject	core-04	yes	
+core	hand	drop		high	held sense is physical assistance (14/14); the everyday hand is held by manus [also core-05: same]	core-04	yes	
+core	handball	resense	00479440 sport	medium	everyday handball is the game, not the ball	core-04	yes	
+core	handrail	cut	building-material	medium	a railing is an object; keeps physical-barrier (needed if building-material moves)	core-02	yes	
+core	harvest	resense	01015310 activity	medium	held sense is the season (4/4); crop holds the yield, so harvest is the gathering	core-04	yes	
+core	head	drop		high	held sense is a coin's obverse (28/33); the body part is held by caput [also core-02: rename obverse]	core-04	yes	
+core	headroom	drop		medium	specialist leaf	core-04	yes	
+core	heart-card	drop		medium	odd leaf (a card of the hearts suit)	core-04	yes	
+core	heat	resense	05016171 temperature	medium	held sense is an emotional trait (4/7); everyday heat is hotness (physics' heat-energy holds the energy sense)	core-04	yes	
+core	heated-exchange	drop		medium	odd name, no tagged sense	core-04	yes	
+core	here-and-now	drop		medium	vague leaf	core-04	yes	
+core	hero	move	leader person	medium	a hero need not be a leader	core-04	yes	
+core	hideaway	drop		medium	vague place leaf	core-04	yes	
+core	hindrance	drop		medium	held sense (structure) is wrong for most hindrances; vague	core-04	yes	
+core	hobby	drop		high	held sense is a hobbyhorse toy; the everyday sense 00432689 is held by avocation	core-04	yes	
+core	hog	drop		low	same synset as pig once pig takes the animal sense; merge hog into pig	core-06		
+core	holiday	cut	event	medium	a holiday is a day (time-period); the event parent makes every day off an event	core-04	yes	
+core	home	resense	08559508 residence	medium	held sense is a care institution (9/9); everyday home is where you live (WN 1, under residence)	core-04	yes	
+core	hope-chest	drop		medium	archaic leaf	core-04	yes	
+core	hopeful-anticipation	drop		medium	odd duplicate of hope	core-04	yes	
+core	horizontal-bar	drop		medium	specialist gymnastics leaf	core-04	yes	
+core	humanness	drop		medium	vague abstract leaf (quality of being human)	core-05	yes	
+core	icing	cut	decoration	medium	icing is food; decoration brings artifact/physical-object	core-05	yes	
+core	ideal	resense	05923696 idea	medium	everyday ideal is the idea of perfection, not a paragon person	core-05	yes	
+core	identicalness	drop		medium	odd abstract leaf; sameness is a relation	core-05	yes	
+core	image-projection	drop		medium	odd leaf; an act filed under information	core-05	yes	
+core	imperativeness	drop		medium	odd abstract leaf	core-05	yes	
+core	impetus	drop		medium	vague figurative leaf filed under physical force	core-05	yes	
+core	impression	resense	05916739 idea	medium	everyday impression is a vague idea/belief, not outward appearance	core-05	yes	
+core	impudence	drop		medium	rare sense (an impudent statement); everyday is a trait	core-05	yes	
+core	incertitude	rename		low	rare word; this sense is doubt/uncertainty, and uncertainty (with child doubt) already exists: merge, keeping misgiving	core-05		rename target [] exists or is missing
+core	indemnity	drop		medium	specialist leaf (legal protection against loss)	core-05	yes	
+core	index	rename	index-finger	high	holds the finger sense; plain index is a book index or a numerical index	core-05	yes	
+core	indigence	rename	poverty	medium	rare word; poverty is the plain name (WN 14493145 its hypernym)	core-05	yes	
+core	infection	resense	14174549 illness	medium	everyday infection is the pathological state, not a transmission incident	core-05	yes	
+core	influence-effect	drop		medium	made-up name, vague leaf	core-05	yes	
+core	influential-contact	drop		medium	made-up name, vague leaf	core-05	yes	
+core	infrastructure	resense	03569964 artifact	medium	everyday infrastructure is roads, utilities and facilities	core-05	yes	
+core	inhibition	drop		medium	specialist psychology sense, filed as an activity	core-05	yes	
+core	innovation	drop		medium	vague; invention takes its synset 03582658 (see invention)	core-05	yes	
+core	insert	drop		medium	vague leaf (an artifact that is inserted)	core-05	yes	
+core	insistence	drop		medium	vague act; support/assist parent is wrong	core-05	yes	
+core	insurance-coverage	drop		medium	odd specialist leaf	core-05	yes	
+core	integration	drop		medium	rare specialist sense (racial integration); word is ambiguous	core-05	yes	
+core	intended-use	drop		medium	made-up name, vague attribute leaf	core-05	yes	
+core	intent	drop		medium	rare sense (meaning of a communication); everyday sense is purpose's	core-05	yes	
+core	intention	drop		medium	everyday sense (05982152) is held by purpose; node holds the act of intending	core-05	yes	
+core	interest	split		low	everyday interest is curiosity/a hobby; node holds money interest used by economics; also interest is income to the lender, so outgo parent is one-sided	core-05		split needs Q | WN30 PARENTS
+core	internet	move	artifact system-instrumentality	medium	the internet is a system of interconnected artifacts	core-05	yes	
+core	intervention	resense	01240210 act	medium	everyday intervention is the act of intervening, not foreign policy	core-05	yes	
+core	intro	drop		medium	informal duplicate of introduction	core-05	yes	
+core	introductory-text	drop		medium	made-up name for primer, odd leaf	core-05	yes	
+core	invasion	resense	00976531 military-operation	medium	everyday invasion is an army invading; current sense is any entry into an area	core-05	yes	
+core	invention	resense	03582658 artifact	medium	everyday invention is the new device; current cognition+event parents are AND across branches	core-05	yes	
+core	ironware	drop		medium	archaic collective leaf	core-05	yes	
+core	isotropy	drop		medium	specialist physics leaf	core-05	yes	
+core	item	resense	03588414 physical-object	medium	everyday item is an individual unit (on a list or for sale), not an isolated fact	core-05	yes	
+core	iteration	drop		medium	specialist computing leaf, unused by packs	core-05	yes	
+core	javelin	cut	spear	medium	spear brings weapon; a sports javelin is not a weapon (OR, not AND)	core-05	yes	
+core	jelly	split	jelly-substance | 07643981 dessert	medium	everyday jelly is the gelatin dessert; petroleum-jelly stays under the substance sense	core-05	yes	
+core	jet	resense	03595860 airplane	high	everyday jet is the jet plane, not a squirt of liquid	core-05	yes	
+core	jig	drop		medium	rare sense (fishing lure); everyday jig is a dance	core-05	yes	
+core	job-placement	drop		medium	made-up name, odd leaf	core-05	yes	
+core	joint	drop		high	rare sense (a disreputable place); the body joint is held by articulation [also core-01: drop ]	core-05	yes	
+core	judging	drop		medium	duplicate-ish cognitive process of judgment, rare leaf	core-05	yes	
+core	judgment	cut	information	high	the act of judging is an act, not information (AND across branches)	core-05	yes	
+core	judgment-of-conviction	drop		medium	specialist legal leaf	core-05	yes	
+core	judicial-opinion	drop		medium	specialist legal document leaf	core-05	yes	
+core	juicer	cut	kitchen-appliance	medium	gloss is a hand squeezer (utensil); appliance and utensil are alternative readings	core-05	yes	
+core	jurisprudence	resense	06161718 philosophy	medium	swap with law: jurisprudence is the philosophy of law	core-05	yes	
+core	justification	cut	circumstance	medium	a justification is a reason (information), not a circumstance [also core-02: cut circumstance]	core-05	yes	
+core	keep	drop		high	rare sense (one's livelihood); everyday keep is the castle tower	core-05	yes	
+core	kerosene	cut	compound	medium	kerosene is a mixture of hydrocarbons, not a chemical compound	core-05	yes	
+core	kettle	cut	pan	medium	a kettle is a pot, not a pan	core-05	yes	
+core	kick	resense	00136329 blow	high	everyday kick is a blow with the foot, not the stimulation of a drink	core-05	yes	
+core	kid	resense	09917593 person	medium	everyday kid is a young person; young goat is rank 5/5	core-05	yes	
+core	knight	resense	10238375 man	medium	everyday knight is the person, not the chess piece	core-05	yes	
+core	label	cut	symbol	medium	gloss is a physical marker attached to an object; symbol brings information	core-05	yes	
+core	lane	move	artifact road	high	a lane is a narrow road	core-05	yes	
+core	latent-hostility	drop		medium	specialist psychology leaf	core-05	yes	
+core	law	resense	08441203 rule	medium	everyday law is the body of rules (ai pack's regulation-of-AI needs that); current sense is the philosophy of law	core-05	yes	
+core	leaf-blade	drop		medium	specialist botanical leaf	core-05	yes	
+core	leather	cut	artifact	medium	leather is a material, not an object; artifact brings physical-object	core-05	yes	
+core	leg	resense	05560787 limb	high	everyday leg is the human limb, not a furniture support	core-05	yes	
+core	legal-power	drop		medium	specialist leaf (jurisdiction)	core-05	yes	
+core	legal-procedure	drop		medium	made-up name, vague leaf	core-05	yes	
+core	legal-restraint	drop		medium	made-up name, vague leaf	core-05	yes	
+core	legislation	resense	06535222 rule	medium	everyday legislation is the laws enacted; current act+information parents are AND across branches	core-05	yes	
+core	leisure	resense	15137676 time-period	medium	everyday leisure is free time	core-05	yes	
+core	lengthiness	drop		medium	odd abstract leaf	core-05	yes	
+core	level	drop		medium	rare abstract sense; everyday senses are held by degree and floor	core-05	yes	
+core	light	split	light-source | 11473954 physical-phenomenon	medium	everyday light is visible light; lamps and bulbs stay under light-source	core-05	yes	
+core	line	resense	08593262 place	medium	current sense (a conceptual distinction) is rank 29/30; geography's great-circle and rhumb-line are WN children of this line	core-05	yes	
+core	lineation	drop		medium	odd leaf	core-05	yes	
+core	linguistic-context	drop		medium	specialist linguistics leaf	core-05	yes	
+core	literary-works	drop		medium	made-up name; literature takes this sense	core-05	yes	
+core	literature	resense	06364641 information	medium	everyday literature is creative writing, not its academic study	core-05	yes	
+core	lobby	resense	02715513 room	low	everyday lobby is the entrance hall (held by anteroom); pressure-group sense is rare in speech	core-05		
+core	looking-glass	drop		medium	archaic synonym of mirror	core-05	yes	
+core	loss-leader	drop		medium	specialist commerce leaf	core-05	yes	
+core	lotion	move	artifact cosmetic	medium	a lotion is a cosmetic preparation (gloss)	core-05	yes	
+core	love	resense	07543288 emotion	high	everyday love is the emotion, not an object of affection	core-05	yes	
+core	luggage-rack	move	carrier rack	high	luggage rack is a rack; carrier holds the same rare rack sense	core-02	yes	
+core	machete	cut	weapon	medium	machete is a knife used as a weapon OR for cutting vegetation; not every machete is a weapon	core-05	yes	
+core	mag	drop		high	abbreviation duplicate of magazine	core-05	yes	
+core	magazine	resense	06595351 periodical	medium	gloss is the physical copy but the node sits under periodical; take the publication sense (from mag)	core-05	yes	
+core	magnetic-storage-medium	drop		medium	specialist leaf	core-05	yes	
+core	male-child	rename	boy	medium	boy is the plain name [also core-01: cut animal] [also core-05: move animal human]	core-05		reviewers disagree
+core	maltreatment	drop		low	same synset as abuse after its re-sense; merge into abuse, with torture then ⊑ abuse	core-01		drop of a node with children or users
+core	mangosteen	cut	commodity	medium	no other fruit has commodity; disjoint extra parent	core-05	yes	
+core	mannequin	resense	03717921 model	medium	everyday mannequin is the display dummy, not a fashion model	core-05	yes	
+core	manus	rename	hand	medium	hand is the plain name for this body part; core's hand holds a rare sense (physical assistance) [also core-04: rename hand]	core-05	yes	
+core	mar	drop		medium	a lone month under an abbreviation; the other months are not in core	core-05	yes	
+core	marching-music	drop		medium	specialist genre leaf	core-05	yes	
+core	margin	move	magnitude empty-space	medium	the page margin is a blank space, not a magnitude	core-05	yes	
+core	market-demand	drop		medium	made-up name, vague leaf filed as a process	core-05	yes	
+core	marriage	resense	13963970 status	medium	everyday marriage is the married state; the ceremony is wedding	core-05	yes	
+core	marsh	move	physical-object land	medium	marsh is low-lying wet land	core-05	yes	
+core	matrimony	drop		medium	marriage takes its sense	core-05	yes	
+core	matter-of-concern	drop		medium	made-up name, vague leaf filed as a condition	core-05	yes	
+core	mayor	move	authorities official	high	authorities is not a person (Peter); a mayor is an official [also core-01: move authorities official]	core-05	yes	
+core	means	drop		medium	vague leaf (an instrumentality)	core-05	yes	
+core	medium	rename	mass-media	medium	node holds the mass-media sense; plain medium is a means or a middle size	core-05	yes	
+core	melodic-theme	drop		medium	specialist music leaf	core-05	yes	
+core	menace	rename	threat	medium	threat is the plain name of this sense	core-05	yes	
+core	mental-association	drop		medium	made-up name, specialist leaf	core-05	yes	
+core	message	move	document information	high	"document is ""writing"", but message covers spoken and signaled ones; voice-message and broadcast would become writing [also core-01: move document information] [also core-08: same]"	core-06	yes	
+core	metal	cut	chemical-element	low	AND with chemical-element leaves steel and bronze out, which speakers call metals	core-06		
+core	microtome	drop		medium	specialist laboratory instrument	core-06	yes	
+core	middleman	resense	10222497 person	medium	"everyday middleman is an intermediary trader, not a ""contact"""	core-06	yes	
+core	mile	resense	13651218 definite-quantity	medium	"everyday mile is the unit of length, not ""a large distance""; or drop if units stay in the dimension registry"	core-06	yes	
+core	military-control	rename	military-occupation	medium	same synset (occupation, military control); the name is odd	core-06	yes	
+core	military-service	rename	armed-service	medium	same synset; everyday military service is serving in the forces, not a branch	core-06	yes	
+core	military-strike	parent+	military-operation	medium	keeps its military reading after attack becomes general	core-01	yes	
+core	minority	resense	07966570 group	low	minority ⊑ number while majority ⊑ amount; everyday also the minority group (07966570)	core-06		
+core	misgiving	resense	07525555 feeling	medium	everyday misgiving is uneasiness or apprehension, not distrust of someone's honesty	core-06	yes	
+core	mix	resense	07882886 foodstuff	medium	"""an event that combines things"" is odd; everyday mix is a prepared mixture (cake mix)"	core-06	yes	
+core	model	split		low	plain model reads as a fashion model, a product type or a theoretical model; this one is a physical replica with children (figurine, marionette); scale-model?	core-06		split needs Q | WN30 PARENTS
+core	molding	cut	building-material	medium	a decorative strip is an object; keeps decoration (needed if building-material moves)	core-02	yes	
+core	molecule	move	substance particle	medium	a molecule is a particle (a body), not a substance [also core-01: move substance particle]	core-06	yes	
+core	monetary-wealth	drop		medium	odd name, duplicates money and wealth	core-06	yes	
+core	mortgage	move	possession loan	medium	everyday mortgage is a loan secured on property; loan exists under debt	core-06	yes	
+core	mother-nature	drop		medium	personification, vague; nature covers it	core-06	yes	
+core	mug	cut	device	medium	a mug is a vessel (cf. cup ⊑ container), not a device	core-06	yes	
+core	multiplexer	drop		medium	specialist electronics	core-06	yes	
+core	murder	move	act crime	medium	unlawful killing is a crime; crime exists under activity	core-06	yes	
+core	music-band	rename	band	medium	after band is dropped; band is the everyday name for a music band	core-01	yes	
+core	musician	resense	10340312 artist	low	"gloss is WN's ""composes or conducts"" sense, but singer is a child; everyday is someone who plays music (10340312); widen the gloss"	core-06		
+core	natural-depression	move	physical-object landform	medium	a sunken geological formation is a landform; valley already sits under both	core-06	yes	
+core	natural-spring	move	physical-object natural-object	medium	a natural flow of ground water is a natural object	core-06	yes	
+core	natural-world	drop		medium	duplicate of nature once nature takes the natural-world sense	core-06	yes	
+core	nature	resense	09366762 natural-object	medium	"everyday nature is the natural world, not ""essential qualities"""	core-06	yes	
+core	necessity	resense	14450691 need	medium	"""anything indispensable"" ⊑ physical-object is false of time or love; use the condition sense"	core-06	yes	
+core	nerve	move	tissue body-part	medium	a nerve is a bundle of fibres, a body structure, not a tissue	core-06	yes	
+core	net	split	sports-net | 03819595 fabric	medium	plain net is a mesh of string or rope (fishing net); the tennis-net sense keeps volleyball-net	core-06	yes	
+core	network	resense	08434259 system	medium	everyday network is an interconnected system (computer, social), not only a broadcasting chain; web holds the same gloss	core-06	yes	
+core	newspaper	move	series periodical	high	newspaper is a periodical; frees series for its everyday sense	core-08	yes	
+core	node	drop		medium	"vague ""connecting point""; the everyday uses are specialist"	core-06	yes	
+core	nomination	cut	information	medium	the act of naming a candidate is an act; information is the other reading	core-06	yes	
+core	nonpayment	resense	13300411 act	medium	everyday nonpayment is the failure to pay, not the resulting loss	core-06	yes	
+core	normal	drop		medium	"vague ""something regarded as a normative example""; an adjective as a name"	core-06	yes	
+core	note	cut	indication	medium	"""a brief written record"" is a document; indication is the other reading"	core-06	yes	
+core	notebook-computer	drop		medium	duplicate of laptop	core-06		a pack refines it (computing)
+core	nowadays	rename	present-time	medium	nowadays is an adverb; the node is the present	core-06	yes	
+core	number-one-wood	drop		medium	specialist name for a golf driver	core-06	yes	
+core	nutcracker	move	bar hand-tool	medium	a nutcracker is a hand tool, not a bar (cf. Peter on accelerator ⊑ bar) [also core-01: move bar hand-tool]	core-06	yes	
+core	objective-lens	drop		medium	specialist optics part	core-06	yes	
+core	observation	resense	00879759 activity	medium	"everyday observation is the act of watching (like gaze, glance), not ""facts learned"""	core-06	yes	
+core	occasion	drop		low	everyday occasion is a special event, held by social-occasion; merge social-occasion into occasion?	core-06		
+core	occlusion	rename	blockage	medium	same synset; occlusion is the medical or specialist word	core-06	yes	
+core	oeuvre	drop		medium	literary term	core-06	yes	
+core	offense	drop		medium	rare military sense; crime holds the everyday sense	core-06	yes	
+core	olfactory-property	rename	odor	medium	same synset (odor, smell, scent); the name is technical	core-06	yes	
+core	one-half	rename	half	medium	the everyday name of the fraction	core-06	yes	
+core	opinion	resense	05945642 belief	medium	everyday opinion is a view one holds, not a message; guess and opposing-view fit	core-06	yes	
+core	opinion-poll	cut	thinking	low	information AND thinking mixes the survey and its results; pick one	core-06		
+core	orange-color	move	attribute color	high	a colour; color exists and has no children (cf. Peter on ash-gray) [also core-01: move attribute color]	core-06	yes	
+core	organizer	resense	10383237 person	high	everyday organizer is the person who organizes; the PDA sense is rare	core-06	yes	
+core	origin	resense	08507558 place	low	ancestry sense is rare; everyday origin is the source or beginning of something (08507558 or 13559177)	core-06		
+core	ornamental-fountain	rename	fountain	medium	everyday name; after fountain (plumbing sense) is dropped	core-04	yes	
+core	oscilloscope	drop		medium	specialist laboratory equipment	core-06	yes	
+core	otoscope	drop		medium	specialist medical instrument, not used by medicine	core-06	yes	
+core	outgo	rename	expenditure	medium	same synset; outgo is a rare word, and the node has 12 children	core-06	yes	
+core	packaging	resense		low	everyday packaging is the wrapping material; the node is the packing business	core-06		resense needs a WN30 offset
+core	pain-in-the-neck	drop		medium	idiom	core-06	yes	
+core	palm	rename	palm-tree	low	plain palm also reads as the palm of the hand; palm-tree?	core-06		
+core	paradiddle	drop		high	drum rudiment, specialist	core-06	yes	
+core	parameter	drop		medium	vague; via factor ⊑ agent it becomes a causal agent	core-06	yes	
+core	parcel	resense	03871083 container	high	everyday parcel is a wrapped package, not an allotment	core-06	yes	
+core	parole	resense	01257701 act	medium	"everyday parole is conditional release from prison, not ""a promise"""	core-06	yes	
+core	paroxysm	drop		medium	literary or medical, leaf	core-06	yes	
+core	partnership	resense	08060694 firm	medium	everyday partnership is the business (or the relationship), not the contract document	core-06	yes	
+core	party	cut	group	high	a party is an event, like meeting; through it banquet and reception-party become groups [also core-01: resense 07447641 event] [also core-07: same]	core-06	yes	
+core	passage	rename	body-passage	medium	the node is the anatomical passage (mouth); plain passage reads as a corridor or a text passage	core-06	yes	
+core	passing	drop		medium	rare sense (passing a test); everyday passing is death or going past	core-06	yes	
+core	past-events	drop		medium	vague; past and history cover it	core-06	yes	
+core	pasta	move	substance foodstuff	high	pasta, noodle, macaroni are foods; substance alone misses food [also core-02: move substance food]	core-06	yes	
+core	pastel	move	attribute color	high	"""pale or light colors"" is a colour [also core-01: move attribute color]"	core-06	yes	
+core	pastime-game	drop		low	duplicates pastime; merge into pastime or game (video-game is under both)	core-06		drop of a node with children or users
+core	pastry	move	substance foodstuff	high	baked foods (pie, tart) are food; substance alone misses food [also core-02: move substance food] [also core-09: move substance food]	core-06	yes	
+core	peace	resense	13970236 state	medium	everyday peace is the absence of war; peace of mind is the rarer reading	core-06	yes	
+core	peacetime	resense	15293227 time-period	medium	peacetime is the period without war; its gloss now duplicates peace's	core-06	yes	
+core	peel	move	material natural-object	medium	the rind of a fruit is a natural object (cf. nutshell), not a material	core-06	yes	
+core	perceptiveness	drop		medium	"vague ""a feeling of understanding"""	core-06	yes	
+core	period	rename	full-stop	medium	plain period reads as a period of time (time-period holds it); the node is the punctuation mark	core-06	yes	
+core	period-of-rule	drop		medium	duplicate of reign	core-06	yes	
+core	personal-knowledge	drop		medium	vague	core-06	yes	
+core	personal-reaction	drop		medium	"vague ""a response that reveals feelings"" [also core-07: rename reaction]"	core-06		reviewers disagree
+core	pest	resense	01314388 animal	high	everyday pest is a destructive insect or animal (cf. pesticide, pest-control), not an annoying person	core-06	yes	
+core	photographic-plate	drop		medium	archaic photographic material	core-06	yes	
+core	photography	move	service activity	low	photography ⊑ service; as a hobby or art it is not work for another (service layer)	core-06		
+core	picket	resense	10431770 demonstrator	medium	everyday picket is a striker posted outside a workplace, not a fence strip	core-06	yes	
+core	pier	resense	03933529 structure	high	everyday pier is a platform built out into the water, not a bridge support	core-06	yes	
+core	pig	resense	02395406 mammal	medium	everyday pig is the animal, not a greedy person; hog holds the same synset, merge them	core-06	yes	
+core	pigeon-pea	drop		medium	specialist crop; bean AND pea AND pulses is also wrong	core-06	yes	
+core	piling	drop		medium	construction term	core-06	yes	
+core	pill	resense	03936568 medication	high	everyday pill is a tablet of medicine, not only the contraceptive	core-06	yes	
+core	pipage	drop		low	same synset as pipe once pipe is re-sensed; move drain to pipe and drop pipage	core-06		drop of a node with children or users
+core	pipe	resense	03944672 tubing	medium	"everyday pipe is the tube that carries water or gas, not ""a hollow cylindrical shape"""	core-06	yes	
+core	pit	resense	09393108 natural-depression	medium	everyday pit is a hole in the ground, not a concealed trap; cavity holds this gloss now	core-06	yes	
+core	pity	resense	07553964 sympathetic-concern	medium	"everyday pity is the feeling of sorrow for others; ""it's a pity"" is the rarer reading"	core-06	yes	
+core	plane	rename	woodworking-plane	medium	plain plane reads as an airplane (airplane holds it); the node is the carpenter's tool	core-06	yes	
+core	plastic	move	substance material	medium	plastic is a material (styrofoam, vinyl)	core-06	yes	
+core	play	rename		low	plain play also reads as a theatrical play (dramatic-play holds it); children's play may need a qualified name	core-06		rename target [] exists or is missing
+core	playground-swing	rename	swing	medium	the everyday swing, once the motion sense is dropped	core-08	yes	
+core	plaything	rename	toy	medium	everyday name	core-07	yes	
+core	pliers	cut	bar	high	pliers are not a rigid bar (cf. accelerator ⊑ bar) [also core-01: cut bar]	core-07	yes	
+core	plumcot	drop		high	specialist hybrid fruit	core-07	yes	
+core	point	resense	08620061 place	medium	held sense 'a V shape' is rare; physics barycenter and space celestial-point use point as a location	core-07	yes	
+core	poker	resense	00494768 game	medium	everyday poker is the card game, not the fire iron	core-07	yes	
+core	policy	split	insurance-policy | 05901508 plan	medium	everyday policy is a plan of action; economics floater-policy keeps the insurance sense	core-07	yes	
+core	polish	drop		medium	rare sense (state of perfection); everyday polish is the substance	core-07	yes	
+core	polish-preparation	rename	polish	medium	the everyday polish, once polish (perfection) is dropped	core-07	yes	
+core	politics	resense	01124508 activity	medium	everyday politics is the affairs of government; disjoint event+relation	core-07	yes	
+core	portland-cement	drop		medium	specialist material name	core-07	yes	
+core	poser	drop		high	rare sense (artist's model); everyday poser is a pretender or a puzzle	core-07	yes	
+core	postage	split	postage-stamp | 13324826 fee	medium	everyday postage is the charge; the stamp sense should then be an artifact like banknote	core-07	yes	
+core	postage-meter	drop		medium	specialist office machine	core-07	yes	
+core	postcard	move	greeting-card correspondence	high	a postcard is not a greeting card	core-07	yes	
+core	pot	rename	marijuana	medium	slang sense; the plain name should be the cooking pot	core-07	yes	
+core	pottery	move	utensil ceramic	medium	pottery is ceramic ware; not every pot or vase is a utensil	core-07	yes	
+core	potty-seat	move	toilet device	medium	toilet ⊑ fixture: a child's potty is not fixed in place	core-07	yes	
+core	pound	drop		medium	rare sense (dog pound, 13/14); everyday pound is a unit or currency	core-07	yes	
+core	power	resense	05190804 attribute	medium	rare sense (a powerful agent); everyday power is controlling influence	core-07	yes	
+core	practical-application	drop		medium	vague act noun	core-07	yes	
+core	preciseness	drop		high	vague nominalization, rare sense	core-07	yes	
+core	predilection	drop		medium	rare word, near-duplicate of preference	core-07	yes	
+core	preponderance	drop		high	vague abstract leaf	core-07	yes	
+core	presentation	resense	00521562 show	medium	rare sense (a visual display); everyday presentation is a show or demonstration	core-07	yes	
+core	president	move	representative leader	medium	a head of state is a leader, not a representative	core-07	yes	
+core	presidentship	drop		medium	rare name; presidency covers it	core-07	yes	
+core	privation	drop		medium	rare word for poverty (indigence exists)	core-07	yes	
+core	prize	move	gift acquisition	medium	a prize is won, not a gift	core-07	yes	
+core	prize-ring	drop		high	archaic duplicate of boxing-ring	core-07	yes	
+core	probe	drop		medium	journalistic sense; placed under thinking, an investigation is not thinking	core-07	yes	
+core	professorship	drop		medium	rare word for an academic post	core-07	yes	
+core	proficiency	drop		medium	vague skill noun like adeptness	core-07	yes	
+core	profile	resense	06516404 information	medium	everyday profile is a biographical sketch; current is information AND a percept	core-07	yes	
+core	profit	resense	13258362 income	medium	rare sense (benefit); everyday profit is money earned	core-07	yes	
+core	program	drop		medium	rare sense (playbill); everyday senses held by plan, broadcast-program, computer-program	core-07	yes	
+core	promise	cut	act	medium	a promise is a commitment said, information; AND act is wrong	core-07	yes	
+core	property	split		low	everyday property is something owned (held by belongings); computing and mathematics use the attribute sense	core-07		split needs Q | WN30 PARENTS
+core	proportion	resense	13815742 ratio	medium	rare sense (harmony); everyday proportion is part-to-whole quotient	core-07	yes	
+core	proposal	resense	07162194 information	medium	everyday proposal is something proposed; act+information AND	core-07	yes	
+core	public-house	rename	pub	medium	everyday name	core-07	yes	
+core	publicity	drop		medium	rare sense; everyday publicity is held by promotional-material	core-07	yes	
+core	pull-chain	drop		medium	niche part	core-07	yes	
+core	quarter	drop		medium	rare sense (city district); everyday quarter is one-fourth, held	core-07	yes	
+core	quartz-glass	drop		medium	specialist material	core-07	yes	
+core	question	cut	act	medium	a question is what is asked, information; AND act is wrong	core-07	yes	
+core	racquetball	drop		medium	the ball of a niche game; the name means the game	core-07	yes	
+core	rainbow	move	curved-shape natural-event	medium	a rainbow is a natural optical event, not a shape (attribute) [also core-07: cut event]	core-07	yes	
+core	rainbow	cut	event	medium	implied by natural-event	core-07	yes	
+core	rake	drop		medium	specialist sense (slant); everyday rake is the tool	core-07	yes	
+core	rake-tool	rename	rake	medium	the everyday rake, once rake (slant) is dropped	core-07	yes	
+core	rally	move	group meeting	medium	a rally is a gathering, an event like meeting (Peter); AND group	core-07	yes	
+core	range	resense	05125377 extent	low	rare sense (grazing land); everyday range is scope or reach, but geography refines range ⊑ geographical-area (mountain range 09403734 instead?)	core-07		
+core	rap	resense	07064055 music	medium	rare sense (a gentle blow); everyday rap is the music	core-07	yes	
+core	reaction	drop		medium	specialist mechanics sense; everyday reaction held by personal-reaction	core-07	yes	
+core	reamer	drop		medium	specialist tool	core-07	yes	
+core	rear	move	artifact side	medium	a rear is a side of something, not an artifact (front ⊑ artifact likewise)	core-07	yes	
+core	reasoning-principles	drop		medium	vague, off-WordNet	core-07	yes	
+core	recapitulation	drop		medium	rare word, duplicate of summary	core-07	yes	
+core	reception	drop		medium	rare sense (broadcast quality)	core-07	yes	
+core	reception-party	rename	reception	medium	the everyday reception, once reception (signal) is dropped	core-07	yes	
+core	recess	drop		medium	rare sense (small concavity)	core-07	yes	
+core	recompense	drop		medium	rare word, act sense	core-07	yes	
+core	record	resense	06647206 information	medium	rare sense (best performance, 6/8); everyday record is a lasting account	core-07	yes	
+core	recovery	resense	07419792 change	medium	everyday recovery is return to a former state, not retrieval	core-07	yes	
+core	red	move	attribute color	high	a colour; color exists with no children (same for blue, green, orange-color, pastel, ash-gray) [also core-01: move attribute color]	core-07	yes	
+core	reference	drop		medium	rare sense; everyday senses held by citation, reference-point	core-07	yes	
+core	refreshment	resense	07574504 food	medium	everyday refreshments are snacks and drinks	core-07	yes	
+core	relish	drop		medium	odd sense (a taste experience); everyday relish is the condiment	core-07	yes	
+core	relish-condiment	rename	relish	medium	the everyday relish, once relish (taste) is dropped	core-07	yes	
+core	renovation	resense	00265119 repair	medium	everyday renovation is the act of renewing, not a state	core-07	yes	
+core	repositing	drop		high	odd word, no everyday use	core-07	yes	
+core	reserve	resense	13368052 supply	medium	rare sense (reticence, 7/7); everyday reserve is something kept for later	core-07	yes	
+core	reservoir	move	lake facility	low	chain: lake ⊑ body-of-water ⊑ natural-object, but a reservoir is man-made	core-07		
+core	residual	drop		medium	rare noun; leftover sense is vague	core-07	yes	
+core	resolution	resense	06511874 document	medium	rank 1 sense is a resolution voted by a meeting; held sense is 11/11 and AND act+information	core-07	yes	
+core	response	drop		medium	rare sense (manner of greeting); everyday response held by reply	core-07	yes	
+core	responsibility	move	act duty	medium	a responsibility is an obligation, not an act	core-07	yes	
+core	rest	resense	01064148 condition	medium	rare sense (a support, 6/7); everyday rest is freedom from activity	core-07	yes	
+core	restitution	drop		medium	rare act sense	core-07	yes	
+core	retailer	move	agent seller	medium	a retailer is a seller	core-07	yes	
+core	reverse	drop		medium	rare sense (a setback)	core-07	yes	
+core	reversion	drop		medium	rare sense; rotation covers turning	core-07	yes	
+core	review	resense	05747582 appraisal	medium	rare sense (practice session, 9/10); everyday review is a re-evaluation (critique holds the article)	core-07	yes	
+core	reward	resense	07295629	low	rare sense (offer of money for finding a criminal); everyday reward is a recompense; parent unclear (acquisition?)	core-07		resense without parents
+core	right	resense	05174653 attribute	medium	rare sense; everyday right is an entitlement (access, right-to-vote fit under it) [also core-01: resense 05174653 attribute]	core-07	yes	
+core	right-to-vote	move	attribute right	medium	a right, once right is the entitlement [also core-01: move attribute right]	core-07	yes	
+core	rightful-claim	drop		medium	vague, off-WordNet	core-07	yes	
+core	risk	resense	14541852 danger	medium	everyday risk is a possibility of loss or harm, not a venture	core-07	yes	
+core	roentgenogram	rename	x-ray	medium	everyday name	core-07	yes	
+core	role-model	move	leader person	medium	a role model is not a leader (chain into ideal)	core-05	yes	
+core	roll	move	cylinder artifact	medium	a roll of paper or film is an object, not a shape (attribute)	core-07	yes	
+core	roofing-tile	cut	building-material	medium	a tile is an object; keeps tile<slab (needed if building-material moves)	core-02	yes	
+core	root	resense	13125117 natural-object	medium	rare sense (where something begins); everyday root is the plant organ (like leaf, stalk)	core-07	yes	
+core	rotary-motion	drop		medium	rare name, near-duplicate of rotation	core-07	yes	
+core	rounder	drop		medium	specialist tool	core-07	yes	
+core	router	drop		medium	specialist woodworking sense; everyday router is computing's network-router	core-07	yes	
+core	sapote	drop		medium	obscure fruit	core-07	yes	
+core	scab	drop		medium	pejorative sense (strikebreaker)	core-07	yes	
+core	scale	split	animal-scale |	low	held sense is fish scale; everyday scale is a measuring scale or extent (scale-of-measurement, weighing-machine)	core-07		split needs a WN30 offset
+core	scene	resense	08645963 place	medium	everyday scene is where something happens (scene of the crime); play-subdivision is like act-of-play	core-08	yes	
+core	scheduling-conflict	drop		medium	vague compound, not a lasting kind; and not a characteristic	core-08	yes	
+core	schema	drop		medium	psychology term, specialist	core-08	yes	
+core	scissors	cut	bar	high	scissors are not a rigid bar; cutter remains [also core-01: cut bar]	core-08	yes	
+core	screen	resense	04152593 video-display	medium	everyday screen is a display screen; the concealing-cover sense is rare	core-08	yes	
+core	sculpture	cut	information	high	a sculpture is a physical work; fine-art already puts it under artifact; reaches statue, bronze, figurine [also core-04: cut information]	core-08	yes	
+core	seafood	move	substance food	high	edible fish and shellfish are food; reaches shrimp, tuna, roe [also core-02: move substance food] [also core-09: same]	core-08	yes	
+core	seashore	move	physical-object landform	high	a shore is a landform and a place, like hill and cliff	core-08	yes	
+core	seating-place	drop		medium	odd name; duplicates seat in everyday use	core-08	yes	
+core	sec	rename	second	medium	the time unit's everyday name, once the ordinal second is dropped	core-08	yes	
+core	second	drop		medium	ordinal-rank sense nobody looks for; frees the name for the time unit	core-08	yes	
+core	sector	resense	07966719 group	medium	everyday sector is part of the economy or society (the public sector)	core-08	yes	
+core	security	split	security-measure | 14539268 safety	medium	everyday security is the state of being safe; precaution sense keeps guard-duty	core-08	yes	
+core	seeded-player	drop		medium	tournament specialist term	core-08	yes	
+core	semblance	drop		high	rare sense ('erroneous mental representation') nobody looks for	core-08	yes	
+core	seminal-fluid	rename	semen	medium	everyday name; same WordNet synset	core-08	yes	
+core	senior	resense	10048218 person	low	name trap: everyday senior is an older person; held sense is a final-year student	core-08		
+core	sensation	resense	05712076 perception	medium	everyday sensation is a bodily perception (a burning sensation); public-excitement sense is minor	core-08	yes	
+core	series	resense	08457976 group	medium	everyday series is things in order (a series of robberies, a TV series); after newspaper moves, 0 children	core-08	yes	
+core	service-department	drop		medium	held sense is a car repair shop; specialist and misleading name	core-08	yes	
+core	settler-colony	drop		medium	specialist political-science notion	core-08	yes	
+core	shade	move	decor artifact	medium	a sunshade or lampshade is a covering, not interior decoration	core-08	yes	
+core	shake	resense	07923297 drink	medium	everyday shake is a milkshake; shingle sense is specialist	core-08	yes	
+core	share	move	legal-document possession	high	a share is a unit of ownership, not a document (the certificate is)	core-08	yes	
+core	shelter	resense	04191595 structure	medium	everyday shelter is any protective structure (bus, bomb, animal shelter); refugee-camp still fits	core-08	yes	
+core	shooting-stick	drop		medium	rare specialist object	core-08	yes	
+core	short-pants	rename	shorts	medium	everyday name; same WordNet synset	core-08	yes	
+core	shot	drop		medium	film-shot sense is specialist; shooting and injection hold the everyday shots	core-08	yes	
+core	shutter	move	building-material artifact	medium	a hinged window blind is an object, not a building material (needed if building-material moves)	core-02	yes	
+core	sign-language-sign	drop		medium	specialist; vague leaf under information	core-08	yes	
+core	sign-of-the-zodiac	drop		medium	astrology, contested; not a place	core-08	yes	
+core	silver-screen	rename	projection-screen	medium	holds the projection screen; 'silver screen' reads as the film industry	core-08	yes	
+core	single-file	drop		medium	idiom ('in single file'), not a kind	core-08	yes	
+core	skeletal-system	rename	skeleton	medium	everyday name; same WordNet synset	core-08	yes	
+core	sketch	resense	04227144 drawing	medium	everyday sketch is a rough drawing; 'descriptive summary' is rare	core-08	yes	
+core	sky	move	atmosphere place	low	sky ⊑ atmosphere ⊑ fluid ⊑ substance makes the sky a substance; is it rather the region overhead? (cf. air ⊑ fluid)	core-08		
+core	slaked-lime	drop		medium	specialist chemical; chemistry pack if needed	core-08	yes	
+core	slope	move	physical-object landform	high	an elevated geological formation is a landform; children cliff, river-bank already landforms	core-08	yes	
+core	slot-machine	rename	coin-machine	medium	holds generic coin-operated machine (vending-machine under it); 'slot machine' reads as the gambling machine	core-08	yes	
+core	smell	resense	05713737 perception	medium	everyday smell is an odour, not the faculty; parallels sound ⊑ perception	core-08	yes	
+core	social-club	rename	club	medium	holds club rank 1 (08227214); after club is renamed	core-02	yes	
+core	solution	resense	06743506 information	medium	everyday solution answers a problem; 'the action of solving' is rare	core-08	yes	
+core	soprano	drop		medium	voice-range sense nobody looks for; the singer is the occupations pack's soprano.person	core-08	yes	
+core	space	resense	08500433 place	medium	everyday space is outer space (space pack, spacecraft); blank-character sense is typographic	core-08	yes	
+core	spatial-direction	rename	direction	medium	everyday name; after direction's drop; used by geography pack	core-03	yes	
+core	sphere-of-influence	drop		medium	political notion, vague	core-08		a pack refines it (geography)
+core	spinal-column	rename	spine	medium	everyday name for the backbone, once the thorn sense is dropped	core-08	yes	
+core	spine	drop		medium	plant-thorn sense held by the plain name; everyday spine is the backbone	core-08	yes	
+core	spinner	drop		medium	fishing-lure specialist term	core-08	yes	
+core	spirit	drop		low	name trap: everyday spirit is a soul or ghost (contested) or liquor; held sense, the atmosphere of a place, is minor	core-08		
+core	spiritualist	drop		medium	contested (medium between living and dead)	core-08	yes	
+core	split	drop		medium	'lengthwise crack in wood' is minor; schism holds the everyday split	core-08	yes	
+core	spontaneous-abortion	rename	miscarriage	medium	everyday name; same sense	core-08	yes	
+core	spreadsheet	resense	- document	medium	everyday spreadsheet is the file of rows and columns; program AND document is two readings	core-08	yes	
+core	spring	rename	coil-spring	medium	plain spring should be the season (like summer, winter, fall); the elastic device keeps a qualified name	core-08	yes	
+core	springtime	rename	spring	medium	the season takes the plain name once the device is renamed coil-spring	core-08	yes	
+core	staff-rod	drop		medium	rare sense; a physical rod filed as a symbol	core-08	yes	
+core	stain	resense	04695176 appearance	high	everyday stain is a discoloured mark, like smudge; microscopy dye is specialist	core-08	yes	
+core	stamp	rename	stamp-device	low	everyday stamp is the postage stamp, held by postage; then rename postage → stamp?	core-08		
+core	stand-base	drop		medium	vague derived leaf	core-08	yes	
+core	statement	split	account-statement | 06722453 information	medium	everyday statement is something stated; financial sense keeps account and invoice (economics pack has financial-statement, maybe the same)	core-08	yes	
+core	station	drop		medium	sentry-post sense is rare; everyday station is held by station-facility	core-08	yes	
+core	station-facility	rename	station	medium	gas station, train station, power station: the everyday station, once the post sense is dropped	core-08	yes	
+core	stepper	drop		medium	stepper motor, specialist engineering term	core-08	yes	
+core	stock	rename	stock-inventory	low	name trap: everyday stock is company shares, held by share-capital (WordNet stock 1); then share-capital → stock?	core-08		
+core	strand	resense	14867858 fiber	medium	everyday strand is a thin fibre (a strand of hair); string-of-beads necklace is rare	core-08	yes	
+core	stroke	move	trouble illness	medium	a stroke is a medical condition (WordNet: ill health), not a distressing event	core-08	yes	
+core	study	resense	00644503 research	medium	everyday study is a piece of research (a recent study found); the room sense is minor	core-08	yes	
+core	style	resense	04928903 property	medium	everyday style is a manner or way of doing; editorial style sheet is specialist	core-08	yes	
+core	subject	drop		medium	held sense is an artist's depicted object; everyday topic and field-of-study already exist	core-08	yes	
+core	subsister	drop		high	'one who lives through affliction': rare, odd	core-08	yes	
+core	suite	move	artifact apartment	medium	a suite of rooms is a kind of apartment (WordNet hypernym)	core-08	yes	
+core	sum	resense	13331198 money	medium	everyday sum is a sum of money; 'final aggregate' is rare	core-08	yes	
+core	surrender	resense	00067707 act	medium	everyday surrender is giving up to an enemy; 'acceptance of despair' is rare	core-08	yes	
+core	surroundings	drop		medium	gloss is 'setting' (a story's setting), not surroundings; everyday surroundings is environment, which exists	core-08	yes	
+core	survival	drop		high	held sense is natural selection, not survival; the staying-alive sense is held by endurance	core-08	yes	
+core	sweatshirt	move	sporting-goods activewear	medium	a sweatshirt is sportswear, not sports equipment	core-08	yes	
+core	swimming-pool	cut	device	high	a pool is not a device; facility and pool remain	core-08	yes	
+core	swing	drop		medium	'moving back and forth' sense is rare; the playground swing is playground-swing	core-08	yes	
+core	switch	drop		medium	"""act of changing"" sense is rare (shift holds it); the electrical switch is electric-switch"	core-08	yes	
+core	swivel	cut	fishing-tackle	high	a swivel coupling is not fishing tackle in general; mechanism remains	core-08	yes	
+core	sympathy	resense	07553301 feeling	medium	everyday sympathy is fellow feeling for someone's sorrow	core-08	yes	
+core	tag	resense	07273136 label	high	everyday tag is a label (price tag); rag sense makes it a fabric	core-08	yes	
+core	talk	cut	information	medium	conversation is an act; talk ⊑ conversation and information is an AND of act and content	core-08	yes	
+core	tamarindo	rename	tamarind	medium	everyday English name; same WordNet synset	core-08	yes	
+core	tapeline	rename	tape-measure	high	same sense; tape-measure is the everyday name	core-09	yes	
+core	target	resense	05981230 goal	low	gloss is the aim-point sense, parents are the archery-target goods sense; everyday target is an aim or goal; Peter to pick	core-09		
+core	tea-leaf	move	herb foodstuff	medium	tea is not a cooking herb; herb drags in seasoning [also core-04: move herb foodstuff]	core-09	yes	
+core	tea-maker	drop		medium	name means a tea machine; perforated-spoon sense nobody looks for	core-09	yes	
+core	tear	move	indefinite-quantity secretion	medium	a tear is a drop of secreted fluid, not an amount	core-09	yes	
+core	telephone-line	resense	04402984 conducting-wire	medium	parent is physical; everyday sense is the telephone wire	core-09	yes	
+core	temper	rename	mood	medium	node holds the mood sense (WN temper/mood/humor); everyday temper is anger	core-09	yes	
+core	tendency	resense	04944048 attribute	medium	everyday tendency is a characteristic likelihood, not a spatial direction (inclination holds the attitude sense)	core-09	yes	
+core	tending	rename	care	medium	holds 00654885 care/attention/tending, the everyday care; medicine uses tending	core-02	yes	
+core	tennis-racquet	move	artifact sporting-goods	medium	a racquet is sports equipment, like ball and target	core-09	yes	
+core	tensity	drop		medium	odd name for physical tautness; nobody looks for it	core-09	yes	
+core	terminal	split	computer-terminal | 04412901 facility	medium	everyday terminal is the airport/bus station; keep the computer sense under a qualified name	core-09	yes	
+core	theatrical-role	move	cognition role	medium	an actor's part is a role, not a cognition	core-09	yes	
+core	theoretical-account	drop		medium	odd name for a scientific model; vague leaf	core-09	yes	
+core	thin-film	drop		medium	specialist engineering term hung directly on physical-object	core-09	yes	
+core	thriftlessness	drop		high	odd trait leaf, like activeness	core-09	yes	
+core	tide	move	event natural-event	high	the tide is a natural phenomenon	core-09	yes	
+core	time-slot	move	amount time-period	medium	a slot is a period of time, sibling of week and shift	core-09	yes	
+core	title	split	legal-title | 06343520 name	medium	everyday title is the name of a book or film; legal-right sense keeps copyright and entitlement [also core-01: move attribute right]	core-09	yes	
+core	tonality	drop		medium	music-theory term (key); specialist leaf	core-09	yes	
+core	tortilla	cut	cake	high	a tortilla is a flatbread, not a sweet cake [also core-02: cut cake]	core-09	yes	
+core	total-darkness	drop		medium	odd compound; dark covers it	core-09	yes	
+core	touch	resense	07409592 event	medium	event+perception is an OR; everyday touch is the contact; faculty is held by sense-of-touch	core-09	yes	
+core	track	resense	06612865 audio	medium	disk-track sense is specialist; path, racetrack and railroad-track hold the other senses, music track is left	core-09	yes	
+core	tracking-chart	drop		medium	invented name for a WN plot sense; nobody looks for it	core-09	yes	
+core	tract	resense	08673395 region	medium	pamphlet sense is rare; everyday tract is a tract of land	core-09	yes	
+core	trade	split	skilled-trade | 01091905 commerce	medium	everyday trade is buying and selling; the craft sense keeps its 11 children	core-09	yes	
+core	traffic	resense	08425303 collection	high	everyday traffic is vehicles on the road, not illicit dealing	core-09	yes	
+core	trail	resense	04466613 path	medium	everyday trail is a path through wild country, not a clue; a trail is a path, not a road	core-09	yes	
+core	train	move	artifact vehicle	high	a train is a vehicle, like railcar and locomotive	core-09	yes	
+core	transmission-line	rename	cable	medium	holds 02934168 cable/line/transmission_line; covers coaxial-cable, power-cable	core-02	yes	
+core	transparency	resense	04702127 attribute	medium	projector-slide sense is dated; everyday transparency is the quality of being clear	core-09	yes	
+core	treasure	resense	13370669 wealth	medium	everyday treasure is hoarded money or jewels; hoard in economics still fits	core-09	yes	
+core	tree-surgery	drop		medium	specialist service leaf	core-09	yes	
+core	trial	resense	01195867 legal-action	medium	everyday trial is a court trial; trial-run sense is rare	core-09	yes	
+core	tribulation	drop		medium	literary leaf; trouble and calamity cover it	core-09	yes	
+core	tribunal	rename	court	medium	holds court rank 1 (08329453); after court is renamed	core-02	yes	
+core	trust	resense	05943066 belief	medium	cartel sense is specialist; everyday trust is confidence in someone	core-09	yes	
+core	trust-relationship	drop		medium	vague leaf; not every trustful relationship is a friendship	core-09	yes	
+core	tube	rename	anatomical-tube	medium	plain tube is a hollow cylinder (held by tubing); this node is the anatomy sense	core-09	yes	
+core	tunny	rename	tuna-fish	low	archaic name for the tuna animal; tuna holds the food sense	core-09		
+core	twelve	drop		low	lone cardinal number in core besides zero; numbers belong in mathematics	core-09		
+core	unit	resense	13583724 definite-quantity	medium	"everyday unit is a unit of measurement, not ""a single undivided whole"""	core-09	yes	
+core	unrest	resense	13979503 condition	medium	everyday unrest is social or political agitation, not a private feeling	core-09	yes	
+core	unsuccessful-person	drop		medium	invented compound for loser; nobody looks for it	core-09	yes	
+core	upgrade	drop		medium	slope-property sense nobody means; everyday upgrade (improvement) has no good parent	core-09	yes	
+core	upholstery	resense	04513827 artifact	high	everyday upholstery is the furniture covering, not the craft	core-09	yes	
+core	upshot	drop		medium	synonym of consequence; vague leaf	core-09	yes	
+core	use	resense	00947128 activity	high	node holds the habit sense; everyday use is the act of using	core-09	yes	
+core	vanity	resense	07508996 pride	medium	everyday vanity is excessive pride, not a dressing table	core-09	yes	
+core	variant	drop		medium	biology-group sense is rare; everyday variant sense is held by version	core-09	yes	
+core	vast-quantity	drop		medium	odd compound; vague leaf	core-09	yes	
+core	vegetation-growth	drop		medium	vague leaf; vegetation covers it	core-09	yes	
+core	vertex	drop		medium	current sense duplicates peak; geometric vertex belongs in mathematics	core-09	yes	
+core	village	resense	08672738 settlement	medium	community+settlement is an OR; everyday village is the place, like town	core-09	yes	
+core	volleyball	resense	00480211 sport	high	everyday volleyball is the game, like football and basketball	core-09	yes	
+core	walker	resense	04545471 device	medium	baby-walker sense is rarest; pedestrian holds the person; walking frame is the common object	core-09	yes	
+core	wallop	drop		medium	colloquial synonym of impact; vague leaf	core-09	yes	
+core	washcloth	cut	tool	high	a washcloth is not a vocational tool; linen and towel suffice	core-09	yes	
+core	water-cooler	move	kitchen-appliance appliance	medium	water coolers stand in offices, not kitchens	core-09	yes	
+core	wave	move	event natural-event	medium	a water wave is a natural phenomenon	core-09	yes	
+core	web	resense	04604276 artifact	medium	everyday web is the World Wide Web (web-page, web-site); network sense is vague [also core-06: resense ]	core-09	yes	
+core	wellbeing	move	destiny state	high	wellbeing is not a destiny (cf. adversity ruling); fixes health too [also core-01: move destiny condition]	core-09	yes	
+core	west	resense	13834399 cardinal-compass-point	medium	everyday west is the direction, like north and south; the West as a bloc is contested [also core-03: drop ]	core-09	yes	
+core	whirligig	drop		medium	archaic toy name	core-09	yes	
+core	wilderness-trail	drop		medium	duplicate of trail after its resense	core-09	yes	
+core	wildlife	move	organism collection	medium	wildlife is a collective, like vegetation; not one organism	core-09	yes	
+core	wimp	drop		medium	colloquial insult; vague leaf	core-09	yes	
+core	window	resense	04587648 structure	high	node holds the rare service-hatch sense; everyday window is held by window-unit	core-09	yes	
+core	window-frame	cut	building-material	medium	a frame is an object; keeps structure (needed if building-material moves)	core-02	yes	
+core	window-unit	drop		high	duplicate of window after its resense	core-09	yes	
+core	wiring	resense	04595855 device	medium	everyday wiring is the circuit of wires, not the installing work	core-09	yes	
+core	withdrawal	resense	01262713 transaction	medium	everyday withdrawal is taking money out; retraction of a position is rarer	core-09	yes	
+core	wonder	resense	07509996 emotion	medium	everyday wonder is the feeling, not a marvel	core-09	yes	
+core	wrapping-paper	move	gift-wrapping wrap	high	inverted: gift-wrapping is a kind of wrapping paper, not its parent	core-09	yes	
+core	zone	move	topographic-point region	medium	a zone is an area, not a point	core-09	yes	

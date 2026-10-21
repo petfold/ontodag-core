@@ -720,3 +720,120 @@ as the v9 sense list did.
   the closure check, by their mixed-branch concepts and small groups.
 - `ontodag`'s modules were not regenerated, so `CORE_VERSION` is unchanged.
 - Nothing is committed.
+
+## The everyday-sense pass (2026-10-22)
+
+Peter read the names beginning with "a" and found the same faults again and
+again:
+- rare WordNet senses on plain names: `auditor` the student,
+  `accommodation` the favour, `account` a statement;
+- several parents read as OR when they mean AND: `adult ⊑ animal person`;
+- odd WordNet chains: `adversity ⊑ destiny`, `angel ⊑ belief`;
+- senses mixed up.
+
+He asked for the lessons to be applied to every letter, with three rules:
+**a plain name means its everyday, most frequent sense**; build a
+**pre-filled audit sheet**; and **shrink core**, since core is for clear,
+unchanging things. Then the same for the packs.
+
+**The sheet.** `tools/sense_audit.py` writes `build/sense-audit.tsv`, one
+row per name:
+- the sense the node holds, with its WordNet rank and SemCor tag count;
+- the everyday sense, from Princeton's core WordNet list of the ~5,000 most
+  frequent word senses, or else WordNet's first sense;
+- the nearest core name a hypernym walk from that sense reaches;
+- flags for rare senses, disjoint parents, parents off WordNet's chain, and
+  rare leaves.
+
+The flags are prompts, not verdicts. The "rare leaf" signal, for example,
+flags almond and aspirin, because SemCor's counts are sparse.
+
+**The reading.** Nine readers (Claude) took about 556 names each and read
+every row with its whole ancestor chain. They wrote decisions in a fixed
+vocabulary: `move`, `cut`, `parent+`, `resense`, `split`, `rename` and
+`drop`. Each carries a confidence (high, medium or low) and a reason. Peter's
+13 comments in `build/coreCOMMENTS.od` and his notes on the "a" names were
+the calibration, and the first reader turned each into a row. Chain errors
+were fixed at their highest wrong link:
+- `building ⊑ dwelling` made every factory a dwelling;
+- `card ⊑ paper` made playing cards a material;
+- the foods hanging bare from `substance` (cake, pasta, seafood) were not
+  food.
+
+**The decisions.** `align/sense-review-v14.tsv` holds 835 core decisions,
+merged, de-duplicated and checked:
+- every target exists;
+- every old parent is a parent;
+- a drop leaves no children and no pack or term user;
+- no rename recreates a name the 2026-10-07 renames retired.
+
+High and medium rows that pass are applied (`apply = yes`). That is 771
+rows:
+- 307 drops
+- 197 resenses
+- 111 moves
+- 79 renames
+- 60 cuts
+- 15 splits
+- 2 additions
+
+The 47 low rows, and the rows that failed a check or on which readers
+disagreed, are Peter's. To overrule one, edit `apply` and run
+`python3 tools/sense_rulings.py` and then `python3 tools/step7.py`.
+
+**Applying.** `tools/sense_rulings.py` replays the applied decisions on a
+copy of the built graphs. From that state it writes
+`align/rulings-v14-ysenses.tsv`, the last rulings file, and the glosses of
+the senses it changed (`align/glosses-v14.tsv`, a generated section). It
+handles three things in order:
+- **Renames and splits** run as rulings (add, move the children, drop), not
+  through the renames table, because renames run before every rulings file
+  and the earlier files name the old senses.
+- **A rename onto a name a drop frees** re-senses the holder in place. For
+  example, the rare `hand` (physical help) takes the body part's parents and
+  `manus`'s children, and `manus` goes. A rerun therefore finds every row
+  done.
+- **Chains** (`pot` → marijuana, then cooking-pot → `pot`) run in order.
+
+step7 learned one rule for this: **a later ruling supersedes what it
+undoes**. Replayed on its own output, an earlier row is done when a later row
+drops its node, or removes or drops the parent it adds. It neither stumbles
+on the dropped node nor re-adds the edge. A pack stub of a name no store
+holds any more is removed. `step7 --check` is clean on the result. A replay
+from the v13 files reproduces every file byte for byte.
+
+**Result for core**: from 5,027 names to 4,732. 355 left: drops, and the old
+names of renames. 60 new names came from renames and splits, such as
+`knowledge`, `index-finger`, `marijuana`, `light-source` and
+`account-statement`. The fifteen top-level branches are unchanged.
+
+**Questions the readers left for Peter** (not applied; one policy each):
+- **Deeds and their content.** About 25 nodes are filed under act (or event)
+  *and* information: answer, promise, judgment, proposal, legislation and
+  others. Only the clearest were fixed.
+- **Supernatural beings.** angel and fairy are now fictional characters.
+  deity and the rest are low rows, waiting on a `supernatural-being` node or
+  a ruling.
+- **`gas`.** Splitting the substance from the state of matter reverses the
+  v9 "gas kept", so it was not applied. air and atmosphere still sit under
+  `fluid`.
+- **Core senses packs trip on.** None of these was changed:
+  - `algorithm ⊑ procedure ⊑ act` makes every algorithm an event;
+  - `number` is the property sense, not the numeric value;
+  - `point` is "a V shape";
+  - `radiation` is radioactivity;
+  - `force` is forcefulness;
+  - `region` covers only the Earth's surface;
+  - `price` is an attribute, not an amount;
+  - `professional` covers the learned professions only;
+  - `operation ⊑ therapy` makes all surgery treatment;
+  - `natural-event` is glossed "all phenomena";
+  - `shape ⊑ attribute` makes every figure an attribute.
+- **Material versus object.** `building-material` holds both cement and
+  handrails, and `paper` holds both paper and its products.
+- **Services layer.** cleaning, housework and photography are filed as
+  services, though they are often done for oneself.
+- **Named single things filed as classes.** Organizations, websites and
+  datasets were dropped from the packs where the readers were sure. Named
+  theorems, named laws, satellite systems and time standards wait for one
+  ruling.

@@ -294,10 +294,14 @@ def main():
     # A rewritten edge that a later ruling changes again (the concept pass
     # moved account-abstraction off concept) is done, not missing.
     ruled = {(r[0], r[1]) for path in RULINGS for r in table(path)}
+    dropped = {(r[0], r[1]) for path in RULINGS for r in table(path) if r[2] == "drop"}
     for pack, sub, old_sup, action, new_parents, relation in table(REWRITES):
         if action == "keep":
             continue
         order, par = graphs[pack]
+        if sub not in par and (pack, sub) in dropped:
+            log.append(f"already  {sub}: {old_sup} -> (rewritten, then dropped by a ruling)")
+            continue
         if (pack, sub) in ruled and sub in par and old_sup not in par[sub]:
             log.append(f"already  {sub}: {old_sup} -> (rewritten, then ruled on)")
             continue
@@ -339,8 +343,33 @@ def main():
 
     disowned = {(r[0], r[1]): set(r[4].split()) or {"*"}
                 for path in RULINGS for r in table(path) if r[2] == "disown"}
-    for path in RULINGS:
-        for pack, sub, action, old, new, *note in table(path):
+    # A later ruling supersedes what it undoes (the everyday-sense pass,
+    # 2026-10-22, re-files and drops names earlier files placed). Replayed on
+    # its own output, an earlier row must not re-add an edge a later row
+    # removes, nor stumble on a node a later row drops: it is done.
+    sequence = [(path, r) for path in RULINGS for r in table(path)]
+    later_rows = {}
+    for i, (_, r) in enumerate(sequence):
+        later_rows.setdefault((r[0], r[1]), []).append((i, r[2], r[3], r[4].split()))
+
+    def later(i, pack, sub):
+        return [(a, o) for j, a, o, _ in later_rows.get((pack, sub), []) if j > i]
+
+    def readded(i, pack, sub):
+        return {x for j, a, _, n in later_rows.get((pack, sub), []) if j > i
+                and a in ("move", "parent+", "add") for x in n}
+
+    def dropped_later(i, pack, name):
+        return any(a == "drop" for k in (pack, "core") for a, _ in later(i, k, name))
+
+    def superseded(i, pack, sub, targets):
+        """The targets a later row removes (moves or cuts away), or drops."""
+        gone = {o for a, o in later(i, pack, sub) if a in ("move", "cut")}
+        return {x for x in targets if x in gone or dropped_later(i, pack, x)}
+
+    generated = RULINGS[-1]                  # rows written from a simulated graph
+    for i, (path, (pack, sub, action, old, new, *note)) in enumerate(sequence):
+        if True:
             order, par = graphs[pack]
             if sub in PRELUDE and sub not in par and action not in ("add", "drop"):
                 par[sub] = sorted(PRELUDE[sub]) or ["*"]   # a declaration, read back
@@ -349,8 +378,37 @@ def main():
                     and set(par.get(sub, [])) == disowned[(pack, sub)]):
                 log.append(f"already  {action} {sub} ({pack} has disowned its copy)")
                 continue
+            if action != "drop" and sub not in par and dropped_later(i, pack, sub):
+                log.append(f"already  {action} {sub} (a later ruling drops it)")
+                continue
             want = new.split()
+            undone = superseded(i, "core" if action == "promote" else pack, sub, want) \
+                if action in ("add", "parent+", "move", "promote") else set()
+            if undone:
+                want = [x for x in want if x not in undone]
+                if action == "promote" and not want and sub in graphs["core"][1]:
+                    log.append(f"already  promote {sub} ({pack}; a later ruling places it)")
+                    continue
+                if action == "move" and not want and old in readded(i, pack, sub):
+                    log.append(f"already  {sub}: {old} -> {new} (a later ruling puts it back)")
+                    continue
+                if action == "move" and not want:
+                    if old in par.get(sub, []):
+                        rest = [x for x in par[sub] if x != old]
+                        par[sub] = rest or ["*"]
+                        log.append(f"applied  {sub}: {old} -> (a later ruling places it)")
+                    else:
+                        log.append(f"already  {sub}: {old} -> {new} (a later ruling places it)")
+                    continue
+                if action == "parent+" and not want:
+                    log.append(f"already  {sub} ⊑ {new} (a later ruling changes it)")
+                    continue
+                if action == "add" and not want:
+                    want = ["*"]
             if action == "add":
+                if sub in par and want == ["*"]:
+                    log.append(f"already  add {sub} (a later ruling places it)")
+                    continue
                 if sub in par:
                     log.append(f"already  add {sub}" if set(want) <= implied(sub, pack)
                                else f"ERROR    add {sub}: exists with {par[sub]}")
@@ -384,6 +442,10 @@ def main():
                         log.append(f"already  {sub}: {old} -> {new}")
                         if target and par[sub] != ["*"]:
                             ensure(par, sub, target)
+                    elif path == generated and target:
+                        # the old parent went with a row this pass supersedes
+                        ensure(par, sub, target)
+                        log.append(f"applied  {sub}: ({old} already gone) -> {new}")
                     else:
                         errors.append(f"{sub} ⊑ {old} is not in {pack}, and the move is not there either")
                     continue
@@ -409,7 +471,10 @@ def main():
                 # level: the new parent lies under one of the core node's
                 # parents. `refine-cross` is a reviewed cross-branch claim.
                 core = graphs["core"][1]
-                if pack == "core" or sub not in core:
+                if pack != "core" and sub not in core and dropped_later(i, "core", sub):
+                    log.append(f"already  {pack} refines {sub} (core drops it later; {pack} keeps it)")
+                    want = []
+                elif pack == "core" or sub not in core:
                     errors.append(f"{action} {sub}: not a core name refined by a pack")
                     want = []
                 elif set(want) <= set(par.get(sub, [])) or (
@@ -517,6 +582,15 @@ def main():
                 par[name] = ["*"]
                 order.append(name)
                 log.append(f"applied  {pack} borrows {name}")
+        # and a stub of a name no store holds any more goes (a ruling renamed
+        # or dropped it, and nothing in the pack uses it)
+        for name in sorted(n for n, ps in par.items() if ps == ["*"] and n not in used):
+            # core's "*" is the top level; a pack's is a stub
+            if name not in PRELUDE and name not in graphs["core"][1] and not any(
+                    g[1].get(name, ["*"]) != ["*"] for k, g in graphs.items() if k != pack):
+                del par[name]
+                order.remove(name)
+                log.append(f"applied  {pack} drops its stub of {name} (no store holds it)")
 
     core = graphs["core"][1]
     for name, family, drop, *note in table(CORE_HEADS):

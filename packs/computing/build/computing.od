@@ -1,5 +1,5 @@
 # ontodag store v1
-#:canonical 6.0 c067b66444d3fee3a86674a7a679d8399661605b74882d35eeec5252e6759780 2
+#:canonical 6.0 13d6a425e8729046e0ffdbd8b2c4cd193f001bd46f618191a667f31d57f2f3f1 2
 5g technical-standard
 7z archive-file-format
 a-star-search graph-algorithm
@@ -221,7 +221,6 @@ cellular-telephone '*'
 central-processing-unit chip equipment hardware
 certificate-authority organization
 channel-capacity amount
-character '*'
 character-data-type primitive-data-type
 character-encoding code
 #:meta character-set '{"gloss": "an ordered list of characters that are used together in writing or printing", "wn30": "06488880-n"}'
@@ -270,6 +269,7 @@ complex-instruction-set-computer computer-architecture
 #:meta complex-instruction-set-computing '{"gloss": "(computer science) a kind of computer architecture that has a large number of instructions hard coded into the CPU chip", "wn30": "04932561-n"}'
 complex-instruction-set-computing computer-architecture
 component '*'
+composition '*'
 compression-algorithm algorithm data-compression
 compression-format file-format
 computability property
@@ -286,7 +286,7 @@ computer-address code
 #:meta computer-aided-design '{"gloss": "software used in art and architecture and engineering and manufacturing to assist in precision drawing", "wn30": "06567689-n"}'
 computer-aided-design software
 #:meta computer-architecture '{"gloss": "(computer science) the structure and organization of a computer'"'"'s hardware or system software", "wn30": "04932278-n"}'
-computer-architecture constitution
+computer-architecture composition
 computer-bus hardware
 #:meta computer-cache '{"gloss": "(computer science) RAM memory that is set aside as a specialized buffer storage that is continually updated; used to optimize data transfers between system elements with different characteristics", "wn30": "02935017-n"}'
 computer-cache computer-memory data-buffer
@@ -338,7 +338,6 @@ conditional-statement program-statement
 configuration-file computer-file
 conflict-free-replicated-data-type data-structure
 consensus-algorithm distributed-algorithm
-constitution '*'
 container-orchestration data-processing
 content-addressable-storage data-storage
 content-delivery-network distributed-system
@@ -490,7 +489,7 @@ digital-signature information
 dijkstra-algorithm graph-algorithm search-algorithm
 dimension '*'
 #:meta dip-switch '{"gloss": "(computer science) one of a set of small on-off switches mounted in computer hardware; used in place of jumpers to configure the machine for a user", "wn30": "03204558-n"}'
-dip-switch electric-switch
+dip-switch switch
 directed-acyclic-graph '*'
 directed-graph '*'
 directory '*'
@@ -572,7 +571,6 @@ dynamic-typing type-system
 eager-evaluation data-processing-technique
 #:meta editor-program '{"gloss": "(computer science) a program designed to perform such editorial functions as rearrangement or modification or deletion of data", "wn30": "06574841-n"}'
 editor-program application
-electric-switch '*'
 electronic-circuit device
 #:meta electronic-data-processing '{"gloss": "automatic data processing by electronic means without the use of tabulating cards or punched tapes", "wn30": "13472341-n"}'
 electronic-data-processing automatic-data-processing
@@ -1666,6 +1664,7 @@ supervisory-routine subroutine
 supervisory-software software
 svg image-file-format xml
 swift-language programming-language
+switch '*'
 symbol '*'
 symbolic-link computer-file
 symmetric-key-cryptography cryptography

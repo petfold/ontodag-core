@@ -1,9 +1,10 @@
 # ontodag store v1
-#:canonical 6.0 2baf146ec3dd377f1184c1940c4dc7ae3244e7ec507494cea964f5c50b19f16f 2
+#:canonical 6.0 7362373300ea29ed4b5c2e6ed5239b752a4b4a6a055b550bf4366576bb0457fa 2
 51-percent-attack act
 about enclosing-dimension
 account '*'
 account-abstraction 'about(ethereum)' method
+account-statement '*'
 #:meta accounting-entry '{"gloss": "a written record of a commercial transaction", "wn30": "13405296-n"}'
 accounting-entry transaction-record
 accounts-payable debt
@@ -175,7 +176,7 @@ book-value value
 bookdealer merchant
 bookkeeping '*'
 #:meta borrowing-cost '{"gloss": "the cost of borrowing something", "wn30": "13302201-n"}'
-borrowing-cost outgo
+borrowing-cost expenditure
 #:meta bounty '{"gloss": "payment or reward (especially from a government) for acts such as catching criminals or killing predatory animals or enlisting in the military", "wn30": "13272059-n"}'
 bounty reward-payment
 #:meta breakage '{"gloss": "reimbursement for goods damaged while in transit or in use", "wn30": "13293512-n"}'
@@ -226,7 +227,7 @@ call-option option-finance purchase-option
 capital '*'
 capital-asset-pricing-model 'about(rate-of-return)' information
 #:meta capital-expenditure '{"gloss": "the cost of long-term improvements", "wn30": "13278275-n"}'
-capital-expenditure outgo
+capital-expenditure expenditure
 capital-gain income
 capital-loss expense
 capital-market financial-market
@@ -389,7 +390,7 @@ cost-of-goods-sold expense
 #:meta cost-of-living-allowance '{"gloss": "an allowance for changes in the consumer price index", "wn30": "13274364-n"}'
 cost-of-living-allowance price-adjustment
 #:meta cost-overrun '{"gloss": "excess of cost over budget", "wn30": "13301835-n"}'
-cost-overrun outgo
+cost-overrun expenditure
 #:meta cost-plus-contract '{"gloss": "a contract in which the contractor is paid his total cost plus a stated percentage of profit", "wn30": "06522784-n"}'
 cost-plus-contract contract pricing-strategy
 cost-plus-pricing pricing-strategy
@@ -545,7 +546,7 @@ distribution-center building
 #:meta distribution-channel '{"gloss": "a way of selling a company'"'"'s product either directly or via distributors", "wn30": "01113595-n"}'
 distribution-channel marketing
 #:meta distribution-cost '{"gloss": "any cost incurred by a producer or wholesaler or retailer or distributor (as for advertising and shipping etc)", "wn30": "13302293-n"}'
-distribution-cost outgo
+distribution-cost expenditure
 diversification asset-allocation
 #:meta divestiture '{"gloss": "the sale by a company of a product line or a subsidiary or a division", "wn30": "01115017-n"}'
 divestiture sale
@@ -599,13 +600,13 @@ economic-order-quantity amount
 economic-production industry
 #:meta economic-rent '{"gloss": "the return derived from cultivated land in excess of that derived from the poorest land cultivated under similar conditions", "wn30": "13296270-n"}'
 economic-rent income
-economic-system '*'
 #:meta economic-theory '{"gloss": "(economics) a theory of commercial activities (such as the production and consumption of goods)", "wn30": "05994935-n"}'
 economic-theory thinking
 #:meta economic-utility '{"gloss": "(economics) a measure that is to be maximized in any situation involving choice", "wn30": "13580058-n"}'
 economic-utility attribute
 economics '*'
 economies-of-scale attribute
+economy '*'
 efficient-market-hypothesis 'about(financial-market)' hypothesis
 electronic-communication-network financial-market
 electronic-funds-transfer payment
@@ -631,7 +632,7 @@ equilibrium-price price purchase-price
 #:meta equity '{"gloss": "the ownership interest of shareholders in a corporation", "wn30": "13333420-n"}'
 equity financial-interest
 #:meta equity-account '{"gloss": "(finance) an account of the net value of a business at a specified date", "wn30": "13355504-n"}'
-equity-account account
+equity-account account-statement
 erc-20-token crypto-token smart-contract
 erc-721-token non-fungible-token
 escrow contract
@@ -653,10 +654,11 @@ exotic-option option-finance
 expected-shortfall amount
 #:meta expending '{"gloss": "the act of spending money for goods or services", "wn30": "01122601-n"}'
 expending spending
+expenditure '*'
 #:meta expense '{"gloss": "amounts paid for goods and services that may be currently tax deductible (as opposed to capital expenditures)", "wn30": "13275495-n"}'
-expense outgo
+expense expenditure
 #:meta expense-account '{"gloss": "an account to which salespersons or executives can charge travel and entertainment expenses", "wn30": "13411943-n"}'
-expense-account account
+expense-account account-statement
 #:meta expense-allowance '{"gloss": "a sum granted as reimbursement for expenses", "wn30": "13293377-n"}'
 expense-allowance reimbursement
 expiration-date day
@@ -780,7 +782,7 @@ general-ledger transaction-record
 general-lien lien
 genesis-block blockchain-block
 geo rectangle-dimension
-gig-economy economic-system
+gig-economy economy
 #:meta giro-account '{"gloss": "an account at a post office that can be used in similar ways to an account at a bank", "wn30": "13359941-n"}'
 giro-account bank-account
 #:meta going-out-of-business-sale '{"gloss": "a sale of all the tangible assets of a business that is about to close", "wn30": "01119401-n"}'
@@ -820,7 +822,7 @@ guaranty collateral contract
 #:meta half-pay '{"gloss": "reduced wage paid to someone who is not working full time", "wn30": "13280139-n"}'
 half-pay wage
 #:meta handling-cost '{"gloss": "the cost of handling (especially the cost of packaging and mailing an order)", "wn30": "13302467-n"}'
-handling-cost outgo
+handling-cost expenditure
 hard-fork event
 #:meta hard-sell '{"gloss": "forceful and insistent advertising", "wn30": "01101571-n"}'
 hard-sell advertising
@@ -1031,7 +1033,7 @@ margin-trading securities-trading
 marginal-cost amount
 #:meta marginal-utility '{"gloss": "(economics) the amount that utility increases with an increase of one unit of an economic good or service", "wn30": "13580228-n"}'
 marginal-utility economic-utility
-market economic-system
+market economy
 market-abuse crime
 market-capitalization amount
 market-clearing process
@@ -1055,7 +1057,7 @@ market-price price purchase-price
 market-risk financial-risk
 marketing '*'
 #:meta marketing-cost '{"gloss": "the cost of marketing (e.g., the cost of transferring title and moving goods to the customer)", "wn30": "13302621-n"}'
-marketing-cost outgo
+marketing-cost expenditure
 marketplace market place
 #:meta markup '{"gloss": "the amount added to the cost to determine the asking price", "wn30": "13303880-n"}'
 markup amount
@@ -1184,7 +1186,6 @@ organization '*'
 organization-expense business-expense
 #:meta origination-fee '{"gloss": "a fee charged to a borrower (especially for a mortgage loan) to cover the costs of initiating the loan", "wn30": "13322938-n"}'
 origination-fee fee
-outgo '*'
 #:meta output-contract '{"gloss": "a contract in which you promise to deliver your entire output to the other party who promises to accept it", "wn30": "06523473-n"}'
 output-contract contract
 #:meta over-the-counter-market '{"gloss": "a stock exchange where securities transactions are made via telephone and computer rather than on the floor of an exchange", "wn30": "03866350-n"}'
@@ -1226,7 +1227,7 @@ pay-rate charge-rate
 payback-return income
 payment '*'
 #:meta payment-amount '{"gloss": "a sum of money paid or a claim discharged", "wn30": "13278375-n"}'
-payment-amount outgo
+payment-amount expenditure
 payment-card device payment-system
 payment-channel smart-contract
 payment-channel-network layer-2
@@ -1275,7 +1276,7 @@ physical-object '*'
 pipage-fee fee
 place '*'
 plan '*'
-platform-economy economic-system
+platform-economy economy
 #:meta pledge '{"gloss": "a deposit of personal property as security for a debt", "wn30": "13350702-n"}'
 pledge security-interest
 point-of-sale event
@@ -1316,7 +1317,7 @@ price '*'
 #:meta price-adjustment '{"gloss": "an amount added or deducted on the basis of qualifying circumstances", "wn30": "13274092-n"}'
 price-adjustment recompense-payment
 #:meta price-charged '{"gloss": "the price charged for some article or service", "wn30": "13306870-n"}'
-price-charged outgo
+price-charged expenditure
 price-discrimination pricing-strategy
 price-earnings-ratio ratio
 price-skimming pricing-strategy
@@ -1343,14 +1344,14 @@ product-bundling pricing-strategy
 #:meta production-capacity '{"gloss": "the maximum production possible", "wn30": "00914795-n"}'
 production-capacity attribute
 #:meta production-cost '{"gloss": "combined costs of raw material and labor incurred in producing goods", "wn30": "13302775-n"}'
-production-cost outgo
+production-cost expenditure
 #:meta production-order '{"gloss": "an order that initiates the manufacturing process", "wn30": "06530143-n"}'
 production-order document
 #:meta production-output '{"gloss": "production of a certain amount", "wn30": "00914632-n"}'
 production-output economic-production
 professional '*'
 #:meta profit-and-loss '{"gloss": "an account compiled at the end of an accounting period to show gross and net profit or loss", "wn30": "13407844-n"}'
-profit-and-loss account
+profit-and-loss account-statement
 #:meta profit-sharing '{"gloss": "a system in which employees receive a share of the net profits of the business", "wn30": "13289020-n"}'
 profit-sharing possession
 #:meta profit-taker '{"gloss": "someone who sells stock shares at a profit", "wn30": "10481167-n"}'
@@ -1378,7 +1379,7 @@ purchase-incentive bonus
 purchase-option '*'
 purchase-order document
 #:meta purchase-price '{"gloss": "the amount of money needed to purchase something", "wn30": "13303315-n"}'
-purchase-price outgo
+purchase-price expenditure
 purchasing procurement
 #:meta put-option '{"gloss": "the option to sell a given stock (or stock index or commodity future) at a given price before a given date", "wn30": "00080968-n"}'
 put-option option-finance purchase-option
@@ -1442,9 +1443,9 @@ repayment payment-amount
 #:meta repeat-order '{"gloss": "a repeated order for the same merchandise", "wn30": "06530255-n"}'
 repeat-order document
 #:meta replacement-cost '{"gloss": "current cost of replacing a fixed asset with a new one of equal effectiveness", "wn30": "13302905-n"}'
-replacement-cost outgo
+replacement-cost expenditure
 #:meta reproduction-cost '{"gloss": "cost of reproducing physical property minus various allowances (especially depreciation)", "wn30": "13303045-n"}'
-reproduction-cost outgo
+reproduction-cost expenditure
 repurchase-agreement financial-transaction
 #:meta requirements-contract '{"gloss": "a contract in which you agree to purchase all your requirements of a particular sort from one party", "wn30": "06524111-n"}'
 requirements-contract contract
@@ -1452,9 +1453,9 @@ requirements-contract contract
 resale merchandising
 reservation-price price purchase-price
 #:meta reserve-account '{"gloss": "funds taken out of earnings to provide for anticipated future payments", "wn30": "13370014-n"}'
-reserve-account backlog
+reserve-account stockpile
 #:meta reserve-stock '{"gloss": "a supply or stock held in reserve for future use (especially in emergencies)", "wn30": "13368318-n"}'
-reserve-stock backlog
+reserve-stock stockpile
 #:meta residual-payment '{"gloss": "(often plural) a payment that is made to a performer or writer or director of a television show or commercial that is paid for every repeat showing", "wn30": "13292989-n"}'
 residual-payment payment-amount
 #:meta retail '{"gloss": "the selling of goods to consumers; usually in small quantities and not for resale", "wn30": "01114458-n"}'
@@ -1567,7 +1568,7 @@ share-float share-capital
 share-of-profits '*'
 share-repurchase financial-transaction transaction
 shared-with reversed-dimension
-sharing-economy economic-system
+sharing-economy economy
 sharpe-ratio ratio
 ship '*'
 #:meta 'ship'"'"'s-chandler' '{"gloss": "a dealer in sails and ropes and other supplies for sailing ships", "wn30": "10590638-n"}'
@@ -1657,6 +1658,7 @@ stockholder stakeholder
 #:meta stockjobber '{"gloss": "one who deals only with brokers or other jobbers", "wn30": "10657556-n"}'
 stockjobber stock-trader
 stockout event
+stockpile '*'
 stop-loss-order trade-order
 #:meta stop-order '{"gloss": "an order to a broker to sell (buy) when the price of a security falls (rises) to a designated level", "wn30": "06530412-n"}'
 stop-order document trade-order
@@ -1696,7 +1698,7 @@ support-level purchase-price
 #:meta surcharge '{"gloss": "an additional charge (as for items previously omitted or as a penalty for failure to exercise common caution or common skill)", "wn30": "13325505-n"}'
 surcharge payment price-charged
 #:meta suspense-account '{"gloss": "an account used temporarily to carry doubtful receipts and disbursements or discrepancies pending their analysis and permanent classification", "wn30": "13408776-n"}'
-suspense-account account
+suspense-account account-statement
 swap-finance derivative-finance
 swarm-storage decentralized-storage
 #:meta sweat-equity '{"gloss": "interest in a building that a tenant earns by contributing to its renovation or maintenance", "wn30": "13333546-n"}'

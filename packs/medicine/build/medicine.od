@@ -1,5 +1,5 @@
 # ontodag store v1
-#:canonical 6.0 36dc6baf8fb69fc02110eb48e80ee17ba5936c063e75e5238c8e29ba688bbb6e 2
+#:canonical 6.0 235230b912a0e9e3111d10414ff6ab3a78cfa95b17cd39393ad574c978328fca 2
 #:meta abdominoplasty '{"gloss": "cosmetic surgery of the abdomen to remove wrinkles and tighten the skin over the stomach", "wn30": "00034777-n"}'
 abdominoplasty plastic-surgery
 #:meta ablation '{"gloss": "surgical removal of a body part or tissue", "wn30": "00393369-n"}'
@@ -257,10 +257,11 @@ blood-extravasation bleeding process
 #:meta blood-poisoning '{"gloss": "invasion of the bloodstream by virulent microorganisms from a focus of infection", "wn30": "14189837-n"}'
 blood-poisoning sepsis
 #:meta bloodletting '{"gloss": "formerly used as a treatment to reduce excess blood (one of the four humors of medieval medicine)", "wn30": "00698004-n"}'
-bloodletting tending
+bloodletting care
 #:meta blunt-trauma '{"gloss": "injury incurred when the human body hits or is hit by a large outside object (as a car)", "wn30": "14288725-n"}'
 blunt-trauma injury
 body-part '*'
+body-passage '*'
 #:meta bonesetter '{"gloss": "someone (not necessarily a licensed physician) who sets broken bones", "wn30": "09865547-n"}'
 bonesetter professional
 book '*'
@@ -307,6 +308,7 @@ cardiologist medical-specialist
 cardiology 'about(heart)' medical-specialty
 #:meta cardiomegaly '{"gloss": "an abnormal enlargement of the heart", "wn30": "14334631-n"}'
 cardiomegaly symptom
+care '*'
 #:meta carminative '{"gloss": "medication that prevents the formation of gas in the alimentary tract or eases its passing", "wn30": "02965617-n"}'
 carminative medication
 #:meta castration '{"gloss": "surgical removal of the testes or ovaries (usually to inhibit hormone secretion in cases of breast cancer in women or prostate cancer in men)", "wn30": "00667847-n"}'
@@ -1491,7 +1493,6 @@ paregoric medication
 paresthesia symptom
 #:meta paronychia '{"gloss": "infection in the tissues adjacent to a nail on a finger or toe", "wn30": "14178794-n"}'
 paronychia condition
-passage '*'
 #:meta patent-medicine '{"gloss": "medicine that is protected by a patent and available without a doctor'"'"'s prescription", "wn30": "03898936-n"}'
 patent-medicine medication
 #:meta pathogen '{"gloss": "any disease-producing agent (especially a virus or bacterium or other microorganism)", "wn30": "01386007-n"}'
@@ -1986,7 +1987,7 @@ surgical-snare surgical-instrument
 #:meta surgical-sterilization '{"gloss": "the act of making an organism barren or infertile (unable to reproduce)", "wn30": "00692130-n"}'
 surgical-sterilization operation
 #:meta surgical-stoma '{"gloss": "a mouth or mouthlike opening (especially one created by surgery on the surface of the body to create an opening to an internal organ)", "wn30": "05246215-n"}'
-surgical-stoma passage
+surgical-stoma body-passage
 #:meta surgical-taxis '{"gloss": "the surgical procedure of manually restoring a displaced body part", "wn30": "00692991-n"}'
 surgical-taxis operation
 #:meta swelling '{"gloss": "an abnormal protuberance or localized enlargement", "wn30": "14315192-n"}'
@@ -2003,7 +2004,6 @@ syringe '*'
 #:meta tapeworm-infection '{"gloss": "intestinal infection by a species of parasitic tapeworm; usually the result of eating inadequately cooked meat or fish", "wn30": "14185620-n"}'
 tapeworm-infection condition
 temperature 'linear-dimension(temperature)'
-tending '*'
 #:meta tetanus '{"gloss": "an acute and serious infection of the central nervous system caused by bacterial infection of open wounds; spasms of the jaw and laryngeal muscles may occur during the late stages", "wn30": "14185803-n"}'
 tetanus condition
 #:meta tetany '{"gloss": "clinical neurological syndrome characterized by muscular twitching and cramps and (when severe) seizures; associated with calcium deficiency (hypoparathyroidism) or vitamin D deficiency or alkalosis", "wn30": "14310504-n"}'
@@ -2198,7 +2198,7 @@ woman '*'
 work '*'
 wound '*'
 #:meta wound-irrigation '{"gloss": "(medicine) cleaning a wound or body organ by flushing or washing out with water or a medicated solution", "wn30": "00695448-n"}'
-wound-irrigation tending
+wound-irrigation care
 #:meta wrench-injury '{"gloss": "a sharp strain on muscles or ligaments", "wn30": "14299070-n"}'
 wrench-injury injury
 #:meta wrong-site-surgery '{"gloss": "a surgical operation performed on the wrong part of the body", "wn30": "00673109-n"}'
