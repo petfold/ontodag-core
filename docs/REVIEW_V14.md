@@ -944,3 +944,113 @@ Two more guards keep earlier decisions:
 Result: 1,565 decisions applied (695 in core, 870 in the packs). Core goes
 from 5,027 names to 4,750. `step7 --check` is clean, and a replay from the
 v13 files reproduces every file byte for byte.
+
+## Vector witnesses (2026-10-23)
+
+Peter asked whether the Linux word list and modern word embeddings could
+help. `tools/sense_vectors.py` adds their evidence to the audit sheets. It
+runs in its own venv, so PyTorch never touches the build's Python; the
+docstring says how to set it up. The data is fetched once into
+`~/.cache/ontodag-core/`:
+- GloVe 6B 300d (Stanford, public domain);
+- the sentence encoder all-MiniLM-L6-v2;
+- wordfreq's Zipf frequencies.
+
+**The word list.** `/usr/share/dict/words` here is Debian's `wamerican`
+(SCOWL size 50, 104k entries, no frequencies). 105 of core's 3,701
+one-word names are missing from it. The misses mix three kinds:
+- rare words: caput, pipage, incertitude;
+- newer everyday words: countertop, daycare, makeover, dataset;
+- exotic but clear words: rambutan, loquat.
+
+So the list is a weak signal. The sheets use wordfreq's Zipf scale instead
+(`zipf`: 3 is once per million words).
+
+**The columns** (the tool's docstring has details): `zipf`, `first`,
+`first_by`, `twin`, `twin_sim`, `parents_sim`, `misfit` and `trap`.
+
+**What was measured.** Every score was checked against labels already in
+hand, not judged by eye:
+
+| witness | measured against | result |
+|---|---|---|
+| `first`: the sense a word vector puts first | SemCor's clear first sense, 1,619 lemmas | 58% agree (chance 31%); 82% when `first_by` ≥ 0.166 |
+| McCarthy et al.'s neighbour vote, for the same | the same | 56% |
+| sentence encoder, for the same | the same | 42% |
+| `misfit` (parent similarity + sibling distance) | nodes whose parent the 2026-10-22 pass moved or cut, on core before the pass | AUC 0.76; 28% of the top 100 (base rate 4%) |
+| lowest parent similarity, names with several parents | parents the pass cut | AUC 0.66; 21% of the top 100 (base rate 11%) |
+| nearest glosses not under the node's parents | moved or cut | AUC 0.46, no signal |
+| `trap` (first-sense lead + WordNet rank + name–gloss distance) | `align/name-traps-v14.tsv` | AUC 0.86; 30% of the top 100 (base rate 3%) |
+| WordNet rank alone, for the same | the same | AUC 0.81 |
+| GloVe name–gloss distance alone, for the same | the same | AUC 0.66 |
+
+Reading the top 100 by `misfit` finds about seven times as many misfilings
+as reading at random, and by `trap` about ten times as many name traps.
+These are lower bounds, because the negatives are only names no review
+touched. trap's unstarred top names (upgrade, trust, top, seal, jack,
+column) look like traps the October list missed. Run with the venv's Python, `tools/sense_vectors.py --evaluate`
+and `--learn` reproduce every number.
+
+**What the columns found in the current core and packs:**
+- **Exact duplicates.** These are names holding the same WordNet synset,
+  the clearest result: 15 pairs inside core, and 10 more between a pack and
+  core. Several were made by the 2026-10-22 resenses, which picked a synset
+  another name already held. Each pair wants one owner.
+  - Inside core: abuse/maltreatment, album/record-album,
+    appointment/engagement, authorities/government, business-deal/deal,
+    campaign/cause, cavity/pit, destiny/luck, dressing/salad-dressing,
+    due-west/west, hog/pig, law-of-nature/physical-law, lozenge/pill,
+    plant-root/root, reserve/stockpile.
+  - Between a pack and core: software-documentation/documentation and
+    world-wide-web/web (computing); commercial-trade/trade and
+    net-income/profit (economics); geological-erosion/erosion,
+    rock-material/stone and terrestrial-globe/globe (geography);
+    bite-wound/bite (medicine); analyst.person/analyst (occupations);
+    visible-light/light (physics).
+- **Near-twins.** Close glosses without a shared synset are mostly
+  siblings with parallel glosses: husband/wife, north/south,
+  cold-front/warm-front. Only a few are real, such as
+  nonprofit/nonprofit-organization, pay-rate/payment-rate, myeloblastic and
+  myelocytic leukemia, and trapezium/trapezoid.
+- **Rare senses still on plain names.** 297 core names have a confident
+  `first` that differs from the sense held. Some are real:
+  - `craft` holds "shrewdness… deception";
+  - `conductor` holds the fare collector;
+  - `plane` holds the carpenter's tool;
+  - `property` holds the logical sense, not something owned;
+  - `coke` holds the coal fuel.
+
+  Others are the training text's bias. GloVe learned from Wikipedia and
+  news, so gold leans to gold coins and pop to pop music.
+
+**Frequency by store** (`zipf`):
+- **Everyday words that live only in packs.** 44 one-word pack names are
+  at Zipf 4.3 or above but not in core, among them market, insurance,
+  goods, revenue, salary, savings, corporation, coast, shore, priest,
+  editor, senator and DNA. They are candidates for core, the everyday
+  hinges several packs lean on. Others are domain senses that should stay
+  in their packs: mean (mathematics), post and test (computing), fine
+  (economics).
+- **Core's rarest leaves.** 91 of core's 3,605 leaves are below Zipf 2.
+  They are three kinds: truly obscure words (graveness, incertitude,
+  expertness), deliberate goods (feijoa, soursop) and everyday things
+  rarely written about (pushpin, earplug, ramekin). Frequency alone cannot
+  decide a shrink.
+
+**The reading queue in the current core.**
+- Top of `misfit`: census ⊑ work, smile ⊑ information, tempo ⊑ relation,
+  charm ⊑ physical-object, chandelier under device, fixture and lighting.
+- Top of `trap`: buffer, carrier, case, cast, club, column, craft, end,
+  formula, jack, plane, scale, seal, statement, top, track. That is the
+  naming pass's worklist.
+
+**What not to use them for.** A vector measures relatedness, not "is a":
+building and dwelling are close, so `building ⊑ dwelling` would not stand
+out. These are witnesses that order the reading, never verdicts.
+
+**Next.**
+1. Merge the 25 duplicate pairs (Peter's call on which name stays).
+2. Read core from the top of `trap` and `misfit`.
+3. Weigh the 44 everyday pack words for core.
+4. For "everyday", consider a subtitle corpus (SUBTLEX-US) against the news
+   bias.

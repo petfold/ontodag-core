@@ -1,745 +1,713 @@
 # The everyday-sense audit of ai (tools/sense_audit.py, 2026-10-22). See the tool's docstring for the columns and flags.
-name	parents	children	descendants	used_by	wn30	lexfile	rank	senses	tags	gloss	everyday	everyday_tags	everyday_lexfile	everyday_gloss	everyday_parent	off_wordnet	flags	recommendation	decision	note
-3d-reconstruction	computer-vision	1	1					0									no-synset			
-a-star-search	best-first-search	0	0					0									no-synset			
-abductive-logic-programming	logic-programming	0	0					0									no-synset			
-abductive-reasoning	thinking	0	0					0									no-synset			
-act		0	0	computing economics mathematics medicine				5			00030358	24	Tops	something that people do or cause to happen			no-synset			
-activation-function	function	2	2					0									no-synset			
-active-learning	machine-learning	0	0					0									no-synset			
-activity		2	2	biology chemistry computing economics geography mathematics medicine space				6			04635104	0	attribute	the trait of being active; moving or acting rapidly and energetically			no-synset			
-actor-critic-algorithm	machine-learning-algorithm	0	0					0									no-synset			
-actuator	device	0	0					1			02678384	0	artifact	a mechanism that puts something into automatic action			no-synset shrink	review: rare leaf		
-adam-optimizer	stochastic-gradient-descent	0	0					0									no-synset			
-adaptive-control	control-theory	0	0					0									no-synset			
-adversarial-example	information	0	0					0									no-synset			
-adversarial-machine-learning	machine-learning	3	3					0									no-synset			
-adversarial-training	adversarial-machine-learning	0	0					0									no-synset			
-affective-computing	about(emotion) artificial-intelligence	2	2					0									no-synset disjoint	keep one parent (several mean AND)		
-agent		2	5	economics medicine				6			09777353	6	person	a representative who acts on behalf of other persons or organizations			no-synset			
-agent-based-model	computer-simulation	1	1					0									no-synset			
-agricultural-robot	automaton	0	0					0									no-synset			
-ai-agent	intelligent-agent	0	0					0									no-synset			
-ai-alignment	ai-safety	2	2					0									no-synset			
-ai-model	information	11	77					0									no-synset			
-ai-safety	about(artificial-intelligence) artificial-intelligence	1	3					0									no-synset disjoint	keep one parent (several mean AND)		
-aircraft		0	0	economics geography space				1			02686568	15	artifact	a vehicle that can fly			no-synset			
-algorithm		22	66	computing mathematics				1			05847438	0	cognition	a precise rule (or set of rules) specifying how to solve some problem			no-synset			
-algorithmic-bias	attribute	0	0					0									no-synset			
-alpha-beta-pruning	search-algorithm	0	0					0									no-synset			
-amount		6	8	chemistry computing economics geography mathematics physics space				4			13331198	40	possession	a quantity of money			no-synset			
-analogical-reasoning	thinking	0	0					0									no-synset			
-animatronics	robotics	0	0		06133802	cognition	1	1	0	the construction of robots to look like animals (developed for Disneyland)							shrink	review: rare leaf		
-anomaly-detection	machine-learning	0	0					0									no-synset			
-answer-set-programming	logic-programming	0	0					0									no-synset			
-ant-colony-optimization	metaheuristic	0	0					0									no-synset			
-apprenticeship-learning	imitation-learning	0	0					0									no-synset			
-approximation-algorithm		0	0					0									no-synset			
-apriori-algorithm	machine-learning-algorithm	0	0					0									no-synset			
-argumentation-framework	mathematical-object	0	0					0									no-synset			
-articulated-robot	automaton	0	0					0									no-synset			
-artifact		1	3	computing economics geography medicine physics				1			00021939	1	Tops	a man-made object taken as a whole			no-synset			
-artificial-chemistry	artificial-life	0	0					0									no-synset			
-artificial-consciousness	artificial-intelligence	0	0					0									no-synset			
-artificial-empathy	artificial-intelligence	0	0					0									no-synset			
-artificial-general-intelligence	artificial-intelligence	2	2					0									no-synset			
-artificial-immune-system	computational-intelligence	0	0					0									no-synset			
-artificial-intelligence	computer-science	37	125	term	06133203	cognition	1	1	0	the branch of computer science that deal with writing computer programs that can solve problems creatively						computer-science	off-wordnet			
-artificial-life	artificial-intelligence	1	1					0									no-synset			
-artificial-neural-network	ai-model	24	46		06725467	communication		0		computer architecture in which processors are connected in a manner suggestive of connections between neurons; can learn by trial and error						ai-model	off-wordnet			
-artificial-society	agent-based-model	0	0					0									no-synset			
-association-rule-learning	data-mining	0	0					0									no-synset			
-attention-mechanism	method	2	2					0									no-synset			
-attribute		7	7	biology chemistry computing economics geography mathematics medicine physics				2			05849040	2	cognition	a construct whereby objects or individuals can be distinguished			no-synset			
-autoencoder	artificial-neural-network	2	2					0									no-synset			
-automated-machine-learning	machine-learning	2	4					0									no-synset			
-automated-planning	about(plan) artificial-intelligence	3	3					0									no-synset disjoint	keep one parent (several mean AND)		
-automated-reasoning	artificial-intelligence	0	0					0									no-synset			
-automated-theorem-proving	about(theorem) artificial-intelligence	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-automatic-summarization	text-mining	0	0					0									no-synset			
-automaton		21	30	term				2			09825519	0	person	someone who acts or responds in a mechanical or apathetic way			no-synset			
-autonomic-computing	artificial-intelligence	0	0					0									no-synset			
-autonomous-aircraft	autonomous-vehicle	0	0					0									no-synset			
-autonomous-bus	autonomous-vehicle	0	0					0									no-synset			
-autonomous-car	autonomous-vehicle	0	0					0									no-synset			
-autonomous-robot	mobile-robot	0	0					0									no-synset			
-autonomous-spacecraft	autonomous-vehicle	0	0					0									no-synset			
-autonomous-truck	autonomous-vehicle	0	0					0									no-synset			
-autonomous-underwater-vehicle	autonomous-vehicle	0	0					0									no-synset			
-autonomous-vehicle	automaton vehicle	6	6					0									no-synset disjoint	keep one parent (several mean AND)		
-autonomous-weapon	military-robot	0	0					0									no-synset			
-autoregressive-model	statistical-model	0	0					0									no-synset			
-backpropagation	algorithm	1	1					0									no-synset			
-backpropagation-through-time	backpropagation	0	0					0									no-synset			
-backtracking-search		0	0					0									no-synset			
-backward-chaining	algorithm	0	0					0									no-synset			
-bag-of-words-model	ai-model	0	0					0									no-synset			
-barabasi-albert-model	statistical-model	0	0					0									no-synset			
-batch-normalization	procedure	0	0					0									no-synset			
-bayes-classifier	classification-algorithm	1	1					0									no-synset			
-bayesian-network	statistical-model	1	1					0									no-synset			
-bayesian-optimization	hyperparameter-optimization	0	0					0									no-synset			
-behavior-based-robotics	robotics	0	0					0									no-synset			
-behavior-tree	information	0	0					0									no-synset			
-belief-propagation	algorithm	0	0					0									no-synset			
-belief-revision	thinking	0	0					0									no-synset			
-bellman-equation	equation	0	0					0									no-synset			
-benchmark-dataset	dataset	0	0					0									no-synset			
-bert-model	transformer-model	0	0					0									no-synset			
-best-first-search	informed-search-algorithm	1	1					0									no-synset			
-betweenness-centrality	centrality	0	0					0									no-synset			
-bias-variance-tradeoff	attribute	0	0					0									no-synset			
-biclustering	cluster-analysis	0	0					0									no-synset			
-bidirectional-associative-memory	recurrent-neural-network	0	0					0									no-synset			
-bidirectional-recurrent-neural-network	recurrent-neural-network	0	0					0									no-synset			
-bidirectional-search	search-algorithm	0	0					0									no-synset			
-big-data		0	0					0									no-synset			
-binary-classification	statistical-classification	0	0					0									no-synset			
-bio-inspired-robotics	robotics	0	0					0									no-synset			
-biorobotics	robotics	0	0					0									no-synset			
-blackboard-system	software	0	0					0									no-synset			
-blind-signal-separation	signal-processing	0	0					0									no-synset			
-blocks-world	toy-problem	0	0					0									no-synset			
-boltzmann-machine	energy-based-model	1	1					0									no-synset			
-boolean-satisfiability-problem	constraint-satisfaction-problem	0	0					0									no-synset			
-boosting-algorithm	machine-learning-algorithm	1	1					0									no-synset			
-bootstrap-aggregating	machine-learning-algorithm	0	0					0									no-synset			
-bounded-rationality	decision-theory	0	0					0									no-synset			
-brain		0	0	term				5			05481095	22	body	that part of the central nervous system that includes all the higher nervous centers; enclosed within the skull; continuous with the spinal cord			no-synset			
-brain-computer-interface	device	0	0					0									no-synset			
-breadth-first-search	graph-traversal	0	0					0									no-synset			
-capsule-neural-network	convolutional-neural-network	0	0					0									no-synset			
-case-based-reasoning	artificial-intelligence	0	0					0									no-synset			
-catastrophic-forgetting	problem	0	0					0									no-synset			
-causal-diagram	statistical-model	0	0					0									no-synset			
-cellular-automaton	mathematical-object	5	5					0									no-synset			
-centrality	amount	2	2					1			05078025	0	attribute	the property of being central			no-synset			
-change		1	1	biology chemistry physics				10			07296428	46	event	an event that occurs when something passes from one state or phase to another			no-synset			
-chatbot	software software-agent	1	1					0									no-synset disjoint	keep one parent (several mean AND)		
-chatbot-evaluation	procedure	0	0					0									no-synset			
-chinese-room	information	0	0					0									no-synset			
-classification-algorithm	machine-learning-algorithm	8	10					0									no-synset			
-closed-loop	control-system	0	0		03049326	artifact	1	1	0	a control system with a feedback loop that is active							shrink	review: rare leaf		
-closed-world-assumption	principle	0	0					0									no-synset			
-cluster-analysis	data-mining machine-learning statistics	2	2					0									no-synset disjoint	keep one parent (several mean AND)		
-clustering-algorithm	machine-learning-algorithm	2	2					0									no-synset			
-code		0	0	computing geography space				3			06355894	0	communication	(computer science) the symbolic arrangement of data or instructions in a computer program or the set of such instructions			no-synset			
-cognition		0	0	biology mathematics medicine term				1			00023271	0	Tops	the psychological result of perception and learning and reasoning			no-synset			
-cognitive-architecture	about(mind) theory	1	1					0									no-synset disjoint	keep one parent (several mean AND)		
-cognitive-computing	artificial-intelligence	0	0					0									no-synset			
-cognitive-robotics	robotics	0	0					0									no-synset			
-cognitive-science	about(cognition) science	0	0		06142861	cognition	1	1	0	the field of science concerned with cognition; includes parts of cognitive psychology and linguistics and computer science and cognitive neuroscience and philosophy of mind						about(cognition) science	disjoint off-wordnet shrink	keep one parent (several mean AND)		
-collaborative-filtering	machine-learning-algorithm	0	0					0									no-synset			
-collaborative-robot	automaton	0	0					0									no-synset			
-collective-intelligence	attribute	0	0					0									no-synset			
-commonsense-knowledge-base	knowledge-base	0	0					0									no-synset			
-commonsense-reasoning	artificial-intelligence	0	0					0									no-synset			
-community-detection	network-science	0	0					0									no-synset			
-companion-robot	automaton	0	0					0									no-synset			
-complex-adaptive-system	system	0	0					0									no-synset			
-complex-network	mathematical-object	2	2	term				0									no-synset			
-compositional-pattern-producing-network	artificial-neural-network	0	0					0									no-synset			
-compressed-sensing	signal-processing	0	0					0									no-synset			
-computational-humor	computational-linguistics	0	0					0									no-synset			
-computational-intelligence	artificial-intelligence	1	1					0									no-synset			
-computational-learning-theory	machine-learning	2	2					0									no-synset			
-computational-linguistics	linguistics	3	35		06168552	cognition	1	1	0	the use of computers for linguistic research and applications						linguistics	off-wordnet			
-computational-neuroscience	about(brain) artificial-intelligence	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-computational-ontology		0	0	computing term				0									no-synset			
-computational-theory-of-mind	about(mind) theory	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-computer-chess	artificial-intelligence	0	0					0									no-synset			
-computer-go	artificial-intelligence	0	0					0									no-synset			
-computer-program		0	0	computing economics				1			06568978	0	communication	(computer science) a sequence of instructions that a computer can interpret and execute			no-synset			
-computer-science		5	218	computing				1			06128570	0	cognition	the branch of engineering science that studies (with the aid of computers) computable processes and structures			no-synset			
-computer-simulation		3	4					1			05666700	0	cognition	(computer science) the technique of representing the real world by a computer program			no-synset			
-computer-vision	about(image) machine-perception	6	11					0									no-synset disjoint	keep one parent (several mean AND)		
-concept-drift	change	0	0					0									no-synset			
-concurrent-logic-programming	logic-programming	0	0					0									no-synset			
-condition		1	1	biology chemistry computing economics geography mathematics medicine space				8			05822746	1	cognition	information that should be kept in mind when making a decision			no-synset			
-conditional-random-field	statistical-model	0	0					0									no-synset			
-confusion-matrix	model-evaluation-method	0	0					0									no-synset			
-connectionism	about(mind) theory	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-connectionist-expert-system	artificial-neural-network expert-system	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-constraint-logic-programming	constraint-programming logic-programming	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-constraint-programming	computer-science	1	1					0									no-synset			
-constraint-satisfaction-problem	problem	2	2					0									no-synset			
-content-addressable-memory	device	0	0					0									no-synset			
-continual-learning	machine-learning	0	0					0									no-synset			
-contrastive-learning	self-supervised-learning	0	0					0									no-synset			
-control-system	artifact	2	2	term	03098806	artifact	1	1	0	a system for controlling the operation of another system						artifact	off-wordnet			
-control-theory	about(control-system) engineering mathematics	5	5					0									no-synset disjoint	keep one parent (several mean AND)		
-controlled-vocabulary		0	0	computing				0									no-synset			
-conversational-ai	natural-language-processing	0	0					0									no-synset			
-convex-optimization	mathematical-optimization	0	0					0									no-synset			
-convolutional-neural-network	feedforward-neural-network	3	3					0									no-synset			
-cosine-similarity	similarity-measure	0	0					0									no-synset			
-cross-validation	model-evaluation-method	0	0					0									no-synset			
-cultural-algorithm	evolutionary-algorithm	0	0					0									no-synset			
-curriculum-learning	machine-learning	0	0					0									no-synset			
-cybernetics	information-science	0	0		06142598	cognition	1	1	0	(biology) the field of science concerned with processes of communication and control (especially the comparison of these processes in biological and artificial systems)							shrink	review: rare leaf		
-danger		1	1	economics				4			14540765	18	state	the condition of being susceptible to harm or injury			no-synset			
-data-augmentation	procedure	0	0					0									no-synset			
-data-mining		4	6					1			13455234	0	process	data processing using sophisticated data search capabilities and statistical algorithms to discover patterns and correlations in large preexisting databases; a way to discover new meaning in data			no-synset			
-data-poisoning	adversarial-machine-learning	0	0					0									no-synset			
-data-processing		1	1	computing geography mathematics				1			13455487	1	process	(computer science) a series of operations on data by a computer in order to retrieve or transform or classify information			no-synset			
-database		0	0	computing geography				1			06637824	0	communication	an organized body of related information			no-synset			
-dataset		4	4	computing geography				0									no-synset			
-dbscan	clustering-algorithm	0	0					0									no-synset			
-decision-support-system	software	0	0					0									no-synset			
-decision-theory	mathematics	1	1					0									no-synset			
-decision-tree	information	0	0					0									no-synset			
-decision-tree-learning	machine-learning-algorithm	0	0					0									no-synset			
-deep-belief-network	artificial-neural-network	0	0					0									no-synset			
-deep-generative-model	generative-model	0	0					0									no-synset			
-deep-learning	machine-learning	1	1					0									no-synset			
-deep-neural-network	artificial-neural-network	0	0					0									no-synset			
-deep-q-network	artificial-neural-network	0	0					0									no-synset			
-deep-reinforcement-learning	deep-learning reinforcement-learning	0	0					0									no-synset			
-deepfake	synthetic-media	0	0					0									no-synset			
-default-logic	formal-system	0	0					0									no-synset			
-delta-robot	automaton	0	0					0									no-synset			
-dempster-shafer-theory	theory	0	0					0									no-synset			
-denoising-autoencoder	autoencoder	0	0					0									no-synset			
-depth-first-search	graph-traversal	1	1					0									no-synset			
-developmental-robotics	robotics	0	0					0									no-synset			
-device		4	4	computing economics geography medicine space				5			03183080	36	artifact	an instrumentality invented for a particular purpose			no-synset			
-diagnostic-expert-system	expert-system	0	0					0									no-synset			
-diagram		1	1	mathematics				1			03186399	6	artifact	a drawing intended to explain how something works; a drawing showing the relation between the parts			no-synset			
-dialogue-system	software	0	0					0									no-synset			
-differential-evolution	evolutionary-algorithm	0	0					0									no-synset			
-differential-privacy	attribute	0	0					0									no-synset			
-diffusion-model	generative-model latent-variable-model	0	0					0									no-synset			
-digital-twin	computer-simulation	0	0					0									no-synset			
-dijkstra-algorithm		0	0					0									no-synset			
-dimensionality-reduction	machine-learning	4	4					0									no-synset			
-distant-supervision	weakly-supervised-learning	0	0					0									no-synset			
-distilled-ai-model	ai-model	0	0					0									no-synset			
-distributed-artificial-intelligence	artificial-intelligence	0	0					0									no-synset			
-distributed-cognition	about(cognition) theory	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-distributional-semantics	computational-linguistics	0	0					0									no-synset			
-document		0	0	computing economics geography space term				4			06470073	3	communication	writing that provides information (especially information of an official nature)			no-synset			
-document-classification	about(document) statistical-classification	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-domain-adaptation	transfer-learning	0	0					0									no-synset			
-domestic-robot	service-robot	0	0					0									no-synset			
-dynamic-bayesian-network	bayesian-network	0	0					0									no-synset			
-dynamic-knowledge-graph	knowledge-graph	0	0					0									no-synset			
-early-stopping	procedure	0	0					0									no-synset			
-echo-state-network	recurrent-neural-network	0	0					0									no-synset			
-edge-detection	image-processing	0	0					0									no-synset			
-edge-of-chaos	state	0	0					0									no-synset			
-education		0	0	term				6			00883297	34	act	the activities of educating or instructing; activities that impart knowledge or skill			no-synset			
-educational-data-mining	about(education) data-mining	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-eigenvector-centrality	centrality	0	0					0									no-synset			
-elementary-cellular-automaton	cellular-automaton	0	0					0									no-synset			
-elman-network	artificial-neural-network	0	0					0									no-synset			
-embedding-model	ai-model	0	0					0									no-synset			
-embodied-agent	intelligent-agent	0	0					0									no-synset			
-embodied-artificial-intelligence	artificial-intelligence	0	0					0									no-synset			
-embodied-cognition	about(cognition) theory	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-emotion		0	0	term				1			07480068	50	feeling	any strong feeling			no-synset			
-emotion-recognition	affective-computing	0	0					0									no-synset			
-enactivism	about(cognition) theory	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-energy-based-model	ai-model statistical-model	1	2					0									no-synset disjoint	keep one parent (several mean AND)		
-engineering		2	7	computing geography space				3			00949619	6	act	the practical application of science to commerce or industry			no-synset			
-ensemble-averaging	ensemble-learning	0	0					0									no-synset			
-ensemble-learning	machine-learning	1	1					0									no-synset			
-entertainment-robot	automaton	0	0					0									no-synset			
-equation		1	1	mathematics				3			06669864	8	communication	a mathematical statement that two expressions are equal			no-synset			
-erdos-renyi-model	statistical-model	0	0					0									no-synset			
-estimation-of-distribution-algorithm	evolutionary-algorithm	0	0					0									no-synset			
-ethics-of-artificial-intelligence	philosophy-of-artificial-intelligence	2	2					0									no-synset			
-event		0	0	biology chemistry computing economics geography mathematics medicine physics space				4			00029378	62	Tops	something that happens at a given place and time			no-synset			
-evolutionary-algorithm	metaheuristic	6	6					0									no-synset			
-evolutionary-computation	artificial-intelligence	2	2					0									no-synset			
-evolutionary-robotics	robotics	0	0					0									no-synset			
-example-based-machine-translation	machine-translation	0	0					0									no-synset			
-existential-risk-from-agi	danger	0	0					0									no-synset			
-expectation-maximization	algorithm	0	0					0									no-synset			
-expectation-propagation	algorithm	0	0					0									no-synset			
-expert-system	knowledge-based-system	4	4					0									no-synset			
-explainability	attribute	0	0					0									no-synset			
-explainable-ai	about(artificial-intelligence) artificial-intelligence	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-explanation-based-learning	machine-learning	0	0					0									no-synset			
-exploration-exploitation-dilemma	problem	0	0					0									no-synset			
-extended-mind-thesis	about(mind) theory	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-f1-score	model-evaluation-method	0	0					0									no-synset			
-facial-recognition-system	software	0	0					0									no-synset			
-factor-graph	mathematical-object	0	0					0									no-synset			
-feature-detection	computer-vision	0	0					0									no-synset			
-feature-extraction	dimensionality-reduction	0	0					0									no-synset			
-feature-learning	machine-learning	3	3					0									no-synset			
-feature-selection	dimensionality-reduction	0	0					0									no-synset			
-federated-learning	machine-learning	0	0					0									no-synset			
-feedback-loop	process	2	2		13479380	process		1		the process in which part of the output of a system is returned to its input in order to regulate its further output	03326073	0	artifact	a circuit that feeds back some of the output to the input of a system		process	off-wordnet			
-feedforward-neural-network	artificial-neural-network	3	6					0									no-synset			
-few-shot-learning	machine-learning	1	1					0									no-synset			
-field-of-study		0	0					1			05996646	0	cognition	a branch of knowledge			no-synset shrink	review: rare leaf		
-fitness-function	function	0	0					0									no-synset			
-flow-based-generative-model	generative-model	0	0					0									no-synset			
-formal-system		2	2	computing mathematics				0									no-synset			
-forward-chaining	algorithm	0	0					0									no-synset			
-forward-kinematics	robotics	0	0					0									no-synset			
-foundation-model	ai-model	0	0					0									no-synset			
-frame-based-expert-system	expert-system	0	0					0									no-synset			
-frame-problem	problem	0	0					0									no-synset			
-friendly-artificial-intelligence	artificial-general-intelligence	0	0					0									no-synset			
-function		6	9	computing geography mathematics				7			07447261	0	event	a vaguely specified social event			no-synset			
-functional-logic-programming	logic-programming	0	0					0									no-synset			
-fuzzy-set	mathematical-set	0	0					0									no-synset			
-game		0	0	economics term				11			00455599	38	act	a contest with rules to determine a winner			no-synset			
-game-of-life	cellular-automaton	0	0					0									no-synset			
-game-theory		0	0	economics				1			06150222	0	cognition	(economics) a theory of competition stated in terms of gains and losses among opposing players			no-synset			
-game-tree	mathematical-object	0	0					0									no-synset			
-gated-recurrent-unit	recurrent-neural-network	0	0					0									no-synset			
-gaussian-mixture-model	mixture-model	0	0					0									no-synset			
-gaussian-process	mathematical-object	0	0					0									no-synset			
-general-game-playing	about(game) artificial-intelligence	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-generalization-error	amount	0	0					0									no-synset			
-generative-adversarial-network	generative-model	0	0					0									no-synset			
-generative-ai	artificial-intelligence generative-model	1	1					0									no-synset disjoint	keep one parent (several mean AND)		
-generative-ai-chatbot	chatbot	0	0					0									no-synset			
-generative-model	ai-model statistical-model	9	10					0									no-synset disjoint	keep one parent (several mean AND)		
-generative-pre-trained-transformer	large-language-model	0	0					0									no-synset			
-genetic-algorithm	evolutionary-algorithm informed-search-algorithm	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-genetic-programming	evolutionary-computation	0	0					0									no-synset			
-geometric-feature-learning	feature-learning	0	0					0									no-synset			
-gibbs-sampling	markov-chain-monte-carlo	0	0					0									no-synset			
-gofai	symbolic-ai	0	0					0									no-synset			
-goodharts-law	proposition	0	0					0									no-synset			
-governance-of-artificial-intelligence	management	0	0					0									no-synset			
-gradient-boosting	boosting-algorithm	0	0					0									no-synset			
-gradient-descent	algorithm	1	2					0									no-synset			
-graph-attention-network	artificial-neural-network	0	0					0									no-synset			
-graph-convolutional-network	artificial-neural-network	0	0					0									no-synset			
-graph-embedding	vector-embedding	1	1					0									no-synset			
-graph-neural-network	artificial-neural-network	0	0					0									no-synset			
-graph-traversal	search-algorithm	3	4					0									no-synset			
-greedy-algorithm		0	0					0									no-synset			
-grid-search	hyperparameter-optimization	0	0					0									no-synset			
-handwriting-recognition	about(text) pattern-recognition	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-hebbian-learning	theory	0	0					0									no-synset			
-heuristic	rule	0	0		05847956	cognition	1	1	0	a commonsense rule (or set of rules) intended to increase the probability of solving some problem						rule	off-wordnet shrink	review: rare leaf		
-heuristic-search-algorithm	search-algorithm	0	0					0									no-synset			
-hidden-layer	neural-network-layer	0	0					0									no-synset			
-hidden-markov-model	latent-variable-model	0	0					0									no-synset			
-hierarchical-classifier	classification-algorithm	0	0					0									no-synset			
-hierarchical-clustering	cluster-analysis	0	0					0									no-synset			
-hierarchical-task-network	automated-planning	0	0					0									no-synset			
-hierarchical-temporal-memory	artificial-neural-network	0	0					0									no-synset			
-hill-climbing-search	search-algorithm	0	0					0									no-synset			
-hits-algorithm	algorithm	0	0					0									no-synset			
-hopfield-network	recurrent-neural-network	0	0					0									no-synset			
-horn-clause	mathematical-expression	0	0					0									no-synset			
-human-based-computation	computer-science	0	0					0									no-synset			
-human-computer-interaction		1	1					0									no-synset			
-human-robot-interaction	human-computer-interaction robotics	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-humanoid-robot	automaton	0	0	term				0									no-synset			
-hyperparameter	amount	0	0					0									no-synset			
-hyperparameter-optimization	automated-machine-learning mathematical-optimization	2	2					0									no-synset disjoint	keep one parent (several mean AND)		
-hypothesis		2	2	economics space				3			06782680	0	communication	a message expressing an opinion based on incomplete evidence			no-synset			
-image		0	0	computing geography space term				9			05928118	31	cognition	an iconic mental representation			no-synset			
-image-classification	computer-vision image-processing	0	0					0									no-synset			
-image-dataset	about(image) dataset	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-image-processing	about(image) signal-processing	3	3					0									no-synset disjoint	keep one parent (several mean AND)		
-image-segmentation	computer-vision	3	3					0									no-synset			
-image-to-image-translation	image-processing machine-learning	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-imitation-learning	robot-learning	1	1					0									no-synset			
-incremental-learning	machine-learning	1	1					0									no-synset			
-independent-component-analysis	unsupervised-learning	0	0					0									no-synset			
-inductive-bias	principle	0	0					0									no-synset			
-inductive-logic-programming	inductive-programming logic-programming	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-inductive-programming	machine-learning	1	1					0									no-synset			
-industrial-robot	automaton	0	0					0									no-synset			
-inference-engine	software	1	1					0									no-synset			
-influence-diagram	diagram	0	0					0									no-synset			
-information		11	106	biology chemistry computing economics geography mathematics medicine term				5			06634376	102	communication	a message received and understood			no-synset			
-information-bottleneck	method	0	0					0									no-synset			
-information-extraction	information-retrieval natural-language-processing	1	1					0									no-synset disjoint	keep one parent (several mean AND)		
-information-retrieval		1	2	computing				0									no-synset			
-information-science	about(information) computer-science	2	34		06142118	cognition	1	1	0	the sciences concerned with gathering, manipulating, storing, retrieving, and classifying recorded information						about(information) computer-science	disjoint off-wordnet	keep one parent (several mean AND)		
-informed-search-algorithm	search-algorithm	2	3					0									no-synset			
-instance-based-learning	machine-learning	0	0					0									no-synset			
-instance-segmentation	image-segmentation	0	0					0									no-synset			
-instruction-tuned-model	large-language-model	0	0					0									no-synset			
-instrumental-convergence	hypothesis	0	0					0									no-synset			
-intelligence-amplification	activity	0	0					0									no-synset			
-intelligent-agent	agent	3	3					0									no-synset			
-intelligent-system	software	0	0					0									no-synset			
-intelligent-tutoring-system	software	0	0					0									no-synset			
-interactive-machine-learning	machine-learning	0	0					0									no-synset			
-internet-bot	software-agent	1	1					0									no-synset			
-inverse-kinematics	robotics	0	0					0									no-synset			
-inverse-reinforcement-learning	reinforcement-learning	0	0					0									no-synset			
-isomap	machine-learning-algorithm	0	0					0									no-synset			
-iterative-deepening-depth-first-search	depth-first-search	0	0					0									no-synset			
-junction-tree-algorithm	algorithm	0	0					0									no-synset			
-k-means-clustering	clustering-algorithm	0	0					0									no-synset			
-k-nearest-neighbors	classification-algorithm	0	0					0									no-synset			
-kalman-filter	algorithm	0	0					0									no-synset			
-kernel-method	machine-learning-algorithm	0	0					0									no-synset			
-knowledge-base		1	1	computing				1			05999266	0	cognition	the content of a particular field of knowledge			no-synset			
-knowledge-based-agent	intelligent-agent	0	0					0									no-synset			
-knowledge-based-system	software	2	6					0									no-synset			
-knowledge-distillation	machine-learning	0	0					0									no-synset			
-knowledge-engineering	artificial-intelligence	3	3					0									no-synset			
-knowledge-extraction	data-mining	0	0					0									no-synset			
-knowledge-graph		2	2	computing				0									no-synset			
-knowledge-graph-embedding	graph-embedding	0	0					0									no-synset			
-knowledge-management	management	0	0					0									no-synset			
-knowledge-representation	artificial-intelligence	1	1					0									no-synset			
-kolmogorov-complexity		0	0					0									no-synset			
-langtons-ant	cellular-automaton	0	0					0									no-synset			
-language		2	2	computing term				6			06282651	48	communication	a systematic means of communicating by the use of sounds or conventional symbols			no-synset			
-language-model	about(language) ai-model statistical-model	4	10					0									no-synset disjoint	keep one parent (several mean AND)		
-large-action-model	large-language-model	0	0					0									no-synset			
-large-language-model	language-model	6	6					0									no-synset			
-latent-dirichlet-allocation	generative-model	0	0					0									no-synset			
-latent-space	mathematical-space	0	0					0									no-synset			
-latent-variable-model	statistical-model	4	5					0									no-synset			
-law		1	1					7			05870916	11	cognition	a rule or body of rules of conduct inherent in human nature and essential to or binding upon human society			no-synset			
-lazy-learning	machine-learning	0	0					0									no-synset			
-learning-analytics	artificial-intelligence	0	0					0									no-synset			
-learning-rate	amount	0	0					0									no-synset			
-lemmatization	natural-language-processing	0	0					0									no-synset			
-lidar		0	0					1			03661621	0	artifact	a measuring system that detects and locates objects on the same principle as radar but uses light from a laser; a potential technology for detecting air turbulence that can affect aircraft			no-synset shrink	review: rare leaf		
-life-like-cellular-automaton	cellular-automaton	0	0					0									no-synset			
-linear-classifier	classification-algorithm	1	1					0									no-synset			
-linear-discriminant-analysis	classification-algorithm	0	0					0									no-synset			
-linear-programming	mathematical-optimization	0	0					1			06018267	0	cognition	a mathematical technique used in economics; finds the maximum or minimum of linear functions in many variables subject to constraints			no-synset shrink	review: rare leaf		
-linguistics		1	36					2			06172789	2	cognition	the scientific study of language			no-synset			
-link-prediction	network-science	0	0					0									no-synset			
-linked-data		0	0	computing				0									no-synset			
-linked-open-data		0	0					0									no-synset			
-locality-sensitive-hashing	algorithm	0	0					0									no-synset			
-logic-programming		6	6	computing				2			06902193	0	communication	a computer language designed in Europe to support natural language processing			no-synset			
-logic-programming-language	language	0	0					0									no-synset			
-logistic-regression	classification-algorithm statistical-model	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-long-short-term-memory	recurrent-neural-network	0	0					0									no-synset			
-loss-function	function	0	0					0									no-synset			
-machine		1	1	computing				6			03699975	33	artifact	any mechanical or electrical device that transmits or modifies energy to perform or assist in the performance of human tasks			no-synset			
-machine-ethics	ethics-of-artificial-intelligence	0	0					0									no-synset			
-machine-learning	computer-science	42	88					0									no-synset			
-machine-learning-algorithm	algorithm	14	27					0									no-synset			
-machine-perception	artificial-intelligence	3	14					0									no-synset			
-machine-reading-comprehension	natural-language-processing	0	0					0									no-synset			
-machine-translation	natural-language-processing	4	4		06133503	cognition	1	1	0	the use of computers to translate from one language to another						natural-language-processing	off-wordnet			
-management		2	2	economics				2			01133281	19	act	the act of managing something			no-synset			
-markov-chain	mathematical-object	0	0					1			13511368	0	process	a Markov process for which the parameter is discrete time values			no-synset shrink	review: rare leaf		
-markov-chain-monte-carlo	monte-carlo-method	2	2					0									no-synset			
-markov-decision-process	mathematical-object	0	0					0									no-synset			
-masked-language-model	language-model	0	0					0									no-synset			
-mathematical-expression		1	1	mathematics				0									no-synset			
-mathematical-object		8	15	computing economics geography mathematics physics				0									no-synset			
-mathematical-optimization	mathematics	3	5					0									no-synset			
-mathematical-set		1	1	mathematics				0									no-synset			
-mathematical-space		1	1	mathematics physics				1			08001685	0	group	(mathematics) any set of points that satisfy a set of postulates of some kind			no-synset			
-mathematics		4	17	computing economics mathematics				1			06000644	4	cognition	a science (or group of related sciences) dealing with the logic of quantity and shape and arrangement			no-synset			
-maximum-likelihood-estimation	procedure	0	0					0									no-synset			
-mechanism		1	1	computing				5			03738472	0	artifact	device consisting of a piece of machinery; has moving parts that perform some function			no-synset			
-medical-robot	automaton	0	0					0									no-synset			
-membership-inference-attack	adversarial-machine-learning	0	0					0									no-synset			
-memetic-algorithm	evolutionary-algorithm	0	0					0									no-synset			
-memory-augmented-neural-network	artificial-neural-network	1	1					0									no-synset			
-meta-learning	machine-learning	0	0					0									no-synset			
-metaheuristic	algorithm	5	11					0									no-synset			
-method		4	11	computing economics geography mathematics medicine space				2			05660268	95	cognition	a way of doing something, especially a systematic way; implies an orderly logical arrangement (usually in steps)			no-synset			
-metropolis-hastings-algorithm	markov-chain-monte-carlo	0	0					0									no-synset			
-microbot	automaton	0	0					0									no-synset			
-microbotics	robotics	0	0					0									no-synset			
-military-robot	automaton	1	1					0									no-synset			
-mind		0	0	term				7			05611302	120	cognition	that which is responsible for one's thoughts and feelings; the seat of the faculty of reason			no-synset			
-minimax-rule	algorithm	0	0					0									no-synset			
-minimum-description-length	principle	0	0					0									no-synset			
-mixture-model	latent-variable-model	1	1					0									no-synset			
-mixture-of-experts-model	large-language-model transformer-model	0	0					0									no-synset			
-mobile-robot	automaton	1	1					0									no-synset			
-mobile-robotics	robotics	0	0					0									no-synset			
-model-evaluation-method	method	5	5					0									no-synset			
-model-free-reinforcement-learning	reinforcement-learning	0	0					0									no-synset			
-model-predictive-control	control-theory	0	0					0									no-synset			
-modular-neural-network	artificial-neural-network	0	0					0									no-synset			
-monte-carlo-algorithm	algorithm	0	0					0									no-synset			
-monte-carlo-method	algorithm	1	3					0									no-synset			
-monte-carlo-tree-search	search-algorithm	0	0					0									no-synset			
-morphological-analysis	natural-language-processing	0	0					0									no-synset			
-motion-planning	robotics	1	2					0									no-synset			
-multi-agent-reinforcement-learning	reinforcement-learning	0	0					0									no-synset			
-multi-agent-system	software	0	0					0									no-synset			
-multi-armed-bandit	problem	0	0					0									no-synset			
-multi-head-attention	attention-mechanism	0	0					0									no-synset			
-multi-task-learning	machine-learning	0	0					0									no-synset			
-multiclass-classification	statistical-classification	0	0					0									no-synset			
-multilayer-perceptron	feedforward-neural-network	0	0					0									no-synset			
-multimodal-artificial-intelligence	artificial-intelligence	0	0					0									no-synset			
-multimodal-large-language-model	large-language-model	0	0					0									no-synset			
-multimodal-learning	machine-learning	0	0					0									no-synset			
-multiple-instance-learning	supervised-learning	0	0					0									no-synset			
-mutual-information		0	0					0									no-synset			
-n-gram	information	0	0					0									no-synset			
-naive-bayes-classifier	bayes-classifier	0	0					0									no-synset			
-named-entity-recognition	information-extraction	0	0					0									no-synset			
-nanorobotics	robotics	0	0					0									no-synset			
-natural-language-generation	natural-language-processing	0	0					0									no-synset			
-natural-language-processing	artificial-intelligence computational-linguistics information-science	25	32		06142412	cognition	1	1	0	the branch of information science that deals with natural language information						artificial-intelligence computational-linguistics	disjoint off-wordnet	keep one parent (several mean AND)		
-natural-language-understanding	natural-language-processing	0	0					0									no-synset			
-nearest-neighbor-classifier	classification-algorithm	0	0					0									no-synset			
-neat-algorithm	evolutionary-algorithm	0	0					0									no-synset			
-negative-feedback	feedback-loop	0	0					1			13520731	0	process	feedback in opposite phase with (decreasing) the input	feedback-loop		no-synset shrink	review: rare leaf		
-network-science	about(complex-network) mathematics	2	2					0									no-synset disjoint	keep one parent (several mean AND)		
-neural-architecture-search	automated-machine-learning	0	0					0									no-synset			
-neural-machine-translation	machine-translation	0	0					0									no-synset			
-neural-network-layer	information	1	1					0									no-synset			
-neural-network-model	artificial-neural-network	0	0					0									no-synset			
-neural-radiance-field	ai-model	0	0					0									no-synset			
-neural-turing-machine	memory-augmented-neural-network	0	0					0									no-synset			
-neuro-symbolic-ai	artificial-intelligence	0	0					0									no-synset			
-neuroevolution	evolutionary-computation	0	0					0									no-synset			
-neuromorphic-engineering	engineering	0	0					0									no-synset			
-neurorobotics	robotics	0	0					0									no-synset			
-no-free-lunch-theorem	theorem	0	0					0									no-synset			
-non-negative-matrix-factorization	algorithm	0	0					0									no-synset			
-nonlinear-dimensionality-reduction	dimensionality-reduction	0	0					0									no-synset			
-nouvelle-ai	artificial-intelligence	0	0					0									no-synset			
-object-detection	computer-vision	1	1					0									no-synset			
-obstacle-avoidance	path-planning robot-navigation	0	0					0									no-synset			
-one-class-classification	statistical-classification	0	0					0									no-synset			
-one-shot-learning	few-shot-learning	0	0					0									no-synset			
-online-algorithm	algorithm	0	0					0									no-synset			
-online-machine-learning	incremental-learning	0	0					0									no-synset			
-ontology-alignment	about(computational-ontology) data-processing knowledge-engineering	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-ontology-engineering	about(computational-ontology) knowledge-engineering	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-ontology-learning	about(computational-ontology) knowledge-engineering	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-open-world-assumption	principle	0	0					0									no-synset			
-operations-research	research	0	0		00637546	act	1	1	0	research designed to determine most efficient way to do something						research	off-wordnet shrink	review: rare leaf		
-optical-character-recognition	about(text) pattern-recognition	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-optical-flow	attribute	0	0					0									no-synset			
-optimal-control	control-theory	0	0					0									no-synset			
-overfitting	condition	0	0					0									no-synset			
-pac-learning	computational-learning-theory	0	0					0									no-synset			
-pagerank		0	0					0									no-synset			
-panoptic-segmentation	image-segmentation	0	0					0									no-synset			
-parser		0	0	computing				1			06577369	0	communication	a computer program that divides code up into functional components			no-synset			
-part-of-speech-tagging	natural-language-processing	0	0					0									no-synset			
-partial-order-planning	automated-planning	0	0					0									no-synset			
-particle-filter	algorithm	0	0					0									no-synset			
-particle-swarm-optimization	metaheuristic	0	0					0									no-synset			
-path-planning	motion-planning	1	1					0									no-synset			
-pathfinding	search-algorithm	0	0					0									no-synset			
-pattern-recognition	machine-learning	3	3					0									no-synset			
-pddl	language	0	0					0									no-synset			
-pedestrian-detection	object-detection	0	0					0									no-synset			
-perceptron	feedforward-neural-network linear-classifier	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-personal-robot	automaton	0	0					0									no-synset			
-philosophy		1	4					3			06158346	8	cognition	the rational investigation of questions about existence and knowledge and ethics			no-synset			
-philosophy-of-artificial-intelligence	about(artificial-intelligence) philosophy	1	3					0									no-synset disjoint	keep one parent (several mean AND)		
-plan		0	0	economics medicine term				3			05728678	10	cognition	an arrangement scheme			no-synset			
-policy-gradient-method	reinforcement-learning	0	0					0									no-synset			
-positive-feedback	feedback-loop	0	0					1			13539262	1	process	feedback in phase with (augmenting) the input	feedback-loop		no-synset shrink	review: rare leaf		
-precision-and-recall	model-evaluation-method	0	0					0									no-synset			
-predictive-modeling	machine-learning	0	0					0									no-synset			
-preference-elicitation	procedure	0	0					0									no-synset			
-preference-learning	machine-learning	0	0					0									no-synset			
-preferential-attachment	process	0	0					0									no-synset			
-principal-component-analysis	dimensionality-reduction	0	0					0									no-synset			
-principle		4	4	economics				6			05872477	7	cognition	a basic truth or law or assumption			no-synset			
-problem		9	13	computing economics mathematics				3			05687338	17	cognition	a source of difficulty			no-synset			
-procedure		10	10	biology computing economics mathematics medicine				4			01023636	0	act	a mode of conducting legal and parliamentary proceedings			no-synset			
-process		3	5	biology chemistry computing economics geography medicine physics space				6			01023820	63	act	a particular course of action intended to achieve a result			no-synset			
-prompt-engineering	procedure	0	0					0									no-synset			
-proposition		1	1	computing mathematics				5			06750804	6	communication	(logic) a statement that affirms or denies something and is either true or false			no-synset			
-proximal-policy-optimization	machine-learning-algorithm	0	0					0									no-synset			
-pulse-coupled-network	artificial-neural-network	0	0					0									no-synset			
-q-learning	machine-learning-algorithm	0	0					0									no-synset			
-qualitative-reasoning	artificial-intelligence	0	0					0									no-synset			
-quantum-machine-learning	machine-learning	0	0					0									no-synset			
-quantum-neural-network	artificial-neural-network	0	0					0									no-synset			
-question-answering	natural-language-processing	0	0					0									no-synset			
-rademacher-complexity	amount	0	0					0									no-synset			
-radial-basis-function	function	0	0					0									no-synset			
-radial-basis-function-network	artificial-neural-network	0	0					0									no-synset			
-random-forest	machine-learning-algorithm	0	0					0									no-synset			
-rational-agent	agent	0	0					0									no-synset			
-rdf-graph		0	0					0									no-synset			
-reactive-planning	automated-planning	0	0					0									no-synset			
-reasoning-language-model	large-language-model	0	0					0									no-synset			
-receiver-operating-characteristic	model-evaluation-method	0	0					0									no-synset			
-recommender-system	software	0	0					0									no-synset			
-recurrent-neural-network	artificial-neural-network	9	9					0									no-synset			
-recursive-neural-network	recurrent-neural-network	0	0					0									no-synset			
-region-based-convolutional-neural-network	convolutional-neural-network	0	0					0									no-synset			
-regulation-of-artificial-intelligence	about(artificial-intelligence) law	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-reinforcement-learning	machine-learning	6	6					0									no-synset			
-reinforcement-learning-from-human-feedback	reinforcement-learning	0	0					0									no-synset			
-relationship-extraction	text-mining	0	0					0									no-synset			
-rescue-robot	automaton	0	0					0									no-synset			
-research		1	1					2			00636921	46	act	systematic investigation to establish facts			no-synset			
-reservoir-computing	recurrent-neural-network	0	0					0									no-synset			
-residual-neural-network	artificial-neural-network	0	0					0									no-synset			
-resource-description-framework		0	0					0									no-synset			
-restricted-boltzmann-machine	boltzmann-machine stochastic-neural-network	0	0					0									no-synset			
-retrieval-augmented-generation	generative-ai natural-language-processing	0	0					0									no-synset			
-reversible-cellular-automaton	cellular-automaton	0	0					0									no-synset			
-reward-hacking	specification-gaming	0	0					0									no-synset			
-roboethics	ethics-of-artificial-intelligence	0	0					0									no-synset			
-robot-control	robotics	0	0					0									no-synset			
-robot-end-effector	device	0	0					0									no-synset			
-robot-learning	machine-learning	1	2					0									no-synset			
-robot-navigation	robotics	2	2					0									no-synset			
-robot-planning	robotics	0	0					0									no-synset			
-robot-rights	attribute	0	0					0									no-synset			
-robotic-arm	automaton	0	0					0									no-synset			
-robotic-manipulator	machine	0	0					0									no-synset			
-robotic-spacecraft	automaton	0	0					0									no-synset			
-robotics	about(automaton) artificial-intelligence	22	25		06133654	cognition	1	1	0	the area of AI concerned with the practical use of robots						about(automaton)	disjoint off-wordnet	keep one parent (several mean AND)		
-robust-control	control-theory	0	0					0									no-synset			
-rule		1	1	computing economics mathematics				12			04118776	0	artifact	measuring stick consisting of a strip of wood or metal or plastic with a straight edge that is used for drawing straight lines and measuring lengths			no-synset			
-rule-based-expert-system	expert-system	0	0					0									no-synset			
-rule-based-machine-learning	machine-learning	0	0					0									no-synset			
-rule-based-machine-translation	machine-translation	0	0					0									no-synset			
-rule-based-system	knowledge-based-system	0	0					0									no-synset			
-rule-induction	machine-learning	0	0					0									no-synset			
-sample-complexity	amount	0	0					0									no-synset			
-sat-solver	software	0	0					0									no-synset			
-satisficing	method	0	0					0									no-synset			
-scalable-oversight	ai-alignment	0	0					0									no-synset			
-scale-free-network	complex-network	0	0					0									no-synset			
-science		1	1					2			05999797	5	cognition	a particular branch of scientific knowledge			no-synset			
-search-algorithm		11	18	computing				0									no-synset			
-self-attention	attention-mechanism	0	0					0									no-synset			
-self-organization	process	0	0					0									no-synset			
-self-organizing-map	artificial-neural-network	0	0					0									no-synset			
-self-reconfiguring-modular-robot	automaton	0	0					0									no-synset			
-self-supervised-learning	unsupervised-learning	1	1					0									no-synset			
-semantic-analysis	natural-language-processing	0	0					0									no-synset			
-semantic-network	knowledge-representation	0	0					0									no-synset			
-semantic-parsing	natural-language-processing	0	0					0									no-synset			
-semantic-reasoner	inference-engine	0	0					0									no-synset			
-semantic-role-labeling	natural-language-processing	0	0					0									no-synset			
-semantic-segmentation	image-segmentation	0	0					0									no-synset			
-semantic-web		0	0					0									no-synset			
-semi-supervised-learning	machine-learning	0	0					0									no-synset			
-sensor-fusion	machine-perception	0	0					0									no-synset			
-sentence-embedding	feature-learning natural-language-processing	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-sentiment-analysis	affective-computing natural-language-processing	0	0					0									no-synset			
-sequence-labeling	pattern-recognition	0	0					0									no-synset			
-sequence-to-sequence-learning	machine-learning	0	0					0									no-synset			
-service-robot	automaton	1	1					0									no-synset			
-servo	control-system mechanism	0	0		04176295	artifact	1	1	0	control system that converts a small mechanical motion into one requiring much greater power; may include a negative feedback system						mechanism	disjoint off-wordnet shrink	keep one parent (several mean AND)		
-sigmoid-function	activation-function	0	0					0									no-synset			
-signal-processing		4	7	computing				0									no-synset			
-similarity-measure	function	1	1					0									no-synset			
-simulated-annealing	metaheuristic	0	0					0									no-synset			
-simultaneous-localization-and-mapping	robot-navigation	0	0					0									no-synset			
-situated-cognition	about(cognition) theory	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-situation-calculus	formal-system	0	0					0									no-synset			
-small-language-model	language-model	0	0					0									no-synset			
-small-world-network	complex-network	0	0					0									no-synset			
-social-robot	automaton	0	0					0									no-synset			
-social-robotics	robotics	0	0					0									no-synset			
-soft-robotics	robotics	0	0					0									no-synset			
-softmax-function	activation-function	0	0					0									no-synset			
-software		14	22	computing economics geography				1			06566077	0	communication	(computer science) written programs or procedures or rules and associated documentation pertaining to the operation of a computer system and that are stored in read/write memory			no-synset			
-software-agent		3	5					0									no-synset			
-sorting-algorithm		0	0	computing				1			05847658	0	cognition	an algorithm for sorting a list			no-synset			
-sparql		0	0					0									no-synset			
-sparse-dictionary-learning	feature-learning	0	0					0									no-synset			
-sparse-distributed-memory	ai-model	0	0					0									no-synset			
-spatial-temporal-reasoning	artificial-intelligence	0	0					0									no-synset			
-speaker-verification	about(speech) signal-processing	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-specification-gaming	problem	1	1					0									no-synset			
-speech		0	0	term				8			07238694	16	communication	the act of delivering a formal spoken communication to an audience			no-synset			
-speech-dataset	about(speech) dataset	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-speech-recognition	machine-perception natural-language-processing	0	0					0									no-synset			
-speech-synthesis	natural-language-processing	0	0					0									no-synset			
-spiking-neural-network	artificial-neural-network	0	0					0									no-synset			
-state		1	1	biology chemistry computing economics medicine physics				8			08654360	108	location	the territory occupied by one of the constituent administrative districts of a nation			no-synset			
-state-observer	system	0	0					0									no-synset			
-state-space-search	search-algorithm	0	0					0									no-synset			
-statistical-classification	machine-learning	5	5					0									no-synset			
-statistical-language-model	language-model	0	0					0									no-synset			
-statistical-learning-theory	computational-learning-theory	0	0					0									no-synset			
-statistical-machine-translation	machine-translation	0	0					0									no-synset			
-statistical-model	information	11	38					0									no-synset			
-statistical-relational-learning	machine-learning	0	0					0									no-synset			
-statistics		1	3					1			06018465	0	cognition	a branch of applied mathematics concerned with the collection and interpretation of quantitative data and the use of probability theory to estimate population parameters			no-synset			
-stemmer	algorithm	0	0		05847753	cognition	3	5	0	an algorithm for removing inflectional and derivational endings in order to reduce word forms to a common stem	10664656	0	person	a worker who strips the stems from moistened tobacco leaves and binds the leaves together into books		algorithm	off-wordnet shrink	review: rare leaf		
-stemming	natural-language-processing	0	0					0									no-synset			
-stochastic-block-model	generative-model	0	0					0									no-synset			
-stochastic-gradient-descent	gradient-descent	1	1					0									no-synset			
-stochastic-neural-network	artificial-neural-network	1	1					0									no-synset			
-stop-word	word	0	0					0									no-synset			
-string-searching-algorithm		0	0	computing				0									no-synset			
-structure-from-motion	3d-reconstruction	0	0					0									no-synset			
-structured-prediction	machine-learning	0	0					0									no-synset			
-subsumption-architecture	cognitive-architecture	0	0					0									no-synset			
-superintelligence	artificial-general-intelligence	0	0					0									no-synset			
-supervised-learning	machine-learning	3	4					0									no-synset			
-support-vector-machine	classification-algorithm	0	0					0									no-synset			
-swarm-intelligence	artificial-intelligence	0	0					0									no-synset			
-swarm-robotics	robotics	0	0					0									no-synset			
-symbol-grounding-problem	problem	0	0					0									no-synset			
-symbolic-ai	artificial-intelligence	1	1					0									no-synset			
-syntactic-parsing	natural-language-processing	0	0					0									no-synset			
-synthetic-data	information	0	0					0									no-synset			
-synthetic-media	information	1	1					0									no-synset			
-system		2	2	biology computing economics geography				9			08435388	23	group	a group of independent but interrelated elements comprising a unified whole			no-synset			
-system-identification	control-theory	0	0					0									no-synset			
-t-sne	machine-learning-algorithm	0	0					0									no-synset			
-tabu-search	metaheuristic	0	0					0									no-synset			
-teacher-forcing	procedure	0	0					0									no-synset			
-teleoperation	procedure	0	0					0									no-synset			
-telerobotics	robotics	0	0		06133935	cognition	1	1	0	the area of robotics that is concerned with the control of robots from a distance							shrink	review: rare leaf		
-temporal-knowledge-graph	knowledge-graph	0	0					0									no-synset			
-text		0	0	computing term				4			06387980	53	communication	the words of something written			no-synset			
-text-classification	natural-language-processing statistical-classification	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-text-mining	natural-language-processing	2	2					0									no-synset			
-text-segmentation	natural-language-processing	0	0					0									no-synset			
-text-to-image-model	generative-model	0	0					0									no-synset			
-text-to-video-model	generative-model	0	0					0									no-synset			
-text-tokenization	natural-language-processing	0	0					0									no-synset			
-tf-idf		0	0					0									no-synset			
-theorem		2	2	computing mathematics term				2			06752293	14	communication	a proposition deducible from basic postulates			no-synset			
-theory		10	11	biology chemistry economics geography medicine physics space				3			05888929	18	cognition	a tentative insight into the natural world; a concept that is not yet verified but that if true would explain certain facts or phenomena			no-synset			
-thinking		3	3	economics mathematics				1			05770926	11	cognition	the process of using your mind to consider something carefully			no-synset			
-thompson-sampling	algorithm	0	0					0									no-synset			
-topic-model	latent-variable-model	0	0					0									no-synset			
-toy-problem	problem	1	1					0									no-synset			
-training-set	dataset	0	0					0									no-synset			
-transductive-learning	supervised-learning	0	0					0									no-synset			
-transfer-learning	machine-learning	1	1					0									no-synset			
-transformer-model	artificial-neural-network	3	3					0									no-synset			
-tree-traversal	graph-traversal	0	0					0									no-synset			
-triplestore		0	0					0									no-synset			
-turing-test	procedure	0	0					0									no-synset			
-u-net	convolutional-neural-network	0	0					0									no-synset			
-uncanny-valley	about(humanoid-robot) hypothesis	0	0					0									no-synset disjoint	keep one parent (several mean AND)		
-underwater-robot	automaton	0	0					0									no-synset			
-uniform-cost-search	search-algorithm	0	0					0									no-synset			
-uninformed-search-algorithm	search-algorithm	0	0					0									no-synset			
-universal-approximation-theorem	theorem	0	0					0									no-synset			
-unsupervised-learning	machine-learning	2	3					0									no-synset			
-upper-confidence-bound	algorithm	0	0					0									no-synset			
-user-modeling	activity	0	0					0									no-synset			
-value-alignment	ai-alignment	0	0					0									no-synset			
-value-function	function	0	0					0									no-synset			
-vanishing-gradient-problem	problem	0	0					0									no-synset			
-variational-autoencoder	autoencoder	0	0					0									no-synset			
-vector-database	software	0	0					0									no-synset			
-vector-embedding	information	2	3					0									no-synset			
-vehicle		1	7	economics space				4			04524313	9	artifact	a conveyance that transports people or objects			no-synset			
-virtual-assistant	software-agent	0	0					0									no-synset			
-virtual-human	computer-simulation	0	0					0									no-synset			
-vision-transformer	transformer-model	0	0					0									no-synset			
-visual-odometry	computer-vision	0	0					0									no-synset			
-voice-user-interface	software	0	0					0									no-synset			
-weak-artificial-intelligence	artificial-intelligence	0	0					0									no-synset			
-weakly-supervised-learning	supervised-learning	1	1					0									no-synset			
-web-crawler	internet-bot	0	0					0									no-synset			
-web-ontology-language		0	0					0									no-synset			
-weighted-constraint-satisfaction-problem	constraint-satisfaction-problem	0	0					0									no-synset			
-winner-take-all-network	recurrent-neural-network	0	0					0									no-synset			
-word		1	1	mathematics				10			06286395	117	communication	a unit of language that native speakers can identify			no-synset			
-word-embedding	vector-embedding	0	0					0									no-synset			
-word-sense-disambiguation	natural-language-processing	0	0					0									no-synset			
-world-model	ai-model	0	0					0									no-synset			
-zero-shot-learning	machine-learning	0	0					0									no-synset			
+name	parents	children	descendants	used_by	wn30	lexfile	rank	senses	tags	gloss	everyday	everyday_tags	everyday_lexfile	everyday_gloss	everyday_parent	off_wordnet	flags	recommendation	decision	note	zipf	first	first_by	twin	twin_sim	parents_sim	misfit	trap
+3d-reconstruction	image-processing	1	1					0									no-synset				3.84					image-processing:0.42	0.65	
+a-star-search	best-first-search	0	0					0									no-synset				4.76					best-first-search:0.43	0.18	
+abductive-logic-programming	logic-programming	0	0					0									no-synset				1.52							
+abductive-reasoning	thinking	0	0					0									no-synset				1.52					thinking:0.24	0.79	
+activation-function	function	2	2					0									no-synset				3.78					function:0.25	0.73	
+active-learning	machine-learning	0	0					0									no-synset				4.62					machine-learning:0.56	0.27	
+activity		4	4	biology chemistry computing economics geography medicine space				6			04635104	0	attribute	the trait of being active; moving or acting rapidly and energetically			no-synset											
+actor-critic-algorithm	machine-learning-algorithm	0	0					0									no-synset				3.64					machine-learning-algorithm:0.33	0.66	
+actuator	device	0	0					1			02678384	0	artifact	a mechanism that puts something into automatic action			no-synset shrink	review: rare leaf			2.77					device:0.33	0.76	
+adam-optimizer	stochastic-gradient-descent	0	0					0									no-synset				2.27					stochastic-gradient-descent:0.45	0.15	
+adaptive-control	control-theory	0	0					0									no-synset				3.60					control-theory:0.65	0.18	
+adversarial-example	information	0	0					0									no-synset				2.84					information:0.23	0.81	
+adversarial-machine-learning	machine-learning	0	0					0									no-synset				2.83					machine-learning:0.59	0.41	
+adversarial-training	method	0	0					0									no-synset				2.84					method:0.02	0.95	
+affective-computing	about(emotion) artificial-intelligence	0	0					0									no-synset disjoint	keep one parent (several mean AND)			2.96					artificial-intelligence:0.37	0.64	
+agent		2	8	economics medicine				6			09777353	6	person	a representative who acts on behalf of other persons or organizations			no-synset											
+agent-based-model	computer-simulation	1	1					0									no-synset				4.59							
+agricultural-robot	automaton	0	0					0									no-synset				3.99					automaton:0.27	0.63	
+ai-agent	intelligent-agent	0	0					0									no-synset				4.13					intelligent-agent:0.86	0.06	
+ai-alignment	ai-safety	2	2					0									no-synset				3.65					ai-safety:0.53	0.09	
+ai-model	information	11	74					0									no-synset				4.18					information:0.30	0.63	
+ai-safety	about(artificial-intelligence) artificial-intelligence	1	3					0									no-synset disjoint	keep one parent (several mean AND)			4.16					artificial-intelligence:0.43	0.45	
+algorithm		22	66	computing mathematics				1			05847438	0	cognition	a precise rule (or set of rules) specifying how to solve some problem			no-synset											
+algorithmic-bias	attribute	0	0					0									no-synset				2.75					attribute:0.19	0.74	
+alpha-beta-pruning	search-algorithm	0	0					0									no-synset				3.00							
+amount		8	10	chemistry computing economics geography physics space				4			13331198	40	possession	a quantity of money			no-synset											
+analogical-reasoning	thinking	0	0					0									no-synset				2.00					thinking:0.34	0.67	
+animatronics	robotics	0	0		06133802	cognition	1	1	0	the construction of robots to look like animals (developed for Disneyland)							shrink	review: rare leaf			2.25					robotics:0.46	0.51	0.12
+anomaly-detection	data-processing	0	0					0									no-synset				3.37					data-processing:0.34	0.72	
+answer-set-programming	logic-programming	0	0					0									no-synset				4.28							
+ant-colony-optimization	metaheuristic	0	0					0									no-synset				3.36					metaheuristic:0.56	0.28	
+apprenticeship-learning	imitation-learning	0	0					0									no-synset				3.45					imitation-learning:0.62	0.03	
+apriori-algorithm	machine-learning-algorithm	0	0					0									no-synset				1.40					machine-learning-algorithm:0.37	0.68	
+argumentation-framework	mathematical-object	0	0					0									no-synset				2.64							
+articulated-robot	automaton	0	0					0									no-synset				3.33					automaton:0.37	0.44	
+artifact		1	3	computing economics medicine physics				1			00021939	1	Tops	a man-made object taken as a whole			no-synset											
+artificial-chemistry	artificial-life	0	0					0									no-synset				3.99					artificial-life:0.56	0.08	
+artificial-consciousness	artificial-intelligence	0	0					0									no-synset				3.88					artificial-intelligence:0.34	0.59	
+artificial-empathy	artificial-intelligence	0	0					0									no-synset				3.61					artificial-intelligence:0.32	0.60	
+artificial-general-intelligence	intelligent-agent	2	2					0									no-synset				4.09					intelligent-agent:0.62	0.38	
+artificial-immune-system	computational-intelligence	0	0					0									no-synset				3.88					computational-intelligence:0.28	0.34	
+artificial-intelligence	computer-science	33	73	term	06133203	cognition	1	1	0	the branch of computer science that deal with writing computer programs that can solve problems creatively						computer-science	off-wordnet				4.11					computer-science:0.62	0.42	0.35
+artificial-life	artificial-intelligence	1	1					0									no-synset				4.23					artificial-intelligence:0.43	0.47	
+artificial-neural-network	ai-model	24	44		06725467	communication		0		computer architecture in which processors are connected in a manner suggestive of connections between neurons; can learn by trial and error						ai-model	off-wordnet				3.62					ai-model:0.52	0.63	0.00
+artificial-society	agent-based-model	0	0					0									no-synset				4.19					agent-based-model:0.42	0.19	
+association-rule-learning	data-mining	0	0					0									no-synset				4.48							
+attention-mechanism	method	2	2					0									no-synset				4.21					method:0.11	0.94	
+attribute		7	7	biology chemistry computing economics mathematics medicine physics				2			05849040	2	cognition	a construct whereby objects or individuals can be distinguished			no-synset											
+autoencoder	artificial-neural-network	2	2					0									no-synset				1.07					artificial-neural-network:0.27	0.77	
+automated-machine-learning	machine-learning	1	1					0									no-synset				3.83					machine-learning:0.84	0.10	
+automated-planning	about(plan) artificial-intelligence	0	0					0									no-synset disjoint	keep one parent (several mean AND)			3.87					artificial-intelligence:0.45	0.49	
+automated-reasoning	artificial-intelligence	0	0					0									no-synset				3.66					artificial-intelligence:0.46	0.34	
+automated-theorem-proving	about(theorem) artificial-intelligence	0	0					0									no-synset disjoint	keep one parent (several mean AND)			3.38					artificial-intelligence:0.28	0.74	
+automatic-summarization	text-mining	0	0					0									no-synset				2.04					text-mining:0.45	0.17	
+automaton		21	30	term				2			09825519	0	person	someone who acts or responds in a mechanical or apathetic way			no-synset											
+autonomic-computing	artificial-intelligence	0	0					0									no-synset				2.71					artificial-intelligence:0.38	0.63	
+autonomous-aircraft	autonomous-vehicle	0	0					0									no-synset				3.78					autonomous-vehicle:0.71	0.14	
+autonomous-bus	autonomous-vehicle	0	0					0									no-synset				3.81					autonomous-vehicle:0.76	0.12	
+autonomous-car	autonomous-vehicle	0	0					0									no-synset				3.84			autonomous-vehicle	0.94	autonomous-vehicle:0.94	0.04	
+autonomous-robot	mobile-robot	0	0					0									no-synset				3.70					mobile-robot:0.73	0.01	
+autonomous-spacecraft	autonomous-vehicle	0	0					0									no-synset				3.50					autonomous-vehicle:0.69	0.15	
+autonomous-truck	autonomous-vehicle	0	0					0									no-synset				3.78					autonomous-vehicle:0.85	0.07	
+autonomous-underwater-vehicle	autonomous-vehicle	0	0					0									no-synset				3.56					autonomous-vehicle:0.65	0.29	
+autonomous-vehicle	automaton vehicle	6	6					0									no-synset disjoint	keep one parent (several mean AND)			3.80			autonomous-car	0.94	automaton:0.44 vehicle:0.49	0.47	
+autonomous-weapon	military-robot weapon	0	0					0									no-synset disjoint	keep one parent (several mean AND)			3.77					weapon:0.51 military-robot:0.62	0.11	
+autoregressive-model	statistical-model	0	0					0									no-synset				1.72					statistical-model:0.46	0.59	
+backpropagation	algorithm	1	1					0									no-synset				1.55					algorithm:0.17	0.78	
+backpropagation-through-time	backpropagation	0	0					0									no-synset				1.55					backpropagation:0.81	0.00	
+backward-chaining	algorithm	0	0					0									no-synset				2.57					algorithm:0.22	0.77	
+bag-of-words-model	ai-model	0	0					0									no-synset				4.53					ai-model:0.41	0.60	
+barabasi-albert-model	statistical-model	0	0					0									no-synset				0.00					statistical-model:0.24	0.85	
+batch-normalization	procedure	0	0					0									no-synset				2.94					procedure:0.08	0.99	
+bayes-classifier	classification-algorithm	1	1					0									no-synset				2.28					classification-algorithm:0.56	0.39	
+bayesian-network	statistical-model	1	1					0									no-synset				2.95					statistical-model:0.41	0.62	
+bayesian-optimization	method	0	0					0									no-synset				2.87					method:0.12	0.83	
+behavior-based-robotics	robotics	0	0					0									no-synset				3.50					robotics:0.48	0.33	
+behavior-tree	information	0	0					0									no-synset				4.46					information:0.19	0.89	
+belief-propagation	algorithm	0	0					0									no-synset				3.31					algorithm:0.33	0.58	
+belief-revision	thinking	0	0					0									no-synset				3.73					thinking:0.29	0.79	
+bellman-equation	equation	0	0					0									no-synset				2.36					equation:0.35	0.26	
+benchmark-dataset	dataset	0	0					0									no-synset				2.93					dataset:0.68	0.32	
+bert-model	transformer-model	0	0					0									no-synset				3.49					transformer-model:0.31	0.81	
+best-first-search	informed-search-algorithm	1	1					0									no-synset				4.88					informed-search-algorithm:0.48	0.13	
+betweenness-centrality	centrality	0	0					0									no-synset				1.47					centrality:0.82	0.00	
+bias-variance-tradeoff	attribute	0	0					0									no-synset				2.58					attribute:0.07	0.98	
+biclustering	cluster-analysis	0	0					0									no-synset				0.00					cluster-analysis:0.38	0.23	
+bidirectional-associative-memory	recurrent-neural-network	0	0					0									no-synset				2.35					recurrent-neural-network:0.40	0.57	
+bidirectional-recurrent-neural-network	recurrent-neural-network	0	0					0									no-synset				2.45					recurrent-neural-network:0.77	0.20	
+bidirectional-search	search-algorithm	0	0					0									no-synset				2.55							
+binary-classification	statistical-classification	0	0					0									no-synset				3.75					statistical-classification:0.74	0.12	
+bio-inspired-robotics	robotics	0	0					0									no-synset				3.39					robotics:0.40	0.40	
+biology		1	1	biology geography medicine space				3			07993109	0	group	all the plant and animal life of a particular region			no-synset											
+biorobotics	robotics	0	0					0									no-synset				1.01					robotics:0.38	0.49	
+blackboard-system	software	0	0					0									no-synset				3.02					software:0.14	0.82	
+blind-signal-separation	signal-processing	0	0					0									no-synset				3.89							
+blocks-world	toy-problem	0	0					0									no-synset				4.41					toy-problem:0.20	0.43	
+boltzmann-machine	energy-based-model	1	1					0									no-synset				2.48					energy-based-model:0.48	0.14	
+boolean-satisfiability-problem	constraint-satisfaction-problem	0	0					0									no-synset				1.59					constraint-satisfaction-problem:0.49	0.13	
+boosting-algorithm	machine-learning-algorithm	1	1					0									no-synset				3.40					machine-learning-algorithm:0.60	0.29	
+bootstrap-aggregating	machine-learning-algorithm	0	0					0									no-synset				2.41					machine-learning-algorithm:0.22	0.89	
+bounded-rationality	theory	0	0					0									no-synset				2.95					theory:0.12	0.99	
+brain		0	0	term				5			05481095	22	body	that part of the central nervous system that includes all the higher nervous centers; enclosed within the skull; continuous with the spinal cord			no-synset											
+brain-computer-interface	device	0	0					0									no-synset				4.01					device:0.32	0.81	
+breadth-first-search	graph-traversal	0	0					0									no-synset				3.45					graph-traversal:0.55	0.30	
+calculation		2	2	mathematics				3			05802185	4	cognition	problem solving that involves numbers or quantities			no-synset											
+capsule-neural-network	convolutional-neural-network	0	0					0									no-synset				3.42					convolutional-neural-network:0.49	0.61	
+case-based-reasoning	artificial-intelligence	0	0					0									no-synset				3.98					artificial-intelligence:0.34	0.61	
+catastrophic-forgetting	problem	0	0					0									no-synset				3.42					problem:0.10	0.93	
+causal-diagram	statistical-model	0	0					0									no-synset				3.21					statistical-model:0.26	0.84	
+cellular-automaton	mathematical-object	5	5					0									no-synset				2.65			elementary-cellular-automaton	0.94			
+centrality	amount	2	2					1			05078025	0	attribute	the property of being central			no-synset				2.62					amount:0.12	0.96	
+change		1	1	biology chemistry physics				10			07296428	46	event	an event that occurs when something passes from one state or phase to another			no-synset											
+chatbot	software software-agent	1	1					0									no-synset disjoint	keep one parent (several mean AND)			2.30					software:0.15 software-agent:0.40	0.85	
+chatbot-evaluation	procedure	0	0					0									no-synset				2.29					procedure:0.12	0.94	
+chinese-room	information	0	0					0									no-synset				4.86					information:0.16	0.96	
+classification-algorithm	machine-learning-algorithm	7	9					0									no-synset				3.79					machine-learning-algorithm:0.81	0.17	
+closed-loop	control-system	0	0		03049326	artifact	1	1	0	a control system with a feedback loop that is active							shrink	review: rare leaf			4.20					control-system:0.60	0.07	0.29
+closed-world-assumption	principle	0	0					0									no-synset				4.00					principle:0.26	0.71	
+cluster-analysis	data-mining data-processing	2	2					0									no-synset disjoint	keep one parent (several mean AND)			3.94					data-processing:0.35	0.62	
+clustering-algorithm	machine-learning-algorithm	2	2					0									no-synset				2.99					machine-learning-algorithm:0.60	0.43	
+cognition		0	0	medicine term				1			00023271	0	Tops	the psychological result of perception and learning and reasoning			no-synset											
+cognitive-architecture	about(mind) theory	1	1					0									no-synset disjoint	keep one parent (several mean AND)			3.94					theory:0.27	0.57	
+cognitive-computing	artificial-intelligence	0	0					0									no-synset				3.79					artificial-intelligence:0.47	0.42	
+cognitive-robotics	robotics	0	0					0									no-synset				3.43					robotics:0.55	0.25	
+cognitive-science	about(cognition) science	0	0		06142861	cognition	1	1	0	the field of science concerned with cognition; includes parts of cognitive psychology and linguistics and computer science and cognitive neuroscience and philosophy of mind						about(cognition) science	disjoint off-wordnet shrink	keep one parent (several mean AND)			4.07					science:0.48	0.52	0.06
+collaborative-filtering	machine-learning-algorithm	0	0					0									no-synset				3.36					machine-learning-algorithm:0.38	0.66	
+collaborative-robot	automaton	0	0					0									no-synset				3.65					automaton:0.40	0.43	
+collective-intelligence	attribute	0	0					0									no-synset				4.16					attribute:0.29	0.76	
+commonsense-knowledge-base	knowledge-base	0	0					0									no-synset				2.65							
+commonsense-reasoning	artificial-intelligence	0	0					0									no-synset				2.63					artificial-intelligence:0.25	0.75	
+community-detection	problem	0	0					0									no-synset				4.04					problem:0.13	0.96	
+companion-robot	automaton	0	0					0									no-synset				3.88					automaton:0.38	0.37	
+complex-adaptive-system	system	0	0					0									no-synset				3.58					system:0.37	0.24	
+complex-network	mathematical-object	2	2	term				0									no-synset				4.63							
+compositional-pattern-producing-network	artificial-neural-network	0	0					0									no-synset				2.84					artificial-neural-network:0.34	0.66	
+compressed-sensing	signal-processing	0	0					0									no-synset				3.33							
+computational-humor	computational-linguistics	0	0					0									no-synset				3.52					computational-linguistics:0.38	0.77	
+computational-intelligence	artificial-intelligence	1	1					0									no-synset				3.59					artificial-intelligence:0.65	0.16	
+computational-learning-theory	machine-learning	1	1					0									no-synset				3.58					machine-learning:0.60	0.25	
+computational-linguistics	linguistics	3	14		06168552	cognition	1	1	0	the use of computers for linguistic research and applications						linguistics	off-wordnet				3.21					linguistics:0.70	0.02	0.18
+computational-neuroscience	about(brain) biology	0	0					0									no-synset disjoint	keep one parent (several mean AND)			3.23					biology:0.32	0.31	
+computational-ontology		0	0	computing term				0									no-synset											
+computational-theory-of-mind	about(mind) theory	0	0					0									no-synset disjoint	keep one parent (several mean AND)			3.59					theory:0.39	0.44	
+computer-chess	artificial-intelligence	0	0					0									no-synset				3.90					artificial-intelligence:0.32	0.68	
+computer-go	artificial-intelligence	0	0					0									no-synset				4.93					artificial-intelligence:0.24	0.87	
+computer-science		4	134	computing				1			06128570	0	cognition	the branch of engineering science that studies (with the aid of computers) computable processes and structures			no-synset											
+computer-simulation		3	4					1			05666700	0	cognition	(computer science) the technique of representing the real world by a computer program			no-synset											
+computer-vision	about(image) machine-perception	0	0					0									no-synset disjoint	keep one parent (several mean AND)			4.47					machine-perception:0.58	0.26	
+concept-drift	change	0	0					0									no-synset				3.77					change:0.34	0.28	
+concurrent-logic-programming	logic-programming	0	0					0									no-synset				3.39							
+condition		1	1	biology chemistry computing economics geography mathematics medicine space				8			05822746	1	cognition	information that should be kept in mind when making a decision			no-synset											
+conditional-random-field	statistical-model	0	0					0									no-synset				3.54					statistical-model:0.29	0.82	
+confusion-matrix	matrix	0	0					0									no-synset				3.82					matrix:0.42	0.21	
+connectionism	about(mind) theory	0	0					0									no-synset disjoint	keep one parent (several mean AND)			1.31					theory:0.28	0.79	
+connectionist-expert-system	artificial-neural-network expert-system	0	0					0									no-synset disjoint	keep one parent (several mean AND)			1.56					artificial-neural-network:0.46 expert-system:0.80	0.50	
+constraint-logic-programming	constraint-programming logic-programming	0	0					0									no-synset disjoint	keep one parent (several mean AND)			3.21					constraint-programming:0.89	0.06	
+constraint-programming	computer-science	1	1					0									no-synset				3.25					computer-science:0.16	0.88	
+constraint-satisfaction-problem	problem	2	2					0									no-synset				3.22					problem:0.45	0.58	
+content-addressable-memory	device	0	0					0									no-synset				2.36					device:0.11	1.00	
+continual-learning	machine-learning	0	0					0									no-synset				3.34					machine-learning:0.42	0.46	
+contrastive-learning	self-supervised-learning	0	0					0									no-synset				2.04					self-supervised-learning:0.41	0.22	
+control-system	artifact	2	2	term	03098806	artifact	1	1	0	a system for controlling the operation of another system						artifact	off-wordnet				5.17					artifact:0.15	0.48	0.24
+control-theory	about(control-system) engineering mathematics	5	5					0									no-synset disjoint	keep one parent (several mean AND)			4.77					engineering:0.11 mathematics:0.13	0.92	
+conversational-ai	natural-language-processing	0	0					0									no-synset				3.08					natural-language-processing:0.36	0.55	
+convex-optimization	mathematical-optimization	0	0					0									no-synset				3.11					mathematical-optimization:0.71	0.02	
+convolutional-neural-network	feedforward-neural-network	3	3					0									no-synset				2.09					feedforward-neural-network:0.52	0.57	
+cosine-similarity	similarity-measure	0	0					0									no-synset				2.47					similarity-measure:0.51	0.13	
+cross-validation	model-evaluation-method	0	0					0									no-synset				3.66					model-evaluation-method:0.29	0.34	
+cultural-algorithm	evolutionary-algorithm	0	0					0									no-synset				3.95					evolutionary-algorithm:0.53	0.49	
+curriculum-learning	machine-learning	0	0					0									no-synset				4.06					machine-learning:0.44	0.42	
+cybernetics	information-science	0	0		06142598	cognition	1	1	0	(biology) the field of science concerned with processes of communication and control (especially the comparison of these processes in biological and artificial systems)							shrink	review: rare leaf			2.59					information-science:0.29	0.35	0.65
+danger		1	1	economics				4			14540765	18	state	the condition of being susceptible to harm or injury			no-synset											
+data-augmentation	procedure	0	0					0									no-synset				3.05					procedure:0.13	0.95	
+data-mining		4	6					1			13455234	0	process	data processing using sophisticated data search capabilities and statistical algorithms to discover patterns and correlations in large preexisting databases; a way to discover new meaning in data			no-synset											
+data-poisoning	activity	0	0					0									no-synset				3.83					activity:0.27	0.84	
+data-processing		26	35	computing geography				1			13455487	1	process	(computer science) a series of operations on data by a computer in order to retrieve or transform or classify information			no-synset											
+dataset		4	4	computing				0									no-synset											
+dbscan	clustering-algorithm	0	0					0									no-synset				0.00					clustering-algorithm:0.37	0.27	
+decision-support-system	software	0	0					0									no-synset				4.86					software:0.24	0.71	
+decision-theory	mathematics	0	0					0									no-synset				4.67					mathematics:0.25	0.71	
+decision-tree	information	0	0					0									no-synset				4.65					information:0.29	0.73	
+decision-tree-learning	machine-learning-algorithm	0	0					0									no-synset				4.47					machine-learning-algorithm:0.55	0.37	
+deep-belief-network	artificial-neural-network	0	0					0									no-synset				4.27					artificial-neural-network:0.30	0.58	
+deep-generative-model	generative-model	0	0					0									no-synset				2.77					generative-model:0.86	0.08	
+deep-learning	machine-learning	1	1					0									no-synset				4.68					machine-learning:0.69	0.21	
+deep-neural-network	artificial-neural-network	0	0					0									no-synset				3.72					artificial-neural-network:0.50	0.26	
+deep-q-network	artificial-neural-network	0	0					0									no-synset				4.34					artificial-neural-network:0.35	0.51	
+deep-reinforcement-learning	deep-learning reinforcement-learning	0	0					0									no-synset				3.41					deep-learning:0.68 reinforcement-learning:0.79	0.16	
+deepfake	synthetic-media	0	0					0									no-synset				1.51					synthetic-media:0.15	0.50	
+default-logic	formal-system	0	0					0									no-synset				4.02							
+delta-robot	automaton	0	0					0									no-synset				3.88					automaton:0.33	0.53	
+dempster-shafer-theory	theory	0	0					0									no-synset				2.24					theory:0.24	0.90	
+denoising-autoencoder	autoencoder	0	0					0									no-synset				0.96					autoencoder:0.71	0.02	
+depth-first-search	graph-traversal	1	1					0									no-synset				4.40					graph-traversal:0.37	0.54	
+developmental-robotics	robotics	0	0					0									no-synset				3.34					robotics:0.53	0.23	
+device		4	4	computing economics geography medicine space				5			03183080	36	artifact	an instrumentality invented for a particular purpose			no-synset											
+diagnostic-expert-system	expert-system	0	0					0									no-synset				3.75					expert-system:0.82	0.09	
+diagram		1	1	computing mathematics				1			03186399	6	artifact	a drawing intended to explain how something works; a drawing showing the relation between the parts			no-synset											
+dialogue-system	software	0	0					0									no-synset				4.27					software:0.21	0.68	
+differential-evolution	evolutionary-algorithm	0	0					0									no-synset				3.73					evolutionary-algorithm:0.54	0.64	
+differential-privacy	attribute	0	0					0									no-synset				3.72					attribute:0.15	0.90	
+diffusion-model	generative-model latent-variable-model	0	0					0									no-synset				3.39					generative-model:0.29 latent-variable-model:0.31	0.76	
+digital-twin	computer-simulation	0	0					0									no-synset				4.22							
+dimensionality-reduction	data-processing	4	4					0									no-synset				2.40					data-processing:0.27	0.78	
+distant-supervision	weakly-supervised-learning	0	0					0									no-synset				3.75					weakly-supervised-learning:0.33	0.30	
+distilled-ai-model	ai-model	0	0					0									no-synset				3.21					ai-model:0.64	0.42	
+distributed-artificial-intelligence	artificial-intelligence	0	0					0									no-synset				3.90					artificial-intelligence:0.49	0.39	
+distributed-cognition	about(cognition) theory	0	0					0									no-synset disjoint	keep one parent (several mean AND)			3.30					theory:0.32	0.53	
+distributional-semantics	computational-linguistics	0	0					0									no-synset				2.26					computational-linguistics:0.44	0.64	
+document		0	0	computing economics geography space term				4			06470073	3	communication	writing that provides information (especially information of an official nature)			no-synset											
+document-classification	about(document) statistical-classification	0	0					0									no-synset disjoint	keep one parent (several mean AND)			4.01					statistical-classification:0.68	0.13	
+domain-adaptation	transfer-learning	0	0					0									no-synset				3.83					transfer-learning:0.68	0.03	
+domestic-robot	service-robot	0	0					0									no-synset				4.11					service-robot:0.68	0.04	
+dynamic-bayesian-network	bayesian-network	0	0					0									no-synset				2.93					bayesian-network:0.87	0.00	
+dynamic-knowledge-graph	knowledge-graph	0	0					0									no-synset				3.83							
+early-stopping	procedure	0	0					0									no-synset				4.26					procedure:0.14	0.98	
+echo-state-network	recurrent-neural-network	0	0					0									no-synset				3.99					recurrent-neural-network:0.37	0.67	
+edge-detection	image-processing	0	0					0									no-synset				3.98					image-processing:0.60	0.28	
+edge-of-chaos	state	0	0					0									no-synset				4.14					state:0.11	0.54	
+education		0	0	term				6			00883297	34	act	the activities of educating or instructing; activities that impart knowledge or skill			no-synset											
+educational-data-mining	about(education) data-mining	0	0					0									no-synset disjoint	keep one parent (several mean AND)			4.24							
+eigenvector-centrality	centrality	0	0					0									no-synset				1.86					centrality:0.62	0.07	
+elementary-cellular-automaton	cellular-automaton	0	0					0									no-synset				2.65			cellular-automaton	0.94	cellular-automaton:0.94	0.11	
+elman-network	artificial-neural-network	0	0					0									no-synset				1.92					artificial-neural-network:0.25	0.75	
+embedding-model	ai-model	0	0					0									no-synset				3.00					ai-model:0.41	0.54	
+embodied-agent	intelligent-agent	0	0					0									no-synset				3.33					intelligent-agent:0.63	0.33	
+embodied-artificial-intelligence	artificial-intelligence	0	0					0									no-synset				3.27					artificial-intelligence:0.46	0.36	
+embodied-cognition	about(cognition) theory	0	0					0									no-synset disjoint	keep one parent (several mean AND)			3.04					theory:0.27	0.61	
+emotion		0	0	term				1			07480068	50	feeling	any strong feeling			no-synset											
+emotion-recognition	data-processing	0	0					0									no-synset				4.01					data-processing:0.15	0.90	
+enactivism	about(cognition) theory	0	0					0									no-synset disjoint	keep one parent (several mean AND)			0.00					theory:0.23	0.80	
+energy-based-model	ai-model statistical-model	1	2					0									no-synset disjoint	keep one parent (several mean AND)			4.79					ai-model:0.46 statistical-model:0.49	0.46	
+engineering		2	7	computing geography space				3			00949619	6	act	the practical application of science to commerce or industry			no-synset											
+ensemble-averaging	method	0	0					0									no-synset				3.42					method:0.12	0.97	
+ensemble-learning	machine-learning	0	0					0									no-synset				3.69					machine-learning:0.61	0.27	
+entertainment-robot	automaton	0	0					0									no-synset				4.08					automaton:0.35	0.46	
+equation		1	1	mathematics				3			06669864	8	communication	a mathematical statement that two expressions are equal			no-synset											
+erdos-renyi-model	statistical-model	0	0					0									no-synset				1.01					statistical-model:0.39	0.64	
+estimation-of-distribution-algorithm	evolutionary-algorithm	0	0					0									no-synset				3.33					evolutionary-algorithm:0.41	0.67	
+ethics-of-artificial-intelligence	philosophy-of-artificial-intelligence	2	2					0									no-synset				3.85					philosophy-of-artificial-intelligence:0.76	0.01	
+evolutionary-algorithm	metaheuristic	6	6					0									no-synset				3.61					metaheuristic:0.58	0.31	
+evolutionary-computation	artificial-intelligence	2	2					0									no-synset				3.22					artificial-intelligence:0.39	0.56	
+evolutionary-robotics	robotics	0	0					0									no-synset				3.35					robotics:0.47	0.30	
+example-based-machine-translation	machine-translation	0	0					0									no-synset				4.21					machine-translation:0.64	0.15	
+existential-risk-from-agi	danger	0	0					0									no-synset				2.66					danger:0.26	0.40	
+expectation-maximization	algorithm	0	0					0									no-synset				2.41					algorithm:0.19	0.78	
+expectation-propagation	algorithm	0	0					0									no-synset				3.25					algorithm:0.13	0.79	
+expert-system	knowledge-based-system	4	4					0									no-synset				4.52					knowledge-based-system:0.69	0.03	
+explainability	attribute	0	0					0									no-synset				0.00					attribute:0.23	0.87	
+explainable-ai	about(artificial-intelligence) artificial-intelligence	0	0					0									no-synset disjoint	keep one parent (several mean AND)			2.27					artificial-intelligence:0.46	0.33	
+explanation-based-learning	machine-learning	0	0					0									no-synset				4.29					machine-learning:0.44	0.48	
+exploration-exploitation-dilemma	problem	0	0					0									no-synset				3.40					problem:0.29	0.78	
+extended-mind-thesis	about(mind) theory	0	0					0									no-synset disjoint	keep one parent (several mean AND)			3.94					theory:0.35	0.57	
+f1-score	amount	0	0					0									no-synset				3.84					amount:0.18	0.95	
+facial-recognition-system	software	0	0					0									no-synset				3.94					software:0.13	0.86	
+factor-graph	mathematical-object	0	0					0									no-synset				3.96							
+feature-detection	image-processing	0	0					0									no-synset				3.99					image-processing:0.59	0.24	
+feature-extraction	dimensionality-reduction	0	0					0									no-synset				3.76					dimensionality-reduction:0.45	0.41	
+feature-learning	machine-learning	2	2					0									no-synset				4.57					machine-learning:0.72	0.11	
+feature-selection	dimensionality-reduction	0	0					0									no-synset				4.41					dimensionality-reduction:0.48	0.41	
+federated-learning	machine-learning	0	0					0									no-synset				2.94					machine-learning:0.40	0.56	
+feedback-loop	process	2	2		13479380	process		1		the process in which part of the output of a system is returned to its input in order to regulate its further output	03326073	0	artifact	a circuit that feeds back some of the output to the input of a system		process	off-wordnet				4.00					process:0.41	0.76	0.41
+feedforward-neural-network	artificial-neural-network	3	6					0									no-synset				1.86					artificial-neural-network:0.44	0.36	
+few-shot-learning	machine-learning	1	1					0									no-synset				4.69					machine-learning:0.50	0.35	
+fitness-function	function	0	0					0									no-synset				4.24					function:0.27	0.72	
+flow-based-generative-model	generative-model	0	0					0									no-synset				2.76					generative-model:0.80	0.12	
+formal-system		2	2	computing mathematics				0									no-synset											
+forward-chaining	algorithm	0	0					0									no-synset				2.60					algorithm:0.21	0.82	
+forward-kinematics	calculation	0	0					0									no-synset				2.47					calculation:0.19	0.47	
+foundation-model	ai-model	0	0					0									no-synset				4.64					ai-model:0.26	0.80	
+frame-based-expert-system	expert-system	0	0					0									no-synset				4.23					expert-system:0.78	0.09	
+frame-problem	problem	0	0					0									no-synset				4.52					problem:0.22	0.89	
+friendly-artificial-intelligence	artificial-general-intelligence	0	0					0									no-synset				4.00					artificial-general-intelligence:0.66	0.05	
+function		6	9	computing geography mathematics				7			07447261	0	event	a vaguely specified social event			no-synset											
+functional-logic-programming	logic-programming	0	0					0									no-synset				3.84							
+fuzzy-set	mathematical-set	0	0					0									no-synset				3.65							
+game		0	0	economics term				11			00455599	38	act	a contest with rules to determine a winner			no-synset											
+game-of-life	cellular-automaton	0	0					0									no-synset				5.49					cellular-automaton:0.22	0.90	
+game-tree	mathematical-object	0	0					0									no-synset				4.80							
+gated-recurrent-unit	recurrent-neural-network	0	0					0									no-synset				2.93					recurrent-neural-network:0.62	0.37	
+gaussian-mixture-model	mixture-model	0	0					0									no-synset				2.91					mixture-model:0.80	0.01	
+gaussian-process	mathematical-object	0	0					0									no-synset				2.94							
+general-game-playing	about(game) artificial-intelligence	0	0					0									no-synset disjoint	keep one parent (several mean AND)			5.02					artificial-intelligence:0.20	0.87	
+generalization-error	amount	0	0					0									no-synset				3.19					amount:0.06	0.97	
+generative-adversarial-network	generative-model	0	0					0									no-synset				2.50					generative-model:0.74	0.21	
+generative-ai	generative-model	0	0					0									no-synset				2.76					generative-model:0.81	0.16	
+generative-ai-chatbot	chatbot	0	0					0									no-synset				2.17					chatbot:0.75	0.02	
+generative-model	ai-model statistical-model	9	9					0									no-synset disjoint	keep one parent (several mean AND)			2.77					statistical-model:0.47 ai-model:0.50	0.40	
+generative-pre-trained-transformer	large-language-model	0	0					0									no-synset				2.66					large-language-model:0.19	0.92	
+genetic-algorithm	evolutionary-algorithm informed-search-algorithm	0	0					0									no-synset disjoint	keep one parent (several mean AND)			3.85					informed-search-algorithm:0.45 evolutionary-algorithm:0.85	0.39	
+genetic-programming	evolutionary-computation	0	0					0									no-synset				4.05					evolutionary-computation:0.70	0.03	
+geometric-feature-learning	feature-learning	0	0					0									no-synset				3.55					feature-learning:0.69	0.04	
+gibbs-sampling	markov-chain-monte-carlo	0	0					0									no-synset				3.40					markov-chain-monte-carlo:0.55	0.12	
+gofai	symbolic-ai	0	0					0									no-synset				0.00					symbolic-ai:0.20	0.47	
+goodharts-law	proposition	0	0					0									no-synset				0.00					proposition:0.15	0.51	
+governance-of-artificial-intelligence	management	1	1					0									no-synset				3.80					management:0.23	0.43	
+gradient-boosting	boosting-algorithm	0	0					0									no-synset				3.20					boosting-algorithm:0.81	0.01	
+gradient-descent	algorithm	1	2					0									no-synset				3.35					algorithm:0.27	0.68	
+graph		1	1					1			07000195	15	communication	a visual representation of the relations between certain quantities plotted with reference to a set of axes			no-synset											
+graph-attention-network	artificial-neural-network	0	0					0									no-synset				3.97					artificial-neural-network:0.26	0.69	
+graph-convolutional-network	artificial-neural-network	0	0					0									no-synset				2.09					artificial-neural-network:0.26	0.70	
+graph-embedding	vector-embedding	1	1					0									no-synset				2.96					vector-embedding:0.72	0.22	
+graph-neural-network	artificial-neural-network	0	0					0									no-synset				3.56					artificial-neural-network:0.47	0.32	
+graph-traversal	search-algorithm	3	4					0									no-synset				2.30							
+grid-search	method	0	0					0									no-synset				4.11					method:0.13	0.91	
+handwriting-recognition	about(text) data-processing	0	0					0									no-synset disjoint	keep one parent (several mean AND)			3.52					data-processing:0.27	0.77	
+hebbian-learning	theory	0	0					0									no-synset				1.42					theory:0.20	0.78	
+heuristic	rule	0	0		05847956	cognition	1	1	0	a commonsense rule (or set of rules) intended to increase the probability of solving some problem						rule	off-wordnet shrink	review: rare leaf			2.72					rule:0.50	0.17	0.71
+hidden-layer	neural-network-layer	0	0					0									no-synset				4.16					neural-network-layer:0.60	0.09	
+hidden-markov-model	latent-variable-model	0	0					0									no-synset				3.00					latent-variable-model:0.43	0.62	
+hierarchical-classifier	classification-algorithm	0	0					0									no-synset				2.56					classification-algorithm:0.60	0.36	
+hierarchical-clustering	cluster-analysis	0	0					0									no-synset				2.83					cluster-analysis:0.68	0.05	
+hierarchical-task-network	method	0	0					0									no-synset				3.24					method:0.10	0.86	
+hierarchical-temporal-memory	artificial-neural-network	0	0					0									no-synset				3.10					artificial-neural-network:0.28	0.75	
+hill-climbing-search	search-algorithm	0	0					0									no-synset				3.99							
+hits-algorithm	algorithm	0	0					0									no-synset				3.93					algorithm:0.43	0.57	
+hopfield-network	recurrent-neural-network	0	0					0									no-synset				1.42					recurrent-neural-network:0.25	0.84	
+horn-clause	mathematical-expression	0	0					0									no-synset				3.76							
+human-based-computation	computer-science	0	0					0									no-synset				3.34					computer-science:0.40	0.59	
+human-computer-interaction		1	1					0									no-synset											
+human-robot-interaction	human-computer-interaction robotics	0	0					0									no-synset disjoint	keep one parent (several mean AND)			3.95					robotics:0.51	0.35	
+humanoid-robot	automaton	0	0	term				0									no-synset				3.07					automaton:0.31	0.49	
+hyperparameter	amount	0	0					0									no-synset				1.16					amount:0.08	0.96	
+hyperparameter-optimization	problem	0	0					0									no-synset				1.16					problem:0.12	0.89	
+hypothesis		2	2	economics space				3			06782680	0	communication	a message expressing an opinion based on incomplete evidence			no-synset											
+image		0	0	computing geography space term				9			05928118	31	cognition	an iconic mental representation			no-synset											
+image-classification	image-processing	0	0					0									no-synset				4.11					image-processing:0.69	0.20	
+image-dataset	about(image) dataset	0	0					0									no-synset disjoint	keep one parent (several mean AND)			3.03					dataset:0.79	0.11	
+image-processing	about(image) signal-processing	8	13					0									no-synset disjoint	keep one parent (several mean AND)			4.34							
+image-segmentation	image-processing	3	3					0									no-synset				3.22					image-processing:0.75	0.11	
+image-to-image-translation	image-processing	0	0					0									no-synset				4.20					image-processing:0.51	0.54	
+imitation-learning	robot-learning	1	1					0									no-synset				3.45					robot-learning:0.64	0.08	
+incremental-learning	machine-learning	1	1					0									no-synset				3.37					machine-learning:0.50	0.32	
+independent-component-analysis	method	0	0					0									no-synset				4.14					method:0.06	0.93	
+inductive-bias	principle	0	0					0									no-synset				2.88					principle:0.16	0.96	
+inductive-logic-programming	inductive-programming logic-programming	0	0					0									no-synset disjoint	keep one parent (several mean AND)			2.87					inductive-programming:0.85	0.08	
+inductive-programming	machine-learning	1	1					0									no-synset				2.89					machine-learning:0.43	0.53	
+industrial-robot	automaton	0	0					0									no-synset				4.11					automaton:0.38	0.38	
+inference-engine	software	1	1					0									no-synset				3.24					software:0.24	0.80	
+influence-diagram	diagram	0	0					0									no-synset				3.80					diagram:0.51	0.16	
+information		11	104	chemistry computing economics geography mathematics medicine term				5			06634376	102	communication	a message received and understood			no-synset											
+information-bottleneck	method	0	0					0									no-synset				2.97					method:0.04	0.93	
+information-extraction	data-processing	1	1					0									no-synset				3.79					data-processing:0.36	0.55	
+information-science	about(information) science	2	13		06142118	cognition	1	1	0	the sciences concerned with gathering, manipulating, storing, retrieving, and classifying recorded information						about(information) science	disjoint off-wordnet	keep one parent (several mean AND)			4.95					science:0.43	0.22	0.59
+informed-search-algorithm	search-algorithm	2	3					0									no-synset				3.85							
+instance-based-learning	machine-learning	0	0					0									no-synset				4.39					machine-learning:0.56	0.28	
+instance-segmentation	image-segmentation	0	0					0									no-synset				3.21					image-segmentation:0.65	0.32	
+instruction-tuned-model	large-language-model	0	0					0									no-synset				3.67					large-language-model:0.31	0.80	
+instrumental-convergence	hypothesis	0	0					0									no-synset				3.35					hypothesis:-0.00	0.58	
+intelligence-amplification	activity	0	0					0									no-synset				3.11					activity:0.13	0.97	
+intelligent-agent	agent	4	6					0									no-synset				4.18					agent:0.76	0.02	
+intelligent-tutoring-system	software	0	0					0									no-synset				3.16					software:0.17	0.77	
+interactive-machine-learning	machine-learning	0	0					0									no-synset				3.95					machine-learning:0.61	0.30	
+internet-bot	software-agent	1	1					0									no-synset				3.80					software-agent:0.41	0.56	
+inverse-kinematics	calculation	0	0					0									no-synset				2.42					calculation:0.23	0.45	
+inverse-reinforcement-learning	reinforcement-learning	0	0					0									no-synset				3.12					reinforcement-learning:0.75	0.14	
+isomap	machine-learning-algorithm	0	0					0									no-synset				0.00					machine-learning-algorithm:0.26	0.83	
+iterative-deepening-depth-first-search	depth-first-search	0	0					0									no-synset				2.68					depth-first-search:0.83	0.01	
+junction-tree-algorithm	algorithm	0	0					0									no-synset				3.65					algorithm:0.33	0.73	
+k-means-clustering	clustering-algorithm	0	0					0									no-synset				3.02					clustering-algorithm:0.67	0.07	
+k-nearest-neighbors	classification-algorithm	0	0					0									no-synset				3.83					classification-algorithm:0.36	0.75	
+kalman-filter	algorithm	0	0					0									no-synset				2.53					algorithm:0.13	0.92	
+kernel-method	machine-learning-algorithm	0	0					0									no-synset				3.56					machine-learning-algorithm:0.31	0.75	
+knowledge-base		2	2	computing				1			05999266	0	cognition	the content of a particular field of knowledge			no-synset											
+knowledge-based-agent	intelligent-agent	0	0					0									no-synset				4.53					intelligent-agent:0.75	0.16	
+knowledge-based-system	software	2	6					0									no-synset				4.77					software:0.30	0.58	
+knowledge-distillation	method	0	0					0									no-synset				3.00					method:0.22	0.84	
+knowledge-engineering	artificial-intelligence	1	1					0									no-synset				4.57					artificial-intelligence:0.43	0.61	
+knowledge-extraction	data-mining	0	0					0									no-synset				3.77							
+knowledge-graph		2	2					0									no-synset											
+knowledge-graph-embedding	graph-embedding	0	0					0									no-synset				2.96					graph-embedding:0.69	0.05	
+knowledge-management	management	0	0					0									no-synset				4.74					management:0.57	0.12	
+knowledge-representation	artificial-intelligence	0	0					0									no-synset				4.25					artificial-intelligence:0.32	0.64	
+langtons-ant	cellular-automaton	0	0					0									no-synset				0.00					cellular-automaton:0.17	0.96	
+language		2	2	computing term				6			06282651	48	communication	a systematic means of communicating by the use of sounds or conventional symbols			no-synset											
+language-model	about(language) ai-model statistical-model	4	9					0									no-synset disjoint	keep one parent (several mean AND)			4.81					statistical-model:0.50 ai-model:0.55	0.40	
+large-action-model	large-language-model	0	0					0									no-synset				4.77					large-language-model:0.55	0.54	
+large-language-model	language-model	5	5					0									no-synset				4.71					language-model:0.83	0.06	
+latent-dirichlet-allocation	generative-model	0	0					0									no-synset				2.17					generative-model:0.33	0.76	
+latent-space	mathematical-space	0	0					0									no-synset				3.26							
+latent-variable-model	statistical-model	4	5					0									no-synset				3.21					statistical-model:0.48	0.43	
+lazy-learning	machine-learning	0	0					0									no-synset				4.16					machine-learning:0.60	0.20	
+learning-rate	amount	0	0					0									no-synset				4.72					amount:0.21	0.81	
+lemmatization	data-processing	0	0					0									no-synset				0.00					data-processing:0.11	0.94	
+life-like-cellular-automaton	cellular-automaton	0	0					0									no-synset				2.65					cellular-automaton:0.88	0.05	
+linear-classifier	classification-algorithm	1	1					0									no-synset				2.65					classification-algorithm:0.65	0.18	
+linear-discriminant-analysis	classification-algorithm	0	0					0									no-synset				2.20					classification-algorithm:0.33	0.71	
+linear-programming	mathematical-optimization	0	0					1			06018267	0	cognition	a mathematical technique used in economics; finds the maximum or minimum of linear functions in many variables subject to constraints			no-synset shrink	review: rare leaf			3.93					mathematical-optimization:0.63	0.08	
+linguistics		1	15					2			06172789	2	cognition	the scientific study of language			no-synset											
+link-prediction	problem	0	0					0									no-synset				3.92					problem:0.06	0.95	
+locality-sensitive-hashing	algorithm	0	0					0									no-synset				2.54					algorithm:0.21	0.91	
+logic-programming		6	6					2			06902193	0	communication	a computer language designed in Europe to support natural language processing			no-synset											
+logic-programming-language	language	0	0					0									no-synset				4.03					language:0.30	0.37	
+logistic-regression	classification-algorithm statistical-model	0	0					0									no-synset disjoint	keep one parent (several mean AND)			2.96					classification-algorithm:0.37 statistical-model:0.53	0.69	
+long-short-term-memory	recurrent-neural-network	0	0					0									no-synset				4.56					recurrent-neural-network:0.66	0.37	
+loss-function	function	0	0					0									no-synset				4.60					function:0.21	0.74	
+machine		1	1	computing				6			03699975	33	artifact	any mechanical or electrical device that transmits or modifies energy to perform or assist in the performance of human tasks			no-synset											
+machine-ethics	ethics-of-artificial-intelligence	0	0					0									no-synset				4.11					ethics-of-artificial-intelligence:0.75	0.03	
+machine-learning	computer-science	36	56					0									no-synset				4.61					computer-science:0.26	0.74	
+machine-learning-algorithm	algorithm	15	27					0									no-synset				3.92					algorithm:0.46	0.48	
+machine-perception	artificial-intelligence	2	2					0									no-synset				4.10					artificial-intelligence:0.25	0.68	
+machine-reading-comprehension	natural-language-processing	0	0					0									no-synset				3.54					natural-language-processing:0.31	0.56	
+machine-translation	natural-language-processing	4	4		06133503	cognition	1	1	0	the use of computers to translate from one language to another						natural-language-processing	off-wordnet				4.27					natural-language-processing:0.30	0.69	0.47
+management		2	3	economics				2			01133281	19	act	the act of managing something			no-synset											
+markov-chain	mathematical-object	0	0					1			13511368	0	process	a Markov process for which the parameter is discrete time values			no-synset shrink	review: rare leaf			3.01							
+markov-chain-monte-carlo	monte-carlo-method	2	2					0									no-synset				2.86					monte-carlo-method:0.70	0.05	
+markov-decision-process	mathematical-object	0	0					0									no-synset				3.01							
+masked-language-model	language-model	0	0					0									no-synset				3.62					language-model:0.72	0.18	
+mathematical-expression		1	1	mathematics				0									no-synset											
+mathematical-object		8	15	computing economics geography mathematics physics				0									no-synset											
+mathematical-optimization	mathematics	2	2					0									no-synset				3.51					mathematics:0.29	0.81	
+mathematical-set		1	1	mathematics				0									no-synset											
+mathematical-space		1	1	mathematics physics				1			08001685	0	group	(mathematics) any set of points that satisfy a set of postulates of some kind			no-synset											
+mathematics		4	11	computing economics mathematics				1			06000644	4	cognition	a science (or group of related sciences) dealing with the logic of quantity and shape and arrangement			no-synset											
+matrix		1	1	computing mathematics				6			08267640	1	group	(mathematics) a rectangular array of quantities or expressions set out by rows and columns; treated as a single element and manipulated according to rules			no-synset											
+maximum-likelihood-estimation	procedure	0	0					0									no-synset				3.31					procedure:0.15	0.97	
+mechanism		1	1	computing				5			03738472	0	artifact	device consisting of a piece of machinery; has moving parts that perform some function			no-synset											
+medical-robot	automaton	0	0					0									no-synset				4.19					automaton:0.34	0.39	
+membership-inference-attack	activity	0	0					0									no-synset				3.22					activity:0.09	0.94	
+memetic-algorithm	evolutionary-algorithm	0	0					0									no-synset				1.91					evolutionary-algorithm:0.53	0.42	
+memory-augmented-neural-network	artificial-neural-network	1	1					0									no-synset				3.29					artificial-neural-network:0.38	0.57	
+meta-learning	machine-learning	0	0					0									no-synset				3.71					machine-learning:0.55	0.29	
+metaheuristic	algorithm	5	11					0									no-synset				1.19					algorithm:0.50	0.55	
+method		16	19	computing economics geography mathematics medicine space				2			05660268	95	cognition	a way of doing something, especially a systematic way; implies an orderly logical arrangement (usually in steps)			no-synset											
+metropolis-hastings-algorithm	markov-chain-monte-carlo	0	0					0									no-synset				3.25					markov-chain-monte-carlo:0.64	0.08	
+microbot	automaton	0	0					0									no-synset				0.00			microbotics	0.91	automaton:0.35	0.52	
+microbotics	robotics	0	0					0									no-synset				0.00			microbot	0.91	robotics:0.41	0.45	
+military-robot	automaton	1	1					0									no-synset				4.20					automaton:0.34	0.41	
+mind		0	0	term				7			05611302	120	cognition	that which is responsible for one's thoughts and feelings; the seat of the faculty of reason			no-synset											
+minimax-rule	algorithm	0	0					0									no-synset				2.02					algorithm:0.36	0.69	
+minimum-description-length	principle	0	0					0									no-synset				4.25					principle:0.10	1.00	
+mixture-model	latent-variable-model	1	1					0									no-synset				4.13					latent-variable-model:0.42	0.51	
+mixture-of-experts-model	transformer-model	0	0					0									no-synset				3.98					transformer-model:0.28	0.85	
+mobile-robot	automaton	1	1					0									no-synset				4.15					automaton:0.37	0.35	
+mobile-robotics	robotics	0	0					0									no-synset				3.51					robotics:0.52	0.23	
+model-evaluation-method	method	1	1					0									no-synset				4.07					method:0.23	0.87	
+model-free-reinforcement-learning	reinforcement-learning	0	0					0									no-synset				3.40					reinforcement-learning:0.71	0.13	
+model-predictive-control	control-theory	0	0					0									no-synset				3.36					control-theory:0.62	0.27	
+modular-neural-network	artificial-neural-network	0	0					0									no-synset				3.31					artificial-neural-network:0.55	0.28	
+monte-carlo-algorithm	algorithm	0	0					0									no-synset				3.30			monte-carlo-method	0.93	algorithm:0.32	0.62	
+monte-carlo-method	algorithm	1	3					0									no-synset				3.37			monte-carlo-algorithm	0.93	algorithm:0.22	0.80	
+monte-carlo-tree-search	search-algorithm	0	0					0									no-synset				3.36							
+morphological-analysis	data-processing	0	0					0									no-synset				3.14					data-processing:0.27	0.66	
+motion-planning	problem	1	2					0									no-synset				4.42					problem:0.18	0.81	
+multi-agent-reinforcement-learning	reinforcement-learning	0	0					0									no-synset				3.37					reinforcement-learning:0.69	0.21	
+multi-agent-system	software	0	0					0									no-synset				4.33					software:0.13	0.86	
+multi-armed-bandit	problem	0	0					0									no-synset				3.32					problem:0.08	0.93	
+multi-head-attention	attention-mechanism	0	0					0									no-synset				4.40					attention-mechanism:0.70	0.06	
+multi-task-learning	machine-learning	0	0					0									no-synset				4.20					machine-learning:0.45	0.45	
+multiclass-classification	statistical-classification	0	0					0									no-synset				1.57					statistical-classification:0.65	0.19	
+multilayer-perceptron	feedforward-neural-network	0	0					0									no-synset				1.52					feedforward-neural-network:0.49	0.29	
+multimodal-artificial-intelligence	artificial-intelligence	0	0					0									no-synset				2.53					artificial-intelligence:0.39	0.55	
+multimodal-large-language-model	large-language-model	0	0					0									no-synset				2.54					large-language-model:0.79	0.32	
+multimodal-learning	machine-learning	0	0					0									no-synset				2.54					machine-learning:0.39	0.52	
+multiple-instance-learning	supervised-learning	0	0					0									no-synset				4.30					supervised-learning:0.54	0.46	
+n-gram	information	0	0					0									no-synset				3.74					information:0.20	0.92	
+naive-bayes-classifier	bayes-classifier	0	0					0									no-synset				2.26					bayes-classifier:0.86	0.01	
+named-entity-recognition	information-extraction	0	0					0									no-synset				3.92					information-extraction:0.64	0.09	
+nanorobotics	robotics	0	0					0									no-synset				0.00					robotics:0.34	0.53	
+natural-language-generation	natural-language-processing	0	0					0									no-synset				4.51					natural-language-processing:0.40	0.55	
+natural-language-processing	artificial-intelligence computational-linguistics information-science	7	11		06142412	cognition	1	1	0	the branch of information science that deals with natural language information						artificial-intelligence computational-linguistics	disjoint off-wordnet	keep one parent (several mean AND)			4.30					information-science:0.47 artificial-intelligence:0.50 computational-linguistics:0.52	0.63	0.53
+natural-language-understanding	natural-language-processing	0	0					0									no-synset				4.51					natural-language-processing:0.57	0.28	
+neat-algorithm	evolutionary-algorithm	0	0					0									no-synset				3.70					evolutionary-algorithm:0.57	0.36	
+negative-feedback	feedback-loop	0	0					1			13520731	0	process	feedback in opposite phase with (decreasing) the input	feedback-loop		no-synset shrink	review: rare leaf			4.19					feedback-loop:0.53	0.17	
+network-science	about(complex-network) mathematics	0	0					0									no-synset disjoint	keep one parent (several mean AND)			4.77					mathematics:0.28	0.80	
+neural-architecture-search	automated-machine-learning	0	0					0									no-synset				3.65					automated-machine-learning:0.34	0.34	
+neural-machine-translation	machine-translation	0	0					0									no-synset				3.64					machine-translation:0.62	0.19	
+neural-network-layer	information	1	1					0									no-synset				3.65					information:0.10	0.87	
+neural-radiance-field	ai-model	0	0					0									no-synset				2.96					ai-model:0.16	0.97	
+neural-turing-machine	memory-augmented-neural-network	0	0					0									no-synset				3.08					memory-augmented-neural-network:0.41	0.27	
+neuro-symbolic-ai	artificial-intelligence	0	0					0									no-synset				2.97					artificial-intelligence:0.45	0.35	
+neuroevolution	evolutionary-computation	0	0					0									no-synset				0.00					evolutionary-computation:0.43	0.25	
+neuromorphic-engineering	engineering	0	0					0									no-synset				1.65					engineering:0.25	0.44	
+neurorobotics	robotics	0	0					0									no-synset				0.00					robotics:0.41	0.48	
+no-free-lunch-theorem	theorem	0	0					0									no-synset				3.66					theorem:0.38	0.31	
+non-negative-matrix-factorization	algorithm	0	0					0									no-synset				2.40					algorithm:0.15	0.93	
+nonlinear-dimensionality-reduction	dimensionality-reduction	0	0					0									no-synset				2.35					dimensionality-reduction:0.88	0.25	
+nouvelle-ai	artificial-intelligence	0	0					0									no-synset				2.67					artificial-intelligence:0.13	0.94	
+object-detection	image-processing	1	1					0									no-synset				3.94					image-processing:0.62	0.19	
+obstacle-avoidance	path-planning	0	0					0									no-synset				3.32					path-planning:0.64	0.10	
+one-class-classification	statistical-classification	0	0					0									no-synset				4.15					statistical-classification:0.66	0.15	
+one-shot-learning	few-shot-learning	0	0					0									no-synset				4.74					few-shot-learning:0.89	0.02	
+online-algorithm	algorithm	0	0					0									no-synset				3.99					algorithm:0.51	0.46	
+online-machine-learning	incremental-learning	0	0					0									no-synset				4.51					incremental-learning:0.49	0.20	
+ontology-alignment	about(computational-ontology) data-processing	0	0					0									no-synset disjoint	keep one parent (several mean AND)			2.88					data-processing:0.15	0.84	
+ontology-engineering	about(computational-ontology) knowledge-engineering	0	0					0									no-synset disjoint	keep one parent (several mean AND)			2.93					knowledge-engineering:0.68	0.12	
+ontology-learning	about(computational-ontology) data-processing	0	0					0									no-synset disjoint	keep one parent (several mean AND)			2.94					data-processing:0.22	0.72	
+open-world-assumption	principle	0	0					0									no-synset				4.05					principle:0.32	0.60	
+operations-research	research	0	0		00637546	act	1	1	0	research designed to determine most efficient way to do something						research	off-wordnet shrink	review: rare leaf			4.76					research:0.42	0.26	0.76
+optical-character-recognition	about(text) data-processing	0	0					0									no-synset disjoint	keep one parent (several mean AND)			3.90					data-processing:0.29	0.77	
+optical-flow	attribute	0	0					0									no-synset				3.97					attribute:0.17	0.95	
+optimal-control	control-theory	0	0					0									no-synset				3.93					control-theory:0.69	0.20	
+overfitting	condition	0	0					0									no-synset				1.75					condition:0.02	0.60	
+pac-learning	theory	0	0					0									no-synset				3.89					theory:0.20	0.82	
+panoptic-segmentation	image-segmentation	0	0					0									no-synset				1.39					image-segmentation:0.63	0.32	
+part-of-speech-tagging	data-processing	0	0					0									no-synset				3.35					data-processing:0.19	0.72	
+partial-order-planning	method	0	0					0									no-synset				4.08					method:0.40	0.61	
+particle-filter	algorithm	0	0					0									no-synset				3.75					algorithm:0.08	0.98	
+particle-swarm-optimization	metaheuristic	0	0					0									no-synset				3.15					metaheuristic:0.45	0.43	
+path-planning	motion-planning	1	1					0									no-synset				4.49					motion-planning:0.81	0.03	
+pathfinding	data-processing	0	0					0									no-synset				1.81					data-processing:0.13	0.94	
+pattern-recognition	machine-learning	0	0					0									no-synset				4.21					machine-learning:0.61	0.34	
+pddl	language	0	0					0									no-synset				0.00					language:0.08	0.60	
+pedestrian-detection	object-detection	0	0					0									no-synset				3.55					object-detection:0.77	0.04	
+perceptron	feedforward-neural-network linear-classifier	0	0					0									no-synset disjoint	keep one parent (several mean AND)			1.58					linear-classifier:0.22 feedforward-neural-network:0.34	0.63	
+personal-robot	automaton	0	0					0									no-synset				4.20					automaton:0.40	0.34	
+philosophy		1	4					3			06158346	8	cognition	the rational investigation of questions about existence and knowledge and ethics			no-synset											
+philosophy-of-artificial-intelligence	about(artificial-intelligence) philosophy	1	3					0									no-synset disjoint	keep one parent (several mean AND)			3.96					philosophy:0.41	0.44	
+plan		0	0	economics medicine term				3			05728678	10	cognition	an arrangement scheme			no-synset											
+policy-gradient-method	machine-learning-algorithm	0	0					0									no-synset				3.45					machine-learning-algorithm:0.27	0.74	
+positive-feedback	feedback-loop	0	0					1			13539262	1	process	feedback in phase with (augmenting) the input	feedback-loop		no-synset shrink	review: rare leaf			4.24					feedback-loop:0.56	0.14	
+precision-and-recall	amount	0	0					0									no-synset				3.86					amount:0.14	0.86	
+predictive-modeling	machine-learning	0	0					0									no-synset				3.27					machine-learning:0.55	0.45	
+preference-elicitation	procedure	0	0					0									no-synset				1.92					procedure:0.24	0.83	
+preference-learning	machine-learning	0	0					0									no-synset				4.05					machine-learning:0.52	0.38	
+preferential-attachment	process	0	0					0									no-synset				3.13					process:0.09	0.99	
+principal-component-analysis	dimensionality-reduction	0	0					0									no-synset				4.05					dimensionality-reduction:0.54	0.38	
+principle		4	4	economics				6			05872477	7	cognition	a basic truth or law or assumption			no-synset											
+problem		15	26	computing economics mathematics				3			05687338	17	cognition	a source of difficulty			no-synset											
+procedure		10	10	biology computing economics mathematics medicine				4			01023636	0	act	a mode of conducting legal and parliamentary proceedings			no-synset											
+process		3	5	biology chemistry computing economics geography medicine physics space				6			01023820	63	act	a particular course of action intended to achieve a result			no-synset											
+prompt-engineering	procedure	0	0					0									no-synset				3.81					procedure:0.36	0.70	
+proposition		1	1	computing mathematics				5			06750804	6	communication	(logic) a statement that affirms or denies something and is either true or false			no-synset											
+proximal-policy-optimization	machine-learning-algorithm	0	0					0									no-synset				3.05					machine-learning-algorithm:0.22	0.82	
+pulse-coupled-network	artificial-neural-network	0	0					0									no-synset				3.69					artificial-neural-network:0.30	0.71	
+q-learning	machine-learning-algorithm	0	0					0									no-synset				4.40					machine-learning-algorithm:0.39	0.61	
+qualitative-reasoning	artificial-intelligence	0	0					0									no-synset				3.34					artificial-intelligence:0.32	0.65	
+quantum-machine-learning	machine-learning	0	0					0									no-synset				3.96					machine-learning:0.56	0.41	
+quantum-neural-network	artificial-neural-network	0	0					0									no-synset				3.57					artificial-neural-network:0.45	0.41	
+question-answering	natural-language-processing	0	0					0									no-synset				4.05					natural-language-processing:0.35	0.53	
+rademacher-complexity	amount	0	0					0									no-synset				1.74					amount:0.06	0.93	
+radial-basis-function	function	0	0					0									no-synset				3.41					function:0.13	0.97	
+radial-basis-function-network	artificial-neural-network	0	0					0									no-synset				3.40					artificial-neural-network:0.26	0.73	
+random-forest	machine-learning-algorithm	0	0					0									no-synset				4.33					machine-learning-algorithm:0.55	0.45	
+rational-agent	agent	0	0					0									no-synset				3.99					agent:0.64	0.10	
+reactive-planning	method	0	0					0									no-synset				3.52					method:0.33	0.69	
+reasoning-language-model	large-language-model	0	0					0									no-synset				3.95					large-language-model:0.58	0.56	
+receiver-operating-characteristic	graph	0	0					0									no-synset				3.69					graph:0.02	0.60	
+recommender-system	software	0	0					0									no-synset				1.94					software:0.12	0.88	
+recurrent-neural-network	artificial-neural-network	7	7					0									no-synset				3.12					artificial-neural-network:0.38	0.42	
+recursive-neural-network	artificial-neural-network	0	0					0									no-synset				2.84					artificial-neural-network:0.50	0.30	
+region-based-convolutional-neural-network	convolutional-neural-network	0	0					0									no-synset				2.09					convolutional-neural-network:0.70	0.50	
+regulation-of-artificial-intelligence	about(artificial-intelligence) governance-of-artificial-intelligence	0	0					0									no-synset disjoint	keep one parent (several mean AND)			3.92					governance-of-artificial-intelligence:0.79	0.16	
+reinforcement-learning	machine-learning	4	4					0									no-synset				3.42					machine-learning:0.64	0.24	
+reinforcement-learning-from-human-feedback	method	0	0					0									no-synset				3.36					method:0.13	0.78	
+relationship-extraction	text-mining	0	0					0									no-synset				3.78					text-mining:0.45	0.24	
+rescue-robot	automaton	0	0					0									no-synset				4.04					automaton:0.32	0.47	
+research		1	1					2			00636921	46	act	systematic investigation to establish facts			no-synset											
+reservoir-computing	method	0	0					0									no-synset				3.68					method:0.01	0.91	
+residual-neural-network	artificial-neural-network	0	0					0									no-synset				3.31					artificial-neural-network:0.44	0.40	
+restricted-boltzmann-machine	boltzmann-machine stochastic-neural-network	0	0					0									no-synset				2.47					stochastic-neural-network:0.46 boltzmann-machine:0.79	0.24	
+retrieval-augmented-generation	method	0	0					0									no-synset				3.10					method:0.17	0.82	
+reversible-cellular-automaton	cellular-automaton	0	0					0									no-synset				2.57					cellular-automaton:0.84	0.20	
+reward-hacking	specification-gaming	0	0					0									no-synset				3.76					specification-gaming:0.15	0.56	
+roboethics	ethics-of-artificial-intelligence	0	0					0									no-synset				0.00					ethics-of-artificial-intelligence:0.20	0.51	
+robot-control	robotics	0	0					0									no-synset				4.21					robotics:0.54	0.23	
+robot-end-effector	device	0	0					0									no-synset				2.60					device:0.21	0.86	
+robot-learning	machine-learning	1	2					0									no-synset				4.16					machine-learning:0.60	0.21	
+robot-navigation	robotics	0	0					0									no-synset				3.82					robotics:0.51	0.33	
+robot-planning	robotics	0	0					0									no-synset				4.16					robotics:0.55	0.23	
+robot-rights	attribute	0	0					0									no-synset				4.19					attribute:0.20	0.90	
+robotic-arm	automaton	0	0					0									no-synset				3.51					automaton:0.36	0.44	
+robotic-manipulator	machine	0	0					0									no-synset				2.77					machine:0.47	0.22	
+robotic-spacecraft	automaton spacecraft	0	0					0									no-synset disjoint	keep one parent (several mean AND)			3.33					automaton:0.30 spacecraft:0.62	0.59	
+robotics	about(automaton) artificial-intelligence	19	19		06133654	cognition	1	1	0	the area of AI concerned with the practical use of robots						about(automaton)	disjoint off-wordnet	keep one parent (several mean AND)			3.53					artificial-intelligence:0.41	0.59	0.82
+robust-control	control-theory	0	0					0									no-synset				3.93					control-theory:0.63	0.18	
+rule		1	1	computing economics mathematics				12			04118776	0	artifact	measuring stick consisting of a strip of wood or metal or plastic with a straight edge that is used for drawing straight lines and measuring lengths			no-synset											
+rule-based-expert-system	expert-system	0	0					0									no-synset				4.35					expert-system:0.86	0.06	
+rule-based-machine-learning	machine-learning	0	0					0									no-synset				4.41					machine-learning:0.69	0.25	
+rule-based-machine-translation	machine-translation	0	0					0									no-synset				4.17					machine-translation:0.65	0.14	
+rule-based-system	knowledge-based-system	0	0					0									no-synset				4.76					knowledge-based-system:0.65	0.10	
+rule-induction	machine-learning	0	0					0									no-synset				3.68					machine-learning:0.40	0.65	
+sample-complexity	amount	0	0					0									no-synset				3.90					amount:0.15	0.86	
+sat-solver	software	0	0					0									no-synset				2.81					software:0.17	0.90	
+satisficing	method	0	0					0									no-synset				1.24					method:0.24	0.88	
+scalable-oversight	ai-alignment	0	0					0									no-synset				2.88					ai-alignment:0.20	0.52	
+scale-free-network	complex-network	0	0					0									no-synset				4.57					complex-network:0.53	0.18	
+science		2	15					2			05999797	5	cognition	a particular branch of scientific knowledge			no-synset											
+search-algorithm		9	16	computing				0									no-synset											
+self-attention	attention-mechanism	0	0					0									no-synset				4.87					attention-mechanism:0.74	0.07	
+self-organization	process	0	0					0									no-synset				4.75					process:0.30	0.85	
+self-organizing-map	artificial-neural-network	0	0					0									no-synset				3.89					artificial-neural-network:0.33	0.70	
+self-reconfiguring-modular-robot	automaton	0	0					0									no-synset				2.23					automaton:0.32	0.67	
+self-supervised-learning	unsupervised-learning	1	1					0									no-synset				3.56					unsupervised-learning:0.58	0.15	
+semantic-analysis	data-processing	0	0					0									no-synset				3.39					data-processing:0.31	0.49	
+semantic-network	knowledge-base	0	0					0									no-synset				3.39							
+semantic-parsing	data-processing	0	0					0									no-synset				2.75					data-processing:0.27	0.55	
+semantic-reasoner	inference-engine	0	0					0									no-synset				1.95					inference-engine:0.46	0.25	
+semantic-role-labeling	data-processing	0	0					0									no-synset				3.16					data-processing:0.17	0.73	
+semantic-segmentation	image-segmentation	0	0					0									no-synset				3.00					image-segmentation:0.73	0.19	
+semi-supervised-learning	machine-learning	0	0					0									no-synset				3.52					machine-learning:0.60	0.22	
+sensor-fusion	data-processing	0	0					0									no-synset				3.67					data-processing:0.19	0.95	
+sentence-embedding	vector-embedding	0	0					0									no-synset				2.99					vector-embedding:0.64	0.17	
+sentiment-analysis	data-processing	0	0					0									no-synset				3.98					data-processing:0.17	0.76	
+sequence-labeling	data-processing	0	0					0									no-synset				3.49					data-processing:0.21	0.69	
+sequence-to-sequence-learning	machine-learning	0	0					0									no-synset				3.99					machine-learning:0.43	0.53	
+service-robot	automaton	1	1					0									no-synset				4.22					automaton:0.35	0.38	
+servo	control-system mechanism	0	0		04176295	artifact	1	1	0	control system that converts a small mechanical motion into one requiring much greater power; may include a negative feedback system						mechanism	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.90					control-system:0.47 mechanism:0.48	0.23	0.94
+sigmoid-function	activation-function	0	0					0									no-synset				2.04					activation-function:0.48	0.22	
+signal-processing		4	17	computing				0									no-synset											
+similarity-measure	function	1	1					0									no-synset				3.54					function:0.15	0.98	
+simulated-annealing	metaheuristic	0	0					0									no-synset				2.56					metaheuristic:0.52	0.44	
+simultaneous-localization-and-mapping	problem	0	0					0									no-synset				3.02					problem:0.08	0.98	
+situated-cognition	about(cognition) theory	0	0					0									no-synset disjoint	keep one parent (several mean AND)			3.28					theory:0.26	0.65	
+situation-calculus	formal-system	0	0					0									no-synset				3.59							
+small-language-model	language-model	0	0					0									no-synset				4.73					language-model:0.86	0.04	
+small-world-network	complex-network	0	0					0									no-synset				4.86					complex-network:0.62	0.14	
+social-robot	automaton	0	0					0									no-synset				4.21					automaton:0.32	0.47	
+social-robotics	robotics	0	0					0									no-synset				3.53					robotics:0.51	0.33	
+soft-robotics	robotics	0	0					0									no-synset				3.50					robotics:0.40	0.50	
+softmax-function	activation-function	0	0					0									no-synset				1.28					activation-function:0.44	0.27	
+software		13	21	computing economics geography				1			06566077	0	communication	(computer science) written programs or procedures or rules and associated documentation pertaining to the operation of a computer system and that are stored in read/write memory			no-synset											
+software-agent		3	5					0									no-synset											
+spacecraft		1	1	space				1			04264914	0	artifact	a craft capable of traveling in outer space; technically, a satellite around the sun			no-synset											
+sparse-dictionary-learning	feature-learning	0	0					0									no-synset				3.26					feature-learning:0.52	0.21	
+sparse-distributed-memory	ai-model	0	0					0									no-synset				3.30					ai-model:0.17	0.92	
+spatial-temporal-reasoning	artificial-intelligence	0	0					0									no-synset				3.30					artificial-intelligence:0.28	0.70	
+speaker-verification	about(speech) signal-processing	0	0					0									no-synset disjoint	keep one parent (several mean AND)			3.63							
+specification-gaming	problem	1	1					0									no-synset				3.66					problem:0.19	0.89	
+speech		0	0	term				8			07238694	16	communication	the act of delivering a formal spoken communication to an audience			no-synset											
+speech-dataset	about(speech) dataset	0	0					0									no-synset disjoint	keep one parent (several mean AND)			3.03					dataset:0.60	0.31	
+speech-recognition	machine-perception natural-language-processing	0	0					0									no-synset				4.32					natural-language-processing:0.31 machine-perception:0.41	0.67	
+speech-synthesis	data-processing	0	0					0									no-synset				3.80					data-processing:0.17	0.88	
+spiking-neural-network	artificial-neural-network	0	0					0									no-synset				2.73					artificial-neural-network:0.47	0.48	
+state		1	1	biology chemistry computing economics physics				8			08654360	108	location	the territory occupied by one of the constituent administrative districts of a nation			no-synset											
+state-observer	system	0	0					0									no-synset				3.90					system:0.22	0.51	
+state-space-search	search-algorithm	0	0					0									no-synset				4.73							
+statistical-classification	problem	5	5					0									no-synset				3.86					problem:0.07	0.98	
+statistical-language-model	language-model	0	0					0									no-synset				4.06					language-model:0.84	0.06	
+statistical-learning-theory	computational-learning-theory	0	0					0									no-synset				4.01					computational-learning-theory:0.74	0.07	
+statistical-machine-translation	machine-translation	0	0					0									no-synset				3.90					machine-translation:0.71	0.10	
+statistical-model	information	11	36					0									no-synset				4.10					information:0.32	0.70	
+statistical-relational-learning	machine-learning	0	0					0									no-synset				3.17					machine-learning:0.46	0.49	
+stemmer	algorithm	0	0		05847753	cognition	3	5	0	an algorithm for removing inflectional and derivational endings in order to reduce word forms to a common stem	10664656	0	person	a worker who strips the stems from moistened tobacco leaves and binds the leaves together into books		algorithm	off-wordnet shrink	review: rare leaf			1.44	04313867 stemmer: a device for removing stems from fruit (as from grapes or apples)	0.034			algorithm:0.24	0.89	1.00
+stemming	data-processing	0	0					0									no-synset				3.26					data-processing:0.20	0.79	
+stochastic-block-model	generative-model	0	0					0									no-synset				3.10					generative-model:0.34	0.72	
+stochastic-gradient-descent	gradient-descent	1	1					0									no-synset				2.91					gradient-descent:0.81	0.05	
+stochastic-neural-network	artificial-neural-network	1	1					0									no-synset				3.02					artificial-neural-network:0.52	0.31	
+stop-word	word	0	0					0									no-synset				5.07					word:0.26	0.46	
+structure-from-motion	3d-reconstruction	0	0					0									no-synset				4.39					3d-reconstruction:0.42	0.30	
+structured-prediction	machine-learning	0	0					0									no-synset				3.58					machine-learning:0.53	0.36	
+subsumption-architecture	cognitive-architecture	0	0					0									no-synset				1.50					cognitive-architecture:0.37	0.35	
+superintelligence	artificial-general-intelligence	0	0					0									no-synset				1.78					artificial-general-intelligence:0.54	0.19	
+supervised-learning	machine-learning	3	4					0									no-synset				3.57					machine-learning:0.76	0.09	
+support-vector-machine	classification-algorithm	0	0					0									no-synset				3.93					classification-algorithm:0.57	0.37	
+swarm-intelligence	artificial-intelligence	0	0					0									no-synset				3.42					artificial-intelligence:0.39	0.52	
+swarm-robotics	robotics	0	0					0									no-synset				3.18					robotics:0.42	0.39	
+symbol-grounding-problem	problem	0	0					0									no-synset				3.22					problem:0.21	0.91	
+symbolic-ai	artificial-intelligence	1	1					0									no-synset				3.71					artificial-intelligence:0.50	0.24	
+syntactic-parsing	data-processing	0	0					0									no-synset				2.54					data-processing:0.21	0.66	
+synthetic-data	information	0	0					0									no-synset				3.93					information:0.30	0.68	
+synthetic-media	information	1	1					0									no-synset				3.93					information:0.21	0.87	
+system		2	2	biology computing economics geography				9			08435388	23	group	a group of independent but interrelated elements comprising a unified whole			no-synset											
+system-identification	control-theory	0	0					0									no-synset				4.16					control-theory:0.27	0.85	
+t-sne	machine-learning-algorithm	0	0					0									no-synset				1.98					machine-learning-algorithm:0.12	0.99	
+tabu-search	metaheuristic	0	0					0									no-synset				2.34					metaheuristic:0.28	0.83	
+teacher-forcing	procedure	0	0					0									no-synset				4.13					procedure:0.21	0.91	
+teleoperation	procedure	0	0					0									no-synset				1.14					procedure:0.30	0.79	
+telerobotics	robotics	0	0		06133935	cognition	1	1	0	the area of robotics that is concerned with the control of robots from a distance							shrink	review: rare leaf			0.00					robotics:0.63	0.26	0.88
+temporal-knowledge-graph	knowledge-graph	0	0					0									no-synset				3.48							
+text		0	0	computing term				4			06387980	53	communication	the words of something written			no-synset											
+text-classification	statistical-classification	0	0					0									no-synset				4.12					statistical-classification:0.72	0.11	
+text-mining	data-processing	2	2					0									no-synset				4.43					data-processing:0.30	0.59	
+text-segmentation	data-processing	0	0					0									no-synset				3.22					data-processing:0.26	0.62	
+text-to-image-model	generative-model	0	0					0									no-synset				4.54					generative-model:0.45	0.54	
+text-to-video-model	generative-model	0	0					0									no-synset				4.68					generative-model:0.32	0.72	
+text-tokenization	data-processing	0	0					0									no-synset				1.69					data-processing:0.17	0.75	
+theorem		2	2	computing mathematics term				2			06752293	14	communication	a proposition deducible from basic postulates			no-synset											
+theory		12	13	biology chemistry economics geography medicine physics space				3			05888929	18	cognition	a tentative insight into the natural world; a concept that is not yet verified but that if true would explain certain facts or phenomena			no-synset											
+thinking		3	3	mathematics				1			05770926	11	cognition	the process of using your mind to consider something carefully			no-synset											
+thompson-sampling	algorithm	0	0					0									no-synset				3.64					algorithm:0.25	0.70	
+topic-model	latent-variable-model	0	0					0									no-synset				4.40					latent-variable-model:0.40	0.62	
+toy-problem	problem	1	1					0									no-synset				4.27					problem:0.31	0.74	
+training-set	dataset	0	0					0									no-synset				5.04					dataset:0.56	0.48	
+transductive-learning	supervised-learning	0	0					0									no-synset				0.00					supervised-learning:0.52	0.50	
+transfer-learning	machine-learning	1	1					0									no-synset				4.51					machine-learning:0.54	0.29	
+transformer-model	artificial-neural-network	3	3					0									no-synset				3.36					artificial-neural-network:0.09	0.99	
+tree-traversal	graph-traversal	0	0					0									no-synset				2.31					graph-traversal:0.73	0.40	
+turing-test	procedure	0	0					0									no-synset				3.18					procedure:0.22	0.83	
+u-net	convolutional-neural-network	0	0					0									no-synset				4.60					convolutional-neural-network:0.25	0.88	
+uncanny-valley	about(humanoid-robot) hypothesis	0	0					0									no-synset disjoint	keep one parent (several mean AND)			3.31					hypothesis:0.14	0.58	
+underwater-robot	automaton	0	0					0									no-synset				3.75					automaton:0.24	0.65	
+uniform-cost-search	search-algorithm	0	0					0									no-synset				4.20							
+uninformed-search-algorithm	search-algorithm	0	0					0									no-synset				2.95							
+universal-approximation-theorem	theorem	0	0					0									no-synset				3.15					theorem:0.36	0.36	
+unsupervised-learning	machine-learning	1	2					0									no-synset				2.92					machine-learning:0.51	0.31	
+upper-confidence-bound	algorithm	0	0					0									no-synset				4.12					algorithm:0.05	1.00	
+user-modeling	activity	0	0					0									no-synset				3.87					activity:0.20	0.91	
+value-alignment	ai-alignment	0	0					0									no-synset				3.76					ai-alignment:0.61	0.15	
+value-function	function	0	0					0									no-synset				4.63					function:0.37	0.64	
+vanishing-gradient-problem	problem	0	0					0									no-synset				3.06					problem:0.09	0.99	
+variational-autoencoder	autoencoder	0	0					0									no-synset				1.05					autoencoder:0.71	0.10	
+vector-database	software	0	0					0									no-synset				3.82					software:0.24	0.84	
+vector-embedding	information	3	4					0									no-synset				2.96					information:0.15	0.92	
+vehicle		1	7	economics space				4			04524313	9	artifact	a conveyance that transports people or objects			no-synset											
+virtual-assistant	software-agent	0	0					0									no-synset				4.17					software-agent:0.46	0.65	
+virtual-human	computer-simulation	0	0					0									no-synset				4.28							
+vision-transformer	transformer-model	0	0					0									no-synset				3.35					transformer-model:0.55	0.66	
+visual-odometry	image-processing	0	0					0									no-synset				1.14					image-processing:0.31	0.73	
+voice-user-interface	software	0	0					0									no-synset				3.98					software:0.16	0.85	
+weak-artificial-intelligence	artificial-intelligence	0	0					0									no-synset				4.00					artificial-intelligence:0.49	0.38	
+weakly-supervised-learning	supervised-learning	1	1					0									no-synset				3.03					supervised-learning:0.72	0.29	
+weapon		1	1					2			04565375	29	artifact	any instrument or instrumentality used in fighting or hunting			no-synset											
+web-crawler	internet-bot	0	0					0									no-synset				2.80					internet-bot:0.46	0.26	
+weighted-constraint-satisfaction-problem	constraint-satisfaction-problem	0	0					0									no-synset				3.09					constraint-satisfaction-problem:0.86	0.04	
+winner-take-all-network	recurrent-neural-network	0	0					0									no-synset				4.57					recurrent-neural-network:0.22	0.88	
+word		1	1					10			06286395	117	communication	a unit of language that native speakers can identify			no-synset											
+word-embedding	vector-embedding	0	0					0									no-synset				3.00					vector-embedding:0.67	0.13	
+word-sense-disambiguation	data-processing	0	0					0									no-synset				2.26					data-processing:0.24	0.71	
+world-model	ai-model	0	0					0									no-synset				5.06					ai-model:0.54	0.39	
+zero-shot-learning	machine-learning	0	0					0									no-synset				4.38					machine-learning:0.42	0.52	

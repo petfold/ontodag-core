@@ -29,7 +29,10 @@ Flags (several may hold):
   no-synset    no WordNet sense recorded
 
 `recommendation` is pre-filled from the flags; `decision` is left for the
-reviewer (Claude's pass, then Peter).
+reviewer (Claude's pass, then Peter). tools/sense_vectors.py then adds
+word-frequency and embedding witnesses to the same sheet (zipf, first,
+twin, parents_sim, misfit, trap); run it after this tool, which rewrites
+the sheet without them.
 """
 import argparse
 import csv
