@@ -3,13 +3,13 @@ categories, from WordNet 3.0.
 
     python3 tools/regen_ontodag_words.py <ontodag-core commit> [path/to/ontodag]
 
-Each core category in align/concepts.tsv carries its WordNet synset; its
-words are that synset's other lemmas (`photograph`: photo, exposure,
-picture, pic), lowercased, with WordNet's underscores as dashes, the
-category's own name left out. They are a finding aid for people typing
+Each core category's WordNet synset is the `wn30` beside its gloss in
+build/core.od; its words are that synset's other lemmas (`photograph`:
+photo, exposure, picture, pic), lowercased, with WordNet's underscores as
+dashes, the category's own name left out. They are a finding aid for people typing
 (ontodag's docs/plans/BROWSER.md §17): never names, never stored.
 """
-import csv
+import json
 import shlex
 import sys
 from pathlib import Path
@@ -27,12 +27,20 @@ for line in open(DATA, encoding="latin-1"):
     f = line.split("|")[0].split()
     lemmas[f[0]] = [f[4 + 2 * i] for i in range(int(f[3], 16))]
 
-core = {n for n in (shlex.split(line)[0] for line in open(HERE / "build/core.od")
-                    if line.strip() and not line.startswith("#"))
-        if "(" not in n}                           # canonical .od: a term's node is ontodag's
+# core's names as ontodag ships them (tools/regen_ontodag_core.py runs first):
+# the canonical .od also holds the prelude's names (pressure) and terms' nodes
+sys.path.insert(0, str(ontodag / "src"))
+from ontodag.core_ontology import CORE             # noqa: E402
+core = {n for n, _ in CORE}
+# each name's current sense, as build/core.od records it: align/concepts.tsv
+# holds consensus's synsets, which the v14 rulings re-sensed in hundreds of places
+senses = {}
+for line in open(HERE / "build/core.od"):
+    if line.startswith("#:meta "):
+        _, name, meta = shlex.split(line)
+        senses[name] = json.loads(meta).get("wn30", "")[:-2]
 words = {}
-for row in csv.DictReader(open(HERE / "align/concepts.tsv"), delimiter="\t"):
-    name, sid = row["name"], row["wordnet"]
+for name, sid in sorted(senses.items()):
     if name not in core or not sid:
         continue
     found = []
@@ -47,7 +55,7 @@ HEAD = f'''"""Other words for the `core` pack's categories, from WordNet 3.0: a 
 
 GENERATED — do not edit by hand. Produced in the sister repo
 github.com/petfold/ontodag-core (tools/regen_ontodag_words.py, commit {commit}):
-each core category's WordNet synset (align/concepts.tsv) and that synset's
+each core category's WordNet synset (its wn30 in build/core.od) and that synset's
 other lemmas, so `photograph` has photo, exposure, picture and pic.
 
 These words help a person find a category: typing "photo" can suggest
