@@ -1185,3 +1185,29 @@ Applied through `align/rulings-v14-zz-1025.tsv`; glosses are in
 
 `step7 --check` is clean, and a replay from the v13 files reproduces every
 file byte for byte. Core has 4,781 names.
+
+## Shipped in ontodag 0.35.0 (2026-10-25)
+
+Core v14 ships as 4,753 categories (`odag pack` counts them; the regen's
+4,757 entries include four prelude names core refines), with the ten packs
+over it, about 6,700 categories together. Three faults turned up in the
+regen and were fixed in this repo before the release:
+
+- **`mathematical-object` had no owner.** It is the mathematics pack's own
+  top-level name (the 2026-10-16 `add` under `*`), but the .od writes a
+  top-level name like a borrowed stub, and step7 kept glosses off stubs, so
+  nothing said which pack owned it. Six packs shipped it as borrowed and
+  none as owned. step7 now glosses a name that an `add` ruling put under
+  `*` in its own pack. The regen reads a glossed top-level name as the
+  pack's own and writes it parentless, as core writes its branches.
+- **Core's other words came from the old senses.** `regen_ontodag_words.py`
+  read each name's synset from `align/concepts.tsv`. That file is
+  consensus's record, which the v14 rulings re-sensed in 213 places. The
+  tool now reads the `wn30` beside each gloss in `build/core.od`. It also
+  takes core's names from ontodag's CORE, so `pressure`, a unit head the
+  prelude declares, no longer gets words.
+- **`butcher` sat at the top of every economics store.** The one-owner
+  ruling gave it to occupations, which ontodag does not ship, so no
+  sibling could file it. Until occupations ships, the regen writes a name
+  borrowed from an unshipped pack into the borrower, with its owner's
+  parents: economics carries `butcher ⊑ merchant worker`.
