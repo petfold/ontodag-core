@@ -1,85 +1,85 @@
 # The everyday-sense audit of occupations (tools/sense_audit.py, 2026-10-22). See the tool's docstring for the columns and flags.
 name	parents	children	descendants	used_by	wn30	lexfile	rank	senses	tags	gloss	everyday	everyday_tags	everyday_lexfile	everyday_gloss	everyday_parent	off_wordnet	flags	recommendation	decision	note	zipf	first	first_by	twin	twin_sim	parents_sim	misfit	trap
-able-seaman	worker	0	0		09756500	person	1	1	0	a seaman in the merchant marine; trained in special skills						worker	off-wordnet shrink	review: rare leaf			3.20					worker:0.33	0.65	0.01
+able-seaman	worker	0	0		09756500	person	1	1	0	a seaman in the merchant marine; trained in special skills						worker	off-wordnet shrink	review: rare leaf			3.20					worker:0.33	0.64	0.01
 accompanist	instrumentalist	0	0		09760913	person	1	1	0	a person who provides musical accompaniment (usually on a piano)							shrink	review: rare leaf			2.30					instrumentalist:0.61	0.15	0.21
 acrobat	artist	1	1		09764381	person	1	1	0	an athlete who performs acts requiring skill and agility and coordination						artist	off-wordnet				2.72					artist:0.23	0.87	0.24
-adjutant	worker	0	0		09770179	person	1	2	0	an officer who acts as military assistant to a more senior officer						worker	off-wordnet shrink	review: rare leaf			3.12					worker:0.31	0.64	0.07
+adjutant	worker	0	0		09770179	person	1	2	0	an officer who acts as military assistant to a more senior officer						worker	off-wordnet shrink	review: rare leaf			3.12					worker:0.31	0.65	0.07
 adviser		2	2					1			09774266	0	person	an expert who gives advice			no-synset											
 aeronautical-engineer	engineer	0	0		09775907	person	1	1	0	an engineer concerned with the design and construction of aircraft						engineer	off-wordnet shrink	review: rare leaf			3.07					engineer:0.58	0.10	0.01
-aerospace-engineer	engineer professional	0	0		09776079	person	1	1	0	an engineer of aircraft and space vehicles						engineer professional	disjoint off-wordnet shrink	keep one parent (several mean AND)			3.66					professional:0.21 engineer:0.55	0.71	0.00
+aerospace-engineer	engineer professional	0	0		09776079	person	1	1	0	an engineer of aircraft and space vehicles						engineer professional	disjoint off-wordnet shrink	keep one parent (several mean AND)			3.66					professional:0.21 engineer:0.55	0.70	0.00
 agriculturist	worker	1	1		09779790	person	1	1	0	someone concerned with the science or art or business of cultivating the soil						worker	off-wordnet				1.98					worker:0.23	0.86	0.12
-agronomist	engineer expert scientist	0	0		09780120	person	1	1	0	an expert in soil management and field-crop production						engineer expert scientist	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.24					engineer:0.18 scientist:0.19 expert:0.20	0.97	0.24
+agronomist	engineer expert scientist	0	0		09780120	person	1	1	0	an expert in soil management and field-crop production						engineer expert scientist	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.24					engineer:0.18 scientist:0.19 expert:0.20	0.97	0.25
 aide	worker	0	0		09780249	person	2	2	1	someone who acts as assistant	09770179	3	person	an officer who acts as military assistant to a more senior officer	skilled-worker	worker	rare-sense held-by off-wordnet	re-sense to the everyday 09770179 (held by adjutant: rename one)			3.69	09770179 adjutant: an officer who acts as military assistant to a more senior officer	0.061			worker:0.42	0.36	0.93
-ambassador	diplomat skilled-worker	0	0		09787534	person	1	2	7	a diplomat of the highest rank; accredited as representative from one country to another						diplomat	disjoint off-wordnet	keep one parent (several mean AND)			4.35					skilled-worker:0.28 diplomat:0.71	0.88	0.07
+ambassador	skilled-worker	0	0					2			09787534	7	person	a diplomat of the highest rank; accredited as representative from one country to another	skilled-worker		no-synset				4.35					skilled-worker:0.25	0.87	
 analyst		2	2					3			09790278	0	person	a licensed practitioner of psychoanalysis			no-synset											
 analyst.person	expert	0	0		09790482	person		0		someone who is skilled at analyzing data						expert	off-wordnet				0.00			=analyst	1.00	expert:0.51	0.19	0.04
 anatomist	expert research-worker	0	0		09792237	person	1	1	0	an expert in anatomy						expert research-worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.22					research-worker:0.31 expert:0.39	0.44	0.05
 anchorman	reporter	0	0		09792969	person	1	1	0	a television reporter who coordinates a broadcast to which several correspondents contribute						reporter	off-wordnet shrink	review: rare leaf			2.63					reporter:0.55	0.06	0.24
-animal-trainer	trainer worker	0	0		10159045	person	1	1	0	one who trains or exhibits animals						trainer worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			4.00			trainer	0.92	worker:0.29 trainer:0.92	0.68	0.02
+animal-trainer	trainer worker	0	0		10159045	person	1	1	0	one who trains or exhibits animals						trainer worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			4.00			trainer	0.92	worker:0.29 trainer:0.92	0.67	0.02
 announcer	worker	1	1		09795124	person	2	2	0	reads news, commercials on radio or television	09795334	0	person	someone who proclaims a message publicly	communicator	worker	off-wordnet				3.58					worker:0.14	0.99	0.66
 anthropologist	social-scientist	1	1		09796323	person	1	1	3	a social scientist who specializes in anthropology											3.16					social-scientist:0.67	0.11	0.01
 appraiser	worker	0	0		09802050	person	1	2	1	one who estimates officially the worth or value or quality of things						worker	off-wordnet shrink	review: rare leaf			2.80					worker:0.10	0.99	0.17
-arbiter	specialist	0	0		09803429	person	2	2	0	someone chosen to judge and decide a disputed issue	09804053	0	person	someone with the power to settle matters at will		specialist	off-wordnet shrink	review: rare leaf			2.98					specialist:0.17	0.89	0.69
+arbiter	specialist	0	0		09803429	person	2	2	0	someone chosen to judge and decide a disputed issue	09804053	0	person	someone with the power to settle matters at will		specialist	off-wordnet shrink	review: rare leaf			2.98					specialist:0.17	0.90	0.69
 archbishop	bishop professional	0	0		09805151	person	1	1	5	a bishop of highest rank						bishop professional	disjoint off-wordnet	keep one parent (several mean AND)			3.82					professional:0.18 bishop:0.65	0.91	0.07
 archeologist	scientist	0	0		09804806	person	1	1	0	an anthropologist who studies prehistoric people and their culture						scientist	off-wordnet shrink	review: rare leaf			2.42					scientist:0.45	0.30	0.10
 archivist	worker	0	0		09806944	person	1	1	0	a person in charge of collecting and cataloguing archives						worker	off-wordnet shrink	review: rare leaf			2.80					worker:0.34	0.51	0.12
 art-critic	critic	0	0		09810867	person	1	1	0	a critic of paintings						critic	off-wordnet shrink	review: rare leaf			3.93					critic:0.81	0.00	0.00
 artist		25	43					1			09812338	44	person	a person whose creative work shows sensitivity and imagination			no-synset											
 artist's-model	worker	0	0		09813219	person	1	1	0	a person who poses for a painter or sculptor						worker	off-wordnet shrink	review: rare leaf			3.51					worker:0.41	0.51	0.11
-assayer	analyst	0	0		09814252	person	1	1	0	an analyst who assays (performs chemical tests on) metals						analyst	off-wordnet shrink	review: rare leaf			1.69					analyst:0.50	0.09	0.14
+assayer	analyst	0	0		09814252	person	1	1	0	an analyst who assays (performs chemical tests on) metals						analyst	off-wordnet shrink	review: rare leaf			1.69					analyst:0.50	0.10	0.14
 astrologer	forecaster	0	0		09817816	person	1	1	0	someone who predicts the future by the positions of the planets and sun and Moon							shrink	review: rare leaf			2.80					forecaster:0.68	0.01	0.07
-astrophysicist	research-worker	0	0		09819291	person	1	1	0	an astronomer who studies the physical properties of celestial bodies						research-worker	off-wordnet shrink	review: rare leaf			2.62					research-worker:0.38	0.57	0.04
+astrophysicist	research-worker	0	0		09819291	person	1	1	0	an astronomer who studies the physical properties of celestial bodies						research-worker	off-wordnet shrink	review: rare leaf			2.62					research-worker:0.38	0.58	0.04
 athlete		7	7					1			09820263	7	person	a person trained to compete in sports			no-synset											
 auctioneer	broker	0	0		09608377	person	1	1	0	an agent who conducts an auction							shrink	review: rare leaf			3.15					broker:0.47	0.20	0.01
-automobile-mechanic	mender	0	0		09825750	person	1	1	0	someone whose occupation is repairing and maintaining automobiles							shrink	review: rare leaf			3.56					mender:0.53	0.08	0.02
+automobile-mechanic	mender	0	0		09825750	person	1	1	0	someone whose occupation is repairing and maintaining automobiles							shrink	review: rare leaf			3.56					mender:0.53	0.09	0.02
 automotive-engineer	engineer professional	0	0		09825939	person	1	1	0	an engineer concerned with the design and construction of automobiles						engineer professional	disjoint off-wordnet shrink	keep one parent (several mean AND)			3.83					professional:0.21 engineer:0.57	0.74	0.01
 ayah	servant	0	0		09826821	person	1	1	0	(in India) a native nursemaid who looks after children						servant	off-wordnet shrink	review: rare leaf			2.28					servant:0.26	0.89	0.27
-bacteriologist	research-worker worker	0	0		09831411	person	1	1	0	a biologist who studies bacteria						research-worker worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.10					worker:0.24 research-worker:0.49	0.75	0.02
-bailiff	skilled-worker	0	0		09833111	person	1	1	0	an officer of the court who is employed to execute writs and processes and make arrests etc.							shrink	review: rare leaf			3.00					skilled-worker:0.22	0.85	0.20
+bacteriologist	research-worker worker	0	0		09831411	person	1	1	0	a biologist who studies bacteria						research-worker worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.10					worker:0.24 research-worker:0.49	0.76	0.02
+bailiff	skilled-worker	0	0		09833111	person	1	1	0	an officer of the court who is employed to execute writs and processes and make arrests etc.							shrink	review: rare leaf			3.00					skilled-worker:0.22	0.84	0.21
 ballerina	ballet-dancer	0	0		09834592	person	1	1	1	a female ballet dancer							shrink	review: rare leaf			3.10					ballet-dancer:0.78	0.00	0.03
 ballet-dancer	dancer	1	1		09834699	person	1	1	1	a trained dancer who is a member of a ballet company											3.67					dancer:0.75	0.01	0.00
 bandleader	musician	0	0		09837201	person	1	1	0	the leader of a dance band						musician	off-wordnet shrink	review: rare leaf			2.49					musician:0.38	0.40	0.03
 bandmaster	musician	0	0		09837360	person	1	1	0	the conductor of a band						musician	off-wordnet shrink	review: rare leaf			1.73					musician:0.49	0.25	0.10
 bank-manager	manager	0	0		09838200	person	1	1	0	manager of a branch office of a bank						manager	off-wordnet shrink	review: rare leaf			4.75					manager:0.50	0.50	0.01
-banker	worker	0	0		09837824	person	1	2	9	a financier who owns or is an executive in a bank						worker	off-wordnet				3.78					worker:0.30	0.58	0.08
+banker	worker	0	0		09837824	person	1	2	9	a financier who owns or is an executive in a bank						worker	off-wordnet				3.78					worker:0.30	0.60	0.08
 barber	hairdresser	0	0		09838895	person	2	2	0	a hairdresser who cuts hair and shaves beards as a trade	10834439	0	person	United States composer (1910-1981)			shrink	review: rare leaf			3.81					hairdresser:0.78	0.00	0.54
 baritone	human singer	0	0		09839436	person	1	3	0	a male singer						human singer	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.98	06872562 baritone: the second lowest adult male singing voice	0.047			human:0.23 singer:0.60	0.91	0.66
-barmaid	bartender	0	0		09839702	person	1	1	0	a female bartender							shrink	review: rare leaf			2.47					bartender:0.66	0.03	0.13
+barmaid	bartender	0	0		09839702	person	1	1	0	a female bartender							shrink	review: rare leaf			2.47					bartender:0.66	0.02	0.13
 barrister	lawyer	0	0		09840963	person	1	1	0	a British or Canadian lawyer who speaks in the higher courts of law on behalf of either the defense or prosecution						lawyer	off-wordnet shrink	review: rare leaf			3.37					lawyer:0.65	0.14	0.15
 bartender	worker	2	2		09841188	person	1	1	2	an employee who mixes and serves alcoholic drinks at a bar						worker	off-wordnet				3.50					worker:0.44	0.39	0.05
 basketweaver	maker	0	0		09842288	person	1	1	0	someone skilled in weaving baskets							shrink	review: rare leaf			0.00					maker:0.42	0.28	0.13
-beater	worker	0	0		09845737	person	1	2	0	a worker who rouses wild game from under cover for a hunter						worker	off-wordnet shrink	review: rare leaf			3.09	02817650 beater: an implement for beating	0.226			worker:0.35	0.64	0.76
+beater	worker	0	0		09845737	person	1	2	0	a worker who rouses wild game from under cover for a hunter						worker	off-wordnet shrink	review: rare leaf			3.09	02817650 beater: an implement for beating	0.226			worker:0.35	0.63	0.76
 beautician	worker	0	0		09845999	person	1	1	0	someone who works in a beauty parlor						worker	off-wordnet shrink	review: rare leaf			2.39					worker:0.43	0.33	0.07
 beekeeper	farmer	0	0		09846755	person	1	1	0	a farmer who keeps bees for their honey						farmer	off-wordnet shrink	review: rare leaf			2.54					farmer:0.53	0.27	0.04
 behaviorist	scientist	0	0		09608520	person	1	1	0	a psychologist who subscribes to behaviorism						scientist	off-wordnet shrink	review: rare leaf			2.27					scientist:0.30	0.80	0.02
 bell-ringer	instrumentalist	0	0		09849256	person	2	3	0	someone who plays musical handbells	10714851	0	person	a person who rings church bells (as for summoning the congregation)	communicator		shrink	review: rare leaf			3.05	10714851 toller: a person who rings church bells (as for summoning the congregation)	0.112			instrumentalist:0.49	0.23	0.98
-bellboy	porter	0	0		09848775	person	1	1	0	someone employed as an errand boy and luggage carrier around hotels						porter	off-wordnet shrink	review: rare leaf			1.99					porter:0.52	0.09	0.30
+bellboy	porter	0	0		09848775	person	1	1	0	someone employed as an errand boy and luggage carrier around hotels						porter	off-wordnet shrink	review: rare leaf			1.99					porter:0.52	0.09	0.31
 bill-poster	worker	0	0		09854510	person	1	1	0	someone who pastes up bills or placards on walls or billboards						worker	off-wordnet shrink	review: rare leaf			4.15					worker:0.22	0.87	0.15
 biochemist	research-worker worker	0	0		09854915	person	1	1	0	someone with special training in biochemistry						research-worker worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.52					worker:0.24 research-worker:0.43	0.85	0.08
 biographer	artist communicator worker writer	0	0		09855433	person	1	1	0	someone who writes an account of a person's life						artist worker writer	disjoint off-wordnet shrink	keep one parent (several mean AND)			3.09					worker:0.32 communicator:0.32 artist:0.38 writer:0.53	0.46	0.19
 biophysicist	research-worker	0	0		09856267	person	1	1	1	a physicist who applies the methods of physics to biology						research-worker	off-wordnet shrink	review: rare leaf			1.49					research-worker:0.53	0.13	0.06
 bishop		1	1					3			09857200	6	person	a senior member of the Christian clergy having spiritual and administrative authority; appointed in Christian churches to oversee priests or ministers; considered in some churches to be successors of the twelve Apostles of Christ	priest		no-synset											
-blacksmith	craftsman	1	1		09859152	person	1	1	1	a smith who forges and shapes iron with a hammer and anvil						craftsman	off-wordnet				3.26					craftsman:0.45	0.31	0.04
-blaster	worker	0	0		09859557	person	1	1	0	a workman employed to blast with explosives						worker	off-wordnet shrink	review: rare leaf			3.08					worker:0.33	0.68	0.16
+blacksmith	craftsman	1	1		09859152	person	1	1	1	a smith who forges and shapes iron with a hammer and anvil						craftsman	off-wordnet				3.26					craftsman:0.45	0.32	0.04
+blaster	worker	0	0		09859557	person	1	1	0	a workman employed to blast with explosives						worker	off-wordnet shrink	review: rare leaf			3.08					worker:0.33	0.67	0.16
 bleacher	worker	0	0		09859684	person	1	1	0	a worker who bleaches (cloth or flour etc.)						worker	off-wordnet shrink	review: rare leaf			2.59					worker:0.47	0.44	0.28
 blogger	person	0	0		09860415	person	1	1	0	a person who keeps and updates a blog						person	off-wordnet shrink	review: rare leaf			3.85					person:0.32	0.72	0.06
 board-member	member	0	0		10308168	person	1	1	0	a member of a governing board						member	off-wordnet shrink	review: rare leaf			4.91					member:0.59	0.05	0.02
-boatman	worker	0	0		09861946	person	1	1	0	someone who drives or rides in a boat						worker	off-wordnet shrink	review: rare leaf			2.50					worker:0.36	0.50	0.10
+boatman	worker	0	0		09861946	person	1	1	0	someone who drives or rides in a boat						worker	off-wordnet shrink	review: rare leaf			2.50					worker:0.36	0.49	0.10
 bodybuilder	person	0	0		09862845	person	1	1	8	someone who does special exercises to develop a brawny musculature						person	off-wordnet				2.89					person:0.24	0.89	0.13
-bodyguard	worker	0	0		09863031	person	1	2	1	someone who escorts and protects a prominent person						worker	off-wordnet shrink	review: rare leaf			3.38					worker:0.27	0.61	0.20
-bookbinder	craftsman	0	0		09865744	person	1	1	0	a worker whose trade is binding books						craftsman	off-wordnet shrink	review: rare leaf			2.03					craftsman:0.55	0.27	0.09
+bodyguard	worker	0	0		09863031	person	1	2	1	someone who escorts and protects a prominent person						worker	off-wordnet shrink	review: rare leaf			3.38					worker:0.27	0.62	0.20
+bookbinder	craftsman	0	0		09865744	person	1	1	0	a worker whose trade is binding books						craftsman	off-wordnet shrink	review: rare leaf			2.03					craftsman:0.55	0.26	0.09
 booker	worker	1	1		09865954	person	1	1	2	someone who engages a person or company for performances						worker	off-wordnet				3.55					worker:0.27	0.61	0.37
 bookmaker	worker	0	0		09866222	person	2	2	0	a gambler who accepts and pays off bets (especially on horse races)	09866354	0	person	a maker of books; someone who edits or publishes or binds books	maker	worker	off-wordnet shrink	review: rare leaf			2.61					worker:0.20	0.84	0.74
 botanist	research-worker worker	2	2		09868270	person	1	1	0	a biologist specializing in the study of plants						research-worker worker	disjoint off-wordnet	keep one parent (several mean AND)			2.89					worker:0.22 research-worker:0.45	0.82	0.03
-bouncer	guard worker	0	0		09869009	person	1	1	0	a person whose duty is to throw troublemakers out of a bar or public meeting						guard worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			3.12					worker:0.26 guard:0.35	0.72	0.30
-breaker	worker	0	0		09873604	person	1	3	0	a quarry worker who splits off blocks of stone						worker	off-wordnet shrink	review: rare leaf			3.60	03034244 circuit_breaker: a device that trips like a switch and opens the circuit when overloaded	0.334			worker:0.48	0.45	0.79
+bouncer	guard worker	0	0		09869009	person	1	1	0	a person whose duty is to throw troublemakers out of a bar or public meeting						guard worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			3.12					worker:0.26 guard:0.35	0.71	0.30
+breaker	worker	0	0		09873604	person	1	3	0	a quarry worker who splits off blocks of stone						worker	off-wordnet shrink	review: rare leaf			3.60	03034244 circuit_breaker: a device that trips like a switch and opens the circuit when overloaded	0.334			worker:0.48	0.45	0.80
 breeder	farmer	1	1		09873899	person	1	1	0	a person who breeds animals						farmer	off-wordnet				3.35					farmer:0.55	0.24	0.05
 brewer	craftsman maker	0	0		09874118	person	1	2	0	someone who brews beer or ale from malt and hops and water						craftsman	disjoint off-wordnet shrink	keep one parent (several mean AND)			3.54					craftsman:0.26 maker:0.37	0.85	0.11
-bricklayer	craftsman	0	0		09874518	person	1	1	1	a craftsman skilled in building with bricks						craftsman	off-wordnet shrink	review: rare leaf			2.52					craftsman:0.63	0.12	0.17
-broker	businessman worker	7	7		09777012	person	1	1	1	a businessman who buys or sells for another in exchange for a commission						businessman worker	disjoint off-wordnet	keep one parent (several mean AND)			3.89					worker:0.26 businessman:0.57	0.64	0.22
+bricklayer	craftsman	0	0		09874518	person	1	1	1	a craftsman skilled in building with bricks						craftsman	off-wordnet shrink	review: rare leaf			2.52					craftsman:0.63	0.12	0.18
+broker	businessman	7	7		09777012	person	1	1	1	a businessman who buys or sells for another in exchange for a commission						businessman	off-wordnet				3.89					businessman:0.57	0.07	0.23
 businessman		2	9	economics				1			09882007	10	person	a person engaged in commercial or industrial business (especially an owner or executive)			no-synset											
-busman	driver operator	0	0		09883362	person	1	1	0	someone who drives a bus						driver	disjoint off-wordnet shrink	keep one parent (several mean AND)			1.11					operator:0.35 driver:0.55	0.36	0.14
-butcher	merchant worker	0	0	economics	09884391	person	1	4	0	a retailer of meat						merchant worker	disjoint off-wordnet	keep one parent (several mean AND)			3.75					worker:0.24 merchant:0.45	0.80	0.16
+busman	driver operator	0	0		09883362	person	1	1	0	someone who drives a bus						driver operator	disjoint off-wordnet shrink	keep one parent (several mean AND)			1.11					operator:0.35 driver:0.55	0.36	0.14
+butcher	merchant worker	0	0	economics	09884391	person	1	4	0	a retailer of meat						merchant worker	disjoint off-wordnet	keep one parent (several mean AND)			3.75					worker:0.24 merchant:0.45	0.81	0.16
 butler	servant	0	0		09884509	person	1	3	1	a manservant (usually the head servant of a household) who has charge of wines and the table						servant	off-wordnet shrink	review: rare leaf			4.08					servant:0.62	0.12	0.32
 buyer	person	0	0		09885145	person	1	1	1	a person who buys						person	off-wordnet shrink	review: rare leaf			4.03					person:0.38	0.69	0.09
 cabinetmaker	craftsman	0	0		09885866	person	1	1	0	a woodworker who specializes in making furniture						craftsman	off-wordnet shrink	review: rare leaf			1.95					craftsman:0.49	0.16	0.14
@@ -88,196 +88,193 @@ calligrapher	worker	0	0		09889170	person	1	1	0	someone skilled in penmanship				
 cameraman	worker	0	0		09889539	person	1	1	0	a photographer who operates a movie camera						worker	off-wordnet shrink	review: rare leaf			3.30					worker:0.32	0.57	0.10
 canon	priest	0	0		09891613	person	2	6	0	a priest who is a member of a cathedral chapter	06664594	5	communication	a rule or especially body of rules or principles generally established as valid and fundamental in a field or art or philosophy			rare-sense	re-sense to the everyday 06664594 under ?			4.11					priest:0.56	0.17	0.77
 caricaturist	person	0	0		09896170	person	1	1	0	someone who parodies in an exaggerated manner						person	off-wordnet shrink	review: rare leaf			1.91					person:0.29	0.61	0.29
-carpenter	craftsman	0	0		09896685	person	1	1	8	a woodworker who makes or repairs wooden objects						craftsman	off-wordnet				3.81					craftsman:0.58	0.10	0.18
-cartographer	geographer	0	0		09898215	person	1	1	0	a person who makes maps							shrink	review: rare leaf			2.37					geographer:0.58	0.05	0.12
+carpenter	craftsman	0	0		09896685	person	1	1	8	a woodworker who makes or repairs wooden objects						craftsman	off-wordnet				3.81					craftsman:0.58	0.11	0.18
+cartographer	geographer	0	0		09898215	person	1	1	0	a person who makes maps							shrink	review: rare leaf			2.37					geographer:0.58	0.06	0.12
 cartoonist	artist worker	0	0		09898346	person	1	1	3	a person who draws cartoons						artist worker	disjoint off-wordnet	keep one parent (several mean AND)			3.07					worker:0.30 artist:0.57	0.74	0.09
 cartwright	craftsman	0	0		09898692	person	2	2	0	a workman who makes and repairs carts and wagons	10885352	0	person	English clergyman who invented the power loom (1743-1823)		craftsman	off-wordnet shrink	review: rare leaf			3.21					craftsman:0.54	0.19	0.80
 caster.person	worker	0	0		09609746	person		0		a worker who casts molten metal into finished products						worker	off-wordnet				0.00					worker:0.49	0.32	0.20
 cataloger	professional	0	0		09900499	person	1	1	0	a librarian who classifies publication according to a categorial system						professional	off-wordnet shrink	review: rare leaf			1.38					professional:0.24	0.92	0.24
 cellist	instrumentalist musician	0	0		09903501	person	1	1	0	someone who plays a violoncello						musician	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.71					musician:0.23 instrumentalist:0.27	0.86	0.34
-chambermaid	maid	0	0		09906293	person	1	1	2	a maid who is employed to clean and care for bedrooms (now primarily in hotels)						maid	off-wordnet				2.21					maid:0.68	0.02	0.29
+chambermaid	maid	0	0		09906293	person	1	1	2	a maid who is employed to clean and care for bedrooms (now primarily in hotels)						maid	off-wordnet				2.21					maid:0.68	0.03	0.30
 chancellor-of-the-exchequer	chief	0	0		09907408	person	1	1	0	the British cabinet minister responsible for finance						chief	off-wordnet shrink	review: rare leaf			3.11					chief:0.21	0.89	0.13
-chaplain	professional	0	0		09908508	person	1	1	0	a clergyman ministering to some institution						professional	off-wordnet shrink	review: rare leaf			3.43					professional:0.20	0.81	0.23
+chaplain	professional	0	0		09908508	person	1	1	0	a clergyman ministering to some institution						professional	off-wordnet shrink	review: rare leaf			3.43					professional:0.20	0.82	0.24
 charcoal-burner	worker	0	0		09909660	person	1	2	0	a worker whose job is to make charcoal						worker	off-wordnet shrink	review: rare leaf			3.26	03008080 charcoal_burner: a stove that burns charcoal as fuel	0.355			worker:0.50	0.28	0.50
-chauffeur	driver operator	0	0		09908853	person	1	1	0	a man paid to drive a privately owned car						driver	disjoint off-wordnet shrink	keep one parent (several mean AND)			3.17					operator:0.20 driver:0.50	0.78	0.43
+chauffeur	driver operator	0	0		09908853	person	1	1	0	a man paid to drive a privately owned car						driver operator	disjoint off-wordnet shrink	keep one parent (several mean AND)			3.17					operator:0.20 driver:0.50	0.78	0.44
 chef	cook	0	0		09963574	person	1	1	0	a professional cook						cook	off-wordnet shrink	review: rare leaf			4.23					cook:0.80	0.01	0.08
-chief		9	9					3			10104209	1	person	a person who exercises control over workers			no-synset											
+chief		7	7					3			10104209	1	person	a person who exercises control over workers			no-synset											
 chief-executive-officer	chief worker	0	0		09916348	person	1	1	0	the corporate executive responsible for the operations of the firm; reports to a board of directors; may appoint other managers (including a president)						chief worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			4.51					worker:0.20 chief:0.54	0.93	0.17
 chief-financial-officer	chief worker	0	0		09916601	person	1	1	0	the corporate executive having financial authority to make appropriations and authorize expenditures for a firm						chief worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			4.60					worker:0.16 chief:0.46	0.93	0.23
 chief-justice	worker	0	0		09916788	person	1	1	1	the judge who presides over a supreme court						worker	off-wordnet shrink	review: rare leaf			4.73					worker:0.15	0.98	0.10
 chimneysweeper	worker	0	0		09919061	person	1	1	0	someone who cleans soot from chimneys						worker	off-wordnet shrink	review: rare leaf			0.00					worker:0.32	0.74	0.09
-chiropractor	expert	0	0		09919200	person	1	1	2	a therapist who practices chiropractic						expert	off-wordnet				2.85					expert:0.39	0.42	0.04
+chiropractor	expert	0	0		09919200	person	1	1	2	a therapist who practices chiropractic						expert	off-wordnet				2.85					expert:0.39	0.44	0.04
 choirmaster	artist	0	0		09919771	person	1	1	0	the musical director of a choir						artist	off-wordnet shrink	review: rare leaf			2.12					artist:0.30	0.47	0.06
 choreographer	artist worker	0	0		09920283	person	1	1	0	someone who creates new dances						artist worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			3.13					worker:0.18 artist:0.37	0.90	0.16
-city-editor	editor	0	0		09923996	person	1	1	0	the newspaper editor in charge of editing local news							shrink	review: rare leaf			4.58					editor:0.66	0.08	0.11
+city-editor	editor	0	0		09923996	person	1	1	0	the newspaper editor in charge of editing local news						editor	off-wordnet shrink	review: rare leaf			4.58					editor:0.66	0.08	0.11
 civil-engineer	engineer professional	0	0		09924540	person	1	1	0	an engineer trained to design and construct and maintain public works (roads or bridges or harbors etc.)						engineer professional	disjoint off-wordnet shrink	keep one parent (several mean AND)			4.36					professional:0.34 engineer:0.57	0.49	0.14
 clerk		3	3					2			09928451	7	person	an employee who performs clerical work (e.g., keeps records or accounts)			no-synset											
-climatologist	expert research-worker	0	0		09929202	person	1	1	0	someone who is expert in climatology						expert research-worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.06					expert:0.36 research-worker:0.38	0.35	0.03
-cloakmaker	craftsman maker	0	0		09929861	person	1	1	0	someone whose occupation is making or repairing fur garments						craftsman	disjoint off-wordnet shrink	keep one parent (several mean AND)			0.00					maker:0.39 craftsman:0.42	0.29	0.34
+climatologist	expert research-worker	0	0		09929202	person	1	1	0	someone who is expert in climatology						expert research-worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.06					expert:0.36 research-worker:0.38	0.35	0.04
+cloakmaker	craftsman maker	0	0		09929861	person	1	1	0	someone whose occupation is making or repairing fur garments						craftsman	disjoint off-wordnet shrink	keep one parent (several mean AND)			0.00					maker:0.39 craftsman:0.42	0.30	0.35
 clocksmith	craftsman	0	0		09930102	person	1	1	0	someone whose occupation is making or repairing clocks and watches						craftsman	off-wordnet shrink	review: rare leaf			0.00					craftsman:0.42	0.31	0.15
-clown	comedian	0	0		09930876	person	2	2	1	a person who amuses others by ridiculous behavior	09931165	1	person	a rude or vulgar fool							3.93					comedian:0.51	0.10	0.71
+clown	comedian	0	0		09930876	person	2	2	1	a person who amuses others by ridiculous behavior	09931165	1	person	a rude or vulgar fool							3.93					comedian:0.51	0.10	0.72
 coal-miner	miner	0	0		09932508	person	1	1	0	someone who works in a coal mine						miner	off-wordnet shrink	review: rare leaf			3.53					miner:0.84	0.01	0.03
-coalman	worker	0	0		09932429	person	1	1	0	someone who delivers coal						worker	off-wordnet shrink	review: rare leaf			1.16					worker:0.42	0.39	0.11
-cobbler	maker	0	0		09933098	person	1	3	1	a person who makes or repairs shoes							shrink	review: rare leaf			2.82	07625831 deep-dish_pie: a pie made of fruit with rich biscuit dough usually only on top of the fruit	0.043			maker:0.37	0.37	0.76
+coalman	worker	0	0		09932429	person	1	1	0	someone who delivers coal						worker	off-wordnet shrink	review: rare leaf			1.16					worker:0.42	0.38	0.11
+cobbler	maker	0	0		09933098	person	1	3	1	a person who makes or repairs shoes							shrink	review: rare leaf			2.82	07625831 deep-dish_pie: a pie made of fruit with rich biscuit dough usually only on top of the fruit	0.043			maker:0.37	0.37	0.77
 columnist	writer	0	0		09939154	person	1	1	1	a journalist who writes editorials						writer	off-wordnet shrink	review: rare leaf			3.58					writer:0.50	0.27	0.19
 comber	worker	0	0		09940026	person	1	3	0	a person who separates and straightens the fibers of cotton or wool						worker	off-wordnet shrink	review: rare leaf			2.11					worker:0.31	0.70	0.42
-comedian	artist	1	1		09940146	person	1	2	4	a professional performer who tells jokes and performs comical acts						artist	off-wordnet				3.96	09940725 comedian: an actor in a comedy	0.085			artist:0.36	0.41	0.54
-commercial-artist	artist	0	0		09942587	person	1	1	0	an illustrator who is supported by advertising						artist	off-wordnet shrink	review: rare leaf			4.56					artist:0.59	0.25	0.18
-commissioner	chief	0	0		09943811	person	1	2	5	a government administrator						chief	off-wordnet				4.43					chief:0.50	0.22	0.27
+comedian	artist	1	1		09940146	person	1	2	4	a professional performer who tells jokes and performs comical acts						artist	off-wordnet				3.96	09940725 comedian: an actor in a comedy	0.085			artist:0.36	0.40	0.54
+commercial-artist	artist	0	0		09942587	person	1	1	0	an illustrator who is supported by advertising						artist	off-wordnet shrink	review: rare leaf			4.56					artist:0.59	0.25	0.19
 communicator	human	4	4		09610660	person	1	1	0	a person who communicates with others						human	off-wordnet				2.96					human:0.23	0.70	0.13
-company-president	chief	0	0		10468559	person		0		an executive officer of a firm or corporation						chief	off-wordnet				5.22					chief:0.43	0.22	0.08
+company-president	chief	0	0		10468559	person		0		an executive officer of a firm or corporation						chief	off-wordnet				5.22					chief:0.43	0.22	0.09
 compiler.person	person	0	0		09946957	person		0		a person who compiles information (as for reference purposes)						person	off-wordnet				0.00					person:0.38	0.54	0.05
 composer		1	1					1			09947232	24	person	someone who composes music as a profession			no-synset											
 compositor	worker	0	0		09949946	person	1	1	0	one who sets written material into type						worker	off-wordnet shrink	review: rare leaf			2.15					worker:0.29	0.76	0.44
 computer-scientist	research-worker worker	0	0		09951070	person	1	1	0	a scientist who specializes in the theory of computation and the design of computers						research-worker worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			4.14					worker:0.33 research-worker:0.47	0.69	0.06
 concierge	worker	0	0		09951953	person	1	1	2	a French caretaker of apartments or a hotel; lives on the premises and oversees people entering and leaving and handles mail and acts as janitor or porter						worker	off-wordnet				3.13					worker:0.31	0.58	0.40
-confectioner	craftsman maker	0	0		09953350	person	1	1	0	someone who makes candies and other sweets						craftsman	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.11					craftsman:0.21 maker:0.47	0.89	0.30
+confectioner	craftsman maker	0	0		09953350	person	1	1	0	someone who makes candies and other sweets						craftsman	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.11					craftsman:0.21 maker:0.47	0.88	0.30
 congressman	legislator	0	0					1			09955781	3	person	a member of the United States House of Representatives	legislator		no-synset				3.86					legislator:0.57	0.07	
 contortionist	acrobat human	0	0		09960545	person	1	1	0	an acrobat able to twist into unusual positions						human	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.21					human:0.15 acrobat:0.58	0.98	0.40
 contralto	person	0	0		09961198	person	1	2	1	a woman singer having a contralto voice						person	off-wordnet shrink	review: rare leaf			2.16					person:0.25	0.87	0.15
 cook		1	1					2			09963320	7	person	someone who cooks food	skilled-worker		no-synset											
 cooper	craftsman	0	0		09963773	person	4	4	0	a craftsman who makes or repairs wooden barrels or tubs	10909471	0	person	United States industrialist who built the first American locomotive; founded Cooper Union in New York City to offer free courses in the arts and sciences (1791-1883)		craftsman	off-wordnet shrink	review: rare leaf			4.26					craftsman:0.51	0.17	0.86
-coppersmith	craftsman	0	0		09964315	person	1	1	0	someone who makes articles from copper						craftsman	off-wordnet shrink	review: rare leaf			1.66					craftsman:0.35	0.66	0.26
-copy-editor	editor	0	0		09964659	person	1	1	0	an editor who prepares text for publication							shrink	review: rare leaf			4.39					editor:0.72	0.07	0.33
+coppersmith	craftsman	0	0		09964315	person	1	1	0	someone who makes articles from copper						craftsman	off-wordnet shrink	review: rare leaf			1.66					craftsman:0.35	0.67	0.26
+copy-editor	editor	0	0		09964659	person	1	1	0	an editor who prepares text for publication						editor	off-wordnet shrink	review: rare leaf			4.39					editor:0.72	0.07	0.34
 copyist	worker	0	0		09964805	person	1	1	0	someone employed to make written copies of documents and manuscripts						worker	off-wordnet shrink	review: rare leaf			2.17					worker:0.37	0.38	0.28
-copywriter	worker	0	0		09965021	person	1	1	0	a person employed to write advertising or publicity copy						worker	off-wordnet shrink	review: rare leaf			2.51					worker:0.31	0.63	0.35
+copywriter	worker	0	0		09965021	person	1	1	0	a person employed to write advertising or publicity copy						worker	off-wordnet shrink	review: rare leaf			2.51					worker:0.31	0.64	0.35
 coroner	expert	0	0		09965985	person	1	1	5	a public official who investigates by inquest any death not due to natural causes						expert	off-wordnet				3.43					expert:0.20	0.95	0.26
-correspondent	reporter	0	0		09966710	person	2	2	2	a journalist employed to provide news stories for newspapers or broadcast media	09966554	3	person	someone who communicates by means of letters	communicator	reporter	rare-sense off-wordnet	re-sense to the everyday 09966554 under communicator			3.86					reporter:0.70	0.02	0.57
-cosmetologist	person	0	0		09967159	person	1	1	0	an expert in the use of cosmetics						person	off-wordnet shrink	review: rare leaf			1.89					person:0.18	0.93	0.37
+correspondent	reporter	0	0		09966710	person	2	2	2	a journalist employed to provide news stories for newspapers or broadcast media	09966554	3	person	someone who communicates by means of letters	communicator	reporter	rare-sense off-wordnet	re-sense to the everyday 09966554 under communicator			3.86					reporter:0.70	0.02	0.58
+cosmetologist	person	0	0		09967159	person	1	1	0	an expert in the use of cosmetics						person	off-wordnet shrink	review: rare leaf			1.89					person:0.18	0.93	0.38
 costumier	person	0	0		09968259	person	1	1	0	someone who designs or supplies costumes (as for a play or masquerade)						person	off-wordnet shrink	review: rare leaf			1.19					person:0.28	0.67	0.46
 council-member	member	0	0		09944763	person	1	1	0	a member of a council						member	off-wordnet shrink	review: rare leaf			4.83					member:0.59	0.06	0.05
 counsel	lawyer	0	0		09775663	person	1	2	5	a lawyer who pleads cases in court						lawyer	off-wordnet				4.16					lawyer:0.64	0.09	0.36
-court-usher	worker	0	0		10742111	person		0		an official stationed at the entrance of a courtroom or legislative chamber						worker	off-wordnet				3.51					worker:0.08	1.00	0.28
-cowboy	worker	1	1		09972661	person	1	3	9	a hired hand who tends cattle and performs other duties on horseback						worker	off-wordnet				3.85					worker:0.32	0.61	0.41
+court-usher	worker	0	0		10742111	person		0		an official stationed at the entrance of a courtroom or legislative chamber						worker	off-wordnet				3.51					worker:0.08	1.00	0.29
+cowboy	worker	1	1		09972661	person	1	3	9	a hired hand who tends cattle and performs other duties on horseback						worker	off-wordnet				3.85					worker:0.32	0.61	0.42
 cowgirl	cowboy	0	0		09973422	person	1	1	0	a woman cowboy							shrink	review: rare leaf			2.87					cowboy:0.58	0.07	0.42
-craftsman		43	49					3			09974648	1	person	a skilled worker who practices some trade or handicraft	skilled-worker		no-synset											
-credit-analyst	expert	0	0		09790666	person	1	1	0	an analyst who studies the financial statements and financial history of applicants for credit in order to evaluate their creditworthiness						expert	off-wordnet shrink	review: rare leaf			3.99					expert:0.18	0.91	0.08
+craftsman		42	45					3			09974648	1	person	a skilled worker who practices some trade or handicraft	skilled-worker		no-synset											
+credit-analyst	expert	0	0		09790666	person	1	1	0	an analyst who studies the financial statements and financial history of applicants for credit in order to evaluate their creditworthiness						expert	off-wordnet shrink	review: rare leaf			3.99					expert:0.18	0.90	0.08
 cricketer	athlete	0	0		09977326	person	1	1	0	an athlete who plays cricket						athlete	off-wordnet shrink	review: rare leaf			3.25					athlete:0.61	0.10	0.07
 criminal		1	1					1			09977660	12	person	someone who has committed a crime or has been legally convicted of a crime			no-synset											
 criminologist	scientist specialist worker	0	0		09978442	person	1	1	0	a specialist in criminology						scientist specialist worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.29					worker:0.27 scientist:0.30 specialist:0.35	0.79	0.09
 critic		1	1					3			09979589	6	person	a person who is professionally engaged in the analysis and interpretation of works of art			no-synset											
 crystallographer	research-worker specialist	0	0		09981740	person	1	1	0	a specialist in crystallography						research-worker specialist	disjoint off-wordnet shrink	keep one parent (several mean AND)			1.24					specialist:0.06 research-worker:0.14	1.00	0.14
-currier	craftsman	0	0		09984187	person	2	2	0	a craftsman who curries leather for use	10918358	0	person	United States lithographer who (with his partner James Ives) produced thousands of prints signed `Currier & Ives' (1813-1888)	printmaker	craftsman	off-wordnet shrink	review: rare leaf			2.34					craftsman:0.51	0.29	0.73
+currier	craftsman	0	0		09984187	person	2	2	0	a craftsman who curries leather for use	10918358	0	person	United States lithographer who (with his partner James Ives) produced thousands of prints signed `Currier & Ives' (1813-1888)	printmaker	craftsman	off-wordnet shrink	review: rare leaf			2.34					craftsman:0.51	0.29	0.74
 cytologist	research-worker	0	0		09987045	person	1	1	0	a biologist who studies the structure and function of cells						research-worker	off-wordnet shrink	review: rare leaf			0.00					research-worker:0.40	0.26	0.37
-dairymaid	farmhand	0	0		09988216	person	1	1	0	a woman who works in a dairy							shrink	review: rare leaf			0.00					farmhand:0.42	0.18	0.12
+dairymaid	farmhand	0	0		09988216	person	1	1	0	a woman who works in a dairy							shrink	review: rare leaf			0.00					farmhand:0.42	0.19	0.12
 dairyman	farmer	0	0		09988392	person	1	2	1	the owner or manager of a dairy						farmer	off-wordnet shrink	review: rare leaf			1.66					farmer:0.49	0.47	0.14
 dancer	artist	2	3		09989502	person	1	2	8	a performer who dances professionally						artist	off-wordnet				3.99					artist:0.36	0.43	0.11
 deacon	worker	0	0		09994673	person	1	2	4	a Protestant layman who assists the minister						worker	off-wordnet				3.39					worker:0.16	0.95	0.41
-dean	chief worker	0	0		09996784	person	1	4	1	an administrator in charge of a division of a university or college						chief worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			4.40					worker:0.19 chief:0.35	0.92	0.45
 deckhand	worker	0	0		09998788	person	1	1	0	a member of a ship's crew who performs manual labor						worker	off-wordnet shrink	review: rare leaf			2.02					worker:0.48	0.30	0.49
-demographer	research-worker worker	0	0		10002257	person	1	1	0	a scientist who studies the growth and density of populations and their vital statistics						research-worker worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			1.98					worker:0.17 research-worker:0.38	0.93	0.41
-dental-assistant	worker	0	0		10003782	person	1	1	0	an assistant to a dentist						worker	off-wordnet shrink	review: rare leaf			4.01					worker:0.27	0.84	0.06
+demographer	research-worker worker	0	0		10002257	person	1	1	0	a scientist who studies the growth and density of populations and their vital statistics						research-worker worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			1.98					worker:0.17 research-worker:0.38	0.93	0.42
+dental-assistant	worker	0	0		10003782	person	1	1	0	an assistant to a dentist						worker	off-wordnet shrink	review: rare leaf			4.01					worker:0.27	0.85	0.06
 dental-hygienist	technician	0	0		10003870	person	1	1	0	someone trained to provide preventive dental service (cleaning teeth or taking x-rays)						technician	off-wordnet shrink	review: rare leaf			2.54					technician:0.43	0.38	0.20
-dental-technician	technician	0	0		10004019	person	1	1	0	someone who makes dental appliances (bridges and dentures)							shrink	review: rare leaf			3.56					technician:0.53	0.16	0.21
+dental-technician	technician	0	0		10004019	person	1	1	0	someone who makes dental appliances (bridges and dentures)							shrink	review: rare leaf			3.56					technician:0.53	0.17	0.21
 developer	human	0	0		10010062	person	1	2	4	someone who develops real estate (especially someone who prepares a site for residential or commercial use)						human	off-wordnet				4.20					human:0.08	0.95	0.43
-diemaker	craftsman	0	0		10012713	person	1	1	0	someone who makes dies						craftsman	off-wordnet shrink	review: rare leaf			0.00					craftsman:0.33	0.66	0.26
-dietician	specialist	0	0		10012484	person	1	1	0	a specialist in the study of nutrition						specialist	off-wordnet shrink	review: rare leaf			2.39					specialist:0.41	0.63	0.22
-digger	employee	0	0		10012989	person	1	2	0	a laborer who digs						employee	off-wordnet shrink	review: rare leaf			3.17					employee:0.42	0.19	0.43
-diplomat		1	1					2			10013927	4	person	an official engaged in international negotiations	skilled-worker		no-synset											
+diemaker	craftsman	0	0		10012713	person	1	1	0	someone who makes dies						craftsman	off-wordnet shrink	review: rare leaf			0.00					craftsman:0.33	0.65	0.26
+dietician	specialist	0	0		10012484	person	1	1	0	a specialist in the study of nutrition						specialist	off-wordnet shrink	review: rare leaf			2.39					specialist:0.41	0.62	0.22
+digger	employee	0	0		10012989	person	1	2	0	a laborer who digs						employee	off-wordnet shrink	review: rare leaf			3.17					employee:0.42	0.19	0.44
 dishwasher.person	laborer	0	0		10017190	person		0		someone who washes dishes						laborer	off-wordnet				0.00					laborer:0.48	0.32	0.03
-disk-jockey	artist	0	0		10017272	person	1	1	0	a person who announces and plays popular recorded music						artist	off-wordnet shrink	review: rare leaf			3.44					artist:0.28	0.66	0.48
-dispatch-rider	worker	0	0		10017664	person	1	1	0	a messenger who carries military dispatches (usually on a motorcycle)						worker	off-wordnet shrink	review: rare leaf			3.57					worker:0.34	0.69	0.35
+disk-jockey	artist	0	0		10017272	person	1	1	0	a person who announces and plays popular recorded music						artist	off-wordnet shrink	review: rare leaf			3.44					artist:0.28	0.65	0.48
+dispatch-rider	worker	0	0		10017664	person	1	1	0	a messenger who carries military dispatches (usually on a motorcycle)						worker	off-wordnet shrink	review: rare leaf			3.57					worker:0.34	0.70	0.36
 dispatcher	employee	0	0		10017422	person	2	2	0	employee of a transportation company who controls the departures of vehicles according to weather conditions and in the interest of efficient service	10649308	0	person	the official who signals the beginning of a race or competition		employee	off-wordnet shrink	review: rare leaf			3.08					employee:0.50	0.12	0.76
 diver	human worker	1	1		10019552	person	1	3	0	someone who works underwater						human worker	disjoint off-wordnet	keep one parent (several mean AND)			3.41					human:0.16 worker:0.39	0.82	0.35
 doorkeeper	guard	0	0		10026553	person	3	3	0	someone who guards an entrance	10742111	0	person	an official stationed at the entrance of a courtroom or legislative chamber	skilled-worker	guard	held-by off-wordnet shrink	review: rare leaf			2.06					guard:0.59	0.18	0.65
-drafter	skilled-worker	0	0		10029269	person		1		a skilled worker who draws plans of buildings or machines	10028977	0	person	a writer of a draft	communicator		shrink	review: rare leaf			2.15					skilled-worker:0.50	0.51	0.33
-dramatist	artist communicator worker writer	0	0		10030277	person	1	1	2	someone who writes plays						artist worker writer	disjoint off-wordnet	keep one parent (several mean AND)			2.80					worker:0.26 communicator:0.38 artist:0.40 writer:0.54	0.68	0.31
+drafter	skilled-worker	0	0		10029269	person		1		a skilled worker who draws plans of buildings or machines	10028977	0	person	a writer of a draft	communicator		shrink	review: rare leaf			2.15					skilled-worker:0.50	0.50	0.33
+dramatist	artist communicator worker writer	0	0		10030277	person	1	1	2	someone who writes plays						artist worker writer	disjoint off-wordnet	keep one parent (several mean AND)			2.80					worker:0.26 communicator:0.38 artist:0.40 writer:0.54	0.69	0.31
 dressmaker	maker worker	0	0		10033412	person	1	1	0	someone who makes or mends dresses						worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.46					worker:0.38 maker:0.50	0.36	0.18
-driver		3	3					5			10034906	17	person	the operator of a motor vehicle	operator		no-synset											
+driver		3	3					5			10034906	17	person	the operator of a motor vehicle			no-synset											
 drudge	laborer	0	0		10035809	person	2	2	0	a laborer who is obliged to do menial work	10154601	0	person	one who works hard at boring tasks		laborer	off-wordnet shrink	review: rare leaf			2.61	10154601 hack: one who works hard at boring tasks	0.068			laborer:0.59	0.42	0.99
 drummer	percussionist	0	0		10036929	person	1	1	1	someone who plays a drum							shrink	review: rare leaf			3.68					percussionist:0.79	0.01	0.11
-dyer	craftsman	0	0		10040515	person	1	1	0	someone whose job is to dye cloth						craftsman	off-wordnet shrink	review: rare leaf			3.35					craftsman:0.34	0.54	0.50
+dyer	craftsman	0	0		10040515	person	1	1	0	someone whose job is to dye cloth						craftsman	off-wordnet shrink	review: rare leaf			3.35					craftsman:0.34	0.53	0.50
 ecologist	research-worker	0	0		10043163	person	1	1	0	a biologist who studies the relation between organisms and their environment						research-worker	off-wordnet shrink	review: rare leaf			2.67					research-worker:0.44	0.21	0.24
 econometrician	economist professional	0	0		10043491	person	1	1	0	an economist who uses statistical and mathematical methods						economist professional	disjoint off-wordnet shrink	keep one parent (several mean AND)			1.08					professional:0.16 economist:0.72	0.98	0.32
 economist	social-scientist	1	1					1			10043643	4	person	an expert in the science of economics	social-scientist		no-synset				3.87					social-scientist:0.44	0.38	
-editor	worker	4	4		10044879	person	1	2	17	a person responsible for the editorial aspects of publication; the person who determines the final content of a text (especially of a newspaper or magazine)						worker	off-wordnet				4.62					worker:0.24	0.84	0.46
+editor		4	4					2			10044879	17	person	a person responsible for the editorial aspects of publication; the person who determines the final content of a text (especially of a newspaper or magazine)	skilled-worker		no-synset											
 educator	worker	3	4		10045713	person	1	1	9	someone who educates young people						worker	off-wordnet				3.55					worker:0.35	0.46	0.23
-electrical-engineer	engineer professional	0	0		10049017	person	1	1	1	a person trained in practical applications of the theory of electricity						engineer professional	disjoint off-wordnet shrink	keep one parent (several mean AND)			4.16					professional:0.31 engineer:0.60	0.52	0.30
+electrical-engineer	engineer professional	0	0		10049017	person	1	1	1	a person trained in practical applications of the theory of electricity						engineer professional	disjoint off-wordnet shrink	keep one parent (several mean AND)			4.16					professional:0.31 engineer:0.60	0.53	0.29
 electrician	worker	0	0		10049363	person	1	1	0	a person who installs or repairs electrical or telephone lines						worker	off-wordnet shrink	review: rare leaf			3.26					worker:0.38	0.43	0.31
 electroplater	worker	0	0		10049788	person	1	1	0	a plater who uses electrolysis						worker	off-wordnet shrink	review: rare leaf			0.00					worker:0.17	0.98	0.16
-elevator-operator	operator	0	0		10050432	person	1	1	0	an operator of an elevator							shrink	review: rare leaf			3.80					operator:0.57	0.56	0.09
+elevator-operator	operator	0	0		10050432	person	1	1	0	an operator of an elevator						operator	off-wordnet shrink	review: rare leaf			3.80					operator:0.57	0.56	0.08
 embalmer	worker	0	0		10051215	person	1	1	0	a mortician who treats corpses with preservatives						worker	off-wordnet shrink	review: rare leaf			1.88					worker:0.22	0.84	0.36
 embroiderer	maker	0	0		10051552	person	1	1	0	someone who ornaments with needlework							shrink	review: rare leaf			1.63					maker:0.39	0.39	0.48
 employee		2	2					1			10053808	57	person	a worker who is hired to perform a job			no-synset											
 engineer		11	11	computing				2			09615807	13	person	a person who uses scientific knowledge to solve practical problems			no-synset											
 engraver	worker	1	1		10058155	person	1	2	1	a skilled worker who can inscribe designs or writing onto a surface by carving or etching						worker	off-wordnet				2.70	10058027 engraver: a printmaker who prints from an engraved printing plate	0.127			worker:0.34	0.57	0.77
 enologist	specialist	0	0		09616573	person	1	1	0	a specialist in wine making						specialist	off-wordnet shrink	review: rare leaf			0.00					specialist:0.34	0.58	0.50
-entomologist	zoologist	1	1		10059904	person	1	1	0	a zoologist who studies insects											2.71					zoologist:0.65	0.03	0.18
-environmentalist	person	0	0		10060621	person	1	1	0	someone who works to protect the environment from destruction or pollution						person	off-wordnet shrink	review: rare leaf			2.92					person:0.38	0.56	0.22
-epidemiologist	worker	0	0		10061882	person	1	1	0	a medical scientist who studies the transmission and control of epidemic diseases						worker	off-wordnet shrink	review: rare leaf			2.49					worker:0.20	0.95	0.33
-essayist	writer	0	0		10064405	person	1	1	0	a writer of literary works						writer	off-wordnet shrink	review: rare leaf			2.66					writer:0.57	0.12	0.37
-etcher	person	0	0		10064977	person	1	1	0	someone who etches						person	off-wordnet shrink	review: rare leaf			1.88					person:0.35	0.68	0.39
+entomologist	zoologist	1	1		10059904	person	1	1	0	a zoologist who studies insects											2.71					zoologist:0.65	0.04	0.17
+environmentalist	person	0	0		10060621	person	1	1	0	someone who works to protect the environment from destruction or pollution						person	off-wordnet shrink	review: rare leaf			2.92					person:0.38	0.57	0.21
+epidemiologist	worker	0	0		10061882	person	1	1	0	a medical scientist who studies the transmission and control of epidemic diseases						worker	off-wordnet shrink	review: rare leaf			2.49					worker:0.20	0.94	0.33
+essayist	writer	0	0		10064405	person	1	1	0	a writer of literary works						writer	off-wordnet shrink	review: rare leaf			2.66					writer:0.57	0.13	0.37
+etcher	person	0	0		10064977	person	1	1	0	someone who etches						person	off-wordnet shrink	review: rare leaf			1.88					person:0.35	0.68	0.40
 ethnologist	anthropologist	0	0		10065758	person	1	1	0	an anthropologist who studies ethnology							shrink	review: rare leaf			1.98					anthropologist:0.74	0.02	0.12
 etymologist	linguist writer	0	0		10066314	person	1	1	0	a lexicographer who specializes in etymology						writer	disjoint off-wordnet shrink	keep one parent (several mean AND)			1.35					writer:0.21 linguist:0.51	0.90	0.45
-executive-secretary	worker	0	0		10069981	person	1	1	1	a secretary having administrative duties and responsibilities						worker	off-wordnet shrink	review: rare leaf			4.61					worker:0.30	0.66	0.19
-expert		20	21	computing				1			09617867	20	person	a person with special knowledge or ability who performs skillfully			no-synset											
+executive-secretary	worker	0	0		10069981	person	1	1	1	a secretary having administrative duties and responsibilities						worker	off-wordnet shrink	review: rare leaf			4.61					worker:0.30	0.68	0.19
+expert		19	20	computing				1			09617867	20	person	a person with special knowledge or ability who performs skillfully			no-synset											
 facilitator	human worker	0	0		10075693	person	1	1	0	someone who makes progress easier						human worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.90					human:0.10 worker:0.36	0.71	0.41
 farmer		6	7					3			10078806	29	person	a person who operates a farm			no-synset											
-farmhand	worker	1	1		10079399	person	1	1	0	a hired hand on a farm						worker	off-wordnet				2.12					worker:0.36	0.55	0.23
-farrier	blacksmith	0	0		10079677	person	1	1	0	a person who shoes horses							shrink	review: rare leaf			2.31					blacksmith:0.15	0.49	0.58
-field-grade-officer	worker	0	0		10087080	person		0		an officer holding the rank of major or lieutenant colonel or colonel						worker	off-wordnet				4.51					worker:0.23	0.90	0.22
+farmhand	worker	1	1		10079399	person	1	1	0	a hired hand on a farm						worker	off-wordnet				2.12					worker:0.36	0.54	0.23
+farrier	blacksmith	0	0		10079677	person	1	1	0	a person who shoes horses							shrink	review: rare leaf			2.31					blacksmith:0.15	0.49	0.57
+field-grade-officer	worker	0	0		10087080	person		0		an officer holding the rank of major or lieutenant colonel or colonel						worker	off-wordnet				4.51					worker:0.23	0.91	0.22
 file-clerk	clerk	0	0		10087574	person	1	1	0	a clerk who is employed to maintain the files of an organization						clerk	off-wordnet shrink	review: rare leaf			3.93					clerk:0.75	0.17	0.17
 film-director	artist worker	0	0		10088200	person	1	1	0	the person who directs the making of a film						artist worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			4.87					worker:0.23 artist:0.33	0.77	0.16
 financial-analyst	expert professional	0	0		09790865	person	1	1	0	an analyst who studies the financial performance of corporations						expert professional	disjoint off-wordnet shrink	keep one parent (several mean AND)			3.99					expert:0.26 professional:0.30	0.77	0.16
+first-mate	worker	0	0		10300041	person	1	1	0	the officer below the master on a commercial ship						worker	off-wordnet shrink	review: rare leaf			4.54					worker:0.29	0.69	0.59
 fitter	worker	0	0		10093908	person	1	1	0	someone who fits a garment to a particular person						worker	off-wordnet shrink	review: rare leaf			3.01					worker:0.37	0.58	0.44
-flight-engineer	worker	0	0		10096375	person	1	1	0	the flight crewman responsible for mechanical operation while in flight						worker	off-wordnet shrink	review: rare leaf			4.34					worker:0.37	0.44	0.31
-flutist	instrumentalist	0	0		10098245	person	1	1	0	someone who plays the flute							shrink	review: rare leaf			2.10					instrumentalist:0.57	0.15	0.53
+flight-engineer	worker	0	0		10096375	person	1	1	0	the flight crewman responsible for mechanical operation while in flight						worker	off-wordnet shrink	review: rare leaf			4.34					worker:0.37	0.43	0.31
+flutist	instrumentalist	0	0		10098245	person	1	1	0	someone who plays the flute							shrink	review: rare leaf			2.10					instrumentalist:0.57	0.15	0.52
 football-player	athlete worker	0	0		10101634	person	1	1	2	an athlete who plays American football						athlete worker	disjoint off-wordnet	keep one parent (several mean AND)			4.85					worker:0.28 athlete:0.64	0.83	0.15
-forecaster	person	1	1		10102506	person	1	1	0	someone who makes predictions of the future (usually on the basis of special knowledge)						person	off-wordnet				2.43					person:0.29	0.50	0.32
-forester	worker	0	0		10104756	person	2	2	0	someone trained in forestry	10975404	0	person	English writer of adventure novels featuring Captain Horatio Hornblower (1899-1966)	communicator	worker	off-wordnet shrink	review: rare leaf			2.98					worker:0.32	0.45	0.64
-forger	worker	0	0		10105260	person	1	2	0	someone who operates a forge						worker	off-wordnet shrink	review: rare leaf			2.51	10105085 forger: someone who makes copies illegally	0.462			worker:0.35	0.40	0.53
+forecaster	person	1	1		10102506	person	1	1	0	someone who makes predictions of the future (usually on the basis of special knowledge)						person	off-wordnet				2.43					person:0.29	0.51	0.32
+forester	worker	0	0		10104756	person	2	2	0	someone trained in forestry	10975404	0	person	English writer of adventure novels featuring Captain Horatio Hornblower (1899-1966)	communicator	worker	off-wordnet shrink	review: rare leaf			2.98					worker:0.32	0.44	0.64
+forger	worker	0	0		10105260	person	1	2	0	someone who operates a forge						worker	off-wordnet shrink	review: rare leaf			2.51	10105085 forger: someone who makes copies illegally	0.462			worker:0.35	0.40	0.54
 fortuneteller	person	0	0		10105462	person	1	1	0	a person who foretells your personal future						person	off-wordnet shrink	review: rare leaf			1.64					person:0.33	0.46	0.27
-framer	worker	0	0		10108606	person	1	2	0	someone who makes frames (as for pictures)						worker	off-wordnet shrink	review: rare leaf			2.12					worker:0.28	0.64	0.25
-friar	person	0	0		10111903	person	1	1	0	a male member of a religious order that originally relied solely on alms						person	off-wordnet shrink	review: rare leaf			3.04					person:0.14	1.00	0.59
+framer	worker	0	0		10108606	person	1	2	0	someone who makes frames (as for pictures)						worker	off-wordnet shrink	review: rare leaf			2.12					worker:0.28	0.64	0.26
+friar	person	0	0		10111903	person	1	1	0	a male member of a religious order that originally relied solely on alms						person	off-wordnet shrink	review: rare leaf			3.04					person:0.14	0.99	0.59
 fumigator	worker	0	0		10115840	person	1	2	0	someone whose job is to fumigate						worker	off-wordnet shrink	review: rare leaf			1.03					worker:0.34	0.48	0.27
 garbage-man	person	0	0		10120330	person	1	1	0	someone employed to collect and dispose of refuse						person	off-wordnet shrink	review: rare leaf			4.17					person:0.39	0.68	0.50
-gardener	human worker	1	1		10120533	person	1	2	3	someone who takes care of a garden						human worker	disjoint off-wordnet	keep one parent (several mean AND)			3.49					human:0.06 worker:0.37	0.72	0.21
-garment-cutter	worker	0	0		10121026	person	1	1	0	someone who cuts cloth etc. to measure in making garments						worker	off-wordnet shrink	review: rare leaf			3.34					worker:0.42	0.38	0.22
-gas-fitter	craftsman	0	0		10121595	person	1	1	0	a workman who installs and repairs gas fixtures and appliances						craftsman	off-wordnet shrink	review: rare leaf			3.00					craftsman:0.27	0.73	0.51
+gardener	human worker	1	1		10120533	person	1	2	3	someone who takes care of a garden						human worker	disjoint off-wordnet	keep one parent (several mean AND)			3.49					human:0.06 worker:0.37	0.72	0.22
+garment-cutter	worker	0	0		10121026	person	1	1	0	someone who cuts cloth etc. to measure in making garments						worker	off-wordnet shrink	review: rare leaf			3.34					worker:0.42	0.37	0.22
+gas-fitter	craftsman	0	0		10121595	person	1	1	0	a workman who installs and repairs gas fixtures and appliances						craftsman	off-wordnet shrink	review: rare leaf			3.00					craftsman:0.27	0.72	0.51
 genealogist	expert	0	0		10123214	person	1	1	0	an expert in genealogy						expert	off-wordnet shrink	review: rare leaf			2.35					expert:0.32	0.73	0.32
 general-manager	worker	0	0		10125697	person	1	1	3	the highest ranking manager						worker	off-wordnet				4.85					worker:0.25	0.79	0.28
-geneticist	research-worker worker	0	0		10126424	person	1	1	1	a biologist who specializes in genetics						research-worker worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.61					worker:0.24 research-worker:0.50	0.79	0.26
-geographer	expert	1	1		10127555	person	1	1	1	an expert on geography						expert	off-wordnet				2.56					expert:0.31	0.73	0.21
+geneticist	research-worker worker	0	0		10126424	person	1	1	1	a biologist who specializes in genetics						research-worker worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.61					worker:0.24 research-worker:0.50	0.78	0.26
+geographer	expert	1	1		10127555	person	1	1	1	an expert on geography						expert	off-wordnet				2.56					expert:0.31	0.71	0.21
 geologist	scientist worker	1	2		10127689	person	1	1	2	a specialist in geology						scientist worker	disjoint off-wordnet	keep one parent (several mean AND)			3.21					worker:0.34 scientist:0.52	0.52	0.19
-geophysicist	geologist research-worker	1	1		10128519	person	1	1	0	a geologist who uses physical principles to study the properties of the earth						research-worker	disjoint off-wordnet	keep one parent (several mean AND)			2.11					research-worker:0.45 geologist:0.76	0.33	0.26
-gilder	craftsman	0	0		10129585	person	1	1	0	someone whose occupation is to apply an overlay of gold or gilt						craftsman	off-wordnet shrink	review: rare leaf			2.19					craftsman:0.37	0.53	0.45
-girl	woman	0	0		10129825	person	1	5	80	a young woman	10130686	6	person	a girl or young woman with whom a man is romantically involved		woman	rare-sense off-wordnet	re-sense to the everyday 10130686 under ?			5.38					woman:0.47	0.15	0.58
-glass-cutter.person	engraver glassworker	0	0		10132305	person		0		someone who cuts or grinds designs on glass						engraver glassworker	disjoint off-wordnet	keep one parent (several mean AND)			0.00					engraver:0.49 glassworker:0.85	0.13	0.05
-glassblower	craftsman	0	0		10132035	person	1	1	0	someone skilled in blowing bottles from molten glass						craftsman	off-wordnet shrink	review: rare leaf			1.54					craftsman:0.24	0.77	0.49
+geophysicist	geologist research-worker	1	1		10128519	person	1	1	0	a geologist who uses physical principles to study the properties of the earth						research-worker	disjoint off-wordnet	keep one parent (several mean AND)			2.11					research-worker:0.45 geologist:0.76	0.33	0.27
+gilder	craftsman	0	0		10129585	person	1	1	0	someone whose occupation is to apply an overlay of gold or gilt						craftsman	off-wordnet shrink	review: rare leaf			2.19					craftsman:0.37	0.53	0.46
+glass-cutter.person	engraver glassworker	0	0		10132305	person		0		someone who cuts or grinds designs on glass						engraver glassworker	disjoint off-wordnet	keep one parent (several mean AND)			0.00					engraver:0.49 glassworker:0.85	0.13	0.06
+glassblower	craftsman	0	0		10132035	person	1	1	0	someone skilled in blowing bottles from molten glass						craftsman	off-wordnet shrink	review: rare leaf			1.54					craftsman:0.24	0.79	0.49
 glassworker	craftsman	1	1		10132145	person	1	1	0	someone who cuts flat glass to size						craftsman	off-wordnet				0.00					craftsman:0.28	0.52	0.29
 goat-herder	worker	0	0		10134178	person	1	1	0	a person who tends a flock of goats						worker	off-wordnet shrink	review: rare leaf			2.69					worker:0.31	0.62	0.36
-gold-miner	miner	0	0		10136463	person	1	1	0	a miner who digs or pans for gold in a gold field						miner	off-wordnet shrink	review: rare leaf			3.57					miner:0.66	0.04	0.17
+gold-miner	miner	0	0		10136463	person	1	1	0	a miner who digs or pans for gold in a gold field						miner	off-wordnet shrink	review: rare leaf			3.57					miner:0.66	0.03	0.17
 goldbeater	craftsman	0	0		10135842	person	1	1	0	an artisan who beats gold into gold leaf						craftsman	off-wordnet shrink	review: rare leaf			0.00					craftsman:0.32	0.75	0.38
 goldsmith	jewelry-maker	0	0		10136615	person	1	2	1	an artisan who makes jewelry and other objects out of gold							shrink	review: rare leaf			3.21					jewelry-maker:0.74	0.03	0.58
-golfer	athlete worker	0	0		10136959	person	1	1	2	someone who plays the game of golf						athlete worker	disjoint off-wordnet	keep one parent (several mean AND)			3.35					worker:0.31 athlete:0.53	0.62	0.18
-governess	worker	0	0		10140169	person	1	1	1	a woman entrusted with the care and supervision of a child (especially in a private home)						worker	off-wordnet shrink	review: rare leaf			2.87					worker:0.30	0.72	0.58
+golfer	athlete worker	0	0		10136959	person	1	1	2	someone who plays the game of golf						athlete worker	disjoint off-wordnet	keep one parent (several mean AND)			3.35					worker:0.31 athlete:0.53	0.63	0.18
+governess	worker	0	0		10140169	person	1	1	1	a woman entrusted with the care and supervision of a child (especially in a private home)						worker	off-wordnet shrink	review: rare leaf			2.87					worker:0.30	0.73	0.58
 governor		1	1					2			10140314	9	person	the head of a state government			no-synset											
 governor-general	governor	0	0		10140597	person	1	1	0	a governor of high rank						governor	off-wordnet shrink	review: rare leaf			4.64					governor:0.76	0.02	0.23
 graphic-designer	specialist	0	0		10144055	person	1	1	0	someone who specializes in graphic design						specialist	off-wordnet shrink	review: rare leaf			4.01					specialist:0.45	0.55	0.18
-graphologist	specialist	0	0		10144188	person	1	1	0	a specialist in inferring character from handwriting						specialist	off-wordnet shrink	review: rare leaf			1.24					specialist:0.22	0.87	0.59
-grazier	farmer	0	0		10144962	person	1	1	0	a rancher who grazes cattle or sheep for market						farmer	off-wordnet shrink	review: rare leaf			1.96					farmer:0.59	0.14	0.51
-grip.person	worker	0	0		10147488	person		0		worker who moves the camera around while a film or television show is being made						worker	off-wordnet				0.00					worker:0.45	0.41	0.42
+graphologist	specialist	0	0		10144188	person	1	1	0	a specialist in inferring character from handwriting						specialist	off-wordnet shrink	review: rare leaf			1.24					specialist:0.22	0.88	0.59
+grazier	farmer	0	0		10144962	person	1	1	0	a rancher who grazes cattle or sheep for market						farmer	off-wordnet shrink	review: rare leaf			1.96					farmer:0.59	0.15	0.51
+grip.person	worker	0	0		10147488	person		0		worker who moves the camera around while a film or television show is being made						worker	off-wordnet				0.00					worker:0.45	0.40	0.43
 groom	worker	0	0		10644301	person	2	3	0	someone employed in a stable to take care of the horses	10148035	1	person	a man participant in his own marriage ceremony		worker	rare-sense off-wordnet shrink	re-sense to the everyday 10148035 under ?			3.63	10147935 groom: a man who has recently been married	0.206			worker:0.44	0.34	0.99
 groundsman	gardener	0	0		10148663	person	1	1	0	someone who maintains the grounds (of an estate or park or athletic field)						gardener	off-wordnet shrink	review: rare leaf			1.98					gardener:0.41	0.21	0.55
 guard		3	3					10			08215603	0	group	a military unit serving to protect some place or person			no-synset											
 guide		1	1					6			06422740	1	communication	something that offers basic information or instruction			no-synset											
 guitarist	instrumentalist	0	0		10151760	person	1	1	0	a musician who plays the guitar							shrink	review: rare leaf			3.63					instrumentalist:0.72	0.08	0.20
 gunsmith	smith	0	0		10152528	person	1	1	0	someone who makes or repairs guns						smith	off-wordnet shrink	review: rare leaf			2.35					smith:0.55	0.16	0.39
-hairdresser	worker	1	1		10155849	person	1	1	0	someone who cuts or beautifies hair						worker	off-wordnet				3.17					worker:0.47	0.29	0.28
+hairdresser	worker	1	1		10155849	person	1	1	0	someone who cuts or beautifies hair						worker	off-wordnet				3.17					worker:0.47	0.30	0.28
 handyman	worker	0	0		10159289	person	1	1	1	a man skilled in various odd jobs and other small tasks						worker	off-wordnet shrink	review: rare leaf			2.85					worker:0.51	0.23	0.53
 harpooner	worker	0	0		10160913	person	1	1	0	someone who launches harpoons						worker	off-wordnet shrink	review: rare leaf			1.44					worker:0.28	0.74	0.20
 head-of-state	leader	2	2		10164747	person	1	1	0	the chief public representative of a country who may also be the head of government						leader	off-wordnet				5.32					leader:0.34	0.29	0.47
-headhunter	worker	0	0		10163593	person	1	2	0	a recruiter of personnel (especially for corporations)						worker	off-wordnet shrink	review: rare leaf			2.48					worker:0.42	0.37	0.61
+headhunter	worker	0	0		10163593	person	1	2	0	a recruiter of personnel (especially for corporations)						worker	off-wordnet shrink	review: rare leaf			2.48					worker:0.42	0.36	0.61
 headwaiter	worker	0	0		09892513	person	1	1	0	a dining-room attendant who is in charge of the waiters and the seating of customers						worker	off-wordnet shrink	review: rare leaf			1.62					worker:0.41	0.35	0.53
 herder	worker	1	1		10171567	person	2	2	0	someone who drives a herd	11044789	0	person	German philosopher who advocated intuition over reason (1744-1803)		worker	off-wordnet				2.71					worker:0.29	0.66	0.70
-herpetologist	scientist	0	0		10172668	person	1	1	3	a zoologist who studies reptiles and amphibians						scientist	off-wordnet				1.77					scientist:0.42	0.31	0.44
+herpetologist	scientist	0	0		10172668	person	1	1	3	a zoologist who studies reptiles and amphibians						scientist	off-wordnet				1.77					scientist:0.42	0.31	0.45
 high-commissioner	worker	0	0		10174445	person	1	1	0	a senior diplomat from one country to another who is assigned ambassadorial rank						worker	off-wordnet shrink	review: rare leaf			4.41					worker:0.28	0.83	0.64
-histologist	expert	0	0		10170359	person	1	1	0	anatomist who specializes in the microscopic study of animal tissues						expert	off-wordnet shrink	review: rare leaf			0.00					expert:0.23	0.79	0.40
-hockey-player	athlete worker	0	0		10179291	person	1	1	0	an athlete who plays hockey						athlete worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			4.35					worker:0.29 athlete:0.62	0.77	0.19
+histologist	expert	0	0		10170359	person	1	1	0	anatomist who specializes in the microscopic study of animal tissues						expert	off-wordnet shrink	review: rare leaf			0.00					expert:0.23	0.78	0.41
+hockey-player	athlete worker	0	0		10179291	person	1	1	0	an athlete who plays hockey						athlete worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			4.35					worker:0.29 athlete:0.62	0.78	0.19
 hod-carrier	laborer	0	0		10179527	person	1	1	0	a laborer who carries supplies to masons or bricklayers						laborer	off-wordnet shrink	review: rare leaf			2.55					laborer:0.46	0.60	0.67
 homeopath	professional	0	0		10182402	person	1	1	0	a practitioner of homeopathy						professional	off-wordnet shrink	review: rare leaf			1.73					professional:0.19	0.97	0.21
 horticulturist	worker	0	0		10186350	person	1	1	0	an expert in the science of cultivating plants (fruit or flowers or vegetables or ornamental plants)						worker	off-wordnet shrink	review: rare leaf			2.28					worker:0.17	0.97	0.63
-hostess	person	0	0		10187491	person	1	3	2	a woman host						person	off-wordnet				3.35					person:0.27	0.86	0.52
+hostess	person	0	0		10187491	person	1	3	2	a woman host						person	off-wordnet				3.35					person:0.27	0.87	0.52
 hotelier	chief worker	0	0		10187990	person	1	1	0	an owner or manager of hotels						chief worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.39					chief:0.25 worker:0.31	0.67	0.38
 house-painter	worker	0	0		10189179	person	1	1	0	a painter of houses a similar buildings						worker	off-wordnet shrink	review: rare leaf			3.92					worker:0.30	0.80	0.25
 housekeeper	servant	0	0		10188715	person	1	1	0	a servant who is employed to perform domestic task in a household						servant	off-wordnet shrink	review: rare leaf			3.29					servant:0.82	0.05	0.33
@@ -285,12 +282,12 @@ human		13	40	geography				1			02472293	5	animal	any living or extinct member of 
 hydrologist	scientist	0	0		10194775	person	1	1	0	a geologist skilled in hydrology						scientist	off-wordnet shrink	review: rare leaf			1.90					scientist:0.42	0.30	0.25
 hypnotist	person	0	0		10195261	person	1	1	0	a person who induces hypnosis						person	off-wordnet shrink	review: rare leaf			2.50					person:0.33	0.68	0.26
 ichthyologist	scientist	0	0		10196617	person	1	1	0	a zoologist who studies fishes						scientist	off-wordnet shrink	review: rare leaf			1.47					scientist:0.37	0.38	0.45
-illustrator	artist worker	0	0		09812068	person	1	1	2	an artist who makes illustrations (for books or magazines or advertisements etc.)						artist worker	disjoint off-wordnet	keep one parent (several mean AND)			3.46					worker:0.33 artist:0.58	0.52	0.55
+illustrator	artist worker	0	0		09812068	person	1	1	2	an artist who makes illustrations (for books or magazines or advertisements etc.)						artist worker	disjoint off-wordnet	keep one parent (several mean AND)			3.46					worker:0.33 artist:0.58	0.51	0.56
 imam	professional	0	0		10199251	person	1	1	0	(Islam) the man who leads prayers in a mosque; for Shiites an imam is a recognized authority on Islamic theology and law and a spiritual guide						professional	off-wordnet shrink	review: rare leaf			3.50					professional:0.26	0.71	0.31
 immunologist	scientist worker	0	0		10199902	person	1	1	0	a medical scientist who specializes in immunology						scientist worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.02					worker:0.27 scientist:0.48	0.78	0.22
-impersonator	artist	0	0		10319163	person		1		someone who mimics (especially an actor or actress)	10200365	0	person	someone who (fraudulently) assumes the appearance of another		artist	off-wordnet shrink	review: rare leaf			2.73					artist:0.33	0.50	0.31
+impersonator	artist	0	0		10319163	person		1		someone who mimics (especially an actor or actress)	10200365	0	person	someone who (fraudulently) assumes the appearance of another		artist	off-wordnet shrink	review: rare leaf			2.73					artist:0.33	0.50	0.32
 indexer	worker	0	0		10203016	person	1	1	0	someone who provides an index						worker	off-wordnet shrink	review: rare leaf			2.11					worker:0.27	0.70	0.34
-inspector-general	skilled-worker	0	0		10208950	person	1	1	0	a military officer responsible for investigations							shrink	review: rare leaf			4.23					skilled-worker:0.21	0.65	0.49
+inspector-general	skilled-worker	0	0		10208950	person	1	1	0	a military officer responsible for investigations							shrink	review: rare leaf			4.23					skilled-worker:0.21	0.66	0.49
 instrumentalist	artist	11	13		10340312	person	1	1	1	someone who plays a musical instrument (as a profession)						artist	off-wordnet				2.55					artist:0.37	0.35	0.38
 insurance-broker	broker	0	0		10209731	person	1	1	0	an agent who sells insurance							shrink	review: rare leaf			3.85					broker:0.61	0.09	0.28
 intelligence-analyst	analyst worker	0	0		10210512	person	1	1	0	a government analyst of information about an enemy or potential enemy						analyst worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			3.95					worker:0.24 analyst:0.60	0.89	0.46
@@ -299,56 +296,55 @@ investment-adviser	adviser	0	0		10215815	person	1	1	0	someone who advises others
 investment-banker	worker	0	0		10215953	person	1	1	0	a banker who deals chiefly in underwriting new securities						worker	off-wordnet shrink	review: rare leaf			3.74					worker:0.31	0.56	0.35
 ironworker	worker	0	0		10216928	person	1	1	1	a person who makes articles of iron						worker	off-wordnet shrink	review: rare leaf			1.68					worker:0.44	0.40	0.45
 janitor	worker	0	0		10219577	person	1	1	3	someone employed to clean and maintain a building						worker	off-wordnet				3.20					worker:0.58	0.19	0.52
-jewelry-maker	maker worker	1	1		10221956	person	1	1	0	someone who makes jewelry						worker	disjoint off-wordnet	keep one parent (several mean AND)			3.87					worker:0.36 maker:0.61	0.44	0.24
-joiner	woodworker	0	0		10223869	person	2	2	0	a woodworker whose work involves making things by joining pieces of wood	10223994	0	person	a person who likes to join groups			shrink	review: rare leaf			2.72					woodworker:0.81	0.01	0.87
+jewelry-maker	maker worker	1	1		10221956	person	1	1	0	someone who makes jewelry						worker	disjoint off-wordnet	keep one parent (several mean AND)			3.87					worker:0.36 maker:0.61	0.43	0.24
+joiner	woodworker	0	0		10223869	person	2	2	0	a woodworker whose work involves making things by joining pieces of wood	10223994	0	person	a person who likes to join groups			shrink	review: rare leaf			2.72					woodworker:0.81	0.01	0.88
 judge		1	1					2			10225219	6	person	a public official authorized to decide questions brought before a court of justice	skilled-worker		no-synset											
 jurist	professional specialist	0	0		10227985	person	1	2	1	a legal scholar versed in civil law or the law of nations						professional specialist	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.70					specialist:0.16 professional:0.26	0.88	0.55
 justice-of-the-peace	worker	0	0		10228468	person	1	1	1	a local magistrate with limited powers						worker	off-wordnet shrink	review: rare leaf			4.69					worker:0.16	0.97	0.67
-knacker	worker	0	0		10238029	person	2	2	0	someone who buys up old horses for slaughter	10238127	0	person	someone who buys old buildings or ships and breaks them up to recover the materials in them	wrecker	worker	off-wordnet shrink	review: rare leaf			1.63					worker:0.21	0.84	0.92
+knacker	worker	0	0		10238029	person	2	2	0	someone who buys up old horses for slaughter	10238127	0	person	someone who buys old buildings or ships and breaks them up to recover the materials in them	wrecker	worker	off-wordnet shrink	review: rare leaf			1.63					worker:0.21	0.83	0.92
 knitter	maker	0	0		10239619	person	1	1	0	someone who makes garments (or fabrics) by intertwining yarn or thread							shrink	review: rare leaf			2.13					maker:0.40	0.32	0.49
 laborer		5	5					1			10241300	5	person	someone who works with their hands; someone engaged in manual labor			no-synset											
 lacer	worker	0	0		10242439	person	1	1	0	a workman who laces shoes or footballs or books (during binding)						worker	off-wordnet shrink	review: rare leaf			1.12					worker:0.32	0.52	0.58
 lady's-maid	servant	0	0		10243483	person	1	1	0	a maid who is a lady's personal attendant						servant	off-wordnet shrink	review: rare leaf			3.21					servant:0.57	0.14	0.27
 lawyer		3	3					1			10249950	15	person	a professional person authorized to practice law; conducts lawsuits or gives legal advice			no-synset											
 leader		1	3					2			09623038	23	person	a person who rules or guides or inspires others			no-synset											
-lector	educator professional	0	0		10252222	person	2	2	0	a public lecturer at certain universities	10252354	0	person	someone who reads the lessons in a church service; someone ordained in a minor order of the Roman Catholic Church		professional	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.15					professional:0.36 educator:0.39	0.54	0.92
+lector	educator professional	0	0		10252222	person	2	2	0	a public lecturer at certain universities	10252354	0	person	someone who reads the lessons in a church service; someone ordained in a minor order of the Roman Catholic Church		professional	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.15					professional:0.36 educator:0.39	0.55	0.92
 legislator	politician	1	1		10253995	person	1	1	8	someone who makes or enacts laws						politician	off-wordnet				3.20					politician:0.57	0.09	0.50
-lepidopterist	entomologist	0	0		10254761	person	1	1	0	an entomologist who specializes in the collection and study of butterflies and moths							shrink	review: rare leaf			1.19					entomologist:0.76	0.03	0.61
-letterer	worker	0	0		10255348	person	1	1	0	a painter of letters						worker	off-wordnet shrink	review: rare leaf			1.49					worker:0.28	0.64	0.60
-lexicographer	scientist worker writer	0	0		10256080	person	1	1	0	a compiler or writer of a dictionary; a student of the lexical component of language						scientist worker writer	disjoint off-wordnet shrink	keep one parent (several mean AND)			1.97					worker:0.21 scientist:0.30 writer:0.35	0.91	0.36
+lepidopterist	entomologist	0	0		10254761	person	1	1	0	an entomologist who specializes in the collection and study of butterflies and moths							shrink	review: rare leaf			1.19					entomologist:0.76	0.03	0.62
+letterer	worker	0	0		10255348	person	1	1	0	a painter of letters						worker	off-wordnet shrink	review: rare leaf			1.49					worker:0.28	0.63	0.60
+lexicographer	scientist worker writer	0	0		10256080	person	1	1	0	a compiler or writer of a dictionary; a student of the lexical component of language						scientist worker writer	disjoint off-wordnet shrink	keep one parent (several mean AND)			1.97					worker:0.21 scientist:0.30 writer:0.35	0.91	0.37
 lifeguard	worker	0	0		10260800	person	1	1	0	an attendant employed at a beach or pool to protect swimmers from accidents						worker	off-wordnet shrink	review: rare leaf			3.07					worker:0.40	0.44	0.64
 lighterman	worker	0	0		10261388	person	1	1	0	someone who operates a barge						worker	off-wordnet shrink	review: rare leaf			0.00					worker:0.33	0.49	0.74
-limnologist	specialist	0	0		10263146	person	1	1	0	a specialist in the study of freshwater ponds and lakes						specialist	off-wordnet shrink	review: rare leaf			0.00					specialist:0.33	0.79	0.68
+limnologist	specialist	0	0		10263146	person	1	1	0	a specialist in the study of freshwater ponds and lakes						specialist	off-wordnet shrink	review: rare leaf			0.00					specialist:0.33	0.80	0.68
 line-worker	worker	0	0		10264120	person	1	1	0	an employee who works on an assembly line						worker	off-wordnet shrink	review: rare leaf			4.39					worker:0.65	0.18	0.41
-linguist	scientist	2	2		10264437	person	1	2	16	a specialist in linguistics						scientist	off-wordnet				2.87					scientist:0.34	0.53	0.32
+linguist	scientist	2	2		10264437	person	1	2	16	a specialist in linguistics						scientist	off-wordnet				2.87					scientist:0.34	0.53	0.33
 literary-agent	broker	0	0		09778144	person	1	1	0	an agent who represents an author in dealings with publishers						broker	off-wordnet shrink	review: rare leaf			4.19					broker:0.50	0.20	0.39
 lobbyist	worker	0	0		10268629	person	1	1	0	someone who is employed to persuade legislators to vote for legislation that favors the lobbyist's employer						worker	off-wordnet shrink	review: rare leaf			3.10					worker:0.41	0.47	0.40
 lockmaster	worker	0	0		10269078	person	1	1	0	a worker in charge of a lock (on a canal)						worker	off-wordnet shrink	review: rare leaf			0.00					worker:0.44	0.41	0.64
 locksmith	smith	0	0		10269199	person	1	1	0	someone who makes or repairs locks						smith	off-wordnet shrink	review: rare leaf			2.81					smith:0.42	0.24	0.37
-lumberman	worker	0	0		10276045	person	1	1	0	a person who fells trees						worker	off-wordnet shrink	review: rare leaf			1.86					worker:0.26	0.75	0.65
-lyricist	artist writer	0	0		10277912	person	1	1	4	a person who writes the words for songs						artist writer	disjoint off-wordnet	keep one parent (several mean AND)			2.84					artist:0.40 writer:0.44	0.34	0.51
-machinist	worker	0	0		10279018	person	1	1	2	a craftsman skilled in operating machine tools						worker	off-wordnet				2.75					worker:0.35	0.60	0.62
-macroeconomist	scientist	0	0		10279392	person	1	1	0	an economist who specializes in macroeconomics						scientist	off-wordnet shrink	review: rare leaf			0.00					scientist:0.25	0.90	0.52
-magician	artist	0	0		10280674	person	1	2	5	someone who performs magic tricks to amuse an audience						artist	off-wordnet				3.53					artist:0.40	0.46	0.45
+lumberman	worker	0	0		10276045	person	1	1	0	a person who fells trees						worker	off-wordnet shrink	review: rare leaf			1.86					worker:0.26	0.74	0.65
+lyricist	artist writer	0	0		10277912	person	1	1	4	a person who writes the words for songs						artist writer	disjoint off-wordnet	keep one parent (several mean AND)			2.84					artist:0.40 writer:0.44	0.33	0.51
+machinist	worker	0	0		10279018	person	1	1	2	a craftsman skilled in operating machine tools						worker	off-wordnet				2.75					worker:0.35	0.59	0.63
+macroeconomist	scientist	0	0		10279392	person	1	1	0	an economist who specializes in macroeconomics						scientist	off-wordnet shrink	review: rare leaf			0.00					scientist:0.25	0.90	0.53
+magician	artist	0	0		10280674	person	1	2	5	someone who performs magic tricks to amuse an audience						artist	off-wordnet				3.53					artist:0.40	0.45	0.45
 magistrate	judge	0	0		10280945	person	1	1	1	a lay judge or civil authority who administers the law (especially one who conducts a court dealing with minor offenses)						judge	off-wordnet shrink	review: rare leaf			3.71					judge:0.51	0.13	0.59
-mahout	worker	0	0		10282374	person	1	1	0	the driver and keeper of an elephant						worker	off-wordnet shrink	review: rare leaf			1.75					worker:0.21	0.93	0.76
+mahout	worker	0	0		10282374	person	1	1	0	the driver and keeper of an elephant						worker	off-wordnet shrink	review: rare leaf			1.75					worker:0.21	0.92	0.76
 maid		2	2					2			10282672	13	person	a female domestic			no-synset											
 maker	human	20	21		10284064	person	1	3	8	a person who makes things						human	off-wordnet				4.23	08060446 manufacturer: a business engaged in manufacturing some product	0.273			human:0.12	0.86	0.75
-maltster	person	0	0		10286855	person	1	1	0	a maker of malt						person	off-wordnet shrink	review: rare leaf			1.24					person:0.19	0.94	0.32
+maltster	person	0	0		10286855	person	1	1	0	a maker of malt						person	off-wordnet shrink	review: rare leaf			1.24					person:0.19	0.94	0.31
 mammalogist	scientist	0	0		10286989	person	1	1	0	one skilled in the study of mammals						scientist	off-wordnet shrink	review: rare leaf			0.00					scientist:0.39	0.46	0.30
 management-consultant	adviser	0	0		10289338	person	1	1	0	adviser to business about efficient management practices						adviser	off-wordnet shrink	review: rare leaf			4.09					adviser:0.60	0.07	0.47
 manager		3	3					2			10014939	29	person	someone who controls resources and expenditures			no-synset											
-manicurist	worker	0	0		10290919	person	1	1	0	a beautician who cleans and trims and polishes the fingernails						worker	off-wordnet shrink	review: rare leaf			1.97					worker:0.39	0.42	0.68
-manservant	servant	0	0		10292192	person	1	1	1	a man servant						servant	off-wordnet shrink	review: rare leaf			2.24					servant:0.56	0.21	0.70
-marine-engineer	engineer	0	0		10294421	person	1	1	0	a naval officer responsible for the operation and maintenance of the ship's engines						engineer	off-wordnet shrink	review: rare leaf			4.21					engineer:0.49	0.26	0.53
-market-analyst	expert	0	0		09791248	person	1	1	0	an analyst of conditions affecting a market (especially the stock market)						expert	off-wordnet shrink	review: rare leaf			4.01					expert:0.28	0.58	0.38
-mason	craftsman	0	0		10297531	person	4	5	0	a craftsman who works with stone or brick	11163160	0	person	American Revolutionary leader from Virginia whose objections led to the drafting of the Bill of Rights (1725-1792)		craftsman	off-wordnet shrink	review: rare leaf			4.14					craftsman:0.46	0.25	0.90
-mate	worker	0	0		10300041	person	1	10	4	the officer below the master on a commercial ship						worker	off-wordnet				4.55	10300303 mate: the partner of an animal (especially a sexual partner)	0.175			worker:0.31	0.62	0.93
+manicurist	worker	0	0		10290919	person	1	1	0	a beautician who cleans and trims and polishes the fingernails						worker	off-wordnet shrink	review: rare leaf			1.97					worker:0.39	0.42	0.69
+manservant	servant	0	0		10292192	person	1	1	1	a man servant						servant	off-wordnet shrink	review: rare leaf			2.24					servant:0.56	0.22	0.70
+marine-engineer	engineer	0	0		10294421	person	1	1	0	a naval officer responsible for the operation and maintenance of the ship's engines						engineer	off-wordnet shrink	review: rare leaf			4.21					engineer:0.49	0.27	0.53
+market-analyst	expert	0	0		09791248	person	1	1	0	an analyst of conditions affecting a market (especially the stock market)						expert	off-wordnet shrink	review: rare leaf			4.01					expert:0.28	0.58	0.39
+mason	craftsman	0	0		10297531	person	4	5	0	a craftsman who works with stone or brick	11163160	0	person	American Revolutionary leader from Virginia whose objections led to the drafting of the Bill of Rights (1725-1792)		craftsman	off-wordnet shrink	review: rare leaf			4.14					craftsman:0.46	0.26	0.90
 mechanical-engineer	engineer professional	0	0		10304650	person	1	1	0	a person trained to design and construct machines						engineer professional	disjoint off-wordnet shrink	keep one parent (several mean AND)			4.11					professional:0.36 engineer:0.63	0.41	0.60
-mediator	specialist	0	0		09624559	person	1	1	0	a negotiator who acts as a link between parties						specialist	off-wordnet shrink	review: rare leaf			3.29					specialist:0.25	0.85	0.71
+mediator	specialist	0	0		09624559	person	1	1	0	a negotiator who acts as a link between parties						specialist	off-wordnet shrink	review: rare leaf			3.29					specialist:0.25	0.86	0.71
 medical-scientist	research-worker	0	0		10306004	person	1	1	0	a scientist who studies disease processes						research-worker	off-wordnet shrink	review: rare leaf			4.16					research-worker:0.58	0.13	0.44
 member		2	2					5			10307234	67	person	one of the persons who compose a social group (especially individuals who have joined and participate in a group organization)			no-synset											
-mender	worker	2	2		10308732	person	1	1	0	a skilled worker who mends or repairs things						worker	off-wordnet				1.78					worker:0.51	0.26	0.75
+mender	worker	2	2		10308732	person	1	1	0	a skilled worker who mends or repairs things						worker	off-wordnet				1.78					worker:0.51	0.25	0.75
 merchant		1	1	economics				1			10309896	8	person	a businessperson engaged in retail trade			no-synset											
 metallurgist	engineer	0	0		10312077	person	1	1	0	an engineer trained in the extraction and refining and alloying and fabrication of metals						engineer	off-wordnet shrink	review: rare leaf			2.16					engineer:0.40	0.45	0.70
 meteorologist	scientist specialist worker	0	0		10312287	person	1	1	0	a specialist who studies processes in the earth's atmosphere that cause weather conditions						scientist specialist worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.92					worker:0.29 specialist:0.46 scientist:0.48	0.59	0.43
@@ -358,36 +354,36 @@ millwright	craftsman	0	0		10318686	person	1	1	0	a workman who designs or erects 
 miner		2	2					1			10319796	2	person	laborer who works in a mine			no-synset											
 mineralogist	scientist	0	0		10319996	person	1	1	0	a scientist trained in mineralogy						scientist	off-wordnet shrink	review: rare leaf			2.08					scientist:0.52	0.17	0.33
 mining-engineer	engineer	0	0		10320484	person	1	1	0	an engineer concerned with the construction and operation of mines						engineer	off-wordnet shrink	review: rare leaf			4.23					engineer:0.58	0.11	0.44
-missionary	worker	0	0		10322957	person	1	2	3	someone who attempts to convert others to a particular doctrine or program						worker	off-wordnet				3.83	10323182 missionary: someone sent on a mission--especially a religious or charitable mission to a foreign count	0.037			worker:0.26	0.82	0.89
+missionary	worker	0	0		10322957	person	1	2	3	someone who attempts to convert others to a particular doctrine or program						worker	off-wordnet				3.83	10323182 missionary: someone sent on a mission--especially a religious or charitable mission to a foreign count	0.037			worker:0.26	0.82	0.90
 molecular-biologist	research-worker	0	0		10327143	person	1	1	0	a biologist who studies the structure and activity of macromolecules essential to life						research-worker	off-wordnet shrink	review: rare leaf			3.28					research-worker:0.34	0.39	0.48
-monsignor	priest	0	0		10329789	person	1	1	0	(Roman Catholic Church) an ecclesiastical title of honor bestowed on some priests							shrink	review: rare leaf			2.93					priest:0.54	0.21	0.82
+monsignor	priest	0	0		10329789	person	1	1	0	(Roman Catholic Church) an ecclesiastical title of honor bestowed on some priests							shrink	review: rare leaf			2.93					priest:0.54	0.22	0.83
 mortician	worker	0	0		10331841	person	1	1	1	one whose business is the management of funerals						worker	off-wordnet shrink	review: rare leaf			2.20					worker:0.22	0.81	0.68
-mounter	worker	0	0		10335123	person	1	2	0	a skilled worker who mounts pictures or jewels etc.						worker	off-wordnet shrink	review: rare leaf			1.30					worker:0.45	0.30	0.72
+mounter	worker	0	0		10335123	person	1	2	0	a skilled worker who mounts pictures or jewels etc.						worker	off-wordnet shrink	review: rare leaf			1.30					worker:0.45	0.29	0.72
 mover	worker	0	0		10336234	person	1	4	3	workman employed by a moving company						worker	off-wordnet				3.21	10335931 mover: someone who moves	0.035			worker:0.47	0.48	0.89
-mufti	expert professional	0	0		10337020	person	1	2	0	a jurist who interprets Muslim religious law						expert professional	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.86					professional:0.08 expert:0.13	0.97	0.82
-music-teacher	educator teacher	1	1		10341343	person	1	1	0	someone who teaches music						teacher	disjoint off-wordnet	keep one parent (several mean AND)			4.79					educator:0.51 teacher:0.58	0.48	0.34
+mufti	expert professional	0	0		10337020	person	1	2	0	a jurist who interprets Muslim religious law						expert professional	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.86					professional:0.08 expert:0.13	0.96	0.82
+music-teacher	educator teacher	1	1		10341343	person	1	1	0	someone who teaches music						teacher	disjoint off-wordnet	keep one parent (several mean AND)			4.79					educator:0.51 teacher:0.58	0.47	0.34
 musician		7	7					2			10339966	3	person	artist who composes or conducts music as a profession			no-synset											
 musicologist	person	0	0		10341243	person	1	1	0	a student of musicology						person	off-wordnet shrink	review: rare leaf			2.09					person:0.13	0.88	0.39
 mycologist	botanist	0	0		10343088	person	1	1	0	a botanist who specializes in the study of fungi							shrink	review: rare leaf			1.64					botanist:0.72	0.03	0.66
-nailer	craftsman	0	0		10344203	person	1	1	0	a worker who attaches something by nailing it						craftsman	off-wordnet shrink	review: rare leaf			1.76					craftsman:0.40	0.40	0.55
+nailer	craftsman	0	0		10344203	person	1	1	0	a worker who attaches something by nailing it						craftsman	off-wordnet shrink	review: rare leaf			1.76					craftsman:0.40	0.41	0.55
 nanny	worker	0	0		10345100	person	1	2	0	a woman who is the custodian of children						worker	off-wordnet shrink	review: rare leaf			3.59					worker:0.34	0.65	0.66
 narrator	artist human	0	0		10345804	person	1	1	0	someone who tells a story						artist human	disjoint off-wordnet shrink	keep one parent (several mean AND)			3.81					human:0.16 artist:0.35	0.65	0.57
-naturopath	expert	0	0		10347110	person	1	1	1	a therapist who practices naturopathy						expert	off-wordnet shrink	review: rare leaf			1.95					expert:0.23	0.87	0.43
+naturopath	expert	0	0		10347110	person	1	1	1	a therapist who practices naturopathy						expert	off-wordnet shrink	review: rare leaf			1.95					expert:0.23	0.90	0.43
 notary	professional specialist	0	0		10363149	person	1	1	0	someone legally empowered to witness signatures and certify a document's validity and to take depositions						professional specialist	disjoint off-wordnet shrink	keep one parent (several mean AND)			3.11					specialist:0.07 professional:0.13	0.98	0.71
 novelist	artist communicator worker writer	0	0		10363573	person	1	1	6	one who writes novels						artist worker writer	disjoint off-wordnet	keep one parent (several mean AND)			3.61					communicator:0.20 worker:0.25 artist:0.40 writer:0.66	0.88	0.36
-nuclear-physicist	research-worker	0	0		10364643	person	1	1	0	a physicist who specializes in nuclear physics						research-worker	off-wordnet shrink	review: rare leaf			3.40					research-worker:0.47	0.33	0.35
-nursing-aide	worker	0	0		10367548	person	1	1	0	someone who assists a nurse in tasks that require little formal training						worker	off-wordnet shrink	review: rare leaf			3.60					worker:0.38	0.50	0.47
+nuclear-physicist	research-worker	0	0		10364643	person	1	1	0	a physicist who specializes in nuclear physics						research-worker	off-wordnet shrink	review: rare leaf			3.40					research-worker:0.47	0.34	0.35
+nursing-aide	worker	0	0		10367548	person	1	1	0	someone who assists a nurse in tasks that require little formal training						worker	off-wordnet shrink	review: rare leaf			3.60					worker:0.38	0.50	0.46
 observer	expert human worker	0	0		10369528	person	2	2	9	an expert who observes and comments on something	09626589	11	person	a person who becomes aware (of things or events) through the senses		expert human worker	rare-sense disjoint off-wordnet	re-sense to the everyday 09626589 under ?			3.91					human:0.14 worker:0.29 expert:0.52	0.81	0.87
 oceanographer	scientist worker	0	0		10370122	person	1	1	0	a scientist who studies physical and biological aspects of the seas						scientist worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.29					worker:0.25 scientist:0.48	0.76	0.49
 official		1	1					2			10372373	23	person	a worker who holds or is invested with an office	skilled-worker		no-synset											
-operator	worker	5	5		10378412	person	2	5	9	an agent that operates some apparatus or machine	13786413	27	relation	(mathematics) a symbol or function representing a mathematical operation		worker	rare-sense off-wordnet	re-sense to the everyday 13786413 under ?			4.32					worker:0.42	0.34	0.91
+operator		5	5					5			13786413	27	relation	(mathematics) a symbol or function representing a mathematical operation			no-synset											
 optician	skilled-worker	0	0		10380000	person	1	1	0	a worker who makes glasses for remedying defects of vision							shrink	review: rare leaf			2.41					skilled-worker:0.34	0.76	0.62
-optometrist	professional specialist	0	0		10380305	person	1	1	0	a person skilled in testing for defects of vision in order to prescribe corrective glasses						professional specialist	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.53					professional:0.18 specialist:0.30	0.96	0.73
+optometrist	professional specialist	0	0		10380305	person	1	1	0	a person skilled in testing for defects of vision in order to prescribe corrective glasses						professional specialist	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.53					professional:0.18 specialist:0.30	0.97	0.73
 orchestrator	musician	0	0		10381100	person	1	1	0	an arranger who writes for orchestras						musician	off-wordnet shrink	review: rare leaf			2.10					musician:0.54	0.17	0.57
 orderly	worker	0	0		10381804	person	2	2	0	a male hospital attendant who has general duties that do not involve the medical treatment of patients	10381981	2	person	a soldier who serves as an attendant to a superior officer	skilled-worker	worker	rare-sense held-by off-wordnet	re-sense to the everyday 10381981 (held by military-orderly: rename one)			3.44	10381981 orderly: a soldier who serves as an attendant to a superior officer	0.000			worker:0.43	0.42	0.99
-organist	instrumentalist musician	0	0		10382825	person	1	1	0	a person who plays an organ						musician	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.91					musician:0.48 instrumentalist:0.65	0.24	0.57
+organist	instrumentalist musician	0	0		10382825	person	1	1	0	a person who plays an organ						musician	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.91					musician:0.48 instrumentalist:0.65	0.24	0.56
 ornithologist	zoologist	0	0		10384214	person	1	1	0	a zoologist who studies birds							shrink	review: rare leaf			2.26					zoologist:0.68	0.04	0.67
-osteopath	expert	0	0		10385566	person	1	1	0	a therapist who manipulates the skeleton and muscles						expert	off-wordnet shrink	review: rare leaf			2.10					expert:0.23	0.81	0.73
+osteopath	expert	0	0		10385566	person	1	1	0	a therapist who manipulates the skeleton and muscles						expert	off-wordnet shrink	review: rare leaf			2.10					expert:0.23	0.85	0.73
 packer	worker	0	0		10390427	person	1	3	0	a workman employed to pack things into containers						worker	off-wordnet shrink	review: rare leaf			3.26	10304505 meat_packer: a wholesaler in the meat-packing business	0.160			worker:0.38	0.47	0.91
 painter		1	1					4			10391653	15	person	an artist who paints			no-synset											
 paleontologist	research-worker worker	0	0		10394786	person	1	1	0	a specialist in paleontology						research-worker worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.52					worker:0.24 research-worker:0.40	0.83	0.38
@@ -395,212 +391,210 @@ palmist	person	0	0		10395209	person	1	1	0	fortuneteller who predicts your future
 paperhanger	craftsman	0	0		10397001	person	2	2	0	one whose occupation is decorating walls with wallpaper	10397142	0	person	someone who passes bad checks or counterfeit paper money		craftsman	off-wordnet shrink	review: rare leaf			1.06					craftsman:0.30	0.55	0.92
 paralegal	professional	0	0		10397886	person	1	1	0	a person with specialized training who assists lawyers						professional	off-wordnet shrink	review: rare leaf			2.75					professional:0.51	0.25	0.65
 parlormaid	maid	0	0		10400826	person	1	1	0	a maid in a private home whose duties are to care for the parlor and the table and to answer the door						maid	off-wordnet shrink	review: rare leaf			0.00					maid:0.67	0.05	0.60
-pastry-cook	worker	0	0		10405320	person	1	1	0	a chef who specializes in pastry						worker	off-wordnet shrink	review: rare leaf			3.50					worker:0.32	0.62	0.39
-pearl-diver	diver	0	0		10410531	person	1	1	0	a diver who searches for molluscs containing pearls							shrink	review: rare leaf			3.34					diver:0.53	0.11	0.53
-penologist	scientist	0	0		10414239	person	1	1	0	a person who studies the theory and practice of prison management						scientist	off-wordnet shrink	review: rare leaf			1.01					scientist:0.28	0.76	0.83
-percussionist	instrumentalist	2	2		10415037	person	1	1	0	a musician who plays percussion instruments											2.45					instrumentalist:0.70	0.07	0.40
+pastry-cook	worker	0	0		10405320	person	1	1	0	a chef who specializes in pastry						worker	off-wordnet shrink	review: rare leaf			3.50					worker:0.32	0.63	0.39
+pearl-diver	diver	0	0		10410531	person	1	1	0	a diver who searches for molluscs containing pearls							shrink	review: rare leaf			3.34					diver:0.53	0.12	0.53
+penologist	scientist	0	0		10414239	person	1	1	0	a person who studies the theory and practice of prison management						scientist	off-wordnet shrink	review: rare leaf			1.01					scientist:0.28	0.76	0.84
+percussionist	instrumentalist	2	2		10415037	person	1	1	0	a musician who plays percussion instruments											2.45					instrumentalist:0.70	0.08	0.40
 person		26	27	economics medicine space				3			00007846	6833	Tops	a human being			no-synset											
-phlebotomist	worker	0	0		10426363	person	1	1	0	someone who practices phlebotomy						worker	off-wordnet shrink	review: rare leaf			1.91					worker:0.34	0.54	0.41
+phlebotomist	worker	0	0		10426363	person	1	1	0	someone who practices phlebotomy						worker	off-wordnet shrink	review: rare leaf			1.91					worker:0.34	0.53	0.41
 phonologist	linguist worker	0	0		10426630	person	1	1	0	a specialist in phonology						worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			0.00					worker:0.24 linguist:0.55	0.86	0.39
 photojournalist	person	0	0		10427223	person	1	1	0	a journalist who presents a story primarily through the use of photographs						person	off-wordnet shrink	review: rare leaf			2.80					person:0.16	0.94	0.65
-physical-therapist	expert professional	0	0		10427764	person	1	1	1	therapist who treats injury or dysfunction with exercises and other physical treatments of the disorder						expert professional	disjoint off-wordnet shrink	keep one parent (several mean AND)			3.93					professional:0.27 expert:0.28	0.81	0.48
+physical-therapist	expert professional	0	0		10427764	person	1	1	1	therapist who treats injury or dysfunction with exercises and other physical treatments of the disorder						expert professional	disjoint off-wordnet shrink	keep one parent (several mean AND)			3.93					professional:0.27 expert:0.28	0.83	0.48
 physiologist	research-worker worker	0	0		10429965	person	1	1	0	a biologist specializing in physiology						research-worker worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.55					worker:0.26 research-worker:0.48	0.69	0.59
 pianist	instrumentalist musician	0	0		10430665	person	1	1	5	a person who plays the piano						musician	disjoint off-wordnet	keep one parent (several mean AND)			3.48					musician:0.61 instrumentalist:0.66	0.10	0.46
 piano-maker	maker	0	0		10431122	person	1	1	0	a person who makes pianos							shrink	review: rare leaf			3.97					maker:0.62	0.18	0.42
-piano-teacher	artist music-teacher	0	0		10431224	person	1	1	0	someone who teaches students to play the piano						artist	disjoint off-wordnet shrink	keep one parent (several mean AND)			4.21					artist:0.31 music-teacher:0.74	0.56	0.42
+piano-teacher	artist music-teacher	0	0		10431224	person	1	1	0	someone who teaches students to play the piano						artist	disjoint off-wordnet shrink	keep one parent (several mean AND)			4.21					artist:0.31 music-teacher:0.74	0.56	0.41
 pilot		1	1					6			10433164	6	person	someone who is licensed to operate an aircraft in flight	skilled-worker		no-synset											
-plasterer	craftsman	0	0		10438842	person	1	1	1	a worker skilled in applying plaster						craftsman	off-wordnet shrink	review: rare leaf			2.23					craftsman:0.39	0.48	0.48
+plasterer	craftsman	0	0		10438842	person	1	1	1	a worker skilled in applying plaster						craftsman	off-wordnet shrink	review: rare leaf			2.23					craftsman:0.39	0.49	0.48
 plater	worker	0	0		10439203	person	1	1	0	a skilled worker who coats articles with a film of metal (usually silver or gold)						worker	off-wordnet shrink	review: rare leaf			2.18					worker:0.42	0.38	0.86
 plumber	craftsman	0	0		10443032	person	1	1	3	a craftsman who installs and repairs pipes and fixtures and appliances						craftsman	off-wordnet				3.36					craftsman:0.53	0.21	0.74
 poet	artist communicator worker writer	0	0		10444194	person	1	1	14	a writer of poems (the term is usually reserved for writers of good poetry)						artist worker writer	disjoint off-wordnet	keep one parent (several mean AND)			4.21					worker:0.18 communicator:0.20 artist:0.34 writer:0.55	0.96	0.55
-police-commissioner	chief	0	0		10448834	person	1	1	0	a civil commissioner appointed to supervise the duties and discipline of the police						chief	off-wordnet shrink	review: rare leaf			4.38					chief:0.47	0.36	0.46
+police-commissioner	chief	0	0		10448834	person	1	1	0	a civil commissioner appointed to supervise the duties and discipline of the police						chief	off-wordnet shrink	review: rare leaf			4.38					chief:0.47	0.55	0.46
 police-inspector	policeman	0	0		10208847	person		0		a high ranking police officer						policeman	off-wordnet				4.21					policeman:0.68	0.04	0.25
 police-matron	policeman	0	0		10449412	person	1	1	0	a woman policeman						policeman	off-wordnet shrink	review: rare leaf			3.01					policeman:0.65	0.06	0.82
 police-sergeant	worker	0	0		10449521	person	1	1	0	a lawman with the rank of sergeant						worker	off-wordnet shrink	review: rare leaf			4.09					worker:0.32	0.65	0.47
 policeman		2	2					1			10448983	11	person	a member of a police force			no-synset											
 political-scientist	social-scientist	0	0		10450161	person	1	1	0	a social scientist specializing in the study of government							shrink	review: rare leaf			4.18					social-scientist:0.68	0.11	0.51
 politician		1	2					3			10450303	4	person	a person active in party politics			no-synset											
-pomologist	botanist	0	0		10452631	person	1	1	0	someone versed in pomology or someone who cultivates fruit trees							shrink	review: rare leaf			0.00					botanist:0.61	0.07	0.79
+pomologist	botanist	0	0		10452631	person	1	1	0	someone versed in pomology or someone who cultivates fruit trees							shrink	review: rare leaf			0.00					botanist:0.61	0.08	0.79
 porter		1	1					7			10455447	1	person	a person employed to carry luggage and supplies			no-synset											
 portraitist	painter	0	0		10455619	person	1	1	0	a painter or drawer of portraits						painter	off-wordnet shrink	review: rare leaf			1.83					painter:0.72	0.04	0.56
 postal-clerk	clerk	0	0		10459116	person	1	1	0	a clerk in a post office						clerk	off-wordnet shrink	review: rare leaf			3.67					clerk:0.64	0.23	0.43
-postmaster	worker	0	0		10459575	person	1	1	0	the person in charge of a post office						worker	off-wordnet shrink	review: rare leaf			3.14					worker:0.29	0.78	0.61
+postmaster	worker	0	0		10459575	person	1	1	0	the person in charge of a post office						worker	off-wordnet shrink	review: rare leaf			3.14					worker:0.29	0.79	0.61
 postmaster-general	worker	0	0		10459764	person	1	1	2	the official in charge of the national postal service						worker	off-wordnet				3.14					worker:0.20	0.94	0.64
-powder-monkey	worker	0	0		10461280	person	1	1	0	someone who carries explosives (as from the magazine to the guns on board a warship)						worker	off-wordnet shrink	review: rare leaf			3.85					worker:0.18	0.93	0.88
+powder-monkey	worker	0	0		10461280	person	1	1	0	someone who carries explosives (as from the magazine to the guns on board a warship)						worker	off-wordnet shrink	review: rare leaf			3.85					worker:0.18	0.93	0.89
 preacher	person	0	0		10464178	person	1	1	8	someone whose occupation is preaching the gospel						person	off-wordnet				3.68					person:0.30	0.61	0.56
 president	head-of-state	0	0					6			10467179	5	person	the chief executive of a republic	head-of-state		no-synset				5.45					head-of-state:0.40	0.24	
 president-of-the-united-states	head-of-state	0	0		10467395	person	1	2	1	the person who holds the office of head of state of the United States government							shrink	review: rare leaf			5.00	00597265 president_of_the_united_states: the office of the United States head of state	0.234			head-of-state:0.73	0.04	0.82
 pressman	worker	0	0		10475297	person	1	2	0	someone whose occupation is printing						worker	off-wordnet shrink	review: rare leaf			2.36					worker:0.47	0.29	0.88
 priest	professional	3	3		10470779	person	1	2	10	a clergyman in Christian churches who has the authority to perform or administer various religious rites; one of the Holy Orders						professional	off-wordnet				4.33					professional:0.23	0.83	0.80
-printmaker	artist	0	0		10475687	person	1	1	0	an artist who designs and makes prints						artist	off-wordnet shrink	review: rare leaf			2.11					artist:0.55	0.32	0.66
+printmaker	artist	0	0		10475687	person	1	1	0	an artist who designs and makes prints						artist	off-wordnet shrink	review: rare leaf			2.11					artist:0.55	0.31	0.66
 prison-guard	worker	0	0		10149867	person	1	1	0	someone who guards prisoners						worker	off-wordnet shrink	review: rare leaf			4.46					worker:0.37	0.45	0.47
 professional		24	27	economics medicine				3			10480253	3	person	a person engaged in one of the learned professions			no-synset											
-projectionist	worker	0	0		10481561	person	1	1	0	the person who operates the projector in a movie house						worker	off-wordnet shrink	review: rare leaf			2.19					worker:0.41	0.42	0.75
-promoter	booker	0	0		10593745	person	2	2	0	a sponsor who books and stages public entertainments	10482220	2	person	someone who is an active supporter and advocate	communicator		rare-sense	re-sense to the everyday 10482220 under communicator			3.56					booker:0.57	0.09	0.89
-prompter	worker	0	0		10482414	person	1	2	0	someone who assists a performer by providing the next words of a forgotten speech						worker	off-wordnet shrink	review: rare leaf			2.16	04010779 prompter: a device that displays words for people to read	0.110			worker:0.13	0.91	0.93
+projectionist	worker	0	0		10481561	person	1	1	0	the person who operates the projector in a movie house						worker	off-wordnet shrink	review: rare leaf			2.19					worker:0.41	0.42	0.76
+promoter	booker	0	0		10593745	person	2	2	0	a sponsor who books and stages public entertainments	10482220	2	person	someone who is an active supporter and advocate	communicator		rare-sense	re-sense to the everyday 10482220 under communicator			3.56					booker:0.57	0.10	0.89
+prompter	worker	0	0		10482414	person	1	2	0	someone who assists a performer by providing the next words of a forgotten speech						worker	off-wordnet shrink	review: rare leaf			2.16	04010779 prompter: a device that displays words for people to read	0.110			worker:0.13	0.92	0.94
 proofreader	worker	0	0		10482768	person	1	1	0	someone who reads proof in order to find errors and mark corrections						worker	off-wordnet shrink	review: rare leaf			2.14					worker:0.11	0.99	0.62
-property-man	worker	0	0		10483395	person	1	1	0	member of the stage crew in charge of properties						worker	off-wordnet shrink	review: rare leaf			5.03					worker:0.19	0.83	0.84
+property-man	worker	0	0		10483395	person	1	1	0	member of the stage crew in charge of properties						worker	off-wordnet shrink	review: rare leaf			5.03					worker:0.19	0.84	0.84
 prosecutor	lawyer skilled-worker	0	0		10484858	person	1	1	4	a government official who conducts criminal prosecutions on behalf of the state						lawyer	disjoint off-wordnet	keep one parent (several mean AND)			3.94					skilled-worker:0.13 lawyer:0.45	0.62	0.62
-psychotherapist	expert therapist worker	0	0		10489944	person	1	1	0	a therapist who deals with mental and emotional disorders						expert therapist worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.73					expert:0.29 worker:0.30 therapist:0.69	0.71	0.59
+psychotherapist	therapist worker	0	0		10489944	person	1	1	0	a therapist who deals with mental and emotional disorders						therapist worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.73					worker:0.30 therapist:0.69	0.73	0.59
 purchasing-agent	worker	0	0		10493922	person	1	1	1	an agent who purchases goods or services for another						worker	off-wordnet shrink	review: rare leaf			3.99					worker:0.23	0.85	0.47
 quarryman	worker	0	0		10498551	person	1	1	0	a man who works in a quarry						worker	off-wordnet shrink	review: rare leaf			1.32					worker:0.46	0.40	0.54
 rabbi	professional	0	0		10502329	person	1	2	6	spiritual leader of a Jewish congregation; qualified to expound and apply Jewish law						professional	off-wordnet				3.69					professional:0.26	0.58	0.80
-ranch-hand	worker	0	0		10506544	person	1	1	0	a hired hand on a ranch						worker	off-wordnet shrink	review: rare leaf			4.01					worker:0.23	0.90	0.51
+ranch-hand	worker	0	0		10506544	person	1	1	0	a hired hand on a ranch						worker	off-wordnet shrink	review: rare leaf			4.01					worker:0.23	0.89	0.51
 rancher	breeder worker	0	0		10506417	person	1	1	5	a person who owns or operates a ranch						breeder worker	disjoint off-wordnet	keep one parent (several mean AND)			3.03					worker:0.30 breeder:0.45	0.63	0.60
-real-estate-broker	broker	0	0		10509810	person	1	1	1	a person who is authorized to act as an agent for the sale of land							shrink	review: rare leaf			3.83					broker:0.69	0.06	0.77
+real-estate-broker	broker	0	0		10509810	person	1	1	1	a person who is authorized to act as an agent for the sale of land							shrink	review: rare leaf			3.83					broker:0.69	0.06	0.78
 realtor	broker	0	0		10510078	person	1	1	0	a real estate agent who is a member of the National Association of Realtors							shrink	review: rare leaf			3.25					broker:0.51	0.15	0.63
 receptionist	worker	0	0		10511069	person	1	1	6	a secretary whose main duty is to answer the telephone and receive visitors						worker	off-wordnet				3.26					worker:0.38	0.46	0.81
 refiner	worker	0	0		10514784	person	1	1	0	one whose work is to refine a specific thing						worker	off-wordnet shrink	review: rare leaf			2.28					worker:0.25	0.85	0.81
-refinisher	worker	0	0		10514962	person	1	1	0	a skilled worker who is employed to restore or refinish buildings or antique furniture						worker	off-wordnet shrink	review: rare leaf			0.00					worker:0.35	0.60	0.84
+refinisher	worker	0	0		10514962	person	1	1	0	a skilled worker who is employed to restore or refinish buildings or antique furniture						worker	off-wordnet shrink	review: rare leaf			0.00					worker:0.35	0.59	0.84
 registrar	official	0	0		10516874	person	3	3	0	someone responsible for keeping records	10517137	0	person	a person employed to keep a record of the owners of stocks and bonds issued by the company		official	off-wordnet shrink	review: rare leaf			3.37	10517032 registrar: the administrator responsible for student records	0.050			official:0.37	0.28	0.97
-regulator.person	worker	0	0		10517826	person		0		an official responsible for control and supervision of a particular activity or area of public interest						worker	off-wordnet				0.00					worker:0.27	0.60	0.49
+regulator.person	worker	0	0		10517826	person		0		an official responsible for control and supervision of a particular activity or area of public interest						worker	off-wordnet				0.00					worker:0.27	0.61	0.49
 rent-collector	worker	0	0		10520675	person	1	1	0	a person who goes from house to house collecting rents for the owner						worker	off-wordnet shrink	review: rare leaf			3.83					worker:0.35	0.45	0.72
 reporter		2	2					1			10521662	10	person	a person who investigates and reports or edits news stories	communicator		no-synset											
 research-worker		23	35					1			10523076	0	person	a scientist who devotes himself to doing research			no-synset											
-restaurateur	businessman	0	0		10524869	person	1	1	0	the proprietor of a restaurant						businessman	off-wordnet shrink	review: rare leaf			2.68					businessman:0.42	0.21	0.70
-rigger	worker	0	0		10530769	person	1	4	1	someone who rigs ships						worker	off-wordnet				2.33					worker:0.30	0.53	0.83
+restaurateur	businessman	0	0		10524869	person	1	1	0	the proprietor of a restaurant						businessman	off-wordnet shrink	review: rare leaf			2.68					businessman:0.42	0.21	0.71
+rigger	worker	0	0		10530769	person	1	4	1	someone who rigs ships						worker	off-wordnet				2.33					worker:0.30	0.52	0.83
 riveter	worker	0	0		10533541	person	1	2	0	a worker who inserts and hammers rivets						worker	off-wordnet shrink	review: rare leaf			2.08					worker:0.50	0.27	0.68
 roofer	craftsman	0	0		10538272	person	1	1	1	a craftsman who lays or repairs roofs						craftsman	off-wordnet shrink	review: rare leaf			2.29					craftsman:0.42	0.31	0.63
-saddler	maker	0	0		10545415	person	1	1	0	a maker and repairer and seller of equipment for horses							shrink	review: rare leaf			2.26					maker:0.29	0.67	0.85
-sailing-master	worker	0	0		10546428	person	1	1	0	the ship's officer in charge of navigation						worker	off-wordnet shrink	review: rare leaf			3.94					worker:0.21	0.82	0.80
-sailmaker	craftsman maker	0	0		10546561	person	1	1	0	a maker of sails						craftsman	disjoint off-wordnet shrink	keep one parent (several mean AND)			1.50					craftsman:0.45 maker:0.48	0.30	0.51
-sales-demonstrator	worker	0	0		10002982	person	1	1	0	someone who demonstrates an article to a prospective buyer						worker	off-wordnet shrink	review: rare leaf			2.90					worker:0.24	0.67	0.85
-salter	worker	0	0		10549165	person	1	2	0	someone who uses salt to preserve meat or fish or other foods						worker	off-wordnet shrink	review: rare leaf			2.81	10549062 salter: someone who makes or deals in salt	0.099			worker:0.26	0.80	0.89
-saxophonist	instrumentalist	0	0		10554243	person	1	1	0	a musician who plays the saxophone							shrink	review: rare leaf			2.74					instrumentalist:0.59	0.13	0.61
-schoolmarm	educator professional	0	0		10559840	person	1	1	1	a woman schoolteacher (especially one regarded as strict)						professional	disjoint off-wordnet shrink	keep one parent (several mean AND)			1.48					professional:0.32 educator:0.50	0.78	0.90
+saddler	maker	0	0		10545415	person	1	1	0	a maker and repairer and seller of equipment for horses							shrink	review: rare leaf			2.26					maker:0.29	0.66	0.86
+sailing-master	worker	0	0		10546428	person	1	1	0	the ship's officer in charge of navigation						worker	off-wordnet shrink	review: rare leaf			3.94					worker:0.21	0.82	0.81
+sailmaker	craftsman maker	0	0		10546561	person	1	1	0	a maker of sails						craftsman	disjoint off-wordnet shrink	keep one parent (several mean AND)			1.50					craftsman:0.45 maker:0.48	0.29	0.51
+sales-demonstrator	worker	0	0		10002982	person	1	1	0	someone who demonstrates an article to a prospective buyer						worker	off-wordnet shrink	review: rare leaf			2.90					worker:0.24	0.66	0.86
+salter	worker	0	0		10549165	person	1	2	0	someone who uses salt to preserve meat or fish or other foods						worker	off-wordnet shrink	review: rare leaf			2.81	10549062 salter: someone who makes or deals in salt	0.099			worker:0.26	0.81	0.89
+saxophonist	instrumentalist	0	0		10554243	person	1	1	0	a musician who plays the saxophone							shrink	review: rare leaf			2.74					instrumentalist:0.59	0.14	0.61
+schoolmarm	educator professional	0	0		10559840	person	1	1	1	a woman schoolteacher (especially one regarded as strict)						professional	disjoint off-wordnet shrink	keep one parent (several mean AND)			1.48					professional:0.32 educator:0.50	0.77	0.90
 scientist		19	23	biology chemistry mathematics medicine physics space				1			10560637	7	person	a person with advanced knowledge of one or more sciences			no-synset											
-scourer	worker	0	0		10562645	person	1	2	0	someone who cleanses by scouring						worker	off-wordnet shrink	review: rare leaf			1.13					worker:0.40	0.43	0.79
-screener	worker	0	0		10564224	person	1	1	0	a guard at an airport who checks passengers or their luggage at a security checkpoint						worker	off-wordnet shrink	review: rare leaf			2.30					worker:0.31	0.73	0.91
-scriptwriter	artist writer	0	0		10564905	person	1	1	0	someone who writes scripts for plays or movies or broadcast dramas						artist writer	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.37					artist:0.25 writer:0.60	0.52	0.73
+scourer	worker	0	0		10562645	person	1	2	0	someone who cleanses by scouring						worker	off-wordnet shrink	review: rare leaf			1.13					worker:0.40	0.42	0.79
+screener	worker	0	0		10564224	person	1	1	0	a guard at an airport who checks passengers or their luggage at a security checkpoint						worker	off-wordnet shrink	review: rare leaf			2.30					worker:0.31	0.73	0.92
+scriptwriter	artist writer	0	0		10564905	person	1	1	0	someone who writes scripts for plays or movies or broadcast dramas						artist writer	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.37					artist:0.25 writer:0.60	0.51	0.74
 sculptor	artist worker	0	0		10566072	person	1	2	3	an artist who creates sculptures						artist worker	disjoint off-wordnet	keep one parent (several mean AND)			3.34					worker:0.35 artist:0.55	0.54	0.52
-secretary-general	manager	0	0		10573829	person	1	1	1	a person who is a chief administrator (as of the United Nations)						manager	off-wordnet shrink	review: rare leaf			4.84					manager:0.39	0.59	0.72
-secretary-of-state	chief worker	0	0		10572706	person	1	3	6	the person who holds the secretaryship of the Department of State						chief worker	disjoint off-wordnet	keep one parent (several mean AND)			4.89	00602026 secretary_of_state: the position of the head of the State Department	0.006			worker:0.28 chief:0.41	0.77	0.61
+secretary-general	manager	0	0		10573829	person	1	1	1	a person who is a chief administrator (as of the United Nations)						manager	off-wordnet shrink	review: rare leaf			4.84					manager:0.39	0.60	0.73
+secretary-of-state	chief worker	0	0		10572706	person	1	3	6	the person who holds the secretaryship of the Department of State						chief worker	disjoint off-wordnet	keep one parent (several mean AND)			4.89	00602026 secretary_of_state: the position of the head of the State Department	0.006			worker:0.28 chief:0.41	0.79	0.61
 seismologist	geophysicist	0	0		10576513	person	1	1	0	a geophysicist who studies earthquakes and the mechanical characteristics of the Earth							shrink	review: rare leaf			1.92					geophysicist:0.73	0.05	0.76
-senator	worker	0	0		10578471	person	1	1	6	a member of a senate						worker	off-wordnet				4.58					worker:0.26	0.87	0.56
 servant		5	5					2			10582154	9	person	a person working in the service of another (especially in the household)			no-synset											
 sexton	worker	0	0		10585217	person	2	2	0	an officer of the church who is in charge of sacred objects	11294582	0	person	United States poet (1928-1974)	poet	worker	off-wordnet shrink	review: rare leaf			3.08					worker:0.17	0.96	0.97
 shearer	worker	0	0		10587227	person	2	3	0	a workman who uses shears to cut leather or metal or textiles	11296775	0	person	Scottish ballet dancer and actress (born in 1926)	dancer	worker	off-wordnet shrink	review: rare leaf			2.97	10587089 shearer: a skilled worker who shears the wool off of sheep or other animals	0.083			worker:0.45	0.33	0.95
 shepherd	herder	0	0		10587605	person	2	2	1	a herder of sheep (on an open range); someone who keeps the sheep together in a flock	10588965	1	person	a clergyman who watches over a group of people							3.90					herder:0.63	0.08	0.94
 shipping-agent	broker	0	0		10590452	person	1	1	0	the agent of a shipowner						broker	off-wordnet shrink	review: rare leaf			4.34					broker:0.43	0.23	0.57
-shipwright	craftsman	0	0		10590764	person	1	1	0	a carpenter who helps build and launch wooden vessels						craftsman	off-wordnet shrink	review: rare leaf			1.97					craftsman:0.51	0.22	0.74
+shipwright	craftsman	0	0		10590764	person	1	1	0	a carpenter who helps build and launch wooden vessels						craftsman	off-wordnet shrink	review: rare leaf			1.97					craftsman:0.51	0.22	0.75
 shirtmaker	craftsman maker	0	0		10590903	person	1	1	0	a maker of shirts						craftsman	disjoint off-wordnet shrink	keep one parent (several mean AND)			1.04					craftsman:0.38 maker:0.51	0.34	0.54
-shoveler	worker	0	0		10593618	person	1	2	0	a worker who shovels						worker	off-wordnet shrink	review: rare leaf			1.70	01848976 shoveler: freshwater duck of the northern hemisphere having a broad flat bill	0.245			worker:0.65	0.13	0.68
+shoveler	worker	0	0		10593618	person	1	2	0	a worker who shovels						worker	off-wordnet shrink	review: rare leaf			1.70	01848976 shoveler: freshwater duck of the northern hemisphere having a broad flat bill	0.245			worker:0.65	0.14	0.68
 silversmith	craftsman maker	0	0		10598749	person	1	1	0	someone who makes or repairs articles of silver						craftsman	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.23					craftsman:0.41 maker:0.41	0.37	0.86
 singer		2	2					3			10599806	3	person	a person who sings	instrumentalist		no-synset											
-sitter	worker	0	0		09829305	person	3	5	0	a person engaged to care for children when the parents are not home	11303522	0	person	Dutch astronomer who calculated the size of the universe and suggested that it is expanding (1872-1934)		worker	off-wordnet shrink	review: rare leaf			3.18					worker:0.31	0.74	0.96
-skier	athlete human worker	0	0		10605253	person	1	1	0	someone who skis						athlete human worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			3.20					human:0.16 worker:0.32 athlete:0.53	0.79	0.55
+sitter	worker	0	0		09829305	person	3	5	0	a person engaged to care for children when the parents are not home	11303522	0	person	Dutch astronomer who calculated the size of the universe and suggested that it is expanding (1872-1934)		worker	off-wordnet shrink	review: rare leaf			3.18					worker:0.31	0.75	0.96
+skier	athlete human worker	0	0		10605253	person	1	1	0	someone who skis						athlete human worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			3.20					human:0.16 worker:0.32 athlete:0.53	0.80	0.55
 skilled-worker	worker	8	11		10605985	person	1	1	5	a worker who has acquired special skills						worker	off-wordnet				3.95					worker:0.60	0.22	0.57
 skinner	worker	0	0		10607706	person	4	5	0	a person who prepares or deals in animal skins	11304811	0	person	United States actor (1858-1942)		worker	off-wordnet shrink	review: rare leaf			3.50	10338094 muleteer: a worker who drives mules	0.289			worker:0.32	0.56	1.00
-skipper	worker	0	0		10298912	person	2	3	0	an officer who is licensed to command a merchant ship	10607824	0	person	a student who fails to attend classes		worker	off-wordnet shrink	review: rare leaf			3.54					worker:0.31	0.51	0.91
-smith	craftsman	3	3		10614629	person	10	10	0	someone who works metal (especially by hammering it when it is hot and malleable)	11306297	0	person	Rhodesian statesman who declared independence of Zimbabwe from Great Britain (born in 1919)		craftsman	off-wordnet				4.89					craftsman:0.46	0.25	0.97
+skipper	worker	0	0		10298912	person	2	3	0	an officer who is licensed to command a merchant ship	10607824	0	person	a student who fails to attend classes		worker	off-wordnet shrink	review: rare leaf			3.54					worker:0.31	0.52	0.91
+smith		3	3					10			11306297	0	person	Rhodesian statesman who declared independence of Zimbabwe from Great Britain (born in 1919)			no-synset											
 smuggler	criminal	0	0		10615334	person	1	1	2	someone who imports or exports without paying duties						criminal	off-wordnet				2.96					criminal:0.27	0.41	0.84
 social-scientist	research-worker worker	4	6		10619642	person	1	1	0	someone expert in the study of human society and its personal relationships						research-worker worker	disjoint off-wordnet	keep one parent (several mean AND)			4.18					worker:0.33 research-worker:0.50	0.62	0.69
 social-worker	professional	0	0		10620027	person	1	1	0	someone employed to provide social services (especially to the disadvantaged)						professional	off-wordnet shrink	review: rare leaf			4.39					professional:0.35	0.67	0.69
 sociologist	social-scientist	0	0		10620758	person	1	1	1	a social scientist who studies the institutions and development of human society							shrink	review: rare leaf			3.04					social-scientist:0.77	0.06	0.78
 solderer	worker	0	0		10621941	person	1	1	0	a worker who joins or mends with solder						worker	off-wordnet shrink	review: rare leaf			0.00					worker:0.45	0.35	0.81
 sommelier	worker	0	0		10623806	person	1	1	0	a waiter who manages wine service in a hotel or restaurant						worker	off-wordnet shrink	review: rare leaf			2.48					worker:0.38	0.48	0.90
-songwriter	composer worker	0	0		10624540	person	1	1	2	a composer of words or music for popular songs						composer worker	disjoint off-wordnet	keep one parent (several mean AND)			3.70					worker:0.12 composer:0.68	0.99	0.81
-soprano.person	person	0	0		10625546	person		0		a female singer						person	off-wordnet				0.00					person:0.40	0.59	0.59
+songwriter	composer worker	0	0		10624540	person	1	1	2	a composer of words or music for popular songs						composer worker	disjoint off-wordnet	keep one parent (several mean AND)			3.70					worker:0.12 composer:0.68	1.00	0.81
+soprano.person	person	0	0		10625546	person		0		a female singer						person	off-wordnet				0.00					person:0.40	0.59	0.58
 specialist		14	14	medicine				2			10631941	19	person	an expert who is devoted to one occupation or branch of learning			no-synset											
-speech-therapist	expert	0	0		10634464	person	1	1	0	a therapist who treats speech defects and disorders						expert	off-wordnet shrink	review: rare leaf			3.92					expert:0.30	0.71	0.56
-speechwriter	artist writer	0	0		10631654	person	1	1	0	a writer who composes speeches for others to deliver						artist writer	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.44					artist:0.33 writer:0.55	0.35	0.81
-splicer	craftsman	0	0		10637360	person	1	3	0	a woodworker who joins pieces of wood with a splice						craftsman	off-wordnet shrink	review: rare leaf			1.90					craftsman:0.41	0.28	0.78
+speech-therapist	expert	0	0		10634464	person	1	1	0	a therapist who treats speech defects and disorders						expert	off-wordnet shrink	review: rare leaf			3.92					expert:0.30	0.76	0.56
+speechwriter	artist writer	0	0		10631654	person	1	1	0	a writer who composes speeches for others to deliver						artist writer	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.44					artist:0.33 writer:0.55	0.35	0.82
+splicer	craftsman	0	0		10637360	person	1	3	0	a woodworker who joins pieces of wood with a splice						craftsman	off-wordnet shrink	review: rare leaf			1.90					craftsman:0.41	0.28	0.79
 splitter	worker	0	0		10637839	person	1	3	0	a worker who splits fish and removes the backbone						worker	off-wordnet shrink	review: rare leaf			2.88	10505206 rail-splitter: a laborer who splits logs to build split-rail fences	0.175			worker:0.42	0.48	0.94
 sports-announcer	announcer	0	0		10639637	person	1	1	0	an announcer who reads sports news or describes sporting events							shrink	review: rare leaf			3.56					announcer:0.80	0.03	0.56
-sports-editor	editor	0	0		10639817	person	1	1	2	the newspaper editor responsible for sports news											4.45					editor:0.64	0.14	0.62
+sports-editor	editor	0	0		10639817	person	1	1	2	the newspaper editor responsible for sports news						editor	off-wordnet				4.45					editor:0.64	0.14	0.61
 sports-writer	writer	0	0		10640084	person	1	1	1	a journalist who writes about sports						writer	off-wordnet shrink	review: rare leaf			4.50					writer:0.53	0.24	0.54
 spotter	worker	0	0		10640327	person	1	4	0	a worker employed at a dry-cleaning establishment to remove spots						worker	off-wordnet shrink	review: rare leaf			2.80	10271216 lookout: a person employed to keep watch for some anticipated event	0.304			worker:0.53	0.37	0.97
-sprayer	worker	0	0		10641112	person	1	2	0	a worker who applies spray to a surface						worker	off-wordnet shrink	review: rare leaf			2.57	02754103 atomizer: a dispenser that turns a liquid (such as perfume) into a fine mist	0.267			worker:0.47	0.42	0.85
-stacker	worker	0	0		10644469	person	1	1	0	a laborer who builds up a stack or pile						worker	off-wordnet shrink	review: rare leaf			2.35					worker:0.47	0.34	0.82
+sprayer	worker	0	0		10641112	person	1	2	0	a worker who applies spray to a surface						worker	off-wordnet shrink	review: rare leaf			2.57	02754103 atomizer: a dispenser that turns a liquid (such as perfume) into a fine mist	0.267			worker:0.47	0.41	0.85
+stacker	worker	0	0		10644469	person	1	1	0	a laborer who builds up a stack or pile						worker	off-wordnet shrink	review: rare leaf			2.35					worker:0.47	0.33	0.82
 stage-director	artist	0	0		10645223	person	1	1	0	someone who supervises the actors and directs the action in the production of a stage show						artist	off-wordnet shrink	review: rare leaf			4.82					artist:0.23	0.57	0.63
 stage-manager	supervisor	0	0		10645611	person	1	1	0	someone who supervises the physical aspects in the production of a show and who is in charge of the stage when the show is being performed						supervisor	off-wordnet shrink	review: rare leaf			4.73					supervisor:0.43	0.20	0.72
 stainer	worker	0	0		10646032	person	1	1	0	a worker who stains (wood or fabric)						worker	off-wordnet shrink	review: rare leaf			1.94					worker:0.51	0.27	0.79
 stamper	worker	0	0		10647168	person	1	3	0	a workman whose job is to form or cut out by applying a mold or die (either by hand or by operating a stamping machine)						worker	off-wordnet shrink	review: rare leaf			2.40	10646942 stamper: someone who walks with a heavy noisy gait or who stamps on the ground	0.214			worker:0.46	0.28	0.91
-statistician	expert scientist	0	0		10653238	person	1	2	1	a mathematician who specializes in statistics						expert scientist	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.87					expert:0.34 scientist:0.41	0.43	0.75
+statistician	expert scientist	0	0		10653238	person	1	2	1	a mathematician who specializes in statistics						expert scientist	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.87					expert:0.34 scientist:0.41	0.42	0.75
 steeplejack	worker	0	0		10653793	person	1	1	0	someone who builds or maintains very tall structures						worker	off-wordnet shrink	review: rare leaf			1.06					worker:0.27	0.75	0.95
-stevedore	worker	0	0		10655169	person	1	1	0	a laborer who loads and unloads vessels in a port						worker	off-wordnet shrink	review: rare leaf			1.89					worker:0.41	0.40	0.95
+stevedore	worker	0	0		10655169	person	1	1	0	a laborer who loads and unloads vessels in a port						worker	off-wordnet shrink	review: rare leaf			1.89					worker:0.41	0.39	0.95
 stewardess	worker	0	0		10655875	person	1	1	0	a woman steward on an airplane						worker	off-wordnet shrink	review: rare leaf			2.62					worker:0.26	0.80	0.75
-stockbroker	broker	0	0		10657444	person	1	1	1	an agent in the buying and selling of stocks and bonds							shrink	review: rare leaf			2.76					broker:0.56	0.15	0.86
+stockbroker	broker	0	0		10657444	person	1	1	1	an agent in the buying and selling of stocks and bonds							shrink	review: rare leaf			2.76					broker:0.56	0.16	0.87
 stockman	farmer	0	0		10658501	person	1	1	0	farmer who breed or raises livestock						farmer	off-wordnet shrink	review: rare leaf			2.65					farmer:0.73	0.08	0.94
-stonecutter	worker	0	0		10659294	person	1	1	0	someone who cuts or carves stone						worker	off-wordnet shrink	review: rare leaf			1.75					worker:0.31	0.59	0.64
-strategist	person	0	0		10661563	person	1	1	1	an expert in strategy (especially in warfare)						person	off-wordnet shrink	review: rare leaf			3.26					person:0.12	0.96	0.84
-street-cleaner	laborer	0	0		10662474	person	1	1	1	a worker employed to clean streets (especially one employed by a municipal sanitation department)						laborer	off-wordnet shrink	review: rare leaf			3.88					laborer:0.37	0.36	0.70
-subeditor	editor	0	0		10045361	person	1	1	0	an assistant editor							shrink	review: rare leaf			1.27					editor:0.47	0.26	0.87
+stonecutter	worker	0	0		10659294	person	1	1	0	someone who cuts or carves stone						worker	off-wordnet shrink	review: rare leaf			1.75					worker:0.31	0.60	0.64
+strategist	person	0	0		10661563	person	1	1	1	an expert in strategy (especially in warfare)						person	off-wordnet shrink	review: rare leaf			3.26					person:0.12	0.96	0.85
+street-cleaner	laborer	0	0		10662474	person	1	1	1	a worker employed to clean streets (especially one employed by a municipal sanitation department)						laborer	off-wordnet shrink	review: rare leaf			3.88					laborer:0.37	0.35	0.70
+subeditor	editor	0	0		10045361	person	1	1	0	an assistant editor						editor	off-wordnet shrink	review: rare leaf			1.27					editor:0.47	0.26	0.87
 supervisor		1	1					2			10676877	3	person	one who supervises or has charge and direction of			no-synset											
 supply-officer	worker	0	0		10677604	person	1	1	0	a commissioned officer responsible for logistics						worker	off-wordnet shrink	review: rare leaf			4.61					worker:0.31	0.55	0.67
-surveyor	engineer	0	0		10680609	person	1	2	2	an engineer who determines the boundaries and elevations of land or structures						engineer	off-wordnet				3.36					engineer:0.40	0.51	0.86
+surveyor	engineer	0	0		10680609	person	1	2	2	an engineer who determines the boundaries and elevations of land or structures						engineer	off-wordnet				3.36					engineer:0.40	0.51	0.87
 sweeper	worker	0	0		10682713	person	1	3	0	an employee who sweeps (floors or streets etc.)						worker	off-wordnet shrink	review: rare leaf			2.89					worker:0.55	0.23	0.78
-systems-analyst	worker	0	0		10687728	person	1	1	0	a person skilled at systems analysis						worker	off-wordnet shrink	review: rare leaf			3.99					worker:0.24	0.91	0.63
+systems-analyst	worker	0	0		10687728	person	1	1	0	a person skilled at systems analysis						worker	off-wordnet shrink	review: rare leaf			3.99					worker:0.24	0.91	0.62
 tailor	craftsman maker	0	0		10689564	person	1	1	0	a person whose occupation is making and altering garments						craftsman	disjoint off-wordnet shrink	keep one parent (several mean AND)			3.61					maker:0.49 craftsman:0.52	0.20	0.86
-tallyman	clerk	0	0		10690268	person	2	2	0	one who keeps a tally of quantity or weight of goods produced or shipped or received	10690421	0	person	one who sells goods on the installment plan	traveling-salesman	clerk	off-wordnet shrink	review: rare leaf			1.01					clerk:0.39	0.70	0.97
+tallyman	clerk	0	0		10690268	person	2	2	0	one who keeps a tally of quantity or weight of goods produced or shipped or received	10690421	0	person	one who sells goods on the installment plan	traveling-salesman	clerk	off-wordnet shrink	review: rare leaf			1.01					clerk:0.39	0.71	0.97
 tanner	craftsman	0	0		10690742	person	2	2	0	a craftsman who tans skins and hides	13391452	0	possession	a small coin of the United Kingdom worth six pennies; not minted since 1970		craftsman	off-wordnet shrink	review: rare leaf			3.56					craftsman:0.28	0.81	0.94
 tap-dancer	dancer	0	0		10691148	person	1	1	0	a dancer who sounds out rhythms by using metal taps on the toes and heels of the shoes							shrink	review: rare leaf			3.81					dancer:0.71	0.05	0.76
-tapster	bartender	0	0		10691764	person	1	1	0	a tavern keeper who taps kegs or casks							shrink	review: rare leaf			0.00					bartender:0.48	0.16	0.90
+tapster	bartender	0	0		10691764	person	1	1	0	a tavern keeper who taps kegs or casks							shrink	review: rare leaf			0.00					bartender:0.48	0.16	0.91
 tax-assessor	worker	0	0		10692883	person	1	1	0	an official who evaluates property for the purpose of taxing it						worker	off-wordnet shrink	review: rare leaf			2.88					worker:0.17	0.94	0.85
-tax-collector	worker	0	0		10693052	person	1	1	0	someone who collects taxes for the government						worker	off-wordnet shrink	review: rare leaf			3.89					worker:0.35	0.53	0.78
-taxidermist	worker	0	0		10693459	person	1	1	0	a craftsman who stuffs and mounts the skins of animals for display						worker	off-wordnet shrink	review: rare leaf			2.24					worker:0.26	0.74	0.95
-taxidriver	driver operator	0	0		10693646	person	1	1	1	someone who drives a taxi for a living						driver	disjoint off-wordnet shrink	keep one parent (several mean AND)			0.00					operator:0.37 driver:0.60	0.30	0.68
+tax-collector	worker	0	0		10693052	person	1	1	0	someone who collects taxes for the government						worker	off-wordnet shrink	review: rare leaf			3.89					worker:0.35	0.53	0.79
+taxidermist	worker	0	0		10693459	person	1	1	0	a craftsman who stuffs and mounts the skins of animals for display						worker	off-wordnet shrink	review: rare leaf			2.24					worker:0.26	0.73	0.95
+taxidriver	driver operator	0	0		10693646	person	1	1	1	someone who drives a taxi for a living						driver operator	disjoint off-wordnet shrink	keep one parent (several mean AND)			0.00					operator:0.37 driver:0.60	0.31	0.67
 taxonomist	research-worker	0	0		10693824	person	1	1	0	a biologist who specializes in the classification of organisms into groups on the basis of their structure and origin and behavior						research-worker	off-wordnet shrink	review: rare leaf			1.52					research-worker:0.27	0.49	0.88
 teacher		1	2					2			10694258	41	person	a person whose occupation is teaching	educator		no-synset											
-teamster	operator	0	0		10695192	person	2	2	0	someone who drives a truck as an occupation	10695333	5	person	the driver of a team of horses doing hauling			rare-sense	re-sense to the everyday 10695333 under ?			2.19					operator:0.41	0.31	0.99
-teaser	worker	0	0		10695822	person	1	7	0	a worker who teases wool						worker	off-wordnet shrink	review: rare leaf			3.47	07250868 teaser: an advertisement that offers something free in order to arouse customers' interest	0.386			worker:0.48	0.53	0.99
-technician	skilled-worker	3	3		10696251	person	1	2	3	someone whose occupation involves training in a specific technical process											3.70					skilled-worker:0.62	0.32	0.83
+teamster	operator	0	0		10695192	person	2	2	0	someone who drives a truck as an occupation	10695333	5	person	the driver of a team of horses doing hauling		operator	rare-sense off-wordnet	re-sense to the everyday 10695333 under ?			2.19					operator:0.41	0.31	0.99
+teaser	worker	0	0		10695822	person	1	7	0	a worker who teases wool						worker	off-wordnet shrink	review: rare leaf			3.47	07250868 teaser: an advertisement that offers something free in order to arouse customers' interest	0.386			worker:0.48	0.54	0.99
+technician	skilled-worker	3	3		10696251	person	1	2	3	someone whose occupation involves training in a specific technical process											3.70					skilled-worker:0.62	0.34	0.83
 teller	worker	0	0		10698970	person	3	4	0	an employee of a bank who receives and pays out money	11335041	0	person	United States physicist (born in Hungary) who worked on the first atom bomb and the first hydrogen bomb (1908-2003)	nuclear-physicist	worker	off-wordnet shrink	review: rare leaf			3.49					worker:0.45	0.34	0.93
-tennis-player	athlete worker	0	0		10701180	person	1	1	0	an athlete who plays tennis						athlete worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			4.29					worker:0.29 athlete:0.67	0.76	0.60
+tennis-player	athlete worker	0	0		10701180	person	1	1	0	an athlete who plays tennis						athlete worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			4.29					worker:0.29 athlete:0.67	0.78	0.60
 tenor	human singer	0	0		10701783	person	3	5	0	an adult male with a tenor voice	06872676	1	communication	the adult male singing voice above baritone		human singer	rare-sense disjoint off-wordnet	re-sense to the everyday 06872676 under ?			3.40					human:0.23 singer:0.46	0.92	0.77
 tentmaker	maker	0	0		10702077	person	1	1	0	someone who makes or repairs tents							shrink	review: rare leaf			1.06					maker:0.48	0.25	0.73
 test-pilot	pilot skilled-worker	0	0		10704098	person	1	1	0	a pilot hired to fly experimental airplanes through maneuvers designed to test them						pilot	disjoint off-wordnet shrink	keep one parent (several mean AND)			4.44					skilled-worker:0.23 pilot:0.59	0.92	0.74
 thatcher	craftsman	0	0		10705211	person	2	2	0	someone skilled in making a roof from plant stalks or foliage	11337779	0	person	British stateswoman; first woman to serve as Prime Minister (born in 1925)		craftsman	off-wordnet shrink	review: rare leaf			3.47					craftsman:0.26	0.77	0.99
 theologian	professional	0	0		10705615	person	1	1	9	someone who is learned in theology or who speculates about theology						professional	off-wordnet				3.00					professional:0.43	0.28	0.72
 therapist		1	1					1			10707233	9	person	a person skilled in a particular type of therapy			no-synset											
-throwster	worker	0	0		10709745	person	1	1	0	a person who twists silk or rayon filaments into a thread or yarn						worker	off-wordnet shrink	review: rare leaf			0.00					worker:0.26	0.83	0.96
+throwster	worker	0	0		10709745	person	1	1	0	a person who twists silk or rayon filaments into a thread or yarn						worker	off-wordnet shrink	review: rare leaf			0.00					worker:0.26	0.84	0.96
 tiler	craftsman	0	0		10710913	person	1	1	0	a worker who lays tile						craftsman	off-wordnet shrink	review: rare leaf			1.91					craftsman:0.36	0.47	0.88
 tinker	mender	0	0		10711852	person	2	3	0	formerly a person (traditionally a Gypsy) who traveled from place to place mending pots and kettles and other metal utensils as a way to earn a living	10712055	0	person	a person who enjoys fixing and experimenting with machines and their parts		mender	off-wordnet shrink	review: rare leaf			3.28	10712055 tinker: a person who enjoys fixing and experimenting with machines and their parts	0.078			mender:0.39	0.26	1.00
 tinsmith	smith	0	0		10712374	person	1	1	0	someone who makes or repairs tinware						smith	off-wordnet shrink	review: rare leaf			1.60					smith:0.45	0.32	0.89
 tollkeeper	worker	0	0		10714684	person	1	1	0	someone employed to collect tolls						worker	off-wordnet shrink	review: rare leaf			0.00					worker:0.37	0.44	0.70
-toolmaker	maker	0	0		10715347	person	1	1	0	someone skilled in making or repairing tools							shrink	review: rare leaf			1.71					maker:0.58	0.12	0.83
-tour-guide	guide worker	0	0		10718040	person	1	1	0	a guide who leads others on a tour						guide worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			4.55					worker:0.13 guide:0.59	0.92	0.67
-toxicologist	scientist worker	0	0		10719807	person	1	1	0	one who studies the nature and effects of poisons and their treatment						scientist worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.03					worker:0.23 scientist:0.37	0.82	0.79
+toolmaker	maker	0	0		10715347	person	1	1	0	someone skilled in making or repairing tools							shrink	review: rare leaf			1.71					maker:0.58	0.12	0.84
+tour-guide	guide worker	0	0		10718040	person	1	1	0	a guide who leads others on a tour						guide worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			4.55					worker:0.13 guide:0.59	0.92	0.68
+toxicologist	scientist worker	0	0		10719807	person	1	1	0	one who studies the nature and effects of poisons and their treatment						scientist worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			2.03					worker:0.23 scientist:0.37	0.81	0.79
 trainer		1	1					2			10722575	0	person	one who trains other persons or animals			no-synset											
-translator	worker	0	0		10725280	person	1	3	0	a person who translates written messages from one language to another						worker	off-wordnet shrink	review: rare leaf			3.67					worker:0.22	0.88	0.74
-trapper	worker	0	0		10726233	person	1	1	3	someone who sets traps for animals (usually to obtain their furs)						worker	off-wordnet				2.95					worker:0.28	0.70	0.88
-travel-agent	worker	0	0		10726669	person	1	1	0	someone who sells or arranges trips or tours for customers						worker	off-wordnet shrink	review: rare leaf			4.59					worker:0.28	0.63	0.87
-traveling-salesman	worker	0	0		10726786	person	1	1	0	a salesman who travels to call on customers						worker	off-wordnet shrink	review: rare leaf			3.55					worker:0.28	0.72	0.72
-trumpeter	instrumentalist	0	0		10732010	person	1	4	1	a musician who plays the trumpet or cornet							shrink	review: rare leaf			2.70					instrumentalist:0.60	0.15	0.82
-tumbler.person	person	0	0		10732967	person		0		a gymnast who performs rolls and somersaults and twists etc.						person	off-wordnet				0.00					person:0.40	0.49	0.61
+translator	worker	0	0		10725280	person	1	3	0	a person who translates written messages from one language to another						worker	off-wordnet shrink	review: rare leaf			3.67					worker:0.22	0.88	0.73
+trapper	worker	0	0		10726233	person	1	1	3	someone who sets traps for animals (usually to obtain their furs)						worker	off-wordnet				2.95					worker:0.28	0.68	0.89
+travel-agent	worker	0	0		10726669	person	1	1	0	someone who sells or arranges trips or tours for customers						worker	off-wordnet shrink	review: rare leaf			4.59					worker:0.28	0.64	0.87
+traveling-salesman	worker	0	0		10726786	person	1	1	0	a salesman who travels to call on customers						worker	off-wordnet shrink	review: rare leaf			3.55					worker:0.28	0.72	0.71
+trumpeter	instrumentalist	0	0		10732010	person	1	4	1	a musician who plays the trumpet or cornet							shrink	review: rare leaf			2.70					instrumentalist:0.60	0.15	0.83
+tumbler.person	person	0	0		10732967	person		0		a gymnast who performs rolls and somersaults and twists etc.						person	off-wordnet				0.00					person:0.40	0.48	0.61
 tuner	worker	0	0		10733117	person	1	2	0	someone who tunes pianos						worker	off-wordnet shrink	review: rare leaf			2.91	04043733 radio_receiver: an electronic receiver that detects and demodulates and amplifies transmitted signals	0.040			worker:0.17	0.94	0.94
-tympanist	percussionist	0	0		10734963	person	1	1	0	a person who plays the kettledrums							shrink	review: rare leaf			0.00					percussionist:0.47	0.17	0.98
+tympanist	percussionist	0	0		10734963	person	1	1	0	a person who plays the kettledrums							shrink	review: rare leaf			0.00					percussionist:0.47	0.18	0.98
 typist	worker	0	0		10735173	person	1	1	0	someone paid to operate a typewriter						worker	off-wordnet shrink	review: rare leaf			2.63					worker:0.37	0.50	0.93
 upholsterer	craftsman	0	0		10740482	person	1	1	0	a craftsman who upholsters furniture						craftsman	off-wordnet shrink	review: rare leaf			1.89					craftsman:0.48	0.19	0.69
 usher	worker	0	0		10741821	person	3	3	0	someone employed to conduct others	11357879	0	person	Irish prelate who deduced from the Bible that Creation occurred in the year 4004 BC (1581-1656)	priest	worker	off-wordnet shrink	review: rare leaf			3.51	10742111 usher: an official stationed at the entrance of a courtroom or legislative chamber	0.106			worker:0.31	0.57	1.00
 varnisher	worker	0	0		10746460	person	1	1	0	someone who applies a finishing coat of varnish						worker	off-wordnet shrink	review: rare leaf			0.00					worker:0.32	0.59	0.71
-verger	worker	0	0		10748309	person	1	1	0	a church officer who takes care of the interior of the building and acts as an attendant (carries the verge) during ceremonies						worker	off-wordnet shrink	review: rare leaf			2.12					worker:0.27	0.73	0.98
+verger	worker	0	0		10748309	person	1	1	0	a church officer who takes care of the interior of the building and acts as an attendant (carries the verge) during ceremonies						worker	off-wordnet shrink	review: rare leaf			2.12					worker:0.27	0.74	0.98
 vicar	priest	0	0		10750188	person	3	3	0	(Church of England) a clergyman appointed to act as priest of a parish	10750031	1	person	a Roman Catholic priest who acts for another higher-ranking clergyman	priest	priest	rare-sense off-wordnet shrink	re-sense to the everyday 10750031 under priest			3.37					priest:0.67	0.22	0.97
-vice-chancellor	manager	0	0		10751026	person	1	1	0	a deputy or assistant to someone bearing the title of chancellor						manager	off-wordnet shrink	review: rare leaf			4.03					manager:0.33	0.54	0.80
-violin-maker	maker	0	0		10754920	person	1	1	0	someone who makes violins							shrink	review: rare leaf			3.62					maker:0.62	0.11	0.65
-violinist	instrumentalist musician	0	0		10754578	person	1	1	2	a musician who plays the violin						musician	disjoint off-wordnet	keep one parent (several mean AND)			3.10					musician:0.57 instrumentalist:0.66	0.14	0.66
+vice-chancellor	manager	0	0		10751026	person	1	1	0	a deputy or assistant to someone bearing the title of chancellor						manager	off-wordnet shrink	review: rare leaf			4.03					manager:0.33	0.54	0.81
+violin-maker	maker	0	0		10754920	person	1	1	0	someone who makes violins							shrink	review: rare leaf			3.62					maker:0.62	0.12	0.65
+violinist	instrumentalist musician	0	0		10754578	person	1	1	2	a musician who plays the violin						musician	disjoint off-wordnet	keep one parent (several mean AND)			3.10					musician:0.57 instrumentalist:0.66	0.15	0.66
 visionary	human	0	0		10756433	person	2	2	0	a person with unusual powers of foresight	10756641	0	person	a person given to fanciful speculations and enthusiasms with little regard for what is actually possible		human	off-wordnet shrink	review: rare leaf			3.42					human:0.14	0.75	0.96
 viticulturist	agriculturist farmer	0	0		10758121	person	1	1	0	a cultivator of grape vine						farmer	disjoint off-wordnet shrink	keep one parent (several mean AND)			1.28					farmer:0.18 agriculturist:0.34	0.97	0.96
-voicer	worker	0	0		10758949	person	1	2	0	someone who regulates the tone of organ pipes						worker	off-wordnet shrink	review: rare leaf			0.00					worker:0.16	0.96	0.95
+voicer	worker	0	0		10758949	person	1	2	0	someone who regulates the tone of organ pipes						worker	off-wordnet shrink	review: rare leaf			0.00					worker:0.16	0.96	0.96
 vulcanizer	worker	0	0		10761519	person	1	1	0	someone who vulcanizes rubber to improve its strength and resiliency						worker	off-wordnet shrink	review: rare leaf			0.00					worker:0.17	0.95	0.80
 waitress	worker	0	0		10763620	person	1	1	1	a woman waiter						worker	off-wordnet shrink	review: rare leaf			3.56					worker:0.39	0.60	0.83
 washer.person	worker	0	0		10768903	person		0		someone who washes things for a living						worker	off-wordnet				0.00					worker:0.55	0.18	0.29
-watchmaker	maker	0	0		10769905	person	1	1	1	someone who makes or repairs watches							shrink	review: rare leaf			2.59					maker:0.56	0.16	0.84
+watchmaker	maker	0	0		10769905	person	1	1	1	someone who makes or repairs watches							shrink	review: rare leaf			2.59					maker:0.56	0.16	0.85
 watchman	guard	0	0		10770059	person	1	1	1	a guard who keeps watch						guard	off-wordnet shrink	review: rare leaf			3.01					guard:0.81	0.33	0.92
-weatherman	specialist	0	0		10772092	person	1	1	0	predicts the weather						specialist	off-wordnet shrink	review: rare leaf			2.70					specialist:0.20	0.95	0.92
-weaver	craftsman	0	0		10772190	person	1	2	0	a craftsman who weaves cloth						craftsman	off-wordnet shrink	review: rare leaf			3.60	01542786 weaver: finch-like African and Asian colonial birds noted for their elaborately woven nests	0.055			craftsman:0.50	0.20	0.95
-webmaster	technician	0	0		10772289	person	1	1	0	a technician who designs or maintains a website							shrink	review: rare leaf			2.39					technician:0.52	0.55	0.87
-welder	craftsman	0	0		10773665	person	1	1	0	joins pieces of metal by welding them together						craftsman	off-wordnet shrink	review: rare leaf			2.90					craftsman:0.33	0.70	0.90
-wheelwright	craftsman	0	0		10775660	person	1	1	0	someone who makes and repairs wooden wheels						craftsman	off-wordnet shrink	review: rare leaf			2.26					craftsman:0.53	0.19	0.84
-wigmaker	maker	0	0		10781460	person	1	1	2	someone who makes and sells wigs											1.11					maker:0.47	0.23	0.77
-window-cleaner	laborer	0	0		10783145	person	1	1	0	someone who cleans windows for pay						laborer	off-wordnet shrink	review: rare leaf			3.85					laborer:0.25	0.63	0.85
+weatherman	specialist	0	0		10772092	person	1	1	0	predicts the weather						specialist	off-wordnet shrink	review: rare leaf			2.70					specialist:0.20	0.95	0.93
+weaver	craftsman	0	0		10772190	person	1	2	0	a craftsman who weaves cloth						craftsman	off-wordnet shrink	review: rare leaf			3.60	01542786 weaver: finch-like African and Asian colonial birds noted for their elaborately woven nests	0.055			craftsman:0.50	0.21	0.95
+webmaster	technician	0	0		10772289	person	1	1	0	a technician who designs or maintains a website							shrink	review: rare leaf			2.39					technician:0.52	0.56	0.88
+welder	craftsman	0	0		10773665	person	1	1	0	joins pieces of metal by welding them together						craftsman	off-wordnet shrink	review: rare leaf			2.90					craftsman:0.33	0.72	0.91
+wheelwright	craftsman	0	0		10775660	person	1	1	0	someone who makes and repairs wooden wheels						craftsman	off-wordnet shrink	review: rare leaf			2.26					craftsman:0.53	0.20	0.84
+wigmaker	maker	0	0		10781460	person	1	1	2	someone who makes and sells wigs											1.11					maker:0.47	0.24	0.77
+window-cleaner	laborer	0	0		10783145	person	1	1	0	someone who cleans windows for pay						laborer	off-wordnet shrink	review: rare leaf			3.85					laborer:0.25	0.62	0.85
 window-dresser	worker	0	0		10783240	person	1	1	0	someone who decorates shop windows						worker	off-wordnet shrink	review: rare leaf			3.34					worker:0.38	0.56	0.78
 wine-taster	person	0	0		10783438	person	1	1	0	a taster who evaluates the quality of wines						person	off-wordnet shrink	review: rare leaf			2.71					person:0.10	0.99	0.69
-woman		1	1	medicine				4			10787470	143	person	an adult female person (as opposed to a man)			no-synset											
-woodcarver	craftsman	0	0		10789963	person	1	1	1	makes decorative wooden panels						craftsman	off-wordnet shrink	review: rare leaf			1.65					craftsman:0.22	0.78	0.96
+woodcarver	craftsman	0	0		10789963	person	1	1	1	makes decorative wooden panels						craftsman	off-wordnet shrink	review: rare leaf			1.65					craftsman:0.22	0.77	0.96
 woodcutter	worker	0	0		10790077	person	1	1	0	cuts down trees and chops wood as a job						worker	off-wordnet shrink	review: rare leaf			2.12					worker:0.29	0.69	0.91
-woodworker	craftsman	1	1		10790192	person	1	1	0	makes things out of wood						craftsman	off-wordnet				2.18					craftsman:0.41	0.26	0.89
-worker		228	287	economics				4			09632518	29	person	a person who works at a specific occupation			no-synset											
+woodworker	craftsman	1	1		10790192	person	1	1	0	makes things out of wood						craftsman	off-wordnet				2.18					craftsman:0.41	0.26	0.90
+worker		223	266	economics				4			09632518	29	person	a person who works at a specific occupation			no-synset											
 wrecker	worker	0	0		10792856	person	1	3	0	someone who demolishes or dismantles buildings as a job						worker	off-wordnet shrink	review: rare leaf			2.61					worker:0.43	0.37	0.98
 wrestler	athlete worker	0	0		10793168	person	1	1	1	combatant who tries to throw opponent to the ground						athlete worker	disjoint off-wordnet shrink	keep one parent (several mean AND)			3.52					worker:0.16 athlete:0.39	0.99	0.98
 writer		12	12					2			10794014	36	person	writes (books or stories or articles or the like) professionally (for pay)	communicator		no-synset											

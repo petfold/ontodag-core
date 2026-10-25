@@ -1,5 +1,5 @@
 # ontodag store v1
-#:canonical 6.0 715a2f5eb5c79f66db66128df760bf3b364492891142a22bb1545df98eb82288 2
+#:canonical 6.0 d8126debb7238817b534077a22808cbe4febfc66fe667a0a5fc44796f3c2bda6 2
 about enclosing-dimension
 #:meta acanthocyte '{"gloss": "an abnormal red blood cell that has thorny projections of protoplasm", "wn30": "05454452-n"}'
 acanthocyte cell
@@ -170,7 +170,6 @@ dendrite nerve-fiber part
 dimension '*'
 #:meta diploid '{"gloss": "(genetics) an organism or cell having the normal amount of DNA per cell; i.e., two sets of chromosomes or twice the haploid number", "wn30": "01320093-n"}'
 diploid organism
-#:meta dna '{"gloss": "(biochemistry) a long linear polymer found in the nucleus of a cell and formed from nucleotides and shaped like a double helix; associated with the transmission of genetic information", "wn30": "14830364-n"}'
 dna nucleic-acid
 #:meta dna-replication '{"gloss": "(genetics) the process whereby DNA makes a copy of itself before cell division", "wn30": "13549916-n"}'
 dna-replication organic-process
@@ -566,7 +565,6 @@ plant-cell cell
 plant-embryo plant
 #:meta plant-part '{"gloss": "any part of a plant or fungus", "wn30": "13086908-n"}'
 plant-part body-part
-plant-root '*'
 #:meta plasma-cell '{"gloss": "a cell that develops from a B lymphocyte in reaction to a specific antigen; found in bone marrow and sometimes in the blood", "wn30": "05452845-n"}'
 plasma-cell b-cell
 #:meta plasmablast '{"gloss": "the precursor of a plasma cell", "wn30": "05453057-n"}'
@@ -631,6 +629,7 @@ rna compound
 rna-translation organic-process
 #:meta rod-cell '{"gloss": "a visual receptor cell that is sensitive to dim light", "wn30": "05456456-n"}'
 rod-cell visual-cell
+root '*'
 #:meta saltation '{"gloss": "(genetics) a mutation that drastically changes the phenotype of an organism or species", "wn30": "07426732-n"}'
 saltation mutation
 #:meta schwann-cell '{"gloss": "any cell that covers the nerve fibers in the peripheral nervous system and forms the myelin sheath", "wn30": "05465071-n"}'
@@ -731,7 +730,7 @@ system '*'
 #:meta t-cell '{"gloss": "a small lymphocyte developed in the thymus; it orchestrates the immune system'"'"'s response to infected or malignant cells", "wn30": "05451981-n"}'
 t-cell lymphocyte
 #:meta taproot '{"gloss": "(botany) main root of a plant growing straight downward from the stem", "wn30": "13126050-n"}'
-taproot plant-root
+taproot root
 #:meta target-cell '{"gloss": "any cell that has a specific receptor for an antigen or antibody or hormone or drug, or is the focus of contact by a virus or phagocyte or nerve fiber etc.", "wn30": "05608206-n"}'
 target-cell somatic-cell
 #:meta taste-cell '{"gloss": "an epithelial cell in a taste bud that activates sensory fibers of the facial nerve or the glossopharyngeal nerve or the vagus nerve", "wn30": "05305389-n"}'

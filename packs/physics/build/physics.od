@@ -1,5 +1,5 @@
 # ontodag store v1
-#:canonical 6.0 ca5bcc1af28764c5a4688fc61f8a73b0f2170daaec25232c1b6d7f799e92ea77 2
+#:canonical 6.0 e53a6b6f00bf5a98597ccaa207a48ecdd03d8748c34e48ab20fcc98d08bd910f 2
 about enclosing-dimension
 #:meta absorber '{"gloss": "(physics) material in a nuclear reactor that absorbs radiation", "wn30": "14598079-n"}'
 absorber material
@@ -96,7 +96,7 @@ coriolis-effect physical-phenomenon
 #:meta coriolis-force '{"gloss": "(physics) a force due to the earth'"'"'s rotation; acts on a body in motion (airplane or projectile) in a rotating reference frame; in a rotating frame of reference Newton'"'"'s second law of motion can be made to apply if in addition to the real forces acting on a body a Coriolis force and a centrifugal force are introduced", "wn30": "11440123-n"}'
 coriolis-force force physical-phenomenon
 #:meta corpuscular-theory '{"gloss": "(physics) the theory that light is transmitted as a stream of particles", "wn30": "06106084-n"}'
-corpuscular-theory 'about(visible-light)' scientific-theory
+corpuscular-theory 'about(light)' scientific-theory
 #:meta cosmic-string '{"gloss": "(cosmology) a hypothetical one-dimensional subatomic particle having a concentration of energy and the dynamic properties of a flexible loop", "wn30": "09449282-n"}'
 cosmic-string natural-object
 count count-dimension
@@ -231,6 +231,7 @@ length 'linear-dimension(length)'
 lepton elementary-particle fermion
 #:meta libration '{"gloss": "(astronomy) a real or apparent slow oscillation of a moon or satellite", "wn30": "13507617-n"}'
 libration oscillation
+light '*'
 linear-dimension dimension
 luminosity '*'
 #:meta luminous-flux '{"gloss": "the rate of flow of light energy", "wn30": "15287486-n"}'
@@ -286,7 +287,7 @@ nucleon baryon
 #:meta optical-density '{"gloss": "(physics) a measure of the extent to which a substance transmits light or other electromagnetic radiation", "wn30": "05089367-n"}'
 optical-density density
 #:meta optics '{"gloss": "the branch of physics that studies the physical properties of light", "wn30": "06100778-n"}'
-optics 'about(visible-light)' physics
+optics 'about(light)' physics
 #:meta orbital-anomaly '{"gloss": "(astronomy) position of a planet as defined by its angular distance from its perihelion (as observed from the sun)", "wn30": "08622763-n"}'
 orbital-anomaly angle
 #:meta orbital-plane '{"gloss": "(astronomy) the plane on which a body is orbiting", "wn30": "13861806-n"}'
@@ -376,7 +377,7 @@ scientific-principle '*'
 scientific-theory theory
 scientist '*'
 #:meta scintillation '{"gloss": "(physics) a flash of light that is produced in a phosphor when it absorbs a photon or ionizing particle", "wn30": "11506349-n"}'
-scintillation visible-light
+scintillation light
 shape '*'
 shared-with reversed-dimension
 #:meta shear-deformation '{"gloss": "(physics) a deformation of an object in which parallel planes remain parallel but are shifted in a direction parallel to themselves", "wn30": "11506738-n"}'
@@ -434,8 +435,6 @@ variation '*'
 velocity relation
 #:meta viscosity '{"gloss": "resistance of a liquid to shear forces (and hence to flow)", "wn30": "04935003-n"}'
 viscosity attribute
-#:meta visible-light '{"gloss": "(physics) electromagnetic radiation that can produce a visual sensation", "wn30": "11473954-n"}'
-visible-light physical-phenomenon
 #:meta voltage '{"gloss": "the rate at which energy is drawn from a source that produces a flow of electricity in a circuit; expressed in volts", "wn30": "11523538-n"}'
 voltage attribute 'linear-dimension(voltage)'
 volume 'linear-dimension(volume)'
@@ -448,7 +447,7 @@ wave-node place
 #:meta wave-particle-duality '{"gloss": "(physics) the property of matter and electromagnetic radiation that is characterized by the fact that some properties can be explained best by wave theory and others by particle theory", "wn30": "04920568-n"}'
 wave-particle-duality attribute
 #:meta wave-theory '{"gloss": "(physics) the theory that light is transmitted as waves", "wn30": "06105873-n"}'
-wave-theory 'about(visible-light)' scientific-theory
+wave-theory 'about(light)' scientific-theory
 #:meta wavelength '{"gloss": "the distance (measured in the direction of propagation) between two points in the same phase in consecutive cycles of a wave", "wn30": "05086269-n"}'
 wavelength distance
 #:meta weak-interaction '{"gloss": "(physics) an interaction between elementary particles involving neutrinos or antineutrinos that is responsible for certain kinds of radioactive decay; mediated by intermediate vector bosons", "wn30": "11517210-n"}'

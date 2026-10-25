@@ -370,7 +370,8 @@ def main():
         gone = {o for a, o in later(i, pack, sub) if a in ("move", "cut")}
         return {x for x in targets if x in gone or dropped_later(i, pack, x)}
 
-    generated = RULINGS[-1]                  # rows written from a simulated graph
+    generated = ROOT / "align/rulings-v14-ysenses.tsv"   # rows written from a simulated graph
+    skipped = set()          # (pack, sub, parent): an edge left out because a later row moves it
     for i, (path, (pack, sub, action, old, new, *note)) in enumerate(sequence):
         if True:
             order, par = graphs[pack]
@@ -384,6 +385,10 @@ def main():
             if action != "drop" and sub not in par and dropped_later(i, pack, sub):
                 log.append(f"already  {action} {sub} (a later ruling drops it)")
                 continue
+            if action != "promote" and par.get(sub) in (None, ["*"]) and any(
+                    a == "promote" for a, _ in later(i, pack, sub)):
+                log.append(f"already  {action} {sub} ({pack} gives it to core later)")
+                continue
             if action not in ("disown", "add", "refine", "refine-cross", "promote") \
                     and sub not in par and any(a == "disown" for a, _ in later(i, pack, sub)):
                 log.append(f"already  {action} {sub} ({pack} disowns its copy later)")
@@ -392,6 +397,7 @@ def main():
             undone = superseded(i, "core" if action == "promote" else pack, sub, want) \
                 if action in ("add", "parent+", "move", "promote", "refine", "refine-cross") else set()
             if undone:
+                skipped.update((pack, sub, x) for x in undone)
                 want = [x for x in want if x not in undone]
                 if action == "promote" and not want and sub in graphs["core"][1]:
                     log.append(f"already  promote {sub} ({pack}; a later ruling places it)")
@@ -456,7 +462,7 @@ def main():
                         log.append(f"already  {sub}: {old} -> {new}")
                         if target and par[sub] != ["*"]:
                             ensure(par, sub, target)
-                    elif path == generated and target:
+                    elif (path == generated or (pack, sub, old) in skipped) and target:
                         # the old parent went with a row this pass supersedes
                         ensure(par, sub, target)
                         log.append(f"applied  {sub}: ({old} already gone) -> {new}")
@@ -525,7 +531,7 @@ def main():
                 elif any(x not in core for x in want):
                     errors.append(f"promote {sub}: core parents only, got {want}")
                     want = []
-                elif sub in core and set(want) <= set(core[sub]) and all(
+                elif sub in core and set(want) <= set(core[sub]) | implied(sub, "core") and all(
                         x == "*" or x not in core for x in par.get(sub, ["*"])):
                     log.append(f"already  promote {sub} ⊑ {' '.join(want)} ({pack})")
                     want = []
@@ -571,6 +577,11 @@ def main():
                 # remove the node; its children must have been moved first
                 if sub not in par:
                     log.append(f"already  drop {sub}")
+                elif pack != "core" and par[sub] == ["*"] and any(
+                        k != pack and g[1].get(sub) not in (None, ["*"]) or k == "core" and sub in g[1]
+                        for k, g in graphs.items()):
+                    # the pack's own copy went; what is left is a borrowed name another store holds
+                    log.append(f"already  drop {sub} ({pack} only borrows it now)")
                 elif mentions(sub):
                     errors.append(f"drop {sub}: it has children {mentions(sub)}")
                 else:
@@ -583,6 +594,35 @@ def main():
                 name = x[x.index("(") + 1:-1] if "(" in x else x   # about(x), in(x): the argument
                 if x != "*" and name not in known_to(pack):
                     errors.append(f"{sub}: no node {name!r} for {pack}")
+
+    # A pack's edge that core implies through another parent of the same node
+    # goes (landfall ⊑ coast shore, with core's coast ⊑ shore): a pack file is
+    # reduced against core as well as itself, so the same knowledge gives the
+    # same bytes however the rulings reached it.
+    core_par = graphs["core"][1]
+
+    def core_ancestors(name, memo={}):
+        if name not in memo:
+            seen, todo = set(), [name]
+            while todo:
+                n = todo.pop()
+                for x in list(core_par.get(n, [])) + list(PRELUDE.get(n, ())):
+                    x = x[:x.index("(")] if "(" in x else x
+                    if x != "*" and x not in seen:
+                        seen.add(x)
+                        todo.append(x)
+            memo[name] = seen
+        return memo[name]
+    for k, (order, par) in graphs.items():
+        if k == "core":
+            continue
+        for n, ps in par.items():
+            plain = [p for p in ps if p != "*" and "(" not in p]
+            implied_by_core = {p for p in plain for q in plain if q != p and p in core_ancestors(q)}
+            if implied_by_core:
+                par[n] = [p for p in ps if p not in implied_by_core]
+                log.append(f"applied  {k}: {n} ⊑ {' '.join(sorted(implied_by_core))} goes "
+                           f"(core implies it through another parent)")
 
     removed = ({r[1] for path in RULINGS for r in table(path) if r[2] == "drop"}
                | {r[1] for r in table(RENAMES)})

@@ -1,5 +1,5 @@
 # ontodag store v1
-#:canonical 6.0 9a10de378fe675170f466d8a6f245ecbae52fad389347a8413f739ca60b14100 2
+#:canonical 6.0 bed2c9c6d8627ed1e442d56d1ed50e8df6de34f753effb79166b051027a8cf62 2
 #:meta able-seaman '{"gloss": "a seaman in the merchant marine; trained in special skills", "wn30": "09756500-n"}'
 able-seaman worker
 about enclosing-dimension
@@ -20,8 +20,7 @@ agriculturist worker
 agronomist engineer expert scientist
 #:meta aide '{"gloss": "someone who acts as assistant", "wn30": "09780249-n"}'
 aide worker
-#:meta ambassador '{"gloss": "a diplomat of the highest rank; accredited as representative from one country to another", "wn30": "09787534-n"}'
-ambassador diplomat skilled-worker
+ambassador skilled-worker
 analyst '*'
 #:meta analyst.person '{"gloss": "someone who is skilled at analyzing data", "wn30": "09790482-n"}'
 analyst.person expert
@@ -150,7 +149,7 @@ brewer craftsman maker
 #:meta bricklayer '{"gloss": "a craftsman skilled in building with bricks", "wn30": "09874518-n"}'
 bricklayer craftsman
 #:meta broker '{"gloss": "a businessman who buys or sells for another in exchange for a commission", "wn30": "09777012-n"}'
-broker businessman worker
+broker businessman
 businessman '*'
 #:meta busman '{"gloss": "someone who drives a bus", "wn30": "09883362-n"}'
 busman driver operator
@@ -241,8 +240,6 @@ comber worker
 comedian artist
 #:meta commercial-artist '{"gloss": "an illustrator who is supported by advertising", "wn30": "09942587-n"}'
 commercial-artist artist
-#:meta commissioner '{"gloss": "a government administrator", "wn30": "09943811-n"}'
-commissioner chief
 #:meta communicator '{"gloss": "a person who communicates with others", "wn30": "09610660-n"}'
 communicator human
 #:meta company-president '{"gloss": "an executive officer of a firm or corporation", "wn30": "10468559-n"}'
@@ -317,8 +314,6 @@ dairyman farmer
 dancer artist
 #:meta deacon '{"gloss": "a Protestant layman who assists the minister", "wn30": "09994673-n"}'
 deacon worker
-#:meta dean '{"gloss": "an administrator in charge of a division of a university or college", "wn30": "09996784-n"}'
-dean chief worker
 #:meta deckhand '{"gloss": "a member of a ship'"'"'s crew who performs manual labor", "wn30": "09998788-n"}'
 deckhand worker
 #:meta demographer '{"gloss": "a scientist who studies the growth and density of populations and their vital statistics", "wn30": "10002257-n"}'
@@ -338,7 +333,6 @@ dietician specialist
 #:meta digger '{"gloss": "a laborer who digs", "wn30": "10012989-n"}'
 digger employee
 dimension '*'
-diplomat '*'
 #:meta dishwasher.person '{"gloss": "someone who washes dishes", "wn30": "10017190-n"}'
 dishwasher.person laborer
 #:meta disk-jockey '{"gloss": "a person who announces and plays popular recorded music", "wn30": "10017272-n"}'
@@ -371,8 +365,7 @@ ecologist research-worker
 #:meta econometrician '{"gloss": "an economist who uses statistical and mathematical methods", "wn30": "10043491-n"}'
 econometrician economist professional
 economist social-scientist
-#:meta editor '{"gloss": "a person responsible for the editorial aspects of publication; the person who determines the final content of a text (especially of a newspaper or magazine)", "wn30": "10044879-n"}'
-editor worker
+editor '*'
 #:meta educator '{"gloss": "someone who educates young people", "wn30": "10045713-n"}'
 educator worker
 #:meta electrical-engineer '{"gloss": "a person trained in practical applications of the theory of electricity", "wn30": "10049017-n"}'
@@ -427,6 +420,8 @@ file-clerk clerk
 film-director artist worker
 #:meta financial-analyst '{"gloss": "an analyst who studies the financial performance of corporations", "wn30": "09790865-n"}'
 financial-analyst expert professional
+#:meta first-mate '{"gloss": "the officer below the master on a commercial ship", "wn30": "10300041-n"}'
+first-mate worker
 #:meta fitter '{"gloss": "someone who fits a garment to a particular person", "wn30": "10093908-n"}'
 fitter worker
 #:meta flight-engineer '{"gloss": "the flight crewman responsible for mechanical operation while in flight", "wn30": "10096375-n"}'
@@ -472,8 +467,6 @@ geologist scientist worker
 geophysicist geologist research-worker
 #:meta gilder '{"gloss": "someone whose occupation is to apply an overlay of gold or gilt", "wn30": "10129585-n"}'
 gilder craftsman
-#:meta girl '{"gloss": "a young woman", "wn30": "10129825-n"}'
-girl woman
 #:meta glass-cutter.person '{"gloss": "someone who cuts or grinds designs on glass", "wn30": "10132305-n"}'
 glass-cutter.person engraver glassworker
 #:meta glassblower '{"gloss": "someone skilled in blowing bottles from molten glass", "wn30": "10132035-n"}'
@@ -671,8 +664,6 @@ market-analyst expert
 #:meta mason '{"gloss": "a craftsman who works with stone or brick", "wn30": "10297531-n"}'
 mason craftsman
 mass 'linear-dimension(mass)'
-#:meta mate '{"gloss": "the officer below the master on a commercial ship", "wn30": "10300041-n"}'
-mate worker
 #:meta mechanical-engineer '{"gloss": "a person trained to design and construct machines", "wn30": "10304650-n"}'
 mechanical-engineer engineer professional
 #:meta mediator '{"gloss": "a negotiator who acts as a link between parties", "wn30": "09624559-n"}'
@@ -740,8 +731,7 @@ observer expert human worker
 #:meta oceanographer '{"gloss": "a scientist who studies physical and biological aspects of the seas", "wn30": "10370122-n"}'
 oceanographer scientist worker
 official '*'
-#:meta operator '{"gloss": "an agent that operates some apparatus or machine", "wn30": "10378412-n"}'
-operator worker
+operator '*'
 #:meta optician '{"gloss": "a worker who makes glasses for remedying defects of vision", "wn30": "10380000-n"}'
 optician skilled-worker
 #:meta optometrist '{"gloss": "a person skilled in testing for defects of vision in order to prescribe corrective glasses", "wn30": "10380305-n"}'
@@ -857,7 +847,7 @@ property-man worker
 #:meta prosecutor '{"gloss": "a government official who conducts criminal prosecutions on behalf of the state", "wn30": "10484858-n"}'
 prosecutor lawyer skilled-worker
 #:meta psychotherapist '{"gloss": "a therapist who deals with mental and emotional disorders", "wn30": "10489944-n"}'
-psychotherapist expert therapist worker
+psychotherapist therapist worker
 #:meta purchasing-agent '{"gloss": "an agent who purchases goods or services for another", "wn30": "10493922-n"}'
 purchasing-agent worker
 #:meta quarryman '{"gloss": "a man who works in a quarry", "wn30": "10498551-n"}'
@@ -925,8 +915,6 @@ secretary-general manager
 secretary-of-state chief worker
 #:meta seismologist '{"gloss": "a geophysicist who studies earthquakes and the mechanical characteristics of the Earth", "wn30": "10576513-n"}'
 seismologist geophysicist
-#:meta senator '{"gloss": "a member of a senate", "wn30": "10578471-n"}'
-senator worker
 servant '*'
 #:meta sexton '{"gloss": "an officer of the church who is in charge of sacred objects", "wn30": "10585217-n"}'
 sexton worker
@@ -957,8 +945,7 @@ skilled-worker worker
 skinner worker
 #:meta skipper '{"gloss": "an officer who is licensed to command a merchant ship", "wn30": "10298912-n"}'
 skipper worker
-#:meta smith '{"gloss": "someone who works metal (especially by hammering it when it is hot and malleable)", "wn30": "10614629-n"}'
-smith craftsman
+smith '*'
 #:meta smuggler '{"gloss": "someone who imports or exports without paying duties", "wn30": "10615334-n"}'
 smuggler criminal
 #:meta social-scientist '{"gloss": "someone expert in the study of human society and its personal relationships", "wn30": "10619642-n"}'
@@ -1165,7 +1152,6 @@ window-cleaner laborer
 window-dresser worker
 #:meta wine-taster '{"gloss": "a taster who evaluates the quality of wines", "wn30": "10783438-n"}'
 wine-taster person
-woman '*'
 #:meta woodcarver '{"gloss": "makes decorative wooden panels", "wn30": "10789963-n"}'
 woodcarver craftsman
 #:meta woodcutter '{"gloss": "cuts down trees and chops wood as a job", "wn30": "10790077-n"}'

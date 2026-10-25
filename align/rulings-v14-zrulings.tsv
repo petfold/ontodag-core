@@ -1,0 +1,87 @@
+# Peter's rulings of 2026-10-23 on the open questions (docs/REVIEW_V14.md, "Vector witnesses"): merges of
+# synonyms, the policy/postage/statement splits, the trap names, the misfits, commodity under goods.
+# Written from the built state after rulings-v14-zpromote.tsv; applied by tools/step7.py, last.
+pack	sub	action	old	new	note
+occupations	girl	drop	-	-	not an occupation; core's girl is the female child
+core	girl	add	-	person	the female child (WordNet 10084295), female-child renamed
+core	female-child	drop	-	-	renamed girl
+geography	landfall	move	seashore	coast	seashore is merged into coast
+geography	littoral	move	seashore	coast	seashore is merged into coast
+geography	seaside	move	seashore	coast	seashore is merged into coast
+geography	tideland	move	seashore	coast	seashore is merged into coast
+geography	seashore	drop	-	-	merged into coast: seashore is a synonym of coast
+core	seashore	drop	-	-	merged into coast: seashore is a synonym of coast
+core	hog	drop	-	-	merged into pig: the same WordNet sense, domestic swine
+core	pit	drop	-	-	merged into cavity: the same WordNet sense, a sizeable hole
+core	business-deal	drop	-	-	merged into deal: the same WordNet sense
+core	cruelty	move	maltreatment	abuse	maltreatment is merged into abuse
+core	torture	move	maltreatment	abuse	maltreatment is merged into abuse
+core	maltreatment	drop	-	-	merged into abuse: the same WordNet sense
+core	authorities	drop	-	-	merged into government: the same WordNet sense, the governing authority
+core	destiny	drop	-	-	destiny is a preordained outcome, not luck; luck stays (Peter)
+geography	terrestrial-globe	drop	-	-	merged into globe: the same WordNet sense
+physics	corpuscular-theory	move	about(visible-light)	about(light)	visible-light is merged into light
+physics	optics	move	about(visible-light)	about(light)	visible-light is merged into light
+physics	scintillation	move	visible-light	light	visible-light is merged into light
+physics	wave-theory	move	about(visible-light)	about(light)	visible-light is merged into light
+physics	visible-light	drop	-	-	merged into light: the same WordNet sense
+economics	retained-earnings	move	net-income	profit	net-income is merged into profit
+economics	windfall-profit	move	net-income	profit	net-income is merged into profit
+economics	net-income	drop	-	-	merged into profit: the same WordNet sense
+core	commodity	parent+	-	goods	a kind of good: standardised and interchangeable, like wheat or oil (Peter)
+core	appliance	move	commodity	goods	goods, not a standardised commodity
+core	beer	move	commodity	goods	goods, not a standardised commodity
+core	clothing	move	commodity	goods	goods, not a standardised commodity
+core	grocery	move	commodity	goods	goods, not a standardised commodity
+core	import	move	commodity	goods	goods, not a standardised commodity
+core	linen	move	commodity	goods	goods, not a standardised commodity
+core	merchandise	move	commodity	goods	goods, not a standardised commodity
+core	sporting-goods	move	commodity	goods	goods, not a standardised commodity
+core	vehicle-body	move	commodity	goods	goods, not a standardised commodity
+core	insurance-policy	add	-	insurance	the written contract of insurance (Peter: a contract)
+economics	floater-policy	move	policy	insurance-policy	policy's contract sense moves to insurance-policy
+core	policy	move	contract	plan	a plan of action adopted by a group, like a rule (Peter)
+core	postage	move	symbol	fee	the charge for mailing something; the stamp is postage-stamp
+core	statement	move	document	message	a message stated or declared (Peter: more general)
+core	account-statement	parent+	-	document	an account statement is a document
+core	invoice	parent+	-	document	an invoice is a document
+core	buffer	move	power-tool	device	the everyday buffer: a cushion that reduces shock
+core	plaster-cast	add	-	bandage	cast's plaster sense under its own name
+core	cast	move	bandage	group	the actors in a play, the everyday cast
+core	cast-of-characters	drop	-	-	renamed cast
+core	cudgel	add	-	stick	club's stick sense under its own name
+core	baseball-bat	move	club	cudgel	club's stick sense moves to cudgel
+core	club	move	stick	association	a formal association, the everyday club
+core	social-club	drop	-	-	renamed club
+core	craftiness	add	-	intelligence	craft's cunning sense under its own name
+core	craft	move	intelligence	occupation	the skilled practice of a practical occupation
+core	carpentry	move	skilled-trade	craft	skilled-trade is renamed craft
+core	dressmaking	move	skilled-trade	craft	skilled-trade is renamed craft
+core	electrical-work	move	skilled-trade	craft	skilled-trade is renamed craft
+core	funeral-directing	move	skilled-trade	craft	skilled-trade is renamed craft
+core	house-painting	move	skilled-trade	craft	skilled-trade is renamed craft
+core	interior-design	move	skilled-trade	craft	skilled-trade is renamed craft
+core	masonry-work	move	skilled-trade	craft	skilled-trade is renamed craft
+core	plumbing-work	move	skilled-trade	craft	skilled-trade is renamed craft
+core	roofing-work	move	skilled-trade	craft	skilled-trade is renamed craft
+core	tailoring	move	skilled-trade	craft	skilled-trade is renamed craft
+core	upholstery	move	skilled-trade	craft	skilled-trade is renamed craft
+core	skilled-trade	drop	-	-	renamed craft
+core	woodworking-plane	add	-	cutter hand-tool	the carpenter's plane under its own name
+core	plane	drop	-	-	renamed woodworking-plane; the everyday plane is core's airplane
+core	animal-scale	add	-	natural-object	the scale of a fish or reptile under its own name
+core	scale	move	natural-object	standard	an ordered reference standard, WordNet's first sense
+core	scale-of-measurement	drop	-	-	renamed scale
+core	track	move	route	artifact	the everyday track: rails for wheels (the disk track is computing's)
+core	counting	add	-	activity	the act of counting (WordNet 00634586), for census and poll
+core	census	move	work	counting	a periodic count of the population
+core	poll	move	work	counting	the counting of votes
+core	charge	move	act	demand	a request for payment of a debt
+core	contraction	move	event	process	a shortening of a muscle: a bodily process
+core	custody	move	activity	detention	being held by the police
+core	freckle	move	physical-object	body-part	a spot on the skin
+core	mark	move	cognition	information	a grade: a number or letter indicating quality
+core	smile	move	information	gesture	a facial expression
+core	tempo	move	relation	ratio	the rate of a repeating event
+core	wake	move	activity	ceremony	a vigil held over the dead
+core	recession	cut	event	-	a state of the economy, not an event

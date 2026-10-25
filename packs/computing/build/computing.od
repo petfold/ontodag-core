@@ -1,5 +1,5 @@
 # ontodag store v1
-#:canonical 6.0 98f1ece90177414aa389a57fd424158cec07356146d1110d234af64d280993f6 2
+#:canonical 6.0 23b45bdaa275943f2aeb83923f2fa52cfabd8035bea808b68cf15cb8da1a92f4 2
 5g technical-standard
 7z archive-file-format
 a-star-search graph-algorithm
@@ -50,7 +50,8 @@ amqp messaging-protocol
 analog-computer computer
 analog-signal signal
 analog-to-digital-converter electronic-circuit
-android unix-like
+#:meta android-os '{"gloss": "the Android operating system for mobile devices"}'
+android-os unix-like
 #:meta anonymous-ftp '{"gloss": "a common way to make software available; users are allowed to log in as `guest'"'"' without a password and copy whatever has been made available", "wn30": "06665612-n"}'
 anonymous-ftp practice
 anonymous-function subroutine
@@ -619,7 +620,6 @@ failover data-processing-technique
 faq list
 fault-tolerance software-quality-attribute
 fedora-linux linux-distribution
-feed web-feed
 fiber-optic-communication telecommunication
 field-programmable-gate-array chip
 file '*'
@@ -1226,7 +1226,6 @@ portable-executable file-format
 #:meta portal-site '{"gloss": "a site that the owner positions as an entrance to other sites on the internet", "wn30": "06359657-n"}'
 portal-site web-site
 posix technical-standard
-post message
 post-office-protocol email-protocol
 postcondition proposition
 postgresql relational-database-management-system
@@ -1623,7 +1622,7 @@ temporary-file computer-file
 #:meta terminal-emulation '{"gloss": "(computer science) having a computer act exactly like a terminal", "wn30": "05666176-n"}'
 terminal-emulation hardware-emulation
 terminal-emulator application
-test activity
+test '*'
 test-automation software-testing
 test-driven-development software-development-practice
 tex typesetting-system

@@ -1051,6 +1051,137 @@ out. These are witnesses that order the reading, never verdicts.
 **Next.**
 1. Merge the 25 duplicate pairs (Peter's call on which name stays).
 2. Read core from the top of `trap` and `misfit`.
-3. Weigh the 44 everyday pack words for core.
+3. Weigh the 44 everyday pack words for core. Peter moved nine on
+   2026-10-23 (`align/rulings-v14-zpromote.tsv`) and sent priest back to
+   occupations the same day. The eight in core:
+   - market ⊑ system
+   - insurance ⊑ contract
+   - goods ⊑ possession
+   - salary ⊑ income wage
+   - shore ⊑ landform
+   - coast ⊑ shore land
+   - editor ⊑ worker
+   - dna ⊑ compound
+
+   Their kinds followed them; core's seashore now sits under shore. Where a
+   pack had a parent of its own, it keeps it as a refinement: geography's
+   geological-formation and geographical-feature, and biology's
+   nucleic-acid. Two overlaps are for Peter: WordNet's coast is core's
+   seashore, and core's commodity ("articles of commerce") is close to
+   goods. step7 learned that once a later `promote` has given a pack's name
+   to core, earlier rows on the pack's leftover stub are done. Core now has
+   4,758 names.
 4. For "everyday", consider a subtitle corpus (SUBTLEX-US) against the news
    bias.
+
+## Peter's rulings of 2026-10-23
+
+Applied through `align/rulings-v14-zpromote.tsv` and
+`align/rulings-v14-zrulings.tsv`, the last two rulings files. Their glosses
+are in `align/glosses-v14.tsv`, above the generated section.
+
+- **Everyday pack words into core.** 37 in all: the first eight, then 29
+  of the remaining 35, all under core parents.
+  - Economics: fine, buying, spending, revenue, trading,
+    corporation, bond, retail, bonus, savings, enterprise, banking,
+    compensation, equity and postage-stamp.
+  - Computing: post and test.
+  - Geography: africa, asia, ford, plain and cape.
+  - Occupations: smith, senator, commissioner, dean, ambassador and
+    operator.
+  - Mathematics: mean.
+
+  `girl` is core's female child: female-child took the name, and
+  occupations' "young woman" was dropped. Six were held back for Peter,
+  because the pack holds a domain sense the plain name would misread:
+  - feed (a web feed);
+  - mate (a ship's officer);
+  - https;
+  - android (the operating system);
+  - translation (the geometric one);
+  - penalty (a contract payment).
+- **Synonyms merged.** seashore into coast, hog into pig, pit into cavity,
+  business-deal into deal, maltreatment into abuse, authorities into
+  government, terrestrial-globe into globe, visible-light into light, and
+  net-income into profit. destiny is dropped and luck stays: destiny is a
+  preordained outcome.
+- **commodity is a kind of goods.** It is now a standardised,
+  interchangeable good (wheat, oil); the finished goods it held moved up to
+  goods (appliance, clothing, merchandise…).
+- **Splits.**
+  - policy is a plan of action; the contract is insurance-policy, under
+    insurance.
+  - postage is the charge; postage-stamp is the stamp.
+  - statement is the general message; account-statement and invoice are
+    statements and documents.
+- **Trap names.**
+  - The everyday sense took the plain name: cast (the actors; the plaster
+    cast is plaster-cast), club (the association; the stick is cudgel) and
+    craft (the skilled trade; the cunning is craftiness).
+  - plane's tool is woodworking-plane; the everyday plane is airplane.
+  - scale is the scale of measurement; a fish's is animal-scale.
+  - buffer is the cushioning device, and track the railway track.
+  - case, column, seal and top keep their everyday senses.
+- **Misfits fixed.**
+  - census and poll ⊑ counting, a new node;
+  - charge ⊑ demand; contraction ⊑ process; custody ⊑ detention;
+  - freckle ⊑ body-part; mark ⊑ information; smile ⊑ gesture;
+  - tempo ⊑ ratio; wake ⊑ ceremony;
+  - recession is a condition only.
+
+**step7 learned four things:**
+- A later `promote` makes earlier rows on the pack's leftover stub done.
+- A `drop` of a pack's copy that is now only a borrowed stub is done.
+- A move whose old edge was left out, because that later row moves it, is
+  made from wherever the node now is.
+- A pack edge that core implies through another parent of the same node is
+  reduced, so the same knowledge gives the same bytes however the rulings
+  reached it. That reduced 12 edges.
+
+`step7 --check` is clean, and a replay from the v13 files reproduces every
+file byte for byte. Core has 4,782 names.
+
+## Peter's rulings of 2026-10-25
+
+Applied through `align/rulings-v14-zz-1025.tsv`; glosses are in
+`align/glosses-v14.tsv`.
+
+- **tempo** is a rate, not a ratio: a new core `rate` ("a magnitude or
+  frequency relative to a time unit", under amount) holds it.
+- **freckle** is a pigmentation of the skin, not a body part: a new core
+  `pigmentation`, under color, holds it.
+- **The everyday senses take the six plain names in core:**
+  - feed is food for livestock;
+  - mate is a friend or companion;
+  - android is a humanoid automaton;
+  - translation is a text in another language;
+  - penalty is a punishment.
+
+  The packs keep their senses under qualified names: computing's feed
+  merged into its web-feed, and the others are first-mate, android-os,
+  translation-movement and contract-penalty. https has no everyday sense
+  and stays in computing.
+- **price** is the amount of money asked. Economics' purchase-price merged
+  into it, with its kinds (list-price, asking-price…).
+- **building-material** is a material, not an object, so cement, concrete
+  and lumber are no longer artifacts. roofing-tile, an object, left it.
+- **Eight more synonym merges**, keeping the first: album/record-album,
+  appointment/engagement, campaign/cause, dressing/salad-dressing,
+  west/due-west, pill/lozenge, root/plant-root, reserve/stockpile.
+  physical-law stays under law-of-nature, as the laws of physics (there are
+  laws of chemistry too).
+- **ai: a task or a technique is not a field of study.**
+  - The learning paradigms moved under a new `learning-paradigm` (under
+    method): supervised, unsupervised, semi-supervised, transfer, few- and
+    zero-shot, federated, meta-, reinforcement learning and others.
+  - The tasks moved under a new `ai-task` (under activity): speech
+    recognition, machine translation, question answering, planning, theorem
+    proving, the robot tasks, pattern recognition.
+  - The techniques moved under method: case-based reasoning, genetic
+    programming, neuroevolution, linear programming, the control methods,
+    constraint programming.
+  - The fields stay: AI, machine learning, robotics and its subfields,
+    computer vision, NLP, control theory, AI safety and ethics.
+
+`step7 --check` is clean, and a replay from the v13 files reproduces every
+file byte for byte. Core has 4,781 names.

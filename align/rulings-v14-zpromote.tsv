@@ -1,0 +1,42 @@
+# Everyday words that lived only in packs, moved into core (Peter, 2026-10-23): nine first (priest went back to occupations), then 29 more.
+# (docs/REVIEW_V14.md, "Vector witnesses": one-word pack names at Zipf 4.3 or above). Applied by tools/step7.py, last.
+# promote: the pack's name moves into core under `new`; a parent of the pack's own stays there as a refinement.
+pack	sub	action	old	new	note
+economics	market	promote	-	system	a system of exchange (Wikidata Q37654); its kinds follow. Its pack parent economy is dropped: a market is part of an economy, not one
+economics	insurance	promote	-	contract	the contract of indemnity; its eleven kinds follow
+economics	goods	promote	-	possession	articles owned and traded; core's commodity ("articles of commerce") overlaps it, for Peter
+economics	salary	promote	-	income wage	fixed regular pay: income to the employee, a wage paid by the employer
+geography	shore	promote	-	landform physical-object	the land along the edge of a body of water; geography keeps geological-formation as a refinement
+geography	coast	promote	-	shore land natural-object	the shore of a sea; geography keeps geographical-feature as a refinement. WordNet's coast is core's seashore, for Peter
+occupations	editor	promote	-	worker	the person who determines a publication's content; the kinds of editor follow
+biology	dna	promote	-	compound	deoxyribonucleic acid; biology keeps nucleic-acid as a refinement
+core	seashore	move	landform	shore	the shore of a sea or ocean (WordNet's hypernym), now that shore is core's
+mathematics	mean	promote	-	average	the average (arithmetic, geometric and harmonic means follow)
+computing	post	promote	-	message	a message posted to a forum or feed
+economics	fine	promote	-	expenditure	money paid as a penalty; economics keeps penalty as a refinement
+computing	test	promote	-	activity	trying something to find out about it; penetration-test follows
+geography	africa	promote	-	continent	beside europe, which core already holds
+geography	asia	promote	-	continent	beside europe, which core already holds
+occupations	smith	promote	-	craftsman	a metalworker; gunsmith, locksmith and tinsmith follow
+economics	buying	promote	-	exchange purchase	the act of buying
+economics	spending	promote	-	payment	the act of spending money
+economics	revenue	promote	-	income	the income of a business or government
+economics	trading	promote	-	commerce	buying and selling; the kinds of trading follow
+economics	corporation	promote	-	company	a company recognized by law as a single body
+economics	bond	promote	-	contract	a certificate of debt; economics keeps security-finance as a refinement
+occupations	senator	promote	-	politician	a member of a senate
+economics	retail	promote	-	selling commerce	selling to consumers; economics keeps commercial-trade and merchandising as refinements
+geography	ford	promote	-	body-of-water	a shallow place in a stream that can be crossed
+economics	bonus	promote	-	expenditure	an extra payment; economics keeps payment-amount as a refinement
+economics	savings	promote	-	fund	money put by as a reserve
+geography	plain	promote	-	land landform	extensive level open land; its kinds follow
+occupations	commissioner	promote	-	official	a government administrator
+occupations	dean	promote	-	administrator	the administrator of a division of a university
+economics	enterprise	promote	-	business	a business; sole-proprietorship follows
+economics	banking	promote	-	commercial-enterprise	the business of banks; economics keeps financial-services as a refinement
+occupations	ambassador	promote	-	diplomat worker	a diplomat of the highest rank
+economics	compensation	promote	-	expenditure	payment or reparation; economics keeps recompense-payment as a refinement
+occupations	operator	promote	-	worker	someone who operates a machine; chauffeur, taxidriver and the others follow
+economics	equity	promote	-	possession	the ownership interest of shareholders; economics keeps financial-interest as a refinement
+geography	cape	promote	-	land landform	a strip of land projecting into a body of water
+economics	postage-stamp	promote	-	artifact	the stamp (Peter: "postage-stamp ok"); core's postage becomes the charge

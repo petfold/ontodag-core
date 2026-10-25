@@ -1,5 +1,5 @@
 # ontodag store v1
-#:canonical 6.0 36130f74d67e4b78f7d7dd7e1ae0eb37272301181837a0035c7426b980b7cbc3 2
+#:canonical 6.0 7ce7ad5bdf74a02f9fb6e76b35231e250109ca4fd4a381fbbc8cfeb366409730 2
 about enclosing-dimension
 abyssal-plain ocean-floor plain
 #:meta abyssal-zone '{"gloss": "the deep sea (2000 meters or more) where there is no light", "wn30": "09186592-n"}'
@@ -20,7 +20,6 @@ aerial-photography photography
 #:meta aerology '{"gloss": "meteorology of the total extent of the atmosphere; especially the upper layers", "wn30": "06119226-n"}'
 aerology meteorology
 aeronautical-chart chart
-africa continent
 afro-eurasia landmass
 #:meta afterglow '{"gloss": "a glow sometimes seen in the sky after sunset", "wn30": "11517898-n"}'
 afterglow natural-event
@@ -90,7 +89,6 @@ arroyo gully
 artificial-horizon instrument
 #:meta ascent '{"gloss": "an upward slope or grade (as in a road)", "wn30": "09206985-n"}'
 ascent slope
-asia continent
 asthenosphere layer
 astrolabe instrument
 atlantic-ocean ocean
@@ -183,7 +181,7 @@ buoy device
 #:meta butte '{"gloss": "a hill that rises abruptly from the surrounding region; has a flat top and sloping sides", "wn30": "09230202-n"}'
 butte hill
 #:meta caldera '{"gloss": "a large crater caused by the violent explosion of a volcano that collapses into a depression", "wn30": "09231117-n"}'
-caldera landform natural-depression volcanic-crater
+caldera natural-depression volcanic-crater
 calendar '*'
 calendar-dimension dimension
 #:meta caliche '{"gloss": "crust or layer of hard subsoil encrusted with calcium-carbonate occurring in arid or semiarid regions", "wn30": "14845578-n"}'
@@ -195,8 +193,7 @@ cambrian geological-period
 canyon ravine
 #:meta canyonside '{"gloss": "the steeply sloping side of a canyon", "wn30": "09233603-n"}'
 canyonside slope
-#:meta cape '{"gloss": "a strip of land projecting into a body of water", "wn30": "09233715-n"}'
-cape land landform
+cape '*'
 carboniferous geological-period
 cardinal-compass-point compass-point
 #:meta caribbean-island '{"gloss": "an island in the Caribbean Sea", "wn30": "08746942-n"}'
@@ -268,7 +265,7 @@ cloud-ceiling altitude
 cloudiness weather
 #:meta coal-seam '{"gloss": "a seam of coal", "wn30": "08659242-n"}'
 coal-seam mineral-seam
-coast geographical-feature land shore
+coast geographical-feature
 coastal-piloting navigation
 #:meta coastal-plain '{"gloss": "a plain adjacent to a coast", "wn30": "09248294-n"}'
 coastal-plain plain
@@ -472,7 +469,7 @@ equirectangular-projection cylindrical-projection equidistant-projection
 #:meta erosive-wash '{"gloss": "the dry bed of an intermittent stream (as at the bottom of a canyon)", "wn30": "09474895-n"}'
 erosive-wash streambed
 #:meta escarpment '{"gloss": "a long steep slope or cliff at the edge of a plateau or ridge; usually formed by erosion", "wn30": "09274152-n"}'
-escarpment landform slope
+escarpment slope
 #:meta esker '{"gloss": "(geology) a long winding ridge of post glacial gravel and other sediment; deposited by meltwater from glaciers or ice sheets", "wn30": "09274305-n"}'
 esker natural-ridge
 #:meta estuary '{"gloss": "the wide part of a river where it nears the sea; fresh and salt water mix", "wn30": "09274500-n"}'
@@ -517,8 +514,6 @@ fohn wind
 folium geological-formation
 #:meta foothill '{"gloss": "a relatively low hill on the lower slope of a mountain", "wn30": "09283405-n"}'
 foothill hill
-#:meta ford '{"gloss": "a shallow area in a stream that can be forded", "wn30": "09283623-n"}'
-ford body-of-water
 #:meta foreshock '{"gloss": "a tremor preceding an earthquake", "wn30": "07429782-n"}'
 foreshock tremor
 #:meta foreshore '{"gloss": "the part of the seashore between the highwater mark and the low-water mark", "wn30": "09283866-n"}'
@@ -564,7 +559,7 @@ geodetic-network collection system
 geographic-coordinate amount
 geographic-coordinate-system coordinate-system
 geographic-data 'about(place)' information
-geographic-data-format file-format information
+geographic-data-format file-format
 geographic-information-system software
 geographic-line place
 #:meta geographic-point '{"gloss": "a point on the surface of the Earth", "wn30": "08578706-n"}'
@@ -840,7 +835,7 @@ land-accretion increase
 #:meta land-neck '{"gloss": "a narrow elongated projecting strip of land", "wn30": "09367733-n"}'
 land-neck land
 #:meta landfall '{"gloss": "the seacoast first sighted on a voyage (or flight over water)", "wn30": "09335693-n"}'
-landfall seashore
+landfall coast
 landform '*'
 #:meta landmass '{"gloss": "a large continuous extent of land", "wn30": "09335916-n"}'
 landmass land
@@ -884,7 +879,7 @@ linear-dimension dimension
 #:meta lithosphere '{"gloss": "the solid part of the earth consisting of the crust and outer mantle", "wn30": "09339810-n"}'
 lithosphere layer
 #:meta littoral '{"gloss": "the region of the shore of a lake or sea or ocean", "wn30": "08596076-n"}'
-littoral seashore
+littoral coast
 #:meta llano '{"gloss": "an extensive grassy and nearly treeless plain (especially in Latin America)", "wn30": "09341319-n"}'
 llano plain
 #:meta loam '{"gloss": "a rich soil consisting of a mixture of sand and clay and decaying organic materials", "wn30": "14942223-n"}'
@@ -975,7 +970,6 @@ mineralogy 'about(mineral)' geology
 mining-geology economic-geology
 #:meta mistral '{"gloss": "a strong north wind that blows in France during the winter", "wn30": "11482873-n"}'
 mistral north-wind
-model '*'
 #:meta moderate-breeze '{"gloss": "wind moving 13-18 knots; 4 on the Beaufort scale", "wn30": "11432758-n"}'
 moderate-breeze breeze
 #:meta moderate-gale '{"gloss": "wind moving 32-38 knots; 7 on the Beaufort scale", "wn30": "11462013-n"}'
@@ -1084,7 +1078,7 @@ oceania geographical-area
 #:meta oceanic-ridge '{"gloss": "a long narrow natural elevation on the floor of the ocean", "wn30": "09409898-n"}'
 oceanic-ridge geological-formation landform
 #:meta oceanic-trench '{"gloss": "a long steep-sided depression in the ocean floor", "wn30": "09461315-n"}'
-oceanic-trench landform natural-depression
+oceanic-trench natural-depression
 #:meta oceanography '{"gloss": "the branch of science dealing with physical and biological aspects of the oceans", "wn30": "06119904-n"}'
 oceanography 'about(ocean)' earth-science
 #:meta offing '{"gloss": "the part of the sea that can be seen from the shore and is beyond the anchoring area", "wn30": "09377125-n"}'
@@ -1174,8 +1168,7 @@ place '*'
 place-name name
 #:meta placer '{"gloss": "an alluvial deposit that contains particles of some valuable mineral", "wn30": "09393403-n"}'
 placer alluvial-sediment
-#:meta plain '{"gloss": "extensive tract of level open land", "wn30": "09393605-n"}'
-plain land landform
+plain '*'
 #:meta planation '{"gloss": "the process of erosion whereby a level surface is produced", "wn30": "13538182-n"}'
 planation geological-erosion
 plant '*'
@@ -1352,9 +1345,8 @@ sea-sound inlet
 seamount mountain
 #:meta seaquake '{"gloss": "an earthquake at the sea bed", "wn30": "07429870-n"}'
 seaquake earthquake
-seashore shore
 #:meta seaside '{"gloss": "the shore of a sea or ocean regarded as a resort", "wn30": "09428628-n"}'
-seaside seashore
+seaside coast
 season '*'
 sediment '*'
 #:meta sediment-saltation '{"gloss": "(geology) the leaping movement of sand or soil particles as they are transported in a fluid medium over an uneven surface", "wn30": "13552644-n"}'
@@ -1382,7 +1374,6 @@ shapefile geographic-data-format
 shared-with reversed-dimension
 #:meta shoal '{"gloss": "a sandbank in a stretch of water that is visible at low tide", "wn30": "09433312-n"}'
 shoal landform sandbank
-#:meta shore '{"gloss": "the land along the edge of a body of water", "wn30": "09433442-n"}'
 shore geological-formation
 #:meta shore-boulder '{"gloss": "a boulder found on a shore remote from its place of origin", "wn30": "09433721-n"}'
 shore-boulder boulder
@@ -1456,7 +1447,7 @@ southwest-by-south compass-point
 southwest-by-west compass-point
 #:meta southwester '{"gloss": "a strong wind from the southwest", "wn30": "11448593-n"}'
 southwester wind
-spatial-database 'about(place)' database information
+spatial-database 'about(place)' database
 spatial-reference-system coordinate-system
 speed 'linear-dimension(speed)'
 #:meta speleology '{"gloss": "the scientific study of caves", "wn30": "06121554-n"}'
@@ -1523,7 +1514,7 @@ tailwind wind
 #:meta talus '{"gloss": "a sloping mass of loose rocks at the base of a cliff", "wn30": "09454153-n"}'
 talus geological-formation
 #:meta tar-pit '{"gloss": "a natural accumulation of bitumens at the surface of the earth; often acts as a trap for animals whose bones are thus preserved", "wn30": "09454744-n"}'
-tar-pit cavity landform
+tar-pit cavity
 #:meta tarn '{"gloss": "a mountain lake (especially one formed by glaciers)", "wn30": "09454642-n"}'
 tarn lake
 tectonic-plate geographical-feature geological-formation
@@ -1538,8 +1529,6 @@ temperature-inversion natural-event
 #:meta terrace '{"gloss": "a level shelf of land interrupting a declivity (with steep slopes above and below)", "wn30": "09456207-n"}'
 terrace landform
 terrain geographical-feature
-#:meta terrestrial-globe '{"gloss": "a sphere on which a map (especially of the earth) is represented", "wn30": "03440512-n"}'
-terrestrial-globe model
 #:meta territorial-waters '{"gloss": "the waters surrounding a nation and its territories over which that nation exercises sovereign jurisdiction", "wn30": "09456614-n"}'
 territorial-waters body-of-water
 territory geographical-area
@@ -1571,7 +1560,7 @@ tide '*'
 tide-gauge instrument
 tide-table 'about(tide)' document
 #:meta tideland '{"gloss": "land near the sea that is overflowed by the tide", "wn30": "09458269-n"}'
-tideland seashore
+tideland coast
 #:meta tidewater '{"gloss": "low-lying coastal land drained by tidal streams", "wn30": "09458372-n"}'
 tidewater coastal-plain
 #:meta tideway '{"gloss": "a channel in which a tidal current runs", "wn30": "09458494-n"}'
