@@ -8,6 +8,8 @@ things from that belong to a SIBLING pack (written as parentless entries so
 the pack adopts alone, at top level until the sibling arrives — UPPER.md
 §8.1); core's and the prelude's names are parents, and entries only where the
 pack refines them with a parent of its own; `pack NAME` applies core first.
+A name borrowed from a pack ontodag does not ship (occupations) is carried by
+the borrower, with its owner's parents, until that pack ships.
 """
 import shlex
 import re
@@ -17,8 +19,9 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent.parent
 commit = sys.argv[1]
 ontodag = Path(sys.argv[2]) if len(sys.argv) > 2 else HERE.parent / "ontodag"
-PACKS = sys.argv[3:] or ["physics", "mathematics", "chemistry", "biology", "medicine", "ai",
-                         "economics", "computing", "geography", "space"]
+SHIPPED = ["physics", "mathematics", "chemistry", "biology", "medicine", "ai",
+           "economics", "computing", "geography", "space"]
+PACKS = sys.argv[3:] or SHIPPED
 sys.path.insert(0, str(ontodag / "src"))
 from ontodag.core_ontology import CORE            # noqa: E402
 from ontodag.prelude import DECLARATIONS          # noqa: E402
@@ -56,7 +59,12 @@ def read_od(path):
     return par
 
 
-ALL = {n: read_od(HERE / "packs" / n / "build" / f"{n}.od") for n in PACKS}
+ALL = {n: read_od(HERE / "packs" / n / "build" / f"{n}.od") for n in SHIPPED}
+# Packs built here that ontodag does not ship (occupations): a name a shipped
+# pack borrows from one has no sibling to file it, so the borrower carries
+# the owner's claim until that pack ships (economics's butcher).
+UNSHIPPED = {d.name: read_od(d / "build" / f"{d.name}.od") for d in sorted((HERE / "packs").iterdir())
+             if d.name not in SHIPPED and (d / "build" / f"{d.name}.od").exists()}
 
 
 def uses(name, borrowed):
@@ -78,6 +86,12 @@ for name in PACKS:
     mentioned = {x[x.index("(") + 1:-1] if "(" in x else x      # about(x), in(x): the argument
                  for p in own.values() for x in p}
     borrowed = [n for n in borrowed if n in mentioned]      # a borrowed name nothing hangs from is noise
+    for n in list(borrowed):
+        owners = [q for q, u in UNSHIPPED.items() if u.get(n)]
+        if owners and not any(ALL[q].get(n) for q in SHIPPED if q != name):
+            own[n] = UNSHIPPED[owners[0]][n]
+            borrowed.remove(n)
+            print(f"{name:12} carries {n} ⊑ {' '.join(own[n])} (owned by {owners[0]}, not shipped)")
     target = ontodag / "src/ontodag/domain" / f"{name}.py"
     # VERSION is a hand-bumped fact about the pack's history, not derivable from the
     # .od: keep whatever the existing module says (1 for a new pack); bump it by hand
