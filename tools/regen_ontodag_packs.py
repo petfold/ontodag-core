@@ -36,7 +36,8 @@ def read_od(path):
     relation terms' nodes and the prelude's declarations, which are not the
     pack's claims. A name at top level is a borrowed stub, unless it carries
     its gloss here (step7 glosses a name on its owner only): then it is the
-    pack's own top-level name, written as ('*',)."""
+    pack's own top-level name, read as ('*',) and written parentless, as
+    core writes its branches (not in BORROWED, so ontodag knows it is owned)."""
     par, glossed = {}, set()
     for l in open(path):
         if l.startswith("#:meta "):
@@ -108,7 +109,7 @@ USES = {uses(name, borrowed)!r}
 # (name, parents) — sorted by name.
 PACK = (
 '''
-    body = "".join(f"    ({n!r}, {own[n]!r}),\n" for n in sorted(own))
+    body = "".join(f"    ({n!r}, {() if own[n] == ('*',) else own[n]!r}),\n" for n in sorted(own))
     body += "".join(f"    ({n!r}, ()),\n" for n in borrowed)
     target.write_text(doc + body + ")\n")
     print(f"{name:12} {len(own):5} categories, {len(borrowed)} borrowed: {' '.join(borrowed)}")
