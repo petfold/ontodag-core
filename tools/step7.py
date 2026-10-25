@@ -697,9 +697,14 @@ def main():
         gloss = glosses(renamed)
         core = graphs["core"][1]
         disowned_by = {(r[0], r[1]) for path in RULINGS for r in table(path) if r[2] == "disown"}
+        # a pack's own top-level name (added under `*`) is written like a
+        # stub; its gloss is what tells the owner from the borrowers
+        top_level = {(r[0], r[1]) for path in RULINGS for r in table(path)
+                     if r[2] == "add" and r[4] == "*"}
         for k, path in files.items():
             order, par = graphs[k]
-            meta = {n: gloss[n] for n in par if n in gloss and par[n] != ["*"]
+            meta = {n: gloss[n] for n in par if n in gloss
+                    and (par[n] != ["*"] or (k, n) in top_level)
                     and (k == "core" or (n not in core and (k, n) not in disowned_by))}
             if k == "core":                           # the prelude's names core has senses for
                 meta.update({n: gloss[n] for n in PRELUDE if n in gloss})

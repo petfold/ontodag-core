@@ -34,9 +34,13 @@ PRELUDE = {n: set(p) for n, p in pack_entries("prelude")}
 def read_od(path):
     """A pack's own lines: the .od is written canonical, so it also holds the
     relation terms' nodes and the prelude's declarations, which are not the
-    pack's claims."""
-    par = {}
+    pack's claims. A name at top level is a borrowed stub, unless it carries
+    its gloss here (step7 glosses a name on its owner only): then it is the
+    pack's own top-level name, written as ('*',)."""
+    par, glossed = {}, set()
     for l in open(path):
+        if l.startswith("#:meta "):
+            glossed.add(shlex.split(l)[1])
         if l.startswith("#") or not l.strip():
             continue
         f = shlex.split(l)
@@ -45,6 +49,8 @@ def read_od(path):
         parents = [x for x in f[1:] if x != "*" and x not in PRELUDE.get(f[0], ())]
         if f[0] in PRELUDE and not parents:
             continue
+        if not parents and f[1:] == ["*"] and f[0] in glossed and f[0] not in core_names:
+            parents = ["*"]
         par[f[0]] = tuple(sorted(parents))
     return par
 
