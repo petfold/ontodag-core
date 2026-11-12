@@ -1880,6 +1880,10 @@ Read whole, the glosses add the eagle's edge and no other.
 **What it leaves for Peter.**
 
 - **The textbook lines**: question 53, below.
+- **The mule: decided** (Peter, 2026-11-13: "mule under mammal"). Core
+  files `mule` under `livestock` alone, so nothing said of mammals reaches
+  it. It gains `mammal` in core v15 and keeps `livestock`: a `parent+` row
+  in `align/rulings-v15.tsv`, beside the poultry's.
 - **Poultry: decided.** Peter left it to Claude ("You decide the poultry,
   it looks harmless"). `goose`, `turkey` and `guinea-fowl` move from
   `poultry` to `bird` in core v15, as `duck` did in v14. Wild geese, wild
