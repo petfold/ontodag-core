@@ -1635,3 +1635,94 @@ information, mathematical objects to the mathematics pack's
 dropped `concept`. An about() pass then gave 288 fields of study and kinds of information, in core and every pack, their subject (`cardiology ⊑ about(heart)`; `align/rulings-v14-subjects.tsv`). Packs may now refine core: a refinement row adds a parent from the pack to a core name (`align/rulings-v14-tiers.tsv`, 79 rows, 183 candidates rejected), and merging drops core's then-implied edge. Fourteen general names that packs borrowed from one another were promoted into core (`align/rulings-v14-xhinges.tsv`), so most packs now depend on core alone. Duplicates were merged, each name has one owning pack (others keep refinements), and what packs still borrow from siblings is declared as `USES`, a soft dependency `odag pack` offers. The doubtful list carries Peter's answers. The record is
 `docs/REVIEW_V14.md`; the removed list `align/rulings-v14-removed.tsv` is
 replayed by `tools/step7.py` after consensus, as the v13 rulings are.
+
+## 17. Cross-connections (2026-11-12): why the vocabulary is nearly a tree
+
+Peter, on seeing ontodag's measurements: natural concepts do not form a
+tree, which is the point of OntoDAG, so a vocabulary that is close to one
+needs cross-connections. This section says how close it is, why, and what
+could change it. Nothing here is built; question 52 below is open.
+
+**How close.** `python3 tools/second_places.py --shape`, on core and the
+ten domain packs as ontodag 0.35.0 ships them:
+
+- 11,643 nodes; 1,279 have several parents (11.0%), and 958 of those are
+  leaves. For 976 every parent is a plain category; 303 have a term among
+  their parents.
+- 308 edges go to a term: 291 to an `about(...)`, 17 to an `in(...)`.
+- `whale ⊑ mammal`, `bat ⊑ mammal`, `salmon ⊑ fish`, `tomato ⊑ vegetable`,
+  `knife ⊑ cutter`, `gold ⊑ metal`, `bicycle ⊑ land-vehicle`,
+  `nurse ⊑ professional`, `bread ⊑ foodstuff`: one parent each. `milk`
+  has two (`dairy-product`, `drink`).
+- Numbered along one spanning tree, all the cones take 13,871 runs where
+  a tree of 11,643 nodes would take 11,643 (ontodag's
+  `experiments/codes_probe.py`).
+
+**Why.** Three things, each doing what it was meant to do:
+
+1. The sources' subclass relations are themselves close to trees. What a
+   whale has in common with a fish, or a knife with a sword, they keep in
+   other relations (WordNet's attributes, topics and parts; Wikidata's
+   properties), which the consensus never reads.
+2. Two witnesses seldom agree on a second parent, and one witness alone
+   is mostly noise. `python3 tools/second_places.py`: of the 29,237
+   single-witness edges, 20,451 have both ends in the shipped core;
+   17,325 of those would give a concept a place it does not have, 8,264
+   under a top-level category it is not under. A random 28 of them, read:
+   `ladle ⊑ vehicle-body`, `hallway ⊑ vehicle-body`, `catch ⊑ expert`,
+   `rumor ⊑ artifact`, `dignity ⊑ society` (SUMO's mappings, 10,149 of the
+   17,325); two or three are true (`uniform ⊑ fashion`, perhaps
+   `backpack ⊑ sack`). Loosening the two-witness rule would bring in the
+   noise, not the connections.
+3. The inclusion rule (§16: an edge is wrong if any ancestor it brings in
+   is false of the child) removes the second parents that name a use or a
+   role: `cigar ⊑ device`, `coin ⊑ information` went in v14. A use is true
+   of some items of a class, seldom of all.
+
+**Where the cross-connections are today.** In the items. A store's item
+is filed under categories from several aspects (this whale photo under
+`whale`, `sea` and `2026`), and `get` intersects them, so a store in use
+is far from a tree over a vocabulary that is close to one. In ontodag's
+probe, 30,000 items with three parents each take 308,552 runs for 632,282
+cone members. What the vocabulary lacks is the cross-connections that
+hold of a whole class, so that `get sea-animal` finds the whale nobody
+filed there.
+
+**What ROLES already says about them** (ontodag's `docs/plans/ROLES.md`,
+settled 2026-10-06): a quality is a plain class (`blue`, `refundable`),
+and a relation to an entity is a dimension over nodes (`in`, `about`).
+So a class-level cross-connection is one of two things:
+
+- a class named by something all its members share (`aquatic-animal`,
+  `flying-animal`, `edible-plant`, `hand-tool`), as a second parent;
+- a term, where the link is a relation: `whale ⊑ in(sea)`,
+  `cardiology ⊑ about(heart)` (the 288 of §16's about() pass).
+
+### Question 52: should the packs carry cross-connections, and from where?
+
+Example: `whale ⊑ mammal` is all the vocabulary says. `whale ⊑
+aquatic-animal`, or `whale ⊑ in(sea)`, would make `get animal in(sea)`
+answer with whales, seals and salmon, from the vocabulary alone.
+
+- **A. No.** The packs stay a taxonomy, and cross-connections come with
+  the items people file. For: every edge stays certain, and there is no
+  reading to do. Against: the vocabulary answers few questions across
+  aspects, and each person files the same links again.
+- **B. A trial on one branch.** Take `animal` in core with the biology
+  pack. Add quality classes and `in(...)` terms for habitat, diet and
+  locomotion, each edge with two witnesses as now: Wikidata's subclass
+  and property statements as one, Claude's reading under the inclusion
+  rule as the other, Peter's ruling above both. Measure what survives:
+  how many edges of those proposed, the share of nodes with several
+  parents after, and ten questions the branch answers that it did not.
+  For: the yield is known before the cost is paid, and the rules are
+  tried on real cases (is every whale in the sea?). Against: a pack
+  version and a republish for the trial branch, or it stays unshipped.
+- **C. All packs now.** For: the vocabulary changes shape at once.
+  Against: weeks of reading before the yield is known, a new core version
+  and a republish of every pack, and new class names to keep clear of
+  everyday words.
+
+Recommended: **B**, unshipped until its numbers are read. The inclusion
+rule will cut many candidates, and how many is what decides between A and
+C.
