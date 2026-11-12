@@ -71,3 +71,37 @@ n	sub	sup	ruling	note
 48	camel	domestic-animal	no: the wild Bactrian camel of the Gobi is a kind of its own that never was domesticated	The dromedary and the Bactrian camel are domesticated.
 # --- venomous-animal: an animal that injects venom ---
 49	jellyfish	venomous-animal	yes	Every jellyfish has stinging cells that inject venom, though the sting of many kinds does not get through human skin.
+# --- warm-blooded-animal: an animal that keeps its body warm by its own heat ---
+# Added 2026-11-13. Peter decided question 53 (UPPER.md §17): no exceptions. So the line that fails
+# of `mammal` (the naked mole-rat) is said of each mammal kind core lists that has no exception.
+# WordNet's gloss of mammal says warm-blooded of them all, and no source says it of a kind by
+# itself, so these rows stand on the reading and that decision. Claude applied it as above, and
+# Peter may change any row. A kind that lets its body cool while it rests and warms it again by its
+# own heat is read as warm-blooded: the class is said of the kind, not of each hour of its life.
+# Where the reading is in doubt the edge stays out: a missing edge can be added, and a wrong one
+# comes back with every merge.
+50	bat	warm-blooded-animal	yes	Every bat warms itself by its own heat when it wakes and flies. Many let the body cool to the air's temperature while they rest, and through the winter in cold countries.
+51	bear	warm-blooded-animal	yes	In its winter sleep a bear's body cools by a few degrees only.
+52	camel	warm-blooded-animal	yes	A thirsty camel lets its temperature rise and fall by some six degrees in a day and is warm throughout.
+53	cat	warm-blooded-animal	yes	No exception known, the wildcats WordNet's cat covers included.
+54	dog	warm-blooded-animal	yes	No exception known.
+55	donkey	warm-blooded-animal	yes	No exception known, the wild asses WordNet's ass covers included.
+56	elephant	warm-blooded-animal	yes	No exception known.
+57	fox	warm-blooded-animal	yes	No exception known.
+58	guinea-pig	warm-blooded-animal	yes	No exception known.
+59	hare	warm-blooded-animal	yes	No exception known.
+60	horse	warm-blooded-animal	yes	No exception known.
+61	human	warm-blooded-animal	yes	No exception known. The edge puts every person filed under human under the class too.
+62	lion	warm-blooded-animal	yes	No exception known.
+63	mole	warm-blooded-animal	no: WordNet's mole takes in the golden moles, and the Namib golden mole regulates its temperature poorly	The true moles keep warm. The golden moles of southern Africa are a family of their own that looks like them, and WordNet files them under mole. A study of 1990 found the Namib golden mole's body temperature low and unsteady and its ability to regulate it poor (Fielden and others, Journal of Arid Environments). That is doubt, not proof, and in doubt the edge stays out.
+64	monkey	warm-blooded-animal	yes	No exception known.
+65	mouse	warm-blooded-animal	yes	Mice let the body cool in torpor when food is short and warm it again themselves.
+66	mule	warm-blooded-animal	yes	No exception known. Core v14 files the mule under livestock alone; v15 puts it under mammal (Peter, 2026-11-13).
+67	pig	warm-blooded-animal	yes	No exception known, wild pigs included.
+68	rabbit	warm-blooded-animal	yes	No exception known.
+69	rat	warm-blooded-animal	yes	The naked mole-rat is no rat: WordNet's gloss calls it neither mole nor rat, and its tree files it under neither.
+70	ruminant	warm-blooded-animal	yes	No exception known. Ruminant is the trial's class, so this one edge serves the sheep, the goat, the cattle, the deer and the buffalo.
+71	seal	warm-blooded-animal	yes	No exception known; blubber keeps a seal warm in icy water.
+72	tiger	warm-blooded-animal	yes	No exception known.
+73	whale	warm-blooded-animal	yes	No exception known; dolphin is below whale here.
+74	wolf	warm-blooded-animal	yes	No exception known.

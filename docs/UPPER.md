@@ -1743,8 +1743,9 @@ as B. `python3 tools/cross_trial.py` runs it, from
 `aquatic-animal`, `marine-animal`, `warm-blooded-animal`, `carnivore`,
 `domestic-animal`, `ruminant`, `shellfish` and others; `predator`, which
 core has with nothing under it, also goes under `carnivore`) and
-`align/trial-cross-animal.tsv` (138 candidate edges). Nothing is shipped:
-the script applies the edges in memory.
+`align/trial-cross-animal.tsv` (163 candidate edges, 25 of them added by
+question 53, below). Nothing is shipped: the script applies the edges in
+memory.
 
 **The branch** is small: 97 kinds below `animal` in core and the biology
 pack, leaving out the people filed under `human`. All of them were read.
@@ -1776,18 +1777,19 @@ with every merge.
 |---|---|---|---|---|
 | before | | | 4 of 97 | 0 of 96 |
 | strict, a source as second witness | 45 | 39 | 33 of 113 | 47 |
-| strict, with the rulings | 86 | 74 | 55 of 113 | 66 |
-| for comparison: everyday, all that holds | 112 | 90 | 63 of 113 | 81 |
+| strict, with the rulings (2026-11-12) | 86 | 74 | 55 of 113 | 66 |
+| strict, and the mammals' line said kind by kind (question 53, 2026-11-13) | 110 | 98 | 61 of 113 | 73 |
+| for comparison: everyday, all that holds | 137 | 91 | 63 of 113 | 81 |
 
 **What the numbers say.**
 
 1. *The yield is real.* By the strict rule the share of nodes with several
-   parents goes from 4% to 49%, and the branch answers questions it could
+   parents goes from 4% to 54%, and the branch answers questions it could
    not be asked: mammals that live in water (whale, dolphin), warm-blooded
    animals that lay eggs (the birds), animals that chew the cud, birds
    that cannot fly, invertebrates of the sea, shellfish.
-2. *What strictness costs.* Of 138 candidates, 112 hold in the everyday
-   sense and 86 strictly. The 26 between are left for whoever wants them,
+2. *What strictness costs.* Of 163 candidates, 137 hold in the everyday
+   sense and 110 strictly. The 27 between are left for whoever wants them,
    and 18 of them have a source behind them. Some are what one expects
    (`horse ⊑ domestic-animal`: Przewalski's horse; `duck ⊑
    flying-animal`: the steamer ducks; `spider ⊑ predator`: one jumping
@@ -1801,16 +1803,19 @@ with every merge.
    against published accounts; the other exceptions are from Claude's
    knowledge. The broad classes lose most: a
    statement about every mammal or every fish meets its exception, one
-   about the tiger or the tunny does not. Without the mammals,
-   `warm-blooded-animal` holds 13 kinds where it held 46. 18 more
+   about the tiger or the tunny does not. Without `mammal ⊑
+   warm-blooded-animal` the class held 13 kinds where it had held 46;
+   question 53, below, brings 45 back kind by kind. 18 more
    candidates are said of a kind without being true even in the everyday
    sense (`bird ⊑ flying-animal`: the emu). In all, the sources state 34
    edges that the strict reading denies.
-3. *The second witness is what is scarce.* 41 of the 86 edges that hold
+3. *The second witness is what is scarce.* 65 of the 110 edges that hold
    strictly have no source behind them: none says that an owl flies, that
-   a tiger lives by hunting or that a lobster is shellfish. Peter's rule
-   carries them. With the sources alone `shellfish` holds two kinds, the
-   clam and the oyster; with the rulings it holds nine. Wikidata files
+   a tiger lives by hunting or that a lobster is shellfish, and WordNet's
+   gloss says "warm-blooded" of the mammal and of no kind of mammal (24 of
+   the 65). Peter's rule carries them. With the sources alone `shellfish`
+   holds two kinds, the clam and the oyster; with the rulings it holds
+   nine. Wikidata files
    species by parent taxon, and says qualities, where it says them, in
    other properties (diet, habitat, time of activity). WordNet's tree
    does keep a few qualities as classes of its own (ruminant, bird of
@@ -1864,7 +1869,8 @@ Read whole, the glosses add the eagle's edge and no other.
   algae), `camel ⊑ domestic-animal` (the wild Bactrian camel).
   `tools/cross_trial.py` reads the column, and a row added for any other
   candidate is read too, so a yes there puts back an edge the strict
-  reading left out.
+  reading left out. Question 53 added 25 rows on 2026-11-13: the sheet
+  now has 74, of them 65 yes and 9 no.
 - *The strict reading, made again for every candidate*, since it now
   decides. Seven changed to no: the four textbook lines above, and
   `cockle ⊑ marine-animal`, `snake ⊑ predator` and `jellyfish ⊑
@@ -1879,7 +1885,7 @@ Read whole, the glosses add the eagle's edge and no other.
 
 **What it leaves for Peter.**
 
-- **The textbook lines**: question 53, below.
+- **The textbook lines: decided** (question 53, below).
 - **The mule: decided** (Peter, 2026-11-13: "mule under mammal"). Core
   files `mule` under `livestock` alone, so nothing said of mammals reaches
   it. It gains `mammal` in core v15 and keeps `livestock`: a `parent+` row
@@ -1956,3 +1962,38 @@ edge being true, and an exception is the one thing a merge cannot carry.
 A is also what a concept lattice does with an exception. It has none:
 "warm-blooded mammal" is a concept of its own just below `mammal`, and
 all the mammals but one sit under it.
+
+**Decided (Peter, 2026-11-13): A now; C later, in the surface layer.**
+His words: "no exceptions now, but later C in the surface layer".
+
+- *What A added.* One row for each kind core files straight under
+  `mammal`, the trial's class `ruminant` standing for its five, and one
+  for the mule, which core v14 has under `livestock` alone: 25 rows, where
+  24 were measured before the decision. No source says the line of a kind
+  by itself. Wikidata's subclass statements lead from none of their items
+  to its "endotherm", WordNet's tree puts nothing under its "homeotherm",
+  and no kind's gloss speaks of warmth; WordNet says it once, in the
+  gloss of `mammal`. So the rows are on the ruling sheet, 50 to 74, and
+  stand on the reading and this decision.
+- *Two readings Claude made in applying it*, for Peter to change if he
+  reads otherwise. A kind that lets its body cool while it rests and
+  warms it again by its own heat is warm-blooded: bats, mice in torpor, a
+  bear in its winter sleep. The class is said of the kind, not of each
+  hour of its life, and `bird ⊑ warm-blooded-animal` stands by the same
+  reading (the hummingbirds). And doubt keeps an edge out: `mole ⊑
+  warm-blooded-animal` is ruled no. WordNet files the golden moles of
+  southern Africa under `mole`, and a study of the Namib golden mole found
+  its body temperature low and unsteady and its ability to regulate it
+  poor (Fielden and others, 1990). The true moles keep warm, and they are
+  what the everyday word means, so the everyday reading says yes.
+- *The numbers.* 24 edges, all of them stored. `warm-blooded-animal`
+  holds 45 kinds again, 61 of 113 nodes have several parents (55 before)
+  and 73 of the 96 kinds stand under a quality class (66 before), where
+  the everyday reading has 63 and 81.
+- *Not added.* Lines the everyday reading had already denied: fish as
+  cold-blooded (the tunas) and as egg-laying (many sharks). Said kind by
+  kind they would be six more edges, for the salmon, the flatfish, the
+  skipjack and the tunny.
+- *C* is recorded in ontodag's `docs/plans/SURFACE_LAYER.md` (§10, step
+  7) and not built: the line "mammals are warm-blooded" kept outside the
+  store and offered when someone files under `mammal`.
