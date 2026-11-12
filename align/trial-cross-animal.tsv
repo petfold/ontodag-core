@@ -1,0 +1,145 @@
+# The cross-connection trial on the animal branch (docs/UPPER.md §17, question 52, option B).
+# One row per candidate edge sub ⊑ sup, where sup is a class of align/trial-cross-classes.tsv.
+#
+# wikidata  y: Wikidata's subclass statements (P279, transitively) lead from the concept's item
+#              to the class's item, as fetched on 2026-11-12; -: they do not.
+# gloss     y: the concept's WordNet gloss, as far as align/concepts.tsv keeps it (97 characters),
+#              states the quality outright; hedged: it states it with "mostly", "usually", "some",
+#              "or"; -: it does not state it.
+# The three readings are Claude's (2026-11-12), each of the edge with every ancestor it brings in:
+# strict    y: true of every kind and item the word covers, with no exception known.
+# everyday  y: true of the word in its everyday sense, the standard v14 was read by
+#              (under which goose ⊑ poultry stands, though wild geese are no poultry).
+# typical   y: what people say of the kind; n marks a claim that is simply wrong.
+# A candidate is here because a source proposes it or because the reading finds it typical.
+sub	sup	wikidata	gloss	strict	everyday	typical	note
+mammal	warm-blooded-animal	-	y	y	y	y	gloss: any warm-blooded vertebrate
+bird	warm-blooded-animal	-	y	y	y	y	gloss: warm-blooded egg-laying vertebrates
+bird	egg-laying-animal	-	y	y	y	y	the same gloss
+reptile	cold-blooded-animal	-	y	y	y	y	gloss: any cold-blooded vertebrate
+amphibian	cold-blooded-animal	-	y	y	y	y	gloss: cold-blooded vertebrate
+fish	cold-blooded-animal	-	hedged	n	n	y	gloss: mostly cold-blooded; tunas and the opah keep warm
+reptile	egg-laying-animal	-	-	n	n	y	boas and many vipers bear live young
+fish	egg-laying-animal	-	-	n	n	y	many sharks and the guppies bear live young
+fish	aquatic-animal	y	y	y	y	y	gloss: aquatic vertebrates
+salmon	aquatic-animal	y	-	y	y	y	implied by fish
+shark	aquatic-animal	y	-	y	y	y	implied by fish
+whale	aquatic-animal	y	-	y	y	y	Wikidata: a marine mammal, which it files under aquatic animal
+whale	marine-animal	y	-	n	n	y	Wikidata: a marine mammal; but dolphin is below whale here, and river dolphins live in fresh water
+seal	marine-animal	-	y	n	n	y	gloss: marine mammals; the Baikal seal lives in a lake
+seal	aquatic-animal	-	-	n	n	y	seals breed and rest on land
+shark	marine-animal	-	hedged	n	n	y	gloss: mostly marine; bull sharks and river sharks
+flatfish	marine-animal	-	-	n	n	y	some soles and flounders live in rivers
+skipjack	marine-animal	-	y	y	y	y	gloss: oceanic schooling tuna
+tunny	marine-animal	-	y	y	y	y	gloss: marine food and game fish
+coral	marine-animal	-	y	y	y	y	gloss: marine colonial polyp
+jellyfish	marine-animal	-	hedged	n	n	y	gloss: usually marine; there are freshwater jellyfish
+jellyfish	aquatic-animal	-	-	y	y	y
+crustacean	aquatic-animal	-	hedged	n	n	y	gloss: mainly aquatic; woodlice live on land
+lobster	marine-animal	-	y	y	y	y	gloss: edible marine crustaceans
+prawn	aquatic-animal	-	-	y	y	y
+abalone	marine-animal	y	y	y	y	y	gloss: edible marine gastropods
+clam	marine-animal	-	y	n	n	y	gloss: burrowing marine mollusk; there are freshwater clams
+clam	aquatic-animal	-	-	y	y	y
+cockle	marine-animal	-	-	y	y	y
+mussel	aquatic-animal	-	y	y	y	y	gloss: marine or freshwater, so water either way
+oyster	marine-animal	-	y	y	y	y	gloss: marine mollusks
+scallop	marine-animal	-	y	y	y	y	gloss: edible marine bivalve
+octopus	marine-animal	-	-	y	y	y
+squid	marine-animal	-	-	y	y	y
+sea-cucumber	marine-animal	-	-	y	y	y	every echinoderm lives in the sea
+sea-urchin	marine-animal	-	-	y	y	y	gloss: shallow-water echinoderms, which does not say sea
+crab	shellfish	-	-	n	y	y	land crabs do not live in water
+lobster	shellfish	-	-	y	y	y
+prawn	shellfish	-	-	y	y	y
+abalone	shellfish	-	-	y	y	y
+clam	shellfish	y	-	y	y	y
+cockle	shellfish	-	-	y	y	y
+mussel	shellfish	-	-	y	y	y
+oyster	shellfish	-	-	y	y	y
+scallop	shellfish	-	-	y	y	y
+bird	flying-animal	-	-	n	n	y	the emu and the ostrich are below bird
+bat	flying-animal	-	-	y	y	y	gloss: forelimbs modified to form membranous wings, which stops short of saying it flies
+eagle	flying-animal	-	-	y	y	y
+owl	flying-animal	-	-	y	y	y
+pigeon	flying-animal	-	-	y	y	y
+duck	flying-animal	-	-	n	y	y	steamer ducks cannot fly
+bee	flying-animal	-	-	y	y	y
+butterfly	flying-animal	-	-	y	y	y
+mosquito	flying-animal	-	-	y	y	y
+fly	flying-animal	-	y	n	y	y	gloss: characterized by active flight; a few flies are wingless
+emu	flightless-bird	y	y	y	y	y	gloss: large Australian flightless bird
+ostrich	flightless-bird	-	y	y	y	y	gloss: fast-running African flightless bird
+shark	carnivore	-	y	y	y	y	gloss: carnivorous fishes
+bear	carnivore	y	hedged	n	n	n	Wikidata says it; gloss: carnivorous or omnivorous; pandas eat bamboo
+fox	carnivore	-	y	n	n	y	gloss: carnivorous mammal; foxes eat fruit as well
+wolf	carnivore	-	y	y	y	y	gloss: predatory carnivorous canine
+cat	carnivore	-	-	y	y	y
+snake	carnivore	-	-	y	y	y	no snake eats plants
+frog	carnivore	-	-	n	y	y	one tree frog eats fruit
+seal	carnivore	-	-	y	y	y
+whale	carnivore	-	-	y	y	y	baleen whales eat krill, which are animals
+horse	herbivore	-	y	y	y	y	gloss: herbivorous quadruped
+elephant	herbivore	-	-	y	y	y
+rabbit	herbivore	-	-	y	y	y
+hare	herbivore	-	-	y	y	y
+camel	herbivore	-	-	y	y	y
+donkey	herbivore	-	-	y	y	y
+mule	herbivore	-	-	y	y	y
+guinea-pig	herbivore	-	-	y	y	y
+abalone	herbivore	-	-	y	y	y
+lamb	herbivore	y	-	y	y	y	implied once sheep is a ruminant
+sheep	ruminant	-	y	y	y	y	gloss: ruminant mammal
+goat	ruminant	-	y	y	y	y	gloss: agile ruminants
+cattle	ruminant	-	-	y	y	y
+deer	ruminant	-	-	y	y	y
+buffalo	ruminant	-	-	y	y	y
+camel	ruminant	-	y	n	n	y	gloss: cud-chewing mammal; camels chew the cud but zoologists do not count them ruminants
+lamb	ruminant	y	-	y	y	y	implied by sheep
+eagle	bird-of-prey	-	y	y	y	y	gloss: diurnal birds of prey
+owl	bird-of-prey	-	y	y	y	y	gloss: nocturnal bird of prey
+lion	predator	-	y	y	y	y	gloss: predatory feline
+wolf	predator	-	y	y	y	y	gloss: predatory carnivorous canine
+spider	predator	-	y	n	y	y	gloss: predatory arachnid; one jumping spider eats mostly plants
+tiger	predator	-	-	y	y	y
+cat	predator	-	-	y	y	y
+snake	predator	-	-	y	y	y
+fox	predator	-	hedged	n	n	y	gloss: most are predators
+octopus	predator	-	-	y	y	y
+squid	predator	-	-	y	y	y
+dolphin	predator	-	-	y	y	y
+seal	predator	-	-	y	y	y
+jellyfish	predator	-	-	y	y	y
+mole	predator	-	-	y	y	y
+frog	predator	-	-	n	y	y
+skipjack	predator	-	-	y	y	y
+tunny	predator	-	-	y	y	y
+dog	domestic-animal	y	y	y	y	y	gloss: has been domesticated
+cat	domestic-animal	y	hedged	n	y	y	gloss: domestic cats; wildcats: WordNet's word covers wildcats, the everyday word the house cat
+cattle	domestic-animal	-	y	y	y	y	gloss: domesticated bovine animals
+horse	domestic-animal	y	y	n	y	y	gloss: domesticated since prehistoric times; Przewalski's horse is wild
+pony	domestic-animal	y	-	y	y	y
+goat	domestic-animal	y	-	n	y	y	there are wild goats
+sheep	domestic-animal	-	-	n	y	y	there are wild sheep
+pig	domestic-animal	y	-	n	y	y	there are wild pigs
+rabbit	domestic-animal	y	-	n	n	n	most rabbits are wild
+goose	domestic-animal	y	-	n	y	y	implied by poultry, where the goose is filed here
+mule	domestic-animal	y	-	y	y	y
+donkey	domestic-animal	-	-	y	y	y
+poultry	domestic-animal	y	y	y	y	y	gloss: a domesticated gallinaceous bird
+chicken	domestic-animal	-	y	y	y	y	gloss: a domestic fowl; implied by poultry
+turkey	domestic-animal	-	hedged	n	y	y	gloss: widely domesticated; implied by poultry
+guinea-pig	domestic-animal	-	-	y	y	y
+livestock	domestic-animal	y	-	n	y	y	farmed deer and ostriches are livestock of kinds nobody domesticated
+pet	domestic-animal	y	y	n	y	y	gloss: a domesticated animal kept for companionship; a pet snake is of no domesticated kind
+lamb	domestic-animal	y	-	n	y	y	as sheep
+camel	domestic-animal	-	-	n	y	y	there are wild Bactrian camels
+duck	domestic-animal	-	hedged	n	n	n	gloss: wild or domesticated
+pigeon	domestic-animal	-	hedged	n	n	n	gloss: wild and domesticated
+cat	pet	y	-	n	n	n	Wikidata says it; a pet is what some cats are
+spider	venomous-animal	-	y	n	y	y	gloss: two poison fangs; one family of spiders has no venom
+snake	venomous-animal	-	hedged	n	n	n	gloss: some are venomous
+jellyfish	venomous-animal	-	-	y	y	y
+bat	nocturnal-animal	-	y	n	y	y	gloss: nocturnal mouselike mammal; a few fruit bats fly by day
+owl	nocturnal-animal	-	y	n	y	y	gloss: nocturnal bird of prey; some owls hunt by day
+ant	social-insect	-	y	y	y	y	gloss: social insect living in organized colonies

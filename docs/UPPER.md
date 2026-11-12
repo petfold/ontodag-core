@@ -1726,3 +1726,81 @@ answer with whales, seals and salmon, from the vocabulary alone.
 Recommended: **B**, unshipped until its numbers are read. The inclusion
 rule will cut many candidates, and how many is what decides between A and
 C.
+
+### The trial (2026-11-12)
+
+Peter answered "do your Now list", which listed this question; it was read
+as B. `python3 tools/cross_trial.py` runs it, from
+`align/trial-cross-classes.tsv` (17 classes named by a shared quality:
+`aquatic-animal`, `marine-animal`, `warm-blooded-animal`, `carnivore`,
+`domestic-animal`, `ruminant`, `shellfish` and others; `predator`, which
+core has with nothing under it, also goes under `carnivore`) and
+`align/trial-cross-animal.tsv` (130 candidate edges). Nothing is shipped:
+the script applies the edges in memory.
+
+**The branch** is small: 97 kinds below `animal` in core and the biology
+pack, leaving out the people filed under `human`. All of them were read.
+
+**The witnesses.** Wikidata's subclass statements, asked on 2026-11-12 for
+the 88 kinds that have an item, lead to one of the classes in 25 cases
+(13 of them to "domesticated animal"). The WordNet gloss, as far as
+`align/concepts.tsv` keeps it, states the quality outright in 41 and with
+a hedge ("mostly marine", "wild or domesticated") in 11. Claude read every
+candidate three ways: *strict* (no kind or item the word covers is an
+exception), *everyday* (true of the word's everyday sense, the standard
+v14 was read by, under which `goose ⊑ poultry` stands) and *typical* (what
+people say of the kind).
+
+| | edges | of them stored | nodes with several parents | kinds under a quality class |
+|---|---|---|---|---|
+| before | | | 4 of 97 | 0 of 96 |
+| strict, two witnesses | 38 | 32 | 30 of 113 | 66 |
+| everyday, two witnesses | 51 | 41 | 35 of 113 | 70 |
+| everyday, the reading alone included | 109 | 90 | 63 of 113 | 81 |
+
+**What the numbers say.**
+
+1. *The yield is real.* With two witnesses and the everyday standard, the
+   share of nodes with several parents goes from 4% to 31%, and the branch
+   answers questions it could not be asked: mammals that live in water
+   (whale, dolphin), warm-blooded animals that lay eggs (the birds),
+   animals that chew the cud, birds that cannot fly.
+2. *The inclusion rule cuts less than feared.* Of 130 candidates, 109 hold
+   in the everyday sense and 89 strictly. 15 are said of a kind without
+   being true of all of it (`bird ⊑ flying-animal`: the emu;
+   `fish ⊑ cold-blooded-animal`: the tunas; `whale ⊑ marine-animal`: river
+   dolphins, since `dolphin ⊑ whale`). 20 more hold only in the everyday
+   sense (`horse ⊑ domestic-animal`: Przewalski's horse;
+   `spider ⊑ predator`: one jumping spider eats plants). Sources and the
+   reading disagree in 8: Wikidata's `bear ⊑ carnivore` and `cat ⊑ pet`,
+   the gloss's `camel` as a cud-chewer and `seal` as marine.
+3. *The second witness is what is scarce.* 58 of the 109 edges that hold
+   have no source behind them: nobody's subclass tree says that an eagle
+   flies, that a cow chews the cud or that a crab is shellfish. With two
+   witnesses `shellfish` holds one kind, the clam; with the reading alone
+   it holds ten. Wikidata files species by parent taxon, and says
+   qualities, where it says them, in other properties (diet, habitat,
+   time of activity: 69 such statements on these 88 items).
+4. *Habitat is a quality of the kind, not a place of the item.* The
+   question's `whale ⊑ in(sea)` was a mistake: `in` says where each item
+   is, and a whale in a tank is still an aquatic animal. No `in(...)` term
+   survived the reading, and none is in the trial.
+5. *A side finding:* `align/concepts.tsv` maps `eagle` to Q832721, which
+   is a gold coin.
+
+**What it leaves for Peter.**
+
+- **Which standard.** Strict gives 32 stored edges, everyday 41. The
+  everyday standard is the one the shipped edges already meet.
+- **Whether the reading may carry an edge here.** That is the larger
+  choice: 49 more stored edges, and most of what makes the branch useful
+  (`cow ⊑ ruminant`, `crab ⊑ shellfish`, `tiger ⊑ predator`). Elsewhere
+  Claude's vote is a witness "like SUMO's", never enough alone; a ruling
+  by Peter on the list, as for v14's doubtful list, would carry them.
+- **Whether to ship**, and as what: the 17 classes are general (they would
+  go in core as a v15), and the edges touch core and biology.
+- **Whether to go on.** If this is wanted, the next branches by the same
+  method are plants and food, artifacts by use (tool, weapon, vehicle,
+  container) and materials. A second source for qualities would lift the
+  witness problem: the full WordNet glosses (the table keeps 97
+  characters), and Wikidata's diet, habitat and activity properties.

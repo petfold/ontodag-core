@@ -1,0 +1,22 @@
+# The classes of the cross-connection trial (docs/UPPER.md §17, question 52, option B).
+# Each is named by something all its members share. `predator` is in core already
+# (with nothing under it); the trial files it under `carnivore` as well.
+# Not shipped: tools/cross_trial.py applies these in memory only.
+name	parents	definition
+aquatic-animal	animal	an animal that lives in water
+marine-animal	aquatic-animal	an animal that lives in the sea
+warm-blooded-animal	animal	an animal that keeps its body warm by its own heat
+cold-blooded-animal	animal	an animal whose body takes the temperature of its surroundings
+egg-laying-animal	animal	an animal that reproduces by laying eggs
+flying-animal	animal	an animal that can fly
+flightless-bird	bird	a bird that cannot fly
+carnivore	animal	an animal that eats mainly other animals
+herbivore	animal	an animal that eats mainly plants
+predator	animal carnivore	an animal that lives by preying on other animals
+bird-of-prey	bird predator	a bird that hunts other animals
+domestic-animal	animal	an animal of a kind people have domesticated
+ruminant	mammal herbivore	a mammal that chews the cud
+shellfish	aquatic-animal invertebrate	an aquatic invertebrate with a shell, of the kinds people eat
+venomous-animal	animal	an animal that injects venom
+nocturnal-animal	animal	an animal active by night
+social-insect	insect	an insect that lives in organised colonies
