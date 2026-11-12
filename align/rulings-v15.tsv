@@ -1,0 +1,8 @@
+# Rulings for core v15, replayed by tools/step7.py after the v14 files.
+# 2026-11-12, Claude, on Peter's word ("You decide the poultry"): a pack is strict (docs/UPPER.md §17), and
+# there are wild geese, wild turkeys and wild guinea fowl; the duck left poultry for the same reason in v14.
+# Not built yet: sources/ is not on this laptop. The next build makes core v15.
+pack	sub	action	old	new	note
+core	goose	move	poultry	bird	geese include wild ones; poultry is domestic fowl
+core	turkey	move	poultry	bird	turkeys include wild ones; poultry is domestic fowl
+core	guinea-fowl	move	poultry	bird	guinea fowl are wild birds of Africa as well as farm birds; poultry is domestic fowl
