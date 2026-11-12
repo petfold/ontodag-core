@@ -1879,15 +1879,17 @@ Read whole, the glosses add the eagle's edge and no other.
 
 **What it leaves for Peter.**
 
-- **The textbook lines.** Whether `mammal ⊑ warm-blooded-animal` and
-  `fish ⊑ aquatic-animal` stay out for one odd kind each. By the rule
-  they do; a yes in the sheet puts either back.
-- **Three shipped edges that break the rule.** Core v14 has `goose`,
-  `turkey` and `guinea-fowl ⊑ poultry`, and there are wild geese, wild
-  turkeys and wild guinea fowl; v14 moved `duck` out of `poultry` for
-  that reason. Through them `poultry ⊑ domestic-animal`,
-  true in itself, makes a wild goose a domestic animal. They would move
-  to `bird` in a v15. Only the animal branch was looked at.
+- **The textbook lines**: question 53, below.
+- **Poultry: decided.** Peter left it to Claude ("You decide the poultry,
+  it looks harmless"). `goose`, `turkey` and `guinea-fowl` move from
+  `poultry` to `bird` in core v15, as `duck` did in v14. Wild geese, wild
+  turkeys and wild guinea fowl are no rare exception, so the three edges
+  fail whichever way question 53 goes. The rows are in
+  `align/rulings-v15.tsv`, which `tools/step7.py` replays after the v14
+  files. Nothing is built (`sources/` is not on this laptop) and no
+  release is made for it alone. Until v15 the trial's `poultry ⊑
+  domestic-animal` takes those three along, 3 of the 13 kinds under
+  `domestic-animal`. A farm goose is filed under `goose` and `poultry`.
 - **Whether to ship**, and as what: the 17 classes are general (they would
   go in core as a v15), and the edges touch core and biology. Read
   strictly, `nocturnal-animal` holds nothing, and `venomous-animal` and
@@ -1899,3 +1901,54 @@ Read whole, the glosses add the eagle's edge and no other.
   diet, habitat and activity properties are the one left, and the first
   fetch already holds some (the sheet's notes quote the food of the
   tiger, the octopus, the squid, the jellyfish and the elephant).
+
+### Question 53: a line that holds of nearly every member (2026-11-12)
+
+Peter, on seeing what the strict rule left out: mammals do belong to
+`warm-blooded-animal`, fish are aquatic animals, reptiles are cold-blooded,
+"maybe even the sharks are carnivore"; allowing very rare exceptions
+would be the easiest, "but OntoDAG doesn't do that".
+
+Example: `mammal ⊑ warm-blooded-animal`. One kind of mammal in some 6,400,
+the naked mole-rat, does not hold its temperature.
+
+- **A. Stay strict, and say the line of the kinds it is true of.** Not
+  `mammal ⊑ warm-blooded-animal` but `cat`, `whale`, `bat`, `ruminant` and
+  the rest: 24 edges for the mammals core lists. `warm-blooded-animal`
+  then holds 45 kinds (with the one edge it held 46, the 46th being
+  `mammal` itself), and 73 of the 96 kinds stand under a quality class,
+  where the strict trial has 66 and the everyday reading 81. The trial
+  does this already where the exception is famous: `bird ⊑ flying-animal`
+  is out, and `eagle`, `owl` and `pigeon` are in; and each fish kind core
+  lists is under `aquatic-animal`. For: nothing false is stored, nothing
+  new is asked of OntoDAG, and the edges are additions, which merge.
+  Against: many edges for one; a kind somebody files straight under
+  `mammal` is not warm-blooded until they say so; nothing comes back for
+  `reptile` and `shark`, since core lists no kind below them that is free
+  of the exception (the snakes have the pythons).
+- **B. Allow rare exceptions.** The everyday standard after all, with the
+  known exceptions listed beside the pack. For: the pack says what the
+  textbooks say, in one edge each. Against: the store then holds a
+  statement that is false of some member, and nobody can take it out: a
+  removal is local, and the next merge brings the edge back. A
+  certificate would show a naked mole-rat to be warm-blooded. And "rare"
+  draws no line: by count the flightless birds are rare too, some sixty
+  kinds in eleven thousand, and nobody wants the ostrich under
+  `flying-animal`. What differs is that everyone knows the ostrich, so
+  the rule would be "an exception nobody is likely to file", a guess
+  about users.
+- **C. A, and the line itself kept as a suggestion.** "Mammals are
+  usually warm-blooded" is knowledge too. It can live outside the store,
+  in a table read when someone files under `mammal`: the page or the
+  agent offers `warm-blooded-animal` as a second place, and whoever files
+  decides. For: the textbook line is used where it helps, the owner of a
+  mole-rat says no, and nothing false enters a store. Against: a table
+  and some code to build (`ontodag.suggest` offers names while typing,
+  not second places), and nothing for stores filled without it.
+
+Recommended: **A** now, and **C** when filing suggestions are next worked
+on. Not B: the roots, the merge and the certificates all rest on every
+edge being true, and an exception is the one thing a merge cannot carry.
+A is also what a concept lattice does with an exception. It has none:
+"warm-blooded mammal" is a concept of its own just below `mammal`, and
+all the mammals but one sit under it.
