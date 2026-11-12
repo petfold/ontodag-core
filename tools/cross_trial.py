@@ -4,16 +4,21 @@ question 52, option B).
     python3 tools/cross_trial.py [--standard everyday|strict] [--alone]
 
 Reads align/trial-cross-classes.tsv (the classes named by a shared
-quality) and align/trial-cross-animal.tsv (one row per candidate edge, with
-what Wikidata and the WordNet gloss say and how Claude read it), counts the
-candidates by what speaks for them, applies the accepted ones to core and
-the biology pack in memory, and prints what the branch then looks like and
-answers. Nothing is written and nothing is shipped.
+quality), align/trial-cross-animal.tsv (one row per candidate edge, with
+what Wikidata, WordNet's tree and the WordNet gloss say and how Claude read
+it) and align/trial-cross-rulings.tsv (Peter's yes or no on the edges no
+source speaks for), counts the candidates by what speaks for them, applies
+the accepted ones to core and the biology pack in memory, and prints what
+the branch then looks like and answers. Nothing is written and nothing is
+shipped.
 
 An edge is accepted when the reading says yes under the chosen standard
-and a source says it too, Wikidata by its subclass statements or the gloss
-outright: two witnesses, as everywhere here. `--alone` also applies the
-edges only the reading speaks for, to show what a ruling would add.
+and a source says it too, Wikidata by its subclass statements, WordNet by
+its tree or the gloss outright: two witnesses, as everywhere here. Peter's
+ruling stands above both: an edge he ruled yes is applied under either
+standard, and one he ruled no never is. `--alone` also applies the edges
+only the reading speaks for and he has not ruled on, to show what his
+rulings would add.
 """
 import argparse
 import csv
@@ -39,9 +44,26 @@ QUESTIONS = [
 
 
 def table(name):
+    """The rows of a table in align/. A comment line starts with `#`; a
+    spreadsheet that saved the file may have put a quote before it."""
     with open(ROOT / "align" / name, encoding="utf-8") as handle:
-        lines = [line for line in handle if not line.startswith("#")]
+        lines = [line for line in handle
+                 if not line.lstrip('"').startswith("#")]
     return list(csv.DictReader(lines, delimiter="\t"))
+
+
+def rulings():
+    """(sub, sup) -> True, False or None for every edge of the ruling sheet:
+    Peter's yes, his no, or no ruling yet. A ruling is `yes` or `no` (`y`,
+    `n`), in any case, with anything after it as his remark; any other
+    answer is a remark alone, and the edge waits."""
+    sheet = {}
+    for row in table("trial-cross-rulings.tsv"):
+        words = (row["ruling"] or "").split()
+        word = words[0].strip(".,;:!").lower() if words else ""
+        sheet[row["sub"], row["sup"]] = (
+            word[0] == "y" if word in ("yes", "y", "no", "n") else None)
+    return sheet
 
 
 def branch(dag):
@@ -71,13 +93,17 @@ def main():
                         help="apply the reading's own edges as well")
     args = parser.parse_args()
     classes, rows = table("trial-cross-classes.tsv"), table("trial-cross-animal.tsv")
+    sheet = rulings()
+    ruled = {edge: answer for edge, answer in sheet.items()
+             if answer is not None}
 
     def sourced(row):
-        return row["wikidata"] == "y" or row["gloss"] == "y"
+        return "y" in (row["wikidata"], row["tree"], row["gloss"])
 
     print(f"candidate edges: {len(rows)} onto {len(classes)} classes")
     print(f"  Wikidata's subclass statements say it: "
-          f"{sum(r['wikidata'] == 'y' for r in rows)}; the gloss outright: "
+          f"{sum(r['wikidata'] == 'y' for r in rows)}; WordNet's tree: "
+          f"{sum(r['tree'] == 'y' for r in rows)}; the gloss outright: "
           f"{sum(r['gloss'] == 'y' for r in rows)}; the gloss with a hedge: "
           f"{sum(r['gloss'] == 'hedged' for r in rows)}; no source: "
           f"{sum(not sourced(r) and r['gloss'] != 'hedged' for r in rows)}")
@@ -92,6 +118,16 @@ def main():
           f"everyday): {sum(r['typical'] == 'y' and r['everyday'] != 'y' for r in rows)}")
     print(f"  true in the everyday sense, with a known exception (everyday, "
           f"not strict): {sum(r['everyday'] == 'y' and r['strict'] != 'y' for r in rows)}")
+    alone = {(r["sub"], r["sup"]) for r in rows
+             if r["everyday"] == "y" and not sourced(r)}
+    print(f"  Peter's rulings on the {len(alone)} edges the everyday reading "
+          f"alone speaks for: {sum(ruled.values())} yes, "
+          f"{len(ruled) - sum(ruled.values())} no, "
+          f"{len(alone - set(ruled))} waiting")
+    if set(sheet) != alone:
+        print(f"  the ruling sheet and the table have parted: missing from "
+              f"the sheet {sorted(alone - set(sheet))}, in the sheet only "
+              f"{sorted(set(sheet) - alone)}")
 
     dag = OntoDAG()
     prelude.apply(dag)
@@ -103,19 +139,32 @@ def main():
 
     for row in classes:
         dag.put(row["name"], row["parents"].split())
-    accepted = [r for r in rows if r[args.standard] == "y"
-                and (args.alone or sourced(r))]
+
+    def accepted_by(row):
+        answer = ruled.get((row["sub"], row["sup"]))
+        if answer is not None:
+            return answer
+        return row[args.standard] == "y" and (args.alone or sourced(row))
+
+    accepted = [r for r in rows if accepted_by(r)]
     for row in accepted:
         dag.put(row["sub"], [row["sup"]])
+    for (sub, sup), answer in sorted(ruled.items()):
+        if not answer and sup in {a.name for a in dag.get_ancestors(
+                sub, computed=False)}:
+            print(f"ruled no, yet it follows from the edges applied: "
+                  f"{sub} ⊑ {sup}")
     stored = [r for r in accepted if r["sup"] in parents(dag, r["sub"])]
     after = branch(dag)
     names = {row["name"] for row in classes}
     kinds = after - names
     reached = sum(1 for name in kinds if names & {
         a.name for a in dag.get_ancestors(name, computed=False)})
-    print(f"applied ({args.standard}"
-          f"{', the reading alone included' if args.alone else ', two witnesses'}"
-          f"): {len(accepted)} edges, {len(stored)} stored and "
+    how = "the reading alone included" if args.alone else "two witnesses"
+    if ruled:
+        how += ", with Peter's rulings"
+    print(f"applied ({args.standard}, {how}): {len(accepted)} edges, "
+          f"{len(stored)} stored and "
           f"{len(accepted) - len(stored)} implied by others")
     print(f"the branch after: {len(after)} nodes, {several(dag, after)} with "
           f"several parents; {reached} of the {len(kinds)} kinds now stand "
