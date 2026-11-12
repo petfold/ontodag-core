@@ -1,8 +1,11 @@
 # The cross-connection trial on the animal branch (docs/UPPER.md §17, question 52, option B).
-# One row per candidate edge sub ⊑ sup, where sup is a class of align/trial-cross-classes.tsv.
+# One row per candidate edge sub ⊑ sup, where sup is a class of align/trial-cross-classes.tsv
+# or one of core's own classes `pet` and `livestock`.
 #
 # wikidata  y: Wikidata's subclass statements (P279, transitively) lead from the concept's item
-#              to the class's item, as fetched on 2026-11-12; -: they do not.
+#              to the class's item, as fetched on 2026-11-12 after the items of fourteen animals
+#              were corrected (align/overrides.tsv: `eagle` had a gold coin's, `lamb` the
+#              sheep's); -: they do not.
 # gloss     y: the concept's WordNet gloss, as far as align/concepts.tsv keeps it (97 characters),
 #              states the quality outright; hedged: it states it with "mostly", "usually", "some",
 #              "or"; -: it does not state it.
@@ -56,7 +59,7 @@ abalone	shellfish	-	-	y	y	y
 clam	shellfish	y	-	y	y	y
 cockle	shellfish	-	-	y	y	y
 mussel	shellfish	-	-	y	y	y
-oyster	shellfish	-	-	y	y	y
+oyster	shellfish	y	-	y	y	y
 scallop	shellfish	-	-	y	y	y
 bird	flying-animal	-	-	n	n	y	the emu and the ostrich are below bird
 bat	flying-animal	-	-	y	y	y	gloss: forelimbs modified to form membranous wings, which stops short of saying it flies
@@ -88,15 +91,16 @@ donkey	herbivore	-	-	y	y	y
 mule	herbivore	-	-	y	y	y
 guinea-pig	herbivore	-	-	y	y	y
 abalone	herbivore	-	-	y	y	y
-lamb	herbivore	y	-	y	y	y	implied once sheep is a ruminant
-sheep	ruminant	-	y	y	y	y	gloss: ruminant mammal
+sheep	herbivore	y	-	y	y	y	implied once sheep is a ruminant
+sheep	ruminant	y	y	y	y	y	gloss: ruminant mammal
 goat	ruminant	-	y	y	y	y	gloss: agile ruminants
 cattle	ruminant	-	-	y	y	y
 deer	ruminant	-	-	y	y	y
 buffalo	ruminant	-	-	y	y	y
 camel	ruminant	-	y	n	n	y	gloss: cud-chewing mammal; camels chew the cud but zoologists do not count them ruminants
-lamb	ruminant	y	-	y	y	y	implied by sheep
-eagle	bird-of-prey	-	y	y	y	y	gloss: diurnal birds of prey
+eagle	bird-of-prey	y	y	y	y	y	gloss: diurnal birds of prey
+eagle	predator	y	y	y	y	y	the same gloss; implied by bird-of-prey
+eagle	carnivore	y	-	y	y	y	implied by bird-of-prey
 owl	bird-of-prey	-	y	y	y	y	gloss: nocturnal bird of prey
 lion	predator	-	y	y	y	y	gloss: predatory feline
 wolf	predator	-	y	y	y	y	gloss: predatory carnivorous canine
@@ -120,23 +124,24 @@ cattle	domestic-animal	-	y	y	y	y	gloss: domesticated bovine animals
 horse	domestic-animal	y	y	n	y	y	gloss: domesticated since prehistoric times; Przewalski's horse is wild
 pony	domestic-animal	y	-	y	y	y
 goat	domestic-animal	y	-	n	y	y	there are wild goats
-sheep	domestic-animal	-	-	n	y	y	there are wild sheep
+sheep	domestic-animal	y	-	n	y	y	there are wild sheep
 pig	domestic-animal	y	-	n	y	y	there are wild pigs
 rabbit	domestic-animal	y	-	n	n	n	most rabbits are wild
 goose	domestic-animal	y	-	n	y	y	implied by poultry, where the goose is filed here
 mule	domestic-animal	y	-	y	y	y
 donkey	domestic-animal	-	-	y	y	y
 poultry	domestic-animal	y	y	y	y	y	gloss: a domesticated gallinaceous bird
-chicken	domestic-animal	-	y	y	y	y	gloss: a domestic fowl; implied by poultry
-turkey	domestic-animal	-	hedged	n	y	y	gloss: widely domesticated; implied by poultry
+chicken	domestic-animal	y	y	y	y	y	gloss: a domestic fowl; implied by poultry
+turkey	domestic-animal	y	hedged	n	y	y	gloss: widely domesticated; implied by poultry
 guinea-pig	domestic-animal	-	-	y	y	y
 livestock	domestic-animal	y	-	n	y	y	farmed deer and ostriches are livestock of kinds nobody domesticated
 pet	domestic-animal	y	y	n	y	y	gloss: a domesticated animal kept for companionship; a pet snake is of no domesticated kind
-lamb	domestic-animal	y	-	n	y	y	as sheep
 camel	domestic-animal	-	-	n	y	y	there are wild Bactrian camels
-duck	domestic-animal	-	hedged	n	n	n	gloss: wild or domesticated
-pigeon	domestic-animal	-	hedged	n	n	n	gloss: wild and domesticated
+duck	domestic-animal	y	hedged	n	n	n	Wikidata says it; gloss: wild or domesticated
+pigeon	domestic-animal	y	hedged	n	n	n	Wikidata says it; gloss: wild and domesticated
 cat	pet	y	-	n	n	n	Wikidata says it; a pet is what some cats are
+duck	livestock	y	-	n	n	n	Wikidata says it; most ducks are wild
+pigeon	livestock	y	-	n	n	n	Wikidata says it; most pigeons are wild
 spider	venomous-animal	-	y	n	y	y	gloss: two poison fangs; one family of spiders has no venom
 snake	venomous-animal	-	hedged	n	n	n	gloss: some are venomous
 jellyfish	venomous-animal	-	-	y	y	y

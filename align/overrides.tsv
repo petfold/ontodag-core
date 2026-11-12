@@ -224,3 +224,23 @@ directory	wordnet	06490451	# WordNet's own "(computer science) a listing of the 
 # a filesystem `directory` and a client's `mail-folder` are both kinds of it (v10, §14).
 folder	wordnet	-
 folder	gpt	-	# the Google taxonomy's `folder` is the stationery product (6884a); the computing container is not a good
+
+# Wikidata ids of animals, 2026-11-12. The automatic id is the item that carries the
+# synset's WordNet id on Wikidata (P8814), and for these it is the wrong item: a gold
+# coin for `eagle`, another animal for `frog`, `lamb` and `chicken`, one genus or
+# species for a word that covers more. Peter ruled `eagle`; the rest are Claude's,
+# found while reading the animal branch for docs/UPPER.md §17, for Peter's review.
+eagle	wikidata	Q2092297	# was Q832721, the United States gold coin, which carries the bird's WordNet id on Wikidata (Peter, 2026-11-12: the eagle is the bird)
+frog	wikidata	Q53636	# was Q146375, the common toad; Anura
+lamb	wikidata	Q4575936	# was Q7368, the sheep
+sheep	wikidata	Q7368	# was Q22724, the genus Ovis
+chicken	wikidata	Q780	# was Q184774, the red junglefowl
+turkey	wikidata	Q848706	# was Q26844, the wild turkey; ours is poultry
+owl	wikidata	Q25222	# was Q241515, the genus Strix; Strigiformes
+pigeon	wikidata	Q2984138	# was Q209239, the genus Columba
+duck	wikidata	Q3736439	# was Q214264, the genus Anas
+bee	wikidata	Q7391	# was Q102857, the genus Apis
+dolphin	wikidata	Q7369	# was Q312257, the genus Delphinus
+mole	wikidata	Q3189180	# was Q650143, the genus Talpa
+oyster	wikidata	Q107411	# was Q1996210, the genus Ostrea
+cricket	wikidata	Q3776776	# was Q27711, the house cricket
