@@ -1743,7 +1743,7 @@ as B. `python3 tools/cross_trial.py` runs it, from
 `aquatic-animal`, `marine-animal`, `warm-blooded-animal`, `carnivore`,
 `domestic-animal`, `ruminant`, `shellfish` and others; `predator`, which
 core has with nothing under it, also goes under `carnivore`) and
-`align/trial-cross-animal.tsv` (137 candidate edges). Nothing is shipped:
+`align/trial-cross-animal.tsv` (138 candidate edges). Nothing is shipped:
 the script applies the edges in memory.
 
 **The branch** is small: 97 kinds below `animal` in core and the biology
@@ -1753,50 +1753,70 @@ pack, leaving out the people filed under `human`. All of them were read.
 2026-11-12 for the 88 kinds that have an item, lead to one of the classes
 in 35 cases (17 of them to "domesticated animal"). WordNet's own tree
 (3.1) leads from a kind's synset to a synset that says what a class says
-in 24: its ruminants, its flesh-eating order of mammals, its aquatic
+in 25: its ruminants, its flesh-eating order of mammals, its aquatic
 vertebrates, mammals and birds, its birds of prey, its ratites and, for
-the dog, its domestic animals. The WordNet gloss of the sense the node has, read whole, states the quality
-outright in 46 and with a hedge ("mostly marine", "wild or domesticated")
-in 12. Claude read every candidate three ways: *strict* (no kind or item
-the word covers is an exception), *everyday* (true of the word's everyday
-sense, the standard v14 was read by, under which `goose ⊑ poultry` stands)
-and *typical* (what people say of the kind).
+the dog, its domestic animals. The WordNet gloss of the sense the node
+has, read whole, states the quality outright in 46 and with a hedge
+("mostly marine", "wild or domesticated") in 12. Claude read every
+candidate three ways: *strict* (no kind the word covers is an exception),
+*everyday* (true of the word's everyday sense; core's `goose ⊑ poultry`
+holds only so) and *typical* (what people say of the kind).
+
+**Decided (Peter, 2026-11-12): a pack is strict.** Shown the edges that
+only the reading speaks for, Peter ruled by one rule: "the pack's
+philosophy is to be strict and not include any cases which have
+counterexamples. The user can add them later if necessary." So an edge is
+out when a kind its child covers falls outside the class, whatever the
+sources say, and where no such kind is known the edge stands on the
+reading and this ruling. It is also the side a store can be mended from:
+a user can add an edge a pack lacks, and an edge a pack states comes back
+with every merge.
 
 | | edges | of them stored | nodes with several parents | kinds under a quality class |
 |---|---|---|---|---|
 | before | | | 4 of 97 | 0 of 96 |
-| strict, two witnesses | 48 | 40 | 34 of 113 | 66 |
-| everyday, two witnesses | 62 | 49 | 39 of 113 | 70 |
-| everyday, the reading alone included | 111 | 90 | 63 of 113 | 81 |
+| strict, a source as second witness | 45 | 39 | 33 of 113 | 47 |
+| strict, with the rulings | 86 | 74 | 55 of 113 | 66 |
+| for comparison: everyday, all that holds | 112 | 90 | 63 of 113 | 81 |
 
 **What the numbers say.**
 
-1. *The yield is real.* With two witnesses and the everyday standard, the
-   share of nodes with several parents goes from 4% to 35%, and the branch
-   answers questions it could not be asked: mammals that live in water
-   (whale, dolphin), warm-blooded animals that lay eggs (the birds),
-   animals that chew the cud, birds that cannot fly.
-2. *The inclusion rule cuts less than feared.* Of 137 candidates, 111 hold
-   in the everyday sense and 92 strictly. 18 are said of a kind without
-   being true of all of it (`bird ⊑ flying-animal`: the emu;
-   `fish ⊑ cold-blooded-animal`: the tunas; `whale ⊑ marine-animal`: river
-   dolphins, since `dolphin ⊑ whale`). 19 more hold only in the everyday
-   sense (`horse ⊑ domestic-animal`: Przewalski's horse;
-   `spider ⊑ predator`: one jumping spider eats plants). Sources and the
-   reading disagree in 16: Wikidata's `bear ⊑ carnivore`, `cat ⊑ pet` and
-   its duck and pigeon as domestic animals and livestock, the gloss's
-   `camel` as a cud-chewer and `seal` as marine, WordNet's tree with the
-   seal, the duck and the goose as aquatic and the dog as a carnivore.
-3. *The second witness is what is scarce.* 49 of the 111 edges that hold
-   have no source behind them: none says that an owl flies, that a tiger
-   lives by hunting or that a crab is shellfish. With two witnesses
-   `shellfish` holds two kinds, the clam and the oyster; with the reading
-   alone it holds ten. Wikidata files species by parent taxon, and says
-   qualities, where it says them, in other properties (diet, habitat, time
-   of activity). WordNet's tree does keep a few qualities as classes of
-   its own (ruminant, bird of prey, aquatic mammal, its flesh-eating
-   order). Those edges were in the first source all along, and the
-   consensus let them go because core had no such class to hang them on.
+1. *The yield is real.* By the strict rule the share of nodes with several
+   parents goes from 4% to 49%, and the branch answers questions it could
+   not be asked: mammals that live in water (whale, dolphin), warm-blooded
+   animals that lay eggs (the birds), animals that chew the cud, birds
+   that cannot fly, invertebrates of the sea, shellfish.
+2. *What strictness costs.* Of 138 candidates, 112 hold in the everyday
+   sense and 86 strictly. The 26 between are left for whoever wants them,
+   and 18 of them have a source behind them. Some are what one expects
+   (`horse ⊑ domestic-animal`: Przewalski's horse; `duck ⊑
+   flying-animal`: the steamer ducks; `spider ⊑ predator`: one jumping
+   spider eats plants). Some are textbook lines that one odd kind breaks:
+   `mammal ⊑ warm-blooded-animal` (the naked mole-rat's body takes the
+   temperature of its burrow), `fish ⊑ aquatic-animal` (the mudskippers
+   live mostly out of water), `reptile ⊑ cold-blooded-animal` (the
+   leatherback turtle, a brooding python), `shark ⊑ carnivore` (the
+   bonnethead shark eats seagrass and digests it, up to 62% of what the
+   young of some populations have in the gut). These four were checked
+   against published accounts; the other exceptions are from Claude's
+   knowledge. The broad classes lose most: a
+   statement about every mammal or every fish meets its exception, one
+   about the tiger or the tunny does not. Without the mammals,
+   `warm-blooded-animal` holds 13 kinds where it held 46. 18 more
+   candidates are said of a kind without being true even in the everyday
+   sense (`bird ⊑ flying-animal`: the emu). In all, the sources state 34
+   edges that the strict reading denies.
+3. *The second witness is what is scarce.* 41 of the 86 edges that hold
+   strictly have no source behind them: none says that an owl flies, that
+   a tiger lives by hunting or that a lobster is shellfish. Peter's rule
+   carries them. With the sources alone `shellfish` holds two kinds, the
+   clam and the oyster; with the rulings it holds nine. Wikidata files
+   species by parent taxon, and says qualities, where it says them, in
+   other properties (diet, habitat, time of activity). WordNet's tree
+   does keep a few qualities as classes of its own (ruminant, bird of
+   prey, aquatic mammal, its flesh-eating order). Those edges were in the
+   first source all along, and the consensus let them go because core had
+   no such class to hang them on.
 4. *Habitat is a quality of the kind, not a place of the item.* The
    question's `whale ⊑ in(sea)` was a mistake: `in` says where each item
    is, and a whale in a tank is still an aquatic animal. No `in(...)` term
@@ -1831,25 +1851,51 @@ concept table keeps, and the guinea pig's gloss in that table is still
 the experimental subject's, where the animal's says "domesticated cavy".
 Read whole, the glosses add the eagle's edge and no other.
 
+**The rule applied.** Claude applied it, and Peter may change any of it.
+
+- *The sheet.* `align/trial-cross-rulings.tsv` has the 49 edges that hold
+  in the everyday reading with no source, each with what the reading
+  rests on. 41 are ruled yes and 8 no, the kind that breaks each named
+  after the no: `cockle ⊑ marine-animal` (kinds of brackish lagoons and
+  the Caspian), `crab ⊑ shellfish` (land crabs), `duck ⊑ flying-animal`
+  (steamer ducks), `frog ⊑ carnivore` and `⊑ predator` (tadpoles graze,
+  and one tree frog eats fruit), `snake ⊑ predator` (the egg-eating
+  snakes), `jellyfish ⊑ predator` (the upside-down jellyfish lives on its
+  algae), `camel ⊑ domestic-animal` (the wild Bactrian camel).
+  `tools/cross_trial.py` reads the column, and a row added for any other
+  candidate is read too, so a yes there puts back an edge the strict
+  reading left out.
+- *The strict reading, made again for every candidate*, since it now
+  decides. Seven changed to no: the four textbook lines above, and
+  `cockle ⊑ marine-animal`, `snake ⊑ predator` and `jellyfish ⊑
+  predator`. The kind is read in its grown, natural state (a chick that
+  cannot yet fly and a caged tiger that is fed are no exceptions), and
+  the word in its everyday sense (nobody calls the dodo a pigeon).
+- *`shellfish`* is now "an aquatic mollusc or crustacean with a shell",
+  the dictionary's sense. "Of the kinds people eat" could not be read
+  strictly: nobody eats the zebra mussel.
+- *`flatfish ⊑ aquatic-animal`* is a row of its own, since `fish` no
+  longer carries it.
+
 **What it leaves for Peter.**
 
-- **Which standard.** Strict gives 40 stored edges, everyday 49. The
-  everyday standard is the one the shipped edges already meet.
-- **The 49 rulings.** `align/trial-cross-rulings.tsv` lists the edges only
-  the reading speaks for, each with what the reading rests on and what may
-  be held against it, and a column for Peter's yes or no, which
-  `tools/cross_trial.py` reads: an edge ruled yes is applied, one ruled no
-  is left out. They are most of what makes the branch useful
-  (`crab ⊑ shellfish`, `tiger ⊑ predator`, `bat ⊑ flying-animal`), 41 more
-  stored edges if all are yes. Elsewhere Claude's vote is a witness "like
-  SUMO's", never enough alone; whether it may carry an edge by itself in
-  this work is the same question asked once instead of 49 times.
+- **The textbook lines.** Whether `mammal ⊑ warm-blooded-animal` and
+  `fish ⊑ aquatic-animal` stay out for one odd kind each. By the rule
+  they do; a yes in the sheet puts either back.
+- **Three shipped edges that break the rule.** Core v14 has `goose`,
+  `turkey` and `guinea-fowl ⊑ poultry`, and there are wild geese, wild
+  turkeys and wild guinea fowl; v14 moved `duck` out of `poultry` for
+  that reason. Through them `poultry ⊑ domestic-animal`,
+  true in itself, makes a wild goose a domestic animal. They would move
+  to `bird` in a v15. Only the animal branch was looked at.
 - **Whether to ship**, and as what: the 17 classes are general (they would
-  go in core as a v15), and the edges touch core and biology.
+  go in core as a v15), and the edges touch core and biology. Read
+  strictly, `nocturnal-animal` holds nothing, and `venomous-animal` and
+  `social-insect` one kind each.
 - **Whether to go on.** If this is wanted, the next branches by the same
   method are plants and food, artifacts by use (tool, weapon, vehicle,
   container) and materials. WordNet's tree should be asked first there
-  too. A second source for qualities would lift the witness problem;
-  Wikidata's diet, habitat and activity properties are the one left, and
-  the first fetch already holds some (the sheet's notes quote the food of
-  the tiger, the octopus, the squid, the jellyfish and the elephant).
+  too. A second source for qualities would spare rulings; Wikidata's
+  diet, habitat and activity properties are the one left, and the first
+  fetch already holds some (the sheet's notes quote the food of the
+  tiger, the octopus, the squid, the jellyfish and the elephant).

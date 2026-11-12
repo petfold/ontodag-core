@@ -18,7 +18,12 @@
 #              whole gloss is read. align/concepts.tsv keeps its first 97 characters, and for
 #              `pig` and `guinea-pig` it keeps the gloss of the person their rows once meant.
 # The three readings are Claude's (2026-11-12), each of the edge with every ancestor it brings in:
-# strict    y: true of every kind and item the word covers, with no exception known.
+# strict    y: true of every kind the word covers, with no exception known; n: a kind is known,
+#              or held on good grounds, to fall outside the class. The word is read in its
+#              everyday sense and the kind in its grown, natural state: a chick that cannot yet
+#              fly and a caged tiger that is fed are no exceptions. This is the standard a pack
+#              is held to (Peter, 2026-11-12): an edge with a counterexample stays out, and
+#              whoever wants it adds it to a store of their own.
 # everyday  y: true of the word in its everyday sense, the standard v14 was read by
 #              (under which goose ⊑ poultry stands, though wild geese are no poultry).
 # typical   y: what people say of the kind; n marks a claim that is simply wrong.
@@ -26,17 +31,18 @@
 # The edges that hold in the everyday reading with no source behind them wait for Peter's
 # ruling in align/trial-cross-rulings.tsv.
 sub	sup	wikidata	tree	gloss	strict	everyday	typical	note
-mammal	warm-blooded-animal	-	-	y	y	y	y	gloss: any warm-blooded vertebrate
+mammal	warm-blooded-animal	-	-	y	n	y	y	gloss: any warm-blooded vertebrate; the naked mole-rat's body takes the temperature of its burrow
 bird	warm-blooded-animal	-	-	y	y	y	y	gloss: warm-blooded egg-laying vertebrates
 bird	egg-laying-animal	-	-	y	y	y	y	the same gloss
-reptile	cold-blooded-animal	-	-	y	y	y	y	gloss: any cold-blooded vertebrate
+reptile	cold-blooded-animal	-	-	y	n	y	y	gloss: any cold-blooded vertebrate; the leatherback turtle keeps its body far above the water's temperature, and a brooding python warms itself by shivering
 amphibian	cold-blooded-animal	-	-	y	y	y	y	gloss: cold-blooded vertebrate
 fish	cold-blooded-animal	-	-	hedged	n	n	y	gloss: mostly cold-blooded; tunas and the opah keep warm
 reptile	egg-laying-animal	-	-	-	n	n	y	boas and many vipers bear live young
 fish	egg-laying-animal	-	-	-	n	n	y	many sharks and the guppies bear live young
-fish	aquatic-animal	y	y	y	y	y	y	gloss: aquatic vertebrates
-salmon	aquatic-animal	y	y	-	y	y	y	implied by fish
-shark	aquatic-animal	y	y	-	y	y	y	implied by fish
+fish	aquatic-animal	y	y	y	n	y	y	gloss: aquatic vertebrates; the mudskippers live mostly out of water
+salmon	aquatic-animal	y	y	-	y	y	y	every salmon lives in water
+shark	aquatic-animal	y	y	-	y	y	y	every shark lives in water
+flatfish	aquatic-animal	-	y	-	y	y	y	WordNet's tree: a fish, an aquatic vertebrate; every flatfish lives in water, though not every fish
 whale	aquatic-animal	y	y	-	y	y	y	Wikidata: a marine mammal, which it files under aquatic animal
 whale	marine-animal	y	-	-	n	n	y	Wikidata: a marine mammal; but dolphin is below whale here, and river dolphins live in fresh water
 seal	marine-animal	-	-	y	n	n	y	gloss: marine mammals; the Baikal seal lives in a lake
@@ -56,7 +62,7 @@ prawn	aquatic-animal	-	-	-	y	y	y
 abalone	marine-animal	y	-	y	y	y	y	gloss: edible marine gastropods
 clam	marine-animal	-	-	y	n	n	y	gloss: burrowing marine mollusk; there are freshwater clams
 clam	aquatic-animal	-	-	-	y	y	y
-cockle	marine-animal	-	-	-	y	y	y
+cockle	marine-animal	-	-	-	n	y	y	a few kinds of its family live in brackish lagoons and in the Caspian
 mussel	aquatic-animal	-	-	y	y	y	y	gloss: marine or freshwater, so water either way
 oyster	marine-animal	-	-	y	y	y	y	gloss: marine mollusks
 scallop	marine-animal	-	-	y	y	y	y	gloss: edible marine bivalve
@@ -85,7 +91,7 @@ mosquito	flying-animal	-	-	-	y	y	y
 fly	flying-animal	-	-	y	n	y	y	gloss: characterized by active flight; a few flies are wingless
 emu	flightless-bird	y	y	y	y	y	y	gloss: large Australian flightless bird
 ostrich	flightless-bird	-	y	y	y	y	y	gloss: fast-running African flightless bird
-shark	carnivore	-	-	y	y	y	y	gloss: carnivorous fishes
+shark	carnivore	-	-	y	n	y	y	gloss: carnivorous fishes; the bonnethead shark eats seagrass and digests it, up to 62% of what the young of some populations have in the gut
 bear	carnivore	y	y	hedged	n	n	n	Wikidata and WordNet's tree say it; gloss: carnivorous or omnivorous; pandas eat bamboo
 fox	carnivore	-	y	y	n	n	y	gloss: carnivorous mammal; foxes eat fruit as well
 wolf	carnivore	-	y	y	y	y	y	gloss: predatory carnivorous canine
@@ -94,7 +100,7 @@ tiger	carnivore	-	y	-	y	y	y	WordNet's tree: a big cat, of its flesh-eating order
 lion	carnivore	-	y	-	y	y	y	the same; implied by predator
 dog	carnivore	-	y	-	n	n	y	WordNet's tree: a canine, of its flesh-eating order; dogs live on mixed food, grain included
 snake	carnivore	-	-	-	y	y	y	no snake eats plants
-frog	carnivore	-	-	-	n	y	y	one tree frog eats fruit
+frog	carnivore	-	-	-	n	y	y	tadpoles graze on algae, and one tree frog eats fruit
 seal	carnivore	-	-	-	y	y	y
 whale	carnivore	-	-	-	y	y	y	baleen whales eat krill, which are animals
 horse	herbivore	-	-	y	y	y	y	gloss: herbivorous quadruped
@@ -122,15 +128,15 @@ wolf	predator	-	-	y	y	y	y	gloss: predatory carnivorous canine
 spider	predator	-	-	y	n	y	y	gloss: predatory arachnid; one jumping spider eats mostly plants
 tiger	predator	-	-	-	y	y	y
 cat	predator	-	-	-	y	y	y
-snake	predator	-	-	-	y	y	y
+snake	predator	-	-	-	n	y	y	the egg-eating snakes live on birds' eggs alone
 fox	predator	-	-	hedged	n	n	y	gloss: most are predators
 octopus	predator	-	-	-	y	y	y
 squid	predator	-	-	-	y	y	y
 dolphin	predator	-	-	-	y	y	y
 seal	predator	-	-	-	y	y	y
-jellyfish	predator	-	-	-	y	y	y
+jellyfish	predator	-	-	-	n	y	y	the upside-down jellyfish lives mostly on the algae in its tissue
 mole	predator	-	-	-	y	y	y
-frog	predator	-	-	-	n	y	y
+frog	predator	-	-	-	n	y	y	as under carnivore: the tadpoles and the fruit-eating tree frog
 skipjack	predator	-	-	-	y	y	y
 tunny	predator	-	-	-	y	y	y
 dog	domestic-animal	y	y	y	y	y	y	gloss: has been domesticated

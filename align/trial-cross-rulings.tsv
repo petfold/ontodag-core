@@ -1,70 +1,73 @@
-# The ruling sheet of the cross-connection trial (docs/UPPER.md §17, question 52). For Peter.
+# The ruling sheet of the cross-connection trial (docs/UPPER.md §17, question 52).
 # These edges hold in Claude's everyday reading, and no source says them: not Wikidata's subclass
-# statements, not WordNet's tree, not the WordNet gloss (align/trial-cross-animal.tsv). A ruling
-# gives each its second witness.
-# ruling: yes or no, and after it any remark; left empty, the edge waits. A yes is also a yes to
-#   every class above the one named (UPPER.md §16: an edge is wrong if an ancestor it brings in is
-#   false of the child); the classes above are named on each class's line below.
+# statements, not WordNet's tree, not the WordNet gloss (align/trial-cross-animal.tsv).
+# ruling: Peter ruled them all by one rule on 2026-11-12: a pack is strict, an edge with a
+#   counterexample stays out, and whoever wants it adds it to a store of their own. Claude applied
+#   the rule: no where a kind is known, or held on good grounds, to fall outside the class (the
+#   kind follows the no), yes where none is known. Peter may change any ruling here: yes or no, and
+#   after it any remark; an empty cell makes the edge wait. A row added for any other candidate of
+#   the table is read too, so a yes puts back an edge the strict reading left out. A yes is also a
+#   yes to every class above the one named (UPPER.md §16: an edge is wrong if an ancestor it brings
+#   in is false of the child); the classes above are named on each class's line below.
 #   tools/cross_trial.py reads this column: it applies an edge ruled yes and leaves out one ruled no.
-# note: what the reading rests on. After `But:` comes what may be held against the edge; `read
-#   strictly, no` marks the five where the reading counts it an exception under the strict standard.
+# note: what the reading rests on, and what else is worth knowing.
 n	sub	sup	ruling	note
 # --- aquatic-animal: an animal that lives in water ---
-1	jellyfish	aquatic-animal		Every jellyfish lives in water: most kinds in the sea, a few in lakes and rivers, which is why marine-animal was read as false of it. Gloss: usually marine and free-swimming.
-2	prawn	aquatic-animal		Sea prawns and freshwater prawns alike. Follows from prawn ⊑ shellfish if that is yes.
-3	clam	aquatic-animal		Sea clams and freshwater clams alike. Follows from clam ⊑ shellfish, which Wikidata states, so it holds whatever the ruling; it is here because the trial has it as a row.
+1	jellyfish	aquatic-animal	yes	Every jellyfish lives in water: most kinds in the sea, a few in lakes and rivers, which is why marine-animal was read as false of it. Gloss: usually marine and free-swimming.
+2	prawn	aquatic-animal	yes	Sea prawns and freshwater prawns alike. Follows from prawn ⊑ shellfish as well.
+3	clam	aquatic-animal	yes	Sea clams and freshwater clams alike. Follows from clam ⊑ shellfish, which Wikidata states, so it holds whatever the ruling; it is here because the trial has it as a row.
 # --- marine-animal: an animal that lives in the sea; above it: aquatic-animal ---
-4	cockle	marine-animal		WordNet's cockle is the common European one, of sandy shores and river mouths. But: a few kinds of its family live in brackish lagoons and in the Caspian Sea.
-5	octopus	marine-animal		No octopus lives in fresh water.
-6	squid	marine-animal		No squid lives in fresh water; one small kind comes into river mouths.
-7	sea-cucumber	marine-animal		Every echinoderm lives in the sea, none in fresh water or on land.
-8	sea-urchin	marine-animal		As the sea cucumber. The gloss says shallow-water, which stops short of the sea.
-# --- shellfish: an aquatic invertebrate with a shell, of the kinds people eat; above it: aquatic-animal, invertebrate ---
+4	cockle	marine-animal	no: a few kinds of its family live in brackish lagoons and in the Caspian	WordNet's cockle is the common European one, of sandy shores and river mouths. Without this edge the cockle is still under aquatic-animal, by shellfish.
+5	octopus	marine-animal	yes	No octopus lives in fresh water.
+6	squid	marine-animal	yes	No squid lives in fresh water; one small kind comes into bays and river mouths, which are still the sea.
+7	sea-cucumber	marine-animal	yes	Every echinoderm lives in the sea, none in fresh water or on land.
+8	sea-urchin	marine-animal	yes	As the sea cucumber. The gloss says shallow-water, which stops short of the sea.
+# --- shellfish: an aquatic mollusc or crustacean with a shell; above it: aquatic-animal, invertebrate ---
 # WordNet's own shellfish is another word for mollusk, and its other sense is the meat; neither is this class.
-9	crab	shellfish		The crabs people eat are of the sea and of rivers. But: land crabs live out of water, and a yes puts every crab under aquatic-animal (read strictly, no).
-10	lobster	shellfish		Gloss: edible marine crustaceans, which is the class in other words.
-11	prawn	shellfish		A crustacean of the sea and of fresh water. Gloss: most are edible.
-12	abalone	shellfish		Gloss: large edible marine gastropods having an ear-shaped shell.
-13	cockle	shellfish		Gloss: common edible, burrowing European bivalve mollusk that has a strong, rounded shell.
-14	mussel	shellfish		Gloss: marine or freshwater bivalve mollusk. But: people eat the sea mussels; freshwater mussels seldom.
-15	scallop	shellfish		Gloss: edible marine bivalve having a fluted fan-shaped shell.
+9	crab	shellfish	no: land crabs live out of water	The crabs people eat are of the sea and of rivers; a yes would put every crab under aquatic-animal.
+10	lobster	shellfish	yes	A crustacean of the sea. Gloss: edible marine crustaceans.
+11	prawn	shellfish	yes	A crustacean of the sea and of fresh water.
+12	abalone	shellfish	yes	A sea snail. Gloss: large edible marine gastropods having an ear-shaped shell.
+13	cockle	shellfish	yes	Gloss: common edible, burrowing European bivalve mollusk that has a strong, rounded shell. Every cockle lives in water.
+14	mussel	shellfish	yes	Gloss: marine or freshwater bivalve mollusk.
+15	scallop	shellfish	yes	Gloss: edible marine bivalve having a fluted fan-shaped shell.
 # --- flying-animal: an animal that can fly (read of the grown animal, not of the chick or the caterpillar) ---
-16	bat	flying-animal		Every kind of bat flies. The gloss stops at forelimbs modified to form membranous wings.
-17	owl	flying-animal		Every living kind of owl flies.
-18	pigeon	flying-animal		Every living kind of pigeon and dove flies. The dodo, of the same family, did not; nobody calls it a pigeon.
-19	duck	flying-animal		Ducks fly. But: three of the four kinds of steamer duck and two island teals of New Zealand cannot (read strictly, no).
-20	bee	flying-animal		Every kind of bee flies.
-21	butterfly	flying-animal		Every kind of butterfly flies.
-22	mosquito	flying-animal		Every kind of mosquito flies.
+16	bat	flying-animal	yes	Every kind of bat flies. The gloss stops at forelimbs modified to form membranous wings.
+17	owl	flying-animal	yes	Every living kind of owl flies.
+18	pigeon	flying-animal	yes	Every living kind of pigeon and dove flies. The dodo, of the same family, did not; nobody calls it a pigeon.
+19	duck	flying-animal	no: three of the four kinds of steamer duck and two island teals of New Zealand cannot fly	Most ducks fly.
+20	bee	flying-animal	yes	Every kind of bee flies.
+21	butterfly	flying-animal	yes	Every kind of butterfly flies.
+22	mosquito	flying-animal	yes	Every kind of mosquito flies.
 # --- carnivore: an animal that eats mainly other animals ---
-23	snake	carnivore		No snake eats plants; even the egg-eating snakes live on animal food. Follows from snake ⊑ predator if that is yes.
-24	frog	carnivore		Grown frogs eat insects and other small animals. But: one Brazilian tree frog eats fruit as well, and most tadpoles graze on algae (read strictly, no). Follows from frog ⊑ predator if that is yes.
-25	seal	carnivore		Seals eat fish, squid and krill, and the leopard seal penguins. Follows from seal ⊑ predator if that is yes.
-26	whale	carnivore		Toothed whales and dolphins (dolphin is below whale here) eat fish and squid; baleen whales eat krill and small fish, which are animals.
+23	snake	carnivore	yes	No snake eats plants; even the egg-eating snakes live on animal food.
+24	frog	carnivore	no: tadpoles graze on algae, and one Brazilian tree frog eats fruit	Grown frogs eat insects and other small animals.
+25	seal	carnivore	yes	Seals eat fish, squid and krill, and the leopard seal penguins. Follows from seal ⊑ predator as well.
+26	whale	carnivore	yes	Toothed whales and dolphins (dolphin is below whale here) eat fish and squid; baleen whales eat krill and small fish, which are animals.
 # --- herbivore: an animal that eats mainly plants ---
-27	elephant	herbivore		Eats grass, leaves, bark and fruit. Wikidata gives its main food source as plant.
-28	rabbit	herbivore		Eats grass and other plants.
-29	hare	herbivore		Eats grass, herbs and bark.
-30	camel	herbivore		Eats desert plants. The gloss calls it cud-chewing, and the cud is plants.
-31	donkey	herbivore		Grazes and browses. The node took over WordNet's ass under the name donkey (rulings-v14-ysenses.tsv); the wild asses it covers graze too.
-32	mule	herbivore		The offspring of a donkey and a horse, and fed as they are.
-33	guinea-pig	herbivore		Eats grass, hay and vegetables. The node is the pet rodent since the everyday-sense pass (rulings-v14-ysenses.tsv).
-34	abalone	herbivore		Grazes on seaweed and algae.
+27	elephant	herbivore	yes	Eats grass, leaves, bark and fruit. Wikidata gives its main food source as plant.
+28	rabbit	herbivore	yes	Eats grass and other plants.
+29	hare	herbivore	yes	Eats grass, herbs and bark.
+30	camel	herbivore	yes	Eats desert plants. The gloss calls it cud-chewing, and the cud is plants.
+31	donkey	herbivore	yes	Grazes and browses. The node took over WordNet's ass under the name donkey (rulings-v14-ysenses.tsv); the wild asses it covers graze too.
+32	mule	herbivore	yes	The offspring of a donkey and a horse, and fed as they are.
+33	guinea-pig	herbivore	yes	Eats grass, hay and vegetables. The node is the pet rodent since the everyday-sense pass (rulings-v14-ysenses.tsv).
+34	abalone	herbivore	yes	Grazes on seaweed and algae.
 # --- predator: an animal that lives by preying on other animals; above it: carnivore ---
-35	tiger	predator		Hunts deer, wild pig and other large animals. Wikidata gives its food as ungulates, monkeys, fish, rabbits and hares. WordNet's tree states tiger ⊑ carnivore already.
-36	cat	predator		House cats and wildcats hunt (WordNet's cat covers both). Wikidata lists predation among the house cat's characteristics. WordNet's tree states cat ⊑ carnivore already.
-37	snake	predator		Snakes take live prey. But: the egg-eating snakes of Africa and India live on birds' eggs alone, which is preying only as ecologists use the word.
-38	octopus	predator		Hunts crabs, shellfish and fish. Wikidata gives its food as fish, scallops, snails, worms and small crustaceans.
-39	squid	predator		Hunts fish and shrimp. Wikidata gives its food as fish, arrow worms, krill and zooplankton.
-40	dolphin	predator		Hunts fish and squid.
-41	seal	predator		Hunts fish, squid and krill; the leopard seal takes penguins and other seals.
-42	jellyfish	predator		Catches small animals with its stinging tentacles. Wikidata gives its food as fish, fish larvae, roe and plankton. But: a few kinds, the upside-down jellyfish among them, live largely on the algae in their own tissue.
-43	mole	predator		Hunts earthworms and grubs underground.
-44	frog	predator		Grown frogs catch insects, worms and smaller animals alive. But: as under carnivore, the fruit-eating tree frog and the tadpoles (read strictly, no).
-45	skipjack	predator		A tuna; hunts small fish, squid and crustaceans in schools.
-46	tunny	predator		The tunas of the genus Thunnus hunt fish and squid.
+35	tiger	predator	yes	Hunts deer, wild pig and other large animals. Wikidata gives its food as ungulates, monkeys, fish, rabbits and hares. WordNet's tree states tiger ⊑ carnivore already.
+36	cat	predator	yes	House cats and wildcats hunt (WordNet's cat covers both). Wikidata lists predation among the house cat's characteristics. WordNet's tree states cat ⊑ carnivore already.
+37	snake	predator	no: the egg-eating snakes of Africa and India live on birds' eggs alone	Other snakes take live prey. Without this edge the snake is still under carnivore, by its own row.
+38	octopus	predator	yes	Hunts crabs, shellfish and fish. Wikidata gives its food as fish, scallops, snails, worms and small crustaceans.
+39	squid	predator	yes	Hunts fish and shrimp. Wikidata gives its food as fish, arrow worms, krill and zooplankton.
+40	dolphin	predator	yes	Hunts fish and squid.
+41	seal	predator	yes	Hunts fish, squid and krill; the leopard seal takes penguins and other seals.
+42	jellyfish	predator	no: the upside-down jellyfish lives mostly on the algae in its tissue	Most jellyfish catch small animals with their stinging tentacles. Wikidata gives the food as fish, fish larvae, roe and plankton.
+43	mole	predator	yes	Hunts earthworms and grubs underground.
+44	frog	predator	no: tadpoles graze on algae, and one Brazilian tree frog eats fruit	Grown frogs catch insects, worms and smaller animals alive.
+45	skipjack	predator	yes	A tuna; hunts small fish, squid and crustaceans in schools.
+46	tunny	predator	yes	The tunas of the genus Thunnus hunt fish and squid.
 # --- domestic-animal: an animal of a kind people have domesticated ---
-47	donkey	domestic-animal		The donkey is the domesticated form of the African wild ass. But: the node took over WordNet's ass, which covers the wild asses too; the word donkey does not.
-48	camel	domestic-animal		The dromedary and the Bactrian camel are domesticated. But: the wild Bactrian camel of the Gobi is a kind of its own that never was (read strictly, no).
+47	donkey	domestic-animal	yes	The donkey is the domesticated form of the African wild ass. The node took over WordNet's ass, which covers the wild asses too; the name donkey, read in its everyday sense, does not.
+48	camel	domestic-animal	no: the wild Bactrian camel of the Gobi is a kind of its own that never was domesticated	The dromedary and the Bactrian camel are domesticated.
 # --- venomous-animal: an animal that injects venom ---
-49	jellyfish	venomous-animal		Every jellyfish has stinging cells that inject venom. But: the sting of many kinds does not get through human skin, so people call them harmless.
+49	jellyfish	venomous-animal	yes	Every jellyfish has stinging cells that inject venom, though the sting of many kinds does not get through human skin.

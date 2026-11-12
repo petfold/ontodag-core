@@ -1,7 +1,7 @@
 """The cross-connection trial on the animal branch (docs/UPPER.md §17,
 question 52, option B).
 
-    python3 tools/cross_trial.py [--standard everyday|strict] [--alone]
+    python3 tools/cross_trial.py [--standard strict|everyday] [--alone]
 
 Reads align/trial-cross-classes.tsv (the classes named by a shared
 quality), align/trial-cross-animal.tsv (one row per candidate edge, with
@@ -14,11 +14,12 @@ shipped.
 
 An edge is accepted when the reading says yes under the chosen standard
 and a source says it too, Wikidata by its subclass statements, WordNet by
-its tree or the gloss outright: two witnesses, as everywhere here. Peter's
+its tree or the gloss outright: two witnesses, as everywhere here. The
+standard is strict unless `--standard everyday` asks for the other: a pack
+states no edge that has a counterexample (Peter, 2026-11-12). Peter's
 ruling stands above both: an edge he ruled yes is applied under either
 standard, and one he ruled no never is. `--alone` also applies the edges
-only the reading speaks for and he has not ruled on, to show what his
-rulings would add.
+only the reading speaks for and he has not ruled on.
 """
 import argparse
 import csv
@@ -87,8 +88,8 @@ def several(dag, names):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    parser.add_argument("--standard", choices=["everyday", "strict"],
-                        default="everyday")
+    parser.add_argument("--standard", choices=["strict", "everyday"],
+                        default="strict")
     parser.add_argument("--alone", action="store_true",
                         help="apply the reading's own edges as well")
     args = parser.parse_args()
@@ -120,14 +121,18 @@ def main():
           f"not strict): {sum(r['everyday'] == 'y' and r['strict'] != 'y' for r in rows)}")
     alone = {(r["sub"], r["sup"]) for r in rows
              if r["everyday"] == "y" and not sourced(r)}
+    yes = sum(answer for edge, answer in ruled.items() if edge in alone)
     print(f"  Peter's rulings on the {len(alone)} edges the everyday reading "
-          f"alone speaks for: {sum(ruled.values())} yes, "
-          f"{len(ruled) - sum(ruled.values())} no, "
+          f"alone speaks for: {yes} yes, {len(alone & set(ruled)) - yes} no, "
           f"{len(alone - set(ruled))} waiting")
-    if set(sheet) != alone:
+    candidates = {(r["sub"], r["sup"]) for r in rows}
+    for edge in sorted((set(ruled) - alone) & candidates):
+        print(f"  and on another candidate: {edge[0]} ⊑ {edge[1]}, "
+              f"{'yes' if ruled[edge] else 'no'}")
+    if alone - set(sheet) or set(sheet) - candidates:
         print(f"  the ruling sheet and the table have parted: missing from "
-              f"the sheet {sorted(alone - set(sheet))}, in the sheet only "
-              f"{sorted(set(sheet) - alone)}")
+              f"the sheet {sorted(alone - set(sheet))}, in the sheet and no "
+              f"candidate {sorted(set(sheet) - candidates)}")
 
     dag = OntoDAG()
     prelude.apply(dag)
