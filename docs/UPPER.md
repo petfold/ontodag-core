@@ -1688,6 +1688,14 @@ cone members. What the vocabulary lacks is the cross-connections that
 hold of a whole class, so that `get sea-animal` finds the whale nobody
 filed there.
 
+Real items show the same, more mildly than the made-up ones.
+`python3 tools/instances.py place OUT.od` (2026-11-12) files, under every
+place category aligned with a Wikidata item, up to 40 things Wikidata
+calls an instance of it: 9,651 items under 315 categories. 890 of them
+keep two parents or more (a city that is also a port and a capital); the
+rest have one, since only direct instance-of statements are read. They
+have 802 different parent sets between them.
+
 **What ROLES already says about them** (ontodag's `docs/plans/ROLES.md`,
 settled 2026-10-06): a quality is a plain class (`blue`, `refundable`),
 and a relation to an entity is a dimension over nodes (`in`, `about`).
